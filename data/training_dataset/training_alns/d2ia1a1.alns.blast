@@ -1,0 +1,173 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ia1a1
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|C0H3X4|YEZG_BACSU Probable antitoxin YezG OS=Bacillus subtilis...  58.5    4e-10
+sp|Q2G178|ESSG_STAA8 Type VII secretion system protein EsaG OS=St...  49.3    1e-06
+
+
+>sp|C0H3X4|YEZG_BACSU Probable antitoxin YezG OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yezG PE=1 SV=1
+Length=151
+
+ Score = 58.5 bits (140),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 35/138 (25%), Positives = 65/138 (47%), Gaps = 4/138 (3%)
+
+Query  5    IESYYQEIAQLIIDMIPEEWAEVRFYAQEDHDGWKIFFFHYLSASSDEWTKDIDIRDVIK  64
+            ++  YQ I + + D+IP EW ++  YA E  D   +  FH+ +  +++     DI     
+Sbjct  1    MQDLYQLIGEKLNDIIPGEWTKIYLYA-EVLDDSTMVLFHFRTPENNQIIYSQDIPSHYN  59
+
+Query  65   VPQDEFMEKYNELSFCISDFRKDYAEAFGEPWMSFQMTFYASGKFNIDFYYD---KNPFD  121
+            V +D F     EL     + R ++     + W +  +T   SG+F +D+ YD    +  D
+Sbjct  60   VSKDIFKTLLRELRELFEELRTEHRNNNDDVWTNLTLTLDRSGEFQLDYNYDDILASELD  119
+
+Query  122  TFLTRLAWQYEHFGTIPD  139
+             +     W+Y++ G +P+
+Sbjct  120  GYERIAIWEYKNLGILPE  137
+
+
+>sp|Q2G178|ESSG_STAA8 Type VII secretion system protein EsaG OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 
+GN=essG PE=1 SV=1
+Length=163
+
+ Score = 49.3 bits (116),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 39/145 (27%), Positives = 65/145 (45%), Gaps = 4/145 (3%)
+
+Query  2    EKQIESYYQEIAQLIIDMIPEEWAEVRFYAQEDHDGWKIFFFHYLSASSDEWTKDIDIRD  61
+            E+++   Y EIA  I  MIP EW +V   A  D  G ++ FF+Y    SD+     +I  
+Sbjct  4    EEKLSKIYNEIANEISSMIPVEWEKVYTMAYIDDGGGEV-FFNYTKPGSDDLNYYTNIPK  62
+
+Query  62   VIKVPQDEFMEKYNELSFCISDFRKDYAEAFGEPWMSFQMTFYASGKFNIDFYY---DKN  118
+               +    F + + +L     + R  + E   EPW S +  F   G+  + F Y     +
+Sbjct  63   EYNISVQVFDDLWMDLYDLFEELRDLFKEEDLEPWTSCEFDFTREGELKVSFDYIDWINS  122
+
+Query  119  PFDTFLTRLAWQYEHFGTIPDSFYK  143
+             F     +  ++Y  FG +P++ Y+
+Sbjct  123  EFGQIGRQNYYKYRKFGILPETEYE  147
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.140    0.443    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+Results from round 2
+
+
+Query= d2ia1a1
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|C0H3X4|YEZG_BACSU Probable antitoxin YezG OS=Bacillus subtilis...  169     2e-53
+sp|Q2G178|ESSG_STAA8 Type VII secretion system protein EsaG OS=St...  167     1e-52
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|C0H3X4|YEZG_BACSU Probable antitoxin YezG OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yezG PE=1 SV=1
+Length=151
+
+ Score = 169 bits (428),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 35/140 (25%), Positives = 65/140 (46%), Gaps = 4/140 (3%)
+
+Query  5    IESYYQEIAQLIIDMIPEEWAEVRFYAQEDHDGWKIFFFHYLSASSDEWTKDIDIRDVIK  64
+            ++  YQ I + + D+IP EW ++  YA E  D   +  FH+ +  +++     DI     
+Sbjct  1    MQDLYQLIGEKLNDIIPGEWTKIYLYA-EVLDDSTMVLFHFRTPENNQIIYSQDIPSHYN  59
+
+Query  65   VPQDEFMEKYNELSFCISDFRKDYAEAFGEPWMSFQMTFYASGKFNIDFYYD---KNPFD  121
+            V +D F     EL     + R ++     + W +  +T   SG+F +D+ YD    +  D
+Sbjct  60   VSKDIFKTLLRELRELFEELRTEHRNNNDDVWTNLTLTLDRSGEFQLDYNYDDILASELD  119
+
+Query  122  TFLTRLAWQYEHFGTIPDSF  141
+             +     W+Y++ G +P+  
+Sbjct  120  GYERIAIWEYKNLGILPEDE  139
+
+
+>sp|Q2G178|ESSG_STAA8 Type VII secretion system protein EsaG OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 
+GN=essG PE=1 SV=1
+Length=163
+
+ Score = 167 bits (424),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 39/146 (27%), Positives = 65/146 (45%), Gaps = 4/146 (3%)
+
+Query  1    LEKQIESYYQEIAQLIIDMIPEEWAEVRFYAQEDHDGWKIFFFHYLSASSDEWTKDIDIR  60
+             E+++   Y EIA  I  MIP EW +V   A  D  G ++ FF+Y    SD+     +I 
+Sbjct  3    FEEKLSKIYNEIANEISSMIPVEWEKVYTMAYIDDGGGEV-FFNYTKPGSDDLNYYTNIP  61
+
+Query  61   DVIKVPQDEFMEKYNELSFCISDFRKDYAEAFGEPWMSFQMTFYASGKFNIDFYY---DK  117
+                +    F + + +L     + R  + E   EPW S +  F   G+  + F Y     
+Sbjct  62   KEYNISVQVFDDLWMDLYDLFEELRDLFKEEDLEPWTSCEFDFTREGELKVSFDYIDWIN  121
+
+Query  118  NPFDTFLTRLAWQYEHFGTIPDSFYK  143
+            + F     +  ++Y  FG +P++ Y+
+Sbjct  122  SEFGQIGRQNYYKYRKFGILPETEYE  147
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

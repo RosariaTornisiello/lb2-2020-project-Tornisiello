@@ -1,0 +1,2418 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vkea_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Pa...  55.1    1e-09
+sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Coryne...  44.3    3e-05
+sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupria...  41.6    1e-04
+sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Coryne...  40.4    8e-04
+
+
+>sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Paracoccus 
+denitrificans OX=266 PE=4 SV=1
+Length=111
+
+ Score = 55.1 bits (131),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 30/101 (30%), Positives = 50/101 (50%), Gaps = 0/101 (0%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLV  64
+            +A   L E    G      F  L   V+  G LD +TK+L+ +  + V +C  CI  H+ 
+Sbjct  8    KASAALGETSRAGASIDDAFLALSKVVFADGALDKRTKQLIAVAVAHVTQCPWCIEGHVK  67
+
+Query  65   RCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFLEEL  105
+               +EGA++E+I EA+ +A  +       H  +A+  L+E+
+Sbjct  68   GARREGATNEQIMEAIWVAAEMRAGAAYAHANKALAVLDEI  108
+
+
+>sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+kroppenstedtii (strain DSM 44385 / JCM 11950 / 
+CIP 105744 / CCUG 35717) OX=645127 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 26/76 (34%), Positives = 37/76 (49%), Gaps = 9/76 (12%)
+
+Query  22   KRFFNLDSAVYRPG-KLDVKTK--------ELMGLVASTVLRCDDCIRYHLVRCVQEGAS  72
+            K F   D A  R G ++++  K        ELM L  ST+  C DC + H      EG +
+Sbjct  88   KSFLGSDYAQVRMGLRMNIINKSGIDKVDFELMALAVSTINGCHDCTKAHEKTVTSEGLT  147
+
+Query  73   DEEIFEALDIALVVGG  88
+             E++FEA+ IA  + G
+Sbjct  148  KEQVFEAVKIAATIQG  163
+
+
+>sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupriavidus 
+necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 
+337) OX=381666 GN=H16_B0147 PE=4 SV=1
+Length=113
+
+ Score = 41.6 bits (96),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 21/82 (26%), Positives = 41/82 (50%), Gaps = 0/82 (0%)
+
+Query  24   FFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIA  83
+            F  +  A  + G L    KEL+ +  +    CDDC+ +H  + ++  A+ E++ E L I 
+Sbjct  30   FQGVMKAATQDGSLPAAVKELIAVALAVQKGCDDCVLFHTSQALRHRATREQLAEVLAIN  89
+
+Query  84   LVVGGSIVIPHLRRAVGFLEEL  105
+            + +GG     +  +A+ + + L
+Sbjct  90   IEMGGGPGAMYASKALAYFDAL  111
+
+
+>sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+aurimucosum (strain ATCC 700975 / DSM 44827 / 
+CN-1) OX=548476 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 40.4 bits (93),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 27/105 (26%), Positives = 44/105 (42%), Gaps = 24/105 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDVKT  41
+            EAR  L+E+     L +     +++  YR                       PG +D  T
+Sbjct  58   EAREHLSEEAVDAALGSATVMAMNNVAYRAKSWLGDDFAQVKFGLRMNIIAKPG-VDKAT  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVV  86
+             EL   V S +  C+ C+  H    ++EG + E+I+E + +A VV
+Sbjct  117  FELWSTVVSAINGCEHCLSAHANTLLEEGVTKEQIWEGIKVAGVV  161
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.139    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+Results from round 2
+
+
+Query= d1vkea_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Pa...  119     5e-35
+sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupria...  105     2e-29
+sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Coryne...  85.6    6e-21
+sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Coryne...  79.8    9e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q6NGT4|AHPD_CORDI Alkyl hydroperoxide reductase AhpD OS=Coryne...  80.6    4e-19
+sp|C0ZYQ9|AHPD_RHOE4 Alkyl hydroperoxide reductase AhpD OS=Rhodoc...  71.3    2e-15
+sp|B1MJX0|AHPD_MYCA9 Alkyl hydroperoxide reductase AhpD OS=Mycoba...  66.3    1e-13
+sp|Q5YT53|AHPD_NOCFA Alkyl hydroperoxide reductase AhpD OS=Nocard...  65.9    3e-13
+sp|Q73ZL4|AHPD_MYCPA Alkyl hydroperoxide reductase AhpD OS=Mycoli...  64.4    8e-13
+sp|A0QGI9|AHPD_MYCA1 Alkyl hydroperoxide reductase AhpD OS=Mycoba...  63.6    2e-12
+sp|P9WQB5|AHPD_MYCTU Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|P9WQB4|AHPD_MYCTO Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|A5U5C5|AHPD_MYCTA Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|C1AQZ5|AHPD_MYCBT Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|A1KLC4|AHPD_MYCBP Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|P0A5N5|AHPD_MYCBO Alkyl hydroperoxide reductase AhpD OS=Mycoba...  61.7    8e-12
+sp|A0PSD4|AHPD_MYCUA Alkyl hydroperoxide reductase AhpD OS=Mycoba...  60.9    2e-11
+sp|B2HD59|AHPD_MYCMM Alkyl hydroperoxide reductase AhpD OS=Mycoba...  59.0    8e-11
+sp|Q83BM5|AHPD_COXBU Alkyl hydroperoxide reductase AhpD OS=Coxiel...  55.9    1e-09
+sp|A9N917|AHPD_COXBR Alkyl hydroperoxide reductase AhpD OS=Coxiel...  55.9    1e-09
+sp|A9KBI4|AHPD_COXBN Alkyl hydroperoxide reductase AhpD OS=Coxiel...  55.9    1e-09
+sp|B6IZ19|AHPD_COXB2 Alkyl hydroperoxide reductase AhpD OS=Coxiel...  55.9    1e-09
+sp|Q02BZ5|AHPD_SOLUE Alkyl hydroperoxide reductase AhpD OS=Soliba...  54.0    6e-09
+sp|B1W2G7|AHPD_STRGG Alkyl hydroperoxide reductase AhpD OS=Strept...  54.0    8e-09
+sp|B8EJZ2|AHPD_METSB Alkyl hydroperoxide reductase AhpD OS=Methyl...  54.0    8e-09
+sp|Q0BUC5|AHPD_GRABC Alkyl hydroperoxide reductase AhpD OS=Granul...  53.6    9e-09
+sp|Q0BXT2|AHPD_HYPNA Alkyl hydroperoxide reductase AhpD OS=Hyphom...  53.6    1e-08
+sp|Q7AKI6|AHPD_STRCO Alkyl hydroperoxide reductase AhpD OS=Strept...  53.2    1e-08
+sp|Q82IC5|AHPD_STRAW Alkyl hydroperoxide reductase AhpD OS=Strept...  52.5    2e-08
+sp|Q0AKM4|AHPD_MARMM Alkyl hydroperoxide reductase AhpD OS=Marica...  52.5    3e-08
+sp|Q50441|AHPD_MYCS2 Alkyl hydroperoxide reductase AhpD OS=Mycoli...  52.5    3e-08
+sp|B6IQZ3|AHPD_RHOCS Alkyl hydroperoxide reductase AhpD OS=Rhodos...  52.5    3e-08
+sp|Q07I00|AHPD_RHOP5 Alkyl hydroperoxide reductase AhpD OS=Rhodop...  50.2    2e-07
+sp|A6X5N3|AHPD_OCHA4 Alkyl hydroperoxide reductase AhpD OS=Ochrob...  49.8    3e-07
+sp|Q1IJ49|AHPD_KORVE Alkyl hydroperoxide reductase AhpD OS=Koriba...  49.4    5e-07
+sp|Q9ANL0|AHPD_BRADU Alkyl hydroperoxide reductase AhpD OS=Bradyr...  49.0    5e-07
+sp|B2IHZ4|AHPD_BEII9 Alkyl hydroperoxide reductase AhpD OS=Beijer...  49.0    6e-07
+sp|A5ENR3|AHPD_BRASB Alkyl hydroperoxide reductase AhpD OS=Bradyr...  49.0    6e-07
+sp|Q578J2|AHPD_BRUAB Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.6    7e-07
+sp|Q2YKW2|AHPD_BRUA2 Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.6    7e-07
+sp|B2SAW2|AHPD_BRUA1 Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.6    7e-07
+sp|B8J9Z2|AHPD_ANAD2 Alkyl hydroperoxide reductase AhpD OS=Anaero...  48.6    9e-07
+sp|Q8FVW4|AHPD_BRUSU Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.2    1e-06
+sp|A9WZ04|AHPD_BRUSI Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.2    1e-06
+sp|Q8YCF2|AHPD_BRUME Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.2    1e-06
+sp|A9MBZ4|AHPD_BRUC2 Alkyl hydroperoxide reductase AhpD OS=Brucel...  48.2    1e-06
+sp|A8HQP5|AHPD_AZOC5 Alkyl hydroperoxide reductase AhpD OS=Azorhi...  47.8    1e-06
+sp|Q20Y19|AHPD_RHOPB Alkyl hydroperoxide reductase AhpD OS=Rhodop...  47.8    2e-06
+sp|B4UA87|AHPD_ANASK Alkyl hydroperoxide reductase AhpD OS=Anaero...  47.8    2e-06
+sp|A9H8D2|AHPD_GLUDA Alkyl hydroperoxide reductase AhpD OS=Glucon...  47.5    2e-06
+sp|A4YYT0|AHPD_BRASO Alkyl hydroperoxide reductase AhpD OS=Bradyr...  46.3    6e-06
+sp|C1F4K1|AHPD_ACIC5 Alkyl hydroperoxide reductase AhpD OS=Acidob...  46.3    7e-06
+sp|A8L1J2|AHPD_FRASN Alkyl hydroperoxide reductase AhpD OS=Franki...  45.9    7e-06
+sp|Q0RH96|AHPD_FRAAA Alkyl hydroperoxide reductase AhpD OS=Franki...  43.6    6e-05
+sp|O32166|YURZ_BACSU Uncharacterized protein YurZ OS=Bacillus sub...  42.4    7e-05
+sp|A5VCB6|AHPD_SPHWW Alkyl hydroperoxide reductase AhpD OS=Sphing...  42.1    2e-04
+sp|Q57498|Y1053_HAEIN Uncharacterized protein HI_1053 OS=Haemophi...  40.5    3e-04
+sp|B0UAJ8|AHPD_METS4 Alkyl hydroperoxide reductase AhpD OS=Methyl...  40.1    9e-04
+sp|Q2IMQ8|AHPD_ANADE Alkyl hydroperoxide reductase AhpD OS=Anaero...  39.4    0.002
+sp|P96684|YDFG_BACSU Uncharacterized protein YdfG OS=Bacillus sub...  39.0    0.002
+sp|B8GVX4|AHPD_CAUVN Alkyl hydroperoxide reductase AhpD OS=Caulob...  39.0    0.003
+sp|Q9A268|AHPD_CAUVC Alkyl hydroperoxide reductase AhpD OS=Caulob...  39.0    0.003
+
+
+>sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Paracoccus 
+denitrificans OX=266 PE=4 SV=1
+Length=111
+
+ Score = 119 bits (298),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 30/101 (30%), Positives = 50/101 (50%), Gaps = 0/101 (0%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLV  64
+            +A   L E    G      F  L   V+  G LD +TK+L+ +  + V +C  CI  H+ 
+Sbjct  8    KASAALGETSRAGASIDDAFLALSKVVFADGALDKRTKQLIAVAVAHVTQCPWCIEGHVK  67
+
+Query  65   RCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFLEEL  105
+               +EGA++E+I EA+ +A  +       H  +A+  L+E+
+Sbjct  68   GARREGATNEQIMEAIWVAAEMRAGAAYAHANKALAVLDEI  108
+
+
+>sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupriavidus 
+necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 
+337) OX=381666 GN=H16_B0147 PE=4 SV=1
+Length=113
+
+ Score = 105 bits (261),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 23/104 (22%), Positives = 45/104 (43%), Gaps = 0/104 (0%)
+
+Query  2    KFVEARRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRY  61
+            +  E  R+              F  +  A  + G L    KEL+ +  +    CDDC+ +
+Sbjct  8    RLTEINRQFGALGQAQPAAMSAFQGVMKAATQDGSLPAAVKELIAVALAVQKGCDDCVLF  67
+
+Query  62   HLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFLEEL  105
+            H  + ++  A+ E++ E L I + +GG     +  +A+ + + L
+Sbjct  68   HTSQALRHRATREQLAEVLAINIEMGGGPGAMYASKALAYFDAL  111
+
+
+>sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+aurimucosum (strain ATCC 700975 / DSM 44827 / 
+CN-1) OX=548476 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 85.6 bits (210),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 25/113 (22%), Positives = 42/113 (37%), Gaps = 22/113 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EAR  L+E+     L +     +++  YR                         +D  T 
+Sbjct  58   EAREHLSEEAVDAALGSATVMAMNNVAYRAKSWLGDDFAQVKFGLRMNIIAKPGVDKATF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHL  95
+            EL   V S +  C+ C+  H    ++EG + E+I+E + +A VV         
+Sbjct  118  ELWSTVVSAINGCEHCLSAHANTLLEEGVTKEQIWEGIKVAGVVEAVAQALQA  170
+
+
+>sp|Q6NGT4|AHPD_CORDI Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / 
+Biotype gravis) OX=257309 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 80.6 bits (197),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 40/107 (37%), Gaps = 24/107 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDVKT  41
+            EA   L+E+     L       +++  YR                       PG +D   
+Sbjct  58   EASEHLSEEAINAALGAASIMAMNNVAYRAKGWLGDDYAQVKMGLRMNIIAKPG-VDKVD  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             EL  L  STV  C+ C   H      EG + E+IFEA+ IA  + G
+Sbjct  117  FELWSLAVSTVNGCEHCTIAHEKTVRSEGLTKEQIFEAVKIAATLQG  163
+
+
+>sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+kroppenstedtii (strain DSM 44385 / JCM 11950 / 
+CIP 105744 / CCUG 35717) OX=645127 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 79.8 bits (195),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 30/116 (26%), Positives = 43/116 (37%), Gaps = 22/116 (19%)
+
+Query  5    EARRELNEKVSRGTLNT-------------KRFFNLDSAVYRPG---------KLDVKTK  42
+            EA + L+++                     K F   D A  R G          +D    
+Sbjct  58   EASQHLSDEYVNAAYGAASIMAMNNVAYRAKSFLGSDYAQVRMGLRMNIINKSGIDKVDF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+            ELM L  ST+  C DC + H      EG + E++FEA+ IA  + G      +  A
+Sbjct  118  ELMALAVSTINGCHDCTKAHEKTVTSEGLTKEQVFEAVKIAATIQGVAQAIQIEAA  173
+
+
+>sp|C0ZYQ9|AHPD_RHOE4 Alkyl hydroperoxide reductase AhpD OS=Rhodococcus 
+erythropolis (strain PR4 / NBRC 100887) OX=234621 
+GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 71.3 bits (173),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 26/118 (22%), Positives = 38/118 (32%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----PGK-----------------LDVKTK  42
+            EA   L+ +     L       +++  YR      GK                 +D    
+Sbjct  58   EAADNLSAEAYNAALGAASIMGMNNVFYRTKGYLDGKYDDLRAGLRMNIIGNPGVDKADF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL  L  S +  C+ C+  H     QEG   E IFEA+    +V G          + 
+Sbjct  118  ELWSLAVSAINGCNHCLEAHENTLRQEGVDREVIFEAIRAGSIVAGVAQAVEANEILS  175
+
+
+>sp|B1MJX0|AHPD_MYCA9 Alkyl hydroperoxide reductase AhpD OS=Mycobacteroides 
+abscessus (strain ATCC 19977 / DSM 44196 / CIP 
+104536 / JCM 13569 / NCTC 13031 / TMC 1543) OX=561007 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 66.3 bits (160),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 25/117 (21%), Positives = 37/117 (32%), Gaps = 22/117 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----PGK-----------------LDVKTK  42
+            EA   L  +     L       + +  YR      G                  +D    
+Sbjct  58   EAAGILTPEALDAALGAASIMAMTNVFYRGRGFLDGAYDDLRPGLRMNIIGNPGVDKSEF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+            EL     ST+  C  C+  H     + G + E++ EAL IA +V G         A+
+Sbjct  118  ELWSFAVSTINGCHYCVGSHEKVLREAGLTREQVLEALKIAAIVAGVAQALATVPAL  174
+
+
+>sp|Q5YT53|AHPD_NOCFA Alkyl hydroperoxide reductase AhpD OS=Nocardia 
+farcinica (strain IFM 10152) OX=247156 GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 65.9 bits (159),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 24/118 (20%), Positives = 38/118 (32%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EA   L+ +     L       +++  YR                         +D    
+Sbjct  58   EAADVLSAEAYNAALGAASIMGMNNVFYRGKAFLGGRYDDLRAGLRMQIIGNPGVDKADF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S++  C  C+  H     + G S E IFE+L +A +V G         A+ 
+Sbjct  118  ELWSFAVSSINGCAHCLEAHEHTLREAGVSREVIFESLRVAAIVAGVGQAVQSTEALA  175
+
+
+>sp|Q73ZL4|AHPD_MYCPA Alkyl hydroperoxide reductase AhpD OS=Mycolicibacterium 
+paratuberculosis (strain ATCC BAA-968 / K-10) 
+OX=262316 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 64.4 bits (155),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 37/118 (31%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----PGKLD-----------------VKTK  42
+            EA   L+ +     L       +++  YR      GK D                     
+Sbjct  58   EAADTLSAEAYHAALGAASVMAMNNVFYRGRGFLDGKYDDLRAGLRMNIIGNPGVEKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C DC+  H     + G S E I EAL  A ++ G        + + 
+Sbjct  118  ELWCFAVSAINGCPDCVASHEHTLREAGVSRETIQEALKAAAIISGVAQAIVASQTLA  175
+
+
+>sp|A0QGI9|AHPD_MYCA1 Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+avium (strain 104) OX=243243 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 63.6 bits (153),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 37/118 (31%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----PGKLD-----------------VKTK  42
+            EA   L+ +     L       +++  YR      GK D                     
+Sbjct  58   EAADTLSAEAYHAALGAASVMAMNNVFYRGRGFLDGKYDDLRAGLRMNIIGNPGVEKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C DC+  H     + G S E I EAL  A ++ G        + + 
+Sbjct  118  ELWCFAVSAINGCPDCVASHEHTLREAGVSRETIQEALKAAAIISGVAQAIVTSQTLA  175
+
+
+>sp|P9WQB5|AHPD_MYCTU Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=ahpD PE=1 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|P9WQB4|AHPD_MYCTO Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|A5U5C5|AHPD_MYCTA Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain ATCC 25177 / H37Ra) OX=419947 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|C1AQZ5|AHPD_MYCBT Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain BCG / Tokyo 172 / ATCC 35737 / TMC 
+1019) OX=561275 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|A1KLC4|AHPD_MYCBP Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain BCG / Pasteur 1173P2) OX=410289 GN=ahpD 
+PE=3 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|P0A5N5|AHPD_MYCBO Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 61.7 bits (148),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 39/123 (32%), Gaps = 28/123 (23%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFL  102
+            EL     S +  C  C+  H       G   E IFEAL  A +V G      + +A+  +
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSG------VAQALATI  171
+
+Query  103  EEL  105
+            E L
+Sbjct  172  EAL  174
+
+
+>sp|A0PSD4|AHPD_MYCUA Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+ulcerans (strain Agy99) OX=362242 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 60.9 bits (146),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 25/107 (23%), Positives = 37/107 (35%), Gaps = 24/107 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDVKT  41
+            EA   L+ +  +  L       +++  YR                       PG +D   
+Sbjct  58   EAADNLSAQAYQAALGAVSIMGMNNVFYRGRGFLEGQYDDLRAGLRMNIIANPG-VDKAN  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             EL     S+V  C  C+  H     + G   E +FEAL  A +V G
+Sbjct  117  FELWSFAVSSVNGCSHCVVAHEHTLREAGVGREAVFEALKAAAIVCG  163
+
+
+>sp|B2HD59|AHPD_MYCMM Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+marinum (strain ATCC BAA-535 / M) OX=216594 GN=ahpD 
+PE=3 SV=1
+Length=178
+
+ Score = 59.0 bits (141),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 24/107 (22%), Positives = 36/107 (34%), Gaps = 24/107 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDVKT  41
+            EA   L+ +  +  L       +++  YR                       PG +D   
+Sbjct  58   EAADNLSAQAYQAALGAVSIMGMNNVFYRGRGFLEGQYDDLRAGLRMNIIANPG-VDKAN  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             EL     S+V  C  C+  H     + G   E + EAL  A +V G
+Sbjct  117  FELWSFAVSSVNGCSHCVVAHEHTLREAGVGREAVLEALKAAAIVCG  163
+
+
+>sp|Q83BM5|AHPD_COXBU Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain RSA 493 / Nine Mile phase I) OX=227377 
+GN=ahpD PE=3 SV=3
+Length=177
+
+ Score = 55.9 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 38/110 (35%), Gaps = 25/110 (23%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNG  166
+
+
+>sp|A9N917|AHPD_COXBR Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain RSA 331 / Henzerling II) OX=360115 GN=ahpD 
+PE=3 SV=1
+Length=177
+
+ Score = 55.9 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 38/110 (35%), Gaps = 25/110 (23%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNG  166
+
+
+>sp|A9KBI4|AHPD_COXBN Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain Dugway 5J108-111) OX=434922 GN=ahpD 
+PE=3 SV=3
+Length=177
+
+ Score = 55.9 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 38/110 (35%), Gaps = 25/110 (23%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNG  166
+
+
+>sp|B6IZ19|AHPD_COXB2 Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain CbuG_Q212) OX=434923 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 55.9 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 38/110 (35%), Gaps = 25/110 (23%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGG  88
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNG  166
+
+
+>sp|Q02BZ5|AHPD_SOLUE Alkyl hydroperoxide reductase AhpD OS=Solibacter 
+usitatus (strain Ellin6076) OX=234267 GN=ahpD PE=3 
+SV=1
+Length=177
+
+ Score = 54.0 bits (128),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 25/111 (23%), Positives = 39/111 (35%), Gaps = 23/111 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PGKL----------DVKT  41
+            EA + LNE+             +++  YR             P +L          D   
+Sbjct  58   EAAKHLNEQALFAAKAAASVMGMNNIFYRFRHLSTNPKYGAMPARLRMQVIAKHGSDPID  117
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+             EL  L  S +  C  C+  H     ++G S+E +  A+ IA  + G   I
+Sbjct  118  FELWCLAVSAMNGCGVCVDSHENVLREKGVSEEAVLAAIRIASTIHGLAAI  168
+
+
+>sp|B1W2G7|AHPD_STRGG Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+griseus subsp. griseus (strain JCM 4626 / NBRC 13350) 
+OX=455632 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 54.0 bits (128),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 28/73 (38%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S +  C  C+  H     + G   E I EA+ +A V+ 
+Sbjct  105  MNVIGNPG-VEKVDFELWSLAVSAINGCGQCLDSHEQVLRKAGVDRETIQEAVKVASVIQ  163
+
+Query  88   GSIVIPHLRRAVG  100
+               V       + 
+Sbjct  164  AVGVTLDAEAVLA  176
+
+
+>sp|B8EJZ2|AHPD_METSB Alkyl hydroperoxide reductase AhpD OS=Methylocella 
+silvestris (strain DSM 15510 / CIP 108128 / LMG 27833 
+/ NCIMB 13906 / BL2) OX=395965 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 54.0 bits (128),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 22/121 (18%), Positives = 34/121 (28%), Gaps = 25/121 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L  +             +++  YR                        PG +   
+Sbjct  58   EAASHLTPEARDAARAAATIMGMNNVYYRFVHLASNPVYKTMPAKLRMGVIGSPG-VPKT  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+              EL  L  S +  C  CI  H       G + E I  A+  A +V  + +     +   
+Sbjct  117  DFELWCLAVSAINGCGMCIDAHEKVLADAGVTQEVIQTAVRFAAIVQSAAIALEAAQLPA  176
+
+Query  101  F  101
+            F
+Sbjct  177  F  177
+
+
+>sp|Q0BUC5|AHPD_GRABC Alkyl hydroperoxide reductase AhpD OS=Granulibacter 
+bethesdensis (strain ATCC BAA-1260 / CGDNIH1) OX=391165 
+GN=ahpD PE=3 SV=2
+Length=175
+
+ Score = 53.6 bits (127),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 15/55 (27%), Positives = 25/55 (45%), Gaps = 1/55 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDI  82
+             + + +PG +D    EL  L  S +  C  C+  H     Q G + E++  A+ I
+Sbjct  104  MNVMAKPG-VDKVDFELWSLAVSAINGCGMCMESHEKIVRQNGLTQEQVQAAIRI  157
+
+
+>sp|Q0BXT2|AHPD_HYPNA Alkyl hydroperoxide reductase AhpD OS=Hyphomonas 
+neptunium (strain ATCC 15444) OX=228405 GN=ahpD PE=3 
+SV=1
+Length=180
+
+ Score = 53.6 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 22/106 (21%), Positives = 36/106 (34%), Gaps = 25/106 (24%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EAR +L+ +             +++  YR                        PG ++  
+Sbjct  58   EARGKLSVEALNAAKAASAIMGMNNVYYRATHLVSNTTYTTMPARLRMNVIGNPG-VEKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVV  86
+              EL  L  S +  C  C+  H     + G + E+I  A+ I  VV
+Sbjct  117  DFELWSLAVSAINGCGMCLDAHEAELRKHGVTSEQIQAAIRIGAVV  162
+
+
+>sp|Q7AKI6|AHPD_STRCO Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 
+GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 53.2 bits (126),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 19/73 (26%), Positives = 26/73 (36%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL     S +  C  C+  H     + G   E I EA  IA VV 
+Sbjct  105  MNVIGNPG-VDKVDFELWSFAVSAINGCGMCLDSHEQVLRKAGVDRETIQEAFKIAAVVE  163
+
+Query  88   GSIVIPHLRRAVG  100
+               V       + 
+Sbjct  164  AVGVTLDAEAVLA  176
+
+
+>sp|Q82IC5|AHPD_STRAW Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+avermitilis (strain ATCC 31267 / DSM 46492 / JCM 
+5070 / NBRC 14893 / NCIMB 12804 / NRRL 8165 / MA-4680) OX=227882 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 52.5 bits (124),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 26/73 (36%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S V  C  C+  H     + G   + I EA  IA V+ 
+Sbjct  105  MNVIGNPG-VEKVDFELWSLAVSAVNGCGQCLDSHEQVLRKAGVDRDTIQEAFKIAAVIQ  163
+
+Query  88   GSIVIPHLRRAVG  100
+                       + 
+Sbjct  164  AVGTTLDAEAVLA  176
+
+
+>sp|Q0AKM4|AHPD_MARMM Alkyl hydroperoxide reductase AhpD OS=Maricaulis 
+maris (strain MCS10) OX=394221 GN=ahpD PE=3 SV=1
+Length=173
+
+ Score = 52.5 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 21/115 (18%), Positives = 35/115 (30%), Gaps = 25/115 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L+++             +++  YR                        PG +D  
+Sbjct  58   EAETRLSDEALTAAKAASAIMGMNNVYYRFVHLSKNKEYATLPAKLRMNILANPG-VDKA  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHL  95
+              EL  L  S +  C  CI  H     + G +  ++  A+ IA  V     +   
+Sbjct  117  DFELWSLAVSAINGCGLCIDSHEAELRKHGLTTTQVQAAVRIAATVNAIAAVLAA  171
+
+
+>sp|Q50441|AHPD_MYCS2 Alkyl hydroperoxide reductase AhpD OS=Mycolicibacterium 
+smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 
+GN=ahpD PE=3 SV=2
+Length=177
+
+ Score = 52.5 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 22/113 (19%), Positives = 35/113 (31%), Gaps = 22/113 (19%)
+
+Query  10   LNEKVSRGTLNTKRFFNLDSAVYR-----PGKLD-----------------VKTKELMGL  47
+            L+E+     L       +++  YR      GK D                  +  EL  L
+Sbjct  63   LSEEAYNAALGAAAIMGMNNVFYRTKGQLDGKYDDLRAGLRMNIIGNPGVAKEDFELWSL  122
+
+Query  48   VASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+              S +  C  C+  H         +   IFEA+ +A +V G          + 
+Sbjct  123  AVSAINGCGHCLAAHEKTLRDADVARTTIFEAIRLASIVSGVAQALLTADTLA  175
+
+
+>sp|B6IQZ3|AHPD_RHOCS Alkyl hydroperoxide reductase AhpD OS=Rhodospirillum 
+centenum (strain ATCC 51521 / SW) OX=414684 GN=ahpD 
+PE=3 SV=1
+Length=186
+
+ Score = 52.5 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 32/73 (44%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L AS V  C  CI  H    + +G S E I +A+ IA V+ 
+Sbjct  105  MNVIGNPG-VEKVDFELWSLAASAVNGCGMCIEAHEREVMHKGMSTENIQDAVRIAAVIH  163
+
+Query  88   GSIVIPHLRRAVG  100
+                +     A+ 
+Sbjct  164  AVATVLDAEAALS  176
+
+
+>sp|Q07I00|AHPD_RHOP5 Alkyl hydroperoxide reductase AhpD OS=Rhodopseudomonas 
+palustris (strain BisA53) OX=316055 GN=ahpD PE=3 
+SV=1
+Length=181
+
+ Score = 50.2 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 26/64 (41%), Gaps = 1/64 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H    +Q G S   I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGMCIDSHEKVLLQAGVSTAAIQTAVRFAAIMQ  163
+
+Query  88   GSIV  91
+               V
+Sbjct  164  SVAV  167
+
+
+>sp|A6X5N3|AHPD_OCHA4 Alkyl hydroperoxide reductase AhpD OS=Ochrobactrum 
+anthropi (strain ATCC 49188 / DSM 6882 / JCM 21032 
+/ NBRC 15819 / NCTC 12168) OX=439375 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 49.8 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 20/115 (17%), Positives = 36/115 (31%), Gaps = 25/115 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +   +      +++  YR                        PG +D  
+Sbjct  58   EAAAKVDASVIQAAKSAASIMGMNNVYYRFVHLATNKDYRTMPAKLRMNVIGNPG-VDKI  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHL  95
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++    +    
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTSETIQTAVRFASIIQSVAIALEA  171
+
+
+>sp|Q1IJ49|AHPD_KORVE Alkyl hydroperoxide reductase AhpD OS=Koribacter 
+versatilis (strain Ellin345) OX=204669 GN=ahpD PE=3 
+SV=1
+Length=194
+
+ Score = 49.4 bits (116),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 19/60 (32%), Positives = 28/60 (47%), Gaps = 0/60 (0%)
+
+Query  33   RPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+            R   +D    EL  L  S V  C  CI  H    +Q+  S+E+I  A+ +A  + G  V+
+Sbjct  110  RQHGVDPLDFELWALAVSAVNGCGKCIDAHERVLLQKEFSEEKILAAIRVASTIYGLAVV  169
+
+
+>sp|Q9ANL0|AHPD_BRADU Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+diazoefficiens (strain JCM 10833 / IAM 13628 / 
+NBRC 14792 / USDA 110) OX=224911 GN=ahpD PE=3 SV=1
+Length=182
+
+ Score = 49.0 bits (115),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 16/68 (24%), Positives = 24/68 (35%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+               +  PG +D    EL  L  S++  C  CI  H       G + E I  A+  A +  
+Sbjct  106  MDVIGNPG-VDKSDFELWSLAVSSINGCGICIDAHERTLRAAGVNSETIQTAVRFAAITQ  164
+
+Query  88   GSIVIPHL  95
+               +    
+Sbjct  165  SVAIALEA  172
+
+
+>sp|B2IHZ4|AHPD_BEII9 Alkyl hydroperoxide reductase AhpD OS=Beijerinckia 
+indica subsp. indica (strain ATCC 9039 / DSM 1715 
+/ NCIB 8712) OX=395963 GN=ahpD PE=3 SV=1
+Length=180
+
+ Score = 49.0 bits (115),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 14/68 (21%), Positives = 25/68 (37%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +     EL  L  S +  C  CI  H    +    + + I  A+  A ++ 
+Sbjct  105  MNIIGNPG-VPKTDFELWSLAVSAINGCGMCIDSHEKVLLNADTTQDTIQTAVRFAAIIQ  163
+
+Query  88   GSIVIPHL  95
+             + V    
+Sbjct  164  STAVALEA  171
+
+
+>sp|A5ENR3|AHPD_BRASB Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+sp. (strain BTAi1 / ATCC BAA-1182) OX=288000 GN=ahpD 
+PE=3 SV=1
+Length=181
+
+ Score = 49.0 bits (115),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 17/61 (28%), Positives = 25/61 (41%), Gaps = 1/61 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             +A+  PG +D    EL  L  S +  C  CI  H     + G S   I  A+  A ++ 
+Sbjct  105  MNAIANPG-VDKADFELWSLAVSAINGCGTCIDAHERVLKEAGVSAASIQTAVRFAAIIQ  163
+
+Query  88   G  88
+             
+Sbjct  164  S  164
+
+
+>sp|Q578J2|AHPD_BRUAB Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus biovar 1 (strain 9-941) OX=262698 GN=ahpD PE=3 
+SV=1
+Length=175
+
+ Score = 48.6 bits (114),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKIDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|Q2YKW2|AHPD_BRUA2 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus (strain 2308) OX=359391 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 48.6 bits (114),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKIDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|B2SAW2|AHPD_BRUA1 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus (strain S19) OX=430066 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 48.6 bits (114),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKIDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|B8J9Z2|AHPD_ANAD2 Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+dehalogenans (strain 2CP-1 / ATCC BAA-258) OX=455488 
+GN=ahpD PE=3 SV=1
+Length=186
+
+ Score = 48.6 bits (114),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 19/57 (33%), Positives = 28/57 (49%), Gaps = 0/57 (0%)
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHL  95
+                EL  L  S V  C+ C+R H    V  G S++++ EA+ IA V+  + V   L
+Sbjct  116  KVDFELFALAVSAVNGCETCVRSHEQVVVAGGLSEDQVHEAVRIAAVLHAAAVSLEL  172
+
+
+>sp|Q8FVW4|AHPD_BRUSU Alkyl hydroperoxide reductase AhpD OS=Brucella 
+suis biovar 1 (strain 1330) OX=204722 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKVDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|A9WZ04|AHPD_BRUSI Alkyl hydroperoxide reductase AhpD OS=Brucella 
+suis (strain ATCC 23445 / NCTC 10510) OX=470137 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKVDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|Q8YCF2|AHPD_BRUME Alkyl hydroperoxide reductase AhpD OS=Brucella 
+melitensis biotype 1 (strain 16M / ATCC 23456 / NCTC 
+10094) OX=224914 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKVDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|A9MBZ4|AHPD_BRUC2 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+canis (strain ATCC 23365 / NCTC 10854) OX=483179 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 26/68 (38%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +   + E I  A+  A ++ 
+Sbjct  105  MNVISNPG-VDKVDFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQ  163
+
+Query  88   GSIVIPHL  95
+             + +    
+Sbjct  164  SAAIALEA  171
+
+
+>sp|A8HQP5|AHPD_AZOC5 Alkyl hydroperoxide reductase AhpD OS=Azorhizobium 
+caulinodans (strain ATCC 43989 / DSM 5975 / JCM 20966 
+/ NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=ahpD 
+PE=3 SV=1
+Length=181
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 20/106 (19%), Positives = 33/106 (31%), Gaps = 25/106 (24%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L+               +++  YR                        PG +D  
+Sbjct  58   EAAPHLSPAALDAAKAAASIMAMNNVYYRFTHLASNKAYETLPAKLRMSVIGNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVV  86
+              EL  L  S +  C  CI  H     + G S+ +I  A+ +  ++
+Sbjct  117  DFELWSLAVSAMNGCGRCIDAHEAVLREAGLSEAQIQTAVRVGAII  162
+
+
+>sp|Q20Y19|AHPD_RHOPB Alkyl hydroperoxide reductase AhpD OS=Rhodopseudomonas 
+palustris (strain BisB18) OX=316056 GN=ahpD PE=3 
+SV=1
+Length=181
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 25/64 (39%), Gaps = 1/64 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H    +  G S   I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGMCIDSHEKVLLAAGVSTAAIQTAVRFAAIIQ  163
+
+Query  88   GSIV  91
+               V
+Sbjct  164  SVAV  167
+
+
+>sp|B4UA87|AHPD_ANASK Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+sp. (strain K) OX=447217 GN=ahpD PE=3 SV=1
+Length=186
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 19/57 (33%), Positives = 28/57 (49%), Gaps = 0/57 (0%)
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHL  95
+                EL  L  S V  C+ C+R H    V  G S++++ EA+ IA V+  + V   L
+Sbjct  116  KVDFELFALAVSAVNGCETCVRSHEQVVVAGGLSEDQVHEAVRIAAVLHAAAVSLEL  172
+
+
+>sp|A9H8D2|AHPD_GLUDA Alkyl hydroperoxide reductase AhpD OS=Gluconacetobacter 
+diazotrophicus (strain ATCC 49037 / DSM 5601 
+/ PAl5) OX=272568 GN=ahpD PE=3 SV=1
+Length=181
+
+ Score = 47.5 bits (111),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 13/49 (27%), Positives = 22/49 (45%), Gaps = 1/49 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEI  76
+             + + RPG ++    EL  L  S +  C  C+  H     + G S E++
+Sbjct  104  MNVIGRPG-VEKLDFELWSLAVSAINGCGMCVESHEKVVREGGLSAEQV  151
+
+
+>sp|A4YYT0|AHPD_BRASO Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+sp. (strain ORS 278) OX=114615 GN=ahpD PE=3 SV=1
+Length=181
+
+ Score = 46.3 bits (108),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 23/68 (34%), Gaps = 1/68 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +       I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGTCIDAHEKVLQEAAVPAASIQTAVRFAAIIQ  163
+
+Query  88   GSIVIPHL  95
+               V    
+Sbjct  164  SVAVAIEA  171
+
+
+>sp|C1F4K1|AHPD_ACIC5 Alkyl hydroperoxide reductase AhpD OS=Acidobacterium 
+capsulatum (strain ATCC 51196 / DSM 11244 / JCM 
+7670 / NBRC 15755 / NCIMB 13165 / 161) OX=240015 GN=ahpD PE=3 
+SV=1
+Length=183
+
+ Score = 46.3 bits (108),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 13/65 (20%), Positives = 27/65 (42%), Gaps = 0/65 (0%)
+
+Query  33   RPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+            R   ++    EL  L  S +  C  C+  H     ++GA ++ +  A+ +A V+     +
+Sbjct  110  RTHGVEPVDFELWSLAVSAINGCGKCVDSHEKVLREKGAGEDLVLAAVRVASVIHAIGAV  169
+
+Query  93   PHLRR  97
+                +
+Sbjct  170  LDAEK  174
+
+
+>sp|A8L1J2|AHPD_FRASN Alkyl hydroperoxide reductase AhpD OS=Frankia 
+sp. (strain EAN1pec) OX=298653 GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 45.9 bits (107),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 24/54 (44%), Gaps = 1/54 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALD  81
+             +A+  PG +D    EL  L AS V  C  C+  H       G S E I +A+ 
+Sbjct  105  MNAIANPG-VDKVDFELWSLAASAVNGCGMCLTAHEHELRGRGVSREVIQDAIR  157
+
+
+>sp|Q0RH96|AHPD_FRAAA Alkyl hydroperoxide reductase AhpD OS=Frankia 
+alni (strain ACN14a) OX=326424 GN=ahpD PE=3 SV=1
+Length=185
+
+ Score = 43.6 bits (101),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALD  81
+             +A+  PG +D    EL  L  S V  C  C+  H       G + E I +A+ 
+Sbjct  105  MNALANPG-VDKVDVELWSLAVSAVNGCGRCLTAHEHELRGRGVAREVIQDAIR  157
+
+
+>sp|O32166|YURZ_BACSU Uncharacterized protein YurZ OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yurZ PE=4 SV=1
+Length=125
+
+ Score = 42.4 bits (98),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 32/64 (50%), Gaps = 0/64 (0%)
+
+Query  19  LNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFE  78
+           L  ++F       +    L  + K+L+ L  +   + + C+ YH   C+ +GAS+E I E
+Sbjct  33  LMGRKFNEFTEQCFAGNSLTEREKQLIALGIAINAQDEYCMIYHTKGCLDQGASEENILE  92
+
+Query  79  ALDI  82
+           A+ +
+Sbjct  93  AVSV  96
+
+
+>sp|A5VCB6|AHPD_SPHWW Alkyl hydroperoxide reductase AhpD OS=Sphingomonas 
+wittichii (strain RW1 / DSM 6014 / JCM 10273) OX=392499 
+GN=ahpD PE=3 SV=2
+Length=173
+
+ Score = 42.1 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 24/60 (40%), Gaps = 1/60 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S +  C  CI  H     Q G + + I  A  +  V+ 
+Sbjct  105  MNVIGSPG-IEKDDFELFSLAVSAMNGCGLCIDSHEKVLRQHGVAADVIQTAARVGAVIK  163
+
+
+>sp|Q57498|Y1053_HAEIN Uncharacterized protein HI_1053 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1053 PE=4 SV=1
+Length=113
+
+ Score = 40.5 bits (93),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 22/63 (35%), Positives = 33/63 (52%), Gaps = 0/63 (0%)
+
+Query  37   LDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLR  96
+            LD KT+EL+ L  +   RC+ CI  H    V+ GAS+ E+  AL  A+ +       +  
+Sbjct  43   LDAKTRELIALAVAVTTRCESCISAHAEEAVKAGASEAEVAAALATAIALNAGAAYTYSL  102
+
+Query  97   RAV  99
+            RA+
+Sbjct  103  RAL  105
+
+
+>sp|B0UAJ8|AHPD_METS4 Alkyl hydroperoxide reductase AhpD OS=Methylobacterium 
+sp. (strain 4-46) OX=426117 GN=ahpD PE=3 SV=1
+Length=176
+
+ Score = 40.1 bits (92),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 13/47 (28%), Positives = 19/47 (40%), Gaps = 1/47 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDE  74
+             S++  PG +     EL  L  S +  C  CI  H     + G  +E
+Sbjct  105  MSSIGNPG-VARADFELWSLAVSAINGCGRCIDAHEQVLREAGVGEE  150
+
+
+>sp|Q2IMQ8|AHPD_ANADE Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+dehalogenans (strain 2CP-C) OX=290397 GN=ahpD 
+PE=3 SV=1
+Length=186
+
+ Score = 39.4 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 12/38 (32%), Positives = 18/38 (47%), Gaps = 0/38 (0%)
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEI  76
+                EL  L  S V  C+ C+R H    V  G S++++
+Sbjct  116  KLDFELFALAVSAVNGCETCVRSHEQVVVGGGVSEDQV  153
+
+
+>sp|P96684|YDFG_BACSU Uncharacterized protein YdfG OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ydfG PE=4 SV=1
+Length=147
+
+ Score = 39.0 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 10/46 (22%), Positives = 22/46 (48%), Gaps = 0/46 (0%)
+
+Query  32  YRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIF  77
+            +   ++  T+EL+ +  S +  C  CI  H     + G +++ I+
+Sbjct  25  TKQSSINRTTRELIKIRVSQMNGCAFCIDMHTSDARKMGETEQRIY  70
+
+
+>sp|B8GVX4|AHPD_CAUVN Alkyl hydroperoxide reductase AhpD OS=Caulobacter 
+vibrioides (strain NA1000 / CB15N) OX=565050 GN=ahpD 
+PE=3 SV=1
+Length=183
+
+ Score = 39.0 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 21/59 (36%), Gaps = 0/59 (0%)
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+            T +L  +  S +  C  C+  H       G    +I  AL IA VV           A+
+Sbjct  118  TYDLSCVAVSAINGCGACLDSHEADLRGRGVEPTQIQAALRIAAVVSAVARTLAAEAAL  176
+
+
+>sp|Q9A268|AHPD_CAUVC Alkyl hydroperoxide reductase AhpD OS=Caulobacter 
+vibrioides (strain ATCC 19089 / CB15) OX=190650 GN=ahpD 
+PE=3 SV=1
+Length=183
+
+ Score = 39.0 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 21/59 (36%), Gaps = 0/59 (0%)
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+            T +L  +  S +  C  C+  H       G    +I  AL IA VV           A+
+Sbjct  118  TYDLSCVAVSAINGCGACLDSHEADLRGRGVEPTQIQAALRIAAVVSAVARTLAAEAAL  176
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.127    0.308    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0389    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+Results from round 3
+
+
+Query= d1vkea_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|C0ZYQ9|AHPD_RHOE4 Alkyl hydroperoxide reductase AhpD OS=Rhodoc...  113     9e-32
+sp|Q5YT53|AHPD_NOCFA Alkyl hydroperoxide reductase AhpD OS=Nocard...  109     2e-30
+sp|B1MJX0|AHPD_MYCA9 Alkyl hydroperoxide reductase AhpD OS=Mycoba...  107     2e-29
+sp|Q6NGT4|AHPD_CORDI Alkyl hydroperoxide reductase AhpD OS=Coryne...  106     4e-29
+sp|A6X5N3|AHPD_OCHA4 Alkyl hydroperoxide reductase AhpD OS=Ochrob...  105     1e-28
+sp|Q73ZL4|AHPD_MYCPA Alkyl hydroperoxide reductase AhpD OS=Mycoli...  104     2e-28
+sp|A0QGI9|AHPD_MYCA1 Alkyl hydroperoxide reductase AhpD OS=Mycoba...  104     2e-28
+sp|B8EJZ2|AHPD_METSB Alkyl hydroperoxide reductase AhpD OS=Methyl...  104     2e-28
+sp|Q7AKI6|AHPD_STRCO Alkyl hydroperoxide reductase AhpD OS=Strept...  103     4e-28
+sp|B1W2G7|AHPD_STRGG Alkyl hydroperoxide reductase AhpD OS=Strept...  102     1e-27
+sp|Q82IC5|AHPD_STRAW Alkyl hydroperoxide reductase AhpD OS=Strept...  102     2e-27
+sp|A9WZ04|AHPD_BRUSI Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     6e-27
+sp|Q8YCF2|AHPD_BRUME Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     6e-27
+sp|Q8FVW4|AHPD_BRUSU Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     6e-27
+sp|A9MBZ4|AHPD_BRUC2 Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     6e-27
+sp|Q578J2|AHPD_BRUAB Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     7e-27
+sp|Q2YKW2|AHPD_BRUA2 Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     7e-27
+sp|B2SAW2|AHPD_BRUA1 Alkyl hydroperoxide reductase AhpD OS=Brucel...  100     7e-27
+sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Coryne...  100     1e-26
+sp|Q83BM5|AHPD_COXBU Alkyl hydroperoxide reductase AhpD OS=Coxiel...  98.6    5e-26
+sp|A9N917|AHPD_COXBR Alkyl hydroperoxide reductase AhpD OS=Coxiel...  98.6    5e-26
+sp|A9KBI4|AHPD_COXBN Alkyl hydroperoxide reductase AhpD OS=Coxiel...  98.6    5e-26
+sp|B6IZ19|AHPD_COXB2 Alkyl hydroperoxide reductase AhpD OS=Coxiel...  98.6    5e-26
+sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Pa...  96.3    8e-26
+sp|B6IQZ3|AHPD_RHOCS Alkyl hydroperoxide reductase AhpD OS=Rhodos...  98.2    8e-26
+sp|P9WQB5|AHPD_MYCTU Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|P9WQB4|AHPD_MYCTO Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|A5U5C5|AHPD_MYCTA Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|C1AQZ5|AHPD_MYCBT Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|A1KLC4|AHPD_MYCBP Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|P0A5N5|AHPD_MYCBO Alkyl hydroperoxide reductase AhpD OS=Mycoba...  97.4    1e-25
+sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupria...  95.1    2e-25
+sp|B2IHZ4|AHPD_BEII9 Alkyl hydroperoxide reductase AhpD OS=Beijer...  96.7    3e-25
+sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Coryne...  96.7    3e-25
+sp|Q07I00|AHPD_RHOP5 Alkyl hydroperoxide reductase AhpD OS=Rhodop...  96.3    5e-25
+sp|Q9ANL0|AHPD_BRADU Alkyl hydroperoxide reductase AhpD OS=Bradyr...  95.1    1e-24
+sp|Q02BZ5|AHPD_SOLUE Alkyl hydroperoxide reductase AhpD OS=Soliba...  95.1    1e-24
+sp|A0PSD4|AHPD_MYCUA Alkyl hydroperoxide reductase AhpD OS=Mycoba...  94.7    1e-24
+sp|Q0AKM4|AHPD_MARMM Alkyl hydroperoxide reductase AhpD OS=Marica...  94.0    3e-24
+sp|B2HD59|AHPD_MYCMM Alkyl hydroperoxide reductase AhpD OS=Mycoba...  94.0    3e-24
+sp|C1F4K1|AHPD_ACIC5 Alkyl hydroperoxide reductase AhpD OS=Acidob...  93.2    7e-24
+sp|Q50441|AHPD_MYCS2 Alkyl hydroperoxide reductase AhpD OS=Mycoli...  92.8    9e-24
+sp|Q0BXT2|AHPD_HYPNA Alkyl hydroperoxide reductase AhpD OS=Hyphom...  92.4    1e-23
+sp|A8HQP5|AHPD_AZOC5 Alkyl hydroperoxide reductase AhpD OS=Azorhi...  91.3    4e-23
+sp|Q20Y19|AHPD_RHOPB Alkyl hydroperoxide reductase AhpD OS=Rhodop...  90.9    6e-23
+sp|Q0BUC5|AHPD_GRABC Alkyl hydroperoxide reductase AhpD OS=Granul...  89.7    1e-22
+sp|Q1IJ49|AHPD_KORVE Alkyl hydroperoxide reductase AhpD OS=Koriba...  89.7    2e-22
+sp|A4YYT0|AHPD_BRASO Alkyl hydroperoxide reductase AhpD OS=Bradyr...  88.2    7e-22
+sp|A5ENR3|AHPD_BRASB Alkyl hydroperoxide reductase AhpD OS=Bradyr...  87.0    2e-21
+sp|A9H8D2|AHPD_GLUDA Alkyl hydroperoxide reductase AhpD OS=Glucon...  82.0    1e-19
+sp|A8L1J2|AHPD_FRASN Alkyl hydroperoxide reductase AhpD OS=Franki...  81.6    2e-19
+sp|A5VCB6|AHPD_SPHWW Alkyl hydroperoxide reductase AhpD OS=Sphing...  81.3    2e-19
+sp|Q0RH96|AHPD_FRAAA Alkyl hydroperoxide reductase AhpD OS=Franki...  75.9    4e-17
+sp|B0UAJ8|AHPD_METS4 Alkyl hydroperoxide reductase AhpD OS=Methyl...  74.3    1e-16
+sp|B8J9Z2|AHPD_ANAD2 Alkyl hydroperoxide reductase AhpD OS=Anaero...  73.2    5e-16
+sp|O32166|YURZ_BACSU Uncharacterized protein YurZ OS=Bacillus sub...  71.2    6e-16
+sp|B4UA87|AHPD_ANASK Alkyl hydroperoxide reductase AhpD OS=Anaero...  71.6    2e-15
+sp|Q2IMQ8|AHPD_ANADE Alkyl hydroperoxide reductase AhpD OS=Anaero...  58.9    1e-10
+sp|Q57498|Y1053_HAEIN Uncharacterized protein HI_1053 OS=Haemophi...  45.0    5e-06
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9X5V1|AHPD_STRVD Alkyl hydroperoxide reductase AhpD OS=Strept...  68.2    3e-14
+sp|B8GVX4|AHPD_CAUVN Alkyl hydroperoxide reductase AhpD OS=Caulob...  64.7    8e-13
+sp|Q9A268|AHPD_CAUVC Alkyl hydroperoxide reductase AhpD OS=Caulob...  64.7    8e-13
+sp|A7HCA3|AHPD_ANADF Alkyl hydroperoxide reductase AhpD OS=Anaero...  54.3    5e-09
+sp|P96684|YDFG_BACSU Uncharacterized protein YdfG OS=Bacillus sub...  48.1    7e-07
+sp|Q58906|Y1511_METJA Uncharacterized protein MJ1511 OS=Methanoca...  37.0    0.006
+sp|Q58152|Y742_METJA Uncharacterized protein MJ0742 OS=Methanocal...  36.6    0.009
+
+
+>sp|C0ZYQ9|AHPD_RHOE4 Alkyl hydroperoxide reductase AhpD OS=Rhodococcus 
+erythropolis (strain PR4 / NBRC 100887) OX=234621 
+GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 113 bits (282),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 24/119 (20%), Positives = 36/119 (30%), Gaps = 22/119 (18%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKT  41
+             EA   L+ +     L       +++  YR                         +D   
+Sbjct  57   SEAADNLSAEAYNAALGAASIMGMNNVFYRTKGYLDGKYDDLRAGLRMNIIGNPGVDKAD  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+             EL  L  S +  C+ C+  H     QEG   E IFEA+    +V G          + 
+Sbjct  117  FELWSLAVSAINGCNHCLEAHENTLRQEGVDREVIFEAIRAGSIVAGVAQAVEANEILS  175
+
+
+>sp|Q5YT53|AHPD_NOCFA Alkyl hydroperoxide reductase AhpD OS=Nocardia 
+farcinica (strain IFM 10152) OX=247156 GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 109 bits (273),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 24/119 (20%), Positives = 38/119 (32%), Gaps = 22/119 (18%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYRPG----------------------KLDVKT  41
+             EA   L+ +     L       +++  YR                         +D   
+Sbjct  57   EEAADVLSAEAYNAALGAASIMGMNNVFYRGKAFLGGRYDDLRAGLRMQIIGNPGVDKAD  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+             EL     S++  C  C+  H     + G S E IFE+L +A +V G         A+ 
+Sbjct  117  FELWSFAVSSINGCAHCLEAHEHTLREAGVSREVIFESLRVAAIVAGVGQAVQSTEALA  175
+
+
+>sp|B1MJX0|AHPD_MYCA9 Alkyl hydroperoxide reductase AhpD OS=Mycobacteroides 
+abscessus (strain ATCC 19977 / DSM 44196 / CIP 
+104536 / JCM 13569 / NCTC 13031 / TMC 1543) OX=561007 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 107 bits (266),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 26/118 (22%), Positives = 38/118 (32%), Gaps = 22/118 (19%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKT  41
+             EA   L  +     L       + +  YR             PG          +D   
+Sbjct  57   EEAAGILTPEALDAALGAASIMAMTNVFYRGRGFLDGAYDDLRPGLRMNIIGNPGVDKSE  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+             EL     ST+  C  C+  H     + G + E++ EAL IA +V G         A+
+Sbjct  117  FELWSFAVSTINGCHYCVGSHEKVLREAGLTREQVLEALKIAAIVAGVAQALATVPAL  174
+
+
+>sp|Q6NGT4|AHPD_CORDI Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / 
+Biotype gravis) OX=257309 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 106 bits (264),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 27/117 (23%), Positives = 40/117 (34%), Gaps = 22/117 (19%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKT  41
+             EA   L+E+     L       +++  YR                         +D   
+Sbjct  57   EEASEHLSEEAINAALGAASIMAMNNVAYRAKGWLGDDYAQVKMGLRMNIIAKPGVDKVD  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+             EL  L  STV  C+ C   H      EG + E+IFEA+ IA  + G      +  +
+Sbjct  117  FELWSLAVSTVNGCEHCTIAHEKTVRSEGLTKEQIFEAVKIAATLQGVAQAIEIEAS  173
+
+
+>sp|A6X5N3|AHPD_OCHA4 Alkyl hydroperoxide reductase AhpD OS=Ochrobactrum 
+anthropi (strain ATCC 49188 / DSM 6882 / JCM 21032 
+/ NBRC 15819 / NCTC 12168) OX=439375 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 105 bits (262),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +   +      +++  YR                        PG +D  
+Sbjct  58   EAAAKVDASVIQAAKSAASIMGMNNVYYRFVHLATNKDYRTMPAKLRMNVIGNPG-VDKI  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++    +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTSETIQTAVRFASIIQSVAIALEAADT  174
+
+
+>sp|Q73ZL4|AHPD_MYCPA Alkyl hydroperoxide reductase AhpD OS=Mycolicibacterium 
+paratuberculosis (strain ATCC BAA-968 / K-10) 
+OX=262316 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 104 bits (260),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 36/119 (30%), Gaps = 22/119 (18%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EA   L+ +     L       +++  YR                         ++    
+Sbjct  58   EAADTLSAEAYHAALGAASVMAMNNVFYRGRGFLDGKYDDLRAGLRMNIIGNPGVEKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGF  101
+            EL     S +  C DC+  H     + G S E I EAL  A ++ G        + +  
+Sbjct  118  ELWCFAVSAINGCPDCVASHEHTLREAGVSRETIQEALKAAAIISGVAQAIVASQTLAT  176
+
+
+>sp|A0QGI9|AHPD_MYCA1 Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+avium (strain 104) OX=243243 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 104 bits (260),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 36/119 (30%), Gaps = 22/119 (18%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EA   L+ +     L       +++  YR                         ++    
+Sbjct  58   EAADTLSAEAYHAALGAASVMAMNNVFYRGRGFLDGKYDDLRAGLRMNIIGNPGVEKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGF  101
+            EL     S +  C DC+  H     + G S E I EAL  A ++ G        + +  
+Sbjct  118  ELWCFAVSAINGCPDCVASHEHTLREAGVSRETIQEALKAAAIISGVAQAIVTSQTLAT  176
+
+
+>sp|B8EJZ2|AHPD_METSB Alkyl hydroperoxide reductase AhpD OS=Methylocella 
+silvestris (strain DSM 15510 / CIP 108128 / LMG 27833 
+/ NCIMB 13906 / BL2) OX=395965 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 104 bits (259),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 22/121 (18%), Positives = 34/121 (28%), Gaps = 25/121 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L  +             +++  YR                        PG +   
+Sbjct  58   EAASHLTPEARDAARAAATIMGMNNVYYRFVHLASNPVYKTMPAKLRMGVIGSPG-VPKT  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+              EL  L  S +  C  CI  H       G + E I  A+  A +V  + +     +   
+Sbjct  117  DFELWCLAVSAINGCGMCIDAHEKVLADAGVTQEVIQTAVRFAAIVQSAAIALEAAQLPA  176
+
+Query  101  F  101
+            F
+Sbjct  177  F  177
+
+
+>sp|Q7AKI6|AHPD_STRCO Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 
+GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 103 bits (258),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 19/73 (26%), Positives = 26/73 (36%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL     S +  C  C+  H     + G   E I EA  IA VV 
+Sbjct  105  MNVIGNPG-VDKVDFELWSFAVSAINGCGMCLDSHEQVLRKAGVDRETIQEAFKIAAVVE  163
+
+Query  88   GSIVIPHLRRAVG  100
+               V       + 
+Sbjct  164  AVGVTLDAEAVLA  176
+
+
+>sp|B1W2G7|AHPD_STRGG Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+griseus subsp. griseus (strain JCM 4626 / NBRC 13350) 
+OX=455632 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 102 bits (255),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 28/73 (38%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S +  C  C+  H     + G   E I EA+ +A V+ 
+Sbjct  105  MNVIGNPG-VEKVDFELWSLAVSAINGCGQCLDSHEQVLRKAGVDRETIQEAVKVASVIQ  163
+
+Query  88   GSIVIPHLRRAVG  100
+               V       + 
+Sbjct  164  AVGVTLDAEAVLA  176
+
+
+>sp|Q82IC5|AHPD_STRAW Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+avermitilis (strain ATCC 31267 / DSM 46492 / JCM 
+5070 / NBRC 14893 / NCIMB 12804 / NRRL 8165 / MA-4680) OX=227882 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 102 bits (253),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 26/73 (36%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S V  C  C+  H     + G   + I EA  IA V+ 
+Sbjct  105  MNVIGNPG-VEKVDFELWSLAVSAVNGCGQCLDSHEQVLRKAGVDRDTIQEAFKIAAVIQ  163
+
+Query  88   GSIVIPHLRRAVG  100
+                       + 
+Sbjct  164  AVGTTLDAEAVLA  176
+
+
+>sp|A9WZ04|AHPD_BRUSI Alkyl hydroperoxide reductase AhpD OS=Brucella 
+suis (strain ATCC 23445 / NCTC 10510) OX=470137 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 100 bits (250),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|Q8YCF2|AHPD_BRUME Alkyl hydroperoxide reductase AhpD OS=Brucella 
+melitensis biotype 1 (strain 16M / ATCC 23456 / NCTC 
+10094) OX=224914 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 100 bits (250),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|Q8FVW4|AHPD_BRUSU Alkyl hydroperoxide reductase AhpD OS=Brucella 
+suis biovar 1 (strain 1330) OX=204722 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 100 bits (250),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|A9MBZ4|AHPD_BRUC2 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+canis (strain ATCC 23365 / NCTC 10854) OX=483179 GN=ahpD 
+PE=3 SV=1
+Length=175
+
+ Score = 100 bits (250),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|Q578J2|AHPD_BRUAB Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus biovar 1 (strain 9-941) OX=262698 GN=ahpD PE=3 
+SV=1
+Length=175
+
+ Score = 100 bits (249),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKI  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|Q2YKW2|AHPD_BRUA2 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus (strain 2308) OX=359391 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 100 bits (249),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKI  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|B2SAW2|AHPD_BRUA1 Alkyl hydroperoxide reductase AhpD OS=Brucella 
+abortus (strain S19) OX=430066 GN=ahpD PE=3 SV=1
+Length=175
+
+ Score = 100 bits (249),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 36/118 (31%), Gaps = 25/118 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA  +++  V +          +++  YR                        PG +D  
+Sbjct  58   EAAGKVDASVIQAAKAAASIMGMNNVYYRFVHLASNKDYRTMPARLRMNVISNPG-VDKI  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+              EL  L  S +  C  CI  H     +   + E I  A+  A ++  + +       
+Sbjct  117  DFELWSLAVSAINGCGMCIDAHEDVLRKANVTAEAIQAAVRFASIIQSAAIALEAADT  174
+
+
+>sp|C4LJ26|AHPD_CORK4 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+kroppenstedtii (strain DSM 44385 / JCM 11950 / 
+CIP 105744 / CCUG 35717) OX=645127 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 100 bits (248),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 26/117 (22%), Positives = 42/117 (36%), Gaps = 22/117 (19%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKT  41
+             EA + L+++             +++  YR                         +D   
+Sbjct  57   EEASQHLSDEYVNAAYGAASIMAMNNVAYRAKSFLGSDYAQVRMGLRMNIINKSGIDKVD  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+             ELM L  ST+  C DC + H      EG + E++FEA+ IA  + G      +  A
+Sbjct  117  FELMALAVSTINGCHDCTKAHEKTVTSEGLTKEQVFEAVKIAATIQGVAQAIQIEAA  173
+
+
+>sp|Q83BM5|AHPD_COXBU Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain RSA 493 / Nine Mile phase I) OX=227377 
+GN=ahpD PE=3 SV=3
+Length=177
+
+ Score = 98.6 bits (244),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 26/114 (23%), Positives = 39/114 (34%), Gaps = 25/114 (22%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G   +
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNGLAQV  170
+
+
+>sp|A9N917|AHPD_COXBR Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain RSA 331 / Henzerling II) OX=360115 GN=ahpD 
+PE=3 SV=1
+Length=177
+
+ Score = 98.6 bits (244),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 26/114 (23%), Positives = 39/114 (34%), Gaps = 25/114 (22%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G   +
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNGLAQV  170
+
+
+>sp|A9KBI4|AHPD_COXBN Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain Dugway 5J108-111) OX=434922 GN=ahpD 
+PE=3 SV=3
+Length=177
+
+ Score = 98.6 bits (244),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 26/114 (23%), Positives = 39/114 (34%), Gaps = 25/114 (22%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G   +
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNGLAQV  170
+
+
+>sp|B6IZ19|AHPD_COXB2 Alkyl hydroperoxide reductase AhpD OS=Coxiella 
+burnetii (strain CbuG_Q212) OX=434923 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 98.6 bits (244),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 26/114 (23%), Positives = 39/114 (34%), Gaps = 25/114 (22%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLD  38
+            F +A  EL+E   +          +++  YR                        PG +D
+Sbjct  58   FQKAEAELDESTLQAIKAAASIMAMNNIYYRFVHLVKDSEYQRLPANLRMNIIANPG-ID  116
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVI  92
+             K  EL  L  S +  C  CI  H    ++ G S   I   + IA V+ G   +
+Sbjct  117  KKDFELYSLAVSAINGCGLCIDAHANTLIKAGFSKHSIQHVIRIAAVLNGLAQV  170
+
+
+>sp|P08304|YCO4_PARDE Uncharacterized protein 4 in cox locus OS=Paracoccus 
+denitrificans OX=266 PE=4 SV=1
+Length=111
+
+ Score = 96.3 bits (238),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 30/101 (30%), Positives = 50/101 (50%), Gaps = 0/101 (0%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLV  64
+            +A   L E    G      F  L   V+  G LD +TK+L+ +  + V +C  CI  H+ 
+Sbjct  8    KASAALGETSRAGASIDDAFLALSKVVFADGALDKRTKQLIAVAVAHVTQCPWCIEGHVK  67
+
+Query  65   RCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFLEEL  105
+               +EGA++E+I EA+ +A  +       H  +A+  L+E+
+Sbjct  68   GARREGATNEQIMEAIWVAAEMRAGAAYAHANKALAVLDEI  108
+
+
+>sp|B6IQZ3|AHPD_RHOCS Alkyl hydroperoxide reductase AhpD OS=Rhodospirillum 
+centenum (strain ATCC 51521 / SW) OX=414684 GN=ahpD 
+PE=3 SV=1
+Length=186
+
+ Score = 98.2 bits (243),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 26/120 (22%), Positives = 40/120 (33%), Gaps = 25/120 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA + L+               +++  YR                        PG ++  
+Sbjct  58   EAAQHLDAAGLTAAKAAGAIMGMNNVYYRTVHLSGNADFKKIPARLRMNVIGNPG-VEKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+              EL  L AS V  C  CI  H    + +G S E I +A+ IA V+     +     A+ 
+Sbjct  117  DFELWSLAASAVNGCGMCIEAHEREVMHKGMSTENIQDAVRIAAVIHAVATVLDAEAALS  176
+
+
+>sp|P9WQB5|AHPD_MYCTU Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=ahpD PE=1 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|P9WQB4|AHPD_MYCTO Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|A5U5C5|AHPD_MYCTA Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+tuberculosis (strain ATCC 25177 / H37Ra) OX=419947 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|C1AQZ5|AHPD_MYCBT Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain BCG / Tokyo 172 / ATCC 35737 / TMC 
+1019) OX=561275 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|A1KLC4|AHPD_MYCBP Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain BCG / Pasteur 1173P2) OX=410289 GN=ahpD 
+PE=3 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|P0A5N5|AHPD_MYCBO Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 97.4 bits (241),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 34/118 (29%), Gaps = 22/118 (19%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR-------------PG---------KLDVKTK  42
+            EA   L+       L       +++  YR             PG          +     
+Sbjct  58   EATDHLSAAARHAALGAAAIMGMNNVFYRGRGFLEGRYDDLRPGLRMNIIANPGIPKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+            EL     S +  C  C+  H       G   E IFEAL  A +V G         A+ 
+Sbjct  118  ELWSFAVSAINGCSHCLVAHEHTLRTVGVDREAIFEALKAAAIVSGVAQALATIEALS  175
+
+
+>sp|P27749|Y4147_CUPNH Uncharacterized protein H16_B0147 OS=Cupriavidus 
+necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 
+337) OX=381666 GN=H16_B0147 PE=4 SV=1
+Length=113
+
+ Score = 95.1 bits (235),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 23/104 (22%), Positives = 45/104 (43%), Gaps = 0/104 (0%)
+
+Query  2    KFVEARRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRY  61
+            +  E  R+              F  +  A  + G L    KEL+ +  +    CDDC+ +
+Sbjct  8    RLTEINRQFGALGQAQPAAMSAFQGVMKAATQDGSLPAAVKELIAVALAVQKGCDDCVLF  67
+
+Query  62   HLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVGFLEEL  105
+            H  + ++  A+ E++ E L I + +GG     +  +A+ + + L
+Sbjct  68   HTSQALRHRATREQLAEVLAINIEMGGGPGAMYASKALAYFDAL  111
+
+
+>sp|B2IHZ4|AHPD_BEII9 Alkyl hydroperoxide reductase AhpD OS=Beijerinckia 
+indica subsp. indica (strain ATCC 9039 / DSM 1715 
+/ NCIB 8712) OX=395963 GN=ahpD PE=3 SV=1
+Length=180
+
+ Score = 96.7 bits (239),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 19/120 (16%), Positives = 31/120 (26%), Gaps = 25/120 (21%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDV  39
+             E    L        L       +++  YR                        PG +  
+Sbjct  57   QECTPHLAPAARDAALAAATIMAMNNVYYRFVHLASNKAYGTLPAKLRMNIIGNPG-VPK  115
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+               EL  L  S +  C  CI  H    +    + + I  A+  A ++  + V        
+Sbjct  116  TDFELWSLAVSAINGCGMCIDSHEKVLLNADTTQDTIQTAVRFAAIIQSTAVALEAASLP  175
+
+
+>sp|C3PGV9|AHPD_CORA7 Alkyl hydroperoxide reductase AhpD OS=Corynebacterium 
+aurimucosum (strain ATCC 700975 / DSM 44827 / 
+CN-1) OX=548476 GN=ahpD PE=3 SV=1
+Length=177
+
+ Score = 96.7 bits (239),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 25/118 (21%), Positives = 42/118 (36%), Gaps = 22/118 (19%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVK  40
+              EAR  L+E+     L +     +++  YR                         +D  
+Sbjct  56   LEEAREHLSEEAVDAALGSATVMAMNNVAYRAKSWLGDDFAQVKFGLRMNIIAKPGVDKA  115
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+            T EL   V S +  C+ C+  H    ++EG + E+I+E + +A VV            
+Sbjct  116  TFELWSTVVSAINGCEHCLSAHANTLLEEGVTKEQIWEGIKVAGVVEAVAQALQAEAV  173
+
+
+>sp|Q07I00|AHPD_RHOP5 Alkyl hydroperoxide reductase AhpD OS=Rhodopseudomonas 
+palustris (strain BisA53) OX=316055 GN=ahpD PE=3 
+SV=1
+Length=181
+
+ Score = 96.3 bits (238),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 18/67 (27%), Positives = 26/67 (39%), Gaps = 1/67 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H    +Q G S   I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGMCIDSHEKVLLQAGVSTAAIQTAVRFAAIMQ  163
+
+Query  88   GSIVIPH  94
+               V   
+Sbjct  164  SVAVSIE  170
+
+
+>sp|Q9ANL0|AHPD_BRADU Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+diazoefficiens (strain JCM 10833 / IAM 13628 / 
+NBRC 14792 / USDA 110) OX=224911 GN=ahpD PE=3 SV=1
+Length=182
+
+ Score = 95.1 bits (235),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 16/69 (23%), Positives = 24/69 (35%), Gaps = 1/69 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+               +  PG +D    EL  L  S++  C  CI  H       G + E I  A+  A +  
+Sbjct  106  MDVIGNPG-VDKSDFELWSLAVSSINGCGICIDAHERTLRAAGVNSETIQTAVRFAAITQ  164
+
+Query  88   GSIVIPHLR  96
+               +     
+Sbjct  165  SVAIALEAA  173
+
+
+>sp|Q02BZ5|AHPD_SOLUE Alkyl hydroperoxide reductase AhpD OS=Solibacter 
+usitatus (strain Ellin6076) OX=234267 GN=ahpD PE=3 
+SV=1
+Length=177
+
+ Score = 95.1 bits (235),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 23/118 (19%), Positives = 37/118 (31%), Gaps = 23/118 (19%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDV  39
+              EA + LNE+             +++  YR                           D 
+Sbjct  56   LGEAAKHLNEQALFAAKAAASVMGMNNIFYRFRHLSTNPKYGAMPARLRMQVIAKHGSDP  115
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRR  97
+               EL  L  S +  C  C+  H     ++G S+E +  A+ IA  + G   I  +  
+Sbjct  116  IDFELWCLAVSAMNGCGVCVDSHENVLREKGVSEEAVLAAIRIASTIHGLAAILDVEA  173
+
+
+>sp|A0PSD4|AHPD_MYCUA Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+ulcerans (strain Agy99) OX=362242 GN=ahpD PE=3 SV=1
+Length=178
+
+ Score = 94.7 bits (234),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 23/107 (21%), Positives = 35/107 (33%), Gaps = 22/107 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EA   L+ +  +  L       +++  YR                         +D    
+Sbjct  58   EAADNLSAQAYQAALGAVSIMGMNNVFYRGRGFLEGQYDDLRAGLRMNIIANPGVDKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGS  89
+            EL     S+V  C  C+  H     + G   E +FEAL  A +V G 
+Sbjct  118  ELWSFAVSSVNGCSHCVVAHEHTLREAGVGREAVFEALKAAAIVCGV  164
+
+
+>sp|Q0AKM4|AHPD_MARMM Alkyl hydroperoxide reductase AhpD OS=Maricaulis 
+maris (strain MCS10) OX=394221 GN=ahpD PE=3 SV=1
+Length=173
+
+ Score = 94.0 bits (232),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 21/116 (18%), Positives = 35/116 (30%), Gaps = 25/116 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L+++             +++  YR                        PG +D  
+Sbjct  58   EAETRLSDEALTAAKAASAIMGMNNVYYRFVHLSKNKEYATLPAKLRMNILANPG-VDKA  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLR  96
+              EL  L  S +  C  CI  H     + G +  ++  A+ IA  V     +    
+Sbjct  117  DFELWSLAVSAINGCGLCIDSHEAELRKHGLTTTQVQAAVRIAATVNAIAAVLAAE  172
+
+
+>sp|B2HD59|AHPD_MYCMM Alkyl hydroperoxide reductase AhpD OS=Mycobacterium 
+marinum (strain ATCC BAA-535 / M) OX=216594 GN=ahpD 
+PE=3 SV=1
+Length=178
+
+ Score = 94.0 bits (232),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 22/107 (21%), Positives = 34/107 (32%), Gaps = 22/107 (21%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPGK----------------------LDVKTK  42
+            EA   L+ +  +  L       +++  YR                         +D    
+Sbjct  58   EAADNLSAQAYQAALGAVSIMGMNNVFYRGRGFLEGQYDDLRAGLRMNIIANPGVDKANF  117
+
+Query  43   ELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGS  89
+            EL     S+V  C  C+  H     + G   E + EAL  A +V G 
+Sbjct  118  ELWSFAVSSVNGCSHCVVAHEHTLREAGVGREAVLEALKAAAIVCGV  164
+
+
+>sp|C1F4K1|AHPD_ACIC5 Alkyl hydroperoxide reductase AhpD OS=Acidobacterium 
+capsulatum (strain ATCC 51196 / DSM 11244 / JCM 
+7670 / NBRC 15755 / NCIMB 13165 / 161) OX=240015 GN=ahpD PE=3 
+SV=1
+Length=183
+
+ Score = 93.2 bits (230),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 16/119 (13%), Positives = 38/119 (32%), Gaps = 23/119 (19%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDV  39
+              +  + L+E+            ++++  YR                          ++ 
+Sbjct  57   LEDGAQHLSEQALEAARIAAALMSMNNIFYRFQHLSSNEKYATMPARLRMNGMRTHGVEP  116
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+               EL  L  S +  C  C+  H     ++GA ++ +  A+ +A V+     +    + 
+Sbjct  117  VDFELWSLAVSAINGCGKCVDSHEKVLREKGAGEDLVLAAVRVASVIHAIGAVLDAEKV  175
+
+
+>sp|Q50441|AHPD_MYCS2 Alkyl hydroperoxide reductase AhpD OS=Mycolicibacterium 
+smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 
+GN=ahpD PE=3 SV=2
+Length=177
+
+ Score = 92.8 bits (229),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 23/119 (19%), Positives = 37/119 (31%), Gaps = 22/119 (18%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYR-----PGKLD-----------------VKT  41
+             +A   L+E+     L       +++  YR      GK D                  + 
+Sbjct  57   EDALDILSEEAYNAALGAAAIMGMNNVFYRTKGQLDGKYDDLRAGLRMNIIGNPGVAKED  116
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+             EL  L  S +  C  C+  H         +   IFEA+ +A +V G          + 
+Sbjct  117  FELWSLAVSAINGCGHCLAAHEKTLRDADVARTTIFEAIRLASIVSGVAQALLTADTLA  175
+
+
+>sp|Q0BXT2|AHPD_HYPNA Alkyl hydroperoxide reductase AhpD OS=Hyphomonas 
+neptunium (strain ATCC 15444) OX=228405 GN=ahpD PE=3 
+SV=1
+Length=180
+
+ Score = 92.4 bits (228),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 20/106 (19%), Positives = 34/106 (32%), Gaps = 23/106 (22%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYRPG-----------------------KLDVKT  41
+            EAR +L+ +             +++  YR                          ++   
+Sbjct  58   EARGKLSVEALNAAKAASAIMGMNNVYYRATHLVSNTTYTTMPARLRMNVIGNPGVEKVD  117
+
+Query  42   KELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             EL  L  S +  C  C+  H     + G + E+I  A+ I  VV 
+Sbjct  118  FELWSLAVSAINGCGMCLDAHEAELRKHGVTSEQIQAAIRIGAVVN  163
+
+
+>sp|A8HQP5|AHPD_AZOC5 Alkyl hydroperoxide reductase AhpD OS=Azorhizobium 
+caulinodans (strain ATCC 43989 / DSM 5975 / JCM 20966 
+/ NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=ahpD 
+PE=3 SV=1
+Length=181
+
+ Score = 91.3 bits (225),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 20/106 (19%), Positives = 33/106 (31%), Gaps = 25/106 (24%)
+
+Query  5    EARRELNEKVSRGTLNTKRFFNLDSAVYR------------------------PGKLDVK  40
+            EA   L+               +++  YR                        PG +D  
+Sbjct  58   EAAPHLSPAALDAAKAAASIMAMNNVYYRFTHLASNKAYETLPAKLRMSVIGNPG-VDKV  116
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVV  86
+              EL  L  S +  C  CI  H     + G S+ +I  A+ +  ++
+Sbjct  117  DFELWSLAVSAMNGCGRCIDAHEAVLREAGLSEAQIQTAVRVGAII  162
+
+
+>sp|Q20Y19|AHPD_RHOPB Alkyl hydroperoxide reductase AhpD OS=Rhodopseudomonas 
+palustris (strain BisB18) OX=316056 GN=ahpD PE=3 
+SV=1
+Length=181
+
+ Score = 90.9 bits (224),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 17/67 (25%), Positives = 25/67 (37%), Gaps = 1/67 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H    +  G S   I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGMCIDSHEKVLLAAGVSTAAIQTAVRFAAIIQ  163
+
+Query  88   GSIVIPH  94
+               V   
+Sbjct  164  SVAVSIE  170
+
+
+>sp|Q0BUC5|AHPD_GRABC Alkyl hydroperoxide reductase AhpD OS=Granulibacter 
+bethesdensis (strain ATCC BAA-1260 / CGDNIH1) OX=391165 
+GN=ahpD PE=3 SV=2
+Length=175
+
+ Score = 89.7 bits (221),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 22/121 (18%), Positives = 36/121 (30%), Gaps = 24/121 (20%)
+
+Query  3    FVEARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDV  39
+              E   +L+ +             +++  YR                       PG +D 
+Sbjct  56   LAEFGPQLSAEALAAAKAAAAIMGMNNVYYRFVHLVGGDYANLPARLRMNVMAKPG-VDK  114
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+               EL  L  S +  C  C+  H     Q G + E++  A+ IA  V           A+
+Sbjct  115  VDFELWSLAVSAINGCGMCMESHEKIVRQNGLTQEQVQAAIRIAATVHAVAATLDGEAAL  174
+
+Query  100  G  100
+             
+Sbjct  175  S  175
+
+
+>sp|Q1IJ49|AHPD_KORVE Alkyl hydroperoxide reductase AhpD OS=Koribacter 
+versatilis (strain Ellin345) OX=204669 GN=ahpD PE=3 
+SV=1
+Length=194
+
+ Score = 89.7 bits (221),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 23/117 (20%), Positives = 40/117 (34%), Gaps = 23/117 (20%)
+
+Query  4    VEARRELNEKVSRGTLNTKRFFNLDSAVYR-----------------------PGKLDVK  40
+             EA+ +L+ +            ++++  YR                          +D  
+Sbjct  58   EEAKGKLSAQAVEAAKGAAAILSMNNIFYRFQHLAVNKKYETMRAGLRMNFLRQHGVDPL  117
+
+Query  41   TKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRR  97
+              EL  L  S V  C  CI  H    +Q+  S+E+I  A+ +A  + G  V+     
+Sbjct  118  DFELWALAVSAVNGCGKCIDAHERVLLQKEFSEEKILAAIRVASTIYGLAVVFDAEE  174
+
+
+>sp|A4YYT0|AHPD_BRASO Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+sp. (strain ORS 278) OX=114615 GN=ahpD PE=3 SV=1
+Length=181
+
+ Score = 88.2 bits (217),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 15/69 (22%), Positives = 23/69 (33%), Gaps = 1/69 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    EL  L  S +  C  CI  H     +       I  A+  A ++ 
+Sbjct  105  MNVIANPG-VDKADFELWSLAVSAINGCGTCIDAHEKVLQEAAVPAASIQTAVRFAAIIQ  163
+
+Query  88   GSIVIPHLR  96
+               V     
+Sbjct  164  SVAVAIEAA  172
+
+
+>sp|A5ENR3|AHPD_BRASB Alkyl hydroperoxide reductase AhpD OS=Bradyrhizobium 
+sp. (strain BTAi1 / ATCC BAA-1182) OX=288000 GN=ahpD 
+PE=3 SV=1
+Length=181
+
+ Score = 87.0 bits (214),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 17/61 (28%), Positives = 25/61 (41%), Gaps = 1/61 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             +A+  PG +D    EL  L  S +  C  CI  H     + G S   I  A+  A ++ 
+Sbjct  105  MNAIANPG-VDKADFELWSLAVSAINGCGTCIDAHERVLKEAGVSAASIQTAVRFAAIIQ  163
+
+Query  88   G  88
+             
+Sbjct  164  S  164
+
+
+>sp|A9H8D2|AHPD_GLUDA Alkyl hydroperoxide reductase AhpD OS=Gluconacetobacter 
+diazotrophicus (strain ATCC 49037 / DSM 5601 
+/ PAl5) OX=272568 GN=ahpD PE=3 SV=1
+Length=181
+
+ Score = 82.0 bits (201),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 30/73 (41%), Gaps = 1/73 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + + RPG ++    EL  L  S +  C  C+  H     + G S E++  A+ +A  V 
+Sbjct  104  MNVIGRPG-VEKLDFELWSLAVSAINGCGMCVESHEKVVREGGLSAEQVQTAVRVAATVH  162
+
+Query  88   GSIVIPHLRRAVG  100
+                      A+G
+Sbjct  163  AVAATLDGAAALG  175
+
+
+>sp|A8L1J2|AHPD_FRASN Alkyl hydroperoxide reductase AhpD OS=Frankia 
+sp. (strain EAN1pec) OX=298653 GN=ahpD PE=3 SV=1
+Length=179
+
+ Score = 81.6 bits (200),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 24/54 (44%), Gaps = 1/54 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALD  81
+             +A+  PG +D    EL  L AS V  C  C+  H       G S E I +A+ 
+Sbjct  105  MNAIANPG-VDKVDFELWSLAASAVNGCGMCLTAHEHELRGRGVSREVIQDAIR  157
+
+
+>sp|A5VCB6|AHPD_SPHWW Alkyl hydroperoxide reductase AhpD OS=Sphingomonas 
+wittichii (strain RW1 / DSM 6014 / JCM 10273) OX=392499 
+GN=ahpD PE=3 SV=2
+Length=173
+
+ Score = 81.3 bits (199),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 24/60 (40%), Gaps = 1/60 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG ++    EL  L  S +  C  CI  H     Q G + + I  A  +  V+ 
+Sbjct  105  MNVIGSPG-IEKDDFELFSLAVSAMNGCGLCIDSHEKVLRQHGVAADVIQTAARVGAVIK  163
+
+
+>sp|Q0RH96|AHPD_FRAAA Alkyl hydroperoxide reductase AhpD OS=Frankia 
+alni (strain ACN14a) OX=326424 GN=ahpD PE=3 SV=1
+Length=185
+
+ Score = 75.9 bits (185),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALD  81
+             +A+  PG +D    EL  L  S V  C  C+  H       G + E I +A+ 
+Sbjct  105  MNALANPG-VDKVDVELWSLAVSAVNGCGRCLTAHEHELRGRGVAREVIQDAIR  157
+
+
+>sp|B0UAJ8|AHPD_METS4 Alkyl hydroperoxide reductase AhpD OS=Methylobacterium 
+sp. (strain 4-46) OX=426117 GN=ahpD PE=3 SV=1
+Length=176
+
+ Score = 74.3 bits (181),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 23/92 (25%), Positives = 32/92 (35%), Gaps = 1/92 (1%)
+
+Query  9    ELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQ  68
+                  S     T+      S++  PG +     EL  L  S +  C  CI  H     +
+Sbjct  86   RFTHLASNPAYATRPAKLRMSSIGNPG-VARADFELWSLAVSAINGCGRCIDAHEQVLRE  144
+
+Query  69   EGASDEEIFEALDIALVVGGSIVIPHLRRAVG  100
+             G  +E I  A+ +A VV    V     RA  
+Sbjct  145  AGVGEEAIQAAVRVAAVVASLAVALESVRAAA  176
+
+
+>sp|B8J9Z2|AHPD_ANAD2 Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+dehalogenans (strain 2CP-1 / ATCC BAA-258) OX=455488 
+GN=ahpD PE=3 SV=1
+Length=186
+
+ Score = 73.2 bits (178),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 32/69 (46%), Gaps = 1/69 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + + +P        EL  L  S V  C+ C+R H    V  G S++++ EA+ IA V+ 
+Sbjct  106  MNRLVKPAA-SKVDFELFALAVSAVNGCETCVRSHEQVVVAGGLSEDQVHEAVRIAAVLH  164
+
+Query  88   GSIVIPHLR  96
+             + V   L 
+Sbjct  165  AAAVSLELA  173
+
+
+>sp|O32166|YURZ_BACSU Uncharacterized protein YurZ OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yurZ PE=4 SV=1
+Length=125
+
+ Score = 71.2 bits (173),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 34/73 (47%), Gaps = 0/73 (0%)
+
+Query  10  LNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQE  69
+           L     +  L  ++F       +    L  + K+L+ L  +   + + C+ YH   C+ +
+Sbjct  24  LGTFEQKMPLMGRKFNEFTEQCFAGNSLTEREKQLIALGIAINAQDEYCMIYHTKGCLDQ  83
+
+Query  70  GASDEEIFEALDI  82
+           GAS+E I EA+ +
+Sbjct  84  GASEENILEAVSV  96
+
+
+>sp|B4UA87|AHPD_ANASK Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+sp. (strain K) OX=447217 GN=ahpD PE=3 SV=1
+Length=186
+
+ Score = 71.6 bits (174),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 32/69 (46%), Gaps = 1/69 (1%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + + +P        EL  L  S V  C+ C+R H    V  G S++++ EA+ IA V+ 
+Sbjct  106  MNRLVKPAA-SKVDFELFALAVSAVNGCETCVRSHEQVVVAGGLSEDQVHEAVRIAAVLH  164
+
+Query  88   GSIVIPHLR  96
+             + V   L 
+Sbjct  165  AAAVSLELA  173
+
+
+>sp|Q9X5V1|AHPD_STRVD Alkyl hydroperoxide reductase AhpD OS=Streptomyces 
+viridosporus OX=67581 GN=ahpD PE=3 SV=1
+Length=174
+
+ Score = 68.2 bits (165),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 9/70 (13%), Positives = 15/70 (21%), Gaps = 2/70 (3%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVG  87
+             + +  PG +D    E      S +  C  C+        + G          D      
+Sbjct  105  MNVIGNPG-VDKVDFEFWSFAVSAINGCGMCLDSTKQVLRKAGVERRSSRRRSDCRGT-Q  162
+
+Query  88   GSIVIPHLRR  97
+                      
+Sbjct  163  AVAATLDAEA  172
+
+
+>sp|B8GVX4|AHPD_CAUVN Alkyl hydroperoxide reductase AhpD OS=Caulobacter 
+vibrioides (strain NA1000 / CB15N) OX=565050 GN=ahpD 
+PE=3 SV=1
+Length=183
+
+ Score = 64.7 bits (156),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 21/60 (35%), Gaps = 0/60 (0%)
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+             T +L  +  S +  C  C+  H       G    +I  AL IA VV           A+
+Sbjct  117  VTYDLSCVAVSAINGCGACLDSHEADLRGRGVEPTQIQAALRIAAVVSAVARTLAAEAAL  176
+
+
+>sp|Q9A268|AHPD_CAUVC Alkyl hydroperoxide reductase AhpD OS=Caulobacter 
+vibrioides (strain ATCC 19089 / CB15) OX=190650 GN=ahpD 
+PE=3 SV=1
+Length=183
+
+ Score = 64.7 bits (156),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 21/60 (35%), Gaps = 0/60 (0%)
+
+Query  40   KTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+             T +L  +  S +  C  C+  H       G    +I  AL IA VV           A+
+Sbjct  117  VTYDLSCVAVSAINGCGACLDSHEADLRGRGVEPTQIQAALRIAAVVSAVARTLAAEAAL  176
+
+
+>sp|Q2IMQ8|AHPD_ANADE Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+dehalogenans (strain 2CP-C) OX=290397 GN=ahpD 
+PE=3 SV=1
+Length=186
+
+ Score = 58.9 bits (141),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 13/51 (25%), Positives = 23/51 (45%), Gaps = 1/51 (2%)
+
+Query  28   DSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFE  78
+             + + +P        EL  L  S V  C+ C+R H    V  G S++++ +
+Sbjct  106  MNRLVKPAA-SKLDFELFALAVSAVNGCETCVRSHEQVVVGGGVSEDQVHD  155
+
+
+>sp|A7HCA3|AHPD_ANADF Alkyl hydroperoxide reductase AhpD OS=Anaeromyxobacter 
+sp. (strain Fw109-5) OX=404589 GN=ahpD PE=3 SV=1
+Length=185
+
+ Score = 54.3 bits (129),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 19/67 (28%), Positives = 30/67 (45%), Gaps = 0/67 (0%)
+
+Query  39   VKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDIALVVGGSIVIPHLRRA  98
+                EL  L AS +  C+ C+R H    V+ G  +E + +A+ IA V+  + V       
+Sbjct  116  RADLELFSLAASAINGCEACVRTHEDVVVKGGIGEEAVHDAVRIAAVIHAAAVALEAGEV  175
+
+Query  99   VGFLEEL  105
+             G  E +
+Sbjct  176  AGGHEAV  182
+
+
+>sp|P96684|YDFG_BACSU Uncharacterized protein YdfG OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ydfG PE=4 SV=1
+Length=147
+
+ Score = 48.1 bits (113),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 10/64 (16%), Positives = 22/64 (34%), Gaps = 0/64 (0%)
+
+Query  13  KVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGAS  72
+                     +         +   ++  T+EL+ +  S +  C  CI  H     + G +
+Sbjct  6   SYYEIAPEGMKIMMDMEKYTKQSSINRTTRELIKIRVSQMNGCAFCIDMHTSDARKMGET  65
+
+Query  73  DEEI  76
+           ++ I
+Sbjct  66  EQRI  69
+
+
+>sp|Q57498|Y1053_HAEIN Uncharacterized protein HI_1053 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1053 PE=4 SV=1
+Length=113
+
+ Score = 45.0 bits (105),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 25/93 (27%), Positives = 42/93 (45%), Gaps = 0/93 (0%)
+
+Query  7    RRELNEKVSRGTLNTKRFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRC  66
+            ++   E   +     + +  L +A      LD KT+EL+ L  +   RC+ CI  H    
+Sbjct  13   KKSFGELGKQYPKMLQAYQALGAAAAEGNVLDAKTRELIALAVAVTTRCESCISAHAEEA  72
+
+Query  67   VQEGASDEEIFEALDIALVVGGSIVIPHLRRAV  99
+            V+ GAS+ E+  AL  A+ +       +  RA+
+Sbjct  73   VKAGASEAEVAAALATAIALNAGAAYTYSLRAL  105
+
+
+>sp|Q58906|Y1511_METJA Uncharacterized protein MJ1511 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ1511 PE=4 SV=1
+Length=107
+
+ Score = 37.0 bits (84),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/77 (22%), Positives = 32/77 (42%), Gaps = 0/77 (0%)
+
+Query  23  RFFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQEGASDEEIFEALDI  82
+              NL   V+   KLD K + L+ L     L  +  ++    + ++ GA+ EEI + + +
+Sbjct  23  AVANLQKEVFSGKKLDEKMQRLVLLAVVATLGDEKAVKRQTKKLMEMGATIEEIQDVMKV  82
+
+Query  83  ALVVGGSIVIPHLRRAV  99
+             +  G         A+
+Sbjct  83  VYIGAGMPRFIKAVEAI  99
+
+
+>sp|Q58152|Y742_METJA Uncharacterized protein MJ0742 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0742 PE=1 SV=1
+Length=104
+
+ Score = 36.6 bits (83),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/77 (21%), Positives = 32/77 (42%), Gaps = 1/77 (1%)
+
+Query  24   FFNLDSAVYRPGKLDVKTKELMGLVASTVLRCDDCIRYHLVRCVQE-GASDEEIFEALDI  82
+               L+  V+    LD KT++L+ +        +  I   +   ++E G + EEI + L +
+Sbjct  25   IVKLNDTVFTGKTLDYKTQKLIAIGIVASRCDEVAIEKQMKSAMKELGITKEEIADVLRV  84
+
+Query  83   ALVVGGSIVIPHLRRAV  99
+             L+  G        + +
+Sbjct  85   VLLTSGMPAFTKAMKIL  101
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0417    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,700 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ppjh_
+
+Length=66
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochond...  132     3e-41
+sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochond...  127     4e-39
+sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochond...  125     1e-38
+sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochond...  123     1e-37
+sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondri...  121     4e-37
+sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like,...  121     7e-37
+sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochond...  50.4    2e-08
+sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum...  46.6    1e-07
+sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitoch...  43.5    2e-06
+
+
+>sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Bos taurus OX=9913 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 132 bits (332),  Expect = 3e-41, Method: Compositional matrix adjust.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFNSLK
+Sbjct  86  LFNSLK  91
+
+
+>sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Homo sapiens OX=9606 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 127 bits (318),  Expect = 4e-39, Method: Compositional matrix adjust.
+ Identities = 63/66 (95%), Positives = 64/66 (97%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRS TEEDCTEEL DFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSHTEEDCTEELFDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Macaca fascicularis OX=9541 GN=UQCRH PE=3 SV=1
+Length=91
+
+ Score = 125 bits (314),  Expect = 1e-38, Method: Compositional matrix adjust.
+ Identities = 62/66 (94%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCD+RVSSRS+TEEDCTEELLDFLHARDHCVA+K
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDKRVSSRSRTEEDCTEELLDFLHARDHCVAYK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Mus musculus OX=10090 GN=Uqcrh PE=1 SV=2
+Length=89
+
+ Score = 123 bits (308),  Expect = 1e-37, Method: Compositional matrix adjust.
+ Identities = 61/66 (92%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLELCD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLELCDNRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF +LK
+Sbjct  84  LFKNLK  89
+
+
+>sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Rattus norvegicus OX=10116 GN=Uqcrh PE=3 SV=1
+Length=89
+
+ Score = 121 bits (304),  Expect = 4e-37, Method: Compositional matrix adjust.
+ Identities = 61/66 (92%), Positives = 61/66 (92%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLE CD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLESCDRRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF SLK
+Sbjct  84  LFKSLK  89
+
+
+>sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like, 
+mitochondrial OS=Homo sapiens OX=9606 GN=UQCRHL PE=3 SV=1
+Length=91
+
+ Score = 121 bits (303),  Expect = 7e-37, Method: Compositional matrix adjust.
+ Identities = 60/66 (91%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLEL DE VSSRS TEEDCTEEL DFLHA+DHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELYDEHVSSRSHTEEDCTEELFDFLHAKDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A 
+/ CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=qcr6 PE=1 
+SV=1
+Length=141
+
+ Score = 50.4 bits (119),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 24/67 (36%), Positives = 38/67 (57%), Gaps = 1/67 (1%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVS-SRSQTEEDCTEELLDFLHARDHCVAH  59
+            +VDP  T+ E+C   ++C  A+   + C  RV+ + +  +EDC EE    +H    C A 
+Sbjct  75   IVDPKETLEEECRNSKECAPAKHHYDECAARVTGAGADNKEDCVEEFFHLVHCATQCAAP  134
+
+Query  60   KLFNSLK  66
+            KL+N+LK
+Sbjct  135  KLWNTLK  141
+
+
+>sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum 
+tuberosum OX=4113 PE=1 SV=2
+Length=69
+
+ Score = 46.6 bits (109),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 24/66 (36%), Positives = 35/66 (53%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP  T+   C+   KCV+  +  + C +RV       + CT +  D+ H  D CVA K
+Sbjct  6   VVDPKATLEVSCK--PKCVRQLKEYQACTKRVEGDESGHKHCTGQYFDYWHCIDKCVAAK  63
+
+Query  61  LFNSLK  66
+           LF+ LK
+Sbjct  64  LFDHLK  69
+
+
+>sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitochondrial 
+OS=Arabidopsis thaliana OX=3702 GN=QCR6-1 PE=1 SV=1
+Length=69
+
+ Score = 43.5 bits (101),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 23/66 (35%), Positives = 32/66 (48%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP   + E C+   KCVK     + C +R+       + CT +  D+    D CVA K
+Sbjct  6   VVDPKKYLEESCK--PKCVKPLLEYQACVKRIQGDDSGHKHCTGQYFDYWQCIDKCVAPK  63
+
+Query  61  LFNSLK  66
+           LF  LK
+Sbjct  64  LFAKLK  69
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5079254600
+Results from round 2
+
+
+Query= d1ppjh_
+
+Length=66
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochond...  91.3    5e-25
+sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochond...  90.5    9e-25
+sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochond...  90.5    1e-24
+sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochond...  90.2    1e-24
+sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondri...  88.6    6e-24
+sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochond...  88.2    4e-23
+sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitoch...  84.8    1e-22
+sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like,...  85.5    1e-22
+sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum...  81.7    2e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9SJV7|QCR62_ARATH Cytochrome b-c1 complex subunit 6-2, mitoch...  65.5    3e-15
+sp|O42932|QCR6_SCHPO Cytochrome b-c1 complex subunit 6 OS=Schizos...  55.9    3e-10
+sp|P00127|QCR6_YEAST Cytochrome b-c1 complex subunit 6, mitochond...  50.1    2e-08
+sp|Q1ZXP3|QCR6_DICDI Probable cytochrome b-c1 complex subunit 6 O...  41.6    1e-05
+
+
+>sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Mus musculus OX=10090 GN=Uqcrh PE=1 SV=2
+Length=89
+
+ Score = 91.3 bits (225),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 61/66 (92%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLELCD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLELCDNRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF +LK
+Sbjct  84  LFKNLK  89
+
+
+>sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Homo sapiens OX=9606 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 90.5 bits (223),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 63/66 (95%), Positives = 64/66 (97%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRS TEEDCTEEL DFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSHTEEDCTEELFDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Bos taurus OX=9913 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 90.5 bits (223),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFNSLK
+Sbjct  86  LFNSLK  91
+
+
+>sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Macaca fascicularis OX=9541 GN=UQCRH PE=3 SV=1
+Length=91
+
+ Score = 90.2 bits (222),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 62/66 (94%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCD+RVSSRS+TEEDCTEELLDFLHARDHCVA+K
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDKRVSSRSRTEEDCTEELLDFLHARDHCVAYK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Rattus norvegicus OX=10116 GN=Uqcrh PE=3 SV=1
+Length=89
+
+ Score = 88.6 bits (218),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 61/66 (92%), Positives = 61/66 (92%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLE CD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLESCDRRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF SLK
+Sbjct  84  LFKSLK  89
+
+
+>sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A 
+/ CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=qcr6 PE=1 
+SV=1
+Length=141
+
+ Score = 88.2 bits (217),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 24/67 (36%), Positives = 37/67 (55%), Gaps = 1/67 (1%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVSS-RSQTEEDCTEELLDFLHARDHCVAH  59
+            +VDP  T+ E+C   ++C  A+   + C  RV+   +  +EDC EE    +H    C A 
+Sbjct  75   IVDPKETLEEECRNSKECAPAKHHYDECAARVTGAGADNKEDCVEEFFHLVHCATQCAAP  134
+
+Query  60   KLFNSLK  66
+            KL+N+LK
+Sbjct  135  KLWNTLK  141
+
+
+>sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitochondrial 
+OS=Arabidopsis thaliana OX=3702 GN=QCR6-1 PE=1 SV=1
+Length=69
+
+ Score = 84.8 bits (208),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 23/66 (35%), Positives = 32/66 (48%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP   + E C+   KCVK     + C +R+       + CT +  D+    D CVA K
+Sbjct  6   VVDPKKYLEESCK--PKCVKPLLEYQACVKRIQGDDSGHKHCTGQYFDYWQCIDKCVAPK  63
+
+Query  61  LFNSLK  66
+           LF  LK
+Sbjct  64  LFAKLK  69
+
+
+>sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like, 
+mitochondrial OS=Homo sapiens OX=9606 GN=UQCRHL PE=3 SV=1
+Length=91
+
+ Score = 85.5 bits (210),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 60/66 (91%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLEL DE VSSRS TEEDCTEEL DFLHA+DHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELYDEHVSSRSHTEEDCTEELFDFLHAKDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum 
+tuberosum OX=4113 PE=1 SV=2
+Length=69
+
+ Score = 81.7 bits (200),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 35/66 (53%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP  T+   C+   KCV+  +  + C +RV       + CT +  D+ H  D CVA K
+Sbjct  6   VVDPKATLEVSCK--PKCVRQLKEYQACTKRVEGDESGHKHCTGQYFDYWHCIDKCVAAK  63
+
+Query  61  LFNSLK  66
+           LF+ LK
+Sbjct  64  LFDHLK  69
+
+
+>sp|Q9SJV7|QCR62_ARATH Cytochrome b-c1 complex subunit 6-2, mitochondrial 
+OS=Arabidopsis thaliana OX=3702 GN=QCR6-2 PE=1 SV=1
+Length=62
+
+ Score = 65.5 bits (158),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 17/58 (29%), Positives = 26/58 (45%), Gaps = 2/58 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVA  58
+           +VD      E C+   KCVK     + C +R+       + CT +  D+ H  D CV+
+Sbjct  6   VVDQKRYFEESCK--PKCVKPLLEYQACVKRIQDDESGHKHCTGQYFDYWHCVDKCVS  61
+
+
+>sp|O42932|QCR6_SCHPO Cytochrome b-c1 complex subunit 6 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=qcr6 
+PE=3 SV=1
+Length=214
+
+ Score = 55.9 bits (133),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 19/68 (28%), Positives = 28/68 (41%), Gaps = 3/68 (4%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVSSR---SQTEEDCTEELLDFLHARDHCV  57
+            + DPL  + ++C     C + +   E C  RV+ +       EDC EE     H    C 
+Sbjct  146  ITDPLEKMTQECMDAPDCKEVKHHFEECTARVTKKVEQGDKSEDCIEEFFHLYHCARDCA  205
+
+Query  58   AHKLFNSL  65
+              K+F  L
+Sbjct  206  DPKVFKVL  213
+
+
+>sp|P00127|QCR6_YEAST Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=QCR6 PE=1 SV=2
+Length=147
+
+ Score = 50.1 bits (118),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 22/74 (30%), Positives = 31/74 (42%), Gaps = 8/74 (11%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVS--------SRSQTEEDCTEELLDFLHA  52
+            + D L  +RE  +  E+        E C ERV         +  + +EDC EE     H 
+Sbjct  74   VTDQLEDLREHFKNTEEGKALVHHYEECAERVKIQQQQPGYADLEHKEDCVEEFFHLQHY  133
+
+Query  53   RDHCVAHKLFNSLK  66
+             D   A +LF+ LK
+Sbjct  134  LDTATAPRLFDKLK  147
+
+
+>sp|Q1ZXP3|QCR6_DICDI Probable cytochrome b-c1 complex subunit 
+6 OS=Dictyostelium discoideum OX=44689 GN=uqcrh PE=3 SV=1
+Length=69
+
+ Score = 41.6 bits (96),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 24/50 (48%), Gaps = 1/50 (2%)
+
+Query  18  CVKARERLELCDERVSSRSQTEE-DCTEELLDFLHARDHCVAHKLFNSLK  66
+           C K+    + C  RV+     E+ +C  + L+ +   D CV  KLF  LK
+Sbjct  20  CEKSWSAYQACSGRVAKLEHDEKANCLGQFLEHVQCIDKCVGPKLFAQLK  69
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.130    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0398    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5079254600
+Results from round 3
+
+
+Query= d1ppjh_
+
+Length=66
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochond...  85.5    3e-22
+sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitoch...  81.3    3e-21
+sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochond...  81.7    3e-21
+sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochond...  80.9    7e-21
+sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochond...  80.5    9e-21
+sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochond...  80.1    1e-20
+sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondri...  79.7    2e-20
+sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum...  75.9    4e-19
+sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like,...  74.3    2e-18
+sp|O42932|QCR6_SCHPO Cytochrome b-c1 complex subunit 6 OS=Schizos...  75.9    9e-18
+sp|P00127|QCR6_YEAST Cytochrome b-c1 complex subunit 6, mitochond...  71.3    2e-16
+sp|Q9SJV7|QCR62_ARATH Cytochrome b-c1 complex subunit 6-2, mitoch...  65.1    5e-15
+sp|Q1ZXP3|QCR6_DICDI Probable cytochrome b-c1 complex subunit 6 O...  57.0    9e-12
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|V5IM94|QCR6_NEUCR Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A 
+/ CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=qcr6 PE=1 
+SV=1
+Length=141
+
+ Score = 85.5 bits (210),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 24/67 (36%), Positives = 37/67 (55%), Gaps = 1/67 (1%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVSS-RSQTEEDCTEELLDFLHARDHCVAH  59
+            +VDP  T+ E+C   ++C  A+   + C  RV+   +  +EDC EE    +H    C A 
+Sbjct  75   IVDPKETLEEECRNSKECAPAKHHYDECAARVTGAGADNKEDCVEEFFHLVHCATQCAAP  134
+
+Query  60   KLFNSLK  66
+            KL+N+LK
+Sbjct  135  KLWNTLK  141
+
+
+>sp|Q0WWE3|QCR61_ARATH Cytochrome b-c1 complex subunit 6-1, mitochondrial 
+OS=Arabidopsis thaliana OX=3702 GN=QCR6-1 PE=1 SV=1
+Length=69
+
+ Score = 81.3 bits (199),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 23/66 (35%), Positives = 32/66 (48%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP   + E C+   KCVK     + C +R+       + CT +  D+    D CVA K
+Sbjct  6   VVDPKKYLEESCK--PKCVKPLLEYQACVKRIQGDDSGHKHCTGQYFDYWQCIDKCVAPK  63
+
+Query  61  LFNSLK  66
+           LF  LK
+Sbjct  64  LFAKLK  69
+
+
+>sp|P99028|QCR6_MOUSE Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Mus musculus OX=10090 GN=Uqcrh PE=1 SV=2
+Length=89
+
+ Score = 81.7 bits (200),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 61/66 (92%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLELCD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLELCDNRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF +LK
+Sbjct  84  LFKNLK  89
+
+
+>sp|P07919|QCR6_HUMAN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Homo sapiens OX=9606 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 80.9 bits (198),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 63/66 (95%), Positives = 64/66 (97%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRS TEEDCTEEL DFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSHTEEDCTEELFDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|P00126|QCR6_BOVIN Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Bos taurus OX=9913 GN=UQCRH PE=1 SV=2
+Length=91
+
+ Score = 80.5 bits (197),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFNSLK
+Sbjct  86  LFNSLK  91
+
+
+>sp|Q8SPH5|QCR6_MACFA Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Macaca fascicularis OX=9541 GN=UQCRH PE=3 SV=1
+Length=91
+
+ Score = 80.1 bits (196),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 62/66 (94%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLELCD+RVSSRS+TEEDCTEELLDFLHARDHCVA+K
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELCDKRVSSRSRTEEDCTEELLDFLHARDHCVAYK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|Q5M9I5|QCR6_RAT Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Rattus norvegicus OX=10116 GN=Uqcrh PE=3 SV=1
+Length=89
+
+ Score = 79.7 bits (195),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 61/66 (92%), Positives = 61/66 (92%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVRE CEQLEKCVKARERLE CD RVSSRSQTEEDCTEEL DFLHARDHCVAHK
+Sbjct  24  LVDPLTTVREHCEQLEKCVKARERLESCDRRVSSRSQTEEDCTEELFDFLHARDHCVAHK  83
+
+Query  61  LFNSLK  66
+           LF SLK
+Sbjct  84  LFKSLK  89
+
+
+>sp|P48504|QCR6_SOLTU Cytochrome b-c1 complex subunit 6 OS=Solanum 
+tuberosum OX=4113 PE=1 SV=2
+Length=69
+
+ Score = 75.9 bits (185),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 35/66 (53%), Gaps = 2/66 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           +VDP  T+   C+   KCV+  +  + C +RV       + CT +  D+ H  D CVA K
+Sbjct  6   VVDPKATLEVSCK--PKCVRQLKEYQACTKRVEGDESGHKHCTGQYFDYWHCIDKCVAAK  63
+
+Query  61  LFNSLK  66
+           LF+ LK
+Sbjct  64  LFDHLK  69
+
+
+>sp|A0A096LP55|QCR6L_HUMAN Cytochrome b-c1 complex subunit 6-like, 
+mitochondrial OS=Homo sapiens OX=9606 GN=UQCRHL PE=3 SV=1
+Length=91
+
+ Score = 74.3 bits (181),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 60/66 (91%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVAHK  60
+           LVDPLTTVREQCEQLEKCVKARERLEL DE VSSRS TEEDCTEEL DFLHA+DHCVAHK
+Sbjct  26  LVDPLTTVREQCEQLEKCVKARERLELYDEHVSSRSHTEEDCTEELFDFLHAKDHCVAHK  85
+
+Query  61  LFNSLK  66
+           LFN+LK
+Sbjct  86  LFNNLK  91
+
+
+>sp|O42932|QCR6_SCHPO Cytochrome b-c1 complex subunit 6 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=qcr6 
+PE=3 SV=1
+Length=214
+
+ Score = 75.9 bits (185),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 19/68 (28%), Positives = 28/68 (41%), Gaps = 3/68 (4%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVSSR---SQTEEDCTEELLDFLHARDHCV  57
+            + DPL  + ++C     C + +   E C  RV+ +       EDC EE     H    C 
+Sbjct  146  ITDPLEKMTQECMDAPDCKEVKHHFEECTARVTKKVEQGDKSEDCIEEFFHLYHCARDCA  205
+
+Query  58   AHKLFNSL  65
+              K+F  L
+Sbjct  206  DPKVFKVL  213
+
+
+>sp|P00127|QCR6_YEAST Cytochrome b-c1 complex subunit 6, mitochondrial 
+OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=QCR6 PE=1 SV=2
+Length=147
+
+ Score = 71.3 bits (173),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 22/74 (30%), Positives = 31/74 (42%), Gaps = 8/74 (11%)
+
+Query  1    LVDPLTTVREQCEQLEKCVKARERLELCDERVS--------SRSQTEEDCTEELLDFLHA  52
+            + D L  +RE  +  E+        E C ERV         +  + +EDC EE     H 
+Sbjct  74   VTDQLEDLREHFKNTEEGKALVHHYEECAERVKIQQQQPGYADLEHKEDCVEEFFHLQHY  133
+
+Query  53   RDHCVAHKLFNSLK  66
+             D   A +LF+ LK
+Sbjct  134  LDTATAPRLFDKLK  147
+
+
+>sp|Q9SJV7|QCR62_ARATH Cytochrome b-c1 complex subunit 6-2, mitochondrial 
+OS=Arabidopsis thaliana OX=3702 GN=QCR6-2 PE=1 SV=1
+Length=62
+
+ Score = 65.1 bits (157),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 17/58 (29%), Positives = 26/58 (45%), Gaps = 2/58 (3%)
+
+Query  1   LVDPLTTVREQCEQLEKCVKARERLELCDERVSSRSQTEEDCTEELLDFLHARDHCVA  58
+           +VD      E C+   KCVK     + C +R+       + CT +  D+ H  D CV+
+Sbjct  6   VVDQKRYFEESCK--PKCVKPLLEYQACVKRIQDDESGHKHCTGQYFDYWHCVDKCVS  61
+
+
+>sp|Q1ZXP3|QCR6_DICDI Probable cytochrome b-c1 complex subunit 
+6 OS=Dictyostelium discoideum OX=44689 GN=uqcrh PE=3 SV=1
+Length=69
+
+ Score = 57.0 bits (136),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 24/50 (48%), Gaps = 1/50 (2%)
+
+Query  18  CVKARERLELCDERVSSRSQTEE-DCTEELLDFLHARDHCVAHKLFNSLK  66
+           C K+    + C  RV+     E+ +C  + L+ +   D CV  KLF  LK
+Sbjct  20  CEKSWSAYQACSGRVAKLEHDEKANCLGQFLEHVQCIDKCVGPKLFAQLK  69
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.134    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0409    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5079254600
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

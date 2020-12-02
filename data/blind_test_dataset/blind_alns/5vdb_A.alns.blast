@@ -1,0 +1,100 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5vdb_A
+
+Length=159
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q58925|Y1530_METJA Uncharacterized N-acetyltransferase MJ1530 ...  38.9    0.005
+
+
+>sp|Q58925|Y1530_METJA Uncharacterized N-acetyltransferase MJ1530 
+OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 
+2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1530 
+PE=3 SV=1
+Length=156
+
+ Score = 38.9 bits (89),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 27/105 (26%), Positives = 45/105 (43%), Gaps = 4/105 (4%)
+
+Query  54   VAVHDGQVLGFA-NFYQWQHGDFCALGNMMVAPAARGLGVARYLIGVMENLAREQYKARL  112
+            VA  DG+V+G+      W +G   +L    V    RGLG+   L+  +EN          
+Sbjct  44   VAEIDGRVVGYILGSMDWGNGHIISLA---VKKECRGLGIGTALLKTLENYYFNIANCNY  100
+
+Query  113  MKISCFNANAAGLLLYTQLGYQPRAIAERHDPDGRRVALIQMDKP  157
+            + +    +N      Y ++GY+ R +  ++  DG    L+   KP
+Sbjct  101  IVLEVRVSNVLARRFYYRMGYRDRKLLPKYYEDGEDAILMIKKKP  145
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.138    0.425    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7241296710
+Results from round 2
+
+
+Query= 5vdb_A
+
+Length=159
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.141    0.454    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0431    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7241296710
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

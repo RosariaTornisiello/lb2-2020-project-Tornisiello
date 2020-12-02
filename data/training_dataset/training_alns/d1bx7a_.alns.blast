@@ -1,0 +1,204 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1bx7a_
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P80302|ANTA_HIRME Hirustasin OS=Hirudo medicinalis OX=6421 PE=...  102     3e-30
+sp|P82107|BDEL_HIRME Bdellastasin OS=Hirudo medicinalis OX=6421 P...  63.2    2e-14
+sp|P46443|GUAM_HIRNI Guamerin OS=Hirudo nipponia OX=42736 PE=1 SV=1   60.1    2e-13
+sp|P81499|PIGU_HIRNI Piguamerin OS=Hirudo nipponia OX=42736 PE=1 ...  58.9    6e-13
+sp|P38977|ANTA_HYDVU Antistasin OS=Hydra vulgaris OX=6087 PE=2 SV=1   35.4    0.007
+
+
+>sp|P80302|ANTA_HIRME Hirustasin OS=Hirudo medicinalis OX=6421 
+PE=1 SV=1
+Length=55
+
+ Score = 102 bits (255),  Expect = 3e-30, Method: Compositional matrix adjust.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1   GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  51
+           GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA
+Sbjct  3   GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  53
+
+
+>sp|P82107|BDEL_HIRME Bdellastasin OS=Hirudo medicinalis OX=6421 
+PE=1 SV=1
+Length=59
+
+ Score = 63.2 bits (152),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 28/48 (58%), Positives = 38/48 (79%), Gaps = 0/48 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  51
+           CG  TCS AQ+C   KCVC+++HC+++C++G KKD+NGCEY C CA A
+Sbjct  10  CGPVTCSGAQMCEVDKCVCSDLHCKVKCEHGFKKDDNGCEYACICADA  57
+
+
+>sp|P46443|GUAM_HIRNI Guamerin OS=Hirudo nipponia OX=42736 PE=1 
+SV=1
+Length=57
+
+ Score = 60.1 bits (144),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/46 (61%), Positives = 32/46 (70%), Gaps = 0/46 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCA  49
+           CG +TCS AQVCL  +C C  + C I C  G K DENGCEYPC+CA
+Sbjct  12  CGEKTCSPAQVCLNNECACTAIRCMIFCPNGFKVDENGCEYPCTCA  57
+
+
+>sp|P81499|PIGU_HIRNI Piguamerin OS=Hirudo nipponia OX=42736 PE=1 
+SV=1
+Length=48
+
+ Score = 58.9 bits (141),  Expect = 6e-13, Method: Compositional matrix adjust.
+ Identities = 30/46 (65%), Positives = 33/46 (72%), Gaps = 0/46 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCA  49
+           CGG+TCS AQVC  GKCVC    CR  C  G KKDENGC +PC+CA
+Sbjct  3   CGGKTCSEAQVCKDGKCVCVIGQCRKYCPNGFKKDENGCTFPCTCA  48
+
+
+>sp|P38977|ANTA_HYDVU Antistasin OS=Hydra vulgaris OX=6087 PE=2 
+SV=1
+Length=220
+
+ Score = 35.4 bits (80),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 15/29 (52%), Positives = 23/29 (79%), Gaps = 1/29 (3%)
+
+Query  22  CNEVHCRIRCKYGLKKDENGCEYPCSCAK  50
+           CN++ CR+ CK+G ++DENGC+  C CA+
+Sbjct  21  CNKIQCRMFCKFGFQQDENGCDI-CKCAE  48
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.137    0.496    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+Results from round 2
+
+
+Query= d1bx7a_
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P80302|ANTA_HIRME Hirustasin OS=Hirudo medicinalis OX=6421 PE=...  57.0    4e-12
+sp|P82107|BDEL_HIRME Bdellastasin OS=Hirudo medicinalis OX=6421 P...  52.8    2e-10
+sp|P81499|PIGU_HIRNI Piguamerin OS=Hirudo nipponia OX=42736 PE=1 ...  52.0    3e-10
+sp|P46443|GUAM_HIRNI Guamerin OS=Hirudo nipponia OX=42736 PE=1 SV=1   52.0    4e-10
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P80302|ANTA_HIRME Hirustasin OS=Hirudo medicinalis OX=6421 
+PE=1 SV=1
+Length=55
+
+ Score = 57.0 bits (136),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1   GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  51
+           GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA
+Sbjct  3   GNTCGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  53
+
+
+>sp|P82107|BDEL_HIRME Bdellastasin OS=Hirudo medicinalis OX=6421 
+PE=1 SV=1
+Length=59
+
+ Score = 52.8 bits (125),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 28/48 (58%), Positives = 38/48 (79%), Gaps = 0/48 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCAKA  51
+           CG  TCS AQ+C   KCVC+++HC+++C++G KKD+NGCEY C CA A
+Sbjct  10  CGPVTCSGAQMCEVDKCVCSDLHCKVKCEHGFKKDDNGCEYACICADA  57
+
+
+>sp|P81499|PIGU_HIRNI Piguamerin OS=Hirudo nipponia OX=42736 PE=1 
+SV=1
+Length=48
+
+ Score = 52.0 bits (123),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 30/46 (65%), Positives = 33/46 (72%), Gaps = 0/46 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCA  49
+           CGG+TCS AQVC  GKCVC    CR  C  G KKDENGC +PC+CA
+Sbjct  3   CGGKTCSEAQVCKDGKCVCVIGQCRKYCPNGFKKDENGCTFPCTCA  48
+
+
+>sp|P46443|GUAM_HIRNI Guamerin OS=Hirudo nipponia OX=42736 PE=1 
+SV=1
+Length=57
+
+ Score = 52.0 bits (123),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 28/46 (61%), Positives = 32/46 (70%), Gaps = 0/46 (0%)
+
+Query  4   CGGETCSAAQVCLKGKCVCNEVHCRIRCKYGLKKDENGCEYPCSCA  49
+           CG +TCS AQVCL  +C C  + C I C  G K DENGCEYPC+CA
+Sbjct  12  CGEKTCSPAQVCLNNECACTAIRCMIFCPNGFKVDENGCEYPCTCA  57
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.520    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

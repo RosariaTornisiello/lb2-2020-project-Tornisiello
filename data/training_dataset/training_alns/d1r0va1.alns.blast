@@ -1,0 +1,1575 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1r0va1
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus ...  159     4e-49
+sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus fur...  38.9    9e-04
+sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoid...  37.7    0.003
+sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus hor...  37.0    0.004
+
+
+>sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=endA PE=1 SV=1
+Length=305
+
+ Score = 159 bits (402),  Expect = 4e-49, Method: Compositional matrix adjust.
+ Identities = 78/78 (100%), Positives = 78/78 (100%), Gaps = 0/78 (0%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  60
+            DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV
+Sbjct  62   DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  121
+
+Query  61   VDEESEITYFRVYEPDMM  78
+            VDEESEITYFRVYEPDMM
+Sbjct  122  VDEESEITYFRVYEPDMM  139
+
+
+>sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=endA PE=3 SV=1
+Length=170
+
+ Score = 38.9 bits (89),  Expect = 9e-04, Method: Compositional matrix adjust.
+ Identities = 28/87 (32%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDVKYLVYKDLRDRGYIVKSALKFGSHYRVYRKGAEHSDWLVWVVRESQKLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LAVVDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKTMVLAVVDEDGDVVYYKV  165
+
+
+>sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoides 
+burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 / ACE-M) 
+OX=259564 GN=endA PE=3 SV=1
+Length=351
+
+ Score = 37.7 bits (86),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 28/92 (30%), Positives = 42/92 (46%), Gaps = 20/92 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVK------------------IQGEFLLTKKPYLPISERKTIRM  43
+            F   Y VY+DLR+RG  V+                     +F+  +    P+  R  +R 
+Sbjct  75   FELKYIVYKDLRERGFYVQPGVTDFRVYPRGSHPGKGAAKQFIYVRSERAPMPLRDLLRS  134
+
+Query  44   EEIAEKARNFDELRLAVVDEESEITYFRVYEP  75
+               AE  R   ++ LA+VDEES+IT++ V  P
+Sbjct  135  LAAAENVRK--QMVLAIVDEESDITFYDVKRP  164
+
+
+>sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 
+100139 / OT-3) OX=70601 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 37.0 bits (84),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 27/87 (31%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDIKYIVYKDLRDRGYIVKSALKFGSHYRVYRKDAEHSDWLIWVLRENQRLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LA+VDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKNMVLAIVDEDGDVVYYKV  165
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.139    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+Results from round 2
+
+
+Query= d1r0va1
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus ...  118     5e-33
+sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus fur...  94.3    4e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus hor...  89.7    3e-23
+sp|Q9UY33|ENDA_PYRAB tRNA-splicing endonuclease OS=Pyrococcus aby...  85.0    2e-21
+sp|Q5JHP5|ENDA_THEKO tRNA-splicing endonuclease OS=Thermococcus k...  81.6    4e-20
+sp|C5A2D9|ENDA_THEGJ tRNA-splicing endonuclease OS=Thermococcus g...  81.6    5e-20
+sp|B6YXU4|ENDA_THEON tRNA-splicing endonuclease OS=Thermococcus o...  78.5    7e-19
+sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldoco...  48.4    3e-07
+sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermob...  47.7    5e-07
+sp|A6UPD9|ENDA_METVS tRNA-splicing endonuclease OS=Methanococcus ...  46.1    2e-06
+sp|Q6LY59|ENDA_METMP tRNA-splicing endonuclease OS=Methanococcus ...  45.7    2e-06
+sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoid...  41.1    2e-04
+sp|Q8PZI1|ENDA_METMA tRNA-splicing endonuclease OS=Methanosarcina...  40.7    2e-04
+sp|C4KIA4|ENDA_SULIK tRNA-splicing endonuclease OS=Sulfolobus isl...  40.0    3e-04
+sp|C3N6N2|ENDA_SULIA tRNA-splicing endonuclease OS=Sulfolobus isl...  40.0    3e-04
+sp|C3MWW5|ENDA_SULIM tRNA-splicing endonuclease OS=Sulfolobus isl...  40.0    4e-04
+sp|C3N746|ENDA_SULIY tRNA-splicing endonuclease OS=Sulfolobus isl...  39.6    5e-04
+sp|C3MQX7|ENDA_SULIL tRNA-splicing endonuclease OS=Sulfolobus isl...  39.6    5e-04
+sp|C3NGJ0|ENDA_SULIN tRNA-splicing endonuclease OS=Sulfolobus isl...  39.6    5e-04
+sp|A2BIW2|ENDA_HYPBU tRNA-splicing endonuclease OS=Hyperthermus b...  39.2    6e-04
+sp|Q9YBF1|ENDA_AERPE tRNA-splicing endonuclease OS=Aeropyrum pern...  39.2    7e-04
+sp|Q4JAF4|ENDA_SULAC tRNA-splicing endonuclease OS=Sulfolobus aci...  38.8    0.001
+sp|Q975R3|ENDA_SULTO tRNA-splicing endonuclease OS=Sulfurisphaera...  38.0    0.002
+sp|Q8TGX1|ENDA_METAC tRNA-splicing endonuclease OS=Methanosarcina...  38.0    0.002
+sp|Q46FK9|ENDA_METBF tRNA-splicing endonuclease OS=Methanosarcina...  37.3    0.004
+sp|Q97ZY3|ENDA_SACS2 tRNA-splicing endonuclease OS=Saccharolobus ...  36.9    0.004
+sp|Q3IU70|ENDA_NATPD tRNA-splicing endonuclease OS=Natronomonas p...  37.3    0.005
+
+
+>sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=endA PE=1 SV=1
+Length=305
+
+ Score = 118 bits (295),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 78/78 (100%), Positives = 78/78 (100%), Gaps = 0/78 (0%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  60
+            DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV
+Sbjct  62   DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  121
+
+Query  61   VDEESEITYFRVYEPDMM  78
+            VDEESEITYFRVYEPDMM
+Sbjct  122  VDEESEITYFRVYEPDMM  139
+
+
+>sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=endA PE=3 SV=1
+Length=170
+
+ Score = 94.3 bits (233),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 28/87 (32%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDVKYLVYKDLRDRGYIVKSALKFGSHYRVYRKGAEHSDWLVWVVRESQKLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LAVVDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKTMVLAVVDEDGDVVYYKV  165
+
+
+>sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 
+100139 / OT-3) OX=70601 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 89.7 bits (221),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 27/87 (31%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDIKYIVYKDLRDRGYIVKSALKFGSHYRVYRKDAEHSDWLIWVLRENQRLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LA+VDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKNMVLAIVDEDGDVVYYKV  165
+
+
+>sp|Q9UY33|ENDA_PYRAB tRNA-splicing endonuclease OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 85.0 bits (209),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 23/87 (26%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   ++  +
+Sbjct  79   DFDIKYLVYKDLRDRGYIVKSALKFGSHFRVYRKNAEHSDWLIWVLRESEKLSPNDMTAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++ Y+++
+Sbjct  139  VRVAHGVRKNMVMAIVDEDNDVVYYKI  165
+
+
+>sp|Q5JHP5|ENDA_THEKO tRNA-splicing endonuclease OS=Thermococcus 
+kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 
+GN=endA PE=3 SV=1
+Length=168
+
+ Score = 81.6 bits (200),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 41/87 (47%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E   +   +I  +
+Sbjct  77   FDAKYLVYKDLRDRGYTVKSGLKFGSHFRVYRRGMEEHSEWLVWVVPENSRLSPNDITAR  136
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++TY++V
+Sbjct  137  VRVAHGVRKNMIMAIVDEDADVTYYKV  163
+
+
+>sp|C5A2D9|ENDA_THEGJ tRNA-splicing endonuclease OS=Thermococcus 
+gammatolerans (strain DSM 15229 / JCM 11827 / EJ3) OX=593117 
+GN=endA PE=3 SV=1
+Length=168
+
+ Score = 81.6 bits (200),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 41/87 (47%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E   +   +I  +
+Sbjct  77   FDAKYLVYKDLRDRGYTVKSGLKFGSHFRVYRRGMDEHSQWLVWVLPENSRLSPNDITAR  136
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++TY++V
+Sbjct  137  VRVAHGVRKNMIMAIVDEDADVTYYKV  163
+
+
+>sp|B6YXU4|ENDA_THEON tRNA-splicing endonuclease OS=Thermococcus 
+onnurineus (strain NA1) OX=523850 GN=endA PE=3 SV=1
+Length=171
+
+ Score = 78.5 bits (192),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 39/87 (45%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E       +I  +
+Sbjct  80   FDIKYLVYKDLRDRGYIVKSALKFGSHFRVYRRGMDEHSQWLIWVVPENLRFSANDITAR  139
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +AVVDE++++ Y+++
+Sbjct  140  VRVAHGVRKNMVMAVVDEDNDVVYYKI  166
+
+
+>sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=endA PE=1 SV=1
+Length=179
+
+ Score = 48.4 bits (114),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 20/87 (23%), Positives = 34/87 (39%), Gaps = 19/87 (22%)
+
+Query  5    YYFVYEDLRDRGNKVKIQGEFLLTKKPY---------------LPISERKTIRMEEIAEK  49
+             Y VY+DLR RG  VK   ++    + Y                   E  +  + E+   
+Sbjct  88   KYLVYKDLRTRGYIVKTGLKYGADFRLYERGANIDKEHSVYLVKVFPEDSSFLLSELTGF  147
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VD + +I Y+ +
+Sbjct  148  VRVAHSVRKKLLIAIVDADGDIVYYNM  174
+
+
+>sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 47.7 bits (112),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 37/88 (42%), Gaps = 19/88 (22%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY---------------LPISERKTIRMEEIAE  48
+            + Y VY DLR+RG  VK   ++    + Y                 ISE  TI   + + 
+Sbjct  78   SKYLVYRDLRNRGYIVKTGFKYGAEFRLYERGGAPGRTHSAYLVRVISENDTIHALDFSS  137
+
+Query  49   KARNFDELR----LAVVDEESEITYFRV  72
+              R    +     +A +D+E +ITY+ V
+Sbjct  138  YVRVAHGVNKKLLMAFLDDEEDITYYLV  165
+
+
+>sp|A6UPD9|ENDA_METVS tRNA-splicing endonuclease OS=Methanococcus 
+vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 
+148 / SB) OX=406327 GN=endA PE=3 SV=1
+Length=177
+
+ Score = 46.1 bits (108),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 20/87 (23%), Positives = 34/87 (39%), Gaps = 18/87 (21%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY--------------LPISERKTIRMEEIAEK  49
+              Y VY+DLR+RG  V+   ++    + Y                 SE     + EI   
+Sbjct  86   IRYLVYKDLRNRGYTVRTGLKYGSDFRLYERSNIDEVHSKYLVKVFSEEIPCEISEITGF  145
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VD +  + Y+ +
+Sbjct  146  VRVAHSVRKELVIAIVDADGSVVYYNM  172
+
+
+>sp|Q6LY59|ENDA_METMP tRNA-splicing endonuclease OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=endA PE=3 SV=1
+Length=177
+
+ Score = 45.7 bits (107),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 19/87 (22%), Positives = 33/87 (38%), Gaps = 18/87 (21%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY--------------LPISERKTIRMEEIAEK  49
+              Y  Y+DLR+RG  V+   ++    + Y                 SE     + EI   
+Sbjct  86   IRYLAYKDLRNRGYTVRTGLKYGSDFRLYERSNIDEIHSRYLVKVFSEEIPCEISEITGF  145
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VD +  + Y+ +
+Sbjct  146  VRVAHSVRKELIIAIVDADGSVVYYNM  172
+
+
+>sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoides 
+burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 / ACE-M) 
+OX=259564 GN=endA PE=3 SV=1
+Length=351
+
+ Score = 41.1 bits (95),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 41/92 (45%), Gaps = 16/92 (17%)
+
+Query  2    FSTYYFVYEDLRDRGNKVK------------IQGEFLLTKKPYLPISERKTIRMEEIAEK  49
+            F   Y VY+DLR+RG  V+                    K+     SER  + + ++   
+Sbjct  75   FELKYIVYKDLRERGFYVQPGVTDFRVYPRGSHPGKGAAKQFIYVRSERAPMPLRDLLRS  134
+
+Query  50   ARNFDELR----LAVVDEESEITYFRVYEPDM  77
+                + +R    LA+VDEES+IT++ V  P +
+Sbjct  135  LAAAENVRKQMVLAIVDEESDITFYDVKRPRL  166
+
+
+>sp|Q8PZI1|ENDA_METMA tRNA-splicing endonuclease OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 
+11833 / OCM 88) OX=192952 GN=endA PE=3 SV=1
+Length=353
+
+ Score = 40.7 bits (94),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 46/88 (52%), Gaps = 16/88 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEFLLTKKPYLP-----------ISERKTIRMEEIAE  48
+            +F   Y VY+DL++RG  V+    +F +  +   P           +SER+ + ++ + E
+Sbjct  77   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAAKIFVHVLSERQPLSVKLLQE  136
+
+Query  49   KARNFDELR----LAVVDEESEITYFRV  72
+               + + +     LAVVDEES++T++ +
+Sbjct  137  SVASAENVHKQFILAVVDEESDLTFYEI  164
+
+
+>sp|C4KIA4|ENDA_SULIK tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.16.4 / Kamchatka #3) OX=426118 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 40.0 bits (92),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3N6N2|ENDA_SULIA tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.16.27) OX=427318 GN=endA PE=3 SV=1
+Length=182
+
+ Score = 40.0 bits (92),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3MWW5|ENDA_SULIM tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.14.25 / Kamchatka #1) OX=427317 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 40.0 bits (92),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3N746|ENDA_SULIY tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain Y.G.57.14 / Yellowstone #1) OX=439386 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 39.6 bits (91),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3MQX7|ENDA_SULIL tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain L.S.2.15 / Lassen #1) OX=429572 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 39.6 bits (91),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3NGJ0|ENDA_SULIN tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain Y.N.15.51 / Yellowstone #2) OX=419942 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 39.6 bits (91),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|A2BIW2|ENDA_HYPBU tRNA-splicing endonuclease OS=Hyperthermus 
+butylicus (strain DSM 5456 / JCM 9403 / PLM1-5) OX=415426 
+GN=endA PE=3 SV=1
+Length=181
+
+ Score = 39.2 bits (90),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 25/73 (34%), Gaps = 13/73 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VY DLRDRG  V+   ++      Y               +   + I   EI  
+Sbjct  88   FELLYKVYRDLRDRGYVVRSGLKYGSDFAVYERGPGLEHAPYLVHVMRVDEEIDPLEIVR  147
+
+Query  49   KARNFDELRLAVV  61
+              R    +R A +
+Sbjct  148  AGRLSHSVRKAFI  160
+
+
+>sp|Q9YBF1|ENDA_AERPE tRNA-splicing endonuclease OS=Aeropyrum 
+pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NBRC 100138 
+/ K1) OX=272557 GN=endA PE=1 SV=2
+Length=186
+
+ Score = 39.2 bits (90),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/87 (23%), Positives = 30/87 (34%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL-------------PISERKTIRMEEIAE  48
+            FS  Y +Y DLR+RG  V+   +F      Y                S    I   EI  
+Sbjct  95   FSMLYNIYRDLRERGFVVRSGLKFGSDFAVYRLGPGIDHAPFIVHAYSPEDNIDPVEIVR  154
+
+Query  49   KARNFDELR---LAVVDEESEITYFRV  72
+              R    +R   +  V    +++Y  +
+Sbjct  155  AGRLSHSVRKKFVFAVTRGGDVSYLMI  181
+
+
+>sp|Q4JAF4|ENDA_SULAC tRNA-splicing endonuclease OS=Sulfolobus 
+acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 
+15157 / NCIMB 11770) OX=330779 GN=endA PE=3 SV=1
+Length=181
+
+ Score = 38.8 bits (89),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 22/90 (24%), Positives = 38/90 (42%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEF-----------LLTKKPYLPIS--ERKTIRMEEIAE  48
+            F   Y VYEDLR++   V+   ++            L   PYL I+  E + I   EI  
+Sbjct  88   FELLYTVYEDLREKKFVVRSGMKYGADFAIYTVAPGLEHAPYLVIAIDEEQEISPNEILG  147
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    L++V++ +    + +++
+Sbjct  148  FGRVSHSTRKNLILSIVNQRNRSIRYIMFK  177
+
+
+>sp|Q975R3|ENDA_SULTO tRNA-splicing endonuclease OS=Sulfurisphaera 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 
+7) OX=273063 GN=endA PE=1 SV=1
+Length=180
+
+ Score = 38.0 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 27/69 (39%), Gaps = 13/69 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEF-----------LLTKKPYLPIS--ERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++            +   PYL I+  E   I   EI  
+Sbjct  87   FRILYSVYEDLREKGYVVRSGIKYGADFAVYTIGPGIEHAPYLVIALDENSQISSNEILG  146
+
+Query  49   KARNFDELR  57
+              R     R
+Sbjct  147  FGRVSHSTR  155
+
+
+>sp|Q8TGX1|ENDA_METAC tRNA-splicing endonuclease OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / 
+C2A) OX=188937 GN=endA PE=3 SV=1
+Length=350
+
+ Score = 38.0 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 42/88 (48%), Gaps = 16/88 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEFLLTKKPYLPISERKTIRMEEIAEK----------  49
+            +F   Y VY+DL++RG  V+    +F +  +   P      I +  ++E+          
+Sbjct  74   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAAKIFVHVLSERQPLPVKLLQD  133
+
+Query  50   ----ARNFD-ELRLAVVDEESEITYFRV  72
+                A N   +  LAVVDEES++T++ +
+Sbjct  134  SVISAENVHKQFILAVVDEESDLTFYEI  161
+
+
+>sp|Q46FK9|ENDA_METBF tRNA-splicing endonuclease OS=Methanosarcina 
+barkeri (strain Fusaro / DSM 804) OX=269797 GN=endA PE=3 
+SV=1
+Length=350
+
+ Score = 37.3 bits (85),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 41/88 (47%), Gaps = 16/88 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEF-----LLT-----KKPYLPISERKTIRM----EE  45
+            +F   Y VY+DL++RG  V+    +F              + ++ +   + +      ++
+Sbjct  74   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAARIFVHVQSERQLLPVKLLQD  133
+
+Query  46   IAEKARNFD-ELRLAVVDEESEITYFRV  72
+                A N   +  LAVVDEES++T++ V
+Sbjct  134  SVISAENVHKQFILAVVDEESDLTFYEV  161
+
+
+>sp|Q97ZY3|ENDA_SACS2 tRNA-splicing endonuclease OS=Saccharolobus 
+solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / 
+P2) OX=273057 GN=endA PE=3 SV=1
+Length=182
+
+ Score = 36.9 bits (84),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/90 (22%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FEILYKVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     +    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTKKRLVLALVDRKSEGIRYIMFK  178
+
+
+>sp|Q3IU70|ENDA_NATPD tRNA-splicing endonuclease OS=Natronomonas 
+pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / NBRC 
+14720 / NCIMB 2260 / Gabara) OX=348780 GN=endA PE=3 SV=1
+Length=336
+
+ Score = 37.3 bits (85),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 20/91 (22%), Positives = 31/91 (34%), Gaps = 20/91 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL----------------PISERKTIRMEE  45
+            F     VY  LR+RG   K   +F    + Y                  +    T+   +
+Sbjct  241  FDRRLTVYRTLRERGVVPKTGFKFGADFRTYADVDSVSELGHSELLVRVLPADATLSPRD  300
+
+Query  46   IAEKARNFDELR----LAVVDEESEITYFRV  72
+            +A   R    +R     A+VD+  EI +  V
+Sbjct  301  VALDVRLAHGVRKRMVFALVDDGDEIRWVSV  331
+
+
+ Score = 36.5 bits (83),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 26/89 (29%), Positives = 37/89 (42%), Gaps = 14/89 (16%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGE----------FLLTKKPYLPISERKTIRMEEIAEKA  50
+            D    + VY DLR+RG  V    E          F++  +   P       R+  + E+ 
+Sbjct  67   DLVVPFLVYRDLRERGFYVSPALEGWVADHAGIDFVVHPRGDGPWDGTVAYRVRVVDERG  126
+
+Query  51   RN----FDELRLAVVDEESEITYFRVYEP  75
+                    ++ LAVVDEESE+TY     P
+Sbjct  127  SVRLDSLGDVVLAVVDEESELTYLETDRP  155
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.143    0.393    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0438    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+Results from round 3
+
+
+Query= d1r0va1
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus hor...  92.3    2e-24
+sp|C5A2D9|ENDA_THEGJ tRNA-splicing endonuclease OS=Thermococcus g...  91.2    7e-24
+sp|Q9UY33|ENDA_PYRAB tRNA-splicing endonuclease OS=Pyrococcus aby...  91.2    8e-24
+sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus fur...  90.8    9e-24
+sp|Q5JHP5|ENDA_THEKO tRNA-splicing endonuclease OS=Thermococcus k...  90.4    2e-23
+sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus ...  91.2    1e-22
+sp|B6YXU4|ENDA_THEON tRNA-splicing endonuclease OS=Thermococcus o...  88.1    1e-22
+sp|Q4JAF4|ENDA_SULAC tRNA-splicing endonuclease OS=Sulfolobus aci...  80.0    2e-19
+sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoid...  81.5    7e-19
+sp|C3MWW5|ENDA_SULIM tRNA-splicing endonuclease OS=Sulfolobus isl...  77.7    2e-18
+sp|C4KIA4|ENDA_SULIK tRNA-splicing endonuclease OS=Sulfolobus isl...  77.7    2e-18
+sp|C3N6N2|ENDA_SULIA tRNA-splicing endonuclease OS=Sulfolobus isl...  77.7    2e-18
+sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldoco...  77.7    2e-18
+sp|C3N746|ENDA_SULIY tRNA-splicing endonuclease OS=Sulfolobus isl...  77.3    3e-18
+sp|C3MQX7|ENDA_SULIL tRNA-splicing endonuclease OS=Sulfolobus isl...  77.3    3e-18
+sp|C3NGJ0|ENDA_SULIN tRNA-splicing endonuclease OS=Sulfolobus isl...  77.3    3e-18
+sp|A6UPD9|ENDA_METVS tRNA-splicing endonuclease OS=Methanococcus ...  76.1    5e-18
+sp|Q9YBF1|ENDA_AERPE tRNA-splicing endonuclease OS=Aeropyrum pern...  76.1    8e-18
+sp|Q6LY59|ENDA_METMP tRNA-splicing endonuclease OS=Methanococcus ...  75.4    1e-17
+sp|Q975R3|ENDA_SULTO tRNA-splicing endonuclease OS=Sulfurisphaera...  74.6    3e-17
+sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermob...  72.3    2e-16
+sp|Q8PZI1|ENDA_METMA tRNA-splicing endonuclease OS=Methanosarcina...  70.8    5e-15
+sp|A2BIW2|ENDA_HYPBU tRNA-splicing endonuclease OS=Hyperthermus b...  68.4    6e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q97ZY3|ENDA_SACS2 tRNA-splicing endonuclease OS=Saccharolobus ...  75.8    1e-17
+sp|Q8TGX1|ENDA_METAC tRNA-splicing endonuclease OS=Methanosarcina...  66.9    1e-13
+sp|Q46FK9|ENDA_METBF tRNA-splicing endonuclease OS=Methanosarcina...  63.8    2e-12
+sp|Q8TGZ7|ENDA_METKA tRNA-splicing endonuclease OS=Methanopyrus k...  55.0    1e-09
+sp|Q3IU70|ENDA_NATPD tRNA-splicing endonuclease OS=Natronomonas p...  53.8    6e-09
+sp|Q8ZVI1|ENDA_PYRAE tRNA-splicing endonuclease OS=Pyrobaculum ae...  49.2    1e-07
+sp|Q8BMZ5|SEN34_MOUSE tRNA-splicing endonuclease subunit Sen34 OS...  50.0    1e-07
+sp|Q9BSV6|SEN34_HUMAN tRNA-splicing endonuclease subunit Sen34 OS...  48.8    3e-07
+sp|A1RSY7|ENDA_PYRIL tRNA-splicing endonuclease OS=Pyrobaculum is...  47.6    6e-07
+sp|Q74MP4|ENDA_NANEQ tRNA-splicing endonuclease OS=Nanoarchaeum e...  46.5    9e-07
+sp|A4WLV3|ENDA_PYRAR tRNA-splicing endonuclease OS=Pyrobaculum ar...  46.9    1e-06
+sp|B1Y9D1|ENDA_PYRNV tRNA-splicing endonuclease OS=Pyrobaculum ne...  46.5    1e-06
+sp|Q8TGZ5|ENDAL_METKA EndA-like protein OS=Methanopyrus kandleri ...  45.7    3e-06
+sp|Q9HN82|ENDA_HALSA tRNA-splicing endonuclease OS=Halobacterium ...  46.1    3e-06
+sp|B0R7C0|ENDA_HALS3 tRNA-splicing endonuclease OS=Halobacterium ...  46.1    3e-06
+sp|Q5UYF6|ENDA_HALMA tRNA-splicing endonuclease OS=Haloarcula mar...  42.6    6e-05
+sp|O07118|ENDA_HALVD tRNA-splicing endonuclease OS=Haloferax volc...  42.2    8e-05
+sp|Q9M1E8|SEN21_ARATH tRNA-splicing endonuclease subunit Sen2-1 O...  41.5    1e-04
+sp|Q6L1P9|ENDA_PICTO tRNA-splicing endonuclease OS=Picrophilus to...  39.9    4e-04
+sp|Q97BQ3|ENDA_THEVO tRNA-splicing endonuclease OS=Thermoplasma v...  38.4    0.002
+sp|Q9HIY5|ENDA_THEAC tRNA-splicing endonuclease OS=Thermoplasma a...  37.6    0.003
+
+
+>sp|O58033|ENDA_PYRHO tRNA-splicing endonuclease OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 
+100139 / OT-3) OX=70601 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 92.3 bits (228),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 27/87 (31%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDIKYIVYKDLRDRGYIVKSALKFGSHYRVYRKDAEHSDWLIWVLRENQRLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LA+VDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKNMVLAIVDEDGDVVYYKV  165
+
+
+>sp|C5A2D9|ENDA_THEGJ tRNA-splicing endonuclease OS=Thermococcus 
+gammatolerans (strain DSM 15229 / JCM 11827 / EJ3) OX=593117 
+GN=endA PE=3 SV=1
+Length=168
+
+ Score = 91.2 bits (225),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 41/87 (47%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E   +   +I  +
+Sbjct  77   FDAKYLVYKDLRDRGYTVKSGLKFGSHFRVYRRGMDEHSQWLVWVLPENSRLSPNDITAR  136
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++TY++V
+Sbjct  137  VRVAHGVRKNMIMAIVDEDADVTYYKV  163
+
+
+>sp|Q9UY33|ENDA_PYRAB tRNA-splicing endonuclease OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 91.2 bits (225),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 23/87 (26%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   ++  +
+Sbjct  79   DFDIKYLVYKDLRDRGYIVKSALKFGSHFRVYRKNAEHSDWLIWVLRESEKLSPNDMTAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++ Y+++
+Sbjct  139  VRVAHGVRKNMVMAIVDEDNDVVYYKI  165
+
+
+>sp|Q8U429|ENDA_PYRFU tRNA-splicing endonuclease OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=endA PE=3 SV=1
+Length=170
+
+ Score = 90.8 bits (224),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 28/87 (32%), Positives = 42/87 (48%), Gaps = 15/87 (17%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-----------LPISERKTIRMEEIAEK  49
+            DF   Y VY+DLRDRG  VK   +F    + Y             + E + +   +I  +
+Sbjct  79   DFDVKYLVYKDLRDRGYIVKSALKFGSHYRVYRKGAEHSDWLVWVVRESQKLSPNDITAR  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+            AR    +R    LAVVDE+ ++ Y++V
+Sbjct  139  ARVAHGVRKTMVLAVVDEDGDVVYYKV  165
+
+
+>sp|Q5JHP5|ENDA_THEKO tRNA-splicing endonuclease OS=Thermococcus 
+kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 
+GN=endA PE=3 SV=1
+Length=168
+
+ Score = 90.4 bits (223),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 41/87 (47%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E   +   +I  +
+Sbjct  77   FDAKYLVYKDLRDRGYTVKSGLKFGSHFRVYRRGMEEHSEWLVWVVPENSRLSPNDITAR  136
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VDE++++TY++V
+Sbjct  137  VRVAHGVRKNMIMAIVDEDADVTYYKV  163
+
+
+>sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=endA PE=1 SV=1
+Length=305
+
+ Score = 91.2 bits (225),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 78/78 (100%), Positives = 78/78 (100%), Gaps = 0/78 (0%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  60
+            DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV
+Sbjct  62   DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISERKTIRMEEIAEKARNFDELRLAV  121
+
+Query  61   VDEESEITYFRVYEPDMM  78
+            VDEESEITYFRVYEPDMM
+Sbjct  122  VDEESEITYFRVYEPDMM  139
+
+
+ Score = 51.1 bits (121),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 18/76 (24%), Positives = 32/76 (42%), Gaps = 15/76 (20%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLP---------------ISERKTIRMEE  45
+            +F   Y VY +L++RG  VK   +F    + Y                 I++ + IR+ +
+Sbjct  215  NFDRRYEVYRNLKERGFVVKTGFKFGSEFRVYRKVESVDDLPHSEYLVDIADSREIRLID  274
+
+Query  46   IAEKARNFDELRLAVV  61
+            +A   R    +R  +V
+Sbjct  275  LARAVRLAQNVRKRMV  290
+
+
+>sp|B6YXU4|ENDA_THEON tRNA-splicing endonuclease OS=Thermococcus 
+onnurineus (strain NA1) OX=523850 GN=endA PE=3 SV=1
+Length=171
+
+ Score = 88.1 bits (217),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 39/87 (45%), Gaps = 16/87 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY------------LPISERKTIRMEEIAEK  49
+            F   Y VY+DLRDRG  VK   +F    + Y              + E       +I  +
+Sbjct  80   FDIKYLVYKDLRDRGYIVKSALKFGSHFRVYRRGMDEHSQWLIWVVPENLRFSANDITAR  139
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +AVVDE++++ Y+++
+Sbjct  140  VRVAHGVRKNMVMAVVDEDNDVVYYKI  166
+
+
+>sp|Q4JAF4|ENDA_SULAC tRNA-splicing endonuclease OS=Sulfolobus 
+acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 
+15157 / NCIMB 11770) OX=330779 GN=endA PE=3 SV=1
+Length=181
+
+ Score = 80.0 bits (196),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 34/90 (38%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLP-------------ISERKTIRMEEIAE  48
+            F   Y VYEDLR++   V+   ++      Y               I E + I   EI  
+Sbjct  88   FELLYTVYEDLREKKFVVRSGMKYGADFAIYTVAPGLEHAPYLVIAIDEEQEISPNEILG  147
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    L++V++ +    + +++
+Sbjct  148  FGRVSHSTRKNLILSIVNQRNRSIRYIMFK  177
+
+
+>sp|Q12X51|ENDA_METBU tRNA-splicing endonuclease OS=Methanococcoides 
+burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 / ACE-M) 
+OX=259564 GN=endA PE=3 SV=1
+Length=351
+
+ Score = 81.5 bits (200),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 41/92 (45%), Gaps = 16/92 (17%)
+
+Query  2    FSTYYFVYEDLRDRGNKVK------------IQGEFLLTKKPYLPISERKTIRMEEIAEK  49
+            F   Y VY+DLR+RG  V+                    K+     SER  + + ++   
+Sbjct  75   FELKYIVYKDLRERGFYVQPGVTDFRVYPRGSHPGKGAAKQFIYVRSERAPMPLRDLLRS  134
+
+Query  50   ARNFDELR----LAVVDEESEITYFRVYEPDM  77
+                + +R    LA+VDEES+IT++ V  P +
+Sbjct  135  LAAAENVRKQMVLAIVDEESDITFYDVKRPRL  166
+
+
+ Score = 43.8 bits (102),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 17/97 (18%), Positives = 33/97 (34%), Gaps = 21/97 (22%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRME  44
+            +F+    VY DLRD+G   K   +F    + Y                  I       + 
+Sbjct  256  EFNLKSSVYTDLRDKGVVPKTGFKFGSHFRVYSQVESPTKIPHSEYLIHSIPMDHEFTLP  315
+
+Query  45   EIAEKARNFDELRL----AVVDEESEITYFRVYEPDM  77
+             ++   R  + +R     A++ ++  + Y  +    M
+Sbjct  316  VMSRAIRLANSVRKRMLYAILTDDG-VDYIDIGRLKM  351
+
+
+>sp|C3MWW5|ENDA_SULIM tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.14.25 / Kamchatka #1) OX=427317 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 77.7 bits (190),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C4KIA4|ENDA_SULIK tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.16.4 / Kamchatka #3) OX=426118 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 77.7 bits (190),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3N6N2|ENDA_SULIA tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain M.16.27) OX=427318 GN=endA PE=3 SV=1
+Length=182
+
+ Score = 77.7 bits (190),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=endA PE=1 SV=1
+Length=179
+
+ Score = 77.7 bits (190),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 20/88 (23%), Positives = 34/88 (39%), Gaps = 19/88 (22%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY---------------LPISERKTIRMEEIAE  48
+              Y VY+DLR RG  VK   ++    + Y                   E  +  + E+  
+Sbjct  87   LKYLVYKDLRTRGYIVKTGLKYGADFRLYERGANIDKEHSVYLVKVFPEDSSFLLSELTG  146
+
+Query  49   KARNFDELR----LAVVDEESEITYFRV  72
+              R    +R    +A+VD + +I Y+ +
+Sbjct  147  FVRVAHSVRKKLLIAIVDADGDIVYYNM  174
+
+
+>sp|C3N746|ENDA_SULIY tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain Y.G.57.14 / Yellowstone #1) OX=439386 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 77.3 bits (189),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3MQX7|ENDA_SULIL tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain L.S.2.15 / Lassen #1) OX=429572 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 77.3 bits (189),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|C3NGJ0|ENDA_SULIN tRNA-splicing endonuclease OS=Sulfolobus 
+islandicus (strain Y.N.15.51 / Yellowstone #2) OX=419942 GN=endA 
+PE=3 SV=1
+Length=182
+
+ Score = 77.3 bits (189),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FDIMYRVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTRKRLVLALVDRKSESVRYIMFK  178
+
+
+>sp|A6UPD9|ENDA_METVS tRNA-splicing endonuclease OS=Methanococcus 
+vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 
+148 / SB) OX=406327 GN=endA PE=3 SV=1
+Length=177
+
+ Score = 76.1 bits (186),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 20/87 (23%), Positives = 34/87 (39%), Gaps = 18/87 (21%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY--------------LPISERKTIRMEEIAEK  49
+              Y VY+DLR+RG  V+   ++    + Y                 SE     + EI   
+Sbjct  86   IRYLVYKDLRNRGYTVRTGLKYGSDFRLYERSNIDEVHSKYLVKVFSEEIPCEISEITGF  145
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VD +  + Y+ +
+Sbjct  146  VRVAHSVRKELVIAIVDADGSVVYYNM  172
+
+
+>sp|Q9YBF1|ENDA_AERPE tRNA-splicing endonuclease OS=Aeropyrum 
+pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NBRC 100138 
+/ K1) OX=272557 GN=endA PE=1 SV=2
+Length=186
+
+ Score = 76.1 bits (186),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 21/92 (23%), Positives = 32/92 (35%), Gaps = 18/92 (20%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            FS  Y +Y DLR+RG  V+   +F      Y                S    I   EI  
+Sbjct  95   FSMLYNIYRDLRERGFVVRSGLKFGSDFAVYRLGPGIDHAPFIVHAYSPEDNIDPVEIVR  154
+
+Query  49   KARNFDELR---LAVVDEESEITYFRV--YEP  75
+              R    +R   +  V    +++Y  +  + P
+Sbjct  155  AGRLSHSVRKKFVFAVTRGGDVSYLMIDWFRP  186
+
+
+>sp|Q97ZY3|ENDA_SACS2 tRNA-splicing endonuclease OS=Saccharolobus 
+solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / 
+P2) OX=273057 GN=endA PE=3 SV=1
+Length=182
+
+ Score = 75.8 bits (185),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 20/90 (22%), Positives = 36/90 (40%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + +   + I   E+  
+Sbjct  89   FEILYKVYEDLREKGFIVRSGVKYGADFAVYTLGPGLEHAPYVVIAVDIDEEITPHELLS  148
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     +    LA+VD +SE   + +++
+Sbjct  149  FGRVSHSTKKRLVLALVDRKSEGIRYIMFK  178
+
+
+>sp|Q6LY59|ENDA_METMP tRNA-splicing endonuclease OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=endA PE=3 SV=1
+Length=177
+
+ Score = 75.4 bits (184),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/87 (22%), Positives = 33/87 (38%), Gaps = 18/87 (21%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQGEFLLTKKPY--------------LPISERKTIRMEEIAEK  49
+              Y  Y+DLR+RG  V+   ++    + Y                 SE     + EI   
+Sbjct  86   IRYLAYKDLRNRGYTVRTGLKYGSDFRLYERSNIDEIHSRYLVKVFSEEIPCEISEITGF  145
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +R    +A+VD +  + Y+ +
+Sbjct  146  VRVAHSVRKELIIAIVDADGSVVYYNM  172
+
+
+>sp|Q975R3|ENDA_SULTO tRNA-splicing endonuclease OS=Sulfurisphaera 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 
+7) OX=273063 GN=endA PE=1 SV=1
+Length=180
+
+ Score = 74.6 bits (182),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 33/90 (37%), Gaps = 17/90 (19%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VYEDLR++G  V+   ++      Y             + + E   I   EI  
+Sbjct  87   FRILYSVYEDLREKGYVVRSGIKYGADFAVYTIGPGIEHAPYLVIALDENSQISSNEILG  146
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVYE  74
+              R     R    L +V+  +    + +++
+Sbjct  147  FGRVSHSTRKELILGIVNLTNGKIRYIMFK  176
+
+
+>sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 72.3 bits (176),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 36/87 (41%), Gaps = 19/87 (22%)
+
+Query  5    YYFVYEDLRDRGNKVKIQGEFLLTKKPY---------------LPISERKTIRMEEIAEK  49
+             Y VY DLR+RG  VK   ++    + Y                 ISE  TI   + +  
+Sbjct  79   KYLVYRDLRNRGYIVKTGFKYGAEFRLYERGGAPGRTHSAYLVRVISENDTIHALDFSSY  138
+
+Query  50   ARNFDELR----LAVVDEESEITYFRV  72
+             R    +     +A +D+E +ITY+ V
+Sbjct  139  VRVAHGVNKKLLMAFLDDEEDITYYLV  165
+
+
+>sp|Q8PZI1|ENDA_METMA tRNA-splicing endonuclease OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 
+11833 / OCM 88) OX=192952 GN=endA PE=3 SV=1
+Length=353
+
+ Score = 70.8 bits (172),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 46/89 (52%), Gaps = 16/89 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEFLLTKKPYLP-----------ISERKTIRMEEIAE  48
+            +F   Y VY+DL++RG  V+    +F +  +   P           +SER+ + ++ + E
+Sbjct  77   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAAKIFVHVLSERQPLSVKLLQE  136
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVY  73
+               + + +     LAVVDEES++T++ + 
+Sbjct  137  SVASAENVHKQFILAVVDEESDLTFYEIK  165
+
+
+ Score = 51.1 bits (121),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 34/95 (36%), Gaps = 19/95 (20%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL----------------PISERKTIRMEE  45
+            F   Y  Y+ LRD G+ VK   +F    + Y                  I E    R+  
+Sbjct  259  FLRKYSAYKALRDSGHVVKTGFKFGTHFRVYRKVESIEKIPHSEYLVNVIPEDYEFRLPV  318
+
+Query  46   IAEKARNFDELR---LAVVDEESEITYFRVYEPDM  77
+            ++   R  + +R   L  V++  E+ Y  +    M
+Sbjct  319  MSGAVRLANSVRKRMLFAVEKGEEVEYLDIGRVKM  353
+
+
+>sp|A2BIW2|ENDA_HYPBU tRNA-splicing endonuclease OS=Hyperthermus 
+butylicus (strain DSM 5456 / JCM 9403 / PLM1-5) OX=415426 
+GN=endA PE=3 SV=1
+Length=181
+
+ Score = 68.4 bits (166),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 25/73 (34%), Gaps = 13/73 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VY DLRDRG  V+   ++      Y               +   + I   EI  
+Sbjct  88   FELLYKVYRDLRDRGYVVRSGLKYGSDFAVYERGPGLEHAPYLVHVMRVDEEIDPLEIVR  147
+
+Query  49   KARNFDELRLAVV  61
+              R    +R A +
+Sbjct  148  AGRLSHSVRKAFI  160
+
+
+>sp|Q8TGX1|ENDA_METAC tRNA-splicing endonuclease OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / 
+C2A) OX=188937 GN=endA PE=3 SV=1
+Length=350
+
+ Score = 66.9 bits (162),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 23/89 (26%), Positives = 46/89 (52%), Gaps = 16/89 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEFLLTKKPYLP-----------ISERKTIRMEEIAE  48
+            +F   Y VY+DL++RG  V+    +F +  +   P           +SER+ + ++ + +
+Sbjct  74   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAAKIFVHVLSERQPLPVKLLQD  133
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVY  73
+               + + +     LAVVDEES++T++ + 
+Sbjct  134  SVISAENVHKQFILAVVDEESDLTFYEIK  162
+
+
+ Score = 47.3 bits (111),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 20/95 (21%), Positives = 33/95 (35%), Gaps = 19/95 (20%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL----------------PISERKTIRMEE  45
+            F   Y  Y+ LRD G+ VK   +F    + Y                  I      R+  
+Sbjct  256  FLRKYGAYKALRDSGHVVKTGFKFGTHFRVYRKVESIEKIPHSEYLVNVIPSDYEFRLPV  315
+
+Query  46   IAEKARNFDELR---LAVVDEESEITYFRVYEPDM  77
+            ++   R  + +R   L  V++E  + Y  +    M
+Sbjct  316  MSGAVRLANSVRKRMLFAVEKEEGVEYLDISRVKM  350
+
+
+>sp|Q46FK9|ENDA_METBF tRNA-splicing endonuclease OS=Methanosarcina 
+barkeri (strain Fusaro / DSM 804) OX=269797 GN=endA PE=3 
+SV=1
+Length=350
+
+ Score = 63.8 bits (154),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 45/89 (51%), Gaps = 16/89 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVK-IQGEFLLTKKPYLP-----------ISERKTIRMEEIAE  48
+            +F   Y VY+DL++RG  V+    +F +  +   P            SER+ + ++ + +
+Sbjct  74   NFELKYIVYKDLKERGYYVQPSAADFRVYPRGSHPGKSAARIFVHVQSERQLLPVKLLQD  133
+
+Query  49   KARNFDELR----LAVVDEESEITYFRVY  73
+               + + +     LAVVDEES++T++ V 
+Sbjct  134  SVISAENVHKQFILAVVDEESDLTFYEVK  162
+
+
+ Score = 49.6 bits (117),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 35/95 (37%), Gaps = 19/95 (20%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL----------------PISERKTIRMEE  45
+            F   Y  Y++LRD G+ VK   +F    + Y                  I      R+  
+Sbjct  256  FLRKYSAYKNLRDSGHVVKTGFKFGTNFRVYRKVESIEKIPHSEYLVNAIPADFEFRLSV  315
+
+Query  46   IAEKARNFDELR---LAVVDEESEITYFRVYEPDM  77
+            ++   R  + +R   L  V+++ EI Y  +    M
+Sbjct  316  MSGAVRLANSVRKKMLFAVEKDEEIEYLDISRTKM  350
+
+
+>sp|Q8TGZ7|ENDA_METKA tRNA-splicing endonuclease OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=endA PE=1 SV=1
+Length=179
+
+ Score = 55.0 bits (131),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 14/73 (19%), Positives = 23/73 (32%), Gaps = 13/73 (18%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAE  48
+            F   Y VY DL +RG  VK   ++    + Y               +     +   ++  
+Sbjct  85   FRAGYVVYRDLTERGYVVKSGFKYGGRFRVYEEDPDREHSKYVVRVVEPDTELSTRDVLR  144
+
+Query  49   KARNFDELRLAVV  61
+              R    +R   V
+Sbjct  145  ATRLAHSVRKDFV  157
+
+
+>sp|Q3IU70|ENDA_NATPD tRNA-splicing endonuclease OS=Natronomonas 
+pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / NBRC 
+14720 / NCIMB 2260 / Gabara) OX=348780 GN=endA PE=3 SV=1
+Length=336
+
+ Score = 53.8 bits (128),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 20/93 (22%), Positives = 31/93 (33%), Gaps = 20/93 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRMEE  45
+            F     VY  LR+RG   K   +F    + Y                  +    T+   +
+Sbjct  241  FDRRLTVYRTLRERGVVPKTGFKFGADFRTYADVDSVSELGHSELLVRVLPADATLSPRD  300
+
+Query  46   IAEKARNFDELR----LAVVDEESEITYFRVYE  74
+            +A   R    +R     A+VD+  EI +  V  
+Sbjct  301  VALDVRLAHGVRKRMVFALVDDGDEIRWVSVSR  333
+
+
+ Score = 41.9 bits (97),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 25/89 (28%), Positives = 37/89 (42%), Gaps = 14/89 (16%)
+
+Query  1    DFSTYYFVYEDLRDRGNKV----------KIQGEFLLTKKPYLPISERKTIRMEEIAEKA  50
+            D    + VY DLR+RG  V              +F++  +   P       R+  + E+ 
+Sbjct  67   DLVVPFLVYRDLRERGFYVSPALEGWVADHAGIDFVVHPRGDGPWDGTVAYRVRVVDERG  126
+
+Query  51   RNF----DELRLAVVDEESEITYFRVYEP  75
+                    ++ LAVVDEESE+TY     P
+Sbjct  127  SVRLDSLGDVVLAVVDEESELTYLETDRP  155
+
+
+>sp|Q8ZVI1|ENDA_PYRAE tRNA-splicing endonuclease OS=Pyrobaculum 
+aerophilum (strain ATCC 51768 / IM2 / DSM 7523 / JCM 9630 
+/ NBRC 100827) OX=178306 GN=endA PE=1 SV=1
+Length=183
+
+ Score = 49.2 bits (116),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 15/70 (21%), Positives = 23/70 (33%), Gaps = 13/70 (19%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIA  47
+            +F   Y +Y+  RD G  VK   +F      Y             + +   K I   +I 
+Sbjct  89   NFDEIYKIYKYFRDLGYVVKSGLKFGALFSVYEKGPGIDHAPMVVVFLEPDKGISATDIT  148
+
+Query  48   EKARNFDELR  57
+               R    +R
+Sbjct  149  RGGRLSHSVR  158
+
+
+>sp|Q8BMZ5|SEN34_MOUSE tRNA-splicing endonuclease subunit Sen34 
+OS=Mus musculus OX=10090 GN=Tsen34 PE=2 SV=2
+Length=316
+
+ Score = 50.0 bits (118),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 14/84 (17%), Positives = 28/84 (33%), Gaps = 17/84 (20%)
+
+Query  3    STYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAEK  49
+               Y +Y DL +RG  +   G+F      Y                S    I ++++   
+Sbjct  224  ELRYSIYRDLWERGFFLSAAGKFGGDFLVYPGDPLRFHAHYIAQCWSAEDPIPLQDLVSA  283
+
+Query  50   ARNFDELRLAVV----DEESEITY  69
+             R    +R  ++      + ++ Y
+Sbjct  284  GRLGTSVRKTLLLCSPQPDGKVVY  307
+
+
+>sp|Q9BSV6|SEN34_HUMAN tRNA-splicing endonuclease subunit Sen34 
+OS=Homo sapiens OX=9606 GN=TSEN34 PE=1 SV=1
+Length=310
+
+ Score = 48.8 bits (115),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 14/84 (17%), Positives = 29/84 (35%), Gaps = 17/84 (20%)
+
+Query  3    STYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIAEK  49
+               Y +Y DL +RG  +   G+F      Y                +   TI ++++   
+Sbjct  218  ELRYSIYRDLWERGFFLSAAGKFGGDFLVYPGDPLRFHAHYIAQCWAPEDTIPLQDLVAA  277
+
+Query  50   ARNFDELRLAVV----DEESEITY  69
+             R    +R  ++      + ++ Y
+Sbjct  278  GRLGTSVRKTLLLCSPQPDGKVVY  301
+
+
+>sp|A1RSY7|ENDA_PYRIL tRNA-splicing endonuclease OS=Pyrobaculum 
+islandicum (strain DSM 4184 / JCM 9189 / GEO3) OX=384616 GN=endA 
+PE=3 SV=1
+Length=183
+
+ Score = 47.6 bits (112),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 13/73 (18%), Positives = 23/73 (32%), Gaps = 13/73 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIA  47
+            +F   Y +Y+  RD G  VK   +F      Y             + +   + I   +I 
+Sbjct  89   NFDDIYKIYKYFRDLGYVVKSGLKFGALFSVYERGPGIDHAPMVVVFLEPDRGISATDIT  148
+
+Query  48   EKARNFDELRLAV  60
+               R    ++   
+Sbjct  149  RGGRLSHSVKKTF  161
+
+
+>sp|Q74MP4|ENDA_NANEQ tRNA-splicing endonuclease OS=Nanoarchaeum 
+equitans (strain Kin4-M) OX=228908 GN=endA PE=1 SV=1
+Length=154
+
+ Score = 46.5 bits (109),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 21/99 (21%), Positives = 34/99 (34%), Gaps = 25/99 (25%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY---------------------LPISERKT  40
+            F   Y  Y++LRD+G  +    +F    + Y                      P+S+ +T
+Sbjct  56   FLIRYKAYKELRDKGYTLGTALKFGADFRVYDIGVIPKKGKRSEREHSKWVLYPVSKDET  115
+
+Query  41   IRMEEIAEKARNFDELR----LAVVDEESEITYFRVYEP  75
+                E A K R     R    L +V ++ E       +P
+Sbjct  116  FDFYEFASKNRVAHSTRKKLLLGIVSDKIEFIEVSWKKP  154
+
+
+>sp|A4WLV3|ENDA_PYRAR tRNA-splicing endonuclease OS=Pyrobaculum 
+arsenaticum (strain DSM 13514 / JCM 11321 / PZ6) OX=340102 
+GN=endA PE=3 SV=1
+Length=183
+
+ Score = 46.9 bits (110),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 14/73 (19%), Positives = 23/73 (32%), Gaps = 13/73 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIA  47
+            +F   Y +Y+  RD G  VK   +F      Y             + +   K I   +I 
+Sbjct  89   NFDEIYKIYKYFRDLGYVVKSGLKFGALFSVYEKGPGIDHAPMVVVFLEPDKGISATDIT  148
+
+Query  48   EKARNFDELRLAV  60
+               R    ++   
+Sbjct  149  RGGRLGHSVKKTF  161
+
+
+>sp|B1Y9D1|ENDA_PYRNV tRNA-splicing endonuclease OS=Pyrobaculum 
+neutrophilum (strain DSM 2338 / JCM 9278 / NBRC 100436 / V24Sta) 
+OX=444157 GN=endA PE=3 SV=1
+Length=183
+
+ Score = 46.5 bits (109),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 13/73 (18%), Positives = 23/73 (32%), Gaps = 13/73 (18%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY-------------LPISERKTIRMEEIA  47
+            +F   Y +Y+  RD G  VK   +F      Y             + +   + I   +I 
+Sbjct  89   NFDDVYKIYKYFRDLGYVVKSGLKFGALFSVYEKGPGIDHAPMVVVFLEPDRGISATDIT  148
+
+Query  48   EKARNFDELRLAV  60
+               R    ++   
+Sbjct  149  RGGRLGHSVKKTF  161
+
+
+>sp|Q8TGZ5|ENDAL_METKA EndA-like protein OS=Methanopyrus kandleri 
+(strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) OX=190192 
+GN=MK0397 PE=1 SV=1
+Length=166
+
+ Score = 45.7 bits (107),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 33/83 (40%), Gaps = 14/83 (17%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYLPISER----------KTIRMEEIAEKAR  51
+            F   Y VY DLR RG K K   +F    + +    ER               ++I E  +
+Sbjct  77   FPVRYAVYADLRRRGWKPKPGRKFGTEFRAFRGEDERIAVKVLQEELDEFTAQDILEWLK  136
+
+Query  52   NFDELR----LAVVDEESEITYF  70
+              +       +A+VD + ++ Y+
+Sbjct  137  LVEGTEFELVVAIVDNDYDLNYY  159
+
+
+>sp|Q9HN82|ENDA_HALSA tRNA-splicing endonuclease OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=endA PE=3 SV=1
+Length=343
+
+ Score = 46.1 bits (108),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 15/90 (17%), Positives = 26/90 (29%), Gaps = 20/90 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRMEE  45
+            F     VY  LRD G   K   +F    + Y                  I++       +
+Sbjct  247  FDCRLAVYRALRDAGAVPKTGFKFGADFRVYSAVSSVDDLGHSELLVRVITDTHVFSPGD  306
+
+Query  46   IAEKARNFDELR----LAVVDEESEITYFR  71
+            ++   R    +R     A  D+  +   + 
+Sbjct  307  LSLDVRLAHGVRKRMVFAATDDTDDTIRWL  336
+
+
+ Score = 36.9 bits (84),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 41/92 (45%), Gaps = 28/92 (30%)
+
+Query  2    FSTYYFVYEDLRDRGNKV----------KIQGEFLLTKKP-----------YLPISERKT  40
+            F+  + VY DLRDRG  +             G+F++  +               + ER T
+Sbjct  70   FAARFLVYVDLRDRGFYLVPDRDPWWRDPGDGDFVVFPRGNTRRDGVVKHRVRVVDERTT  129
+
+Query  41   IRMEEIAEKARNFDELRLAVVDEESEITYFRV  72
+            + ++ ++E         LAVVDEESEITY  +
+Sbjct  130  LPVDGLSESV-------LAVVDEESEITYLDI  154
+
+
+>sp|B0R7C0|ENDA_HALS3 tRNA-splicing endonuclease OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 GN=endA 
+PE=3 SV=1
+Length=343
+
+ Score = 46.1 bits (108),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 15/90 (17%), Positives = 26/90 (29%), Gaps = 20/90 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRMEE  45
+            F     VY  LRD G   K   +F    + Y                  I++       +
+Sbjct  247  FDCRLAVYRALRDAGAVPKTGFKFGADFRVYSAVSSVDDLGHSELLVRVITDTHVFSPGD  306
+
+Query  46   IAEKARNFDELR----LAVVDEESEITYFR  71
+            ++   R    +R     A  D+  +   + 
+Sbjct  307  LSLDVRLAHGVRKRMVFAATDDTDDTIRWL  336
+
+
+ Score = 36.9 bits (84),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 41/92 (45%), Gaps = 28/92 (30%)
+
+Query  2    FSTYYFVYEDLRDRGNKV----------KIQGEFLLTKKP-----------YLPISERKT  40
+            F+  + VY DLRDRG  +             G+F++  +               + ER T
+Sbjct  70   FAARFLVYVDLRDRGFYLVPDRDPWWRDPGDGDFVVFPRGNTRRDGVVKHRVRVVDERTT  129
+
+Query  41   IRMEEIAEKARNFDELRLAVVDEESEITYFRV  72
+            + ++ ++E         LAVVDEESEITY  +
+Sbjct  130  LPVDGLSESV-------LAVVDEESEITYLDI  154
+
+
+>sp|Q5UYF6|ENDA_HALMA tRNA-splicing endonuclease OS=Haloarcula 
+marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / VKM 
+B-1809) OX=272569 GN=endA PE=3 SV=1
+Length=335
+
+ Score = 42.6 bits (99),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 13/76 (17%), Positives = 20/76 (26%), Gaps = 16/76 (21%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRMEE  45
+            F     VY  LR  G   K   +F    + Y                  +         +
+Sbjct  239  FDRRLAVYTALRASGVAPKTGFKFGADFRTYADVESAENLGHSELLVRVLPADHRFEPRD  298
+
+Query  46   IAEKARNFDELRLAVV  61
+            +A   R    +R  +V
+Sbjct  299  LALDVRLAHGVRKTMV  314
+
+
+ Score = 36.5 bits (83),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 25/93 (27%), Positives = 31/93 (33%), Gaps = 28/93 (30%)
+
+Query  3    STYYFVYEDLRDRGNKVKIQGE------FLLTKKPY---------------LPISERKTI  41
+               + VY+DLRDRG  +    E             Y                 I ER T 
+Sbjct  69   EVDFAVYKDLRDRGFYLTPAREGWVDDAAGADFVVYPRGKGPWDNEVAYRVRIIGERDTA  128
+
+Query  42   RMEEIAEKARNFDELRLAVVDEESEITYFRVYE  74
+               ++           LAVVDEESE+TY     
+Sbjct  129  VATDLGGCV-------LAVVDEESEVTYLDTDR  154
+
+
+>sp|O07118|ENDA_HALVD tRNA-splicing endonuclease OS=Haloferax 
+volcanii (strain ATCC 29605 / DSM 3757 / JCM 8879 / NBRC 14742 
+/ NCIMB 2012 / VKM B-1768 / DS2) OX=309800 GN=endA PE=1 SV=2
+Length=339
+
+ Score = 42.2 bits (98),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 16/93 (17%), Positives = 28/93 (30%), Gaps = 20/93 (22%)
+
+Query  2    FSTYYFVYEDLRDRGNKVKIQGEFLLTKKPY----------------LPISERKTIRMEE  45
+            F     VY  LR+     K   +F    + Y                  ++   T    +
+Sbjct  244  FDRRLAVYAALREAKTVPKSGFKFGSDFRVYTEFESVDDLSHSEFLVRVVAPDHTFVPRD  303
+
+Query  46   IAEKARNFDELR----LAVVDEESEITYFRVYE  74
+            ++   R    +R     A+ D+  EI +  V  
+Sbjct  304  LSLDVRLAGGVRKRMVFALTDDNGEIDWLSVSR  336
+
+
+ Score = 37.6 bits (86),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 22/91 (24%), Positives = 38/91 (42%), Gaps = 30/91 (33%)
+
+Query  4    TYYFVYEDLRDRGNKVKIQ------------GEFLLTKKP-----------YLPISERKT  40
+              + VY+DLRDRG  +                +FL+  +               + ER++
+Sbjct  70   LDFVVYKDLRDRGFYLSPAREGWPGVADAADADFLVYPRGKGPWDGEVEHRVRVVGERES  129
+
+Query  41   IRMEEIAEKARNFDELRLAVVDEESEITYFR  71
+            I +  + E       + LA+VDE+ ++TYF 
+Sbjct  130  IPVSSLGE-------VVLAIVDEDGDLTYFD  153
+
+
+>sp|Q9M1E8|SEN21_ARATH tRNA-splicing endonuclease subunit Sen2-1 
+OS=Arabidopsis thaliana OX=3702 GN=SEN1 PE=2 SV=1
+Length=237
+
+ Score = 41.5 bits (96),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 8/33 (24%), Positives = 14/33 (42%), Gaps = 0/33 (0%)
+
+Query  1    DFSTYYFVYEDLRDRGNKVKIQGEFLLTKKPYL  33
+            DF+  Y  Y  LR +   V+   ++ +    Y 
+Sbjct  117  DFAILYKAYSHLRSKNWIVRSGLQYGVDFVVYR  149
+
+
+>sp|Q6L1P9|ENDA_PICTO tRNA-splicing endonuclease OS=Picrophilus 
+torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 
+100828) OX=263820 GN=endA PE=3 SV=1
+Length=284
+
+ Score = 39.9 bits (92),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 14/80 (18%), Positives = 30/80 (38%), Gaps = 12/80 (15%)
+
+Query  7    FVYEDLRDRGNKVKIQGEFLLTKKPYL-PISERKTIRME--------EIAEKARNFDELR  57
+             +Y+DL  RG  VK   ++    + Y   ++E     +          IA   R    +R
+Sbjct  197  VIYKDLIKRGFIVKSGFKYGSNFRIYKNSMNEHSDYLVNYMDHDLWYVIARAVRLASNVR  256
+
+Query  58   LAVVDE---ESEITYFRVYE  74
+              ++     +++  Y ++  
+Sbjct  257  KRLIISGIIDNDPVYIKIER  276
+
+
+>sp|Q97BQ3|ENDA_THEVO tRNA-splicing endonuclease OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / NBRC 
+15438 / GSS1) OX=273116 GN=endA PE=3 SV=1
+Length=292
+
+ Score = 38.4 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/64 (20%), Positives = 21/64 (33%), Gaps = 10/64 (16%)
+
+Query  8    VYEDLRDRGNKVKIQGEFLLTKKP----------YLPISERKTIRMEEIAEKARNFDELR  57
+            VY DL  RG  VK   ++    +           YL       +    I+   R    +R
+Sbjct  207  VYRDLLSRGCIVKTGFKYGTNFRVYEGEKSEHAEYLVSVVENKLIWYYISRAVRVASSVR  266
+
+Query  58   LAVV  61
+              ++
+Sbjct  267  KKMI  270
+
+
+>sp|Q9HIY5|ENDA_THEAC tRNA-splicing endonuclease OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 / NBRC 
+15155 / AMRC-C165) OX=273075 GN=endA PE=1 SV=1
+Length=289
+
+ Score = 37.6 bits (86),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/67 (21%), Positives = 23/67 (34%), Gaps = 14/67 (21%)
+
+Query  7    FVYEDLRDRGNKVKIQGEFLLTKKPYL------------PISERKTIRMEEIAEKARNFD  54
+             VY DL  RG  VK   ++    + YL             + E +      I+   R   
+Sbjct  204  MVYSDLVGRGCIVKTGFKYGANFRVYLGRDSQHAEYLVSVMPEEERWYS--ISRGVRVAS  261
+
+Query  55   ELRLAVV  61
+             +R  ++
+Sbjct  262  SVRKTMI  268
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.144    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0442    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

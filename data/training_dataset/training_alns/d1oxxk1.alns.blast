@@ -1,0 +1,254 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1oxxk1
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV OS=S...  218     4e-71
+
+
+>sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV 
+OS=Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 
+/ JCM 11322 / P2) OX=273057 GN=glcV PE=1 SV=1
+Length=353
+
+ Score = 218 bits (556),  Expect = 4e-71, Method: Compositional matrix adjust.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  60
+            EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK
+Sbjct  243  EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  302
+
+Query  61   VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  110
+            VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK
+Sbjct  303  VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  352
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.140    0.393    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 2
+
+
+Query= d1oxxk1
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV OS=S...  231     6e-76
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8U4K3|WTPC_PYRFU Molybdate/tungstate import ATP-binding prote...  39.6    0.002
+
+
+>sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV 
+OS=Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 
+/ JCM 11322 / P2) OX=273057 GN=glcV PE=1 SV=1
+Length=353
+
+ Score = 231 bits (588),  Expect = 6e-76, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  60
+            EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK
+Sbjct  243  EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  302
+
+Query  61   VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  110
+            VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK
+Sbjct  303  VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  352
+
+
+>sp|Q8U4K3|WTPC_PYRFU Molybdate/tungstate import ATP-binding protein 
+WtpC OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 
+3638 / JCM 8422 / Vc1) OX=186497 GN=wtpC PE=3 SV=1
+Length=344
+
+ Score = 39.6 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 35/111 (32%), Positives = 52/111 (47%), Gaps = 6/111 (5%)
+
+Query  3    NELEGKVTNEGVVIGSLRFPVSVSSD-RAIIGIRPEDVKLSKDVIKDDSWILVGKGKVKV  61
+            N +EG      + +G LR  + + +  R  IGIRPED+ +S + IK  S   V K KV+ 
+Sbjct  235  NIIEGIADGRVLHVGKLRIELPLEAKGRVRIGIRPEDILISTERIK-TSARNVFKAKVEA  293
+
+Query  62   IGYQGGLFRITITPLDSEEEIF----TYSDHPIHSGEEVLVYVRKDKIKVF  108
+            I   G L ++T+   D     F    +  +  I  G+EV    +   I VF
+Sbjct  294  IEDVGPLVKLTLNVCDITLRAFITRSSLVELGIEEGKEVYASFKASAIHVF  344
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.143    0.402    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0437    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 3
+
+
+Query= d1oxxk1
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV OS=S...  167     6e-51
+sp|Q8U4K3|WTPC_PYRFU Molybdate/tungstate import ATP-binding prote...  137     1e-39
+
+Sequences not found previously or not previously below threshold:
+
+sp|O57896|WTPC_PYRHO Molybdate/tungstate import ATP-binding prote...  100     1e-25
+sp|Q9V2C0|WTPC_PYRAB Molybdate/tungstate import ATP-binding prote...  85.0    1e-19
+sp|Q5JEB0|WTPC_THEKO Molybdate/tungstate import ATP-binding prote...  52.3    7e-08
+
+
+>sp|Q97UY8|GLCV_SACS2 Glucose import ATP-binding protein GlcV 
+OS=Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 
+/ JCM 11322 / P2) OX=273057 GN=glcV PE=1 SV=1
+Length=353
+
+ Score = 167 bits (422),  Expect = 6e-51, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  60
+            EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK
+Sbjct  243  EINELEGKVTNEGVVIGSLRFPVSVSSDRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVK  302
+
+Query  61   VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  110
+            VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK
+Sbjct  303  VIGYQGGLFRITITPLDSEEEIFTYSDHPIHSGEEVLVYVRKDKIKVFEK  352
+
+
+>sp|Q8U4K3|WTPC_PYRFU Molybdate/tungstate import ATP-binding protein 
+WtpC OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 
+3638 / JCM 8422 / Vc1) OX=186497 GN=wtpC PE=3 SV=1
+Length=344
+
+ Score = 137 bits (345),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 35/111 (32%), Positives = 52/111 (47%), Gaps = 6/111 (5%)
+
+Query  3    NELEGKVTNEGVVIGSLRFPVSVSSD-RAIIGIRPEDVKLSKDVIKDDSWILVGKGKVKV  61
+            N +EG      + +G LR  + + +  R  IGIRPED+ +S + IK  S   V K KV+ 
+Sbjct  235  NIIEGIADGRVLHVGKLRIELPLEAKGRVRIGIRPEDILISTERIK-TSARNVFKAKVEA  293
+
+Query  62   IGYQGGLFRITITPLDSEEEIF----TYSDHPIHSGEEVLVYVRKDKIKVF  108
+            I   G L ++T+   D     F    +  +  I  G+EV    +   I VF
+Sbjct  294  IEDVGPLVKLTLNVCDITLRAFITRSSLVELGIEEGKEVYASFKASAIHVF  344
+
+
+>sp|O57896|WTPC_PYRHO Molybdate/tungstate import ATP-binding protein 
+WtpC OS=Pyrococcus horikoshii (strain ATCC 700860 / DSM 
+12428 / JCM 9974 / NBRC 100139 / OT-3) OX=70601 GN=wtpC PE=3 
+SV=1
+Length=345
+
+ Score = 100 bits (250),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 30/111 (27%), Positives = 48/111 (43%), Gaps = 6/111 (5%)
+
+Query  3    NELEGKVTNEGVVIGSLRFPVSVSS-DRAIIGIRPEDVKLSKDVIKDDSWILVGKGKVKV  61
+            N +EG      + +G LR  +      +  +GIRPED+ +  + +K  S   V K +V+ 
+Sbjct  235  NIIEGVANGRILKVGDLRIELPREVWGKVRVGIRPEDITIFMEGVK-TSARNVFKARVEG  293
+
+Query  62   IGYQGGLFRITITPLDSEEEIF----TYSDHPIHSGEEVLVYVRKDKIKVF  108
+            I   G L ++T+         F    +  +  I  GEEV    +   I VF
+Sbjct  294  IEDLGALVKLTLNLGGIILRAFITRSSLIELGIREGEEVYASFKASAIHVF  344
+
+
+>sp|Q9V2C0|WTPC_PYRAB Molybdate/tungstate import ATP-binding protein 
+WtpC OS=Pyrococcus abyssi (strain GE5 / Orsay) OX=272844 
+GN=wtpC PE=3 SV=1
+Length=344
+
+ Score = 85.0 bits (209),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 29/111 (26%), Positives = 49/111 (44%), Gaps = 6/111 (5%)
+
+Query  3    NELEGKVTNEGVVIGSLRFPVSVSSD-RAIIGIRPEDVKLSKDVIKDDSWILVGKGKVKV  61
+            N +EG      +    ++  + +S + +  IG+RPED+ LS + +K  S     + +V  
+Sbjct  235  NIIEGVAKGNILEANGVKITLPISVEGKVRIGVRPEDIILSTEPVK-TSARNEFRAEVIG  293
+
+Query  62   IGYQGGLFRITITPLDSEEEIF----TYSDHPIHSGEEVLVYVRKDKIKVF  108
+            I   G L R+ +       + F    +  +  I  G EV V  +   IKVF
+Sbjct  294  IEELGPLVRVNLKIGGITLKAFITRSSLIELGISEGREVYVSFKTSAIKVF  344
+
+
+>sp|Q5JEB0|WTPC_THEKO Molybdate/tungstate import ATP-binding protein 
+WtpC OS=Thermococcus kodakarensis (strain ATCC BAA-918 
+/ JCM 12380 / KOD1) OX=69014 GN=wtpC PE=3 SV=1
+Length=330
+
+ Score = 52.3 bits (124),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 19/73 (26%), Positives = 32/73 (44%), Gaps = 6/73 (8%)
+
+Query  3    NELEGKVTNEGVVIGSLRFPVSVSSD-RAIIGIRPEDVKLSKDVIKDDSWILVGKGKVKV  61
+            N +EG      +    L   + + +  R  +GIRPED+ LS + +K  S     + +V+ 
+Sbjct  236  NIVEGLAEGRILRANGLVIELPIEASGRIRVGIRPEDIVLSDEPLK-SSMRNTFQAEVQA  294
+
+Query  62   ----IGYQGGLFR  70
+                +G  G   R
+Sbjct  295  DVEELGELGPRTR  307
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.348    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

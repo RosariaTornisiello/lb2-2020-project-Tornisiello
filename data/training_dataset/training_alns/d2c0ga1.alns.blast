@@ -1,0 +1,740 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2c0ga1
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster...  213     3e-70
+sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 OS=...  47.4    3e-06
+sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 29 O...  44.3    4e-05
+sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyosteli...  43.1    1e-04
+sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 29 O...  42.0    2e-04
+sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 OS=...  41.6    3e-04
+sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Ory...  38.5    0.003
+sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 29 O...  38.1    0.004
+sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Ory...  38.5    0.004
+
+
+>sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster 
+OX=7227 GN=wbl PE=1 SV=1
+Length=257
+
+ Score = 213 bits (542),  Expect = 3e-70, Method: Compositional matrix adjust.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG
+Sbjct  146  RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  205
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  106
+            YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA
+Sbjct  206  YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  251
+
+
+>sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 
+OS=Rattus norvegicus OX=10116 GN=Erp29 PE=1 SV=2
+Length=260
+
+ Score = 47.4 bits (111),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 33/98 (34%), Positives = 51/98 (52%), Gaps = 4/98 (4%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQ--QQNARAYLIYMRKIHEVG  60
+            GC+  ++ +   +      E  + I  L+  Q+ L+  ++  ++ A  YL  M KI + G
+Sbjct  156  GCLPAYDALAGQFIEASSREARQAI--LKQGQDGLSGVKETDKKWASQYLKIMGKILDQG  213
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFR  98
+             DF   E  R+ +L   K++E KKEEL R LNIL  FR
+Sbjct  214  EDFPASELARISKLIENKMSEGKKEELQRSLNILTAFR  251
+
+
+>sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 
+29 OS=Mus musculus OX=10090 GN=Erp29 PE=1 SV=2
+Length=262
+
+ Score = 44.3 bits (103),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 32/97 (33%), Positives = 51/97 (53%), Gaps = 2/97 (2%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPE-QQQNARAYLIYMRKIHEVGY  61
+            GC+  ++ +   +      E  + I K Q +   L+  E +++ A  YL  M KI + G 
+Sbjct  158  GCLPAYDALAGEFIKASSIEARQAILK-QGQDGLLSVKETEKKWASQYLKIMGKILDQGE  216
+
+Query  62   DFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFR  98
+            DF   E  R+ +L   K++++KKEEL + LNIL  FR
+Sbjct  217  DFPASEMARIGKLIENKMSDSKKEELQKSLNILTAFR  253
+
+
+>sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyostelium 
+discoideum OX=44689 GN=pdi1 PE=1 SV=2
+Length=363
+
+ Score = 43.1 bits (100),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/75 (33%), Positives = 43/75 (57%), Gaps = 3/75 (4%)
+
+Query  25   KLIEKLQAKQEQLTDPEQQQNARAYLI-YMRKIHEVGYDFLEEETKRLLRLKAGKVTEAK  83
+            +L++K Q   + L  PE+ +   +Y +  M+ I E   DF+  E  R+ +L +G ++  K
+Sbjct  289  ELVKKAQTVVDSL--PEELRTEGSYYVKVMKTIAEKSIDFVTTEIARITKLVSGSMSGKK  346
+
+Query  84   KEELLRKLNILEVFR  98
+             +E  +KLNILE F+
+Sbjct  347  ADEFAKKLNILESFK  361
+
+
+>sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 
+29 OS=Homo sapiens OX=9606 GN=ERP29 PE=1 SV=4
+Length=261
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 31/99 (31%), Positives = 51/99 (52%), Gaps = 5/99 (5%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQN--ARAYLIYMRKIHEVG  60
+            GC+  ++ +   +      E  + +  L+  Q+ L+  ++ Q   A  YL  M KI + G
+Sbjct  156  GCLPVYDALAGEFIRASGVEARQAL--LKQGQDNLSSVKETQKKWAEQYLKIMGKILDQG  213
+
+Query  61   YDFLEEETKRLLRL-KAGKVTEAKKEELLRKLNILEVFR  98
+             DF   E  R+ RL +  K+++ KKEEL + LNIL  F+
+Sbjct  214  EDFPASEMTRIARLIEKNKMSDGKKEELQKSLNILTAFQ  252
+
+
+>sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 
+OS=Medicago sativa OX=3879 PE=2 SV=1
+Length=364
+
+ Score = 41.6 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/95 (26%), Positives = 51/95 (54%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G +++ +E++K +    D E+  +  +++ + ++L +    +  + YL   +K  E G D
+Sbjct  270  GIVEDLDELVKEFVAANDEEKKAVFARIEEEVKKL-EGSASRYGKIYLKVSKKYLEKGSD  328
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + + E +RL RL    ++ AK +EL  K NIL  +
+Sbjct  329  YAKNEIQRLERLLEKSISPAKADELTLKKNILSTY  363
+
+
+>sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-1 PE=2 SV=2
+Length=366
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 51/95 (54%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G ++    ++K +    + ++ + + K++    +LT P  +   + Y+   +KI E G +
+Sbjct  271  GIVESLAPLVKEFLGAANDKRKEALSKMEEDVAKLTGPAAKY-GKIYVNSAKKIMEKGSE  329
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + ++E++RL R+    ++ +K +E + K NIL  F
+Sbjct  330  YTKKESERLQRMLEKSISPSKADEFVIKKNILSTF  364
+
+
+>sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 
+29 OS=Bos taurus OX=9913 GN=ERP29 PE=1 SV=2
+Length=258
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/54 (43%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  46   ARAYLIYMRKIHEVGYDFLEEETKRLLRL-KAGKVTEAKKEELLRKLNILEVFR  98
+            A  YL  M KI + G DF   E  R+ +L +  K+++ KKEEL + LNIL  F+
+Sbjct  196  AEQYLKIMGKILDQGEDFPASEMTRITKLIEKNKMSDGKKEELQKSLNILTAFQ  249
+
+
+>sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-2 PE=2 SV=1
+Length=371
+
+ Score = 38.5 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/95 (21%), Positives = 52/95 (55%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G I   + + K +    + ++ +++  ++ +  +L+     ++ + Y+   +KI + G+D
+Sbjct  276  GRIASLDALAKEFLGAANDKRKEILSNMEEEVVKLSG-SAAKHGKVYIAIAKKILDKGHD  334
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + ++ET+RL R+    ++ +K +E + K N+L  F
+Sbjct  335  YTKKETERLERMLEKSISPSKADEFIIKKNVLSTF  369
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+Results from round 2
+
+
+Query= d2c0ga1
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster...  145     2e-43
+sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 OS=...  129     3e-37
+sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 29 O...  124     2e-35
+sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 29 O...  122     9e-35
+sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 OS=...  114     9e-31
+sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyosteli...  104     6e-27
+
+Sequences not found previously or not previously below threshold:
+
+sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 29 O...  119     2e-33
+sp|O22263|PDI21_ARATH Protein disulfide-isomerase like 2-1 OS=Ara...  90.6    9e-22
+sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Ory...  84.9    1e-19
+sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Ory...  80.6    5e-18
+sp|P81628|ERP29_CHICK Endoplasmic reticulum resident protein 29 (...  71.4    3e-15
+sp|O13811|PDI2_SCHPO Protein disulfide-isomerase C17H9.14c OS=Sch...  58.7    3e-10
+sp|Q92249|ERP38_NEUCR Protein disulfide-isomerase erp38 OS=Neuros...  51.0    1e-07
+sp|Q00216|TIGA_ASPNG Protein disulfide-isomerase tigA OS=Aspergil...  41.7    3e-04
+
+
+>sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster 
+OX=7227 GN=wbl PE=1 SV=1
+Length=257
+
+ Score = 145 bits (365),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG
+Sbjct  146  RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  205
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  106
+            YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA
+Sbjct  206  YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  251
+
+
+>sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 
+OS=Rattus norvegicus OX=10116 GN=Erp29 PE=1 SV=2
+Length=260
+
+ Score = 129 bits (323),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 33/98 (34%), Positives = 51/98 (52%), Gaps = 4/98 (4%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQ--QQNARAYLIYMRKIHEVG  60
+            GC+  ++ +   +      E  + I  L+  Q+ L+  ++  ++ A  YL  M KI + G
+Sbjct  156  GCLPAYDALAGQFIEASSREARQAI--LKQGQDGLSGVKETDKKWASQYLKIMGKILDQG  213
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFR  98
+             DF   E  R+ +L   K++E KKEEL R LNIL  FR
+Sbjct  214  EDFPASELARISKLIENKMSEGKKEELQRSLNILTAFR  251
+
+
+>sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 
+29 OS=Mus musculus OX=10090 GN=Erp29 PE=1 SV=2
+Length=262
+
+ Score = 124 bits (312),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 33/103 (32%), Positives = 53/103 (51%), Gaps = 2/103 (2%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPE-QQQNARAYLIYMRKIHEVGY  61
+            GC+  ++ +   +      E  + I K Q +   L+  E +++ A  YL  M KI + G 
+Sbjct  158  GCLPAYDALAGEFIKASSIEARQAILK-QGQDGLLSVKETEKKWASQYLKIMGKILDQGE  216
+
+Query  62   DFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTK  104
+            DF   E  R+ +L   K++++KKEEL + LNIL  FR  +  K
+Sbjct  217  DFPASEMARIGKLIENKMSDSKKEELQKSLNILTAFRKKEAEK  259
+
+
+>sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 
+29 OS=Homo sapiens OX=9606 GN=ERP29 PE=1 SV=4
+Length=261
+
+ Score = 122 bits (307),  Expect = 9e-35, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 51/99 (52%), Gaps = 5/99 (5%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQ--QQNARAYLIYMRKIHEVG  60
+            GC+  ++ +   +      E  + +  L+  Q+ L+  ++  ++ A  YL  M KI + G
+Sbjct  156  GCLPVYDALAGEFIRASGVEARQAL--LKQGQDNLSSVKETQKKWAEQYLKIMGKILDQG  213
+
+Query  61   YDFLEEETKRLLRLKA-GKVTEAKKEELLRKLNILEVFR  98
+             DF   E  R+ RL    K+++ KKEEL + LNIL  F+
+Sbjct  214  EDFPASEMTRIARLIEKNKMSDGKKEELQKSLNILTAFQ  252
+
+
+>sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 
+29 OS=Bos taurus OX=9913 GN=ERP29 PE=1 SV=2
+Length=258
+
+ Score = 119 bits (297),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 50/99 (51%), Gaps = 5/99 (5%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQ--QQNARAYLIYMRKIHEVG  60
+            GC+  ++ +   +      E  + +  L+  Q+ L   ++  ++ A  YL  M KI + G
+Sbjct  153  GCLPAYDTLAGEFIRASGVEARQSL--LKQGQDNLASVKETDKKWAEQYLKIMGKILDQG  210
+
+Query  61   YDFLEEETKRLLRLKA-GKVTEAKKEELLRKLNILEVFR  98
+             DF   E  R+ +L    K+++ KKEEL + LNIL  F+
+Sbjct  211  EDFPASEMTRITKLIEKNKMSDGKKEELQKSLNILTAFQ  249
+
+
+>sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 
+OS=Medicago sativa OX=3879 PE=2 SV=1
+Length=364
+
+ Score = 114 bits (285),  Expect = 9e-31, Method: Composition-based stats.
+ Identities = 25/95 (26%), Positives = 51/95 (54%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G +++ +E++K +    D E+  +  +++ + ++L +    +  + YL   +K  E G D
+Sbjct  270  GIVEDLDELVKEFVAANDEEKKAVFARIEEEVKKL-EGSASRYGKIYLKVSKKYLEKGSD  328
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + + E +RL RL    ++ AK +EL  K NIL  +
+Sbjct  329  YAKNEIQRLERLLEKSISPAKADELTLKKNILSTY  363
+
+
+>sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyostelium 
+discoideum OX=44689 GN=pdi1 PE=1 SV=2
+Length=363
+
+ Score = 104 bits (259),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 50/97 (52%), Gaps = 3/97 (3%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYL-IYMRKIHEVGY  61
+            G +++ + +   +       + +L++K Q   + L  PE+ +   +Y    M+ I E   
+Sbjct  267  GRVEQLDTIATEFIAAAAEVRKELVKKAQTVVDSL--PEELRTEGSYYVKVMKTIAEKSI  324
+
+Query  62   DFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFR  98
+            DF+  E  R+ +L +G ++  K +E  +KLNILE F+
+Sbjct  325  DFVTTEIARITKLVSGSMSGKKADEFAKKLNILESFK  361
+
+
+>sp|O22263|PDI21_ARATH Protein disulfide-isomerase like 2-1 OS=Arabidopsis 
+thaliana OX=3702 GN=PDIL2-1 PE=2 SV=1
+Length=361
+
+ Score = 90.6 bits (223),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 22/97 (23%), Positives = 46/97 (47%), Gaps = 1/97 (1%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            + G ++  + ++K      + E+  ++ +++ +   L      +  + YL   +   E G
+Sbjct  262  KAGIVESLDALVKELVAASEDEKKAVLSRIEEEASTLK-GSTTRYGKLYLKLAKSYIEKG  320
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+             D+  +ET+RL R+    ++  K +EL  K NIL  F
+Sbjct  321  SDYASKETERLGRVLGKSISPVKADELTLKRNILTTF  357
+
+
+>sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-2 PE=2 SV=1
+Length=371
+
+ Score = 84.9 bits (208),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/95 (21%), Positives = 52/95 (55%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G I   + + K +    + ++ +++  ++ +  +L+     ++ + Y+   +KI + G+D
+Sbjct  276  GRIASLDALAKEFLGAANDKRKEILSNMEEEVVKLS-GSAAKHGKVYIAIAKKILDKGHD  334
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + ++ET+RL R+    ++ +K +E + K N+L  F
+Sbjct  335  YTKKETERLERMLEKSISPSKADEFIIKKNVLSTF  369
+
+
+>sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-1 PE=2 SV=2
+Length=366
+
+ Score = 80.6 bits (197),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 51/95 (54%), Gaps = 1/95 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G ++    ++K +    + ++ + + K++    +LT P   +  + Y+   +KI E G +
+Sbjct  271  GIVESLAPLVKEFLGAANDKRKEALSKMEEDVAKLTGP-AAKYGKIYVNSAKKIMEKGSE  329
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            + ++E++RL R+    ++ +K +E + K NIL  F
+Sbjct  330  YTKKESERLQRMLEKSISPSKADEFVIKKNILSTF  364
+
+
+>sp|P81628|ERP29_CHICK Endoplasmic reticulum resident protein 
+29 (Fragment) OS=Gallus gallus OX=9031 GN=ERP29 PE=1 SV=2
+Length=228
+
+ Score = 71.4 bits (173),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 20/82 (24%), Positives = 42/82 (51%), Gaps = 1/82 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+KE++ +   + ++ D  + + + K   +  +     ++++A  YL  M KI E G +
+Sbjct  147  GCLKEYDVLASKFMSVTDKSERQSLLKKGQQSLEKAKETEKKSAEQYLKIMSKILEQGEE  206
+
+Query  63   FLEEETKRLLRLKAG-KVTEAK  83
+            F   E  R+ +L    K+++ K
+Sbjct  207  FAANEVVRITKLIEKTKMSDGK  228
+
+
+>sp|O13811|PDI2_SCHPO Protein disulfide-isomerase C17H9.14c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC17H9.14c PE=3 SV=1
+Length=359
+
+ Score = 58.7 bits (140),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 22/96 (23%), Positives = 44/96 (46%), Gaps = 6/96 (6%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G I  F+E    + ++ +A +  ++EK++     L   +  +  + Y     KI     +
+Sbjct  264  GRIPTFDEFAAEFLDMSNAAKEVVLEKVKQ----LALEDSSRWTKYYKKVFEKILND-EN  318
+
+Query  63   FLEEETKRLLRLK-AGKVTEAKKEELLRKLNILEVF  97
+            ++ +E KRL +L     +  A  ++   +LNIL  F
+Sbjct  319  WVHKEAKRLSKLLRQKSIALASADDFKTRLNILNSF  354
+
+
+>sp|Q92249|ERP38_NEUCR Protein disulfide-isomerase erp38 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=erp38 PE=2 SV=2
+Length=369
+
+ Score = 51.0 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 24/96 (25%), Positives = 42/96 (44%), Gaps = 4/96 (4%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            G I   +E++  Y       ++   E+ +   + L +  + + A  YL  + K       
+Sbjct  265  GTIAALDEIVAKYTGGASLAEVA--EEAKEAVKSLKNSAELKYADYYLRVLDK-LSKSEG  321
+
+Query  63   FLEEETKRLLR-LKAGKVTEAKKEELLRKLNILEVF  97
+            +  +E  RL   LK G +  AK +EL  K+N+L  F
+Sbjct  322  YATKEFARLEGILKKGGLAPAKVDELTVKVNVLRKF  357
+
+
+>sp|Q00216|TIGA_ASPNG Protein disulfide-isomerase tigA OS=Aspergillus 
+niger OX=5061 GN=tigA PE=2 SV=1
+Length=359
+
+ Score = 41.7 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 20/98 (20%), Positives = 41/98 (42%), Gaps = 12/98 (12%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            + G I   +E++   A+   A+    ++K   + +        + A+ Y+    K     
+Sbjct  262  KAGTIASLDELI---ASTSAADLAAAVKKAATELKD-------KYAQYYVKVADK-LSQN  310
+
+Query  61   YDFLEEETKRLLR-LKAGKVTEAKKEELLRKLNILEVF  97
+             ++  +E  RL + L  G     K ++L+ + NIL  F
+Sbjct  311  AEYAAKELARLEKILAKGGSAPEKVDDLISRSNILRKF  348
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.289    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+Results from round 3
+
+
+Query= d2c0ga1
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster...  119     2e-33
+sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 29 O...  117     7e-33
+sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 OS=...  117     9e-33
+sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 29 O...  114     2e-31
+sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 29 O...  111     2e-30
+sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Ory...  110     3e-29
+sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 OS=...  109     7e-29
+sp|O22263|PDI21_ARATH Protein disulfide-isomerase like 2-1 OS=Ara...  105     3e-27
+sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Ory...  103     2e-26
+sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyosteli...  103     2e-26
+sp|O13811|PDI2_SCHPO Protein disulfide-isomerase C17H9.14c OS=Sch...  97.6    2e-24
+sp|Q92249|ERP38_NEUCR Protein disulfide-isomerase erp38 OS=Neuros...  81.4    2e-18
+sp|P81628|ERP29_CHICK Endoplasmic reticulum resident protein 29 (...  79.5    3e-18
+sp|Q00216|TIGA_ASPNG Protein disulfide-isomerase tigA OS=Aspergil...  77.2    8e-17
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O44342|WBL_DROME Protein windbeutel OS=Drosophila melanogaster 
+OX=7227 GN=wbl PE=1 SV=1
+Length=257
+
+ Score = 119 bits (298),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG
+Sbjct  146  RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  205
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  106
+            YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA
+Sbjct  206  YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTKTA  251
+
+
+>sp|P57759|ERP29_MOUSE Endoplasmic reticulum resident protein 
+29 OS=Mus musculus OX=10090 GN=Erp29 PE=1 SV=2
+Length=262
+
+ Score = 117 bits (294),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 30/102 (29%), Positives = 48/102 (47%), Gaps = 0/102 (0%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+  ++ +   +      E  + I K            +++ A  YL  M KI + G D
+Sbjct  158  GCLPAYDALAGEFIKASSIEARQAILKQGQDGLLSVKETEKKWASQYLKIMGKILDQGED  217
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTK  104
+            F   E  R+ +L   K++++KKEEL + LNIL  FR  +  K
+Sbjct  218  FPASEMARIGKLIENKMSDSKKEELQKSLNILTAFRKKEAEK  259
+
+
+>sp|P52555|ERP29_RAT Endoplasmic reticulum resident protein 29 
+OS=Rattus norvegicus OX=10116 GN=Erp29 PE=1 SV=2
+Length=260
+
+ Score = 117 bits (293),  Expect = 9e-33, Method: Composition-based stats.
+ Identities = 32/102 (31%), Positives = 45/102 (44%), Gaps = 0/102 (0%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+  ++ +   +      E  + I K             ++ A  YL  M KI + G D
+Sbjct  156  GCLPAYDALAGQFIEASSREARQAILKQGQDGLSGVKETDKKWASQYLKIMGKILDQGED  215
+
+Query  63   FLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVHKVTK  104
+            F   E  R+ +L   K++E KKEEL R LNIL  FR     K
+Sbjct  216  FPASELARISKLIENKMSEGKKEELQRSLNILTAFRKKGAEK  257
+
+
+>sp|P30040|ERP29_HUMAN Endoplasmic reticulum resident protein 
+29 OS=Homo sapiens OX=9606 GN=ERP29 PE=1 SV=4
+Length=261
+
+ Score = 114 bits (285),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 30/103 (29%), Positives = 46/103 (45%), Gaps = 1/103 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+  ++ +   +      E  + + K            Q++ A  YL  M KI + G D
+Sbjct  156  GCLPVYDALAGEFIRASGVEARQALLKQGQDNLSSVKETQKKWAEQYLKIMGKILDQGED  215
+
+Query  63   FLEEETKRLLRLKAG-KVTEAKKEELLRKLNILEVFRVHKVTK  104
+            F   E  R+ RL    K+++ KKEEL + LNIL  F+     K
+Sbjct  216  FPASEMTRIARLIEKNKMSDGKKEELQKSLNILTAFQKKGAEK  258
+
+
+>sp|P81623|ERP29_BOVIN Endoplasmic reticulum resident protein 
+29 OS=Bos taurus OX=9913 GN=ERP29 PE=1 SV=2
+Length=258
+
+ Score = 111 bits (277),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 45/103 (44%), Gaps = 1/103 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+  ++ +   +      E  + + K             ++ A  YL  M KI + G D
+Sbjct  153  GCLPAYDTLAGEFIRASGVEARQSLLKQGQDNLASVKETDKKWAEQYLKIMGKILDQGED  212
+
+Query  63   FLEEETKRLLRLKAG-KVTEAKKEELLRKLNILEVFRVHKVTK  104
+            F   E  R+ +L    K+++ KKEEL + LNIL  F+     K
+Sbjct  213  FPASEMTRITKLIEKNKMSDGKKEELQKSLNILTAFQKKGGEK  255
+
+
+>sp|Q942L2|PDI22_ORYSJ Protein disulfide isomerase-like 2-2 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-2 PE=2 SV=1
+Length=371
+
+ Score = 110 bits (275),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 20/97 (21%), Positives = 52/97 (54%), Gaps = 1/97 (1%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+              G I   + + K +    + ++ +++  ++ +  +L+     ++ + Y+   +KI + G
+Sbjct  274  EAGRIASLDALAKEFLGAANDKRKEILSNMEEEVVKLS-GSAAKHGKVYIAIAKKILDKG  332
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+            +D+ ++ET+RL R+    ++ +K +E + K N+L  F
+Sbjct  333  HDYTKKETERLERMLEKSISPSKADEFIIKKNVLSTF  369
+
+
+>sp|P38661|PDIA6_MEDSA Probable protein disulfide-isomerase A6 
+OS=Medicago sativa OX=3879 PE=2 SV=1
+Length=364
+
+ Score = 109 bits (272),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 25/97 (26%), Positives = 51/97 (53%), Gaps = 1/97 (1%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+              G +++ +E++K +    D E+  +  +++ + ++L +    +  + YL   +K  E G
+Sbjct  268  EAGIVEDLDELVKEFVAANDEEKKAVFARIEEEVKKL-EGSASRYGKIYLKVSKKYLEKG  326
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+             D+ + E +RL RL    ++ AK +EL  K NIL  +
+Sbjct  327  SDYAKNEIQRLERLLEKSISPAKADELTLKKNILSTY  363
+
+
+>sp|O22263|PDI21_ARATH Protein disulfide-isomerase like 2-1 OS=Arabidopsis 
+thaliana OX=3702 GN=PDIL2-1 PE=2 SV=1
+Length=361
+
+ Score = 105 bits (262),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 22/97 (23%), Positives = 46/97 (47%), Gaps = 1/97 (1%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            + G ++  + ++K      + E+  ++ +++ +   L      +  + YL   +   E G
+Sbjct  262  KAGIVESLDALVKELVAASEDEKKAVLSRIEEEASTLK-GSTTRYGKLYLKLAKSYIEKG  320
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+             D+  +ET+RL R+    ++  K +EL  K NIL  F
+Sbjct  321  SDYASKETERLGRVLGKSISPVKADELTLKRNILTTF  357
+
+
+>sp|Q75M08|PDI21_ORYSJ Protein disulfide isomerase-like 2-1 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=PDIL2-1 PE=2 SV=2
+Length=366
+
+ Score = 103 bits (256),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 22/97 (23%), Positives = 51/97 (53%), Gaps = 1/97 (1%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+              G ++    ++K +    + ++ + + K++    +LT P   +  + Y+   +KI E G
+Sbjct  269  EAGIVESLAPLVKEFLGAANDKRKEALSKMEEDVAKLTGP-AAKYGKIYVNSAKKIMEKG  327
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVF  97
+             ++ ++E++RL R+    ++ +K +E + K NIL  F
+Sbjct  328  SEYTKKESERLQRMLEKSISPSKADEFVIKKNILSTF  364
+
+
+>sp|Q86IA3|PDI1_DICDI Protein disulfide-isomerase 1 OS=Dictyostelium 
+discoideum OX=44689 GN=pdi1 PE=1 SV=2
+Length=363
+
+ Score = 103 bits (256),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 26/100 (26%), Positives = 50/100 (50%), Gaps = 3/100 (3%)
+
+Query  2    DGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQN-ARAYLIYMRKIHEVG  60
+             G +++ + +   +       + +L++K Q   + L  PE+ +     Y+  M+ I E  
+Sbjct  266  AGRVEQLDTIATEFIAAAAEVRKELVKKAQTVVDSL--PEELRTEGSYYVKVMKTIAEKS  323
+
+Query  61   YDFLEEETKRLLRLKAGKVTEAKKEELLRKLNILEVFRVH  100
+             DF+  E  R+ +L +G ++  K +E  +KLNILE F+  
+Sbjct  324  IDFVTTEIARITKLVSGSMSGKKADEFAKKLNILESFKSK  363
+
+
+>sp|O13811|PDI2_SCHPO Protein disulfide-isomerase C17H9.14c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC17H9.14c PE=3 SV=1
+Length=359
+
+ Score = 97.6 bits (241),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 22/97 (23%), Positives = 44/97 (45%), Gaps = 6/97 (6%)
+
+Query  2    DGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGY  61
+             G I  F+E    + ++ +A +  ++EK++     L   +  +  + Y     KI     
+Sbjct  263  AGRIPTFDEFAAEFLDMSNAAKEVVLEKVKQ----LALEDSSRWTKYYKKVFEKILND-E  317
+
+Query  62   DFLEEETKRLLRLK-AGKVTEAKKEELLRKLNILEVF  97
+            +++ +E KRL +L     +  A  ++   +LNIL  F
+Sbjct  318  NWVHKEAKRLSKLLRQKSIALASADDFKTRLNILNSF  354
+
+
+>sp|Q92249|ERP38_NEUCR Protein disulfide-isomerase erp38 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=erp38 PE=2 SV=2
+Length=369
+
+ Score = 81.4 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 24/97 (25%), Positives = 42/97 (43%), Gaps = 4/97 (4%)
+
+Query  2    DGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGY  61
+             G I   +E++  Y       ++   E+ +   + L +  + + A  YL  + K      
+Sbjct  264  AGTIAALDEIVAKYTGGASLAEVA--EEAKEAVKSLKNSAELKYADYYLRVLDK-LSKSE  320
+
+Query  62   DFLEEETKRLLR-LKAGKVTEAKKEELLRKLNILEVF  97
+             +  +E  RL   LK G +  AK +EL  K+N+L  F
+Sbjct  321  GYATKEFARLEGILKKGGLAPAKVDELTVKVNVLRKF  357
+
+
+>sp|P81628|ERP29_CHICK Endoplasmic reticulum resident protein 
+29 (Fragment) OS=Gallus gallus OX=9031 GN=ERP29 PE=1 SV=2
+Length=228
+
+ Score = 79.5 bits (194),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 20/82 (24%), Positives = 42/82 (51%), Gaps = 1/82 (1%)
+
+Query  3    GCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVGYD  62
+            GC+KE++ +   + ++ D  + + + K   +  +     ++++A  YL  M KI E G +
+Sbjct  147  GCLKEYDVLASKFMSVTDKSERQSLLKKGQQSLEKAKETEKKSAEQYLKIMSKILEQGEE  206
+
+Query  63   FLEEETKRLLRLKAG-KVTEAK  83
+            F   E  R+ +L    K+++ K
+Sbjct  207  FAANEVVRITKLIEKTKMSDGK  228
+
+
+>sp|Q00216|TIGA_ASPNG Protein disulfide-isomerase tigA OS=Aspergillus 
+niger OX=5061 GN=tigA PE=2 SV=1
+Length=359
+
+ Score = 77.2 bits (188),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 19/104 (18%), Positives = 41/104 (39%), Gaps = 12/104 (12%)
+
+Query  1    RDGCIKEFNEVLKNYANIPDAEQLKLIEKLQAKQEQLTDPEQQQNARAYLIYMRKIHEVG  60
+            + G I   +E++    +   A+    ++K   + +        + A+ Y+    K     
+Sbjct  262  KAGTIASLDELIA---STSAADLAAAVKKAATELKD-------KYAQYYVKVADK-LSQN  310
+
+Query  61   YDFLEEETKRLLR-LKAGKVTEAKKEELLRKLNILEVFRVHKVT  103
+             ++  +E  RL + L  G     K ++L+ + NIL  F   +  
+Sbjct  311  AEYAAKELARLEKILAKGGSAPEKVDDLISRSNILRKFVGEEKE  354
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.124    0.283    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0380    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

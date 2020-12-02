@@ -1,0 +1,131 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1mw5a_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P44209|Y1480_HAEIN Uncharacterized protein HI_1480 OS=Haemophi...  308     2e-108
+
+
+>sp|P44209|Y1480_HAEIN Uncharacterized protein HI_1480 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1480 PE=1 SV=1
+Length=156
+
+ Score = 308 bits (789),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 152/154 (99%), Positives = 153/154 (99%), Gaps = 0/154 (0%)
+
+Query  1    ETDLLMKMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL  60
+            ETDLL+KMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL
+Sbjct  3    ETDLLLKMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL  62
+
+Query  61   PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP  120
+            PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP
+Sbjct  63   PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP  122
+
+Query  121  FYVLLPESFAARITLLVQDKALPYVRVSMEYWHA  154
+            FYVLLPESFAARITLLVQDKALPYVRVS EYWHA
+Sbjct  123  FYVLLPESFAARITLLVQDKALPYVRVSFEYWHA  156
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.132    0.382    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+Results from round 2
+
+
+Query= d1mw5a_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P44209|Y1480_HAEIN Uncharacterized protein HI_1480 OS=Haemophi...  284     8e-99
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P44209|Y1480_HAEIN Uncharacterized protein HI_1480 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1480 PE=1 SV=1
+Length=156
+
+ Score = 284 bits (726),  Expect = 8e-99, Method: Composition-based stats.
+ Identities = 152/154 (99%), Positives = 153/154 (99%), Gaps = 0/154 (0%)
+
+Query  1    ETDLLMKMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL  60
+            ETDLL+KMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL
+Sbjct  3    ETDLLLKMVRQPVKLYSVATLFHEFSEVITKLEHSVQKEPTSLLSEENWHKQFLKFAQAL  62
+
+Query  61   PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP  120
+            PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP
+Sbjct  63   PAHGSASWLNLDDALQAVVGNSRSAFLHQLIAKLKSRHLQVLELNKIGSEPLDLSNLPAP  122
+
+Query  121  FYVLLPESFAARITLLVQDKALPYVRVSMEYWHA  154
+            FYVLLPESFAARITLLVQDKALPYVRVS EYWHA
+Sbjct  123  FYVLLPESFAARITLLVQDKALPYVRVSFEYWHA  156
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.141    0.441    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0432    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

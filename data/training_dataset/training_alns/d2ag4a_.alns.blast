@@ -1,0 +1,235 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ag4a_
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P17900|SAP3_HUMAN Ganglioside GM2 activator OS=Homo sapiens OX...  328     1e-115
+sp|Q8HXX6|SAP3_MACFA Ganglioside GM2 activator OS=Macaca fascicul...  309     2e-108
+sp|Q60648|SAP3_MOUSE Ganglioside GM2 activator OS=Mus musculus OX...  262     2e-89 
+
+
+>sp|P17900|SAP3_HUMAN Ganglioside GM2 activator OS=Homo sapiens 
+OX=9606 GN=GM2A PE=1 SV=4
+Length=193
+
+ Score = 328 bits (841),  Expect = 1e-115, Method: Compositional matrix adjust.
+ Identities = 160/164 (98%), Positives = 163/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             +SSFSWDNCDEGKDPAVIRSLTLEPDPI+VPGNVTLSV+GSTSVPLSSPLKVDLVLEKE
+Sbjct  30   QLSSFSWDNCDEGKDPAVIRSLTLEPDPIIVPGNVTLSVMGSTSVPLSSPLKVDLVLEKE  89
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK
+Sbjct  90   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  149
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  164
+            SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI
+Sbjct  150  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  193
+
+
+>sp|Q8HXX6|SAP3_MACFA Ganglioside GM2 activator OS=Macaca fascicularis 
+OX=9541 GN=GM2A PE=2 SV=2
+Length=190
+
+ Score = 309 bits (792),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 150/164 (91%), Positives = 158/164 (96%), Gaps = 0/164 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             + SFSWDNCDEGKDPAVIRSLTLEPDPI++PGNVT+SVVGSTSV LSSPLKV+LVLEKE
+Sbjct  27   KLGSFSWDNCDEGKDPAVIRSLTLEPDPILIPGNVTVSVVGSTSVLLSSPLKVELVLEKE  86
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAGLWIKIPCTDYIGSCTFE FCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK
+Sbjct  87   VAGLWIKIPCTDYIGSCTFEDFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  146
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  164
+            SEFVVP LELPSWLTTGNYRIES+LS+ GKRLGCIKIAASLKG+
+Sbjct  147  SEFVVPHLELPSWLTTGNYRIESILSNRGKRLGCIKIAASLKGV  190
+
+
+>sp|Q60648|SAP3_MOUSE Ganglioside GM2 activator OS=Mus musculus 
+OX=10090 GN=Gm2a PE=1 SV=2
+Length=193
+
+ Score = 262 bits (669),  Expect = 2e-89, Method: Compositional matrix adjust.
+ Identities = 120/163 (74%), Positives = 142/163 (87%), Gaps = 0/163 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             +  FSWDNCDEGKDPAVI+SLT++PDPIVVPG+V +S+ G TSVPL++P KV+L +EKE
+Sbjct  30   QLGGFSWDNCDEGKDPAVIKSLTIQPDPIVVPGDVVVSLEGKTSVPLTAPQKVELTVEKE  89
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAG W+KIPC + +GSC++E+ CD++D  IP GE CPEPL TYGLPCHCPFKEGTYSLP 
+Sbjct  90   VAGFWVKIPCVEQLGSCSYENICDLIDEYIPPGESCPEPLHTYGLPCHCPFKEGTYSLPT  149
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKG  163
+            S F VPDLELPSWL+TGNYRI+S+LSS GKRLGCIKIAASLKG
+Sbjct  150  SNFTVPDLELPSWLSTGNYRIQSILSSGGKRLGCIKIAASLKG  192
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.139    0.443    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7778272040
+Results from round 2
+
+
+Query= d2ag4a_
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8HXX6|SAP3_MACFA Ganglioside GM2 activator OS=Macaca fascicul...  309     4e-108
+sp|P17900|SAP3_HUMAN Ganglioside GM2 activator OS=Homo sapiens OX...  308     7e-108
+sp|Q60648|SAP3_MOUSE Ganglioside GM2 activator OS=Mus musculus OX...  293     6e-102
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q54SW1|Y2179_DICDI Putative phosphatidylglycerol/phosphatidyli...  39.9    0.002
+
+
+>sp|Q8HXX6|SAP3_MACFA Ganglioside GM2 activator OS=Macaca fascicularis 
+OX=9541 GN=GM2A PE=2 SV=2
+Length=190
+
+ Score = 309 bits (791),  Expect = 4e-108, Method: Composition-based stats.
+ Identities = 150/164 (91%), Positives = 158/164 (96%), Gaps = 0/164 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             + SFSWDNCDEGKDPAVIRSLTLEPDPI++PGNVT+SVVGSTSV LSSPLKV+LVLEKE
+Sbjct  27   KLGSFSWDNCDEGKDPAVIRSLTLEPDPILIPGNVTVSVVGSTSVLLSSPLKVELVLEKE  86
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAGLWIKIPCTDYIGSCTFE FCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK
+Sbjct  87   VAGLWIKIPCTDYIGSCTFEDFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  146
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  164
+            SEFVVP LELPSWLTTGNYRIES+LS+ GKRLGCIKIAASLKG+
+Sbjct  147  SEFVVPHLELPSWLTTGNYRIESILSNRGKRLGCIKIAASLKGV  190
+
+
+>sp|P17900|SAP3_HUMAN Ganglioside GM2 activator OS=Homo sapiens 
+OX=9606 GN=GM2A PE=1 SV=4
+Length=193
+
+ Score = 308 bits (790),  Expect = 7e-108, Method: Composition-based stats.
+ Identities = 160/164 (98%), Positives = 163/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             +SSFSWDNCDEGKDPAVIRSLTLEPDPI+VPGNVTLSV+GSTSVPLSSPLKVDLVLEKE
+Sbjct  30   QLSSFSWDNCDEGKDPAVIRSLTLEPDPIIVPGNVTLSVMGSTSVPLSSPLKVDLVLEKE  89
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK
+Sbjct  90   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  149
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  164
+            SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI
+Sbjct  150  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKGI  193
+
+
+>sp|Q60648|SAP3_MOUSE Ganglioside GM2 activator OS=Mus musculus 
+OX=10090 GN=Gm2a PE=1 SV=2
+Length=193
+
+ Score = 293 bits (751),  Expect = 6e-102, Method: Composition-based stats.
+ Identities = 120/163 (74%), Positives = 142/163 (87%), Gaps = 0/163 (0%)
+
+Query  1    HMSSFSWDNCDEGKDPAVIRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKE  60
+             +  FSWDNCDEGKDPAVI+SLT++PDPIVVPG+V +S+ G TSVPL++P KV+L +EKE
+Sbjct  30   QLGGFSWDNCDEGKDPAVIKSLTIQPDPIVVPGDVVVSLEGKTSVPLTAPQKVELTVEKE  89
+
+Query  61   VAGLWIKIPCTDYIGSCTFEHFCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPK  120
+            VAG W+KIPC + +GSC++E+ CD++D  IP GE CPEPL TYGLPCHCPFKEGTYSLP 
+Sbjct  90   VAGFWVKIPCVEQLGSCSYENICDLIDEYIPPGESCPEPLHTYGLPCHCPFKEGTYSLPT  149
+
+Query  121  SEFVVPDLELPSWLTTGNYRIESVLSSSGKRLGCIKIAASLKG  163
+            S F VPDLELPSWL+TGNYRI+S+LSS GKRLGCIKIAASLKG
+Sbjct  150  SNFTVPDLELPSWLSTGNYRIQSILSSGGKRLGCIKIAASLKG  192
+
+
+>sp|Q54SW1|Y2179_DICDI Putative phosphatidylglycerol/phosphatidylinositol 
+transfer protein DDB_G0282179 OS=Dictyostelium discoideum 
+OX=44689 GN=DDB_G0282179 PE=3 SV=2
+Length=145
+
+ Score = 39.9 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 38/159 (24%), Positives = 63/159 (40%), Gaps = 39/159 (25%)
+
+Query  7    WDNCDEGKDPAV-IRSLTLEPDPIVVPGNVTLSVVGSTSVPLSSPLKVDLVLEKEVAGLW  65
+            W+ CD   +P   I  LTL PDP +V   VT+S+ GS +  ++S   +   +   + G W
+Sbjct  23   WNYCDGNINPTFKINKLTLLPDPPLVGKEVTISLEGSLNEQITSGSSI-FNVAFFINGGW  81
+
+Query  66   IKIPCTDYIGSCTFEH-FCDVLDMLIPTGEPCPEPLRTYGLPCHCPFKEGTYSLPKSEFV  124
+             ++P        TF +  C VL                      CP   G ++   S   
+Sbjct  82   RQLP--------TFHNDICKVLS---------------------CPVSAGPFTYSTS---  109
+
+Query  125  VPDLELPSWLTTGNYRIESVLSSSGKR-LGCIKIAASLK  162
+               +++P +   G Y+ +  L+    R + C+     LK
+Sbjct  110  ---IKVPIFTPHGQYKGQLTLTDQSNRNVTCLTFQTYLK  145
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.135    0.438    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0413    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7778272040
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

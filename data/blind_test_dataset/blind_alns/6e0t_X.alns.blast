@@ -1,0 +1,734 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6e0t_X
+
+Length=249
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosacch...  493     2e-174
+sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyc...  163     3e-45 
+sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreoco...  94.7    5e-21 
+
+
+>sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=ofd1 
+PE=1 SV=1
+Length=515
+
+ Score = 493 bits (1269),  Expect = 2e-174, Method: Compositional matrix adjust.
+ Identities = 244/263 (93%), Positives = 245/263 (93%), Gaps = 16/263 (6%)
+
+Query  3    IPMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  62
+            + MKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV
+Sbjct  253  LTMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  312
+
+Query  63   LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  122
+            LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII
+Sbjct  313  LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  372
+
+Query  123  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  182
+            LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT
+Sbjct  373  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  432
+
+Query  183  GIANTDNGAYDIYMIG----------------XDSILLSLPAAWNVFSLVYRDEGVLQFV  226
+            GIANTDNGAYDIYMIG                 DSILLSLPAAWNVFSLVYRDEGVLQFV
+Sbjct  433  GIANTDNGAYDIYMIGDEDPDVDAAVYRGDQQDDSILLSLPAAWNVFSLVYRDEGVLQFV  492
+
+Query  227  KYVSRQAESSRWDIYSQWNPVAE  249
+            KYVSRQAESSRWDIYSQWNPVAE
+Sbjct  493  KYVSRQAESSRWDIYSQWNPVAE  515
+
+
+>sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TPA1 
+PE=1 SV=1
+Length=644
+
+ Score = 163 bits (412),  Expect = 3e-45, Method: Compositional matrix adjust.
+ Identities = 110/303 (36%), Positives = 152/303 (50%), Gaps = 84/303 (28%)
+
+Query  26   LSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAER-  84
+            LS+ +   LS YI+P +L+  GIEKL K+F ++S + +  FLN +  + LLK++I  +  
+Sbjct  330  LSEAEFTYLSQYISPEHLSSKGIEKLQKQFVENSSLQIESFLNDD-KSELLKKVIKQKEL  388
+
+Query  85   -QPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEF-----GPDIILPMDLQRLPAFQ----  134
+             Q  P HS +V  PWKTAIPPHK RYLY+D +E+       DI+  ++   LP FQ    
+Sbjct  389  EQECPYHSKDVKAPWKTAIPPHKARYLYIDGKEYRNFQTEADILEALNNNDLPNFQFTKD  448
+
+Query  135  --RWIQLVSG-------------LPLRSFHQVG---------------------RRFRPG  158
+              + I   SG             + L  FH+                       RRFRPG
+Sbjct  449  AIKIISDASGNSRENNFDAELALIDLAVFHKSTIFKKYLALLTSLCPVSEQILIRRFRPG  508
+
+Query  159  SDFTLATT---ND---------TALLEATLCLSPGTGIANTDNGAYDIYMI---------  197
+             DFTLAT    N+          A+LE TLCL+P  G  + + G Y++YM+         
+Sbjct  509  MDFTLATKCRFNELLKSNPDIIDAVLEGTLCLTPSAGWESGELGGYELYMMDDDEDNKQY  568
+
+Query  198  ---------------GXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWDIYS  242
+                             DS+L++ P AWN F+LV RDE VL+FVKYVS  A+SSRWD+  
+Sbjct  569  LKEDVEDASVYRADDSGDSVLINDPPAWNTFNLVLRDESVLEFVKYVSWSAKSSRWDVKM  628
+
+Query  243  QWN  245
+            +W+
+Sbjct  629  KWD  631
+
+
+>sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreococcus 
+tauri OX=70448 GN=Ogd PE=1 SV=1
+Length=514
+
+ Score = 94.7 bits (234),  Expect = 5e-21, Method: Compositional matrix adjust.
+ Identities = 73/246 (30%), Positives = 113/246 (46%), Gaps = 35/246 (14%)
+
+Query  34   LSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAERQPTPMHSSE  93
+            L+ +INP YL  + ++++ + F  D  + L  FL    A  + KR ++ E      H   
+Sbjct  269  LTKWINPEYLRSESVKRVRQVFEADGSVQLFNFLLPHIAEPI-KRKLNREDCRNSRHRCM  327
+
+Query  94   VSF----PWKTAIPPHKHRYL-------YLDHEEFGPDIILP---MDLQRLPAFQRWIQL  139
+                    W    PPH  RYL        L ++      +L     DL    +FQ W++ 
+Sbjct  328  YDHGYGDSWVVQGPPHVQRYLSYQPLECTLANKRSNSGELLKKLMCDLFESSSFQNWVRA  387
+
+Query  140  VSGLPLRSFHQVGRRFRPGSDFTLA---TTNDTALLEATLCLSPGTGIA---NTDNGAYD  193
+            V+G      H   RRFRPG D+TLA   T   ++ ++ TLCL+ G   A   + D G + 
+Sbjct  388  VTGSVCDLAHSEVRRFRPGFDYTLAHAGTKRCSSEIDVTLCLTSGPNPAEWLSGDLGGFK  447
+
+Query  194  IYM--------------IGXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWD  239
+             ++              IG +  + S+  ++N  SLV  + G+  FVKYVS  A+SSRWD
+Sbjct  448  CFIPIGSKSDRADVYEEIGEEQNMRSVTPSFNCLSLVKVNTGIGDFVKYVSTSAKSSRWD  507
+
+Query  240  IYSQWN  245
+            I  +++
+Sbjct  508  IVCRYS  513
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.138    0.424    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18497981224
+Results from round 2
+
+
+Query= 6e0t_X
+
+Length=249
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosacch...  429     2e-149
+sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreoco...  302     1e-99 
+sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyc...  284     4e-91 
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9I7H9|OGFD1_DROME Prolyl 3-hydroxylase sudestada1 OS=Drosophi...  59.7    4e-09
+sp|Q6DE73|OGFD1_XENLA Prolyl 3-hydroxylase OGFOD1 OS=Xenopus laev...  58.6    1e-08
+sp|Q3U0K8|OGFD1_MOUSE Prolyl 3-hydroxylase OGFOD1 OS=Mus musculus...  55.9    1e-07
+sp|Q3MI03|OGFD1_BOVIN Prolyl 3-hydroxylase OGFOD1 OS=Bos taurus O...  53.9    4e-07
+sp|Q8N543|OGFD1_HUMAN Prolyl 3-hydroxylase OGFOD1 OS=Homo sapiens...  50.1    8e-06
+sp|Q5R4R3|OGFD1_PONAB Prolyl 3-hydroxylase OGFOD1 OS=Pongo abelii...  49.7    1e-05
+
+
+>sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=ofd1 
+PE=1 SV=1
+Length=515
+
+ Score = 429 bits (1104),  Expect = 2e-149, Method: Composition-based stats.
+ Identities = 244/263 (93%), Positives = 245/263 (93%), Gaps = 16/263 (6%)
+
+Query  3    IPMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  62
+            + MKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV
+Sbjct  253  LTMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  312
+
+Query  63   LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  122
+            LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII
+Sbjct  313  LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  372
+
+Query  123  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  182
+            LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT
+Sbjct  373  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  432
+
+Query  183  GIANTDNGAYDIYMIG----------------XDSILLSLPAAWNVFSLVYRDEGVLQFV  226
+            GIANTDNGAYDIYMIG                 DSILLSLPAAWNVFSLVYRDEGVLQFV
+Sbjct  433  GIANTDNGAYDIYMIGDEDPDVDAAVYRGDQQDDSILLSLPAAWNVFSLVYRDEGVLQFV  492
+
+Query  227  KYVSRQAESSRWDIYSQWNPVAE  249
+            KYVSRQAESSRWDIYSQWNPVAE
+Sbjct  493  KYVSRQAESSRWDIYSQWNPVAE  515
+
+
+>sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreococcus 
+tauri OX=70448 GN=Ogd PE=1 SV=1
+Length=514
+
+ Score = 302 bits (774),  Expect = 1e-99, Method: Composition-based stats.
+ Identities = 73/246 (30%), Positives = 113/246 (46%), Gaps = 35/246 (14%)
+
+Query  34   LSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAERQPTPMHSSE  93
+            L+ +INP YL  + ++++ + F  D  + L  FL    A  + KR ++ E      H   
+Sbjct  269  LTKWINPEYLRSESVKRVRQVFEADGSVQLFNFLLPHIAEPI-KRKLNREDCRNSRHRCM  327
+
+Query  94   VSF----PWKTAIPPHKHRYL-------YLDHEEFGPDIILP---MDLQRLPAFQRWIQL  139
+                    W    PPH  RYL        L ++      +L     DL    +FQ W++ 
+Sbjct  328  YDHGYGDSWVVQGPPHVQRYLSYQPLECTLANKRSNSGELLKKLMCDLFESSSFQNWVRA  387
+
+Query  140  VSGLPLRSFHQVGRRFRPGSDFTLA---TTNDTALLEATLCLSPGTGIA---NTDNGAYD  193
+            V+G      H   RRFRPG D+TLA   T   ++ ++ TLCL+ G   A   + D G + 
+Sbjct  388  VTGSVCDLAHSEVRRFRPGFDYTLAHAGTKRCSSEIDVTLCLTSGPNPAEWLSGDLGGFK  447
+
+Query  194  IYM--------------IGXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWD  239
+             ++              IG +  + S+  ++N  SLV  + G+  FVKYVS  A+SSRWD
+Sbjct  448  CFIPIGSKSDRADVYEEIGEEQNMRSVTPSFNCLSLVKVNTGIGDFVKYVSTSAKSSRWD  507
+
+Query  240  IYSQWN  245
+            I  +++
+Sbjct  508  IVCRYS  513
+
+
+>sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TPA1 
+PE=1 SV=1
+Length=644
+
+ Score = 284 bits (727),  Expect = 4e-91, Method: Composition-based stats.
+ Identities = 110/303 (36%), Positives = 152/303 (50%), Gaps = 84/303 (28%)
+
+Query  26   LSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAER-  84
+            LS+ +   LS YI+P +L+  GIEKL K+F ++S + +  FLN +  + LLK++I  +  
+Sbjct  330  LSEAEFTYLSQYISPEHLSSKGIEKLQKQFVENSSLQIESFLNDD-KSELLKKVIKQKEL  388
+
+Query  85   -QPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEF-----GPDIILPMDLQRLPAFQ----  134
+             Q  P HS +V  PWKTAIPPHK RYLY+D +E+       DI+  ++   LP FQ    
+Sbjct  389  EQECPYHSKDVKAPWKTAIPPHKARYLYIDGKEYRNFQTEADILEALNNNDLPNFQFTKD  448
+
+Query  135  --RWIQLVSG-------------LPLRSFHQVG---------------------RRFRPG  158
+              + I   SG             + L  FH+                       RRFRPG
+Sbjct  449  AIKIISDASGNSRENNFDAELALIDLAVFHKSTIFKKYLALLTSLCPVSEQILIRRFRPG  508
+
+Query  159  SDFTLATT---ND---------TALLEATLCLSPGTGIANTDNGAYDIYMI---------  197
+             DFTLAT    N+          A+LE TLCL+P  G  + + G Y++YM+         
+Sbjct  509  MDFTLATKCRFNELLKSNPDIIDAVLEGTLCLTPSAGWESGELGGYELYMMDDDEDNKQY  568
+
+Query  198  ---------------GXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWDIYS  242
+                             DS+L++ P AWN F+LV RDE VL+FVKYVS  A+SSRWD+  
+Sbjct  569  LKEDVEDASVYRADDSGDSVLINDPPAWNTFNLVLRDESVLEFVKYVSWSAKSSRWDVKM  628
+
+Query  243  QWN  245
+            +W+
+Sbjct  629  KWD  631
+
+
+>sp|Q9I7H9|OGFD1_DROME Prolyl 3-hydroxylase sudestada1 OS=Drosophila 
+melanogaster OX=7227 GN=sud1 PE=2 SV=1
+Length=536
+
+ Score = 59.7 bits (143),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 56/248 (23%), Positives = 95/248 (38%), Gaps = 44/248 (18%)
+
+Query  12   LPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEF  71
+             PR +Y   ++P+ L++     L  ++N +YL       + KR  ++S I L EF  +E 
+Sbjct  289  FPRLNY---LQPDGLNRPP---LGLFLNNVYLKGATRRSIQKRIEENSEICLYEFFKREK  342
+
+Query  72   ANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPMDLQRLP  131
+                  +++              +  W+   P + H Y  LD       I+  + L R  
+Sbjct  343  FELARSQLLADSD----------TLKWRRQGPANAHNYEVLDLTTARGTILELLQLFRSH  392
+
+Query  132  AFQRWIQLVSGLPLRSFHQVG-------RRFRPGSDFTL---ATTNDTALLEATLCLSPG  181
+            A    ++  + L L              +R+  G ++T+     T++   L+    L+  
+Sbjct  393  AMFDLLRDFTDLDLAGTDAESPTCSVELQRWSHG-NYTVLGDGLTSEENTLDLVYYLNAA  451
+
+Query  182  TGIANTDNGAYDIYM-----------------IGXDSILLSLPAAWNVFSLVYRDEGVLQ  224
+             G A     A D  M                    DS+LL++    N  ++VYR EG  +
+Sbjct  452  EGAAVITYLAPDAEMPTAKAPTDGRRSDYDDEEEDDSVLLTITPVDNALNIVYRCEGTTK  511
+
+Query  225  FVKYVSRQ  232
+            F KYVSR 
+Sbjct  512  FTKYVSRN  519
+
+
+>sp|Q6DE73|OGFD1_XENLA Prolyl 3-hydroxylase OGFOD1 OS=Xenopus 
+laevis OX=8355 GN=ogfod1 PE=2 SV=1
+Length=511
+
+ Score = 58.6 bits (140),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 59/272 (22%), Positives = 101/272 (37%), Gaps = 59/272 (22%)
+
+Query  13   PRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFA  72
+            PR   +P V+  P    D  IL  +INP YL+ +   ++ + F + S I+L +FL  +  
+Sbjct  247  PRGLDHPPVR-SPHIPHDDQILYEWINPSYLSLESQAQIQEEFEERSEILLKDFLKADKF  305
+
+Query  73   NTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPMDLQRLPA  132
+              +   +   E Q   +             PP+K  Y    H +F   I   M+L R  A
+Sbjct  306  QAICAAL---ETQSITLEKC---------GPPNKRCY-DRAHGDFPGVIGSCMELLRSEA  352
+
+Query  133  FQRWIQLVSGLPLRSFHQVGRRFR----PGSDFTLATTNDTALLEAT-------------  175
+            F  ++   +GL L               P    T++    ++  +               
+Sbjct  353  FFLFLSNFTGLKLHFLASNNEESDEGEGPSEPNTVSQQGASSEDDKVPSCSGELRHWQHS  412
+
+Query  176  ------------------LCLSPGTGIANTDNGAYDIYMIG-XDSILLSLPAAWNVFSLV  216
+                              L L  G      + G +  Y+    D  LL++    N  +LV
+Sbjct  413  YYTMIHDLDPERHEFALDLLLFCGCDDWEAEYGGFTSYIAKEEDEELLTVYPENNCLALV  472
+
+Query  217  YRDEGVLQFVKYVS-----RQAESSR----WD  239
+            YRD+  ++FVK+++     R A++++    WD
+Sbjct  473  YRDKETMRFVKHINHKSQQRDAKNTKHKGFWD  504
+
+
+>sp|Q3U0K8|OGFD1_MOUSE Prolyl 3-hydroxylase OGFOD1 OS=Mus musculus 
+OX=10090 GN=Ogfod1 PE=1 SV=1
+Length=545
+
+ Score = 55.9 bits (133),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 37/137 (27%), Positives = 57/137 (42%), Gaps = 14/137 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL  +INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPTYFEPPIPRNPHIPQDHEILYEWINPAYLEMDYQMQIQEEFEERSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + + +                  WK+  PP+K R+     E   PD++     L 
+Sbjct  302  EKFAEVCEALEKG------------DVEWKSHGPPNK-RFYEKAEENNLPDVLKECMGLF  348
+
+Query  129  RLPAFQRWIQLVSGLPL  145
+            R  A    +  ++GL L
+Sbjct  349  RSEALFLLLSNLTGLKL  365
+
+
+ Score = 43.2 bits (100),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 28/89 (31%), Positives = 41/89 (46%), Gaps = 3/89 (3%)
+
+Query  151  VGRRFRPGSDFTLATTNDTALLEATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAA  209
+              RR++ G  +TL   N        L L  G      + G +  Y+  G D  LL +   
+Sbjct  441  ELRRWKTG-HYTLVHDNTKTEFALDLFLYCGCEGWEPEYGGFTSYIAKGEDEELLIVNPE  499
+
+Query  210  WNVFSLVYRDEGVLQFVKYVS-RQAESSR  237
+             N  +LVYRD   L+FVK+++ R  E S+
+Sbjct  500  NNSLALVYRDRETLRFVKHINHRSLEQSK  528
+
+
+>sp|Q3MI03|OGFD1_BOVIN Prolyl 3-hydroxylase OGFOD1 OS=Bos taurus 
+OX=9913 GN=OGFOD1 PE=2 SV=2
+Length=542
+
+ Score = 53.9 bits (128),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 37/137 (27%), Positives = 59/137 (43%), Gaps = 14/137 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P++   P   QD +IL ++INP YL  +   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPTYFEPLIARSPHIPQDHEILYDWINPTYLDMEYQAQIQEEFEESSEILLKEFLQP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + +  ++  R             W +  PP+K R+     E   PDI+     L 
+Sbjct  302  EKFAEVCE-ALERGRVE-----------WSSRGPPNK-RFYEKAEESQLPDILRDCMALF  348
+
+Query  129  RLPAFQRWIQLVSGLPL  145
+            R  A    +   +GL L
+Sbjct  349  RSEAMFLLLSNFTGLKL  365
+
+
+ Score = 41.2 bits (95),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 24/81 (30%), Positives = 37/81 (46%), Gaps = 2/81 (2%)
+
+Query  151  VGRRFRPGSDFTLATTNDTALLEATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAA  209
+              R ++ G  +TL   N        L L  G      + G +  Y+  G D  LL++   
+Sbjct  438  ELRHWKTG-HYTLIHDNSKTEFALDLLLYCGCEGWEPEYGGFTSYIAKGEDEELLTVNPE  496
+
+Query  210  WNVFSLVYRDEGVLQFVKYVS  230
+             N  +LVYRD   L+FVK+++
+Sbjct  497  NNSLALVYRDRETLKFVKHIN  517
+
+
+>sp|Q8N543|OGFD1_HUMAN Prolyl 3-hydroxylase OGFOD1 OS=Homo sapiens 
+OX=9606 GN=OGFOD1 PE=1 SV=1
+Length=542
+
+ Score = 50.1 bits (118),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 37/137 (27%), Positives = 55/137 (40%), Gaps = 14/137 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL ++INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPNYFEPPIPRSPHIPQDHEILYDWINPTYLDMDYQVQIQEEFEESSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    +              H       W +  PP+K R+     E   P+I+     L 
+Sbjct  302  EKFTKV---------CEALEHG---HVEWSSRGPPNK-RFYEKAEESKLPEILKECMKLF  348
+
+Query  129  RLPAFQRWIQLVSGLPL  145
+            R  A    +   +GL L
+Sbjct  349  RSEALFLLLSNFTGLKL  365
+
+
+>sp|Q5R4R3|OGFD1_PONAB Prolyl 3-hydroxylase OGFOD1 OS=Pongo abelii 
+OX=9601 GN=OGFOD1 PE=2 SV=1
+Length=542
+
+ Score = 49.7 bits (117),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 36/137 (26%), Positives = 54/137 (39%), Gaps = 14/137 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL ++INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPNHFEPPIPRSPHIPQDHEILYDWINPTYLDMDYQVQIQEEFEESSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    +              H       W +  PP+K R+     E   P+I+     L 
+Sbjct  302  EKFMKV---------CEALEHG---DVEWSSRGPPNK-RFYEKAEESKLPEILKECMKLF  348
+
+Query  129  RLPAFQRWIQLVSGLPL  145
+               A    +   +GL L
+Sbjct  349  HSEALFLLLSNFTGLKL  365
+
+
+ Score = 43.2 bits (100),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/81 (31%), Positives = 39/81 (48%), Gaps = 2/81 (2%)
+
+Query  151  VGRRFRPGSDFTLATTNDTALLEATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAA  209
+              RR++ G  +TL   +  A     L L  G      + G +  Y+  G D  LL++   
+Sbjct  438  ELRRWKTGH-YTLIHDHSKAEFALDLILYCGCEGWEPEYGGFTSYIAKGEDEELLTVNPE  496
+
+Query  210  WNVFSLVYRDEGVLQFVKYVS  230
+             N  +LVYRD   L+FVK+++
+Sbjct  497  SNSLALVYRDRETLKFVKHIN  517
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.130    0.366    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0399    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18497981224
+Results from round 3
+
+
+Query= 6e0t_X
+
+Length=249
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosacch...  367     4e-125
+sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreoco...  255     2e-81 
+sp|Q6DE73|OGFD1_XENLA Prolyl 3-hydroxylase OGFOD1 OS=Xenopus laev...  248     2e-78 
+sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyc...  230     3e-70 
+sp|Q9I7H9|OGFD1_DROME Prolyl 3-hydroxylase sudestada1 OS=Drosophi...  208     9e-63 
+sp|Q3U0K8|OGFD1_MOUSE Prolyl 3-hydroxylase OGFOD1 OS=Mus musculus...  175     4e-50 
+sp|Q8N543|OGFD1_HUMAN Prolyl 3-hydroxylase OGFOD1 OS=Homo sapiens...  170     3e-48 
+sp|Q3MI03|OGFD1_BOVIN Prolyl 3-hydroxylase OGFOD1 OS=Bos taurus O...  169     7e-48 
+sp|Q5R4R3|OGFD1_PONAB Prolyl 3-hydroxylase OGFOD1 OS=Pongo abelii...  165     2e-46 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q11120|OFD1_SCHPO Prolyl 3,4-dihydroxylase ofd1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=ofd1 
+PE=1 SV=1
+Length=515
+
+ Score = 367 bits (943),  Expect = 4e-125, Method: Composition-based stats.
+ Identities = 244/263 (93%), Positives = 245/263 (93%), Gaps = 16/263 (6%)
+
+Query  3    IPMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  62
+            + MKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV
+Sbjct  253  LTMKQMDLELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIV  312
+
+Query  63   LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  122
+            LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII
+Sbjct  313  LVEFLNQEFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDII  372
+
+Query  123  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  182
+            LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT
+Sbjct  373  LPMDLQRLPAFQRWIQLVSGLPLRSFHQVGRRFRPGSDFTLATTNDTALLEATLCLSPGT  432
+
+Query  183  GIANTDNGAYDIYMIG----------------XDSILLSLPAAWNVFSLVYRDEGVLQFV  226
+            GIANTDNGAYDIYMIG                 DSILLSLPAAWNVFSLVYRDEGVLQFV
+Sbjct  433  GIANTDNGAYDIYMIGDEDPDVDAAVYRGDQQDDSILLSLPAAWNVFSLVYRDEGVLQFV  492
+
+Query  227  KYVSRQAESSRWDIYSQWNPVAE  249
+            KYVSRQAESSRWDIYSQWNPVAE
+Sbjct  493  KYVSRQAESSRWDIYSQWNPVAE  515
+
+
+>sp|Q01F03|OGFD1_OSTTA Prolyl 3,4-dihydroxylase OGFOD1 OS=Ostreococcus 
+tauri OX=70448 GN=Ogd PE=1 SV=1
+Length=514
+
+ Score = 255 bits (652),  Expect = 2e-81, Method: Composition-based stats.
+ Identities = 72/246 (29%), Positives = 111/246 (45%), Gaps = 35/246 (14%)
+
+Query  34   LSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAERQPTPMHSSE  93
+            L+ +INP YL  + ++++ + F  D  + L  FL    A  + KR ++ E      H   
+Sbjct  269  LTKWINPEYLRSESVKRVRQVFEADGSVQLFNFLLPHIAEPI-KRKLNREDCRNSRHRCM  327
+
+Query  94   VSF----PWKTAIPPHKHRYL-------YLDHEEFGPDIILP---MDLQRLPAFQRWIQL  139
+                    W    PPH  RYL        L ++      +L     DL    +FQ W++ 
+Sbjct  328  YDHGYGDSWVVQGPPHVQRYLSYQPLECTLANKRSNSGELLKKLMCDLFESSSFQNWVRA  387
+
+Query  140  VSGLPLRSFHQVGRRFRPGSDFTLAT---TNDTALLEATLCLSPGTGIAN---TDNGAYD  193
+            V+G      H   RRFRPG D+TLA       ++ ++ TLCL+ G   A     D G + 
+Sbjct  388  VTGSVCDLAHSEVRRFRPGFDYTLAHAGTKRCSSEIDVTLCLTSGPNPAEWLSGDLGGFK  447
+
+Query  194  IYM--------------IGXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWD  239
+             ++              IG +  + S+  ++N  SLV  + G+  FVKYVS  A+SSRWD
+Sbjct  448  CFIPIGSKSDRADVYEEIGEEQNMRSVTPSFNCLSLVKVNTGIGDFVKYVSTSAKSSRWD  507
+
+Query  240  IYSQWN  245
+            I  +++
+Sbjct  508  IVCRYS  513
+
+
+>sp|Q6DE73|OGFD1_XENLA Prolyl 3-hydroxylase OGFOD1 OS=Xenopus 
+laevis OX=8355 GN=ogfod1 PE=2 SV=1
+Length=511
+
+ Score = 248 bits (632),  Expect = 2e-78, Method: Composition-based stats.
+ Identities = 59/272 (22%), Positives = 100/272 (37%), Gaps = 59/272 (22%)
+
+Query  13   PRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFA  72
+            PR   +P V   P    D  IL  +INP YL+ +   ++ + F + S I+L +FL  +  
+Sbjct  247  PRGLDHPPV-RSPHIPHDDQILYEWINPSYLSLESQAQIQEEFEERSEILLKDFLKADKF  305
+
+Query  73   NTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPMDLQRLPA  132
+              +   +   E Q   +             PP+K  Y    H +F   I   M+L R  A
+Sbjct  306  QAICAAL---ETQSITLEKC---------GPPNKRCY-DRAHGDFPGVIGSCMELLRSEA  352
+
+Query  133  FQRWIQLVSGLPLRSFHQVGRRFR----PGSDFTLATTNDTALLE---------------  173
+            F  ++   +GL L               P    T++    ++  +               
+Sbjct  353  FFLFLSNFTGLKLHFLASNNEESDEGEGPSEPNTVSQQGASSEDDKVPSCSGELRHWQHS  412
+
+Query  174  ----------------ATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAAWNVFSLV  216
+                              L L  G      + G +  Y+    D  LL++    N  +LV
+Sbjct  413  YYTMIHDLDPERHEFALDLLLFCGCDDWEAEYGGFTSYIAKEEDEELLTVYPENNCLALV  472
+
+Query  217  YRDEGVLQFVKYVS-----RQAESSR----WD  239
+            YRD+  ++FVK+++     R A++++    WD
+Sbjct  473  YRDKETMRFVKHINHKSQQRDAKNTKHKGFWD  504
+
+
+>sp|P40032|TPA1_YEAST Prolyl 3,4-dihydroxylase TPA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TPA1 
+PE=1 SV=1
+Length=644
+
+ Score = 230 bits (586),  Expect = 3e-70, Method: Composition-based stats.
+ Identities = 110/303 (36%), Positives = 152/303 (50%), Gaps = 84/303 (28%)
+
+Query  26   LSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEFANTLLKRIIDAER-  84
+            LS+ +   LS YI+P +L+  GIEKL K+F ++S + +  FLN +  + LLK++I  +  
+Sbjct  330  LSEAEFTYLSQYISPEHLSSKGIEKLQKQFVENSSLQIESFLNDDK-SELLKKVIKQKEL  388
+
+Query  85   -QPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFG-----PDIILPMDLQRLPAFQ----  134
+             Q  P HS +V  PWKTAIPPHK RYLY+D +E+       DI+  ++   LP FQ    
+Sbjct  389  EQECPYHSKDVKAPWKTAIPPHKARYLYIDGKEYRNFQTEADILEALNNNDLPNFQFTKD  448
+
+Query  135  --RWIQLVSG-------------LPLRSFHQVG---------------------RRFRPG  158
+              + I   SG             + L  FH+                       RRFRPG
+Sbjct  449  AIKIISDASGNSRENNFDAELALIDLAVFHKSTIFKKYLALLTSLCPVSEQILIRRFRPG  508
+
+Query  159  SDFTLATT---ND---------TALLEATLCLSPGTGIANTDNGAYDIYMI---------  197
+             DFTLAT    N+          A+LE TLCL+P  G  + + G Y++YM+         
+Sbjct  509  MDFTLATKCRFNELLKSNPDIIDAVLEGTLCLTPSAGWESGELGGYELYMMDDDEDNKQY  568
+
+Query  198  ---------------GXDSILLSLPAAWNVFSLVYRDEGVLQFVKYVSRQAESSRWDIYS  242
+                             DS+L++ P AWN F+LV RDE VL+FVKYVS  A+SSRWD+  
+Sbjct  569  LKEDVEDASVYRADDSGDSVLINDPPAWNTFNLVLRDESVLEFVKYVSWSAKSSRWDVKM  628
+
+Query  243  QWN  245
+            +W+
+Sbjct  629  KWD  631
+
+
+>sp|Q9I7H9|OGFD1_DROME Prolyl 3-hydroxylase sudestada1 OS=Drosophila 
+melanogaster OX=7227 GN=sud1 PE=2 SV=1
+Length=536
+
+ Score = 208 bits (528),  Expect = 9e-63, Method: Composition-based stats.
+ Identities = 56/248 (23%), Positives = 95/248 (38%), Gaps = 44/248 (18%)
+
+Query  12   LPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQEF  71
+             PR +Y   ++P+ L++     L  ++N +YL       + KR  ++S I L EF  +E 
+Sbjct  289  FPRLNY---LQPDGLNRPP---LGLFLNNVYLKGATRRSIQKRIEENSEICLYEFFKREK  342
+
+Query  72   ANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPMDLQRLP  131
+                  +++              +  W+   P + H Y  LD       I+  + L R  
+Sbjct  343  FELARSQLLADSD----------TLKWRRQGPANAHNYEVLDLTTARGTILELLQLFRSH  392
+
+Query  132  AFQRWIQLVSGLPLRSFHQVG-------RRFRPGSDFTL---ATTNDTALLEATLCLSPG  181
+            A    ++  + L L              +R+  G ++T+     T++   L+    L+  
+Sbjct  393  AMFDLLRDFTDLDLAGTDAESPTCSVELQRWSHG-NYTVLGDGLTSEENTLDLVYYLNAA  451
+
+Query  182  TGIANTDNGAYDIYM-----------------IGXDSILLSLPAAWNVFSLVYRDEGVLQ  224
+             G A     A D  M                    DS+LL++    N  ++VYR EG  +
+Sbjct  452  EGAAVITYLAPDAEMPTAKAPTDGRRSDYDDEEEDDSVLLTITPVDNALNIVYRCEGTTK  511
+
+Query  225  FVKYVSRQ  232
+            F KYVSR 
+Sbjct  512  FTKYVSRN  519
+
+
+>sp|Q3U0K8|OGFD1_MOUSE Prolyl 3-hydroxylase OGFOD1 OS=Mus musculus 
+OX=10090 GN=Ogfod1 PE=1 SV=1
+Length=545
+
+ Score = 175 bits (442),  Expect = 4e-50, Method: Composition-based stats.
+ Identities = 37/141 (26%), Positives = 57/141 (40%), Gaps = 14/141 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL  +INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPTYFEPPIPRNPHIPQDHEILYEWINPAYLEMDYQMQIQEEFEERSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + + +                  WK+  PP+K R+     E   PD++     L 
+Sbjct  302  EKFAEVCEALEKG------------DVEWKSHGPPNK-RFYEKAEENNLPDVLKECMGLF  348
+
+Query  129  RLPAFQRWIQLVSGLPLRSFH  149
+            R  A    +  ++GL L    
+Sbjct  349  RSEALFLLLSNLTGLKLHFLA  369
+
+
+ Score = 118 bits (295),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 28/89 (31%), Positives = 41/89 (46%), Gaps = 3/89 (3%)
+
+Query  151  VGRRFRPGSDFTLATTNDTALLEATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAA  209
+              RR++ G  +TL   N        L L  G      + G +  Y+  G D  LL +   
+Sbjct  441  ELRRWKTG-HYTLVHDNTKTEFALDLFLYCGCEGWEPEYGGFTSYIAKGEDEELLIVNPE  499
+
+Query  210  WNVFSLVYRDEGVLQFVKYVS-RQAESSR  237
+             N  +LVYRD   L+FVK+++ R  E S+
+Sbjct  500  NNSLALVYRDRETLRFVKHINHRSLEQSK  528
+
+
+>sp|Q8N543|OGFD1_HUMAN Prolyl 3-hydroxylase OGFOD1 OS=Homo sapiens 
+OX=9606 GN=OGFOD1 PE=1 SV=1
+Length=542
+
+ Score = 170 bits (429),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 36/145 (25%), Positives = 56/145 (39%), Gaps = 14/145 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL ++INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPNYFEPPIPRSPHIPQDHEILYDWINPTYLDMDYQVQIQEEFEESSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + + +                  W +  PP+K R+     E   P+I+     L 
+Sbjct  302  EKFTKVCEALEHG------------HVEWSSRGPPNK-RFYEKAEESKLPEILKECMKLF  348
+
+Query  129  RLPAFQRWIQLVSGLPLRSFHQVGR  153
+            R  A    +   +GL L        
+Sbjct  349  RSEALFLLLSNFTGLKLHFLAPSEE  373
+
+
+>sp|Q3MI03|OGFD1_BOVIN Prolyl 3-hydroxylase OGFOD1 OS=Bos taurus 
+OX=9913 GN=OGFOD1 PE=2 SV=2
+Length=542
+
+ Score = 169 bits (427),  Expect = 7e-48, Method: Composition-based stats.
+ Identities = 36/141 (26%), Positives = 57/141 (40%), Gaps = 14/141 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P++   P   QD +IL ++INP YL  +   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPTYFEPLIARSPHIPQDHEILYDWINPTYLDMEYQAQIQEEFEESSEILLKEFLQP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + + +                  W +  PP+K R+     E   PDI+     L 
+Sbjct  302  EKFAEVCEALERGR------------VEWSSRGPPNK-RFYEKAEESQLPDILRDCMALF  348
+
+Query  129  RLPAFQRWIQLVSGLPLRSFH  149
+            R  A    +   +GL L    
+Sbjct  349  RSEAMFLLLSNFTGLKLHFLA  369
+
+
+ Score = 113 bits (283),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 26/89 (29%), Positives = 40/89 (45%), Gaps = 3/89 (3%)
+
+Query  151  VGRRFRPGSDFTLATTNDTALLEATLCLSPGTGIANTDNGAYDIYMI-GXDSILLSLPAA  209
+              R ++ G  +TL   N        L L  G      + G +  Y+  G D  LL++   
+Sbjct  438  ELRHWKTG-HYTLIHDNSKTEFALDLLLYCGCEGWEPEYGGFTSYIAKGEDEELLTVNPE  496
+
+Query  210  WNVFSLVYRDEGVLQFVKYVS-RQAESSR  237
+             N  +LVYRD   L+FVK+++ R  E  +
+Sbjct  497  NNSLALVYRDRETLKFVKHINHRSLEQKK  525
+
+
+>sp|Q5R4R3|OGFD1_PONAB Prolyl 3-hydroxylase OGFOD1 OS=Pongo abelii 
+OX=9601 GN=OGFOD1 PE=2 SV=1
+Length=542
+
+ Score = 165 bits (417),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 35/145 (24%), Positives = 55/145 (38%), Gaps = 14/145 (10%)
+
+Query  10   LELPRFSYYPVVKPEPLSKQDTDILSNYINPLYLTPDGIEKLSKRFFQDSVIVLVEFLNQ  69
+            L  P   + P +   P   QD +IL ++INP YL  D   ++ + F + S I+L EFL  
+Sbjct  242  LTRPPNHFEPPIPRSPHIPQDHEILYDWINPTYLDMDYQVQIQEEFEESSEILLKEFLKP  301
+
+Query  70   EFANTLLKRIIDAERQPTPMHSSEVSFPWKTAIPPHKHRYLYLDHEEFGPDIILPM-DLQ  128
+            E    + + +                  W +  PP+K R+     E   P+I+     L 
+Sbjct  302  EKFMKVCEALEHG------------DVEWSSRGPPNK-RFYEKAEESKLPEILKECMKLF  348
+
+Query  129  RLPAFQRWIQLVSGLPLRSFHQVGR  153
+               A    +   +GL L        
+Sbjct  349  HSEALFLLLSNFTGLKLHFLAPSEE  373
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.123    0.316    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0376    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18497981224
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,243 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6yif_C
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9NQS7|INCE_HUMAN Inner centromere protein OS=Homo sapiens OX=...  78.2    3e-18
+sp|Q9WU62|INCE_MOUSE Inner centromere protein OS=Mus musculus OX=...  63.9    3e-13
+sp|Q32N93|INCEB_XENLA Inner centromere protein B OS=Xenopus laevi...  39.3    1e-04
+sp|Q0IHP2|INCE_XENTR Inner centromere protein OS=Xenopus tropical...  38.5    2e-04
+sp|O13024|INCEA_XENLA Inner centromere protein A OS=Xenopus laevi...  38.5    3e-04
+sp|P53352|INCE_CHICK Inner centromere protein OS=Gallus gallus OX...  38.1    3e-04
+
+
+>sp|Q9NQS7|INCE_HUMAN Inner centromere protein OS=Homo sapiens 
+OX=9606 GN=INCENP PE=1 SV=3
+Length=918
+
+ Score = 78.2 bits (191),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 37/37 (100%), Positives = 37/37 (100%), Gaps = 0/37 (0%)
+
+Query  1   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER
+Sbjct  7   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  43
+
+
+>sp|Q9WU62|INCE_MOUSE Inner centromere protein OS=Mus musculus 
+OX=10090 GN=Incenp PE=1 SV=2
+Length=880
+
+ Score = 63.9 bits (154),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 27/37 (73%), Positives = 35/37 (95%), Gaps = 0/37 (0%)
+
+Query  1   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           GPI LL+LCDQKL++F+CN+DNKD +WL+EI+EEAER
+Sbjct  7   GPICLLDLCDQKLLDFVCNVDNKDFMWLKEIEEEAER  43
+
+
+>sp|Q32N93|INCEB_XENLA Inner centromere protein B OS=Xenopus laevis 
+OX=8355 GN=incenp-b PE=2 SV=1
+Length=892
+
+ Score = 39.3 bits (90),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 25/34 (74%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D K +VWL EI+EEA +
+Sbjct  9   HLLQVCSRKTEEFVRTLDTKHMVWLLEIEEEARK  42
+
+
+>sp|Q0IHP2|INCE_XENTR Inner centromere protein OS=Xenopus tropicalis 
+OX=8364 GN=incenp PE=2 SV=1
+Length=898
+
+ Score = 38.5 bits (88),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D+K +VWL EI+EEA +
+Sbjct  9   HLLQVCARKTEEFVRTLDSKHMVWLLEIEEEARK  42
+
+
+>sp|O13024|INCEA_XENLA Inner centromere protein A OS=Xenopus laevis 
+OX=8355 GN=incenp-a PE=1 SV=1
+Length=873
+
+ Score = 38.5 bits (88),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D+K +VWL EI+EEA +
+Sbjct  9   HLLQVCARKTEEFVRTLDSKHMVWLLEIEEEARK  42
+
+
+>sp|P53352|INCE_CHICK Inner centromere protein OS=Gallus gallus 
+OX=9031 GN=INCENP PE=1 SV=1
+Length=877
+
+ Score = 38.1 bits (87),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 17/30 (57%), Positives = 23/30 (77%), Gaps = 0/30 (0%)
+
+Query  8   LCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           +C+Q+L E L  +D+ DL+WLEEI EEA R
+Sbjct  13  VCNQRLAELLRQVDDVDLLWLEEIHEEAAR  42
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.140    0.436    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5111734264
+Results from round 2
+
+
+Query= 6yif_C
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9WU62|INCE_MOUSE Inner centromere protein OS=Mus musculus OX=...  66.5    3e-14
+sp|Q9NQS7|INCE_HUMAN Inner centromere protein OS=Homo sapiens OX=...  65.8    6e-14
+sp|Q32N93|INCEB_XENLA Inner centromere protein B OS=Xenopus laevi...  54.2    7e-10
+sp|Q0IHP2|INCE_XENTR Inner centromere protein OS=Xenopus tropical...  52.7    3e-09
+sp|O13024|INCEA_XENLA Inner centromere protein A OS=Xenopus laevi...  52.3    4e-09
+sp|P53352|INCE_CHICK Inner centromere protein OS=Gallus gallus OX...  48.4    1e-07
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9WU62|INCE_MOUSE Inner centromere protein OS=Mus musculus 
+OX=10090 GN=Incenp PE=1 SV=2
+Length=880
+
+ Score = 66.5 bits (161),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/37 (73%), Positives = 35/37 (95%), Gaps = 0/37 (0%)
+
+Query  1   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           GPI LL+LCDQKL++F+CN+DNKD +WL+EI+EEAER
+Sbjct  7   GPICLLDLCDQKLLDFVCNVDNKDFMWLKEIEEEAER  43
+
+
+>sp|Q9NQS7|INCE_HUMAN Inner centromere protein OS=Homo sapiens 
+OX=9606 GN=INCENP PE=1 SV=3
+Length=918
+
+ Score = 65.8 bits (159),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 37/37 (100%), Positives = 37/37 (100%), Gaps = 0/37 (0%)
+
+Query  1   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER
+Sbjct  7   GPIHLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  43
+
+
+>sp|Q32N93|INCEB_XENLA Inner centromere protein B OS=Xenopus laevis 
+OX=8355 GN=incenp-b PE=2 SV=1
+Length=892
+
+ Score = 54.2 bits (129),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 25/34 (74%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D K +VWL EI+EEA +
+Sbjct  9   HLLQVCSRKTEEFVRTLDTKHMVWLLEIEEEARK  42
+
+
+>sp|Q0IHP2|INCE_XENTR Inner centromere protein OS=Xenopus tropicalis 
+OX=8364 GN=incenp PE=2 SV=1
+Length=898
+
+ Score = 52.7 bits (125),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D+K +VWL EI+EEA +
+Sbjct  9   HLLQVCARKTEEFVRTLDSKHMVWLLEIEEEARK  42
+
+
+>sp|O13024|INCEA_XENLA Inner centromere protein A OS=Xenopus laevis 
+OX=8355 GN=incenp-a PE=1 SV=1
+Length=873
+
+ Score = 52.3 bits (124),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  4   HLLELCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           HLL++C +K  EF+  +D+K +VWL EI+EEA +
+Sbjct  9   HLLQVCARKTEEFVRTLDSKHMVWLLEIEEEARK  42
+
+
+>sp|P53352|INCE_CHICK Inner centromere protein OS=Gallus gallus 
+OX=9031 GN=INCENP PE=1 SV=1
+Length=877
+
+ Score = 48.4 bits (114),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 17/30 (57%), Positives = 23/30 (77%), Gaps = 0/30 (0%)
+
+Query  8   LCDQKLMEFLCNMDNKDLVWLEEIQEEAER  37
+           +C+Q+L E L  +D+ DL+WLEEI EEA R
+Sbjct  13  VCNQRLAELLRQVDDVDLLWLEEIHEEAAR  42
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.144    0.453    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0440    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5111734264
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

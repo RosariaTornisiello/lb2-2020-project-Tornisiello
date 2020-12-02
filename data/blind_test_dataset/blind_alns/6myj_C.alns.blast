@@ -1,0 +1,257 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6myj_C
+
+Length=135
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P83467|OLYA6_PLEOS Ostreolysin A6 OS=Pleurotus ostreatus OX=53...  270     3e-94
+sp|O42717|AAPR1_AGRAE Aegerolysin Aa-Pri1 OS=Agrocybe aegerita OX...  207     3e-69
+sp|Q00050|ASPH_ASPFU Asp-hemolysin OS=Neosartorya fumigata (strai...  105     7e-29
+sp|Q0CRX8|TERL_ASPTN Terrelysin OS=Aspergillus terreus (strain NI...  45.1    2e-05
+
+
+>sp|P83467|OLYA6_PLEOS Ostreolysin A6 OS=Pleurotus ostreatus OX=5322 
+GN=OlyA6 PE=1 SV=2
+Length=138
+
+ Score = 270 bits (691),  Expect = 3e-94, Method: Compositional matrix adjust.
+ Identities = 133/135 (99%), Positives = 133/135 (99%), Gaps = 0/135 (0%)
+
+Query  1    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINASG  60
+            AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINA G
+Sbjct  4    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINACG  63
+
+Query  61   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  120
+            RSDAAEGTTGTFDLVDPADGDKQVRHFYWD PWGSKTNTWTVSGSNTKWMIEYSGQNLDS
+Sbjct  64   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDCPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  123
+
+Query  121  GALGTITVDTLKKGN  135
+            GALGTITVDTLKKGN
+Sbjct  124  GALGTITVDTLKKGN  138
+
+
+>sp|O42717|AAPR1_AGRAE Aegerolysin Aa-Pri1 OS=Agrocybe aegerita 
+OX=5400 GN=AA-PRI1 PE=2 SV=1
+Length=145
+
+ Score = 207 bits (528),  Expect = 3e-69, Method: Compositional matrix adjust.
+ Identities = 97/135 (72%), Positives = 113/135 (84%), Gaps = 0/135 (0%)
+
+Query  1    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINASG  60
+            AQWVIII+HNVGS   KI NL  SWGKL+ADG+KD EV  S+Y GK V PDEK+QIN+ G
+Sbjct  11   AQWVIIILHNVGSSPFKIANLGLSWGKLYADGNKDKEVYPSDYNGKTVGPDEKIQINSCG  70
+
+Query  61   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  120
+            R +A+ GT G+FD+VDP DG+K +RHFYW+ PWGSK NTWT SGSNTKWM+E+SGQNLDS
+Sbjct  71   RENASSGTEGSFDIVDPNDGNKTIRHFYWECPWGSKRNTWTPSGSNTKWMVEWSGQNLDS  130
+
+Query  121  GALGTITVDTLKKGN  135
+            GALGTITVD L+KGN
+Sbjct  131  GALGTITVDVLRKGN  145
+
+
+>sp|Q00050|ASPH_ASPFU Asp-hemolysin OS=Neosartorya fumigata (strain 
+ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 
+GN=AFUA_3G00590 PE=2 SV=2
+Length=139
+
+ Score = 105 bits (262),  Expect = 7e-29, Method: Compositional matrix adjust.
+ Identities = 55/134 (41%), Positives = 84/134 (63%), Gaps = 4/134 (3%)
+
+Query  1    AQWVII-IIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINAS  59
+            AQWV + +I+++ S+ + I+N   SWGK + DGDKDAE+++ + + K   P   + +N+ 
+Sbjct  8    AQWVTVHLINSMSSETLSIQNASLSWGKWYKDGDKDAEITSEDVQQKTAPPGGSVNVNSC  67
+
+Query  60   GRSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLD  119
+            GRSDA+ GTTG FDL    DG+ ++   +WD PWGSKTN + V   N  + +E    N  
+Sbjct  68   GRSDASSGTTGGFDLY---DGNTKIGRVHWDCPWGSKTNDFDVGERNKNYWVEIGTWNKY  124
+
+Query  120  SGALGTITVDTLKK  133
+             GA+GT+ V+  +K
+Sbjct  125  GGAIGTVDVEVGRK  138
+
+
+>sp|Q0CRX8|TERL_ASPTN Terrelysin OS=Aspergillus terreus (strain 
+NIH 2624 / FGSC A1156) OX=341663 GN=ATEG_03556 PE=2 SV=2
+Length=141
+
+ Score = 45.1 bits (105),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 33/130 (25%), Positives = 64/130 (49%), Gaps = 8/130 (6%)
+
+Query  1    AQWVIIIIHNVGSQ-DVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINAS  59
+            +QWV I I +  +Q ++ I+      G+ H+  D+   ++  + +  I+  +   ++ A 
+Sbjct  4    SQWVSIHIRDRLAQGNITIRESFLYEGQFHSPEDEKKALTEDDIDQLIIPSEGIGEVCAR  63
+
+Query  60   GRSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLD  119
+            GR     G+ G  DL D   G+K++   +WD+     +N + V   +  + IE SG +  
+Sbjct  64   GRR----GSEGWMDLFD---GEKKICELHWDNRTKRPSNEFEVIDGDKDYKIECSGWSPQ  116
+
+Query  120  SGALGTITVD  129
+            +G LG + +D
+Sbjct  117  AGPLGHVFID  126
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.129    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4961544656
+Results from round 2
+
+
+Query= 6myj_C
+
+Length=135
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P83467|OLYA6_PLEOS Ostreolysin A6 OS=Pleurotus ostreatus OX=53...  207     5e-69
+sp|O42717|AAPR1_AGRAE Aegerolysin Aa-Pri1 OS=Agrocybe aegerita OX...  199     1e-65
+sp|Q00050|ASPH_ASPFU Asp-hemolysin OS=Neosartorya fumigata (strai...  171     1e-54
+sp|Q0CRX8|TERL_ASPTN Terrelysin OS=Aspergillus terreus (strain NI...  164     3e-52
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P83467|OLYA6_PLEOS Ostreolysin A6 OS=Pleurotus ostreatus OX=5322 
+GN=OlyA6 PE=1 SV=2
+Length=138
+
+ Score = 207 bits (526),  Expect = 5e-69, Method: Composition-based stats.
+ Identities = 133/135 (99%), Positives = 133/135 (99%), Gaps = 0/135 (0%)
+
+Query  1    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINASG  60
+            AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINA G
+Sbjct  4    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINACG  63
+
+Query  61   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  120
+            RSDAAEGTTGTFDLVDPADGDKQVRHFYWD PWGSKTNTWTVSGSNTKWMIEYSGQNLDS
+Sbjct  64   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDCPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  123
+
+Query  121  GALGTITVDTLKKGN  135
+            GALGTITVDTLKKGN
+Sbjct  124  GALGTITVDTLKKGN  138
+
+
+>sp|O42717|AAPR1_AGRAE Aegerolysin Aa-Pri1 OS=Agrocybe aegerita 
+OX=5400 GN=AA-PRI1 PE=2 SV=1
+Length=145
+
+ Score = 199 bits (505),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 97/135 (72%), Positives = 113/135 (84%), Gaps = 0/135 (0%)
+
+Query  1    AQWVIIIIHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINASG  60
+            AQWVIII+HNVGS   KI NL  SWGKL+ADG+KD EV  S+Y GK V PDEK+QIN+ G
+Sbjct  11   AQWVIIILHNVGSSPFKIANLGLSWGKLYADGNKDKEVYPSDYNGKTVGPDEKIQINSCG  70
+
+Query  61   RSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLDS  120
+            R +A+ GT G+FD+VDP DG+K +RHFYW+ PWGSK NTWT SGSNTKWM+E+SGQNLDS
+Sbjct  71   RENASSGTEGSFDIVDPNDGNKTIRHFYWECPWGSKRNTWTPSGSNTKWMVEWSGQNLDS  130
+
+Query  121  GALGTITVDTLKKGN  135
+            GALGTITVD L+KGN
+Sbjct  131  GALGTITVDVLRKGN  145
+
+
+>sp|Q00050|ASPH_ASPFU Asp-hemolysin OS=Neosartorya fumigata (strain 
+ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 
+GN=AFUA_3G00590 PE=2 SV=2
+Length=139
+
+ Score = 171 bits (432),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 55/134 (41%), Positives = 83/134 (62%), Gaps = 4/134 (3%)
+
+Query  1    AQWVIII-IHNVGSQDVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINAS  59
+            AQWV +  I+++ S+ + I+N   SWGK + DGDKDAE+++ + + K   P   + +N+ 
+Sbjct  8    AQWVTVHLINSMSSETLSIQNASLSWGKWYKDGDKDAEITSEDVQQKTAPPGGSVNVNSC  67
+
+Query  60   GRSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLD  119
+            GRSDA+ GTTG FDL D   G+ ++   +WD PWGSKTN + V   N  + +E    N  
+Sbjct  68   GRSDASSGTTGGFDLYD---GNTKIGRVHWDCPWGSKTNDFDVGERNKNYWVEIGTWNKY  124
+
+Query  120  SGALGTITVDTLKK  133
+             GA+GT+ V+  +K
+Sbjct  125  GGAIGTVDVEVGRK  138
+
+
+>sp|Q0CRX8|TERL_ASPTN Terrelysin OS=Aspergillus terreus (strain 
+NIH 2624 / FGSC A1156) OX=341663 GN=ATEG_03556 PE=2 SV=2
+Length=141
+
+ Score = 164 bits (416),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 33/131 (25%), Positives = 64/131 (49%), Gaps = 8/131 (6%)
+
+Query  1    AQWVIIIIHNVGSQ-DVKIKNLKASWGKLHADGDKDAEVSASNYEGKIVKPDEKLQINAS  59
+            +QWV I I +  +Q ++ I+      G+ H+  D+   ++  + +  I+  +   ++ A 
+Sbjct  4    SQWVSIHIRDRLAQGNITIRESFLYEGQFHSPEDEKKALTEDDIDQLIIPSEGIGEVCAR  63
+
+Query  60   GRSDAAEGTTGTFDLVDPADGDKQVRHFYWDSPWGSKTNTWTVSGSNTKWMIEYSGQNLD  119
+            GR     G+ G  DL D   G+K++   +WD+     +N + V   +  + IE SG +  
+Sbjct  64   GRR----GSEGWMDLFD---GEKKICELHWDNRTKRPSNEFEVIDGDKDYKIECSGWSPQ  116
+
+Query  120  SGALGTITVDT  130
+            +G LG + +D 
+Sbjct  117  AGPLGHVFIDI  127
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.128    0.348    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4961544656
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

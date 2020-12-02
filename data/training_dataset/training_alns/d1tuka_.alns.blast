@@ -1,0 +1,419 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1tuka_
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P82900|NLT2G_WHEAT Non-specific lipid-transfer protein 2G OS=T...  140     3e-44
+sp|P82901|NLT2P_WHEAT Non-specific lipid-transfer protein 2P OS=T...  131     3e-41
+sp|P20145|NLTP2_HORVU Probable non-specific lipid-transfer protei...  112     3e-33
+sp|A2XBN5|NLTPX_ORYSI Non-specific lipid-transfer protein 2 OS=Or...  94.4    4e-26
+sp|Q10ST8|NLTPX_ORYSJ Non-specific lipid-transfer protein 2 OS=Or...  90.5    1e-24
+sp|Q43681|NLTP_VIGUN Probable non-specific lipid-transfer protein...  70.9    8e-17
+sp|P83506|NLTP2_MAIZE Probable non-specific lipid-transfer protei...  65.9    3e-15
+sp|P86809|NLTP2_APIGA Non-specific lipid-transfer protein 2 OS=Ap...  63.2    3e-14
+sp|P82353|NLTP2_PRUAR Non-specific lipid-transfer protein 2 OS=Pr...  61.6    2e-13
+sp|P39085|NLTP2_WHEAT Non-specific lipid-transfer protein 2 (Frag...  49.3    5e-09
+
+
+>sp|P82900|NLT2G_WHEAT Non-specific lipid-transfer protein 2G 
+OS=Triticum aestivum OX=4565 PE=1 SV=2
+Length=96
+
+ Score = 140 bits (352),  Expect = 3e-44, Method: Compositional matrix adjust.
+ Identities = 67/67 (100%), Positives = 67/67 (100%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC
+Sbjct  30  ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  89
+
+Query  61  GLAVPHC  67
+           GLAVPHC
+Sbjct  90  GLAVPHC  96
+
+
+>sp|P82901|NLT2P_WHEAT Non-specific lipid-transfer protein 2P 
+OS=Triticum aestivum OX=4565 PE=1 SV=1
+Length=67
+
+ Score = 131 bits (330),  Expect = 3e-41, Method: Compositional matrix adjust.
+ Identities = 65/67 (97%), Positives = 65/67 (97%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           ACQASQLAVCASAILSGAKPSGECCGNLRAQQ CFCQYAKDPTYGQYIRSPHARDTL SC
+Sbjct  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQPCFCQYAKDPTYGQYIRSPHARDTLQSC  60
+
+Query  61  GLAVPHC  67
+           GLAVPHC
+Sbjct  61  GLAVPHC  67
+
+
+>sp|P20145|NLTP2_HORVU Probable non-specific lipid-transfer protein 
+OS=Hordeum vulgare OX=4513 GN=LTP2 PE=2 SV=1
+Length=102
+
+ Score = 112 bits (280),  Expect = 3e-33, Method: Compositional matrix adjust.
+ Identities = 51/66 (77%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2    CQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCG  61
+            C+ +QLAVCASAIL G KPSGECCGNLRAQQGC CQY KDP YG Y+ SPHARDTL  CG
+Sbjct  37   CEPAQLAVCASAILGGTKPSGECCGNLRAQQGCLCQYVKDPNYGHYVSSPHARDTLNLCG  96
+
+Query  62   LAVPHC  67
+            + VPHC
+Sbjct  97   IPVPHC  102
+
+
+>sp|A2XBN5|NLTPX_ORYSI Non-specific lipid-transfer protein 2 OS=Oryza 
+sativa subsp. indica OX=39946 GN=LTP-2 PE=3 SV=2
+Length=96
+
+ Score = 94.4 bits (233),  Expect = 4e-26, Method: Compositional matrix adjust.
+ Identities = 41/67 (61%), Positives = 53/67 (79%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           +C A QL VCA AI  GA+P+  CC +LRAQQGCFCQ+AKDP YG+Y+ SP+AR  ++SC
+Sbjct  29  SCNAGQLTVCAGAIAGGARPTAACCSSLRAQQGCFCQFAKDPRYGRYVNSPNARKAVSSC  88
+
+Query  61  GLAVPHC  67
+           G+A+P C
+Sbjct  89  GIALPTC  95
+
+
+>sp|Q10ST8|NLTPX_ORYSJ Non-specific lipid-transfer protein 2 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=LTP-2 PE=1 SV=1
+Length=96
+
+ Score = 90.5 bits (223),  Expect = 1e-24, Method: Compositional matrix adjust.
+ Identities = 39/65 (60%), Positives = 50/65 (77%), Gaps = 0/65 (0%)
+
+Query  3   QASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCGL  62
+            A QL VC  AI  GA+P+  CC +LRAQQGCFCQ+AKDP YG+Y+ SP+AR  ++SCG+
+Sbjct  31  NAGQLTVCTGAIAGGARPTAACCSSLRAQQGCFCQFAKDPRYGRYVNSPNARKAVSSCGI  90
+
+Query  63  AVPHC  67
+           A+P C
+Sbjct  91  ALPTC  95
+
+
+>sp|Q43681|NLTP_VIGUN Probable non-specific lipid-transfer protein 
+AKCS9 OS=Vigna unguiculata OX=3917 PE=2 SV=1
+Length=99
+
+ Score = 70.9 bits (172),  Expect = 8e-17, Method: Compositional matrix adjust.
+ Identities = 28/67 (42%), Positives = 42/67 (63%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+            C  ++L+ C  AI  G+KPS  CC  L+ Q+ C C Y K+P+  QY+ SP A+  L++C
+Sbjct  33  TCNPTELSSCVPAITGGSKPSSTCCSKLKVQEPCLCNYIKNPSLKQYVNSPGAKKVLSNC  92
+
+Query  61  GLAVPHC  67
+           G+  P+C
+Sbjct  93  GVTYPNC  99
+
+
+>sp|P83506|NLTP2_MAIZE Probable non-specific lipid-transfer protein 
+2 OS=Zea mays OX=4577 PE=1 SV=1
+Length=70
+
+ Score = 65.9 bits (159),  Expect = 3e-15, Method: Compositional matrix adjust.
+ Identities = 32/66 (48%), Positives = 36/66 (55%), Gaps = 0/66 (0%)
+
+Query  2   CQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCG  61
+           C  +QL  CA   L G      CC  LRAQQGC C YA+ P YG YIRSP+A      C 
+Sbjct  4   CNPAQLTPCAGPALFGGAVPPACCAQLRAQQGCLCGYARSPNYGSYIRSPNAARLFAICN  63
+
+Query  62  LAVPHC  67
+           L +P C
+Sbjct  64  LPMPRC  69
+
+
+>sp|P86809|NLTP2_APIGA Non-specific lipid-transfer protein 2 OS=Apium 
+graveolens var. rapaceum OX=278110 PE=1 SV=1
+Length=67
+
+ Score = 63.2 bits (152),  Expect = 3e-14, Method: Compositional matrix adjust.
+ Identities = 29/63 (46%), Positives = 37/63 (59%), Gaps = 0/63 (0%)
+
+Query  2   CQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCG  61
+           C A QL+ C +AI     PS  CC  L+ Q+ C C Y KDP    Y+ SP AR T +SCG
+Sbjct  3   CSAVQLSPCLAAITKNTPPSAACCNKLKEQKPCLCGYLKDPNLKNYVNSPGARKTASSCG  62
+
+Query  62  LAV  64
+           +A+
+Sbjct  63  VAL  65
+
+
+>sp|P82353|NLTP2_PRUAR Non-specific lipid-transfer protein 2 OS=Prunus 
+armeniaca OX=36596 PE=1 SV=1
+Length=68
+
+ Score = 61.6 bits (148),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 29/67 (43%), Positives = 38/67 (57%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+            C   QL+ C   I SGA     CC  LR Q+ C C Y K+P+  QY+ SP+AR   ++C
+Sbjct  2   TCSPVQLSPCLGPINSGAPSPTTCCQKLREQRPCLCGYLKNPSLRQYVNSPNARKLASNC  61
+
+Query  61  GLAVPHC  67
+           G+ VP C
+Sbjct  62  GVPVPQC  68
+
+
+>sp|P39085|NLTP2_WHEAT Non-specific lipid-transfer protein 2 (Fragment) 
+OS=Triticum aestivum OX=4565 PE=1 SV=1
+Length=28
+
+ Score = 49.3 bits (116),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 23/28 (82%), Positives = 25/28 (89%), Gaps = 0/28 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNL  28
+           AC+ +QLAVCASAIL G KPSGECCGNL
+Sbjct  1   ACEVTQLAVCASAILGGTKPSGECCGNL  28
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.133    0.448    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+Results from round 2
+
+
+Query= d1tuka_
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P82900|NLT2G_WHEAT Non-specific lipid-transfer protein 2G OS=T...  97.1    3e-27
+sp|P20145|NLTP2_HORVU Probable non-specific lipid-transfer protei...  94.4    4e-26
+sp|A2XBN5|NLTPX_ORYSI Non-specific lipid-transfer protein 2 OS=Or...  89.0    5e-24
+sp|P82901|NLT2P_WHEAT Non-specific lipid-transfer protein 2P OS=T...  87.5    1e-23
+sp|Q10ST8|NLTPX_ORYSJ Non-specific lipid-transfer protein 2 OS=Or...  87.5    2e-23
+sp|Q43681|NLTP_VIGUN Probable non-specific lipid-transfer protein...  86.3    6e-23
+sp|P82353|NLTP2_PRUAR Non-specific lipid-transfer protein 2 OS=Pr...  80.1    8e-21
+sp|P83506|NLTP2_MAIZE Probable non-specific lipid-transfer protei...  75.5    5e-19
+sp|P86809|NLTP2_APIGA Non-specific lipid-transfer protein 2 OS=Ap...  72.8    6e-18
+sp|P39085|NLTP2_WHEAT Non-specific lipid-transfer protein 2 (Frag...  35.1    0.002
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P82900|NLT2G_WHEAT Non-specific lipid-transfer protein 2G 
+OS=Triticum aestivum OX=4565 PE=1 SV=2
+Length=96
+
+ Score = 97.1 bits (240),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 67/67 (100%), Positives = 67/67 (100%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC
+Sbjct  30  ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  89
+
+Query  61  GLAVPHC  67
+           GLAVPHC
+Sbjct  90  GLAVPHC  96
+
+
+>sp|P20145|NLTP2_HORVU Probable non-specific lipid-transfer protein 
+OS=Hordeum vulgare OX=4513 GN=LTP2 PE=2 SV=1
+Length=102
+
+ Score = 94.4 bits (233),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 51/66 (77%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2    CQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCG  61
+            C+ +QLAVCASAIL G KPSGECCGNLRAQQGC CQY KDP YG Y+ SPHARDTL  CG
+Sbjct  37   CEPAQLAVCASAILGGTKPSGECCGNLRAQQGCLCQYVKDPNYGHYVSSPHARDTLNLCG  96
+
+Query  62   LAVPHC  67
+            + VPHC
+Sbjct  97   IPVPHC  102
+
+
+>sp|A2XBN5|NLTPX_ORYSI Non-specific lipid-transfer protein 2 OS=Oryza 
+sativa subsp. indica OX=39946 GN=LTP-2 PE=3 SV=2
+Length=96
+
+ Score = 89.0 bits (219),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 41/67 (61%), Positives = 53/67 (79%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           +C A QL VCA AI  GA+P+  CC +LRAQQGCFCQ+AKDP YG+Y+ SP+AR  ++SC
+Sbjct  29  SCNAGQLTVCAGAIAGGARPTAACCSSLRAQQGCFCQFAKDPRYGRYVNSPNARKAVSSC  88
+
+Query  61  GLAVPHC  67
+           G+A+P C
+Sbjct  89  GIALPTC  95
+
+
+>sp|P82901|NLT2P_WHEAT Non-specific lipid-transfer protein 2P 
+OS=Triticum aestivum OX=4565 PE=1 SV=1
+Length=67
+
+ Score = 87.5 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 65/67 (97%), Positives = 65/67 (97%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+           ACQASQLAVCASAILSGAKPSGECCGNLRAQQ CFCQYAKDPTYGQYIRSPHARDTL SC
+Sbjct  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQPCFCQYAKDPTYGQYIRSPHARDTLQSC  60
+
+Query  61  GLAVPHC  67
+           GLAVPHC
+Sbjct  61  GLAVPHC  67
+
+
+>sp|Q10ST8|NLTPX_ORYSJ Non-specific lipid-transfer protein 2 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=LTP-2 PE=1 SV=1
+Length=96
+
+ Score = 87.5 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 39/65 (60%), Positives = 50/65 (77%), Gaps = 0/65 (0%)
+
+Query  3   QASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCGL  62
+            A QL VC  AI  GA+P+  CC +LRAQQGCFCQ+AKDP YG+Y+ SP+AR  ++SCG+
+Sbjct  31  NAGQLTVCTGAIAGGARPTAACCSSLRAQQGCFCQFAKDPRYGRYVNSPNARKAVSSCGI  90
+
+Query  63  AVPHC  67
+           A+P C
+Sbjct  91  ALPTC  95
+
+
+>sp|Q43681|NLTP_VIGUN Probable non-specific lipid-transfer protein 
+AKCS9 OS=Vigna unguiculata OX=3917 PE=2 SV=1
+Length=99
+
+ Score = 86.3 bits (212),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 28/67 (42%), Positives = 42/67 (63%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+            C  ++L+ C  AI  G+KPS  CC  L+ Q+ C C Y K+P+  QY+ SP A+  L++C
+Sbjct  33  TCNPTELSSCVPAITGGSKPSSTCCSKLKVQEPCLCNYIKNPSLKQYVNSPGAKKVLSNC  92
+
+Query  61  GLAVPHC  67
+           G+  P+C
+Sbjct  93  GVTYPNC  99
+
+
+>sp|P82353|NLTP2_PRUAR Non-specific lipid-transfer protein 2 OS=Prunus 
+armeniaca OX=36596 PE=1 SV=1
+Length=68
+
+ Score = 80.1 bits (196),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 29/67 (43%), Positives = 38/67 (57%), Gaps = 0/67 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+            C   QL+ C   I SGA     CC  LR Q+ C C Y K+P+  QY+ SP+AR   ++C
+Sbjct  2   TCSPVQLSPCLGPINSGAPSPTTCCQKLREQRPCLCGYLKNPSLRQYVNSPNARKLASNC  61
+
+Query  61  GLAVPHC  67
+           G+ VP C
+Sbjct  62  GVPVPQC  68
+
+
+>sp|P83506|NLTP2_MAIZE Probable non-specific lipid-transfer protein 
+2 OS=Zea mays OX=4577 PE=1 SV=1
+Length=70
+
+ Score = 75.5 bits (184),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 32/66 (48%), Positives = 36/66 (55%), Gaps = 0/66 (0%)
+
+Query  2   CQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSCG  61
+           C  +QL  CA   L G      CC  LRAQQGC C YA+ P YG YIRSP+A      C 
+Sbjct  4   CNPAQLTPCAGPALFGGAVPPACCAQLRAQQGCLCGYARSPNYGSYIRSPNAARLFAICN  63
+
+Query  62  LAVPHC  67
+           L +P C
+Sbjct  64  LPMPRC  69
+
+
+>sp|P86809|NLTP2_APIGA Non-specific lipid-transfer protein 2 OS=Apium 
+graveolens var. rapaceum OX=278110 PE=1 SV=1
+Length=67
+
+ Score = 72.8 bits (177),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 29/64 (45%), Positives = 37/64 (58%), Gaps = 0/64 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNLRAQQGCFCQYAKDPTYGQYIRSPHARDTLTSC  60
+            C A QL+ C +AI     PS  CC  L+ Q+ C C Y KDP    Y+ SP AR T +SC
+Sbjct  2   TCSAVQLSPCLAAITKNTPPSAACCNKLKEQKPCLCGYLKDPNLKNYVNSPGARKTASSC  61
+
+Query  61  GLAV  64
+           G+A+
+Sbjct  62  GVAL  65
+
+
+>sp|P39085|NLTP2_WHEAT Non-specific lipid-transfer protein 2 (Fragment) 
+OS=Triticum aestivum OX=4565 PE=1 SV=1
+Length=28
+
+ Score = 35.1 bits (79),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/28 (82%), Positives = 25/28 (89%), Gaps = 0/28 (0%)
+
+Query  1   ACQASQLAVCASAILSGAKPSGECCGNL  28
+           AC+ +QLAVCASAIL G KPSGECCGNL
+Sbjct  1   ACEVTQLAVCASAILGGTKPSGECCGNL  28
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.132    0.422    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

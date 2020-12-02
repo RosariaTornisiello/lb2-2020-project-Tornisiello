@@ -1,0 +1,591 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3ci3a_
+
+Length=188
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O34899|PDUO_BACSU Corrinoid adenosyltransferase OS=Bacillus su...  176     2e-55
+sp|Q9D273|MMAB_MOUSE Corrinoid adenosyltransferase OS=Mus musculu...  137     2e-39
+sp|Q96EY8|MMAB_HUMAN Corrinoid adenosyltransferase OS=Homo sapien...  133     9e-38
+sp|Q58D49|MMAB_BOVIN Corrinoid adenosyltransferase OS=Bos taurus ...  130     7e-37
+sp|P53523|PDUO_MYCLE Corrinoid adenosyltransferase OS=Mycobacteri...  113     1e-30
+sp|Q1LJ80|ATR_CUPMC Cobalamin adenosyltransferase OS=Cupriavidus ...  106     4e-28
+sp|P45515|PDUO_CITFR Corrinoid adenosyltransferase OS=Citrobacter...  106     5e-28
+sp|P9WP99|PDUO_MYCTU Corrinoid adenosyltransferase OS=Mycobacteri...  105     1e-27
+sp|P9WP98|PDUO_MYCTO Corrinoid adenosyltransferase OS=Mycobacteri...  105     1e-27
+sp|P64804|PDUO_MYCBO Corrinoid adenosyltransferase OS=Mycobacteri...  105     1e-27
+
+
+>sp|O34899|PDUO_BACSU Corrinoid adenosyltransferase OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yvqK PE=1 SV=2
+Length=193
+
+ Score = 176 bits (447),  Expect = 2e-55, Method: Compositional matrix adjust.
+ Identities = 94/190 (49%), Positives = 127/190 (67%), Gaps = 6/190 (3%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHT--QVLSNE  58
+            +K+YTK GDKGQT ++G +   K+  RV +YG +DELNS++G   + ++     + L+ E
+Sbjct  1    MKLYTKTGDKGQTGLVGGRT-DKDSLRVESYGTIDELNSFIGLALAELSGQPGFEDLTAE  59
+
+Query  59   LEEIQQLLFDCGHDLATPADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            L  IQ  LFDCG DLA     ER  +K  +E  + +LE +ID YT   P +KKFILPGG+
+Sbjct  60   LLTIQHELFDCGGDLAIVT--ERKDYKLTEESVS-FLETRIDAYTAEAPELKKFILPGGS  116
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + AS LH+ARTITRRAER++V LM+ E+I++ VL ++NRLSDYFFAAAR  N      D+
+Sbjct  117  KCASLLHIARTITRRAERRVVALMKSEEIHETVLRYLNRLSDYFFAAARVVNARSGIGDV  176
+
+Query  179  LYRNSKDVFR  188
+             Y  S  VFR
+Sbjct  177  EYERSAIVFR  186
+
+
+>sp|Q9D273|MMAB_MOUSE Corrinoid adenosyltransferase OS=Mus musculus 
+OX=10090 GN=Mmab PE=1 SV=1
+Length=237
+
+ Score = 137 bits (344),  Expect = 2e-39, Method: Compositional matrix adjust.
+ Identities = 73/184 (40%), Positives = 104/184 (57%), Gaps = 3/184 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   L+     + + EL++
+Sbjct  51   KIYTKTGDKGFSSTFTGERRPKDDQVFEAVGTTDELSSAIGFAMELVTEKGHMFAEELQK  110
+
+Query  62   IQQLLFDCGHDLATPADDERHSF---KFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ +L D G  LATP    R +       QE P + LE  ID Y+  +P +K FILP G 
+Sbjct  111  IQCMLQDVGSALATPRSSAREAHLKHTAFQEGPVLELERWIDKYSSQLPPLKAFILPSGG  170
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + +SALH  R + RRAER++V L++  + + +V  F+NRLSDY F  ARYA   E   + 
+Sbjct  171  KSSSALHFCRAVCRRAERRVVPLVQMGETDANVAKFLNRLSDYLFTVARYAAMKEGSQEK  230
+
+Query  179  LYRN  182
+            +Y+ 
+Sbjct  231  IYKK  234
+
+
+>sp|Q96EY8|MMAB_HUMAN Corrinoid adenosyltransferase OS=Homo sapiens 
+OX=9606 GN=MMAB PE=1 SV=1
+Length=250
+
+ Score = 133 bits (335),  Expect = 9e-38, Method: Compositional matrix adjust.
+ Identities = 72/182 (40%), Positives = 103/182 (57%), Gaps = 3/182 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   L+       + EL++
+Sbjct  57   KIYTKTGDKGFSSTFTGERRPKDDQVFEAVGTTDELSSAIGFALELVTEKGHTFAEELQK  116
+
+Query  62   IQQLLFDCGHDLATPADDERHS-FKFK--QEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ  L D G  LATP    R +  K+   +  P + LE+ ID YT  +P +  FILP G 
+Sbjct  117  IQCTLQDVGSALATPCSSAREAHLKYTTFKAGPILELEQWIDKYTSQLPPLTAFILPSGG  176
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            +++SALH  R + RRAER++V L++  + + +V  F+NRLSDY F  ARYA   E   + 
+Sbjct  177  KISSALHFCRAVCRRAERRVVPLVQMGETDANVAKFLNRLSDYLFTLARYAAMKEGNQEK  236
+
+Query  179  LY  180
+            +Y
+Sbjct  237  IY  238
+
+
+>sp|Q58D49|MMAB_BOVIN Corrinoid adenosyltransferase OS=Bos taurus 
+OX=9913 GN=MMAB PE=2 SV=1
+Length=241
+
+ Score = 130 bits (328),  Expect = 7e-37, Method: Compositional matrix adjust.
+ Identities = 72/184 (39%), Positives = 103/184 (56%), Gaps = 3/184 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   LI         EL++
+Sbjct  51   KIYTKTGDKGFSSTFTGERRSKDDQVFEAVGTTDELSSAIGFAMELIAEKGHPFVEELQK  110
+
+Query  62   IQQLLFDCGHDLATPADDERHS-FKFK--QEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ  L D G  LATP    R +  K    +  P + LE+ ID Y++ +P +  FILP G 
+Sbjct  111  IQCSLQDVGSALATPRSSAREAHLKHATFEAGPILELEQWIDKYSRQLPPLTAFILPSGG  170
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + +SALH  R + RRAER++V L++  + + +V+ F+NRLSDY F  ARY    E  P+ 
+Sbjct  171  KSSSALHFCRAVCRRAERRVVPLVQTGETDANVVKFLNRLSDYLFTLARYTAMKEGNPEK  230
+
+Query  179  LYRN  182
+            +Y+ 
+Sbjct  231  IYKK  234
+
+
+>sp|P53523|PDUO_MYCLE Corrinoid adenosyltransferase OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=ML1149 PE=3 SV=1
+Length=191
+
+ Score = 113 bits (283),  Expect = 1e-30, Method: Compositional matrix adjust.
+ Identities = 70/187 (37%), Positives = 102/187 (55%), Gaps = 10/187 (5%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELE  60
+             +IYT+ GD G T +     + K D R+ AY + DE NS +G   +L N   Q +++ L+
+Sbjct  6    TRIYTRTGDNGTTGLSDFSRVAKTDLRLVAYADCDETNSAIGVALALGNPD-QKITDVLQ  64
+
+Query  61   EIQQLLFDCGHDLATPADDERHSFKFKQEQPTVW----LEEKIDNYTQVVPAVKKFILPG  116
+            +IQ  LFD G DL+TP  D   + ++ Q + T      LEE  D Y   +P +  F+LPG
+Sbjct  65   QIQNDLFDAGADLSTPMQDSVRNPEYPQLRITQTHIDRLEEWCDTYNTPLPTLNSFVLPG  124
+
+Query  117  GTQLASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQ  174
+            G+ L++ LHVART+ RRAER     +        +L   ++NRLSD  F  +R AN    
+Sbjct  125  GSPLSALLHVARTVARRAERSAWAAVEAHPGVVSMLPAKYLNRLSDLLFILSRVANTGN-  183
+
+Query  175  QPDMLYR  181
+              D+L+R
+Sbjct  184  --DVLWR  188
+
+
+>sp|Q1LJ80|ATR_CUPMC Cobalamin adenosyltransferase OS=Cupriavidus 
+metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 
+/ CH34) OX=266264 GN=cobO PE=1 SV=1
+Length=184
+
+ Score = 106 bits (265),  Expect = 4e-28, Method: Compositional matrix adjust.
+ Identities = 62/184 (34%), Positives = 98/184 (53%), Gaps = 7/184 (4%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KI T+ GD G T +     + KN  R+ A G+VDELNS +G   +  +    V +  L  
+Sbjct  7    KIATRTGDAGTTGLGDGSRVGKNSLRIVAIGDVDELNSHIGLLLTEPDLPEDVRA-ALLH  65
+
+Query  62   IQQLLFDCGHDLATPADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQLA  121
+            IQ  LFD G +L+ P       +   +      L++ + +Y   +P + +FILPGG++ A
+Sbjct  66   IQHDLFDLGGELSIPG------YTLLKAPQVAQLDDWLAHYNAALPRLAEFILPGGSRPA  119
+
+Query  122  SALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDMLYR  181
+            +  H+ RT+ RRAER +V+L   E +N+    ++NRLSD  F  AR  N      D+L++
+Sbjct  120  AQAHICRTVCRRAERALVELGAAEALNEAPRQYLNRLSDLLFVLARVLNRAGGGSDVLWQ  179
+
+Query  182  NSKD  185
+              ++
+Sbjct  180  RERE  183
+
+
+>sp|P45515|PDUO_CITFR Corrinoid adenosyltransferase OS=Citrobacter 
+freundii OX=546 PE=3 SV=1
+Length=176
+
+ Score = 106 bits (264),  Expect = 5e-28, Method: Compositional matrix adjust.
+ Identities = 69/181 (38%), Positives = 103/181 (57%), Gaps = 13/181 (7%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            +IYT+ GD G T + G   + K+D RV AYG VDEL S +G   +  ++    L  EL  
+Sbjct  3    RIYTRTGDNGTTALFGGSRIDKDDIRVEAYGTVDELISQLGVCYA--STRQAELRQELHA  60
+
+Query  62   IQQLLFDCGHDLATPADDERHSFKFKQ---EQPTVWLEEKID-NYTQVVPAVKKFILPGG  117
+            +Q++LF  G +LA+   D++   + KQ   E+    LE+ ID N  Q  P +K+F++PG 
+Sbjct  61   MQKMLFVLGAELAS---DQKGLTRLKQRIGEEDIQALEQLIDRNMAQSGP-LKEFVIPGK  116
+
+Query  118  TQLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPD  177
+               ++ LHVART+TRR ER ++ + R   +  +   +INRLSD  F+ AR     E  PD
+Sbjct  117  NLASAQLHVARTLTRRLERILIAMGRTLTLRDEARRYINRLSDALFSMARIE---ETTPD  173
+
+Query  178  M  178
+            +
+Sbjct  174  V  174
+
+
+>sp|P9WP99|PDUO_MYCTU Corrinoid adenosyltransferase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1314c 
+PE=1 SV=1
+Length=193
+
+ Score = 105 bits (263),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 70/187 (37%), Positives = 102/187 (55%), Gaps = 7/187 (4%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ+ ++ L +
+Sbjct  7    RIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQI-TDVLRQ  65
+
+Query  62   IQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQL  120
+            IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ L
+Sbjct  66   IQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSPL  125
+
+Query  121  ASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPDM  178
+            ++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D+
+Sbjct  126  SALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGDV  182
+
+Query  179  LYRNSKD  185
+            L+R   D
+Sbjct  183  LWRPGGD  189
+
+
+>sp|P9WP98|PDUO_MYCTO Corrinoid adenosyltransferase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1354 
+PE=3 SV=1
+Length=193
+
+ Score = 105 bits (263),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 70/187 (37%), Positives = 102/187 (55%), Gaps = 7/187 (4%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ+ ++ L +
+Sbjct  7    RIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQI-TDVLRQ  65
+
+Query  62   IQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQL  120
+            IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ L
+Sbjct  66   IQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSPL  125
+
+Query  121  ASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPDM  178
+            ++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D+
+Sbjct  126  SALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGDV  182
+
+Query  179  LYRNSKD  185
+            L+R   D
+Sbjct  183  LWRPGGD  189
+
+
+>sp|P64804|PDUO_MYCBO Corrinoid adenosyltransferase OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB1347C 
+PE=3 SV=1
+Length=193
+
+ Score = 105 bits (263),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 70/187 (37%), Positives = 102/187 (55%), Gaps = 7/187 (4%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ+ ++ L +
+Sbjct  7    RIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQI-TDVLRQ  65
+
+Query  62   IQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQL  120
+            IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ L
+Sbjct  66   IQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSPL  125
+
+Query  121  ASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPDM  178
+            ++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D+
+Sbjct  126  SALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGDV  182
+
+Query  179  LYRNSKD  185
+            L+R   D
+Sbjct  183  LWRPGGD  189
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10802866228
+Results from round 2
+
+
+Query= d3ci3a_
+
+Length=188
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9D273|MMAB_MOUSE Corrinoid adenosyltransferase OS=Mus musculu...  271     5e-92
+sp|Q96EY8|MMAB_HUMAN Corrinoid adenosyltransferase OS=Homo sapien...  268     1e-90
+sp|Q58D49|MMAB_BOVIN Corrinoid adenosyltransferase OS=Bos taurus ...  266     6e-90
+sp|P53523|PDUO_MYCLE Corrinoid adenosyltransferase OS=Mycobacteri...  246     4e-83
+sp|O34899|PDUO_BACSU Corrinoid adenosyltransferase OS=Bacillus su...  241     9e-81
+sp|Q1LJ80|ATR_CUPMC Cobalamin adenosyltransferase OS=Cupriavidus ...  234     2e-78
+sp|P9WP99|PDUO_MYCTU Corrinoid adenosyltransferase OS=Mycobacteri...  228     1e-75
+sp|P9WP98|PDUO_MYCTO Corrinoid adenosyltransferase OS=Mycobacteri...  228     1e-75
+sp|P64804|PDUO_MYCBO Corrinoid adenosyltransferase OS=Mycobacteri...  228     1e-75
+sp|P45515|PDUO_CITFR Corrinoid adenosyltransferase OS=Citrobacter...  195     8e-63
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9D273|MMAB_MOUSE Corrinoid adenosyltransferase OS=Mus musculus 
+OX=10090 GN=Mmab PE=1 SV=1
+Length=237
+
+ Score = 271 bits (692),  Expect = 5e-92, Method: Composition-based stats.
+ Identities = 73/184 (40%), Positives = 104/184 (57%), Gaps = 3/184 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   L+     + + EL++
+Sbjct  51   KIYTKTGDKGFSSTFTGERRPKDDQVFEAVGTTDELSSAIGFAMELVTEKGHMFAEELQK  110
+
+Query  62   IQQLLFDCGHDLATPADDERHSF---KFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ +L D G  LATP    R +       QE P + LE  ID Y+  +P +K FILP G 
+Sbjct  111  IQCMLQDVGSALATPRSSAREAHLKHTAFQEGPVLELERWIDKYSSQLPPLKAFILPSGG  170
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + +SALH  R + RRAER++V L++  + + +V  F+NRLSDY F  ARYA   E   + 
+Sbjct  171  KSSSALHFCRAVCRRAERRVVPLVQMGETDANVAKFLNRLSDYLFTVARYAAMKEGSQEK  230
+
+Query  179  LYRN  182
+            +Y+ 
+Sbjct  231  IYKK  234
+
+
+>sp|Q96EY8|MMAB_HUMAN Corrinoid adenosyltransferase OS=Homo sapiens 
+OX=9606 GN=MMAB PE=1 SV=1
+Length=250
+
+ Score = 268 bits (684),  Expect = 1e-90, Method: Composition-based stats.
+ Identities = 71/185 (38%), Positives = 103/185 (56%), Gaps = 3/185 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   L+       + EL++
+Sbjct  57   KIYTKTGDKGFSSTFTGERRPKDDQVFEAVGTTDELSSAIGFALELVTEKGHTFAEELQK  116
+
+Query  62   IQQLLFDCGHDLATPADDERHS---FKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ  L D G  LATP    R +   +   +  P + LE+ ID YT  +P +  FILP G 
+Sbjct  117  IQCTLQDVGSALATPCSSAREAHLKYTTFKAGPILELEQWIDKYTSQLPPLTAFILPSGG  176
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            +++SALH  R + RRAER++V L++  + + +V  F+NRLSDY F  ARYA   E   + 
+Sbjct  177  KISSALHFCRAVCRRAERRVVPLVQMGETDANVAKFLNRLSDYLFTLARYAAMKEGNQEK  236
+
+Query  179  LYRNS  183
+            +Y  +
+Sbjct  237  IYMKN  241
+
+
+>sp|Q58D49|MMAB_BOVIN Corrinoid adenosyltransferase OS=Bos taurus 
+OX=9913 GN=MMAB PE=2 SV=1
+Length=241
+
+ Score = 266 bits (679),  Expect = 6e-90, Method: Composition-based stats.
+ Identities = 71/185 (38%), Positives = 103/185 (56%), Gaps = 3/185 (2%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KIYTK GDKG +     +   K+D    A G  DEL+S +G+   LI         EL++
+Sbjct  51   KIYTKTGDKGFSSTFTGERRSKDDQVFEAVGTTDELSSAIGFAMELIAEKGHPFVEELQK  110
+
+Query  62   IQQLLFDCGHDLATPADDERHSFKF---KQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            IQ  L D G  LATP    R +       +  P + LE+ ID Y++ +P +  FILP G 
+Sbjct  111  IQCSLQDVGSALATPRSSAREAHLKHATFEAGPILELEQWIDKYSRQLPPLTAFILPSGG  170
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + +SALH  R + RRAER++V L++  + + +V+ F+NRLSDY F  ARY    E  P+ 
+Sbjct  171  KSSSALHFCRAVCRRAERRVVPLVQTGETDANVVKFLNRLSDYLFTLARYTAMKEGNPEK  230
+
+Query  179  LYRNS  183
+            +Y+ +
+Sbjct  231  IYKKN  235
+
+
+>sp|P53523|PDUO_MYCLE Corrinoid adenosyltransferase OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=ML1149 PE=3 SV=1
+Length=191
+
+ Score = 246 bits (629),  Expect = 4e-83, Method: Composition-based stats.
+ Identities = 70/190 (37%), Positives = 102/190 (54%), Gaps = 10/190 (5%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELE  60
+             +IYT+ GD G T +     + K D R+ AY + DE NS +G   +L N   Q +++ L+
+Sbjct  6    TRIYTRTGDNGTTGLSDFSRVAKTDLRLVAYADCDETNSAIGVALALGNPD-QKITDVLQ  64
+
+Query  61   EIQQLLFDCGHDLATPADDERHSFKFKQEQPTV----WLEEKIDNYTQVVPAVKKFILPG  116
+            +IQ  LFD G DL+TP  D   + ++ Q + T      LEE  D Y   +P +  F+LPG
+Sbjct  65   QIQNDLFDAGADLSTPMQDSVRNPEYPQLRITQTHIDRLEEWCDTYNTPLPTLNSFVLPG  124
+
+Query  117  GTQLASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQ  174
+            G+ L++ LHVART+ RRAER     +        +L   ++NRLSD  F  +R AN    
+Sbjct  125  GSPLSALLHVARTVARRAERSAWAAVEAHPGVVSMLPAKYLNRLSDLLFILSRVANTGN-  183
+
+Query  175  QPDMLYRNSK  184
+              D+L+R   
+Sbjct  184  --DVLWRPGG  191
+
+
+>sp|O34899|PDUO_BACSU Corrinoid adenosyltransferase OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yvqK PE=1 SV=2
+Length=193
+
+ Score = 241 bits (614),  Expect = 9e-81, Method: Composition-based stats.
+ Identities = 94/190 (49%), Positives = 125/190 (66%), Gaps = 6/190 (3%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHT--QVLSNE  58
+            +K+YTK GDKGQT ++G     K+  RV +YG +DELNS++G   + ++     + L+ E
+Sbjct  1    MKLYTKTGDKGQTGLVGG-RTDKDSLRVESYGTIDELNSFIGLALAELSGQPGFEDLTAE  59
+
+Query  59   LEEIQQLLFDCGHDLATPADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGT  118
+            L  IQ  LFDCG DLA     ER  +K  +E    +LE +ID YT   P +KKFILPGG+
+Sbjct  60   LLTIQHELFDCGGDLAIVT--ERKDYKLTEES-VSFLETRIDAYTAEAPELKKFILPGGS  116
+
+Query  119  QLASALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + AS LH+ARTITRRAER++V LM+ E+I++ VL ++NRLSDYFFAAAR  N      D+
+Sbjct  117  KCASLLHIARTITRRAERRVVALMKSEEIHETVLRYLNRLSDYFFAAARVVNARSGIGDV  176
+
+Query  179  LYRNSKDVFR  188
+             Y  S  VFR
+Sbjct  177  EYERSAIVFR  186
+
+
+>sp|Q1LJ80|ATR_CUPMC Cobalamin adenosyltransferase OS=Cupriavidus 
+metallidurans (strain ATCC 43123 / DSM 2839 / NBRC 102507 
+/ CH34) OX=266264 GN=cobO PE=1 SV=1
+Length=184
+
+ Score = 234 bits (598),  Expect = 2e-78, Method: Composition-based stats.
+ Identities = 62/184 (34%), Positives = 98/184 (53%), Gaps = 7/184 (4%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            KI T+ GD G T +     + KN  R+ A G+VDELNS +G   +  +    V +  L  
+Sbjct  7    KIATRTGDAGTTGLGDGSRVGKNSLRIVAIGDVDELNSHIGLLLTEPDLPEDVRA-ALLH  65
+
+Query  62   IQQLLFDCGHDLATPADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQLA  121
+            IQ  LFD G +L+ P       +   +      L++ + +Y   +P + +FILPGG++ A
+Sbjct  66   IQHDLFDLGGELSIPG------YTLLKAPQVAQLDDWLAHYNAALPRLAEFILPGGSRPA  119
+
+Query  122  SALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDMLYR  181
+            +  H+ RT+ RRAER +V+L   E +N+    ++NRLSD  F  AR  N      D+L++
+Sbjct  120  AQAHICRTVCRRAERALVELGAAEALNEAPRQYLNRLSDLLFVLARVLNRAGGGSDVLWQ  179
+
+Query  182  NSKD  185
+              ++
+Sbjct  180  RERE  183
+
+
+>sp|P9WP99|PDUO_MYCTU Corrinoid adenosyltransferase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1314c 
+PE=1 SV=1
+Length=193
+
+ Score = 228 bits (580),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 70/188 (37%), Positives = 102/188 (54%), Gaps = 7/188 (4%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELE  60
+             +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ +++ L 
+Sbjct  6    TRIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQ-ITDVLR  64
+
+Query  61   EIQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQ  119
+            +IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ 
+Sbjct  65   QIQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSP  124
+
+Query  120  LASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPD  177
+            L++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D
+Sbjct  125  LSALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGD  181
+
+Query  178  MLYRNSKD  185
+            +L+R   D
+Sbjct  182  VLWRPGGD  189
+
+
+>sp|P9WP98|PDUO_MYCTO Corrinoid adenosyltransferase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1354 
+PE=3 SV=1
+Length=193
+
+ Score = 228 bits (580),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 70/188 (37%), Positives = 102/188 (54%), Gaps = 7/188 (4%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELE  60
+             +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ +++ L 
+Sbjct  6    TRIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQ-ITDVLR  64
+
+Query  61   EIQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQ  119
+            +IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ 
+Sbjct  65   QIQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSP  124
+
+Query  120  LASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPD  177
+            L++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D
+Sbjct  125  LSALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGD  181
+
+Query  178  MLYRNSKD  185
+            +L+R   D
+Sbjct  182  VLWRPGGD  189
+
+
+>sp|P64804|PDUO_MYCBO Corrinoid adenosyltransferase OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB1347C 
+PE=3 SV=1
+Length=193
+
+ Score = 228 bits (580),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 70/188 (37%), Positives = 102/188 (54%), Gaps = 7/188 (4%)
+
+Query  1    VKIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELE  60
+             +IYT+ GD G T +     + K D R+ AY + DE N+ +G   +L +  TQ +++ L 
+Sbjct  6    TRIYTRTGDDGTTGLSDMSRVAKTDARLVAYADCDEANAAIGAALALGHPDTQ-ITDVLR  64
+
+Query  61   EIQQLLFDCGHDLATP-ADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQ  119
+            +IQ  LFD G DL+TP  ++ +H      +     LE   D Y   +PA+K F+LPGG+ 
+Sbjct  65   QIQNDLFDAGADLSTPIVENPKHPPLRIAQSYIDRLEGWCDAYNAGLPALKSFVLPGGSP  124
+
+Query  120  LASALHVARTITRRAERQIVQLMREEQINQDVLI--FINRLSDYFFAAARYANYLEQQPD  177
+            L++ LHVART+ RRAER     +        VL   ++NRLSD  F  +R AN      D
+Sbjct  125  LSALLHVARTVVRRAERSAWAAVDAHPEGVSVLPAKYLNRLSDLLFILSRVAN---PDGD  181
+
+Query  178  MLYRNSKD  185
+            +L+R   D
+Sbjct  182  VLWRPGGD  189
+
+
+>sp|P45515|PDUO_CITFR Corrinoid adenosyltransferase OS=Citrobacter 
+freundii OX=546 PE=3 SV=1
+Length=176
+
+ Score = 195 bits (495),  Expect = 8e-63, Method: Composition-based stats.
+ Identities = 63/177 (36%), Positives = 95/177 (54%), Gaps = 5/177 (3%)
+
+Query  2    KIYTKNGDKGQTRIIGKQILYKNDPRVAAYGEVDELNSWVGYTKSLINSHTQVLSNELEE  61
+            +IYT+ GD G T + G   + K+D RV AYG VDEL S +G   +  ++    L  EL  
+Sbjct  3    RIYTRTGDNGTTALFGGSRIDKDDIRVEAYGTVDELISQLGVCYA--STRQAELRQELHA  60
+
+Query  62   IQQLLFDCGHDLATPADDERHSFKFKQEQPTVWLEEKIDNYTQVVPAVKKFILPGGTQLA  121
+            +Q++LF  G +LA+         +   E+    LE+ ID        +K+F++PG    +
+Sbjct  61   MQKMLFVLGAELASDQKGLTRLKQRIGEEDIQALEQLIDRNMAQSGPLKEFVIPGKNLAS  120
+
+Query  122  SALHVARTITRRAERQIVQLMREEQINQDVLIFINRLSDYFFAAARYANYLEQQPDM  178
+            + LHVART+TRR ER ++ + R   +  +   +INRLSD  F+ AR     E  PD+
+Sbjct  121  AQLHVARTLTRRLERILIAMGRTLTLRDEARRYINRLSDALFSMARIE---ETTPDV  174
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.339    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10802866228
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,187 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1r0va3
+
+Length=75
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus ...  145     6e-44
+sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldoco...  37.0    0.003
+sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermob...  37.0    0.004
+
+
+>sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=endA PE=1 SV=1
+Length=305
+
+ Score = 145 bits (367),  Expect = 6e-44, Method: Compositional matrix adjust.
+ Identities = 74/75 (99%), Positives = 75/75 (100%), Gaps = 0/75 (0%)
+
+Query  1    GEQKEELPEIAGVLSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN  60
+            GEQKEELPEIAG+LSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN
+Sbjct  140  GEQKEELPEIAGILSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN  199
+
+Query  61   ADREELVKRAREVER  75
+            ADREELVKRAREVER
+Sbjct  200  ADREELVKRAREVER  214
+
+
+>sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=endA PE=1 SV=1
+Length=179
+
+ Score = 37.0 bits (84),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 27/74 (36%), Positives = 42/74 (57%), Gaps = 8/74 (11%)
+
+Query  9   EIAGVLSDEYVITKQTEIFSRY---FYGSEKGDLVTLSLIESLYLLDLGKLNLLNADR--  63
+           +I G+L  + VI       S+     YG+ +G+ ++LSL+E+LYL++LG L +   D   
+Sbjct  9   KITGLLDGDRVIVFDKNGISKLSARHYGNVEGNFLSLSLVEALYLINLGWLEVKYKDNKP  68
+
+Query  64  ---EELVKRAREVE  74
+              EEL + AR VE
+Sbjct  69  LSFEELYEYARNVE  82
+
+
+>sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 37.0 bits (84),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 31/59 (53%), Gaps = 4/59 (7%)
+
+Query  10  IAGVLSDEYVITKQTEIFSRYF----YGSEKGDLVTLSLIESLYLLDLGKLNLLNADRE  64
+           + G L DE V  K T I  R      YG    D + LSLIE+ YL++ GKL L+  D E
+Sbjct  3   VEGQLGDEVVTIKATSIARRLHGKSHYGKMYEDRLQLSLIEAAYLMERGKLKLMKDDDE  61
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.137    0.357    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5130021526
+Results from round 2
+
+
+Query= d1r0va3
+
+Length=75
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus ...  131     3e-38
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldoco...  36.8    0.005
+sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermob...  36.4    0.005
+
+
+>sp|O29362|ENDA_ARCFU tRNA-splicing endonuclease OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=endA PE=1 SV=1
+Length=305
+
+ Score = 131 bits (330),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 74/75 (99%), Positives = 75/75 (100%), Gaps = 0/75 (0%)
+
+Query  1    GEQKEELPEIAGVLSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN  60
+            GEQKEELPEIAG+LSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN
+Sbjct  140  GEQKEELPEIAGILSDEYVITKQTEIFSRYFYGSEKGDLVTLSLIESLYLLDLGKLNLLN  199
+
+Query  61   ADREELVKRAREVER  75
+            ADREELVKRAREVER
+Sbjct  200  ADREELVKRAREVER  214
+
+
+>sp|Q58819|ENDA_METJA tRNA-splicing endonuclease OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=endA PE=1 SV=1
+Length=179
+
+ Score = 36.8 bits (84),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 27/74 (36%), Positives = 42/74 (57%), Gaps = 8/74 (11%)
+
+Query  9   EIAGVLSDEYVITKQTEIFSRY---FYGSEKGDLVTLSLIESLYLLDLGKLNLLNADR--  63
+           +I G+L  + VI       S+     YG+ +G+ ++LSL+E+LYL++LG L +   D   
+Sbjct  9   KITGLLDGDRVIVFDKNGISKLSARHYGNVEGNFLSLSLVEALYLINLGWLEVKYKDNKP  68
+
+Query  64  ---EELVKRAREVE  74
+              EEL + AR VE
+Sbjct  69  LSFEELYEYARNVE  82
+
+
+>sp|O07165|ENDA_METTH tRNA-splicing endonuclease OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=endA PE=3 SV=1
+Length=170
+
+ Score = 36.4 bits (83),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 31/59 (53%), Gaps = 4/59 (7%)
+
+Query  10  IAGVLSDEYVITKQTEIFSRYF----YGSEKGDLVTLSLIESLYLLDLGKLNLLNADRE  64
+           + G L DE V  K T I  R      YG    D + LSLIE+ YL++ GKL L+  D E
+Sbjct  3   VEGQLGDEVVTIKATSIARRLHGKSHYGKMYEDRLQLSLIEAAYLMERGKLKLMKDDDE  61
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.148    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0453    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5130021526
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

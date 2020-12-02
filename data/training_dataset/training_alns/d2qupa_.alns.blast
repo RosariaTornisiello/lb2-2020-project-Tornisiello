@@ -1,0 +1,129 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2qupa_
+
+Length=119
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P37539|YAAR_BACSU Uncharacterized protein YaaR OS=Bacillus sub...  81.3    2e-19
+
+
+>sp|P37539|YAAR_BACSU Uncharacterized protein YaaR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yaaR PE=4 SV=1
+Length=146
+
+ Score = 81.3 bits (199),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 47/121 (39%), Positives = 74/121 (61%), Gaps = 3/121 (2%)
+
+Query  2    VSFSEVMGKQRDEKAYERLQALMSKIDDQGKLLSETRTIEELRKYKELVKEFVGDAVELG  61
+             SF   M  Q  +   ++L  L+S I+  GK L+++R  ++L ++K LVK FV +AV+ G
+Sbjct  26   ASFKTSMENQSSKMKLDQLTRLLSDIEAFGKRLTKSRNFKDLARFKGLVKRFVKEAVDSG  85
+
+Query  62   LRLEERNR---RGRTKIYKIVKEVDRKLLDLTDAVLAKEKKGLDILNMVGEIKGLLINIY  118
+            L  E        G ++   +VKE+D KL+ LT+ ++ +EK  +D+L  +GEIKGLLIN+Y
+Sbjct  86   LSHETSKSFDLYGNSRTLGLVKEIDDKLIQLTEEMMDQEKPAIDLLERIGEIKGLLINLY  145
+
+Query  119  A  119
+             
+Sbjct  146  T  146
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.138    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5094342462
+Results from round 2
+
+
+Query= d2qupa_
+
+Length=119
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P37539|YAAR_BACSU Uncharacterized protein YaaR OS=Bacillus sub...  153     8e-48
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P37539|YAAR_BACSU Uncharacterized protein YaaR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yaaR PE=4 SV=1
+Length=146
+
+ Score = 153 bits (386),  Expect = 8e-48, Method: Composition-based stats.
+ Identities = 47/121 (39%), Positives = 74/121 (61%), Gaps = 3/121 (2%)
+
+Query  2    VSFSEVMGKQRDEKAYERLQALMSKIDDQGKLLSETRTIEELRKYKELVKEFVGDAVELG  61
+             SF   M  Q  +   ++L  L+S I+  GK L+++R  ++L ++K LVK FV +AV+ G
+Sbjct  26   ASFKTSMENQSSKMKLDQLTRLLSDIEAFGKRLTKSRNFKDLARFKGLVKRFVKEAVDSG  85
+
+Query  62   LRLEERNR---RGRTKIYKIVKEVDRKLLDLTDAVLAKEKKGLDILNMVGEIKGLLINIY  118
+            L  E        G ++   +VKE+D KL+ LT+ ++ +EK  +D+L  +GEIKGLLIN+Y
+Sbjct  86   LSHETSKSFDLYGNSRTLGLVKEIDDKLIQLTEEMMDQEKPAIDLLERIGEIKGLLINLY  145
+
+Query  119  A  119
+             
+Sbjct  146  T  146
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.140    0.337    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0429    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5094342462
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

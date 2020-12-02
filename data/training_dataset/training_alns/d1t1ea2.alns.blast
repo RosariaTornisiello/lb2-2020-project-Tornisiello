@@ -1,0 +1,131 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1t1ea2
+
+Length=179
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q4WGU1|SED5_ASPFU Tripeptidyl-peptidase sed5 OS=Neosartorya fu...  56.6    2e-08
+
+
+>sp|Q4WGU1|SED5_ASPFU Tripeptidyl-peptidase sed5 OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC 
+A1100) OX=330879 GN=sed5 PE=3 SV=2
+Length=580
+
+ Score = 56.6 bits (135),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 42/164 (26%), Positives = 70/164 (43%), Gaps = 15/164 (9%)
+
+Query  6    LAGHARRQAPQAVDKGPVTGDQRISVTVVLRRQRGDELEAHVERQAALAPHARVHLEREA  65
+            L G AR   P       V  D++I  TV++R Q G      + +  A+    R  L    
+Sbjct  4    LDGSARPHPPGTTRLNSVEPDKQIGFTVLVRPQTGAPRLPDLAQWQAIPIAERQFLSTAG  63
+
+Query  66   FAASHGASLDDFAEIRKFAEAHGLTLDRAHVAAGTAVLSGPVDAVNQAFGVELRHF----  121
+            F  ++G+S DD   +  F E  G+T+   H  AGT  +      ++  F V+L ++    
+Sbjct  64   FERTYGSSEDDIVSVASFLEKAGMTIRSRHAGAGTVEVQAKTCQIHSVFAVQLLYYRGQL  123
+
+Query  122  ----------DHP-DGSYRSYVGDVRVPASIAPLIEAVLGLDTR  154
+                        P + +Y  + G + +PA++   +  + GLDTR
+Sbjct  124  RPAARKRRDDKQPAEETYIGFEGCISLPAALHDKVIHIFGLDTR  167
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.133    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9719343174
+Results from round 2
+
+
+Query= d1t1ea2
+
+Length=179
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q4WGU1|SED5_ASPFU Tripeptidyl-peptidase sed5 OS=Neosartorya fu...  239     1e-75
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q4WGU1|SED5_ASPFU Tripeptidyl-peptidase sed5 OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC 
+A1100) OX=330879 GN=sed5 PE=3 SV=2
+Length=580
+
+ Score = 239 bits (611),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 42/164 (26%), Positives = 70/164 (43%), Gaps = 15/164 (9%)
+
+Query  6    LAGHARRQAPQAVDKGPVTGDQRISVTVVLRRQRGDELEAHVERQAALAPHARVHLEREA  65
+            L G AR   P       V  D++I  TV++R Q G      + +  A+    R  L    
+Sbjct  4    LDGSARPHPPGTTRLNSVEPDKQIGFTVLVRPQTGAPRLPDLAQWQAIPIAERQFLSTAG  63
+
+Query  66   FAASHGASLDDFAEIRKFAEAHGLTLDRAHVAAGTAVLSGPVDAVNQAFGVELRHF----  121
+            F  ++G+S DD   +  F E  G+T+   H  AGT  +      ++  F V+L ++    
+Sbjct  64   FERTYGSSEDDIVSVASFLEKAGMTIRSRHAGAGTVEVQAKTCQIHSVFAVQLLYYRGQL  123
+
+Query  122  ----------DHP-DGSYRSYVGDVRVPASIAPLIEAVLGLDTR  154
+                        P + +Y  + G + +PA++   +  + GLDTR
+Sbjct  124  RPAARKRRDDKQPAEETYIGFEGCISLPAALHDKVIHIFGLDTR  167
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.333    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0389    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9719343174
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,207 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6qe5_A
+
+Length=272
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P37634|RLMJ_ECOLI Ribosomal RNA large subunit methyltransferas...  536     0.0   
+sp|P31777|RLMJ_HAEIN Ribosomal RNA large subunit methyltransferas...  367     7e-128
+
+
+>sp|P37634|RLMJ_ECOLI Ribosomal RNA large subunit methyltransferase 
+J OS=Escherichia coli (strain K12) OX=83333 GN=rlmJ PE=1 
+SV=1
+Length=280
+
+ Score = 536 bits (1381),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 267/280 (95%), Positives = 268/280 (96%), Gaps = 8/280 (3%)
+
+Query  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLG------XGK  54
+            MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLG       G+
+Sbjct  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLGSEHAERTGE  60
+
+Query  55   YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIARQLLREQDSLQLTELH  114
+            YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIAR LLREQDSLQLTELH
+Sbjct  61   YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIARLLLREQDSLQLTELH  120
+
+Query  115  PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI  174
+            PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI
+Sbjct  121  PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI  180
+
+Query  175  AEGYKRFATGTYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS--XGMTASGM  232
+            AEGYKRFATG YALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS   GMTASGM
+Sbjct  181  AEGYKRFATGIYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDSDRRGMTASGM  240
+
+Query  233  IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  272
+            IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE
+Sbjct  241  IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  280
+
+
+>sp|P31777|RLMJ_HAEIN Ribosomal RNA large subunit methyltransferase 
+J OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 
+/ KW20 / Rd) OX=71421 GN=rlmJ PE=1 SV=1
+Length=281
+
+ Score = 367 bits (942),  Expect = 7e-128, Method: Compositional matrix adjust.
+ Identities = 181/281 (64%), Positives = 208/281 (74%), Gaps = 9/281 (3%)
+
+Query  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLG------XGK  54
+            MLSY HSFHAGNHADVLKH V  LI+E+LK K+K F YLDTH+G GRY+L        G+
+Sbjct  1    MLSYHHSFHAGNHADVLKHIVLMLILENLKLKEKGFFYLDTHSGVGRYRLSSNESEKTGE  60
+
+Query  55   YLEGIARIWQQDDLPAELEAYINVVKHFNRSG-QLRYYPGSPLIARQLLREQDSLQLTEL  113
+            Y EGI R+W Q DLP ++  Y+ ++K  N  G +LRYY GSPLIA +LLR QD   LTEL
+Sbjct  61   YKEGIGRLWDQTDLPEDIARYVKMIKKLNYGGKELRYYAGSPLIAAELLRSQDRALLTEL  120
+
+Query  114  HPSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSG  173
+            HPSDYP+LR+ F  D    V+  +GFQQ+KA LPP  RRGL+LIDPPYE+K DY  VV  
+Sbjct  121  HPSDYPILRNNFSDDKNVTVKCDNGFQQVKATLPPKERRGLVLIDPPYELKDDYDLVVKA  180
+
+Query  174  IAEGYKRFATGTYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS--XGMTASG  231
+            I EGYKRFATGTYA+WYPVVLRQQ KR+   LEATGIRKIL+IELAV PDS   GMTASG
+Sbjct  181  IEEGYKRFATGTYAIWYPVVLRQQTKRIFKGLEATGIRKILKIELAVRPDSDQRGMTASG  240
+
+Query  232  MIVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  272
+            M+VINPPW LE QM  +LP+L   LVP GTG  TV WI PE
+Sbjct  241  MVVINPPWTLETQMKEILPYLTKTLVPEGTGSWTVEWITPE  281
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.137    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 21447122424
+Results from round 2
+
+
+Query= 6qe5_A
+
+Length=272
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P37634|RLMJ_ECOLI Ribosomal RNA large subunit methyltransferas...  514     0.0   
+sp|P31777|RLMJ_HAEIN Ribosomal RNA large subunit methyltransferas...  487     1e-175
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P37634|RLMJ_ECOLI Ribosomal RNA large subunit methyltransferase 
+J OS=Escherichia coli (strain K12) OX=83333 GN=rlmJ PE=1 
+SV=1
+Length=280
+
+ Score = 514 bits (1323),  Expect = 0.0, Method: Composition-based stats.
+ Identities = 267/280 (95%), Positives = 268/280 (96%), Gaps = 8/280 (3%)
+
+Query  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLGX------GK  54
+            MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLG       G+
+Sbjct  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLGSEHAERTGE  60
+
+Query  55   YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIARQLLREQDSLQLTELH  114
+            YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIAR LLREQDSLQLTELH
+Sbjct  61   YLEGIARIWQQDDLPAELEAYINVVKHFNRSGQLRYYPGSPLIARLLLREQDSLQLTELH  120
+
+Query  115  PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI  174
+            PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI
+Sbjct  121  PSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSGI  180
+
+Query  175  AEGYKRFATGTYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS--XGMTASGM  232
+            AEGYKRFATG YALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS   GMTASGM
+Sbjct  181  AEGYKRFATGIYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDSDRRGMTASGM  240
+
+Query  233  IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  272
+            IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE
+Sbjct  241  IVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  280
+
+
+>sp|P31777|RLMJ_HAEIN Ribosomal RNA large subunit methyltransferase 
+J OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 
+/ KW20 / Rd) OX=71421 GN=rlmJ PE=1 SV=1
+Length=281
+
+ Score = 487 bits (1255),  Expect = 1e-175, Method: Composition-based stats.
+ Identities = 181/281 (64%), Positives = 208/281 (74%), Gaps = 9/281 (3%)
+
+Query  1    MLSYRHSFHAGNHADVLKHTVQSLIIESLKEKDKPFLYLDTHAGAGRYQLGX------GK  54
+            MLSY HSFHAGNHADVLKH V  LI+E+LK K+K F YLDTH+G GRY+L        G+
+Sbjct  1    MLSYHHSFHAGNHADVLKHIVLMLILENLKLKEKGFFYLDTHSGVGRYRLSSNESEKTGE  60
+
+Query  55   YLEGIARIWQQDDLPAELEAYINVVKHFNRSG-QLRYYPGSPLIARQLLREQDSLQLTEL  113
+            Y EGI R+W Q DLP ++  Y+ ++K  N  G +LRYY GSPLIA +LLR QD   LTEL
+Sbjct  61   YKEGIGRLWDQTDLPEDIARYVKMIKKLNYGGKELRYYAGSPLIAAELLRSQDRALLTEL  120
+
+Query  114  HPSDYPLLRSEFQKDSRARVEKADGFQQLKAKLPPVSRRGLILIDPPYEMKTDYQAVVSG  173
+            HPSDYP+LR+ F  D    V+  +GFQQ+KA LPP  RRGL+LIDPPYE+K DY  VV  
+Sbjct  121  HPSDYPILRNNFSDDKNVTVKCDNGFQQVKATLPPKERRGLVLIDPPYELKDDYDLVVKA  180
+
+Query  174  IAEGYKRFATGTYALWYPVVLRQQIKRMIHDLEATGIRKILQIELAVLPDS--XGMTASG  231
+            I EGYKRFATGTYA+WYPVVLRQQ KR+   LEATGIRKIL+IELAV PDS   GMTASG
+Sbjct  181  IEEGYKRFATGTYAIWYPVVLRQQTKRIFKGLEATGIRKILKIELAVRPDSDQRGMTASG  240
+
+Query  232  MIVINPPWKLEQQMNNVLPWLHSKLVPAGTGHATVSWIVPE  272
+            M+VINPPW LE QM  +LP+L   LVP GTG  TV WI PE
+Sbjct  241  MVVINPPWTLETQMKEILPYLTKTLVPEGTGSWTVEWITPE  281
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.132    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 21447122424
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

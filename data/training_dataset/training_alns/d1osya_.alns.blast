@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1osya_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P80412|FVE_FLAVE Immunomodulatory protein FIP-Fve OS=Flammulin...  231     2e-79
+sp|P14945|LZ8_GANLU Immunomodulatory protein Ling Zhi-8 OS=Ganode...  149     9e-47
+
+
+>sp|P80412|FVE_FLAVE Immunomodulatory protein FIP-Fve OS=Flammulina 
+velutipes OX=38945 PE=1 SV=1
+Length=114
+
+ Score = 231 bits (589),  Expect = 2e-79, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+            SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV
+Sbjct  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+
+Query  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT  114
+            ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT
+Sbjct  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT  114
+
+
+>sp|P14945|LZ8_GANLU Immunomodulatory protein Ling Zhi-8 OS=Ganoderma 
+lucidum OX=5315 PE=1 SV=2
+Length=111
+
+ Score = 149 bits (375),  Expect = 9e-47, Method: Compositional matrix adjust.
+ Identities = 70/111 (63%), Positives = 90/111 (81%), Gaps = 2/111 (2%)
+
+Query  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+            S T+L F+LA+ VKK+ FDYTPNWGRG P+++ID +TFPKVLTDK Y+YRV V+G +LGV
+Sbjct  2    SDTALIFRLAWDVKKLSFDYTPNWGRGNPNNFIDTVTFPKVLTDKAYTYRVAVSGRNLGV  61
+
+Query  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEW  111
+            + ++AV   G Q +NFL+YN GYG+ADT TIQVFVV PDT N  ++IIA+W
+Sbjct  62   KPSYAVESDGSQKVNFLEYNSGYGIADTNTIQVFVVDPDTNN--DFIIAQW  110
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.134    0.395    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 2
+
+
+Query= d1osya_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P80412|FVE_FLAVE Immunomodulatory protein FIP-Fve OS=Flammulin...  201     2e-67
+sp|P14945|LZ8_GANLU Immunomodulatory protein Ling Zhi-8 OS=Ganode...  191     2e-63
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P80412|FVE_FLAVE Immunomodulatory protein FIP-Fve OS=Flammulina 
+velutipes OX=38945 PE=1 SV=1
+Length=114
+
+ Score = 201 bits (510),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+            SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV
+Sbjct  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+
+Query  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT  114
+            ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT
+Sbjct  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEWKKT  114
+
+
+>sp|P14945|LZ8_GANLU Immunomodulatory protein Ling Zhi-8 OS=Ganoderma 
+lucidum OX=5315 PE=1 SV=2
+Length=111
+
+ Score = 191 bits (485),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 70/111 (63%), Positives = 90/111 (81%), Gaps = 2/111 (2%)
+
+Query  1    SATSLTFQLAYLVKKIDFDYTPNWGRGTPSSYIDNLTFPKVLTDKKYSYRVVVNGSDLGV  60
+            S T+L F+LA+ VKK+ FDYTPNWGRG P+++ID +TFPKVLTDK Y+YRV V+G +LGV
+Sbjct  2    SDTALIFRLAWDVKKLSFDYTPNWGRGNPNNFIDTVTFPKVLTDKAYTYRVAVSGRNLGV  61
+
+Query  61   ESNFAVTPSGGQTINFLQYNKGYGVADTKTIQVFVVIPDTGNSEEYIIAEW  111
+            + ++AV   G Q +NFL+YN GYG+ADT TIQVFVV PDT N  ++IIA+W
+Sbjct  62   KPSYAVESDGSQKVNFLEYNSGYGIADTNTIQVFVVDPDTNN--DFIIAQW  110
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.134    0.397    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

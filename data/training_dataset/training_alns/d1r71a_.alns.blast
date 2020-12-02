@@ -1,0 +1,2540 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1r71a_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB OS=E...  229     5e-75
+sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB OS=E...  197     1e-62
+sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein Par...  42.0    3e-04
+sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein ...  40.8    7e-04
+sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus su...  37.7    0.008
+
+
+>sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=1 SV=1
+Length=358
+
+ Score = 229 bits (583),  Expect = 5e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI
+Sbjct  139  EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  198
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE
+Sbjct  199  ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  252
+
+
+>sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=3 SV=2
+Length=349
+
+ Score = 197 bits (500),  Expect = 1e-62, Method: Compositional matrix adjust.
+ Identities = 95/114 (83%), Positives = 108/114 (95%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELT REIADFIGRELAKGKKKG+IAKEIGKSPAF+TQHVTLLDLPE I
+Sbjct  131  EADQVIENLQRNELTAREIADFIGRELAKGKKKGEIAKEIGKSPAFVTQHVTLLDLPEPI  190
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            A+AFN+GR +DVTV+NELVTA+KK P+EV AWL DD+QE+TRG+VKLLREFL++
+Sbjct  191  AEAFNSGRGKDVTVINELVTAYKKNPDEVAAWLADDSQELTRGSVKLLREFLED  244
+
+
+>sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein 
+ParB OS=Chlamydia trachomatis (strain D/UW-3/Cx) OX=272561 
+GN=parB PE=3 SV=1
+Length=281
+
+ Score = 42.0 bits (97),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 20/66 (30%), Positives = 39/66 (59%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E+A+   R +   G  +  +AK++GK  + +  ++ L  LP+++ + 
+Sbjct  102  LIENIQRVNLNPLEMAEAFRRLIVVFGLTQDKVAKKVGKKRSTVANYLRLFSLPQEVQEK  161
+
+Query  64   FNTGRV  69
+             N+G +
+Sbjct  162  MNSGEI  167
+
+
+>sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein 
+ParB OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 
+20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 
+/ VKM B-1422) OX=243230 GN=parB1 PE=3 SV=1
+Length=288
+
+ Score = 40.8 bits (94),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 22/65 (34%), Positives = 36/65 (55%), Gaps = 0/65 (0%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADAF  64
+            ++ENLQR +L P E A      L +G  +  +A+ +GK  + +T  + LL LPE +  A 
+Sbjct  117  IVENLQREDLGPLEEARAYQALLDQGLNQEGVAQAVGKGRSTVTNALRLLTLPEPVLRAL  176
+
+Query  65   NTGRV  69
+            + G +
+Sbjct  177  DEGSI  181
+
+
+>sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=spo0J PE=1 SV=2
+Length=282
+
+ Score = 37.7 bits (86),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 25/66 (38%), Positives = 37/66 (56%), Gaps = 5/66 (8%)
+
+Query  5    VIENLQRNELTPREIA---DFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            ++ENLQR +L+P E A   D + + L   +++  +AK +GKS   I  H+ LL LPE I 
+Sbjct  109  LLENLQREDLSPLEEAQAYDSLLKHLDLTQEQ--LAKRLGKSRPHIANHLRLLTLPENIQ  166
+
+Query  62   DAFNTG  67
+                 G
+Sbjct  167  QLIAEG  172
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.135    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 2
+
+
+Query= d1r71a_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB OS=E...  185     4e-58
+sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB OS=E...  184     8e-58
+sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein Par...  91.3    3e-22
+sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein ...  90.1    7e-22
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9PLN9|PARB_CHLMU Probable chromosome-partitioning protein Par...  82.4    5e-19
+sp|Q72H91|SP0J_THET2 Chromosome-partitioning protein Spo0J OS=The...  74.3    5e-16
+sp|Q9Z7M0|PARB_CHLPN Probable chromosome-partitioning protein Par...  73.2    2e-15
+sp|O83295|PARB_TREPA Probable chromosome-partitioning protein Par...  72.0    6e-15
+sp|Q9JXP5|PARB_NEIMB Probable chromosome-partitioning protein Par...  68.2    1e-13
+sp|Q9JW77|PARB_NEIMA Probable chromosome-partitioning protein Par...  68.2    1e-13
+sp|A7ZAV8|NOC_BACVZ Nucleoid occlusion protein OS=Bacillus veleze...  63.9    4e-12
+sp|P9WIJ9|PARB_MYCTU Probable chromosome-partitioning protein Par...  64.3    4e-12
+sp|P9WIJ8|PARB_MYCTO Probable chromosome-partitioning protein Par...  64.3    4e-12
+sp|P0A5R3|PARB_MYCBO Probable chromosome-partitioning protein Par...  64.3    4e-12
+sp|P37524|NOC_BACSU Nucleoid occlusion protein OS=Bacillus subtil...  62.4    2e-11
+sp|Q5KU60|NOC_GEOKA Nucleoid occlusion protein OS=Geobacillus kau...  62.0    2e-11
+sp|A4ITW8|NOC_GEOTN Nucleoid occlusion protein OS=Geobacillus the...  61.6    3e-11
+sp|Q50201|PARB_MYCLE Probable chromosome-partitioning protein Par...  62.0    3e-11
+sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus su...  61.2    3e-11
+sp|C5D9Y4|NOC_GEOSW Nucleoid occlusion protein OS=Geobacillus sp....  61.2    4e-11
+sp|A8FJF7|NOC_BACP2 Nucleoid occlusion protein OS=Bacillus pumilu...  60.8    5e-11
+sp|Q65CN4|NOC_BACLD Nucleoid occlusion protein OS=Bacillus lichen...  60.1    1e-10
+sp|Q71VW9|NOC_LISMF Nucleoid occlusion protein OS=Listeria monocy...  60.1    1e-10
+sp|C1L0C8|NOC_LISMC Nucleoid occlusion protein OS=Listeria monocy...  60.1    1e-10
+sp|Q926W4|NOC_LISIN Nucleoid occlusion protein OS=Listeria innocu...  60.1    1e-10
+sp|A0AMC3|NOC_LISW6 Nucleoid occlusion protein OS=Listeria welshi...  60.1    1e-10
+sp|Q8Y3P1|NOC_LISMO Nucleoid occlusion protein OS=Listeria monocy...  59.7    1e-10
+sp|B8DD20|NOC_LISMH Nucleoid occlusion protein OS=Listeria monocy...  59.7    1e-10
+sp|O51395|PARB_BORBU Probable chromosome-partitioning protein Par...  58.1    4e-10
+sp|Q9K5M9|NOC_BACHD Nucleoid occlusion protein OS=Bacillus halodu...  58.1    4e-10
+sp|P0A152|PARB_PSEPU Probable chromosome-partitioning protein Par...  58.1    5e-10
+sp|P0A151|PARB_PSEPK Probable chromosome-partitioning protein Par...  58.1    5e-10
+sp|A7GVP4|NOC_BACCN Nucleoid occlusion protein OS=Bacillus cytoto...  57.8    7e-10
+sp|A9VTL7|NOC_BACMK Nucleoid occlusion protein OS=Bacillus mycoid...  57.4    9e-10
+sp|B8GW30|PARB_CAUVN Chromosome-partitioning protein ParB OS=Caul...  57.4    1e-09
+sp|P0CAV8|PARB_CAUVC Chromosome-partitioning protein ParB OS=Caul...  57.4    1e-09
+sp|B1HPM0|NOC_LYSSC Nucleoid occlusion protein OS=Lysinibacillus ...  57.0    1e-09
+sp|Q68XT3|PARB_RICTY Probable chromosome-partitioning protein Par...  57.0    1e-09
+sp|Q72WU6|NOC_BACC1 Nucleoid occlusion protein OS=Bacillus cereus...  57.0    1e-09
+sp|Q630C1|NOC_BACCZ Nucleoid occlusion protein OS=Bacillus cereus...  57.0    2e-09
+sp|B9IT39|NOC_BACCQ Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|B7HZG7|NOC_BACC7 Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|Q6HAF5|NOC_BACHK Nucleoid occlusion protein OS=Bacillus thurin...  56.6    2e-09
+sp|Q814F9|NOC_BACCR Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|B7HGE1|NOC_BACC4 Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|C1ER74|NOC_BACC3 Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|B7IST1|NOC_BACC2 Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|B7JIK8|NOC_BACC0 Nucleoid occlusion protein OS=Bacillus cereus...  56.6    2e-09
+sp|Q81JH5|NOC_BACAN Nucleoid occlusion protein OS=Bacillus anthra...  56.6    2e-09
+sp|A0RLQ9|NOC_BACAH Nucleoid occlusion protein OS=Bacillus thurin...  56.6    2e-09
+sp|C3LGT8|NOC_BACAC Nucleoid occlusion protein OS=Bacillus anthra...  56.6    2e-09
+sp|C3P3F2|NOC_BACAA Nucleoid occlusion protein OS=Bacillus anthra...  56.6    2e-09
+sp|Q83AH2|PARB_COXBU Probable chromosome-partitioning protein Par...  56.2    3e-09
+sp|Q8EKU5|NOC_OCEIH Nucleoid occlusion protein OS=Oceanobacillus ...  55.8    4e-09
+sp|Q9ZE87|PARB_RICPR Probable chromosome-partitioning protein Par...  55.4    5e-09
+sp|O25758|PARB_HELPY Probable chromosome-partitioning protein Par...  55.1    6e-09
+sp|Q5WAG6|NOC_BACSK Nucleoid occlusion protein OS=Bacillus clausi...  55.1    6e-09
+sp|Q92JI0|PARB_RICCN Probable chromosome-partitioning protein Par...  55.1    7e-09
+sp|Q9ZK75|PARB_HELPJ Probable chromosome-partitioning protein Par...  54.7    1e-08
+sp|Q4UN91|PARB_RICFE Probable chromosome-partitioning protein Par...  54.3    1e-08
+sp|Q9PHE9|PARB2_XYLFA Probable plasmid-partitioning protein ParB ...  53.1    4e-08
+sp|Q1RGT4|PARB_RICBR Probable chromosome-partitioning protein Par...  52.8    4e-08
+sp|Q9PJ25|PARB_CAMJE Probable chromosome-partitioning protein Par...  50.8    2e-07
+sp|Q9KNG7|PARB_VIBCH Probable chromosome-partitioning protein Par...  49.3    8e-07
+sp|Q87BY1|PARB_XYLFT Probable chromosome-partitioning protein Par...  47.7    2e-06
+sp|Q9PB63|PARB_XYLFA Probable chromosome-partitioning protein Par...  47.7    3e-06
+
+
+>sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=1 SV=1
+Length=358
+
+ Score = 185 bits (470),  Expect = 4e-58, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI
+Sbjct  139  EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  198
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE
+Sbjct  199  ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  252
+
+
+>sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=3 SV=2
+Length=349
+
+ Score = 184 bits (468),  Expect = 8e-58, Method: Composition-based stats.
+ Identities = 95/114 (83%), Positives = 108/114 (95%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELT REIADFIGRELAKGKKKG+IAKEIGKSPAF+TQHVTLLDLPE I
+Sbjct  131  EADQVIENLQRNELTAREIADFIGRELAKGKKKGEIAKEIGKSPAFVTQHVTLLDLPEPI  190
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            A+AFN+GR +DVTV+NELVTA+KK P+EV AWL DD+QE+TRG+VKLLREFL++
+Sbjct  191  AEAFNSGRGKDVTVINELVTAYKKNPDEVAAWLADDSQELTRGSVKLLREFLED  244
+
+
+>sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein 
+ParB OS=Chlamydia trachomatis (strain D/UW-3/Cx) OX=272561 
+GN=parB PE=3 SV=1
+Length=281
+
+ Score = 91.3 bits (225),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 39/66 (59%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E+A+   R +   G  +  +AK++GK  + +  ++ L  LP+++ + 
+Sbjct  102  LIENIQRVNLNPLEMAEAFRRLIVVFGLTQDKVAKKVGKKRSTVANYLRLFSLPQEVQEK  161
+
+Query  64   FNTGRV  69
+             N+G +
+Sbjct  162  MNSGEI  167
+
+
+>sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein 
+ParB OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 
+20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 
+/ VKM B-1422) OX=243230 GN=parB1 PE=3 SV=1
+Length=288
+
+ Score = 90.1 bits (222),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 36/65 (55%), Gaps = 0/65 (0%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADAF  64
+            ++ENLQR +L P E A      L +G  +  +A+ +GK  + +T  + LL LPE +  A 
+Sbjct  117  IVENLQREDLGPLEEARAYQALLDQGLNQEGVAQAVGKGRSTVTNALRLLTLPEPVLRAL  176
+
+Query  65   NTGRV  69
+            + G +
+Sbjct  177  DEGSI  181
+
+
+>sp|Q9PLN9|PARB_CHLMU Probable chromosome-partitioning protein 
+ParB OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 
+GN=parB PE=3 SV=1
+Length=280
+
+ Score = 82.4 bits (202),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 37/66 (56%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E+A+   R +   G  +  +AK++GK  + +  ++ L  L  +I + 
+Sbjct  102  LIENIQRVNLNPLEMAEAFRRLIVVFGLTQDKVAKKVGKKRSTVANYLRLFSLSNEIQEK  161
+
+Query  64   FNTGRV  69
+             N+G +
+Sbjct  162  INSGEL  167
+
+
+>sp|Q72H91|SP0J_THET2 Chromosome-partitioning protein Spo0J OS=Thermus 
+thermophilus (strain HB27 / ATCC BAA-163 / DSM 7039) 
+OX=262724 GN=spo0C PE=1 SV=1
+Length=269
+
+ Score = 74.3 bits (181),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 20/65 (31%), Positives = 36/65 (55%), Gaps = 0/65 (0%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADAF  64
+            ++ENLQR +L+P E A      L  G  + ++A+ +GK+ + +   + LL LP +  +A 
+Sbjct  109  LVENLQREDLSPVEEARGYQALLEMGLTQEEVARRVGKARSTVANALRLLQLPPEALEAL  168
+
+Query  65   NTGRV  69
+              G +
+Sbjct  169  ERGEI  173
+
+
+>sp|Q9Z7M0|PARB_CHLPN Probable chromosome-partitioning protein 
+ParB OS=Chlamydia pneumoniae OX=83558 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 73.2 bits (178),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 37/66 (56%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E+A+   R +   G  +  +A ++GK  + +  ++ LL L + I ++
+Sbjct  102  LIENIQRVNLNPIEMAEAFKRLIHVFGLTQDKVAYKVGKKRSTVANYLRLLALSKTIQES  161
+
+Query  64   FNTGRV  69
+               G++
+Sbjct  162  LLQGQI  167
+
+
+>sp|O83295|PARB_TREPA Probable chromosome-partitioning protein 
+ParB OS=Treponema pallidum (strain Nichols) OX=243276 GN=parB 
+PE=3 SV=1
+Length=324
+
+ Score = 72.0 bits (175),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 19/63 (30%), Positives = 34/63 (54%), Gaps = 1/63 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAKG-KKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E A      +  G     ++A+ +GK+ + IT  + LL LP ++  +
+Sbjct  119  LIENVQRENLNPLEEARAYQHIMDLGNLSHEELAQRVGKNRSTITNALRLLKLPPEVQQS  178
+
+Query  64   FNT  66
+             ++
+Sbjct  179  LSS  181
+
+
+>sp|Q9JXP5|PARB_NEIMB Probable chromosome-partitioning protein 
+ParB OS=Neisseria meningitidis serogroup B (strain MC58) OX=122586 
+GN=parB PE=3 SV=1
+Length=286
+
+ Score = 68.2 bits (165),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 24/67 (36%), Positives = 35/67 (52%), Gaps = 1/67 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR  L P E A  + R   + G     IA+ +GKS + I+  + LL LPE + + 
+Sbjct  115  LIENLQRENLNPIEEAQGLKRLADEFGLTHETIAQAVGKSRSAISNSLRLLSLPEPVQEM  174
+
+Query  64   FNTGRVR  70
+                R+ 
+Sbjct  175  LYQRRLE  181
+
+
+>sp|Q9JW77|PARB_NEIMA Probable chromosome-partitioning protein 
+ParB OS=Neisseria meningitidis serogroup A / serotype 4A (strain 
+Z2491) OX=122587 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 68.2 bits (165),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 24/67 (36%), Positives = 35/67 (52%), Gaps = 1/67 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR  L P E A  + R   + G     IA+ +GKS + I+  + LL LPE + + 
+Sbjct  115  LIENLQRENLNPIEEAQGLKRLADEFGLTHETIAQAVGKSRSAISNSLRLLSLPEPVQEM  174
+
+Query  64   FNTGRVR  70
+                R+ 
+Sbjct  175  LYQRRLE  181
+
+
+>sp|A7ZAV8|NOC_BACVZ Nucleoid occlusion protein OS=Bacillus velezensis 
+(strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 GN=noc 
+PE=3 SV=1
+Length=283
+
+ Score = 63.9 bits (154),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 23/68 (34%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LPE + DA
+Sbjct  118  LIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPEPVQDA  177
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  178  IMEKKITE  185
+
+
+>sp|P9WIJ9|PARB_MYCTU Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) 
+OX=83332 GN=parB PE=1 SV=1
+Length=344
+
+ Score = 64.3 bits (155),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 32/66 (48%), Gaps = 1/66 (2%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTG  67
+                 G
+Sbjct  209  RRVAAG  214
+
+
+>sp|P9WIJ8|PARB_MYCTO Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=parB PE=3 SV=1
+Length=344
+
+ Score = 64.3 bits (155),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 32/66 (48%), Gaps = 1/66 (2%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTG  67
+                 G
+Sbjct  209  RRVAAG  214
+
+
+>sp|P0A5R3|PARB_MYCBO Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=parB PE=3 SV=1
+Length=344
+
+ Score = 64.3 bits (155),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 32/66 (48%), Gaps = 1/66 (2%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTG  67
+                 G
+Sbjct  209  RRVAAG  214
+
+
+>sp|P37524|NOC_BACSU Nucleoid occlusion protein OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=noc PE=1 SV=1
+Length=283
+
+ Score = 62.4 bits (150),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 21/68 (31%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LP+ + +A
+Sbjct  118  LIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPQPVQEA  177
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  178  IMEKKITE  185
+
+
+>sp|Q5KU60|NOC_GEOKA Nucleoid occlusion protein OS=Geobacillus 
+kaustophilus (strain HTA426) OX=235909 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 62.0 bits (149),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 21/61 (34%), Positives = 34/61 (56%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A    + +      +  +A+ +GK  + I   + LL LP+++ +A
+Sbjct  115  LIENLQREELTPIEEAMAYAKLIELHDLTQEALAQRLGKGQSTIANKLRLLKLPQEVQEA  174
+
+Query  64   F  64
+             
+Sbjct  175  L  175
+
+
+>sp|A4ITW8|NOC_GEOTN Nucleoid occlusion protein OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 61.6 bits (148),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 22/61 (36%), Positives = 34/61 (56%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A    R +      +  +A+ +GK  + I   + LL LP+++ +A
+Sbjct  115  LIENLQREELTPIEEAMAYARLIELHDLTQEALAQRLGKGQSTIANKLRLLKLPQEVQEA  174
+
+Query  64   F  64
+             
+Sbjct  175  L  175
+
+
+>sp|Q50201|PARB_MYCLE Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium leprae (strain TN) OX=272631 GN=parB 
+PE=3 SV=1
+Length=333
+
+ Score = 62.0 bits (149),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 31/66 (47%), Gaps = 1/66 (2%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L +      ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFEVTHDELASRIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTG  67
+                 G
+Sbjct  209  RRVAAG  214
+
+
+>sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=spo0J PE=1 SV=2
+Length=282
+
+ Score = 61.2 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 33/66 (50%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            ++ENLQR +L+P E A      L      +  +AK +GKS   I  H+ LL LPE I   
+Sbjct  109  LLENLQREDLSPLEEAQAYDSLLKHLDLTQEQLAKRLGKSRPHIANHLRLLTLPENIQQL  168
+
+Query  64   FNTGRV  69
+               G +
+Sbjct  169  IAEGTL  174
+
+
+>sp|C5D9Y4|NOC_GEOSW Nucleoid occlusion protein OS=Geobacillus 
+sp. (strain WCH70) OX=471223 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 61.2 bits (147),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 22/61 (36%), Positives = 34/61 (56%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A    + L      +  +A+ +GK  + I   + LL LP+++ +A
+Sbjct  115  LIENLQREELTPIEEAMAYAKLLELHNLTQEALAQRLGKGQSTIANKLRLLKLPQEVQEA  174
+
+Query  64   F  64
+             
+Sbjct  175  L  175
+
+
+>sp|A8FJF7|NOC_BACP2 Nucleoid occlusion protein OS=Bacillus pumilus 
+(strain SAFR-032) OX=315750 GN=noc PE=3 SV=1
+Length=291
+
+ Score = 60.8 bits (146),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 21/68 (31%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR EL+  E A    R L      +  +A+ +GK  + +   + LL LPE++  A
+Sbjct  125  LIENLQREELSAIEEAHAYARLLELHDLTQEALAQRLGKGQSTVANKLRLLKLPEEVQQA  184
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  185  ILEKKISE  192
+
+
+>sp|Q65CN4|NOC_BACLD Nucleoid occlusion protein OS=Bacillus licheniformis 
+(strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 12200 
+/ NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 GN=noc 
+PE=3 SV=1
+Length=283
+
+ Score = 60.1 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LPE++ +A
+Sbjct  118  LIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPEEVQEA  177
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  178  ILKKEISE  185
+
+
+>sp|Q71VW9|NOC_LISMF Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4b (strain F2365) OX=265669 GN=noc PE=3 
+SV=1
+Length=284
+
+ Score = 60.1 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/68 (35%), Positives = 37/68 (54%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE + +A
+Sbjct  113  LIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETVQEA  172
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  173  VLNKQISE  180
+
+
+>sp|C1L0C8|NOC_LISMC Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4b (strain CLIP80459) OX=568819 GN=noc 
+PE=3 SV=1
+Length=284
+
+ Score = 60.1 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/68 (35%), Positives = 37/68 (54%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE + +A
+Sbjct  113  LIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETVQEA  172
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  173  VLNKQISE  180
+
+
+>sp|Q926W4|NOC_LISIN Nucleoid occlusion protein OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=noc PE=3 SV=1
+Length=284
+
+ Score = 60.1 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/68 (35%), Positives = 37/68 (54%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE + +A
+Sbjct  113  LIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETVQEA  172
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  173  VLNKQISE  180
+
+
+>sp|A0AMC3|NOC_LISW6 Nucleoid occlusion protein OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=noc PE=3 SV=1
+Length=284
+
+ Score = 60.1 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/68 (35%), Positives = 36/68 (53%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +  A
+Sbjct  113  LIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKLRLLKLPEAVQQA  172
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  173  VLNKQISE  180
+
+
+>sp|Q8Y3P1|NOC_LISMO Nucleoid occlusion protein OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=noc PE=3 SV=1
+Length=284
+
+ Score = 59.7 bits (143),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/61 (39%), Positives = 34/61 (56%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE + +A
+Sbjct  113  LIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETVQEA  172
+
+Query  64   F  64
+             
+Sbjct  173  V  173
+
+
+>sp|B8DD20|NOC_LISMH Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4a (strain HCC23) OX=552536 GN=noc PE=3 
+SV=1
+Length=287
+
+ Score = 59.7 bits (143),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/68 (35%), Positives = 37/68 (54%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE + +A
+Sbjct  116  LIENLQREELTPIEEAKAYRSLLDMQEVTQEALAQRVGKSQSAIANKMRLLKLPETVQEA  175
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  176  VLNKQISE  183
+
+
+>sp|O51395|PARB_BORBU Probable chromosome-partitioning protein 
+ParB OS=Borrelia burgdorferi (strain ATCC 35210 / B31 / CIP 
+102532 / DSM 4680) OX=224326 GN=parB PE=3 SV=1
+Length=260
+
+ Score = 58.1 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 38/66 (58%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            ++EN+QR   TP E A      + K    + D++++IGKS  +I+  V +LDL ++I +A
+Sbjct  91   LVENIQRENFTPVEEAYAYKNIMNKYSLTQKDLSEKIGKSRTYISNLVRILDLEQEILNA  150
+
+Query  64   FNTGRV  69
+             +   +
+Sbjct  151  IHRKEI  156
+
+
+>sp|Q9K5M9|NOC_BACHD Nucleoid occlusion protein OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 
+9153 / C-125) OX=272558 GN=noc PE=3 SV=1
+Length=283
+
+ Score = 58.1 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 33/68 (49%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR  LT  E A    + +   G  +  +A+ +GK  + I   + LL L E +  A
+Sbjct  113  LIENLQREGLTAVEEAVAYQKLIELHGLTQESLAQRLGKGQSTIANKLRLLHLSEPVQQA  172
+
+Query  64   FNTGRVRD  71
+                ++ +
+Sbjct  173  IMERKISE  180
+
+
+>sp|P0A152|PARB_PSEPU Probable chromosome-partitioning protein 
+ParB OS=Pseudomonas putida OX=303 GN=parB PE=3 SV=1
+Length=290
+
+ Score = 58.1 bits (139),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 33/70 (47%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R   +    +  +A  +GKS   +   + L+ LP+ I
+Sbjct  120  AMALIENIQREDLNPLEEAMALQRLQQEFELTQQQVADAVGKSRVTVANLLRLITLPDAI  179
+
+Query  61   ADAFNTGRVR  70
+                  G + 
+Sbjct  180  KTMLAHGDLE  189
+
+
+>sp|P0A151|PARB_PSEPK Probable chromosome-partitioning protein 
+ParB OS=Pseudomonas putida (strain ATCC 47054 / DSM 6125 / 
+NCIMB 11950 / KT2440) OX=160488 GN=parB PE=3 SV=1
+Length=290
+
+ Score = 58.1 bits (139),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 33/70 (47%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R   +    +  +A  +GKS   +   + L+ LP+ I
+Sbjct  120  AMALIENIQREDLNPLEEAMALQRLQQEFELTQQQVADAVGKSRVTVANLLRLITLPDAI  179
+
+Query  61   ADAFNTGRVR  70
+                  G + 
+Sbjct  180  KTMLAHGDLE  189
+
+
+>sp|A7GVP4|NOC_BACCN Nucleoid occlusion protein OS=Bacillus cytotoxicus 
+(strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 57.8 bits (138),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 21/68 (31%), Positives = 33/68 (49%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE I  +
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEDIKRS  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|A9VTL7|NOC_BACMK Nucleoid occlusion protein OS=Bacillus mycoides 
+(strain KBAB4) OX=315730 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 57.4 bits (137),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 21/68 (31%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + +   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTVANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B8GW30|PARB_CAUVN Chromosome-partitioning protein ParB OS=Caulobacter 
+vibrioides (strain NA1000 / CB15N) OX=565050 GN=parB 
+PE=1 SV=2
+Length=304
+
+ Score = 57.4 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 36/66 (55%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L   E A      + K  + + +IA+ IGKS + +   + LL LP+++   
+Sbjct  133  IIENVQRADLNVLEEALSYKVLMEKFERTQENIAQTIGKSRSHVANTMRLLALPDEVQSY  192
+
+Query  64   FNTGRV  69
+              +G +
+Sbjct  193  LVSGEL  198
+
+
+>sp|P0CAV8|PARB_CAUVC Chromosome-partitioning protein ParB OS=Caulobacter 
+vibrioides (strain ATCC 19089 / CB15) OX=190650 
+GN=parB PE=1 SV=2
+Length=304
+
+ Score = 57.4 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 36/66 (55%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L   E A      + K  + + +IA+ IGKS + +   + LL LP+++   
+Sbjct  133  IIENVQRADLNVLEEALSYKVLMEKFERTQENIAQTIGKSRSHVANTMRLLALPDEVQSY  192
+
+Query  64   FNTGRV  69
+              +G +
+Sbjct  193  LVSGEL  198
+
+
+>sp|B1HPM0|NOC_LYSSC Nucleoid occlusion protein OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=noc PE=3 SV=1
+Length=298
+
+ Score = 57.0 bits (136),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/61 (33%), Positives = 32/61 (52%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + L      +  +A+ +GK  + +   + LL LP+++  A
+Sbjct  122  LIENLQREELTAIEEAVAYQKLLELHELTQEALAQRLGKGQSTVANKLRLLRLPDEVQQA  181
+
+Query  64   F  64
+             
+Sbjct  182  I  182
+
+
+>sp|Q68XT3|PARB_RICTY Probable chromosome-partitioning protein 
+ParB OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) 
+OX=257363 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 57.0 bits (136),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 31/63 (49%), Gaps = 1/63 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D 
+Sbjct  110  LIENIQRTDLTVMEEARGFKYLVDNFNYTVEKLAERLGKSRSHIANLLRLNNLPQSIQDK  169
+
+Query  64   FNT  66
+             N 
+Sbjct  170  LNE  172
+
+
+>sp|Q72WU6|NOC_BACC1 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 57.0 bits (136),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKNA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|Q630C1|NOC_BACCZ Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ZK / E33L) OX=288681 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 57.0 bits (136),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKNA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B9IT39|NOC_BACCQ Nucleoid occlusion protein OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKNA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B7HZG7|NOC_BACC7 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain AH187) OX=405534 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKNA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|Q6HAF5|NOC_BACHK Nucleoid occlusion protein OS=Bacillus thuringiensis 
+subsp. konkukian (strain 97-27) OX=281309 GN=noc 
+PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|Q814F9|NOC_BACCR Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B7HGE1|NOC_BACC4 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain B4264) OX=405532 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|C1ER74|NOC_BACC3 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B7IST1|NOC_BACC2 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain G9842) OX=405531 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|B7JIK8|NOC_BACC0 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain AH820) OX=405535 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|Q81JH5|NOC_BACAN Nucleoid occlusion protein OS=Bacillus anthracis 
+OX=1392 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|A0RLQ9|NOC_BACAH Nucleoid occlusion protein OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|C3LGT8|NOC_BACAC Nucleoid occlusion protein OS=Bacillus anthracis 
+(strain CDC 684 / NRRL 3495) OX=568206 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|C3P3F2|NOC_BACAA Nucleoid occlusion protein OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 56.6 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  A
+Sbjct  123  LIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKSA  182
+
+Query  64   FNTGRVRD  71
+                 + +
+Sbjct  183  LLEKSITE  190
+
+
+>sp|Q83AH2|PARB_COXBU Probable chromosome-partitioning protein 
+ParB OS=Coxiella burnetii (strain RSA 493 / Nine Mile phase 
+I) OX=227377 GN=parB PE=1 SV=2
+Length=290
+
+ Score = 56.2 bits (134),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 31/66 (47%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L   E A  + R L +      +IA+ +GKS   +T  + LL L   +   
+Sbjct  123  LIENIQRQNLNAIEEAAALQRLLDEFKMTHEEIAEAVGKSRTSVTNSLRLLKLNPDVKAL  182
+
+Query  64   FNTGRV  69
+               G +
+Sbjct  183  LEQGHL  188
+
+
+>sp|Q8EKU5|NOC_OCEIH Nucleoid occlusion protein OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=noc PE=3 SV=1
+Length=286
+
+ Score = 55.8 bits (133),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 21/61 (34%), Positives = 33/61 (54%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR ELT  E A    + L      +  +A+ +GK+ + +   + LL LPE++  A
+Sbjct  117  LIENLQREELTVIEEAIAYSKLLELHSLTQEALAQRLGKNQSTVANKLRLLKLPEEVQTA  176
+
+Query  64   F  64
+             
+Sbjct  177  L  177
+
+
+>sp|Q9ZE87|PARB_RICPR Probable chromosome-partitioning protein 
+ParB OS=Rickettsia prowazekii (strain Madrid E) OX=272947 GN=parB 
+PE=3 SV=1
+Length=286
+
+ Score = 55.4 bits (132),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 31/63 (49%), Gaps = 1/63 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D 
+Sbjct  110  LIENIQRTDLTVMEEARGFKYLVENFNYTVEKLAERLGKSRSHIANLLRLNNLPQSIQDK  169
+
+Query  64   FNT  66
+             N 
+Sbjct  170  LNE  172
+
+
+>sp|O25758|PARB_HELPY Probable chromosome-partitioning protein 
+ParB OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 
+GN=parB PE=1 SV=1
+Length=290
+
+ Score = 55.1 bits (131),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 34/66 (52%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L P E+A      L      + +++K + KS A +   + LL L  K+ +A
+Sbjct  119  LIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNA  178
+
+Query  64   FNTGRV  69
+                ++
+Sbjct  179  LLEEKI  184
+
+
+>sp|Q5WAG6|NOC_BACSK Nucleoid occlusion protein OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=noc PE=3 SV=1
+Length=283
+
+ Score = 55.1 bits (131),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 20/61 (33%), Positives = 31/61 (51%), Gaps = 1/61 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IENLQR  LT  E A    + +      +  +A+ +GK  + I   + LL LP+ + DA
+Sbjct  112  LIENLQREGLTAIEEATAYAKLIEIHNLTQESLAQRLGKGQSTIANKLRLLHLPQAVQDA  171
+
+Query  64   F  64
+             
+Sbjct  172  I  172
+
+
+>sp|Q92JI0|PARB_RICCN Probable chromosome-partitioning protein 
+ParB OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) 
+OX=272944 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 55.1 bits (131),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 31/63 (49%), Gaps = 1/63 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D 
+Sbjct  110  LIENIQRTDLTVMEEARGFKYLIENFNYTAEKLAERLGKSRSHIANLLRLNNLPQSIQDK  169
+
+Query  64   FNT  66
+             N 
+Sbjct  170  VNE  172
+
+
+>sp|Q9ZK75|PARB_HELPJ Probable chromosome-partitioning protein 
+ParB OS=Helicobacter pylori (strain J99 / ATCC 700824) OX=85963 
+GN=parB PE=3 SV=1
+Length=290
+
+ Score = 54.7 bits (130),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 34/66 (52%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L P E+A      L      + +++K + KS A +   + LL L  K+ +A
+Sbjct  119  LIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNA  178
+
+Query  64   FNTGRV  69
+                ++
+Sbjct  179  LLEEKI  184
+
+
+>sp|Q4UN91|PARB_RICFE Probable chromosome-partitioning protein 
+ParB OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) 
+OX=315456 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 54.3 bits (129),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 31/63 (49%), Gaps = 1/63 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D 
+Sbjct  110  LIENIQRTDLTVMEEARGFKYLVENFNYTTEKLAERLGKSRSHIANLLRLNNLPQSIQDK  169
+
+Query  64   FNT  66
+             N 
+Sbjct  170  VNE  172
+
+
+>sp|Q9PHE9|PARB2_XYLFA Probable plasmid-partitioning protein ParB 
+OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=XF_a0059 
+PE=3 SV=1
+Length=401
+
+ Score = 53.1 bits (126),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 31/103 (30%), Positives = 50/103 (49%), Gaps = 2/103 (2%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            E  Q+ EN+ R  LT  E A  I R+L K      + ++  KS  ++++ + LL+LPE+ 
+Sbjct  135  EDAQMAENIHRKNLTQIEEAKKIQRDLDKLGSVDAVLEKHQKSRPWLSKMLALLNLPEQA  194
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRG  103
+                      DV V+N +    K  P + +  +DD  +  TRG
+Sbjct  195  KRLVIENVSADVEVINTVKMVEKINPVKAKELVDDLKK--TRG  235
+
+
+>sp|Q1RGT4|PARB_RICBR Probable chromosome-partitioning protein 
+ParB OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=parB 
+PE=3 SV=2
+Length=287
+
+ Score = 52.8 bits (125),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 33/66 (50%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR++LT  E A      +         +A+ +GKS + I   + L +LP+ I + 
+Sbjct  112  LIENIQRSDLTVMEEARGFKYLVENFNYTAEKLAERLGKSRSHIANLLRLNNLPQSIQNK  171
+
+Query  64   FNTGRV  69
+             +   +
+Sbjct  172  LDENTL  177
+
+
+>sp|Q9PJ25|PARB_CAMJE Probable chromosome-partitioning protein 
+ParB OS=Campylobacter jejuni subsp. jejuni serotype O:2 (strain 
+ATCC 700819 / NCTC 11168) OX=192222 GN=parB PE=3 SV=1
+Length=278
+
+ Score = 50.8 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 36/66 (55%), Gaps = 1/66 (2%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAKGK-KKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR  L P E+A+     +   K  + ++A+ I KS   IT  + LL+L  +  + 
+Sbjct  117  LIENIQRENLNPIELANSYKDLMQVHKITQENLAELIHKSRTQITNTLRLLNLDIRTQEL  176
+
+Query  64   FNTGRV  69
+              +G++
+Sbjct  177  IASGKI  182
+
+
+>sp|Q9KNG7|PARB_VIBCH Probable chromosome-partitioning protein 
+ParB OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El 
+Tor Inaba N16961) OX=243277 GN=parB PE=3 SV=1
+Length=293
+
+ Score = 49.3 bits (116),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 19/70 (27%), Positives = 32/70 (46%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L   E A  + R   +       +A+ IGKS   +T  + L  L + +
+Sbjct  123  AMALIENIQREDLNAMEEAQALERLQNEFNLTHQQVAEVIGKSRTTVTNLLRLNQLSDDV  182
+
+Query  61   ADAFNTGRVR  70
+                 T ++ 
+Sbjct  183  KRLLETKQLE  192
+
+
+>sp|Q87BY1|PARB_XYLFT Probable chromosome-partitioning protein 
+ParB OS=Xylella fastidiosa (strain Temecula1 / ATCC 700964) 
+OX=183190 GN=parB PE=3 SV=1
+Length=310
+
+ Score = 47.7 bits (112),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 27/49 (55%), Gaps = 1/49 (2%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQ  49
+            A  +IEN+QR +L P E A  + R + +      + A+ +G+S A ++ 
+Sbjct  127  AMALIENIQREDLNPLEEAQALQRLIDEFSLTHAEAAEAVGRSRAAVSN  175
+
+
+>sp|Q9PB63|PARB_XYLFA Probable chromosome-partitioning protein 
+ParB OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=parB 
+PE=3 SV=1
+Length=310
+
+ Score = 47.7 bits (112),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 27/49 (55%), Gaps = 1/49 (2%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQ  49
+            A  +IEN+QR +L P E A  + R + +      + A+ +G+S A ++ 
+Sbjct  127  AMALIENIQREDLNPLEEAQALQRLIDEFSLTHAEAAEAVGRSRAAVSN  175
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 3
+
+
+Query= d1r71a_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB OS=E...  151     7e-45
+sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB OS=E...  151     8e-45
+sp|Q9PHE9|PARB2_XYLFA Probable plasmid-partitioning protein ParB ...  115     6e-31
+sp|O83295|PARB_TREPA Probable chromosome-partitioning protein Par...  95.5    1e-23
+sp|A7ZAV8|NOC_BACVZ Nucleoid occlusion protein OS=Bacillus veleze...  91.2    3e-22
+sp|Q9JXP5|PARB_NEIMB Probable chromosome-partitioning protein Par...  90.5    5e-22
+sp|P9WIJ9|PARB_MYCTU Probable chromosome-partitioning protein Par...  91.2    6e-22
+sp|P9WIJ8|PARB_MYCTO Probable chromosome-partitioning protein Par...  91.2    6e-22
+sp|P0A5R3|PARB_MYCBO Probable chromosome-partitioning protein Par...  91.2    6e-22
+sp|Q9JW77|PARB_NEIMA Probable chromosome-partitioning protein Par...  90.5    6e-22
+sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein ...  90.1    8e-22
+sp|Q50201|PARB_MYCLE Probable chromosome-partitioning protein Par...  90.5    1e-21
+sp|Q5KU60|NOC_GEOKA Nucleoid occlusion protein OS=Geobacillus kau...  88.5    3e-21
+sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein Par...  87.8    4e-21
+sp|Q72H91|SP0J_THET2 Chromosome-partitioning protein Spo0J OS=The...  87.8    5e-21
+sp|P37524|NOC_BACSU Nucleoid occlusion protein OS=Bacillus subtil...  87.8    5e-21
+sp|A8FJF7|NOC_BACP2 Nucleoid occlusion protein OS=Bacillus pumilu...  87.4    8e-21
+sp|A4ITW8|NOC_GEOTN Nucleoid occlusion protein OS=Geobacillus the...  86.6    1e-20
+sp|Q65CN4|NOC_BACLD Nucleoid occlusion protein OS=Bacillus lichen...  86.6    2e-20
+sp|C5D9Y4|NOC_GEOSW Nucleoid occlusion protein OS=Geobacillus sp....  86.2    2e-20
+sp|Q71VW9|NOC_LISMF Nucleoid occlusion protein OS=Listeria monocy...  85.5    3e-20
+sp|C1L0C8|NOC_LISMC Nucleoid occlusion protein OS=Listeria monocy...  85.5    3e-20
+sp|Q926W4|NOC_LISIN Nucleoid occlusion protein OS=Listeria innocu...  85.5    4e-20
+sp|A0AMC3|NOC_LISW6 Nucleoid occlusion protein OS=Listeria welshi...  85.1    5e-20
+sp|B8DD20|NOC_LISMH Nucleoid occlusion protein OS=Listeria monocy...  85.1    7e-20
+sp|B1HPM0|NOC_LYSSC Nucleoid occlusion protein OS=Lysinibacillus ...  85.1    8e-20
+sp|P0A152|PARB_PSEPU Probable chromosome-partitioning protein Par...  84.3    1e-19
+sp|P0A151|PARB_PSEPK Probable chromosome-partitioning protein Par...  84.3    1e-19
+sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus su...  84.3    1e-19
+sp|Q9K5M9|NOC_BACHD Nucleoid occlusion protein OS=Bacillus halodu...  84.3    1e-19
+sp|Q68XT3|PARB_RICTY Probable chromosome-partitioning protein Par...  84.3    1e-19
+sp|Q8Y3P1|NOC_LISMO Nucleoid occlusion protein OS=Listeria monocy...  83.9    1e-19
+sp|A7GVP4|NOC_BACCN Nucleoid occlusion protein OS=Bacillus cytoto...  82.8    4e-19
+sp|Q9ZE87|PARB_RICPR Probable chromosome-partitioning protein Par...  82.8    4e-19
+sp|Q92JI0|PARB_RICCN Probable chromosome-partitioning protein Par...  82.0    7e-19
+sp|Q9PLN9|PARB_CHLMU Probable chromosome-partitioning protein Par...  82.0    8e-19
+sp|B8GW30|PARB_CAUVN Chromosome-partitioning protein ParB OS=Caul...  82.4    8e-19
+sp|P0CAV8|PARB_CAUVC Chromosome-partitioning protein ParB OS=Caul...  82.4    8e-19
+sp|O51395|PARB_BORBU Probable chromosome-partitioning protein Par...  81.6    8e-19
+sp|Q9Z7M0|PARB_CHLPN Probable chromosome-partitioning protein Par...  82.0    9e-19
+sp|Q630C1|NOC_BACCZ Nucleoid occlusion protein OS=Bacillus cereus...  81.6    1e-18
+sp|Q72WU6|NOC_BACC1 Nucleoid occlusion protein OS=Bacillus cereus...  81.6    1e-18
+sp|A9VTL7|NOC_BACMK Nucleoid occlusion protein OS=Bacillus mycoid...  81.6    1e-18
+sp|Q8EKU5|NOC_OCEIH Nucleoid occlusion protein OS=Oceanobacillus ...  81.6    1e-18
+sp|B9IT39|NOC_BACCQ Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|B7HZG7|NOC_BACC7 Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|Q814F9|NOC_BACCR Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|B7HGE1|NOC_BACC4 Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|B7IST1|NOC_BACC2 Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|Q6HAF5|NOC_BACHK Nucleoid occlusion protein OS=Bacillus thurin...  81.2    2e-18
+sp|C1ER74|NOC_BACC3 Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|B7JIK8|NOC_BACC0 Nucleoid occlusion protein OS=Bacillus cereus...  81.2    2e-18
+sp|Q81JH5|NOC_BACAN Nucleoid occlusion protein OS=Bacillus anthra...  81.2    2e-18
+sp|A0RLQ9|NOC_BACAH Nucleoid occlusion protein OS=Bacillus thurin...  81.2    2e-18
+sp|C3LGT8|NOC_BACAC Nucleoid occlusion protein OS=Bacillus anthra...  81.2    2e-18
+sp|C3P3F2|NOC_BACAA Nucleoid occlusion protein OS=Bacillus anthra...  81.2    2e-18
+sp|Q83AH2|PARB_COXBU Probable chromosome-partitioning protein Par...  81.2    2e-18
+sp|Q4UN91|PARB_RICFE Probable chromosome-partitioning protein Par...  80.8    2e-18
+sp|Q5WAG6|NOC_BACSK Nucleoid occlusion protein OS=Bacillus clausi...  80.5    3e-18
+sp|Q1RGT4|PARB_RICBR Probable chromosome-partitioning protein Par...  80.5    3e-18
+sp|Q9KNG7|PARB_VIBCH Probable chromosome-partitioning protein Par...  79.3    9e-18
+sp|O25758|PARB_HELPY Probable chromosome-partitioning protein Par...  77.0    7e-17
+sp|Q9PJ25|PARB_CAMJE Probable chromosome-partitioning protein Par...  76.6    9e-17
+sp|Q9ZK75|PARB_HELPJ Probable chromosome-partitioning protein Par...  75.8    2e-16
+sp|Q9PB63|PARB_XYLFA Probable chromosome-partitioning protein Par...  67.4    2e-13
+sp|Q87BY1|PARB_XYLFT Probable chromosome-partitioning protein Par...  67.0    4e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9RZE7|PARB2_DEIRA Probable chromosome 2-partitioning protein ...  38.5    0.005
+
+
+>sp|P07674|KORB2_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=1 SV=1
+Length=358
+
+ Score = 151 bits (382),  Expect = 7e-45, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI
+Sbjct  139  EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  198
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE
+Sbjct  199  ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  252
+
+
+>sp|Q52313|KORB1_ECOLX Transcriptional repressor protein KorB 
+OS=Escherichia coli OX=562 GN=korB PE=3 SV=2
+Length=349
+
+ Score = 151 bits (381),  Expect = 8e-45, Method: Composition-based stats.
+ Identities = 95/114 (83%), Positives = 108/114 (95%), Gaps = 0/114 (0%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            EADQVIENLQRNELT REIADFIGRELAKGKKKG+IAKEIGKSPAF+TQHVTLLDLPE I
+Sbjct  131  EADQVIENLQRNELTAREIADFIGRELAKGKKKGEIAKEIGKSPAFVTQHVTLLDLPEPI  190
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+            A+AFN+GR +DVTV+NELVTA+KK P+EV AWL DD+QE+TRG+VKLLREFL++
+Sbjct  191  AEAFNSGRGKDVTVINELVTAYKKNPDEVAAWLADDSQELTRGSVKLLREFLED  244
+
+
+>sp|Q9PHE9|PARB2_XYLFA Probable plasmid-partitioning protein ParB 
+OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=XF_a0059 
+PE=3 SV=1
+Length=401
+
+ Score = 115 bits (289),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 31/103 (30%), Positives = 50/103 (49%), Gaps = 2/103 (2%)
+
+Query  1    EADQVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            E  Q+ EN+ R  LT  E A  I R+L K      + ++  KS  ++++ + LL+LPE+ 
+Sbjct  135  EDAQMAENIHRKNLTQIEEAKKIQRDLDKLGSVDAVLEKHQKSRPWLSKMLALLNLPEQA  194
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRG  103
+                      DV V+N +    K  P + +  +DD  +  TRG
+Sbjct  195  KRLVIENVSADVEVINTVKMVEKINPVKAKELVDDLKK--TRG  235
+
+
+>sp|O83295|PARB_TREPA Probable chromosome-partitioning protein 
+ParB OS=Treponema pallidum (strain Nichols) OX=243276 GN=parB 
+PE=3 SV=1
+Length=324
+
+ Score = 95.5 bits (236),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 36/70 (51%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAKG-KKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR  L P E A      +  G     ++A+ +GK+ + IT  + LL LP ++
+Sbjct  116  AIALIENVQRENLNPLEEARAYQHIMDLGNLSHEELAQRVGKNRSTITNALRLLKLPPEV  175
+
+Query  61   ADAFNTGRVR  70
+              + ++  + 
+Sbjct  176  QQSLSSRTLS  185
+
+
+>sp|A7ZAV8|NOC_BACVZ Nucleoid occlusion protein OS=Bacillus velezensis 
+(strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 GN=noc 
+PE=3 SV=1
+Length=283
+
+ Score = 91.2 bits (225),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 23/69 (33%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LPE + D
+Sbjct  117  ALIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPEPVQD  176
+
+Query  63   AFNTGRVRD  71
+            A    ++ +
+Sbjct  177  AIMEKKITE  185
+
+
+>sp|Q9JXP5|PARB_NEIMB Probable chromosome-partitioning protein 
+ParB OS=Neisseria meningitidis serogroup B (strain MC58) OX=122586 
+GN=parB PE=3 SV=1
+Length=286
+
+ Score = 90.5 bits (223),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 25/70 (36%), Positives = 36/70 (51%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR  L P E A  + R   + G     IA+ +GKS + I+  + LL LPE +
+Sbjct  112  AMGLIENLQRENLNPIEEAQGLKRLADEFGLTHETIAQAVGKSRSAISNSLRLLSLPEPV  171
+
+Query  61   ADAFNTGRVR  70
+             +     R+ 
+Sbjct  172  QEMLYQRRLE  181
+
+
+>sp|P9WIJ9|PARB_MYCTU Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) 
+OX=83332 GN=parB PE=1 SV=1
+Length=344
+
+ Score = 91.2 bits (225),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 33/69 (48%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTGRVR  70
+                 G + 
+Sbjct  209  RRVAAGVLS  217
+
+
+>sp|P9WIJ8|PARB_MYCTO Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=parB PE=3 SV=1
+Length=344
+
+ Score = 91.2 bits (225),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 33/69 (48%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTGRVR  70
+                 G + 
+Sbjct  209  RRVAAGVLS  217
+
+
+>sp|P0A5R3|PARB_MYCBO Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=parB PE=3 SV=1
+Length=344
+
+ Score = 91.2 bits (225),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 33/69 (48%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L + G    ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFGVTHDELAARIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTGRVR  70
+                 G + 
+Sbjct  209  RRVAAGVLS  217
+
+
+>sp|Q9JW77|PARB_NEIMA Probable chromosome-partitioning protein 
+ParB OS=Neisseria meningitidis serogroup A / serotype 4A (strain 
+Z2491) OX=122587 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 90.5 bits (223),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 25/70 (36%), Positives = 36/70 (51%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR  L P E A  + R   + G     IA+ +GKS + I+  + LL LPE +
+Sbjct  112  AMGLIENLQRENLNPIEEAQGLKRLADEFGLTHETIAQAVGKSRSAISNSLRLLSLPEPV  171
+
+Query  61   ADAFNTGRVR  70
+             +     R+ 
+Sbjct  172  QEMLYQRRLE  181
+
+
+>sp|Q9RYD8|PARB1_DEIRA Probable chromosome 1-partitioning protein 
+ParB OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 
+20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 
+/ VKM B-1422) OX=243230 GN=parB1 PE=3 SV=1
+Length=288
+
+ Score = 90.1 bits (222),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 36/67 (54%), Gaps = 0/67 (0%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+             ++ENLQR +L P E A      L +G  +  +A+ +GK  + +T  + LL LPE +  A
+Sbjct  116  AIVENLQREDLGPLEEARAYQALLDQGLNQEGVAQAVGKGRSTVTNALRLLTLPEPVLRA  175
+
+Query  64   FNTGRVR  70
+             + G + 
+Sbjct  176  LDEGSIS  182
+
+
+>sp|Q50201|PARB_MYCLE Probable chromosome-partitioning protein 
+ParB OS=Mycobacterium leprae (strain TN) OX=272631 GN=parB 
+PE=3 SV=1
+Length=333
+
+ Score = 90.5 bits (223),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 32/69 (46%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+            D ++EN+ R +L P E A    + L +      ++A  IG+S   IT  + LL LP  + 
+Sbjct  149  DALLENIHRVQLNPLEEAAAYQQLLDEFEVTHDELASRIGRSRPLITNMIRLLKLPIPVQ  208
+
+Query  62   DAFNTGRVR  70
+                 G + 
+Sbjct  209  RRVAAGVLS  217
+
+
+>sp|Q5KU60|NOC_GEOKA Nucleoid occlusion protein OS=Geobacillus 
+kaustophilus (strain HTA426) OX=235909 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 88.5 bits (218),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 36/69 (52%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELTP E A    + +      +  +A+ +GK  + I   + LL LP+++ +
+Sbjct  114  ALIENLQREELTPIEEAMAYAKLIELHDLTQEALAQRLGKGQSTIANKLRLLKLPQEVQE  173
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  174  ALLQRAITE  182
+
+
+>sp|O84694|PARB_CHLTR Probable chromosome-partitioning protein 
+ParB OS=Chlamydia trachomatis (strain D/UW-3/Cx) OX=272561 
+GN=parB PE=3 SV=1
+Length=281
+
+ Score = 87.8 bits (216),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 39/69 (57%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+              +IEN+QR  L P E+A+   R +   G  +  +AK++GK  + +  ++ L  LP+++ 
+Sbjct  100  ATLIENIQRVNLNPLEMAEAFRRLIVVFGLTQDKVAKKVGKKRSTVANYLRLFSLPQEVQ  159
+
+Query  62   DAFNTGRVR  70
+            +  N+G + 
+Sbjct  160  EKMNSGEIS  168
+
+
+>sp|Q72H91|SP0J_THET2 Chromosome-partitioning protein Spo0J OS=Thermus 
+thermophilus (strain HB27 / ATCC BAA-163 / DSM 7039) 
+OX=262724 GN=spo0C PE=1 SV=1
+Length=269
+
+ Score = 87.8 bits (216),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 36/67 (54%), Gaps = 0/67 (0%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAKGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+             ++ENLQR +L+P E A      L  G  + ++A+ +GK+ + +   + LL LP +  +A
+Sbjct  108  ALVENLQREDLSPVEEARGYQALLEMGLTQEEVARRVGKARSTVANALRLLQLPPEALEA  167
+
+Query  64   FNTGRVR  70
+               G + 
+Sbjct  168  LERGEIT  174
+
+
+>sp|P37524|NOC_BACSU Nucleoid occlusion protein OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=noc PE=1 SV=1
+Length=283
+
+ Score = 87.8 bits (216),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LP+ + +
+Sbjct  117  ALIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPQPVQE  176
+
+Query  63   AFNTGRVRD  71
+            A    ++ +
+Sbjct  177  AIMEKKITE  185
+
+
+>sp|A8FJF7|NOC_BACP2 Nucleoid occlusion protein OS=Bacillus pumilus 
+(strain SAFR-032) OX=315750 GN=noc PE=3 SV=1
+Length=291
+
+ Score = 87.4 bits (215),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR EL+  E A    R L      +  +A+ +GK  + +   + LL LPE++  
+Sbjct  124  ALIENLQREELSAIEEAHAYARLLELHDLTQEALAQRLGKGQSTVANKLRLLKLPEEVQQ  183
+
+Query  63   AFNTGRVRD  71
+            A    ++ +
+Sbjct  184  AILEKKISE  192
+
+
+>sp|A4ITW8|NOC_GEOTN Nucleoid occlusion protein OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 86.6 bits (213),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELTP E A    R +      +  +A+ +GK  + I   + LL LP+++ +
+Sbjct  114  ALIENLQREELTPIEEAMAYARLIELHDLTQEALAQRLGKGQSTIANKLRLLKLPQEVQE  173
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  174  ALLQRAITE  182
+
+
+>sp|Q65CN4|NOC_BACLD Nucleoid occlusion protein OS=Bacillus licheniformis 
+(strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 12200 
+/ NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 GN=noc 
+PE=3 SV=1
+Length=283
+
+ Score = 86.6 bits (213),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR EL+  E A    R L      +  +A+ +GK  + I   + LL LPE++ +
+Sbjct  117  ALIENLQREELSSIEEAHAYARLLELHDLTQEALAQRLGKGQSTIANKLRLLKLPEEVQE  176
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  177  AILKKEISE  185
+
+
+>sp|C5D9Y4|NOC_GEOSW Nucleoid occlusion protein OS=Geobacillus 
+sp. (strain WCH70) OX=471223 GN=noc PE=3 SV=1
+Length=281
+
+ Score = 86.2 bits (212),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 26/107 (24%), Positives = 51/107 (48%), Gaps = 1/107 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELTP E A    + L      +  +A+ +GK  + I   + LL LP+++ +
+Sbjct  114  ALIENLQREELTPIEEAMAYAKLLELHNLTQEALAQRLGKGQSTIANKLRLLKLPQEVQE  173
+
+Query  63   AFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLR  109
+            A     + +      +V   K++  ++   + D    + +   ++L+
+Sbjct  174  ALLHRTITERHARALIVLKDKEKQLKLLQEIIDKQLNVKQTEDRVLK  220
+
+
+>sp|Q71VW9|NOC_LISMF Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4b (strain F2365) OX=265669 GN=noc PE=3 
+SV=1
+Length=284
+
+ Score = 85.5 bits (210),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 38/71 (54%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  110  AIALIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETV  169
+
+Query  61   ADAFNTGRVRD  71
+             +A    ++ +
+Sbjct  170  QEAVLNKQISE  180
+
+
+>sp|C1L0C8|NOC_LISMC Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4b (strain CLIP80459) OX=568819 GN=noc 
+PE=3 SV=1
+Length=284
+
+ Score = 85.5 bits (210),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 38/71 (54%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  110  AIALIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETV  169
+
+Query  61   ADAFNTGRVRD  71
+             +A    ++ +
+Sbjct  170  QEAVLNKQISE  180
+
+
+>sp|Q926W4|NOC_LISIN Nucleoid occlusion protein OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=noc PE=3 SV=1
+Length=284
+
+ Score = 85.5 bits (210),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 38/71 (54%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  110  AIALIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETV  169
+
+Query  61   ADAFNTGRVRD  71
+             +A    ++ +
+Sbjct  170  QEAVLNKQISE  180
+
+
+>sp|A0AMC3|NOC_LISW6 Nucleoid occlusion protein OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=noc PE=3 SV=1
+Length=284
+
+ Score = 85.1 bits (209),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 37/71 (52%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  110  AIALIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKLRLLKLPEAV  169
+
+Query  61   ADAFNTGRVRD  71
+              A    ++ +
+Sbjct  170  QQAVLNKQISE  180
+
+
+>sp|B8DD20|NOC_LISMH Nucleoid occlusion protein OS=Listeria monocytogenes 
+serotype 4a (strain HCC23) OX=552536 GN=noc PE=3 
+SV=1
+Length=287
+
+ Score = 85.1 bits (209),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 38/71 (54%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  113  AIALIENLQREELTPIEEAKAYRSLLDMQEVTQEALAQRVGKSQSAIANKMRLLKLPETV  172
+
+Query  61   ADAFNTGRVRD  71
+             +A    ++ +
+Sbjct  173  QEAVLNKQISE  183
+
+
+>sp|B1HPM0|NOC_LYSSC Nucleoid occlusion protein OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=noc PE=3 SV=1
+Length=298
+
+ Score = 85.1 bits (209),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 20/71 (28%), Positives = 36/71 (51%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            +  +IENLQR ELT  E A    + L      +  +A+ +GK  + +   + LL LP+++
+Sbjct  119  SIALIENLQREELTAIEEAVAYQKLLELHELTQEALAQRLGKGQSTVANKLRLLRLPDEV  178
+
+Query  61   ADAFNTGRVRD  71
+              A    ++ +
+Sbjct  179  QQAILQRKISE  189
+
+
+>sp|P0A152|PARB_PSEPU Probable chromosome-partitioning protein 
+ParB OS=Pseudomonas putida OX=303 GN=parB PE=3 SV=1
+Length=290
+
+ Score = 84.3 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 27/114 (24%), Positives = 47/114 (41%), Gaps = 3/114 (3%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R   +    +  +A  +GKS   +   + L+ LP+ I
+Sbjct  120  AMALIENIQREDLNPLEEAMALQRLQQEFELTQQQVADAVGKSRVTVANLLRLITLPDAI  179
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+                  G +        L     ++ E     +        R T  L+R++L +
+Sbjct  180  KTMLAHGDLEMGHARALLGLDENRQEEGARHVVA--RGLTVRQTEALVRQWLSD  231
+
+
+>sp|P0A151|PARB_PSEPK Probable chromosome-partitioning protein 
+ParB OS=Pseudomonas putida (strain ATCC 47054 / DSM 6125 / 
+NCIMB 11950 / KT2440) OX=160488 GN=parB PE=3 SV=1
+Length=290
+
+ Score = 84.3 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 27/114 (24%), Positives = 47/114 (41%), Gaps = 3/114 (3%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R   +    +  +A  +GKS   +   + L+ LP+ I
+Sbjct  120  AMALIENIQREDLNPLEEAMALQRLQQEFELTQQQVADAVGKSRVTVANLLRLITLPDAI  179
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+                  G +        L     ++ E     +        R T  L+R++L +
+Sbjct  180  KTMLAHGDLEMGHARALLGLDENRQEEGARHVVA--RGLTVRQTEALVRQWLSD  231
+
+
+>sp|P26497|SP0J_BACSU Stage 0 sporulation protein J OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=spo0J PE=1 SV=2
+Length=282
+
+ Score = 84.3 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 48/118 (41%), Gaps = 15/118 (13%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             ++ENLQR +L+P E A      L      +  +AK +GKS   I  H+ LL LPE I  
+Sbjct  108  ALLENLQREDLSPLEEAQAYDSLLKHLDLTQEQLAKRLGKSRPHIANHLRLLTLPENIQQ  167
+
+Query  63   AFNTGRVR--------------DVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVK  106
+                G +                +  + + V A +    ++E  +    Q + R T K
+Sbjct  168  LIAEGTLSMGHGRTLLGLKNKNKLEPLVQKVIAEQLNVRQLEQLIQQLNQNVPRETKK  225
+
+
+>sp|Q9K5M9|NOC_BACHD Nucleoid occlusion protein OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 
+9153 / C-125) OX=272558 GN=noc PE=3 SV=1
+Length=283
+
+ Score = 84.3 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 33/69 (48%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR  LT  E A    + +   G  +  +A+ +GK  + I   + LL L E +  
+Sbjct  112  ALIENLQREGLTAVEEAVAYQKLIELHGLTQESLAQRLGKGQSTIANKLRLLHLSEPVQQ  171
+
+Query  63   AFNTGRVRD  71
+            A    ++ +
+Sbjct  172  AIMERKISE  180
+
+
+>sp|Q68XT3|PARB_RICTY Probable chromosome-partitioning protein 
+ParB OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) 
+OX=257363 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 84.3 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D
+Sbjct  109  ALIENIQRTDLTVMEEARGFKYLVDNFNYTVEKLAERLGKSRSHIANLLRLNNLPQSIQD  168
+
+Query  63   AFNTGRVR  70
+              N   + 
+Sbjct  169  KLNENILS  176
+
+
+>sp|Q8Y3P1|NOC_LISMO Nucleoid occlusion protein OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=noc PE=3 SV=1
+Length=284
+
+ Score = 83.9 bits (206),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 38/71 (54%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IENLQR ELTP E A      L  +   +  +A+ +GKS + I   + LL LPE +
+Sbjct  110  AIALIENLQREELTPIEEAKAYRSLLDMQDVTQEALAQRVGKSQSAIANKMRLLKLPETV  169
+
+Query  61   ADAFNTGRVRD  71
+             +A    ++ +
+Sbjct  170  QEAVLIKQISE  180
+
+
+>sp|A7GVP4|NOC_BACCN Nucleoid occlusion protein OS=Bacillus cytotoxicus 
+(strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 82.8 bits (203),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 33/69 (48%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEDIKR  181
+
+Query  63   AFNTGRVRD  71
+            +     + +
+Sbjct  182  SLLEKSITE  190
+
+
+>sp|Q9ZE87|PARB_RICPR Probable chromosome-partitioning protein 
+ParB OS=Rickettsia prowazekii (strain Madrid E) OX=272947 GN=parB 
+PE=3 SV=1
+Length=286
+
+ Score = 82.8 bits (203),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D
+Sbjct  109  ALIENIQRTDLTVMEEARGFKYLVENFNYTVEKLAERLGKSRSHIANLLRLNNLPQSIQD  168
+
+Query  63   AFNTGRVR  70
+              N   + 
+Sbjct  169  KLNENILS  176
+
+
+>sp|Q92JI0|PARB_RICCN Probable chromosome-partitioning protein 
+ParB OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) 
+OX=272944 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 82.0 bits (201),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D
+Sbjct  109  ALIENIQRTDLTVMEEARGFKYLIENFNYTAEKLAERLGKSRSHIANLLRLNNLPQSIQD  168
+
+Query  63   AFNTGRVR  70
+              N   + 
+Sbjct  169  KVNENILS  176
+
+
+>sp|Q9PLN9|PARB_CHLMU Probable chromosome-partitioning protein 
+ParB OS=Chlamydia muridarum (strain MoPn / Nigg) OX=243161 
+GN=parB PE=3 SV=1
+Length=280
+
+ Score = 82.0 bits (201),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 20/69 (29%), Positives = 37/69 (54%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+              +IEN+QR  L P E+A+   R +   G  +  +AK++GK  + +  ++ L  L  +I 
+Sbjct  100  ATLIENIQRVNLNPLEMAEAFRRLIVVFGLTQDKVAKKVGKKRSTVANYLRLFSLSNEIQ  159
+
+Query  62   DAFNTGRVR  70
+            +  N+G + 
+Sbjct  160  EKINSGELT  168
+
+
+>sp|B8GW30|PARB_CAUVN Chromosome-partitioning protein ParB OS=Caulobacter 
+vibrioides (strain NA1000 / CB15N) OX=565050 GN=parB 
+PE=1 SV=2
+Length=304
+
+ Score = 82.4 bits (202),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 36/67 (54%), Gaps = 1/67 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L   E A      + K  + + +IA+ IGKS + +   + LL LP+++   
+Sbjct  133  IIENVQRADLNVLEEALSYKVLMEKFERTQENIAQTIGKSRSHVANTMRLLALPDEVQSY  192
+
+Query  64   FNTGRVR  70
+              +G + 
+Sbjct  193  LVSGELT  199
+
+
+>sp|P0CAV8|PARB_CAUVC Chromosome-partitioning protein ParB OS=Caulobacter 
+vibrioides (strain ATCC 19089 / CB15) OX=190650 
+GN=parB PE=1 SV=2
+Length=304
+
+ Score = 82.4 bits (202),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 36/67 (54%), Gaps = 1/67 (1%)
+
+Query  5    VIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIADA  63
+            +IEN+QR +L   E A      + K  + + +IA+ IGKS + +   + LL LP+++   
+Sbjct  133  IIENVQRADLNVLEEALSYKVLMEKFERTQENIAQTIGKSRSHVANTMRLLALPDEVQSY  192
+
+Query  64   FNTGRVR  70
+              +G + 
+Sbjct  193  LVSGELT  199
+
+
+>sp|O51395|PARB_BORBU Probable chromosome-partitioning protein 
+ParB OS=Borrelia burgdorferi (strain ATCC 35210 / B31 / CIP 
+102532 / DSM 4680) OX=224326 GN=parB PE=3 SV=1
+Length=260
+
+ Score = 81.6 bits (200),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 38/69 (55%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+              ++EN+QR   TP E A      + K    + D++++IGKS  +I+  V +LDL ++I 
+Sbjct  89   MPLVENIQRENFTPVEEAYAYKNIMNKYSLTQKDLSEKIGKSRTYISNLVRILDLEQEIL  148
+
+Query  62   DAFNTGRVR  70
+            +A +   + 
+Sbjct  149  NAIHRKEIS  157
+
+
+>sp|Q9Z7M0|PARB_CHLPN Probable chromosome-partitioning protein 
+ParB OS=Chlamydia pneumoniae OX=83558 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 82.0 bits (201),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 19/69 (28%), Positives = 37/69 (54%), Gaps = 1/69 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+              +IEN+QR  L P E+A+   R +   G  +  +A ++GK  + +  ++ LL L + I 
+Sbjct  100  ATLIENIQRVNLNPIEMAEAFKRLIHVFGLTQDKVAYKVGKKRSTVANYLRLLALSKTIQ  159
+
+Query  62   DAFNTGRVR  70
+            ++   G++ 
+Sbjct  160  ESLLQGQIT  168
+
+
+>sp|Q630C1|NOC_BACCZ Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ZK / E33L) OX=288681 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKN  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q72WU6|NOC_BACC1 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKN  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|A9VTL7|NOC_BACMK Nucleoid occlusion protein OS=Bacillus mycoides 
+(strain KBAB4) OX=315730 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + +   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTVANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q8EKU5|NOC_OCEIH Nucleoid occlusion protein OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=noc PE=3 SV=1
+Length=286
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 21/69 (30%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + L      +  +A+ +GK+ + +   + LL LPE++  
+Sbjct  116  ALIENLQREELTVIEEAIAYSKLLELHSLTQEALAQRLGKNQSTVANKLRLLKLPEEVQT  175
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  176  ALLDKAISE  184
+
+
+>sp|B9IT39|NOC_BACCQ Nucleoid occlusion protein OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKN  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|B7HZG7|NOC_BACC7 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain AH187) OX=405534 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I +
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKN  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q814F9|NOC_BACCR Nucleoid occlusion protein OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|B7HGE1|NOC_BACC4 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain B4264) OX=405532 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|B7IST1|NOC_BACC2 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain G9842) OX=405531 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q6HAF5|NOC_BACHK Nucleoid occlusion protein OS=Bacillus thuringiensis 
+subsp. konkukian (strain 97-27) OX=281309 GN=noc 
+PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|C1ER74|NOC_BACC3 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|B7JIK8|NOC_BACC0 Nucleoid occlusion protein OS=Bacillus cereus 
+(strain AH820) OX=405535 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q81JH5|NOC_BACAN Nucleoid occlusion protein OS=Bacillus anthracis 
+OX=1392 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|A0RLQ9|NOC_BACAH Nucleoid occlusion protein OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|C3LGT8|NOC_BACAC Nucleoid occlusion protein OS=Bacillus anthracis 
+(strain CDC 684 / NRRL 3495) OX=568206 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|C3P3F2|NOC_BACAA Nucleoid occlusion protein OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=noc PE=3 SV=1
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IENLQR ELT  E A    + +      +  +A+ +GK  + I   + LL LPE+I  
+Sbjct  122  ALIENLQREELTAIEEAVAYQKLIELHNLTQEALAQRLGKGQSTIANKLRLLKLPEEIKS  181
+
+Query  63   AFNTGRVRD  71
+            A     + +
+Sbjct  182  ALLEKSITE  190
+
+
+>sp|Q83AH2|PARB_COXBU Probable chromosome-partitioning protein 
+ParB OS=Coxiella burnetii (strain RSA 493 / Nine Mile phase 
+I) OX=227377 GN=parB PE=1 SV=2
+Length=290
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 31/68 (46%), Gaps = 1/68 (1%)
+
+Query  3    DQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIA  61
+              +IEN+QR  L   E A  + R L +      +IA+ +GKS   +T  + LL L   + 
+Sbjct  121  MSLIENIQRQNLNAIEEAAALQRLLDEFKMTHEEIAEAVGKSRTSVTNSLRLLKLNPDVK  180
+
+Query  62   DAFNTGRV  69
+                 G +
+Sbjct  181  ALLEQGHL  188
+
+
+>sp|Q4UN91|PARB_RICFE Probable chromosome-partitioning protein 
+ParB OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) 
+OX=315456 GN=parB PE=3 SV=1
+Length=286
+
+ Score = 80.8 bits (198),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +LT  E A      +         +A+ +GKS + I   + L +LP+ I D
+Sbjct  109  ALIENIQRTDLTVMEEARGFKYLVENFNYTTEKLAERLGKSRSHIANLLRLNNLPQSIQD  168
+
+Query  63   AFNTGRVR  70
+              N   + 
+Sbjct  169  KVNENILS  176
+
+
+>sp|Q5WAG6|NOC_BACSK Nucleoid occlusion protein OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=noc PE=3 SV=1
+Length=283
+
+ Score = 80.5 bits (197),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 20/71 (28%), Positives = 34/71 (48%), Gaps = 1/71 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            +  +IENLQR  LT  E A    + +      +  +A+ +GK  + I   + LL LP+ +
+Sbjct  109  SIALIENLQREGLTAIEEATAYAKLIEIHNLTQESLAQRLGKGQSTIANKLRLLHLPQAV  168
+
+Query  61   ADAFNTGRVRD  71
+             DA     + +
+Sbjct  169  QDAILNRDISE  179
+
+
+>sp|Q1RGT4|PARB_RICBR Probable chromosome-partitioning protein 
+ParB OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=parB 
+PE=3 SV=2
+Length=287
+
+ Score = 80.5 bits (197),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 18/68 (26%), Positives = 33/68 (49%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR++LT  E A      +         +A+ +GKS + I   + L +LP+ I +
+Sbjct  111  ALIENIQRSDLTVMEEARGFKYLVENFNYTAEKLAERLGKSRSHIANLLRLNNLPQSIQN  170
+
+Query  63   AFNTGRVR  70
+              +   + 
+Sbjct  171  KLDENTLS  178
+
+
+>sp|Q9KNG7|PARB_VIBCH Probable chromosome-partitioning protein 
+ParB OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El 
+Tor Inaba N16961) OX=243277 GN=parB PE=3 SV=1
+Length=293
+
+ Score = 79.3 bits (194),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 26/114 (23%), Positives = 51/114 (45%), Gaps = 3/114 (3%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L   E A  + R   +       +A+ IGKS   +T  + L  L + +
+Sbjct  123  AMALIENIQREDLNAMEEAQALERLQNEFNLTHQQVAEVIGKSRTTVTNLLRLNQLSDDV  182
+
+Query  61   ADAFNTGRVRDVTVVNELVTAFKKRPEEVEAWLDDDTQEITRGTVKLLREFLDE  114
+                 T ++ ++     L+    ++  E+   +    Q   R T +L+++ L +
+Sbjct  183  KRLLETKQL-EMGHARALLMLEGEQQVEIAQQVAK-KQLTVRQTEQLVKKCLSD  234
+
+
+>sp|O25758|PARB_HELPY Probable chromosome-partitioning protein 
+ParB OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 
+GN=parB PE=1 SV=1
+Length=290
+
+ Score = 77.0 bits (188),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 19/68 (28%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +L P E+A      L      + +++K + KS A +   + LL L  K+ +
+Sbjct  118  ALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQN  177
+
+Query  63   AFNTGRVR  70
+            A    ++ 
+Sbjct  178  ALLEEKIT  185
+
+
+>sp|Q9PJ25|PARB_CAMJE Probable chromosome-partitioning protein 
+ParB OS=Campylobacter jejuni subsp. jejuni serotype O:2 (strain 
+ATCC 700819 / NCTC 11168) OX=192222 GN=parB PE=3 SV=1
+Length=278
+
+ Score = 76.6 bits (187),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 19/69 (28%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELA-KGKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR  L P E+A+     +      + ++A+ I KS   IT  + LL+L  +  +
+Sbjct  116  ALIENIQRENLNPIELANSYKDLMQVHKITQENLAELIHKSRTQITNTLRLLNLDIRTQE  175
+
+Query  63   AFNTGRVRD  71
+               +G++  
+Sbjct  176  LIASGKISQ  184
+
+
+>sp|Q9ZK75|PARB_HELPJ Probable chromosome-partitioning protein 
+ParB OS=Helicobacter pylori (strain J99 / ATCC 700824) OX=85963 
+GN=parB PE=3 SV=1
+Length=290
+
+ Score = 75.8 bits (185),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/68 (28%), Positives = 34/68 (50%), Gaps = 1/68 (1%)
+
+Query  4    QVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKIAD  62
+             +IEN+QR +L P E+A      L      + +++K + KS A +   + LL L  K+ +
+Sbjct  118  ALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQN  177
+
+Query  63   AFNTGRVR  70
+            A    ++ 
+Sbjct  178  ALLEEKIT  185
+
+
+>sp|Q9PB63|PARB_XYLFA Probable chromosome-partitioning protein 
+ParB OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=parB 
+PE=3 SV=1
+Length=310
+
+ Score = 67.4 bits (163),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 21/70 (30%), Positives = 37/70 (53%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R + +      + A+ +G+S A ++  + LL+LP  I
+Sbjct  127  AMALIENIQREDLNPLEEAQALQRLIDEFSLTHAEAAEAVGRSRAAVSNLLRLLELPLGI  186
+
+Query  61   ADAFNTGRVR  70
+                 + R+ 
+Sbjct  187  RTLLQSRRLE  196
+
+
+>sp|Q87BY1|PARB_XYLFT Probable chromosome-partitioning protein 
+ParB OS=Xylella fastidiosa (strain Temecula1 / ATCC 700964) 
+OX=183190 GN=parB PE=3 SV=1
+Length=310
+
+ Score = 67.0 bits (162),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 37/70 (53%), Gaps = 1/70 (1%)
+
+Query  2    ADQVIENLQRNELTPREIADFIGRELAK-GKKKGDIAKEIGKSPAFITQHVTLLDLPEKI  60
+            A  +IEN+QR +L P E A  + R + +      + A+ +G+S A ++  + LL+LP  I
+Sbjct  127  AMALIENIQREDLNPLEEAQALQRLIDEFSLTHAEAAEAVGRSRAAVSNLLRLLELPLGI  186
+
+Query  61   ADAFNTGRVR  70
+                 + ++ 
+Sbjct  187  RTLLESHQLE  196
+
+
+>sp|Q9RZE7|PARB2_DEIRA Probable chromosome 2-partitioning protein 
+ParB OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 
+20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 
+/ VKM B-1422) OX=243230 GN=parB2 PE=3 SV=1
+Length=293
+
+ Score = 38.5 bits (88),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 16/91 (18%), Positives = 34/91 (37%), Gaps = 25/91 (27%)
+
+Query  2    ADQVIENLQRNELTPREIAD----------------FIGREL--------AKGKKKGDIA  37
+            A  +IENLQR+ L   +  D                   R +         + ++   + 
+Sbjct  112  AAALIENLQRDNLNVIDEVDGKLELIALTLGLEREEARKRLMQLLRAVPGDEHEQLDQVF  171
+
+Query  38   KEIGKS-PAFITQHVTLLDLPEKIADAFNTG  67
+            + +G++   F    + +L+ P+ + +A   G
+Sbjct  172  RSMGETWRTFAKNKLRILNWPQPVLEALRAG  202
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.351    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0422    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

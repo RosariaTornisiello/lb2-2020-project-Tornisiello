@@ -1,0 +1,565 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1a1xa_
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 ...  216     1e-73
+sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090...  209     8e-71
+sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus ...  87.4    2e-22
+sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo...  77.4    1e-18
+sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo...  63.9    4e-13
+sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 GN=...  37.7    0.003
+
+
+>sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 
+GN=MTCP1 PE=1 SV=1
+Length=107
+
+ Score = 216 bits (551),  Expect = 1e-73, Method: Compositional matrix adjust.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL
+Sbjct  2    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090 
+GN=Mtcp1 PE=2 SV=1
+Length=107
+
+ Score = 209 bits (531),  Expect = 8e-71, Method: Compositional matrix adjust.
+ Identities = 100/106 (94%), Positives = 104/106 (98%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            A EDVGAPPDHLWVHQEG+YRDEYQRTWVAVVEEETSFL+ARVQQ+QVPLGDA +PSHLL
+Sbjct  2    AREDVGAPPDHLWVHQEGVYRDEYQRTWVAVVEEETSFLKARVQQVQVPLGDATKPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus 
+musculus OX=10090 GN=Tcl1a PE=1 SV=1
+Length=116
+
+ Score = 87.4 bits (215),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 40/100 (40%), Positives = 67/100 (67%), Gaps = 0/100 (0%)
+
+Query  4    DVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLLTSQ  63
+            +  A P+ LW+ ++ +Y DE++R+W+ VV +     +  ++Q  V LG+A  PS L+  +
+Sbjct  10   ETPAHPNRLWIWEKHVYLDEFRRSWLPVVIKSNEKFQVILRQEDVTLGEAMSPSQLVPYE  69
+
+Query  64   LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+            LPLMWQLYP++RY   +S  WQI +H+  R V+++LL+L+
+Sbjct  70   LPLMWQLYPKDRYRSCDSMYWQILYHIKFRDVEDMLLELI  109
+
+
+>sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo 
+sapiens OX=9606 GN=TCL1A PE=1 SV=1
+Length=114
+
+ Score = 77.4 bits (189),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 42/107 (39%), Positives = 66/107 (62%), Gaps = 2/107 (2%)
+
+Query  2    GEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEE--ETSFLRARVQQIQVPLGDAARPSHL  59
+            GE V   PD LW  ++ +Y DE Q  W+ +  E  +   LR  +++  V LG    P+ +
+Sbjct  8    GEAVTDHPDRLWAWEKFVYLDEKQHAWLPLTIEIKDRLQLRVLLRREDVVLGRPMTPTQI  67
+
+Query  60   LTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+              S LP+MWQLYP+ RY  ++S  W++ +H+ + GV+++LL+LLPDD
+Sbjct  68   GPSLLPIMWQLYPDGRYRSSDSSFWRLVYHIKIDGVEDMLLELLPDD  114
+
+
+>sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo 
+sapiens OX=9606 GN=TCL1B PE=1 SV=1
+Length=128
+
+ Score = 63.9 bits (154),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 41/124 (33%), Positives = 58/124 (47%), Gaps = 22/124 (18%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPS---  57
+            A   +G PP  LW+ + GIY DE  RTWV VV     F  +R +  +   G    PS   
+Sbjct  5    ASVRLGVPPGRLWIQRPGIYEDEEGRTWVTVV---VRFNPSRREWARASQGSRYEPSITV  61
+
+Query  58   ----------HLLTS------QLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLK  101
+                       LL+S      QLP +WQLYP  +Y   +S  W+I  H  +  +++L+L 
+Sbjct  62   HLWQMAVHTRELLSSGQMPFSQLPAVWQLYPGRKYRAADSSFWEIADHGQIDSMEQLVLT  121
+
+Query  102  LLPD  105
+              P+
+Sbjct  122  YQPE  125
+
+
+>sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 
+GN=Tcl1b4 PE=2 SV=1
+Length=120
+
+ Score = 37.7 bits (86),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 31/106 (29%), Positives = 45/106 (42%), Gaps = 12/106 (11%)
+
+Query  8    PPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQV----------PLGDAARPS  57
+            PP  L   ++ IY DE+ R WVA  + ETS       +I+            L     P 
+Sbjct  13   PPCFLVCTRDDIYEDEHGRQWVAA-KVETSSHSPYCSKIETCVTVHLWQMTTLFQEPSPD  71
+
+Query  58   HLLTSQ-LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKL  102
+             L T   LP  W+L     Y   ++  W++ +H    G +EL+L L
+Sbjct  72   SLKTFNFLPRTWRLESRNTYRGADAMHWRLVNHSQFYGTEELVLML  117
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.137    0.432    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+Results from round 2
+
+
+Query= d1a1xa_
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 ...  163     9e-53
+sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090...  162     4e-52
+sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus ...  151     9e-48
+sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo...  142     2e-44
+sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo...  125     2e-37
+
+Sequences not found previously or not previously below threshold:
+
+sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 GN=...  58.6    3e-11
+sp|P56842|TCLB3_MOUSE Protein TCL1B3 OS=Mus musculus OX=10090 GN=...  52.4    9e-09
+sp|P56840|TCLB1_MOUSE Protein TCL1B1 OS=Mus musculus OX=10090 GN=...  51.3    2e-08
+sp|P56845|TCLB5_MOUSE Protein TCL1B5 OS=Mus musculus OX=10090 GN=...  50.9    3e-08
+sp|P56841|TCLB2_MOUSE Protein TCL1B2 OS=Mus musculus OX=10090 GN=...  43.6    2e-05
+
+
+>sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 
+GN=MTCP1 PE=1 SV=1
+Length=107
+
+ Score = 163 bits (413),  Expect = 9e-53, Method: Composition-based stats.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL
+Sbjct  2    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090 
+GN=Mtcp1 PE=2 SV=1
+Length=107
+
+ Score = 162 bits (409),  Expect = 4e-52, Method: Composition-based stats.
+ Identities = 100/106 (94%), Positives = 104/106 (98%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            A EDVGAPPDHLWVHQEG+YRDEYQRTWVAVVEEETSFL+ARVQQ+QVPLGDA +PSHLL
+Sbjct  2    AREDVGAPPDHLWVHQEGVYRDEYQRTWVAVVEEETSFLKARVQQVQVPLGDATKPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus 
+musculus OX=10090 GN=Tcl1a PE=1 SV=1
+Length=116
+
+ Score = 151 bits (381),  Expect = 9e-48, Method: Composition-based stats.
+ Identities = 40/102 (39%), Positives = 67/102 (66%), Gaps = 0/102 (0%)
+
+Query  2    GEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLLT  61
+              +  A P+ LW+ ++ +Y DE++R+W+ VV +     +  ++Q  V LG+A  PS L+ 
+Sbjct  8    RAETPAHPNRLWIWEKHVYLDEFRRSWLPVVIKSNEKFQVILRQEDVTLGEAMSPSQLVP  67
+
+Query  62   SQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+             +LPLMWQLYP++RY   +S  WQI +H+  R V+++LL+L+
+Sbjct  68   YELPLMWQLYPKDRYRSCDSMYWQILYHIKFRDVEDMLLELI  109
+
+
+>sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo 
+sapiens OX=9606 GN=TCL1A PE=1 SV=1
+Length=114
+
+ Score = 142 bits (359),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 42/107 (39%), Positives = 66/107 (62%), Gaps = 2/107 (2%)
+
+Query  2    GEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEE--ETSFLRARVQQIQVPLGDAARPSHL  59
+            GE V   PD LW  ++ +Y DE Q  W+ +  E  +   LR  +++  V LG    P+ +
+Sbjct  8    GEAVTDHPDRLWAWEKFVYLDEKQHAWLPLTIEIKDRLQLRVLLRREDVVLGRPMTPTQI  67
+
+Query  60   LTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+              S LP+MWQLYP+ RY  ++S  W++ +H+ + GV+++LL+LLPDD
+Sbjct  68   GPSLLPIMWQLYPDGRYRSSDSSFWRLVYHIKIDGVEDMLLELLPDD  114
+
+
+>sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo 
+sapiens OX=9606 GN=TCL1B PE=1 SV=1
+Length=128
+
+ Score = 125 bits (314),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 39/124 (31%), Positives = 56/124 (45%), Gaps = 22/124 (18%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPS---  57
+            A   +G PP  LW+ + GIY DE  RTWV VV     F  +R +  +   G    PS   
+Sbjct  5    ASVRLGVPPGRLWIQRPGIYEDEEGRTWVTVV---VRFNPSRREWARASQGSRYEPSITV  61
+
+Query  58   ----------------HLLTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLK  101
+                             +  SQLP +WQLYP  +Y   +S  W+I  H  +  +++L+L 
+Sbjct  62   HLWQMAVHTRELLSSGQMPFSQLPAVWQLYPGRKYRAADSSFWEIADHGQIDSMEQLVLT  121
+
+Query  102  LLPD  105
+              P+
+Sbjct  122  YQPE  125
+
+
+>sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 
+GN=Tcl1b4 PE=2 SV=1
+Length=120
+
+ Score = 58.6 bits (140),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 29/108 (27%), Positives = 46/108 (43%), Gaps = 10/108 (9%)
+
+Query  5    VGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLR--ARVQ-------QIQVPLGDAAR  55
+            +  PP  L   ++ IY DE+ R WVA   E +S     ++++            L     
+Sbjct  10   MPFPPCFLVCTRDDIYEDEHGRQWVAAKVETSSHSPYCSKIETCVTVHLWQMTTLFQEPS  69
+
+Query  56   PSHLLTSQ-LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKL  102
+            P  L T   LP  W+L     Y   ++  W++ +H    G +EL+L L
+Sbjct  70   PDSLKTFNFLPRTWRLESRNTYRGADAMHWRLVNHSQFYGTEELVLML  117
+
+
+>sp|P56842|TCLB3_MOUSE Protein TCL1B3 OS=Mus musculus OX=10090 
+GN=Tcl1b3 PE=2 SV=1
+Length=122
+
+ Score = 52.4 bits (124),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 27/108 (25%), Positives = 45/108 (42%), Gaps = 9/108 (8%)
+
+Query  5    VGAPPDHLWVHQEGIYRDEYQRTWV-AVVEEETSFLRARVQ-------QIQVPLGDAARP  56
+            +  PP  L   ++ IY DE  R WV A VE   S   +R++       Q    +     P
+Sbjct  10   MPFPPRFLVCTRDDIYEDENGRQWVVAKVETSRSPYGSRIETCITVHLQHMTTIPQEPTP  69
+
+Query  57   SH-LLTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+               +  + LP MW+L     Y   +   W++  H  +    +L+L ++
+Sbjct  70   QQPINNNSLPTMWRLESMNTYTGTDGTYWRLLDHSQMGDTLQLILDIV  117
+
+
+>sp|P56840|TCLB1_MOUSE Protein TCL1B1 OS=Mus musculus OX=10090 
+GN=Tcl1b1 PE=3 SV=1
+Length=116
+
+ Score = 51.3 bits (121),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 45/110 (41%), Gaps = 7/110 (6%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGD-AARPSHL  59
+            A + +G  P +L   + GIY DE+ R W+    E +       ++  V +      P  +
+Sbjct  5    AFDPLGPLPVYLVSVRLGIYEDEHHRVWIVANVETSHSSHGNRRRTHVTVHLWKLIPQQV  64
+
+Query  60   LTSQ------LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+            +         LP  W+L     Y   +   W++  H  +   ++L+L L+
+Sbjct  65   IPFNPLNYDFLPTTWKLESRNIYWATDGTHWRLLDHSQLGDTEQLILMLV  114
+
+
+>sp|P56845|TCLB5_MOUSE Protein TCL1B5 OS=Mus musculus OX=10090 
+GN=Tcl1b5 PE=2 SV=1
+Length=121
+
+ Score = 50.9 bits (120),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 40/95 (42%), Gaps = 9/95 (9%)
+
+Query  18   GIYRDEYQRTWVAV-VEEETSFLRARVQ-------QIQVPLGDAARPSH-LLTSQLPLMW  68
+            GIY DE+ R W+AV VE   S    R++       Q    L     P   +  + LP MW
+Sbjct  22   GIYEDEHHRVWIAVNVETSHSSHGNRIETCVTVHLQHMTTLPQEPTPQQPINNNSLPTMW  81
+
+Query  69   QLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+            +L     Y   +   W++  H  +    +L L ++
+Sbjct  82   RLESRNTYTGTDGTYWRLLDHSQMGDTVQLTLDII  116
+
+
+>sp|P56841|TCLB2_MOUSE Protein TCL1B2 OS=Mus musculus OX=10090 
+GN=Tcl1b2 PE=3 SV=1
+Length=117
+
+ Score = 43.6 bits (101),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/104 (24%), Positives = 37/104 (36%), Gaps = 10/104 (10%)
+
+Query  9    PDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQ---VPLGDAAR-PSHLLTSQ-  63
+            P  L     G Y DE+ R W+    E  S      +      V L    R P        
+Sbjct  13   PQVLISTGPGFYEDEHHRLWMVAKLETCSHSPYCNKIETCVTVHLWQMTRYPQEPAPYNP  72
+
+Query  64   -----LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKL  102
+                 LP+ W+L     Y   ++  W++ +H  V    +L+L L
+Sbjct  73   MNYNFLPMTWRLASMNTYRGTDAMHWRLLNHSQVGDTVQLILML  116
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.379    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+Results from round 3
+
+
+Query= d1a1xa_
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 ...  140     1e-43
+sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090...  139     4e-43
+sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus ...  134     6e-41
+sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 GN=...  130     2e-39
+sp|P56840|TCLB1_MOUSE Protein TCL1B1 OS=Mus musculus OX=10090 GN=...  123     1e-36
+sp|P56842|TCLB3_MOUSE Protein TCL1B3 OS=Mus musculus OX=10090 GN=...  123     2e-36
+sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo...  121     4e-36
+sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo...  116     9e-34
+sp|P56845|TCLB5_MOUSE Protein TCL1B5 OS=Mus musculus OX=10090 GN=...  115     1e-33
+sp|P56841|TCLB2_MOUSE Protein TCL1B2 OS=Mus musculus OX=10090 GN=...  112     2e-32
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P56278|MTCP1_HUMAN Protein p13 MTCP-1 OS=Homo sapiens OX=9606 
+GN=MTCP1 PE=1 SV=1
+Length=107
+
+ Score = 140 bits (353),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL
+Sbjct  2    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|Q60945|MTCP1_MOUSE Protein p13 MTCP-1 OS=Mus musculus OX=10090 
+GN=Mtcp1 PE=2 SV=1
+Length=107
+
+ Score = 139 bits (349),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 100/106 (94%), Positives = 104/106 (98%), Gaps = 0/106 (0%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLL  60
+            A EDVGAPPDHLWVHQEG+YRDEYQRTWVAVVEEETSFL+ARVQQ+QVPLGDA +PSHLL
+Sbjct  2    AREDVGAPPDHLWVHQEGVYRDEYQRTWVAVVEEETSFLKARVQQVQVPLGDATKPSHLL  61
+
+Query  61   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+            TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+Sbjct  62   TSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  107
+
+
+>sp|P56280|TCL1A_MOUSE T-cell leukemia/lymphoma protein 1A OS=Mus 
+musculus OX=10090 GN=Tcl1a PE=1 SV=1
+Length=116
+
+ Score = 134 bits (336),  Expect = 6e-41, Method: Composition-based stats.
+ Identities = 40/102 (39%), Positives = 67/102 (66%), Gaps = 0/102 (0%)
+
+Query  2    GEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLLT  61
+              +  A P+ LW+ ++ +Y DE++R+W+ VV +     +  ++Q  V LG+A  PS L+ 
+Sbjct  8    RAETPAHPNRLWIWEKHVYLDEFRRSWLPVVIKSNEKFQVILRQEDVTLGEAMSPSQLVP  67
+
+Query  62   SQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+             +LPLMWQLYP++RY   +S  WQI +H+  R V+++LL+L+
+Sbjct  68   YELPLMWQLYPKDRYRSCDSMYWQILYHIKFRDVEDMLLELI  109
+
+
+>sp|P56844|TCLB4_MOUSE Protein TCL1B4 OS=Mus musculus OX=10090 
+GN=Tcl1b4 PE=2 SV=1
+Length=120
+
+ Score = 130 bits (326),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 29/108 (27%), Positives = 43/108 (40%), Gaps = 10/108 (9%)
+
+Query  5    VGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQ---------QIQVPLGDAAR  55
+            +  PP  L   ++ IY DE+ R WVA   E +S      +              L     
+Sbjct  10   MPFPPCFLVCTRDDIYEDEHGRQWVAAKVETSSHSPYCSKIETCVTVHLWQMTTLFQEPS  69
+
+Query  56   PSHLLTSQ-LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKL  102
+            P  L T   LP  W+L     Y   ++  W++ +H    G +EL+L L
+Sbjct  70   PDSLKTFNFLPRTWRLESRNTYRGADAMHWRLVNHSQFYGTEELVLML  117
+
+
+>sp|P56840|TCLB1_MOUSE Protein TCL1B1 OS=Mus musculus OX=10090 
+GN=Tcl1b1 PE=3 SV=1
+Length=116
+
+ Score = 123 bits (308),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 45/110 (41%), Gaps = 7/110 (6%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGD-AARPSHL  59
+            A + +G  P +L   + GIY DE+ R W+    E +       ++  V +      P  +
+Sbjct  5    AFDPLGPLPVYLVSVRLGIYEDEHHRVWIVANVETSHSSHGNRRRTHVTVHLWKLIPQQV  64
+
+Query  60   LTSQ------LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+            +         LP  W+L     Y   +   W++  H  +   ++L+L L+
+Sbjct  65   IPFNPLNYDFLPTTWKLESRNIYWATDGTHWRLLDHSQLGDTEQLILMLV  114
+
+
+>sp|P56842|TCLB3_MOUSE Protein TCL1B3 OS=Mus musculus OX=10090 
+GN=Tcl1b3 PE=2 SV=1
+Length=122
+
+ Score = 123 bits (308),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 25/108 (23%), Positives = 43/108 (40%), Gaps = 9/108 (8%)
+
+Query  5    VGAPPDHLWVHQEGIYRDEYQRTWVAVVEEE-TSFLRARVQ-------QIQVPLGDAARP  56
+            +  PP  L   ++ IY DE  R WV    E   S   +R++       Q    +     P
+Sbjct  10   MPFPPRFLVCTRDDIYEDENGRQWVVAKVETSRSPYGSRIETCITVHLQHMTTIPQEPTP  69
+
+Query  57   SHLLTSQ-LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+               + +  LP MW+L     Y   +   W++  H  +    +L+L ++
+Sbjct  70   QQPINNNSLPTMWRLESMNTYTGTDGTYWRLLDHSQMGDTLQLILDIV  117
+
+
+>sp|P56279|TCL1A_HUMAN T-cell leukemia/lymphoma protein 1A OS=Homo 
+sapiens OX=9606 GN=TCL1A PE=1 SV=1
+Length=114
+
+ Score = 121 bits (304),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 42/107 (39%), Positives = 66/107 (62%), Gaps = 2/107 (2%)
+
+Query  2    GEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEE--ETSFLRARVQQIQVPLGDAARPSHL  59
+            GE V   PD LW  ++ +Y DE Q  W+ +  E  +   LR  +++  V LG    P+ +
+Sbjct  8    GEAVTDHPDRLWAWEKFVYLDEKQHAWLPLTIEIKDRLQLRVLLRREDVVLGRPMTPTQI  67
+
+Query  60   LTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD  106
+              S LP+MWQLYP+ RY  ++S  W++ +H+ + GV+++LL+LLPDD
+Sbjct  68   GPSLLPIMWQLYPDGRYRSSDSSFWRLVYHIKIDGVEDMLLELLPDD  114
+
+
+>sp|O95988|TCL1B_HUMAN T-cell leukemia/lymphoma protein 1B OS=Homo 
+sapiens OX=9606 GN=TCL1B PE=1 SV=1
+Length=128
+
+ Score = 116 bits (290),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 39/124 (31%), Positives = 56/124 (45%), Gaps = 22/124 (18%)
+
+Query  1    AGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPS---  57
+            A   +G PP  LW+ + GIY DE  RTWV VV     F  +R +  +   G    PS   
+Sbjct  5    ASVRLGVPPGRLWIQRPGIYEDEEGRTWVTVVV---RFNPSRREWARASQGSRYEPSITV  61
+
+Query  58   ----------------HLLTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLK  101
+                             +  SQLP +WQLYP  +Y   +S  W+I  H  +  +++L+L 
+Sbjct  62   HLWQMAVHTRELLSSGQMPFSQLPAVWQLYPGRKYRAADSSFWEIADHGQIDSMEQLVLT  121
+
+Query  102  LLPD  105
+              P+
+Sbjct  122  YQPE  125
+
+
+>sp|P56845|TCLB5_MOUSE Protein TCL1B5 OS=Mus musculus OX=10090 
+GN=Tcl1b5 PE=2 SV=1
+Length=121
+
+ Score = 115 bits (288),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 25/110 (23%), Positives = 39/110 (35%), Gaps = 9/110 (8%)
+
+Query  3    EDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARV--------QQIQVPLGDAA  54
+            +     P  L     GIY DE+ R W+AV  E +                Q    L    
+Sbjct  7    DPQRPLPVLLVSVSLGIYEDEHHRVWIAVNVETSHSSHGNRIETCVTVHLQHMTTLPQEP  66
+
+Query  55   RPSHLLTSQ-LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLL  103
+             P   + +  LP MW+L     Y   +   W++  H  +    +L L ++
+Sbjct  67   TPQQPINNNSLPTMWRLESRNTYTGTDGTYWRLLDHSQMGDTVQLTLDII  116
+
+
+>sp|P56841|TCLB2_MOUSE Protein TCL1B2 OS=Mus musculus OX=10090 
+GN=Tcl1b2 PE=3 SV=1
+Length=117
+
+ Score = 112 bits (281),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 25/104 (24%), Positives = 37/104 (36%), Gaps = 10/104 (10%)
+
+Query  9    PDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQ---VPLGDAAR-PSHLLTSQ-  63
+            P  L     G Y DE+ R W+    E  S      +      V L    R P        
+Sbjct  13   PQVLISTGPGFYEDEHHRLWMVAKLETCSHSPYCNKIETCVTVHLWQMTRYPQEPAPYNP  72
+
+Query  64   -----LPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKL  102
+                 LP+ W+L     Y   ++  W++ +H  V    +L+L L
+Sbjct  73   MNYNFLPMTWRLASMNTYRGTDAMHWRLLNHSQVGDTVQLILML  116
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.128    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0393    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4977605396
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

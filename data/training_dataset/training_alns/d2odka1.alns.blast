@@ -1,0 +1,322 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2odka1
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis...  38.5    2e-04
+sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimur...  37.7    2e-04
+
+
+>sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=relF PE=1 SV=1
+Length=93
+
+ Score = 38.5 bits (88),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 19/49 (39%), Positives = 28/49 (57%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQI-VSRRGAEEAVLVPIGEWRRLQ  48
+           M + P+   K + +EF+DA  +   QI +++ GA  AVLV   EW  LQ
+Sbjct  1   MRILPISTIKGKLNEFVDAVSSTQDQITITKNGAPAAVLVGADEWESLQ  49
+
+
+>sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yefM 
+PE=3 SV=2
+Length=75
+
+ Score = 37.7 bits (86),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 16/50 (32%), Positives = 28/50 (56%), Gaps = 0/50 (0%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAA  50
+           M      +A+   +E L++ +T GP  ++RRG + AV++   E+ R Q A
+Sbjct  3   MRTVNYSEARQNLAEVLESAVTGGPVTITRRGHKSAVIISAEEFERYQTA  52
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.134    0.425    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+Results from round 2
+
+
+Query= d2odka1
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimur...  69.4    9e-17
+sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis...  63.6    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q06253|PHD_BPP1 Antitoxin phd OS=Escherichia phage P1 OX=10678...  42.4    3e-06
+sp|O50462|RELB_MYCTU Antitoxin RelB OS=Mycobacterium tuberculosis...  36.2    0.001
+sp|P58235|YEFM_SYNY3 Antitoxin YefM OS=Synechocystis sp. (strain ...  35.1    0.004
+
+
+>sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yefM 
+PE=3 SV=2
+Length=75
+
+ Score = 69.4 bits (168),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 28/50 (56%), Gaps = 0/50 (0%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAA  50
+           M      +A+   +E L++ +T GP  ++RRG + AV++   E+ R Q A
+Sbjct  3   MRTVNYSEARQNLAEVLESAVTGGPVTITRRGHKSAVIISAEEFERYQTA  52
+
+
+>sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=relF PE=1 SV=1
+Length=93
+
+ Score = 63.6 bits (153),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 19/49 (39%), Positives = 28/49 (57%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQI-VSRRGAEEAVLVPIGEWRRLQ  48
+           M + P+   K + +EF+DA  +   QI +++ GA  AVLV   EW  LQ
+Sbjct  1   MRILPISTIKGKLNEFVDAVSSTQDQITITKNGAPAAVLVGADEWESLQ  49
+
+
+>sp|Q06253|PHD_BPP1 Antitoxin phd OS=Escherichia phage P1 OX=10678 
+GN=phd PE=1 SV=1
+Length=73
+
+ Score = 42.4 bits (98),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 14/51 (27%), Positives = 22/51 (43%), Gaps = 0/51 (0%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAAA  51
+           M     + A+   SE L+         ++RRG E AV+V    +   + AA
+Sbjct  1   MQSINFRTARGNLSEVLNNVEAGEEVEITRRGREPAVIVSKATFEAYKKAA  51
+
+
+>sp|O50462|RELB_MYCTU Antitoxin RelB OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=relB PE=1 SV=1
+Length=89
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/49 (24%), Positives = 25/49 (51%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFL-DACITEGPQIVSRRGAEEAVLVPIGEWRRLQ  48
+           M V P+ + + R SE++ +  +T     ++R G   AVL+   +   ++
+Sbjct  1   MAVVPLGEVRNRLSEYVAEVELTHERITITRHGHPAAVLISADDLASIE  49
+
+
+>sp|P58235|YEFM_SYNY3 Antitoxin YefM OS=Synechocystis sp. (strain 
+PCC 6803 / Kazusa) OX=1111708 GN=yefM PE=3 SV=1
+Length=87
+
+ Score = 35.1 bits (79),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 24/49 (49%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITE-GPQIVSRRGAEEAVLVPIGEWRRLQ  48
+           M       AK    E ++A I++  P IVS    ++AVL+ + E+   Q
+Sbjct  1   MKAITTTQAKDHLDELINAVISDLEPTIVSNNQGQQAVLISLDEFNSWQ  49
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.125    0.303    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0384    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+Results from round 3
+
+
+Query= d2odka1
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimur...  65.5    2e-15
+sp|Q06253|PHD_BPP1 Antitoxin phd OS=Escherichia phage P1 OX=10678...  63.6    2e-14
+sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis...  61.7    1e-13
+sp|O50462|RELB_MYCTU Antitoxin RelB OS=Mycobacterium tuberculosis...  54.4    1e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q83KJ8|YEFM_SHIFL Antitoxin YefM OS=Shigella flexneri OX=623 G...  41.7    9e-06
+sp|P69346|YEFM_ECOLI Antitoxin YefM OS=Escherichia coli (strain K...  40.5    2e-05
+sp|P69347|YEFM_ECOL6 Antitoxin YefM OS=Escherichia coli O6:H1 (st...  40.5    2e-05
+sp|P95225|Y268_MYCTU Putative antitoxin Rv0268c OS=Mycobacterium ...  37.8    9e-04
+sp|P58235|YEFM_SYNY3 Antitoxin YefM OS=Synechocystis sp. (strain ...  36.3    0.001
+
+
+>sp|P40819|YEFM_SALTY Orphan antitoxin YefM OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yefM 
+PE=3 SV=2
+Length=75
+
+ Score = 65.5 bits (158),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 28/50 (56%), Gaps = 0/50 (0%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAA  50
+           M      +A+   +E L++ +T GP  ++RRG + AV++   E+ R Q A
+Sbjct  3   MRTVNYSEARQNLAEVLESAVTGGPVTITRRGHKSAVIISAEEFERYQTA  52
+
+
+>sp|Q06253|PHD_BPP1 Antitoxin phd OS=Escherichia phage P1 OX=10678 
+GN=phd PE=1 SV=1
+Length=73
+
+ Score = 63.6 bits (153),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 14/51 (27%), Positives = 22/51 (43%), Gaps = 0/51 (0%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAAA  51
+           M     + A+   SE L+         ++RRG E AV+V    +   + AA
+Sbjct  1   MQSINFRTARGNLSEVLNNVEAGEEVEITRRGREPAVIVSKATFEAYKKAA  51
+
+
+>sp|O33347|RELF_MYCTU Antitoxin RelF OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=relF PE=1 SV=1
+Length=93
+
+ Score = 61.7 bits (148),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 18/49 (37%), Positives = 27/49 (55%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITEGPQ-IVSRRGAEEAVLVPIGEWRRLQ  48
+           M + P+   K + +EF+DA  +   Q  +++ GA  AVLV   EW  LQ
+Sbjct  1   MRILPISTIKGKLNEFVDAVSSTQDQITITKNGAPAAVLVGADEWESLQ  49
+
+
+>sp|O50462|RELB_MYCTU Antitoxin RelB OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=relB PE=1 SV=1
+Length=89
+
+ Score = 54.4 bits (129),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 12/49 (24%), Positives = 25/49 (51%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFL-DACITEGPQIVSRRGAEEAVLVPIGEWRRLQ  48
+           M V P+ + + R SE++ +  +T     ++R G   AVL+   +   ++
+Sbjct  1   MAVVPLGEVRNRLSEYVAEVELTHERITITRHGHPAAVLISADDLASIE  49
+
+
+>sp|Q83KJ8|YEFM_SHIFL Antitoxin YefM OS=Shigella flexneri OX=623 
+GN=yefM PE=3 SV=1
+Length=90
+
+ Score = 41.7 bits (96),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 23/52 (44%), Gaps = 1/52 (2%)
+
+Query  1   MHVWPVQDAKARFS-EFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAAA  51
+           M      +A+   S   + A     P +++R+  E  VL+ + E+  L+  A
+Sbjct  1   MRTISYSEARQNLSATMMKAVEDHAPILITRQNGEACVLMSLEEYNSLEETA  52
+
+
+>sp|P69346|YEFM_ECOLI Antitoxin YefM OS=Escherichia coli (strain 
+K12) OX=83333 GN=yefM PE=1 SV=1
+Length=83
+
+ Score = 40.5 bits (93),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 23/52 (44%), Gaps = 1/52 (2%)
+
+Query  1   MHVWPVQDAKARFS-EFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAAA  51
+           M      +A+   S   + A     P +++R+  E  VL+ + E+  L+  A
+Sbjct  1   MRTISYSEARQNLSATMMKAVEDHAPILITRQNGEACVLMSLEEYNSLEETA  52
+
+
+>sp|P69347|YEFM_ECOL6 Antitoxin YefM OS=Escherichia coli O6:H1 
+(strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=yefM PE=3 
+SV=1
+Length=83
+
+ Score = 40.5 bits (93),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 23/52 (44%), Gaps = 1/52 (2%)
+
+Query  1   MHVWPVQDAKARFS-EFLDACITEGPQIVSRRGAEEAVLVPIGEWRRLQAAA  51
+           M      +A+   S   + A     P +++R+  E  VL+ + E+  L+  A
+Sbjct  1   MRTISYSEARQNLSATMMKAVEDHAPILITRQNGEACVLMSLEEYNSLEETA  52
+
+
+>sp|P95225|Y268_MYCTU Putative antitoxin Rv0268c OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv0268c 
+PE=3 SV=2
+Length=169
+
+ Score = 37.8 bits (86),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 8/45 (18%), Positives = 19/45 (42%), Gaps = 1/45 (2%)
+
+Query  3    VWPVQDAKARFSEFLDACITEGPQIVSRRGAEEAVLVPIGEWRRL  47
+            + P+ +A+A  S  +     +   ++   G   A+L+    +  L
+Sbjct  89   LVPISEARAHLSRLVR-ESADDDVVLMNHGRPAAILISAERYESL  132
+
+
+>sp|P58235|YEFM_SYNY3 Antitoxin YefM OS=Synechocystis sp. (strain 
+PCC 6803 / Kazusa) OX=1111708 GN=yefM PE=3 SV=1
+Length=87
+
+ Score = 36.3 bits (82),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 24/49 (49%), Gaps = 1/49 (2%)
+
+Query  1   MHVWPVQDAKARFSEFLDACITE-GPQIVSRRGAEEAVLVPIGEWRRLQ  48
+           M       AK    E ++A I++  P IVS    ++AVL+ + E+   Q
+Sbjct  1   MKAITTTQAKDHLDELINAVISDLEPTIVSNNQGQQAVLISLDEFNSWQ  49
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.128    0.290    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0391    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

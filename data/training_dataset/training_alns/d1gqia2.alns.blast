@@ -1,0 +1,1023 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1gqia2
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuro...  298     3e-97
+sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobac...  53.5    7e-08
+sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillu...  47.0    2e-05
+sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillu...  46.6    2e-05
+sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartory...  42.4    6e-04
+sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillu...  42.0    9e-04
+sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillu...  41.2    0.001
+sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans...  41.2    0.001
+sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermo...  40.4    0.002
+sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillu...  40.8    0.002
+sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillu...  40.0    0.004
+sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubinge...  39.7    0.004
+
+
+>sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuronosidase 
+OS=Cellvibrio japonicus (strain Ueda107) OX=498211 
+GN=gla67A PE=1 SV=1
+Length=732
+
+ Score = 298 bits (762),  Expect = 3e-97, Method: Compositional matrix adjust.
+ Identities = 147/147 (100%), Positives = 147/147 (100%), Gaps = 0/147 (0%)
+
+Query  1    EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  60
+            EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR
+Sbjct  25   EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  84
+
+Query  61   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  120
+            DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV
+Sbjct  85   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  144
+
+Query  121  LYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            LYGSFHLLRLIQTQHALEKLSLSSAPR
+Sbjct  145  LYGSFHLLRLIQTQHALEKLSLSSAPR  171
+
+
+>sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobacillus 
+stearothermophilus OX=1422 GN=aguA PE=1 SV=1
+Length=679
+
+ Score = 53.5 bits (127),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 41/151 (27%), Positives = 69/151 (46%), Gaps = 19/151 (13%)
+
+Query  3    GYD-MWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLN-KPIVAR  60
+            GY+  WLRY+     + L+        +     SP   A   ELQ+GL  ++  +P V +
+Sbjct  4    GYEPCWLRYERKDQYSRLR-----FEEIVAKRTSPIFQAVVEELQKGLRSMMEIEPQVVQ  58
+
+Query  61   DEKLKDYSLVIGTPDNS----PLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANS  116
+            +      S+ +GT ++     PL  +L        +  EGY++     +    + +   +
+Sbjct  59   EVNETANSIWLGTLEDEEFERPLEGTL--------VHPEGYVIRSDVDDGPFRIYIIGKT  110
+
+Query  117  DVGVLYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            D GVLYG FH LRL+Q    + +LS+   P+
+Sbjct  111  DAGVLYGVFHFLRLLQMGENIAQLSIIEQPK  141
+
+
+>sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillus 
+flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / 
+JCM 12722 / SRRC 167) OX=332952 GN=aguA PE=3 SV=1
+Length=839
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 40/133 (30%), Positives = 65/133 (49%), Gaps = 9/133 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G++ WLRY P+  D+   +     I  L+ + DS  I  A+ ELQ GL  ++ K + +
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLN-STDSGPIGTASQELQAGLENIVGKQLSI  77
+
+Query  59   ARDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L   R     V IV  N + 
+Sbjct  78   KRSSCGSRSSILVATLEQ--YRQACNRSSEVPSLGIDGFWL---RAYGDTVQIVGEN-ER  131
+
+Query  119  GVLYGSFHLLRLI  131
+            G LYG+F  L L+
+Sbjct  132  GALYGAFEYLSLL  144
+
+
+>sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=aguA 
+PE=3 SV=1
+Length=835
+
+ Score = 46.6 bits (109),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 40/133 (30%), Positives = 65/133 (49%), Gaps = 9/133 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G++ WLRY P+  D+   +     I  L+ + DS  I  A+ ELQ GL  ++ K + +
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLN-STDSGPIGTASQELQAGLENIVGKQLSI  77
+
+Query  59   ARDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L   R     V IV  N + 
+Sbjct  78   KRSSCGSRSSILVATLEQ--YRQACNRSSEVPSLGIDGFWL---RAYGDTVQIVGEN-ER  131
+
+Query  119  GVLYGSFHLLRLI  131
+            G LYG+F  L L+
+Sbjct  132  GALYGAFEYLSLL  144
+
+
+>sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC 
+A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=aguA 
+PE=3 SV=1
+Length=840
+
+ Score = 42.4 bits (98),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 40/148 (27%), Positives = 68/148 (46%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G D WLRY  +  +    +     I  L+ +  S  +  A  ELQ GL  +L K    
+Sbjct  20   ENGLDGWLRYASVPCNGNCQRALPSHIVTLN-STKSSQVYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+V+GT +    +   N G +   L  +G+ L    I  + V IV   ++ 
+Sbjct  79   KSTGCSTDSSIVVGTVEAYRQVC--NTGSQAPELDVDGFWLS---IRGKSVQIV-GQTER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillus 
+niger OX=5061 GN=aguA PE=2 SV=1
+Length=841
+
+ Score = 42.0 bits (97),  Expect = 9e-04, Method: Compositional matrix adjust.
+ Identities = 37/149 (25%), Positives = 69/149 (46%), Gaps = 13/149 (9%)
+
+Query  1    EDGYDMWLRYQPIA-DQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P++ D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLRCRQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLK-DYSLVIGTPDN-SPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+            R  +     S+++ T D        +N+ E    L  +G+ L+    ++   V +     
+Sbjct  80   RPFQCNSSTSILVATLDEYRQRCRDINVPE----LDPDGFWLQ----SEGDTVRILGKDA  131
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG++  L ++  Q    +++ +++P
+Sbjct  132  RGALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillus 
+niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 37/149 (25%), Positives = 69/149 (46%), Gaps = 13/149 (9%)
+
+Query  1    EDGYDMWLRYQPIA-DQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P++ D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLHCQQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLKDY-SLVIGTPDN-SPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+            R  +     S+++ T D        +N+ E    L  +G+ L+    ++   V +     
+Sbjct  80   RPFQCNSSASILVATLDEYRQRCRDINVPE----LDPDGFWLQ----SEGDTVRILGKDA  131
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG++  L ++  Q    +++ +++P
+Sbjct  132  RGALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / 
+M139) OX=227321 GN=aguA PE=1 SV=1
+Length=847
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 47/156 (30%), Positives = 69/156 (44%), Gaps = 24/156 (15%)
+
+Query  1    EDGYDMWLRYQPIADQTLLKTYQKQ----IRHLHVAGDSPTINAAAAELQRGLSGLLNKP  56
+            EDG   WLRY PI      K+Y K     I  L+     P I+ AA EL  G+ G+  K 
+Sbjct  18   EDGLAAWLRYAPIPHA---KSYHKNLPSVIVPLNATAGRP-IDTAAYELVDGIKGIFGKR  73
+
+Query  57   IVARDEKLKDYSL---VIGTPDNSPLIASLNLGERLQA---LGAEGYLLEQTRINKRHVV  110
+            +  ++E   D +L    +GT +     A    G  + +   L  +GY L    +    V+
+Sbjct  74   VTLKNETRDDPNLPAVTVGTVE-----AYAEAGGDVSSVPELIDDGYYLS---VAGPSVL  125
+
+Query  111  IVAANSDVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            I+  N + G LYG+F  L  +  Q  +   S +S P
+Sbjct  126  ILGQN-ERGALYGTFQYLERL-AQGKVSDTSFASNP  159
+
+
+>sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=aguA PE=1 SV=2
+Length=674
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 45/83 (54%), Gaps = 7/83 (8%)
+
+Query  65   KDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGVLYGS  124
+            K+  +++G  ++ P+   +NLGE       EG++L     N   +++V   +   ++YG 
+Sbjct  63   KEKYIMVGRLESLPIKLDVNLGE-------EGFMLRTIEWNGSKILLVTGETKKALVYGI  115
+
+Query  125  FHLLRLIQTQHALEKLSLSSAPR  147
+            F L++ I+    +EK+++ + P+
+Sbjct  116  FDLMKRIRLGEDIEKMNVLAKPK  138
+
+
+>sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 40.8 bits (94),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 38/148 (26%), Positives = 65/148 (44%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPIADQ-TLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G+D WLRY P++      K+    I  L     SP I+ A  E+Q GL  +       
+Sbjct  20   ENGFDGWLRYAPVSCHGACQKSLPSHIVTLDPTESSP-ISVAGQEIQDGLQRMFKMHATV  78
+
+Query  60   RDEKLKD-YSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+              +      S++IGT D      +    + +  L  +G+ L      K   V +   S+ 
+Sbjct  79   EPKGCSTRSSVIIGTLD--AYNHACKDADPVPELEEDGFWLN----TKDGKVQIIGQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++ +Q     +S +++P
+Sbjct  133  GALYGAYEYLSML-SQGNFAPVSYTTSP  159
+
+
+>sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillus 
+terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 40.0 bits (92),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 42/155 (27%), Positives = 68/155 (44%), Gaps = 23/155 (15%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G + WLRY PI  D    K    +I  L+    SP +  A  ELQ G+ G+  K + V
+Sbjct  20   ENGLNGWLRYAPIPCDGRCHKALPSRIVALNSTQGSP-LETAIEELQTGVRGMTGKRLSV  78
+
+Query  59   ARDEKLKDYSLVIGTPDNSPLIASLNLGER-------LQALGAEGYLLEQTRINKRHVVI  111
+            A++     ++        + LIA++    R       +  L  +G+ L     N    V 
+Sbjct  79   AKENNCNLHA--------TALIATVEEYRRTCRNSSDIPDLDVDGFWLRTEGNN----VQ  126
+
+Query  112  VAANSDVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            +   S+ G LYG+F  L ++  Q     +  S++P
+Sbjct  127  ILGQSERGALYGAFEYLSML-AQGDFSSVDYSTSP  160
+
+
+>sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubingensis 
+OX=5068 GN=aguA PE=1 SV=1
+Length=841
+
+ Score = 39.7 bits (91),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 38/149 (26%), Positives = 68/149 (46%), Gaps = 13/149 (9%)
+
+Query  1    EDGYDMWLRYQPIA-DQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGY+ WLRY P++ D    +     I  L+    SP I  A  EL+ G   +L+  +  
+Sbjct  21   EDGYNGWLRYAPVSCDLHCRQALPSHIVLLNSTKGSP-IETAGRELKAGFQSILSTNLTF  79
+
+Query  60   RDEKL-KDYSLVIGTPDN-SPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+               +     S+++ T D        +NL E    L  +G+ L+    ++   V +  N+ 
+Sbjct  80   HPFQCDSSASILVATLDEYRQKCRDINLPE----LDPDGFWLQ----SEGDTVRILGNNA  131
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG++  L ++  Q    +++ ++ P
+Sbjct  132  RGALYGAYEYLAMV-AQRNFSRVAYTTNP  159
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.135    0.379    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+Results from round 2
+
+
+Query= d1gqia2
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuro...  199     9e-60
+sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartory...  173     1e-49
+sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillu...  166     3e-47
+sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillu...  165     6e-47
+sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillu...  162     6e-46
+sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillu...  162     7e-46
+sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobac...  156     4e-44
+sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans...  143     3e-39
+
+Sequences not found previously or not previously below threshold:
+
+sp|B0Y2K1|AGUA_ASPFC Probable alpha-glucuronidase A OS=Neosartory...  169     2e-48
+sp|Q4WW45|AGUA_ASPFU Probable alpha-glucuronidase A OS=Neosartory...  167     8e-48
+sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubinge...  159     6e-45
+sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillu...  142     7e-39
+sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillu...  141     1e-38
+sp|Q99024|AGUA_HYPJE Alpha-glucuronidase OS=Hypocrea jecorina OX=...  103     4e-25
+sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermo...  52.9    1e-07
+
+
+>sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuronosidase 
+OS=Cellvibrio japonicus (strain Ueda107) OX=498211 
+GN=gla67A PE=1 SV=1
+Length=732
+
+ Score = 199 bits (506),  Expect = 9e-60, Method: Composition-based stats.
+ Identities = 147/147 (100%), Positives = 147/147 (100%), Gaps = 0/147 (0%)
+
+Query  1    EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  60
+            EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR
+Sbjct  25   EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  84
+
+Query  61   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  120
+            DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV
+Sbjct  85   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  144
+
+Query  121  LYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            LYGSFHLLRLIQTQHALEKLSLSSAPR
+Sbjct  145  LYGSFHLLRLIQTQHALEKLSLSSAPR  171
+
+
+>sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC 
+A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=aguA 
+PE=3 SV=1
+Length=840
+
+ Score = 173 bits (437),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 40/148 (27%), Positives = 67/148 (45%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G D WLRY  +  +    +     I  L+    S  +  A  ELQ GL  +L K    
+Sbjct  20   ENGLDGWLRYASVPCNGNCQRALPSHIVTLNSTK-SSQVYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+V+GT +    +   N G +   L  +G+ L    I  + V IV   ++ 
+Sbjct  79   KSTGCSTDSSIVVGTVEAYRQV--CNTGSQAPELDVDGFWLS---IRGKSVQIV-GQTER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|B0Y2K1|AGUA_ASPFC Probable alpha-glucuronidase A OS=Neosartorya 
+fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) OX=451804 
+GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 169 bits (427),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 41/148 (28%), Positives = 70/148 (47%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E G D WLRY  +  +    +     I  L+    SP +  A  ELQ GL  +L K    
+Sbjct  20   ETGLDGWLRYASVPCNGNCQRALPSHIVTLNSTRSSP-VYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+++GT +    +   N G ++  L  +G+ L    I ++ V+IV   S+ 
+Sbjct  79   KSTGCSTDSSIIVGTVEAYRQV--CNAGRQVPQLDVDGFWLS---IREKSVLIV-GQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|Q4WW45|AGUA_ASPFU Probable alpha-glucuronidase A OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / 
+FGSC A1100) OX=330879 GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 167 bits (423),  Expect = 8e-48, Method: Composition-based stats.
+ Identities = 40/148 (27%), Positives = 69/148 (47%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E G D WLRY  +  +    +     I  L+    SP +  A  ELQ GL  +L K    
+Sbjct  20   ETGLDGWLRYASVPCNGNCQRALPSHIVTLNSTRSSP-VYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+++GT +    +   N G ++     +G+ L    I ++ V+IV   S+ 
+Sbjct  79   KSTGCSTDSSIIVGTVEAYRQV--CNAGRQVPQFDVDGFWLS---IREKSVLIV-GQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillus 
+niger OX=5061 GN=aguA PE=2 SV=1
+Length=841
+
+ Score = 166 bits (420),  Expect = 3e-47, Method: Composition-based stats.
+ Identities = 35/148 (24%), Positives = 64/148 (43%), Gaps = 11/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P+  D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLRCRQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            R  +     S+++ T D             +  L  +G+ L+     +   V +      
+Sbjct  80   RPFQCNSSTSILVATLDEYRQRC---RDINVPELDPDGFWLQS----EGDTVRILGKDAR  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    +++ +++P
+Sbjct  133  GALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillus 
+niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 165 bits (417),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 35/148 (24%), Positives = 64/148 (43%), Gaps = 11/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P+  D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLHCQQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            R  +     S+++ T D             +  L  +G+ L+     +   V +      
+Sbjct  80   RPFQCNSSASILVATLDEYRQRC---RDINVPELDPDGFWLQS----EGDTVRILGKDAR  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    +++ +++P
+Sbjct  133  GALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillus 
+flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / 
+JCM 12722 / SRRC 167) OX=332952 GN=aguA PE=3 SV=1
+Length=839
+
+ Score = 162 bits (409),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 41/147 (28%), Positives = 70/147 (48%), Gaps = 10/147 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G++ WLRY P+  D+   +     I  L+ + DS  I  A+ ELQ GL  ++ K + +
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLN-STDSGPIGTASQELQAGLENIVGKQLSI  77
+
+Query  59   ARDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L   R     V IV  N + 
+Sbjct  78   KRSSCGSRSSILVATLEQYRQ--ACNRSSEVPSLGIDGFWL---RAYGDTVQIVGEN-ER  131
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSA  145
+            G LYG+F  L L+  Q     +  +++
+Sbjct  132  GALYGAFEYLSLL-AQGNFSHVDYTTS  157
+
+
+>sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=aguA 
+PE=3 SV=1
+Length=835
+
+ Score = 162 bits (409),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 41/147 (28%), Positives = 70/147 (48%), Gaps = 10/147 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G++ WLRY P+  D+   +     I  L+ + DS  I  A+ ELQ GL  ++ K + +
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLN-STDSGPIGTASQELQAGLENIVGKQLSI  77
+
+Query  59   ARDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L   R     V IV  N + 
+Sbjct  78   KRSSCGSRSSILVATLEQYRQ--ACNRSSEVPSLGIDGFWL---RAYGDTVQIVGEN-ER  131
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSA  145
+            G LYG+F  L L+  Q     +  +++
+Sbjct  132  GALYGAFEYLSLL-AQGNFSHVDYTTS  157
+
+
+>sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubingensis 
+OX=5068 GN=aguA PE=1 SV=1
+Length=841
+
+ Score = 159 bits (402),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 37/149 (25%), Positives = 65/149 (44%), Gaps = 13/149 (9%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGY+ WLRY P+  D    +     I  L+    SP I  A  EL+ G   +L+  +  
+Sbjct  21   EDGYNGWLRYAPVSCDLHCRQALPSHIVLLNSTKGSP-IETAGRELKAGFQSILSTNLTF  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPL-IASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+               +     S+++ T D        +N    L  L  +G+ L+     +   V +  N+ 
+Sbjct  80   HPFQCDSSASILVATLDEYRQKCRDIN----LPELDPDGFWLQS----EGDTVRILGNNA  131
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG++  L ++  Q    +++ ++ P
+Sbjct  132  RGALYGAYEYLAMV-AQRNFSRVAYTTNP  159
+
+
+>sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobacillus 
+stearothermophilus OX=1422 GN=aguA PE=1 SV=1
+Length=679
+
+ Score = 156 bits (394),  Expect = 4e-44, Method: Composition-based stats.
+ Identities = 39/147 (27%), Positives = 66/147 (45%), Gaps = 11/147 (7%)
+
+Query  3    GYD-MWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLN-KPIVAR  60
+            GY+  WLRY+     + L+        +     SP   A   ELQ+GL  ++  +P V +
+Sbjct  4    GYEPCWLRYERKDQYSRLR-----FEEIVAKRTSPIFQAVVEELQKGLRSMMEIEPQVVQ  58
+
+Query  61   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  120
+            +      S+ +GT ++      L        +  EGY++     +    + +   +D GV
+Sbjct  59   EVNETANSIWLGTLEDEEFERPL----EGTLVHPEGYVIRSDVDDGPFRIYIIGKTDAGV  114
+
+Query  121  LYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            LYG FH LRL+Q    + +LS+   P+
+Sbjct  115  LYGVFHFLRLLQMGENIAQLSIIEQPK  141
+
+
+>sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / 
+M139) OX=227321 GN=aguA PE=1 SV=1
+Length=847
+
+ Score = 143 bits (361),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 45/153 (29%), Positives = 67/153 (44%), Gaps = 18/153 (12%)
+
+Query  1    EDGYDMWLRYQPIAD-QTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDG   WLRY PI   ++  K     I  L+     P I+ AA EL  G+ G+  K +  
+Sbjct  18   EDGLAAWLRYAPIPHAKSYHKNLPSVIVPLNATAGRP-IDTAAYELVDGIKGIFGKRVTL  76
+
+Query  60   RDEKLKDYSL---VIGTPDNSPLIASLNLGER---LQALGAEGYLLEQTRINKRHVVIVA  113
+            ++E   D +L    +GT +     A    G     +  L  +GY L    +    V+I+ 
+Sbjct  77   KNETRDDPNLPAVTVGTVE-----AYAEAGGDVSSVPELIDDGYYLS---VAGPSVLILG  128
+
+Query  114  ANSDVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             N + G LYG+F  L  +  Q  +   S +S P
+Sbjct  129  QN-ERGALYGTFQYLERL-AQGKVSDTSFASNP  159
+
+
+>sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 142 bits (358),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 38/148 (26%), Positives = 64/148 (43%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G+D WLRY P+       K+    I  L     SP I+ A  E+Q GL  +       
+Sbjct  20   ENGFDGWLRYAPVSCHGACQKSLPSHIVTLDPTESSP-ISVAGQEIQDGLQRMFKMHATV  78
+
+Query  60   RDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+              +      S++IGT D      +    + +  L  +G+ L      K   V +   S+ 
+Sbjct  79   EPKGCSTRSSVIIGTLDAYNH--ACKDADPVPELEEDGFWLNT----KDGKVQIIGQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++ +Q     +S +++P
+Sbjct  133  GALYGAYEYLSML-SQGNFAPVSYTTSP  159
+
+
+>sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillus 
+terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 141 bits (355),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 40/149 (27%), Positives = 66/149 (44%), Gaps = 11/149 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G + WLRY PI  D    K    +I  L+    SP +  A  ELQ G+ G+  K + V
+Sbjct  20   ENGLNGWLRYAPIPCDGRCHKALPSRIVALNSTQGSP-LETAIEELQTGVRGMTGKRLSV  78
+
+Query  59   ARDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+            A++       + +I T +      +      +  L  +G+ L        +V I+   S+
+Sbjct  79   AKENNCNLHATALIATVEEYRR--TCRNSSDIPDLDVDGFWLRTE---GNNVQIL-GQSE  132
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG+F  L ++  Q     +  S++P
+Sbjct  133  RGALYGAFEYLSML-AQGDFSSVDYSTSP  160
+
+
+>sp|Q99024|AGUA_HYPJE Alpha-glucuronidase OS=Hypocrea jecorina 
+OX=51453 PE=1 SV=1
+Length=847
+
+ Score = 103 bits (256),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 38/153 (25%), Positives = 63/153 (41%), Gaps = 15/153 (10%)
+
+Query  1    EDGYDMWLRYQPIADQTL---LKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI  57
+            E G D WLRY  +        L ++  +I  L+ + + P + +A++EL +G+ G+L   +
+Sbjct  20   ESGIDAWLRYARLPSSATRGHLTSFPDRIVVLNASKNGP-LASASSELHKGIKGILGLDL  78
+
+Query  58   VARD----EKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVA  113
+                          S+VI T D     ++         L  +GY L         V I+ 
+Sbjct  79   DVSSRGGKHCSTQKSIVISTLDTYQ--SACGKLSPKLNLKEDGYWLST---KGGSVQIIG  133
+
+Query  114  ANSDVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             N + G LYG+F  L  +  Q      + +S P
+Sbjct  134  QN-ERGALYGAFQYLSYLG-QGDFSGKAFASNP  164
+
+
+>sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=aguA PE=1 SV=2
+Length=674
+
+ Score = 52.9 bits (125),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 32/146 (22%), Positives = 65/146 (45%), Gaps = 17/146 (12%)
+
+Query  6    MWLRYQ--PIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLN--KPIVARD  61
+             WL Y+  P      LK +   +  L      P  +    E++R     +       +R 
+Sbjct  6    CWLEYRGLPADVAGKLKDWFSSVSIL-----EPGSSVLKDEIRRFSERSIGITPRFYSRP  60
+
+Query  62   EKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGVL  121
+             K + Y +++G  ++ P+   +NLGE       EG++L     N   +++V   +   ++
+Sbjct  61   LKKEKY-IMVGRLESLPIKLDVNLGE-------EGFMLRTIEWNGSKILLVTGETKKALV  112
+
+Query  122  YGSFHLLRLIQTQHALEKLSLSSAPR  147
+            YG F L++ I+    +EK+++ + P+
+Sbjct  113  YGIFDLMKRIRLGEDIEKMNVLAKPK  138
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.120    0.296    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0368    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+Results from round 3
+
+
+Query= d1gqia2
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuro...  179     2e-52
+sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartory...  179     5e-52
+sp|B0Y2K1|AGUA_ASPFC Probable alpha-glucuronidase A OS=Neosartory...  178     1e-51
+sp|Q4WW45|AGUA_ASPFU Probable alpha-glucuronidase A OS=Neosartory...  177     3e-51
+sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillu...  175     1e-50
+sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillu...  171     4e-49
+sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillu...  171     5e-49
+sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubinge...  170     7e-49
+sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillu...  168     7e-48
+sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillu...  167     1e-47
+sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillu...  166     1e-47
+sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobac...  147     1e-40
+sp|Q99024|AGUA_HYPJE Alpha-glucuronidase OS=Hypocrea jecorina OX=...  142     1e-38
+sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans...  141     2e-38
+sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermo...  129     3e-34
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|B3PC73|AGUA_CELJU Extracellular xylan exo-alpha-(1->2)-glucuronosidase 
+OS=Cellvibrio japonicus (strain Ueda107) OX=498211 
+GN=gla67A PE=1 SV=1
+Length=732
+
+ Score = 179 bits (454),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 147/147 (100%), Positives = 147/147 (100%), Gaps = 0/147 (0%)
+
+Query  1    EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  60
+            EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR
+Sbjct  25   EDGYDMWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVAR  84
+
+Query  61   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  120
+            DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV
+Sbjct  85   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  144
+
+Query  121  LYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            LYGSFHLLRLIQTQHALEKLSLSSAPR
+Sbjct  145  LYGSFHLLRLIQTQHALEKLSLSSAPR  171
+
+
+>sp|A1DD80|AGUA_NEOFI Probable alpha-glucuronidase A OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC 
+A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=aguA 
+PE=3 SV=1
+Length=840
+
+ Score = 179 bits (454),  Expect = 5e-52, Method: Composition-based stats.
+ Identities = 40/148 (27%), Positives = 67/148 (45%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G D WLRY  +  +    +     I  L+    S  +  A  ELQ GL  +L K    
+Sbjct  20   ENGLDGWLRYASVPCNGNCQRALPSHIVTLNSTKSS-QVYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKL-KDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+V+GT +    +   N G +   L  +G+ L    I  + V IV   ++ 
+Sbjct  79   KSTGCSTDSSIVVGTVEAYRQV--CNTGSQAPELDVDGFWLS---IRGKSVQIV-GQTER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|B0Y2K1|AGUA_ASPFC Probable alpha-glucuronidase A OS=Neosartorya 
+fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) OX=451804 
+GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 178 bits (452),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 41/148 (28%), Positives = 70/148 (47%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E G D WLRY  +  +    +     I  L+    SP +  A  ELQ GL  +L K    
+Sbjct  20   ETGLDGWLRYASVPCNGNCQRALPSHIVTLNSTRSSP-VYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKL-KDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+++GT +    +   N G ++  L  +G+ L    I ++ V+IV   S+ 
+Sbjct  79   KSTGCSTDSSIIVGTVEAYRQV--CNAGRQVPQLDVDGFWLS---IREKSVLIV-GQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|Q4WW45|AGUA_ASPFU Probable alpha-glucuronidase A OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / 
+FGSC A1100) OX=330879 GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 177 bits (448),  Expect = 3e-51, Method: Composition-based stats.
+ Identities = 40/148 (27%), Positives = 69/148 (47%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E G D WLRY  +  +    +     I  L+    SP +  A  ELQ GL  +L K    
+Sbjct  20   ETGLDGWLRYASVPCNGNCQRALPSHIVTLNSTRSSP-VYVAGQELQDGLHQILGKHASV  78
+
+Query  60   RDEKL-KDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            +      D S+++GT +    +   N G ++     +G+ L    I ++ V+IV   S+ 
+Sbjct  79   KSTGCSTDSSIIVGTVEAYRQV--CNAGRQVPQFDVDGFWLS---IREKSVLIV-GQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    ++S +++P
+Sbjct  133  GALYGAYEYLSML-AQGNFSQVSYATSP  159
+
+
+>sp|A1CC12|AGUA_ASPCL Probable alpha-glucuronidase A OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=aguA PE=3 SV=1
+Length=840
+
+ Score = 175 bits (444),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/148 (26%), Positives = 64/148 (43%), Gaps = 10/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G+D WLRY P+       K+    I  L     SP I+ A  E+Q GL  +       
+Sbjct  20   ENGFDGWLRYAPVSCHGACQKSLPSHIVTLDPTESSP-ISVAGQEIQDGLQRMFKMHATV  78
+
+Query  60   RDEKL-KDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+              +      S++IGT D      +    + +  L  +G+ L      K   V +   S+ 
+Sbjct  79   EPKGCSTRSSVIIGTLDAYNH--ACKDADPVPELEEDGFWLNT----KDGKVQIIGQSER  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++ +Q     +S +++P
+Sbjct  133  GALYGAYEYLSML-SQGNFAPVSYTTSP  159
+
+
+>sp|A2R3X3|AGUA_ASPNC Probable alpha-glucuronidase A OS=Aspergillus 
+niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 171 bits (433),  Expect = 4e-49, Method: Composition-based stats.
+ Identities = 35/148 (24%), Positives = 64/148 (43%), Gaps = 11/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P+  D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLHCQQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            R  +     S+++ T D             +  L  +G+ L+     +   V +      
+Sbjct  80   RPFQCNSSASILVATLDEYRQRC---RDINVPELDPDGFWLQS----EGDTVRILGKDAR  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    +++ +++P
+Sbjct  133  GALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|Q96WX9|AGUA_ASPNG Probable alpha-glucuronidase A OS=Aspergillus 
+niger OX=5061 GN=aguA PE=2 SV=1
+Length=841
+
+ Score = 171 bits (432),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 35/148 (24%), Positives = 64/148 (43%), Gaps = 11/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGYD WLRY P+  D    +     +  L+    SP I  A  EL+ G   +L+  + +
+Sbjct  21   EDGYDGWLRYAPVSCDLRCRQALPSHVVLLNSTKGSP-IETAGRELKAGFQSILSTNLTS  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+            R  +     S+++ T D             +  L  +G+ L+     +   V +      
+Sbjct  80   RPFQCNSSTSILVATLDEYRQRC---RDINVPELDPDGFWLQS----EGDTVRILGKDAR  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    +++ +++P
+Sbjct  133  GALYGAYEYLAMV-AQRNFSRVAYATSP  159
+
+
+>sp|O42814|AGUA_ASPTU Alpha-glucuronidase A OS=Aspergillus tubingensis 
+OX=5068 GN=aguA PE=1 SV=1
+Length=841
+
+ Score = 170 bits (431),  Expect = 7e-49, Method: Composition-based stats.
+ Identities = 36/148 (24%), Positives = 63/148 (43%), Gaps = 11/148 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDGY+ WLRY P+  D    +     I  L+    SP I  A  EL+ G   +L+  +  
+Sbjct  21   EDGYNGWLRYAPVSCDLHCRQALPSHIVLLNSTKGSP-IETAGRELKAGFQSILSTNLTF  79
+
+Query  60   RDEKLKDY-SLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+               +     S+++ T D             L  L  +G+ L+     +   V +  N+  
+Sbjct  80   HPFQCDSSASILVATLDEYRQKC---RDINLPELDPDGFWLQS----EGDTVRILGNNAR  132
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            G LYG++  L ++  Q    +++ ++ P
+Sbjct  133  GALYGAYEYLAMV-AQRNFSRVAYTTNP  159
+
+
+>sp|Q0CJP9|AGUA_ASPTN Probable alpha-glucuronidase A OS=Aspergillus 
+terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=aguA 
+PE=3 SV=1
+Length=841
+
+ Score = 168 bits (424),  Expect = 7e-48, Method: Composition-based stats.
+ Identities = 39/149 (26%), Positives = 66/149 (44%), Gaps = 11/149 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI-V  58
+            E+G + WLRY PI  D    K    +I  L+    SP +  A  ELQ G+ G+  K + V
+Sbjct  20   ENGLNGWLRYAPIPCDGRCHKALPSRIVALNSTQGSP-LETAIEELQTGVRGMTGKRLSV  78
+
+Query  59   ARDEKLK-DYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSD  117
+            A++       + +I T +      +      +  L  +G+ L      + + V +   S+
+Sbjct  79   AKENNCNLHATALIATVEEYR--RTCRNSSDIPDLDVDGFWLRT----EGNNVQILGQSE  132
+
+Query  118  VGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+             G LYG+F  L ++  Q     +  S++P
+Sbjct  133  RGALYGAFEYLSML-AQGDFSSVDYSTSP  160
+
+
+>sp|B8NGU1|AGUA_ASPFN Probable alpha-glucuronidase A OS=Aspergillus 
+flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / 
+JCM 12722 / SRRC 167) OX=332952 GN=aguA PE=3 SV=1
+Length=839
+
+ Score = 167 bits (422),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 38/147 (26%), Positives = 66/147 (45%), Gaps = 10/147 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G++ WLRY P+  D+   +     I  L+     P I  A+ ELQ GL  ++ K +  
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLNSTDSGP-IGTASQELQAGLENIVGKQLSI  77
+
+Query  60   -RDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L         V IV   ++ 
+Sbjct  78   KRSSCGSRSSILVATLEQYRQ--ACNRSSEVPSLGIDGFWLRA---YGDTVQIV-GENER  131
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSA  145
+            G LYG+F  L L+  Q     +  +++
+Sbjct  132  GALYGAFEYLSLL-AQGNFSHVDYTTS  157
+
+
+>sp|Q2UFP4|AGUA_ASPOR Probable alpha-glucuronidase A OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=aguA 
+PE=3 SV=1
+Length=835
+
+ Score = 166 bits (421),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 38/147 (26%), Positives = 66/147 (45%), Gaps = 10/147 (7%)
+
+Query  1    EDGYDMWLRYQPI-ADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            E+G++ WLRY P+  D+   +     I  L+     P I  A+ ELQ GL  ++ K +  
+Sbjct  19   ENGFNGWLRYAPVQCDKRCQRALPSSIVTLNSTDSGP-IGTASQELQAGLENIVGKQLSI  77
+
+Query  60   -RDEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDV  118
+             R       S+++ T +      + N    + +LG +G+ L         V IV   ++ 
+Sbjct  78   KRSSCGSRSSILVATLEQYRQ--ACNRSSEVPSLGIDGFWLRA---YGDTVQIV-GENER  131
+
+Query  119  GVLYGSFHLLRLIQTQHALEKLSLSSA  145
+            G LYG+F  L L+  Q     +  +++
+Sbjct  132  GALYGAFEYLSLL-AQGNFSHVDYTTS  157
+
+
+>sp|Q09LY5|AGUA_GEOSE Xylan alpha-(1->2)-glucuronosidase OS=Geobacillus 
+stearothermophilus OX=1422 GN=aguA PE=1 SV=1
+Length=679
+
+ Score = 147 bits (370),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 39/147 (27%), Positives = 66/147 (45%), Gaps = 11/147 (7%)
+
+Query  3    GYD-MWLRYQPIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLN-KPIVAR  60
+            GY+  WLRY+     + L+        +     SP   A   ELQ+GL  ++  +P V +
+Sbjct  4    GYEPCWLRYERKDQYSRLR-----FEEIVAKRTSPIFQAVVEELQKGLRSMMEIEPQVVQ  58
+
+Query  61   DEKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGV  120
+            +      S+ +GT ++      L        +  EGY++     +    + +   +D GV
+Sbjct  59   EVNETANSIWLGTLEDEEFERPL----EGTLVHPEGYVIRSDVDDGPFRIYIIGKTDAGV  114
+
+Query  121  LYGSFHLLRLIQTQHALEKLSLSSAPR  147
+            LYG FH LRL+Q    + +LS+   P+
+Sbjct  115  LYGVFHFLRLLQMGENIAQLSIIEQPK  141
+
+
+>sp|Q99024|AGUA_HYPJE Alpha-glucuronidase OS=Hypocrea jecorina 
+OX=51453 PE=1 SV=1
+Length=847
+
+ Score = 142 bits (357),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 37/153 (24%), Positives = 63/153 (41%), Gaps = 15/153 (10%)
+
+Query  1    EDGYDMWLRYQPIADQTL---LKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPI  57
+            E G D WLRY  +        L ++  +I  L+ + + P + +A++EL +G+ G+L   +
+Sbjct  20   ESGIDAWLRYARLPSSATRGHLTSFPDRIVVLNASKNGP-LASASSELHKGIKGILGLDL  78
+
+Query  58   VARD----EKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVA  113
+                          S+VI T D     ++         L  +GY L         V I+ 
+Sbjct  79   DVSSRGGKHCSTQKSIVISTLDTYQ--SACGKLSPKLNLKEDGYWLST---KGGSVQII-  132
+
+Query  114  ANSDVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+              ++ G LYG+F  L  +  Q      + +S P
+Sbjct  133  GQNERGALYGAFQYLSYLG-QGDFSGKAFASNP  164
+
+
+>sp|Q5AQZ4|AGUA_EMENI Alpha-glucuronidase A OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / 
+M139) OX=227321 GN=aguA PE=1 SV=1
+Length=847
+
+ Score = 141 bits (354),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/150 (27%), Positives = 66/150 (44%), Gaps = 12/150 (8%)
+
+Query  1    EDGYDMWLRYQPIAD-QTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLNKPIVA  59
+            EDG   WLRY PI   ++  K     I  L+     P I+ AA EL  G+ G+  K +  
+Sbjct  18   EDGLAAWLRYAPIPHAKSYHKNLPSVIVPLNATAGRP-IDTAAYELVDGIKGIFGKRVTL  76
+
+Query  60   RDEKLKDYS---LVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANS  116
+            ++E   D +   + +GT +      +      +  L  +GY L    +    V+I+   +
+Sbjct  77   KNETRDDPNLPAVTVGTVEAY--AEAGGDVSSVPELIDDGYYLS---VAGPSVLIL-GQN  130
+
+Query  117  DVGVLYGSFHLLRLIQTQHALEKLSLSSAP  146
+            + G LYG+F  L  +  Q  +   S +S P
+Sbjct  131  ERGALYGTFQYLERL-AQGKVSDTSFASNP  159
+
+
+>sp|P96105|AGUA_THEMA Xylan alpha-(1->2)-glucuronosidase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=aguA PE=1 SV=2
+Length=674
+
+ Score = 129 bits (323),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 32/146 (22%), Positives = 65/146 (45%), Gaps = 17/146 (12%)
+
+Query  6    MWLRYQ--PIADQTLLKTYQKQIRHLHVAGDSPTINAAAAELQRGLSGLLN--KPIVARD  61
+             WL Y+  P      LK +   +  L      P  +    E++R     +       +R 
+Sbjct  6    CWLEYRGLPADVAGKLKDWFSSVSIL-----EPGSSVLKDEIRRFSERSIGITPRFYSRP  60
+
+Query  62   EKLKDYSLVIGTPDNSPLIASLNLGERLQALGAEGYLLEQTRINKRHVVIVAANSDVGVL  121
+             K + Y +++G  ++ P+   +NLGE       EG++L     N   +++V   +   ++
+Sbjct  61   LKKEKY-IMVGRLESLPIKLDVNLGE-------EGFMLRTIEWNGSKILLVTGETKKALV  112
+
+Query  122  YGSFHLLRLIQTQHALEKLSLSSAPR  147
+            YG F L++ I+    +EK+++ + P+
+Sbjct  113  YGIFDLMKRIRLGEDIEKMNVLAKPK  138
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.324    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

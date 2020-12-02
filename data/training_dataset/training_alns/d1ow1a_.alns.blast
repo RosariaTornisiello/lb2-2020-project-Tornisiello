@@ -1,0 +1,465 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ow1a_
+
+Length=167
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens OX=...  344     3e-109
+sp|Q62504|MINT_MOUSE Msx2-interacting protein OS=Mus musculus OX=...  343     7e-109
+sp|Q8SX83|SPEN_DROME Protein split ends OS=Drosophila melanogaste...  204     4e-60 
+sp|G5EGK6|DIN1_CAEEL Daf-12-interacting protein 1 OS=Caenorhabdit...  73.2    2e-14 
+sp|Q96T37|RBM15_HUMAN RNA-binding protein 15 OS=Homo sapiens OX=9...  71.2    1e-13 
+sp|Q0VBL3|RBM15_MOUSE RNA-binding protein 15 OS=Mus musculus OX=1...  71.2    1e-13 
+sp|Q6PHZ5|RB15B_MOUSE Putative RNA-binding protein 15B OS=Mus mus...  68.9    6e-13 
+sp|Q8NDT2|RB15B_HUMAN Putative RNA-binding protein 15B OS=Homo sa...  68.6    9e-13 
+sp|Q7KMJ6|NITO_DROME RNA-binding protein spenito OS=Drosophila me...  65.1    1e-11 
+
+
+>sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens 
+OX=9606 GN=SPEN PE=1 SV=1
+Length=3664
+
+ Score = 344 bits (883),  Expect = 3e-109, Method: Compositional matrix adjust.
+ Identities = 167/170 (98%), Positives = 167/170 (98%), Gaps = 3/170 (2%)
+
+Query  1     PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLS---PPLRIAQRMR  57
+             PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLS   PPLRIAQRMR
+Sbjct  3495  PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSEGGPPLRIAQRMR  3554
+
+Query  58    LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  117
+             LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV
+Sbjct  3555  LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  3614
+
+Query  118   PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+             PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV
+Sbjct  3615  PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  3664
+
+
+>sp|Q62504|MINT_MOUSE Msx2-interacting protein OS=Mus musculus 
+OX=10090 GN=Spen PE=1 SV=2
+Length=3644
+
+ Score = 343 bits (881),  Expect = 7e-109, Method: Compositional matrix adjust.
+ Identities = 166/170 (98%), Positives = 167/170 (98%), Gaps = 3/170 (2%)
+
+Query  1     PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLS---PPLRIAQRMR  57
+             PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLS   PPLRIAQRMR
+Sbjct  3475  PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSEGGPPLRIAQRMR  3534
+
+Query  58    LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  117
+             LEA+QLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV
+Sbjct  3535  LEASQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  3594
+
+Query  118   PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+             PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV
+Sbjct  3595  PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  3644
+
+
+>sp|Q8SX83|SPEN_DROME Protein split ends OS=Drosophila melanogaster 
+OX=7227 GN=spen PE=1 SV=2
+Length=5560
+
+ Score = 204 bits (518),  Expect = 4e-60, Method: Compositional matrix adjust.
+ Identities = 98/169 (58%), Positives = 128/169 (76%), Gaps = 6/169 (4%)
+
+Query  4     MVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPL-----SPPLRIAQRMRL  58
+             +V LL++YP++WQGLLALK D AAVQ+HFV GN  +A  SLP      +P LRIAQRMRL
+Sbjct  5393  LVTLLQRYPVMWQGLLALKTDQAAVQMHFVHGNPNVARASLPSLVETNTPLLRIAQRMRL  5452
+
+Query  59    EATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINVP  118
+             E TQLEGVA++M V+ ++C+LLALPCGRD  DV+  + +L+  FITYLQ K AAGI+N+P
+Sbjct  5453  EQTQLEGVAKKMQVDKEHCMLLALPCGRDHADVLQHSRNLQTGFITYLQQKMAAGIVNIP  5512
+
+Query  119   NPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+              PGS Q AYV+ IFP C+F+  +L R APDL   ++ ++ HL+IVIA+V
+Sbjct  5513  IPGSEQAAYVVHIFPSCDFANENLERAAPDLKNRVAELA-HLLIVIATV  5560
+
+
+>sp|G5EGK6|DIN1_CAEEL Daf-12-interacting protein 1 OS=Caenorhabditis 
+elegans OX=6239 GN=din-1 PE=1 SV=1
+Length=2407
+
+ Score = 73.2 bits (178),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 50/166 (30%), Positives = 85/166 (51%), Gaps = 9/166 (5%)
+
+Query  7     LLKKYPIVWQGLLALKNDTAAVQLHFVSG-----NNVLAHRSLPLSP---PLRIAQRMRL  58
+               K +P+VW G LALK+  A + LH ++G     N+VL  +    +P    ++I QR+RL
+Sbjct  2216  FYKHFPMVWTGRLALKSTEAMINLHLINGSETFLNDVLGRQVTEENPRRDSVKILQRLRL  2275
+
+Query  59    EATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINVP  118
+             +  Q+E + R +T   +Y   LAL    + E++     +LK+ FI YL  K+ AGI ++ 
+Sbjct  2276  DNGQVEHIYRILT-NPEYACCLALSSVNNIENLKENDTNLKSHFIDYLINKKIAGISSLG  2334
+
+Query  119   NPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+                +   +  + +F P E    +LS LA  L   + N     ++++
+Sbjct  2335  EVETKFKSARVHVFAPGEIVNRYLSELATSLHDYLQNTDTRYLLIV  2380
+
+
+>sp|Q96T37|RBM15_HUMAN RNA-binding protein 15 OS=Homo sapiens 
+OX=9606 GN=RBM15 PE=1 SV=2
+Length=977
+
+ Score = 71.2 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 55/161 (34%), Positives = 78/161 (48%), Gaps = 18/161 (11%)
+
+Query  10   KYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMRLEATQL  63
+            K  + WQG+L LKN      +H + G+  +A   L           L+I QR+RL+  +L
+Sbjct  783  KLCLAWQGMLLLKNSNFPSNMHLLQGDLQVASSLLVEGSTGGKVAQLKITQRLRLDQPKL  842
+
+Query  64   EGVARRMTVE--TDYCLLLALPCGRDQEDVVSQTESLKAA--------FITYLQAKQAAG  113
+            + V RR+ V     Y +LLA+P   D     S   S  A          ++YL+ KQAAG
+Sbjct  843  DEVTRRIKVAGPNGYAILLAVPGSSDSRSSSSSAASDTATSTQRPLRNLVSYLKQKQAAG  902
+
+Query  114  IINVPNPGS--NQPAYVLQIFPPCEFSESHLSRLAPDLLAS  152
+            +I++P  G+   +   VL  FPPCEFS+  L   A  L  S
+Sbjct  903  VISLPVGGNKDKENTGVLHAFPPCEFSQQFLDSPAKALAKS  943
+
+
+>sp|Q0VBL3|RBM15_MOUSE RNA-binding protein 15 OS=Mus musculus 
+OX=10090 GN=Rbm15 PE=1 SV=1
+Length=962
+
+ Score = 71.2 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 56/161 (35%), Positives = 79/161 (49%), Gaps = 18/161 (11%)
+
+Query  10   KYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMRLEATQL  63
+            K  + WQG+L LKN      +H + G+  +A   L           L+I QR+RL+  +L
+Sbjct  784  KLCLAWQGMLLLKNSNFPSNMHLLQGDLQVASSLLVEGSTGGKVAQLKITQRLRLDQPKL  843
+
+Query  64   EGVARRMTVE--TDYCLLLALPCGRDQEDVVSQTESLKAA--------FITYLQAKQAAG  113
+            + V RR+ V     Y +LLA+P   D     S   S  AA         ++YL+ KQAAG
+Sbjct  844  DEVTRRIKVAGPNGYAILLAVPGSSDSRSSSSSATSDTAASTQRPLRNLVSYLKQKQAAG  903
+
+Query  114  IINVPNPGS--NQPAYVLQIFPPCEFSESHLSRLAPDLLAS  152
+            +I++P  G+   +   VL  FPPCEFS+  L   A  L  S
+Sbjct  904  VISLPVGGNKDKENTGVLHAFPPCEFSQQFLDSPAKALAKS  944
+
+
+>sp|Q6PHZ5|RB15B_MOUSE Putative RNA-binding protein 15B OS=Mus 
+musculus OX=10090 GN=Rbm15b PE=1 SV=2
+Length=887
+
+ Score = 68.9 bits (167),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 49/145 (34%), Positives = 73/145 (50%), Gaps = 17/145 (12%)
+
+Query  15   WQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMRLEATQLEGVAR  68
+            W GLL LKN      +H + G+  +    L   P       L+IAQR+RL+  +L+ V R
+Sbjct  719  WNGLLVLKNSCFPTSMHILEGDQGVISGLLKDHPSGSKLTQLKIAQRLRLDQPKLDEVTR  778
+
+Query  69   RMT--VETDYCLLLAL---PCGRDQEDVVSQTESLKAAF----ITYLQAKQAAGIINVPN  119
+            R+       Y +LLA+   P G   E +      L+       ++YL+ KQAAG+I++P 
+Sbjct  779  RIKQGSPNGYAVLLAIQSTPSGPGAEGMPVVEPGLQRRLLRNLVSYLKQKQAAGVISLPV  838
+
+Query  120  PGSN--QPAYVLQIFPPCEFSESHL  142
+             GS       +L  FPPC+FS+ +L
+Sbjct  839  GGSKGRDNTGMLYAFPPCDFSQQYL  863
+
+
+>sp|Q8NDT2|RB15B_HUMAN Putative RNA-binding protein 15B OS=Homo 
+sapiens OX=9606 GN=RBM15B PE=1 SV=3
+Length=890
+
+ Score = 68.6 bits (166),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 49/145 (34%), Positives = 73/145 (50%), Gaps = 17/145 (12%)
+
+Query  15   WQGLLALKNDTAAVQLHFVSGNN------VLAHRSLPLSPPLRIAQRMRLEATQLEGVAR  68
+            W GLL LKN      +H + G+       +  H S      L+IAQR+RL+  +L+ V R
+Sbjct  722  WNGLLVLKNSCFPTSMHILEGDQGVISSLLKDHTSGSKLTQLKIAQRLRLDQPKLDEVTR  781
+
+Query  69   RMT--VETDYCLLLAL---PCGRDQEDVVSQTESLKAAF----ITYLQAKQAAGIINVPN  119
+            R+       Y +LLA    P G   E + +    L+       ++YL+ KQAAG+I++P 
+Sbjct  782  RIKQGSPNGYAVLLATQATPSGLGTEGMPTVEPGLQRRLLRNLVSYLKQKQAAGVISLPV  841
+
+Query  120  PGSN--QPAYVLQIFPPCEFSESHL  142
+             GS       +L  FPPC+FS+ +L
+Sbjct  842  GGSKGRDGTGMLYAFPPCDFSQQYL  866
+
+
+>sp|Q7KMJ6|NITO_DROME RNA-binding protein spenito OS=Drosophila 
+melanogaster OX=7227 GN=nito PE=1 SV=1
+Length=793
+
+ Score = 65.1 bits (157),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 48/162 (30%), Positives = 77/162 (48%), Gaps = 9/162 (6%)
+
+Query  9    KKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAH---RSLPLSPPLRIAQRMRLEATQLEG  65
+            +K   VW G L LK+     + H   G+  +     R       LRI QR+RL+  +L+ 
+Sbjct  629  RKCSTVWTGALILKSSLFPAKFHLTDGDTDIVESLMRDEEGKHNLRITQRLRLDPPKLDD  688
+
+Query  66   VARRMTVETDYCLLLALPCGRDQ---EDVVSQTESLKAAFITYLQAKQAAGIINVPNPGS  122
+            V +R+   + + + + L    +    +D   QT  L+   ++YL+ K+AAG+I++ N   
+Sbjct  689  VQKRIASSSSHAIFMGLAGSTNDTNCDDASVQTRPLR-NLVSYLKQKEAAGVISLLNK-E  746
+
+Query  123  NQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+             +   VL  FPPC+FS   L R    L         HL+IV+
+Sbjct  747  TEATGVLYAFPPCDFSTELLKRTCHSLTEEGLK-EDHLVIVV  787
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.134    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8202541424
+Results from round 2
+
+
+Query= d1ow1a_
+
+Length=167
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens OX=...  252     6e-77
+sp|Q62504|MINT_MOUSE Msx2-interacting protein OS=Mus musculus OX=...  251     1e-76
+sp|Q8SX83|SPEN_DROME Protein split ends OS=Drosophila melanogaste...  222     2e-66
+sp|G5EGK6|DIN1_CAEEL Daf-12-interacting protein 1 OS=Caenorhabdit...  192     6e-56
+sp|Q7KMJ6|NITO_DROME RNA-binding protein spenito OS=Drosophila me...  189     1e-55
+sp|Q6PHZ5|RB15B_MOUSE Putative RNA-binding protein 15B OS=Mus mus...  186     5e-54
+sp|Q8NDT2|RB15B_HUMAN Putative RNA-binding protein 15B OS=Homo sa...  182     1e-52
+sp|Q96T37|RBM15_HUMAN RNA-binding protein 15 OS=Homo sapiens OX=9...  177     1e-50
+sp|Q0VBL3|RBM15_MOUSE RNA-binding protein 15 OS=Mus musculus OX=1...  176     1e-50
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q96T58|MINT_HUMAN Msx2-interacting protein OS=Homo sapiens 
+OX=9606 GN=SPEN PE=1 SV=1
+Length=3664
+
+ Score = 252 bits (644),  Expect = 6e-77, Method: Composition-based stats.
+ Identities = 165/170 (97%), Positives = 165/170 (97%), Gaps = 3/170 (2%)
+
+Query  1     PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLP---LSPPLRIAQRMR  57
+             PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLP     PPLRIAQRMR
+Sbjct  3495  PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSEGGPPLRIAQRMR  3554
+
+Query  58    LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  117
+             LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV
+Sbjct  3555  LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  3614
+
+Query  118   PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+             PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV
+Sbjct  3615  PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  3664
+
+
+>sp|Q62504|MINT_MOUSE Msx2-interacting protein OS=Mus musculus 
+OX=10090 GN=Spen PE=1 SV=2
+Length=3644
+
+ Score = 251 bits (642),  Expect = 1e-76, Method: Composition-based stats.
+ Identities = 164/170 (96%), Positives = 165/170 (97%), Gaps = 3/170 (2%)
+
+Query  1     PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLP---LSPPLRIAQRMR  57
+             PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLP     PPLRIAQRMR
+Sbjct  3475  PVDMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSEGGPPLRIAQRMR  3534
+
+Query  58    LEATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  117
+             LEA+QLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV
+Sbjct  3535  LEASQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINV  3594
+
+Query  118   PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+             PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV
+Sbjct  3595  PNPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  3644
+
+
+>sp|Q8SX83|SPEN_DROME Protein split ends OS=Drosophila melanogaster 
+OX=7227 GN=spen PE=1 SV=2
+Length=5560
+
+ Score = 222 bits (565),  Expect = 2e-66, Method: Composition-based stats.
+ Identities = 98/169 (58%), Positives = 128/169 (76%), Gaps = 6/169 (4%)
+
+Query  4     MVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPL-----SPPLRIAQRMRL  58
+             +V LL++YP++WQGLLALK D AAVQ+HFV GN  +A  SLP      +P LRIAQRMRL
+Sbjct  5393  LVTLLQRYPVMWQGLLALKTDQAAVQMHFVHGNPNVARASLPSLVETNTPLLRIAQRMRL  5452
+
+Query  59    EATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINVP  118
+             E TQLEGVA++M V+ ++C+LLALPCGRD  DV+  + +L+  FITYLQ K AAGI+N+P
+Sbjct  5453  EQTQLEGVAKKMQVDKEHCMLLALPCGRDHADVLQHSRNLQTGFITYLQQKMAAGIVNIP  5512
+
+Query  119   NPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIASV  167
+              PGS Q AYV+ IFP C+F+  +L R APDL   ++ ++ HL+IVIA+V
+Sbjct  5513  IPGSEQAAYVVHIFPSCDFANENLERAAPDLKNRVAELA-HLLIVIATV  5560
+
+
+>sp|G5EGK6|DIN1_CAEEL Daf-12-interacting protein 1 OS=Caenorhabditis 
+elegans OX=6239 GN=din-1 PE=1 SV=1
+Length=2407
+
+ Score = 192 bits (488),  Expect = 6e-56, Method: Composition-based stats.
+ Identities = 50/168 (30%), Positives = 86/168 (51%), Gaps = 9/168 (5%)
+
+Query  7     LLKKYPIVWQGLLALKNDTAAVQLHFVSG-----NNVLAHRSLPLSP---PLRIAQRMRL  58
+               K +P+VW G LALK+  A + LH ++G     N+VL  +    +P    ++I QR+RL
+Sbjct  2216  FYKHFPMVWTGRLALKSTEAMINLHLINGSETFLNDVLGRQVTEENPRRDSVKILQRLRL  2275
+
+Query  59    EATQLEGVARRMTVETDYCLLLALPCGRDQEDVVSQTESLKAAFITYLQAKQAAGIINVP  118
+             +  Q+E + R +T   +Y   LAL    + E++     +LK+ FI YL  K+ AGI ++ 
+Sbjct  2276  DNGQVEHIYRILT-NPEYACCLALSSVNNIENLKENDTNLKSHFIDYLINKKIAGISSLG  2334
+
+Query  119   NPGSNQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVIAS  166
+                +   +  + +F P E    +LS LA  L   + N     ++++ +
+Sbjct  2335  EVETKFKSARVHVFAPGEIVNRYLSELATSLHDYLQNTDTRYLLIVFT  2382
+
+
+>sp|Q7KMJ6|NITO_DROME RNA-binding protein spenito OS=Drosophila 
+melanogaster OX=7227 GN=nito PE=1 SV=1
+Length=793
+
+ Score = 189 bits (481),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 48/162 (30%), Positives = 78/162 (48%), Gaps = 9/162 (6%)
+
+Query  9    KKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAH---RSLPLSPPLRIAQRMRLEATQLEG  65
+            +K   VW G L LK+     + H   G+  +     R       LRI QR+RL+  +L+ 
+Sbjct  629  RKCSTVWTGALILKSSLFPAKFHLTDGDTDIVESLMRDEEGKHNLRITQRLRLDPPKLDD  688
+
+Query  66   VARRMTVETDYCLLLALPCGRDQ---EDVVSQTESLKAAFITYLQAKQAAGIINVPNPGS  122
+            V +R+   + + + + L    +    +D   QT  L+   ++YL+ K+AAG+I++ N  +
+Sbjct  689  VQKRIASSSSHAIFMGLAGSTNDTNCDDASVQTRPLR-NLVSYLKQKEAAGVISLLNKET  747
+
+Query  123  NQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+             +   VL  FPPC+FS   L R    L         HL+IV+
+Sbjct  748  -EATGVLYAFPPCDFSTELLKRTCHSLTEEGLK-EDHLVIVV  787
+
+
+>sp|Q6PHZ5|RB15B_MOUSE Putative RNA-binding protein 15B OS=Mus 
+musculus OX=10090 GN=Rbm15b PE=1 SV=2
+Length=887
+
+ Score = 186 bits (472),  Expect = 5e-54, Method: Composition-based stats.
+ Identities = 54/178 (30%), Positives = 84/178 (47%), Gaps = 20/178 (11%)
+
+Query  4    MVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMR  57
+            + +  +   + W GLL LKN      +H + G+  +    L   P       L+IAQR+R
+Sbjct  708  LSEYAQTLQLGWNGLLVLKNSCFPTSMHILEGDQGVISGLLKDHPSGSKLTQLKIAQRLR  767
+
+Query  58   LEATQLEGVARRMT--VETDYCLLLAL---PCGRDQEDVVSQTESLKAA----FITYLQA  108
+            L+  +L+ V RR+       Y +LLA+   P G   E +      L+       ++YL+ 
+Sbjct  768  LDQPKLDEVTRRIKQGSPNGYAVLLAIQSTPSGPGAEGMPVVEPGLQRRLLRNLVSYLKQ  827
+
+Query  109  KQAAGIINVPNPGSN--QPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+            KQAAG+I++P  GS       +L  FPPC+FS+ +L      L         H++IVI
+Sbjct  828  KQAAGVISLPVGGSKGRDNTGMLYAFPPCDFSQQYLQSALRTL---GKLEEEHMVIVI  882
+
+
+>sp|Q8NDT2|RB15B_HUMAN Putative RNA-binding protein 15B OS=Homo 
+sapiens OX=9606 GN=RBM15B PE=1 SV=3
+Length=890
+
+ Score = 182 bits (461),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 53/179 (30%), Positives = 84/179 (47%), Gaps = 20/179 (11%)
+
+Query  3    DMVQLLKKYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRM  56
+            ++ +  +   + W GLL LKN      +H + G+  +    L           L+IAQR+
+Sbjct  710  NLSEYAQTLQLGWNGLLVLKNSCFPTSMHILEGDQGVISSLLKDHTSGSKLTQLKIAQRL  769
+
+Query  57   RLEATQLEGVARRMT--VETDYCLLL---ALPCGRDQEDVVSQTESLKAA----FITYLQ  107
+            RL+  +L+ V RR+       Y +LL   A P G   E + +    L+       ++YL+
+Sbjct  770  RLDQPKLDEVTRRIKQGSPNGYAVLLATQATPSGLGTEGMPTVEPGLQRRLLRNLVSYLK  829
+
+Query  108  AKQAAGIINVPNPGSN--QPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+             KQAAG+I++P  GS       +L  FPPC+FS+ +L      L         H++IVI
+Sbjct  830  QKQAAGVISLPVGGSKGRDGTGMLYAFPPCDFSQQYLQSALRTL---GKLEEEHMVIVI  885
+
+
+>sp|Q96T37|RBM15_HUMAN RNA-binding protein 15 OS=Homo sapiens 
+OX=9606 GN=RBM15 PE=1 SV=2
+Length=977
+
+ Score = 177 bits (448),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 55/174 (32%), Positives = 84/174 (48%), Gaps = 23/174 (13%)
+
+Query  10   KYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMRLEATQL  63
+            K  + WQG+L LKN      +H + G+  +A   L           L+I QR+RL+  +L
+Sbjct  783  KLCLAWQGMLLLKNSNFPSNMHLLQGDLQVASSLLVEGSTGGKVAQLKITQRLRLDQPKL  842
+
+Query  64   EGVARRMTV--ETDYCLLLALPC---------GRDQEDVVSQTESLKAAFITYLQAKQAA  112
+            + V RR+ V     Y +LLA+P              +   S    L+   ++YL+ KQAA
+Sbjct  843  DEVTRRIKVAGPNGYAILLAVPGSSDSRSSSSSAASDTATSTQRPLR-NLVSYLKQKQAA  901
+
+Query  113  GIINVPNPGS--NQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+            G+I++P  G+   +   VL  FPPCEFS+  L   A  L  S      +L+++I
+Sbjct  902  GVISLPVGGNKDKENTGVLHAFPPCEFSQQFLDSPAKALAKS---EEDYLVMII  952
+
+
+>sp|Q0VBL3|RBM15_MOUSE RNA-binding protein 15 OS=Mus musculus 
+OX=10090 GN=Rbm15 PE=1 SV=1
+Length=962
+
+ Score = 176 bits (447),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 55/174 (32%), Positives = 84/174 (48%), Gaps = 23/174 (13%)
+
+Query  10   KYPIVWQGLLALKNDTAAVQLHFVSGNNVLAHRSLPLSPP------LRIAQRMRLEATQL  63
+            K  + WQG+L LKN      +H + G+  +A   L           L+I QR+RL+  +L
+Sbjct  784  KLCLAWQGMLLLKNSNFPSNMHLLQGDLQVASSLLVEGSTGGKVAQLKITQRLRLDQPKL  843
+
+Query  64   EGVARRMTV--ETDYCLLLALPC---------GRDQEDVVSQTESLKAAFITYLQAKQAA  112
+            + V RR+ V     Y +LLA+P              +   S    L+   ++YL+ KQAA
+Sbjct  844  DEVTRRIKVAGPNGYAILLAVPGSSDSRSSSSSATSDTAASTQRPLR-NLVSYLKQKQAA  902
+
+Query  113  GIINVPNPGS--NQPAYVLQIFPPCEFSESHLSRLAPDLLASISNISPHLMIVI  164
+            G+I++P  G+   +   VL  FPPCEFS+  L   A  L  S      +L+++I
+Sbjct  903  GVISLPVGGNKDKENTGVLHAFPPCEFSQQFLDSPAKALAKS---EEDYLVMII  953
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.340    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8202541424
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

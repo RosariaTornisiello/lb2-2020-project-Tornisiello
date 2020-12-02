@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2huja1
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P50833|YPPE_BACSU Uncharacterized protein YppE OS=Bacillus sub...  53.1    6e-09
+
+
+>sp|P50833|YPPE_BACSU Uncharacterized protein YppE OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yppE PE=1 SV=1
+Length=123
+
+ Score = 53.1 bits (126),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 33/116 (28%), Positives = 56/116 (48%), Gaps = 0/116 (0%)
+
+Query  3    LLIRTEQLLLQNEKNWELYLSNREEEKPFDFYKDMKPFVDEAKRCADDFLELAIPWVNTE  62
+            LL  TEQ++   EK  + Y   +     +DF++ +KP V+E    A  + E A+  +   
+Sbjct  6    LLEMTEQMIEVAEKGADRYQEGKNSNHSYDFFETIKPAVEENDELAARWAEGALELIKVR  65
+
+Query  63   RPPYLGELQLRQACDNVQMTAVSAFNGRSFYKHFLDHYQSTKYTLTRVRDFLKRKE  118
+            RP Y+ + Q+    DN     + ++      K F D  +S  YTL  V+D + R++
+Sbjct  66   RPKYVHKEQIEAVKDNFLELVLQSYVHHIHKKRFKDITESVLYTLHAVKDEIARED  121
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.136    0.409    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5075760756
+Results from round 2
+
+
+Query= d2huja1
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P50833|YPPE_BACSU Uncharacterized protein YppE OS=Bacillus sub...  157     1e-49
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P50833|YPPE_BACSU Uncharacterized protein YppE OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yppE PE=1 SV=1
+Length=123
+
+ Score = 157 bits (396),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 33/116 (28%), Positives = 56/116 (48%), Gaps = 0/116 (0%)
+
+Query  3    LLIRTEQLLLQNEKNWELYLSNREEEKPFDFYKDMKPFVDEAKRCADDFLELAIPWVNTE  62
+            LL  TEQ++   EK  + Y   +     +DF++ +KP V+E    A  + E A+  +   
+Sbjct  6    LLEMTEQMIEVAEKGADRYQEGKNSNHSYDFFETIKPAVEENDELAARWAEGALELIKVR  65
+
+Query  63   RPPYLGELQLRQACDNVQMTAVSAFNGRSFYKHFLDHYQSTKYTLTRVRDFLKRKE  118
+            RP Y+ + Q+    DN     + ++      K F D  +S  YTL  V+D + R++
+Sbjct  66   RPKYVHKEQIEAVKDNFLELVLQSYVHHIHKKRFKDITESVLYTLHAVKDEIARED  121
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5075760756
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

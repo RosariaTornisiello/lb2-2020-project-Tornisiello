@@ -1,0 +1,175 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2i15a1
+
+Length=122
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P75364|Y423_MYCPN Uncharacterized protein MG296 homolog OS=Myc...  243     2e-83
+sp|P47538|Y296_MYCGE Uncharacterized protein MG296 OS=Mycoplasma ...  173     6e-56
+
+
+>sp|P75364|Y423_MYCPN Uncharacterized protein MG296 homolog OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_423 PE=1 SV=1
+Length=129
+
+ Score = 243 bits (619),  Expect = 2e-83, Method: Compositional matrix adjust.
+ Identities = 122/129 (95%), Positives = 122/129 (95%), Gaps = 7/129 (5%)
+
+Query  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+            MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD
+Sbjct  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+
+Query  61   AFFISSEVVKQLDL-------PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  113
+            AFFISSEVVKQLDL       PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG
+Sbjct  61   AFFISSEVVKQLDLLAVLVDNPKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  120
+
+Query  114  KRFGVLTVY  122
+            KRFGVLTVY
+Sbjct  121  KRFGVLTVY  129
+
+
+>sp|P47538|Y296_MYCGE Uncharacterized protein MG296 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG296 PE=4 SV=1
+Length=129
+
+ Score = 173 bits (438),  Expect = 6e-56, Method: Compositional matrix adjust.
+ Identities = 82/129 (64%), Positives = 99/129 (77%), Gaps = 7/129 (5%)
+
+Query  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+            MKPQL+A K+F+QTEF+ VDFETFR NFN CL+REQ  ++IYEDDDYDDQ FF KPMLSD
+Sbjct  1    MKPQLIAFKKFLQTEFQAVDFETFRINFNLCLKREQDNIVIYEDDDYDDQPFFFKPMLSD  60
+
+Query  61   AFFISSEVVKQLDL-------PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  113
+             FFI +EV+KQLD        PK   + CCQ+FYEAL +FISALAITKG++  R+HQ+L 
+Sbjct  61   GFFIQTEVIKQLDYLAKVVENPKDSDQQCCQNFYEALIVFISALAITKGINPNRFHQRLV  120
+
+Query  114  KRFGVLTVY  122
+             RF +  VY
+Sbjct  121  NRFAIHAVY  129
+
+
+
+Lambda      K        H        a         alpha
+   0.325    0.140    0.405    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5038597344
+Results from round 2
+
+
+Query= d2i15a1
+
+Length=122
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P47538|Y296_MYCGE Uncharacterized protein MG296 OS=Mycoplasma ...  197     9e-66
+sp|P75364|Y423_MYCPN Uncharacterized protein MG296 homolog OS=Myc...  197     2e-65
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P47538|Y296_MYCGE Uncharacterized protein MG296 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG296 PE=4 SV=1
+Length=129
+
+ Score = 197 bits (502),  Expect = 9e-66, Method: Composition-based stats.
+ Identities = 82/129 (64%), Positives = 99/129 (77%), Gaps = 7/129 (5%)
+
+Query  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+            MKPQL+A K+F+QTEF+ VDFETFR NFN CL+REQ  ++IYEDDDYDDQ FF KPMLSD
+Sbjct  1    MKPQLIAFKKFLQTEFQAVDFETFRINFNLCLKREQDNIVIYEDDDYDDQPFFFKPMLSD  60
+
+Query  61   AFFISSEVVKQLDL-------PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  113
+             FFI +EV+KQLD        PK   + CCQ+FYEAL +FISALAITKG++  R+HQ+L 
+Sbjct  61   GFFIQTEVIKQLDYLAKVVENPKDSDQQCCQNFYEALIVFISALAITKGINPNRFHQRLV  120
+
+Query  114  KRFGVLTVY  122
+             RF +  VY
+Sbjct  121  NRFAIHAVY  129
+
+
+>sp|P75364|Y423_MYCPN Uncharacterized protein MG296 homolog OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_423 PE=1 SV=1
+Length=129
+
+ Score = 197 bits (501),  Expect = 2e-65, Method: Composition-based stats.
+ Identities = 122/129 (95%), Positives = 122/129 (95%), Gaps = 7/129 (5%)
+
+Query  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+            MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD
+Sbjct  1    MKPQLLALKQFVQTEFEKVDFETFRQNFNRCLEREQSTLLIYEDDDYDDQSFFLKPMLSD  60
+
+Query  61   AFFISSEVVKQLDL-------PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  113
+            AFFISSEVVKQLDL       PKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG
+Sbjct  61   AFFISSEVVKQLDLLAVLVDNPKGDVKSCCQSFYEALTLFISALAITKGVDVGRYHQQLG  120
+
+Query  114  KRFGVLTVY  122
+            KRFGVLTVY
+Sbjct  121  KRFGVLTVY  129
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.148    0.450    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0452    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5038597344
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,396 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2o9ux_
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cummins...  102     3e-29
+sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cummins...  87.4    2e-23
+sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 OS=...  38.9    7e-04
+
+
+>sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=2
+Length=50
+
+ Score = 102 bits (253),  Expect = 3e-29, Method: Compositional matrix adjust.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYE  48
+           GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYE
+Sbjct  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYE  48
+
+
+>sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=1
+Length=45
+
+ Score = 87.4 bits (215),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 44/45 (98%), Positives = 44/45 (98%), Gaps = 1/45 (2%)
+
+Query  52  FREIKGYEYQLYVYASDKLF-ADISEDYKTRGRKLLRFNGPVPPP  95
+           FREIKGYEYQLYVYASDKLF ADISEDYKTRGRKLLRFNGPVPPP
+Sbjct  1   FREIKGYEYQLYVYASDKLFRADISEDYKTRGRKLLRFNGPVPPP  45
+
+
+>sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 
+OS=Oryza sativa subsp. japonica OX=39947 GN=Os03g0210100 PE=3 
+SV=1
+Length=117
+
+ Score = 38.9 bits (89),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 30/97 (31%), Positives = 46/97 (47%), Gaps = 20/97 (21%)
+
+Query  1    GEWEIIDIG-PFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKGY  58
+            G WE +DI  P  Q LG++AV EE++    G LTF +V            +G ++ + G 
+Sbjct  28   GSWEPVDINDPHVQELGRWAVAEEDRGVAAGGLTFERV-----------TDGEKQVVAGV  76
+
+Query  59   EYQLYVYASDKLFAD-------ISEDYKTRGRKLLRF  88
+             Y+L + AS     D         +D ++  RKL+ F
+Sbjct  77   NYRLTLEASSSGAKDGRYEAVVYEQDPRSNARKLVSF  113
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.143    0.438    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 2
+
+
+Query= d2o9ux_
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 OS=...  114     2e-33
+sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cummins...  89.8    2e-24
+sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cummins...  75.5    9e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q10Q46|CYT6_ORYSJ Cysteine proteinase inhibitor 6 OS=Oryza sat...  57.8    4e-11
+sp|Q10J94|CYT8_ORYSJ Cysteine proteinase inhibitor 8 OS=Oryza sat...  50.9    3e-08
+sp|Q10Q48|CYT9_ORYSJ Putative cysteine proteinase inhibitor 9 OS=...  46.6    8e-07
+
+
+>sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 
+OS=Oryza sativa subsp. japonica OX=39947 GN=Os03g0210100 PE=3 
+SV=1
+Length=117
+
+ Score = 114 bits (286),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 30/97 (31%), Positives = 46/97 (47%), Gaps = 20/97 (21%)
+
+Query  1    GEWEIIDIG-PFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKGY  58
+            G WE +DI  P  Q LG++AV EE++    G LTF +V            +G ++ + G 
+Sbjct  28   GSWEPVDINDPHVQELGRWAVAEEDRGVAAGGLTFERV-----------TDGEKQVVAGV  76
+
+Query  59   EYQLYVYASDKLFAD-------ISEDYKTRGRKLLRF  88
+             Y+L + AS     D         +D ++  RKL+ F
+Sbjct  77   NYRLTLEASSSGAKDGRYEAVVYEQDPRSNARKLVSF  113
+
+
+>sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=2
+Length=50
+
+ Score = 89.8 bits (221),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 48/50 (96%), Positives = 48/50 (96%), Gaps = 0/50 (0%)
+
+Query  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENE  50
+           GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYE  
+Sbjct  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYEEN  50
+
+
+>sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=1
+Length=45
+
+ Score = 75.5 bits (184),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 44/45 (98%), Positives = 44/45 (98%), Gaps = 1/45 (2%)
+
+Query  52  FREIKGYEYQLYVYASDKLF-ADISEDYKTRGRKLLRFNGPVPPP  95
+           FREIKGYEYQLYVYASDKLF ADISEDYKTRGRKLLRFNGPVPPP
+Sbjct  1   FREIKGYEYQLYVYASDKLFRADISEDYKTRGRKLLRFNGPVPPP  45
+
+
+>sp|Q10Q46|CYT6_ORYSJ Cysteine proteinase inhibitor 6 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os03g0210200 PE=3 SV=1
+Length=113
+
+ Score = 57.8 bits (138),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 22/98 (22%), Positives = 41/98 (42%), Gaps = 23/98 (23%)
+
+Query  3    WEIID--IGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKGYE  59
+            W  I     P  Q LG++A+ E N++     LTF++V             G ++ + G  
+Sbjct  23   WSPIKNIDDPHIQELGRWAITENNRVSPSDELTFHRV-----------TGGEQQVVSGMN  71
+
+Query  60   YQLYVYASDK--------LFADISEDYKTRGRKLLRFN  89
+            Y+L + A+                +++ +  RKL+ F+
+Sbjct  72   YRLEIEAASGGGDVTGSYGAVVFEQEW-SNTRKLISFD  108
+
+
+>sp|Q10J94|CYT8_ORYSJ Cysteine proteinase inhibitor 8 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os03g0429000 PE=2 SV=1
+Length=123
+
+ Score = 50.9 bits (120),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 28/98 (29%), Positives = 39/98 (40%), Gaps = 23/98 (23%)
+
+Query  1    GEWEII-DIG-PFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKG  57
+            G W  I D+G P  Q LG +AV E +       L F +V             G ++ + G
+Sbjct  33   GGWSPITDVGDPHIQELGGWAV-ERHASLSSDGLRFRRV-----------TSGEQQVVSG  80
+
+Query  58   YEYQLYVYASDKLFAD-------ISEDYKTRGRKLLRF  88
+              Y+L V ASD   A          + + T  R+L  F
+Sbjct  81   MNYRLVVSASDPAGATASYVAVVYEQSW-TNTRQLTSF  117
+
+
+>sp|Q10Q48|CYT9_ORYSJ Putative cysteine proteinase inhibitor 9 
+OS=Oryza sativa subsp. japonica OX=39947 GN=Os03g0210000 PE=3 
+SV=1
+Length=114
+
+ Score = 46.6 bits (109),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 18/75 (24%), Positives = 28/75 (37%), Gaps = 12/75 (16%)
+
+Query  2   EWEIIDIGP-FTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREIKGYE-  59
+            W+ ID      Q++  +AV E +     G LT N V     +             G   
+Sbjct  27  SWKTIDANDRHVQDVALWAVAETDWASATGGLTLNTVDGAEKRFE----------AGVNY  76
+
+Query  60  YQLYVYASDKLFADI  74
+           Y+L + AS ++ A  
+Sbjct  77  YRLTLEASSRVVAKY  91
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.127    0.352    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 3
+
+
+Query= d2o9ux_
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 OS=...  101     2e-28
+sp|Q10Q46|CYT6_ORYSJ Cysteine proteinase inhibitor 6 OS=Oryza sat...  89.9    9e-24
+sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cummins...  81.8    3e-21
+sp|Q10J94|CYT8_ORYSJ Cysteine proteinase inhibitor 8 OS=Oryza sat...  80.7    5e-20
+sp|Q10Q48|CYT9_ORYSJ Putative cysteine proteinase inhibitor 9 OS=...  79.9    8e-20
+sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cummins...  70.3    1e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q41916|CYT5_ARATH Cysteine proteinase inhibitor 5 OS=Arabidops...  46.0    2e-06
+sp|Q6TPK4|CYT1_ACTDE Cysteine proteinase inhibitor 1 OS=Actinidia...  44.5    6e-06
+sp|P86472|CYT1_ACTCC Cysteine proteinase inhibitor 1 OS=Actinidia...  43.7    1e-05
+
+
+>sp|Q10Q47|CYT7_ORYSJ Putative cysteine proteinase inhibitor 7 
+OS=Oryza sativa subsp. japonica OX=39947 GN=Os03g0210100 PE=3 
+SV=1
+Length=117
+
+ Score = 101 bits (252),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 30/98 (31%), Positives = 46/98 (47%), Gaps = 20/98 (20%)
+
+Query  1    GEWEIIDIG-PFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKGY  58
+            G WE +DI  P  Q LG++AV EE++    G LTF +V            +G ++ + G 
+Sbjct  28   GSWEPVDINDPHVQELGRWAVAEEDRGVAAGGLTFERV-----------TDGEKQVVAGV  76
+
+Query  59   EYQLYVYASDKLFAD-------ISEDYKTRGRKLLRFN  89
+             Y+L + AS     D         +D ++  RKL+ F 
+Sbjct  77   NYRLTLEASSSGAKDGRYEAVVYEQDPRSNARKLVSFE  114
+
+
+>sp|Q10Q46|CYT6_ORYSJ Cysteine proteinase inhibitor 6 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os03g0210200 PE=3 SV=1
+Length=113
+
+ Score = 89.9 bits (221),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 22/99 (22%), Positives = 41/99 (41%), Gaps = 23/99 (23%)
+
+Query  2    EWEIID--IGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFRE-IKGY  58
+             W  I     P  Q LG++A+ E N++     LTF++V             G ++ + G 
+Sbjct  22   GWSPIKNIDDPHIQELGRWAITENNRVSPSDELTFHRV-----------TGGEQQVVSGM  70
+
+Query  59   EYQLYVYASDK--------LFADISEDYKTRGRKLLRFN  89
+             Y+L + A+                +++ +  RKL+ F+
+Sbjct  71   NYRLEIEAASGGGDVTGSYGAVVFEQEW-SNTRKLISFD  108
+
+
+>sp|P02882|MONB_DIOCU Monellin chain B OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=2
+Length=50
+
+ Score = 81.8 bits (200),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 48/50 (96%), Positives = 48/50 (96%), Gaps = 0/50 (0%)
+
+Query  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENE  50
+           GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYE  
+Sbjct  1   GEWEIIDIGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYEEN  50
+
+
+>sp|Q10J94|CYT8_ORYSJ Cysteine proteinase inhibitor 8 OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os03g0429000 PE=2 SV=1
+Length=123
+
+ Score = 80.7 bits (197),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 26/98 (27%), Positives = 36/98 (37%), Gaps = 23/98 (23%)
+
+Query  1    GEWEIIDI--GPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREI-KG  57
+            G W  I     P  Q LG +AV E +       L F +V             G +++  G
+Sbjct  33   GGWSPITDVGDPHIQELGGWAV-ERHASLSSDGLRFRRV-----------TSGEQQVVSG  80
+
+Query  58   YEYQLYVYASDKLFAD-------ISEDYKTRGRKLLRF  88
+              Y+L V ASD   A          + + T  R+L  F
+Sbjct  81   MNYRLVVSASDPAGATASYVAVVYEQSW-TNTRQLTSF  117
+
+
+>sp|Q10Q48|CYT9_ORYSJ Putative cysteine proteinase inhibitor 9 
+OS=Oryza sativa subsp. japonica OX=39947 GN=Os03g0210000 PE=3 
+SV=1
+Length=114
+
+ Score = 79.9 bits (195),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 18/75 (24%), Positives = 28/75 (37%), Gaps = 12/75 (16%)
+
+Query  2   EWEIIDIGP-FTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREIKGYE-  59
+            W+ ID      Q++  +AV E +     G LT N V     +             G   
+Sbjct  27  SWKTIDANDRHVQDVALWAVAETDWASATGGLTLNTVDGAEKRFE----------AGVNY  76
+
+Query  60  YQLYVYASDKLFADI  74
+           Y+L + AS ++ A  
+Sbjct  77  YRLTLEASSRVVAKY  91
+
+
+>sp|P02881|MONA_DIOCU Monellin chain A OS=Dioscoreophyllum cumminsii 
+OX=3457 PE=1 SV=1
+Length=45
+
+ Score = 70.3 bits (170),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 44/45 (98%), Positives = 44/45 (98%), Gaps = 1/45 (2%)
+
+Query  52  FREIKGYEYQLYVYASDKLF-ADISEDYKTRGRKLLRFNGPVPPP  95
+           FREIKGYEYQLYVYASDKLF ADISEDYKTRGRKLLRFNGPVPPP
+Sbjct  1   FREIKGYEYQLYVYASDKLFRADISEDYKTRGRKLLRFNGPVPPP  45
+
+
+>sp|Q41916|CYT5_ARATH Cysteine proteinase inhibitor 5 OS=Arabidopsis 
+thaliana OX=3702 GN=CYS5 PE=2 SV=2
+Length=122
+
+ Score = 46.0 bits (107),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 25/98 (26%), Positives = 36/98 (37%), Gaps = 21/98 (21%)
+
+Query  1    GEWEIID--IGPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREIKGY  58
+            G W  I     P    +G+FAV E NK  + G L F  V+              + + G 
+Sbjct  29   GGWSPISNVTDPQVVEIGEFAVSEYNKRSESG-LKFETVVSGET----------QVVSGT  77
+
+Query  59   EYQLYVYASDK-------LFADISEDYKTRGRKLLRFN  89
+             Y+L V A+D        L     + +  + R L  F 
+Sbjct  78   NYRLKVAANDGDGVSKNYLAIVWDKPWM-KFRNLTSFE  114
+
+
+>sp|Q6TPK4|CYT1_ACTDE Cysteine proteinase inhibitor 1 OS=Actinidia 
+deliciosa OX=3627 PE=1 SV=1
+Length=116
+
+ Score = 44.5 bits (103),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 34/95 (36%), Gaps = 18/95 (19%)
+
+Query  1    GEWEIIDI--GPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREIKGY  58
+            G W  I+       Q++ +FAV E NK      L +  V+R             + + G 
+Sbjct  30   GGWRPIESLNSAEVQDVAQFAVSEHNK-QANDELQYQSVVR----------GYTQVVAGT  78
+
+Query  59   EYQLYVYASDKLF-----ADISEDYKTRGRKLLRF  88
+             Y+L + A D        A + +      R L  F
+Sbjct  79   NYRLVIAAKDGAVVGNYEAVVWDKPWMHFRNLTSF  113
+
+
+>sp|P86472|CYT1_ACTCC Cysteine proteinase inhibitor 1 OS=Actinidia 
+chinensis var. chinensis OX=1590841 GN=CYT1 PE=1 SV=2
+Length=116
+
+ Score = 43.7 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 34/95 (36%), Gaps = 18/95 (19%)
+
+Query  1    GEWEIIDI--GPFTQNLGKFAVDEENKIGQYGRLTFNKVIRPCMKKTIYENEGFREIKGY  58
+            G W  I+       Q++ +FAV E NK      L +  V+R             + + G 
+Sbjct  30   GGWRPIENLNSAEVQDVAQFAVSEHNK-QANDELQYQSVVR----------GYTQVVAGT  78
+
+Query  59   EYQLYVYASDKLF-----ADISEDYKTRGRKLLRF  88
+             Y+L + A D        A + +      R L  F
+Sbjct  79   NYRLVIAAKDGAVVGNYEAVVWDKPWMHFRNLTSF  113
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.118    0.314    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0360    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

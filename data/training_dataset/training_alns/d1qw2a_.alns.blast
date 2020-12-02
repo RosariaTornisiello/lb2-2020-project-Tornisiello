@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1qw2a_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32132|YUNC_BACSU Uncharacterized protein YunC OS=Bacillus sub...  40.4    2e-04
+
+
+>sp|O32132|YUNC_BACSU Uncharacterized protein YunC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yunC PE=4 SV=1
+Length=101
+
+ Score = 40.4 bits (93),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/89 (28%), Positives = 43/89 (48%), Gaps = 4/89 (4%)
+
+Query  7   MMQIDSIEIGGKVYQFFKSDLGNAPLLFIKGSKGYAMCGYLNM----ETSNKVGDIAVRV  62
+           M+ +  I I G+ +      L     + +    GY MCG L++    E   + G +A R 
+Sbjct  1   MVNLTPIMIEGQPFTAVTVKLPKTNFMAVANDHGYIMCGALDVALLNEKLKERGIVAGRA  60
+
+Query  63  MGVKTLDDMLSAKVVEASQEAQKVGINPG  91
+           +GV+T+D +L A +   +  A+ +GI  G
+Sbjct  61  VGVRTIDQLLDAPLESVTYAAEDLGIKVG  89
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 2
+
+
+Query= d1qw2a_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32132|YUNC_BACSU Uncharacterized protein YunC OS=Bacillus sub...  124     3e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O32132|YUNC_BACSU Uncharacterized protein YunC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yunC PE=4 SV=1
+Length=101
+
+ Score = 124 bits (311),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 27/99 (27%), Positives = 47/99 (47%), Gaps = 4/99 (4%)
+
+Query  7    MMQIDSIEIGGKVYQFFKSDLGNAPLLFIKGSKGYAMCGYLNM----ETSNKVGDIAVRV  62
+            M+ +  I I G+ +      L     + +    GY MCG L++    E   + G +A R 
+Sbjct  1    MVNLTPIMIEGQPFTAVTVKLPKTNFMAVANDHGYIMCGALDVALLNEKLKERGIVAGRA  60
+
+Query  63   MGVKTLDDMLSAKVVEASQEAQKVGINPGDVLRNVIDKL  101
+            +GV+T+D +L A +   +  A+ +GI  G   R  + K+
+Sbjct  61   VGVRTIDQLLDAPLESVTYAAEDLGIKVGMSGREALLKM  99
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.141    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0431    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

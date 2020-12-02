@@ -1,0 +1,171 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ofca_
+
+Length=141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q00022|ABL_AGABI Agaricus bisporus lectin OS=Agaricus bisporus...  194     6e-64
+sp|F2Z266|BEL_BOLED Boletus edulis lectin OS=Boletus edulis OX=36...  167     5e-53
+
+
+>sp|Q00022|ABL_AGABI Agaricus bisporus lectin OS=Agaricus bisporus 
+OX=5341 PE=1 SV=3
+Length=143
+
+ Score = 194 bits (494),  Expect = 6e-64, Method: Compositional matrix adjust.
+ Identities = 93/142 (65%), Positives = 110/142 (77%), Gaps = 1/142 (1%)
+
+Query  1    TYKITVRVYQTNPNAFFHPVEKTVWKYANGGTWTITDDQHVLTMGGSGTSGTLRF-HADN  59
+            TY I++RVYQT P  FF PVE+T WKYANGGTW     ++VLTMGGSGTSG+LRF  +D 
+Sbjct  2    TYTISIRVYQTTPKGFFRPVERTNWKYANGGTWDEVRGEYVLTMGGSGTSGSLRFVSSDT  61
+
+Query  60   GESFTATFGVHNYKRWCDIVTNLAADETGMVINQQYYSQKNREEARERQLSNYEVKNAKG  119
+             ESF ATFGVHNYKRWCDIVTNL  ++T +VINQ+YY    R++ARE QL++Y V NAKG
+Sbjct  62   DESFVATFGVHNYKRWCDIVTNLTNEQTALVINQEYYGVPIRDQARENQLTSYNVANAKG  121
+
+Query  120  RNFEIVYTEAEGNDLHANLIIG  141
+            R F I YT  EG++L ANLIIG
+Sbjct  122  RRFAIEYTVTEGDNLKANLIIG  143
+
+
+>sp|F2Z266|BEL_BOLED Boletus edulis lectin OS=Boletus edulis OX=36056 
+PE=1 SV=2
+Length=143
+
+ Score = 167 bits (422),  Expect = 5e-53, Method: Compositional matrix adjust.
+ Identities = 81/141 (57%), Positives = 96/141 (68%), Gaps = 1/141 (1%)
+
+Query  1    TYKITVRVYQTNPN-AFFHPVEKTVWKYANGGTWTITDDQHVLTMGGSGTSGTLRFHADN  59
+            TY IT+RV+Q NP   FF  VEKTV+ YANGGTW+     H LTMGGSGTSG LRF +D 
+Sbjct  2    TYSITLRVFQRNPGRGFFSIVEKTVFHYANGGTWSEAKGTHTLTMGGSGTSGVLRFMSDK  61
+
+Query  60   GESFTATFGVHNYKRWCDIVTNLAADETGMVINQQYYSQKNREEARERQLSNYEVKNAKG  119
+            GE  T   GVHNYKRWCD+VT L  +ET +VIN QYY+   R   RE+QL+ Y V +  G
+Sbjct  62   GELITVAVGVHNYKRWCDVVTGLKPEETALVINPQYYNNGPRAYTREKQLAEYNVTSVVG  121
+
+Query  120  RNFEIVYTEAEGNDLHANLII  140
+              FE+ YT  EGN+L AN+I 
+Sbjct  122  TRFEVKYTVVEGNNLEANVIF  142
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.131    0.399    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008933090
+Results from round 2
+
+
+Query= d2ofca_
+
+Length=141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q00022|ABL_AGABI Agaricus bisporus lectin OS=Agaricus bisporus...  226     1e-76
+sp|F2Z266|BEL_BOLED Boletus edulis lectin OS=Boletus edulis OX=36...  221     1e-74
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q00022|ABL_AGABI Agaricus bisporus lectin OS=Agaricus bisporus 
+OX=5341 PE=1 SV=3
+Length=143
+
+ Score = 226 bits (577),  Expect = 1e-76, Method: Composition-based stats.
+ Identities = 93/142 (65%), Positives = 110/142 (77%), Gaps = 1/142 (1%)
+
+Query  1    TYKITVRVYQTNPNAFFHPVEKTVWKYANGGTWTITDDQHVLTMGGSGTSGTLRF-HADN  59
+            TY I++RVYQT P  FF PVE+T WKYANGGTW     ++VLTMGGSGTSG+LRF  +D 
+Sbjct  2    TYTISIRVYQTTPKGFFRPVERTNWKYANGGTWDEVRGEYVLTMGGSGTSGSLRFVSSDT  61
+
+Query  60   GESFTATFGVHNYKRWCDIVTNLAADETGMVINQQYYSQKNREEARERQLSNYEVKNAKG  119
+             ESF ATFGVHNYKRWCDIVTNL  ++T +VINQ+YY    R++ARE QL++Y V NAKG
+Sbjct  62   DESFVATFGVHNYKRWCDIVTNLTNEQTALVINQEYYGVPIRDQARENQLTSYNVANAKG  121
+
+Query  120  RNFEIVYTEAEGNDLHANLIIG  141
+            R F I YT  EG++L ANLIIG
+Sbjct  122  RRFAIEYTVTEGDNLKANLIIG  143
+
+
+>sp|F2Z266|BEL_BOLED Boletus edulis lectin OS=Boletus edulis OX=36056 
+PE=1 SV=2
+Length=143
+
+ Score = 221 bits (563),  Expect = 1e-74, Method: Composition-based stats.
+ Identities = 81/141 (57%), Positives = 96/141 (68%), Gaps = 1/141 (1%)
+
+Query  1    TYKITVRVYQTNPN-AFFHPVEKTVWKYANGGTWTITDDQHVLTMGGSGTSGTLRFHADN  59
+            TY IT+RV+Q NP   FF  VEKTV+ YANGGTW+     H LTMGGSGTSG LRF +D 
+Sbjct  2    TYSITLRVFQRNPGRGFFSIVEKTVFHYANGGTWSEAKGTHTLTMGGSGTSGVLRFMSDK  61
+
+Query  60   GESFTATFGVHNYKRWCDIVTNLAADETGMVINQQYYSQKNREEARERQLSNYEVKNAKG  119
+            GE  T   GVHNYKRWCD+VT L  +ET +VIN QYY+   R   RE+QL+ Y V +  G
+Sbjct  62   GELITVAVGVHNYKRWCDVVTGLKPEETALVINPQYYNNGPRAYTREKQLAEYNVTSVVG  121
+
+Query  120  RNFEIVYTEAEGNDLHANLII  140
+              FE+ YT  EGN+L AN+I 
+Sbjct  122  TRFEVKYTVVEGNNLEANVIF  142
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.397    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0413    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008933090
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

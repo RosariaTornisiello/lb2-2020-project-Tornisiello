@@ -1,0 +1,191 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2jdih1
+
+Length=45
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P05630|ATPD_BOVIN ATP synthase subunit delta, mitochondrial OS...  87.4    6e-23
+sp|P30049|ATPD_HUMAN ATP synthase subunit delta, mitochondrial OS...  83.2    3e-21
+sp|Q9D3D9|ATPD_MOUSE ATP synthase subunit delta, mitochondrial OS...  81.3    1e-20
+sp|P35434|ATPD_RAT ATP synthase subunit delta, mitochondrial OS=R...  80.9    2e-20
+
+
+>sp|P05630|ATPD_BOVIN ATP synthase subunit delta, mitochondrial 
+OS=Bos taurus OX=9913 GN=ATP5F1D PE=1 SV=2
+Length=168
+
+ Score = 87.4 bits (215),  Expect = 6e-23, Method: Compositional matrix adjust.
+ Identities = 45/45 (100%), Positives = 45/45 (100%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  167
+
+
+>sp|P30049|ATPD_HUMAN ATP synthase subunit delta, mitochondrial 
+OS=Homo sapiens OX=9606 GN=ATP5F1D PE=1 SV=2
+Length=168
+
+ Score = 83.2 bits (204),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 42/45 (93%), Positives = 44/45 (98%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAAKANLEKAQ+EL+G ADEATRAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAAKANLEKAQAELVGTADEATRAEIQIRIEANEALVKAL  167
+
+
+>sp|Q9D3D9|ATPD_MOUSE ATP synthase subunit delta, mitochondrial 
+OS=Mus musculus OX=10090 GN=Atp5f1d PE=1 SV=1
+Length=168
+
+ Score = 81.3 bits (199),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 42/45 (93%), Positives = 43/45 (96%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAA+ANLEKAQSEL GAADEA RAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAARANLEKAQSELSGAADEAARAEIQIRIEANEALVKAL  167
+
+
+>sp|P35434|ATPD_RAT ATP synthase subunit delta, mitochondrial 
+OS=Rattus norvegicus OX=10116 GN=Atp5f1d PE=1 SV=2
+Length=168
+
+ Score = 80.9 bits (198),  Expect = 2e-20, Method: Compositional matrix adjust.
+ Identities = 42/45 (93%), Positives = 43/45 (96%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAA+ANLEKAQSEL GAADEA RAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAARANLEKAQSELSGAADEAARAEIQIRIEANEALVKAL  167
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.124    0.301    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4994613208
+Results from round 2
+
+
+Query= d2jdih1
+
+Length=45
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P30049|ATPD_HUMAN ATP synthase subunit delta, mitochondrial OS...  71.6    9e-17
+sp|P35434|ATPD_RAT ATP synthase subunit delta, mitochondrial OS=R...  71.2    1e-16
+sp|Q9D3D9|ATPD_MOUSE ATP synthase subunit delta, mitochondrial OS...  71.2    1e-16
+sp|P05630|ATPD_BOVIN ATP synthase subunit delta, mitochondrial OS...  68.1    2e-15
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P30049|ATPD_HUMAN ATP synthase subunit delta, mitochondrial 
+OS=Homo sapiens OX=9606 GN=ATP5F1D PE=1 SV=2
+Length=168
+
+ Score = 71.6 bits (174),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 42/45 (93%), Positives = 44/45 (98%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAAKANLEKAQ+EL+G ADEATRAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAAKANLEKAQAELVGTADEATRAEIQIRIEANEALVKAL  167
+
+
+>sp|P35434|ATPD_RAT ATP synthase subunit delta, mitochondrial 
+OS=Rattus norvegicus OX=10116 GN=Atp5f1d PE=1 SV=2
+Length=168
+
+ Score = 71.2 bits (173),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 42/45 (93%), Positives = 43/45 (96%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAA+ANLEKAQSEL GAADEA RAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAARANLEKAQSELSGAADEAARAEIQIRIEANEALVKAL  167
+
+
+>sp|Q9D3D9|ATPD_MOUSE ATP synthase subunit delta, mitochondrial 
+OS=Mus musculus OX=10090 GN=Atp5f1d PE=1 SV=1
+Length=168
+
+ Score = 71.2 bits (173),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 42/45 (93%), Positives = 43/45 (96%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAA+ANLEKAQSEL GAADEA RAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAARANLEKAQSELSGAADEAARAEIQIRIEANEALVKAL  167
+
+
+>sp|P05630|ATPD_BOVIN ATP synthase subunit delta, mitochondrial 
+OS=Bos taurus OX=9913 GN=ATP5F1D PE=1 SV=2
+Length=168
+
+ Score = 68.1 bits (165),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 45/45 (100%), Positives = 45/45 (100%), Gaps = 0/45 (0%)
+
+Query  1    DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  45
+            DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL
+Sbjct  123  DMLDLGAAKANLEKAQSELLGAADEATRAEIQIRIEANEALVKAL  167
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4994613208
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

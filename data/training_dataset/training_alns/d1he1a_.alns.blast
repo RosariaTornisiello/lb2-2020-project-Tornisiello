@@ -1,0 +1,347 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1he1a_
+
+Length=135
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q93Q17|AEXT_AERSA ADP-ribosyltransferase toxin AexT OS=Aeromon...  101     5e-25
+sp|P31492|YOPE_YEREN Outer membrane virulence protein YopE OS=Yer...  47.0    7e-06
+sp|P08008|YOPE_YERPS Outer membrane virulence protein YopE OS=Yer...  45.4    2e-05
+sp|P31493|YOPE_YERPE Outer membrane virulence protein YopE OS=Yer...  45.4    2e-05
+sp|P74851|SPTP_SALTI Secreted effector protein SptP OS=Salmonella...  43.5    1e-04
+sp|Q5PEA9|SPTP_SALPA Secreted effector protein SptP OS=Salmonella...  43.5    1e-04
+sp|P74873|SPTP_SALTY Secreted effector protein SptP OS=Salmonella...  43.1    2e-04
+
+
+>sp|Q93Q17|AEXT_AERSA ADP-ribosyltransferase toxin AexT OS=Aeromonas 
+salmonicida OX=645 GN=aexT PE=3 SV=1
+Length=475
+
+ Score = 101 bits (252),  Expect = 5e-25, Method: Compositional matrix adjust.
+ Identities = 58/129 (45%), Positives = 81/129 (63%), Gaps = 0/129 (0%)
+
+Query  7    FKQMVLQQALPMTLKGLDKASELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQ  66
+             ++++ Q A   +L G  KA  L  +T E L ++H+ LA+G+G LRSL TAL  +  GSQ
+Sbjct  98   LQRLMKQAAFGSSLGGFAKADVLNNITGEQLGKDHASLATGNGPLRSLCTALQAVVIGSQ  157
+
+Query  67   VEESRIQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALL  126
+              + R  A  LL R I GI LQQWG+ GG  ++L+  A PEL +E   QLH  M EVA L
+Sbjct  158  QPQLRELATGLLARPIAGIPLQQWGSVGGKVTELLTSAPPELLKEAMSQLHTAMGEVADL  217
+
+Query  127  RQAVESEVS  135
+            ++AV++EV+
+Sbjct  218  QRAVKAEVA  226
+
+
+>sp|P31492|YOPE_YEREN Outer membrane virulence protein YopE OS=Yersinia 
+enterocolitica OX=630 GN=yopE PE=2 SV=1
+Length=219
+
+ Score = 47.0 bits (110),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 27/76 (36%), Positives = 40/76 (53%), Gaps = 5/76 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L++L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLSSLDAETLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLV  101
+               QWGT GGAAS  V
+Sbjct  177  PFSQWGTVGGAASAYV  192
+
+
+>sp|P08008|YOPE_YERPS Outer membrane virulence protein YopE OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=yopE PE=1 SV=2
+Length=219
+
+ Score = 45.4 bits (106),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 27/76 (36%), Positives = 39/76 (51%), Gaps = 5/76 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L +L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLNSLDAEMLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLV  101
+               QWGT GGAAS  V
+Sbjct  177  PFSQWGTIGGAASAYV  192
+
+
+>sp|P31493|YOPE_YERPE Outer membrane virulence protein YopE OS=Yersinia 
+pestis OX=632 GN=yopE PE=1 SV=1
+Length=219
+
+ Score = 45.4 bits (106),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 27/76 (36%), Positives = 39/76 (51%), Gaps = 5/76 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L +L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLNSLDAEMLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLV  101
+               QWGT GGAAS  V
+Sbjct  177  PFSQWGTIGGAASAYV  192
+
+
+>sp|P74851|SPTP_SALTI Secreted effector protein SptP OS=Salmonella 
+typhi OX=90370 GN=sptP PE=3 SV=1
+Length=543
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 31/112 (28%), Positives = 48/112 (43%), Gaps = 1/112 (1%)
+
+Query  13   QQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEESR  71
+            Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++  
+Sbjct  169  QPLLDIALKGLKRTIPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQSLNKIPEAKQLN  228
+
+Query  72   IQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEV  123
+                 L    IG     QWGT GG   + +  AS     +   ++H +  E+
+Sbjct  229  DYVTTLKNIQIGADRFSQWGTCGGEVERWIDKASTHELTQAVKKIHVIAKEL  280
+
+
+>sp|Q5PEA9|SPTP_SALPA Secreted effector protein SptP OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=sptP 
+PE=3 SV=1
+Length=543
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 31/112 (28%), Positives = 48/112 (43%), Gaps = 1/112 (1%)
+
+Query  13   QQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEESR  71
+            Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++  
+Sbjct  169  QPLLDIALKGLKRTIPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQSLNKIPEAKQLN  228
+
+Query  72   IQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEV  123
+                 L    IG     QWGT GG   + +  AS     +   ++H +  E+
+Sbjct  229  DYVTTLKNIQIGADRFSQWGTCGGEVERWIDKASTHELTQAVKKIHVIAKEL  280
+
+
+>sp|P74873|SPTP_SALTY Secreted effector protein SptP OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=sptP PE=1 SV=1
+Length=543
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 31/112 (28%), Positives = 48/112 (43%), Gaps = 1/112 (1%)
+
+Query  13   QQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEESR  71
+            Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++  
+Sbjct  169  QPLLDIALKGLKRTLPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQNLNKIPEAKQLN  228
+
+Query  72   IQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEV  123
+                 L    +G     QWGT GG   + V  AS     +   ++H +  E+
+Sbjct  229  DYVTTLTNIQVGVARFSQWGTCGGEVERWVDKASTHELTQAVKKIHVIAKEL  280
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.126    0.328    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4961544656
+Results from round 2
+
+
+Query= d1he1a_
+
+Length=135
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q93Q17|AEXT_AERSA ADP-ribosyltransferase toxin AexT OS=Aeromon...  168     6e-50
+sp|P74851|SPTP_SALTI Secreted effector protein SptP OS=Salmonella...  159     7e-46
+sp|Q5PEA9|SPTP_SALPA Secreted effector protein SptP OS=Salmonella...  159     7e-46
+sp|P74873|SPTP_SALTY Secreted effector protein SptP OS=Salmonella...  153     1e-43
+sp|P08008|YOPE_YERPS Outer membrane virulence protein YopE OS=Yer...  92.9    5e-23
+sp|P31493|YOPE_YERPE Outer membrane virulence protein YopE OS=Yer...  92.9    5e-23
+sp|P31492|YOPE_YEREN Outer membrane virulence protein YopE OS=Yer...  91.8    1e-22
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q93Q17|AEXT_AERSA ADP-ribosyltransferase toxin AexT OS=Aeromonas 
+salmonicida OX=645 GN=aexT PE=3 SV=1
+Length=475
+
+ Score = 168 bits (425),  Expect = 6e-50, Method: Composition-based stats.
+ Identities = 58/129 (45%), Positives = 81/129 (63%), Gaps = 0/129 (0%)
+
+Query  7    FKQMVLQQALPMTLKGLDKASELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQ  66
+             ++++ Q A   +L G  KA  L  +T E L ++H+ LA+G+G LRSL TAL  +  GSQ
+Sbjct  98   LQRLMKQAAFGSSLGGFAKADVLNNITGEQLGKDHASLATGNGPLRSLCTALQAVVIGSQ  157
+
+Query  67   VEESRIQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALL  126
+              + R  A  LL R I GI LQQWG+ GG  ++L+  A PEL +E   QLH  M EVA L
+Sbjct  158  QPQLRELATGLLARPIAGIPLQQWGSVGGKVTELLTSAPPELLKEAMSQLHTAMGEVADL  217
+
+Query  127  RQAVESEVS  135
+            ++AV++EV+
+Sbjct  218  QRAVKAEVA  226
+
+
+>sp|P74851|SPTP_SALTI Secreted effector protein SptP OS=Salmonella 
+typhi OX=90370 GN=sptP PE=3 SV=1
+Length=543
+
+ Score = 159 bits (401),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 32/121 (26%), Positives = 51/121 (42%), Gaps = 1/121 (1%)
+
+Query  12   LQQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEES  70
+             Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++ 
+Sbjct  168  KQPLLDIALKGLKRTIPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQSLNKIPEAKQL  227
+
+Query  71   RIQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALLRQAV  130
+                  L    IG     QWGT GG   + +  AS     +   ++H +  E+  +   +
+Sbjct  228  NDYVTTLKNIQIGADRFSQWGTCGGEVERWIDKASTHELTQAVKKIHVIAKELKNVTAEL  287
+
+Query  131  E  131
+            E
+Sbjct  288  E  288
+
+
+>sp|Q5PEA9|SPTP_SALPA Secreted effector protein SptP OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=sptP 
+PE=3 SV=1
+Length=543
+
+ Score = 159 bits (401),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 31/113 (27%), Positives = 48/113 (42%), Gaps = 1/113 (1%)
+
+Query  12   LQQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEES  70
+             Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++ 
+Sbjct  168  KQPLLDIALKGLKRTIPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQSLNKIPEAKQL  227
+
+Query  71   RIQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEV  123
+                  L    IG     QWGT GG   + +  AS     +   ++H +  E+
+Sbjct  228  NDYVTTLKNIQIGADRFSQWGTCGGEVERWIDKASTHELTQAVKKIHVIAKEL  280
+
+
+>sp|P74873|SPTP_SALTY Secreted effector protein SptP OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=sptP PE=1 SV=1
+Length=543
+
+ Score = 153 bits (386),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 32/121 (26%), Positives = 51/121 (42%), Gaps = 1/121 (1%)
+
+Query  12   LQQALPMTLKGLDKA-SELATLTPEGLAREHSRLASGDGALRSLSTALAGIRAGSQVEES  70
+             Q  L + LKGL +   +L  +    L      +ASG+G LRSL T L  +    + ++ 
+Sbjct  168  KQPLLDIALKGLKRTLPQLEQMDGNSLRENFQEMASGNGPLRSLMTNLQNLNKIPEAKQL  227
+
+Query  71   RIQAGRLLERSIGGIALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALLRQAV  130
+                  L    +G     QWGT GG   + V  AS     +   ++H +  E+  +   +
+Sbjct  228  NDYVTTLTNIQVGVARFSQWGTCGGEVERWVDKASTHELTQAVKKIHVIAKELKNVTAEL  287
+
+Query  131  E  131
+            E
+Sbjct  288  E  288
+
+
+>sp|P08008|YOPE_YERPS Outer membrane virulence protein YopE OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=yopE PE=1 SV=2
+Length=219
+
+ Score = 92.9 bits (229),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 30/101 (30%), Positives = 49/101 (49%), Gaps = 7/101 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L +L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLNSLDAEMLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALL  126
+               QWGT GGAAS  V  AS     +  +++  +  ++  L
+Sbjct  177  PFSQWGTIGGAASAYV--ASGVDLTQAANEIKGLAQQMQKL  215
+
+
+>sp|P31493|YOPE_YERPE Outer membrane virulence protein YopE OS=Yersinia 
+pestis OX=632 GN=yopE PE=1 SV=1
+Length=219
+
+ Score = 92.9 bits (229),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 30/101 (30%), Positives = 49/101 (49%), Gaps = 7/101 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L +L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLNSLDAEMLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALL  126
+               QWGT GGAAS  V  AS     +  +++  +  ++  L
+Sbjct  177  PFSQWGTIGGAASAYV--ASGVDLTQAANEIKGLAQQMQKL  215
+
+
+>sp|P31492|YOPE_YEREN Outer membrane virulence protein YopE OS=Yersinia 
+enterocolitica OX=630 GN=yopE PE=2 SV=1
+Length=219
+
+ Score = 91.8 bits (226),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 30/101 (30%), Positives = 50/101 (50%), Gaps = 7/101 (7%)
+
+Query  28   ELATLTPEGLAREHSRLASGDGALRSLSTALAGIR--AGSQVEESRIQAGRLLERSIGGI  85
+            +L++L  E L + H + A+G G LR   T   G+    G +++    +A  +L   + GI
+Sbjct  120  QLSSLDAETLQKNHDQFATGSGPLRGSITQCQGLMQFCGGELQA---EASAILNTPVCGI  176
+
+Query  86   ALQQWGTTGGAASQLVLDASPELRREITDQLHQVMSEVALL  126
+               QWGT GGAAS  V  AS     +  +++  +  ++  L
+Sbjct  177  PFSQWGTVGGAASAYV--ASGVDLTQAANEIKGLGQQMQQL  215
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.125    0.293    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4961544656
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

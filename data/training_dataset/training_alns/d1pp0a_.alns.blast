@@ -1,0 +1,365 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1pp0a_
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacil...  40.4    0.004
+
+
+>sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. jegathesan OX=56955 GN=cyt2Bb1 
+PE=1 SV=1
+Length=263
+
+ Score = 40.4 bits (93),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 36/139 (26%), Positives = 72/139 (52%), Gaps = 10/139 (7%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVDLSK----LAAIILNTFTNLEEESSSGFL  115
+            +QS I QQ+ E+  M+ +I + + +    V++ +     + A I NTFTNLE +    ++
+Sbjct  95   NQSVI-QQTIEISVMISQIKEIIRNVLGLVINSTNFWNSVLAAITNTFTNLEPQVDENWI  153
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTIL--ITADIEEKTGWWGLTSSTKKNF  173
+             +  N    ++S+ Y++LFS+    +  +  V  I   IT D++++   + +T      +
+Sbjct  154  VWR-NLSATHTSYYYKILFSIQNEDTGAFMAVLPIAFEITVDVQKQQLLF-ITIRDSARY  211
+
+Query  174  AVQIDALELV-VKKGFKAP  191
+             V++ AL +V +   + AP
+Sbjct  212  EVKMKALTVVQLLDSYNAP  230
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.384    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11223757120
+Results from round 2
+
+
+Query= d1pp0a_
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacil...  43.9    2e-04
+sp|Q45790|CT1BA_BACTW Type-1Ba cytolytic delta-endotoxin OS=Bacil...  41.2    0.002
+sp|Q45723|CT2BA_BACTI Type-2Ba cytolytic delta-endotoxin OS=Bacil...  40.8    0.003
+sp|Q04470|CT2AA_BACTY Type-2Aa cytolytic delta-endotoxin OS=Bacil...  40.8    0.003
+
+
+>sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. jegathesan OX=56955 GN=cyt2Bb1 
+PE=1 SV=1
+Length=263
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 36/139 (26%), Positives = 72/139 (52%), Gaps = 10/139 (7%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD----LSKLAAIILNTFTNLEEESSSGFL  115
+            +QS I QQ+ E+  M+ +I + + +    V++     + + A I NTFTNLE +    ++
+Sbjct  95   NQSVI-QQTIEISVMISQIKEIIRNVLGLVINSTNFWNSVLAAITNTFTNLEPQVDENWI  153
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTIL--ITADIEEKTGWWGLTSSTKKNF  173
+             +  N    ++S+ Y++LFS+    +  +  V  I   IT D++++   + +T      +
+Sbjct  154  VWR-NLSATHTSYYYKILFSIQNEDTGAFMAVLPIAFEITVDVQKQQLLF-ITIRDSARY  211
+
+Query  174  AVQIDALELV-VKKGFKAP  191
+             V++ AL +V +   + AP
+Sbjct  212  EVKMKALTVVQLLDSYNAP  230
+
+
+>sp|Q45790|CT1BA_BACTW Type-1Ba cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. neoleoensis OX=43262 GN=cyt1Ba1 
+PE=2 SV=1
+Length=265
+
+ Score = 41.2 bits (95),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/81 (25%), Positives = 41/81 (51%), Gaps = 4/81 (5%)
+
+Query  59   YDQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD---LSKLAAIILNTFTNLEEESSSGFL  115
+            Y   T++Q + +V  M+D++   L       +    +++L A I +TFTNL  +  S ++
+Sbjct  113  YTDQTLSQSNNQVSVMIDRVISVLKTVMGVALSGSIITQLTAAITDTFTNLNTQKDSAWV  172
+
+Query  116  QFNTNNVKKNSSWEYRVLFSV  136
+             F        +++ Y V+F++
+Sbjct  173  -FWGKETSHQTNYTYNVMFAI  192
+
+
+>sp|Q45723|CT2BA_BACTI Type-2Ba cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. israelensis OX=1430 GN=cyt2Ba1 
+PE=1 SV=2
+Length=263
+
+ Score = 40.8 bits (94),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 41/163 (25%), Positives = 77/163 (47%), Gaps = 24/163 (15%)
+
+Query  42   FKTAIDNYTGEDLSFDKYDQ-----------STINQ----QSQEVGAMVDKIAKFLHDAF  86
+            F+ AID  T  + +F+K  Q            TINQ    Q+ EV  M+ +I + +    
+Sbjct  65   FQGAIDPLT-LNFNFEKALQIANGLPNAGVTGTINQSVIHQTIEVSVMISQIKEIIRSVL  123
+
+Query  87   AAVVD----LSKLAAIILNTFTNLEEESSSGFLQFNTNNVKKNSSWEYRVLFSVPFAPSY  142
+              V++     + + + I NTFTNLE +    ++ +  N     +S+ Y++LFS+    + 
+Sbjct  124  GLVINSANFWNSVVSAITNTFTNLEPQVDENWIVWR-NLSATQTSYFYKILFSIQNEDTG  182
+
+Query  143  FYSLVTTIL--ITADIEEKTGWWGLTSSTKKNFAVQIDALELV  183
+             +  +  I   IT D++++   + +T      + V++ AL +V
+Sbjct  183  RFMAILPIAFEITVDVQKQQLLF-ITIKDSARYEVKMKALTVV  224
+
+
+>sp|Q04470|CT2AA_BACTY Type-2Aa cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. kyushuensis OX=44161 GN=cyt2Aa1 
+PE=1 SV=1
+Length=259
+
+ Score = 40.8 bits (94),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 33/131 (25%), Positives = 69/131 (53%), Gaps = 11/131 (8%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD----LSKLAAIILNTFTNLEEESSSGFL  115
+            +QS I QQ+ E+  MV+++ K + +    V++     + + A I  TFTNL+ +    ++
+Sbjct  97   NQSVI-QQTVEISVMVEQLKKIIQEVLGLVINSTSFWNSVEATIKGTFTNLDTQIDEAWI  155
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPS--YFYSLVTTILITADIE-EKTGWWGLTSSTKKN  172
+             +++ +   N+S+ Y +LFS+    +      L     ++ D+E +K  ++ +  S +  
+Sbjct  156  FWHSLSA-HNTSYYYNILFSIQNEDTGAVMAVLPLAFEVSVDVEKQKVLFFTIKDSAR--  212
+
+Query  173  FAVQIDALELV  183
+            + V++ AL LV
+Sbjct  213  YEVKMKALTLV  223
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.132    0.383    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11223757120
+Results from round 3
+
+
+Query= d1pp0a_
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacil...  169     2e-51
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q45723|CT2BA_BACTI Type-2Ba cytolytic delta-endotoxin OS=Bacil...  158     4e-47
+sp|Q04470|CT2AA_BACTY Type-2Aa cytolytic delta-endotoxin OS=Bacil...  126     8e-35
+sp|Q45790|CT1BA_BACTW Type-1Ba cytolytic delta-endotoxin OS=Bacil...  75.9    1e-15
+sp|P0A382|CT1AA_BACTI Type-1Aa cytolytic delta-endotoxin OS=Bacil...  73.9    5e-15
+sp|P0A383|CT1AA_BACTM Type-1Aa cytolytic delta-endotoxin OS=Bacil...  73.9    5e-15
+sp|P94594|CT1AB_BACTV Type-1Ab cytolytic delta-endotoxin OS=Bacil...  71.2    5e-14
+
+
+>sp|O32322|CT2BB_BACTJ Type-2Bb cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. jegathesan OX=56955 GN=cyt2Bb1 
+PE=1 SV=1
+Length=263
+
+ Score = 169 bits (427),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 36/139 (26%), Positives = 72/139 (52%), Gaps = 10/139 (7%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD----LSKLAAIILNTFTNLEEESSSGFL  115
+            +QS I QQ+ E+  M+ +I + + +    V++     + + A I NTFTNLE +    ++
+Sbjct  95   NQSVI-QQTIEISVMISQIKEIIRNVLGLVINSTNFWNSVLAAITNTFTNLEPQVDENWI  153
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTIL--ITADIEEKTGWWGLTSSTKKNF  173
+             +  N    ++S+ Y++LFS+    +  +  V  I   IT D++++   + +T      +
+Sbjct  154  VWR-NLSATHTSYYYKILFSIQNEDTGAFMAVLPIAFEITVDVQKQQLLF-ITIRDSARY  211
+
+Query  174  AVQIDALELV-VKKGFKAP  191
+             V++ AL +V +   + AP
+Sbjct  212  EVKMKALTVVQLLDSYNAP  230
+
+
+>sp|Q45723|CT2BA_BACTI Type-2Ba cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. israelensis OX=1430 GN=cyt2Ba1 
+PE=1 SV=2
+Length=263
+
+ Score = 158 bits (399),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 34/139 (24%), Positives = 68/139 (49%), Gaps = 10/139 (7%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD----LSKLAAIILNTFTNLEEESSSGFL  115
+            +QS I  Q+ EV  M+ +I + +      V++     + + + I NTFTNLE +    ++
+Sbjct  98   NQSVI-HQTIEVSVMISQIKEIIRSVLGLVINSANFWNSVVSAITNTFTNLEPQVDENWI  156
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTIL--ITADIEEKTGWWGLTSSTKKNF  173
+             +  N     +S+ Y++LFS+    +  +  +  I   IT D++++   + +T      +
+Sbjct  157  VWR-NLSATQTSYFYKILFSIQNEDTGRFMAILPIAFEITVDVQKQQLLF-ITIKDSARY  214
+
+Query  174  AVQIDALELV-VKKGFKAP  191
+             V++ AL +V     + AP
+Sbjct  215  EVKMKALTVVQALDSYNAP  233
+
+
+>sp|Q04470|CT2AA_BACTY Type-2Aa cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. kyushuensis OX=44161 GN=cyt2Aa1 
+PE=1 SV=1
+Length=259
+
+ Score = 126 bits (316),  Expect = 8e-35, Method: Composition-based stats.
+ Identities = 34/139 (24%), Positives = 68/139 (49%), Gaps = 10/139 (7%)
+
+Query  60   DQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD----LSKLAAIILNTFTNLEEESSSGFL  115
+            +QS I QQ+ E+  MV+++ K + +    V++     + + A I  TFTNL+ +    ++
+Sbjct  97   NQSVI-QQTVEISVMVEQLKKIIQEVLGLVINSTSFWNSVEATIKGTFTNLDTQIDEAWI  155
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTIL--ITADIEEKTGWWGLTSSTKKNF  173
+             +++     N+S+ Y +LFS+    +     V  +   ++ D+E++   +  T      +
+Sbjct  156  FWHS-LSAHNTSYYYNILFSIQNEDTGAVMAVLPLAFEVSVDVEKQKVLF-FTIKDSARY  213
+
+Query  174  AVQIDALELV-VKKGFKAP  191
+             V++ AL LV       AP
+Sbjct  214  EVKMKALTLVQALHSSNAP  232
+
+
+>sp|Q45790|CT1BA_BACTW Type-1Ba cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. neoleoensis OX=43262 GN=cyt1Ba1 
+PE=2 SV=1
+Length=265
+
+ Score = 75.9 bits (185),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 27/127 (21%), Positives = 60/127 (47%), Gaps = 7/127 (6%)
+
+Query  59   YDQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD---LSKLAAIILNTFTNLEEESSSGFL  115
+            Y   T++Q + +V  M+D++   L       +    +++L A I +TFTNL  +  S ++
+Sbjct  113  YTDQTLSQSNNQVSVMIDRVISVLKTVMGVALSGSIITQLTAAITDTFTNLNTQKDSAWV  172
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTILITADI--EEKTGWWGLTSSTKKNF  173
+             +      + +++ Y V+F++    +    +   I     +  +++T  + LT+    N+
+Sbjct  173  FWGKETSHQ-TNYTYNVMFAIQNETTGRVMMCVPIGFEIRVFTDKRTVLF-LTTKDYANY  230
+
+Query  174  AVQIDAL  180
+            +V I  L
+Sbjct  231  SVNIQTL  237
+
+
+>sp|P0A382|CT1AA_BACTI Type-1Aa cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. israelensis OX=1430 GN=cyt1Aa PE=1 
+SV=1
+Length=249
+
+ Score = 73.9 bits (180),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 23/128 (18%), Positives = 54/128 (42%), Gaps = 7/128 (5%)
+
+Query  59   YDQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD---LSKLAAIILNTFTNLEEESSSGFL  115
+            Y    + Q + +V  M++K+ + L       +    + +L A + NTFTNL  + +  ++
+Sbjct  100  YVDQNVTQTNNQVSVMINKVLEVLKTVLGVALSGSVIDQLTAAVTNTFTNLNTQKNEAWI  159
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTILITADIE--EKTGWWGLTSSTKKNF  173
+             +        +++ Y VLF++  A +        +     +   ++   +  T     ++
+Sbjct  160  FWGKE-TANQTNYTYNVLFAIQNAQTGGVMYCVPVGFEIKVSAVKEQVLF-FTIQDSASY  217
+
+Query  174  AVQIDALE  181
+             V I +L+
+Sbjct  218  NVNIQSLK  225
+
+
+>sp|P0A383|CT1AA_BACTM Type-1Aa cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. morrisoni OX=1441 GN=cyt1Aa PE=2 
+SV=1
+Length=249
+
+ Score = 73.9 bits (180),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 23/128 (18%), Positives = 54/128 (42%), Gaps = 7/128 (5%)
+
+Query  59   YDQSTINQQSQEVGAMVDKIAKFLHDAFAAVVD---LSKLAAIILNTFTNLEEESSSGFL  115
+            Y    + Q + +V  M++K+ + L       +    + +L A + NTFTNL  + +  ++
+Sbjct  100  YVDQNVTQTNNQVSVMINKVLEVLKTVLGVALSGSVIDQLTAAVTNTFTNLNTQKNEAWI  159
+
+Query  116  QFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTILITADIE--EKTGWWGLTSSTKKNF  173
+             +        +++ Y VLF++  A +        +     +   ++   +  T     ++
+Sbjct  160  FWGKE-TANQTNYTYNVLFAIQNAQTGGVMYCVPVGFEIKVSAVKEQVLF-FTIQDSASY  217
+
+Query  174  AVQIDALE  181
+             V I +L+
+Sbjct  218  NVNIQSLK  225
+
+
+>sp|P94594|CT1AB_BACTV Type-1Ab cytolytic delta-endotoxin OS=Bacillus 
+thuringiensis subsp. medellin OX=79672 GN=cyt1Ab1 PE=2 
+SV=1
+Length=250
+
+ Score = 71.2 bits (173),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 25/128 (20%), Positives = 54/128 (42%), Gaps = 5/128 (4%)
+
+Query  58   KYDQSTINQQSQEVGAMVDKIAKFLHDAFAAVVDLS---KLAAIILNTFTNLEEESSSGF  114
+            +Y    ++Q + +V AM++K+   L       +  S   +L + + NTFTNL  + +  +
+Sbjct  100  QYVDQNVSQTNNQVSAMINKVLDVLKSILGVALGQSVIEQLTSAVTNTFTNLNTQKNEAW  159
+
+Query  115  LQFNTNNVKKNSSWEYRVLFSVPFAPSYFYSLVTTILITADIEE-KTGWWGLTSSTKKNF  173
+            + +        +++ Y VLF++    +        +     +   K     LT     ++
+Sbjct  160  IFWGRETS-TQTNYTYNVLFAIQNGQTGGVMYCVPVGFEIKVSAVKERVLFLTIQDSASY  218
+
+Query  174  AVQIDALE  181
+             V I +L+
+Sbjct  219  NVNIQSLK  226
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.136    0.364    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0416    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11223757120
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

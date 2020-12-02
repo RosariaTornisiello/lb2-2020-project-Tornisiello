@@ -1,0 +1,145 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2psba1
+
+Length=290
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O34968|YERB_BACSU Putative lipoprotein YerB OS=Bacillus subtil...  597     0.0  
+
+
+>sp|O34968|YERB_BACSU Putative lipoprotein YerB OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yerB PE=1 SV=1
+Length=331
+
+ Score = 597 bits (1538),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 290/296 (98%), Positives = 290/296 (98%), Gaps = 6/296 (2%)
+
+Query  1    KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ  60
+            KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ
+Sbjct  32   KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ  91
+
+Query  61   SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW  120
+            SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW
+Sbjct  92   SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW  151
+
+Query  121  RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQT------NESYNVRVDYGTNN  174
+            RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQT      NESYNVRVDYGTNN
+Sbjct  152  RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQTSDAKPANESYNVRVDYGTNN  211
+
+Query  175  VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE  234
+            VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE
+Sbjct  212  VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE  271
+
+Query  235  SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK  290
+            SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK
+Sbjct  272  SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK  327
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.134    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23686895656
+Results from round 2
+
+
+Query= d2psba1
+
+Length=290
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34968|YERB_BACSU Putative lipoprotein YerB OS=Bacillus subtil...  624     0.0  
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O34968|YERB_BACSU Putative lipoprotein YerB OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yerB PE=1 SV=1
+Length=331
+
+ Score = 624 bits (1610),  Expect = 0.0, Method: Composition-based stats.
+ Identities = 290/296 (98%), Positives = 290/296 (98%), Gaps = 6/296 (2%)
+
+Query  1    KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ  60
+            KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ
+Sbjct  32   KLKAPLTGLKTEQKVTERRPVAVVVNNHPKARPQSGLSKADIVIEALAEGQITRFLAIFQ  91
+
+Query  61   SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW  120
+            SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW
+Sbjct  92   SQMPETVGPVRSAREYFVTLSNGFDSIFVHHGWSPGAKKQLESGAADYMNGLDFDGSLFW  151
+
+Query  121  RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQT------NESYNVRVDYGTNN  174
+            RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQT      NESYNVRVDYGTNN
+Sbjct  152  RADFSKPPHNSYTSYDYIKKAAEQKGYKLKQETNPLLFQTSDAKPANESYNVRVDYGTNN  211
+
+Query  175  VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE  234
+            VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE
+Sbjct  212  VTNLVEYNYDKKAEFYTRSSDGVITTDRETGKPVAMQNIFIVEASHHIIDQDGRRDIDLE  271
+
+Query  235  SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK  290
+            SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK
+Sbjct  272  SGGKGLLFQHGNVIETDWKQVNGRIVPVKDGKWLPFVPGKTWINIVPDLDAASISK  327
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.137    0.405    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0418    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23686895656
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

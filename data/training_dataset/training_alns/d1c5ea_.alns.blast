@@ -1,0 +1,189 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1c5ea_
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P03712|DECO_LAMBD Capsid decoration protein OS=Escherichia pha...  189     6e-63
+sp|O64321|DECO7_BPN15 Putative decoration protein OS=Escherichia ...  134     2e-41
+sp|P36275|DECO_BPP21 Head decoration protein OS=Enterobacteria ph...  105     5e-30
+
+
+>sp|P03712|DECO_LAMBD Capsid decoration protein OS=Escherichia 
+phage lambda OX=10710 GN=D PE=1 SV=1
+Length=110
+
+ Score = 189 bits (479),  Expect = 6e-63, Method: Compositional matrix adjust.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF
+Sbjct  16   SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  75
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  95
+            YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV
+Sbjct  76   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  110
+
+
+>sp|O64321|DECO7_BPN15 Putative decoration protein OS=Escherichia 
+phage N15 OX=40631 GN=gene 7 PE=4 SV=1
+Length=110
+
+ Score = 134 bits (338),  Expect = 2e-41, Method: Compositional matrix adjust.
+ Identities = 67/95 (71%), Positives = 71/95 (75%), Gaps = 0/95 (0%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            SDPAHTA  PG L+A  PAMTPLMLD +S KL  WDG   GAA GILAV ADQ S  L F
+Sbjct  16   SDPAHTAYGPGELTASTPAMTPLMLDATSGKLTVWDGAHAGAATGILAVTADQNSAELAF  75
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  95
+            YKSG+FR EDVLWP A +DE  KR AFAGTAISIV
+Sbjct  76   YKSGSFRIEDVLWPSAVTDENIKRNAFAGTAISIV  110
+
+
+>sp|P36275|DECO_BPP21 Head decoration protein OS=Enterobacteria 
+phage P21 OX=10711 GN=shp PE=1 SV=1
+Length=115
+
+ Score = 105 bits (263),  Expect = 5e-30, Method: Compositional matrix adjust.
+ Identities = 53/93 (57%), Positives = 67/93 (72%), Gaps = 1/93 (1%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            +DPAHTAT   G+S+  PA+TPLMLD ++ KLV WDG   G+AVGIL +  + T T LT+
+Sbjct  19   NDPAHTATGSSGISSPTPALTPLMLDEATGKLVVWDGQKAGSAVGILVLPLEGTETALTY  78
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAIS  93
+            YKSGTF  E + WPE+  DE KK  AFAG+A+S
+Sbjct  79   YKSGTFATEAIHWPESV-DEHKKANAFAGSALS  110
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.124    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 2
+
+
+Query= d1c5ea_
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O64321|DECO7_BPN15 Putative decoration protein OS=Escherichia ...  141     3e-44
+sp|P03712|DECO_LAMBD Capsid decoration protein OS=Escherichia pha...  133     5e-41
+sp|P36275|DECO_BPP21 Head decoration protein OS=Enterobacteria ph...  131     7e-40
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O64321|DECO7_BPN15 Putative decoration protein OS=Escherichia 
+phage N15 OX=40631 GN=gene 7 PE=4 SV=1
+Length=110
+
+ Score = 141 bits (356),  Expect = 3e-44, Method: Composition-based stats.
+ Identities = 67/95 (71%), Positives = 71/95 (75%), Gaps = 0/95 (0%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            SDPAHTA  PG L+A  PAMTPLMLD +S KL  WDG   GAA GILAV ADQ S  L F
+Sbjct  16   SDPAHTAYGPGELTASTPAMTPLMLDATSGKLTVWDGAHAGAATGILAVTADQNSAELAF  75
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  95
+            YKSG+FR EDVLWP A +DE  KR AFAGTAISIV
+Sbjct  76   YKSGSFRIEDVLWPSAVTDENIKRNAFAGTAISIV  110
+
+
+>sp|P03712|DECO_LAMBD Capsid decoration protein OS=Escherichia 
+phage lambda OX=10710 GN=D PE=1 SV=1
+Length=110
+
+ Score = 133 bits (335),  Expect = 5e-41, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF
+Sbjct  16   SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  75
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  95
+            YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV
+Sbjct  76   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAISIV  110
+
+
+>sp|P36275|DECO_BPP21 Head decoration protein OS=Enterobacteria 
+phage P21 OX=10711 GN=shp PE=1 SV=1
+Length=115
+
+ Score = 131 bits (328),  Expect = 7e-40, Method: Composition-based stats.
+ Identities = 53/93 (57%), Positives = 67/93 (72%), Gaps = 1/93 (1%)
+
+Query  1    SDPAHTATAPGGLSAKAPAMTPLMLDTSSRKLVAWDGTTDGAAVGILAVAADQTSTTLTF  60
+            +DPAHTAT   G+S+  PA+TPLMLD ++ KLV WDG   G+AVGIL +  + T T LT+
+Sbjct  19   NDPAHTATGSSGISSPTPALTPLMLDEATGKLVVWDGQKAGSAVGILVLPLEGTETALTY  78
+
+Query  61   YKSGTFRYEDVLWPEAASDETKKRTAFAGTAIS  93
+            YKSGTF  E + WPE+  DE KK  AFAG+A+S
+Sbjct  79   YKSGTFATEAIHWPESV-DEHKKANAFAGSALS  110
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.124    0.355    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0379    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

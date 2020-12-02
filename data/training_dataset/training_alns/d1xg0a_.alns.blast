@@ -1,0 +1,237 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1xg0a_
+
+Length=76
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q00433|PHE3_RHDS2 Phycoerythrin alpha-3 chain, chloroplastic O...  157     2e-50
+sp|P30943|PHE2_RHDS2 Phycoerythrin alpha-2 chain, chloroplastic O...  87.4    3e-23
+sp|P30942|PHE1_RHDS2 Phycoerythrin alpha-1 chain (Fragment) OS=Rh...  72.0    1e-17
+sp|P23815|PH61_CHRSP Phycocyanin-645 alpha-1 chain OS=Chroomonas ...  60.8    5e-13
+sp|P23816|PH62_CHRSP Phycocyanin-645 alpha-2 chain OS=Chroomonas ...  52.4    1e-09
+
+
+>sp|Q00433|PHE3_RHDS2 Phycoerythrin alpha-3 chain, chloroplastic 
+OS=Rhodomonas sp. (strain CS 24) OX=79257 GN=cpeA3 PE=1 SV=2
+Length=128
+
+ Score = 157 bits (397),  Expect = 2e-50, Method: Compositional matrix adjust.
+ Identities = 76/76 (100%), Positives = 76/76 (100%), Gaps = 0/76 (0%)
+
+Query  1    AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE  60
+            AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE
+Sbjct  53   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE  112
+
+Query  61   FITFEKGIDGPFTSKN  76
+            FITFEKGIDGPFTSKN
+Sbjct  113  FITFEKGIDGPFTSKN  128
+
+
+>sp|P30943|PHE2_RHDS2 Phycoerythrin alpha-2 chain, chloroplastic 
+OS=Rhodomonas sp. (strain CS 24) OX=79257 GN=cpeA2 PE=1 SV=2
+Length=104
+
+ Score = 87.4 bits (215),  Expect = 3e-23, Method: Compositional matrix adjust.
+ Identities = 42/54 (78%), Positives = 44/54 (81%), Gaps = 0/54 (0%)
+
+Query  1   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDA  54
+           AMDKSAKAP ITIFDHRGCSRAPKE TG KAGG+DDEMMVK  S K+ VS   A
+Sbjct  38  AMDKSAKAPVITIFDHRGCSRAPKEYTGAKAGGKDDEMMVKAQSVKIEVSTGTA  91
+
+
+>sp|P30942|PHE1_RHDS2 Phycoerythrin alpha-1 chain (Fragment) OS=Rhodomonas 
+sp. (strain CS 24) OX=79257 GN=cpeA1 PE=1 SV=1
+Length=44
+
+ Score = 72.0 bits (175),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 35/43 (81%), Positives = 38/43 (88%), Gaps = 1/43 (2%)
+
+Query  1   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVA  43
+           AMDKSAKAPQITIFDHRGCSRAPK  TGG A  +DD+MMVKV+
+Sbjct  1   AMDKSAKAPQITIFDHRGCSRAPKSETGGTA-TKDDQMMVKVS  42
+
+
+>sp|P23815|PH61_CHRSP Phycocyanin-645 alpha-1 chain OS=Chroomonas 
+sp. OX=3029 PE=1 SV=1
+Length=70
+
+ Score = 60.8 bits (146),  Expect = 5e-13, Method: Compositional matrix adjust.
+ Identities = 33/58 (57%), Positives = 39/58 (67%), Gaps = 1/58 (2%)
+
+Query  7   KAPQITIFDHRGC-SRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQEFIT  63
+           + P ITIFD RGC   A KE TG KAGG DDEM VKVA  K+ V+E  AA  L+E ++
+Sbjct  6   RTPVITIFDARGCKDHANKEYTGPKAGGADDEMCVKVAMQKIAVAEDAAALVLKECLS  63
+
+
+>sp|P23816|PH62_CHRSP Phycocyanin-645 alpha-2 chain OS=Chroomonas 
+sp. OX=3029 PE=1 SV=1
+Length=80
+
+ Score = 52.4 bits (124),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 29/66 (44%), Positives = 39/66 (59%), Gaps = 1/66 (2%)
+
+Query  7   KAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQEFITF-E  65
+           +AP + IFD RGC     + TG K+G  +D+  VKV+     VSE+ A KK QEF+ F E
+Sbjct  6   RAPYVEIFDARGCDAKNSQYTGPKSGDMNDDQCVKVSMAVPKVSEATAEKKRQEFLGFKE  65
+
+Query  66  KGIDGP  71
+             I+ P
+Sbjct  66  TAINVP  71
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.126    0.345    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5113692148
+Results from round 2
+
+
+Query= d1xg0a_
+
+Length=76
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q00433|PHE3_RHDS2 Phycoerythrin alpha-3 chain, chloroplastic O...  121     2e-36
+sp|P23816|PH62_CHRSP Phycocyanin-645 alpha-2 chain OS=Chroomonas ...  95.3    1e-26
+sp|P30943|PHE2_RHDS2 Phycoerythrin alpha-2 chain, chloroplastic O...  84.9    4e-22
+sp|P23815|PH61_CHRSP Phycocyanin-645 alpha-1 chain OS=Chroomonas ...  83.3    6e-22
+sp|P30942|PHE1_RHDS2 Phycoerythrin alpha-1 chain (Fragment) OS=Rh...  61.4    2e-13
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q00433|PHE3_RHDS2 Phycoerythrin alpha-3 chain, chloroplastic 
+OS=Rhodomonas sp. (strain CS 24) OX=79257 GN=cpeA3 PE=1 SV=2
+Length=128
+
+ Score = 121 bits (304),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 76/76 (100%), Positives = 76/76 (100%), Gaps = 0/76 (0%)
+
+Query  1    AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE  60
+            AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE
+Sbjct  53   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE  112
+
+Query  61   FITFEKGIDGPFTSKN  76
+            FITFEKGIDGPFTSKN
+Sbjct  113  FITFEKGIDGPFTSKN  128
+
+
+>sp|P23816|PH62_CHRSP Phycocyanin-645 alpha-2 chain OS=Chroomonas 
+sp. OX=3029 PE=1 SV=1
+Length=80
+
+ Score = 95.3 bits (235),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 29/66 (44%), Positives = 39/66 (59%), Gaps = 1/66 (2%)
+
+Query  7   KAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQEFITF-E  65
+           +AP + IFD RGC     + TG K+G  +D+  VKV+     VSE+ A KK QEF+ F E
+Sbjct  6   RAPYVEIFDARGCDAKNSQYTGPKSGDMNDDQCVKVSMAVPKVSEATAEKKRQEFLGFKE  65
+
+Query  66  KGIDGP  71
+             I+ P
+Sbjct  66  TAINVP  71
+
+
+>sp|P30943|PHE2_RHDS2 Phycoerythrin alpha-2 chain, chloroplastic 
+OS=Rhodomonas sp. (strain CS 24) OX=79257 GN=cpeA2 PE=1 SV=2
+Length=104
+
+ Score = 84.9 bits (208),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 43/63 (68%), Positives = 46/63 (73%), Gaps = 0/63 (0%)
+
+Query  1   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQE  60
+           AMDKSAKAP ITIFDHRGCSRAPKE TG KAGG+DDEMMVK  S K+ VS   A   L  
+Sbjct  38  AMDKSAKAPVITIFDHRGCSRAPKEYTGAKAGGKDDEMMVKAQSVKIEVSTGTAEGVLAT  97
+
+Query  61  FIT  63
+            + 
+Sbjct  98  SLA  100
+
+
+>sp|P23815|PH61_CHRSP Phycocyanin-645 alpha-1 chain OS=Chroomonas 
+sp. OX=3029 PE=1 SV=1
+Length=70
+
+ Score = 83.3 bits (204),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 33/58 (57%), Positives = 39/58 (67%), Gaps = 1/58 (2%)
+
+Query  7   KAPQITIFDHRGC-SRAPKESTGGKAGGQDDEMMVKVASTKVTVSESDAAKKLQEFIT  63
+           + P ITIFD RGC   A KE TG KAGG DDEM VKVA  K+ V+E  AA  L+E ++
+Sbjct  6   RTPVITIFDARGCKDHANKEYTGPKAGGADDEMCVKVAMQKIAVAEDAAALVLKECLS  63
+
+
+>sp|P30942|PHE1_RHDS2 Phycoerythrin alpha-1 chain (Fragment) OS=Rhodomonas 
+sp. (strain CS 24) OX=79257 GN=cpeA1 PE=1 SV=1
+Length=44
+
+ Score = 61.4 bits (147),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 35/45 (78%), Positives = 38/45 (84%), Gaps = 1/45 (2%)
+
+Query  1   AMDKSAKAPQITIFDHRGCSRAPKESTGGKAGGQDDEMMVKVAST  45
+           AMDKSAKAPQITIFDHRGCSRAPK  TGG A  +DD+MMVKV+  
+Sbjct  1   AMDKSAKAPQITIFDHRGCSRAPKSETGGTA-TKDDQMMVKVSQV  44
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.122    0.316    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0372    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5113692148
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

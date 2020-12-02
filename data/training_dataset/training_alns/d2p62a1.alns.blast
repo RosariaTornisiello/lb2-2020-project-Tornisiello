@@ -1,0 +1,147 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2p62a1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q60274|Y3512_METJA Uncharacterized protein MJECL12 OS=Methanoc...  123     3e-33
+
+
+>sp|Q60274|Y3512_METJA Uncharacterized protein MJECL12 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJECL12 PE=4 SV=1
+Length=241
+
+ Score = 123 bits (308),  Expect = 3e-33, Method: Compositional matrix adjust.
+ Identities = 78/242 (32%), Positives = 141/242 (58%), Gaps = 12/242 (5%)
+
+Query  3    IKLIIVEGKTDESFFKVLLEKLYGFREAKKLTPEFPIGKWGFRIGEHPLVLEKDNIALVI  62
+            ++++++EG TD +FF  +L+KLYGF E   ++ +  I          P+ LE +++ L++
+Sbjct  1    MRILLLEGITDVAFFIPILKKLYGFSE---ISCDGIIRAEKMGDISKPICLENEDVKLIV  57
+
+Query  63   IHAEGKQRIPKVLKSVLDSVKLGLL-NVEEVYVVRDVDEGNDVFEWVLSFLRER--EVRV  119
+             H+ GK +    L ++L ++K+G L N++ + + RD+D+ +DV  W  S ++    EV+ 
+Sbjct  58   FHSGGKSKQKHALTAMLTAIKMGYLSNIKILGIARDIDQEHDVKNWTKSIIKNAGFEVKE  117
+
+Query  120  DNGAIVTE--GVKIYPYGMGNLT---LNEPFVKEKKELELSLAYLAKLDGILEKYRGSMR  174
+             +  ++ E   +KI   G+ N      N P  + K+ELE  +  +AK   I+EK++ S+ 
+Sbjct  118  GDKFLIIEDLNLKIAVLGIANYDEDDFNIPSFELKRELEAVITDMAKEISIIEKFKNSLE  177
+
+Query  175  ALSQDKGDKLTPKDVMHILSIANDYTGDCLSGLYEKYIGIMIHRNRELLIRFLSEVNLLP  234
+            +LS D   +L PKD+ H+L+IA ++ GD +SGLY K+I   I+ N+  +   L+ + +LP
+Sbjct  178  SLSNDAERRLKPKDITHVLAIAKNFDGDSMSGLYRKFIEEQIN-NKNKVNFLLTLICILP  236
+
+Query  235  LL  236
+             L
+Sbjct  237  CL  238
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.143    0.407    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17393624136
+Results from round 2
+
+
+Query= d2p62a1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q60274|Y3512_METJA Uncharacterized protein MJECL12 OS=Methanoc...  306     4e-105
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q60274|Y3512_METJA Uncharacterized protein MJECL12 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJECL12 PE=4 SV=1
+Length=241
+
+ Score = 306 bits (785),  Expect = 4e-105, Method: Composition-based stats.
+ Identities = 78/242 (32%), Positives = 141/242 (58%), Gaps = 12/242 (5%)
+
+Query  3    IKLIIVEGKTDESFFKVLLEKLYGFREAKKLTPEFPIGKWGFRIGEHPLVLEKDNIALVI  62
+            ++++++EG TD +FF  +L+KLYGF E   ++ +  I          P+ LE +++ L++
+Sbjct  1    MRILLLEGITDVAFFIPILKKLYGFSE---ISCDGIIRAEKMGDISKPICLENEDVKLIV  57
+
+Query  63   IHAEGKQRIPKVLKSVLDSVKLGLL-NVEEVYVVRDVDEGNDVFEWVLSFLRER--EVRV  119
+             H+ GK +    L ++L ++K+G L N++ + + RD+D+ +DV  W  S ++    EV+ 
+Sbjct  58   FHSGGKSKQKHALTAMLTAIKMGYLSNIKILGIARDIDQEHDVKNWTKSIIKNAGFEVKE  117
+
+Query  120  DNGAIVTE--GVKIYPYGMGNLT---LNEPFVKEKKELELSLAYLAKLDGILEKYRGSMR  174
+             +  ++ E   +KI   G+ N      N P  + K+ELE  +  +AK   I+EK++ S+ 
+Sbjct  118  GDKFLIIEDLNLKIAVLGIANYDEDDFNIPSFELKRELEAVITDMAKEISIIEKFKNSLE  177
+
+Query  175  ALSQDKGDKLTPKDVMHILSIANDYTGDCLSGLYEKYIGIMIHRNRELLIRFLSEVNLLP  234
+            +LS D   +L PKD+ H+L+IA ++ GD +SGLY K+I   I+ N+  +   L+ + +LP
+Sbjct  178  SLSNDAERRLKPKDITHVLAIAKNFDGDSMSGLYRKFIEEQIN-NKNKVNFLLTLICILP  236
+
+Query  235  LL  236
+             L
+Sbjct  237  CL  238
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.144    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0442    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17393624136
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

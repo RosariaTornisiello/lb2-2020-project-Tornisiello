@@ -1,0 +1,3763 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5a13_A
+
+Length=242
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans ...  367     3e-128
+sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica...  332     2e-114
+sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium...  54.3    1e-07 
+sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium tub...  50.4    2e-06 
+sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium tub...  50.4    2e-06 
+sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces coel...  48.1    2e-05 
+
+
+>sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans 
+OX=36863 GN=cld PE=1 SV=1
+Length=285
+
+ Score = 367 bits (941),  Expect = 3e-128, Method: Compositional matrix adjust.
+ Identities = 174/238 (73%), Positives = 198/238 (83%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            DRAK+L+ PGVF  FSTYK+R DY K+  AERK AA E   V++KHK+KVIVD YLTRG 
+Sbjct  45   DRAKILSAPGVFVAFSTYKIRPDYFKVALAERKGAADEVMAVLEKHKEKVIVDAYLTRGY  104
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+             A SDY LRVH+ D  A QAFLVD+RAT+ GMYSDVTE+LVGITKALNYISKDKSPDLN 
+Sbjct  105  EAKSDYFLRVHAYDAVAAQAFLVDFRATRFGMYSDVTESLVGITKALNYISKDKSPDLNK  164
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLS ATY+  APR+  +IPVKK+A WWN++DEQRLKE+E HT PTL +LVNVKRKLYHST
+Sbjct  165  GLSGATYAGDAPRFAFMIPVKKNADWWNLTDEQRLKEMETHTLPTLPFLVNVKRKLYHST  224
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LAKVPEN +HVRWGNPTVLGTIQ  + LVKTLS
+Sbjct  225  GLDDTDFITYFETNDLGAFNNLMLSLAKVPENKYHVRWGNPTVLGTIQPIENLVKTLS  282
+
+
+>sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica 
+(strain RCB) OX=159087 GN=Daro_2580 PE=1 SV=1
+Length=282
+
+ Score = 332 bits (851),  Expect = 2e-114, Method: Compositional matrix adjust.
+ Identities = 154/238 (65%), Positives = 189/238 (79%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            +R  +LT PGVFG F+ +K+R D+ K+P AERK AA E + +I+KHKD V+VD YLTRGL
+Sbjct  44   ERGTILTQPGVFGVFTMFKLRPDWNKVPVAERKGAAEEVKKLIEKHKDNVLVDLYLTRGL  103
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+               SD+  R+++ D+A  Q F+ ++R+T +G  +DV E LVG+TK LNYISKDKSP LNA
+Sbjct  104  ETNSDFFFRINAYDLAKAQTFMREFRSTTVGKNADVFETLVGVTKPLNYISKDKSPGLNA  163
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLSSATYS  APRYVIVIPVKK+A WWNMS E+RLKE+EVHT PTL YLVNVKRKLYHST
+Sbjct  164  GLSSATYSGPAPRYVIVIPVKKNAEWWNMSPEERLKEMEVHTTPTLAYLVNVKRKLYHST  223
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LA+V EN  HVRWG+PT LGTI S + ++K L+
+Sbjct  224  GLDDTDFITYFETDDLTAFNNLMLSLAQVKENKFHVRWGSPTTLGTIHSPEDVIKALA  281
+
+
+>sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium 
+smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 GN=chdC 
+PE=1 SV=1
+Length=231
+
+ Score = 54.3 bits (129),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 50/203 (25%), Positives = 87/203 (43%), Gaps = 13/203 (6%)
+
+Query  40   EAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDW-RATKLGMYS  96
+            EA   + + +DK  V+   Y   GL A +D+++  H+ ++ A Q+   D+ R T LG  S
+Sbjct  38   EAATFLKQQEDKGVVVRGLYDVAGLRADADFMIWTHADNVEALQSTYSDFRRTTALGRIS  97
+
+Query  97   DVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQR  156
+            D   + V + +   + +K   P   AG            Y+ V P  +   W+ + DE+R
+Sbjct  98   DPVWSSVALHRPAEF-NKSHIPAFLAGEEPGN-------YICVYPFVRSYEWYLLPDEER  149
+
+Query  157  LKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTH  216
+             + +  H      Y  +V+     +  L D ++I  FE  +L    +L+  L +  +   
+Sbjct  150  RRMLSEHGMAARGY-KDVRANTVPAFALGDYEWILAFEAPELHRIVDLMRDL-RATDARR  207
+
+Query  217  HVRWGNPTVLGTIQSADVLVKTL  239
+            H R   P   G   S + L+  L
+Sbjct  208  HTREETPFFTGPRISVENLIAKL  230
+
+
+>sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=chdC PE=1 
+SV=1
+Length=231
+
+ Score = 50.4 bits (119),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 49/210 (23%), Positives = 87/210 (41%), Gaps = 13/210 (6%)
+
+Query  33   ERKAAAAEAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDW-RA  89
+            +R A   +A     + +++  V+   Y   GL A +D+++  H+  + A QA   D+ R 
+Sbjct  31   QRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRADADFMVWTHAERVEALQATYADFRRT  90
+
+Query  90   TKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPRYVIVIPVKKDAAWW  149
+            T LG       + VG+ +   + +K   P   AG            Y+ V P  +   W+
+Sbjct  91   TTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGEEPGA-------YICVYPFVRSYEWY  142
+
+Query  150  NMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALA  209
+             + DE+R + +  H      Y  +V+     +  L D ++I  FE  +L    +L+  L 
+Sbjct  143  LLPDEERRRMLAEHGMAARGY-KDVRANTVPAFALGDYEWILAFEAPELDRIVDLMREL-  200
+
+Query  210  KVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+            +  +   H R   P   G     + LV +L
+Sbjct  201  RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=chdC PE=3 
+SV=1
+Length=231
+
+ Score = 50.4 bits (119),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 49/210 (23%), Positives = 87/210 (41%), Gaps = 13/210 (6%)
+
+Query  33   ERKAAAAEAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDW-RA  89
+            +R A   +A     + +++  V+   Y   GL A +D+++  H+  + A QA   D+ R 
+Sbjct  31   QRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRADADFMVWTHAERVEALQATYADFRRT  90
+
+Query  90   TKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPRYVIVIPVKKDAAWW  149
+            T LG       + VG+ +   + +K   P   AG            Y+ V P  +   W+
+Sbjct  91   TTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGEEPGA-------YICVYPFVRSYEWY  142
+
+Query  150  NMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALA  209
+             + DE+R + +  H      Y  +V+     +  L D ++I  FE  +L    +L+  L 
+Sbjct  143  LLPDEERRRMLAEHGMAARGY-KDVRANTVPAFALGDYEWILAFEAPELDRIVDLMREL-  200
+
+Query  210  KVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+            +  +   H R   P   G     + LV +L
+Sbjct  201  RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=chdC 
+PE=3 SV=1
+Length=243
+
+ Score = 48.1 bits (113),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 54/211 (26%), Positives = 86/211 (41%), Gaps = 14/211 (7%)
+
+Query  33   ERKAAAAEAQMVIDK--HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRAT  90
+            +R   A E Q + D+   KD  I  TY   GL A +D ++  H+      Q     +R T
+Sbjct  44   DRAGYADEVQELFDQLAAKDVTIRGTYDLSGLRADADLMIWWHAETADQLQEAYNLFRRT  103
+
+Query  91   KLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPR-YVIVIPVKKDAAWW  149
+            KLG           +    + ++  +  + N     A  +D  PR Y+ V P  +   W+
+Sbjct  104  KLGR---------ALEPVWSNMALHRPAEFNRSHIPAFLADETPRNYISVYPFVRSYDWY  154
+
+Query  150  NMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALA  209
+             + DE R + +  H +    Y  +V+     S  L D ++I  FE  +L    +L+  L 
+Sbjct  155  LLPDEDRRRMLADHGKMARGY-PDVRANTVASFSLGDYEWILAFEADELHRIVDLMRHL-  212
+
+Query  210  KVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            +  E   HVR   P   G  +    LV  L+
+Sbjct  213  RGSEARRHVREEIPFYTGRRKDIGELVAGLA  243
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17531668772
+Results from round 2
+
+
+Query= 5a13_A
+
+Length=242
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans ...  374     3e-131
+sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica...  372     2e-130
+sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium...  275     7e-93 
+sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium tub...  275     1e-92 
+sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium tub...  275     1e-92 
+sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces coel...  263     6e-88 
+
+Sequences not found previously or not previously below threshold:
+
+sp|P0DTW0|CPFCB_CUTAK Coproporphyrin-dependent heme b biosynthesi...  166     3e-46
+sp|Q49VE0|CHDC_STAS1 Coproheme decarboxylase OS=Staphylococcus sa...  89.8    2e-20
+sp|A7GVD5|CHDC_BACCN Coproheme decarboxylase OS=Bacillus cytotoxi...  87.9    1e-19
+sp|Q65DQ3|CHDC_BACLD Coproheme decarboxylase OS=Bacillus lichenif...  86.7    3e-19
+sp|B7JHL3|CHDC_BACC0 Coproheme decarboxylase OS=Bacillus cereus (...  85.2    1e-18
+sp|Q72X61|CHDC_BACC1 Coproheme decarboxylase OS=Bacillus cereus (...  85.2    1e-18
+sp|Q6HAP7|CHDC_BACHK Coproheme decarboxylase OS=Bacillus thuringi...  84.8    1e-18
+sp|Q630L2|CHDC_BACCZ Coproheme decarboxylase OS=Bacillus cereus (...  84.8    1e-18
+sp|B9IS21|CHDC_BACCQ Coproheme decarboxylase OS=Bacillus cereus (...  84.8    1e-18
+sp|B7HYE9|CHDC_BACC7 Coproheme decarboxylase OS=Bacillus cereus (...  84.8    1e-18
+sp|C1EQ58|CHDC_BACC3 Coproheme decarboxylase OS=Bacillus cereus (...  84.8    1e-18
+sp|Q81JR3|CHDC_BACAN Coproheme decarboxylase OS=Bacillus anthraci...  84.8    1e-18
+sp|A0RLH0|CHDC_BACAH Coproheme decarboxylase OS=Bacillus thuringi...  84.8    1e-18
+sp|C3LFR7|CHDC_BACAC Coproheme decarboxylase OS=Bacillus anthraci...  84.8    1e-18
+sp|C3P2E9|CHDC_BACAA Coproheme decarboxylase OS=Bacillus anthraci...  84.8    1e-18
+sp|A7Z9Y9|CHDC_BACVZ Coproheme decarboxylase OS=Bacillus velezens...  84.8    2e-18
+sp|Q814N7|CHDC_BACCR Coproheme decarboxylase OS=Bacillus cereus (...  84.4    2e-18
+sp|B7HG50|CHDC_BACC4 Coproheme decarboxylase OS=Bacillus cereus (...  84.4    2e-18
+sp|B7IRR8|CHDC_BACC2 Coproheme decarboxylase OS=Bacillus cereus (...  84.4    2e-18
+sp|A9VSI0|CHDC_BACMK Coproheme decarboxylase OS=Bacillus mycoides...  84.0    3e-18
+sp|P39645|CHDC_BACSU Coproheme decarboxylase OS=Bacillus subtilis...  84.0    3e-18
+sp|A0A0K2H9D8|CHDC_GEOS3 Coproheme decarboxylase OS=Geobacillus s...  82.9    8e-18
+sp|Q929Q6|CHDC_LISIN Coproheme decarboxylase OS=Listeria innocua ...  82.1    2e-17
+sp|Q5KUD5|CHDC_GEOKA Coproheme decarboxylase OS=Geobacillus kaust...  81.7    2e-17
+sp|A4ITP5|CHDC_GEOTN Coproheme decarboxylase OS=Geobacillus therm...  81.7    2e-17
+sp|Q8CTQ2|CHDC_STAES Coproheme decarboxylase OS=Staphylococcus ep...  81.0    4e-17
+sp|Q71XQ0|CHDC_LISMF Coproheme decarboxylase OS=Listeria monocyto...  80.6    6e-17
+sp|C1KX66|CHDC_LISMC Coproheme decarboxylase OS=Listeria monocyto...  80.6    6e-17
+sp|Q6GJ81|CHDC_STAAR Coproheme decarboxylase OS=Staphylococcus au...  80.6    7e-17
+sp|Q2YS77|CHDC_STAAB Coproheme decarboxylase OS=Staphylococcus au...  80.2    7e-17
+sp|A8YZT4|CHDC_STAAT Coproheme decarboxylase OS=Staphylococcus au...  80.2    8e-17
+sp|A6QEP0|CHDC_STAAE Coproheme decarboxylase OS=Staphylococcus au...  80.2    8e-17
+sp|Q5HI89|CHDC_STAAC Coproheme decarboxylase OS=Staphylococcus au...  80.2    8e-17
+sp|Q2G0J1|CHDC_STAA8 Coproheme decarboxylase OS=Staphylococcus au...  80.2    8e-17
+sp|Q2FJ56|CHDC_STAA3 Coproheme decarboxylase OS=Staphylococcus au...  80.2    8e-17
+sp|A0AKL8|CHDC_LISW6 Coproheme decarboxylase OS=Listeria welshime...  80.2    9e-17
+sp|Q5HRF8|CHDC_STAEQ Coproheme decarboxylase OS=Staphylococcus ep...  79.8    1e-16
+sp|Q7A759|CHDC_STAAN Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|Q99W24|CHDC_STAAM Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|A5IQE1|CHDC_STAA9 Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|A6TZ65|CHDC_STAA2 Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|A7WZ30|CHDC_STAA1 Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|Q8NXW5|CHDC_STAAW Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|Q6GBP9|CHDC_STAAS Coproheme decarboxylase OS=Staphylococcus au...  79.0    2e-16
+sp|Q9HNN4|Y2021_HALSA Putative heme-binding protein VNG_2021C OS=...  81.0    2e-16
+sp|B8DH02|CHDC_LISMH Coproheme decarboxylase OS=Listeria monocyto...  77.5    8e-16
+sp|Q4L3R3|CHDC_STAHJ Coproheme decarboxylase OS=Staphylococcus ha...  77.5    9e-16
+sp|Q8Y5F1|CHDC_LISMO Coproheme decarboxylase OS=Listeria monocyto...  77.5    1e-15
+sp|Q5WB17|CHDC_BACSK Coproheme decarboxylase OS=Bacillus clausii ...  76.7    1e-15
+sp|B9DKR5|CHDC_STACT Coproheme decarboxylase OS=Staphylococcus ca...  74.8    8e-15
+sp|Q9K6A4|CHDC_BACHD Coproheme decarboxylase OS=Bacillus halodura...  74.4    1e-14
+sp|C5D9S7|CHDC_GEOSW Coproheme decarboxylase OS=Geobacillus sp. (...  74.0    1e-14
+sp|Q18DR5|Y1094_HALWD Putative heme-binding protein HQ_1094A OS=H...  74.8    3e-14
+sp|Q3IRM1|Y2262_NATPD Putative heme-binding protein NP_2262A OS=N...  74.4    5e-14
+sp|Q5UY41|Y3100_HALMA Putative heme-binding protein rrnAC3100 OS=...  72.5    2e-13
+sp|Q8EM37|CHDC_OCEIH Coproheme decarboxylase OS=Oceanobacillus ih...  66.3    9e-12
+sp|Q5SHL6|CHDC_THET8 Coproheme decarboxylase OS=Thermus thermophi...  57.8    9e-09
+sp|Q72HY0|CHDC_THET2 Coproheme decarboxylase OS=Thermus thermophi...  57.8    9e-09
+
+
+>sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans 
+OX=36863 GN=cld PE=1 SV=1
+Length=285
+
+ Score = 374 bits (961),  Expect = 3e-131, Method: Composition-based stats.
+ Identities = 174/238 (73%), Positives = 198/238 (83%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            DRAK+L+ PGVF  FSTYK+R DY K+  AERK AA E   V++KHK+KVIVD YLTRG 
+Sbjct  45   DRAKILSAPGVFVAFSTYKIRPDYFKVALAERKGAADEVMAVLEKHKEKVIVDAYLTRGY  104
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+             A SDY LRVH+ D  A QAFLVD+RAT+ GMYSDVTE+LVGITKALNYISKDKSPDLN 
+Sbjct  105  EAKSDYFLRVHAYDAVAAQAFLVDFRATRFGMYSDVTESLVGITKALNYISKDKSPDLNK  164
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLS ATY+  APR+  +IPVKK+A WWN++DEQRLKE+E HT PTL +LVNVKRKLYHST
+Sbjct  165  GLSGATYAGDAPRFAFMIPVKKNADWWNLTDEQRLKEMETHTLPTLPFLVNVKRKLYHST  224
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LAKVPEN +HVRWGNPTVLGTIQ  + LVKTLS
+Sbjct  225  GLDDTDFITYFETNDLGAFNNLMLSLAKVPENKYHVRWGNPTVLGTIQPIENLVKTLS  282
+
+
+>sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica 
+(strain RCB) OX=159087 GN=Daro_2580 PE=1 SV=1
+Length=282
+
+ Score = 372 bits (955),  Expect = 2e-130, Method: Composition-based stats.
+ Identities = 154/238 (65%), Positives = 189/238 (79%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            +R  +LT PGVFG F+ +K+R D+ K+P AERK AA E + +I+KHKD V+VD YLTRGL
+Sbjct  44   ERGTILTQPGVFGVFTMFKLRPDWNKVPVAERKGAAEEVKKLIEKHKDNVLVDLYLTRGL  103
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+               SD+  R+++ D+A  Q F+ ++R+T +G  +DV E LVG+TK LNYISKDKSP LNA
+Sbjct  104  ETNSDFFFRINAYDLAKAQTFMREFRSTTVGKNADVFETLVGVTKPLNYISKDKSPGLNA  163
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLSSATYS  APRYVIVIPVKK+A WWNMS E+RLKE+EVHT PTL YLVNVKRKLYHST
+Sbjct  164  GLSSATYSGPAPRYVIVIPVKKNAEWWNMSPEERLKEMEVHTTPTLAYLVNVKRKLYHST  223
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LA+V EN  HVRWG+PT LGTI S + ++K L+
+Sbjct  224  GLDDTDFITYFETDDLTAFNNLMLSLAQVKENKFHVRWGSPTTLGTIHSPEDVIKALA  281
+
+
+>sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium 
+smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 GN=chdC 
+PE=1 SV=1
+Length=231
+
+ Score = 275 bits (703),  Expect = 7e-93, Method: Composition-based stats.
+ Identities = 54/229 (24%), Positives = 95/229 (41%), Gaps = 16/229 (7%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLR  71
+            +  FS + V    +     +R     EA   + + +DK  V+   Y   GL A +D+++ 
+Sbjct  15   YLMFSVFAVAPGELG---EDRADVIDEAATFLKQQEDKGVVVRGLYDVAGLRADADFMIW  71
+
+Query  72   VHSTDMAATQAFLVDWRATK-LGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYS  130
+             H+ ++ A Q+   D+R T  LG  SD   + V + +   + +K   P   AG       
+Sbjct  72   THADNVEALQSTYSDFRRTTALGRISDPVWSSVALHRPAEF-NKSHIPAFLAGEEPGN--  128
+
+Query  131  DSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+                 Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L D ++I
+Sbjct  129  -----YICVYPFVRSYEWYLLPDEERRRMLSEHGMAARGY-KDVRANTVPAFALGDYEWI  182
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+              FE  +L    +L+  L +  +   H R   P   G   S + L+  L
+Sbjct  183  LAFEAPELHRIVDLMRDL-RATDARRHTREETPFFTGPRISVENLIAKL  230
+
+
+>sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=chdC PE=1 
+SV=1
+Length=231
+
+ Score = 275 bits (702),  Expect = 1e-92, Method: Composition-based stats.
+ Identities = 52/229 (23%), Positives = 93/229 (41%), Gaps = 16/229 (7%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLR  71
+            +  FS + V    +     +R A   +A     + +++  V+   Y   GL A +D+++ 
+Sbjct  15   YLMFSVFSVSPGALG---DQRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRADADFMVW  71
+
+Query  72   VHSTDMAATQAFLVDWR-ATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYS  130
+             H+  + A QA   D+R  T LG       + VG+ +   + +K   P   AG       
+Sbjct  72   THAERVEALQATYADFRRTTTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGEEPGA--  128
+
+Query  131  DSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+                 Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L D ++I
+Sbjct  129  -----YICVYPFVRSYEWYLLPDEERRRMLAEHGMAARGY-KDVRANTVPAFALGDYEWI  182
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+              FE  +L    +L+  L +  +   H R   P   G     + LV +L
+Sbjct  183  LAFEAPELDRIVDLMREL-RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=chdC PE=3 
+SV=1
+Length=231
+
+ Score = 275 bits (702),  Expect = 1e-92, Method: Composition-based stats.
+ Identities = 52/229 (23%), Positives = 93/229 (41%), Gaps = 16/229 (7%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDK--VIVDTYLTRGLGAGSDYLLR  71
+            +  FS + V    +     +R A   +A     + +++  V+   Y   GL A +D+++ 
+Sbjct  15   YLMFSVFSVSPGALG---DQRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRADADFMVW  71
+
+Query  72   VHSTDMAATQAFLVDWR-ATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYS  130
+             H+  + A QA   D+R  T LG       + VG+ +   + +K   P   AG       
+Sbjct  72   THAERVEALQATYADFRRTTTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGEEPGA--  128
+
+Query  131  DSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+                 Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L D ++I
+Sbjct  129  -----YICVYPFVRSYEWYLLPDEERRRMLAEHGMAARGY-KDVRANTVPAFALGDYEWI  182
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+              FE  +L    +L+  L +  +   H R   P   G     + LV +L
+Sbjct  183  LAFEAPELDRIVDLMREL-RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=chdC 
+PE=3 SV=1
+Length=243
+
+ Score = 263 bits (672),  Expect = 6e-88, Method: Composition-based stats.
+ Identities = 58/230 (25%), Positives = 94/230 (41%), Gaps = 18/230 (8%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDK--HKDKVIVDTYLTRGLGAGSDYLLR  71
+            +  +S +K++     LP  +R   A E Q + D+   KD  I  TY   GL A +D ++ 
+Sbjct  29   YTLWSVFKLK---DTLP-EDRAGYADEVQELFDQLAAKDVTIRGTYDLSGLRADADLMIW  84
+
+Query  72   VHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD  131
+             H+      Q     +R TKLG   +   + + + +             N     A  +D
+Sbjct  85   WHAETADQLQEAYNLFRRTKLGRALEPVWSNMALHRPAE---------FNRSHIPAFLAD  135
+
+Query  132  SAPR-YVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+              PR Y+ V P  +   W+ + DE R + +  H +    Y  +V+     S  L D ++I
+Sbjct  136  ETPRNYISVYPFVRSYDWYLLPDEDRRRMLADHGKMARGY-PDVRANTVASFSLGDYEWI  194
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+              FE  +L    +L+  L +  E   HVR   P   G  +    LV  L+
+Sbjct  195  LAFEADELHRIVDLMRHL-RGSEARRHVREEIPFYTGRRKDIGELVAGLA  243
+
+
+>sp|P0DTW0|CPFCB_CUTAK Coproporphyrin-dependent heme b biosynthesis 
+bifunctional protein OS=Cutibacterium acnes (strain DSM 
+16379 / KPA171202) OX=267747 GN=PPA0308 PE=3 SV=1
+Length=683
+
+ Score = 166 bits (420),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 40/179 (22%), Positives = 68/179 (38%), Gaps = 10/179 (6%)
+
+Query  54   VDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS  113
+               Y   GL A +D L+   S D A  Q     +RA+ LG + +   + VG+ +   + +
+Sbjct  505  RGWYDLSGLRANADLLVWWVSDDPAVLQDAYHRFRASGLGRHLEPVWSNVGVHRPAEF-N  563
+
+Query  114  KDKSPDLNAGLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVN  173
+            K   P   AG++         R+    P  +   W+ +    R + +  H         +
+Sbjct  564  KSHLPSCFAGIAP-------RRWAAFYPFIRSKEWYLLPAADRSRMLREHGIVGAA-SSD  615
+
+Query  174  VKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+            VK     +  L D ++I   E  DLA   +++  L +  E   +V    P   G   S 
+Sbjct  616  VKASTLAAFALGDYEWILALEGDDLARIVDVMKDL-RYVEARRYVDVDTPFFTGERVSP  673
+
+
+>sp|Q49VE0|CHDC_STAS1 Coproheme decarboxylase OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 / DSM 
+20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=chdC PE=3 
+SV=1
+Length=249
+
+ Score = 89.8 bits (221),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 43/217 (20%), Positives = 84/217 (39%), Gaps = 11/217 (5%)
+
+Query  29   LPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL---GAGSDYLLRVHSTDMAATQAFLV  85
+            +P  ER+    E Q  ++KH++               G  +D LL     +M    AF  
+Sbjct  28   VPTEERQTIVDELQTFLNKHEEARTNHVGDHAFYNITGQKADILLWALRPEMKDLNAFEN  87
+
+Query  86   DWRATKLGMYSDVTENLVGITKALNYIS--KDKSPDLNAGLSSATYSD-SAPRYVIVIPV  142
+            ++   K+  +   T + V I +  NY++   D+ P  N  +    + +     Y+   P+
+Sbjct  88   EFNKLKIADFLIPTYSYVSIIELGNYLAGKSDEDPYENPHIKPRLFPELPQSEYICFYPM  147
+
+Query  143  KK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADL  198
+             K       W+ +  E+R + +  H +   QY   +K+ +  S G  D ++       D 
+Sbjct  148  DKRRNETYNWYMLPLEKRQELMYAHGKIGRQYAGKIKQFITGSVGFDDFEWGVTLFADDP  207
+
+Query  199  AAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+              F  ++  +        +  +G+   +G I + D L
+Sbjct  208  LQFKKIVYEMRFDETTARYGDFGS-FYVGHIVTKDNL  243
+
+
+>sp|A7GVD5|CHDC_BACCN Coproheme decarboxylase OS=Bacillus cytotoxicus 
+(strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 87.9 bits (216),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 48/253 (19%), Positives = 96/253 (38%), Gaps = 22/253 (9%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA----DYMKLPAAERKAAAAEAQMVIDK-----HKDK  51
+            M++ AK L      G +  + +R+     +  L + ER+ A  E   +I+K      + +
+Sbjct  1    MSEAAKTLD-----GWYCLHDLRSIDWVSWKTLSSEEREQAIVEFLNIIEKWNKVAAEKQ  55
+
+Query  52   VIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNY  111
+                 Y   G  A   ++L      M        +   T L  Y     + V + +  NY
+Sbjct  56   GSHAMYTIVGQKADIMFMLL--RPTMEELNEIETELNKTTLAEYMIPAYSYVSVVELSNY  113
+
+Query  112  ISKDKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQP  166
+            +  D+ P  N  + +  Y +     ++   P+ K    +  W+ +  E+R K +  H + 
+Sbjct  114  LPADEDPYQNPQILARLYPELPTANHICFYPMDKRRQGNDNWYMLPMEERKKLMYSHGKI  173
+
+Query  167  TLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVL  226
+              QY   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +
+Sbjct  174  GRQYAGKVRQVITGSVGFDDYEWGVTLFADDVLQFKKLVYEMRFDEVSARYGEFGT-FFV  232
+
+Query  227  GTIQSADVLVKTL  239
+            G I  ++ +   L
+Sbjct  233  GNILPSEKVTSFL  245
+
+
+>sp|Q65DQ3|CHDC_BACLD Coproheme decarboxylase OS=Bacillus licheniformis 
+(strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 12200 
+/ NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 GN=chdC 
+PE=3 SV=1
+Length=254
+
+ Score = 86.7 bits (213),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 43/225 (19%), Positives = 89/225 (40%), Gaps = 14/225 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVID-----KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER+   +E   +++     + +       Y   G    +D++L +    M   
+Sbjct  31   WKMLSSDERQIIISEFTGLLEKWGAAQKEGNGSHTLYSIVG--QKADFMLMILRPTMEEL  88
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYI-SKDKSPDLNAGLSSATYSD-SAPRYVI  138
+                +++  +KL  Y+    + V + +  NY+ S D  P  N  + +  Y +    +YV 
+Sbjct  89   NQIELEFNKSKLAEYTIPAYSYVSVVELSNYMGSGDGDPYENPQVRARLYPELPDAKYVC  148
+
+Query  139  VIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFE  194
+              P+ K    D  W+ +S E+R   +  H      Y   VK+ +  S G  D ++     
+Sbjct  149  FYPMDKRRSGDDNWYMLSMEERRNLMRSHGMIGRGYAGKVKQIITGSIGFDDYEWGVTLF  208
+
+Query  195  TADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+            + D+  F  L+  +     +  +  +G+   +G   + + L   L
+Sbjct  209  SDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNRLAKEQLPAFL  252
+
+
+>sp|B7JHL3|CHDC_BACC0 Coproheme decarboxylase OS=Bacillus cereus 
+(strain AH820) OX=405535 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 85.2 bits (209),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDILQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|Q72X61|CHDC_BACC1 Coproheme decarboxylase OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 85.2 bits (209),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAATKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|Q6HAP7|CHDC_BACHK Coproheme decarboxylase OS=Bacillus thuringiensis 
+subsp. konkukian (strain 97-27) OX=281309 GN=chdC 
+PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|Q630L2|CHDC_BACCZ Coproheme decarboxylase OS=Bacillus cereus 
+(strain ZK / E33L) OX=288681 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|B9IS21|CHDC_BACCQ Coproheme decarboxylase OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|B7HYE9|CHDC_BACC7 Coproheme decarboxylase OS=Bacillus cereus 
+(strain AH187) OX=405534 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|C1EQ58|CHDC_BACC3 Coproheme decarboxylase OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|Q81JR3|CHDC_BACAN Coproheme decarboxylase OS=Bacillus anthracis 
+OX=1392 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|A0RLH0|CHDC_BACAH Coproheme decarboxylase OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=chdC PE=3 SV=2
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|C3LFR7|CHDC_BACAC Coproheme decarboxylase OS=Bacillus anthracis 
+(strain CDC 684 / NRRL 3495) OX=568206 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|C3P2E9|CHDC_BACAA Coproheme decarboxylase OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 45/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  D           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|A7Z9Y9|CHDC_BACVZ Coproheme decarboxylase OS=Bacillus velezensis 
+(strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 GN=chdC 
+PE=3 SV=1
+Length=254
+
+ Score = 84.8 bits (208),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 41/225 (18%), Positives = 86/225 (38%), Gaps = 14/225 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVID-----KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER +   E   +++     + + K     Y   G    +D++L +    M   
+Sbjct  31   WKMLSSDERLSIIHEFTGLLEKWGVAQKEGKGSQTIYSIVG--QKADFMLMILRPTMEEL  88
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAP--RYVI  138
+                +++  +KL  ++    + V + +  NY++  +          A      P  +YV 
+Sbjct  89   NEIELEFNKSKLAEFTIPAYSYVSVVELSNYLASGEGDPYENPHVRARLYPELPEAKYVC  148
+
+Query  139  VIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFE  194
+              P+ K    +  W+ +S ++R   +  H      Y   VK+ +  S G  D ++     
+Sbjct  149  FYPMDKRRSGNDNWYMLSMDERRNLMRSHGLIGRSYAGKVKQIITGSVGFDDYEWGVTLF  208
+
+Query  195  TADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+            + D+  F  L+  +     +  +  +G+   +G   S D L K L
+Sbjct  209  SDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNRLSLDTLPKFL  252
+
+
+>sp|Q814N7|CHDC_BACCR Coproheme decarboxylase OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.4 bits (207),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 44/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  +           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|B7HG50|CHDC_BACC4 Coproheme decarboxylase OS=Bacillus cereus 
+(strain B4264) OX=405532 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.4 bits (207),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 44/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  +           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|B7IRR8|CHDC_BACC2 Coproheme decarboxylase OS=Bacillus cereus 
+(strain G9842) OX=405531 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.4 bits (207),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 44/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  +           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYMVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|A9VSI0|CHDC_BACMK Coproheme decarboxylase OS=Bacillus mycoides 
+(strain KBAB4) OX=315730 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 84.0 bits (206),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 44/224 (20%), Positives = 85/224 (38%), Gaps = 13/224 (6%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHKDKVIV-----DTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER  A +E   V++K  +           Y   G    +D +L +    M   
+Sbjct  25   WKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSHAMYTVVG--QKADIMLMILRPTMEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                 +   T L  Y     + V + +  NY+  D+ P  N  + +  Y +     ++  
+Sbjct  83   NEIETELNKTTLAEYLVPAYSYVSVVELSNYLPADEDPYQNPQILARLYPELPKANHICF  142
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    D  W+ +  E+R K +  H++   QY   V++ +  S G  D ++      
+Sbjct  143  YPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQYAGKVRQVISGSVGFDDFEWGVTLFA  202
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D+  F  L+  +     +  +  +G    +G I   + + K L
+Sbjct  203  DDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNILPDEKVEKFL  245
+
+
+>sp|P39645|CHDC_BACSU Coproheme decarboxylase OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=chdC PE=3 SV=1
+Length=254
+
+ Score = 84.0 bits (206),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 40/223 (18%), Positives = 85/223 (38%), Gaps = 14/223 (6%)
+
+Query  24   ADYMKLPAAERKAAAAEAQMVID-----KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMA  78
+            A +  L + ER++   E   +++     + + K     Y   G    +D++L +    M 
+Sbjct  29   ASWKLLSSDERQSIIHEFTGLLEKWGVAQKEGKGSQTLYSIVG--QKADFMLMILRPTME  86
+
+Query  79   ATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAP--RY  136
+                  +++  ++L  ++    + V + +  NY++             A      P  +Y
+Sbjct  87   ELNQIELEFNKSRLAEFTIPAYSYVSVVELSNYLASGDGDPYENPHVRARLYPELPESKY  146
+
+Query  137  VIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITY  192
+            V   P+ K    +  W+ +S E+R   +  H      Y   VK+ +  S G  D ++   
+Sbjct  147  VCFYPMDKRRSGNDNWYMLSMEERRNLMRSHGLIGRSYAGKVKQIITGSVGFDDYEWGVT  206
+
+Query  193  FETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+              + D+  F  L+  +     +  +  +G+   +G   S D L
+Sbjct  207  LFSDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNHLSLDTL  248
+
+
+>sp|A0A0K2H9D8|CHDC_GEOS3 Coproheme decarboxylase OS=Geobacillus 
+stearothermophilus (strain DSM 13240 / CIP 106956 / 10) OX=272567 
+GN=chdC PE=1 SV=1
+Length=248
+
+ Score = 82.9 bits (203),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 41/224 (18%), Positives = 81/224 (36%), Gaps = 20/224 (9%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDK-----HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  LP  ER+AA +E   ++D+      + +     Y   G  A   +++      +   
+Sbjct  25   WKTLPNEEREAAISEFLALVDQWETTESEKQGSHAVYTIVGQKADILFMIL--RPTLDEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISK-----DKSPDLNAGLSSATYSDSAPR  135
+                     TKL  Y     + V + +  NY++       + P++   L           
+Sbjct  83   HEIETALNKTKLADYLLPAYSYVSVVELSNYLASGSEDPYQIPEVRRRLYPIL---PKTN  139
+
+Query  136  YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFIT  191
+            Y+   P+ K    +  W+ +S EQR + +  H     +Y   V + +  S GL D ++  
+Sbjct  140  YICFYPMDKRRQGNDNWYMLSMEQRRELMRAHGMTGRKYAGKVTQIITGSVGLDDFEWGV  199
+
+Query  192  YFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+               + D   F  L+  + +  E +          +GT    + +
+Sbjct  200  TLFSDDALQFKKLVYEM-RFDEVSARFGEFGSFFVGTRLPMENV  242
+
+
+>sp|Q929Q6|CHDC_LISIN Coproheme decarboxylase OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=chdC PE=3 SV=1
+Length=251
+
+ Score = 82.1 bits (201),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 32/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD----KS  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++      + 
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGED  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R K I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQKLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLPS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  ENLSK  247
+
+
+>sp|Q5KUD5|CHDC_GEOKA Coproheme decarboxylase OS=Geobacillus kaustophilus 
+(strain HTA426) OX=235909 GN=chdC PE=1 SV=1
+Length=248
+
+ Score = 81.7 bits (200),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 42/224 (19%), Positives = 82/224 (37%), Gaps = 20/224 (9%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDK-----HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  LP  ER+AA +E   ++D+      + +     Y   G  A   +++      +   
+Sbjct  25   WKTLPNEEREAAISEFLALVDQWETTESEKQGSHAVYTIVGQKADILFMIL--RPTLDEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISK-----DKSPDLNAGLSSATYSDSAPR  135
+                     TKL  Y     + V + +  NY++       + P++   L           
+Sbjct  83   HEIETALNKTKLADYLLPAYSYVSVVELSNYLASGSEDPYQIPEVRRRLYPIL---PKTN  139
+
+Query  136  YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFIT  191
+            Y+   P+ K    +  W+ +S EQR + +  H     +Y   V + +  S GL D ++  
+Sbjct  140  YICFYPMDKRRQGNDNWYMLSMEQRRELMRAHGMTGRKYAGKVTQIITGSVGLDDFEWGV  199
+
+Query  192  YFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+               + D   F  L+  + +  E +          +GT  S + +
+Sbjct  200  TLFSDDALQFKKLVYEM-RFDEVSARFGEFGSFFVGTRLSVEKV  242
+
+
+>sp|A4ITP5|CHDC_GEOTN Coproheme decarboxylase OS=Geobacillus thermodenitrificans 
+(strain NG80-2) OX=420246 GN=chdC PE=3 SV=2
+Length=248
+
+ Score = 81.7 bits (200),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 43/224 (19%), Positives = 81/224 (36%), Gaps = 20/224 (9%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDK-----HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  LP  ER+AA  E   ++DK      + +     Y   G  A   +++      +   
+Sbjct  25   WKMLPNEERQAAIDEFLALVDKWETTESEQQGSHAIYTIVGQKADILFMIL--RPTLDEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISK-----DKSPDLNAGLSSATYSDSAPR  135
+                     TKL  Y     + V + +  NY++       + P++   L           
+Sbjct  83   HEIETALNKTKLAEYLLPAYSYVSVVELSNYLASGNEDPYQIPEVRRRLYPIL---PKTN  139
+
+Query  136  YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFIT  191
+            Y+   P+ K    D  W+ +S EQR + +  H     +Y   V + +  S GL D ++  
+Sbjct  140  YICFYPMDKRRQGDDNWYMLSMEQRRELMRAHGMTGRKYAGKVTQIITGSVGLDDFEWGV  199
+
+Query  192  YFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+               + D   F  L+  + +  E +          +G   +A+ +
+Sbjct  200  TLFSDDALQFKKLVYEM-RFDEVSARFGEFGSFFVGNRLAAENV  242
+
+
+>sp|Q8CTQ2|CHDC_STAES Coproheme decarboxylase OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 81.0 bits (198),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 39/236 (17%), Positives = 83/236 (35%), Gaps = 27/236 (11%)
+
+Query  15   GNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIV--------DTYLTRGLGAGS  66
+             +++T+++      +   +R+A   E +  I   KDK +           Y   G    +
+Sbjct  20   VDWTTFRL------IAEDDREAMITELETFI---KDKTVARESHQGDHAIYNITG--QKA  68
+
+Query  67   DYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLS  125
+            D LL     +M        ++   ++  Y   T + V + +  NY++ K           
+Sbjct  69   DLLLWFLRPEMKELNQIENEFNKLRIADYLIPTYSYVSVIELSNYLAGKSDEDPYENPHV  128
+
+Query  126  SATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLY  179
+             A      P   Y+   P+ K       W+ +  E R   +  H     +Y   +K+ + 
+Sbjct  129  KARLYPELPHSEYICFYPMDKRRNETYNWYMLPIEDRKTLMYNHGMIGRKYAGKIKQFIT  188
+
+Query  180  HSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             S G  D ++     + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  189  GSVGFDDYEWGVTLFSNDVLQFKKIVYEMRFDETTARYGEFGS-FYIGHILNIEDF  243
+
+
+>sp|Q71XQ0|CHDC_LISMF Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4b (strain F2365) OX=265669 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 80.6 bits (197),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 31/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD----KS  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++      + 
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGED  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLPS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  EQLSK  247
+
+
+>sp|C1KX66|CHDC_LISMC Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4b (strain CLIP80459) OX=568819 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 80.6 bits (197),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 31/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD----KS  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++      + 
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGED  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLPS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  EQLSK  247
+
+
+>sp|Q6GJ81|CHDC_STAAR Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 80.6 bits (197),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|Q2YS77|CHDC_STAAB Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain bovine RF122 / ET3-1) OX=273036 GN=chdC PE=3 
+SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 42/229 (18%), Positives = 83/229 (36%), Gaps = 24/229 (10%)
+
+Query  25   DYMKLPAA---ERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVH  73
+            D+  L  A   ER A   E Q  ++        K  D+ I   Y   G    +D LL   
+Sbjct  21   DWASLRLAPKDERDALVTELQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFL  75
+
+Query  74   STDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDS  132
+              +M +      ++   ++  +   T + V + +  NY++ K            A     
+Sbjct  76   RPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPE  135
+
+Query  133  APR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLAD  186
+             P   Y+   P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D
+Sbjct  136  LPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDD  195
+
+Query  187  ADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             ++     + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  196  FEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|A8YZT4|CHDC_STAAT Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|A6QEP0|CHDC_STAAE Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|Q5HI89|CHDC_STAAC Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|Q2G0J1|CHDC_STAA8 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|Q2FJ56|CHDC_STAA3 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 80.2 bits (196),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 40/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHIINTNEF  243
+
+
+>sp|A0AKL8|CHDC_LISW6 Coproheme decarboxylase OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=chdC PE=3 SV=1
+Length=251
+
+ Score = 80.2 bits (196),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 31/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD----KS  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++      + 
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGED  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  ++R K I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMDERQKLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLPS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  ENLSK  247
+
+
+>sp|Q5HRF8|CHDC_STAEQ Coproheme decarboxylase OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 79.8 bits (195),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 38/236 (16%), Positives = 83/236 (35%), Gaps = 27/236 (11%)
+
+Query  15   GNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIV--------DTYLTRGLGAGS  66
+             +++T+++      +   +R+A   E +  +   KDK +           Y   G    +
+Sbjct  20   VDWTTFRL------IAEDDREAMITELETFV---KDKAVARESHQGDHAIYNITG--QKA  68
+
+Query  67   DYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLS  125
+            D LL     +M        ++   ++  Y   T + V + +  NY++ K           
+Sbjct  69   DLLLWFLRPEMKELNQIENEFNKLRIADYLIPTYSYVSVIELSNYLAGKSDEDPYENPHV  128
+
+Query  126  SATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLY  179
+             A      P   Y+   P+ K       W+ +  E R   +  H     +Y   +K+ + 
+Sbjct  129  KARLYPELPHSEYICFYPMDKRRNETYNWYMLPIEDRKTLMYNHGMIGRKYAGKIKQFIT  188
+
+Query  180  HSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             S G  D ++     + D+  F  ++  +        +  +G+   +G I + +  
+Sbjct  189  GSVGFDDYEWGVTLFSNDVLQFKKIVYEMRFDETTARYGEFGS-FYIGHILNIEDF  243
+
+
+>sp|Q7A759|CHDC_STAAN Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|Q99W24|CHDC_STAAM Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=chdC PE=3 
+SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|A5IQE1|CHDC_STAA9 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|A6TZ65|CHDC_STAA2 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|A7WZ30|CHDC_STAA1 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|Q8NXW5|CHDC_STAAW Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|Q6GBP9|CHDC_STAAS Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 39/222 (18%), Positives = 81/222 (36%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVID--------KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +P  ER A   E Q  ++        K  D+ I   Y   G    +D LL     +M + 
+Sbjct  28   VPKDERDALVTEFQSFLENTATVRSSKSGDQAI---YNITG--QKADLLLWFLRPEMKSL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YV  137
+                 ++   ++  +   T + V + +  NY++ K            A      P   Y+
+Sbjct  83   NHIENEFNKLRIADFLIPTYSYVSVIELSNYLAGKSDEDPYENPHIKARLYPELPHSDYI  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K       W+ ++ E+R K +  H     +Y   +K+ +  S G  D ++    
+Sbjct  143  CFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDFEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             + D+  F  ++  +        +  +G+   +G + + +  
+Sbjct  203  FSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVGHLINTNEF  243
+
+
+>sp|Q9HNN4|Y2021_HALSA Putative heme-binding protein VNG_2021C 
+OS=Halobacterium salinarum (strain ATCC 700922 / JCM 11081 
+/ NRC-1) OX=64091 GN=VNG_2021C PE=3 SV=1
+Length=492
+
+ Score = 81.0 bits (198),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 49/252 (19%), Positives = 88/252 (35%), Gaps = 23/252 (9%)
+
+Query  9    TTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIVDTYLTRGL  62
+            T  G F     Y V  D +   P  +R AA  +A   +   +     D+     +   G 
+Sbjct  7    TDEGWFVLHDCYTVDWDAWRDAPERDRTAALDDAASFLADREALADADEGESGVFSITGQ  66
+
+Query  63   GAGSDYLLRVH-STDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDK---SP  118
+             A    LL VH    +         +  T    Y++   + V + +   Y + D      
+Sbjct  67   KAD---LLFVHFRESLDELDRIQRAFEQTAFAEYTERAHSYVSVVEISGYTAPDYFEDPD  123
+
+Query  119  DLNAGLSSATYSDSAPR-----YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+             ++ GL     S   P      YV   P+ K    +  W+++  E+R + ++VH     Q
+Sbjct  124  SVDDGLRQYFESKLTPEIPDDTYVSFYPMSKRRQPEQNWYDLPIEERAEMMDVHGDLGKQ  183
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V + +  S GL D ++       DL    +++  + +  E +          +G  
+Sbjct  184  YAGKVSQVIASSVGLDDMEWGVTLFADDLTDIKDIVYEM-RFDEVSAKYGAFGDFFVGRR  242
+
+Query  230  QSADVLVKTLSG  241
+                 L   ++G
+Sbjct  243  FPPADLPAFMAG  254
+
+
+>sp|B8DH02|CHDC_LISMH Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4a (strain HCC23) OX=552536 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 77.5 bits (189),  Expect = 8e-16, Method: Composition-based stats.
+ Identities = 31/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD----KS  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++      + 
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGED  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLLS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  EQLSK  247
+
+
+>sp|Q4L3R3|CHDC_STAHJ Coproheme decarboxylase OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 77.5 bits (189),  Expect = 9e-16, Method: Composition-based stats.
+ Identities = 42/222 (19%), Positives = 79/222 (36%), Gaps = 11/222 (5%)
+
+Query  29   LPAAERKAAAAEAQMVID---KHKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAATQAFLV  85
+            +P  ER+A   E +  I+     +++   D  L    G  +D LL     +M        
+Sbjct  28   VPEDEREAMINEFKTFINDKASAREQQAGDYALYNITGQKADILLWYLRPEMKELNEIEN  87
+
+Query  86   DWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR--YVIVIPV  142
+            +    ++  +   T + V + +  NY++ K            A      PR  Y+   P+
+Sbjct  88   ELNKLRIADFFIQTYSYVSVIELGNYLAGKSDEDPYQNPHVRARLYPELPRTEYICFYPM  147
+
+Query  143  KK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADL  198
+             K       W+ +  E+R K +  H     QY   +K+ +  S G  D ++     + D+
+Sbjct  148  DKRRNETYNWYMLPMEERKKLMYNHGMIGRQYAGKIKQFITGSVGFDDFEWGVTLFSDDV  207
+
+Query  199  AAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+              F  ++  + +  E T          +G I   D      +
+Sbjct  208  LQFKKIVYEM-RFDETTARYGEFGGFYIGHILKTDDFEHFFA  248
+
+
+>sp|Q8Y5F1|CHDC_LISMO Coproheme decarboxylase OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=chdC PE=1 SV=1
+Length=251
+
+ Score = 77.5 bits (189),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 31/185 (17%), Positives = 70/185 (38%), Gaps = 10/185 (5%)
+
+Query  62   LGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKS----  117
+            LG  +D +       + A       +    +  Y   T + + + +  NY++   +    
+Sbjct  64   LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLASHMAGGDD  123
+
+Query  118  PDLNAGLSSATYSDSAPR-YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLV  172
+            P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H      Y  
+Sbjct  124  PYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGLIGRSYAG  183
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   +G +  +
+Sbjct  184  KVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FFIGNLLLS  242
+
+Query  233  DVLVK  237
+            + L K
+Sbjct  243  EQLSK  247
+
+
+>sp|Q5WB17|CHDC_BACSK Coproheme decarboxylase OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 76.7 bits (187),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 40/220 (18%), Positives = 89/220 (40%), Gaps = 11/220 (5%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHK--DKVIVDTY-LTRGLGAGSDYLLRVHSTDMAATQA  82
+            +  + A+ER+    E + ++ K +  +K    ++ L   +G  +D ++ +    M     
+Sbjct  25   WKTVSASEREQMLNEFEALVSKWEGTEKAGKGSHALYSIVGQKADIMIMLLRPTMEELNE  84
+
+Query  83   FLVDWRATKLGMYSDVTENLVGITKALNYIS--KDKSPDLNAGLSSATYSD-SAPRYVIV  139
+                +  + L  Y   T + V + +  NY++   D+ P  N  + S  Y +    ++V  
+Sbjct  85   IENAFNKSGLAAYMIPTYSYVSVVELSNYLAGDSDEDPYENPYVRSRLYPELPRWKHVCF  144
+
+Query  140  IPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYFET  195
+             P+ K    +  W+ +  E+R   +  H      Y   VK+ +  S G  D ++     +
+Sbjct  145  YPMDKRREGNDNWYMLPMEERKNLMRSHGMIGRGYAGVVKQIISGSVGFDDWEWGVTLFS  204
+
+Query  196  ADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+             D+  F  L+  +     +  +  +G+   +G I   + +
+Sbjct  205  DDVLQFKKLVYEMRFDEVSARYGEFGS-FYVGNILEKERI  243
+
+
+>sp|B9DKR5|CHDC_STACT Coproheme decarboxylase OS=Staphylococcus 
+carnosus (strain TM300) OX=396513 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 74.8 bits (182),  Expect = 8e-15, Method: Composition-based stats.
+ Identities = 41/226 (18%), Positives = 76/226 (34%), Gaps = 19/226 (8%)
+
+Query  24   ADYMKLPAAERKAAAAEAQMVIDKHKDKVIVD-------TYLTRGLGAGSDYLLRVHSTD  76
+                 +P  +R     E    +DK     + D        Y   G    +D LL V   +
+Sbjct  23   PTLRLVPDEDRIQIVQEFHDFLDKLAS--VRDDHNGDHALYNITG--QKADILLWVLRPE  78
+
+Query  77   MAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KDKSPDLNAGLSSATYSDSAPR  135
+            M    +  +     ++  Y   T + V I +  NY++ K            A      P 
+Sbjct  79   MQELNSIELALNKLRIADYLVPTYSYVSIIELSNYLAGKSDEDPYENPHVKARLYPELPH  138
+
+Query  136  --YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADF  189
+              Y+   P+ K       W+ +S E+R K +  H     +Y   +K+ +  S G  D ++
+Sbjct  139  SDYICFYPMNKRRNETYNWYMLSMEERQKLMYDHGMIGRKYAGKIKQFITGSVGFDDYEW  198
+
+Query  190  ITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+                   D   F  ++  +        +  +G+   +G +   + L
+Sbjct  199  GVTLFAQDPLQFKKIVYEMRFDETTARYGDFGS-FFVGHVLPEETL  243
+
+
+>sp|Q9K6A4|CHDC_BACHD Coproheme decarboxylase OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 
+/ C-125) OX=272558 GN=chdC PE=3 SV=2
+Length=249
+
+ Score = 74.4 bits (181),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 38/222 (17%), Positives = 83/222 (37%), Gaps = 21/222 (9%)
+
+Query  29   LPAAERKAAAAEAQMVIDKHKDKVIVD-----TYLTRGLGAGSDYLLRVHSTDMAATQAF  83
+            L   ER+    E   +++K  D           Y   G    +D +L +    M      
+Sbjct  28   LSTEERQQIINEFLDLMEKWNDTEAQGEGSHAVYTIVG--QKADVMLMILRPSMEELNEI  85
+
+Query  84   LVDWRATKLGMYSDVTENLVGITKALNYISKD------KSPDLNAGLSSATYSDSAPRYV  137
+               +  ++   ++    + V + +  NY++ D      ++P + A L          ++V
+Sbjct  86   ETAFNKSRFAEFTVPAYSYVSVVELSNYMAGDSDDDPYQNPHVRARLYPQL---PKAKHV  142
+
+Query  138  IVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ K    D  W+ +  +QR + ++ H      Y   VK+ +  S G  D ++    
+Sbjct  143  CFYPMDKRRQGDDNWYMLPMDQRRELMKSHGMIGRSYAGKVKQIITGSVGFDDWEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+               D+  F  L+  +     +  +  +G+   +G + +A+ +
+Sbjct  203  FADDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNLLTAEGI  243
+
+
+>sp|C5D9S7|CHDC_GEOSW Coproheme decarboxylase OS=Geobacillus sp. 
+(strain WCH70) OX=471223 GN=chdC PE=3 SV=1
+Length=248
+
+ Score = 74.0 bits (180),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 38/224 (17%), Positives = 82/224 (37%), Gaps = 20/224 (9%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDK-----HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  L + ER+AA  E   +++K      K +     Y   G    +D +  +    +   
+Sbjct  25   WKTLTSDEREAAIREFLSLVEKWQETEDKQEGSHAIYTIVG--QKADIMFMILRPTIEEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISK-----DKSPDLNAGLSSATYSDSAPR  135
+                     TKL  +     + V + +  NY++       + P++   L          +
+Sbjct  83   NEIETALNKTKLAEFLVPAYSYVSVVELSNYLASGDEDPYQIPEVRRRLYPIL---PKTK  139
+
+Query  136  YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFIT  191
+            +V   P+ K    +  W+ +S E+R   +  H     +Y   V + +  S GL D ++  
+Sbjct  140  HVCFYPMDKRRQGNDNWYMLSMEERRNLMRAHGLTGRKYAGKVTQIITGSVGLDDFEWGV  199
+
+Query  192  YFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+               + D   F  L+  +     +  +  +G+   +G   + + +
+Sbjct  200  TLFSDDALQFKKLVYEMRFDEVSARYGEFGS-FFVGNRLTVEKV  242
+
+
+>sp|Q18DR5|Y1094_HALWD Putative heme-binding protein HQ_1094A 
+OS=Haloquadratum walsbyi (strain DSM 16790 / HBSQ001) OX=362976 
+GN=HQ_1094A PE=3 SV=1
+Length=531
+
+ Score = 74.8 bits (182),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 36/231 (16%), Positives = 79/231 (34%), Gaps = 16/231 (7%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHK---DKVIVDTYLTRGLGAGSDYLLRVHSTDMAATQA  82
+            + + P   R+AA  +    + KH+   D     + +   LG  +D L+      + A   
+Sbjct  25   WREAPTHRREAAVGDGVEYLRKHESIADAEEGSSAVFSVLGHKADILITHFRPTLDALSR  84
+
+Query  83   FLVDWRATKLGMYSDVTENLV------GITKALNYISKDKSPDLNAGLSSATYSDSAPR-  135
+                +  T    ++    + V      G T    + + D + +          +   P  
+Sbjct  85   AERQFEQTTFAGFTTQPTSYVSVAEISGYTTPGYFENPDAADEGLRQYMQGKLTPEIPNK  144
+
+Query  136  -YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+             Y    P+ K       W+++  ++R + +E H +   +Y   +K+ +  S G  D ++ 
+Sbjct  145  DYAGFYPMSKRRGETYNWYDLPIDERAEMMEAHAETGKEYAGKIKQVIASSVGFDDYEWG  204
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLSG  241
+                  D     +++  +     +  +  +G    +G       L   L G
+Sbjct  205  VTLFADDPTDIKDIVYEMRFDEVSAKYGEFGT-FYIGQRFPPADLGALLEG  254
+
+
+>sp|Q3IRM1|Y2262_NATPD Putative heme-binding protein NP_2262A 
+OS=Natronomonas pharaonis (strain ATCC 35678 / DSM 2160 / CIP 
+103997 / NBRC 14720 / NCIMB 2260 / Gabara) OX=348780 GN=hemQ 
+PE=3 SV=1
+Length=600
+
+ Score = 74.4 bits (181),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 38/226 (17%), Positives = 82/226 (36%), Gaps = 17/226 (8%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKH---KDKVIVDTYLTRGLGAGSDYLLRVHSTDMAATQA  82
+            +   P  ER+ A       +  H   KD     + +   LG  +D+++      +     
+Sbjct  27   WRDAPDRERERALETGTDYLQAHVDLKDAEEGASAVFSILGHKADFMVLHLRPTLDHLDH  86
+
+Query  83   FLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPR-------  135
+                + +T L  +++ + + V +T+   Y+ ++ +  L+        +    R       
+Sbjct  87   AERRFESTALAEFTEQSSSYVSVTEVSGYMHEELTDGLDDLEDEGMRNYMKQRIYPELPD  146
+
+Query  136  --YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADF  189
+              +V   P+ K    D  W+++  ++R + +  H     QY   V + +  S G  D ++
+Sbjct  147  ADHVCFYPMSKRRGPDHNWYDLPFDERREYMSNHGDVGRQYADKVSQIIAGSIGFDDYEW  206
+
+Query  190  ITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVL  235
+                   D     +LL  +   P ++    +G P  +G       L
+Sbjct  207  GITLFADDPTDIKDLLYEMRFDPSSSKFAEFG-PFYIGQQFEPSEL  251
+
+
+>sp|Q5UY41|Y3100_HALMA Putative heme-binding protein rrnAC3100 
+OS=Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / JCM 
+8966 / VKM B-1809) OX=272569 GN=rrnAC3100 PE=3 SV=2
+Length=669
+
+ Score = 72.5 bits (176),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 46/235 (20%), Positives = 81/235 (34%), Gaps = 22/235 (9%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDKHK-----DKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            + + P   R  A +E    +D ++     D+     Y   G  A  D ++      M   
+Sbjct  27   WREAPQRVRDRALSEGIGFLDAYEAVEDADEGQTAVYTVMGHKA--DIMILHLRPTMGDL  84
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKS--------PDLNAGLSSATYSDS  132
+             A    +  T+   +++   + V +T+A  Y  K +             A    A     
+Sbjct  85   DAAERHFEQTEFAAFTEQEFSYVSVTEASGYTEKSREYFEGEVDDDSGLAQYIQARLHPD  144
+
+Query  133  AP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLAD  186
+             P   +V   P+ K    D  W++ S E+R   I+ H      Y   V + +  S G  D
+Sbjct  145  VPDEEFVCFYPMSKRRQPDQNWYDTSFEERAAHIKRHGDIGRGYGSEVSQMIAGSIGFDD  204
+
+Query  187  ADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLSG  241
+             ++     + D+     LL  +   P  +    +G P  +G       L   L+G
+Sbjct  205  WEWGITLWSDDMRHIKELLTEMRFDPSTSQFAEFG-PFYVGRKFDPSELPAVLAG  258
+
+
+>sp|Q8EM37|CHDC_OCEIH Coproheme decarboxylase OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 66.3 bits (160),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 40/227 (18%), Positives = 77/227 (34%), Gaps = 15/227 (7%)
+
+Query  26   YMKLPAAERKAAAAEAQMVIDK-----HKDKVIVDTYLTRGLGAGSDYLLRVHSTDMAAT  80
+            +  +   ER+AA  E Q +I K      + +     Y   G    +D++           
+Sbjct  25   WKLISKEERQAAIDEFQQLISKWEAVEEEKQGSHGIYKVVG--NKADFMFIFLRESFQEL  82
+
+Query  81   QAFLVDWRATKLGMYSDVTENLVGI-TKALNYISKDKSPDLNAGLSSATYSDSAPRY--V  137
+            +    +   TKLG +     + V I  K ++   K       +         + P++   
+Sbjct  83   EQIKTEINKTKLGDFLIPGYSYVSIIEKTMHDPMKAGEDRELSAYVKEALKPTMPKWEHA  142
+
+Query  138  IVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+               P+ +       W+ +  E+R K +  H     +Y   VK  +  S GL + ++    
+Sbjct  143  CFYPMARRRDPGVNWFEIEKEERTKLLYEHGMTGRKYAGKVKEIITGSIGLDEWEWGVTL  202
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+               D   F  ++  + +  E T         ++G     + L   LS
+Sbjct  203  FAHDPLQFKKIVYEM-RFDEVTTKYAEFGDFIVGNFLEKEELSNHLS  248
+
+
+>sp|Q5SHL6|CHDC_THET8 Coproheme decarboxylase OS=Thermus thermophilus 
+(strain HB8 / ATCC 27634 / DSM 579) OX=300852 GN=chdC 
+PE=1 SV=1
+Length=249
+
+ Score = 57.8 bits (138),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 36/230 (16%), Positives = 75/230 (33%), Gaps = 23/230 (10%)
+
+Query  24   ADYMKLPAAERKAAAAEAQMVIDKHKD-----KVIVDTYLTRGLGAGSDYLLRVHSTDMA  78
+            A +   P   R+ A  E + ++ + ++     +     Y   G  A  D L       + 
+Sbjct  27   ARWFSAPLEAREDAWEELKGLVREWRELEEAGQGSYGIYQVVGHKA--DLLFLNLRPGLD  84
+
+Query  79   ATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPR---  135
+                       +    Y   + +   +   +   S++K  D     S        PR   
+Sbjct  85   PLLEAEARLSRSAFARYLGRSYSFYSV---VELGSQEKPLD---PESPYVKPRLTPRVPK  138
+
+Query  136  --YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADF  189
+              YV   P+ K       W+ +  ++R   ++ H +   +Y   V + +  + GL D ++
+Sbjct  139  SGYVCFYPMNKRRQGQDNWYMLPAKERASLMKAHGETGRKYQGKVMQVISGAQGLDDWEW  198
+
+Query  190  ITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+                 + D   F  ++  + +  E +       P  +G     + L   L
+Sbjct  199  GVDLFSEDPVQFKKIVYEM-RFDEVSARYGEFGPFFVGKYLDEEALRAFL  247
+
+
+>sp|Q72HY0|CHDC_THET2 Coproheme decarboxylase OS=Thermus thermophilus 
+(strain HB27 / ATCC BAA-163 / DSM 7039) OX=262724 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 57.8 bits (138),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 36/230 (16%), Positives = 75/230 (33%), Gaps = 23/230 (10%)
+
+Query  24   ADYMKLPAAERKAAAAEAQMVIDKHKD-----KVIVDTYLTRGLGAGSDYLLRVHSTDMA  78
+            A +   P   R+ A  E + ++ + ++     +     Y   G  A  D L       + 
+Sbjct  27   ARWFSAPLEAREDAWEELKGLVREWRELEEAGQGSYGIYQVVGHKA--DLLFLNLRPGLD  84
+
+Query  79   ATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSAPR---  135
+                       +    Y   + +   +   +   S++K  D     S        PR   
+Sbjct  85   PLLEAEARLSRSAFARYLGRSYSFYSV---VELGSQEKPLD---PESPYVKPRLTPRVPK  138
+
+Query  136  --YVIVIPVKKDAA----WWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADF  189
+              YV   P+ K       W+ +  ++R   ++ H +   +Y   V + +  + GL D ++
+Sbjct  139  SGYVCFYPMNKRRQGQDNWYMLPAKERASLMKAHGETGRKYQGKVMQVISGAQGLDDWEW  198
+
+Query  190  ITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+                 + D   F  ++  + +  E +       P  +G     + L   L
+Sbjct  199  GVDLFSEDPVQFKKIVYEM-RFDEVSARYGEFGPFFVGKYLDEEALRAFL  247
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.126    0.323    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17531668772
+Results from round 3
+
+
+Query= 5a13_A
+
+Length=242
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A7GVD5|CHDC_BACCN Coproheme decarboxylase OS=Bacillus cytotoxi...  306     9e-105
+sp|Q65DQ3|CHDC_BACLD Coproheme decarboxylase OS=Bacillus lichenif...  296     8e-101
+sp|Q72X61|CHDC_BACC1 Coproheme decarboxylase OS=Bacillus cereus (...  296     8e-101
+sp|A9VSI0|CHDC_BACMK Coproheme decarboxylase OS=Bacillus mycoides...  296     9e-101
+sp|Q6HAP7|CHDC_BACHK Coproheme decarboxylase OS=Bacillus thuringi...  296     1e-100
+sp|Q630L2|CHDC_BACCZ Coproheme decarboxylase OS=Bacillus cereus (...  296     1e-100
+sp|B9IS21|CHDC_BACCQ Coproheme decarboxylase OS=Bacillus cereus (...  296     1e-100
+sp|B7HYE9|CHDC_BACC7 Coproheme decarboxylase OS=Bacillus cereus (...  296     1e-100
+sp|C1EQ58|CHDC_BACC3 Coproheme decarboxylase OS=Bacillus cereus (...  296     1e-100
+sp|Q81JR3|CHDC_BACAN Coproheme decarboxylase OS=Bacillus anthraci...  296     1e-100
+sp|A0RLH0|CHDC_BACAH Coproheme decarboxylase OS=Bacillus thuringi...  296     1e-100
+sp|C3LFR7|CHDC_BACAC Coproheme decarboxylase OS=Bacillus anthraci...  296     1e-100
+sp|C3P2E9|CHDC_BACAA Coproheme decarboxylase OS=Bacillus anthraci...  296     1e-100
+sp|P39645|CHDC_BACSU Coproheme decarboxylase OS=Bacillus subtilis...  296     1e-100
+sp|B7JHL3|CHDC_BACC0 Coproheme decarboxylase OS=Bacillus cereus (...  295     1e-100
+sp|A7Z9Y9|CHDC_BACVZ Coproheme decarboxylase OS=Bacillus velezens...  295     1e-100
+sp|Q814N7|CHDC_BACCR Coproheme decarboxylase OS=Bacillus cereus (...  295     2e-100
+sp|B7HG50|CHDC_BACC4 Coproheme decarboxylase OS=Bacillus cereus (...  295     2e-100
+sp|B7IRR8|CHDC_BACC2 Coproheme decarboxylase OS=Bacillus cereus (...  295     2e-100
+sp|A0A0K2H9D8|CHDC_GEOS3 Coproheme decarboxylase OS=Geobacillus s...  293     2e-99 
+sp|Q5KUD5|CHDC_GEOKA Coproheme decarboxylase OS=Geobacillus kaust...  292     2e-99 
+sp|A4ITP5|CHDC_GEOTN Coproheme decarboxylase OS=Geobacillus therm...  292     3e-99 
+sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica...  293     5e-99 
+sp|C5D9S7|CHDC_GEOSW Coproheme decarboxylase OS=Geobacillus sp. (...  291     5e-99 
+sp|Q5WB17|CHDC_BACSK Coproheme decarboxylase OS=Bacillus clausii ...  290     2e-98 
+sp|Q9K6A4|CHDC_BACHD Coproheme decarboxylase OS=Bacillus halodura...  287     3e-97 
+sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans ...  286     1e-96 
+sp|Q6GJ81|CHDC_STAAR Coproheme decarboxylase OS=Staphylococcus au...  280     1e-94 
+sp|Q4L3R3|CHDC_STAHJ Coproheme decarboxylase OS=Staphylococcus ha...  280     1e-94 
+sp|A8YZT4|CHDC_STAAT Coproheme decarboxylase OS=Staphylococcus au...  279     3e-94 
+sp|A6QEP0|CHDC_STAAE Coproheme decarboxylase OS=Staphylococcus au...  279     3e-94 
+sp|Q5HI89|CHDC_STAAC Coproheme decarboxylase OS=Staphylococcus au...  279     3e-94 
+sp|Q2G0J1|CHDC_STAA8 Coproheme decarboxylase OS=Staphylococcus au...  279     3e-94 
+sp|Q2FJ56|CHDC_STAA3 Coproheme decarboxylase OS=Staphylococcus au...  279     3e-94 
+sp|Q8NXW5|CHDC_STAAW Coproheme decarboxylase OS=Staphylococcus au...  278     8e-94 
+sp|Q6GBP9|CHDC_STAAS Coproheme decarboxylase OS=Staphylococcus au...  278     8e-94 
+sp|Q2YS77|CHDC_STAAB Coproheme decarboxylase OS=Staphylococcus au...  278     8e-94 
+sp|Q49VE0|CHDC_STAS1 Coproheme decarboxylase OS=Staphylococcus sa...  278     1e-93 
+sp|Q7A759|CHDC_STAAN Coproheme decarboxylase OS=Staphylococcus au...  278     1e-93 
+sp|Q99W24|CHDC_STAAM Coproheme decarboxylase OS=Staphylococcus au...  278     1e-93 
+sp|A5IQE1|CHDC_STAA9 Coproheme decarboxylase OS=Staphylococcus au...  278     1e-93 
+sp|A6TZ65|CHDC_STAA2 Coproheme decarboxylase OS=Staphylococcus au...  278     1e-93 
+sp|A7WZ30|CHDC_STAA1 Coproheme decarboxylase OS=Staphylococcus au...  278     1e-93 
+sp|Q8CTQ2|CHDC_STAES Coproheme decarboxylase OS=Staphylococcus ep...  277     2e-93 
+sp|Q5HRF8|CHDC_STAEQ Coproheme decarboxylase OS=Staphylococcus ep...  276     3e-93 
+sp|B9DKR5|CHDC_STACT Coproheme decarboxylase OS=Staphylococcus ca...  276     5e-93 
+sp|Q929Q6|CHDC_LISIN Coproheme decarboxylase OS=Listeria innocua ...  257     2e-85 
+sp|A0AKL8|CHDC_LISW6 Coproheme decarboxylase OS=Listeria welshime...  256     3e-85 
+sp|Q71XQ0|CHDC_LISMF Coproheme decarboxylase OS=Listeria monocyto...  256     7e-85 
+sp|C1KX66|CHDC_LISMC Coproheme decarboxylase OS=Listeria monocyto...  256     7e-85 
+sp|B8DH02|CHDC_LISMH Coproheme decarboxylase OS=Listeria monocyto...  253     1e-83 
+sp|Q8Y5F1|CHDC_LISMO Coproheme decarboxylase OS=Listeria monocyto...  252     1e-83 
+sp|Q8EM37|CHDC_OCEIH Coproheme decarboxylase OS=Oceanobacillus ih...  250     8e-83 
+sp|Q18DR5|Y1094_HALWD Putative heme-binding protein HQ_1094A OS=H...  252     8e-80 
+sp|Q9HNN4|Y2021_HALSA Putative heme-binding protein VNG_2021C OS=...  251     8e-80 
+sp|Q3IRM1|Y2262_NATPD Putative heme-binding protein NP_2262A OS=N...  249     5e-78 
+sp|Q5SHL6|CHDC_THET8 Coproheme decarboxylase OS=Thermus thermophi...  236     3e-77 
+sp|Q72HY0|CHDC_THET2 Coproheme decarboxylase OS=Thermus thermophi...  236     3e-77 
+sp|Q5UY41|Y3100_HALMA Putative heme-binding protein rrnAC3100 OS=...  248     4e-77 
+sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium...  232     8e-76 
+sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium tub...  229     1e-74 
+sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium tub...  229     1e-74 
+sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces coel...  226     3e-73 
+sp|P0DTW0|CPFCB_CUTAK Coproporphyrin-dependent heme b biosynthesi...  201     3e-59 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|A7GVD5|CHDC_BACCN Coproheme decarboxylase OS=Bacillus cytotoxicus 
+(strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 306 bits (783),  Expect = 9e-105, Method: Composition-based stats.
+ Identities = 46/250 (18%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKH-----KDKVIV  54
+            M++ AK L   G +       +    +  L + ER+ A  E   +I+K      + +   
+Sbjct  1    MSEAAKTLD--GWYCLHDLRSIDWVSWKTLSSEEREQAIVEFLNIIEKWNKVAAEKQGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +  +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTIVG--QKADIMFMLLRPTMEELNEIETELNKTTLAEYMIPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    +  W+ +  E+R K +  H +   Q
+Sbjct  117  DEDPYQNPQILARLYPELPTANHICFYPMDKRRQGNDNWYMLPMEERKKLMYSHGKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVITGSVGFDDYEWGVTLFADDVLQFKKLVYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+              ++ +   L
+Sbjct  236  LPSEKVTSFL  245
+
+
+>sp|Q65DQ3|CHDC_BACLD Coproheme decarboxylase OS=Bacillus licheniformis 
+(strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 12200 
+/ NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 GN=chdC 
+PE=3 SV=1
+Length=254
+
+ Score = 296 bits (758),  Expect = 8e-101, Method: Composition-based stats.
+ Identities = 44/249 (18%), Positives = 90/249 (36%), Gaps = 17/249 (7%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKH-----KDKVIVDT  56
+            + A+ L   G +       +    +  L + ER+   +E   +++K      +       
+Sbjct  9    EAAQTLD--GWYALHDFRTMDWSAWKMLSSDERQIIISEFTGLLEKWGAAQKEGNGSHTL  66
+
+Query  57   YLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDK  116
+            Y   G    +D++L +    M       +++  +KL  Y+    + V + +  NY+    
+Sbjct  67   YSIVG--QKADFMLMILRPTMEELNQIELEFNKSKLAEYTIPAYSYVSVVELSNYMGSGD  124
+
+Query  117  SPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQY  170
+                      A      P  +YV   P+ K    D  W+ +S E+R   +  H      Y
+Sbjct  125  GDPYENPQVRARLYPELPDAKYVCFYPMDKRRSGDDNWYMLSMEERRNLMRSHGMIGRGY  184
+
+Query  171  LVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQ  230
+               VK+ +  S G  D ++     + D+  F  L+  +     +  +  +G+   +G   
+Sbjct  185  AGKVKQIITGSIGFDDYEWGVTLFSDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNRL  243
+
+Query  231  SADVLVKTL  239
+            + + L   L
+Sbjct  244  AKEQLPAFL  252
+
+
+>sp|Q72X61|CHDC_BACC1 Coproheme decarboxylase OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 8e-101, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAATKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|A9VSI0|CHDC_BACMK Coproheme decarboxylase OS=Bacillus mycoides 
+(strain KBAB4) OX=315730 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 9e-101, Method: Composition-based stats.
+ Identities = 48/250 (19%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  +     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYLVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|Q6HAP7|CHDC_BACHK Coproheme decarboxylase OS=Bacillus thuringiensis 
+subsp. konkukian (strain 97-27) OX=281309 GN=chdC 
+PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|Q630L2|CHDC_BACCZ Coproheme decarboxylase OS=Bacillus cereus 
+(strain ZK / E33L) OX=288681 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|B9IS21|CHDC_BACCQ Coproheme decarboxylase OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|B7HYE9|CHDC_BACC7 Coproheme decarboxylase OS=Bacillus cereus 
+(strain AH187) OX=405534 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|C1EQ58|CHDC_BACC3 Coproheme decarboxylase OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|Q81JR3|CHDC_BACAN Coproheme decarboxylase OS=Bacillus anthracis 
+OX=1392 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|A0RLH0|CHDC_BACAH Coproheme decarboxylase OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=chdC PE=3 SV=2
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|C3LFR7|CHDC_BACAC Coproheme decarboxylase OS=Bacillus anthracis 
+(strain CDC 684 / NRRL 3495) OX=568206 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|C3P2E9|CHDC_BACAA Coproheme decarboxylase OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|P39645|CHDC_BACSU Coproheme decarboxylase OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=chdC PE=3 SV=1
+Length=254
+
+ Score = 296 bits (757),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 45/249 (18%), Positives = 93/249 (37%), Gaps = 17/249 (7%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKH-----KDKVIVDT  56
+            + AK L   G +       +    +  L + ER++   E   +++K      + K     
+Sbjct  9    EAAKTLD--GWYALHDFRTMDWASWKLLSSDERQSIIHEFTGLLEKWGVAQKEGKGSQTL  66
+
+Query  57   YLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDK  116
+            Y   G    +D++L +    M       +++  ++L  ++    + V + +  NY++   
+Sbjct  67   YSIVG--QKADFMLMILRPTMEELNQIELEFNKSRLAEFTIPAYSYVSVVELSNYLASGD  124
+
+Query  117  SPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQY  170
+                      A      P  +YV   P+ K    +  W+ +S E+R   +  H      Y
+Sbjct  125  GDPYENPHVRARLYPELPESKYVCFYPMDKRRSGNDNWYMLSMEERRNLMRSHGLIGRSY  184
+
+Query  171  LVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQ  230
+               VK+ +  S G  D ++     + D+  F  L+  +     +  +  +G+   +G   
+Sbjct  185  AGKVKQIITGSVGFDDYEWGVTLFSDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNHL  243
+
+Query  231  SADVLVKTL  239
+            S D L + L
+Sbjct  244  SLDTLPQFL  252
+
+
+>sp|B7JHL3|CHDC_BACC0 Coproheme decarboxylase OS=Bacillus cereus 
+(strain AH820) OX=405535 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 295 bits (756),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 49/250 (20%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  D     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNDVAAAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDILQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|A7Z9Y9|CHDC_BACVZ Coproheme decarboxylase OS=Bacillus velezensis 
+(strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 GN=chdC 
+PE=3 SV=1
+Length=254
+
+ Score = 295 bits (756),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 45/249 (18%), Positives = 93/249 (37%), Gaps = 17/249 (7%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKH-----KDKVIVDT  56
+            + A+ L   G +       +    +  L + ER +   E   +++K      + K     
+Sbjct  9    EAAQTLD--GWYALHDFRTMDWTSWKMLSSDERLSIIHEFTGLLEKWGVAQKEGKGSQTI  66
+
+Query  57   YLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDK  116
+            Y   G    +D++L +    M       +++  +KL  ++    + V + +  NY++  +
+Sbjct  67   YSIVG--QKADFMLMILRPTMEELNEIELEFNKSKLAEFTIPAYSYVSVVELSNYLASGE  124
+
+Query  117  SPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQY  170
+                      A      P  +YV   P+ K    +  W+ +S ++R   +  H      Y
+Sbjct  125  GDPYENPHVRARLYPELPEAKYVCFYPMDKRRSGNDNWYMLSMDERRNLMRSHGLIGRSY  184
+
+Query  171  LVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQ  230
+               VK+ +  S G  D ++     + D+  F  L+  +     +  +  +G+   +G   
+Sbjct  185  AGKVKQIITGSVGFDDYEWGVTLFSDDVLQFKKLVYEMRFDEVSARYGEFGS-FFVGNRL  243
+
+Query  231  SADVLVKTL  239
+            S D L K L
+Sbjct  244  SLDTLPKFL  252
+
+
+>sp|Q814N7|CHDC_BACCR Coproheme decarboxylase OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 295 bits (755),  Expect = 2e-100, Method: Composition-based stats.
+ Identities = 48/250 (19%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  +     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|B7HG50|CHDC_BACC4 Coproheme decarboxylase OS=Bacillus cereus 
+(strain B4264) OX=405532 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 295 bits (755),  Expect = 2e-100, Method: Composition-based stats.
+ Identities = 48/250 (19%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  +     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|B7IRR8|CHDC_BACC2 Coproheme decarboxylase OS=Bacillus cereus 
+(strain G9842) OX=405531 GN=chdC PE=3 SV=1
+Length=247
+
+ Score = 295 bits (755),  Expect = 2e-100, Method: Composition-based stats.
+ Identities = 48/250 (19%), Positives = 93/250 (37%), Gaps = 16/250 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++    L   G +       +    +  L + ER  A +E   V++K  +     K   
+Sbjct  1    MSEATTTLD--GWYCLHDLRSIDWAAWKTLSSDERGQAVSEFLNVVEKWNEVATAKKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M        +   T L  Y     + V + +  NY+  
+Sbjct  59   AMYTVVG--QKADIMLMILRPTMEELNEIETELNKTTLAEYMVPAYSYVSVVELSNYLPA  116
+
+Query  115  DKSPDLNAGLSSATYSD-SAPRYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+            D+ P  N  + +  Y +     ++   P+ K    D  W+ +  E+R K +  H++   Q
+Sbjct  117  DEDPYQNPQILARLYPELPKANHICFYPMDKRRQGDDNWYMLPMEERKKMMYSHSKIGRQ  176
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   V++ +  S G  D ++       D+  F  L+  +     +  +  +G    +G I
+Sbjct  177  YAGKVRQVISGSVGFDDFEWGVTLFADDVLQFKKLIYEMRFDEVSARYGEFGT-FFVGNI  235
+
+Query  230  QSADVLVKTL  239
+               + + K L
+Sbjct  236  LPDEKVEKFL  245
+
+
+>sp|A0A0K2H9D8|CHDC_GEOS3 Coproheme decarboxylase OS=Geobacillus 
+stearothermophilus (strain DSM 13240 / CIP 106956 / 10) OX=272567 
+GN=chdC PE=1 SV=1
+Length=248
+
+ Score = 293 bits (749),  Expect = 2e-99, Method: Composition-based stats.
+ Identities = 45/251 (18%), Positives = 88/251 (35%), Gaps = 17/251 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M++ A+ L   G +       +    +  LP  ER+AA +E   ++D+ +      +   
+Sbjct  1    MSEAAQTLD--GWYCLHDFRTIDWSAWKTLPNEEREAAISEFLALVDQWETTESEKQGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D L  +    +            TKL  Y     + V + +  NY++ 
+Sbjct  59   AVYTIVG--QKADILFMILRPTLDELHEIETALNKTKLADYLLPAYSYVSVVELSNYLAS  116
+
+Query  115  DKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTL  168
+                               P+  Y+   P+ K    +  W+ +S EQR + +  H     
+Sbjct  117  GSEDPYQIPEVRRRLYPILPKTNYICFYPMDKRRQGNDNWYMLSMEQRRELMRAHGMTGR  176
+
+Query  169  QYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGT  228
+            +Y   V + +  S GL D ++     + D   F  L+  +     +     +G+   +GT
+Sbjct  177  KYAGKVTQIITGSVGLDDFEWGVTLFSDDALQFKKLVYEMRFDEVSARFGEFGS-FFVGT  235
+
+Query  229  IQSADVLVKTL  239
+                + +    
+Sbjct  236  RLPMENVSSFF  246
+
+
+>sp|Q5KUD5|CHDC_GEOKA Coproheme decarboxylase OS=Geobacillus kaustophilus 
+(strain HTA426) OX=235909 GN=chdC PE=1 SV=1
+Length=248
+
+ Score = 292 bits (748),  Expect = 2e-99, Method: Composition-based stats.
+ Identities = 46/251 (18%), Positives = 89/251 (35%), Gaps = 17/251 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M++ A+ L   G +       +    +  LP  ER+AA +E   ++D+ +      +   
+Sbjct  1    MSEAAQTLD--GWYCLHDFRTIDWSAWKTLPNEEREAAISEFLALVDQWETTESEKQGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D L  +    +            TKL  Y     + V + +  NY++ 
+Sbjct  59   AVYTIVG--QKADILFMILRPTLDELHEIETALNKTKLADYLLPAYSYVSVVELSNYLAS  116
+
+Query  115  DKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTL  168
+                               P+  Y+   P+ K    +  W+ +S EQR + +  H     
+Sbjct  117  GSEDPYQIPEVRRRLYPILPKTNYICFYPMDKRRQGNDNWYMLSMEQRRELMRAHGMTGR  176
+
+Query  169  QYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGT  228
+            +Y   V + +  S GL D ++     + D   F  L+  +     +     +G+   +GT
+Sbjct  177  KYAGKVTQIITGSVGLDDFEWGVTLFSDDALQFKKLVYEMRFDEVSARFGEFGS-FFVGT  235
+
+Query  229  IQSADVLVKTL  239
+              S + +    
+Sbjct  236  RLSVEKVPSFF  246
+
+
+>sp|A4ITP5|CHDC_GEOTN Coproheme decarboxylase OS=Geobacillus thermodenitrificans 
+(strain NG80-2) OX=420246 GN=chdC PE=3 SV=2
+Length=248
+
+ Score = 292 bits (747),  Expect = 3e-99, Method: Composition-based stats.
+ Identities = 47/251 (19%), Positives = 88/251 (35%), Gaps = 17/251 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M++ A+ L   G +       +    +  LP  ER+AA  E   ++DK +      +   
+Sbjct  1    MSEAAQTLD--GWYCLHDFRTIDWSAWKMLPNEERQAAIDEFLALVDKWETTESEQQGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D L  +    +            TKL  Y     + V + +  NY++ 
+Sbjct  59   AIYTIVG--QKADILFMILRPTLDELHEIETALNKTKLAEYLLPAYSYVSVVELSNYLAS  116
+
+Query  115  DKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTL  168
+                               P+  Y+   P+ K    D  W+ +S EQR + +  H     
+Sbjct  117  GNEDPYQIPEVRRRLYPILPKTNYICFYPMDKRRQGDDNWYMLSMEQRRELMRAHGMTGR  176
+
+Query  169  QYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGT  228
+            +Y   V + +  S GL D ++     + D   F  L+  +     +     +G+   +G 
+Sbjct  177  KYAGKVTQIITGSVGLDDFEWGVTLFSDDALQFKKLVYEMRFDEVSARFGEFGS-FFVGN  235
+
+Query  229  IQSADVLVKTL  239
+              +A+ +    
+Sbjct  236  RLAAENVPTFF  246
+
+
+>sp|Q47CX0|CLD_DECAR Chlorite dismutase OS=Dechloromonas aromatica 
+(strain RCB) OX=159087 GN=Daro_2580 PE=1 SV=1
+Length=282
+
+ Score = 293 bits (749),  Expect = 5e-99, Method: Composition-based stats.
+ Identities = 154/238 (65%), Positives = 189/238 (79%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            +R  +LT PGVFG F+ +K+R D+ K+P AERK AA E + +I+KHKD V+VD YLTRGL
+Sbjct  44   ERGTILTQPGVFGVFTMFKLRPDWNKVPVAERKGAAEEVKKLIEKHKDNVLVDLYLTRGL  103
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+               SD+  R+++ D+A  Q F+ ++R+T +G  +DV E LVG+TK LNYISKDKSP LNA
+Sbjct  104  ETNSDFFFRINAYDLAKAQTFMREFRSTTVGKNADVFETLVGVTKPLNYISKDKSPGLNA  163
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLSSATYS  APRYVIVIPVKK+A WWNMS E+RLKE+EVHT PTL YLVNVKRKLYHST
+Sbjct  164  GLSSATYSGPAPRYVIVIPVKKNAEWWNMSPEERLKEMEVHTTPTLAYLVNVKRKLYHST  223
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LA+V EN  HVRWG+PT LGTI S + ++K L+
+Sbjct  224  GLDDTDFITYFETDDLTAFNNLMLSLAQVKENKFHVRWGSPTTLGTIHSPEDVIKALA  281
+
+
+>sp|C5D9S7|CHDC_GEOSW Coproheme decarboxylase OS=Geobacillus sp. 
+(strain WCH70) OX=471223 GN=chdC PE=3 SV=1
+Length=248
+
+ Score = 291 bits (745),  Expect = 5e-99, Method: Composition-based stats.
+ Identities = 41/251 (16%), Positives = 89/251 (35%), Gaps = 17/251 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M++ A+ L   G +       +    +  L + ER+AA  E   +++K ++     +   
+Sbjct  1    MSEAAQTLD--GWYCLHDFRSIDWSAWKTLTSDEREAAIREFLSLVEKWQETEDKQEGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +  +    +            TKL  +     + V + +  NY++ 
+Sbjct  59   AIYTIVG--QKADIMFMILRPTIEELNEIETALNKTKLAEFLVPAYSYVSVVELSNYLAS  116
+
+Query  115  DKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTL  168
+                               P+  +V   P+ K    +  W+ +S E+R   +  H     
+Sbjct  117  GDEDPYQIPEVRRRLYPILPKTKHVCFYPMDKRRQGNDNWYMLSMEERRNLMRAHGLTGR  176
+
+Query  169  QYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGT  228
+            +Y   V + +  S GL D ++     + D   F  L+  +     +  +  +G+   +G 
+Sbjct  177  KYAGKVTQIITGSVGLDDFEWGVTLFSDDALQFKKLVYEMRFDEVSARYGEFGS-FFVGN  235
+
+Query  229  IQSADVLVKTL  239
+              + + +   L
+Sbjct  236  RLTVEKVPVFL  246
+
+
+>sp|Q5WB17|CHDC_BACSK Coproheme decarboxylase OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 290 bits (742),  Expect = 2e-98, Method: Composition-based stats.
+ Identities = 44/252 (17%), Positives = 89/252 (35%), Gaps = 18/252 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M + AK L   G +      K+    +  + A+ER+    E + ++ K +      K   
+Sbjct  1    MNEAAKTLD--GWYVLHDFRKIDWNSWKTVSASEREQMLNEFEALVSKWEGTEKAGKGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D ++ +    M         +  + L  Y   T + V + +  NY++ 
+Sbjct  59   ALYSIVG--QKADIMIMLLRPTMEELNEIENAFNKSGLAAYMIPTYSYVSVVELSNYLAG  116
+
+Query  115  D-KSPDLNAGLSSATYSDSAPRY--VIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            D            +      PR+  V   P+ K    +  W+ +  E+R   +  H    
+Sbjct  117  DSDEDPYENPYVRSRLYPELPRWKHVCFYPMDKRREGNDNWYMLPMEERKNLMRSHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+              Y   VK+ +  S G  D ++     + D+  F  L+  +     +  +  +G+   +G
+Sbjct  177  RGYAGVVKQIISGSVGFDDWEWGVTLFSDDVLQFKKLVYEMRFDEVSARYGEFGS-FYVG  235
+
+Query  228  TIQSADVLVKTL  239
+             I   + +    
+Sbjct  236  NILEKERIPAYF  247
+
+
+>sp|Q9K6A4|CHDC_BACHD Coproheme decarboxylase OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 
+/ C-125) OX=272558 GN=chdC PE=3 SV=2
+Length=249
+
+ Score = 287 bits (734),  Expect = 3e-97, Method: Composition-based stats.
+ Identities = 42/252 (17%), Positives = 89/252 (35%), Gaps = 18/252 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKHKD-----KVIV  54
+            M + AK L   G +       +   +   L   ER+    E   +++K  D     +   
+Sbjct  1    MNEAAKTLD--GWYCLHDFRTINWAELKTLSTEERQQIINEFLDLMEKWNDTEAQGEGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D +L +    M         +  ++   ++    + V + +  NY++ 
+Sbjct  59   AVYTIVG--QKADVMLMILRPSMEELNEIETAFNKSRFAEFTVPAYSYVSVVELSNYMAG  116
+
+Query  115  D-KSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            D            A      P+  +V   P+ K    D  W+ +  +QR + ++ H    
+Sbjct  117  DSDDDPYQNPHVRARLYPQLPKAKHVCFYPMDKRRQGDDNWYMLPMDQRRELMKSHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+              Y   VK+ +  S G  D ++       D+  F  L+  +     +  +  +G+   +G
+Sbjct  177  RSYAGKVKQIITGSVGFDDWEWGVTLFADDVLQFKKLVYEMRFDEVSARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTL  239
+             + +A+ +    
+Sbjct  236  NLLTAEGIPSYF  247
+
+
+>sp|Q9F437|CLD_IDEDE Chlorite dismutase OS=Ideonella dechloratans 
+OX=36863 GN=cld PE=1 SV=1
+Length=285
+
+ Score = 286 bits (733),  Expect = 1e-96, Method: Composition-based stats.
+ Identities = 174/238 (73%), Positives = 198/238 (83%), Gaps = 0/238 (0%)
+
+Query  3    DRAKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGL  62
+            DRAK+L+ PGVF  FSTYK+R DY K+  AERK AA E   V++KHK+KVIVD YLTRG 
+Sbjct  45   DRAKILSAPGVFVAFSTYKIRPDYFKVALAERKGAADEVMAVLEKHKEKVIVDAYLTRGY  104
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+             A SDY LRVH+ D  A QAFLVD+RAT+ GMYSDVTE+LVGITKALNYISKDKSPDLN 
+Sbjct  105  EAKSDYFLRVHAYDAVAAQAFLVDFRATRFGMYSDVTESLVGITKALNYISKDKSPDLNK  164
+
+Query  123  GLSSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHST  182
+            GLS ATY+  APR+  +IPVKK+A WWN++DEQRLKE+E HT PTL +LVNVKRKLYHST
+Sbjct  165  GLSGATYAGDAPRFAFMIPVKKNADWWNLTDEQRLKEMETHTLPTLPFLVNVKRKLYHST  224
+
+Query  183  GLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+            GL D DFITYFET DL AFNNL+++LAKVPEN +HVRWGNPTVLGTIQ  + LVKTLS
+Sbjct  225  GLDDTDFITYFETNDLGAFNNLMLSLAKVPENKYHVRWGNPTVLGTIQPIENLVKTLS  282
+
+
+>sp|Q6GJ81|CHDC_STAAR Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 280 bits (717),  Expect = 1e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRLVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFNQFFA  248
+
+
+>sp|Q4L3R3|CHDC_STAHJ Coproheme decarboxylase OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 280 bits (717),  Expect = 1e-94, Method: Composition-based stats.
+ Identities = 47/251 (19%), Positives = 90/251 (36%), Gaps = 14/251 (6%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKH---KDKVIVDT  56
+            M++ A+ L   G +     Y V    +  +P  ER+A   E +  I+     +++   D 
+Sbjct  1    MSEAAETLD--GWYSLHLFYAVDWATFRLVPEDEREAMINEFKTFINDKASAREQQAGDY  58
+
+Query  57   YLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-KD  115
+             L    G  +D LL     +M        +    ++  +   T + V + +  NY++ K 
+Sbjct  59   ALYNITGQKADILLWYLRPEMKELNEIENELNKLRIADFFIQTYSYVSVIELGNYLAGKS  118
+
+Query  116  KSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQ  169
+                       A      PR  Y+   P+ K       W+ +  E+R K +  H     Q
+Sbjct  119  DEDPYQNPHVRARLYPELPRTEYICFYPMDKRRNETYNWYMLPMEERKKLMYNHGMIGRQ  178
+
+Query  170  YLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTI  229
+            Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G    +G I
+Sbjct  179  YAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGG-FYIGHI  237
+
+Query  230  QSADVLVKTLS  240
+               D      +
+Sbjct  238  LKTDDFEHFFA  248
+
+
+>sp|A8YZT4|CHDC_STAAT Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 279 bits (714),  Expect = 3e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|A6QEP0|CHDC_STAAE Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 279 bits (714),  Expect = 3e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|Q5HI89|CHDC_STAAC Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 279 bits (714),  Expect = 3e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|Q2G0J1|CHDC_STAA8 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 279 bits (714),  Expect = 3e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|Q2FJ56|CHDC_STAA3 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 279 bits (714),  Expect = 3e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|Q8NXW5|CHDC_STAAW Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 278 bits (712),  Expect = 8e-94, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRLVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|Q6GBP9|CHDC_STAAS Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 278 bits (712),  Expect = 8e-94, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRLVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|Q2YS77|CHDC_STAAB Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain bovine RF122 / ET3-1) OX=273036 GN=chdC PE=3 
+SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 8e-94, Method: Composition-based stats.
+ Identities = 43/253 (17%), Positives = 88/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V        P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRLAPKDERDALVTELQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  +
+Sbjct  236  HIINTNEFDQFFA  248
+
+
+>sp|Q49VE0|CHDC_STAS1 Coproheme decarboxylase OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 / DSM 
+20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=chdC PE=3 
+SV=1
+Length=249
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 47/253 (19%), Positives = 88/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHKDK-----VIV  54
+            M    + L   G +     Y +       +P  ER+    E Q  ++KH++         
+Sbjct  1    MPQAPETLD--GWYSLHLLYAIDWSSLRLVPTEERQTIVDELQTFLNKHEEARTNHVGDH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M    AF  ++   K+  +   T + V I +  NY++ 
+Sbjct  59   AFYNITG--QKADILLWALRPEMKDLNAFENEFNKLKIADFLIPTYSYVSIIELGNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K                   P   Y+   P+ K       W+ +  E+R + +  H +  
+Sbjct  117  KSDEDPYENPHIKPRLFPELPQSEYICFYPMDKRRNETYNWYMLPLEKRQELMYAHGKIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             QY   +K+ +  S G  D ++       D   F  ++  +        +  +G+   +G
+Sbjct  177  RQYAGKIKQFITGSVGFDDFEWGVTLFADDPLQFKKIVYEMRFDETTARYGDFGS-FYVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + D L    +
+Sbjct  236  HIVTKDNLQDLFA  248
+
+
+>sp|Q7A759|CHDC_STAAN Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=chdC PE=1 SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|Q99W24|CHDC_STAAM Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=chdC PE=3 
+SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|A5IQE1|CHDC_STAA9 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|A6TZ65|CHDC_STAA2 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|A7WZ30|CHDC_STAA1 Coproheme decarboxylase OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=chdC PE=3 SV=1
+Length=250
+
+ Score = 278 bits (711),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 89/253 (35%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M+  A+ L   G +     Y V       +P  ER A   E Q  ++     +       
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWASLRIVPKDERDALVTEFQSFLENTATVRSSKSGDQ  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M +      ++   ++  +   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKSLNHIENEFNKLRIADFLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ ++ E+R K +  H    
+Sbjct  117  KSDEDPYENPHIKARLYPELPHSDYICFYPMNKRRNETYNWYMLTMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDFEWGVTLFSDDVLQFKKIVYEMRFDETTARYGEFGS-FFVG  235
+
+Query  228  TIQSADVLVKTLS  240
+             + + +   +  +
+Sbjct  236  HLINTNEFDQFFA  248
+
+
+>sp|Q8CTQ2|CHDC_STAES Coproheme decarboxylase OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 277 bits (709),  Expect = 2e-93, Method: Composition-based stats.
+ Identities = 42/253 (17%), Positives = 87/253 (34%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M++ A+ L   G +     Y V    +  +   +R+A   E +  I      +   +   
+Sbjct  1    MSEAAETLD--GWYSLHLFYAVDWTTFRLIAEDDREAMITELETFIKDKTVARESHQGDH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M        ++   ++  Y   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKELNQIENEFNKLRIADYLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ +  E R   +  H    
+Sbjct  117  KSDEDPYENPHVKARLYPELPHSEYICFYPMDKRRNETYNWYMLPIEDRKTLMYNHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDYEWGVTLFSNDVLQFKKIVYEMRFDETTARYGEFGS-FYIG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  S
+Sbjct  236  HILNIEDFKQFFS  248
+
+
+>sp|Q5HRF8|CHDC_STAEQ Coproheme decarboxylase OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 276 bits (707),  Expect = 3e-93, Method: Composition-based stats.
+ Identities = 41/253 (16%), Positives = 87/253 (34%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVID-----KHKDKVIV  54
+            M++ A+ L   G +     Y V    +  +   +R+A   E +  +      +   +   
+Sbjct  1    MSEAAETLD--GWYSLHLFYAVDWTTFRLIAEDDREAMITELETFVKDKAVARESHQGDH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL     +M        ++   ++  Y   T + V + +  NY++ 
+Sbjct  59   AIYNITG--QKADLLLWFLRPEMKELNQIENEFNKLRIADYLIPTYSYVSVIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ +  E R   +  H    
+Sbjct  117  KSDEDPYENPHVKARLYPELPHSEYICFYPMDKRRNETYNWYMLPIEDRKTLMYNHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++     + D+  F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDYEWGVTLFSNDVLQFKKIVYEMRFDETTARYGEFGS-FYIG  235
+
+Query  228  TIQSADVLVKTLS  240
+             I + +   +  S
+Sbjct  236  HILNIEDFKQFFS  248
+
+
+>sp|B9DKR5|CHDC_STACT Coproheme decarboxylase OS=Staphylococcus 
+carnosus (strain TM300) OX=396513 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 276 bits (706),  Expect = 5e-93, Method: Composition-based stats.
+ Identities = 46/252 (18%), Positives = 83/252 (33%), Gaps = 18/252 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVR-ADYMKLPAAERKAAAAEAQMVIDK-----HKDKVIV  54
+            M+  A+ L   G +     Y V       +P  +R     E    +DK            
+Sbjct  1    MSQAAETLD--GWYSLHLFYAVDWPTLRLVPDEDRIQIVQEFHDFLDKLASVRDDHNGDH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYIS-  113
+              Y   G    +D LL V   +M    +  +     ++  Y   T + V I +  NY++ 
+Sbjct  59   ALYNITG--QKADILLWVLRPEMQELNSIELALNKLRIADYLVPTYSYVSIIELSNYLAG  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPT  167
+            K            A      P   Y+   P+ K       W+ +S E+R K +  H    
+Sbjct  117  KSDEDPYENPHVKARLYPELPHSDYICFYPMNKRRNETYNWYMLSMEERQKLMYDHGMIG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   +K+ +  S G  D ++       D   F  ++  +        +  +G+   +G
+Sbjct  177  RKYAGKIKQFITGSVGFDDYEWGVTLFAQDPLQFKKIVYEMRFDETTARYGDFGS-FFVG  235
+
+Query  228  TIQSADVLVKTL  239
+             +   + L    
+Sbjct  236  HVLPEETLETFF  247
+
+
+>sp|Q929Q6|CHDC_LISIN Coproheme decarboxylase OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=chdC PE=3 SV=1
+Length=251
+
+ Score = 257 bits (657),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 40/255 (16%), Positives = 88/255 (35%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L    ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPGNQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                 + P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R K I  H  
+Sbjct  117  HMAGGEDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQKLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLPSENLSKLFT  250
+
+
+>sp|A0AKL8|CHDC_LISW6 Coproheme decarboxylase OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=chdC PE=3 SV=1
+Length=251
+
+ Score = 256 bits (655),  Expect = 3e-85, Method: Composition-based stats.
+ Identities = 40/255 (16%), Positives = 89/255 (35%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L  A ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPANQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                 + P  N G+ +  Y    P+ ++   P+ K       W+ +  ++R K I  H  
+Sbjct  117  HMAGGEDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMDERQKLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLPSENLSKLFT  250
+
+
+>sp|Q71XQ0|CHDC_LISMF Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4b (strain F2365) OX=265669 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 256 bits (653),  Expect = 7e-85, Method: Composition-based stats.
+ Identities = 39/255 (15%), Positives = 88/255 (35%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L    ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPGNQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                 + P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H  
+Sbjct  117  HMAGGEDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLPSEQLSKLFT  250
+
+
+>sp|C1KX66|CHDC_LISMC Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4b (strain CLIP80459) OX=568819 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 256 bits (653),  Expect = 7e-85, Method: Composition-based stats.
+ Identities = 39/255 (15%), Positives = 88/255 (35%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L    ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPGNQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                 + P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H  
+Sbjct  117  HMAGGEDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLPSEQLSKLFT  250
+
+
+>sp|B8DH02|CHDC_LISMH Coproheme decarboxylase OS=Listeria monocytogenes 
+serotype 4a (strain HCC23) OX=552536 GN=chdC PE=3 
+SV=1
+Length=251
+
+ Score = 253 bits (645),  Expect = 1e-83, Method: Composition-based stats.
+ Identities = 39/255 (15%), Positives = 88/255 (35%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L    ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPGNQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                 + P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H  
+Sbjct  117  HMAGGEDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLLSEQLSKLFT  250
+
+
+>sp|Q8Y5F1|CHDC_LISMO Coproheme decarboxylase OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=chdC PE=1 SV=1
+Length=251
+
+ Score = 252 bits (644),  Expect = 1e-83, Method: Composition-based stats.
+ Identities = 39/255 (15%), Positives = 87/255 (34%), Gaps = 20/255 (8%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M +  K L   G F       +    + +L    ++    E    +   +      +   
+Sbjct  1    MNEAVKTLD--GWFCLHDFRSIDWAAWRELNPGNQELMLNELSHFLSDMEITKNIGEGEH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y    LG  +D +       + A       +    +  Y   T + + + +  NY++ 
+Sbjct  59   TIYSI--LGQKADLVFFTLRDSLEALNEVENRFNKLAIADYLLPTYSYISVVELSNYLAS  116
+
+Query  115  D----KSPDLNAGLSSATYSDSAPR-YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQ  165
+                   P  N G+ +  Y    P+ ++   P+ K       W+ +  E+R + I  H  
+Sbjct  117  HMAGGDDPYQNKGVRARLYPALPPKKHICFYPMSKKRDGADNWYMLPMEERQQLIRDHGL  176
+
+Query  166  PTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTV  225
+                Y   V++ +  S G  D ++     + D   F  ++  +     +  +  +G+   
+Sbjct  177  IGRSYAGKVQQIIGGSIGFDDYEWGVTLFSDDALEFKRIVTEMRFDEASARYAEFGS-FF  235
+
+Query  226  LGTIQSADVLVKTLS  240
+            +G +  ++ L K  +
+Sbjct  236  IGNLLLSEQLSKLFT  250
+
+
+>sp|Q8EM37|CHDC_OCEIH Coproheme decarboxylase OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=chdC PE=3 SV=1
+Length=249
+
+ Score = 250 bits (639),  Expect = 8e-83, Method: Composition-based stats.
+ Identities = 44/253 (17%), Positives = 87/253 (34%), Gaps = 18/253 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRA-DYMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            MA+   ++T  G      T +     +  +   ER+AA  E Q +I K +      +   
+Sbjct  1    MAEA--VVTVDGWSALHDTRQFDWTSWKLISKEERQAAIDEFQQLISKWEAVEEEKQGSH  58
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITK-ALNYIS  113
+              Y   G    +D++           +    +   TKLG +     + V I +  ++   
+Sbjct  59   GIYKVVG--NKADFMFIFLRESFQELEQIKTEINKTKLGDFLIPGYSYVSIIEKTMHDPM  116
+
+Query  114  KDKSPDLNAGLSSATYSDSAPRY--VIVIPVKKDA----AWWNMSDEQRLKEIEVHTQPT  167
+            K       +         + P++      P+ +       W+ +  E+R K +  H    
+Sbjct  117  KAGEDRELSAYVKEALKPTMPKWEHACFYPMARRRDPGVNWFEIEKEERTKLLYEHGMTG  176
+
+Query  168  LQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLG  227
+             +Y   VK  +  S GL + ++       D   F  ++  +      T +  +G   ++G
+Sbjct  177  RKYAGKVKEIITGSIGLDEWEWGVTLFAHDPLQFKKIVYEMRFDEVTTKYAEFG-DFIVG  235
+
+Query  228  TIQSADVLVKTLS  240
+                 + L   LS
+Sbjct  236  NFLEKEELSNHLS  248
+
+
+>sp|Q18DR5|Y1094_HALWD Putative heme-binding protein HQ_1094A 
+OS=Haloquadratum walsbyi (strain DSM 16790 / HBSQ001) OX=362976 
+GN=HQ_1094A PE=3 SV=1
+Length=531
+
+ Score = 252 bits (643),  Expect = 8e-80, Method: Composition-based stats.
+ Identities = 40/249 (16%), Positives = 84/249 (34%), Gaps = 17/249 (7%)
+
+Query  9    TTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK---DKVIVDTYLTRGLGA  64
+            T  G F       V  D + + P   R+AA  +    + KH+   D     + +   LG 
+Sbjct  7    TDEGWFVLHDFRTVDWDAWREAPTHRREAAVGDGVEYLRKHESIADAEEGSSAVFSVLGH  66
+
+Query  65   GSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYI------SKDKSP  118
+             +D L+      + A       +  T    ++    + V + +   Y       + D + 
+Sbjct  67   KADILITHFRPTLDALSRAERQFEQTTFAGFTTQPTSYVSVAEISGYTTPGYFENPDAAD  126
+
+Query  119  DLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVHTQPTLQYLV  172
+            +          +   P   Y    P+ K       W+++  ++R + +E H +   +Y  
+Sbjct  127  EGLRQYMQGKLTPEIPNKDYAGFYPMSKRRGETYNWYDLPIDERAEMMEAHAETGKEYAG  186
+
+Query  173  NVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+             +K+ +  S G  D ++       D     +++  +     +  +  +G    +G     
+Sbjct  187  KIKQVIASSVGFDDYEWGVTLFADDPTDIKDIVYEMRFDEVSAKYGEFGT-FYIGQRFPP  245
+
+Query  233  DVLVKTLSG  241
+              L   L G
+Sbjct  246  ADLGALLEG  254
+
+
+>sp|Q9HNN4|Y2021_HALSA Putative heme-binding protein VNG_2021C 
+OS=Halobacterium salinarum (strain ATCC 700922 / JCM 11081 
+/ NRC-1) OX=64091 GN=VNG_2021C PE=3 SV=1
+Length=492
+
+ Score = 251 bits (640),  Expect = 8e-80, Method: Composition-based stats.
+ Identities = 46/251 (18%), Positives = 86/251 (34%), Gaps = 21/251 (8%)
+
+Query  9    TTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIVDTYLTRGL  62
+            T  G F     Y V  D +   P  +R AA  +A   +   +     D+     +   G 
+Sbjct  7    TDEGWFVLHDCYTVDWDAWRDAPERDRTAALDDAASFLADREALADADEGESGVFSITG-  65
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKD---KSPD  119
+               +D L       +         +  T    Y++   + V + +   Y + D       
+Sbjct  66   -QKADLLFVHFRESLDELDRIQRAFEQTAFAEYTERAHSYVSVVEISGYTAPDYFEDPDS  124
+
+Query  120  LNAGLSSATYSDSAPR-----YVIVIPVKKDA----AWWNMSDEQRLKEIEVHTQPTLQY  170
+            ++ GL     S   P      YV   P+ K       W+++  E+R + ++VH     QY
+Sbjct  125  VDDGLRQYFESKLTPEIPDDTYVSFYPMSKRRQPEQNWYDLPIEERAEMMDVHGDLGKQY  184
+
+Query  171  LVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQ  230
+               V + +  S GL D ++       DL    +++  +     +  +  +G    +G   
+Sbjct  185  AGKVSQVIASSVGLDDMEWGVTLFADDLTDIKDIVYEMRFDEVSAKYGAFG-DFFVGRRF  243
+
+Query  231  SADVLVKTLSG  241
+                L   ++G
+Sbjct  244  PPADLPAFMAG  254
+
+
+>sp|Q3IRM1|Y2262_NATPD Putative heme-binding protein NP_2262A 
+OS=Natronomonas pharaonis (strain ATCC 35678 / DSM 2160 / CIP 
+103997 / NBRC 14720 / NCIMB 2260 / Gabara) OX=348780 GN=hemQ 
+PE=3 SV=1
+Length=600
+
+ Score = 249 bits (635),  Expect = 5e-78, Method: Composition-based stats.
+ Identities = 43/258 (17%), Positives = 87/258 (34%), Gaps = 18/258 (7%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKH---KDKVIVDT  56
+            M  R    T  G +       +  D +   P  ER+ A       +  H   KD     +
+Sbjct  1    MPQRQPPGTEEGWYILHDFRSIDWDAWRDAPDRERERALETGTDYLQAHVDLKDAEEGAS  60
+
+Query  57   YLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK--  114
+             +   LG  +D+++      +         + +T L  +++ + + V +T+   Y+ +  
+Sbjct  61   AVFSILGHKADFMVLHLRPTLDHLDHAERRFESTALAEFTEQSSSYVSVTEVSGYMHEEL  120
+
+Query  115  -----DKSPDLNAGLSSATYSDSAPR--YVIVIPVKK----DAAWWNMSDEQRLKEIEVH  163
+                 D   +              P   +V   P+ K    D  W+++  ++R + +  H
+Sbjct  121  TDGLDDLEDEGMRNYMKQRIYPELPDADHVCFYPMSKRRGPDHNWYDLPFDERREYMSNH  180
+
+Query  164  TQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNP  223
+                 QY   V + +  S G  D ++       D     +LL  +   P ++    +G P
+Sbjct  181  GDVGRQYADKVSQIIAGSIGFDDYEWGITLFADDPTDIKDLLYEMRFDPSSSKFAEFG-P  239
+
+Query  224  TVLGTIQSADVLVKTLSG  241
+              +G       L    + 
+Sbjct  240  FYIGQQFEPSELSSLFAA  257
+
+
+>sp|Q5SHL6|CHDC_THET8 Coproheme decarboxylase OS=Thermus thermophilus 
+(strain HB8 / ATCC 27634 / DSM 579) OX=300852 GN=chdC 
+PE=1 SV=1
+Length=249
+
+ Score = 236 bits (602),  Expect = 3e-77, Method: Composition-based stats.
+ Identities = 35/243 (14%), Positives = 80/243 (33%), Gaps = 18/243 (7%)
+
+Query  9    TTPGVFGNFSTYKVR-ADYMKLPAAERKAAAAEAQMVIDKHKD-----KVIVDTYLTRGL  62
+            T  G         +  A +   P   R+ A  E + ++ + ++     +     Y   G 
+Sbjct  11   TLEGWHVLHDFRLLDFARWFSAPLEAREDAWEELKGLVREWRELEEAGQGSYGIYQVVGH  70
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+               +D L       +            +    Y   + +   + +     S++K  D  +
+Sbjct  71   --KADLLFLNLRPGLDPLLEAEARLSRSAFARYLGRSYSFYSVVELG---SQEKPLDPES  125
+
+Query  123  GLSSATYSDSAPR--YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQPTLQYLVNVKR  176
+                   +   P+  YV   P+ K       W+ +  ++R   ++ H +   +Y   V +
+Sbjct  126  PYVKPRLTPRVPKSGYVCFYPMNKRRQGQDNWYMLPAKERASLMKAHGETGRKYQGKVMQ  185
+
+Query  177  KLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLV  236
+             +  + GL D ++     + D   F  ++  +     +  +  +G P  +G     + L 
+Sbjct  186  VISGAQGLDDWEWGVDLFSEDPVQFKKIVYEMRFDEVSARYGEFG-PFFVGKYLDEEALR  244
+
+Query  237  KTL  239
+              L
+Sbjct  245  AFL  247
+
+
+>sp|Q72HY0|CHDC_THET2 Coproheme decarboxylase OS=Thermus thermophilus 
+(strain HB27 / ATCC BAA-163 / DSM 7039) OX=262724 GN=chdC 
+PE=3 SV=1
+Length=249
+
+ Score = 236 bits (602),  Expect = 3e-77, Method: Composition-based stats.
+ Identities = 35/243 (14%), Positives = 80/243 (33%), Gaps = 18/243 (7%)
+
+Query  9    TTPGVFGNFSTYKVR-ADYMKLPAAERKAAAAEAQMVIDKHKD-----KVIVDTYLTRGL  62
+            T  G         +  A +   P   R+ A  E + ++ + ++     +     Y   G 
+Sbjct  11   TLEGWHVLHDFRLLDFARWFSAPLEAREDAWEELKGLVREWRELEEAGQGSYGIYQVVGH  70
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+               +D L       +            +    Y   + +   + +     S++K  D  +
+Sbjct  71   --KADLLFLNLRPGLDPLLEAEARLSRSAFARYLGRSYSFYSVVELG---SQEKPLDPES  125
+
+Query  123  GLSSATYSDSAPR--YVIVIPVKKD----AAWWNMSDEQRLKEIEVHTQPTLQYLVNVKR  176
+                   +   P+  YV   P+ K       W+ +  ++R   ++ H +   +Y   V +
+Sbjct  126  PYVKPRLTPRVPKSGYVCFYPMNKRRQGQDNWYMLPAKERASLMKAHGETGRKYQGKVMQ  185
+
+Query  177  KLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLV  236
+             +  + GL D ++     + D   F  ++  +     +  +  +G P  +G     + L 
+Sbjct  186  VISGAQGLDDWEWGVDLFSEDPVQFKKIVYEMRFDEVSARYGEFG-PFFVGKYLDEEALR  244
+
+Query  237  KTL  239
+              L
+Sbjct  245  AFL  247
+
+
+>sp|Q5UY41|Y3100_HALMA Putative heme-binding protein rrnAC3100 
+OS=Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / JCM 
+8966 / VKM B-1809) OX=272569 GN=rrnAC3100 PE=3 SV=2
+Length=669
+
+ Score = 248 bits (633),  Expect = 4e-77, Method: Composition-based stats.
+ Identities = 50/261 (19%), Positives = 87/261 (33%), Gaps = 23/261 (9%)
+
+Query  1    MADRAKLLTTPGVFGNFSTYKVRAD-YMKLPAAERKAAAAEAQMVIDKHK-----DKVIV  54
+            M  R    T  G +       +  D + + P   R  A +E    +D ++     D+   
+Sbjct  1    MDQRKPPATEEGWYALHDCRSIDWDAWREAPQRVRDRALSEGIGFLDAYEAVEDADEGQT  60
+
+Query  55   DTYLTRGLGAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISK  114
+              Y   G    +D ++      M    A    +  T+   +++   + V +T+A  Y  K
+Sbjct  61   AVYTVMGH--KADIMILHLRPTMGDLDAAERHFEQTEFAAFTEQEFSYVSVTEASGYTEK  118
+
+Query  115  D--------KSPDLNAGLSSATYSDSAP--RYVIVIPVKK----DAAWWNMSDEQRLKEI  160
+                           A    A      P   +V   P+ K    D  W++ S E+R   I
+Sbjct  119  SREYFEGEVDDDSGLAQYIQARLHPDVPDEEFVCFYPMSKRRQPDQNWYDTSFEERAAHI  178
+
+Query  161  EVHTQPTLQYLVNVKRKLYHSTGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRW  220
+            + H      Y   V + +  S G  D ++     + D+     LL  +   P  +    +
+Sbjct  179  KRHGDIGRGYGSEVSQMIAGSIGFDDWEWGITLWSDDMRHIKELLTEMRFDPSTSQFAEF  238
+
+Query  221  GNPTVLGTIQSADVLVKTLSG  241
+            G P  +G       L   L+G
+Sbjct  239  G-PFYVGRKFDPSELPAVLAG  258
+
+
+>sp|A0QW25|CHDC_MYCS2 Coproheme decarboxylase OS=Mycolicibacterium 
+smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 GN=chdC 
+PE=1 SV=1
+Length=231
+
+ Score = 232 bits (591),  Expect = 8e-76, Method: Composition-based stats.
+ Identities = 53/229 (23%), Positives = 94/229 (41%), Gaps = 16/229 (7%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVI--VDTYLTRGLGAGSDYLLR  71
+            +  FS + V    +     +R     EA   + + +DK +     Y   GL A +D+++ 
+Sbjct  15   YLMFSVFAVAPGELG---EDRADVIDEAATFLKQQEDKGVVVRGLYDVAGLRADADFMIW  71
+
+Query  72   VHSTDMAATQAFLVDWRATK-LGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYS  130
+             H+ ++ A Q+   D+R T  LG  SD   + V + +   + +K   P   AG       
+Sbjct  72   THADNVEALQSTYSDFRRTTALGRISDPVWSSVALHRPAEF-NKSHIPAFLAGEEPG---  127
+
+Query  131  DSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFI  190
+                 Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L D ++I
+Sbjct  128  ----NYICVYPFVRSYEWYLLPDEERRRMLSEHGMAARGY-KDVRANTVPAFALGDYEWI  182
+
+Query  191  TYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+              FE  +L    +L+  L +  +   H R   P   G   S + L+  L
+Sbjct  183  LAFEAPELHRIVDLMRDL-RATDARRHTREETPFFTGPRISVENLIAKL  230
+
+
+>sp|P9WL45|CHDC_MYCTU Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=chdC PE=1 
+SV=1
+Length=231
+
+ Score = 229 bits (583),  Expect = 1e-74, Method: Composition-based stats.
+ Identities = 52/235 (22%), Positives = 93/235 (40%), Gaps = 16/235 (7%)
+
+Query  8    LTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVI--VDTYLTRGLGAG  65
+            L     +  FS + V    +     +R A   +A     + +++ +     Y   GL A 
+Sbjct  9    LNATLRYLMFSVFSVSPGALG---DQRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRAD  65
+
+Query  66   SDYLLRVHSTDMAATQAFLVDWRATK-LGMYSDVTENLVGITKALNYISKDKSPDLNAGL  124
+            +D+++  H+  + A QA   D+R T  LG       + VG+ +   + +K   P   AG 
+Sbjct  66   ADFMVWTHAERVEALQATYADFRRTTTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGE  124
+
+Query  125  SSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGL  184
+                       Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L
+Sbjct  125  EPGA-------YICVYPFVRSYEWYLLPDEERRRMLAEHGMAARGY-KDVRANTVPAFAL  176
+
+Query  185  ADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D ++I  FE  +L    +L+  L +  +   H R   P   G     + LV +L
+Sbjct  177  GDYEWILAFEAPELDRIVDLMREL-RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|P9WL44|CHDC_MYCTO Coproheme decarboxylase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=chdC PE=3 
+SV=1
+Length=231
+
+ Score = 229 bits (583),  Expect = 1e-74, Method: Composition-based stats.
+ Identities = 52/235 (22%), Positives = 93/235 (40%), Gaps = 16/235 (7%)
+
+Query  8    LTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVI--VDTYLTRGLGAG  65
+            L     +  FS + V    +     +R A   +A     + +++ +     Y   GL A 
+Sbjct  9    LNATLRYLMFSVFSVSPGALG---DQRDAIIDDASTFFKQQEERGVVVRGLYDVAGLRAD  65
+
+Query  66   SDYLLRVHSTDMAATQAFLVDWRATK-LGMYSDVTENLVGITKALNYISKDKSPDLNAGL  124
+            +D+++  H+  + A QA   D+R T  LG       + VG+ +   + +K   P   AG 
+Sbjct  66   ADFMVWTHAERVEALQATYADFRRTTTLGRACTPVWSGVGLHRPAEF-NKSHIPAFLAGE  124
+
+Query  125  SSATYSDSAPRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGL  184
+                       Y+ V P  +   W+ + DE+R + +  H      Y  +V+     +  L
+Sbjct  125  EPGA-------YICVYPFVRSYEWYLLPDEERRRMLAEHGMAARGY-KDVRANTVPAFAL  176
+
+Query  185  ADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTL  239
+             D ++I  FE  +L    +L+  L +  +   H R   P   G     + LV +L
+Sbjct  177  GDYEWILAFEAPELDRIVDLMREL-RATDARRHTRAETPFFTGPRVPVEQLVHSL  230
+
+
+>sp|O69830|CHDC_STRCO Coproheme decarboxylase OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=chdC 
+PE=3 SV=1
+Length=243
+
+ Score = 226 bits (575),  Expect = 3e-73, Method: Composition-based stats.
+ Identities = 61/239 (26%), Positives = 98/239 (41%), Gaps = 18/239 (8%)
+
+Query  5    AKLLTTPGVFGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDK--HKDKVIVDTYLTRGL  62
+            AK L     +  +S +K++     LP  +R   A E Q + D+   KD  I  TY   GL
+Sbjct  20   AKDLNEVIRYTLWSVFKLK---DTLP-EDRAGYADEVQELFDQLAAKDVTIRGTYDLSGL  75
+
+Query  63   GAGSDYLLRVHSTDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNA  122
+             A +D ++  H+      Q     +R TKLG   +   + + + +   +         N 
+Sbjct  76   RADADLMIWWHAETADQLQEAYNLFRRTKLGRALEPVWSNMALHRPAEF---------NR  126
+
+Query  123  GLSSATYSDSAPR-YVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHS  181
+                A  +D  PR Y+ V P  +   W+ + DE R + +  H +    Y  +V+     S
+Sbjct  127  SHIPAFLADETPRNYISVYPFVRSYDWYLLPDEDRRRMLADHGKMARGY-PDVRANTVAS  185
+
+Query  182  TGLADADFITYFETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSADVLVKTLS  240
+              L D ++I  FE  +L    +L+  L +  E   HVR   P   G  +    LV  L+
+Sbjct  186  FSLGDYEWILAFEADELHRIVDLMRHL-RGSEARRHVREEIPFYTGRRKDIGELVAGLA  243
+
+
+>sp|P0DTW0|CPFCB_CUTAK Coproporphyrin-dependent heme b biosynthesis 
+bifunctional protein OS=Cutibacterium acnes (strain DSM 
+16379 / KPA171202) OX=267747 GN=PPA0308 PE=3 SV=1
+Length=683
+
+ Score = 201 bits (512),  Expect = 3e-59, Method: Composition-based stats.
+ Identities = 47/219 (21%), Positives = 80/219 (37%), Gaps = 12/219 (5%)
+
+Query  14   FGNFSTYKVRADYMKLPAAERKAAAAEAQMVIDKHKDKVIVDTYLTRGLGAGSDYLLRVH  73
+            +  +S ++V A  +     ER+    E                Y   GL A +D L+   
+Sbjct  467  WAMYSVFRV-ATALPAEDDERRRLV-EGSDEWAGQSGVDTRGWYDLSGLRANADLLVWWV  524
+
+Query  74   STDMAATQAFLVDWRATKLGMYSDVTENLVGITKALNYISKDKSPDLNAGLSSATYSDSA  133
+            S D A  Q     +RA+ LG + +   + VG+ +   + +K   P   AG++        
+Sbjct  525  SDDPAVLQDAYHRFRASGLGRHLEPVWSNVGVHRPAEF-NKSHLPSCFAGIAPR------  577
+
+Query  134  PRYVIVIPVKKDAAWWNMSDEQRLKEIEVHTQPTLQYLVNVKRKLYHSTGLADADFITYF  193
+             R+    P  +   W+ +    R + +  H         +VK     +  L D ++I   
+Sbjct  578  -RWAAFYPFIRSKEWYLLPAADRSRMLREHGIVGAA-SSDVKASTLAAFALGDYEWILAL  635
+
+Query  194  ETADLAAFNNLLIALAKVPENTHHVRWGNPTVLGTIQSA  232
+            E  DLA   +++  L  V E   +V    P   G   S 
+Sbjct  636  EGDDLARIVDVMKDLRYV-EARRYVDVDTPFFTGERVSP  673
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17531668772
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

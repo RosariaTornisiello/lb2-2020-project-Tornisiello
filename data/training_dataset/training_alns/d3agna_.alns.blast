@@ -1,0 +1,958 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3agna_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena OX=5...  234     2e-80
+sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago ...  66.2    3e-14
+sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotu...  61.6    2e-12
+sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicilli...  53.9    2e-09
+sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergill...  53.5    5e-09
+sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease A...  53.1    6e-09
+sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergill...  51.6    1e-08
+sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberell...  48.1    5e-07
+sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicill...  46.6    1e-06
+sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease F...  44.7    7e-06
+sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergill...  44.7    1e-05
+sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergil...  43.9    1e-05
+sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospor...  43.5    4e-05
+
+
+>sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena 
+OX=5271 GN=RNU2 PE=1 SV=4
+Length=114
+
+ Score = 234 bits (597),  Expect = 2e-80, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+            CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW
+Sbjct  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+
+Query  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS
+Sbjct  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+
+
+>sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago 
+sphaerogena OX=5271 PE=1 SV=2
+Length=105
+
+ Score = 66.2 bits (160),  Expect = 3e-14, Method: Compositional matrix adjust.
+ Identities = 43/109 (39%), Positives = 57/109 (52%), Gaps = 9/109 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            S NCGG  YS+  +N AI  A     +      YPH Y +    D +  C  GP+ E+PL
+Sbjct  5    SVNCGGTYYSSTQVNRAINNAKSGQYS---STGYPHTYNNYEGFDFSDYC-DGPYKEYPL  60
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+              +   Y+      SPG DRV+Y +N G FC  +THTGA+  + F QCS
+Sbjct  61   KTSSSGYTGG----SPGADRVVYDSNDGTFCGAITHTGASG-NNFVQCS  104
+
+
+>sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotus 
+ostreatus OX=5322 PE=1 SV=1
+Length=101
+
+ Score = 61.6 bits (148),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 45/109 (41%), Positives = 59/109 (54%), Gaps = 14/109 (13%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFP  64
+            +S NC G  ++  D+  AI+ A    A G    NYPH Y +   E  +  C +  + EFP
+Sbjct  5    RSCNCAGRSFTGTDVTNAIRSAR---AGGS--GNYPHVYNNF--EGFSFSC-TPTFFEFP  56
+
+Query  65   LVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+             V+ G  YS      SPG DRVIY   +G FCA +THTGA S +GF +C
+Sbjct  57   -VFRGSVYSGG----SPGADRVIYD-QSGRFCACLTHTGAPSTNGFVEC  99
+
+
+>sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicillium 
+chrysogenum OX=5076 PE=1 SV=1
+Length=102
+
+ Score = 53.9 bits (128),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 35/108 (32%), Positives = 54/108 (50%), Gaps = 9/108 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            +  CG   Y++  I+ A +   D  +  D   NYPH+Y +    D  +   SG + EFP+
+Sbjct  3    AATCGSVCYTSSAISAAQEAGYDLYSANDDVSNYPHEYRNYEGFDFPV---SGTYYEFPI  59
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + +G  YS      SPG DRV++  N  +    +THTGA+  + F  C
+Sbjct  60   LRSGAVYSGN----SPGADRVVFNGND-QLAGVITHTGASG-NNFVAC  101
+
+
+>sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=rntA 
+PE=1 SV=2
+Length=130
+
+ Score = 53.5 bits (127),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 35/108 (32%), Positives = 59/108 (55%), Gaps = 11/108 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDR--PDNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG N YS+ D++TA         +G+    ++YPH+Y +    D ++   S P+ E+P++
+Sbjct  32   CGSNCYSSSDVSTAQAAGYQLHEDGETVGSNSYPHKYNNYEGFDFSV---SSPYYEWPIL  88
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+             +G  YS      SPG DRV++  N  +    +THTGA+  + F +C+
+Sbjct  89   SSGDVYSGG----SPGADRVVFNENN-QLAGVITHTGASG-NNFVECT  130
+
+
+>sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease 
+ARB_00194 OS=Arthroderma benhamiae (strain ATCC MYA-4681 
+/ CBS 112371) OX=663331 GN=ARB_00194 PE=1 SV=1
+Length=129
+
+ Score = 53.1 bits (126),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 44/111 (40%), Positives = 52/111 (47%), Gaps = 11/111 (10%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A + V +G       YPHQY +   E       SGP+ EF
+Sbjct  25   ATTCGSTSYSASQVTAASNAACNYVQSGTTAGGSTYPHQYRNY--EGFYFQGLSGPFYEF  82
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            PL  +G Y     N  SPG DRVI   N  E    +THTG AS  GF  CS
+Sbjct  83   PLRTSGVY-----NGGSPGADRVIITGNCDE-AGQITHTG-ASGSGFVACS  126
+
+
+>sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergillus 
+phoenicis OX=5063 PE=1 SV=2
+Length=105
+
+ Score = 51.6 bits (122),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 36/107 (34%), Positives = 53/107 (50%), Gaps = 9/107 (8%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPLVY  67
+             CG   Y + D++ A         +GD  D+YPH Y+D    D  +   SG + E+P++ 
+Sbjct  6    TCGSTCYWSSDVSAAKAKGYSLYESGDTIDDYPHGYHDYEGFDFPV---SGTYYEYPIMS  62
+
+Query  68   NGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            +   Y+      SPG DRVI+  +  E    +THTGA+  D F  CS
+Sbjct  63   DYDVYTGG----SPGADRVIFNGDD-ELAGVITHTGASG-DDFVACS  103
+
+
+>sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberella 
+fujikuroi OX=5127 PE=1 SV=4
+Length=131
+
+ Score = 48.1 bits (113),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 39/111 (35%), Positives = 49/111 (44%), Gaps = 12/111 (11%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A     N D      YPH Y +    D  +    GP+ EF
+Sbjct  28   ATTCGSTNYSASQVRAAANAACQYYQNDDTAGSSTYPHTYNNYEGFDFPV---DGPYQEF  84
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            P+   G Y        SPG DRV+  TN  E+   +THTG AS + F  CS
+Sbjct  85   PIKSGGVYTGG-----SPGADRVVINTNC-EYAGAITHTG-ASGNNFVGCS  128
+
+
+>sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicillium 
+brevicompactum OX=5074 PE=1 SV=1
+Length=102
+
+ Score = 46.6 bits (109),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 29/81 (36%), Positives = 44/81 (54%), Gaps = 9/81 (11%)
+
+Query  34   DRPDNYPHQYYDEASEDITLCCGSGPWSEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTG  93
+            D   NYPH+Y++    D  +   SG + EFP++ +G  Y+      SPG DRVI+  +  
+Sbjct  31   DDVSNYPHEYHNYEGFDFPV---SGTYYEFPILKSGKVYTGS----SPGADRVIFNDDD-  82
+
+Query  94   EFCATVTHTGAASYDGFTQCS  114
+            E    +THTGA+  + F  C+
+Sbjct  83   ELAGVITHTGASG-NNFVACT  102
+
+
+>sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease 
+Fl1 OS=Gibberella baccata OX=5523 PE=1 SV=1
+Length=105
+
+ Score = 44.7 bits (104),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 38/115 (33%), Positives = 52/115 (45%), Gaps = 18/115 (16%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGAL-----DDVANGDRPDNYPHQYYDEASEDITLCCGSGP  59
+            +++ CG   YS   +  A   A      DD A       YPH Y +    D  +   +GP
+Sbjct  1    EASTCGSTPYSASQVRAAANAACQYYQSDDTAG---STTYPHTYNNYEGFDFAV---NGP  54
+
+Query  60   WSEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + EFP+   G Y        SPG DRVI  T+  ++   +THTG AS + F  CS
+Sbjct  55   YQEFPIRTGGVYSGG-----SPGADRVIINTSC-QYAGAITHTG-ASGNNFVGCS  102
+
+
+>sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=ACLA_055300 PE=1 SV=2
+Length=132
+
+ Score = 44.7 bits (104),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 35/108 (32%), Positives = 52/108 (48%), Gaps = 11/108 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDR--PDNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P++
+Sbjct  32   CGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPIL  88
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+             +G  Y    N  SPG DRV++  N  E    +THTGA+  +GF  CS
+Sbjct  89   SSGSTY----NGGSPGADRVVFNDND-ELAGLITHTGASG-NGFVACS  130
+
+
+>sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergillus 
+pallidus OX=29839 PE=1 SV=1
+Length=104
+
+ Score = 43.9 bits (102),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 34/107 (32%), Positives = 51/107 (48%), Gaps = 11/107 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDR--PDNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P++
+Sbjct  6    CGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPIL  62
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+             +G  Y    N  SPG DRV++  N  E    +THTGA+  +GF  C
+Sbjct  63   SSGSTY----NGGSPGADRVVFNNND-ELAGLITHTGASG-NGFVAC  103
+
+
+>sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / 
+DSM 1257 / FGSC 987) OX=367110 GN=grn PE=1 SV=2
+Length=153
+
+ Score = 43.5 bits (101),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 33/107 (31%), Positives = 51/107 (48%), Gaps = 11/107 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG   YS+  I+ A+        +G      +YPH+Y +    D      + PW EFP++
+Sbjct  55   CGSVCYSSSAISAALNKGYSYYEDGATAGSSSYPHRYNNYEGFDFPT---AKPWYEFPIL  111
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+             +G  Y+      SPG DRVI+ ++ G     +TH GA+  + F  C
+Sbjct  112  SSGRVYTGG----SPGADRVIFDSH-GNLDMLITHNGASG-NNFVAC  152
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.135    0.438    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 2
+
+
+Query= d3agna_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena OX=5...  140     3e-43
+sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospor...  112     5e-32
+sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergill...  111     2e-31
+sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicilli...  109     3e-31
+sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergill...  107     2e-30
+sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberell...  107     5e-30
+sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergill...  106     8e-30
+sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicill...  100     1e-27
+sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergil...  97.9    1e-26
+sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease A...  94.5    5e-25
+sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease F...  91.4    4e-24
+sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago ...  90.6    1e-23
+sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotu...  88.3    7e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|P16412|RNF2_GIBBA Extracellular guanyl-specific ribonuclease F...  91.8    3e-24
+sp|P26875|RNT1_TRIHA Guanyl-specific ribonuclease Th1 OS=Trichode...  82.2    2e-20
+sp|P00655|RNAS_ASPGI Ribonuclease alpha-sarcin OS=Aspergillus gig...  37.5    0.007
+sp|P67876|RNMG_ASPRE Ribonuclease mitogillin OS=Aspergillus restr...  37.5    0.008
+sp|P67875|RNMG_ASPFU Ribonuclease mitogillin OS=Neosartorya fumig...  37.5    0.008
+
+
+>sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena 
+OX=5271 GN=RNU2 PE=1 SV=4
+Length=114
+
+ Score = 140 bits (352),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+            CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW
+Sbjct  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+
+Query  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS
+Sbjct  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+
+
+>sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / 
+DSM 1257 / FGSC 987) OX=367110 GN=grn PE=1 SV=2
+Length=153
+
+ Score = 112 bits (281),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 52/108 (48%), Gaps = 11/108 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG   YS+  I+ A+        +G      +YPH+Y +    D      + PW EFP++
+Sbjct  55   CGSVCYSSSAISAALNKGYSYYEDGATAGSSSYPHRYNNYEGFDFPT---AKPWYEFPIL  111
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+             +G  Y+      SPG DRVI+ ++ G     +TH GA+  + F  C+
+Sbjct  112  SSGRVYTGG----SPGADRVIFDSH-GNLDMLITHNGASG-NNFVACN  153
+
+
+>sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=ACLA_055300 PE=1 SV=2
+Length=132
+
+ Score = 111 bits (276),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 52/109 (48%), Gaps = 11/109 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P+
+Sbjct  31   TCGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPI  87
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  Y+      SPG DRV++  N  E    +THTGA+  +GF  CS
+Sbjct  88   LSSGSTYNGG----SPGADRVVFNDND-ELAGLITHTGASG-NGFVACS  130
+
+
+>sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicillium 
+chrysogenum OX=5076 PE=1 SV=1
+Length=102
+
+ Score = 109 bits (272),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 35/108 (32%), Positives = 54/108 (50%), Gaps = 9/108 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            +  CG   Y++  I+ A +   D  +  D   NYPH+Y +    D  +   SG + EFP+
+Sbjct  3    AATCGSVCYTSSAISAAQEAGYDLYSANDDVSNYPHEYRNYEGFDFPV---SGTYYEFPI  59
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + +G  YS      SPG DRV++  N  +    +THTGA+  + F  C
+Sbjct  60   LRSGAVYSGN----SPGADRVVFNGND-QLAGVITHTGASG-NNFVAC  101
+
+
+>sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=rntA 
+PE=1 SV=2
+Length=130
+
+ Score = 107 bits (268),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/109 (32%), Positives = 59/109 (54%), Gaps = 11/109 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDR--PDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG N YS+ D++TA         +G+    ++YPH+Y +    D ++   S P+ E+P+
+Sbjct  31   TCGSNCYSSSDVSTAQAAGYQLHEDGETVGSNSYPHKYNNYEGFDFSV---SSPYYEWPI  87
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  YS      SPG DRV++  N  +    +THTGA+  + F +C+
+Sbjct  88   LSSGDVYSGG----SPGADRVVFNENN-QLAGVITHTGASG-NNFVECT  130
+
+
+>sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberella 
+fujikuroi OX=5127 PE=1 SV=4
+Length=131
+
+ Score = 107 bits (267),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 38/111 (34%), Positives = 49/111 (44%), Gaps = 12/111 (11%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A     N D      YPH Y +    D  +    GP+ EF
+Sbjct  28   ATTCGSTNYSASQVRAAANAACQYYQNDDTAGSSTYPHTYNNYEGFDFPV---DGPYQEF  84
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            P+   G Y        SPG DRV+  TN  E+   +THTGA+  + F  CS
+Sbjct  85   PIKSGGVYTGG-----SPGADRVVINTNC-EYAGAITHTGASG-NNFVGCS  128
+
+
+>sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergillus 
+phoenicis OX=5063 PE=1 SV=2
+Length=105
+
+ Score = 106 bits (263),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 53/107 (50%), Gaps = 9/107 (8%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPLVY  67
+             CG   Y + D++ A         +GD  D+YPH Y+D    D  +   SG + E+P++ 
+Sbjct  6    TCGSTCYWSSDVSAAKAKGYSLYESGDTIDDYPHGYHDYEGFDFPV---SGTYYEYPIMS  62
+
+Query  68   NGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            +   Y+      SPG DRVI+  +  E    +THTGA+  D F  CS
+Sbjct  63   DYDVYTGG----SPGADRVIFNGDD-ELAGVITHTGASG-DDFVACS  103
+
+
+>sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicillium 
+brevicompactum OX=5074 PE=1 SV=1
+Length=102
+
+ Score = 100 bits (249),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 56/109 (51%), Gaps = 9/109 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            +  CG   Y++  I++A     +  +  D   NYPH+Y++    D  +   SG + EFP+
+Sbjct  3    AATCGTVCYTSSAISSAQAAGYNLYSTNDDVSNYPHEYHNYEGFDFPV---SGTYYEFPI  59
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  Y+      SPG DRVI+  +  E    +THTGA+  + F  C+
+Sbjct  60   LKSGKVYTGS----SPGADRVIFNDDD-ELAGVITHTGASG-NNFVACT  102
+
+
+>sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergillus 
+pallidus OX=29839 PE=1 SV=1
+Length=104
+
+ Score = 97.9 bits (242),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 51/108 (47%), Gaps = 11/108 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P+
+Sbjct  5    TCGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPI  61
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + +G  Y+      SPG DRV++  N  E    +THTGA+  +GF  C
+Sbjct  62   LSSGSTYNGG----SPGADRVVFNNND-ELAGLITHTGASG-NGFVAC  103
+
+
+>sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease 
+ARB_00194 OS=Arthroderma benhamiae (strain ATCC MYA-4681 
+/ CBS 112371) OX=663331 GN=ARB_00194 PE=1 SV=1
+Length=129
+
+ Score = 94.5 bits (233),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 42/111 (38%), Positives = 51/111 (46%), Gaps = 11/111 (10%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A + V +G       YPHQY +           SGP+ EF
+Sbjct  25   ATTCGSTSYSASQVTAASNAACNYVQSGTTAGGSTYPHQYRNYEG--FYFQGLSGPFYEF  82
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            PL  +G Y     N  SPG DRVI   N  E    +THTGA+   GF  CS
+Sbjct  83   PLRTSGVY-----NGGSPGADRVIITGNCDE-AGQITHTGASG-SGFVACS  126
+
+
+>sp|P16412|RNF2_GIBBA Extracellular guanyl-specific ribonuclease 
+Fl2 OS=Gibberella baccata OX=5523 PE=1 SV=2
+Length=105
+
+ Score = 91.8 bits (226),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 35/111 (32%), Positives = 50/111 (45%), Gaps = 12/111 (11%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T C    YS   +  A   A     + D      YPH Y++    D  +   +GP+ E+
+Sbjct  3    ATTCSSKPYSAQQVRAAANAACQYYQSNDTAGSTTYPHTYHNYEGFDFAV---NGPYQEY  59
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            P+  +G Y        SPG DRVI  T   +F   +THTGA+  + F  CS
+Sbjct  60   PIRTSGVYSGG-----SPGADRVIINTQC-QFAGAITHTGASG-NQFVGCS  103
+
+
+>sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease 
+Fl1 OS=Gibberella baccata OX=5523 PE=1 SV=1
+Length=105
+
+ Score = 91.4 bits (225),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 35/112 (31%), Positives = 51/112 (46%), Gaps = 12/112 (11%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSE  62
+            +++ CG   YS   +  A   A     + D      YPH Y +    D  +   +GP+ E
+Sbjct  1    EASTCGSTPYSASQVRAAANAACQYYQSDDTAGSTTYPHTYNNYEGFDFAV---NGPYQE  57
+
+Query  63   FPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            FP+   G Y        SPG DRVI  T+  ++   +THTGA+  + F  CS
+Sbjct  58   FPIRTGGVYSGG-----SPGADRVIINTSC-QYAGAITHTGASG-NNFVGCS  102
+
+
+>sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago 
+sphaerogena OX=5271 PE=1 SV=2
+Length=105
+
+ Score = 90.6 bits (223),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 43/109 (39%), Positives = 57/109 (52%), Gaps = 9/109 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            S NCGG  YS+  +N AI  A     +      YPH Y +    D +  C  GP+ E+PL
+Sbjct  5    SVNCGGTYYSSTQVNRAINNAKSGQYS---STGYPHTYNNYEGFDFSDYC-DGPYKEYPL  60
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+              +   Y+      SPG DRV+Y +N G FC  +THTGA+  + F QCS
+Sbjct  61   KTSSSGYTGG----SPGADRVVYDSNDGTFCGAITHTGASG-NNFVQCS  104
+
+
+>sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotus 
+ostreatus OX=5322 PE=1 SV=1
+Length=101
+
+ Score = 88.3 bits (217),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 40/109 (37%), Positives = 55/109 (50%), Gaps = 14/109 (13%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFP  64
+            +S NC G  ++  D+  AI+ A           NYPH Y +      +    +  + EFP
+Sbjct  5    RSCNCAGRSFTGTDVTNAIRSARAG-----GSGNYPHVYNNFEGFSFS---CTPTFFEFP  56
+
+Query  65   LVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + + G  YS      SPG DRVIY   +G FCA +THTGA S +GF +C
+Sbjct  57   V-FRGSVYSGG----SPGADRVIYD-QSGRFCACLTHTGAPSTNGFVEC  99
+
+
+>sp|P26875|RNT1_TRIHA Guanyl-specific ribonuclease Th1 OS=Trichoderma 
+harzianum OX=5544 PE=1 SV=1
+Length=106
+
+ Score = 82.2 bits (201),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 32/111 (29%), Positives = 46/111 (41%), Gaps = 10/111 (9%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSE  62
+             +  CG   YS   ++ A   A + V  G       YPH Y +           S P+ E
+Sbjct  1    DTATCGKVFYSASAVSAASNAACNYVRAGSTAGGSTYPHVYNNYEGFRF--KGLSKPFYE  58
+
+Query  63   FPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            FP++ +G  Y+      SPG DRV+           +THTGA+  + F  C
+Sbjct  59   FPILSSGKTYTGG----SPGADRVVINGQCS-IAGIITHTGASG-NAFVAC  103
+
+
+>sp|P00655|RNAS_ASPGI Ribonuclease alpha-sarcin OS=Aspergillus 
+giganteus OX=5060 GN=sar PE=1 SV=2
+Length=177
+
+ Score = 37.5 bits (85),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 23/113 (20%), Positives = 35/113 (31%), Gaps = 27/113 (24%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EAS------------EDITLCCGSGPWS--  61
+            +            +++G    +YPH + +                   + C      S  
+Sbjct  53   NQNKAESNSHHAPLSDGKTGSSYPHWFTNGYDGDGKLPKGRTPIKFGKSDCDRPPKHSKD  112
+
+Query  62   ----------EFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTHT  102
+                      EFP   +G  Y   S+    +PGP RVIY      FC  + HT
+Sbjct  113  GNGKTDHYLLEFPTFPDGHDYKFDSKKPKENPGPARVIYTYPNKVFCGIIAHT  165
+
+
+>sp|P67876|RNMG_ASPRE Ribonuclease mitogillin OS=Aspergillus restrictus 
+OX=5064 GN=ret PE=1 SV=1
+Length=176
+
+ Score = 37.5 bits (85),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 32/119 (27%), Gaps = 27/119 (23%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EASEDITLCCGSGPWS--------------  61
+                         +++G    +YPH + +        +   +                  
+Sbjct  52   SQAKAESNSHHAPLSDGKTGSSYPHWFTNGYDGNGKLIKGRTPIKFGKADCDRPPKHSQN  111
+
+Query  62   ----------EFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYD  108
+                      EFP   +G  Y   S+     PGP RVIY      FC  V H      D
+Sbjct  112  GMGKDDHYLLEFPTFPDGHDYKFDSKKPKEDPGPARVIYTYPNKVFCGIVAHQRGNQGD  170
+
+
+>sp|P67875|RNMG_ASPFU Ribonuclease mitogillin OS=Neosartorya fumigata 
+(strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) 
+OX=330879 GN=mitF PE=1 SV=1
+Length=176
+
+ Score = 37.5 bits (85),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 32/119 (27%), Gaps = 27/119 (23%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EASEDITLCCGSGPWS--------------  61
+                         +++G    +YPH + +        +   +                  
+Sbjct  52   SQAKAESNSHHAPLSDGKTGSSYPHWFTNGYDGNGKLIKGRTPIKFGKADCDRPPKHSQN  111
+
+Query  62   ----------EFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYD  108
+                      EFP   +G  Y   S+     PGP RVIY      FC  V H      D
+Sbjct  112  GMGKDDHYLLEFPTFPDGHDYKFDSKKPKEDPGPARVIYTYPNKVFCGIVAHQRGNQGD  170
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.122    0.355    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0373    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 3
+
+
+Query= d3agna_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena OX=5...  137     2e-42
+sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospor...  116     3e-33
+sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergill...  114     9e-33
+sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicilli...  113     1e-32
+sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberell...  112     4e-32
+sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergill...  111     1e-31
+sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergill...  109     4e-31
+sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicill...  104     2e-29
+sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergil...  101     5e-28
+sp|P16412|RNF2_GIBBA Extracellular guanyl-specific ribonuclease F...  100     1e-27
+sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease A...  98.7    1e-26
+sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease F...  97.9    1e-26
+sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago ...  94.0    3e-25
+sp|P26875|RNT1_TRIHA Guanyl-specific ribonuclease Th1 OS=Trichode...  93.7    5e-25
+sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotu...  93.7    6e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|P00655|RNAS_ASPGI Ribonuclease alpha-sarcin OS=Aspergillus gig...  38.6    0.003
+sp|P67876|RNMG_ASPRE Ribonuclease mitogillin OS=Aspergillus restr...  38.2    0.004
+sp|P67875|RNMG_ASPFU Ribonuclease mitogillin OS=Neosartorya fumig...  38.2    0.004
+
+
+>sp|P00654|RNU2_USTSP Ribonuclease U2 OS=Ustilago sphaerogena 
+OX=5271 GN=RNU2 PE=1 SV=4
+Length=114
+
+ Score = 137 bits (346),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+            CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW
+Sbjct  1    CDIPQSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPW  60
+
+Query  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS
+Sbjct  61   SEFPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+
+
+>sp|P09646|RNN1_NEUCR Guanyl-specific ribonuclease N1 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / 
+DSM 1257 / FGSC 987) OX=367110 GN=grn PE=1 SV=2
+Length=153
+
+ Score = 116 bits (290),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 52/108 (48%), Gaps = 11/108 (10%)
+
+Query  9    CGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPLV  66
+            CG   YS+  I+ A+        +G      +YPH+Y +    D      + PW EFP++
+Sbjct  55   CGSVCYSSSAISAALNKGYSYYEDGATAGSSSYPHRYNNYEGFDFPT---AKPWYEFPIL  111
+
+Query  67   YNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+             +G  Y+      SPG DRVI+ ++ G     +TH GA+  + F  C+
+Sbjct  112  SSGRVYTGG----SPGADRVIFDSH-GNLDMLITHNGASG-NNFVACN  153
+
+
+>sp|P00652|RNC2_ASPCL Guanyl-specific ribonuclease C2 OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 
+3887 / NRRL 1) OX=344612 GN=ACLA_055300 PE=1 SV=2
+Length=132
+
+ Score = 114 bits (285),  Expect = 9e-33, Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 52/109 (48%), Gaps = 11/109 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P+
+Sbjct  31   TCGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPI  87
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  Y+      SPG DRV++  N  E    +THTGA+  +GF  CS
+Sbjct  88   LSSGSTYNGG----SPGADRVVFNDND-ELAGLITHTGASG-NGFVACS  130
+
+
+>sp|P09647|RNPC_PENCH Guanyl-specific ribonuclease Pc OS=Penicillium 
+chrysogenum OX=5076 PE=1 SV=1
+Length=102
+
+ Score = 113 bits (282),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 35/108 (32%), Positives = 54/108 (50%), Gaps = 9/108 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            +  CG   Y++  I+ A +   D  +  D   NYPH+Y +    D  +   SG + EFP+
+Sbjct  3    AATCGSVCYTSSAISAAQEAGYDLYSANDDVSNYPHEYRNYEGFDFPV---SGTYYEFPI  59
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + +G  YS      SPG DRV++  N  +    +THTGA+  + F  C
+Sbjct  60   LRSGAVYSGN----SPGADRVVFNGND-QLAGVITHTGASG-NNFVAC  101
+
+
+>sp|P10282|RNF1_GIBFU Guanyl-specific ribonuclease F1 OS=Gibberella 
+fujikuroi OX=5127 PE=1 SV=4
+Length=131
+
+ Score = 112 bits (280),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 38/111 (34%), Positives = 49/111 (44%), Gaps = 12/111 (11%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A     N D      YPH Y +    D  +    GP+ EF
+Sbjct  28   ATTCGSTNYSASQVRAAANAACQYYQNDDTAGSSTYPHTYNNYEGFDFPV---DGPYQEF  84
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            P+   G Y        SPG DRV+  TN  E+   +THTGA+  + F  CS
+Sbjct  85   PIKSGGVYTGG-----SPGADRVVINTNC-EYAGAITHTGASG-NNFVGCS  128
+
+
+>sp|P00651|RNT1_ASPOR Guanyl-specific ribonuclease T1 OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=rntA 
+PE=1 SV=2
+Length=130
+
+ Score = 111 bits (277),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 35/109 (32%), Positives = 59/109 (54%), Gaps = 11/109 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDR--PDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG N YS+ D++TA         +G+    ++YPH+Y +    D ++   S P+ E+P+
+Sbjct  31   TCGSNCYSSSDVSTAQAAGYQLHEDGETVGSNSYPHKYNNYEGFDFSV---SSPYYEWPI  87
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  YS      SPG DRV++  N  +    +THTGA+  + F +C+
+Sbjct  88   LSSGDVYSGG----SPGADRVVFNENN-QLAGVITHTGASG-NNFVECT  130
+
+
+>sp|P00653|RNMS_ASPPH Guanyl-specific ribonuclease Ms OS=Aspergillus 
+phoenicis OX=5063 PE=1 SV=2
+Length=105
+
+ Score = 109 bits (271),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 53/107 (50%), Gaps = 9/107 (8%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPLVY  67
+             CG   Y + D++ A         +GD  D+YPH Y+D    D  +   SG + E+P++ 
+Sbjct  6    TCGSTCYWSSDVSAAKAKGYSLYESGDTIDDYPHGYHDYEGFDFPV---SGTYYEYPIMS  62
+
+Query  68   NGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            +   Y+      SPG DRVI+  +  E    +THTGA+  D F  CS
+Sbjct  63   DYDVYTGG----SPGADRVIFNGDD-ELAGVITHTGASG-DDFVACS  103
+
+
+>sp|P07446|RNPB_PENBR Guanyl-specific ribonuclease Pb1 OS=Penicillium 
+brevicompactum OX=5074 PE=1 SV=1
+Length=102
+
+ Score = 104 bits (260),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 34/109 (31%), Positives = 56/109 (51%), Gaps = 9/109 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            +  CG   Y++  I++A     +  +  D   NYPH+Y++    D  +   SG + EFP+
+Sbjct  3    AATCGTVCYTSSAISSAQAAGYNLYSTNDDVSNYPHEYHNYEGFDFPV---SGTYYEFPI  59
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            + +G  Y+      SPG DRVI+  +  E    +THTGA+  + F  C+
+Sbjct  60   LKSGKVYTGS----SPGADRVIFNDDD-ELAGVITHTGASG-NNFVACT  102
+
+
+>sp|Q7M515|RNA1_ASPPL Guanyl-specific ribonuclease Ap1 OS=Aspergillus 
+pallidus OX=29839 PE=1 SV=1
+Length=104
+
+ Score = 101 bits (251),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 51/108 (47%), Gaps = 11/108 (10%)
+
+Query  8    NCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+             CG + YS   ++ A        + G       YPHQY +    +  +   SG + E+P+
+Sbjct  5    TCGSHCYSASAVSDAQSAGYQLYSAGQSVGRSRYPHQYRNYEGFNFPV---SGNYYEWPI  61
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + +G  Y+      SPG DRV++  N  E    +THTGA+  +GF  C
+Sbjct  62   LSSGSTYNGG----SPGADRVVFNNND-ELAGLITHTGASG-NGFVAC  103
+
+
+>sp|P16412|RNF2_GIBBA Extracellular guanyl-specific ribonuclease 
+Fl2 OS=Gibberella baccata OX=5523 PE=1 SV=2
+Length=105
+
+ Score = 100 bits (248),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 35/111 (32%), Positives = 50/111 (45%), Gaps = 12/111 (11%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T C    YS   +  A   A     + D      YPH Y++    D  +   +GP+ E+
+Sbjct  3    ATTCSSKPYSAQQVRAAANAACQYYQSNDTAGSTTYPHTYHNYEGFDFAV---NGPYQEY  59
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            P+  +G Y        SPG DRVI  T   +F   +THTGA+  + F  CS
+Sbjct  60   PIRTSGVYSGG-----SPGADRVIINTQC-QFAGAITHTGASG-NQFVGCS  103
+
+
+>sp|D4AVI0|RNF1_ARTBC Extracellular guanyl-specific ribonuclease 
+ARB_00194 OS=Arthroderma benhamiae (strain ATCC MYA-4681 
+/ CBS 112371) OX=663331 GN=ARB_00194 PE=1 SV=1
+Length=129
+
+ Score = 98.7 bits (244),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 41/111 (37%), Positives = 50/111 (45%), Gaps = 11/111 (10%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSEF  63
+            +T CG   YS   +  A   A + V +G       YPHQY +           SGP+ EF
+Sbjct  25   ATTCGSTSYSASQVTAASNAACNYVQSGTTAGGSTYPHQYRNYEGFYF--QGLSGPFYEF  82
+
+Query  64   PLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            PL  +G Y        SPG DRVI   N  E    +THTGA+   GF  CS
+Sbjct  83   PLRTSGVYNGG-----SPGADRVIITGNCDE-AGQITHTGASG-SGFVACS  126
+
+
+>sp|P16411|RNF1_GIBBA Extracellular guanyl-specific ribonuclease 
+Fl1 OS=Gibberella baccata OX=5523 PE=1 SV=1
+Length=105
+
+ Score = 97.9 bits (242),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 35/112 (31%), Positives = 51/112 (46%), Gaps = 12/112 (11%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSE  62
+            +++ CG   YS   +  A   A     + D      YPH Y +    D  +   +GP+ E
+Sbjct  1    EASTCGSTPYSASQVRAAANAACQYYQSDDTAGSTTYPHTYNNYEGFDFAV---NGPYQE  57
+
+Query  63   FPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+            FP+   G Y        SPG DRVI  T+  ++   +THTGA+  + F  CS
+Sbjct  58   FPIRTGGVYSGG-----SPGADRVIINTSC-QYAGAITHTGASG-NNFVGCS  102
+
+
+>sp|P07736|RNU1_USTSP Guanyl-specific ribonuclease U1 OS=Ustilago 
+sphaerogena OX=5271 PE=1 SV=2
+Length=105
+
+ Score = 94.0 bits (232),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 43/109 (39%), Positives = 57/109 (52%), Gaps = 9/109 (8%)
+
+Query  6    STNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFPL  65
+            S NCGG  YS+  +N AI  A     +      YPH Y +    D +  C  GP+ E+PL
+Sbjct  5    SVNCGGTYYSSTQVNRAINNAKSGQYS---STGYPHTYNNYEGFDFSDYC-DGPYKEYPL  60
+
+Query  66   VYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQCS  114
+              +   Y+      SPG DRV+Y +N G FC  +THTGA+  + F QCS
+Sbjct  61   KTSSSGYTGG----SPGADRVVYDSNDGTFCGAITHTGASG-NNFVQCS  104
+
+
+>sp|P26875|RNT1_TRIHA Guanyl-specific ribonuclease Th1 OS=Trichoderma 
+harzianum OX=5544 PE=1 SV=1
+Length=106
+
+ Score = 93.7 bits (231),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 32/111 (29%), Positives = 46/111 (41%), Gaps = 10/111 (9%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRP--DNYPHQYYDEASEDITLCCGSGPWSE  62
+             +  CG   YS   ++ A   A + V  G       YPH Y +           S P+ E
+Sbjct  1    DTATCGKVFYSASAVSAASNAACNYVRAGSTAGGSTYPHVYNNYEGFRF--KGLSKPFYE  58
+
+Query  63   FPLVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            FP++ +G  Y+      SPG DRV+           +THTGA+  + F  C
+Sbjct  59   FPILSSGKTYTGG----SPGADRVVINGQCS-IAGIITHTGASG-NAFVAC  103
+
+
+>sp|P81762|RNPO_PLEOS Guanyl-specific ribonuclease Po1 OS=Pleurotus 
+ostreatus OX=5322 PE=1 SV=1
+Length=101
+
+ Score = 93.7 bits (231),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 40/109 (37%), Positives = 55/109 (50%), Gaps = 14/109 (13%)
+
+Query  5    QSTNCGGNVYSNDDINTAIQGALDDVANGDRPDNYPHQYYDEASEDITLCCGSGPWSEFP  64
+            +S NC G  ++  D+  AI+ A           NYPH Y +      +    +  + EFP
+Sbjct  5    RSCNCAGRSFTGTDVTNAIRSARAG-----GSGNYPHVYNNFEGFSFS---CTPTFFEFP  56
+
+Query  65   LVYNGPYYSSRDNYVSPGPDRVIYQTNTGEFCATVTHTGAASYDGFTQC  113
+            + + G  YS      SPG DRVIY   +G FCA +THTGA S +GF +C
+Sbjct  57   V-FRGSVYSGG----SPGADRVIYD-QSGRFCACLTHTGAPSTNGFVEC  99
+
+
+>sp|P00655|RNAS_ASPGI Ribonuclease alpha-sarcin OS=Aspergillus 
+giganteus OX=5060 GN=sar PE=1 SV=2
+Length=177
+
+ Score = 38.6 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 22/113 (19%), Positives = 33/113 (29%), Gaps = 27/113 (24%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EAS----------EDITLCCGSGP------  59
+            +            +++G    +YPH + +                        P      
+Sbjct  53   NQNKAESNSHHAPLSDGKTGSSYPHWFTNGYDGDGKLPKGRTPIKFGKSDCDRPPKHSKD  112
+
+Query  60   --------WSEFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTHT  102
+                      EFP   +G  Y   S+    +PGP RVIY      FC  + HT
+Sbjct  113  GNGKTDHYLLEFPTFPDGHDYKFDSKKPKENPGPARVIYTYPNKVFCGIIAHT  165
+
+
+>sp|P67876|RNMG_ASPRE Ribonuclease mitogillin OS=Aspergillus restrictus 
+OX=5064 GN=ret PE=1 SV=1
+Length=176
+
+ Score = 38.2 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/112 (20%), Positives = 30/112 (27%), Gaps = 27/112 (24%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EAS----------EDITLCCGSGP------  59
+                         +++G    +YPH + +                        P      
+Sbjct  52   SQAKAESNSHHAPLSDGKTGSSYPHWFTNGYDGNGKLIKGRTPIKFGKADCDRPPKHSQN  111
+
+Query  60   --------WSEFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTH  101
+                      EFP   +G  Y   S+     PGP RVIY      FC  V H
+Sbjct  112  GMGKDDHYLLEFPTFPDGHDYKFDSKKPKEDPGPARVIYTYPNKVFCGIVAH  163
+
+
+>sp|P67875|RNMG_ASPFU Ribonuclease mitogillin OS=Neosartorya fumigata 
+(strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) 
+OX=330879 GN=mitF PE=1 SV=1
+Length=176
+
+ Score = 38.2 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/112 (20%), Positives = 30/112 (27%), Gaps = 27/112 (24%)
+
+Query  17   DDINTAIQGALDDVANGDRPDNYPHQYYD-EAS----------EDITLCCGSGP------  59
+                         +++G    +YPH + +                        P      
+Sbjct  52   SQAKAESNSHHAPLSDGKTGSSYPHWFTNGYDGNGKLIKGRTPIKFGKADCDRPPKHSQN  111
+
+Query  60   --------WSEFPLVYNGPYYS--SRDNYVSPGPDRVIYQTNTGEFCATVTH  101
+                      EFP   +G  Y   S+     PGP RVIY      FC  V H
+Sbjct  112  GMGKDDHYLLEFPTFPDGHDYKFDSKKPKEDPGPARVIYTYPNKVFCGIVAH  163
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0382    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

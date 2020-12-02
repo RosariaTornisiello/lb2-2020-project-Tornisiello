@@ -1,0 +1,724 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1itxa2
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 ...  156     3e-45
+sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida O...  46.6    2e-06
+sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae ...  40.8    2e-04
+sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear ...  39.3    6e-04
+sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 GN...  38.5    0.001
+
+
+>sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 
+GN=chiA1 PE=1 SV=1
+Length=699
+
+ Score = 156 bits (394),  Expect = 3e-45, Method: Compositional matrix adjust.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY
+Sbjct  338  YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  397
+
+Query  61   LYNASNKRFISY  72
+            LYNASNKRFISY
+Sbjct  398  LYNASNKRFISY  409
+
+
+>sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida 
+OX=43662 GN=chiA PE=1 SV=1
+Length=820
+
+ Score = 46.6 bits (109),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 30/89 (34%), Positives = 44/89 (49%), Gaps = 20/89 (22%)
+
+Query  1    YGRGWDGCAQA------------GNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINK---  45
+            YGRGW+G   A            GNG     TG +S G WE G  D+  + AN + +   
+Sbjct  459  YGRGWEGVLDANAAIPGNPMTAPGNGP---LTGSTSEGVWEPGIMDYKAIAANAVGQGGS  515
+
+Query  46   --NGYTRYWNDTAKVPYLYNASNKRFISY  72
+              NGY   +++ A+  Y++N SN + I+Y
+Sbjct  516  GVNGYEVGYDEQAQAAYVWNRSNGKLITY  544
+
+
+>sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae 
+(strain ATCC 17061 / DSM 2064 / UW101) OX=376686 GN=chiA 
+PE=1 SV=1
+Length=1578
+
+ Score = 40.8 bits (94),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 34/107 (32%), Positives = 51/107 (48%), Gaps = 35/107 (33%)
+
+Query  1    YGRGWDGCA-QAGNGQYQT--------CTGG-SSVGTWE-------AGSFDFYDLEAN--  41
+            YG+ +D  A  + NG +          CT   +  GTW+       +GS +  DL  N  
+Sbjct  311  YGKKFDNVAANSTNGLFVAAPRYIVPGCTNPQNPTGTWDGSGACEKSGSIEICDLVGNPV  370
+
+Query  42   -----YINKN-----------GYTRYWNDTAKVPYLYNASNKRFISY  72
+                 Y++ N           G+ RY+++T KVPYLYN++ K+FISY
+Sbjct  371  TNSHAYLDPNTMMVTPSAASAGWVRYFDNTTKVPYLYNSTLKQFISY  417
+
+
+>sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear 
+polyhedrosis virus OX=46015 GN=CHIA PE=1 SV=1
+Length=551
+
+ Score = 39.3 bits (90),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 4/73 (5%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G     N  Y + TG G   GTWE G  D+  ++ +    N Y   ++  A+  
+Sbjct  435  YGRGWTGVTNYTNDNYFSGTGNGPGSGTWEDGVVDYRQIQKDL---NNYVYTFDSAAQAS  491
+
+Query  60   YLYNASNKRFISY  72
+            Y+++ S    IS+
+Sbjct  492  YVFDKSKGDLISF  504
+
+
+>sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 
+GN=chiB PE=1 SV=1
+Length=499
+
+ Score = 38.5 bits (88),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 18/35 (51%), Positives = 22/35 (63%), Gaps = 4/35 (11%)
+
+Query  38   LEANYINKNGYTRYWNDTAKVPYLYNASNKRFISY  72
+            L+ NY    GY R WND  K PYLY+A N  F++Y
+Sbjct  349  LQGNY----GYQRLWNDKTKTPYLYHAQNGLFVTY  379
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.455    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+Results from round 2
+
+
+Query= d1itxa2
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 ...  107     4e-28
+sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear ...  93.3    6e-23
+sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida O...  80.2    2e-18
+sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae ...  64.8    8e-13
+sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 GN...  54.7    2e-09
+
+Sequences not found previously or not previously below threshold:
+
+sp|O10363|CHIT_NPVOP Probable endochitinase OS=Orgyia pseudotsuga...  69.0    2e-14
+sp|P07254|CHIA_SERMA Chitinase A OS=Serratia marcescens OX=615 GN...  68.2    5e-14
+sp|P48827|CHI42_TRIHA Endochitinase 42 OS=Trichoderma harzianum O...  39.0    8e-04
+sp|B6A879|CHI2_YERET Chitinase 2 OS=Yersinia entomophaga OX=93529...  37.4    0.003
+
+
+>sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 
+GN=chiA1 PE=1 SV=1
+Length=699
+
+ Score = 107 bits (268),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY
+Sbjct  338  YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  397
+
+Query  61   LYNASNKRFISY  72
+            LYNASNKRFISY
+Sbjct  398  LYNASNKRFISY  409
+
+
+>sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear 
+polyhedrosis virus OX=46015 GN=CHIA PE=1 SV=1
+Length=551
+
+ Score = 93.3 bits (230),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 4/73 (5%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G     N  Y + TG G   GTWE G  D+  ++ +    N Y   ++  A+  
+Sbjct  435  YGRGWTGVTNYTNDNYFSGTGNGPGSGTWEDGVVDYRQIQKDL---NNYVYTFDSAAQAS  491
+
+Query  60   YLYNASNKRFISY  72
+            Y+++ S    IS+
+Sbjct  492  YVFDKSKGDLISF  504
+
+
+>sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida 
+OX=43662 GN=chiA PE=1 SV=1
+Length=820
+
+ Score = 80.2 bits (196),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 30/89 (34%), Positives = 44/89 (49%), Gaps = 20/89 (22%)
+
+Query  1    YGRGWDGCAQA------------GNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINK---  45
+            YGRGW+G   A            GNG     TG +S G WE G  D+  + AN + +   
+Sbjct  459  YGRGWEGVLDANAAIPGNPMTAPGNGP---LTGSTSEGVWEPGIMDYKAIAANAVGQGGS  515
+
+Query  46   --NGYTRYWNDTAKVPYLYNASNKRFISY  72
+              NGY   +++ A+  Y++N SN + I+Y
+Sbjct  516  GVNGYEVGYDEQAQAAYVWNRSNGKLITY  544
+
+
+>sp|O10363|CHIT_NPVOP Probable endochitinase OS=Orgyia pseudotsugata 
+multicapsid polyhedrosis virus OX=262177 GN=ORF124 PE=3 
+SV=1
+Length=550
+
+ Score = 69.0 bits (167),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 22/73 (30%), Positives = 33/73 (45%), Gaps = 4/73 (5%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G +     +Y + T  G   GTWE G  D+  +       + Y   ++  AK  
+Sbjct  434  YGRGWTGVSGYAGDKYFSGTADGPVPGTWENGVVDYRQINNEL---SKYIYRFDAAAKAA  490
+
+Query  60   YLYNASNKRFISY  72
+            Y++N      IS+
+Sbjct  491  YVFNKERGDLISF  503
+
+
+>sp|P07254|CHIA_SERMA Chitinase A OS=Serratia marcescens OX=615 
+GN=chiA PE=1 SV=3
+Length=563
+
+ Score = 68.2 bits (165),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 35/73 (48%), Gaps = 2/73 (3%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G     N    T T  G   GTW+ G  D+  +   +++   +   ++ TA+ P
+Sbjct  444  YGRGWTGVNGYQNNIPFTGTATGPVKGTWKNGIVDYRQIAGQFMSGE-WQYTYDATAEAP  502
+
+Query  60   YLYNASNKRFISY  72
+            Y++  S    I++
+Sbjct  503  YVFKPSTGDLITF  515
+
+
+>sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae 
+(strain ATCC 17061 / DSM 2064 / UW101) OX=376686 GN=chiA 
+PE=1 SV=1
+Length=1578
+
+ Score = 64.8 bits (156),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 34/107 (32%), Positives = 51/107 (48%), Gaps = 35/107 (33%)
+
+Query  1    YGRGWDGCA-QAGNGQYQT--------CTGG-SSVGTWE-------AGSFDFYDLEAN--  41
+            YG+ +D  A  + NG +          CT   +  GTW+       +GS +  DL  N  
+Sbjct  311  YGKKFDNVAANSTNGLFVAAPRYIVPGCTNPQNPTGTWDGSGACEKSGSIEICDLVGNPV  370
+
+Query  42   -----YINKN-----------GYTRYWNDTAKVPYLYNASNKRFISY  72
+                 Y++ N           G+ RY+++T KVPYLYN++ K+FISY
+Sbjct  371  TNSHAYLDPNTMMVTPSAASAGWVRYFDNTTKVPYLYNSTLKQFISY  417
+
+
+>sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 
+GN=chiB PE=1 SV=1
+Length=499
+
+ Score = 54.7 bits (130),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 25/88 (28%), Positives = 35/88 (40%), Gaps = 16/88 (18%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGG-----SSVGTW-----------EAGSFDFYDLEANYIN  44
+            YGR + G +    GQY + +        +   W           +     +  LE     
+Sbjct  292  YGRAFKGVSGGNGGQYSSHSTPGEDPYPNADYWLVGCDECVRDKDPRIASYRQLEQMLQG  351
+
+Query  45   KNGYTRYWNDTAKVPYLYNASNKRFISY  72
+              GY R WND  K PYLY+A N  F++Y
+Sbjct  352  NYGYQRLWNDKTKTPYLYHAQNGLFVTY  379
+
+
+>sp|P48827|CHI42_TRIHA Endochitinase 42 OS=Trichoderma harzianum 
+OX=5544 GN=chit42 PE=1 SV=1
+Length=423
+
+ Score = 39.0 bits (89),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 33/72 (46%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +   A  G         G   G+WEAG +D+  L      K G T  ++  AK  Y
+Sbjct  293  YGRSFQNTAGIGQ-----TYNGVGSGSWEAGIWDYKAL-----PKAGATVQYDSVAKGYY  342
+
+Query  61   LYNASNKRFISY  72
+             YN++ K  IS+
+Sbjct  343  SYNSATKELISF  354
+
+
+>sp|B6A879|CHI2_YERET Chitinase 2 OS=Yersinia entomophaga OX=935293 
+GN=chi2 PE=1 SV=1
+Length=633
+
+ Score = 37.4 bits (85),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/79 (29%), Positives = 37/79 (47%), Gaps = 11/79 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYIN--------KNGYTRYW  52
+            YGR   G       QY     G ++GT E G+ +F+D+  NY++        KNG+    
+Sbjct  482  YGRSAVG-GDLTTRQYTK--NGPALGTMENGAPEFFDIVKNYMDAEHSLSMGKNGFVLMT  538
+
+Query  53   NDTAKVPYLYNASNKRFIS  71
+            +  A   +L++ +   FIS
+Sbjct  539  DTNADADFLFSEAKGHFIS  557
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.347    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0393    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+Results from round 3
+
+
+Query= d1itxa2
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 ...  99.4    5e-25
+sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear ...  93.3    6e-23
+sp|P07254|CHIA_SERMA Chitinase A OS=Serratia marcescens OX=615 GN...  93.3    7e-23
+sp|O10363|CHIT_NPVOP Probable endochitinase OS=Orgyia pseudotsuga...  90.9    5e-22
+sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 GN...  80.9    2e-18
+sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida O...  74.8    2e-16
+sp|P48827|CHI42_TRIHA Endochitinase 42 OS=Trichoderma harzianum O...  65.1    4e-13
+sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae ...  55.9    8e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|A6N6J0|CHI46_TRIHA Endochitinase 46 OS=Trichoderma harzianum O...  56.3    6e-10
+sp|P32470|CHI1_APHAL Chitinase 1 OS=Aphanocladium album OX=12942 ...  56.3    6e-10
+sp|E9ERT9|CHI1_METRA Endochitinase 1 OS=Metarhizium robertsii (st...  52.4    1e-08
+sp|E9QRF2|CHIB1_ASPFU Endochitinase B1 OS=Neosartorya fumigata (s...  47.0    1e-06
+sp|Q873X9|CHIB1_ASPFM Endochitinase B1 OS=Neosartorya fumigata OX...  47.0    1e-06
+sp|Q1E3R8|CHI1_COCIM Endochitinase 1 OS=Coccidioides immitis (str...  45.9    3e-06
+sp|C5P230|CHI1_COCP7 Endochitinase 1 OS=Coccidioides posadasii (s...  45.9    3e-06
+sp|P0CB51|CHI1_COCPS Endochitinase 1 OS=Coccidioides posadasii (s...  45.9    3e-06
+sp|O14456|CHI1_METAN Endochitinase 1 OS=Metarhizium anisopliae OX...  44.7    8e-06
+sp|Q92222|CHIB_EMEND Endochitinase B OS=Emericella nidulans OX=16...  41.3    1e-04
+sp|G5EAZ3|CHIB1_EMENI Endochitinase B OS=Emericella nidulans (str...  41.3    1e-04
+sp|P36362|CHIT_MANSE Endochitinase OS=Manduca sexta OX=7130 PE=2 ...  39.3    6e-04
+sp|Q9BZP6|CHIA_HUMAN Acidic mammalian chitinase OS=Homo sapiens O...  37.8    0.002
+sp|B6A879|CHI2_YERET Chitinase 2 OS=Yersinia entomophaga OX=93529...  37.0    0.004
+
+
+>sp|P20533|CHIA1_BACCI Chitinase A1 OS=Bacillus circulans OX=1397 
+GN=chiA1 PE=1 SV=1
+Length=699
+
+ Score = 99.4 bits (246),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY
+Sbjct  338  YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  397
+
+Query  61   LYNASNKRFISY  72
+            LYNASNKRFISY
+Sbjct  398  LYNASNKRFISY  409
+
+
+>sp|P41684|CHIT_NPVAC Chitinase OS=Autographa californica nuclear 
+polyhedrosis virus OX=46015 GN=CHIA PE=1 SV=1
+Length=551
+
+ Score = 93.3 bits (230),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 4/73 (5%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G     N  Y + TG G   GTWE G  D+  ++ +    N Y   ++  A+  
+Sbjct  435  YGRGWTGVTNYTNDNYFSGTGNGPGSGTWEDGVVDYRQIQKDL---NNYVYTFDSAAQAS  491
+
+Query  60   YLYNASNKRFISY  72
+            Y+++ S    IS+
+Sbjct  492  YVFDKSKGDLISF  504
+
+
+>sp|P07254|CHIA_SERMA Chitinase A OS=Serratia marcescens OX=615 
+GN=chiA PE=1 SV=3
+Length=563
+
+ Score = 93.3 bits (230),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 35/73 (48%), Gaps = 2/73 (3%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G     N    T T  G   GTW+ G  D+  +   +++   +   ++ TA+ P
+Sbjct  444  YGRGWTGVNGYQNNIPFTGTATGPVKGTWKNGIVDYRQIAGQFMSGE-WQYTYDATAEAP  502
+
+Query  60   YLYNASNKRFISY  72
+            Y++  S    I++
+Sbjct  503  YVFKPSTGDLITF  515
+
+
+>sp|O10363|CHIT_NPVOP Probable endochitinase OS=Orgyia pseudotsugata 
+multicapsid polyhedrosis virus OX=262177 GN=ORF124 PE=3 
+SV=1
+Length=550
+
+ Score = 90.9 bits (224),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 22/73 (30%), Positives = 33/73 (45%), Gaps = 4/73 (5%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTG-GSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGRGW G +     +Y + T  G   GTWE G  D+  +       + Y   ++  AK  
+Sbjct  434  YGRGWTGVSGYAGDKYFSGTADGPVPGTWENGVVDYRQINNEL---SKYIYRFDAAAKAA  490
+
+Query  60   YLYNASNKRFISY  72
+            Y++N      IS+
+Sbjct  491  YVFNKERGDLISF  503
+
+
+>sp|P11797|CHIB_SERMA Chitinase B OS=Serratia marcescens OX=615 
+GN=chiB PE=1 SV=1
+Length=499
+
+ Score = 80.9 bits (198),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 25/88 (28%), Positives = 35/88 (40%), Gaps = 16/88 (18%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGG-----SSVGTW-----------EAGSFDFYDLEANYIN  44
+            YGR + G +    GQY + +        +   W           +     +  LE     
+Sbjct  292  YGRAFKGVSGGNGGQYSSHSTPGEDPYPNADYWLVGCDECVRDKDPRIASYRQLEQMLQG  351
+
+Query  45   KNGYTRYWNDTAKVPYLYNASNKRFISY  72
+              GY R WND  K PYLY+A N  F++Y
+Sbjct  352  NYGYQRLWNDKTKTPYLYHAQNGLFVTY  379
+
+
+>sp|P32823|CHIA_PSEO7 Chitinase A OS=Pseudoalteromonas piscicida 
+OX=43662 GN=chiA PE=1 SV=1
+Length=820
+
+ Score = 74.8 bits (182),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 27/86 (31%), Positives = 41/86 (48%), Gaps = 14/86 (16%)
+
+Query  1    YGRGWDGCAQAGNGQYQT---------CTGGSSVGTWEAGSFDFYDLEANYINK-----N  46
+            YGRGW+G   A                 TG +S G WE G  D+  + AN + +     N
+Sbjct  459  YGRGWEGVLDANAAIPGNPMTAPGNGPLTGSTSEGVWEPGIMDYKAIAANAVGQGGSGVN  518
+
+Query  47   GYTRYWNDTAKVPYLYNASNKRFISY  72
+            GY   +++ A+  Y++N SN + I+Y
+Sbjct  519  GYEVGYDEQAQAAYVWNRSNGKLITY  544
+
+
+>sp|P48827|CHI42_TRIHA Endochitinase 42 OS=Trichoderma harzianum 
+OX=5544 GN=chit42 PE=1 SV=1
+Length=423
+
+ Score = 65.1 bits (157),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 33/72 (46%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +   A  G         G   G+WEAG +D+  L      K G T  ++  AK  Y
+Sbjct  293  YGRSFQNTAGIGQ-----TYNGVGSGSWEAGIWDYKAL-----PKAGATVQYDSVAKGYY  342
+
+Query  61   LYNASNKRFISY  72
+             YN++ K  IS+
+Sbjct  343  SYNSATKELISF  354
+
+
+>sp|A6N6J0|CHI46_TRIHA Endochitinase 46 OS=Trichoderma harzianum 
+OX=5544 GN=chit46 PE=1 SV=1
+Length=430
+
+ Score = 56.3 bits (134),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 27/73 (37%), Positives = 34/73 (47%), Gaps = 6/73 (8%)
+
+Query  1    YGRGWDGCAQAGNG-QYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVP  59
+            YGR +   A  G         GG S G+WEAG +D+  L      K G T  ++  AK  
+Sbjct  294  YGRSFQNTAGIGQTYNGVGGGGGGSTGSWEAGIWDYKAL-----PKAGATIQYDSVAKGY  348
+
+Query  60   YLYNASNKRFISY  72
+            Y YNA  K  IS+
+Sbjct  349  YSYNAGTKELISF  361
+
+
+>sp|P32470|CHI1_APHAL Chitinase 1 OS=Aphanocladium album OX=12942 
+GN=CHI1 PE=1 SV=2
+Length=423
+
+ Score = 56.3 bits (134),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 31/72 (43%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G         G   G+WE G +D+  L      K G T   +DTAK  Y
+Sbjct  293  YGRSFQQTEGIGKP-----YNGIGSGSWENGIWDYKAL-----PKAGATVKCDDTAKGCY  342
+
+Query  61   LYNASNKRFISY  72
+             Y+ S K  IS+
+Sbjct  343  SYDPSTKELISF  354
+
+
+>sp|A5FB63|CHIA_FLAJ1 Chitinase ChiA OS=Flavobacterium johnsoniae 
+(strain ATCC 17061 / DSM 2064 / UW101) OX=376686 GN=chiA 
+PE=1 SV=1
+Length=1578
+
+ Score = 55.9 bits (133),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 34/107 (32%), Positives = 51/107 (48%), Gaps = 35/107 (33%)
+
+Query  1    YGRGWDGCA-QAGNGQYQT--------CTGG-SSVGTWE-------AGSFDFYDLEAN--  41
+            YG+ +D  A  + NG +          CT   +  GTW+       +GS +  DL  N  
+Sbjct  311  YGKKFDNVAANSTNGLFVAAPRYIVPGCTNPQNPTGTWDGSGACEKSGSIEICDLVGNPV  370
+
+Query  42   -----YINKN-----------GYTRYWNDTAKVPYLYNASNKRFISY  72
+                 Y++ N           G+ RY+++T KVPYLYN++ K+FISY
+Sbjct  371  TNSHAYLDPNTMMVTPSAASAGWVRYFDNTTKVPYLYNSTLKQFISY  417
+
+
+>sp|E9ERT9|CHI1_METRA Endochitinase 1 OS=Metarhizium robertsii 
+(strain ARSEF 23 / ATCC MYA-3075) OX=655844 GN=chit1 PE=3 SV=1
+Length=424
+
+ Score = 52.4 bits (124),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 21/72 (29%), Positives = 32/72 (44%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YG+ +        G+  +   G   G+WE G +D+  L      K G T  ++D AK  Y
+Sbjct  294  YGKSFQKTNGI--GKPFS---GVGDGSWENGIWDYKVL-----PKAGATVIYDDVAKGYY  343
+
+Query  61   LYNASNKRFISY  72
+             Y+   +  ISY
+Sbjct  344  SYDNRTQELISY  355
+
+
+>sp|E9QRF2|CHIB1_ASPFU Endochitinase B1 OS=Neosartorya fumigata 
+(strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 
+GN=chiB1 PE=3 SV=1
+Length=433
+
+ Score = 47.0 bits (110),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 21/72 (29%), Positives = 29/72 (40%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G         G   G+WE G +D+  L      + G T +        Y
+Sbjct  299  YGRSFANTDGPGKP-----YNGVGQGSWENGVWDYKAL-----PQAGATEHVLPDIMASY  348
+
+Query  61   LYNASNKRFISY  72
+             Y+A+NK  ISY
+Sbjct  349  SYDATNKFLISY  360
+
+
+>sp|Q873X9|CHIB1_ASPFM Endochitinase B1 OS=Neosartorya fumigata 
+OX=746128 GN=chiB1 PE=1 SV=1
+Length=433
+
+ Score = 47.0 bits (110),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 21/72 (29%), Positives = 29/72 (40%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G         G   G+WE G +D+  L      + G T +        Y
+Sbjct  299  YGRSFANTDGPGKP-----YNGVGQGSWENGVWDYKAL-----PQAGATEHVLPDIMASY  348
+
+Query  61   LYNASNKRFISY  72
+             Y+A+NK  ISY
+Sbjct  349  SYDATNKFLISY  360
+
+
+>sp|Q1E3R8|CHI1_COCIM Endochitinase 1 OS=Coccidioides immitis 
+(strain RS) OX=246410 GN=CTS1 PE=3 SV=1
+Length=427
+
+ Score = 45.9 bits (107),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 28/72 (39%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G     T   G   G+WE G +D+ D     + + G      +     Y
+Sbjct  293  YGRAFASTDGIG-----TSFNGVGGGSWENGVWDYKD-----MPQQGAQVTELEDIAASY  342
+
+Query  61   LYNASNKRFISY  72
+             Y+ + +  ISY
+Sbjct  343  SYDKNKRYLISY  354
+
+
+>sp|C5P230|CHI1_COCP7 Endochitinase 1 OS=Coccidioides posadasii 
+(strain C735) OX=222929 GN=CTS1 PE=3 SV=1
+Length=427
+
+ Score = 45.9 bits (107),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 28/72 (39%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G     T   G   G+WE G +D+ D     + + G      +     Y
+Sbjct  293  YGRAFASTDGIG-----TSFNGVGGGSWENGVWDYKD-----MPQQGAQVTELEDIAASY  342
+
+Query  61   LYNASNKRFISY  72
+             Y+ + +  ISY
+Sbjct  343  SYDKNKRYLISY  354
+
+
+>sp|P0CB51|CHI1_COCPS Endochitinase 1 OS=Coccidioides posadasii 
+(strain RMSCC 757 / Silveira) OX=443226 GN=CTS1 PE=1 SV=1
+Length=427
+
+ Score = 45.9 bits (107),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 28/72 (39%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G     T   G   G+WE G +D+ D     + + G      +     Y
+Sbjct  293  YGRAFASTDGIG-----TSFNGVGGGSWENGVWDYKD-----MPQQGAQVTELEDIAASY  342
+
+Query  61   LYNASNKRFISY  72
+             Y+ + +  ISY
+Sbjct  343  SYDKNKRYLISY  354
+
+
+>sp|O14456|CHI1_METAN Endochitinase 1 OS=Metarhizium anisopliae 
+OX=5530 GN=chit1 PE=1 SV=1
+Length=423
+
+ Score = 44.7 bits (104),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 19/71 (27%), Positives = 30/71 (42%), Gaps = 10/71 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YG  +        G+  +   G+  G+WE G +D+        +K G    ++D  K  Y
+Sbjct  293  YGNSFQKTNGI--GKPFS---GAGDGSWENGIWDYK-----VHSKAGADGIYDDGDKGYY  342
+
+Query  61   LYNASNKRFIS  71
+             Y+ S K  IS
+Sbjct  343  SYDPSVKELIS  353
+
+
+>sp|Q92222|CHIB_EMEND Endochitinase B OS=Emericella nidulans OX=162425 
+GN=chiB PE=1 SV=3
+Length=398
+
+ Score = 41.3 bits (95),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 28/72 (39%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G         G   GTWE G +D+  L      + G T   +      +
+Sbjct  257  YGRAFQNTDGPGRP-----YSGIGQGTWEQGVYDYKAL-----PRPGATEQLDTNIGASW  306
+
+Query  61   LYNASNKRFISY  72
+             Y+ S++  +SY
+Sbjct  307  SYDPSSREMVSY  318
+
+
+>sp|G5EAZ3|CHIB1_EMENI Endochitinase B OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) 
+OX=227321 GN=chiB PE=1 SV=1
+Length=398
+
+ Score = 41.3 bits (95),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 28/72 (39%), Gaps = 10/72 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKVPY  60
+            YGR +      G         G   GTWE G +D+  L      + G T   +      +
+Sbjct  257  YGRAFQNTDGPGRP-----YSGIGQGTWEQGVYDYKAL-----PRPGATEQLDTNIGASW  306
+
+Query  61   LYNASNKRFISY  72
+             Y+ S++  +SY
+Sbjct  307  SYDPSSREMVSY  318
+
+
+>sp|P36362|CHIT_MANSE Endochitinase OS=Manduca sexta OX=7130 PE=2 
+SV=1
+Length=554
+
+ Score = 39.3 bits (90),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 17/72 (24%), Positives = 31/72 (43%), Gaps = 7/72 (10%)
+
+Query  1    YGRGWD---GCAQAGNGQYQ---TCTGGSSVGTWEAGSFDFYDLEANY-INKNGYTRYWN  53
+            YGR +    G    G G +       G  +  T   G + +Y++      + +G+T+ W+
+Sbjct  270  YGRSFTLSAGNNNYGLGTFINKEAGGGDPAPYTNATGFWAYYEICTEVDKDDSGWTKKWD  329
+
+Query  54   DTAKVPYLYNAS  65
+            +  K PY Y  +
+Sbjct  330  EQGKCPYAYKGT  341
+
+
+>sp|Q9BZP6|CHIA_HUMAN Acidic mammalian chitinase OS=Homo sapiens 
+OX=9606 GN=CHIA PE=1 SV=1
+Length=476
+
+ Score = 37.8 bits (86),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 29/64 (45%), Gaps = 4/64 (6%)
+
+Query  1    YGRGW--DGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYINKNGYTRYWNDTAKV  58
+            YG  +     +  G G   +  G +     E+G + +Y++      KNG T+ W+   +V
+Sbjct  267  YGHNFILSNPSNTGIGAPTSGAGPAGPYAKESGIWAYYEICTFL--KNGATQGWDAPQEV  324
+
+Query  59   PYLY  62
+            PY Y
+Sbjct  325  PYAY  328
+
+
+>sp|B6A879|CHI2_YERET Chitinase 2 OS=Yersinia entomophaga OX=935293 
+GN=chi2 PE=1 SV=1
+Length=633
+
+ Score = 37.0 bits (84),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 23/79 (29%), Positives = 36/79 (46%), Gaps = 11/79 (14%)
+
+Query  1    YGRGWDGCAQAGNGQYQTCTGGSSVGTWEAGSFDFYDLEANYI--------NKNGYTRYW  52
+            YGR   G       QY     G ++GT E G+ +F+D+  NY+         KNG+    
+Sbjct  482  YGRSAVG-GDLTTRQY--TKNGPALGTMENGAPEFFDIVKNYMDAEHSLSMGKNGFVLMT  538
+
+Query  53   NDTAKVPYLYNASNKRFIS  71
+            +  A   +L++ +   FIS
+Sbjct  539  DTNADADFLFSEAKGHFIS  557
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.350    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

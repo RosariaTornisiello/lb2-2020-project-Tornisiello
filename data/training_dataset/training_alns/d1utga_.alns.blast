@@ -1,0 +1,840 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1utga_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986...  147     4e-47
+sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCG...  137     2e-43
+sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1...  87.4    2e-23
+sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 GN=S...  87.0    3e-23
+sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=954...  82.0    2e-21
+sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb...  82.0    3e-21
+sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036...  82.0    4e-21
+sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCG...  79.0    4e-20
+sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 ...  75.5    1e-18
+sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1...  67.0    2e-15
+sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Fel...  35.8    0.004
+
+
+>sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986 
+GN=SCGB1A1 PE=1 SV=1
+Length=91
+
+ Score = 147 bits (371),  Expect = 4e-47, Method: Compositional matrix adjust.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT
+Sbjct  22  GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCGB1A1 
+PE=3 SV=2
+Length=91
+
+ Score = 137 bits (346),  Expect = 2e-43, Method: Compositional matrix adjust.
+ Identities = 65/70 (93%), Positives = 68/70 (97%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICP FAHVIENLLLGTPSSYETSLKEF+PDD MKDAGMQMKKVLD+LPQTTRENI+KLT
+Sbjct  22  GICPGFAHVIENLLLGTPSSYETSLKEFQPDDAMKDAGMQMKKVLDTLPQTTRENIIKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1A1 
+PE=1 SV=1
+Length=91
+
+ Score = 87.4 bits (215),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 39/68 (57%), Positives = 52/68 (76%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE LL+ TPSSYE +++ F PD  M++AG Q+KK++D+LPQ  RE+I+KL E
+Sbjct  23  ICPSFQRVIETLLMDTPSSYEAAMELFSPDQDMREAGAQLKKLVDTLPQKPRESIIKLME  82
+
+Query  62  KIVKSPLC  69
+           KI +S LC
+Sbjct  83  KIAQSSLC  90
+
+
+>sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 
+GN=Scgb1a1 PE=1 SV=2
+Length=96
+
+ Score = 87.0 bits (214),  Expect = 3e-23, Method: Compositional matrix adjust.
+ Identities = 39/68 (57%), Positives = 53/68 (78%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LLLG+ S+YE +LK F P   +++AG Q+K+++D+LPQ TR NI+KLTE
+Sbjct  23  ICPGFLQVLEALLLGSESNYEAALKPFNPASDLQNAGTQLKRLVDTLPQETRINIVKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=9543 
+GN=SCGB1A1 PE=1 SV=1
+Length=70
+
+ Score = 82.0 bits (201),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 39/68 (57%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE+L L TPSS+E ++  F PD  M +AG Q+KKVLD+LP   R++I+KL E
+Sbjct  2   ICPTFLRVIESLFLDTPSSFEAAMGFFSPDQDMSEAGAQLKKVLDTLPAKARDSIIKLME  61
+
+Query  62  KIVKSPLC  69
+           KI KS LC
+Sbjct  62  KIDKSLLC  69
+
+
+>sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb1a1 
+PE=1 SV=1
+Length=96
+
+ Score = 82.0 bits (201),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 38/68 (56%), Positives = 50/68 (74%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LL+ + S Y  SLK F P   +++AG Q+K+++D+LPQ TR NIMKLTE
+Sbjct  23  ICPGFLQVLEALLMESESGYVASLKPFNPGSDLQNAGTQLKRLVDTLPQETRINIMKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036 
+GN=SCGB1A1 PE=3 SV=1
+Length=96
+
+ Score = 82.0 bits (201),  Expect = 4e-21, Method: Compositional matrix adjust.
+ Identities = 36/67 (54%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ SSYE +LK + P   ++D+G Q+KK++D+LPQ TR NIMKL+E 
+Sbjct  24  CPGFFQVLEFLFMGSESSYEAALKFYNPGSDLQDSGTQLKKLVDTLPQKTRMNIMKLSEI  83
+
+Query  63  IVKSPLC  69
+           I+ SPLC
+Sbjct  84  ILTSPLC  90
+
+
+>sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCGB1A1 
+PE=2 SV=2
+Length=91
+
+ Score = 79.0 bits (193),  Expect = 4e-20, Method: Compositional matrix adjust.
+ Identities = 34/68 (50%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           IC  FA +I+ L LGTP+S+E +++ F+PD  MK A  Q+K ++D LP+ T+++I+KL +
+Sbjct  23  ICQSFADIIQGLFLGTPASFEAAVEPFKPDADMKAATTQLKTLVDFLPKNTKDSILKLMD  82
+
+Query  62  KIVKSPLC  69
+           KI KSPLC
+Sbjct  83  KIAKSPLC  90
+
+
+>sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 
+GN=SCGB1A1 PE=3 SV=1
+Length=93
+
+ Score = 75.5 bits (184),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 32/67 (48%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ S+YE +LK + P   ++++GMQ+KK++D+LP+ TR NI+KL+E 
+Sbjct  21  CPGFLQVLEYLFMGSESTYEAALKFYNPGSDLQNSGMQLKKLVDTLPEKTRVNIVKLSEI  80
+
+Query  63  IVKSPLC  69
+           I+ S LC
+Sbjct  81  ILTSNLC  87
+
+
+>sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1 
+PE=3 SV=1
+Length=91
+
+ Score = 67.0 bits (162),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 28/68 (41%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           +CP   +V+ NL+ GTPSS+E +L+ F PD+ MK+A  Q+K ++D+L    ++++++L  
+Sbjct  23  VCPSLLYVLGNLIAGTPSSFEATLEPFSPDEDMKEATSQLKTLVDTLSPKAKDSMLELMM  82
+
+Query  62  KIVKSPLC  69
+           KI++SP C
+Sbjct  83  KIIQSPEC  90
+
+
+>sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Felis 
+catus OX=9685 GN=CH1 PE=1 SV=2
+Length=92
+
+ Score = 35.8 bits (81),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 18/69 (26%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDS-LPQTTRENIMKLT  60
+           ICP     ++  L GTP  Y   + +++    + +    +K  +D+ + +  +EN + + 
+Sbjct  24  ICPAVKRDVDLFLTGTPDEYVEQVAQYKALPVVLENARILKNCVDAKMTEEDKENALSVL  83
+
+Query  61  EKIVKSPLC  69
+           +KI  SPLC
+Sbjct  84  DKIYTSPLC  92
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.132    0.379    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+Results from round 2
+
+
+Query= d1utga_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCG...  113     1e-33
+sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986...  110     1e-32
+sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 GN=S...  110     1e-32
+sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036...  108     1e-31
+sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb...  107     2e-31
+sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 ...  107     3e-31
+sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=954...  103     3e-30
+sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1...  103     8e-30
+sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCG...  100     2e-28
+sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1...  94.3    4e-26
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8TD33|SG1C1_HUMAN Secretoglobin family 1C member 1 OS=Homo sa...  44.3    2e-06
+sp|P0DMR2|SG1C2_HUMAN Secretoglobin family 1C member 2 OS=Homo sa...  42.7    8e-06
+sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Fel...  40.4    6e-05
+sp|Q05702|SG1C1_RAT Secretoglobin family 1C member 1 OS=Rattus no...  39.3    2e-04
+sp|Q7M742|SG1C1_MOUSE Secretoglobin family 1C member 1 OS=Mus mus...  38.1    5e-04
+
+
+>sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCGB1A1 
+PE=3 SV=2
+Length=91
+
+ Score = 113 bits (282),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 65/70 (93%), Positives = 68/70 (97%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICP FAHVIENLLLGTPSSYETSLKEF+PDD MKDAGMQMKKVLD+LPQTTRENI+KLT
+Sbjct  22  GICPGFAHVIENLLLGTPSSYETSLKEFQPDDAMKDAGMQMKKVLDTLPQTTRENIIKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986 
+GN=SCGB1A1 PE=1 SV=1
+Length=91
+
+ Score = 110 bits (275),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT
+Sbjct  22  GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 
+GN=Scgb1a1 PE=1 SV=2
+Length=96
+
+ Score = 110 bits (275),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 53/68 (78%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LLLG+ S+YE +LK F P   +++AG Q+K+++D+LPQ TR NI+KLTE
+Sbjct  23  ICPGFLQVLEALLLGSESNYEAALKPFNPASDLQNAGTQLKRLVDTLPQETRINIVKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036 
+GN=SCGB1A1 PE=3 SV=1
+Length=96
+
+ Score = 108 bits (269),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ SSYE +LK + P   ++D+G Q+KK++D+LPQ TR NIMKL+E 
+Sbjct  24  CPGFFQVLEFLFMGSESSYEAALKFYNPGSDLQDSGTQLKKLVDTLPQKTRMNIMKLSEI  83
+
+Query  63  IVKSPLC  69
+           I+ SPLC
+Sbjct  84  ILTSPLC  90
+
+
+>sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb1a1 
+PE=1 SV=1
+Length=96
+
+ Score = 107 bits (268),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 38/68 (56%), Positives = 50/68 (74%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LL+ + S Y  SLK F P   +++AG Q+K+++D+LPQ TR NIMKLTE
+Sbjct  23  ICPGFLQVLEALLMESESGYVASLKPFNPGSDLQNAGTQLKRLVDTLPQETRINIMKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 
+GN=SCGB1A1 PE=3 SV=1
+Length=93
+
+ Score = 107 bits (266),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 32/67 (48%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ S+YE +LK + P   ++++GMQ+KK++D+LP+ TR NI+KL+E 
+Sbjct  21  CPGFLQVLEYLFMGSESTYEAALKFYNPGSDLQNSGMQLKKLVDTLPEKTRVNIVKLSEI  80
+
+Query  63  IVKSPLC  69
+           I+ S LC
+Sbjct  81  ILTSNLC  87
+
+
+>sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=9543 
+GN=SCGB1A1 PE=1 SV=1
+Length=70
+
+ Score = 103 bits (258),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE+L L TPSS+E ++  F PD  M +AG Q+KKVLD+LP   R++I+KL E
+Sbjct  2   ICPTFLRVIESLFLDTPSSFEAAMGFFSPDQDMSEAGAQLKKVLDTLPAKARDSIIKLME  61
+
+Query  62  KIVKSPLC  69
+           KI KS LC
+Sbjct  62  KIDKSLLC  69
+
+
+>sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1A1 
+PE=1 SV=1
+Length=91
+
+ Score = 103 bits (257),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 52/68 (76%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE LL+ TPSSYE +++ F PD  M++AG Q+KK++D+LPQ  RE+I+KL E
+Sbjct  23  ICPSFQRVIETLLMDTPSSYEAAMELFSPDQDMREAGAQLKKLVDTLPQKPRESIIKLME  82
+
+Query  62  KIVKSPLC  69
+           KI +S LC
+Sbjct  83  KIAQSSLC  90
+
+
+>sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCGB1A1 
+PE=2 SV=2
+Length=91
+
+ Score = 100 bits (249),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 34/68 (50%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           IC  FA +I+ L LGTP+S+E +++ F+PD  MK A  Q+K ++D LP+ T+++I+KL +
+Sbjct  23  ICQSFADIIQGLFLGTPASFEAAVEPFKPDADMKAATTQLKTLVDFLPKNTKDSILKLMD  82
+
+Query  62  KIVKSPLC  69
+           KI KSPLC
+Sbjct  83  KIAKSPLC  90
+
+
+>sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1 
+PE=3 SV=1
+Length=91
+
+ Score = 94.3 bits (233),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 28/68 (41%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           +CP   +V+ NL+ GTPSS+E +L+ F PD+ MK+A  Q+K ++D+L    ++++++L  
+Sbjct  23  VCPSLLYVLGNLIAGTPSSFEATLEPFSPDEDMKEATSQLKTLVDTLSPKAKDSMLELMM  82
+
+Query  62  KIVKSPLC  69
+           KI++SP C
+Sbjct  83  KIIQSPEC  90
+
+
+>sp|Q8TD33|SG1C1_HUMAN Secretoglobin family 1C member 1 OS=Homo 
+sapiens OX=9606 GN=SCGB1C1 PE=3 SV=2
+Length=95
+
+ Score = 44.3 bits (103),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 17/62 (27%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE +L ++  ++  K A  ++K  +D L    +  ++KL  +++
+Sbjct  30  FMDFLQTLLVGTPEELYEGTLGKYNVNEDAKAAMTELKSCIDGLQPMHKAELVKLLVQVL  89
+
+Query  65  KS  66
+            S
+Sbjct  90  GS  91
+
+
+>sp|P0DMR2|SG1C2_HUMAN Secretoglobin family 1C member 2 OS=Homo 
+sapiens OX=9606 GN=SCGB1C2 PE=1 SV=1
+Length=95
+
+ Score = 42.7 bits (99),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 17/62 (27%), Positives = 33/62 (53%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE +L ++  ++  K A  ++K   D L    +  ++KL  +++
+Sbjct  30  FMDFLQTLLVGTPEELYEGTLGKYNVNEDAKAAMTELKSCRDGLQPMHKAELVKLLVQVL  89
+
+Query  65  KS  66
+            S
+Sbjct  90  GS  91
+
+
+>sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Felis 
+catus OX=9685 GN=CH1 PE=1 SV=2
+Length=92
+
+ Score = 40.4 bits (93),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDS-LPQTTRENIMKLT  60
+           ICP     ++  L GTP  Y   + +++    + +    +K  +D+ + +  +EN + + 
+Sbjct  24  ICPAVKRDVDLFLTGTPDEYVEQVAQYKALPVVLENARILKNCVDAKMTEEDKENALSVL  83
+
+Query  61  EKIVKSPLC  69
+           +KI  SPLC
+Sbjct  84  DKIYTSPLC  92
+
+
+>sp|Q05702|SG1C1_RAT Secretoglobin family 1C member 1 OS=Rattus 
+norvegicus OX=10116 GN=Scgb1c1 PE=2 SV=1
+Length=94
+
+ Score = 39.3 bits (90),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 18/62 (29%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE  L ++  +D  K A  ++K  +D L    +E ++KL  +++
+Sbjct  29  FMEFLQTLLVGTPEELYEGPLGKYNVNDMAKAALTELKSCIDELQPVHKEQLVKLLVQVL  88
+
+Query  65  KS  66
+            +
+Sbjct  89  DA  90
+
+
+>sp|Q7M742|SG1C1_MOUSE Secretoglobin family 1C member 1 OS=Mus 
+musculus OX=10090 GN=Scgb1c1 PE=3 SV=2
+Length=95
+
+ Score = 38.1 bits (87),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 18/62 (29%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE  L ++  +D  K A  ++K  +D L    +E ++KL  +++
+Sbjct  30  FMEFLQTLLVGTPEELYEGPLGKYNVNDMAKSALRELKSCIDELQPVHKEQLVKLLVQVL  89
+
+Query  65  KS  66
+            +
+Sbjct  90  DA  91
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+Results from round 3
+
+
+Query= d1utga_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCG...  101     5e-29
+sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986...  98.9    5e-28
+sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 GN=S...  98.6    1e-27
+sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb...  96.2    9e-27
+sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036...  95.9    9e-27
+sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 ...  93.9    6e-26
+sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=954...  91.2    3e-25
+sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1...  92.0    3e-25
+sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCG...  89.7    2e-24
+sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1...  83.9    6e-22
+sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Fel...  79.3    4e-20
+sp|Q8TD33|SG1C1_HUMAN Secretoglobin family 1C member 1 OS=Homo sa...  72.8    1e-17
+sp|P0DMR2|SG1C2_HUMAN Secretoglobin family 1C member 2 OS=Homo sa...  71.2    6e-17
+sp|Q05702|SG1C1_RAT Secretoglobin family 1C member 1 OS=Rattus no...  68.5    6e-16
+sp|Q7M742|SG1C1_MOUSE Secretoglobin family 1C member 1 OS=Mus mus...  68.5    6e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|A0JNP2|SG1D_BOVIN Secretoglobin family 1D member OS=Bos taurus...  38.1    7e-04
+sp|O95968|SG1D1_HUMAN Secretoglobin family 1D member 1 OS=Homo sa...  37.7    8e-04
+
+
+>sp|P06913|UTER_LEPCA Uteroglobin OS=Lepus capensis OX=9981 GN=SCGB1A1 
+PE=3 SV=2
+Length=91
+
+ Score = 101 bits (252),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 65/70 (93%), Positives = 68/70 (97%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICP FAHVIENLLLGTPSSYETSLKEF+PDD MKDAGMQMKKVLD+LPQTTRENI+KLT
+Sbjct  22  GICPGFAHVIENLLLGTPSSYETSLKEFQPDDAMKDAGMQMKKVLDTLPQTTRENIIKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P02779|UTER_RABIT Uteroglobin OS=Oryctolagus cuniculus OX=9986 
+GN=SCGB1A1 PE=1 SV=1
+Length=91
+
+ Score = 98.9 bits (245),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  60
+           GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT
+Sbjct  22  GICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLT  81
+
+Query  61  EKIVKSPLCM  70
+           EKIVKSPLCM
+Sbjct  82  EKIVKSPLCM  91
+
+
+>sp|P17559|UTER_RAT Uteroglobin OS=Rattus norvegicus OX=10116 
+GN=Scgb1a1 PE=1 SV=2
+Length=96
+
+ Score = 98.6 bits (244),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 53/68 (78%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LLLG+ S+YE +LK F P   +++AG Q+K+++D+LPQ TR NI+KLTE
+Sbjct  23  ICPGFLQVLEALLLGSESNYEAALKPFNPASDLQNAGTQLKRLVDTLPQETRINIVKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q06318|UTER_MOUSE Uteroglobin OS=Mus musculus OX=10090 GN=Scgb1a1 
+PE=1 SV=1
+Length=96
+
+ Score = 96.2 bits (238),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 38/68 (56%), Positives = 50/68 (74%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  V+E LL+ + S Y  SLK F P   +++AG Q+K+++D+LPQ TR NIMKLTE
+Sbjct  23  ICPGFLQVLEALLMESESGYVASLKPFNPGSDLQNAGTQLKRLVDTLPQETRINIMKLTE  82
+
+Query  62  KIVKSPLC  69
+           KI+ SPLC
+Sbjct  83  KILTSPLC  90
+
+
+>sp|Q8VD96|UTER_MESAU Uteroglobin OS=Mesocricetus auratus OX=10036 
+GN=SCGB1A1 PE=3 SV=1
+Length=96
+
+ Score = 95.9 bits (237),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ SSYE +LK + P   ++D+G Q+KK++D+LPQ TR NIMKL+E 
+Sbjct  24  CPGFFQVLEFLFMGSESSYEAALKFYNPGSDLQDSGTQLKKLVDTLPQKTRMNIMKLSEI  83
+
+Query  63  IVKSPLC  69
+           I+ SPLC
+Sbjct  84  ILTSPLC  90
+
+
+>sp|Q65C83|UTER_NEOAS Uteroglobin OS=Neotomodon alstoni OX=230081 
+GN=SCGB1A1 PE=3 SV=1
+Length=93
+
+ Score = 93.9 bits (232),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 32/67 (48%), Positives = 50/67 (75%), Gaps = 0/67 (0%)
+
+Query  3   CPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEK  62
+           CP F  V+E L +G+ S+YE +LK + P   ++++GMQ+KK++D+LP+ TR NI+KL+E 
+Sbjct  21  CPGFLQVLEYLFMGSESTYEAALKFYNPGSDLQNSGMQLKKLVDTLPEKTRVNIVKLSEI  80
+
+Query  63  IVKSPLC  69
+           I+ S LC
+Sbjct  81  ILTSNLC  87
+
+
+>sp|Q9TS45|UTER_MACFU Uteroglobin OS=Macaca fuscata fuscata OX=9543 
+GN=SCGB1A1 PE=1 SV=1
+Length=70
+
+ Score = 91.2 bits (225),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE+L L TPSS+E ++  F PD  M +AG Q+KKVLD+LP   R++I+KL E
+Sbjct  2   ICPTFLRVIESLFLDTPSSFEAAMGFFSPDQDMSEAGAQLKKVLDTLPAKARDSIIKLME  61
+
+Query  62  KIVKSPLC  69
+           KI KS LC
+Sbjct  62  KIDKSLLC  69
+
+
+>sp|P11684|UTER_HUMAN Uteroglobin OS=Homo sapiens OX=9606 GN=SCGB1A1 
+PE=1 SV=1
+Length=91
+
+ Score = 92.0 bits (227),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 39/68 (57%), Positives = 52/68 (76%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           ICP F  VIE LL+ TPSSYE +++ F PD  M++AG Q+KK++D+LPQ  RE+I+KL E
+Sbjct  23  ICPSFQRVIETLLMDTPSSYEAAMELFSPDQDMREAGAQLKKLVDTLPQKPRESIIKLME  82
+
+Query  62  KIVKSPLC  69
+           KI +S LC
+Sbjct  83  KIAQSSLC  90
+
+
+>sp|Q8MKG2|UTER_HORSE Uteroglobin OS=Equus caballus OX=9796 GN=SCGB1A1 
+PE=2 SV=2
+Length=91
+
+ Score = 89.7 bits (221),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 34/68 (50%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           IC  FA +I+ L LGTP+S+E +++ F+PD  MK A  Q+K ++D LP+ T+++I+KL +
+Sbjct  23  ICQSFADIIQGLFLGTPASFEAAVEPFKPDADMKAATTQLKTLVDFLPKNTKDSILKLMD  82
+
+Query  62  KIVKSPLC  69
+           KI KSPLC
+Sbjct  83  KIAKSPLC  90
+
+
+>sp|Q2VPS3|UTER_BOVIN Uteroglobin OS=Bos taurus OX=9913 GN=SCGB1A1 
+PE=3 SV=1
+Length=91
+
+ Score = 83.9 bits (206),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 28/68 (41%), Positives = 49/68 (72%), Gaps = 0/68 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           +CP   +V+ NL+ GTPSS+E +L+ F PD+ MK+A  Q+K ++D+L    ++++++L  
+Sbjct  23  VCPSLLYVLGNLIAGTPSSFEATLEPFSPDEDMKEATSQLKTLVDTLSPKAKDSMLELMM  82
+
+Query  62  KIVKSPLC  69
+           KI++SP C
+Sbjct  83  KIIQSPEC  90
+
+
+>sp|P30438|FEL1A_FELCA Major allergen I polypeptide chain 1 OS=Felis 
+catus OX=9685 GN=CH1 PE=1 SV=2
+Length=92
+
+ Score = 79.3 bits (194),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 35/69 (51%), Gaps = 1/69 (1%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDS-LPQTTRENIMKLT  60
+           ICP     ++  L GTP  Y   + +++    + +    +K  +D+ + +  +EN + + 
+Sbjct  24  ICPAVKRDVDLFLTGTPDEYVEQVAQYKALPVVLENARILKNCVDAKMTEEDKENALSVL  83
+
+Query  61  EKIVKSPLC  69
+           +KI  SPLC
+Sbjct  84  DKIYTSPLC  92
+
+
+>sp|Q8TD33|SG1C1_HUMAN Secretoglobin family 1C member 1 OS=Homo 
+sapiens OX=9606 GN=SCGB1C1 PE=3 SV=2
+Length=95
+
+ Score = 72.8 bits (177),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 17/62 (27%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE +L ++  ++  K A  ++K  +D L    +  ++KL  +++
+Sbjct  30  FMDFLQTLLVGTPEELYEGTLGKYNVNEDAKAAMTELKSCIDGLQPMHKAELVKLLVQVL  89
+
+Query  65  KS  66
+            S
+Sbjct  90  GS  91
+
+
+>sp|P0DMR2|SG1C2_HUMAN Secretoglobin family 1C member 2 OS=Homo 
+sapiens OX=9606 GN=SCGB1C2 PE=1 SV=1
+Length=95
+
+ Score = 71.2 bits (173),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 17/62 (27%), Positives = 33/62 (53%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE +L ++  ++  K A  ++K   D L    +  ++KL  +++
+Sbjct  30  FMDFLQTLLVGTPEELYEGTLGKYNVNEDAKAAMTELKSCRDGLQPMHKAELVKLLVQVL  89
+
+Query  65  KS  66
+            S
+Sbjct  90  GS  91
+
+
+>sp|Q05702|SG1C1_RAT Secretoglobin family 1C member 1 OS=Rattus 
+norvegicus OX=10116 GN=Scgb1c1 PE=2 SV=1
+Length=94
+
+ Score = 68.5 bits (166),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 18/62 (29%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE  L ++  +D  K A  ++K  +D L    +E ++KL  +++
+Sbjct  29  FMEFLQTLLVGTPEELYEGPLGKYNVNDMAKAALTELKSCIDELQPVHKEQLVKLLVQVL  88
+
+Query  65  KS  66
+            +
+Sbjct  89  DA  90
+
+
+>sp|Q7M742|SG1C1_MOUSE Secretoglobin family 1C member 1 OS=Mus 
+musculus OX=10090 GN=Scgb1c1 PE=3 SV=2
+Length=95
+
+ Score = 68.5 bits (166),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 18/62 (29%), Positives = 34/62 (55%), Gaps = 1/62 (2%)
+
+Query  6   FAHVIENLLLGTPSS-YETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTEKIV  64
+           F   ++ LL+GTP   YE  L ++  +D  K A  ++K  +D L    +E ++KL  +++
+Sbjct  30  FMEFLQTLLVGTPEELYEGPLGKYNVNDMAKSALRELKSCIDELQPVHKEQLVKLLVQVL  89
+
+Query  65  KS  66
+            +
+Sbjct  90  DA  91
+
+
+>sp|A0JNP2|SG1D_BOVIN Secretoglobin family 1D member OS=Bos taurus 
+OX=9913 GN=SCGB1D PE=3 SV=2
+Length=102
+
+ Score = 38.1 bits (87),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 15/63 (24%), Positives = 24/63 (38%), Gaps = 0/63 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           +CP FA  +          Y  SL ++        A M++K+  D      R  I  +  
+Sbjct  23  VCPTFAADLTEFFYFPDLLYRLSLAKYNAPPEAVAAKMEVKQCTDRFSVKNRLIITNILG  82
+
+Query  62  KIV  64
+           KI+
+Sbjct  83  KIL  85
+
+
+>sp|O95968|SG1D1_HUMAN Secretoglobin family 1D member 1 OS=Homo 
+sapiens OX=9606 GN=SCGB1D1 PE=1 SV=1
+Length=90
+
+ Score = 37.7 bits (86),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 16/64 (25%), Positives = 27/64 (42%), Gaps = 0/64 (0%)
+
+Query  2   ICPRFAHVIENLLLGTPSSYETSLKEFEPDDTMKDAGMQMKKVLDSLPQTTRENIMKLTE  61
+           +C      I   LL     ++  L +F+       A M++KK +D++    R  I K   
+Sbjct  23  VCQALGSEITGFLLAGKPVFKFQLAKFKAPLEAVAAKMEVKKCVDTMAYEKRVLITKTLG  82
+
+Query  62  KIVK  65
+           KI +
+Sbjct  83  KIAE  86
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.357    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

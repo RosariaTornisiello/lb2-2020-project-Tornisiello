@@ -1,0 +1,424 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2zw2a_
+
+Length=85
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase s...  47.8    1e-07
+sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase s...  37.4    0.001
+sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase s...  37.4    0.002
+
+
+>sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Thermotoga maritima (strain ATCC 43589 / 
+MSB8 / DSM 3109 / JCM 10099) OX=243274 GN=purS PE=1 SV=1
+Length=82
+
+ Score = 47.8 bits (112),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 26/79 (33%), Positives = 47/79 (59%), Gaps = 1/79 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           L++  + +  +  VRDP GETI+R +       + + R GK +   V + ++++A E+VK
+Sbjct  3   LFKFAIDVQYRSNVRDPRGETIERVLREEKGLPVKKLRLGKSIHLEVEAENKEKAYEIVK  62
+
+Query  62  KLADEMRLYNPIVHKIEIR  80
+           K  +E+ L NP+V + E+R
+Sbjct  63  KACEEL-LVNPVVEEYEVR  80
+
+
+>sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=purS PE=1 SV=1
+Length=83
+
+ Score = 37.4 bits (85),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 25/84 (30%), Positives = 49/84 (58%), Gaps = 1/84 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+  +II  K+GV +PEG TIQR +     + + E +  K +   +   ++++  E V+
+Sbjct  1   MYKATVIIKLKKGVLNPEGRTIQRALNFLGFNNVKEVQTYKMIDIIMEGENEEKVKEEVE  60
+
+Query  62  KLADEMRLYNPIVHKIEIRANRIE  85
+           ++  ++ L NP++H  EI+  +IE
+Sbjct  61  EMCKKL-LANPVIHDYEIKVEKIE  83
+
+
+>sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Bacillus subtilis (strain 168) OX=224308 
+GN=purS PE=1 SV=1
+Length=84
+
+ Score = 37.4 bits (85),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 20/73 (27%), Positives = 44/73 (60%), Gaps = 2/73 (3%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+V++ ++ KE V DP+G  +Q  + S   +++ + R GKY+   +  S  ++   LVK
+Sbjct  1   MYKVKVYVSLKESVLDPQGSAVQHALHSMTYNEVQDVRIGKYMELTIEKSD-RDLDVLVK  59
+
+Query  62  KLADEMRLYNPIV  74
+           ++ +++ L N ++
+Sbjct  60  EMCEKL-LANTVI  71
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4966727746
+Results from round 2
+
+
+Query= d2zw2a_
+
+Length=85
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase s...  82.1    4e-21
+sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase s...  79.7    3e-20
+sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase s...  78.2    1e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q55842|PURS_SYNY3 Phosphoribosylformylglycinamidine synthase s...  72.4    3e-17
+sp|O26271|PURS_METTH Phosphoribosylformylglycinamidine synthase s...  57.0    3e-11
+sp|O28338|PURS_ARCFU Phosphoribosylformylglycinamidine synthase s...  52.4    2e-09
+sp|O05755|PURS_MYCLE Phosphoribosylformylglycinamidine synthase s...  43.5    5e-06
+
+
+>sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=purS PE=1 SV=1
+Length=83
+
+ Score = 82.1 bits (201),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 25/84 (30%), Positives = 49/84 (58%), Gaps = 1/84 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+  +II  K+GV +PEG TIQR +     + + E +  K +   +   ++++  E V+
+Sbjct  1   MYKATVIIKLKKGVLNPEGRTIQRALNFLGFNNVKEVQTYKMIDIIMEGENEEKVKEEVE  60
+
+Query  62  KLADEMRLYNPIVHKIEIRANRIE  85
+           ++  ++ L NP++H  EI+  +IE
+Sbjct  61  EMCKKL-LANPVIHDYEIKVEKIE  83
+
+
+>sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Thermotoga maritima (strain ATCC 43589 / 
+MSB8 / DSM 3109 / JCM 10099) OX=243274 GN=purS PE=1 SV=1
+Length=82
+
+ Score = 79.7 bits (195),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 47/79 (59%), Gaps = 1/79 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           L++  + +  +  VRDP GETI+R +       + + R GK +   V + ++++A E+VK
+Sbjct  3   LFKFAIDVQYRSNVRDPRGETIERVLREEKGLPVKKLRLGKSIHLEVEAENKEKAYEIVK  62
+
+Query  62  KLADEMRLYNPIVHKIEIR  80
+           K  +E+ L NP+V + E+R
+Sbjct  63  KACEEL-LVNPVVEEYEVR  80
+
+
+>sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Bacillus subtilis (strain 168) OX=224308 
+GN=purS PE=1 SV=1
+Length=84
+
+ Score = 78.2 bits (191),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 45/83 (54%), Gaps = 2/83 (2%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+V++ ++ KE V DP+G  +Q  + S   +++ + R GKY+   +  S  ++   LVK
+Sbjct  1   MYKVKVYVSLKESVLDPQGSAVQHALHSMTYNEVQDVRIGKYMELTIEKSD-RDLDVLVK  59
+
+Query  62  KLADEMRLYNPIVHKIEIRANRI  84
+           ++ +++ L N ++         +
+Sbjct  60  EMCEKL-LANTVIEDYRYEVEEV  81
+
+
+>sp|Q55842|PURS_SYNY3 Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Synechocystis sp. (strain PCC 6803 / Kazusa) 
+OX=1111708 GN=purS PE=3 SV=1
+Length=100
+
+ Score = 72.4 bits (176),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 17/83 (20%), Positives = 37/83 (45%), Gaps = 1/83 (1%)
+
+Query  3   YRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVKK  62
+           Y   + +T +  V DP G  +Q  +     D + + R GKY+   + +  +  A++ +  
+Sbjct  14  YHCRIYVTLRPSVLDPAGTAVQSGLQQLGYDGVSQVRIGKYIELTLEAPDEATASQQLDT  73
+
+Query  63  LADEMRLYNPIVHKIEIRANRIE  85
+           + D++ L N ++         +E
+Sbjct  74  MCDQL-LANTVIENYCFEITALE  95
+
+
+>sp|O26271|PURS_METTH Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Methanothermobacter thermautotrophicus (strain 
+ATCC 29096 / DSM 1053 / JCM 10044 / NBRC 100330 / Delta 
+H) OX=187420 GN=purS PE=1 SV=1
+Length=84
+
+ Score = 57.0 bits (136),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 21/85 (25%), Positives = 43/85 (51%), Gaps = 2/85 (2%)
+
+Query  1   MLYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELV  60
+           M + VE+ I  K+G+ +PE  TI+R +      ++ +T     + F ++  S +     V
+Sbjct  1   MKFMVEVRIRLKKGMLNPEAATIERALALLGY-EVEDTDTTDVITFTMDEDSLEAVEREV  59
+
+Query  61  KKLADEMRLYNPIVHKIEIRANRIE  85
+           + +   + L NP++H  ++  N +E
+Sbjct  60  EDMCQRL-LCNPVIHDYDVSINEME  83
+
+
+>sp|O28338|PURS_ARCFU Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Archaeoglobus fulgidus (strain ATCC 49558 
+/ VC-16 / DSM 4304 / JCM 9628 / NBRC 100126) OX=224325 GN=purS 
+PE=3 SV=1
+Length=80
+
+ Score = 52.4 bits (124),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 19/75 (25%), Positives = 38/75 (51%), Gaps = 1/75 (1%)
+
+Query  5   VELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVKKLA  64
+            ++ I  KEGV DPEGE   + +      ++ +    K     + + S++EA   + ++ 
+Sbjct  3   ADVYIELKEGVADPEGEATLKALRLLGFKRVKKVSTVKVFRIDIEARSREEAEREIAEMC  62
+
+Query  65  DEMRLYNPIVHKIEI  79
+           +++ L NP++ K  I
+Sbjct  63  EKL-LANPVIQKYSI  76
+
+
+>sp|O05755|PURS_MYCLE Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Mycobacterium leprae (strain TN) OX=272631 
+GN=ML2219.1 PE=3 SV=1
+Length=79
+
+ Score = 43.5 bits (101),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 13/81 (16%), Positives = 28/81 (35%), Gaps = 4/81 (5%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           + R  + +  +  + DP+G+ I   +       I + R GK     ++        +   
+Sbjct  1   MARAVVHVMLRAEILDPQGQAIAGALGRLGHTGISDVRQGKRFELEID----DTVDDSEL  56
+
+Query  62  KLADEMRLYNPIVHKIEIRAN  82
+            +  E  L N ++    I   
+Sbjct  57  AMIAESLLANTVIEDWTITRE  77
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.305    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0399    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4966727746
+Results from round 3
+
+
+Query= d2zw2a_
+
+Length=85
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q55842|PURS_SYNY3 Phosphoribosylformylglycinamidine synthase s...  108     3e-31
+sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase s...  83.6    9e-22
+sp|O26271|PURS_METTH Phosphoribosylformylglycinamidine synthase s...  81.7    5e-21
+sp|O05755|PURS_MYCLE Phosphoribosylformylglycinamidine synthase s...  81.3    6e-21
+sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase s...  81.3    9e-21
+sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase s...  73.2    1e-17
+sp|O28338|PURS_ARCFU Phosphoribosylformylglycinamidine synthase s...  71.3    6e-17
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q55842|PURS_SYNY3 Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Synechocystis sp. (strain PCC 6803 / Kazusa) 
+OX=1111708 GN=purS PE=3 SV=1
+Length=100
+
+ Score = 108 bits (269),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 17/83 (20%), Positives = 37/83 (45%), Gaps = 1/83 (1%)
+
+Query  3   YRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVKK  62
+           Y   + +T +  V DP G  +Q  +     D + + R GKY+   + +  +  A++ +  
+Sbjct  14  YHCRIYVTLRPSVLDPAGTAVQSGLQQLGYDGVSQVRIGKYIELTLEAPDEATASQQLDT  73
+
+Query  63  LADEMRLYNPIVHKIEIRANRIE  85
+           + D++ L N ++         +E
+Sbjct  74  MCDQL-LANTVIENYCFEITALE  95
+
+
+>sp|Q58988|PURS_METJA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=purS PE=1 SV=1
+Length=83
+
+ Score = 83.6 bits (205),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 25/84 (30%), Positives = 49/84 (58%), Gaps = 1/84 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+  +II  K+GV +PEG TIQR +     + + E +  K +   +   ++++  E V+
+Sbjct  1   MYKATVIIKLKKGVLNPEGRTIQRALNFLGFNNVKEVQTYKMIDIIMEGENEEKVKEEVE  60
+
+Query  62  KLADEMRLYNPIVHKIEIRANRIE  85
+           ++  ++ L NP++H  EI+  +IE
+Sbjct  61  EMCKKL-LANPVIHDYEIKVEKIE  83
+
+
+>sp|O26271|PURS_METTH Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Methanothermobacter thermautotrophicus (strain 
+ATCC 29096 / DSM 1053 / JCM 10044 / NBRC 100330 / Delta 
+H) OX=187420 GN=purS PE=1 SV=1
+Length=84
+
+ Score = 81.7 bits (200),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 21/85 (25%), Positives = 43/85 (51%), Gaps = 2/85 (2%)
+
+Query  1   MLYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELV  60
+           M + VE+ I  K+G+ +PE  TI+R +      ++ +T     + F ++  S +     V
+Sbjct  1   MKFMVEVRIRLKKGMLNPEAATIERALALLGY-EVEDTDTTDVITFTMDEDSLEAVEREV  59
+
+Query  61  KKLADEMRLYNPIVHKIEIRANRIE  85
+           + +   + L NP++H  ++  N +E
+Sbjct  60  EDMCQRL-LCNPVIHDYDVSINEME  83
+
+
+>sp|O05755|PURS_MYCLE Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Mycobacterium leprae (strain TN) OX=272631 
+GN=ML2219.1 PE=3 SV=1
+Length=79
+
+ Score = 81.3 bits (199),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 13/81 (16%), Positives = 28/81 (35%), Gaps = 4/81 (5%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           + R  + +  +  + DP+G+ I   +       I + R GK     ++        +   
+Sbjct  1   MARAVVHVMLRAEILDPQGQAIAGALGRLGHTGISDVRQGKRFELEID----DTVDDSEL  56
+
+Query  62  KLADEMRLYNPIVHKIEIRAN  82
+            +  E  L N ++    I   
+Sbjct  57  AMIAESLLANTVIEDWTITRE  77
+
+
+>sp|P12049|PURS_BACSU Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Bacillus subtilis (strain 168) OX=224308 
+GN=purS PE=1 SV=1
+Length=84
+
+ Score = 81.3 bits (199),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 44/83 (53%), Gaps = 2/83 (2%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           +Y+V++ ++ KE V DP+G  +Q  + S   +++ + R GKY+   +  S +     LVK
+Sbjct  1   MYKVKVYVSLKESVLDPQGSAVQHALHSMTYNEVQDVRIGKYMELTIEKSDRD-LDVLVK  59
+
+Query  62  KLADEMRLYNPIVHKIEIRANRI  84
+           ++ +++ L N ++         +
+Sbjct  60  EMCEKL-LANTVIEDYRYEVEEV  81
+
+
+>sp|Q9X0X1|PURS_THEMA Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Thermotoga maritima (strain ATCC 43589 / 
+MSB8 / DSM 3109 / JCM 10099) OX=243274 GN=purS PE=1 SV=1
+Length=82
+
+ Score = 73.2 bits (178),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 47/79 (59%), Gaps = 1/79 (1%)
+
+Query  2   LYRVELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVK  61
+           L++  + +  +  VRDP GETI+R +       + + R GK +   V + ++++A E+VK
+Sbjct  3   LFKFAIDVQYRSNVRDPRGETIERVLREEKGLPVKKLRLGKSIHLEVEAENKEKAYEIVK  62
+
+Query  62  KLADEMRLYNPIVHKIEIR  80
+           K  +E+ L NP+V + E+R
+Sbjct  63  KACEEL-LVNPVVEEYEVR  80
+
+
+>sp|O28338|PURS_ARCFU Phosphoribosylformylglycinamidine synthase 
+subunit PurS OS=Archaeoglobus fulgidus (strain ATCC 49558 
+/ VC-16 / DSM 4304 / JCM 9628 / NBRC 100126) OX=224325 GN=purS 
+PE=3 SV=1
+Length=80
+
+ Score = 71.3 bits (173),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 19/75 (25%), Positives = 38/75 (51%), Gaps = 1/75 (1%)
+
+Query  5   VELIITNKEGVRDPEGETIQRYVVSRFSDKIIETRAGKYLVFRVNSSSQQEATELVKKLA  64
+            ++ I  KEGV DPEGE   + +      ++ +    K     + + S++EA   + ++ 
+Sbjct  3   ADVYIELKEGVADPEGEATLKALRLLGFKRVKKVSTVKVFRIDIEARSREEAEREIAEMC  62
+
+Query  65  DEMRLYNPIVHKIEI  79
+           +++ L NP++ K  I
+Sbjct  63  EKL-LANPVIQKYSI  76
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.308    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4966727746
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

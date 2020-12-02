@@ -1,0 +1,347 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2i0za2
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus sub...  191     6e-59
+sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia ...  48.5    6e-06
+sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophil...  47.0    2e-05
+
+
+>sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ytfP PE=4 SV=2
+Length=420
+
+ Score = 191 bits (486),  Expect = 6e-59, Method: Compositional matrix adjust.
+ Identities = 99/169 (59%), Positives = 123/169 (73%), Gaps = 6/169 (4%)
+
+Query  1    PTEVPILSNEPFIRDRSLQGLALRDINLSVLN----AIISHKMDMLFTHFGLSGPAALRC  56
+            PTEVP+ S EPFI+ ++LQGL+LRD+ +SVLN     II+HKMDMLFTHFGLSGPA LRC
+Sbjct  194  PTEVPVTSGEPFIKQKTLQGLSLRDVAVSVLNKKGKPIITHKMDMLFTHFGLSGPAILRC  253
+
+Query  57   SQFVVKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYF  116
+            SQFVVK LKK     + + ID  P+ N E LFQ+M K++KE PKK IKNVLK ++ ERY 
+Sbjct  254  SQFVVKELKK--QPQVPIRIDLYPDINEETLFQKMYKELKEAPKKTIKNVLKPWMQERYL  311
+
+Query  117  LFLLEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            LFLLEKN I  +    ++  +  R  V+D K+FTV  NGT S++KAFVT
+Sbjct  312  LFLLEKNGISPNVSFSELPKDPFRQFVRDCKQFTVLANGTLSLDKAFVT  360
+
+
+>sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia 
+coli (strain K12) OX=83333 GN=yhiN PE=4 SV=3
+Length=400
+
+ Score = 48.5 bits (114),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 46/171 (27%), Positives = 83/171 (49%), Gaps = 31/171 (18%)
+
+Query  4    VPILSNEPFIRD-RSLQGLALRDINLSVLNAIISHKMDMLFTHFGLSGPAALRCSQFVVK  62
+            VP   ++P + + + L G+A+  + ++  N  +  + ++LFTH GLSGPA L+ S +   
+Sbjct  192  VPFTLHKPLLEELQVLAGVAVPSV-ITAENGTV-FRENLLFTHRGLSGPAVLQISSYWQP  249
+
+Query  63   ALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYFLFLLEK  122
+               +F      +SI+ LP+ + E       +Q    P + +KN L  ++P+R    L+E+
+Sbjct  250  G--EF------VSINLLPDVDLETFLN---EQRNAHPNQSLKNTLAVHLPKR----LVER  294
+
+Query  123  NEIDGSEQAGQVSHEKIR--------ALVKDFKEFTVNVNGTQSIEKAFVT  165
+                  +Q GQ+    ++        AL+    ++ V  NGT+    A VT
+Sbjct  295  -----LQQLGQIPDVSLKQLNVRDQQALISTLTDWRVQPNGTEGYRTAEVT  340
+
+
+>sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_0933 PE=1 SV=1
+Length=401
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 42/148 (28%), Positives = 67/148 (45%), Gaps = 17/148 (11%)
+
+Query  22   ALRDINLSVLNAIISHKM---DMLFTHFGLSGPAALRCSQFVVKALKKFKTNTIQMSIDA  78
+            AL  I+L V    +  K     +LFTH G+SGPA L+ S         +   T  + ID 
+Sbjct  210  ALSGISLPVTITALCGKSFYNQLLFTHRGISGPAVLQIS--------NYWQPTESVEIDL  261
+
+Query  79   LPEENSEQLFQRMLKQMKE-DPKKGIKNVLKGYVPERYFLFLLEKNEIDGSEQAGQVSHE  137
+            LP  N E+     + Q K+  PK+ +K +L   +P++     +E+  +   E    +S  
+Sbjct  262  LPNHNVEE----EINQAKQSSPKQMLKTILVRLLPKKLVELWIEQGIVQ-DEVIANISKV  316
+
+Query  138  KIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            +++ LV     +    NGT+    A VT
+Sbjct  317  RVKNLVDFIHHWEFTPNGTEGYRTAEVT  344
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+Results from round 2
+
+
+Query= d2i0za2
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus sub...  252     1e-82
+sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophil...  178     6e-54
+sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia ...  177     2e-53
+
+Sequences not found previously or not previously below threshold:
+
+sp|B0NAQ4|BAIN_CLOS5 3-dehydro-bile acid delta(4,6)-reductase OS=...  62.9    7e-11
+
+
+>sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ytfP PE=4 SV=2
+Length=420
+
+ Score = 252 bits (644),  Expect = 1e-82, Method: Composition-based stats.
+ Identities = 99/169 (59%), Positives = 123/169 (73%), Gaps = 6/169 (4%)
+
+Query  1    PTEVPILSNEPFIRDRSLQGLALRDINLSVLN----AIISHKMDMLFTHFGLSGPAALRC  56
+            PTEVP+ S EPFI+ ++LQGL+LRD+ +SVLN     II+HKMDMLFTHFGLSGPA LRC
+Sbjct  194  PTEVPVTSGEPFIKQKTLQGLSLRDVAVSVLNKKGKPIITHKMDMLFTHFGLSGPAILRC  253
+
+Query  57   SQFVVKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYF  116
+            SQFVVK LKK     + + ID  P+ N E LFQ+M K++KE PKK IKNVLK ++ ERY 
+Sbjct  254  SQFVVKELKK--QPQVPIRIDLYPDINEETLFQKMYKELKEAPKKTIKNVLKPWMQERYL  311
+
+Query  117  LFLLEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            LFLLEKN I  +    ++  +  R  V+D K+FTV  NGT S++KAFVT
+Sbjct  312  LFLLEKNGISPNVSFSELPKDPFRQFVRDCKQFTVLANGTLSLDKAFVT  360
+
+
+>sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_0933 PE=1 SV=1
+Length=401
+
+ Score = 178 bits (451),  Expect = 6e-54, Method: Composition-based stats.
+ Identities = 47/166 (28%), Positives = 73/166 (44%), Gaps = 22/166 (13%)
+
+Query  4    VPILSNEPFIRDRSLQGLALRDINLSVLNAIISHKM---DMLFTHFGLSGPAALRCSQFV  60
+            VP    E    D+ L   AL  I+L V    +  K     +LFTH G+SGPA L+ S   
+Sbjct  197  VPFTYRE---TDKFLT--ALSGISLPVTITALCGKSFYNQLLFTHRGISGPAVLQIS---  248
+
+Query  61   VKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKED-PKKGIKNVLKGYVPERYFLFL  119
+                  +   T  + ID LP  N E+     + Q K+  PK+ +K +L   +P++     
+Sbjct  249  -----NYWQPTESVEIDLLPNHNVEE----EINQAKQSSPKQMLKTILVRLLPKKLVELW  299
+
+Query  120  LEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            +E+  +   E    +S  +++ LV     +    NGT+    A VT
+Sbjct  300  IEQGIVQ-DEVIANISKVRVKNLVDFIHHWEFTPNGTEGYRTAEVT  344
+
+
+>sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia 
+coli (strain K12) OX=83333 GN=yhiN PE=4 SV=3
+Length=400
+
+ Score = 177 bits (448),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 44/171 (26%), Positives = 78/171 (46%), Gaps = 31/171 (18%)
+
+Query  4    VPILSNEPFIRD-RSLQGLALRDINLSVLNAIISHKMDMLFTHFGLSGPAALRCSQFVVK  62
+            VP   ++P + + + L G+A+  + ++  N  +  + ++LFTH GLSGPA L+ S +   
+Sbjct  192  VPFTLHKPLLEELQVLAGVAVPSV-ITAENGTV-FRENLLFTHRGLSGPAVLQISSYWQP  249
+
+Query  63   ALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYFLFLLEK  122
+                       +SI+ LP+ + E       +Q    P + +KN L  ++P+R    L   
+Sbjct  250  G--------EFVSINLLPDVDLETFLN---EQRNAHPNQSLKNTLAVHLPKRLVERL---  295
+
+Query  123  NEIDGSEQAGQVSHEKIR--------ALVKDFKEFTVNVNGTQSIEKAFVT  165
+                  +Q GQ+    ++        AL+    ++ V  NGT+    A VT
+Sbjct  296  ------QQLGQIPDVSLKQLNVRDQQALISTLTDWRVQPNGTEGYRTAEVT  340
+
+
+>sp|B0NAQ4|BAIN_CLOS5 3-dehydro-bile acid delta(4,6)-reductase 
+OS=Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 
+13733 / 19) OX=411468 GN=baiN PE=1 SV=1
+Length=409
+
+ Score = 62.9 bits (151),  Expect = 7e-11, Method: Composition-based stats.
+ Identities = 27/125 (22%), Positives = 58/125 (46%), Gaps = 2/125 (2%)
+
+Query  40   DMLFTHFGLSGPAALRCSQFVVKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDP  99
+            +M  T +G+SG    + S+ + K L  ++   +++ +D LPE  + Q+ +     + + P
+Sbjct  228  EMQITAYGISGIPVFQISRHIAKGL--YEGKEMKVRVDFLPEMEASQVRKAFNTHLDKCP  285
+
+Query  100  KKGIKNVLKGYVPERYFLFLLEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSI  159
+                +  L G  P++    LLE + I  +  A ++   +   L++  K+  + +  T   
+Sbjct  286  YATCQEFLTGIFPKKLIPRLLELSHIRQNFPASELKPAQWEDLIRACKQTLLTIEDTNGF  345
+
+Query  160  EKAFV  164
+            + A V
+Sbjct  346  DNAQV  350
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.121    0.303    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0372    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+Results from round 3
+
+
+Query= d2i0za2
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus sub...  234     1e-75
+sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophil...  172     1e-51
+sp|B0NAQ4|BAIN_CLOS5 3-dehydro-bile acid delta(4,6)-reductase OS=...  168     9e-50
+sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia ...  165     6e-49
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q795R8|YTFP_BACSU Uncharacterized protein YtfP OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ytfP PE=4 SV=2
+Length=420
+
+ Score = 234 bits (597),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 99/169 (59%), Positives = 123/169 (73%), Gaps = 6/169 (4%)
+
+Query  1    PTEVPILSNEPFIRDRSLQGLALRDINLSVLN----AIISHKMDMLFTHFGLSGPAALRC  56
+            PTEVP+ S EPFI+ ++LQGL+LRD+ +SVLN     II+HKMDMLFTHFGLSGPA LRC
+Sbjct  194  PTEVPVTSGEPFIKQKTLQGLSLRDVAVSVLNKKGKPIITHKMDMLFTHFGLSGPAILRC  253
+
+Query  57   SQFVVKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYF  116
+            SQFVVK LKK     + + ID  P+ N E LFQ+M K++KE PKK IKNVLK ++ ERY 
+Sbjct  254  SQFVVKELKK--QPQVPIRIDLYPDINEETLFQKMYKELKEAPKKTIKNVLKPWMQERYL  311
+
+Query  117  LFLLEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            LFLLEKN I  +    ++  +  R  V+D K+FTV  NGT S++KAFVT
+Sbjct  312  LFLLEKNGISPNVSFSELPKDPFRQFVRDCKQFTVLANGTLSLDKAFVT  360
+
+
+>sp|P44941|Y933_HAEIN Uncharacterized protein HI_0933 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_0933 PE=1 SV=1
+Length=401
+
+ Score = 172 bits (436),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 47/166 (28%), Positives = 73/166 (44%), Gaps = 22/166 (13%)
+
+Query  4    VPILSNEPFIRDRSLQGLALRDINLSVLNAIISHKM---DMLFTHFGLSGPAALRCSQFV  60
+            VP    E    D+ L   AL  I+L V    +  K     +LFTH G+SGPA L+ S   
+Sbjct  197  VPFTYRE---TDKFLT--ALSGISLPVTITALCGKSFYNQLLFTHRGISGPAVLQIS---  248
+
+Query  61   VKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKED-PKKGIKNVLKGYVPERYFLFL  119
+                  +   T  + ID LP  N E+     + Q K+  PK+ +K +L   +P++     
+Sbjct  249  -----NYWQPTESVEIDLLPNHNVEE----EINQAKQSSPKQMLKTILVRLLPKKLVELW  299
+
+Query  120  LEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+            +E+  +   E    +S  +++ LV     +    NGT+    A VT
+Sbjct  300  IEQGIV-QDEVIANISKVRVKNLVDFIHHWEFTPNGTEGYRTAEVT  344
+
+
+>sp|B0NAQ4|BAIN_CLOS5 3-dehydro-bile acid delta(4,6)-reductase 
+OS=Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 
+13733 / 19) OX=411468 GN=baiN PE=1 SV=1
+Length=409
+
+ Score = 168 bits (424),  Expect = 9e-50, Method: Composition-based stats.
+ Identities = 27/125 (22%), Positives = 58/125 (46%), Gaps = 2/125 (2%)
+
+Query  40   DMLFTHFGLSGPAALRCSQFVVKALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDP  99
+            +M  T +G+SG    + S+ + K L  ++   +++ +D LPE  + Q+ +     + + P
+Sbjct  228  EMQITAYGISGIPVFQISRHIAKGL--YEGKEMKVRVDFLPEMEASQVRKAFNTHLDKCP  285
+
+Query  100  KKGIKNVLKGYVPERYFLFLLEKNEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSI  159
+                +  L G  P++    LLE + I  +  A ++   +   L++  K+  + +  T   
+Sbjct  286  YATCQEFLTGIFPKKLIPRLLELSHIRQNFPASELKPAQWEDLIRACKQTLLTIEDTNGF  345
+
+Query  160  EKAFV  164
+            + A V
+Sbjct  346  DNAQV  350
+
+
+>sp|P37631|YHIN_ECOLI Uncharacterized protein YhiN OS=Escherichia 
+coli (strain K12) OX=83333 GN=yhiN PE=4 SV=3
+Length=400
+
+ Score = 165 bits (417),  Expect = 6e-49, Method: Composition-based stats.
+ Identities = 43/163 (26%), Positives = 78/163 (48%), Gaps = 15/163 (9%)
+
+Query  4    VPILSNEPFIRD-RSLQGLALRDINLSVLNAIISHKMDMLFTHFGLSGPAALRCSQFVVK  62
+            VP   ++P + + + L G+A+  + ++  N  +  + ++LFTH GLSGPA L+ S +   
+Sbjct  192  VPFTLHKPLLEELQVLAGVAVPSV-ITAENGTV-FRENLLFTHRGLSGPAVLQISSYWQP  249
+
+Query  63   ALKKFKTNTIQMSIDALPEENSEQLFQRMLKQMKEDPKKGIKNVLKGYVPERYFLFLLEK  122
+                       +SI+ LP+ + E       +Q    P + +KN L  ++P+R    L + 
+Sbjct  250  G--------EFVSINLLPDVDLETFLN---EQRNAHPNQSLKNTLAVHLPKRLVERLQQL  298
+
+Query  123  NEIDGSEQAGQVSHEKIRALVKDFKEFTVNVNGTQSIEKAFVT  165
+             +I       Q++    +AL+    ++ V  NGT+    A VT
+Sbjct  299  GQI-PDVSLKQLNVRDQQALISTLTDWRVQPNGTEGYRTAEVT  340
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.120    0.284    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0366    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,167 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1kyqa2
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P15807|MET8_YEAST Siroheme biosynthesis protein MET8 OS=Saccha...  253     2e-85
+sp|O14172|MET8_SCHPO Siroheme biosynthesis protein met8 OS=Schizo...  52.0    9e-08
+
+
+>sp|P15807|MET8_YEAST Siroheme biosynthesis protein MET8 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=MET8 PE=1 SV=1
+Length=274
+
+ Score = 253 bits (645),  Expect = 2e-85, Method: Compositional matrix adjust.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL  60
+            GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL
+Sbjct  151  GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL  210
+
+Query  61   APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE  120
+            APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE
+Sbjct  211  APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE  270
+
+Query  121  YCS  123
+            YCS
+Sbjct  271  YCS  273
+
+
+>sp|O14172|MET8_SCHPO Siroheme biosynthesis protein met8 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=met8 PE=3 SV=1
+Length=264
+
+ Score = 52.0 bits (123),  Expect = 9e-08, Method: Compositional matrix adjust.
+ Identities = 29/92 (32%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  10   LQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLLAPDDKDVKY  69
+            LQI++STNG  P+  +L+R +I +       +ALE    K G LR+ +R + P+ ++ + 
+Sbjct  135  LQIMVSTNGKGPKLASLIRKKIESSINPATGMALE----KTGLLRQKLRDIVPEPENSRK  190
+
+Query  70   RMDWARRCTDLFGIQHCHNID---VKRLLDLF  98
+            RM W     +L+ ++    +D   + RLL  F
+Sbjct  191  RMRWMIEICELWSLEELAMLDENLINRLLGYF  222
+
+
+
+Lambda      K        H        a         alpha
+   0.327    0.144    0.437    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5020015638
+Results from round 2
+
+
+Query= d1kyqa2
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P15807|MET8_YEAST Siroheme biosynthesis protein MET8 OS=Saccha...  222     2e-73
+sp|O14172|MET8_SCHPO Siroheme biosynthesis protein met8 OS=Schizo...  134     4e-39
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P15807|MET8_YEAST Siroheme biosynthesis protein MET8 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=MET8 PE=1 SV=1
+Length=274
+
+ Score = 222 bits (566),  Expect = 2e-73, Method: Composition-based stats.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL  60
+            GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL
+Sbjct  151  GANLEIGDRLQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLL  210
+
+Query  61   APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE  120
+            APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE
+Sbjct  211  APDDKDVKYRMDWARRCTDLFGIQHCHNIDVKRLLDLFKVMFQEQNCSLQFPPRERLLSE  270
+
+Query  121  YCS  123
+            YCS
+Sbjct  271  YCS  273
+
+
+>sp|O14172|MET8_SCHPO Siroheme biosynthesis protein met8 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=met8 PE=3 SV=1
+Length=264
+
+ Score = 134 bits (338),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 29/92 (32%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  10   LQILISTNGLSPRFGALVRDEIRNLFTQMGDLALEDAVVKLGELRRGIRLLAPDDKDVKY  69
+            LQI++STNG  P+  +L+R +I +       +ALE    K G LR+ +R + P+ ++ + 
+Sbjct  135  LQIMVSTNGKGPKLASLIRKKIESSINPATGMALE----KTGLLRQKLRDIVPEPENSRK  190
+
+Query  70   RMDWARRCTDLFGIQHCHNID---VKRLLDLF  98
+            RM W     +L+ ++    +D   + RLL  F
+Sbjct  191  RMRWMIEICELWSLEELAMLDENLINRLLGYF  222
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.140    0.400    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0428    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5020015638
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

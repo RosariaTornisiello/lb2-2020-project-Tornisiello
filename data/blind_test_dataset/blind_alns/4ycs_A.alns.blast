@@ -1,0 +1,1360 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4ycs_A
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria ...  64.3    5e-12
+sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria ...  64.3    5e-12
+sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Py...  59.7    2e-10
+sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyroc...  57.4    1e-09
+sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyroc...  55.1    9e-09
+sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein B...  51.6    1e-07
+sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein Nu...  49.7    8e-07
+sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdor...  48.5    2e-06
+sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavar...  44.3    5e-05
+sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema palli...  37.7    0.010
+
+
+>sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=tcsA PE=3 SV=2
+Length=357
+
+ Score = 64.3 bits (155),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 37/125 (30%), Positives = 66/125 (53%), Gaps = 6/125 (5%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDILCN  58
+            +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++    
+Sbjct  42   TVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTAVR  101
+
+Query  59   DNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLI  118
+             +YDLI  +G +    +E V+K+ PK QFAI+D   D +  N+ SI ++DN   YL G++
+Sbjct  102  SDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTIDDR-DNVVSIGFKDNDGSYLVGVV  160
+
+Query  119  AGKXT  123
+            AG  T
+Sbjct  161  AGLTT  165
+
+
+>sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=tcsA PE=3 SV=1
+Length=357
+
+ Score = 64.3 bits (155),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 37/125 (30%), Positives = 66/125 (53%), Gaps = 6/125 (5%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDILCN  58
+            +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++    
+Sbjct  42   TVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTAVR  101
+
+Query  59   DNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLI  118
+             +YDLI  +G +    +E V+K+ PK QFAI+D   D +  N+ SI ++DN   YL G++
+Sbjct  102  SDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTIDDR-DNVVSIGFKDNDGSYLVGVV  160
+
+Query  119  AGKXT  123
+            AG  T
+Sbjct  161  AGLTT  165
+
+
+>sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB04520 
+PE=3 SV=1
+Length=404
+
+ Score = 59.7 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 35/119 (29%), Positives = 59/119 (50%), Gaps = 1/119 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILC-NDN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           ++ L  +  
+Sbjct  35   KVKVAILFDVGGRGDLSFNDMAYLGAERAKKELGVEIEYMTPKSKEDMKPLLEQLAQSKE  94
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIA  119
+            YDL++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + ++  L G+IA
+Sbjct  95   YDLLVLVGFLWTSPLNEVADKYPDQKFALIDSTTGKVRENEVDILFREQEAAALMGVIA  153
+
+
+>sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 
+/ Vc1) OX=186497 GN=PF1695 PE=3 SV=1
+Length=398
+
+ Score = 57.4 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 33/119 (28%), Positives = 59/119 (50%), Gaps = 1/119 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILC-NDN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           +  L  +  
+Sbjct  32   KVKVAVLFDVGGRGDLSFNDMAYLGAERAKKELGVEVEYMTPKSREDMVPLLKQLAESKE  91
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIA  119
+            YDL++ +G  +  PL+ VA +YP Q+FA+ID    K   N   I + + ++  L G+IA
+Sbjct  92   YDLLVLIGFLWTTPLDQVADQYPDQKFALIDSTTGKVRENEVDILFREQEAAALIGVIA  150
+
+
+>sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 
+/ NBRC 100139 / OT-3) OX=70601 GN=PH1714 PE=3 SV=1
+Length=405
+
+ Score = 55.1 bits (131),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 34/116 (29%), Positives = 56/116 (48%), Gaps = 1/116 (1%)
+
+Query  5    VSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILC-NDNYDL  63
+            V+ + D+ G  + + N+ A L    A+K+L +    +           ++ L  +  YDL
+Sbjct  39   VAILFDVGGRGDLSFNDMAYLGAERAKKELGVKIEYMTPKSKEDMVPLLEQLAKSKEYDL  98
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIA  119
+            ++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + +   L G+IA
+Sbjct  99   LVLVGFLWTTPLNEVADKYPDQKFALIDSTTGKVRPNEVDILFREQEVAALMGVIA  154
+
+
+>sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein 
+BmpA OS=Lactococcus lactis subsp. cremoris (strain MG1363) 
+OX=416870 GN=bmpA PE=1 SV=1
+Length=351
+
+ Score = 51.6 bits (122),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 35/120 (29%), Positives = 56/120 (47%), Gaps = 5/120 (4%)
+
+Query  8    ILDIEGTNNEAXNNSALLALNNAQKKLNIDTNK----VESDDSSTFSNSIDILCNDNYDL  63
+            + D  G N+ + N SA   L +  K+ N+         +S+ +S ++ + +      Y L
+Sbjct  43   VTDANGVNDRSFNQSAWEGLQSWGKENNLKKGTGYTYFQSNSASDYTTNYNSAEQQGYKL  102
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+            +  +G          AK  PK  F I+D    K   N+TS ++ DN+S YLAG+ A K T
+Sbjct  103  LFGIGFSLQDATSAAAKNNPKSNFVIVD-SVIKDQKNVTSATFADNESAYLAGVAAAKAT  161
+
+
+>sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein 
+NupN OS=Bacillus subtilis (strain 168) OX=224308 GN=nupN PE=1 
+SV=2
+Length=359
+
+ Score = 49.7 bits (117),  Expect = 8e-07, Method: Compositional matrix adjust.
+ Identities = 32/123 (26%), Positives = 63/123 (51%), Gaps = 7/123 (6%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNK-----VESDDSSTFSNSIDIL  56
+            K SV+ + D+ G ++++ N SA   +    K+  +   K     ++S   + ++ +++ L
+Sbjct  38   KFSVAMVTDVGGVDDKSFNQSAWEGIQAFGKENGLKKGKNGYDYLQSKSDADYTTNLNKL  97
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAG  116
+              +N+DLI  VG      +  +A +     FAIID   DK   N+ SI++++ +  +L G
+Sbjct  98   ARENFDLIYGVGYLMEDSISEIADQRKNTNFAIIDAVVDKD--NVASITFKEQEGSFLVG  155
+
+Query  117  LIA  119
+            + A
+Sbjct  156  VAA  158
+
+
+>sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpA PE=3 SV=1
+Length=339
+
+ Score = 48.5 bits (114),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 35/116 (30%), Positives = 63/116 (54%), Gaps = 4/116 (3%)
+
+Query  9    LDIEGT-NNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDLIIAV  67
+            L I+GT ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   DLI  +
+Sbjct  33   LIIDGTFDDKSFNESALNGVKKVKEEFKIELVLKESSSNSYLSD-LEGLKDAGSDLIWLI  91
+
+Query  68   GARFAKPLEXVAKKYPKQQFAIID--YEYDKQPSNITSISYEDNKSGYLAGLIAGK  121
+            G RF+   +  A + P  ++AIID  Y  D  P+N+  +++   +  +L G IA K
+Sbjct  92   GYRFSDVAKVAALQNPDMKYAIIDPIYSNDPIPANLVGMTFRAQEGAFLTGYIAAK  147
+
+
+>sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpA2 PE=3 SV=2
+Length=337
+
+ Score = 44.3 bits (103),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 31/116 (27%), Positives = 65/116 (56%), Gaps = 4/116 (3%)
+
+Query  11   IEGT-NNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDLIIAVGA  69
+            + GT ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +LI  +G 
+Sbjct  35   VNGTFDDKSFNESALNGIKKVKEEFKIELVLKESSTNSYLSD-LEGLKDAGSNLIWLIGY  93
+
+Query  70   RFAKPLEXVAKKYPKQQFAIIDYEYDKQ--PSNITSISYEDNKSGYLAGLIAGKXT  123
+            RF+   + V+ + P+ ++AIID  Y ++  P+N+  +++   +  +L G IA K +
+Sbjct  94   RFSDVAKAVSLQNPEIKYAIIDPVYSEEPIPTNLVGMTFRAQEGAFLTGYIAAKVS  149
+
+
+>sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema pallidum 
+(strain Nichols) OX=243276 GN=tmpC PE=1 SV=2
+Length=353
+
+ Score = 37.7 bits (86),  Expect = 0.010, Method: Compositional matrix adjust.
+ Identities = 22/115 (19%), Positives = 53/115 (46%), Gaps = 1/115 (1%)
+
+Query  5    VSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDLI  64
+            V  + D    ++++ N      ++   ++ N     V +   + +  S+    ++N  L+
+Sbjct  42   VGMVTDSGDIDDKSFNQQVWEGISRFAQENNAKCKYVTASTDAEYVPSLSAFADENMGLV  101
+
+Query  65   IAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIA  119
+            +A G+   + +   + ++PKQ+F +ID     +  N+ S  +  N+  +L G+ A
+Sbjct  102  VACGSFLVEAVIETSARFPKQKFLVIDAVVQDR-DNVVSAVFGQNEGSFLVGVAA  155
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.127    0.339    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5020015638
+Results from round 2
+
+
+Query= 4ycs_A
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyroc...  162     2e-48
+sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Py...  162     3e-48
+sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyroc...  156     3e-46
+sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria ...  140     3e-40
+sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein Nu...  138     1e-39
+sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria ...  137     4e-39
+sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdor...  132     2e-37
+sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavar...  129     2e-36
+sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein B...  127     2e-35
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q661N6|BMPA1_BORBP Basic membrane protein A1 OS=Borrelia bavar...  126     3e-35
+sp|Q0SND0|BMPA_BORAP Basic membrane protein A OS=Borrelia afzelii...  123     5e-34
+sp|P0C223|BMPA_BORAF Basic membrane protein A (Fragment) OS=Borre...  122     9e-34
+sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema palli...  97.5    4e-24
+sp|O31362|BMPB_BORBP Basic membrane protein B OS=Borrelia bavarie...  91.7    6e-22
+sp|Q45011|BMPB_BORBU Basic membrane protein B OS=Borrelia burgdor...  91.3    7e-22
+sp|O31284|BMPB_BORAP Basic membrane protein B OS=Borrelia afzelii...  91.0    1e-21
+sp|P0CL55|BMPD_BORBU Basic membrane protein D OS=Borrelia burgdor...  80.9    4e-18
+sp|E4S1L1|BMPD_BORBJ Basic membrane protein D OS=Borrelia burgdor...  80.9    4e-18
+sp|P0CL65|BMPC_BORBU Basic membrane protein C OS=Borrelia burgdor...  67.8    3e-13
+sp|E4QEZ3|BMPC_BORBN Basic membrane protein C OS=Borrelia burgdor...  67.8    3e-13
+sp|O32436|MED_BACSU Transcriptional activator protein med OS=Baci...  52.8    5e-08
+sp|Q2YKI6|PBP_BRUA2 Purine-binding protein BAB2_0673 OS=Brucella ...  45.5    3e-05
+sp|P47286|Y040_MYCGE Uncharacterized lipoprotein MG040 OS=Mycopla...  42.8    2e-04
+sp|D4GPW5|TSGAD_HALVD Putative ABC transporter glucose-binding pr...  42.4    3e-04
+sp|P75062|Y052_MYCPN Uncharacterized lipoprotein MG040 homolog OS...  38.9    0.005
+
+
+>sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 
+/ Vc1) OX=186497 GN=PF1695 PE=3 SV=1
+Length=398
+
+ Score = 162 bits (410),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 33/120 (28%), Positives = 59/120 (49%), Gaps = 1/120 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILC-NDN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           +  L  +  
+Sbjct  32   KVKVAVLFDVGGRGDLSFNDMAYLGAERAKKELGVEVEYMTPKSREDMVPLLKQLAESKE  91
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            YDL++ +G  +  PL+ VA +YP Q+FA+ID    K   N   I + + ++  L G+IA 
+Sbjct  92   YDLLVLIGFLWTTPLDQVADQYPDQKFALIDSTTGKVRENEVDILFREQEAAALIGVIAS  151
+
+
+>sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB04520 
+PE=3 SV=1
+Length=404
+
+ Score = 162 bits (409),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 35/120 (29%), Positives = 58/120 (48%), Gaps = 1/120 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCN-DN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           ++ L     
+Sbjct  35   KVKVAILFDVGGRGDLSFNDMAYLGAERAKKELGVEIEYMTPKSKEDMKPLLEQLAQSKE  94
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            YDL++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + ++  L G+IA 
+Sbjct  95   YDLLVLVGFLWTSPLNEVADKYPDQKFALIDSTTGKVRENEVDILFREQEAAALMGVIAS  154
+
+
+>sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 
+/ NBRC 100139 / OT-3) OX=70601 GN=PH1714 PE=3 SV=1
+Length=405
+
+ Score = 156 bits (395),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 34/119 (29%), Positives = 56/119 (47%), Gaps = 1/119 (1%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILC-NDNY  61
+              V+ + D+ G  + + N+ A L    A+K+L +    +           ++ L  +  Y
+Sbjct  37   IKVAILFDVGGRGDLSFNDMAYLGAERAKKELGVKIEYMTPKSKEDMVPLLEQLAKSKEY  96
+
+Query  62   DLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            DL++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + +   L G+IA 
+Sbjct  97   DLLVLVGFLWTTPLNEVADKYPDQKFALIDSTTGKVRPNEVDILFREQEVAALMGVIAS  155
+
+
+>sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=tcsA PE=3 SV=2
+Length=357
+
+ Score = 140 bits (352),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 37/126 (29%), Positives = 65/126 (52%), Gaps = 6/126 (5%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDILC  57
+             +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++   
+Sbjct  41   FTVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTAV  100
+
+Query  58   NDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGL  117
+              +YDLI  +G +    +E V+K+ PK QFAI+D   D    N+ SI ++DN   YL G+
+Sbjct  101  RSDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTID-DRDNVVSIGFKDNDGSYLVGV  159
+
+Query  118  IAGKXT  123
+            +AG  T
+Sbjct  160  VAGLTT  165
+
+
+>sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein 
+NupN OS=Bacillus subtilis (strain 168) OX=224308 GN=nupN PE=1 
+SV=2
+Length=359
+
+ Score = 138 bits (348),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 64/128 (50%), Gaps = 7/128 (5%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTN-----KVESDDSSTFSNSIDI  55
+            +K SV+ + D+ G ++++ N SA   +    K+  +         ++S   + ++ +++ 
+Sbjct  37   NKFSVAMVTDVGGVDDKSFNQSAWEGIQAFGKENGLKKGKNGYDYLQSKSDADYTTNLNK  96
+
+Query  56   LCNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLA  115
+            L  +N+DLI  VG      +  +A +     FAIID   DK   N+ SI++++ +  +L 
+Sbjct  97   LARENFDLIYGVGYLMEDSISEIADQRKNTNFAIIDAVVDKD--NVASITFKEQEGSFLV  154
+
+Query  116  GLIAGKXT  123
+            G+ A   +
+Sbjct  155  GVAAALSS  162
+
+
+>sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=tcsA PE=3 SV=1
+Length=357
+
+ Score = 137 bits (344),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 37/126 (29%), Positives = 65/126 (52%), Gaps = 6/126 (5%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDILC  57
+             +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++   
+Sbjct  41   FTVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTAV  100
+
+Query  58   NDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGL  117
+              +YDLI  +G +    +E V+K+ PK QFAI+D   D    N+ SI ++DN   YL G+
+Sbjct  101  RSDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTID-DRDNVVSIGFKDNDGSYLVGV  159
+
+Query  118  IAGKXT  123
+            +AG  T
+Sbjct  160  VAGLTT  165
+
+
+>sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpA PE=3 SV=1
+Length=339
+
+ Score = 132 bits (331),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 35/122 (29%), Positives = 64/122 (52%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS I+D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   DL
+Sbjct  30   KVSLIID-GTFDDKSFNESALNGVKKVKEEFKIELVLKESSSNSYLSD-LEGLKDAGSDL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIID--YEYDKQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G RF+   +  A + P  ++AIID  Y  D  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYRFSDVAKVAALQNPDMKYAIIDPIYSNDPIPANLVGMTFRAQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  LS  149
+
+
+>sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpA2 PE=3 SV=2
+Length=337
+
+ Score = 129 bits (325),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 31/117 (26%), Positives = 65/117 (56%), Gaps = 4/117 (3%)
+
+Query  10   DIEGT-NNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDLIIAVG  68
+             + GT ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +LI  +G
+Sbjct  34   IVNGTFDDKSFNESALNGIKKVKEEFKIELVLKESSTNSYLSD-LEGLKDAGSNLIWLIG  92
+
+Query  69   ARFAKPLEXVAKKYPKQQFAIIDYEYDKQ--PSNITSISYEDNKSGYLAGLIAGKXT  123
+             RF+   + V+ + P+ ++AIID  Y ++  P+N+  +++   +  +L G IA K +
+Sbjct  93   YRFSDVAKAVSLQNPEIKYAIIDPVYSEEPIPTNLVGMTFRAQEGAFLTGYIAAKVS  149
+
+
+>sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein 
+BmpA OS=Lactococcus lactis subsp. cremoris (strain MG1363) 
+OX=416870 GN=bmpA PE=1 SV=1
+Length=351
+
+ Score = 127 bits (319),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 35/127 (28%), Positives = 58/127 (46%), Gaps = 5/127 (4%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTN----KVESDDSSTFSNSIDIL  56
+            +    + + D  G N+ + N SA   L +  K+ N+         +S+ +S ++ + +  
+Sbjct  36   TDLKAAIVTDANGVNDRSFNQSAWEGLQSWGKENNLKKGTGYTYFQSNSASDYTTNYNSA  95
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAG  116
+                Y L+  +G          AK  PK  F I+D    K   N+TS ++ DN+S YLAG
+Sbjct  96   EQQGYKLLFGIGFSLQDATSAAAKNNPKSNFVIVDSVI-KDQKNVTSATFADNESAYLAG  154
+
+Query  117  LIAGKXT  123
+            + A K T
+Sbjct  155  VAAAKAT  161
+
+
+>sp|Q661N6|BMPA1_BORBP Basic membrane protein A1 OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpA1 PE=3 SV=1
+Length=337
+
+ Score = 126 bits (317),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 32/122 (26%), Positives = 66/122 (54%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS I+D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  30   KVSLIID-GTFDDKSFNESALNGIKKVKEEFKIEPVLKESSTNSYLSD-LEGLKDTGSNL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ--PSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ + P+ ++AIID  Y  +  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYKFSDVAKSVSLQNPEIKYAIIDPVYSDEPIPANLVGMTFRSQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  VS  149
+
+
+>sp|Q0SND0|BMPA_BORAP Basic membrane protein A OS=Borrelia afzelii 
+(strain PKo) OX=390236 GN=bmpA PE=3 SV=1
+Length=339
+
+ Score = 123 bits (309),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 64/122 (52%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS ++D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  30   KVSLVID-GTFDDKSFNESALNGVKKLKEEFEIELVLKESSTNSYLSD-LEGLKDAGSNL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD--KQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ +  + ++AIID  Y     P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYKFSDVAKAVSLQNSEMKYAIIDPVYSNEPIPANLVGMTFRAQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  VS  149
+
+
+>sp|P0C223|BMPA_BORAF Basic membrane protein A (Fragment) OS=Borrelia 
+afzelii OX=29518 GN=bmpA PE=3 SV=1
+Length=325
+
+ Score = 122 bits (306),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 64/122 (52%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS ++D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  16   KVSLVID-GTFDDKSFNESALNGVKKLKEEFEIELVLKESSTNSYLSD-LEGLKDAGSNL  73
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD--KQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ +  + ++AIID  Y     P+N+  +++   +  +L G IA K
+Sbjct  74   IWLIGYKFSDVAKAVSLQNSEMKYAIIDPVYSNEPIPANLVGMTFRAQEGAFLTGYIAAK  133
+
+Query  122  XT  123
+             +
+Sbjct  134  VS  135
+
+
+>sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema pallidum 
+(strain Nichols) OX=243276 GN=tmpC PE=1 SV=2
+Length=353
+
+ Score = 97.5 bits (241),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 53/119 (45%), Gaps = 1/119 (1%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYD  62
+              V  + D    ++++ N      ++   ++ N     V +   + +  S+    ++N  
+Sbjct  40   FVVGMVTDSGDIDDKSFNQQVWEGISRFAQENNAKCKYVTASTDAEYVPSLSAFADENMG  99
+
+Query  63   LIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGK  121
+            L++A G+   + +   + ++PKQ+F +ID    +   N+ S  +  N+  +L G+ A  
+Sbjct  100  LVVACGSFLVEAVIETSARFPKQKFLVIDAVV-QDRDNVVSAVFGQNEGSFLVGVAAAL  157
+
+
+>sp|O31362|BMPB_BORBP Basic membrane protein B OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpB PE=3 SV=2
+Length=341
+
+ Score = 91.7 bits (226),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 60/130 (46%), Gaps = 8/130 (6%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDIL  56
+            SK  +S ++D    ++++ N+SA  AL   ++    NI+     +     S++ + +D L
+Sbjct  26   SKIKISMLVD-GVLDDKSFNSSANRALLRLEEDFPENIEKVFSSAASGVYSSYVSDLDNL  84
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGY  113
+              +  DLI  VG         V+ + PK  + IID  Y      P N+  + +   +  +
+Sbjct  85   KMNGSDLIWLVGYMLTDASLSVSLENPKISYGIIDPVYSDDVQIPKNLIGVVFRIEQGAF  144
+
+Query  114  LAGLIAGKXT  123
+            LAG IA K +
+Sbjct  145  LAGYIAAKKS  154
+
+
+>sp|Q45011|BMPB_BORBU Basic membrane protein B OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpB PE=3 SV=1
+Length=341
+
+ Score = 91.3 bits (225),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 34/129 (26%), Positives = 60/129 (47%), Gaps = 8/129 (6%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDILC  57
+            K  +S ++D    ++++ N+SA  AL   +K    NI+     +     S++ + +D L 
+Sbjct  27   KIKISMLVD-GVLDDKSFNSSANEALLRLKKDFPENIEEVFSCAISGVYSSYVSDLDNLK  85
+
+Query  58   NDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGYL  114
+             +  DLI  VG         V+ + PK  + IID  Y      P N+ ++ +   +  +L
+Sbjct  86   RNGSDLIWLVGYMLTDASLLVSSENPKISYGIIDPIYGDDVQIPENLIAVVFRVEQGAFL  145
+
+Query  115  AGLIAGKXT  123
+            AG IA K +
+Sbjct  146  AGYIAAKKS  154
+
+
+>sp|O31284|BMPB_BORAP Basic membrane protein B OS=Borrelia afzelii 
+(strain PKo) OX=390236 GN=bmpB PE=3 SV=2
+Length=341
+
+ Score = 91.0 bits (224),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 60/130 (46%), Gaps = 8/130 (6%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDIL  56
+            SK  +S ++D    ++++ N+SA  AL   +K    NI+     +     S++ + +D L
+Sbjct  26   SKIKISMLVD-GVLDDKSFNSSANEALLRLKKDFPENIEKVFSSAVSGVYSSYVSDLDNL  84
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGY  113
+              +   LI  VG   A     V+ + P+  + IID  Y      P N+  + +   +  +
+Sbjct  85   KMNGSGLIWLVGYMLADVSLSVSLENPEINYGIIDPIYGDDVQIPKNLIGVVFRIEQGAF  144
+
+Query  114  LAGLIAGKXT  123
+            LAG IA K +
+Sbjct  145  LAGYIAAKKS  154
+
+
+>sp|P0CL55|BMPD_BORBU Basic membrane protein D OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpD PE=3 SV=1
+Length=341
+
+ Score = 80.9 bits (198),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 62/123 (50%), Gaps = 4/123 (3%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYD  62
+            K+VS I+D    +++  N S+  A+   +  LNI+  +  S  +S   +  + L + N +
+Sbjct  28   KTVSLIVD-GAFDDKGFNESSSKAIRKLKADLNINIIEKASTGNSYLGDIAN-LEDGNSN  85
+
+Query  63   LIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDK--QPSNITSISYEDNKSGYLAGLIAG  120
+            LI  +G R +  L   A +     +AII+  YD+   P N+ +IS+   +  +LAG  A 
+Sbjct  86   LIWGIGFRLSDILFQRASENVSVNYAIIEGVYDEIQIPKNLLNISFRSEEVAFLAGYFAS  145
+
+Query  121  KXT  123
+            K +
+Sbjct  146  KAS  148
+
+
+>sp|E4S1L1|BMPD_BORBJ Basic membrane protein D OS=Borrelia burgdorferi 
+(strain JD1) OX=521008 GN=bmpD PE=1 SV=1
+Length=341
+
+ Score = 80.9 bits (198),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 62/123 (50%), Gaps = 4/123 (3%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYD  62
+            K+VS I+D    +++  N S+  A+   +  LNI+  +  S  +S   +  + L + N +
+Sbjct  28   KTVSLIVD-GAFDDKGFNESSSKAIRKLKADLNINIIEKASTGNSYLGDIAN-LEDGNSN  85
+
+Query  63   LIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDK--QPSNITSISYEDNKSGYLAGLIAG  120
+            LI  +G R +  L   A +     +AII+  YD+   P N+ +IS+   +  +LAG  A 
+Sbjct  86   LIWGIGFRLSDILFQRASENVSVNYAIIEGVYDEIQIPKNLLNISFRSEEVAFLAGYFAS  145
+
+Query  121  KXT  123
+            K +
+Sbjct  146  KAS  148
+
+
+>sp|P0CL65|BMPC_BORBU Basic membrane protein C OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpC PE=3 SV=1
+Length=353
+
+ Score = 67.8 bits (164),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 27/137 (20%), Positives = 50/137 (36%), Gaps = 14/137 (10%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVE----SDDSSTFSNSIDIL  56
+            S K V  +L      ++  N S    +   +    I            +        + +
+Sbjct  27   SDKVVVGVLAHGSFYDKGYNQSVHDGVVKLRDNFGIKLITKSLRPYPIEGKRLLTVDEAM  86
+
+Query  57   CNDNY-------DLIIAVGARFAKPLEXVAKKYPKQQFAIID---YEYDKQPSNITSISY  106
+              D Y       +L   +G RF+     ++ + P   + IID   Y   + P N  +I +
+Sbjct  87   TEDAYEVQKNPLNLFWLIGYRFSDLSVKLSYERPDIYYGIIDAFDYGDIQVPKNSLAIKF  146
+
+Query  107  EDNKSGYLAGLIAGKXT  123
+             + ++ +LAG IA K +
+Sbjct  147  RNEEAAFLAGYIAAKMS  163
+
+
+>sp|E4QEZ3|BMPC_BORBN Basic membrane protein C OS=Borrelia burgdorferi 
+(strain N40) OX=521007 GN=bmpC PE=3 SV=1
+Length=353
+
+ Score = 67.8 bits (164),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 27/137 (20%), Positives = 50/137 (36%), Gaps = 14/137 (10%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVE----SDDSSTFSNSIDIL  56
+            S K V  +L      ++  N S    +   +    I            +        + +
+Sbjct  27   SDKVVVGVLAHGSFYDKGYNQSVHDGVVKLRDNFGIKLITKSLRPYPIEGKRLLTVDEAM  86
+
+Query  57   CNDNY-------DLIIAVGARFAKPLEXVAKKYPKQQFAIID---YEYDKQPSNITSISY  106
+              D Y       +L   +G RF+     ++ + P   + IID   Y   + P N  +I +
+Sbjct  87   TEDAYEVQKNPLNLFWLIGYRFSDLSVKLSYERPDIYYGIIDAFDYGDIQVPKNSLAIKF  146
+
+Query  107  EDNKSGYLAGLIAGKXT  123
+             + ++ +LAG IA K +
+Sbjct  147  RNEEAAFLAGYIAAKMS  163
+
+
+>sp|O32436|MED_BACSU Transcriptional activator protein med OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=med PE=3 SV=1
+Length=317
+
+ Score = 52.8 bits (125),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 24/111 (22%), Positives = 42/111 (38%), Gaps = 3/111 (3%)
+
+Query  14   TNNEAXNNSALLALNNAQKKLNIDTNKVES-DDSSTFSNSIDILCNDNYDLIIAVGARFA  72
+             N+          L N Q K N+D    E         N+I+       +L+   G+ +A
+Sbjct  38   INDLVWGTKGYKGLLNIQSKYNVDVYYKEGVKTEEDIINAIEDFHKRGVNLLYGHGSEYA  97
+
+Query  73   KPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+            +    V + YP  +F I       +  N+TS+ +     G+  G+ A   +
+Sbjct  98   EVFNLVGEDYPDMEFVI--SNAKAKADNVTSVHFSGEAMGFFGGMTAAHMS  146
+
+
+>sp|Q2YKI6|PBP_BRUA2 Purine-binding protein BAB2_0673 OS=Brucella 
+abortus (strain 2308) OX=359391 GN=BAB2_0673 PE=1 SV=1
+Length=350
+
+ Score = 45.5 bits (106),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 20/90 (22%), Positives = 37/90 (41%), Gaps = 3/90 (3%)
+
+Query  35   NIDTNKVESDDS-STFSNSIDILCNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYE  93
+             ++T  +E+    +    SI  +      LI      +  P   VAKK+P  +F      
+Sbjct  54   KVETTFLENVAEGADAERSIKRIARAGNKLIFTTSFGYMDPTVKVAKKFPDVKFE--HAT  111
+
+Query  94   YDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+              K   N+++ +    +  Y+ G+IA K +
+Sbjct  112  GYKTADNMSAYNARFYEGRYVQGVIAAKMS  141
+
+
+>sp|P47286|Y040_MYCGE Uncharacterized lipoprotein MG040 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG040 PE=3 SV=1
+Length=591
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/143 (15%), Positives = 51/143 (36%), Gaps = 38/143 (27%)
+
+Query  16   NEAXNNSALLALNNA-QKKLNIDTNKVESD--------------DSSTFSNSIDILCNDN  60
+            +++ +  +   + +  +K   +D  + +S                 S    + + + ND 
+Sbjct  54   DKSFSQMSYEGIRSFFKKSKGVDLPEADSSQLQEGNGLWKRPGFTLSDRIATFNNIKNDG  113
+
+Query  61   YDLIIAVGARFAKPLEXVAKKY----------PKQQFAIIDYEYDKQ-------------  97
+             D+I+A G    + L+ +               K  F  +D   +K+             
+Sbjct  114  SDVIVATGFNQQESLQAITSDDIRFQSDKESLAKTGFIFVDGAIEKEFNKRNGVPQFKST  173
+
+Query  98   PSNITSISYEDNKSGYLAGLIAG  120
+            P+NI+S+++  +   +L G+   
+Sbjct  174  PTNISSVAFRSDDGSFLTGVATA  196
+
+
+>sp|D4GPW5|TSGAD_HALVD Putative ABC transporter glucose-binding 
+protein TsgA13 OS=Haloferax volcanii (strain ATCC 29605 / 
+DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 2012 / VKM B-1768 / 
+DS2) OX=309800 GN=tsgA13 PE=3 SV=1
+Length=391
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 30/88 (34%), Gaps = 2/88 (2%)
+
+Query  36   IDTNKVESDDSSTFSNSIDILCNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD  95
+            ++T   E+   S      +     + D+I      +  P+  VA+ YP   F        
+Sbjct  106  LETEYTEAVAPSDSERVFEQYAQGDVDVIFGTTFGYQDPMYAVAEDYPDTVFE--HATGY  163
+
+Query  96   KQPSNITSISYEDNKSGYLAGLIAGKXT  123
+            +   N+        +  YLAG   G  T
+Sbjct  164  RTRENMGRYMGRIYEPRYLAGQATGMVT  191
+
+
+>sp|P75062|Y052_MYCPN Uncharacterized lipoprotein MG040 homolog 
+OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_052 PE=3 SV=1
+Length=657
+
+ Score = 38.9 bits (89),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 22/143 (15%), Positives = 50/143 (35%), Gaps = 38/143 (27%)
+
+Query  16   NEAXNNSALLALNN-AQKKLNIDTNKVESD--------------DSSTFSNSIDILCNDN  60
+            +++ +  +   +    + + +I+     S                 S    +   + ND 
+Sbjct  50   DKSFSEMSYEGIRRYFRSQKHIELPSPNSSLLQDGNGLWKRPGRTLSDRIATFKNIKNDG  109
+
+Query  61   YDLIIAVGARFAKPLEXV--------AKKY--PKQQFAIIDYEYDKQ-------------  97
+             D+I+A G    + L+ +        A K    K  F  +D + +K+             
+Sbjct  110  SDVIVATGFNQQEALQAISSDDRRYLADKNDLAKVGFIFVDGQIEKEYNVINKTPQFRST  169
+
+Query  98   PSNITSISYEDNKSGYLAGLIAG  120
+            P NI+S+++  +   +L G+   
+Sbjct  170  PLNISSVAFRSDDGSFLTGVATA  192
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.128    0.298    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0391    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5020015638
+Results from round 3
+
+
+Query= 4ycs_A
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyroc...  145     8e-42
+sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Py...  145     9e-42
+sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyroc...  140     4e-40
+sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavar...  134     2e-38
+sp|Q661N6|BMPA1_BORBP Basic membrane protein A1 OS=Borrelia bavar...  134     2e-38
+sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdor...  134     3e-38
+sp|Q0SND0|BMPA_BORAP Basic membrane protein A OS=Borrelia afzelii...  130     9e-37
+sp|P0C223|BMPA_BORAF Basic membrane protein A (Fragment) OS=Borre...  129     2e-36
+sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein Nu...  128     1e-35
+sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema palli...  126     6e-35
+sp|Q45011|BMPB_BORBU Basic membrane protein B OS=Borrelia burgdor...  125     7e-35
+sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria ...  125     2e-34
+sp|O31284|BMPB_BORAP Basic membrane protein B OS=Borrelia afzelii...  124     2e-34
+sp|O31362|BMPB_BORBP Basic membrane protein B OS=Borrelia bavarie...  123     5e-34
+sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria ...  123     6e-34
+sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein B...  117     8e-32
+sp|P0CL55|BMPD_BORBU Basic membrane protein D OS=Borrelia burgdor...  109     7e-29
+sp|E4S1L1|BMPD_BORBJ Basic membrane protein D OS=Borrelia burgdor...  109     7e-29
+sp|E4QEZ3|BMPC_BORBN Basic membrane protein C OS=Borrelia burgdor...  109     1e-28
+sp|P0CL65|BMPC_BORBU Basic membrane protein C OS=Borrelia burgdor...  109     1e-28
+sp|O32436|MED_BACSU Transcriptional activator protein med OS=Baci...  99.0    7e-25
+sp|D4GPW5|TSGAD_HALVD Putative ABC transporter glucose-binding pr...  90.5    2e-21
+sp|Q2YKI6|PBP_BRUA2 Purine-binding protein BAB2_0673 OS=Brucella ...  85.1    2e-19
+sp|P47286|Y040_MYCGE Uncharacterized lipoprotein MG040 OS=Mycopla...  73.6    4e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|P75062|Y052_MYCPN Uncharacterized lipoprotein MG040 homolog OS...  68.9    1e-13
+sp|Q54U89|GRLL_DICDI Metabotropic glutamate receptor-like protein...  40.8    0.001
+sp|Q54LG8|GRLM_DICDI Metabotropic glutamate receptor-like protein...  40.8    0.001
+
+
+>sp|Q8U0A4|Y1695_PYRFU Uncharacterized lipoprotein PF1695 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 
+/ Vc1) OX=186497 GN=PF1695 PE=3 SV=1
+Length=398
+
+ Score = 145 bits (365),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 33/120 (28%), Positives = 58/120 (48%), Gaps = 1/120 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCN-DN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           +  L     
+Sbjct  32   KVKVAVLFDVGGRGDLSFNDMAYLGAERAKKELGVEVEYMTPKSREDMVPLLKQLAESKE  91
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            YDL++ +G  +  PL+ VA +YP Q+FA+ID    K   N   I + + ++  L G+IA 
+Sbjct  92   YDLLVLIGFLWTTPLDQVADQYPDQKFALIDSTTGKVRENEVDILFREQEAAALIGVIAS  151
+
+
+>sp|Q9V1H5|Y452_PYRAB Uncharacterized lipoprotein PYRAB04520 OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB04520 
+PE=3 SV=1
+Length=404
+
+ Score = 145 bits (365),  Expect = 9e-42, Method: Composition-based stats.
+ Identities = 35/120 (29%), Positives = 58/120 (48%), Gaps = 1/120 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCN-DN  60
+            K  V+ + D+ G  + + N+ A L    A+K+L ++   +           ++ L     
+Sbjct  35   KVKVAILFDVGGRGDLSFNDMAYLGAERAKKELGVEIEYMTPKSKEDMKPLLEQLAQSKE  94
+
+Query  61   YDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            YDL++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + ++  L G+IA 
+Sbjct  95   YDLLVLVGFLWTSPLNEVADKYPDQKFALIDSTTGKVRENEVDILFREQEAAALMGVIAS  154
+
+
+>sp|O59403|Y1714_PYRHO Uncharacterized lipoprotein PH1714 OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 
+/ NBRC 100139 / OT-3) OX=70601 GN=PH1714 PE=3 SV=1
+Length=405
+
+ Score = 140 bits (354),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 34/119 (29%), Positives = 55/119 (46%), Gaps = 1/119 (1%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCN-DNY  61
+              V+ + D+ G  + + N+ A L    A+K+L +    +           ++ L     Y
+Sbjct  37   IKVAILFDVGGRGDLSFNDMAYLGAERAKKELGVKIEYMTPKSKEDMVPLLEQLAKSKEY  96
+
+Query  62   DLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAG  120
+            DL++ VG  +  PL  VA KYP Q+FA+ID    K   N   I + + +   L G+IA 
+Sbjct  97   DLLVLVGFLWTTPLNEVADKYPDQKFALIDSTTGKVRPNEVDILFREQEVAALMGVIAS  155
+
+
+>sp|O31357|BMPA2_BORBP Basic membrane protein A2 OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpA2 PE=3 SV=2
+Length=337
+
+ Score = 134 bits (338),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 32/122 (26%), Positives = 67/122 (55%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS I++    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  30   KVSVIVN-GTFDDKSFNESALNGIKKVKEEFKIELVLKESSTNSYLSD-LEGLKDAGSNL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ--PSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G RF+   + V+ + P+ ++AIID  Y ++  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYRFSDVAKAVSLQNPEIKYAIIDPVYSEEPIPTNLVGMTFRAQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  VS  149
+
+
+>sp|Q661N6|BMPA1_BORBP Basic membrane protein A1 OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpA1 PE=3 SV=1
+Length=337
+
+ Score = 134 bits (338),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 32/122 (26%), Positives = 66/122 (54%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS I+D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  30   KVSLIID-GTFDDKSFNESALNGIKKVKEEFKIEPVLKESSTNSYLSD-LEGLKDTGSNL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ--PSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ + P+ ++AIID  Y  +  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYKFSDVAKSVSLQNPEIKYAIIDPVYSDEPIPANLVGMTFRSQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  VS  149
+
+
+>sp|Q45010|BMPA_BORBU Basic membrane protein A OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpA PE=3 SV=1
+Length=339
+
+ Score = 134 bits (338),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 35/122 (29%), Positives = 64/122 (52%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS I+D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   DL
+Sbjct  30   KVSLIID-GTFDDKSFNESALNGVKKVKEEFKIELVLKESSSNSYLSD-LEGLKDAGSDL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEY--DKQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G RF+   +  A + P  ++AIID  Y  D  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYRFSDVAKVAALQNPDMKYAIIDPIYSNDPIPANLVGMTFRAQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  LS  149
+
+
+>sp|Q0SND0|BMPA_BORAP Basic membrane protein A OS=Borrelia afzelii 
+(strain PKo) OX=390236 GN=bmpA PE=3 SV=1
+Length=339
+
+ Score = 130 bits (327),  Expect = 9e-37, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 65/122 (53%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS ++D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  30   KVSLVID-GTFDDKSFNESALNGVKKLKEEFEIELVLKESSTNSYLSD-LEGLKDAGSNL  87
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEY--DKQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ +  + ++AIID  Y  +  P+N+  +++   +  +L G IA K
+Sbjct  88   IWLIGYKFSDVAKAVSLQNSEMKYAIIDPVYSNEPIPANLVGMTFRAQEGAFLTGYIAAK  147
+
+Query  122  XT  123
+             +
+Sbjct  148  VS  149
+
+
+>sp|P0C223|BMPA_BORAF Basic membrane protein A (Fragment) OS=Borrelia 
+afzelii OX=29518 GN=bmpA PE=3 SV=1
+Length=325
+
+ Score = 129 bits (325),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 65/122 (53%), Gaps = 4/122 (3%)
+
+Query  4    SVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYDL  63
+             VS ++D    ++++ N SAL  +   +++  I+    ES  +S  S+ ++ L +   +L
+Sbjct  16   KVSLVID-GTFDDKSFNESALNGVKKLKEEFEIELVLKESSTNSYLSD-LEGLKDAGSNL  73
+
+Query  64   IIAVGARFAKPLEXVAKKYPKQQFAIIDYEY--DKQPSNITSISYEDNKSGYLAGLIAGK  121
+            I  +G +F+   + V+ +  + ++AIID  Y  +  P+N+  +++   +  +L G IA K
+Sbjct  74   IWLIGYKFSDVAKAVSLQNSEMKYAIIDPVYSNEPIPANLVGMTFRAQEGAFLTGYIAAK  133
+
+Query  122  XT  123
+             +
+Sbjct  134  VS  135
+
+
+>sp|O05252|NUPN_BACSU ABC transporter guanosine-binding protein 
+NupN OS=Bacillus subtilis (strain 168) OX=224308 GN=nupN PE=1 
+SV=2
+Length=359
+
+ Score = 128 bits (321),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 64/128 (50%), Gaps = 7/128 (5%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTN-----KVESDDSSTFSNSIDI  55
+            +K SV+ + D+ G ++++ N SA   +    K+  +         ++S   + ++ +++ 
+Sbjct  37   NKFSVAMVTDVGGVDDKSFNQSAWEGIQAFGKENGLKKGKNGYDYLQSKSDADYTTNLNK  96
+
+Query  56   LCNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLA  115
+            L  +N+DLI  VG      +  +A +     FAIID   DK   N+ SI++++ +  +L 
+Sbjct  97   LARENFDLIYGVGYLMEDSISEIADQRKNTNFAIIDAVVDKD--NVASITFKEQEGSFLV  154
+
+Query  116  GLIAGKXT  123
+            G+ A   +
+Sbjct  155  GVAAALSS  162
+
+
+>sp|P29724|TMPC_TREPA Membrane lipoprotein TmpC OS=Treponema pallidum 
+(strain Nichols) OX=243276 GN=tmpC PE=1 SV=2
+Length=353
+
+ Score = 126 bits (316),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 22/120 (18%), Positives = 53/120 (44%), Gaps = 1/120 (1%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNY  61
+               V  + D    ++++ N      ++   ++ N     V +   + +  S+    ++N 
+Sbjct  39   DFVVGMVTDSGDIDDKSFNQQVWEGISRFAQENNAKCKYVTASTDAEYVPSLSAFADENM  98
+
+Query  62   DLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGK  121
+             L++A G+   + +   + ++PKQ+F +ID    +   N+ S  +  N+  +L G+ A  
+Sbjct  99   GLVVACGSFLVEAVIETSARFPKQKFLVIDAVV-QDRDNVVSAVFGQNEGSFLVGVAAAL  157
+
+
+>sp|Q45011|BMPB_BORBU Basic membrane protein B OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpB PE=3 SV=1
+Length=341
+
+ Score = 125 bits (314),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 34/129 (26%), Positives = 60/129 (47%), Gaps = 8/129 (6%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDILC  57
+            K  +S ++D    ++++ N+SA  AL   +K    NI+     +     S++ + +D L 
+Sbjct  27   KIKISMLVD-GVLDDKSFNSSANEALLRLKKDFPENIEEVFSCAISGVYSSYVSDLDNLK  85
+
+Query  58   NDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGYL  114
+             +  DLI  VG         V+ + PK  + IID  Y      P N+ ++ +   +  +L
+Sbjct  86   RNGSDLIWLVGYMLTDASLLVSSENPKISYGIIDPIYGDDVQIPENLIAVVFRVEQGAFL  145
+
+Query  115  AGLIAGKXT  123
+            AG IA K +
+Sbjct  146  AGYIAAKKS  154
+
+
+>sp|Q48754|TCSA_LISMO CD4+ T-cell-stimulating antigen OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=tcsA PE=3 SV=2
+Length=357
+
+ Score = 125 bits (313),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 37/126 (29%), Positives = 65/126 (52%), Gaps = 6/126 (5%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDILC  57
+             +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++   
+Sbjct  41   FTVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTAV  100
+
+Query  58   NDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGL  117
+              +YDLI  +G +    +E V+K+ PK QFAI+D   D    N+ SI ++DN   YL G+
+Sbjct  101  RSDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTID-DRDNVVSIGFKDNDGSYLVGV  159
+
+Query  118  IAGKXT  123
+            +AG  T
+Sbjct  160  VAGLTT  165
+
+
+>sp|O31284|BMPB_BORAP Basic membrane protein B OS=Borrelia afzelii 
+(strain PKo) OX=390236 GN=bmpB PE=3 SV=2
+Length=341
+
+ Score = 124 bits (312),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 60/130 (46%), Gaps = 8/130 (6%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDIL  56
+            SK  +S ++D    ++++ N+SA  AL   +K    NI+     +     S++ + +D L
+Sbjct  26   SKIKISMLVD-GVLDDKSFNSSANEALLRLKKDFPENIEKVFSSAVSGVYSSYVSDLDNL  84
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGY  113
+              +   LI  VG   A     V+ + P+  + IID  Y      P N+  + +   +  +
+Sbjct  85   KMNGSGLIWLVGYMLADVSLSVSLENPEINYGIIDPIYGDDVQIPKNLIGVVFRIEQGAF  144
+
+Query  114  LAGLIAGKXT  123
+            LAG IA K +
+Sbjct  145  LAGYIAAKKS  154
+
+
+>sp|O31362|BMPB_BORBP Basic membrane protein B OS=Borrelia bavariensis 
+(strain ATCC BAA-2496 / DSM 23469 / PBi) OX=290434 
+GN=bmpB PE=3 SV=2
+Length=341
+
+ Score = 123 bits (309),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 60/130 (46%), Gaps = 8/130 (6%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKL--NIDTNKVESDDS--STFSNSIDIL  56
+            SK  +S ++D    ++++ N+SA  AL   ++    NI+     +     S++ + +D L
+Sbjct  26   SKIKISMLVD-GVLDDKSFNSSANRALLRLEEDFPENIEKVFSSAASGVYSSYVSDLDNL  84
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQ---PSNITSISYEDNKSGY  113
+              +  DLI  VG         V+ + PK  + IID  Y      P N+  + +   +  +
+Sbjct  85   KMNGSDLIWLVGYMLTDASLSVSLENPKISYGIIDPVYSDDVQIPKNLIGVVFRIEQGAF  144
+
+Query  114  LAGLIAGKXT  123
+            LAG IA K +
+Sbjct  145  LAGYIAAKKS  154
+
+
+>sp|Q92BW7|TCSA_LISIN CD4+ T-cell-stimulating antigen OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=tcsA PE=3 SV=1
+Length=357
+
+ Score = 123 bits (309),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 37/127 (29%), Positives = 65/127 (51%), Gaps = 6/127 (5%)
+
+Query  2    KKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDT-----NKVESDDSSTFSNSIDIL  56
+              +V+ + D  G ++ + N SA   L    K  +++      N ++S   + +  +++  
+Sbjct  40   DFTVAMVTDTGGVDDRSFNQSAWEGLQKFGKANDMEKGTDGYNYLQSASEADYKTNLNTA  99
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAG  116
+               +YDLI  +G +    +E V+K+ PK QFAI+D   D    N+ SI ++DN   YL G
+Sbjct  100  VRSDYDLIYGIGYKLKDAIEEVSKQKPKNQFAIVDDTID-DRDNVVSIGFKDNDGSYLVG  158
+
+Query  117  LIAGKXT  123
+            ++AG  T
+Sbjct  159  VVAGLTT  165
+
+
+>sp|A2RK47|BMPA_LACLM ABC transporter nucleoside-binding protein 
+BmpA OS=Lactococcus lactis subsp. cremoris (strain MG1363) 
+OX=416870 GN=bmpA PE=1 SV=1
+Length=351
+
+ Score = 117 bits (294),  Expect = 8e-32, Method: Composition-based stats.
+ Identities = 35/127 (28%), Positives = 58/127 (46%), Gaps = 5/127 (4%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTN----KVESDDSSTFSNSIDIL  56
+            +    + + D  G N+ + N SA   L +  K+ N+         +S+ +S ++ + +  
+Sbjct  36   TDLKAAIVTDANGVNDRSFNQSAWEGLQSWGKENNLKKGTGYTYFQSNSASDYTTNYNSA  95
+
+Query  57   CNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAG  116
+                Y L+  +G          AK  PK  F I+D    K   N+TS ++ DN+S YLAG
+Sbjct  96   EQQGYKLLFGIGFSLQDATSAAAKNNPKSNFVIVDSVI-KDQKNVTSATFADNESAYLAG  154
+
+Query  117  LIAGKXT  123
+            + A K T
+Sbjct  155  VAAAKAT  161
+
+
+>sp|P0CL55|BMPD_BORBU Basic membrane protein D OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpD PE=3 SV=1
+Length=341
+
+ Score = 109 bits (273),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 62/123 (50%), Gaps = 4/123 (3%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYD  62
+            K+VS I+D    +++  N S+  A+   +  LNI+  +  S  +S   +  + L + N +
+Sbjct  28   KTVSLIVD-GAFDDKGFNESSSKAIRKLKADLNINIIEKASTGNSYLGDIAN-LEDGNSN  85
+
+Query  63   LIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD--KQPSNITSISYEDNKSGYLAGLIAG  120
+            LI  +G R +  L   A +     +AII+  YD  + P N+ +IS+   +  +LAG  A 
+Sbjct  86   LIWGIGFRLSDILFQRASENVSVNYAIIEGVYDEIQIPKNLLNISFRSEEVAFLAGYFAS  145
+
+Query  121  KXT  123
+            K +
+Sbjct  146  KAS  148
+
+
+>sp|E4S1L1|BMPD_BORBJ Basic membrane protein D OS=Borrelia burgdorferi 
+(strain JD1) OX=521008 GN=bmpD PE=1 SV=1
+Length=341
+
+ Score = 109 bits (273),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 62/123 (50%), Gaps = 4/123 (3%)
+
+Query  3    KSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVESDDSSTFSNSIDILCNDNYD  62
+            K+VS I+D    +++  N S+  A+   +  LNI+  +  S  +S   +  + L + N +
+Sbjct  28   KTVSLIVD-GAFDDKGFNESSSKAIRKLKADLNINIIEKASTGNSYLGDIAN-LEDGNSN  85
+
+Query  63   LIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD--KQPSNITSISYEDNKSGYLAGLIAG  120
+            LI  +G R +  L   A +     +AII+  YD  + P N+ +IS+   +  +LAG  A 
+Sbjct  86   LIWGIGFRLSDILFQRASENVSVNYAIIEGVYDEIQIPKNLLNISFRSEEVAFLAGYFAS  145
+
+Query  121  KXT  123
+            K +
+Sbjct  146  KAS  148
+
+
+>sp|E4QEZ3|BMPC_BORBN Basic membrane protein C OS=Borrelia burgdorferi 
+(strain N40) OX=521007 GN=bmpC PE=3 SV=1
+Length=353
+
+ Score = 109 bits (272),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 49/137 (36%), Gaps = 14/137 (10%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVE----SDDSSTFSNSIDIL  56
+            S K V  +L      ++  N S    +   +    I            +        + +
+Sbjct  27   SDKVVVGVLAHGSFYDKGYNQSVHDGVVKLRDNFGIKLITKSLRPYPIEGKRLLTVDEAM  86
+
+Query  57   CNDNY-------DLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD---KQPSNITSISY  106
+              D Y       +L   +G RF+     ++ + P   + IID       + P N  +I +
+Sbjct  87   TEDAYEVQKNPLNLFWLIGYRFSDLSVKLSYERPDIYYGIIDAFDYGDIQVPKNSLAIKF  146
+
+Query  107  EDNKSGYLAGLIAGKXT  123
+             + ++ +LAG IA K +
+Sbjct  147  RNEEAAFLAGYIAAKMS  163
+
+
+>sp|P0CL65|BMPC_BORBU Basic membrane protein C OS=Borrelia burgdorferi 
+(strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) OX=224326 
+GN=bmpC PE=3 SV=1
+Length=353
+
+ Score = 109 bits (272),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 49/137 (36%), Gaps = 14/137 (10%)
+
+Query  1    SKKSVSXILDIEGTNNEAXNNSALLALNNAQKKLNIDTNKVE----SDDSSTFSNSIDIL  56
+            S K V  +L      ++  N S    +   +    I            +        + +
+Sbjct  27   SDKVVVGVLAHGSFYDKGYNQSVHDGVVKLRDNFGIKLITKSLRPYPIEGKRLLTVDEAM  86
+
+Query  57   CNDNY-------DLIIAVGARFAKPLEXVAKKYPKQQFAIIDYEYD---KQPSNITSISY  106
+              D Y       +L   +G RF+     ++ + P   + IID       + P N  +I +
+Sbjct  87   TEDAYEVQKNPLNLFWLIGYRFSDLSVKLSYERPDIYYGIIDAFDYGDIQVPKNSLAIKF  146
+
+Query  107  EDNKSGYLAGLIAGKXT  123
+             + ++ +LAG IA K +
+Sbjct  147  RNEEAAFLAGYIAAKMS  163
+
+
+>sp|O32436|MED_BACSU Transcriptional activator protein med OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=med PE=3 SV=1
+Length=317
+
+ Score = 99.0 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 24/112 (21%), Positives = 42/112 (38%), Gaps = 3/112 (3%)
+
+Query  13   GTNNEAXNNSALLALNNAQKKLNIDTNKVES-DDSSTFSNSIDILCNDNYDLIIAVGARF  71
+              N+          L N Q K N+D    E         N+I+       +L+   G+ +
+Sbjct  37   TINDLVWGTKGYKGLLNIQSKYNVDVYYKEGVKTEEDIINAIEDFHKRGVNLLYGHGSEY  96
+
+Query  72   AKPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+            A+    V + YP  +F I       +  N+TS+ +     G+  G+ A   +
+Sbjct  97   AEVFNLVGEDYPDMEFVI--SNAKAKADNVTSVHFSGEAMGFFGGMTAAHMS  146
+
+
+>sp|D4GPW5|TSGAD_HALVD Putative ABC transporter glucose-binding 
+protein TsgA13 OS=Haloferax volcanii (strain ATCC 29605 / 
+DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 2012 / VKM B-1768 / 
+DS2) OX=309800 GN=tsgA13 PE=3 SV=1
+Length=391
+
+ Score = 90.5 bits (223),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 19/111 (17%), Positives = 37/111 (33%), Gaps = 3/111 (3%)
+
+Query  14   TNNEAXNNSALLALNNAQKKLN-IDTNKVESDDSSTFSNSIDILCNDNYDLIIAVGARFA  72
+              +   + +   A     ++ + ++T   E+   S      +     + D+I      + 
+Sbjct  83   IGDLGWSWAHDQARQAVDEQYDWLETEYTEAVAPSDSERVFEQYAQGDVDVIFGTTFGYQ  142
+
+Query  73   KPLEXVAKKYPKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+             P+  VA+ YP   F        +   N+        +  YLAG   G  T
+Sbjct  143  DPMYAVAEDYPDTVFE--HATGYRTRENMGRYMGRIYEPRYLAGQATGMVT  191
+
+
+>sp|Q2YKI6|PBP_BRUA2 Purine-binding protein BAB2_0673 OS=Brucella 
+abortus (strain 2308) OX=359391 GN=BAB2_0673 PE=1 SV=1
+Length=350
+
+ Score = 85.1 bits (209),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 20/90 (22%), Positives = 37/90 (41%), Gaps = 3/90 (3%)
+
+Query  35   NIDTNKVESDDS-STFSNSIDILCNDNYDLIIAVGARFAKPLEXVAKKYPKQQFAIIDYE  93
+             ++T  +E+    +    SI  +      LI      +  P   VAKK+P  +F      
+Sbjct  54   KVETTFLENVAEGADAERSIKRIARAGNKLIFTTSFGYMDPTVKVAKKFPDVKFE--HAT  111
+
+Query  94   YDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+              K   N+++ +    +  Y+ G+IA K +
+Sbjct  112  GYKTADNMSAYNARFYEGRYVQGVIAAKMS  141
+
+
+>sp|P47286|Y040_MYCGE Uncharacterized lipoprotein MG040 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG040 PE=3 SV=1
+Length=591
+
+ Score = 73.6 bits (179),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 21/143 (15%), Positives = 51/143 (36%), Gaps = 38/143 (27%)
+
+Query  16   NEAXNNSALLALNNA-QKKLNIDTNKVESD--------------DSSTFSNSIDILCNDN  60
+            +++ +  +   + +  +K   +D  + +S                 S    + + + ND 
+Sbjct  54   DKSFSQMSYEGIRSFFKKSKGVDLPEADSSQLQEGNGLWKRPGFTLSDRIATFNNIKNDG  113
+
+Query  61   YDLIIAVGARFAKPLEXVAKKY----------PKQQFAIIDYEYDKQ-------------  97
+             D+I+A G    + L+ +               K  F  +D   +K+             
+Sbjct  114  SDVIVATGFNQQESLQAITSDDIRFQSDKESLAKTGFIFVDGAIEKEFNKRNGVPQFKST  173
+
+Query  98   PSNITSISYEDNKSGYLAGLIAG  120
+            P+NI+S+++  +   +L G+   
+Sbjct  174  PTNISSVAFRSDDGSFLTGVATA  196
+
+
+>sp|P75062|Y052_MYCPN Uncharacterized lipoprotein MG040 homolog 
+OS=Mycoplasma pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_052 PE=3 SV=1
+Length=657
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 21/149 (14%), Positives = 50/149 (34%), Gaps = 38/149 (26%)
+
+Query  10   DIEGTNNEAXNNSALLALNN-AQKKLNIDTNKVESD--------------DSSTFSNSID  54
+            D     +++ +  +   +    + + +I+     S                 S    +  
+Sbjct  44   DEATLADKSFSEMSYEGIRRYFRSQKHIELPSPNSSLLQDGNGLWKRPGRTLSDRIATFK  103
+
+Query  55   ILCNDNYDLIIAVGARFAKPLEXVAKKY----------PKQQFAIIDYEYDKQ-------  97
+             + ND  D+I+A G    + L+ ++              K  F  +D + +K+       
+Sbjct  104  NIKNDGSDVIVATGFNQQEALQAISSDDRRYLADKNDLAKVGFIFVDGQIEKEYNVINKT  163
+
+Query  98   ------PSNITSISYEDNKSGYLAGLIAG  120
+                  P NI+S+++  +   +L G+   
+Sbjct  164  PQFRSTPLNISSVAFRSDDGSFLTGVATA  192
+
+
+>sp|Q54U89|GRLL_DICDI Metabotropic glutamate receptor-like protein 
+L OS=Dictyostelium discoideum OX=44689 GN=far1 PE=2 SV=1
+Length=708
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/114 (21%), Positives = 38/114 (33%), Gaps = 5/114 (4%)
+
+Query  12   EGTNNEAXNNSALLALNNAQK--KLNIDTNKVESDDSSTFSNSIDILCNDN-YDLIIAVG  68
+               ++   N      L   +   +         +   ST+ N   +L  DN Y+LII   
+Sbjct  36   GQVDDLGINYEVNQGLAETEALIQRAAKVINDANSYDSTYDNIKSLLDQDNPYNLIITSS  95
+
+Query  69   ARFAKPLEXVAKKYPKQQFAII-DYEYDKQP-SNITSISYEDNKSGYLAGLIAG  120
+                     +A  Y    F I  D    K P S + +  +      ++ G IAG
+Sbjct  96   ESQMSAALDIASDYEDTYFLIFGDMGDKKVPHSKVGTYYFNLVSPHFVLGFIAG  149
+
+
+>sp|Q54LG8|GRLM_DICDI Metabotropic glutamate receptor-like protein 
+M OS=Dictyostelium discoideum OX=44689 GN=grlM PE=2 SV=1
+Length=749
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/120 (21%), Positives = 47/120 (39%), Gaps = 5/120 (4%)
+
+Query  9    LDIEGTNNEAXNNSALLALNNAQKKLNID--TNKVESDDSSTFSNSIDILCNDNYDLIIA  66
+            L    T++   NN          K +NI+     + S  + T++  + ++ ND+ DL+I 
+Sbjct  28   LTTGPTSDLGFNNMVNQGRIGVSKAMNIEDSRIFIVSGRNETYALLLPLIQNDDIDLVIC  87
+
+Query  67   VGARFAKPLEXVAKKY---PKQQFAIIDYEYDKQPSNITSISYEDNKSGYLAGLIAGKXT  123
+                     + +A  Y   P  +   +         N+  I+Y      Y++G+ AG  T
+Sbjct  88   SSQDHGDACKEIAAMYIDSPTIKTQFLVRGSGAATKNLIQITYNYASVNYISGMFAGLQT  147
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.326    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5020015638
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

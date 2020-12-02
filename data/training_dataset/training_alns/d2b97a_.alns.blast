@@ -1,0 +1,489 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2b97a_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 ...  140     2e-44
+sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 ...  89.7    3e-24
+sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40...  68.6    2e-14
+sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzia...  62.4    6e-13
+sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116...  52.4    2e-09
+sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 GN=C...  36.2    0.003
+
+
+>sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 
+GN=hfb2 PE=1 SV=1
+Length=86
+
+ Score = 140 bits (352),  Expect = 2e-44, Method: Compositional matrix adjust.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  60
+           AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ
+Sbjct  16  AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  75
+
+Query  61  ALLCQKAIGT  70
+           ALLCQKAIGT
+Sbjct  76  ALLCQKAIGT  85
+
+
+>sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 
+GN=hfb1 PE=1 SV=1
+Length=97
+
+ Score = 89.7 bits (221),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 45/68 (66%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   VCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+           VCP GLFSNP CCAT VL LIG+DCK P+  V  G  F+  CA  G++PLCCVAPVA QA
+Sbjct  29  VCPPGLFSNPQCCATQVLGLIGLDCKVPSQNVYDGTDFRNVCAKTGAQPLCCVAPVAGQA  88
+
+Query  62  LLCQKAIG  69
+           LLCQ A+G
+Sbjct  89  LLCQTAVG  96
+
+
+>sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40602 
+GN=TH1 PE=1 SV=1
+Length=394
+
+ Score = 68.6 bits (166),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 34/66 (52%), Positives = 46/66 (70%), Gaps = 0/66 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP GL+SNP CCAT+VL +  +DCK P+ A  +G  F++ C + G +  CCV PVA QA+
+Sbjct  52   CPAGLYSNPQCCATDVLGVADLDCKNPSSAPMSGDNFKSICNAVGQQAKCCVLPVAGQAV  111
+
+Query  63   LCQKAI  68
+            LCQ +I
+Sbjct  112  LCQDSI  117
+
+
+ Score = 65.5 bits (158),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 35/67 (52%), Positives = 44/67 (66%), Gaps = 1/67 (1%)
+
+Query  3    CPTGL-FSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+            CP GL +SNP CC+T VL +  +DCK P+ A  +G  FQ  CA+ G +  CC  PVA QA
+Sbjct  204  CPAGLLYSNPQCCSTGVLGVADLDCKNPSSAPTSGDDFQKICANGGQQAQCCSIPVAGQA  263
+
+Query  62   LLCQKAI  68
+            +LCQ AI
+Sbjct  264  VLCQPAI  270
+
+
+ Score = 57.8 bits (138),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 29/65 (45%), Positives = 41/65 (63%), Gaps = 0/65 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP+GL+S P CCAT+VL +  +DC  P+      + F + CA+KG +  CCV P+  QA+
+Sbjct  330  CPSGLYSVPQCCATDVLGVADLDCGNPSRQPTDSSDFASVCAAKGQRARCCVLPLLGQAV  389
+
+Query  63   LCQKA  67
+            LC  A
+Sbjct  390  LCTGA  394
+
+
+>sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzianum 
+OX=5544 GN=qid3 PE=2 SV=1
+Length=143
+
+ Score = 62.4 bits (150),  Expect = 6e-13, Method: Compositional matrix adjust.
+ Identities = 33/71 (46%), Positives = 43/71 (61%), Gaps = 1/71 (1%)
+
+Query  1    AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHC-ASKGSKPLCCVAPVAD  59
+            A+CP GL+SNP  CAT+VL L  +DC  P+     G  FQ+ C A+ G +  CCV PV  
+Sbjct  72   ALCPAGLYSNPQSCATDVLGLADLDCAVPSTTPHDGPNFQSICVANGGKRARCCVLPVLG  131
+
+Query  60   QALLCQKAIGT  70
+              +LCQ  +GT
+Sbjct  132  LGVLCQNPVGT  142
+
+
+>sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116 
+GN=CRP PE=1 SV=1
+Length=118
+
+ Score = 52.4 bits (124),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 26/67 (39%), Positives = 39/67 (58%), Gaps = 0/67 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            C + L+S   CCAT+VL +  +DC+T      + + F++ CA+ G    CC  P+  QAL
+Sbjct  51   CSSTLYSEAQCCATDVLGVADLDCETVPETPTSASSFESICATSGRDAKCCTIPLLGQAL  110
+
+Query  63   LCQKAIG  69
+            LCQ  +G
+Sbjct  111  LCQDPVG  117
+
+
+>sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 
+GN=CU PE=1 SV=1
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 22/67 (33%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  5   TGLFS-NPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKP-LCCVAPVADQAL  62
+           TGL   +P CC T++L +  +DC  P     + + FQA C + G +   CC   +   AL
+Sbjct  33  TGLLQKSPQCCNTDILGVANLDCHGPPSVPTSPSQFQASCVADGGRSARCCTLSLLGLAL  92
+
+Query  63  LCQKAIG  69
+           +C   +G
+Sbjct  93  VCTDPVG  99
+
+
+
+Lambda      K        H        a         alpha
+   0.325    0.137    0.453    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+Results from round 2
+
+
+Query= d2b97a_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 ...  89.3    3e-24
+sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzia...  90.5    6e-24
+sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 ...  85.5    1e-22
+sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116...  82.4    5e-21
+sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40...  83.2    1e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 GN=C...  57.8    1e-11
+
+
+>sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 
+GN=hfb1 PE=1 SV=1
+Length=97
+
+ Score = 89.3 bits (220),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 45/68 (66%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   VCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+           VCP GLFSNP CCAT VL LIG+DCK P+  V  G  F+  CA  G++PLCCVAPVA QA
+Sbjct  29  VCPPGLFSNPQCCATQVLGLIGLDCKVPSQNVYDGTDFRNVCAKTGAQPLCCVAPVAGQA  88
+
+Query  62  LLCQKAIG  69
+           LLCQ A+G
+Sbjct  89  LLCQTAVG  96
+
+
+>sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzianum 
+OX=5544 GN=qid3 PE=2 SV=1
+Length=143
+
+ Score = 90.5 bits (223),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 33/71 (46%), Positives = 43/71 (61%), Gaps = 1/71 (1%)
+
+Query  1    AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHC-ASKGSKPLCCVAPVAD  59
+            A+CP GL+SNP  CAT+VL L  +DC  P+     G  FQ+ C A+ G +  CCV PV  
+Sbjct  72   ALCPAGLYSNPQSCATDVLGLADLDCAVPSTTPHDGPNFQSICVANGGKRARCCVLPVLG  131
+
+Query  60   QALLCQKAIGT  70
+              +LCQ  +GT
+Sbjct  132  LGVLCQNPVGT  142
+
+
+>sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 
+GN=hfb2 PE=1 SV=1
+Length=86
+
+ Score = 85.5 bits (210),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  60
+           AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ
+Sbjct  16  AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  75
+
+Query  61  ALLCQKAIGT  70
+           ALLCQKAIGT
+Sbjct  76  ALLCQKAIGT  85
+
+
+>sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116 
+GN=CRP PE=1 SV=1
+Length=118
+
+ Score = 82.4 bits (202),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 26/67 (39%), Positives = 39/67 (58%), Gaps = 0/67 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            C + L+S   CCAT+VL +  +DC+T      + + F++ CA+ G    CC  P+  QAL
+Sbjct  51   CSSTLYSEAQCCATDVLGVADLDCETVPETPTSASSFESICATSGRDAKCCTIPLLGQAL  110
+
+Query  63   LCQKAIG  69
+            LCQ  +G
+Sbjct  111  LCQDPVG  117
+
+
+>sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40602 
+GN=TH1 PE=1 SV=1
+Length=394
+
+ Score = 83.2 bits (204),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 34/66 (52%), Positives = 46/66 (70%), Gaps = 0/66 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP GL+SNP CCAT+VL +  +DCK P+ A  +G  F++ C + G +  CCV PVA QA+
+Sbjct  52   CPAGLYSNPQCCATDVLGVADLDCKNPSSAPMSGDNFKSICNAVGQQAKCCVLPVAGQAV  111
+
+Query  63   LCQKAI  68
+            LCQ +I
+Sbjct  112  LCQDSI  117
+
+
+ Score = 73.2 bits (178),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 44/67 (66%), Gaps = 1/67 (1%)
+
+Query  3    CPTGL-FSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+            CP GL +SNP CC+T VL +  +DCK P+ A  +G  FQ  CA+ G +  CC  PVA QA
+Sbjct  204  CPAGLLYSNPQCCSTGVLGVADLDCKNPSSAPTSGDDFQKICANGGQQAQCCSIPVAGQA  263
+
+Query  62   LLCQKAI  68
+            +LCQ AI
+Sbjct  264  VLCQPAI  270
+
+
+ Score = 71.6 bits (174),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 29/65 (45%), Positives = 41/65 (63%), Gaps = 0/65 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP+GL+S P CCAT+VL +  +DC  P+      + F + CA+KG +  CCV P+  QA+
+Sbjct  330  CPSGLYSVPQCCATDVLGVADLDCGNPSRQPTDSSDFASVCAAKGQRARCCVLPLLGQAV  389
+
+Query  63   LCQKA  67
+            LC  A
+Sbjct  390  LCTGA  394
+
+
+>sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 
+GN=CU PE=1 SV=1
+Length=100
+
+ Score = 57.8 bits (138),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  3   CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHC-ASKGSKPLCCVAPVADQA  61
+           C   L  +P CC T++L +  +DC  P     + + FQA C A  G    CC   +   A
+Sbjct  32  CTGLLQKSPQCCNTDILGVANLDCHGPPSVPTSPSQFQASCVADGGRSARCCTLSLLGLA  91
+
+Query  62  LLCQKAIG  69
+           L+C   +G
+Sbjct  92  LVCTDPVG  99
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.444    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0412    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+Results from round 3
+
+
+Query= d2b97a_
+
+Length=70
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzia...  92.5    9e-25
+sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 ...  89.0    6e-24
+sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 ...  85.5    9e-23
+sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116...  85.5    3e-22
+sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 GN=C...  80.1    2e-20
+sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40...  84.0    7e-20
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P52755|QID3_TRIHA Cell wall protein qid3 OS=Trichoderma harzianum 
+OX=5544 GN=qid3 PE=2 SV=1
+Length=143
+
+ Score = 92.5 bits (228),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 33/71 (46%), Positives = 43/71 (61%), Gaps = 1/71 (1%)
+
+Query  1    AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHC-ASKGSKPLCCVAPVAD  59
+            A+CP GL+SNP  CAT+VL L  +DC  P+     G  FQ+ C A+ G +  CCV PV  
+Sbjct  72   ALCPAGLYSNPQSCATDVLGLADLDCAVPSTTPHDGPNFQSICVANGGKRARCCVLPVLG  131
+
+Query  60   QALLCQKAIGT  70
+              +LCQ  +GT
+Sbjct  132  LGVLCQNPVGT  142
+
+
+>sp|P52754|HYP1_HYPJE Hydrophobin-1 OS=Hypocrea jecorina OX=51453 
+GN=hfb1 PE=1 SV=1
+Length=97
+
+ Score = 89.0 bits (219),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 45/68 (66%), Positives = 51/68 (75%), Gaps = 0/68 (0%)
+
+Query  2   VCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+           VCP GLFSNP CCAT VL LIG+DCK P+  V  G  F+  CA  G++PLCCVAPVA QA
+Sbjct  29  VCPPGLFSNPQCCATQVLGLIGLDCKVPSQNVYDGTDFRNVCAKTGAQPLCCVAPVAGQA  88
+
+Query  62  LLCQKAIG  69
+           LLCQ A+G
+Sbjct  89  LLCQTAVG  96
+
+
+>sp|P79073|HYP2_HYPJE Hydrophobin-2 OS=Hypocrea jecorina OX=51453 
+GN=hfb2 PE=1 SV=1
+Length=86
+
+ Score = 85.5 bits (210),  Expect = 9e-23, Method: Composition-based stats.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  60
+           AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ
+Sbjct  16  AVCPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQ  75
+
+Query  61  ALLCQKAIGT  70
+           ALLCQKAIGT
+Sbjct  76  ALLCQKAIGT  85
+
+
+>sp|P52753|CRYP_CRYPA Cryparin OS=Cryphonectria parasitica OX=5116 
+GN=CRP PE=1 SV=1
+Length=118
+
+ Score = 85.5 bits (210),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 26/67 (39%), Positives = 39/67 (58%), Gaps = 0/67 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            C + L+S   CCAT+VL +  +DC+T      + + F++ CA+ G    CC  P+  QAL
+Sbjct  51   CSSTLYSEAQCCATDVLGVADLDCETVPETPTSASSFESICATSGRDAKCCTIPLLGQAL  110
+
+Query  63   LCQKAIG  69
+            LCQ  +G
+Sbjct  111  LCQDPVG  117
+
+
+>sp|Q06153|CEUL_OPHUL Cerato-ulmin OS=Ophiostoma ulmi OX=5174 
+GN=CU PE=1 SV=1
+Length=100
+
+ Score = 80.1 bits (196),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 32/68 (47%), Gaps = 1/68 (1%)
+
+Query  3   CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHC-ASKGSKPLCCVAPVADQA  61
+           C   L  +P CC T++L +  +DC  P     + + FQA C A  G    CC   +   A
+Sbjct  32  CTGLLQKSPQCCNTDILGVANLDCHGPPSVPTSPSQFQASCVADGGRSARCCTLSLLGLA  91
+
+Query  62  LLCQKAIG  69
+           L+C   +G
+Sbjct  92  LVCTDPVG  99
+
+
+>sp|Q9UVI4|THYD_CLAFS Trihydrophobin OS=Claviceps fusiformis OX=40602 
+GN=TH1 PE=1 SV=1
+Length=394
+
+ Score = 84.0 bits (206),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 34/66 (52%), Positives = 46/66 (70%), Gaps = 0/66 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP GL+SNP CCAT+VL +  +DCK P+ A  +G  F++ C + G +  CCV PVA QA+
+Sbjct  52   CPAGLYSNPQCCATDVLGVADLDCKNPSSAPMSGDNFKSICNAVGQQAKCCVLPVAGQAV  111
+
+Query  63   LCQKAI  68
+            LCQ +I
+Sbjct  112  LCQDSI  117
+
+
+ Score = 75.1 bits (183),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 44/67 (66%), Gaps = 1/67 (1%)
+
+Query  3    CPTGL-FSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQA  61
+            CP GL +SNP CC+T VL +  +DCK P+ A  +G  FQ  CA+ G +  CC  PVA QA
+Sbjct  204  CPAGLLYSNPQCCSTGVLGVADLDCKNPSSAPTSGDDFQKICANGGQQAQCCSIPVAGQA  263
+
+Query  62   LLCQKAI  68
+            +LCQ AI
+Sbjct  264  VLCQPAI  270
+
+
+ Score = 74.4 bits (181),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 29/65 (45%), Positives = 41/65 (63%), Gaps = 0/65 (0%)
+
+Query  3    CPTGLFSNPLCCATNVLDLIGVDCKTPTIAVDTGAIFQAHCASKGSKPLCCVAPVADQAL  62
+            CP+GL+S P CCAT+VL +  +DC  P+      + F + CA+KG +  CCV P+  QA+
+Sbjct  330  CPSGLYSVPQCCATDVLGVADLDCGNPSRQPTDSSDFASVCAAKGQRARCCVLPLLGQAV  389
+
+Query  63   LCQKA  67
+            LC  A
+Sbjct  390  LCTGA  394
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.433    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5016189416
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

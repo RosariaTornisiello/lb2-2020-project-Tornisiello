@@ -1,0 +1,165 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3tvji_
+
+Length=35
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O46162|SGP1_SCHGR Serine protease inhibitor I/II OS=Schistocer...  60.1    3e-13
+sp|P80060|LCM_LOCMI Protease inhibitors OS=Locusta migratoria OX=...  53.9    8e-11
+sp|B3A0N9|MSPI2_MELSA Serine protease inhibitor 2 OS=Melanoplus s...  52.0    2e-10
+
+
+>sp|O46162|SGP1_SCHGR Serine protease inhibitor I/II OS=Schistocerca 
+gregaria OX=7010 PE=1 SV=1
+Length=92
+
+ Score = 60.1 bits (144),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 30/35 (86%), Positives = 30/35 (86%), Gaps = 0/35 (0%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAVCTKLWCNQ  35
+           EVTCEPGTTFKDKCNTCRCGSDGKSA CT   C Q
+Sbjct  57  EVTCEPGTTFKDKCNTCRCGSDGKSAACTLKACPQ  91
+
+
+>sp|P80060|LCM_LOCMI Protease inhibitors OS=Locusta migratoria 
+OX=7004 PE=1 SV=2
+Length=92
+
+ Score = 53.9 bits (128),  Expect = 8e-11, Method: Compositional matrix adjust.
+ Identities = 25/33 (76%), Positives = 28/33 (85%), Gaps = 0/33 (0%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAVCTKLWC  33
+           E++CEPG TFKDKCNTCRCG+DGKSA CT   C
+Sbjct  57  EISCEPGKTFKDKCNTCRCGADGKSAACTLKAC  89
+
+
+>sp|B3A0N9|MSPI2_MELSA Serine protease inhibitor 2 OS=Melanoplus 
+sanguinipes OX=65742 PE=1 SV=1
+Length=36
+
+ Score = 52.0 bits (123),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 26/36 (72%), Positives = 29/36 (81%), Gaps = 1/36 (3%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAV-CTKLWCNQ  35
+           E++CEPGTTF+DKCNTCRCG DGKSA  CT   C Q
+Sbjct  1   EISCEPGTTFQDKCNTCRCGKDGKSAAGCTLKACPQ  36
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.486    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5141014528
+Results from round 2
+
+
+Query= d3tvji_
+
+Length=35
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O46162|SGP1_SCHGR Serine protease inhibitor I/II OS=Schistocer...  44.7    4e-07
+sp|P80060|LCM_LOCMI Protease inhibitors OS=Locusta migratoria OX=...  42.8    2e-06
+sp|B3A0N9|MSPI2_MELSA Serine protease inhibitor 2 OS=Melanoplus s...  39.3    1e-05
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O46162|SGP1_SCHGR Serine protease inhibitor I/II OS=Schistocerca 
+gregaria OX=7010 PE=1 SV=1
+Length=92
+
+ Score = 44.7 bits (104),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 30/35 (86%), Positives = 30/35 (86%), Gaps = 0/35 (0%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAVCTKLWCNQ  35
+           EVTCEPGTTFKDKCNTCRCGSDGKSA CT   C Q
+Sbjct  57  EVTCEPGTTFKDKCNTCRCGSDGKSAACTLKACPQ  91
+
+
+>sp|P80060|LCM_LOCMI Protease inhibitors OS=Locusta migratoria 
+OX=7004 PE=1 SV=2
+Length=92
+
+ Score = 42.8 bits (99),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 25/34 (74%), Positives = 28/34 (82%), Gaps = 0/34 (0%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAVCTKLWCN  34
+           E++CEPG TFKDKCNTCRCG+DGKSA CT   C 
+Sbjct  57  EISCEPGKTFKDKCNTCRCGADGKSAACTLKACP  90
+
+
+>sp|B3A0N9|MSPI2_MELSA Serine protease inhibitor 2 OS=Melanoplus 
+sanguinipes OX=65742 PE=1 SV=1
+Length=36
+
+ Score = 39.3 bits (90),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 26/36 (72%), Positives = 29/36 (81%), Gaps = 1/36 (3%)
+
+Query  1   EVTCEPGTTFKDKCNTCRCGSDGKSAV-CTKLWCNQ  35
+           E++CEPGTTF+DKCNTCRCG DGKSA  CT   C Q
+Sbjct  1   EISCEPGTTFQDKCNTCRCGKDGKSAAGCTLKACPQ  36
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.471    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5141014528
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

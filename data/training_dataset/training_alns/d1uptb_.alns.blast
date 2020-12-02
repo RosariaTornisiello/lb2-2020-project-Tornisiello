@@ -1,0 +1,165 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1uptb_
+
+Length=58
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q91VW5|GOGA4_MOUSE Golgin subfamily A member 4 OS=Mus musculus...  122     2e-33
+sp|Q5U4E6|GOGA4_RAT Golgin subfamily A member 4 OS=Rattus norvegi...  122     2e-33
+sp|Q13439|GOGA4_HUMAN Golgin subfamily A member 4 OS=Homo sapiens...  112     8e-30
+
+
+>sp|Q91VW5|GOGA4_MOUSE Golgin subfamily A member 4 OS=Mus musculus 
+OX=10090 GN=Golga4 PE=1 SV=2
+Length=2238
+
+ Score = 122 bits (306),  Expect = 2e-33, Method: Compositional matrix adjust.
+ Identities = 55/58 (95%), Positives = 57/58 (98%), Gaps = 0/58 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLMSWLRSSS  58
+             EPTEFEYLRKV+FEYMMGRETKTMAKVITTVLKFPDDQ QKILEREDARLMSWLR+SS
+Sbjct  2181  EPTEFEYLRKVMFEYMMGRETKTMAKVITTVLKFPDDQAQKILEREDARLMSWLRTSS  2238
+
+
+>sp|Q5U4E6|GOGA4_RAT Golgin subfamily A member 4 OS=Rattus norvegicus 
+OX=10116 GN=Golga4 PE=1 SV=2
+Length=2259
+
+ Score = 122 bits (306),  Expect = 2e-33, Method: Compositional matrix adjust.
+ Identities = 55/58 (95%), Positives = 57/58 (98%), Gaps = 0/58 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLMSWLRSSS  58
+             EPTEFEYLRKVLFEYMMGRETKTMAKVITTVL+FPDDQ QKILEREDARLMSWLR+SS
+Sbjct  2202  EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLRFPDDQAQKILEREDARLMSWLRTSS  2259
+
+
+>sp|Q13439|GOGA4_HUMAN Golgin subfamily A member 4 OS=Homo sapiens 
+OX=9606 GN=GOLGA4 PE=1 SV=1
+Length=2230
+
+ Score = 112 bits (279),  Expect = 8e-30, Method: Compositional matrix adjust.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM  51
+             EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM
+Sbjct  2171  EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM  2221
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.131    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5004275148
+Results from round 2
+
+
+Query= d1uptb_
+
+Length=58
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q91VW5|GOGA4_MOUSE Golgin subfamily A member 4 OS=Mus musculus...  100     1e-25
+sp|Q5U4E6|GOGA4_RAT Golgin subfamily A member 4 OS=Rattus norvegi...  99.7    2e-25
+sp|Q13439|GOGA4_HUMAN Golgin subfamily A member 4 OS=Homo sapiens...  87.0    5e-21
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q91VW5|GOGA4_MOUSE Golgin subfamily A member 4 OS=Mus musculus 
+OX=10090 GN=Golga4 PE=1 SV=2
+Length=2238
+
+ Score = 100 bits (249),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 55/58 (95%), Positives = 57/58 (98%), Gaps = 0/58 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLMSWLRSSS  58
+             EPTEFEYLRKV+FEYMMGRETKTMAKVITTVLKFPDDQ QKILEREDARLMSWLR+SS
+Sbjct  2181  EPTEFEYLRKVMFEYMMGRETKTMAKVITTVLKFPDDQAQKILEREDARLMSWLRTSS  2238
+
+
+>sp|Q5U4E6|GOGA4_RAT Golgin subfamily A member 4 OS=Rattus norvegicus 
+OX=10116 GN=Golga4 PE=1 SV=2
+Length=2259
+
+ Score = 99.7 bits (247),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 55/58 (95%), Positives = 57/58 (98%), Gaps = 0/58 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLMSWLRSSS  58
+             EPTEFEYLRKVLFEYMMGRETKTMAKVITTVL+FPDDQ QKILEREDARLMSWLR+SS
+Sbjct  2202  EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLRFPDDQAQKILEREDARLMSWLRTSS  2259
+
+
+>sp|Q13439|GOGA4_HUMAN Golgin subfamily A member 4 OS=Homo sapiens 
+OX=9606 GN=GOLGA4 PE=1 SV=1
+Length=2230
+
+ Score = 87.0 bits (214),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1     EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM  51
+             EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM
+Sbjct  2171  EPTEFEYLRKVLFEYMMGRETKTMAKVITTVLKFPDDQTQKILEREDARLM  2221
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.131    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5004275148
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

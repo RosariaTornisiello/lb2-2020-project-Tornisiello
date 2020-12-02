@@ -1,0 +1,243 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vf6a_
+
+Length=58
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8NI35|INADL_HUMAN InaD-like protein OS=Homo sapiens OX=9606 G...  113     3e-30
+sp|Q63ZW7|INADL_MOUSE InaD-like protein OS=Mus musculus OX=10090 ...  103     1e-26
+sp|F1MAD2|INADL_RAT InaD-like protein OS=Rattus norvegicus OX=101...  103     1e-26
+sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegic...  62.4    2e-12
+sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus ...  62.0    4e-12
+sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens ...  60.5    1e-11
+
+
+>sp|Q8NI35|INADL_HUMAN InaD-like protein OS=Homo sapiens OX=9606 
+GN=PATJ PE=1 SV=3
+Length=1801
+
+ Score = 113 bits (283),  Expect = 3e-30, Method: Compositional matrix adjust.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI
+Sbjct  12  VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  67
+
+
+>sp|Q63ZW7|INADL_MOUSE InaD-like protein OS=Mus musculus OX=10090 
+GN=Patj PE=1 SV=2
+Length=1834
+
+ Score = 103 bits (256),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 51/56 (91%), Positives = 54/56 (96%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRL+ KLQEKGDT+QNEKLS FYETLKSPLFNQILTLQQSIKQLKGQL+HI
+Sbjct  12  VLQVLDRLRGKLQEKGDTTQNEKLSAFYETLKSPLFNQILTLQQSIKQLKGQLSHI  67
+
+
+>sp|F1MAD2|INADL_RAT InaD-like protein OS=Rattus norvegicus OX=10116 
+GN=Patj PE=1 SV=2
+Length=1836
+
+ Score = 103 bits (256),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 51/56 (91%), Positives = 54/56 (96%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRL+ KLQEKGDT+QNEKLS FYETLKSPLFNQILTLQQSIKQLKGQL+HI
+Sbjct  12  VLQVLDRLRGKLQEKGDTTQNEKLSAFYETLKSPLFNQILTLQQSIKQLKGQLSHI  67
+
+
+>sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegicus 
+OX=10116 GN=Mpdz PE=1 SV=1
+Length=2054
+
+ Score = 62.4 bits (150),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 28/53 (53%), Positives = 41/53 (77%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           LQ  +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL+LQ S++QLK Q+N
+Sbjct  11  LQAAERLQSKLKERGDVANEDKLSLLKSVLQSPLFSQILSLQTSLQQLKDQVN  63
+
+
+>sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus 
+OX=10090 GN=Mpdz PE=1 SV=2
+Length=2055
+
+ Score = 62.0 bits (149),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 28/53 (53%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           LQ  +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL LQ S++QLK Q+N
+Sbjct  11  LQAAERLQSKLKERGDVANEDKLSLLKSVLQSPLFSQILNLQTSLQQLKDQVN  63
+
+
+>sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens 
+OX=9606 GN=MPDZ PE=1 SV=2
+Length=2070
+
+ Score = 60.5 bits (145),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 27/53 (51%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           L   +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL+LQ S++QLK Q+N
+Sbjct  11  LHAAERLQTKLRERGDVANEDKLSLLKSVLQSPLFSQILSLQTSVQQLKDQVN  63
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.132    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5004275148
+Results from round 2
+
+
+Query= d1vf6a_
+
+Length=58
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8NI35|INADL_HUMAN InaD-like protein OS=Homo sapiens OX=9606 G...  96.6    2e-24
+sp|Q63ZW7|INADL_MOUSE InaD-like protein OS=Mus musculus OX=10090 ...  95.9    4e-24
+sp|F1MAD2|INADL_RAT InaD-like protein OS=Rattus norvegicus OX=101...  95.5    5e-24
+sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegic...  89.7    7e-22
+sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens ...  89.3    9e-22
+sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus ...  88.5    1e-21
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q8NI35|INADL_HUMAN InaD-like protein OS=Homo sapiens OX=9606 
+GN=PATJ PE=1 SV=3
+Length=1801
+
+ Score = 96.6 bits (239),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI
+Sbjct  12  VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  67
+
+
+>sp|Q63ZW7|INADL_MOUSE InaD-like protein OS=Mus musculus OX=10090 
+GN=Patj PE=1 SV=2
+Length=1834
+
+ Score = 95.9 bits (237),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 51/56 (91%), Positives = 54/56 (96%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRL+ KLQEKGDT+QNEKLS FYETLKSPLFNQILTLQQSIKQLKGQL+HI
+Sbjct  12  VLQVLDRLRGKLQEKGDTTQNEKLSAFYETLKSPLFNQILTLQQSIKQLKGQLSHI  67
+
+
+>sp|F1MAD2|INADL_RAT InaD-like protein OS=Rattus norvegicus OX=10116 
+GN=Patj PE=1 SV=2
+Length=1836
+
+ Score = 95.5 bits (236),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 51/56 (91%), Positives = 54/56 (96%), Gaps = 0/56 (0%)
+
+Query  1   VLQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLNHI  56
+           VLQVLDRL+ KLQEKGDT+QNEKLS FYETLKSPLFNQILTLQQSIKQLKGQL+HI
+Sbjct  12  VLQVLDRLRGKLQEKGDTTQNEKLSAFYETLKSPLFNQILTLQQSIKQLKGQLSHI  67
+
+
+>sp|O55164|MPDZ_RAT Multiple PDZ domain protein OS=Rattus norvegicus 
+OX=10116 GN=Mpdz PE=1 SV=1
+Length=2054
+
+ Score = 89.7 bits (221),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 28/53 (53%), Positives = 41/53 (77%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           LQ  +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL+LQ S++QLK Q+N
+Sbjct  11  LQAAERLQSKLKERGDVANEDKLSLLKSVLQSPLFSQILSLQTSLQQLKDQVN  63
+
+
+>sp|O75970|MPDZ_HUMAN Multiple PDZ domain protein OS=Homo sapiens 
+OX=9606 GN=MPDZ PE=1 SV=2
+Length=2070
+
+ Score = 89.3 bits (220),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 27/53 (51%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           L   +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL+LQ S++QLK Q+N
+Sbjct  11  LHAAERLQTKLRERGDVANEDKLSLLKSVLQSPLFSQILSLQTSVQQLKDQVN  63
+
+
+>sp|Q8VBX6|MPDZ_MOUSE Multiple PDZ domain protein OS=Mus musculus 
+OX=10090 GN=Mpdz PE=1 SV=2
+Length=2055
+
+ Score = 88.5 bits (218),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 28/53 (53%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  2   LQVLDRLKMKLQEKGDTSQNEKLSMFYETLKSPLFNQILTLQQSIKQLKGQLN  54
+           LQ  +RL+ KL+E+GD +  +KLS+    L+SPLF+QIL LQ S++QLK Q+N
+Sbjct  11  LQAAERLQSKLKERGDVANEDKLSLLKSVLQSPLFSQILNLQTSLQQLKDQVN  63
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.326    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5004275148
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

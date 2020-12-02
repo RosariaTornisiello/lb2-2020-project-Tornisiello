@@ -1,0 +1,223 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2c60a1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q99759|M3K3_HUMAN Mitogen-activated protein kinase kinase kina...  164     2e-48
+sp|Q61084|M3K3_MOUSE Mitogen-activated protein kinase kinase kina...  163     4e-48
+sp|Q9Y2U5|M3K2_HUMAN Mitogen-activated protein kinase kinase kina...  106     1e-27
+sp|Q61083|M3K2_MOUSE Mitogen-activated protein kinase kinase kina...  103     2e-26
+
+
+>sp|Q99759|M3K3_HUMAN Mitogen-activated protein kinase kinase 
+kinase 3 OS=Homo sapiens OX=9606 GN=MAP3K3 PE=1 SV=2
+Length=626
+
+ Score = 164 bits (416),  Expect = 2e-48, Method: Compositional matrix adjust.
+ Identities = 80/80 (100%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK
+Sbjct  43   SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  102
+
+Query  61   AIDILDRSSSMKSLRILLLS  80
+            AIDILDRSSSMKSLRILLLS
+Sbjct  103  AIDILDRSSSMKSLRILLLS  122
+
+
+>sp|Q61084|M3K3_MOUSE Mitogen-activated protein kinase kinase 
+kinase 3 OS=Mus musculus OX=10090 GN=Map3k3 PE=1 SV=1
+Length=626
+
+ Score = 163 bits (413),  Expect = 4e-48, Method: Compositional matrix adjust.
+ Identities = 79/80 (99%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            SDVRIKFEHNGERRIIAFSRPV+YEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK
+Sbjct  43   SDVRIKFEHNGERRIIAFSRPVRYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  102
+
+Query  61   AIDILDRSSSMKSLRILLLS  80
+            AIDILDRSSSMKSLRILLLS
+Sbjct  103  AIDILDRSSSMKSLRILLLS  122
+
+
+>sp|Q9Y2U5|M3K2_HUMAN Mitogen-activated protein kinase kinase 
+kinase 2 OS=Homo sapiens OX=9606 GN=MAP3K2 PE=1 SV=2
+Length=619
+
+ Score = 106 bits (265),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 50/79 (63%), Positives = 61/79 (77%), Gaps = 0/79 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            +DVR+KFEH GE+RI+ F RPVK ED+  K    FGQ +DLHY NNEL I L  QDDLDK
+Sbjct  42   NDVRVKFEHRGEKRILQFPRPVKLEDLRSKAKIAFGQSMDLHYTNNELVIPLTTQDDLDK  101
+
+Query  61   AIDILDRSSSMKSLRILLL  79
+            A+++LDRS  MKSL+ILL+
+Sbjct  102  AVELLDRSIHMKSLKILLV  120
+
+
+>sp|Q61083|M3K2_MOUSE Mitogen-activated protein kinase kinase 
+kinase 2 OS=Mus musculus OX=10090 GN=Map3k2 PE=1 SV=2
+Length=619
+
+ Score = 103 bits (257),  Expect = 2e-26, Method: Compositional matrix adjust.
+ Identities = 49/79 (62%), Positives = 61/79 (77%), Gaps = 0/79 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            +DVR+KFEH GE+RI+  +RPVK ED+  K    FGQ +DLHY NNEL I L  QDDLDK
+Sbjct  42   NDVRVKFEHRGEKRILQVTRPVKLEDLRSKSKIAFGQSMDLHYTNNELVIPLTTQDDLDK  101
+
+Query  61   AIDILDRSSSMKSLRILLL  79
+            A+++LDRS  MKSL+ILL+
+Sbjct  102  AVELLDRSIHMKSLKILLV  120
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+Results from round 2
+
+
+Query= d2c60a1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q61084|M3K3_MOUSE Mitogen-activated protein kinase kinase kina...  149     6e-43
+sp|Q99759|M3K3_HUMAN Mitogen-activated protein kinase kinase kina...  149     7e-43
+sp|Q9Y2U5|M3K2_HUMAN Mitogen-activated protein kinase kinase kina...  138     4e-39
+sp|Q61083|M3K2_MOUSE Mitogen-activated protein kinase kinase kina...  134     2e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q61084|M3K3_MOUSE Mitogen-activated protein kinase kinase 
+kinase 3 OS=Mus musculus OX=10090 GN=Map3k3 PE=1 SV=1
+Length=626
+
+ Score = 149 bits (377),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 79/80 (99%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            SDVRIKFEHNGERRIIAFSRPV+YEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK
+Sbjct  43   SDVRIKFEHNGERRIIAFSRPVRYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  102
+
+Query  61   AIDILDRSSSMKSLRILLLS  80
+            AIDILDRSSSMKSLRILLLS
+Sbjct  103  AIDILDRSSSMKSLRILLLS  122
+
+
+>sp|Q99759|M3K3_HUMAN Mitogen-activated protein kinase kinase 
+kinase 3 OS=Homo sapiens OX=9606 GN=MAP3K3 PE=1 SV=2
+Length=626
+
+ Score = 149 bits (376),  Expect = 7e-43, Method: Composition-based stats.
+ Identities = 80/80 (100%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK
+Sbjct  43   SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  102
+
+Query  61   AIDILDRSSSMKSLRILLLS  80
+            AIDILDRSSSMKSLRILLLS
+Sbjct  103  AIDILDRSSSMKSLRILLLS  122
+
+
+>sp|Q9Y2U5|M3K2_HUMAN Mitogen-activated protein kinase kinase 
+kinase 2 OS=Homo sapiens OX=9606 GN=MAP3K2 PE=1 SV=2
+Length=619
+
+ Score = 138 bits (349),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 50/79 (63%), Positives = 61/79 (77%), Gaps = 0/79 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            +DVR+KFEH GE+RI+ F RPVK ED+  K    FGQ +DLHY NNEL I L  QDDLDK
+Sbjct  42   NDVRVKFEHRGEKRILQFPRPVKLEDLRSKAKIAFGQSMDLHYTNNELVIPLTTQDDLDK  101
+
+Query  61   AIDILDRSSSMKSLRILLL  79
+            A+++LDRS  MKSL+ILL+
+Sbjct  102  AVELLDRSIHMKSLKILLV  120
+
+
+>sp|Q61083|M3K2_MOUSE Mitogen-activated protein kinase kinase 
+kinase 2 OS=Mus musculus OX=10090 GN=Map3k2 PE=1 SV=2
+Length=619
+
+ Score = 134 bits (337),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 49/79 (62%), Positives = 61/79 (77%), Gaps = 0/79 (0%)
+
+Query  1    SDVRIKFEHNGERRIIAFSRPVKYEDVEHKVTTVFGQPLDLHYMNNELSILLKNQDDLDK  60
+            +DVR+KFEH GE+RI+  +RPVK ED+  K    FGQ +DLHY NNEL I L  QDDLDK
+Sbjct  42   NDVRVKFEHRGEKRILQVTRPVKLEDLRSKSKIAFGQSMDLHYTNNELVIPLTTQDDLDK  101
+
+Query  61   AIDILDRSSSMKSLRILLL  79
+            A+++LDRS  MKSL+ILL+
+Sbjct  102  AVELLDRSIHMKSLKILLV  120
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.142    0.386    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0436    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

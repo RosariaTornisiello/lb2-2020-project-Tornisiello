@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2za4b_
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P11540|BARS_BACAM Barstar OS=Bacillus amyloliquefaciens OX=139...  172     9e-57
+sp|O07938|YRDF_BACSU Putative ribonuclease inhibitor YrdF OS=Baci...  81.3    1e-20
+
+
+>sp|P11540|BARS_BACAM Barstar OS=Bacillus amyloliquefaciens OX=1390 
+PE=1 SV=3
+Length=90
+
+ Score = 172 bits (436),  Expect = 9e-57, Method: Compositional matrix adjust.
+ Identities = 86/90 (96%), Positives = 86/90 (96%), Gaps = 1/90 (1%)
+
+Query  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWAALTGWVEYPLVLEWRQFEQS  60
+           MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALW  LTGWVEYPLVLEWRQFEQS
+Sbjct  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQS  60
+
+Query  61  KQLT-NGAESVLQVFREAKAEGADITIILS  89
+           KQLT NGAESVLQVFREAKAEG DITIILS
+Sbjct  61  KQLTENGAESVLQVFREAKAEGCDITIILS  90
+
+
+>sp|O07938|YRDF_BACSU Putative ribonuclease inhibitor YrdF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yrdF PE=3 SV=1
+Length=91
+
+ Score = 81.3 bits (199),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 40/84 (48%), Positives = 53/84 (63%), Gaps = 1/84 (1%)
+
+Query  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWAALTGWVEYPLVLEWRQFEQS  60
+           M+K +I+G    +I  LH  LK +L  P+YYG NLDALW  LTGWV+ PL L  + FE S
+Sbjct  1   MRKIIIDGRDFENIEVLHDDLKDKLDFPDYYGRNLDALWDCLTGWVDLPLTLVLKNFEFS  60
+
+Query  61  KQ-LTNGAESVLQVFREAKAEGAD  83
+              L + A+ VL+V +EA+ E  D
+Sbjct  61  NTFLGSYADDVLEVIQEAQEELKD  84
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.131    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5087316840
+Results from round 2
+
+
+Query= d2za4b_
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P11540|BARS_BACAM Barstar OS=Bacillus amyloliquefaciens OX=139...  152     9e-49
+sp|O07938|YRDF_BACSU Putative ribonuclease inhibitor YrdF OS=Baci...  128     2e-39
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P11540|BARS_BACAM Barstar OS=Bacillus amyloliquefaciens OX=1390 
+PE=1 SV=3
+Length=90
+
+ Score = 152 bits (384),  Expect = 9e-49, Method: Composition-based stats.
+ Identities = 86/90 (96%), Positives = 86/90 (96%), Gaps = 1/90 (1%)
+
+Query  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWAALTGWVEYPLVLEWRQFEQS  60
+           MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALW  LTGWVEYPLVLEWRQFEQS
+Sbjct  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQS  60
+
+Query  61  KQLT-NGAESVLQVFREAKAEGADITIILS  89
+           KQLT NGAESVLQVFREAKAEG DITIILS
+Sbjct  61  KQLTENGAESVLQVFREAKAEGCDITIILS  90
+
+
+>sp|O07938|YRDF_BACSU Putative ribonuclease inhibitor YrdF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yrdF PE=3 SV=1
+Length=91
+
+ Score = 128 bits (323),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 40/84 (48%), Positives = 53/84 (63%), Gaps = 1/84 (1%)
+
+Query  1   MKKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWAALTGWVEYPLVLEWRQFEQS  60
+           M+K +I+G    +I  LH  LK +L  P+YYG NLDALW  LTGWV+ PL L  + FE S
+Sbjct  1   MRKIIIDGRDFENIEVLHDDLKDKLDFPDYYGRNLDALWDCLTGWVDLPLTLVLKNFEFS  60
+
+Query  61  KQ-LTNGAESVLQVFREAKAEGAD  83
+              L + A+ VL+V +EA+ E  D
+Sbjct  61  NTFLGSYADDVLEVIQEAQEELKD  84
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.140    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0429    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5087316840
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

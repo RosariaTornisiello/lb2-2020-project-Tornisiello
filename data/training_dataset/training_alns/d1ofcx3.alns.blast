@@ -1,0 +1,707 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ofcx3
+
+Length=87
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain Is...  166     4e-48
+sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator SNF...  131     6e-36
+sp|P28370|SMCA1_HUMAN Probable global transcription activator SNF...  108     6e-28
+sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dep...  99.8    6e-25
+sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dep...  97.8    3e-24
+sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain is...  86.3    4e-20
+sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase ISW...  48.5    6e-07
+sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase ISW...  46.6    3e-06
+sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase ISW...  38.5    0.003
+
+
+>sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain 
+Iswi OS=Drosophila melanogaster OX=7227 GN=Iswi PE=1 SV=1
+Length=1027
+
+ Score = 166 bits (419),  Expect = 4e-48, Method: Compositional matrix adjust.
+ Identities = 87/102 (85%), Positives = 87/102 (85%), Gaps = 15/102 (15%)
+
+Query  1    AVDAYFREAL--------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL        KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK
+Sbjct  697  AVDAYFREALRVSEPKAPKAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  756
+
+Query  53   N-------TKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N       TKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT
+Sbjct  757  NTELGSDATKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  798
+
+
+>sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator 
+SNF2L1 OS=Mus musculus OX=10090 GN=Smarca1 PE=1 SV=1
+Length=1046
+
+ Score = 131 bits (329),  Expect = 6e-36, Method: Compositional matrix adjust.
+ Identities = 68/101 (67%), Positives = 80/101 (79%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREAL--------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL        KAPRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  750  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  809
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N ++      QREEQ+KID AEPLT +E +EK+ LL+QGFT
+Sbjct  810  NPEIPNPAIAQREEQKKIDGAEPLTPQETEEKDKLLTQGFT  850
+
+
+>sp|P28370|SMCA1_HUMAN Probable global transcription activator 
+SNF2L1 OS=Homo sapiens OX=9606 GN=SMARCA1 PE=1 SV=2
+Length=1054
+
+ Score = 108 bits (269),  Expect = 6e-28, Method: Compositional matrix adjust.
+ Identities = 70/101 (69%), Positives = 79/101 (78%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREAL--------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL        KAPRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  758  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  817
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N  +      QREEQ+KID AEPLT EE +EKE LL+QGFT
+Sbjct  818  NPDIPNPALAQREEQKKIDGAEPLTPEETEEKEKLLTQGFT  858
+
+
+>sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Mus 
+musculus OX=10090 GN=Smarca5 PE=1 SV=1
+Length=1051
+
+ Score = 99.8 bits (247),  Expect = 6e-25, Method: Compositional matrix adjust.
+ Identities = 65/101 (64%), Positives = 78/101 (77%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAP--------RPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+          RPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  742  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  801
+
+Query  53   N------TKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            +       + Q+EEQ KIDEAEPL +EE++EKE LL+QGFT
+Sbjct  802  SPDLPNAAQAQKEEQLKIDEAEPLNDEELEEKEKLLTQGFT  842
+
+
+>sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Homo 
+sapiens OX=9606 GN=SMARCA5 PE=1 SV=1
+Length=1052
+
+ Score = 97.8 bits (242),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 64/101 (63%), Positives = 77/101 (76%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAP--------RPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+          RPPKQP VQDFQFFPPRLFELL++EI ++RKT+GYKVP+
+Sbjct  743  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILFYRKTIGYKVPR  802
+
+Query  53   N------TKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N       + Q+EEQ KIDEAE L +EE++EKE LL+QGFT
+Sbjct  803  NPELPNAAQAQKEEQLKIDEAESLNDEELEEKEKLLTQGFT  843
+
+
+>sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain 
+isw-1 OS=Caenorhabditis elegans OX=6239 GN=isw-1 PE=1 SV=2
+Length=1009
+
+ Score = 86.3 bits (212),  Expect = 4e-20, Method: Compositional matrix adjust.
+ Identities = 50/103 (49%), Positives = 66/103 (64%), Gaps = 17/103 (17%)
+
+Query  2    VDAYFREALKAPRP---------PKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKV--  50
+            VD Y++EA++A  P         PK P V DFQF+P RLFELLD+EIY++RKT+GY    
+Sbjct  698  VDLYYKEAMRAGNPTEKQSKAPRPKLPQVFDFQFYPRRLFELLDKEIYHYRKTIGYVAER  757
+
+Query  51   PKNT------KVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            PK+       K Q EEQ+ I+ A PLT++E +EK  LL+Q  T
+Sbjct  758  PKDVPPKEAEKRQAEEQKLINNARPLTDKEQEEKAELLTQSVT  800
+
+
+>sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW2 PE=1 SV=1
+Length=1120
+
+ Score = 48.5 bits (114),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 42/136 (31%), Positives = 57/136 (42%), Gaps = 49/136 (36%)
+
+Query  1    AVDAYFREAL--------------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTV  46
+            +VD Y++E +              KAPR PK    QDFQFFP  L  L ++E  YF+K V
+Sbjct  754  SVDDYYKEIIGGGSKSASKQTPQPKAPRAPKVIHGQDFQFFPKELDALQEKEQLYFKKKV  813
+
+Query  47   GYKVPK-------------------------NTKVQR----------EEQRKIDEAEPLT  71
+             YKV                           NT+  +          EEQ KI+ A   T
+Sbjct  814  NYKVTSYDITGDIRNEGSDAEEEEGEYKNAANTEGHKGHEELKRRIEEEQEKINSAPDFT  873
+
+Query  72   EEEIQEKENLLSQGFT  87
+            +E+   K+ L+S+ FT
+Sbjct  874  QEDELRKQELISKAFT  889
+
+
+>sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 
+GN=ISW2 PE=2 SV=1
+Length=1056
+
+ Score = 46.6 bits (109),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 36/121 (30%), Positives = 54/121 (45%), Gaps = 35/121 (29%)
+
+Query  1    AVDAYFREALK---------------APRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKT  45
+            +VD Y+++ LK                P+ PK   VQD QFF   L  LL++E   F+K 
+Sbjct  715  SVDNYYKDVLKQPAVVKEKVVKQPVVKPKAPKSYNVQDHQFFADELVTLLEREQLAFKKE  774
+
+Query  46   VGYKVPKN---------------TKVQREEQR-----KIDEAEPLTEEEIQEKENLLSQG  85
+            + Y+   +                 + R+E+R     KI+ A  LTEEEI  ++ LL + 
+Sbjct  775  ISYQYSVDDFGDSDEEFLEQDDEDDMTRDEKRKIAQEKINNAVALTEEEIATRDRLLEES  834
+
+Query  86   F  86
+            F
+Sbjct  835  F  835
+
+
+>sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW1 PE=1 SV=2
+Length=1129
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 30/111 (27%), Positives = 49/111 (44%), Gaps = 25/111 (23%)
+
+Query  1    AVDAYFREALKA--------PRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            ++D Y+++ L          PR PK  +    Q  PP+L  L ++E  +  K  GY VP 
+Sbjct  776  SIDNYYKDVLNTGRSSTPSHPRMPKPHVFHSHQLQPPQLKVLYEKERMWTAKKTGY-VPT  834
+
+Query  53   NTKVQ----------------REEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+               V+                   +  ++ ++PLTEEE + K +  S+GFT
+Sbjct  835  MDDVKAAYGDISDEEEKKQKLELLKLSVNNSQPLTEEEEKMKADWESEGFT  885
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.137    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5121101760
+Results from round 2
+
+
+Query= d1ofcx3
+
+Length=87
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator SNF...  134     3e-37
+sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain Is...  122     5e-33
+sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain is...  112     3e-29
+sp|P28370|SMCA1_HUMAN Probable global transcription activator SNF...  110     2e-28
+sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dep...  105     6e-27
+sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dep...  102     5e-26
+sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase ISW...  95.2    2e-23
+sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase ISW...  94.4    4e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase ISW...  52.0    4e-08
+sp|Q7G8Y3|ISW2_ORYSJ Probable chromatin-remodeling complex ATPase...  39.3    0.001
+sp|Q8RWY3|ISW2_ARATH ISWI chromatin-remodeling complex ATPase CHR...  37.4    0.006
+sp|F4JY24|CHR17_ARATH ISWI chromatin-remodeling complex ATPase CH...  37.4    0.006
+
+
+>sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator 
+SNF2L1 OS=Mus musculus OX=10090 GN=Smarca1 PE=1 SV=1
+Length=1046
+
+ Score = 134 bits (338),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 68/101 (67%), Positives = 80/101 (79%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREAL--------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL        KAPRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  750  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  809
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N ++      QREEQ+KID AEPLT +E +EK+ LL+QGFT
+Sbjct  810  NPEIPNPAIAQREEQKKIDGAEPLTPQETEEKDKLLTQGFT  850
+
+
+>sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain 
+Iswi OS=Drosophila melanogaster OX=7227 GN=Iswi PE=1 SV=1
+Length=1027
+
+ Score = 122 bits (307),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 80/102 (78%), Positives = 82/102 (80%), Gaps = 15/102 (15%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK
+Sbjct  697  AVDAYFREALRVSEPKAPKAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  756
+
+Query  53   NTK-------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            NT+       VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT
+Sbjct  757  NTELGSDATKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  798
+
+
+>sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain 
+isw-1 OS=Caenorhabditis elegans OX=6239 GN=isw-1 PE=1 SV=2
+Length=1009
+
+ Score = 112 bits (279),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 50/103 (49%), Positives = 66/103 (64%), Gaps = 17/103 (17%)
+
+Query  2    VDAYFREALKAPRP---------PKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKV--  50
+            VD Y++EA++A  P         PK P V DFQF+P RLFELLD+EIY++RKT+GY    
+Sbjct  698  VDLYYKEAMRAGNPTEKQSKAPRPKLPQVFDFQFYPRRLFELLDKEIYHYRKTIGYVAER  757
+
+Query  51   PKNT------KVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            PK+       K Q EEQ+ I+ A PLT++E +EK  LL+Q  T
+Sbjct  758  PKDVPPKEAEKRQAEEQKLINNARPLTDKEQEEKAELLTQSVT  800
+
+
+>sp|P28370|SMCA1_HUMAN Probable global transcription activator 
+SNF2L1 OS=Homo sapiens OX=9606 GN=SMARCA1 PE=1 SV=2
+Length=1054
+
+ Score = 110 bits (274),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 70/101 (69%), Positives = 79/101 (78%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREAL--------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL        KAPRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  758  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  817
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N  +      QREEQ+KID AEPLT EE +EKE LL+QGFT
+Sbjct  818  NPDIPNPALAQREEQKKIDGAEPLTPEETEEKEKLLTQGFT  858
+
+
+>sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Mus 
+musculus OX=10090 GN=Smarca5 PE=1 SV=1
+Length=1051
+
+ Score = 105 bits (262),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 62/101 (61%), Positives = 74/101 (73%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  742  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  801
+
+Query  53   NTK------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            +         Q+EEQ KIDEAEPL +EE++EKE LL+QGFT
+Sbjct  802  SPDLPNAAQAQKEEQLKIDEAEPLNDEELEEKEKLLTQGFT  842
+
+
+>sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Homo 
+sapiens OX=9606 GN=SMARCA5 PE=1 SV=1
+Length=1052
+
+ Score = 102 bits (255),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 61/101 (60%), Positives = 74/101 (73%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QP VQDFQFFPPRLFELL++EI ++RKT+GYKVP+
+Sbjct  743  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILFYRKTIGYKVPR  802
+
+Query  53   NTK------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N +       Q+EEQ KIDEAE L +EE++EKE LL+QGFT
+Sbjct  803  NPELPNAAQAQKEEQLKIDEAESLNDEELEEKEKLLTQGFT  843
+
+
+>sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW2 PE=1 SV=1
+Length=1120
+
+ Score = 95.2 bits (235),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 42/136 (31%), Positives = 57/136 (42%), Gaps = 49/136 (36%)
+
+Query  1    AVDAYFREAL--------------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTV  46
+            +VD Y++E +              KAPR PK    QDFQFFP  L  L ++E  YF+K V
+Sbjct  754  SVDDYYKEIIGGGSKSASKQTPQPKAPRAPKVIHGQDFQFFPKELDALQEKEQLYFKKKV  813
+
+Query  47   GYKVPK-------------------------NTKVQR----------EEQRKIDEAEPLT  71
+             YKV                           NT+  +          EEQ KI+ A   T
+Sbjct  814  NYKVTSYDITGDIRNEGSDAEEEEGEYKNAANTEGHKGHEELKRRIEEEQEKINSAPDFT  873
+
+Query  72   EEEIQEKENLLSQGFT  87
+            +E+   K+ L+S+ FT
+Sbjct  874  QEDELRKQELISKAFT  889
+
+
+>sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 
+GN=ISW2 PE=2 SV=1
+Length=1056
+
+ Score = 94.4 bits (233),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 36/121 (30%), Positives = 53/121 (44%), Gaps = 35/121 (29%)
+
+Query  1    AVDAYFREALK---------------APRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKT  45
+            +VD Y+++ LK                P+ PK   VQD QFF   L  LL++E   F+K 
+Sbjct  715  SVDNYYKDVLKQPAVVKEKVVKQPVVKPKAPKSYNVQDHQFFADELVTLLEREQLAFKKE  774
+
+Query  46   VGYKVPKN---------------TKVQREE-----QRKIDEAEPLTEEEIQEKENLLSQG  85
+            + Y+   +                 + R+E     Q KI+ A  LTEEEI  ++ LL + 
+Sbjct  775  ISYQYSVDDFGDSDEEFLEQDDEDDMTRDEKRKIAQEKINNAVALTEEEIATRDRLLEES  834
+
+Query  86   F  86
+            F
+Sbjct  835  F  835
+
+
+>sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW1 PE=1 SV=2
+Length=1129
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 27/110 (25%), Positives = 47/110 (43%), Gaps = 23/110 (21%)
+
+Query  1    AVDAYFREALKA--------PRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            ++D Y+++ L          PR PK  +    Q  PP+L  L ++E  +  K  GY    
+Sbjct  776  SIDNYYKDVLNTGRSSTPSHPRMPKPHVFHSHQLQPPQLKVLYEKERMWTAKKTGYVPTM  835
+
+Query  53   NT---------------KVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            +                +     +  ++ ++PLTEEE + K +  S+GFT
+Sbjct  836  DDVKAAYGDISDEEEKKQKLELLKLSVNNSQPLTEEEEKMKADWESEGFT  885
+
+
+>sp|Q7G8Y3|ISW2_ORYSJ Probable chromatin-remodeling complex ATPase 
+chain OS=Oryza sativa subsp. japonica OX=39947 GN=Os01g0367900 
+PE=2 SV=2
+Length=1107
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 49/91 (54%), Gaps = 16/91 (18%)
+
+Query  5    YFREALKA--------PRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKTVGYKVPKNTK  55
+            YF++AL+         PR P+ P + DFQFF   RL EL ++E+ Y  +    K   + +
+Sbjct  796  YFKQALRQGAPAKPREPRIPRMPHLHDFQFFNNQRLNELYEKEVRYLMQANQKKDTIDGE  855
+
+Query  56   VQREEQRKIDEAEPLTEEEIQEKENLLSQGF  86
+             +       D+ EPLT EE +EKE LL +GF
+Sbjct  856  DE-------DQLEPLTAEEQEEKEQLLEEGF  879
+
+
+>sp|Q8RWY3|ISW2_ARATH ISWI chromatin-remodeling complex ATPase 
+CHR11 OS=Arabidopsis thaliana OX=3702 GN=CHR11 PE=1 SV=4
+Length=1056
+
+ Score = 37.4 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 28/50 (56%), Gaps = 9/50 (18%)
+
+Query  5    YFREAL--------KAPRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKT  45
+            YF++ L        K PR P+ P + DFQFF   RL EL ++E+ Y  +T
+Sbjct  755  YFKQTLRQGAPAKPKEPRIPRMPQLHDFQFFNIQRLTELYEKEVRYLMQT  804
+
+
+>sp|F4JY24|CHR17_ARATH ISWI chromatin-remodeling complex ATPase 
+CHR17 OS=Arabidopsis thaliana OX=3702 GN=CHR17 PE=1 SV=1
+Length=1069
+
+ Score = 37.4 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 51/92 (55%), Gaps = 12/92 (13%)
+
+Query  5    YFREAL--------KAPRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKTVGYKVPKNTK  55
+            YF++ L        K PR P+ P + DFQFF   RL EL ++E+ Y  +    K      
+Sbjct  760  YFKQTLRQGAPAKPKEPRIPRMPQLHDFQFFNIQRLTELYEKEVRYLMQA-HQKTQMKDT  818
+
+Query  56   VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            ++ +E  ++ +  PLT EE++EKE LL +GF+
+Sbjct  819  IEVDEPEEVGD--PLTAEEVEEKELLLEEGFS  848
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.128    0.320    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5121101760
+Results from round 3
+
+
+Query= d1ofcx3
+
+Length=87
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator SNF...  125     6e-34
+sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain Is...  118     1e-31
+sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain is...  101     2e-25
+sp|P28370|SMCA1_HUMAN Probable global transcription activator SNF...  100     2e-25
+sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dep...  99.5    8e-25
+sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dep...  96.8    7e-24
+sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase ISW...  94.8    4e-23
+sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase ISW...  85.6    6e-20
+sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase ISW...  84.8    1e-19
+sp|Q7G8Y3|ISW2_ORYSJ Probable chromatin-remodeling complex ATPase...  69.4    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|F4JY24|CHR17_ARATH ISWI chromatin-remodeling complex ATPase CH...  55.9    1e-09
+sp|Q8RWY3|ISW2_ARATH ISWI chromatin-remodeling complex ATPase CHR...  55.5    2e-09
+
+
+>sp|Q6PGB8|SMCA1_MOUSE Probable global transcription activator 
+SNF2L1 OS=Mus musculus OX=10090 GN=Smarca1 PE=1 SV=1
+Length=1046
+
+ Score = 125 bits (313),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 67/101 (66%), Positives = 80/101 (79%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALK--------APRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+        APRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  750  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  809
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N ++      QREEQ+KID AEPLT +E +EK+ LL+QGFT
+Sbjct  810  NPEIPNPAIAQREEQKKIDGAEPLTPQETEEKDKLLTQGFT  850
+
+
+>sp|Q24368|ISWI_DROME Chromatin-remodeling complex ATPase chain 
+Iswi OS=Drosophila melanogaster OX=7227 GN=Iswi PE=1 SV=1
+Length=1027
+
+ Score = 118 bits (296),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 80/102 (78%), Positives = 82/102 (80%), Gaps = 15/102 (15%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK
+Sbjct  697  AVDAYFREALRVSEPKAPKAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  756
+
+Query  53   NTK-------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            NT+       VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT
+Sbjct  757  NTELGSDATKVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  798
+
+
+>sp|P41877|ISW1_CAEEL Chromatin-remodeling complex ATPase chain 
+isw-1 OS=Caenorhabditis elegans OX=6239 GN=isw-1 PE=1 SV=2
+Length=1009
+
+ Score = 101 bits (251),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 50/103 (49%), Positives = 66/103 (64%), Gaps = 17/103 (17%)
+
+Query  2    VDAYFREALKAPRP---------PKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKV--  50
+            VD Y++EA++A  P         PK P V DFQF+P RLFELLD+EIY++RKT+GY    
+Sbjct  698  VDLYYKEAMRAGNPTEKQSKAPRPKLPQVFDFQFYPRRLFELLDKEIYHYRKTIGYVAER  757
+
+Query  51   PKNT------KVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            PK+       K Q EEQ+ I+ A PLT++E +EK  LL+Q  T
+Sbjct  758  PKDVPPKEAEKRQAEEQKLINNARPLTDKEQEEKAELLTQSVT  800
+
+
+>sp|P28370|SMCA1_HUMAN Probable global transcription activator 
+SNF2L1 OS=Homo sapiens OX=9606 GN=SMARCA1 PE=1 SV=2
+Length=1054
+
+ Score = 100 bits (250),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 69/101 (68%), Positives = 79/101 (78%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALK--------APRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+        APRPPKQP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  758  AVDAYFREALRVSEPKIPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  817
+
+Query  53   NTKV------QREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N  +      QREEQ+KID AEPLT EE +EKE LL+QGFT
+Sbjct  818  NPDIPNPALAQREEQKKIDGAEPLTPEETEEKEKLLTQGFT  858
+
+
+>sp|Q91ZW3|SMCA5_MOUSE SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Mus 
+musculus OX=10090 GN=Smarca5 PE=1 SV=1
+Length=1051
+
+ Score = 99.5 bits (246),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 62/101 (61%), Positives = 74/101 (73%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QP VQDFQFFPPRLFELL++EI Y+RKT+GYKVP+
+Sbjct  742  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILYYRKTIGYKVPR  801
+
+Query  53   NTK------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            +         Q+EEQ KIDEAEPL +EE++EKE LL+QGFT
+Sbjct  802  SPDLPNAAQAQKEEQLKIDEAEPLNDEELEEKEKLLTQGFT  842
+
+
+>sp|O60264|SMCA5_HUMAN SWI/SNF-related matrix-associated actin-dependent 
+regulator of chromatin subfamily A member 5 OS=Homo 
+sapiens OX=9606 GN=SMARCA5 PE=1 SV=1
+Length=1052
+
+ Score = 96.8 bits (239),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 61/101 (60%), Positives = 74/101 (73%), Gaps = 14/101 (14%)
+
+Query  1    AVDAYFREALKAPRPPK--------QPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            AVDAYFREAL+   P          QP VQDFQFFPPRLFELL++EI ++RKT+GYKVP+
+Sbjct  743  AVDAYFREALRVSEPKAPKAPRPPKQPNVQDFQFFPPRLFELLEKEILFYRKTIGYKVPR  802
+
+Query  53   NTK------VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            N +       Q+EEQ KIDEAE L +EE++EKE LL+QGFT
+Sbjct  803  NPELPNAAQAQKEEQLKIDEAESLNDEELEEKEKLLTQGFT  843
+
+
+>sp|P38144|ISW1_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW1 PE=1 SV=2
+Length=1129
+
+ Score = 94.8 bits (234),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 27/110 (25%), Positives = 47/110 (43%), Gaps = 23/110 (21%)
+
+Query  1    AVDAYFREALKA--------PRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTVGYKVPK  52
+            ++D Y+++ L          PR PK  +    Q  PP+L  L ++E  +  K  GY    
+Sbjct  776  SIDNYYKDVLNTGRSSTPSHPRMPKPHVFHSHQLQPPQLKVLYEKERMWTAKKTGYVPTM  835
+
+Query  53   NT---------------KVQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+            +                +     +  ++ ++PLTEEE + K +  S+GFT
+Sbjct  836  DDVKAAYGDISDEEEKKQKLELLKLSVNNSQPLTEEEEKMKADWESEGFT  885
+
+
+>sp|Q5A310|ISW2_CANAL ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 
+GN=ISW2 PE=2 SV=1
+Length=1056
+
+ Score = 85.6 bits (210),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 34/121 (28%), Positives = 52/121 (43%), Gaps = 35/121 (29%)
+
+Query  1    AVDAYFREALKAP---------------RPPKQPIVQDFQFFPPRLFELLDQEIYYFRKT  45
+            +VD Y+++ LK P               + PK   VQD QFF   L  LL++E   F+K 
+Sbjct  715  SVDNYYKDVLKQPAVVKEKVVKQPVVKPKAPKSYNVQDHQFFADELVTLLEREQLAFKKE  774
+
+Query  46   VGYKVPKN--------------------TKVQREEQRKIDEAEPLTEEEIQEKENLLSQG  85
+            + Y+   +                     + ++  Q KI+ A  LTEEEI  ++ LL + 
+Sbjct  775  ISYQYSVDDFGDSDEEFLEQDDEDDMTRDEKRKIAQEKINNAVALTEEEIATRDRLLEES  834
+
+Query  86   F  86
+            F
+Sbjct  835  F  835
+
+
+>sp|Q08773|ISW2_YEAST ISWI chromatin-remodeling complex ATPase 
+ISW2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=ISW2 PE=1 SV=1
+Length=1120
+
+ Score = 84.8 bits (208),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 42/136 (31%), Positives = 57/136 (42%), Gaps = 49/136 (36%)
+
+Query  1    AVDAYFREAL--------------KAPRPPKQPIVQDFQFFPPRLFELLDQEIYYFRKTV  46
+            +VD Y++E +              KAPR PK    QDFQFFP  L  L ++E  YF+K V
+Sbjct  754  SVDDYYKEIIGGGSKSASKQTPQPKAPRAPKVIHGQDFQFFPKELDALQEKEQLYFKKKV  813
+
+Query  47   GYKVPK-------------------------NTKVQR----------EEQRKIDEAEPLT  71
+             YKV                           NT+  +          EEQ KI+ A   T
+Sbjct  814  NYKVTSYDITGDIRNEGSDAEEEEGEYKNAANTEGHKGHEELKRRIEEEQEKINSAPDFT  873
+
+Query  72   EEEIQEKENLLSQGFT  87
+            +E+   K+ L+S+ FT
+Sbjct  874  QEDELRKQELISKAFT  889
+
+
+>sp|Q7G8Y3|ISW2_ORYSJ Probable chromatin-remodeling complex ATPase 
+chain OS=Oryza sativa subsp. japonica OX=39947 GN=Os01g0367900 
+PE=2 SV=2
+Length=1107
+
+ Score = 69.4 bits (168),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 49/91 (54%), Gaps = 16/91 (18%)
+
+Query  5    YFREALKA--------PRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKTVGYKVPKNTK  55
+            YF++AL+         PR P+ P + DFQFF   RL EL ++E+ Y  +    K   + +
+Sbjct  796  YFKQALRQGAPAKPREPRIPRMPHLHDFQFFNNQRLNELYEKEVRYLMQANQKKDTIDGE  855
+
+Query  56   VQREEQRKIDEAEPLTEEEIQEKENLLSQGF  86
+             +       D+ EPLT EE +EKE LL +GF
+Sbjct  856  DE-------DQLEPLTAEEQEEKEQLLEEGF  879
+
+
+>sp|F4JY24|CHR17_ARATH ISWI chromatin-remodeling complex ATPase 
+CHR17 OS=Arabidopsis thaliana OX=3702 GN=CHR17 PE=1 SV=1
+Length=1069
+
+ Score = 55.9 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 49/92 (53%), Gaps = 12/92 (13%)
+
+Query  5    YFREALKA--------PRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKTVGYKVPKNTK  55
+            YF++ L+         PR P+ P + DFQFF   RL EL ++E+ Y  +       K+T 
+Sbjct  760  YFKQTLRQGAPAKPKEPRIPRMPQLHDFQFFNIQRLTELYEKEVRYLMQAHQKTQMKDTI  819
+
+Query  56   VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+               E +   D   PLT EE++EKE LL +GF+
+Sbjct  820  EVDEPEEVGD---PLTAEEVEEKELLLEEGFS  848
+
+
+>sp|Q8RWY3|ISW2_ARATH ISWI chromatin-remodeling complex ATPase 
+CHR11 OS=Arabidopsis thaliana OX=3702 GN=CHR11 PE=1 SV=4
+Length=1056
+
+ Score = 55.5 bits (132),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 35/92 (38%), Positives = 50/92 (54%), Gaps = 12/92 (13%)
+
+Query  5    YFREALKA--------PRPPKQPIVQDFQFFP-PRLFELLDQEIYYFRKTVGYKVPKNTK  55
+            YF++ L+         PR P+ P + DFQFF   RL EL ++E+ Y  +T      K+T 
+Sbjct  755  YFKQTLRQGAPAKPKEPRIPRMPQLHDFQFFNIQRLTELYEKEVRYLMQTHQKNQLKDTI  814
+
+Query  56   VQREEQRKIDEAEPLTEEEIQEKENLLSQGFT  87
+               E +   D   PLT EE++EKE LL +GF+
+Sbjct  815  DVEEPEEGGD---PLTTEEVEEKEGLLEEGFS  843
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.126    0.313    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5121101760
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

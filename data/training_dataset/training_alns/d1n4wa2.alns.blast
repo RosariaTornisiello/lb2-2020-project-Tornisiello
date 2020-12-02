@@ -1,0 +1,171 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1n4wa2
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P12676|CHOD_STRS0 Cholesterol oxidase OS=Streptomyces sp. (str...  280     1e-92
+sp|P22637|CHOD_BREST Cholesterol oxidase OS=Brevibacterium sterol...  172     4e-51
+
+
+>sp|P12676|CHOD_STRS0 Cholesterol oxidase OS=Streptomyces sp. 
+(strain SA-COO) OX=74576 GN=choA PE=1 SV=1
+Length=546
+
+ Score = 280 bits (717),  Expect = 1e-92, Method: Compositional matrix adjust.
+ Identities = 132/132 (100%), Positives = 132/132 (100%), Gaps = 0/132 (0%)
+
+Query  1    GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  60
+            GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA
+Sbjct  356  GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  415
+
+Query  61   ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  120
+            ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK
+Sbjct  416  ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  475
+
+Query  121  AFADDFCYHPLG  132
+            AFADDFCYHPLG
+Sbjct  476  AFADDFCYHPLG  487
+
+
+>sp|P22637|CHOD_BREST Cholesterol oxidase OS=Brevibacterium sterolicum 
+OX=1702 GN=choB PE=1 SV=2
+Length=552
+
+ Score = 172 bits (437),  Expect = 4e-51, Method: Compositional matrix adjust.
+ Identities = 75/132 (57%), Positives = 97/132 (73%), Gaps = 0/132 (0%)
+
+Query  1    GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  60
+            G NGNIM  RANHMW+ TG+ Q++IP +GID W +  + +FAEIAP+PAGLET+VSLYLA
+Sbjct  364  GNNGNIMVGRANHMWDATGSKQATIPTMGIDNWADPTAPIFAEIAPLPAGLETYVSLYLA  423
+
+Query  61   ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  120
+            ITKNP+R  F +++ T +  L W + QN   ++ AK +FD+IN+  GTIYR DLFG   K
+Sbjct  424  ITKNPERARFQFNSGTGKVDLTWAQSQNQKGIDMAKKVFDKINQKEGTIYRTDLFGVYFK  483
+
+Query  121  AFADDFCYHPLG  132
+             + DDF YHPLG
+Sbjct  484  TWGDDFTYHPLG  495
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.422    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+Results from round 2
+
+
+Query= d1n4wa2
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P12676|CHOD_STRS0 Cholesterol oxidase OS=Streptomyces sp. (str...  251     4e-81
+sp|P22637|CHOD_BREST Cholesterol oxidase OS=Brevibacterium sterol...  249     1e-80
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P12676|CHOD_STRS0 Cholesterol oxidase OS=Streptomyces sp. 
+(strain SA-COO) OX=74576 GN=choA PE=1 SV=1
+Length=546
+
+ Score = 251 bits (640),  Expect = 4e-81, Method: Composition-based stats.
+ Identities = 132/132 (100%), Positives = 132/132 (100%), Gaps = 0/132 (0%)
+
+Query  1    GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  60
+            GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA
+Sbjct  356  GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  415
+
+Query  61   ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  120
+            ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK
+Sbjct  416  ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  475
+
+Query  121  AFADDFCYHPLG  132
+            AFADDFCYHPLG
+Sbjct  476  AFADDFCYHPLG  487
+
+
+>sp|P22637|CHOD_BREST Cholesterol oxidase OS=Brevibacterium sterolicum 
+OX=1702 GN=choB PE=1 SV=2
+Length=552
+
+ Score = 249 bits (637),  Expect = 1e-80, Method: Composition-based stats.
+ Identities = 75/132 (57%), Positives = 97/132 (73%), Gaps = 0/132 (0%)
+
+Query  1    GPNGNIMTARANHMWNPTGAHQSSIPALGIDAWDNSDSSVFAEIAPMPAGLETWVSLYLA  60
+            G NGNIM  RANHMW+ TG+ Q++IP +GID W +  + +FAEIAP+PAGLET+VSLYLA
+Sbjct  364  GNNGNIMVGRANHMWDATGSKQATIPTMGIDNWADPTAPIFAEIAPLPAGLETYVSLYLA  423
+
+Query  61   ITKNPQRGTFVYDAATDRAKLNWTRDQNAPAVNAAKALFDRINKANGTIYRYDLFGTQLK  120
+            ITKNP+R  F +++ T +  L W + QN   ++ AK +FD+IN+  GTIYR DLFG   K
+Sbjct  424  ITKNPERARFQFNSGTGKVDLTWAQSQNQKGIDMAKKVFDKINQKEGTIYRTDLFGVYFK  483
+
+Query  121  AFADDFCYHPLG  132
+             + DDF YHPLG
+Sbjct  484  TWGDDFTYHPLG  495
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.131    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

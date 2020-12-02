@@ -1,0 +1,244 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1or7c_
+
+Length=66
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P0AFX7|RSEA_ECOLI Anti-sigma-E factor RseA OS=Escherichia coli...  139     2e-42
+sp|P0AFX8|RSEA_ECOL6 Anti-sigma-E factor RseA OS=Escherichia coli...  139     2e-42
+sp|D0ZSY8|RSEA_SALT1 Anti-sigma-E factor RseA OS=Salmonella typhi...  124     1e-36
+sp|P44791|RSEA_HAEIN Anti-sigma-E factor RseA OS=Haemophilus infl...  57.8    5e-11
+
+
+>sp|P0AFX7|RSEA_ECOLI Anti-sigma-E factor RseA OS=Escherichia 
+coli (strain K12) OX=83333 GN=rseA PE=1 SV=1
+Length=216
+
+ Score = 139 bits (349),  Expect = 2e-42, Method: Compositional matrix adjust.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM
+Sbjct  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+
+Query  61  AAIEEE  66
+           AAIEEE
+Sbjct  61  AAIEEE  66
+
+
+>sp|P0AFX8|RSEA_ECOL6 Anti-sigma-E factor RseA OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=rseA 
+PE=3 SV=1
+Length=216
+
+ Score = 139 bits (349),  Expect = 2e-42, Method: Compositional matrix adjust.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM
+Sbjct  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+
+Query  61  AAIEEE  66
+           AAIEEE
+Sbjct  61  AAIEEE  66
+
+
+>sp|D0ZSY8|RSEA_SALT1 Anti-sigma-E factor RseA OS=Salmonella typhimurium 
+(strain 14028s / SGSC 2262) OX=588858 GN=rseA PE=1 
+SV=1
+Length=216
+
+ Score = 124 bits (311),  Expect = 1e-36, Method: Compositional matrix adjust.
+ Identities = 58/66 (88%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKE+LSALMDGETLDSELL  L H+PEMQKTWESYHLIRDSMRGDTP+VLHFDIS+RVM
+Sbjct  1   MQKEKLSALMDGETLDSELLKALTHDPEMQKTWESYHLIRDSMRGDTPDVLHFDISARVM  60
+
+Query  61  AAIEEE  66
+           AAIE E
+Sbjct  61  AAIENE  66
+
+
+>sp|P44791|RSEA_HAEIN Anti-sigma-E factor RseA OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=rseA PE=3 SV=1
+Length=195
+
+ Score = 57.8 bits (138),  Expect = 5e-11, Method: Compositional matrix adjust.
+ Identities = 27/66 (41%), Positives = 44/66 (67%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSA MDGE ++++L++ L  + E+Q +W S+H +R  MR ++   L  D ++++ 
+Sbjct  1   MQKEQLSAYMDGEQVETDLIDALLRDEELQASWHSFHTVRSVMRKESAVFLGADFTAKMA  60
+
+Query  61  AAIEEE  66
+             IE E
+Sbjct  61  DLIELE  66
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.127    0.351    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5079254600
+Results from round 2
+
+
+Query= d1or7c_
+
+Length=66
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|D0ZSY8|RSEA_SALT1 Anti-sigma-E factor RseA OS=Salmonella typhi...  114     8e-33
+sp|P0AFX7|RSEA_ECOLI Anti-sigma-E factor RseA OS=Escherichia coli...  112     7e-32
+sp|P0AFX8|RSEA_ECOL6 Anti-sigma-E factor RseA OS=Escherichia coli...  112     7e-32
+sp|P44791|RSEA_HAEIN Anti-sigma-E factor RseA OS=Haemophilus infl...  100     2e-27
+
+Sequences not found previously or not previously below threshold:
+
+sp|P38107|MUCA_PSEAE Sigma factor AlgU negative regulatory protei...  35.9    0.009
+
+
+>sp|D0ZSY8|RSEA_SALT1 Anti-sigma-E factor RseA OS=Salmonella typhimurium 
+(strain 14028s / SGSC 2262) OX=588858 GN=rseA PE=1 
+SV=1
+Length=216
+
+ Score = 114 bits (286),  Expect = 8e-33, Method: Composition-based stats.
+ Identities = 58/66 (88%), Positives = 62/66 (94%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKE+LSALMDGETLDSELL  L H+PEMQKTWESYHLIRDSMRGDTP+VLHFDIS+RVM
+Sbjct  1   MQKEKLSALMDGETLDSELLKALTHDPEMQKTWESYHLIRDSMRGDTPDVLHFDISARVM  60
+
+Query  61  AAIEEE  66
+           AAIE E
+Sbjct  61  AAIENE  66
+
+
+>sp|P0AFX7|RSEA_ECOLI Anti-sigma-E factor RseA OS=Escherichia 
+coli (strain K12) OX=83333 GN=rseA PE=1 SV=1
+Length=216
+
+ Score = 112 bits (280),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM
+Sbjct  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+
+Query  61  AAIEEE  66
+           AAIEEE
+Sbjct  61  AAIEEE  66
+
+
+>sp|P0AFX8|RSEA_ECOL6 Anti-sigma-E factor RseA OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=rseA 
+PE=3 SV=1
+Length=216
+
+ Score = 112 bits (280),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 66/66 (100%), Positives = 66/66 (100%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM
+Sbjct  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+
+Query  61  AAIEEE  66
+           AAIEEE
+Sbjct  61  AAIEEE  66
+
+
+>sp|P44791|RSEA_HAEIN Anti-sigma-E factor RseA OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=rseA PE=3 SV=1
+Length=195
+
+ Score = 100 bits (248),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 27/66 (41%), Positives = 44/66 (67%), Gaps = 0/66 (0%)
+
+Query  1   MQKEQLSALMDGETLDSELLNELAHNPEMQKTWESYHLIRDSMRGDTPEVLHFDISSRVM  60
+           MQKEQLSA MDGE ++++L++ L  + E+Q +W S+H +R  MR ++   L  D ++++ 
+Sbjct  1   MQKEQLSAYMDGEQVETDLIDALLRDEELQASWHSFHTVRSVMRKESAVFLGADFTAKMA  60
+
+Query  61  AAIEEE  66
+             IE E
+Sbjct  61  DLIELE  66
+
+
+>sp|P38107|MUCA_PSEAE Sigma factor AlgU negative regulatory protein 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 
+/ CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) 
+OX=208964 GN=mucA PE=1 SV=1
+Length=194
+
+ Score = 35.9 bits (81),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/47 (38%), Positives = 25/47 (53%), Gaps = 3/47 (6%)
+
+Query  3   KEQLSALMDGETLDSELLNELA---HNPEMQKTWESYHLIRDSMRGD  46
+           +E LSA+MD E  + EL   LA    + E++ TW  Y L R  M  +
+Sbjct  7   QETLSAVMDNEADELELRRVLAACGEDAELRSTWSRYQLARSVMHRE  53
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.331    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5079254600
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

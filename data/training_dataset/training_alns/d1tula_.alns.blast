@@ -1,0 +1,159 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1tula_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q06691|TLP20_NPVAC Telokin-like protein 20 OS=Autographa calif...  214     7e-72
+sp|O10335|TLP20_NPVOP Telokin-like protein 20 homolog OS=Orgyia p...  50.4    7e-08
+
+
+>sp|Q06691|TLP20_NPVAC Telokin-like protein 20 OS=Autographa californica 
+nuclear polyhedrosis virus OX=46015 GN=TLP20 PE=1 
+SV=2
+Length=180
+
+ Score = 214 bits (545),  Expect = 7e-72, Method: Compositional matrix adjust.
+ Identities = 101/101 (100%), Positives = 101/101 (100%), Gaps = 0/101 (0%)
+
+Query  2    TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG  61
+            TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG
+Sbjct  8    TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG  67
+
+Query  62   NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR  102
+            NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR
+Sbjct  68   NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR  108
+
+
+>sp|O10335|TLP20_NPVOP Telokin-like protein 20 homolog OS=Orgyia 
+pseudotsugata multicapsid polyhedrosis virus OX=262177 GN=ORF85 
+PE=4 SV=1
+Length=155
+
+ Score = 50.4 bits (119),  Expect = 7e-08, Method: Compositional matrix adjust.
+ Identities = 31/103 (30%), Positives = 58/103 (56%), Gaps = 8/103 (8%)
+
+Query  2    TPDIIVNAQ--INSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVS  59
+            T DI+V A+  I  ++  +L+F  E+E+ L +   GAH ++V +SP+L  L+   Y+ ++
+Sbjct  8    TSDIVVRARVLIADDEGTLLEFEAENEHCLMR---GAHEVRVIASPELDALHNGPYNEIA  64
+
+Query  60   CGNYGVLCNLVQNGEYDLNAIMF-NCAEIKLNKGQMLFQTKIW  101
+             G+Y    NLV    +    ++F    +IK++    +F+ K+W
+Sbjct  65   LGDYTFHFNLVAANRFGAQVMLFAKRDDIKVSGA--VFRLKVW  105
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 2
+
+
+Query= d1tula_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q06691|TLP20_NPVAC Telokin-like protein 20 OS=Autographa calif...  169     7e-54
+sp|O10335|TLP20_NPVOP Telokin-like protein 20 homolog OS=Orgyia p...  143     5e-44
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q06691|TLP20_NPVAC Telokin-like protein 20 OS=Autographa californica 
+nuclear polyhedrosis virus OX=46015 GN=TLP20 PE=1 
+SV=2
+Length=180
+
+ Score = 169 bits (427),  Expect = 7e-54, Method: Composition-based stats.
+ Identities = 101/101 (100%), Positives = 101/101 (100%), Gaps = 0/101 (0%)
+
+Query  2    TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG  61
+            TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG
+Sbjct  8    TPDIIVNAQINSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVSCG  67
+
+Query  62   NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR  102
+            NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR
+Sbjct  68   NYGVLCNLVQNGEYDLNAIMFNCAEIKLNKGQMLFQTKIWR  108
+
+
+>sp|O10335|TLP20_NPVOP Telokin-like protein 20 homolog OS=Orgyia 
+pseudotsugata multicapsid polyhedrosis virus OX=262177 GN=ORF85 
+PE=4 SV=1
+Length=155
+
+ Score = 143 bits (360),  Expect = 5e-44, Method: Composition-based stats.
+ Identities = 31/103 (30%), Positives = 58/103 (56%), Gaps = 8/103 (8%)
+
+Query  2    TPDIIVNAQ--INSEDENVLDFIIEDEYYLKKRGVGAHIIKVASSPQLRLLYKNAYSTVS  59
+            T DI+V A+  I  ++  +L+F  E+E+ L +   GAH ++V +SP+L  L+   Y+ ++
+Sbjct  8    TSDIVVRARVLIADDEGTLLEFEAENEHCLMR---GAHEVRVIASPELDALHNGPYNEIA  64
+
+Query  60   CGNYGVLCNLVQNGEYDLNAIMF-NCAEIKLNKGQMLFQTKIW  101
+             G+Y    NLV    +    ++F    +IK++    +F+ K+W
+Sbjct  65   LGDYTFHFNLVAANRFGAQVMLFAKRDDIKVSGA--VFRLKVW  105
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0422    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

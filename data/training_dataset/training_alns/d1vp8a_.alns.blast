@@ -1,0 +1,139 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vp8a_
+
+Length=190
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q57927|Y504_METJA Uncharacterized protein MJ0504 OS=Methanocal...  209     3e-68
+
+
+>sp|Q57927|Y504_METJA Uncharacterized protein MJ0504 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0504 PE=4 SV=1
+Length=196
+
+ Score = 209 bits (533),  Expect = 3e-68, Method: Compositional matrix adjust.
+ Identities = 112/187 (60%), Positives = 138/187 (74%), Gaps = 6/187 (3%)
+
+Query  9    FNKPGRENTEETLRLAVERAKELGIKHLVVASSYGDTAMKALEMAE----GLEVVVVTYH  64
+            F+ PG +NT+ETL++AVERAK+  IK +VVASS G TA K L++ E     L VVVVTYH
+Sbjct  4    FDYPGIQNTDETLKIAVERAKKGDIKSIVVASSTGYTAKKLLDLLEKEGLDLNVVVVTYH  63
+
+Query  65   TGFVREGENTMPPEVEEELRKRGAKIVRQSHILSGLERSISRKLGGVSRTEAIAEALRSL  124
+             GF  E   +M  EVEEEL+KRGAK+ R SH LSG+ER IS KLGG    + IAE LR+ 
+Sbjct  64   QGFHGEDTISMDKEVEEELKKRGAKVFRGSHALSGVERGISNKLGGYGPVQVIAETLRT-  122
+
+Query  125  FGHGLKVCVEITIMAADSGAIPI-EEVVAVGGRSRGADTAVVIRPAHMNNFFDAEIKEII  183
+            FG G+KVC EITIMA D+G I   EEV+A+GG  RGADTA+VI+PA+MN FF+ E +EI+
+Sbjct  123  FGQGVKVCYEITIMACDAGLIKAKEEVIAIGGTGRGADTAMVIKPANMNTFFNIEAREIL  182
+
+Query  184  CMPRNKR  190
+            CMPR K+
+Sbjct  183  CMPRIKK  189
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.370    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11083460156
+Results from round 2
+
+
+Query= d1vp8a_
+
+Length=190
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q57927|Y504_METJA Uncharacterized protein MJ0504 OS=Methanocal...  289     7e-100
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q57927|Y504_METJA Uncharacterized protein MJ0504 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0504 PE=4 SV=1
+Length=196
+
+ Score = 289 bits (740),  Expect = 7e-100, Method: Composition-based stats.
+ Identities = 112/187 (60%), Positives = 138/187 (74%), Gaps = 6/187 (3%)
+
+Query  9    FNKPGRENTEETLRLAVERAKELGIKHLVVASSYGDTAMKALEMAE----GLEVVVVTYH  64
+            F+ PG +NT+ETL++AVERAK+  IK +VVASS G TA K L++ E     L VVVVTYH
+Sbjct  4    FDYPGIQNTDETLKIAVERAKKGDIKSIVVASSTGYTAKKLLDLLEKEGLDLNVVVVTYH  63
+
+Query  65   TGFVREGENTMPPEVEEELRKRGAKIVRQSHILSGLERSISRKLGGVSRTEAIAEALRSL  124
+             GF  E   +M  EVEEEL+KRGAK+ R SH LSG+ER IS KLGG    + IAE LR+ 
+Sbjct  64   QGFHGEDTISMDKEVEEELKKRGAKVFRGSHALSGVERGISNKLGGYGPVQVIAETLRT-  122
+
+Query  125  FGHGLKVCVEITIMAADSGAIPI-EEVVAVGGRSRGADTAVVIRPAHMNNFFDAEIKEII  183
+            FG G+KVC EITIMA D+G I   EEV+A+GG  RGADTA+VI+PA+MN FF+ E +EI+
+Sbjct  123  FGQGVKVCYEITIMACDAGLIKAKEEVIAIGGTGRGADTAMVIKPANMNTFFNIEAREIL  182
+
+Query  184  CMPRNKR  190
+            CMPR K+
+Sbjct  183  CMPRIKK  189
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.141    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0433    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11083460156
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

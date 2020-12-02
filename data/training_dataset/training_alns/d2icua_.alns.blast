@@ -1,0 +1,719 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2icua_
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P76318|YEDK_ECOLI Abasic site processing protein YedK OS=Esche...  419     2e-150
+sp|O64131|YOQW_BPSPB SOS response-associated protein yoqW OS=Baci...  65.5    7e-12 
+sp|O31916|YOQW_BACSU Abasic site processing protein YoqW OS=Bacil...  65.5    7e-12 
+sp|Q96FZ2|HMCES_HUMAN Abasic site processing protein HMCES OS=Hom...  66.6    8e-12 
+sp|Q04471|YM04_YEAST Abasic site processing protein YMR114C OS=Sa...  64.7    3e-11 
+sp|Q5NVR0|HMCES_PONAB Abasic site processing protein HMCES OS=Pon...  64.7    4e-11 
+sp|Q6IND6|HMCES_XENLA Abasic site processing protein HMCES OS=Xen...  64.3    5e-11 
+sp|O34906|YOAM_BACSU Abasic site processing protein YoaM OS=Bacil...  63.2    6e-11 
+sp|O34915|YOBE_BACSU Abasic site processing protein YobE OS=Bacil...  62.8    6e-11 
+sp|Q5XIJ1|HMCES_RAT Abasic site processing protein HMCES OS=Rattu...  60.1    1e-09 
+sp|Q6P7N4|HMCES_XENTR Abasic site processing protein HMCES OS=Xen...  59.3    2e-09 
+sp|Q5ZJT1|HMCES_CHICK Abasic site processing protein HMCES OS=Gal...  58.2    7e-09 
+sp|Q8R1M0|HMCES_MOUSE Abasic site processing protein HMCES OS=Mus...  57.8    9e-09 
+
+
+>sp|P76318|YEDK_ECOLI Abasic site processing protein YedK OS=Escherichia 
+coli (strain K12) OX=83333 GN=yedK PE=1 SV=2
+Length=222
+
+ Score = 419 bits (1077),  Expect = 2e-150, Method: Compositional matrix adjust.
+ Identities = 210/220 (95%), Positives = 210/220 (95%), Gaps = 10/220 (5%)
+
+Query  1    GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG  60
+            GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG
+Sbjct  3    GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG  62
+
+Query  61   YAPG----PPLINARVETAATSRMFKPLWQHGRAICFADGWFEWK------QPFFIYRAD  110
+            YAPG    PPLINARVETAATSRMFKPLWQHGRAICFADGWFEWK      QPFFIYRAD
+Sbjct  63   YAPGWWDKPPLINARVETAATSRMFKPLWQHGRAICFADGWFEWKKEGDKKQPFFIYRAD  122
+
+Query  111  GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG  170
+            GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG
+Sbjct  123  GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG  182
+
+Query  171  KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+            KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV
+Sbjct  183  KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  222
+
+
+>sp|O64131|YOQW_BPSPB SOS response-associated protein yoqW OS=Bacillus 
+phage SPbeta OX=66797 GN=yoqW PE=3 SV=1
+Length=224
+
+ Score = 65.5 bits (158),  Expect = 7e-12, Method: Compositional matrix adjust.
+ Identities = 52/195 (27%), Positives = 84/195 (43%), Gaps = 25/195 (13%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET +    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETLSEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFERGDEAEG-----F  133
+               R I  AD ++EWK+       P  I          A +    +E+ +  EG      
+Sbjct  93   VSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGL----YEKWNTPEGNPLYTC  148
+
+Query  134  LIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVS  193
+             I+T   ++ + DIHDR P++L+ E  +EW+  + +  +  + +      A+    + VS
+Sbjct  149  TIITTKPNELMEDIHDRMPVILTDENEKEWLNPKNTDPDYLQ-SLLQPYDADDMEAYQVS  207
+
+Query  194  RAVGNVKNQGAELIQ  208
+              V + KN   ELI+
+Sbjct  208  SLVNSPKNNSPELIE  222
+
+
+>sp|O31916|YOQW_BACSU Abasic site processing protein YoqW OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yoqW PE=3 SV=1
+Length=224
+
+ Score = 65.5 bits (158),  Expect = 7e-12, Method: Compositional matrix adjust.
+ Identities = 52/195 (27%), Positives = 84/195 (43%), Gaps = 25/195 (13%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET +    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETLSEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFERGDEAEG-----F  133
+               R I  AD ++EWK+       P  I          A +    +E+ +  EG      
+Sbjct  93   VSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGL----YEKWNTPEGNPLYTC  148
+
+Query  134  LIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVS  193
+             I+T   ++ + DIHDR P++L+ E  +EW+  + +  +  + +      A+    + VS
+Sbjct  149  TIITTKPNELMEDIHDRMPVILTDENEKEWLNPKNTDPDYLQ-SLLQPYDADDMEAYQVS  207
+
+Query  194  RAVGNVKNQGAELIQ  208
+              V + KN   ELI+
+Sbjct  208  SLVNSPKNNSPELIE  222
+
+
+>sp|Q96FZ2|HMCES_HUMAN Abasic site processing protein HMCES OS=Homo 
+sapiens OX=9606 GN=HMCES PE=1 SV=1
+Length=354
+
+ Score = 66.6 bits (161),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 64/236 (27%), Positives = 95/236 (40%), Gaps = 66/236 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSNSPVLLSR---LHFEKDADSSERIIAPMRWGLVPSWFKESDPSKLQFNTTNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQPIFMAAIGST  122
+             +T    R FK PL +  R +  ADG++EW        +QP+FIY    +     +IG+ 
+Sbjct  99   SDTVMEKRSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGSIGAA  158
+
+Query  123  --------------------------PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS  156
+                                      P E GD    + I+T  + +GL DIH R P +L 
+Sbjct  159  DSPENWEKVWDNWRLLTMAGIFDCWEPPEGGDVLYSYTIITVDSCKGLSDIHHRMPAILD  218
+
+Query  157  -PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+              EA  +W+   E+S +EA ++      P    ++H VS  V N +N   E + PV
+Sbjct  219  GEEAVSKWLDFGEVSTQEALKLIH----PTENITFHAVSSVVNNSRNNTPECLAPV  270
+
+
+>sp|Q04471|YM04_YEAST Abasic site processing protein YMR114C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YMR114C PE=1 SV=1
+Length=368
+
+ Score = 64.7 bits (156),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 45/153 (29%), Positives = 71/153 (46%), Gaps = 12/153 (8%)
+
+Query  68   INARVETAATSRMFKPLWQHGRAICFADGWFEWKQ------PFFIYRADGQPIFMAAIGS  121
+             NAR+E    S+M+    +  R      G+FEWK       P+FI R DG+ +F+A  G 
+Sbjct  101  FNARLENLQESKMWMRPCEKKRCAVLMSGYFEWKTVGKKKTPYFISRRDGRLMFVA--GM  158
+
+Query  122  TPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSP--EAAREWMRQEISGKEASEIAA-  178
+              +   D+   F I+TA   + L  +H+R P VL P  E+   WM  + +     E+   
+Sbjct  159  YDYVEKDDLYTFTIITAQGPRELEWLHERMPCVLEPGTESWDAWMDVDKTTWSTEELVKL  218
+
+Query  179  -SGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+                   ++  ++ V+  VG   N G  LI+P+
+Sbjct  219  LKPDYDESKLQFYQVTDDVGKTTNTGERLIKPL  251
+
+
+>sp|Q5NVR0|HMCES_PONAB Abasic site processing protein HMCES OS=Pongo 
+abelii OX=9601 GN=HMCES PE=2 SV=1
+Length=354
+
+ Score = 64.7 bits (156),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 51/179 (28%), Positives = 75/179 (42%), Gaps = 39/179 (22%)
+
+Query  68   INARVETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQPIFMAA  118
+             N R +T    R FK PL +  R +  ADG++EW        +QP+FIY    +     +
+Sbjct  95   TNCRNDTIMEKRSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGS  154
+
+Query  119  IGST--------------------------PFERGDEAEGFLIVTAAADQGLVDIHDRRP  152
+            IG+                           P E GD    + I+T  + +GL DIH R P
+Sbjct  155  IGAADSPENWGKVWDNWRLLTMAGIFDCWEPPEGGDVLYSYTIITVDSCKGLSDIHHRMP  214
+
+Query  153  LVLS-PEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             +L   EA  +W+     GK +++ A     P    ++H VS  V N +N   E + PV
+Sbjct  215  AILDGEEAVSKWLD---FGKVSTQEALKLIHPTENITFHAVSSVVNNSRNNTPECLAPV  270
+
+
+>sp|Q6IND6|HMCES_XENLA Abasic site processing protein HMCES OS=Xenopus 
+laevis OX=8355 GN=hmces PE=2 SV=1
+Length=336
+
+ Score = 64.3 bits (155),  Expect = 5e-11, Method: Compositional matrix adjust.
+ Identities = 52/186 (28%), Positives = 83/186 (45%), Gaps = 36/186 (19%)
+
+Query  53   HLDPVFWGYAPGPPLINARVETAATSRMFK-PLWQHGRAICFADGWFEW------KQPFF  105
+             LDP    Y       N R +T     ++K PL++  R +  ADG++EW      KQP++
+Sbjct  86   ELDPSKMQYKTN----NCRSDTITEKALYKAPLFKGRRCVVLADGFYEWKRQDGEKQPYY  141
+
+Query  106  IYRA----------------DGQPIF-MAAIGST--PFERGDEAEGFLIVTAAADQGLVD  146
+            IY                  +GQ +  MA +     P   G+    + ++T  + + +  
+Sbjct  142  IYFPQIKSEKFPEEQDMMDWNGQRLLTMAGLFDCWEPPSGGEPLYSYTVITVDSSKTMNC  201
+
+Query  147  IHDRRPLVLS-PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGA  204
+            IHDR P +L   EA R+W+   E+S ++A ++      P    ++HPVS  V N +N   
+Sbjct  202  IHDRMPAILDGDEAIRKWLDFGEVSTQDALKLIH----PIENITYHPVSTVVNNSRNNST  257
+
+Query  205  ELIQPV  210
+            E I  V
+Sbjct  258  ECIAAV  263
+
+
+>sp|O34906|YOAM_BACSU Abasic site processing protein YoaM OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yoaM PE=3 SV=1
+Length=227
+
+ Score = 63.2 bits (152),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 52/196 (27%), Positives = 84/196 (43%), Gaps = 29/196 (15%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET      F+   
+Sbjct  33   YNVAPSQNILAIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETITEKPAFRRPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFERGDEAEGF-----  133
+               R I  AD ++EWK+       P  I          A +    +E+    +G+     
+Sbjct  93   VSKRCIIPADSFYEWKRLDSKTKIPMRIKLKSSALFAFAGL----YEKWSTHQGYPLYTC  148
+
+Query  134  LIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVP--ANQFSWHP  191
+             I+T   ++ + DIHDR P++L+ +  +EW+  +     + +   S  +P  A+    + 
+Sbjct  149  TIITTEPNEFMKDIHDRMPVILAHDHEKEWLNPK---NTSPDYLQSLLLPYDADDMEAYQ  205
+
+Query  192  VSRAVGNVKNQGAELI  207
+            VS  V + KN  AEL+
+Sbjct  206  VSSLVNSPKNNSAELL  221
+
+
+>sp|O34915|YOBE_BACSU Abasic site processing protein YobE OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yobE PE=3 SV=1
+Length=219
+
+ Score = 62.8 bits (151),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 45/152 (30%), Positives = 66/152 (43%), Gaps = 24/152 (16%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET A    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPCAKDEKIGYKMINARAETLAEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFERGDEAEGFL----  134
+               R I  AD ++EWK+       P  I          A +    +E+ +  EG L    
+Sbjct  93   GSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGL----YEKWNTLEGNLLYTC  148
+
+Query  135  -IVTAAADQGLVDIHDRRPLVLSPEAAREWMR  165
+             I+T    + + DIHDR P++L+ E  +EW+ 
+Sbjct  149  TIITIKPSELMEDIHDRMPVILTDENKKEWLN  180
+
+
+>sp|Q5XIJ1|HMCES_RAT Abasic site processing protein HMCES OS=Rattus 
+norvegicus OX=10116 GN=Hmces PE=2 SV=1
+Length=353
+
+ Score = 60.1 bits (144),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 62/236 (26%), Positives = 97/236 (41%), Gaps = 67/236 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSSSPVLLSR---LHFEKDADSSDRIIFPMRWGLVPSWFKESDPSKLQFNTSNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQP---------  113
+             +T    + FK PL +  R +  ADG++EW        +QP+FIY    +          
+Sbjct  99   SDTIMEKQSFKAPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQSKTEKSGENSGS  158
+
+Query  114  ---------------IFMAAIGSTPFE--RGDEAEGFLIVTAAADQGLVDIHDRRPLVLS  156
+                           + MA I    +E  +G+    + I+T  + +GL DIH R P +L 
+Sbjct  159  DSLNNKEEVWDNWRLLTMAGIFDC-WEPPKGERLYSYSIITVDSCRGLSDIHSRMPAILD  217
+
+Query  157  -PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+              EA  +W+   E+S +EA ++      P +  ++HPVS  V N +N   E + P 
+Sbjct  218  GEEAVSKWLDFGEVSTQEALKLIH----PIDNITFHPVSPVVNNSRNNTPECLAPA  269
+
+
+>sp|Q6P7N4|HMCES_XENTR Abasic site processing protein HMCES OS=Xenopus 
+tropicalis OX=8364 GN=hmces PE=2 SV=1
+Length=335
+
+ Score = 59.3 bits (142),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 45/167 (27%), Positives = 77/167 (46%), Gaps = 32/167 (19%)
+
+Query  69   NARVETAATSRMFK-PLWQHGRAICFADGWFEW------KQPFFIY----RADGQP----  113
+            N R +T     ++K  L++  R +  ADG++EW      KQP++IY    +A+  P    
+Sbjct  98   NCRSDTMTEKALYKASLFKGKRCVVLADGFYEWQRQNSEKQPYYIYFPQIKAEKSPAEQD  157
+
+Query  114  ---------IFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-PEAAR  161
+                     + MA +     P   G+    + ++T  + + +  IHDR P +L   EA R
+Sbjct  158  ITDWNGQRLLTMAGLFDCWEPPNGGETLYSYTVITVDSSKTMNWIHDRMPAILDGDEAVR  217
+
+Query  162  EWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELI  207
+            +W+   E+  K+A ++      P    ++HPVS  V N +N   E +
+Sbjct  218  KWLDFGEVPTKDALKLIH----PIENITYHPVSTVVNNSRNNTPECM  260
+
+
+>sp|Q5ZJT1|HMCES_CHICK Abasic site processing protein HMCES OS=Gallus 
+gallus OX=9031 GN=HMCES PE=2 SV=1
+Length=336
+
+ Score = 58.2 bits (139),  Expect = 7e-09, Method: Compositional matrix adjust.
+ Identities = 48/171 (28%), Positives = 77/171 (45%), Gaps = 33/171 (19%)
+
+Query  69   NARVETAATSRMFK-PLWQHGRAICFADGWFEW------KQPFFIYRADGQP--------  113
+            N R +T  +   +K PL +  R +  ADG++EW      KQP+FIY    +         
+Sbjct  96   NCRSDTMLSKSSYKGPLLKGKRCVVLADGFYEWQQRGGGKQPYFIYFPQNKKHPAEEEED  155
+
+Query  114  ----------IFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVL-SPEAA  160
+                      + MA I     P + G+    + I+T  A + +  IH R P +L   EA 
+Sbjct  156  SDEEWRGWRLLTMAGIFDCWEPPKGGEPLYTYTIITVDASEDVSFIHHRMPAILDGDEAI  215
+
+Query  161  REWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             +W+   E+  +EA ++      PA   ++HPVS  V +V+N   E + P+
+Sbjct  216  EKWLDFAEVPTREAMKLIR----PAENIAFHPVSTFVNSVRNDTPECLVPI  262
+
+
+>sp|Q8R1M0|HMCES_MOUSE Abasic site processing protein HMCES OS=Mus 
+musculus OX=10090 GN=Hmces PE=1 SV=1
+Length=353
+
+ Score = 57.8 bits (138),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 62/235 (26%), Positives = 96/235 (41%), Gaps = 65/235 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSSSPVLLSR---LHFEKDADSSDRIIIPMRWGLVPSWFKESDPSKLQFNTTNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIY---------------  107
+             +T    + FK PL +  R +  ADG++EW        +QP+FIY               
+Sbjct  99   SDTIMEKQSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGGNDAS  158
+
+Query  108  -RADGQP--------IFMAAIGSTPFERGDEA-EGFLIVTAAADQGLVDIHDRRPLVLS-  156
+              +D +         + MA I       G E    + I+T  + +GL DIH R P +L  
+Sbjct  159  DSSDNKEKVWDNWRLLTMAGIFDCWEAPGGECLYSYSIITVDSCRGLSDIHSRMPAILDG  218
+
+Query  157  PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             EA  +W+   E++ +EA ++      P +  ++HPVS  V N +N   E + P 
+Sbjct  219  EEAVSKWLDFGEVATQEALKLIH----PIDNITFHPVSPVVNNSRNNTPECLAPA  269
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.137    0.436    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 13499567600
+Results from round 2
+
+
+Query= d2icua_
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P76318|YEDK_ECOLI Abasic site processing protein YedK OS=Esche...  316     1e-109
+sp|O64131|YOQW_BPSPB SOS response-associated protein yoqW OS=Baci...  221     3e-72 
+sp|O31916|YOQW_BACSU Abasic site processing protein YoqW OS=Bacil...  221     3e-72 
+sp|O34906|YOAM_BACSU Abasic site processing protein YoaM OS=Bacil...  216     2e-70 
+sp|Q96FZ2|HMCES_HUMAN Abasic site processing protein HMCES OS=Hom...  218     2e-69 
+sp|Q5NVR0|HMCES_PONAB Abasic site processing protein HMCES OS=Pon...  218     4e-69 
+sp|O34915|YOBE_BACSU Abasic site processing protein YobE OS=Bacil...  210     5e-68 
+sp|Q5XIJ1|HMCES_RAT Abasic site processing protein HMCES OS=Rattu...  211     1e-66 
+sp|Q6P7N4|HMCES_XENTR Abasic site processing protein HMCES OS=Xen...  209     4e-66 
+sp|Q8R1M0|HMCES_MOUSE Abasic site processing protein HMCES OS=Mus...  210     4e-66 
+sp|Q6IND6|HMCES_XENLA Abasic site processing protein HMCES OS=Xen...  209     5e-66 
+sp|Q5ZJT1|HMCES_CHICK Abasic site processing protein HMCES OS=Gal...  200     2e-62 
+sp|Q04471|YM04_YEAST Abasic site processing protein YMR114C OS=Sa...  193     4e-59 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P76318|YEDK_ECOLI Abasic site processing protein YedK OS=Escherichia 
+coli (strain K12) OX=83333 GN=yedK PE=1 SV=2
+Length=222
+
+ Score = 316 bits (809),  Expect = 1e-109, Method: Composition-based stats.
+ Identities = 210/220 (95%), Positives = 210/220 (95%), Gaps = 10/220 (5%)
+
+Query  1    GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG  60
+            GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG
+Sbjct  3    GRFAQSQTREDYLALLAEDIERDIPYDPEPIGRYNVAPGTKVLLLSERDEHLHLDPVFWG  62
+
+Query  61   YAPG----PPLINARVETAATSRMFKPLWQHGRAICFADGWFEWK------QPFFIYRAD  110
+            YAPG    PPLINARVETAATSRMFKPLWQHGRAICFADGWFEWK      QPFFIYRAD
+Sbjct  63   YAPGWWDKPPLINARVETAATSRMFKPLWQHGRAICFADGWFEWKKEGDKKQPFFIYRAD  122
+
+Query  111  GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG  170
+            GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG
+Sbjct  123  GQPIFMAAIGSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSPEAAREWMRQEISG  182
+
+Query  171  KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+            KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV
+Sbjct  183  KEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  222
+
+
+>sp|O64131|YOQW_BPSPB SOS response-associated protein yoqW OS=Bacillus 
+phage SPbeta OX=66797 GN=yoqW PE=3 SV=1
+Length=224
+
+ Score = 221 bits (563),  Expect = 3e-72, Method: Composition-based stats.
+ Identities = 50/191 (26%), Positives = 80/191 (42%), Gaps = 17/191 (9%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET +    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETLSEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFE-RGDEAEGFLIVT  137
+               R I  AD ++EWK+       P  I          A +        G+      I+T
+Sbjct  93   VSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGLYEKWNTPEGNPLYTCTIIT  152
+
+Query  138  AAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVSRAVG  197
+               ++ + DIHDR P++L+ E  +EW+  + +  +  + +      A+    + VS  V 
+Sbjct  153  TKPNELMEDIHDRMPVILTDENEKEWLNPKNTDPDYLQ-SLLQPYDADDMEAYQVSSLVN  211
+
+Query  198  NVKNQGAELIQ  208
+            + KN   ELI+
+Sbjct  212  SPKNNSPELIE  222
+
+
+>sp|O31916|YOQW_BACSU Abasic site processing protein YoqW OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yoqW PE=3 SV=1
+Length=224
+
+ Score = 221 bits (563),  Expect = 3e-72, Method: Composition-based stats.
+ Identities = 50/191 (26%), Positives = 80/191 (42%), Gaps = 17/191 (9%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET +    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETLSEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFE-RGDEAEGFLIVT  137
+               R I  AD ++EWK+       P  I          A +        G+      I+T
+Sbjct  93   VSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGLYEKWNTPEGNPLYTCTIIT  152
+
+Query  138  AAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVSRAVG  197
+               ++ + DIHDR P++L+ E  +EW+  + +  +  + +      A+    + VS  V 
+Sbjct  153  TKPNELMEDIHDRMPVILTDENEKEWLNPKNTDPDYLQ-SLLQPYDADDMEAYQVSSLVN  211
+
+Query  198  NVKNQGAELIQ  208
+            + KN   ELI+
+Sbjct  212  SPKNNSPELIE  222
+
+
+>sp|O34906|YOAM_BACSU Abasic site processing protein YoaM OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yoaM PE=3 SV=1
+Length=227
+
+ Score = 216 bits (551),  Expect = 2e-70, Method: Composition-based stats.
+ Identities = 49/190 (26%), Positives = 79/190 (42%), Gaps = 17/190 (9%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET      F+   
+Sbjct  33   YNVAPSQNILAIINDGSNNRLGKLRWGLIPPWAKDEKIGYKMINARAETITEKPAFRRPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFE-RGDEAEGFLIVT  137
+               R I  AD ++EWK+       P  I          A +       +G       I+T
+Sbjct  93   VSKRCIIPADSFYEWKRLDSKTKIPMRIKLKSSALFAFAGLYEKWSTHQGYPLYTCTIIT  152
+
+Query  138  AAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVSRAVG  197
+               ++ + DIHDR P++L+ +  +EW+  + +  +  + +      A+    + VS  V 
+Sbjct  153  TEPNEFMKDIHDRMPVILAHDHEKEWLNPKNTSPDYLQ-SLLLPYDADDMEAYQVSSLVN  211
+
+Query  198  NVKNQGAELI  207
+            + KN  AEL+
+Sbjct  212  SPKNNSAELL  221
+
+
+>sp|Q96FZ2|HMCES_HUMAN Abasic site processing protein HMCES OS=Homo 
+sapiens OX=9606 GN=HMCES PE=1 SV=1
+Length=354
+
+ Score = 218 bits (556),  Expect = 2e-69, Method: Composition-based stats.
+ Identities = 65/236 (28%), Positives = 95/236 (40%), Gaps = 66/236 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSNSPVLLSR---LHFEKDADSSERIIAPMRWGLVPSWFKESDPSKLQFNTTNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQ----------  112
+             +T    R FK PL +  R +  ADG++EW        +QP+FIY    +          
+Sbjct  99   SDTVMEKRSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGSIGAA  158
+
+Query  113  --------------PIFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS  156
+                           + MA I     P E GD    + I+T  + +GL DIH R P +L 
+Sbjct  159  DSPENWEKVWDNWRLLTMAGIFDCWEPPEGGDVLYSYTIITVDSCKGLSDIHHRMPAILD  218
+
+Query  157  -PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+              EA  +W+   E+S +EA ++      P    ++H VS  V N +N   E + PV
+Sbjct  219  GEEAVSKWLDFGEVSTQEALKLIH----PTENITFHAVSSVVNNSRNNTPECLAPV  270
+
+
+>sp|Q5NVR0|HMCES_PONAB Abasic site processing protein HMCES OS=Pongo 
+abelii OX=9601 GN=HMCES PE=2 SV=1
+Length=354
+
+ Score = 218 bits (554),  Expect = 4e-69, Method: Composition-based stats.
+ Identities = 62/233 (27%), Positives = 93/233 (40%), Gaps = 60/233 (26%)
+
+Query  34   YNVAPGTKVLLLSER--------DEHLHLDPVFWGYAPG------PPLI-----NARVET  74
+            YN +P +   +L  R             + P+ WG  P       P  +     N R +T
+Sbjct  42   YNKSPQSNSPVLLSRLHFVKDADSSERIIAPMRWGLVPSWFKESDPSKLQFNTTNCRNDT  101
+
+Query  75   AATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQ-------------  112
+                R FK PL +  R +  ADG++EW        +QP+FIY    +             
+Sbjct  102  IMEKRSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGSIGAADSP  161
+
+Query  113  -----------PIFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-PE  158
+                        + MA I     P E GD    + I+T  + +GL DIH R P +L   E
+Sbjct  162  ENWGKVWDNWRLLTMAGIFDCWEPPEGGDVLYSYTIITVDSCKGLSDIHHRMPAILDGEE  221
+
+Query  159  AAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+            A  +W+   ++S +EA ++      P    ++H VS  V N +N   E + PV
+Sbjct  222  AVSKWLDFGKVSTQEALKLIH----PTENITFHAVSSVVNNSRNNTPECLAPV  270
+
+
+>sp|O34915|YOBE_BACSU Abasic site processing protein YobE OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yobE PE=3 SV=1
+Length=219
+
+ Score = 210 bits (535),  Expect = 5e-68, Method: Composition-based stats.
+ Identities = 49/191 (26%), Positives = 76/191 (40%), Gaps = 22/191 (12%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLDPVFWGYAP--------GPPLINARVETAATSRMFKPLW  85
+            YNVAP   +L +     +  L  + WG  P        G  +INAR ET A    F+   
+Sbjct  33   YNVAPSQNILTIINDGSNNRLGKLRWGLIPPCAKDEKIGYKMINARAETLAEKPSFRKPL  92
+
+Query  86   QHGRAICFADGWFEWKQ-------PFFIYRADGQPIFMAAIGSTPFE-RGDEAEGFLIVT  137
+               R I  AD ++EWK+       P  I          A +        G+      I+T
+Sbjct  93   GSKRCIIPADSFYEWKRLDPKTKIPMRIKLKSSNLFAFAGLYEKWNTLEGNLLYTCTIIT  152
+
+Query  138  AAADQGLVDIHDRRPLVLSPEAAREWMRQEISGKEASEIAASGCVPANQFSWHPVSRAVG  197
+                + + DIHDR P++L+ E  +EW+  + +  +  + +      A+    + VS  V 
+Sbjct  153  IKPSELMEDIHDRMPVILTDENKKEWLNPKNTDPDYLQ-SLLLPYDADDMEAYQVSSLVN  211
+
+Query  198  NVKNQGAELIQ  208
+                   ELI+
+Sbjct  212  -----SPELIE  217
+
+
+>sp|Q5XIJ1|HMCES_RAT Abasic site processing protein HMCES OS=Rattus 
+norvegicus OX=10116 GN=Hmces PE=2 SV=1
+Length=353
+
+ Score = 211 bits (537),  Expect = 1e-66, Method: Composition-based stats.
+ Identities = 61/235 (26%), Positives = 95/235 (40%), Gaps = 65/235 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSSSPVLLSR---LHFEKDADSSDRIIFPMRWGLVPSWFKESDPSKLQFNTSNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQ----------  112
+             +T    + FK PL +  R +  ADG++EW        +QP+FIY    +          
+Sbjct  99   SDTIMEKQSFKAPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQSKTEKSGENSGS  158
+
+Query  113  --------------PIFMAAIGSTP-FERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-  156
+                           + MA I       +G+    + I+T  + +GL DIH R P +L  
+Sbjct  159  DSLNNKEEVWDNWRLLTMAGIFDCWEPPKGERLYSYSIITVDSCRGLSDIHSRMPAILDG  218
+
+Query  157  PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             EA  +W+   E+S +EA ++      P +  ++HPVS  V N +N   E + P 
+Sbjct  219  EEAVSKWLDFGEVSTQEALKLIH----PIDNITFHPVSPVVNNSRNNTPECLAPA  269
+
+
+>sp|Q6P7N4|HMCES_XENTR Abasic site processing protein HMCES OS=Xenopus 
+tropicalis OX=8364 GN=hmces PE=2 SV=1
+Length=335
+
+ Score = 209 bits (533),  Expect = 4e-66, Method: Composition-based stats.
+ Identities = 51/224 (23%), Positives = 87/224 (39%), Gaps = 51/224 (23%)
+
+Query  34   YNVAPGTKVLLLSE--------RDEHLHLDPVFWGYAPG-----------PPLINARVET  74
+            YN +P +   +L                L  + WG  P                N R +T
+Sbjct  44   YNKSPQSNSPVLLSLKHFQKDADSSERVLAAMRWGLIPSWFNEPDPSKMQYKTNNCRSDT  103
+
+Query  75   AATSRMFK-PLWQHGRAICFADGWFEW------KQPFFIYRADGQ---------------  112
+                 ++K  L++  R +  ADG++EW      KQP++IY    +               
+Sbjct  104  MTEKALYKASLFKGKRCVVLADGFYEWQRQNSEKQPYYIYFPQIKAEKSPAEQDITDWNG  163
+
+Query  113  --PIFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-PEAAREWMR-Q  166
+               + MA +     P   G+    + ++T  + + +  IHDR P +L   EA R+W+   
+Sbjct  164  QRLLTMAGLFDCWEPPNGGETLYSYTVITVDSSKTMNWIHDRMPAILDGDEAVRKWLDFG  223
+
+Query  167  EISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+            E+  K+A ++      P    ++HPVS  V N +N   E +  +
+Sbjct  224  EVPTKDALKLIH----PIENITYHPVSTVVNNSRNNTPECMAAI  263
+
+
+>sp|Q8R1M0|HMCES_MOUSE Abasic site processing protein HMCES OS=Mus 
+musculus OX=10090 GN=Hmces PE=1 SV=1
+Length=353
+
+ Score = 210 bits (534),  Expect = 4e-66, Method: Composition-based stats.
+ Identities = 60/235 (26%), Positives = 94/235 (40%), Gaps = 65/235 (28%)
+
+Query  34   YNVAPGTKVLLLSERDEHLHLD-----------PVFWGYAPG------PPLI-----NAR  71
+            YN +P +   +L  R   LH +           P+ WG  P       P  +     N R
+Sbjct  42   YNKSPQSSSPVLLSR---LHFEKDADSSDRIIIPMRWGLVPSWFKESDPSKLQFNTTNCR  98
+
+Query  72   VETAATSRMFK-PLWQHGRAICFADGWFEW--------KQPFFIYRADGQ----------  112
+             +T    + FK PL +  R +  ADG++EW        +QP+FIY    +          
+Sbjct  99   SDTIMEKQSFKVPLGKGRRCVVLADGFYEWQRCQGTNQRQPYFIYFPQIKTEKSGGNDAS  158
+
+Query  113  --------------PIFMAAIGSTPFE-RGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-  156
+                           + MA I        G+    + I+T  + +GL DIH R P +L  
+Sbjct  159  DSSDNKEKVWDNWRLLTMAGIFDCWEAPGGECLYSYSIITVDSCRGLSDIHSRMPAILDG  218
+
+Query  157  PEAAREWMR-QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             EA  +W+   E++ +EA ++      P +  ++HPVS  V N +N   E + P 
+Sbjct  219  EEAVSKWLDFGEVATQEALKLIH----PIDNITFHPVSPVVNNSRNNTPECLAPA  269
+
+
+>sp|Q6IND6|HMCES_XENLA Abasic site processing protein HMCES OS=Xenopus 
+laevis OX=8355 GN=hmces PE=2 SV=1
+Length=336
+
+ Score = 209 bits (532),  Expect = 5e-66, Method: Composition-based stats.
+ Identities = 54/224 (24%), Positives = 89/224 (40%), Gaps = 51/224 (23%)
+
+Query  34   YNVAPGTKVLLLSE--------RDEHLHLDPVFWGYAPG-----------PPLINARVET  74
+            YN +P +   +L                L  + WG  P                N R +T
+Sbjct  44   YNKSPQSNNPVLLSLKHFQKDADSSERVLAAMRWGLIPSWFNELDPSKMQYKTNNCRSDT  103
+
+Query  75   AATSRMFK-PLWQHGRAICFADGWFEWK------QPFFIYRADGQ---------------  112
+                 ++K PL++  R +  ADG++EWK      QP++IY    +               
+Sbjct  104  ITEKALYKAPLFKGRRCVVLADGFYEWKRQDGEKQPYYIYFPQIKSEKFPEEQDMMDWNG  163
+
+Query  113  --PIFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-PEAAREWMR-Q  166
+               + MA +     P   G+    + ++T  + + +  IHDR P +L   EA R+W+   
+Sbjct  164  QRLLTMAGLFDCWEPPSGGEPLYSYTVITVDSSKTMNCIHDRMPAILDGDEAIRKWLDFG  223
+
+Query  167  EISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+            E+S ++A ++      P    ++HPVS  V N +N   E I  V
+Sbjct  224  EVSTQDALKLIH----PIENITYHPVSTVVNNSRNNSTECIAAV  263
+
+
+>sp|Q5ZJT1|HMCES_CHICK Abasic site processing protein HMCES OS=Gallus 
+gallus OX=9031 GN=HMCES PE=2 SV=1
+Length=336
+
+ Score = 200 bits (509),  Expect = 2e-62, Method: Composition-based stats.
+ Identities = 57/225 (25%), Positives = 89/225 (40%), Gaps = 52/225 (23%)
+
+Query  34   YNVAPGTKVLLLSER--------DEHLHLDPVFWGYAPG-----------PPLINARVET  74
+            YN  P +   +L  R             L  + WG  P                N R +T
+Sbjct  42   YNKGPQSSGPVLLSRKHVQQDADSSERVLMDMRWGLVPSWFKEDDPSKMQFKTSNCRSDT  101
+
+Query  75   AATSRMFK-PLWQHGRAICFADGWFEW------KQPFFIYRADGQ---------------  112
+              +   +K PL +  R +  ADG++EW      KQP+FIY    +               
+Sbjct  102  MLSKSSYKGPLLKGKRCVVLADGFYEWQQRGGGKQPYFIYFPQNKKHPAEEEEDSDEEWR  161
+
+Query  113  ---PIFMAAIGST--PFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLS-PEAAREWMR-  165
+                + MA I     P + G+    + I+T  A + +  IH R P +L   EA  +W+  
+Sbjct  162  GWRLLTMAGIFDCWEPPKGGEPLYTYTIITVDASEDVSFIHHRMPAILDGDEAIEKWLDF  221
+
+Query  166  QEISGKEASEIAASGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+             E+  +EA ++      PA   ++HPVS  V +V+N   E + P+
+Sbjct  222  AEVPTREAMKLIR----PAENIAFHPVSTFVNSVRNDTPECLVPI  262
+
+
+>sp|Q04471|YM04_YEAST Abasic site processing protein YMR114C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YMR114C PE=1 SV=1
+Length=368
+
+ Score = 193 bits (489),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 54/215 (25%), Positives = 89/215 (41%), Gaps = 26/215 (12%)
+
+Query  18   EDIERDIPYDPEPI--GRYNVAPGTKVLLLSERDEHLHLDPVFWGYAP----------GP  65
+            E+  +D P   + I    YN++P     +     + +    + WG  P            
+Sbjct  41   EEDTKDQPTVSKDIFKASYNISPTNYSAVYRPDTKAIQF--MRWGLVPFWTKDVSQFKTY  98
+
+Query  66   PLINARVETAATSRMFKPLWQHGRAICFADGWFEWKQ------PFFIYRADGQPIFMAAI  119
+               NAR+E    S+M+    +  R      G+FEWK       P+FI R DG+ +F+A  
+Sbjct  99   RTFNARLENLQESKMWMRPCEKKRCAVLMSGYFEWKTVGKKKTPYFISRRDGRLMFVAG-  157
+
+Query  120  GSTPFERGDEAEGFLIVTAAADQGLVDIHDRRPLVLSP--EAAREWMRQEISGKEASEIA  177
+                +   D+   F I+TA   + L  +H+R P VL P  E+   WM  + +     E+ 
+Sbjct  158  -MYDYVEKDDLYTFTIITAQGPRELEWLHERMPCVLEPGTESWDAWMDVDKTTWSTEELV  216
+
+Query  178  A--SGCVPANQFSWHPVSRAVGNVKNQGAELIQPV  210
+                     ++  ++ V+  VG   N G  LI+P+
+Sbjct  217  KLLKPDYDESKLQFYQVTDDVGKTTNTGERLIKPL  251
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.377    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 13499567600
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

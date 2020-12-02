@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2fhzb_
+
+Length=93
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P18000|CEA5_ECOLX Colicin-E5 (Fragment) OS=Escherichia coli OX...  194     4e-64
+sp|H9T8G4|CDIA8_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholder...  105     5e-27
+
+
+>sp|P18000|CEA5_ECOLX Colicin-E5 (Fragment) OS=Escherichia coli 
+OX=562 GN=col PE=1 SV=1
+Length=180
+
+ Score = 194 bits (493),  Expect = 4e-64, Method: Compositional matrix adjust.
+ Identities = 93/93 (100%), Positives = 93/93 (100%), Gaps = 0/93 (0%)
+
+Query  1    LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG  60
+            LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG
+Sbjct  84   LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG  143
+
+Query  61   KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN  93
+            KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN
+Sbjct  144  KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN  176
+
+
+>sp|H9T8G4|CDIA8_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholderia 
+pseudomallei OX=28450 GN=cdiA PE=1 SV=1
+Length=1269
+
+ Score = 105 bits (263),  Expect = 5e-27, Method: Compositional matrix adjust.
+ Identities = 52/89 (58%), Positives = 63/89 (71%), Gaps = 1/89 (1%)
+
+Query  3     IDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPGKY  62
+             ID KI GQ+  RGWT+ +++  V+ G  GT+ D RS  KTP D L RND A+VYGS   Y
+Sbjct  1181  IDGKIGGQLEARGWTQQEVQAVVNEGPVGTTMDNRSAGKTP-DGLPRNDSASVYGSKSGY  1239
+
+Query  63    VVVNDRTGEVTQISDKTDPGWVDDSRIQW  91
+             VVVNDRTGEV Q+S K DP W+ DSRI+W
+Sbjct  1240  VVVNDRTGEVVQVSGKNDPVWIPDSRIKW  1268
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.133    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5019747000
+Results from round 2
+
+
+Query= d2fhzb_
+
+Length=93
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P18000|CEA5_ECOLX Colicin-E5 (Fragment) OS=Escherichia coli OX...  162     9e-52
+sp|H9T8G4|CDIA8_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholder...  150     9e-43
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P18000|CEA5_ECOLX Colicin-E5 (Fragment) OS=Escherichia coli 
+OX=562 GN=col PE=1 SV=1
+Length=180
+
+ Score = 162 bits (411),  Expect = 9e-52, Method: Composition-based stats.
+ Identities = 93/93 (100%), Positives = 93/93 (100%), Gaps = 0/93 (0%)
+
+Query  1    LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG  60
+            LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG
+Sbjct  84   LKIDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPG  143
+
+Query  61   KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN  93
+            KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN
+Sbjct  144  KYVVVNDRTGEVTQISDKTDPGWVDDSRIQWGN  176
+
+
+>sp|H9T8G4|CDIA8_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholderia 
+pseudomallei OX=28450 GN=cdiA PE=1 SV=1
+Length=1269
+
+ Score = 150 bits (380),  Expect = 9e-43, Method: Composition-based stats.
+ Identities = 52/89 (58%), Positives = 63/89 (71%), Gaps = 1/89 (1%)
+
+Query  3     IDQKIRGQMPERGWTEDDIKNTVSNGATGTSFDKRSPKKTPPDYLGRNDPATVYGSPGKY  62
+             ID KI GQ+  RGWT+ +++  V+ G  GT+ D RS  KTP D L RND A+VYGS   Y
+Sbjct  1181  IDGKIGGQLEARGWTQQEVQAVVNEGPVGTTMDNRSAGKTP-DGLPRNDSASVYGSKSGY  1239
+
+Query  63    VVVNDRTGEVTQISDKTDPGWVDDSRIQW  91
+             VVVNDRTGEV Q+S K DP W+ DSRI+W
+Sbjct  1240  VVVNDRTGEVVQVSGKNDPVWIPDSRIKW  1268
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5019747000
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

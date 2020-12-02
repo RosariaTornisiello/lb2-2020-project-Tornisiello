@@ -1,0 +1,675 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1j0pa_
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris (str...  215     9e-73
+sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (str...  192     5e-64
+sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain...  94.0    4e-25
+sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens OX...  61.6    2e-12
+sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium n...  59.3    2e-11
+sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans...  58.9    2e-11
+sp|P81149|CYC31_DESVU Cytochrome c3-1 (Fragment) OS=Desulfovibrio...  47.0    1e-07
+sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (st...  47.4    1e-06
+sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter a...  43.9    2e-05
+sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium n...  41.6    1e-04
+
+
+>sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Miyazaki F / DSM 19637) OX=883 GN=DvMF_2499 PE=1 SV=2
+Length=130
+
+ Score = 215 bits (547),  Expect = 9e-73, Method: Compositional matrix adjust.
+ Identities = 107/108 (99%), Positives = 107/108 (99%), Gaps = 0/108 (0%)
+
+Query  1    AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKD  60
+            AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED QKCATAGCHDNMDKKD
+Sbjct  23   AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDYQKCATAGCHDNMDKKD  82
+
+Query  61   KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  108
+            KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS
+Sbjct  83   KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  130
+
+
+>sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=DVU_3171 PE=1 SV=1
+Length=129
+
+ Score = 192 bits (489),  Expect = 5e-64, Method: Compositional matrix adjust.
+ Identities = 94/107 (88%), Positives = 100/107 (93%), Gaps = 0/107 (0%)
+
+Query  1    AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKD  60
+            AAPKAPADGLKM+ TKQPVVFNHSTHK+VKCGDCHHPVNGKED +KC TAGCHD+MDKKD
+Sbjct  22   AAPKAPADGLKMEATKQPVVFNHSTHKSVKCGDCHHPVNGKEDYRKCGTAGCHDSMDKKD  81
+
+Query  61   KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            KSAKGYYH MHDK TKFKSCVGCH+E AGADAAKKK+LTGCK SKCH
+Sbjct  82   KSAKGYYHVMHDKNTKFKSCVGCHVEVAGADAAKKKDLTGCKKSKCH  128
+
+
+>sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain 
+ATCC 19364 / DSM 1382 / NCIMB 9332 / VKM B-1759) OX=1121448 
+PE=1 SV=2
+Length=112
+
+ Score = 94.0 bits (232),  Expect = 4e-25, Method: Compositional matrix adjust.
+ Identities = 55/109 (50%), Positives = 66/109 (61%), Gaps = 7/109 (6%)
+
+Query  5    APADGLKMD-----KTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK  59
+             PADG K+D     +    VVFNHSTHK VKC DCHH    K+    C T GCH+ +DK 
+Sbjct  3    VPADGAKIDFIAGGEKNLTVVFNHSTHKDVKCDDCHHDPGDKQ-YAGCTTDGCHNILDKA  61
+
+Query  60   DKSAKGYYHAMHD-KGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            DKS   +Y  +HD KG    +C+ CH + AG D   KK+LTGCKGS CH
+Sbjct  62   DKSVNSWYKVVHDAKGGAKPTCISCHKDKAGDDKELKKKLTGCKGSACH  110
+
+
+>sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens 
+OX=880 PE=1 SV=1
+Length=106
+
+ Score = 61.6 bits (148),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 40/82 (49%), Positives = 49/82 (60%), Gaps = 6/82 (7%)
+
+Query  4   KAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK-DKS  62
+           KAPA G KM  TK PV F+H  H A+ C  CHH  +GK +++KC+  GCH +  KK  KS
+Sbjct  10  KAPA-GAKM--TKAPVDFSHKGHAALDCTKCHHKWDGKAEVKKCSAEGCHVBTSKKGKKS  66
+
+Query  63  AKGYYHAMHDKGTKFKSCVGCH  84
+              +Y A H K     SCVGCH
+Sbjct  67  TPKFYSAFHSKSD--ISCVGCH  86
+
+
+>sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=1
+Length=111
+
+ Score = 59.3 bits (142),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 28/68 (41%), Positives = 35/68 (51%), Gaps = 1/68 (1%)
+
+Query  19  VVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKGTKFK  78
+           V FNH++H  + C  CHH V     ++ C T GCHDN+ K+       Y   H      K
+Sbjct  26  VTFNHASHMDIACQQCHHTVPDTYTIESCMTEGCHDNI-KERTEISSVYRTFHTTKDSEK  84
+
+Query  79  SCVGCHLE  86
+           SCVGCH E
+Sbjct  85  SCVGCHRE  92
+
+
+>sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans 
+OX=876 PE=1 SV=1
+Length=102
+
+ Score = 58.9 bits (141),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 36/81 (44%), Positives = 49/81 (60%), Gaps = 5/81 (6%)
+
+Query  4   KAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSA  63
+           KAPA G K+  TK PV F+H  H ++ C  CHH  +G   +Q C  +GCH N + K K  
+Sbjct  10  KAPA-GAKV--TKAPVAFSHKGHASMDCKTCHHKWDGAGAIQPCQASGCHANTESK-KGD  65
+
+Query  64  KGYYHAMHDKGTKFKSCVGCH  84
+             +Y A H++ ++ KSCVGCH
+Sbjct  66  DSFYMAFHERKSE-KSCVGCH  85
+
+
+>sp|P81149|CYC31_DESVU Cytochrome c3-1 (Fragment) OS=Desulfovibrio 
+vulgaris OX=881 PE=1 SV=1
+Length=23
+
+ Score = 47.0 bits (110),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 22/23 (96%), Positives = 22/23 (96%), Gaps = 0/23 (0%)
+
+Query  1   AAPKAPADGLKMDKTKQPVVFNH  23
+           AAPKAPADGLKMDKTKQ VVFNH
+Sbjct  1   AAPKAPADGLKMDKTKQXVVFNH  23
+
+
+>sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=DVU_2809 PE=1 SV=1
+Length=144
+
+ Score = 47.4 bits (111),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 31/86 (36%), Positives = 42/86 (49%), Gaps = 8/86 (9%)
+
+Query  19   VVFNHSTHKAVKCGDCHH--PVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKGTK  76
+            V+FNH+THK + C  CHH  P   K     C    CH     +++     + A H K T 
+Sbjct  47   VMFNHTTHKDIACEQCHHDSPAPDKP-YASCTDNDCHATPGPRERDTMSMFVAYHAKDTD  105
+
+Query  77   FKSCVGCHLETAGADAAKKKELTGCK  102
+             +SC GCH +     AA+  E TGC+
+Sbjct  106  -RSCYGCHKKM----AAQHPEFTGCR  126
+
+
+>sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter 
+africanus OX=873 PE=1 SV=1
+Length=140
+
+ Score = 43.9 bits (102),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 44/101 (44%), Gaps = 18/101 (18%)
+
+Query  1    AAPKAPADGLKMDKTKQP-------VVFNHSTHK-----AVKCGDCHHPVNGKEDLQKCA  48
+            A P+ PAD + +D    P       V F+H  H      A  C  CHH  +GK ++  CA
+Sbjct  23   AVPQVPAD-VVIDHLSNPNAKLEYKVKFSHKAHASLGTDAAACQKCHHKWDGKSEIGGCA  81
+
+Query  49   TAGCH---DNMDKKDKSAKGYYHAMHDKGTKFKSCVGCHLE  86
+            T GCH    +    +K  K    A H K     SC GCH E
+Sbjct  82   TEGCHADTTSFKATEKDPKFLMTAFHSKSP--MSCQGCHKE  120
+
+
+>sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=2
+Length=118
+
+ Score = 41.6 bits (96),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 28/86 (33%), Positives = 44/86 (51%), Gaps = 11/86 (13%)
+
+Query  4   KAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED-LQKCATAGCHDNMDKKDKS  62
+           KA   G K    ++ V F H+ H  V+C  CHH +      ++KC T+GCHD+++ +DK+
+Sbjct  17  KAKPKGDKPGALQKTVPFPHTKHATVECVQCHHTLEADGGAVKKCTTSGCHDSLEFRDKA  76
+
+Query  63  ----AKGYYHAMHDKGTKFKSCVGCH  84
+                K   +A H +      C+ CH
+Sbjct  77  NAKDIKLVENAFHTQ------CIDCH  96
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.129    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+Results from round 2
+
+
+Query= d1j0pa_
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (str...  136     2e-41
+sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris (str...  126     1e-37
+sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain...  101     7e-28
+sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium n...  83.7    5e-21
+sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (st...  83.0    2e-20
+sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter a...  71.8    5e-16
+sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans...  68.3    3e-15
+sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium n...  67.6    1e-14
+sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens OX...  64.9    1e-13
+sp|P81149|CYC31_DESVU Cytochrome c3-1 (Fragment) OS=Desulfovibrio...  34.8    0.008
+
+Sequences not found previously or not previously below threshold:
+
+sp|P24092|HMWC_DESVH High-molecular-weight cytochrome c OS=Desulf...  43.3    9e-05
+sp|Q9RN68|CYC9_DESDA Nine-heme cytochrome c OS=Desulfovibrio desu...  39.0    0.003
+
+
+>sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=DVU_3171 PE=1 SV=1
+Length=129
+
+ Score = 136 bits (341),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 94/107 (88%), Positives = 100/107 (93%), Gaps = 0/107 (0%)
+
+Query  1    AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKD  60
+            AAPKAPADGLKM+ TKQPVVFNHSTHK+VKCGDCHHPVNGKED +KC TAGCHD+MDKKD
+Sbjct  22   AAPKAPADGLKMEATKQPVVFNHSTHKSVKCGDCHHPVNGKEDYRKCGTAGCHDSMDKKD  81
+
+Query  61   KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            KSAKGYYH MHDK TKFKSCVGCH+E AGADAAKKK+LTGCK SKCH
+Sbjct  82   KSAKGYYHVMHDKNTKFKSCVGCHVEVAGADAAKKKDLTGCKKSKCH  128
+
+
+>sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Miyazaki F / DSM 19637) OX=883 GN=DvMF_2499 PE=1 SV=2
+Length=130
+
+ Score = 126 bits (316),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 100/101 (99%), Positives = 100/101 (99%), Gaps = 0/101 (0%)
+
+Query  8    DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYY  67
+            DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED QKCATAGCHDNMDKKDKSAKGYY
+Sbjct  30   DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDYQKCATAGCHDNMDKKDKSAKGYY  89
+
+Query  68   HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  108
+            HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS
+Sbjct  90   HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  130
+
+
+>sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain 
+ATCC 19364 / DSM 1382 / NCIMB 9332 / VKM B-1759) OX=1121448 
+PE=1 SV=2
+Length=112
+
+ Score = 101 bits (250),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 55/109 (50%), Positives = 66/109 (61%), Gaps = 7/109 (6%)
+
+Query  5    APADGLKMD-----KTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK  59
+             PADG K+D     +    VVFNHSTHK VKC DCHH    K+    C T GCH+ +DK 
+Sbjct  3    VPADGAKIDFIAGGEKNLTVVFNHSTHKDVKCDDCHHDPGDKQ-YAGCTTDGCHNILDKA  61
+
+Query  60   DKSAKGYYHAMHD-KGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            DKS   +Y  +HD KG    +C+ CH + AG D   KK+LTGCKGS CH
+Sbjct  62   DKSVNSWYKVVHDAKGGAKPTCISCHKDKAGDDKELKKKLTGCKGSACH  110
+
+
+>sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=1
+Length=111
+
+ Score = 83.7 bits (205),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 29/73 (40%), Positives = 36/73 (49%), Gaps = 1/73 (1%)
+
+Query  15  TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKG  74
+            K  V FNH++H  + C  CHH V     ++ C T GCHDN+ K+       Y   H   
+Sbjct  22  KKGDVTFNHASHMDIACQQCHHTVPDTYTIESCMTEGCHDNI-KERTEISSVYRTFHTTK  80
+
+Query  75  TKFKSCVGCHLET  87
+              KSCVGCH E 
+Sbjct  81  DSEKSCVGCHREL  93
+
+
+>sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=DVU_2809 PE=1 SV=1
+Length=144
+
+ Score = 83.0 bits (203),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 29/85 (34%), Positives = 41/85 (48%), Gaps = 6/85 (7%)
+
+Query  19   VVFNHSTHKAVKCGDCHHPVNG-KEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKGTKF  77
+            V+FNH+THK + C  CHH      +    C    CH     +++     + A H K T  
+Sbjct  47   VMFNHTTHKDIACEQCHHDSPAPDKPYASCTDNDCHATPGPRERDTMSMFVAYHAKDTD-  105
+
+Query  78   KSCVGCHLETAGADAAKKKELTGCK  102
+            +SC GCH +     AA+  E TGC+
+Sbjct  106  RSCYGCHKKM----AAQHPEFTGCR  126
+
+
+>sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter 
+africanus OX=873 PE=1 SV=1
+Length=140
+
+ Score = 71.8 bits (174),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 35/111 (32%), Positives = 46/111 (41%), Gaps = 18/111 (16%)
+
+Query  1    AAPKAPADGLKMDKTKQP-------VVFNHSTHKAV-----KCGDCHHPVNGKEDLQKCA  48
+            A P+ PAD + +D    P       V F+H  H ++      C  CHH  +GK ++  CA
+Sbjct  23   AVPQVPAD-VVIDHLSNPNAKLEYKVKFSHKAHASLGTDAAACQKCHHKWDGKSEIGGCA  81
+
+Query  49   TAGCHD---NMDKKDKSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKK  96
+            T GCH    +    +K  K    A H K     SC GCH E   A      
+Sbjct  82   TEGCHADTTSFKATEKDPKFLMTAFHSKSP--MSCQGCHKEMKTAKKTTGP  130
+
+
+>sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans 
+OX=876 PE=1 SV=1
+Length=102
+
+ Score = 68.3 bits (165),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 42/73 (58%), Gaps = 2/73 (3%)
+
+Query  15  TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKG  74
+           TK PV F+H  H ++ C  CHH  +G   +Q C  +GCH N + K K    +Y A H++ 
+Sbjct  18  TKAPVAFSHKGHASMDCKTCHHKWDGAGAIQPCQASGCHANTESK-KGDDSFYMAFHERK  76
+
+Query  75  TKFKSCVGCHLET  87
+           ++ KSCVGCH   
+Sbjct  77  SE-KSCVGCHKSM  88
+
+
+>sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=2
+Length=118
+
+ Score = 67.6 bits (163),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 48/110 (44%), Gaps = 15/110 (14%)
+
+Query  4    KAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED-LQKCATAGCHDNMDKKD--  60
+            KA   G K    ++ V F H+ H  V+C  CHH +      ++KC T+GCHD+++ +D  
+Sbjct  17   KAKPKGDKPGALQKTVPFPHTKHATVECVQCHHTLEADGGAVKKCTTSGCHDSLEFRDKA  76
+
+Query  61   --KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  108
+              K  K   +A H +      C+ CH               G    KCH+
+Sbjct  77   NAKDIKLVENAFHTQ------CIDCHKALKKDKKPTGPTACG----KCHT  116
+
+
+>sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens 
+OX=880 PE=1 SV=1
+Length=106
+
+ Score = 64.9 bits (156),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 35/82 (43%), Positives = 44/82 (54%), Gaps = 3/82 (4%)
+
+Query  15  TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK-DKSAKGYYHAMHDK  73
+           TK PV F+H  H A+ C  CHH  +GK +++KC+  GCH +  KK  KS   +Y A H K
+Sbjct  18  TKAPVDFSHKGHAALDCTKCHHKWDGKAEVKKCSAEGCHVBTSKKGKKSTPKFYSAFHSK  77
+
+Query  74  GTKFKSCVGCHLETAGADAAKK  95
+                SCVGCH     A    K
+Sbjct  78  SD--ISCVGCHKALKKATGPTK  97
+
+
+>sp|P24092|HMWC_DESVH High-molecular-weight cytochrome c OS=Desulfovibrio 
+vulgaris (strain Hildenborough / ATCC 29579 / DSM 
+644 / NCIMB 8303) OX=882 GN=hmcA PE=1 SV=1
+Length=545
+
+ Score = 43.3 bits (100),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 29/95 (31%), Positives = 37/95 (39%), Gaps = 15/95 (16%)
+
+Query  11   KMDKTKQPVVFNHSTH--KAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYH  68
+            +M  T +PV F+H  H  KA  C  CHH       +  C    CH      D        
+Sbjct  286  EMKGTMKPVAFDHKAHEAKANDCRTCHHV-----RIDTCTA--CHTVNGTADSKFVQLEK  338
+
+Query  69   AMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKG  103
+            AMH +    +SCVGCH         ++    GC G
+Sbjct  339  AMH-QPDSMRSCVGCH-----NTRVQQPTCAGCHG  367
+
+
+>sp|Q9RN68|CYC9_DESDA Nine-heme cytochrome c OS=Desulfovibrio 
+desulfuricans (strain ATCC 27774 / DSM 6949 / MB) OX=525146 
+GN=Ddes_2038 PE=1 SV=1
+Length=326
+
+ Score = 39.0 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 31/98 (32%), Positives = 39/98 (40%), Gaps = 19/98 (19%)
+
+Query  13   DKTKQPVVFNHSTH--KAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAM  70
+                +PVVFNH  H  K   C  CHH      D   C+T  CH    K + +      AM
+Sbjct  57   GAAMKPVVFNHLIHEKKIDNCETCHHT----GDPVSCST--CHTVEGKAEGNYITLDRAM  110
+
+Query  71   HD-------KGTKFKSCVGCHLETAGADAAKKKELTGC  101
+            H        KG    SCV CH +       +++E  GC
+Sbjct  111  HATNIAKRAKGNTPVSCVSCHEQQT----KERRECAGC  144
+
+
+>sp|P81149|CYC31_DESVU Cytochrome c3-1 (Fragment) OS=Desulfovibrio 
+vulgaris OX=881 PE=1 SV=1
+Length=23
+
+ Score = 34.8 bits (78),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 22/23 (96%), Positives = 22/23 (96%), Gaps = 0/23 (0%)
+
+Query  1   AAPKAPADGLKMDKTKQPVVFNH  23
+           AAPKAPADGLKMDKTKQ VVFNH
+Sbjct  1   AAPKAPADGLKMDKTKQXVVFNH  23
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.117    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0358    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+Results from round 3
+
+
+Query= d1j0pa_
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (str...  126     8e-38
+sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris (str...  116     8e-34
+sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain...  93.0    9e-25
+sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium n...  84.2    3e-21
+sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris (st...  81.8    5e-20
+sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter a...  76.5    6e-18
+sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium n...  75.7    9e-18
+sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans...  68.4    4e-15
+sp|P24092|HMWC_DESVH High-molecular-weight cytochrome c OS=Desulf...  72.2    7e-15
+sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens OX...  67.2    1e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9RN68|CYC9_DESDA Nine-heme cytochrome c OS=Desulfovibrio desu...  45.3    2e-05
+
+
+>sp|P00131|CYC3_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=DVU_3171 PE=1 SV=1
+Length=129
+
+ Score = 126 bits (317),  Expect = 8e-38, Method: Composition-based stats.
+ Identities = 94/107 (88%), Positives = 100/107 (93%), Gaps = 0/107 (0%)
+
+Query  1    AAPKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKD  60
+            AAPKAPADGLKM+ TKQPVVFNHSTHK+VKCGDCHHPVNGKED +KC TAGCHD+MDKKD
+Sbjct  22   AAPKAPADGLKMEATKQPVVFNHSTHKSVKCGDCHHPVNGKEDYRKCGTAGCHDSMDKKD  81
+
+Query  61   KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            KSAKGYYH MHDK TKFKSCVGCH+E AGADAAKKK+LTGCK SKCH
+Sbjct  82   KSAKGYYHVMHDKNTKFKSCVGCHVEVAGADAAKKKDLTGCKKSKCH  128
+
+
+>sp|P00132|CYC3_DESVM Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Miyazaki F / DSM 19637) OX=883 GN=DvMF_2499 PE=1 SV=2
+Length=130
+
+ Score = 116 bits (290),  Expect = 8e-34, Method: Composition-based stats.
+ Identities = 100/101 (99%), Positives = 100/101 (99%), Gaps = 0/101 (0%)
+
+Query  8    DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYY  67
+            DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED QKCATAGCHDNMDKKDKSAKGYY
+Sbjct  30   DGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKEDYQKCATAGCHDNMDKKDKSAKGYY  89
+
+Query  68   HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  108
+            HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS
+Sbjct  90   HAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  130
+
+
+>sp|P00133|CYC3_DESGG Cytochrome c3 OS=Desulfovibrio gigas (strain 
+ATCC 19364 / DSM 1382 / NCIMB 9332 / VKM B-1759) OX=1121448 
+PE=1 SV=2
+Length=112
+
+ Score = 93.0 bits (229),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 55/109 (50%), Positives = 66/109 (61%), Gaps = 7/109 (6%)
+
+Query  5    APADGLKMD-----KTKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK  59
+             PADG K+D     +    VVFNHSTHK VKC DCHH   G +    C T GCH+ +DK 
+Sbjct  3    VPADGAKIDFIAGGEKNLTVVFNHSTHKDVKCDDCHHD-PGDKQYAGCTTDGCHNILDKA  61
+
+Query  60   DKSAKGYYHAMHD-KGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCH  107
+            DKS   +Y  +HD KG    +C+ CH + AG D   KK+LTGCKGS CH
+Sbjct  62   DKSVNSWYKVVHDAKGGAKPTCISCHKDKAGDDKELKKKLTGCKGSACH  110
+
+
+>sp|P38554|CYC32_DESNO Cytochrome c3, 26 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=1
+Length=111
+
+ Score = 84.2 bits (206),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 29/85 (34%), Positives = 37/85 (44%), Gaps = 1/85 (1%)
+
+Query  15   TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKG  74
+             K  V FNH++H  + C  CHH V     ++ C T GCHDN+ K+       Y   H   
+Sbjct  22   KKGDVTFNHASHMDIACQQCHHTVPDTYTIESCMTEGCHDNI-KERTEISSVYRTFHTTK  80
+
+Query  75   TKFKSCVGCHLETAGADAAKKKELT  99
+               KSCVGCH E      +      
+Sbjct  81   DSEKSCVGCHRELKRQGPSDAPLAC  105
+
+
+>sp|Q727P6|CYC32_DESVH Cytochrome c3 OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=DVU_2809 PE=1 SV=1
+Length=144
+
+ Score = 81.8 bits (200),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 29/85 (34%), Positives = 41/85 (48%), Gaps = 6/85 (7%)
+
+Query  19   VVFNHSTHKAVKCGDCHHPVNG-KEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKGTKF  77
+            V+FNH+THK + C  CHH      +    C    CH     +++     + A H K T  
+Sbjct  47   VMFNHTTHKDIACEQCHHDSPAPDKPYASCTDNDCHATPGPRERDTMSMFVAYHAKDTD-  105
+
+Query  78   KSCVGCHLETAGADAAKKKELTGCK  102
+            +SC GCH +     AA+  E TGC+
+Sbjct  106  RSCYGCHKKM----AAQHPEFTGCR  126
+
+
+>sp|P94691|CYC3B_DESAF Basic cytochrome c3 OS=Desulfocurvibacter 
+africanus OX=873 PE=1 SV=1
+Length=140
+
+ Score = 76.5 bits (186),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 35/114 (31%), Positives = 46/114 (40%), Gaps = 18/114 (16%)
+
+Query  1    AAPKAPADGLKMDKTKQP-------VVFNHSTHKAV-----KCGDCHHPVNGKEDLQKCA  48
+            A P+ PAD + +D    P       V F+H  H ++      C  CHH  +GK ++  CA
+Sbjct  23   AVPQVPAD-VVIDHLSNPNAKLEYKVKFSHKAHASLGTDAAACQKCHHKWDGKSEIGGCA  81
+
+Query  49   TAGCHD---NMDKKDKSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELT  99
+            T GCH    +    +K  K    A H K     SC GCH E   A         
+Sbjct  82   TEGCHADTTSFKATEKDPKFLMTAFHSKSP--MSCQGCHKEMKTAKKTTGPTAC  133
+
+
+>sp|P00136|CYC31_DESNO Cytochrome c3, 13 kDa OS=Desulfomicrobium 
+norvegicum (strain DSM 1741 / NCIMB 8310) OX=52561 PE=1 SV=2
+Length=118
+
+ Score = 75.7 bits (184),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 48/110 (44%), Gaps = 15/110 (14%)
+
+Query  4    KAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKED-LQKCATAGCHDNMDKKD--  60
+            KA   G K    ++ V F H+ H  V+C  CHH +      ++KC T+GCHD+++ +D  
+Sbjct  17   KAKPKGDKPGALQKTVPFPHTKHATVECVQCHHTLEADGGAVKKCTTSGCHDSLEFRDKA  76
+
+Query  61   --KSAKGYYHAMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  108
+              K  K   +A H +      C+ CH               G    KCH+
+Sbjct  77   NAKDIKLVENAFHTQ------CIDCHKALKKDKKPTGPTACG----KCHT  116
+
+
+>sp|P00134|CYC3_DESDE Cytochrome c3 OS=Desulfovibrio desulfuricans 
+OX=876 PE=1 SV=1
+Length=102
+
+ Score = 68.4 bits (165),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 30/75 (40%), Positives = 40/75 (53%), Gaps = 2/75 (3%)
+
+Query  15  TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAMHDKG  74
+           TK PV F+H  H ++ C  CHH  +G   +Q C  +GCH N + K K    +Y A H++ 
+Sbjct  18  TKAPVAFSHKGHASMDCKTCHHKWDGAGAIQPCQASGCHANTESK-KGDDSFYMAFHERK  76
+
+Query  75  TKFKSCVGCHLETAG  89
+              KSCVGCH     
+Sbjct  77  -SEKSCVGCHKSMKK  90
+
+
+>sp|P24092|HMWC_DESVH High-molecular-weight cytochrome c OS=Desulfovibrio 
+vulgaris (strain Hildenborough / ATCC 29579 / DSM 
+644 / NCIMB 8303) OX=882 GN=hmcA PE=1 SV=1
+Length=545
+
+ Score = 72.2 bits (175),  Expect = 7e-15, Method: Composition-based stats.
+ Identities = 29/95 (31%), Positives = 37/95 (39%), Gaps = 15/95 (16%)
+
+Query  11   KMDKTKQPVVFNHSTH--KAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYH  68
+            +M  T +PV F+H  H  KA  C  CHH       +  C    CH      D        
+Sbjct  286  EMKGTMKPVAFDHKAHEAKANDCRTCHHV-----RIDTCTA--CHTVNGTADSKFVQLEK  338
+
+Query  69   AMHDKGTKFKSCVGCHLETAGADAAKKKELTGCKG  103
+            AMH +    +SCVGCH         ++    GC G
+Sbjct  339  AMH-QPDSMRSCVGCH-----NTRVQQPTCAGCHG  367
+
+
+>sp|P00135|CYC3_DESSA Cytochrome c3 OS=Desulfovibrio salexigens 
+OX=880 PE=1 SV=1
+Length=106
+
+ Score = 67.2 bits (162),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 35/82 (43%), Positives = 44/82 (54%), Gaps = 3/82 (4%)
+
+Query  15  TKQPVVFNHSTHKAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKK-DKSAKGYYHAMHDK  73
+           TK PV F+H  H A+ C  CHH  +GK +++KC+  GCH +  KK  KS   +Y A H K
+Sbjct  18  TKAPVDFSHKGHAALDCTKCHHKWDGKAEVKKCSAEGCHVBTSKKGKKSTPKFYSAFHSK  77
+
+Query  74  GTKFKSCVGCHLETAGADAAKK  95
+                SCVGCH     A    K
+Sbjct  78  SD--ISCVGCHKALKKATGPTK  97
+
+
+>sp|Q9RN68|CYC9_DESDA Nine-heme cytochrome c OS=Desulfovibrio 
+desulfuricans (strain ATCC 27774 / DSM 6949 / MB) OX=525146 
+GN=Ddes_2038 PE=1 SV=1
+Length=326
+
+ Score = 45.3 bits (105),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 36/99 (36%), Gaps = 19/99 (19%)
+
+Query  13   DKTKQPVVFNHSTH--KAVKCGDCHHPVNGKEDLQKCATAGCHDNMDKKDKSAKGYYHAM  70
+                +PVVFNH  H  K   C  CHH      D   C+T  CH    K + +      AM
+Sbjct  57   GAAMKPVVFNHLIHEKKIDNCETCHHT----GDPVSCST--CHTVEGKAEGNYITLDRAM  110
+
+Query  71   H-------DKGTKFKSCVGCHLETAGADAAKKKELTGCK  102
+            H        KG    SCV CH +          E  GC 
+Sbjct  111  HATNIAKRAKGNTPVSCVSCHEQQTKERR----ECAGCH  145
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.119    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0363    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

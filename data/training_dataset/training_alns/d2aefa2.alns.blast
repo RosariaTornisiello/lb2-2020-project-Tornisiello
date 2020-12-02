@@ -1,0 +1,4112 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2aefa2
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Meth...  173     6e-54
+sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldoc...  53.5    1e-08
+sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Meth...  43.1    5e-05
+sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bac...  38.9    0.002
+
+
+>sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / 
+DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=mthK 
+PE=1 SV=1
+Length=336
+
+ Score = 173 bits (438),  Expect = 6e-54, Method: Compositional matrix adjust.
+ Identities = 89/92 (97%), Positives = 89/92 (97%), Gaps = 3/92 (3%)
+
+Query  1    DGYEAMFVQDVLA---TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  57
+            DGYEAMFVQDVLA   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII
+Sbjct  245  DGYEAMFVQDVLAEESTRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  304
+
+Query  58   DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  89
+            DPPRDYSFRAGDIILGIGKPEEIERLKNYISA
+Sbjct  305  DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  336
+
+
+>sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=MJ0138.1 PE=4 SV=1
+Length=333
+
+ Score = 53.5 bits (127),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 29/83 (35%), Positives = 46/83 (55%), Gaps = 2/83 (2%)
+
+Query  7    FVQDVLATRRMVEVP--IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            F+  ++AT   +EV   I +  +L+   + D+ I + TG  I+ V +GD+ I  PP D  
+Sbjct  247  FIHSLVATEEDMEVRRYIVKNKELDNKLLKDSGIREKTGATILAVKKGDKTITSPPPDTV  306
+
+Query  65   FRAGDIILGIGKPEEIERLKNYI  87
+               GDII   G  E++E+LK Y+
+Sbjct  307  INIGDIIYAFGTKEQLEKLKRYV  329
+
+
+>sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1357 PE=4 
+SV=1
+Length=343
+
+ Score = 43.1 bits (100),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 22/66 (33%), Positives = 37/66 (56%), Gaps = 0/66 (0%)
+
+Query  22   IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+            I + S+L   S+ DA+I   TG  I+G+ R  E  I+P  ++  + GD+I   G  E ++
+Sbjct  271  IEKDSELAYKSLKDANIRGKTGATILGIRREKEFCINPYPEFILKPGDVIYAFGTEENLK  330
+
+Query  82   RLKNYI  87
+             L+N +
+Sbjct  331  YLENLV  336
+
+
+>sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ktrC PE=1 SV=1
+Length=221
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 22/68 (32%), Positives = 35/68 (51%), Gaps = 0/68 (0%)
+
+Query  20   VPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEE  79
+            V I   S+L G ++LD DI    G+ I+ + RG E+I+ P         DI++ IG   +
+Sbjct  150  VEIVANSRLAGNTLLDLDIRAKYGINIVAIKRGKEVIVSPLATEVIHQEDILIVIGSVTD  209
+
+Query  80   IERLKNYI  87
+            I R +  +
+Sbjct  210  ISRFEKRV  217
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.146    0.415    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+Results from round 2
+
+
+Query= d2aefa2
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Meth...  130     2e-37
+sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldoc...  115     2e-31
+sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Meth...  100     1e-25
+sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bac...  91.2    4e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|O32080|KTRA_BACSU Ktr system potassium uptake protein A OS=Bac...  63.9    1e-12
+sp|P72958|Y640_SYNY3 Uncharacterized transporter sll0640 OS=Synec...  51.2    8e-08
+sp|O87952|KTRA_VIBAL Ktr system potassium uptake protein A OS=Vib...  46.2    4e-06
+sp|D3FSJ2|AMHM_BACPE Ammonium/H(+) antiporter subunit AmhM OS=Bac...  45.4    5e-06
+sp|P0AFU2|YFBS_ECOLI Uncharacterized transporter YfbS OS=Escheric...  45.8    7e-06
+sp|P0AFU3|YFBS_ECO57 Uncharacterized transporter YfbS OS=Escheric...  45.8    7e-06
+sp|D2K6F1|SLT2_CHLRE Sodium/sulfate cotransporter 2 OS=Chlamydomo...  45.0    1e-05
+sp|Q7UH36|Y4869_RHOBA Uncharacterized transporter RB4869 OS=Rhodo...  44.3    3e-05
+sp|P47565|Y323_MYCGE Uncharacterized protein MG323 OS=Mycoplasma ...  43.5    3e-05
+sp|P75322|Y461_MYCPN Uncharacterized protein MG323 homolog OS=Myc...  42.7    7e-05
+sp|A8IHV3|SLT3_CHLRE Probable sodium/sulfate cotransporter 3 OS=C...  41.6    2e-04
+sp|B5FCI8|Y927_ALIFM Putative transport protein VFMJ11_0927 OS=Al...  40.0    7e-04
+sp|Q5E6G2|Y889_ALIF1 Putative transport protein VF_0889 OS=Aliivi...  40.0    7e-04
+sp|B6EHQ3|Y2029_ALISL Putative transport protein VSAL_I2029 OS=Al...  40.0    7e-04
+sp|Q39593|SAC1_CHLRE Putative sulfur deprivation response regulat...  39.2    0.002
+sp|A8IJF8|SLT1_CHLRE Sodium/sulfate cotransporter 1 OS=Chlamydomo...  38.9    0.002
+sp|Q04856|TRKA_AZOC5 Trk system potassium uptake protein TrkA OS=...  36.9    0.009
+
+
+>sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / 
+DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=mthK 
+PE=1 SV=1
+Length=336
+
+ Score = 130 bits (328),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 89/92 (97%), Positives = 89/92 (97%), Gaps = 3/92 (3%)
+
+Query  1    DGYEAMFVQDVLA---TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  57
+            DGYEAMFVQDVLA   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII
+Sbjct  245  DGYEAMFVQDVLAEESTRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  304
+
+Query  58   DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  89
+            DPPRDYSFRAGDIILGIGKPEEIERLKNYISA
+Sbjct  305  DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  336
+
+
+>sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=MJ0138.1 PE=4 SV=1
+Length=333
+
+ Score = 115 bits (288),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 47/86 (55%), Gaps = 2/86 (2%)
+
+Query  7    FVQDVLATRRMVEVP--IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            F+  ++AT   +EV   I +  +L+   + D+ I + TG  I+ V +GD+ I  PP D  
+Sbjct  247  FIHSLVATEEDMEVRRYIVKNKELDNKLLKDSGIREKTGATILAVKKGDKTITSPPPDTV  306
+
+Query  65   FRAGDIILGIGKPEEIERLKNYISAL  90
+               GDII   G  E++E+LK Y+  +
+Sbjct  307  INIGDIIYAFGTKEQLEKLKRYVEGV  332
+
+
+>sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1357 PE=4 
+SV=1
+Length=343
+
+ Score = 100 bits (249),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 23/76 (30%), Positives = 40/76 (53%), Gaps = 3/76 (4%)
+
+Query  15   RRMVEVP---IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDII  71
+               +E+    I + S+L   S+ DA+I   TG  I+G+ R  E  I+P  ++  + GD+I
+Sbjct  261  EEDIELRKFVIEKDSELAYKSLKDANIRGKTGATILGIRREKEFCINPYPEFILKPGDVI  320
+
+Query  72   LGIGKPEEIERLKNYI  87
+               G  E ++ L+N +
+Sbjct  321  YAFGTEENLKYLENLV  336
+
+
+>sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ktrC PE=1 SV=1
+Length=221
+
+ Score = 91.2 bits (225),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 22/74 (30%), Positives = 36/74 (49%), Gaps = 0/74 (0%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+            +     V I   S+L G ++LD DI    G+ I+ + RG E+I+ P         DI++ 
+Sbjct  144  SEEHSLVEIVANSRLAGNTLLDLDIRAKYGINIVAIKRGKEVIVSPLATEVIHQEDILIV  203
+
+Query  74   IGKPEEIERLKNYI  87
+            IG   +I R +  +
+Sbjct  204  IGSVTDISRFEKRV  217
+
+
+>sp|O32080|KTRA_BACSU Ktr system potassium uptake protein A OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ktrA PE=1 SV=1
+Length=222
+
+ Score = 63.9 bits (154),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 14/66 (21%), Positives = 33/66 (50%), Gaps = 0/66 (0%)
+
+Query  20   VPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEE  79
+            V +    KL+  S++D ++    G  I+ +    ++ + P  +   R  D ++ +G  ++
+Sbjct  154  VELLATRKLDSKSIIDLNVRAKYGCTILAIKHHGDICLSPAPEDIIREQDCLVIMGHKKD  213
+
+Query  80   IERLKN  85
+            I+R +N
+Sbjct  214  IKRFEN  219
+
+
+>sp|P72958|Y640_SYNY3 Uncharacterized transporter sll0640 OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=sll0640 
+PE=3 SV=1
+Length=612
+
+ Score = 51.2 bits (121),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 21/79 (27%), Positives = 34/79 (43%), Gaps = 0/79 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            +  ++ EV I   S+L G ++ D          +I + RG+ELI         + GD++L
+Sbjct  324  SEEKVAEVLILSNSRLIGSTLKDLRFRQRYNATVIAIRRGEELIRQRLGKVRLKFGDLLL  383
+
+Query  73   GIGKPEEIERLKNYISALV  91
+              G  E    L+     LV
+Sbjct  384  LQGPRESFLGLQTTRELLV  402
+
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 17/67 (25%), Positives = 31/67 (46%), Gaps = 0/67 (0%)
+
+Query  19   EVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPE  78
+            E+ IP  S L G ++  ++I     + ++ +   D     P  D     GDI+L     E
+Sbjct  232  EIIIPPRSSLIGQTLRQSEIQRKFDIDVLEIIHNDTHFPQPLADRVLTMGDILLVRAGRE  291
+
+Query  79   EIERLKN  85
+            ++ R+K+
+Sbjct  292  DLLRIKD  298
+
+
+>sp|O87952|KTRA_VIBAL Ktr system potassium uptake protein A OS=Vibrio 
+alginolyticus OX=663 GN=ktrA PE=1 SV=1
+Length=220
+
+ Score = 46.2 bits (108),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 32/60 (53%), Gaps = 0/60 (0%)
+
+Query  21   PIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+                GS+L G ++ D  +  V GV ++G  RG E+I  P    +   GD+I+ +G  +++
+Sbjct  154  EFVVGSRLMGKTLSDLALCKVEGVQVLGYKRGPEIIKAPDMSTTLEIGDLIIVVGPQDKL  213
+
+
+>sp|D3FSJ2|AMHM_BACPE Ammonium/H(+) antiporter subunit AmhM OS=Bacillus 
+pseudofirmus (strain OF4) OX=398511 GN=amhM PE=1 SV=1
+Length=167
+
+ Score = 45.4 bits (106),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 16/69 (23%), Positives = 35/69 (51%), Gaps = 0/69 (0%)
+
+Query  20   VPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEE  79
+            + I + S +   S+   +     G+ I+GV + DE+++DP        GD ++ +GK + 
+Sbjct  94   IDITKHSPIISKSIAQIEKMKPKGISIVGVFKNDEMMVDPEPTLVLEKGDTLMAVGKRDA  153
+
+Query  80   IERLKNYIS  88
+            I++ +   +
+Sbjct  154  IQKFEELCA  162
+
+
+>sp|P0AFU2|YFBS_ECOLI Uncharacterized transporter YfbS OS=Escherichia 
+coli (strain K12) OX=83333 GN=yfbS PE=3 SV=1
+Length=610
+
+ Score = 45.8 bits (107),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 27/60 (45%), Gaps = 0/60 (0%)
+
+Query  17   MVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGK  76
+            M E+ +   S+L G SV +       G+ ++G+ R    +     D     GDIIL +G 
+Sbjct  326  MAEISLIPESELIGKSVREIGFRTRYGLNVVGLKRNGVALEGSLADEPLLLGDIILVVGN  385
+
+
+>sp|P0AFU3|YFBS_ECO57 Uncharacterized transporter YfbS OS=Escherichia 
+coli O157:H7 OX=83334 GN=yfbS PE=3 SV=1
+Length=610
+
+ Score = 45.8 bits (107),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 27/60 (45%), Gaps = 0/60 (0%)
+
+Query  17   MVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGK  76
+            M E+ +   S+L G SV +       G+ ++G+ R    +     D     GDIIL +G 
+Sbjct  326  MAEISLIPESELIGKSVREIGFRTRYGLNVVGLKRNGVALEGSLADEPLLLGDIILVVGN  385
+
+
+>sp|D2K6F1|SLT2_CHLRE Sodium/sulfate cotransporter 2 OS=Chlamydomonas 
+reinhardtii OX=3055 GN=SLT2 PE=2 SV=1
+Length=883
+
+ Score = 45.0 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 12/71 (17%), Positives = 31/71 (44%), Gaps = 0/71 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +   +G  + G+ R  + +  P  ++     DI+ 
+Sbjct  219  AKDLLIAVRVLPSSSVAKKKLKDSGLLQQSGFSVSGIYRDGKYLSKPDPNWVLEPNDILY  278
+
+Query  73   GIGKPEEIERL  83
+              G+ + +E +
+Sbjct  279  AAGEFDVVEFV  289
+
+
+>sp|Q7UH36|Y4869_RHOBA Uncharacterized transporter RB4869 OS=Rhodopirellula 
+baltica (strain DSM 10527 / NCIMB 13988 / SH1) 
+OX=243090 GN=RB4869 PE=3 SV=1
+Length=534
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 16/78 (21%), Positives = 35/78 (45%), Gaps = 3/78 (4%)
+
+Query  11   VLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPPRDYSFRAGD  69
+            V+   R     +    ++ G ++ +  +    GV I+ V R D E +  P        GD
+Sbjct  272  VVDADRERRYVVVTSPEIYGRTLKELRLRSKYGVTIVRVQRHDVEFV--PSARTRIEFGD  329
+
+Query  70   IILGIGKPEEIERLKNYI  87
+             ++ +G+P+ + ++ N +
+Sbjct  330  GLVAVGEPDALAKIANAV  347
+
+
+>sp|P47565|Y323_MYCGE Uncharacterized protein MG323 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG323 PE=4 SV=1
+Length=227
+
+ Score = 43.5 bits (101),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 15/88 (17%), Positives = 35/88 (40%), Gaps = 12/88 (14%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP-  60
+            G E +F++  +                    + + +    T   II + R ++ ++ P  
+Sbjct  144  GNEIIFIRSAV-----------NNKAFFNKRLEEINFRQNTDANIISIMRSNKTVVFPLG  192
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYIS  88
+             +   + GDII  + + + + +  NYI+
+Sbjct  193  PNTEIQPGDIITAVCQQKSLNKYLNYIN  220
+
+
+>sp|P75322|Y461_MYCPN Uncharacterized protein MG323 homolog OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_461 PE=4 SV=1
+Length=231
+
+ Score = 42.7 bits (99),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 12/67 (18%), Positives = 30/67 (45%), Gaps = 1/67 (1%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP-RDYSFRAGDIILGIGKPEEIE  81
+                KL   ++ + +I + T   +I + R  + ++ P   +   + GD+I  + +   + 
+Sbjct  154  VNNKKLFNRTLGEINIREHTNANLISIMRNGKDVVFPLGPNTQIQPGDVITAVCQLSGVN  213
+
+Query  82   RLKNYIS  88
+            +   YI+
+Sbjct  214  QYLRYIN  220
+
+
+>sp|A8IHV3|SLT3_CHLRE Probable sodium/sulfate cotransporter 3 
+OS=Chlamydomonas reinhardtii OX=3055 GN=SLT3 PE=2 SV=1
+Length=896
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/71 (21%), Positives = 30/71 (42%), Gaps = 0/71 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +   TG  + G+ RG  +      D    A DI+ 
+Sbjct  220  AKDLLIAVRVLPSSPVVKKKLKDSGLRTQTGFSLAGLWRGGAMTRQVDPDTVLEANDILY  279
+
+Query  73   GIGKPEEIERL  83
+              G+ + +E +
+Sbjct  280  CAGELDVVEFV  290
+
+
+>sp|B5FCI8|Y927_ALIFM Putative transport protein VFMJ11_0927 OS=Aliivibrio 
+fischeri (strain MJ11) OX=388396 GN=VFMJ11_0927 
+PE=3 SV=1
+Length=560
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 39/81 (48%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R + ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRR-NGILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|Q5E6G2|Y889_ALIF1 Putative transport protein VF_0889 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=VF_0889 
+PE=3 SV=1
+Length=560
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 39/81 (48%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R + ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRR-NGILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|B6EHQ3|Y2029_ALISL Putative transport protein VSAL_I2029 OS=Aliivibrio 
+salmonicida (strain LFI1238) OX=316275 GN=VSAL_I2029 
+PE=3 SV=1
+Length=560
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 39/81 (48%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R + ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRR-NGILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|Q39593|SAC1_CHLRE Putative sulfur deprivation response regulator 
+OS=Chlamydomonas reinhardtii OX=3055 GN=SAC1 PE=2 SV=1
+Length=585
+
+ Score = 39.2 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 34/73 (47%), Gaps = 0/73 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            + R MVE  +   S +  +++ D+      G +++ V R  E I     D   + GD +L
+Sbjct  296  SDRIMVEAVVSLSSPICNMTIRDSHFRSRYGAVVLRVHRNGERIAGGLGDIVVKGGDTML  355
+
+Query  73   GIGKPEEIERLKN  85
+                P+ +++ K+
+Sbjct  356  LEAGPDFLQKYKH  368
+
+
+>sp|A8IJF8|SLT1_CHLRE Sodium/sulfate cotransporter 1 OS=Chlamydomonas 
+reinhardtii OX=3055 GN=SLT1 PE=2 SV=1
+Length=881
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/80 (21%), Positives = 33/80 (41%), Gaps = 1/80 (1%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +    G  +  + R  +LI           GDI+ 
+Sbjct  220  AKDLLLAVRVLPSSSVVKKKLKDSGLLQQNGFDVTAIYRNGQLIKISDPSIVLDGGDILY  279
+
+Query  73   GIGKPEEIERL-KNYISALV  91
+              G+ + +E + + Y  ALV
+Sbjct  280  VSGELDVVEFVGEEYGLALV  299
+
+
+>sp|Q04856|TRKA_AZOC5 Trk system potassium uptake protein TrkA 
+OS=Azorhizobium caulinodans (strain ATCC 43989 / DSM 5975 / 
+JCM 20966 / NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=trkA 
+PE=3 SV=2
+Length=458
+
+ Score = 36.9 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 21/80 (26%), Positives = 38/80 (48%), Gaps = 4/80 (5%)
+
+Query  8    VQDVL-ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFR  66
+            V  +L     M+E    E S L G  + D D+  + G+ I  V R + +++ P  D   R
+Sbjct  374  VHSLLDGAGEMIEAEALETSPLVGRPLRDIDL--LKGMRIGAVVR-NGVVMRPSGDTVVR  430
+
+Query  67   AGDIILGIGKPEEIERLKNY  86
+            A D ++     ++I+R++  
+Sbjct  431  AQDRVVLFALADDIKRVEQL  450
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+Results from round 3
+
+
+Query= d2aefa2
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldoc...  97.0    1e-24
+sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Meth...  96.7    2e-24
+sp|P47565|Y323_MYCGE Uncharacterized protein MG323 OS=Mycoplasma ...  80.1    1e-18
+sp|A8IHV3|SLT3_CHLRE Probable sodium/sulfate cotransporter 3 OS=C...  81.6    2e-18
+sp|D2K6F1|SLT2_CHLRE Sodium/sulfate cotransporter 2 OS=Chlamydomo...  81.6    2e-18
+sp|Q39593|SAC1_CHLRE Putative sulfur deprivation response regulat...  81.2    2e-18
+sp|P72958|Y640_SYNY3 Uncharacterized transporter sll0640 OS=Synec...  80.5    5e-18
+sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Meth...  78.2    2e-17
+sp|O32080|KTRA_BACSU Ktr system potassium uptake protein A OS=Bac...  76.2    2e-17
+sp|D3FSJ2|AMHM_BACPE Ammonium/H(+) antiporter subunit AmhM OS=Bac...  74.3    5e-17
+sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bac...  75.1    6e-17
+sp|P75322|Y461_MYCPN Uncharacterized protein MG323 homolog OS=Myc...  73.9    2e-16
+sp|Q7UH36|Y4869_RHOBA Uncharacterized transporter RB4869 OS=Rhodo...  75.5    2e-16
+sp|B5FCI8|Y927_ALIFM Putative transport protein VFMJ11_0927 OS=Al...  71.2    8e-15
+sp|Q5E6G2|Y889_ALIF1 Putative transport protein VF_0889 OS=Aliivi...  71.2    8e-15
+sp|B6EHQ3|Y2029_ALISL Putative transport protein VSAL_I2029 OS=Al...  70.8    1e-14
+sp|P0AFU2|YFBS_ECOLI Uncharacterized transporter YfbS OS=Escheric...  67.8    1e-13
+sp|P0AFU3|YFBS_ECO57 Uncharacterized transporter YfbS OS=Escheric...  67.8    1e-13
+sp|O87952|KTRA_VIBAL Ktr system potassium uptake protein A OS=Vib...  65.8    2e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|A8IJF8|SLT1_CHLRE Sodium/sulfate cotransporter 1 OS=Chlamydomo...  69.7    3e-14
+sp|Q6D3R1|Y2683_PECAS Putative transport protein ECA2683 OS=Pecto...  65.1    1e-12
+sp|B2VC50|Y2182_ERWT9 Putative transport protein ETA_21820 OS=Erw...  64.7    1e-12
+sp|C6DEP2|Y1686_PECCP Putative transport protein PC1_1686 OS=Pect...  63.5    4e-12
+sp|Q1CAD7|Y617_YERPA Putative transport protein YPA_0617 OS=Yersi...  63.5    4e-12
+sp|B1JRK3|Y2734_YERPY Putative transport protein YPK_2734 OS=Yers...  63.5    4e-12
+sp|Q1CG99|Y2653_YERPN Putative transport protein YPN_2653 OS=Yers...  63.5    4e-12
+sp|A7FK36|Y2649_YERP3 Putative transport protein YpsIP31758_2649 ...  63.5    4e-12
+sp|A4TN83|Y2370_YERPP Putative transport protein YPDSF_2370 OS=Ye...  63.5    4e-12
+sp|A9R4U7|Y1559_YERPG Putative transport protein YpAngola_A1559 O...  63.5    4e-12
+sp|B2K9W1|Y1454_YERPB Putative transport protein YPTS_1454 OS=Yer...  63.5    4e-12
+sp|Q66CP5|Y1357_YERPS Putative transport protein YPTB1357 OS=Yers...  63.5    4e-12
+sp|Q8ZGH1|Y1326_YERPE Putative transport protein YPO1326/y2857/YP...  63.5    4e-12
+sp|A1JM45|Y1478_YERE8 Putative transport protein YE1478 OS=Yersin...  63.5    4e-12
+sp|A8GCA3|Y1639_SERP5 Putative transport protein Spro_1639 OS=Ser...  63.5    4e-12
+sp|Q83S20|YBJL_SHIFL Putative transport protein YbjL OS=Shigella ...  63.5    5e-12
+sp|Q0T8M0|YBJL_SHIF8 Putative transport protein YbjL OS=Shigella ...  63.5    5e-12
+sp|Q323Q4|YBJL_SHIBS Putative transport protein YbjL OS=Shigella ...  63.5    5e-12
+sp|Q32IC5|YBJL_SHIDS Putative transport protein YbjL OS=Shigella ...  63.1    5e-12
+sp|A7ZJR5|YBJL_ECO24 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|A4W8L3|Y1362_ENT38 Putative transport protein Ent638_1362 OS=E...  63.1    5e-12
+sp|A7MF23|Y2488_CROS8 Putative transport protein ESA_02488 OS=Cro...  63.1    5e-12
+sp|Q3Z3T7|YBJL_SHISS Putative transport protein YbjL OS=Shigella ...  63.1    5e-12
+sp|B2TV73|YBJL_SHIB3 Putative transport protein YbjL OS=Shigella ...  63.1    5e-12
+sp|Q1RE78|YBJL_ECOUT Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B1LMZ9|YBJL_ECOSM Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B6I8G8|YBJL_ECOSE Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7NAJ3|YBJL_ECOLU Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|P60869|YBJL_ECOLI Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B1IWS5|YBJL_ECOLC Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|P60870|YBJL_ECOL6 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|Q0TJK1|YBJL_ECOL5 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|A1A986|YBJL_ECOK1 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|A7ZYF0|YBJL_ECOHS Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B1X7Y8|YBJL_ECODH Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|C4ZY19|YBJL_ECOBW Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7M7C2|YBJL_ECO8A Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7MQV0|YBJL_ECO81 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7NNT0|YBJL_ECO7I Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B5YSD8|YBJL_ECO5E Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|P60871|YBJL_ECO57 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7LD40|YBJL_ECO55 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7MGV4|YBJL_ECO45 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|B7UMT9|YBJL_ECO27 Putative transport protein YbjL OS=Escherich...  63.1    5e-12
+sp|A9MIN5|YBJL_SALAR Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|Q8ZQK4|YBJL_SALTY Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B4TRM3|YBJL_SALSV Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B5BBW7|YBJL_SALPK Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|A9MSN4|YBJL_SALPB Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|Q5PGN8|YBJL_SALPA Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B4T0D1|YBJL_SALNS Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B4TCW8|YBJL_SALHS Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B5QXX4|YBJL_SALEP Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B5F0Y9|YBJL_SALA4 Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|C0PXM8|YBJL_SALPC Putative transport protein YbjL OS=Salmonell...  63.1    5e-12
+sp|B5R857|YBJL_SALG2 Putative transport protein YbjL OS=Salmonell...  63.1    6e-12
+sp|B5FPD7|YBJL_SALDC Putative transport protein YbjL OS=Salmonell...  63.1    6e-12
+sp|Q8Z851|YBJL_SALTI Putative transport protein YbjL OS=Salmonell...  63.1    6e-12
+sp|B5XYN9|Y3686_KLEP3 Putative transport protein KPK_3686 OS=Kleb...  63.1    6e-12
+sp|A8AIS0|Y2260_CITK8 Putative transport protein CKO_02260 OS=Cit...  63.1    6e-12
+sp|Q57R91|YBJL_SALCH Putative transport protein YbjL OS=Salmonell...  63.1    6e-12
+sp|A6T6U3|Y853_KLEP7 Putative transport protein KPN78578_08530 OS...  63.1    6e-12
+sp|B7LN13|YBJL_ESCF3 Putative transport protein YbjL OS=Escherich...  62.8    7e-12
+sp|A7MSH9|Y2636_VIBCB Putative transport protein VIBHAR_02636 OS=...  62.8    7e-12
+sp|Q8D8Y7|Y2828_VIBVU Putative transport protein VV1_2828 OS=Vibr...  62.4    9e-12
+sp|Q7MLI9|Y1438_VIBVY Putative transport protein VV1438 OS=Vibrio...  62.4    9e-12
+sp|Q87QB8|Y1232_VIBPA Putative transport protein VP1232 OS=Vibrio...  62.4    9e-12
+sp|C5BED9|Y2530_EDWI9 Putative transport protein NT01EI_2530 OS=E...  62.4    1e-11
+sp|B7VPS1|Y1837_VIBTL Putative transport protein VS_1837 OS=Vibri...  62.0    1e-11
+sp|A5F296|Y1915_VIBC3 Putative transport protein VC0395_A0715/VC3...  61.6    2e-11
+sp|Q9KSW1|Y1145_VIBCH Putative transport protein VC_1145 OS=Vibri...  61.6    2e-11
+sp|C3LLJ2|Y1101_VIBCM Putative transport protein VCM66_1101 OS=Vi...  61.6    2e-11
+sp|Q6LPH2|Y2420_PHOPR Putative transport protein PBPRA2420 OS=Pho...  61.6    2e-11
+sp|A0KL13|Y2450_AERHH Putative transport protein AHA_2450 OS=Aero...  60.1    7e-11
+sp|A4SN85|Y2308_AERS4 Putative transport protein ASA_2308 OS=Aero...  60.1    8e-11
+sp|Q4QPK9|Y043_HAEI8 Putative transport protein NTHI0043 OS=Haemo...  57.0    9e-10
+sp|A5UBA3|Y3135_HAEIE Putative transport protein CGSHiEE_03135 OS...  56.6    9e-10
+sp|Q8AAG5|Y500_BACTN Uncharacterized transporter BT_0500 OS=Bacte...  56.2    1e-09
+sp|Q64SU9|Y2680_BACFR Uncharacterized transporter BF2680 OS=Bacte...  56.2    2e-09
+sp|A0KNW5|Y3492_AERHH Putative transport protein AHA_3492 OS=Aero...  55.4    3e-09
+sp|P44472|Y035_HAEIN Putative transport protein HI_0035 OS=Haemop...  55.4    3e-09
+sp|A5UFK5|Y2670_HAEIG Putative transport protein CGSHiGG_02670 OS...  55.4    3e-09
+sp|A4SJA2|Y825_AERS4 Putative transport protein ASA_0825 OS=Aerom...  55.4    3e-09
+sp|A8ACJ7|Y031_CITK8 Putative transport protein CKO_00031 OS=Citr...  53.5    1e-08
+sp|Q3YWC7|YIDE_SHISS Putative transport protein YidE OS=Shigella ...  52.7    3e-08
+sp|A6VKA8|Y023_ACTSZ Putative transport protein Asuc_0023 OS=Acti...  52.7    3e-08
+sp|Q8A5Z4|Y2092_BACTN Uncharacterized transporter BT_2092 OS=Bact...  52.7    3e-08
+sp|Q9CLX8|Y1071_PASMU Putative transport protein PM1071 OS=Pasteu...  52.7    3e-08
+sp|Q8A8D8|Y1229_BACTN Uncharacterized transporter BT_1229 OS=Bact...  52.7    3e-08
+sp|Q8ZL04|YIDE_SALTY Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B4TMX5|YIDE_SALSV Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B5BIJ0|YIDE_SALPK Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|A9MWJ2|YIDE_SALPB Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|Q5PKS7|YIDE_SALPA Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B4SY75|YIDE_SALNS Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B4TA59|YIDE_SALHS Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B5QU35|YIDE_SALEP Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|C0Q247|YIDE_SALPC Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B5EY82|YIDE_SALA4 Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|Q57I28|YIDE_SALCH Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B5FMC7|YIDE_SALDC Putative transport protein YidE OS=Salmonell...  52.4    3e-08
+sp|B2TUT7|YIDE_SHIB3 Putative transport protein YidE OS=Shigella ...  52.4    4e-08
+sp|Q0SYM8|YIDE_SHIF8 Putative transport protein YidE OS=Shigella ...  52.0    4e-08
+sp|Q31UU4|YIDE_SHIBS Putative transport protein YidE OS=Shigella ...  52.0    4e-08
+sp|Q8Z2L7|YIDE_SALTI Putative transport protein YidE OS=Salmonell...  52.0    4e-08
+sp|B1LL09|YIDE_ECOSM Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B7NF02|YIDE_ECOLU Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|A8A6E4|YIDE_ECOHS Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B7NQY5|YIDE_ECO7I Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|P60874|YIDE_SHIFL Putative transport protein YidE OS=Shigella ...  52.0    4e-08
+sp|B6I3R8|YIDE_ECOSE Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|P60872|YIDE_ECOLI Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B1IYQ9|YIDE_ECOLC Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B1X9B5|YIDE_ECODH Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|C4ZYW2|YIDE_ECOBW Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B7M4H4|YIDE_ECO8A Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|P60873|YIDE_ECO57 Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|B7L824|YIDE_ECO55 Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|A7ZTN8|YIDE_ECO24 Putative transport protein YidE OS=Escherich...  52.0    4e-08
+sp|Q329C8|YIDE_SHIDS Putative transport protein YidE OS=Shigella ...  52.0    4e-08
+sp|A9MJX2|YIDE_SALAR Putative transport protein YidE OS=Salmonell...  52.0    5e-08
+sp|A6TFY7|Y4047_KLEP7 Putative transport protein KPN78578_40470 O...  52.0    5e-08
+sp|A4W4S5|Y015_ENT38 Putative transport protein Ent638_0015 OS=En...  51.6    6e-08
+sp|A8G7S0|Y050_SERP5 Putative transport protein Spro_0050 OS=Serr...  51.6    7e-08
+sp|B7UMF2|YIDE_ECO27 Putative transport protein YidE OS=Escherich...  51.2    8e-08
+sp|B5XT62|Y013_KLEP3 Putative transport protein KPK_0013 OS=Klebs...  50.8    1e-07
+sp|Q64VB3|Y1818_BACFR Uncharacterized transporter BF1818 OS=Bacte...  50.8    1e-07
+sp|Q1R4Q2|YIDE_ECOUT Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|Q8FBW6|YIDE_ECOL6 Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|A1AHM0|YIDE_ECOK1 Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|B7N2D1|YIDE_ECO81 Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|B7MGA5|YIDE_ECO45 Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|Q0TB22|YIDE_ECOL5 Putative transport protein YidE OS=Escherich...  50.0    2e-07
+sp|A1JT67|Y4162_YERE8 Putative transport protein YE4162 OS=Yersin...  49.7    3e-07
+sp|C5BC80|Y3867_EDWI9 Putative transport protein NT01EI_3867 OS=E...  49.3    4e-07
+sp|A7FPA6|Y4141_YERP3 Putative transport protein YpsIP31758_4141 ...  49.3    4e-07
+sp|B2K7E7|Y4123_YERPB Putative transport protein YPTS_4123 OS=Yer...  49.3    4e-07
+sp|Q663W8|Y3906_YERPS Putative transport protein YPTB3906 OS=Yers...  49.3    4e-07
+sp|B1JGZ7|Y013_YERPY Putative transport protein YPK_0013 OS=Yersi...  49.3    4e-07
+sp|Q64PN7|Y3802_BACFR Uncharacterized transporter BF3802 OS=Bacte...  48.9    5e-07
+sp|Q8Z9V7|Y4083_YERPE Putative transport protein YPO4083/y4100/YP...  48.5    8e-07
+sp|A9R4H0|Y3793_YERPG Putative transport protein YpAngola_A3793 O...  48.5    8e-07
+sp|Q1CD76|Y3727_YERPN Putative transport protein YPN_3727 OS=Yers...  48.5    8e-07
+sp|Q1C3K8|Y3002_YERPA Putative transport protein YPA_3002 OS=Yers...  48.5    8e-07
+sp|A4TGM8|Y014_YERPP Putative transport protein YPDSF_0014 OS=Yer...  48.5    8e-07
+sp|Q7MWN8|Y562_PORGI Uncharacterized transporter PG_0562 OS=Porph...  48.1    1e-06
+sp|Q6APL9|Y976_DESPS Uncharacterized transporter DP0976 OS=Desulf...  47.3    2e-06
+sp|Q04856|TRKA_AZOC5 Trk system potassium uptake protein TrkA OS=...  46.2    5e-06
+sp|Q67MD6|Y2172_SYMTH Uncharacterized transporter STH2172 OS=Symb...  45.8    7e-06
+sp|Q74EE6|Y1016_GEOSL Uncharacterized transporter GSU1016 OS=Geob...  44.7    2e-05
+sp|Q7MUS4|Y1411_PORGI Uncharacterized transporter PG_1411 OS=Porp...  44.3    2e-05
+sp|Q64TC3|Y2507_BACFR Uncharacterized transporter BF2507 OS=Bacte...  42.7    7e-05
+sp|Q0ZAH7|KEFB_ALKAM Putative K(+) efflux antiporter KefB OS=Alka...  41.2    3e-04
+sp|Q5NGK7|Y829_FRATT Uncharacterized transporter FTT_0829c OS=Fra...  40.4    5e-04
+sp|Q6A666|Y2034_CUTAK Uncharacterized transporter PPA2034 OS=Cuti...  40.4    6e-04
+sp|Q89PK5|Y3475_BRADU Uncharacterized transporter bll3475 OS=Brad...  39.3    0.002
+sp|Q6CYV4|Y4401_PECAS Putative transport protein ECA4401 OS=Pecto...  39.3    0.002
+sp|A5EX03|Y009_DICNV Putative transport protein DNO_0009 OS=Diche...  37.7    0.004
+
+
+>sp|Q57604|MJK1_METJA Potassium channel protein 1 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=MJ0138.1 PE=4 SV=1
+Length=333
+
+ Score = 97.0 bits (240),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 47/86 (55%), Gaps = 2/86 (2%)
+
+Query  7    FVQDVLATRRMVEVP--IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            F+  ++AT   +EV   I +  +L+   + D+ I + TG  I+ V +GD+ I  PP D  
+Sbjct  247  FIHSLVATEEDMEVRRYIVKNKELDNKLLKDSGIREKTGATILAVKKGDKTITSPPPDTV  306
+
+Query  65   FRAGDIILGIGKPEEIERLKNYISAL  90
+               GDII   G  E++E+LK Y+  +
+Sbjct  307  INIGDIIYAFGTKEQLEKLKRYVEGV  332
+
+
+>sp|O27564|MTHK_METTH Calcium-gated potassium channel MthK OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / 
+DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=mthK 
+PE=1 SV=1
+Length=336
+
+ Score = 96.7 bits (239),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 87/92 (95%), Positives = 87/92 (95%), Gaps = 3/92 (3%)
+
+Query  1    DGYEAMFVQDVLATR---RMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  57
+            DGYEAMFVQDVLA     RMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII
+Sbjct  245  DGYEAMFVQDVLAEESTRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELII  304
+
+Query  58   DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  89
+            DPPRDYSFRAGDIILGIGKPEEIERLKNYISA
+Sbjct  305  DPPRDYSFRAGDIILGIGKPEEIERLKNYISA  336
+
+
+>sp|P47565|Y323_MYCGE Uncharacterized protein MG323 OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=MG323 PE=4 SV=1
+Length=227
+
+ Score = 80.1 bits (196),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 15/88 (17%), Positives = 35/88 (40%), Gaps = 12/88 (14%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP-  60
+            G E +F++  +                    + + +    T   II + R ++ ++ P  
+Sbjct  144  GNEIIFIRSAV-----------NNKAFFNKRLEEINFRQNTDANIISIMRSNKTVVFPLG  192
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYIS  88
+             +   + GDII  + + + + +  NYI+
+Sbjct  193  PNTEIQPGDIITAVCQQKSLNKYLNYIN  220
+
+
+>sp|A8IHV3|SLT3_CHLRE Probable sodium/sulfate cotransporter 3 
+OS=Chlamydomonas reinhardtii OX=3055 GN=SLT3 PE=2 SV=1
+Length=896
+
+ Score = 81.6 bits (200),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 15/71 (21%), Positives = 30/71 (42%), Gaps = 0/71 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +   TG  + G+ RG  +      D    A DI+ 
+Sbjct  220  AKDLLIAVRVLPSSPVVKKKLKDSGLRTQTGFSLAGLWRGGAMTRQVDPDTVLEANDILY  279
+
+Query  73   GIGKPEEIERL  83
+              G+ + +E +
+Sbjct  280  CAGELDVVEFV  290
+
+
+ Score = 50.0 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 13/64 (20%), Positives = 25/64 (39%), Gaps = 0/64 (0%)
+
+Query  15   RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGI  74
+            R +V+  +     L G +V D     +    I+ V R    +    +D   + GD++L  
+Sbjct  511  RHLVQAAVSHKGPLVGKTVRDVRFRTLYNAAIVAVHREGVRVPLKVQDIVLQGGDVLLIS  570
+
+Query  75   GKPE  78
+               +
+Sbjct  571  CHTK  574
+
+
+ Score = 45.0 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 16/81 (20%), Positives = 33/81 (41%), Gaps = 1/81 (1%)
+
+Query  7    FVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGR-GDELIIDPPRDYSF  65
+            FV+D  A   ++ V + + S++   +V  A +  V G+ ++ V R     +      Y  
+Sbjct  410  FVKDGAAKEFVIGVKVKKNSEVVNKTVTAAGLRGVPGLFVLSVDRADGSSVDASDYLYKI  469
+
+Query  66   RAGDIILGIGKPEEIERLKNY  86
+            + GD +        +  L  +
+Sbjct  470  QPGDTLWLAADVGAVGFLSKF  490
+
+
+ Score = 40.0 bits (92),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 18/76 (24%), Positives = 35/76 (46%), Gaps = 2/76 (3%)
+
+Query  4    EAMFVQDVLAT--RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            EA    D  A+  +++V+V + + + L G +V +       G+I + + RG+        
+Sbjct  317  EATAFHDTGASPYKKLVQVTMTKTADLVGRTVREVSWQGRFGLIPVAIQRGNGREDGRLN  376
+
+Query  62   DYSFRAGDIILGIGKP  77
+            D    AGD+++    P
+Sbjct  377  DVVLAAGDVLILDTTP  392
+
+
+>sp|D2K6F1|SLT2_CHLRE Sodium/sulfate cotransporter 2 OS=Chlamydomonas 
+reinhardtii OX=3055 GN=SLT2 PE=2 SV=1
+Length=883
+
+ Score = 81.6 bits (200),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 12/71 (17%), Positives = 31/71 (44%), Gaps = 0/71 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +   +G  + G+ R  + +  P  ++     DI+ 
+Sbjct  219  AKDLLIAVRVLPSSSVAKKKLKDSGLLQQSGFSVSGIYRDGKYLSKPDPNWVLEPNDILY  278
+
+Query  73   GIGKPEEIERL  83
+              G+ + +E +
+Sbjct  279  AAGEFDVVEFV  289
+
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 11/62 (18%), Positives = 24/62 (39%), Gaps = 0/62 (0%)
+
+Query  15   RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGI  74
+            R +V+  +     + G +V D     +    ++ V R    +    +D   + GD++L  
+Sbjct  509  RHLVQAAVSHKGPIVGKTVRDVRFRTLYNAAVVAVHREGARVPLKVQDIVLQGGDVLLIS  568
+
+Query  75   GK  76
+              
+Sbjct  569  CH  570
+
+
+ Score = 43.1 bits (100),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/77 (25%), Positives = 34/77 (44%), Gaps = 1/77 (1%)
+
+Query  2    GYEAMFVQDVLAT-RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP  60
+            G E++F     A  +++V+  I   S L G +V +       G+I + + RG+       
+Sbjct  313  GEESVFTPTGGAPYQKLVQATIAPTSDLIGRTVREVSWQGRFGLIPVAIQRGNGREDGRL  372
+
+Query  61   RDYSFRAGDIILGIGKP  77
+             D    AGD+++    P
+Sbjct  373  NDVVLAAGDVLILDTTP  389
+
+
+>sp|Q39593|SAC1_CHLRE Putative sulfur deprivation response regulator 
+OS=Chlamydomonas reinhardtii OX=3055 GN=SAC1 PE=2 SV=1
+Length=585
+
+ Score = 81.2 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 17/76 (22%), Positives = 34/76 (45%), Gaps = 0/76 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            + R MVE  +   S +  +++ D+      G +++ V R  E I     D   + GD +L
+Sbjct  296  SDRIMVEAVVSLSSPICNMTIRDSHFRSRYGAVVLRVHRNGERIAGGLGDIVVKGGDTML  355
+
+Query  73   GIGKPEEIERLKNYIS  88
+                P+ +++ K+   
+Sbjct  356  LEAGPDFLQKYKHSTE  371
+
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/86 (17%), Positives = 33/86 (38%), Gaps = 4/86 (5%)
+
+Query  10   DVLATRRMVEVPIPEGSKL--EGVSVLDADIHDVTGVIIIGVGR-GDELIIDPPRDYSFR  66
+             V+A  R   V +   ++    G ++  A +  + G+ +  + R     +  PP      
+Sbjct  192  AVVADPREYVVSVRVDARFAHIGRTIESAGLRHLRGLFLADLQRQDGATVPSPPPTTIIL  251
+
+Query  67   AGDIILGIGKPEEIERLKNYISALVP  92
+             GD +   G  + ++ + +    L P
+Sbjct  252  QGDKLTFAGDIQGMQHILSL-PGLTP  276
+
+
+>sp|P72958|Y640_SYNY3 Uncharacterized transporter sll0640 OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=sll0640 
+PE=3 SV=1
+Length=612
+
+ Score = 80.5 bits (197),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 21/79 (27%), Positives = 34/79 (43%), Gaps = 0/79 (0%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            +  ++ EV I   S+L G ++ D          +I + RG+ELI         + GD++L
+Sbjct  324  SEEKVAEVLILSNSRLIGSTLKDLRFRQRYNATVIAIRRGEELIRQRLGKVRLKFGDLLL  383
+
+Query  73   GIGKPEEIERLKNYISALV  91
+              G  E    L+     LV
+Sbjct  384  LQGPRESFLGLQTTRELLV  402
+
+
+ Score = 50.8 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 17/71 (24%), Positives = 31/71 (44%), Gaps = 0/71 (0%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+               + E+ IP  S L G ++  ++I     + ++ +   D     P  D     GDI+L 
+Sbjct  227  KDYVSEIIIPPRSSLIGQTLRQSEIQRKFDIDVLEIIHNDTHFPQPLADRVLTMGDILLV  286
+
+Query  74   IGKPEEIERLK  84
+                E++ R+K
+Sbjct  287  RAGREDLLRIK  297
+
+
+>sp|Q58752|MJK2_METJA Probable potassium channel protein 2 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1357 PE=4 
+SV=1
+Length=343
+
+ Score = 78.2 bits (191),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 39/72 (54%), Gaps = 0/72 (0%)
+
+Query  16   RMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIG  75
+             + +  I + S+L   S+ DA+I   TG  I+G+ R  E  I+P  ++  + GD+I   G
+Sbjct  265  ELRKFVIEKDSELAYKSLKDANIRGKTGATILGIRREKEFCINPYPEFILKPGDVIYAFG  324
+
+Query  76   KPEEIERLKNYI  87
+              E ++ L+N +
+Sbjct  325  TEENLKYLENLV  336
+
+
+>sp|O32080|KTRA_BACSU Ktr system potassium uptake protein A OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ktrA PE=1 SV=1
+Length=222
+
+ Score = 76.2 bits (186),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 14/72 (19%), Positives = 34/72 (47%), Gaps = 0/72 (0%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+            +     V +    KL+  S++D ++    G  I+ +    ++ + P  +   R  D ++ 
+Sbjct  148  SDEYSIVELLATRKLDSKSIIDLNVRAKYGCTILAIKHHGDICLSPAPEDIIREQDCLVI  207
+
+Query  74   IGKPEEIERLKN  85
+            +G  ++I+R +N
+Sbjct  208  MGHKKDIKRFEN  219
+
+
+>sp|D3FSJ2|AMHM_BACPE Ammonium/H(+) antiporter subunit AmhM OS=Bacillus 
+pseudofirmus (strain OF4) OX=398511 GN=amhM PE=1 SV=1
+Length=167
+
+ Score = 74.3 bits (181),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 16/69 (23%), Positives = 35/69 (51%), Gaps = 0/69 (0%)
+
+Query  20   VPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEE  79
+            + I + S +   S+   +     G+ I+GV + DE+++DP        GD ++ +GK + 
+Sbjct  94   IDITKHSPIISKSIAQIEKMKPKGISIVGVFKNDEMMVDPEPTLVLEKGDTLMAVGKRDA  153
+
+Query  80   IERLKNYIS  88
+            I++ +   +
+Sbjct  154  IQKFEELCA  162
+
+
+>sp|P39760|KTRC_BACSU Ktr system potassium uptake protein C OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ktrC PE=1 SV=1
+Length=221
+
+ Score = 75.1 bits (183),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 22/74 (30%), Positives = 36/74 (49%), Gaps = 0/74 (0%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+            +     V I   S+L G ++LD DI    G+ I+ + RG E+I+ P         DI++ 
+Sbjct  144  SEEHSLVEIVANSRLAGNTLLDLDIRAKYGINIVAIKRGKEVIVSPLATEVIHQEDILIV  203
+
+Query  74   IGKPEEIERLKNYI  87
+            IG   +I R +  +
+Sbjct  204  IGSVTDISRFEKRV  217
+
+
+>sp|P75322|Y461_MYCPN Uncharacterized protein MG323 homolog OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 
+GN=MPN_461 PE=4 SV=1
+Length=231
+
+ Score = 73.9 bits (180),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 15/88 (17%), Positives = 37/88 (42%), Gaps = 12/88 (14%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP-  60
+            G + +FV+  +              KL   ++ + +I + T   +I + R  + ++ P  
+Sbjct  144  GNDILFVRAPV-----------NNKKLFNRTLGEINIREHTNANLISIMRNGKDVVFPLG  192
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYIS  88
+             +   + GD+I  + +   + +   YI+
+Sbjct  193  PNTQIQPGDVITAVCQLSGVNQYLRYIN  220
+
+
+>sp|Q7UH36|Y4869_RHOBA Uncharacterized transporter RB4869 OS=Rhodopirellula 
+baltica (strain DSM 10527 / NCIMB 13988 / SH1) 
+OX=243090 GN=RB4869 PE=3 SV=1
+Length=534
+
+ Score = 75.5 bits (184),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 15/77 (19%), Positives = 34/77 (44%), Gaps = 1/77 (1%)
+
+Query  11   VLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDI  70
+            V+   R     +    ++ G ++ +  +    GV I+ V R D   + P        GD 
+Sbjct  272  VVDADRERRYVVVTSPEIYGRTLKELRLRSKYGVTIVRVQRHDVEFV-PSARTRIEFGDG  330
+
+Query  71   ILGIGKPEEIERLKNYI  87
+            ++ +G+P+ + ++ N +
+Sbjct  331  LVAVGEPDALAKIANAV  347
+
+
+>sp|B5FCI8|Y927_ALIFM Putative transport protein VFMJ11_0927 OS=Aliivibrio 
+fischeri (strain MJ11) OX=388396 GN=VFMJ11_0927 
+PE=3 SV=1
+Length=560
+
+ Score = 71.2 bits (173),  Expect = 8e-15, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 38/81 (47%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R   ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRRNG-ILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|Q5E6G2|Y889_ALIF1 Putative transport protein VF_0889 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=VF_0889 
+PE=3 SV=1
+Length=560
+
+ Score = 71.2 bits (173),  Expect = 8e-15, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 38/81 (47%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R   ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRRNG-ILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|B6EHQ3|Y2029_ALISL Putative transport protein VSAL_I2029 OS=Aliivibrio 
+salmonicida (strain LFI1238) OX=316275 GN=VSAL_I2029 
+PE=3 SV=1
+Length=560
+
+ Score = 70.8 bits (172),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 22/81 (27%), Positives = 38/81 (47%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            A +R V +PI    ++        +G ++ +  IH  TG  I  + R   ++ +P  DY 
+Sbjct  208  AGQRKVYLPIIRAYRVGQELIDWTDGKNLRELGIHRQTGCHIERIRRNG-ILANPDGDYI  266
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  267  LQQGDEIALVGYPDSHARLDS  287
+
+
+>sp|A8IJF8|SLT1_CHLRE Sodium/sulfate cotransporter 1 OS=Chlamydomonas 
+reinhardtii OX=3055 GN=SLT1 PE=2 SV=1
+Length=881
+
+ Score = 69.7 bits (169),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 17/80 (21%), Positives = 33/80 (41%), Gaps = 1/80 (1%)
+
+Query  13   ATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIIL  72
+            A   ++ V +   S +    + D+ +    G  +  + R  +LI           GDI+ 
+Sbjct  220  AKDLLLAVRVLPSSSVVKKKLKDSGLLQQNGFDVTAIYRNGQLIKISDPSIVLDGGDILY  279
+
+Query  73   GIGKPEEIERL-KNYISALV  91
+              G+ + +E + + Y  ALV
+Sbjct  280  VSGELDVVEFVGEEYGLALV  299
+
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 25/62 (40%), Gaps = 0/62 (0%)
+
+Query  15   RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGI  74
+            R +V+  +     L G +V D     +    ++ V R +  I    +D   + GD++L  
+Sbjct  510  RHLVQAAVSHKGPLVGKTVRDVRFRTLYNAAVVAVHRENARIPLKVQDIVLQGGDVLLIS  569
+
+Query  75   GK  76
+              
+Sbjct  570  CH  571
+
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 35/77 (45%), Gaps = 1/77 (1%)
+
+Query  2    GYEAMFVQDVLAT-RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP  60
+            G EA+F  +  A   ++V+  + + S L G +V +       G+I + + RG+       
+Sbjct  314  GEEAVFSANGAAPYHKLVQAKLSKTSDLIGRTVREVSWQGRFGLIPVAIQRGNGREDGRL  373
+
+Query  61   RDYSFRAGDIILGIGKP  77
+             D    AGD++L    P
+Sbjct  374  SDVVLAAGDVLLLDTTP  390
+
+
+>sp|P0AFU2|YFBS_ECOLI Uncharacterized transporter YfbS OS=Escherichia 
+coli (strain K12) OX=83333 GN=yfbS PE=3 SV=1
+Length=610
+
+ Score = 67.8 bits (164),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 29/64 (45%), Gaps = 0/64 (0%)
+
+Query  17   MVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGK  76
+            M E+ +   S+L G SV +       G+ ++G+ R    +     D     GDIIL +G 
+Sbjct  326  MAEISLIPESELIGKSVREIGFRTRYGLNVVGLKRNGVALEGSLADEPLLLGDIILVVGN  385
+
+Query  77   PEEI  80
+             + I
+Sbjct  386  WKLI  389
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 32/70 (46%), Gaps = 3/70 (4%)
+
+Query  7    FVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGV---GRGDELIIDPPRDY  63
+             +++   T R   + I  GS + G  + D  + +  G  +IGV    R   +I++     
+Sbjct  220  LIREYRLTGRARRLAIRPGSPMIGQRLDDLKLRERYGANVIGVERWRRFRRVIVNVNGVS  279
+
+Query  64   SFRAGDIILG  73
+             FRA D++L 
+Sbjct  280  EFRARDVLLI  289
+
+
+>sp|P0AFU3|YFBS_ECO57 Uncharacterized transporter YfbS OS=Escherichia 
+coli O157:H7 OX=83334 GN=yfbS PE=3 SV=1
+Length=610
+
+ Score = 67.8 bits (164),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 29/64 (45%), Gaps = 0/64 (0%)
+
+Query  17   MVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGK  76
+            M E+ +   S+L G SV +       G+ ++G+ R    +     D     GDIIL +G 
+Sbjct  326  MAEISLIPESELIGKSVREIGFRTRYGLNVVGLKRNGVALEGSLADEPLLLGDIILVVGN  385
+
+Query  77   PEEI  80
+             + I
+Sbjct  386  WKLI  389
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 32/70 (46%), Gaps = 3/70 (4%)
+
+Query  7    FVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGV---GRGDELIIDPPRDY  63
+             +++   T R   + I  GS + G  + D  + +  G  +IGV    R   +I++     
+Sbjct  220  LIREYRLTGRARRLAIRPGSPMIGQRLDDLKLRERYGANVIGVERWRRFRRVIVNVNGVS  279
+
+Query  64   SFRAGDIILG  73
+             FRA D++L 
+Sbjct  280  EFRARDVLLI  289
+
+
+>sp|O87952|KTRA_VIBAL Ktr system potassium uptake protein A OS=Vibrio 
+alginolyticus OX=663 GN=ktrA PE=1 SV=1
+Length=220
+
+ Score = 65.8 bits (159),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 18/65 (28%), Positives = 33/65 (51%), Gaps = 0/65 (0%)
+
+Query  17   MVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGK  76
+            +       GS+L G ++ D  +  V GV ++G  RG E+I  P    +   GD+I+ +G 
+Sbjct  150  LAMTEFVVGSRLMGKTLSDLALCKVEGVQVLGYKRGPEIIKAPDMSTTLEIGDLIIVVGP  209
+
+Query  77   PEEIE  81
+             +++ 
+Sbjct  210  QDKLA  214
+
+
+>sp|Q6D3R1|Y2683_PECAS Putative transport protein ECA2683 OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) 
+OX=218491 GN=ECA2683 PE=3 SV=1
+Length=562
+
+ Score = 65.1 bits (157),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 18/82 (22%), Positives = 37/82 (45%), Gaps = 9/82 (11%)
+
+Query  12   LATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDY  63
+            + ++R V +P+    ++         G ++ +  I+  TG  I  + R   ++ +P  D 
+Sbjct  204  VDSQRKVYLPVIRAYRVGPELVDWAAGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDA  262
+
+Query  64   SFRAGDIILGIGKPEEIERLKN  85
+              + GD I  +G P+   RL +
+Sbjct  263  VLQIGDEIALVGYPDAHSRLNS  284
+
+
+>sp|B2VC50|Y2182_ERWT9 Putative transport protein ETA_21820 OS=Erwinia 
+tasmaniensis (strain DSM 17950 / CIP 109463 / Et1/99) 
+OX=465817 GN=ETA_21820 PE=3 SV=1
+Length=562
+
+ Score = 64.7 bits (156),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 35/80 (44%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  205  DSKRKVYLPVIRAYRVGPELVAWSDGKNLRELGIYRQTGCYIERIRRNG-ILASPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQPGDEISLVGYPDAHARLD  283
+
+
+>sp|C6DEP2|Y1686_PECCP Putative transport protein PC1_1686 OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 
+GN=PC1_1686 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/81 (22%), Positives = 35/81 (43%), Gaps = 9/81 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++         G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVDWAAGKNLRELGIYRQTGCYIERIRRNG-ILASPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLKN  85
+             + GD I  +G P+   RL +
+Sbjct  264  LQIGDEIALVGYPDSHSRLNS  284
+
+
+>sp|Q1CAD7|Y617_YERPA Putative transport protein YPA_0617 OS=Yersinia 
+pestis bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_0617 
+PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|B1JRK3|Y2734_YERPY Putative transport protein YPK_2734 OS=Yersinia 
+pseudotuberculosis serotype O:3 (strain YPIII) OX=502800 
+GN=YPK_2734 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|Q1CG99|Y2653_YERPN Putative transport protein YPN_2653 OS=Yersinia 
+pestis bv. Antiqua (strain Nepal516) OX=377628 GN=YPN_2653 
+PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|A7FK36|Y2649_YERP3 Putative transport protein YpsIP31758_2649 
+OS=Yersinia pseudotuberculosis serotype O:1b (strain IP 
+31758) OX=349747 GN=YpsIP31758_2649 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|A4TN83|Y2370_YERPP Putative transport protein YPDSF_2370 OS=Yersinia 
+pestis (strain Pestoides F) OX=386656 GN=YPDSF_2370 
+PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|A9R4U7|Y1559_YERPG Putative transport protein YpAngola_A1559 
+OS=Yersinia pestis bv. Antiqua (strain Angola) OX=349746 
+GN=YpAngola_A1559 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|B2K9W1|Y1454_YERPB Putative transport protein YPTS_1454 OS=Yersinia 
+pseudotuberculosis serotype IB (strain PB1/+) OX=502801 
+GN=YPTS_1454 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|Q66CP5|Y1357_YERPS Putative transport protein YPTB1357 OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=YPTB1357 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|Q8ZGH1|Y1326_YERPE Putative transport protein YPO1326/y2857/YP_1266 
+OS=Yersinia pestis OX=632 GN=YPO1326 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|A1JM45|Y1478_YERE8 Putative transport protein YE1478 OS=Yersinia 
+enterocolitica serotype O:8 / biotype 1B (strain NCTC 
+13174 / 8081) OX=393305 GN=YE1478 PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHSRLD  283
+
+
+>sp|A8GCA3|Y1639_SERP5 Putative transport protein Spro_1639 OS=Serratia 
+proteamaculans (strain 568) OX=399741 GN=Spro_1639 
+PE=3 SV=1
+Length=562
+
+ Score = 63.5 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSQRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEISLVGYPDAHARLD  283
+
+
+>sp|Q83S20|YBJL_SHIFL Putative transport protein YbjL OS=Shigella 
+flexneri OX=623 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.5 bits (153),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q0T8M0|YBJL_SHIF8 Putative transport protein YbjL OS=Shigella 
+flexneri serotype 5b (strain 8401) OX=373384 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.5 bits (153),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q323Q4|YBJL_SHIBS Putative transport protein YbjL OS=Shigella 
+boydii serotype 4 (strain Sb227) OX=300268 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.5 bits (153),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q32IC5|YBJL_SHIDS Putative transport protein YbjL OS=Shigella 
+dysenteriae serotype 1 (strain Sd197) OX=300267 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A7ZJR5|YBJL_ECO24 Putative transport protein YbjL OS=Escherichia 
+coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A4W8L3|Y1362_ENT38 Putative transport protein Ent638_1362 
+OS=Enterobacter sp. (strain 638) OX=399742 GN=Ent638_1362 PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             T+R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DTKRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDDIALVGYPDAHARLD  283
+
+
+>sp|A7MF23|Y2488_CROS8 Putative transport protein ESA_02488 OS=Cronobacter 
+sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_02488 
+PE=3 SV=1
+Length=560
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 33/80 (41%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILASPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q3Z3T7|YBJL_SHISS Putative transport protein YbjL OS=Shigella 
+sonnei (strain Ss046) OX=300269 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B2TV73|YBJL_SHIB3 Putative transport protein YbjL OS=Shigella 
+boydii serotype 18 (strain CDC 3083-94 / BS512) OX=344609 
+GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q1RE78|YBJL_ECOUT Putative transport protein YbjL OS=Escherichia 
+coli (strain UTI89 / UPEC) OX=364106 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B1LMZ9|YBJL_ECOSM Putative transport protein YbjL OS=Escherichia 
+coli (strain SMS-3-5 / SECEC) OX=439855 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B6I8G8|YBJL_ECOSE Putative transport protein YbjL OS=Escherichia 
+coli (strain SE11) OX=409438 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7NAJ3|YBJL_ECOLU Putative transport protein YbjL OS=Escherichia 
+coli O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|P60869|YBJL_ECOLI Putative transport protein YbjL OS=Escherichia 
+coli (strain K12) OX=83333 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B1IWS5|YBJL_ECOLC Putative transport protein YbjL OS=Escherichia 
+coli (strain ATCC 8739 / DSM 1576 / Crooks) OX=481805 
+GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|P60870|YBJL_ECOL6 Putative transport protein YbjL OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q0TJK1|YBJL_ECOL5 Putative transport protein YbjL OS=Escherichia 
+coli O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A1A986|YBJL_ECOK1 Putative transport protein YbjL OS=Escherichia 
+coli O1:K1 / APEC OX=405955 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A7ZYF0|YBJL_ECOHS Putative transport protein YbjL OS=Escherichia 
+coli O9:H4 (strain HS) OX=331112 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B1X7Y8|YBJL_ECODH Putative transport protein YbjL OS=Escherichia 
+coli (strain K12 / DH10B) OX=316385 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|C4ZY19|YBJL_ECOBW Putative transport protein YbjL OS=Escherichia 
+coli (strain K12 / MC4100 / BW2952) OX=595496 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7M7C2|YBJL_ECO8A Putative transport protein YbjL OS=Escherichia 
+coli O8 (strain IAI1) OX=585034 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7MQV0|YBJL_ECO81 Putative transport protein YbjL OS=Escherichia 
+coli O81 (strain ED1a) OX=585397 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7NNT0|YBJL_ECO7I Putative transport protein YbjL OS=Escherichia 
+coli O7:K1 (strain IAI39 / ExPEC) OX=585057 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5YSD8|YBJL_ECO5E Putative transport protein YbjL OS=Escherichia 
+coli O157:H7 (strain EC4115 / EHEC) OX=444450 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|P60871|YBJL_ECO57 Putative transport protein YbjL OS=Escherichia 
+coli O157:H7 OX=83334 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7LD40|YBJL_ECO55 Putative transport protein YbjL OS=Escherichia 
+coli (strain 55989 / EAEC) OX=585055 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7MGV4|YBJL_ECO45 Putative transport protein YbjL OS=Escherichia 
+coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B7UMT9|YBJL_ECO27 Putative transport protein YbjL OS=Escherichia 
+coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A9MIN5|YBJL_SALAR Putative transport protein YbjL OS=Salmonella 
+arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 
+GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q8ZQK4|YBJL_SALTY Putative transport protein YbjL OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B4TRM3|YBJL_SALSV Putative transport protein YbjL OS=Salmonella 
+schwarzengrund (strain CVM19633) OX=439843 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5BBW7|YBJL_SALPK Putative transport protein YbjL OS=Salmonella 
+paratyphi A (strain AKU_12601) OX=554290 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A9MSN4|YBJL_SALPB Putative transport protein YbjL OS=Salmonella 
+paratyphi B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q5PGN8|YBJL_SALPA Putative transport protein YbjL OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B4T0D1|YBJL_SALNS Putative transport protein YbjL OS=Salmonella 
+newport (strain SL254) OX=423368 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B4TCW8|YBJL_SALHS Putative transport protein YbjL OS=Salmonella 
+heidelberg (strain SL476) OX=454169 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5QXX4|YBJL_SALEP Putative transport protein YbjL OS=Salmonella 
+enteritidis PT4 (strain P125109) OX=550537 GN=ybjL PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5F0Y9|YBJL_SALA4 Putative transport protein YbjL OS=Salmonella 
+agona (strain SL483) OX=454166 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|C0PXM8|YBJL_SALPC Putative transport protein YbjL OS=Salmonella 
+paratyphi C (strain RKS4594) OX=476213 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5R857|YBJL_SALG2 Putative transport protein YbjL OS=Salmonella 
+gallinarum (strain 287/91 / NCTC 13346) OX=550538 GN=ybjL 
+PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5FPD7|YBJL_SALDC Putative transport protein YbjL OS=Salmonella 
+dublin (strain CT_02021853) OX=439851 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q8Z851|YBJL_SALTI Putative transport protein YbjL OS=Salmonella 
+typhi OX=90370 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|B5XYN9|Y3686_KLEP3 Putative transport protein KPK_3686 OS=Klebsiella 
+pneumoniae (strain 342) OX=507522 GN=KPK_3686 PE=3 
+SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSKRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDDIALVGYPDAHARLD  283
+
+
+>sp|A8AIS0|Y2260_CITK8 Putative transport protein CKO_02260 OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) 
+OX=290338 GN=CKO_02260 PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|Q57R91|YBJL_SALCH Putative transport protein YbjL OS=Salmonella 
+choleraesuis (strain SC-B67) OX=321314 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DANRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A6T6U3|Y853_KLEP7 Putative transport protein KPN78578_08530 
+OS=Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 
+/ MGH 78578) OX=272620 GN=KPN78578_08530 PE=3 SV=2
+Length=561
+
+ Score = 63.1 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             ++R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DSKRKVYLPVIRAYRVGPELVAWADGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDDIALVGYPDAHARLD  283
+
+
+>sp|B7LN13|YBJL_ESCF3 Putative transport protein YbjL OS=Escherichia 
+fergusonii (strain ATCC 35469 / DSM 13698 / CDC 0568-73) 
+OX=585054 GN=ybjL PE=3 SV=1
+Length=561
+
+ Score = 62.8 bits (151),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 34/80 (43%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+               R V +P+    ++        +G ++ +  I+  TG  I  + R   ++ +P  D  
+Sbjct  205  DATRKVYLPVIRAYRVGPELVAWTDGKNLRELGIYRQTGCYIERIRRNG-ILANPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQMGDEIALVGYPDAHARLD  283
+
+
+>sp|A7MSH9|Y2636_VIBCB Putative transport protein VIBHAR_02636 
+OS=Vibrio campbellii (strain ATCC BAA-1116 / BB120) OX=338187 
+GN=VIBHAR_02636 PE=3 SV=1
+Length=560
+
+ Score = 62.8 bits (151),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            +++R V +PI    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  208  SSQRKVYLPIIRAYRVGPELIDWTDGKNLRELGIYRQTGCYIERIRRNG-ILAHPDGDAI  266
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  267  LQEGDEIALVGFPDSHARLD  286
+
+
+>sp|Q8D8Y7|Y2828_VIBVU Putative transport protein VV1_2828 OS=Vibrio 
+vulnificus (strain CMCP6) OX=216895 GN=VV1_2828 PE=3 
+SV=2
+Length=560
+
+ Score = 62.4 bits (150),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 35/80 (44%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            + +R V +PI    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  208  SGQRKVYLPIIRAYRVGPELINWTDGKNLRELGIYRQTGCYIERIRRHG-ILAHPDGDAI  266
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  267  LQEGDEIALVGFPDSHARLD  286
+
+
+>sp|Q7MLI9|Y1438_VIBVY Putative transport protein VV1438 OS=Vibrio 
+vulnificus (strain YJ016) OX=196600 GN=VV1438 PE=3 SV=2
+Length=560
+
+ Score = 62.4 bits (150),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 35/80 (44%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            + +R V +PI    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  208  SGQRKVYLPIIRAYRVGPELINWTDGKNLRELGIYRQTGCYIERIRRHG-ILAHPDGDAI  266
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  267  LQEGDEIALVGFPDSHARLD  286
+
+
+>sp|Q87QB8|Y1232_VIBPA Putative transport protein VP1232 OS=Vibrio 
+parahaemolyticus serotype O3:K6 (strain RIMD 2210633) OX=223926 
+GN=VP1232 PE=3 SV=1
+Length=560
+
+ Score = 62.4 bits (150),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 36/80 (45%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            +++R V +PI    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  208  SSQRKVYLPIIRAYRVGPELIDWTDGKNLRELGIYRQTGCYIERIRRNG-ILAHPDGDAI  266
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  267  LQEGDEIALVGFPDSHARLD  286
+
+
+>sp|C5BED9|Y2530_EDWI9 Putative transport protein NT01EI_2530 
+OS=Edwardsiella ictaluri (strain 93-146) OX=634503 GN=NT01EI_2530 
+PE=3 SV=1
+Length=562
+
+ Score = 62.4 bits (150),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 35/80 (44%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+             T+R V +P+    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  205  DTQRKVFLPVIRAYRVGPELVAWADGKNLRELGIYSQTGCYIERIRRNG-ILATPDGDAV  263
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  264  LQVGDEIALVGYPDAHARLD  283
+
+
+>sp|B7VPS1|Y1837_VIBTL Putative transport protein VS_1837 OS=Vibrio 
+tasmaniensis (strain LGP32) OX=575788 GN=VS_1837 PE=3 
+SV=1
+Length=560
+
+ Score = 62.0 bits (149),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 19/80 (24%), Positives = 35/80 (44%), Gaps = 9/80 (11%)
+
+Query  13   ATRRMVEVPIPEGSKL--------EGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYS  64
+            + +R V +PI    ++        +G ++ +  I+  TG  I  + R   ++  P  D  
+Sbjct  208  SGQRKVYLPIIRAYRVGPELITWTDGKNLRELGIYRQTGCYIERIRRNG-ILAHPDGDAI  266
+
+Query  65   FRAGDIILGIGKPEEIERLK  84
+             + GD I  +G P+   RL 
+Sbjct  267  LQEGDEIALVGFPDSHARLD  286
+
+
+>sp|A5F296|Y1915_VIBC3 Putative transport protein VC0395_A0715/VC395_1212 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39541 
+/ Classical Ogawa 395 / O395) OX=345073 GN=VC0395_A0715 PE=3 
+SV=1
+Length=558
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 20/81 (25%), Positives = 36/81 (44%), Gaps = 9/81 (11%)
+
+Query  12   LATRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDY  63
+            L ++R V +PI    +        ++G ++ +  I+  TG  I  + R   ++  P  D 
+Sbjct  205  LGSQRKVYLPIIRAYRVGPELINWIDGRNLRELGIYRQTGCYIERIRRHG-ILAHPDGDA  263
+
+Query  64   SFRAGDIILGIGKPEEIERLK  84
+              + GD I  +G P+   RL 
+Sbjct  264  ILQEGDEIALVGFPDSHARLD  284
+
+
+>sp|Q9KSW1|Y1145_VIBCH Putative transport protein VC_1145 OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=VC_1145 PE=3 SV=1
+Length=558
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 20/81 (25%), Positives = 36/81 (44%), Gaps = 9/81 (11%)
+
+Query  12   LATRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDY  63
+            L ++R V +PI    +        ++G ++ +  I+  TG  I  + R   ++  P  D 
+Sbjct  205  LGSQRKVYLPIIRAYRVGPELINWIDGRNLRELGIYRQTGCYIERIRRHG-ILAHPDGDA  263
+
+Query  64   SFRAGDIILGIGKPEEIERLK  84
+              + GD I  +G P+   RL 
+Sbjct  264  ILQEGDEIALVGFPDSHARLD  284
+
+
+>sp|C3LLJ2|Y1101_VIBCM Putative transport protein VCM66_1101 OS=Vibrio 
+cholerae serotype O1 (strain M66-2) OX=579112 GN=VCM66_1101 
+PE=3 SV=1
+Length=558
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 20/81 (25%), Positives = 36/81 (44%), Gaps = 9/81 (11%)
+
+Query  12   LATRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDY  63
+            L ++R V +PI    +        ++G ++ +  I+  TG  I  + R   ++  P  D 
+Sbjct  205  LGSQRKVYLPIIRAYRVGPELINWIDGRNLRELGIYRQTGCYIERIRRHG-ILAHPDGDA  263
+
+Query  64   SFRAGDIILGIGKPEEIERLK  84
+              + GD I  +G P+   RL 
+Sbjct  264  ILQEGDEIALVGFPDSHARLD  284
+
+
+>sp|Q6LPH2|Y2420_PHOPR Putative transport protein PBPRA2420 OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=PBPRA2420 
+PE=3 SV=2
+Length=560
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 34/79 (43%), Gaps = 9/79 (11%)
+
+Query  14   TRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSF  65
+             +R V +PI    +        ++  ++ +  I+  TG  I  + R   ++ +P  D   
+Sbjct  209  GQRKVYLPIIRAYRVGPELINWIDSRNLRELGIYRQTGCYIERIRRNG-ILANPDGDAIL  267
+
+Query  66   RAGDIILGIGKPEEIERLK  84
+            + GD I  +G P+   RL 
+Sbjct  268  QEGDEIALVGYPDSHARLD  286
+
+
+>sp|A0KL13|Y2450_AERHH Putative transport protein AHA_2450 OS=Aeromonas 
+hydrophila subsp. hydrophila (strain ATCC 7966 / DSM 
+30187 / JCM 1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=AHA_2450 
+PE=3 SV=1
+Length=561
+
+ Score = 60.1 bits (144),  Expect = 7e-11, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 35/85 (41%), Gaps = 10/85 (12%)
+
+Query  14   TRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSF  65
+              R   +PI    +        + G ++ +  I+  TG  +  + R   ++  P  D   
+Sbjct  209  ESRKTYLPIIRAYRVGPELAAWIGGRTLRETGIYPHTGCYVERIRRNG-ILASPDGDAVI  267
+
+Query  66   RAGDIILGIGKPEEIERLK-NYISA  89
+            + GD I  +G PE  E+L  NY + 
+Sbjct  268  QEGDEIALVGYPESHEKLDVNYRNG  292
+
+
+>sp|A4SN85|Y2308_AERS4 Putative transport protein ASA_2308 OS=Aeromonas 
+salmonicida (strain A449) OX=382245 GN=ASA_2308 PE=3 
+SV=1
+Length=561
+
+ Score = 60.1 bits (144),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 35/85 (41%), Gaps = 10/85 (12%)
+
+Query  14   TRRMVEVPIPEGSK--------LEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSF  65
+              R   +PI    +        + G ++ +  I+  TG  +  + R   ++  P  D   
+Sbjct  209  ESRKTYLPIIRAYRVGPELAAWIGGRTLRETGIYPHTGCYVERIRRNG-ILASPDGDAVI  267
+
+Query  66   RAGDIILGIGKPEEIERLK-NYISA  89
+            + GD I  +G PE  E+L  NY + 
+Sbjct  268  QEGDEIALVGYPESHEKLDVNYRNG  292
+
+
+>sp|Q4QPK9|Y043_HAEI8 Putative transport protein NTHI0043 OS=Haemophilus 
+influenzae (strain 86-028NP) OX=281310 GN=NTHI0043 
+PE=3 SV=1
+Length=551
+
+ Score = 57.0 bits (136),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 16/81 (20%), Positives = 34/81 (42%), Gaps = 1/81 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            GYE        +     E  +    K+ G  +    IH   GV+I  + R    ++ P  
+Sbjct  274  GYEVDAPTVAYSGEIRSERVVVTNEKVLGKKIRALGIHQKYGVVISRLNRAGIELV-PTG  332
+
+Query  62   DYSFRAGDIILGIGKPEEIER  82
+            + + + GD++  +G+ + + +
+Sbjct  333  NTTLQFGDVLHMVGRSDVLNQ  353
+
+
+>sp|A5UBA3|Y3135_HAEIE Putative transport protein CGSHiEE_03135 
+OS=Haemophilus influenzae (strain PittEE) OX=374930 GN=CGSHiEE_03135 
+PE=3 SV=1
+Length=551
+
+ Score = 56.6 bits (135),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 16/81 (20%), Positives = 34/81 (42%), Gaps = 1/81 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            GYE        +     E  +    K+ G  +    IH   GV+I  + R    ++ P  
+Sbjct  274  GYEVDAPTVAYSGEIRSERVVVTNEKVLGKKIRALGIHQKYGVVISRLNRAGIELV-PTG  332
+
+Query  62   DYSFRAGDIILGIGKPEEIER  82
+            + + + GD++  +G+ + + +
+Sbjct  333  NTTLQFGDVLHMVGRSDVLNQ  353
+
+
+>sp|Q8AAG5|Y500_BACTN Uncharacterized transporter BT_0500 OS=Bacteroides 
+thetaiotaomicron (strain ATCC 29148 / DSM 2079 / 
+NCTC 10582 / E50 / VPI-5482) OX=226186 GN=BT_0500 PE=3 SV=1
+Length=532
+
+ Score = 56.2 bits (134),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 13/76 (17%), Positives = 32/76 (42%), Gaps = 1/76 (1%)
+
+Query  12   LATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDII  71
+            L   + +E  +     +    + D ++    G  +  V R   + + P  D + + GD +
+Sbjct  270  LDKTQEIESLLLTKKDMINKQLGDLNLQKNFGCTVTRVRRSG-IDLSPSPDLALKFGDKL  328
+
+Query  72   LGIGKPEEIERLKNYI  87
+            + +G+ E I+ +   +
+Sbjct  329  MVVGEKEGIKGVARLL  344
+
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/65 (23%), Positives = 27/65 (42%), Gaps = 1/65 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+               + +   S++  +   +TG +I  +   DE+ I P        GD I  +G  E + +
+Sbjct  197  VTNASVFNRSLMQINARAMTGAVISRLKHKDEISI-PTAHTVLHEGDYIQAVGSEESLNQ  255
+
+Query  83   LKNYI  87
+            L   I
+Sbjct  256  LSVLI  260
+
+
+>sp|Q64SU9|Y2680_BACFR Uncharacterized transporter BF2680 OS=Bacteroides 
+fragilis (strain YCH46) OX=295405 GN=BF2680 PE=3 
+SV=1
+Length=532
+
+ Score = 56.2 bits (134),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 13/76 (17%), Positives = 32/76 (42%), Gaps = 1/76 (1%)
+
+Query  12   LATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDII  71
+            L   + +E  +     +    + D ++    G  +  V R   + + P  D + + GD +
+Sbjct  270  LENTQEIESLLLTKKDMINKQLGDLNLMKNFGCTVTRVRRSG-IDLSPSPDLALKFGDKL  328
+
+Query  72   LGIGKPEEIERLKNYI  87
+            + +G+ E I+ +   +
+Sbjct  329  MVVGEKEGIKGVARLL  344
+
+
+ Score = 47.0 bits (110),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 14/65 (22%), Positives = 27/65 (42%), Gaps = 1/65 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 + G S++  +   +TG +I  +   +E+ I P        GD I  +G  E + +
+Sbjct  197  ITNPSVFGRSLMQINARAMTGAVISRLKHQEEISI-PTAHTVLHEGDYIQAVGSEEALTQ  255
+
+Query  83   LKNYI  87
+            L   +
+Sbjct  256  LAVLV  260
+
+
+>sp|A0KNW5|Y3492_AERHH Putative transport protein AHA_3492 OS=Aeromonas 
+hydrophila subsp. hydrophila (strain ATCC 7966 / DSM 
+30187 / JCM 1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=AHA_3492 
+PE=3 SV=1
+Length=553
+
+ Score = 55.4 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 21/86 (24%), Positives = 36/86 (42%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    ++ G  + D DI     V+I  + R    ++ P  
+Sbjct  275  GEEVETSLSTRGTDLRVERVVVTNEQVLGKKIRDLDIKQKYDVVISRLNRAGIELV-PTS  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+ + IE + N +
+Sbjct  334  QTSLQFGDILNLVGRLDAIEAVTNVV  359
+
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 14/62 (23%), Positives = 28/62 (45%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 + G+ + +    D   VI   + RGDEL++ P  D     GD++  +G+   + +
+Sbjct  211  VRNPNIHGLMLSEIPSLDEADVICSRLKRGDELMV-PRPDSRIELGDLLHLVGERHALRK  269
+
+Query  83   LK  84
+            + 
+Sbjct  270  VL  271
+
+
+>sp|P44472|Y035_HAEIN Putative transport protein HI_0035 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / 
+Rd) OX=71421 GN=HI_0035 PE=3 SV=1
+Length=551
+
+ Score = 55.4 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 15/81 (19%), Positives = 34/81 (42%), Gaps = 1/81 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G+E        +     E  +    K+ G  +    IH   GV+I  + R    ++ P  
+Sbjct  274  GHEVDAPTVAYSGEIRSERVVVTNEKVLGKKIRALGIHQKYGVVISRLNRAGIELV-PTG  332
+
+Query  62   DYSFRAGDIILGIGKPEEIER  82
+            + + + GD++  +G+ + + +
+Sbjct  333  NTTLQFGDVLHMVGRSDVLNQ  353
+
+
+>sp|A5UFK5|Y2670_HAEIG Putative transport protein CGSHiGG_02670 
+OS=Haemophilus influenzae (strain PittGG) OX=374931 GN=CGSHiGG_02670 
+PE=3 SV=1
+Length=551
+
+ Score = 55.4 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 15/81 (19%), Positives = 34/81 (42%), Gaps = 1/81 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G+E        +     E  +    K+ G  +    IH   GV+I  + R    ++ P  
+Sbjct  274  GHEVDAPTVAYSGEIRSERVVVTNEKVLGKKIRALGIHQKYGVVISRLNRAGIELV-PTG  332
+
+Query  62   DYSFRAGDIILGIGKPEEIER  82
+            + + + GD++  +G+ + + +
+Sbjct  333  NTTLQFGDVLHMVGRSDVLNQ  353
+
+
+>sp|A4SJA2|Y825_AERS4 Putative transport protein ASA_0825 OS=Aeromonas 
+salmonicida (strain A449) OX=382245 GN=ASA_0825 PE=3 
+SV=1
+Length=553
+
+ Score = 55.4 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 21/86 (24%), Positives = 36/86 (42%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    ++ G  + D DI     V+I  + R    ++ P  
+Sbjct  275  GEEVETSLSTRGTDLRVERVVVTNEQVLGKKIRDLDIKQKYDVVISRLNRAGIELV-PTS  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+ + IE + N +
+Sbjct  334  QTSLQFGDILNLVGRLDAIEAVTNVV  359
+
+
+>sp|A8ACJ7|Y031_CITK8 Putative transport protein CKO_00031 OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) 
+OX=290338 GN=CKO_00031 PE=3 SV=1
+Length=553
+
+ Score = 53.5 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPSSIDAVANVV  359
+
+
+>sp|Q3YWC7|YIDE_SHISS Putative transport protein YidE OS=Shigella 
+sonnei (strain Ss046) OX=300269 GN=yidE PE=3 SV=2
+Length=553
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKDTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|A6VKA8|Y023_ACTSZ Putative transport protein Asuc_0023 OS=Actinobacillus 
+succinogenes (strain ATCC 55618 / DSM 22257 / 
+130Z) OX=339671 GN=Asuc_0023 PE=3 SV=1
+Length=552
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 14/82 (17%), Positives = 31/82 (38%), Gaps = 1/82 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G         +      E  +    K+    +     H   GV+I  + R    +I P  
+Sbjct  274  GESIQVEASAMKGNLRTERVVVTNEKILSKKIRTLAFHQQYGVMISRLNRSGVELI-PTA  332
+
+Query  62   DYSFRAGDIILGIGKPEEIERL  83
+            + + + GD++  IG  + ++++
+Sbjct  333  NTTLQFGDVLHIIGSADVMDKV  354
+
+
+>sp|Q8A5Z4|Y2092_BACTN Uncharacterized transporter BT_2092 OS=Bacteroides 
+thetaiotaomicron (strain ATCC 29148 / DSM 2079 / 
+NCTC 10582 / E50 / VPI-5482) OX=226186 GN=BT_2092 PE=3 SV=1
+Length=554
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 10/62 (16%), Positives = 28/62 (45%), Gaps = 1/62 (2%)
+
+Query  22   IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+            +    ++ G ++       + GV +  V R   + +    +   + GD ++ +G+ + +E
+Sbjct  300  LVTKPEINGKTLGSMHFRSMYGVNVTRVNRSG-MDLFADPNLILQVGDRVMVVGQQDAVE  358
+
+Query  82   RL  83
+            R+
+Sbjct  359  RV  360
+
+
+>sp|Q9CLX8|Y1071_PASMU Putative transport protein PM1071 OS=Pasteurella 
+multocida (strain Pm70) OX=272843 GN=PM1071 PE=3 SV=1
+Length=553
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 15/81 (19%), Positives = 32/81 (40%), Gaps = 1/81 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E              +  +    K+ G  +    IH   GV+I  + R    ++ P  
+Sbjct  275  GEEVDVPLSSFTGDLRSDRIVVTNEKVLGKKIRALGIHQKYGVVISRLNRAGVELV-PTA  333
+
+Query  62   DYSFRAGDIILGIGKPEEIER  82
+            + + + GD++  +G+ E + +
+Sbjct  334  NTALQFGDVLHVVGRSEVLNQ  354
+
+
+ Score = 37.7 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 13/63 (21%), Positives = 29/63 (46%), Gaps = 2/63 (3%)
+
+Query  23   PEGSKLEGVSVLDA-DIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+                 L+G+ ++D     +   V+   + R DE I  P  +   + GD++  +G+   + 
+Sbjct  210  VTNPNLDGLRLVDIPGFDEKRDVVCTRLKR-DEHISVPQANTIIQKGDLLHLVGEIPLLR  268
+
+Query  82   RLK  84
+            ++K
+Sbjct  269  KIK  271
+
+
+>sp|Q8A8D8|Y1229_BACTN Uncharacterized transporter BT_1229 OS=Bacteroides 
+thetaiotaomicron (strain ATCC 29148 / DSM 2079 / 
+NCTC 10582 / E50 / VPI-5482) OX=226186 GN=BT_1229 PE=3 SV=1
+Length=555
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 10/76 (13%), Positives = 31/76 (41%), Gaps = 1/76 (1%)
+
+Query  10   DVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGD  69
+            + + +  + +  +    +L G  +    + +  G+ I  V R    ++    +   + GD
+Sbjct  288  NAIDSELISQRIVVTRPELNGKKLGSLRLRNHYGINISRVYRSGVQLLA-TPELILQLGD  346
+
+Query  70   IILGIGKPEEIERLKN  85
+             +  +G+   I+ ++ 
+Sbjct  347  RLTVVGEAAAIQNVEK  362
+
+
+>sp|Q8ZL04|YIDE_SALTY Putative transport protein YidE OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B4TMX5|YIDE_SALSV Putative transport protein YidE OS=Salmonella 
+schwarzengrund (strain CVM19633) OX=439843 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B5BIJ0|YIDE_SALPK Putative transport protein YidE OS=Salmonella 
+paratyphi A (strain AKU_12601) OX=554290 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|A9MWJ2|YIDE_SALPB Putative transport protein YidE OS=Salmonella 
+paratyphi B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|Q5PKS7|YIDE_SALPA Putative transport protein YidE OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B4SY75|YIDE_SALNS Putative transport protein YidE OS=Salmonella 
+newport (strain SL254) OX=423368 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B4TA59|YIDE_SALHS Putative transport protein YidE OS=Salmonella 
+heidelberg (strain SL476) OX=454169 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   +I   + R D L++ P      +AGD++  +G+P ++
+Sbjct  211  VENPNLNNMAIQDVPILNSDKIICSRLKRDDTLMV-PSPGTIIQAGDLLHLVGQPTDL  267
+
+
+>sp|B5QU35|YIDE_SALEP Putative transport protein YidE OS=Salmonella 
+enteritidis PT4 (strain P125109) OX=550537 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   +I   + R D L++ P      +AGD++  +G+P ++
+Sbjct  211  VENPNLNNMAIQDVPILNSDKIICSRLKRDDTLMV-PSPGTIIQAGDLLHLVGQPTDL  267
+
+
+>sp|C0Q247|YIDE_SALPC Putative transport protein YidE OS=Salmonella 
+paratyphi C (strain RKS4594) OX=476213 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B5EY82|YIDE_SALA4 Putative transport protein YidE OS=Salmonella 
+agona (strain SL483) OX=454166 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|Q57I28|YIDE_SALCH Putative transport protein YidE OS=Salmonella 
+choleraesuis (strain SC-B67) OX=321314 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|B5FMC7|YIDE_SALDC Putative transport protein YidE OS=Salmonella 
+dublin (strain CT_02021853) OX=439851 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   +I   + R D L++ P      +AGD++  +G+P ++
+Sbjct  211  VENPNLNNMAIQDVPILNSDKIICSRLKRDDTLMV-PSPGTIIQAGDLLHLVGQPTDL  267
+
+
+>sp|B2TUT7|YIDE_SHIB3 Putative transport protein YidE OS=Shigella 
+boydii serotype 18 (strain CDC 3083-94 / BS512) OX=344609 
+GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.4 bits (124),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|Q0SYM8|YIDE_SHIF8 Putative transport protein YidE OS=Shigella 
+flexneri serotype 5b (strain 8401) OX=373384 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|Q31UU4|YIDE_SHIBS Putative transport protein YidE OS=Shigella 
+boydii serotype 4 (strain Sb227) OX=300268 GN=yidE PE=3 
+SV=2
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|Q8Z2L7|YIDE_SALTI Putative transport protein YidE OS=Salmonella 
+typhi OX=90370 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVITNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   +I   + R D L++ P      +AGD++  +G+P ++
+Sbjct  211  VENPNLNNMAIQDVPILNSDKIICSRLKRDDTLMV-PSPGTIIQAGDLLHLVGQPTDL  267
+
+
+>sp|B1LL09|YIDE_ECOSM Putative transport protein YidE OS=Escherichia 
+coli (strain SMS-3-5 / SECEC) OX=439855 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B7NF02|YIDE_ECOLU Putative transport protein YidE OS=Escherichia 
+coli O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|A8A6E4|YIDE_ECOHS Putative transport protein YidE OS=Escherichia 
+coli O9:H4 (strain HS) OX=331112 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B7NQY5|YIDE_ECO7I Putative transport protein YidE OS=Escherichia 
+coli O7:K1 (strain IAI39 / ExPEC) OX=585057 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|P60874|YIDE_SHIFL Putative transport protein YidE OS=Shigella 
+flexneri OX=623 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B6I3R8|YIDE_ECOSE Putative transport protein YidE OS=Escherichia 
+coli (strain SE11) OX=409438 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|P60872|YIDE_ECOLI Putative transport protein YidE OS=Escherichia 
+coli (strain K12) OX=83333 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B1IYQ9|YIDE_ECOLC Putative transport protein YidE OS=Escherichia 
+coli (strain ATCC 8739 / DSM 1576 / Crooks) OX=481805 
+GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B1X9B5|YIDE_ECODH Putative transport protein YidE OS=Escherichia 
+coli (strain K12 / DH10B) OX=316385 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|C4ZYW2|YIDE_ECOBW Putative transport protein YidE OS=Escherichia 
+coli (strain K12 / MC4100 / BW2952) OX=595496 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B7M4H4|YIDE_ECO8A Putative transport protein YidE OS=Escherichia 
+coli O8 (strain IAI1) OX=585034 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|P60873|YIDE_ECO57 Putative transport protein YidE OS=Escherichia 
+coli O157:H7 OX=83334 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|B7L824|YIDE_ECO55 Putative transport protein YidE OS=Escherichia 
+coli (strain 55989 / EAEC) OX=585055 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|A7ZTN8|YIDE_ECO24 Putative transport protein YidE OS=Escherichia 
+coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|Q329C8|YIDE_SHIDS Putative transport protein YidE OS=Shigella 
+dysenteriae serotype 1 (strain Sd197) OX=300267 GN=yidE 
+PE=3 SV=2
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVAS-G  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+>sp|A9MJX2|YIDE_SALAR Putative transport protein YidE OS=Salmonella 
+arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 
+GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D    +   V+I  + R    ++    
+Sbjct  275  GKEVDTSLSTRGTDLRVERVVVTNEKVLGKRIRDLHFKERYDVVISRLNRAGVELVATS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            D S + GDI+  +G+P  I+ + N +
+Sbjct  334  DASLQFGDILNLVGRPASIDAVANVV  359
+
+
+>sp|A6TFY7|Y4047_KLEP7 Putative transport protein KPN78578_40470 
+OS=Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 
+/ MGH 78578) OX=272620 GN=KPN78578_40470 PE=3 SV=1
+Length=553
+
+ Score = 52.0 bits (123),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 19/79 (24%), Positives = 31/79 (39%), Gaps = 1/79 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D  +     V+I  + R    ++    
+Sbjct  275  GQEVATSLSTRGTDLKVERVVVTNEKVLGKKIRDLHVKQRYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEI  80
+              S + GDI+  +G+PE I
+Sbjct  334  SASLQFGDILNLVGRPEAI  352
+
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 30/58 (52%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  + +   ++   + R  EL++ P      +AGD++  +G+PE++
+Sbjct  211  VENPNLNQMAIQDVPMLNNDNIVCSRLKR-GELLMVPAPGTLIQAGDLLHLVGRPEDL  267
+
+
+>sp|A4W4S5|Y015_ENT38 Putative transport protein Ent638_0015 OS=Enterobacter 
+sp. (strain 638) OX=399742 GN=Ent638_0015 PE=3 
+SV=1
+Length=553
+
+ Score = 51.6 bits (122),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 19/87 (22%), Positives = 36/87 (41%), Gaps = 3/87 (3%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPP  60
+            G E         T   VE  +    ++ G  + D  + +   V+I  + R   EL+  P 
+Sbjct  275  GQEVETSLSTRGTDMRVERVVVTNEQVLGKKIRDLQVKERYDVVISRLNRAGVELVASPD  334
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYI  87
+                 + GDI+  +G+P  I+ + + +
+Sbjct  335  AS--LQFGDILNLVGRPSSIDAVADMV  359
+
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   +I   + RGD L++ P      + GD++  +G+P ++
+Sbjct  211  VENPNLSNMAIQDVPILNSISIICSRLKRGDMLMV-PSPGTVIQIGDLLHLVGQPGDL  267
+
+
+>sp|A8G7S0|Y050_SERP5 Putative transport protein Spro_0050 OS=Serratia 
+proteamaculans (strain 568) OX=399741 GN=Spro_0050 
+PE=3 SV=1
+Length=552
+
+ Score = 51.6 bits (122),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 18/86 (21%), Positives = 35/86 (41%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +    K+ G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVSLSTRGTELQVVRAVVTNEKVLGSKIRDLNLKQKYDVVISRLNRSGVELVAGS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            + + + GDI+  +G+PE IE +   +
+Sbjct  334  NVTLQFGDILNLVGRPESIEAVAAIV  359
+
+
+>sp|B7UMF2|YIDE_ECO27 Putative transport protein YidE OS=Escherichia 
+coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=yidE 
+PE=3 SV=1
+Length=553
+
+ Score = 51.2 bits (121),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 19/84 (23%), Positives = 33/84 (39%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVERVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|B5XT62|Y013_KLEP3 Putative transport protein KPK_0013 OS=Klebsiella 
+pneumoniae (strain 342) OX=507522 GN=KPK_0013 PE=3 
+SV=1
+Length=553
+
+ Score = 50.8 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 30/79 (38%), Gaps = 1/79 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   VE  +    K+ G  + D  +     V+I  + R    ++    
+Sbjct  275  GQEVATSLSTRGTDLKVERVVVTNEKVLGKKIRDLHVKQRYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEI  80
+              S + GDI+  +G+ E I
+Sbjct  334  SASLQFGDILNLVGRQEAI  352
+
+
+ Score = 37.3 bits (85),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 30/58 (52%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  + +   ++   + R  EL++ P      +AGD++  +G+PE++
+Sbjct  211  VENPNLNQMAIQDVPMLNSDNIVCSRLKR-GELLMVPAPGTLIQAGDLLHLVGRPEDL  267
+
+
+>sp|Q64VB3|Y1818_BACFR Uncharacterized transporter BF1818 OS=Bacteroides 
+fragilis (strain YCH46) OX=295405 GN=BF1818 PE=3 
+SV=1
+Length=553
+
+ Score = 50.8 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 10/76 (13%), Positives = 33/76 (43%), Gaps = 1/76 (1%)
+
+Query  10   DVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGD  69
+            + + ++ + +  +    +L G  +    + +  G+ I  V R    ++    + + + GD
+Sbjct  287  NAIDSQLISQRIVVTRPELNGKKLGALRLRNHYGINISRVYRSGVQLLA-TPELTLQLGD  345
+
+Query  70   IILGIGKPEEIERLKN  85
+             +  +G+   I+ ++ 
+Sbjct  346  RLTVVGEAAAIQNVEK  361
+
+
+>sp|Q1R4Q2|YIDE_ECOUT Putative transport protein YidE OS=Escherichia 
+coli (strain UTI89 / UPEC) OX=364106 GN=yidE PE=3 SV=2
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|Q8FBW6|YIDE_ECOL6 Putative transport protein YidE OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=yidE PE=3 SV=2
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|A1AHM0|YIDE_ECOK1 Putative transport protein YidE OS=Escherichia 
+coli O1:K1 / APEC OX=405955 GN=yidE PE=3 SV=2
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|B7N2D1|YIDE_ECO81 Putative transport protein YidE OS=Escherichia 
+coli O81 (strain ED1a) OX=585397 GN=yidE PE=3 SV=1
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|B7MGA5|YIDE_ECO45 Putative transport protein YidE OS=Escherichia 
+coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=yidE PE=3 
+SV=1
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|Q0TB22|YIDE_ECOL5 Putative transport protein YidE OS=Escherichia 
+coli O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=yidE 
+PE=3 SV=2
+Length=553
+
+ Score = 50.0 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 32/84 (38%), Gaps = 1/84 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T   V   +     + G  + D    +   V+I  + R    ++    
+Sbjct  275  GQEVDTSLSTKGTDLRVARVVVTNENVLGKRIRDLHFKERYDVVISRLNRAGVELVASS-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKN  85
+            D S + GDI+  +G+P  I+ + N
+Sbjct  334  DISLQFGDILNLVGRPSAIDAVAN  357
+
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 28/58 (48%), Gaps = 1/58 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEI  80
+             E   L  +++ D  I +   VI   + R +E +  P  +   + GD++  +G+P ++
+Sbjct  211  VENPNLHNLAIKDVPILNGDKVICSRLKR-EETLKVPSPETVIQLGDLLHLVGQPADL  267
+
+
+>sp|A1JT67|Y4162_YERE8 Putative transport protein YE4162 OS=Yersinia 
+enterocolitica serotype O:8 / biotype 1B (strain NCTC 
+13174 / 8081) OX=393305 GN=YE4162 PE=3 SV=1
+Length=552
+
+ Score = 49.7 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 33/86 (38%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E        +T       +     + G  + D ++     V I  + R    ++    
+Sbjct  275  GEEVDVTLSTASTVLQTARVVVTNEAVLGKKIRDLNLKQKYDVAITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+            + S + GDI+  +G+PE IE +   +
+Sbjct  334  NASLQFGDILNLVGRPESIEAVSAVV  359
+
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+S+ D  + +   V+   + RGD L++ P        GD +  +G+ E +E+
+Sbjct  211  VRNPNLHGLSMQDVPLLNSDEVVCSRLKRGDLLMV-PLSGTVIELGDYLHLVGQREALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|C5BC80|Y3867_EDWI9 Putative transport protein NT01EI_3867 
+OS=Edwardsiella ictaluri (strain 93-146) OX=634503 GN=NT01EI_3867 
+PE=3 SV=1
+Length=552
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 13/74 (18%), Positives = 33/74 (45%), Gaps = 1/74 (1%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+            T   V   +    ++ G  + D ++     V+I  + R    ++    + + + GDI+  
+Sbjct  287  TELQVSRVVVTNERVLGKKIRDLNLKQRYDVVISRLNRAGVELVAGN-NATLQFGDILNL  345
+
+Query  74   IGKPEEIERLKNYI  87
+            +G+P+ I+ +   +
+Sbjct  346  VGRPQAIDAVAAIV  359
+
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 14/60 (23%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  22   IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+            +     L G+S+ +  I +   ++   + RGD L++ P       +GD++  +G+ +E+E
+Sbjct  210  MVRNPNLSGLSIQEVPILNSDTIVCSRLKRGDFLMV-PLPTTQIESGDLLHLVGQKQELE  268
+
+
+>sp|A7FPA6|Y4141_YERP3 Putative transport protein YpsIP31758_4141 
+OS=Yersinia pseudotuberculosis serotype O:1b (strain IP 
+31758) OX=349747 GN=YpsIP31758_4141 PE=3 SV=1
+Length=552
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 33/87 (38%), Gaps = 3/87 (3%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPP  60
+            G E         T       +     + G  + D ++     V+I  + R   EL+    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASNS  334
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYI  87
+             +   + GDI+  +G+PE IE +   +
+Sbjct  335  AN--LQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|B2K7E7|Y4123_YERPB Putative transport protein YPTS_4123 OS=Yersinia 
+pseudotuberculosis serotype IB (strain PB1/+) OX=502801 
+GN=YPTS_4123 PE=3 SV=1
+Length=552
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 33/87 (38%), Gaps = 3/87 (3%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPP  60
+            G E         T       +     + G  + D ++     V+I  + R   EL+    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASNS  334
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYI  87
+             +   + GDI+  +G+PE IE +   +
+Sbjct  335  AN--LQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|Q663W8|Y3906_YERPS Putative transport protein YPTB3906 OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=YPTB3906 PE=3 SV=1
+Length=552
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 33/87 (38%), Gaps = 3/87 (3%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPP  60
+            G E         T       +     + G  + D ++     V+I  + R   EL+    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASNS  334
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYI  87
+             +   + GDI+  +G+PE IE +   +
+Sbjct  335  AN--LQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|B1JGZ7|Y013_YERPY Putative transport protein YPK_0013 OS=Yersinia 
+pseudotuberculosis serotype O:3 (strain YPIII) OX=502800 
+GN=YPK_0013 PE=3 SV=1
+Length=552
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 33/87 (38%), Gaps = 3/87 (3%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGD-ELIIDPP  60
+            G E         T       +     + G  + D ++     V+I  + R   EL+    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASNS  334
+
+Query  61   RDYSFRAGDIILGIGKPEEIERLKNYI  87
+             +   + GDI+  +G+PE IE +   +
+Sbjct  335  AN--LQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|Q64PN7|Y3802_BACFR Uncharacterized transporter BF3802 OS=Bacteroides 
+fragilis (strain YCH46) OX=295405 GN=BF3802 PE=3 
+SV=1
+Length=554
+
+ Score = 48.9 bits (115),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 10/64 (16%), Positives = 26/64 (41%), Gaps = 1/64 (2%)
+
+Query  22   IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+            +    ++ G  +   +   +  V I  V R    +     +   + GD ++ +G  + +E
+Sbjct  300  LVTKPEINGKKLGMLNFRSMYNVNITRVNRSGVDL-FANPNLILQVGDRVMVVGSEDAVE  358
+
+Query  82   RLKN  85
+            R+ +
+Sbjct  359  RVAS  362
+
+
+>sp|Q8Z9V7|Y4083_YERPE Putative transport protein YPO4083/y4100/YP_3992 
+OS=Yersinia pestis OX=632 GN=YPO4083 PE=3 SV=1
+Length=552
+
+ Score = 48.5 bits (114),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T       +     + G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+PE IE +   +
+Sbjct  334  SASLQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|A9R4H0|Y3793_YERPG Putative transport protein YpAngola_A3793 
+OS=Yersinia pestis bv. Antiqua (strain Angola) OX=349746 
+GN=YpAngola_A3793 PE=3 SV=1
+Length=552
+
+ Score = 48.5 bits (114),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T       +     + G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+PE IE +   +
+Sbjct  334  SASLQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|Q1CD76|Y3727_YERPN Putative transport protein YPN_3727 OS=Yersinia 
+pestis bv. Antiqua (strain Nepal516) OX=377628 GN=YPN_3727 
+PE=3 SV=1
+Length=552
+
+ Score = 48.5 bits (114),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T       +     + G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+PE IE +   +
+Sbjct  334  SASLQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|Q1C3K8|Y3002_YERPA Putative transport protein YPA_3002 OS=Yersinia 
+pestis bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_3002 
+PE=3 SV=1
+Length=552
+
+ Score = 48.5 bits (114),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T       +     + G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+PE IE +   +
+Sbjct  334  SASLQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|A4TGM8|Y014_YERPP Putative transport protein YPDSF_0014 OS=Yersinia 
+pestis (strain Pestoides F) OX=386656 GN=YPDSF_0014 
+PE=3 SV=1
+Length=552
+
+ Score = 48.5 bits (114),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 17/86 (20%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  2    GYEAMFVQDVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPR  61
+            G E         T       +     + G  + D ++     V+I  + R    ++    
+Sbjct  275  GEEVDVTLSTAGTALQTARVVVTNEAVLGKKIRDLNLKQKYDVVITRLNRAGIELVASN-  333
+
+Query  62   DYSFRAGDIILGIGKPEEIERLKNYI  87
+              S + GDI+  +G+PE IE +   +
+Sbjct  334  SASLQFGDILNLVGRPEAIEAVSAIV  359
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/62 (24%), Positives = 30/62 (48%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 L G+SV D  + +   V+   + RGD L++ P        GD +  +G+ + +E+
+Sbjct  211  VRNPNLHGLSVQDVPLLNSDEVVCSRLKRGDLLMV-PMPATVIEIGDYLHLVGQRDALEK  269
+
+Query  83   LK  84
+            ++
+Sbjct  270  VR  271
+
+
+>sp|Q7MWN8|Y562_PORGI Uncharacterized transporter PG_0562 OS=Porphyromonas 
+gingivalis (strain ATCC BAA-308 / W83) OX=242619 
+GN=PG_0562 PE=3 SV=1
+Length=558
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 18/74 (24%), Positives = 34/74 (46%), Gaps = 1/74 (1%)
+
+Query  12   LATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDII  71
+            +  + +    +    KL GV +    I ++ GV I  V R    ++ P RD   + GD +
+Sbjct  294  VDKQLVSRRLVITRPKLNGVRLGMLKIRNLYGVNISRVDRAGVELL-PDRDLRLQLGDRL  352
+
+Query  72   LGIGKPEEIERLKN  85
+              +G+ + +ER+  
+Sbjct  353  TVVGEGKAVERVAE  366
+
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 14/60 (23%), Positives = 24/60 (40%), Gaps = 1/60 (2%)
+
+Query  25   GSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIERLK  84
+               L+G SV +  +      +I  V    + +  P  D     GD IL +   E+  +L+
+Sbjct  215  NPALDGKSVREVALLLKRPFVITRVWHNGK-VEIPTSDMILYFGDHILAVSGEEDTSQLE  273
+
+
+>sp|Q6APL9|Y976_DESPS Uncharacterized transporter DP0976 OS=Desulfotalea 
+psychrophila (strain LSv54 / DSM 12343) OX=177439 
+GN=DP0976 PE=3 SV=1
+Length=541
+
+ Score = 47.3 bits (111),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 15/68 (22%), Positives = 27/68 (40%), Gaps = 3/68 (4%)
+
+Query  19   EVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPP-RDYSFRAGDIILGIGKP  77
+            E        + G+S+   + H+V  V +  + R    I  P   +     GD I  +G  
+Sbjct  283  EYITVSNKDICGMSLKQLNCHEVFNVQLSRISRNG--IELPAGPNLRLHMGDTIHAVGSK  340
+
+Query  78   EEIERLKN  85
+            + +E +K 
+Sbjct  341  QSLENIKK  348
+
+
+>sp|Q04856|TRKA_AZOC5 Trk system potassium uptake protein TrkA 
+OS=Azorhizobium caulinodans (strain ATCC 43989 / DSM 5975 / 
+JCM 20966 / NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=trkA 
+PE=3 SV=2
+Length=458
+
+ Score = 46.2 bits (108),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 21/80 (26%), Positives = 35/80 (44%), Gaps = 4/80 (5%)
+
+Query  8    VQDVLATR-RMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFR  66
+            V  +L     M+E    E S L G  + D D+    G+ I  V R   ++  P  D   R
+Sbjct  374  VHSLLDGAGEMIEAEALETSPLVGRPLRDIDLLK--GMRIGAVVRNGVVMR-PSGDTVVR  430
+
+Query  67   AGDIILGIGKPEEIERLKNY  86
+            A D ++     ++I+R++  
+Sbjct  431  AQDRVVLFALADDIKRVEQL  450
+
+
+>sp|Q67MD6|Y2172_SYMTH Uncharacterized transporter STH2172 OS=Symbiobacterium 
+thermophilum (strain T / IAM 14863) OX=292459 
+GN=STH2172 PE=3 SV=1
+Length=542
+
+ Score = 45.8 bits (107),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 13/78 (17%), Positives = 34/78 (44%), Gaps = 1/78 (1%)
+
+Query  10   DVLATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGD  69
+            D+  +   +        ++ G ++ + ++ +  G ++  V RGD  ++ P  D     GD
+Sbjct  277  DLDRSEVDMREVFVSNPEVAGRTLRELNLPNRFGAVVSRVWRGDLQLL-PYADMPLELGD  335
+
+Query  70   IILGIGKPEEIERLKNYI  87
+             +  + + E  + +  Y+
+Sbjct  336  RVRVLSRRERQQEVAAYL  353
+
+
+>sp|Q74EE6|Y1016_GEOSL Uncharacterized transporter GSU1016 OS=Geobacter 
+sulfurreducens (strain ATCC 51573 / DSM 12127 / PCA) 
+OX=243231 GN=GSU1016 PE=3 SV=1
+Length=546
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 10/70 (14%), Positives = 26/70 (37%), Gaps = 1/70 (1%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+            +            ++ G  + + ++ +  G  +  V RGD+  + P  D     GD +  
+Sbjct  285  SEYDYRRIFVSNPRVAGRQLGELNLFENYGATVTRVRRGDDDFL-PHDDMVLELGDRVRV  343
+
+Query  74   IGKPEEIERL  83
+            +   + +  +
+Sbjct  344  VTHRDHMAEV  353
+
+
+>sp|Q7MUS4|Y1411_PORGI Uncharacterized transporter PG_1411 OS=Porphyromonas 
+gingivalis (strain ATCC BAA-308 / W83) OX=242619 
+GN=PG_1411 PE=3 SV=1
+Length=561
+
+ Score = 44.3 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 11/66 (17%), Positives = 27/66 (41%), Gaps = 1/66 (2%)
+
+Query  22   IPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIE  81
+            I   S+L G ++    +  + G+ +  V R    ++        + GD +  +G    + 
+Sbjct  306  IVTKSELNGKTLGSLQLRKMHGMNVTRVNRAGVEMVA-LASLPLQVGDRLTVVGSELVMP  364
+
+Query  82   RLKNYI  87
+            +++  I
+Sbjct  365  KVEELI  370
+
+
+>sp|Q64TC3|Y2507_BACFR Uncharacterized transporter BF2507 OS=Bacteroides 
+fragilis (strain YCH46) OX=295405 GN=BF2507 PE=3 
+SV=1
+Length=562
+
+ Score = 42.7 bits (99),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 10/74 (14%), Positives = 24/74 (32%), Gaps = 1/74 (1%)
+
+Query  12   LATRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDII  71
+            L    +    +    +L G ++    I +  G  +  V R    ++        + GD +
+Sbjct  298  LNKELISRRILITKPELNGKTLAQLKIRNNFGASVTRVNRSGVDLVAS-PQLQLQMGDRV  356
+
+Query  72   LGIGKPEEIERLKN  85
+              +G    +   + 
+Sbjct  357  TIVGSELAVSHAEK  370
+
+
+>sp|Q0ZAH7|KEFB_ALKAM Putative K(+) efflux antiporter KefB OS=Alkalimonas 
+amylolytica OX=152573 GN=kefB PE=3 SV=1
+Length=661
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 15/69 (22%), Positives = 29/69 (42%), Gaps = 1/69 (1%)
+
+Query  14   TRRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILG  73
+              ++  V + EGS     S+   D+    G+ +  + R    I  P  D   +  D+++ 
+Sbjct  582  QEQLKAVLLAEGSPAIDQSLQMLDL-AQYGIQLTELVRAHNRIEQPSLDMVLQENDVLVL  640
+
+Query  74   IGKPEEIER  82
+             G  E +E+
+Sbjct  641  FGSAEALEQ  649
+
+
+>sp|Q5NGK7|Y829_FRATT Uncharacterized transporter FTT_0829c OS=Francisella 
+tularensis subsp. tularensis (strain SCHU S4 / 
+Schu 4) OX=177416 GN=FTT_0829c PE=3 SV=1
+Length=571
+
+ Score = 40.4 bits (93),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 20/100 (20%), Positives = 38/100 (38%), Gaps = 17/100 (17%)
+
+Query  8    VQDVLATRRMVEVP------------IPEGSKLEGVSVLD----ADIHDVTGVIIIGVGR  51
+            +Q +++    V  P            I     L   ++ +        +  GV +  + R
+Sbjct  285  IQSIISKDIEVTKPEQFNFIEEKRSLILTNKNLFNKTIKEVKDIIQDRNYYGVFLQKIIR  344
+
+Query  52   GDELIIDPPRDYSFRAGDIILGIGKPEEIERLKNYISALV  91
+              + +     D   R GD I  IGKPE+++++ N I   +
+Sbjct  345  SGQKLPISD-DLKLRRGDEIRLIGKPEDLDKISNKIGTFI  383
+
+
+>sp|Q6A666|Y2034_CUTAK Uncharacterized transporter PPA2034 OS=Cutibacterium 
+acnes (strain DSM 16379 / KPA171202) OX=267747 
+GN=PPA2034 PE=3 SV=1
+Length=525
+
+ Score = 40.4 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 12/60 (20%), Positives = 22/60 (37%), Gaps = 1/60 (2%)
+
+Query  15   RRMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGI  74
+                   +     L G ++   D+   T   +  V RGD  ++    D   + GD +L +
+Sbjct  268  ELDFRRFVVSNPALVGRTLGSIDVRGRTSGKVTRVRRGDLDMLARS-DIVLQPGDRVLCV  326
+
+
+>sp|Q89PK5|Y3475_BRADU Uncharacterized transporter bll3475 OS=Bradyrhizobium 
+diazoefficiens (strain JCM 10833 / IAM 13628 
+/ NBRC 14792 / USDA 110) OX=224911 GN=bll3475 PE=3 SV=1
+Length=516
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/65 (20%), Positives = 23/65 (35%), Gaps = 1/65 (2%)
+
+Query  16   RMVEVPIPEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIG  75
+             +    + E S L G +V  A+      + I  + R  E ++          GD+I    
+Sbjct  219  ELRAYRLDEHSPLIGSTVAAAEARPEHRLFIHRIRR-GERVLQAEPGTILAPGDVITISA  277
+
+Query  76   KPEEI  80
+              + I
+Sbjct  278  PRQII  282
+
+
+>sp|Q6CYV4|Y4401_PECAS Putative transport protein ECA4401 OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) 
+OX=218491 GN=ECA4401 PE=3 SV=1
+Length=552
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/60 (23%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+               + L+G+++ D  I +   ++   + RGDEL++ P      + GD +  +G   ++E+
+Sbjct  211  VTNTNLQGLAIQDVPILNRDTIVCSRLKRGDELMV-PSPHTLIQLGDYLHLVGAKNDLEQ  269
+
+
+>sp|A5EX03|Y009_DICNV Putative transport protein DNO_0009 OS=Dichelobacter 
+nodosus (strain VCS1703A) OX=246195 GN=DNO_0009 
+PE=3 SV=1
+Length=561
+
+ Score = 37.7 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 29/62 (47%), Gaps = 1/62 (2%)
+
+Query  23   PEGSKLEGVSVLDADIHDVTGVIIIGVGRGDELIIDPPRDYSFRAGDIILGIGKPEEIER  82
+                 +  + + +   +D+  VI   + R DELII P  + +    DI+  +G  + + +
+Sbjct  218  ITNPNINNILLREIPDYDLNTVIYSRLKRNDELII-PHPNTTLYLNDILHLVGNKKSLNK  276
+
+Query  83   LK  84
+            ++
+Sbjct  277  MQ  278
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.138    0.321    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

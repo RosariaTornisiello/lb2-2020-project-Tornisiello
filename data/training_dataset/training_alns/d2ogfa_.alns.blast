@@ -1,0 +1,195 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ogfa_
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q57851|MPTD_METJA Dihydroneopterin aldolase OS=Methanocaldococ...  243     7e-84
+sp|Q8TX89|MPTD_METKA Dihydroneopterin aldolase OS=Methanopyrus ka...  104     5e-29
+sp|Q6L2J9|MPTD_PICTO Dihydroneopterin aldolase OS=Picrophilus tor...  80.5    1e-19
+
+
+>sp|Q57851|MPTD_METJA Dihydroneopterin aldolase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 
+10045 / NBRC 100440) OX=243232 GN=mptD PE=1 SV=1
+Length=121
+
+ Score = 243 bits (620),  Expect = 7e-84, Method: Compositional matrix adjust.
+ Identities = 119/120 (99%), Positives = 120/120 (100%), Gaps = 0/120 (0%)
+
+Query  2    LRVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN  61
+            +RVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN
+Sbjct  1    MRVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN  60
+
+Query  62   QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE  121
+            QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE
+Sbjct  61   QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE  120
+
+
+>sp|Q8TX89|MPTD_METKA Dihydroneopterin aldolase OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=mptD PE=1 SV=1
+Length=121
+
+ Score = 104 bits (260),  Expect = 5e-29, Method: Compositional matrix adjust.
+ Identities = 52/115 (45%), Positives = 72/115 (63%), Gaps = 6/115 (5%)
+
+Query  12   KYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKNQPCVYDIKVK  71
+            KYFK L+DRERA+FE GITLGA++HQF GTPVS    E + + IE A   QPCV D +V+
+Sbjct  2    KYFKRLSDRERAIFEAGITLGAIYHQFCGTPVSPGTAEEVAKCIERAALLQPCVIDARVE  61
+
+Query  72   IRNVGEK------YVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKF  120
+            +    E       Y  + G+ L V +  +  +  A  KLE+I E++YPLM+V++ 
+Sbjct  62   VDVSSEDTDNYGGYTEVSGRNLRVTIVTRCGEWEAVGKLEFIEELNYPLMWVEEI  116
+
+
+>sp|Q6L2J9|MPTD_PICTO Dihydroneopterin aldolase OS=Picrophilus 
+torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 
+100828) OX=263820 GN=mptD PE=1 SV=1
+Length=120
+
+ Score = 80.5 bits (197),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 47/114 (41%), Positives = 63/114 (55%), Gaps = 6/114 (5%)
+
+Query  11   KKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKNQPCVYDIKV  70
+            +KYF N TD +RA FE GI LGA+FHQ+ G PV+  N    E  IE +   QP V ++++
+Sbjct  6    EKYF-NCTDIQRAFFEAGIKLGAIFHQYTGIPVNSENASMAEEFIERSTMIQPFVENVRI  64
+
+Query  71   KIRNVGE-----KYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKK  119
+             I NV        Y SL+ KML  ++ I  N       L Y   +DYP+MY K+
+Sbjct  65   SINNVKRSSGTYSYSSLNEKMLHAEVLINYNGKKVLGVLNYDEGLDYPVMYAKE  118
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.387    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+Results from round 2
+
+
+Query= d2ogfa_
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q57851|MPTD_METJA Dihydroneopterin aldolase OS=Methanocaldococ...  187     1e-61
+sp|Q8TX89|MPTD_METKA Dihydroneopterin aldolase OS=Methanopyrus ka...  163     3e-52
+sp|Q6L2J9|MPTD_PICTO Dihydroneopterin aldolase OS=Picrophilus tor...  151     1e-47
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q57851|MPTD_METJA Dihydroneopterin aldolase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 
+10045 / NBRC 100440) OX=243232 GN=mptD PE=1 SV=1
+Length=121
+
+ Score = 187 bits (474),  Expect = 1e-61, Method: Composition-based stats.
+ Identities = 119/120 (99%), Positives = 120/120 (100%), Gaps = 0/120 (0%)
+
+Query  2    LRVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN  61
+            +RVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN
+Sbjct  1    MRVEETEVFKKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKN  60
+
+Query  62   QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE  121
+            QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE
+Sbjct  61   QPCVYDIKVKIRNVGEKYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKFE  120
+
+
+>sp|Q8TX89|MPTD_METKA Dihydroneopterin aldolase OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=mptD PE=1 SV=1
+Length=121
+
+ Score = 163 bits (413),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 52/115 (45%), Positives = 72/115 (63%), Gaps = 6/115 (5%)
+
+Query  12   KYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKNQPCVYDIKVK  71
+            KYFK L+DRERA+FE GITLGA++HQF GTPVS    E + + IE A   QPCV D +V+
+Sbjct  2    KYFKRLSDRERAIFEAGITLGAIYHQFCGTPVSPGTAEEVAKCIERAALLQPCVIDARVE  61
+
+Query  72   IRNVGEK------YVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKF  120
+            +    E       Y  + G+ L V +  +  +  A  KLE+I E++YPLM+V++ 
+Sbjct  62   VDVSSEDTDNYGGYTEVSGRNLRVTIVTRCGEWEAVGKLEFIEELNYPLMWVEEI  116
+
+
+>sp|Q6L2J9|MPTD_PICTO Dihydroneopterin aldolase OS=Picrophilus 
+torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 
+100828) OX=263820 GN=mptD PE=1 SV=1
+Length=120
+
+ Score = 151 bits (382),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 47/115 (41%), Positives = 63/115 (55%), Gaps = 6/115 (5%)
+
+Query  11   KKYFKNLTDRERAVFEGGITLGALFHQFVGTPVSKYNKESLERAIEEAMKNQPCVYDIKV  70
+            +KYF N TD +RA FE GI LGA+FHQ+ G PV+  N    E  IE +   QP V ++++
+Sbjct  6    EKYF-NCTDIQRAFFEAGIKLGAIFHQYTGIPVNSENASMAEEFIERSTMIQPFVENVRI  64
+
+Query  71   KIRNVGE-----KYVSLDGKMLDVDLKIKINKTVAHLKLEYIPEIDYPLMYVKKF  120
+             I NV        Y SL+ KML  ++ I  N       L Y   +DYP+MY K+ 
+Sbjct  65   SINNVKRSSGTYSYSSLNEKMLHAEVLINYNGKKVLGVLNYDEGLDYPVMYAKEV  119
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.136    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0415    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

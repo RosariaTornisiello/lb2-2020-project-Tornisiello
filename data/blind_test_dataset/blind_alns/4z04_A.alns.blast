@@ -1,0 +1,3283 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4z04_A
+
+Length=124
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus cl...  42.0    2e-04
+sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacill...  37.4    0.009
+
+
+>sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=fosB PE=3 SV=1
+Length=146
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 31/122 (25%), Positives = 58/122 (48%), Gaps = 15/122 (12%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++M K+ +FY      +PL +G    +    G W+    N +P+      + 
+Sbjct  5    INHMTFSVSNMDKAVSFYKHVFMEAPLVLGEKTAYFTIGGTWLAL--NLQPDI----DRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS    S++  FY   + AG   +  PG +     +  + +  DPDGH +
+Sbjct  59   EIRQSYTHIAFSI-EESQLDAFYTRLLEAGA--DILPGRKRQVETEGKSIYFRDPDGHLL  115
+
+Query  117  EV  118
+            EV
+Sbjct  116  EV  117
+
+
+>sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacillus 
+brevis (strain 47 / JCM 6285 / NBRC 100599) OX=358681 
+GN=fosB PE=3 SV=1
+Length=141
+
+ Score = 37.4 bits (85),  Expect = 0.009, Method: Compositional matrix adjust.
+ Identities = 33/125 (26%), Positives = 53/125 (42%), Gaps = 22/125 (18%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEFGDWVGY--GRNGKPEFWIGAQKGAK  58
+            L+H+ F+++D++KS  FY   L   PL  G  + + D  GY    N +P+      +   
+Sbjct  7    LNHLLFSVSDLEKSFCFYRDVLHAKPLVRGRKLAYFDLNGYWLALNEEPDI----PRNEI  62
+
+Query  59   LEGVLHVAFSAGTRSEVGRFYEAAIAAG-----GRDNGKPGLRPHYHPDYYAAFVLDPDG  113
+                 H+AF+  T      +Y      G     GRD  +   R        + + +DPDG
+Sbjct  63   AHSYTHMAFTI-TEESFDEWYAHLEKHGVTILHGRDRSERDKR--------SIYFIDPDG  113
+
+Query  114  HNIEV  118
+            H  E+
+Sbjct  114  HKFEL  118
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.142    0.460    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5001433932
+Results from round 2
+
+
+Query= 4z04_A
+
+Length=124
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus cl...  151     3e-47
+
+Sequences not found previously or not previously below threshold:
+
+sp|A7GNY8|FOSB_BACCN Metallothiol transferase FosB OS=Bacillus cy...  79.7    6e-19
+sp|Q81W73|FOSB2_BACAN Metallothiol transferase FosB 2 OS=Bacillus...  76.3    1e-17
+sp|C3L6A4|FOSB2_BACAC Metallothiol transferase FosB 2 OS=Bacillus...  76.3    1e-17
+sp|C3P6D6|FOSB2_BACAA Metallothiol transferase FosB 2 OS=Bacillus...  76.3    1e-17
+sp|A4IS40|FOSB_GEOTN Metallothiol transferase FosB OS=Geobacillus...  75.5    3e-17
+sp|P60865|FOSB_BACCE Metallothiol transferase FosB OS=Bacillus ce...  74.4    6e-17
+sp|B1HZM2|FOSB_LYSSC Metallothiol transferase FosB OS=Lysinibacil...  74.4    8e-17
+sp|Q49VY9|FOSB_STAS1 Metallothiol transferase FosB OS=Staphylococ...  72.0    8e-16
+sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacill...  70.9    2e-15
+sp|A7Z3A4|FOSB_BACVZ Metallothiol transferase FosB OS=Bacillus ve...  69.7    6e-15
+sp|B7JKN1|FOSB_BACC0 Metallothiol transferase FosB OS=Bacillus ce...  69.3    6e-15
+sp|Q81RK2|FOSB1_BACAN Metallothiol transferase FosB 1 OS=Bacillus...  69.3    6e-15
+sp|C3L5E9|FOSB1_BACAC Metallothiol transferase FosB 1 OS=Bacillus...  69.3    6e-15
+sp|C3P803|FOSB1_BACAA Metallothiol transferase FosB 1 OS=Bacillus...  69.3    6e-15
+sp|Q65KJ5|FOSB_BACLD Metallothiol transferase FosB OS=Bacillus li...  69.0    1e-14
+sp|Q63CC5|FOSB_BACCZ Metallothiol transferase FosB OS=Bacillus ce...  68.2    2e-14
+sp|C1ERH6|FOSB_BACC3 Metallothiol transferase FosB OS=Bacillus ce...  68.2    2e-14
+sp|A0RD31|FOSB_BACAH Metallothiol transferase FosB OS=Bacillus th...  68.2    2e-14
+sp|B9IY29|FOSB_BACCQ Metallothiol transferase FosB OS=Bacillus ce...  67.8    2e-14
+sp|B7HNI5|FOSB_BACC7 Metallothiol transferase FosB OS=Bacillus ce...  67.8    2e-14
+sp|Q6HJT7|FOSB_BACHK Metallothiol transferase FosB OS=Bacillus th...  67.4    4e-14
+sp|Q9KBZ6|FOSB_BACHD Metallothiol transferase FosB OS=Bacillus ha...  67.4    4e-14
+sp|Q8CXK5|FOSB_OCEIH Metallothiol transferase FosB OS=Oceanobacil...  67.0    5e-14
+sp|O31817|FOSB_BACSU Metallothiol transferase FosB OS=Bacillus su...  67.0    5e-14
+sp|A9VRT9|FOSB_BACMK Metallothiol transferase FosB OS=Bacillus my...  66.6    6e-14
+sp|Q739M9|FOSB_BACC1 Metallothiol transferase FosB OS=Bacillus ce...  66.6    7e-14
+sp|B7HJF3|FOSB_BACC4 Metallothiol transferase FosB OS=Bacillus ce...  65.5    2e-13
+sp|B7ITG3|FOSB_BACC2 Metallothiol transferase FosB OS=Bacillus ce...  65.1    3e-13
+sp|P59291|FOSB_STAES Metallothiol transferase FosB OS=Staphylococ...  65.1    3e-13
+sp|Q81EF2|FOSB_BACCR Metallothiol transferase FosB OS=Bacillus ce...  64.3    6e-13
+sp|Q03377|FOSB_STAEP Metallothiol transferase FosB OS=Staphylococ...  61.6    7e-12
+sp|Q5HKJ6|FOSB_STAEQ Metallothiol transferase FosB OS=Staphylococ...  61.3    1e-11
+sp|Q4L2Y9|FOSB_STAHJ Metallothiol transferase FosB OS=Staphylococ...  60.1    2e-11
+sp|Q55317|FOSB_STAHA Metallothiol transferase FosB OS=Staphylococ...  60.1    2e-11
+sp|Q56415|FOSA_SERMA Glutathione transferase FosA OS=Serratia mar...  53.5    7e-09
+sp|Q6GEA2|FOSB_STAAR Metallothiol transferase FosB OS=Staphylococ...  52.0    2e-08
+sp|A8Z522|FOSB_STAAT Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|P60864|FOSB_STAAN Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|P60863|FOSB_STAAM Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|A6QJH4|FOSB_STAAE Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|Q5HDM4|FOSB_STAAC Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|A5IVB5|FOSB_STAA9 Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|Q2FVT3|FOSB_STAA8 Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|Q2FEG3|FOSB_STAA3 Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|A6U458|FOSB_STAA2 Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|A7X5T8|FOSB_STAA1 Metallothiol transferase FosB OS=Staphylococ...  52.0    3e-08
+sp|Q98GG1|FOSX_RHILO Fosfomycin resistance protein FosX OS=Mesorh...  47.8    1e-06
+sp|Q8Y6I2|FOSX_LISMO Fosfomycin resistance protein FosX OS=Lister...  46.6    2e-06
+sp|Q92AV8|FOSX_LISIN Fosfomycin resistance protein FosX OS=Lister...  44.3    2e-05
+sp|Q9I4K6|FOSA_PSEAE Glutathione transferase FosA OS=Pseudomonas ...  40.8    4e-04
+sp|Q9KT93|LGUL_VIBCH Probable lactoylglutathione lyase OS=Vibrio ...  40.5    6e-04
+sp|P37516|YYAH_BACSU Uncharacterized protein YyaH OS=Bacillus sub...  38.1    0.003
+sp|P54557|YQJT_BACSU Uncharacterized protein YqjT OS=Bacillus sub...  37.4    0.008
+
+
+>sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=fosB PE=3 SV=1
+Length=146
+
+ Score = 151 bits (382),  Expect = 3e-47, Method: Composition-based stats.
+ Identities = 31/122 (25%), Positives = 58/122 (48%), Gaps = 15/122 (12%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++M K+ +FY      +PL +G    +    G W+    N +P+      + 
+Sbjct  5    INHMTFSVSNMDKAVSFYKHVFMEAPLVLGEKTAYFTIGGTWLAL--NLQPDI----DRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS    S++  FY   + AG   +  PG +     +  + +  DPDGH +
+Sbjct  59   EIRQSYTHIAFSI-EESQLDAFYTRLLEAGA--DILPGRKRQVETEGKSIYFRDPDGHLL  115
+
+Query  117  EV  118
+            EV
+Sbjct  116  EV  117
+
+
+>sp|A7GNY8|FOSB_BACCN Metallothiol transferase FosB OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 
+391-98) OX=315749 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 79.7 bits (195),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 29/127 (23%), Positives = 52/127 (41%), Gaps = 22/127 (17%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S AFY+  L    L  G  + +    G WV    N + +      + 
+Sbjct  6    INHICFSVSNLETSIAFYEKVLEGELLVKGRKLAYFRICGTWVAL--NEETDIP----RK  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDN--GKPGLRPHYHPDYYAAFVLDPDGH  114
+               +   H+AFS          +E  +     ++     G +     D  + +  DPDGH
+Sbjct  60   EIHQSYTHIAFSIEKED-----FERLLQRLKENDVHILQGRKRDVR-DCKSIYFTDPDGH  113
+
+Query  115  NIEVVCH  121
+              E  CH
+Sbjct  114  KFE--CH  118
+
+
+>sp|Q81W73|FOSB2_BACAN Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis OX=1392 GN=fosB2 PE=1 SV=1
+Length=139
+
+ Score = 76.3 bits (186),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 28/121 (23%), Positives = 49/121 (40%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+    N + +      + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIAL--NVEEDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|C3L6A4|FOSB2_BACAC Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=fosB2 
+PE=3 SV=1
+Length=139
+
+ Score = 76.3 bits (186),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 28/121 (23%), Positives = 49/121 (40%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+    N + +      + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIAL--NVEEDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|C3P6D6|FOSB2_BACAA Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=fosB2 PE=3 SV=1
+Length=139
+
+ Score = 76.3 bits (186),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 28/121 (23%), Positives = 49/121 (40%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+    N + +      + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIAL--NVEEDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|A4IS40|FOSB_GEOTN Metallothiol transferase FosB OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=fosB PE=3 
+SV=1
+Length=140
+
+ Score = 75.5 bits (184),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 28/121 (23%), Positives = 46/121 (38%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D++KS  FY        L  G  + +    G W+    N + +      + 
+Sbjct  6    INHLTFSVSDLEKSIHFYQNVFGAKLLVKGRNLAYFDLNGIWLAL--NVQQDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AFS     +     E     G   N  PG       D  + +  DPDGH  
+Sbjct  60   DIQHSYTHIAFSVKEE-DFDHVVEKLKELG--VNILPGRERD-ERDKRSVYFTDPDGHKF  115
+
+Query  117  E  117
+            E
+Sbjct  116  E  116
+
+
+>sp|P60865|FOSB_BACCE Metallothiol transferase FosB OS=Bacillus 
+cereus OX=1396 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 74.4 bits (181),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 29/121 (24%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++A+++K+  FY   L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVANLEKAIEFYQNILQAKLLVKGRKLAYFDLNGLWIAL------NVEESIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  T +E     E  I    + N  PG       D  + +  DPDGH  
+Sbjct  59   EIQYSYTHIAFTV-TNNEFDSLKEILIQ--NQVNILPGRERD-DRDKRSIYFTDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|B1HZM2|FOSB_LYSSC Metallothiol transferase FosB OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=fosB PE=3 SV=2
+Length=141
+
+ Score = 74.4 bits (181),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 26/121 (21%), Positives = 52/121 (43%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D++KS AFY+       L  G++  +    G W+    N + +      + 
+Sbjct  6    INHLLFSVSDLEKSIAFYENVFGAKLLVKGNSTAYFDVNGLWLAL--NVEKDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  +  E  + Y+  +    +     G +     D  + +  DPDGH  
+Sbjct  60   DIQYSYTHIAFTI-SEDEFDKMYDKLVQL--KVLILDGRQRD-ERDKKSIYFTDPDGHKF  115
+
+Query  117  E  117
+            E
+Sbjct  116  E  116
+
+
+>sp|Q49VY9|FOSB_STAS1 Metallothiol transferase FosB OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 
+/ DSM 20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=fosB 
+PE=3 SV=1
+Length=151
+
+ Score = 72.0 bits (175),  Expect = 8e-16, Method: Composition-based stats.
+ Identities = 26/122 (21%), Positives = 46/122 (38%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ ++++D+ KS  FY   L    L       +    G W+    N + +      + 
+Sbjct  5    INHVTYSVSDISKSINFYKDILKAKILVESDKTAYFILGGLWLAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +Y+         N   G       D  + +  DPDGH  
+Sbjct  59   EIRYSYTHMAFTI-EESEFEEWYQWL--NDNNVNILEGRTRDVR-DKKSIYFTDPDGHKF  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacillus 
+brevis (strain 47 / JCM 6285 / NBRC 100599) OX=358681 
+GN=fosB PE=3 SV=1
+Length=141
+
+ Score = 70.9 bits (172),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 50/122 (41%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            L+H+ F+++D++KS  FY   L   PL  G  + +    G W+    N +P+      + 
+Sbjct  7    LNHLLFSVSDLEKSFCFYRDVLHAKPLVRGRKLAYFDLNGYWLAL--NEEPDIP----RN  60
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    S    +Y      G       G       D  + + +DPDGH  
+Sbjct  61   EIAHSYTHMAFTITEES-FDEWYAHLEKHGVT--ILHGRDRS-ERDKRSIYFIDPDGHKF  116
+
+Query  117  EV  118
+            E+
+Sbjct  117  EL  118
+
+
+>sp|A7Z3A4|FOSB_BACVZ Metallothiol transferase FosB OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=fosB PE=3 SV=1
+Length=147
+
+ Score = 69.7 bits (169),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 25/121 (21%), Positives = 48/121 (40%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++KS  FY+       L  G    +    G W+    N + +      + 
+Sbjct  13   INHLLFSVSNLEKSIEFYEKVFHAQLLVKGQKTAYFDLNGLWLAL--NLEADIP----RN  66
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+   + +    +          N   G RP    D  + +  DPDGH  
+Sbjct  67   EIHKSYTHMAFTIDPK-DFDAIHHRL--KNLNVNILNG-RPRDKQDQKSIYFTDPDGHKF  122
+
+Query  117  E  117
+            E
+Sbjct  123  E  123
+
+
+>sp|B7JKN1|FOSB_BACC0 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|Q81RK2|FOSB1_BACAN Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis OX=1392 GN=fosB1 PE=3 SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|C3L5E9|FOSB1_BACAC Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=fosB1 
+PE=3 SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|C3P803|FOSB1_BACAA Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=fosB1 PE=3 SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|Q65KJ5|FOSB_BACLD Metallothiol transferase FosB OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 
+12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=fosB PE=3 SV=1
+Length=154
+
+ Score = 69.0 bits (167),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 27/122 (22%), Positives = 51/122 (42%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D+  S +FY+       L       +    G W+ +  N + +     ++ 
+Sbjct  9    INHLLFSVSDLSVSISFYEKVFDAKWLVKAEKTAYFDLNGIWLAF--NEEKDI----KRQ  62
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS         F+E  +   G  N   G + H   D  + +  DPDGH  
+Sbjct  63   EIHDSYTHIAFSIQQEDL--PFWEKKLHDLGV-NVLKGRKRH-EGDRDSIYFSDPDGHKF  118
+
+Query  117  EV  118
+            E+
+Sbjct  119  EL  120
+
+
+>sp|Q63CC5|FOSB_BACCZ Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 68.2 bits (165),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|C1ERH6|FOSB_BACC3 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain 03BB102) OX=572264 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 68.2 bits (165),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|A0RD31|FOSB_BACAH Metallothiol transferase FosB OS=Bacillus 
+thuringiensis (strain Al Hakam) OX=412694 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 68.2 bits (165),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|B9IY29|FOSB_BACCQ Metallothiol transferase FosB OS=Bacillus 
+cereus (strain Q1) OX=361100 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 67.8 bits (164),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|B7HNI5|FOSB_BACC7 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 67.8 bits (164),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|Q6HJT7|FOSB_BACHK Metallothiol transferase FosB OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=fosB 
+PE=3 SV=1
+Length=138
+
+ Score = 67.4 bits (163),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 48/121 (40%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + +++DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYIVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|Q9KBZ6|FOSB_BACHD Metallothiol transferase FosB OS=Bacillus 
+halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / 
+JCM 9153 / C-125) OX=272558 GN=fosB PE=3 SV=1
+Length=141
+
+ Score = 67.4 bits (163),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 31/124 (25%), Positives = 50/124 (40%), Gaps = 16/124 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++  +++S  FY  AL    L  G    +    G W+    N +P+      + 
+Sbjct  6    INHLLFSVKCLERSIEFYKKALGAKLLVKGRTTAYFDLQGIWLAL--NEEPDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+ G       +      AG   N   G RP    D  + +  DPDGH  
+Sbjct  60   EIHQSYTHIAFTVGEEEMEEAYERL---AGLGVNILKG-RPRDPRDRQSIYFTDPDGHKF  115
+
+Query  117  EVVC  120
+            E  C
+Sbjct  116  EFHC  119
+
+
+>sp|Q8CXK5|FOSB_OCEIH Metallothiol transferase FosB OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=fosB PE=3 SV=2
+Length=139
+
+ Score = 67.0 bits (162),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 27/121 (22%), Positives = 44/121 (36%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            L+H+ F+++++++S  FY        L  G +  +    G W+               + 
+Sbjct  6    LNHLLFSVSNLEQSIDFYQQVFDAKLLVKGRSTAYFDLNGIWLALNEE------KHIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               E   H AFS    SE+    +   A     N   G       D  + +  DPDGH  
+Sbjct  60   EINESYTHTAFSI-DESELESAIQHLKAL--NVNILEGRER-AEQDKQSIYFTDPDGHKF  115
+
+Query  117  E  117
+            E
+Sbjct  116  E  116
+
+
+>sp|O31817|FOSB_BACSU Metallothiol transferase FosB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=fosB PE=1 SV=1
+Length=144
+
+ Score = 67.0 bits (162),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 43/123 (35%), Gaps = 20/123 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++ +  S  FY        L  G    +    G W+    N +P+      + 
+Sbjct  6    INHLLFSVSHLDTSIDFYQKVFGAKLLVKGRTTAYFDMNGIWLAL--NEEPDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRS--EVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGH  114
+                   H+AF+       E+    +         N  PG       D  + +  DPDGH
+Sbjct  60   DIKLSYTHIAFTIEDHEFEEMSAKLKRL-----HVNILPGRERD-ERDRKSIYFTDPDGH  113
+
+Query  115  NIE  117
+              E
+Sbjct  114  KFE  116
+
+
+>sp|A9VRT9|FOSB_BACMK Metallothiol transferase FosB OS=Bacillus 
+mycoides (strain KBAB4) OX=315730 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 66.6 bits (161),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 23/121 (19%), Positives = 45/121 (37%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHLCFSVSNLENSITFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R            +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHLAFSV-EQKDFERLLHRLEE--NNVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|Q739M9|FOSB_BACC1 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ATCC 10987 / NRS 248) OX=222523 GN=fosB PE=1 
+SV=1
+Length=138
+
+ Score = 66.6 bits (161),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 46/121 (38%), Gaps = 16/121 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G WV           I   + 
+Sbjct  5    INHLCFSVSNLEDSIEFYEKVLEGELLVRGRKLAYFNICGVWVALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +     +         +   G       D  + + +DPDGH  
+Sbjct  59   EIYQSYTHIAFSV-EQKDFESLLQRLEE--NDVHILKGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  E  117
+            E
+Sbjct  115  E  115
+
+
+>sp|B7HJF3|FOSB_BACC4 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 65.5 bits (158),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 46/123 (37%), Gaps = 20/123 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THISRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDN--GKPGLRPHYHPDYYAAFVLDPDGH  114
+               +   H+AFS          ++  I     ++     G       D  + + +DPDGH
+Sbjct  59   EIHQSYTHIAFSVEQED-----FKCLIQRLEENDVHILQGRERDVR-DCESIYFVDPDGH  112
+
+Query  115  NIE  117
+              E
+Sbjct  113  KFE  115
+
+
+>sp|B7ITG3|FOSB_BACC2 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 65.1 bits (157),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 46/123 (37%), Gaps = 20/123 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDN--GKPGLRPHYHPDYYAAFVLDPDGH  114
+               +   H+AFS          +E  I     ++     G       D  + + +DPDGH
+Sbjct  59   EIHQSYTHIAFSVEQED-----FEYLIQRLEENDVHILKGRERDVR-DCESIYFVDPDGH  112
+
+Query  115  NIE  117
+              E
+Sbjct  113  KFE  115
+
+
+>sp|P59291|FOSB_STAES Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 
+GN=fosB PE=3 SV=1
+Length=142
+
+ Score = 65.1 bits (157),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 25/122 (20%), Positives = 44/122 (36%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F+++D+  S  FY   L    L  G    +      W+   +           + 
+Sbjct  6    VNHICFSVSDLNTSIQFYKDILHGDLLVSGRTTAYLTIGHTWIALNQE------KNIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AFS     +  ++ +       + N   G       D  + +  DPDGH I
+Sbjct  60   EISHSYTHIAFSIDEE-DFQQWIQWLKE--NQVNILKGRPRDIK-DKKSIYFTDPDGHKI  115
+
+Query  117  EV  118
+            E+
+Sbjct  116  EL  117
+
+
+>sp|Q81EF2|FOSB_BACCR Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 
+/ NCIMB 9373 / NRRL B-3711) OX=226900 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 64.3 bits (155),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 46/123 (37%), Gaps = 20/123 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDN--GKPGLRPHYHPDYYAAFVLDPDGH  114
+               +   H+AFS          ++  I     ++     G       D  + + +DPDGH
+Sbjct  59   EVHQSYTHIAFSVEQED-----FKCLIQRLEENDVHILQGRERDVR-DCESIYFVDPDGH  112
+
+Query  115  NIE  117
+              E
+Sbjct  113  KFE  115
+
+
+>sp|Q03377|FOSB_STAEP Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis OX=1282 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 61.6 bits (148),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 23/122 (19%), Positives = 44/122 (36%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L  G    +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVEGETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYIWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q5HKJ6|FOSB_STAEQ Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=fosB 
+PE=3 SV=1
+Length=142
+
+ Score = 61.3 bits (147),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 25/122 (20%), Positives = 43/122 (35%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F+++D+  S  FY   L    L  G    +      W+   +           + 
+Sbjct  6    VNHICFSVSDLNTSIQFYKDILHGDLLVSGRTTAYLTIGHTWIALNQE------KNIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   HVAFS     +  ++ +       + N   G       D  + +  D DGH I
+Sbjct  60   EISHSYTHVAFSIDEE-DFQQWIQWLKE--NQVNILKGRPRDIK-DKKSIYFTDLDGHKI  115
+
+Query  117  EV  118
+            E+
+Sbjct  116  EL  117
+
+
+>sp|Q4L2Y9|FOSB_STAHJ Metallothiol transferase FosB OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 60.1 bits (144),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 22/122 (18%), Positives = 43/122 (35%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L       +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVESETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYNWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q55317|FOSB_STAHA Metallothiol transferase FosB OS=Staphylococcus 
+haemolyticus OX=1283 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 60.1 bits (144),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 22/122 (18%), Positives = 43/122 (35%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L       +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVESETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYNWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q56415|FOSA_SERMA Glutathione transferase FosA OS=Serratia 
+marcescens OX=615 GN=fosA PE=1 SV=1
+Length=141
+
+ Score = 53.5 bits (127),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 45/123 (37%), Gaps = 20/123 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLE--  60
+            L+H+   ++D++KS  F+   L  L +      G ++  G     + W+        +  
+Sbjct  5    LNHLTLAVSDLQKSVTFW-HELLGLTLHARWNTGAYLTCG-----DLWVCLSYDEARQYV  58
+
+Query  61   -----GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHN  115
+                    H AF+     +     +    AG        +      +  + + LDPDGH 
+Sbjct  59   PPQESDYTHYAFTVAEE-DFEPLSQRLEQAGVT------IWKQNKSEGASFYFLDPDGHK  111
+
+Query  116  IEV  118
+            +E+
+Sbjct  112  LEL  114
+
+
+>sp|Q6GEA2|FOSB_STAAR Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFKLAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|A8Z522|FOSB_STAAT Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|P60864|FOSB_STAAN Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=fosB PE=1 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|P60863|FOSB_STAAM Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=fosB 
+PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|A6QJH4|FOSB_STAAE Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q5HDM4|FOSB_STAAC Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|A5IVB5|FOSB_STAA9 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q2FVT3|FOSB_STAA8 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q2FEG3|FOSB_STAA3 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|A6U458|FOSB_STAA2 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|A7X5T8|FOSB_STAA1 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=fosB 
+PE=3 SV=1
+Length=139
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/122 (20%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+    N + +      + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIAL--NEEKDIP----RN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRL--KDNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EV  118
+            E+
+Sbjct  115  EL  116
+
+
+>sp|Q98GG1|FOSX_RHILO Fosfomycin resistance protein FosX OS=Mesorhizobium 
+japonicum (strain LMG 29417 / CECT 9101 / MAFF 303099) 
+OX=266835 GN=fosX PE=1 SV=1
+Length=139
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 22/119 (18%), Positives = 42/119 (35%), Gaps = 7/119 (6%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL-SPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKL--  59
+            L H+ F + D+++     +    +        E             + W+   +G KL  
+Sbjct  5    LSHMTFIVRDLERMTRILEGVFDAREVYASDTEQFSLSREKFFLIGDIWVAIMQGEKLAE  64
+
+Query  60   EGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+                H+AF     ++  R+ E     G   + +P  RP    +  + +  D D H  E+
+Sbjct  65   RSYNHIAFKI-DDADFDRYAERVGKLG--LDMRPP-RPRVEGEGRSIYFYDDDNHMFEL  119
+
+
+>sp|Q8Y6I2|FOSX_LISMO Fosfomycin resistance protein FosX OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=fosX PE=1 SV=1
+Length=133
+
+ Score = 46.6 bits (109),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 28/122 (23%), Positives = 42/122 (34%), Gaps = 13/122 (11%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGK----PEFWIGAQKGAK  58
+            L HI   + D+ K+  F     +          GD        K       WI   +G  
+Sbjct  5    LSHITLIVKDLNKTTTFLREIFNA---EEIYSSGDQTFSLSKEKFFLIAGLWICIMEGDS  61
+
+Query  59   LE--GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+            L+     H+AF   +  EV  + E   + G     KP  RP    +  + +  D D H  
+Sbjct  62   LQEQTYNHIAFRIQSE-EVDEYIERIKSLGV--EIKP-ERPRVEGEGRSIYFYDFDNHLF  117
+
+Query  117  EV  118
+            E+
+Sbjct  118  EL  119
+
+
+>sp|Q92AV8|FOSX_LISIN Fosfomycin resistance protein FosX OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) 
+OX=272626 GN=fosX PE=3 SV=1
+Length=133
+
+ Score = 44.3 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 41/121 (34%), Gaps = 11/121 (9%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRN---GKPEFWIGAQKGAKL  59
+            L HI   + D+ K+  F +       I  + +  D     +         WI   +G  L
+Sbjct  5    LSHITLIVKDLNKTTTFLEEIFDAEEIYSSGD--DTFSLSKEKFFLIAGLWICIMEGESL  62
+
+Query  60   E--GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIE  117
+            +     H+AF      E+  + E   + G     KP        +  + +  D D H  E
+Sbjct  63   QERTYNHIAFQIQAE-EMDEYIERIKSLG--MEIKPERSR-VKGEGRSVYFYDYDNHLFE  118
+
+Query  118  V  118
+            +
+Sbjct  119  L  119
+
+
+>sp|Q9I4K6|FOSA_PSEAE Glutathione transferase FosA OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / 
+JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=fosA 
+PE=1 SV=1
+Length=135
+
+ Score = 40.8 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 29/121 (24%), Positives = 42/121 (35%), Gaps = 21/121 (17%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL-----SPLGIGHAMEFGD-WVGYGRNGKPEFWIGAQKG  56
+            L+H+   +AD+  S AFY   L     +    G  +E G  W+   R          Q G
+Sbjct  5    LNHLTLAVADLPASIAFYRDLLGFRLEARWDQGAYLELGSLWLCLSRE--------PQYG  56
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H AF            +  + A G    K         +  + + LDPDGH +
+Sbjct  57   GPAADYTHYAFGIAAADFARFAAQ--LRAHGVREWKQNR-----SEGDSFYFLDPDGHRL  109
+
+Query  117  E  117
+            E
+Sbjct  110  E  110
+
+
+>sp|Q9KT93|LGUL_VIBCH Probable lactoylglutathione lyase OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=gloA PE=3 SV=2
+Length=138
+
+ Score = 40.5 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 51/130 (39%), Gaps = 17/130 (13%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEFG---DWVGYGRNGKPEF------  49
+            H + H    + D+ KS  FY   +  S L      E+     ++GYG   +         
+Sbjct  4    HRILHTMLRVGDLDKSIEFYTQVMGMSLLRKNENTEYKYTLAFLGYGDESQGAVIELTYN  63
+
+Query  50   WIGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVL  109
+            W  A    K     H+A       ++    +   AAGG    +PG  P      + AFV 
+Sbjct  64   WGVADY-EKGNAYGHIAIGV---DDIYATCDTIKAAGGIVTREPG--PVKGGTTHIAFVK  117
+
+Query  110  DPDGHNIEVV  119
+            DPDG+ IE++
+Sbjct  118  DPDGYMIELI  127
+
+
+>sp|P37516|YYAH_BACSU Uncharacterized protein YyaH OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yyaH PE=4 SV=1
+Length=126
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 31/135 (23%), Positives = 55/135 (41%), Gaps = 32/135 (24%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEF---WIGAQKGAKL  59
+            ++H    + D+++ ++FY++  +    G A +         N K +F   +I    GA+L
+Sbjct  3    IEHTAVWVNDLERMKSFYESYFN----GEAND------LYHNEKKDFKSYFITFDSGARL  52
+
+Query  60   E----------------GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDY  103
+            E                G  H+AFS G+R +V    +   A G      P         Y
+Sbjct  53   EIMKKGNVTDPPSQTMTGWAHIAFSVGSREKVDELTDRLKADGFAVVNGP---RTTGDGY  109
+
+Query  104  YAAFVLDPDGHNIEV  118
+            Y + + D +G+ IE+
+Sbjct  110  YESVIEDDEGNLIEI  124
+
+
+>sp|P54557|YQJT_BACSU Uncharacterized protein YqjT OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqjT PE=4 SV=1
+Length=128
+
+ Score = 37.4 bits (85),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 30/125 (24%), Positives = 53/125 (42%), Gaps = 9/125 (7%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRN-------GKPEFWIGAQK  55
+            + HI   ++D++ SR F+   L  LG     ++   + + ++          E ++  + 
+Sbjct  1    MHHIELYVSDLEASRRFWGWFLKELGYKEYQKWSSGISWKKDRFYLVIVQAKEPFLEPEY  60
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDY-YAAFVLDPDGH  114
+                 G+ H+AF A ++ +V +  E   A G R        P    D  YA F  DPD  
+Sbjct  61   HRCRVGLNHLAFHAESKLQVDQMTEKLTAKGYRV-LYRDRHPFAGGDGHYAVFCEDPDRI  119
+
+Query  115  NIEVV  119
+             +E+V
+Sbjct  120  KVELV  124
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.132    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5001433932
+Results from round 3
+
+
+Query= 4z04_A
+
+Length=124
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus cl...  130     7e-39
+sp|P60865|FOSB_BACCE Metallothiol transferase FosB OS=Bacillus ce...  127     6e-38
+sp|A7GNY8|FOSB_BACCN Metallothiol transferase FosB OS=Bacillus cy...  127     1e-37
+sp|A4IS40|FOSB_GEOTN Metallothiol transferase FosB OS=Geobacillus...  126     3e-37
+sp|Q81W73|FOSB2_BACAN Metallothiol transferase FosB 2 OS=Bacillus...  125     4e-37
+sp|C3L6A4|FOSB2_BACAC Metallothiol transferase FosB 2 OS=Bacillus...  125     4e-37
+sp|C3P6D6|FOSB2_BACAA Metallothiol transferase FosB 2 OS=Bacillus...  125     4e-37
+sp|P59291|FOSB_STAES Metallothiol transferase FosB OS=Staphylococ...  124     2e-36
+sp|B9IY29|FOSB_BACCQ Metallothiol transferase FosB OS=Bacillus ce...  123     3e-36
+sp|B7HNI5|FOSB_BACC7 Metallothiol transferase FosB OS=Bacillus ce...  123     3e-36
+sp|Q63CC5|FOSB_BACCZ Metallothiol transferase FosB OS=Bacillus ce...  122     6e-36
+sp|C1ERH6|FOSB_BACC3 Metallothiol transferase FosB OS=Bacillus ce...  122     6e-36
+sp|A0RD31|FOSB_BACAH Metallothiol transferase FosB OS=Bacillus th...  122     6e-36
+sp|Q9KBZ6|FOSB_BACHD Metallothiol transferase FosB OS=Bacillus ha...  122     7e-36
+sp|B7ITG3|FOSB_BACC2 Metallothiol transferase FosB OS=Bacillus ce...  122     1e-35
+sp|Q81EF2|FOSB_BACCR Metallothiol transferase FosB OS=Bacillus ce...  122     1e-35
+sp|A7Z3A4|FOSB_BACVZ Metallothiol transferase FosB OS=Bacillus ve...  122     2e-35
+sp|B1HZM2|FOSB_LYSSC Metallothiol transferase FosB OS=Lysinibacil...  121     2e-35
+sp|B7HJF3|FOSB_BACC4 Metallothiol transferase FosB OS=Bacillus ce...  121     2e-35
+sp|B7JKN1|FOSB_BACC0 Metallothiol transferase FosB OS=Bacillus ce...  121     2e-35
+sp|Q81RK2|FOSB1_BACAN Metallothiol transferase FosB 1 OS=Bacillus...  121     2e-35
+sp|C3L5E9|FOSB1_BACAC Metallothiol transferase FosB 1 OS=Bacillus...  121     2e-35
+sp|C3P803|FOSB1_BACAA Metallothiol transferase FosB 1 OS=Bacillus...  121     2e-35
+sp|Q6HJT7|FOSB_BACHK Metallothiol transferase FosB OS=Bacillus th...  121     3e-35
+sp|Q49VY9|FOSB_STAS1 Metallothiol transferase FosB OS=Staphylococ...  121     4e-35
+sp|Q739M9|FOSB_BACC1 Metallothiol transferase FosB OS=Bacillus ce...  120     6e-35
+sp|Q8CXK5|FOSB_OCEIH Metallothiol transferase FosB OS=Oceanobacil...  119     1e-34
+sp|Q5HKJ6|FOSB_STAEQ Metallothiol transferase FosB OS=Staphylococ...  119     1e-34
+sp|A9VRT9|FOSB_BACMK Metallothiol transferase FosB OS=Bacillus my...  119     2e-34
+sp|O31817|FOSB_BACSU Metallothiol transferase FosB OS=Bacillus su...  117     2e-33
+sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacill...  116     2e-33
+sp|Q03377|FOSB_STAEP Metallothiol transferase FosB OS=Staphylococ...  116     3e-33
+sp|Q4L2Y9|FOSB_STAHJ Metallothiol transferase FosB OS=Staphylococ...  114     1e-32
+sp|Q55317|FOSB_STAHA Metallothiol transferase FosB OS=Staphylococ...  114     1e-32
+sp|Q65KJ5|FOSB_BACLD Metallothiol transferase FosB OS=Bacillus li...  110     6e-31
+sp|Q98GG1|FOSX_RHILO Fosfomycin resistance protein FosX OS=Mesorh...  109     2e-30
+sp|Q56415|FOSA_SERMA Glutathione transferase FosA OS=Serratia mar...  108     3e-30
+sp|Q6GEA2|FOSB_STAAR Metallothiol transferase FosB OS=Staphylococ...  108     4e-30
+sp|A8Z522|FOSB_STAAT Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|P60864|FOSB_STAAN Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|P60863|FOSB_STAAM Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|A6QJH4|FOSB_STAAE Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|Q5HDM4|FOSB_STAAC Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|A5IVB5|FOSB_STAA9 Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|Q2FVT3|FOSB_STAA8 Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|Q2FEG3|FOSB_STAA3 Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|A6U458|FOSB_STAA2 Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|A7X5T8|FOSB_STAA1 Metallothiol transferase FosB OS=Staphylococ...  107     6e-30
+sp|Q8Y6I2|FOSX_LISMO Fosfomycin resistance protein FosX OS=Lister...  103     2e-28
+sp|Q92AV8|FOSX_LISIN Fosfomycin resistance protein FosX OS=Lister...  101     1e-27
+sp|Q9KT93|LGUL_VIBCH Probable lactoylglutathione lyase OS=Vibrio ...  100     4e-27
+sp|Q9I4K6|FOSA_PSEAE Glutathione transferase FosA OS=Pseudomonas ...  90.1    5e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|P46235|LGUL_VIBPA Probable lactoylglutathione lyase OS=Vibrio ...  83.6    2e-20
+sp|P0A1Q2|LGUL_SALTY Lactoylglutathione lyase OS=Salmonella typhi...  79.7    5e-19
+sp|P0A1Q3|LGUL_SALTI Lactoylglutathione lyase OS=Salmonella typhi...  79.7    5e-19
+sp|P0AC83|LGUL_SHIFL Lactoylglutathione lyase OS=Shigella flexner...  78.6    1e-18
+sp|P0AC81|LGUL_ECOLI Lactoylglutathione lyase OS=Escherichia coli...  78.6    1e-18
+sp|P0AC82|LGUL_ECO57 Lactoylglutathione lyase OS=Escherichia coli...  78.6    1e-18
+sp|P44638|LGUL_HAEIN Lactoylglutathione lyase OS=Haemophilus infl...  74.7    5e-17
+sp|P0A0T3|LGUL_NEIMB Lactoylglutathione lyase OS=Neisseria mening...  69.3    6e-15
+sp|P0A0T2|LGUL_NEIMA Lactoylglutathione lyase OS=Neisseria mening...  69.3    6e-15
+sp|Q55595|LGUL_SYNY3 Probable lactoylglutathione lyase OS=Synecho...  67.4    3e-14
+sp|Q39366|LGUL_BRAOG Putative lactoylglutathione lyase OS=Brassic...  62.8    1e-11
+sp|O65398|GLX1_ARATH Lactoylglutathione lyase GLX1 OS=Arabidopsis...  62.8    2e-11
+sp|Q8W593|LGUC_ARATH Probable lactoylglutathione lyase, chloropla...  62.0    3e-11
+sp|P23205|Y2024_PSEAE Uncharacterized protein PA2024 OS=Pseudomon...  50.5    1e-07
+sp|Q948T6|LGUL_ORYSJ Lactoylglutathione lyase OS=Oryza sativa sub...  51.6    2e-07
+sp|Q9D8I3|GLOD5_MOUSE Glyoxalase domain-containing protein 5 OS=M...  49.7    2e-07
+sp|Q8GR45|BPHC_BACPJ Manganese-dependent 2,3-dihydroxybiphenyl 1,...  50.1    6e-07
+sp|Q502D1|GLOD5_DANRE Glyoxalase domain-containing protein 5 OS=D...  48.1    1e-06
+sp|P0C5H0|GLOD5_CANLF Glyoxalase domain-containing protein 5 OS=C...  47.8    1e-06
+sp|P45945|YQCK_BACSU Uncharacterized protein YqcK OS=Bacillus sub...  47.4    2e-06
+sp|Q09751|LGUL_SCHPO Lactoylglutathione lyase OS=Schizosaccharomy...  46.6    8e-06
+sp|A6NK44|GLOD5_HUMAN Glyoxalase domain-containing protein 5 OS=H...  45.5    1e-05
+sp|Q4KLB0|GLOD5_XENLA Glyoxalase domain-containing protein 5 OS=X...  45.5    1e-05
+sp|Q28CR0|GLOD5_XENTR Glyoxalase domain-containing protein 5 OS=X...  45.5    1e-05
+sp|Q8ZM36|VIR17_SALTY Virulence protein STM3117 OS=Salmonella typ...  44.7    2e-05
+sp|P54557|YQJT_BACSU Uncharacterized protein YqjT OS=Bacillus sub...  43.9    3e-05
+sp|P47233|BPHC3_RHOGO Biphenyl-2,3-diol 1,2-dioxygenase 3 OS=Rhod...  44.3    4e-05
+sp|P37516|YYAH_BACSU Uncharacterized protein YyaH OS=Bacillus sub...  43.1    5e-05
+sp|P27887|XYLE_PSEAI Metapyrocatechase OS=Pseudomonas aeruginosa ...  42.0    3e-04
+sp|Q9HU72|LGUL_PSEAE Lactoylglutathione lyase OS=Pseudomonas aeru...  40.8    6e-04
+sp|A0A0U2WCB2|RDO1_USTMD Glyoxalase domain-containing protein RDO...  40.8    6e-04
+sp|P17262|DMPB_PSEUF Metapyrocatechase OS=Pseudomonas sp. (strain...  40.8    0.001
+sp|P45871|YWKD_BACSU Uncharacterized protein YwkD OS=Bacillus sub...  39.3    0.001
+sp|P39586|YWBC_BACSU Uncharacterized protein YwbC OS=Bacillus sub...  39.3    0.002
+sp|P06622|XYLE1_PSEPU Metapyrocatechase OS=Pseudomonas putida OX=...  39.7    0.002
+sp|Q04285|XYLE2_PSEPU Metapyrocatechase OS=Pseudomonas putida OX=...  39.3    0.003
+sp|P47232|BPHC2_RHOGO Biphenyl-2,3-diol 1,2-dioxygenase 2 OS=Rhod...  38.5    0.005
+sp|Q2KIZ3|MCEE_BOVIN Methylmalonyl-CoA epimerase, mitochondrial O...  38.1    0.005
+sp|P50107|LGUL_YEAST Lactoylglutathione lyase OS=Saccharomyces ce...  38.1    0.009
+
+
+>sp|Q5WE80|FOSB_BACSK Metallothiol transferase FosB OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=fosB PE=3 SV=1
+Length=146
+
+ Score = 130 bits (327),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 31/123 (25%), Positives = 58/123 (47%), Gaps = 15/123 (12%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAAL--SPLGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++M K+ +FY      +PL +G    +    G W+    N +P+      + 
+Sbjct  5    INHMTFSVSNMDKAVSFYKHVFMEAPLVLGEKTAYFTIGGTWLAL--NLQPDI----DRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS    S++  FY   + AG   +  PG +     +  + +  DPDGH +
+Sbjct  59   EIRQSYTHIAFSI-EESQLDAFYTRLLEAGA--DILPGRKRQVETEGKSIYFRDPDGHLL  115
+
+Query  117  EVV  119
+            EV 
+Sbjct  116  EVH  118
+
+
+>sp|P60865|FOSB_BACCE Metallothiol transferase FosB OS=Bacillus 
+cereus OX=1396 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 127 bits (320),  Expect = 6e-38, Method: Composition-based stats.
+ Identities = 29/123 (24%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++A+++K+  FY   L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVANLEKAIEFYQNILQAKLLVKGRKLAYFDLNGLWIALNVEE------SIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  T +E     E  I    + N  PG       D  + +  DPDGH  
+Sbjct  59   EIQYSYTHIAFTV-TNNEFDSLKEILIQ--NQVNILPGRERDDR-DKRSIYFTDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|A7GNY8|FOSB_BACCN Metallothiol transferase FosB OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 
+391-98) OX=315749 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 127 bits (318),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 28/125 (22%), Positives = 48/125 (38%), Gaps = 18/125 (14%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S AFY+  L    L  G  + +    G WV               + 
+Sbjct  6    INHICFSVSNLETSIAFYEKVLEGELLVKGRKLAYFRICGTWVALNEETD------IPRK  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS     +  R  +         +   G +     D  + +  DPDGH  
+Sbjct  60   EIHQSYTHIAFSIEKE-DFERLLQRLKE--NDVHILQGRKRDVR-DCKSIYFTDPDGHKF  115
+
+Query  117  EVVCH  121
+            E  CH
+Sbjct  116  E--CH  118
+
+
+>sp|A4IS40|FOSB_GEOTN Metallothiol transferase FosB OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=fosB PE=3 
+SV=1
+Length=140
+
+ Score = 126 bits (316),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 28/123 (23%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D++KS  FY        L  G  + +    G W+    N + +      + 
+Sbjct  6    INHLTFSVSDLEKSIHFYQNVFGAKLLVKGRNLAYFDLNGIWLAL--NVQQDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AFS     +     E     G   N  PG       D  + +  DPDGH  
+Sbjct  60   DIQHSYTHIAFSVKEE-DFDHVVEKLKELG--VNILPGRERD-ERDKRSVYFTDPDGHKF  115
+
+Query  117  EVV  119
+            E  
+Sbjct  116  EFH  118
+
+
+>sp|Q81W73|FOSB2_BACAN Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis OX=1392 GN=fosB2 PE=1 SV=1
+Length=139
+
+ Score = 125 bits (315),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIALNVEED------IPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|C3L6A4|FOSB2_BACAC Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=fosB2 
+PE=3 SV=1
+Length=139
+
+ Score = 125 bits (315),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIALNVEED------IPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|C3P6D6|FOSB2_BACAA Metallothiol transferase FosB 2 OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=fosB2 PE=3 SV=1
+Length=139
+
+ Score = 125 bits (315),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++KS  FY   L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLEKSIEFYQKILQAKLLVKGRKLAYFDLNGLWIALNVEED------IPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+    + +    E  I      N  PG       D  + +  DPDGH  
+Sbjct  59   EIKQSYTHMAFTVTNEA-LDHLKEVLIQ--NDVNILPGRERD-ERDQRSLYFTDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|P59291|FOSB_STAES Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 
+GN=fosB PE=3 SV=1
+Length=142
+
+ Score = 124 bits (310),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F+++D+  S  FY   L    L  G    +      W+   +           + 
+Sbjct  6    VNHICFSVSDLNTSIQFYKDILHGDLLVSGRTTAYLTIGHTWIALNQE------KNIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AFS     +  ++ +       + N   G       D  + +  DPDGH I
+Sbjct  60   EISHSYTHIAFSIDEE-DFQQWIQWLKE--NQVNILKGRPRDIK-DKKSIYFTDPDGHKI  115
+
+Query  117  EVV  119
+            E+ 
+Sbjct  116  ELH  118
+
+
+>sp|B9IY29|FOSB_BACCQ Metallothiol transferase FosB OS=Bacillus 
+cereus (strain Q1) OX=361100 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 123 bits (309),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|B7HNI5|FOSB_BACC7 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 123 bits (309),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q63CC5|FOSB_BACCZ Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 122 bits (307),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|C1ERH6|FOSB_BACC3 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain 03BB102) OX=572264 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 122 bits (307),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|A0RD31|FOSB_BACAH Metallothiol transferase FosB OS=Bacillus 
+thuringiensis (strain Al Hakam) OX=412694 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 122 bits (307),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q9KBZ6|FOSB_BACHD Metallothiol transferase FosB OS=Bacillus 
+halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / 
+JCM 9153 / C-125) OX=272558 GN=fosB PE=3 SV=1
+Length=141
+
+ Score = 122 bits (307),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 29/124 (23%), Positives = 48/124 (39%), Gaps = 16/124 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++  +++S  FY  AL    L  G    +    G W+    N +P+      + 
+Sbjct  6    INHLLFSVKCLERSIEFYKKALGAKLLVKGRTTAYFDLQGIWLAL--NEEPDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+ G       +      AG   N   G       D  + +  DPDGH  
+Sbjct  60   EIHQSYTHIAFTVGEEEMEEAYERL---AGLGVNILKGRPRD-PRDRQSIYFTDPDGHKF  115
+
+Query  117  EVVC  120
+            E  C
+Sbjct  116  EFHC  119
+
+
+>sp|B7ITG3|FOSB_BACC2 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 122 bits (305),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS     +     +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSVEQE-DFEYLIQRLEE--NDVHILKGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q81EF2|FOSB_BACCR Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 
+/ NCIMB 9373 / NRRL B-3711) OX=226900 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 122 bits (305),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS     +     +         +   G       D  + + +DPDGH  
+Sbjct  59   EVHQSYTHIAFSVEQE-DFKCLIQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|A7Z3A4|FOSB_BACVZ Metallothiol transferase FosB OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=fosB PE=3 SV=1
+Length=147
+
+ Score = 122 bits (305),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++KS  FY+       L  G    +    G W+    N + +      + 
+Sbjct  13   INHLLFSVSNLEKSIEFYEKVFHAQLLVKGQKTAYFDLNGLWLAL--NLEADIP----RN  66
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AF+   + +    +          N   G       D  + +  DPDGH  
+Sbjct  67   EIHKSYTHMAFTIDPK-DFDAIHHRLKNL--NVNILNGRPRD-KQDQKSIYFTDPDGHKF  122
+
+Query  117  EVV  119
+            E  
+Sbjct  123  EFH  125
+
+
+>sp|B1HZM2|FOSB_LYSSC Metallothiol transferase FosB OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=fosB PE=3 SV=2
+Length=141
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 26/123 (21%), Positives = 52/123 (42%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D++KS AFY+       L  G++  +    G W+    N + +      + 
+Sbjct  6    INHLLFSVSDLEKSIAFYENVFGAKLLVKGNSTAYFDVNGLWLAL--NVEKDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  +  E  + Y+  +    +     G +     D  + +  DPDGH  
+Sbjct  60   DIQYSYTHIAFTI-SEDEFDKMYDKLVQL--KVLILDGRQRD-ERDKKSIYFTDPDGHKF  115
+
+Query  117  EVV  119
+            E  
+Sbjct  116  EFH  118
+
+
+>sp|B7HJF3|FOSB_BACC4 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHICFSVSNLENSIMFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THISRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS     +     +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSVEQE-DFKCLIQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|B7JKN1|FOSB_BACC0 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q81RK2|FOSB1_BACAN Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis OX=1392 GN=fosB1 PE=3 SV=1
+Length=138
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|C3L5E9|FOSB1_BACAC Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=fosB1 
+PE=3 SV=1
+Length=138
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|C3P803|FOSB1_BACAA Metallothiol transferase FosB 1 OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=fosB1 PE=3 SV=1
+Length=138
+
+ Score = 121 bits (304),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 47/123 (38%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVRGRKLAYFNICGVWIALNEE------IHIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q6HJT7|FOSB_BACHK Metallothiol transferase FosB OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=fosB 
+PE=3 SV=1
+Length=138
+
+ Score = 121 bits (303),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 48/123 (39%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+           I   + 
+Sbjct  5    INHLCFSVSNLEDSITFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R  +         +   G       D  + +++DPDGH  
+Sbjct  59   EIHQSYTHIAFSV-EQKDFERLLQRLEE--NDVHILQGRERDVR-DCESIYIVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q49VY9|FOSB_STAS1 Metallothiol transferase FosB OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 
+/ DSM 20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=fosB 
+PE=3 SV=1
+Length=151
+
+ Score = 121 bits (303),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 43/123 (35%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ ++++D+ KS  FY   L    L       +    G W+               + 
+Sbjct  5    INHVTYSVSDISKSINFYKDILKAKILVESDKTAYFILGGLWLALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +Y+         N   G       D  + +  DPDGH  
+Sbjct  59   EIRYSYTHMAFTI-EESEFEEWYQWL--NDNNVNILEGRTRDVR-DKKSIYFTDPDGHKF  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q739M9|FOSB_BACC1 Metallothiol transferase FosB OS=Bacillus 
+cereus (strain ATCC 10987 / NRS 248) OX=222523 GN=fosB PE=1 
+SV=1
+Length=138
+
+ Score = 120 bits (301),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 46/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G WV           I   + 
+Sbjct  5    INHLCFSVSNLEDSIEFYEKVLEGELLVRGRKLAYFNICGVWVALNEE------IHIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +     +         +   G       D  + + +DPDGH  
+Sbjct  59   EIYQSYTHIAFSV-EQKDFESLLQRLEE--NDVHILKGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|Q8CXK5|FOSB_OCEIH Metallothiol transferase FosB OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=fosB PE=3 SV=2
+Length=139
+
+ Score = 119 bits (299),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            L+H+ F+++++++S  FY        L  G +  +    G W+               + 
+Sbjct  6    LNHLLFSVSNLEQSIDFYQQVFDAKLLVKGRSTAYFDLNGIWLALNEE------KHIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               E   H AFS    SE+    +   A     N   G       D  + +  DPDGH  
+Sbjct  60   EINESYTHTAFSI-DESELESAIQHLKAL--NVNILEGRER-AEQDKQSIYFTDPDGHKF  115
+
+Query  117  EVV  119
+            E  
+Sbjct  116  EFH  118
+
+
+>sp|Q5HKJ6|FOSB_STAEQ Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=fosB 
+PE=3 SV=1
+Length=142
+
+ Score = 119 bits (298),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 43/123 (35%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F+++D+  S  FY   L    L  G    +      W+   +           + 
+Sbjct  6    VNHICFSVSDLNTSIQFYKDILHGDLLVSGRTTAYLTIGHTWIALNQE------KNIPRN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   HVAFS     +  ++ +       + N   G       D  + +  D DGH I
+Sbjct  60   EISHSYTHVAFSIDEE-DFQQWIQWLKE--NQVNILKGRPRDIK-DKKSIYFTDLDGHKI  115
+
+Query  117  EVV  119
+            E+ 
+Sbjct  116  ELH  118
+
+
+>sp|A9VRT9|FOSB_BACMK Metallothiol transferase FosB OS=Bacillus 
+mycoides (strain KBAB4) OX=315730 GN=fosB PE=3 SV=1
+Length=138
+
+ Score = 119 bits (298),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 45/123 (37%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F++++++ S  FY+  L    L  G  + +    G W+               + 
+Sbjct  5    INHLCFSVSNLENSITFYEKVLEGELLVKGRKLAYFNICGVWIALNEE------THIPRK  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS   + +  R            +   G       D  + + +DPDGH  
+Sbjct  59   EIHQSYTHLAFSV-EQKDFERLLHRLEE--NNVHILQGRERDVR-DCESIYFVDPDGHKF  114
+
+Query  117  EVV  119
+            E  
+Sbjct  115  EFH  117
+
+
+>sp|O31817|FOSB_BACSU Metallothiol transferase FosB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=fosB PE=1 SV=1
+Length=144
+
+ Score = 117 bits (292),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 41/123 (33%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++ +  S  FY        L  G    +    G W+    N +P+      + 
+Sbjct  6    INHLLFSVSHLDTSIDFYQKVFGAKLLVKGRTTAYFDMNGIWLAL--NEEPDIP----RN  59
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+     E               N  PG       D  + +  DPDGH  
+Sbjct  60   DIKLSYTHIAFTI-EDHEFEEMSAKLKRLH--VNILPGRERD-ERDRKSIYFTDPDGHKF  115
+
+Query  117  EVV  119
+            E  
+Sbjct  116  EFH  118
+
+
+>sp|C0ZJ12|FOSB_BREBN Metallothiol transferase FosB OS=Brevibacillus 
+brevis (strain 47 / JCM 6285 / NBRC 100599) OX=358681 
+GN=fosB PE=3 SV=1
+Length=141
+
+ Score = 116 bits (291),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 29/123 (24%), Positives = 49/123 (40%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            L+H+ F+++D++KS  FY   L    L  G  + +    G W+    N +P+      + 
+Sbjct  7    LNHLLFSVSDLEKSFCFYRDVLHAKPLVRGRKLAYFDLNGYWLAL--NEEPDIP----RN  60
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    S    +Y      G       G       D  + + +DPDGH  
+Sbjct  61   EIAHSYTHMAFTITEES-FDEWYAHLEKHG--VTILHGRDRS-ERDKRSIYFIDPDGHKF  116
+
+Query  117  EVV  119
+            E+ 
+Sbjct  117  ELH  119
+
+
+>sp|Q03377|FOSB_STAEP Metallothiol transferase FosB OS=Staphylococcus 
+epidermidis OX=1282 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 116 bits (290),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 44/123 (36%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L  G    +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVEGETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYIWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q4L2Y9|FOSB_STAHJ Metallothiol transferase FosB OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 114 bits (286),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 22/123 (18%), Positives = 43/123 (35%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L       +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVESETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYNWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q55317|FOSB_STAHA Metallothiol transferase FosB OS=Staphylococcus 
+haemolyticus OX=1283 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 114 bits (286),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 22/123 (18%), Positives = 43/123 (35%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI ++++++ KS  FY   L    L       +    G W+               + 
+Sbjct  5    INHITYSVSNIAKSIEFYRDILGADILVESETSAYFNLGGIWLALNEE------KNIPRS  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+  + ++   +Y          N   G       D  + +  D DGH +
+Sbjct  59   EIKYSYTHIAFTI-SDNDFEDWYNWLKE--NEVNILEGRDRDIR-DKKSIYFTDLDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q65KJ5|FOSB_BACLD Metallothiol transferase FosB OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 
+12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=fosB PE=3 SV=1
+Length=154
+
+ Score = 110 bits (275),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 24/123 (20%), Positives = 48/123 (39%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP--LGIGHAMEF----GDWVGYGRNGKPEFWIGAQKG  56
+            ++H+ F+++D+  S +FY+       L       +    G W+ +            ++ 
+Sbjct  9    INHLLFSVSDLSVSISFYEKVFDAKWLVKAEKTAYFDLNGIWLAFNEEKD------IKRQ  62
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+               +   H+AFS     ++  + +     G   N   G + H   D  + +  DPDGH  
+Sbjct  63   EIHDSYTHIAFSIQQE-DLPFWEKKLHDLG--VNVLKGRKRH-EGDRDSIYFSDPDGHKF  118
+
+Query  117  EVV  119
+            E+ 
+Sbjct  119  ELH  121
+
+
+>sp|Q98GG1|FOSX_RHILO Fosfomycin resistance protein FosX OS=Mesorhizobium 
+japonicum (strain LMG 29417 / CECT 9101 / MAFF 303099) 
+OX=266835 GN=fosX PE=1 SV=1
+Length=139
+
+ Score = 109 bits (271),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 21/120 (18%), Positives = 40/120 (33%), Gaps = 7/120 (6%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP-LGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKL--  59
+            L H+ F + D+++     +             E             + W+   +G KL  
+Sbjct  5    LSHMTFIVRDLERMTRILEGVFDAREVYASDTEQFSLSREKFFLIGDIWVAIMQGEKLAE  64
+
+Query  60   EGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEVV  119
+                H+AF     ++  R+ E     G   + +P   P    +  + +  D D H  E+ 
+Sbjct  65   RSYNHIAFKI-DDADFDRYAERVGKLG--LDMRPPR-PRVEGEGRSIYFYDDDNHMFELH  120
+
+
+>sp|Q56415|FOSA_SERMA Glutathione transferase FosA OS=Serratia 
+marcescens OX=615 GN=fosA PE=1 SV=1
+Length=141
+
+ Score = 108 bits (270),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 23/124 (19%), Positives = 44/124 (35%), Gaps = 20/124 (16%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLE--  60
+            L+H+   ++D++KS  F+   L  L +      G ++  G     + W+        +  
+Sbjct  5    LNHLTLAVSDLQKSVTFWHELL-GLTLHARWNTGAYLTCG-----DLWVCLSYDEARQYV  58
+
+Query  61   -----GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHN  115
+                    H AF+     +     +    AG               +  + + LDPDGH 
+Sbjct  59   PPQESDYTHYAFTVAEE-DFEPLSQRLEQAGVTI------WKQNKSEGASFYFLDPDGHK  111
+
+Query  116  IEVV  119
+            +E+ 
+Sbjct  112  LELH  115
+
+
+>sp|Q6GEA2|FOSB_STAAR Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 108 bits (269),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFKLAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|A8Z522|FOSB_STAAT Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|P60864|FOSB_STAAN Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=fosB PE=1 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|P60863|FOSB_STAAM Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=fosB 
+PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|A6QJH4|FOSB_STAAE Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q5HDM4|FOSB_STAAC Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|A5IVB5|FOSB_STAA9 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q2FVT3|FOSB_STAA8 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=fosB PE=3 
+SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q2FEG3|FOSB_STAA3 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|A6U458|FOSB_STAA2 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=fosB PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|A7X5T8|FOSB_STAA1 Metallothiol transferase FosB OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=fosB 
+PE=3 SV=1
+Length=139
+
+ Score = 107 bits (267),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 42/123 (34%), Gaps = 16/123 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEF------GDWVGYGRNGKPEFWIGAQKG  56
+            ++HI F++ ++  S  FY   L    +    +       G W+               + 
+Sbjct  5    INHICFSVRNLNDSIHFYRDILLGKLLLTGKKTAYFELAGLWIALNEE------KDIPRN  58
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H+AF+    SE   +++         N   G       D  + +  DPDGH +
+Sbjct  59   EIHFSYTHIAFTI-DDSEFKYWHQRLK--DNNVNILEGRVRDIR-DRQSIYFTDPDGHKL  114
+
+Query  117  EVV  119
+            E+ 
+Sbjct  115  ELH  117
+
+
+>sp|Q8Y6I2|FOSX_LISMO Fosfomycin resistance protein FosX OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=fosX PE=1 SV=1
+Length=133
+
+ Score = 103 bits (257),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 25/120 (21%), Positives = 41/120 (34%), Gaps = 7/120 (6%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAME-FGDWVGYGRNGKPEFWIGAQKGAKLE-  60
+            L HI   + D+ K+  F     +   I  + +                WI   +G  L+ 
+Sbjct  5    LSHITLIVKDLNKTTTFLREIFNAEEIYSSGDQTFSLSKEKFFLIAGLWICIMEGDSLQE  64
+
+Query  61   -GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEVV  119
+                H+AF   +  EV  + E   + G     KP   P    +  + +  D D H  E+ 
+Sbjct  65   QTYNHIAFRIQSE-EVDEYIERIKSLG--VEIKPER-PRVEGEGRSIYFYDFDNHLFELH  120
+
+
+>sp|Q92AV8|FOSX_LISIN Fosfomycin resistance protein FosX OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) 
+OX=272626 GN=fosX PE=3 SV=1
+Length=133
+
+ Score = 101 bits (252),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 23/120 (19%), Positives = 39/120 (33%), Gaps = 7/120 (6%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAME-FGDWVGYGRNGKPEFWIGAQKGAKLE-  60
+            L HI   + D+ K+  F +       I  + +                WI   +G  L+ 
+Sbjct  5    LSHITLIVKDLNKTTTFLEEIFDAEEIYSSGDDTFSLSKEKFFLIAGLWICIMEGESLQE  64
+
+Query  61   -GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEVV  119
+                H+AF      E+  + E   + G     KP        +  + +  D D H  E+ 
+Sbjct  65   RTYNHIAFQIQAE-EMDEYIERIKSLG--MEIKPERSR-VKGEGRSVYFYDYDNHLFELH  120
+
+
+>sp|Q9KT93|LGUL_VIBCH Probable lactoylglutathione lyase OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=gloA PE=3 SV=2
+Length=138
+
+ Score = 100 bits (249),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 51/130 (39%), Gaps = 17/130 (13%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAA--LSPLGIGHAMEFG---DWVGYGRNGKPEF------  49
+            H + H    + D+ KS  FY     +S L      E+     ++GYG   +         
+Sbjct  4    HRILHTMLRVGDLDKSIEFYTQVMGMSLLRKNENTEYKYTLAFLGYGDESQGAVIELTYN  63
+
+Query  50   WIGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVL  109
+            W  A    K     H+A       ++    +   AAGG    +PG  P      + AFV 
+Sbjct  64   WGVADY-EKGNAYGHIAIGV---DDIYATCDTIKAAGGIVTREPG--PVKGGTTHIAFVK  117
+
+Query  110  DPDGHNIEVV  119
+            DPDG+ IE++
+Sbjct  118  DPDGYMIELI  127
+
+
+>sp|Q9I4K6|FOSA_PSEAE Glutathione transferase FosA OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / 
+JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=fosA 
+PE=1 SV=1
+Length=135
+
+ Score = 90.1 bits (222),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 29/123 (24%), Positives = 41/123 (33%), Gaps = 21/123 (17%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALS-----PLGIGHAMEFG-DWVGYGRNGKPEFWIGAQKG  56
+            L+H+   +AD+  S AFY   L          G  +E G  W+   R          Q G
+Sbjct  5    LNHLTLAVADLPASIAFYRDLLGFRLEARWDQGAYLELGSLWLCLSRE--------PQYG  56
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                   H AF            +  + A G    K         +  + + LDPDGH +
+Sbjct  57   GPAADYTHYAFGIAAADFARFAAQ--LRAHGVREWKQNR-----SEGDSFYFLDPDGHRL  109
+
+Query  117  EVV  119
+            E  
+Sbjct  110  EAH  112
+
+
+>sp|P46235|LGUL_VIBPA Probable lactoylglutathione lyase OS=Vibrio 
+parahaemolyticus serotype O3:K6 (strain RIMD 2210633) OX=223926 
+GN=gloA PE=3 SV=2
+Length=138
+
+ Score = 83.6 bits (205),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 31/129 (24%), Positives = 48/129 (37%), Gaps = 17/129 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEF------W  50
+             + H    + D+ KS  FY   +    L      E+     +VGYG   +         W
+Sbjct  5    RILHTMLRVGDLDKSIKFYTEVMGMQLLRTNENKEYEYTLAFVGYGDESQGAVIELTYNW  64
+
+Query  51   IGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLD  110
+               +         H+A       ++    +A  AAGG    + G  P      + AFV D
+Sbjct  65   GKTEY-DLGTAFGHIAIGV---DDIYATCDAIKAAGGNVTREAG--PVKGGTTHIAFVKD  118
+
+Query  111  PDGHNIEVV  119
+            PDG+ IE++
+Sbjct  119  PDGYMIELI  127
+
+
+>sp|P0A1Q2|LGUL_SALTY Lactoylglutathione lyase OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=gloA 
+PE=3 SV=1
+Length=135
+
+ Score = 79.7 bits (195),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 33/129 (26%), Positives = 46/129 (36%), Gaps = 17/129 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEF------W  50
+             L H    + D+++S AFY   L    L      E+     +VGYG   +         W
+Sbjct  2    RLLHTMLRVGDLQRSIAFYTNVLGMKLLRTSENPEYKYSLAFVGYGPETEEAVIELTYNW  61
+
+Query  51   IGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLD  110
+                         H+A S    +E     E     GG    + G  P        AFV D
+Sbjct  62   GVESY-DMGNAYGHIALSVDNAAE---ACERIRQNGGNVTREAG--PVKGGSTIIAFVED  115
+
+Query  111  PDGHNIEVV  119
+            PDG+ IE++
+Sbjct  116  PDGYKIELI  124
+
+
+>sp|P0A1Q3|LGUL_SALTI Lactoylglutathione lyase OS=Salmonella typhi 
+OX=90370 GN=gloA PE=3 SV=1
+Length=135
+
+ Score = 79.7 bits (195),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 33/129 (26%), Positives = 46/129 (36%), Gaps = 17/129 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEF------W  50
+             L H    + D+++S AFY   L    L      E+     +VGYG   +         W
+Sbjct  2    RLLHTMLRVGDLQRSIAFYTNVLGMKLLRTSENPEYKYSLAFVGYGPETEEAVIELTYNW  61
+
+Query  51   IGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLD  110
+                         H+A S    +E     E     GG    + G  P        AFV D
+Sbjct  62   GVESY-DMGNAYGHIALSVDNAAE---ACERIRQNGGNVTREAG--PVKGGSTIIAFVED  115
+
+Query  111  PDGHNIEVV  119
+            PDG+ IE++
+Sbjct  116  PDGYKIELI  124
+
+
+>sp|P0AC83|LGUL_SHIFL Lactoylglutathione lyase OS=Shigella flexneri 
+OX=623 GN=gloA PE=3 SV=1
+Length=135
+
+ Score = 78.6 bits (192),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 33/128 (26%), Positives = 46/128 (36%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEFWI-----  51
+             L H    + D+++S  FY   L    L      E+     +VGYG   +          
+Sbjct  2    RLLHTMLRVGDLQRSIDFYTKVLGMKLLRTSENPEYKYSLAFVGYGPETEEAVIELTYNW  61
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+            G  K        H+A S    +E     E     GG    + G  P        AFV DP
+Sbjct  62   GVDKYELGTAYGHIALSVDNAAE---ACEKIRQNGGNVTREAG--PVKGGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE++
+Sbjct  117  DGYKIELI  124
+
+
+>sp|P0AC81|LGUL_ECOLI Lactoylglutathione lyase OS=Escherichia 
+coli (strain K12) OX=83333 GN=gloA PE=1 SV=1
+Length=135
+
+ Score = 78.6 bits (192),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 33/128 (26%), Positives = 46/128 (36%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEFWI-----  51
+             L H    + D+++S  FY   L    L      E+     +VGYG   +          
+Sbjct  2    RLLHTMLRVGDLQRSIDFYTKVLGMKLLRTSENPEYKYSLAFVGYGPETEEAVIELTYNW  61
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+            G  K        H+A S    +E     E     GG    + G  P        AFV DP
+Sbjct  62   GVDKYELGTAYGHIALSVDNAAE---ACEKIRQNGGNVTREAG--PVKGGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE++
+Sbjct  117  DGYKIELI  124
+
+
+>sp|P0AC82|LGUL_ECO57 Lactoylglutathione lyase OS=Escherichia 
+coli O157:H7 OX=83334 GN=gloA PE=3 SV=1
+Length=135
+
+ Score = 78.6 bits (192),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 33/128 (26%), Positives = 46/128 (36%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFG---DWVGYGRNGKPEFWI-----  51
+             L H    + D+++S  FY   L    L      E+     +VGYG   +          
+Sbjct  2    RLLHTMLRVGDLQRSIDFYTKVLGMKLLRTSENPEYKYSLAFVGYGPETEEAVIELTYNW  61
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+            G  K        H+A S    +E     E     GG    + G  P        AFV DP
+Sbjct  62   GVDKYELGTAYGHIALSVDNAAE---ACEKIRQNGGNVTREAG--PVKGGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE++
+Sbjct  117  DGYKIELI  124
+
+
+>sp|P44638|LGUL_HAEIN Lactoylglutathione lyase OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=gloA PE=1 SV=1
+Length=135
+
+ Score = 74.7 bits (182),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 28/128 (22%), Positives = 44/128 (34%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS--PLGIGHAMEFGDWVGYG--RNGKPEFWIGAQKG-  56
+             + H    + D+ +S  FY   L    L      E+   + +    +G+    I      
+Sbjct  2    QILHTMLRVGDLDRSIKFYQDVLGMRLLRTSENPEYKYTLAFLGYEDGESAAEIELTYNW  61
+
+Query  57   -----AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+                        H+A       ++    EA  A+GG    + G  P        AFV DP
+Sbjct  62   GVDKYEHGTAYGHIAIGV---DDIYATCEAVRASGGNVTREAG--PVKGGSTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE +
+Sbjct  117  DGYKIEFI  124
+
+
+>sp|P0A0T3|LGUL_NEIMB Lactoylglutathione lyase OS=Neisseria meningitidis 
+serogroup B (strain MC58) OX=122586 GN=gloA PE=3 
+SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 42/128 (33%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS-PLGIGHAMEFG----DWVGYGRNGKPEFWI-----  51
+             L H    + +++KS  FY   L   L        G     +VGYG              
+Sbjct  2    RLLHTMLRVGNLEKSLDFYQNVLGMKLLRRKDYPEGRFTLAFVGYGDETDSTVLELTHNW  61
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+              ++        H+A       +     E     GG    + G  P  H     AFV DP
+Sbjct  62   DTERYDLGNAYGHIAVEV---DDAYEACERVKRQGGNVVREAG--PMKHGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE +
+Sbjct  117  DGYKIEFI  124
+
+
+>sp|P0A0T2|LGUL_NEIMA Lactoylglutathione lyase OS=Neisseria meningitidis 
+serogroup A / serotype 4A (strain Z2491) OX=122587 
+GN=gloA PE=3 SV=1
+Length=138
+
+ Score = 69.3 bits (168),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 42/128 (33%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS-PLGIGHAMEFG----DWVGYGRNGKPEFWI-----  51
+             L H    + +++KS  FY   L   L        G     +VGYG              
+Sbjct  2    RLLHTMLRVGNLEKSLDFYQNVLGMKLLRRKDYPEGRFTLAFVGYGDETDSTVLELTHNW  61
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+              ++        H+A       +     E     GG    + G  P  H     AFV DP
+Sbjct  62   DTERYDLGNAYGHIAVEV---DDAYEACERVKRQGGNVVREAG--PMKHGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE +
+Sbjct  117  DGYKIEFI  124
+
+
+>sp|Q55595|LGUL_SYNY3 Probable lactoylglutathione lyase OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=gloA 
+PE=3 SV=1
+Length=131
+
+ Score = 67.4 bits (163),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 33/128 (26%), Positives = 48/128 (38%), Gaps = 17/128 (13%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSP-LGIGHAMEFG----DWVGYGRNGKPEF------WI  51
+            L H    + D+ KS  FY   L   L        G     +VGYG+  +         W 
+Sbjct  3    LLHTMIRVGDLDKSLQFYCDILGMNLLRKKDYPSGEFTLAFVGYGKESENAVIELTHNWG  62
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+              +      G  H+A       ++    +     GG+   +PG  P  H     AFV DP
+Sbjct  63   TDKY-DLGNGFGHIALGVE---DIYSTCDKIRDKGGKVVREPG--PMKHGTTVIAFVEDP  116
+
+Query  112  DGHNIEVV  119
+            DG+ IE++
+Sbjct  117  DGYKIELI  124
+
+
+>sp|Q39366|LGUL_BRAOG Putative lactoylglutathione lyase OS=Brassica 
+oleracea var. gemmifera OX=178616 PE=2 SV=1
+Length=282
+
+ Score = 62.8 bits (151),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 29/133 (22%), Positives = 46/133 (35%), Gaps = 17/133 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIG-----HAMEFGDWVGYGRNGKPEFWIGAQKG  56
+               H+ + + D+ ++  FY        +             ++G+G      F +     
+Sbjct  17   RFLHVVYRVGDLDRTIQFYTECFGMKVLRKRDVPEEKYSNAFLGFGPET-SNFVVELTYN  75
+
+Query  57   ------AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLD  110
+                      G  H A S     +V +  EA  A GG    +PG  P        AFV D
+Sbjct  76   YGVSSYDIGTGFGHFAISTQ---DVSKMVEAVRAKGGNVTREPG--PVKGGGSVIAFVKD  130
+
+Query  111  PDGHNIEVVCHLP  123
+            PDG+  E++   P
+Sbjct  131  PDGYTFELIQRGP  143
+
+
+>sp|O65398|GLX1_ARATH Lactoylglutathione lyase GLX1 OS=Arabidopsis 
+thaliana OX=3702 GN=GLX1 PE=1 SV=1
+Length=283
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 29/133 (22%), Positives = 45/133 (34%), Gaps = 17/133 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPL-----GIGHAMEFGDWVGYGRNGKPEFWIGAQKG  56
+               H+ + + D+ ++  FY             I        ++G+G      F +     
+Sbjct  17   RFLHVVYRVGDLDRTIEFYTEVFGMKLLRKRDIPEEKYSNAFLGFGPET-SNFVVELTYN  75
+
+Query  57   ------AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLD  110
+                      G  H A S     +V +  E   A GG    +PG  P        AFV D
+Sbjct  76   YGVSSYDIGTGFGHFAISTQ---DVSKLVENVRAKGGNVTREPG--PVKGGGSVIAFVKD  130
+
+Query  111  PDGHNIEVVCHLP  123
+            PDG+  E++   P
+Sbjct  131  PDGYTFELIQRGP  143
+
+
+ Score = 45.8 bits (107),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/125 (17%), Positives = 36/125 (29%), Gaps = 13/125 (10%)
+
+Query  6    IGFNIADMKKSRAFYDAALS--PLGIGHAMEFGDWVGYG--RNGKPEFWIGAQKG-----  56
+            +   + D+ ++  FY+ AL    L      E+   +G            +          
+Sbjct  151  VMLRVGDLDRAIKFYEKALGMRLLRKIERPEYKYTIGMMGYAEEYESIVLELTYNYDVTE  210
+
+Query  57   -AKLEGVLHVAFSAGTRSEVGRFYEAA-IAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGH  114
+              K      +A       + G   +      GG+   + G  P           LDPDG 
+Sbjct  211  YTKGNAYAQIAIGTDDVYKSGEVIKIVNQELGGKITREAGPLPGLG--TKIVSFLDPDGW  268
+
+Query  115  NIEVV  119
+               +V
+Sbjct  269  KTVLV  273
+
+
+>sp|Q8W593|LGUC_ARATH Probable lactoylglutathione lyase, chloroplastic 
+OS=Arabidopsis thaliana OX=3702 GN=At1g67280 PE=1 SV=1
+Length=350
+
+ Score = 62.0 bits (149),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 29/128 (23%), Positives = 49/128 (38%), Gaps = 15/128 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYD-----AALSPLGIGHAMEFGDWVGYGRNG-----KPEFWI  51
+             + H+ + + DM ++  FY        L    I        ++GYG        +  +  
+Sbjct  88   RMLHVVYRVGDMDRTIKFYTECLGMKLLRKRDIPEEKYTNAFLGYGPEDSHFVIELTYNY  147
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+            G  K     G  H   +     +V +  E   A GG+ + +PG  P        AF+ DP
+Sbjct  148  GVDKYDIGAGFGHFGIAV---DDVAKTVELVKAKGGKVSREPG--PVKGGKTVIAFIEDP  202
+
+Query  112  DGHNIEVV  119
+            DG+  E++
+Sbjct  203  DGYKFELL  210
+
+
+ Score = 48.9 bits (115),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 24/120 (20%), Positives = 41/120 (34%), Gaps = 15/120 (13%)
+
+Query  6    IGFNIADMKKSRAFYDAALS--PLGIGHAMEFGDWVG-YGRNGKPEFWI-------GAQK  55
+            +   + D+ ++  FY+ A     L      E+   +   G   + +F +       G  +
+Sbjct  222  VMLRVGDLDRAIKFYEKAFGMELLRTRDNPEYKYTIAMMGYGPEDKFPVLELTYNYGVTE  281
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHN  115
+              K      +A       +V +  EA    GG+   +PG  P           LDPDG  
+Sbjct  282  YDKGNAYAQIAIGT---DDVYKTAEAIKLFGGKITREPGPLPGIS--TKITACLDPDGWK  336
+
+
+>sp|P23205|Y2024_PSEAE Uncharacterized protein PA2024 OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=PA2024 
+PE=4 SV=2
+Length=140
+
+ Score = 50.5 bits (119),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 26/123 (21%), Positives = 42/123 (34%), Gaps = 10/123 (8%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGD---WVGYGRNGKPEF----WIGAQK  55
+            L H+  ++ D+    AFY+       I      G    W+      +         G  +
+Sbjct  5    LTHLALHVPDLDACIAFYETFCGMRVIHRRPGKGSQIVWMAEPGQEQRFIFVIMPGGQPR  64
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHN  115
+                +   H  F+  +R+ V      A AAG      P   P+  P  Y   + DP G+ 
+Sbjct  65   NLASDDYSHFGFALSSRAAVDDLARRAEAAGCLV-WAPRDEPY--PVGYYCGLRDPAGNY  121
+
+Query  116  IEV  118
+            +E 
+Sbjct  122  VEF  124
+
+
+>sp|Q948T6|LGUL_ORYSJ Lactoylglutathione lyase OS=Oryza sativa 
+subsp. japonica OX=39947 GN=GLYI-11 PE=1 SV=2
+Length=291
+
+ Score = 51.6 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 25/133 (19%), Positives = 46/133 (35%), Gaps = 16/133 (12%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIG-----HAMEFGDWVGYGRN-----GKPEFWI  51
+             L H  + + D+ ++   Y        +             ++G+G        +  +  
+Sbjct  24   RLLHAVYRVGDLDRTIKCYTECFGMKLLRKRDVPEEKYTNAFLGFGPEDTNFALELTYNY  83
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAA-GGRDNGKPGLRPHYHPDYYAAFVLD  110
+            G  K     G  H  F+  T  +V +  E   ++   +   +PG  P        AF  D
+Sbjct  84   GVDKYDIGAGFGH--FAIATE-DVYKLAEKIKSSCCCKITREPG--PVKGGSTVIAFAQD  138
+
+Query  111  PDGHNIEVVCHLP  123
+            PDG+  E++   P
+Sbjct  139  PDGYMFELIQRGP  151
+
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 23/125 (18%), Positives = 40/125 (32%), Gaps = 13/125 (10%)
+
+Query  6    IGFNIADMKKSRAFYDAALS--PLGIGHAMEFGDWVGYGRNGKPEFWIGAQ--------K  55
+            +   + D+ +S  FY+ AL    L      ++   +        +     +        +
+Sbjct  159  VMLRVGDLDRSIKFYEKALGMKLLRKKDVPDYKYTIAMLGYADEDKTTVIELTYNYGVTE  218
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAA-IAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGH  114
+              K      VA       +     E      GG+   +PG  P    +   A  LDPDG 
+Sbjct  219  YTKGNAYAQVAIGTEDVYKSAEAVELVTKELGGKILRQPG--PLPGLNTKIASFLDPDGW  276
+
+Query  115  NIEVV  119
+             + +V
+Sbjct  277  KVVLV  281
+
+
+>sp|Q9D8I3|GLOD5_MOUSE Glyoxalase domain-containing protein 5 
+OS=Mus musculus OX=10090 GN=Glod5 PE=1 SV=1
+Length=148
+
+ Score = 49.7 bits (117),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/122 (16%), Positives = 35/122 (29%), Gaps = 1/122 (1%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDW-VGYGRNGKPEFWIGAQKGAKLE  60
+             LDHI   + +++ +  FY   L                G  +    E        A   
+Sbjct  25   RLDHIVMTVKNIEDTTMFYSKILGMEVTTFKGNRKALCFGDQKFNLHEVGKEFDPKAAHP  84
+
+Query  61   GVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEVVC  120
+                +     T + +    E   A        P  R        + +  DPD + +EV  
+Sbjct  85   VPGSLDVCLITEAPLEEVIERLKAFDVPIEEGPVFRTGAKGPILSIYFRDPDRNLLEVSS  144
+
+Query  121  HL  122
+            ++
+Sbjct  145  YV  146
+
+
+>sp|Q8GR45|BPHC_BACPJ Manganese-dependent 2,3-dihydroxybiphenyl 
+1,2-dioxygenase OS=Bacillus sp. (strain JF8) OX=1921421 GN=bphC 
+PE=1 SV=1
+Length=315
+
+ Score = 50.1 bits (118),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 23/115 (20%), Positives = 38/115 (33%), Gaps = 7/115 (6%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            HI     +++KS  F+   +    +      GD +     G  E    +        V H
+Sbjct  10   HIALITPNLEKSVWFFRDIVGLEEVDR---QGDTIFLRAWGDWEHHTLSLTPGNRARVDH  66
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDN-GKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+            +A+      +V  F E   A G      +PG          A     P+G+  E+
+Sbjct  67   IAWRTKRPEDVETFAEQLKAKGTEVQWIEPGEE---KGQGKAIRFRLPNGYPFEI  118
+
+
+>sp|Q502D1|GLOD5_DANRE Glyoxalase domain-containing protein 5 
+OS=Danio rerio OX=7955 GN=glod5 PE=2 SV=1
+Length=163
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 22/118 (19%), Positives = 40/118 (34%), Gaps = 3/118 (3%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGV  62
+            LDH+   + D+ K+  FY   L    +    +    + +G        +G +   K +  
+Sbjct  42   LDHLVLTVRDLNKTTKFYSEVLGMEVVTFKGDRKA-LSFGEQKINLHQVGKEFEPKAQTP  100
+
+Query  63   L--HVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+                      T++ +    +   A G      P  R        + +  DPD + IEV
+Sbjct  101  TPGSADLCLITKTPLKAVADHLKACGVTIEEGPVDRTGAVGPISSLYFRDPDDNLIEV  158
+
+
+>sp|P0C5H0|GLOD5_CANLF Glyoxalase domain-containing protein 5 
+OS=Canis lupus familiaris OX=9615 GN=GLOD5 PE=2 SV=1
+Length=148
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 21/125 (17%), Positives = 36/125 (29%), Gaps = 5/125 (4%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEG  61
+             LDHI   +  +K +  FY   L              + +G   K       ++      
+Sbjct  25   RLDHIVMTVKSIKDTTMFYSKILGMEVTTFKGNRKA-LCFGDQ-KLNLHEVGKEFEPKAA  82
+
+Query  62   V---LHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+                  +     T   +    +   A        P  R        + +  DPD + IEV
+Sbjct  83   HPVPGSLDICLITEVPLEEMVQHLKACEVPIEEGPVPRTGAKGPIMSIYFRDPDRNLIEV  142
+
+Query  119  VCHLP  123
+              ++P
+Sbjct  143  SNYIP  147
+
+
+>sp|P45945|YQCK_BACSU Uncharacterized protein YqcK OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqcK PE=4 SV=2
+Length=146
+
+ Score = 47.4 bits (111),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 22/121 (18%), Positives = 39/121 (32%), Gaps = 17/121 (14%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            H+G N+  ++KS  FY+       +    ++  ++         F +      K   V H
+Sbjct  5    HVGVNVVSLEKSINFYEKVFGVKAVKVKTDYAKFLLETPGL--NFTLNVADEVKGNQVNH  62
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPD-------YYAAFVLDPDGHNIE  117
+              F   +  EV +  +           K G       D           ++ DPDG+  E
+Sbjct  63   FGFQVDSLEEVLKHKKRLE--------KEGFFAREEMDTTCCYAVQDKFWITDPDGNEWE  114
+
+Query  118  V  118
+             
+Sbjct  115  F  115
+
+
+>sp|Q09751|LGUL_SCHPO Lactoylglutathione lyase OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=glo1 PE=1 
+SV=1
+Length=302
+
+ Score = 46.6 bits (109),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 22/149 (15%), Positives = 38/149 (26%), Gaps = 37/149 (25%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAAL-----SPLGIGHAMEFGDWVGYG-------------  42
+            + L+H    + D+ KS  FY                      ++ +              
+Sbjct  10   YKLNHTMIRVKDLDKSLKFYTEVFGMKLIDQWVFEENEFSLSFLAFDGPGALNHGVERSK  69
+
+Query  43   -----------RNGKPEFWIGAQKG-AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDN  90
+                          K E  +          G  H+ F+      +        + G    
+Sbjct  70   REGILELTYNFGTEKKEGPVYINGNTEPKRGFGHICFTV---DNIESACAYLESKGVSFK  126
+
+Query  91   GKPGLRPHYHPDYYAAFVLDPDGHNIEVV  119
+                 +       + AF LDPD + IE+V
+Sbjct  127  ----KKLSDGKMKHIAFALDPDNYWIELV  151
+
+
+>sp|A6NK44|GLOD5_HUMAN Glyoxalase domain-containing protein 5 
+OS=Homo sapiens OX=9606 GN=GLOD5 PE=1 SV=3
+Length=160
+
+ Score = 45.5 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 20/120 (17%), Positives = 35/120 (29%), Gaps = 5/120 (4%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEG  61
+             LDHI   +  +K +  FY   L    +    +    + +G   K       ++      
+Sbjct  37   RLDHIVMTVKSIKDTTMFYSKILGMEVMTFKEDRKA-LCFGDQ-KFNLHEVGKEFEPKAA  94
+
+Query  62   V---LHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+                  +     T   +    +   A        P  R        + +  DPD + IEV
+Sbjct  95   HPVPGSLDICLITEVPLEEMIQHLKACDVPIEEGPVPRTGAKGPIMSIYFRDPDRNLIEV  154
+
+
+>sp|Q4KLB0|GLOD5_XENLA Glyoxalase domain-containing protein 5 
+OS=Xenopus laevis OX=8355 GN=glod5 PE=2 SV=2
+Length=160
+
+ Score = 45.5 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 23/123 (19%), Positives = 37/123 (30%), Gaps = 9/123 (7%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAALSPLGI----GHA-MEFGDWVGYGRNGKPEFWIGAQK  55
+              LDH+   + ++ K+  FY   L         G   + FG           EF   A  
+Sbjct  32   QRLDHLVLTVRNLDKTIKFYTKVLGMEATTFKGGRKALSFGIQKINLHETGKEFEPKASL  91
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHN  115
+                           T + +    +     G      P  R     +  + ++ DPD + 
+Sbjct  92   PTPGSA----DLCLITETPLTTVVQHLKVCGVPIEEGPVSRTGAVGEITSVYLRDPDHNL  147
+
+Query  116  IEV  118
+            IEV
+Sbjct  148  IEV  150
+
+
+>sp|Q28CR0|GLOD5_XENTR Glyoxalase domain-containing protein 5 
+OS=Xenopus tropicalis OX=8364 GN=glod5 PE=2 SV=1
+Length=160
+
+ Score = 45.5 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 19/122 (16%), Positives = 35/122 (29%), Gaps = 7/122 (6%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKP-EFWIGAQKGAKL  59
+              LDH+   +  + ++  FY   L           G         +        ++    
+Sbjct  32   QRLDHLVLTVRSLDRTINFYTKVLGME---ATTFKGGRKALSFGMQKINLHEAGKEFEPK  88
+
+Query  60   EGV---LHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+              V           T + +    +   A G      P  R     +  + ++ DPD + I
+Sbjct  89   ASVPSPGSADLCLITETPLSTVVQHLKACGVPVEEGPVSRTGAVGEIISVYMRDPDQNLI  148
+
+Query  117  EV  118
+            EV
+Sbjct  149  EV  150
+
+
+>sp|Q8ZM36|VIR17_SALTY Virulence protein STM3117 OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=STM3117 PE=1 SV=1
+Length=144
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/120 (18%), Positives = 43/120 (36%), Gaps = 5/120 (4%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAA--LSPLGIGHAMEFGDWVGYGRNG-KPEFWIGAQKGAK  58
+             +DH+   ++D+  +  FY+     S +      +   +     N  + E     +    
+Sbjct  23   RIDHLVLTVSDISTTIRFYEEVLGFSAVTFKQNRKALIFGAQKINLHQQEMEFEPKASRP  82
+
+Query  59   LEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+              G   + F   T + +       + AG      P  R     +  + ++ DPDG+ IE+
+Sbjct  83   TPGSADLCF--ITSTPINDVVSEILQAGISIVEGPVERTGATGEIMSIYIRDPDGNLIEI  140
+
+
+>sp|P54557|YQJT_BACSU Uncharacterized protein YqjT OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqjT PE=4 SV=1
+Length=128
+
+ Score = 43.9 bits (102),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 29/125 (23%), Positives = 54/125 (43%), Gaps = 9/125 (7%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRN-------GKPEFWIGAQK  55
+            + HI   ++D++ SR F+   L  LG     ++   + + ++          E ++  + 
+Sbjct  1    MHHIELYVSDLEASRRFWGWFLKELGYKEYQKWSSGISWKKDRFYLVIVQAKEPFLEPEY  60
+
+Query  56   GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYY-AAFVLDPDGH  114
+                 G+ H+AF A ++ +V +  E   A G R   +    P    D + A F  DPD  
+Sbjct  61   HRCRVGLNHLAFHAESKLQVDQMTEKLTAKGYRVLYRD-RHPFAGGDGHYAVFCEDPDRI  119
+
+Query  115  NIEVV  119
+             +E+V
+Sbjct  120  KVELV  124
+
+
+>sp|P47233|BPHC3_RHOGO Biphenyl-2,3-diol 1,2-dioxygenase 3 OS=Rhodococcus 
+globerulus OX=33008 GN=bphC3 PE=3 SV=2
+Length=190
+
+ Score = 44.3 bits (103),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 18/122 (15%), Positives = 35/122 (29%), Gaps = 10/122 (8%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGA-----QKG  56
+             L H       +     +Y   L    +              + +   +        ++ 
+Sbjct  6    RLAHFVLQTNQLPAMTQWYIDVLGAHVVYENPAMCFLTTDEEHHRVALFGPPGGGLPERT  65
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+                G+ H AF+  T  ++   Y      G          P  H    + +  DPDG+ +
+Sbjct  66   PATVGLAHTAFTFPTLGDLIDKYLQLRDKG-----IEPRVPVQHGVTTSLYYRDPDGNMV  120
+
+Query  117  EV  118
+            E+
+Sbjct  121  EL  122
+
+
+>sp|P37516|YYAH_BACSU Uncharacterized protein YyaH OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yyaH PE=4 SV=1
+Length=126
+
+ Score = 43.1 bits (100),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 24/126 (19%), Positives = 49/126 (39%), Gaps = 12/126 (10%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSP----LGIGHAMEFGDWV-----GYGRNGKPEFWIG  52
+             ++H    + D+++ ++FY++  +     L      +F  +      G       +  + 
+Sbjct  2    QIEHTAVWVNDLERMKSFYESYFNGEANDLYHNEKKDFKSYFITFDSGARLEIMKKGNVT  61
+
+Query  53   AQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPD  112
+                  + G  H+AFS G+R +V    +   A G       G R      Y +  + D +
+Sbjct  62   DPPSQTMTGWAHIAFSVGSREKVDELTDRLKADGFAV--VNGPRTTGDGYYESV-IEDDE  118
+
+Query  113  GHNIEV  118
+            G+ IE+
+Sbjct  119  GNLIEI  124
+
+
+>sp|P27887|XYLE_PSEAI Metapyrocatechase OS=Pseudomonas aeruginosa 
+OX=287 GN=bztE PE=3 SV=1
+Length=307
+
+ Score = 42.0 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 14/114 (12%), Positives = 31/114 (27%), Gaps = 4/114 (4%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            H+   + DM K+   Y   L  + +    +   ++           +  ++         
+Sbjct  10   HVQLRVLDMSKALEHYVELLGLIEMDRDDQGRVYLKAWTEVDKFSVVLRERDEPGMDF--  67
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+            + F       + +      A G      P      +          P GH+ E+
+Sbjct  68   MGFKVVDEDALRQLERDLTAYGCAVEQLPAGE--LNSCGRRVRFQAPSGHHFEL  119
+
+
+ Score = 38.1 bits (87),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 19/124 (15%), Positives = 36/124 (29%), Gaps = 10/124 (8%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS-----PLGIGHAMEFGDWVGYGRNGKPEFWIGAQKG  56
+              DH      ++  +   +   L       +   +      ++          +I   + 
+Sbjct  150  RFDHCLLYGDELPATYDLFTKVLGFYLAEQVLDENGTRVAQFLSLSTKAHDVAFIHHPEK  209
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+             +L    HV+F   T  +V R  +         +   G   H        +  DP G+  
+Sbjct  210  GRLH---HVSFHLETWEDVLRAADLISMTDTSIDI--GPTRHGLTHGKTIYFFDPSGNRS  264
+
+Query  117  EVVC  120
+            EV C
+Sbjct  265  EVFC  268
+
+
+>sp|Q9HU72|LGUL_PSEAE Lactoylglutathione lyase OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=gloA 
+PE=3 SV=1
+Length=176
+
+ Score = 40.8 bits (94),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 24/152 (16%), Positives = 41/152 (27%), Gaps = 41/152 (27%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAALSP-------LGIGHAMEFGDWVGYGRNGKPEFWIGA  53
+            ++ +H    + D K+S  FY   L            G    +   +  G           
+Sbjct  22   YVFNHTMLRVKDPKRSLDFYSRVLGMRLLRRLDFEEGRFSLYFLAMTRGEEVPDAVDERQ  81
+
+Query  54   QK--------------------------GAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGG  87
+            +                                G  H+ FS     ++    E     G 
+Sbjct  82   RYTFGRQSVLELTHNWGSESDDSQYHNGNQDPRGFGHICFSVP---DLVAACERFETLGV  138
+
+Query  88   RDNGKPGLRPHYHPDYYAAFVLDPDGHNIEVV  119
+                   ++P        AF+ DPDG+ +E+V
+Sbjct  139  NF-----VKPLDRGMKNVAFISDPDGYWVEIV  165
+
+
+>sp|A0A0U2WCB2|RDO1_USTMD Glyoxalase domain-containing protein 
+RDO1 OS=Ustilago maydis OX=5270 GN=RDO1 PE=3 SV=1
+Length=176
+
+ Score = 40.8 bits (94),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 39/121 (32%), Gaps = 10/121 (8%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGI---GHA-MEFGDW-VGYGRNGKPEFWIGAQKGA  57
+            LDH+     DM K+  FY      +     G   +EFG   +   + GK           
+Sbjct  54   LDHLVITCHDMDKTIDFYTRLGMSVVQFGQGRKALEFGSQKINLHQKGKEFEPKALVPQP  113
+
+Query  58   KLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIE  117
+              +    + F       +    +     G +    P  R        + +V DPD + IE
+Sbjct  114  GSQD---LCFVI--HDSIADAQKHLQEHGIQVVEGPVKRTGAVGPILSIYVRDPDNNLIE  168
+
+Query  118  V  118
+            +
+Sbjct  169  L  169
+
+
+>sp|P17262|DMPB_PSEUF Metapyrocatechase OS=Pseudomonas sp. (strain 
+CF600) OX=79676 GN=dmpB PE=3 SV=1
+Length=307
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 18/114 (16%), Positives = 34/114 (30%), Gaps = 4/114 (4%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            H+   + +++ + A Y   L  L      E G  V      + + +    + A   G+  
+Sbjct  10   HVQLRVLNLESALAHYRDLL-GLIEMDRDEQGR-VYLKAWTEVDKFSVVLREADQPGMDF  67
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+            + F       + R  +  +  G      P                 P GH  E+
+Sbjct  68   MGFKVIDEDCLNRLTQDLLNYGCLIETIPAGE--LKGCGRRVRFQTPSGHFFEL  119
+
+
+ Score = 38.5 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 20/124 (16%), Positives = 36/124 (29%), Gaps = 10/124 (8%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALS-----PLGIGHAMEFGDWVGYGRNGKPEFWIGAQKG  56
+              DH      +++ + A +   L       +          ++          +I   + 
+Sbjct  150  RFDHCLLYGDELQATYALFTEVLGFYLAEQVIDDDGTRVAQFLSLSTKAHDVAFIHCPEK  209
+
+Query  57   AKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNI  116
+             K     HV+F   T  +V R  +         +   G   H        +  DP G+  
+Sbjct  210  GKFH---HVSFFLETWEDVLRAADLISMTDTSIDI--GPTRHGLTHGKTIYFFDPSGNRN  264
+
+Query  117  EVVC  120
+            EV C
+Sbjct  265  EVFC  268
+
+
+>sp|P45871|YWKD_BACSU Uncharacterized protein YwkD OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ywkD PE=4 SV=1
+Length=128
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 23/127 (18%), Positives = 41/127 (32%), Gaps = 18/127 (14%)
+
+Query  3    LDHIGFNIADMKKSRAFYDAALSPLGIGHAM-----EFGDWVGYGR------NGKPEFWI  51
+            + HI    +D +KS+AFY   L    I          +   +             P+   
+Sbjct  6    IHHIAIICSDYEKSKAFYVHKLGFQVIQETYREERGSYKLDLSLNGSYVIELFSFPDPPE  65
+
+Query  52   GAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+               +     G+ H+AF+ G+   + +  +     G        +R          F  DP
+Sbjct  66   RQTRPEAA-GLRHLAFTVGS---LDKAVQELHEKGIETE---PIRTDPLTGKRFTFFFDP  118
+
+Query  112  DGHNIEV  118
+            D   +E+
+Sbjct  119  DQLPLEL  125
+
+
+>sp|P39586|YWBC_BACSU Uncharacterized protein YwbC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ywbC PE=3 SV=1
+Length=126
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/127 (16%), Positives = 34/127 (27%), Gaps = 17/127 (13%)
+
+Query  2    MLDHIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEG  61
+             +DH G  + D+  S  FY+  L              +     G  +      +   ++G
+Sbjct  4    RIDHTGIMVRDINASITFYEEVLGMKLKDRITHTNGVIELAFLGFEDGPET--EIELIQG  61
+
+Query  62   VL----------HVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDP  111
+                        H+A      +      E   A    +             Y   ++  P
+Sbjct  62   YSSELPAEGKVHHIALLTDDIAAEYTKAEKMNAKFIDEEIT-----TLPNGYRYFYIEGP  116
+
+Query  112  DGHNIEV  118
+            DG  IE 
+Sbjct  117  DGEWIEF  123
+
+
+>sp|P06622|XYLE1_PSEPU Metapyrocatechase OS=Pseudomonas putida 
+OX=303 GN=xylE PE=1 SV=1
+Length=307
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/114 (12%), Positives = 31/114 (27%), Gaps = 4/114 (4%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            H+   + DM K+   Y   L  + +    +   ++           +  +          
+Sbjct  10   HVQLRVLDMSKALEHYVELLGLIEMDRDDQGRVYLKAWTEVDKFSLVLREADEPGMDF--  67
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+            + F       + +     +A G      P      +          P GH+ E+
+Sbjct  68   MGFKVVDEDALRQLERDLMAYGCAVEQLPAGE--LNSCGRRVRFQAPSGHHFEL  119
+
+
+>sp|Q04285|XYLE2_PSEPU Metapyrocatechase OS=Pseudomonas putida 
+OX=303 GN=xylE PE=3 SV=1
+Length=307
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 18/114 (16%), Positives = 35/114 (31%), Gaps = 4/114 (4%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRNGKPEFWIGAQKGAKLEGVLH  64
+            H+   + +++ +   Y   L  L      E G  V      + + +    + A   G+  
+Sbjct  10   HVQLRVLNLEAALTHYRDLL-GLIEMDRDEQGR-VYLKAWSEVDKFSVVLREADQPGMDF  67
+
+Query  65   VAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+            + F     + + R     +  G +    P               L P GH  E+
+Sbjct  68   MGFKVTDDACLTRLAGELLEFGCQVEEIPAGE--LKDCGRRVRFLAPSGHFFEL  119
+
+
+>sp|P47232|BPHC2_RHOGO Biphenyl-2,3-diol 1,2-dioxygenase 2 OS=Rhodococcus 
+globerulus OX=33008 GN=bphC2 PE=1 SV=2
+Length=190
+
+ Score = 38.5 bits (88),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 18/119 (15%), Positives = 39/119 (33%), Gaps = 11/119 (9%)
+
+Query  5    HIGFNIADMKKSRAFYDAALSPLGIGHAMEFGDWVGYGRN-----GKPEFWIGAQKGAKL  59
+            H+    +  +  R +Y   L    +        ++ +                  +    
+Sbjct  9    HVVLQTSRFEAMRDWYCTVLDAHVVYEGHGL-CFITFDEEHHRVALLGAPTALEPRNPGA  67
+
+Query  60   EGVLHVAFSAGTRSEVGRFYEAAIAAGGRDNGKPGLRPHYHPDYYAAFVLDPDGHNIEV  118
+             G+ H A++  T  ++   YE+  + G          P  H    + +  DPDG+ +E+
+Sbjct  68   AGMHHTAYTFDTLGDLLDRYESLKSKG-----IEPKVPIQHGVTTSLYYQDPDGNFVEL  121
+
+
+>sp|Q2KIZ3|MCEE_BOVIN Methylmalonyl-CoA epimerase, mitochondrial 
+OS=Bos taurus OX=9913 GN=MCEE PE=2 SV=1
+Length=175
+
+ Score = 38.1 bits (87),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 9/27 (33%), Positives = 15/27 (56%), Gaps = 0/27 (0%)
+
+Query  2   MLDHIGFNIADMKKSRAFYDAALSPLG  28
+            L+H+   + D++K+RAFY   L    
+Sbjct  46  RLNHVAVAVPDLEKARAFYKNVLGAEV  72
+
+
+>sp|P50107|LGUL_YEAST Lactoylglutathione lyase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=GLO1 
+PE=1 SV=1
+Length=326
+
+ Score = 38.1 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 27/148 (18%), Positives = 45/148 (30%), Gaps = 33/148 (22%)
+
+Query  1    HMLDHIGFNIADMKKSRAFYDAALS----PLGIGHAMEFGDWV-----------------  39
+            +  +H    I +  +S  FY   L           + +F  +                  
+Sbjct  181  NKFNHTMIRIKNPTRSLEFYQNVLGMKLLRTSEHESAKFTLYFLGYGVPKTDSVFSCESV  240
+
+Query  40   -----GYGRNGKPEFWIGAQKGAKLEGVLHVAFSAGTRSEVGRFYEAAI-AAGGRDNGKP  93
+                  +G    P F          +G  H+  S     + G   +      G +    P
+Sbjct  241  LELTHNWGTENDPNFHYHNGNSEP-QGYGHICISC---DDAGALCKEIEVKYGDKIQWSP  296
+
+Query  94   GLRPHYHPDYYAAFVLDPDGHNIEVVCH  121
+              + +       AF+ DPDG++IEVV H
+Sbjct  297  --KFNQGRMKNIAFLKDPDGYSIEVVPH  322
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.132    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0403    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5001433932
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,499 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1orja_
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio...  55.8    9e-10
+sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseu...  53.9    5e-09
+sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmon...  53.9    6e-09
+sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campyl...  51.6    3e-08
+sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacill...  40.8    4e-04
+
+
+>sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=fliS PE=3 SV=1
+Length=136
+
+ Score = 55.8 bits (133),  Expect = 9e-10, Method: Compositional matrix adjust.
+ Identities = 33/116 (28%), Positives = 63/116 (54%), Gaps = 6/116 (5%)
+
+Query  12   VETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDIISALKSFLDH  71
+            +  A+P + + +L   AIE L +      Q N   K     E + +  DII +L+S L  
+Sbjct  17   LSAASPHKIVQMLMAGAIERLIQGKAAMQQGNIPVKG----ERLGKALDIIISLRSCLSM  72
+
+Query  72   EKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEEVKKKVHH  125
+            E G +IAKNLD +Y  ++N + + +   +   L  ++EI+++++ AW+++  + H+
+Sbjct  73   EDGGDIAKNLDQLYDFMVNQITQANHKNDPQMLDDVIEIIREIKSAWDQIPPEYHN  128
+
+
+>sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseudomonas 
+aeruginosa OX=287 GN=fliS PE=3 SV=1
+Length=132
+
+ Score = 53.9 bits (128),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 34/112 (30%), Positives = 55/112 (49%), Gaps = 14/112 (13%)
+
+Query  16   TPLEQIILLYDKAIECL---ERAIEIYDQVNELEKRKEF-VENIDRVYDIISALKSFLDH  71
+             P + + LL D A+E +    RA+        LE+      E +     II AL++ LDH
+Sbjct  18   PPYQVVKLLLDGALERIALARRAV--------LERNPALRGEAVGTTLSIIGALQAGLDH  69
+
+Query  72   EKGKEIAKNLDTIYTIILNTLVKV--DKTKEELQKILEILKDLREAWEEVKK  121
+            ++G EIA NLD +Y  +   L  V  D T   L ++  +L  +++AW+ +  
+Sbjct  70   QQGGEIAGNLDALYDYMTRRLAGVALDDTPRPLDEVEALLGQIKQAWDAIGS  121
+
+
+>sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=fliS PE=1 SV=1
+Length=135
+
+ Score = 53.9 bits (128),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 35/126 (28%), Positives = 68/126 (54%), Gaps = 7/126 (6%)
+
+Query  4    AEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDII-  62
+            A+   ++ V +A+P + I +L+D A   L RA    +Q + + K     E + +  +II 
+Sbjct  11   AQVSVESAVMSASPHQLIEMLFDGANSALVRARLFLEQGDVVAKG----EALSKAINIID  66
+
+Query  63   SALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVD--KTKEELQKILEILKDLREAWEEVK  120
+            + LK+ LD EKG EIA NL  +Y  ++  L++ +     + ++++  +L ++ EAW+++ 
+Sbjct  67   NGLKAGLDQEKGGEIATNLSELYDYMIRRLLQANLRNDAQAIEEVEGLLSNIAEAWKQIS  126
+
+Query  121  KKVHHH  126
+             K    
+Sbjct  127  PKASFQ  132
+
+
+>sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campylobacter 
+jejuni subsp. jejuni serotype O:6 (strain 81116 
+/ NCTC 11828) OX=407148 GN=fliS PE=1 SV=1
+Length=128
+
+ Score = 51.6 bits (122),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 38/117 (32%), Positives = 64/117 (55%), Gaps = 8/117 (7%)
+
+Query  6    AYFQNMVETATPLEQIILLYDKAIECLERA-IEIYDQVNELEKRKEFVENIDRVYDIISA  64
+            AY QN     +P + I +LY+  +    RA + I ++  ++E+R  FV+   R   I   
+Sbjct  9    AYSQNQAGIESPQKLIEMLYEGILRFCARAKVAIRNE--DIEQRVYFVK---RTTAIFIE  63
+
+Query  65   LKSFLDHEKGKEIAKNLDTIYT--IILNTLVKVDKTKEELQKILEILKDLREAWEEV  119
+            L + LD+EKG E+A  L  +YT  I L +L  ++  ++ + +++ + K L EAW EV
+Sbjct  64   LINTLDYEKGGEVAHYLSGLYTREIQLLSLANLENNEDRINEVINVTKGLLEAWREV  120
+
+
+>sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=fliS PE=1 SV=1
+Length=133
+
+ Score = 40.8 bits (94),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 31/122 (25%), Positives = 65/122 (53%), Gaps = 10/122 (8%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +N   AY QN V TATP E  ++LY+  ++ +  A +  +  +++E++    EN+ +  +
+Sbjct  4    QNPYTAYQQNSVNTATPGELTLMLYNGCLKFIRLAAQAIEN-DDMERKN---ENLIKAQN  59
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEELQKILEI---LKDLREAWE  117
+            II  L   L+  +  E++ ++  +Y  +   LV+ +  K +   + E+   + D R+AW+
+Sbjct  60   IIQELNFTLN--RNIELSASMGAMYDYMYRRLVQAN-IKNDTGMLAEVEGYVTDFRDAWK  116
+
+Query  118  EV  119
+            + 
+Sbjct  117  QA  118
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.135    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 2
+
+
+Query= d1orja_
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio...  134     2e-40
+sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmon...  126     3e-37
+sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacill...  116     2e-33
+sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseu...  112     4e-32
+sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campyl...  109     8e-31
+
+Sequences not found previously or not previously below threshold:
+
+sp|P26608|FLIS_ECOLI Flagellar secretion chaperone FliS OS=Escher...  80.6    2e-19
+sp|Q9I4N6|FLISB_PSEAE Flagellar secretion chaperone FliSB OS=Pseu...  78.7    1e-18
+
+
+>sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=fliS PE=3 SV=1
+Length=136
+
+ Score = 134 bits (336),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 33/123 (27%), Positives = 65/123 (53%), Gaps = 6/123 (5%)
+
+Query  5    EAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDIISA  64
+            +    + +  A+P + + +L   AIE L +      Q N   K     E + +  DII +
+Sbjct  10   KVSVDSQLSAASPHKIVQMLMAGAIERLIQGKAAMQQGNIPVKG----ERLGKALDIIIS  65
+
+Query  65   LKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEEVKKK  122
+            L+S L  E G +IAKNLD +Y  ++N + + +   +   L  ++EI+++++ AW+++  +
+Sbjct  66   LRSCLSMEDGGDIAKNLDQLYDFMVNQITQANHKNDPQMLDDVIEIIREIKSAWDQIPPE  125
+
+Query  123  VHH  125
+             H+
+Sbjct  126  YHN  128
+
+
+>sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=fliS PE=1 SV=1
+Length=135
+
+ Score = 126 bits (315),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 35/126 (28%), Positives = 68/126 (54%), Gaps = 7/126 (6%)
+
+Query  4    AEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDII-  62
+            A+   ++ V +A+P + I +L+D A   L RA    +Q + + K     E + +  +II 
+Sbjct  11   AQVSVESAVMSASPHQLIEMLFDGANSALVRARLFLEQGDVVAKG----EALSKAINIID  66
+
+Query  63   SALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVD--KTKEELQKILEILKDLREAWEEVK  120
+            + LK+ LD EKG EIA NL  +Y  ++  L++ +     + ++++  +L ++ EAW+++ 
+Sbjct  67   NGLKAGLDQEKGGEIATNLSELYDYMIRRLLQANLRNDAQAIEEVEGLLSNIAEAWKQIS  126
+
+Query  121  KKVHHH  126
+             K    
+Sbjct  127  PKASFQ  132
+
+
+>sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=fliS PE=1 SV=1
+Length=133
+
+ Score = 116 bits (290),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 30/121 (25%), Positives = 64/121 (53%), Gaps = 8/121 (7%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +N   AY QN V TATP E  ++LY+  ++ +  A +  +  +++E++    EN+ +  +
+Sbjct  4    QNPYTAYQQNSVNTATPGELTLMLYNGCLKFIRLAAQAIEN-DDMERKN---ENLIKAQN  59
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEE  118
+            II  L   L+  +  E++ ++  +Y  +   LV+ +   +   L ++   + D R+AW++
+Sbjct  60   IIQELNFTLN--RNIELSASMGAMYDYMYRRLVQANIKNDTGMLAEVEGYVTDFRDAWKQ  117
+
+Query  119  V  119
+             
+Sbjct  118  A  118
+
+
+>sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseudomonas 
+aeruginosa OX=287 GN=fliS PE=3 SV=1
+Length=132
+
+ Score = 112 bits (281),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 57/123 (46%), Gaps = 9/123 (7%)
+
+Query  3    IAEAYFQ-NMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEF-VENIDRVYD  60
+              + Y Q    +   P + + LL D A+E +  A         LE+      E +     
+Sbjct  4    PIDTYRQVGSAQDVPPYQVVKLLLDGALERIALARRA-----VLERNPALRGEAVGTTLS  58
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKV--DKTKEELQKILEILKDLREAWEE  118
+            II AL++ LDH++G EIA NLD +Y  +   L  V  D T   L ++  +L  +++AW+ 
+Sbjct  59   IIGALQAGLDHQQGGEIAGNLDALYDYMTRRLAGVALDDTPRPLDEVEALLGQIKQAWDA  118
+
+Query  119  VKK  121
+            +  
+Sbjct  119  IGS  121
+
+
+>sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campylobacter 
+jejuni subsp. jejuni serotype O:6 (strain 81116 
+/ NCTC 11828) OX=407148 GN=fliS PE=1 SV=1
+Length=128
+
+ Score = 109 bits (273),  Expect = 8e-31, Method: Composition-based stats.
+ Identities = 37/118 (31%), Positives = 60/118 (51%), Gaps = 6/118 (5%)
+
+Query  4    AEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDIIS  63
+              AY QN     +P + I +LY+  +    RA        ++E+R  FV+   R   I  
+Sbjct  7    YNAYSQNQAGIESPQKLIEMLYEGILRFCARAKVAIRN-EDIEQRVYFVK---RTTAIFI  62
+
+Query  64   ALKSFLDHEKGKEIAKNLDTIYT--IILNTLVKVDKTKEELQKILEILKDLREAWEEV  119
+             L + LD+EKG E+A  L  +YT  I L +L  ++  ++ + +++ + K L EAW EV
+Sbjct  63   ELINTLDYEKGGEVAHYLSGLYTREIQLLSLANLENNEDRINEVINVTKGLLEAWREV  120
+
+
+>sp|P26608|FLIS_ECOLI Flagellar secretion chaperone FliS OS=Escherichia 
+coli (strain K12) OX=83333 GN=fliS PE=3 SV=1
+Length=136
+
+ Score = 80.6 bits (197),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 62/121 (51%), Gaps = 7/121 (6%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +  A+   ++ V +A+  + + +L+D  +  L RA       N+  K      ++ +  +
+Sbjct  8    QAYAQIGVESAVMSASQQQLVTMLFDGVLSALVRASLFMQDNNQQGKGV----SLSKAIN  63
+
+Query  61   II-SALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVD--KTKEELQKILEILKDLREAWE  117
+            II + L+  LD E   E+ +NL  +Y+ ++  L++ +       ++++  +++++ +AW+
+Sbjct  64   IIENGLRVSLDEESKDELTQNLIALYSYMVRRLLQANLRNDVSAVEEVEALMRNIADAWK  123
+
+Query  118  E  118
+            E
+Sbjct  124  E  124
+
+
+>sp|Q9I4N6|FLISB_PSEAE Flagellar secretion chaperone FliSB OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=fliS PE=3 SV=1
+Length=126
+
+ Score = 78.7 bits (192),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 28/118 (24%), Positives = 54/118 (46%), Gaps = 6/118 (5%)
+
+Query  5    EAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDIISA  64
+            +   +  V  A P   I LL    +E L +A    ++    EK     + I  +      
+Sbjct  12   QVSIEAQVSDANPHRLIQLLMQGGLERLAQARGAMEREQIPEKGILIGKAIGII----GG  67
+
+Query  65   LKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEEVK  120
+            L+  LD E+G E+A NLD +Y  ++  LV+ + + +   L ++  +L +++  W+ + 
+Sbjct  68   LREALDSERGGELAGNLDRLYEYMIARLVEANTSNDTSLLDEVSALLLEVKSGWDGIS  125
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.121    0.285    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0370    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 3
+
+
+Query= d1orja_
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio...  143     3e-44
+sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmon...  136     3e-41
+sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseu...  123     5e-36
+sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacill...  117     5e-34
+sp|P26608|FLIS_ECOLI Flagellar secretion chaperone FliS OS=Escher...  113     2e-32
+sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campyl...  111     2e-31
+sp|Q9I4N6|FLISB_PSEAE Flagellar secretion chaperone FliSB OS=Pseu...  110     3e-31
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9KQ65|FLIS_VIBCH Flagellar secretion chaperone FliS OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=fliS PE=3 SV=1
+Length=136
+
+ Score = 143 bits (361),  Expect = 3e-44, Method: Composition-based stats.
+ Identities = 33/127 (26%), Positives = 66/127 (52%), Gaps = 6/127 (5%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +   +    + +  A+P + + +L   AIE L +      Q N   K     E + +  D
+Sbjct  6    QAYKKVSVDSQLSAASPHKIVQMLMAGAIERLIQGKAAMQQGNIPVKG----ERLGKALD  61
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEE  118
+            II +L+S L  E G +IAKNLD +Y  ++N + + +   +   L  ++EI+++++ AW++
+Sbjct  62   IIISLRSCLSMEDGGDIAKNLDQLYDFMVNQITQANHKNDPQMLDDVIEIIREIKSAWDQ  121
+
+Query  119  VKKKVHH  125
+            +  + H+
+Sbjct  122  IPPEYHN  128
+
+
+>sp|P26609|FLIS_SALTY Flagellar secretion chaperone FliS OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=fliS PE=1 SV=1
+Length=135
+
+ Score = 136 bits (342),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 35/129 (27%), Positives = 69/129 (53%), Gaps = 7/129 (5%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +  A+   ++ V +A+P + I +L+D A   L RA    +Q + + K     E + +  +
+Sbjct  8    KAYAQVSVESAVMSASPHQLIEMLFDGANSALVRARLFLEQGDVVAKG----EALSKAIN  63
+
+Query  61   II-SALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVD--KTKEELQKILEILKDLREAWE  117
+            II + LK+ LD EKG EIA NL  +Y  ++  L++ +     + ++++  +L ++ EAW+
+Sbjct  64   IIDNGLKAGLDQEKGGEIATNLSELYDYMIRRLLQANLRNDAQAIEEVEGLLSNIAEAWK  123
+
+Query  118  EVKKKVHHH  126
+            ++  K    
+Sbjct  124  QISPKASFQ  132
+
+
+>sp|O33422|FLISA_PSEAI Flagellar secretion chaperone FliSA OS=Pseudomonas 
+aeruginosa OX=287 GN=fliS PE=3 SV=1
+Length=132
+
+ Score = 123 bits (307),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 57/123 (46%), Gaps = 9/123 (7%)
+
+Query  3    IAEAYFQ-NMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEF-VENIDRVYD  60
+              + Y Q    +   P + + LL D A+E +  A         LE+      E +     
+Sbjct  4    PIDTYRQVGSAQDVPPYQVVKLLLDGALERIALARRA-----VLERNPALRGEAVGTTLS  58
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKV--DKTKEELQKILEILKDLREAWEE  118
+            II AL++ LDH++G EIA NLD +Y  +   L  V  D T   L ++  +L  +++AW+ 
+Sbjct  59   IIGALQAGLDHQQGGEIAGNLDALYDYMTRRLAGVALDDTPRPLDEVEALLGQIKQAWDA  118
+
+Query  119  VKK  121
+            +  
+Sbjct  119  IGS  121
+
+
+>sp|P39739|FLIS_BACSU Flagellar secretion chaperone FliS OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=fliS PE=1 SV=1
+Length=133
+
+ Score = 117 bits (294),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 30/121 (25%), Positives = 64/121 (53%), Gaps = 8/121 (7%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +N   AY QN V TATP E  ++LY+  ++ +  A +  +  +++E++    EN+ +  +
+Sbjct  4    QNPYTAYQQNSVNTATPGELTLMLYNGCLKFIRLAAQAIEN-DDMERKN---ENLIKAQN  59
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEE  118
+            II  L   L+  +  E++ ++  +Y  +   LV+ +   +   L ++   + D R+AW++
+Sbjct  60   IIQELNFTLN--RNIELSASMGAMYDYMYRRLVQANIKNDTGMLAEVEGYVTDFRDAWKQ  117
+
+Query  119  V  119
+             
+Sbjct  118  A  118
+
+
+>sp|P26608|FLIS_ECOLI Flagellar secretion chaperone FliS OS=Escherichia 
+coli (strain K12) OX=83333 GN=fliS PE=3 SV=1
+Length=136
+
+ Score = 113 bits (283),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 62/121 (51%), Gaps = 7/121 (6%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +  A+   ++ V +A+  + + +L+D  +  L RA       N+  K      ++ +  +
+Sbjct  8    QAYAQIGVESAVMSASQQQLVTMLFDGVLSALVRASLFMQDNNQQGKGV----SLSKAIN  63
+
+Query  61   II-SALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVD--KTKEELQKILEILKDLREAWE  117
+            II + L+  LD E   E+ +NL  +Y+ ++  L++ +       ++++  +++++ +AW+
+Sbjct  64   IIENGLRVSLDEESKDELTQNLIALYSYMVRRLLQANLRNDVSAVEEVEALMRNIADAWK  123
+
+Query  118  E  118
+            E
+Sbjct  124  E  124
+
+
+>sp|P0DPD3|FLIS_CAMJ8 Flagellar secretion chaperone FliS OS=Campylobacter 
+jejuni subsp. jejuni serotype O:6 (strain 81116 
+/ NCTC 11828) OX=407148 GN=fliS PE=1 SV=1
+Length=128
+
+ Score = 111 bits (277),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 37/118 (31%), Positives = 60/118 (51%), Gaps = 6/118 (5%)
+
+Query  4    AEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYDIIS  63
+              AY QN     +P + I +LY+  +    RA        ++E+R  FV+   R   I  
+Sbjct  7    YNAYSQNQAGIESPQKLIEMLYEGILRFCARAKVAIRN-EDIEQRVYFVK---RTTAIFI  62
+
+Query  64   ALKSFLDHEKGKEIAKNLDTIYT--IILNTLVKVDKTKEELQKILEILKDLREAWEEV  119
+             L + LD+EKG E+A  L  +YT  I L +L  ++  ++ + +++ + K L EAW EV
+Sbjct  63   ELINTLDYEKGGEVAHYLSGLYTREIQLLSLANLENNEDRINEVINVTKGLLEAWREV  120
+
+
+>sp|Q9I4N6|FLISB_PSEAE Flagellar secretion chaperone FliSB OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=fliS PE=3 SV=1
+Length=126
+
+ Score = 110 bits (275),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 28/122 (23%), Positives = 55/122 (45%), Gaps = 6/122 (5%)
+
+Query  1    RNIAEAYFQNMVETATPLEQIILLYDKAIECLERAIEIYDQVNELEKRKEFVENIDRVYD  60
+            +   +   +  V  A P   I LL    +E L +A    ++    EK     + I  +  
+Sbjct  8    KQYQQVSIEAQVSDANPHRLIQLLMQGGLERLAQARGAMEREQIPEKGILIGKAIGIIG-  66
+
+Query  61   IISALKSFLDHEKGKEIAKNLDTIYTIILNTLVKVDKTKEE--LQKILEILKDLREAWEE  118
+                L+  LD E+G E+A NLD +Y  ++  LV+ + + +   L ++  +L +++  W+ 
+Sbjct  67   ---GLREALDSERGGELAGNLDRLYEYMIARLVEANTSNDTSLLDEVSALLLEVKSGWDG  123
+
+Query  119  VK  120
+            + 
+Sbjct  124  IS  125
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.123    0.287    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0375    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

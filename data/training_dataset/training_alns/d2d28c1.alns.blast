@@ -1,0 +1,196 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2d28c1
+
+Length=144
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P31742|GSPE_XANCP Type II secretion system protein E OS=Xantho...  278     2e-91
+sp|Q1D098|PILB_MYXXD Type IV pilus assembly ATPase PilB OS=Myxoco...  38.9    0.007
+sp|Q5SLC9|PILB_THET8 Type IV pilus assembly ATPase PilB OS=Thermu...  38.9    0.009
+
+
+>sp|P31742|GSPE_XANCP Type II secretion system protein E OS=Xanthomonas 
+campestris pv. campestris (strain ATCC 33913 / DSM 
+3586 / NCPPB 528 / LMG 568 / P 25) OX=190485 GN=xpsE PE=1 SV=3
+Length=567
+
+ Score = 278 bits (711),  Expect = 2e-91, Method: Compositional matrix adjust.
+ Identities = 143/149 (96%), Positives = 143/149 (96%), Gaps = 5/149 (3%)
+
+Query  1    MEQRSAETRIVEALLERRRLKDTDLVRARQ---ESGMGLLALLGRLGLVSERDHAETCAE  57
+            MEQRSAETRIVEALLERRRLKDTDLVRARQ   ESGMGLLALLGRLGLVSERDHAETCAE
+Sbjct  1    MEQRSAETRIVEALLERRRLKDTDLVRARQLQAESGMGLLALLGRLGLVSERDHAETCAE  60
+
+Query  58   VLGLPLVDARQLGDTPPEM--EVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID  115
+            VLGLPLVDARQLGDTPPEM  EVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID
+Sbjct  61   VLGLPLVDARQLGDTPPEMLPEVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID  120
+
+Query  116  AVRLATGLPLLLHVGLRSEIDDLIERWYG  144
+            AVRLATGLPLLL VGLRSEIDDLIERWYG
+Sbjct  121  AVRLATGLPLLLQVGLRSEIDDLIERWYG  149
+
+
+>sp|Q1D098|PILB_MYXXD Type IV pilus assembly ATPase PilB OS=Myxococcus 
+xanthus (strain DK 1622) OX=246197 GN=pilB PE=1 SV=1
+Length=566
+
+ Score = 38.9 bits (89),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 34/145 (23%), Positives = 66/145 (46%), Gaps = 6/145 (4%)
+
+Query  1    MEQRSAETRIVEALLERRRLKDTDLVRARQESGMGLLALLGRLGLVSERDHAETCAEVLG  60
+            M  R  E  + E L+  ++L+       +Q++G  +   L + G + E    +  ++  G
+Sbjct  1    MSGRLGELLVRENLISVQQLRKAQ--EEQQKNGTRIGTALVKTGAIEESKLTDFLSKQYG  58
+
+Query  61   LPLVDARQLGDTPPEMEVQGLSLRFLKQFHLC-PVGERDGRLDLWIADPYDDYAIDAVRL  119
+            +P ++   L D   E ++  L  + + + HL  PV      L + + DP + +A+D ++ 
+Sbjct  59   VPAIN---LKDFDVEPDIIKLVPKEVAEKHLVVPVNRAGPSLIVAMCDPSNIFAVDDLKF  115
+
+Query  120  ATGLPLLLHVGLRSEIDDLIERWYG  144
+             TG  +   V     I + IER+Y 
+Sbjct  116  LTGYNIETVVASEVSIREAIERYYA  140
+
+
+>sp|Q5SLC9|PILB_THET8 Type IV pilus assembly ATPase PilB OS=Thermus 
+thermophilus (strain HB8 / ATCC 27634 / DSM 579) OX=300852 
+GN=pilB PE=1 SV=1
+Length=889
+
+ Score = 38.9 bits (89),  Expect = 0.009, Method: Compositional matrix adjust.
+ Identities = 37/122 (30%), Positives = 62/122 (51%), Gaps = 7/122 (6%)
+
+Query  7    ETRIVEALLERRRLKDTDLVRA---RQESGMGLLALLGRLGLVSERDHAETCAEVLGLPL  63
+            + R+  ALL+   L D +L RA    +E G  L  +L  +GL+SER  A+T  +  G+PL
+Sbjct  8    DKRLGAALLDAGLLTDEELQRALERHREVGGSLAEVLVDMGLLSERRIAQTIEDRFGIPL  67
+
+Query  64   VDARQLGDTPPEMEVQGLSLRFLKQFHLCPVG--ERDGRLDLWIADPYDDYAIDAVRLAT  121
+            V+  ++ + PP+++   L     K+    P    E  G + +   +P D  +++ V   T
+Sbjct  68   VELHRV-EIPPKVKAL-LPAEKAKELKAIPFALDEEAGVVRVAFLNPLDTLSLEEVEDLT  125
+
+Query  122  GL  123
+            GL
+Sbjct  126  GL  127
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.142    0.421    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5438270212
+Results from round 2
+
+
+Query= d2d28c1
+
+Length=144
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P31742|GSPE_XANCP Type II secretion system protein E OS=Xantho...  260     2e-84
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5SLC9|PILB_THET8 Type IV pilus assembly ATPase PilB OS=Thermu...  38.7    0.008
+
+
+>sp|P31742|GSPE_XANCP Type II secretion system protein E OS=Xanthomonas 
+campestris pv. campestris (strain ATCC 33913 / DSM 
+3586 / NCPPB 528 / LMG 568 / P 25) OX=190485 GN=xpsE PE=1 SV=3
+Length=567
+
+ Score = 260 bits (665),  Expect = 2e-84, Method: Composition-based stats.
+ Identities = 143/149 (96%), Positives = 143/149 (96%), Gaps = 5/149 (3%)
+
+Query  1    MEQRSAETRIVEALLERRRLKDTDLVRARQ---ESGMGLLALLGRLGLVSERDHAETCAE  57
+            MEQRSAETRIVEALLERRRLKDTDLVRARQ   ESGMGLLALLGRLGLVSERDHAETCAE
+Sbjct  1    MEQRSAETRIVEALLERRRLKDTDLVRARQLQAESGMGLLALLGRLGLVSERDHAETCAE  60
+
+Query  58   VLGLPLVDARQLGDTPPEM--EVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID  115
+            VLGLPLVDARQLGDTPPEM  EVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID
+Sbjct  61   VLGLPLVDARQLGDTPPEMLPEVQGLSLRFLKQFHLCPVGERDGRLDLWIADPYDDYAID  120
+
+Query  116  AVRLATGLPLLLHVGLRSEIDDLIERWYG  144
+            AVRLATGLPLLL VGLRSEIDDLIERWYG
+Sbjct  121  AVRLATGLPLLLQVGLRSEIDDLIERWYG  149
+
+
+>sp|Q5SLC9|PILB_THET8 Type IV pilus assembly ATPase PilB OS=Thermus 
+thermophilus (strain HB8 / ATCC 27634 / DSM 579) OX=300852 
+GN=pilB PE=1 SV=1
+Length=889
+
+ Score = 38.7 bits (89),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 37/123 (30%), Positives = 63/123 (51%), Gaps = 7/123 (6%)
+
+Query  6    AETRIVEALLERRRLKDTDLVRA---RQESGMGLLALLGRLGLVSERDHAETCAEVLGLP  62
+             + R+  ALL+   L D +L RA    +E G  L  +L  +GL+SER  A+T  +  G+P
+Sbjct  7    GDKRLGAALLDAGLLTDEELQRALERHREVGGSLAEVLVDMGLLSERRIAQTIEDRFGIP  66
+
+Query  63   LVDARQLGDTPPEMEVQGLSLRFLKQFHLCP--VGERDGRLDLWIADPYDDYAIDAVRLA  120
+            LV+  ++ + PP+++   L     K+    P  + E  G + +   +P D  +++ V   
+Sbjct  67   LVELHRV-EIPPKVKAL-LPAEKAKELKAIPFALDEEAGVVRVAFLNPLDTLSLEEVEDL  124
+
+Query  121  TGL  123
+            TGL
+Sbjct  125  TGL  127
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.150    0.482    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0459    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5438270212
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

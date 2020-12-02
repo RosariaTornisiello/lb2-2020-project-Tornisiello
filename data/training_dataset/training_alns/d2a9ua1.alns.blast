@@ -1,0 +1,171 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2a9ua1
+
+Length=134
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P40818|UBP8_HUMAN Ubiquitin carboxyl-terminal hydrolase 8 OS=H...  269     4e-84
+sp|Q80U87|UBP8_MOUSE Ubiquitin carboxyl-terminal hydrolase 8 OS=M...  239     3e-73
+
+
+>sp|P40818|UBP8_HUMAN Ubiquitin carboxyl-terminal hydrolase 8 
+OS=Homo sapiens OX=9606 GN=USP8 PE=1 SV=1
+Length=1118
+
+ Score = 269 bits (687),  Expect = 4e-84, Method: Compositional matrix adjust.
+ Identities = 134/134 (100%), Positives = 134/134 (100%), Gaps = 0/134 (0%)
+
+Query  1    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  60
+            SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK
+Sbjct  6    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  65
+
+Query  61   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  120
+            YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK
+Sbjct  66   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  125
+
+Query  121  DRQEEAQRLQQKRQ  134
+            DRQEEAQRLQQKRQ
+Sbjct  126  DRQEEAQRLQQKRQ  139
+
+
+>sp|Q80U87|UBP8_MOUSE Ubiquitin carboxyl-terminal hydrolase 8 
+OS=Mus musculus OX=10090 GN=Usp8 PE=1 SV=2
+Length=1080
+
+ Score = 239 bits (609),  Expect = 3e-73, Method: Compositional matrix adjust.
+ Identities = 120/134 (90%), Positives = 126/134 (94%), Gaps = 0/134 (0%)
+
+Query  1    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  60
+            SVPKELYLSSSLKDLNKKTEVKPEK STK+Y+HSA KIFKTAEECRLDRDEERAYVLYMK
+Sbjct  6    SVPKELYLSSSLKDLNKKTEVKPEKTSTKNYIHSAQKIFKTAEECRLDRDEERAYVLYMK  65
+
+Query  61   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  120
+            YV VYNLIKKRPDFKQQQDY+ SILGP NIKKA+EEAERLSESLKLRYEEAEVRK+LEEK
+Sbjct  66   YVAVYNLIKKRPDFKQQQDYYLSILGPANIKKAIEEAERLSESLKLRYEEAEVRKQLEEK  125
+
+Query  121  DRQEEAQRLQQKRQ  134
+            DR+EE Q  QQKRQ
+Sbjct  126  DRREEEQLQQQKRQ  139
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.128    0.338    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4980689444
+Results from round 2
+
+
+Query= d2a9ua1
+
+Length=134
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q80U87|UBP8_MOUSE Ubiquitin carboxyl-terminal hydrolase 8 OS=M...  236     4e-72
+sp|P40818|UBP8_HUMAN Ubiquitin carboxyl-terminal hydrolase 8 OS=H...  233     5e-71
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q80U87|UBP8_MOUSE Ubiquitin carboxyl-terminal hydrolase 8 
+OS=Mus musculus OX=10090 GN=Usp8 PE=1 SV=2
+Length=1080
+
+ Score = 236 bits (601),  Expect = 4e-72, Method: Composition-based stats.
+ Identities = 120/134 (90%), Positives = 126/134 (94%), Gaps = 0/134 (0%)
+
+Query  1    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  60
+            SVPKELYLSSSLKDLNKKTEVKPEK STK+Y+HSA KIFKTAEECRLDRDEERAYVLYMK
+Sbjct  6    SVPKELYLSSSLKDLNKKTEVKPEKTSTKNYIHSAQKIFKTAEECRLDRDEERAYVLYMK  65
+
+Query  61   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  120
+            YV VYNLIKKRPDFKQQQDY+ SILGP NIKKA+EEAERLSESLKLRYEEAEVRK+LEEK
+Sbjct  66   YVAVYNLIKKRPDFKQQQDYYLSILGPANIKKAIEEAERLSESLKLRYEEAEVRKQLEEK  125
+
+Query  121  DRQEEAQRLQQKRQ  134
+            DR+EE Q  QQKRQ
+Sbjct  126  DRREEEQLQQQKRQ  139
+
+
+>sp|P40818|UBP8_HUMAN Ubiquitin carboxyl-terminal hydrolase 8 
+OS=Homo sapiens OX=9606 GN=USP8 PE=1 SV=1
+Length=1118
+
+ Score = 233 bits (593),  Expect = 5e-71, Method: Composition-based stats.
+ Identities = 134/134 (100%), Positives = 134/134 (100%), Gaps = 0/134 (0%)
+
+Query  1    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  60
+            SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK
+Sbjct  6    SVPKELYLSSSLKDLNKKTEVKPEKISTKSYVHSALKIFKTAEECRLDRDEERAYVLYMK  65
+
+Query  61   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  120
+            YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK
+Sbjct  66   YVTVYNLIKKRPDFKQQQDYFHSILGPGNIKKAVEEAERLSESLKLRYEEAEVRKKLEEK  125
+
+Query  121  DRQEEAQRLQQKRQ  134
+            DRQEEAQRLQQKRQ
+Sbjct  126  DRQEEAQRLQQKRQ  139
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.129    0.337    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4980689444
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,399 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2qklb_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O13828|DCP2_SCHPO mRNA decapping complex subunit 2 OS=Schizosa...  194     7e-59
+sp|Q75BK1|DCP2_ASHGO mRNA-decapping enzyme subunit 2 OS=Ashbya go...  85.9    5e-20
+sp|A6ZRW5|DCP2_YEAS7 mRNA-decapping enzyme subunit 2 OS=Saccharom...  85.5    7e-20
+sp|P53550|DCP2_YEAST m7GpppN-mRNA hydrolase OS=Saccharomyces cere...  85.1    9e-20
+sp|Q8IU60|DCP2_HUMAN m7GpppN-mRNA hydrolase OS=Homo sapiens OX=96...  82.0    1e-18
+sp|Q9CYC6|DCP2_MOUSE m7GpppN-mRNA hydrolase OS=Mus musculus OX=10...  81.3    2e-18
+sp|Q5REQ8|DCP2_PONAB m7GpppN-mRNA hydrolase OS=Pongo abelii OX=96...  78.2    2e-17
+sp|Q8GW31|DCP2_ARATH mRNA-decapping enzyme subunit 2 OS=Arabidops...  72.0    3e-15
+sp|O62255|DCP2_CAEEL mRNA-decapping enzyme 2 OS=Caenorhabditis el...  53.5    1e-08
+
+
+>sp|O13828|DCP2_SCHPO mRNA decapping complex subunit 2 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=dcp2 
+PE=1 SV=1
+Length=741
+
+ Score = 194 bits (493),  Expect = 7e-59, Method: Compositional matrix adjust.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1   SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL  60
+           SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL
+Sbjct  2   SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL  61
+
+Query  61  RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR  90
+           RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR
+Sbjct  62  RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR  91
+
+
+>sp|Q75BK1|DCP2_ASHGO mRNA-decapping enzyme subunit 2 OS=Ashbya 
+gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL 
+Y-1056) OX=284811 GN=DCP2 PE=3 SV=1
+Length=880
+
+ Score = 85.9 bits (211),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 35/86 (41%), Positives = 56/86 (65%), Gaps = 1/86 (1%)
+
+Query  4   NATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVF  63
+           + +  + L+DL  RFI+N+P E+ ++VER  F  E+A WFY DF++  N  LP++  + F
+Sbjct  11  SVSLERALEDLIVRFIINVPPEDLATVERELFHFEEAQWFYTDFVKLTNPHLPNMKFKTF  70
+
+Query  64  SAKLFAHCPLLWKWSKVH-EEAFDDF  88
+           ++ + + CPL+WKW  V+ EEA   F
+Sbjct  71  ASYVISLCPLVWKWQDVNPEEALQKF  96
+
+
+>sp|A6ZRW5|DCP2_YEAS7 mRNA-decapping enzyme subunit 2 OS=Saccharomyces 
+cerevisiae (strain YJM789) OX=307796 GN=DCP2 PE=3 SV=1
+Length=970
+
+ Score = 85.5 bits (210),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 38/83 (46%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  6   TFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSA  65
+           +  ++L+DL  RFI+N P E+ SSVER  F  E+A WFY DFI+  N  LPSL ++ F+ 
+Sbjct  14  SVDRILEDLLVRFIINCPNEDLSSVERELFHFEEASWFYTDFIKLMNPTLPSLKIKSFAQ  73
+
+Query  66  KLFAHCPLLWKWSKVHEEAFDDF  88
+            +   CPL+WKW    +EA   F
+Sbjct  74  LIIKLCPLVWKWDIRVDEALQQF  96
+
+
+>sp|P53550|DCP2_YEAST m7GpppN-mRNA hydrolase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DCP2 PE=1 
+SV=1
+Length=970
+
+ Score = 85.1 bits (209),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 38/83 (46%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  6   TFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSA  65
+           +  ++L+DL  RFI+N P E+ SSVER  F  E+A WFY DFI+  N  LPSL ++ F+ 
+Sbjct  14  SVDRILEDLLVRFIINCPNEDLSSVERELFHFEEASWFYTDFIKLMNPTLPSLKIKSFAQ  73
+
+Query  66  KLFAHCPLLWKWSKVHEEAFDDF  88
+            +   CPL+WKW    +EA   F
+Sbjct  74  LIIKLCPLVWKWDIRVDEALQQF  96
+
+
+>sp|Q8IU60|DCP2_HUMAN m7GpppN-mRNA hydrolase OS=Homo sapiens OX=9606 
+GN=DCP2 PE=1 SV=3
+Length=420
+
+ Score = 82.0 bits (201),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 37/80 (46%), Positives = 51/80 (64%), Gaps = 0/80 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       LP  G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLPQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDD  87
+           F+HCP L    +  E+  D+
+Sbjct  70  FSHCPFLLPQGEDVEKVLDE  89
+
+
+>sp|Q9CYC6|DCP2_MOUSE m7GpppN-mRNA hydrolase OS=Mus musculus OX=10090 
+GN=Dcp2 PE=1 SV=2
+Length=422
+
+ Score = 81.3 bits (199),  Expect = 2e-18, Method: Compositional matrix adjust.
+ Identities = 37/80 (46%), Positives = 51/80 (64%), Gaps = 0/80 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       LP  G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLPQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDD  87
+           F+HCP L    +  E+  D+
+Sbjct  70  FSHCPFLLPQGEDVEKILDE  89
+
+
+>sp|Q5REQ8|DCP2_PONAB m7GpppN-mRNA hydrolase OS=Pongo abelii OX=9601 
+GN=DCP2 PE=2 SV=1
+Length=385
+
+ Score = 78.2 bits (191),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 36/80 (45%), Positives = 50/80 (63%), Gaps = 0/80 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       L   G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLSQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDD  87
+           F+HCP L    +  E+  D+
+Sbjct  70  FSHCPFLLPEGEDVEKVLDE  89
+
+
+>sp|Q8GW31|DCP2_ARATH mRNA-decapping enzyme subunit 2 OS=Arabidopsis 
+thaliana OX=3702 GN=DCP2 PE=1 SV=1
+Length=373
+
+ Score = 72.0 bits (175),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 33/80 (41%), Positives = 52/80 (65%), Gaps = 0/80 (0%)
+
+Query  9    QVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKLF  68
+            ++LDDL +RF+LN+P E+Q S ER+ F +E A+W+YED     + +L SL L+ F++ LF
+Sbjct  22   ELLDDLCSRFVLNVPEEDQQSFERILFLVEYAYWYYEDNAVENDPKLKSLSLKEFTSLLF  81
+
+Query  69   AHCPLLWKWSKVHEEAFDDF  88
+              C +L  +    ++ F DF
+Sbjct  82   NSCDVLRPYVTHIDDIFKDF  101
+
+
+>sp|O62255|DCP2_CAEEL mRNA-decapping enzyme 2 OS=Caenorhabditis 
+elegans OX=6239 GN=dcap-2 PE=2 SV=4
+Length=786
+
+ Score = 53.5 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 28/84 (33%), Positives = 50/84 (60%), Gaps = 4/84 (5%)
+
+Query  8    SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQL---PSLGLRVFS  64
+            + +LD+L  RFI N+   E +   R+CF +E AHW+Y D +  ++D++   P++G R F+
+Sbjct  151  TDILDELEFRFISNMVECEINDNIRVCFHLELAHWYYIDHM-VEDDKISGCPNVGSRDFN  209
+
+Query  65   AKLFAHCPLLWKWSKVHEEAFDDF  88
+             ++  HC +L K++   +E    F
+Sbjct  210  FQMCQHCRVLRKYAHRADEVLAKF  233
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.137    0.437    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 2
+
+
+Query= d2qklb_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O13828|DCP2_SCHPO mRNA decapping complex subunit 2 OS=Schizosa...  149     1e-42
+sp|A6ZRW5|DCP2_YEAS7 mRNA-decapping enzyme subunit 2 OS=Saccharom...  134     7e-37
+sp|P53550|DCP2_YEAST m7GpppN-mRNA hydrolase OS=Saccharomyces cere...  133     8e-37
+sp|Q75BK1|DCP2_ASHGO mRNA-decapping enzyme subunit 2 OS=Ashbya go...  132     3e-36
+sp|Q9CYC6|DCP2_MOUSE m7GpppN-mRNA hydrolase OS=Mus musculus OX=10...  127     2e-35
+sp|Q8IU60|DCP2_HUMAN m7GpppN-mRNA hydrolase OS=Homo sapiens OX=96...  127     2e-35
+sp|Q8GW31|DCP2_ARATH mRNA-decapping enzyme subunit 2 OS=Arabidops...  123     4e-34
+sp|Q5REQ8|DCP2_PONAB m7GpppN-mRNA hydrolase OS=Pongo abelii OX=96...  120     3e-33
+sp|O62255|DCP2_CAEEL mRNA-decapping enzyme 2 OS=Caenorhabditis el...  120     5e-32
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O13828|DCP2_SCHPO mRNA decapping complex subunit 2 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=dcp2 
+PE=1 SV=1
+Length=741
+
+ Score = 149 bits (377),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1   SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL  60
+           SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL
+Sbjct  2   SFTNATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGL  61
+
+Query  61  RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR  90
+           RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR
+Sbjct  62  RVFSAKLFAHCPLLWKWSKVHEEAFDDFLR  91
+
+
+>sp|A6ZRW5|DCP2_YEAS7 mRNA-decapping enzyme subunit 2 OS=Saccharomyces 
+cerevisiae (strain YJM789) OX=307796 GN=DCP2 PE=3 SV=1
+Length=970
+
+ Score = 134 bits (336),  Expect = 7e-37, Method: Composition-based stats.
+ Identities = 38/83 (46%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  6   TFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSA  65
+           +  ++L+DL  RFI+N P E+ SSVER  F  E+A WFY DFI+  N  LPSL ++ F+ 
+Sbjct  14  SVDRILEDLLVRFIINCPNEDLSSVERELFHFEEASWFYTDFIKLMNPTLPSLKIKSFAQ  73
+
+Query  66  KLFAHCPLLWKWSKVHEEAFDDF  88
+            +   CPL+WKW    +EA   F
+Sbjct  74  LIIKLCPLVWKWDIRVDEALQQF  96
+
+
+>sp|P53550|DCP2_YEAST m7GpppN-mRNA hydrolase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DCP2 PE=1 
+SV=1
+Length=970
+
+ Score = 133 bits (335),  Expect = 8e-37, Method: Composition-based stats.
+ Identities = 38/83 (46%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  6   TFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSA  65
+           +  ++L+DL  RFI+N P E+ SSVER  F  E+A WFY DFI+  N  LPSL ++ F+ 
+Sbjct  14  SVDRILEDLLVRFIINCPNEDLSSVERELFHFEEASWFYTDFIKLMNPTLPSLKIKSFAQ  73
+
+Query  66  KLFAHCPLLWKWSKVHEEAFDDF  88
+            +   CPL+WKW    +EA   F
+Sbjct  74  LIIKLCPLVWKWDIRVDEALQQF  96
+
+
+>sp|Q75BK1|DCP2_ASHGO mRNA-decapping enzyme subunit 2 OS=Ashbya 
+gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL 
+Y-1056) OX=284811 GN=DCP2 PE=3 SV=1
+Length=880
+
+ Score = 132 bits (332),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 35/86 (41%), Positives = 56/86 (65%), Gaps = 1/86 (1%)
+
+Query  4   NATFSQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVF  63
+           + +  + L+DL  RFI+N+P E+ ++VER  F  E+A WFY DF++  N  LP++  + F
+Sbjct  11  SVSLERALEDLIVRFIINVPPEDLATVERELFHFEEAQWFYTDFVKLTNPHLPNMKFKTF  70
+
+Query  64  SAKLFAHCPLLWKWSKVH-EEAFDDF  88
+           ++ + + CPL+WKW  V+ EEA   F
+Sbjct  71  ASYVISLCPLVWKWQDVNPEEALQKF  96
+
+
+>sp|Q9CYC6|DCP2_MOUSE m7GpppN-mRNA hydrolase OS=Mus musculus OX=10090 
+GN=Dcp2 PE=1 SV=2
+Length=422
+
+ Score = 127 bits (318),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 37/81 (46%), Positives = 52/81 (64%), Gaps = 0/81 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       LP  G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLPQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDDF  88
+           F+HCP L    +  E+  D++
+Sbjct  70  FSHCPFLLPQGEDVEKILDEW  90
+
+
+>sp|Q8IU60|DCP2_HUMAN m7GpppN-mRNA hydrolase OS=Homo sapiens OX=9606 
+GN=DCP2 PE=1 SV=3
+Length=420
+
+ Score = 127 bits (318),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 37/81 (46%), Positives = 52/81 (64%), Gaps = 0/81 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       LP  G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLPQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDDF  88
+           F+HCP L    +  E+  D++
+Sbjct  70  FSHCPFLLPQGEDVEKVLDEW  90
+
+
+>sp|Q8GW31|DCP2_ARATH mRNA-decapping enzyme subunit 2 OS=Arabidopsis 
+thaliana OX=3702 GN=DCP2 PE=1 SV=1
+Length=373
+
+ Score = 123 bits (308),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 33/80 (41%), Positives = 52/80 (65%), Gaps = 0/80 (0%)
+
+Query  9    QVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKLF  68
+            ++LDDL +RF+LN+P E+Q S ER+ F +E A+W+YED     + +L SL L+ F++ LF
+Sbjct  22   ELLDDLCSRFVLNVPEEDQQSFERILFLVEYAYWYYEDNAVENDPKLKSLSLKEFTSLLF  81
+
+Query  69   AHCPLLWKWSKVHEEAFDDF  88
+              C +L  +    ++ F DF
+Sbjct  82   NSCDVLRPYVTHIDDIFKDF  101
+
+
+>sp|Q5REQ8|DCP2_PONAB m7GpppN-mRNA hydrolase OS=Pongo abelii OX=9601 
+GN=DCP2 PE=2 SV=1
+Length=385
+
+ Score = 120 bits (302),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 36/81 (44%), Positives = 51/81 (63%), Gaps = 0/81 (0%)
+
+Query  8   SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQNDQLPSLGLRVFSAKL  67
+             VLDDL +RFIL++P+EE+ +  R+CFQIE AHWFY DF       L   G+R F+  +
+Sbjct  10  GSVLDDLCSRFILHIPSEERDNAIRVCFQIELAHWFYLDFYMQNTPGLSQCGIRDFAKAV  69
+
+Query  68  FAHCPLLWKWSKVHEEAFDDF  88
+           F+HCP L    +  E+  D++
+Sbjct  70  FSHCPFLLPEGEDVEKVLDEW  90
+
+
+>sp|O62255|DCP2_CAEEL mRNA-decapping enzyme 2 OS=Caenorhabditis 
+elegans OX=6239 GN=dcap-2 PE=2 SV=4
+Length=786
+
+ Score = 120 bits (300),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 46/83 (55%), Gaps = 2/83 (2%)
+
+Query  8    SQVLDDLSARFILNLPAEEQSSVERLCFQIEQAHWFYEDFIRAQN--DQLPSLGLRVFSA  65
+            + +LD+L  RFI N+   E +   R+CF +E AHW+Y D +   +     P++G R F+ 
+Sbjct  151  TDILDELEFRFISNMVECEINDNIRVCFHLELAHWYYIDHMVEDDKISGCPNVGSRDFNF  210
+
+Query  66   KLFAHCPLLWKWSKVHEEAFDDF  88
+            ++  HC +L K++   +E    F
+Sbjct  211  QMCQHCRVLRKYAHRADEVLAKF  233
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.137    0.403    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0419    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

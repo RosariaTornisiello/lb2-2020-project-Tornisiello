@@ -1,0 +1,291 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2mcma_
+
+Length=112
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P01549|MACM_STRMA Macromomycin OS=Streptomyces macromomyceticu...  216     6e-73
+sp|P0A3S0|NCZS_STRML Neocarzinostatin OS=Streptomyces malayensis ...  90.5    1e-23
+sp|P0A3R9|NCZS_STRCZ Neocarzinostatin OS=Streptomyces carzinostat...  80.5    2e-19
+sp|Q06110|CAGA_STRGL Antitumor antibiotic C-1027 apoprotein OS=St...  68.2    1e-14
+sp|P01551|ATXA_STRGL Actinoxanthin OS=Streptomyces globisporus OX...  67.4    3e-14
+sp|P41249|KEDA_ACTSL Apokedarcidin OS=Actinomycete sp. (strain L5...  54.7    1e-09
+
+
+>sp|P01549|MACM_STRMA Macromomycin OS=Streptomyces macromomyceticus 
+OX=1917 PE=1 SV=2
+Length=144
+
+ Score = 216 bits (550),  Expect = 6e-73, Method: Compositional matrix adjust.
+ Identities = 111/112 (99%), Positives = 112/112 (100%), Gaps = 0/112 (0%)
+
+Query  1    APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  60
+            APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG
+Sbjct  33   APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  92
+
+Query  61   KITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  112
+            KITAQLKVHSSFQAVVGA+GTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA
+Sbjct  93   KITAQLKVHSSFQAVVGANGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  144
+
+
+>sp|P0A3S0|NCZS_STRML Neocarzinostatin OS=Streptomyces malayensis 
+OX=1918 GN=ncsA PE=1 SV=1
+Length=113
+
+ Score = 90.5 bits (223),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 52/112 (46%), Positives = 67/112 (60%), Gaps = 2/112 (2%)
+
+Query  1    APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  60
+            AP  TVTP++GLS+G  V V+  GL  GT Y VGQCA V+ GV+ C+    + VTADA G
+Sbjct  2    APTATVTPSSGLSDGTVVKVAGAGLQAGTAYDVGQCAWVDTGVLACNPADFSSVTADANG  61
+
+Query  61   KITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEG-AAQAITF  111
+              +  L V  SF+  +  DGT WGTV+C   +C  GL   +G G    AI+F
+Sbjct  62   SASTSLTVRRSFEGFL-FDGTRWGTVDCTTAACQVGLSDAAGNGPEGVAISF  112
+
+
+>sp|P0A3R9|NCZS_STRCZ Neocarzinostatin OS=Streptomyces carzinostaticus 
+OX=1897 GN=ncsA PE=1 SV=1
+Length=147
+
+ Score = 80.5 bits (197),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 46/104 (44%), Positives = 61/104 (59%), Gaps = 2/104 (2%)
+
+Query  9    ATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGKITAQLKV  68
+            ++GLS+G  V V+  GL  GT Y VGQCA V+ GV+ C+    + VTADA G  +  L V
+Sbjct  44   SSGLSDGTVVKVAGAGLQAGTAYDVGQCAWVDTGVLACNPADFSSVTADANGSASTSLTV  103
+
+Query  69   HSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEG-AAQAITF  111
+              SF+  +  DGT WGTV+C   +C  GL   +G G    AI+F
+Sbjct  104  RRSFEGFL-FDGTRWGTVDCTTAACQVGLSDAAGNGPEGVAISF  146
+
+
+>sp|Q06110|CAGA_STRGL Antitumor antibiotic C-1027 apoprotein OS=Streptomyces 
+globisporus OX=1908 GN=cagA PE=1 SV=1
+Length=143
+
+ Score = 68.2 bits (165),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 41/110 (37%), Positives = 63/110 (57%), Gaps = 2/110 (2%)
+
+Query  2    PGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGK  61
+            P  +V+PA+GLS+GQ+V+VS +G   G  Y++ QCA V  G   C+  T+T  T DA+G 
+Sbjct  35   PAFSVSPASGLSDGQSVSVSVSGAAAGETYYIAQCAPVG-GQDACNPATATSFTTDASGA  93
+
+Query  62   ITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITF  111
+             +    V  S+      +GTP G+V+C   +C+ G G+   +    A+TF
+Sbjct  94   ASFSFVVRKSYTGST-PEGTPVGSVDCATAACNLGAGNSGLDLGHVALTF  142
+
+
+>sp|P01551|ATXA_STRGL Actinoxanthin OS=Streptomyces globisporus 
+OX=1908 GN=axnA PE=1 SV=2
+Length=143
+
+ Score = 67.4 bits (163),  Expect = 3e-14, Method: Compositional matrix adjust.
+ Identities = 41/110 (37%), Positives = 63/110 (57%), Gaps = 2/110 (2%)
+
+Query  2    PGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGK  61
+            P  +V+PA+GLS+GQ+V+VS +G   G  Y++ QCA V  G   C+  T+T  T DA+G 
+Sbjct  35   PAFSVSPASGLSDGQSVSVSVSGAAAGETYYIAQCAPVG-GQDACNPATATSFTTDASGA  93
+
+Query  62   ITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITF  111
+             +    V  S+      +GTP G+V+C   +C+ G G+   +    A+TF
+Sbjct  94   ASFSFVVRKSYAGST-PEGTPVGSVDCATDACNLGAGNSGLDLGHVALTF  142
+
+
+>sp|P41249|KEDA_ACTSL Apokedarcidin OS=Actinomycete sp. (strain 
+L585-6 / ATCC 53650) OX=38989 PE=1 SV=1
+Length=114
+
+ Score = 54.7 bits (130),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 40/110 (36%), Positives = 57/110 (52%), Gaps = 3/110 (3%)
+
+Query  4    VTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGKIT  63
+            V+V+PATGL++G TVTVSA+G    T     QCA++  G   C+     D +  + G+ T
+Sbjct  5    VSVSPATGLADGATVTVSASGFATSTSATALQCAILADGRGACNVAEFHDFSL-SGGEGT  63
+
+Query  64   AQLKVHSSFQAVVGADGTPWGTVNCKVV--SCSAGLGSDSGEGAAQAITF  111
+              + V  SF   V  DG   G V+C      C   +G ++GE    AI+F
+Sbjct  64   TSVVVRRSFTGYVMPDGPEVGAVDCDTAPGGCEIVVGGNTGEYGNAAISF  113
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.127    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048080192
+Results from round 2
+
+
+Query= d2mcma_
+
+Length=112
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P01549|MACM_STRMA Macromomycin OS=Streptomyces macromomyceticu...  109     1e-30
+sp|P0A3R9|NCZS_STRCZ Neocarzinostatin OS=Streptomyces carzinostat...  106     2e-29
+sp|P0A3S0|NCZS_STRML Neocarzinostatin OS=Streptomyces malayensis ...  102     2e-28
+sp|Q06110|CAGA_STRGL Antitumor antibiotic C-1027 apoprotein OS=St...  94.1    1e-24
+sp|P01551|ATXA_STRGL Actinoxanthin OS=Streptomyces globisporus OX...  93.3    2e-24
+sp|P41249|KEDA_ACTSL Apokedarcidin OS=Actinomycete sp. (strain L5...  85.6    1e-21
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P01549|MACM_STRMA Macromomycin OS=Streptomyces macromomyceticus 
+OX=1917 PE=1 SV=2
+Length=144
+
+ Score = 109 bits (272),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 111/112 (99%), Positives = 112/112 (100%), Gaps = 0/112 (0%)
+
+Query  1    APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  60
+            APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG
+Sbjct  33   APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  92
+
+Query  61   KITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  112
+            KITAQLKVHSSFQAVVGA+GTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA
+Sbjct  93   KITAQLKVHSSFQAVVGANGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  144
+
+
+>sp|P0A3R9|NCZS_STRCZ Neocarzinostatin OS=Streptomyces carzinostaticus 
+OX=1897 GN=ncsA PE=1 SV=1
+Length=147
+
+ Score = 106 bits (263),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 46/104 (44%), Positives = 61/104 (59%), Gaps = 2/104 (2%)
+
+Query  9    ATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGKITAQLKV  68
+            ++GLS+G  V V+  GL  GT Y VGQCA V+ GV+ C+    + VTADA G  +  L V
+Sbjct  44   SSGLSDGTVVKVAGAGLQAGTAYDVGQCAWVDTGVLACNPADFSSVTADANGSASTSLTV  103
+
+Query  69   HSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEG-AAQAITF  111
+              SF+  +  DGT WGTV+C   +C  GL   +G G    AI+F
+Sbjct  104  RRSFEGFL-FDGTRWGTVDCTTAACQVGLSDAAGNGPEGVAISF  146
+
+
+>sp|P0A3S0|NCZS_STRML Neocarzinostatin OS=Streptomyces malayensis 
+OX=1918 GN=ncsA PE=1 SV=1
+Length=113
+
+ Score = 102 bits (255),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 52/112 (46%), Positives = 67/112 (60%), Gaps = 2/112 (2%)
+
+Query  1    APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  60
+            AP  TVTP++GLS+G  V V+  GL  GT Y VGQCA V+ GV+ C+    + VTADA G
+Sbjct  2    APTATVTPSSGLSDGTVVKVAGAGLQAGTAYDVGQCAWVDTGVLACNPADFSSVTADANG  61
+
+Query  61   KITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEG-AAQAITF  111
+              +  L V  SF+  +  DGT WGTV+C   +C  GL   +G G    AI+F
+Sbjct  62   SASTSLTVRRSFEGFL-FDGTRWGTVDCTTAACQVGLSDAAGNGPEGVAISF  112
+
+
+>sp|Q06110|CAGA_STRGL Antitumor antibiotic C-1027 apoprotein OS=Streptomyces 
+globisporus OX=1908 GN=cagA PE=1 SV=1
+Length=143
+
+ Score = 94.1 bits (232),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 41/111 (37%), Positives = 63/111 (57%), Gaps = 2/111 (2%)
+
+Query  2    PGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGK  61
+            P  +V+PA+GLS+GQ+V+VS +G   G  Y++ QCA V  G   C+  T+T  T DA+G 
+Sbjct  35   PAFSVSPASGLSDGQSVSVSVSGAAAGETYYIAQCAPVG-GQDACNPATATSFTTDASGA  93
+
+Query  62   ITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  112
+             +    V  S+      +GTP G+V+C   +C+ G G+   +    A+TF 
+Sbjct  94   ASFSFVVRKSYTGST-PEGTPVGSVDCATAACNLGAGNSGLDLGHVALTFG  143
+
+
+>sp|P01551|ATXA_STRGL Actinoxanthin OS=Streptomyces globisporus 
+OX=1908 GN=axnA PE=1 SV=2
+Length=143
+
+ Score = 93.3 bits (230),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 41/111 (37%), Positives = 63/111 (57%), Gaps = 2/111 (2%)
+
+Query  2    PGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAGK  61
+            P  +V+PA+GLS+GQ+V+VS +G   G  Y++ QCA V  G   C+  T+T  T DA+G 
+Sbjct  35   PAFSVSPASGLSDGQSVSVSVSGAAAGETYYIAQCAPVG-GQDACNPATATSFTTDASGA  93
+
+Query  62   ITAQLKVHSSFQAVVGADGTPWGTVNCKVVSCSAGLGSDSGEGAAQAITFA  112
+             +    V  S+      +GTP G+V+C   +C+ G G+   +    A+TF 
+Sbjct  94   ASFSFVVRKSYAGST-PEGTPVGSVDCATDACNLGAGNSGLDLGHVALTFG  143
+
+
+>sp|P41249|KEDA_ACTSL Apokedarcidin OS=Actinomycete sp. (strain 
+L585-6 / ATCC 53650) OX=38989 PE=1 SV=1
+Length=114
+
+ Score = 85.6 bits (210),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 40/114 (35%), Positives = 58/114 (51%), Gaps = 3/114 (3%)
+
+Query  1    APGVTVTPATGLSNGQTVTVSATGLTPGTVYHVGQCAVVEPGVIGCDATTSTDVTADAAG  60
+            +  V+V+PATGL++G TVTVSA+G    T     QCA++  G   C+     D +  + G
+Sbjct  2    SAAVSVSPATGLADGATVTVSASGFATSTSATALQCAILADGRGACNVAEFHDFSL-SGG  60
+
+Query  61   KITAQLKVHSSFQAVVGADGTPWGTVNCKVV--SCSAGLGSDSGEGAAQAITFA  112
+            + T  + V  SF   V  DG   G V+C      C   +G ++GE    AI+F 
+Sbjct  61   EGTTSVVVRRSFTGYVMPDGPEVGAVDCDTAPGGCEIVVGGNTGEYGNAAISFG  114
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.123    0.320    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0378    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048080192
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

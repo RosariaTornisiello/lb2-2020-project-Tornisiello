@@ -1,0 +1,189 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3essa_
+
+Length=199
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q5EK40|CHXA_VIBCL Cholix toxin OS=Vibrio cholerae OX=666 GN=ch...  401     4e-137
+sp|P11439|TOXA_PSEAE Exotoxin A OS=Pseudomonas aeruginosa (strain...  130     3e-34 
+
+
+>sp|Q5EK40|CHXA_VIBCL Cholix toxin OS=Vibrio cholerae OX=666 GN=chxA 
+PE=1 SV=1
+Length=666
+
+ Score = 401 bits (1030),  Expect = 4e-137, Method: Compositional matrix adjust.
+ Identities = 198/207 (96%), Positives = 198/207 (96%), Gaps = 9/207 (4%)
+
+Query  2    AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPV---------  52
+            AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPV         
+Sbjct  459  AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPVPRGNNTENE  518
+
+Query  53   EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT  112
+            EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT
+Sbjct  519  EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT  578
+
+Query  113  PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE  172
+            PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE
+Sbjct  579  PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE  638
+
+Query  173  LAIDEEAVAKEQSISTKPPYKERKDEL  199
+            LAIDEEAVAKEQSISTKPPYKERKDEL
+Sbjct  639  LAIDEEAVAKEQSISTKPPYKERKDEL  665
+
+
+>sp|P11439|TOXA_PSEAE Exotoxin A OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 
+/ 1C / PRS 101 / PAO1) OX=208964 GN=eta PE=1 SV=2
+Length=638
+
+ Score = 130 bits (328),  Expect = 3e-34, Method: Compositional matrix adjust.
+ Identities = 82/199 (41%), Positives = 109/199 (55%), Gaps = 17/199 (9%)
+
+Query  4    ITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIV-----NRIAPVEK-WGG  57
+             + +G  NWT + L   H+ L   GYVFVGYHGT   AAQ+IV      R   ++  W G
+Sbjct  434  FSTRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGGVRARSQDLDAIWRG  493
+
+Query  58   LYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNTPLENA  117
+             Y+A    +A+GYA+ +E       P    R   G +LRVY+PR+SL  FYRT   L   
+Sbjct  494  FYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAAP  546
+
+Query  118  EE--HITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEELA-  174
+            E    + ++IGH LPLR +A TGPE  GG  ET++GW +A   V IPS IP +       
+Sbjct  547  EAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVGGD  606
+
+Query  175  IDEEAVA-KEQSISTKPPY  192
+            +D  ++  KEQ+IS  P Y
+Sbjct  607  LDPSSIPDKEQAISALPDY  625
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.132    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12156847734
+Results from round 2
+
+
+Query= d3essa_
+
+Length=199
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5EK40|CHXA_VIBCL Cholix toxin OS=Vibrio cholerae OX=666 GN=ch...  357     8e-120
+sp|P11439|TOXA_PSEAE Exotoxin A OS=Pseudomonas aeruginosa (strain...  299     1e-97 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q5EK40|CHXA_VIBCL Cholix toxin OS=Vibrio cholerae OX=666 GN=chxA 
+PE=1 SV=1
+Length=666
+
+ Score = 357 bits (915),  Expect = 8e-120, Method: Composition-based stats.
+ Identities = 198/207 (96%), Positives = 198/207 (96%), Gaps = 9/207 (4%)
+
+Query  2    AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPV---------  52
+            AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPV         
+Sbjct  459  AVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPVPRGNNTENE  518
+
+Query  53   EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT  112
+            EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT
+Sbjct  519  EKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNT  578
+
+Query  113  PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE  172
+            PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE
+Sbjct  579  PLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEE  638
+
+Query  173  LAIDEEAVAKEQSISTKPPYKERKDEL  199
+            LAIDEEAVAKEQSISTKPPYKERKDEL
+Sbjct  639  LAIDEEAVAKEQSISTKPPYKERKDEL  665
+
+
+>sp|P11439|TOXA_PSEAE Exotoxin A OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 
+/ 1C / PRS 101 / PAO1) OX=208964 GN=eta PE=1 SV=2
+Length=638
+
+ Score = 299 bits (765),  Expect = 1e-97, Method: Composition-based stats.
+ Identities = 82/202 (41%), Positives = 110/202 (54%), Gaps = 17/202 (8%)
+
+Query  4    ITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIV-----NRIAPVEK-WGG  57
+             + +G  NWT + L   H+ L   GYVFVGYHGT   AAQ+IV      R   ++  W G
+Sbjct  434  FSTRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGGVRARSQDLDAIWRG  493
+
+Query  58   LYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNTPLENA  117
+             Y+A    +A+GYA+ +E       P    R   G +LRVY+PR+SL  FYRT   L   
+Sbjct  494  FYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAAP  546
+
+Query  118  EE--HITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEELA-  174
+            E    + ++IGH LPLR +A TGPE  GG  ET++GW +A   V IPS IP +       
+Sbjct  547  EAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVGGD  606
+
+Query  175  IDEEAVA-KEQSISTKPPYKER  195
+            +D  ++  KEQ+IS  P Y  +
+Sbjct  607  LDPSSIPDKEQAISALPDYASQ  628
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.126    0.355    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0386    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12156847734
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,592 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d4fw1a2
+
+Length=53
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus (st...  112     7e-30
+sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus (str...  112     7e-30
+sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus R...  111     1e-29
+sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=1186...  110     2e-29
+sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  37.0    0.002
+sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  35.0    0.009
+
+
+>sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Schmidt-Ruppin B) OX=269447 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 112 bits (279),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Prague C) OX=11888 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 112 bits (279),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus 
+RSA OX=269446 GN=gag-pol PE=3 SV=2
+Length=1603
+
+ Score = 111 bits (277),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 52/53 (98%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD+
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDV  1549
+
+
+>sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=11864 
+GN=pol PE=3 SV=1
+Length=895
+
+ Score = 110 bits (276),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1    VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+            VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  789  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  841
+
+
+>sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain BR6) OX=11758 GN=gag-pro-pol PE=1 SV=3
+Length=1755
+
+ Score = 37.0 bits (84),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/39 (51%), Positives = 26/39 (67%), Gaps = 2/39 (5%)
+
+Query  14    TGEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             TG W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1662  TGSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+>sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain C3H) OX=11759 GN=gag-pro-pol PE=1 SV=2
+Length=1755
+
+ Score = 35.0 bits (79),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  15    GEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             G W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1663  GSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.139    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5080291218
+Results from round 2
+
+
+Query= d4fw1a2
+
+Length=53
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus (st...  115     7e-31
+sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus (str...  115     7e-31
+sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus R...  114     9e-31
+sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=1186...  113     2e-30
+
+Sequences not found previously or not previously below threshold:
+
+sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  38.0    0.001
+sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  36.1    0.004
+sp|Q9WJR5|POK19_HUMAN Endogenous retrovirus group K member 19 Pol...  35.3    0.008
+sp|P63136|POK25_HUMAN Endogenous retrovirus group K member 25 Pol...  35.3    0.008
+sp|P63133|POK8_HUMAN Endogenous retrovirus group K member 8 Pol p...  35.3    0.008
+sp|Q9BXR3|POK6_HUMAN Endogenous retrovirus group K member 6 Pol p...  35.3    0.008
+
+
+>sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Schmidt-Ruppin B) OX=269447 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 115 bits (287),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Prague C) OX=11888 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 115 bits (287),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus 
+RSA OX=269446 GN=gag-pol PE=3 SV=2
+Length=1603
+
+ Score = 114 bits (286),  Expect = 9e-31, Method: Composition-based stats.
+ Identities = 52/53 (98%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD+
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDV  1549
+
+
+>sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=11864 
+GN=pol PE=3 SV=1
+Length=895
+
+ Score = 113 bits (283),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1    VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+            VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  789  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  841
+
+
+>sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain BR6) OX=11758 GN=gag-pro-pol PE=1 SV=3
+Length=1755
+
+ Score = 38.0 bits (87),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/39 (51%), Positives = 26/39 (67%), Gaps = 2/39 (5%)
+
+Query  14    TGEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             TG W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1662  TGSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+>sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain C3H) OX=11759 GN=gag-pro-pol PE=1 SV=2
+Length=1755
+
+ Score = 36.1 bits (82),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  15    GEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             G W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1663  GSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+>sp|Q9WJR5|POK19_HUMAN Endogenous retrovirus group K member 19 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-19 PE=2 SV=2
+Length=959
+
+ Score = 35.3 bits (80),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 14/34 (41%), Positives = 21/34 (62%), Gaps = 1/34 (3%)
+
+Query  17   WEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  826  WEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  858
+
+
+>sp|P63136|POK25_HUMAN Endogenous retrovirus group K member 25 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-25 PE=3 SV=1
+Length=954
+
+ Score = 35.3 bits (80),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 14/34 (41%), Positives = 21/34 (62%), Gaps = 1/34 (3%)
+
+Query  17   WEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  821  WEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  853
+
+
+>sp|P63133|POK8_HUMAN Endogenous retrovirus group K member 8 Pol 
+protein OS=Homo sapiens OX=9606 GN=ERVK-8 PE=3 SV=1
+Length=956
+
+ Score = 35.3 bits (80),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 14/34 (41%), Positives = 21/34 (62%), Gaps = 1/34 (3%)
+
+Query  17   WEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  823  WEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+>sp|Q9BXR3|POK6_HUMAN Endogenous retrovirus group K member 6 Pol 
+protein OS=Homo sapiens OX=9606 GN=ERVK-6 PE=2 SV=2
+Length=956
+
+ Score = 35.3 bits (80),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 14/34 (41%), Positives = 21/34 (62%), Gaps = 1/34 (3%)
+
+Query  17   WEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  823  WEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.468    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5080291218
+Results from round 3
+
+
+Query= d4fw1a2
+
+Length=53
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus (st...  110     2e-29
+sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus (str...  110     2e-29
+sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus R...  110     3e-29
+sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=1186...  110     3e-29
+sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  69.7    6e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary tumo...  67.7    3e-14
+sp|P31623|POL_JSRV Gag-Pro-Pol polyprotein OS=Sheep pulmonary ade...  52.7    6e-09
+sp|P03364|POL_SMRVH Gag-Pro-Pol polyprotein OS=Squirrel monkey re...  45.0    3e-06
+sp|Q9WJR5|POK19_HUMAN Endogenous retrovirus group K member 19 Pol...  44.6    4e-06
+sp|P63136|POK25_HUMAN Endogenous retrovirus group K member 25 Pol...  44.2    5e-06
+sp|Q9BXR3|POK6_HUMAN Endogenous retrovirus group K member 6 Pol p...  44.2    5e-06
+sp|P63133|POK8_HUMAN Endogenous retrovirus group K member 8 Pol p...  44.2    5e-06
+sp|P63132|PO113_HUMAN Endogenous retrovirus group K member 113 Po...  43.5    1e-05
+sp|P63135|POK7_HUMAN Endogenous retrovirus group K member 7 Pol p...  43.5    1e-05
+sp|Q9UQG0|POK11_HUMAN Endogenous retrovirus group K member 11 Pol...  43.5    1e-05
+sp|P10266|POK10_HUMAN Endogenous retrovirus group K member 10 Pol...  42.7    2e-05
+sp|P04026|POL_IPHA Intracisternal A-particle Pol-related polyprot...  40.8    1e-04
+sp|P07572|POL_MPMV Gag-Pro-Pol polyprotein OS=Mason-Pfizer monkey...  39.6    3e-04
+sp|P51517|POL_SRV2 Gag-Pro-Pol polyprotein OS=Simian retrovirus S...  39.6    3e-04
+sp|P12894|POL_IPMAI Intracisternal A-particle Pol-related polypro...  39.2    3e-04
+sp|P04025|POL_SRV1 Gag-Pro-Pol polyprotein OS=Simian retrovirus S...  37.3    0.002
+
+
+>sp|O92956|POL_RSVSB Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Schmidt-Ruppin B) OX=269447 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 110 bits (275),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|P03354|POL_RSVP Gag-Pol polyprotein OS=Rous sarcoma virus 
+(strain Prague C) OX=11888 GN=gag-pol PE=1 SV=2
+Length=1603
+
+ Score = 110 bits (275),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  1549
+
+
+>sp|Q04095|POL_RSVSA Gag-Pol polyprotein OS=Avian leukosis virus 
+RSA OX=269446 GN=gag-pol PE=3 SV=2
+Length=1603
+
+ Score = 110 bits (275),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 52/53 (98%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1     VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+             VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPD+
+Sbjct  1497  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDV  1549
+
+
+>sp|Q7SQ98|POL_ALV Pol polyprotein OS=Avian leukosis virus OX=11864 
+GN=pol PE=3 SV=1
+Length=895
+
+ Score = 110 bits (274),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 53/53 (100%), Positives = 53/53 (100%), Gaps = 0/53 (0%)
+
+Query  1    VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  53
+            VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI
+Sbjct  789  VLTEGPPVKIRIETGEWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVKPDI  841
+
+
+>sp|P03365|POL_MMTVB Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain BR6) OX=11758 GN=gag-pro-pol PE=1 SV=3
+Length=1755
+
+ Score = 69.7 bits (169),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 20/39 (51%), Positives = 26/39 (67%), Gaps = 2/39 (5%)
+
+Query  14    TGEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             TG W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1662  TGSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+>sp|P11283|POL_MMTVC Gag-Pro-Pol polyprotein OS=Mouse mammary 
+tumor virus (strain C3H) OX=11759 GN=gag-pro-pol PE=1 SV=2
+Length=1755
+
+ Score = 67.7 bits (164),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  15    GEWEKGWNVLVW-GRGYAAVKNRDTDKVIWVPSRKVKP  51
+             G W KG +VL+  GRGYA V  +D +  IWVP R ++P
+Sbjct  1663  GSW-KGPDVLITAGRGYACVFPQDAETPIWVPDRFIRP  1699
+
+
+>sp|P31623|POL_JSRV Gag-Pro-Pol polyprotein OS=Sheep pulmonary 
+adenomatosis virus OX=11746 GN=pol PE=3 SV=2
+Length=1726
+
+ Score = 52.7 bits (125),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 15/38 (39%), Positives = 22/38 (58%), Gaps = 2/38 (5%)
+
+Query  14    TGEWEKGWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             T  W  G + VL+WGRG+  V  +D +   W+P R V+
+Sbjct  1674  TNLWY-GPDPVLIWGRGHVCVFPQDAEAPRWIPERLVR  1710
+
+
+>sp|P03364|POL_SMRVH Gag-Pro-Pol polyprotein OS=Squirrel monkey 
+retrovirus OX=11856 GN=pol PE=1 SV=3
+Length=1880
+
+ Score = 45.0 bits (105),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 15/38 (39%), Positives = 23/38 (61%), Gaps = 2/38 (5%)
+
+Query  14    TGEWEKGWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             T  W KG + VL+WGRG A + ++  D   W+P R ++
+Sbjct  1818  TSVW-KGPDPVLIWGRGSACIYDQKEDGPRWLPERLIR  1854
+
+
+>sp|Q9WJR5|POK19_HUMAN Endogenous retrovirus group K member 19 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-19 PE=2 SV=2
+Length=959
+
+ Score = 44.6 bits (104),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  825  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  858
+
+
+>sp|P63136|POK25_HUMAN Endogenous retrovirus group K member 25 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-25 PE=3 SV=1
+Length=954
+
+ Score = 44.2 bits (103),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  820  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  853
+
+
+>sp|Q9BXR3|POK6_HUMAN Endogenous retrovirus group K member 6 Pol 
+protein OS=Homo sapiens OX=9606 GN=ERVK-6 PE=2 SV=2
+Length=956
+
+ Score = 44.2 bits (103),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+>sp|P63133|POK8_HUMAN Endogenous retrovirus group K member 8 Pol 
+protein OS=Homo sapiens OX=9606 GN=ERVK-8 PE=3 SV=1
+Length=956
+
+ Score = 44.2 bits (103),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+>sp|P63132|PO113_HUMAN Endogenous retrovirus group K member 113 
+Pol protein OS=Homo sapiens OX=9606 GN=HERVK_113 PE=3 SV=1
+Length=956
+
+ Score = 43.5 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWMPTRHLK  855
+
+
+>sp|P63135|POK7_HUMAN Endogenous retrovirus group K member 7 Pol 
+protein OS=Homo sapiens OX=9606 GN=ERVK-7 PE=3 SV=1
+Length=1459
+
+ Score = 43.5 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+>sp|Q9UQG0|POK11_HUMAN Endogenous retrovirus group K member 11 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-11 PE=2 SV=2
+Length=969
+
+ Score = 43.5 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWIPTRHLK  855
+
+
+>sp|P10266|POK10_HUMAN Endogenous retrovirus group K member 10 
+Pol protein OS=Homo sapiens OX=9606 GN=ERVK-10 PE=3 SV=2
+Length=1014
+
+ Score = 42.7 bits (99),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 1/35 (3%)
+
+Query  16   EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             WE G  V+ WGRG+A V   +    +W+P+R +K
+Sbjct  822  TWEIG-KVITWGRGFACVSPGENQLPVWLPTRHLK  855
+
+
+>sp|P04026|POL_IPHA Intracisternal A-particle Pol-related polyprotein 
+(Fragment) OS=Hamster intracisternal a-particle H18 
+OX=11752 GN=pol PE=3 SV=1
+Length=863
+
+ Score = 40.8 bits (94),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 11/38 (29%), Positives = 20/38 (53%), Gaps = 2/38 (5%)
+
+Query  14   TGEWEKGWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            T  W KG + +L+  RG   V  ++ +  +W+P R  +
+Sbjct  769  TDLW-KGPDPILIRSRGAVCVFPQEEENPLWIPERLTR  805
+
+
+>sp|P07572|POL_MPMV Gag-Pro-Pol polyprotein OS=Mason-Pfizer monkey 
+virus OX=11855 GN=gag-pro-pol PE=1 SV=2
+Length=1771
+
+ Score = 39.6 bits (91),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/32 (41%), Positives = 19/32 (59%), Gaps = 1/32 (3%)
+
+Query  20    GWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             G + VL+WGRG   V ++  D   W+P R V+
+Sbjct  1730  GPDPVLIWGRGSVCVYSQTYDAARWLPERLVR  1761
+
+
+>sp|P51517|POL_SRV2 Gag-Pro-Pol polyprotein OS=Simian retrovirus 
+SRV-2 OX=39068 GN=pol PE=3 SV=2
+Length=1768
+
+ Score = 39.6 bits (91),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/32 (41%), Positives = 19/32 (59%), Gaps = 1/32 (3%)
+
+Query  20    GWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+             G + VL+WGRG   V ++  D   W+P R V+
+Sbjct  1727  GPDPVLIWGRGSVCVYSQTHDAARWLPERLVR  1758
+
+
+>sp|P12894|POL_IPMAI Intracisternal A-particle Pol-related polyprotein 
+(Fragment) OS=Mouse intracisternal a-particle IL3 OX=11754 
+PE=3 SV=1
+Length=814
+
+ Score = 39.2 bits (90),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 10/32 (31%), Positives = 16/32 (50%), Gaps = 1/32 (3%)
+
+Query  20   GWN-VLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+            G + +L+  RG   V  ++ D   WVP R  +
+Sbjct  741  GPDPILIRSRGAICVFPQNEDNPFWVPERLTR  772
+
+
+>sp|P04025|POL_SRV1 Gag-Pro-Pol polyprotein OS=Simian retrovirus 
+SRV-1 OX=11942 GN=pol PE=3 SV=2
+Length=1772
+
+ Score = 37.3 bits (85),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/35 (37%), Positives = 18/35 (51%), Gaps = 0/35 (0%)
+
+Query  16    EWEKGWNVLVWGRGYAAVKNRDTDKVIWVPSRKVK  50
+              W     V++WGRG   V ++  D   W+P R VK
+Sbjct  1728  TWPWPDPVIIWGRGSVCVYSQTHDAARWLPERLVK  1762
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.137    0.441    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0421    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5080291218
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ik9a1
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q13426|XRCC4_HUMAN DNA repair protein XRCC4 OS=Homo sapiens OX...  228     3e-75
+sp|Q924T3|XRCC4_MOUSE DNA repair protein XRCC4 OS=Mus musculus OX...  174     4e-54
+
+
+>sp|Q13426|XRCC4_HUMAN DNA repair protein XRCC4 OS=Homo sapiens 
+OX=9606 GN=XRCC4 PE=1 SV=2
+Length=336
+
+ Score = 228 bits (582),  Expect = 3e-75, Method: Compositional matrix adjust.
+ Identities = 112/117 (96%), Positives = 112/117 (96%), Gaps = 4/117 (3%)
+
+Query  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+            MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA
+Sbjct  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+
+Query  61   MEKGKYVGELRKALLS----ADVYTFNFSKESAYFFFEKNLKDVSFRLGSFNLEKVE  113
+            MEKGKYVGELRKALLS    ADVYTFNFSKES YFFFEKNLKDVSFRLGSFNLEKVE
+Sbjct  61   MEKGKYVGELRKALLSGAGPADVYTFNFSKESCYFFFEKNLKDVSFRLGSFNLEKVE  117
+
+
+>sp|Q924T3|XRCC4_MOUSE DNA repair protein XRCC4 OS=Mus musculus 
+OX=10090 GN=Xrcc4 PE=1 SV=1
+Length=326
+
+ Score = 174 bits (442),  Expect = 4e-54, Method: Compositional matrix adjust.
+ Identities = 85/116 (73%), Positives = 97/116 (84%), Gaps = 4/116 (3%)
+
+Query  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+            MERK+SRI+L SEP++ +FLQVSWE+ + SGFVITLTDGHSAWT TVSE EISQEADDMA
+Sbjct  1    MERKVSRIYLASEPNVPYFLQVSWERAIGSGFVITLTDGHSAWTATVSELEISQEADDMA  60
+
+Query  61   MEKGKYVGELRKALL----SADVYTFNFSKESAYFFFEKNLKDVSFRLGSFNLEKV  112
+            MEKGKY+ ELRKAL+    +A  Y F FSKES +F  EK LKDVSFRLGSFNL+KV
+Sbjct  61   MEKGKYIDELRKALVPGSGAAGTYKFLFSKESQHFSLEKELKDVSFRLGSFNLDKV  116
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.130    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+Results from round 2
+
+
+Query= d1ik9a1
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q13426|XRCC4_HUMAN DNA repair protein XRCC4 OS=Homo sapiens OX...  201     2e-64
+sp|Q924T3|XRCC4_MOUSE DNA repair protein XRCC4 OS=Mus musculus OX...  190     3e-60
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q13426|XRCC4_HUMAN DNA repair protein XRCC4 OS=Homo sapiens 
+OX=9606 GN=XRCC4 PE=1 SV=2
+Length=336
+
+ Score = 201 bits (511),  Expect = 2e-64, Method: Composition-based stats.
+ Identities = 112/117 (96%), Positives = 112/117 (96%), Gaps = 4/117 (3%)
+
+Query  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+            MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA
+Sbjct  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+
+Query  61   MEKGKYVGELRKALLS----ADVYTFNFSKESAYFFFEKNLKDVSFRLGSFNLEKVE  113
+            MEKGKYVGELRKALLS    ADVYTFNFSKES YFFFEKNLKDVSFRLGSFNLEKVE
+Sbjct  61   MEKGKYVGELRKALLSGAGPADVYTFNFSKESCYFFFEKNLKDVSFRLGSFNLEKVE  117
+
+
+>sp|Q924T3|XRCC4_MOUSE DNA repair protein XRCC4 OS=Mus musculus 
+OX=10090 GN=Xrcc4 PE=1 SV=1
+Length=326
+
+ Score = 190 bits (482),  Expect = 3e-60, Method: Composition-based stats.
+ Identities = 85/116 (73%), Positives = 97/116 (84%), Gaps = 4/116 (3%)
+
+Query  1    MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA  60
+            MERK+SRI+L SEP++ +FLQVSWE+ + SGFVITLTDGHSAWT TVSE EISQEADDMA
+Sbjct  1    MERKVSRIYLASEPNVPYFLQVSWERAIGSGFVITLTDGHSAWTATVSELEISQEADDMA  60
+
+Query  61   MEKGKYVGELRKALL----SADVYTFNFSKESAYFFFEKNLKDVSFRLGSFNLEKV  112
+            MEKGKY+ ELRKAL+    +A  Y F FSKES +F  EK LKDVSFRLGSFNL+KV
+Sbjct  61   MEKGKYIDELRKALVPGSGAAGTYKFLFSKESQHFSLEKELKDVSFRLGSFNLDKV  116
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.399    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

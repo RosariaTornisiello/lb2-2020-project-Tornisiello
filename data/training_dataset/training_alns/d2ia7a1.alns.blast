@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ia7a1
+
+Length=111
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P09425|BP25_BPT4 Baseplate wedge protein gp25 OS=Enterobacteri...  47.0    1e-06
+sp|P51768|BPW_BPP2 Baseplate protein W OS=Escherichia phage P2 OX...  44.3    1e-05
+
+
+>sp|P09425|BP25_BPT4 Baseplate wedge protein gp25 OS=Enterobacteria 
+phage T4 OX=10665 GN=25 PE=1 SV=1
+Length=132
+
+ Score = 47.0 bits (110),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 22/66 (33%), Positives = 37/66 (56%), Gaps = 0/66 (0%)
+
+Query  11  IAESIRIILGTARGERVMRPDFGCGIHDRVFSVINTTTLGLIENEVKEALILWEPRIELL  70
+           I  S+  I+ T +G R   P+FGC + D++F  +   T   +E  ++ A+  +EPRI+ L
+Sbjct  32  IKNSLLGIITTRKGSRPFDPEFGCDLSDQLFENMTPLTADTVERNIESAVRNYEPRIDKL  91
+
+Query  71  SVTASP  76
+           +V   P
+Sbjct  92  AVNVIP  97
+
+
+>sp|P51768|BPW_BPP2 Baseplate protein W OS=Escherichia phage P2 
+OX=10679 GN=W PE=3 SV=1
+Length=115
+
+ Score = 44.3 bits (103),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 32/100 (32%), Positives = 52/100 (52%), Gaps = 10/100 (10%)
+
+Query  9    EDIAESIRIILGTARGERVMRPDFGCGIHDRVFSVINTTTLGLIENEVK----EALILWE  64
+            E I++SI  IL T  G RVMR D+G      + S+I+      +E ++K     A++ WE
+Sbjct  20   EHISQSIGDILRTPVGSRVMRRDYGS----LLASMIDQPQTPALELQIKVACYMAVLKWE  75
+
+Query  65   PRIELLSVTASPREAAEGRLLIDIEYRVRSTNTRFNLVYP  104
+            PR+ L SVT +   + +GR+ + +  +   T    +L  P
+Sbjct  76   PRVTLSSVTTA--RSFDGRMTVTLTGQHNDTGQPLSLTIP  113
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.137    0.384    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5066098816
+Results from round 2
+
+
+Query= d2ia7a1
+
+Length=111
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P51768|BPW_BPP2 Baseplate protein W OS=Escherichia phage P2 OX...  123     1e-36
+sp|P09425|BP25_BPT4 Baseplate wedge protein gp25 OS=Enterobacteri...  103     1e-28
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P51768|BPW_BPP2 Baseplate protein W OS=Escherichia phage P2 
+OX=10679 GN=W PE=3 SV=1
+Length=115
+
+ Score = 123 bits (308),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 52/100 (52%), Gaps = 10/100 (10%)
+
+Query  9    EDIAESIRIILGTARGERVMRPDFGCGIHDRVFSVINTTTLGLIENEVK----EALILWE  64
+            E I++SI  IL T  G RVMR D+G      + S+I+      +E ++K     A++ WE
+Sbjct  20   EHISQSIGDILRTPVGSRVMRRDYGS----LLASMIDQPQTPALELQIKVACYMAVLKWE  75
+
+Query  65   PRIELLSVTASPREAAEGRLLIDIEYRVRSTNTRFNLVYP  104
+            PR+ L SVT +   + +GR+ + +  +   T    +L  P
+Sbjct  76   PRVTLSSVTTA--RSFDGRMTVTLTGQHNDTGQPLSLTIP  113
+
+
+>sp|P09425|BP25_BPT4 Baseplate wedge protein gp25 OS=Enterobacteria 
+phage T4 OX=10665 GN=25 PE=1 SV=1
+Length=132
+
+ Score = 103 bits (257),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 22/66 (33%), Positives = 37/66 (56%), Gaps = 0/66 (0%)
+
+Query  11  IAESIRIILGTARGERVMRPDFGCGIHDRVFSVINTTTLGLIENEVKEALILWEPRIELL  70
+           I  S+  I+ T +G R   P+FGC + D++F  +   T   +E  ++ A+  +EPRI+ L
+Sbjct  32  IKNSLLGIITTRKGSRPFDPEFGCDLSDQLFENMTPLTADTVERNIESAVRNYEPRIDKL  91
+
+Query  71  SVTASP  76
+           +V   P
+Sbjct  92  AVNVIP  97
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.313    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5066098816
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

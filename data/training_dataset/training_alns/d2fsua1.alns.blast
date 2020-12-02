@@ -1,0 +1,233 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2fsua1
+
+Length=170
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P16686|PHNH_ECOLI Alpha-D-ribose 1-methylphosphonate 5-triphos...  332     3e-117
+sp|Q52985|PHNH_RHIME Alpha-D-ribose 1-methylphosphonate 5-triphos...  89.4    2e-21 
+sp|O69066|HTXG_PSEST Putative C-P lyase subunit protein HtxG OS=P...  52.0    2e-07 
+
+
+>sp|P16686|PHNH_ECOLI Alpha-D-ribose 1-methylphosphonate 5-triphosphate 
+synthase subunit PhnH OS=Escherichia coli (strain 
+K12) OX=83333 GN=phnH PE=1 SV=1
+Length=194
+
+ Score = 332 bits (852),  Expect = 3e-117, Method: Compositional matrix adjust.
+ Identities = 170/183 (93%), Positives = 170/183 (93%), Gaps = 13/183 (7%)
+
+Query  1    QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND  60
+            QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND
+Sbjct  12   QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND  71
+
+Query  61   IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALS---------GATLILQVASLS  111
+            IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALS         GATLILQVASLS
+Sbjct  72   IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALSTGTAVAPEAGATLILQVASLS  131
+
+Query  112  GGRMLRLTG----EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  167
+            GGRMLRLTG    EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV
+Sbjct  132  GGRMLRLTGAGIAEERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  191
+
+Query  168  EVC  170
+            EVC
+Sbjct  192  EVC  194
+
+
+>sp|Q52985|PHNH_RHIME Alpha-D-ribose 1-methylphosphonate 5-triphosphate 
+synthase subunit PhnH OS=Rhizobium meliloti (strain 
+1021) OX=266834 GN=phnH PE=3 SV=1
+Length=200
+
+ Score = 89.4 bits (220),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 61/181 (34%), Positives = 92/181 (51%), Gaps = 14/181 (8%)
+
+Query  2    DAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNNDI  61
+            +AQ  FR L+   + PG+I  L        PL  A+ +V LTL D+DTPVWLS  L+   
+Sbjct  18   EAQSVFRSLMDCFARPGIIGRLSTAAAPPAPLGEASGAVALTLCDHDTPVWLSPALSKSS  77
+
+Query  62   VNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALS---------GATLILQVASLSG  112
+              + + FHT A +    ++  FA  ++  +    +  +           TL+++V +L G
+Sbjct  78   APKWIAFHTGAGVTDTKDEPRFAFFEKGAAVPGFDQFALGTQEYPDRSTTLVVEVEALEG  137
+
+Query  113  GRML--RLTGEER--MIAPQ-LPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  167
+            G+ L  R  G +   +IAP+ LP+  L         FP GIDL+LT  E +L +PRTT +
+Sbjct  138  GQPLIGRGPGIKNGIVIAPKGLPDVFLDLWAANRAIFPRGIDLVLTAREAVLCLPRTTKL  197
+
+Query  168  E  168
+            E
+Sbjct  198  E  198
+
+
+>sp|O69066|HTXG_PSEST Putative C-P lyase subunit protein HtxG 
+OS=Pseudomonas stutzeri OX=316 GN=htxG PE=3 SV=1
+Length=195
+
+ Score = 52.0 bits (123),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 49/178 (28%), Positives = 81/178 (46%), Gaps = 23/178 (13%)
+
+Query  4    QHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNNDIVN  63
+            Q +FR+L+ A S PG +V L             +  +L+     D+   L+ PL+    +
+Sbjct  25   QTAFRQLMTAFSYPGRVVPLAD--------GAESALLLVLTTLVDSACALADPLHALSSD  76
+
+Query  64   QSLRFHTNAPLVSQPEQATFAVTDEAI---SSEQLNALS----GATLILQVASLSGGRML  116
+               R    +  V   E A F + D      ++ +L +L     GAT++++V+    G  L
+Sbjct  77   DLRRLGVRSASV---EAAEFVLADGNRLLEATPRLGSLENPEQGATVVMRVSRFGEGPHL  133
+
+Query  117  RLTG-----EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHVEV  169
+            RLTG     E+ +    +      + +E    FPLG+DLIL  G  +  +PRTTH+ +
+Sbjct  134  RLTGPGIQHEQVLQVSGIDPGWWKQRSEWNAHFPLGVDLILVSGHEVAVLPRTTHINL  191
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.134    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8626810808
+Results from round 2
+
+
+Query= d2fsua1
+
+Length=170
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P16686|PHNH_ECOLI Alpha-D-ribose 1-methylphosphonate 5-triphos...  222     1e-73
+sp|Q52985|PHNH_RHIME Alpha-D-ribose 1-methylphosphonate 5-triphos...  211     5e-69
+sp|O69066|HTXG_PSEST Putative C-P lyase subunit protein HtxG OS=P...  176     2e-55
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P16686|PHNH_ECOLI Alpha-D-ribose 1-methylphosphonate 5-triphosphate 
+synthase subunit PhnH OS=Escherichia coli (strain 
+K12) OX=83333 GN=phnH PE=1 SV=1
+Length=194
+
+ Score = 222 bits (565),  Expect = 1e-73, Method: Composition-based stats.
+ Identities = 169/183 (92%), Positives = 170/183 (93%), Gaps = 13/183 (7%)
+
+Query  1    QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND  60
+            QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND
+Sbjct  12   QDAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNND  71
+
+Query  61   IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNAL---------SGATLILQVASLS  111
+            IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNAL         +GATLILQVASLS
+Sbjct  72   IVNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALSTGTAVAPEAGATLILQVASLS  131
+
+Query  112  GGRMLRLTG----EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  167
+            GGRMLRLTG    EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV
+Sbjct  132  GGRMLRLTGAGIAEERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  191
+
+Query  168  EVC  170
+            EVC
+Sbjct  192  EVC  194
+
+
+>sp|Q52985|PHNH_RHIME Alpha-D-ribose 1-methylphosphonate 5-triphosphate 
+synthase subunit PhnH OS=Rhizobium meliloti (strain 
+1021) OX=266834 GN=phnH PE=3 SV=1
+Length=200
+
+ Score = 211 bits (536),  Expect = 5e-69, Method: Composition-based stats.
+ Identities = 61/181 (34%), Positives = 91/181 (50%), Gaps = 14/181 (8%)
+
+Query  2    DAQHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNNDI  61
+            +AQ  FR L+   + PG+I  L        PL  A+ +V LTL D+DTPVWLS  L+   
+Sbjct  18   EAQSVFRSLMDCFARPGIIGRLSTAAAPPAPLGEASGAVALTLCDHDTPVWLSPALSKSS  77
+
+Query  62   VNQSLRFHTNAPLVSQPEQATFAVTDEAISSEQLNALS---------GATLILQVASLSG  112
+              + + FHT A +    ++  FA  ++  +    +  +           TL+++V +L G
+Sbjct  78   APKWIAFHTGAGVTDTKDEPRFAFFEKGAAVPGFDQFALGTQEYPDRSTTLVVEVEALEG  137
+
+Query  113  GRML--RLTGEER--MIAP-QLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHV  167
+            G+ L  R  G +   +IAP  LP+  L         FP GIDL+LT  E +L +PRTT +
+Sbjct  138  GQPLIGRGPGIKNGIVIAPKGLPDVFLDLWAANRAIFPRGIDLVLTAREAVLCLPRTTKL  197
+
+Query  168  E  168
+            E
+Sbjct  198  E  198
+
+
+>sp|O69066|HTXG_PSEST Putative C-P lyase subunit protein HtxG 
+OS=Pseudomonas stutzeri OX=316 GN=htxG PE=3 SV=1
+Length=195
+
+ Score = 176 bits (446),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 49/178 (28%), Positives = 81/178 (46%), Gaps = 23/178 (13%)
+
+Query  4    QHSFRRLLKAMSEPGVIVALHQLKRGWQPLNIATTSVLLTLADNDTPVWLSTPLNNDIVN  63
+            Q +FR+L+ A S PG +V L             +  +L+     D+   L+ PL+    +
+Sbjct  25   QTAFRQLMTAFSYPGRVVPLAD--------GAESALLLVLTTLVDSACALADPLHALSSD  76
+
+Query  64   QSLRFHTNAPLVSQPEQATFAVTDEAI---SSEQLNALS----GATLILQVASLSGGRML  116
+               R    +  V   E A F + D      ++ +L +L     GAT++++V+    G  L
+Sbjct  77   DLRRLGVRSASV---EAAEFVLADGNRLLEATPRLGSLENPEQGATVVMRVSRFGEGPHL  133
+
+Query  117  RLTG-----EERMIAPQLPECILHELTERPHPFPLGIDLILTCGERLLAIPRTTHVEV  169
+            RLTG     E+ +    +      + +E    FPLG+DLIL  G  +  +PRTTH+ +
+Sbjct  134  RLTGPGIQHEQVLQVSGIDPGWWKQRSEWNAHFPLGVDLILVSGHEVAVLPRTTHINL  191
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.319    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0381    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8626810808
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

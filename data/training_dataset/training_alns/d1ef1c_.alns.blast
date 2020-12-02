@@ -1,0 +1,1408 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ef1c_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 SV=3  181     6e-55
+sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3      181     8e-55
+sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 SV=3    179     3e-54
+sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 ...  179     3e-54
+sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn PE...  177     2e-53
+sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 SV=1   135     8e-38
+sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 SV=1     135     1e-37
+sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx PE=1...  135     1e-37
+sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX PE=2...  134     3e-37
+sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 ...  133     4e-37
+sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 SV=2     131     3e-36
+sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr PE=...  127     1e-34
+sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 SV=3  127     1e-34
+sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 SV=4   126     2e-34
+sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZ...  125     5e-34
+sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila...  102     7e-26
+sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila...  102     8e-26
+sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles ...  98.6    2e-24
+sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes aegy...  97.8    3e-24
+sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex quin...  97.8    3e-24
+sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 PE=3...  66.2    4e-13
+sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila...  43.5    4e-05
+sp|Q5EBJ4|ERMIN_MOUSE Ermin OS=Mus musculus OX=10090 GN=Ermn PE=1...  40.0    6e-04
+sp|Q5R6D6|ERMIN_PONAB Ermin OS=Pongo abelii OX=9601 GN=ERMN PE=2 ...  40.0    7e-04
+sp|Q3ZBR9|ERMIN_BOVIN Ermin OS=Bos taurus OX=9913 GN=ERMN PE=2 SV=1   40.0    7e-04
+sp|Q8TAM6|ERMIN_HUMAN Ermin OS=Homo sapiens OX=9606 GN=ERMN PE=1 ...  40.0    7e-04
+sp|Q5RJL0|ERMIN_RAT Ermin OS=Rattus norvegicus OX=10116 GN=Ermn P...  39.7    8e-04
+
+
+>sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 
+SV=3
+Length=577
+
+ Score = 181 bits (459),  Expect = 6e-55, Method: Compositional matrix adjust.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3
+Length=577
+
+ Score = 181 bits (459),  Expect = 8e-55, Method: Compositional matrix adjust.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 
+SV=3
+Length=577
+
+ Score = 179 bits (454),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 
+SV=3
+Length=577
+
+ Score = 179 bits (454),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn 
+PE=1 SV=3
+Length=577
+
+ Score = 177 bits (450),  Expect = 2e-53, Method: Compositional matrix adjust.
+ Identities = 88/90 (98%), Positives = 89/90 (99%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKT NDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTTNDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 135 bits (340),  Expect = 8e-38, Method: Compositional matrix adjust.
+ Identities = 66/90 (73%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 135 bits (339),  Expect = 1e-37, Method: Compositional matrix adjust.
+ Identities = 66/90 (73%), Positives = 77/90 (86%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVNKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx 
+PE=1 SV=3
+Length=583
+
+ Score = 135 bits (339),  Expect = 1e-37, Method: Compositional matrix adjust.
+ Identities = 65/90 (72%), Positives = 79/90 (88%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L ++ +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX 
+PE=2 SV=1
+Length=583
+
+ Score = 134 bits (337),  Expect = 3e-37, Method: Compositional matrix adjust.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L +D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GR KYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRGKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 
+SV=1
+Length=583
+
+ Score = 133 bits (335),  Expect = 4e-37, Method: Compositional matrix adjust.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  + +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 
+SV=2
+Length=581
+
+ Score = 131 bits (329),  Expect = 3e-36, Method: Compositional matrix adjust.
+ Identities = 64/89 (72%), Positives = 76/89 (85%), Gaps = 0/89 (0%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            E SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  LTSEL+ ARDE+K+T ND+IH EN
+Sbjct  493  ELSAELSSEGILDDRNEEKRITEAEKNERVQRQLMTLTSELSQARDENKRTHNDIIHNEN  552
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            MR GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  553  MRQGRDKYKTLRQIRQGNTKQRIDEFEAM  581
+
+
+>sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr 
+PE=1 SV=3
+Length=586
+
+ Score = 127 bits (318),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 
+SV=3
+Length=586
+
+ Score = 127 bits (318),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 
+SV=4
+Length=586
+
+ Score = 126 bits (317),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L+SEL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGIRDDRNEEKRITEAEKNERVQRQLLTLSSELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE++
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAL  586
+
+
+>sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZR 
+PE=1 SV=3
+Length=586
+
+ Score = 125 bits (313),  Expect = 5e-34, Method: Compositional matrix adjust.
+ Identities = 60/87 (69%), Positives = 74/87 (85%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH EN+R
+Sbjct  500  SAELSSEGILDDRHEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENLR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+pseudoobscura pseudoobscura OX=46245 GN=Moe PE=3 SV=3
+Length=593
+
+ Score = 102 bits (254),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  505  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  563
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  564  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  593
+
+
+>sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+melanogaster OX=7227 GN=Moe PE=1 SV=2
+Length=578
+
+ Score = 102 bits (254),  Expect = 8e-26, Method: Compositional matrix adjust.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  490  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  548
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  549  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  578
+
+
+>sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles 
+gambiae OX=7165 GN=Moe PE=3 SV=5
+Length=581
+
+ Score = 98.6 bits (244),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 65/87 (75%), Gaps = 1/87 (1%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            S D   D   KD  EE RT  AE+NER+Q  LKAL  +LA +RD++ +T ND IH EN+R
+Sbjct  496  SKDFDTDEHIKDPVEERRTL-AERNERLQDQLKALKQDLALSRDDTMETPNDKIHRENVR  554
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  555  QGRDKYKTLREIRKGNTKRRVDQFENM  581
+
+
+>sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes 
+aegypti OX=7159 GN=Moe PE=3 SV=1
+Length=583
+
+ Score = 97.8 bits (242),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 65/87 (75%), Gaps = 1/87 (1%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN+R
+Sbjct  498  SKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHRENVR  556
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  557  QGRDKYKTLREIRKGNTKRRVDQFENM  583
+
+
+>sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex 
+quinquefasciatus OX=7176 GN=Moe PE=3 SV=1
+Length=572
+
+ Score = 97.8 bits (242),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 65/87 (75%), Gaps = 1/87 (1%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN+R
+Sbjct  487  SKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHRENVR  545
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  546  QGRDKYKTLREIRKGNTKRRVDQFENM  572
+
+
+>sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 
+PE=3 SV=1
+Length=572
+
+ Score = 66.2 bits (160),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 34/57 (60%), Positives = 42/57 (74%), Gaps = 1/57 (2%)
+
+Query  35   LKALTSELANARDESK-KTANDMIHAENMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            L+ L SEL   +DESK +   D IH EN+R GRDKY+TLR IR GNT+QRID FE++
+Sbjct  516  LQKLQSELQAMKDESKGEDRYDKIHQENIRAGRDKYQTLRNIRSGNTRQRIDTFENI  572
+
+
+>sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila 
+melanogaster OX=7227 GN=Mer PE=1 SV=1
+Length=635
+
+ Score = 43.5 bits (101),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 26/84 (31%), Positives = 47/84 (56%), Gaps = 8/84 (10%)
+
+Query  15   DRSEEERTTEAEKN--------ERVQKHLKALTSELANARDESKKTANDMIHAENMRLGR  66
+            D   E+ T E E+N        ++VQ  L+ L SE+A  + E  ++  D++    ++ G 
+Sbjct  552  DNEMEQITNEMERNHLDYLRNSKQVQSQLQTLRSEIAPHKIEENQSNLDILSEAQIKAGE  611
+
+Query  67   DKYKTLRQIRQGNTKQRIDEFESM  90
+            +KY TL++++ G+TK R+  FE +
+Sbjct  612  NKYSTLKKLKSGSTKARVAFFEEL  635
+
+
+>sp|Q5EBJ4|ERMIN_MOUSE Ermin OS=Mus musculus OX=10090 GN=Ermn 
+PE=1 SV=1
+Length=281
+
+ Score = 40.0 bits (92),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 18/25 (72%), Positives = 22/25 (88%), Gaps = 2/25 (8%)
+
+Query  68   KYKTL--RQIRQGNTKQRIDEFESM  90
+            +Y T+  R+IR+GNTKQRIDEFESM
+Sbjct  254  RYNTISYRKIRKGNTKQRIDEFESM  278
+
+
+>sp|Q5R6D6|ERMIN_PONAB Ermin OS=Pongo abelii OX=9601 GN=ERMN PE=2 
+SV=1
+Length=284
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 18/25 (72%), Positives = 22/25 (88%), Gaps = 2/25 (8%)
+
+Query  68   KYKTL--RQIRQGNTKQRIDEFESM  90
+            +Y T+  R+IR+GNTKQRIDEFESM
+Sbjct  257  RYNTISYRKIRKGNTKQRIDEFESM  281
+
+
+>sp|Q3ZBR9|ERMIN_BOVIN Ermin OS=Bos taurus OX=9913 GN=ERMN PE=2 
+SV=1
+Length=282
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 18/25 (72%), Positives = 22/25 (88%), Gaps = 2/25 (8%)
+
+Query  68   KYKTL--RQIRQGNTKQRIDEFESM  90
+            +Y T+  R+IR+GNTKQRIDEFESM
+Sbjct  256  RYNTISYRKIRKGNTKQRIDEFESM  280
+
+
+>sp|Q8TAM6|ERMIN_HUMAN Ermin OS=Homo sapiens OX=9606 GN=ERMN PE=1 
+SV=1
+Length=284
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 18/25 (72%), Positives = 22/25 (88%), Gaps = 2/25 (8%)
+
+Query  68   KYKTL--RQIRQGNTKQRIDEFESM  90
+            +Y T+  R+IR+GNTKQRIDEFESM
+Sbjct  257  RYNTISYRKIRKGNTKQRIDEFESM  281
+
+
+>sp|Q5RJL0|ERMIN_RAT Ermin OS=Rattus norvegicus OX=10116 GN=Ermn 
+PE=1 SV=1
+Length=282
+
+ Score = 39.7 bits (91),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 18/25 (72%), Positives = 22/25 (88%), Gaps = 2/25 (8%)
+
+Query  68   KYKTL--RQIRQGNTKQRIDEFESM  90
+            +Y T+  R+IR+GNTKQRIDEFESM
+Sbjct  255  RYNTISYRKIRKGNTKQRIDEFESM  279
+
+
+
+Lambda      K        H        a         alpha
+   0.306    0.119    0.301    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 2
+
+
+Query= d1ef1c_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 SV=2     111     4e-29
+sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr PE=...  110     8e-29
+sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 SV=3  110     9e-29
+sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3      109     2e-28
+sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 SV=3  109     2e-28
+sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 SV=3    109     3e-28
+sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 ...  108     4e-28
+sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn PE...  107     9e-28
+sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZ...  107     9e-28
+sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX PE=2...  106     3e-27
+sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 SV=4   106     4e-27
+sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 SV=1   105     5e-27
+sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 SV=1     105     7e-27
+sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 ...  104     9e-27
+sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx PE=1...  104     1e-26
+sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila...  103     4e-26
+sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila...  103     4e-26
+sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles ...  101     1e-25
+sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes aegy...  100     3e-25
+sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex quin...  100     5e-25
+sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila...  84.1    2e-19
+sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 PE=3...  63.7    4e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|P59750|MERL_PAPAN Merlin OS=Papio anubis OX=9555 GN=NF2 PE=3 SV=1  50.6    2e-07
+sp|P35240|MERL_HUMAN Merlin OS=Homo sapiens OX=9606 GN=NF2 PE=1 SV=1  50.6    2e-07
+sp|P46662|MERL_MOUSE Merlin OS=Mus musculus OX=10090 GN=Nf2 PE=1 ...  44.0    2e-05
+
+
+>sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 
+SV=2
+Length=581
+
+ Score = 111 bits (278),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 64/89 (72%), Positives = 76/89 (85%), Gaps = 0/89 (0%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            E SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  LTSEL+ ARDE+K+T ND+IH EN
+Sbjct  493  ELSAELSSEGILDDRNEEKRITEAEKNERVQRQLMTLTSELSQARDENKRTHNDIIHNEN  552
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            MR GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  553  MRQGRDKYKTLRQIRQGNTKQRIDEFEAM  581
+
+
+>sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr 
+PE=1 SV=3
+Length=586
+
+ Score = 110 bits (275),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 
+SV=3
+Length=586
+
+ Score = 110 bits (275),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3
+Length=577
+
+ Score = 109 bits (272),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 
+SV=3
+Length=577
+
+ Score = 109 bits (272),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 
+SV=3
+Length=577
+
+ Score = 109 bits (271),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 
+SV=3
+Length=577
+
+ Score = 108 bits (270),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn 
+PE=1 SV=3
+Length=577
+
+ Score = 107 bits (268),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 88/90 (98%), Positives = 89/90 (99%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKT NDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTTNDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZR 
+PE=1 SV=3
+Length=586
+
+ Score = 107 bits (268),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 60/87 (69%), Positives = 74/87 (85%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH EN+R
+Sbjct  500  SAELSSEGILDDRHEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENLR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX 
+PE=2 SV=1
+Length=583
+
+ Score = 106 bits (264),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L +D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GR KYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRGKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 
+SV=4
+Length=586
+
+ Score = 106 bits (263),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L+SEL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGIRDDRNEEKRITEAEKNERVQRQLLTLSSELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE++
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAL  586
+
+
+>sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 105 bits (262),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 66/90 (73%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 105 bits (261),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 66/90 (73%), Positives = 77/90 (86%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVNKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 
+SV=1
+Length=583
+
+ Score = 104 bits (260),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  + +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx 
+PE=1 SV=3
+Length=583
+
+ Score = 104 bits (260),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 79/90 (88%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L ++ +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+pseudoobscura pseudoobscura OX=46245 GN=Moe PE=3 SV=3
+Length=593
+
+ Score = 103 bits (256),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  505  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  563
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  564  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  593
+
+
+>sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+melanogaster OX=7227 GN=Moe PE=1 SV=2
+Length=578
+
+ Score = 103 bits (256),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  490  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  548
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  549  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  578
+
+
+>sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles 
+gambiae OX=7165 GN=Moe PE=3 SV=5
+Length=581
+
+ Score = 101 bits (252),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+Q  LKAL  +LA +RD++ +T ND IH EN
+Sbjct  494  DFSKDFDTDEHIKDPVEERRTL-AERNERLQDQLKALKQDLALSRDDTMETPNDKIHREN  552
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  553  VRQGRDKYKTLREIRKGNTKRRVDQFENM  581
+
+
+>sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes 
+aegypti OX=7159 GN=Moe PE=3 SV=1
+Length=583
+
+ Score = 100 bits (249),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN
+Sbjct  496  DYSKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHREN  554
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  555  VRQGRDKYKTLREIRKGNTKRRVDQFENM  583
+
+
+>sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex 
+quinquefasciatus OX=7176 GN=Moe PE=3 SV=1
+Length=572
+
+ Score = 100 bits (248),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN
+Sbjct  485  DFSKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHREN  543
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  544  VRQGRDKYKTLREIRKGNTKRRVDQFENM  572
+
+
+>sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila 
+melanogaster OX=7227 GN=Mer PE=1 SV=1
+Length=635
+
+ Score = 84.1 bits (206),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 26/87 (30%), Positives = 48/87 (55%), Gaps = 8/87 (9%)
+
+Query  12   MAKDRSEEERTTEAEKN--------ERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            +  D   E+ T E E+N        ++VQ  L+ L SE+A  + E  ++  D++    ++
+Sbjct  549  ILTDNEMEQITNEMERNHLDYLRNSKQVQSQLQTLRSEIAPHKIEENQSNLDILSEAQIK  608
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             G +KY TL++++ G+TK R+  FE +
+Sbjct  609  AGENKYSTLKKLKSGSTKARVAFFEEL  635
+
+
+>sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 
+PE=3 SV=1
+Length=572
+
+ Score = 63.7 bits (153),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 34/64 (53%), Positives = 45/64 (70%), Gaps = 1/64 (2%)
+
+Query  28   NERVQKHLKALTSELANARDESK-KTANDMIHAENMRLGRDKYKTLRQIRQGNTKQRIDE  86
+            ++ +   L+ L SEL   +DESK +   D IH EN+R GRDKY+TLR IR GNT+QRID 
+Sbjct  509  DKHLLDKLQKLQSELQAMKDESKGEDRYDKIHQENIRAGRDKYQTLRNIRSGNTRQRIDT  568
+
+Query  87   FESM  90
+            FE++
+Sbjct  569  FENI  572
+
+
+>sp|P59750|MERL_PAPAN Merlin OS=Papio anubis OX=9555 GN=NF2 PE=3 
+SV=1
+Length=595
+
+ Score = 50.6 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 44/75 (59%), Gaps = 1/75 (1%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENM-RLGRDKYKTLRQI  75
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H EN  R G  K+ T++++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDILHNENSDRGGSSKHNTIKKL  580
+
+Query  76   RQGNTKQRIDEFESM  90
+               + K R+  FE +
+Sbjct  581  TLQSAKSRVAFFEEL  595
+
+
+>sp|P35240|MERL_HUMAN Merlin OS=Homo sapiens OX=9606 GN=NF2 PE=1 
+SV=1
+Length=595
+
+ Score = 50.6 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 44/75 (59%), Gaps = 1/75 (1%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENM-RLGRDKYKTLRQI  75
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H EN  R G  K+ T++++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDILHNENSDRGGSSKHNTIKKL  580
+
+Query  76   RQGNTKQRIDEFESM  90
+               + K R+  FE +
+Sbjct  581  TLQSAKSRVAFFEEL  595
+
+
+>sp|P46662|MERL_MOUSE Merlin OS=Mus musculus OX=10090 GN=Nf2 PE=1 
+SV=2
+Length=596
+
+ Score = 44.0 bits (102),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/76 (26%), Positives = 44/76 (58%), Gaps = 2/76 (3%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMRLG--RDKYKTLRQ  74
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H+E+   G    K+ T+++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDVLHSESSDRGGPSSKHNTIKK  580
+
+Query  75   IRQGNTKQRIDEFESM  90
+            +   + K R+  FE +
+Sbjct  581  LTLQSAKSRVAFFEEL  596
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.123    0.282    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0376    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 3
+
+
+Query= d1ef1c_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 SV=2     107     1e-27
+sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr PE=...  107     2e-27
+sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 SV=3  106     2e-27
+sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3      104     9e-27
+sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 SV=3  104     1e-26
+sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 SV=3    104     1e-26
+sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 ...  104     2e-26
+sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZ...  104     2e-26
+sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX PE=2...  102     5e-26
+sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn PE...  102     6e-26
+sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 SV=4   102     8e-26
+sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 SV=1   101     2e-25
+sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx PE=1...  101     3e-25
+sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 SV=1     101     3e-25
+sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila...  101     3e-25
+sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila...  100     3e-25
+sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 ...  100     4e-25
+sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles ...  99.5    7e-25
+sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex quin...  98.7    2e-24
+sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes aegy...  98.3    2e-24
+sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila...  81.0    2e-18
+sp|P59750|MERL_PAPAN Merlin OS=Papio anubis OX=9555 GN=NF2 PE=3 SV=1  79.8    8e-18
+sp|P35240|MERL_HUMAN Merlin OS=Homo sapiens OX=9606 GN=NF2 PE=1 SV=1  79.8    8e-18
+sp|P46662|MERL_MOUSE Merlin OS=Mus musculus OX=10090 GN=Nf2 PE=1 ...  73.7    1e-15
+sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 PE=3...  65.6    7e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q63648|MERL_RAT Merlin (Fragment) OS=Rattus norvegicus OX=1011...  60.2    6e-11
+
+
+>sp|P31976|EZRI_BOVIN Ezrin OS=Bos taurus OX=9913 GN=EZR PE=1 
+SV=2
+Length=581
+
+ Score = 107 bits (267),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 64/89 (72%), Positives = 76/89 (85%), Gaps = 0/89 (0%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            E SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  LTSEL+ ARDE+K+T ND+IH EN
+Sbjct  493  ELSAELSSEGILDDRNEEKRITEAEKNERVQRQLMTLTSELSQARDENKRTHNDIIHNEN  552
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            MR GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  553  MRQGRDKYKTLRQIRQGNTKQRIDEFEAM  581
+
+
+>sp|P31977|EZRI_RAT Ezrin OS=Rattus norvegicus OX=10116 GN=Ezr 
+PE=1 SV=3
+Length=586
+
+ Score = 107 bits (266),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P26040|EZRI_MOUSE Ezrin OS=Mus musculus OX=10090 GN=Ezr PE=1 
+SV=3
+Length=586
+
+ Score = 106 bits (265),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGILDDRNEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|P26042|MOES_PIG Moesin OS=Sus scrofa OX=9823 GN=MSN PE=2 SV=3
+Length=577
+
+ Score = 104 bits (260),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26038|MOES_HUMAN Moesin OS=Homo sapiens OX=9606 GN=MSN PE=1 
+SV=3
+Length=577
+
+ Score = 104 bits (260),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q2HJ49|MOES_BOVIN Moesin OS=Bos taurus OX=9913 GN=MSN PE=2 
+SV=3
+Length=577
+
+ Score = 104 bits (259),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P26041|MOES_MOUSE Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 
+SV=3
+Length=577
+
+ Score = 104 bits (258),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 89/90 (99%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|Q8HZQ5|EZRI_RABIT Ezrin OS=Oryctolagus cuniculus OX=9986 GN=EZR 
+PE=1 SV=3
+Length=586
+
+ Score = 104 bits (258),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 60/87 (69%), Positives = 74/87 (85%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR EE+R TEAEKNERVQ+ L  L++EL+ ARDE+K+T ND+IH EN+R
+Sbjct  500  SAELSSEGILDDRHEEKRITEAEKNERVQRQLLTLSNELSQARDENKRTHNDIIHNENLR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAM  586
+
+
+>sp|Q9PU45|RADI_CHICK Radixin OS=Gallus gallus OX=9031 GN=RDX 
+PE=2 SV=1
+Length=583
+
+ Score = 102 bits (255),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L +D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GR KYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRGKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|O35763|MOES_RAT Moesin OS=Rattus norvegicus OX=10116 GN=Msn 
+PE=1 SV=3
+Length=577
+
+ Score = 102 bits (254),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 88/90 (98%), Positives = 89/90 (99%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+LRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKT NDMIHAE
+Sbjct  488  AEASAELRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTTNDMIHAE  547
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            NMRLGRDKYKTLRQIRQGNTKQRIDEFESM
+Sbjct  548  NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  577
+
+
+>sp|P15311|EZRI_HUMAN Ezrin OS=Homo sapiens OX=9606 GN=EZR PE=1 
+SV=4
+Length=586
+
+ Score = 102 bits (253),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 75/87 (86%), Gaps = 0/87 (0%)
+
+Query  4    SADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            SA+L ++ +  DR+EE+R TEAEKNERVQ+ L  L+SEL+ ARDE+K+T ND+IH ENMR
+Sbjct  500  SAELSSEGIRDDRNEEKRITEAEKNERVQRQLLTLSSELSQARDENKRTHNDIIHNENMR  559
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             GRDKYKTLRQIRQGNTKQRIDEFE++
+Sbjct  560  QGRDKYKTLRQIRQGNTKQRIDEFEAL  586
+
+
+>sp|Q32LP2|RADI_BOVIN Radixin OS=Bos taurus OX=9913 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 101 bits (250),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 66/90 (73%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26043|RADI_MOUSE Radixin OS=Mus musculus OX=10090 GN=Rdx 
+PE=1 SV=3
+Length=583
+
+ Score = 101 bits (250),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 79/90 (88%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L ++ +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSSEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|P26044|RADI_PIG Radixin OS=Sus scrofa OX=9823 GN=RDX PE=2 
+SV=1
+Length=583
+
+ Score = 101 bits (250),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 66/90 (73%), Positives = 77/90 (86%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  D +   RSEEER TE +KNERV K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNDGVMNHRSEEERVTETQKNERVNKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|Q29GR8|MOEH_DROPS Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+pseudoobscura pseudoobscura OX=46245 GN=Moe PE=3 SV=3
+Length=593
+
+ Score = 101 bits (250),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  505  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  563
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  564  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  593
+
+
+>sp|P46150|MOEH_DROME Moesin/ezrin/radixin homolog 1 OS=Drosophila 
+melanogaster OX=7227 GN=Moe PE=1 SV=2
+Length=578
+
+ Score = 100 bits (249),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 53/90 (59%), Positives = 68/90 (76%), Gaps = 1/90 (1%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+             + S DL  D   KD  E+ RT  AE+NER+   LKAL  +LA +RDE+K+TAND IH E
+Sbjct  490  GDVSRDLDTDEHIKDPIEDRRTL-AERNERLHDQLKALKQDLAQSRDETKETANDKIHRE  548
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N+R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  549  NVRQGRDKYKTLREIRKGNTKRRVDQFENM  578
+
+
+>sp|P35241|RADI_HUMAN Radixin OS=Homo sapiens OX=9606 GN=RDX PE=1 
+SV=1
+Length=583
+
+ Score = 100 bits (248),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 65/90 (72%), Positives = 78/90 (87%), Gaps = 0/90 (0%)
+
+Query  1    AEASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAE  60
+            AEASA+L  + +   RSEEER TE +KNERV+K L+AL+SELA ARDE+KKT ND++HAE
+Sbjct  494  AEASAELSNEGVMNHRSEEERVTETQKNERVKKQLQALSSELAQARDETKKTQNDVLHAE  553
+
+Query  61   NMRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            N++ GRDKYKTLRQIRQGNTKQRIDEFE+M
+Sbjct  554  NVKAGRDKYKTLRQIRQGNTKQRIDEFEAM  583
+
+
+>sp|Q7PS12|MOEH_ANOGA Moesin/ezrin/radixin homolog 1 OS=Anopheles 
+gambiae OX=7165 GN=Moe PE=3 SV=5
+Length=581
+
+ Score = 99.5 bits (246),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+Q  LKAL  +LA +RD++ +T ND IH EN
+Sbjct  494  DFSKDFDTDEHIKDPVEERRTL-AERNERLQDQLKALKQDLALSRDDTMETPNDKIHREN  552
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  553  VRQGRDKYKTLREIRKGNTKRRVDQFENM  581
+
+
+>sp|B0WYY2|MOEH_CULQU Moesin/ezrin/radixin homolog 1 OS=Culex 
+quinquefasciatus OX=7176 GN=Moe PE=3 SV=1
+Length=572
+
+ Score = 98.7 bits (244),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN
+Sbjct  485  DFSKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHREN  543
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  544  VRQGRDKYKTLREIRKGNTKRRVDQFENM  572
+
+
+>sp|Q170J7|MOEH_AEDAE Moesin/ezrin/radixin homolog 1 OS=Aedes 
+aegypti OX=7159 GN=Moe PE=3 SV=1
+Length=583
+
+ Score = 98.3 bits (243),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 51/89 (57%), Positives = 66/89 (74%), Gaps = 1/89 (1%)
+
+Query  2    EASADLRADAMAKDRSEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAEN  61
+            + S D   D   KD  EE RT  AE+NER+   LKAL  +LA +RD++ +TAND IH EN
+Sbjct  496  DYSKDFDTDEHIKDPVEERRTL-AERNERLHDQLKALKQDLALSRDDTMETANDKIHREN  554
+
+Query  62   MRLGRDKYKTLRQIRQGNTKQRIDEFESM  90
+            +R GRDKYKTLR+IR+GNTK+R+D+FE+M
+Sbjct  555  VRQGRDKYKTLREIRKGNTKRRVDQFENM  583
+
+
+>sp|Q24564|MERH_DROME Moesin/ezrin/radixin homolog 2 OS=Drosophila 
+melanogaster OX=7227 GN=Mer PE=1 SV=1
+Length=635
+
+ Score = 81.0 bits (198),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 26/87 (30%), Positives = 48/87 (55%), Gaps = 8/87 (9%)
+
+Query  12   MAKDRSEEERTTEAEKN--------ERVQKHLKALTSELANARDESKKTANDMIHAENMR  63
+            +  D   E+ T E E+N        ++VQ  L+ L SE+A  + E  ++  D++    ++
+Sbjct  549  ILTDNEMEQITNEMERNHLDYLRNSKQVQSQLQTLRSEIAPHKIEENQSNLDILSEAQIK  608
+
+Query  64   LGRDKYKTLRQIRQGNTKQRIDEFESM  90
+             G +KY TL++++ G+TK R+  FE +
+Sbjct  609  AGENKYSTLKKLKSGSTKARVAFFEEL  635
+
+
+>sp|P59750|MERL_PAPAN Merlin OS=Papio anubis OX=9555 GN=NF2 PE=3 
+SV=1
+Length=595
+
+ Score = 79.8 bits (195),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 44/75 (59%), Gaps = 1/75 (1%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENM-RLGRDKYKTLRQI  75
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H EN  R G  K+ T++++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDILHNENSDRGGSSKHNTIKKL  580
+
+Query  76   RQGNTKQRIDEFESM  90
+               + K R+  FE +
+Sbjct  581  TLQSAKSRVAFFEEL  595
+
+
+>sp|P35240|MERL_HUMAN Merlin OS=Homo sapiens OX=9606 GN=NF2 PE=1 
+SV=1
+Length=595
+
+ Score = 79.8 bits (195),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 44/75 (59%), Gaps = 1/75 (1%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENM-RLGRDKYKTLRQI  75
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H EN  R G  K+ T++++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDILHNENSDRGGSSKHNTIKKL  580
+
+Query  76   RQGNTKQRIDEFESM  90
+               + K R+  FE +
+Sbjct  581  TLQSAKSRVAFFEEL  595
+
+
+>sp|P46662|MERL_MOUSE Merlin OS=Mus musculus OX=10090 GN=Nf2 PE=1 
+SV=2
+Length=596
+
+ Score = 73.7 bits (179),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 20/76 (26%), Positives = 44/76 (58%), Gaps = 2/76 (3%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMRLG--RDKYKTLRQ  74
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H+E+   G    K+ T+++
+Sbjct  521  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDVLHSESSDRGGPSSKHNTIKK  580
+
+Query  75   IRQGNTKQRIDEFESM  90
+            +   + K R+  FE +
+Sbjct  581  LTLQSAKSRVAFFEEL  596
+
+
+>sp|P52962|MOES_LYTVA Moesin OS=Lytechinus variegatus OX=7654 
+PE=3 SV=1
+Length=572
+
+ Score = 65.6 bits (158),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 34/64 (53%), Positives = 45/64 (70%), Gaps = 1/64 (2%)
+
+Query  28   NERVQKHLKALTSELANARDESK-KTANDMIHAENMRLGRDKYKTLRQIRQGNTKQRIDE  86
+            ++ +   L+ L SEL   +DESK +   D IH EN+R GRDKY+TLR IR GNT+QRID 
+Sbjct  509  DKHLLDKLQKLQSELQAMKDESKGEDRYDKIHQENIRAGRDKYQTLRNIRSGNTRQRIDT  568
+
+Query  87   FESM  90
+            FE++
+Sbjct  569  FENI  572
+
+
+>sp|Q63648|MERL_RAT Merlin (Fragment) OS=Rattus norvegicus OX=10116 
+GN=Nf2 PE=1 SV=1
+Length=586
+
+ Score = 60.2 bits (144),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 16/66 (24%), Positives = 38/66 (58%), Gaps = 1/66 (2%)
+
+Query  17   SEEERTTEAEKNERVQKHLKALTSELANARDESKKTANDMIHAENMRLG-RDKYKTLRQI  75
+             E+E+    EK++ +Q+ L  L +E+   + + ++TA D++H+E+   G   K+ T+++ 
+Sbjct  517  IEKEKVEYMEKSKHLQEQLNELKTEIEALKLKERETALDILHSEHSDSGTSSKHNTIKKP  576
+
+Query  76   RQGNTK  81
+            +    +
+Sbjct  577  QAQGRR  582
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.122    0.275    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0375    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

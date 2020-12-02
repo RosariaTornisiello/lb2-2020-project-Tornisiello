@@ -1,0 +1,131 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2choa1
+
+Length=154
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q89ZI2|OGA_BACTN O-GlcNAcase BT_4395 OS=Bacteroides thetaiotao...  322     2e-106
+
+
+>sp|Q89ZI2|OGA_BACTN O-GlcNAcase BT_4395 OS=Bacteroides thetaiotaomicron 
+(strain ATCC 29148 / DSM 2079 / NCTC 10582 / E50 
+/ VPI-5482) OX=226186 GN=BT_4395 PE=1 SV=1
+Length=737
+
+ Score = 322 bits (825),  Expect = 2e-106, Method: Compositional matrix adjust.
+ Identities = 154/154 (100%), Positives = 154/154 (100%), Gaps = 0/154 (0%)
+
+Query  1    REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT  60
+            REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT
+Sbjct  458  REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT  517
+
+Query  61   PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT  120
+            PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT
+Sbjct  518  PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT  577
+
+Query  121  ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY  154
+            ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY
+Sbjct  578  ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY  611
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.377    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6531365660
+Results from round 2
+
+
+Query= d2choa1
+
+Length=154
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q89ZI2|OGA_BACTN O-GlcNAcase BT_4395 OS=Bacteroides thetaiotao...  332     2e-110
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q89ZI2|OGA_BACTN O-GlcNAcase BT_4395 OS=Bacteroides thetaiotaomicron 
+(strain ATCC 29148 / DSM 2079 / NCTC 10582 / E50 
+/ VPI-5482) OX=226186 GN=BT_4395 PE=1 SV=1
+Length=737
+
+ Score = 332 bits (851),  Expect = 2e-110, Method: Composition-based stats.
+ Identities = 154/154 (100%), Positives = 154/154 (100%), Gaps = 0/154 (0%)
+
+Query  1    REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT  60
+            REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT
+Sbjct  458  REESMDIQPAAERFLKAFKEGKNYDKADFETLQYTFERMKESADILLMNTENKPLIVEIT  517
+
+Query  61   PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT  120
+            PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT
+Sbjct  518  PWVHQFKLTAEMGEEVLKMVEGRNESYFLRKYNHVKALQQQMFYIDQTSNQNPYQPGVKT  577
+
+Query  121  ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY  154
+            ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY
+Sbjct  578  ATRVIKPLIDRTFATVVKFFNQKFNAHLDATTDY  611
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.133    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6531365660
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

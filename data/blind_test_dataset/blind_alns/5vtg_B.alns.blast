@@ -1,0 +1,263 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5vtg_B
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P39321|TAMB_ECOLI Translocation and assembly module subunit Ta...  253     4e-78
+sp|D2TN57|TAMB_CITRI Translocation and assembly module subunit Ta...  238     1e-72
+sp|E1WAU5|TAMB_SALTS Translocation and assembly module subunit Ta...  237     3e-72
+sp|Q57523|TAMB_HAEIN Translocation and assembly module subunit Ta...  129     1e-34
+
+
+>sp|P39321|TAMB_ECOLI Translocation and assembly module subunit 
+TamB OS=Escherichia coli (strain K12) OX=83333 GN=tamB PE=1 
+SV=2
+Length=1259
+
+ Score = 253 bits (647),  Expect = 4e-78, Method: Compositional matrix adjust.
+ Identities = 131/160 (82%), Positives = 131/160 (82%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDLX----------------------------INSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVHDL                             INSNLIVHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHDLPESAVGVSSDVVMLNDNLQPEEPKTASIPINSNLIVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD
+Sbjct  1037  NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP
+Sbjct  1097  QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  1136
+
+
+>sp|D2TN57|TAMB_CITRI Translocation and assembly module subunit 
+TamB OS=Citrobacter rodentium (strain ICC168) OX=637910 GN=tamB 
+PE=1 SV=1
+Length=1259
+
+ Score = 238 bits (606),  Expect = 1e-72, Method: Compositional matrix adjust.
+ Identities = 122/160 (76%), Positives = 127/160 (79%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDL----------------------------XINSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVH+L                             INSNLIVHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHELPESAVGVSSDEVMLNNQLQPEEPQTAAIPINSNLIVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVR+DAFGL+ARLTGDL V QDKQGLGLNGQINIPEGRFHAYGQDL+VRKGELLFSGPPD
+Sbjct  1037  NVRMDAFGLRARLTGDLKVAQDKQGLGLNGQINIPEGRFHAYGQDLLVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QP LNIEAIRNP+ATEDDVIAGVRVTG ADEPKAEIFSDP
+Sbjct  1097  QPILNIEAIRNPEATEDDVIAGVRVTGSADEPKAEIFSDP  1136
+
+
+>sp|E1WAU5|TAMB_SALTS Translocation and assembly module subunit 
+TamB OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=tamB 
+PE=3 SV=1
+Length=1259
+
+ Score = 237 bits (604),  Expect = 3e-72, Method: Compositional matrix adjust.
+ Identities = 123/160 (77%), Positives = 125/160 (78%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDLX----------------------------INSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVHDL                             INSNL VHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHDLPESAVGVSSDVVMLNNDLQPETPQTASIPINSNLTVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVRIDAFGLKARLTGDL V QDKQGLGLNGQINIP+GRF AYGQDL+VRKGELLFSGPPD
+Sbjct  1037  NVRIDAFGLKARLTGDLKVAQDKQGLGLNGQINIPDGRFRAYGQDLLVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QP LNIEAIRNPDATEDDVIAGVRVTG ADEPKAEIFSDP
+Sbjct  1097  QPLLNIEAIRNPDATEDDVIAGVRVTGTADEPKAEIFSDP  1136
+
+
+>sp|Q57523|TAMB_HAEIN Translocation and assembly module subunit 
+TamB OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 
+/ KW20 / Rd) OX=71421 GN=tamB PE=1 SV=1
+Length=1298
+
+ Score = 129 bits (325),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 72/169 (43%), Positives = 95/169 (56%), Gaps = 38/169 (22%)
+
+Query  2     FTLDGRVDVPWARIVVHDL-------------------------------------XINS  24
+               L G VD+PWARI +  L                                      I S
+Sbjct  1005  LNLSGTVDIPWARIKIDSLPDTAEPVSEDEVILNGPHKSKEELIKREFAAKTKSGMEIRS  1064
+
+Query  25    NLIVHVGNNVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGE  84
+             +L +++G +V +DA+GLK  L G L+V QDK  LGL GQIN+ +GR+ ++GQDL++RKG 
+Sbjct  1065  DLRINIGKDVSLDAYGLKTNLDGLLSVKQDKGNLGLFGQINLTKGRYASFGQDLLIRKGL  1124
+
+Query  85    LLFSGPPDQPYLNIEAIRNPDATEDD-VIAGVRVTGLADEPKAEIFSDP  132
+             + FSG   QP LNIEAIRNP+  ED  + AGVRV G+AD P+  IFS+P
+Sbjct  1125  ISFSGQATQPTLNIEAIRNPETMEDSKITAGVRVIGIADSPEVTIFSEP  1173
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.143    0.425    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+Results from round 2
+
+
+Query= 5vtg_B
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P39321|TAMB_ECOLI Translocation and assembly module subunit Ta...  229     1e-69
+sp|D2TN57|TAMB_CITRI Translocation and assembly module subunit Ta...  228     4e-69
+sp|E1WAU5|TAMB_SALTS Translocation and assembly module subunit Ta...  227     6e-69
+sp|Q57523|TAMB_HAEIN Translocation and assembly module subunit Ta...  190     5e-56
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P39321|TAMB_ECOLI Translocation and assembly module subunit 
+TamB OS=Escherichia coli (strain K12) OX=83333 GN=tamB PE=1 
+SV=2
+Length=1259
+
+ Score = 229 bits (584),  Expect = 1e-69, Method: Composition-based stats.
+ Identities = 131/160 (82%), Positives = 131/160 (82%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDLX----------------------------INSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVHDL                             INSNLIVHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHDLPESAVGVSSDVVMLNDNLQPEEPKTASIPINSNLIVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD
+Sbjct  1037  NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP
+Sbjct  1097  QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  1136
+
+
+>sp|D2TN57|TAMB_CITRI Translocation and assembly module subunit 
+TamB OS=Citrobacter rodentium (strain ICC168) OX=637910 GN=tamB 
+PE=1 SV=1
+Length=1259
+
+ Score = 228 bits (581),  Expect = 4e-69, Method: Composition-based stats.
+ Identities = 122/160 (76%), Positives = 127/160 (79%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDLX----------------------------INSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVH+L                             INSNLIVHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHELPESAVGVSSDEVMLNNQLQPEEPQTAAIPINSNLIVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVR+DAFGL+ARLTGDL V QDKQGLGLNGQINIPEGRFHAYGQDL+VRKGELLFSGPPD
+Sbjct  1037  NVRMDAFGLRARLTGDLKVAQDKQGLGLNGQINIPEGRFHAYGQDLLVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QP LNIEAIRNP+ATEDDVIAGVRVTG ADEPKAEIFSDP
+Sbjct  1097  QPILNIEAIRNPEATEDDVIAGVRVTGSADEPKAEIFSDP  1136
+
+
+>sp|E1WAU5|TAMB_SALTS Translocation and assembly module subunit 
+TamB OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=tamB 
+PE=3 SV=1
+Length=1259
+
+ Score = 227 bits (580),  Expect = 6e-69, Method: Composition-based stats.
+ Identities = 123/160 (77%), Positives = 125/160 (78%), Gaps = 28/160 (18%)
+
+Query  1     LFTLDGRVDVPWARIVVHDLX----------------------------INSNLIVHVGN  32
+             LFTLDGRVDVPWARIVVHDL                             INSNL VHVGN
+Sbjct  977   LFTLDGRVDVPWARIVVHDLPESAVGVSSDVVMLNNDLQPETPQTASIPINSNLTVHVGN  1036
+
+Query  33    NVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGELLFSGPPD  92
+             NVRIDAFGLKARLTGDL V QDKQGLGLNGQINIP+GRF AYGQDL+VRKGELLFSGPPD
+Sbjct  1037  NVRIDAFGLKARLTGDLKVAQDKQGLGLNGQINIPDGRFRAYGQDLLVRKGELLFSGPPD  1096
+
+Query  93    QPYLNIEAIRNPDATEDDVIAGVRVTGLADEPKAEIFSDP  132
+             QP LNIEAIRNPDATEDDVIAGVRVTG ADEPKAEIFSDP
+Sbjct  1097  QPLLNIEAIRNPDATEDDVIAGVRVTGTADEPKAEIFSDP  1136
+
+
+>sp|Q57523|TAMB_HAEIN Translocation and assembly module subunit 
+TamB OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 
+/ KW20 / Rd) OX=71421 GN=tamB PE=1 SV=1
+Length=1298
+
+ Score = 190 bits (484),  Expect = 5e-56, Method: Composition-based stats.
+ Identities = 72/169 (43%), Positives = 95/169 (56%), Gaps = 38/169 (22%)
+
+Query  2     FTLDGRVDVPWARIVVHDLX-------------------------------------INS  24
+               L G VD+PWARI +  L                                      I S
+Sbjct  1005  LNLSGTVDIPWARIKIDSLPDTAEPVSEDEVILNGPHKSKEELIKREFAAKTKSGMEIRS  1064
+
+Query  25    NLIVHVGNNVRIDAFGLKARLTGDLNVVQDKQGLGLNGQINIPEGRFHAYGQDLIVRKGE  84
+             +L +++G +V +DA+GLK  L G L+V QDK  LGL GQIN+ +GR+ ++GQDL++RKG 
+Sbjct  1065  DLRINIGKDVSLDAYGLKTNLDGLLSVKQDKGNLGLFGQINLTKGRYASFGQDLLIRKGL  1124
+
+Query  85    LLFSGPPDQPYLNIEAIRNPDATEDD-VIAGVRVTGLADEPKAEIFSDP  132
+             + FSG   QP LNIEAIRNP+  ED  + AGVRV G+AD P+  IFS+P
+Sbjct  1125  ISFSGQATQPTLNIEAIRNPETMEDSKITAGVRVIGIADSPEVTIFSEP  1173
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.395    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0425    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

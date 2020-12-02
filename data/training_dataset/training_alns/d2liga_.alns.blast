@@ -1,0 +1,545 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2liga_
+
+Length=158
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Sa...  322     2e-108
+sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Es...  224     2e-70 
+sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Esc...  97.1    7e-23 
+sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transduce...  83.6    3e-18 
+sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transd...  52.8    2e-07 
+sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transduc...  48.1    7e-06 
+
+
+>sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=tar PE=1 SV=3
+Length=553
+
+ Score = 322 bits (825),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 155/156 (99%), Positives = 155/156 (99%), Gaps = 0/156 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGLLFSSLQH QQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA
+Sbjct  26   GGLLFSSLQHNQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN
+Sbjct  86   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD
+Sbjct  146  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  181
+
+
+>sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Escherichia 
+coli (strain K12) OX=83333 GN=tar PE=1 SV=2
+Length=553
+
+ Score = 224 bits (572),  Expect = 2e-70, Method: Compositional matrix adjust.
+ Identities = 106/157 (68%), Positives = 120/157 (76%), Gaps = 0/157 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L FSSL H Q+ FV+SN+LR+QQ ELTSTWDLMLQTRINLSRSA RMMMD+SNQQS+A
+Sbjct  26   GSLFFSSLHHSQKSFVVSNQLREQQGELTSTWDLMLQTRINLSRSAVRMMMDSSNQQSNA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            K +LL +A+ TLAQAA HY  FK+M PLP M   S N+DEKY+ Y  AL ELI +LD GN
+Sbjct  86   KVELLDSARKTLAQAATHYKKFKSMAPLPEMVATSRNIDEKYKNYYTALTELIDYLDYGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFDD  158
+              AYFAQPTQGMQNA+GEA   YA  SE LYR    D
+Sbjct  146  TGAYFAQPTQGMQNAMGEAFAQYALSSEKLYRDIVTD  182
+
+
+>sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Escherichia 
+coli (strain K12) OX=83333 GN=tsr PE=1 SV=2
+Length=551
+
+ Score = 97.1 bits (240),  Expect = 7e-23, Method: Compositional matrix adjust.
+ Identities = 53/138 (38%), Positives = 84/138 (61%), Gaps = 2/138 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQS-S  60
+            GGL F++L++ ++ F +   +RQQQS L  +W  +LQTR  L+R+  R MMD +N  S S
+Sbjct  26   GGLFFNALKNDKENFTVLQTIRQQQSTLNGSWVALLQTRNTLNRAGIRYMMDQNNIGSGS  85
+
+Query  61   AKTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAE-ASANVDEKYQRYQAALAELIQFLDN  119
+               +L+++A  +L QA  ++A+++ +   P  +  A+A +   Y  Y  ALAELIQ L  
+Sbjct  86   TVAELMESASISLKQAEKNWADYEALPRDPRQSTAAAAEIKRNYDIYHNALAELIQLLGA  145
+
+Query  120  GNMDAYFAQPTQGMQNAL  137
+            G ++ +F QPTQG Q+  
+Sbjct  146  GKINEFFDQPTQGYQDGF  163
+
+
+>sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) 
+OX=1028307 GN=tse PE=3 SV=2
+Length=556
+
+ Score = 83.6 bits (205),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 55/158 (35%), Positives = 86/158 (54%), Gaps = 2/158 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGL FSSL+  ++ F +   +RQQQ  L+ +   +LQ R +L+R+  R MMD +   S A
+Sbjct  26   GGLFFSSLKSDKENFTVLQTIRQQQLLLSESRVDLLQARNSLNRAGIRYMMDTNKIGSGA  85
+
+Query  62   KTD-LLQNAKTTLAQAAAHYANFKNMTPLPAM-AEASANVDEKYQRYQAALAELIQFLDN  119
+              D LL  AK  LA+A  +Y  ++ +   P    +A+  + ++Y     AL+ELIQ L  
+Sbjct  86   TIDELLAKAKEELARAERNYTAYEKIPQDPRQDPQATEKLKQQYGILYGALSELIQLLGE  145
+
+Query  120  GNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            G ++A+F QPTQ  Q+   +    Y + +  LY+   D
+Sbjct  146  GKINAFFDQPTQKYQDDFEQTYNAYLQQNGKLYQIAVD  183
+
+
+>sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 
+10006) OX=1028307 GN=tas PE=3 SV=2
+Length=536
+
+ Score = 52.8 bits (125),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 39/115 (34%), Positives = 62/115 (54%), Gaps = 8/115 (7%)
+
+Query  24   QQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSAKTDLLQNAKTTLAQAAAHYANF  83
+            QQ+  L+ +W  +LQ R  L+R+  R  +    +Q  A   L+  A+++L +A  ++  F
+Sbjct  48   QQRDALSLSWVSLLQARNTLNRAGTRAALKVPQEQVDA---LMGGARSSLQKADLYFNQF  104
+
+Query  84   KNMTPLPAMAE---ASANVDEKYQRYQAALAELIQFLDNGNMDAYFAQPTQGMQN  135
+             + TP     E   A A  D  Y+  + AL ELI FL+N N+ A+  QPTQ +Q+
+Sbjct  105  LD-TPRADEQEQQLADATRD-SYENLRGALRELIVFLENRNLQAFMDQPTQKIQD  157
+
+
+>sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transducer 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=tcp PE=3 SV=1
+Length=547
+
+ Score = 48.1 bits (113),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 45/142 (32%), Positives = 73/142 (51%), Gaps = 22/142 (15%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L +S++   +  F  ++ L  QQ EL  ++  +++TR+ ++R A RM+    NQ+  A
+Sbjct  25   GILFYSAVSSDRLNFQNASALSYQQQELGGSFQTLIETRVTINRVAIRML---KNQRDPA  81
+
+Query  62   KTD----LLQNAKTTLAQAAAHYANFKNMTPL----PAM-AEASANVDEKYQRYQAALAE  112
+              D    LL NA  +L +A  H+ N+ N   +    PA+ A+A A+  + Y      L +
+Sbjct  82   SLDAMNTLLTNAGASLNEAEKHFNNYVNSEAIAGKDPALDAQAEASFKQMYD----VLQQ  137
+
+Query  113  LIQFL--DN----GNMDAYFAQ  128
+             I +L  DN    GN+DA  AQ
+Sbjct  138  SIHYLKADNYAAYGNLDAQKAQ  159
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.124    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7099310500
+Results from round 2
+
+
+Query= d2liga_
+
+Length=158
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Sa...  223     6e-70
+sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Es...  215     9e-67
+sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transduce...  200     3e-61
+sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Esc...  198     2e-60
+sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transd...  132     9e-36
+sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transduc...  125     5e-33
+
+Sequences not found previously or not previously below threshold:
+
+sp|P07018|MCP4_ECOLI Methyl-accepting chemotaxis protein IV OS=Es...  56.7    7e-09
+
+
+>sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=tar PE=1 SV=3
+Length=553
+
+ Score = 223 bits (568),  Expect = 6e-70, Method: Composition-based stats.
+ Identities = 155/156 (99%), Positives = 155/156 (99%), Gaps = 0/156 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGLLFSSLQH QQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA
+Sbjct  26   GGLLFSSLQHNQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN
+Sbjct  86   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD
+Sbjct  146  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  181
+
+
+>sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Escherichia 
+coli (strain K12) OX=83333 GN=tar PE=1 SV=2
+Length=553
+
+ Score = 215 bits (547),  Expect = 9e-67, Method: Composition-based stats.
+ Identities = 106/157 (68%), Positives = 120/157 (76%), Gaps = 0/157 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L FSSL H Q+ FV+SN+LR+QQ ELTSTWDLMLQTRINLSRSA RMMMD+SNQQS+A
+Sbjct  26   GSLFFSSLHHSQKSFVVSNQLREQQGELTSTWDLMLQTRINLSRSAVRMMMDSSNQQSNA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            K +LL +A+ TLAQAA HY  FK+M PLP M   S N+DEKY+ Y  AL ELI +LD GN
+Sbjct  86   KVELLDSARKTLAQAATHYKKFKSMAPLPEMVATSRNIDEKYKNYYTALTELIDYLDYGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFDD  158
+              AYFAQPTQGMQNA+GEA   YA  SE LYR    D
+Sbjct  146  TGAYFAQPTQGMQNAMGEAFAQYALSSEKLYRDIVTD  182
+
+
+>sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) 
+OX=1028307 GN=tse PE=3 SV=2
+Length=556
+
+ Score = 200 bits (509),  Expect = 3e-61, Method: Composition-based stats.
+ Identities = 55/158 (35%), Positives = 86/158 (54%), Gaps = 2/158 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGL FSSL+  ++ F +   +RQQQ  L+ +   +LQ R +L+R+  R MMD +   S A
+Sbjct  26   GGLFFSSLKSDKENFTVLQTIRQQQLLLSESRVDLLQARNSLNRAGIRYMMDTNKIGSGA  85
+
+Query  62   KTD-LLQNAKTTLAQAAAHYANFKNMTPLPAM-AEASANVDEKYQRYQAALAELIQFLDN  119
+              D LL  AK  LA+A  +Y  ++ +   P    +A+  + ++Y     AL+ELIQ L  
+Sbjct  86   TIDELLAKAKEELARAERNYTAYEKIPQDPRQDPQATEKLKQQYGILYGALSELIQLLGE  145
+
+Query  120  GNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            G ++A+F QPTQ  Q+   +    Y + +  LY+   D
+Sbjct  146  GKINAFFDQPTQKYQDDFEQTYNAYLQQNGKLYQIAVD  183
+
+
+>sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Escherichia 
+coli (strain K12) OX=83333 GN=tsr PE=1 SV=2
+Length=551
+
+ Score = 198 bits (504),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 55/159 (35%), Positives = 91/159 (57%), Gaps = 2/159 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGL F++L++ ++ F +   +RQQQS L  +W  +LQTR  L+R+  R MMD +N  S +
+Sbjct  26   GGLFFNALKNDKENFTVLQTIRQQQSTLNGSWVALLQTRNTLNRAGIRYMMDQNNIGSGS  85
+
+Query  62   KT-DLLQNAKTTLAQAAAHYANFKNMTPLPAMAE-ASANVDEKYQRYQAALAELIQFLDN  119
+               +L+++A  +L QA  ++A+++ +   P  +  A+A +   Y  Y  ALAELIQ L  
+Sbjct  86   TVAELMESASISLKQAEKNWADYEALPRDPRQSTAAAAEIKRNYDIYHNALAELIQLLGA  145
+
+Query  120  GNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFDD  158
+            G ++ +F QPTQG Q+   +    Y   ++ L+     D
+Sbjct  146  GKINEFFDQPTQGYQDGFEKQYVAYMEQNDRLHDIAVSD  184
+
+
+>sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 
+10006) OX=1028307 GN=tas PE=3 SV=2
+Length=536
+
+ Score = 132 bits (332),  Expect = 9e-36, Method: Composition-based stats.
+ Identities = 40/146 (27%), Positives = 68/146 (47%), Gaps = 6/146 (4%)
+
+Query  3    GLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSAK  62
+            GL + +L+             QQ+  L+ +W  +LQ R  L+R+  R  +    +Q  A 
+Sbjct  27   GLSYVALRADNHNLERITVSSQQRDALSLSWVSLLQARNTLNRAGTRAALKVPQEQVDA-  85
+
+Query  63   TDLLQNAKTTLAQAAAHYANFKNMTPLPAMAE--ASANVDEKYQRYQAALAELIQFLDNG  120
+              L+  A+++L +A  ++  F +        +  A A  D  Y+  + AL ELI FL+N 
+Sbjct  86   --LMGGARSSLQKADLYFNQFLDTPRADEQEQQLADATRD-SYENLRGALRELIVFLENR  142
+
+Query  121  NMDAYFAQPTQGMQNALGEALGNYAR  146
+            N+ A+  QPTQ +Q+        Y +
+Sbjct  143  NLQAFMDQPTQKIQDRFEADFVQYLQ  168
+
+
+>sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transducer 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=tcp PE=3 SV=1
+Length=547
+
+ Score = 125 bits (313),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 44/165 (27%), Positives = 76/165 (46%), Gaps = 16/165 (10%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L +S++   +  F  ++ L  QQ EL  ++  +++TR+ ++R A RM+    NQ+  A
+Sbjct  25   GILFYSAVSSDRLNFQNASALSYQQQELGGSFQTLIETRVTINRVAIRML---KNQRDPA  81
+
+Query  62   KTD----LLQNAKTTLAQAAAHYANFKNMTP----LPAM-AEASANVDEKYQRYQAALAE  112
+              D    LL NA  +L +A  H+ N+ N        PA+ A+A A+  + Y      L +
+Sbjct  82   SLDAMNTLLTNAGASLNEAEKHFNNYVNSEAIAGKDPALDAQAEASFKQMYD----VLQQ  137
+
+Query  113  LIQFLDNGNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+             I +L   N  AY     Q  Q+ + +    +   +  L +   D
+Sbjct  138  SIHYLKADNYAAYGNLDAQKAQDDMEQVYDQWLSQNAQLIKLASD  182
+
+
+>sp|P07018|MCP4_ECOLI Methyl-accepting chemotaxis protein IV OS=Escherichia 
+coli (strain K12) OX=83333 GN=tap PE=1 SV=2
+Length=533
+
+ Score = 56.7 bits (135),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 27/143 (19%), Positives = 55/143 (38%), Gaps = 4/143 (3%)
+
+Query  3    GLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSAK  62
+            G+ F + +   Q      +  QQ++ L  T  +MLQ    L+++     +      +   
+Sbjct  27   GMSFWAFRDDLQRLNQVEQSNQQRAALAQTRAVMLQASTALNKAGTLTALSYP---ADDI  83
+
+Query  63   TDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEA-SANVDEKYQRYQAALAELIQFLDNGN  121
+              L+  A+ +L Q+   + +F  MT             ++ + R+   L     +L++  
+Sbjct  84   KTLMTTARASLTQSTTLFKSFMAMTAGNEHVRGLQKETEKSFARWHNDLEHQATWLESNQ  143
+
+Query  122  MDAYFAQPTQGMQNALGEALGNY  144
+            +  +   P QG QNA       +
+Sbjct  144  LSDFLTAPVQGSQNAFDVNFEAW  166
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.122    0.290    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0374    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7099310500
+Results from round 3
+
+
+Query= d2liga_
+
+Length=158
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Sa...  194     1e-58
+sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Esc...  193     2e-58
+sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Es...  193     3e-58
+sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transduce...  183     9e-55
+sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transd...  146     9e-41
+sp|P07018|MCP4_ECOLI Methyl-accepting chemotaxis protein IV OS=Es...  141     4e-39
+sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transduc...  136     5e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P02941|MCP2_SALTY Methyl-accepting chemotaxis protein II OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=tar PE=1 SV=3
+Length=553
+
+ Score = 194 bits (492),  Expect = 1e-58, Method: Composition-based stats.
+ Identities = 155/156 (99%), Positives = 155/156 (99%), Gaps = 0/156 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGLLFSSLQH QQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA
+Sbjct  26   GGLLFSSLQHNQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN
+Sbjct  86   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD
+Sbjct  146  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  181
+
+
+>sp|P02942|MCP1_ECOLI Methyl-accepting chemotaxis protein I OS=Escherichia 
+coli (strain K12) OX=83333 GN=tsr PE=1 SV=2
+Length=551
+
+ Score = 193 bits (490),  Expect = 2e-58, Method: Composition-based stats.
+ Identities = 55/159 (35%), Positives = 91/159 (57%), Gaps = 2/159 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGL F++L++ ++ F +   +RQQQS L  +W  +LQTR  L+R+  R MMD +N  S +
+Sbjct  26   GGLFFNALKNDKENFTVLQTIRQQQSTLNGSWVALLQTRNTLNRAGIRYMMDQNNIGSGS  85
+
+Query  62   KT-DLLQNAKTTLAQAAAHYANFKNMTPLPAMAE-ASANVDEKYQRYQAALAELIQFLDN  119
+               +L+++A  +L QA  ++A+++ +   P  +  A+A +   Y  Y  ALAELIQ L  
+Sbjct  86   TVAELMESASISLKQAEKNWADYEALPRDPRQSTAAAAEIKRNYDIYHNALAELIQLLGA  145
+
+Query  120  GNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFDD  158
+            G ++ +F QPTQG Q+   +    Y   ++ L+     D
+Sbjct  146  GKINEFFDQPTQGYQDGFEKQYVAYMEQNDRLHDIAVSD  184
+
+
+>sp|P07017|MCP2_ECOLI Methyl-accepting chemotaxis protein II OS=Escherichia 
+coli (strain K12) OX=83333 GN=tar PE=1 SV=2
+Length=553
+
+ Score = 193 bits (489),  Expect = 3e-58, Method: Composition-based stats.
+ Identities = 106/157 (68%), Positives = 120/157 (76%), Gaps = 0/157 (0%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L FSSL H Q+ FV+SN+LR+QQ ELTSTWDLMLQTRINLSRSA RMMMD+SNQQS+A
+Sbjct  26   GSLFFSSLHHSQKSFVVSNQLREQQGELTSTWDLMLQTRINLSRSAVRMMMDSSNQQSNA  85
+
+Query  62   KTDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASANVDEKYQRYQAALAELIQFLDNGN  121
+            K +LL +A+ TLAQAA HY  FK+M PLP M   S N+DEKY+ Y  AL ELI +LD GN
+Sbjct  86   KVELLDSARKTLAQAATHYKKFKSMAPLPEMVATSRNIDEKYKNYYTALTELIDYLDYGN  145
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFDD  158
+              AYFAQPTQGMQNA+GEA   YA  SE LYR    D
+Sbjct  146  TGAYFAQPTQGMQNAMGEAFAQYALSSEKLYRDIVTD  182
+
+
+>sp|P21822|MCPS_KLEAK Methyl-accepting chemotaxis serine transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) 
+OX=1028307 GN=tse PE=3 SV=2
+Length=556
+
+ Score = 183 bits (465),  Expect = 9e-55, Method: Composition-based stats.
+ Identities = 55/158 (35%), Positives = 86/158 (54%), Gaps = 2/158 (1%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            GGL FSSL+  ++ F +   +RQQQ  L+ +   +LQ R +L+R+  R MMD +   S A
+Sbjct  26   GGLFFSSLKSDKENFTVLQTIRQQQLLLSESRVDLLQARNSLNRAGIRYMMDTNKIGSGA  85
+
+Query  62   KTD-LLQNAKTTLAQAAAHYANFKNMTPLPAM-AEASANVDEKYQRYQAALAELIQFLDN  119
+              D LL  AK  LA+A  +Y  ++ +   P    +A+  + ++Y     AL+ELIQ L  
+Sbjct  86   TIDELLAKAKEELARAERNYTAYEKIPQDPRQDPQATEKLKQQYGILYGALSELIQLLGE  145
+
+Query  120  GNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+            G ++A+F QPTQ  Q+   +    Y + +  LY+   D
+Sbjct  146  GKINAFFDQPTQKYQDDFEQTYNAYLQQNGKLYQIAVD  183
+
+
+>sp|P21823|MCPD_KLEAK Methyl-accepting chemotaxis aspartate transducer 
+OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 
+/ JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 
+10006) OX=1028307 GN=tas PE=3 SV=2
+Length=536
+
+ Score = 146 bits (368),  Expect = 9e-41, Method: Composition-based stats.
+ Identities = 38/145 (26%), Positives = 68/145 (47%), Gaps = 4/145 (3%)
+
+Query  3    GLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSAK  62
+            GL + +L+             QQ+  L+ +W  +LQ R  L+R+  R  +    +Q  A 
+Sbjct  27   GLSYVALRADNHNLERITVSSQQRDALSLSWVSLLQARNTLNRAGTRAALKVPQEQVDA-  85
+
+Query  63   TDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEASAN-VDEKYQRYQAALAELIQFLDNGN  121
+              L+  A+++L +A  ++  F +        +  A+   + Y+  + AL ELI FL+N N
+Sbjct  86   --LMGGARSSLQKADLYFNQFLDTPRADEQEQQLADATRDSYENLRGALRELIVFLENRN  143
+
+Query  122  MDAYFAQPTQGMQNALGEALGNYAR  146
+            + A+  QPTQ +Q+        Y +
+Sbjct  144  LQAFMDQPTQKIQDRFEADFVQYLQ  168
+
+
+>sp|P07018|MCP4_ECOLI Methyl-accepting chemotaxis protein IV OS=Escherichia 
+coli (strain K12) OX=83333 GN=tap PE=1 SV=2
+Length=533
+
+ Score = 141 bits (356),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 27/143 (19%), Positives = 55/143 (38%), Gaps = 4/143 (3%)
+
+Query  3    GLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSAK  62
+            G+ F + +   Q      +  QQ++ L  T  +MLQ    L+++     +      +   
+Sbjct  27   GMSFWAFRDDLQRLNQVEQSNQQRAALAQTRAVMLQASTALNKAGTLTALSYP---ADDI  83
+
+Query  63   TDLLQNAKTTLAQAAAHYANFKNMTPLPAMAEA-SANVDEKYQRYQAALAELIQFLDNGN  121
+              L+  A+ +L Q+   + +F  MT             ++ + R+   L     +L++  
+Sbjct  84   KTLMTTARASLTQSTTLFKSFMAMTAGNEHVRGLQKETEKSFARWHNDLEHQATWLESNQ  143
+
+Query  122  MDAYFAQPTQGMQNALGEALGNY  144
+            +  +   P QG QNA       +
+Sbjct  144  LSDFLTAPVQGSQNAFDVNFEAW  166
+
+
+>sp|Q02755|MCPC_SALTY Methyl-accepting chemotaxis citrate transducer 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=tcp PE=3 SV=1
+Length=547
+
+ Score = 136 bits (342),  Expect = 5e-37, Method: Composition-based stats.
+ Identities = 44/165 (27%), Positives = 76/165 (46%), Gaps = 16/165 (10%)
+
+Query  2    GGLLFSSLQHCQQGFVISNELRQQQSELTSTWDLMLQTRINLSRSAARMMMDASNQQSSA  61
+            G L +S++   +  F  ++ L  QQ EL  ++  +++TR+ ++R A RM+    NQ+  A
+Sbjct  25   GILFYSAVSSDRLNFQNASALSYQQQELGGSFQTLIETRVTINRVAIRML---KNQRDPA  81
+
+Query  62   KTD----LLQNAKTTLAQAAAHYANFKNMTP----LPAM-AEASANVDEKYQRYQAALAE  112
+              D    LL NA  +L +A  H+ N+ N        PA+ A+A A+  + Y      L +
+Sbjct  82   SLDAMNTLLTNAGASLNEAEKHFNNYVNSEAIAGKDPALDAQAEASFKQMYD----VLQQ  137
+
+Query  113  LIQFLDNGNMDAYFAQPTQGMQNALGEALGNYARVSENLYRQTFD  157
+             I +L   N  AY     Q  Q+ + +    +   +  L +   D
+Sbjct  138  SIHYLKADNYAAYGNLDAQKAQDDMEQVYDQWLSQNAQLIKLASD  182
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.122    0.277    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0372    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7099310500
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

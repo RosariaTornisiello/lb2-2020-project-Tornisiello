@@ -1,0 +1,2964 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= e1qtn.1B
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 ...  194     8e-61
+sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8...  164     2e-49
+sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Ca...  162     2e-48
+sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elega...  62.8    8e-12
+sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7...  62.0    8e-12
+sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis reman...  60.8    4e-11
+sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP1...  60.5    4e-11
+sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 ...  58.9    1e-10
+sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 ...  58.5    2e-10
+sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 ...  57.0    6e-10
+sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 PE...  56.6    7e-10
+sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 ...  55.8    2e-09
+sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 ...  55.5    2e-09
+sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 PE=1...  55.1    3e-09
+sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensi...  53.9    7e-09
+sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 GN...  53.9    7e-09
+sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 ...  53.1    1e-08
+sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CAS...  53.1    1e-08
+sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3...  52.4    3e-08
+sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 P...  52.0    4e-08
+sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 ...  52.0    4e-08
+sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Ca...  50.8    9e-08
+sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp...  50.1    2e-07
+sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615...  49.3    3e-07
+sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=722...  47.8    1e-06
+sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=722...  47.8    1e-06
+sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 ...  46.6    4e-06
+sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9...  45.8    6e-06
+sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6...  44.3    2e-05
+sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseud...  44.3    2e-05
+sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 ...  43.1    5e-05
+sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster OX...  42.4    9e-05
+sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 ...  42.0    1e-04
+sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 PE...  41.6    2e-04
+sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Ca...  40.0    6e-04
+sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb P...  38.9    0.002
+sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditi...  38.5    0.003
+sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caeno...  37.4    0.004
+sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP1...  37.4    0.005
+sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=ca...  37.0    0.007
+sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 ...  37.0    0.008
+
+
+>sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 
+PE=1 SV=1
+Length=479
+
+ Score = 194 bits (494),  Expect = 8e-61, Method: Compositional matrix adjust.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  60
+            TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE
+Sbjct  390  TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  449
+
+Query  61   VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  90
+            VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD
+Sbjct  450  VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  479
+
+
+>sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8 
+PE=1 SV=1
+Length=480
+
+ Score = 164 bits (416),  Expect = 2e-49, Method: Compositional matrix adjust.
+ Identities = 74/86 (86%), Positives = 80/86 (93%), Gaps = 0/86 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCP+GDDIL+ILT VNY+VS
+Sbjct  394  YIPDEADFLLGMATVKNCVSYRDPVNGTWYIQSLCQSLRERCPQGDDILSILTGVNYDVS  453
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFP  88
+            NKDD++N GKQMPQPTFTLRKKL FP
+Sbjct  454  NKDDRRNKGKQMPQPTFTLRKKLFFP  479
+
+
+>sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Casp8 
+PE=1 SV=1
+Length=482
+
+ Score = 162 bits (410),  Expect = 2e-48, Method: Compositional matrix adjust.
+ Identities = 73/86 (85%), Positives = 79/86 (92%), Gaps = 0/86 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCPRG+DIL+ILT VNY+VS
+Sbjct  395  YIPDEADFLLGMATVKNCVSYRDPTRGTWYIQSLCQSLRERCPRGEDILSILTGVNYDVS  454
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFP  88
+            NKD+ +NMGKQMPQP FTLRKKL FP
+Sbjct  455  NKDNPRNMGKQMPQPIFTLRKKLFFP  480
+
+
+>sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elegans 
+OX=6239 GN=ced-3 PE=1 SV=2
+Length=503
+
+ Score = 62.8 bits (151),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 34/89 (38%), Positives = 50/89 (56%), Gaps = 4/89 (4%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  407  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSTHA-KDMDVVELLTEVNKKV  465
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +         N+ KQMP+ T  L KK  F
+Sbjct  466  ACGFQTSQGSNILKQMPEMTSRLLKKFYF  494
+
+
+>sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7 
+PE=1 SV=2
+Length=303
+
+ Score = 62.0 bits (149),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 36/90 (40%), Positives = 51/90 (57%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVN-----  58
+            IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN     
+Sbjct  213  IPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILNEH-GKDLEIMQILTRVNDRVAR  271
+
+Query  59   -YEVSNKDDKKNMGKQMPQPTFTLRKKLVF  87
+             +E  + D + N  KQ+P     L K+L F
+Sbjct  272  HFESQSDDPRFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis remanei 
+OX=31234 GN=ced-3 PE=3 SV=2
+Length=508
+
+ Score = 60.8 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 36/93 (39%), Positives = 52/93 (56%), Gaps = 5/93 (5%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  410  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSLHA-KDMDVVELLTEVNKKV  468
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF-PSD  90
+            +         N+ KQMP+ T  L KK  F P D
+Sbjct  469  ACGFQTSQGANILKQMPELTSRLLKKFYFWPED  501
+
+
+>sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP10 
+PE=1 SV=3
+Length=521
+
+ Score = 60.5 bits (145),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 27/43 (63%), Positives = 33/43 (77%), Gaps = 0/43 (0%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPR  46
+            IP EADFLLG+ATV   VS+R+  EG+WYIQSLC  L++  PR
+Sbjct  430  IPAEADFLLGLATVPGYVSFRHVEEGSWYIQSLCNHLKKLVPR  472
+
+
+>sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 
+GN=CASP7 PE=1 SV=1
+Length=303
+
+ Score = 58.9 bits (141),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 38/93 (41%), Positives = 51/93 (55%), Gaps = 8/93 (9%)
+
+Query  2    RY-IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVN--  58
+            RY IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN  
+Sbjct  210  RYKIPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILDEH-GKDLEIMQILTRVNDR  268
+
+Query  59   ----YEVSNKDDKKNMGKQMPQPTFTLRKKLVF  87
+                +E    D   N  KQ+P     L K+L F
+Sbjct  269  VARHFESQCDDPCFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 
+PE=1 SV=1
+Length=303
+
+ Score = 58.5 bits (140),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 36/93 (39%), Positives = 51/93 (55%), Gaps = 8/93 (9%)
+
+Query  2    RY-IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVN--  58
+            RY IP EADFL   +TV    S+R+P  G+W++Q+LC  L E   +  +I+ ILT VN  
+Sbjct  210  RYKIPVEADFLFAYSTVPGYYSWRSPGRGSWFVQALCSILEEH-GKDLEIMQILTRVNDR  268
+
+Query  59   ----YEVSNKDDKKNMGKQMPQPTFTLRKKLVF  87
+                +E  + D   +  KQ+P     L K+L F
+Sbjct  269  VARHFESQSDDPHFHEKKQIPCVVSMLTKELYF  301
+
+
+>sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 
+PE=1 SV=1
+Length=299
+
+ Score = 57.0 bits (136),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 38/91 (42%), Positives = 50/91 (55%), Gaps = 8/91 (9%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV--  61
+            IP  ADFL+  +TV    S+RN   G+W++Q+LC+ LR       DILT+LT V  +V  
+Sbjct  204  IPVHADFLIAFSTVPGYFSWRNTTRGSWFMQALCEELRYAGTE-RDILTLLTFVCQKVAL  262
+
+Query  62   ---SNKDDKKNMG--KQMPQPTFTLRKKLVF  87
+               SN  D   M   KQ+P  T  L + LVF
+Sbjct  263  DFESNAPDSAMMHQQKQVPCITSMLTRLLVF  293
+
+
+>sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 
+PE=2 SV=1
+Length=275
+
+ Score = 56.6 bits (135),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 34/90 (38%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVN-----  58
+            IP EADFL   +T     S+RN   G+W+IQ+LC+ L++   R  +++ ILT VN     
+Sbjct  187  IPVEADFLYAYSTAPGYFSWRNAKNGSWFIQALCEMLKKHAHR-LELMHILTRVNRKVAI  245
+
+Query  59   -YEVSNKDDKKNMGKQMPQPTFTLRKKLVF  87
+             YE  + D   +  KQ+P     L K+L F
+Sbjct  246  EYESFSTDSAFHAKKQIPCIMSMLTKELYF  275
+
+
+>sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 55.8 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 35/90 (39%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  EG+W+IQSLC  L+E   +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSEEGSWFIQSLCAMLKEYAHK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESYSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 55.5 bits (132),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 34/90 (38%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RNP +G+W+IQSLC  L+    +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNPKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 
+PE=1 SV=1
+Length=277
+
+ Score = 55.1 bits (131),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 51/90 (57%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS-  62
+            IP EADFL   +T     S+RN  +G+W+IQSLC +L++   +  +++ ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAALKQYVHK-LELMHILTRVNRKVAV  245
+
+Query  63   -----NKDDKKNMGKQMPQPTFTLRKKLVF  87
+                 + D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSTDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensis 
+OX=39432 GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 53.9 bits (128),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 34/90 (38%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVN-----  58
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN     
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKQYAHK-LEFMHILTRVNRKVAT  245
+
+Query  59   -YEVSNKDDKKNMGKQMPQPTFTLRKKLVF  87
+             +E S+ D   +  KQ+P     L K+L F
+Sbjct  246  EFESSSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 53.9 bits (128),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 
+PE=1 SV=2
+Length=277
+
+ Score = 53.1 bits (126),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 53.1 bits (126),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 49/90 (54%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3 
+PE=1 SV=1
+Length=277
+
+ Score = 52.4 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 48/90 (53%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 34/90 (38%), Positives = 47/90 (52%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  LR       + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLRLYAHE-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSLDSAFHGKKQIPCIVSMLTKELYF  275
+
+
+>sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 
+GN=Drice PE=1 SV=2
+Length=339
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 35/91 (38%), Positives = 48/91 (53%), Gaps = 8/91 (9%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILT------EV  57
+            IP  ADFL+  +TV    S+RN   G+W++QSLC  L     R  DILT+LT       V
+Sbjct  239  IPVHADFLIAYSTVPGFYSWRNTTRGSWFMQSLCAELAANGKR-LDILTLLTFVCQRVAV  297
+
+Query  58   NYEVSNKDD-KKNMGKQMPQPTFTLRKKLVF  87
+            ++E    D  + +  KQ+P  T  L + L F
+Sbjct  298  DFESCTPDTPEMHQQKQIPCITTMLTRILRF  328
+
+
+>sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Casp3 
+PE=2 SV=2
+Length=277
+
+ Score = 50.8 bits (120),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 33/90 (37%), Positives = 48/90 (53%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKLVF  87
+            +      D   +  KQ+P     L K+L F
+Sbjct  246  EFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp3 
+PE=2 SV=1
+Length=282
+
+ Score = 50.1 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 30/84 (36%), Positives = 47/84 (56%), Gaps = 1/84 (1%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +TV    S+R+  +G+W+IQSLC+ ++       +++ ILT VN+ V+ 
+Sbjct  198  IPVEADFLYAYSTVPGYCSWRDKMDGSWFIQSLCKMIKLYGSH-LELIQILTCVNHMVAL  256
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVF  87
+              +  +  KQ+P     L K   F
+Sbjct  257  DFETFHAKKQIPCVVSMLTKSFYF  280
+
+
+>sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 49.3 bits (116),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 32/88 (36%), Positives = 47/88 (53%), Gaps = 7/88 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V+ 
+Sbjct  187  IPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKVAT  245
+
+Query  64   K------DDKKNMGKQMPQPTFTLRKKL  85
+            +      D   +  KQ+P     L K+L
+Sbjct  246  EFESFSLDSAFHGKKQIPCIVSMLTKEL  273
+
+
+>sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=7227 
+GN=Dcp-1 PE=1 SV=1
+Length=323
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 35/59 (59%), Gaps = 1/59 (2%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            IP  ADFL   +T+    S+RN   G+WY+QSL + L     +  D+LT+LT VN  V+
+Sbjct  224  IPIHADFLFSYSTIPGYFSWRNINNGSWYMQSLIRELNANGKK-YDLLTLLTFVNQRVA  281
+
+
+>sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=7227 
+GN=Dredd PE=1 SV=3
+Length=494
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 31/85 (36%), Positives = 43/85 (51%), Gaps = 3/85 (4%)
+
+Query  5    PDE-ADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            PD+  D L  M+TVN   + R+   G+W+I SLC ++  R    + I  ILT V  EVS 
+Sbjct  409  PDQHIDMLRAMSTVNGYAALRHTQTGSWFIGSLCDAIDRRSA-SEHIADILTIVTNEVSK  467
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFP  88
+            K    N    +P    T R+ + FP
+Sbjct  468  KRG-SNDESMVPNVKSTFRQHVYFP  491
+
+
+>sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 
+PE=1 SV=3
+Length=416
+
+ Score = 46.6 bits (109),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 28/86 (33%), Positives = 46/86 (53%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D  +  +T    VS+R+P  G+WY+++L   + E+    +D+ ++L  V   VS 
+Sbjct  335  LPTPSDIFVSYSTFPGFVSWRDPKSGSWYVETL-DDIFEQWAHSEDLQSLLLRVANAVS-  392
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                K + KQMP     LRKKL F +
+Sbjct  393  ---VKGIYKQMPGCFNFLRKKLFFKT  415
+
+
+>sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9 
+PE=1 SV=1
+Length=454
+
+ Score = 45.8 bits (107),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 46/86 (53%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D L+  +T    VS+R+   G+WYI++L   + E+  R +D+ ++L  V   VS 
+Sbjct  373  LPTPSDILVSYSTFPGFVSWRDKKSGSWYIETL-DGILEQWARSEDLQSLLLRVANAVS-  430
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                K   KQ+P     LRKKL F +
+Sbjct  431  ---AKGTYKQIPGCFNFLRKKLFFKT  453
+
+
+>sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6 
+PE=1 SV=1
+Length=276
+
+ Score = 44.3 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 32/90 (36%), Positives = 44/90 (49%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L  R     +   +LT VN +VS 
+Sbjct  182  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEML-ARYGSSLEFTELLTLVNRKVSQ  240
+
+Query  64   K-----DDKKNMG-KQMPQPTFTLRKKLVF  87
+            +      D   +G KQ+P     L KKL F
+Sbjct  241  RRVDFCKDPDAIGKKQVPCFASMLTKKLHF  270
+
+
+>sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseudoobscura 
+OX=46245 GN=Dredd PE=3 SV=1
+Length=511
+
+ Score = 44.3 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 41/80 (51%), Gaps = 2/80 (3%)
+
+Query  9    DFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDKK  68
+            + L  M+TV    + R+   G+W+IQSLC ++ E     D I  ILT V   V+NK   K
+Sbjct  419  NMLRAMSTVPGFPALRHTQTGSWFIQSLCDAIVEH-SNSDHIADILTIVINNVANKRGNK  477
+
+Query  69   NMGKQMPQPTFTLRKKLVFP  88
+            N    +P     LR+ + FP
+Sbjct  478  NE-TMVPWTGGALRQHVYFP  496
+
+
+>sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 
+PE=1 SV=2
+Length=293
+
+ Score = 43.1 bits (100),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 44/90 (49%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L  +     +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEML-GKYGSSLEFTELLTLVNRKVSQ  258
+
+Query  64   K-----DDKKNMG-KQMPQPTFTLRKKLVF  87
+            +      D   +G KQ+P     L KKL F
+Sbjct  259  RRVDFCKDPSAIGKKQVPCFASMLTKKLHF  288
+
+
+>sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster 
+OX=7227 GN=Dronc PE=1 SV=1
+Length=450
+
+ Score = 42.4 bits (98),  Expect = 9e-05, Method: Compositional matrix adjust.
+ Identities = 26/84 (31%), Positives = 38/84 (45%), Gaps = 1/84 (1%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  AD L+  A     V++R+   G+WYIQ  CQ + +      D+  IL + +  V N
+Sbjct  361  VPSLADTLVCYANTPGYVTHRDLDTGSWYIQKFCQVMADHA-HDTDLEDILKKTSEAVGN  419
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVF  87
+            K  KK   +          KKL F
+Sbjct  420  KRTKKGSMQTGAYDNLGFNKKLYF  443
+
+
+>sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 
+GN=csp-1 PE=1 SV=1
+Length=536
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/83 (31%), Positives = 41/83 (49%), Gaps = 4/83 (5%)
+
+Query  8    ADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDK  67
+            AD ++  +T +   SYR+   GTWYI+S+C+   +   +   +L ILTE    V  K + 
+Sbjct  451  ADVIISFSTTDGFTSYRDEEAGTWYIKSMCKVFNKHS-KTMHLLDILTETGRNVVTKYEN  509
+
+Query  68   KN---MGKQMPQPTFTLRKKLVF  87
+                 + KQ P+    L K+  F
+Sbjct  510  VQGNVVLKQAPEILSRLTKQWHF  532
+
+
+>sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 
+PE=2 SV=1
+Length=293
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 44/90 (49%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L  +     +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEML-GKFGSSLEFTELLTLVNRKVSQ  258
+
+Query  64   K-----DDKKNMG-KQMPQPTFTLRKKLVF  87
+            +      D   +G KQ+P     L KKL F
+Sbjct  259  RRVDFCRDPNAIGKKQVPCFASMLTKKLHF  288
+
+
+>sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Casp6 
+PE=2 SV=2
+Length=277
+
+ Score = 40.0 bits (92),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 32/90 (36%), Positives = 44/90 (49%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ L + L  R     +   +LT VN +VS 
+Sbjct  183  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLSEML-ARHGSSLEFTELLTLVNRKVSQ  241
+
+Query  64   K--DDKKNMG----KQMPQPTFTLRKKLVF  87
+            +  D  K+ G    KQ+P     L KKL F
+Sbjct  242  RRVDFCKDPGAIGKKQVPCFASMLTKKLHF  271
+
+
+>sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb 
+PE=1 SV=1
+Length=404
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 3/88 (3%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E DF+  M+T+ N  +YRNP EG+++I  +         R DDI+ +  +V   + 
+Sbjct  316  WVHMEKDFVCFMSTMPNTFAYRNPIEGSFFISYIVDVFCSSAHR-DDIMELFRKVTLRME  374
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+                 +   K +P  + T   ++  +FP
+Sbjct  375  KDQRFQGQAKLLPCIERTSISKRFYLFP  402
+
+
+>sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditis 
+elegans OX=6239 GN=csp-2 PE=1 SV=1
+Length=263
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 26/84 (31%), Positives = 41/84 (49%), Gaps = 4/84 (5%)
+
+Query  7    EADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNK--  64
+            +AD L+  +T    +S+R+  +GTWYIQ L + + E   +   +  +L E N  V  K  
+Sbjct  179  QADLLVSFSTSPGFLSFRDETKGTWYIQELYRVIIEN-AKDTHLADLLMETNRRVVEKYE  237
+
+Query  65   -DDKKNMGKQMPQPTFTLRKKLVF  87
+             D    + KQ P+      K+L F
+Sbjct  238  ADKVVIVCKQAPEFWSRFTKQLFF  261
+
+
+>sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caenorhabditis 
+elegans OX=6239 GN=csp-3 PE=1 SV=1
+Length=139
+
+ Score = 37.4 bits (85),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 26/86 (30%), Positives = 42/86 (49%), Gaps = 4/86 (5%)
+
+Query  7    EADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNK--  64
+            +AD L+  +T    +S+++  + TWYIQ L + + E   +   +  +LTE N  V  K  
+Sbjct  50   QADLLVSFSTSPGFLSFKDETKDTWYIQELYRVIIENA-KDTHLADLLTETNRRVVEKYE  108
+
+Query  65   -DDKKNMGKQMPQPTFTLRKKLVFPS  89
+             D    + KQ P+      K+L F S
+Sbjct  109  ADKVVFVCKQAPEFWSRFTKQLFFMS  134
+
+
+>sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP14 
+PE=1 SV=2
+Length=242
+
+ Score = 37.4 bits (85),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/84 (31%), Positives = 41/84 (49%), Gaps = 5/84 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP   D L   +TV   ++YR+  +G+ +IQ+L         R   IL +LTEV   ++ 
+Sbjct  159  IPTYTDALHVYSTVEGYIAYRHDQKGSCFIQTLVDVF---TKRKGHILELLTEVTRRMAE  215
+
+Query  64   KD--DKKNMGKQMPQPTFTLRKKL  85
+             +   +    K  P+   TLRK+L
+Sbjct  216  AELVQEGKARKTNPEIQSTLRKRL  239
+
+
+>sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=casp1-a 
+PE=2 SV=1
+Length=386
+
+ Score = 37.0 bits (84),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 30/93 (32%), Positives = 46/93 (49%), Gaps = 11/93 (12%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRE--RC-PRGDDILTILTEVN  58
+             ++  EADF+   ++  + VS+R+P +G+ +I  L + + E   C P GD  L + +   
+Sbjct  299  HFVQREADFICFCSSTPDTVSWRDPTKGSVFITHLIEKMNEYAHCQPLGDIFLEVQSLF-  357
+
+Query  59   YEVSNKDDKKNMGKQMP-QPTFTLRKKL-VFPS  89
+                 KD   N   QMP Q   TL KK  +FP 
+Sbjct  358  -----KDKCPNSRSQMPTQERCTLTKKFYLFPG  385
+
+
+>sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 
+PE=1 SV=2
+Length=452
+
+ Score = 37.0 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 14/40 (35%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRER  43
+            +P  +D + G A +    + RN   G+WYI++L Q   ER
+Sbjct  358  LPTRSDMICGYACLKGTAAMRNTKRGSWYIEALAQVFSER  397
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 2
+
+
+Query= e1qtn.1B
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 ...  148     5e-43
+sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 PE...  137     1e-40
+sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 ...  136     4e-40
+sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 ...  134     1e-39
+sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensi...  134     2e-39
+sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 GN...  133     3e-39
+sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3...  133     4e-39
+sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 PE=1...  133     4e-39
+sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7...  134     5e-39
+sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Ca...  137     5e-39
+sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8...  137     5e-39
+sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Ca...  132     9e-39
+sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 ...  132     1e-38
+sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CAS...  132     1e-38
+sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 ...  133     1e-38
+sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 P...  132     1e-38
+sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 ...  132     3e-38
+sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615...  130     7e-38
+sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp...  129     2e-37
+sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 ...  117     3e-32
+sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 ...  115     5e-32
+sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis reman...  118     1e-31
+sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elega...  117     3e-31
+sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 ...  112     7e-31
+sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6...  111     1e-30
+sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 PE...  110     6e-30
+sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Ca...  110     6e-30
+sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=722...  110     1e-29
+sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 ...  106     1e-27
+sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9...  106     1e-27
+sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster OX...  102     4e-26
+sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseud...  102     6e-26
+sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb P...  100     1e-25
+sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=722...  98.9    1e-24
+sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 ...  95.1    3e-23
+sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP1...  76.2    1e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditi...  82.7    1e-19
+sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caeno...  75.4    9e-18
+sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP1...  76.2    3e-17
+sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 ...  69.6    2e-14
+sp|Q98943|CASP2_CHICK Caspase-2 OS=Gallus gallus OX=9031 GN=CASP2...  69.3    3e-14
+sp|O89094|CASPE_MOUSE Caspase-14 OS=Mus musculus OX=10090 GN=Casp...  68.1    4e-14
+sp|P55215|CASP2_RAT Caspase-2 OS=Rattus norvegicus OX=10116 GN=Ca...  67.3    2e-13
+sp|P29594|CASP2_MOUSE Caspase-2 OS=Mus musculus OX=10090 GN=Casp2...  67.3    2e-13
+sp|P43527|CASP1_RAT Caspase-1 OS=Rattus norvegicus OX=10116 GN=Ca...  65.0    1e-12
+sp|Q9I9L7|CASPA_DANRE Caspase a OS=Danio rerio OX=7955 GN=caspa P...  63.1    5e-12
+sp|P29452|CASP1_MOUSE Caspase-1 OS=Mus musculus OX=10090 GN=Casp1...  61.6    2e-11
+sp|P55867|CAS1B_XENLA Caspase-1-B OS=Xenopus laevis OX=8355 GN=ca...  61.6    2e-11
+sp|P70343|CASP4_MOUSE Caspase-4 OS=Mus musculus OX=10090 GN=Casp4...  61.6    2e-11
+sp|Q9TV13|CASP1_HORSE Caspase-1 OS=Equus caballus OX=9796 GN=CASP...  61.2    2e-11
+sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=ca...  60.8    3e-11
+sp|P29466|CASP1_HUMAN Caspase-1 OS=Homo sapiens OX=9606 GN=CASP1 ...  57.7    4e-10
+sp|Q9MZV6|CASP1_FELCA Caspase-1 OS=Felis catus OX=9685 GN=CASP1 P...  56.9    8e-10
+sp|Q6UXS9|CASPC_HUMAN Inactive caspase-12 OS=Homo sapiens OX=9606...  56.5    1e-09
+sp|O75601|CASPD_BOVIN Caspase-13 OS=Bos taurus OX=9913 GN=CASP13 ...  55.8    2e-09
+sp|Q5E9C1|CASP4_BOVIN Caspase-4 OS=Bos taurus OX=9913 GN=CASP4 PE...  55.8    2e-09
+sp|Q153Z0|CASPC_MACMU Caspase-12 OS=Macaca mulatta OX=9544 PE=2 SV=1  55.8    2e-09
+sp|Q9MZV7|CASP1_CANLF Caspase-1 OS=Canis lupus familiaris OX=9615...  55.0    4e-09
+sp|Q9N2I1|CASP1_PIG Caspase-1 OS=Sus scrofa OX=9823 GN=CASP1 PE=2...  54.2    7e-09
+sp|Q075B4|CASPC_CANLF Caspase-12 OS=Canis lupus familiaris OX=961...  53.8    8e-09
+sp|P51878|CASP5_HUMAN Caspase-5 OS=Homo sapiens OX=9606 GN=CASP5 ...  53.8    9e-09
+sp|O08736|CASPC_MOUSE Caspase-12 OS=Mus musculus OX=10090 GN=Casp...  53.1    1e-08
+sp|Q920D5|CASPC_RAT Caspase-12 OS=Rattus norvegicus OX=10116 GN=C...  52.7    2e-08
+sp|P49662|CASP4_HUMAN Caspase-4 OS=Homo sapiens OX=9606 GN=CASP4 ...  52.3    3e-08
+
+
+>sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 
+PE=1 SV=1
+Length=479
+
+ Score = 148 bits (374),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  60
+            TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE
+Sbjct  390  TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  449
+
+Query  61   VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  90
+            VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD
+Sbjct  450  VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  479
+
+
+>sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 
+PE=2 SV=1
+Length=275
+
+ Score = 137 bits (345),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 51/92 (55%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN   G+W+IQ+LC+ L++   R  +++ ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYFSWRNAKNGSWFIQALCEMLKKHAHR-LELMHILTRVNRKV  243
+
+Query  62   S------NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +      + D   +  KQ+P     L K+L F
+Sbjct  244  AIEYESFSTDSAFHAKKQIPCIMSMLTKELYF  275
+
+
+>sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 136 bits (342),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 35/92 (38%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  EG+W+IQSLC  L+E   +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSEEGSWFIQSLCAMLKEYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLVF  87
+            + +      D   +  KQ+P     L K+L F
+Sbjct  244  ATEFESYSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 134 bits (338),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RNP +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNPKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLVF  87
+            + +      D   +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensis 
+OX=39432 GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 134 bits (338),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKQYAHK-LEFMHILTRVNRKVA  244
+
+Query  63   NK------DDKKNMGKQMPQPTFTLRKKLVF  87
+             +      D   +  KQ+P     L K+L F
+Sbjct  245  TEFESSSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 133 bits (336),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NK------DDKKNMGKQMPQPTFTLRKKLVF  87
+             +      D   +  KQ+P     L K+L F
+Sbjct  245  TEFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3 
+PE=1 SV=1
+Length=277
+
+ Score = 133 bits (336),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 49/92 (53%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLVF  87
+            + +      D   +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 
+PE=1 SV=1
+Length=277
+
+ Score = 133 bits (335),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 52/92 (57%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC +L++   +  +++ ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAALKQYVHK-LELMHILTRVNRKV  243
+
+Query  62   S------NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +      + D   +  KQ+P     L K+L F
+Sbjct  244  AVEFESFSTDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7 
+PE=1 SV=2
+Length=303
+
+ Score = 134 bits (337),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 36/91 (40%), Positives = 51/91 (56%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN  V+
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILNEH-GKDLEIMQILTRVNDRVA  270
+
+Query  63   ------NKDDKKNMGKQMPQPTFTLRKKLVF  87
+                  + D + N  KQ+P     L K+L F
+Sbjct  271  RHFESQSDDPRFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Casp8 
+PE=1 SV=1
+Length=482
+
+ Score = 137 bits (346),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 73/88 (83%), Positives = 80/88 (91%), Gaps = 0/88 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCPRG+DIL+ILT VNY+VS
+Sbjct  395  YIPDEADFLLGMATVKNCVSYRDPTRGTWYIQSLCQSLRERCPRGEDILSILTGVNYDVS  454
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFPSD  90
+            NKD+ +NMGKQMPQP FTLRKKL FP +
+Sbjct  455  NKDNPRNMGKQMPQPIFTLRKKLFFPPN  482
+
+
+>sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8 
+PE=1 SV=1
+Length=480
+
+ Score = 137 bits (346),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 74/86 (86%), Positives = 80/86 (93%), Gaps = 0/86 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCP+GDDIL+ILT VNY+VS
+Sbjct  394  YIPDEADFLLGMATVKNCVSYRDPVNGTWYIQSLCQSLRERCPQGDDILSILTGVNYDVS  453
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFP  88
+            NKDD++N GKQMPQPTFTLRKKL FP
+Sbjct  454  NKDDRRNKGKQMPQPTFTLRKKLFFP  479
+
+
+>sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Casp3 
+PE=2 SV=2
+Length=277
+
+ Score = 132 bits (333),  Expect = 9e-39, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 49/92 (53%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLVF  87
+            + +      D   +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 
+PE=1 SV=2
+Length=277
+
+ Score = 132 bits (333),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NK------DDKKNMGKQMPQPTFTLRKKLVF  87
+             +      D   +  KQ+P     L K+L F
+Sbjct  245  TEFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 132 bits (332),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 33/91 (36%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NK------DDKKNMGKQMPQPTFTLRKKLVF  87
+             +      D   +  KQ+P     L K+L F
+Sbjct  245  TEFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 
+GN=CASP7 PE=1 SV=1
+Length=303
+
+ Score = 133 bits (334),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 36/91 (40%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN  V+
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILDEH-GKDLEIMQILTRVNDRVA  270
+
+Query  63   N------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                    D   N  KQ+P     L K+L F
+Sbjct  271  RHFESQCDDPCFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 132 bits (332),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 48/92 (52%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  LR       + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLRLYAHE-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLVF  87
+            + +      D   +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSAFHGKKQIPCIVSMLTKELYF  275
+
+
+>sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 
+PE=1 SV=1
+Length=303
+
+ Score = 132 bits (332),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +TV    S+R+P  G+W++Q+LC  L E   +  +I+ ILT VN  V+
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRSPGRGSWFVQALCSILEEH-GKDLEIMQILTRVNDRVA  270
+
+Query  63   ------NKDDKKNMGKQMPQPTFTLRKKLVF  87
+                  + D   +  KQ+P     L K+L F
+Sbjct  271  RHFESQSDDPHFHEKKQIPCVVSMLTKELYF  301
+
+
+>sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 130 bits (327),  Expect = 7e-38, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 48/91 (53%), Gaps = 7/91 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNK------DDKKNMGKQMPQPTFTLRKKLV  86
+            + +      D   +  KQ+P     L K+L 
+Sbjct  244  ATEFESFSLDSAFHGKKQIPCIVSMLTKELY  274
+
+
+>sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp3 
+PE=2 SV=1
+Length=282
+
+ Score = 129 bits (324),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 30/86 (35%), Positives = 48/86 (56%), Gaps = 1/86 (1%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +TV    S+R+  +G+W+IQSLC+ ++       +++ ILT VN+ V
+Sbjct  196  QRIPVEADFLYAYSTVPGYCSWRDKMDGSWFIQSLCKMIKLYGSH-LELIQILTCVNHMV  254
+
+Query  62   SNKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +   +  +  KQ+P     L K   F
+Sbjct  255  ALDFETFHAKKQIPCVVSMLTKSFYF  280
+
+
+>sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 
+GN=Drice PE=1 SV=2
+Length=339
+
+ Score = 117 bits (293),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 46/92 (50%), Gaps = 8/92 (9%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP  ADFL+  +TV    S+RN   G+W++QSLC  L     R  DILT+LT V   V+
+Sbjct  238  KIPVHADFLIAYSTVPGFYSWRNTTRGSWFMQSLCAELAANGKR-LDILTLLTFVCQRVA  296
+
+Query  63   NKDDK-------KNMGKQMPQPTFTLRKKLVF  87
+               +         +  KQ+P  T  L + L F
+Sbjct  297  VDFESCTPDTPEMHQQKQIPCITTMLTRILRF  328
+
+
+>sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 
+PE=1 SV=1
+Length=299
+
+ Score = 115 bits (289),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 49/91 (54%), Gaps = 8/91 (9%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP  ADFL+  +TV    S+RN   G+W++Q+LC+ LR       DILT+LT V  +V+ 
+Sbjct  204  IPVHADFLIAFSTVPGYFSWRNTTRGSWFMQALCEELR-YAGTERDILTLLTFVCQKVAL  262
+
+Query  64   KDDK-------KNMGKQMPQPTFTLRKKLVF  87
+              +         +  KQ+P  T  L + LVF
+Sbjct  263  DFESNAPDSAMMHQQKQVPCITSMLTRLLVF  293
+
+
+>sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis remanei 
+OX=31234 GN=ced-3 PE=3 SV=2
+Length=508
+
+ Score = 118 bits (296),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 36/93 (39%), Positives = 52/93 (56%), Gaps = 5/93 (5%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  410  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSLHA-KDMDVVELLTEVNKKV  468
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF-PSD  90
+            +         N+ KQMP+ T  L KK  F P D
+Sbjct  469  ACGFQTSQGANILKQMPELTSRLLKKFYFWPED  501
+
+
+>sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elegans 
+OX=6239 GN=ced-3 PE=1 SV=2
+Length=503
+
+ Score = 117 bits (292),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 34/89 (38%), Positives = 50/89 (56%), Gaps = 4/89 (4%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  407  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSTHA-KDMDVVELLTEVNKKV  465
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +         N+ KQMP+ T  L KK  F
+Sbjct  466  ACGFQTSQGSNILKQMPEMTSRLLKKFYF  494
+
+
+>sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 
+PE=1 SV=2
+Length=293
+
+ Score = 112 bits (281),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 42/90 (47%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L +      +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEMLGKYGS-SLEFTELLTLVNRKVSQ  258
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  259  RRVDFCKDPSAIGKKQVPCFASMLTKKLHF  288
+
+
+>sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6 
+PE=1 SV=1
+Length=276
+
+ Score = 111 bits (278),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 32/90 (36%), Positives = 42/90 (47%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L  R     +   +LT VN +VS 
+Sbjct  182  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEML-ARYGSSLEFTELLTLVNRKVSQ  240
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  241  RRVDFCKDPDAIGKKQVPCFASMLTKKLHF  270
+
+
+>sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 
+PE=2 SV=1
+Length=293
+
+ Score = 110 bits (275),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 30/90 (33%), Positives = 42/90 (47%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L +      +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEMLGKFGS-SLEFTELLTLVNRKVSQ  258
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  +D      KQ+P     L KKL F
+Sbjct  259  RRVDFCRDPNAIGKKQVPCFASMLTKKLHF  288
+
+
+>sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Casp6 
+PE=2 SV=2
+Length=277
+
+ Score = 110 bits (274),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 30/90 (33%), Positives = 40/90 (44%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ L + L        +   +LT VN +VS 
+Sbjct  183  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLSEMLARHGS-SLEFTELLTLVNRKVSQ  241
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  242  RRVDFCKDPGAIGKKQVPCFASMLTKKLHF  271
+
+
+>sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=7227 
+GN=Dcp-1 PE=1 SV=1
+Length=323
+
+ Score = 110 bits (274),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 46/92 (50%), Gaps = 8/92 (9%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP  ADFL   +T+    S+RN   G+WY+QSL + L     +  D+LT+LT VN  V+
+Sbjct  223  KIPIHADFLFSYSTIPGYFSWRNINNGSWYMQSLIRELNANGKK-YDLLTLLTFVNQRVA  281
+
+Query  63   NKDDK-------KNMGKQMPQPTFTLRKKLVF  87
+               +         +  KQ+P  T  L + L F
+Sbjct  282  LDFESNVPATPMMDRQKQIPCLTSMLTRILRF  313
+
+
+>sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 
+PE=1 SV=3
+Length=416
+
+ Score = 106 bits (265),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 28/86 (33%), Positives = 46/86 (53%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D  +  +T    VS+R+P  G+WY+++L   + E+    +D+ ++L  V   VS 
+Sbjct  335  LPTPSDIFVSYSTFPGFVSWRDPKSGSWYVETL-DDIFEQWAHSEDLQSLLLRVANAVS-  392
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                K + KQMP     LRKKL F +
+Sbjct  393  ---VKGIYKQMPGCFNFLRKKLFFKT  415
+
+
+>sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9 
+PE=1 SV=1
+Length=454
+
+ Score = 106 bits (265),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 46/86 (53%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D L+  +T    VS+R+   G+WYI++L   + E+  R +D+ ++L  V   VS 
+Sbjct  373  LPTPSDILVSYSTFPGFVSWRDKKSGSWYIETL-DGILEQWARSEDLQSLLLRVANAVS-  430
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                K   KQ+P     LRKKL F +
+Sbjct  431  ---AKGTYKQIPGCFNFLRKKLFFKT  453
+
+
+>sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster 
+OX=7227 GN=Dronc PE=1 SV=1
+Length=450
+
+ Score = 102 bits (254),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 26/84 (31%), Positives = 38/84 (45%), Gaps = 1/84 (1%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  AD L+  A     V++R+   G+WYIQ  CQ + +      D+  IL + +  V N
+Sbjct  361  VPSLADTLVCYANTPGYVTHRDLDTGSWYIQKFCQVMADHAH-DTDLEDILKKTSEAVGN  419
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVF  87
+            K  KK   +          KKL F
+Sbjct  420  KRTKKGSMQTGAYDNLGFNKKLYF  443
+
+
+>sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseudoobscura 
+OX=46245 GN=Dredd PE=3 SV=1
+Length=511
+
+ Score = 102 bits (254),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 41/80 (51%), Gaps = 2/80 (3%)
+
+Query  9    DFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDKK  68
+            + L  M+TV    + R+   G+W+IQSLC ++ E     D I  ILT V   V+NK   K
+Sbjct  419  NMLRAMSTVPGFPALRHTQTGSWFIQSLCDAIVEHS-NSDHIADILTIVINNVANKRGNK  477
+
+Query  69   NMGKQMPQPTFTLRKKLVFP  88
+            N    +P     LR+ + FP
+Sbjct  478  NE-TMVPWTGGALRQHVYFP  496
+
+
+>sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb 
+PE=1 SV=1
+Length=404
+
+ Score = 100 bits (249),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 41/88 (47%), Gaps = 3/88 (3%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E DF+  M+T+ N  +YRNP EG+++I  +         R  DI+ +  +V   + 
+Sbjct  316  WVHMEKDFVCFMSTMPNTFAYRNPIEGSFFISYIVDVFCSSAHRD-DIMELFRKVTLRME  374
+
+Query  63   NKDDKKNMGKQMPQP--TFTLRKKLVFP  88
+                 +   K +P    T   ++  +FP
+Sbjct  375  KDQRFQGQAKLLPCIERTSISKRFYLFP  402
+
+
+>sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=7227 
+GN=Dredd PE=1 SV=3
+Length=494
+
+ Score = 98.9 bits (245),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 40/82 (49%), Gaps = 2/82 (2%)
+
+Query  7    EADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDD  66
+              D L  M+TVN   + R+   G+W+I SLC ++  R    + I  ILT V  EVS K  
+Sbjct  412  HIDMLRAMSTVNGYAALRHTQTGSWFIGSLCDAIDRRSA-SEHIADILTIVTNEVSKKRG  470
+
+Query  67   KKNMGKQMPQPTFTLRKKLVFP  88
+              N    +P    T R+ + FP
+Sbjct  471  -SNDESMVPNVKSTFRQHVYFP  491
+
+
+>sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 
+GN=csp-1 PE=1 SV=1
+Length=536
+
+ Score = 95.1 bits (235),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 26/83 (31%), Positives = 41/83 (49%), Gaps = 4/83 (5%)
+
+Query  8    ADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDK  67
+            AD ++  +T +   SYR+   GTWYI+S+C+   +   +   +L ILTE    V  K + 
+Sbjct  451  ADVIISFSTTDGFTSYRDEEAGTWYIKSMCKVFNKHS-KTMHLLDILTETGRNVVTKYEN  509
+
+Query  68   KN---MGKQMPQPTFTLRKKLVF  87
+                 + KQ P+    L K+  F
+Sbjct  510  VQGNVVLKQAPEILSRLTKQWHF  532
+
+
+>sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditis 
+elegans OX=6239 GN=csp-2 PE=1 SV=1
+Length=263
+
+ Score = 82.7 bits (203),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 25/85 (29%), Positives = 41/85 (48%), Gaps = 4/85 (5%)
+
+Query  6    DEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKD  65
+             +AD L+  +T    +S+R+  +GTWYIQ L + + E   +   +  +L E N  V  K 
+Sbjct  178  SQADLLVSFSTSPGFLSFRDETKGTWYIQELYRVIIENA-KDTHLADLLMETNRRVVEKY  236
+
+Query  66   DKKNMG---KQMPQPTFTLRKKLVF  87
+            +   +    KQ P+      K+L F
+Sbjct  237  EADKVVIVCKQAPEFWSRFTKQLFF  261
+
+
+>sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caenorhabditis 
+elegans OX=6239 GN=csp-3 PE=1 SV=1
+Length=139
+
+ Score = 75.4 bits (184),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 24/85 (28%), Positives = 41/85 (48%), Gaps = 4/85 (5%)
+
+Query  6    DEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKD  65
+             +AD L+  +T    +S+++  + TWYIQ L + + E   +   +  +LTE N  V  K 
+Sbjct  49   SQADLLVSFSTSPGFLSFKDETKDTWYIQELYRVIIENA-KDTHLADLLTETNRRVVEKY  107
+
+Query  66   DKKNMG---KQMPQPTFTLRKKLVF  87
+            +   +    KQ P+      K+L F
+Sbjct  108  EADKVVFVCKQAPEFWSRFTKQLFF  132
+
+
+>sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP14 
+PE=1 SV=2
+Length=242
+
+ Score = 76.2 bits (186),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 26/85 (31%), Positives = 42/85 (49%), Gaps = 5/85 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP   D L   +TV   ++YR+  +G+ +IQ+L     +R      IL +LTEV   ++ 
+Sbjct  159  IPTYTDALHVYSTVEGYIAYRHDQKGSCFIQTLVDVFTKRKG---HILELLTEVTRRMAE  215
+
+Query  64   KD--DKKNMGKQMPQPTFTLRKKLV  86
+             +   +    K  P+   TLRK+L 
+Sbjct  216  AELVQEGKARKTNPEIQSTLRKRLY  240
+
+
+>sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP10 
+PE=1 SV=3
+Length=521
+
+ Score = 76.2 bits (186),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 28/49 (57%), Positives = 34/49 (69%), Gaps = 0/49 (0%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILT  52
+            IP EADFLLG+ATV   VS+R+  EG+WYIQSLC  L++  PR    L 
+Sbjct  430  IPAEADFLLGLATVPGYVSFRHVEEGSWYIQSLCNHLKKLVPRMLKFLE  478
+
+
+>sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 
+PE=1 SV=2
+Length=452
+
+ Score = 69.6 bits (169),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/91 (26%), Positives = 44/91 (48%), Gaps = 7/91 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  + +
+Sbjct  358  LPTRSDMICGYACLKGTAAMRNTKRGSWYIEALAQVFSERAC-DMHVADMLVKVNALIKD  416
+
+Query  64   KD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+            ++      + +  K+M +   TL + L  FP
+Sbjct  417  REGYAPGTEFHRCKEMSEYCSTLCRHLYLFP  447
+
+
+>sp|Q98943|CASP2_CHICK Caspase-2 OS=Gallus gallus OX=9031 GN=CASP2 
+PE=2 SV=2
+Length=424
+
+ Score = 69.3 bits (168),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 43/91 (47%), Gaps = 7/91 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D + G A +    + RN   G+WYI++L     E   R   +  +L +VN ++  
+Sbjct  329  LPTRSDMICGYACLKGTAAMRNTKRGSWYIEALTTVFAEDS-RDTHVADMLVKVNRQIKQ  387
+
+Query  64   KD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+            ++      + +  K+M +   TL + L  FP
+Sbjct  388  REGYAPGTEFHRCKEMSEYCSTLCRDLYLFP  418
+
+
+>sp|O89094|CASPE_MOUSE Caspase-14 OS=Mus musculus OX=10090 GN=Casp14 
+PE=1 SV=1
+Length=257
+
+ Score = 68.1 bits (165),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 37/83 (45%), Gaps = 1/83 (1%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            IP   D L   +TV   +SYR+  +G+ +IQ+L      +     ++   +T +      
+Sbjct  174  IPTYTDTLHIYSTVEGYLSYRHDEKGSGFIQTLTDVFIHKKGSILELTEEITRLMANTEV  233
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLV  86
+              + K   K  P+   TLRKKL 
+Sbjct  234  MQEGK-PRKVNPEVQSTLRKKLY  255
+
+
+>sp|P55215|CASP2_RAT Caspase-2 OS=Rattus norvegicus OX=10116 GN=Casp2 
+PE=1 SV=3
+Length=452
+
+ Score = 67.3 bits (163),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/91 (26%), Positives = 44/91 (48%), Gaps = 7/91 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  +  
+Sbjct  358  LPTRSDMICGYACLKGNAAMRNTKRGSWYIEALTQVFSERAC-DMHVADMLVKVNALIKE  416
+
+Query  64   KD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+            ++      + +  K+M +   TL ++L  FP
+Sbjct  417  REGYAPGTEFHRCKEMSEYCSTLCQQLYLFP  447
+
+
+>sp|P29594|CASP2_MOUSE Caspase-2 OS=Mus musculus OX=10090 GN=Casp2 
+PE=1 SV=5
+Length=452
+
+ Score = 67.3 bits (163),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/91 (26%), Positives = 44/91 (48%), Gaps = 7/91 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  +  
+Sbjct  358  LPTRSDMICGYACLKGNAAMRNTKRGSWYIEALTQVFSERAC-DMHVADMLVKVNALIKE  416
+
+Query  64   KD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+            ++      + +  K+M +   TL ++L  FP
+Sbjct  417  REGYAPGTEFHRCKEMSEYCSTLCQQLYLFP  447
+
+
+>sp|P43527|CASP1_RAT Caspase-1 OS=Rattus norvegicus OX=10116 GN=Casp1 
+PE=2 SV=1
+Length=402
+
+ Score = 65.0 bits (157),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 42/89 (47%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+SL + ++E      D+  I  +V +  
+Sbjct  317  KKAHIEKDFIAFCSSTPDNVSWRHPVRGSLFIESLIKHMKEYAW-SCDLEDIFRKVRFSF  375
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     ++  +FP
+Sbjct  376  EQPDSRL----QMPTTERVTLTKRFYLFP  400
+
+
+>sp|Q9I9L7|CASPA_DANRE Caspase a OS=Danio rerio OX=7955 GN=caspa 
+PE=1 SV=1
+Length=383
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 38/88 (43%), Gaps = 4/88 (5%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E DF+  M+   +  SYR+   GT+Y+Q+L     + C   D I  +  +V     
+Sbjct  296  FVHKEKDFISLMSCTPDTKSYRHVQNGTFYVQTLVDVFIK-CAHEDHIEELFRKVLRRFE  354
+
+Query  63   NKDDKKNMGKQMPQ-PTFTLRKKLV-FP  88
+            +  +     KQM      TL K    FP
+Sbjct  355  HP-NMIGNFKQMACKDRATLPKLFYLFP  381
+
+
+>sp|P29452|CASP1_MOUSE Caspase-1 OS=Mus musculus OX=10090 GN=Casp1 
+PE=1 SV=1
+Length=402
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 23/89 (26%), Positives = 42/89 (47%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+SL + ++E      D+  I  +V +  
+Sbjct  317  KKAHIEKDFIAFCSSTPDNVSWRHPVRGSLFIESLIKHMKEYAW-SCDLEDIFRKVRFSF  375
+
+Query  62   SNKDDKKNMGKQMP-QPTFTLRKKLV-FP  88
+               + +     QMP     TL K+   FP
+Sbjct  376  EQPEFRL----QMPTADRVTLTKRFYLFP  400
+
+
+>sp|P55867|CAS1B_XENLA Caspase-1-B OS=Xenopus laevis OX=8355 GN=casp1-b 
+PE=2 SV=1
+Length=382
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 23/88 (26%), Positives = 41/88 (47%), Gaps = 5/88 (6%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E D +   ++  +  S+RNP +G+ +I  L + + E       +  I  EV  + S
+Sbjct  296  HVQTETDSICFYSSTPDTASWRNPTKGSVFIIRLIEKMNELAH-CQPLGDIFLEV--QSS  352
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+             KD   N   QMP  + +   +K  +FP
+Sbjct  353  FKDKSPNQYSQMPTQERSTMTKKFYLFP  380
+
+
+>sp|P70343|CASP4_MOUSE Caspase-4 OS=Mus musculus OX=10090 GN=Casp4 
+PE=1 SV=2
+Length=373
+
+ Score = 61.6 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 21/86 (24%), Positives = 36/86 (42%), Gaps = 7/86 (8%)
+
+Query  5    PDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNK  64
+              E DF+   +T  + +SYR+   G+++I  L    R+       +  I      +V   
+Sbjct  291  HVEKDFIAFYSTTPHHLSYRDKTGGSYFITRLISCFRKHAC-SCHLFDIFL----KVQQS  345
+
+Query  65   DDKKNMGKQMPQP-TFTLRKKLV-FP  88
+             +K ++  QMP     TL +    FP
+Sbjct  346  FEKASIHSQMPTIDRATLTRYFYLFP  371
+
+
+>sp|Q9TV13|CASP1_HORSE Caspase-1 OS=Equus caballus OX=9796 GN=CASP1 
+PE=2 SV=1
+Length=405
+
+ Score = 61.2 bits (147),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 41/89 (46%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+ L ++L+E      D+  I  +V    
+Sbjct  320  KKAHVEKDFIAFCSSTPDTVSWRSPTTGSVFIEKLIENLQEYAW-SCDLEEIFRKVRLSF  378
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     R+  +FP
+Sbjct  379  ELPDARA----QMPTAERVTLTRRFYLFP  403
+
+
+>sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=casp1-a 
+PE=2 SV=1
+Length=386
+
+ Score = 60.8 bits (146),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 28/88 (32%), Positives = 43/88 (49%), Gaps = 5/88 (6%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  EADF+   ++  + VS+R+P +G+ +I  L + + E       +  I  EV  +  
+Sbjct  300  FVQREADFICFCSSTPDTVSWRDPTKGSVFITHLIEKMNEYAH-CQPLGDIFLEV--QSL  356
+
+Query  63   NKDDKKNMGKQMP-QPTFTLRKKLV-FP  88
+             KD   N   QMP Q   TL KK   FP
+Sbjct  357  FKDKCPNSRSQMPTQERCTLTKKFYLFP  384
+
+
+>sp|P29466|CASP1_HUMAN Caspase-1 OS=Homo sapiens OX=9606 GN=CASP1 
+PE=1 SV=1
+Length=404
+
+ Score = 57.7 bits (138),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 39/89 (44%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I  L + ++E      D+  I  +V +  
+Sbjct  319  KKAHIEKDFIAFCSSTPDNVSWRHPTMGSVFIGRLIEHMQEYAC-SCDVEEIFRKVRFSF  377
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     R   +FP
+Sbjct  378  EQPDGRA----QMPTTERVTLTRCFYLFP  402
+
+
+>sp|Q9MZV6|CASP1_FELCA Caspase-1 OS=Felis catus OX=9685 GN=CASP1 
+PE=2 SV=1
+Length=410
+
+ Score = 56.9 bits (136),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +  E DF+   ++  + VS+R+  +G+ +I  L    ++       +  +      +V 
+Sbjct  326  KVHVEKDFIAFCSSTPHHVSWRDVNKGSLFITQLITCFQKYSW-CFHLEEVF----RKVQ  380
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K N+  QMP  +     R   +FP
+Sbjct  381  QSFEKPNVRAQMPTIERLSMTRYFYLFP  408
+
+
+>sp|Q6UXS9|CASPC_HUMAN Inactive caspase-12 OS=Homo sapiens OX=9606 
+GN=CASP12 PE=2 SV=3
+Length=341
+
+ Score = 56.5 bits (135),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 35/88 (40%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  +    RE       +  I      +V 
+Sbjct  257  KAHVEKDFIAFKSSTPHNVSWRHETNGSVFISQIIYYFREYSW-SHHLEEIF----QKVQ  311
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+            +  +  N+  Q+P  +     R   +FP
+Sbjct  312  HSFETPNILTQLPTIERLSMTRYFYLFP  339
+
+
+>sp|O75601|CASPD_BOVIN Caspase-13 OS=Bos taurus OX=9913 GN=CASP13 
+PE=1 SV=1
+Length=377
+
+ Score = 55.8 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 21/88 (24%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+  +G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDIKKGSLFITRLITCFQKYAWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K N+  QMP  +     R   +FP
+Sbjct  348  QSFEKPNVKAQMPTVERLSMTRYFYLFP  375
+
+
+>sp|Q5E9C1|CASP4_BOVIN Caspase-4 OS=Bos taurus OX=9913 GN=CASP4 
+PE=2 SV=1
+Length=377
+
+ Score = 55.8 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 21/88 (24%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+  +G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDIKKGSLFITRLITCFQKYAWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K N+  QMP  +     R   +FP
+Sbjct  348  QSFEKPNVKAQMPTVERLSMTRYFYLFP  375
+
+
+>sp|Q153Z0|CASPC_MACMU Caspase-12 OS=Macaca mulatta OX=9544 PE=2 
+SV=1
+Length=421
+
+ Score = 55.8 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 17/88 (19%), Positives = 33/88 (38%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  +    +E       +  I  +V     
+Sbjct  337  KAHVEKDFIAFKSSTPHNVSWRHEMSGSVFISQIIYYFKEYSW-SHHLEEIFRKVQRSFE  395
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+                  N+  Q+P  +     R   +FP
+Sbjct  396  TP----NVVTQLPTIERLSMTRYFYLFP  419
+
+
+>sp|Q9MZV7|CASP1_CANLF Caspase-1 OS=Canis lupus familiaris OX=9615 
+GN=CASP1 PE=2 SV=1
+Length=404
+
+ Score = 55.0 bits (131),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 19/88 (22%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +  E DF+   ++  + VS+R+  +G+ +I  L    ++           L  V  +V 
+Sbjct  320  KVHVEKDFIAFCSSTPHNVSWRHITKGSLFIAQLITCFQKYSWCCH-----LEGVFRKVQ  374
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K ++  QMP  +     R   +FP
+Sbjct  375  QSFEKPDVKAQMPTIERVSMTRYFYLFP  402
+
+
+>sp|Q9N2I1|CASP1_PIG Caspase-1 OS=Sus scrofa OX=9823 GN=CASP1 
+PE=2 SV=1
+Length=404
+
+ Score = 54.2 bits (129),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 38/89 (43%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I  L + L+E       +  I  +V +  
+Sbjct  319  KKAHIEKDFIAFCSSTPDNVSWRHPLLGSLFIIKLIKILQEHAW-SCGLEEIFRKVRFSF  377
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     R   +FP
+Sbjct  378  ELADGRA----QMPTAERVTLTRSFYLFP  402
+
+
+>sp|Q075B4|CASPC_CANLF Caspase-12 OS=Canis lupus familiaris OX=9615 
+PE=2 SV=2
+Length=386
+
+ Score = 53.8 bits (128),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 22/90 (24%), Positives = 36/90 (40%), Gaps = 11/90 (12%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRER--CPRGDDILTILTEVNYE  60
+                E DF+   ++  + VS+R   +G+ +I  L    RE   C   ++I         +
+Sbjct  302  KTHVEKDFIAFKSSTPHNVSWRLNTDGSLFISHLIHYFREFSCCHHLEEIF-------RK  354
+
+Query  61   VSNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+            V N  +  N   QMP  +     R   +FP
+Sbjct  355  VQNSFETPNTMIQMPTIERVSMTRYFYLFP  384
+
+
+>sp|P51878|CASP5_HUMAN Caspase-5 OS=Homo sapiens OX=9606 GN=CASP5 
+PE=1 SV=3
+Length=434
+
+ Score = 53.8 bits (128),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 19/88 (22%), Positives = 35/88 (40%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             I +E DF+   ++  + VS+R+   G+ +I  L    ++       ++ I      +V 
+Sbjct  350  KIHEEKDFIAFCSSTPHNVSWRDRTRGSIFITELITCFQKYSC-CCHLMEIF----RKVQ  404
+
+Query  63   NKDDKKNMGKQMPQP-TFTLRKKLV-FP  88
+               +      QMP     TL +    FP
+Sbjct  405  KSFEVPQAKAQMPTIERATLTRDFYLFP  432
+
+
+>sp|O08736|CASPC_MOUSE Caspase-12 OS=Mus musculus OX=10090 GN=Casp12 
+PE=1 SV=1
+Length=419
+
+ Score = 53.1 bits (126),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 16/88 (18%), Positives = 33/88 (38%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + +S++    G+ +I  L    ++ C     +  I      +V 
+Sbjct  335  KAHVETDFIAFKSSTPHNISWKVGKTGSLFISKLIDCFKKYCW-CYHLEEIF----RKVQ  389
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+            +  +      QMP  +     R   +FP
+Sbjct  390  HSFEVPGELTQMPTIERVSMTRYFYLFP  417
+
+
+>sp|Q920D5|CASPC_RAT Caspase-12 OS=Rattus norvegicus OX=10116 
+GN=Casp12 PE=1 SV=1
+Length=420
+
+ Score = 52.7 bits (125),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 17/88 (19%), Positives = 33/88 (38%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + +S++    G+ +I  L    ++ C     +  I  +V Y   
+Sbjct  336  KAHVETDFIAFKSSTPHNISWKVGKSGSLFISKLIDCFKKYCW-CYHLEEIFRKVQYS--  392
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +      QMP  +     R   +FP
+Sbjct  393  --FEVPGELTQMPTIERVSMTRYFYLFP  418
+
+
+>sp|P49662|CASP4_HUMAN Caspase-4 OS=Homo sapiens OX=9606 GN=CASP4 
+PE=1 SV=1
+Length=377
+
+ Score = 52.3 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 19/88 (22%), Positives = 33/88 (38%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDSTMGSIFITQLITCFQKYSWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +      QMP  +     R   +FP
+Sbjct  348  QSFETPRAKAQMPTIERLSMTRYFYLFP  375
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.142    0.424    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0434    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 3
+
+
+Query= e1qtn.1B
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 ...  130     6e-38
+sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 PE...  130     1e-37
+sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 ...  128     5e-37
+sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 P...  127     9e-37
+sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3...  127     1e-36
+sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7...  128     1e-36
+sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensi...  126     2e-36
+sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 PE=1...  126     2e-36
+sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Ca...  126     2e-36
+sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 GN...  126     3e-36
+sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 ...  130     4e-36
+sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 ...  126     7e-36
+sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 ...  124     9e-36
+sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615...  124     9e-36
+sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CAS...  124     1e-35
+sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp...  124     2e-35
+sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 ...  123     7e-35
+sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Ca...  126     8e-35
+sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8...  124     6e-34
+sp|O75601|CASPD_BOVIN Caspase-13 OS=Bos taurus OX=9913 GN=CASP13 ...  120     3e-33
+sp|Q5E9C1|CASP4_BOVIN Caspase-4 OS=Bos taurus OX=9913 GN=CASP4 PE...  120     3e-33
+sp|Q9MZV7|CASP1_CANLF Caspase-1 OS=Canis lupus familiaris OX=9615...  118     3e-32
+sp|Q9MZV6|CASP1_FELCA Caspase-1 OS=Felis catus OX=9685 GN=CASP1 P...  118     5e-32
+sp|P49662|CASP4_HUMAN Caspase-4 OS=Homo sapiens OX=9606 GN=CASP4 ...  116     9e-32
+sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 ...  113     3e-31
+sp|Q6UXS9|CASPC_HUMAN Inactive caspase-12 OS=Homo sapiens OX=9606...  113     1e-30
+sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 ...  112     2e-30
+sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis reman...  114     2e-30
+sp|O08736|CASPC_MOUSE Caspase-12 OS=Mus musculus OX=10090 GN=Casp...  113     4e-30
+sp|P43527|CASP1_RAT Caspase-1 OS=Rattus norvegicus OX=10116 GN=Ca...  112     7e-30
+sp|Q153Z0|CASPC_MACMU Caspase-12 OS=Macaca mulatta OX=9544 PE=2 SV=1  112     7e-30
+sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elega...  112     1e-29
+sp|Q9TV13|CASP1_HORSE Caspase-1 OS=Equus caballus OX=9796 GN=CASP...  110     2e-29
+sp|Q920D5|CASPC_RAT Caspase-12 OS=Rattus norvegicus OX=10116 GN=C...  110     3e-29
+sp|Q075B4|CASPC_CANLF Caspase-12 OS=Canis lupus familiaris OX=961...  110     3e-29
+sp|P29466|CASP1_HUMAN Caspase-1 OS=Homo sapiens OX=9606 GN=CASP1 ...  109     5e-29
+sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=722...  108     7e-29
+sp|P51878|CASP5_HUMAN Caspase-5 OS=Homo sapiens OX=9606 GN=CASP5 ...  109     1e-28
+sp|P29452|CASP1_MOUSE Caspase-1 OS=Mus musculus OX=10090 GN=Casp1...  108     3e-28
+sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 ...  105     5e-28
+sp|Q9N2I1|CASP1_PIG Caspase-1 OS=Sus scrofa OX=9823 GN=CASP1 PE=2...  106     2e-27
+sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6...  103     3e-27
+sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 PE...  102     6e-27
+sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=ca...  103     1e-26
+sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Ca...   99     4e-26
+sp|P70343|CASP4_MOUSE Caspase-4 OS=Mus musculus OX=10090 GN=Casp4...  100     9e-26
+sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 ...   99     3e-25
+sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb P...  98.8    7e-25
+sp|P55867|CAS1B_XENLA Caspase-1-B OS=Xenopus laevis OX=8355 GN=ca...  98.4    8e-25
+sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP1...  94.9    2e-24
+sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9...  98.0    2e-24
+sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseud...  95.7    2e-23
+sp|Q98943|CASP2_CHICK Caspase-2 OS=Gallus gallus OX=9031 GN=CASP2...  94.2    4e-23
+sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=722...  93.8    7e-23
+sp|P29594|CASP2_MOUSE Caspase-2 OS=Mus musculus OX=10090 GN=Casp2...  93.4    8e-23
+sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 ...  93.4    8e-23
+sp|P55215|CASP2_RAT Caspase-2 OS=Rattus norvegicus OX=10116 GN=Ca...  93.4    9e-23
+sp|Q9I9L7|CASPA_DANRE Caspase a OS=Danio rerio OX=7955 GN=caspa P...  92.3    1e-22
+sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditi...  90.7    1e-22
+sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster OX...  92.3    2e-22
+sp|O89094|CASPE_MOUSE Caspase-14 OS=Mus musculus OX=10090 GN=Casp...  89.9    2e-22
+sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 ...  91.5    5e-22
+sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caeno...  79.9    1e-19
+sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP1...  72.6    2e-15
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q8MJC3|CASP3_RABIT Caspase-3 OS=Oryctolagus cuniculus OX=9986 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 130 bits (328),  Expect = 6e-38, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  EG+W+IQSLC  L+E   +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSEEGSWFIQSLCAMLKEYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNKDD------KKNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  ATEFESYSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q08DY9|CASP3_BOVIN Caspase-3 OS=Bos taurus OX=9913 GN=CASP3 
+PE=2 SV=1
+Length=275
+
+ Score = 130 bits (326),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 51/92 (55%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN   G+W+IQ+LC+ L++   R  +++ ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYFSWRNAKNGSWFIQALCEMLKKHAHR-LELMHILTRVNRKV  243
+
+Query  62   S------NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +      + D   +  KQ+P     L K+L F
+Sbjct  244  AIEYESFSTDSAFHAKKQIPCIMSMLTKELYF  275
+
+
+>sp|Q60431|CASP3_MESAU Caspase-3 OS=Mesocricetus auratus OX=10036 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 128 bits (322),  Expect = 5e-37, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 50/92 (54%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RNP +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNPKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNKDD------KKNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q8MJU1|CASP3_FELCA Caspase-3 OS=Felis catus OX=9685 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 127 bits (320),  Expect = 9e-37, Method: Composition-based stats.
+ Identities = 33/92 (36%), Positives = 48/92 (52%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  LR       + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLRLYAH-ELEFMHILTRVNRKV  243
+
+Query  62   SNKDDK------KNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSAFHGKKQIPCIVSMLTKELYF  275
+
+
+>sp|P70677|CASP3_MOUSE Caspase-3 OS=Mus musculus OX=10090 GN=Casp3 
+PE=1 SV=1
+Length=277
+
+ Score = 127 bits (320),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 49/92 (53%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCSMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNKDD------KKNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P97864|CASP7_MOUSE Caspase-7 OS=Mus musculus OX=10090 GN=Casp7 
+PE=1 SV=2
+Length=303
+
+ Score = 128 bits (321),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 36/91 (40%), Positives = 50/91 (55%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV-  61
+             IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN  V 
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILNEH-GKDLEIMQILTRVNDRVA  270
+
+Query  62   -----SNKDDKKNMGKQMPQPTFTLRKKLVF  87
+                  + D + N  KQ+P     L K+L F
+Sbjct  271  RHFESQSDDPRFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|Q5IS99|CASP3_SAIBB Caspase-3 OS=Saimiri boliviensis boliviensis 
+OX=39432 GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 126 bits (318),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKQYAHK-LEFMHILTRVNRKVA  244
+
+Query  63   NKDD------KKNMGKQMPQPTFTLRKKLVF  87
+             + +        +  KQ+P     L K+L F
+Sbjct  245  TEFESSSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q95ND5|CASP3_PIG Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 
+PE=1 SV=1
+Length=277
+
+ Score = 126 bits (318),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 52/92 (57%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC +L++   +  +++ ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAALKQYVHK-LELMHILTRVNRKV  243
+
+Query  62   SNKDD------KKNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  AVEFESFSTDSTFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P55213|CASP3_RAT Caspase-3 OS=Rattus norvegicus OX=10116 GN=Casp3 
+PE=2 SV=2
+Length=277
+
+ Score = 126 bits (317),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 49/92 (53%), Gaps = 7/92 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSRDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNKDD------KKNMGKQMPQPTFTLRKKLVF  87
+            + + +        +  KQ+P     L K+L F
+Sbjct  244  ATEFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q2PFV2|CASP3_MACFA Caspase-3 OS=Macaca fascicularis OX=9541 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 126 bits (316),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NKDD------KKNMGKQMPQPTFTLRKKLVF  87
+             + +        +  KQ+P     L K+L F
+Sbjct  245  TEFESFSLDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q14790|CASP8_HUMAN Caspase-8 OS=Homo sapiens OX=9606 GN=CASP8 
+PE=1 SV=1
+Length=479
+
+ Score = 130 bits (326),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  60
+            TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE
+Sbjct  390  TRYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYE  449
+
+Query  61   VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  90
+            VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD
+Sbjct  450  VSNKDDKKNMGKQMPQPTFTLRKKLVFPSD  479
+
+
+>sp|P55214|CASP7_MESAU Caspase-7 OS=Mesocricetus auratus OX=10036 
+GN=CASP7 PE=1 SV=1
+Length=303
+
+ Score = 126 bits (316),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 36/91 (40%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +TV    S+RNP +G+W++Q+LC  L E   +  +I+ ILT VN  V+
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRNPGKGSWFVQALCSILDEH-GKDLEIMQILTRVNDRVA  270
+
+Query  63   N------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                    D   N  KQ+P     L K+L F
+Sbjct  271  RHFESQCDDPCFNEKKQIPCMVSMLTKELYF  301
+
+
+>sp|P42574|CASP3_HUMAN Caspase-3 OS=Homo sapiens OX=9606 GN=CASP3 
+PE=1 SV=2
+Length=277
+
+ Score = 124 bits (313),  Expect = 9e-36, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NKDD------KKNMGKQMPQPTFTLRKKLVF  87
+             + +        +  KQ+P     L K+L F
+Sbjct  245  TEFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|Q8MKI5|CASP3_CANLF Caspase-3 OS=Canis lupus familiaris OX=9615 
+GN=CASP3 PE=2 SV=1
+Length=277
+
+ Score = 124 bits (313),  Expect = 9e-36, Method: Composition-based stats.
+ Identities = 31/91 (34%), Positives = 48/91 (53%), Gaps = 7/91 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +T     S+RN  +G+W+IQSLC  L+    +  + + ILT VN +V
+Sbjct  185  QKIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKLYAHK-LEFMHILTRVNRKV  243
+
+Query  62   SNKDDK------KNMGKQMPQPTFTLRKKLV  86
+            + + +        +  KQ+P     L K+L 
+Sbjct  244  ATEFESFSLDSAFHGKKQIPCIVSMLTKELY  274
+
+
+>sp|Q5IS54|CASP3_PANTR Caspase-3 OS=Pan troglodytes OX=9598 GN=CASP3 
+PE=2 SV=1
+Length=277
+
+ Score = 124 bits (313),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 49/91 (54%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP EADFL   +T     S+RN  +G+W+IQSLC  L++   +  + + ILT VN +V+
+Sbjct  186  KIPVEADFLYAYSTAPGYYSWRNSKDGSWFIQSLCAMLKQYADK-LEFMHILTRVNRKVA  244
+
+Query  63   NKDD------KKNMGKQMPQPTFTLRKKLVF  87
+             + +        +  KQ+P     L K+L F
+Sbjct  245  TEFESFSFDATFHAKKQIPCIVSMLTKELYF  275
+
+
+>sp|P55866|CASP3_XENLA Caspase-3 OS=Xenopus laevis OX=8355 GN=casp3 
+PE=2 SV=1
+Length=282
+
+ Score = 124 bits (312),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 30/86 (35%), Positives = 48/86 (56%), Gaps = 1/86 (1%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP EADFL   +TV    S+R+  +G+W+IQSLC+ ++       +++ ILT VN+ V
+Sbjct  196  QRIPVEADFLYAYSTVPGYCSWRDKMDGSWFIQSLCKMIKLYGSH-LELIQILTCVNHMV  254
+
+Query  62   SNKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +   +  +  KQ+P     L K   F
+Sbjct  255  ALDFETFHAKKQIPCVVSMLTKSFYF  280
+
+
+>sp|P55210|CASP7_HUMAN Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 
+PE=1 SV=1
+Length=303
+
+ Score = 123 bits (309),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 48/91 (53%), Gaps = 7/91 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV-  61
+             IP EADFL   +TV    S+R+P  G+W++Q+LC  L E   +  +I+ ILT VN  V 
+Sbjct  212  KIPVEADFLFAYSTVPGYYSWRSPGRGSWFVQALCSILEEH-GKDLEIMQILTRVNDRVA  270
+
+Query  62   -----SNKDDKKNMGKQMPQPTFTLRKKLVF  87
+                  + D   +  KQ+P     L K+L F
+Sbjct  271  RHFESQSDDPHFHEKKQIPCVVSMLTKELYF  301
+
+
+>sp|Q9JHX4|CASP8_RAT Caspase-8 OS=Rattus norvegicus OX=10116 GN=Casp8 
+PE=1 SV=1
+Length=482
+
+ Score = 126 bits (317),  Expect = 8e-35, Method: Composition-based stats.
+ Identities = 73/88 (83%), Positives = 80/88 (91%), Gaps = 0/88 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCPRG+DIL+ILT VNY+VS
+Sbjct  395  YIPDEADFLLGMATVKNCVSYRDPTRGTWYIQSLCQSLRERCPRGEDILSILTGVNYDVS  454
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFPSD  90
+            NKD+ +NMGKQMPQP FTLRKKL FP +
+Sbjct  455  NKDNPRNMGKQMPQPIFTLRKKLFFPPN  482
+
+
+>sp|O89110|CASP8_MOUSE Caspase-8 OS=Mus musculus OX=10090 GN=Casp8 
+PE=1 SV=1
+Length=480
+
+ Score = 124 bits (311),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 74/87 (85%), Positives = 80/87 (92%), Gaps = 0/87 (0%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            YIPDEADFLLGMATV NCVSYR+P  GTWYIQSLCQSLRERCP+GDDIL+ILT VNY+VS
+Sbjct  394  YIPDEADFLLGMATVKNCVSYRDPVNGTWYIQSLCQSLRERCPQGDDILSILTGVNYDVS  453
+
+Query  63   NKDDKKNMGKQMPQPTFTLRKKLVFPS  89
+            NKDD++N GKQMPQPTFTLRKKL FP 
+Sbjct  454  NKDDRRNKGKQMPQPTFTLRKKLFFPP  480
+
+
+>sp|O75601|CASPD_BOVIN Caspase-13 OS=Bos taurus OX=9913 GN=CASP13 
+PE=1 SV=1
+Length=377
+
+ Score = 120 bits (302),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 38/90 (42%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+  +G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDIKKGSLFITRLITCFQKYAWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +K N+  QMP  +     R   +FP +
+Sbjct  348  QSFEKPNVKAQMPTVERLSMTRYFYLFPGN  377
+
+
+>sp|Q5E9C1|CASP4_BOVIN Caspase-4 OS=Bos taurus OX=9913 GN=CASP4 
+PE=2 SV=1
+Length=377
+
+ Score = 120 bits (302),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 21/90 (23%), Positives = 38/90 (42%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+  +G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDIKKGSLFITRLITCFQKYAWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +K N+  QMP  +     R   +FP +
+Sbjct  348  QSFEKPNVKAQMPTVERLSMTRYFYLFPGN  377
+
+
+>sp|Q9MZV7|CASP1_CANLF Caspase-1 OS=Canis lupus familiaris OX=9615 
+GN=CASP1 PE=2 SV=1
+Length=404
+
+ Score = 118 bits (296),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 19/88 (22%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +  E DF+   ++  + VS+R+  +G+ +I  L    ++           L  V  +V 
+Sbjct  320  KVHVEKDFIAFCSSTPHNVSWRHITKGSLFIAQLITCFQKYSWCCH-----LEGVFRKVQ  374
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K ++  QMP  +     R   +FP
+Sbjct  375  QSFEKPDVKAQMPTIERVSMTRYFYLFP  402
+
+
+>sp|Q9MZV6|CASP1_FELCA Caspase-1 OS=Felis catus OX=9685 GN=CASP1 
+PE=2 SV=1
+Length=410
+
+ Score = 118 bits (295),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 37/88 (42%), Gaps = 7/88 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +  E DF+   ++  + VS+R+  +G+ +I  L    ++       +  +      +V 
+Sbjct  326  KVHVEKDFIAFCSSTPHHVSWRDVNKGSLFITQLITCFQKYSW-CFHLEEVF----RKVQ  380
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               +K N+  QMP  +     R   +FP
+Sbjct  381  QSFEKPNVRAQMPTIERLSMTRYFYLFP  408
+
+
+>sp|P49662|CASP4_HUMAN Caspase-4 OS=Homo sapiens OX=9606 GN=CASP4 
+PE=1 SV=1
+Length=377
+
+ Score = 116 bits (292),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 34/90 (38%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  L    ++           L EV  +V 
+Sbjct  293  KTHVEKDFIAFCSSTPHNVSWRDSTMGSIFITQLITCFQKYSWCCH-----LEEVFRKVQ  347
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +      QMP  +     R   +FP +
+Sbjct  348  QSFETPRAKAQMPTIERLSMTRYFYLFPGN  377
+
+
+>sp|P89116|CASP1_SPOFR Caspase-1 OS=Spodoptera frugiperda OX=7108 
+PE=1 SV=1
+Length=299
+
+ Score = 113 bits (284),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 49/92 (53%), Gaps = 8/92 (9%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP  ADFL+  +TV    S+RN   G+W++Q+LC+ LR       DILT+LT V  +V+
+Sbjct  203  RIPVHADFLIAFSTVPGYFSWRNTTRGSWFMQALCEELR-YAGTERDILTLLTFVCQKVA  261
+
+Query  63   NKDDK-------KNMGKQMPQPTFTLRKKLVF  87
+               +         +  KQ+P  T  L + LVF
+Sbjct  262  LDFESNAPDSAMMHQQKQVPCITSMLTRLLVF  293
+
+
+>sp|Q6UXS9|CASPC_HUMAN Inactive caspase-12 OS=Homo sapiens OX=9606 
+GN=CASP12 PE=2 SV=3
+Length=341
+
+ Score = 113 bits (283),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 18/90 (20%), Positives = 36/90 (40%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  +    RE       +  I      +V 
+Sbjct  257  KAHVEKDFIAFKSSTPHNVSWRHETNGSVFISQIIYYFREYSW-SHHLEEIF----QKVQ  311
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+            +  +  N+  Q+P  +     R   +FP +
+Sbjct  312  HSFETPNILTQLPTIERLSMTRYFYLFPGN  341
+
+
+>sp|O01382|DRICE_DROME Caspase OS=Drosophila melanogaster OX=7227 
+GN=Drice PE=1 SV=2
+Length=339
+
+ Score = 112 bits (281),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 34/92 (37%), Positives = 46/92 (50%), Gaps = 8/92 (9%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP  ADFL+  +TV    S+RN   G+W++QSLC  L     R  DILT+LT V   V+
+Sbjct  238  KIPVHADFLIAYSTVPGFYSWRNTTRGSWFMQSLCAELAANGKR-LDILTLLTFVCQRVA  296
+
+Query  63   NKDDK-------KNMGKQMPQPTFTLRKKLVF  87
+               +         +  KQ+P  T  L + L F
+Sbjct  297  VDFESCTPDTPEMHQQKQIPCITTMLTRILRF  328
+
+
+>sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis remanei 
+OX=31234 GN=ced-3 PE=3 SV=2
+Length=508
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 36/93 (39%), Positives = 52/93 (56%), Gaps = 5/93 (5%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  410  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSLHA-KDMDVVELLTEVNKKV  468
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF-PSD  90
+            +         N+ KQMP+ T  L KK  F P D
+Sbjct  469  ACGFQTSQGANILKQMPELTSRLLKKFYFWPED  501
+
+
+>sp|O08736|CASPC_MOUSE Caspase-12 OS=Mus musculus OX=10090 GN=Casp12 
+PE=1 SV=1
+Length=419
+
+ Score = 113 bits (282),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 16/90 (18%), Positives = 34/90 (38%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + +S++    G+ +I  L    ++ C     +  I      +V 
+Sbjct  335  KAHVETDFIAFKSSTPHNISWKVGKTGSLFISKLIDCFKKYCW-CYHLEEIF----RKVQ  389
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+            +  +      QMP  +     R   +FP +
+Sbjct  390  HSFEVPGELTQMPTIERVSMTRYFYLFPGN  419
+
+
+>sp|P43527|CASP1_RAT Caspase-1 OS=Rattus norvegicus OX=10116 GN=Casp1 
+PE=2 SV=1
+Length=402
+
+ Score = 112 bits (280),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 42/89 (47%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+SL + ++E      D+  I  +V +  
+Sbjct  317  KKAHIEKDFIAFCSSTPDNVSWRHPVRGSLFIESLIKHMKEYAW-SCDLEDIFRKVRFSF  375
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     ++  +FP
+Sbjct  376  EQPDSRL----QMPTTERVTLTKRFYLFP  400
+
+
+>sp|Q153Z0|CASPC_MACMU Caspase-12 OS=Macaca mulatta OX=9544 PE=2 
+SV=1
+Length=421
+
+ Score = 112 bits (280),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 17/90 (19%), Positives = 35/90 (39%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + VS+R+   G+ +I  +    +E       +  I  +V     
+Sbjct  337  KAHVEKDFIAFKSSTPHNVSWRHEMSGSVFISQIIYYFKEYSW-SHHLEEIFRKVQR---  392
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +  N+  Q+P  +     R   +FP +
+Sbjct  393  -SFETPNVVTQLPTIERLSMTRYFYLFPGN  421
+
+
+>sp|P42573|CED3_CAEEL Cell death protein 3 OS=Caenorhabditis elegans 
+OX=6239 GN=ced-3 PE=1 SV=2
+Length=503
+
+ Score = 112 bits (281),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 34/89 (38%), Positives = 50/89 (56%), Gaps = 4/89 (4%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            R  P +AD L+  AT    VS+RN A G+W+IQ++C+       +  D++ +LTEVN +V
+Sbjct  407  RKKPSQADILIAYATTAQYVSWRNSARGSWFIQAVCEVFSTHA-KDMDVVELLTEVNKKV  465
+
+Query  62   S---NKDDKKNMGKQMPQPTFTLRKKLVF  87
+            +         N+ KQMP+ T  L KK  F
+Sbjct  466  ACGFQTSQGSNILKQMPEMTSRLLKKFYF  494
+
+
+>sp|Q9TV13|CASP1_HORSE Caspase-1 OS=Equus caballus OX=9796 GN=CASP1 
+PE=2 SV=1
+Length=405
+
+ Score = 110 bits (276),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 41/89 (46%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+ L ++L+E      D+  I  +V    
+Sbjct  320  KKAHVEKDFIAFCSSTPDTVSWRSPTTGSVFIEKLIENLQEYAW-SCDLEEIFRKVR---  375
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+                +  +   QMP  +     R+  +FP
+Sbjct  376  -LSFELPDARAQMPTAERVTLTRRFYLFP  403
+
+
+>sp|Q920D5|CASPC_RAT Caspase-12 OS=Rattus norvegicus OX=10116 
+GN=Casp12 PE=1 SV=1
+Length=420
+
+ Score = 110 bits (276),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 16/90 (18%), Positives = 33/90 (37%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+                E DF+   ++  + +S++    G+ +I  L    ++ C     +  I      +V 
+Sbjct  336  KAHVETDFIAFKSSTPHNISWKVGKSGSLFISKLIDCFKKYCW-CYHLEEIF----RKVQ  390
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +      QMP  +     R   +FP +
+Sbjct  391  YSFEVPGELTQMPTIERVSMTRYFYLFPGN  420
+
+
+>sp|Q075B4|CASPC_CANLF Caspase-12 OS=Canis lupus familiaris OX=9615 
+PE=2 SV=2
+Length=386
+
+ Score = 110 bits (275),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 21/91 (23%), Positives = 35/91 (38%), Gaps = 7/91 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+                 E DF+   ++  + VS+R   +G+ +I  L    RE       +  I      +V
+Sbjct  301  EKTHVEKDFIAFKSSTPHNVSWRLNTDGSLFISHLIHYFREFSC-CHHLEEIF----RKV  355
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+             N  +  N   QMP  +     R   +FP +
+Sbjct  356  QNSFETPNTMIQMPTIERVSMTRYFYLFPGN  386
+
+
+>sp|P29466|CASP1_HUMAN Caspase-1 OS=Homo sapiens OX=9606 GN=CASP1 
+PE=1 SV=1
+Length=404
+
+ Score = 109 bits (274),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 39/89 (44%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I  L + ++E      D+  I  +V +  
+Sbjct  319  KKAHIEKDFIAFCSSTPDNVSWRHPTMGSVFIGRLIEHMQEYAC-SCDVEEIFRKVRFSF  377
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     R   +FP
+Sbjct  378  EQPDGRA----QMPTTERVTLTRCFYLFP  402
+
+
+>sp|O02002|CASP1_DROME Caspase-1 OS=Drosophila melanogaster OX=7227 
+GN=Dcp-1 PE=1 SV=1
+Length=323
+
+ Score = 108 bits (269),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 46/92 (50%), Gaps = 8/92 (9%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             IP  ADFL   +T+    S+RN   G+WY+QSL + L     +  D+LT+LT VN  V+
+Sbjct  223  KIPIHADFLFSYSTIPGYFSWRNINNGSWYMQSLIRELNAN-GKKYDLLTLLTFVNQRVA  281
+
+Query  63   NKDDK-------KNMGKQMPQPTFTLRKKLVF  87
+               +         +  KQ+P  T  L + L F
+Sbjct  282  LDFESNVPATPMMDRQKQIPCLTSMLTRILRF  313
+
+
+>sp|P51878|CASP5_HUMAN Caspase-5 OS=Homo sapiens OX=9606 GN=CASP5 
+PE=1 SV=3
+Length=434
+
+ Score = 109 bits (272),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 18/90 (20%), Positives = 36/90 (40%), Gaps = 7/90 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             I +E DF+   ++  + VS+R+   G+ +I  L    ++       ++ I      +V 
+Sbjct  350  KIHEEKDFIAFCSSTPHNVSWRDRTRGSIFITELITCFQKYSC-CCHLMEIF----RKVQ  404
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFPSD  90
+               +      QMP  +     R   +FP +
+Sbjct  405  KSFEVPQAKAQMPTIERATLTRDFYLFPGN  434
+
+
+>sp|P29452|CASP1_MOUSE Caspase-1 OS=Mus musculus OX=10090 GN=Casp1 
+PE=1 SV=1
+Length=402
+
+ Score = 108 bits (269),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 20/89 (22%), Positives = 41/89 (46%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I+SL + ++E      D+  I  +V +  
+Sbjct  317  KKAHIEKDFIAFCSSTPDNVSWRHPVRGSLFIESLIKHMKEYAW-SCDLEDIFRKVRFSF  375
+
+Query  62   SNKDDKKNMGKQMPQ--PTFTLRKKLVFP  88
+               + +     QMP        ++  +FP
+Sbjct  376  EQPEFRL----QMPTADRVTLTKRFYLFP  400
+
+
+>sp|P55212|CASP6_HUMAN Caspase-6 OS=Homo sapiens OX=9606 GN=CASP6 
+PE=1 SV=2
+Length=293
+
+ Score = 105 bits (262),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 42/90 (47%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L +      +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEMLGKY-GSSLEFTELLTLVNRKVSQ  258
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  259  RRVDFCKDPSAIGKKQVPCFASMLTKKLHF  288
+
+
+>sp|Q9N2I1|CASP1_PIG Caspase-1 OS=Sus scrofa OX=9823 GN=CASP1 
+PE=2 SV=1
+Length=404
+
+ Score = 106 bits (264),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 21/89 (24%), Positives = 38/89 (43%), Gaps = 7/89 (8%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            +    E DF+   ++  + VS+R+P  G+ +I  L + L+E       +  I  +V +  
+Sbjct  319  KKAHIEKDFIAFCSSTPDNVSWRHPLLGSLFIIKLIKILQEHAW-SCGLEEIFRKVRFSF  377
+
+Query  62   SNKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+               D +     QMP  +     R   +FP
+Sbjct  378  ELADGRA----QMPTAERVTLTRSFYLFP  402
+
+
+>sp|O08738|CASP6_MOUSE Caspase-6 OS=Mus musculus OX=10090 GN=Casp6 
+PE=1 SV=1
+Length=276
+
+ Score = 103 bits (256),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 31/90 (34%), Positives = 41/90 (46%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L        +   +LT VN +VS 
+Sbjct  182  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEMLARY-GSSLEFTELLTLVNRKVSQ  240
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  241  RRVDFCKDPDAIGKKQVPCFASMLTKKLHF  270
+
+
+>sp|Q3T0P5|CASP6_BOVIN Caspase-6 OS=Bos taurus OX=9913 GN=CASP6 
+PE=2 SV=1
+Length=293
+
+ Score = 102 bits (255),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 30/92 (33%), Positives = 42/92 (46%), Gaps = 7/92 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ LC+ L +      +   +LT VN +VS 
+Sbjct  200  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLCEMLGKF-GSSLEFTELLTLVNRKVSQ  258
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                  +D      KQ+P     L KKL F  
+Sbjct  259  RRVDFCRDPNAIGKKQVPCFASMLTKKLHFSP  290
+
+
+>sp|P55865|CAS1A_XENLA Caspase-1-A OS=Xenopus laevis OX=8355 GN=casp1-a 
+PE=2 SV=1
+Length=386
+
+ Score = 103 bits (257),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 41/88 (47%), Gaps = 5/88 (6%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  EADF+   ++  + VS+R+P +G+ +I  L + + E       +  I  EV     
+Sbjct  300  FVQREADFICFCSSTPDTVSWRDPTKGSVFITHLIEKMNEYAH-CQPLGDIFLEVQSLF-  357
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+             KD   N   QMP  +     +K  +FP
+Sbjct  358  -KDKCPNSRSQMPTQERCTLTKKFYLFP  384
+
+
+>sp|O35397|CASP6_RAT Caspase-6 OS=Rattus norvegicus OX=10116 GN=Casp6 
+PE=2 SV=2
+Length=277
+
+ Score =  99 bits (248),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 30/90 (33%), Positives = 40/90 (44%), Gaps = 7/90 (8%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  ADFL+  +      S+R    G+WYIQ L + L        +   +LT VN +VS 
+Sbjct  183  LPAGADFLMCYSVAEGYYSHRETVNGSWYIQDLSEMLARH-GSSLEFTELLTLVNRKVSQ  241
+
+Query  64   ------KDDKKNMGKQMPQPTFTLRKKLVF  87
+                  KD      KQ+P     L KKL F
+Sbjct  242  RRVDFCKDPGAIGKKQVPCFASMLTKKLHF  271
+
+
+>sp|P70343|CASP4_MOUSE Caspase-4 OS=Mus musculus OX=10090 GN=Casp4 
+PE=1 SV=2
+Length=373
+
+ Score = 100 bits (250),  Expect = 9e-26, Method: Composition-based stats.
+ Identities = 20/88 (23%), Positives = 36/88 (41%), Gaps = 7/88 (8%)
+
+Query  5    PDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNK  64
+              E DF+   +T  + +SYR+   G+++I  L    R+       +  I  +V       
+Sbjct  291  HVEKDFIAFYSTTPHHLSYRDKTGGSYFITRLISCFRKHAC-SCHLFDIFLKV----QQS  345
+
+Query  65   DDKKNMGKQMPQ--PTFTLRKKLVFPSD  90
+             +K ++  QMP        R   +FP +
+Sbjct  346  FEKASIHSQMPTIDRATLTRYFYLFPGN  373
+
+
+>sp|P55211|CASP9_HUMAN Caspase-9 OS=Homo sapiens OX=9606 GN=CASP9 
+PE=1 SV=3
+Length=416
+
+ Score =  99 bits (248),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 28/86 (33%), Positives = 45/86 (52%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D  +  +T    VS+R+P  G+WY+++L     E+    +D+ ++L  V   VS 
+Sbjct  335  LPTPSDIFVSYSTFPGFVSWRDPKSGSWYVETLDDIF-EQWAHSEDLQSLLLRVANAVSV  393
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+            K     + KQMP     LRKKL F +
+Sbjct  394  K----GIYKQMPGCFNFLRKKLFFKT  415
+
+
+>sp|Q504J1|CASPB_DANRE Caspase b OS=Danio rerio OX=7955 GN=caspb 
+PE=1 SV=1
+Length=404
+
+ Score = 98.8 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 41/88 (47%), Gaps = 3/88 (3%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E DF+  M+T+ N  +YRNP EG+++I  +         R  DI+ +  +V   + 
+Sbjct  316  WVHMEKDFVCFMSTMPNTFAYRNPIEGSFFISYIVDVFCSSAHRD-DIMELFRKVTLRME  374
+
+Query  63   NKDDKKNMGKQMPQ--PTFTLRKKLVFP  88
+                 +   K +P    T   ++  +FP
+Sbjct  375  KDQRFQGQAKLLPCIERTSISKRFYLFP  402
+
+
+>sp|P55867|CAS1B_XENLA Caspase-1-B OS=Xenopus laevis OX=8355 GN=casp1-b 
+PE=2 SV=1
+Length=382
+
+ Score = 98.4 bits (244),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 39/88 (44%), Gaps = 5/88 (6%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E D +   ++  +  S+RNP +G+ +I  L + + E       +  I  EV     
+Sbjct  296  HVQTETDSICFYSSTPDTASWRNPTKGSVFIIRLIEKMNELAH-CQPLGDIFLEVQSSF-  353
+
+Query  63   NKDDKKNMGKQMP--QPTFTLRKKLVFP  88
+             KD   N   QMP  + +   +K  +FP
+Sbjct  354  -KDKSPNQYSQMPTQERSTMTKKFYLFP  380
+
+
+>sp|P31944|CASPE_HUMAN Caspase-14 OS=Homo sapiens OX=9606 GN=CASP14 
+PE=1 SV=2
+Length=242
+
+ Score = 94.9 bits (235),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 26/87 (30%), Positives = 43/87 (49%), Gaps = 5/87 (6%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP   D L   +TV   ++YR+  +G+ +IQ+L     +R      IL +LTEV   +
+Sbjct  157  QTIPTYTDALHVYSTVEGYIAYRHDQKGSCFIQTLVDVFTKRKG---HILELLTEVTRRM  213
+
+Query  62   SNKD--DKKNMGKQMPQPTFTLRKKLV  86
+            +  +   +    K  P+   TLRK+L 
+Sbjct  214  AEAELVQEGKARKTNPEIQSTLRKRLY  240
+
+
+>sp|Q8C3Q9|CASP9_MOUSE Caspase-9 OS=Mus musculus OX=10090 GN=Casp9 
+PE=1 SV=1
+Length=454
+
+ Score = 98.0 bits (243),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 46/86 (53%), Gaps = 5/86 (6%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  +D L+  +T    VS+R+   G+WYI++L   + E+  R +D+ ++L  V   VS 
+Sbjct  373  LPTPSDILVSYSTFPGFVSWRDKKSGSWYIETL-DGILEQWARSEDLQSLLLRVANAVS-  430
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+                K   KQ+P     LRKKL F +
+Sbjct  431  ---AKGTYKQIPGCFNFLRKKLFFKT  453
+
+
+>sp|Q29IM7|CASP8_DROPS Caspase-8 OS=Drosophila pseudoobscura pseudoobscura 
+OX=46245 GN=Dredd PE=3 SV=1
+Length=511
+
+ Score = 95.7 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 41/80 (51%), Gaps = 2/80 (3%)
+
+Query  9    DFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDKK  68
+            + L  M+TV    + R+   G+W+IQSLC ++ E     D I  ILT V   V+NK   K
+Sbjct  419  NMLRAMSTVPGFPALRHTQTGSWFIQSLCDAIVEHS-NSDHIADILTIVINNVANKRGNK  477
+
+Query  69   NMGKQMPQPTFTLRKKLVFP  88
+            N    +P     LR+ + FP
+Sbjct  478  NE-TMVPWTGGALRQHVYFP  496
+
+
+>sp|Q98943|CASP2_CHICK Caspase-2 OS=Gallus gallus OX=9031 GN=CASP2 
+PE=2 SV=2
+Length=424
+
+ Score = 94.2 bits (233),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 23/92 (25%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +P  +D + G A +    + RN   G+WYI++L     E   R   +  +L +VN ++ 
+Sbjct  328  RLPTRSDMICGYACLKGTAAMRNTKRGSWYIEALTTVFAEDS-RDTHVADMLVKVNRQIK  386
+
+Query  63   NKD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+             ++      + +  K+M +   TL + L  FP
+Sbjct  387  QREGYAPGTEFHRCKEMSEYCSTLCRDLYLFP  418
+
+
+>sp|Q8IRY7|CASP8_DROME Caspase-8 OS=Drosophila melanogaster OX=7227 
+GN=Dredd PE=1 SV=3
+Length=494
+
+ Score = 93.8 bits (232),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 29/83 (35%), Positives = 40/83 (48%), Gaps = 2/83 (2%)
+
+Query  7    EADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDD  66
+              D L  M+TVN   + R+   G+W+I SLC ++  R    + I  ILT V  EVS K  
+Sbjct  412  HIDMLRAMSTVNGYAALRHTQTGSWFIGSLCDAIDRRSA-SEHIADILTIVTNEVSKKRG  470
+
+Query  67   KKNMGKQMPQPTFTLRKKLVFPS  89
+              N    +P    T R+ + FP 
+Sbjct  471  S-NDESMVPNVKSTFRQHVYFPP  492
+
+
+>sp|P29594|CASP2_MOUSE Caspase-2 OS=Mus musculus OX=10090 GN=Casp2 
+PE=1 SV=5
+Length=452
+
+ Score = 93.4 bits (231),  Expect = 8e-23, Method: Composition-based stats.
+ Identities = 24/92 (26%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  + 
+Sbjct  357  RLPTRSDMICGYACLKGNAAMRNTKRGSWYIEALTQVFSERAC-DMHVADMLVKVNALIK  415
+
+Query  63   NKD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+             ++      + +  K+M +   TL ++L  FP
+Sbjct  416  EREGYAPGTEFHRCKEMSEYCSTLCQQLYLFP  447
+
+
+>sp|P42575|CASP2_HUMAN Caspase-2 OS=Homo sapiens OX=9606 GN=CASP2 
+PE=1 SV=2
+Length=452
+
+ Score = 93.4 bits (231),  Expect = 8e-23, Method: Composition-based stats.
+ Identities = 24/92 (26%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  + 
+Sbjct  357  RLPTRSDMICGYACLKGTAAMRNTKRGSWYIEALAQVFSERAC-DMHVADMLVKVNALIK  415
+
+Query  63   NKD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+            +++      + +  K+M +   TL + L  FP
+Sbjct  416  DREGYAPGTEFHRCKEMSEYCSTLCRHLYLFP  447
+
+
+>sp|P55215|CASP2_RAT Caspase-2 OS=Rattus norvegicus OX=10116 GN=Casp2 
+PE=1 SV=3
+Length=452
+
+ Score = 93.4 bits (231),  Expect = 9e-23, Method: Composition-based stats.
+ Identities = 24/92 (26%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+             +P  +D + G A +    + RN   G+WYI++L Q   ER      +  +L +VN  + 
+Sbjct  357  RLPTRSDMICGYACLKGNAAMRNTKRGSWYIEALTQVFSERAC-DMHVADMLVKVNALIK  415
+
+Query  63   NKD-----DKKNMGKQMPQPTFTLRKKLV-FP  88
+             ++      + +  K+M +   TL ++L  FP
+Sbjct  416  EREGYAPGTEFHRCKEMSEYCSTLCQQLYLFP  447
+
+
+>sp|Q9I9L7|CASPA_DANRE Caspase a OS=Danio rerio OX=7955 GN=caspa 
+PE=1 SV=1
+Length=383
+
+ Score = 92.3 bits (228),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 39/88 (44%), Gaps = 4/88 (5%)
+
+Query  3    YIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVS  62
+            ++  E DF+  M+   +  SYR+   GT+Y+Q+L     + C   D I  +  +V     
+Sbjct  296  FVHKEKDFISLMSCTPDTKSYRHVQNGTFYVQTLVDVFIK-CAHEDHIEELFRKVLRRFE  354
+
+Query  63   NKDDKKNMGKQMPQ-PTFTLRK-KLVFP  88
+            +  +     KQM      TL K   +FP
+Sbjct  355  HP-NMIGNFKQMACKDRATLPKLFYLFP  381
+
+
+>sp|Q9TZP5|CSP2_CAEEL Putative inactive caspase B OS=Caenorhabditis 
+elegans OX=6239 GN=csp-2 PE=1 SV=1
+Length=263
+
+ Score = 90.7 bits (224),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 25/85 (29%), Positives = 41/85 (48%), Gaps = 4/85 (5%)
+
+Query  6    DEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKD  65
+             +AD L+  +T    +S+R+  +GTWYIQ L + + E   +   +  +L E N  V  K 
+Sbjct  178  SQADLLVSFSTSPGFLSFRDETKGTWYIQELYRVIIENA-KDTHLADLLMETNRRVVEKY  236
+
+Query  66   DKKN---MGKQMPQPTFTLRKKLVF  87
+            +      + KQ P+      K+L F
+Sbjct  237  EADKVVIVCKQAPEFWSRFTKQLFF  261
+
+
+>sp|Q9XYF4|DRONC_DROME Caspase Dronc OS=Drosophila melanogaster 
+OX=7227 GN=Dronc PE=1 SV=1
+Length=450
+
+ Score = 92.3 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 26/86 (30%), Positives = 38/86 (44%), Gaps = 1/86 (1%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSN  63
+            +P  AD L+  A     V++R+   G+WYIQ  CQ + +      D+  IL + +  V N
+Sbjct  361  VPSLADTLVCYANTPGYVTHRDLDTGSWYIQKFCQVMADHAH-DTDLEDILKKTSEAVGN  419
+
+Query  64   KDDKKNMGKQMPQPTFTLRKKLVFPS  89
+            K  KK   +          KKL F  
+Sbjct  420  KRTKKGSMQTGAYDNLGFNKKLYFNP  445
+
+
+>sp|O89094|CASPE_MOUSE Caspase-14 OS=Mus musculus OX=10090 GN=Casp14 
+PE=1 SV=1
+Length=257
+
+ Score = 89.9 bits (222),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 38/85 (45%), Gaps = 1/85 (1%)
+
+Query  2    RYIPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEV  61
+            + IP   D L   +TV   +SYR+  +G+ +IQ+L      +     ++   +T +    
+Sbjct  172  QSIPTYTDTLHIYSTVEGYLSYRHDEKGSGFIQTLTDVFIHKKGSILELTEEITRLMANT  231
+
+Query  62   SNKDDKKNMGKQMPQPTFTLRKKLV  86
+                + K   K  P+   TLRKKL 
+Sbjct  232  EVMQEGK-PRKVNPEVQSTLRKKLY  255
+
+
+>sp|G5EBM1|CSP1_CAEEL Caspase A OS=Caenorhabditis elegans OX=6239 
+GN=csp-1 PE=1 SV=1
+Length=536
+
+ Score = 91.5 bits (226),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 26/83 (31%), Positives = 41/83 (49%), Gaps = 4/83 (5%)
+
+Query  8    ADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKDDK  67
+            AD ++  +T +   SYR+   GTWYI+S+C+   +   +   +L ILTE    V  K + 
+Sbjct  451  ADVIISFSTTDGFTSYRDEEAGTWYIKSMCKVFNKHS-KTMHLLDILTETGRNVVTKYEN  509
+
+Query  68   KN---MGKQMPQPTFTLRKKLVF  87
+                 + KQ P+    L K+  F
+Sbjct  510  VQGNVVLKQAPEILSRLTKQWHF  532
+
+
+>sp|G5ECW5|CSP3_CAEEL Non-catalytic caspase homolog csp-3 OS=Caenorhabditis 
+elegans OX=6239 GN=csp-3 PE=1 SV=1
+Length=139
+
+ Score = 79.9 bits (196),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 24/85 (28%), Positives = 41/85 (48%), Gaps = 4/85 (5%)
+
+Query  6    DEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILTILTEVNYEVSNKD  65
+             +AD L+  +T    +S+++  + TWYIQ L + + E   +   +  +LTE N  V  K 
+Sbjct  49   SQADLLVSFSTSPGFLSFKDETKDTWYIQELYRVIIENA-KDTHLADLLTETNRRVVEKY  107
+
+Query  66   DKKN---MGKQMPQPTFTLRKKLVF  87
+            +      + KQ P+      K+L F
+Sbjct  108  EADKVVFVCKQAPEFWSRFTKQLFF  132
+
+
+>sp|Q92851|CASPA_HUMAN Caspase-10 OS=Homo sapiens OX=9606 GN=CASP10 
+PE=1 SV=3
+Length=521
+
+ Score = 72.6 bits (177),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 28/49 (57%), Positives = 34/49 (69%), Gaps = 0/49 (0%)
+
+Query  4    IPDEADFLLGMATVNNCVSYRNPAEGTWYIQSLCQSLRERCPRGDDILT  52
+            IP EADFLLG+ATV   VS+R+  EG+WYIQSLC  L++  PR    L 
+Sbjct  430  IPAEADFLLGLATVPGYVSFRHVEEGSWYIQSLCNHLKKLVPRMLKFLE  478
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.151    0.463    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0462    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

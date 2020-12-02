@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5j4a_C
+
+Length=116
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|H9T8G6|CDIA9_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholder...  242     2e-74
+
+
+>sp|H9T8G6|CDIA9_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholderia 
+pseudomallei OX=28450 GN=cdiA PE=1 SV=1
+Length=1307
+
+ Score = 242 bits (617),  Expect = 2e-74, Method: Compositional matrix adjust.
+ Identities = 115/116 (99%), Positives = 115/116 (99%), Gaps = 0/116 (0%)
+
+Query  1     RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF  60
+             RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF
+Sbjct  1192  RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF  1251
+
+Query  61    FDKNLNNFMNTLSDHAAAADFVPLASRFLSEANKTLLVKAIGNLPQKLQAKIILIK  116
+             FDKNLNNFMNTLSDHAAAADFVPL SRFLSEANKTLLVKAIGNLPQKLQAKIILIK
+Sbjct  1252  FDKNLNNFMNTLSDHAAAADFVPLDSRFLSEANKTLLVKAIGNLPQKLQAKIILIK  1307
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.132    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4976005696
+Results from round 2
+
+
+Query= 5j4a_C
+
+Length=116
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|H9T8G6|CDIA9_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholder...  220     1e-66
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|H9T8G6|CDIA9_BURPE tRNA nuclease CdiA (Fragment) OS=Burkholderia 
+pseudomallei OX=28450 GN=cdiA PE=1 SV=1
+Length=1307
+
+ Score = 220 bits (560),  Expect = 1e-66, Method: Composition-based stats.
+ Identities = 115/116 (99%), Positives = 115/116 (99%), Gaps = 0/116 (0%)
+
+Query  1     RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF  60
+             RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF
+Sbjct  1192  RPGEAGAAAELENYLGGTLQRAPQGSSVDFVFSSGPNNGKTVDFMLTPDTVAQAAKINQF  1251
+
+Query  61    FDKNLNNFMNTLSDHAAAADFVPLASRFLSEANKTLLVKAIGNLPQKLQAKIILIK  116
+             FDKNLNNFMNTLSDHAAAADFVPL SRFLSEANKTLLVKAIGNLPQKLQAKIILIK
+Sbjct  1252  FDKNLNNFMNTLSDHAAAADFVPLDSRFLSEANKTLLVKAIGNLPQKLQAKIILIK  1307
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.369    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4976005696
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,241 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3czza_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P81180|CVN_NOSEL Cyanovirin-N OS=Nostoc ellipsosporum OX=45916...  193     1e-64
+sp|P86326|CVNH_CERRI Cyanovirin-N homolog OS=Ceratopteris richard...  51.2    3e-08
+sp|Q7S6U4|CVNH_NEUCR Cyanovirin-N homolog OS=Neurospora crassa (s...  48.5    2e-07
+sp|Q5MK11|CVNH_TUBBO Cyanovirin-N homolog OS=Tuber borchii OX=422...  42.4    4e-05
+
+
+>sp|P81180|CVN_NOSEL Cyanovirin-N OS=Nostoc ellipsosporum OX=45916 
+PE=1 SV=2
+Length=101
+
+ Score = 193 bits (490),  Expect = 1e-64, Method: Compositional matrix adjust.
+ Identities = 95/101 (94%), Positives = 95/101 (94%), Gaps = 0/101 (0%)
+
+Query  1    LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRN  60
+            LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVI  VDGSLKWQ SNFIE CRN
+Sbjct  1    LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIENVDGSLKWQPSNFIETCRN  60
+
+Query  61   TQLAGSSELAAECKTAAGQFVSTKINLDDHIANIDGTLKYE  101
+            TQLAGSSELAAECKT A QFVSTKINLDDHIANIDGTLKYE
+Sbjct  61   TQLAGSSELAAECKTRAQQFVSTKINLDDHIANIDGTLKYE  101
+
+
+>sp|P86326|CVNH_CERRI Cyanovirin-N homolog OS=Ceratopteris richardii 
+OX=49495 PE=1 SV=1
+Length=142
+
+ Score = 51.2 bits (121),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 28/96 (29%), Positives = 49/96 (51%), Gaps = 0/96 (0%)
+
+Query  4    FSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL  63
+            F+ +C    + G +L   C   +G  + +SI+LN  I   +G L++ G +F  +C  T L
+Sbjct  31   FANSCTGVELYGYILRGDCINEDGHPHATSINLNYYIGNDNGRLEYPGESFGSSCVKTAL  90
+
+Query  64   AGSSELAAECKTAAGQFVSTKINLDDHIANIDGTLK  99
+                 L A CK A GQ+  + ++L+  + N  G ++
+Sbjct  91   NDGHTLTASCKGADGQYHDSSMDLNYVVGNSYGYME  126
+
+
+>sp|Q7S6U4|CVNH_NEUCR Cyanovirin-N homolog OS=Neurospora crassa 
+(strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / 
+FGSC 987) OX=367110 GN=NCU05495 PE=1 SV=2
+Length=111
+
+ Score = 48.5 bits (114),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 24/90 (27%), Positives = 46/90 (51%), Gaps = 6/90 (7%)
+
+Query  16   SVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL---AGSSE---L  69
+            ++L +   R +G +N +S +L+ +I   DG  +W G NF E   + +     G++E   L
+Sbjct  19   TILFARLRREDGEWNDASYELDQIIGNNDGHFQWGGQNFTETAEDIRFHPKEGAAEQPIL  78
+
+Query  70   AAECKTAAGQFVSTKINLDDHIANIDGTLK  99
+             A  +   G+F    +NL + + N++G  +
+Sbjct  79   RARLRDCNGEFHDRDVNLTEIVENVNGEFQ  108
+
+
+>sp|Q5MK11|CVNH_TUBBO Cyanovirin-N homolog OS=Tuber borchii OX=42251 
+PE=1 SV=1
+Length=103
+
+ Score = 42.4 bits (98),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 3/89 (3%)
+
+Query  15   GSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL-AGSSELAAEC  73
+            G  L + C   +G + TS +DL++ I   +G L W   NF  +  + +L  G  +L    
+Sbjct  16   GRTLRAECRNADGNWVTSELDLDTCIGNPNGFLGWGMQNFSHSSEDIKLEEGGRKLTCRP  75
+
+Query  74   KTAAGQFVSTK-INLDDHIANIDGTLKYE  101
+            KT  G F   + I+L + I N++G L ++
+Sbjct  76   KTVDGGFRERQGIDL-NRIQNVNGRLVFQ  103
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.126    0.362    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 2
+
+
+Query= d3czza_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P81180|CVN_NOSEL Cyanovirin-N OS=Nostoc ellipsosporum OX=45916...  141     3e-44
+sp|P86326|CVNH_CERRI Cyanovirin-N homolog OS=Ceratopteris richard...  132     4e-40
+sp|Q7S6U4|CVNH_NEUCR Cyanovirin-N homolog OS=Neurospora crassa (s...  111     5e-32
+sp|Q5MK11|CVNH_TUBBO Cyanovirin-N homolog OS=Tuber borchii OX=422...  107     1e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P81180|CVN_NOSEL Cyanovirin-N OS=Nostoc ellipsosporum OX=45916 
+PE=1 SV=2
+Length=101
+
+ Score = 141 bits (356),  Expect = 3e-44, Method: Composition-based stats.
+ Identities = 95/101 (94%), Positives = 95/101 (94%), Gaps = 0/101 (0%)
+
+Query  1    LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRN  60
+            LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVI  VDGSLKWQ SNFIE CRN
+Sbjct  1    LGKFSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIENVDGSLKWQPSNFIETCRN  60
+
+Query  61   TQLAGSSELAAECKTAAGQFVSTKINLDDHIANIDGTLKYE  101
+            TQLAGSSELAAECKT A QFVSTKINLDDHIANIDGTLKYE
+Sbjct  61   TQLAGSSELAAECKTRAQQFVSTKINLDDHIANIDGTLKYE  101
+
+
+>sp|P86326|CVNH_CERRI Cyanovirin-N homolog OS=Ceratopteris richardii 
+OX=49495 PE=1 SV=1
+Length=142
+
+ Score = 132 bits (333),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 28/96 (29%), Positives = 49/96 (51%), Gaps = 0/96 (0%)
+
+Query  4    FSQTCYNSAIQGSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL  63
+            F+ +C    + G +L   C   +G  + +SI+LN  I   +G L++ G +F  +C  T L
+Sbjct  31   FANSCTGVELYGYILRGDCINEDGHPHATSINLNYYIGNDNGRLEYPGESFGSSCVKTAL  90
+
+Query  64   AGSSELAAECKTAAGQFVSTKINLDDHIANIDGTLK  99
+                 L A CK A GQ+  + ++L+  + N  G ++
+Sbjct  91   NDGHTLTASCKGADGQYHDSSMDLNYVVGNSYGYME  126
+
+
+ Score = 37.4 bits (85),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 25/48 (52%), Gaps = 1/48 (2%)
+
+Query  53  NFIEACRNTQLAGSSELAAECKTAAGQFVSTKINLDDHIANIDGTLKY  100
+           NF  +C   +L G   L  +C    G   +T INL+ +I N +G L+Y
+Sbjct  30  NFANSCTGVELYG-YILRGDCINEDGHPHATSINLNYYIGNDNGRLEY  76
+
+
+>sp|Q7S6U4|CVNH_NEUCR Cyanovirin-N homolog OS=Neurospora crassa 
+(strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / 
+FGSC 987) OX=367110 GN=NCU05495 PE=1 SV=2
+Length=111
+
+ Score = 111 bits (277),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 24/90 (27%), Positives = 46/90 (51%), Gaps = 6/90 (7%)
+
+Query  16   SVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL---AGSSE---L  69
+            ++L +   R +G +N +S +L+ +I   DG  +W G NF E   + +     G++E   L
+Sbjct  19   TILFARLRREDGEWNDASYELDQIIGNNDGHFQWGGQNFTETAEDIRFHPKEGAAEQPIL  78
+
+Query  70   AAECKTAAGQFVSTKINLDDHIANIDGTLK  99
+             A  +   G+F    +NL + + N++G  +
+Sbjct  79   RARLRDCNGEFHDRDVNLTEIVENVNGEFQ  108
+
+
+>sp|Q5MK11|CVNH_TUBBO Cyanovirin-N homolog OS=Tuber borchii OX=42251 
+PE=1 SV=1
+Length=103
+
+ Score = 107 bits (267),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 25/88 (28%), Positives = 42/88 (48%), Gaps = 1/88 (1%)
+
+Query  15   GSVLTSTCERTNGGYNTSSIDLNSVIAAVDGSLKWQGSNFIEACRNTQL-AGSSELAAEC  73
+            G  L + C   +G + TS +DL++ I   +G L W   NF  +  + +L  G  +L    
+Sbjct  16   GRTLRAECRNADGNWVTSELDLDTCIGNPNGFLGWGMQNFSHSSEDIKLEEGGRKLTCRP  75
+
+Query  74   KTAAGQFVSTKINLDDHIANIDGTLKYE  101
+            KT  G F   +    + I N++G L ++
+Sbjct  76   KTVDGGFRERQGIDLNRIQNVNGRLVFQ  103
+
+
+ Score = 39.3 bits (90),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 17/47 (36%), Positives = 29/47 (62%), Gaps = 1/47 (2%)
+
+Query  53  NFIEACRNTQL-AGSSELAAECKTAAGQFVSTKINLDDHIANIDGTL  98
+           ++ ++ RN  L  G   L AEC+ A G +V+++++LD  I N +G L
+Sbjct  2   SYADSSRNAVLTNGGRTLRAECRNADGNWVTSELDLDTCIGNPNGFL  48
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.336    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

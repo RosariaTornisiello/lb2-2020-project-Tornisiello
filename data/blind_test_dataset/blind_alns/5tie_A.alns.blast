@@ -1,0 +1,1798 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5tie_A
+
+Length=181
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase ...  360     1e-127
+sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase ...  360     1e-127
+sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 SV=1  194     1e-62 
+sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (stra...  162     1e-49 
+sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus...  42.4    7e-04 
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  40.8    0.002 
+
+
+>sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli (strain K12) OX=83333 GN=tesA PE=1 
+SV=1
+Length=208
+
+ Score = 360 bits (923),  Expect = 1e-127, Method: Compositional matrix adjust.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=tesA PE=3 SV=1
+Length=208
+
+ Score = 360 bits (923),  Expect = 1e-127, Method: Compositional matrix adjust.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 
+SV=1
+Length=200
+
+ Score = 194 bits (494),  Expect = 1e-62, Method: Compositional matrix adjust.
+ Identities = 93/176 (53%), Positives = 126/176 (72%), Gaps = 3/176 (2%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLND---KWQSKTSVVNASISGDTSQQGLARLPALL  59
+            + LL+LGDSLSAGY+M    +WP+LL D   +     +V+N SISGDT+  GLARLP LL
+Sbjct  21   EKLLVLGDSLSAGYQMPIEKSWPSLLPDALLEHGQDVTVINGSISGDTTGNGLARLPQLL  80
+
+Query  60   KQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYN  119
+             QH P  VL+ELG NDGLRGF P+     L +++  +K + A  ++MQIR+P NYG+RY+
+Sbjct  81   DQHTPDLVLIELGANDGLRGFPPKVITSNLSKMISLIKDSGANVVMMQIRVPPNYGKRYS  140
+
+Query  120  EAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQL  175
+            + F  IYPKLA+   V L+PFFLE V  KP+WM DDG+HP  +AQP+IA+++A++L
+Sbjct  141  DMFYDIYPKLAEHQQVQLMPFFLEHVITKPEWMMDDGLHPKPEAQPWIAEFVAQEL  196
+
+
+>sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tesA PE=1 SV=1
+Length=201
+
+ Score = 162 bits (409),  Expect = 1e-49, Method: Compositional matrix adjust.
+ Identities = 88/179 (49%), Positives = 113/179 (63%), Gaps = 3/179 (2%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKT---SVVNASISGDTSQQGLARLPALLK  60
+            TLL++GDS+SA   +  S  W ALL  +   +     VVNASISGDTS  GLARLPALL 
+Sbjct  23   TLLVVGDSISAALGLDTSQGWVALLQKRLADEGYDYRVVNASISGDTSAGGLARLPALLA  82
+
+Query  61   QHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNE  120
+            + +P  V++ELGGNDGLRG  P Q +Q L  + Q  +A  A+ LL+ I+LP NYG RY E
+Sbjct  83   EEKPALVVIELGGNDGLRGMAPAQLQQNLASMAQKARAEGAKVLLLGIQLPPNYGPRYIE  142
+
+Query  121  AFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLV  179
+            AFS +Y  +A +    L+PFFLE V      MQ DGIHP   AQP + + +   L+PL+
+Sbjct  143  AFSRVYGAVAAQEKTALVPFFLEGVGGVQGMMQADGIHPALAAQPRLLENVWPTLKPLL  201
+
+
+>sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqeF PE=3 SV=1
+Length=243
+
+ Score = 42.4 bits (98),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 35/171 (20%), Positives = 71/171 (42%), Gaps = 33/171 (19%)
+
+Query  1    GMDTLLILGDSLSAG----YRMSASAA-WPALLNDKWQSKTSVVNASISGDTSQQGLARL  55
+            G + ++  GDS + G    YR    A  W  +L    +    ++NA I G T++    R 
+Sbjct  21   GYEDVVAFGDSNTRGSNWDYRDYPKAQQWVNILKTAERGNLDILNAGIGGQTTEDARLRF  80
+
+Query  56   PALLKQHQPRWVLVELGGNDG--LRGFQPQQTEQTLRQ----ILQDVKAANAEPLLMQI-  108
+               +   +P+++ +  G ND   L   +P+ ++Q  R+     +++ +    +P+LM   
+Sbjct  81   QTDVLDQKPKYLFIMFGTNDAAILTEGKPRVSKQRFRENLVYFIEESRKHGIKPILMTCI  140
+
+Query  109  ---------------------RLPANYGRRYNEAFSAIYPKLAKEFDVPLL  138
+                                   P    R+++ +++ I   ++K  DVPL+
+Sbjct  141  PIIEGNGKHHLFYYSRYQAAAFEPKGGARKWHNSYNDITRDVSKRLDVPLV  191
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 40.8 bits (94),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 52/204 (25%), Positives = 84/204 (41%), Gaps = 33/204 (16%)
+
+Query  1    GMDTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGL--ARLPAL  58
+            G  T+   GDS + G        W   L         V+N +I G +S+  +   RL A+
+Sbjct  9    GDSTVQTYGDSTNQG-------GWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAI  61
+
+Query  59   LKQHQPR-WVLVELGGNDGLRGFQPQQTE------QTLRQILQDVKAANAEPLLMQ--IR  109
+            L   +P  W+ V++G ND  +    + TE      Q L+Q +   +   A PLL+    R
+Sbjct  62   LDVIEPDDWLFVQMGHNDASKNKPERYTEPYTTYKQYLKQYIAGAREKGAHPLLITPVAR  121
+
+Query  110  LPANYGRRYNEA--FSAIYPKLAKEFDVPL-------LPFFLEEVKKK--PQWMQDDGI-  157
+                 G   N+   +     + A E +V L       L FF E+ ++K    +M  +GI 
+Sbjct  122  FHYENGVFLNDFPDYCIAMKQTAAEENVQLIDLMEKSLAFFTEKGEEKVYTYFMISEGIN  181
+
+Query  158  ---HPNRDAQPFIADWMAKQLQPL  178
+               H  +     +A  +AK ++ L
+Sbjct  182  DYTHFTKKGANEMAKLVAKGIKEL  205
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.406    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10001063266
+Results from round 2
+
+
+Query= 5tie_A
+
+Length=181
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase ...  299     9e-104
+sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase ...  299     9e-104
+sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 SV=1  268     2e-91 
+sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (stra...  245     2e-82 
+sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus...  181     2e-56 
+
+Sequences not found previously or not previously below threshold:
+
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  59.7    4e-10
+sp|Q09LX1|AXE2_GEOSE Acetylxylan esterase OS=Geobacillus stearoth...  57.0    4e-09
+sp|Q9DB29|IAH1_MOUSE Isoamyl acetate-hydrolyzing esterase 1 homol...  48.9    4e-06
+sp|Q711G3|IAH1_RAT Isoamyl acetate-hydrolyzing esterase 1 homolog...  47.8    1e-05
+sp|Q79ZY2|OATA_STAAW O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q6G6A7|OATA_STAAS O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q6GDN2|OATA_STAAR O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q7A3D6|OATA_STAAN O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q99R71|OATA_STAAM O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q5HCY3|OATA_STAAC O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q2FV54|OATA_STAA8 O-acetyltransferase OatA OS=Staphylococcus a...  46.6    4e-05
+sp|Q2TAA2|IAH1_HUMAN Isoamyl acetate-hydrolyzing esterase 1 homol...  45.1    1e-04
+sp|O53423|GDSLL_MYCTU GDSL-like esterase Rv1075c OS=Mycobacterium...  44.7    1e-04
+sp|Q3SZ16|IAH1_BOVIN Isoamyl acetate-hydrolyzing esterase 1 homol...  43.1    4e-04
+sp|D5EV35|AXEA1_PRER2 Acetylxylan esterase OS=Prevotella ruminico...  43.1    6e-04
+
+
+>sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli (strain K12) OX=83333 GN=tesA PE=1 
+SV=1
+Length=208
+
+ Score = 299 bits (766),  Expect = 9e-104, Method: Composition-based stats.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=tesA PE=3 SV=1
+Length=208
+
+ Score = 299 bits (766),  Expect = 9e-104, Method: Composition-based stats.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 
+SV=1
+Length=200
+
+ Score = 268 bits (684),  Expect = 2e-91, Method: Composition-based stats.
+ Identities = 93/176 (53%), Positives = 126/176 (72%), Gaps = 3/176 (2%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLND---KWQSKTSVVNASISGDTSQQGLARLPALL  59
+            + LL+LGDSLSAGY+M    +WP+LL D   +     +V+N SISGDT+  GLARLP LL
+Sbjct  21   EKLLVLGDSLSAGYQMPIEKSWPSLLPDALLEHGQDVTVINGSISGDTTGNGLARLPQLL  80
+
+Query  60   KQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYN  119
+             QH P  VL+ELG NDGLRGF P+     L +++  +K + A  ++MQIR+P NYG+RY+
+Sbjct  81   DQHTPDLVLIELGANDGLRGFPPKVITSNLSKMISLIKDSGANVVMMQIRVPPNYGKRYS  140
+
+Query  120  EAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQL  175
+            + F  IYPKLA+   V L+PFFLE V  KP+WM DDG+HP  +AQP+IA+++A++L
+Sbjct  141  DMFYDIYPKLAEHQQVQLMPFFLEHVITKPEWMMDDGLHPKPEAQPWIAEFVAQEL  196
+
+
+>sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tesA PE=1 SV=1
+Length=201
+
+ Score = 245 bits (625),  Expect = 2e-82, Method: Composition-based stats.
+ Identities = 88/180 (49%), Positives = 113/180 (63%), Gaps = 3/180 (2%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKT---SVVNASISGDTSQQGLARLPALL  59
+             TLL++GDS+SA   +  S  W ALL  +   +     VVNASISGDTS  GLARLPALL
+Sbjct  22   QTLLVVGDSISAALGLDTSQGWVALLQKRLADEGYDYRVVNASISGDTSAGGLARLPALL  81
+
+Query  60   KQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYN  119
+             + +P  V++ELGGNDGLRG  P Q +Q L  + Q  +A  A+ LL+ I+LP NYG RY 
+Sbjct  82   AEEKPALVVIELGGNDGLRGMAPAQLQQNLASMAQKARAEGAKVLLLGIQLPPNYGPRYI  141
+
+Query  120  EAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLV  179
+            EAFS +Y  +A +    L+PFFLE V      MQ DGIHP   AQP + + +   L+PL+
+Sbjct  142  EAFSRVYGAVAAQEKTALVPFFLEGVGGVQGMMQADGIHPALAAQPRLLENVWPTLKPLL  201
+
+
+>sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqeF PE=3 SV=1
+Length=243
+
+ Score = 181 bits (458),  Expect = 2e-56, Method: Composition-based stats.
+ Identities = 38/184 (21%), Positives = 75/184 (41%), Gaps = 36/184 (20%)
+
+Query  1    GMDTLLILGDSLSAG----YRMSASAA-WPALLNDKWQSKTSVVNASISGDTSQQGLARL  55
+            G + ++  GDS + G    YR    A  W  +L    +    ++NA I G T++    R 
+Sbjct  21   GYEDVVAFGDSNTRGSNWDYRDYPKAQQWVNILKTAERGNLDILNAGIGGQTTEDARLRF  80
+
+Query  56   PALLKQHQPRWVLVELGGNDG--LRGFQPQQTEQTLRQ----ILQDVKAANAEPLLMQI-  108
+               +   +P+++ +  G ND   L   +P+ ++Q  R+     +++ +    +P+LM   
+Sbjct  81   QTDVLDQKPKYLFIMFGTNDAAILTEGKPRVSKQRFRENLVYFIEESRKHGIKPILMTCI  140
+
+Query  109  ---------------------RLPANYGRRYNEAFSAIYPKLAKEFDVPLL---PFFLEE  144
+                                   P    R+++ +++ I   ++K  DVPL+     F+E 
+Sbjct  141  PIIEGNGKHHLFYYSRYQAAAFEPKGGARKWHNSYNDITRDVSKRLDVPLVDNWKHFIEA  200
+
+Query  145  VKKK  148
+               K
+Sbjct  201  DGGK  204
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 59.7 bits (143),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 53/200 (27%), Positives = 79/200 (40%), Gaps = 33/200 (17%)
+
+Query  9    GDSLSAGYRMSASAA-WPALLNDKWQSKTSVVNASISGDTSQQGL--ARLPALLKQHQPR  65
+            GDS    Y  S +   W   L         V+N +I G +S+  +   RL A+L   +P 
+Sbjct  9    GDSTVQTYGDSTNQGGWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAILDVIEPD  68
+
+Query  66   -WVLVELGGNDGLRGFQPQQTE------QTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+             W+ V++G ND  +    + TE      Q L+Q +   +   A PLL+    P       
+Sbjct  69   DWLFVQMGHNDASKNKPERYTEPYTTYKQYLKQYIAGAREKGAHPLLIT---PVARFHYE  125
+
+Query  119  NEAFSAIYPK-------LAKEFDVPL-------LPFFLE--EVKKKPQWMQDDGI----H  158
+            N  F   +P         A E +V L       L FF E  E K    +M  +GI    H
+Sbjct  126  NGVFLNDFPDYCIAMKQTAAEENVQLIDLMEKSLAFFTEKGEEKVYTYFMISEGINDYTH  185
+
+Query  159  PNRDAQPFIADWMAKQLQPL  178
+              +     +A  +AK ++ L
+Sbjct  186  FTKKGANEMAKLVAKGIKEL  205
+
+
+>sp|Q09LX1|AXE2_GEOSE Acetylxylan esterase OS=Geobacillus stearothermophilus 
+OX=1422 GN=axe2 PE=1 SV=1
+Length=219
+
+ Score = 57.0 bits (136),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 43/205 (21%), Positives = 77/205 (38%), Gaps = 32/205 (16%)
+
+Query  3    DTLLILGDSLSAGYRMSAS-------------AAWPALLNDKWQS-KTSVVNASISGDTS  48
+            + LL +GDS++   R                 A    LL   +      VVN  ISG+T 
+Sbjct  7    EKLLFIGDSITDCGRARPEGEGSFGALGTGYVAYVVGLLQAVYPELGIRVVNKGISGNTV  66
+
+Query  49   QQGLARLPALLKQHQPRWVLVELGGNDGLRGFQPQQTEQ----------TLRQILQDVKA  98
+            +   AR    +   +P WV + +G ND  R +     ++          TLR ++ + K 
+Sbjct  67   RDLKARWEEDVIAQKPDWVSIMIGINDVWRQYDLPFMKEKHVYLDEYEATLRSLVLETKP  126
+
+Query  99   ANAEPLLMQIRLPANYG----RRYNEAFSAIYPKLAKEFDVPLL---PFFLEEVKKK-PQ  150
+                 +LM             RR  + +  +  ++A+E +   +     F E +K   P 
+Sbjct  127  LVKGIILMTPFYIEGNEQDPMRRTMDQYGRVVKQIAEETNSLFVDTQAAFNEVLKTLYPA  186
+
+Query  151  WMQDDGIHPNRDAQPFIADWMAKQL  175
+             +  D +HP+      +A    +++
+Sbjct  187  ALAWDRVHPSVAGHMILARAFLREI  211
+
+
+>sp|Q9DB29|IAH1_MOUSE Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Mus musculus OX=10090 GN=Iah1 PE=1 SV=1
+Length=249
+
+ Score = 48.9 bits (115),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 27/105 (26%), Positives = 47/105 (45%), Gaps = 13/105 (12%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ---  61
+            +L+ GDS++          W +LL D+   K  V+N   SG  ++     LP L+++   
+Sbjct  18   VLLFGDSITQF--SFQQGGWGSLLADRLVRKCDVLNRGFSGYNTRWAKIILPRLIRKGPG  75
+
+Query  62   -HQPRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKA  98
+               P  V +  G ND  L+   P+Q          LR ++Q +++
+Sbjct  76   MENPVAVTIFFGANDSSLKDENPKQHVPLDEYSANLRDMVQYLRS  120
+
+
+>sp|Q711G3|IAH1_RAT Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Rattus norvegicus OX=10116 GN=Iah1 PE=2 SV=2
+Length=249
+
+ Score = 47.8 bits (112),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 27/119 (23%), Positives = 50/119 (42%), Gaps = 13/119 (11%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ---  61
+            +L+ GDS++          W  LL D+   K  V+N   SG  ++     LP ++++   
+Sbjct  18   VLLFGDSITQF--SFQQGGWGTLLADRLVRKCDVLNRGFSGYNTRWAKIILPRIIRKGAG  75
+
+Query  62   -HQPRWVLVELGGNDG-LRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+               P  V +  G ND  L+   P+Q          LR ++Q +++ +     + +  P 
+Sbjct  76   LENPVAVTIFFGANDSTLKDENPKQHVPLDEYSANLRDMVQYLRSVDIPKERVILITPP  134
+
+
+>sp|Q79ZY2|OATA_STAAW O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q6G6A7|OATA_STAAS O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q6GDN2|OATA_STAAR O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q7A3D6|OATA_STAAN O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=oatA PE=1 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q99R71|OATA_STAAM O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=oatA PE=3 
+SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q5HCY3|OATA_STAAC O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q2FV54|OATA_STAA8 O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 46.6 bits (109),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q2TAA2|IAH1_HUMAN Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Homo sapiens OX=9606 GN=IAH1 PE=1 SV=1
+Length=248
+
+ Score = 45.1 bits (105),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 28/105 (27%), Positives = 46/105 (44%), Gaps = 13/105 (12%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQHQ-  63
+            LL+ GDS++          W A L D+   K  V+N   SG  ++     LP L+++   
+Sbjct  18   LLLFGDSITQF--SFQQGGWGASLADRLVRKCDVLNRGFSGYNTRWAKIILPRLIRKGNS  75
+
+Query  64   ---PRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKA  98
+               P  V +  G ND  L+   P+Q          L+ ++Q +K+
+Sbjct  76   LDIPVAVTIFFGANDSALKDENPKQHIPLEEYAANLKSMVQYLKS  120
+
+
+>sp|O53423|GDSLL_MYCTU GDSL-like esterase Rv1075c OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1075c 
+PE=1 SV=3
+Length=314
+
+ Score = 44.7 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/112 (21%), Positives = 50/112 (45%), Gaps = 10/112 (9%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPAL-----LNDKWQSKTSVVNASISGDTSQQGLARLPAL-  58
+            L+I GDS + GY  +++   P +     L ++   +  +   +I G TS+    ++ A+ 
+Sbjct  74   LMIFGDSTATGYGCASAEEVPGVLIARGLAEQTGKRIRLSTKAIVGATSKGVCGQVDAMF  133
+
+Query  59   LKQHQPRWVLVELGGND--GLRGFQPQQTEQTLRQILQDVKAANAEPLLMQI  108
+            +    P   ++ +G ND   L G  P  + Q L   ++ ++   A  ++   
+Sbjct  134  VVGPPPDAAVIMIGANDITALNGIGP--SAQRLADCVRRLRTRGAVVVVGTC  183
+
+
+>sp|Q3SZ16|IAH1_BOVIN Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Bos taurus OX=9913 GN=IAH1 PE=2 SV=1
+Length=249
+
+ Score = 43.1 bits (100),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 27/119 (23%), Positives = 49/119 (41%), Gaps = 13/119 (11%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ---  61
+            +L+ GDS++          W A L D    K  V+N   SG  ++     LP L+++   
+Sbjct  18   VLLFGDSITQF--SFQQGGWGASLADMLVRKCDVLNRGFSGYNTRWAKIILPRLVRKGSG  75
+
+Query  62   -HQPRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+               P  V +  G ND  L+   P+Q          LR +++ +++ +     + +  P 
+Sbjct  76   LDSPVAVTIFFGANDSALKDENPKQHVPLEEFVANLRSMVRYLRSVDVPEGRLILITPP  134
+
+
+>sp|D5EV35|AXEA1_PRER2 Acetylxylan esterase OS=Prevotella ruminicola 
+(strain ATCC 19189 / JCM 8958 / 23) OX=264731 GN=axeA1 
+PE=1 SV=1
+Length=480
+
+ Score = 43.1 bits (100),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 39/212 (18%), Positives = 79/212 (37%), Gaps = 47/212 (22%)
+
+Query  5    LLILGDSLSAGYRMSASA--AWPALLNDKWQSKTSVVNASISGDTSQQGLARLP------  56
+            +  +G+S++ G+ +   A   +PA L         V N  +S  T        P      
+Sbjct  276  VACIGNSITDGFGIDMRAKYGYPAQLQGILGDGYWVKNFGVSARTMLN-KGDFPYMNEMA  334
+
+Query  57   -ALLKQHQPRWVLVELGGNDGLRGFQPQ------QTEQTLRQILQDVK------------  97
+                   +P  V+++LG ND     +P+      +  Q L Q+++ ++            
+Sbjct  335  WKDALAFKPDVVVIKLGTNDS----KPENWQYGSEFRQDLEQMIKALRPDLAQPAKKGKK  390
+
+Query  98   -----AANAEPLLMQIRLPANYGRRYN-------EAFSAIYPKLAKEFDVPLLPFFLEEV  145
+                 A  A P ++       +   +N       +    I  ++AK++ + ++   L  +
+Sbjct  391  KAKAAAQPAGPKILLCTPIPAFKPSWNINDKVITDEIIPIQQEVAKQYGLQIID--LHAL  448
+
+Query  146  KKKPQ-WMQDDGIHPNRDAQPFIADWMAKQLQ  176
+                   + DDGIHPN      +A+ +A  ++
+Sbjct  449  MLNDGDKVVDDGIHPNEKGAKKMAEIIAAAIK  480
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.354    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10001063266
+Results from round 3
+
+
+Query= 5tie_A
+
+Length=181
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase ...  251     1e-84
+sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase ...  251     1e-84
+sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 SV=1  223     1e-73
+sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (stra...  207     2e-67
+sp|Q09LX1|AXE2_GEOSE Acetylxylan esterase OS=Geobacillus stearoth...  159     2e-48
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  151     2e-45
+sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus...  150     1e-44
+sp|Q79ZY2|OATA_STAAW O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q6G6A7|OATA_STAAS O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q6GDN2|OATA_STAAR O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q7A3D6|OATA_STAAN O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q99R71|OATA_STAAM O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q5HCY3|OATA_STAAC O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|Q2FV54|OATA_STAA8 O-acetyltransferase OatA OS=Staphylococcus a...  141     2e-38
+sp|D5EV35|AXEA1_PRER2 Acetylxylan esterase OS=Prevotella ruminico...  135     8e-37
+sp|Q9DB29|IAH1_MOUSE Isoamyl acetate-hydrolyzing esterase 1 homol...  120     6e-33
+sp|Q3SZ16|IAH1_BOVIN Isoamyl acetate-hydrolyzing esterase 1 homol...  120     1e-32
+sp|Q711G3|IAH1_RAT Isoamyl acetate-hydrolyzing esterase 1 homolog...  119     1e-32
+sp|Q2TAA2|IAH1_HUMAN Isoamyl acetate-hydrolyzing esterase 1 homol...  119     2e-32
+sp|O53423|GDSLL_MYCTU GDSL-like esterase Rv1075c OS=Mycobacterium...  96.0    6e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q503L4|IAH1_DANRE Isoamyl acetate-hydrolyzing esterase 1 homol...  94.1    1e-22
+sp|Q6NMR9|GDL84_ARATH GDSL esterase/lipase At5g45920 OS=Arabidops...  89.8    4e-21
+sp|P41734|IAH1_YEAST Isoamyl acetate-hydrolyzing esterase OS=Sacc...  82.9    2e-18
+sp|Q9FM04|GDL88_ARATH GDSL esterase/lipase At5g62930 OS=Arabidops...  80.6    1e-17
+sp|O05402|YRHL_BACSU Putative peptidoglycan O-acetyltransferase Y...  76.7    2e-15
+sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT OS=B...  73.3    5e-15
+sp|Q6GIB3|OTRF1_STAAR Putative O-acetyltransferase SAR0937 OS=Sta...  73.3    2e-14
+sp|Q5HHB1|OTRF1_STAAC Putative O-acetyltransferase SACOL0978 OS=S...  73.3    2e-14
+sp|Q7A1B1|OTRF1_STAAW Putative O-acetyltransferase MW0856 OS=Stap...  72.1    6e-14
+sp|Q6GAV2|OTRF1_STAAS Putative O-acetyltransferase SAS0844 OS=Sta...  72.1    6e-14
+sp|Q7A6G7|OTRF1_STAAN Putative O-acetyltransferase SA0834 OS=Stap...  72.1    6e-14
+sp|Q99VB6|OTRF1_STAAM Putative O-acetyltransferase SAV0974 OS=Sta...  72.1    6e-14
+sp|O80443|GDL46_ARATH GDSL esterase/lipase At2g38180 OS=Arabidops...  62.9    8e-11
+sp|Q9SRM5|CPR49_ARATH GDSL esterase/lipase CPRD49 OS=Arabidopsis ...  60.9    2e-10
+sp|O33363|GDSL_MYCTU GDSL lipase Rv0518 OS=Mycobacterium tubercul...  58.2    2e-09
+sp|P40766|YPMR_BACSU Uncharacterized protein YpmR OS=Bacillus sub...  57.5    5e-09
+sp|P13266|NEUA_ECOLX N-acylneuraminate cytidylyltransferase OS=Es...  55.1    4e-08
+sp|Q9RLB8|CESA_RUMFL Multidomain esterase OS=Ruminococcus flavefa...  52.8    3e-07
+sp|O74648|IAH1_SCHPO Isoamyl acetate-hydrolyzing esterase OS=Schi...  52.1    4e-07
+sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emerice...  48.6    6e-06
+sp|P42969|LIPC_BACSU Spore germination lipase LipC OS=Bacillus su...  47.1    1e-05
+sp|O35264|PA1B2_RAT Platelet-activating factor acetylhydrolase IB...  45.9    5e-05
+sp|Q61206|PA1B2_MOUSE Platelet-activating factor acetylhydrolase ...  45.9    5e-05
+sp|Q5R4G2|PA1B2_PONAB Platelet-activating factor acetylhydrolase ...  45.5    6e-05
+sp|P68402|PA1B2_HUMAN Platelet-activating factor acetylhydrolase ...  45.5    6e-05
+sp|P68401|PA1B2_BOVIN Platelet-activating factor acetylhydrolase ...  45.5    6e-05
+sp|Q29460|PA1B3_BOVIN Platelet-activating factor acetylhydrolase ...  44.4    2e-04
+sp|Q15102|PA1B3_HUMAN Platelet-activating factor acetylhydrolase ...  43.6    2e-04
+
+
+>sp|P0ADA1|TESA_ECOLI Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli (strain K12) OX=83333 GN=tesA PE=1 
+SV=1
+Length=208
+
+ Score = 251 bits (640),  Expect = 1e-84, Method: Composition-based stats.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|P0ADA2|TESA_ECOL6 Thioesterase 1/protease 1/lysophospholipase 
+L1 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=tesA PE=3 SV=1
+Length=208
+
+ Score = 251 bits (640),  Expect = 1e-84, Method: Composition-based stats.
+ Identities = 176/179 (98%), Positives = 177/179 (99%), Gaps = 0/179 (0%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+            DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH
+Sbjct  28   DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  87
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  122
+            QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF
+Sbjct  88   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAF  147
+
+Query  123  SAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  181
+            SAIYPKLAKEFDVPLLPFF+EEV  KPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH
+Sbjct  148  SAIYPKLAKEFDVPLLPFFMEEVYLKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLVNH  206
+
+
+>sp|Q07792|ESTE_VIBMI Arylesterase OS=Vibrio mimicus OX=674 PE=1 
+SV=1
+Length=200
+
+ Score = 223 bits (567),  Expect = 1e-73, Method: Composition-based stats.
+ Identities = 93/176 (53%), Positives = 125/176 (71%), Gaps = 3/176 (2%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKW---QSKTSVVNASISGDTSQQGLARLPALL  59
+            + LL+LGDSLSAGY+M    +WP+LL D         +V+N SISGDT+  GLARLP LL
+Sbjct  21   EKLLVLGDSLSAGYQMPIEKSWPSLLPDALLEHGQDVTVINGSISGDTTGNGLARLPQLL  80
+
+Query  60   KQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYN  119
+             QH P  VL+ELG NDGLRGF P+     L +++  +K + A  ++MQIR+P NYG+RY+
+Sbjct  81   DQHTPDLVLIELGANDGLRGFPPKVITSNLSKMISLIKDSGANVVMMQIRVPPNYGKRYS  140
+
+Query  120  EAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQL  175
+            + F  IYPKLA+   V L+PFFLE V  KP+WM DDG+HP  +AQP+IA+++A++L
+Sbjct  141  DMFYDIYPKLAEHQQVQLMPFFLEHVITKPEWMMDDGLHPKPEAQPWIAEFVAQEL  196
+
+
+>sp|Q9HZY8|EST_PSEAE Esterase TesA OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tesA PE=1 SV=1
+Length=201
+
+ Score = 207 bits (527),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 88/180 (49%), Positives = 112/180 (62%), Gaps = 3/180 (2%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQS---KTSVVNASISGDTSQQGLARLPALL  59
+             TLL++GDS+SA   +  S  W ALL  +         VVNASISGDTS  GLARLPALL
+Sbjct  22   QTLLVVGDSISAALGLDTSQGWVALLQKRLADEGYDYRVVNASISGDTSAGGLARLPALL  81
+
+Query  60   KQHQPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYN  119
+             + +P  V++ELGGNDGLRG  P Q +Q L  + Q  +A  A+ LL+ I+LP NYG RY 
+Sbjct  82   AEEKPALVVIELGGNDGLRGMAPAQLQQNLASMAQKARAEGAKVLLLGIQLPPNYGPRYI  141
+
+Query  120  EAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQPLV  179
+            EAFS +Y  +A +    L+PFFLE V      MQ DGIHP   AQP + + +   L+PL+
+Sbjct  142  EAFSRVYGAVAAQEKTALVPFFLEGVGGVQGMMQADGIHPALAAQPRLLENVWPTLKPLL  201
+
+
+>sp|Q09LX1|AXE2_GEOSE Acetylxylan esterase OS=Geobacillus stearothermophilus 
+OX=1422 GN=axe2 PE=1 SV=1
+Length=219
+
+ Score = 159 bits (403),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 43/205 (21%), Positives = 77/205 (38%), Gaps = 32/205 (16%)
+
+Query  3    DTLLILGDSLSAGYRMSAS-------------AAWPALLNDKWQS-KTSVVNASISGDTS  48
+            + LL +GDS++   R                 A    LL   +      VVN  ISG+T 
+Sbjct  7    EKLLFIGDSITDCGRARPEGEGSFGALGTGYVAYVVGLLQAVYPELGIRVVNKGISGNTV  66
+
+Query  49   QQGLARLPALLKQHQPRWVLVELGGNDGLRGFQPQQTEQ----------TLRQILQDVKA  98
+            +   AR    +   +P WV + +G ND  R +     ++          TLR ++ + K 
+Sbjct  67   RDLKARWEEDVIAQKPDWVSIMIGINDVWRQYDLPFMKEKHVYLDEYEATLRSLVLETKP  126
+
+Query  99   ANAEPLLMQIRLPANYG----RRYNEAFSAIYPKLAKEFDVPLLP---FFLEEVKK-KPQ  150
+                 +LM             RR  + +  +  ++A+E +   +     F E +K   P 
+Sbjct  127  LVKGIILMTPFYIEGNEQDPMRRTMDQYGRVVKQIAEETNSLFVDTQAAFNEVLKTLYPA  186
+
+Query  151  WMQDDGIHPNRDAQPFIADWMAKQL  175
+             +  D +HP+      +A    +++
+Sbjct  187  ALAWDRVHPSVAGHMILARAFLREI  211
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 151 bits (382),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 51/200 (26%), Positives = 78/200 (39%), Gaps = 33/200 (17%)
+
+Query  9    GDSLSAGYRMSA-SAAWPALLNDKWQSKTSVVNASISGDTSQQGL--ARLPALLKQHQP-  64
+            GDS    Y  S     W   L         V+N +I G +S+  +   RL A+L   +P 
+Sbjct  9    GDSTVQTYGDSTNQGGWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAILDVIEPD  68
+
+Query  65   RWVLVELGGNDGLRGFQPQQT------EQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+             W+ V++G ND  +    + T      +Q L+Q +   +   A PLL+    P       
+Sbjct  69   DWLFVQMGHNDASKNKPERYTEPYTTYKQYLKQYIAGAREKGAHPLLIT---PVARFHYE  125
+
+Query  119  NEAFSAIYPK-------LAKEFDVPLLP-------FFLE--EVKKKPQWMQDDGI----H  158
+            N  F   +P         A E +V L+        FF E  E K    +M  +GI    H
+Sbjct  126  NGVFLNDFPDYCIAMKQTAAEENVQLIDLMEKSLAFFTEKGEEKVYTYFMISEGINDYTH  185
+
+Query  159  PNRDAQPFIADWMAKQLQPL  178
+              +     +A  +AK ++ L
+Sbjct  186  FTKKGANEMAKLVAKGIKEL  205
+
+
+>sp|P54451|YQEF_BACSU Uncharacterized lipoprotein YqeF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqeF PE=3 SV=1
+Length=243
+
+ Score = 150 bits (379),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 40/215 (19%), Positives = 83/215 (39%), Gaps = 44/215 (20%)
+
+Query  1    GMDTLLILGDSLSAG----YRMSASAA-WPALLNDKWQSKTSVVNASISGDTSQQGLARL  55
+            G + ++  GDS + G    YR    A  W  +L    +    ++NA I G T++    R 
+Sbjct  21   GYEDVVAFGDSNTRGSNWDYRDYPKAQQWVNILKTAERGNLDILNAGIGGQTTEDARLRF  80
+
+Query  56   PALLKQHQPRWVLVELGGNDG--LRGFQPQQTEQTLRQ----ILQDVKAANAEPLLMQI-  108
+               +   +P+++ +  G ND   L   +P+ ++Q  R+     +++ +    +P+LM   
+Sbjct  81   QTDVLDQKPKYLFIMFGTNDAAILTEGKPRVSKQRFRENLVYFIEESRKHGIKPILMTCI  140
+
+Query  109  ---------------------RLPANYGRRYNEAFSAIYPKLAKEFDVPLLP---FFLEE  144
+                                   P    R+++ +++ I   ++K  DVPL+     F+E 
+Sbjct  141  PIIEGNGKHHLFYYSRYQAAAFEPKGGARKWHNSYNDITRDVSKRLDVPLVDNWKHFIEA  200
+
+Query  145  VKKK--PQWMQDDGI------HPNRDAQPFIADWM  171
+               K   + +   G+      H        + + +
+Sbjct  201  DGGKATDEALIQSGLIDPSGNHMTPKGARIVYEGI  235
+
+
+>sp|Q79ZY2|OATA_STAAW O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q6G6A7|OATA_STAAS O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q6GDN2|OATA_STAAR O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q7A3D6|OATA_STAAN O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=oatA PE=1 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q99R71|OATA_STAAM O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=oatA PE=3 
+SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q5HCY3|OATA_STAAC O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|Q2FV54|OATA_STAA8 O-acetyltransferase OatA OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=oatA PE=3 SV=1
+Length=603
+
+ Score = 141 bits (356),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/178 (23%), Positives = 72/178 (40%), Gaps = 24/178 (13%)
+
+Query  10   DSLSAGYRMSASAAWPALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ  63
+            D  +A  +     + P L+ D             + NA I G   +Q +   P +  Q++
+Sbjct  432  DKQTANSKEDIKKSSPLLIGDSVMVDIGNVFTKKIPNAQIDGKVGRQLVDATPIVKSQYK  491
+
+Query  64   P-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRY  118
+                  + V+VELG N          T+  L ++L       A+  L+ IR+P +Y  R 
+Sbjct  492  DYAKKGQKVVVELGTNGAF-------TKDQLNELLDSFGK--ADIYLVSIRVPRDYEGRI  542
+
+Query  119  NEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            N+    IY    K  +V L+ ++ +     P++   DGIH        + D + K ++
+Sbjct  543  NKL---IYEAAEKRSNVHLVDWY-KASAGHPEYFAYDGIHLEYAGSKALTDLIVKTME  596
+
+
+>sp|D5EV35|AXEA1_PRER2 Acetylxylan esterase OS=Prevotella ruminicola 
+(strain ATCC 19189 / JCM 8958 / 23) OX=264731 GN=axeA1 
+PE=1 SV=1
+Length=480
+
+ Score = 135 bits (340),  Expect = 8e-37, Method: Composition-based stats.
+ Identities = 37/209 (18%), Positives = 75/209 (36%), Gaps = 39/209 (19%)
+
+Query  4    TLLILGDSLSAGYRMSASA--AWPALLNDKWQSKTSVVNASISGDTSQQGLARLP-----  56
+             +  +G+S++ G+ +   A   +PA L         V N  +S  T        P     
+Sbjct  275  RVACIGNSITDGFGIDMRAKYGYPAQLQGILGDGYWVKNFGVSARTMLN-KGDFPYMNEM  333
+
+Query  57   --ALLKQHQPRWVLVELGGNDGLRG--FQPQQTEQTLRQILQDVKA--------------  98
+                    +P  V+++LG ND          +  Q L Q+++ ++               
+Sbjct  334  AWKDALAFKPDVVVIKLGTNDSKPENWQYGSEFRQDLEQMIKALRPDLAQPAKKGKKKAK  393
+
+Query  99   ---ANAEPLLMQIRLPANYGRRYN-------EAFSAIYPKLAKEFDVPLLPFFLEEVKKK  148
+                 A P ++       +   +N       +    I  ++AK++ + ++   L  +   
+Sbjct  394  AAAQPAGPKILLCTPIPAFKPSWNINDKVITDEIIPIQQEVAKQYGLQIID--LHALMLN  451
+
+Query  149  PQ-WMQDDGIHPNRDAQPFIADWMAKQLQ  176
+                + DDGIHPN      +A+ +A  ++
+Sbjct  452  DGDKVVDDGIHPNEKGAKKMAEIIAAAIK  480
+
+
+>sp|Q9DB29|IAH1_MOUSE Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Mus musculus OX=10090 GN=Iah1 PE=1 SV=1
+Length=249
+
+ Score = 120 bits (301),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 36/195 (18%), Positives = 71/195 (36%), Gaps = 33/195 (17%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ--  61
+             +L+ GDS++          W +LL D+   K  V+N   SG  ++     LP L+++  
+Sbjct  17   RVLLFGDSITQF--SFQQGGWGSLLADRLVRKCDVLNRGFSGYNTRWAKIILPRLIRKGP  74
+
+Query  62   --HQPRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+                P  V +  G ND  L+   P+Q          LR ++Q +++ +     + +  P 
+Sbjct  75   GMENPVAVTIFFGANDSSLKDENPKQHVPLDEYSANLRDMVQYLRSVDVPRERVILITPP  134
+
+Query  113  ------------------NYGRRYNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQW--M  152
+                              N        ++    ++A++    +L  +    K    +   
+Sbjct  135  PLCEAAWEKECVLKGCKLNRLNSVVGEYANACLQVARDCGTDVLDLWTLMQKDSQDFSSY  194
+
+Query  153  QDDGIHPNRDAQPFI  167
+              DG+H +     F+
+Sbjct  195  LSDGLHLSPMGNEFL  209
+
+
+>sp|Q3SZ16|IAH1_BOVIN Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Bos taurus OX=9913 GN=IAH1 PE=2 SV=1
+Length=249
+
+ Score = 120 bits (300),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 35/208 (17%), Positives = 75/208 (36%), Gaps = 33/208 (16%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ--  61
+             +L+ GDS++          W A L D    K  V+N   SG  ++     LP L+++  
+Sbjct  17   RVLLFGDSITQF--SFQQGGWGASLADMLVRKCDVLNRGFSGYNTRWAKIILPRLVRKGS  74
+
+Query  62   --HQPRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+                P  V +  G ND  L+   P+Q          LR +++ +++ +     + +  P 
+Sbjct  75   GLDSPVAVTIFFGANDSALKDENPKQHVPLEEFVANLRSMVRYLRSVDVPEGRLILITPP  134
+
+Query  113  ------------------NYGRRYNEAFSAIYPKLAKEFDVPLLPFF--LEEVKKKPQWM  152
+                              N        ++    ++A++     L  +  +++  +     
+Sbjct  135  PLCEAAWAQECLQQGCKLNRLNSVVGEYARACLQVAQDCGADALDLWSLMQKDGQDFSSY  194
+
+Query  153  QDDGIHPNRDAQPFIADWMAKQLQPLVN  180
+              DG+H +     F+   +   ++  V+
+Sbjct  195  LSDGLHLSPKGNEFVFSHLWPLIEKKVS  222
+
+
+>sp|Q711G3|IAH1_RAT Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Rattus norvegicus OX=10116 GN=Iah1 PE=2 SV=2
+Length=249
+
+ Score = 119 bits (299),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 37/208 (18%), Positives = 74/208 (36%), Gaps = 33/208 (16%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQ--  61
+             +L+ GDS++          W  LL D+   K  V+N   SG  ++     LP ++++  
+Sbjct  17   RVLLFGDSITQF--SFQQGGWGTLLADRLVRKCDVLNRGFSGYNTRWAKIILPRIIRKGA  74
+
+Query  62   --HQPRWVLVELGGNDG-LRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+                P  V +  G ND  L+   P+Q          LR ++Q +++ +     + +  P 
+Sbjct  75   GLENPVAVTIFFGANDSTLKDENPKQHVPLDEYSANLRDMVQYLRSVDIPKERVILITPP  134
+
+Query  113  ------------------NYGRRYNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQW--M  152
+                              N        ++    ++A++    +L  +    K    +   
+Sbjct  135  PLCEAAWEKECILKGCKLNRLNVAVGEYAKACLQVARDCGTDVLDLWTLMQKDNQDFSSY  194
+
+Query  153  QDDGIHPNRDAQPFIADWMAKQLQPLVN  180
+              DG+H +     F+   +   L   V+
+Sbjct  195  LSDGLHLSPLGNEFLFFHLWPLLDKKVS  222
+
+
+>sp|Q2TAA2|IAH1_HUMAN Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Homo sapiens OX=9606 GN=IAH1 PE=1 SV=1
+Length=248
+
+ Score = 119 bits (299),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 38/207 (18%), Positives = 76/207 (37%), Gaps = 32/207 (15%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQHQ  63
+             LL+ GDS++          W A L D+   K  V+N   SG  ++     LP L+++  
+Sbjct  17   RLLLFGDSITQF--SFQQGGWGASLADRLVRKCDVLNRGFSGYNTRWAKIILPRLIRKGN  74
+
+Query  64   ----PRWVLVELGGND-GLRGFQPQQ------TEQTLRQILQDVKAANAEPLLMQIRLPA  112
+                P  V +  G ND  L+   P+Q          L+ ++Q +K+ +     + +  P 
+Sbjct  75   SLDIPVAVTIFFGANDSALKDENPKQHIPLEEYAANLKSMVQYLKSVDIPENRVILITPT  134
+
+Query  113  ------------------NYGRRYNEAFSAIYPKLAKEFDVPLLP-FFLEEVKKKPQWMQ  153
+                              N        ++    ++A++    +L  + L +  +      
+Sbjct  135  PLCETAWEEQCIIQGCKLNRLNSVVGEYANACLQVAQDCGTDVLDLWTLMQDSQDFSSYL  194
+
+Query  154  DDGIHPNRDAQPFIADWMAKQLQPLVN  180
+             DG+H +     F+   +   ++  V+
+Sbjct  195  SDGLHLSPKGNEFLFSHLWPLIEKKVS  221
+
+
+>sp|O53423|GDSLL_MYCTU GDSL-like esterase Rv1075c OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1075c 
+PE=1 SV=3
+Length=314
+
+ Score = 96.0 bits (237),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 24/112 (21%), Positives = 50/112 (45%), Gaps = 10/112 (9%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALL-----NDKWQSKTSVVNASISGDTSQQGLARLPAL-  58
+            L+I GDS + GY  +++   P +L      ++   +  +   +I G TS+    ++ A+ 
+Sbjct  74   LMIFGDSTATGYGCASAEEVPGVLIARGLAEQTGKRIRLSTKAIVGATSKGVCGQVDAMF  133
+
+Query  59   LKQHQPRWVLVELGGND--GLRGFQPQQTEQTLRQILQDVKAANAEPLLMQI  108
+            +    P   ++ +G ND   L G  P  + Q L   ++ ++   A  ++   
+Sbjct  134  VVGPPPDAAVIMIGANDITALNGIGP--SAQRLADCVRRLRTRGAVVVVGTC  183
+
+
+>sp|Q503L4|IAH1_DANRE Isoamyl acetate-hydrolyzing esterase 1 homolog 
+OS=Danio rerio OX=7955 GN=iah1 PE=2 SV=2
+Length=238
+
+ Score = 94.1 bits (232),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 36/202 (18%), Positives = 70/202 (35%), Gaps = 31/202 (15%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPAL--LKQ  61
+             +++ GDS++       +  W + L  K + K  V+N  +SG  ++     LP +  +  
+Sbjct  11   QIILFGDSITQF--AFQANGWGSELCHKLERKCDVINRGLSGYNTRWAKIVLPRIVPVSD  68
+
+Query  62   HQPRWVLVELGGND-GLRGFQP------QQTEQTLRQILQDVKAANAEPLLMQIRLPA--  112
+                 V V  G ND  L    P      Q+  + L+ I++ + +       +    P   
+Sbjct  69   APISAVTVFFGANDCALEDKNPTQHVPLQEFSENLKDIVRFLVSKGVSNDNIIFITPPPL  128
+
+Query  113  ----------------NYGRRYNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQD--  154
+                            N        ++    + A E  V +L  +    K    +     
+Sbjct  129  LEADWEKECLLKGSPLNRLNSVAGQYAQACVQAAGESGVDVLDLWTLMQKDGQDFSVYLS  188
+
+Query  155  DGIHPNRDAQPFIADWMAKQLQ  176
+            DG+H +     F+A+ +   L+
+Sbjct  189  DGLHLSDKGNQFVAEHLWTLLE  210
+
+
+>sp|Q6NMR9|GDL84_ARATH GDSL esterase/lipase At5g45920 OS=Arabidopsis 
+thaliana OX=3702 GN=At5g45920 PE=2 SV=1
+Length=241
+
+ Score = 89.8 bits (221),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 39/210 (19%), Positives = 76/210 (36%), Gaps = 39/210 (19%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLK---  60
+             + + GDS++      +   W A L D  + K  +V    SG  ++  L  +  +     
+Sbjct  5    KIFLFGDSITE--ESFSDGGWGASLADLLRRKADMVLRGYSGYNTRWALKVVERVFPVAE  62
+
+Query  61   ---QHQPRWVLVELGGNDG--------LRGFQPQQTEQTLRQILQDVKAANAEPLLMQIR  109
+                  P  V V  G ND          +     + +Q LR I+  +K    +  ++ I 
+Sbjct  63   EDGGDSPAAVTVFFGANDACLPERCSGFQHVPLHEYKQNLRSIVSFLKNRWPQTAIILIT  122
+
+Query  110  LPA----------------NYGRRYNE---AFSAIYPKLAKEFDVPLLPFFLEEVKKKPQ  150
+             P                     R NE    ++     +A+E  + +   + + +++ P 
+Sbjct  123  PPPIDEEARLRYPYIENTTGLPERTNEVAGLYAKACIAVAEECQISVTDLWSK-MQQIPN  181
+
+Query  151  WM---QDDGIHPNRDAQPFIADWMAKQLQP  177
+            W      DG+H +R     + + +AK+L+ 
+Sbjct  182  WQTECLWDGLHLSRVGNKVVFEEVAKKLKE  211
+
+
+>sp|P41734|IAH1_YEAST Isoamyl acetate-hydrolyzing esterase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=IAH1 PE=1 SV=1
+Length=238
+
+ Score = 82.9 bits (203),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 43/206 (21%), Positives = 76/206 (37%), Gaps = 31/206 (15%)
+
+Query  2    MDTLLILGDSLSAG-YRMSA------SAAWPALLNDKWQSKTSVVNASISGDTSQQGLAR  54
+             +  L+ GDS++   +            A  A L +++  K  ++     G TS+  L  
+Sbjct  3    YEKFLLFGDSITEFAFNTRPIEDGKDQYALGAALVNEYTRKMDILQRGFKGYTSRWALKI  62
+
+Query  55   LPALLKQHQP-RWVLVELGGNDGL----RGFQPQQTEQTLRQILQDVKAANAEPLLMQI-  108
+            LP +LK         + LG ND      +     +    +RQ++  +K+ +  P+++   
+Sbjct  63   LPEILKHESNIVMATIFLGANDACSAGPQSVPLPEFIDNIRQMVSLMKSYHIRPIIIGPG  122
+
+Query  109  ------------RLPANYGRRYNE---AFSAIYPKLAKEFDVPLLP---FFLEEVKKKPQ  150
+                           A    R NE    +S    KLA E  VP +     F +E     Q
+Sbjct  123  LVDREKWEKEKSEEIALGYFRTNENFAIYSDALAKLANEEKVPFVALNKAFQQEGGDAWQ  182
+
+Query  151  WMQDDGIHPNRDAQPFIADWMAKQLQ  176
+             +  DG+H +        D + K ++
+Sbjct  183  QLLTDGLHFSGKGYKIFHDELLKVIE  208
+
+
+>sp|Q9FM04|GDL88_ARATH GDSL esterase/lipase At5g62930 OS=Arabidopsis 
+thaliana OX=3702 GN=At5g62930 PE=2 SV=3
+Length=242
+
+ Score = 80.6 bits (197),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 37/209 (18%), Positives = 77/209 (37%), Gaps = 37/209 (18%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALL---K  60
+             +++ GDS++A  +   S  W + L D +  K  VV     G  ++  L  L  +     
+Sbjct  4    EIVLFGDSITA--QSFRSGGWGSALADAYSRKADVVVRGYGGYNTRWALFLLHHIFPLGS  61
+
+Query  61   QHQPRWVLVELGGND-GLRG-------FQPQQTEQTLRQILQDVKAANAEPLLMQIRLPA  112
+               P    +  G ND  L+G          ++    +R+I+Q +K  +   L++ I  P 
+Sbjct  62   SSPPVATTIFFGANDAALKGRTSDRQHVPVEEYTDNVRKIVQHLKKCSPTMLIVLITPPP  121
+
+Query  113  ---NYGRRYNEAFS---------------AIYPK----LAKEFDVPLLPFFLEEVKKKP-  149
+                  + Y E+                  +Y +    LA+E  +  +  + +  +    
+Sbjct  122  IDEAGRQSYAESIYGEKAMKEPERTNETTGVYAQHCVALAEELGLRCVNLWSKMQETNDW  181
+
+Query  150  -QWMQDDGIHPNRDAQPFIADWMAKQLQP  177
+             +    DG+H   +    + D +++  + 
+Sbjct  182  QKKYLSDGLHLTPEGNGVVFDEVSRVFRE  210
+
+
+>sp|O05402|YRHL_BACSU Putative peptidoglycan O-acetyltransferase 
+YrhL OS=Bacillus subtilis (strain 168) OX=224308 GN=yrhL 
+PE=3 SV=1
+Length=634
+
+ Score = 76.7 bits (187),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 31/179 (17%), Positives = 68/179 (38%), Gaps = 33/179 (18%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH  62
+              +L +GDS+          ++               N +I G   +Q    L  L +++
+Sbjct  483  KEVLAIGDSVMLDISSHLRQSF--------------SNVTIDGKVGRQMSQALE-LAREY  527
+
+Query  63   QP-----RWVLVELGGNDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRR  117
+            +      + V++ELG N      Q +Q  Q+  +         A   L+  R+P  +  +
+Sbjct  528  KSFNQPNKAVIIELGTNGYFTNSQIEQLLQSFSK---------AHIYLVNTRVPRQWESK  578
+
+Query  118  YNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+             NE+   +  +     +V L+ +  E ++  P++   DG+H        +   + + ++
+Sbjct  579  VNES---LQQQAHAHQNVTLVDWHTEALQ-HPEYFTPDGVHLVPKGAKTLTALIVQAMK  633
+
+
+>sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=rhgT PE=1 SV=1
+Length=232
+
+ Score = 73.3 bits (178),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 37/209 (18%), Positives = 69/209 (33%), Gaps = 34/209 (16%)
+
+Query  4    TLLILGDSLSAGY--RMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGL--ARLPALL  59
+             + + GDS  +      +  A W  +    +     V N +  G ++   +   RL A+ 
+Sbjct  7    QVFLAGDSTVSDCPPHEAPMAGWGQVFGQLFSEGVLVRNHAKGGASTNSFVEEGRLQAIA  66
+
+Query  60   KQH-QPRWVLVELGGNDGL-RGFQP-QQTEQTLRQILQDVKAANAEPLLMQI-----RLP  111
+            +   Q  ++L++ G ND   RG +P    +Q L       +   A P+ +          
+Sbjct  67   EHITQGDYLLIQFGHNDQKPRGTKPYSTFQQFLTLFADTAREKGAHPVFVTSVQRRRFDE  126
+
+Query  112  ANYGRRYNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQW--------MQD---------  154
+                      +      LAKE DVP++    +       +                    
+Sbjct  127  NGRIEHTLGEYPDAMKALAKELDVPVIDLLAKTKVLYEAYGPEESKRLFVWFQPNEHPNY  186
+
+Query  155  -DGI----HPNRDAQPFIADWMAKQLQPL  178
+             DGI    H +      +A  +A+ ++ L
+Sbjct  187  PDGIEDNTHFSEKGAMEVAKLVAEGIEEL  215
+
+
+>sp|Q6GIB3|OTRF1_STAAR Putative O-acetyltransferase SAR0937 OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=SAR0937 
+PE=3 SV=1
+Length=604
+
+ Score = 73.3 bits (178),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 59/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ ++ +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDWY-KRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|Q5HHB1|OTRF1_STAAC Putative O-acetyltransferase SACOL0978 
+OS=Staphylococcus aureus (strain COL) OX=93062 GN=SACOL0978 
+PE=3 SV=1
+Length=604
+
+ Score = 73.3 bits (178),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 59/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ ++ +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDWY-KRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|Q7A1B1|OTRF1_STAAW Putative O-acetyltransferase MW0856 OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=MW0856 PE=3 
+SV=1
+Length=604
+
+ Score = 72.1 bits (175),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 58/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ +  +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDW-NKRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|Q6GAV2|OTRF1_STAAS Putative O-acetyltransferase SAS0844 OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=SAS0844 
+PE=3 SV=1
+Length=604
+
+ Score = 72.1 bits (175),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 58/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ +  +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDW-NKRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|Q7A6G7|OTRF1_STAAN Putative O-acetyltransferase SA0834 OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=SA0834 PE=3 
+SV=1
+Length=604
+
+ Score = 72.1 bits (175),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 58/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ +  +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDW-NKRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|Q99VB6|OTRF1_STAAM Putative O-acetyltransferase SAV0974 OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 
+GN=SAV0974 PE=3 SV=1
+Length=604
+
+ Score = 72.1 bits (175),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 32/163 (20%), Positives = 58/163 (36%), Gaps = 24/163 (15%)
+
+Query  25   PALLNDKWQSKT------SVVNASISGDTSQQGLARLPALLKQHQ-----PRWVLVELGG  73
+            P L+ D            SV  + I G   +Q    LP +   +         V++ELG 
+Sbjct  453  PLLIGDSVMVDIGESFKSSVPKSRIDGKVGRQLYQTLPLVKANYSQYKKSSDQVVLELGT  512
+
+Query  74   NDGLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYGRRYNEAFSAIYPKLAKEF  133
+            N          T + L  +L       A+  L+  R+P  Y    N   +       ++ 
+Sbjct  513  NG-------DFTVKQLDDLLNQFGK--AKIYLVNTRVPRIYEANVNRLLAD---AAKRKS  560
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+            +V L+ +  +  +   ++   DG+H        + D + K L+
+Sbjct  561  NVTLIDW-NKRSQGHSEYFAPDGVHLEYKGVLALKDEILKALK  602
+
+
+>sp|O80443|GDL46_ARATH GDSL esterase/lipase At2g38180 OS=Arabidopsis 
+thaliana OX=3702 GN=At2g38180 PE=2 SV=1
+Length=312
+
+ Score = 62.9 bits (151),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 35/205 (17%), Positives = 70/205 (34%), Gaps = 38/205 (19%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH-  62
+             +++ G S+           W A L D +     ++    +G  S+  L  L  +  +  
+Sbjct  8    QIVLFGSSIVQY--SFTDRGWGATLADLYSRTADIILRGYAGWNSRFALKVLHQVFPKDA  65
+
+Query  63   --QPRWVLVELGGNDGL----RGFQPQQTEQTLRQILQDVKAANAEPL-------LMQIR  109
+              QP  V+V  GGND       G  P      L + +++++      L       ++ + 
+Sbjct  66   VIQPSLVIVYFGGNDSTHPHPSGHGPHV---PLSEFIENMRKIGEHLLSLSDKTRVIFLT  122
+
+Query  110  LPANYGRRYNEAFSAIYP---------------KLAKEFDVPLLPFFLEEVKKKPQWMQD  154
+             P    ++    F                     L +E +V  +  +   ++++  W+  
+Sbjct  123  PPPMNEKQIEIVFGDAIKGRSNELCRPYAEELLNLCREINVKGIDIWT-AIQQQDDWLNS  181
+
+Query  155  ---DGIHPNRDAQPFIADWMAKQLQ  176
+               DGIH    A   +   + K L+
+Sbjct  182  CFTDGIHFTAKASEIVVKEILKVLR  206
+
+
+>sp|Q9SRM5|CPR49_ARATH GDSL esterase/lipase CPRD49 OS=Arabidopsis 
+thaliana OX=3702 GN=CPRD49 PE=2 SV=1
+Length=256
+
+ Score = 60.9 bits (146),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 33/204 (16%), Positives = 73/204 (36%), Gaps = 32/204 (16%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH-  62
+             +++ G S+           W A+L++ +  K  ++     G  S + L  +  +  +  
+Sbjct  8    QIVLFGSSIVQ--MSFGHGGWGAILSEVYARKADIILRGYYGWNSSRALEVVDQVFPKDA  65
+
+Query  63   --QPRWVLVELGGNDGL----RGFQPQ----QTEQTLRQILQDVKAANAEPLLMQIRLPA  112
+              QP  V+V  GGND +     G  P     +    +++I   +++ +    ++ +  P 
+Sbjct  66   AVQPSLVIVYFGGNDSMAPHSSGLGPHVPLTEYVDNMKKIALHLQSLSDFTRIIFLSSPP  125
+
+Query  113  NYGR--------------RYNEA---FSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQ--  153
+                              R N+    +S    +L +E  + ++  F    K         
+Sbjct  126  VDEAKVRQNQSPYLSEVIRTNDLCKTYSDACVELCQELGLEVVDLFSTFQKADDWKTVCF  185
+
+Query  154  DDGIHPNRDAQPFIADWMAKQLQP  177
+             DGIH +      +A  + + ++ 
+Sbjct  186  TDGIHLSAQGSKIVAGEILRVVKE  209
+
+
+>sp|O33363|GDSL_MYCTU GDSL lipase Rv0518 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=Rv0518 PE=1 
+SV=1
+Length=231
+
+ Score = 58.2 bits (139),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 33/190 (17%), Positives = 63/190 (33%), Gaps = 23/190 (12%)
+
+Query  5    LLILGDSLSAG-------YRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA  57
+            + ++GDS + G        +   +  W  L     +    V     +G         +  
+Sbjct  40   VAVIGDSYTTGTDEGGLGSKSWTARTWQMLAARGVRIAADVAAEGRAGYGVPGDHGNVFE  99
+
+Query  58   LLKQ---HQPRWVLVELGG-ND-GLRGFQPQQTEQTLRQILQDVKAANAEPLLMQIRLP-  111
+             L          ++V  G  ND G+    P+   + +R      +       L+ I  P 
+Sbjct  100  DLTARAVQPDDALVVFFGSRNDQGMDPEDPEMLAEKVRDTFDLARHRAPSASLLVIAPPW  159
+
+Query  112  -----ANYGRRYNEAFSAIYPKLAKEFDVPLLP-FFLEEVKKKPQWMQDDGIHPNRDAQP  165
+                      R  +   A        F  P+   +F++    +P+ +  DG+HPN     
+Sbjct  160  PTADVPGPMLRIRDVLGAQARAAGAVFVDPIADHWFVD----RPELIGADGVHPNDAGHE  215
+
+Query  166  FIADWMAKQL  175
+            ++AD +A  +
+Sbjct  216  YLADKIAPLI  225
+
+
+>sp|P40766|YPMR_BACSU Uncharacterized protein YpmR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypmR PE=4 SV=2
+Length=255
+
+ Score = 57.5 bits (137),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 36/208 (17%), Positives = 72/208 (35%), Gaps = 38/208 (18%)
+
+Query  5    LLILGDSLSAGYRMSASAAWPALLNDKWQSK-----TSVVNASISGDTSQQGLARLPALL  59
+            +  +GDSL+ G        +   + D  +S        V N ++ G+ S   L +L    
+Sbjct  43   IAAVGDSLTEGVGDPDGKGYVGKVADSIRSDKQVKTVDVKNYAVKGNRSDDLLEKL-KDK  101
+
+Query  60   KQHQ----PRWVLVELGGNDGLR--------------GFQPQQTEQTLRQILQDVKAAN-  100
+            K  +      +V   +GGND ++                  +  E+   +I+ +++  N 
+Sbjct  102  KVQKGIKDADYVFFTIGGNDLMKILRQNFLQLTVEPFQEAEKPYEKRFEKIISEIRELND  161
+
+Query  101  -AEPLLMQIRLPANYGRRYNEAFSAIYPK----LAKEFD-------VPLLPFFLEEVKKK  148
+             AE + + +  P  +        + +         KE         V +   F ++    
+Sbjct  162  HAELIYVSMYNPFTFTLSELNEINGVVTDWNHIAEKELKKDKHAKIVHIEDLFNQKSDSS  221
+
+Query  149  PQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+                +DD  HPN      IA  + + ++
+Sbjct  222  RISEEDD-FHPNGTGYSLIAKRVYQAIK  248
+
+
+>sp|P13266|NEUA_ECOLX N-acylneuraminate cytidylyltransferase OS=Escherichia 
+coli OX=562 GN=neuA PE=1 SV=1
+Length=419
+
+ Score = 55.1 bits (131),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 31/152 (20%), Positives = 62/152 (41%), Gaps = 12/152 (8%)
+
+Query  35   KTSVVNASISGDTSQQGLA-RLPALLKQHQPRWVLVELGGND-GLRGFQPQQTEQTLRQI  92
+               V N  I+G  S++     +   L  +   +V +  G ND  +  ++ + T   L++ 
+Sbjct  270  DIEVNNLGIAGINSKEYYEYIIEKELIVNFGEFVFIFFGTNDIVVSDWKKEDTLWYLKKT  329
+
+Query  93   LQDVKAANAEPLLMQIRLPANYGR--RYNEAFSAIYPKLAKEFDVPL-----LPFFLEEV  145
+             Q +K  NA   +  + +P  +GR  R N   + +   L    +V       L   L++ 
+Sbjct  330  CQYIKKKNAASKIYLLSVPPVFGRIDRDNRIINDLNSYL--RENVDFAKFISLDHVLKDS  387
+
+Query  146  KKKPQWM-QDDGIHPNRDAQPFIADWMAKQLQ  176
+                  M   DG+H N +    + + +A+ ++
+Sbjct  388  YGNLNKMYTYDGLHFNSNGYTVLENEIAEIVK  419
+
+
+>sp|Q9RLB8|CESA_RUMFL Multidomain esterase OS=Ruminococcus flavefaciens 
+OX=1265 GN=cesA PE=1 SV=1
+Length=768
+
+ Score = 52.8 bits (125),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 36/223 (16%), Positives = 75/223 (34%), Gaps = 50/223 (22%)
+
+Query  1    GMDTLLILGDSLSAGYRMSASAAWPALLNDKWQSK-------------------------  35
+            G   ++ LGDS++  Y M+    +   L+   Q K                         
+Sbjct  42   GTIKIMPLGDSIT--YGMADEGGYRKYLSYFLQQKGYTNVDLVGPEGKDSASFNYNGQSV  99
+
+Query  36   -TSVVNASISGDTS--------QQGLARLPAL-----LKQHQPRWVLVELGGNDGLRGFQ  81
+                 +A  SG T          Q    L  +     +K++ P  +L+++G ND   G  
+Sbjct  100  KYDDNHAGYSGYTITNLPGGWFGQLNGILETMQGGDYIKKYSPDIILLQIGTNDVSNGH-  158
+
+Query  82   PQQTEQTLRQILQDVKAANAEPLLMQIRLPA-----NYGRRYNE---AFSAIYPKLAKEF  133
+               +E+ L ++L  ++        + +          +G   N     ++ +  K+A ++
+Sbjct  159  LDGSEERLHKLLDYLRENMPSNGKVFLTTIPDLGNSGWGGNSNGDIAKYNELIKKVANDY  218
+
+Query  134  DVPLLPFFLEEVKKKPQWMQDDGIHPNRDAQPFIADWMAKQLQ  176
+                + +              DG+HPN      +  +  +Q++
+Sbjct  219  SSKNVIYADIHSVIDASKDLADGVHPNAGGYEKMGKYWLEQIE  261
+
+
+>sp|O74648|IAH1_SCHPO Isoamyl acetate-hydrolyzing esterase OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=iah1 PE=2 SV=1
+Length=246
+
+ Score = 52.1 bits (123),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 32/187 (17%), Positives = 69/187 (37%), Gaps = 15/187 (8%)
+
+Query  2    MDTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPAL-LK  60
+             + L I+GDS++   +      + A L + +Q +  V     SG TS+  L  LP + L+
+Sbjct  37   FNRLTIIGDSITQ--KGFTPGGYCAELMNFYQRRLRVDVWGFSGYTSRHVLRYLPEIPLE  94
+
+Query  61   QHQPRWVLVELGGNDGLRGF-----QPQQTEQTLRQILQDVKAANAEPLLMQIRLPANYG  115
+                + ++V LG ND             + +  L  + +    +    +   I       
+Sbjct  95   IDSTKLLIVFLGTNDCQLTETGYMCPVDEFKNNLLALTRPFPHSKIIIVSPGICTKDICF  154
+
+Query  116  RRYNEAFSAIYPKL------AKEFDVPLLPFF-LEEVKKKPQWMQDDGIHPNRDAQPFIA  168
+            +R  E +     +       +K     L+  + + +    P+ +  DG+H +      + 
+Sbjct  155  KREQEPYVIAASETVNTLNKSKANSAGLINLYEITKSYPTPELLFTDGLHFSSLGYSLLF  214
+
+Query  169  DWMAKQL  175
+            + +   +
+Sbjct  215  NEIVATI  221
+
+
+>sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / 
+NRRL 194 / M139) OX=227321 GN=AN2528 PE=1 SV=1
+Length=245
+
+ Score = 48.6 bits (114),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 34/214 (16%), Positives = 61/214 (29%), Gaps = 48/214 (22%)
+
+Query  3    DTLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGL--ARLPALLK  60
+             T+ + GDS  A    S++  W   + D       + N +I G +++      R  A+  
+Sbjct  18   QTIYLAGDSTMA----SSTPGWGDYIADSV--SVEISNQAIGGRSARSYTREGRFQAIAD  71
+
+Query  61   QHQP-RWVLVELGGNDG--LRGFQPQ-----------------------QTEQTLRQILQ  94
+              Q   +V++E G NDG  L     +                            +     
+Sbjct  72   VLQAGDYVVIEFGHNDGGSLSNDNGRTDCPGDGDETCETVYNGVAETVLTFPAYIENAAL  131
+
+Query  95   DVKAANAEPLLMQIRLP-----ANYGRRYNEAFSAIYPKLAKEFDVPLLPF------FLE  143
+                  A   L+  + P     +         F       A+   V  +          E
+Sbjct  132  LFLEKGANV-LISSQTPNNPWESGTFSYTPNRFVGYAELAAQRAGVDYVDHGAYTASIFE  190
+
+Query  144  EVK--KKPQWMQDDGIHPNRDAQPFIADWMAKQL  175
+             +       +  +D  H N +    +AD   K +
+Sbjct  191  ALGADTVNSFYPNDHTHTNAEGSSVVADAFLKAV  224
+
+
+>sp|P42969|LIPC_BACSU Spore germination lipase LipC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=lipC PE=2 SV=1
+Length=213
+
+ Score = 47.1 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 36/198 (18%), Positives = 71/198 (36%), Gaps = 31/198 (16%)
+
+Query  7    ILGDSLSAGYRMSA-SAAWPALLNDKWQSKTSVVNA----SISGDTSQQGLARL--PALL  59
+             LGDSL+ G      S  +     D  ++      A    + SG  +++ L  L  P + 
+Sbjct  7    ALGDSLTTGRGSGLFSPGFVQRFGDMMEADLKTRTAINIFARSGLNTEEILGLLSYPYVQ  66
+
+Query  60   KQHQP-RWVLVELGGNDGLRGFQPQQTE--------------QTLRQILQ---DVKAANA  101
+            K  +    + +   GND +      QT               +   +++    ++K  N 
+Sbjct  67   KCIRDADMITITGCGNDLIDSVLAYQTSKDETIFSRVSAHCHENFEKMIAKVAEIKGENP  126
+
+Query  102  EPL------LMQIRLPANYGRRYNEAFSAIYPKLAKEFDVPLLPFFLEEVKKKPQWMQDD  155
+             P       L       +   ++  +F++    LA    V +   +     K+ +++  D
+Sbjct  127  SPYAIRVFNLYNPFPEIDIAGKWITSFNSHLETLASAPHVKIADAYSIFKGKEQEYLSFD  186
+
+Query  156  GIHPNRDAQPFIADWMAK  173
+            G+HPN      +A+ + K
+Sbjct  187  GVHPNSKGYQAMAEAVHK  204
+
+
+>sp|O35264|PA1B2_RAT Platelet-activating factor acetylhydrolase 
+IB subunit beta OS=Rattus norvegicus OX=10116 GN=Pafah1b2 
+PE=1 SV=1
+Length=229
+
+ Score = 45.9 bits (107),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 37/190 (19%), Positives = 72/190 (38%), Gaps = 27/190 (14%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA-LLKQH  62
+             +L +GDS+    +      W  L +         +N  I GDT++  L RL    L+  
+Sbjct  41   DVLFVGDSMVQLMQQY--EIWRELFSPLHA-----LNFGIGGDTTRHVLWRLKNGELENI  93
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLPANYGR----  116
+            +P+ ++V +G N+       ++    +  I+Q +  +   A+ +++ + LP         
+Sbjct  94   KPKVIVVWVGTNN--HENTAEEVAGGIEAIVQLINTRQPQAKIIVLGL-LPRGEKPNPLR  150
+
+Query  117  ----RYNEAFSAIYPKLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDAQPFIAD  169
+                + N+      PKLA   +V LL     F+            D +H        I  
+Sbjct  151  QKNAKVNQLLKVSLPKLA---NVQLLDIDGGFVHSDGAISCHDMFDFLHLTGGGYAKICK  207
+
+Query  170  WMAKQLQPLV  179
+             + + +  L+
+Sbjct  208  PLHELIMQLL  217
+
+
+>sp|Q61206|PA1B2_MOUSE Platelet-activating factor acetylhydrolase 
+IB subunit beta OS=Mus musculus OX=10090 GN=Pafah1b2 PE=1 
+SV=2
+Length=229
+
+ Score = 45.9 bits (107),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 37/190 (19%), Positives = 72/190 (38%), Gaps = 27/190 (14%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA-LLKQH  62
+             +L +GDS+    +      W  L +         +N  I GDT++  L RL    L+  
+Sbjct  41   DVLFVGDSMVQLMQQY--EIWRELFSPLHA-----LNFGIGGDTTRHVLWRLKNGELENI  93
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLPANYGR----  116
+            +P+ ++V +G N+       ++    +  I+Q +  +   A+ +++ + LP         
+Sbjct  94   KPKVIVVWVGTNN--HENTAEEVAGGIEAIVQLINTRQPQAKIIVLGL-LPRGEKPNPLR  150
+
+Query  117  ----RYNEAFSAIYPKLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDAQPFIAD  169
+                + N+      PKLA   +V LL     F+            D +H        I  
+Sbjct  151  QKNAKVNQLLKVSLPKLA---NVQLLDIDGGFVHSDGAISCHDMFDFLHLTGGGYAKICK  207
+
+Query  170  WMAKQLQPLV  179
+             + + +  L+
+Sbjct  208  PLHELIMQLL  217
+
+
+>sp|Q5R4G2|PA1B2_PONAB Platelet-activating factor acetylhydrolase 
+IB subunit beta OS=Pongo abelii OX=9601 GN=PAFAH1B2 PE=2 
+SV=1
+Length=229
+
+ Score = 45.5 bits (106),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 37/190 (19%), Positives = 72/190 (38%), Gaps = 27/190 (14%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA-LLKQH  62
+             +L +GDS+    +      W  L +         +N  I GDT++  L RL    L+  
+Sbjct  41   DVLFVGDSMVQLMQQY--EIWRELFSPLHA-----LNFGIGGDTTRHVLWRLKNGELENI  93
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLPANYGR----  116
+            +P+ ++V +G N+       ++    +  I+Q +  +   A+ +++ + LP         
+Sbjct  94   KPKVIVVWVGTNN--HENTAEEVAGGIEAIVQLINTRQPQAKIIVLGL-LPRGEKPNPLR  150
+
+Query  117  ----RYNEAFSAIYPKLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDAQPFIAD  169
+                + N+      PKLA   +V LL     F+            D +H        I  
+Sbjct  151  QKNAKVNQLLKVSLPKLA---NVQLLDTDGGFVHSDGAISCHDMFDFLHLTGGGYAKICK  207
+
+Query  170  WMAKQLQPLV  179
+             + + +  L+
+Sbjct  208  PLHELIMQLL  217
+
+
+>sp|P68402|PA1B2_HUMAN Platelet-activating factor acetylhydrolase 
+IB subunit beta OS=Homo sapiens OX=9606 GN=PAFAH1B2 PE=1 
+SV=1
+Length=229
+
+ Score = 45.5 bits (106),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 37/190 (19%), Positives = 72/190 (38%), Gaps = 27/190 (14%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA-LLKQH  62
+             +L +GDS+    +      W  L +         +N  I GDT++  L RL    L+  
+Sbjct  41   DVLFVGDSMVQLMQQY--EIWRELFSPLHA-----LNFGIGGDTTRHVLWRLKNGELENI  93
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLPANYGR----  116
+            +P+ ++V +G N+       ++    +  I+Q +  +   A+ +++ + LP         
+Sbjct  94   KPKVIVVWVGTNN--HENTAEEVAGGIEAIVQLINTRQPQAKIIVLGL-LPRGEKPNPLR  150
+
+Query  117  ----RYNEAFSAIYPKLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDAQPFIAD  169
+                + N+      PKLA   +V LL     F+            D +H        I  
+Sbjct  151  QKNAKVNQLLKVSLPKLA---NVQLLDTDGGFVHSDGAISCHDMFDFLHLTGGGYAKICK  207
+
+Query  170  WMAKQLQPLV  179
+             + + +  L+
+Sbjct  208  PLHELIMQLL  217
+
+
+>sp|P68401|PA1B2_BOVIN Platelet-activating factor acetylhydrolase 
+IB subunit beta OS=Bos taurus OX=9913 GN=PAFAH1B2 PE=1 SV=1
+Length=229
+
+ Score = 45.5 bits (106),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 37/190 (19%), Positives = 72/190 (38%), Gaps = 27/190 (14%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPA-LLKQH  62
+             +L +GDS+    +      W  L +         +N  I GDT++  L RL    L+  
+Sbjct  41   DVLFVGDSMVQLMQQY--EIWRELFSPLHA-----LNFGIGGDTTRHVLWRLKNGELENI  93
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLPANYGR----  116
+            +P+ ++V +G N+       ++    +  I+Q +  +   A+ +++ + LP         
+Sbjct  94   KPKVIVVWVGTNN--HENTAEEVAGGIEAIVQLINTRQPQAKIIVLGL-LPRGEKPNPLR  150
+
+Query  117  ----RYNEAFSAIYPKLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDAQPFIAD  169
+                + N+      PKLA   +V LL     F+            D +H        I  
+Sbjct  151  QKNAKVNQLLKVSLPKLA---NVQLLDTDGGFVHSDGAISCHDMFDFLHLTGGGYAKICK  207
+
+Query  170  WMAKQLQPLV  179
+             + + +  L+
+Sbjct  208  PLHELIMQLL  217
+
+
+>sp|Q29460|PA1B3_BOVIN Platelet-activating factor acetylhydrolase 
+IB subunit gamma OS=Bos taurus OX=9913 GN=PAFAH1B3 PE=1 
+SV=1
+Length=232
+
+ Score = 44.4 bits (103),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 37/170 (22%), Positives = 64/170 (38%), Gaps = 19/170 (11%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH-  62
+             ++ +GDSL     M     W  L +         +N  I GD++Q  L RL     +H 
+Sbjct  40   EVVFIGDSLVQL--MHQCEIWRELFSPLHA-----LNFGIGGDSTQHVLWRLENGELEHI  92
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLP---ANYGRR  117
+            +P+ V+V +G N+   G   +Q    ++ I+Q V  +   A  +++ +       N  R 
+Sbjct  93   RPKIVVVWVGTNN--HGHTAEQVTGGIKAIVQLVNERQPQARVVVLGLLPRGQHPNPLRE  150
+
+Query  118  YNEAFSAIYP-KLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDA  163
+             N   + +    LA       L     F+            D +H +R  
+Sbjct  151  KNRRVNELVRAALAGHPRAHFLDADPGFVHSDGTISHHDMYDYLHLSRLG  200
+
+
+>sp|Q15102|PA1B3_HUMAN Platelet-activating factor acetylhydrolase 
+IB subunit gamma OS=Homo sapiens OX=9606 GN=PAFAH1B3 PE=1 
+SV=1
+Length=231
+
+ Score = 43.6 bits (101),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 37/170 (22%), Positives = 63/170 (37%), Gaps = 19/170 (11%)
+
+Query  4    TLLILGDSLSAGYRMSASAAWPALLNDKWQSKTSVVNASISGDTSQQGLARLPALLKQH-  62
+             ++ +GDSL     M     W  L +         +N  I GD +Q  L RL     +H 
+Sbjct  40   EVVFIGDSLVQL--MHQCEIWRELFSPLHA-----LNFGIGGDGTQHVLWRLENGELEHI  92
+
+Query  63   QPRWVLVELGGNDGLRGFQPQQTEQTLRQILQDV--KAANAEPLLMQIRLP---ANYGRR  117
+            +P+ V+V +G N+   G   +Q    ++ I+Q V  +   A  +++ +       N  R 
+Sbjct  93   RPKIVVVWVGTNN--HGHTAEQVTGGIKAIVQLVNERQPQARVVVLGLLPRGQHPNPLRE  150
+
+Query  118  YNEAFSAIYP-KLAKEFDVPLLPF---FLEEVKKKPQWMQDDGIHPNRDA  163
+             N   + +    LA       L     F+            D +H +R  
+Sbjct  151  KNRQVNELVRAALAGHPRAHFLDADPGFVHSDGTISHHDMYDYLHLSRLG  200
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.127    0.306    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10001063266
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

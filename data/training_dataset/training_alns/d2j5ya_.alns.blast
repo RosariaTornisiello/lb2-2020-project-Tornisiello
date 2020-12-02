@@ -1,0 +1,263 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2j5ya_
+
+Length=61
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein OS...  110     6e-30
+sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Strept...  37.7    0.001
+
+
+>sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein 
+OS=Finegoldia magna OX=1260 GN=pab PE=1 SV=1
+Length=387
+
+ Score = 110 bits (276),  Expect = 6e-30, Method: Compositional matrix adjust.
+ Identities = 54/54 (100%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  8    MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  61
+            MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA
+Sbjct  212  MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  265
+
+
+>sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Streptococcus 
+sp. group G OX=1320 GN=spg PE=1 SV=1
+Length=593
+
+ Score = 37.7 bits (86),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 27/51 (53%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD+Y N IN AKTVE V AL +EIL A
+Sbjct  248  TVKSIELAEAKVLANRELDKYGV-SDYYKNLINNAKTVEGVKALIDEILAA  297
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.128    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4958665506
+Results from round 2
+
+
+Query= d2j5ya_
+
+Length=61
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein OS...  80.1    1e-18
+sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Strept...  67.8    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|P06654|SPG1_STRSG Immunoglobulin G-binding protein G OS=Strept...  65.5    3e-13
+
+
+>sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein 
+OS=Finegoldia magna OX=1260 GN=pab PE=1 SV=1
+Length=387
+
+ Score = 80.1 bits (196),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  8    MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  61
+            MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA
+Sbjct  212  MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  265
+
+
+>sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Streptococcus 
+sp. group G OX=1320 GN=spg PE=1 SV=1
+Length=593
+
+ Score = 67.8 bits (164),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/51 (53%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD+Y N IN AKTVE V AL +EIL A
+Sbjct  248  TVKSIELAEAKVLANRELDKYGV-SDYYKNLINNAKTVEGVKALIDEILAA  297
+
+
+ Score = 57.0 bits (136),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD++ N IN AKTVE V  L+ +++++
+Sbjct  173  TVKSIELAEAKVLANRELDKYGV-SDYHKNLINNAKTVEGVKDLQAQVVES  222
+
+
+ Score = 38.1 bits (87),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 24/36 (67%), Gaps = 1/36 (3%)
+
+Query  24   AELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+             E  K G+ SD+Y N IN AKTVE V  L+ +++++
+Sbjct  113  KEFNKYGV-SDYYKNLINNAKTVEGVKDLQAQVVES  147
+
+
+>sp|P06654|SPG1_STRSG Immunoglobulin G-binding protein G OS=Streptococcus 
+sp. group G OX=1320 GN=spg PE=1 SV=1
+Length=448
+
+ Score = 65.5 bits (158),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 25/51 (49%), Positives = 30/51 (59%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD++ N IN AKTVE V  L +EIL A
+Sbjct  173  TVKSIELAEAKVLANRELDKYGV-SDYHKNLINNAKTVEGVKELIDEILAA  222
+
+
+ Score = 38.5 bits (88),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/36 (42%), Positives = 24/36 (67%), Gaps = 1/36 (3%)
+
+Query  24   AELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+             E  K G+ SD+Y N IN AKTVE +  L+ +++++
+Sbjct  113  KEFNKYGV-SDYYKNLINNAKTVEGIKDLQAQVVES  147
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.344    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4958665506
+Results from round 3
+
+
+Query= d2j5ya_
+
+Length=61
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein OS...  80.1    1e-18
+sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Strept...  67.8    3e-14
+sp|P06654|SPG1_STRSG Immunoglobulin G-binding protein G OS=Strept...  65.5    3e-13
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q51911|PAB_FINMA Peptostreptococcal albumin-binding protein 
+OS=Finegoldia magna OX=1260 GN=pab PE=1 SV=1
+Length=387
+
+ Score = 80.1 bits (196),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%), Gaps = 0/54 (0%)
+
+Query  8    MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  61
+            MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA
+Sbjct  212  MTIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKAHA  265
+
+
+>sp|P19909|SPG2_STRSG Immunoglobulin G-binding protein G OS=Streptococcus 
+sp. group G OX=1320 GN=spg PE=1 SV=1
+Length=593
+
+ Score = 67.8 bits (164),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/51 (53%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD+Y N IN AKTVE V AL +EIL A
+Sbjct  248  TVKSIELAEAKVLANRELDKYGV-SDYYKNLINNAKTVEGVKALIDEILAA  297
+
+
+ Score = 57.0 bits (136),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD++ N IN AKTVE V  L+ +++++
+Sbjct  173  TVKSIELAEAKVLANRELDKYGV-SDYHKNLINNAKTVEGVKDLQAQVVES  222
+
+
+ Score = 38.1 bits (87),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 24/36 (67%), Gaps = 1/36 (3%)
+
+Query  24   AELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+             E  K G+ SD+Y N IN AKTVE V  L+ +++++
+Sbjct  113  KEFNKYGV-SDYYKNLINNAKTVEGVKDLQAQVVES  147
+
+
+>sp|P06654|SPG1_STRSG Immunoglobulin G-binding protein G OS=Streptococcus 
+sp. group G OX=1320 GN=spg PE=1 SV=1
+Length=448
+
+ Score = 65.5 bits (158),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 25/51 (49%), Positives = 30/51 (59%), Gaps = 1/51 (2%)
+
+Query  9    TIDQWLLKNAKEDAIAELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+            T+    L  AK  A  EL K G+ SD++ N IN AKTVE V  L +EIL A
+Sbjct  173  TVKSIELAEAKVLANRELDKYGV-SDYHKNLINNAKTVEGVKELIDEILAA  222
+
+
+ Score = 38.5 bits (88),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/36 (42%), Positives = 24/36 (67%), Gaps = 1/36 (3%)
+
+Query  24   AELKKAGITSDFYFNAINKAKTVEEVNALKNEILKA  59
+             E  K G+ SD+Y N IN AKTVE +  L+ +++++
+Sbjct  113  KEFNKYGV-SDYYKNLINNAKTVEGIKDLQAQVVES  147
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.344    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4958665506
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

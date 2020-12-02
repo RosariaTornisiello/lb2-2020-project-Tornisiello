@@ -1,0 +1,157 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2fyxa1
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P59696|T200_SALTY Transposase for insertion sequence element I...  70.1    5e-15
+sp|P59697|T200_SALTI Transposase for insertion sequence element I...  70.1    5e-15
+
+
+>sp|P59696|T200_SALTY Transposase for insertion sequence element 
+IS200 OS=Salmonella typhimurium (strain LT2 / SGSC1412 / 
+ATCC 700720) OX=99287 GN=tnpA1 PE=3 SV=1
+Length=152
+
+ Score = 70.1 bits (170),  Expect = 5e-15, Method: Compositional matrix adjust.
+ Identities = 37/119 (31%), Positives = 62/119 (52%), Gaps = 1/119 (1%)
+
+Query  9    YKLEYHLIWATKYRHQVLVDEVADGLKDILRDIATQNGLELVALEVMPDYVHLLLGATPQ  68
+            +  +YH+++A KYR Q    E    +  ILR +     + ++  E   D++H+LL   P+
+Sbjct  12   WNCKYHIVFAPKYRRQAFYGEKRRAVGSILRKLCEWKNVRILEAECCADHIHMLLEIPPK  71
+
+Query  69   HVIPDFVKALKGASARRMFSAFPHLKQPHWGGNLWNPSYCVLTVSEHTRAQIQQYIENQ  127
+              +  F+  LKG S+  ++  F  LK  +     W   Y V TV ++T A+IQ YI++Q
+Sbjct  72   MSVSSFMGYLKGKSSLMLYEQFGDLKFKYRNREFWCRGYYVDTVGKNT-AKIQDYIKHQ  129
+
+
+>sp|P59697|T200_SALTI Transposase for insertion sequence element 
+IS200 OS=Salmonella typhi OX=90370 GN=tnpA1 PE=3 SV=1
+Length=152
+
+ Score = 70.1 bits (170),  Expect = 5e-15, Method: Compositional matrix adjust.
+ Identities = 37/119 (31%), Positives = 62/119 (52%), Gaps = 1/119 (1%)
+
+Query  9    YKLEYHLIWATKYRHQVLVDEVADGLKDILRDIATQNGLELVALEVMPDYVHLLLGATPQ  68
+            +  +YH+++A KYR Q    E    +  ILR +     + ++  E   D++H+LL   P+
+Sbjct  12   WNCKYHIVFAPKYRRQAFYGEKRRAVGSILRKLCEWKNVRILEAECCADHIHMLLEIPPK  71
+
+Query  69   HVIPDFVKALKGASARRMFSAFPHLKQPHWGGNLWNPSYCVLTVSEHTRAQIQQYIENQ  127
+              +  F+  LKG S+  ++  F  LK  +     W   Y V TV ++T A+IQ YI++Q
+Sbjct  72   MSVSSFMGYLKGKSSLMLYEQFGDLKFKYRNREFWCRGYYVDTVGKNT-AKIQDYIKHQ  129
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.137    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 2
+
+
+Query= d2fyxa1
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P59696|T200_SALTY Transposase for insertion sequence element I...  198     2e-65
+sp|P59697|T200_SALTI Transposase for insertion sequence element I...  198     2e-65
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P59696|T200_SALTY Transposase for insertion sequence element 
+IS200 OS=Salmonella typhimurium (strain LT2 / SGSC1412 / 
+ATCC 700720) OX=99287 GN=tnpA1 PE=3 SV=1
+Length=152
+
+ Score = 198 bits (503),  Expect = 2e-65, Method: Composition-based stats.
+ Identities = 37/119 (31%), Positives = 62/119 (52%), Gaps = 1/119 (1%)
+
+Query  9    YKLEYHLIWATKYRHQVLVDEVADGLKDILRDIATQNGLELVALEVMPDYVHLLLGATPQ  68
+            +  +YH+++A KYR Q    E    +  ILR +     + ++  E   D++H+LL   P+
+Sbjct  12   WNCKYHIVFAPKYRRQAFYGEKRRAVGSILRKLCEWKNVRILEAECCADHIHMLLEIPPK  71
+
+Query  69   HVIPDFVKALKGASARRMFSAFPHLKQPHWGGNLWNPSYCVLTVSEHTRAQIQQYIENQ  127
+              +  F+  LKG S+  ++  F  LK  +     W   Y V TV ++T A+IQ YI++Q
+Sbjct  72   MSVSSFMGYLKGKSSLMLYEQFGDLKFKYRNREFWCRGYYVDTVGKNT-AKIQDYIKHQ  129
+
+
+>sp|P59697|T200_SALTI Transposase for insertion sequence element 
+IS200 OS=Salmonella typhi OX=90370 GN=tnpA1 PE=3 SV=1
+Length=152
+
+ Score = 198 bits (503),  Expect = 2e-65, Method: Composition-based stats.
+ Identities = 37/119 (31%), Positives = 62/119 (52%), Gaps = 1/119 (1%)
+
+Query  9    YKLEYHLIWATKYRHQVLVDEVADGLKDILRDIATQNGLELVALEVMPDYVHLLLGATPQ  68
+            +  +YH+++A KYR Q    E    +  ILR +     + ++  E   D++H+LL   P+
+Sbjct  12   WNCKYHIVFAPKYRRQAFYGEKRRAVGSILRKLCEWKNVRILEAECCADHIHMLLEIPPK  71
+
+Query  69   HVIPDFVKALKGASARRMFSAFPHLKQPHWGGNLWNPSYCVLTVSEHTRAQIQQYIENQ  127
+              +  F+  LKG S+  ++  F  LK  +     W   Y V TV ++T A+IQ YI++Q
+Sbjct  72   MSVSSFMGYLKGKSSLMLYEQFGDLKFKYRNREFWCRGYYVDTVGKNT-AKIQDYIKHQ  129
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.396    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

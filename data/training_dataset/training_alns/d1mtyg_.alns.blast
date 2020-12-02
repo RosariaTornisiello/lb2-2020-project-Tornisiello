@@ -1,0 +1,173 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1mtyg_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P11987|MEMG_METCA Methane monooxygenase component A gamma chai...  334     1e-118
+sp|P27355|MEMG_METTR Methane monooxygenase component A gamma chai...  166     6e-52 
+
+
+>sp|P11987|MEMG_METCA Methane monooxygenase component A gamma 
+chain OS=Methylococcus capsulatus (strain ATCC 33009 / NCIMB 
+11132 / Bath) OX=243233 GN=mmoZ PE=1 SV=4
+Length=170
+
+ Score = 334 bits (857),  Expect = 1e-118, Method: Compositional matrix adjust.
+ Identities = 160/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    LGIHSNDTRDAWVNKIAHVNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK  60
+            LGIHSNDTRDAWVNKIA +NTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK
+Sbjct  4    LGIHSNDTRDAWVNKIAQLNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK  63
+
+Query  61   VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM  120
+            VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM
+Sbjct  64   VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM  123
+
+Query  121  PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  162
+            PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH
+Sbjct  124  PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  165
+
+
+>sp|P27355|MEMG_METTR Methane monooxygenase component A gamma 
+chain OS=Methylosinus trichosporium OX=426 GN=mmoZ PE=1 SV=3
+Length=169
+
+ Score = 166 bits (419),  Expect = 6e-52, Method: Compositional matrix adjust.
+ Identities = 79/160 (49%), Positives = 109/160 (68%), Gaps = 0/160 (0%)
+
+Query  3    IHSNDTRDAWVNKIAHVNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEKVA  62
+            IH N  R  W  KIA + ++++A + ++ FR+ +T+PFR SY++D DY +IE K+EEK++
+Sbjct  7    IHDNSIRTEWEAKIAKLTSVDQATKFIQDFRLAYTSPFRKSYDIDVDYQYIERKIEEKLS  66
+
+Query  63   VLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIMPV  122
+            VLK       D   K   GED  +V    +AK+ AAK K+EA+ IHI FRQ YKPP++PV
+Sbjct  67   VLKTEKLPVADLITKATTGEDRAAVEATWIAKIKAAKSKYEADGIHIEFRQLYKPPVLPV  126
+
+Query  123  NYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  162
+            N FL  +  LGT LME+RN +YY TPLE LRK+ GV+V+H
+Sbjct  127  NVFLRTDAALGTVLMEIRNTDYYGTPLEGLRKEPGVKVLH  166
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.134    0.399    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+Results from round 2
+
+
+Query= d1mtyg_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P11987|MEMG_METCA Methane monooxygenase component A gamma chai...  293     4e-102
+sp|P27355|MEMG_METTR Methane monooxygenase component A gamma chai...  260     4e-89 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P11987|MEMG_METCA Methane monooxygenase component A gamma 
+chain OS=Methylococcus capsulatus (strain ATCC 33009 / NCIMB 
+11132 / Bath) OX=243233 GN=mmoZ PE=1 SV=4
+Length=170
+
+ Score = 293 bits (749),  Expect = 4e-102, Method: Composition-based stats.
+ Identities = 160/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    LGIHSNDTRDAWVNKIAHVNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK  60
+            LGIHSNDTRDAWVNKIA +NTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK
+Sbjct  4    LGIHSNDTRDAWVNKIAQLNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEK  63
+
+Query  61   VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM  120
+            VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM
+Sbjct  64   VAVLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIM  123
+
+Query  121  PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  162
+            PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH
+Sbjct  124  PVNYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  165
+
+
+>sp|P27355|MEMG_METTR Methane monooxygenase component A gamma 
+chain OS=Methylosinus trichosporium OX=426 GN=mmoZ PE=1 SV=3
+Length=169
+
+ Score = 260 bits (664),  Expect = 4e-89, Method: Composition-based stats.
+ Identities = 79/160 (49%), Positives = 109/160 (68%), Gaps = 0/160 (0%)
+
+Query  3    IHSNDTRDAWVNKIAHVNTLEKAAEMLKQFRMDHTTPFRNSYELDNDYLWIEAKLEEKVA  62
+            IH N  R  W  KIA + ++++A + ++ FR+ +T+PFR SY++D DY +IE K+EEK++
+Sbjct  7    IHDNSIRTEWEAKIAKLTSVDQATKFIQDFRLAYTSPFRKSYDIDVDYQYIERKIEEKLS  66
+
+Query  63   VLKARAFNEVDFRHKTAFGEDAKSVLDGTVAKMNAAKDKWEAEKIHIGFRQAYKPPIMPV  122
+            VLK       D   K   GED  +V    +AK+ AAK K+EA+ IHI FRQ YKPP++PV
+Sbjct  67   VLKTEKLPVADLITKATTGEDRAAVEATWIAKIKAAKSKYEADGIHIEFRQLYKPPVLPV  126
+
+Query  123  NYFLDGERQLGTRLMELRNLNYYDTPLEELRKQRGVRVVH  162
+            N FL  +  LGT LME+RN +YY TPLE LRK+ GV+V+H
+Sbjct  127  NVFLRTDAALGTVLMEIRNTDYYGTPLEGLRKEPGVKVLH  166
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0402    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

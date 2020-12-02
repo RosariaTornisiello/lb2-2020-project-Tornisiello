@@ -1,0 +1,1092 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2q66a3
+
+Length=172
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisia...  353     4e-120
+sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans ...  138     1e-37 
+sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albica...  112     4e-28 
+sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyce...  110     2e-27 
+sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideu...  61.6    2e-10 
+sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus OX...  49.7    3e-06 
+sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens OX...  49.3    4e-06 
+sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus OX=...  48.5    8e-06 
+sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens OX=...  48.1    1e-05 
+sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus OX...  47.0    2e-05 
+sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens OX...  46.6    3e-05 
+sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevi...  46.6    3e-05 
+sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus OX=9...  46.6    3e-05 
+sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xe...  45.8    6e-05 
+
+
+>sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=PAP1 PE=1 SV=1
+Length=568
+
+ Score = 353 bits (906),  Expect = 4e-120, Method: Compositional matrix adjust.
+ Identities = 172/178 (97%), Positives = 172/178 (97%), Gaps = 6/178 (3%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES
+Sbjct  352  NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  411
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN-EEESIKDAPKAYLSTMYIGLDFN  119
+            SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN EEESIKDAPKAYLSTMYIGLDFN
+Sbjct  412  SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENKEEESIKDAPKAYLSTMYIGLDFN  471
+
+Query  120  I-----KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            I     KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP
+Sbjct  472  IENKKEKVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  529
+
+
+>sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPA PE=3 SV=1
+Length=555
+
+ Score = 138 bits (347),  Expect = 1e-37, Method: Compositional matrix adjust.
+ Identities = 72/179 (40%), Positives = 117/179 (65%), Gaps = 9/179 (5%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFFFRYKFYL I A TR +  +HLK+SG+VESK+RLLV KLE++ GI++AHP+ K FE+
+Sbjct  351  HDFFFRYKFYLCIVAATRSTYAEHLKYSGMVESKLRLLVQKLELVEGIELAHPYVKSFEN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNA-LKLVTDENEEESIKDAPKAYLSTMYIGLDFN  119
+             Y C   ++   I + YG+ K +  +   L    ++N +E++++  + +++ ++IGL  +
+Sbjct  411  GYYCDNAEEAHEIMNLYGTSKGDDRVKGVLHAENNDNNKENVENKVELHMTKLFIGLKLD  470
+
+Query  120  I------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            +      K+DI  PC EF N+C+ + +D+   K F + ++ VK YDL D+V+ + E RP
+Sbjct  471  LSKEGEKKLDIQYPCAEFFNICKGW-QDFDSEKHF-IQIKNVKLYDLSDDVYVDGETRP  527
+
+
+>sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPALPHA 
+PE=3 SV=1
+Length=558
+
+ Score = 112 bits (280),  Expect = 4e-28, Method: Compositional matrix adjust.
+ Identities = 68/183 (37%), Positives = 107/183 (58%), Gaps = 20/183 (11%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            + FF++YKFYL + A +  S E+H KWSG +ESK+R LV+KLEV  G++IAHP+ K F +
+Sbjct  351  HSFFYKYKFYLCVVAASIDSAEEHKKWSGFIESKLRQLVLKLEVAEGVEIAHPYVKDFSN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI  120
+            ++    + + E I + YG+   E  L  L     + ++E  K   K  L+  YIGLD N+
+Sbjct  411  TFIL-DDKNAEDIINSYGTLSGEDFLRTLHSSDSDKDDEEFK---KIRLTKYYIGLDLNL  466
+
+Query  121  --------KVDIHIPCTEFVNLCR---SFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE  169
+                    K+DI  PC EF ++C+   SF E      V  + ++ VK ++L ++V+++ E
+Sbjct  467  TKSSDGVRKLDIQYPCAEFYSICKGSTSFTEG-----VNFIQIKNVKLHELSNDVYEDGE  521
+
+Query  170  KRP  172
+            +RP
+Sbjct  522  ERP  524
+
+
+>sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pla1 PE=1 
+SV=1
+Length=566
+
+ Score = 110 bits (274),  Expect = 2e-27, Method: Compositional matrix adjust.
+ Identities = 71/193 (37%), Positives = 102/193 (53%), Gaps = 24/193 (12%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFF RYK YL ITA  + ++ Q LKW+GLVESK+R LV +LE++  I +AHPF K F+ 
+Sbjct  351  HDFFHRYKHYLTITAAAKTAEAQ-LKWAGLVESKLRHLVTRLELVDAIALAHPFNKGFDK  409
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDE-NEEESIKDAPKA------------  107
+             Y C +E++ + +           + +  KL  D  NEE++     KA            
+Sbjct  410  VYNCSSEEEAQQVASGVTLEVAYESTDHEKLANDTVNEEKADNTESKADGSENGEKQIFP  469
+
+Query  108  -YLSTMYIGLDFNIK-------VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYD  159
+             Y +T YIGL+   K       +DI  P  EF  LC+ +  D  D  + N+ ++  K   
+Sbjct  470  VYTTTCYIGLELEKKKGHPIKRLDISWPTQEFYELCKKW--DKYDDTLMNVFIKNTKNTA  527
+
+Query  160  LPDEVFDENEKRP  172
+            LPDEVF+  E+RP
+Sbjct  528  LPDEVFEPGEERP  540
+
+
+>sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideum 
+OX=44689 GN=papA PE=3 SV=1
+Length=809
+
+ Score = 61.6 bits (148),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 45/179 (25%), Positives = 73/179 (41%), Gaps = 46/179 (26%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            DFF RY FY+EI  Y+  ++E   KW G +ESK+R L+  LE    +K A P+ K F ++
+Sbjct  398  DFFTRYSFYIEIDCYSM-NEEDSRKWEGWIESKLRFLISNLESTPKMKFAVPYPKGFTNN  456
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI-  120
+                              HK                     + P    ++ ++GL FN  
+Sbjct  457  L-----------------HKA--------------------NNPDQICTSFFMGLSFNFS  479
+
+Query  121  -------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+                    VD+    TEF  + + +     +    ++ ++++K   LP  V DE  + P
+Sbjct  480  NTPGADKSVDLTKAVTEFTGIIKDWLRTQPNPDTMDIKVQYIKKKQLPAFVKDEGPEEP  538
+
+
+>sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus 
+OX=10090 GN=Papolg PE=1 SV=1
+Length=739
+
+ Score = 49.7 bits (117),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 24/51 (47%), Positives = 36/51 (71%), Gaps = 1/51 (2%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAH  52
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAH  414
+
+
+>sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens 
+OX=9606 GN=PAPOLG PE=1 SV=2
+Length=736
+
+ Score = 49.3 bits (116),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 24/51 (47%), Positives = 36/51 (71%), Gaps = 1/51 (2%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAH  52
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAH  414
+
+
+>sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus 
+OX=10090 GN=Papolb PE=1 SV=2
+Length=641
+
+ Score = 48.5 bits (114),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 27/63 (43%), Positives = 40/63 (63%), Gaps = 5/63 (8%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAH----PFTKPF  58
+            FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH     F  P 
+Sbjct  367  FFQKYKHYIVLLA-SAPTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAPK  425
+
+Query  59   ESS  61
+            E++
+Sbjct  426  ETA  428
+
+
+>sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens 
+OX=9606 GN=PAPOLB PE=2 SV=1
+Length=636
+
+ Score = 48.1 bits (113),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 26/72 (36%), Positives = 43/72 (60%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+             FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  SFFQKYKHYIVLLA-SASTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI  73
+               P  +++  +
+Sbjct  425  KENPDMEEFRTM  436
+
+
+>sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus 
+OX=10090 GN=Papola PE=1 SV=4
+Length=739
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 43/72 (60%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI  73
+               P  +++  +
+Sbjct  425  KESPDREEFRTM  436
+
+
+>sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens 
+OX=9606 GN=PAPOLA PE=1 SV=4
+Length=745
+
+ Score = 46.6 bits (109),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 44/72 (61%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI  73
+               P ++++  +
+Sbjct  425  KENPDKEEFRTM  436
+
+
+>sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevis 
+OX=8355 GN=papola-b PE=2 SV=1
+Length=484
+
+ Score = 46.6 bits (109),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 27/64 (42%), Positives = 40/64 (63%), Gaps = 5/64 (8%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAH----PFTKP  57
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH     F  P
+Sbjct  116  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPSP  174
+
+Query  58   FESS  61
+             E+S
+Sbjct  175  SENS  178
+
+
+>sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus 
+OX=9913 GN=PAPOLA PE=1 SV=3
+Length=739
+
+ Score = 46.6 bits (109),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 44/72 (61%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI  73
+               P ++++  +
+Sbjct  425  KENPDKEEFRTM  436
+
+
+>sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xenopus 
+laevis OX=8355 GN=papola-a PE=2 SV=1
+Length=715
+
+ Score = 45.8 bits (107),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 26/67 (39%), Positives = 42/67 (63%), Gaps = 5/67 (7%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   +    S
+Sbjct  348  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPR----S  402
+
+Query  62   YCCPTED  68
+            +  P+E+
+Sbjct  403  FPAPSEN  409
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.416    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8733322852
+Results from round 2
+
+
+Query= d2q66a3
+
+Length=172
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisia...  231     1e-72
+sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans ...  225     3e-70
+sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyce...  205     2e-62
+sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albica...  203     4e-62
+sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideu...  159     1e-44
+sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens OX=...  109     8e-27
+sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus OX...  108     2e-26
+sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens OX...  107     2e-26
+sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus OX=9...  107     3e-26
+sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus OX=...  106     7e-26
+sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xe...  101     4e-24
+sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevi...  99.5    1e-23
+sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens OX...  96.8    2e-22
+sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus OX...  96.4    2e-22
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9LMT2|PAPS1_ARATH Nuclear poly(A) polymerase 1 OS=Arabidopsis...  59.4    1e-09
+sp|Q8VYW1|PAPS4_ARATH Nuclear poly(A) polymerase 4 OS=Arabidopsis...  56.7    1e-08
+sp|O82312|PAPS2_ARATH Nuclear poly(A) polymerase 2 OS=Arabidopsis...  55.2    4e-08
+
+
+>sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=PAP1 PE=1 SV=1
+Length=568
+
+ Score = 231 bits (589),  Expect = 1e-72, Method: Composition-based stats.
+ Identities = 169/175 (97%), Positives = 169/175 (97%), Gaps = 6/175 (3%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES
+Sbjct  352  NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  411
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN-EEESIKDAPKAYLSTMYIGLDFN  119
+            SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN EEESIKDAPKAYLSTMYIGLDFN
+Sbjct  412  SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENKEEESIKDAPKAYLSTMYIGLDFN  471
+
+Query  120  I-----KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE  169
+            I     KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE
+Sbjct  472  IENKKEKVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE  526
+
+
+>sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPA PE=3 SV=1
+Length=555
+
+ Score = 225 bits (572),  Expect = 3e-70, Method: Composition-based stats.
+ Identities = 72/179 (40%), Positives = 117/179 (65%), Gaps = 9/179 (5%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFFFRYKFYL I A TR +  +HLK+SG+VESK+RLLV KLE++ GI++AHP+ K FE+
+Sbjct  351  HDFFFRYKFYLCIVAATRSTYAEHLKYSGMVESKLRLLVQKLELVEGIELAHPYVKSFEN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNA-LKLVTDENEEESIKDAPKAYLSTMYIGLDFN  119
+             Y C   ++   I + YG+ K +  +   L    ++N +E++++  + +++ ++IGL  +
+Sbjct  411  GYYCDNAEEAHEIMNLYGTSKGDDRVKGVLHAENNDNNKENVENKVELHMTKLFIGLKLD  470
+
+Query  120  I------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            +      K+DI  PC EF N+C+ + +D+   K F + ++ VK YDL D+V+ + E RP
+Sbjct  471  LSKEGEKKLDIQYPCAEFFNICKGW-QDFDSEKHF-IQIKNVKLYDLSDDVYVDGETRP  527
+
+
+>sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pla1 PE=1 
+SV=1
+Length=566
+
+ Score = 205 bits (520),  Expect = 2e-62, Method: Composition-based stats.
+ Identities = 71/193 (37%), Positives = 102/193 (53%), Gaps = 24/193 (12%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFF RYK YL ITA  + ++ Q LKW+GLVESK+R LV +LE++  I +AHPF K F+ 
+Sbjct  351  HDFFHRYKHYLTITAAAKTAEAQ-LKWAGLVESKLRHLVTRLELVDAIALAHPFNKGFDK  409
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDE-NEEESIKDAPKA------------  107
+             Y C +E++ + +           + +  KL  D  NEE++     KA            
+Sbjct  410  VYNCSSEEEAQQVASGVTLEVAYESTDHEKLANDTVNEEKADNTESKADGSENGEKQIFP  469
+
+Query  108  -YLSTMYIGLDFNIK-------VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYD  159
+             Y +T YIGL+   K       +DI  P  EF  LC+ +  D  D  + N+ ++  K   
+Sbjct  470  VYTTTCYIGLELEKKKGHPIKRLDISWPTQEFYELCKKW--DKYDDTLMNVFIKNTKNTA  527
+
+Query  160  LPDEVFDENEKRP  172
+            LPDEVF+  E+RP
+Sbjct  528  LPDEVFEPGEERP  540
+
+
+>sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPALPHA 
+PE=3 SV=1
+Length=558
+
+ Score = 203 bits (517),  Expect = 4e-62, Method: Composition-based stats.
+ Identities = 65/180 (36%), Positives = 104/180 (58%), Gaps = 14/180 (8%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            + FF++YKFYL + A +  S E+H KWSG +ESK+R LV+KLEV  G++IAHP+ K F +
+Sbjct  351  HSFFYKYKFYLCVVAASIDSAEEHKKWSGFIESKLRQLVLKLEVAEGVEIAHPYVKDFSN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI  120
+            ++    + + E I + YG+   E  L  L     + ++E  K   K  L+  YIGLD N+
+Sbjct  411  TFIL-DDKNAEDIINSYGTLSGEDFLRTLHSSDSDKDDEEFK---KIRLTKYYIGLDLNL  466
+
+Query  121  --------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+                    K+DI  PC EF ++C+          V  + ++ VK ++L ++V+++ E+RP
+Sbjct  467  TKSSDGVRKLDIQYPCAEFYSICKG--STSFTEGVNFIQIKNVKLHELSNDVYEDGEERP  524
+
+
+>sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideum 
+OX=44689 GN=papA PE=3 SV=1
+Length=809
+
+ Score = 159 bits (403),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 45/179 (25%), Positives = 73/179 (41%), Gaps = 46/179 (26%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            DFF RY FY+EI  Y+  ++E   KW G +ESK+R L+  LE    +K A P+ K F ++
+Sbjct  398  DFFTRYSFYIEIDCYSM-NEEDSRKWEGWIESKLRFLISNLESTPKMKFAVPYPKGFTNN  456
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                              HK                     + P    ++ ++GL FN  
+Sbjct  457  L-----------------HKA--------------------NNPDQICTSFFMGLSFNFS  479
+
+Query  122  --------VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+                    VD+    TEF  + + +     +    ++ ++++K   LP  V DE  + P
+Sbjct  480  NTPGADKSVDLTKAVTEFTGIIKDWLRTQPNPDTMDIKVQYIKKKQLPAFVKDEGPEEP  538
+
+
+>sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens 
+OX=9606 GN=PAPOLB PE=2 SV=1
+Length=636
+
+ Score = 109 bits (271),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 33/119 (28%), Positives = 60/119 (50%), Gaps = 3/119 (3%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+             FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  SFFQKYKHYIVLLA-SASTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI-QDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMY-IGLDF  118
+               P  +++  +     G  K + +      +T + +  +     +A  S M+ +G+  
+Sbjct  425  KENPDMEEFRTMWVIGLGLKKPDNSEILSIDLTYDIQSFTDTVYRQAVNSKMFEMGMKI  483
+
+
+>sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus 
+OX=10090 GN=Papola PE=1 SV=4
+Length=739
+
+ Score = 108 bits (269),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 34/122 (28%), Positives = 63/122 (52%), Gaps = 5/122 (4%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI-QDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI  120
+               P  +++  +        KTE + N    +T + +  +     +A  S M+   + ++
+Sbjct  425  KESPDREEFRTMWVIGLVFKKTENSENLSVDLTYDIQSFTDTVYRQAINSKMF---ELDM  481
+
+Query  121  KV  122
+            K+
+Sbjct  482  KI  483
+
+
+>sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens 
+OX=9606 GN=PAPOLA PE=1 SV=4
+Length=745
+
+ Score = 107 bits (267),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 63/160 (39%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+               P ++++  +            +  L     EN E                    N+ 
+Sbjct  425  KENPDKEEFRTM-----------WVIGLVFKKTENSE--------------------NLS  453
+
+Query  122  VDIHIPCTEFVN-LCRSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F + + R             +A   VK   L
+Sbjct  454  VDLTYDIQSFTDTVYRQAINSKMFEVDMKIAAMHVKRKQL  493
+
+
+>sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus 
+OX=9913 GN=PAPOLA PE=1 SV=3
+Length=739
+
+ Score = 107 bits (266),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 63/160 (39%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+               P ++++  +            +  L     EN E                    N+ 
+Sbjct  425  KENPDKEEFRTM-----------WVIGLVFKKTENSE--------------------NLS  453
+
+Query  122  VDIHIPCTEFVN-LCRSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F + + R             +A   VK   L
+Sbjct  454  VDLTYDIQSFTDTVYRQAINSKMFEVDMKIAAMHVKRKQL  493
+
+
+>sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus 
+OX=10090 GN=Papolb PE=1 SV=2
+Length=641
+
+ Score = 106 bits (264),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 43/72 (60%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+             FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  SFFQKYKHYIVLLA-SAPTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI  73
+                 ++++  +
+Sbjct  425  KETADKEEFRTM  436
+
+
+>sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xenopus 
+laevis OX=8355 GN=papola-a PE=2 SV=1
+Length=715
+
+ Score = 101 bits (250),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 37/160 (23%), Positives = 61/160 (38%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  348  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPRSFPAP  406
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                 ++++  +            +  L     EN E                    N+ 
+Sbjct  407  SENMEKEEFRTM-----------WVIGLVFKKMENSE--------------------NLS  435
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F +   R             +A   VK   L
+Sbjct  436  VDLTYDIQSFTDTVDRQAINSKMFETEMKIAAMHVKRKQL  475
+
+
+>sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevis 
+OX=8355 GN=papola-b PE=2 SV=1
+Length=484
+
+ Score = 99.5 bits (246),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 43/72 (60%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F S 
+Sbjct  116  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPSP  174
+
+Query  62   YCCPTEDDYEMI  73
+                 ++++  +
+Sbjct  175  SENSEKEEFRTM  186
+
+
+>sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens 
+OX=9606 GN=PAPOLG PE=1 SV=2
+Length=736
+
+ Score = 96.8 bits (239),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 26/72 (36%), Positives = 44/72 (61%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH   + F  +
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAHVNPQSFPGN  423
+
+Query  62   YCCPTEDDYEMI  73
+                 +++Y  +
+Sbjct  424  KEHHKDNNYVSM  435
+
+
+>sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus 
+OX=10090 GN=Papolg PE=1 SV=1
+Length=739
+
+ Score = 96.4 bits (238),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 26/72 (36%), Positives = 43/72 (60%), Gaps = 1/72 (1%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH   + F  +
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAHVNPQSFPGN  423
+
+Query  62   YCCPTEDDYEMI  73
+                  ++Y  +
+Sbjct  424  KEHHKANNYVSM  435
+
+
+>sp|Q9LMT2|PAPS1_ARATH Nuclear poly(A) polymerase 1 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS1 PE=1 SV=1
+Length=713
+
+ Score = 59.4 bits (142),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 35/170 (21%), Positives = 57/170 (34%), Gaps = 40/170 (24%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESSY  62
+            FF  YK YL+I   +  + +   KW G VES++R L +K+E    +   HP    F+ + 
+Sbjct  359  FFEAYKNYLQID-ISAANVDDLRKWKGWVESRLRQLTLKIERHFKMLHCHPHPHDFQDTS  417
+
+Query  63   CCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIKV  122
+                   +  +Q K G    E                                     + 
+Sbjct  418  RPLHCSYFMGLQRKQGVPAAEGE-----------------------------------QF  442
+
+Query  123  DIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            DI     EF +   ++           +++  +K   LP+ VF     RP
+Sbjct  443  DIRRTVEEFKHTVNAYTLWIPG---MEISVGHIKRRSLPNFVF-PGGVRP  488
+
+
+>sp|Q8VYW1|PAPS4_ARATH Nuclear poly(A) polymerase 4 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS4 PE=1 SV=1
+Length=741
+
+ Score = 56.7 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 34/171 (20%), Positives = 54/171 (32%), Gaps = 39/171 (23%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEV-LAGIKIAHPFTKPFESS  61
+            FF  YK YL++      ++   L W G VES+ R L +K+E    G+ + HP       +
+Sbjct  369  FFEAYKNYLQVDIVAADAE-DLLAWKGWVESRFRQLTLKIERDTNGMLMCHPQP-----N  422
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                T   +       G  + E                              +G     +
+Sbjct  423  EYVDTARQFLHCAFFMGLQRAEG-----------------------------VGGQECQQ  453
+
+Query  122  VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+             DI     EF      +          ++ +  V+   LP  VF    +RP
+Sbjct  454  FDIRGTVDEFRQEVNMYMFWKPG---MDVFVSHVRRRQLPPFVFPNGYRRP  501
+
+
+>sp|O82312|PAPS2_ARATH Nuclear poly(A) polymerase 2 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS2 PE=1 SV=2
+Length=800
+
+ Score = 55.2 bits (131),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 32/170 (19%), Positives = 50/170 (29%), Gaps = 39/170 (23%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEV-LAGIKIAHPFTKPFESS  61
+            FF  YK YL++      ++   L W G VES+ R L +K+E    G+ + HP       +
+Sbjct  371  FFEAYKNYLQVDVLAADAE-DLLAWKGWVESRFRQLTLKIERDTNGMLMCHPQP-----N  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                T   +       G  + +                                      
+Sbjct  425  EYVDTSKQFRHCAFFMGLQRADGFGGQE-------------------CQQF---------  456
+
+Query  122  VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKR  171
+             DI     EF      +          ++ +  V+   LP  VF    KR
+Sbjct  457  -DIRGTVDEFRQEVNMYMFWRPG---MDVHVSHVRRRQLPSFVFPNGYKR  502
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.120    0.304    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0367    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8733322852
+Results from round 3
+
+
+Query= d2q66a3
+
+Length=172
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisia...  207     2e-63
+sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans ...  206     5e-63
+sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albica...  192     9e-58
+sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyce...  189     9e-57
+sp|Q8VYW1|PAPS4_ARATH Nuclear poly(A) polymerase 4 OS=Arabidopsis...  163     4e-46
+sp|O82312|PAPS2_ARATH Nuclear poly(A) polymerase 2 OS=Arabidopsis...  160     6e-45
+sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideu...  156     1e-43
+sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens OX...  152     3e-42
+sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus OX=9...  152     5e-42
+sp|Q9LMT2|PAPS1_ARATH Nuclear poly(A) polymerase 1 OS=Arabidopsis...  151     7e-42
+sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus OX...  151     1e-41
+sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xe...  147     2e-40
+sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevi...  144     5e-40
+sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus OX=...  145     6e-40
+sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens OX=...  143     5e-39
+sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus OX...  126     5e-33
+sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens OX...  125     1e-32
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q56XM9|PAPS3_ARATH Nuclear poly(A) polymerase 3 OS=Arabidopsis...  48.8    6e-06
+
+
+>sp|P29468|PAP_YEAST Poly(A) polymerase OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=PAP1 PE=1 SV=1
+Length=568
+
+ Score = 207 bits (525),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 169/175 (97%), Positives = 169/175 (97%), Gaps = 6/175 (3%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES
+Sbjct  352  NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  411
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN-EEESIKDAPKAYLSTMYIGLDFN  119
+            SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDEN EEESIKDAPKAYLSTMYIGLDFN
+Sbjct  412  SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENKEEESIKDAPKAYLSTMYIGLDFN  471
+
+Query  120  I-----KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE  169
+            I     KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE
+Sbjct  472  IENKKEKVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENE  526
+
+
+>sp|Q9UW26|PAPA_CANAL Poly(A) polymerase PAPa OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPA PE=3 SV=1
+Length=555
+
+ Score = 206 bits (523),  Expect = 5e-63, Method: Composition-based stats.
+ Identities = 72/179 (40%), Positives = 117/179 (65%), Gaps = 9/179 (5%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFFFRYKFYL I A TR +  +HLK+SG+VESK+RLLV KLE++ GI++AHP+ K FE+
+Sbjct  351  HDFFFRYKFYLCIVAATRSTYAEHLKYSGMVESKLRLLVQKLELVEGIELAHPYVKSFEN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNA-LKLVTDENEEESIKDAPKAYLSTMYIGLDFN  119
+             Y C   ++   I + YG+ K +  +   L    ++N +E++++  + +++ ++IGL  +
+Sbjct  411  GYYCDNAEEAHEIMNLYGTSKGDDRVKGVLHAENNDNNKENVENKVELHMTKLFIGLKLD  470
+
+Query  120  I------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            +      K+DI  PC EF N+C+ + +D+   K F + ++ VK YDL D+V+ + E RP
+Sbjct  471  LSKEGEKKLDIQYPCAEFFNICKGW-QDFDSEKHF-IQIKNVKLYDLSDDVYVDGETRP  527
+
+
+>sp|O42617|PAP_CANAL Poly(A) polymerase PAPalpha OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=PAPALPHA 
+PE=3 SV=1
+Length=558
+
+ Score = 192 bits (487),  Expect = 9e-58, Method: Composition-based stats.
+ Identities = 65/180 (36%), Positives = 103/180 (57%), Gaps = 14/180 (8%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            + FF++YKFYL + A +  S E+H KWSG +ESK+R LV+KLEV  G++IAHP+ K F +
+Sbjct  351  HSFFYKYKFYLCVVAASIDSAEEHKKWSGFIESKLRQLVLKLEVAEGVEIAHPYVKDFSN  410
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI  120
+            ++      + E I + YG+   E  L  L     + ++E  K   K  L+  YIGLD N+
+Sbjct  411  TFILDD-KNAEDIINSYGTLSGEDFLRTLHSSDSDKDDEEFK---KIRLTKYYIGLDLNL  466
+
+Query  121  --------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+                    K+DI  PC EF ++C+          V  + ++ VK ++L ++V+++ E+RP
+Sbjct  467  TKSSDGVRKLDIQYPCAEFYSICKG--STSFTEGVNFIQIKNVKLHELSNDVYEDGEERP  524
+
+
+>sp|Q10295|PAP_SCHPO Poly(A) polymerase pla1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pla1 PE=1 
+SV=1
+Length=566
+
+ Score = 189 bits (480),  Expect = 9e-57, Method: Composition-based stats.
+ Identities = 71/193 (37%), Positives = 102/193 (53%), Gaps = 24/193 (12%)
+
+Query  1    NDFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFES  60
+            +DFF RYK YL ITA  + ++ Q LKW+GLVESK+R LV +LE++  I +AHPF K F+ 
+Sbjct  351  HDFFHRYKHYLTITAAAKTAEAQ-LKWAGLVESKLRHLVTRLELVDAIALAHPFNKGFDK  409
+
+Query  61   SYCCPTEDDYEMIQDKYGSHKTETALNALKLVTDE-NEEESIKDAPKA------------  107
+             Y C +E++ + +           + +  KL  D  NEE++     KA            
+Sbjct  410  VYNCSSEEEAQQVASGVTLEVAYESTDHEKLANDTVNEEKADNTESKADGSENGEKQIFP  469
+
+Query  108  -YLSTMYIGLDFNIK-------VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYD  159
+             Y +T YIGL+   K       +DI  P  EF  LC+ +  D  D  + N+ ++  K   
+Sbjct  470  VYTTTCYIGLELEKKKGHPIKRLDISWPTQEFYELCKKW--DKYDDTLMNVFIKNTKNTA  527
+
+Query  160  LPDEVFDENEKRP  172
+            LPDEVF+  E+RP
+Sbjct  528  LPDEVFEPGEERP  540
+
+
+>sp|Q8VYW1|PAPS4_ARATH Nuclear poly(A) polymerase 4 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS4 PE=1 SV=1
+Length=741
+
+ Score = 163 bits (412),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 34/171 (20%), Positives = 54/171 (32%), Gaps = 39/171 (23%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEV-LAGIKIAHPFTKPFESS  61
+            FF  YK YL++      ++   L W G VES+ R L +K+E    G+ + HP       +
+Sbjct  369  FFEAYKNYLQVDIVAADAE-DLLAWKGWVESRFRQLTLKIERDTNGMLMCHPQP-----N  422
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                T   +       G  + E                              +G     +
+Sbjct  423  EYVDTARQFLHCAFFMGLQRAEG-----------------------------VGGQECQQ  453
+
+Query  122  VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+             DI     EF      +          ++ +  V+   LP  VF    +RP
+Sbjct  454  FDIRGTVDEFRQEVNMYMFWKPG---MDVFVSHVRRRQLPPFVFPNGYRRP  501
+
+
+>sp|O82312|PAPS2_ARATH Nuclear poly(A) polymerase 2 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS2 PE=1 SV=2
+Length=800
+
+ Score = 160 bits (404),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 33/170 (19%), Positives = 52/170 (31%), Gaps = 39/170 (23%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEV-LAGIKIAHPFTKPFESS  61
+            FF  YK YL++      ++   L W G VES+ R L +K+E    G+ + HP       +
+Sbjct  371  FFEAYKNYLQVDVLAADAE-DLLAWKGWVESRFRQLTLKIERDTNGMLMCHPQP-----N  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                T   +       G  + +                               G     +
+Sbjct  425  EYVDTSKQFRHCAFFMGLQRADGF-----------------------------GGQECQQ  455
+
+Query  122  VDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKR  171
+             DI     EF      +          ++ +  V+   LP  VF    KR
+Sbjct  456  FDIRGTVDEFRQEVNMYMFWRPG---MDVHVSHVRRRQLPSFVFPNGYKR  502
+
+
+>sp|Q54J73|PAP_DICDI Poly(A) polymerase OS=Dictyostelium discoideum 
+OX=44689 GN=papA PE=3 SV=1
+Length=809
+
+ Score = 156 bits (394),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 45/179 (25%), Positives = 73/179 (41%), Gaps = 46/179 (26%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            DFF RY FY+EI  Y+  ++E   KW G +ESK+R L+  LE    +K A P+ K F ++
+Sbjct  398  DFFTRYSFYIEIDCYSM-NEEDSRKWEGWIESKLRFLISNLESTPKMKFAVPYPKGFTNN  456
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI-  120
+                              HK                     + P    ++ ++GL FN  
+Sbjct  457  -----------------LHKA--------------------NNPDQICTSFFMGLSFNFS  479
+
+Query  121  -------KVDIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+                    VD+    TEF  + + +     +    ++ ++++K   LP  V DE  + P
+Sbjct  480  NTPGADKSVDLTKAVTEFTGIIKDWLRTQPNPDTMDIKVQYIKKKQLPAFVKDEGPEEP  538
+
+
+>sp|P51003|PAPOA_HUMAN Poly(A) polymerase alpha OS=Homo sapiens 
+OX=9606 GN=PAPOLA PE=1 SV=4
+Length=745
+
+ Score = 152 bits (384),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 62/160 (39%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+               P ++++  +            +  L     EN E                    N+ 
+Sbjct  425  KENPDKEEFRTM-----------WVIGLVFKKTENSE--------------------NLS  453
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F +   R             +A   VK   L
+Sbjct  454  VDLTYDIQSFTDTVYRQAINSKMFEVDMKIAAMHVKRKQL  493
+
+
+>sp|P25500|PAPOA_BOVIN Poly(A) polymerase alpha OS=Bos taurus 
+OX=9913 GN=PAPOLA PE=1 SV=3
+Length=739
+
+ Score = 152 bits (383),  Expect = 5e-42, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 62/160 (39%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+               P ++++  +            +  L     EN E                    N+ 
+Sbjct  425  KENPDKEEFRTM-----------WVIGLVFKKTENSE--------------------NLS  453
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F +   R             +A   VK   L
+Sbjct  454  VDLTYDIQSFTDTVYRQAINSKMFEVDMKIAAMHVKRKQL  493
+
+
+>sp|Q9LMT2|PAPS1_ARATH Nuclear poly(A) polymerase 1 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS1 PE=1 SV=1
+Length=713
+
+ Score = 151 bits (381),  Expect = 7e-42, Method: Composition-based stats.
+ Identities = 35/170 (21%), Positives = 57/170 (34%), Gaps = 40/170 (24%)
+
+Query  3    FFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESSY  62
+            FF  YK YL+I   +  + +   KW G VES++R L +K+E    +   HP    F+ + 
+Sbjct  359  FFEAYKNYLQID-ISAANVDDLRKWKGWVESRLRQLTLKIERHFKMLHCHPHPHDFQDTS  417
+
+Query  63   CCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIKV  122
+                   +  +Q K G    E                                     + 
+Sbjct  418  RPLHCSYFMGLQRKQGVPAAEGE-----------------------------------QF  442
+
+Query  123  DIHIPCTEFVNLCRSFNEDYGDHKVFNLALRFVKGYDLPDEVFDENEKRP  172
+            DI     EF +   ++           +++  +K   LP+ VF     RP
+Sbjct  443  DIRRTVEEFKHTVNAYTLWIPG---MEISVGHIKRRSLPNFVF-PGGVRP  488
+
+
+>sp|Q61183|PAPOA_MOUSE Poly(A) polymerase alpha OS=Mus musculus 
+OX=10090 GN=Papola PE=1 SV=4
+Length=739
+
+ Score = 151 bits (380),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 61/160 (38%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  NFFQKYKHYIVLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+               P  +++  +            +  L     EN E                    N+ 
+Sbjct  425  KESPDREEFRTM-----------WVIGLVFKKTENSE--------------------NLS  453
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F +   R             +A   VK   L
+Sbjct  454  VDLTYDIQSFTDTVYRQAINSKMFELDMKIAAMHVKRKQL  493
+
+
+>sp|P51004|PAPO1_XENLA Poly(A) polymerase alpha-A (Fragment) OS=Xenopus 
+laevis OX=8355 GN=papola-a PE=2 SV=1
+Length=715
+
+ Score = 147 bits (370),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 37/160 (23%), Positives = 61/160 (38%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  348  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPRSFPAP  406
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                 ++++  +            +  L     EN E                    N+ 
+Sbjct  407  SENMEKEEFRTM-----------WVIGLVFKKMENSE--------------------NLS  435
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            VD+      F +   R             +A   VK   L
+Sbjct  436  VDLTYDIQSFTDTVDRQAINSKMFETEMKIAAMHVKRKQL  475
+
+
+>sp|P51005|PAPO2_XENLA Poly(A) polymerase alpha-B OS=Xenopus laevis 
+OX=8355 GN=papola-b PE=2 SV=1
+Length=484
+
+ Score = 144 bits (362),  Expect = 5e-40, Method: Composition-based stats.
+ Identities = 40/170 (24%), Positives = 63/170 (37%), Gaps = 37/170 (22%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +YK Y+ + A +  +++Q L+W GLVESK+R+LV  LE    I +AH   + F S 
+Sbjct  116  NFFQKYKHYILLLA-SAPTEKQRLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPSP  174
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                 ++++  +            +  L     EN E                    N+ 
+Sbjct  175  SENSEKEEFRTM-----------WVIGLVFKKMENSE--------------------NLS  203
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYD----LPDEVFD  166
+            VD+      F +   R             +A   VK       LP  V  
+Sbjct  204  VDLTYDIQSFTDTVYRQAINSKMFETEIKIAAMHVKRKQLHQLLPSHVLP  253
+
+
+>sp|Q9WVP6|PAPOB_MOUSE Poly(A) polymerase beta OS=Mus musculus 
+OX=10090 GN=Papolb PE=1 SV=2
+Length=641
+
+ Score = 145 bits (366),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 67/174 (39%), Gaps = 37/174 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+             FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  SFFQKYKHYIVLLA-SAPTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                 ++++  +            +  L L   EN E                     + 
+Sbjct  425  KETADKEEFRTM-----------WVIGLVLKKPENSEI--------------------LS  453
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYD----LPDEVFDENEK  170
+            +D+      F +   R             +A   ++  +    LP+ V  + E 
+Sbjct  454  IDLTYDIQSFTDTVYRQAINSKMFEMDMKIAAMHLRRKELHQLLPNHVLQKKET  507
+
+
+>sp|Q9NRJ5|PAPOB_HUMAN Poly(A) polymerase beta OS=Homo sapiens 
+OX=9606 GN=PAPOLB PE=2 SV=1
+Length=636
+
+ Score = 143 bits (359),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 32/161 (20%), Positives = 59/161 (37%), Gaps = 35/161 (22%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+             FF +YK Y+ + A +  +++QHL+W GLVESK+R+LV  LE    I +AH   + F + 
+Sbjct  366  SFFQKYKHYIVLLA-SASTEKQHLEWVGLVESKIRILVGSLEKNEFITLAHVNPQSFPAP  424
+
+Query  62   YCCPTEDDYEMI-QDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNI  120
+               P  +++  +     G  K + +                                  +
+Sbjct  425  KENPDMEEFRTMWVIGLGLKKPDNSEI--------------------------------L  452
+
+Query  121  KVDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+             +D+      F +   R             +    ++  +L
+Sbjct  453  SIDLTYDIQSFTDTVYRQAVNSKMFEMGMKITAMHLRRKEL  493
+
+
+>sp|Q6PCL9|PAPOG_MOUSE Poly(A) polymerase gamma OS=Mus musculus 
+OX=10090 GN=Papolg PE=1 SV=1
+Length=739
+
+ Score = 126 bits (317),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 36/160 (23%), Positives = 60/160 (38%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH   + F  +
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAHVNPQSFPGN  423
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                  ++Y  +               +     EN E                    ++ 
+Sbjct  424  KEHHKANNYVSM-----------WFLGIIFRRVENAE--------------------SVN  452
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            +D+      F +   R  N          +    VK   L
+Sbjct  453  IDLTYDIQSFTDTVYRQANNINMLKDGMKIEATHVKKKQL  492
+
+
+>sp|Q9BWT3|PAPOG_HUMAN Poly(A) polymerase gamma OS=Homo sapiens 
+OX=9606 GN=PAPOLG PE=1 SV=2
+Length=736
+
+ Score = 125 bits (314),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 36/160 (23%), Positives = 62/160 (39%), Gaps = 33/160 (21%)
+
+Query  2    DFFFRYKFYLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTKPFESS  61
+            +FF +Y+ Y+ +TA +  ++E HL+W GLVESK+R+LV  LE    I +AH   + F  +
+Sbjct  365  NFFQKYRHYIVLTA-SASTEENHLEWVGLVESKIRVLVGNLERNEFITLAHVNPQSFPGN  423
+
+Query  62   YCCPTEDDYEMIQDKYGSHKTETALNALKLVTDENEEESIKDAPKAYLSTMYIGLDFNIK  121
+                 +++Y  +               +     EN E                    ++ 
+Sbjct  424  KEHHKDNNYVSM-----------WFLGIIFRRVENAE--------------------SVN  452
+
+Query  122  VDIHIPCTEFVNLC-RSFNEDYGDHKVFNLALRFVKGYDL  160
+            +D+      F +   R  N      +   +    VK   L
+Sbjct  453  IDLTYDIQSFTDTVYRQANNINMLKEGMKIEATHVKKKQL  492
+
+
+>sp|Q56XM9|PAPS3_ARATH Nuclear poly(A) polymerase 3 OS=Arabidopsis 
+thaliana OX=3702 GN=PAPS3 PE=1 SV=1
+Length=507
+
+ Score = 48.8 bits (114),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 16/66 (24%), Positives = 28/66 (42%), Gaps = 7/66 (11%)
+
+Query  2    DFFFRYKF-----YLEITAYTRGSDEQHLKWSGLVESKVRLLVMKLEVLAGIKIAHPFTK  56
+            D F  Y +     +      +  + E    W G V+S+ R L++K+E + GI    P   
+Sbjct  329  DLFELYPYANTYTWFTKIHLSAANQEDLSDWVGWVKSRFRCLLIKIEEVYGI--CDPNPT  386
+
+Query  57   PFESSY  62
+             +  +Y
+Sbjct  387  EYVETY  392
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.110    0.270    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0337    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8733322852
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

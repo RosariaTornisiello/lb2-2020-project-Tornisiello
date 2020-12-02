@@ -1,0 +1,225 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2inwa1
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P76364|CBEA_ECOLI Cytoskeleton bundling-enhancing antitoxin Cb...  227     2e-77
+sp|P52141|YFJZ_ECOLI Antitoxin YfjZ OS=Escherichia coli (strain K...  140     3e-43
+sp|Q47684|YAFW_ECOLI Antitoxin YafW OS=Escherichia coli (strain K...  135     1e-41
+sp|P37008|YAGB_ECOLI Orphan antitoxin YagB OS=Escherichia coli (s...  130     3e-39
+
+
+>sp|P76364|CBEA_ECOLI Cytoskeleton bundling-enhancing antitoxin 
+CbeA OS=Escherichia coli (strain K12) OX=83333 GN=cbeA PE=1 
+SV=1
+Length=122
+
+ Score = 227 bits (578),  Expect = 2e-77, Method: Compositional matrix adjust.
+ Identities = 108/115 (94%), Positives = 109/115 (95%), Gaps = 0/115 (0%)
+
+Query  1    TLPGTTPPDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLD  60
+            TLPGTT PDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRG FSD DAYHLD
+Sbjct  4    TLPGTTLPDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGLFSDADAYHLD  63
+
+Query  61   QAFPLLMKQLELMLTGGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPTP  115
+            QAFPLLMKQLELMLT GELNPRHQHTVTLYAKGLTC+ADTL SC YVYLAVYPTP
+Sbjct  64   QAFPLLMKQLELMLTSGELNPRHQHTVTLYAKGLTCKADTLSSCDYVYLAVYPTP  118
+
+
+>sp|P52141|YFJZ_ECOLI Antitoxin YfjZ OS=Escherichia coli (strain 
+K12) OX=83333 GN=yfjZ PE=1 SV=1
+Length=105
+
+ Score = 140 bits (352),  Expect = 3e-43, Method: Compositional matrix adjust.
+ Identities = 67/98 (68%), Positives = 74/98 (76%), Gaps = 0/98 (0%)
+
+Query  17   WGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELMLTG  76
+            WGL   +TP  GARLVQEGN+LHYLADRA I G+FSD +   LD  FP  + Q+E MLT 
+Sbjct  6    WGLQRDITPRLGARLVQEGNQLHYLADRASITGKFSDAECPKLDVVFPHFISQIESMLTT  65
+
+Query  77   GELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPT  114
+            GELNPRH   VTLY  G TCEADTLGSCGYVY+AVYPT
+Sbjct  66   GELNPRHAQCVTLYHNGFTCEADTLGSCGYVYIAVYPT  103
+
+
+>sp|Q47684|YAFW_ECOLI Antitoxin YafW OS=Escherichia coli (strain 
+K12) OX=83333 GN=yafW PE=1 SV=1
+Length=105
+
+ Score = 135 bits (341),  Expect = 1e-41, Method: Compositional matrix adjust.
+ Identities = 65/100 (65%), Positives = 75/100 (75%), Gaps = 0/100 (0%)
+
+Query  15   PWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELML  74
+            P  GL   +T   GARLVQEGNRLHYLADRA I G+FSD++   LD+ FP  + Q+E ML
+Sbjct  4    PTRGLQREITLRLGARLVQEGNRLHYLADRASITGKFSDIECRKLDETFPHFILQMESML  63
+
+Query  75   TGGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPT  114
+            T GEL+P H H VTLY   LTCEADTLGSCGYVY+A+YPT
+Sbjct  64   TTGELSPHHAHCVTLYHNDLTCEADTLGSCGYVYIAIYPT  103
+
+
+>sp|P37008|YAGB_ECOLI Orphan antitoxin YagB OS=Escherichia coli 
+(strain K12) OX=83333 GN=yagB PE=3 SV=2
+Length=116
+
+ Score = 130 bits (326),  Expect = 3e-39, Method: Compositional matrix adjust.
+ Identities = 63/95 (66%), Positives = 72/95 (76%), Gaps = 0/95 (0%)
+
+Query  17   WGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELMLTG  76
+            WGL   +TPCFGARLVQEG+RLH+LADRAG  G FS+V    LD+AFP  +  LELML  
+Sbjct  9    WGLKRDITPCFGARLVQEGHRLHFLADRAGFTGSFSEVQTLQLDEAFPHFVAHLELMLLS  68
+
+Query  77   GELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAV  111
+             ELNPR+ H VTLY  GLT EADTLGS GYVY+A+
+Sbjct  69   CELNPRYAHCVTLYRNGLTGEADTLGSHGYVYIAI  103
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.140    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+Results from round 2
+
+
+Query= d2inwa1
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P76364|CBEA_ECOLI Cytoskeleton bundling-enhancing antitoxin Cb...  216     4e-73
+sp|P52141|YFJZ_ECOLI Antitoxin YfjZ OS=Escherichia coli (strain K...  187     3e-62
+sp|Q47684|YAFW_ECOLI Antitoxin YafW OS=Escherichia coli (strain K...  183     2e-60
+sp|P37008|YAGB_ECOLI Orphan antitoxin YagB OS=Escherichia coli (s...  176     2e-57
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P76364|CBEA_ECOLI Cytoskeleton bundling-enhancing antitoxin 
+CbeA OS=Escherichia coli (strain K12) OX=83333 GN=cbeA PE=1 
+SV=1
+Length=122
+
+ Score = 216 bits (549),  Expect = 4e-73, Method: Composition-based stats.
+ Identities = 108/115 (94%), Positives = 109/115 (95%), Gaps = 0/115 (0%)
+
+Query  1    TLPGTTPPDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLD  60
+            TLPGTT PDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRG FSD DAYHLD
+Sbjct  4    TLPGTTLPDDNHDRPWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGLFSDADAYHLD  63
+
+Query  61   QAFPLLMKQLELMLTGGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPTP  115
+            QAFPLLMKQLELMLT GELNPRHQHTVTLYAKGLTC+ADTL SC YVYLAVYPTP
+Sbjct  64   QAFPLLMKQLELMLTSGELNPRHQHTVTLYAKGLTCKADTLSSCDYVYLAVYPTP  118
+
+
+>sp|P52141|YFJZ_ECOLI Antitoxin YfjZ OS=Escherichia coli (strain 
+K12) OX=83333 GN=yfjZ PE=1 SV=1
+Length=105
+
+ Score = 187 bits (476),  Expect = 3e-62, Method: Composition-based stats.
+ Identities = 67/99 (68%), Positives = 74/99 (75%), Gaps = 0/99 (0%)
+
+Query  16   WWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELMLT  75
+             WGL   +TP  GARLVQEGN+LHYLADRA I G+FSD +   LD  FP  + Q+E MLT
+Sbjct  5    TWGLQRDITPRLGARLVQEGNQLHYLADRASITGKFSDAECPKLDVVFPHFISQIESMLT  64
+
+Query  76   GGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPT  114
+             GELNPRH   VTLY  G TCEADTLGSCGYVY+AVYPT
+Sbjct  65   TGELNPRHAQCVTLYHNGFTCEADTLGSCGYVYIAVYPT  103
+
+
+>sp|Q47684|YAFW_ECOLI Antitoxin YafW OS=Escherichia coli (strain 
+K12) OX=83333 GN=yafW PE=1 SV=1
+Length=105
+
+ Score = 183 bits (464),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 65/100 (65%), Positives = 75/100 (75%), Gaps = 0/100 (0%)
+
+Query  15   PWWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELML  74
+            P  GL   +T   GARLVQEGNRLHYLADRA I G+FSD++   LD+ FP  + Q+E ML
+Sbjct  4    PTRGLQREITLRLGARLVQEGNRLHYLADRASITGKFSDIECRKLDETFPHFILQMESML  63
+
+Query  75   TGGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAVYPT  114
+            T GEL+P H H VTLY   LTCEADTLGSCGYVY+A+YPT
+Sbjct  64   TTGELSPHHAHCVTLYHNDLTCEADTLGSCGYVYIAIYPT  103
+
+
+>sp|P37008|YAGB_ECOLI Orphan antitoxin YagB OS=Escherichia coli 
+(strain K12) OX=83333 GN=yagB PE=3 SV=2
+Length=116
+
+ Score = 176 bits (446),  Expect = 2e-57, Method: Composition-based stats.
+ Identities = 63/96 (66%), Positives = 72/96 (75%), Gaps = 0/96 (0%)
+
+Query  16   WWGLPCTVTPCFGARLVQEGNRLHYLADRAGIRGRFSDVDAYHLDQAFPLLMKQLELMLT  75
+             WGL   +TPCFGARLVQEG+RLH+LADRAG  G FS+V    LD+AFP  +  LELML 
+Sbjct  8    TWGLKRDITPCFGARLVQEGHRLHFLADRAGFTGSFSEVQTLQLDEAFPHFVAHLELMLL  67
+
+Query  76   GGELNPRHQHTVTLYAKGLTCEADTLGSCGYVYLAV  111
+              ELNPR+ H VTLY  GLT EADTLGS GYVY+A+
+Sbjct  68   SCELNPRYAHCVTLYRNGLTGEADTLGSHGYVYIAI  103
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.437    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0425    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

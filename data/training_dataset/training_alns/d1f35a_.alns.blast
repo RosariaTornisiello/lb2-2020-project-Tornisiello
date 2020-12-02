@@ -1,0 +1,213 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1f35a_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q64288|OMP_MOUSE Olfactory marker protein OS=Mus musculus OX=1...  330     3e-117
+sp|P08523|OMP_RAT Olfactory marker protein OS=Rattus norvegicus O...  327     1e-115
+sp|P47874|OMP_HUMAN Olfactory marker protein OS=Homo sapiens OX=9...  300     5e-105
+
+
+>sp|Q64288|OMP_MOUSE Olfactory marker protein OS=Mus musculus 
+OX=10090 GN=Omp PE=1 SV=3
+Length=163
+
+ Score = 330 bits (847),  Expect = 3e-117, Method: Compositional matrix adjust.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ
+Sbjct  2    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD
+Sbjct  62   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  163
+
+
+>sp|P08523|OMP_RAT Olfactory marker protein OS=Rattus norvegicus 
+OX=10116 GN=Omp PE=1 SV=2
+Length=163
+
+ Score = 327 bits (837),  Expect = 1e-115, Method: Compositional matrix adjust.
+ Identities = 159/162 (98%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AEDGPQKQQL+MPLVLDQDLT+QMRLRVESLKQRGEKKQDGEKL+RPAESVYRLDFIQQQ
+Sbjct  2    AEDGPQKQQLDMPLVLDQDLTKQMRLRVESLKQRGEKKQDGEKLLRPAESVYRLDFIQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD
+Sbjct  62   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  163
+
+
+>sp|P47874|OMP_HUMAN Olfactory marker protein OS=Homo sapiens 
+OX=9606 GN=OMP PE=2 SV=2
+Length=163
+
+ Score = 300 bits (768),  Expect = 5e-105, Method: Compositional matrix adjust.
+ Identities = 145/162 (90%), Positives = 156/162 (96%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AED PQ+ QL+MPLVLDQ LT+QMRLRVESLKQRGEK+QDGEKL++PAESVYRL+F QQQ
+Sbjct  2    AEDRPQQPQLDMPLVLDQGLTRQMRLRVESLKQRGEKRQDGEKLLQPAESVYRLNFTQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            +LQF+ WNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDP AIFWRKEDSDA+DWNEAD
+Sbjct  62   RLQFERWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPTAIFWRKEDSDAIDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFL+TFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLVTFGEGVEPANLKASVVFNQL  163
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.134    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+Results from round 2
+
+
+Query= d1f35a_
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P08523|OMP_RAT Olfactory marker protein OS=Rattus norvegicus O...  307     7e-108
+sp|Q64288|OMP_MOUSE Olfactory marker protein OS=Mus musculus OX=1...  306     2e-107
+sp|P47874|OMP_HUMAN Olfactory marker protein OS=Homo sapiens OX=9...  300     3e-105
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P08523|OMP_RAT Olfactory marker protein OS=Rattus norvegicus 
+OX=10116 GN=Omp PE=1 SV=2
+Length=163
+
+ Score = 307 bits (786),  Expect = 7e-108, Method: Composition-based stats.
+ Identities = 159/162 (98%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AEDGPQKQQL+MPLVLDQDLT+QMRLRVESLKQRGEKKQDGEKL+RPAESVYRLDFIQQQ
+Sbjct  2    AEDGPQKQQLDMPLVLDQDLTKQMRLRVESLKQRGEKKQDGEKLLRPAESVYRLDFIQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD
+Sbjct  62   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  163
+
+
+>sp|Q64288|OMP_MOUSE Olfactory marker protein OS=Mus musculus 
+OX=10090 GN=Omp PE=1 SV=3
+Length=163
+
+ Score = 306 bits (783),  Expect = 2e-107, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ
+Sbjct  2    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD
+Sbjct  62   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  163
+
+
+>sp|P47874|OMP_HUMAN Olfactory marker protein OS=Homo sapiens 
+OX=9606 GN=OMP PE=2 SV=2
+Length=163
+
+ Score = 300 bits (769),  Expect = 3e-105, Method: Composition-based stats.
+ Identities = 145/162 (90%), Positives = 156/162 (96%), Gaps = 0/162 (0%)
+
+Query  1    AEDGPQKQQLEMPLVLDQDLTQQMRLRVESLKQRGEKKQDGEKLIRPAESVYRLDFIQQQ  60
+            AED PQ+ QL+MPLVLDQ LT+QMRLRVESLKQRGEK+QDGEKL++PAESVYRL+F QQQ
+Sbjct  2    AEDRPQQPQLDMPLVLDQGLTRQMRLRVESLKQRGEKRQDGEKLLQPAESVYRLNFTQQQ  61
+
+Query  61   KLQFDHWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPAAIFWRKEDSDAMDWNEAD  120
+            +LQF+ WNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDP AIFWRKEDSDA+DWNEAD
+Sbjct  62   RLQFERWNVVLDKPGKVTITGTSQNWTPDLTNLMTRQLLDPTAIFWRKEDSDAIDWNEAD  121
+
+Query  121  ALEFGERLSDLAKIRKVMYFLITFGEGVEPANLKASVVFNQL  162
+            ALEFGERLSDLAKIRKVMYFL+TFGEGVEPANLKASVVFNQL
+Sbjct  122  ALEFGERLSDLAKIRKVMYFLVTFGEGVEPANLKASVVFNQL  163
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.387    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

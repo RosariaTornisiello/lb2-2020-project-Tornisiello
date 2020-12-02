@@ -1,0 +1,780 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1wy5a2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeoli...  180     6e-57
+sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynecho...  49.3    4e-07
+sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis...  43.9    3e-05
+sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic O...  37.0    0.009
+
+
+>sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeolicus 
+(strain VF5) OX=224324 GN=tilS PE=1 SV=1
+Length=317
+
+ Score = 180 bits (457),  Expect = 6e-57, Method: Compositional matrix adjust.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  60
+            ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG
+Sbjct  217  ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  276
+
+Query  61   EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  95
+            EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL
+Sbjct  277  EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  311
+
+
+>sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynechococcus 
+elongatus (strain BP-1) OX=197221 GN=tilS PE=3 SV=1
+Length=344
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 31/104 (30%), Positives = 58/104 (56%), Gaps = 10/104 (10%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFI  59
+            N+E+   +  ++L ++R + E E ++L   V + +   LD  +L+E PLALQRR+I+ F+
+Sbjct  213  NVEEALAQTAELLASDRAYFEAEVERLAPTVLREHPPALDRLRLREFPLALQRRLIQCFL  272
+
+Query  60   GEK-----DYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+             +      ++  +E VR+L+  G      +L  G+ L+   RW+
+Sbjct  273  RQHLKRGLNFRVIEAVRALMTTGNGSQTASLPGGQHLRVCGRWI  316
+
+
+>sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=tilS PE=3 
+SV=1
+Length=330
+
+ Score = 43.9 bits (102),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 24/79 (30%), Positives = 50/79 (63%), Gaps = 7/79 (9%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFI-  59
+            +E +  + V++L AE  +LE+ + ++Y+ + + +   L+ + L +KPLALQRR+IR+F+ 
+Sbjct  221  VEKSLAQTVELLTAEVAYLEQVSGEIYQTLSQTDQKSLNCRLLSQKPLALQRRIIRQFLQ  280
+
+Query  60   ----GEKDYEKVELVRSLL  74
+                   ++E++E +  L+
+Sbjct  281  SCQSQSPNFEEIEQIVGLI  299
+
+
+>sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Chara vulgaris OX=55564 GN=tilS PE=3 SV=1
+Length=330
+
+ Score = 37.0 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 19/62 (31%), Positives = 36/62 (58%), Gaps = 4/62 (6%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRK  57
+            NL+ +  +  ++L +E  FLE   Q L  ++    K    LD++ ++  P A+QRR+I++
+Sbjct  217  NLDRSIAQFAEILHSESLFLETLTQILRNKIEIINKNQKILDIQFIRVIPFAIQRRIIKQ  276
+
+Query  58   FI  59
+            F+
+Sbjct  277  FL  278
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.138    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 2
+
+
+Query= d1wy5a2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynecho...  127     5e-36
+sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeoli...  125     2e-35
+sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis...  96.3    3e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8YYB8|TILS_NOSS1 tRNA(Ile)-lysidine synthase OS=Nostoc sp. (s...  58.5    3e-10
+sp|Q7NNL0|TILS_GLOVI tRNA(Ile)-lysidine synthase OS=Gloeobacter v...  55.4    2e-09
+sp|Q5N517|TILS_SYNP6 tRNA(Ile)-lysidine synthase OS=Synechococcus...  51.6    7e-08
+sp|Q8M9Y1|TILS_CHAGL tRNA(Ile)-lysidine synthase, chloroplastic O...  50.0    3e-07
+sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic O...  45.4    1e-05
+sp|Q2JJ74|TILS_SYNJB tRNA(Ile)-lysidine synthase OS=Synechococcus...  42.3    1e-04
+sp|Q2JRN8|TILS_SYNJA tRNA(Ile)-lysidine synthase OS=Synechococcus...  39.6    0.001
+sp|Q6AJ19|TILS_DESPS tRNA(Ile)-lysidine synthase OS=Desulfotalea ...  37.7    0.005
+sp|Q9MUR3|TILS_MESVI tRNA(Ile)-lysidine synthase, chloroplastic O...  36.9    0.009
+
+
+>sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynechococcus 
+elongatus (strain BP-1) OX=197221 GN=tilS PE=3 SV=1
+Length=344
+
+ Score = 127 bits (319),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 31/104 (30%), Positives = 58/104 (56%), Gaps = 10/104 (10%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFI  59
+            N+E+   +  ++L ++R + E E ++L   V + +   LD  +L+E PLALQRR+I+ F+
+Sbjct  213  NVEEALAQTAELLASDRAYFEAEVERLAPTVLREHPPALDRLRLREFPLALQRRLIQCFL  272
+
+Query  60   GEK-----DYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+             +      ++  +E VR+L+  G      +L  G+ L+   RW+
+Sbjct  273  RQHLKRGLNFRVIEAVRALMTTGNGSQTASLPGGQHLRVCGRWI  316
+
+
+>sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeolicus 
+(strain VF5) OX=224324 GN=tilS PE=1 SV=1
+Length=317
+
+ Score = 125 bits (314),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  60
+            ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG
+Sbjct  217  ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  276
+
+Query  61   EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  95
+            EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL
+Sbjct  277  EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  311
+
+
+>sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=tilS PE=3 
+SV=1
+Length=330
+
+ Score = 96.3 bits (238),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 26/103 (25%), Positives = 58/103 (56%), Gaps = 10/103 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFI-  59
+            +E +  + V++L AE  +LE+ + ++Y+ + + +   L+ + L +KPLALQRR+IR+F+ 
+Sbjct  221  VEKSLAQTVELLTAEVAYLEQVSGEIYQTLSQTDQKSLNCRLLSQKPLALQRRIIRQFLQ  280
+
+Query  60   ----GEKDYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+                   ++E++E +  L+         +L    +++ +  +L
+Sbjct  281  SCQSQSPNFEEIEQIVGLINAPNRSQTSSLPGQGIVRVEGDFL  323
+
+
+>sp|Q8YYB8|TILS_NOSS1 tRNA(Ile)-lysidine synthase OS=Nostoc sp. 
+(strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=tilS 
+PE=3 SV=1
+Length=342
+
+ Score = 58.5 bits (140),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 27/116 (23%), Positives = 53/116 (46%), Gaps = 24/116 (21%)
+
+Query  4    EDTFLKMVKVLRAEREFLEEEAQKLYKEVKK----------------GNCLDVKKLKEKP  47
+            E    +  ++L+A+ E+LE  AQ+L +E  +                   L+ + L++ P
+Sbjct  217  ELAIAQTAELLQADVEYLERTAQQLKEEAMEWEVGEEFLSSSSPSSLLLRLNRQVLQKAP  276
+
+Query  48   LALQRRVIRKFIGE-----KDYEKVELVRSLLEKGGEVN---LGKGKVLKRKERWL  95
+            LALQRRV+R+ + E      ++E +E + +L+             G + + +  W+
+Sbjct  277  LALQRRVMRQILQEILADAPNFEHIEKLTALITAPNRSQTDPFPGGAIAQVQGNWI  332
+
+
+>sp|Q7NNL0|TILS_GLOVI tRNA(Ile)-lysidine synthase OS=Gloeobacter 
+violaceus (strain ATCC 29082 / PCC 7421) OX=251221 GN=tilS 
+PE=3 SV=2
+Length=325
+
+ Score = 55.4 bits (132),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 43/101 (43%), Gaps = 8/101 (8%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI---  59
+            +E T  +   +L AE E LE    + +  + +   L    L   PLALQRR +R+++   
+Sbjct  220  VEQTLARTGDILHAESELLESLLDEHWHSLVQEGRLHRNTLAALPLALQRRAVRRWLSVG  279
+
+Query  60   --GEKDYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+               + ++E +  V   L          L    +++ +  WL
+Sbjct  280  LGRQPNFEHIAAVLGCLSAPNRTRTSPLAHSLLVEVQGEWL  320
+
+
+>sp|Q5N517|TILS_SYNP6 tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 
+GN=tilS PE=3 SV=2
+Length=325
+
+ Score = 51.6 bits (122),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 23/100 (23%), Positives = 45/100 (45%), Gaps = 8/100 (8%)
+
+Query  4    EDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI----  59
+            +       ++L  E ++L E  +++Y++      L   +L ++P+ALQRRV+  F+    
+Sbjct  219  DRHLANTAELLADEADWLAELTEQVYQQSLSERGLCRSQLAQQPIALQRRVLHAFLQDQL  278
+
+Query  60   -GEKDYEKVELVRSLLEK---GGEVNLGKGKVLKRKERWL  95
+                   +VE +R L+         +L + +V      WL
+Sbjct  279  QRSPSTVQVEELRQLITAPQGSCSSSLPQRRVAVVAGDWL  318
+
+
+>sp|Q8M9Y1|TILS_CHAGL tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Chaetosphaeridium globosum OX=96477 GN=tilS PE=3 SV=1
+Length=341
+
+ Score = 50.0 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 21/79 (27%), Positives = 38/79 (48%), Gaps = 9/79 (11%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN----CLDVKKLKEKPLALQRRVIRK  57
+            NLE    ++ ++L +E  + E  ++K+  ++         L +   K  PLALQRR+I+ 
+Sbjct  250  NLEKILAQIAEILYSENLYFENLSKKIMLKISFEEINSKKLSLSLFKILPLALQRRIIKF  309
+
+Query  58   FIGEK-----DYEKVELVR  71
+            F         D+  +E +R
+Sbjct  310  FFENHFSKILDFRDIEEIR  328
+
+
+>sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Chara vulgaris OX=55564 GN=tilS PE=3 SV=1
+Length=330
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 24/106 (23%), Positives = 54/106 (51%), Gaps = 12/106 (11%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRK  57
+            NL+ +  +  ++L +E  FLE   Q L  ++    K    LD++ ++  P A+QRR+I++
+Sbjct  217  NLDRSIAQFAEILHSESLFLETLTQILRNKIEIINKNQKILDIQFIRVIPFAIQRRIIKQ  276
+
+Query  58   FIGEKD--------YEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  95
+            F+  +          EK+ ++ +++    ++ L  G  L   ++++
+Sbjct  277  FLEHQSIYSFDFCHIEKIRIISNIIIYKSDIYLPGGNRLTISKKYI  322
+
+
+>sp|Q2JJ74|TILS_SYNJB tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=tilS PE=3 SV=1
+Length=327
+
+ Score = 42.3 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 27/100 (27%), Positives = 46/100 (46%), Gaps = 10/100 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFIG  60
+            LE    +   +L+AE E +  +A +L+ +V +     L    L+  PLALQR+V+ +F+ 
+Sbjct  221  LEAALNRAATLLQAEHELVVAQAAQLWPQVYEPALPGLRRDPLRAAPLALQRQVMFQFLS  280
+
+Query  61   -----EKDYEKVELVRSLLEK---GGEVNLGKGKVLKRKE  92
+                    +E+VE    LL+        +   G  L+ K 
+Sbjct  281  LVLPHHPTFEQVEAGIQLLKADRGSRSPDYPGGHWLEVKG  320
+
+
+>sp|Q2JRN8|TILS_SYNJA tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain JA-3-3Ab) OX=321327 GN=tilS PE=3 SV=1
+Length=336
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 27/100 (27%), Positives = 47/100 (47%), Gaps = 10/100 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFIG  60
+            LE    +   +L+AE E +  +A +L+ +V +     L    L+  PLALQR+V+ +F+ 
+Sbjct  221  LEAALNRAATLLQAEHELVVAQAAQLWLQVYEPALPGLRRDPLRAAPLALQRQVMFQFLS  280
+
+Query  61   -----EKDYEKVELVRSLLEKGGEV---NLGKGKVLKRKE  92
+                    +E+VE    LL+ G      +   G  L+ + 
+Sbjct  281  LLLPHHPTFEQVEAGIRLLKAGRRSRSPDYPGGGWLEVRG  320
+
+
+>sp|Q6AJ19|TILS_DESPS tRNA(Ile)-lysidine synthase OS=Desulfotalea 
+psychrophila (strain LSv54 / DSM 12343) OX=177439 GN=tilS 
+PE=3 SV=1
+Length=471
+
+ Score = 37.7 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 27/103 (26%), Positives = 44/103 (43%), Gaps = 13/103 (13%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--------CLDVKKLKEKPLALQRR  53
+            +L  T L    +L +E +FLE+ A++L+    + N         LD +       ALQRR
+Sbjct  220  SLRRTILNTSSILESEEDFLEKSARELFNRSTRINREGKLPKTELDCRSFSGGHQALQRR  279
+
+Query  54   VIR----KFIGEKDYEKVELVRSLLEKGGEV-NLGKGKVLKRK  91
+            VI     +   +  +  +E +  L  +G     L  G  L+ K
+Sbjct  280  VIELICWQMDAQPSFTHIENICRLATEGTSAKTLQLGSGLRVK  322
+
+
+>sp|Q9MUR3|TILS_MESVI tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Mesostigma viride OX=41882 GN=tilS PE=3 SV=1
+Length=310
+
+ Score = 36.9 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/81 (20%), Positives = 43/81 (53%), Gaps = 7/81 (9%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN-CLDVKKLKEKPLALQRRVIRKFIGE  61
+            ++    +  +++  E  ++E   Q + K++  G+  +  + ++  P+A++RR+I+K I +
+Sbjct  214  VDKVIAQFAEIIHDESFYMENVTQIIEKQLFFGSKNIQQEFIENLPIAIERRIIKKMIEK  273
+
+Query  62   K------DYEKVELVRSLLEK  76
+            K      ++  +E +R   +K
+Sbjct  274  KLSENHCNFLNIEQIRFFFQK  294
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.140    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0428    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 3
+
+
+Query= d1wy5a2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeoli...  106     4e-28
+sp|Q7NNL0|TILS_GLOVI tRNA(Ile)-lysidine synthase OS=Gloeobacter v...  102     1e-26
+sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynecho...  102     3e-26
+sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis...  97.4    1e-24
+sp|Q2JJ74|TILS_SYNJB tRNA(Ile)-lysidine synthase OS=Synechococcus...  96.6    2e-24
+sp|Q2JRN8|TILS_SYNJA tRNA(Ile)-lysidine synthase OS=Synechococcus...  94.3    2e-23
+sp|Q5N517|TILS_SYNP6 tRNA(Ile)-lysidine synthase OS=Synechococcus...  92.0    1e-22
+sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic O...  87.0    9e-21
+sp|Q8YYB8|TILS_NOSS1 tRNA(Ile)-lysidine synthase OS=Nostoc sp. (s...  85.8    3e-20
+sp|Q8M9Y1|TILS_CHAGL tRNA(Ile)-lysidine synthase, chloroplastic O...  75.8    1e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9MUR3|TILS_MESVI tRNA(Ile)-lysidine synthase, chloroplastic O...  50.4    2e-07
+sp|O69538|TILS_MYCLE tRNA(Ile)-lysidine synthase OS=Mycobacterium...  46.5    4e-06
+sp|Q32RJ9|TILS_ZYGCR tRNA(Ile)-lysidine synthase, chloroplastic O...  46.2    5e-06
+sp|Q6AJ19|TILS_DESPS tRNA(Ile)-lysidine synthase OS=Desulfotalea ...  44.2    3e-05
+sp|Q83MT2|TILS_TROWT tRNA(Ile)-lysidine synthase OS=Tropheryma wh...  43.9    4e-05
+sp|Q83I94|TILS_TROW8 tRNA(Ile)-lysidine synthase OS=Tropheryma wh...  43.5    5e-05
+sp|Q744A3|TILS_MYCPA tRNA(Ile)-lysidine synthase OS=Mycolicibacte...  40.8    4e-04
+sp|C0ZNS6|TILS_RHOE4 tRNA(Ile)-lysidine synthase OS=Rhodococcus e...  39.2    0.001
+sp|Q32RX0|TILS_STAPU tRNA(Ile)-lysidine synthase, chloroplastic O...  39.2    0.001
+sp|P9WG53|TILS_MYCTU tRNA(Ile)-lysidine synthase OS=Mycobacterium...  36.9    0.008
+sp|P9WG52|TILS_MYCTO tRNA(Ile)-lysidine synthase OS=Mycobacterium...  36.9    0.008
+sp|P67152|TILS_MYCBO tRNA(Ile)-lysidine synthase OS=Mycobacterium...  36.9    0.008
+sp|Q01QT2|TILS_SOLUE tRNA(Ile)-lysidine synthase OS=Solibacter us...  36.9    0.009
+
+
+>sp|O67728|TILS_AQUAE tRNA(Ile)-lysidine synthase OS=Aquifex aeolicus 
+(strain VF5) OX=224324 GN=tilS PE=1 SV=1
+Length=317
+
+ Score = 106 bits (264),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  60
+            ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG
+Sbjct  217  ENLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFIG  276
+
+Query  61   EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  95
+            EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL
+Sbjct  277  EKDYEKVELVRSLLEKGGEVNLGKGKVLKRKERWL  311
+
+
+>sp|Q7NNL0|TILS_GLOVI tRNA(Ile)-lysidine synthase OS=Gloeobacter 
+violaceus (strain ATCC 29082 / PCC 7421) OX=251221 GN=tilS 
+PE=3 SV=2
+Length=325
+
+ Score = 102 bits (254),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 43/101 (43%), Gaps = 8/101 (8%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI---  59
+            +E T  +   +L AE E LE    + +  + +   L    L   PLALQRR +R+++   
+Sbjct  220  VEQTLARTGDILHAESELLESLLDEHWHSLVQEGRLHRNTLAALPLALQRRAVRRWLSVG  279
+
+Query  60   --GEKDYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+               + ++E +  V   L          L    +++ +  WL
+Sbjct  280  LGRQPNFEHIAAVLGCLSAPNRTRTSPLAHSLLVEVQGEWL  320
+
+
+>sp|Q8DIH2|TILS_THEEB tRNA(Ile)-lysidine synthase OS=Thermosynechococcus 
+elongatus (strain BP-1) OX=197221 GN=tilS PE=3 SV=1
+Length=344
+
+ Score = 102 bits (253),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 31/104 (30%), Positives = 58/104 (56%), Gaps = 10/104 (10%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFI  59
+            N+E+   +  ++L ++R + E E ++L   V + +   LD  +L+E PLALQRR+I+ F+
+Sbjct  213  NVEEALAQTAELLASDRAYFEAEVERLAPTVLREHPPALDRLRLREFPLALQRRLIQCFL  272
+
+Query  60   GEK-----DYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+             +      ++  +E VR+L+  G      +L  G+ L+   RW+
+Sbjct  273  RQHLKRGLNFRVIEAVRALMTTGNGSQTASLPGGQHLRVCGRWI  316
+
+
+>sp|P74192|TILS_SYNY3 tRNA(Ile)-lysidine synthase OS=Synechocystis 
+sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=tilS PE=3 
+SV=1
+Length=330
+
+ Score = 97.4 bits (241),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 26/103 (25%), Positives = 57/103 (55%), Gaps = 10/103 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKK--GNCLDVKKLKEKPLALQRRVIRKFI-  59
+            +E +  + V++L AE  +LE+ + ++Y+ + +     L+ + L +KPLALQRR+IR+F+ 
+Sbjct  221  VEKSLAQTVELLTAEVAYLEQVSGEIYQTLSQTDQKSLNCRLLSQKPLALQRRIIRQFLQ  280
+
+Query  60   ----GEKDYEKVELVRSLLEKGG---EVNLGKGKVLKRKERWL  95
+                   ++E++E +  L+         +L    +++ +  +L
+Sbjct  281  SCQSQSPNFEEIEQIVGLINAPNRSQTSSLPGQGIVRVEGDFL  323
+
+
+>sp|Q2JJ74|TILS_SYNJB tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=tilS PE=3 SV=1
+Length=327
+
+ Score = 96.6 bits (239),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 47/103 (46%), Gaps = 10/103 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFIG  60
+            LE    +   +L+AE E +  +A +L+ +V +     L    L+  PLALQR+V+ +F+ 
+Sbjct  221  LEAALNRAATLLQAEHELVVAQAAQLWPQVYEPALPGLRRDPLRAAPLALQRQVMFQFLS  280
+
+Query  61   -----EKDYEKVELVRSLLEK---GGEVNLGKGKVLKRKERWL  95
+                    +E+VE    LL+        +   G  L+ K   L
+Sbjct  281  LVLPHHPTFEQVEAGIQLLKADRGSRSPDYPGGHWLEVKGDHL  323
+
+
+>sp|Q2JRN8|TILS_SYNJA tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain JA-3-3Ab) OX=321327 GN=tilS PE=3 SV=1
+Length=336
+
+ Score = 94.3 bits (233),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 27/101 (27%), Positives = 47/101 (47%), Gaps = 10/101 (10%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN--CLDVKKLKEKPLALQRRVIRKFIG  60
+            LE    +   +L+AE E +  +A +L+ +V +     L    L+  PLALQR+V+ +F+ 
+Sbjct  221  LEAALNRAATLLQAEHELVVAQAAQLWLQVYEPALPGLRRDPLRAAPLALQRQVMFQFLS  280
+
+Query  61   -----EKDYEKVELVRSLLEKGGEV---NLGKGKVLKRKER  93
+                    +E+VE    LL+ G      +   G  L+ +  
+Sbjct  281  LLLPHHPTFEQVEAGIRLLKAGRRSRSPDYPGGGWLEVRGD  321
+
+
+>sp|Q5N517|TILS_SYNP6 tRNA(Ile)-lysidine synthase OS=Synechococcus 
+sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 
+GN=tilS PE=3 SV=2
+Length=325
+
+ Score = 92.0 bits (227),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 23/100 (23%), Positives = 45/100 (45%), Gaps = 8/100 (8%)
+
+Query  4    EDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI----  59
+            +       ++L  E ++L E  +++Y++      L   +L ++P+ALQRRV+  F+    
+Sbjct  219  DRHLANTAELLADEADWLAELTEQVYQQSLSERGLCRSQLAQQPIALQRRVLHAFLQDQL  278
+
+Query  60   -GEKDYEKVELVRSLLEKG---GEVNLGKGKVLKRKERWL  95
+                   +VE +R L+         +L + +V      WL
+Sbjct  279  QRSPSTVQVEELRQLITAPQGSCSSSLPQRRVAVVAGDWL  318
+
+
+>sp|Q1ACK8|TILS_CHAVU tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Chara vulgaris OX=55564 GN=tilS PE=3 SV=1
+Length=330
+
+ Score = 87.0 bits (214),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 24/106 (23%), Positives = 54/106 (51%), Gaps = 12/106 (11%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRK  57
+            NL+ +  +  ++L +E  FLE   Q L  ++    K    LD++ ++  P A+QRR+I++
+Sbjct  217  NLDRSIAQFAEILHSESLFLETLTQILRNKIEIINKNQKILDIQFIRVIPFAIQRRIIKQ  276
+
+Query  58   FIGEK-----DYEKVEL---VRSLLEKGGEVNLGKGKVLKRKERWL  95
+            F+  +     D+  +E    + +++    ++ L  G  L   ++++
+Sbjct  277  FLEHQSIYSFDFCHIEKIRIISNIIIYKSDIYLPGGNRLTISKKYI  322
+
+
+>sp|Q8YYB8|TILS_NOSS1 tRNA(Ile)-lysidine synthase OS=Nostoc sp. 
+(strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=tilS 
+PE=3 SV=1
+Length=342
+
+ Score = 85.8 bits (211),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 27/116 (23%), Positives = 53/116 (46%), Gaps = 24/116 (21%)
+
+Query  4    EDTFLKMVKVLRAEREFLEEEAQKLYKEVKK----------------GNCLDVKKLKEKP  47
+            E    +  ++L+A+ E+LE  AQ+L +E  +                   L+ + L++ P
+Sbjct  217  ELAIAQTAELLQADVEYLERTAQQLKEEAMEWEVGEEFLSSSSPSSLLLRLNRQVLQKAP  276
+
+Query  48   LALQRRVIRKFIGE-----KDYEKVELVRSLLEKGGEV---NLGKGKVLKRKERWL  95
+            LALQRRV+R+ + E      ++E +E + +L+             G + + +  W+
+Sbjct  277  LALQRRVMRQILQEILADAPNFEHIEKLTALITAPNRSQTDPFPGGAIAQVQGNWI  332
+
+
+>sp|Q8M9Y1|TILS_CHAGL tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Chaetosphaeridium globosum OX=96477 GN=tilS PE=3 SV=1
+Length=341
+
+ Score = 75.8 bits (185),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 22/91 (24%), Positives = 40/91 (44%), Gaps = 10/91 (11%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKG----NCLDVKKLKEKPLALQRRVIRK  57
+            NLE    ++ ++L +E  + E  ++K+  ++         L +   K  PLALQRR+I+ 
+Sbjct  250  NLEKILAQIAEILYSENLYFENLSKKIMLKISFEEINSKKLSLSLFKILPLALQRRIIKF  309
+
+Query  58   FIGEK-----DYEKVELVR-SLLEKGGEVNL  82
+            F         D+  +E +R  +L        
+Sbjct  310  FFENHFSKILDFRDIEEIRYYILNLSNNSKF  340
+
+
+>sp|Q9MUR3|TILS_MESVI tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Mesostigma viride OX=41882 GN=tilS PE=3 SV=1
+Length=310
+
+ Score = 50.4 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 14/76 (18%), Positives = 39/76 (51%), Gaps = 7/76 (9%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNC-LDVKKLKEKPLALQRRVIRKFIG-  60
+            ++    +  +++  E  ++E   Q + K++  G+  +  + ++  P+A++RR+I+K I  
+Sbjct  214  VDKVIAQFAEIIHDESFYMENVTQIIEKQLFFGSKNIQQEFIENLPIAIERRIIKKMIEK  273
+
+Query  61   -----EKDYEKVELVR  71
+                   ++  +E +R
+Sbjct  274  KLSENHCNFLNIEQIR  289
+
+
+>sp|O69538|TILS_MYCLE tRNA(Ile)-lysidine synthase OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=tilS PE=3 SV=1
+Length=323
+
+ Score = 46.5 bits (109),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 14/55 (25%), Positives = 27/55 (49%), Gaps = 0/55 (0%)
+
+Query  5    DTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI  59
+            +   +    LR + E ++  A +    +  G+ L  + L   P A++RRVIR ++
+Sbjct  213  EALARTATALREDTELIDTFAAQALPNICAGSGLHARALAALPDAVRRRVIRGWL  267
+
+
+>sp|Q32RJ9|TILS_ZYGCR tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Zygnema circumcarinatum OX=35869 GN=tilS PE=3 SV=1
+Length=420
+
+ Score = 46.2 bits (108),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 20/95 (21%), Positives = 39/95 (41%), Gaps = 16/95 (17%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKG----------NCLDVKKLKEKPLALQR  52
+            ++       +V+  E  +L+  A+ +  +                LD + L+  PLA+QR
+Sbjct  284  IDYVLNSCTEVMYTETLYLDSIARYVLSKALSFISMPLNDQTCVKLDFELLRAVPLAIQR  343
+
+Query  53   RVIRKFIG-----EKDYEKVELVR-SLLEKGGEVN  81
+            R+++ F+         ++ VE VR + L      N
+Sbjct  344  RILKYFLDVITHTSVSFKHVEQVRIACLITTNSSN  378
+
+
+>sp|Q6AJ19|TILS_DESPS tRNA(Ile)-lysidine synthase OS=Desulfotalea 
+psychrophila (strain LSv54 / DSM 12343) OX=177439 GN=tilS 
+PE=3 SV=1
+Length=471
+
+ Score = 44.2 bits (103),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 27/105 (26%), Positives = 45/105 (43%), Gaps = 13/105 (12%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNC--------LDVKKLKEKPLALQRR  53
+            +L  T L    +L +E +FLE+ A++L+    + N         LD +       ALQRR
+Sbjct  220  SLRRTILNTSSILESEEDFLEKSARELFNRSTRINREGKLPKTELDCRSFSGGHQALQRR  279
+
+Query  54   VIR----KFIGEKDYEKVELVRSLLEKGGEV-NLGKGKVLKRKER  93
+            VI     +   +  +  +E +  L  +G     L  G  L+ K+ 
+Sbjct  280  VIELICWQMDAQPSFTHIENICRLATEGTSAKTLQLGSGLRVKKE  324
+
+
+>sp|Q83MT2|TILS_TROWT tRNA(Ile)-lysidine synthase OS=Tropheryma 
+whipplei (strain Twist) OX=203267 GN=tilS PE=3 SV=1
+Length=415
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 18/106 (17%), Positives = 44/106 (42%), Gaps = 13/106 (12%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN-----CLDVKKLKEKPLALQRRVIR-  56
+            ++    +  K+ + + E+L+  + +L  E+          L +  L++ P+ ++ RVIR 
+Sbjct  301  VKYALSRTAKLAQLDTEYLDHLSNELLDEIASKESDWSIRLPINTLQKTPVPIRLRVIRL  360
+
+Query  57   ----KFIGEKDYEKVELVRSLLEKGGEV---NLGKGKVLKRKERWL  95
+                 F     ++    +  LL    ++   NL +    +R   ++
+Sbjct  361  AALQYFTVSLSFKHTRQIERLLCSSCDIKHVNLPRLITAQRVGNYI  406
+
+
+>sp|Q83I94|TILS_TROW8 tRNA(Ile)-lysidine synthase OS=Tropheryma 
+whipplei (strain TW08/27) OX=218496 GN=tilS PE=3 SV=1
+Length=407
+
+ Score = 43.5 bits (101),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 18/106 (17%), Positives = 44/106 (42%), Gaps = 13/106 (12%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN-----CLDVKKLKEKPLALQRRVIR-  56
+            ++    +  K+ + + E+L+  + +L  E+          L +  L++ P+ ++ RVIR 
+Sbjct  293  VKYALSRTAKLAQLDTEYLDHLSNELLDEIASKESDWSIRLPINTLQKTPVPIRLRVIRL  352
+
+Query  57   ----KFIGEKDYEKVELVRSLLEKGGEV---NLGKGKVLKRKERWL  95
+                 F     ++    +  LL    ++   NL +    +R   ++
+Sbjct  353  AALQYFTVSLSFKHTRQIERLLCSSCDIKHVNLPRLITAQRVGNYI  398
+
+
+>sp|Q744A3|TILS_MYCPA tRNA(Ile)-lysidine synthase OS=Mycolicibacterium 
+paratuberculosis (strain ATCC BAA-968 / K-10) OX=262316 
+GN=tilS PE=3 SV=1
+Length=320
+
+ Score = 40.8 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 17/95 (18%), Positives = 36/95 (38%), Gaps = 12/95 (13%)
+
+Query  5    DTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI-----  59
+            +   +    LR + E L+  A++     + G  L V  L      ++RRVIR ++     
+Sbjct  209  EALARTATALREDNELLDALAERALPAARAGAGLQVAALAGLDAPVRRRVIRAWLLAGGA  268
+
+Query  60   GEKDYEKVELVRSLLEKGG-------EVNLGKGKV  87
+                 +++  V +L+             +L   ++
+Sbjct  269  TGLTDKQIRGVDNLVTAWRGQGAVAVGSSLPGERL  303
+
+
+>sp|C0ZNS6|TILS_RHOE4 tRNA(Ile)-lysidine synthase OS=Rhodococcus 
+erythropolis (strain PR4 / NBRC 100887) OX=234621 GN=tilS 
+PE=3 SV=1
+Length=325
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/57 (26%), Positives = 28/57 (49%), Gaps = 0/57 (0%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGNCLDVKKLKEKPLALQRRVIRKFI  59
+            + +   +    LR + E L+E A+ L         ++V  L E P A++RR +R ++
+Sbjct  210  VAEALARTATQLREDGEALDEYAEALLLRAVVDGEVEVDTLAEAPTAIRRRALRAWL  266
+
+
+>sp|Q32RX0|TILS_STAPU tRNA(Ile)-lysidine synthase, chloroplastic 
+OS=Staurastrum punctulatum OX=102822 GN=tilS PE=3 SV=1
+Length=493
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 19/105 (18%), Positives = 46/105 (44%), Gaps = 35/105 (33%)
+
+Query  2    NLEDTFLKMVKVLRAEREFLEEEA----------------------QKLYKEVK-KGNCL  38
+            N++ T ++  +++++E  +LE+                        ++L K+ +     L
+Sbjct  296  NIDQTLVRWAEIVQSETFYLEQLTNYILFKIEIKKKISSISLKIPLEQLRKQKEPSEEKL  355
+
+Query  39   D-------VKKLKEKPLALQRRVIRKFI-----GEKDYEKVELVR  71
+            +       V  L+  P+A+QRRV++++I         ++ +E +R
+Sbjct  356  NFYQSAIPVDLLRSLPVAIQRRVLKQYIYINTNRILGFQYIEQIR  400
+
+
+>sp|P9WG53|TILS_MYCTU tRNA(Ile)-lysidine synthase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=tilS 
+PE=1 SV=1
+Length=323
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/61 (21%), Positives = 26/61 (43%), Gaps = 4/61 (7%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRKF  58
+            + +   +    LR + + ++  A +          +G  L    L   P A++RRVIR +
+Sbjct  207  VAEALARTATALREDTDLIDTIAAQALPGAAVAGSRGQELSTSALTALPDAVRRRVIRGW  266
+
+Query  59   I  59
+            +
+Sbjct  267  L  267
+
+
+>sp|P9WG52|TILS_MYCTO tRNA(Ile)-lysidine synthase OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=tilS 
+PE=3 SV=1
+Length=323
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/61 (21%), Positives = 26/61 (43%), Gaps = 4/61 (7%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRKF  58
+            + +   +    LR + + ++  A +          +G  L    L   P A++RRVIR +
+Sbjct  207  VAEALARTATALREDTDLIDTIAAQALPGAAVAGSRGQELSTSALTALPDAVRRRVIRGW  266
+
+Query  59   I  59
+            +
+Sbjct  267  L  267
+
+
+>sp|P67152|TILS_MYCBO tRNA(Ile)-lysidine synthase OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=tilS 
+PE=3 SV=1
+Length=323
+
+ Score = 36.9 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/61 (21%), Positives = 26/61 (43%), Gaps = 4/61 (7%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEV----KKGNCLDVKKLKEKPLALQRRVIRKF  58
+            + +   +    LR + + ++  A +          +G  L    L   P A++RRVIR +
+Sbjct  207  VAEALARTATALREDTDLIDTIAAQALPGAAVAGSRGQELSTSALTALPDAVRRRVIRGW  266
+
+Query  59   I  59
+            +
+Sbjct  267  L  267
+
+
+>sp|Q01QT2|TILS_SOLUE tRNA(Ile)-lysidine synthase OS=Solibacter 
+usitatus (strain Ellin6076) OX=234267 GN=tilS PE=3 SV=1
+Length=440
+
+ Score = 36.9 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 25/107 (23%), Positives = 40/107 (37%), Gaps = 15/107 (14%)
+
+Query  3    LEDTFLKMVKVLRAEREFLEEEAQKLYKEVKKGN----CLDVKKLKEKPLALQRRVIRKF  58
+            L +T     +  RAE  +   E  +L  E          +  + LK   LA+ RR++R+ 
+Sbjct  193  LVETLAHTAEFARAEEAYWAGEIDRLSAESLTAGDGCVLIRTESLKALSLAVARRLVRRA  252
+
+Query  59   -------IGEKDYEKVELVRSLLEKG---GEVNLGKGKVLKRKERWL  95
+                   +   D+  VE V  L       G   +  G  ++R   WL
+Sbjct  253  IQMAKGDLRGVDFGHVERVVELASAPTGRGRTQVP-GLDVRRSFEWL  298
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.137    0.333    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0418    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,381 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ciwa1
+
+Length=299
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P04963|PRXC_LEPFU Chloroperoxidase OS=Leptoxyphium fumago OX=5...  621     0.0  
+sp|Q00668|STCC_EMENI Putative sterigmatocystin biosynthesis perox...  65.5    6e-11
+sp|M2XZY2|DOTB_DOTSN Dothistromin biosynthesis peroxidase dotB OS...  53.9    5e-07
+sp|Q8TFD4|DOTB_DOTSE Dothistromin biosynthesis peroxidase dotB OS...  53.9    5e-07
+sp|B9W4V8|APO1_COPRA Aromatic peroxygenase (Fragments) OS=Coprine...  46.2    1e-04
+sp|B9W4V6|APO1_AGRAE Aromatic peroxygenase OS=Agrocybe aegerita O...  43.1    0.002
+
+
+>sp|P04963|PRXC_LEPFU Chloroperoxidase OS=Leptoxyphium fumago 
+OX=5474 GN=CPO PE=1 SV=3
+Length=373
+
+ Score = 621 bits (1601),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 298/298 (100%), Positives = 298/298 (100%), Gaps = 0/298 (0%)
+
+Query  2    EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH  61
+            EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH
+Sbjct  22   EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH  81
+
+Query  62   MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN  121
+            MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN
+Sbjct  82   MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN  141
+
+Query  122  SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ  181
+            SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ
+Sbjct  142  SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ  201
+
+Query  182  NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA  241
+            NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA
+Sbjct  202  NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA  261
+
+Query  242  SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND  299
+            SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND
+Sbjct  262  SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND  319
+
+
+>sp|Q00668|STCC_EMENI Putative sterigmatocystin biosynthesis peroxidase 
+stcC OS=Emericella nidulans (strain FGSC A4 / ATCC 
+38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=stcC PE=3 
+SV=2
+Length=305
+
+ Score = 65.5 bits (158),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 70/237 (30%), Positives = 95/237 (40%), Gaps = 33/237 (14%)
+
+Query  22   GPTDSRAPCPALNALANHGYIPHDGRAISRE----TLQNAFLNHMGIANSVIELALTNAF  77
+            G  D R  CPA+N+LANHG+I H+G  I+       +Q  F     +A  V  LA+ +A 
+Sbjct  36   GLGDLRCGCPAMNSLANHGFINHNGSNITVNEVIPLMQEVFHLSEELATIVTGLAVLSA-  94
+
+Query  78   VVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVANSNDFIDNRNFDAETFQ  137
+                     D    + NL +L   + FEHD S +RKD+  G        D    D  T  
+Sbjct  95   --------DDPASGIFNLDMLNRHNIFEHDASLTRKDFYLGG-------DGHTIDQPTLD  139
+
+Query  138  TSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQNV-ESGFIFALVSDFN  196
+              L    GK   D  D    R  R   S E +    + + + I +  E+   F  + D  
+Sbjct  140  EFLSYFDGKEWIDLNDAAAARYARVLDSREKNPSFLYQDQQLITSYGETIKYFRTMVD--  197
+
+Query  197  LPDNDEN--PLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSASSAVLAASVT  251
+             P +++     VRI      FT E  P   GW    P  EI   + AS  V  A  T
+Sbjct  198  -PRSNKTSAEFVRI-----LFTEERLPVREGWQ--RPREEISGFSLASDVVQLALRT  246
+
+
+>sp|M2XZY2|DOTB_DOTSN Dothistromin biosynthesis peroxidase dotB 
+OS=Dothistroma septosporum (strain NZE10 / CBS 128990) OX=675120 
+GN=dotB PE=2 SV=1
+Length=414
+
+ Score = 53.9 bits (128),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 41/140 (29%), Positives = 54/140 (39%), Gaps = 30/140 (21%)
+
+Query  20   APGPTDSRAPCPALNALANHGYIPHDGRAISRETLQ------------NAFLNHMGIANS  67
+            APG  D R PCP LN++ANHGYIP +G     + +               FL  +G A  
+Sbjct  62   APGANDIRGPCPGLNSMANHGYIPRNGYTSDAQIIAAMQAVFNISPDFGGFLTVLGSAMG  121
+
+Query  68   VIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHA-------FEHDHSFSRKDYKQGVA  120
+               L  +        + G      L    L+ +P         FE D S +R D  Q   
+Sbjct  122  GDGLGFS--------IGGPPSASLLTATGLVGKPQGMSNTHNRFESDQSITRDDLYQ---  170
+
+Query  121  NSNDFIDNRNFDAETFQTSL  140
+              ND   N NF  +   +SL
+Sbjct  171  TGNDVTLNMNFFQDLLNSSL  190
+
+
+>sp|Q8TFD4|DOTB_DOTSE Dothistromin biosynthesis peroxidase dotB 
+OS=Dothistroma septosporum OX=64363 GN=dotB PE=2 SV=1
+Length=414
+
+ Score = 53.9 bits (128),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 41/140 (29%), Positives = 54/140 (39%), Gaps = 30/140 (21%)
+
+Query  20   APGPTDSRAPCPALNALANHGYIPHDGRAISRETLQ------------NAFLNHMGIANS  67
+            APG  D R PCP LN++ANHGYIP +G     + +               FL  +G A  
+Sbjct  62   APGANDIRGPCPGLNSMANHGYIPRNGYTSDAQIIAAMQAVFNISPDFGGFLTVLGSAMG  121
+
+Query  68   VIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHA-------FEHDHSFSRKDYKQGVA  120
+               L  +        + G      L    L+ +P         FE D S +R D  Q   
+Sbjct  122  GDGLGFS--------IGGPPSASLLTATGLVGKPQGMSNTHNRFESDQSITRDDLYQ---  170
+
+Query  121  NSNDFIDNRNFDAETFQTSL  140
+              ND   N NF  +   +SL
+Sbjct  171  TGNDVTLNMNFFQDLLNSSL  190
+
+
+>sp|B9W4V8|APO1_COPRA Aromatic peroxygenase (Fragments) OS=Coprinellus 
+radians OX=71721 GN=APO PE=1 SV=2
+Length=261
+
+ Score = 46.2 bits (108),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 46/173 (27%), Positives = 73/173 (42%), Gaps = 29/173 (17%)
+
+Query  23   PTDSRAPCPALNALANHGYIPHDGRA----ISRETLQNAFLNHMGIANSVIELALTNAFV  78
+            P D R PCP LN LA+HGY+P +G A    I    ++    N+ G         + +  +
+Sbjct  29   PGDIRGPCPGLNTLASHGYLPRNGVATPAQIINAIVEGFNFNYEGAVFVTYFAHIVDGNL  88
+
+Query  79   VCEY--------VTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVANSNDFIDNRN  130
+            V +         +TG D G   + +  L     FE D S +R D+         F DN +
+Sbjct  89   VTDLLSIGGKTNLTGEDTGAPAI-IGGLNTHSVFEGDASMTRDDFH--------FGDNHS  139
+
+Query  131  FDAETFQTSLDV--VAGKTHFDYADMNEIRLQR--ESLSN--ELDF--PGWFT  175
+            F+   F   ++     G   ++      +R +R  +S++   E DF  P +FT
+Sbjct  140  FNQTLFDQFVEYSNTYGGGFYNQEVAGHLRRRRIEQSIATNPEFDFTSPRFFT  192
+
+
+>sp|B9W4V6|APO1_AGRAE Aromatic peroxygenase OS=Agrocybe aegerita 
+OX=5400 GN=APO1 PE=1 SV=1
+Length=371
+
+ Score = 43.1 bits (100),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 42/154 (27%), Positives = 62/154 (40%), Gaps = 25/154 (16%)
+
+Query  23   PTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNHMGIANSVIELALTNAFVV---  79
+            P D R PCP LN LA+HGY+P +G A   + + NA    +   N     A   A +V   
+Sbjct  72   PGDIRGPCPGLNTLASHGYLPRNGVATPVQII-NAVQEGLNFDNQAAVFATYAAHLVDGN  130
+
+Query  80   ----------CEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVANSNDFIDNR  129
+                         +TG D      ++  L E   FE D S +R D          F +N 
+Sbjct  131  LITDLLSIGRKTRLTGPDPPPP-ASVGGLNEHGTFEGDASMTRGDAF--------FGNNH  181
+
+Query  130  NFDAETFQTSLDVVA--GKTHFDYADMNEIRLQR  161
+            +F+   F+  +D     G   ++     E+R +R
+Sbjct  182  DFNETLFEQLVDYSNRFGGGKYNLTVAGELRFKR  215
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 24919161904
+Results from round 2
+
+
+Query= d2ciwa1
+
+Length=299
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P04963|PRXC_LEPFU Chloroperoxidase OS=Leptoxyphium fumago OX=5...  477     2e-169
+sp|Q00668|STCC_EMENI Putative sterigmatocystin biosynthesis perox...  269     2e-88 
+sp|B9W4V6|APO1_AGRAE Aromatic peroxygenase OS=Agrocybe aegerita O...  172     4e-50 
+sp|B9W4V8|APO1_COPRA Aromatic peroxygenase (Fragments) OS=Coprine...  167     2e-49 
+sp|M2XZY2|DOTB_DOTSN Dothistromin biosynthesis peroxidase dotB OS...  140     2e-37 
+sp|Q8TFD4|DOTB_DOTSE Dothistromin biosynthesis peroxidase dotB OS...  140     2e-37 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P04963|PRXC_LEPFU Chloroperoxidase OS=Leptoxyphium fumago 
+OX=5474 GN=CPO PE=1 SV=3
+Length=373
+
+ Score = 477 bits (1227),  Expect = 2e-169, Method: Composition-based stats.
+ Identities = 298/298 (100%), Positives = 298/298 (100%), Gaps = 0/298 (0%)
+
+Query  2    EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH  61
+            EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH
+Sbjct  22   EPGSGIGYPYDNNTLPYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETLQNAFLNH  81
+
+Query  62   MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN  121
+            MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN
+Sbjct  82   MGIANSVIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVAN  141
+
+Query  122  SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ  181
+            SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ
+Sbjct  142  SNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQ  201
+
+Query  182  NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA  241
+            NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA
+Sbjct  202  NVESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSA  261
+
+Query  242  SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND  299
+            SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND
+Sbjct  262  SSAVLAASVTSTPSSLPSGAIGPGAEAVPLSFASTMTPFLLATNAPYYAQDPTLGPND  319
+
+
+>sp|Q00668|STCC_EMENI Putative sterigmatocystin biosynthesis peroxidase 
+stcC OS=Emericella nidulans (strain FGSC A4 / ATCC 
+38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=stcC PE=3 
+SV=2
+Length=305
+
+ Score = 269 bits (687),  Expect = 2e-88, Method: Composition-based stats.
+ Identities = 70/237 (30%), Positives = 95/237 (40%), Gaps = 33/237 (14%)
+
+Query  22   GPTDSRAPCPALNALANHGYIPHDGRAISRE----TLQNAFLNHMGIANSVIELALTNAF  77
+            G  D R  CPA+N+LANHG+I H+G  I+       +Q  F     +A  V  LA+ +A 
+Sbjct  36   GLGDLRCGCPAMNSLANHGFINHNGSNITVNEVIPLMQEVFHLSEELATIVTGLAVLSA-  94
+
+Query  78   VVCEYVTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVANSNDFIDNRNFDAETFQ  137
+                     D    + NL +L   + FEHD S +RKD+  G        D    D  T  
+Sbjct  95   --------DDPASGIFNLDMLNRHNIFEHDASLTRKDFYLG-------GDGHTIDQPTLD  139
+
+Query  138  TSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQNV-ESGFIFALVSDFN  196
+              L    GK   D  D    R  R   S E +    + + + I +  E+   F  + D  
+Sbjct  140  EFLSYFDGKEWIDLNDAAAARYARVLDSREKNPSFLYQDQQLITSYGETIKYFRTMVD--  197
+
+Query  197  LPDNDEN--PLVRIDWWKYWFTNESFPYHLGWHPPSPAREIEFVTSASSAVLAASVT  251
+             P +++     VRI      FT E  P   GW    P  EI   + AS  V  A  T
+Sbjct  198  -PRSNKTSAEFVRI-----LFTEERLPVREGWQ--RPREEISGFSLASDVVQLALRT  246
+
+
+>sp|B9W4V6|APO1_AGRAE Aromatic peroxygenase OS=Agrocybe aegerita 
+OX=5400 GN=APO1 PE=1 SV=1
+Length=371
+
+ Score = 172 bits (436),  Expect = 4e-50, Method: Composition-based stats.
+ Identities = 62/255 (24%), Positives = 95/255 (37%), Gaps = 40/255 (16%)
+
+Query  2    EPGSGIGYPYDNNTL--------PYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRET  53
+            EPG   G P +N++         P+    P D R PCP LN LA+HGY+P +G A   + 
+Sbjct  44   EPGLPPG-PLENSSAKLVNDEAHPWKPLRPGDIRGPCPGLNTLASHGYLPRNGVATPVQI  102
+
+Query  54   LQNAFLNHMGIANSVIELALTNAFVV-------------CEYVTGSDCGDSLVNLTLLAE  100
+            + NA    +   N     A   A +V                +TG D      ++  L E
+Sbjct  103  I-NAVQEGLNFDNQAAVFATYAAHLVDGNLITDLLSIGRKTRLTGPDPPPP-ASVGGLNE  160
+
+Query  101  PHAFEHDHSFSRKDYKQGVANSNDFIDNRNFDAETFQTSLDVVA--GKTHFDYADMNEIR  158
+               FE D S +R D          F +N +F+   F+  +D     G   ++     E+R
+Sbjct  161  HGTFEGDASMTRGDAF--------FGNNHDFNETLFEQLVDYSNRFGGGKYNLTVAGELR  212
+
+Query  159  LQRESLSNELDFPGWFTESKPIQNV-ESGFIFALVSDFNLPDNDENPLVRIDWWKYWFTN  217
+             +R   S   +    F + +      E+ F   L  D    D      + +D  + +F  
+Sbjct  213  FKRIQDSIATNPNFSFVDFRFFTAYGETTFPANLFVDGRRDDGQ----LDMDAARSFFQF  268
+
+Query  218  ESFPYHLGWHPPSPA  232
+               P    +  PSP 
+Sbjct  269  SRMP-DDFFRAPSPR  282
+
+
+>sp|B9W4V8|APO1_COPRA Aromatic peroxygenase (Fragments) OS=Coprinellus 
+radians OX=71721 GN=APO PE=1 SV=2
+Length=261
+
+ Score = 167 bits (423),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 46/193 (24%), Positives = 75/193 (39%), Gaps = 24/193 (12%)
+
+Query  17   PYVAPGPTDSRAPCPALNALANHGYIPHDGRAISRETL----QNAFLNHMGIANSVIELA  72
+            P+    P D R PCP LN LA+HGY+P +G A   + +    +    N+ G         
+Sbjct  23   PWEPLRPGDIRGPCPGLNTLASHGYLPRNGVATPAQIINAIVEGFNFNYEGAVFVTYFAH  82
+
+Query  73   LTNAFVVCEY--------VTGSDCGDSLVNLTLLAEPHAFEHDHSFSRKDYKQGVANSND  124
+            + +  +V +         +TG D G   + +  L     FE D S +R D+         
+Sbjct  83   IVDGNLVTDLLSIGGKTNLTGEDTGAPAI-IGGLNTHSVFEGDASMTRDDFH--------  133
+
+Query  125  FIDNRNFDAETFQTSLDV--VAGKTHFDYADMNEIRLQRESLSNELDFPGWFTESKPIQN  182
+            F DN +F+   F   ++     G   ++      +R +R   S   +    FT  +    
+Sbjct  134  FGDNHSFNQTLFDQFVEYSNTYGGGFYNQEVAGHLRRRRIEQSIATNPEFDFTSPRFFTA  193
+
+Query  183  V-ESGFIFALVSD  194
+              ES F ++   D
+Sbjct  194  FAESSFPYSFFVD  206
+
+
+>sp|M2XZY2|DOTB_DOTSN Dothistromin biosynthesis peroxidase dotB 
+OS=Dothistroma septosporum (strain NZE10 / CBS 128990) OX=675120 
+GN=dotB PE=2 SV=1
+Length=414
+
+ Score = 140 bits (353),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 45/173 (26%), Positives = 64/173 (37%), Gaps = 34/173 (20%)
+
+Query  20   APGPTDSRAPCPALNALANHGYIPHDGRAISRETLQ------------NAFLNHMGIANS  67
+            APG  D R PCP LN++ANHGYIP +G     + +               FL  +G A  
+Sbjct  62   APGANDIRGPCPGLNSMANHGYIPRNGYTSDAQIIAAMQAVFNISPDFGGFLTVLGSAMG  121
+
+Query  68   VIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHA-------FEHDHSFSRKDYKQGVA  120
+               L  +        + G      L    L+ +P         FE D S +R D  Q   
+Sbjct  122  GDGLGFS--------IGGPPSASLLTATGLVGKPQGMSNTHNRFESDQSITRDDLYQ---  170
+
+Query  121  NSNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGW  173
+              ND   N NF  +   +SL     K  +D   +    ++R   S   +   +
+Sbjct  171  TGNDVTLNMNFFQDLLNSSLP----KGWYDIDVLGNHAVKRFQYSVANNPYFF  219
+
+
+>sp|Q8TFD4|DOTB_DOTSE Dothistromin biosynthesis peroxidase dotB 
+OS=Dothistroma septosporum OX=64363 GN=dotB PE=2 SV=1
+Length=414
+
+ Score = 140 bits (353),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 45/173 (26%), Positives = 64/173 (37%), Gaps = 34/173 (20%)
+
+Query  20   APGPTDSRAPCPALNALANHGYIPHDGRAISRETLQ------------NAFLNHMGIANS  67
+            APG  D R PCP LN++ANHGYIP +G     + +               FL  +G A  
+Sbjct  62   APGANDIRGPCPGLNSMANHGYIPRNGYTSDAQIIAAMQAVFNISPDFGGFLTVLGSAMG  121
+
+Query  68   VIELALTNAFVVCEYVTGSDCGDSLVNLTLLAEPHA-------FEHDHSFSRKDYKQGVA  120
+               L  +        + G      L    L+ +P         FE D S +R D  Q   
+Sbjct  122  GDGLGFS--------IGGPPSASLLTATGLVGKPQGMSNTHNRFESDQSITRDDLYQ---  170
+
+Query  121  NSNDFIDNRNFDAETFQTSLDVVAGKTHFDYADMNEIRLQRESLSNELDFPGW  173
+              ND   N NF  +   +SL     K  +D   +    ++R   S   +   +
+Sbjct  171  TGNDVTLNMNFFQDLLNSSLP----KGWYDIDVLGNHAVKRFQYSVANNPYFF  219
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.123    0.338    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0378    0.140     1.90     42.6     43.6 
+
+Effective search space used: 24919161904
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

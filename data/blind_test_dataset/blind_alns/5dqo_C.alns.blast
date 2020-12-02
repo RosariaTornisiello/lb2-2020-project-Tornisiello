@@ -1,0 +1,1364 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5dqo_C
+
+Length=160
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens OX...  315     5e-106
+sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus OX...  290     1e-96 
+sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus...  290     2e-96 
+sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabid...  158     8e-46 
+sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis ...  158     1e-45 
+sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila mela...  149     1e-41 
+sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces c...  112     2e-28 
+sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharom...  111     3e-28 
+sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neuros...  108     3e-27 
+sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium d...  100     2e-24 
+sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula...  47.0    2e-05 
+sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacter...  43.5    3e-04 
+sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacter...  43.5    3e-04 
+sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplas...  42.0    0.001 
+sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyr...  39.3    0.008 
+
+
+>sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens 
+OX=9606 GN=PRIM2 PE=1 SV=2
+Length=509
+
+ Score = 315 bits (806),  Expect = 5e-106, Method: Compositional matrix adjust.
+ Identities = 157/185 (85%), Positives = 158/185 (85%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQ------  54
+            SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQ      
+Sbjct  272  SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  55   ------------XYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                         YS+NIRHSF        YTPFSCLKIILSNPPSQGDYHGCPFRHSDP
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES
+Sbjct  392  ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  451
+
+Query  156  QRILN  160
+            QRILN
+Sbjct  452  QRILN  456
+
+
+>sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus 
+OX=10090 GN=Prim2 PE=1 SV=1
+Length=505
+
+ Score = 290 bits (743),  Expect = 1e-96, Method: Compositional matrix adjust.
+ Identities = 144/185 (78%), Positives = 148/185 (80%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQ------  54
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQ      
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  55   ------------XYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                         YS+NIRHSF        YTPFSC+KIIL+NPP QGDYHGCPFRHSD 
+Sbjct  332  IRGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPGQGDYHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+QSYKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQSYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus 
+OX=10116 GN=Prim2 PE=2 SV=1
+Length=507
+
+ Score = 290 bits (743),  Expect = 2e-96, Method: Compositional matrix adjust.
+ Identities = 143/185 (77%), Positives = 149/185 (81%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQX-----  55
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQ      
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  56   -------------YSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                         YS+NIRHSF        YTPFSC+KIIL+NPPSQGD+HGCPFRHSD 
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPSQGDFHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+Q+YKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQTYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabidopsis 
+thaliana OX=3702 GN=At1g67320 PE=2 SV=2
+Length=454
+
+ Score = 158 bits (399),  Expect = 8e-46, Method: Compositional matrix adjust.
+ Identities = 82/184 (45%), Positives = 109/184 (59%), Gaps = 26/184 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SL  ID +S  SFP CMR L + LRE+HHL+HGGRMQ GLFLKG+GL L+ AL       
+Sbjct  265  SLKDIDQVSKSSFPLCMRHLFEKLREDHHLKHGGRMQLGLFLKGVGLKLDDALAFWREEF  324
+
+Query  54   ----------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPE  96
+                      + Y++ IRH++        YTP++C KII S  P  GD+HGCP+RH   +
+Sbjct  325  TKKVGSERFDKEYAYAIRHNYGKEGKRTDYTPYACSKIITS-APGAGDHHGCPYRHFSED  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+             LK  L    +S  G+  ++D V+  HYQ+AC   FE ++    C   +NHPNQ+F ESQ
+Sbjct  384  NLKAALSRMGLSSRGMEDVMDKVRNRHYQLACTLTFEAVYGT-SCDTGINHPNQYFEESQ  442
+
+Query  157  RILN  160
+            +IL 
+Sbjct  443  KILK  446
+
+
+>sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis 
+elegans OX=6239 GN=pri-2 PE=3 SV=2
+Length=503
+
+ Score = 158 bits (400),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 83/182 (46%), Positives = 111/182 (61%), Gaps = 27/182 (15%)
+
+Query  5    IDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-----------  53
+            ID LS +SF PCM+Q+H  LR NHHL++G R QYGLFLKGIGL+L++A+           
+Sbjct  298  IDKLSRRSFAPCMKQMHNHLRVNHHLKYGARRQYGLFLKGIGLSLDEAIAMMRDEFTKKI  357
+
+Query  54   ------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQ  100
+                  + Y +NIR+ +         T  SC  IIL NPPS  D HGCPFRHS+ ++LKQ
+Sbjct  358  TSDKFDKEYGYNIRYMYGKEGRRVAQTAMSCATIILRNPPSAVDCHGCPFRHSEKQVLKQ  417
+
+Query  101  KLQSYKI-SPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFS--LNHPNQFFCESQR  157
+            KL S  I     I +I +L +   Y  AC +YFE +HN+++ G    + HPNQF+ ESQ+
+Sbjct  418  KLGSDAILKKEQIERIAELAELNQYDKACTRYFEFMHNLEEGGLGQLITHPNQFYEESQK  477
+
+Query  158  IL  159
+            I+
+Sbjct  478  IV  479
+
+
+>sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila 
+melanogaster OX=7227 GN=DNApol-alpha60 PE=1 SV=2
+Length=533
+
+ Score = 149 bits (375),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 76/179 (42%), Positives = 103/179 (58%), Gaps = 26/179 (15%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL--------  53
+            ++ +D LS  S P CMR  H+ +R NHH++H GRMQYGLFLKGIG+ LE +L        
+Sbjct  284  IESLDQLSKTSMPLCMRMCHEHIRANHHIKHSGRMQYGLFLKGIGVALEDSLRFWREEFT  343
+
+Query  54   ---------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPEL  97
+                     + Y +NI H++        YTP+SC KII  +    GD HGCP+++ D   
+Sbjct  344  KKMDADKFTRSYEYNIYHNYGKKGSMVNYTPYSCAKII-KDVAGPGDCHGCPYKNMDQGS  402
+
+Query  98   LKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+            LK KL SY +S   I +++  V   HYQ+ C KYF++ HN      S+NHPN +F ESQ
+Sbjct  403  LKTKLSSYGLSASAIDEVMFFVSRGHYQIGCGKYFQLTHN-SPVEPSINHPNNYFEESQ  460
+
+
+>sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PRI2 
+PE=1 SV=1
+Length=528
+
+ Score = 112 bits (280),  Expect = 2e-28, Method: Compositional matrix adjust.
+ Identities = 61/179 (34%), Positives = 92/179 (51%), Gaps = 32/179 (18%)
+
+Query  10   TKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYS------------  57
+            + ++P C++ L + L++NHHLR+ GR Q  LFLKGIGL+ ++AL+ +S            
+Sbjct  330  SSNYPLCIKNLMEGLKKNHHLRYYGRQQLSLFLKGIGLSADEALKFWSEAFTRNGNMTME  389
+
+Query  58   -------FNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQ  103
+                   ++ RH++        Y P+ C  I+    P +GDYHGCPFR    E L  +L+
+Sbjct  390  KFNKEYRYSFRHNYGLEGNRINYKPWDCHTILSKPRPGRGDYHGCPFRDWSHERLSAELR  449
+
+Query  104  SYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLN------HPNQFFCESQ  156
+            S K++   I  +LD  +   Y +AC K FEM HN       +       HPN +F  S+
+Sbjct  450  SMKLTQAQIISVLDSCQKGEYTIACTKVFEMTHNSASADLEIGEQTHIAHPNLYFERSR  508
+
+
+>sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pri2 PE=1 
+SV=1
+Length=459
+
+ Score = 111 bits (277),  Expect = 3e-28, Method: Compositional matrix adjust.
+ Identities = 61/166 (37%), Positives = 90/166 (54%), Gaps = 26/166 (16%)
+
+Query  13   FPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL----------------QXY  56
+            FP C + LH+ L+ + HLRH GR+QYGLFLK IGL++++AL                + Y
+Sbjct  288  FPLCAKHLHEVLKRDKHLRHFGRLQYGLFLKDIGLSVDEALVFWRKSFTNVTEDKFNKEY  347
+
+Query  57   SFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISP  109
+             +NIRH++        Y  ++C +I+       GD HGCP+R      L   L S  I+P
+Sbjct  348  RYNIRHTYGLEGNRKNYKGYNCQQILTGPQLGPGDAHGCPYRTYSVNNLVSALASMGIAP  407
+
+Query  110  --GGISQILDLVKGTHYQVACQKYFEMIH-NVDDCGFSLNHPNQFF  152
+               G  ++++ VK  HY +AC + FE+ H NV     S++HP Q+F
+Sbjct  408  DSAGCREVVEAVKARHYHIACTRVFELTHPNVGSLEESIHHPLQYF  453
+
+
+>sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=5F3.150 PE=3 SV=1
+Length=513
+
+ Score = 108 bits (271),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 64/196 (33%), Positives = 98/196 (50%), Gaps = 42/196 (21%)
+
+Query  7    LLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------------  53
+            L++   FP CM  LH+ LR + HL+H GR+QY LFLKGIGL LE+ L             
+Sbjct  306  LVNNHHFPACMSHLHRTLRRDAHLKHYGRLQYTLFLKGIGLNLEECLLFWRQSFNKITDD  365
+
+Query  54   ---QXYSFNIRHSF------------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELL  98
+               + Y +N+RH++             Y+P+SC KI+  +PP  G+ HGCP+RH + E L
+Sbjct  366  TFNKEYRYNVRHTYGDVGGDSNRRGGGYSPYSCQKILTEHPPGPGEAHGCPYRHFNMENL  425
+
+Query  99   KQKLQSYK--ISPGGISQILDLVKGTHYQVACQKYFEMIH-----NVDDCGF-------S  144
+            +  LQ        G ++ + +  +   + +AC + FE +H        D G        +
+Sbjct  426  QTLLQQGMGVTDRGVLNGVKEDKEKQKFHMACNRVFEHLHKEELKKAKDEGIMTAAQLET  485
+
+Query  145  LNHPNQFFCESQRILN  160
+            + HPN++F  S  + N
+Sbjct  486  IVHPNEYFKRSYLLKN  501
+
+
+>sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium 
+discoideum OX=44689 GN=prim2 PE=3 SV=1
+Length=470
+
+ Score = 100 bits (250),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 67/179 (37%), Positives = 95/179 (53%), Gaps = 29/179 (16%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL---------  53
+            + +  LS  SFP CMR ++ +L E   L++ GR+Q+G FLKGIGL  ++A+         
+Sbjct  266  EDVSPLSKTSFPMCMRVMYDSLVETSSLKYEGRLQFGTFLKGIGLPYDEAINFWRIAFSK  325
+
+Query  54   --------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGD--YHGCPFRHSDPE  96
+                    + Y +NIRH++        Y+P+SC +II S  P  GD   HGCP+  S  E
+Sbjct  326  RVSNTDFDKEYLYNIRHNYGLEGKSTNYSPYSCPRII-SKSPHNGDKLVHGCPYIQS-LE  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+             L+QKL    I      QIL+  K T   VAC K+F  +H  +     +NHPNQF+ +S
+Sbjct  384  RLEQKLLDLGIDDFQRIQILEATK-TSPNVACTKHFNFLHPNNTLTKLINHPNQFYDQS  441
+
+
+>sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula 
+marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / 
+VKM B-1809) OX=272569 GN=priL PE=3 SV=1
+Length=358
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 19/56 (34%), Positives = 31/56 (55%), Gaps = 0/56 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFN  59
+            +ID +  + FPPCM+ L   +++  HL H  R     FL GIG+T ++ +  +  N
+Sbjct  222  EIDTVVPELFPPCMKSLLDQVQKGEHLEHHSRFAIATFLVGIGMTTDEIVDLFQVN  277
+
+
+>sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 43.5 bits (101),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 18/56 (32%), Positives = 29/56 (52%), Gaps = 0/56 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFN  59
+            +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N
+Sbjct  225  EIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN  280
+
+
+>sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 43.5 bits (101),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 18/56 (32%), Positives = 29/56 (52%), Gaps = 0/56 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFN  59
+            +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N
+Sbjct  225  EIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN  280
+
+
+>sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / 
+NBRC 15438 / GSS1) OX=273116 GN=priL PE=3 SV=1
+Length=327
+
+ Score = 42.0 bits (97),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 16/48 (33%), Positives = 31/48 (65%), Gaps = 0/48 (0%)
+
+Query  9    STKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY  56
+            +TK+FPPCM+++ + L E  ++ H GR+    FL  +G T ++ ++ +
+Sbjct  211  NTKAFPPCMKEIIRNLHEGINVPHMGRLAIASFLHKVGYTEDEIVEYF  258
+
+
+>sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=priL PE=3 SV=1
+Length=406
+
+ Score = 39.3 bits (90),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 15/56 (27%), Positives = 32/56 (57%), Gaps = 0/56 (0%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYS  57
+            L++++  +   FPPC+R+L +  +E  +L H  R     FL  +G  +++ ++ +S
+Sbjct  288  LERVEKGAGGRFPPCIRELLRRAQEGENLPHEARFALAAFLVNVGWDVDRVVEVFS  343
+
+
+
+Lambda      K        H        a         alpha
+   0.325    0.141    0.445    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7383282920
+Results from round 2
+
+
+Query= 5dqo_C
+
+Length=160
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens OX...  251     2e-81
+sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus OX...  246     2e-79
+sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus...  243     5e-78
+sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabid...  224     3e-71
+sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila mela...  209     7e-65
+sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis ...  203     8e-63
+sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharom...  190     6e-58
+sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces c...  190     2e-57
+sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neuros...  186     3e-56
+sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium d...  177     5e-53
+sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacter...  88.9    3e-20
+sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacter...  88.9    3e-20
+sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula...  85.1    5e-19
+sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplas...  72.0    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q0W2J3|PRIL_METAR DNA primase large subunit PriL OS=Methanocel...  63.1    5e-11
+sp|Q9HJD1|PRIL_THEAC DNA primase large subunit PriL OS=Thermoplas...  60.4    4e-10
+sp|O29911|PRIL_ARCFU DNA primase large subunit PriL OS=Archaeoglo...  57.3    4e-09
+sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyr...  57.3    4e-09
+sp|Q12U19|PRIL_METBU DNA primase large subunit PriL OS=Methanococ...  52.3    2e-07
+sp|Q8TUF8|PRIL_METAC DNA primase large subunit PriL OS=Methanosar...  52.3    2e-07
+sp|Q46E38|PRIL_METBF DNA primase large subunit PriL OS=Methanosar...  52.3    3e-07
+sp|Q8PX26|PRIL_METMA DNA primase large subunit PriL OS=Methanosar...  51.2    6e-07
+
+
+>sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens 
+OX=9606 GN=PRIM2 PE=1 SV=2
+Length=509
+
+ Score = 251 bits (642),  Expect = 2e-81, Method: Composition-based stats.
+ Identities = 156/185 (84%), Positives = 158/185 (85%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSCLKIILSNPPSQGDYHGCPFRHSDP
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES
+Sbjct  392  ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  451
+
+Query  156  QRILN  160
+            QRILN
+Sbjct  452  QRILN  456
+
+
+>sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus 
+OX=10090 GN=Prim2 PE=1 SV=1
+Length=505
+
+ Score = 246 bits (629),  Expect = 2e-79, Method: Composition-based stats.
+ Identities = 143/185 (77%), Positives = 148/185 (80%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSC+KIIL+NPP QGDYHGCPFRHSD 
+Sbjct  332  IRGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPGQGDYHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+QSYKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQSYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus 
+OX=10116 GN=Prim2 PE=2 SV=1
+Length=507
+
+ Score = 243 bits (620),  Expect = 5e-78, Method: Composition-based stats.
+ Identities = 142/185 (77%), Positives = 149/185 (81%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSC+KIIL+NPPSQGD+HGCPFRHSD 
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPSQGDFHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+Q+YKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQTYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabidopsis 
+thaliana OX=3702 GN=At1g67320 PE=2 SV=2
+Length=454
+
+ Score = 224 bits (570),  Expect = 3e-71, Method: Composition-based stats.
+ Identities = 82/184 (45%), Positives = 109/184 (59%), Gaps = 26/184 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SL  ID +S  SFP CMR L + LRE+HHL+HGGRMQ GLFLKG+GL L+ AL       
+Sbjct  265  SLKDIDQVSKSSFPLCMRHLFEKLREDHHLKHGGRMQLGLFLKGVGLKLDDALAFWREEF  324
+
+Query  54   ----------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPE  96
+                      + Y++ IRH++        YTP++C KII S  P  GD+HGCP+RH   +
+Sbjct  325  TKKVGSERFDKEYAYAIRHNYGKEGKRTDYTPYACSKIITS-APGAGDHHGCPYRHFSED  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+             LK  L    +S  G+  ++D V+  HYQ+AC   FE ++    C   +NHPNQ+F ESQ
+Sbjct  384  NLKAALSRMGLSSRGMEDVMDKVRNRHYQLACTLTFEAVYGT-SCDTGINHPNQYFEESQ  442
+
+Query  157  RILN  160
+            +IL 
+Sbjct  443  KILK  446
+
+
+>sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila 
+melanogaster OX=7227 GN=DNApol-alpha60 PE=1 SV=2
+Length=533
+
+ Score = 209 bits (533),  Expect = 7e-65, Method: Composition-based stats.
+ Identities = 76/179 (42%), Positives = 103/179 (58%), Gaps = 26/179 (15%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQX------  55
+            ++ +D LS  S P CMR  H+ +R NHH++H GRMQYGLFLKGIG+ LE +L+       
+Sbjct  284  IESLDQLSKTSMPLCMRMCHEHIRANHHIKHSGRMQYGLFLKGIGVALEDSLRFWREEFT  343
+
+Query  56   -----------YSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDPEL  97
+                       Y +NI H++        YTP+SC KII  +    GD HGCP+++ D   
+Sbjct  344  KKMDADKFTRSYEYNIYHNYGKKGSMVNYTPYSCAKII-KDVAGPGDCHGCPYKNMDQGS  402
+
+Query  98   LKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+            LK KL SY +S   I +++  V   HYQ+ C KYF++ HN      S+NHPN +F ESQ
+Sbjct  403  LKTKLSSYGLSASAIDEVMFFVSRGHYQIGCGKYFQLTHN-SPVEPSINHPNNYFEESQ  460
+
+
+>sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis 
+elegans OX=6239 GN=pri-2 PE=3 SV=2
+Length=503
+
+ Score = 203 bits (517),  Expect = 8e-63, Method: Composition-based stats.
+ Identities = 83/182 (46%), Positives = 111/182 (61%), Gaps = 27/182 (15%)
+
+Query  5    IDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-----------  53
+            ID LS +SF PCM+Q+H  LR NHHL++G R QYGLFLKGIGL+L++A+           
+Sbjct  298  IDKLSRRSFAPCMKQMHNHLRVNHHLKYGARRQYGLFLKGIGLSLDEAIAMMRDEFTKKI  357
+
+Query  54   ------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQ  100
+                  + Y +NIR+ +         T  SC  IIL NPPS  D HGCPFRHS+ ++LKQ
+Sbjct  358  TSDKFDKEYGYNIRYMYGKEGRRVAQTAMSCATIILRNPPSAVDCHGCPFRHSEKQVLKQ  417
+
+Query  101  KLQSYKI-SPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFS--LNHPNQFFCESQR  157
+            KL S  I     I +I +L +   Y  AC +YFE +HN+++ G    + HPNQF+ ESQ+
+Sbjct  418  KLGSDAILKKEQIERIAELAELNQYDKACTRYFEFMHNLEEGGLGQLITHPNQFYEESQK  477
+
+Query  158  IL  159
+            I+
+Sbjct  478  IV  479
+
+
+>sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pri2 PE=1 
+SV=1
+Length=459
+
+ Score = 190 bits (482),  Expect = 6e-58, Method: Composition-based stats.
+ Identities = 64/178 (36%), Positives = 94/178 (53%), Gaps = 27/178 (15%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL----------  53
+            Q+D      FP C + LH+ L+ + HLRH GR+QYGLFLK IGL++++AL          
+Sbjct  280  QVDSFV-SHFPLCAKHLHEVLKRDKHLRHFGRLQYGLFLKDIGLSVDEALVFWRKSFTNV  338
+
+Query  54   ------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQ  100
+                  + Y +NIRH++        Y  ++C +I+       GD HGCP+R      L  
+Sbjct  339  TEDKFNKEYRYNIRHTYGLEGNRKNYKGYNCQQILTGPQLGPGDAHGCPYRTYSVNNLVS  398
+
+Query  101  KLQSYKISP--GGISQILDLVKGTHYQVACQKYFEMIH-NVDDCGFSLNHPNQFFCES  155
+             L S  I+P   G  ++++ VK  HY +AC + FE+ H NV     S++HP Q+F  S
+Sbjct  399  ALASMGIAPDSAGCREVVEAVKARHYHIACTRVFELTHPNVGSLEESIHHPLQYFQLS  456
+
+
+>sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PRI2 
+PE=1 SV=1
+Length=528
+
+ Score = 190 bits (482),  Expect = 2e-57, Method: Composition-based stats.
+ Identities = 61/179 (34%), Positives = 91/179 (51%), Gaps = 32/179 (18%)
+
+Query  10   TKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQX--------------  55
+            + ++P C++ L + L++NHHLR+ GR Q  LFLKGIGL+ ++AL+               
+Sbjct  330  SSNYPLCIKNLMEGLKKNHHLRYYGRQQLSLFLKGIGLSADEALKFWSEAFTRNGNMTME  389
+
+Query  56   -----YSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQ  103
+                 Y ++ RH++        Y P+ C  I+    P +GDYHGCPFR    E L  +L+
+Sbjct  390  KFNKEYRYSFRHNYGLEGNRINYKPWDCHTILSKPRPGRGDYHGCPFRDWSHERLSAELR  449
+
+Query  104  SYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLN------HPNQFFCESQ  156
+            S K++   I  +LD  +   Y +AC K FEM HN       +       HPN +F  S+
+Sbjct  450  SMKLTQAQIISVLDSCQKGEYTIACTKVFEMTHNSASADLEIGEQTHIAHPNLYFERSR  508
+
+
+>sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=5F3.150 PE=3 SV=1
+Length=513
+
+ Score = 186 bits (473),  Expect = 3e-56, Method: Composition-based stats.
+ Identities = 64/196 (33%), Positives = 98/196 (50%), Gaps = 42/196 (21%)
+
+Query  7    LLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------------  53
+            L++   FP CM  LH+ LR + HL+H GR+QY LFLKGIGL LE+ L             
+Sbjct  306  LVNNHHFPACMSHLHRTLRRDAHLKHYGRLQYTLFLKGIGLNLEECLLFWRQSFNKITDD  365
+
+Query  54   ---QXYSFNIRHSF------------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELL  98
+               + Y +N+RH++             Y+P+SC KI+  +PP  G+ HGCP+RH + E L
+Sbjct  366  TFNKEYRYNVRHTYGDVGGDSNRRGGGYSPYSCQKILTEHPPGPGEAHGCPYRHFNMENL  425
+
+Query  99   KQKLQSYK--ISPGGISQILDLVKGTHYQVACQKYFEMIH-----NVDDCGF-------S  144
+            +  LQ        G ++ + +  +   + +AC + FE +H        D G        +
+Sbjct  426  QTLLQQGMGVTDRGVLNGVKEDKEKQKFHMACNRVFEHLHKEELKKAKDEGIMTAAQLET  485
+
+Query  145  LNHPNQFFCESQRILN  160
+            + HPN++F  S  + N
+Sbjct  486  IVHPNEYFKRSYLLKN  501
+
+
+>sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium 
+discoideum OX=44689 GN=prim2 PE=3 SV=1
+Length=470
+
+ Score = 177 bits (449),  Expect = 5e-53, Method: Composition-based stats.
+ Identities = 67/179 (37%), Positives = 95/179 (53%), Gaps = 29/179 (16%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL---------  53
+            + +  LS  SFP CMR ++ +L E   L++ GR+Q+G FLKGIGL  ++A+         
+Sbjct  266  EDVSPLSKTSFPMCMRVMYDSLVETSSLKYEGRLQFGTFLKGIGLPYDEAINFWRIAFSK  325
+
+Query  54   --------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGD--YHGCPFRHSDPE  96
+                    + Y +NIRH++        Y+P+SC +II S  P  GD   HGCP+  S  E
+Sbjct  326  RVSNTDFDKEYLYNIRHNYGLEGKSTNYSPYSCPRII-SKSPHNGDKLVHGCPYIQS-LE  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+             L+QKL    I      QIL+  K T   VAC K+F  +H  +     +NHPNQF+ +S
+Sbjct  384  RLEQKLLDLGIDDFQRIQILEATK-TSPNVACTKHFNFLHPNNTLTKLINHPNQFYDQS  441
+
+
+>sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 88.9 bits (219),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 51/151 (34%), Gaps = 38/151 (25%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N   
+Sbjct  224  REIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN---  280
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                             P  G+                ++  Y+             + T
+Sbjct  281  -----------------PGFGE----------------EMTRYQTDHIQGDS--SPTEYT  305
+
+Query  123  HYQVACQKYFEMIHNVDDCGFSLNHPNQFFC  153
+                A  K +    N DD   ++NHP  ++ 
+Sbjct  306  APSCATMKAYGNCVNPDDLCDAINHPLSYYE  336
+
+
+>sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 88.9 bits (219),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 51/151 (34%), Gaps = 38/151 (25%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N   
+Sbjct  224  REIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN---  280
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                             P  G+                ++  Y+             + T
+Sbjct  281  -----------------PGFGE----------------EMTRYQTDHIQGDS--SPTEYT  305
+
+Query  123  HYQVACQKYFEMIHNVDDCGFSLNHPNQFFC  153
+                A  K +    N DD   ++NHP  ++ 
+Sbjct  306  APSCATMKAYGNCVNPDDLCDAINHPLSYYE  336
+
+
+>sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula 
+marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / 
+VKM B-1809) OX=272569 GN=priL PE=3 SV=1
+Length=358
+
+ Score = 85.1 bits (209),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 31/155 (20%), Positives = 56/155 (36%), Gaps = 44/155 (28%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   +++  HL H  R     FL GIG+T ++ +  +  N   
+Sbjct  221  REIDTVVPELFPPCMKSLLDQVQKGEHLEHHSRFAIATFLVGIGMTTDEIVDLFQVN---  277
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                             P  G+                     + +   +  I      T
+Sbjct  278  -----------------PGFGE---------------------EATRYQVDHIRGDTSPT  299
+
+Query  123  HYQV-ACQ--KYFEMIHNVDDCGFSLNHPNQFFCE  154
+             Y   AC   + +    N+DD   +++HP  ++ +
+Sbjct  300  EYSTPACSTMQSYGDCVNMDDLCEAISHPMGYYEQ  334
+
+
+>sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / 
+NBRC 15438 / GSS1) OX=273116 GN=priL PE=3 SV=1
+Length=327
+
+ Score = 72.0 bits (175),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 21/87 (24%), Positives = 42/87 (48%), Gaps = 17/87 (20%)
+
+Query  9    STKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY-----------S  57
+            +TK+FPPCM+++ + L E  ++ H GR+    FL  +G T ++ ++ +            
+Sbjct  211  NTKAFPPCMKEIIRNLHEGINVPHMGRLAIASFLHKVGYTEDEIVEYFRNAPDFDESITR  270
+
+Query  58   FNIRH------SFXYTPFSCLKIILSN  78
+            + I+H         Y+P  C  +  ++
+Sbjct  271  YQIKHLSGEISGVEYSPPKCETMRSNH  297
+
+
+>sp|Q0W2J3|PRIL_METAR DNA primase large subunit PriL OS=Methanocella 
+arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50) OX=351160 
+GN=priL PE=3 SV=1
+Length=366
+
+ Score = 63.1 bits (152),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 22/82 (27%), Positives = 32/82 (39%), Gaps = 4/82 (5%)
+
+Query  8    LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHSFXYT  67
+            ++  SFPPCM+ L   L++  +L H  R     FL  IGL  +  +  Y          T
+Sbjct  219  VTQDSFPPCMKNLLADLQKGINLPHTARFALTSFLANIGLDKDAIMDLYRMAPDFREDLT  278
+
+Query  68   PFSCLKIILSNPPSQGDYHGCP  89
+             +    I        G  + CP
+Sbjct  279  HYQVQHITG----GSGTEYTCP  296
+
+
+>sp|Q9HJD1|PRIL_THEAC DNA primase large subunit PriL OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 
+/ NBRC 15155 / AMRC-C165) OX=273075 GN=priL PE=3 SV=1
+Length=340
+
+ Score = 60.4 bits (145),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 19/85 (22%), Positives = 35/85 (41%), Gaps = 17/85 (20%)
+
+Query  11   KSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY-----------SFN  59
+              FPPCM+++ K L    ++ H GR+    FL   G + ++ +  +            + 
+Sbjct  224  SMFPPCMKEIIKNLESGVNVSHMGRLALASFLHKAGYSEDEIVPYFRNAPDFDENITRYQ  283
+
+Query  60   IRH------SFXYTPFSCLKIILSN  78
+            I+H         YTP  C  +  ++
+Sbjct  284  IKHISGEISGTEYTPPKCETMRSNH  308
+
+
+>sp|O29911|PRIL_ARCFU DNA primase large subunit PriL OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=priL PE=3 SV=1
+Length=370
+
+ Score = 57.3 bits (137),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 13/54 (24%), Positives = 26/54 (48%), Gaps = 0/54 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYS  57
+             +  +     PPCMR++   L+   ++ H  R     FL  IG+T+++ +  + 
+Sbjct  256  DLGEVDLNCLPPCMREILSELQRGMNIPHTARFAITSFLLNIGMTVDEIIALFK  309
+
+
+>sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=priL PE=3 SV=1
+Length=406
+
+ Score = 57.3 bits (137),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 20/91 (22%), Positives = 41/91 (45%), Gaps = 18/91 (20%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY-----  56
+            L++++  +   FPPC+R+L +  +E  +L H  R     FL  +G  +++ ++ +     
+Sbjct  288  LERVEKGAGGRFPPCIRELLRRAQEGENLPHEARFALAAFLVNVGWDVDRVVEVFSNLPD  347
+
+Query  57   ------SFNIRH-------SFXYTPFSCLKI  74
+                   + +RH          Y P +C K+
+Sbjct  348  FDEERTQYQVRHIAGEVGGGTRYLPPNCDKM  378
+
+
+>sp|Q12U19|PRIL_METBU DNA primase large subunit PriL OS=Methanococcoides 
+burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 
+/ ACE-M) OX=259564 GN=priL PE=3 SV=1
+Length=364
+
+ Score = 52.3 bits (124),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 19/88 (22%), Positives = 34/88 (39%), Gaps = 17/88 (19%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY-------  56
+            +   + +  FPPC+ Q    +R   +L H  R     FL  IG+++++ +  +       
+Sbjct  225  EFQRVESDLFPPCITQAIANVRAGVNLAHSMRFAMTSFLINIGMSVDEVVAMFNISPDFD  284
+
+Query  57   ----SFNIRH------SFXYTPFSCLKI  74
+                 + I H         Y P SC  +
+Sbjct  285  EEKTRYQIEHIAGTSSGTTYKPPSCNTM  312
+
+
+>sp|Q8TUF8|PRIL_METAC DNA primase large subunit PriL OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 
+/ C2A) OX=188937 GN=priL PE=3 SV=1
+Length=371
+
+ Score = 52.3 bits (124),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 12/56 (21%), Positives = 26/56 (46%), Gaps = 0/56 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFN  59
+                +  + FPPC+      ++   +L H  R     FL  +G+++E+ L  ++ +
+Sbjct  218  DFGAVEPELFPPCISHALANVQGGVNLAHSMRFAMTSFLLNVGMSVEEILNLFNVS  273
+
+
+>sp|Q46E38|PRIL_METBF DNA primase large subunit PriL OS=Methanosarcina 
+barkeri (strain Fusaro / DSM 804) OX=269797 GN=priL 
+PE=3 SV=1
+Length=413
+
+ Score = 52.3 bits (124),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 11/56 (20%), Positives = 26/56 (46%), Gaps = 0/56 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFN  59
+               ++    FPPC+      ++   +L H  R     FL  +G+++++ L  ++ +
+Sbjct  218  DFGVVEPDLFPPCISHALANVQGGVNLAHSMRFAMTSFLLSVGMSVDEILNLFNVS  273
+
+
+>sp|Q8PX26|PRIL_METMA DNA primase large subunit PriL OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 
+/ JCM 11833 / OCM 88) OX=192952 GN=priL PE=3 SV=1
+Length=370
+
+ Score = 51.2 bits (121),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 13/71 (18%), Positives = 30/71 (42%), Gaps = 0/71 (0%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+                +  + FPPC+      ++   +L H  R     FL  +G+++++ L  ++ +   +
+Sbjct  218  DFGAVKPELFPPCIAYALANVQGGVNLAHSMRFAMTSFLLNVGMSVDEILNLFNISPDFN  277
+
+Query  64   FXYTPFSCLKI  74
+               T +    I
+Sbjct  278  AEKTLYQIEHI  288
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.409    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7383282920
+Results from round 3
+
+
+Query= 5dqo_C
+
+Length=160
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens OX...  232     6e-74
+sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus OX...  228     3e-72
+sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus...  224     8e-71
+sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabid...  208     6e-65
+sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila mela...  191     9e-58
+sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis ...  186     4e-56
+sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharom...  178     2e-53
+sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces c...  178     6e-53
+sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neuros...  175     1e-51
+sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium d...  164     3e-48
+sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacter...  138     7e-39
+sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacter...  138     7e-39
+sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula...  126     3e-34
+sp|Q0W2J3|PRIL_METAR DNA primase large subunit PriL OS=Methanocel...  112     6e-29
+sp|Q8PX26|PRIL_METMA DNA primase large subunit PriL OS=Methanosar...  107     2e-27
+sp|Q46E38|PRIL_METBF DNA primase large subunit PriL OS=Methanosar...  106     1e-26
+sp|Q8TUF8|PRIL_METAC DNA primase large subunit PriL OS=Methanosar...  104     3e-26
+sp|Q12U19|PRIL_METBU DNA primase large subunit PriL OS=Methanococ...  102     3e-25
+sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplas...  93.7    3e-22
+sp|O29911|PRIL_ARCFU DNA primase large subunit PriL OS=Archaeoglo...  92.5    1e-21
+sp|Q9HJD1|PRIL_THEAC DNA primase large subunit PriL OS=Thermoplas...  90.2    6e-21
+sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyr...  87.5    1e-19
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P49643|PRI2_HUMAN DNA primase large subunit OS=Homo sapiens 
+OX=9606 GN=PRIM2 PE=1 SV=2
+Length=509
+
+ Score = 232 bits (592),  Expect = 6e-74, Method: Composition-based stats.
+ Identities = 156/185 (84%), Positives = 158/185 (85%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSCLKIILSNPPSQGDYHGCPFRHSDP
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCLKIILSNPPSQGDYHGCPFRHSDP  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES
+Sbjct  392  ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  451
+
+Query  156  QRILN  160
+            QRILN
+Sbjct  452  QRILN  456
+
+
+>sp|P33610|PRI2_MOUSE DNA primase large subunit OS=Mus musculus 
+OX=10090 GN=Prim2 PE=1 SV=1
+Length=505
+
+ Score = 228 bits (580),  Expect = 3e-72, Method: Composition-based stats.
+ Identities = 143/185 (77%), Positives = 148/185 (80%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSC+KIIL+NPP QGDYHGCPFRHSD 
+Sbjct  332  IRGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPGQGDYHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+QSYKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQSYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|O89044|PRI2_RAT DNA primase large subunit OS=Rattus norvegicus 
+OX=10116 GN=Prim2 PE=2 SV=1
+Length=507
+
+ Score = 224 bits (571),  Expect = 8e-71, Method: Composition-based stats.
+ Identities = 142/185 (77%), Positives = 149/185 (81%), Gaps = 25/185 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SLDQID LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL       
+Sbjct  272  SLDQIDSLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEF  331
+
+Query  54   -----------QXYSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDP  95
+                       + YS+NIRHSF        YTPFSC+KIIL+NPPSQGD+HGCPFRHSD 
+Sbjct  332  IKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCMKIILTNPPSQGDFHGCPFRHSDA  391
+
+Query  96   ELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+            ELLKQK+Q+YKI   GISQILDLVKG HYQVACQKYFEM HNVDDCGFSLNHPNQFF ES
+Sbjct  392  ELLKQKMQTYKIPASGISQILDLVKGNHYQVACQKYFEMTHNVDDCGFSLNHPNQFFFES  451
+
+Query  156  QRILN  160
+            QRIL 
+Sbjct  452  QRILT  456
+
+
+>sp|Q84WJ2|PRI2_ARATH Probable DNA primase large subunit OS=Arabidopsis 
+thaliana OX=3702 GN=At1g67320 PE=2 SV=2
+Length=454
+
+ Score = 208 bits (528),  Expect = 6e-65, Method: Composition-based stats.
+ Identities = 82/184 (45%), Positives = 109/184 (59%), Gaps = 26/184 (14%)
+
+Query  1    SLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-------  53
+            SL  ID +S  SFP CMR L + LRE+HHL+HGGRMQ GLFLKG+GL L+ AL       
+Sbjct  265  SLKDIDQVSKSSFPLCMRHLFEKLREDHHLKHGGRMQLGLFLKGVGLKLDDALAFWREEF  324
+
+Query  54   ----------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPE  96
+                      + Y++ IRH++        YTP++C KII S  P  GD+HGCP+RH   +
+Sbjct  325  TKKVGSERFDKEYAYAIRHNYGKEGKRTDYTPYACSKIITS-APGAGDHHGCPYRHFSED  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+             LK  L    +S  G+  ++D V+  HYQ+AC   FE ++    C   +NHPNQ+F ESQ
+Sbjct  384  NLKAALSRMGLSSRGMEDVMDKVRNRHYQLACTLTFEAVYGT-SCDTGINHPNQYFEESQ  442
+
+Query  157  RILN  160
+            +IL 
+Sbjct  443  KILK  446
+
+
+>sp|Q9VPH2|PRI2_DROME DNA primase large subunit OS=Drosophila 
+melanogaster OX=7227 GN=DNApol-alpha60 PE=1 SV=2
+Length=533
+
+ Score = 191 bits (485),  Expect = 9e-58, Method: Composition-based stats.
+ Identities = 76/179 (42%), Positives = 103/179 (58%), Gaps = 26/179 (15%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQX------  55
+            ++ +D LS  S P CMR  H+ +R NHH++H GRMQYGLFLKGIG+ LE +L+       
+Sbjct  284  IESLDQLSKTSMPLCMRMCHEHIRANHHIKHSGRMQYGLFLKGIGVALEDSLRFWREEFT  343
+
+Query  56   -----------YSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDPEL  97
+                       Y +NI H++        YTP+SC KII  +    GD HGCP+++ D   
+Sbjct  344  KKMDADKFTRSYEYNIYHNYGKKGSMVNYTPYSCAKII-KDVAGPGDCHGCPYKNMDQGS  402
+
+Query  98   LKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQ  156
+            LK KL SY +S   I +++  V   HYQ+ C KYF++ HN      S+NHPN +F ESQ
+Sbjct  403  LKTKLSSYGLSASAIDEVMFFVSRGHYQIGCGKYFQLTHN-SPVEPSINHPNNYFEESQ  460
+
+
+>sp|O02334|PRI2_CAEEL DNA primase large subunit OS=Caenorhabditis 
+elegans OX=6239 GN=pri-2 PE=3 SV=2
+Length=503
+
+ Score = 186 bits (472),  Expect = 4e-56, Method: Composition-based stats.
+ Identities = 83/182 (46%), Positives = 111/182 (61%), Gaps = 27/182 (15%)
+
+Query  5    IDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL-----------  53
+            ID LS +SF PCM+Q+H  LR NHHL++G R QYGLFLKGIGL+L++A+           
+Sbjct  298  IDKLSRRSFAPCMKQMHNHLRVNHHLKYGARRQYGLFLKGIGLSLDEAIAMMRDEFTKKI  357
+
+Query  54   ------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQ  100
+                  + Y +NIR+ +         T  SC  IIL NPPS  D HGCPFRHS+ ++LKQ
+Sbjct  358  TSDKFDKEYGYNIRYMYGKEGRRVAQTAMSCATIILRNPPSAVDCHGCPFRHSEKQVLKQ  417
+
+Query  101  KLQSYKI-SPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFS--LNHPNQFFCESQR  157
+            KL S  I     I +I +L +   Y  AC +YFE +HN+++ G    + HPNQF+ ESQ+
+Sbjct  418  KLGSDAILKKEQIERIAELAELNQYDKACTRYFEFMHNLEEGGLGQLITHPNQFYEESQK  477
+
+Query  158  IL  159
+            I+
+Sbjct  478  IV  479
+
+
+>sp|O74761|PRI2_SCHPO DNA primase large subunit OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=pri2 PE=1 
+SV=1
+Length=459
+
+ Score = 178 bits (451),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 63/178 (35%), Positives = 92/178 (52%), Gaps = 27/178 (15%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL----------  53
+            Q+D      FP C + LH+ L+ + HLRH GR+QYGLFLK IGL++++AL          
+Sbjct  280  QVDSFV-SHFPLCAKHLHEVLKRDKHLRHFGRLQYGLFLKDIGLSVDEALVFWRKSFTNV  338
+
+Query  54   ------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQ  100
+                  + Y +NIRH++        Y  ++C +I+       GD HGCP+R      L  
+Sbjct  339  TEDKFNKEYRYNIRHTYGLEGNRKNYKGYNCQQILTGPQLGPGDAHGCPYRTYSVNNLVS  398
+
+Query  101  KLQSYKI--SPGGISQILDLVKGTHYQVACQKYFEMIH-NVDDCGFSLNHPNQFFCES  155
+             L S  I     G  ++++ VK  HY +AC + FE+ H NV     S++HP Q+F  S
+Sbjct  399  ALASMGIAPDSAGCREVVEAVKARHYHIACTRVFELTHPNVGSLEESIHHPLQYFQLS  456
+
+
+>sp|P20457|PRI2_YEAST DNA primase large subunit OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PRI2 
+PE=1 SV=1
+Length=528
+
+ Score = 178 bits (452),  Expect = 6e-53, Method: Composition-based stats.
+ Identities = 61/179 (34%), Positives = 91/179 (51%), Gaps = 32/179 (18%)
+
+Query  10   TKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQX--------------  55
+            + ++P C++ L + L++NHHLR+ GR Q  LFLKGIGL+ ++AL+               
+Sbjct  330  SSNYPLCIKNLMEGLKKNHHLRYYGRQQLSLFLKGIGLSADEALKFWSEAFTRNGNMTME  389
+
+Query  56   -----YSFNIRHSFX-------YTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQ  103
+                 Y ++ RH++        Y P+ C  I+    P +GDYHGCPFR    E L  +L+
+Sbjct  390  KFNKEYRYSFRHNYGLEGNRINYKPWDCHTILSKPRPGRGDYHGCPFRDWSHERLSAELR  449
+
+Query  104  SYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLN------HPNQFFCESQ  156
+            S K++   I  +LD  +   Y +AC K FEM HN       +       HPN +F  S+
+Sbjct  450  SMKLTQAQIISVLDSCQKGEYTIACTKVFEMTHNSASADLEIGEQTHIAHPNLYFERSR  508
+
+
+>sp|Q8NIZ4|PRI2_NEUCR Probable DNA primase large subunit OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=5F3.150 PE=3 SV=1
+Length=513
+
+ Score = 175 bits (443),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 65/201 (32%), Positives = 99/201 (49%), Gaps = 43/201 (21%)
+
+Query  3    DQIDL-LSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL--------  53
+              ID  ++   FP CM  LH+ LR + HL+H GR+QY LFLKGIGL LE+ L        
+Sbjct  301  RNIDTLVNNHHFPACMSHLHRTLRRDAHLKHYGRLQYTLFLKGIGLNLEECLLFWRQSFN  360
+
+Query  54   --------QXYSFNIRHSF------------XYTPFSCLKIILSNPPSQGDYHGCPFRHS  93
+                    + Y +N+RH++             Y+P+SC KI+  +PP  G+ HGCP+RH 
+Sbjct  361  KITDDTFNKEYRYNVRHTYGDVGGDSNRRGGGYSPYSCQKILTEHPPGPGEAHGCPYRHF  420
+
+Query  94   DPELLKQKLQSYK--ISPGGISQILDLVKGTHYQVACQKYFEMIH-----NVDDCG----  142
+            + E L+  LQ        G ++ + +  +   + +AC + FE +H        D G    
+Sbjct  421  NMENLQTLLQQGMGVTDRGVLNGVKEDKEKQKFHMACNRVFEHLHKEELKKAKDEGIMTA  480
+
+Query  143  ---FSLNHPNQFFCESQRILN  160
+                ++ HPN++F  S  + N
+Sbjct  481  AQLETIVHPNEYFKRSYLLKN  501
+
+
+>sp|Q55BM5|PRI2_DICDI DNA primase large subunit OS=Dictyostelium 
+discoideum OX=44689 GN=prim2 PE=3 SV=1
+Length=470
+
+ Score = 164 bits (416),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 66/179 (37%), Positives = 94/179 (53%), Gaps = 29/179 (16%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQAL---------  53
+            + +  LS  SFP CMR ++ +L E   L++ GR+Q+G FLKGIGL  ++A+         
+Sbjct  266  EDVSPLSKTSFPMCMRVMYDSLVETSSLKYEGRLQFGTFLKGIGLPYDEAINFWRIAFSK  325
+
+Query  54   --------QXYSFNIRHSF-------XYTPFSCLKIILSNPPSQGD--YHGCPFRHSDPE  96
+                    + Y +NIRH++        Y+P+SC +II    P  GD   HGCP+  S  E
+Sbjct  326  RVSNTDFDKEYLYNIRHNYGLEGKSTNYSPYSCPRIISK-SPHNGDKLVHGCPYIQS-LE  383
+
+Query  97   LLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCES  155
+             L+QKL    I      QIL+  K T   VAC K+F  +H  +     +NHPNQF+ +S
+Sbjct  384  RLEQKLLDLGIDDFQRIQILEATK-TSPNVACTKHFNFLHPNNTLTKLINHPNQFYDQS  441
+
+
+>sp|Q9HN47|PRIL_HALSA DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 138 bits (347),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 51/151 (34%), Gaps = 38/151 (25%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N   
+Sbjct  224  REIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN---  280
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                             P  G+                ++  Y+             + T
+Sbjct  281  -----------------PGFGE----------------EMTRYQTDHIQGDS--SPTEYT  305
+
+Query  123  HYQVACQKYFEMIHNVDDCGFSLNHPNQFFC  153
+                A  K +    N DD   ++NHP  ++ 
+Sbjct  306  APSCATMKAYGNCVNPDDLCDAINHPLSYYE  336
+
+
+>sp|B0R7F5|PRIL_HALS3 DNA primase large subunit PriL OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 
+GN=priL PE=3 SV=1
+Length=360
+
+ Score = 138 bits (347),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 51/151 (34%), Gaps = 38/151 (25%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   ++   HL H  R     FL  +GL+ ++ +  Y  N   
+Sbjct  224  REIDTVVPELFPPCMKHLLDQVQRGDHLPHHARFAITSFLSNVGLSTDEIVDIYEVN---  280
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                             P  G+                ++  Y+             + T
+Sbjct  281  -----------------PGFGE----------------EMTRYQTDHIQGDS--SPTEYT  305
+
+Query  123  HYQVACQKYFEMIHNVDDCGFSLNHPNQFFC  153
+                A  K +    N DD   ++NHP  ++ 
+Sbjct  306  APSCATMKAYGNCVNPDDLCDAINHPLSYYE  336
+
+
+>sp|Q5UYQ8|PRIL_HALMA DNA primase large subunit PriL OS=Haloarcula 
+marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / 
+VKM B-1809) OX=272569 GN=priL PE=3 SV=1
+Length=358
+
+ Score = 126 bits (315),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 27/152 (18%), Positives = 52/152 (34%), Gaps = 38/152 (25%)
+
+Query  3    DQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRH  62
+             +ID +  + FPPCM+ L   +++  HL H  R     FL GIG+T ++ +  +  N   
+Sbjct  221  REIDTVVPELFPPCMKSLLDQVQKGEHLEHHSRFAIATFLVGIGMTTDEIVDLFQVNPGF  280
+
+Query  63   SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGT  122
+                T +    I     P                                       + +
+Sbjct  281  GEEATRYQVDHIRGDTSP--------------------------------------TEYS  302
+
+Query  123  HYQVACQKYFEMIHNVDDCGFSLNHPNQFFCE  154
+                +  + +    N+DD   +++HP  ++ +
+Sbjct  303  TPACSTMQSYGDCVNMDDLCEAISHPMGYYEQ  334
+
+
+>sp|Q0W2J3|PRIL_METAR DNA primase large subunit PriL OS=Methanocella 
+arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50) OX=351160 
+GN=priL PE=3 SV=1
+Length=366
+
+ Score = 112 bits (279),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 27/152 (18%), Positives = 43/152 (28%), Gaps = 39/152 (26%)
+
+Query  6    DLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHSFX  65
+              ++  SFPPCM+ L   L++  +L H  R     FL  IGL  +  +  Y         
+Sbjct  217  GEVTQDSFPPCMKNLLADLQKGINLPHTARFALTSFLANIGLDKDAIMDLYRMAPDFRED  276
+
+Query  66   YTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTHYQ  125
+             T +    I        G  + CP                                    
+Sbjct  277  LTHYQVQHITG----GSGTEYTCP-----------------------------------G  297
+
+Query  126  VACQKYFEMIHNVDDCGFSLNHPNQFFCESQR  157
+                  +      +     + HP  ++ +SQR
+Sbjct  298  CKTMMTYGNCIGKNKLCEYVTHPLSYYRKSQR  329
+
+
+>sp|Q8PX26|PRIL_METMA DNA primase large subunit PriL OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 
+/ JCM 11833 / OCM 88) OX=192952 GN=priL PE=3 SV=1
+Length=370
+
+ Score = 107 bits (268),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 20/157 (13%), Positives = 47/157 (30%), Gaps = 39/157 (25%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+                +  + FPPC+      ++   +L H  R     FL  +G+++++ L  ++ +   +
+Sbjct  218  DFGAVKPELFPPCIAYALANVQGGVNLAHSMRFAMTSFLLNVGMSVDEILNLFNISPDFN  277
+
+Query  64   FXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTH  123
+               T +    I      + G+ +  P                                  
+Sbjct  278  AEKTLYQIEHIAG----ATGNTYKPP----------------------------------  299
+
+Query  124  YQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQRILN  160
+                  + +      D     ++HP  ++ +   I N
+Sbjct  300  -ACDTMRTYGNCVGKDRLCEKISHPLGYYEKKVFIKN  335
+
+
+>sp|Q46E38|PRIL_METBF DNA primase large subunit PriL OS=Methanosarcina 
+barkeri (strain Fusaro / DSM 804) OX=269797 GN=priL 
+PE=3 SV=1
+Length=413
+
+ Score = 106 bits (265),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 20/157 (13%), Positives = 46/157 (29%), Gaps = 39/157 (25%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+               ++    FPPC+      ++   +L H  R     FL  +G+++++ L  ++ +    
+Sbjct  218  DFGVVEPDLFPPCISHALANVQGGVNLAHSMRFAMTSFLLSVGMSVDEILNLFNVSPDFD  277
+
+Query  64   FXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTH  123
+               T +    I      + G+ +  P                                  
+Sbjct  278  AEVTLYQIEHIAG----ATGNVYKPP----------------------------------  299
+
+Query  124  YQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQRILN  160
+                  + +      D     +NHP  ++ +   + N
+Sbjct  300  -ACDTMRTYGNCIGKDRLCEKINHPLAYYEKKIYLKN  335
+
+
+>sp|Q8TUF8|PRIL_METAC DNA primase large subunit PriL OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 
+/ C2A) OX=188937 GN=priL PE=3 SV=1
+Length=371
+
+ Score = 104 bits (260),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 19/151 (13%), Positives = 43/151 (28%), Gaps = 39/151 (26%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+                +  + FPPC+      ++   +L H  R     FL  +G+++E+ L  ++ +    
+Sbjct  218  DFGAVEPELFPPCISHALANVQGGVNLAHSMRFAMTSFLLNVGMSVEEILNLFNVSPDFD  277
+
+Query  64   FXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTH  123
+               T +    I      + G+ +  P                                  
+Sbjct  278  AEKTLYQIEHIAG----ATGNEYKPP----------------------------------  299
+
+Query  124  YQVACQKYFEMIHNVDDCGFSLNHPNQFFCE  154
+                  + +      D     ++HP  ++  
+Sbjct  300  -ACDTMRTYGNCIGKDGLCAKISHPLGYYER  329
+
+
+>sp|Q12U19|PRIL_METBU DNA primase large subunit PriL OS=Methanococcoides 
+burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 
+/ ACE-M) OX=259564 GN=priL PE=3 SV=1
+Length=364
+
+ Score = 102 bits (254),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 21/157 (13%), Positives = 46/157 (29%), Gaps = 38/157 (24%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+            +   + +  FPPC+ Q    +R   +L H  R     FL  IG+++++ +  ++ +    
+Sbjct  225  EFQRVESDLFPPCITQAIANVRAGVNLAHSMRFAMTSFLINIGMSVDEVVAMFNISPDFD  284
+
+Query  64   FXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTH  123
+               T +    I        G   G  ++                                
+Sbjct  285  EEKTRYQIEHI-------AGTSSGTTYKP-------------------------------  306
+
+Query  124  YQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQRILN  160
+                  + +      D+    + HP  ++     + N
+Sbjct  307  PSCNTMRTYGNCSAPDELCKGVKHPLGYYSRRVWVKN  343
+
+
+>sp|Q97BA1|PRIL_THEVO DNA primase large subunit PriL OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / 
+NBRC 15438 / GSS1) OX=273116 GN=priL PE=3 SV=1
+Length=327
+
+ Score = 93.7 bits (231),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 22/91 (24%), Positives = 43/91 (47%), Gaps = 17/91 (19%)
+
+Query  5    IDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY--------  56
+            I   +TK+FPPCM+++ + L E  ++ H GR+    FL  +G T ++ ++ +        
+Sbjct  207  IGRGNTKAFPPCMKEIIRNLHEGINVPHMGRLAIASFLHKVGYTEDEIVEYFRNAPDFDE  266
+
+Query  57   ---SFNIRH------SFXYTPFSCLKIILSN  78
+                + I+H         Y+P  C  +  ++
+Sbjct  267  SITRYQIKHLSGEISGVEYSPPKCETMRSNH  297
+
+
+>sp|O29911|PRIL_ARCFU DNA primase large subunit PriL OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=priL PE=3 SV=1
+Length=370
+
+ Score = 92.5 bits (228),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 18/151 (12%), Positives = 40/151 (26%), Gaps = 41/151 (27%)
+
+Query  4    QIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXYSFNIRHS  63
+             +  +     PPCMR++   L+   ++ H  R     FL  IG+T+++ +  +       
+Sbjct  256  DLGEVDLNCLPPCMREILSELQRGMNIPHTARFAITSFLLNIGMTVDEIIALFKSAPDFD  315
+
+Query  64   FXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTH  123
+               T +    I                                             + T 
+Sbjct  316  DEKTRYQVEHIAGERGKGA-------------------------------------EYTS  338
+
+Query  124  YQVACQKYFEMIHNVDDCGFSLNHPNQFFCE  154
+                  + +            ++HP  ++ +
+Sbjct  339  PSCDTMRTYSNCV----ADCRVSHPLIYYKK  365
+
+
+>sp|Q9HJD1|PRIL_THEAC DNA primase large subunit PriL OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 
+/ NBRC 15155 / AMRC-C165) OX=273075 GN=priL PE=3 SV=1
+Length=340
+
+ Score = 90.2 bits (222),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 25/122 (20%), Positives = 44/122 (36%), Gaps = 22/122 (18%)
+
+Query  6    DLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY---------  56
+                   FPPCM+++ K L    ++ H GR+    FL   G + ++ +  +         
+Sbjct  219  GKGDASMFPPCMKEIIKNLESGVNVSHMGRLALASFLHKAGYSEDEIVPYFRNAPDFDEN  278
+
+Query  57   --SFNIRH------SFXYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKIS  108
+               + I+H         YTP  C  +  ++     D   C       E +K  L  Y++ 
+Sbjct  279  ITRYQIKHISGEISGTEYTPPKCETMRSNHLCYMDDDPLC-----HREWMKHPLTYYEVK  333
+
+Query  109  PG  110
+              
+Sbjct  334  RR  335
+
+
+>sp|Q8TVJ5|PRIL_METKA DNA primase large subunit PriL OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=priL PE=3 SV=1
+Length=406
+
+ Score = 87.5 bits (215),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/91 (22%), Positives = 41/91 (45%), Gaps = 18/91 (20%)
+
+Query  2    LDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQXY-----  56
+            L++++  +   FPPC+R+L +  +E  +L H  R     FL  +G  +++ ++ +     
+Sbjct  288  LERVEKGAGGRFPPCIRELLRRAQEGENLPHEARFALAAFLVNVGWDVDRVVEVFSNLPD  347
+
+Query  57   ------SFNIRH-------SFXYTPFSCLKI  74
+                   + +RH          Y P +C K+
+Sbjct  348  FDEERTQYQVRHIAGEVGGGTRYLPPNCDKM  378
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.357    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7383282920
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

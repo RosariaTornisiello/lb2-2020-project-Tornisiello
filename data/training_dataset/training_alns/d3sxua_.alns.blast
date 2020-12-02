@@ -1,0 +1,219 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3sxua_
+
+Length=146
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P28905|HOLC_ECOLI DNA polymerase III subunit chi OS=Escherichi...  301     7e-106
+sp|P43749|HOLC_HAEIN DNA polymerase III subunit chi OS=Haemophilu...  153     1e-47 
+sp|O68823|HOLC_PSEAE DNA polymerase III subunit chi OS=Pseudomona...  78.6    3e-18 
+
+
+>sp|P28905|HOLC_ECOLI DNA polymerase III subunit chi OS=Escherichia 
+coli (strain K12) OX=83333 GN=holC PE=1 SV=1
+Length=147
+
+ Score = 301 bits (770),  Expect = 7e-106, Method: Compositional matrix adjust.
+ Identities = 146/146 (100%), Positives = 146/146 (100%), Gaps = 0/146 (0%)
+
+Query  1    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  60
+            KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA
+Sbjct  2    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  61
+
+Query  61   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  120
+            ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED
+Sbjct  62   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  121
+
+Query  121  SLKQLARERYKAYRVAGFNLNTATWK  146
+            SLKQLARERYKAYRVAGFNLNTATWK
+Sbjct  122  SLKQLARERYKAYRVAGFNLNTATWK  147
+
+
+>sp|P43749|HOLC_HAEIN DNA polymerase III subunit chi OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=holC PE=3 SV=1
+Length=144
+
+ Score = 153 bits (387),  Expect = 1e-47, Method: Compositional matrix adjust.
+ Identities = 71/142 (50%), Positives = 98/142 (69%), Gaps = 4/142 (3%)
+
+Query  1    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  60
+            K A FY+L  + T+     VE++ C +AA  WRSGK+VLI+CE E QA  +DE LW R  
+Sbjct  3    KTAQFYILTENCTL----TVEEIACNLAASIWRSGKKVLISCESEAQALEIDERLWQRDP  58
+
+Query  61   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  120
+              FVPHNL+GE  +   P+EI+W  KR+  RRD+LI+L+    DF+ +FT+++DFVP +D
+Sbjct  59   NEFVPHNLSGEATQYPTPIEISWLGKRNLQRRDLLINLQQEIPDFSHSFTQIIDFVPKDD  118
+
+Query  121  SLKQLARERYKAYRVAGFNLNT  142
+            +LK  ARERYK  R+ G+NL+T
+Sbjct  119  ALKTQARERYKQLRLQGWNLST  140
+
+
+>sp|O68823|HOLC_PSEAE DNA polymerase III subunit chi OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=holC 
+PE=3 SV=1
+Length=142
+
+ Score = 78.6 bits (192),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 44/124 (35%), Positives = 68/124 (55%), Gaps = 3/124 (2%)
+
+Query  18   SAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPAESFVPHNLAGEGPRGGA  77
+            SA  Q+ C +A + WR G +V + C DE Q   LD  LW+   E+F+PH+LA E     A
+Sbjct  15   SARLQVACRLAEKAWRQGMQVYLHCADEAQRSELDGRLWSFRGEAFIPHSLAEED--AEA  72
+
+Query  78   PVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYEDSLKQLARERYKAYRVAG  137
+            PV +   +    + RD+LI+L      F   F+ V + V  E +++Q AR++++ YR  G
+Sbjct  73   PVALGLGEP-PGNHRDLLINLTLEAPGFVPNFSRVAELVVEEPAIRQAARDKFRFYREQG  131
+
+Query  138  FNLN  141
+            + L 
+Sbjct  132  YPLQ  135
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.133    0.401    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5724494960
+Results from round 2
+
+
+Query= d3sxua_
+
+Length=146
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P28905|HOLC_ECOLI DNA polymerase III subunit chi OS=Escherichi...  240     1e-81
+sp|P43749|HOLC_HAEIN DNA polymerase III subunit chi OS=Haemophilu...  224     1e-75
+sp|O68823|HOLC_PSEAE DNA polymerase III subunit chi OS=Pseudomona...  186     2e-60
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P28905|HOLC_ECOLI DNA polymerase III subunit chi OS=Escherichia 
+coli (strain K12) OX=83333 GN=holC PE=1 SV=1
+Length=147
+
+ Score = 240 bits (611),  Expect = 1e-81, Method: Composition-based stats.
+ Identities = 146/146 (100%), Positives = 146/146 (100%), Gaps = 0/146 (0%)
+
+Query  1    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  60
+            KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA
+Sbjct  2    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  61
+
+Query  61   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  120
+            ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED
+Sbjct  62   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  121
+
+Query  121  SLKQLARERYKAYRVAGFNLNTATWK  146
+            SLKQLARERYKAYRVAGFNLNTATWK
+Sbjct  122  SLKQLARERYKAYRVAGFNLNTATWK  147
+
+
+>sp|P43749|HOLC_HAEIN DNA polymerase III subunit chi OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=holC PE=3 SV=1
+Length=144
+
+ Score = 224 bits (571),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 71/142 (50%), Positives = 98/142 (69%), Gaps = 4/142 (3%)
+
+Query  1    KNATFYLLDNDTTVDGLSAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPA  60
+            K A FY+L  + T+     VE++ C +AA  WRSGK+VLI+CE E QA  +DE LW R  
+Sbjct  3    KTAQFYILTENCTL----TVEEIACNLAASIWRSGKKVLISCESEAQALEIDERLWQRDP  58
+
+Query  61   ESFVPHNLAGEGPRGGAPVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYED  120
+              FVPHNL+GE  +   P+EI+W  KR+  RRD+LI+L+    DF+ +FT+++DFVP +D
+Sbjct  59   NEFVPHNLSGEATQYPTPIEISWLGKRNLQRRDLLINLQQEIPDFSHSFTQIIDFVPKDD  118
+
+Query  121  SLKQLARERYKAYRVAGFNLNT  142
+            +LK  ARERYK  R+ G+NL+T
+Sbjct  119  ALKTQARERYKQLRLQGWNLST  140
+
+
+>sp|O68823|HOLC_PSEAE DNA polymerase III subunit chi OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=holC 
+PE=3 SV=1
+Length=142
+
+ Score = 186 bits (471),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 44/124 (35%), Positives = 68/124 (55%), Gaps = 3/124 (2%)
+
+Query  18   SAVEQLVCEIAAERWRSGKRVLIACEDEKQAYRLDEALWARPAESFVPHNLAGEGPRGGA  77
+            SA  Q+ C +A + WR G +V + C DE Q   LD  LW+   E+F+PH+LA E     A
+Sbjct  15   SARLQVACRLAEKAWRQGMQVYLHCADEAQRSELDGRLWSFRGEAFIPHSLAEED--AEA  72
+
+Query  78   PVEIAWPQKRSSSRRDILISLRTSFADFATAFTEVVDFVPYEDSLKQLARERYKAYRVAG  137
+            PV +   +    + RD+LI+L      F   F+ V + V  E +++Q AR++++ YR  G
+Sbjct  73   PVALGLGEP-PGNHRDLLINLTLEAPGFVPNFSRVAELVVEEPAIRQAARDKFRFYREQG  131
+
+Query  138  FNLN  141
+            + L 
+Sbjct  132  YPLQ  135
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.355    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0397    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5724494960
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

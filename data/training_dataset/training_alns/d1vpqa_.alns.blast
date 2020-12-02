@@ -1,0 +1,298 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vpqa_
+
+Length=260
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis (s...  109     3e-27
+
+
+>sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yunF PE=3 SV=2
+Length=282
+
+ Score = 109 bits (272),  Expect = 3e-27, Method: Compositional matrix adjust.
+ Identities = 86/273 (32%), Positives = 136/273 (50%), Gaps = 20/273 (7%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G +G+   D    +YP      + L+ Y +   F IVEL+ ++Y     R+  + +
+Sbjct  1    MIYIGLTGWGDHD---SIYPPKTASQKKLQAYSS--HFPIVELDASFYAIQPARNNEKWV  55
+
+Query  62   RKTPPDFYFTVKT-PGSVTHVLWKEGKDPKEDM-ENFTRQIEPLIEEQRLKMTLAQFPFS  119
+            ++TP  F F VK   G   H   +   D KE+M + F   + P +   +L M L QFP  
+Sbjct  56   KETPETFQFIVKAYQGMTGHQRGEIPFDSKEEMFDAFKVSLTPYLHSNKLAMVLFQFPPW  115
+
+Query  120  FKFSRKNVEYLEKLRESY-PYELAVEFRHYSWDR----EETYEFLRNHGITFVVVDEPKL  174
+            F   ++NV YL   +        A+EFR+ SW      E+T  F++  G    V DEP++
+Sbjct  116  FDCKKENVAYLRWCKHQMGDIPCALEFRNRSWFSPPFYEQTLSFMKAEGWIHSVCDEPQI  175
+
+Query  175  P-GLFP-YRPITTTDYAYFRFHGRNER-WFEAEG-----EERYDYLYSEEELKTLFEDVV  226
+              G  P     T  +    RFHGRN++ W + +G     E RY Y Y+++EL+   + + 
+Sbjct  176  GEGSVPTVLRATDENKTLVRFHGRNKQGWMKPDGGKNWREVRYLYRYNQQELEDWKKHLN  235
+
+Query  227  ELSRRVKETYVFFNNCYKGQAAINALQFKKMLE  259
+            EL ++ K+ +V FNN   G AA N  Q  ++L+
+Sbjct  236  ELQQQCKDVFVLFNNNSGGDAADNGKQMLELLD  268
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.139    0.435    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20016472220
+Results from round 2
+
+
+Query= d1vpqa_
+
+Length=260
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis (s...  394     9e-139
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8XCI6|YECE_ECO57 UPF0759 protein YecE OS=Escherichia coli O15...  45.1    2e-04
+sp|P37348|YECE_ECOLI UPF0759 protein YecE OS=Escherichia coli (st...  45.1    3e-04
+
+
+>sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yunF PE=3 SV=2
+Length=282
+
+ Score = 394 bits (1012),  Expect = 9e-139, Method: Composition-based stats.
+ Identities = 86/273 (32%), Positives = 136/273 (50%), Gaps = 20/273 (7%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G +G+   D    +YP      + L+ Y +   F IVEL+ ++Y     R+  + +
+Sbjct  1    MIYIGLTGWGDHD---SIYPPKTASQKKLQAYSS--HFPIVELDASFYAIQPARNNEKWV  55
+
+Query  62   RKTPPDFYFTVKT-PGSVTHVLWKEGKDPKEDM-ENFTRQIEPLIEEQRLKMTLAQFPFS  119
+            ++TP  F F VK   G   H   +   D KE+M + F   + P +   +L M L QFP  
+Sbjct  56   KETPETFQFIVKAYQGMTGHQRGEIPFDSKEEMFDAFKVSLTPYLHSNKLAMVLFQFPPW  115
+
+Query  120  FKFSRKNVEYLEKLRESY-PYELAVEFRHYSWDR----EETYEFLRNHGITFVVVDEPKL  174
+            F   ++NV YL   +        A+EFR+ SW      E+T  F++  G    V DEP++
+Sbjct  116  FDCKKENVAYLRWCKHQMGDIPCALEFRNRSWFSPPFYEQTLSFMKAEGWIHSVCDEPQI  175
+
+Query  175  P-GLFP-YRPITTTDYAYFRFHGRNER-WFEAEG-----EERYDYLYSEEELKTLFEDVV  226
+              G  P     T  +    RFHGRN++ W + +G     E RY Y Y+++EL+   + + 
+Sbjct  176  GEGSVPTVLRATDENKTLVRFHGRNKQGWMKPDGGKNWREVRYLYRYNQQELEDWKKHLN  235
+
+Query  227  ELSRRVKETYVFFNNCYKGQAAINALQFKKMLE  259
+            EL ++ K+ +V FNN   G AA N  Q  ++L+
+Sbjct  236  ELQQQCKDVFVLFNNNSGGDAADNGKQMLELLD  268
+
+
+>sp|Q8XCI6|YECE_ECO57 UPF0759 protein YecE OS=Escherichia coli 
+O157:H7 OX=83334 GN=yecE PE=3 SV=1
+Length=272
+
+ Score = 45.1 bits (105),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 43/189 (23%), Positives = 70/189 (37%), Gaps = 22/189 (12%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G   +S   W  +           L+ Y     F  VE N T Y  P     ++  
+Sbjct  1    MIYIGLPQWSHPKWVRL-------GITSLEEY--ARHFNCVEGNTTLYALPKPEVVLRWR  51
+
+Query  62   RKTPPDFYFTVKTPGSVTHVLWKEGKDPKEDMENFTRQIEPLIEEQRLKMTLAQFPFSFK  121
+             +T  DF F  K P +++H       D  + +  F  ++ PL    R+     Q P +F 
+Sbjct  52   EQTTDDFRFCFKFPATISHQAALRHCD--DLVTEFLTRMSPL--APRIGQYWLQLPATFG  107
+
+Query  122  FSRKNV--EYLEKLRESYPYELAVEFRHYSWDR----EETYEF-LRNHGITFVVVDEPKL  174
+                     +L+ L   + Y   VE RH  +      E+T    L   G+  V++D   +
+Sbjct  108  PRELPALWHFLDSLPGEFNY--GVEVRHPQFFAKGEEEQTLNRGLHQRGVNQVILDSRPV  165
+
+Query  175  PGLFPYRPI  183
+                P+   
+Sbjct  166  HAARPHSEA  174
+
+
+>sp|P37348|YECE_ECOLI UPF0759 protein YecE OS=Escherichia coli 
+(strain K12) OX=83333 GN=yecE PE=3 SV=4
+Length=272
+
+ Score = 45.1 bits (105),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 43/189 (23%), Positives = 70/189 (37%), Gaps = 22/189 (12%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G   +S   W  +           L+ Y     F  VE N T Y  P     ++  
+Sbjct  1    MIYIGLPQWSHPKWVRL-------GITSLEEY--ARHFNCVEGNTTLYALPKPEVVLRWR  51
+
+Query  62   RKTPPDFYFTVKTPGSVTHVLWKEGKDPKEDMENFTRQIEPLIEEQRLKMTLAQFPFSFK  121
+             +T  DF F  K P +++H       D  + +  F  ++ PL    R+     Q P +F 
+Sbjct  52   EQTTDDFRFCFKFPATISHQAALRHCD--DLVTEFLTRMSPL--APRIGQYWLQLPATFG  107
+
+Query  122  FSRKNV--EYLEKLRESYPYELAVEFRHYSWDR----EETYEF-LRNHGITFVVVDEPKL  174
+                     +L+ L   + Y   VE RH  +      E+T    L   G+  V++D   +
+Sbjct  108  PRELPALWHFLDSLPGEFNY--GVEVRHPQFFAKGEEEQTLNRGLHQRGVNRVILDSRPV  165
+
+Query  175  PGLFPYRPI  183
+                P+   
+Sbjct  166  HAARPHSEA  174
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.367    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20016472220
+Results from round 3
+
+
+Query= d1vpqa_
+
+Length=260
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis (s...  352     4e-122
+sp|Q8XCI6|YECE_ECO57 UPF0759 protein YecE OS=Escherichia coli O15...  214     7e-68 
+sp|P37348|YECE_ECOLI UPF0759 protein YecE OS=Escherichia coli (st...  213     2e-67 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O32135|YUNF_BACSU UPF0759 protein YunF OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=yunF PE=3 SV=2
+Length=282
+
+ Score = 352 bits (902),  Expect = 4e-122, Method: Composition-based stats.
+ Identities = 86/273 (32%), Positives = 136/273 (50%), Gaps = 20/273 (7%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G +G+   D    +YP      + L+ Y +   F IVEL+ ++Y     R+  + +
+Sbjct  1    MIYIGLTGWGDHD---SIYPPKTASQKKLQAYSS--HFPIVELDASFYAIQPARNNEKWV  55
+
+Query  62   RKTPPDFYFTVKT-PGSVTHVLWKEGKDPKEDM-ENFTRQIEPLIEEQRLKMTLAQFPFS  119
+            ++TP  F F VK   G   H   +   D KE+M + F   + P +   +L M L QFP  
+Sbjct  56   KETPETFQFIVKAYQGMTGHQRGEIPFDSKEEMFDAFKVSLTPYLHSNKLAMVLFQFPPW  115
+
+Query  120  FKFSRKNVEYLEKLRESY-PYELAVEFRHYSWDR----EETYEFLRNHGITFVVVDEPKL  174
+            F   ++NV YL   +        A+EFR+ SW      E+T  F++  G    V DEP++
+Sbjct  116  FDCKKENVAYLRWCKHQMGDIPCALEFRNRSWFSPPFYEQTLSFMKAEGWIHSVCDEPQI  175
+
+Query  175  P-GLFP-YRPITTTDYAYFRFHGRNER-WFEAEG-----EERYDYLYSEEELKTLFEDVV  226
+              G  P     T  +    RFHGRN++ W + +G     E RY Y Y+++EL+   + + 
+Sbjct  176  GEGSVPTVLRATDENKTLVRFHGRNKQGWMKPDGGKNWREVRYLYRYNQQELEDWKKHLN  235
+
+Query  227  ELSRRVKETYVFFNNCYKGQAAINALQFKKMLE  259
+            EL ++ K+ +V FNN   G AA N  Q  ++L+
+Sbjct  236  ELQQQCKDVFVLFNNNSGGDAADNGKQMLELLD  268
+
+
+>sp|Q8XCI6|YECE_ECO57 UPF0759 protein YecE OS=Escherichia coli 
+O157:H7 OX=83334 GN=yecE PE=3 SV=1
+Length=272
+
+ Score = 214 bits (544),  Expect = 7e-68, Method: Composition-based stats.
+ Identities = 43/189 (23%), Positives = 70/189 (37%), Gaps = 22/189 (12%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G   +S   W  +           L+ Y     F  VE N T Y  P     ++  
+Sbjct  1    MIYIGLPQWSHPKWVRL-------GITSLEEY--ARHFNCVEGNTTLYALPKPEVVLRWR  51
+
+Query  62   RKTPPDFYFTVKTPGSVTHVLWKEGKDPKEDMENFTRQIEPLIEEQRLKMTLAQFPFSFK  121
+             +T  DF F  K P +++H       D  + +  F  ++ PL    R+     Q P +F 
+Sbjct  52   EQTTDDFRFCFKFPATISHQAALRHCD--DLVTEFLTRMSPL--APRIGQYWLQLPATFG  107
+
+Query  122  FSRKNV--EYLEKLRESYPYELAVEFRHYSWDR----EETYEF-LRNHGITFVVVDEPKL  174
+                     +L+ L   + Y   VE RH  +      E+T    L   G+  V++D   +
+Sbjct  108  PRELPALWHFLDSLPGEFNY--GVEVRHPQFFAKGEEEQTLNRGLHQRGVNQVILDSRPV  165
+
+Query  175  PGLFPYRPI  183
+                P+   
+Sbjct  166  HAARPHSEA  174
+
+
+>sp|P37348|YECE_ECOLI UPF0759 protein YecE OS=Escherichia coli 
+(strain K12) OX=83333 GN=yecE PE=3 SV=4
+Length=272
+
+ Score = 213 bits (541),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 43/189 (23%), Positives = 70/189 (37%), Gaps = 22/189 (12%)
+
+Query  2    MVYVGTSGFSFEDWKGVVYPEHLKPSQFLKYYWAVLGFRIVELNFTYYTQPSWRSFVQML  61
+            M+Y+G   +S   W  +           L+ Y     F  VE N T Y  P     ++  
+Sbjct  1    MIYIGLPQWSHPKWVRL-------GITSLEEY--ARHFNCVEGNTTLYALPKPEVVLRWR  51
+
+Query  62   RKTPPDFYFTVKTPGSVTHVLWKEGKDPKEDMENFTRQIEPLIEEQRLKMTLAQFPFSFK  121
+             +T  DF F  K P +++H       D  + +  F  ++ PL    R+     Q P +F 
+Sbjct  52   EQTTDDFRFCFKFPATISHQAALRHCD--DLVTEFLTRMSPL--APRIGQYWLQLPATFG  107
+
+Query  122  FSRKNV--EYLEKLRESYPYELAVEFRHYSWDR----EETYEF-LRNHGITFVVVDEPKL  174
+                     +L+ L   + Y   VE RH  +      E+T    L   G+  V++D   +
+Sbjct  108  PRELPALWHFLDSLPGEFNY--GVEVRHPQFFAKGEEEQTLNRGLHQRGVNRVILDSRPV  165
+
+Query  175  PGLFPYRPI  183
+                P+   
+Sbjct  166  HAARPHSEA  174
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.124    0.330    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0380    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20016472220
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

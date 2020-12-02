@@ -1,0 +1,520 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1nija2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Esch...  202     2e-65
+sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (stra...  44.7    2e-05
+sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 G...  42.4    1e-04
+sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus no...  37.4    0.006
+
+
+>sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Escherichia 
+coli (strain K12) OX=83333 GN=yjiA PE=1 SV=3
+Length=318
+
+ Score = 202 bits (514),  Expect = 2e-65, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  60
+            ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD
+Sbjct  224  ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  283
+
+Query  61   WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  95
+            WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK
+Sbjct  284  WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  318
+
+
+>sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=cobW PE=3 SV=1
+Length=375
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 50/91 (55%), Gaps = 10/91 (11%)
+
+Query  10   YPVDISEVSR--VMENL--LLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDRPW  65
+            + VD+ EV    ++E L  L+E  D +LR KG   I G+P RLL QGV + +   +DR W
+Sbjct  286  FHVDLPEVEEAALLEALGELVERHD-ILRIKGFAAIPGKPMRLLVQGVGKRFDRHFDRKW  344
+
+Query  66   -GDEKPHSTMVFIGIQLPE----EEIRAAFA  91
+              DE   + +V IG +L +     ++R A A
+Sbjct  345  LADEARSTRLVVIGQELDQAAIANQLRTALA  375
+
+
+>sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 
+GN=cobW PE=3 SV=3
+Length=354
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 32/93 (34%), Positives = 46/93 (49%), Gaps = 4/93 (4%)
+
+Query  3    SIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWD  62
+            S VVEL    D +     ++ ++ E    +LR KG   + G+P RLL Q V       +D
+Sbjct  263  SFVVELGSIADPAAFIDRLKGVIAEH--DVLRLKGFADVPGKPMRLLIQAVGARIDQYYD  320
+
+Query  63   RPWG-DEKPHSTMVFIGIQ-LPEEEIRAAFAGL  93
+            R WG  EK  + +V IG+  + E  +RAA   L
+Sbjct  321  RAWGAGEKRGTRLVVIGLHDMDEAAVRAAITAL  353
+
+
+>sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus 
+norvegicus OX=10116 GN=Cbwd1 PE=2 SV=2
+Length=394
+
+ Score = 37.4 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 29/101 (29%), Positives = 49/101 (49%), Gaps = 12/101 (12%)
+
+Query  2    SSIVVELDYPVDISEVSR--VMENLLLESADK--------LLRYKGMLWIDGEPNRLLFQ  51
+            S + V  D P    E S    ++NLL E   K        ++R KG++ I  +P +++ Q
+Sbjct  271  SIVTVTFDVPGSAEEESLNVFIQNLLWEKNVKNKDGRCMEVIRLKGLVSIKDKPQQMIVQ  330
+
+Query  52   GVQRLYSADWDR-PWGDEKPHS-TMVFIGIQLPEEEIRAAF  90
+            G+  LY  +  R  W D+   +  +VFIG  L ++ ++  F
+Sbjct  331  GIHELYELEESRVNWKDDAERACQLVFIGKNLDKDILQQLF  371
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.139    0.421    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 2
+
+
+Query= d1nija2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Esch...  153     2e-46
+sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 G...  121     1e-33
+sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (stra...  99.7    3e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus no...  41.5    2e-04
+sp|Q8VEH6|CBWD1_MOUSE COBW domain-containing protein 1 OS=Mus mus...  40.7    4e-04
+sp|Q5RIA9|CBWD5_HUMAN COBW domain-containing protein 5 OS=Homo sa...  39.6    0.001
+sp|Q5JTY5|CBWD3_HUMAN COBW domain-containing protein 3 OS=Homo sa...  39.6    0.001
+sp|Q8IUF1|CBWD2_HUMAN COBW domain-containing protein 2 OS=Homo sa...  38.4    0.003
+sp|Q9BRT8|CBWD1_HUMAN COBW domain-containing protein 1 OS=Homo sa...  38.4    0.003
+sp|Q4V339|CBWD6_HUMAN COBW domain-containing protein 6 OS=Homo sa...  36.9    0.009
+
+
+>sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Escherichia 
+coli (strain K12) OX=83333 GN=yjiA PE=1 SV=3
+Length=318
+
+ Score = 153 bits (388),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  60
+            ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD
+Sbjct  224  ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  283
+
+Query  61   WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  95
+            WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK
+Sbjct  284  WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  318
+
+
+>sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 
+GN=cobW PE=3 SV=3
+Length=354
+
+ Score = 121 bits (304),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 32/93 (34%), Positives = 46/93 (49%), Gaps = 4/93 (4%)
+
+Query  3    SIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWD  62
+            S VVEL    D +     ++ ++ E    +LR KG   + G+P RLL Q V       +D
+Sbjct  263  SFVVELGSIADPAAFIDRLKGVIAEH--DVLRLKGFADVPGKPMRLLIQAVGARIDQYYD  320
+
+Query  63   RPWG-DEKPHSTMVFIGIQ-LPEEEIRAAFAGL  93
+            R WG  EK  + +V IG+  + E  +RAA   L
+Sbjct  321  RAWGAGEKRGTRLVVIGLHDMDEAAVRAAITAL  353
+
+
+>sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=cobW PE=3 SV=1
+Length=375
+
+ Score = 99.7 bits (247),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 50/91 (55%), Gaps = 10/91 (11%)
+
+Query  10   YPVDISEVSR--VMENL--LLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDRPW  65
+            + VD+ EV    ++E L  L+E  D +LR KG   I G+P RLL QGV + +   +DR W
+Sbjct  286  FHVDLPEVEEAALLEALGELVERHD-ILRIKGFAAIPGKPMRLLVQGVGKRFDRHFDRKW  344
+
+Query  66   -GDEKPHSTMVFIGIQLPE----EEIRAAFA  91
+              DE   + +V IG +L +     ++R A A
+Sbjct  345  LADEARSTRLVVIGQELDQAAIANQLRTALA  375
+
+
+>sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus 
+norvegicus OX=10116 GN=Cbwd1 PE=2 SV=2
+Length=394
+
+ Score = 41.5 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 18/65 (28%), Positives = 35/65 (54%), Gaps = 2/65 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDR-PWGDEK-PHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +P +++ QG+  LY  +  R  W D+      +VFIG  L ++ 
+Sbjct  307  RCMEVIRLKGLVSIKDKPQQMIVQGIHELYELEESRVNWKDDAERACQLVFIGKNLDKDI  366
+
+Query  86   IRAAF  90
+            ++  F
+Sbjct  367  LQQLF  371
+
+
+>sp|Q8VEH6|CBWD1_MOUSE COBW domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Cbwd1 PE=1 SV=1
+Length=393
+
+ Score = 40.7 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 17/65 (26%), Positives = 34/65 (52%), Gaps = 2/65 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDR-PWGDEK-PHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +P +++ QG+  LY  +     W D+      +VFIG  L ++ 
+Sbjct  306  HCMEVIRLKGLVSIKDKPQQMIVQGIHELYDLEESLVNWKDDAERACQLVFIGRNLDKDV  365
+
+Query  86   IRAAF  90
+            ++  F
+Sbjct  366  LQQLF  370
+
+
+>sp|Q5RIA9|CBWD5_HUMAN COBW domain-containing protein 5 OS=Homo 
+sapiens OX=9606 GN=CBWD5 PE=2 SV=1
+Length=395
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYS-ADWDRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY   +    W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q5JTY5|CBWD3_HUMAN COBW domain-containing protein 3 OS=Homo 
+sapiens OX=9606 GN=CBWD3 PE=1 SV=1
+Length=395
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYS-ADWDRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY   +    W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q8IUF1|CBWD2_HUMAN COBW domain-containing protein 2 OS=Homo 
+sapiens OX=9606 GN=CBWD2 PE=2 SV=1
+Length=395
+
+ Score = 38.4 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYS-ADWDRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY   +    W D+ +  + +V +G  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLLGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q9BRT8|CBWD1_HUMAN COBW domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=CBWD1 PE=1 SV=1
+Length=395
+
+ Score = 38.4 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYS-ADWDRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY   +    W D+ +  + +V +G  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLLGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q4V339|CBWD6_HUMAN COBW domain-containing protein 6 OS=Homo 
+sapiens OX=9606 GN=CBWD6 PE=3 SV=1
+Length=395
+
+ Score = 36.9 bits (84),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 33/67 (49%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYS-ADWDRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  L    +    W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELCDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.142    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0434    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+Results from round 3
+
+
+Query= d1nija2
+
+Length=95
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Esch...  144     8e-43
+sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 G...  112     3e-30
+sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (stra...  93.1    8e-23
+sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus no...  92.4    2e-22
+sp|Q8VEH6|CBWD1_MOUSE COBW domain-containing protein 1 OS=Mus mus...  92.4    2e-22
+sp|Q5RIA9|CBWD5_HUMAN COBW domain-containing protein 5 OS=Homo sa...  88.5    5e-21
+sp|Q5JTY5|CBWD3_HUMAN COBW domain-containing protein 3 OS=Homo sa...  88.5    5e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8IUF1|CBWD2_HUMAN COBW domain-containing protein 2 OS=Homo sa...  87.4    1e-20
+sp|Q9BRT8|CBWD1_HUMAN COBW domain-containing protein 1 OS=Homo sa...  87.4    1e-20
+sp|Q4V339|CBWD6_HUMAN COBW domain-containing protein 6 OS=Homo sa...  85.4    7e-20
+
+
+>sp|P24203|YJIA_ECOLI P-loop guanosine triphosphatase YjiA OS=Escherichia 
+coli (strain K12) OX=83333 GN=yjiA PE=1 SV=3
+Length=318
+
+ Score = 144 bits (363),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 95/95 (100%), Positives = 95/95 (100%), Gaps = 0/95 (0%)
+
+Query  1    ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  60
+            ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD
+Sbjct  224  ISSIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSAD  283
+
+Query  61   WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  95
+            WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK
+Sbjct  284  WDRPWGDEKPHSTMVFIGIQLPEEEIRAAFAGLRK  318
+
+
+>sp|P29937|COBW_SINSX Protein CobW OS=Sinorhizobium sp. OX=42445 
+GN=cobW PE=3 SV=3
+Length=354
+
+ Score = 112 bits (281),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 32/93 (34%), Positives = 46/93 (49%), Gaps = 4/93 (4%)
+
+Query  3    SIVVELDYPVDISEVSRVMENLLLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWD  62
+            S VVEL    D +     ++ ++ E    +LR KG   + G+P RLL Q V       +D
+Sbjct  263  SFVVELGSIADPAAFIDRLKGVIAEH--DVLRLKGFADVPGKPMRLLIQAVGARIDQYYD  320
+
+Query  63   RPWG-DEKPHSTMVFIGIQ-LPEEEIRAAFAGL  93
+            R WG  EK  + +V IG+  + E  +RAA   L
+Sbjct  321  RAWGAGEKRGTRLVVIGLHDMDEAAVRAAITAL  353
+
+
+>sp|Q9HZQ2|COBW_PSEAE Protein CobW OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=cobW PE=3 SV=1
+Length=375
+
+ Score = 93.1 bits (230),  Expect = 8e-23, Method: Composition-based stats.
+ Identities = 34/91 (37%), Positives = 50/91 (55%), Gaps = 10/91 (11%)
+
+Query  10   YPVDISEVSR--VMENL--LLESADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDRPW  65
+            + VD+ EV    ++E L  L+E  D +LR KG   I G+P RLL QGV + +   +DR W
+Sbjct  286  FHVDLPEVEEAALLEALGELVERHD-ILRIKGFAAIPGKPMRLLVQGVGKRFDRHFDRKW  344
+
+Query  66   -GDEKPHSTMVFIGIQLPE----EEIRAAFA  91
+              DE   + +V IG +L +     ++R A A
+Sbjct  345  LADEARSTRLVVIGQELDQAAIANQLRTALA  375
+
+
+>sp|Q99MB4|CBWD1_RAT COBW domain-containing protein 1 OS=Rattus 
+norvegicus OX=10116 GN=Cbwd1 PE=2 SV=2
+Length=394
+
+ Score = 92.4 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 35/66 (53%), Gaps = 2/66 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWDR-PWGDEK-PHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +P +++ QG+  LY  +  R  W D+      +VFIG  L ++ 
+Sbjct  307  RCMEVIRLKGLVSIKDKPQQMIVQGIHELYELEESRVNWKDDAERACQLVFIGKNLDKDI  366
+
+Query  86   IRAAFA  91
+            ++  F 
+Sbjct  367  LQQLFI  372
+
+
+>sp|Q8VEH6|CBWD1_MOUSE COBW domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Cbwd1 PE=1 SV=1
+Length=393
+
+ Score = 92.4 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 17/65 (26%), Positives = 34/65 (52%), Gaps = 2/65 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADWD-RPWGDEK-PHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +P +++ QG+  LY  +     W D+      +VFIG  L ++ 
+Sbjct  306  HCMEVIRLKGLVSIKDKPQQMIVQGIHELYDLEESLVNWKDDAERACQLVFIGRNLDKDV  365
+
+Query  86   IRAAF  90
+            ++  F
+Sbjct  366  LQQLF  370
+
+
+>sp|Q5RIA9|CBWD5_HUMAN COBW domain-containing protein 5 OS=Homo 
+sapiens OX=9606 GN=CBWD5 PE=2 SV=1
+Length=395
+
+ Score = 88.5 bits (218),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADW-DRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY  +     W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q5JTY5|CBWD3_HUMAN COBW domain-containing protein 3 OS=Homo 
+sapiens OX=9606 GN=CBWD3 PE=1 SV=1
+Length=395
+
+ Score = 88.5 bits (218),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADW-DRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY  +     W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q8IUF1|CBWD2_HUMAN COBW domain-containing protein 2 OS=Homo 
+sapiens OX=9606 GN=CBWD2 PE=2 SV=1
+Length=395
+
+ Score = 87.4 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADW-DRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY  +     W D+ +  + +V +G  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLLGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q9BRT8|CBWD1_HUMAN COBW domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=CBWD1 PE=1 SV=1
+Length=395
+
+ Score = 87.4 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 34/67 (51%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADW-DRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  LY  +     W D+ +  + +V +G  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELYDLEETPVSWKDDTERTNRLVLLGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+>sp|Q4V339|CBWD6_HUMAN COBW domain-containing protein 6 OS=Homo 
+sapiens OX=9606 GN=CBWD6 PE=3 SV=1
+Length=395
+
+ Score = 85.4 bits (210),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 33/67 (49%), Gaps = 2/67 (3%)
+
+Query  28   SADKLLRYKGMLWIDGEPNRLLFQGVQRLYSADW-DRPWGDE-KPHSTMVFIGIQLPEEE  85
+               +++R KG++ I  +  +++ QGV  L   +     W D+ +  + +V IG  L ++ 
+Sbjct  309  HCMEVIRLKGLVSIKDKSQQVIVQGVHELCDLEETPVSWKDDTERTNRLVLIGRNLDKDI  368
+
+Query  86   IRAAFAG  92
+            ++  F  
+Sbjct  369  LKQLFIA  375
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.141    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0433    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4985962080
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

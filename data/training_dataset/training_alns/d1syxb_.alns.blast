@@ -1,0 +1,633 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1syxb_
+
+Length=62
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protei...  138     8e-41
+sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protei...  137     2e-40
+sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protei...  59.3    3e-11
+sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces pom...  39.3    5e-04
+sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegan...  38.1    0.001
+
+
+>sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Homo sapiens OX=9606 GN=CD2BP2 PE=1 SV=1
+Length=341
+
+ Score = 138 bits (347),  Expect = 8e-41, Method: Compositional matrix adjust.
+ Identities = 62/62 (100%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL
+Sbjct  280  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  339
+
+Query  61   YT  62
+            YT
+Sbjct  340  YT  341
+
+
+>sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Mus musculus OX=10090 GN=Cd2bp2 PE=1 SV=1
+Length=342
+
+ Score = 137 bits (344),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 61/62 (98%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDF+L
+Sbjct  281  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFEL  340
+
+Query  61   YT  62
+            YT
+Sbjct  341  YT  342
+
+
+>sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protein 
+2 homolog OS=Drosophila melanogaster OX=7227 GN=holn1 
+PE=1 SV=1
+Length=319
+
+ Score = 59.3 bits (142),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 28/61 (46%), Positives = 38/61 (62%), Gaps = 2/61 (3%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            +V WE+KW +  + ++ GPF++ +M  W  E YF +GVY RK       FY S RIDFDL
+Sbjct  260  EVTWEFKW-SQDETDIQGPFSTEKMLKWSQENYFKNGVYVRKC-GENTNFYTSNRIDFDL  317
+
+Query  61   Y  61
+            Y
+Sbjct  318  Y  318
+
+
+>sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC83.09c PE=3 
+SV=1
+Length=408
+
+ Score = 39.3 bits (90),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 16/38 (42%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  3    MWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYC  40
+             + +KWE   D + YGP+T++Q+Q W +EGYF D  + 
+Sbjct  346  QYNFKWE--FDDKTYGPYTASQIQAWSNEGYFTDAKHA  381
+
+
+>sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegans 
+OX=6239 GN=sao-1 PE=1 SV=1
+Length=245
+
+ Score = 38.1 bits (87),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/41 (41%), Positives = 23/41 (56%), Gaps = 1/41 (2%)
+
+Query  7   KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPP  46
+           KW   G D+E YGP+ S  M  W+  GYF DG+  +  + P
+Sbjct  14  KWHYLGPDSEKYGPYMSKDMLFWLQAGYFNDGLQLKTENEP  54
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.140    0.481    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5142319784
+Results from round 2
+
+
+Query= d1syxb_
+
+Length=62
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protei...  124     2e-35
+sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protei...  122     6e-35
+sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protei...  89.4    3e-22
+sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegan...  69.4    3e-15
+sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces pom...  56.3    4e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|O75420|GGYF1_HUMAN GRB10-interacting GYF protein 1 OS=Homo sap...  41.2    9e-05
+sp|Q99MR1|GGYF1_MOUSE GRB10-interacting GYF protein 1 OS=Mus musc...  41.2    1e-04
+sp|Q4KME6|GGYF2_DANRE GRB10-interacting GYF protein 2 OS=Danio re...  40.9    1e-04
+sp|Q5U236|GGYF2_XENLA GRB10-interacting GYF protein 2 OS=Xenopus ...  40.1    2e-04
+sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein ...  39.7    4e-04
+sp|Q6Y7W8|GGYF2_MOUSE GRB10-interacting GYF protein 2 OS=Mus musc...  37.4    0.002
+sp|Q6Y7W6|GGYF2_HUMAN GRB10-interacting GYF protein 2 OS=Homo sap...  37.0    0.003
+
+
+>sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Homo sapiens OX=9606 GN=CD2BP2 PE=1 SV=1
+Length=341
+
+ Score = 124 bits (311),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 62/62 (100%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL
+Sbjct  280  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  339
+
+Query  61   YT  62
+            YT
+Sbjct  340  YT  341
+
+
+>sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Mus musculus OX=10090 GN=Cd2bp2 PE=1 SV=1
+Length=342
+
+ Score = 122 bits (307),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 61/62 (98%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDF+L
+Sbjct  281  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFEL  340
+
+Query  61   YT  62
+            YT
+Sbjct  341  YT  342
+
+
+>sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protein 
+2 homolog OS=Drosophila melanogaster OX=7227 GN=holn1 
+PE=1 SV=1
+Length=319
+
+ Score = 89.4 bits (220),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 28/61 (46%), Positives = 38/61 (62%), Gaps = 2/61 (3%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            +V WE+KW +  + ++ GPF++ +M  W  E YF +GVY RK       FY S RIDFDL
+Sbjct  260  EVTWEFKW-SQDETDIQGPFSTEKMLKWSQENYFKNGVYVRKC-GENTNFYTSNRIDFDL  317
+
+Query  61   Y  61
+            Y
+Sbjct  318  Y  318
+
+
+>sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegans 
+OX=6239 GN=sao-1 PE=1 SV=1
+Length=245
+
+ Score = 69.4 bits (168),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 17/42 (40%), Positives = 23/42 (55%), Gaps = 1/42 (2%)
+
+Query  7   KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPG  47
+           KW   G D+E YGP+ S  M  W+  GYF DG+  +  + P 
+Sbjct  14  KWHYLGPDSEKYGPYMSKDMLFWLQAGYFNDGLQLKTENEPN  55
+
+
+>sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC83.09c PE=3 
+SV=1
+Length=408
+
+ Score = 56.3 bits (134),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 16/38 (42%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  3    MWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYC  40
+             + +KWE   D + YGP+T++Q+Q W +EGYF D  + 
+Sbjct  346  QYNFKWE--FDDKTYGPYTASQIQAWSNEGYFTDAKHA  381
+
+
+>sp|O75420|GGYF1_HUMAN GRB10-interacting GYF protein 1 OS=Homo 
+sapiens OX=9606 GN=GIGYF1 PE=1 SV=2
+Length=1035
+
+ Score = 41.2 bits (95),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 20/44 (45%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPFT+ +M  W   GYF   +  ++    G Q
+Sbjct  476  KWFYKDPQGEIQGPFTTQEMAEWFQAGYFSMSLLVKRGCDEGFQ  519
+
+
+>sp|Q99MR1|GGYF1_MOUSE GRB10-interacting GYF protein 1 OS=Mus 
+musculus OX=10090 GN=Gigyf1 PE=1 SV=2
+Length=1044
+
+ Score = 41.2 bits (95),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 20/44 (45%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPFT+ +M  W   GYF   +  ++    G Q
+Sbjct  478  KWFYKDPQGEIQGPFTTQEMAEWFQAGYFSMSLLVKRGCDEGFQ  521
+
+
+>sp|Q4KME6|GGYF2_DANRE GRB10-interacting GYF protein 2 OS=Danio 
+rerio OX=7955 GN=gigyf2 PE=2 SV=2
+Length=1329
+
+ Score = 40.9 bits (94),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 12/42 (29%), Positives = 19/42 (45%), Gaps = 2/42 (5%)
+
+Query  6    YKWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRK-LDP  45
+            +KW       E+ GPF + +M  W   GYF   +  ++  D 
+Sbjct  557  FKWFYKDPQGEIQGPFNNQEMSEWFQAGYFTMTLQVKRGCDE  598
+
+
+>sp|Q5U236|GGYF2_XENLA GRB10-interacting GYF protein 2 OS=Xenopus 
+laevis OX=8355 GN=gigyf2 PE=2 SV=1
+Length=1239
+
+ Score = 40.1 bits (92),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 20/41 (49%), Gaps = 2/41 (5%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRK-LDP  45
+            KW       E+ GPF++ +M  W   GYFP  +  R+  D 
+Sbjct  490  KWYYKDPQGEIQGPFSNREMAEWYQAGYFPMTLLLRRVCDE  530
+
+
+>sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein 
+19 OS=Arabidopsis thaliana OX=3702 GN=NERD PE=1 SV=3
+Length=1773
+
+ Score = 39.7 bits (91),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 12/39 (31%), Positives = 21/39 (54%), Gaps = 1/39 (3%)
+
+Query  8     WENTGDA-ELYGPFTSAQMQTWVSEGYFPDGVYCRKLDP  45
+             W     + ++ GPF+ AQ++ W + GYFP  +   K + 
+Sbjct  1310  WHYKDPSGKVQGPFSMAQLRKWNNTGYFPAKLEIWKANE  1348
+
+
+>sp|Q6Y7W8|GGYF2_MOUSE GRB10-interacting GYF protein 2 OS=Mus 
+musculus OX=10090 GN=Gigyf2 PE=1 SV=2
+Length=1291
+
+ Score = 37.4 bits (85),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 12/44 (27%), Positives = 18/44 (41%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPF + +M  W   GYF   +  ++      Q
+Sbjct  536  KWYYKDPQGEIQGPFNNQEMAEWFQAGYFTMSLLVKRACDESFQ  579
+
+
+>sp|Q6Y7W6|GGYF2_HUMAN GRB10-interacting GYF protein 2 OS=Homo 
+sapiens OX=9606 GN=GIGYF2 PE=1 SV=1
+Length=1299
+
+ Score = 37.0 bits (84),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 12/44 (27%), Positives = 18/44 (41%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPF + +M  W   GYF   +  ++      Q
+Sbjct  535  KWYYKDPQGEIQGPFNNQEMAEWFQAGYFTMSLLVKRACDESFQ  578
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.402    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5142319784
+Results from round 3
+
+
+Query= d1syxb_
+
+Length=62
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protei...  115     4e-32
+sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protei...  114     1e-31
+sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protei...  85.1    1e-20
+sp|O75420|GGYF1_HUMAN GRB10-interacting GYF protein 1 OS=Homo sap...  69.3    1e-14
+sp|Q99MR1|GGYF1_MOUSE GRB10-interacting GYF protein 1 OS=Mus musc...  68.9    1e-14
+sp|Q4KME6|GGYF2_DANRE GRB10-interacting GYF protein 2 OS=Danio re...  67.8    4e-14
+sp|Q5U236|GGYF2_XENLA GRB10-interacting GYF protein 2 OS=Xenopus ...  67.0    7e-14
+sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegan...  65.5    1e-13
+sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein ...  60.8    1e-11
+sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces pom...  51.2    3e-08
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q6Y7W8|GGYF2_MOUSE GRB10-interacting GYF protein 2 OS=Mus musc...  64.3    7e-13
+sp|Q6Y7W6|GGYF2_HUMAN GRB10-interacting GYF protein 2 OS=Homo sap...  63.9    8e-13
+sp|O36025|MPD2_SCHPO GYF domain-containing protein mpd2 OS=Schizo...  51.2    3e-08
+sp|Q7KQM6|GGYF1_DROME GIGYF family protein CG11148 OS=Drosophila ...  50.0    7e-08
+sp|Q9SD34|C3H44_ARATH Zinc finger CCCH domain-containing protein ...  48.5    3e-07
+sp|P32909|SMY2_YEAST Protein SMY2 OS=Saccharomyces cerevisiae (st...  43.5    1e-05
+sp|Q02875|SYH1_YEAST SMY2 homolog 2 OS=Saccharomyces cerevisiae (...  43.5    1e-05
+sp|Q9FMM3|EXA1_ARATH Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATIO...  42.0    6e-05
+sp|Q09237|GYF1_CAEEL GYF domain-containing protein gyf-1 OS=Caeno...  38.9    6e-04
+sp|Q9FT92|Y5843_ARATH Uncharacterized protein At5g08430 OS=Arabid...  38.9    7e-04
+
+
+>sp|O95400|CD2B2_HUMAN CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Homo sapiens OX=9606 GN=CD2BP2 PE=1 SV=1
+Length=341
+
+ Score = 115 bits (289),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 62/62 (100%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL
+Sbjct  280  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  339
+
+Query  61   YT  62
+            YT
+Sbjct  340  YT  341
+
+
+>sp|Q9CWK3|CD2B2_MOUSE CD2 antigen cytoplasmic tail-binding protein 
+2 OS=Mus musculus OX=10090 GN=Cd2bp2 PE=1 SV=1
+Length=342
+
+ Score = 114 bits (286),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 61/62 (98%), Positives = 62/62 (100%), Gaps = 0/62 (0%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDF+L
+Sbjct  281  DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFEL  340
+
+Query  61   YT  62
+            YT
+Sbjct  341  YT  342
+
+
+>sp|Q9VKV5|CD2B2_DROME CD2 antigen cytoplasmic tail-binding protein 
+2 homolog OS=Drosophila melanogaster OX=7227 GN=holn1 
+PE=1 SV=1
+Length=319
+
+ Score = 85.1 bits (209),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 28/61 (46%), Positives = 38/61 (62%), Gaps = 2/61 (3%)
+
+Query  1    DVMWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYNSKRIDFDL  60
+            +V WE+KW +  + ++ GPF++ +M  W  E YF +GVY RK       FY S RIDFDL
+Sbjct  260  EVTWEFKW-SQDETDIQGPFSTEKMLKWSQENYFKNGVYVRKC-GENTNFYTSNRIDFDL  317
+
+Query  61   Y  61
+            Y
+Sbjct  318  Y  318
+
+
+>sp|O75420|GGYF1_HUMAN GRB10-interacting GYF protein 1 OS=Homo 
+sapiens OX=9606 GN=GIGYF1 PE=1 SV=2
+Length=1035
+
+ Score = 69.3 bits (168),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 20/44 (45%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPFT+ +M  W   GYF   +  ++    G Q
+Sbjct  476  KWFYKDPQGEIQGPFTTQEMAEWFQAGYFSMSLLVKRGCDEGFQ  519
+
+
+>sp|Q99MR1|GGYF1_MOUSE GRB10-interacting GYF protein 1 OS=Mus 
+musculus OX=10090 GN=Gigyf1 PE=1 SV=2
+Length=1044
+
+ Score = 68.9 bits (167),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 20/44 (45%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPFT+ +M  W   GYF   +  ++    G Q
+Sbjct  478  KWFYKDPQGEIQGPFTTQEMAEWFQAGYFSMSLLVKRGCDEGFQ  521
+
+
+>sp|Q4KME6|GGYF2_DANRE GRB10-interacting GYF protein 2 OS=Danio 
+rerio OX=7955 GN=gigyf2 PE=2 SV=2
+Length=1329
+
+ Score = 67.8 bits (164),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 12/45 (27%), Positives = 19/45 (42%), Gaps = 1/45 (2%)
+
+Query  6    YKWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            +KW       E+ GPF + +M  W   GYF   +  ++      Q
+Sbjct  557  FKWFYKDPQGEIQGPFNNQEMSEWFQAGYFTMTLQVKRGCDEMFQ  601
+
+
+>sp|Q5U236|GGYF2_XENLA GRB10-interacting GYF protein 2 OS=Xenopus 
+laevis OX=8355 GN=gigyf2 PE=2 SV=1
+Length=1239
+
+ Score = 67.0 bits (162),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 21/44 (48%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPF++ +M  W   GYFP  +  R++     Q
+Sbjct  490  KWYYKDPQGEIQGPFSNREMAEWYQAGYFPMTLLLRRVCDETFQ  533
+
+
+>sp|C6KRN1|SAO1_CAEEL Suppressor of aph-1 OS=Caenorhabditis elegans 
+OX=6239 GN=sao-1 PE=1 SV=1
+Length=245
+
+ Score = 65.5 bits (158),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 17/44 (39%), Positives = 23/44 (52%), Gaps = 1/44 (2%)
+
+Query  7   KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+           KW   G D+E YGP+ S  M  W+  GYF DG+  +  + P   
+Sbjct  14  KWHYLGPDSEKYGPYMSKDMLFWLQAGYFNDGLQLKTENEPNYH  57
+
+
+>sp|Q6Y7W8|GGYF2_MOUSE GRB10-interacting GYF protein 2 OS=Mus 
+musculus OX=10090 GN=Gigyf2 PE=1 SV=2
+Length=1291
+
+ Score = 64.3 bits (155),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 12/44 (27%), Positives = 18/44 (41%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPF + +M  W   GYF   +  ++      Q
+Sbjct  536  KWYYKDPQGEIQGPFNNQEMAEWFQAGYFTMSLLVKRACDESFQ  579
+
+
+>sp|Q6Y7W6|GGYF2_HUMAN GRB10-interacting GYF protein 2 OS=Homo 
+sapiens OX=9606 GN=GIGYF2 PE=1 SV=1
+Length=1299
+
+ Score = 63.9 bits (154),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 12/44 (27%), Positives = 18/44 (41%), Gaps = 1/44 (2%)
+
+Query  7    KWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            KW       E+ GPF + +M  W   GYF   +  ++      Q
+Sbjct  535  KWYYKDPQGEIQGPFNNQEMAEWFQAGYFTMSLLVKRACDESFQ  578
+
+
+>sp|Q9SIV5|C3H19_ARATH Zinc finger CCCH domain-containing protein 
+19 OS=Arabidopsis thaliana OX=3702 GN=NERD PE=1 SV=3
+Length=1773
+
+ Score = 60.8 bits (146),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 12/39 (31%), Positives = 20/39 (51%), Gaps = 1/39 (3%)
+
+Query  8     WENTGD-AELYGPFTSAQMQTWVSEGYFPDGVYCRKLDP  45
+             W       ++ GPF+ AQ++ W + GYFP  +   K + 
+Sbjct  1310  WHYKDPSGKVQGPFSMAQLRKWNNTGYFPAKLEIWKANE  1348
+
+
+>sp|O36025|MPD2_SCHPO GYF domain-containing protein mpd2 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=mpd2 PE=1 SV=1
+Length=992
+
+ Score = 51.2 bits (121),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 14/46 (30%), Positives = 22/46 (48%), Gaps = 3/46 (7%)
+
+Query  8    WENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYN  52
+            W        + GPFT   M  W   GYFP G+  ++L+    ++Y+
+Sbjct  389  WLYKDPQNNVQGPFTGVDMHQWYRAGYFPLGLPIKRLEEE--EYYS  432
+
+
+>sp|O94693|LIN1_SCHPO LIN1-like protein OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC83.09c PE=3 
+SV=1
+Length=408
+
+ Score = 51.2 bits (121),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 16/38 (42%), Positives = 25/38 (66%), Gaps = 2/38 (5%)
+
+Query  3    MWEYKWENTGDAELYGPFTSAQMQTWVSEGYFPDGVYC  40
+             + +KWE   D + YGP+T++Q+Q W +EGYF D  + 
+Sbjct  346  QYNFKWE--FDDKTYGPYTASQIQAWSNEGYFTDAKHA  381
+
+
+>sp|Q7KQM6|GGYF1_DROME GIGYF family protein CG11148 OS=Drosophila 
+melanogaster OX=7227 GN=CG11148 PE=1 SV=2
+Length=1574
+
+ Score = 50.0 bits (118),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 11/43 (26%), Positives = 20/43 (47%), Gaps = 1/43 (2%)
+
+Query  8    WENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQ  49
+            W      A + GPF++ +M  W   GYF + ++ R+      +
+Sbjct  569  WFYRDPQANVQGPFSAVEMTEWYRAGYFNENLFVRRYSDNRFR  611
+
+
+>sp|Q9SD34|C3H44_ARATH Zinc finger CCCH domain-containing protein 
+44 OS=Arabidopsis thaliana OX=3702 GN=At3g51120 PE=2 SV=3
+Length=1292
+
+ Score = 48.5 bits (114),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 10/39 (26%), Positives = 17/39 (44%), Gaps = 1/39 (3%)
+
+Query  8    WENTGD-AELYGPFTSAQMQTWVSEGYFPDGVYCRKLDP  45
+            W       +  GPF+  Q++ W S G+FP  +   +   
+Sbjct  719  WHYRDPTGKTQGPFSMVQLRRWKSSGHFPPYLRIWRAHE  757
+
+
+>sp|P32909|SMY2_YEAST Protein SMY2 OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=SMY2 PE=1 SV=2
+Length=740
+
+ Score = 43.5 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 13/43 (30%), Positives = 19/43 (44%), Gaps = 1/43 (2%)
+
+Query  2    VMWEYKWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKL  43
+            V  E  W       +++GPFT+  M  W   GYF   +   +L
+Sbjct  202  VSVESSWRYIDTQGQIHGPFTTQMMSQWYIGGYFASTLQISRL  244
+
+
+>sp|Q02875|SYH1_YEAST SMY2 homolog 2 OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=SYH1 PE=1 SV=1
+Length=849
+
+ Score = 43.5 bits (101),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 11/40 (28%), Positives = 18/40 (45%), Gaps = 1/40 (3%)
+
+Query  5    EYKWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKL  43
+            E +W+    +  + GPF +  M  W   GYF   +   +L
+Sbjct  149  ESQWKYIDSNGNIQGPFGTNNMSQWYQGGYFTPTLQICRL  188
+
+
+>sp|Q9FMM3|EXA1_ARATH Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATION 
+1 OS=Arabidopsis thaliana OX=3702 GN=EXA1 PE=1 SV=1
+Length=1714
+
+ Score = 42.0 bits (97),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 10/44 (23%), Positives = 15/44 (34%), Gaps = 1/44 (2%)
+
+Query  5    EYKWENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDPPG  47
+            E           + GPF+ + +  W   GYF   +  R    P 
+Sbjct  546  ELSLYYKDPQGLIQGPFSGSDIIGWFEAGYFGIDLLVRLASAPN  589
+
+
+>sp|Q09237|GYF1_CAEEL GYF domain-containing protein gyf-1 OS=Caenorhabditis 
+elegans OX=6239 GN=gyf-1 PE=4 SV=4
+Length=1106
+
+ Score = 38.9 bits (89),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 13/47 (28%), Positives = 17/47 (36%), Gaps = 2/47 (4%)
+
+Query  7    KWENTGDAELY-GPFTSAQMQTWVSEGYFPDGVYCRKLDPPGGQFYN  52
+            ++      E   GPF   QM  W   GYF D    R      G++  
+Sbjct  461  QFYYMDPTETRRGPFPKDQMNVWFKAGYFTDE-SLRVQRGENGEYKT  506
+
+
+>sp|Q9FT92|Y5843_ARATH Uncharacterized protein At5g08430 OS=Arabidopsis 
+thaliana OX=3702 GN=At5g08430 PE=1 SV=2
+Length=553
+
+ Score = 38.9 bits (89),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 8/39 (21%), Positives = 12/39 (31%), Gaps = 1/39 (3%)
+
+Query  8    WENTG-DAELYGPFTSAQMQTWVSEGYFPDGVYCRKLDP  45
+            W        + GPF+  Q++ W    YF           
+Sbjct  500  WLYKDPQGLVQGPFSLTQLKAWSDAEYFTKQFRVWMTGE  538
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.136    0.435    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0416    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5142319784
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

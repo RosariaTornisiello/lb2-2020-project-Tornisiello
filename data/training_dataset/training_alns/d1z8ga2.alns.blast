@@ -1,0 +1,240 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1z8ga2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P05981|HEPS_HUMAN Serine protease hepsin OS=Homo sapiens OX=96...  225     7e-73
+sp|Q5R5E8|HEPS_PONAB Serine protease hepsin OS=Pongo abelii OX=96...  221     3e-71
+sp|O35453|HEPS_MOUSE Serine protease hepsin OS=Mus musculus OX=10...  196     2e-61
+sp|Q05511|HEPS_RAT Serine protease hepsin OS=Rattus norvegicus OX...  195     3e-61
+sp|Q9BYE2|TMPSD_HUMAN Transmembrane protease serine 13 OS=Homo sa...  38.9    0.004
+
+
+>sp|P05981|HEPS_HUMAN Serine protease hepsin OS=Homo sapiens OX=9606 
+GN=HPN PE=1 SV=1
+Length=417
+
+ Score = 225 bits (573),  Expect = 7e-73, Method: Compositional matrix adjust.
+ Identities = 109/110 (99%), Positives = 109/110 (99%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA
+Sbjct  50   PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  109
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP
+Sbjct  110  GANGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  159
+
+
+>sp|Q5R5E8|HEPS_PONAB Serine protease hepsin OS=Pongo abelii OX=9601 
+GN=HPN PE=2 SV=1
+Length=417
+
+ Score = 221 bits (562),  Expect = 3e-71, Method: Compositional matrix adjust.
+ Identities = 107/110 (97%), Positives = 107/110 (97%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSC EMGFLRALTHSELDVRTA
+Sbjct  50   PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCVEMGFLRALTHSELDVRTA  109
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLA ICQDCGRRKLP
+Sbjct  110  GANGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLATICQDCGRRKLP  159
+
+
+>sp|O35453|HEPS_MOUSE Serine protease hepsin OS=Mus musculus OX=10090 
+GN=Hpn PE=1 SV=3
+Length=436
+
+ Score = 196 bits (498),  Expect = 2e-61, Method: Compositional matrix adjust.
+ Identities = 95/110 (86%), Positives = 98/110 (89%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLY VQ+S  D+RL VFDKTEGTWRLLCSSRSNARVAGL CEEMGFLRAL HSELDVRTA
+Sbjct  69   PLYQVQLSPGDSRLAVFDKTEGTWRLLCSSRSNARVAGLGCEEMGFLRALAHSELDVRTA  128
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEG LP  QRLL+VISVCDCPRGRFL A CQDCGRRKLP
+Sbjct  129  GANGTSGFFCVDEGGLPLAQRLLDVISVCDCPRGRFLTATCQDCGRRKLP  178
+
+
+>sp|Q05511|HEPS_RAT Serine protease hepsin OS=Rattus norvegicus 
+OX=10116 GN=Hpn PE=2 SV=1
+Length=416
+
+ Score = 195 bits (495),  Expect = 3e-61, Method: Compositional matrix adjust.
+ Identities = 94/110 (85%), Positives = 98/110 (89%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLY VQ+S  D+RL+V DKTEGTWRLLCSSRSNARVAGL CEEMGFLRAL HSELDVRTA
+Sbjct  49   PLYQVQLSPGDSRLLVLDKTEGTWRLLCSSRSNARVAGLGCEEMGFLRALAHSELDVRTA  108
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEG LP  QRLL+VISVCDCPRGRFL A CQDCGRRKLP
+Sbjct  109  GANGTSGFFCVDEGGLPLAQRLLDVISVCDCPRGRFLTATCQDCGRRKLP  158
+
+
+>sp|Q9BYE2|TMPSD_HUMAN Transmembrane protease serine 13 OS=Homo 
+sapiens OX=9606 GN=TMPRSS13 PE=2 SV=5
+Length=586
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 22/96 (23%), Positives = 41/96 (43%), Gaps = 9/96 (9%)
+
+Query  14   LMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTAGAAGTSGFFCVDE  73
+            L ++  +   W  +CSS  N   +  +C+++GF  A   +E+  R          F    
+Sbjct  236  LKIYSGSSHQWLPICSSNWNDSYSEKTCQQLGFESAHRTTEVAHRD---------FANSF  286
+
+Query  74   GRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKL  109
+              L +   + E +   +CP  R+++  C  CG R +
+Sbjct  287  SILRYNSTIQESLHRSECPSQRYISLQCSHCGLRAM  322
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.138    0.438    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 2
+
+
+Query= d1z8ga2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P05981|HEPS_HUMAN Serine protease hepsin OS=Homo sapiens OX=96...  220     7e-71
+sp|Q5R5E8|HEPS_PONAB Serine protease hepsin OS=Pongo abelii OX=96...  215     3e-69
+sp|O35453|HEPS_MOUSE Serine protease hepsin OS=Mus musculus OX=10...  212     6e-68
+sp|Q05511|HEPS_RAT Serine protease hepsin OS=Rattus norvegicus OX...  211     1e-67
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P05981|HEPS_HUMAN Serine protease hepsin OS=Homo sapiens OX=9606 
+GN=HPN PE=1 SV=1
+Length=417
+
+ Score = 220 bits (560),  Expect = 7e-71, Method: Composition-based stats.
+ Identities = 109/110 (99%), Positives = 109/110 (99%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA
+Sbjct  50   PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  109
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP
+Sbjct  110  GANGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  159
+
+
+>sp|Q5R5E8|HEPS_PONAB Serine protease hepsin OS=Pongo abelii OX=9601 
+GN=HPN PE=2 SV=1
+Length=417
+
+ Score = 215 bits (549),  Expect = 3e-69, Method: Composition-based stats.
+ Identities = 107/110 (97%), Positives = 107/110 (97%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSC EMGFLRALTHSELDVRTA
+Sbjct  50   PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCVEMGFLRALTHSELDVRTA  109
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLA ICQDCGRRKLP
+Sbjct  110  GANGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLATICQDCGRRKLP  159
+
+
+>sp|O35453|HEPS_MOUSE Serine protease hepsin OS=Mus musculus OX=10090 
+GN=Hpn PE=1 SV=3
+Length=436
+
+ Score = 212 bits (541),  Expect = 6e-68, Method: Composition-based stats.
+ Identities = 95/110 (86%), Positives = 98/110 (89%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLY VQ+S  D+RL VFDKTEGTWRLLCSSRSNARVAGL CEEMGFLRAL HSELDVRTA
+Sbjct  69   PLYQVQLSPGDSRLAVFDKTEGTWRLLCSSRSNARVAGLGCEEMGFLRALAHSELDVRTA  128
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEG LP  QRLL+VISVCDCPRGRFL A CQDCGRRKLP
+Sbjct  129  GANGTSGFFCVDEGGLPLAQRLLDVISVCDCPRGRFLTATCQDCGRRKLP  178
+
+
+>sp|Q05511|HEPS_RAT Serine protease hepsin OS=Rattus norvegicus 
+OX=10116 GN=Hpn PE=2 SV=1
+Length=416
+
+ Score = 211 bits (537),  Expect = 1e-67, Method: Composition-based stats.
+ Identities = 94/110 (85%), Positives = 98/110 (89%), Gaps = 0/110 (0%)
+
+Query  1    PLYPVQVSSADARLMVFDKTEGTWRLLCSSRSNARVAGLSCEEMGFLRALTHSELDVRTA  60
+            PLY VQ+S  D+RL+V DKTEGTWRLLCSSRSNARVAGL CEEMGFLRAL HSELDVRTA
+Sbjct  49   PLYQVQLSPGDSRLLVLDKTEGTWRLLCSSRSNARVAGLGCEEMGFLRALAHSELDVRTA  108
+
+Query  61   GAAGTSGFFCVDEGRLPHTQRLLEVISVCDCPRGRFLAAICQDCGRRKLP  110
+            GA GTSGFFCVDEG LP  QRLL+VISVCDCPRGRFL A CQDCGRRKLP
+Sbjct  109  GANGTSGFFCVDEGGLPLAQRLLDVISVCDCPRGRFLTATCQDCGRRKLP  158
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.144    0.473    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0442    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

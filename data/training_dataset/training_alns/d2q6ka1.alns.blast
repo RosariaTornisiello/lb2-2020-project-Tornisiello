@@ -1,0 +1,225 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2q6ka1
+
+Length=163
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|A4X3Q0|SALL_SALTO Adenosyl-chloride synthase OS=Salinispora tr...  334     1e-116
+sp|Q70GK9|FLA_STRCT 5'-fluoro-5'-deoxy-adenosine synthase OS=Stre...  120     1e-32 
+sp|Q59045|SALL_METJA Chlorinase MJ1651 OS=Methanocaldococcus jann...  60.5    3e-10 
+
+
+>sp|A4X3Q0|SALL_SALTO Adenosyl-chloride synthase OS=Salinispora 
+tropica (strain ATCC BAA-916 / DSM 44818 / CNB-440) OX=369723 
+GN=salL PE=1 SV=1
+Length=283
+
+ Score = 334 bits (856),  Expect = 1e-116, Method: Compositional matrix adjust.
+ Identities = 163/163 (100%), Positives = 163/163 (100%), Gaps = 0/163 (0%)
+
+Query  1    MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS  60
+            MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS
+Sbjct  1    MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS  60
+
+Query  61   FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV  120
+            FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV
+Sbjct  61   FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV  120
+
+Query  121  MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL  163
+            MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL
+Sbjct  121  MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL  163
+
+
+>sp|Q70GK9|FLA_STRCT 5'-fluoro-5'-deoxy-adenosine synthase OS=Streptomyces 
+cattleya OX=29303 GN=flA PE=1 SV=1
+Length=299
+
+ Score = 120 bits (301),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 71/181 (39%), Positives = 106/181 (59%), Gaps = 22/181 (12%)
+
+Query  5    LIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHSFPAH  64
+            +IAF+SD+G+ D++ A CKG+MY + P  T+VD+ H + P+DV EGA ++ D+P  FP  
+Sbjct  10   IIAFMSDLGTTDDSVAQCKGLMYSICPDVTVVDVCHSMTPWDVEEGARYIVDLPRFFPEG  69
+
+Query  65   TVICAYVYPETGTATHTIAVR-------NEKGQ---------------LLVGPNNGLLSF  102
+            TV     YP TGT T ++AVR         +GQ               + + PNNGLL+ 
+Sbjct  70   TVFATTTYPATGTTTRSVAVRIKQAAKGGARGQWAGSGAGFERAEGSYIYIAPNNGLLTT  129
+
+Query  103  ALDASPAVECHEVLSPDVMNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVR  162
+             L+    +E +EV SP V+ +   PT+Y +++VA  +AHLAAG  L+ VG  ++  +IVR
+Sbjct  130  VLEEHGYLEAYEVTSPKVIPEQPEPTFYSREMVAIPSAHLAAGFPLSEVGRPLEDHEIVR  189
+
+Query  163  L  163
+             
+Sbjct  190  F  190
+
+
+>sp|Q59045|SALL_METJA Chlorinase MJ1651 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 
+/ NBRC 100440) OX=243232 GN=MJ1651 PE=1 SV=1
+Length=263
+
+ Score = 60.5 bits (145),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 37/144 (26%), Positives = 72/144 (50%), Gaps = 10/144 (7%)
+
+Query  4    NLIAFLSDVGSADEAHALCKGVMYGVAPA----ATIVDITHDVAPFDVREGA-LFLADVP  58
+            ++I   +D G+ +      KG +  +       A I+DI+H++ PF++  GA + L  +P
+Sbjct  11   DIITLTTDFGTNEGYVGAMKGRILNILKKYNKDAKIIDISHEIKPFNIYHGAYVLLTAIP  70
+
+Query  59   HSFPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSP  118
+            + FP  +V  A + P  G+   +I +  + G  LVGP+NGL ++    +  +    ++  
+Sbjct  71   Y-FPP-SVHVAVIDPTVGSERKSIVIETKSGYYLVGPDNGLFTY---VAEKLGIKRIIKI  125
+
+Query  119  DVMNQPVTPTWYGKDIVAACAAHL  142
+            D      + T++G+D+ A   A +
+Sbjct  126  DEERYKPSSTFHGRDVYAVVGAEI  149
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.135    0.415    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7636848912
+Results from round 2
+
+
+Query= d2q6ka1
+
+Length=163
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A4X3Q0|SALL_SALTO Adenosyl-chloride synthase OS=Salinispora tr...  242     2e-80
+sp|Q70GK9|FLA_STRCT 5'-fluoro-5'-deoxy-adenosine synthase OS=Stre...  215     1e-69
+sp|Q59045|SALL_METJA Chlorinase MJ1651 OS=Methanocaldococcus jann...  184     1e-57
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|A4X3Q0|SALL_SALTO Adenosyl-chloride synthase OS=Salinispora 
+tropica (strain ATCC BAA-916 / DSM 44818 / CNB-440) OX=369723 
+GN=salL PE=1 SV=1
+Length=283
+
+ Score = 242 bits (617),  Expect = 2e-80, Method: Composition-based stats.
+ Identities = 163/163 (100%), Positives = 163/163 (100%), Gaps = 0/163 (0%)
+
+Query  1    MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS  60
+            MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS
+Sbjct  1    MQHNLIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHS  60
+
+Query  61   FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV  120
+            FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV
+Sbjct  61   FPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSPDV  120
+
+Query  121  MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL  163
+            MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL
+Sbjct  121  MNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVRL  163
+
+
+>sp|Q70GK9|FLA_STRCT 5'-fluoro-5'-deoxy-adenosine synthase OS=Streptomyces 
+cattleya OX=29303 GN=flA PE=1 SV=1
+Length=299
+
+ Score = 215 bits (548),  Expect = 1e-69, Method: Composition-based stats.
+ Identities = 71/181 (39%), Positives = 106/181 (59%), Gaps = 22/181 (12%)
+
+Query  5    LIAFLSDVGSADEAHALCKGVMYGVAPAATIVDITHDVAPFDVREGALFLADVPHSFPAH  64
+            +IAF+SD+G+ D++ A CKG+MY + P  T+VD+ H + P+DV EGA ++ D+P  FP  
+Sbjct  10   IIAFMSDLGTTDDSVAQCKGLMYSICPDVTVVDVCHSMTPWDVEEGARYIVDLPRFFPEG  69
+
+Query  65   TVICAYVYPETGTATHTIAVR-------NEKGQ---------------LLVGPNNGLLSF  102
+            TV     YP TGT T ++AVR         +GQ               + + PNNGLL+ 
+Sbjct  70   TVFATTTYPATGTTTRSVAVRIKQAAKGGARGQWAGSGAGFERAEGSYIYIAPNNGLLTT  129
+
+Query  103  ALDASPAVECHEVLSPDVMNQPVTPTWYGKDIVAACAAHLAAGTDLAAVGPRIDPKQIVR  162
+             L+    +E +EV SP V+ +   PT+Y +++VA  +AHLAAG  L+ VG  ++  +IVR
+Sbjct  130  VLEEHGYLEAYEVTSPKVIPEQPEPTFYSREMVAIPSAHLAAGFPLSEVGRPLEDHEIVR  189
+
+Query  163  L  163
+             
+Sbjct  190  F  190
+
+
+>sp|Q59045|SALL_METJA Chlorinase MJ1651 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 
+/ NBRC 100440) OX=243232 GN=MJ1651 PE=1 SV=1
+Length=263
+
+ Score = 184 bits (466),  Expect = 1e-57, Method: Composition-based stats.
+ Identities = 37/144 (26%), Positives = 72/144 (50%), Gaps = 10/144 (7%)
+
+Query  4    NLIAFLSDVGSADEAHALCKGVMYGVAP----AATIVDITHDVAPFDVREGA-LFLADVP  58
+            ++I   +D G+ +      KG +  +       A I+DI+H++ PF++  GA + L  +P
+Sbjct  11   DIITLTTDFGTNEGYVGAMKGRILNILKKYNKDAKIIDISHEIKPFNIYHGAYVLLTAIP  70
+
+Query  59   HSFPAHTVICAYVYPETGTATHTIAVRNEKGQLLVGPNNGLLSFALDASPAVECHEVLSP  118
+            + FP  +V  A + P  G+   +I +  + G  LVGP+NGL ++    +  +    ++  
+Sbjct  71   Y-FPP-SVHVAVIDPTVGSERKSIVIETKSGYYLVGPDNGLFTYV---AEKLGIKRIIKI  125
+
+Query  119  DVMNQPVTPTWYGKDIVAACAAHL  142
+            D      + T++G+D+ A   A +
+Sbjct  126  DEERYKPSSTFHGRDVYAVVGAEI  149
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7636848912
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,325 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3hmsa_
+
+Length=91
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P14210|HGF_HUMAN Hepatocyte growth factor OS=Homo sapiens OX=9...  196     1e-59
+sp|Q76BS1|HGF_BOVIN Hepatocyte growth factor OS=Bos taurus OX=991...  182     2e-54
+sp|Q9BH09|HGF_FELCA Hepatocyte growth factor OS=Felis catus OX=96...  181     4e-54
+sp|Q867B7|HGF_CANLF Hepatocyte growth factor OS=Canis lupus famil...  177     1e-52
+sp|P17945|HGF_RAT Hepatocyte growth factor OS=Rattus norvegicus O...  166     2e-48
+sp|Q08048|HGF_MOUSE Hepatocyte growth factor OS=Mus musculus OX=1...  162     3e-47
+sp|P26927|HGFL_HUMAN Hepatocyte growth factor-like protein OS=Hom...  37.4    0.006
+
+
+>sp|P14210|HGF_HUMAN Hepatocyte growth factor OS=Homo sapiens 
+OX=9606 GN=HGF PE=1 SV=2
+Length=728
+
+ Score = 196 bits (498),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 91/91 (100%), Positives = 91/91 (100%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ
+Sbjct  36   RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|Q76BS1|HGF_BOVIN Hepatocyte growth factor OS=Bos taurus OX=9913 
+GN=HGF PE=2 SV=1
+Length=730
+
+ Score = 182 bits (462),  Expect = 2e-54, Method: Composition-based stats.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFK+SAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  36   RNTLHEFKRSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|Q9BH09|HGF_FELCA Hepatocyte growth factor OS=Felis catus OX=9685 
+GN=HGF PE=2 SV=1
+Length=728
+
+ Score = 181 bits (460),  Expect = 4e-54, Method: Composition-based stats.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  34   RNTLHEFKKSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  93
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSM+SGVKKEFGHEFDLYENKDYIR
+Sbjct  94   CLWFPFNSMTSGVKKEFGHEFDLYENKDYIR  124
+
+
+>sp|Q867B7|HGF_CANLF Hepatocyte growth factor OS=Canis lupus familiaris 
+OX=9615 GN=HGF PE=2 SV=1
+Length=730
+
+ Score = 177 bits (449),  Expect = 1e-52, Method: Compositional matrix adjust.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  36   RNTLHEFKKSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSM+SGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMTSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|P17945|HGF_RAT Hepatocyte growth factor OS=Rattus norvegicus 
+OX=10116 GN=Hgf PE=1 SV=1
+Length=728
+
+ Score = 166 bits (419),  Expect = 2e-48, Method: Compositional matrix adjust.
+ Identities = 77/91 (85%), Positives = 84/91 (92%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTL K DP +KIKTKKVN+AD+CANRC RNKG PFTCKAFVFDK+RK+
+Sbjct  37   RNTLHEFKKSAKTTLTKEDPLVKIKTKKVNSADECANRCIRNKGFPFTCKAFVFDKSRKR  96
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            C W+PFNSMSSGVKK FGHEFDLYENKDYIR
+Sbjct  97   CYWYPFNSMSSGVKKGFGHEFDLYENKDYIR  127
+
+
+>sp|Q08048|HGF_MOUSE Hepatocyte growth factor OS=Mus musculus 
+OX=10090 GN=Hgf PE=1 SV=1
+Length=728
+
+ Score = 162 bits (410),  Expect = 3e-47, Method: Compositional matrix adjust.
+ Identities = 76/91 (84%), Positives = 83/91 (91%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTL K DP LKIKTKKVN+AD+CANRC RN+G  FTCKAFVFDK+RK+
+Sbjct  37   RNTLHEFKKSAKTTLTKEDPLLKIKTKKVNSADECANRCIRNRGFTFTCKAFVFDKSRKR  96
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            C W+PFNSMSSGVKK FGHEFDLYENKDYIR
+Sbjct  97   CYWYPFNSMSSGVKKGFGHEFDLYENKDYIR  127
+
+
+>sp|P26927|HGFL_HUMAN Hepatocyte growth factor-like protein OS=Homo 
+sapiens OX=9606 GN=MST1 PE=1 SV=2
+Length=711
+
+ Score = 37.4 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 19/65 (29%), Positives = 31/65 (48%), Gaps = 4/65 (6%)
+
+Query  27   KKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQCLWFPFNSMSSGVKKEFGHEFDLYEN  86
+            + V  A++CA RC    G    C+AF ++ +   C   P+   S   +       DL++ 
+Sbjct  48   EDVADAEECAGRC----GPLMDCRAFHYNVSSHGCQLLPWTQHSPHTRLRRSGRCDLFQK  103
+
+Query  87   KDYIR  91
+            KDY+R
+Sbjct  104  KDYVR  108
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.135    0.419    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5053531920
+Results from round 2
+
+
+Query= d3hmsa_
+
+Length=91
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q76BS1|HGF_BOVIN Hepatocyte growth factor OS=Bos taurus OX=991...  187     2e-56
+sp|P14210|HGF_HUMAN Hepatocyte growth factor OS=Homo sapiens OX=9...  186     5e-56
+sp|Q9BH09|HGF_FELCA Hepatocyte growth factor OS=Felis catus OX=96...  185     9e-56
+sp|Q867B7|HGF_CANLF Hepatocyte growth factor OS=Canis lupus famil...  185     1e-55
+sp|P17945|HGF_RAT Hepatocyte growth factor OS=Rattus norvegicus O...  184     3e-55
+sp|Q08048|HGF_MOUSE Hepatocyte growth factor OS=Mus musculus OX=1...  180     7e-54
+
+Sequences not found previously or not previously below threshold:
+
+sp|P26927|HGFL_HUMAN Hepatocyte growth factor-like protein OS=Hom...  37.7    0.005
+
+
+>sp|Q76BS1|HGF_BOVIN Hepatocyte growth factor OS=Bos taurus OX=9913 
+GN=HGF PE=2 SV=1
+Length=730
+
+ Score = 187 bits (475),  Expect = 2e-56, Method: Composition-based stats.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFK+SAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  36   RNTLHEFKRSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|P14210|HGF_HUMAN Hepatocyte growth factor OS=Homo sapiens 
+OX=9606 GN=HGF PE=1 SV=2
+Length=728
+
+ Score = 186 bits (473),  Expect = 5e-56, Method: Composition-based stats.
+ Identities = 91/91 (100%), Positives = 91/91 (100%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ
+Sbjct  36   RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|Q9BH09|HGF_FELCA Hepatocyte growth factor OS=Felis catus OX=9685 
+GN=HGF PE=2 SV=1
+Length=728
+
+ Score = 185 bits (471),  Expect = 9e-56, Method: Composition-based stats.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  34   RNTLHEFKKSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  93
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSM+SGVKKEFGHEFDLYENKDYIR
+Sbjct  94   CLWFPFNSMTSGVKKEFGHEFDLYENKDYIR  124
+
+
+>sp|Q867B7|HGF_CANLF Hepatocyte growth factor OS=Canis lupus familiaris 
+OX=9615 GN=HGF PE=2 SV=1
+Length=730
+
+ Score = 185 bits (471),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 84/91 (92%), Positives = 88/91 (97%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTLIK DP LKIKTKK+NTADQCANRC RNKGLPFTCKAFVFDKARK+
+Sbjct  36   RNTLHEFKKSAKTTLIKEDPLLKIKTKKMNTADQCANRCIRNKGLPFTCKAFVFDKARKR  95
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            CLWFPFNSM+SGVKKEFGHEFDLYENKDYIR
+Sbjct  96   CLWFPFNSMTSGVKKEFGHEFDLYENKDYIR  126
+
+
+>sp|P17945|HGF_RAT Hepatocyte growth factor OS=Rattus norvegicus 
+OX=10116 GN=Hgf PE=1 SV=1
+Length=728
+
+ Score = 184 bits (467),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 77/91 (85%), Positives = 84/91 (92%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTL K DP +KIKTKKVN+AD+CANRC RNKG PFTCKAFVFDK+RK+
+Sbjct  37   RNTLHEFKKSAKTTLTKEDPLVKIKTKKVNSADECANRCIRNKGFPFTCKAFVFDKSRKR  96
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            C W+PFNSMSSGVKK FGHEFDLYENKDYIR
+Sbjct  97   CYWYPFNSMSSGVKKGFGHEFDLYENKDYIR  127
+
+
+>sp|Q08048|HGF_MOUSE Hepatocyte growth factor OS=Mus musculus 
+OX=10090 GN=Hgf PE=1 SV=1
+Length=728
+
+ Score = 180 bits (458),  Expect = 7e-54, Method: Composition-based stats.
+ Identities = 76/91 (84%), Positives = 83/91 (91%), Gaps = 0/91 (0%)
+
+Query  1    RNTIHEFKKSAKTTLIKIDPALKIKTKKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQ  60
+            RNT+HEFKKSAKTTL K DP LKIKTKKVN+AD+CANRC RN+G  FTCKAFVFDK+RK+
+Sbjct  37   RNTLHEFKKSAKTTLTKEDPLLKIKTKKVNSADECANRCIRNRGFTFTCKAFVFDKSRKR  96
+
+Query  61   CLWFPFNSMSSGVKKEFGHEFDLYENKDYIR  91
+            C W+PFNSMSSGVKK FGHEFDLYENKDYIR
+Sbjct  97   CYWYPFNSMSSGVKKGFGHEFDLYENKDYIR  127
+
+
+>sp|P26927|HGFL_HUMAN Hepatocyte growth factor-like protein OS=Homo 
+sapiens OX=9606 GN=MST1 PE=1 SV=2
+Length=711
+
+ Score = 37.7 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 19/65 (29%), Positives = 31/65 (48%), Gaps = 4/65 (6%)
+
+Query  27   KKVNTADQCANRCTRNKGLPFTCKAFVFDKARKQCLWFPFNSMSSGVKKEFGHEFDLYEN  86
+            + V  A++CA RC    G    C+AF ++ +   C   P+   S   +       DL++ 
+Sbjct  48   EDVADAEECAGRC----GPLMDCRAFHYNVSSHGCQLLPWTQHSPHTRLRRSGRCDLFQK  103
+
+Query  87   KDYIR  91
+            KDY+R
+Sbjct  104  KDYVR  108
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.140    0.470    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0429    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5053531920
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

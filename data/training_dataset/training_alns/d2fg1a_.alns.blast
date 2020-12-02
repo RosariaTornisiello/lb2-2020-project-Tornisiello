@@ -1,0 +1,4080 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2fg1a_
+
+Length=157
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 1...  70.1    2e-13
+sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 1...  69.7    3e-13
+sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 1...  68.9    5e-13
+sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 1...  63.5    3e-11
+sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs int...  52.4    6e-08
+sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodd...  49.7    5e-07
+sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos taur...  45.8    2e-05
+sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Cand...  45.8    2e-05
+sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis thal...  43.5    3e-04
+sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meye...  42.4    4e-04
+sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarr...  41.6    7e-04
+sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus musc...  40.8    0.001
+sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo sap...  40.8    0.001
+
+
+>sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Homo sapiens OX=9606 GN=CHD1L PE=1 SV=3
+Length=897
+
+ Score = 70.1 bits (170),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 50/164 (30%), Positives = 80/164 (49%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            +A  + Y+ GD T P  G+   +I H  +D G WG+G    AL K+   P + Y +    
+Sbjct  713  DATSLKYVSGDVTHPQAGAEDALIVHCVDDSGHWGRGGLFTALEKRSAEPRKIY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++ +LG V    V++K         +A ++ QH     S  L  I+  A+ + LK++ L
+Sbjct  772  MKDLSLGGVLLFPVDDKESRNKGQDLLALIVAQH--RDRSNVLSGIKMAALEEGLKKIFL  829
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L  + I   +Y
+Sbjct  830  AAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLAARGIPTYIY  873
+
+
+>sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Bos taurus OX=9913 GN=CHD1L PE=2 SV=1
+Length=897
+
+ Score = 69.7 bits (169),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 49/165 (30%), Positives = 81/165 (49%), Gaps = 14/165 (8%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G+   VI H  +D G WG+G    AL  +   P + Y +    
+Sbjct  713  DSTSIRYVSGDVTHPQAGAEDAVIVHCVDDSGRWGRGGLFTALETRSAEPRKRY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKG-LPPIRYDAVRQCLKEVA  110
+             ++ +LG V    +++K         +A ++ QH   +D    L  I+  A+ + LK++ 
+Sbjct  772  MKDLSLGGVLLFPIDDKESRNEGQDLLALIVAQH---RDRANVLSGIKMAALEEALKKIF  828
+
+Query  111  LFTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            L     KASVH+PRIG    G  W   E++I++ L ++ I   +Y
+Sbjct  829  LAAKKRKASVHLPRIGHATKGFNWYGTERLIRKHLASRGIPTYIY  873
+
+
+>sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Mus musculus OX=10090 GN=Chd1l PE=1 SV=1
+Length=900
+
+ Score = 68.9 bits (167),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 51/165 (31%), Positives = 80/165 (48%), Gaps = 14/165 (8%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G    VI H  +D G WG+G    AL  +   P + Y +    
+Sbjct  718  DSTSINYVSGDVTHPQAGEEDAVIVHCVDDSGRWGRGGLFTALEVRSAEPRKIY-ELAGK  776
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKG-LPPIRYDAVRQCLKEVA  110
+             E+ +LG V    +++K         +A ++ QH   +D    L  I+  A+ + LK++ 
+Sbjct  777  MEDLSLGDVLLFPIDDKESRDKGQDLLALVVAQH---RDRTNVLSGIKMAALEEGLKKIF  833
+
+Query  111  LFTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            L     KASVH+PRIG    G  W   E++I++ L T+ I   +Y
+Sbjct  834  LAAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLATRGIPTYIY  878
+
+
+>sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Danio rerio OX=7955 GN=chd1l PE=2 SV=1
+Length=1026
+
+ Score = 63.5 bits (153),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 48/160 (30%), Positives = 75/160 (47%), Gaps = 12/160 (8%)
+
+Query  5    ILYIKGDATAPIGSGVK-VITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+ GD T P       +I H  +D G WG+G    AL  +   P + Y +     ++ 
+Sbjct  710  IRYVLGDVTHPQADREDAIIVHCVDDSGHWGRGGLFTALGLRSDEPRKQY-ELAGDMKDL  768
+
+Query  63   TLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIA  115
+             LG V    V++K        Y+A ++ Q      +  L  IR  A+ + LK++      
+Sbjct  769  ELGNVLLFPVDDKQSRLCGRDYLALIVAQQ--RDKANKLSGIRLTALDEGLKKIYKAAKQ  826
+
+Query  116  HKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+             KASVH+PRIG    G  W   E++I++ L T+ I  ++Y
+Sbjct  827  KKASVHLPRIGHSTKGFNWYGTERLIRKHLATRGIFTSIY  866
+
+
+>sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs 
+intergenic region OS=Enterobacteria phage T4 OX=10665 GN=y06D 
+PE=4 SV=1
+Length=155
+
+ Score = 52.4 bits (124),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 43/152 (28%), Positives = 67/152 (44%), Gaps = 6/152 (4%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M + YIKGD  A    G K I H CN     G G    L+K +    EA +   +  +  
+Sbjct  1    MIVKYIKGDIVALFAEG-KNIAHGCNCFHTMGSGVAGQLTKAFPKILEADKLQTEWGDVT  59
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAH--KASV  120
+             LG+    +V  K +  +      +Y   +  P   Y A+  C+ E+  F      K ++
+Sbjct  60   KLGSY---SVYEKYFRTHKAYCFNLYTQFQPGPNFEYSALMNCMLELNEFGENKLIKPTI  116
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAV  152
+            +MPRIG G+  G W+++E I+       EI +
+Sbjct  117  YMPRIGAGIGKGNWDIIEGILDTYSSKLEIVI  148
+
+
+>sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodderomyces 
+elongisporus (strain ATCC 11503 / CBS 2605 / JCM 
+1781 / NBRC 1676 / NRRL YB-4239) OX=379508 GN=POA1 PE=3 SV=1
+Length=160
+
+ Score = 49.7 bits (117),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 44/168 (26%), Positives = 71/168 (42%), Gaps = 22/168 (13%)
+
+Query  3    MEILYIKGDA---TAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQ  59
+            M + YI+GD    +AP G  + V+ H CN  G WG G     ++K+      Y + Y  +
+Sbjct  1    MTVKYIRGDLFTHSAPTGKSI-VLAHACNTGGSWGGGIAAVFARKYPKANRQYSE-YCHK  58
+
+Query  60   EEFTLGAVQFVNVEN----KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVA-----  110
+                LG    +  ++    K Y+A +        D    P        Q L+E+A     
+Sbjct  59   NSHLLGTSLLLKADDYDKSKAYIACLFTS-----DFNQSPEQIVKYTDQSLQELAKQLKS  113
+
+Query  111  --LFTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+              + T      V+MP+I  G+ G  WE  E ++ ++L + +  V V D
+Sbjct  114  LPIETQNGNQVVNMPKINSGIFGVPWENTEAVL-DKLDSLDFNVYVID  160
+
+
+>sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos 
+taurus OX=9913 GN=OARD1 PE=2 SV=1
+Length=152
+
+ Score = 45.8 bits (107),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 45/156 (29%), Positives = 71/156 (46%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGD--ATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD  A     S V  I+  C      G G  +   KK+   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPQTDSLVHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +R+ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLRKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  II+E     +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAIIEEVFEATDIRITVYTL  152
+
+
+>sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Candida 
+albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=POA1 
+PE=3 SV=2
+Length=156
+
+ Score = 45.8 bits (107),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 38/149 (26%), Positives = 59/149 (40%), Gaps = 15/149 (10%)
+
+Query  5    ILYIKGDA-TAPIGSGVKVI-THICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I YIKGD  T  I +G KVI  H CN  G WG G      KK+      Y Q+       
+Sbjct  2    IQYIKGDLFTHAIPAGKKVILAHACNTHGSWGGGIAAVFRKKFPKSNNEYSQYCHKNSNL  61
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAH------  116
+               +    + +  + +A +        D    P       +Q + ++A     +      
+Sbjct  62   LGTSFIIESDQPNILIACLFTS-----DFNQTPEQIVHFTKQSIADLARKVSDYKEVEKC  116
+
+Query  117  --KASVHMPRIGCGLAGGKWELMEQIIKE  143
+              K +++MP+I  G+ G  WE  E  ++E
+Sbjct  117  DGKVAINMPKINAGIFGVPWEDTESALQE  145
+
+
+>sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis 
+thaliana OX=3702 GN=CHR10 PE=3 SV=1
+Length=877
+
+ Score = 43.5 bits (101),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 43/175 (25%), Positives = 77/175 (44%), Gaps = 23/175 (13%)
+
+Query  1    NAMEILYIKGDATAP--IGSGVKVITHICNDIGGWGKGFVL-ALSKKWKMPEEAYRQWYK  57
+            +A  + ++ GD T P  +     +I    +D G WG+G +  ALSK       AY +   
+Sbjct  702  DAGSVNFVFGDCTNPSTVSHEPAIIFSCVDDSGNWGRGGMFDALSKLSNTVPTAYHR-AS  760
+
+Query  58   SQEEFTLGAVQFVNVENK-----------LYVANMIGQHGIYKDSKGLP--PIRYDAVRQ  104
+              ++  LG +  + +++            L+VA  + Q   Y   + +P   I    +  
+Sbjct  761  EFKDLHLGDLHLIKIDDNDDQQNTQASKPLWVAVAVTQS--YNSRRKVPRSSISIPDLES  818
+
+Query  105  CLKEVALFTIAHKASVHMPRIGC--GLAGGKWELMEQIIKE--ELITKEIAVTVY  155
+            CL + +       AS+HMPRIG   G    +W  +E+++++   + T +I V  Y
+Sbjct  819  CLAKASFSASQKSASLHMPRIGYQDGSDRSQWYTVERLLRKYSSIFTVKIFVYYY  873
+
+
+>sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meyerozyma 
+guilliermondii (strain ATCC 6260 / CBS 566 / DSM 
+6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=POA1 
+PE=3 SV=2
+Length=175
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 42/172 (24%), Positives = 63/172 (37%), Gaps = 27/172 (16%)
+
+Query  7    YIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK---SQEEFT  63
+            YIKGD  +   S   ++ H CN  G WG G      K++    + Y +  K   S     
+Sbjct  6    YIKGDLFSHKSSASSILAHACNCRGSWGAGVAAIFKKQFPSTYKLYVEHCKKHASNPSGL  65
+
+Query  64   LGAVQFVNV----------ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLK-EVALF  112
+            LG+   +            EN  YVA M       +       I  +  +  L  E  L 
+Sbjct  66   LGSTYLIKSESSDPGNSGRENVAYVACMFTSDAFGRRKNSADDIVENTDKSMLHLESQLA  125
+
+Query  113  TIAHKAS---------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+             +A             V+MP+I  GL    WE  E ++K+     ++ + VY
+Sbjct  126  ELAKTEPIEQQDGVNVVNMPKINAGLFNVPWEETEAVLKKH----QVLINVY  173
+
+
+>sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarrowia 
+lipolytica (strain CLIB 122 / E 150) OX=284591 GN=POA1 
+PE=3 SV=2
+Length=169
+
+ Score = 41.6 bits (96),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 39/161 (24%), Positives = 67/161 (42%), Gaps = 32/161 (20%)
+
+Query  5    ILYIKGD--ATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQW---YKSQ  59
+            + Y++GD    +P  +   V+ H CN +G WG G      +K+      Y++    Y   
+Sbjct  8    LTYVQGDLFEESPRPA---VLAHACNCLGSWGSGVAAGFKQKFPGAFVEYKRHCDKYSDD  64
+
+Query  60   EEFTLGAVQFVNVENK-----LYVANMI----------GQHGIYKDSKGLPPIRYDAVRQ  104
+                LG  Q +   +      +YVA +           G   I K +K        A++ 
+Sbjct  65   NSALLGTCQLIETHDAQTGELVYVACLFTSVRFGARVDGPEQIVKQTKL-------AMQD  117
+
+Query  105  CLKEVALFT--IAHKASVHMPRIGCGLAGGKWELMEQIIKE  143
+              K++A  +  I   ++VHMP+I  GL    W   E++++E
+Sbjct  118  LQKQLAKMSGPIDGNSTVHMPKINAGLFRVPWRDTEKVLEE  158
+
+
+>sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus 
+musculus OX=10090 GN=Oard1 PE=1 SV=2
+Length=152
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 41/156 (26%), Positives = 71/156 (46%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGD--ATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD  A     S    I+  C      G G  +   K++   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKRFGGVQELLSQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  I++E   + +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAILEEVFESTDIKITVYTL  152
+
+
+>sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo 
+sapiens OX=9606 GN=OARD1 PE=1 SV=2
+Length=152
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 42/156 (27%), Positives = 70/156 (45%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGD--ATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD  A     S    I+  C      G G  +   KK+   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  +I+E     +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAMIEEVFEATDIKITVYTL  152
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.424    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6957324290
+Results from round 2
+
+
+Query= d2fg1a_
+
+Length=157
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 1...  181     2e-52
+sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 1...  179     1e-51
+sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 1...  178     3e-51
+sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs int...  158     5e-49
+sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 1...  171     7e-49
+sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodd...  157     1e-48
+sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Cand...  154     2e-47
+sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meye...  151     2e-46
+sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarr...  139     1e-41
+sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis thal...  147     2e-40
+sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos taur...  128     2e-37
+sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus musc...  124     4e-36
+sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo sap...  124     1e-35
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q6BPN4|POA1_DEBHA ADP-ribose 1''-phosphate phosphatase OS=Deba...  126     3e-36
+sp|A3LZD1|POA1_PICST ADP-ribose 1''-phosphate phosphatase OS=Sche...  118     3e-33
+sp|P38218|POA1_YEAST ADP-ribose 1''-phosphate phosphatase OS=Sacc...  106     3e-28
+sp|A6ZKW8|POA1_YEAS7 ADP-ribose 1''-phosphate phosphatase OS=Sacc...  106     3e-28
+sp|A7TJY9|POA1_VANPO ADP-ribose 1''-phosphate phosphatase OS=Vand...  98.0    4e-25
+sp|Q6FXN3|POA1_CANGA ADP-ribose 1''-phosphate phosphatase OS=Cand...  91.0    2e-22
+sp|Q0UHC0|POA1_PHANO ADP-ribose 1''-phosphate phosphatase OS=Phae...  89.9    6e-22
+sp|Q2GV19|POA1_CHAGB ADP-ribose 1''-phosphate phosphatase OS=Chae...  79.9    5e-18
+sp|Q2UQY2|POA1_ASPOR ADP-ribose 1''-phosphate phosphatase OS=Aspe...  76.4    1e-16
+sp|Q4WRE8|POA1_ASPFU ADP-ribose 1''-phosphate phosphatase OS=Neos...  76.0    2e-16
+sp|A1D1B7|POA1_NEOFI ADP-ribose 1''-phosphate phosphatase OS=Neos...  72.1    5e-15
+sp|A1CNH7|POA1_ASPCL ADP-ribose 1''-phosphate phosphatase OS=Aspe...  62.9    1e-11
+sp|A6QXU0|POA1_AJECN ADP-ribose 1''-phosphate phosphatase OS=Ajel...  56.4    7e-09
+sp|Q54QM4|DNLI3_DICDI DNA ligase 3 OS=Dictyostelium discoideum OX...  55.6    2e-08
+sp|Q9WYX8|Y508_THEMA Uncharacterized protein TM_0508 OS=Thermotog...  41.7    0.001
+sp|P36327|POLN_EEVV3 Polyprotein P1234 OS=Venezuelan equine encep...  40.9    0.002
+sp|Q96XY5|Y2383_SULTO Uncharacterized protein STK_23830 OS=Sulfur...  40.2    0.002
+sp|P27282|POLN_EEVVT Polyprotein P1234 OS=Venezuelan equine encep...  40.2    0.004
+sp|P36328|POLN_EEVVP Polyprotein P1234 OS=Venezuelan equine encep...  40.2    0.004
+
+
+>sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Homo sapiens OX=9606 GN=CHD1L PE=1 SV=3
+Length=897
+
+ Score = 181 bits (458),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 50/164 (30%), Positives = 80/164 (49%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            +A  + Y+ GD T P  G+   +I H  +D G WG+G    AL K+   P + Y +    
+Sbjct  713  DATSLKYVSGDVTHPQAGAEDALIVHCVDDSGHWGRGGLFTALEKRSAEPRKIY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++ +LG V    V++K         +A ++ QH     S  L  I+  A+ + LK++ L
+Sbjct  772  MKDLSLGGVLLFPVDDKESRNKGQDLLALIVAQH--RDRSNVLSGIKMAALEEGLKKIFL  829
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L  + I   +Y
+Sbjct  830  AAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLAARGIPTYIY  873
+
+
+>sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Mus musculus OX=10090 GN=Chd1l PE=1 SV=1
+Length=900
+
+ Score = 179 bits (453),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 50/164 (30%), Positives = 79/164 (48%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G    VI H  +D G WG+G    AL  +   P + Y +    
+Sbjct  718  DSTSINYVSGDVTHPQAGEEDAVIVHCVDDSGRWGRGGLFTALEVRSAEPRKIY-ELAGK  776
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             E+ +LG V    +++K         +A ++ QH     +  L  I+  A+ + LK++ L
+Sbjct  777  MEDLSLGDVLLFPIDDKESRDKGQDLLALVVAQH--RDRTNVLSGIKMAALEEGLKKIFL  834
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L T+ I   +Y
+Sbjct  835  AAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLATRGIPTYIY  878
+
+
+>sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Bos taurus OX=9913 GN=CHD1L PE=2 SV=1
+Length=897
+
+ Score = 178 bits (450),  Expect = 3e-51, Method: Composition-based stats.
+ Identities = 48/164 (29%), Positives = 80/164 (49%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G+   VI H  +D G WG+G    AL  +   P + Y +    
+Sbjct  713  DSTSIRYVSGDVTHPQAGAEDAVIVHCVDDSGRWGRGGLFTALETRSAEPRKRY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++ +LG V    +++K         +A ++ QH     +  L  I+  A+ + LK++ L
+Sbjct  772  MKDLSLGGVLLFPIDDKESRNEGQDLLALIVAQH--RDRANVLSGIKMAALEEALKKIFL  829
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L ++ I   +Y
+Sbjct  830  AAKKRKASVHLPRIGHATKGFNWYGTERLIRKHLASRGIPTYIY  873
+
+
+>sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs 
+intergenic region OS=Enterobacteria phage T4 OX=10665 GN=y06D 
+PE=4 SV=1
+Length=155
+
+ Score = 158 bits (398),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 43/152 (28%), Positives = 67/152 (44%), Gaps = 6/152 (4%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M + YIKGD  A    G K I H CN     G G    L+K +    EA +   +  +  
+Sbjct  1    MIVKYIKGDIVALFAEG-KNIAHGCNCFHTMGSGVAGQLTKAFPKILEADKLQTEWGDVT  59
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAH--KASV  120
+             LG+    +V  K +  +      +Y   +  P   Y A+  C+ E+  F      K ++
+Sbjct  60   KLGSY---SVYEKYFRTHKAYCFNLYTQFQPGPNFEYSALMNCMLELNEFGENKLIKPTI  116
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAV  152
+            +MPRIG G+  G W+++E I+       EI +
+Sbjct  117  YMPRIGAGIGKGNWDIIEGILDTYSSKLEIVI  148
+
+
+>sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Danio rerio OX=7955 GN=chd1l PE=2 SV=1
+Length=1026
+
+ Score = 171 bits (433),  Expect = 7e-49, Method: Composition-based stats.
+ Identities = 48/164 (29%), Positives = 76/164 (46%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAPIGS-GVKVITHICNDIGGWGKG-FVLALSKKWKMPEEAYRQWYKS  58
+            +   I Y+ GD T P       +I H  +D G WG+G    AL  +   P + Y +    
+Sbjct  706  DHTAIRYVLGDVTHPQADREDAIIVHCVDDSGHWGRGGLFTALGLRSDEPRKQY-ELAGD  764
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++  LG V    V++K        Y+A ++ Q      +  L  IR  A+ + LK++  
+Sbjct  765  MKDLELGNVLLFPVDDKQSRLCGRDYLALIVAQQ--RDKANKLSGIRLTALDEGLKKIYK  822
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L T+ I  ++Y
+Sbjct  823  AAKQKKASVHLPRIGHSTKGFNWYGTERLIRKHLATRGIFTSIY  866
+
+
+>sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodderomyces 
+elongisporus (strain ATCC 11503 / CBS 2605 / JCM 
+1781 / NBRC 1676 / NRRL YB-4239) OX=379508 GN=POA1 PE=3 SV=1
+Length=160
+
+ Score = 157 bits (396),  Expect = 1e-48, Method: Composition-based stats.
+ Identities = 42/167 (25%), Positives = 66/167 (40%), Gaps = 20/167 (12%)
+
+Query  3    MEILYIKGDA-TAPIGSGVK-VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQE  60
+            M + YI+GD  T    +G   V+ H CN  G WG G     ++K+      Y ++     
+Sbjct  1    MTVKYIRGDLFTHSAPTGKSIVLAHACNTGGSWGGGIAAVFARKYPKANRQYSEYCHK-N  59
+
+Query  61   EFTLGAVQFVNVEN----KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL-----  111
+               LG    +  ++    K Y+A +        D    P        Q L+E+A      
+Sbjct  60   SHLLGTSLLLKADDYDKSKAYIACLFTS-----DFNQSPEQIVKYTDQSLQELAKQLKSL  114
+
+Query  112  --FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+               T      V+MP+I  G+ G  WE  E ++ + L + +  V V D
+Sbjct  115  PIETQNGNQVVNMPKINSGIFGVPWENTEAVLDK-LDSLDFNVYVID  160
+
+
+>sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Candida 
+albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=POA1 
+PE=3 SV=2
+Length=156
+
+ Score = 154 bits (388),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 40/161 (25%), Positives = 60/161 (37%), Gaps = 16/161 (10%)
+
+Query  5    ILYIKGDA-TAPIGSGVKVI-THICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I YIKGD  T  I +G KVI  H CN  G WG G      KK+      Y Q+       
+Sbjct  2    IQYIKGDLFTHAIPAGKKVILAHACNTHGSWGGGIAAVFRKKFPKSNNEYSQYCHKNSNL  61
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTI--------  114
+               +    + +  + +A +        D    P       +Q + ++A            
+Sbjct  62   LGTSFIIESDQPNILIACLFTS-----DFNQTPEQIVHFTKQSIADLARKVSDYKEVEKC  116
+
+Query  115  AHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+              K +++MP+I  G+ G  WE  E  ++E        V V 
+Sbjct  117  DGKVAINMPKINAGIFGVPWEDTESALQE-FDNLHFNVYVI  156
+
+
+>sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meyerozyma 
+guilliermondii (strain ATCC 6260 / CBS 566 / DSM 
+6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=POA1 
+PE=3 SV=2
+Length=175
+
+ Score = 151 bits (382),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 41/174 (24%), Positives = 63/174 (36%), Gaps = 27/174 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS---QEE  61
+            + YIKGD  +   S   ++ H CN  G WG G      K++    + Y +  K       
+Sbjct  4    LNYIKGDLFSHKSSASSILAHACNCRGSWGAGVAAIFKKQFPSTYKLYVEHCKKHASNPS  63
+
+Query  62   FTLGAVQFVN----------VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLK-EVA  110
+              LG+   +            EN  YVA M       +       I  +  +  L  E  
+Sbjct  64   GLLGSTYLIKSESSDPGNSGRENVAYVACMFTSDAFGRRKNSADDIVENTDKSMLHLESQ  123
+
+Query  111  LFTIAHKAS---------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            L  +A             V+MP+I  GL    WE  E ++K+     ++ + VY
+Sbjct  124  LAELAKTEPIEQQDGVNVVNMPKINAGLFNVPWEETEAVLKKH----QVLINVY  173
+
+
+>sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarrowia 
+lipolytica (strain CLIB 122 / E 150) OX=284591 GN=POA1 
+PE=3 SV=2
+Length=169
+
+ Score = 139 bits (351),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 37/166 (22%), Positives = 62/166 (37%), Gaps = 20/166 (12%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWY---KSQE  60
+             + Y++GD          V+ H CN +G WG G      +K+      Y++         
+Sbjct  7    ALTYVQGDLFEESP-RPAVLAHACNCLGSWGSGVAAGFKQKFPGAFVEYKRHCDKYSDDN  65
+
+Query  61   EFTLGAVQFVNVENK-----LYVANMIGQHGIYKDSKGLPPIRYD----AVRQCLKEVAL  111
+               LG  Q +   +      +YVA +             P         A++   K++A 
+Sbjct  66   SALLGTCQLIETHDAQTGELVYVACLFTSVRFGARVD-GPEQIVKQTKLAMQDLQKQLAK  124
+
+Query  112  FT--IAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+             +  I   ++VHMP+I  GL    W   E++++E         TVY
+Sbjct  125  MSGPIDGNSTVHMPKINAGLFRVPWRDTEKVLEE----VGQPCTVY  166
+
+
+>sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis 
+thaliana OX=3702 GN=CHR10 PE=3 SV=1
+Length=877
+
+ Score = 147 bits (370),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 41/173 (24%), Positives = 74/173 (43%), Gaps = 19/173 (11%)
+
+Query  1    NAMEILYIKGDATAP--IGSGVKVITHICNDIGGWGKGFVL-ALSKKWKMPEEAYRQWYK  57
+            +A  + ++ GD T P  +     +I    +D G WG+G +  ALSK       AY +   
+Sbjct  702  DAGSVNFVFGDCTNPSTVSHEPAIIFSCVDDSGNWGRGGMFDALSKLSNTVPTAYHR-AS  760
+
+Query  58   SQEEFTLGAVQFVNVENK-----------LYVANMIGQHGIYKDSKGLPPIRYDAVRQCL  106
+              ++  LG +  + +++            L+VA  + Q    +       I    +  CL
+Sbjct  761  EFKDLHLGDLHLIKIDDNDDQQNTQASKPLWVAVAVTQSYNSRRKVPRSSISIPDLESCL  820
+
+Query  107  KEVALFTIAHKASVHMPRIGC--GLAGGKWELMEQIIKEE--LITKEIAVTVY  155
+             + +       AS+HMPRIG   G    +W  +E+++++   + T +I V  Y
+Sbjct  821  AKASFSASQKSASLHMPRIGYQDGSDRSQWYTVERLLRKYSSIFTVKIFVYYY  873
+
+
+>sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos 
+taurus OX=9913 GN=OARD1 PE=2 SV=1
+Length=152
+
+ Score = 128 bits (321),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 44/156 (28%), Positives = 70/156 (45%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGDA--TAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD        S V  I+  C      G G  +   KK+   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPQTDSLVHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +R+ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLRKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  II+E     +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAIIEEVFEATDIRITVYTL  152
+
+
+>sp|Q6BPN4|POA1_DEBHA ADP-ribose 1''-phosphate phosphatase OS=Debaryomyces 
+hansenii (strain ATCC 36239 / CBS 767 / JCM 1990 
+/ NBRC 0083 / IGC 2968) OX=284592 GN=POA1 PE=3 SV=2
+Length=179
+
+ Score = 126 bits (316),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 59/180 (33%), Gaps = 30/180 (17%)
+
+Query  5    ILYIKGDATAPIGS---GVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK---S  58
+            I YIKGD      S    + +  H CN  G WG G      +K+    + Y  +      
+Sbjct  2    IKYIKGDLFTHTPSSRSAISIFAHACNCRGSWGGGIATVFYRKFPSAYKIYADYCSTHAD  61
+
+Query  59   QEEFTLGAVQFVNV----------ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKE  108
+                 LG    +            +  +YVA +      Y   K  P          +K+
+Sbjct  62   DPSKLLGTTLLIPSSSSDPGNENGQKIVYVACLFTSD-FYGKKKLTPGDIAANTDLSMKD  120
+
+Query  109  VA------------LFTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+            +               T   +  V+MP+I  GL    WE+ E ++ +      I V V D
+Sbjct  121  LDTQLESLKEEKEIESTDQGEVVVNMPKINAGLFAVPWEITEDVLNK-FNNLHINVYVVD  179
+
+
+>sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus 
+musculus OX=10090 GN=Oard1 PE=1 SV=2
+Length=152
+
+ Score = 124 bits (312),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 40/156 (26%), Positives = 70/156 (45%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGDA--TAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD        S    I+  C      G G  +   K++   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKRFGGVQELLSQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  I++E   + +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAILEEVFESTDIKITVYTL  152
+
+
+>sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo 
+sapiens OX=9606 GN=OARD1 PE=1 SV=2
+Length=152
+
+ Score = 124 bits (310),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 41/156 (26%), Positives = 69/156 (44%), Gaps = 20/156 (13%)
+
+Query  5    ILYIKGDA--TAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I Y+KGD        S    I+  C      G G  +   KK+   +E   Q  KS    
+Sbjct  14   ITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS----  65
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-VH  121
+              G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + + 
+Sbjct  66   --GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDLS  116
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+            MPRIGCGL   +WE +  +I+E     +I +TVY L
+Sbjct  117  MPRIGCGLDRLQWENVSAMIEEVFEATDIKITVYTL  152
+
+
+>sp|A3LZD1|POA1_PICST ADP-ribose 1''-phosphate phosphatase OS=Scheffersomyces 
+stipitis (strain ATCC 58785 / CBS 6054 / NBRC 
+10063 / NRRL Y-11545) OX=322104 GN=POA1 PE=3 SV=2
+Length=173
+
+ Score = 118 bits (295),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 43/174 (25%), Positives = 59/174 (34%), Gaps = 25/174 (14%)
+
+Query  5    ILYIKGDAT---APIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS---  58
+            I YIKGD      P  S V V  H CN  G WG G    L  K+      Y    +    
+Sbjct  2    IRYIKGDLLGHLPPSKSSVAVFAHACNCQGVWGGGIAAVLRVKFPSTYPLYSGHCQEKGC  61
+
+Query  59   QEEFTLGAVQFVNV----------ENKLYVANMIGQHGIYKDSKGL--PPIRYDAVRQCL  106
+                 LG    V                Y+A +          + +       +A+   L
+Sbjct  62   DPHRLLGTSVVVPSQASDPGNIAGYPPKYIACLFTSDFAQTQEEIVAYTDSAIEALVDQL  121
+
+Query  107  KEVALFT-----IAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            KE+   T      + K  V+MP+I  G+    WE  E ++K+     E  V V 
+Sbjct  122  KELQKTTAIETGQSGKIVVNMPKINAGIFAVPWEKTEAVLKKY--DVEFNVYVI  173
+
+
+>sp|P38218|POA1_YEAST ADP-ribose 1''-phosphate phosphatase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=POA1 PE=1 SV=1
+Length=177
+
+ Score = 106 bits (263),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 34/178 (19%), Positives = 65/178 (37%), Gaps = 29/178 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I Y+KG+   P     +++ H CN  G WG G    L+ ++   E+ Y +  +      L
+Sbjct  4    ITYVKGNILKPKSYA-RILIHSCNCNGSWGGGIAYQLALRYPKAEKDYVEVCEKYGSNLL  62
+
+Query  65   GAVQFVNVENK--LYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS---  119
+            G    +       L +  +               I  +  +  L ++  F  A   +   
+Sbjct  63   GKCILLPSYENSDLLICCLFTSSFGGSSHGEKQSI-LNYTKLALDKLKTFREAKDKTRTS  121
+
+Query  120  --------------------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+                                + MP+I  G+ G  W+  E++++E   + +++ TVY L
+Sbjct  122  EDSIGDYLNGHIKYPIGEYKLEMPQINSGIFGVPWKETERVLEE--FSGDMSFTVYQL  177
+
+
+>sp|A6ZKW8|POA1_YEAS7 ADP-ribose 1''-phosphate phosphatase OS=Saccharomyces 
+cerevisiae (strain YJM789) OX=307796 GN=POA1 PE=3 
+SV=1
+Length=177
+
+ Score = 106 bits (263),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 34/178 (19%), Positives = 65/178 (37%), Gaps = 29/178 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I Y+KG+   P     +++ H CN  G WG G    L+ ++   E+ Y +  +      L
+Sbjct  4    ITYVKGNILKPKSYA-RILIHSCNCNGSWGGGIAYQLALRYPKAEKDYVEVCEKYGSNLL  62
+
+Query  65   GAVQFVNVENK--LYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS---  119
+            G    +       L +  +               I  +  +  L ++  F  A   +   
+Sbjct  63   GKCILLPSYENSDLLICCLFTSSFGGSSHGEKQSI-LNYTKLALDKLKTFREAKDKTRTS  121
+
+Query  120  --------------------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+                                + MP+I  G+ G  W+  E++++E   + +++ TVY L
+Sbjct  122  EDSIGDYLNGHIKYPIGEYKLEMPQINSGIFGVPWKETERVLEE--FSGDMSFTVYQL  177
+
+
+>sp|A7TJY9|POA1_VANPO ADP-ribose 1''-phosphate phosphatase OS=Vanderwaltozyma 
+polyspora (strain ATCC 22028 / DSM 70294) OX=436907 
+GN=POA1 PE=3 SV=1
+Length=180
+
+ Score = 98.0 bits (242),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 34/166 (20%), Positives = 55/166 (33%), Gaps = 30/166 (18%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I YIKG+     G+  +++ H CN  G WG G    L+  +   E+ Y           L
+Sbjct  7    ISYIKGNILH-GGNIPRILIHSCNCNGTWGGGIAYQLAVHYPEAEKIYTDICDDFGSELL  65
+
+Query  65   GAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRY-----------------DAVRQC  105
+            G    +    ++ L +  +               I                     +  C
+Sbjct  66   GKCVLIPSFSDDSLLIGCLFTSVYGGSSHDTKNEILKYTKLSLMQLSLQLENNDSCIDTC  125
+
+Query  106  LKE--------VALFTIAHKASVHMPRIGCGLAGGKWELMEQIIKE  143
+            L E        +      +K  + MP+I  G+    WE  E+I+KE
+Sbjct  126  LSEYNQLLISNIKHHLKDYK--LEMPKINSGIFNVPWEETEKILKE  169
+
+
+>sp|Q6FXN3|POA1_CANGA ADP-ribose 1''-phosphate phosphatase OS=Candida 
+glabrata (strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 
+0622 / NRRL Y-65) OX=284593 GN=POA1 PE=3 SV=1
+Length=179
+
+ Score = 91.0 bits (224),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 32/175 (18%), Positives = 56/175 (32%), Gaps = 27/175 (15%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I YIKG+      +  ++I H CN  G WG G    L+ K    EE Y    +   +  L
+Sbjct  4    IHYIKGNILKGR-TYKRIIIHSCNANGAWGGGIAYQLAVKHPKAEEVYVDLCERFGQKLL  62
+
+Query  65   GAVQFVN--VENKLYVANMIG------QHGIYKDSKGLPPIRYDAVRQCLKEVALFTIA-  115
+            G    +    ++ + +  +         HG                 + L +    +   
+Sbjct  63   GKCVVIPSYSDDDVLIGCLFTSIFGGASHGSGTSIVDYTDKALSHFDELLAKEQSKSDNA  122
+
+Query  116  -----------------HKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVT  153
+                                 + MP+I  G+ G  W   E+++K+   +    V 
+Sbjct  123  NLDKEIEKLLKLKSGVLKDYKLEMPKINSGIFGVPWPETEEVLKKYDRSMNFTVY  177
+
+
+>sp|Q0UHC0|POA1_PHANO ADP-ribose 1''-phosphate phosphatase OS=Phaeosphaeria 
+nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) 
+OX=321614 GN=POA1 PE=3 SV=2
+Length=183
+
+ Score = 89.9 bits (221),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 31/150 (21%), Positives = 52/150 (35%), Gaps = 10/150 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAY-----RQWY  56
+             +   Y  GD          +I H CN  G WG G   A  +K+     A+     ++  
+Sbjct  18   TLSFTYHIGDMFEDAPENCLLI-HACNSQGHWGAGIAKAFKQKYPKAYTAHNKFCAKEHS  76
+
+Query  57   KSQEEFTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAV--RQCLKEVALF  112
+            K+Q   T  A     V+  ++ ++  +       K       I  +       L E+   
+Sbjct  77   KTQPVPTGSAQLLAPVDSGSQHWIGCLFTSAKYGKAKDKPDAIVKNTTASMSMLLELVRM  136
+
+Query  113  TIAHKASVHMPRIGCGLAGGKWELMEQIIK  142
+                 + + M +I  G  G  WE  E+ +K
+Sbjct  137  ADGEVSEIRMCKINSGKFGVPWEKTEEALK  166
+
+
+>sp|Q2GV19|POA1_CHAGB ADP-ribose 1''-phosphate phosphatase OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 
+/ NBRC 6347 / NRRL 1970) OX=306901 GN=POA1 PE=3 SV=2
+Length=185
+
+ Score = 79.9 bits (195),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 30/149 (20%), Positives = 47/149 (32%), Gaps = 18/149 (12%)
+
+Query  10   GDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWY-KSQEEFTLGAVQ  68
+            GD  A       ++ H CN +G WG G  LA    +      YR    +S     +G   
+Sbjct  13   GDLFA--APANTLLIHACNTVGSWGGGIALAFRNLYPAEFRVYRAHCARSTPNQLVGTAL  70
+
+Query  69   FVNVENKL---------YVANMIGQHGIYKDSKGLPPIRY---DAVRQCLKEVALFTIAH  116
+             +  +            Y+  +               I      A+R  ++ VA      
+Sbjct  71   LIAPQRASLNGSGGGGHYIGCLFTSRRFGAARDPPDRILRATGPAMRHLMRLVAEEEERT  130
+
+Query  117  KA---SVHMPRIGCGLAGGKWELMEQIIK  142
+                  V M RI  GL    WE  ++ ++
+Sbjct  131  GVRIGEVRMCRINAGLFAVPWESSKRALE  159
+
+
+>sp|Q2UQY2|POA1_ASPOR ADP-ribose 1''-phosphate phosphatase OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=poa1 
+PE=3 SV=1
+Length=201
+
+ Score = 76.4 bits (186),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 30/183 (16%), Positives = 53/183 (29%), Gaps = 44/183 (24%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS----  58
+              I  I+GD       G  +I H CN IG WG G   A  +K+      Y    +     
+Sbjct  8    GSIKEIQGDLFD-APDGAALI-HACNCIGSWGGGIAKAFKQKYPAAYNIYHSHCQKYKFS  65
+
+Query  59   ---------------------QEEFTL--GAVQFVNVENKL--------YVANMIGQHGI  87
+                                  +E  L  G    +  + K         ++  +      
+Sbjct  66   PEYLVTSDPPNQPNNAQSSTRNKEIQLPEGTALIIPPQEKDYKDKDKKHWIICLFTSRNY  125
+
+Query  88   YKDSKGLPPIRYDAVRQCLKEVAL------FTIAHKASVHMPRIGCGLAGGKWELMEQII  141
+             K     P +        + ++           +    +   R   GL G +W L ++++
+Sbjct  126  GKRVSP-PDVIIRNTELAVADMVRQIHRLRAEESGIGELWSCRFNSGLFGVEWVLSKRVL  184
+
+Query  142  KEE  144
+            +E 
+Sbjct  185  EES  187
+
+
+>sp|Q4WRE8|POA1_ASPFU ADP-ribose 1''-phosphate phosphatase OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 
+/ FGSC A1100) OX=330879 GN=poa1 PE=3 SV=2
+Length=200
+
+ Score = 76.0 bits (185),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 34/180 (19%), Positives = 55/180 (31%), Gaps = 43/180 (24%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK-------  57
+            I  I+GD       G  +I H CN  G WGKG   A   K+      YR   +       
+Sbjct  10   ITEIEGDLFH-APDGAALI-HACNCQGSWGKGIAKAFKDKYPAAFAIYRSHCQNLLSSPR  67
+
+Query  58   ---------------SQEEFTL--GAVQFVNVEN--------KLYVANMIGQHGIYKDSK  92
+                           S  +  L  G    +  +         K ++  +    G  +   
+Sbjct  68   YMFEPDLQSEESHARSSRDVRLPEGTALIIPPQKRDSEANGKKHWIICLFTSRGFGRAVS  127
+
+Query  93   GLPPIR------YDAVRQCLKEVALFTIAHKASVH---MPRIGCGLAGGKWELMEQIIKE  143
+                I          + + L E+     + + SV      R   GL G  WE   +++++
+Sbjct  128  PPDVIVRNTELAVADMTRQLAELQTDQSSREESVGELWSCRFNAGLFGVPWERSRRVLED  187
+
+
+>sp|A1D1B7|POA1_NEOFI ADP-ribose 1''-phosphate phosphatase OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 
+/ FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=poa1 
+PE=3 SV=1
+Length=200
+
+ Score = 72.1 bits (175),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 30/181 (17%), Positives = 50/181 (28%), Gaps = 45/181 (25%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWY--------  56
+            I  I+GD       G  +I H CN  G WGKG   A   K+      YR           
+Sbjct  10   ITEIEGDLFH-APDGAALI-HACNCQGSWGKGIAKAFKDKYPAAFAIYRSHCQNLLSSPR  67
+
+Query  57   ----------------KSQEEFTLGAVQFVNVEN--------KLYVANMIGQHGIYKDSK  92
+                                +   G    +  +         K ++  +    G  +   
+Sbjct  68   YRFEPAVQSEESHARSSRGVQLPEGTALIIPPQKRDSEANGKKHWIICLFTSRGFGRAVS  127
+
+Query  93   GLPPIRYDAVRQCLKEV--ALFTIAHKAS--------VHMPRIGCGLAGGKWELMEQIIK  142
+              P +        + ++   L  +    S        +   R   GL G  WE    +++
+Sbjct  128  P-PDVIVRNTELAVADMTRQLAELQAGQSSEEESVEELWSCRFNAGLFGVPWERSRTVLE  186
+
+Query  143  E  143
+            +
+Sbjct  187  D  187
+
+
+>sp|A1CNH7|POA1_ASPCL ADP-ribose 1''-phosphate phosphatase OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 
+/ NCTC 3887 / NRRL 1) OX=344612 GN=poa1 PE=3 SV=1
+Length=199
+
+ Score = 62.9 bits (151),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 31/181 (17%), Positives = 54/181 (30%), Gaps = 42/181 (23%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQ---  59
+              I   +GD       G  +I H CN  G WGKG   A   K+      YR   ++    
+Sbjct  8    GRITETEGDLFD-APDGAALI-HACNCQGSWGKGIAQAFKNKYPAAFTIYRAHCQNLLSK  65
+
+Query  60   ----------EEFTL-----------GAVQFVN--------VENKLYVANMIGQHGIYKD  90
+                      +E +L           G    +            K ++  +    G  + 
+Sbjct  66   ASYRTVNPVPDEGSLTGNSRKVRLPEGTALVIPPQEHDHMGRHKKHWIICLFTSRGFGRG  125
+
+Query  91   SK------GLPPIRYDAVRQCLKEVALFTIAHKASVHM--PRIGCGLAGGKWELMEQIIK  142
+                        +    +R+ + E+         S  +   R   GL G  W L  ++++
+Sbjct  126  VSSPAVIIQNTELAVVDMRRQIAELHAEEGLGGFSGELWSCRFNSGLFGVDWALSRKVLE  185
+
+Query  143  E  143
+            +
+Sbjct  186  D  186
+
+
+>sp|A6QXU0|POA1_AJECN ADP-ribose 1''-phosphate phosphatase OS=Ajellomyces 
+capsulatus (strain NAm1 / WU24) OX=339724 GN=POA1 
+PE=3 SV=1
+Length=254
+
+ Score = 56.4 bits (134),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 16/59 (27%), Positives = 22/59 (37%), Gaps = 2/59 (3%)
+
+Query  4   EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I  I+GD       G  +I H CN  G WGKG      +K+      +R   +     
+Sbjct  3   IITEIQGDLFD-APEGAALI-HACNCQGSWGKGIAATFKEKYPAAYRIFRSHCQQYLSH  59
+
+
+>sp|Q54QM4|DNLI3_DICDI DNA ligase 3 OS=Dictyostelium discoideum 
+OX=44689 GN=lig3 PE=3 SV=1
+Length=1175
+
+ Score = 55.6 bits (132),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 30/167 (18%), Positives = 57/167 (34%), Gaps = 19/167 (11%)
+
+Query  5    ILYIKGDATAPIGSGVK------VITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYK  57
+            + ++  D   P             I +  ++ G W  KG   A+ KKW    +++ Q   
+Sbjct  666  LKFVSDDLLDPFNDKSDDESNKIFILNYVDNSGIWNEKGLSGAIGKKWPSIPKSFSQ--G  723
+
+Query  58   SQEEFTLGAVQFVNVEN------KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+                   G ++   V++      K      +      K  K          +  +KE   
+Sbjct  724  DSNIIKSGEIRVEKVKDDSISTNKKVFICNLSCIIPPKSKKESYTFSLKEFKSAIKEAKG  783
+
+Query  112  FTIAHKASVHMPRIGCGLAGGK-WELMEQIIKEELITKEIAVTVYDL  157
+                 KASVH+ +          W  +++++ +EL    I V V+ +
+Sbjct  784  AINQKKASVHLAK---PQFTSPSWSELDEVLTKELYNSGIKVFVHSI  827
+
+
+>sp|Q9WYX8|Y508_THEMA Uncharacterized protein TM_0508 OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) 
+OX=243274 GN=TM_0508 PE=3 SV=1
+Length=599
+
+ Score = 41.7 bits (96),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 46/144 (32%), Gaps = 10/144 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I  +KGD T      V  I +  N+    G G   A+ +      +        +     
+Sbjct  429  IRIVKGDITR---EEVDAIVNAANEYLKHGGGVAGAIVRAGGSVIQEESDRIVQERGRVP  485
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 V    KL   YV + +G       S G   + Y AV   L       +    S+ 
+Sbjct  486  TGEAVVTSAGKLKAKYVIHTVGP-VWRGGSHGEDELLYKAVYNALLRAHELKLK---SIS  541
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEEL  145
+            MP I  G+ G   E    I  + +
+Sbjct  542  MPAISTGIFGFPKERAVGIFSKAI  565
+
+
+>sp|P36327|POLN_EEVV3 Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain 3880) OX=36382 PE=3 SV=3
+Length=2485
+
+ Score = 40.9 bits (94),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 28/153 (18%), Positives = 53/153 (35%), Gaps = 22/153 (14%)
+
+Query  8     IKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAV  67
+             ++GD      +   VI +  N  G  G G   AL KK+              +   +G  
+Sbjct  1336  VRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQPIEVGKA  1384
+
+Query  68    QFVNVENKLYVANMIGQHGIYKDSKGLPPIR-YDAVRQCLKEVALFTIAHK-ASVHMPRI  125
+             + V    K  +      H +  +   +  I     + +  + +A     +   SV +P +
+Sbjct  1385  RLVKGAAKHII------HAVGPNFNKVSEIEGDKQLAEAYESIAKIVNDNNYKSVAIPLL  1438
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+               G+  G  + + Q +      L T +  V +Y
+Sbjct  1439  STGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|Q96XY5|Y2383_SULTO Uncharacterized protein STK_23830 OS=Sulfurisphaera 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 
+/ 7) OX=273063 GN=STK_23830 PE=4 SV=1
+Length=182
+
+ Score = 40.2 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 34/165 (21%), Positives = 62/165 (38%), Gaps = 21/165 (13%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFV-LALSKKWKMPEEAYRQWYKSQEE  61
+            M +  IKGD T         I +  N     G G     + K   + ++  R++ +    
+Sbjct  1    MIVKIIKGDITEIEAEA---IVNAANSYLEHGGGVARAIVEKGGYIIQKESREYVRKYGP  57
+
+Query  62   FTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G V   +       YV + +G     +  + L     +A+R+             +S
+Sbjct  58   VPTGGVAVTSAGKLKAKYVIHAVGPRYGIEGEEKLEEAIRNALRK-------AEELKLSS  110
+
+Query  120  VHMPRIGCGLAGGKWEL----MEQIIKEELITKE----IAVTVYD  156
+            + +P I  G+ G  +E+    M ++IKEE    +    I V++Y 
+Sbjct  111  IALPAISTGIYGYPYEICAEKMVKVIKEEYTNFKHLNTIIVSLYS  155
+
+
+>sp|P27282|POLN_EEVVT Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain Trinidad donkey) OX=11038 PE=1 SV=3
+Length=2493
+
+ Score = 40.2 bits (92),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 27/153 (18%), Positives = 53/153 (35%), Gaps = 22/153 (14%)
+
+Query  8     IKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAV  67
+             ++GD      +   VI +  N  G  G G   AL KK+              +   +G  
+Sbjct  1336  VRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQPIEVGKA  1384
+
+Query  68    QFVNVENKLYVANMIGQHGIYKDSKGLPPIR-YDAVRQCLKEVALFTIAHK-ASVHMPRI  125
+             + V    K  +      H +  +   +  +     + +  + +A     +   SV +P +
+Sbjct  1385  RLVKGAAKHII------HAVGPNFNKVSEVEGDKQLAEAYESIAKIVNDNNYKSVAIPLL  1438
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+               G+  G  + + Q +      L T +  V +Y
+Sbjct  1439  STGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|P36328|POLN_EEVVP Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain P676) OX=36385 PE=1 SV=2
+Length=2493
+
+ Score = 40.2 bits (92),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 27/153 (18%), Positives = 53/153 (35%), Gaps = 22/153 (14%)
+
+Query  8     IKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAV  67
+             ++GD      +   VI +  N  G  G G   AL KK+              +   +G  
+Sbjct  1336  VRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQPIEVGKA  1384
+
+Query  68    QFVNVENKLYVANMIGQHGIYKDSKGLPPIR-YDAVRQCLKEVALFTIAHK-ASVHMPRI  125
+             + V    K  +      H +  +   +  +     + +  + +A     +   SV +P +
+Sbjct  1385  RLVKGAAKHII------HAVGPNFNKVSEVEGDKQLAEAYESIAKIVNDNNYKSVAIPLL  1438
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+               G+  G  + + Q +      L T +  V +Y
+Sbjct  1439  STGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.124    0.311    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0378    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6957324290
+Results from round 3
+
+
+Query= d2fg1a_
+
+Length=157
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodd...  166     5e-52
+sp|Q6BPN4|POA1_DEBHA ADP-ribose 1''-phosphate phosphatase OS=Deba...  162     3e-50
+sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarr...  159     1e-49
+sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meye...  160     2e-49
+sp|A3LZD1|POA1_PICST ADP-ribose 1''-phosphate phosphatase OS=Sche...  156     3e-48
+sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Cand...  156     4e-48
+sp|P38218|POA1_YEAST ADP-ribose 1''-phosphate phosphatase OS=Sacc...  151     3e-46
+sp|A6ZKW8|POA1_YEAS7 ADP-ribose 1''-phosphate phosphatase OS=Sacc...  151     3e-46
+sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 1...  162     1e-45
+sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 1...  160     6e-45
+sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 1...  158     2e-44
+sp|Q6FXN3|POA1_CANGA ADP-ribose 1''-phosphate phosphatase OS=Cand...  147     2e-44
+sp|A7TJY9|POA1_VANPO ADP-ribose 1''-phosphate phosphatase OS=Vand...  144     2e-43
+sp|Q0UHC0|POA1_PHANO ADP-ribose 1''-phosphate phosphatase OS=Phae...  143     5e-43
+sp|Q4WRE8|POA1_ASPFU ADP-ribose 1''-phosphate phosphatase OS=Neos...  144     5e-43
+sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 1...  154     7e-43
+sp|Q2UQY2|POA1_ASPOR ADP-ribose 1''-phosphate phosphatase OS=Aspe...  139     4e-41
+sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs int...  137     7e-41
+sp|A1D1B7|POA1_NEOFI ADP-ribose 1''-phosphate phosphatase OS=Neos...  137     1e-40
+sp|A1CNH7|POA1_ASPCL ADP-ribose 1''-phosphate phosphatase OS=Aspe...  134     3e-39
+sp|Q2GV19|POA1_CHAGB ADP-ribose 1''-phosphate phosphatase OS=Chae...  132     8e-39
+sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis thal...  138     3e-37
+sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos taur...  118     1e-33
+sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus musc...  117     3e-33
+sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo sap...  115     3e-32
+sp|Q54QM4|DNLI3_DICDI DNA ligase 3 OS=Dictyostelium discoideum OX...  115     2e-29
+sp|Q9WYX8|Y508_THEMA Uncharacterized protein TM_0508 OS=Thermotog...  106     4e-26
+sp|A6QXU0|POA1_AJECN ADP-ribose 1''-phosphate phosphatase OS=Ajel...  79.7    2e-17
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q96XY5|Y2383_SULTO Uncharacterized protein STK_23830 OS=Sulfur...  67.4    2e-13
+sp|Q4J9D2|Y1252_SULAC Uncharacterized protein Saci_1252 OS=Sulfol...  64.3    3e-12
+sp|Q97UU4|Y2899_SACS2 Uncharacterized protein SSO2899 OS=Saccharo...  63.9    4e-12
+sp|Q8ZXT3|Y1111_PYRAE Uncharacterized protein PAE1111 OS=Pyrobacu...  63.2    8e-12
+sp|O59182|Y1513_PYRHO Uncharacterized protein PH1513 OS=Pyrococcu...  62.0    2e-11
+sp|Q8RHQ2|Y1951_FUSNN Uncharacterized protein FN1951 OS=Fusobacte...  58.6    4e-10
+sp|E1SDF1|YMDB1_PANVC O-acetyl-ADP-ribose deacetylase 1 OS=Pantoe...  58.2    6e-10
+sp|Q8Q0F9|Y177_METMA Macro domain-containing protein MM_0177 OS=M...  57.4    1e-09
+sp|Q8EYT0|Y4133_LEPIN Macro domain-containing protein LA_4133 OS=...  57.0    2e-09
+sp|Q72M93|Y3295_LEPIC Macro domain-containing protein LIC_13295 O...  57.0    2e-09
+sp|Q9V0Y3|Y656_PYRAB Uncharacterized protein PYRAB06560 OS=Pyroco...  56.2    3e-09
+sp|Q8RB30|Y995_CALS4 Macro domain-containing protein TTE0995 OS=C...  54.3    2e-08
+sp|O67112|Y987_AQUAE Uncharacterized protein aq_987 OS=Aquifex ae...  53.5    3e-08
+sp|C9Y0V8|YMDB_CROTZ O-acetyl-ADP-ribose deacetylase OS=Cronobact...  53.5    3e-08
+sp|P27282|POLN_EEVVT Polyprotein P1234 OS=Venezuelan equine encep...  55.1    3e-08
+sp|P36328|POLN_EEVVP Polyprotein P1234 OS=Venezuelan equine encep...  55.1    3e-08
+sp|Q2EMV9|PAR14_MOUSE Protein mono-ADP-ribosyltransferase PARP14 ...  55.1    4e-08
+sp|Q9KHE2|Y189_STRGR Macro domain-containing protein in non 5'reg...  53.2    4e-08
+sp|A7MG20|YMDB_CROS8 O-acetyl-ADP-ribose deacetylase OS=Cronobact...  52.8    5e-08
+sp|P36327|POLN_EEVV3 Polyprotein P1234 OS=Venezuelan equine encep...  54.3    6e-08
+sp|Q5JER1|Y1890_THEKO Uncharacterized protein TK1890 OS=Thermococ...  52.4    9e-08
+sp|Q9ZBG3|Y6450_STRCO Macro domain-containing protein SCO6450 OS=...  52.0    9e-08
+sp|P13896|POLN_WEEV Polyprotein P1234 OS=Western equine encephali...  53.9    9e-08
+sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus...  53.5    1e-07
+sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavir...  53.5    1e-07
+sp|Q9WJC7|POLN_EEVVM Polyprotein P1234 OS=Venezuelan equine encep...  53.2    1e-07
+sp|E1PL40|YMDB2_PANVC O-acetyl-ADP-ribose deacetylase 2 OS=Pantoe...  51.6    1e-07
+sp|P67341|YMDB_SALTY O-acetyl-ADP-ribose deacetylase OS=Salmonell...  51.2    3e-07
+sp|P67342|YMDB_SALTI O-acetyl-ADP-ribose deacetylase OS=Salmonell...  51.2    3e-07
+sp|B4T2X8|YMDB_SALNS O-acetyl-ADP-ribose deacetylase OS=Salmonell...  51.2    3e-07
+sp|Q8V294|POLN_EEVVC Polyprotein P1234 OS=Venezuelan equine encep...  52.4    3e-07
+sp|B5RBF3|YMDB_SALG2 O-acetyl-ADP-ribose deacetylase OS=Salmonell...  50.8    3e-07
+sp|Q8TQD0|Y1614_METAC Macro domain-containing protein MA_1614 OS=...  50.8    3e-07
+sp|Q8U0P9|Y1536_PYRFU Uncharacterized protein PF1536 OS=Pyrococcu...  50.8    3e-07
+sp|Q306W6|POLN_EEEV1 Polyprotein P1234 OS=Eastern equine encephal...  52.0    4e-07
+sp|Q4QXJ8|POLN_EEEVF Polyprotein P1234 OS=Eastern equine encephal...  51.6    5e-07
+sp|B7LT90|YMDB_ESCF3 O-acetyl-ADP-ribose deacetylase OS=Escherich...  50.1    6e-07
+sp|Q306W8|POLN_EEEV8 Polyprotein P1234 OS=Eastern equine encephal...  51.2    7e-07
+sp|Q9HXU7|Y3693_PSEAE Macro domain-containing protein PA3693 OS=P...  49.7    8e-07
+sp|O28751|Y1521_ARCFU ADP-ribose glycohydrolase AF_1521 OS=Archae...  49.7    8e-07
+sp|P87515|POLN_BFV Polyprotein P1234 OS=Barmah forest virus OX=11...  50.8    1e-06
+sp|Q8KAE4|Y2219_CHLTE Macro domain-containing protein CT2219 OS=C...  49.3    1e-06
+sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus H...  50.8    1e-06
+sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus...  50.8    1e-06
+sp|Q460N5|PAR14_HUMAN Protein mono-ADP-ribosyltransferase PARP14 ...  50.5    1e-06
+sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 5...  50.5    1e-06
+sp|B5F961|YMDB_SALA4 O-acetyl-ADP-ribose deacetylase OS=Salmonell...  49.3    1e-06
+sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus...  50.5    1e-06
+sp|Q9HJ67|Y1105_THEAC Uncharacterized protein Ta1105 OS=Thermopla...  48.5    3e-06
+sp|D3RKJ0|YMDB_KLEVT O-acetyl-ADP-ribose deacetylase OS=Klebsiell...  48.2    3e-06
+sp|B5XXK9|YMDB_KLEP3 O-acetyl-ADP-ribose deacetylase OS=Klebsiell...  48.2    3e-06
+sp|Q9YBE9|Y1648_AERPE Uncharacterized protein APE_1648.1 OS=Aerop...  47.8    4e-06
+sp|Q97AU0|Y719_THEVO Uncharacterized protein TV0719 OS=Thermoplas...  47.4    6e-06
+sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus H...  48.5    6e-06
+sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus...  48.5    7e-06
+sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavir...  48.2    8e-06
+sp|D5CE05|YMDB_ENTCC O-acetyl-ADP-ribose deacetylase OS=Enterobac...  46.2    1e-05
+sp|Q8CAS9|PARP9_MOUSE Protein mono-ADP-ribosyltransferase PARP9 O...  47.0    2e-05
+sp|Q88SK6|Y3408_LACPL Macro domain-containing protein lp_3408 OS=...  45.5    2e-05
+sp|Q8Y3S3|Y2759_LISMO Macro domain-containing protein lmo2759 OS=...  45.5    3e-05
+sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus H...  46.2    3e-05
+sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus...  46.2    3e-05
+sp|Q922B1|MACD1_MOUSE ADP-ribose glycohydrolase MACROD1 OS=Mus mu...  45.8    3e-05
+sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 1...  46.2    3e-05
+sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus...  46.2    3e-05
+sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmi...  45.8    4e-05
+sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmiss...  45.8    5e-05
+sp|Q8P5Z8|Y3184_XANCP Macro domain-containing protein XCC3184 OS=...  44.7    5e-05
+sp|Q9BQ69|MACD1_HUMAN ADP-ribose glycohydrolase MACROD1 OS=Homo s...  45.1    6e-05
+sp|Q44020|YGB2_CUPNE Macro domain-containing protein in gbd 3'reg...  44.3    6e-05
+sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus...  45.5    7e-05
+sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavir...  45.5    7e-05
+sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic ...  45.5    7e-05
+sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemi...  45.5    7e-05
+sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 2...  44.7    1e-04
+sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus...  44.7    1e-04
+sp|Q8QZ73|POLN_MAYAB Polyprotein P1234 OS=Mayaro virus (strain Br...  44.7    1e-04
+sp|A4W960|YMDB_ENT38 O-acetyl-ADP-ribose deacetylase OS=Enterobac...  43.5    1e-04
+sp|Q93SX7|Y189_ACISE Macro domain-containing protein OS=Acinetoba...  43.5    1e-04
+sp|Q8IXQ6|PARP9_HUMAN Protein mono-ADP-ribosyltransferase PARP9 O...  44.3    2e-04
+sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious...  43.9    2e-04
+sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious b...  43.9    2e-04
+sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectiou...  43.9    2e-04
+sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious...  43.9    2e-04
+sp|Q87JZ5|Y4103_VIBPA Macro domain-containing protein VPA0103 OS=...  42.8    2e-04
+sp|Q71W03|Y2748_LISMF Macro domain-containing protein LMOf2365_27...  42.8    2e-04
+sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious ...  43.9    2e-04
+sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious b...  43.9    2e-04
+sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus H...  43.9    3e-04
+sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus...  43.9    3e-04
+sp|Q8K4G6|MACD1_RAT ADP-ribose glycohydrolase MACROD1 (Fragment) ...  43.1    3e-04
+sp|Q8PHB6|Y3343_XANAC Macro domain-containing protein XAC3343 OS=...  42.8    3e-04
+sp|Q926Y8|Y2902_LISIN Macro domain-containing protein lin2902 OS=...  42.8    3e-04
+sp|P0A8D6|YMDB_ECOLI O-acetyl-ADP-ribose deacetylase OS=Escherich...  42.8    3e-04
+sp|P0A8D7|YMDB_ECOL6 O-acetyl-ADP-ribose deacetylase OS=Escherich...  42.8    3e-04
+sp|P0A8D8|YMDB_ECO57 O-acetyl-ADP-ribose deacetylase OS=Escherich...  42.8    3e-04
+sp|Q9RS39|Y2288_DEIRA Macro domain-containing protein DR_2288 OS=...  42.4    3e-04
+sp|D2TT52|YMDB_CITRI O-acetyl-ADP-ribose deacetylase OS=Citrobact...  42.4    4e-04
+sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus R...  42.8    6e-04
+sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus...  42.8    7e-04
+sp|Q2KHU5|MACD1_BOVIN ADP-ribose glycohydrolase MACROD1 OS=Bos ta...  42.0    7e-04
+sp|Q8Y2K1|Y334_RALSO Macro domain-containing protein RSc0334 OS=R...  41.2    8e-04
+sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respi...  41.6    0.002
+sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East res...  41.6    0.002
+sp|A8AI35|YMDB_CITK8 O-acetyl-ADP-ribose deacetylase OS=Citrobact...  40.1    0.003
+sp|Q7TZB9|Y1934_MYCBO Uncharacterized protein Mb1934c OS=Mycobact...  40.1    0.004
+sp|P9WK29|Y1899_MYCTU Uncharacterized protein Rv1899c OS=Mycobact...  40.1    0.004
+sp|P9WK28|Y1899_MYCTO Uncharacterized protein MT1950 OS=Mycobacte...  40.1    0.004
+sp|Q6PAV8|MACD2_XENLA ADP-ribose glycohydrolase MACROD2 OS=Xenopu...  39.7    0.006
+sp|Q985D2|Y7730_RHILO Macro domain-containing protein mll7730 OS=...  38.5    0.008
+
+
+>sp|A5E287|POA1_LODEL ADP-ribose 1''-phosphate phosphatase OS=Lodderomyces 
+elongisporus (strain ATCC 11503 / CBS 2605 / JCM 
+1781 / NBRC 1676 / NRRL YB-4239) OX=379508 GN=POA1 PE=3 SV=1
+Length=160
+
+ Score = 166 bits (419),  Expect = 5e-52, Method: Composition-based stats.
+ Identities = 40/167 (24%), Positives = 65/167 (39%), Gaps = 20/167 (12%)
+
+Query  3    MEILYIKGDAT-APIGSGVKV-ITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQE  60
+            M + YI+GD       +G  + + H CN  G WG G     ++K+      Y ++     
+Sbjct  1    MTVKYIRGDLFTHSAPTGKSIVLAHACNTGGSWGGGIAAVFARKYPKANRQYSEYCHK-N  59
+
+Query  61   EFTLGAVQFVNVEN----KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL-----  111
+               LG    +  ++    K Y+A +        D    P        Q L+E+A      
+Sbjct  60   SHLLGTSLLLKADDYDKSKAYIACLFTS-----DFNQSPEQIVKYTDQSLQELAKQLKSL  114
+
+Query  112  --FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+               T      V+MP+I  G+ G  WE  E ++ + L + +  V V D
+Sbjct  115  PIETQNGNQVVNMPKINSGIFGVPWENTEAVLDK-LDSLDFNVYVID  160
+
+
+>sp|Q6BPN4|POA1_DEBHA ADP-ribose 1''-phosphate phosphatase OS=Debaryomyces 
+hansenii (strain ATCC 36239 / CBS 767 / JCM 1990 
+/ NBRC 0083 / IGC 2968) OX=284592 GN=POA1 PE=3 SV=2
+Length=179
+
+ Score = 162 bits (409),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 37/179 (21%), Positives = 58/179 (32%), Gaps = 28/179 (16%)
+
+Query  5    ILYIKGDATAPIGS---GVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK---S  58
+            I YIKGD      S    + +  H CN  G WG G      +K+    + Y  +      
+Sbjct  2    IKYIKGDLFTHTPSSRSAISIFAHACNCRGSWGGGIATVFYRKFPSAYKIYADYCSTHAD  61
+
+Query  59   QEEFTLGAVQFVNV----------ENKLYVANMIGQHGIYKDSKGL------PPIRYDAV  102
+                 LG    +            +  +YVA +       K             +    +
+Sbjct  62   DPSKLLGTTLLIPSSSSDPGNENGQKIVYVACLFTSDFYGKKKLTPGDIAANTDLSMKDL  121
+
+Query  103  RQCLKEVALF-----TIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+               L+ +        T   +  V+MP+I  GL    WE+ E ++ +      I V V D
+Sbjct  122  DTQLESLKEEKEIESTDQGEVVVNMPKINAGLFAVPWEITEDVLNK-FNNLHINVYVVD  179
+
+
+>sp|Q6CHN5|POA1_YARLI ADP-ribose 1''-phosphate phosphatase OS=Yarrowia 
+lipolytica (strain CLIB 122 / E 150) OX=284591 GN=POA1 
+PE=3 SV=2
+Length=169
+
+ Score = 159 bits (403),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 35/168 (21%), Positives = 61/168 (36%), Gaps = 20/168 (12%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWY---KSQE  60
+             + Y++GD          V+ H CN +G WG G      +K+      Y++         
+Sbjct  7    ALTYVQGDLFEESP-RPAVLAHACNCLGSWGSGVAAGFKQKFPGAFVEYKRHCDKYSDDN  65
+
+Query  61   EFTLGAVQFVNVENK-----LYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFT--  113
+               LG  Q +   +      +YVA +           G P       +  ++++      
+Sbjct  66   SALLGTCQLIETHDAQTGELVYVACLFTSVRFGARVDG-PEQIVKQTKLAMQDLQKQLAK  124
+
+Query  114  ----IAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+                I   ++VHMP+I  GL    W   E++++E         TVY +
+Sbjct  125  MSGPIDGNSTVHMPKINAGLFRVPWRDTEKVLEE----VGQPCTVYVI  168
+
+
+>sp|A5DR03|POA1_PICGU ADP-ribose 1''-phosphate phosphatase OS=Meyerozyma 
+guilliermondii (strain ATCC 6260 / CBS 566 / DSM 
+6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=POA1 
+PE=3 SV=2
+Length=175
+
+ Score = 160 bits (404),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 41/174 (24%), Positives = 60/174 (34%), Gaps = 25/174 (14%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS---QEE  61
+            + YIKGD  +   S   ++ H CN  G WG G      K++    + Y +  K       
+Sbjct  4    LNYIKGDLFSHKSSASSILAHACNCRGSWGAGVAAIFKKQFPSTYKLYVEHCKKHASNPS  63
+
+Query  62   FTLGAVQFVNV----------ENKLYVANMIGQHGIYKDSKGLPPIRYD------AVRQC  105
+              LG+   +            EN  YVA M       +       I  +       +   
+Sbjct  64   GLLGSTYLIKSESSDPGNSGRENVAYVACMFTSDAFGRRKNSADDIVENTDKSMLHLESQ  123
+
+Query  106  LKEVALFT----IAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            L E+A             V+MP+I  GL    WE  E ++K+      I V V 
+Sbjct  124  LAELAKTEPIEQQDGVNVVNMPKINAGLFNVPWEETEAVLKKH--QVLINVYVI  175
+
+
+>sp|A3LZD1|POA1_PICST ADP-ribose 1''-phosphate phosphatase OS=Scheffersomyces 
+stipitis (strain ATCC 58785 / CBS 6054 / NBRC 
+10063 / NRRL Y-11545) OX=322104 GN=POA1 PE=3 SV=2
+Length=173
+
+ Score = 156 bits (395),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 43/174 (25%), Positives = 59/174 (34%), Gaps = 25/174 (14%)
+
+Query  5    ILYIKGDAT---APIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS---  58
+            I YIKGD      P  S V V  H CN  G WG G    L  K+      Y    +    
+Sbjct  2    IRYIKGDLLGHLPPSKSSVAVFAHACNCQGVWGGGIAAVLRVKFPSTYPLYSGHCQEKGC  61
+
+Query  59   QEEFTLGAVQFVNVE----------NKLYVANMIGQHGIYKDSKG--LPPIRYDAVRQCL  106
+                 LG    V  +             Y+A +          +         +A+   L
+Sbjct  62   DPHRLLGTSVVVPSQASDPGNIAGYPPKYIACLFTSDFAQTQEEIVAYTDSAIEALVDQL  121
+
+Query  107  KEVALFT-----IAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+            KE+   T      + K  V+MP+I  G+    WE  E ++K+     E  V V 
+Sbjct  122  KELQKTTAIETGQSGKIVVNMPKINAGIFAVPWEKTEAVLKKY--DVEFNVYVI  173
+
+
+>sp|Q5A1V3|POA1_CANAL ADP-ribose 1''-phosphate phosphatase OS=Candida 
+albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=POA1 
+PE=3 SV=2
+Length=156
+
+ Score = 156 bits (393),  Expect = 4e-48, Method: Composition-based stats.
+ Identities = 39/161 (24%), Positives = 59/161 (37%), Gaps = 16/161 (10%)
+
+Query  5    ILYIKGDAT-APIGSGVKVI-THICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I YIKGD     I +G KVI  H CN  G WG G      KK+      Y Q+       
+Sbjct  2    IQYIKGDLFTHAIPAGKKVILAHACNTHGSWGGGIAAVFRKKFPKSNNEYSQYCHKNSNL  61
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTI--------  114
+               +    + +  + +A +        D    P       +Q + ++A            
+Sbjct  62   LGTSFIIESDQPNILIACLFTS-----DFNQTPEQIVHFTKQSIADLARKVSDYKEVEKC  116
+
+Query  115  AHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+              K +++MP+I  G+ G  WE  E  ++E        V V 
+Sbjct  117  DGKVAINMPKINAGIFGVPWEDTESALQE-FDNLHFNVYVI  156
+
+
+>sp|P38218|POA1_YEAST ADP-ribose 1''-phosphate phosphatase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=POA1 PE=1 SV=1
+Length=177
+
+ Score = 151 bits (382),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 35/178 (20%), Positives = 66/178 (37%), Gaps = 29/178 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I Y+KG+   P  S  +++ H CN  G WG G    L+ ++   E+ Y +  +      L
+Sbjct  4    ITYVKGNILKPK-SYARILIHSCNCNGSWGGGIAYQLALRYPKAEKDYVEVCEKYGSNLL  62
+
+Query  65   GAVQFVNVENK--LYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS---  119
+            G    +       L +  +               I  +  +  L ++  F  A   +   
+Sbjct  63   GKCILLPSYENSDLLICCLFTSSFGGSSHGEKQSI-LNYTKLALDKLKTFREAKDKTRTS  121
+
+Query  120  --------------------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+                                + MP+I  G+ G  W+  E++++E   + +++ TVY L
+Sbjct  122  EDSIGDYLNGHIKYPIGEYKLEMPQINSGIFGVPWKETERVLEE--FSGDMSFTVYQL  177
+
+
+>sp|A6ZKW8|POA1_YEAS7 ADP-ribose 1''-phosphate phosphatase OS=Saccharomyces 
+cerevisiae (strain YJM789) OX=307796 GN=POA1 PE=3 
+SV=1
+Length=177
+
+ Score = 151 bits (382),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 35/178 (20%), Positives = 66/178 (37%), Gaps = 29/178 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I Y+KG+   P  S  +++ H CN  G WG G    L+ ++   E+ Y +  +      L
+Sbjct  4    ITYVKGNILKPK-SYARILIHSCNCNGSWGGGIAYQLALRYPKAEKDYVEVCEKYGSNLL  62
+
+Query  65   GAVQFVNVENK--LYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS---  119
+            G    +       L +  +               I  +  +  L ++  F  A   +   
+Sbjct  63   GKCILLPSYENSDLLICCLFTSSFGGSSHGEKQSI-LNYTKLALDKLKTFREAKDKTRTS  121
+
+Query  120  --------------------VHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+                                + MP+I  G+ G  W+  E++++E   + +++ TVY L
+Sbjct  122  EDSIGDYLNGHIKYPIGEYKLEMPQINSGIFGVPWKETERVLEE--FSGDMSFTVYQL  177
+
+
+>sp|Q86WJ1|CHD1L_HUMAN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Homo sapiens OX=9606 GN=CHD1L PE=1 SV=3
+Length=897
+
+ Score = 162 bits (409),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 50/164 (30%), Positives = 79/164 (48%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYKS  58
+            +A  + Y+ GD T P  G+   +I H  +D G WG  G   AL K+   P + Y +    
+Sbjct  713  DATSLKYVSGDVTHPQAGAEDALIVHCVDDSGHWGRGGLFTALEKRSAEPRKIY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++ +LG V    V++K         +A ++ QH     S  L  I+  A+ + LK++ L
+Sbjct  772  MKDLSLGGVLLFPVDDKESRNKGQDLLALIVAQH--RDRSNVLSGIKMAALEEGLKKIFL  829
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L  + I   +Y
+Sbjct  830  AAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLAARGIPTYIY  873
+
+
+>sp|Q9CXF7|CHD1L_MOUSE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Mus musculus OX=10090 GN=Chd1l PE=1 SV=1
+Length=900
+
+ Score = 160 bits (404),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 50/164 (30%), Positives = 78/164 (48%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G    VI H  +D G WG  G   AL  +   P + Y +    
+Sbjct  718  DSTSINYVSGDVTHPQAGEEDAVIVHCVDDSGRWGRGGLFTALEVRSAEPRKIY-ELAGK  776
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             E+ +LG V    +++K         +A ++ QH     +  L  I+  A+ + LK++ L
+Sbjct  777  MEDLSLGDVLLFPIDDKESRDKGQDLLALVVAQH--RDRTNVLSGIKMAALEEGLKKIFL  834
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L T+ I   +Y
+Sbjct  835  AAKKKKASVHLPRIGHATKGFNWYGTERLIRKHLATRGIPTYIY  878
+
+
+>sp|Q3B7N1|CHD1L_BOVIN Chromodomain-helicase-DNA-binding protein 
+1-like OS=Bos taurus OX=9913 GN=CHD1L PE=2 SV=1
+Length=897
+
+ Score = 158 bits (400),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 48/164 (29%), Positives = 79/164 (48%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAP-IGSGVKVITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYKS  58
+            ++  I Y+ GD T P  G+   VI H  +D G WG  G   AL  +   P + Y +    
+Sbjct  713  DSTSIRYVSGDVTHPQAGAEDAVIVHCVDDSGRWGRGGLFTALETRSAEPRKRY-ELAGK  771
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++ +LG V    +++K         +A ++ QH     +  L  I+  A+ + LK++ L
+Sbjct  772  MKDLSLGGVLLFPIDDKESRNEGQDLLALIVAQH--RDRANVLSGIKMAALEEALKKIFL  829
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L ++ I   +Y
+Sbjct  830  AAKKRKASVHLPRIGHATKGFNWYGTERLIRKHLASRGIPTYIY  873
+
+
+>sp|Q6FXN3|POA1_CANGA ADP-ribose 1''-phosphate phosphatase OS=Candida 
+glabrata (strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 
+0622 / NRRL Y-65) OX=284593 GN=POA1 PE=3 SV=1
+Length=179
+
+ Score = 147 bits (370),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 31/175 (18%), Positives = 55/175 (31%), Gaps = 27/175 (15%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I YIKG+      +  ++I H CN  G WG G    L+ K    EE Y    +   +  L
+Sbjct  4    IHYIKGNILKGR-TYKRIIIHSCNANGAWGGGIAYQLAVKHPKAEEVYVDLCERFGQKLL  62
+
+Query  65   GAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIR------YDAVRQCLKEVALFTIA-  115
+            G    +    ++ + +  +               I            + L +    +   
+Sbjct  63   GKCVVIPSYSDDDVLIGCLFTSIFGGASHGSGTSIVDYTDKALSHFDELLAKEQSKSDNA  122
+
+Query  116  -----------------HKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVT  153
+                                 + MP+I  G+ G  W   E+++K+   +    V 
+Sbjct  123  NLDKEIEKLLKLKSGVLKDYKLEMPKINSGIFGVPWPETEEVLKKYDRSMNFTVY  177
+
+
+>sp|A7TJY9|POA1_VANPO ADP-ribose 1''-phosphate phosphatase OS=Vanderwaltozyma 
+polyspora (strain ATCC 22028 / DSM 70294) OX=436907 
+GN=POA1 PE=3 SV=1
+Length=180
+
+ Score = 144 bits (364),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 57/174 (33%), Gaps = 27/174 (16%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I YIKG+     G+  +++ H CN  G WG G    L+  +   E+ Y           L
+Sbjct  7    ISYIKGNILH-GGNIPRILIHSCNCNGTWGGGIAYQLAVHYPEAEKIYTDICDDFGSELL  65
+
+Query  65   GAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRY-----------------DAVRQC  105
+            G    +    ++ L +  +               I                     +  C
+Sbjct  66   GKCVLIPSFSDDSLLIGCLFTSVYGGSSHDTKNEILKYTKLSLMQLSLQLENNDSCIDTC  125
+
+Query  106  LKEVALFTIA------HKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVT  153
+            L E     I+          + MP+I  G+    WE  E+I+KE L   E  V 
+Sbjct  126  LSEYNQLLISNIKHHLKDYKLEMPKINSGIFNVPWEETEKILKE-LKPMEFTVF  178
+
+
+>sp|Q0UHC0|POA1_PHANO ADP-ribose 1''-phosphate phosphatase OS=Phaeosphaeria 
+nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) 
+OX=321614 GN=POA1 PE=3 SV=2
+Length=183
+
+ Score = 143 bits (361),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 31/150 (21%), Positives = 52/150 (35%), Gaps = 10/150 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAY-----RQWY  56
+             +   Y  GD          +I H CN  G WG G   A  +K+     A+     ++  
+Sbjct  18   TLSFTYHIGDMFEDAPENCLLI-HACNSQGHWGAGIAKAFKQKYPKAYTAHNKFCAKEHS  76
+
+Query  57   KSQEEFTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAV--RQCLKEVALF  112
+            K+Q   T  A     V+  ++ ++  +       K       I  +       L E+   
+Sbjct  77   KTQPVPTGSAQLLAPVDSGSQHWIGCLFTSAKYGKAKDKPDAIVKNTTASMSMLLELVRM  136
+
+Query  113  TIAHKASVHMPRIGCGLAGGKWELMEQIIK  142
+                 + + M +I  G  G  WE  E+ +K
+Sbjct  137  ADGEVSEIRMCKINSGKFGVPWEKTEEALK  166
+
+
+>sp|Q4WRE8|POA1_ASPFU ADP-ribose 1''-phosphate phosphatase OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 
+/ FGSC A1100) OX=330879 GN=poa1 PE=3 SV=2
+Length=200
+
+ Score = 144 bits (363),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 33/181 (18%), Positives = 55/181 (30%), Gaps = 43/181 (24%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK-------  57
+            I  I+GD       G  +I H CN  G WGKG   A   K+      YR   +       
+Sbjct  10   ITEIEGDLFH-APDGAALI-HACNCQGSWGKGIAKAFKDKYPAAFAIYRSHCQNLLSSPR  67
+
+Query  58   ---------------SQEEFTL--GAVQFVNVE--------NKLYVANMIGQHGIYKDSK  92
+                           S  +  L  G    +  +         K ++  +    G  +   
+Sbjct  68   YMFEPDLQSEESHARSSRDVRLPEGTALIIPPQKRDSEANGKKHWIICLFTSRGFGRAVS  127
+
+Query  93   GLP------PIRYDAVRQCLKEVALFTIAHKASV---HMPRIGCGLAGGKWELMEQIIKE  143
+                      +    + + L E+     + + SV      R   GL G  WE   +++++
+Sbjct  128  PPDVIVRNTELAVADMTRQLAELQTDQSSREESVGELWSCRFNAGLFGVPWERSRRVLED  187
+
+Query  144  E  144
+             
+Sbjct  188  A  188
+
+
+>sp|Q7ZU90|CHD1L_DANRE Chromodomain-helicase-DNA-binding protein 
+1-like OS=Danio rerio OX=7955 GN=chd1l PE=2 SV=1
+Length=1026
+
+ Score = 154 bits (389),  Expect = 7e-43, Method: Composition-based stats.
+ Identities = 48/164 (29%), Positives = 75/164 (46%), Gaps = 12/164 (7%)
+
+Query  1    NAMEILYIKGDATAPIGS-GVKVITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYKS  58
+            +   I Y+ GD T P       +I H  +D G WG  G   AL  +   P + Y +    
+Sbjct  706  DHTAIRYVLGDVTHPQADREDAIIVHCVDDSGHWGRGGLFTALGLRSDEPRKQY-ELAGD  764
+
+Query  59   QEEFTLGAVQFVNVENKL-------YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+             ++  LG V    V++K        Y+A ++ Q      +  L  IR  A+ + LK++  
+Sbjct  765  MKDLELGNVLLFPVDDKQSRLCGRDYLALIVAQQ--RDKANKLSGIRLTALDEGLKKIYK  822
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+                 KASVH+PRIG    G  W   E++I++ L T+ I  ++Y
+Sbjct  823  AAKQKKASVHLPRIGHSTKGFNWYGTERLIRKHLATRGIFTSIY  866
+
+
+>sp|Q2UQY2|POA1_ASPOR ADP-ribose 1''-phosphate phosphatase OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=poa1 
+PE=3 SV=1
+Length=201
+
+ Score = 139 bits (350),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 28/183 (15%), Positives = 52/183 (28%), Gaps = 44/183 (24%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQE--  60
+              I  I+GD       G  +I H CN IG WG G   A  +K+      Y    +  +  
+Sbjct  8    GSIKEIQGDLFD-APDGAALI-HACNCIGSWGGGIAKAFKQKYPAAYNIYHSHCQKYKFS  65
+
+Query  61   -------------------------EFTLGAVQFVNVEN--------KLYVANMIGQHGI  87
+                                     +   G    +  +         K ++  +      
+Sbjct  66   PEYLVTSDPPNQPNNAQSSTRNKEIQLPEGTALIIPPQEKDYKDKDKKHWIICLFTSRNY  125
+
+Query  88   YKDSKGLPPIRYDAVRQCLKEVA------LFTIAHKASVHMPRIGCGLAGGKWELMEQII  141
+             K     P +        + ++           +    +   R   GL G +W L ++++
+Sbjct  126  GKRVSP-PDVIIRNTELAVADMVRQIHRLRAEESGIGELWSCRFNSGLFGVEWVLSKRVL  184
+
+Query  142  KEE  144
+            +E 
+Sbjct  185  EES  187
+
+
+>sp|P13309|Y06D_BPT4 Uncharacterized 17.5 kDa protein in tk-vs 
+intergenic region OS=Enterobacteria phage T4 OX=10665 GN=y06D 
+PE=4 SV=1
+Length=155
+
+ Score = 137 bits (345),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 43/152 (28%), Positives = 67/152 (44%), Gaps = 6/152 (4%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M + YIKGD  A    G K I H CN     G G    L+K +    EA +   +  +  
+Sbjct  1    MIVKYIKGDIVALFAEG-KNIAHGCNCFHTMGSGVAGQLTKAFPKILEADKLQTEWGDVT  59
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAH--KASV  120
+             LG+    +V  K +  +      +Y   +  P   Y A+  C+ E+  F      K ++
+Sbjct  60   KLGSY---SVYEKYFRTHKAYCFNLYTQFQPGPNFEYSALMNCMLELNEFGENKLIKPTI  116
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAV  152
+            +MPRIG G+  G W+++E I+       EI +
+Sbjct  117  YMPRIGAGIGKGNWDIIEGILDTYSSKLEIVI  148
+
+
+>sp|A1D1B7|POA1_NEOFI ADP-ribose 1''-phosphate phosphatase OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 
+/ FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=poa1 
+PE=3 SV=1
+Length=200
+
+ Score = 137 bits (346),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 29/181 (16%), Positives = 49/181 (27%), Gaps = 43/181 (24%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYK-------  57
+            I  I+GD       G  +I H CN  G WGKG   A   K+      YR   +       
+Sbjct  10   ITEIEGDLFH-APDGAALI-HACNCQGSWGKGIAKAFKDKYPAAFAIYRSHCQNLLSSPR  67
+
+Query  58   -----------------SQEEFTLGAVQFVNVE--------NKLYVANMIGQHGIYKDSK  92
+                                +   G    +  +         K ++  +    G  +   
+Sbjct  68   YRFEPAVQSEESHARSSRGVQLPEGTALIIPPQKRDSEANGKKHWIICLFTSRGFGRAVS  127
+
+Query  93   GLP------PIRYDAVRQCLKEV---ALFTIAHKASVHMPRIGCGLAGGKWELMEQIIKE  143
+                      +    + + L E+             +   R   GL G  WE    ++++
+Sbjct  128  PPDVIVRNTELAVADMTRQLAELQAGQSSEEESVEELWSCRFNAGLFGVPWERSRTVLED  187
+
+Query  144  E  144
+             
+Sbjct  188  A  188
+
+
+>sp|A1CNH7|POA1_ASPCL ADP-ribose 1''-phosphate phosphatase OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 
+/ NCTC 3887 / NRRL 1) OX=344612 GN=poa1 PE=3 SV=1
+Length=199
+
+ Score = 134 bits (337),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 32/195 (16%), Positives = 55/195 (28%), Gaps = 46/195 (24%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               I   +GD       G  +I H CN  G WGKG   A   K+      YR   ++   
+Sbjct  7    HGRITETEGDLFD-APDGAALI-HACNCQGSWGKGIAQAFKNKYPAAFTIYRAHCQNLLS  64
+
+Query  62   ------------------------FTLGAVQFVNVEN--------KLYVANMIGQHGIYK  89
+                                       G    +  +         K ++  +    G  +
+Sbjct  65   KASYRTVNPVPDEGSLTGNSRKVRLPEGTALVIPPQEHDHMGRHKKHWIICLFTSRGFGR  124
+
+Query  90   DSKGL------PPIRYDAVRQCLKEVALFTIAHKAS--VHMPRIGCGLAGGKWELMEQII  141
+                         +    +R+ + E+         S  +   R   GL G  W L  +++
+Sbjct  125  GVSSPAVIIQNTELAVVDMRRQIAELHAEEGLGGFSGELWSCRFNSGLFGVDWALSRKVL  184
+
+Query  142  KEELITKEIAVTVYD  156
+            ++      + VTV  
+Sbjct  185  EDA----GLEVTVVS  195
+
+
+>sp|Q2GV19|POA1_CHAGB ADP-ribose 1''-phosphate phosphatase OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 
+/ NBRC 6347 / NRRL 1970) OX=306901 GN=POA1 PE=3 SV=2
+Length=185
+
+ Score = 132 bits (333),  Expect = 8e-39, Method: Composition-based stats.
+ Identities = 30/156 (19%), Positives = 48/156 (31%), Gaps = 18/156 (12%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWY-KSQEE  61
+            + I    GD          ++ H CN +G WG G  LA    +      YR    +S   
+Sbjct  6    LRITDRTGDLF--AAPANTLLIHACNTVGSWGGGIALAFRNLYPAEFRVYRAHCARSTPN  63
+
+Query  62   FTLGAVQFVNVENK---------LYVANMIGQHGIYKDSKGLPPIRY---DAVRQCLKEV  109
+              +G    +  +            Y+  +               I      A+R  ++ V
+Sbjct  64   QLVGTALLIAPQRASLNGSGGGGHYIGCLFTSRRFGAARDPPDRILRATGPAMRHLMRLV  123
+
+Query  110  ALFTIAHKA---SVHMPRIGCGLAGGKWELMEQIIK  142
+            A            V M RI  GL    WE  ++ ++
+Sbjct  124  AEEEERTGVRIGEVRMCRINAGLFAVPWESSKRALE  159
+
+
+>sp|F4IV45|CHR10_ARATH Probable helicase CHR10 OS=Arabidopsis 
+thaliana OX=3702 GN=CHR10 PE=3 SV=1
+Length=877
+
+ Score = 138 bits (347),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 41/173 (24%), Positives = 71/173 (41%), Gaps = 19/173 (11%)
+
+Query  1    NAMEILYIKGDATAPI--GSGVKVITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYK  57
+            +A  + ++ GD T P        +I    +D G WG  G   ALSK       AY +   
+Sbjct  702  DAGSVNFVFGDCTNPSTVSHEPAIIFSCVDDSGNWGRGGMFDALSKLSNTVPTAYHR-AS  760
+
+Query  58   SQEEFTLGAVQFVNVENK-----------LYVANMIGQHGIYKDSKGLPPIRYDAVRQCL  106
+              ++  LG +  + +++            L+VA  + Q    +       I    +  CL
+Sbjct  761  EFKDLHLGDLHLIKIDDNDDQQNTQASKPLWVAVAVTQSYNSRRKVPRSSISIPDLESCL  820
+
+Query  107  KEVALFTIAHKASVHMPRIGC--GLAGGKWELMEQIIKEE--LITKEIAVTVY  155
+             + +       AS+HMPRIG   G    +W  +E+++++   + T +I V  Y
+Sbjct  821  AKASFSASQKSASLHMPRIGYQDGSDRSQWYTVERLLRKYSSIFTVKIFVYYY  873
+
+
+>sp|Q1LZ74|OARD1_BOVIN ADP-ribose glycohydrolase OARD1 OS=Bos 
+taurus OX=9913 GN=OARD1 PE=2 SV=1
+Length=152
+
+ Score = 118 bits (296),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 44/157 (28%), Positives = 70/157 (45%), Gaps = 20/157 (13%)
+
+Query  4    EILYIKGDAT--APIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             I Y+KGD        S V  I+  C      G G  +   KK+   +E   Q  KS   
+Sbjct  13   RITYVKGDLFACPQTDSLVHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS---  65
+
+Query  62   FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-V  120
+               G V  +  + + Y+  +I +    K +   P   Y+ +R+ L+ +    + +  + +
+Sbjct  66   ---GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLRKSLEAMKSHCLKNGVTDL  115
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             MPRIGCGL   +WE +  II+E     +I +TVY L
+Sbjct  116  SMPRIGCGLDRLQWENVSAIIEEVFEATDIRITVYTL  152
+
+
+>sp|Q8R5F3|OARD1_MOUSE ADP-ribose glycohydrolase OARD1 OS=Mus 
+musculus OX=10090 GN=Oard1 PE=1 SV=2
+Length=152
+
+ Score = 117 bits (294),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 40/157 (25%), Positives = 70/157 (45%), Gaps = 20/157 (13%)
+
+Query  4    EILYIKGDAT--APIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             I Y+KGD        S    I+  C      G G  +   K++   +E   Q  KS   
+Sbjct  13   RITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKRFGGVQELLSQQKKS---  65
+
+Query  62   FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-V  120
+               G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + +
+Sbjct  66   ---GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDL  115
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             MPRIGCGL   +WE +  I++E   + +I +TVY L
+Sbjct  116  SMPRIGCGLDRLQWENVSAILEEVFESTDIKITVYTL  152
+
+
+>sp|Q9Y530|OARD1_HUMAN ADP-ribose glycohydrolase OARD1 OS=Homo 
+sapiens OX=9606 GN=OARD1 PE=1 SV=2
+Length=152
+
+ Score = 115 bits (287),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 41/157 (26%), Positives = 69/157 (44%), Gaps = 20/157 (13%)
+
+Query  4    EILYIKGDAT--APIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             I Y+KGD        S    I+  C      G G  +   KK+   +E   Q  KS   
+Sbjct  13   RITYVKGDLFACPKTDSLAHCISEDCR----MGAGIAVLFKKKFGGVQELLNQQKKS---  65
+
+Query  62   FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS-V  120
+               G V  +  + + Y+  +I +    K +   P   Y+ +++ L+ +    + +  + +
+Sbjct  66   ---GEVAVLKRDGR-YIYYLITK----KRASHKPT--YENLQKSLEAMKSHCLKNGVTDL  115
+
+Query  121  HMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             MPRIGCGL   +WE +  +I+E     +I +TVY L
+Sbjct  116  SMPRIGCGLDRLQWENVSAMIEEVFEATDIKITVYTL  152
+
+
+>sp|Q54QM4|DNLI3_DICDI DNA ligase 3 OS=Dictyostelium discoideum 
+OX=44689 GN=lig3 PE=3 SV=1
+Length=1175
+
+ Score = 115 bits (288),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 30/167 (18%), Positives = 57/167 (34%), Gaps = 19/167 (11%)
+
+Query  5    ILYIKGDATAPIGSGVK------VITHICNDIGGWG-KGFVLALSKKWKMPEEAYRQWYK  57
+            + ++  D   P             I +  ++ G W  KG   A+ KKW    +++ Q   
+Sbjct  666  LKFVSDDLLDPFNDKSDDESNKIFILNYVDNSGIWNEKGLSGAIGKKWPSIPKSFSQ--G  723
+
+Query  58   SQEEFTLGAVQFVNVEN------KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+                   G ++   V++      K      +      K  K          +  +KE   
+Sbjct  724  DSNIIKSGEIRVEKVKDDSISTNKKVFICNLSCIIPPKSKKESYTFSLKEFKSAIKEAKG  783
+
+Query  112  FTIAHKASVHMPRIGCGLAGGK-WELMEQIIKEELITKEIAVTVYDL  157
+                 KASVH+ +          W  +++++ +EL    I V V+ +
+Sbjct  784  AINQKKASVHLAK---PQFTSPSWSELDEVLTKELYNSGIKVFVHSI  827
+
+
+>sp|Q9WYX8|Y508_THEMA Uncharacterized protein TM_0508 OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) 
+OX=243274 GN=TM_0508 PE=3 SV=1
+Length=599
+
+ Score = 106 bits (264),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 31/146 (21%), Positives = 46/146 (32%), Gaps = 10/146 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I  +KGD T      V  I +  N+    G G   A+ +      +        +     
+Sbjct  429  IRIVKGDITR---EEVDAIVNAANEYLKHGGGVAGAIVRAGGSVIQEESDRIVQERGRVP  485
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 V    KL   YV + +G       S G   + Y AV   L       +    S+ 
+Sbjct  486  TGEAVVTSAGKLKAKYVIHTVGP-VWRGGSHGEDELLYKAVYNALLRAHELKLK---SIS  541
+
+Query  122  MPRIGCGLAGGKWELMEQIIKEELIT  147
+            MP I  G+ G   E    I  + +  
+Sbjct  542  MPAISTGIFGFPKERAVGIFSKAIRD  567
+
+
+>sp|A6QXU0|POA1_AJECN ADP-ribose 1''-phosphate phosphatase OS=Ajellomyces 
+capsulatus (strain NAm1 / WU24) OX=339724 GN=POA1 
+PE=3 SV=1
+Length=254
+
+ Score = 79.7 bits (195),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 16/59 (27%), Positives = 22/59 (37%), Gaps = 2/59 (3%)
+
+Query  4   EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            I  I+GD       G  +I H CN  G WGKG      +K+      +R   +     
+Sbjct  3   IITEIQGDLFD-APEGAALI-HACNCQGSWGKGIAATFKEKYPAAYRIFRSHCQQYLSH  59
+
+
+ Score = 65.5 bits (158),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 11/114 (10%), Positives = 27/114 (24%), Gaps = 29/114 (25%)
+
+Query  66   AVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALF-------------  112
+                     K ++  +       + S+  P I  +     + ++                
+Sbjct  132  TALSRPAGKKHWIICLFTSWHYGRWSRSPPDIILENTMSAMADLKRQIAAAAAASSTTSP  191
+
+Query  113  ----------------TIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKEI  150
+                                   +   R+  GL    WE  + +++E  +   I
+Sbjct  192  ATTTTTTTALAATGGCEEEQLGELWGCRLNAGLFEVPWERTKAVLEEAGLAVTI  245
+
+
+>sp|Q96XY5|Y2383_SULTO Uncharacterized protein STK_23830 OS=Sulfurisphaera 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 
+/ 7) OX=273063 GN=STK_23830 PE=4 SV=1
+Length=182
+
+ Score = 67.4 bits (163),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 35/163 (21%), Positives = 57/163 (35%), Gaps = 18/163 (11%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M +  IKGD T         I +  N     G G   A+ +K     +   + Y  +   
+Sbjct  1    MIVKIIKGDITEIEAEA---IVNAANSYLEHGGGVARAIVEKGGYIIQKESREYVRKYGP  57
+
+Query  63   TLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+                   V    KL   YV + +G     +  + L     +A+R              +S
+Sbjct  58   VPTGGVAVTSAGKLKAKYVIHAVGPRYGIEGEEKLEEAIRNALR-------KAEELKLSS  110
+
+Query  120  VHMPRIGCGLAGGKW----ELMEQIIKEELIT-KEIAVTVYDL  157
+            + +P I  G+ G  +    E M ++IKEE    K +   +  L
+Sbjct  111  IALPAISTGIYGYPYEICAEKMVKVIKEEYTNFKHLNTIIVSL  153
+
+
+>sp|Q4J9D2|Y1252_SULAC Uncharacterized protein Saci_1252 OS=Sulfolobus 
+acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 
+/ NBRC 15157 / NCIMB 11770) OX=330779 GN=Saci_1252 PE=4 
+SV=1
+Length=181
+
+ Score = 64.3 bits (155),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 31/155 (20%), Positives = 53/155 (34%), Gaps = 19/155 (12%)
+
+Query  10   GDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQF  69
+            GD T         I +  N     G G  LA+ +      +     Y  +          
+Sbjct  18   GDITKV---EADAIVNAANSYLSHGGGVALAIVRSGGYIIQEESDEYVRRNGPVPVGEVA  74
+
+Query  70   VNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIG  126
+            V    KL   YV + +G                 A+R+ L++     ++   S+ +P I 
+Sbjct  75   VTTAGKLKARYVIHAVGPRYG----IEGDDKLESAIRRSLEKADELKLS---SIALPAIS  127
+
+Query  127  CGLAGGKWELMEQIIKEEL------ITKEIAVTVY  155
+             G+ G  +E+  +I+ + +        K I V VY
+Sbjct  128  TGIYGYPYEICARIMSKVMKEYKPKFLKRILVVVY  162
+
+
+>sp|Q97UU4|Y2899_SACS2 Uncharacterized protein SSO2899 OS=Saccharolobus 
+solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 
+/ P2) OX=273057 GN=SSO2899 PE=4 SV=1
+Length=177
+
+ Score = 63.9 bits (154),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 29/142 (20%), Positives = 53/142 (37%), Gaps = 13/142 (9%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKSQEE  61
+            +EI  IKGD T         I +  N     G G   A+ +K     +    ++ K    
+Sbjct  8    LEIYLIKGDITEI---EADAIVNAANSYLQHGGGVAYAIVRKGGYIIQKESDEYVKKFGP  64
+
+Query  62   FTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+              +G V   +       YV + +G     +           A+ + L +    +++   S
+Sbjct  65   VPVGEVAVTSAGKLKAKYVIHAVGPRYGIEGEDK----LESAIFKSLLKADELSLS---S  117
+
+Query  120  VHMPRIGCGLAGGKWELMEQII  141
+            + MP I  G+ G  +E+  +I+
+Sbjct  118  IAMPAISTGIYGYPFEICARIM  139
+
+
+>sp|Q8ZXT3|Y1111_PYRAE Uncharacterized protein PAE1111 OS=Pyrobaculum 
+aerophilum (strain ATCC 51768 / IM2 / DSM 7523 / JCM 
+9630 / NBRC 100827) OX=178306 GN=PAE1111 PE=4 SV=1
+Length=182
+
+ Score = 63.2 bits (152),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 24/130 (18%), Positives = 44/130 (34%), Gaps = 13/130 (10%)
+
+Query  9    KGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAY-RQWYKSQEEFTLGAV  67
+            +GD T         I +  N     G G   A+ +K     +   R+W +      +G V
+Sbjct  14   RGDITEV---EADAIVNAANSYLEHGGGVAGAIVRKGGQVIQEESREWVRKHGPVPVGDV  70
+
+Query  68   QFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+               +       YV + +G                +AV+  L +     +    S+ +P I
+Sbjct  71   AVTSAGRLKAKYVIHAVGPRCG----VEPIEKLAEAVKNALLKAEELGL---VSIALPAI  123
+
+Query  126  GCGLAGGKWE  135
+              G+ G  ++
+Sbjct  124  STGIFGCPYD  133
+
+
+>sp|O59182|Y1513_PYRHO Uncharacterized protein PH1513 OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 
+/ NBRC 100139 / OT-3) OX=70601 GN=PH1513 PE=4 SV=1
+Length=190
+
+ Score = 62.0 bits (149),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 29/155 (19%), Positives = 48/155 (31%), Gaps = 18/155 (12%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+                 ++GD T         I +  N     G G   A++K        Y +  K +   
+Sbjct  3    TMFKIVRGDITKFRAEA---IVNAANKYLEHGGGVAYAIAKAASGDVSEYTRISKEEMRR  59
+
+Query  63   TL-------GAVQFVNV-----ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVA  110
+             L       G V              YV + +G +     SK        A+   LK+  
+Sbjct  60   QLGKDWIEHGEVVVTPPMKLKENGVKYVIHTVGPYCGGVWSKDKEEKLKLAILGALKKAD  119
+
+Query  111  LFTIAHKASVHMPRIGCGLAGGKWELMEQIIKEEL  145
+               +    S+  P I  G+ G   + + +  KE +
+Sbjct  120  ELGVK---SIAFPAISAGIYGCPLKEVVRTFKEVV  151
+
+
+>sp|Q8RHQ2|Y1951_FUSNN Uncharacterized protein FN1951 OS=Fusobacterium 
+nucleatum subsp. nucleatum (strain ATCC 25586 / CIP 
+101130 / JCM 8532 / LMG 13131) OX=190304 GN=FN1951 PE=4 SV=1
+Length=175
+
+ Score = 58.6 bits (140),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 25/132 (19%), Positives = 35/132 (27%), Gaps = 11/132 (8%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             I  I GD T      V+ I +  N     G G   A+   +K       Q  K      
+Sbjct  5    IIKLISGDITKI--PEVEAIVNAANSSLEMGGGVCGAI---FKAAGSELAQECKEIGGCN  59
+
+Query  64   LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+             G        N    Y+ + +G                 A  + LK      I     + 
+Sbjct  60   TGEAVITKGYNLPNKYIIHTVGPR-YSTGENREAERLASAYYESLKLANEKGIRR---IA  115
+
+Query  122  MPRIGCGLAGGK  133
+             P I  G+    
+Sbjct  116  FPSISTGIYRFP  127
+
+
+>sp|E1SDF1|YMDB1_PANVC O-acetyl-ADP-ribose deacetylase 1 OS=Pantoea 
+vagans (strain C9-1) OX=712898 GN=ymdB1 PE=3 SV=1
+Length=171
+
+ Score = 58.2 bits (139),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 28/139 (20%), Positives = 43/139 (31%), Gaps = 10/139 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I  I+GD T         I +  N     G G   A+ +       A  Q  ++++    
+Sbjct  4    ITVIQGDITKVSAEA---IVNAANSSLLGGGGVDGAIHRAGGPVILAECQLIRNRQGGCK  60
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 +     L   YV + +G             +   A + C K V    I    +V 
+Sbjct  61   VGDAVITGAGNLPADYVIHTVGPR-WSDGRHDEDALLKRAYQSCFKLVDYHGIK---TVS  116
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G+ G   E    I
+Sbjct  117  FPNISTGIYGFPKERAATI  135
+
+
+>sp|Q8Q0F9|Y177_METMA Macro domain-containing protein MM_0177 
+OS=Methanosarcina mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 
+/ Go1 / JCM 11833 / OCM 88) OX=192952 GN=MM_0177 PE=4 SV=1
+Length=187
+
+ Score = 57.4 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 33/158 (21%), Positives = 51/158 (32%), Gaps = 16/158 (10%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             I   +GD        V  I +  N+    G G   A+ +       A  +  K+     
+Sbjct  20   RIRIFEGDIVKMR---VDAIVNAANNTLLGGGGVDGAIHR---AAGPALLEECKTLNGCP  73
+
+Query  64   LGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+             G  +  +       Y+ + +G        KG   +     R+ L+   L       ++ 
+Sbjct  74   TGEAKITSGYLLPAKYIIHTVGP-VWQGGEKGEDELLASCYRKSLE---LARDYKIKTIA  129
+
+Query  122  MPRIGCGLAGGKWELMEQI----IKEELITKEIAVTVY  155
+             P I  G  G   E    I    +KE L   EI  TVY
+Sbjct  130  FPAISTGAYGFPSERAAGIAVSQVKEFLQKNEIPETVY  167
+
+
+>sp|Q8EYT0|Y4133_LEPIN Macro domain-containing protein LA_4133 
+OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar 
+Lai (strain 56601) OX=189518 GN=LA_4133 PE=4 SV=1
+Length=175
+
+ Score = 57.0 bits (136),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 24/139 (17%), Positives = 44/139 (32%), Gaps = 10/139 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEEFT  63
+            I  IK D T      V  I +  N     G G   A+ +       E   +  + Q E  
+Sbjct  5    IKLIKEDITQL---EVDAIVNAANSSLLGGGGVDGAIHRAGGPEILEECYKIREKQGECK  61
+
+Query  64   LGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+            +G          N  ++ + +G      +      +  +A +  L      ++    ++ 
+Sbjct  62   VGEAVITTAGRLNAKFIIHTVGPIWSGGNKNE-DELLSNAYKNSLLLAKNHSLK---TIA  117
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G+     E   +I
+Sbjct  118  FPNISTGIYHFPKERAAKI  136
+
+
+>sp|Q72M93|Y3295_LEPIC Macro domain-containing protein LIC_13295 
+OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar 
+copenhageni (strain Fiocruz L1-130) OX=267671 GN=LIC_13295 
+PE=4 SV=1
+Length=175
+
+ Score = 57.0 bits (136),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 24/139 (17%), Positives = 44/139 (32%), Gaps = 10/139 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEEFT  63
+            I  IK D T      V  I +  N     G G   A+ +       E   +  + Q E  
+Sbjct  5    IKLIKEDITQL---EVDAIVNAANSSLLGGGGVDGAIHRAGGPEILEECYKIREKQGECK  61
+
+Query  64   LGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+            +G          N  ++ + +G      +      +  +A +  L      ++    ++ 
+Sbjct  62   VGEAVITTAGRLNAKFIIHTVGPIWSGGNKNE-DELLSNAYKNSLLLAKNHSLK---TIA  117
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G+     E   +I
+Sbjct  118  FPNISTGIYHFPKERAAKI  136
+
+
+>sp|Q9V0Y3|Y656_PYRAB Uncharacterized protein PYRAB06560 OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB06560 
+PE=4 SV=2
+Length=183
+
+ Score = 56.2 bits (134),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 27/168 (16%), Positives = 49/168 (29%), Gaps = 24/168 (14%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+               + GD T         I +  N     G G   A++K        Y +  K +    +
+Sbjct  2    FRVVHGDITRFKAEA---IVNAANKYLEHGGGVAYAIAKAASGDVSEYIRISKEEMRKQI  58
+
+Query  65   -------GAVQFVNV-----ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLK-EVAL  111
+                   G V              YV + +G +   K        +   +   +   +  
+Sbjct  59   GRDWIEHGEVVVTPPLNLAKNGVKYVIHTVGPYCGGK----WDEDKRKKLELAILGALKK  114
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQ----IIKEELITKEIAVTVY  155
+                   S+  P I  G+ G   E + +    ++ E L + +    VY
+Sbjct  115  ADELGVRSIAFPAISAGIYGCPLEEVVKTFKLVVNEFLKSAKNVTDVY  162
+
+
+>sp|Q8RB30|Y995_CALS4 Macro domain-containing protein TTE0995 
+OS=Caldanaerobacter subterraneus subsp. tengcongensis (strain 
+DSM 15242 / JCM 11007 / NBRC 100824 / MB4) OX=273068 GN=TTE0995 
+PE=4 SV=1
+Length=175
+
+ Score = 54.3 bits (129),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 40/139 (29%), Gaps = 10/139 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I  IKG+        V  I +  N     G G   A+ K          +  + ++    
+Sbjct  5    IKLIKGNIVDQ---EVDAIVNAANSSLIGGGGVDGAIHKAGGPAIAEELKVIREKQGGCP  61
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 +     L   YV + +G      +      +    +      + L    +  ++ 
+Sbjct  62   TGHAVITGAGNLKAKYVIHAVGPIWKGGNHNEDNLLASAYIES----LKLADEYNVKTIA  117
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G  G   E   +I
+Sbjct  118  FPSISTGAYGFPVERAARI  136
+
+
+>sp|O67112|Y987_AQUAE Uncharacterized protein aq_987 OS=Aquifex 
+aeolicus (strain VF5) OX=224324 GN=aq_987 PE=4 SV=1
+Length=165
+
+ Score = 53.5 bits (127),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 26/147 (18%), Positives = 45/147 (31%), Gaps = 9/147 (6%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M+I  +KG  T        VI +  N  G  G G  + + +      E  R+  +     
+Sbjct  1    MDIKVVKGSITEVDAD---VIVNPANSRGLMGGGVAVVIKRLGGE--EIEREAVEKAPIP  55
+
+Query  63   TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              G+          +   +                   A R  L+            V +
+Sbjct  56   V-GSAVLTTAGKLKFKGVIHAPTMEEPAMPSSEEKVRKATRAALELADKECFK---IVAI  111
+
+Query  123  PRIGCGLAGGKWELMEQIIKEELITKE  149
+            P +G G+ G   E+  + + EE+   E
+Sbjct  112  PGMGTGVGGVPKEVAARAMVEEIRKFE  138
+
+
+>sp|C9Y0V8|YMDB_CROTZ O-acetyl-ADP-ribose deacetylase OS=Cronobacter 
+turicensis (strain DSM 18703 / LMG 23827 / z3032) OX=693216 
+GN=ymdB PE=3 SV=1
+Length=176
+
+ Score = 53.5 bits (127),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 34/161 (21%), Positives = 51/161 (32%), Gaps = 14/161 (9%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQE  60
+            +  I  ++GD T        VI +  N     G G   A+ +        A +   + Q 
+Sbjct  2    SGRINVVQGDITRI---DTDVIVNAANPSLMGGGGVDGAIHRAAGPSLLAACKVVRQQQG  58
+
+Query  61   EFTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+            E   G        +     V + +G           P +  DA R  L+   L T     
+Sbjct  59   ECQPGHAVITEAGDLAAKAVIHTVGP-IWRGGHDNEPQLLADAYRNSLE---LVTANGYN  114
+
+Query  119  SVHMPRIGCGLAGGKWELMEQI----IKEELITKEIAVTVY  155
+            SV  P I  G+ G       QI    + + L  +     VY
+Sbjct  115  SVAFPAISTGIYGYPKAAAAQIAFETVSDYLTRRPQPKQVY  155
+
+
+>sp|P27282|POLN_EEVVT Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain Trinidad donkey) OX=11038 PE=1 SV=3
+Length=2493
+
+ Score = 55.1 bits (131),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 28/157 (18%), Positives = 54/157 (34%), Gaps = 18/157 (11%)
+
+Query  2     AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             A     ++GD      +   VI +  N  G  G G   AL KK+              + 
+Sbjct  1330  APSYHVVRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQP  1378
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G  + V    K  + + +G +              +A  + + ++      +  SV 
+Sbjct  1379  IEVGKARLVKGAAKH-IIHAVGPNFNKVSEVEGDKQLAEA-YESIAKIVN--DNNYKSVA  1434
+
+Query  122   MPRIGCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +P +  G+  G  + + Q +      L T +  V +Y
+Sbjct  1435  IPLLSTGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|P36328|POLN_EEVVP Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain P676) OX=36385 PE=1 SV=2
+Length=2493
+
+ Score = 55.1 bits (131),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 28/157 (18%), Positives = 54/157 (34%), Gaps = 18/157 (11%)
+
+Query  2     AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             A     ++GD      +   VI +  N  G  G G   AL KK+              + 
+Sbjct  1330  APSYHVVRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQP  1378
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G  + V    K  + + +G +              +A  + + ++      +  SV 
+Sbjct  1379  IEVGKARLVKGAAKH-IIHAVGPNFNKVSEVEGDKQLAEA-YESIAKIVN--DNNYKSVA  1434
+
+Query  122   MPRIGCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +P +  G+  G  + + Q +      L T +  V +Y
+Sbjct  1435  IPLLSTGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|Q2EMV9|PAR14_MOUSE Protein mono-ADP-ribosyltransferase PARP14 
+OS=Mus musculus OX=10090 GN=Parp14 PE=1 SV=3
+Length=1817
+
+ Score = 55.1 bits (131),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 25/133 (19%), Positives = 41/133 (31%), Gaps = 10/133 (8%)
+
+Query  20   VKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQFVNVENK---L  76
+            V V+ +  N+      G   ALSK      +        +    L     ++   K    
+Sbjct  827  VDVVVNAANENLKHISGLAQALSKAAGPELQTECDQIVKEGGVVLPGNAVISKAGKLPCH  886
+
+Query  77   YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWE-  135
+            +V + +G             +    VRQ L   +L       S+ MP +  G+     E 
+Sbjct  887  HVIHAVGPRWKGDKVLECVSLLKKVVRQSL---SLAEEHRCRSIAMPAVSAGIFDFPLEL  943
+
+Query  136  ---LMEQIIKEEL  145
+                +   IKE  
+Sbjct  944  CVANIVSAIKEHF  956
+
+
+>sp|Q9KHE2|Y189_STRGR Macro domain-containing protein in non 5'region 
+OS=Streptomyces griseus OX=1911 PE=4 SV=1
+Length=177
+
+ Score = 53.2 bits (126),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 23/141 (16%), Positives = 44/141 (31%), Gaps = 13/141 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQ-WYKSQEEF  62
+            +  ++GD T      V VI +  N     G G   A+ ++       A R+       + 
+Sbjct  9    VRLVRGDITDQS---VDVIVNAANSSLLGGGGVDGAIHRRGGPDILAACRELRASRYGKG  65
+
+Query  63   TLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+                        +L   ++ + +G             +     R+ L+   L       S
+Sbjct  66   LPTGQAVATTAGRLDARWIVHTVGPVFSGAQ--DRSALLASCYRESLR---LAAELGARS  120
+
+Query  120  VHMPRIGCGLAGGKWELMEQI  140
+            +  P I  G+ G   +   +I
+Sbjct  121  IAFPAISTGIYGWPMDDGARI  141
+
+
+>sp|A7MG20|YMDB_CROS8 O-acetyl-ADP-ribose deacetylase OS=Cronobacter 
+sakazakii (strain ATCC BAA-894) OX=290339 GN=ymdB PE=3 
+SV=1
+Length=180
+
+ Score = 52.8 bits (125),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 35/166 (21%), Positives = 51/166 (31%), Gaps = 18/166 (11%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQE  60
+            +  I  ++GD T      V VI +  N     G G   A+ +        A RQ  + Q 
+Sbjct  2    SGRINVVQGDITLI---DVDVIVNAANPSLMGGGGVDGAIHRAAGPALLAACRQVRQQQG  58
+
+Query  61   EFTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+            E   G        +     V + +G           P +  DA R  L    L       
+Sbjct  59   ECQPGHAVITEAGDLAAKAVVHTVGP-VWRGGQDNEPQLLADAYRNSL---QLVAANGYN  114
+
+Query  119  SVHMPRIGCGLAGGKW--------ELMEQIIKEELITKEIAVTVYD  156
+            SV  P I  G+ G           E +   +      K++    YD
+Sbjct  115  SVAFPAISTGIYGYPKAAAAQIAFETVSDYLTRHPQPKQVYFVCYD  160
+
+
+>sp|P36327|POLN_EEVV3 Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain 3880) OX=36382 PE=3 SV=3
+Length=2485
+
+ Score = 54.3 bits (129),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 28/157 (18%), Positives = 54/157 (34%), Gaps = 18/157 (11%)
+
+Query  2     AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             A     ++GD      +   VI +  N  G  G G   AL KK+              + 
+Sbjct  1330  APSYHVVRGDI---ATATEGVIINAANSKGQPGGGVCGALYKKFPESF--------DLQP  1378
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G  + V    K  + + +G +              +A  + + ++      +  SV 
+Sbjct  1379  IEVGKARLVKGAAKH-IIHAVGPNFNKVSEIEGDKQLAEA-YESIAKIVN--DNNYKSVA  1434
+
+Query  122   MPRIGCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +P +  G+  G  + + Q +      L T +  V +Y
+Sbjct  1435  IPLLSTGIFSGNKDRLTQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|Q5JER1|Y1890_THEKO Uncharacterized protein TK1890 OS=Thermococcus 
+kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) 
+OX=69014 GN=TK1890 PE=4 SV=1
+Length=180
+
+ Score = 52.4 bits (124),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 27/158 (17%), Positives = 47/158 (30%), Gaps = 18/158 (11%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+            E   +KGD T         I +  N     G G   A++K        Y +  K      
+Sbjct  3    EFEIVKGDITRFPAEA---IVNAANRYLEHGGGVAYAIAKAAAGDPREYIRISKEAMREQ  59
+
+Query  64   LGAVQF------------VNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+            LG                +      YV + +G +      +        A+   L++   
+Sbjct  60   LGKDHIEHGEVVVTPAMRLEKHGIRYVIHTVGPYCGGIWDEDKKEKLRKAILGALRK---  116
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELITKE  149
+                   ++  P +  G+ G   E + +  KE +   E
+Sbjct  117  AEELGVKTIAFPAVSAGIYGCPLEEVVKTFKEVIDEFE  154
+
+
+>sp|Q9ZBG3|Y6450_STRCO Macro domain-containing protein SCO6450 
+OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) 
+OX=100226 GN=SCO6450 PE=4 SV=1
+Length=169
+
+ Score = 52.0 bits (123),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 24/156 (15%), Positives = 47/156 (30%), Gaps = 13/156 (8%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAY--RQWYKSQE  60
+              I  ++GD T         I +  N     G G   A+ ++      A   R       
+Sbjct  2    TGITLVQGDITRQSADA---IVNAANSSLLGGGGVDGAIHRRGGPAILAECRRLRAGHLG  58
+
+Query  61   EFTLGAVQFVNVE---NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHK  117
+            +               +  +V + +G       ++    +     R+ L+          
+Sbjct  59   KGLPTGRAVATTAGDLDARWVIHTVGPVW--SATEDRSGLLASCYRESLRTADEL---GA  113
+
+Query  118  ASVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVT  153
+             +V  P I  G+     +   +I  E + T + +VT
+Sbjct  114  RTVAFPAISTGVYRWPMDDAARIAVETVATTKTSVT  149
+
+
+>sp|P13896|POLN_WEEV Polyprotein P1234 OS=Western equine encephalitis 
+virus OX=11039 PE=3 SV=3
+Length=2467
+
+ Score = 53.9 bits (128),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 31/155 (20%), Positives = 54/155 (35%), Gaps = 19/155 (12%)
+
+Query  6     LYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLG  65
+               I+GD      S  + I +  N  G  G G   AL +KW             ++   +G
+Sbjct  1332  RVIRGDI---SKSADQAIVNAANSKGQPGSGVCGALYRKWPAAF--------DRQPIAVG  1380
+
+Query  66    AVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+               + V  E    + + +G     K  +    ++  A    +  +       K SV  P +
+Sbjct  1381  TARLVKHEP--LIIHAVGP-NFSKMPEPEGDLKLAAAYMSIASIVNAERITKISV--PLL  1435
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVYDL  157
+               G+  G  + + Q +        T +  VT+Y L
+Sbjct  1436  STGIYSGGKDRVMQSLHHLFTAFDTTDADVTIYCL  1470
+
+
+>sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus 
+229E OX=11137 GN=1a PE=1 SV=1
+Length=4085
+
+ Score = 53.5 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 28/154 (18%), Positives = 51/154 (33%), Gaps = 15/154 (10%)
+
+Query  5     ILYIKGDA-TAPIGSGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             + + +GD  T   G     I +  N+    G G   AL        +   ++      + 
+Sbjct  1281  VAFYQGDVDTVVNGVDFDFIVNAANENLAHGGGLAKALDVYTKGKLQRLSKEHIGLAGKV  1340
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    V  ++      +    G  K             R  L +        + +   
+Sbjct  1341  KVGTGVMVECDSLR----IFNVVGPRKGKHE---------RDLLIKAYNTINNEQGTPLT  1387
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+             P + CG+ G K E   +++ +   TKE+ V VY 
+Sbjct  1388  PILSCGIFGIKLETSLEVLLDVCNTKEVKVFVYT  1421
+
+
+>sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavirus 
+229E OX=11137 GN=rep PE=1 SV=1
+Length=6758
+
+ Score = 53.5 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 28/154 (18%), Positives = 51/154 (33%), Gaps = 15/154 (10%)
+
+Query  5     ILYIKGDA-TAPIGSGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             + + +GD  T   G     I +  N+    G G   AL        +   ++      + 
+Sbjct  1281  VAFYQGDVDTVVNGVDFDFIVNAANENLAHGGGLAKALDVYTKGKLQRLSKEHIGLAGKV  1340
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    V  ++      +    G  K             R  L +        + +   
+Sbjct  1341  KVGTGVMVECDSLR----IFNVVGPRKGKHE---------RDLLIKAYNTINNEQGTPLT  1387
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+             P + CG+ G K E   +++ +   TKE+ V VY 
+Sbjct  1388  PILSCGIFGIKLETSLEVLLDVCNTKEVKVFVYT  1421
+
+
+>sp|Q9WJC7|POLN_EEVVM Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain Mena II) OX=36384 PE=3 SV=3
+Length=2499
+
+ Score = 53.2 bits (126),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 28/157 (18%), Positives = 53/157 (34%), Gaps = 18/157 (11%)
+
+Query  2     AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             A     ++GD      +   VI +  N  G  G G   AL +K+              + 
+Sbjct  1330  APSYHVVRGDI---ATATEGVIVNAANSKGQPGSGVCGALYRKYPESF--------DLQP  1378
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G  + V   +K  + + +G +              +A     K +      +  SV 
+Sbjct  1379  IEVGKARLVKGSSKH-IIHAVGPNFSKVSEVEGDKQLAEAYESIAKIIN---DNNYRSVA  1434
+
+Query  122   MPRIGCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +P +  G+  G  + + Q +      L T +  V +Y
+Sbjct  1435  IPLLSTGIFAGNKDRLMQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|E1PL40|YMDB2_PANVC O-acetyl-ADP-ribose deacetylase 2 OS=Pantoea 
+vagans (strain C9-1) OX=712898 GN=ymdB2 PE=3 SV=1
+Length=171
+
+ Score = 51.6 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 28/142 (20%), Positives = 42/142 (30%), Gaps = 16/142 (11%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKS-QEEFT  63
+            I  I+GD T         I ++ N     G G   A+ +       A  Q  +S Q    
+Sbjct  4    ITVIQGDITNIASEA---IINVANSSLLGGGGVDGAIHRAGGPVILAECQAIRSRQGGCK  60
+
+Query  64   LGAVQF-----VNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+            +G         +  +   YV + +G                     C K V    I    
+Sbjct  61   VGEAVITGAGTLPAD---YVIHTVGPR-WSDGRHNEDTQLKSVYLSCFKLVGHHGIK---  113
+
+Query  119  SVHMPRIGCGLAGGKWELMEQI  140
+            +V  P I  G+ G   +    I
+Sbjct  114  TVSFPNISTGIYGFPKKRAAAI  135
+
+
+>sp|P67341|YMDB_SALTY O-acetyl-ADP-ribose deacetylase OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=ymdB PE=3 SV=1
+Length=179
+
+ Score = 51.2 bits (121),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 26/135 (19%), Positives = 41/135 (30%), Gaps = 10/135 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               +  I+GD T      V  I +  N     G G   A+ +          +  + Q+ 
+Sbjct  2    TSRLQVIQGDITQLS---VDAIVNAANASLMGGGGVDGAIHRAAGPALLDACKLIRQQQG  58
+
+Query  62   FTLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+                    +    KL    V + +G             +  +A R CL    L    H  
+Sbjct  59   ECQTGHAVITPAGKLSAKAVIHTVGP-VWRGGEHQEAELLEEAYRNCLL---LAEANHFR  114
+
+Query  119  SVHMPRIGCGLAGGK  133
+            S+  P I  G+ G  
+Sbjct  115  SIAFPAISTGVYGYP  129
+
+
+>sp|P67342|YMDB_SALTI O-acetyl-ADP-ribose deacetylase OS=Salmonella 
+typhi OX=90370 GN=ymdB PE=3 SV=1
+Length=179
+
+ Score = 51.2 bits (121),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 26/135 (19%), Positives = 41/135 (30%), Gaps = 10/135 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               +  I+GD T      V  I +  N     G G   A+ +          +  + Q+ 
+Sbjct  2    TSRLQVIQGDITQLS---VDAIVNAANASLMGGGGVDGAIHRAAGPALLDACKLIRQQQG  58
+
+Query  62   FTLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+                    +    KL    V + +G             +  +A R CL    L    H  
+Sbjct  59   ECQTGHAVITPAGKLSAKAVIHTVGP-VWRGGEHQEAELLEEAYRNCLL---LAEANHFR  114
+
+Query  119  SVHMPRIGCGLAGGK  133
+            S+  P I  G+ G  
+Sbjct  115  SIAFPAISTGVYGYP  129
+
+
+>sp|B4T2X8|YMDB_SALNS O-acetyl-ADP-ribose deacetylase OS=Salmonella 
+newport (strain SL254) OX=423368 GN=ymdB PE=3 SV=1
+Length=179
+
+ Score = 51.2 bits (121),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 26/135 (19%), Positives = 41/135 (30%), Gaps = 10/135 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               +  I+GD T      V  I +  N     G G   A+ +          +  + Q+ 
+Sbjct  2    TSRLQVIQGDITQLS---VDAIVNAANASLMGGGGVDGAIHRAAGPALLDACKLIRQQQG  58
+
+Query  62   FTLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+                    +    KL    V + +G             +  +A R CL    L    H  
+Sbjct  59   ECQTGHAVITPAGKLSAKAVIHTVGP-VWRGGEHQEAELLEEAYRNCLL---LAEANHFR  114
+
+Query  119  SVHMPRIGCGLAGGK  133
+            S+  P I  G+ G  
+Sbjct  115  SIAFPAISTGVYGYP  129
+
+
+>sp|Q8V294|POLN_EEVVC Polyprotein P1234 OS=Venezuelan equine encephalitis 
+virus (strain CPA201) OX=376610 PE=3 SV=3
+Length=2497
+
+ Score = 52.4 bits (124),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 27/157 (17%), Positives = 53/157 (34%), Gaps = 18/157 (11%)
+
+Query  2     AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             A     ++GD      +   VI +  N  G  G G   AL +K+              + 
+Sbjct  1330  APSYHVVRGDI---ATATEGVIVNAANSKGQPGSGVCGALYRKYPESF--------DLQP  1378
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G  + V   +K  + + +G +              +A     + +      +  SV 
+Sbjct  1379  IEVGKARLVKGNSKHLI-HAVGPNFNKVSEVEGDKQLAEAYESIARIIN---DNNYRSVA  1434
+
+Query  122   MPRIGCGLAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +P +  G+  G  + + Q +      L T +  V +Y
+Sbjct  1435  IPLLSTGIFAGNKDRLMQSLNHLLTALDTTDADVAIY  1471
+
+
+>sp|B5RBF3|YMDB_SALG2 O-acetyl-ADP-ribose deacetylase OS=Salmonella 
+gallinarum (strain 287/91 / NCTC 13346) OX=550538 GN=ymdB 
+PE=3 SV=1
+Length=179
+
+ Score = 50.8 bits (120),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 26/135 (19%), Positives = 41/135 (30%), Gaps = 10/135 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               +  I+GD T      V  I +  N     G G   A+ +          +  + Q+ 
+Sbjct  2    TSRLQVIQGDITQLS---VDAIVNAANASLMGGGGVDGAIHRAAGPALLDACKLIRQQQG  58
+
+Query  62   FTLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+                    +    KL    V + +G             +  +A R CL    L    H  
+Sbjct  59   ECQTGHAVITPAGKLSAKAVIHTVGP-VWRGGEHQEAELLEEAYRSCLL---LAEANHFR  114
+
+Query  119  SVHMPRIGCGLAGGK  133
+            S+  P I  G+ G  
+Sbjct  115  SIAFPAISTGVYGYP  129
+
+
+>sp|Q8TQD0|Y1614_METAC Macro domain-containing protein MA_1614 
+OS=Methanosarcina acetivorans (strain ATCC 35395 / DSM 2834 
+/ JCM 12185 / C2A) OX=188937 GN=MA_1614 PE=4 SV=1
+Length=195
+
+ Score = 50.8 bits (120),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 26/143 (18%), Positives = 46/143 (32%), Gaps = 14/143 (10%)
+
+Query  1    NAMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQ  59
+            N+  I  I+ D T      V  I +  N+    G G   A+ +       E      ++ 
+Sbjct  25   NSERIRIIERDITEL---KVDAIVNAANNTLLGGGGVDGAIHRAAGPGLLEE----CRTL  77
+
+Query  60   EEFTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHK  117
+                 G  +          YV + +G     + +KG         R+ L+    + +   
+Sbjct  78   NGCPTGEAKITKGYLLPAKYVIHTVGP-IWQEGTKGEDEFLASCYRKSLELARKYDVK--  134
+
+Query  118  ASVHMPRIGCGLAGGKWELMEQI  140
+             ++  P I  G  G   E   +I
+Sbjct  135  -TIAFPTISTGAYGFPSERAARI  156
+
+
+>sp|Q8U0P9|Y1536_PYRFU Uncharacterized protein PF1536 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) 
+OX=186497 GN=PF1536 PE=4 SV=1
+Length=183
+
+ Score = 50.8 bits (120),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 29/153 (19%), Positives = 46/153 (30%), Gaps = 18/153 (12%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I  +KGD T         I +  N     G G   A++K        Y +  K      L
+Sbjct  2    IKVVKGDITKFRAEA---IVNAANKYLEHGGGVAYAIAKAAAGDVREYIRISKEAMREQL  58
+
+Query  65   -------GAVQFVNV-----ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALF  112
+                   G V              YV + +G +      +        A+   LK+    
+Sbjct  59   GKDWIDHGEVVVTPPLQLEKNGVKYVIHTVGPYCGGSWDEDKKSKLKLAILGALKKADEL  118
+
+Query  113  TIAHKASVHMPRIGCGLAGGKWELMEQIIKEEL  145
+             +    S+  P I  G+ G   E + +   E +
+Sbjct  119  GVK---SIAFPAISAGIYGCPLEKVVETFVEVV  148
+
+
+>sp|Q306W6|POLN_EEEV1 Polyprotein P1234 OS=Eastern equine encephalitis 
+virus (strain PE-0.0155) OX=374596 PE=3 SV=3
+Length=2471
+
+ Score = 52.0 bits (123),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 30/155 (19%), Positives = 54/155 (35%), Gaps = 19/155 (12%)
+
+Query  6     LYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLG  65
+               I+GD +        VI +  N+ G  G G   AL KKW             +     G
+Sbjct  1332  RVIRGDISKSTDE---VIVNAANNKGQPGAGVCGALYKKWPGAF--------DKAPIATG  1380
+
+Query  66    AVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+                 V       + + +G     + S+     +   V   + ++      +K S+  P +
+Sbjct  1381  TAHLVKHTPN--IIHAVGP-NFSRMSEVEGNQKLSEVYMDIAKIINKERYNKVSI--PLL  1435
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVYDL  157
+               G+  G  + + Q +      + T +  VT+Y L
+Sbjct  1436  STGVYAGGKDRVMQSLNHLFTAMDTTDADVTIYCL  1470
+
+
+>sp|Q4QXJ8|POLN_EEEVF Polyprotein P1234 OS=Eastern equine encephalitis 
+virus (strain Florida 91-469) OX=374598 PE=1 SV=3
+Length=2494
+
+ Score = 51.6 bits (122),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 29/155 (19%), Positives = 53/155 (34%), Gaps = 19/155 (12%)
+
+Query  6     LYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLG  65
+               ++GD T    S  +VI +  N+ G  G G   AL +KW             ++    G
+Sbjct  1332  RVVRGDITK---SNDEVIVNAANNKGQPGSGVCGALYRKWPGAF--------DKQPVATG  1380
+
+Query  66    AVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+                 V       V + +G +            +   V   +  +       K S+  P +
+Sbjct  1381  KAHLVKHSPN--VIHAVGPNFSRLSENEGD-QKLSEVYMDIARIINNERFTKVSI--PLL  1435
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVYDL  157
+               G+  G  + + Q +      + T +  +T+Y L
+Sbjct  1436  STGIYAGGKDRVMQSLNHLFTAMDTTDADITIYCL  1470
+
+
+>sp|B7LT90|YMDB_ESCF3 O-acetyl-ADP-ribose deacetylase OS=Escherichia 
+fergusonii (strain ATCC 35469 / DSM 13698 / CDC 0568-73) 
+OX=585054 GN=ymdB PE=3 SV=2
+Length=177
+
+ Score = 50.1 bits (118),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 26/133 (20%), Positives = 41/133 (31%), Gaps = 10/133 (8%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             I  ++GD T      V VI +  N     G G   A+ +          Q  + Q+   
+Sbjct  4    RIHVLQGDITQLA---VDVIVNAANSSLMGGGGVDGAIHRAAGPELLEACQKVRRQQGEC  60
+
+Query  64   LGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASV  120
+                  + +   L    V + +G             + +DA    LK   L       S+
+Sbjct  61   PTGHAVITIAGNLPARAVIHTVGP-VWRDGEHNEDQLLHDAYLNSLK---LAQANGYKSI  116
+
+Query  121  HMPRIGCGLAGGK  133
+              P I  G+ G  
+Sbjct  117  AFPAISTGVYGFP  129
+
+
+>sp|Q306W8|POLN_EEEV8 Polyprotein P1234 OS=Eastern equine encephalitis 
+virus (strain PE-3.0815) OX=374597 PE=3 SV=3
+Length=2474
+
+ Score = 51.2 bits (121),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 29/155 (19%), Positives = 53/155 (34%), Gaps = 19/155 (12%)
+
+Query  6     LYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLG  65
+               I+GD +         I +  N+ G  G G   AL KKW             +     G
+Sbjct  1332  RVIRGDISKSTDEA---IVNAANNKGQPGAGVCGALYKKWPGAF--------DKVPIATG  1380
+
+Query  66    AVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+                 V       + + +G     + S+     +   V   + ++      +K S+  P +
+Sbjct  1381  TAHLVKHTPN--IIHAVGP-NFSRVSEVEGNQKLSEVYMDIAKIINRERYNKVSI--PLL  1435
+
+Query  126   GCGLAGGKWELMEQIIK---EELITKEIAVTVYDL  157
+               G+  G  + + Q +      + T +  VT+Y L
+Sbjct  1436  STGIYAGGKDRVMQSLNHLFTAMDTTDADVTIYCL  1470
+
+
+>sp|Q9HXU7|Y3693_PSEAE Macro domain-containing protein PA3693 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=PA3693 PE=4 SV=1
+Length=173
+
+ Score = 49.7 bits (117),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 28/140 (20%), Positives = 41/140 (29%), Gaps = 12/140 (9%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+             E+   +GD T      V  I +  N     G G   A+ +             +     
+Sbjct  2    TEVRVWQGDITRLA---VDAIVNAANSSLLGGGGVDGAIHRAAGA---ELVAACRLLHGC  55
+
+Query  63   TLGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASV  120
+              G  +          +V + +G         G   +     R+ L    L   A  ASV
+Sbjct  56   KTGEAKITRGFRLPAAHVIHTVGP-VWRGGDNGEAELLASCYRRSLA---LAEQAGAASV  111
+
+Query  121  HMPRIGCGLAGGKWELMEQI  140
+              P I CG+ G   E    I
+Sbjct  112  AFPAISCGIYGYPLEQAAAI  131
+
+
+>sp|O28751|Y1521_ARCFU ADP-ribose glycohydrolase AF_1521 OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / 
+JCM 9628 / NBRC 100126) OX=224325 GN=AF_1521 PE=1 SV=2
+Length=192
+
+ Score = 49.7 bits (117),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 33/171 (19%), Positives = 52/171 (30%), Gaps = 24/171 (14%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             +   +GD T       K I +  N     G G   A++K        Y +  K      
+Sbjct  13   TLKLAQGDITQ---YPAKAIVNAANKRLEHGGGVAYAIAKACAGDAGLYTEISKKAMREQ  69
+
+Query  64   L-------GAVQFVNV-----ENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVAL  111
+                    G V              YV + +G       S+ L    Y A    L  +  
+Sbjct  70   FGRDYIDHGEVVVTPAMNLEERGIKYVFHTVGPICSGMWSEELKEKLYKAF---LGPLEK  126
+
+Query  112  FTIAHKASVHMPRIGCGLAGGKWELMEQIIKEELIT------KEIAVTVYD  156
+                   S+  P +  G+ G   E + +   E +        KE+A+ +YD
+Sbjct  127  AEEMGVESIAFPAVSAGIYGCDLEKVVETFLEAVKNFKGSAVKEVALVIYD  177
+
+
+>sp|P87515|POLN_BFV Polyprotein P1234 OS=Barmah forest virus OX=11020 
+PE=3 SV=3
+Length=2411
+
+ Score = 50.8 bits (120),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 24/150 (16%), Positives = 43/150 (29%), Gaps = 18/150 (12%)
+
+Query  9     KGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQ  68
+             +GD +      V    +  N  G  G G   A+ +KW              +  T     
+Sbjct  1339  RGDISNAPEDAV---VNAANQQGVKGAGVCGAIYRKWPDAF---------GDVATPTGTA  1386
+
+Query  69    FVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCG  128
+                      V + +G +      +        A R       +       +V +P +  G
+Sbjct  1387  VSKSVQDKLVIHAVGPNFSKCSEEEGDRDLASAYR---AAAEIVMDKKITTVAVPLLSTG  1443
+
+Query  129   LAGGKWELMEQIIK---EELITKEIAVTVY  155
+             +  G    +EQ +          +  VT+Y
+Sbjct  1444  IYAGGKNRVEQSLNHLFTAFDNTDADVTIY  1473
+
+
+>sp|Q8KAE4|Y2219_CHLTE Macro domain-containing protein CT2219 
+OS=Chlorobaculum tepidum (strain ATCC 49652 / DSM 12025 / NBRC 
+103806 / TLS) OX=194439 GN=CT2219 PE=4 SV=1
+Length=172
+
+ Score = 49.3 bits (116),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 28/143 (20%), Positives = 45/143 (31%), Gaps = 14/143 (10%)
+
+Query  1    NAMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQ  59
+            + + I  IK D T+     V  I +  N     G G   A+ +       EA     +  
+Sbjct  3    DNVLIHAIKADITSLT---VDAIVNAANTSLLGGGGVDGAIHRAAGPKLLEA----CREL  55
+
+Query  60   EEFTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHK  117
+                 G  +          +V + +G    +  + G   +     R  LK   L    H 
+Sbjct  56   GGCLTGEAKITKGYRLPATFVIHTVGP-VWHGGNHGEAELLASCYRNSLK---LAIEHHC  111
+
+Query  118  ASVHMPRIGCGLAGGKWELMEQI  140
+             ++  P I  G+ G   E    I
+Sbjct  112  RTIAFPSISTGIYGYPVEQAAAI  134
+
+
+>sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU9 OX=694006 GN=1a PE=3 SV=1
+Length=4248
+
+ Score = 50.8 bits (120),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 24/155 (15%), Positives = 46/155 (30%), Gaps = 18/155 (12%)
+
+Query  7     YIK-GDATAPIGSGV-KVITHICNDIGGWGKGFVLALSKKWKMP-EEAYRQWYKSQEEFT  63
+             YIK  D      +    V+ +  N     G G   AL++      ++   ++ K+     
+Sbjct  944   YIKCADIVQEARNYSYAVLVNAANVNLHHGGGVAGALNRATNNAMQKESSEYIKANGSLQ  1003
+
+Query  64    LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+              G    ++        + +++G                      L +          SV 
+Sbjct  1004  PGGHVLLSSHGLASHGILHVVGPDKRLGQ------------DLALLDAVYAAYTGFDSVL  1051
+
+Query  122   MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+              P +  G+ G   E     + + +      V VYD
+Sbjct  1052  TPLVSAGIFGFTVEESLCSLVKNVACTTYVV-VYD  1085
+
+
+>sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU9 OX=694006 GN=rep PE=1 SV=1
+Length=6930
+
+ Score = 50.8 bits (120),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 24/155 (15%), Positives = 46/155 (30%), Gaps = 18/155 (12%)
+
+Query  7     YIK-GDATAPIGSGV-KVITHICNDIGGWGKGFVLALSKKWKMP-EEAYRQWYKSQEEFT  63
+             YIK  D      +    V+ +  N     G G   AL++      ++   ++ K+     
+Sbjct  944   YIKCADIVQEARNYSYAVLVNAANVNLHHGGGVAGALNRATNNAMQKESSEYIKANGSLQ  1003
+
+Query  64    LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+              G    ++        + +++G                      L +          SV 
+Sbjct  1004  PGGHVLLSSHGLASHGILHVVGPDKRLGQ------------DLALLDAVYAAYTGFDSVL  1051
+
+Query  122   MPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+              P +  G+ G   E     + + +      V VYD
+Sbjct  1052  TPLVSAGIFGFTVEESLCSLVKNVACTTYVV-VYD  1085
+
+
+>sp|Q460N5|PAR14_HUMAN Protein mono-ADP-ribosyltransferase PARP14 
+OS=Homo sapiens OX=9606 GN=PARP14 PE=1 SV=3
+Length=1801
+
+ Score = 50.5 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 26/125 (21%), Positives = 40/125 (32%), Gaps = 3/125 (2%)
+
+Query  9    KGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQ  68
+            +GD        V V+ +  N+      G   ALSK      +A       +E   L    
+Sbjct  808  QGDLARLP---VDVVVNASNEDLKHYGGLAAALSKAAGPELQADCDQIVKREGRLLPGNA  864
+
+Query  69   FVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCG  128
+             ++   KL   ++I   G        P   Y   R     + L       S+ +P I  G
+Sbjct  865  TISKAGKLPYHHVIHAVGPRWSGYEAPRCVYLLRRAVQLSLCLAEKYKYRSIAIPAISSG  924
+
+Query  129  LAGGK  133
+            + G  
+Sbjct  925  VFGFP  929
+
+
+>sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 
+512/2005 OX=693999 GN=1a PE=3 SV=1
+Length=4128
+
+ Score = 50.5 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 19/130 (15%), Positives = 40/130 (31%), Gaps = 14/130 (11%)
+
+Query  5     ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKSQEEFT  63
+             I + +G+ +A +      + +  N+    G G   AL    K   +    Q+        
+Sbjct  1305  IEFYQGELSALLSVNHDFVVNAANEQLSHGGGIAKALDDLTKGELQVLSNQYVSRNGSIK  1364
+
+Query  64    LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMP  123
+             +G+   +  +    + N++G                    + L +   F    K    MP
+Sbjct  1365  VGSGVLIKCKE-HSILNVVGPRKG------------KHAAELLTKAYTFVFKQKGVPLMP  1411
+
+Query  124   RIGCGLAGGK  133
+              +  G+    
+Sbjct  1412  LLSVGIFKVP  1421
+
+
+>sp|B5F961|YMDB_SALA4 O-acetyl-ADP-ribose deacetylase OS=Salmonella 
+agona (strain SL483) OX=454166 GN=ymdB PE=3 SV=1
+Length=179
+
+ Score = 49.3 bits (116),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 26/135 (19%), Positives = 40/135 (30%), Gaps = 10/135 (7%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+               +  I+GD T      V  I +  N     G G   A+ +          +  + Q+ 
+Sbjct  2    TSRLQVIQGDITQLS---VDAIVNAANASLMGGGGVDGAIHRAAGPALLDACKLIRQQQG  58
+
+Query  62   FTLGAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+                    +    KL    V + +G             +   A R CL    L    H  
+Sbjct  59   ECQTGHAVITPAGKLSAKAVIHTVGP-VWRGGEYQEAELLEAAYRNCLL---LAEANHFR  114
+
+Query  119  SVHMPRIGCGLAGGK  133
+            S+  P I  G+ G  
+Sbjct  115  SIAFPAISTGVYGYP  129
+
+
+>sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus 
+512/2005 OX=693999 GN=rep PE=3 SV=1
+Length=6793
+
+ Score = 50.5 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 19/130 (15%), Positives = 40/130 (31%), Gaps = 14/130 (11%)
+
+Query  5     ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKSQEEFT  63
+             I + +G+ +A +      + +  N+    G G   AL    K   +    Q+        
+Sbjct  1305  IEFYQGELSALLSVNHDFVVNAANEQLSHGGGIAKALDDLTKGELQVLSNQYVSRNGSIK  1364
+
+Query  64    LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMP  123
+             +G+   +  +    + N++G                    + L +   F    K    MP
+Sbjct  1365  VGSGVLIKCKE-HSILNVVGPRKG------------KHAAELLTKAYTFVFKQKGVPLMP  1411
+
+Query  124   RIGCGLAGGK  133
+              +  G+    
+Sbjct  1412  LLSVGIFKVP  1421
+
+
+>sp|Q9HJ67|Y1105_THEAC Uncharacterized protein Ta1105 OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 
+/ NBRC 15155 / AMRC-C165) OX=273075 GN=Ta1105 PE=4 SV=2
+Length=196
+
+ Score = 48.5 bits (114),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 22/136 (16%), Positives = 39/136 (29%), Gaps = 12/136 (9%)
+
+Query  10   GDATAPIGSGVKVITHICNDIGGWGKGFVLAL-SKKWKMPE-EAYRQWYKSQEEFTLGAV  67
+            GD T         I +  N     G G   A+ S        E  +   +          
+Sbjct  16   GDITESDAEA---IVNAANSSLMGGGGVDGAIHSAAGPELNGELVKIRRERYPNGLPPGE  72
+
+Query  68   QFVNVE---NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+              +         ++ + +G   +     G   + Y + R CL     F       +  P 
+Sbjct  73   AVITRGYRLKASHIIHTVGPVWMGGR-NGEDDVLYRSYRSCLDLAREF---GIHDIAFPA  128
+
+Query  125  IGCGLAGGKWELMEQI  140
+            +  G  G  ++  E+I
+Sbjct  129  LSTGAYGFPFDRAERI  144
+
+
+>sp|D3RKJ0|YMDB_KLEVT O-acetyl-ADP-ribose deacetylase OS=Klebsiella 
+variicola (strain At-22) OX=640131 GN=ymdB PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 30/136 (22%), Positives = 44/136 (32%), Gaps = 10/136 (7%)
+
+Query  8    IKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEEFTLGA  66
+            I GD T      V VI +  N     G G   A+ +        A +Q  + Q E   G 
+Sbjct  8    ILGDITTL---EVDVIVNAANPSLLGGGGVDGAIHRAAGPALLAACKQVLQQQGECPPGH  64
+
+Query  67   VQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                   +     V + +G      D      +  DA +  L    L    +  S+  P 
+Sbjct  65   AVITIAGDLPASAVIHTVGPVWHGGDRMEAQTLA-DAYKNSL---QLAAANNYRSIAFPA  120
+
+Query  125  IGCGLAGGKWELMEQI  140
+            I  G+ G   E   +I
+Sbjct  121  ISTGVYGYPKEEAAEI  136
+
+
+>sp|B5XXK9|YMDB_KLEP3 O-acetyl-ADP-ribose deacetylase OS=Klebsiella 
+pneumoniae (strain 342) OX=507522 GN=ymdB PE=3 SV=1
+Length=175
+
+ Score = 48.2 bits (113),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 30/136 (22%), Positives = 44/136 (32%), Gaps = 10/136 (7%)
+
+Query  8    IKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEEFTLGA  66
+            I GD T      V VI +  N     G G   A+ +        A +Q  + Q E   G 
+Sbjct  8    ILGDITTL---EVDVIVNAANPSLLGGGGVDGAIHRAAGPALLAACKQVLQQQGECPPGH  64
+
+Query  67   VQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                   +     V + +G      D      +  DA +  L    L    +  S+  P 
+Sbjct  65   AVITIAGDLPASAVIHTVGPVWHGGDRMEAQTLA-DAYKNSL---QLAAANNYRSIAFPA  120
+
+Query  125  IGCGLAGGKWELMEQI  140
+            I  G+ G   E   +I
+Sbjct  121  ISTGVYGYPKEEAAEI  136
+
+
+>sp|Q9YBE9|Y1648_AERPE Uncharacterized protein APE_1648.1 OS=Aeropyrum 
+pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / 
+NBRC 100138 / K1) OX=272557 GN=APE_1648.1 PE=4 SV=2
+Length=189
+
+ Score = 47.8 bits (112),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 22/125 (18%), Positives = 34/125 (27%), Gaps = 13/125 (10%)
+
+Query  10   GDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQF  69
+            GD T      V    +  N +   G G   AL +      E              G    
+Sbjct  16   GDLTKVRAEAV---VNPANSLMIMGGGAAGALKRAGGSVIEEEAMRKAPVPV---GEAVI  69
+
+Query  70   VN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGC  127
+             +       +V +                   +A +     + L + A   SV MP +G 
+Sbjct  70   TSGGSLPARFVIHAPTMEEPGMRIP-----LVNAFKASYAALRLASEAGIESVAMPAMGA  124
+
+Query  128  GLAGG  132
+            G+ G 
+Sbjct  125  GVGGL  129
+
+
+>sp|Q97AU0|Y719_THEVO Uncharacterized protein TV0719 OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / 
+NBRC 15438 / GSS1) OX=273116 GN=TV0719 PE=4 SV=1
+Length=186
+
+ Score = 47.4 bits (111),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 27/141 (19%), Positives = 46/141 (33%), Gaps = 13/141 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEE---AYRQWYKSQEE  61
+            I  I+GD T       + I +  N     G G   A+  K     +   A  +  K  + 
+Sbjct  11   IEIIEGDITDV---NCEAIVNAANPSLMGGGGVDGAIHLKGGKTIDLECAELRRTKWPKG  67
+
+Query  62   FTLGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G     +       YV + +G    Y+  +      Y +  + L+   +  I     
+Sbjct  68   LPPGEADITSGGKLKAKYVIHTVGPI--YRGQEEDAETLYSSYYRSLEIAKIHGIK---C  122
+
+Query  120  VHMPRIGCGLAGGKWELMEQI  140
+            +  P I  G+ G  +E    I
+Sbjct  123  IAFPAISTGIYGYPFEEASVI  143
+
+
+>sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU4 OX=694007 GN=1a PE=1 SV=1
+Length=4434
+
+ Score = 48.5 bits (114),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 17/132 (13%), Positives = 35/132 (27%), Gaps = 15/132 (11%)
+
+Query  4     EILYIKGDATAPIGSGVKVI-THICNDIGGWGKGFVLALSKKWKM-PEEAYRQWYKSQEE  61
+              +  + GDA        K I  +  N     G G    ++K      +E   ++  +   
+Sbjct  1164  SVTLVLGDAIQIASLLPKCILVNAANRHLKHGGGIAGVINKASGGDVQEESDEYISNNGP  1223
+
+Query  62    FTLGAVQFVNVEN-KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASV  120
+               +G    +        + +++G                +     L +           V
+Sbjct  1224  LHVGDSVLLKGHGLADAILHVVGPD------------ARNNEDAALLKRCYKAFNKHTIV  1271
+
+Query  121   HMPRIGCGLAGG  132
+               P I  G+   
+Sbjct  1272  VTPLISAGIFSV  1283
+
+
+>sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU4 OX=694007 GN=rep PE=1 SV=1
+Length=7119
+
+ Score = 48.5 bits (114),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 17/132 (13%), Positives = 35/132 (27%), Gaps = 15/132 (11%)
+
+Query  4     EILYIKGDATAPIGSGVKVI-THICNDIGGWGKGFVLALSKKWKM-PEEAYRQWYKSQEE  61
+              +  + GDA        K I  +  N     G G    ++K      +E   ++  +   
+Sbjct  1164  SVTLVLGDAIQIASLLPKCILVNAANRHLKHGGGIAGVINKASGGDVQEESDEYISNNGP  1223
+
+Query  62    FTLGAVQFVNVEN-KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASV  120
+               +G    +        + +++G                +     L +           V
+Sbjct  1224  LHVGDSVLLKGHGLADAILHVVGPD------------ARNNEDAALLKRCYKAFNKHTIV  1271
+
+Query  121   HMPRIGCGLAGG  132
+               P I  G+   
+Sbjct  1272  VTPLISAGIFSV  1283
+
+
+>sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavirus 
+(strain FIPV WSU-79/1146) OX=33734 GN=rep PE=1 SV=2
+Length=6709
+
+ Score = 48.2 bits (113),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 30/158 (19%), Positives = 55/158 (35%), Gaps = 14/158 (9%)
+
+Query  2     AMEILYIKGDATAPIGS-GVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQ  59
+             A ++ + +GD    I      V+ +  N       G   A+         +  +++ KS 
+Sbjct  1339  AGKVSFYQGDLDVLINFLEPDVLVNAANGDLRHVGGVARAIDVFTGGKLTKRSKEYLKSS  1398
+
+Query  60    EEFTLGAVQFV-NVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKA  118
+             +    G      NV   L V N +G        +G     Y A+ +C             
+Sbjct  1399  KAIAPGNAVLFENVLEHLSVLNAVGPRNGDSRVEGKLCNVYKAIAKC-----------DG  1447
+
+Query  119   SVHMPRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+              +  P I  G+   K E+  Q + + +  +++ V VY 
+Sbjct  1448  KILTPLISVGIFKVKLEVSLQCLLKTVTDRDLNVFVYT  1485
+
+
+>sp|D5CE05|YMDB_ENTCC O-acetyl-ADP-ribose deacetylase OS=Enterobacter 
+cloacae subsp. cloacae (strain ATCC 13047 / DSM 30054 
+/ NBRC 13535 / NCDC 279-56) OX=716541 GN=ymdB PE=3 SV=1
+Length=180
+
+ Score = 46.2 bits (108),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 30/132 (23%), Positives = 43/132 (33%), Gaps = 10/132 (8%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEFT  63
+            I  I GD T      V VI +  N     G G   A+ +       EA +   + Q E  
+Sbjct  5    IDVIHGDITTM---HVDVIVNAANPSLMGGGGVDGAIHRAAGPQLLEACKTVRQQQGECP  61
+
+Query  64   LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+             G        +     V + +G      D      I  +A R CL+   L       ++ 
+Sbjct  62   PGHAVITLAGDLPAKAVIHAVGPIWHGGDRHEAS-ILEEAYRNCLR---LAADNGYKTMA  117
+
+Query  122  MPRIGCGLAGGK  133
+             P I  G+ G  
+Sbjct  118  FPAISTGVYGYP  129
+
+
+>sp|Q8CAS9|PARP9_MOUSE Protein mono-ADP-ribosyltransferase PARP9 
+OS=Mus musculus OX=10090 GN=Parp9 PE=1 SV=2
+Length=866
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/141 (18%), Positives = 53/141 (38%), Gaps = 7/141 (5%)
+
+Query  9    KGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWK-MPEEAYRQWYKSQEEFTLGAV  67
+            K D T  +   V  + +  N+    G G   +L K      +E  ++   +  + ++G +
+Sbjct  126  KDDLTRHV---VDAVVNAANENLLHGSGLAGSLVKTGGFEIQEESKRIIANVGKISVGGI  182
+
+Query  68   QF--VNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+                        + + +G      +S+    +   A+R  L  V  + +  K +V +P +
+Sbjct  183  AITGAGRLPCHLIIHAVGPRWTVTNSQTAIELLKFAIRNILDYVTKYDLRIK-TVAIPAL  241
+
+Query  126  GCGLAGGKWELMEQIIKEELI  146
+              G+     +L   II E + 
+Sbjct  242  SSGIFQFPLDLCTSIILETIR  262
+
+
+>sp|Q88SK6|Y3408_LACPL Macro domain-containing protein lp_3408 
+OS=Lactobacillus plantarum (strain ATCC BAA-793 / NCIMB 8826 
+/ WCFS1) OX=220668 GN=lp_3408 PE=4 SV=1
+Length=172
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 26/132 (20%), Positives = 37/132 (28%), Gaps = 12/132 (9%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+            EI  I GD T      V  I +  N     G G   A+ +       A     +      
+Sbjct  3    EIKVIHGDITKMT---VDAIVNAANTSLLGGGGVDGAIHR---AAGPALLAACRPLHGCA  56
+
+Query  64   LGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+             G  +          YV +  G          L  +  ++ R  L    L    H  +V 
+Sbjct  57   TGEAKITPGFRLPAKYVIHTPGPVWQGGQHNELQ-LLANSYRNSL---NLAAENHCQTVA  112
+
+Query  122  MPRIGCGLAGGK  133
+             P I  G+    
+Sbjct  113  FPSISTGVYHFP  124
+
+
+>sp|Q8Y3S3|Y2759_LISMO Macro domain-containing protein lmo2759 
+OS=Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 
+/ EGD-e) OX=169963 GN=lmo2759 PE=4 SV=1
+Length=176
+
+ Score = 45.5 bits (106),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 25/141 (18%), Positives = 43/141 (30%), Gaps = 10/141 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEE  61
+            MEI  +KGD T      V VI +  N     G G   A+ +       +  ++       
+Sbjct  1    MEITIVKGDITEQ---EVDVIVNAANSGLLGGGGVDGAIHQAAGPDLLKECQEVINRIGS  57
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G     +  +    Y+ + +G                    + L    L       S
+Sbjct  58   CPAGEAVITSAGDLKATYIIHAVGP-IWKDGEHQEANKLASCYWKALD---LAAGKDLTS  113
+
+Query  120  VHMPRIGCGLAGGKWELMEQI  140
+            +  P I  G+ G   +L  ++
+Sbjct  114  IAFPNISTGVYGFPKKLAAEV  134
+
+
+>sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU5 OX=694008 GN=1a PE=3 SV=1
+Length=4481
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 22/153 (14%), Positives = 40/153 (26%), Gaps = 16/153 (10%)
+
+Query  5     ILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             +  + GDA A    +   ++ +  N     G G   A+ +      +A    Y +     
+Sbjct  1199  VTLVFGDAIAVARATEDCILVNAANTHLKHGGGIAAAIDRASGGLVQAESDDYVNFYGPL  1258
+
+Query  64    -LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    +          +             P  R +   Q LK        +   V  
+Sbjct  1259  NVGDSTLLKGHG------LAT----GILHVVGPDARANQDIQLLKRCYKAFNKYPLVVS-  1307
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+             P I  G+           ++  L        V 
+Sbjct  1308  PLISAGIFCV---EPRVSLEYLLSVVHTKTYVV  1337
+
+
+>sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU5 OX=694008 GN=rep PE=3 SV=1
+Length=7182
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 22/153 (14%), Positives = 40/153 (26%), Gaps = 16/153 (10%)
+
+Query  5     ILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             +  + GDA A    +   ++ +  N     G G   A+ +      +A    Y +     
+Sbjct  1199  VTLVFGDAIAVARATEDCILVNAANTHLKHGGGIAAAIDRASGGLVQAESDDYVNFYGPL  1258
+
+Query  64    -LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    +          +             P  R +   Q LK        +   V  
+Sbjct  1259  NVGDSTLLKGHG------LAT----GILHVVGPDARANQDIQLLKRCYKAFNKYPLVVS-  1307
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+             P I  G+           ++  L        V 
+Sbjct  1308  PLISAGIFCV---EPRVSLEYLLSVVHTKTYVV  1337
+
+
+>sp|Q922B1|MACD1_MOUSE ADP-ribose glycohydrolase MACROD1 OS=Mus 
+musculus OX=10090 GN=Macrod1 PE=1 SV=2
+Length=323
+
+ Score = 45.8 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 24/140 (17%), Positives = 42/140 (30%), Gaps = 13/140 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I   +GD T      V  I +  N     G G    + +             ++ +    
+Sbjct  152  ISLYRGDITKL---EVDAIVNAANSSLLGGGGVDGCIHRAAGS---LLTDECRTLQNCET  205
+
+Query  65   GAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQC-LKEVALFTIAHKASVH  121
+            G  +          YV + +G   +          +   +R C L  + L       SV 
+Sbjct  206  GKAKITCGYRLPAKYVIHTVGPIAVG----QPTASQAAELRSCYLSSLDLLLEHRLRSVA  261
+
+Query  122  MPRIGCGLAGGKWELMEQII  141
+             P I  G+ G   E   +++
+Sbjct  262  FPCISTGVFGYPNEEAAEVV  281
+
+
+>sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 
+133/2005 OX=389230 GN=1a PE=3 SV=1
+Length=4441
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 19/131 (15%), Positives = 36/131 (27%), Gaps = 13/131 (10%)
+
+Query  4     EILYIKGDATAPIGSGVKV-ITHICNDIGGWGKGFVLALSKKWKM-PEEAYRQWYKSQEE  61
+              +  + GDA        K  + +  N     G G   A++K      +E   ++  +   
+Sbjct  1171  SVTLVLGDAIQIASLLPKCVLVNAANRHLKHGGGIAGAINKASGGDVQEESDEYISNSGP  1230
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G    +       +A+ I +                     L +    T      V 
+Sbjct  1231  LHVGDSVLLKGYG---LADAILRVVGPDARNNEDA--------ALLKRCYKTFNKHTIVV  1279
+
+Query  122   MPRIGCGLAGG  132
+              P I  G+   
+Sbjct  1280  TPLISSGIFSV  1290
+
+
+>sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus 
+133/2005 OX=389230 GN=rep PE=3 SV=1
+Length=7126
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 19/131 (15%), Positives = 36/131 (27%), Gaps = 13/131 (10%)
+
+Query  4     EILYIKGDATAPIGSGVKV-ITHICNDIGGWGKGFVLALSKKWKM-PEEAYRQWYKSQEE  61
+              +  + GDA        K  + +  N     G G   A++K      +E   ++  +   
+Sbjct  1171  SVTLVLGDAIQIASLLPKCVLVNAANRHLKHGGGIAGAINKASGGDVQEESDEYISNSGP  1230
+
+Query  62    FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+               +G    +       +A+ I +                     L +    T      V 
+Sbjct  1231  LHVGDSVLLKGYG---LADAILRVVGPDARNNEDA--------ALLKRCYKTFNKHTIVV  1279
+
+Query  122   MPRIGCGLAGG  132
+              P I  G+   
+Sbjct  1280  TPLISSGIFSV  1290
+
+
+>sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=rep PE=1 SV=1
+Length=6684
+
+ Score = 45.8 bits (107),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 26/140 (19%), Positives = 44/140 (31%), Gaps = 13/140 (9%)
+
+Query  19    GVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEFTLGAVQFV-NVENKL  76
+                VI +  N       G   A+         E  + + K  +    G   F  NV   L
+Sbjct  1346  EPDVIVNAANGDLKHMGGVARAIDVFTGGKLTERSKDYLKKNKSIAPGNAVFFENVIEHL  1405
+
+Query  77    YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWEL  136
+              V N +G        +      Y A+ +C           +  +  P I  G+   + E 
+Sbjct  1406  SVLNAVGPRNGDSRVEAKLCNVYKAIAKC-----------EGKILTPLISVGIFNVRLET  1454
+
+Query  137   MEQIIKEELITKEIAVTVYD  156
+               Q + + +  + + V VY 
+Sbjct  1455  SLQCLLKTVNDRGLNVFVYT  1474
+
+
+>sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=1a PE=1 SV=1
+Length=4017
+
+ Score = 45.8 bits (107),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 26/140 (19%), Positives = 44/140 (31%), Gaps = 13/140 (9%)
+
+Query  19    GVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEFTLGAVQFV-NVENKL  76
+                VI +  N       G   A+         E  + + K  +    G   F  NV   L
+Sbjct  1346  EPDVIVNAANGDLKHMGGVARAIDVFTGGKLTERSKDYLKKNKSIAPGNAVFFENVIEHL  1405
+
+Query  77    YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWEL  136
+              V N +G        +      Y A+ +C           +  +  P I  G+   + E 
+Sbjct  1406  SVLNAVGPRNGDSRVEAKLCNVYKAIAKC-----------EGKILTPLISVGIFNVRLET  1454
+
+Query  137   MEQIIKEELITKEIAVTVYD  156
+               Q + + +  + + V VY 
+Sbjct  1455  SLQCLLKTVNDRGLNVFVYT  1474
+
+
+>sp|Q8P5Z8|Y3184_XANCP Macro domain-containing protein XCC3184 
+OS=Xanthomonas campestris pv. campestris (strain ATCC 33913 
+/ DSM 3586 / NCPPB 528 / LMG 568 / P 25) OX=190485 GN=XCC3184 
+PE=4 SV=1
+Length=179
+
+ Score = 44.7 bits (104),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 26/146 (18%), Positives = 47/146 (32%), Gaps = 18/146 (12%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M I   +GD T      V VI +  N+    G G   A+ +          +  ++  E 
+Sbjct  1    MRIEVWQGDITQL---DVDVIVNAANESLLGGGGVDGAIHR---AAGPRLLEACEALPEV  54
+
+Query  63   TL------GAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTI  114
+                    G ++  +  +    ++ + +G           P    +   Q LK      +
+Sbjct  55   RPGVRCPTGEIRITDGFDLKARHIFHTVGP-VWRDGKHNEPEQLANCYWQSLKLAEQMML  113
+
+Query  115  AHKASVHMPRIGCGLAGGKWELMEQI  140
+                S+  P I CG+ G       +I
+Sbjct  114  H---SIAFPAISCGIYGYPLYQAARI  136
+
+
+>sp|Q9BQ69|MACD1_HUMAN ADP-ribose glycohydrolase MACROD1 OS=Homo 
+sapiens OX=9606 GN=MACROD1 PE=1 SV=2
+Length=325
+
+ Score = 45.1 bits (105),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 26/141 (18%), Positives = 42/141 (30%), Gaps = 15/141 (11%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAY---RQWYKSQEE  61
+            I  ++ D T      V  I +  N     G G    + +             Q  K+ + 
+Sbjct  154  ISLLRSDITKL---EVDAIVNAANSSLLGGGGVDGCIHRAAGPLLTDECRTLQSCKTGKA  210
+
+Query  62   FTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQC-LKEVALFTIAHKASV  120
+               G  +        YV + +G              +   +R C L  + L       SV
+Sbjct  211  KITGGYRL----PAKYVIHTVGPIAYG----EPSASQAAELRSCYLSSLDLLLEHRLRSV  262
+
+Query  121  HMPRIGCGLAGGKWELMEQII  141
+              P I  G+ G   E   +I+
+Sbjct  263  AFPCISTGVFGYPCEAAAEIV  283
+
+
+>sp|Q44020|YGB2_CUPNE Macro domain-containing protein in gbd 3'region 
+OS=Cupriavidus necator OX=106590 PE=4 SV=1
+Length=173
+
+ Score = 44.3 bits (103),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 41/139 (29%), Gaps = 10/139 (7%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            +  + GD T      V  I +  N     G G   A+        +   +  +  +    
+Sbjct  6    LQVVHGDITRM---EVDAIVNAANSGLLGGGGVDGAIHGAGGSAIKEACRAIRDTQGGCP  62
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 +     L   YV + +G        +G   +  +A R  ++  A   +     + 
+Sbjct  63   TGEAVITTGGHLPAPYVIHAVGP-VWQGGDQGEDELLANAYRNSIRLAAQHHLRR---LA  118
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G+     E    I
+Sbjct  119  FPNISTGIYAFPRERAADI  137
+
+
+>sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus 
+NL63 OX=277944 GN=1a PE=1 SV=1
+Length=4060
+
+ Score = 45.5 bits (106),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 25/154 (16%), Positives = 46/154 (30%), Gaps = 15/154 (10%)
+
+Query  5     ILYIKGDATAPIGSGV-KVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             + +  GD +  +       + +  N+    G G   A+        +   + +  S    
+Sbjct  1266  VKFYLGDISHLVNCVSFDFVVNAANENLLHGGGVARAIDILTEGQLQSLSKDYISSNGPL  1325
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +GA   +  E      N+    G                   L E     +       M
+Sbjct  1326  KVGAGVMLECEK----FNVFNVVGPRTGKHE---------HSLLVEAYNSILFENGIPLM  1372
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+             P + CG+ G + E   + +    I K + V VY 
+Sbjct  1373  PLLSCGIFGVRIENSLKALFSCDINKPLQVFVYS  1406
+
+
+>sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavirus 
+NL63 OX=277944 GN=rep PE=1 SV=1
+Length=6729
+
+ Score = 45.5 bits (106),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 25/154 (16%), Positives = 46/154 (30%), Gaps = 15/154 (10%)
+
+Query  5     ILYIKGDATAPIGSGV-KVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             + +  GD +  +       + +  N+    G G   A+        +   + +  S    
+Sbjct  1266  VKFYLGDISHLVNCVSFDFVVNAANENLLHGGGVARAIDILTEGQLQSLSKDYISSNGPL  1325
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +GA   +  E      N+    G                   L E     +       M
+Sbjct  1326  KVGAGVMLECEK----FNVFNVVGPRTGKHE---------HSLLVEAYNSILFENGIPLM  1372
+
+Query  123   PRIGCGLAGGKWELMEQIIKEELITKEIAVTVYD  156
+             P + CG+ G + E   + +    I K + V VY 
+Sbjct  1373  PLLSCGIFGVRIENSLKALFSCDINKPLQVFVYS  1406
+
+
+>sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=1a PE=1 SV=1
+Length=4117
+
+ Score = 45.5 bits (106),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 17/152 (11%), Positives = 42/152 (28%), Gaps = 14/152 (9%)
+
+Query  5     ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEFT  63
+             + + +GD +  +      + +  N+    G G   A+      M ++    + K+     
+Sbjct  1299  VDFYQGDFSDLVKLPCDFVVNAANEKLSHGGGIAKAIDVYTKGMLQKCSNDYIKAHGPIK  1358
+
+Query  64    LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMP  123
+             +G    +       +   +      +  K  P +   A +               ++  P
+Sbjct  1359  VGRGVMLEA-----LGLKVFNVVGPRKGKHAPELLVKAYKSVFA-------NSGVALT-P  1405
+
+Query  124   RIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+              I  G+     E         +  +      Y
+Sbjct  1406  LISVGIFSVPLEESLSAFLACVGDRHCKCFCY  1437
+
+
+>sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=rep PE=1 SV=1
+Length=6781
+
+ Score = 45.5 bits (106),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 17/152 (11%), Positives = 42/152 (28%), Gaps = 14/152 (9%)
+
+Query  5     ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEFT  63
+             + + +GD +  +      + +  N+    G G   A+      M ++    + K+     
+Sbjct  1299  VDFYQGDFSDLVKLPCDFVVNAANEKLSHGGGIAKAIDVYTKGMLQKCSNDYIKAHGPIK  1358
+
+Query  64    LGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMP  123
+             +G    +       +   +      +  K  P +   A +               ++  P
+Sbjct  1359  VGRGVMLEA-----LGLKVFNVVGPRKGKHAPELLVKAYKSVFA-------NSGVALT-P  1405
+
+Query  124   RIGCGLAGGKWELMEQIIKEELITKEIAVTVY  155
+              I  G+     E         +  +      Y
+Sbjct  1406  LISVGIFSVPLEESLSAFLACVGDRHCKCFCY  1437
+
+
+>sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 
+279/2005 OX=389167 GN=1a PE=3 SV=1
+Length=4388
+
+ Score = 44.7 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 21/134 (16%), Positives = 39/134 (29%), Gaps = 17/134 (13%)
+
+Query  1     NAMEILYIKGDATAPIGSG-VKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKS  58
+             + + I  +  D           VI +  N     G G   AL+K      +     + K 
+Sbjct  1012  DNVAIKCV--DIVKEAQHAKPTVIVNAANVHLKHGGGVAGALNKATNGAMQQESDDYIKK  1069
+
+Query  59    QEEFTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQ-CLKEVALFTIAHK  117
+                 T+G               ++  H + K    +     +A     L + A      +
+Sbjct  1070  NGPLTVGGS------------CLLSGHNLAKKCMHVVGPNLNAGEDVQLLKAAYANFNSQ  1117
+
+Query  118   ASVHMPRIGCGLAG  131
+               +  P +  G+ G
+Sbjct  1118  DVLLAPLLSAGIFG  1131
+
+
+>sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus 
+279/2005 OX=389167 GN=rep PE=3 SV=1
+Length=7079
+
+ Score = 44.7 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 21/134 (16%), Positives = 39/134 (29%), Gaps = 17/134 (13%)
+
+Query  1     NAMEILYIKGDATAPIGSG-VKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKS  58
+             + + I  +  D           VI +  N     G G   AL+K      +     + K 
+Sbjct  1012  DNVAIKCV--DIVKEAQHAKPTVIVNAANVHLKHGGGVAGALNKATNGAMQQESDDYIKK  1069
+
+Query  59    QEEFTLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQ-CLKEVALFTIAHK  117
+                 T+G               ++  H + K    +     +A     L + A      +
+Sbjct  1070  NGPLTVGGS------------CLLSGHNLAKKCMHVVGPNLNAGEDVQLLKAAYANFNSQ  1117
+
+Query  118   ASVHMPRIGCGLAG  131
+               +  P +  G+ G
+Sbjct  1118  DVLLAPLLSAGIFG  1131
+
+
+>sp|Q8QZ73|POLN_MAYAB Polyprotein P1234 OS=Mayaro virus (strain 
+Brazil) OX=374990 PE=1 SV=3
+Length=2437
+
+ Score = 44.7 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/138 (18%), Positives = 48/138 (35%), Gaps = 15/138 (11%)
+
+Query  21    KVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQFVNVENKLYVAN  80
+               + +  N  G  G G   A+++KW                  +G  + V  +   Y+ +
+Sbjct  1351  DAVVNAANHRGQVGDGVCRAVARKWPQAFR--------NAATPVGTAKTVKCDE-TYIIH  1401
+
+Query  81    MIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWELMEQI  140
+              +G +               A R    E+   +I+   SV +P +  G+     + + Q 
+Sbjct  1402  AVGPNFNNTSEAEGDRDLAAAYRAVAAEINRLSIS---SVAIPLLSTGIFSAGKDRVHQS  1458
+
+Query  141   IKE---ELITKEIAVTVY  155
+             +      + T E  VT+Y
+Sbjct  1459  LSHLLAAMDTTEARVTIY  1476
+
+
+>sp|A4W960|YMDB_ENT38 O-acetyl-ADP-ribose deacetylase OS=Enterobacter 
+sp. (strain 638) OX=399742 GN=ymdB PE=3 SV=1
+Length=180
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 33/158 (21%), Positives = 49/158 (31%), Gaps = 14/158 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEFT  63
+            I  + GD T      V VI +  N     G G   A+ +       EA +   + Q E  
+Sbjct  5    IEVVVGDITTM---EVDVIVNAANPSLMGGGGVDGAIHRAAGPQLLEACKTVRQQQGECA  61
+
+Query  64   LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+             G        +     V + +G                DA   CL+   L       ++ 
+Sbjct  62   PGHAVITIAGDLPAKAVIHAVGP-VWQGGENHEARTLQDAYLNCLR---LAAANGYKTLA  117
+
+Query  122  MPRIGCGLAGGKW----ELMEQIIKEELITKEIAVTVY  155
+             P I  G+ G       E+    + E L  K +   VY
+Sbjct  118  FPAISTGVYGYPKAAAAEIAVDTVSEFLTRKPLPERVY  155
+
+
+>sp|Q93SX7|Y189_ACISE Macro domain-containing protein OS=Acinetobacter 
+sp. (strain ED45-25) OX=194927 PE=4 SV=1
+Length=183
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/132 (19%), Positives = 39/132 (30%), Gaps = 10/132 (8%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            +  I+ D TA     V  I +  N     G G    + KK     +        ++    
+Sbjct  4    VHLIQADITAFA---VHAIVNSANKSLLGGGGLDYVIHKKAGPLMKEECVRLNQEKGGCP  60
+
+Query  65   GAVQFVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+                 V     L   Y+ + +G           P +  DA    L +       H  +V 
+Sbjct  61   TGQAEVTTAGNLPAKYLIHAVGPR-WLDGEHNEPQLLCDAYSNALFKANEI---HALTVS  116
+
+Query  122  MPRIGCGLAGGK  133
+             P I  G+ G  
+Sbjct  117  FPCISTGVYGFP  128
+
+
+>sp|Q8IXQ6|PARP9_HUMAN Protein mono-ADP-ribosyltransferase PARP9 
+OS=Homo sapiens OX=9606 GN=PARP9 PE=1 SV=2
+Length=854
+
+ Score = 44.3 bits (103),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 22/128 (17%), Positives = 44/128 (34%), Gaps = 7/128 (5%)
+
+Query  9    KGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWK-MPEEAYRQWYKSQEEFTLGAV  67
+            K D T      V  + +  N+    G G  LAL K      +E  +Q+     + + G +
+Sbjct  124  KDDLTTHA---VDAVVNAANEDLLHGGGLALALVKAGGFEIQEESKQFVARYGKVSAGEI  180
+
+Query  68   QF--VNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+                        + + +G   +  D +G       A+   +    ++   H  +V +P +
+Sbjct  181  AVTGAGRLPCKQIIHAVGPRWMEWDKQGCTGKLQRAIVS-ILNYVIYKNTHIKTVAIPAL  239
+
+Query  126  GCGLAGGK  133
+              G+    
+Sbjct  240  SSGIFQFP  247
+
+
+>sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=rep PE=1 SV=1
+Length=6631
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/136 (13%), Positives = 41/136 (30%), Gaps = 10/136 (7%)
+
+Query  22    VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQFVNVENKLYVANM  81
+              I +  N+    G G   A++         + ++     +      + V       +  +
+Sbjct  1040  CIVNAANEHMSHGGGVAKAIADFCG---PDFVEYCADYVKKHGPQQKLVTPSFVKGIQCV  1096
+
+Query  82    IGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWELMEQII  141
+                 G       L      A +  L       +    +  +P +  G+ G  +++    +
+Sbjct  1097  NNVVGPRHGDSNLREKLVAAYKSVL-------VGGVVNYVVPVLSSGIFGVDFKISIDAM  1149
+
+Query  142   KEELITKEIAVTVYDL  157
+             +E      I V ++ L
+Sbjct  1150  REAFKGCAIRVLLFSL  1165
+
+
+>sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=1a PE=1 SV=1
+Length=3953
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/136 (13%), Positives = 41/136 (30%), Gaps = 10/136 (7%)
+
+Query  22    VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTLGAVQFVNVENKLYVANM  81
+              I +  N+    G G   A++         + ++     +      + V       +  +
+Sbjct  1040  CIVNAANEHMSHGGGVAKAIADFCG---PDFVEYCADYVKKHGPQQKLVTPSFVKGIQCV  1096
+
+Query  82    IGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRIGCGLAGGKWELMEQII  141
+                 G       L      A +  L       +    +  +P +  G+ G  +++    +
+Sbjct  1097  NNVVGPRHGDSNLREKLVAAYKSVL-------VGGVVNYVVPVLSSGIFGVDFKISIDAM  1149
+
+Query  142   KEELITKEIAVTVYDL  157
+             +E      I V ++ L
+Sbjct  1150  REAFKGCAIRVLLFSL  1165
+
+
+>sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=rep 
+PE=3 SV=1
+Length=6629
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/153 (14%), Positives = 48/153 (31%), Gaps = 15/153 (10%)
+
+Query  10    GDATAPIGSGVK-----VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+             GD T  I   +       I +  N+    G G   A++    +    + ++ +   +   
+Sbjct  1021  GDLTVVIAKALDEFKEFCIVNAANEHMTHGSGVAKAIADFCGL---DFVEYCEDYVKKHG  1077
+
+Query  65    GAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                + V       +  +    G       L      A +  L +          +  +P 
+Sbjct  1078  PQQRLVTPSFVKGIQCVNNVVGPRHGDNNLHEKLVAAYKNVLVD-------GVVNYVVPV  1130
+
+Query  125   IGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             +  G+ G  +++    ++E      I V ++ L
+Sbjct  1131  LSLGIFGVDFKMSIDAMREAFEGCTIRVLLFSL  1163
+
+
+>sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=rep PE=1 
+SV=1
+Length=6629
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/153 (14%), Positives = 48/153 (31%), Gaps = 15/153 (10%)
+
+Query  10    GDATAPIGSGVK-----VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+             GD T  I   +       I +  N+    G G   A++    +    + ++ +   +   
+Sbjct  1021  GDLTVVIAKALDEFKEFCIVNAANEHMTHGSGVAKAIADFCGL---DFVEYCEDYVKKHG  1077
+
+Query  65    GAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                + V       +  +    G       L      A +  L +          +  +P 
+Sbjct  1078  PQQRLVTPSFVKGIQCVNNVVGPRHGDNNLHEKLVAAYKNVLVD-------GVVNYVVPV  1130
+
+Query  125   IGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             +  G+ G  +++    ++E      I V ++ L
+Sbjct  1131  LSLGIFGVDFKMSIDAMREAFEGCTIRVLLFSL  1163
+
+
+>sp|Q87JZ5|Y4103_VIBPA Macro domain-containing protein VPA0103 
+OS=Vibrio parahaemolyticus serotype O3:K6 (strain RIMD 2210633) 
+OX=223926 GN=VPA0103 PE=4 SV=1
+Length=170
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 30/162 (19%), Positives = 52/162 (32%), Gaps = 17/162 (10%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEA-YRQWYKSQEE  61
+             I  ++GD T    + V  I +  N     G G   A+ +        A Y         
+Sbjct  3    AISLVQGDITT---AHVDAIVNAANPRMLGGGGVDGAIHRAAGPALINACYAVDDVDGIR  59
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G  +     N    YV + +G    Y        +   A ++ L    L    H  S
+Sbjct  60   CPFGDARITEAGNLNARYVIHAVGPI--YDKFADPKTVLESAYQRSLD---LALANHCQS  114
+
+Query  120  VHMPRIGCGLAGGKWELMEQII-----KEELITKEIAVTVYD  156
+            V +P I CG+ G   +   ++      + E    ++   ++ 
+Sbjct  115  VALPAISCGVYGYPPQEAAEVAMAVCQRPEYAALDMRFYLFS  156
+
+
+>sp|Q71W03|Y2748_LISMF Macro domain-containing protein LMOf2365_2748 
+OS=Listeria monocytogenes serotype 4b (strain F2365) 
+OX=265669 GN=LMOf2365_2748 PE=4 SV=1
+Length=176
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 25/141 (18%), Positives = 44/141 (31%), Gaps = 10/141 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEE  61
+            MEI  +KGD T      V VI +  N     G G   A+ +       +  ++       
+Sbjct  1    MEITVVKGDITEQ---DVDVIVNAANPGLLGGGGVDGAIHQAAGPDLLKECQEVINRIGT  57
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G     +  +    Y+ + +G                    + L   A   +    S
+Sbjct  58   CPAGEAVITSAGDLQASYIIHAVGP-IWKDGEHQEANKLASCYWKALDLAAGKEL---TS  113
+
+Query  120  VHMPRIGCGLAGGKWELMEQI  140
+            +  P I  G+ G   +L  ++
+Sbjct  114  IAFPNISTGVYGFPKKLAAEV  134
+
+
+>sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=1a PE=3 
+SV=1
+Length=3951
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/153 (14%), Positives = 48/153 (31%), Gaps = 15/153 (10%)
+
+Query  10    GDATAPIGSGVK-----VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+             GD T  I   +       I +  N+    G G   A++    +    + ++ +   +   
+Sbjct  1021  GDLTVVIAKALDEFKEFCIVNAANEHMTHGSGVAKAIADFCGL---DFVEYCEDYVKKHG  1077
+
+Query  65    GAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                + V       +  +    G       L      A +  L +          +  +P 
+Sbjct  1078  PQQRLVTPSFVKGIQCVNNVVGPRHGDNNLHEKLVAAYKNVLVD-------GVVNYVVPV  1130
+
+Query  125   IGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             +  G+ G  +++    ++E      I V ++ L
+Sbjct  1131  LSLGIFGVDFKMSIDAMREAFEGCTIRVLLFSL  1163
+
+
+>sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=1a PE=1 SV=1
+Length=3951
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/153 (14%), Positives = 48/153 (31%), Gaps = 15/153 (10%)
+
+Query  10    GDATAPIGSGVK-----VITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+             GD T  I   +       I +  N+    G G   A++    +    + ++ +   +   
+Sbjct  1021  GDLTVVIAKALDEFKEFCIVNAANEHMTHGSGVAKAIADFCGL---DFVEYCEDYVKKHG  1077
+
+Query  65    GAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPR  124
+                + V       +  +    G       L      A +  L +          +  +P 
+Sbjct  1078  PQQRLVTPSFVKGIQCVNNVVGPRHGDNNLHEKLVAAYKNVLVD-------GVVNYVVPV  1130
+
+Query  125   IGCGLAGGKWELMEQIIKEELITKEIAVTVYDL  157
+             +  G+ G  +++    ++E      I V ++ L
+Sbjct  1131  LSLGIFGVDFKMSIDAMREAFEGCTIRVLLFSL  1163
+
+
+>sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU3 OX=442736 GN=1a PE=3 SV=1
+Length=4376
+
+ Score = 43.9 bits (102),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/135 (16%), Positives = 40/135 (30%), Gaps = 19/135 (14%)
+
+Query  1     NAMEILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKS  58
+             + + I  I  D       +   VI +  N     G G   AL+K      +    ++ + 
+Sbjct  1009  DNVAIKCI--DIVKEAQSAKPTVIVNAANTHLKHGGGVAGALNKATNGAMQNESDEYIRQ  1066
+
+Query  59    QEEFTLGAVQFVNVENKLYVANMIGQHGIYKD--SKGLPPIRYDAVRQCLKEVALFTIAH  116
+                 T+G               ++  H + +       P +      Q LK       + 
+Sbjct  1067  NGPLTVGGS------------CLLSGHNLAEKCLHVVGPNLNAGEDVQLLKRAYENFNSQ  1114
+
+Query  117   KASVHMPRIGCGLAG  131
+                +  P +  G+ G
+Sbjct  1115  DVLLA-PLLSAGIFG  1128
+
+
+>sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU3 OX=442736 GN=rep PE=3 SV=1
+Length=7067
+
+ Score = 43.9 bits (102),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/135 (16%), Positives = 40/135 (30%), Gaps = 19/135 (14%)
+
+Query  1     NAMEILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYR-QWYKS  58
+             + + I  I  D       +   VI +  N     G G   AL+K      +    ++ + 
+Sbjct  1009  DNVAIKCI--DIVKEAQSAKPTVIVNAANTHLKHGGGVAGALNKATNGAMQNESDEYIRQ  1066
+
+Query  59    QEEFTLGAVQFVNVENKLYVANMIGQHGIYKD--SKGLPPIRYDAVRQCLKEVALFTIAH  116
+                 T+G               ++  H + +       P +      Q LK       + 
+Sbjct  1067  NGPLTVGGS------------CLLSGHNLAEKCLHVVGPNLNAGEDVQLLKRAYENFNSQ  1114
+
+Query  117   KASVHMPRIGCGLAG  131
+                +  P +  G+ G
+Sbjct  1115  DVLLA-PLLSAGIFG  1128
+
+
+>sp|Q8K4G6|MACD1_RAT ADP-ribose glycohydrolase MACROD1 (Fragment) 
+OS=Rattus norvegicus OX=10116 GN=Macrod1 PE=2 SV=2
+Length=258
+
+ Score = 43.1 bits (100),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/140 (16%), Positives = 43/140 (31%), Gaps = 13/140 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I   +GD T      V  I +  N+    G G    + +             ++ +    
+Sbjct  87   ISLFRGDITKL---EVDAIVNAANNSLLGGGGVDGCIHRAAGS---LLTDECRTLQNCET  140
+
+Query  65   GAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQC-LKEVALFTIAHKASVH  121
+            G  +          +V + +G   +          +   +R C L  + L       SV 
+Sbjct  141  GKAKITCGYRLPAKHVIHTVGPIAVG----QPTASQAAELRSCYLSSLDLLLEHRLRSVA  196
+
+Query  122  MPRIGCGLAGGKWELMEQII  141
+             P I  G+ G   E   +++
+Sbjct  197  FPCISTGVFGYPNEEAAEVV  216
+
+
+>sp|Q8PHB6|Y3343_XANAC Macro domain-containing protein XAC3343 
+OS=Xanthomonas axonopodis pv. citri (strain 306) OX=190486 
+GN=XAC3343 PE=4 SV=2
+Length=179
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/146 (17%), Positives = 47/146 (32%), Gaps = 18/146 (12%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M I   +GD T      V VI +  N+    G G   A+ +          +  ++  + 
+Sbjct  1    MRIEVWQGDITEL---DVDVIVNAANESLLGGGGVDGAIHR---AAGPRLLEACEALPQV  54
+
+Query  63   TL------GAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTI  114
+                    G ++  +  +    ++ + +G           P    +   Q LK      +
+Sbjct  55   RPGVRCPTGEIRITDGFDLKARHIFHTVGP-VWRDGRHNEPEQLANCYWQSLKLAEQMML  113
+
+Query  115  AHKASVHMPRIGCGLAGGKWELMEQI  140
+                S+  P I CG+ G       +I
+Sbjct  114  H---SIAFPAISCGIYGYPLHQAARI  136
+
+
+>sp|Q926Y8|Y2902_LISIN Macro domain-containing protein lin2902 
+OS=Listeria innocua serovar 6a (strain ATCC BAA-680 / CLIP 
+11262) OX=272626 GN=lin2902 PE=4 SV=1
+Length=176
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/141 (16%), Positives = 43/141 (30%), Gaps = 10/141 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKK-WKMPEEAYRQWYKSQEE  61
+            M+I  +KGD T      V VI +  N     G G   A+ +       +  ++       
+Sbjct  1    MDITVVKGDITEQ---NVDVIVNAANPGLLGGGGVDGAIHQAAGPDLLKECQEVINRIGS  57
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G     +  +    ++ + +G                    + L    L       S
+Sbjct  58   CPAGEAVITSAGDLKAHFIIHAVGP-IWKDGEHQEANKLASCYWKALD---LAAGKDLTS  113
+
+Query  120  VHMPRIGCGLAGGKWELMEQI  140
+            +  P I  G+ G   +L  ++
+Sbjct  114  IAFPNISTGVYGFPKKLAAEV  134
+
+
+>sp|P0A8D6|YMDB_ECOLI O-acetyl-ADP-ribose deacetylase OS=Escherichia 
+coli (strain K12) OX=83333 GN=ymdB PE=1 SV=1
+Length=177
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 43/134 (32%), Gaps = 10/134 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEE  61
+              I  ++GD T      V VI +  N     G G   A+ +       +A  +  + Q +
+Sbjct  3    TRIHVVQGDITKLA---VDVIVNAANPSLMGGGGVDGAIHRAAGPALLDACLKVRQQQGD  59
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G        +     V + +G        +    +  DA    L+ VA        S
+Sbjct  60   CPTGHAVITLAGDLPAKAVVHTVGP-VWRGGEQNEDQLLQDAYLNSLRLVAA---NSYTS  115
+
+Query  120  VHMPRIGCGLAGGK  133
+            V  P I  G+ G  
+Sbjct  116  VAFPAISTGVYGYP  129
+
+
+>sp|P0A8D7|YMDB_ECOL6 O-acetyl-ADP-ribose deacetylase OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=ymdB PE=3 SV=1
+Length=177
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 43/134 (32%), Gaps = 10/134 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEE  61
+              I  ++GD T      V VI +  N     G G   A+ +       +A  +  + Q +
+Sbjct  3    TRIHVVQGDITKLA---VDVIVNAANPSLMGGGGVDGAIHRAAGPALLDACLKVRQQQGD  59
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G        +     V + +G        +    +  DA    L+ VA        S
+Sbjct  60   CPTGHAVITLAGDLPAKAVVHTVGP-VWRGGEQNEDQLLQDAYLNSLRLVAA---NSYTS  115
+
+Query  120  VHMPRIGCGLAGGK  133
+            V  P I  G+ G  
+Sbjct  116  VAFPAISTGVYGYP  129
+
+
+>sp|P0A8D8|YMDB_ECO57 O-acetyl-ADP-ribose deacetylase OS=Escherichia 
+coli O157:H7 OX=83334 GN=ymdB PE=3 SV=1
+Length=177
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 43/134 (32%), Gaps = 10/134 (7%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEE  61
+              I  ++GD T      V VI +  N     G G   A+ +       +A  +  + Q +
+Sbjct  3    TRIHVVQGDITKLA---VDVIVNAANPSLMGGGGVDGAIHRAAGPALLDACLKVRQQQGD  59
+
+Query  62   FTLGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G        +     V + +G        +    +  DA    L+ VA        S
+Sbjct  60   CPTGHAVITLAGDLPAKAVVHTVGP-VWRGGEQNEDQLLQDAYLNSLRLVAA---NSYTS  115
+
+Query  120  VHMPRIGCGLAGGK  133
+            V  P I  G+ G  
+Sbjct  116  VAFPAISTGVYGYP  129
+
+
+>sp|Q9RS39|Y2288_DEIRA Macro domain-containing protein DR_2288 
+OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / 
+JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422) 
+OX=243230 GN=DR_2288 PE=4 SV=1
+Length=170
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/136 (17%), Positives = 37/136 (27%), Gaps = 15/136 (11%)
+
+Query  3    MEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEF  62
+            M +  ++GD        V  +    N     G G    + +          Q  +     
+Sbjct  1    MPLELVQGDIAHQP---VDAVVTAANKQLMGGGGVDGVIHR---AAGPRLLQAIRPIGGT  54
+
+Query  63   TLGAVQFVN-----VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHK  117
+              G            +   YV + +G         G   +   A R+ L+   L      
+Sbjct  55   PTGTAVITPAFDLERQGVKYVIHAVGP-IWRGGQHGEAELLAGAYRESLR---LGVENGC  110
+
+Query  118  ASVHMPRIGCGLAGGK  133
+             SV  P I  G+ G  
+Sbjct  111  RSVAFPSISTGVYGYP  126
+
+
+>sp|D2TT52|YMDB_CITRI O-acetyl-ADP-ribose deacetylase OS=Citrobacter 
+rodentium (strain ICC168) OX=637910 GN=ymdB PE=3 SV=2
+Length=177
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 24/133 (18%), Positives = 36/133 (27%), Gaps = 10/133 (8%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEF  62
+             I  I GD T      V  I +  N     G G   A+ +       EA     + Q E 
+Sbjct  4    RIHVIHGDITTVA---VDAIVNAANPSLMGGGGVDGAIHRAAGPELLEACMTVRRQQGEC  60
+
+Query  63   TLGAVQFVN--VENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASV  120
+              G              V + +G      +      +    +      + L       S+
+Sbjct  61   PPGHAVITAAGRLPAKAVIHTVGPIWRGGEHNEAQLLHDAYLNS----LNLALANGYQSI  116
+
+Query  121  HMPRIGCGLAGGK  133
+              P I  G+ G  
+Sbjct  117  AFPAISTGVYGYP  129
+
+
+>sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=1a PE=3 SV=1
+Length=4380
+
+ Score = 42.8 bits (99),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 21/135 (16%), Positives = 37/135 (27%), Gaps = 19/135 (14%)
+
+Query  1     NAMEILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQ  59
+             + + I  +  D       +   VI +  N     G G   AL+K      +     Y   
+Sbjct  1012  DNVAIKCV--DIVEEAQNANPMVIVNAANIHLKHGGGVAGALNKATNGAMQKESDHYIKL  1069
+
+Query  60    EEFT-LGAVQFVNVENKLYVANMIGQHGIYKD--SKGLPPIRYDAVRQCLKEVALFTIAH  116
+                  +G               ++  H + K       P +      Q LK       + 
+Sbjct  1070  NGPLTVGGS------------CLLSGHNLAKKCLHVVGPNLNAGEDIQLLKAAYENFNSQ  1117
+
+Query  117   KASVHMPRIGCGLAG  131
+                +  P +  G+ G
+Sbjct  1118  DILLA-PLLSAGIFG  1131
+
+
+>sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=rep PE=3 SV=1
+Length=7071
+
+ Score = 42.8 bits (99),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 21/135 (16%), Positives = 37/135 (27%), Gaps = 19/135 (14%)
+
+Query  1     NAMEILYIKGDATAPI-GSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQ  59
+             + + I  +  D       +   VI +  N     G G   AL+K      +     Y   
+Sbjct  1012  DNVAIKCV--DIVEEAQNANPMVIVNAANIHLKHGGGVAGALNKATNGAMQKESDHYIKL  1069
+
+Query  60    EEFT-LGAVQFVNVENKLYVANMIGQHGIYKD--SKGLPPIRYDAVRQCLKEVALFTIAH  116
+                  +G               ++  H + K       P +      Q LK       + 
+Sbjct  1070  NGPLTVGGS------------CLLSGHNLAKKCLHVVGPNLNAGEDIQLLKAAYENFNSQ  1117
+
+Query  117   KASVHMPRIGCGLAG  131
+                +  P +  G+ G
+Sbjct  1118  DILLA-PLLSAGIFG  1131
+
+
+>sp|Q2KHU5|MACD1_BOVIN ADP-ribose glycohydrolase MACROD1 OS=Bos 
+taurus OX=9913 GN=MACROD1 PE=2 SV=1
+Length=325
+
+ Score = 42.0 bits (97),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 23/140 (16%), Positives = 40/140 (29%), Gaps = 13/140 (9%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            I   +GD T      V  I +  N     G G    + +             ++ +    
+Sbjct  154  ISLFRGDITKL---EVDAIVNAANSSLLGGGGVDGCIHR---AAGPLLTDECRTLQNCET  207
+
+Query  65   GAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQC-LKEVALFTIAHKASVH  121
+            G  +          YV + +G              +   +R C L  + L       S  
+Sbjct  208  GKAKITCGYRLPAKYVIHTVGPIAHG----EPSASQAAELRSCYLSSLDLLLEHRLRSAA  263
+
+Query  122  MPRIGCGLAGGKWELMEQII  141
+             P I  G+ G   E   +++
+Sbjct  264  FPCISTGVFGYPNEAAAEVV  283
+
+
+>sp|Q8Y2K1|Y334_RALSO Macro domain-containing protein RSc0334 
+OS=Ralstonia solanacearum (strain GMI1000) OX=267608 GN=RSc0334 
+PE=4 SV=1
+Length=171
+
+ Score = 41.2 bits (95),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 16/134 (12%), Positives = 36/134 (27%), Gaps = 12/134 (9%)
+
+Query  2    AMEILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEE  61
+             + +  ++ D T         I +  N     G G   A+ +          +  ++   
+Sbjct  5    TVTLRALRADITTLA---CDAIVNAANSALLGGGGVDGAIHR---AAGPELLEACRALHG  58
+
+Query  62   FTLGAVQFVNVE--NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKAS  119
+               G  +          Y+ + +G        +    +     R  L       +    +
+Sbjct  59   CRTGQAKITPGFLLPARYIIHTVGP-IWRGGRQDEAALLAACYRNSLALAKQHDVR---T  114
+
+Query  120  VHMPRIGCGLAGGK  133
+            +  P I  G+ G  
+Sbjct  115  IAFPCISTGVYGFP  128
+
+
+>sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=1a PE=1 SV=1
+Length=4391
+
+ Score = 41.6 bits (96),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/130 (14%), Positives = 41/130 (32%), Gaps = 13/130 (10%)
+
+Query  5     ILYIKGDATAPIG-SGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             +  + GDA       G  V+ +  N     G G   A++       ++   ++  ++   
+Sbjct  1123  VTIVLGDAIQVAKCYGESVLVNAANTHLKHGGGIAGAINAASKGAVQKESDEYILAKGPL  1182
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    +         + + ++ +       P  R       L +      A+   V  
+Sbjct  1183  QVGDSVLLQ-------GHSLAKNIL---HVVGPDARAKQDVSLLSKCYKAMNAYPLVVT-  1231
+
+Query  123   PRIGCGLAGG  132
+             P +  G+ G 
+Sbjct  1232  PLVSAGIFGV  1241
+
+
+>sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East 
+respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=rep PE=1 SV=1
+Length=7078
+
+ Score = 41.6 bits (96),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/130 (14%), Positives = 41/130 (32%), Gaps = 13/130 (10%)
+
+Query  5     ILYIKGDATAPIG-SGVKVITHICNDIGGWGKGFVLALSKKW-KMPEEAYRQWYKSQEEF  62
+             +  + GDA       G  V+ +  N     G G   A++       ++   ++  ++   
+Sbjct  1123  VTIVLGDAIQVAKCYGESVLVNAANTHLKHGGGIAGAINAASKGAVQKESDEYILAKGPL  1182
+
+Query  63    TLGAVQFVNVENKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              +G    +         + + ++ +       P  R       L +      A+   V  
+Sbjct  1183  QVGDSVLLQ-------GHSLAKNIL---HVVGPDARAKQDVSLLSKCYKAMNAYPLVVT-  1231
+
+Query  123   PRIGCGLAGG  132
+             P +  G+ G 
+Sbjct  1232  PLVSAGIFGV  1241
+
+
+>sp|A8AI35|YMDB_CITK8 O-acetyl-ADP-ribose deacetylase OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) 
+OX=290338 GN=ymdB PE=3 SV=1
+Length=177
+
+ Score = 40.1 bits (92),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 26/128 (20%), Positives = 38/128 (30%), Gaps = 12/128 (9%)
+
+Query  10   GDATAPIGSGVKVITHICNDIGGWGKGFVLALSK-KWKMPEEAYRQWYKSQEEFTLGAVQ  68
+            GD T      V VI +  N     G G   A+ +       EA ++  + Q E   G   
+Sbjct  10   GDITQLT---VDVIVNAANASLLGGGGVDGAIHRAAGPTLLEACKKVRQQQGECPAGHA-  65
+
+Query  69   FVNVENKL---YVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHMPRI  125
+             + +   L    V + +G      D      +           + L       SV  P I
+Sbjct  66   VITLAGNLPAKAVIHTVGPVWRGGDHNESQLLEDAYFNS----LQLVLANGYRSVAFPAI  121
+
+Query  126  GCGLAGGK  133
+              G  G  
+Sbjct  122  STGAYGYP  129
+
+
+>sp|Q7TZB9|Y1934_MYCBO Uncharacterized protein Mb1934c OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=lppD PE=4 SV=1
+Length=358
+
+ Score = 40.1 bits (92),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 43/139 (31%), Gaps = 12/139 (9%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+            E+   + D T      +  IT+  N       G   A+++      E  R+  +      
+Sbjct  190  ELEVHQADVTKL---ELDAITNAANTRLRHAGGVAAAIARAGG--PELQRESTEKAPIGL  244
+
+Query  64   LGAVQFVNVE-NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              AV+    +    YV +          S     I   A    L++          S+ +
+Sbjct  245  GEAVETTAGDMPARYVIHAATMELGGPTSG---EIITAATAATLRKADEL---GCRSLAL  298
+
+Query  123  PRIGCGLAGGKWELMEQII  141
+               G G+ G   +   +++
+Sbjct  299  VAFGTGVGGFPLDDAARLM  317
+
+
+>sp|P9WK29|Y1899_MYCTU Uncharacterized protein Rv1899c OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=Rv1899c PE=1 SV=1
+Length=359
+
+ Score = 40.1 bits (92),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 43/139 (31%), Gaps = 12/139 (9%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+            E+   + D T      +  IT+  N       G   A+++      E  R+  +      
+Sbjct  191  ELEVHQADVTKL---ELDAITNAANTRLRHAGGVAAAIARAGG--PELQRESTEKAPIGL  245
+
+Query  64   LGAVQFVNVE-NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              AV+    +    YV +          S     I   A    L++          S+ +
+Sbjct  246  GEAVETTAGDMPARYVIHAATMELGGPTSG---EIITAATAATLRKADEL---GCRSLAL  299
+
+Query  123  PRIGCGLAGGKWELMEQII  141
+               G G+ G   +   +++
+Sbjct  300  VAFGTGVGGFPLDDAARLM  318
+
+
+>sp|P9WK28|Y1899_MYCTO Uncharacterized protein MT1950 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1950 
+PE=4 SV=1
+Length=374
+
+ Score = 40.1 bits (92),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 43/139 (31%), Gaps = 12/139 (9%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+            E+   + D T      +  IT+  N       G   A+++      E  R+  +      
+Sbjct  206  ELEVHQADVTKL---ELDAITNAANTRLRHAGGVAAAIARAGG--PELQRESTEKAPIGL  260
+
+Query  64   LGAVQFVNVE-NKLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+              AV+    +    YV +          S     I   A    L++          S+ +
+Sbjct  261  GEAVETTAGDMPARYVIHAATMELGGPTSG---EIITAATAATLRKADEL---GCRSLAL  314
+
+Query  123  PRIGCGLAGGKWELMEQII  141
+               G G+ G   +   +++
+Sbjct  315  VAFGTGVGGFPLDDAARLM  333
+
+
+>sp|Q6PAV8|MACD2_XENLA ADP-ribose glycohydrolase MACROD2 OS=Xenopus 
+laevis OX=8355 GN=macrod2 PE=2 SV=1
+Length=418
+
+ Score = 39.7 bits (91),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 21/159 (13%), Positives = 43/159 (27%), Gaps = 19/159 (12%)
+
+Query  5    ILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFTL  64
+            + + KGD T      V  I +  N     G G    + +       +     +       
+Sbjct  70   VSFYKGDITQL---EVDAIVNAANTSLLGGGGVDGCIHRASG---PSLLAECRELGGCET  123
+
+Query  65   GAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVHM  122
+            G  +          YV + +G                 +       + L T     ++  
+Sbjct  124  GQAKITCGYELPAKYVIHTVGPIA-RGHITPNHKQDLASCYNS--SLTLATENDIRTIAF  180
+
+Query  123  PRIGCGLAGGKWE--------LMEQIIKEELITKEIAVT  153
+            P I  G+ G   E         +++ +K+     +  + 
+Sbjct  181  PCISTGIYGYPNEPAANVALTTVKEFLKKNRDKIDRVIF  219
+
+
+>sp|Q985D2|Y7730_RHILO Macro domain-containing protein mll7730 
+OS=Mesorhizobium japonicum (strain LMG 29417 / CECT 9101 / 
+MAFF 303099) OX=266835 GN=mll7730 PE=4 SV=1
+Length=176
+
+ Score = 38.5 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 37/139 (27%), Gaps = 12/139 (9%)
+
+Query  4    EILYIKGDATAPIGSGVKVITHICNDIGGWGKGFVLALSKKWKMPEEAYRQWYKSQEEFT  63
+             I    GD T      V  I +  N +   G G   A+ +      E      +      
+Sbjct  7    RIRIHTGDITKL---DVDAIVNAANTLLLGGGGVDGAIHRAAGRELEVE---CRMLNGCK  60
+
+Query  64   LGAVQFVNVEN--KLYVANMIGQHGIYKDSKGLPPIRYDAVRQCLKEVALFTIAHKASVH  121
+            +G  +          ++ + +G             +     R  L+   L       SV 
+Sbjct  61   VGDAKITKGYKLPARHIIHTVGPVWQGGGKGEA-ELLASCYRSSLE---LAAANDCRSVA  116
+
+Query  122  MPRIGCGLAGGKWELMEQI  140
+             P I  G+     +    I
+Sbjct  117  FPAISTGVYRYPKDEATGI  135
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6957324290
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

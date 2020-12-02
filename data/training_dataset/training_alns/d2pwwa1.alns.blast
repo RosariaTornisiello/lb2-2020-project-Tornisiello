@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2pwwa1
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O34743|YLBA_BACSU Uncharacterized protein YlbA OS=Bacillus sub...  104     3e-29
+sp|O05246|YUGN_BACSU Uncharacterized protein YugN OS=Bacillus sub...  49.3    2e-07
+
+
+>sp|O34743|YLBA_BACSU Uncharacterized protein YlbA OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ylbA PE=4 SV=1
+Length=120
+
+ Score = 104 bits (260),  Expect = 3e-29, Method: Compositional matrix adjust.
+ Identities = 50/115 (43%), Positives = 71/115 (62%), Gaps = 1/115 (1%)
+
+Query  1    LKFPDTGLEEKEVAFSIVNHAAKSLGFIHVDQWDYERVMFDYKIVHHEGTFYLRVPAYAV  60
+            LKF ++GLE  +   S ++   +S G I   QWDYERV +D K    EGTFYLR+   A 
+Sbjct  2    LKFTESGLEGVKAELSWLDDLMESKGLIRAGQWDYERVTYDKKFSTIEGTFYLRIQGIAA  61
+
+Query  61   KGEIPRPSTIVQIMTPILGKYYYPHGVEY-EGETFPQAVIDKCNNKLALLAKTIK  114
+            +G++     ++Q+M+P+LGK+YYPHGVEY E E FP  V+ K    +  +A  +K
+Sbjct  62   EGDVGSGRAVIQLMSPLLGKHYYPHGVEYGETEEFPVQVVTKSKALIQDIANMLK  116
+
+
+>sp|O05246|YUGN_BACSU Uncharacterized protein YugN OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yugN PE=4 SV=1
+Length=134
+
+ Score = 49.3 bits (116),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 24/78 (31%), Positives = 39/78 (50%), Gaps = 0/78 (0%)
+
+Query  18  VNHAAKSLGFIHVDQWDYERVMFDYKIVHHEGTFYLRVPAYAVKGEIPRPSTIVQIMTPI  77
+           +    K LG++    W+Y+   FDYKI   +G  +LR+P  AV+G +      V+I TP 
+Sbjct  18  LEQVMKPLGYVINGGWEYDHGYFDYKIDDRDGYLFLRIPVNAVQGSLDERGAAVRIGTPF  77
+
+Query  78  LGKYYYPHGVEYEGETFP  95
+           + +  +   V+   E  P
+Sbjct  78  MLRQVFQADVDDHAEGGP  95
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.140    0.427    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 2
+
+
+Query= d2pwwa1
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34743|YLBA_BACSU Uncharacterized protein YlbA OS=Bacillus sub...  167     9e-54
+sp|O05246|YUGN_BACSU Uncharacterized protein YugN OS=Bacillus sub...  124     9e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O34743|YLBA_BACSU Uncharacterized protein YlbA OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ylbA PE=4 SV=1
+Length=120
+
+ Score = 167 bits (422),  Expect = 9e-54, Method: Composition-based stats.
+ Identities = 50/115 (43%), Positives = 71/115 (62%), Gaps = 1/115 (1%)
+
+Query  1    LKFPDTGLEEKEVAFSIVNHAAKSLGFIHVDQWDYERVMFDYKIVHHEGTFYLRVPAYAV  60
+            LKF ++GLE  +   S ++   +S G I   QWDYERV +D K    EGTFYLR+   A 
+Sbjct  2    LKFTESGLEGVKAELSWLDDLMESKGLIRAGQWDYERVTYDKKFSTIEGTFYLRIQGIAA  61
+
+Query  61   KGEIPRPSTIVQIMTPILGKYYYPHGVEY-EGETFPQAVIDKCNNKLALLAKTIK  114
+            +G++     ++Q+M+P+LGK+YYPHGVEY E E FP  V+ K    +  +A  +K
+Sbjct  62   EGDVGSGRAVIQLMSPLLGKHYYPHGVEYGETEEFPVQVVTKSKALIQDIANMLK  116
+
+
+>sp|O05246|YUGN_BACSU Uncharacterized protein YugN OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yugN PE=4 SV=1
+Length=134
+
+ Score = 124 bits (311),  Expect = 9e-37, Method: Composition-based stats.
+ Identities = 24/92 (26%), Positives = 43/92 (47%), Gaps = 0/92 (0%)
+
+Query  6   TGLEEKEVAFSIVNHAAKSLGFIHVDQWDYERVMFDYKIVHHEGTFYLRVPAYAVKGEIP  65
+           + ++ +      +    K LG++    W+Y+   FDYKI   +G  +LR+P  AV+G + 
+Sbjct  6   SAIDGQSFLLQELEQVMKPLGYVINGGWEYDHGYFDYKIDDRDGYLFLRIPVNAVQGSLD  65
+
+Query  66  RPSTIVQIMTPILGKYYYPHGVEYEGETFPQA  97
+                V+I TP + +  +   V+   E  P  
+Sbjct  66  ERGAAVRIGTPFMLRQVFQADVDDHAEGGPFQ  97
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0422    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,215 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1n8va_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|E0X9F6|THAP1_THAPI Allergen Tha p 1 OS=Thaumetopoea pityocampa...  114     3e-33
+sp|Q9W1C9|PEB3_DROME Ejaculatory bulb-specific protein 3 OS=Droso...  102     2e-28
+sp|Q27377|OB10_DROME Putative odorant-binding protein A10 OS=Dros...  102     4e-28
+sp|P86354|VIRE2_HELVI Viresin (Fragment) OS=Heliothis virescens O...  63.2    7e-14
+
+
+>sp|E0X9F6|THAP1_THAPI Allergen Tha p 1 OS=Thaumetopoea pityocampa 
+OX=208016 PE=1 SV=1
+Length=126
+
+ Score = 114 bits (286),  Expect = 3e-33, Method: Compositional matrix adjust.
+ Identities = 49/98 (50%), Positives = 75/98 (77%), Gaps = 0/98 (0%)
+
+Query  2    YTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQE  61
+            Y+DKYD I+++E+L ++RLL  YV C++++G+C+P+GKELK+ L DA+E+ C KCTE Q+
+Sbjct  22   YSDKYDTIDVNEVLQSERLLKGYVECLLDKGRCTPDGKELKDTLPDALEHECSKCTEKQK  81
+
+Query  62   KGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYEDR  99
+             GA  VI HL+    E+W+EL  KYDP   ++++Y+DR
+Sbjct  82   SGADTVIRHLVNKRPELWKELAVKYDPENIYQERYKDR  119
+
+
+>sp|Q9W1C9|PEB3_DROME Ejaculatory bulb-specific protein 3 OS=Drosophila 
+melanogaster OX=7227 GN=EbpIII PE=2 SV=2
+Length=126
+
+ Score = 102 bits (255),  Expect = 2e-28, Method: Compositional matrix adjust.
+ Identities = 48/100 (48%), Positives = 70/100 (70%), Gaps = 0/100 (0%)
+
+Query  1    KYTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQ  60
+            KYT KYDNI++DEIL + RL   Y  C+++ GKC+PEG+ELK+ L DA++  C KC+E Q
+Sbjct  20   KYTTKYDNIDVDEILKSDRLFGNYFKCLVDNGKCTPEGRELKKSLPDALKTECSKCSEKQ  79
+
+Query  61   EKGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYEDRA  100
+             +   +VI ++I+N+ E W++L AKYDP   + K+Y   A
+Sbjct  80   RQNTDKVIRYIIENKPEEWKQLQAKYDPDEIYIKRYRATA  119
+
+
+>sp|Q27377|OB10_DROME Putative odorant-binding protein A10 OS=Drosophila 
+melanogaster OX=7227 GN=a10 PE=2 SV=2
+Length=155
+
+ Score = 102 bits (254),  Expect = 4e-28, Method: Compositional matrix adjust.
+ Identities = 48/97 (49%), Positives = 62/97 (64%), Gaps = 0/97 (0%)
+
+Query  2    YTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQE  61
+            Y DK+DN++LDEIL  +RLL+ Y+ C+   G C+P+ K LKE L DAI+  C KCTE Q 
+Sbjct  50   YDDKFDNVDLDEILNQERLLINYIKCLEGTGPCTPDAKMLKEILPDAIQTDCTKCTEKQR  109
+
+Query  62   KGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYED  98
+             GA +V  HLI N    W  L   YDP G +R KY++
+Sbjct  110  YGAEKVTRHLIDNRPTDWERLEKIYDPEGTYRIKYQE  146
+
+
+>sp|P86354|VIRE2_HELVI Viresin (Fragment) OS=Heliothis virescens 
+OX=7102 PE=1 SV=1
+Length=44
+
+ Score = 63.2 bits (152),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 27/44 (61%), Positives = 37/44 (84%), Gaps = 0/44 (0%)
+
+Query  6   YDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAI  49
+           YDN+NLDEILAN RLLV Y+ C+++ GK +P+ KELKEH++ A+
+Sbjct  1   YDNVNLDEILANDRLLVPYIKCLLDEGKKAPDAKELKEHIRXAL  44
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.134    0.404    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 2
+
+
+Query= d1n8va_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q27377|OB10_DROME Putative odorant-binding protein A10 OS=Dros...  160     9e-51
+sp|E0X9F6|THAP1_THAPI Allergen Tha p 1 OS=Thaumetopoea pityocampa...  151     1e-47
+sp|Q9W1C9|PEB3_DROME Ejaculatory bulb-specific protein 3 OS=Droso...  142     4e-44
+sp|P86354|VIRE2_HELVI Viresin (Fragment) OS=Heliothis virescens O...  66.6    3e-15
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q27377|OB10_DROME Putative odorant-binding protein A10 OS=Drosophila 
+melanogaster OX=7227 GN=a10 PE=2 SV=2
+Length=155
+
+ Score = 160 bits (404),  Expect = 9e-51, Method: Composition-based stats.
+ Identities = 48/97 (49%), Positives = 62/97 (64%), Gaps = 0/97 (0%)
+
+Query  2    YTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQE  61
+            Y DK+DN++LDEIL  +RLL+ Y+ C+   G C+P+ K LKE L DAI+  C KCTE Q 
+Sbjct  50   YDDKFDNVDLDEILNQERLLINYIKCLEGTGPCTPDAKMLKEILPDAIQTDCTKCTEKQR  109
+
+Query  62   KGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYED  98
+             GA +V  HLI N    W  L   YDP G +R KY++
+Sbjct  110  YGAEKVTRHLIDNRPTDWERLEKIYDPEGTYRIKYQE  146
+
+
+>sp|E0X9F6|THAP1_THAPI Allergen Tha p 1 OS=Thaumetopoea pityocampa 
+OX=208016 PE=1 SV=1
+Length=126
+
+ Score = 151 bits (381),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 49/98 (50%), Positives = 75/98 (77%), Gaps = 0/98 (0%)
+
+Query  2    YTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQE  61
+            Y+DKYD I+++E+L ++RLL  YV C++++G+C+P+GKELK+ L DA+E+ C KCTE Q+
+Sbjct  22   YSDKYDTIDVNEVLQSERLLKGYVECLLDKGRCTPDGKELKDTLPDALEHECSKCTEKQK  81
+
+Query  62   KGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYEDR  99
+             GA  VI HL+    E+W+EL  KYDP   ++++Y+DR
+Sbjct  82   SGADTVIRHLVNKRPELWKELAVKYDPENIYQERYKDR  119
+
+
+>sp|Q9W1C9|PEB3_DROME Ejaculatory bulb-specific protein 3 OS=Drosophila 
+melanogaster OX=7227 GN=EbpIII PE=2 SV=2
+Length=126
+
+ Score = 142 bits (358),  Expect = 4e-44, Method: Composition-based stats.
+ Identities = 48/101 (48%), Positives = 71/101 (70%), Gaps = 0/101 (0%)
+
+Query  1    KYTDKYDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAIENGCKKCTENQ  60
+            KYT KYDNI++DEIL + RL   Y  C+++ GKC+PEG+ELK+ L DA++  C KC+E Q
+Sbjct  20   KYTTKYDNIDVDEILKSDRLFGNYFKCLVDNGKCTPEGRELKKSLPDALKTECSKCSEKQ  79
+
+Query  61   EKGAYRVIEHLIKNEIEIWRELTAKYDPTGNWRKKYEDRAK  101
+             +   +VI ++I+N+ E W++L AKYDP   + K+Y   A+
+Sbjct  80   RQNTDKVIRYIIENKPEEWKQLQAKYDPDEIYIKRYRATAE  120
+
+
+>sp|P86354|VIRE2_HELVI Viresin (Fragment) OS=Heliothis virescens 
+OX=7102 PE=1 SV=1
+Length=44
+
+ Score = 66.6 bits (161),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 27/44 (61%), Positives = 37/44 (84%), Gaps = 0/44 (0%)
+
+Query  6   YDNINLDEILANKRLLVAYVNCVMERGKCSPEGKELKEHLQDAI  49
+           YDN+NLDEILAN RLLV Y+ C+++ GK +P+ KELKEH++ A+
+Sbjct  1   YDNVNLDEILANDRLLVPYIKCLLDEGKKAPDAKELKEHIRXAL  44
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,203 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1nh1a_
+
+Length=290
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P13835|AVRB_PSESG Avirulence protein B OS=Pseudomonas savastan...  604     0.0  
+sp|P13836|AVRC_PSESG Avirulence protein C OS=Pseudomonas savastan...  273     2e-89
+
+
+>sp|P13835|AVRB_PSESG Avirulence protein B OS=Pseudomonas savastanoi 
+pv. glycinea OX=318 GN=avrB PE=1 SV=1
+Length=321
+
+ Score = 604 bits (1557),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 290/290 (100%), Positives = 290/290 (100%), Gaps = 0/290 (0%)
+
+Query  1    ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS  60
+            ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS
+Sbjct  28   ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS  87
+
+Query  61   FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE  120
+            FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE
+Sbjct  88   FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE  147
+
+Query  121  IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL  180
+            IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL
+Sbjct  148  IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL  207
+
+Query  181  QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG  240
+            QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG
+Sbjct  208  QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG  267
+
+Query  241  SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  290
+            SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD
+Sbjct  268  SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  317
+
+
+>sp|P13836|AVRC_PSESG Avirulence protein C OS=Pseudomonas savastanoi 
+pv. glycinea OX=318 GN=avrC PE=4 SV=1
+Length=352
+
+ Score = 273 bits (697),  Expect = 2e-89, Method: Compositional matrix adjust.
+ Identities = 144/297 (48%), Positives = 188/297 (63%), Gaps = 8/297 (3%)
+
+Query  1    ALPGPSQRQLEVYDQC-LIGAARWPDD------SSKSNTPENRAYCQSMYNSIRSAGDEI  53
+             L GP++  +   D+  L+GAARWPDD      S+KSNT EN+ YC+S+Y + R AG  I
+Sbjct  53   GLRGPAKHSMLSLDEIGLVGAARWPDDAPGLNISNKSNTQENKRYCESLYQAARIAGGSI  112
+
+Query  54   SRGGITSFEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVD  113
+            + G +TSF+ LW  AT+WRLS++  G+     FA+ R  +T  VT L +PY SV+ RV +
+Sbjct  113  ASGRVTSFDGLWRNATKWRLSRILSGDASKIDFATVRMPNTRFVTSLRRPYHSVIERVRN  172
+
+Query  114  HEDAHDEIMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGA  173
+            H DA+ EI +    G +  KVYRQ   +    IP+       D + + +R+  L      
+Sbjct  173  HSDANSEIYEGEYLGGIETKVYRQHGTISSTTIPMTIVSAVADDDDIHERLKSLPKN-ER  231
+
+Query  174  KALKQHLQRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAAS  233
+            + LK  +   +P+ I HT+A YLP+IKDHL  LY QAI   L Q E + LIAR HWWAAS
+Sbjct  232  RHLKDLMAASHPNMITHTDAVYLPMIKDHLESLYLQAIDPSLEQHEALELIARIHWWAAS  291
+
+Query  234  AMPDQRGSAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  290
+            A PD+RGSAAKAEFAAR+IA AHGIELPPF +G V DIEAML  EE+FVE Y +L +
+Sbjct  292  AAPDRRGSAAKAEFAARSIAFAHGIELPPFEHGAVPDIEAMLRSEEQFVEDYPNLFE  348
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.131    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23686895656
+Results from round 2
+
+
+Query= d1nh1a_
+
+Length=290
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13835|AVRB_PSESG Avirulence protein B OS=Pseudomonas savastan...  492     2e-176
+sp|P13836|AVRC_PSESG Avirulence protein C OS=Pseudomonas savastan...  486     1e-173
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P13835|AVRB_PSESG Avirulence protein B OS=Pseudomonas savastanoi 
+pv. glycinea OX=318 GN=avrB PE=1 SV=1
+Length=321
+
+ Score = 492 bits (1267),  Expect = 2e-176, Method: Composition-based stats.
+ Identities = 290/290 (100%), Positives = 290/290 (100%), Gaps = 0/290 (0%)
+
+Query  1    ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS  60
+            ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS
+Sbjct  28   ALPGPSQRQLEVYDQCLIGAARWPDDSSKSNTPENRAYCQSMYNSIRSAGDEISRGGITS  87
+
+Query  61   FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE  120
+            FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE
+Sbjct  88   FEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVDHEDAHDE  147
+
+Query  121  IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL  180
+            IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL
+Sbjct  148  IMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGAKALKQHL  207
+
+Query  181  QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG  240
+            QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG
+Sbjct  208  QRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAASAMPDQRG  267
+
+Query  241  SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  290
+            SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD
+Sbjct  268  SAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  317
+
+
+>sp|P13836|AVRC_PSESG Avirulence protein C OS=Pseudomonas savastanoi 
+pv. glycinea OX=318 GN=avrC PE=4 SV=1
+Length=352
+
+ Score = 486 bits (1251),  Expect = 1e-173, Method: Composition-based stats.
+ Identities = 144/297 (48%), Positives = 188/297 (63%), Gaps = 8/297 (3%)
+
+Query  1    ALPGPSQRQLEVYDQC-LIGAARWPDD------SSKSNTPENRAYCQSMYNSIRSAGDEI  53
+             L GP++  +   D+  L+GAARWPDD      S+KSNT EN+ YC+S+Y + R AG  I
+Sbjct  53   GLRGPAKHSMLSLDEIGLVGAARWPDDAPGLNISNKSNTQENKRYCESLYQAARIAGGSI  112
+
+Query  54   SRGGITSFEELWGRATEWRLSKLQRGEPLYSAFASERTSDTDAVTPLVKPYKSVLARVVD  113
+            + G +TSF+ LW  AT+WRLS++  G+     FA+ R  +T  VT L +PY SV+ RV +
+Sbjct  113  ASGRVTSFDGLWRNATKWRLSRILSGDASKIDFATVRMPNTRFVTSLRRPYHSVIERVRN  172
+
+Query  114  HEDAHDEIMQDNLFGDLNVKVYRQTAYLHGNVIPLNTFRVATDTEYLRDRVAHLRTELGA  173
+            H DA+ EI +    G +  KVYRQ   +    IP+       D + + +R+  L      
+Sbjct  173  HSDANSEIYEGEYLGGIETKVYRQHGTISSTTIPMTIVSAVADDDDIHERLKSLPKN-ER  231
+
+Query  174  KALKQHLQRYNPDRIDHTNASYLPIIKDHLNDLYRQAISSDLSQAELISLIARTHWWAAS  233
+            + LK  +   +P+ I HT+A YLP+IKDHL  LY QAI   L Q E + LIAR HWWAAS
+Sbjct  232  RHLKDLMAASHPNMITHTDAVYLPMIKDHLESLYLQAIDPSLEQHEALELIARIHWWAAS  291
+
+Query  234  AMPDQRGSAAKAEFAARAIASAHGIELPPFRNGNVSDIEAMLSGEEEFVEKYRSLLD  290
+            A PD+RGSAAKAEFAAR+IA AHGIELPPF +G V DIEAML  EE+FVE Y +L +
+Sbjct  292  AAPDRRGSAAKAEFAARSIAFAHGIELPPFEHGAVPDIEAMLRSEEQFVEDYPNLFE  348
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0395    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23686895656
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

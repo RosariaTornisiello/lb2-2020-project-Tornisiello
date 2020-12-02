@@ -1,0 +1,491 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1mk0a_
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobac...  199     5e-65
+sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 OS=N...  50.4    2e-07
+
+
+>sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobacteria 
+phage T4 OX=10665 GN=ITEVIR PE=1 SV=2
+Length=245
+
+ Score = 199 bits (505),  Expect = 5e-65, Method: Compositional matrix adjust.
+ Identities = 96/97 (99%), Positives = 96/97 (99%), Gaps = 0/97 (0%)
+
+Query  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+           MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI
+Sbjct  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+
+Query  61  LEEIPYEKDLIIERANFWIKELNSKINGYNIADATFG  97
+           LEEIPYEKDLIIER NFWIKELNSKINGYNIADATFG
+Sbjct  61  LEEIPYEKDLIIERENFWIKELNSKINGYNIADATFG  97
+
+
+>sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=NCU16019 PE=3 SV=1
+Length=304
+
+ Score = 50.4 bits (119),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 31/75 (41%), Positives = 43/75 (57%), Gaps = 5/75 (7%)
+
+Query  2    KSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHG-NVFECSI  60
+            K GIY   NT+NN  Y+GSAKDF  R   H ++ +    S+I LQ++F K+G + F   I
+Sbjct  85   KGGIYSFINTVNNNQYIGSAKDFYLRLNEHLENKK----SNIALQKAFTKYGLDKFIFCI  140
+
+Query  61   LEEIPYEKDLIIERA  75
+             E   YE  +I  +A
+Sbjct  141  YEYFTYESKIISHKA  155
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+Results from round 2
+
+
+Query= d1mk0a_
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobac...  166     4e-52
+sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 OS=N...  96.3    3e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q0H8X2|BI1_USTMA Probable intron-encoded endonuclease bI1 OS=U...  42.3    1e-04
+
+
+>sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobacteria 
+phage T4 OX=10665 GN=ITEVIR PE=1 SV=2
+Length=245
+
+ Score = 166 bits (420),  Expect = 4e-52, Method: Composition-based stats.
+ Identities = 96/97 (99%), Positives = 96/97 (99%), Gaps = 0/97 (0%)
+
+Query  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+           MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI
+Sbjct  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+
+Query  61  LEEIPYEKDLIIERANFWIKELNSKINGYNIADATFG  97
+           LEEIPYEKDLIIER NFWIKELNSKINGYNIADATFG
+Sbjct  61  LEEIPYEKDLIIERENFWIKELNSKINGYNIADATFG  97
+
+
+>sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=NCU16019 PE=3 SV=1
+Length=304
+
+ Score = 96.3 bits (238),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 31/75 (41%), Positives = 43/75 (57%), Gaps = 5/75 (7%)
+
+Query  2    KSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHG-NVFECSI  60
+            K GIY   NT+NN  Y+GSAKDF  R   H ++ +    S+I LQ++F K+G + F   I
+Sbjct  85   KGGIYSFINTVNNNQYIGSAKDFYLRLNEHLENKK----SNIALQKAFTKYGLDKFIFCI  140
+
+Query  61   LEEIPYEKDLIIERA  75
+             E   YE  +I  +A
+Sbjct  141  YEYFTYESKIISHKA  155
+
+
+>sp|Q0H8X2|BI1_USTMA Probable intron-encoded endonuclease bI1 
+OS=Ustilago maydis (strain 521 / FGSC 9021) OX=237631 GN=bI1 
+PE=3 SV=2
+Length=410
+
+ Score = 42.3 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 27/102 (26%), Positives = 50/102 (49%), Gaps = 11/102 (11%)
+
+Query  3    SGIYQIKNTLNNKVYVGSA--KDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHG-NVFECS  59
+            SGIY I N +  K YVGSA   +   R+ +H          + ++  + NK+G + F   
+Sbjct  198  SGIYMIVNLITEKYYVGSAVTGNLYMRFHKHL----FSFTGNKRVANAVNKYGLSEFAFL  253
+
+Query  60   ILEEIP----YEKDLIIERANFWIKELNSKINGYNIADATFG  97
+            +LE +P     +  L++ R +++++ L  + N   +A  + G
+Sbjct  254  VLEIVPQKDKIDSTLLLNREDYYLETLKPEYNIAPLASNSLG  295
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0414    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+Results from round 3
+
+
+Query= d1mk0a_
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobac...  151     2e-46
+sp|Q0H8X2|BI1_USTMA Probable intron-encoded endonuclease bI1 OS=U...  109     9e-29
+sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 OS=N...  86.3    1e-20
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q35127|MBI1_NEUCR Probable intron-encoded endonuclease bI1 OS=...  52.0    5e-08
+sp|Q7M8K0|UVRC_WOLSU UvrABC system protein C OS=Wolinella succino...  40.4    6e-04
+sp|Q3AQX4|UVRC_CHLCH UvrABC system protein C OS=Chlorobium chloro...  40.4    6e-04
+sp|Q3B5K8|UVRC_PELLD UvrABC system protein C OS=Pelodictyon luteo...  39.3    0.002
+sp|B2UT08|UVRC_HELPS UvrABC system protein C OS=Helicobacter pylo...  38.5    0.003
+sp|B6JM52|UVRC_HELP2 UvrABC system protein C OS=Helicobacter pylo...  38.5    0.003
+sp|Q4JVI8|UVRC_CORJK UvrABC system protein C OS=Corynebacterium j...  38.5    0.003
+sp|P56428|UVRC_HELPY UvrABC system protein C OS=Helicobacter pylo...  38.1    0.004
+sp|B4SCR5|UVRC_PELPB UvrABC system protein C OS=Pelodictyon phaeo...  38.1    0.004
+sp|B5Z7I6|UVRC_HELPG UvrABC system protein C OS=Helicobacter pylo...  37.7    0.006
+sp|Q1CT48|UVRC_HELPH UvrABC system protein C OS=Helicobacter pylo...  37.7    0.006
+sp|Q6AF49|UVRC_LEIXX UvrABC system protein C OS=Leifsonia xyli su...  37.7    0.006
+sp|Q9ZL21|UVRC_HELPJ UvrABC system protein C OS=Helicobacter pylo...  37.3    0.007
+sp|Q17XV1|UVRC_HELAH UvrABC system protein C OS=Helicobacter acin...  37.3    0.007
+
+
+>sp|P13299|TEV1_BPT4 Intron-associated endonuclease 1 OS=Enterobacteria 
+phage T4 OX=10665 GN=ITEVIR PE=1 SV=2
+Length=245
+
+ Score = 151 bits (382),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 96/97 (99%), Positives = 96/97 (99%), Gaps = 0/97 (0%)
+
+Query  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+           MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI
+Sbjct  1   MKSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSI  60
+
+Query  61  LEEIPYEKDLIIERANFWIKELNSKINGYNIADATFG  97
+           LEEIPYEKDLIIER NFWIKELNSKINGYNIADATFG
+Sbjct  61  LEEIPYEKDLIIERENFWIKELNSKINGYNIADATFG  97
+
+
+>sp|Q0H8X2|BI1_USTMA Probable intron-encoded endonuclease bI1 
+OS=Ustilago maydis (strain 521 / FGSC 9021) OX=237631 GN=bI1 
+PE=3 SV=2
+Length=410
+
+ Score = 109 bits (273),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 27/102 (26%), Positives = 50/102 (49%), Gaps = 11/102 (11%)
+
+Query  3    SGIYQIKNTLNNKVYVGSA--KDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHG-NVFECS  59
+            SGIY I N +  K YVGSA   +   R+ +H          + ++  + NK+G + F   
+Sbjct  198  SGIYMIVNLITEKYYVGSAVTGNLYMRFHKHL----FSFTGNKRVANAVNKYGLSEFAFL  253
+
+Query  60   ILEEIP----YEKDLIIERANFWIKELNSKINGYNIADATFG  97
+            +LE +P     +  L++ R +++++ L  + N   +A  + G
+Sbjct  254  VLEIVPQKDKIDSTLLLNREDYYLETLKPEYNIAPLASNSLG  295
+
+
+>sp|Q36580|IEND1_NEUCR Probable intron-encoded endonuclease 1 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=NCU16019 PE=3 SV=1
+Length=304
+
+ Score = 86.3 bits (212),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 35/104 (34%), Positives = 53/104 (51%), Gaps = 12/104 (12%)
+
+Query  2    KSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHG-NVFECSI  60
+            K GIY   NT+NN  Y+GSAKDF  R   H ++ +    S+I LQ++F K+G + F   I
+Sbjct  85   KGGIYSFINTVNNNQYIGSAKDFYLRLNEHLENKK----SNIALQKAFTKYGLDKFIFCI  140
+
+Query  61   LEEIPYEKDLIIERANFWIKE-------LNSKINGYNIADATFG  97
+             E   YE  +I  +A   ++         ++  N   IA ++ G
+Sbjct  141  YEYFTYESKIISHKALTDLETSYINRFNFDNLYNFKAIATSSLG  184
+
+
+>sp|Q35127|MBI1_NEUCR Probable intron-encoded endonuclease bI1 
+OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 
+708.71 / DSM 1257 / FGSC 987) OX=367110 GN=bI1 PE=3 SV=2
+Length=448
+
+ Score = 52.0 bits (123),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 23/101 (23%), Positives = 41/101 (41%), Gaps = 8/101 (8%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNV-FECSIL  61
+            SG+Y I N      Y+GSA +   R+   F +       S  ++ +  K+    F   IL
+Sbjct  232  SGVYMIINKTTKDYYIGSASN--NRFYTRFCNHVIHFTGSKIVKLAIKKYELKNFAFVIL  289
+
+Query  62   EEIP-----YEKDLIIERANFWIKELNSKINGYNIADATFG  97
+            +  P          +++  + ++K L    N    A ++FG
+Sbjct  290  DLYPNVVTKENNKELLDLEDKYLKLLVPNYNILTEAGSSFG  330
+
+
+>sp|Q7M8K0|UVRC_WOLSU UvrABC system protein C OS=Wolinella succinogenes 
+(strain ATCC 29543 / DSM 1740 / LMG 7466 / NCTC 11488 
+/ FDC 602W) OX=273121 GN=uvrC PE=3 SV=1
+Length=602
+
+ Score = 40.4 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 2/95 (2%)
+
+Query  2    KSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSIL  61
+            +SG+Y   ++ +  +YVG AK  +KR K +F+        S KL    +K  +       
+Sbjct  16   QSGVYHYFDSRSKLLYVGKAKSLKKRVKSYFQ-FTPTLAPSPKLSPRIHKMISEAAFIRY  74
+
+Query  62   EEIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+              +  E D +I   N  IK+L  K N     D T+
+Sbjct  75   IVVENEHDALI-LENSLIKQLKPKYNILLRDDKTY  108
+
+
+>sp|Q3AQX4|UVRC_CHLCH UvrABC system protein C OS=Chlorobium chlorochromatii 
+(strain CaD3) OX=340177 GN=uvrC PE=3 SV=1
+Length=629
+
+ Score = 40.4 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 39/85 (46%), Gaps = 8/85 (9%)
+
+Query  4    GIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILEE  63
+            GIYQ KN+    +YVG AK+   R + +F++  +    ++ L    +    +   S +E 
+Sbjct  29   GIYQFKNSAGRIIYVGKAKNLRNRVRSYFRNSHQLFGKTLVLVSHIDDLEVIITSSEVEA  88
+
+Query  64   IPYEKDLIIERANFWIKELNSKING  88
+            +  E +LI        KEL  + N 
+Sbjct  89   LILENNLI--------KELKPRYNV  105
+
+
+>sp|Q3B5K8|UVRC_PELLD UvrABC system protein C OS=Pelodictyon luteolum 
+(strain DSM 273 / 2530) OX=319225 GN=uvrC PE=3 SV=1
+Length=628
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/85 (28%), Positives = 37/85 (44%), Gaps = 8/85 (9%)
+
+Query  4   GIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILEE  63
+           GIYQ KN+    +YVG AK+   R + +F+D  +    +  L         +   S +E 
+Sbjct  24  GIYQFKNSAGKVIYVGKAKNIRSRVRSYFRDPRQLTGKTQVLVGHITDLEIIITSSEVEA  83
+
+Query  64  IPYEKDLIIERANFWIKELNSKING  88
+           +  E +LI        KEL  + N 
+Sbjct  84  LILENNLI--------KELKPRYNV  100
+
+
+>sp|B2UT08|UVRC_HELPS UvrABC system protein C OS=Helicobacter 
+pylori (strain Shi470) OX=512562 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 38/94 (40%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +  +  +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNHQLLYIGKAKNLKKRIKSYFSVRNNEITPNYRTSLRIQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|B6JM52|UVRC_HELP2 UvrABC system protein C OS=Helicobacter 
+pylori (strain P12) OX=570508 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +     +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNRQLLYIGKAKNLKKRIKSYFSIRNNEITPNHRASLRVQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|Q4JVI8|UVRC_CORJK UvrABC system protein C OS=Corynebacterium 
+jeikeium (strain K411) OX=306537 GN=uvrC PE=3 SV=1
+Length=690
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 39/93 (42%), Gaps = 8/93 (9%)
+
+Query  4    GIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILEE  63
+            G+Y  ++     +YVG AK+   R   +F+DL++    +  + +S N        S LE 
+Sbjct  18   GVYTFRDAHERVIYVGKAKNLRARLSNYFQDLDQLHPRTRAMVQSANHVQWTVVSSELEA  77
+
+Query  64   IPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+            +  E          WIK  N + N     D T+
+Sbjct  78   LNLEYT--------WIKRFNPRFNVMYRDDKTY  102
+
+
+>sp|P56428|UVRC_HELPY UvrABC system protein C OS=Helicobacter 
+pylori (strain ATCC 700392 / 26695) OX=85962 GN=uvrC PE=1 SV=1
+Length=594
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +     +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNRQLLYIGKAKNLKKRIKSYFSIRNNEITPNHRASLRIQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|B4SCR5|UVRC_PELPB UvrABC system protein C OS=Pelodictyon phaeoclathratiforme 
+(strain DSM 5477 / BU-1) OX=324925 GN=uvrC 
+PE=3 SV=1
+Length=627
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 39/85 (46%), Gaps = 8/85 (9%)
+
+Query  4    GIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILEE  63
+            G+YQ +N+    +YVG AK+   R + +F++ ++    ++ L         +   S +E 
+Sbjct  29   GVYQFRNSSGRVIYVGKAKNLRNRVRSYFRNQQQLYGKTLVLVTHIADFEVIITSSEVEA  88
+
+Query  64   IPYEKDLIIERANFWIKELNSKING  88
+            +  E ++I        KEL  + N 
+Sbjct  89   LILENNMI--------KELKPRYNV  105
+
+
+>sp|B5Z7I6|UVRC_HELPG UvrABC system protein C OS=Helicobacter 
+pylori (strain G27) OX=563041 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 37.7 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +     +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNRQLLYIGKAKNLKKRIKSYFSICNNEITPNHRASLRIQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|Q1CT48|UVRC_HELPH UvrABC system protein C OS=Helicobacter 
+pylori (strain HPAG1) OX=357544 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 37.7 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +     +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNRQLLYIGKAKNLKKRIKSYFSIHNNEITPNHRASLRIQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|Q6AF49|UVRC_LEIXX UvrABC system protein C OS=Leifsonia xyli 
+subsp. xyli (strain CTCB07) OX=281090 GN=uvrC PE=3 SV=1
+Length=656
+
+ Score = 37.7 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 39/108 (36%), Gaps = 25/108 (23%)
+
+Query  2    KSGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRS-----FNKHGNVF  56
+            + G+Y+ ++     +YVG AK+   R   +F+ L      + ++  +     +   G+ F
+Sbjct  17   QPGVYRFRDKTRRVLYVGKAKNLRARLSNYFQPLRSLHERTRRMVTTAASVEWTVVGSEF  76
+
+Query  57   ECSILEEIPYEKDLIIERANFWIKELNSKING-------YNIADATFG  97
+            E   LE               WIKE N   N        Y     T G
+Sbjct  77   EALQLEYT-------------WIKEYNPPFNVQFRDDKSYPYLAVTLG  111
+
+
+>sp|Q9ZL21|UVRC_HELPJ UvrABC system protein C OS=Helicobacter 
+pylori (strain J99 / ATCC 700824) OX=85963 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 37.3 bits (85),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 22/93 (24%), Positives = 36/93 (39%), Gaps = 1/93 (1%)
+
+Query  4    GIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILEE  63
+            G+YQ  +     +Y+G AK+ +KR K +F         + +                   
+Sbjct  16   GVYQYFDKNRQLLYIGKAKNLKKRIKSYFSVRNNEITPNPRTSLRVQMMVKQIAFLETIL  75
+
+Query  64   IPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+            +  E+D +I   N  IK+L  K N     D T+
+Sbjct  76   VENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+>sp|Q17XV1|UVRC_HELAH UvrABC system protein C OS=Helicobacter 
+acinonychis (strain Sheeba) OX=382638 GN=uvrC PE=3 SV=1
+Length=594
+
+ Score = 37.3 bits (85),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 1/94 (1%)
+
+Query  3    SGIYQIKNTLNNKVYVGSAKDFEKRWKRHFKDLEKGCHSSIKLQRSFNKHGNVFECSILE  62
+            SG+YQ  +     +Y+G AK+ +KR K +F         + +                  
+Sbjct  15   SGVYQYFDKNRQLLYIGKAKNLKKRIKSYFSIHNNEITPNHRTSLRIQMMVKQIAFLETI  74
+
+Query  63   EIPYEKDLIIERANFWIKELNSKINGYNIADATF  96
+             +  E+D +I   N  IK+L  K N     D T+
+Sbjct  75   LVENEQDALI-LENSLIKQLKPKYNILLRDDKTY  107
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.346    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

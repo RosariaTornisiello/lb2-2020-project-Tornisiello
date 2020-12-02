@@ -1,0 +1,315 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2f5tx1
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional regu...  190     2e-60
+sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional regu...  190     2e-60
+sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional regu...  42.0    1e-04
+sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional regu...  36.6    0.010
+
+
+>sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Thermococcus litoralis (strain ATCC 51850 
+/ DSM 5473 / JCM 8560 / NS-C) OX=523849 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 190 bits (482),  Expect = 2e-60, Method: Compositional matrix adjust.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 
+3638 / JCM 8422 / Vc1) OX=186497 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 190 bits (482),  Expect = 2e-60, Method: Compositional matrix adjust.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Halobacterium salinarum (strain ATCC 700922 
+/ JCM 11081 / NRC-1) OX=64091 GN=trmB PE=1 SV=2
+Length=352
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 38/66 (58%), Gaps = 1/66 (2%)
+
+Query  23   NRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENG-VVKVGGMFAVIED  81
+            + ++YA +TG+++ +G    + GR+V         V  I + TENG  V+VGG  A +ED
+Sbjct  277  DESVYATVTGRDVLTGADRRIQGRIVETRFEESGEVATIIVYTENGDRVEVGGRVAALED  336
+
+Query  82   YESTEI  87
+             E+ EI
+Sbjct  337  VEAHEI  342
+
+
+>sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmBL1 OS=Pyrococcus furiosus (strain ATCC 43587 / 
+DSM 3638 / JCM 8422 / Vc1) OX=186497 GN=trmBL1 PE=1 SV=1
+Length=341
+
+ Score = 36.6 bits (83),  Expect = 0.010, Method: Compositional matrix adjust.
+ Identities = 22/60 (37%), Positives = 37/60 (62%), Gaps = 4/60 (7%)
+
+Query  24   RNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENGVVKVGGMFAVIEDYE  83
+            RNI  E+ G++L   +  T+ G+V+ Y  +   A  NI ++T+N  +KVGG+ + +ED E
+Sbjct  278  RNI--EVIGRSLADKKQVTIKGKVIDYEYTPLTA--NITVKTDNKKIKVGGLGSYLEDIE  333
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+Results from round 2
+
+
+Query= d2f5tx1
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional regu...  159     2e-48
+sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional regu...  159     2e-48
+sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional regu...  100     1e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional regu...  38.8    0.002
+
+
+>sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Thermococcus litoralis (strain ATCC 51850 
+/ DSM 5473 / JCM 8560 / NS-C) OX=523849 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 159 bits (402),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 
+3638 / JCM 8422 / Vc1) OX=186497 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 159 bits (402),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Halobacterium salinarum (strain ATCC 700922 
+/ JCM 11081 / NRC-1) OX=64091 GN=trmB PE=1 SV=2
+Length=352
+
+ Score = 100 bits (248),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 38/66 (58%), Gaps = 1/66 (2%)
+
+Query  23   NRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENG-VVKVGGMFAVIED  81
+            + ++YA +TG+++ +G    + GR+V         V  I + TENG  V+VGG  A +ED
+Sbjct  277  DESVYATVTGRDVLTGADRRIQGRIVETRFEESGEVATIIVYTENGDRVEVGGRVAALED  336
+
+Query  82   YESTEI  87
+             E+ EI
+Sbjct  337  VEAHEI  342
+
+
+>sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmBL1 OS=Pyrococcus furiosus (strain ATCC 43587 / 
+DSM 3638 / JCM 8422 / Vc1) OX=186497 GN=trmBL1 PE=1 SV=1
+Length=341
+
+ Score = 38.8 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/55 (33%), Positives = 32/55 (58%), Gaps = 2/55 (4%)
+
+Query  29   EITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENGVVKVGGMFAVIEDYE  83
+            E+ G++L   +  T+ G+V+ Y         NI ++T+N  +KVGG+ + +ED E
+Sbjct  281  EVIGRSLADKKQVTIKGKVIDY--EYTPLTANITVKTDNKKIKVGGLGSYLEDIE  333
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.141    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0433    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+Results from round 3
+
+
+Query= d2f5tx1
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional regu...  148     4e-44
+sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional regu...  148     4e-44
+sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional regu...  91.2    2e-22
+sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional regu...  73.5    7e-16
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q7LYW4|TRMBR_THELN HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Thermococcus litoralis (strain ATCC 51850 
+/ DSM 5473 / JCM 8560 / NS-C) OX=523849 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 148 bits (373),  Expect = 4e-44, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HGZ9|TRMBR_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Pyrococcus furiosus (strain ATCC 43587 / DSM 
+3638 / JCM 8422 / Vc1) OX=186497 GN=trmB PE=1 SV=1
+Length=338
+
+ Score = 148 bits (373),  Expect = 4e-44, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1    NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  60
+            NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN
+Sbjct  247  NPKDIRFFAMFHAVDFVKNHLKNRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNN  306
+
+Query  61   IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  92
+            IHLETENGVVKVGGMFAVIEDYESTEIKFIMG
+Sbjct  307  IHLETENGVVKVGGMFAVIEDYESTEIKFIMG  338
+
+
+>sp|Q9HPW0|TRMBR_HALSA HTH-type sugar sensing transcriptional 
+regulator TrmB OS=Halobacterium salinarum (strain ATCC 700922 
+/ JCM 11081 / NRC-1) OX=64091 GN=trmB PE=1 SV=2
+Length=352
+
+ Score = 91.2 bits (225),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 24/66 (36%), Positives = 38/66 (58%), Gaps = 1/66 (2%)
+
+Query  23   NRNIYAEITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENG-VVKVGGMFAVIED  81
+            + ++YA +TG+++ +G    + GR+V         V  I + TENG  V+VGG  A +ED
+Sbjct  277  DESVYATVTGRDVLTGADRRIQGRIVETRFEESGEVATIIVYTENGDRVEVGGRVAALED  336
+
+Query  82   YESTEI  87
+             E+ EI
+Sbjct  337  VEAHEI  342
+
+
+>sp|Q8U4G4|TMBL1_PYRFU HTH-type sugar sensing transcriptional 
+regulator TrmBL1 OS=Pyrococcus furiosus (strain ATCC 43587 / 
+DSM 3638 / JCM 8422 / Vc1) OX=186497 GN=trmBL1 PE=1 SV=1
+Length=341
+
+ Score = 73.5 bits (179),  Expect = 7e-16, Method: Composition-based stats.
+ Identities = 18/55 (33%), Positives = 32/55 (58%), Gaps = 2/55 (4%)
+
+Query  29   EITGKNLESGRLETLTGRVVGYTLSLREAVNNIHLETENGVVKVGGMFAVIEDYE  83
+            E+ G++L   +  T+ G+V+ Y         NI ++T+N  +KVGG+ + +ED E
+Sbjct  281  EVIGRSLADKKQVTIKGKVIDY--EYTPLTANITVKTDNKKIKVGGLGSYLEDIE  333
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.137    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0420    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

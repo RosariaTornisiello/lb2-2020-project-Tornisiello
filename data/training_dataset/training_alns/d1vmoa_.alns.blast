@@ -1,0 +1,221 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vmoa_
+
+Length=163
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P41366|VMO1_CHICK Vitelline membrane outer layer protein 1 OS=...  337     2e-119
+sp|Q7Z5L0|VMO1_HUMAN Vitelline membrane outer layer protein 1 hom...  168     2e-52 
+sp|Q5SXG7|VMO1_MOUSE Vitelline membrane outer layer protein 1 hom...  153     2e-46 
+
+
+>sp|P41366|VMO1_CHICK Vitelline membrane outer layer protein 1 
+OS=Gallus gallus OX=9031 GN=VMO1 PE=1 SV=1
+Length=183
+
+ Score = 337 bits (864),  Expect = 2e-119, Method: Compositional matrix adjust.
+ Identities = 163/163 (100%), Positives = 163/163 (100%), Gaps = 0/163 (0%)
+
+Query  1    RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG  60
+            RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG
+Sbjct  21   RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG  80
+
+Query  61   SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG  120
+            SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG
+Sbjct  81   SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG  140
+
+Query  121  LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK  163
+            LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK
+Sbjct  141  LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK  183
+
+
+>sp|Q7Z5L0|VMO1_HUMAN Vitelline membrane outer layer protein 1 
+homolog OS=Homo sapiens OX=9606 GN=VMO1 PE=1 SV=1
+Length=202
+
+ Score = 168 bits (426),  Expect = 2e-52, Method: Compositional matrix adjust.
+ Identities = 94/170 (55%), Positives = 112/170 (66%), Gaps = 11/170 (6%)
+
+Query  5    YTSVITVPNGGHWGKWGIRQFCHSGY-ANGFALKVEPSQ-FGRDDTALNGIRLRCLDGSV  62
+            YT+VI V +GG WG W   + C  G+ A+GF+LKVEP Q    DDTALNGIRL C  G+V
+Sbjct  32   YTAVIEVTSGGPWGDWAWPEMCPDGFFASGFSLKVEPPQGIPGDDTALNGIRLHCARGNV  91
+
+Query  63   ------IESLVGKWGTWTSFLVCPTG-YLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAV  115
+                  +ES  G WG W+  L C  G YLV+FSLR E     GD+TAANN++FRCSD   
+Sbjct  92   LGNTHVVESQSGSWGEWSEPLWCRGGAYLVAFSLRVEAPTTLGDNTAANNVRFRCSDGEE  151
+
+Query  116  LVGDGLSWGRFGPWSKRCK--ICGLQTKVESPQGLRDDTALNNVRFFCCK  163
+            L G GLSWG FG WS  C    CGLQTK++ P+GL DDTALN+ R FCC+
+Sbjct  152  LQGPGLSWGDFGDWSDHCPKGACGLQTKIQGPRGLGDDTALNDARLFCCR  201
+
+
+>sp|Q5SXG7|VMO1_MOUSE Vitelline membrane outer layer protein 1 
+homolog OS=Mus musculus OX=10090 GN=Vmo1 PE=3 SV=1
+Length=201
+
+ Score = 153 bits (386),  Expect = 2e-46, Method: Compositional matrix adjust.
+ Identities = 89/169 (53%), Positives = 112/169 (66%), Gaps = 11/169 (7%)
+
+Query  5    YTSVITVPNGGHWGKWGIRQFCHSGY-ANGFALKVEPSQ-FGRDDTALNGIRLRCLDGS-  61
+            Y S++ V NGG WG W   + C  GY A+GF++KVEP Q    DDTALNGIRL C  G+ 
+Sbjct  31   YASIVDVTNGGTWGDWAWPEMCPDGYFASGFSVKVEPPQGIPGDDTALNGIRLHCTRGNS  90
+
+Query  62   -----VIESLVGKWGTWTSFLVCP-TGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAV  115
+                 V+ES  G WG+W+  L CP T +LV+F LR E     GD+T  NN++FRCSD   
+Sbjct  91   QKNTHVVESQSGSWGSWSEPLWCPGTSFLVAFCLRVEPFTFPGDNTGVNNVRFRCSDGVE  150
+
+Query  116  LVGDGLSWGRFGPWSKRCK--ICGLQTKVESPQGLRDDTALNNVRFFCC  162
+            L G GL+WG +G WS  C   +CGLQTK++ P+GLRDDTALN++R FCC
+Sbjct  151  LEGPGLNWGDYGEWSNSCPKGVCGLQTKIQKPRGLRDDTALNDIRIFCC  199
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.139    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7636848912
+Results from round 2
+
+
+Query= d1vmoa_
+
+Length=163
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P41366|VMO1_CHICK Vitelline membrane outer layer protein 1 OS=...  298     8e-104
+sp|Q7Z5L0|VMO1_HUMAN Vitelline membrane outer layer protein 1 hom...  266     3e-91 
+sp|Q5SXG7|VMO1_MOUSE Vitelline membrane outer layer protein 1 hom...  256     3e-87 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P41366|VMO1_CHICK Vitelline membrane outer layer protein 1 
+OS=Gallus gallus OX=9031 GN=VMO1 PE=1 SV=1
+Length=183
+
+ Score = 298 bits (762),  Expect = 8e-104, Method: Composition-based stats.
+ Identities = 163/163 (100%), Positives = 163/163 (100%), Gaps = 0/163 (0%)
+
+Query  1    RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG  60
+            RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG
+Sbjct  21   RTREYTSVITVPNGGHWGKWGIRQFCHSGYANGFALKVEPSQFGRDDTALNGIRLRCLDG  80
+
+Query  61   SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG  120
+            SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG
+Sbjct  81   SVIESLVGKWGTWTSFLVCPTGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAVLVGDG  140
+
+Query  121  LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK  163
+            LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK
+Sbjct  141  LSWGRFGPWSKRCKICGLQTKVESPQGLRDDTALNNVRFFCCK  183
+
+
+>sp|Q7Z5L0|VMO1_HUMAN Vitelline membrane outer layer protein 1 
+homolog OS=Homo sapiens OX=9606 GN=VMO1 PE=1 SV=1
+Length=202
+
+ Score = 266 bits (681),  Expect = 3e-91, Method: Composition-based stats.
+ Identities = 94/170 (55%), Positives = 112/170 (66%), Gaps = 11/170 (6%)
+
+Query  5    YTSVITVPNGGHWGKWGIRQFCHSGY-ANGFALKVEPSQ-FGRDDTALNGIRLRCLDGSV  62
+            YT+VI V +GG WG W   + C  G+ A+GF+LKVEP Q    DDTALNGIRL C  G+V
+Sbjct  32   YTAVIEVTSGGPWGDWAWPEMCPDGFFASGFSLKVEPPQGIPGDDTALNGIRLHCARGNV  91
+
+Query  63   ------IESLVGKWGTWTSFLVCPTG-YLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAV  115
+                  +ES  G WG W+  L C  G YLV+FSLR E     GD+TAANN++FRCSD   
+Sbjct  92   LGNTHVVESQSGSWGEWSEPLWCRGGAYLVAFSLRVEAPTTLGDNTAANNVRFRCSDGEE  151
+
+Query  116  LVGDGLSWGRFGPWSKRCK--ICGLQTKVESPQGLRDDTALNNVRFFCCK  163
+            L G GLSWG FG WS  C    CGLQTK++ P+GL DDTALN+ R FCC+
+Sbjct  152  LQGPGLSWGDFGDWSDHCPKGACGLQTKIQGPRGLGDDTALNDARLFCCR  201
+
+
+>sp|Q5SXG7|VMO1_MOUSE Vitelline membrane outer layer protein 1 
+homolog OS=Mus musculus OX=10090 GN=Vmo1 PE=3 SV=1
+Length=201
+
+ Score = 256 bits (654),  Expect = 3e-87, Method: Composition-based stats.
+ Identities = 89/169 (53%), Positives = 112/169 (66%), Gaps = 11/169 (7%)
+
+Query  5    YTSVITVPNGGHWGKWGIRQFCHSGY-ANGFALKVEPSQ-FGRDDTALNGIRLRCLDGS-  61
+            Y S++ V NGG WG W   + C  GY A+GF++KVEP Q    DDTALNGIRL C  G+ 
+Sbjct  31   YASIVDVTNGGTWGDWAWPEMCPDGYFASGFSVKVEPPQGIPGDDTALNGIRLHCTRGNS  90
+
+Query  62   -----VIESLVGKWGTWTSFLVCP-TGYLVSFSLRSEKSQGGGDDTAANNIQFRCSDEAV  115
+                 V+ES  G WG+W+  L CP T +LV+F LR E     GD+T  NN++FRCSD   
+Sbjct  91   QKNTHVVESQSGSWGSWSEPLWCPGTSFLVAFCLRVEPFTFPGDNTGVNNVRFRCSDGVE  150
+
+Query  116  LVGDGLSWGRFGPWSKRCK--ICGLQTKVESPQGLRDDTALNNVRFFCC  162
+            L G GL+WG +G WS  C   +CGLQTK++ P+GLRDDTALN++R FCC
+Sbjct  151  LEGPGLNWGDYGEWSNSCPKGVCGLQTKIQKPRGLRDDTALNDIRIFCC  199
+
+
+ Score = 41.9 bits (97),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/49 (41%), Positives = 26/49 (53%), Gaps = 6/49 (12%)
+
+Query  120  GLSWGRFGPWSKRCK----ICGLQTKVESPQGL-RDDTALNNVRFFCCK  163
+            G +WG +  W + C       G   KVE PQG+  DDTALN +R  C +
+Sbjct  40   GGTWGDWA-WPEMCPDGYFASGFSVKVEPPQGIPGDDTALNGIRLHCTR  87
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.140    0.456    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0427    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7636848912
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

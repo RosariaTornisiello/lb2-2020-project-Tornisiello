@@ -1,0 +1,217 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5tfp_B
+
+Length=59
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q96T68|SETB2_HUMAN Histone-lysine N-methyltransferase SETDB2 O...  113     4e-30
+sp|Q8C267|SETB2_MOUSE Histone-lysine N-methyltransferase SETDB2 O...  98.2    6e-25
+sp|Q6YI93|SETB2_XENLA Histone-lysine N-methyltransferase SETDB2 O...  73.6    3e-16
+sp|A4IGY9|SETB2_XENTR Histone-lysine N-methyltransferase SETDB2 O...  72.8    6e-16
+sp|Q06ZW3|SETB2_DANRE Histone-lysine N-methyltransferase SETDB2 O...  49.7    8e-08
+
+
+>sp|Q96T68|SETB2_HUMAN Histone-lysine N-methyltransferase SETDB2 
+OS=Homo sapiens OX=9606 GN=SETDB2 PE=1 SV=2
+Length=719
+
+ Score = 113 bits (282),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 57/59 (97%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+
+Query  1   KNGDAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATII  59
+           KNGDAKTFW ELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQA ILVNEATII
+Sbjct  4   KNGDAKTFWMELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAMILVNEATII  62
+
+
+>sp|Q8C267|SETB2_MOUSE Histone-lysine N-methyltransferase SETDB2 
+OS=Mus musculus OX=10090 GN=Setdb2 PE=2 SV=2
+Length=713
+
+ Score = 98.2 bits (243),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 45/58 (78%), Positives = 51/58 (88%), Gaps = 0/58 (0%)
+
+Query  1   KNGDAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATI  58
+           KNGDAKTFW EL+DDGKVD +FE+ QNVL SLKQKIKDGSATN +Y+QA  LVNEAT+
+Sbjct  4   KNGDAKTFWMELQDDGKVDLMFEKTQNVLHSLKQKIKDGSATNGDYVQAMNLVNEATL  61
+
+
+>sp|Q6YI93|SETB2_XENLA Histone-lysine N-methyltransferase SETDB2 
+OS=Xenopus laevis OX=8355 GN=setdb2 PE=2 SV=2
+Length=703
+
+ Score = 73.6 bits (179),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 35/53 (66%), Positives = 43/53 (81%), Gaps = 0/53 (0%)
+
+Query  4   DAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEA  56
+           DAK +W + + DGKVD+IFE+V N L+ L QKIKDGSATN EY++A ILVNEA
+Sbjct  33  DAKKYWKDRQADGKVDWIFEKVLNKLKILWQKIKDGSATNLEYVRAVILVNEA  85
+
+
+>sp|A4IGY9|SETB2_XENTR Histone-lysine N-methyltransferase SETDB2 
+OS=Xenopus tropicalis OX=8364 GN=setdb2 PE=2 SV=1
+Length=697
+
+ Score = 72.8 bits (177),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 34/53 (64%), Positives = 43/53 (81%), Gaps = 0/53 (0%)
+
+Query  4   DAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEA  56
+           DAK +W + + DGKVD+IFE++ N L+ L QKIKDGSATN EY++A ILVNEA
+Sbjct  33  DAKEYWKDCQADGKVDWIFEKLLNKLKILWQKIKDGSATNLEYVRAVILVNEA  85
+
+
+>sp|Q06ZW3|SETB2_DANRE Histone-lysine N-methyltransferase SETDB2 
+OS=Danio rerio OX=7955 GN=setdb2 PE=2 SV=2
+Length=551
+
+ Score = 49.7 bits (117),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 38/55 (69%), Gaps = 4/55 (7%)
+
+Query  5   AKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATII  59
+           AKTFW E++ DG    +F+++  VL+ L+  ++  +AT++EY+QA  +V E+ +I
+Sbjct  8   AKTFWSEVDVDG----VFDELMEVLRRLRHTLRHNTATDREYVQAMRIVQESKLI  58
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.132    0.360    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4989071934
+Results from round 2
+
+
+Query= 5tfp_B
+
+Length=59
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q96T68|SETB2_HUMAN Histone-lysine N-methyltransferase SETDB2 O...  100     8e-26
+sp|Q8C267|SETB2_MOUSE Histone-lysine N-methyltransferase SETDB2 O...  100     9e-26
+sp|Q6YI93|SETB2_XENLA Histone-lysine N-methyltransferase SETDB2 O...  89.4    8e-22
+sp|A4IGY9|SETB2_XENTR Histone-lysine N-methyltransferase SETDB2 O...  87.0    6e-21
+sp|Q06ZW3|SETB2_DANRE Histone-lysine N-methyltransferase SETDB2 O...  77.8    1e-17
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q96T68|SETB2_HUMAN Histone-lysine N-methyltransferase SETDB2 
+OS=Homo sapiens OX=9606 GN=SETDB2 PE=1 SV=2
+Length=719
+
+ Score = 100 bits (250),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 57/59 (97%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+
+Query  1   KNGDAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATII  59
+           KNGDAKTFW ELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQA ILVNEATII
+Sbjct  4   KNGDAKTFWMELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAMILVNEATII  62
+
+
+>sp|Q8C267|SETB2_MOUSE Histone-lysine N-methyltransferase SETDB2 
+OS=Mus musculus OX=10090 GN=Setdb2 PE=2 SV=2
+Length=713
+
+ Score = 100 bits (250),  Expect = 9e-26, Method: Composition-based stats.
+ Identities = 45/58 (78%), Positives = 51/58 (88%), Gaps = 0/58 (0%)
+
+Query  1   KNGDAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATI  58
+           KNGDAKTFW EL+DDGKVD +FE+ QNVL SLKQKIKDGSATN +Y+QA  LVNEAT+
+Sbjct  4   KNGDAKTFWMELQDDGKVDLMFEKTQNVLHSLKQKIKDGSATNGDYVQAMNLVNEATL  61
+
+
+>sp|Q6YI93|SETB2_XENLA Histone-lysine N-methyltransferase SETDB2 
+OS=Xenopus laevis OX=8355 GN=setdb2 PE=2 SV=2
+Length=703
+
+ Score = 89.4 bits (220),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 35/53 (66%), Positives = 43/53 (81%), Gaps = 0/53 (0%)
+
+Query  4   DAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEA  56
+           DAK +W + + DGKVD+IFE+V N L+ L QKIKDGSATN EY++A ILVNEA
+Sbjct  33  DAKKYWKDRQADGKVDWIFEKVLNKLKILWQKIKDGSATNLEYVRAVILVNEA  85
+
+
+>sp|A4IGY9|SETB2_XENTR Histone-lysine N-methyltransferase SETDB2 
+OS=Xenopus tropicalis OX=8364 GN=setdb2 PE=2 SV=1
+Length=697
+
+ Score = 87.0 bits (214),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 34/53 (64%), Positives = 43/53 (81%), Gaps = 0/53 (0%)
+
+Query  4   DAKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEA  56
+           DAK +W + + DGKVD+IFE++ N L+ L QKIKDGSATN EY++A ILVNEA
+Sbjct  33  DAKEYWKDCQADGKVDWIFEKLLNKLKILWQKIKDGSATNLEYVRAVILVNEA  85
+
+
+>sp|Q06ZW3|SETB2_DANRE Histone-lysine N-methyltransferase SETDB2 
+OS=Danio rerio OX=7955 GN=setdb2 PE=2 SV=2
+Length=551
+
+ Score = 77.8 bits (190),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 21/55 (38%), Positives = 38/55 (69%), Gaps = 4/55 (7%)
+
+Query  5   AKTFWXELEDDGKVDFIFEQVQNVLQSLKQKIKDGSATNKEYIQAXILVNEATII  59
+           AKTFW E++ DG    +F+++  VL+ L+  ++  +AT++EY+QA  +V E+ +I
+Sbjct  8   AKTFWSEVDVDG----VFDELMEVLRRLRHTLRHNTATDREYVQAMRIVQESKLI  58
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.133    0.349    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4989071934
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

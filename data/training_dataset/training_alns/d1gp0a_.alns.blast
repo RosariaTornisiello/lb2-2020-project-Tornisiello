@@ -1,0 +1,1636 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1gp0a_
+
+Length=133
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate recep...  276     6e-86
+sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate recep...  254     2e-78
+sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate recep...  249     2e-76
+sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like p...  41.2    8e-04
+sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 1 ...  38.5    0.007
+
+
+>sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate receptor 
+OS=Homo sapiens OX=9606 GN=IGF2R PE=1 SV=3
+Length=2491
+
+ Score = 276 bits (706),  Expect = 6e-86, Method: Compositional matrix adjust.
+ Identities = 132/133 (99%), Positives = 132/133 (99%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV
+Sbjct  1515  DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  1574
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEA PTNRPMLISLDKQTC
+Sbjct  1575  GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEARPTNRPMLISLDKQTC  1634
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1635  TLFFSWHTPLACE  1647
+
+
+ Score = 59.7 bits (143),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 41/138 (30%), Positives = 67/138 (49%), Gaps = 9/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGAC----FG  54
+            +C V +   G  FDLS L+ + G     ++K   Y+++CG      C P  GAC      
+Sbjct  626  NCTVFDSQAGFSFDLSPLTKKNGAYKVETKKYDFYINVCGPVSVSPCQPDSGACQVAKSD  685
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G +N +L Y D ++QL Y+ G+P  ++      ++I+F+C  +AG    P    
+Sbjct  686  EKTWNLGLSNAKLSYYDGMIQLNYRGGTPYNNERHTPRATLITFLCDRDAG-VGFPEYQE  744
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             D  T    F W+T  AC
+Sbjct  745  EDNSTYN--FRWYTSYAC  760
+
+
+ Score = 53.9 bits (128),  Expect = 5e-08, Method: Compositional matrix adjust.
+ Identities = 44/143 (31%), Positives = 62/143 (43%), Gaps = 16/143 (11%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKG---LVYMSICGENE----NCPPGVGACFG  54
+            C ++        DL+ L+   G  ++Y   G   L Y+++CGE E    N          
+Sbjct  328  CSLSGEQQDVSIDLTPLAQSGG--SSYISDGKEYLFYLNVCGETEIQFCNKKQAAVCQVK  385
+
+Query  55   QTRISVGKA-----NKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+            ++  S  KA     N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   +
+Sbjct  386  KSDTSQVKAAGRYHNQTLRYSDGDLTLIYFGGDEC--SSGFQRMSVINFECNKTAGNDGK  443
+
+Query  110  PMLISLDKQTCTLFFSWHTPLAC  132
+               +   +  CT FF+W T  AC
+Sbjct  444  GTPVFTGEVDCTYFFTWDTEYAC  466
+
+
+ Score = 53.1 bits (126),  Expect = 8e-08, Method: Compositional matrix adjust.
+ Identities = 44/135 (33%), Positives = 63/135 (47%), Gaps = 16/135 (12%)
+
+Query  10    GHLFDLSSLSGRAGFTAAYSEKG---LVYMSICGE------NENCPPGVGACF--GQTRI  58
+             G+ FDLSSLS  +    A +  G      +++C         E CPP   AC   G   +
+Sbjct  1376  GNSFDLSSLSRYSDNWEAITGTGDPEHYLINVCKSLAPQAGTEPCPPEAAACLLGGSKPV  1435
+
+Query  59    SVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKS-VISFVCRPEAGPTNRPMLISLDK  117
+             ++G+     ++ D ++ L Y DG  CP   G+  KS  I F C  E+   +RPM IS   
+Sbjct  1436  NLGRVRDGPQWRDGIIVLKYVDGDLCP--DGIRKKSTTIRFTCS-ESQVNSRPMFISA-V  1491
+
+Query  118   QTCTLFFSWHTPLAC  132
+             + C   F+W T  AC
+Sbjct  1492  EDCEYTFAWPTATAC  1506
+
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 40/150 (27%), Positives = 58/150 (39%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGL--------VYMSICG-----ENENCPP  47
+             +C V N S+  + DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1651  ECSVRNGSS--IVDLSPLIHRTGGYEAYDESEDDASDTNPDFYINICQPLNPMHGVPCPA  1708
+
+Query  48    GVGAC---FGQTRISVGKAN--KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+      L  +   + L ++  +PC +    +Y S+I+F C+ 
+Sbjct  1709  GAAVCKVPIDGPPIDIGRVAGPPILNPIANEIYLNFESSTPCLADKHFNYTSLIAFHCK-  1767
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                    P L  L    C   F W TP+ C
+Sbjct  1768  RGVSMGTPKL--LRTSECDFVFEWETPVVC  1795
+
+
+ Score = 38.5 bits (88),  Expect = 0.010, Method: Compositional matrix adjust.
+ Identities = 32/112 (29%), Positives = 46/112 (41%), Gaps = 11/112 (10%)
+
+Query  29   SEKGLVYMSIC------GENENCPPGVGACFGQTRIS--VGKANKRLRYVDQVLQLVYKD  80
+            +EK   +++IC      G+   CP     C      S  +GK           +QL Y D
+Sbjct  509  TEKKHFFINICHRVLQEGKARGCPEDAAVCAVDKNGSKNLGKFISSPMKEKGNIQLSYSD  568
+
+Query  81   GSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+            G  C    G   K+ I+ VC+P     + P+L +  +  C   F WHT  AC
+Sbjct  569  GDDC--GHGKKIKTNITLVCKP-GDLESAPVLRTSGEGGCFYEFEWHTAAAC  617
+
+
+>sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate receptor 
+OS=Bos taurus OX=9913 GN=IGF2R PE=1 SV=2
+Length=2499
+
+ Score = 254 bits (650),  Expect = 2e-78, Method: Compositional matrix adjust.
+ Identities = 120/133 (90%), Positives = 128/133 (96%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNP+TGHLFDLSSLSGRAGFTAAYSEKGLVY+S+CG+NENC  GVGACFGQTRISV
+Sbjct  1524  DCQVTNPATGHLFDLSSLSGRAGFTAAYSEKGLVYLSVCGDNENCANGVGACFGQTRISV  1583
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL YVDQVLQLVY+ GSPCPSK+GLSYKSVISFVCRPE GPTNRPMLISLDK+TC
+Sbjct  1584  GKASKRLTYVDQVLQLVYEGGSPCPSKTGLSYKSVISFVCRPEVGPTNRPMLISLDKRTC  1643
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1644  TLFFSWHTPLACE  1656
+
+
+ Score = 62.8 bits (151),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 40/138 (29%), Positives = 70/138 (51%), Gaps = 10/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENE--NCPPGVGAC----FG  54
+            +C V +   G  FDL+ L+ +  +    ++K   ++++CG      CPP  GAC      
+Sbjct  635  NCTVFDSQAGFSFDLTPLTKKDAYKVE-TDKYEFHINVCGPVSVGACPPDSGACQVSRSD  693
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G++N +L Y D ++QL Y+DG+P  ++      ++I+F+C  +AG    P    
+Sbjct  694  RKSWNLGRSNAKLSYYDGMIQLTYRDGTPYNNEKRTPRATLITFLCDRDAG-VGFPEYQE  752
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             D  T    F W+T  AC
+Sbjct  753  EDNSTYN--FRWYTSYAC  768
+
+
+ Score = 50.8 bits (120),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 37/118 (31%), Positives = 52/118 (44%), Gaps = 11/118 (9%)
+
+Query  24   FTAAYSEKGLVYMSICGENEN--CPPGVGAC-------FGQTRISVGKANKRLRYVDQVL  74
+            F  + +++   Y+SICG ++   C     A          Q +++    N  LRY D  L
+Sbjct  360  FYTSEADEYTYYLSICGGSQAPICNKKDAAVCQVKKADSTQVKVAGRPQNLTLRYSDGDL  419
+
+Query  75   QLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+             L+Y  G  C   SG    SVI+F C   AG   R   +   +  CT FF+W T  AC
+Sbjct  420  TLIYFGGEEC--SSGFQRMSVINFECNQTAGNNGRGAPVFTGEVDCTYFFTWDTKYAC  475
+
+
+ Score = 45.1 bits (105),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 42/144 (29%), Positives = 64/144 (44%), Gaps = 17/144 (12%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV---YMSICGE------NENCPPGVGA  51
+             +C   N + G  +DLSSLS  +    A +  G      +++C        ++ CPP    
+Sbjct  1377  ECSFKNEA-GETYDLSSLSRYSDNWEAVTGTGSTEHYLINVCKSLSPQAGSDPCPPEAAV  1435
+
+Query  52    CF--GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSV-ISFVCRPEAGPTN  108
+             C   G   +++G+     ++   +  L Y DG  CP +  +  KS  I F C  E+   +
+Sbjct  1436  CLLGGPKPVNLGRVRDSPQWSQGLTLLKYVDGDLCPDQ--IRKKSTTIRFTCS-ESHVNS  1492
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+             RPM IS   + C   FSW T  AC
+Sbjct  1493  RPMFISA-VEDCEYTFSWPTAAAC  1515
+
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 42/150 (28%), Positives = 58/150 (39%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGL--------VYMSICG-----ENENCPP  47
+             +C V N S+  L DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1660  ECSVRNGSS--LIDLSPLIHRTGGYEAYDESEDDGSDTSPDFYINICQPLNPMHGLACPA  1717
+
+Query  48    GVGAC---FGQTRISVGKAN--KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+      L  +   + L ++  +PC +    +Y S+I+F C+ 
+Sbjct  1718  GTAVCKVPVDGPPIDIGRVAGPPILNPIANEVYLNFESSTPCLADRHFNYTSLITFHCK-  1776
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                    P L  L    C   F W TPL C
+Sbjct  1777  RGVSMGTPKL--LRTSVCDFVFEWETPLVC  1804
+
+
+>sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate receptor 
+OS=Mus musculus OX=10090 GN=Igf2r PE=1 SV=1
+Length=2483
+
+ Score = 249 bits (635),  Expect = 2e-76, Method: Compositional matrix adjust.
+ Identities = 119/133 (89%), Positives = 124/133 (93%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAG  A+YSEKGLV+MSIC ENENC PGVGACFGQTRISV
+Sbjct  1508  DCQVTNPSTGHLFDLSSLSGRAGINASYSEKGLVFMSICEENENCGPGVGACFGQTRISV  1567
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL Y DQVLQLVY++GSPCPS S L YKSVISFVCRPEAGPTNRPMLISLDKQTC
+Sbjct  1568  GKASKRLSYKDQVLQLVYENGSPCPSLSDLRYKSVISFVCRPEAGPTNRPMLISLDKQTC  1627
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1628  TLFFSWHTPLACE  1640
+
+
+ Score = 58.2 bits (139),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 40/137 (29%), Positives = 67/137 (49%), Gaps = 8/137 (6%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGAC---FGQ  55
+            +C V +   G  FDLS L+ + G     +EK   Y+++CG    + C    GAC      
+Sbjct  620  NCTVLDAQAGFSFDLSLLTKKNGAYKVETEKYDFYINVCGPVSMDPCQSNSGACQVAKSG  679
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+               ++G ++ +L Y D ++QL Y++G+P  ++      ++I+F+C  +AG    P     
+Sbjct  680  KSWNLGLSSTKLTYYDGMIQLSYRNGTPYNNEKHTPRATLITFLCDRDAG-VGFPEYQEE  738
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+            D  T    F W+T  AC
+Sbjct  739  DNSTYN--FRWYTSYAC  753
+
+
+ Score = 55.1 bits (131),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 47/143 (33%), Positives = 62/143 (43%), Gaps = 15/143 (10%)
+
+Query  1     DCQVTNPSTGHLFDLSSLS---------GRAGFTAAYSEKGLVYMSICGENENCPPGVGA  51
+             +C V + + G+  DLSSLS          R G T  Y       +S     E CPP    
+Sbjct  1361  ECSVQD-AAGNSIDLSSLSRYSDNWEAVTRTGATEHYLINVCKSLSPHAGTEPCPPEAAV  1419
+
+Query  52    CF--GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+             C   G   +++GK     ++ D V  L Y DG  CP K      ++I F C  +    +R
+Sbjct  1420  CLLNGSKPVNLGKVRDGPQWTDGVTVLQYVDGDLCPDKI-RRRSTIIRFTCS-DNQVNSR  1477
+
+Query  110   PMLISLDKQTCTLFFSWHTPLAC  132
+             P+ IS   Q C   FSW TP AC
+Sbjct  1478  PLFISA-VQDCEYTFSWPTPSAC  1499
+
+
+ Score = 53.9 bits (128),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 30/78 (38%), Positives = 38/78 (49%), Gaps = 2/78 (3%)
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            Q +I+    N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   R   + 
+Sbjct  386  QVKIAGRHQNQTLRYSDGDLTLIYSGGDEC--SSGFQRMSVINFECNKTAGKDGRGEPVF  443
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+              +  CT FF+W T  AC
+Sbjct  444  TGEVDCTYFFTWDTKYAC  461
+
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 23/79 (29%), Positives = 35/79 (44%), Gaps = 5/79 (6%)
+
+Query  54    GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLI  113
+             GQ ++      ++L  +D+ + + Y  G PC      S  SVI   C    G   RP   
+Sbjct  2045  GQVQVLGLVHTQKLEVIDETVIVTYSKGYPCGGNKTAS--SVIELTCAKTVG---RPAFK  2099
+
+Query  114   SLDKQTCTLFFSWHTPLAC  132
+               D  +CT +F W++  AC
+Sbjct  2100  RFDSVSCTYYFYWYSRAAC  2118
+
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 34/116 (29%), Positives = 49/116 (42%), Gaps = 12/116 (10%)
+
+Query  25   TAAYSEKGLVYMSIC------GENENCPPGVGACFGQTRIS--VGKANKRLRYVDQVLQL  76
+            + A SEK   ++++C      G+  NCP     C      S  +GK           +QL
+Sbjct  500  SQAESEK-YFFINVCHRVLQEGKARNCPEDAAVCAVDKNGSKNLGKFVSSPTKEKGHIQL  558
+
+Query  77   VYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+             Y DG  C S   +S  + I+ VC+P     + P+L +     C   F WHT  AC
+Sbjct  559  SYTDGDDCGSDKKIS--TNITLVCKP-GDLESAPVLRAARSDGCFYEFEWHTAAAC  611
+
+
+ Score = 39.3 bits (90),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 42/146 (29%), Positives = 64/146 (44%), Gaps = 25/146 (17%)
+
+Query  1     DCQVTNPSTGHLFDLSSLS-----GRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQ  55
+             DCQVT+P+ G+ +DLS+LS       A  T+AY ++   Y+S+C      P   G   G 
+Sbjct  1076  DCQVTDPA-GNEYDLSALSMVRKPWTAVDTSAYGKRRHFYLSVCNPLPYIPGCHGIALGS  1134
+
+Query  56    TRISVGKANKRLRYVDQV---------LQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGP  106
+               +S  + N     V Q+         L ++Y +G  C  +    + + I F C   +G 
+Sbjct  1135  CMVS--EDNSFNLGVVQISPQATGNGSLSILYVNGDRCGDQ---RFSTRIVFECAQTSG-  1188
+
+Query  107   TNRPMLISLDKQTCTLFFSWHTPLAC  132
+                PM   ++   C   F W T  AC
+Sbjct  1189  --SPMFQFVNN--CEYVFVWRTVEAC  1210
+
+
+>sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like 
+protein C530.09c OS=Schizosaccharomyces pombe (strain 972 
+/ ATCC 24843) OX=284812 GN=SPBC530.09c PE=3 SV=1
+Length=296
+
+ Score = 41.2 bits (95),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 37/154 (24%), Positives = 61/154 (40%), Gaps = 25/154 (16%)
+
+Query  2    CQVTNPSTGHLFDLSSL-SGRAGFTAAYSEKGLVY-----MSICG---------------  40
+            C + +P+TG  FDLS L          YS  G  +     +++C                
+Sbjct  44   CALHHPNTGEYFDLSGLIRDNTSEKGDYSVNGYDFGTNFSINLCHPVVSNLTNYTVEGDV  103
+
+Query  41   ENENCPPGVGACFGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVC  100
+             +E+   G          S+G+A  +  +  + L +   +GS CP  + +   ++ISF C
+Sbjct  104  SSEDSIGGFFTVEDDDLYSIGQAAYKPYFRGKKLIMQLDNGSLCPKSNHIRMSTLISFTC  163
+
+Query  101  RPEAGPTNRPMLISL--DKQTCTLFFSWHTPLAC  132
+              +  P   P +I+   +   C  FF W T  AC
+Sbjct  164  NRD--PYTAPSVITYVGNLNDCAFFFEWKTIHAC  195
+
+
+>sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 
+1 OS=Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 
+9923 / NRRL Y-1056) OX=284811 GN=MRL1 PE=3 SV=1
+Length=273
+
+ Score = 38.5 bits (88),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 31/105 (30%), Positives = 45/105 (43%), Gaps = 7/105 (7%)
+
+Query  2    CQVTNPSTGHLFDLSSL-SGRAGFTAAYSEKGLVY-----MSICGENENCPPGVGACFGQ  55
+            C V N STG   DLS L S  +G    +  +G  Y     + +C       P        
+Sbjct  32   CAVRNRSTGSYIDLSPLASNVSGTPPNWLVRGWQYGANFTLGVCTSPLGDGPAAYYSDTG  91
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVC  100
+             R+S+G+     RY  + L L Y+ G  CP++      S++ FVC
+Sbjct  92   RRVSIGRVATTPRYTGKKLTLTYEGGDLCPNRVDRK-SSLLYFVC  135
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999834232
+Results from round 2
+
+
+Query= d1gp0a_
+
+Length=133
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate recep...  244     1e-74
+sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate recep...  238     1e-72
+sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate recep...  236     5e-72
+sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like p...  191     2e-60
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 1 ...  75.5    4e-16
+sp|Q06815|MRL1_YEAST Mannose 6-phosphate receptor-like protein 1 ...  72.0    1e-14
+
+
+>sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate receptor 
+OS=Homo sapiens OX=9606 GN=IGF2R PE=1 SV=3
+Length=2491
+
+ Score = 244 bits (622),  Expect = 1e-74, Method: Composition-based stats.
+ Identities = 132/133 (99%), Positives = 132/133 (99%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV
+Sbjct  1515  DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  1574
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEA PTNRPMLISLDKQTC
+Sbjct  1575  GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEARPTNRPMLISLDKQTC  1634
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1635  TLFFSWHTPLACE  1647
+
+
+ Score = 64.7 bits (156),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 40/138 (29%), Positives = 68/138 (49%), Gaps = 9/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF----G  54
+            +C V +   G  FDLS L+ + G     ++K   Y+++CG      C P  GAC      
+Sbjct  626  NCTVFDSQAGFSFDLSPLTKKNGAYKVETKKYDFYINVCGPVSVSPCQPDSGACQVAKSD  685
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G +N +L Y D ++QL Y+ G+P  ++      ++I+F+C  +AG    P    
+Sbjct  686  EKTWNLGLSNAKLSYYDGMIQLNYRGGTPYNNERHTPRATLITFLCDRDAG-VGFPEY--  742
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             ++   T  F W+T  AC
+Sbjct  743  QEEDNSTYNFRWYTSYAC  760
+
+
+ Score = 62.0 bits (149),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 44/135 (33%), Positives = 63/135 (47%), Gaps = 16/135 (12%)
+
+Query  10    GHLFDLSSLSGRAGFTAAYSEKG---LVYMSICGE------NENCPPGVGACF--GQTRI  58
+             G+ FDLSSLS  +    A +  G      +++C         E CPP   AC   G   +
+Sbjct  1376  GNSFDLSSLSRYSDNWEAITGTGDPEHYLINVCKSLAPQAGTEPCPPEAAACLLGGSKPV  1435
+
+Query  59    SVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSV-ISFVCRPEAGPTNRPMLISLDK  117
+             ++G+     ++ D ++ L Y DG  CP   G+  KS  I F C  E+   +RPM IS   
+Sbjct  1436  NLGRVRDGPQWRDGIIVLKYVDGDLCP--DGIRKKSTTIRFTCS-ESQVNSRPMFISA-V  1491
+
+Query  118   QTCTLFFSWHTPLAC  132
+             + C   F+W T  AC
+Sbjct  1492  EDCEYTFAWPTATAC  1506
+
+
+ Score = 53.6 bits (127),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 37/150 (25%), Positives = 57/150 (38%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICG-----ENENCPP  47
+             +C V N S+  + DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1651  ECSVRNGSS--IVDLSPLIHRTGGYEAYDESEDDASDTNPDFYINICQPLNPMHGVPCPA  1708
+
+Query  48    GVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+         +   + L ++  +PC +    +Y S+I+F C+ 
+Sbjct  1709  GAAVCKVPIDGPPIDIGRVAGPPILNPIANEIYLNFESSTPCLADKHFNYTSLIAFHCKR  1768
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                     +L +     C   F W TP+ C
+Sbjct  1769  GVSMGTPKLLRT---SECDFVFEWETPVVC  1795
+
+
+ Score = 53.2 bits (126),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 43/143 (30%), Positives = 59/143 (41%), Gaps = 16/143 (11%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKG---LVYMSICGENE-----NCPPGVGACF  53
+            C ++        DL+ L+   G  ++Y   G   L Y+++CGE E          V    
+Sbjct  328  CSLSGEQQDVSIDLTPLAQSGG--SSYISDGKEYLFYLNVCGETEIQFCNKKQAAVCQVK  385
+
+Query  54   GQTRISVGKA----NKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+                  V  A    N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   +
+Sbjct  386  KSDTSQVKAAGRYHNQTLRYSDGDLTLIYFGGDEC--SSGFQRMSVINFECNKTAGNDGK  443
+
+Query  110  PMLISLDKQTCTLFFSWHTPLAC  132
+               +   +  CT FF+W T  AC
+Sbjct  444  GTPVFTGEVDCTYFFTWDTEYAC  466
+
+
+ Score = 48.5 bits (114),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 36/146 (25%), Positives = 59/146 (40%), Gaps = 24/146 (16%)
+
+Query  1     DCQVTNPSTGHLFDLS--SLSGRAGFTAAYSEKGLVYMSICG--ENENCPPG-----VGA  51
+             +C+V +P  G+L+DL    L+        Y+     Y  +CG   ++ CP       V +
+Sbjct  1226  NCEVKDPRHGNLYDLKPLGLNDTIVSAGEYTY----YFRVCGKLSSDVCPTSDKSKVVSS  1281
+
+Query  52    C----FGQTRISV-GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGP  106
+             C      Q    V G   ++L Y + +L++ +  G  C         + I F C      
+Sbjct  1282  CQEKREPQGFHKVAGLLTQKLTYENGLLKMNFTGGDTCHKV--YQRSTAIFFYCDRG---  1336
+
+Query  107   TNRPMLISLDKQTCTLFFSWHTPLAC  132
+             T RP+ +  +   C+  F W T  AC
+Sbjct  1337  TQRPVFLK-ETSDCSYLFEWRTQYAC  1361
+
+
+ Score = 44.7 bits (104),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 31/112 (28%), Positives = 45/112 (40%), Gaps = 11/112 (10%)
+
+Query  29   SEKGLVYMSICG------ENENCPPGVGACFGQTRIS--VGKANKRLRYVDQVLQLVYKD  80
+            +EK   +++IC       +   CP     C      S  +GK           +QL Y D
+Sbjct  509  TEKKHFFINICHRVLQEGKARGCPEDAAVCAVDKNGSKNLGKFISSPMKEKGNIQLSYSD  568
+
+Query  81   GSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+            G  C    G   K+ I+ VC+P     + P+L +  +  C   F WHT  AC
+Sbjct  569  GDDC--GHGKKIKTNITLVCKP-GDLESAPVLRTSGEGGCFYEFEWHTAAAC  617
+
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 47/128 (37%), Gaps = 13/128 (10%)
+
+Query  13    FDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVG--------ACFGQTRISVGKAN  64
+             +DL  LS   G  +        Y+++C +    P G             G  ++      
+Sbjct  2003  YDLRLLSSLTGSWSLVHNGVSYYINLCQKIYKGPLGCSERASICRRTTTGDVQVLGLVHT  2062
+
+Query  65    KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFF  124
+             ++L  +   + + Y  G PC      +  SVI   C    G   RP     D  +CT +F
+Sbjct  2063  QKLGVIGDKVVVTYSKGYPCGGNK--TASSVIELTCTKTVG---RPAFKRFDIDSCTYYF  2117
+
+Query  125   SWHTPLAC  132
+             SW +  AC
+Sbjct  2118  SWDSRAAC  2125
+
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 44/164 (27%), Positives = 65/164 (40%), Gaps = 39/164 (24%)
+
+Query  1    DCQVTNPSTGHLFDLSSLS-------------GRAGFTAAYSEKGLVYMSICGENENCPP  47
+            +C VT+PST   +DLSSL+               +G    + +    Y+++C    N  P
+Sbjct  766  ECVVTDPSTLEQYDLSSLAKSEGGLGGNWYAMDNSGEHVTWRK---YYINVCRP-LNPVP  821
+
+Query  48   G----VGACF-----GQTRIS-------VGKANKRLRYVDQ-VLQLVYKDGSPCPSKSG-  89
+            G      AC       Q   +       +G A       D   L L Y +GS C +  G 
+Sbjct  822  GCNRYASACQMKYEKDQGSFTEVVSISNLGMAKTGPVVEDSGSLLLEYVNGSACTTSDGR  881
+
+Query  90   -LSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+              +Y + I  VC    G  N   + SL+ + C + F W+T  AC
+Sbjct  882  QTTYTTRIHLVCSR--GRLNSHPIFSLNWE-CVVSFLWNTEAAC  922
+
+
+>sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate receptor 
+OS=Mus musculus OX=10090 GN=Igf2r PE=1 SV=1
+Length=2483
+
+ Score = 238 bits (607),  Expect = 1e-72, Method: Composition-based stats.
+ Identities = 119/133 (89%), Positives = 124/133 (93%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAG  A+YSEKGLV+MSIC ENENC PGVGACFGQTRISV
+Sbjct  1508  DCQVTNPSTGHLFDLSSLSGRAGINASYSEKGLVFMSICEENENCGPGVGACFGQTRISV  1567
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL Y DQVLQLVY++GSPCPS S L YKSVISFVCRPEAGPTNRPMLISLDKQTC
+Sbjct  1568  GKASKRLSYKDQVLQLVYENGSPCPSLSDLRYKSVISFVCRPEAGPTNRPMLISLDKQTC  1627
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1628  TLFFSWHTPLACE  1640
+
+
+ Score = 66.7 bits (161),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 47/143 (33%), Positives = 62/143 (43%), Gaps = 15/143 (10%)
+
+Query  1     DCQVTNPSTGHLFDLSSLS---------GRAGFTAAYSEKGLVYMSICGENENCPPGVGA  51
+             +C V + + G+  DLSSLS          R G T  Y       +S     E CPP    
+Sbjct  1361  ECSVQD-AAGNSIDLSSLSRYSDNWEAVTRTGATEHYLINVCKSLSPHAGTEPCPPEAAV  1419
+
+Query  52    CF--GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+             C   G   +++GK     ++ D V  L Y DG  CP K      ++I F C  +    +R
+Sbjct  1420  CLLNGSKPVNLGKVRDGPQWTDGVTVLQYVDGDLCPDKIR-RRSTIIRFTCS-DNQVNSR  1477
+
+Query  110   PMLISLDKQTCTLFFSWHTPLAC  132
+             P+ IS   Q C   FSW TP AC
+Sbjct  1478  PLFISA-VQDCEYTFSWPTPSAC  1499
+
+
+ Score = 63.2 bits (152),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 39/137 (28%), Positives = 68/137 (50%), Gaps = 8/137 (6%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF---GQ  55
+            +C V +   G  FDLS L+ + G     +EK   Y+++CG    + C    GAC      
+Sbjct  620  NCTVLDAQAGFSFDLSLLTKKNGAYKVETEKYDFYINVCGPVSMDPCQSNSGACQVAKSG  679
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+               ++G ++ +L Y D ++QL Y++G+P  ++      ++I+F+C  +AG    P     
+Sbjct  680  KSWNLGLSSTKLTYYDGMIQLSYRNGTPYNNEKHTPRATLITFLCDRDAG-VGFPEY--Q  736
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+            ++   T  F W+T  AC
+Sbjct  737  EEDNSTYNFRWYTSYAC  753
+
+
+ Score = 53.2 bits (126),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 43/143 (30%), Positives = 61/143 (43%), Gaps = 16/143 (11%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVY---MSICGENEN--CPPGVGAC----  52
+            C +++       DLS L+   G  + Y   G  Y   +++CG+ +   C     A     
+Sbjct  323  CSLSSEQHDITIDLSPLAQYGG--SPYVSDGREYTFFINVCGDTKVSLCNNKEAAVCQEK  380
+
+Query  53   ---FGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+                 Q +I+    N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   R
+Sbjct  381  KADSTQVKIAGRHQNQTLRYSDGDLTLIYSGGDEC--SSGFQRMSVINFECNKTAGKDGR  438
+
+Query  110  PMLISLDKQTCTLFFSWHTPLAC  132
+               +   +  CT FF+W T  AC
+Sbjct  439  GEPVFTGEVDCTYFFTWDTKYAC  461
+
+
+ Score = 52.8 bits (125),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 39/150 (26%), Positives = 58/150 (39%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICG-----ENENCPP  47
+             +C V N S+  + DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1644  ECTVRNGSS--IIDLSPLIHRTGGYEAYDESEDDTSDTTPDFYINICQPLNPMHGVPCPA  1701
+
+Query  48    GVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+      +  V   + L ++  + C +   ++Y S+I+F C+ 
+Sbjct  1702  GASVCKVPVDGPPIDIGRVTGPPIFNPVANEVYLNFESSTHCLADRYMNYTSLITFHCKR  1761
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                    P LI      C   F W TP+ C
+Sbjct  1762  GVSMGT-PKLIR--TNDCDFVFEWETPIVC  1788
+
+
+ Score = 51.6 bits (122),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 31/146 (21%), Positives = 56/146 (38%), Gaps = 24/146 (16%)
+
+Query  1     DCQVTNPSTGHLFDLS--SLSGRAGFTAAYSEKGLVYMSICG-------ENENCPPGVGA  51
+             +CQV +P  G+L+DL    L+        Y+     Y+ +CG          +    V +
+Sbjct  1219  NCQVKDPRHGNLYDLKPLGLNDTIVSVGEYTY----YLRVCGKLSSDVCSAHDGSKAVSS  1274
+
+Query  52    CFGQT-----RISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGP  106
+             C  +      +   G  +++L + + +L++ Y  G  C         + I F C      
+Sbjct  1275  CQEKKGPQGFQKVAGLLSQKLTFENGLLKMNYTGGDTCHKV--YQRSTTIYFYCDR----  1328
+
+Query  107   TNRPMLISLDKQTCTLFFSWHTPLAC  132
+             T +  +   +   C+  F W T  AC
+Sbjct  1329  TTQKPVFLKETSDCSYMFEWRTQYAC  1354
+
+
+ Score = 48.2 bits (113),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 39/144 (27%), Positives = 62/144 (43%), Gaps = 21/144 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSG-----RAGFTAAYSEKGLVYMSICGENENCPP----GVGA  51
+             DCQVT+P+ G+ +DLS+LS       A  T+AY ++   Y+S+C      P      +G+
+Sbjct  1076  DCQVTDPA-GNEYDLSALSMVRKPWTAVDTSAYGKRRHFYLSVCNPLPYIPGCHGIALGS  1134
+
+Query  52    CF--GQTRISVGKANKRLRYVDQ-VLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+             C        ++G      +      L ++Y +G  C       + + I F C   +G   
+Sbjct  1135  CMVSEDNSFNLGVVQISPQATGNGSLSILYVNGDRC---GDQRFSTRIVFECAQTSG---  1188
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+              PM   ++   C   F W T  AC
+Sbjct  1189  SPMFQFVN--NCEYVFVWRTVEAC  1210
+
+
+ Score = 45.9 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 32/114 (28%), Positives = 45/114 (39%), Gaps = 12/114 (11%)
+
+Query  27   AYSEKGLVYMSICG------ENENCPPGVGACFGQTRIS--VGKANKRLRYVDQVLQLVY  78
+            A SEK   ++++C       +  NCP     C      S  +GK           +QL Y
+Sbjct  502  AESEK-YFFINVCHRVLQEGKARNCPEDAAVCAVDKNGSKNLGKFVSSPTKEKGHIQLSY  560
+
+Query  79   KDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+             DG  C   S     + I+ VC+P     + P+L +     C   F WHT  AC
+Sbjct  561  TDGDDC--GSDKKISTNITLVCKP-GDLESAPVLRAARSDGCFYEFEWHTAAAC  611
+
+
+ Score = 43.2 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 37/149 (25%), Positives = 58/149 (39%), Gaps = 23/149 (15%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVG----ACFGQTR  57
+             C + +PS+G +F+LS L+  A              +ICG    C    G     C  +T+
+Sbjct  927   CSIRDPSSGFVFNLSPLNDSAQGHVVLGIGKTFVFNICGAMPACGTVAGKPAYGCEAETQ  986
+
+Query  58    ISVGK--ANKRLRYVDQVLQ--------LVYKDGSPCPSKSGLSYKSVISFVCRPEAGPT  107
+             I   K    +R   +++ LQ        L YK  SP    +      +I F+C  +  P 
+Sbjct  987   IEDIKDLRPQRPVGMERSLQLSAEGFLTLTYKGSSPSDRGTAF----IIRFICNDDIYP-  1041
+
+Query  108   NRPMLISLDKQTC----TLFFSWHTPLAC  132
+               P  +  D  +       +F + T LAC
+Sbjct  1042  GAPKFLHQDIDSTRGIRNTYFEFETALAC  1070
+
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 50/128 (39%), Gaps = 13/128 (10%)
+
+Query  13    FDLSSLSGRAGFTAAYSEKGLVYMSICGE----NENCPPGVGACF----GQTRISVGKAN  64
+             +DL  LS   G      E    ++++C        +C      C     GQ ++      
+Sbjct  1996  YDLRLLSSLTGSWDFVHEGNSYFINLCQRVYKGPLDCSERASICKKSATGQVQVLGLVHT  2055
+
+Query  65    KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFF  124
+             ++L  +D+ + + Y  G PC      +  SVI   C    G   RP     D  +CT +F
+Sbjct  2056  QKLEVIDETVIVTYSKGYPCGGNK--TASSVIELTCAKTVG---RPAFKRFDSVSCTYYF  2110
+
+Query  125   SWHTPLAC  132
+              W++  AC
+Sbjct  2111  YWYSRAAC  2118
+
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 38/145 (26%), Positives = 48/145 (33%), Gaps = 21/145 (14%)
+
+Query  4     VTNPSTGH-------LFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACF---  53
+             +TNP TG         F L S SG            +   SI   +     G   C    
+Sbjct  2132  LTNPVTGKSFSLGEIYFKLFSASGDMRTNGDNYLYEIQLSSITSSSYPACAGANICQVKP  2191
+
+Query  54    GQTRIS--VGKANKRLRYV-DQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP---EAGPT  107
+                  S  VG ++    YV D  L +V+   S C      S  S I F C P   +  P 
+Sbjct  2192  NDQHFSRKVGTSDMTKYYVQDGDLDVVFTSSSKCGKDKTKSVSSTIFFHCDPLVKDGIPE  2251
+
+Query  108   NRPMLISLDKQTCTLFFSWHTPLAC  132
+                   S +   C   FSW+T   C
+Sbjct  2252  -----FSHETADCQYLFSWYTSAVC  2271
+
+
+>sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate receptor 
+OS=Bos taurus OX=9913 GN=IGF2R PE=1 SV=2
+Length=2499
+
+ Score = 236 bits (602),  Expect = 5e-72, Method: Composition-based stats.
+ Identities = 120/133 (90%), Positives = 128/133 (96%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNP+TGHLFDLSSLSGRAGFTAAYSEKGLVY+S+CG+NENC  GVGACFGQTRISV
+Sbjct  1524  DCQVTNPATGHLFDLSSLSGRAGFTAAYSEKGLVYLSVCGDNENCANGVGACFGQTRISV  1583
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL YVDQVLQLVY+ GSPCPSK+GLSYKSVISFVCRPE GPTNRPMLISLDK+TC
+Sbjct  1584  GKASKRLTYVDQVLQLVYEGGSPCPSKTGLSYKSVISFVCRPEVGPTNRPMLISLDKRTC  1643
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1644  TLFFSWHTPLACE  1656
+
+
+ Score = 61.3 bits (147),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 39/138 (28%), Positives = 71/138 (51%), Gaps = 10/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF----G  54
+            +C V +   G  FDL+ L+ +  +    ++K   ++++CG      CPP  GAC      
+Sbjct  635  NCTVFDSQAGFSFDLTPLTKKDAYKVE-TDKYEFHINVCGPVSVGACPPDSGACQVSRSD  693
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G++N +L Y D ++QL Y+DG+P  ++      ++I+F+C  +AG    P    
+Sbjct  694  RKSWNLGRSNAKLSYYDGMIQLTYRDGTPYNNEKRTPRATLITFLCDRDAG-VGFPEY--  750
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             ++   T  F W+T  AC
+Sbjct  751  QEEDNSTYNFRWYTSYAC  768
+
+
+ Score = 55.1 bits (131),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 40/144 (28%), Positives = 62/144 (43%), Gaps = 17/144 (12%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRA----GFTAAYSEKGLVYMSICGE------NENCPPGVG  50
+             +C   N + G  +DLSSLS  +      T   S +    +++C        ++ CPP   
+Sbjct  1377  ECSFKNEA-GETYDLSSLSRYSDNWEAVTGTGSTEHY-LINVCKSLSPQAGSDPCPPEAA  1434
+
+Query  51    ACF--GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+              C   G   +++G+     ++   +  L Y DG  CP +      + I F C  E+   +
+Sbjct  1435  VCLLGGPKPVNLGRVRDSPQWSQGLTLLKYVDGDLCPDQIR-KKSTTIRFTCS-ESHVNS  1492
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+             RPM IS   + C   FSW T  AC
+Sbjct  1493  RPMFISA-VEDCEYTFSWPTAAAC  1515
+
+
+ Score = 55.1 bits (131),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 39/150 (26%), Positives = 57/150 (38%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICG-----ENENCPP  47
+             +C V N S+  L DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1660  ECSVRNGSS--LIDLSPLIHRTGGYEAYDESEDDGSDTSPDFYINICQPLNPMHGLACPA  1717
+
+Query  48    GVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+         +   + L ++  +PC +    +Y S+I+F C+ 
+Sbjct  1718  GTAVCKVPVDGPPIDIGRVAGPPILNPIANEVYLNFESSTPCLADRHFNYTSLITFHCKR  1777
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                     +L +     C   F W TPL C
+Sbjct  1778  GVSMGTPKLLRT---SVCDFVFEWETPLVC  1804
+
+
+ Score = 48.9 bits (115),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 46/107 (43%), Gaps = 11/107 (10%)
+
+Query  35   YMSICGENENCP---PGVGACF----GQTRISVG--KANKRLRYVDQVLQLVYKDGSPCP  85
+            Y+SICG ++           C       T++ V     N  LRY D  L L+Y  G  C 
+Sbjct  371  YLSICGGSQAPICNKKDAAVCQVKKADSTQVKVAGRPQNLTLRYSDGDLTLIYFGGEEC-  429
+
+Query  86   SKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+              SG    SVI+F C   AG   R   +   +  CT FF+W T  AC
+Sbjct  430  -SSGFQRMSVINFECNQTAGNNGRGAPVFTGEVDCTYFFTWDTKYAC  475
+
+
+ Score = 47.4 bits (111),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 40/145 (28%), Positives = 52/145 (36%), Gaps = 21/145 (14%)
+
+Query  4     VTNPSTGHLFDLSSLS-GRAGFTAAYSEKGLVYM------SICGENENCPPGVGACF---  53
+             +TNP+ G  F L  +   R   +      G  Y+      SI G +     G   C    
+Sbjct  2148  ITNPANGRSFSLGDIYFKRFSASGDVRTNGDRYIYEIQLSSITGSSSPACSGASICQRKA  2207
+
+Query  54    GQTRIS--VGKANKRLRYV-DQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP---EAGPT  107
+                  S  VG +N+   YV D  L +V+   S C      S  S I F C P   +  P 
+Sbjct  2208  NDQHFSRKVGTSNQTRYYVQDGDLDVVFTSSSKCGKDKTKSVSSTIFFHCDPLVKDGIPE  2267
+
+Query  108   NRPMLISLDKQTCTLFFSWHTPLAC  132
+                   S +   C   FSWHT   C
+Sbjct  2268  -----FSHETADCQYLFSWHTSAVC  2287
+
+
+ Score = 47.4 bits (111),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 37/144 (26%), Positives = 59/144 (41%), Gaps = 21/144 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSG-----RAGFTAAYSEKGLVYMSICGENENCPPGVGACFG-  54
+             DCQVT+P+ G+ +DLS LS       A  T    +K   Y+S+C      P   G   G 
+Sbjct  1092  DCQVTDPA-GNEYDLSGLSKARKPWTAVDTFDEGKKRTFYLSVCTPLPYIPGCHGTAVGC  1150
+
+Query  55    -----QTRISVGKANKRLRY-VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+                   +++++G      +   +  L LVY +G  C ++    + + I+  C    G   
+Sbjct  1151  CLVTEDSKLNLGVVQISPQVGANGSLSLVYVNGDKCKNQ---RFSTRINLECAHTTGSPT  1207
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+               +     +  C   F W T  AC
+Sbjct  1208  FQL-----QNDCEYVFLWRTVEAC  1226
+
+
+ Score = 47.4 bits (111),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 33/145 (23%), Positives = 56/145 (39%), Gaps = 24/145 (17%)
+
+Query  2     CQVTNPSTGHLFDLS--SLSGRAGFTAAYSEKGLVYMSICGE-------NENCPPGVGAC  52
+             C+V +P  G+L++L    L+        Y+     Y  +CGE         +    + +C
+Sbjct  1236  CEVRDPRHGNLYNLIPLGLNDTVVRAGEYTY----YFRVCGELTSGVCPTSDKSKVISSC  1291
+
+Query  53    FGQT-----RISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPT  107
+               +      +   G  N++L Y + VL++ Y  G  C         + I F C      T
+Sbjct  1292  QEKRGPQGFQKVAGLFNQKLTYENGVLKMNYTGGDTCHKV--YQRSTTIFFYCDRS---T  1346
+
+Query  108   NRPMLISLDKQTCTLFFSWHTPLAC  132
+               P+ +  +   C+  F W T  AC
+Sbjct  1347  QAPVFLQ-ETSDCSYLFEWRTQYAC  1370
+
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 32/137 (23%), Positives = 51/137 (37%), Gaps = 20/137 (15%)
+
+Query  13   FDLSSLSGRAGFTAAY---------SEKGLVYMSICG------ENENCPPGVGACFGQTR  57
+            FDLS+L+  +     +         +EK   +++IC       +   CP     C     
+Sbjct  493  FDLSALARHSELEQNWEAVDGSQREAEKKHFFINICHRVLQTGQARGCPEDAAVCAVDKN  552
+
+Query  58   IS--VGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+             S  +G+           +QL Y DG  C    G    + I+ +C+P     + P+L + 
+Sbjct  553  GSKNLGRFISSPTREKGNIQLSYSDGDEC--GGGQKIITNITLMCKP-GDLESAPVLTTS  609
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+                C   F W T  AC
+Sbjct  610  RADGCFYEFEWRTAAAC  626
+
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 37/147 (25%), Positives = 67/147 (46%), Gaps = 18/147 (12%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVG----ACFGQTR  57
+             C + +P++G++FDL+ L+   G+      K  ++ ++CG+   C    G     C  + +
+Sbjct  942   CSIKDPNSGYVFDLNPLNNSRGYVVLGIGKTFLF-NVCGDMPACGTLDGKPASGCEAEVQ  1000
+
+Query  58    ISVGKANK--RLRYVDQVLQLVYK-----DGSPCPSK-SGLSYKSVISFVCRPEAGPTNR  109
+             +   K  K  RL  +++ LQL  +     + +  PS  +G +   +I FVC  +  P   
+Sbjct  1001  MDDMKTLKPGRLVGLEKSLQLSTEGFITLNYTGLPSHPNGRADAFIIRFVCNDDVYPGT-  1059
+
+Query  110   PMLISLDKQTC----TLFFSWHTPLAC  132
+             P  +  D  +       FF + T LAC
+Sbjct  1060  PKFLHQDIDSSLGIRDTFFEFETALAC  1086
+
+
+ Score = 41.6 bits (96),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 47/128 (37%), Gaps = 13/128 (10%)
+
+Query  13    FDLSSLSGRAGFTAAYSEKGLVYMSICGE----NENCPPGVGACFGQTRISVGKA----N  64
+             +DL  LS   G  +        Y+++C +     ++C      C   T   V        
+Sbjct  2012  YDLRLLSSLTGSWSFVHNGASYYINLCQKIYKGPQDCSERASVCKKSTSGEVQVLGLVHT  2071
+
+Query  65    KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFF  124
+             ++L  VD  + + Y  G  C      +  +VI   C    G   RP     D  +CT  F
+Sbjct  2072  QKLDVVDDRVIVTYSKGHYCGDNK--TASAVIELTCAKTVG---RPSFTRFDVDSCTYHF  2126
+
+Query  125   SWHTPLAC  132
+             SW +  AC
+Sbjct  2127  SWDSRAAC  2134
+
+
+>sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like 
+protein C530.09c OS=Schizosaccharomyces pombe (strain 972 
+/ ATCC 24843) OX=284812 GN=SPBC530.09c PE=3 SV=1
+Length=296
+
+ Score = 191 bits (484),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 37/154 (24%), Positives = 61/154 (40%), Gaps = 25/154 (16%)
+
+Query  2    CQVTNPSTGHLFDLSSL-SGRAGFTAAYSEKGLVY-----MSICG---------------  40
+            C + +P+TG  FDLS L          YS  G  +     +++C                
+Sbjct  44   CALHHPNTGEYFDLSGLIRDNTSEKGDYSVNGYDFGTNFSINLCHPVVSNLTNYTVEGDV  103
+
+Query  41   ENENCPPGVGACFGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVC  100
+             +E+   G          S+G+A  +  +  + L +   +GS CP  + +   ++ISF C
+Sbjct  104  SSEDSIGGFFTVEDDDLYSIGQAAYKPYFRGKKLIMQLDNGSLCPKSNHIRMSTLISFTC  163
+
+Query  101  RPEAGPTNRPMLISL--DKQTCTLFFSWHTPLAC  132
+              +  P   P +I+   +   C  FF W T  AC
+Sbjct  164  NRD--PYTAPSVITYVGNLNDCAFFFEWKTIHAC  195
+
+
+>sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 
+1 OS=Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 
+9923 / NRRL Y-1056) OX=284811 GN=MRL1 PE=3 SV=1
+Length=273
+
+ Score = 75.5 bits (184),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 33/135 (24%), Positives = 54/135 (40%), Gaps = 8/135 (6%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGR-AGFTAAYSEKGLVY-----MSICGENENCPPGVGACFGQ  55
+            C V N STG   DLS L+   +G    +  +G  Y     + +C       P        
+Sbjct  32   CAVRNRSTGSYIDLSPLASNVSGTPPNWLVRGWQYGANFTLGVCTSPLGDGPAAYYSDTG  91
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+             R+S+G+     RY  + L L Y+ G  CP++      S++ FVC  +     +  L+ +
+Sbjct  92   RRVSIGRVATTPRYTGKKLTLTYEGGDLCPNRVD-RKSSLLYFVCDRDIHTIAQVSLLGV  150
+
+Query  116  DKQTCTLFFSWHTPL  130
+                C+  F   +  
+Sbjct  151  -LHNCSYLFEVRSVH  164
+
+
+>sp|Q06815|MRL1_YEAST Mannose 6-phosphate receptor-like protein 
+1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=MRL1 PE=1 SV=1
+Length=381
+
+ Score = 72.0 bits (175),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 42/168 (25%), Positives = 60/168 (36%), Gaps = 39/168 (23%)
+
+Query  2    CQVTNPSTGHLFDLSSLSG-----------------RAGFTAAYSEKGLVY-----MSIC  39
+            C VTNP TG   DLS LS                         +S +G  Y     + IC
+Sbjct  63   CAVTNPVTGSYIDLSQLSSTPNKLREGQKQISGNNKHESSKTKWSVRGWGYDTNFTLGIC  122
+
+Query  40   ----GENE-----NCPPGVGA--CFGQTRISVGKANKRLRYVD----QVLQLVYKDGSPC  84
+                GE E     N               +S+G  + R   V     + L L Y++GS C
+Sbjct  123  SSPVGEAESQQLSNLTGAFYVDQLNENNLVSIGDFSTRPALVGGSTAKKLTLKYENGSMC  182
+
+Query  85   PSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+            P+       ++++FVC  E     +   I  +   C+ FF   +  AC
+Sbjct  183  PNGKD-KKATLLNFVCDKEIQSKAQISYIG-NLHNCSYFFEVRSIHAC  228
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.132    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999834232
+Results from round 3
+
+
+Query= d1gp0a_
+
+Length=133
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate recep...  218     1e-65
+sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate recep...  215     1e-64
+sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate recep...  213     8e-64
+sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like p...  172     3e-53
+sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 1 ...  170     6e-53
+sp|Q06815|MRL1_YEAST Mannose 6-phosphate receptor-like protein 1 ...  152     8e-45
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P11717|MPRI_HUMAN Cation-independent mannose-6-phosphate receptor 
+OS=Homo sapiens OX=9606 GN=IGF2R PE=1 SV=3
+Length=2491
+
+ Score = 218 bits (555),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 132/133 (99%), Positives = 132/133 (99%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV
+Sbjct  1515  DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  1574
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEA PTNRPMLISLDKQTC
+Sbjct  1575  GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEARPTNRPMLISLDKQTC  1634
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1635  TLFFSWHTPLACE  1647
+
+
+ Score = 67.0 bits (162),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 41/138 (30%), Positives = 67/138 (49%), Gaps = 9/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF----G  54
+            +C V +   G  FDLS L+ + G     ++K   Y+++CG      C P  GAC      
+Sbjct  626  NCTVFDSQAGFSFDLSPLTKKNGAYKVETKKYDFYINVCGPVSVSPCQPDSGACQVAKSD  685
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G +N +L Y D ++QL Y+ G+P  ++      ++I+F+C  +AG    P    
+Sbjct  686  EKTWNLGLSNAKLSYYDGMIQLNYRGGTPYNNERHTPRATLITFLCDRDAG-VGFPEYQE  744
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             D    T  F W+T  AC
+Sbjct  745  ED--NSTYNFRWYTSYAC  760
+
+
+ Score = 65.5 bits (158),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 40/134 (30%), Positives = 56/134 (42%), Gaps = 14/134 (10%)
+
+Query  10    GHLFDLSSLS---------GRAGFTAAYSEKGLVYMSICGENENCPPGVGACF--GQTRI  58
+             G+ FDLSSLS            G    Y       ++     E CPP   AC   G   +
+Sbjct  1376  GNSFDLSSLSRYSDNWEAITGTGDPEHYLINVCKSLAPQAGTEPCPPEAAACLLGGSKPV  1435
+
+Query  59    SVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQ  118
+             ++G+     ++ D ++ L Y DG  CP        + I F C  E+   +RPM IS   +
+Sbjct  1436  NLGRVRDGPQWRDGIIVLKYVDGDLCPDGI-RKKSTTIRFTCS-ESQVNSRPMFISA-VE  1492
+
+Query  119   TCTLFFSWHTPLAC  132
+              C   F+W T  AC
+Sbjct  1493  DCEYTFAWPTATAC  1506
+
+
+ Score = 59.7 bits (143),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 42/143 (29%), Positives = 59/143 (41%), Gaps = 16/143 (11%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKG---LVYMSICGENE--------NCPPGVG  50
+            C ++        DL+ L+   G   +Y   G   L Y+++CGE E             V 
+Sbjct  328  CSLSGEQQDVSIDLTPLAQSGGS--SYISDGKEYLFYLNVCGETEIQFCNKKQAAVCQVK  385
+
+Query  51   ACFGQTRISVGKA-NKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+                    + G+  N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   +
+Sbjct  386  KSDTSQVKAAGRYHNQTLRYSDGDLTLIYFGGDEC--SSGFQRMSVINFECNKTAGNDGK  443
+
+Query  110  PMLISLDKQTCTLFFSWHTPLAC  132
+               +   +  CT FF+W T  AC
+Sbjct  444  GTPVFTGEVDCTYFFTWDTEYAC  466
+
+
+ Score = 56.6 bits (135),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 39/151 (26%), Positives = 58/151 (38%), Gaps = 25/151 (17%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICGENEN------CP  46
+             +C V N S   + DLS L  R G   AY E            Y++IC +  N      CP
+Sbjct  1651  ECSVRNGS--SIVDLSPLIHRTGGYEAYDESEDDASDTNPDFYINIC-QPLNPMHGVPCP  1707
+
+Query  47    PGVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCR  101
+              G   C        I +G+         +   + L ++  +PC +    +Y S+I+F C+
+Sbjct  1708  AGAAVCKVPIDGPPIDIGRVAGPPILNPIANEIYLNFESSTPCLADKHFNYTSLIAFHCK  1767
+
+Query  102   PEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                     P L+      C   F W TP+ C
+Sbjct  1768  RGV-SMGTPKLLRTS--ECDFVFEWETPVVC  1795
+
+
+ Score = 52.4 bits (124),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 34/146 (23%), Positives = 57/146 (39%), Gaps = 24/146 (16%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAG--FTAAYSEKGLVYMSICG--ENENCPPG-----VGA  51
+             +C+V +P  G+L+DL  L           Y+     Y  +CG   ++ CP       V +
+Sbjct  1226  NCEVKDPRHGNLYDLKPLGLNDTIVSAGEYTY----YFRVCGKLSSDVCPTSDKSKVVSS  1281
+
+Query  52    CFGQTRIS-----VGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGP  106
+             C  +          G   ++L Y + +L++ +  G  C         + I F C      
+Sbjct  1282  CQEKREPQGFHKVAGLLTQKLTYENGLLKMNFTGGDTCHKV--YQRSTAIFFYCDR---G  1336
+
+Query  107   TNRPMLISLDKQTCTLFFSWHTPLAC  132
+             T RP+ +  +   C+  F W T  AC
+Sbjct  1337  TQRPVFLK-ETSDCSYLFEWRTQYAC  1361
+
+
+ Score = 50.9 bits (120),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 36/137 (26%), Positives = 54/137 (39%), Gaps = 20/137 (15%)
+
+Query  13   FDLSSLSGRAGFTAAY---------SEKGLVYMSICG------ENENCP--PGVGACFGQ  55
+            +DLS+L   A     +         +EK   +++IC       +   CP    V A    
+Sbjct  484  YDLSALVRHAEPEQNWEAVDGSQTETEKKHFFINICHRVLQEGKARGCPEDAAVCAVDKN  543
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+               ++GK           +QL Y DG  C    G   K+ I+ VC+P     + P+L + 
+Sbjct  544  GSKNLGKFISSPMKEKGNIQLSYSDGDDC--GHGKKIKTNITLVCKP-GDLESAPVLRTS  600
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+             +  C   F WHT  AC
+Sbjct  601  GEGGCFYEFEWHTAAAC  617
+
+
+ Score = 47.4 bits (111),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 33/134 (25%), Positives = 51/134 (38%), Gaps = 25/134 (19%)
+
+Query  13    FDLSSLSGRAGFTAAYSE--KGLVY-MSICGE----NENCPPGVGACFGQTRISVGKA--  63
+             +DL  LS     T ++S    G+ Y +++C +       C      C    R + G    
+Sbjct  2003  YDLRLLS---SLTGSWSLVHNGVSYYINLCQKIYKGPLGCSERASIC---RRTTTGDVQV  2056
+
+Query  64    -----NKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQ  118
+                   ++L  +   + + Y  G PC      +  SVI   C    G   RP     D  
+Sbjct  2057  LGLVHTQKLGVIGDKVVVTYSKGYPC--GGNKTASSVIELTCTKTVG---RPAFKRFDID  2111
+
+Query  119   TCTLFFSWHTPLAC  132
+             +CT +FSW +  AC
+Sbjct  2112  SCTYYFSWDSRAAC  2125
+
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 43/164 (26%), Positives = 64/164 (39%), Gaps = 39/164 (24%)
+
+Query  1    DCQVTNPSTGHLFDLSSLS-------------GRAGFTAAYSEKGLVYMSICGENENCPP  47
+            +C VT+PST   +DLSSL+               +G    + +    Y+++C    N  P
+Sbjct  766  ECVVTDPSTLEQYDLSSLAKSEGGLGGNWYAMDNSGEHVTWRK---YYINVC-RPLNPVP  821
+
+Query  48   GV--GACFGQTRI--------------SVGKANKRLRYVDQ-VLQLVYKDGSPCPSKSGL  90
+            G    A   Q +               ++G A       D   L L Y +GS C +  G 
+Sbjct  822  GCNRYASACQMKYEKDQGSFTEVVSISNLGMAKTGPVVEDSGSLLLEYVNGSACTTSDGR  881
+
+Query  91   S--YKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+               Y + I  VC    G  N   + SL+ + C + F W+T  AC
+Sbjct  882  QTTYTTRIHLVCSR--GRLNSHPIFSLNWE-CVVSFLWNTEAAC  922
+
+
+ Score = 43.5 bits (101),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 35/145 (24%), Positives = 56/145 (39%), Gaps = 23/145 (16%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSG--RAGFTAAYSEKGLV---YMSICGENENCPPGVGACFGQ  55
+             DCQVT+ + G+ +DL+ LS   +       S  G     Y+S+C      P   G+  G 
+Sbjct  1083  DCQVTDLA-GNEYDLTGLSTVRKPWTAVDTSVDGRKRTFYLSVCNPLPYIPGCQGSAVGS  1141
+
+Query  56    TRIS------VGKANKRL-RYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+               +S      +G          +  L ++Y +G  C ++    + + I+F C   +G   
+Sbjct  1142  CLVSEGNSWNLGVVQMSPQAAANGSLSIMYVNGDKCGNQ---RFSTRITFECAQISGSPA  1198
+
+Query  109   RPMLISLDKQT-CTLFFSWHTPLAC  132
+                      Q  C   F W T  AC
+Sbjct  1199  ------FQLQDGCEYVFIWRTVEAC  1217
+
+
+>sp|Q07113|MPRI_MOUSE Cation-independent mannose-6-phosphate receptor 
+OS=Mus musculus OX=10090 GN=Igf2r PE=1 SV=1
+Length=2483
+
+ Score = 215 bits (547),  Expect = 1e-64, Method: Composition-based stats.
+ Identities = 119/133 (89%), Positives = 124/133 (93%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNPSTGHLFDLSSLSGRAG  A+YSEKGLV+MSIC ENENC PGVGACFGQTRISV
+Sbjct  1508  DCQVTNPSTGHLFDLSSLSGRAGINASYSEKGLVFMSICEENENCGPGVGACFGQTRISV  1567
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL Y DQVLQLVY++GSPCPS S L YKSVISFVCRPEAGPTNRPMLISLDKQTC
+Sbjct  1568  GKASKRLSYKDQVLQLVYENGSPCPSLSDLRYKSVISFVCRPEAGPTNRPMLISLDKQTC  1627
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1628  TLFFSWHTPLACE  1640
+
+
+ Score = 72.8 bits (177),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 47/143 (33%), Positives = 62/143 (43%), Gaps = 15/143 (10%)
+
+Query  1     DCQVTNPSTGHLFDLSSLS---------GRAGFTAAYSEKGLVYMSICGENENCPPGVGA  51
+             +C V + + G+  DLSSLS          R G T  Y       +S     E CPP    
+Sbjct  1361  ECSVQD-AAGNSIDLSSLSRYSDNWEAVTRTGATEHYLINVCKSLSPHAGTEPCPPEAAV  1419
+
+Query  52    C--FGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+             C   G   +++GK     ++ D V  L Y DG  CP K      ++I F C  +    +R
+Sbjct  1420  CLLNGSKPVNLGKVRDGPQWTDGVTVLQYVDGDLCPDKI-RRRSTIIRFTCS-DNQVNSR  1477
+
+Query  110   PMLISLDKQTCTLFFSWHTPLAC  132
+             P+ IS   Q C   FSW TP AC
+Sbjct  1478  PLFISA-VQDCEYTFSWPTPSAC  1499
+
+
+ Score = 67.4 bits (163),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 40/137 (29%), Positives = 67/137 (49%), Gaps = 8/137 (6%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF---GQ  55
+            +C V +   G  FDLS L+ + G     +EK   Y+++CG    + C    GAC      
+Sbjct  620  NCTVLDAQAGFSFDLSLLTKKNGAYKVETEKYDFYINVCGPVSMDPCQSNSGACQVAKSG  679
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+               ++G ++ +L Y D ++QL Y++G+P  ++      ++I+F+C  +AG    P     
+Sbjct  680  KSWNLGLSSTKLTYYDGMIQLSYRNGTPYNNEKHTPRATLITFLCDRDAG-VGFPEYQEE  738
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+            D    T  F W+T  AC
+Sbjct  739  D--NSTYNFRWYTSYAC  753
+
+
+ Score = 60.1 bits (144),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 41/141 (29%), Positives = 60/141 (43%), Gaps = 12/141 (9%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVY-MSICGENE-----NCPPGV----GA  51
+            C +++       DLS L+   G       +   + +++CG+ +     N    V     A
+Sbjct  323  CSLSSEQHDITIDLSPLAQYGGSPYVSDGREYTFFINVCGDTKVSLCNNKEAAVCQEKKA  382
+
+Query  52   CFGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPM  111
+               Q +I+    N+ LRY D  L L+Y  G  C   SG    SVI+F C   AG   R  
+Sbjct  383  DSTQVKIAGRHQNQTLRYSDGDLTLIYSGGDEC--SSGFQRMSVINFECNKTAGKDGRGE  440
+
+Query  112  LISLDKQTCTLFFSWHTPLAC  132
+             +   +  CT FF+W T  AC
+Sbjct  441  PVFTGEVDCTYFFTWDTKYAC  461
+
+
+ Score = 58.6 bits (140),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 32/146 (22%), Positives = 57/146 (39%), Gaps = 24/146 (16%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAG--FTAAYSEKGLVYMSICG-------ENENCPPGVGA  51
+             +CQV +P  G+L+DL  L           Y+     Y+ +CG          +    V +
+Sbjct  1219  NCQVKDPRHGNLYDLKPLGLNDTIVSVGEYTY----YLRVCGKLSSDVCSAHDGSKAVSS  1274
+
+Query  52    CFGQT-----RISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGP  106
+             C  +      +   G  +++L + + +L++ Y  G  C         + I F C      
+Sbjct  1275  CQEKKGPQGFQKVAGLLSQKLTFENGLLKMNYTGGDTCHKV--YQRSTTIYFYCDR---T  1329
+
+Query  107   TNRPMLISLDKQTCTLFFSWHTPLAC  132
+             T +P+ +  +   C+  F W T  AC
+Sbjct  1330  TQKPVFLK-ETSDCSYMFEWRTQYAC  1354
+
+
+ Score = 57.4 bits (137),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 39/144 (27%), Positives = 62/144 (43%), Gaps = 21/144 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSG-----RAGFTAAYSEKGLVYMSICGENENCPP----GVGA  51
+             DCQVT+P+ G+ +DLS+LS       A  T+AY ++   Y+S+C      P      +G+
+Sbjct  1076  DCQVTDPA-GNEYDLSALSMVRKPWTAVDTSAYGKRRHFYLSVCNPLPYIPGCHGIALGS  1134
+
+Query  52    C--FGQTRISVGKANKRLRYVDQ-VLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+             C        ++G      +      L ++Y +G  C       + + I F C   A  + 
+Sbjct  1135  CMVSEDNSFNLGVVQISPQATGNGSLSILYVNGDRC---GDQRFSTRIVFEC---AQTSG  1188
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+              PM   ++   C   F W T  AC
+Sbjct  1189  SPMFQFVN--NCEYVFVWRTVEAC  1210
+
+
+ Score = 55.9 bits (133),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 40/151 (26%), Positives = 60/151 (40%), Gaps = 25/151 (17%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICGENEN------CP  46
+             +C V N S   + DLS L  R G   AY E            Y++IC +  N      CP
+Sbjct  1644  ECTVRNGS--SIIDLSPLIHRTGGYEAYDESEDDTSDTTPDFYINIC-QPLNPMHGVPCP  1700
+
+Query  47    PGVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCR  101
+              G   C        I +G+      +  V   + L ++  + C +   ++Y S+I+F C+
+Sbjct  1701  AGASVCKVPVDGPPIDIGRVTGPPIFNPVANEVYLNFESSTHCLADRYMNYTSLITFHCK  1760
+
+Query  102   PEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                     P LI  +   C   F W TP+ C
+Sbjct  1761  RGV-SMGTPKLIRTN--DCDFVFEWETPIVC  1788
+
+
+ Score = 54.3 bits (129),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 33/136 (24%), Positives = 52/136 (38%), Gaps = 19/136 (14%)
+
+Query  13   FDLSSLSGRAGFTAAY-SEKG-------LVYMSICG------ENENCP--PGVGACFGQT  56
+            +DLS L+  +     + +  G         ++++C       +  NCP    V A     
+Sbjct  479  YDLSVLARHSESEQNWEAVDGSQAESEKYFFINVCHRVLQEGKARNCPEDAAVCAVDKNG  538
+
+Query  57   RISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLD  116
+              ++GK           +QL Y DG  C   S     + I+ VC+P     + P+L +  
+Sbjct  539  SKNLGKFVSSPTKEKGHIQLSYTDGDDC--GSDKKISTNITLVCKP-GDLESAPVLRAAR  595
+
+Query  117  KQTCTLFFSWHTPLAC  132
+               C   F WHT  AC
+Sbjct  596  SDGCFYEFEWHTAAAC  611
+
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 37/149 (25%), Positives = 54/149 (36%), Gaps = 23/149 (15%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENC----PPGVGACFGQTR  57
+             C + +PS+G +F+LS L+  A              +ICG    C          C  +T+
+Sbjct  927   CSIRDPSSGFVFNLSPLNDSAQGHVVLGIGKTFVFNICGAMPACGTVAGKPAYGCEAETQ  986
+
+Query  58    ISVGKANKRLRYVDQV----------LQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPT  107
+             I   K  +  R V             L L YK  SP    S      +I F+C  +  P 
+Sbjct  987   IEDIKDLRPQRPVGMERSLQLSAEGFLTLTYKGSSP----SDRGTAFIIRFICNDDIYP-  1041
+
+Query  108   NRPMLISLDKQTC----TLFFSWHTPLAC  132
+               P  +  D  +       +F + T LAC
+Sbjct  1042  GAPKFLHQDIDSTRGIRNTYFEFETALAC  1070
+
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 37/142 (26%), Positives = 47/142 (33%), Gaps = 15/142 (11%)
+
+Query  4     VTNPSTGH-------LFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACF---  53
+             +TNP TG         F L S SG            +   SI   +     G   C    
+Sbjct  2132  LTNPVTGKSFSLGEIYFKLFSASGDMRTNGDNYLYEIQLSSITSSSYPACAGANICQVKP  2191
+
+Query  54    GQTRIS--VGKANKRLRYV-DQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRP  110
+                  S  VG ++    YV D  L +V+   S C      S  S I F C P     +  
+Sbjct  2192  NDQHFSRKVGTSDMTKYYVQDGDLDVVFTSSSKCGKDKTKSVSSTIFFHCDPLV--KDGI  2249
+
+Query  111   MLISLDKQTCTLFFSWHTPLAC  132
+                S +   C   FSW+T   C
+Sbjct  2250  PEFSHETADCQYLFSWYTSAVC  2271
+
+
+ Score = 42.4 bits (98),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 48/128 (38%), Gaps = 13/128 (10%)
+
+Query  13    FDLSSLSGRAGFTAAYSEKGLVYMSICGE----NENCPPGVGACF---GQTRISVGKANK  65
+             +DL  LS   G      E    ++++C        +C      C          +G  + 
+Sbjct  1996  YDLRLLSSLTGSWDFVHEGNSYFINLCQRVYKGPLDCSERASICKKSATGQVQVLGLVHT  2055
+
+Query  66    -RLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFF  124
+              +L  +D+ + + Y  G PC      +  SVI   C    G   RP     D  +CT +F
+Sbjct  2056  QKLEVIDETVIVTYSKGYPC--GGNKTASSVIELTCAKTVG---RPAFKRFDSVSCTYYF  2110
+
+Query  125   SWHTPLAC  132
+              W++  AC
+Sbjct  2111  YWYSRAAC  2118
+
+
+ Score = 40.1 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 27/107 (25%), Positives = 44/107 (41%), Gaps = 11/107 (10%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCP------PGVGACFGQ  55
+             C VT+    + F+L+SLS  + F      +    + +C              GV    G 
+Sbjct  1797  CAVTDEQLLYSFNLTSLST-STFKVTRDARTYS-IGVCTAAAGLGQEGCKDGGVCLLSGN  1854
+
+Query  56    TRISVGK-ANKRLRYV--DQVLQLVYKDGSPCPSKSGLSYKSVISFV  99
+                S G+ A+ +L Y   D+ + L Y +G PCP ++      V  F+
+Sbjct  1855  KGASFGRLASMQLDYRHQDEAVILSYVNGDPCPPETDDGEPCVFPFI  1901
+
+
+ Score = 39.7 bits (91),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 28/128 (22%), Positives = 45/128 (35%), Gaps = 15/128 (12%)
+
+Query  13   FDLSSLSGRAGFTAAYSEKGLVYMSICGEN--ENCPPGVGAC----FGQTRISVGKANKR  66
+             DL +L              +  +++CG     +C P    C      +   SVG +  R
+Sbjct  38   VDLDALCSYTWEAVDSKNNAVYKINVCGNVGISSCGPTSAICMCDLKTENCRSVGDSLLR  97
+
+Query  67   LRYVDQVLQLVYKDGSPC-PSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFS  125
+                     L +     C PS S    ++ I+F+C    G    P  ++     C  +F 
+Sbjct  98   SSARS---LLEFNTTMGCQPSDSQHRIQTSITFLCGKTLGT---PEFVTAT--DCVHYFE  149
+
+Query  126  WHTPLACE  133
+            W T  AC+
+Sbjct  150  WRTTAACK  157
+
+
+>sp|P08169|MPRI_BOVIN Cation-independent mannose-6-phosphate receptor 
+OS=Bos taurus OX=9913 GN=IGF2R PE=1 SV=2
+Length=2499
+
+ Score = 213 bits (542),  Expect = 8e-64, Method: Composition-based stats.
+ Identities = 120/133 (90%), Positives = 128/133 (96%), Gaps = 0/133 (0%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICGENENCPPGVGACFGQTRISV  60
+             DCQVTNP+TGHLFDLSSLSGRAGFTAAYSEKGLVY+S+CG+NENC  GVGACFGQTRISV
+Sbjct  1524  DCQVTNPATGHLFDLSSLSGRAGFTAAYSEKGLVYLSVCGDNENCANGVGACFGQTRISV  1583
+
+Query  61    GKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTC  120
+             GKA+KRL YVDQVLQLVY+ GSPCPSK+GLSYKSVISFVCRPE GPTNRPMLISLDK+TC
+Sbjct  1584  GKASKRLTYVDQVLQLVYEGGSPCPSKTGLSYKSVISFVCRPEVGPTNRPMLISLDKRTC  1643
+
+Query  121   TLFFSWHTPLACE  133
+             TLFFSWHTPLACE
+Sbjct  1644  TLFFSWHTPLACE  1656
+
+
+ Score = 64.4 bits (155),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 40/138 (29%), Positives = 70/138 (51%), Gaps = 10/138 (7%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLVYMSICG--ENENCPPGVGACF----G  54
+            +C V +   G  FDL+ L+ +  +    ++K   ++++CG      CPP  GAC      
+Sbjct  635  NCTVFDSQAGFSFDLTPLTKKDAYKVE-TDKYEFHINVCGPVSVGACPPDSGACQVSRSD  693
+
+Query  55   QTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLIS  114
+            +   ++G++N +L Y D ++QL Y+DG+P  ++      ++I+F+C  +AG    P    
+Sbjct  694  RKSWNLGRSNAKLSYYDGMIQLTYRDGTPYNNEKRTPRATLITFLCDRDAG-VGFPEYQE  752
+
+Query  115  LDKQTCTLFFSWHTPLAC  132
+             D    T  F W+T  AC
+Sbjct  753  ED--NSTYNFRWYTSYAC  768
+
+
+ Score = 62.4 bits (150),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 41/143 (29%), Positives = 59/143 (41%), Gaps = 15/143 (10%)
+
+Query  1     DCQVTNPSTGHLFDLSSLS---------GRAGFTAAYSEKGLVYMSICGENENCPPGVGA  51
+             +C   N + G  +DLSSLS            G T  Y       +S    ++ CPP    
+Sbjct  1377  ECSFKNEA-GETYDLSSLSRYSDNWEAVTGTGSTEHYLINVCKSLSPQAGSDPCPPEAAV  1435
+
+Query  52    CF--GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNR  109
+             C   G   +++G+     ++   +  L Y DG  CP +      + I F C  E+   +R
+Sbjct  1436  CLLGGPKPVNLGRVRDSPQWSQGLTLLKYVDGDLCPDQI-RKKSTTIRFTCS-ESHVNSR  1493
+
+Query  110   PMLISLDKQTCTLFFSWHTPLAC  132
+             PM IS   + C   FSW T  AC
+Sbjct  1494  PMFISA-VEDCEYTFSWPTAAAC  1515
+
+
+ Score = 57.8 bits (138),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 40/150 (27%), Positives = 56/150 (37%), Gaps = 23/150 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV--------YMSICG-----ENENCPP  47
+             +C V N S   L DLS L  R G   AY E            Y++IC          CP 
+Sbjct  1660  ECSVRNGS--SLIDLSPLIHRTGGYEAYDESEDDGSDTSPDFYINICQPLNPMHGLACPA  1717
+
+Query  48    GVGACF---GQTRISVGKANKRLRY--VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRP  102
+             G   C        I +G+         +   + L ++  +PC +    +Y S+I+F C+ 
+Sbjct  1718  GTAVCKVPVDGPPIDIGRVAGPPILNPIANEVYLNFESSTPCLADRHFNYTSLITFHCKR  1777
+
+Query  103   EAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+                    P L+      C   F W TPL C
+Sbjct  1778  GV-SMGTPKLLRTSV--CDFVFEWETPLVC  1804
+
+
+ Score = 53.6 bits (127),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 33/145 (23%), Positives = 55/145 (38%), Gaps = 24/145 (17%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGF--TAAYSEKGLVYMSICGE-------NENCPPGVGAC  52
+             C+V +P  G+L++L  L           Y+     Y  +CGE         +    + +C
+Sbjct  1236  CEVRDPRHGNLYNLIPLGLNDTVVRAGEYTY----YFRVCGELTSGVCPTSDKSKVISSC  1291
+
+Query  53    FGQT-----RISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPT  107
+               +      +   G  N++L Y + VL++ Y  G  C         + I F C      T
+Sbjct  1292  QEKRGPQGFQKVAGLFNQKLTYENGVLKMNYTGGDTCHKV--YQRSTTIFFYCDR---ST  1346
+
+Query  108   NRPMLISLDKQTCTLFFSWHTPLAC  132
+               P+ +  +   C+  F W T  AC
+Sbjct  1347  QAPVFLQ-ETSDCSYLFEWRTQYAC  1370
+
+
+ Score = 52.8 bits (125),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 38/144 (26%), Positives = 59/144 (41%), Gaps = 21/144 (15%)
+
+Query  1     DCQVTNPSTGHLFDLSSLSG-----RAGFTAAYSEKGLVYMSICGENENCPPGVGA----  51
+             DCQVT+P+ G+ +DLS LS       A  T    +K   Y+S+C      P   G     
+Sbjct  1092  DCQVTDPA-GNEYDLSGLSKARKPWTAVDTFDEGKKRTFYLSVCTPLPYIPGCHGTAVGC  1150
+
+Query  52    --CFGQTRISVGKANKRLRY-VDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+                   +++++G      +   +  L LVY +G  C ++    + + I+  C   A  T 
+Sbjct  1151  CLVTEDSKLNLGVVQISPQVGANGSLSLVYVNGDKCKNQ---RFSTRINLEC---AHTTG  1204
+
+Query  109   RPMLISLDKQTCTLFFSWHTPLAC  132
+              P      +  C   F W T  AC
+Sbjct  1205  SPTF--QLQNDCEYVFLWRTVEAC  1226
+
+
+ Score = 51.6 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 32/137 (23%), Positives = 52/137 (38%), Gaps = 20/137 (15%)
+
+Query  13   FDLSSLSGRAGFTAAY---------SEKGLVYMSICG------ENENCP--PGVGACFGQ  55
+            FDLS+L+  +     +         +EK   +++IC       +   CP    V A    
+Sbjct  493  FDLSALARHSELEQNWEAVDGSQREAEKKHFFINICHRVLQTGQARGCPEDAAVCAVDKN  552
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+               ++G+           +QL Y DG  C    G    + I+ +C+P     + P+L + 
+Sbjct  553  GSKNLGRFISSPTREKGNIQLSYSDGDEC--GGGQKIITNITLMCKP-GDLESAPVLTTS  609
+
+Query  116  DKQTCTLFFSWHTPLAC  132
+                C   F W T  AC
+Sbjct  610  RADGCFYEFEWRTAAAC  626
+
+
+ Score = 51.6 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 41/144 (28%), Positives = 60/144 (42%), Gaps = 15/144 (10%)
+
+Query  2    CQVTNPSTGHLFDLSSLS----GRAGFTAAYSEKGLVYMSICGENENCP---PGVGACF-  53
+            C +++       DL  LS      + F  + +++   Y+SICG ++           C  
+Sbjct  334  CSLSSAQHDVAVDLQPLSRVEASDSLFYTSEADEYTYYLSICGGSQAPICNKKDAAVCQV  393
+
+Query  54   -----GQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTN  108
+                  Q +++    N  LRY D  L L+Y  G  C   SG    SVI+F C   AG   
+Sbjct  394  KKADSTQVKVAGRPQNLTLRYSDGDLTLIYFGGEEC--SSGFQRMSVINFECNQTAGNNG  451
+
+Query  109  RPMLISLDKQTCTLFFSWHTPLAC  132
+            R   +   +  CT FF+W T  AC
+Sbjct  452  RGAPVFTGEVDCTYFFTWDTKYAC  475
+
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 38/142 (27%), Positives = 49/142 (35%), Gaps = 15/142 (11%)
+
+Query  4     VTNPSTGHLFDLSSL-------SGRAGFTAAYSEKGLVYMSICGENENCPPGVGACF---  53
+             +TNP+ G  F L  +       SG            +   SI G +     G   C    
+Sbjct  2148  ITNPANGRSFSLGDIYFKRFSASGDVRTNGDRYIYEIQLSSITGSSSPACSGASICQRKA  2207
+
+Query  54    GQTRIS--VGKANKRLRYV-DQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRP  110
+                  S  VG +N+   YV D  L +V+   S C      S  S I F C P     +  
+Sbjct  2208  NDQHFSRKVGTSNQTRYYVQDGDLDVVFTSSSKCGKDKTKSVSSTIFFHCDPLV--KDGI  2265
+
+Query  111   MLISLDKQTCTLFFSWHTPLAC  132
+                S +   C   FSWHT   C
+Sbjct  2266  PEFSHETADCQYLFSWHTSAVC  2287
+
+
+ Score = 43.2 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 47/128 (37%), Gaps = 13/128 (10%)
+
+Query  13    FDLSSLSGRAGFTAAYSEKGLVYMSICGE----NENCPPGVGACFGQTRISVGKA----N  64
+             +DL  LS   G  +        Y+++C +     ++C      C   T   V        
+Sbjct  2012  YDLRLLSSLTGSWSFVHNGASYYINLCQKIYKGPQDCSERASVCKKSTSGEVQVLGLVHT  2071
+
+Query  65    KRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFF  124
+             ++L  VD  + + Y  G  C      +  +VI   C    G   RP     D  +CT  F
+Sbjct  2072  QKLDVVDDRVIVTYSKGHYC--GDNKTASAVIELTCAKTVG---RPSFTRFDVDSCTYHF  2126
+
+Query  125   SWHTPLAC  132
+             SW +  AC
+Sbjct  2127  SWDSRAAC  2134
+
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 37/151 (25%), Positives = 61/151 (40%), Gaps = 26/151 (17%)
+
+Query  2     CQVTNPSTGHLFDLSSLSGRAGFTAAYSEKGLV---YMSICGENENCP-----PGVGACF  53
+             C + +P++G++FDL+ L+   G    Y   G+      ++CG+   C      P  G C 
+Sbjct  942   CSIKDPNSGYVFDLNPLNNSRG----YVVLGIGKTFLFNVCGDMPACGTLDGKPASG-CE  996
+
+Query  54    GQTRISVGKANKRLRYVD--QVLQLVYKD------GSPCPSKSGLSYKSVISFVCRPEAG  105
+              + ++   K  K  R V   + LQL  +              +G +   +I FVC  +  
+Sbjct  997   AEVQMDDMKTLKPGRLVGLEKSLQLSTEGFITLNYTGLPSHPNGRADAFIIRFVCNDDVY  1056
+
+Query  106   PTNRPMLISLDKQTC----TLFFSWHTPLAC  132
+             P   P  +  D  +       FF + T LAC
+Sbjct  1057  PGT-PKFLHQDIDSSLGIRDTFFEFETALAC  1086
+
+
+ Score = 39.7 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 39/161 (24%), Positives = 57/161 (35%), Gaps = 33/161 (20%)
+
+Query  1    DCQVTNPSTGHLFDLSSLSGRAGFTAA--YSEKGLV--------YMSICGENENCPPGV-  49
+            +C VT+P T   +DLS L+   G      YS             Y+++C    N  PG  
+Sbjct  774  ECIVTDPVTLDQYDLSRLAKSEGGPGGNWYSLDNGGARSTWRKYYINVC-RPLNPVPGCD  832
+
+Query  50   ---------------GACFGQTRISVGKANKRLRYVDQ-VLQLVYKDGSPCPSKSGLS--  91
+                                 +  ++G A       D   L L Y +GS C +       
+Sbjct  833  RYASACQMKYQGEQGSYSETVSISNLGVAKTGPMVEDSGSLLLEYVNGSACTTSDQRRTT  892
+
+Query  92   YKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+            Y + I  VC    G      + SL+ + C + F W+T  AC
+Sbjct  893  YTTRIHLVC--STGSLYTHPIFSLNWE-CVVSFLWNTAAAC  930
+
+
+>sp|O59745|YN29_SCHPO Putative mannose 6-phosphate receptor-like 
+protein C530.09c OS=Schizosaccharomyces pombe (strain 972 
+/ ATCC 24843) OX=284812 GN=SPBC530.09c PE=3 SV=1
+Length=296
+
+ Score = 172 bits (435),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 37/154 (24%), Positives = 61/154 (40%), Gaps = 25/154 (16%)
+
+Query  2    CQVTNPSTGHLFDLSSL-SGRAGFTAAYSEKGLVY-----MSICG---------------  40
+            C + +P+TG  FDLS L          YS  G  +     +++C                
+Sbjct  44   CALHHPNTGEYFDLSGLIRDNTSEKGDYSVNGYDFGTNFSINLCHPVVSNLTNYTVEGDV  103
+
+Query  41   ENENCPPGVGACFGQTRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVC  100
+             +E+   G          S+G+A  +  +  + L +   +GS CP  + +   ++ISF C
+Sbjct  104  SSEDSIGGFFTVEDDDLYSIGQAAYKPYFRGKKLIMQLDNGSLCPKSNHIRMSTLISFTC  163
+
+Query  101  RPEAGPTNRPMLISL--DKQTCTLFFSWHTPLAC  132
+              +  P   P +I+   +   C  FF W T  AC
+Sbjct  164  NRD--PYTAPSVITYVGNLNDCAFFFEWKTIHAC  195
+
+
+>sp|Q75BD5|MRL1_ASHGO Mannose 6-phosphate receptor-like protein 
+1 OS=Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 
+9923 / NRRL Y-1056) OX=284811 GN=MRL1 PE=3 SV=1
+Length=273
+
+ Score = 170 bits (431),  Expect = 6e-53, Method: Composition-based stats.
+ Identities = 33/135 (24%), Positives = 54/135 (40%), Gaps = 8/135 (6%)
+
+Query  2    CQVTNPSTGHLFDLSSLSGR-AGFTAAYSEKGLVY-----MSICGENENCPPGVGACFGQ  55
+            C V N STG   DLS L+   +G    +  +G  Y     + +C       P        
+Sbjct  32   CAVRNRSTGSYIDLSPLASNVSGTPPNWLVRGWQYGANFTLGVCTSPLGDGPAAYYSDTG  91
+
+Query  56   TRISVGKANKRLRYVDQVLQLVYKDGSPCPSKSGLSYKSVISFVCRPEAGPTNRPMLISL  115
+             R+S+G+     RY  + L L Y+ G  CP++      S++ FVC  +     +  L+ +
+Sbjct  92   RRVSIGRVATTPRYTGKKLTLTYEGGDLCPNRVD-RKSSLLYFVCDRDIHTIAQVSLLGV  150
+
+Query  116  DKQTCTLFFSWHTPL  130
+                C+  F   +  
+Sbjct  151  -LHNCSYLFEVRSVH  164
+
+
+>sp|Q06815|MRL1_YEAST Mannose 6-phosphate receptor-like protein 
+1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) 
+OX=559292 GN=MRL1 PE=1 SV=1
+Length=381
+
+ Score = 152 bits (385),  Expect = 8e-45, Method: Composition-based stats.
+ Identities = 39/168 (23%), Positives = 57/168 (34%), Gaps = 39/168 (23%)
+
+Query  2    CQVTNPSTGHLFDLSSLSG-----------------RAGFTAAYSEKGLVY-----MSIC  39
+            C VTNP TG   DLS LS                         +S +G  Y     + IC
+Sbjct  63   CAVTNPVTGSYIDLSQLSSTPNKLREGQKQISGNNKHESSKTKWSVRGWGYDTNFTLGIC  122
+
+Query  40   GEN---------ENCPPGVGA--CFGQTRISVGKANKRLRYVD----QVLQLVYKDGSPC  84
+                         N               +S+G  + R   V     + L L Y++GS C
+Sbjct  123  SSPVGEAESQQLSNLTGAFYVDQLNENNLVSIGDFSTRPALVGGSTAKKLTLKYENGSMC  182
+
+Query  85   PSKSGLSYKSVISFVCRPEAGPTNRPMLISLDKQTCTLFFSWHTPLAC  132
+            P+       ++++FVC  E     +   I  +   C+ FF   +  AC
+Sbjct  183  PNGKD-KKATLLNFVCDKEIQSKAQISYIG-NLHNCSYFFEVRSIHAC  228
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.367    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0398    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999834232
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

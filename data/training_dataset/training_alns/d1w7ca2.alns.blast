@@ -1,0 +1,812 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1w7ca2
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-co...  50.4    4e-07
+sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-co...  50.4    5e-07
+sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus ...  48.5    2e-06
+sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-cont...  48.5    2e-06
+sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-cont...  48.1    3e-06
+sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos ...  48.1    3e-06
+sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapie...  47.4    5e-06
+sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos t...  47.4    6e-06
+sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norve...  47.4    7e-06
+sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus muscul...  47.0    7e-06
+sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus...  47.0    8e-06
+sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo abel...  45.4    3e-05
+sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo...  45.1    4e-05
+
+
+>sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Homo sapiens OX=9606 GN=AOC1 PE=1 SV=4
+Length=751
+
+ Score = 50.4 bits (119),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 30/92 (33%), Positives = 44/92 (48%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  +++ L+ +E++ V   L S     +   +      N V  IE L P K   L +LD+
+Sbjct  29   KAGVFSDLSNQELKAVHSFLWSKKELRLQPSSTTTMAKNTVFLIEMLLPKKYHVLRFLDK  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R AR V++FG+ E     E  VGPLP
+Sbjct  89   GERHPVREARAVIFFGDQEHPNVTEFAVGPLP  120
+
+
+>sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Mus musculus OX=10090 GN=Aoc1 PE=2 SV=1
+Length=751
+
+ Score = 50.4 bits (119),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 30/92 (33%), Positives = 41/92 (45%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  I+  L+ +E++ V   L S     +          N V  IE L P K   L +LDE
+Sbjct  29   KARIFADLSPQEIKAVHSFLMSRKELGLESSKNLTLAKNSVFLIEMLLPKKKNVLKFLDE  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R AR +++FG  +     E  VGPLP
+Sbjct  89   GRKSPVREARAIIFFGAQDHPNVTEFAVGPLP  120
+
+
+>sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus 
+musculus OX=10090 GN=Aoc2 PE=2 SV=2
+Length=757
+
+ Score = 48.5 bits (114),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 34/112 (30%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L  EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD 
+Sbjct  52   QSQLFADLTPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDR  111
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+             G  P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  112  GGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  163
+
+
+>sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Sus scrofa OX=9823 GN=AOC1 PE=1 SV=3
+Length=755
+
+ Score = 48.5 bits (114),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 30/92 (33%), Positives = 42/92 (46%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L S     +          N V  IE L P K   L +LD+
+Sbjct  34   KAGVFADLSAQELKAVHSFLWSQKELKLEPSGTLTMAKNSVFLIEMLLPKKQHVLKFLDK  93
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R AR V++FG  E+    E  VGPLP
+Sbjct  94   GHRRPVREARAVIFFGAQEQPNVTEFAVGPLP  125
+
+
+>sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Rattus norvegicus OX=10116 GN=Aoc1 PE=2 SV=1
+Length=746
+
+ Score = 48.1 bits (113),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 29/92 (32%), Positives = 42/92 (46%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L +     +    +     N V  IE L P K   L +LDE
+Sbjct  29   KARVFADLSPQEIKAVHSFLMNREELGLQPSKEPTLAKNSVFLIEMLLPKKKHVLKFLDE  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R AR V++FG  +     E  VGPLP
+Sbjct  89   GRKGPNREARAVIFFGAQDYPNVTEFAVGPLP  120
+
+
+>sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos 
+taurus OX=9913 PE=1 SV=1
+Length=762
+
+ Score = 48.1 bits (113),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 33/112 (29%), Positives = 53/112 (47%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTY--NITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L      ++ +  +A    N V  +E   P K  AL +LD 
+Sbjct  55   QSQLFADLSREELTTVMSFLTQQLGPDLVDAAQARPSDNCVFSVELQLPPKAAALAHLDR  114
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  115  GSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  166
+
+
+>sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapiens 
+OX=9606 GN=AOC3 PE=1 SV=3
+Length=763
+
+ Score = 47.4 bits (111),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 28/92 (30%), Positives = 44/92 (48%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N V  +E   P K  AL +LD 
+Sbjct  56   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQARPSDNCVFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R A  +V+FG   +    EL VGPLP
+Sbjct  116  GSPPPAREALAIVFFGRQPQPNVSELVVGPLP  147
+
+
+>sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos 
+taurus OX=9913 PE=2 SV=1
+Length=762
+
+ Score = 47.4 bits (111),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 53/112 (47%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTY--NITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L      ++ +  +A    N +  +E   P K  AL +LD 
+Sbjct  55   QSQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHLDR  114
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  115  RSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  166
+
+
+>sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norvegicus 
+OX=10116 GN=Aoc3 PE=1 SV=4
+Length=763
+
+ Score = 47.4 bits (111),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 34/108 (31%), Positives = 50/108 (46%), Gaps = 9/108 (8%)
+
+Query  19   WTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDEDGDL  76
+            +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD  G  
+Sbjct  60   FADLSPEELTAVMSFLIKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDRGGPP  119
+
+Query  77   PPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+            P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  120  PVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus musculus 
+OX=10090 GN=Aoc3 PE=1 SV=3
+Length=765
+
+ Score = 47.0 bits (110),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 34/108 (31%), Positives = 50/108 (46%), Gaps = 9/108 (8%)
+
+Query  19   WTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDEDGDL  76
+            +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD  G  
+Sbjct  60   FADLSPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDRGGPP  119
+
+Query  77   PPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+            P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  120  PVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus 
+OX=9913 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 47.0 bits (110),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTY--NITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            +  ++  L++EE+  V+  L      ++ +  +A    N +  +E   P K  AL +LD 
+Sbjct  56   QNQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  116  RSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo 
+abelii OX=9601 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 45.4 bits (106),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 43/92 (47%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  56   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R A  ++ FG   +    EL VGPLP
+Sbjct  116  GSPPPAREALAIILFGRQPQPNVSELVVGPLP  147
+
+
+>sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo 
+sapiens OX=9606 GN=AOC2 PE=1 SV=2
+Length=756
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 2/92 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  52   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHLDR  111
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLP  104
+                P R A  +V FG   +    EL VGPLP
+Sbjct  112  GSPPPAREALAIVLFGGQPQPNVSELVVGPLP  143
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.132    0.383    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5114702960
+Results from round 2
+
+
+Query= d1w7ca2
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapie...  163     9e-47
+sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norve...  162     3e-46
+sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos ...  161     3e-46
+sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus ...  161     5e-46
+sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus muscul...  161     7e-46
+sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus...  159     2e-45
+sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos t...  159     2e-45
+sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo abel...  159     4e-45
+sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo...  156     2e-44
+sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-co...  151     2e-42
+sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-cont...  150     3e-42
+sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-co...  149     8e-42
+sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-cont...  149     1e-41
+
+Sequences not found previously or not previously below threshold:
+
+sp|H2A0M3|AMO_PINMG Putative amine oxidase [copper-containing] OS...  60.9    1e-10
+
+
+>sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapiens 
+OX=9606 GN=AOC3 PE=1 SV=3
+Length=763
+
+ Score = 163 bits (413),  Expect = 9e-47, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N V  +E   P K  AL +LD 
+Sbjct  56   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQARPSDNCVFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL ++
+Sbjct  116  GSPPPAREALAIVFFGRQPQPNVSELVVGPLPHPSYMRDVTVERHGGPLPYH  167
+
+
+>sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norvegicus 
+OX=10116 GN=Aoc3 PE=1 SV=4
+Length=763
+
+ Score = 162 bits (409),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 34/112 (30%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++  +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD 
+Sbjct  56   QSQPFADLSPEELTAVMSFLIKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+             G  P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  116  GGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos 
+taurus OX=9913 PE=1 SV=1
+Length=762
+
+ Score = 161 bits (408),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 33/112 (29%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N V  +E   P K  AL +LD 
+Sbjct  55   QSQLFADLSREELTTVMSFLTQQLGPDLVDAAQARPSDNCVFSVELQLPPKAAALAHLDR  114
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  115  GSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  166
+
+
+>sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus 
+musculus OX=10090 GN=Aoc2 PE=2 SV=2
+Length=757
+
+ Score = 161 bits (407),  Expect = 5e-46, Method: Composition-based stats.
+ Identities = 34/112 (30%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L  EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD 
+Sbjct  52   QSQLFADLTPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDR  111
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+             G  P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  112  GGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  163
+
+
+>sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus musculus 
+OX=10090 GN=Aoc3 PE=1 SV=3
+Length=765
+
+ Score = 161 bits (406),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 34/112 (30%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++  +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +LD 
+Sbjct  56   QSQPFADLSPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+             G  P R A  +++FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  116  GGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus 
+OX=9913 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 159 bits (402),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 51/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            +  ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  56   QNQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  116  RSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  167
+
+
+>sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos 
+taurus OX=9913 PE=2 SV=1
+Length=762
+
+ Score = 159 bits (402),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 52/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  55   QSQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHLDR  114
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V+FG   +    EL VGPLP      + T+E    PL +Y
+Sbjct  115  RSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYY  166
+
+
+>sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo 
+abelii OX=9601 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 159 bits (401),  Expect = 4e-45, Method: Composition-based stats.
+ Identities = 30/112 (27%), Positives = 51/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  56   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHLDR  115
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  ++ FG   +    EL VGPLP      + T+E    PL ++
+Sbjct  116  GSPPPAREALAIILFGRQPQPNVSELVVGPLPHPSYMRDVTVEHHGGPLPYH  167
+
+
+>sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo 
+sapiens OX=9606 GN=AOC2 PE=1 SV=2
+Length=756
+
+ Score = 156 bits (395),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 31/112 (28%), Positives = 51/112 (46%), Gaps = 9/112 (8%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +LD 
+Sbjct  52   QSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHLDR  111
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSD---ETTIE----PLSFY  117
+                P R A  +V FG   +    EL VGPLP      + T+E    PL ++
+Sbjct  112  GSPPPAREALAIVLFGGQPQPNVSELVVGPLPHPSYMRDVTVERHGGPLPYH  163
+
+
+>sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Homo sapiens OX=9606 GN=AOC1 PE=1 SV=4
+Length=751
+
+ Score = 151 bits (381),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 51/113 (45%), Gaps = 3/113 (3%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  +++ L+ +E++ V   L S     +   +      N V  IE L P K   L +LD+
+Sbjct  29   KAGVFSDLSNQELKAVHSFLWSKKELRLQPSSTTTMAKNTVFLIEMLLPKKYHVLRFLDK  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDET-TIEPLSFYNTNGKSK  124
+                P R AR V++FG+ E     E  VGPLP       + P   Y ++  S+
+Sbjct  89   GERHPVREARAVIFFGDQEHPNVTEFAVGPLPGPCYMRALSPRPGYQSSWASR  141
+
+
+>sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Rattus norvegicus OX=10116 GN=Aoc1 PE=2 SV=1
+Length=746
+
+ Score = 150 bits (380),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 29/94 (31%), Positives = 42/94 (45%), Gaps = 2/94 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L +     +    +     N V  IE L P K   L +LDE
+Sbjct  29   KARVFADLSPQEIKAVHSFLMNREELGLQPSKEPTLAKNSVFLIEMLLPKKKHVLKFLDE  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVS  106
+                P R AR V++FG  +     E  VGPLP  
+Sbjct  89   GRKGPNREARAVIFFGAQDYPNVTEFAVGPLPRP  122
+
+
+>sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Mus musculus OX=10090 GN=Aoc1 PE=2 SV=1
+Length=751
+
+ Score = 149 bits (377),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 48/113 (42%), Gaps = 3/113 (3%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  I+  L+ +E++ V   L S     +          N V  IE L P K   L +LDE
+Sbjct  29   KARIFADLSPQEIKAVHSFLMSRKELGLESSKNLTLAKNSVFLIEMLLPKKKNVLKFLDE  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDET-TIEPLSFYNTNGKSK  124
+                P R AR +++FG  +     E  VGPLP       + P   ++ +  S+
+Sbjct  89   GRKSPVREARAIIFFGAQDHPNVTEFAVGPLPRPCYVQALSPRPGHHLSWSSR  141
+
+
+>sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Sus scrofa OX=9823 GN=AOC1 PE=1 SV=3
+Length=755
+
+ Score = 149 bits (376),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 30/94 (32%), Positives = 42/94 (45%), Gaps = 2/94 (2%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L S     +          N V  IE L P K   L +LD+
+Sbjct  34   KAGVFADLSAQELKAVHSFLWSQKELKLEPSGTLTMAKNSVFLIEMLLPKKQHVLKFLDK  93
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVS  106
+                P R AR V++FG  E+    E  VGPLP  
+Sbjct  94   GHRRPVREARAVIFFGAQEQPNVTEFAVGPLPTP  127
+
+
+>sp|H2A0M3|AMO_PINMG Putative amine oxidase [copper-containing] 
+OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+Length=781
+
+ Score = 60.9 bits (146),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 27/120 (23%), Positives = 51/120 (43%), Gaps = 8/120 (7%)
+
+Query  3    CVSNENVEIEAPKTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLK  60
+            C S+ +   + P   I+  L  +E++ V   L+      +     A   ++++  +E   
+Sbjct  44   CTSDLSEPDDPP---IFHDLTTKEIKSVQTYLYHQRDLRLLRPGLAKINTSFIQGMELYL  100
+
+Query  61   PNKTEALTYLDED--GDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDETTI-EPLSFY  117
+            PNK + + YL        PPR A   ++ G+ +    EE  V PLP   +  +   + +Y
+Sbjct  101  PNKKDVIHYLQSKVPTPKPPRAAVVTIFRGDCDPAVVEEYIVFPLPWPTQHRLHRKVPYY  160
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5114702960
+Results from round 3
+
+
+Query= d1w7ca2
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-co...  168     1e-48
+sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-co...  168     1e-48
+sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-cont...  165     2e-47
+sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-cont...  161     5e-46
+sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapie...  154     1e-43
+sp|H2A0M3|AMO_PINMG Putative amine oxidase [copper-containing] OS...  153     4e-43
+sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norve...  153     4e-43
+sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus muscul...  152     8e-43
+sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo abel...  151     1e-42
+sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos ...  151     2e-42
+sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus ...  151     3e-42
+sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus...  151     3e-42
+sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos t...  149     7e-42
+sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo...  147     4e-41
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q8JZQ5|AOC1_MOUSE Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Mus musculus OX=10090 GN=Aoc1 PE=2 SV=1
+Length=751
+
+ Score = 168 bits (426),  Expect = 1e-48, Method: Composition-based stats.
+ Identities = 34/127 (27%), Positives = 52/127 (41%), Gaps = 5/127 (4%)
+
+Query  1    AECVSNENVEIEAPKTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIET  58
+            A+  S      +  K  I+  L+ +E++ V   L S     +          N V  IE 
+Sbjct  17   ADTASAVTTPHD--KARIFADLSPQEIKAVHSFLMSRKELGLESSKNLTLAKNSVFLIEM  74
+
+Query  59   LKPNKTEALTYLDEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDET-TIEPLSFY  117
+            L P K   L +LDE    P R AR +++FG  +     E  VGPLP       + P   +
+Sbjct  75   LLPKKKNVLKFLDEGRKSPVREARAIIFFGAQDHPNVTEFAVGPLPRPCYVQALSPRPGH  134
+
+Query  118  NTNGKSK  124
+            + +  S+
+Sbjct  135  HLSWSSR  141
+
+
+>sp|P19801|AOC1_HUMAN Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Homo sapiens OX=9606 GN=AOC1 PE=1 SV=4
+Length=751
+
+ Score = 168 bits (425),  Expect = 1e-48, Method: Composition-based stats.
+ Identities = 33/115 (29%), Positives = 51/115 (44%), Gaps = 3/115 (3%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              K  +++ L+ +E++ V   L S     +   +      N V  IE L P K   L +L
+Sbjct  27   PRKAGVFSDLSNQELKAVHSFLWSKKELRLQPSSTTTMAKNTVFLIEMLLPKKYHVLRFL  86
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDETT-IEPLSFYNTNGKSK  124
+            D+    P R AR V++FG+ E     E  VGPLP       + P   Y ++  S+
+Sbjct  87   DKGERHPVREARAVIFFGDQEHPNVTEFAVGPLPGPCYMRALSPRPGYQSSWASR  141
+
+
+>sp|P36633|AOC1_RAT Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Rattus norvegicus OX=10116 GN=Aoc1 PE=2 SV=1
+Length=746
+
+ Score = 165 bits (417),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 31/113 (27%), Positives = 49/113 (43%), Gaps = 3/113 (3%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L +     +    +     N V  IE L P K   L +LDE
+Sbjct  29   KARVFADLSPQEIKAVHSFLMNREELGLQPSKEPTLAKNSVFLIEMLLPKKKHVLKFLDE  88
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDETT-IEPLSFYNTNGKSK  124
+                P R AR V++FG  +     E  VGPLP       + P   ++ +  S+
+Sbjct  89   GRKGPNREARAVIFFGAQDYPNVTEFAVGPLPRPYYIRALSPRPGHHLSWSSR  141
+
+
+>sp|Q9TRC7|AOC1_PIG Amiloride-sensitive amine oxidase [copper-containing] 
+OS=Sus scrofa OX=9823 GN=AOC1 PE=1 SV=3
+Length=755
+
+ Score = 161 bits (407),  Expect = 5e-46, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 48/113 (42%), Gaps = 3/113 (3%)
+
+Query  15   KTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLKPNKTEALTYLDE  72
+            K  ++  L+ +E++ V   L S     +          N V  IE L P K   L +LD+
+Sbjct  34   KAGVFADLSAQELKAVHSFLWSQKELKLEPSGTLTMAKNSVFLIEMLLPKKQHVLKFLDK  93
+
+Query  73   DGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDETT-IEPLSFYNTNGKSK  124
+                P R AR V++FG  E+    E  VGPLP       + P   +  +  S+
+Sbjct  94   GHRRPVREARAVIFFGAQEQPNVTEFAVGPLPTPRYMRDLPPRPGHQVSWASR  146
+
+
+>sp|Q16853|AOC3_HUMAN Membrane primary amine oxidase OS=Homo sapiens 
+OX=9606 GN=AOC3 PE=1 SV=3
+Length=763
+
+ Score = 154 bits (390),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 32/115 (28%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L++EE+  V+  L       + +  +A    N V  +E   P K  AL +L
+Sbjct  54   PGQSQLFADLSREELTAVMRFLTQRLGPGLVDAAQARPSDNCVFSVELQLPPKAAALAHL  113
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  +V+FG   +    EL VGPLP        T+E    PL ++ 
+Sbjct  114  DRGSPPPAREALAIVFFGRQPQPNVSELVVGPLPHPSYMRDVTVERHGGPLPYHR  168
+
+
+>sp|H2A0M3|AMO_PINMG Putative amine oxidase [copper-containing] 
+OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+Length=781
+
+ Score = 153 bits (386),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 27/120 (23%), Positives = 51/120 (43%), Gaps = 8/120 (7%)
+
+Query  3    CVSNENVEIEAPKTNIWTSLAKEEVQEVLDLLHST--YNITEVTKADFFSNYVLWIETLK  60
+            C S+ +   + P   I+  L  +E++ V   L+      +     A   ++++  +E   
+Sbjct  44   CTSDLSEPDDPP---IFHDLTTKEIKSVQTYLYHQRDLRLLRPGLAKINTSFIQGMELYL  100
+
+Query  61   PNKTEALTYLDED--GDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDETTI-EPLSFY  117
+            PNK + + YL        PPR A   ++ G+ +    EE  V PLP   +  +   + +Y
+Sbjct  101  PNKKDVIHYLQSKVPTPKPPRAAVVTIFRGDCDPAVVEEYIVFPLPWPTQHRLHRKVPYY  160
+
+
+>sp|O08590|AOC3_RAT Membrane primary amine oxidase OS=Rattus norvegicus 
+OX=10116 GN=Aoc3 PE=1 SV=4
+Length=763
+
+ Score = 153 bits (386),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 34/115 (30%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++  +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +L
+Sbjct  54   PGQSQPFADLSPEELTAVMSFLIKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHL  113
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D  G  P R A  +++FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  114  DRGGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYYR  168
+
+
+>sp|O70423|AOC3_MOUSE Membrane primary amine oxidase OS=Mus musculus 
+OX=10090 GN=Aoc3 PE=1 SV=3
+Length=765
+
+ Score = 152 bits (384),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 34/115 (30%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++  +  L+ EE+  V+  L  H    + +  +A    N V  +E   P K  AL +L
+Sbjct  54   PSQSQPFADLSPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHL  113
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D  G  P R A  +++FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  114  DRGGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYYR  168
+
+
+>sp|Q5R9I0|AOC3_PONAB Membrane primary amine oxidase OS=Pongo 
+abelii OX=9601 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 151 bits (382),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 30/115 (26%), Positives = 50/115 (43%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +L
+Sbjct  54   PGQSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHL  113
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  ++ FG   +    EL VGPLP        T+E    PL ++ 
+Sbjct  114  DRGSPPPAREALAIILFGRQPQPNVSELVVGPLPHPSYMRDVTVEHHGGPLPYHR  168
+
+
+>sp|Q29437|AOCX_BOVIN Primary amine oxidase, liver isozyme OS=Bos 
+taurus OX=9913 PE=1 SV=1
+Length=762
+
+ Score = 151 bits (381),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 33/115 (29%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L++EE+  V+  L       + +  +A    N V  +E   P K  AL +L
+Sbjct  53   PDQSQLFADLSREELTTVMSFLTQQLGPDLVDAAQARPSDNCVFSVELQLPPKAAALAHL  112
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  +V+FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  113  DRGSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYYR  167
+
+
+>sp|Q812C9|AOC2_MOUSE Retina-specific copper amine oxidase OS=Mus 
+musculus OX=10090 GN=Aoc2 PE=2 SV=2
+Length=757
+
+ Score = 151 bits (380),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 34/115 (30%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLL--HSTYNITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L  EE+  V+  L  H    + +  +A    N V  +E   P K  AL +L
+Sbjct  50   PSQSQLFADLTPEELTAVMSFLTKHLGPGLVDAAQARPSDNCVFSVELQLPAKAAALAHL  109
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D  G  P R A  +++FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  110  DRGGPPPVREALAIIFFGGQPKPNVSELVVGPLPHPSYMRDVTVERHGGPLPYYR  164
+
+
+>sp|Q9TTK6|AOC3_BOVIN Membrane primary amine oxidase OS=Bos taurus 
+OX=9913 GN=AOC3 PE=2 SV=3
+Length=763
+
+ Score = 151 bits (380),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 32/115 (28%), Positives = 50/115 (43%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              +  ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +L
+Sbjct  54   PGQNQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHL  113
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  +V+FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  114  DRRSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYYR  168
+
+
+>sp|O46406|AOCY_BOVIN Primary amine oxidase, lung isozyme OS=Bos 
+taurus OX=9913 PE=2 SV=1
+Length=762
+
+ Score = 149 bits (377),  Expect = 7e-42, Method: Composition-based stats.
+ Identities = 32/115 (28%), Positives = 51/115 (44%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +L
+Sbjct  53   PDQSQLFADLSREELTAVMSFLTQKLGPDLVDAAQARPSDNCIFSVELQLPPKAAALAHL  112
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  +V+FG   +    EL VGPLP        T+E    PL +Y 
+Sbjct  113  DRRSPPPAREALAIVFFGGQPQPNVTELVVGPLPQPSYMRDVTVERHGGPLPYYR  167
+
+
+>sp|O75106|AOC2_HUMAN Retina-specific copper amine oxidase OS=Homo 
+sapiens OX=9606 GN=AOC2 PE=1 SV=2
+Length=756
+
+ Score = 147 bits (372),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 31/115 (27%), Positives = 50/115 (43%), Gaps = 9/115 (8%)
+
+Query  13   APKTNIWTSLAKEEVQEVLDLLHSTYN--ITEVTKADFFSNYVLWIETLKPNKTEALTYL  70
+              ++ ++  L++EE+  V+  L       + +  +A    N +  +E   P K  AL +L
+Sbjct  50   PGQSQLFADLSREELTAVMRFLTQRLGPGLVDAAQAQPSDNCIFSVELQLPPKAAALAHL  109
+
+Query  71   DEDGDLPPRNARTVVYFGEGEEGYFEELKVGPLPVSDE---TTIE----PLSFYN  118
+            D     P R A  +V FG   +    EL VGPLP        T+E    PL ++ 
+Sbjct  110  DRGSPPPAREALAIVLFGGQPQPNVSELVVGPLPHPSYMRDVTVERHGGPLPYHR  164
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.128    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5114702960
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

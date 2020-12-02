@@ -1,0 +1,538 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1usub_
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces cer...  252     7e-84
+sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosa...  101     2e-25
+sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces cer...  59.3    7e-11
+
+
+>sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AHA1 PE=1 
+SV=1
+Length=350
+
+ Score = 252 bits (643),  Expect = 7e-84, Method: Compositional matrix adjust.
+ Identities = 131/142 (92%), Positives = 132/142 (93%), Gaps = 10/142 (7%)
+
+Query  1    VDKNCIGWAKEYFKQKIVGVEA-----KKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKNCIGWAKEYFKQK+VGVEA     KKYAKIKSVSSIEGDCEVNQR GKVISLFDLKI
+Sbjct  12   VDKNCIGWAKEYFKQKLVGVEAGSVKDKKYAKIKSVSSIEGDCEVNQRKGKVISLFDLKI  71
+
+Query  55   TVLIEGHVDS----ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  110
+            TVLIEGHVDS    ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL
+Sbjct  72   TVLIEGHVDSKDGSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  131
+
+Query  111  LPKLRQIFQQFGKDLLATHGND  132
+            LPKLRQIFQQFGKDLLATHGND
+Sbjct  132  LPKLRQIFQQFGKDLLATHGND  153
+
+
+>sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC1711.08 
+PE=2 SV=1
+Length=336
+
+ Score = 101 bits (251),  Expect = 2e-25, Method: Compositional matrix adjust.
+ Identities = 54/134 (40%), Positives = 80/134 (60%), Gaps = 4/134 (3%)
+
+Query  3    KNCIGWAKEYFKQ---KIVGVEAKKYAKIKSVSSIEGDCEVNQRG-KVISLFDLKITVLI  58
+            K+C  W+ EYF +   KI   E    A+I  V+S EGD +V+ R  KVI++FDLKI +  
+Sbjct  16   KDCRVWSHEYFNKELPKIQASEGPTSARITQVNSCEGDVDVSMRKRKVITIFDLKIQMEF  75
+
+Query  59   EGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQIF  118
+            +G     +   GSI  PE+++D   S Y FDI I+  + E    K L+R +++P++RQ+F
+Sbjct  76   KGETKDGVEATGSITCPELSYDLGYSDYVFDIDIYSASKEKEPIKELVREKIIPQIRQLF  135
+
+Query  119  QQFGKDLLATHGND  132
+              F + LL THG+D
+Sbjct  136  SGFSQVLLQTHGDD  149
+
+
+>sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HCH1 PE=1 
+SV=1
+Length=153
+
+ Score = 59.3 bits (142),  Expect = 7e-11, Method: Compositional matrix adjust.
+ Identities = 43/147 (29%), Positives = 75/147 (51%), Gaps = 23/147 (16%)
+
+Query  1    VDKNCIGWAKEYFKQKI-----VGVEAKKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKN + W+K+Y   K+     V  + K   ++  VSSI GD  V+QR GK I  FDL++
+Sbjct  12   VDKNTLPWSKDYLNGKLTSLSTVSSDGKSKIELTQVSSITGDSNVSQRKGKPICYFDLQL  71
+
+Query  55   TVLIE-GHVDS--------ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPL  105
+            ++ ++  ++D+         +  +G + +PE   D      + DI I  +  +  +   L
+Sbjct  72   SMNVKVTNLDTNKDDEDDDGILADGKLEIPEFMHD------ESDIPILSQGFDAFDG--L  123
+
+Query  106  IRSELLPKLRQIFQQFGKDLLATHGND  132
+            +RSE +PK+ +   ++  DL+  H  D
+Sbjct  124  VRSEFVPKVVETLLKYQDDLIKEHSKD  150
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+Results from round 2
+
+
+Query= d1usub_
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosa...  192     1e-60
+sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces cer...  192     2e-60
+sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces cer...  149     4e-46
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8N9S3|AHSA2_MOUSE Activator of 90 kDa heat shock protein ATPa...  52.4    1e-07
+sp|O95433|AHSA1_HUMAN Activator of 90 kDa heat shock protein ATPa...  51.6    2e-07
+sp|Q8BK64|AHSA1_MOUSE Activator of 90 kDa heat shock protein ATPa...  51.6    2e-07
+sp|Q719I0|AHSA2_HUMAN Putative activator of 90 kDa heat shock pro...  42.4    3e-04
+sp|Q55DB6|AHSA_DICDI Activator of 90 kDa heat shock protein ATPas...  39.3    0.004
+
+
+>sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC1711.08 
+PE=2 SV=1
+Length=336
+
+ Score = 192 bits (488),  Expect = 1e-60, Method: Composition-based stats.
+ Identities = 54/134 (40%), Positives = 80/134 (60%), Gaps = 4/134 (3%)
+
+Query  3    KNCIGWAKEYFKQ---KIVGVEAKKYAKIKSVSSIEGDCEVNQRG-KVISLFDLKITVLI  58
+            K+C  W+ EYF +   KI   E    A+I  V+S EGD +V+ R  KVI++FDLKI +  
+Sbjct  16   KDCRVWSHEYFNKELPKIQASEGPTSARITQVNSCEGDVDVSMRKRKVITIFDLKIQMEF  75
+
+Query  59   EGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQIF  118
+            +G     +   GSI  PE+++D   S Y FDI I+  + E    K L+R +++P++RQ+F
+Sbjct  76   KGETKDGVEATGSITCPELSYDLGYSDYVFDIDIYSASKEKEPIKELVREKIIPQIRQLF  135
+
+Query  119  QQFGKDLLATHGND  132
+              F + LL THG+D
+Sbjct  136  SGFSQVLLQTHGDD  149
+
+
+>sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AHA1 PE=1 
+SV=1
+Length=350
+
+ Score = 192 bits (487),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 131/142 (92%), Positives = 132/142 (93%), Gaps = 10/142 (7%)
+
+Query  1    VDKNCIGWAKEYFKQKIVGVEA-----KKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKNCIGWAKEYFKQK+VGVEA     KKYAKIKSVSSIEGDCEVNQR GKVISLFDLKI
+Sbjct  12   VDKNCIGWAKEYFKQKLVGVEAGSVKDKKYAKIKSVSSIEGDCEVNQRKGKVISLFDLKI  71
+
+Query  55   TVLIEGHVDS----ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  110
+            TVLIEGHVDS    ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL
+Sbjct  72   TVLIEGHVDSKDGSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  131
+
+Query  111  LPKLRQIFQQFGKDLLATHGND  132
+            LPKLRQIFQQFGKDLLATHGND
+Sbjct  132  LPKLRQIFQQFGKDLLATHGND  153
+
+
+>sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HCH1 PE=1 
+SV=1
+Length=153
+
+ Score = 149 bits (376),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 43/147 (29%), Positives = 75/147 (51%), Gaps = 23/147 (16%)
+
+Query  1    VDKNCIGWAKEYFKQKI-----VGVEAKKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKN + W+K+Y   K+     V  + K   ++  VSSI GD  V+QR GK I  FDL++
+Sbjct  12   VDKNTLPWSKDYLNGKLTSLSTVSSDGKSKIELTQVSSITGDSNVSQRKGKPICYFDLQL  71
+
+Query  55   TVLIE-GHVDS--------ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPL  105
+            ++ ++  ++D+         +  +G + +PE   D      + DI I  +  +  +   L
+Sbjct  72   SMNVKVTNLDTNKDDEDDDGILADGKLEIPEFMHD------ESDIPILSQGFDAFDG--L  123
+
+Query  106  IRSELLPKLRQIFQQFGKDLLATHGND  132
+            +RSE +PK+ +   ++  DL+  H  D
+Sbjct  124  VRSEFVPKVVETLLKYQDDLIKEHSKD  150
+
+
+>sp|Q8N9S3|AHSA2_MOUSE Activator of 90 kDa heat shock protein 
+ATPase homolog 2 OS=Mus musculus OX=10090 GN=Ahsa2 PE=1 SV=2
+Length=331
+
+ Score = 52.4 bits (124),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 30/129 (23%), Positives = 66/129 (51%), Gaps = 7/129 (5%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKKYA---KIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+K   ++ +VG+  +  A   +I  +  +EG+   N R GK+I  ++  I + 
+Sbjct  29   ERDATIWSKGKLRELLVGIAMENEAGRCEISELKQVEGEASCNSRKGKLIFFYEWNIKLA  88
+
+Query  58   IEGHVD-SALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQ  116
+             +G V  S    +G I +P ++ ++E +  + ++S  K+  +    K L+R+    K+R+
+Sbjct  89   WKGTVKESGAKHKGLIEIPSLSEENEINDTEVNVS--KKKGDGEILKDLMRTTGTAKVRE  146
+
+Query  117  IFQQFGKDL  125
+               ++ K L
+Sbjct  147  ALGEYLKAL  155
+
+
+>sp|O95433|AHSA1_HUMAN Activator of 90 kDa heat shock protein 
+ATPase homolog 1 OS=Homo sapiens OX=9606 GN=AHSA1 PE=1 SV=1
+Length=338
+
+ Score = 51.6 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 21/136 (15%), Positives = 62/136 (46%), Gaps = 11/136 (8%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKK---YAKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+ +  K   + V+ +      ++  VS ++G+  +N R GK+I  ++  + + 
+Sbjct  29   ERDASNWSTDKLKTLFLAVQVQNEEGKCEVTEVSKLDGEASINNRKGKLIFFYEWSVKLN  88
+
+Query  58   IEGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSE-------LSEAKPLIRSEL  110
+              G   S + ++G + +P ++ ++     +  +S+ K+  +         E   L+R  +
+Sbjct  89   WTGTSKSGVQYKGHVEIPNLSDENSVDEVEISVSLAKDEPDTNLVALMKEEGVKLLREAM  148
+
+Query  111  LPKLRQIFQQFGKDLL  126
+               +  +  +F + ++
+Sbjct  149  GIYISTLKTEFTQGMI  164
+
+
+>sp|Q8BK64|AHSA1_MOUSE Activator of 90 kDa heat shock protein 
+ATPase homolog 1 OS=Mus musculus OX=10090 GN=Ahsa1 PE=1 SV=2
+Length=338
+
+ Score = 51.6 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 21/136 (15%), Positives = 61/136 (45%), Gaps = 11/136 (8%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKK---YAKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+ E  K   + V  +      ++  V+ ++G+  +N R GK+I  ++  I + 
+Sbjct  29   ERDASNWSTEKLKTLFLAVRVENEEGKCEVTEVNKLDGEASINNRKGKLIFFYEWTIKLN  88
+
+Query  58   IEGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSE-------LSEAKPLIRSEL  110
+              G   S + ++G + +P ++ ++     +  +S+ K+  +         +   L+R  +
+Sbjct  89   WTGTSKSGVQYKGHVEIPNLSDENSVDEVEISVSLAKDEPDTNLVALMKEDGVKLLREAV  148
+
+Query  111  LPKLRQIFQQFGKDLL  126
+               +  +  +F + ++
+Sbjct  149  GIYISTLKTEFTQGMI  164
+
+
+>sp|Q719I0|AHSA2_HUMAN Putative activator of 90 kDa heat shock 
+protein ATPase homolog 2 OS=Homo sapiens OX=9606 GN=AHSA2P 
+PE=5 SV=2
+Length=299
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 28/129 (22%), Positives = 65/129 (50%), Gaps = 7/129 (5%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKKYA---KIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++    +K  F++ +VG+  +  A   +I  +  +EG+   + R GK+I  ++  I + 
+Sbjct  29   ERDATSLSKGKFQELLVGIVVENDAGRGEINELKQVEGEASCSSRKGKLIFFYEWNIKLG  88
+
+Query  58   IEGHVD-SALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQ  116
+             +G V  S +  +G I +P ++ ++E    +  +S+ K+  +    K L+++    K+R+
+Sbjct  89   WKGIVKESGVKHKGLIEIPNLSEENEVDDTE--VSLSKKKGDGVILKDLMKTAGTAKVRE  146
+
+Query  117  IFQQFGKDL  125
+                + K L
+Sbjct  147  ALGDYLKAL  155
+
+
+>sp|Q55DB6|AHSA_DICDI Activator of 90 kDa heat shock protein ATPase 
+homolog OS=Dictyostelium discoideum OX=44689 GN=ahsa PE=2 
+SV=1
+Length=383
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 19/63 (30%), Positives = 33/63 (52%), Gaps = 5/63 (8%)
+
+Query  2   DKNCIGWAKE----YFKQKIVGVEAKKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKITV  56
+           +K+C+ W+K      F +K++    +   KI S   + G+C  N R GK I L++L + +
+Sbjct  29  EKDCLPWSKNTIGGLFDKKVIQETDEYTFKISSTPVVSGECTANNRKGKTIFLYELDVKM  88
+
+Query  57  LIE  59
+             E
+Sbjct  89  NWE  91
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.331    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0403    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+Results from round 3
+
+
+Query= d1usub_
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosa...  160     3e-48
+sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces cer...  155     5e-46
+sp|Q8BK64|AHSA1_MOUSE Activator of 90 kDa heat shock protein ATPa...  148     1e-43
+sp|O95433|AHSA1_HUMAN Activator of 90 kDa heat shock protein ATPa...  148     2e-43
+sp|Q8N9S3|AHSA2_MOUSE Activator of 90 kDa heat shock protein ATPa...  139     3e-40
+sp|Q719I0|AHSA2_HUMAN Putative activator of 90 kDa heat shock pro...  133     4e-38
+sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces cer...  119     5e-34
+
+Sequences not found previously or not previously below threshold:
+
+sp|A6QQC0|AHSA2_BOVIN Activator of 90 kDa heat shock protein ATPa...  132     6e-38
+sp|Q55DB6|AHSA_DICDI Activator of 90 kDa heat shock protein ATPas...  47.0    8e-06
+
+
+>sp|Q9P782|YNY8_SCHPO Uncharacterized protein C1711.08 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC1711.08 
+PE=2 SV=1
+Length=336
+
+ Score = 160 bits (405),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 54/134 (40%), Positives = 80/134 (60%), Gaps = 4/134 (3%)
+
+Query  3    KNCIGWAKEYFKQ---KIVGVEAKKYAKIKSVSSIEGDCEVNQRG-KVISLFDLKITVLI  58
+            K+C  W+ EYF +   KI   E    A+I  V+S EGD +V+ R  KVI++FDLKI +  
+Sbjct  16   KDCRVWSHEYFNKELPKIQASEGPTSARITQVNSCEGDVDVSMRKRKVITIFDLKIQMEF  75
+
+Query  59   EGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQIF  118
+            +G     +   GSI  PE+++D   S Y FDI I+  + E    K L+R +++P++RQ+F
+Sbjct  76   KGETKDGVEATGSITCPELSYDLGYSDYVFDIDIYSASKEKEPIKELVREKIIPQIRQLF  135
+
+Query  119  QQFGKDLLATHGND  132
+              F + LL THG+D
+Sbjct  136  SGFSQVLLQTHGDD  149
+
+
+>sp|Q12449|AHA1_YEAST Hsp90 co-chaperone AHA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AHA1 PE=1 
+SV=1
+Length=350
+
+ Score = 155 bits (391),  Expect = 5e-46, Method: Composition-based stats.
+ Identities = 131/142 (92%), Positives = 132/142 (93%), Gaps = 10/142 (7%)
+
+Query  1    VDKNCIGWAKEYFKQKIVGVEA-----KKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKNCIGWAKEYFKQK+VGVEA     KKYAKIKSVSSIEGDCEVNQR GKVISLFDLKI
+Sbjct  12   VDKNCIGWAKEYFKQKLVGVEAGSVKDKKYAKIKSVSSIEGDCEVNQRKGKVISLFDLKI  71
+
+Query  55   TVLIEGHVDS----ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  110
+            TVLIEGHVDS    ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL
+Sbjct  72   TVLIEGHVDSKDGSALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSEL  131
+
+Query  111  LPKLRQIFQQFGKDLLATHGND  132
+            LPKLRQIFQQFGKDLLATHGND
+Sbjct  132  LPKLRQIFQQFGKDLLATHGND  153
+
+
+>sp|Q8BK64|AHSA1_MOUSE Activator of 90 kDa heat shock protein 
+ATPase homolog 1 OS=Mus musculus OX=10090 GN=Ahsa1 PE=1 SV=2
+Length=338
+
+ Score = 148 bits (374),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 21/136 (15%), Positives = 61/136 (45%), Gaps = 11/136 (8%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKK---YAKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+ E  K   + V  +      ++  V+ ++G+  +N R GK+I  ++  I + 
+Sbjct  29   ERDASNWSTEKLKTLFLAVRVENEEGKCEVTEVNKLDGEASINNRKGKLIFFYEWTIKLN  88
+
+Query  58   IEGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSE-------LSEAKPLIRSEL  110
+              G   S + ++G + +P ++ ++     +  +S+ K+  +         +   L+R  +
+Sbjct  89   WTGTSKSGVQYKGHVEIPNLSDENSVDEVEISVSLAKDEPDTNLVALMKEDGVKLLREAV  148
+
+Query  111  LPKLRQIFQQFGKDLL  126
+               +  +  +F + ++
+Sbjct  149  GIYISTLKTEFTQGMI  164
+
+
+>sp|O95433|AHSA1_HUMAN Activator of 90 kDa heat shock protein 
+ATPase homolog 1 OS=Homo sapiens OX=9606 GN=AHSA1 PE=1 SV=1
+Length=338
+
+ Score = 148 bits (373),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 21/136 (15%), Positives = 62/136 (46%), Gaps = 11/136 (8%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKK---YAKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+ +  K   + V+ +      ++  VS ++G+  +N R GK+I  ++  + + 
+Sbjct  29   ERDASNWSTDKLKTLFLAVQVQNEEGKCEVTEVSKLDGEASINNRKGKLIFFYEWSVKLN  88
+
+Query  58   IEGHVDSALPFEGSINVPEVAFDSEASSYQFDISIFKETSE-------LSEAKPLIRSEL  110
+              G   S + ++G + +P ++ ++     +  +S+ K+  +         E   L+R  +
+Sbjct  89   WTGTSKSGVQYKGHVEIPNLSDENSVDEVEISVSLAKDEPDTNLVALMKEEGVKLLREAM  148
+
+Query  111  LPKLRQIFQQFGKDLL  126
+               +  +  +F + ++
+Sbjct  149  GIYISTLKTEFTQGMI  164
+
+
+>sp|Q8N9S3|AHSA2_MOUSE Activator of 90 kDa heat shock protein 
+ATPase homolog 2 OS=Mus musculus OX=10090 GN=Ahsa2 PE=1 SV=2
+Length=331
+
+ Score = 139 bits (351),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 29/129 (22%), Positives = 65/129 (50%), Gaps = 7/129 (5%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKKY---AKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+K   ++ +VG+  +      +I  +  +EG+   N R GK+I  ++  I + 
+Sbjct  29   ERDATIWSKGKLRELLVGIAMENEAGRCEISELKQVEGEASCNSRKGKLIFFYEWNIKLA  88
+
+Query  58   IEGHVD-SALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQ  116
+             +G V  S    +G I +P ++ ++E +  + ++S  K+  +    K L+R+    K+R+
+Sbjct  89   WKGTVKESGAKHKGLIEIPSLSEENEINDTEVNVS--KKKGDGEILKDLMRTTGTAKVRE  146
+
+Query  117  IFQQFGKDL  125
+               ++ K L
+Sbjct  147  ALGEYLKAL  155
+
+
+>sp|Q719I0|AHSA2_HUMAN Putative activator of 90 kDa heat shock 
+protein ATPase homolog 2 OS=Homo sapiens OX=9606 GN=AHSA2P 
+PE=5 SV=2
+Length=299
+
+ Score = 133 bits (335),  Expect = 4e-38, Method: Composition-based stats.
+ Identities = 28/129 (22%), Positives = 65/129 (50%), Gaps = 7/129 (5%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKKYA---KIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++    +K  F++ +VG+  +  A   +I  +  +EG+   + R GK+I  ++  I + 
+Sbjct  29   ERDATSLSKGKFQELLVGIVVENDAGRGEINELKQVEGEASCSSRKGKLIFFYEWNIKLG  88
+
+Query  58   IEGHVD-SALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQ  116
+             +G V  S +  +G I +P ++ ++E    +  +S+ K+  +    K L+++    K+R+
+Sbjct  89   WKGIVKESGVKHKGLIEIPNLSEENEVDDTE--VSLSKKKGDGVILKDLMKTAGTAKVRE  146
+
+Query  117  IFQQFGKDL  125
+                + K L
+Sbjct  147  ALGDYLKAL  155
+
+
+>sp|A6QQC0|AHSA2_BOVIN Activator of 90 kDa heat shock protein 
+ATPase homolog 2 OS=Bos taurus OX=9913 GN=AHSA2 PE=2 SV=1
+Length=260
+
+ Score = 132 bits (331),  Expect = 6e-38, Method: Composition-based stats.
+ Identities = 26/129 (20%), Positives = 63/129 (49%), Gaps = 7/129 (5%)
+
+Query  2    DKNCIGWAKEYFKQKIVGVEAKKY---AKIKSVSSIEGDCEVNQR-GKVISLFDLKITVL  57
+            +++   W+K   ++ +VG+  +      +I  +  +EG+   + R GK+I  ++  I + 
+Sbjct  29   ERDATSWSKGRLRELLVGITVENEAGRCEISELKQVEGEASCSSRKGKLIFFYEWNIKLG  88
+
+Query  58   IEGHVD-SALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPLIRSELLPKLRQ  116
+             +G +  S    +G I +P ++ ++E    + ++S  K+  +    K L+++    K+R+
+Sbjct  89   WKGIIRESGAKHKGLIEIPSLSEENEVDDTEVNVS--KKKGDGDILKDLMKTAGTAKVRE  146
+
+Query  117  IFQQFGKDL  125
+                + K L
+Sbjct  147  ALGDYLKAL  155
+
+
+>sp|P53834|HCH1_YEAST Hsp90 co-chaperone HCH1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HCH1 PE=1 
+SV=1
+Length=153
+
+ Score = 119 bits (297),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 43/147 (29%), Positives = 75/147 (51%), Gaps = 23/147 (16%)
+
+Query  1    VDKNCIGWAKEYFKQKI-----VGVEAKKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKI  54
+            VDKN + W+K+Y   K+     V  + K   ++  VSSI GD  V+QR GK I  FDL++
+Sbjct  12   VDKNTLPWSKDYLNGKLTSLSTVSSDGKSKIELTQVSSITGDSNVSQRKGKPICYFDLQL  71
+
+Query  55   TVLIE-GHVDS--------ALPFEGSINVPEVAFDSEASSYQFDISIFKETSELSEAKPL  105
+            ++ ++  ++D+         +  +G + +PE   D      + DI I  +  +  +   L
+Sbjct  72   SMNVKVTNLDTNKDDEDDDGILADGKLEIPEFMHD------ESDIPILSQGFDAFDG--L  123
+
+Query  106  IRSELLPKLRQIFQQFGKDLLATHGND  132
+            +RSE +PK+ +   ++  DL+  H  D
+Sbjct  124  VRSEFVPKVVETLLKYQDDLIKEHSKD  150
+
+
+>sp|Q55DB6|AHSA_DICDI Activator of 90 kDa heat shock protein ATPase 
+homolog OS=Dictyostelium discoideum OX=44689 GN=ahsa PE=2 
+SV=1
+Length=383
+
+ Score = 47.0 bits (110),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 36/173 (21%), Positives = 67/173 (39%), Gaps = 46/173 (27%)
+
+Query  2    DKNCIGWAK----EYFKQKIVGVEAKKYAKIKSVSSIEGDCEVNQR-GKVISLFDLKITV  56
+            +K+C+ W+K      F +K++    +   KI S   + G+C  N R GK I L++L + +
+Sbjct  29   EKDCLPWSKNTIGGLFDKKVIQETDEYTFKISSTPVVSGECTANNRKGKTIFLYELDVKM  88
+
+Query  57   LIE------------GHVDS-------------ALPFE----------GSINVPEVAFDS  81
+              E                S               P E          G   VP ++ ++
+Sbjct  89   NWEVVFKPKKVLPPPPTTKSKGAADDIDEEDDDGKPAEPIITQKKTISGEFTVPYISDEN  148
+
+Query  82   --EASSYQFDISIFKETSELSE----AKPLIRSELLPKLRQIFQQFGKDLLAT  128
+              EA + ++ I+   +  E  +     + L++S  +P ++   Q+F K L   
+Sbjct  149  GDEAPTVRYTINTTADNDETKQSINMVQSLLKSHGVPFVQSQCQEFIKLLKKE  201
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.306    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

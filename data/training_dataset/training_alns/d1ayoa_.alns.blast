@@ -1,0 +1,2746 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ayoa_
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 ...  269     2e-83
+sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=960...  244     6e-75
+sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=960...  242     5e-74
+sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus OX=...  223     1e-67
+sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus OX=1...  223     3e-67
+sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=960...  222     4e-67
+sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 GN...  202     3e-60
+sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 GN...  199     6e-59
+sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10...  196     4e-58
+sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116...  195     1e-57
+sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116...  193     7e-57
+sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus OX=1...  178     9e-52
+sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=100...  175     9e-51
+sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Hom...  109     1e-27
+sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 SV=3     107     8e-27
+sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606...  83.6    2e-18
+sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 G...  82.8    3e-18
+sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 GN=...  62.0    6e-11
+sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus hann...  60.5    2e-10
+sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 GN=...  59.3    5e-10
+sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=99...  58.9    5e-10
+sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 ...  58.9    6e-10
+sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 GN=C...  58.9    7e-10
+sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 GN=C...  58.9    7e-10
+sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 PE=...  57.8    2e-09
+sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryct...  57.4    2e-09
+sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 ...  57.4    3e-09
+sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps sup...  56.6    5e-09
+sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 PE=...  56.6    5e-09
+sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 GN=...  55.8    7e-09
+sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 ...  55.8    9e-09
+sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 ...  53.9    3e-08
+sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 P...  53.9    4e-08
+sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps sup...  53.5    5e-08
+sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 GN=...  52.8    8e-08
+sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606...  49.3    1e-06
+sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camts...  48.5    3e-06
+sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus myki...  45.8    3e-05
+sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 GN=C...  45.4    3e-05
+sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis OX...  43.9    1e-04
+sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domai...  43.9    1e-04
+sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD...  42.4    4e-04
+
+
+>sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 
+GN=A2M PE=1 SV=2
+Length=1510
+
+ Score = 269 bits (687),  Expect = 2e-83, Method: Compositional matrix adjust.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1375  EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  1434
+
+Query  61    MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  120
+             MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF
+Sbjct  1435  MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  1494
+
+Query  121   AVAEYSAPCS  130
+             AVAEYSAPCS
+Sbjct  1495  AVAEYSAPCS  1504
+
+
+>sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=9601 
+GN=A2M PE=2 SV=1
+Length=1474
+
+ Score = 244 bits (624),  Expect = 6e-75, Method: Compositional matrix adjust.
+ Identities = 119/131 (91%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERSN-VSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERSN VSRTEVSNNHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSNNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=9606 
+GN=A2M PE=1 SV=3
+Length=1474
+
+ Score = 242 bits (617),  Expect = 5e-74, Method: Compositional matrix adjust.
+ Identities = 118/131 (90%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERSN-VSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERSN VSRTEVS+NHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSSNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A2m PE=2 SV=2
+Length=1472
+
+ Score = 223 bits (569),  Expect = 1e-67, Method: Compositional matrix adjust.
+ Identities = 107/131 (82%), Positives = 119/131 (91%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPF + VQTLP TC+ PKAHTSFQISL++SY GSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1336  EFPFTVVVQTLPGTCEDPKAHTSFQISLNISYTGSRSESNMAIADVKMVSGFIPLKPTVK  1395
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+T+ L+FTV QDIP+RDLKPA+VKVYDYYE DE
+Sbjct  1396  MLERSVHVSRTEVSNNHVLIYLDKVSNQTVNLSFTVQQDIPIRDLKPAVVKVYDYYEKDE  1455
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1456  FAVAKYSAPCS  1466
+
+
+>sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus 
+OX=10090 GN=A2m PE=2 SV=2
+Length=1474
+
+ Score = 223 bits (567),  Expect = 3e-67, Method: Compositional matrix adjust.
+ Identities = 110/131 (84%), Positives = 118/131 (90%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLP TC+  KAHT+FQISL++SYIGSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALVVQTLPGTCEDLKAHTTFQISLNISYIGSRSDSNMAIADVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+ LTL F V QDIPVRDLKPAIVKVYDYYE DE
+Sbjct  1398  MLERSVHVSRTEVSNNHVLIYLDKVSNQMLTLFFMVQQDIPVRDLKPAIVKVYDYYEKDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1458  FAVAKYSAPCS  1468
+
+
+>sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=9606 
+GN=PZP PE=1 SV=4
+Length=1482
+
+ Score = 222 bits (565),  Expect = 4e-67, Method: Compositional matrix adjust.
+ Identities = 107/129 (83%), Positives = 119/129 (92%), Gaps = 1/129 (1%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+             PFAL+VQT+PQTCDG KAHTSFQISL++SY G+RPASNM IVDVKMVSGFIPLKPTVKML
+Sbjct  1346  PFALKVQTVPQTCDGHKAHTSFQISLTISYTGNRPASNMVIVDVKMVSGFIPLKPTVKML  1405
+
+Query  63    ER-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             ER S+VSRTEVSNNHVLIY+++VTN+TL+ +F VLQDIPV DLKPAIVKVYDYYETDE  
+Sbjct  1406  ERSSSVSRTEVSNNHVLIYVEQVTNQTLSFSFMVLQDIPVGDLKPAIVKVYDYYETDESV  1465
+
+Query  122   VAEYSAPCS  130
+             VAEY APCS
+Sbjct  1466  VAEYIAPCS  1474
+
+
+>sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 
+GN=Mug1 PE=1 SV=3
+Length=1476
+
+ Score = 202 bits (515),  Expect = 3e-60, Method: Compositional matrix adjust.
+ Identities = 96/128 (75%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FA+ VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1343  FAIWVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1402
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEVSNN+VLIYLD+VTN+TL  +F + QDIPVR+L+PAIVKVYDYYETDE A 
+Sbjct  1403  RLEHVSRTEVSNNNVLIYLDQVTNQTLAFSFIIQQDIPVRNLQPAIVKVYDYYETDEMAF  1462
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1463  AEYSSPCS  1470
+
+
+>sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 
+GN=Mug2 PE=1 SV=2
+Length=1451
+
+ Score = 199 bits (505),  Expect = 6e-59, Method: Compositional matrix adjust.
+ Identities = 94/128 (73%), Positives = 109/128 (85%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1318  FALRVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1377
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  ++SRTEVSNN+VL+YLD+VTN+TL  +F + QDI VR+L+PAIVKVYDYYETDE A 
+Sbjct  1378  RLEHISRTEVSNNNVLLYLDQVTNQTLAFSFIIQQDISVRNLQPAIVKVYDYYETDEVAY  1437
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1438  AEYSSPCS  1445
+
+
+>sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10116 
+GN=A1i3 PE=1 SV=1
+Length=1477
+
+ Score = 196 bits (499),  Expect = 4e-58, Method: Compositional matrix adjust.
+ Identities = 92/128 (72%), Positives = 111/128 (87%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY+GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1344  FALKVQTVPLTCNNPKGQNSFQISLEISYMGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1403
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1404  RLGHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1463
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1464  AEYSSPCS  1471
+
+
+>sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116 
+GN=Mug1 PE=2 SV=1
+Length=1487
+
+ Score = 195 bits (495),  Expect = 1e-57, Method: Compositional matrix adjust.
+ Identities = 92/128 (72%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1354  FALKVQTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1413
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1414  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1473
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1474  AEYSSPCS  1481
+
+
+>sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116 
+GN=Mug2 PE=1 SV=1
+Length=1448
+
+ Score = 193 bits (490),  Expect = 7e-57, Method: Compositional matrix adjust.
+ Identities = 91/128 (71%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+V+T+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1315  FALKVKTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1374
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1375  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1434
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1435  AEYSSPCS  1442
+
+
+>sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A1m PE=1 SV=1
+Length=1500
+
+ Score = 178 bits (452),  Expect = 9e-52, Method: Compositional matrix adjust.
+ Identities = 86/131 (66%), Positives = 105/131 (80%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             E PF L+V TLP   D  + H  FQI ++VSYIG RP SNM IVDVKMVSGFIP+KP+VK
+Sbjct  1362  EAPFTLKVNTLPLNFDKAEHHRKFQIHINVSYIGERPNSNMVIVDVKMVSGFIPVKPSVK  1421
+
+Query  61    MLE-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L+ +SN+ RTEV+ NHVLIY++K+TN+T+  +F V QDIPV++LKPA VKVYDYYETDE
+Sbjct  1422  KLQDQSNIQRTEVNTNHVLIYIEKLTNQTMGFSFAVEQDIPVKNLKPAPVKVYDYYETDE  1481
+
+Query  120   FAVAEYSAPCS  130
+             FA+ EYSAP S
+Sbjct  1482  FAIEEYSAPFS  1492
+
+
+>sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=10090 
+GN=Pzp PE=1 SV=3
+Length=1495
+
+ Score = 175 bits (444),  Expect = 9e-51, Method: Compositional matrix adjust.
+ Identities = 84/129 (65%), Positives = 103/129 (80%), Gaps = 1/129 (1%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+             PFAL+V TLP   D    H +FQI ++VSY G RP+SNM IVDVKMVSGFIP+KP+VK L
+Sbjct  1359  PFALQVNTLPLNFDKAGDHRTFQIRINVSYTGERPSSNMVIVDVKMVSGFIPMKPSVKKL  1418
+
+Query  63    E-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             + + N+ RTEV+ NHVLIY++K+TN+TL  +F V QDIPV++LKPA +KVYDYYETDEF 
+Sbjct  1419  QDQPNIQRTEVNTNHVLIYIEKLTNQTLGFSFAVEQDIPVKNLKPAPIKVYDYYETDEFT  1478
+
+Query  122   VAEYSAPCS  130
+             V EYSAP S
+Sbjct  1479  VEEYSAPFS  1487
+
+
+>sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Homo 
+sapiens OX=9606 GN=A2ML1 PE=1 SV=3
+Length=1454
+
+ Score = 109 bits (273),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 56/127 (44%), Positives = 83/127 (65%), Gaps = 1/127 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML-  62
+             F+L V+     C+ P +  S  +++  SY+GSR +SNMAIV+VKM+SGF P++ T ++L 
+Sbjct  1327  FSLSVEIGKARCEQPTSPRSLTLTIHTSYVGSRSSSNMAIVEVKMLSGFSPMEGTNQLLL  1386
+
+Query  63    ERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             ++  V + E   + + IYLD++   T T TFT+ Q + V +LKPA +KVYDYY  DE A 
+Sbjct  1387  QQPLVKKVEFGTDTLNIYLDELIKNTQTYTFTISQSVLVTNLKPATIKVYDYYLPDEQAT  1446
+
+Query  123   AEYSAPC  129
+              +YS PC
+Sbjct  1447  IQYSDPC  1453
+
+
+>sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 
+SV=3
+Length=1473
+
+ Score = 107 bits (267),  Expect = 8e-27, Method: Compositional matrix adjust.
+ Identities = 60/132 (45%), Positives = 84/132 (64%), Gaps = 7/132 (5%)
+
+Query  2     FPFALEVQTLPQTC--DGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             F F+L VQT   +C  D P     F I L  SY G R +SNM I+DVKM+SGF+P+K ++
+Sbjct  1337  FGFSLSVQTSNASCPRDQPG---KFDIVLISSYTGKRSSSNMVIIDVKMLSGFVPVKSSL  1393
+
+Query  60    -KMLERSNVSRTEVSNNHVLIYLDKVTNETLT-LTFTVLQDIPVRDLKPAIVKVYDYYET  117
+              ++++   V + E   NHVL+YL  +  +    +TF+V QD  V   KPA V++YDYYET
+Sbjct  1394  DQLIDDHTVMQVEYKKNHVLLYLGNILQKRRKEVTFSVEQDFVVTHPKPAPVQIYDYYET  1453
+
+Query  118   DEFAVAEYSAPC  129
+             +E+AVAEY + C
+Sbjct  1454  EEYAVAEYMSLC  1465
+
+
+>sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606 
+GN=OVOS2 PE=2 SV=2
+Length=1432
+
+ Score = 83.6 bits (205),  Expect = 2e-18, Method: Compositional matrix adjust.
+ Identities = 42/98 (43%), Positives = 63/98 (64%), Gaps = 1/98 (1%)
+
+Query  22    TSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE-RSNVSRTEVSNNHVLIY  80
+             T F +++++ Y G R  S+M ++DVKM+SGF P   +++ LE +  V +TEV N+HVL Y
+Sbjct  1327  TVFDLTVNLKYTGIRNKSSMVVIDVKMLSGFTPTMSSIEELENKGQVMKTEVKNDHVLFY  1386
+
+Query  81    LDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETD  118
+             L+ V     + TF+V Q   V +++PA   VYDYYE D
+Sbjct  1387  LENVFGRADSFTFSVEQSNLVFNIQPAPGMVYDYYEKD  1424
+
+
+>sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 
+GN=Ovos PE=2 SV=2
+Length=1456
+
+ Score = 82.8 bits (203),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 46/124 (37%), Positives = 79/124 (64%), Gaps = 3/124 (2%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             F+L V+T  ++    +  T F+++++++Y G+R +S   +VDVKM+SGF P+  + + L+
+Sbjct  1327  FSLSVKT-GKSNSSDEFQTKFELTVTLTYTGARESSVTVLVDVKMLSGFTPVVSSTEELK  1385
+
+Query  64    -RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+               S V++T++ N HVL YL+ V  E  +LTF++ Q   V +++PA V VY  YE  E+A 
+Sbjct  1386  FNSQVTKTDIKNGHVLFYLENVPKEATSLTFSIEQTNHVANIQPAPVTVYS-YEKGEYAF  1444
+
+Query  123   AEYS  126
+               Y+
+Sbjct  1445  DSYN  1448
+
+
+>sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 
+GN=C3 PE=1 SV=2
+Length=1666
+
+ Score = 62.0 bits (149),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 42/128 (33%), Positives = 70/128 (55%), Gaps = 12/128 (9%)
+
+Query  2     FPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             F   + ++  P T   P+ A ++  + +   Y+G + A+ M+I+D+ M++GFIP    +K
+Sbjct  1366  FDLRVTLKPAPDTVKKPQEAKSTMILGICTRYLGDQDAT-MSILDISMMTGFIPDTDDLK  1424
+
+Query  61    MLERSNVSR--------TEVSNNHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKV  111
+             +L  + V R         + S N ++IYLDKV++ E   L+F + Q   V  ++P  VKV
+Sbjct  1425  LLA-TGVDRYISKYEMNKDFSKNTLIIYLDKVSHSEEECLSFKIHQFFNVGLIQPGSVKV  1483
+
+Query  112   YDYYETDE  119
+             Y YY  DE
+Sbjct  1484  YSYYNLDE  1491
+
+
+>sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus 
+hannah OX=8665 PE=1 SV=1
+Length=1641
+
+ Score = 60.5 bits (145),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 39/109 (36%), Positives = 58/109 (53%), Gaps = 10/109 (9%)
+
+Query  20    AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNH  76
+             A  +  + + + Y+G    S M I+D+ M++GF+P    +  L       +SR EV NN 
+Sbjct  1358  AKGALMLKICMRYLG-EVDSTMTIIDISMLTGFLPDAEDLTRLSEGVDRYISRYEVDNNM  1416
+
+Query  77    -----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+                  V+IYLDKV++ E   L F +L+   V  ++P  VKVY YY  DE
+Sbjct  1417  AQKVAVIIYLDKVSHSEDECLQFKILKHFEVGFIQPGSVKVYSYYNLDE  1465
+
+
+>sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 
+GN=C4 PE=1 SV=3
+Length=1737
+
+ Score = 59.3 bits (142),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 38/120 (32%), Positives = 59/120 (49%), Gaps = 7/120 (6%)
+
+Query  16    DGPKA----HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSN---VS  68
+             + PKA     +  Q ++ +   G+   S MAI D+ ++SGF  L+  ++ L   +   VS
+Sbjct  1447  EAPKAADEQESRVQYTVCIWRNGNLGLSGMAIADITLLSGFQALRADLEKLTSLSDRYVS  1506
+
+Query  69    RTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+               E    HVL+Y D V      + F  LQ++ V  ++PA   +YDYY  D      Y+AP
+Sbjct  1507  HFETDGPHVLLYFDSVPTTRECVGFGALQEVAVGLVQPASAVLYDYYSPDHKCSVFYAAP  1566
+
+
+>sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=9913 
+GN=C4 PE=1 SV=2
+Length=920
+
+ Score = 58.9 bits (141),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 37/120 (31%), Positives = 58/120 (48%), Gaps = 7/120 (6%)
+
+Query  16   DGPKA----HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSN---VS  68
+            + PKA     +  Q ++ +   G    S MAI D+ ++SGF  L+  ++ L   +   VS
+Sbjct  630  EAPKAAEERESRVQYTVCIWRTGKVGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVS  689
+
+Query  69   RTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              E    HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  690  HFETEGPHVLLYFDSVPTSRECVGFGAVQEVPVGLVQPASAILYDYYNPEHKCSVFYGAP  749
+
+
+>sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 
+PE=1 SV=1
+Length=1642
+
+ Score = 58.9 bits (141),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 41/128 (32%), Positives = 65/128 (51%), Gaps = 12/128 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             +F   + V+ +     G K   +  + +   Y+G    S M I+D+ M++GF+P    + 
+Sbjct  1342  KFHLNVSVENIHLNAMGAKG--ALMLKICTRYLGE-VDSTMTIIDISMLTGFLPDAEDLT  1398
+
+Query  61    MLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKV  111
+              L +     +SR EV NN      V+IYL+KV++ E   L F +L+   V  ++P  VKV
+Sbjct  1399  RLSKGVDRYISRYEVDNNMAQKVAVIIYLNKVSHSEDECLHFKILKHFEVGFIQPGSVKV  1458
+
+Query  112   YDYYETDE  119
+             Y YY  DE
+Sbjct  1459  YSYYNLDE  1466
+
+
+>sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 
+GN=C4A PE=1 SV=2
+Length=1744
+
+ Score = 58.9 bits (141),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 33/93 (35%), Positives = 48/93 (52%), Gaps = 3/93 (3%)
+
+Query  39    SNMAIVDVKMVSGFIPLKPTVKMLERSN---VSRTEVSNNHVLIYLDKVTNETLTLTFTV  95
+             S MAI DV ++SGF  L+  ++ L   +   VS  E    HVL+Y D V      + F  
+Sbjct  1481  SGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEGPHVLLYFDSVPTSRECVGFEA  1540
+
+Query  96    LQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1541  VQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 
+GN=C4B PE=1 SV=2
+Length=1744
+
+ Score = 58.9 bits (141),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 33/93 (35%), Positives = 48/93 (52%), Gaps = 3/93 (3%)
+
+Query  39    SNMAIVDVKMVSGFIPLKPTVKMLERSN---VSRTEVSNNHVLIYLDKVTNETLTLTFTV  95
+             S MAI DV ++SGF  L+  ++ L   +   VS  E    HVL+Y D V      + F  
+Sbjct  1481  SGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEGPHVLLYFDSVPTSRECVGFEA  1540
+
+Query  96    LQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1541  VQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 
+PE=1 SV=2
+Length=1661
+
+ Score = 57.8 bits (138),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 42/134 (31%), Positives = 71/134 (53%), Gaps = 10/134 (7%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  S  + +   Y+G + A+ M+I+D+ M++GF P    +
+Sbjct  1359  KFDLRVSIRPAPETVKKPQDAKGSMILDICTKYLGDQDAT-MSILDISMMTGFSPDVEDL  1417
+
+Query  60    KMLERS---NVSRTEVSN----NHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKV  111
+             K L       +S+ E++     N ++IYLDKV++     L+F V Q   V  ++P  VKV
+Sbjct  1418  KTLSTGVDRYISKYEMNRDSNKNTLIIYLDKVSHTVEDCLSFKVHQYFNVGLIQPGAVKV  1477
+
+Query  112   YDYYETDEFAVAEY  125
+             Y YY  DE  +  Y
+Sbjct  1478  YSYYNLDETCIRFY  1491
+
+
+>sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryctolagus 
+cuniculus OX=9986 GN=C3 PE=2 SV=1
+Length=726
+
+ Score = 57.4 bits (137),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 38/129 (29%), Positives = 69/129 (53%), Gaps = 11/129 (9%)
+
+Query  1    EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+            +F   + ++T P+T   P+ A ++  +     Y+G   A+ M+I+D+ M++GF+P    +
+Sbjct  423  KFDLRVNIKTAPETVKKPQDAKSTMILGHCTRYLGDEDAT-MSILDISMMTGFVPDTDDL  481
+
+Query  60   KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             +L       +S+ E++      N ++IYLDK+++     L F V Q   V  ++P  VK
+Sbjct  482  NLLSTGVDRYISKYELNKAFSNKNTLIIYLDKISHSREECLAFKVHQYFNVGLIQPGAVK  541
+
+Query  111  VYDYYETDE  119
+            VY YY  +E
+Sbjct  542  VYSYYNLEE  550
+
+
+>sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 
+PE=2 SV=1
+Length=1652
+
+ Score = 57.4 bits (137),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 37/109 (34%), Positives = 58/109 (53%), Gaps = 10/109 (9%)
+
+Query  20    AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNH  76
+             A  + ++ +   Y+G    S M I+DV M++GF+P    +  L +     +S+ E+ NN 
+Sbjct  1369  AKETLKLKICTRYLGE-VDSTMTIIDVSMLTGFLPDAEDLTRLSKGVDRYISKFEIDNNM  1427
+
+Query  77    -----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+                  V+IYLDKV++ E   L F + +   V  ++P  VKVY YY  DE
+Sbjct  1428  AQKGAVIIYLDKVSHSEDECLQFRIQKHFEVGFIQPGSVKVYSYYNLDE  1476
+
+
+>sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps 
+superbus OX=29156 PE=2 SV=1
+Length=1651
+
+ Score = 56.6 bits (135),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 37/109 (34%), Positives = 58/109 (53%), Gaps = 10/109 (9%)
+
+Query  20    AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNH  76
+             A  + ++ +   Y+G    S M I+DV M++GF+P    +  L +     +S+ E+ NN 
+Sbjct  1368  AKDTLRLKICTRYLGE-VDSTMTIIDVSMLTGFLPDTEDLTRLSKGVDRYISKFEIDNNM  1426
+
+Query  77    V-----LIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             V     +IYLDKV++ E   L F + +   V  ++P  VKVY YY  DE
+Sbjct  1427  VQKGTVVIYLDKVSHSEVECLNFKIHKHFEVGFIQPGPVKVYSYYNLDE  1475
+
+
+>sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 
+PE=2 SV=1
+Length=1651
+
+ Score = 56.6 bits (135),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 39/112 (35%), Positives = 59/112 (53%), Gaps = 12/112 (11%)
+
+Query  17    GPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVS  73
+             G KA  + ++ +   Y+G    S M I+D+ M++GF P    +K L       +S+ E+ 
+Sbjct  1367  GGKA--ALRLKICTRYLGE-VDSTMTIIDISMLTGFFPDAEDLKRLSNGVDRYISKFEID  1423
+
+Query  74    NNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             NN      V+IYLDKV++ E   L F + +   V  ++P  VKVY YY  DE
+Sbjct  1424  NNMAQKGTVVIYLDKVSHSEDECLHFKIHKHFEVGFIQPGSVKVYSYYNLDE  1475
+
+
+>sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 
+GN=C3 PE=1 SV=3
+Length=1663
+
+ Score = 55.8 bits (133),  Expect = 7e-09, Method: Compositional matrix adjust.
+ Identities = 39/129 (30%), Positives = 72/129 (56%), Gaps = 11/129 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A +S  + +   Y+G   A+ M+I+D+ M++GFIP    +
+Sbjct  1360  KFDLRVTIKPAPETAKKPQDAKSSMILDICTRYLGDVDAT-MSILDISMMTGFIPDTNDL  1418
+
+Query  60    KMLERS---NVSRTEV-----SNNHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E+     + N ++IYL+K+++ E   L+F V Q   V  ++P  VK
+Sbjct  1419  ELLSSGVDRYISKYEMDKAFSNKNTLIIYLEKISHSEEDCLSFKVHQFFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDE  119
+             VY YY  +E
+Sbjct  1479  VYSYYNLEE  1487
+
+
+>sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 
+SV=2
+Length=1661
+
+ Score = 55.8 bits (133),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 38/130 (29%), Positives = 71/130 (55%), Gaps = 13/130 (10%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + +   P+    P+ A +S  + +   Y+G++ A+ M+I+D+ M++GF P    +
+Sbjct  1358  KFDLKVSIHPAPEPVKKPQEAKSSMVLDICTRYLGNQDAT-MSILDISMMTGFSPDTEDL  1416
+
+Query  60    KMLE--------RSNVSRTEVSNNHVLIYLDKVTNETL--TLTFTVLQDIPVRDLKPAIV  109
+             K+L         +  +++   + N ++IYLDK+++ TL   ++F V Q   V  ++P  V
+Sbjct  1417  KLLSTGVDRYISKYELNKALSNKNTLIIYLDKISH-TLEDCISFKVHQYFNVGLIQPGSV  1475
+
+Query  110   KVYDYYETDE  119
+             KVY YY  DE
+Sbjct  1476  KVYSYYNLDE  1485
+
+
+>sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 
+PE=1 SV=3
+Length=1663
+
+ Score = 53.9 bits (128),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 38/129 (29%), Positives = 70/129 (54%), Gaps = 11/129 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y+G   A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLRVSIRPAPETAKKPEEAKNTMFLEICTKYLGDVDAT-MSILDISMMTGFAPDTKDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E++      N ++IYL+K+++ E   LTF V Q   V  ++P  VK
+Sbjct  1419  ELLASGVDRYISKYEMNKAFSNKNTLIIYLEKISHTEEDCLTFKVHQYFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDE  119
+             VY YY  +E
+Sbjct  1479  VYSYYNLEE  1487
+
+
+>sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 
+PE=1 SV=2
+Length=1663
+
+ Score = 53.9 bits (128),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 40/129 (31%), Positives = 67/129 (52%), Gaps = 11/129 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y G + A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLKVTIKPAPETEKRPQDAKNTMILEICTRYRGDQDAT-MSILDISMMTGFAPDTDDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             K L       +S+ E+       N ++IYLDKV++ E   L F V Q   V  ++P  VK
+Sbjct  1419  KQLANGVDRYISKYELDKAFSDRNTLIIYLDKVSHSEDDCLAFKVHQYFNVELIQPGAVK  1478
+
+Query  111   VYDYYETDE  119
+             VY YY  +E
+Sbjct  1479  VYAYYNLEE  1487
+
+
+>sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps 
+superbus OX=29156 PE=1 SV=1
+Length=1652
+
+ Score = 53.5 bits (127),  Expect = 5e-08, Method: Compositional matrix adjust.
+ Identities = 36/109 (33%), Positives = 57/109 (52%), Gaps = 10/109 (9%)
+
+Query  20    AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNH  76
+             A  + ++ +   Y+G    S M I+DV M++GF+     +  L +     +S+ E+ NN 
+Sbjct  1369  AKDTLRLKICTRYLGE-VDSTMTIIDVSMLTGFLADAEDLTRLSKGVDRYISKFEIDNNM  1427
+
+Query  77    V-----LIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             V     +IYLDKV++ E   L F + +   V  ++P  VKVY YY  DE
+Sbjct  1428  VQKGTVVIYLDKVSHSEVECLHFKIHKHFEVGFIQPGSVKVYSYYNLDE  1476
+
+
+>sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 
+GN=C4b PE=1 SV=3
+Length=1738
+
+ Score = 52.8 bits (125),  Expect = 8e-08, Method: Compositional matrix adjust.
+ Identities = 33/107 (31%), Positives = 52/107 (49%), Gaps = 3/107 (3%)
+
+Query  25    QISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSN---VSRTEVSNNHVLIYL  81
+             Q ++ +   G    S MAI D+ ++SGF  L+  ++ L   +   VS  E    HVL+Y 
+Sbjct  1461  QYTVCIWRNGKLGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVSHFETDGPHVLLYF  1520
+
+Query  82    DKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             D V      + F   Q++ V  ++P+   +YDYY  D      Y+AP
+Sbjct  1521  DSVPTTRECVGFGASQEVVVGLVQPSSAVLYDYYSPDHKCSVFYAAP  1567
+
+
+>sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606 
+GN=OVOS1 PE=2 SV=2
+Length=1185
+
+ Score = 49.3 bits (116),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 34/96 (35%), Positives = 46/96 (48%), Gaps = 15/96 (16%)
+
+Query  32    YIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSNVSRTEVSNNHVLIYLDKVT----NE  87
+             Y G R  S+M ++DVKM+SGF P            +S  E  NN  LI+  K +      
+Sbjct  1099  YTGIRNKSSMVVIDVKMLSGFTP-----------TMSSIEEVNNRSLIFQHKDSYIEYKR  1147
+
+Query  88    TLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVA  123
+               +  F+V Q   V +++PA   VYDYYE    A A
+Sbjct  1148  ADSFPFSVEQSNLVFNIQPAPAMVYDYYEKGRQATA  1183
+
+
+>sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camtschaticum 
+OX=980415 GN=C3 PE=2 SV=1
+Length=1673
+
+ Score = 48.5 bits (114),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 30/94 (32%), Positives = 50/94 (53%), Gaps = 4/94 (4%)
+
+Query  39    SNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNHVLIYLDKV-TNETLTLTFT  94
+             S M I++V M++GFIP K  +  L+ S    +S  E++++ ++IY DKV + E     F 
+Sbjct  1410  SGMTIIEVNMLTGFIPDKNDLIQLKESVDKYISNYEITDSVLIIYWDKVPSTEDYCFAFK  1469
+
+Query  95    VLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             + Q +    ++P    VYDYY   +     Y+ P
+Sbjct  1470  IKQMLRSDMIQPVTASVYDYYSPADKCTRLYNLP  1503
+
+
+>sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus 
+mykiss OX=8022 GN=c3 PE=1 SV=1
+Length=1640
+
+ Score = 45.8 bits (107),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 29/107 (27%), Positives = 57/107 (53%), Gaps = 13/107 (12%)
+
+Query  20    AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIP--------LKPTVKMLERSNVSRTE  71
+             A  SF +++ V Y  S   + M+I+D+ +++GFI          K   + +E+  + +  
+Sbjct  1355  AKESFMLTIEVLYKNSERDATMSILDIGLLTGFIVDTDDLNQLSKGRERYIEKFEMDKVL  1414
+
+Query  72    VSNNHVLIYLDKVTN---ETLTLTFTVLQDIPVRDLKPAIVKVYDYY  115
+                  +++YLDKV++   + ++     +Q++ V  L+PA V VY+YY
+Sbjct  1415  SERGSLILYLDKVSHKLEDRISFKIHRVQEVGV--LQPAAVSVYEYY  1459
+
+
+>sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 
+GN=Cd109 PE=1 SV=1
+Length=1442
+
+ Score = 45.4 bits (106),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 30/111 (27%), Positives = 53/111 (48%), Gaps = 15/111 (14%)
+
+Query  22    TSFQISLSVSYIGSRPASNMAIVDVKMVSGF------IPLKPTVKMLERSNVSRTEVSNN  75
+             +   +++  S++GS   + M +++V ++SGF      IPL  T+K        + E  N 
+Sbjct  1295  SHLNLNVCTSHLGSE-RTGMVLMEVNLLSGFSASSDSIPLSETLK--------KVEYDNG  1345
+
+Query  76    HVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYS  126
+              + +YLD V      +    ++D  V +++   V V DYYE    AV  Y+
+Sbjct  1346  KLNLYLDSVNESQFCVNIPTVRDYKVSNIRDGSVSVMDYYEPRRQAVRSYN  1396
+
+
+>sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis 
+OX=8355 GN=c3 PE=2 SV=2
+Length=323
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 47/89 (53%), Gaps = 9/89 (10%)
+
+Query  39   SNMAIVDVKMVSGFIP--------LKPTVKMLERSNVSRTEVSNNHVLIYLDKVTN-ETL  89
+            + M+I+D+ M++GF P        +K   K + +  V++       +++YLDKV++ +  
+Sbjct  57   ATMSIIDISMMTGFSPDTDSLDRLMKGVDKYISKYEVNKGANDKGTLILYLDKVSHIDEE  116
+
+Query  90   TLTFTVLQDIPVRDLKPAIVKVYDYYETD  118
+             + F   Q   V  ++PA V VYDYY  D
+Sbjct  117  CVKFYAHQYFEVGFIQPASVTVYDYYTPD  145
+
+
+>sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domain-containing 
+protein 8 OS=Homo sapiens OX=9606 GN=CPAMD8 
+PE=1 SV=2
+Length=1885
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 28/83 (34%), Positives = 46/83 (55%), Gaps = 4/83 (5%)
+
+Query  38    ASNMAIVDVKMVSGFIPLKPTVKML---ERSNVSRTEVSNNHVLIYLDKVTNETLT-LTF  93
+             +SNMA+++V ++SGF     +++ L   +   + R EV+   VL Y D++ +  LT + F
+Sbjct  1568  SSNMAVLEVPLLSGFRADIESLEQLLLDKHMGMKRYEVAGRRVLFYFDEIPSRCLTCVRF  1627
+
+Query  94    TVLQDIPVRDLKPAIVKVYDYYE  116
+               L++  V       V VYDYYE
+Sbjct  1628  RALRECVVGRTSALPVSVYDYYE  1650
+
+
+>sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD109 
+PE=1 SV=2
+Length=1445
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 28/104 (27%), Positives = 51/104 (49%), Gaps = 3/104 (3%)
+
+Query  25    QISLSVSYIGSRPA-SNMAIVDVKMVSGFIPLKPTVKMLERSNVSRTEVSNNHVLIYLDK  83
+              + L+V    S P  S MA+++V ++SGF+     + + E   V + E  +  + +YLD 
+Sbjct  1296  HVDLNVCTSFSGPGRSGMALMEVNLLSGFMVPSEAISLSE--TVKKVEYDHGKLNLYLDS  1353
+
+Query  84    VTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSA  127
+             V      +    +++  V + + A V + DYYE    AV  Y++
+Sbjct  1354  VNETQFCVNIPAVRNFKVSNTQDASVSIVDYYEPRRQAVRSYNS  1397
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 2
+
+
+Query= d1ayoa_
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 ...  202     6e-60
+sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=960...  197     2e-58
+sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=960...  195     1e-57
+sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus OX=...  194     3e-57
+sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus OX=1...  191     2e-56
+sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 GN...  185     3e-54
+sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=960...  184     6e-54
+sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10...  182     4e-53
+sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116...  182     5e-53
+sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116...  182     5e-53
+sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 GN...  181     1e-52
+sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=100...  176     6e-51
+sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus OX=1...  175     8e-51
+sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 PE=...  167     7e-48
+sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 GN=...  167     1e-47
+sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 ...  166     1e-47
+sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 GN=...  165     2e-47
+sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryct...  162     1e-46
+sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 ...  162     4e-46
+sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 P...  160     2e-45
+sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps sup...  158     1e-44
+sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus hann...  154     2e-43
+sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 PE=...  154     2e-43
+sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Hom...  154     3e-43
+sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 ...  154     4e-43
+sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps sup...  153     6e-43
+sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 ...  152     2e-42
+sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=99...  148     4e-41
+sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 SV=3     147     1e-40
+sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 GN=C...  145     2e-40
+sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 GN=C...  145     2e-40
+sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 GN=...  145     4e-40
+sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 GN=...  143     2e-39
+sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis OX...  132     1e-37
+sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 G...  133     6e-36
+sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606...  131     4e-35
+sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camts...  120     2e-31
+sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD...  117     2e-30
+sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus myki...  115     1e-29
+sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 GN=C...  115     1e-29
+sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domai...  109     1e-27
+sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606...  100     1e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|P98094|CO3_EPTBU Complement C3 (Fragment) OS=Eptatretus burger...  82.0    5e-18
+sp|P01031|CO5_HUMAN Complement C5 OS=Homo sapiens OX=9606 GN=C5 P...  70.8    5e-14
+sp|P06684|CO5_MOUSE Complement C5 OS=Mus musculus OX=10090 GN=C5 ...  69.6    1e-13
+
+
+>sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 
+GN=A2M PE=1 SV=2
+Length=1510
+
+ Score = 202 bits (513),  Expect = 6e-60, Method: Composition-based stats.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1375  EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  1434
+
+Query  61    MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  120
+             MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF
+Sbjct  1435  MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  1494
+
+Query  121   AVAEYSAPCS  130
+             AVAEYSAPCS
+Sbjct  1495  AVAEYSAPCS  1504
+
+
+>sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=9601 
+GN=A2M PE=2 SV=1
+Length=1474
+
+ Score = 197 bits (501),  Expect = 2e-58, Method: Composition-based stats.
+ Identities = 118/131 (90%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSNNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=9606 
+GN=A2M PE=1 SV=3
+Length=1474
+
+ Score = 195 bits (495),  Expect = 1e-57, Method: Composition-based stats.
+ Identities = 117/131 (89%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVS+NHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSSNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A2m PE=2 SV=2
+Length=1472
+
+ Score = 194 bits (492),  Expect = 3e-57, Method: Composition-based stats.
+ Identities = 107/131 (82%), Positives = 119/131 (91%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPF + VQTLP TC+ PKAHTSFQISL++SY GSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1336  EFPFTVVVQTLPGTCEDPKAHTSFQISLNISYTGSRSESNMAIADVKMVSGFIPLKPTVK  1395
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+T+ L+FTV QDIP+RDLKPA+VKVYDYYE DE
+Sbjct  1396  MLERSVHVSRTEVSNNHVLIYLDKVSNQTVNLSFTVQQDIPIRDLKPAVVKVYDYYEKDE  1455
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1456  FAVAKYSAPCS  1466
+
+
+>sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus 
+OX=10090 GN=A2m PE=2 SV=2
+Length=1474
+
+ Score = 191 bits (486),  Expect = 2e-56, Method: Composition-based stats.
+ Identities = 110/131 (84%), Positives = 118/131 (90%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLP TC+  KAHT+FQISL++SYIGSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALVVQTLPGTCEDLKAHTTFQISLNISYIGSRSDSNMAIADVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+ LTL F V QDIPVRDLKPAIVKVYDYYE DE
+Sbjct  1398  MLERSVHVSRTEVSNNHVLIYLDKVSNQMLTLFFMVQQDIPVRDLKPAIVKVYDYYEKDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1458  FAVAKYSAPCS  1468
+
+
+>sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 
+GN=Mug1 PE=1 SV=3
+Length=1476
+
+ Score = 185 bits (470),  Expect = 3e-54, Method: Composition-based stats.
+ Identities = 96/128 (75%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FA+ VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1343  FAIWVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1402
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEVSNN+VLIYLD+VTN+TL  +F + QDIPVR+L+PAIVKVYDYYETDE A 
+Sbjct  1403  RLEHVSRTEVSNNNVLIYLDQVTNQTLAFSFIIQQDIPVRNLQPAIVKVYDYYETDEMAF  1462
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1463  AEYSSPCS  1470
+
+
+>sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=9606 
+GN=PZP PE=1 SV=4
+Length=1482
+
+ Score = 184 bits (468),  Expect = 6e-54, Method: Composition-based stats.
+ Identities = 107/129 (83%), Positives = 119/129 (92%), Gaps = 1/129 (1%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+             PFAL+VQT+PQTCDG KAHTSFQISL++SY G+RPASNM IVDVKMVSGFIPLKPTVKML
+Sbjct  1346  PFALKVQTVPQTCDGHKAHTSFQISLTISYTGNRPASNMVIVDVKMVSGFIPLKPTVKML  1405
+
+Query  63    ERSN-VSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             ERS+ VSRTEVSNNHVLIY+++VTN+TL+ +F VLQDIPV DLKPAIVKVYDYYETDE  
+Sbjct  1406  ERSSSVSRTEVSNNHVLIYVEQVTNQTLSFSFMVLQDIPVGDLKPAIVKVYDYYETDESV  1465
+
+Query  122   VAEYSAPCS  130
+             VAEY APCS
+Sbjct  1466  VAEYIAPCS  1474
+
+
+>sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10116 
+GN=A1i3 PE=1 SV=1
+Length=1477
+
+ Score = 182 bits (462),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 92/128 (72%), Positives = 111/128 (87%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY+GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1344  FALKVQTVPLTCNNPKGQNSFQISLEISYMGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1403
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1404  RLGHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1463
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1464  AEYSSPCS  1471
+
+
+>sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116 
+GN=Mug1 PE=2 SV=1
+Length=1487
+
+ Score = 182 bits (461),  Expect = 5e-53, Method: Composition-based stats.
+ Identities = 92/128 (72%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1354  FALKVQTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1413
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1414  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1473
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1474  AEYSSPCS  1481
+
+
+>sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116 
+GN=Mug2 PE=1 SV=1
+Length=1448
+
+ Score = 182 bits (461),  Expect = 5e-53, Method: Composition-based stats.
+ Identities = 91/128 (71%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+V+T+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1315  FALKVKTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1374
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1375  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1434
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1435  AEYSSPCS  1442
+
+
+>sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 
+GN=Mug2 PE=1 SV=2
+Length=1451
+
+ Score = 181 bits (459),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 94/128 (73%), Positives = 109/128 (85%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1318  FALRVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1377
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  ++SRTEVSNN+VL+YLD+VTN+TL  +F + QDI VR+L+PAIVKVYDYYETDE A 
+Sbjct  1378  RLEHISRTEVSNNNVLLYLDQVTNQTLAFSFIIQQDISVRNLQPAIVKVYDYYETDEVAY  1437
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1438  AEYSSPCS  1445
+
+
+>sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=10090 
+GN=Pzp PE=1 SV=3
+Length=1495
+
+ Score = 176 bits (446),  Expect = 6e-51, Method: Composition-based stats.
+ Identities = 84/131 (64%), Positives = 104/131 (79%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             + PFAL+V TLP   D    H +FQI ++VSY G RP+SNM IVDVKMVSGFIP+KP+VK
+Sbjct  1357  KAPFALQVNTLPLNFDKAGDHRTFQIRINVSYTGERPSSNMVIVDVKMVSGFIPMKPSVK  1416
+
+Query  61    MLE-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L+ + N+ RTEV+ NHVLIY++K+TN+TL  +F V QDIPV++LKPA +KVYDYYETDE
+Sbjct  1417  KLQDQPNIQRTEVNTNHVLIYIEKLTNQTLGFSFAVEQDIPVKNLKPAPIKVYDYYETDE  1476
+
+Query  120   FAVAEYSAPCS  130
+             F V EYSAP S
+Sbjct  1477  FTVEEYSAPFS  1487
+
+
+>sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A1m PE=1 SV=1
+Length=1500
+
+ Score = 175 bits (445),  Expect = 8e-51, Method: Composition-based stats.
+ Identities = 86/131 (66%), Positives = 105/131 (80%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             E PF L+V TLP   D  + H  FQI ++VSYIG RP SNM IVDVKMVSGFIP+KP+VK
+Sbjct  1362  EAPFTLKVNTLPLNFDKAEHHRKFQIHINVSYIGERPNSNMVIVDVKMVSGFIPVKPSVK  1421
+
+Query  61    MLE-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L+ +SN+ RTEV+ NHVLIY++K+TN+T+  +F V QDIPV++LKPA VKVYDYYETDE
+Sbjct  1422  KLQDQSNIQRTEVNTNHVLIYIEKLTNQTMGFSFAVEQDIPVKNLKPAPVKVYDYYETDE  1481
+
+Query  120   FAVAEYSAPCS  130
+             FA+ EYSAP S
+Sbjct  1482  FAIEEYSAPFS  1492
+
+
+>sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 
+PE=1 SV=2
+Length=1661
+
+ Score = 167 bits (423),  Expect = 7e-48, Method: Composition-based stats.
+ Identities = 42/134 (31%), Positives = 71/134 (53%), Gaps = 10/134 (7%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  S  + +   Y+G + A+ M+I+D+ M++GF P    +
+Sbjct  1359  KFDLRVSIRPAPETVKKPQDAKGSMILDICTKYLGDQDAT-MSILDISMMTGFSPDVEDL  1417
+
+Query  60    KMLERS---NVSRTEVS----NNHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVKV  111
+             K L       +S+ E++     N ++IYLDKV++     L+F V Q   V  ++P  VKV
+Sbjct  1418  KTLSTGVDRYISKYEMNRDSNKNTLIIYLDKVSHTVEDCLSFKVHQYFNVGLIQPGAVKV  1477
+
+Query  112   YDYYETDEFAVAEY  125
+             Y YY  DE  +  Y
+Sbjct  1478  YSYYNLDETCIRFY  1491
+
+
+>sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 
+GN=C3 PE=1 SV=3
+Length=1663
+
+ Score = 167 bits (422),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 72/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A +S  + +   Y+G   A+ M+I+D+ M++GFIP    +
+Sbjct  1360  KFDLRVTIKPAPETAKKPQDAKSSMILDICTRYLGDVDAT-MSILDISMMTGFIPDTNDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E+       N ++IYL+K+++ E   L+F V Q   V  ++P  VK
+Sbjct  1419  ELLSSGVDRYISKYEMDKAFSNKNTLIIYLEKISHSEEDCLSFKVHQFFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYSYYNLEESCTRFY  1493
+
+
+>sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 
+SV=2
+Length=1661
+
+ Score = 166 bits (421),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 71/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + +   P+    P+ A +S  + +   Y+G++ A+ M+I+D+ M++GF P    +
+Sbjct  1358  KFDLKVSIHPAPEPVKKPQEAKSSMVLDICTRYLGNQDAT-MSILDISMMTGFSPDTEDL  1416
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVK  110
+             K+L       +S+ E++      N ++IYLDK+++     ++F V Q   V  ++P  VK
+Sbjct  1417  KLLSTGVDRYISKYELNKALSNKNTLIIYLDKISHTLEDCISFKVHQYFNVGLIQPGSVK  1476
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1477  VYSYYNLDESCTRFY  1491
+
+
+>sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 
+GN=C3 PE=1 SV=2
+Length=1666
+
+ Score = 165 bits (419),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 42/133 (32%), Positives = 72/133 (54%), Gaps = 10/133 (8%)
+
+Query  2     FPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             F   + ++  P T   P+ A ++  + +   Y+G + A+ M+I+D+ M++GFIP    +K
+Sbjct  1366  FDLRVTLKPAPDTVKKPQEAKSTMILGICTRYLGDQDAT-MSILDISMMTGFIPDTDDLK  1424
+
+Query  61    MLERS---NVSRTEVSN----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVY  112
+             +L       +S+ E++     N ++IYLDKV++ E   L+F + Q   V  ++P  VKVY
+Sbjct  1425  LLATGVDRYISKYEMNKDFSKNTLIIYLDKVSHSEEECLSFKIHQFFNVGLIQPGSVKVY  1484
+
+Query  113   DYYETDEFAVAEY  125
+              YY  DE     Y
+Sbjct  1485  SYYNLDETCTQFY  1497
+
+
+>sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryctolagus 
+cuniculus OX=9986 GN=C3 PE=2 SV=1
+Length=726
+
+ Score = 162 bits (411),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 70/135 (52%), Gaps = 11/135 (8%)
+
+Query  1    EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+            +F   + ++T P+T   P+ A ++  +     Y+G   A+ M+I+D+ M++GF+P    +
+Sbjct  423  KFDLRVNIKTAPETVKKPQDAKSTMILGHCTRYLGDEDAT-MSILDISMMTGFVPDTDDL  481
+
+Query  60   KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             +L       +S+ E++      N ++IYLDK+++     L F V Q   V  ++P  VK
+Sbjct  482  NLLSTGVDRYISKYELNKAFSNKNTLIIYLDKISHSREECLAFKVHQYFNVGLIQPGAVK  541
+
+Query  111  VYDYYETDEFAVAEY  125
+            VY YY  +E     Y
+Sbjct  542  VYSYYNLEETCTQFY  556
+
+
+>sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 
+PE=1 SV=3
+Length=1663
+
+ Score = 162 bits (410),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 71/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y+G   A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLRVSIRPAPETAKKPEEAKNTMFLEICTKYLGDVDAT-MSILDISMMTGFAPDTKDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E++      N ++IYL+K+++ E   LTF V Q   V  ++P  VK
+Sbjct  1419  ELLASGVDRYISKYEMNKAFSNKNTLIIYLEKISHTEEDCLTFKVHQYFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYSYYNLEESCTRFY  1493
+
+
+>sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 
+PE=1 SV=2
+Length=1663
+
+ Score = 160 bits (405),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 41/135 (30%), Positives = 68/135 (50%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y G + A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLKVTIKPAPETEKRPQDAKNTMILEICTRYRGDQDAT-MSILDISMMTGFAPDTDDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             K L       +S+ E+       N ++IYLDKV++ E   L F V Q   V  ++P  VK
+Sbjct  1419  KQLANGVDRYISKYELDKAFSDRNTLIIYLDKVSHSEDDCLAFKVHQYFNVELIQPGAVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYAYYNLEESCTRFY  1493
+
+
+>sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps 
+superbus OX=29156 PE=2 SV=1
+Length=1651
+
+ Score = 158 bits (399),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 64/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+         K A  + ++ +   Y+G    S M I+DV M++GF+P    +
+Sbjct  1348  KFHLNVSVENAQLNSKQAKGAKDTLRLKICTRYLG-EVDSTMTIIDVSMLTGFLPDTEDL  1406
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTNET-LTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++     L F + +   V  ++P  VK
+Sbjct  1407  TRLSKGVDRYISKFEIDNNMVQKGTVVIYLDKVSHSEVECLNFKIHKHFEVGFIQPGPVK  1466
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1467  VYSYYNLDEQCTKFY  1481
+
+
+>sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus 
+hannah OX=8665 PE=1 SV=1
+Length=1641
+
+ Score = 154 bits (390),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 43/135 (32%), Positives = 66/135 (49%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K A  +  + + + Y+G    S M I+D+ M++GF+P    +
+Sbjct  1338  KFHLDVSVENIHLNFKHAKGAKGALMLKICMRYLG-EVDSTMTIIDISMLTGFLPDAEDL  1396
+
+Query  60    KMLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+               L       +SR EV NN      V+IYLDKV++ E   L F +L+   V  ++P  VK
+Sbjct  1397  TRLSEGVDRYISRYEVDNNMAQKVAVIIYLDKVSHSEDECLQFKILKHFEVGFIQPGSVK  1456
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1457  VYSYYNLDEQCTKFY  1471
+
+
+>sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 
+PE=2 SV=1
+Length=1651
+
+ Score = 154 bits (389),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 64/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPKA-HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K    + ++ +   Y+G    S M I+D+ M++GF P    +
+Sbjct  1348  KFHLDVSVENVELNLKQAKGGKAALRLKICTRYLG-EVDSTMTIIDISMLTGFFPDAEDL  1406
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             K L       +S+ E+ NN      V+IYLDKV++ E   L F + +   V  ++P  VK
+Sbjct  1407  KRLSNGVDRYISKFEIDNNMAQKGTVVIYLDKVSHSEDECLHFKIHKHFEVGFIQPGSVK  1466
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1467  VYSYYNLDEQCTKFY  1481
+
+
+>sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Homo 
+sapiens OX=9606 GN=A2ML1 PE=1 SV=3
+Length=1454
+
+ Score = 154 bits (389),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 56/127 (44%), Positives = 83/127 (65%), Gaps = 1/127 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML-  62
+             F+L V+     C+ P +  S  +++  SY+GSR +SNMAIV+VKM+SGF P++ T ++L 
+Sbjct  1327  FSLSVEIGKARCEQPTSPRSLTLTIHTSYVGSRSSSNMAIVEVKMLSGFSPMEGTNQLLL  1386
+
+Query  63    ERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             ++  V + E   + + IYLD++   T T TFT+ Q + V +LKPA +KVYDYY  DE A 
+Sbjct  1387  QQPLVKKVEFGTDTLNIYLDELIKNTQTYTFTISQSVLVTNLKPATIKVYDYYLPDEQAT  1446
+
+Query  123   AEYSAPC  129
+              +YS PC
+Sbjct  1447  IQYSDPC  1453
+
+
+>sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 
+PE=2 SV=1
+Length=1652
+
+ Score = 154 bits (388),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 41/135 (30%), Positives = 66/135 (49%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K A  + ++ +   Y+G    S M I+DV M++GF+P    +
+Sbjct  1349  QFHLEVSVERIDSNLKQAKGAKETLKLKICTRYLG-EVDSTMTIIDVSMLTGFLPDAEDL  1407
+
+Query  60    KMLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++ E   L F + +   V  ++P  VK
+Sbjct  1408  TRLSKGVDRYISKFEIDNNMAQKGAVIIYLDKVSHSEDECLQFRIQKHFEVGFIQPGSVK  1467
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1468  VYSYYNLDEQCTRFY  1482
+
+
+>sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps 
+superbus OX=29156 PE=1 SV=1
+Length=1652
+
+ Score = 153 bits (386),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 63/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+         K A  + ++ +   Y+G    S M I+DV M++GF+     +
+Sbjct  1349  KFHLDVSVENAQLNSKQAKGAKDTLRLKICTRYLG-EVDSTMTIIDVSMLTGFLADAEDL  1407
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTNET-LTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++     L F + +   V  ++P  VK
+Sbjct  1408  TRLSKGVDRYISKFEIDNNMVQKGTVVIYLDKVSHSEVECLHFKIHKHFEVGFIQPGSVK  1467
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1468  VYSYYNLDEQCTKFY  1482
+
+
+>sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 
+PE=1 SV=1
+Length=1642
+
+ Score = 152 bits (383),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 42/134 (31%), Positives = 66/134 (49%), Gaps = 12/134 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             +F   + V+ +     G  A  +  + +   Y+G    S M I+D+ M++GF+P    + 
+Sbjct  1342  KFHLNVSVENIHLNAMG--AKGALMLKICTRYLG-EVDSTMTIIDISMLTGFLPDAEDLT  1398
+
+Query  61    MLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKV  111
+              L +     +SR EV NN      V+IYL+KV++ E   L F +L+   V  ++P  VKV
+Sbjct  1399  RLSKGVDRYISRYEVDNNMAQKVAVIIYLNKVSHSEDECLHFKILKHFEVGFIQPGSVKV  1458
+
+Query  112   YDYYETDEFAVAEY  125
+             Y YY  DE     Y
+Sbjct  1459  YSYYNLDEKCTKFY  1472
+
+
+>sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=9913 
+GN=C4 PE=1 SV=2
+Length=920
+
+ Score = 148 bits (373),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 37/120 (31%), Positives = 57/120 (48%), Gaps = 7/120 (6%)
+
+Query  16   DGPKA----HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVS  68
+            + PKA     +  Q ++ +   G    S MAI D+ ++SGF  L+  ++ L       VS
+Sbjct  630  EAPKAAEERESRVQYTVCIWRTGKVGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVS  689
+
+Query  69   RTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              E    HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  690  HFETEGPHVLLYFDSVPTSRECVGFGAVQEVPVGLVQPASAILYDYYNPEHKCSVFYGAP  749
+
+
+>sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 
+SV=3
+Length=1473
+
+ Score = 147 bits (370),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 59/130 (45%), Positives = 81/130 (62%), Gaps = 3/130 (2%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F F+L VQT   +C   +    F I L  SY G R +SNM I+DVKM+SGF+P+K ++  
+Sbjct  1337  FGFSLSVQTSNASCPRDQ-PGKFDIVLISSYTGKRSSSNMVIIDVKMLSGFVPVKSSLDQ  1395
+
+Query  62    L-ERSNVSRTEVSNNHVLIYLDKVTNETLT-LTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             L +   V + E   NHVL+YL  +  +    +TF+V QD  V   KPA V++YDYYET+E
+Sbjct  1396  LIDDHTVMQVEYKKNHVLLYLGNILQKRRKEVTFSVEQDFVVTHPKPAPVQIYDYYETEE  1455
+
+Query  120   FAVAEYSAPC  129
+             +AVAEY + C
+Sbjct  1456  YAVAEYMSLC  1465
+
+
+>sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 
+GN=C4B PE=1 SV=2
+Length=1744
+
+ Score = 145 bits (367),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 34/113 (30%), Positives = 53/113 (47%), Gaps = 3/113 (3%)
+
+Query  19    KAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNN  75
+             +  +    ++ +   G    S MAI DV ++SGF  L+  ++ L       VS  E    
+Sbjct  1461  EQESRVHYTVCIWRNGKVGLSGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEGP  1520
+
+Query  76    HVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1521  HVLLYFDSVPTSRECVGFEAVQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 
+GN=C4A PE=1 SV=2
+Length=1744
+
+ Score = 145 bits (367),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 34/113 (30%), Positives = 53/113 (47%), Gaps = 3/113 (3%)
+
+Query  19    KAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNN  75
+             +  +    ++ +   G    S MAI DV ++SGF  L+  ++ L       VS  E    
+Sbjct  1461  EQESRVHYTVCIWRNGKVGLSGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEGP  1520
+
+Query  76    HVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1521  HVLLYFDSVPTSRECVGFEAVQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 
+GN=C4 PE=1 SV=3
+Length=1737
+
+ Score = 145 bits (365),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 38/120 (32%), Positives = 58/120 (48%), Gaps = 7/120 (6%)
+
+Query  16    DGPKA----HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVS  68
+             + PKA     +  Q ++ +   G+   S MAI D+ ++SGF  L+  ++ L       VS
+Sbjct  1447  EAPKAADEQESRVQYTVCIWRNGNLGLSGMAIADITLLSGFQALRADLEKLTSLSDRYVS  1506
+
+Query  69    RTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+               E    HVL+Y D V      + F  LQ++ V  ++PA   +YDYY  D      Y+AP
+Sbjct  1507  HFETDGPHVLLYFDSVPTTRECVGFGALQEVAVGLVQPASAVLYDYYSPDHKCSVFYAAP  1566
+
+
+>sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 
+GN=C4b PE=1 SV=3
+Length=1738
+
+ Score = 143 bits (360),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 53/113 (47%), Gaps = 3/113 (3%)
+
+Query  19    KAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNN  75
+             +  +  Q ++ +   G    S MAI D+ ++SGF  L+  ++ L       VS  E    
+Sbjct  1455  EQESRVQYTVCIWRNGKLGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVSHFETDGP  1514
+
+Query  76    HVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+             HVL+Y D V      + F   Q++ V  ++P+   +YDYY  D      Y+AP
+Sbjct  1515  HVLLYFDSVPTTRECVGFGASQEVVVGLVQPSSAVLYDYYSPDHKCSVFYAAP  1567
+
+
+>sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis 
+OX=8355 GN=c3 PE=2 SV=2
+Length=323
+
+ Score = 132 bits (333),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 34/133 (26%), Positives = 62/133 (47%), Gaps = 10/133 (8%)
+
+Query  2    FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+            F  ++ V+ +        A  +  I     ++ +  A+ M+I+D+ M++GF P   ++  
+Sbjct  21   FELSVNVKEVQLARPPEGAKATVSIEACARHLKNVDAT-MSIIDISMMTGFSPDTDSLDR  79
+
+Query  62   LERS---NVSRTEV-----SNNHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVY  112
+            L +     +S+ EV         +++YLDKV++ +   + F   Q   V  ++PA V VY
+Sbjct  80   LMKGVDKYISKYEVNKGANDKGTLILYLDKVSHIDEECVKFYAHQYFEVGFIQPASVTVY  139
+
+Query  113  DYYETDEFAVAEY  125
+            DYY  D      Y
+Sbjct  140  DYYTPDNRCTKFY  152
+
+
+>sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 
+GN=Ovos PE=2 SV=2
+Length=1456
+
+ Score = 133 bits (334),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 46/125 (37%), Positives = 79/125 (63%), Gaps = 3/125 (2%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+              F+L V+T  ++    +  T F+++++++Y G+R +S   +VDVKM+SGF P+  + + L
+Sbjct  1326  GFSLSVKTG-KSNSSDEFQTKFELTVTLTYTGARESSVTVLVDVKMLSGFTPVVSSTEEL  1384
+
+Query  63    E-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             +  S V++T++ N HVL YL+ V  E  +LTF++ Q   V +++PA V VY  YE  E+A
+Sbjct  1385  KFNSQVTKTDIKNGHVLFYLENVPKEATSLTFSIEQTNHVANIQPAPVTVYS-YEKGEYA  1443
+
+Query  122   VAEYS  126
+                Y+
+Sbjct  1444  FDSYN  1448
+
+
+>sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606 
+GN=OVOS2 PE=2 SV=2
+Length=1432
+
+ Score = 131 bits (329),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 45/121 (37%), Positives = 71/121 (59%), Gaps = 6/121 (5%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+              F+L ++ +        + T F +++++ Y G R  S+M ++DVKM+SGF P   +++ L
+Sbjct  1313  GFSLSLEIV-----KNYSLTVFDLTVNLKYTGIRNKSSMVVIDVKMLSGFTPTMSSIEEL  1367
+
+Query  63    E-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             E +  V +TEV N+HVL YL+ V     + TF+V Q   V +++PA   VYDYYE D  A
+Sbjct  1368  ENKGQVMKTEVKNDHVLFYLENVFGRADSFTFSVEQSNLVFNIQPAPGMVYDYYEKDGEA  1427
+
+Query  122   V  122
+              
+Sbjct  1428  F  1428
+
+
+>sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camtschaticum 
+OX=980415 GN=C3 PE=2 SV=1
+Length=1673
+
+ Score = 120 bits (301),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 32/121 (26%), Positives = 57/121 (47%), Gaps = 8/121 (7%)
+
+Query  16    DGPKAHTSFQISLSVSYIGSRPA----SNMAIVDVKMVSGFIPLKPTVKMLERS---NVS  68
+             D       +++++   Y   +      S M I++V M++GFIP K  +  L+ S    +S
+Sbjct  1383  DEGGVEAVYRMNMCTRYKPRKEDLSSESGMTIIEVNMLTGFIPDKNDLIQLKESVDKYIS  1442
+
+Query  69    RTEVSNNHVLIYLDKVT-NETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSA  127
+               E++++ ++IY DKV   E     F + Q +    ++P    VYDYY   +     Y+ 
+Sbjct  1443  NYEITDSVLIIYWDKVPSTEDYCFAFKIKQMLRSDMIQPVTASVYDYYSPADKCTRLYNL  1502
+
+Query  128   P  128
+             P
+Sbjct  1503  P  1503
+
+
+>sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD109 
+PE=1 SV=2
+Length=1445
+
+ Score = 117 bits (293),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 28/126 (22%), Positives = 56/126 (44%), Gaps = 9/126 (7%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F   + V+      +         +++  S+ G    S MA+++V ++SGF+     + +
+Sbjct  1281  FDLDVAVK------ENKDDLNHVDLNVCTSFSGP-GRSGMALMEVNLLSGFMVPSEAISL  1333
+
+Query  62    LERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+              E   V + E  +  + +YLD V      +    +++  V + + A V + DYYE    A
+Sbjct  1334  SE--TVKKVEYDHGKLNLYLDSVNETQFCVNIPAVRNFKVSNTQDASVSIVDYYEPRRQA  1391
+
+Query  122   VAEYSA  127
+             V  Y++
+Sbjct  1392  VRSYNS  1397
+
+
+>sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus 
+mykiss OX=8022 GN=c3 PE=1 SV=1
+Length=1640
+
+ Score = 115 bits (287),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/133 (25%), Positives = 65/133 (49%), Gaps = 11/133 (8%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F  ++ +  + +T     A  SF +++ V Y  S   + M+I+D+ +++GFI     +  
+Sbjct  1338  FDLSVTLTKMDKTSHED-AKESFMLTIEVLYKNSERDATMSILDIGLLTGFIVDTDDLNQ  1396
+
+Query  62    LERS---NVSRTEVSN-----NHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVKVY  112
+             L +     + + E+         +++YLDKV+++    ++F + +   V  L+PA V VY
+Sbjct  1397  LSKGRERYIEKFEMDKVLSERGSLILYLDKVSHKLEDRISFKIHRVQEVGVLQPAAVSVY  1456
+
+Query  113   DYYETDEFAVAEY  125
+             +YY      V  Y
+Sbjct  1457  EYYNQKR-CVKFY  1468
+
+
+>sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 
+GN=Cd109 PE=1 SV=1
+Length=1442
+
+ Score = 115 bits (287),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 26/106 (25%), Positives = 52/106 (49%), Gaps = 3/106 (3%)
+
+Query  22    TSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSNVSRTEVSNNHVLIYL  81
+             +   +++  S++GS   + M +++V ++SGF     ++ + E   + + E  N  + +YL
+Sbjct  1295  SHLNLNVCTSHLGSE-RTGMVLMEVNLLSGFSASSDSIPLSE--TLKKVEYDNGKLNLYL  1351
+
+Query  82    DKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSA  127
+             D V      +    ++D  V +++   V V DYYE    AV  Y+ 
+Sbjct  1352  DSVNESQFCVNIPTVRDYKVSNIRDGSVSVMDYYEPRRQAVRSYNT  1397
+
+
+>sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domain-containing 
+protein 8 OS=Homo sapiens OX=9606 GN=CPAMD8 
+PE=1 SV=2
+Length=1885
+
+ Score = 109 bits (273),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 29/108 (27%), Positives = 53/108 (49%), Gaps = 5/108 (5%)
+
+Query  23    SFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML---ERSNVSRTEVSNNHVLI  79
+                + +   ++ +  +SNMA+++V ++SGF     +++ L   +   + R EV+   VL 
+Sbjct  1554  KVMLEVCTRWLHA-GSSNMAVLEVPLLSGFRADIESLEQLLLDKHMGMKRYEVAGRRVLF  1612
+
+Query  80    YLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYS  126
+             Y D++ +  L  + F  L++  V       V VYDYYE    A   Y+
+Sbjct  1613  YFDEIPSRCLTCVRFRALRECVVGRTSALPVSVYDYYEPAFEATRFYN  1660
+
+
+>sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606 
+GN=OVOS1 PE=2 SV=2
+Length=1185
+
+ Score = 100 bits (250),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 34/97 (35%), Positives = 46/97 (47%), Gaps = 15/97 (15%)
+
+Query  31    SYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSNVSRTEVSNNHVLIYLDKVT----N  86
+              Y G R  S+M ++DVKM+SGF P            +S  E  NN  LI+  K +     
+Sbjct  1098  RYTGIRNKSSMVVIDVKMLSGFTP-----------TMSSIEEVNNRSLIFQHKDSYIEYK  1146
+
+Query  87    ETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVA  123
+                +  F+V Q   V +++PA   VYDYYE    A A
+Sbjct  1147  RADSFPFSVEQSNLVFNIQPAPAMVYDYYEKGRQATA  1183
+
+
+>sp|P98094|CO3_EPTBU Complement C3 (Fragment) OS=Eptatretus burgeri 
+OX=7764 GN=C3 PE=1 SV=1
+Length=1620
+
+ Score = 82.0 bits (201),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 44/101 (44%), Gaps = 5/101 (5%)
+
+Query  29    SVSYIGSRPASNMAIVDVKMVSGFIPLKPTV---KMLERSNVSRTEVSNNHVLIYLDKVT  85
+                Y+ ++    M ++D+ + +GF   K  +   K L  + + + E+    V +YLDKV 
+Sbjct  1356  CFRYLRNQEP-GMVVMDISLPTGFEAKKKDLDDMKNLVDNYIVQYEIRPGRVFLYLDKVN  1414
+
+Query  86    NETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEY  125
+              +    + F + Q      + P    V++YYE D      Y
+Sbjct  1415  KDEKNCVGFRLNQVFESNLVLPVTATVFEYYEPDFRCSKSY  1455
+
+
+>sp|P01031|CO5_HUMAN Complement C5 OS=Homo sapiens OX=9606 GN=C5 
+PE=1 SV=4
+Length=1676
+
+ Score = 70.8 bits (172),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 41/90 (46%), Gaps = 4/90 (4%)
+
+Query  42    AIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSNNHVLIYLDKVTNETL-TLTFTVLQ  97
+             A++D+ + +G    +  +K L        +  ++ + HV++ L+ + +     + F + +
+Sbjct  1422  AVMDISLPTGISANEEDLKALVEGVDQLFTDYQIKDGHVILQLNSIPSSDFLCVRFRIFE  1481
+
+Query  98    DIPVRDLKPAIVKVYDYYETDEFAVAEYSA  127
+                V  L PA   VY+Y+  D+     YS 
+Sbjct  1482  LFEVGFLSPATFTVYEYHRPDKQCTMFYST  1511
+
+
+>sp|P06684|CO5_MOUSE Complement C5 OS=Mus musculus OX=10090 GN=C5 
+PE=1 SV=2
+Length=1680
+
+ Score = 69.6 bits (169),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 25/124 (20%), Positives = 54/124 (44%), Gaps = 16/124 (13%)
+
+Query  19    KAHTSFQIS--------LSVSYIGSRPASNM----AIVDVKMVSGFIPLKPTVKMLERS-  65
+             +A + F++S           SY  S+  S      A++D+ + +G    +  ++ L    
+Sbjct  1391  EASSHFRLSDSGFKRIIACASYKPSKEESTSGSSHAVMDISLPTGIGANEEDLRALVEGV  1450
+
+Query  66    --NVSRTEVSNNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+                ++  ++ + HV++ L+ + +     + F + +   V  L PA   VY+Y+  D+   
+Sbjct  1451  DQLLTDYQIKDGHVILQLNSIPSRDFLCVRFRIFELFQVGFLNPATFTVYEYHRPDKQCT  1510
+
+Query  123   AEYS  126
+               YS
+Sbjct  1511  MIYS  1514
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0425    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 3
+
+
+Query= d1ayoa_
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 ...  192     1e-56
+sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=960...  189     1e-55
+sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=960...  187     8e-55
+sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus OX=...  187     8e-55
+sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus OX=1...  184     6e-54
+sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 GN...  179     5e-52
+sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=960...  177     2e-51
+sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10...  177     3e-51
+sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116...  176     4e-51
+sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116...  176     5e-51
+sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 GN...  175     1e-50
+sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=100...  171     3e-49
+sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus OX=1...  170     6e-49
+sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps sup...  166     1e-47
+sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 ...  166     1e-47
+sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 GN=...  166     1e-47
+sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 GN=...  166     2e-47
+sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 PE=...  164     5e-47
+sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 PE=...  164     7e-47
+sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryct...  162     1e-46
+sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps sup...  163     1e-46
+sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus hann...  163     1e-46
+sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 ...  162     3e-46
+sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 P...  162     5e-46
+sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 ...  161     7e-46
+sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis OX...  151     7e-45
+sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 ...  158     1e-44
+sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Hom...  152     2e-42
+sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 GN=C...  150     4e-42
+sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 GN=C...  150     4e-42
+sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=99...  150     6e-42
+sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 GN=...  150     9e-42
+sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 GN=...  148     4e-41
+sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 SV=3     147     7e-41
+sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606...  135     1e-36
+sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camts...  134     2e-36
+sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 G...  132     1e-35
+sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus myki...  128     2e-34
+sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD...  128     2e-34
+sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 GN=C...  124     6e-33
+sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domai...  123     2e-32
+sp|P98094|CO3_EPTBU Complement C3 (Fragment) OS=Eptatretus burger...  115     2e-29
+sp|P06684|CO5_MOUSE Complement C5 OS=Mus musculus OX=10090 GN=C5 ...  113     5e-29
+sp|P01031|CO5_HUMAN Complement C5 OS=Homo sapiens OX=9606 GN=C5 P...  110     5e-28
+sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606...  100     2e-24
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q7SIH1|A2MG_BOVIN Alpha-2-macroglobulin OS=Bos taurus OX=9913 
+GN=A2M PE=1 SV=2
+Length=1510
+
+ Score = 192 bits (489),  Expect = 1e-56, Method: Composition-based stats.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1375  EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  1434
+
+Query  61    MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  120
+             MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF
+Sbjct  1435  MLERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEF  1494
+
+Query  121   AVAEYSAPCS  130
+             AVAEYSAPCS
+Sbjct  1495  AVAEYSAPCS  1504
+
+
+>sp|Q5R4N8|A2MG_PONAB Alpha-2-macroglobulin OS=Pongo abelii OX=9601 
+GN=A2M PE=2 SV=1
+Length=1474
+
+ Score = 189 bits (480),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 118/131 (90%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSNNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P01023|A2MG_HUMAN Alpha-2-macroglobulin OS=Homo sapiens OX=9606 
+GN=A2M PE=1 SV=3
+Length=1474
+
+ Score = 187 bits (475),  Expect = 8e-55, Method: Composition-based stats.
+ Identities = 117/131 (89%), Positives = 125/131 (95%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLPQTCD PKAHTSFQISLSVSY GSR ASNMAIVDVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALGVQTLPQTCDEPKAHTSFQISLSVSYTGSRSASNMAIVDVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVS+NHVLIYLDKV+N+TL+L FTVLQD+PVRDLKPAIVKVYDYYETDE
+Sbjct  1398  MLERSNHVSRTEVSSNHVLIYLDKVSNQTLSLFFTVLQDVPVRDLKPAIVKVYDYYETDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FA+AEY+APCS
+Sbjct  1458  FAIAEYNAPCS  1468
+
+
+>sp|P06238|A2MG_RAT Alpha-2-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A2m PE=2 SV=2
+Length=1472
+
+ Score = 187 bits (474),  Expect = 8e-55, Method: Composition-based stats.
+ Identities = 107/131 (82%), Positives = 119/131 (91%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPF + VQTLP TC+ PKAHTSFQISL++SY GSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1336  EFPFTVVVQTLPGTCEDPKAHTSFQISLNISYTGSRSESNMAIADVKMVSGFIPLKPTVK  1395
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+T+ L+FTV QDIP+RDLKPA+VKVYDYYE DE
+Sbjct  1396  MLERSVHVSRTEVSNNHVLIYLDKVSNQTVNLSFTVQQDIPIRDLKPAVVKVYDYYEKDE  1455
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1456  FAVAKYSAPCS  1466
+
+
+>sp|Q6GQT1|A2MG_MOUSE Alpha-2-macroglobulin-P OS=Mus musculus 
+OX=10090 GN=A2m PE=2 SV=2
+Length=1474
+
+ Score = 184 bits (468),  Expect = 6e-54, Method: Composition-based stats.
+ Identities = 110/131 (84%), Positives = 118/131 (90%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             EFPFAL VQTLP TC+  KAHT+FQISL++SYIGSR  SNMAI DVKMVSGFIPLKPTVK
+Sbjct  1338  EFPFALVVQTLPGTCEDLKAHTTFQISLNISYIGSRSDSNMAIADVKMVSGFIPLKPTVK  1397
+
+Query  61    MLERS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             MLERS +VSRTEVSNNHVLIYLDKV+N+ LTL F V QDIPVRDLKPAIVKVYDYYE DE
+Sbjct  1398  MLERSVHVSRTEVSNNHVLIYLDKVSNQMLTLFFMVQQDIPVRDLKPAIVKVYDYYEKDE  1457
+
+Query  120   FAVAEYSAPCS  130
+             FAVA+YSAPCS
+Sbjct  1458  FAVAKYSAPCS  1468
+
+
+>sp|P28665|MUG1_MOUSE Murinoglobulin-1 OS=Mus musculus OX=10090 
+GN=Mug1 PE=1 SV=3
+Length=1476
+
+ Score = 179 bits (454),  Expect = 5e-52, Method: Composition-based stats.
+ Identities = 96/128 (75%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FA+ VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1343  FAIWVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1402
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEVSNN+VLIYLD+VTN+TL  +F + QDIPVR+L+PAIVKVYDYYETDE A 
+Sbjct  1403  RLEHVSRTEVSNNNVLIYLDQVTNQTLAFSFIIQQDIPVRNLQPAIVKVYDYYETDEMAF  1462
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1463  AEYSSPCS  1470
+
+
+>sp|P20742|PZP_HUMAN Pregnancy zone protein OS=Homo sapiens OX=9606 
+GN=PZP PE=1 SV=4
+Length=1482
+
+ Score = 177 bits (449),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 107/129 (83%), Positives = 119/129 (92%), Gaps = 1/129 (1%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+             PFAL+VQT+PQTCDG KAHTSFQISL++SY G+RPASNM IVDVKMVSGFIPLKPTVKML
+Sbjct  1346  PFALKVQTVPQTCDGHKAHTSFQISLTISYTGNRPASNMVIVDVKMVSGFIPLKPTVKML  1405
+
+Query  63    ERSN-VSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             ERS+ VSRTEVSNNHVLIY+++VTN+TL+ +F VLQDIPV DLKPAIVKVYDYYETDE  
+Sbjct  1406  ERSSSVSRTEVSNNHVLIYVEQVTNQTLSFSFMVLQDIPVGDLKPAIVKVYDYYETDESV  1465
+
+Query  122   VAEYSAPCS  130
+             VAEY APCS
+Sbjct  1466  VAEYIAPCS  1474
+
+
+>sp|P14046|A1I3_RAT Alpha-1-inhibitor 3 OS=Rattus norvegicus OX=10116 
+GN=A1i3 PE=1 SV=1
+Length=1477
+
+ Score = 177 bits (448),  Expect = 3e-51, Method: Composition-based stats.
+ Identities = 92/128 (72%), Positives = 111/128 (87%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY+GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1344  FALKVQTVPLTCNNPKGQNSFQISLEISYMGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1403
+
+Query  64    R-SNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1404  RLGHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1463
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1464  AEYSSPCS  1471
+
+
+>sp|Q6IE52|MUG2_RAT Murinoglobulin-2 OS=Rattus norvegicus OX=10116 
+GN=Mug2 PE=1 SV=1
+Length=1448
+
+ Score = 176 bits (447),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 91/128 (71%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+V+T+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1315  FALKVKTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1374
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1375  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1434
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1435  AEYSSPCS  1442
+
+
+>sp|Q03626|MUG1_RAT Murinoglobulin-1 OS=Rattus norvegicus OX=10116 
+GN=Mug1 PE=2 SV=1
+Length=1487
+
+ Score = 176 bits (446),  Expect = 5e-51, Method: Composition-based stats.
+ Identities = 92/128 (72%), Positives = 110/128 (86%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL+VQT+P TC+ PK   SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1354  FALKVQTVPLTCNNPKGQNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1413
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  +VSRTEV+ N+VL+YLD+VTN+TL+ +F + QDIPV++L+PAIVKVYDYYETDE A 
+Sbjct  1414  RLEHVSRTEVTTNNVLLYLDQVTNQTLSFSFIIQQDIPVKNLQPAIVKVYDYYETDEVAF  1473
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1474  AEYSSPCS  1481
+
+
+>sp|P28666|MUG2_MOUSE Murinoglobulin-2 OS=Mus musculus OX=10090 
+GN=Mug2 PE=1 SV=2
+Length=1451
+
+ Score = 175 bits (444),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 94/128 (73%), Positives = 109/128 (85%), Gaps = 1/128 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLE  63
+             FAL VQT+P TC+ PK H SFQISL +SY GSRPASNM I DVKM+SGFIPLKPTVK LE
+Sbjct  1318  FALRVQTVPLTCNNPKGHNSFQISLEISYTGSRPASNMVIADVKMLSGFIPLKPTVKKLE  1377
+
+Query  64    RS-NVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             R  ++SRTEVSNN+VL+YLD+VTN+TL  +F + QDI VR+L+PAIVKVYDYYETDE A 
+Sbjct  1378  RLEHISRTEVSNNNVLLYLDQVTNQTLAFSFIIQQDISVRNLQPAIVKVYDYYETDEVAY  1437
+
+Query  123   AEYSAPCS  130
+             AEYS+PCS
+Sbjct  1438  AEYSSPCS  1445
+
+
+>sp|Q61838|PZP_MOUSE Pregnancy zone protein OS=Mus musculus OX=10090 
+GN=Pzp PE=1 SV=3
+Length=1495
+
+ Score = 171 bits (434),  Expect = 3e-49, Method: Composition-based stats.
+ Identities = 84/131 (64%), Positives = 104/131 (79%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             + PFAL+V TLP   D    H +FQI ++VSY G RP+SNM IVDVKMVSGFIP+KP+VK
+Sbjct  1357  KAPFALQVNTLPLNFDKAGDHRTFQIRINVSYTGERPSSNMVIVDVKMVSGFIPMKPSVK  1416
+
+Query  61    MLE-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L+ + N+ RTEV+ NHVLIY++K+TN+TL  +F V QDIPV++LKPA +KVYDYYETDE
+Sbjct  1417  KLQDQPNIQRTEVNTNHVLIYIEKLTNQTLGFSFAVEQDIPVKNLKPAPIKVYDYYETDE  1476
+
+Query  120   FAVAEYSAPCS  130
+             F V EYSAP S
+Sbjct  1477  FTVEEYSAPFS  1487
+
+
+>sp|Q63041|A1M_RAT Alpha-1-macroglobulin OS=Rattus norvegicus 
+OX=10116 GN=A1m PE=1 SV=1
+Length=1500
+
+ Score = 170 bits (431),  Expect = 6e-49, Method: Composition-based stats.
+ Identities = 86/131 (66%), Positives = 105/131 (80%), Gaps = 1/131 (1%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             E PF L+V TLP   D  + H  FQI ++VSYIG RP SNM IVDVKMVSGFIP+KP+VK
+Sbjct  1362  EAPFTLKVNTLPLNFDKAEHHRKFQIHINVSYIGERPNSNMVIVDVKMVSGFIPVKPSVK  1421
+
+Query  61    MLE-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L+ +SN+ RTEV+ NHVLIY++K+TN+T+  +F V QDIPV++LKPA VKVYDYYETDE
+Sbjct  1422  KLQDQSNIQRTEVNTNHVLIYIEKLTNQTMGFSFAVEQDIPVKNLKPAPVKVYDYYETDE  1481
+
+Query  120   FAVAEYSAPCS  130
+             FA+ EYSAP S
+Sbjct  1482  FAIEEYSAPFS  1492
+
+
+>sp|A0RZC6|VCO32_AUSSU A.superbus venom factor 2 OS=Austrelaps 
+superbus OX=29156 PE=2 SV=1
+Length=1651
+
+ Score = 166 bits (421),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 64/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+         K A  + ++ +   Y+G    S M I+DV M++GF+P    +
+Sbjct  1348  KFHLNVSVENAQLNSKQAKGAKDTLRLKICTRYLG-EVDSTMTIIDVSMLTGFLPDTEDL  1406
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTNET-LTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++     L F + +   V  ++P  VK
+Sbjct  1407  TRLSKGVDRYISKFEIDNNMVQKGTVVIYLDKVSHSEVECLNFKIHKHFEVGFIQPGPVK  1466
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1467  VYSYYNLDEQCTKFY  1481
+
+
+>sp|P01025|CO3_PIG Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 
+SV=2
+Length=1661
+
+ Score = 166 bits (421),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 71/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGP-KAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + +   P+    P +A +S  + +   Y+G++ A+ M+I+D+ M++GF P    +
+Sbjct  1358  KFDLKVSIHPAPEPVKKPQEAKSSMVLDICTRYLGNQDAT-MSILDISMMTGFSPDTEDL  1416
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVK  110
+             K+L       +S+ E++      N ++IYLDK+++     ++F V Q   V  ++P  VK
+Sbjct  1417  KLLSTGVDRYISKYELNKALSNKNTLIIYLDKISHTLEDCISFKVHQYFNVGLIQPGSVK  1476
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1477  VYSYYNLDESCTRFY  1491
+
+
+>sp|P12387|CO3_CAVPO Complement C3 OS=Cavia porcellus OX=10141 
+GN=C3 PE=1 SV=2
+Length=1666
+
+ Score = 166 bits (421),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 42/133 (32%), Positives = 72/133 (54%), Gaps = 10/133 (8%)
+
+Query  2     FPFALEVQTLPQTCDGP-KAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             F   + ++  P T   P +A ++  + +   Y+G + A+ M+I+D+ M++GFIP    +K
+Sbjct  1366  FDLRVTLKPAPDTVKKPQEAKSTMILGICTRYLGDQDAT-MSILDISMMTGFIPDTDDLK  1424
+
+Query  61    MLERS---NVSRTEVSN----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVY  112
+             +L       +S+ E++     N ++IYLDKV++ E   L+F + Q   V  ++P  VKVY
+Sbjct  1425  LLATGVDRYISKYEMNKDFSKNTLIIYLDKVSHSEEECLSFKIHQFFNVGLIQPGSVKVY  1484
+
+Query  113   DYYETDEFAVAEY  125
+              YY  DE     Y
+Sbjct  1485  SYYNLDETCTQFY  1497
+
+
+>sp|P01026|CO3_RAT Complement C3 OS=Rattus norvegicus OX=10116 
+GN=C3 PE=1 SV=3
+Length=1663
+
+ Score = 166 bits (420),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 72/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A +S  + +   Y+G   A+ M+I+D+ M++GFIP    +
+Sbjct  1360  KFDLRVTIKPAPETAKKPQDAKSSMILDICTRYLGDVDAT-MSILDISMMTGFIPDTNDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E+       N ++IYL+K+++ E   L+F V Q   V  ++P  VK
+Sbjct  1419  ELLSSGVDRYISKYEMDKAFSNKNTLIIYLEKISHSEEDCLSFKVHQFFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYSYYNLEESCTRFY  1493
+
+
+>sp|Q2UVX4|CO3_BOVIN Complement C3 OS=Bos taurus OX=9913 GN=C3 
+PE=1 SV=2
+Length=1661
+
+ Score = 164 bits (416),  Expect = 5e-47, Method: Composition-based stats.
+ Identities = 42/134 (31%), Positives = 71/134 (53%), Gaps = 10/134 (7%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  S  + +   Y+G + A+ M+I+D+ M++GF P    +
+Sbjct  1359  KFDLRVSIRPAPETVKKPQDAKGSMILDICTKYLGDQDAT-MSILDISMMTGFSPDVEDL  1417
+
+Query  60    KMLERS---NVSRTEVS----NNHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVKV  111
+             K L       +S+ E++     N ++IYLDKV++     L+F V Q   V  ++P  VKV
+Sbjct  1418  KTLSTGVDRYISKYEMNRDSNKNTLIIYLDKVSHTVEDCLSFKVHQYFNVGLIQPGAVKV  1477
+
+Query  112   YDYYETDEFAVAEY  125
+             Y YY  DE  +  Y
+Sbjct  1478  YSYYNLDETCIRFY  1491
+
+
+>sp|Q01833|CO3_NAJNA Complement C3 OS=Naja naja OX=35670 GN=C3 
+PE=2 SV=1
+Length=1651
+
+ Score = 164 bits (415),  Expect = 7e-47, Method: Composition-based stats.
+ Identities = 40/135 (30%), Positives = 64/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPKA-HTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K    + ++ +   Y+G    S M I+D+ M++GF P    +
+Sbjct  1348  KFHLDVSVENVELNLKQAKGGKAALRLKICTRYLG-EVDSTMTIIDISMLTGFFPDAEDL  1406
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             K L       +S+ E+ NN      V+IYLDKV++ E   L F + +   V  ++P  VK
+Sbjct  1407  KRLSNGVDRYISKFEIDNNMAQKGTVVIYLDKVSHSEDECLHFKIHKHFEVGFIQPGSVK  1466
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1467  VYSYYNLDEQCTKFY  1481
+
+
+>sp|P12247|CO3_RABIT Complement C3 alpha chain (Fragment) OS=Oryctolagus 
+cuniculus OX=9986 GN=C3 PE=2 SV=1
+Length=726
+
+ Score = 162 bits (411),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 70/135 (52%), Gaps = 11/135 (8%)
+
+Query  1    EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+            +F   + ++T P+T   P+ A ++  +     Y+G   A+ M+I+D+ M++GF+P    +
+Sbjct  423  KFDLRVNIKTAPETVKKPQDAKSTMILGHCTRYLGDEDAT-MSILDISMMTGFVPDTDDL  481
+
+Query  60   KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             +L       +S+ E++      N ++IYLDK+++     L F V Q   V  ++P  VK
+Sbjct  482  NLLSTGVDRYISKYELNKAFSNKNTLIIYLDKISHSREECLAFKVHQYFNVGLIQPGAVK  541
+
+Query  111  VYDYYETDEFAVAEY  125
+            VY YY  +E     Y
+Sbjct  542  VYSYYNLEETCTQFY  556
+
+
+>sp|Q0ZZJ6|VCO31_AUSSU A.superbus venom factor 1 OS=Austrelaps 
+superbus OX=29156 PE=1 SV=1
+Length=1652
+
+ Score = 163 bits (413),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 63/135 (47%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+         K A  + ++ +   Y+G    S M I+DV M++GF+     +
+Sbjct  1349  KFHLDVSVENAQLNSKQAKGAKDTLRLKICTRYLG-EVDSTMTIIDVSMLTGFLADAEDL  1407
+
+Query  60    KMLERS---NVSRTEVSNN-----HVLIYLDKVTNET-LTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++     L F + +   V  ++P  VK
+Sbjct  1408  TRLSKGVDRYISKFEIDNNMVQKGTVVIYLDKVSHSEVECLHFKIHKHFEVGFIQPGSVK  1467
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1468  VYSYYNLDEQCTKFY  1482
+
+
+>sp|I2C090|VCO3_OPHHA Ophiophagus venom factor OS=Ophiophagus 
+hannah OX=8665 PE=1 SV=1
+Length=1641
+
+ Score = 163 bits (413),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 43/135 (32%), Positives = 66/135 (49%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K A  +  + + + Y+G    S M I+D+ M++GF+P    +
+Sbjct  1338  KFHLDVSVENIHLNFKHAKGAKGALMLKICMRYLG-EVDSTMTIIDISMLTGFLPDAEDL  1396
+
+Query  60    KMLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+               L       +SR EV NN      V+IYLDKV++ E   L F +L+   V  ++P  VK
+Sbjct  1397  TRLSEGVDRYISRYEVDNNMAQKVAVIIYLDKVSHSEDECLQFKILKHFEVGFIQPGSVK  1456
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1457  VYSYYNLDEQCTKFY  1471
+
+
+>sp|P01027|CO3_MOUSE Complement C3 OS=Mus musculus OX=10090 GN=C3 
+PE=1 SV=3
+Length=1663
+
+ Score = 162 bits (411),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 39/135 (29%), Positives = 71/135 (53%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y+G   A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLRVSIRPAPETAKKPEEAKNTMFLEICTKYLGDVDAT-MSILDISMMTGFAPDTKDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             ++L       +S+ E++      N ++IYL+K+++ E   LTF V Q   V  ++P  VK
+Sbjct  1419  ELLASGVDRYISKYEMNKAFSNKNTLIIYLEKISHTEEDCLTFKVHQYFNVGLIQPGSVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYSYYNLEESCTRFY  1493
+
+
+>sp|P01024|CO3_HUMAN Complement C3 OS=Homo sapiens OX=9606 GN=C3 
+PE=1 SV=2
+Length=1663
+
+ Score = 162 bits (409),  Expect = 5e-46, Method: Composition-based stats.
+ Identities = 41/135 (30%), Positives = 68/135 (50%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + ++  P+T   P+ A  +  + +   Y G + A+ M+I+D+ M++GF P    +
+Sbjct  1360  KFDLKVTIKPAPETEKRPQDAKNTMILEICTRYRGDQDAT-MSILDISMMTGFAPDTDDL  1418
+
+Query  60    KMLERS---NVSRTEVSN-----NHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+             K L       +S+ E+       N ++IYLDKV++ E   L F V Q   V  ++P  VK
+Sbjct  1419  KQLANGVDRYISKYELDKAFSDRNTLIIYLDKVSHSEDDCLAFKVHQYFNVELIQPGAVK  1478
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  +E     Y
+Sbjct  1479  VYAYYNLEESCTRFY  1493
+
+
+>sp|J3S836|VCO3_CROAD Venom factor OS=Crotalus adamanteus OX=8729 
+PE=2 SV=1
+Length=1652
+
+ Score = 161 bits (408),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 41/135 (30%), Positives = 66/135 (49%), Gaps = 11/135 (8%)
+
+Query  1     EFPFALEVQTLPQTCDGPK-AHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV  59
+             +F   + V+ +       K A  + ++ +   Y+G    S M I+DV M++GF+P    +
+Sbjct  1349  QFHLEVSVERIDSNLKQAKGAKETLKLKICTRYLG-EVDSTMTIIDVSMLTGFLPDAEDL  1407
+
+Query  60    KMLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVK  110
+               L +     +S+ E+ NN      V+IYLDKV++ E   L F + +   V  ++P  VK
+Sbjct  1408  TRLSKGVDRYISKFEIDNNMAQKGAVIIYLDKVSHSEDECLQFRIQKHFEVGFIQPGSVK  1467
+
+Query  111   VYDYYETDEFAVAEY  125
+             VY YY  DE     Y
+Sbjct  1468  VYSYYNLDEQCTRFY  1482
+
+
+>sp|P23667|CO3_XENLA Complement C3 (Fragment) OS=Xenopus laevis 
+OX=8355 GN=c3 PE=2 SV=2
+Length=323
+
+ Score = 151 bits (382),  Expect = 7e-45, Method: Composition-based stats.
+ Identities = 34/133 (26%), Positives = 62/133 (47%), Gaps = 10/133 (8%)
+
+Query  2    FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+            F  ++ V+ +        A  +  I     ++ +  A+ M+I+D+ M++GF P   ++  
+Sbjct  21   FELSVNVKEVQLARPPEGAKATVSIEACARHLKNVDAT-MSIIDISMMTGFSPDTDSLDR  79
+
+Query  62   LERS---NVSRTEV-----SNNHVLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKVY  112
+            L +     +S+ EV         +++YLDKV++ +   + F   Q   V  ++PA V VY
+Sbjct  80   LMKGVDKYISKYEVNKGANDKGTLILYLDKVSHIDEECVKFYAHQYFEVGFIQPASVTVY  139
+
+Query  113  DYYETDEFAVAEY  125
+            DYY  D      Y
+Sbjct  140  DYYTPDNRCTKFY  152
+
+
+>sp|Q91132|VCO3_NAJKA Cobra venom factor OS=Naja kaouthia OX=8649 
+PE=1 SV=1
+Length=1642
+
+ Score = 158 bits (399),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 41/134 (31%), Positives = 65/134 (49%), Gaps = 12/134 (9%)
+
+Query  1     EFPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVK  60
+             +F   + V+ +        A  +  + +   Y+G    S M I+D+ M++GF+P    + 
+Sbjct  1342  KFHLNVSVENIHLNAM--GAKGALMLKICTRYLG-EVDSTMTIIDISMLTGFLPDAEDLT  1398
+
+Query  61    MLERS---NVSRTEVSNNH-----VLIYLDKVTN-ETLTLTFTVLQDIPVRDLKPAIVKV  111
+              L +     +SR EV NN      V+IYL+KV++ E   L F +L+   V  ++P  VKV
+Sbjct  1399  RLSKGVDRYISRYEVDNNMAQKVAVIIYLNKVSHSEDECLHFKILKHFEVGFIQPGSVKV  1458
+
+Query  112   YDYYETDEFAVAEY  125
+             Y YY  DE     Y
+Sbjct  1459  YSYYNLDEKCTKFY  1472
+
+
+>sp|A8K2U0|A2ML1_HUMAN Alpha-2-macroglobulin-like protein 1 OS=Homo 
+sapiens OX=9606 GN=A2ML1 PE=1 SV=3
+Length=1454
+
+ Score = 152 bits (383),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 56/127 (44%), Positives = 83/127 (65%), Gaps = 1/127 (1%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML-  62
+             F+L V+     C+ P +  S  +++  SY+GSR +SNMAIV+VKM+SGF P++ T ++L 
+Sbjct  1327  FSLSVEIGKARCEQPTSPRSLTLTIHTSYVGSRSSSNMAIVEVKMLSGFSPMEGTNQLLL  1386
+
+Query  63    ERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+             ++  V + E   + + IYLD++   T T TFT+ Q + V +LKPA +KVYDYY  DE A 
+Sbjct  1387  QQPLVKKVEFGTDTLNIYLDELIKNTQTYTFTISQSVLVTNLKPATIKVYDYYLPDEQAT  1446
+
+Query  123   AEYSAPC  129
+              +YS PC
+Sbjct  1447  IQYSDPC  1453
+
+
+>sp|P0C0L5|CO4B_HUMAN Complement C4-B OS=Homo sapiens OX=9606 
+GN=C4B PE=1 SV=2
+Length=1744
+
+ Score = 150 bits (380),  Expect = 4e-42, Method: Composition-based stats.
+ Identities = 34/114 (30%), Positives = 53/114 (46%), Gaps = 3/114 (3%)
+
+Query  18    PKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSN  74
+              +  +    ++ +   G    S MAI DV ++SGF  L+  ++ L       VS  E   
+Sbjct  1460  EEQESRVHYTVCIWRNGKVGLSGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEG  1519
+
+Query  75    NHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1520  PHVLLYFDSVPTSRECVGFEAVQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|P0C0L4|CO4A_HUMAN Complement C4-A OS=Homo sapiens OX=9606 
+GN=C4A PE=1 SV=2
+Length=1744
+
+ Score = 150 bits (380),  Expect = 4e-42, Method: Composition-based stats.
+ Identities = 34/114 (30%), Positives = 53/114 (46%), Gaps = 3/114 (3%)
+
+Query  18    PKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSN  74
+              +  +    ++ +   G    S MAI DV ++SGF  L+  ++ L       VS  E   
+Sbjct  1460  EEQESRVHYTVCIWRNGKVGLSGMAIADVTLLSGFHALRADLEKLTSLSDRYVSHFETEG  1519
+
+Query  75    NHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  1520  PHVLLYFDSVPTSRECVGFEAVQEVPVGLVQPASATLYDYYNPERRCSVFYGAP  1573
+
+
+>sp|P01030|CO4_BOVIN Complement C4 (Fragments) OS=Bos taurus OX=9913 
+GN=C4 PE=1 SV=2
+Length=920
+
+ Score = 150 bits (379),  Expect = 6e-42, Method: Composition-based stats.
+ Identities = 34/115 (30%), Positives = 54/115 (47%), Gaps = 3/115 (3%)
+
+Query  17   GPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVS  73
+              +  +  Q ++ +   G    S MAI D+ ++SGF  L+  ++ L       VS  E  
+Sbjct  635  AEERESRVQYTVCIWRTGKVGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVSHFETE  694
+
+Query  74   NNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              HVL+Y D V      + F  +Q++PV  ++PA   +YDYY  +      Y AP
+Sbjct  695  GPHVLLYFDSVPTSRECVGFGAVQEVPVGLVQPASAILYDYYNPEHKCSVFYGAP  749
+
+
+>sp|P08649|CO4_RAT Complement C4 OS=Rattus norvegicus OX=10116 
+GN=C4 PE=1 SV=3
+Length=1737
+
+ Score = 150 bits (378),  Expect = 9e-42, Method: Composition-based stats.
+ Identities = 35/115 (30%), Positives = 55/115 (48%), Gaps = 3/115 (3%)
+
+Query  17    GPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVS  73
+               +  +  Q ++ +   G+   S MAI D+ ++SGF  L+  ++ L       VS  E  
+Sbjct  1452  ADEQESRVQYTVCIWRNGNLGLSGMAIADITLLSGFQALRADLEKLTSLSDRYVSHFETD  1511
+
+Query  74    NNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+               HVL+Y D V      + F  LQ++ V  ++PA   +YDYY  D      Y+AP
+Sbjct  1512  GPHVLLYFDSVPTTRECVGFGALQEVAVGLVQPASAVLYDYYSPDHKCSVFYAAP  1566
+
+
+>sp|P01029|CO4B_MOUSE Complement C4-B OS=Mus musculus OX=10090 
+GN=C4b PE=1 SV=3
+Length=1738
+
+ Score = 148 bits (373),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 33/114 (29%), Positives = 53/114 (46%), Gaps = 3/114 (3%)
+
+Query  18    PKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERS---NVSRTEVSN  74
+              +  +  Q ++ +   G    S MAI D+ ++SGF  L+  ++ L       VS  E   
+Sbjct  1454  EEQESRVQYTVCIWRNGKLGLSGMAIADITLLSGFHALRADLEKLTSLSDRYVSHFETDG  1513
+
+Query  75    NHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSAP  128
+              HVL+Y D V      + F   Q++ V  ++P+   +YDYY  D      Y+AP
+Sbjct  1514  PHVLLYFDSVPTTRECVGFGASQEVVVGLVQPSSAVLYDYYSPDHKCSVFYAAP  1567
+
+
+>sp|P20740|OVOS_CHICK Ovostatin OS=Gallus gallus OX=9031 PE=1 
+SV=3
+Length=1473
+
+ Score = 147 bits (371),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 59/130 (45%), Positives = 80/130 (62%), Gaps = 3/130 (2%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F F+L VQT   +C   +    F I L  SY G R +SNM I+DVKM+SGF+P+K ++  
+Sbjct  1337  FGFSLSVQTSNASCPRDQ-PGKFDIVLISSYTGKRSSSNMVIIDVKMLSGFVPVKSSLDQ  1395
+
+Query  62    L-ERSNVSRTEVSNNHVLIYLDKV-TNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+             L +   V + E   NHVL+YL  +       +TF+V QD  V   KPA V++YDYYET+E
+Sbjct  1396  LIDDHTVMQVEYKKNHVLLYLGNILQKRRKEVTFSVEQDFVVTHPKPAPVQIYDYYETEE  1455
+
+Query  120   FAVAEYSAPC  129
+             +AVAEY + C
+Sbjct  1456  YAVAEYMSLC  1465
+
+
+>sp|Q6IE36|OVOS2_HUMAN Ovostatin homolog 2 OS=Homo sapiens OX=9606 
+GN=OVOS2 PE=2 SV=2
+Length=1432
+
+ Score = 135 bits (339),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 45/121 (37%), Positives = 71/121 (59%), Gaps = 6/121 (5%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+              F+L ++ +        + T F +++++ Y G R  S+M ++DVKM+SGF P   +++ L
+Sbjct  1313  GFSLSLEIV-----KNYSLTVFDLTVNLKYTGIRNKSSMVVIDVKMLSGFTPTMSSIEEL  1367
+
+Query  63    E-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             E +  V +TEV N+HVL YL+ V     + TF+V Q   V +++PA   VYDYYE D  A
+Sbjct  1368  ENKGQVMKTEVKNDHVLFYLENVFGRADSFTFSVEQSNLVFNIQPAPGMVYDYYEKDGEA  1427
+
+Query  122   V  122
+              
+Sbjct  1428  F  1428
+
+
+>sp|Q00685|CO3_LETCA Complement C3 (Fragment) OS=Lethenteron camtschaticum 
+OX=980415 GN=C3 PE=2 SV=1
+Length=1673
+
+ Score = 134 bits (338),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 57/121 (47%), Gaps = 8/121 (7%)
+
+Query  16    DGPKAHTSFQISLSVSYIGSRPA----SNMAIVDVKMVSGFIPLKPTVKMLERS---NVS  68
+             D       +++++   Y   +      S M I++V M++GFIP K  +  L+ S    +S
+Sbjct  1383  DEGGVEAVYRMNMCTRYKPRKEDLSSESGMTIIEVNMLTGFIPDKNDLIQLKESVDKYIS  1442
+
+Query  69    RTEVSNNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYSA  127
+               E++++ ++IY DKV +       F + Q +    ++P    VYDYY   +     Y+ 
+Sbjct  1443  NYEITDSVLIIYWDKVPSTEDYCFAFKIKQMLRSDMIQPVTASVYDYYSPADKCTRLYNL  1502
+
+Query  128   P  128
+             P
+Sbjct  1503  P  1503
+
+
+>sp|Q3UU35|OVOS_MOUSE Ovostatin homolog OS=Mus musculus OX=10090 
+GN=Ovos PE=2 SV=2
+Length=1456
+
+ Score = 132 bits (332),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 46/125 (37%), Positives = 77/125 (62%), Gaps = 3/125 (2%)
+
+Query  3     PFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML  62
+              F+L V+T        +  T F+++++++Y G+R +S   +VDVKM+SGF P+  + + L
+Sbjct  1326  GFSLSVKTGKSNS-SDEFQTKFELTVTLTYTGARESSVTVLVDVKMLSGFTPVVSSTEEL  1384
+
+Query  63    E-RSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+             +  S V++T++ N HVL YL+ V  E  +LTF++ Q   V +++PA V VY Y E  E+A
+Sbjct  1385  KFNSQVTKTDIKNGHVLFYLENVPKEATSLTFSIEQTNHVANIQPAPVTVYSY-EKGEYA  1443
+
+Query  122   VAEYS  126
+                Y+
+Sbjct  1444  FDSYN  1448
+
+
+>sp|P98093|CO3_ONCMY Complement C3 (Fragment) OS=Oncorhynchus 
+mykiss OX=8022 GN=c3 PE=1 SV=1
+Length=1640
+
+ Score = 128 bits (323),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 33/133 (25%), Positives = 66/133 (50%), Gaps = 11/133 (8%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F  ++ +  + +T     A  SF +++ V Y  S   + M+I+D+ +++GFI     +  
+Sbjct  1338  FDLSVTLTKMDKTSHED-AKESFMLTIEVLYKNSERDATMSILDIGLLTGFIVDTDDLNQ  1396
+
+Query  62    LERS---NVSRTEVSN-----NHVLIYLDKVTNE-TLTLTFTVLQDIPVRDLKPAIVKVY  112
+             L +     + + E+         +++YLDKV+++    ++F + +   V  L+PA V VY
+Sbjct  1397  LSKGRERYIEKFEMDKVLSERGSLILYLDKVSHKLEDRISFKIHRVQEVGVLQPAAVSVY  1456
+
+Query  113   DYYETDEFAVAEY  125
+             +YY   +  V  Y
+Sbjct  1457  EYYNQ-KRCVKFY  1468
+
+
+>sp|Q6YHK3|CD109_HUMAN CD109 antigen OS=Homo sapiens OX=9606 GN=CD109 
+PE=1 SV=2
+Length=1445
+
+ Score = 128 bits (322),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 28/126 (22%), Positives = 56/126 (44%), Gaps = 9/126 (7%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F   + V+      +         +++  S+ G    S MA+++V ++SGF+     + +
+Sbjct  1281  FDLDVAVK------ENKDDLNHVDLNVCTSFSGP-GRSGMALMEVNLLSGFMVPSEAISL  1333
+
+Query  62    LERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+              E   V + E  +  + +YLD V      +    +++  V + + A V + DYYE    A
+Sbjct  1334  SE--TVKKVEYDHGKLNLYLDSVNETQFCVNIPAVRNFKVSNTQDASVSIVDYYEPRRQA  1391
+
+Query  122   VAEYSA  127
+             V  Y++
+Sbjct  1392  VRSYNS  1397
+
+
+>sp|Q8R422|CD109_MOUSE CD109 antigen OS=Mus musculus OX=10090 
+GN=Cd109 PE=1 SV=1
+Length=1442
+
+ Score = 124 bits (312),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 28/126 (22%), Positives = 55/126 (44%), Gaps = 10/126 (8%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKM  61
+             F   + V             +   +++  S++GS   + M +++V ++SGF     ++ +
+Sbjct  1282  FDLDVIVN-------NEDDISHLNLNVCTSHLGSE-RTGMVLMEVNLLSGFSASSDSIPL  1333
+
+Query  62    LERSNVSRTEVSNNHVLIYLDKVTNETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFA  121
+              E   + + E  N  + +YLD V      +    ++D  V +++   V V DYYE    A
+Sbjct  1334  SE--TLKKVEYDNGKLNLYLDSVNESQFCVNIPTVRDYKVSNIRDGSVSVMDYYEPRRQA  1391
+
+Query  122   VAEYSA  127
+             V  Y+ 
+Sbjct  1392  VRSYNT  1397
+
+
+>sp|Q8IZJ3|CPMD8_HUMAN C3 and PZP-like alpha-2-macroglobulin domain-containing 
+protein 8 OS=Homo sapiens OX=9606 GN=CPAMD8 
+PE=1 SV=2
+Length=1885
+
+ Score = 123 bits (308),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 29/114 (25%), Positives = 53/114 (46%), Gaps = 5/114 (4%)
+
+Query  17    GPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTVKML---ERSNVSRTEVS  73
+                      + +   ++ +  +SNMA+++V ++SGF     +++ L   +   + R EV+
+Sbjct  1548  QHHQEYKVMLEVCTRWLHA-GSSNMAVLEVPLLSGFRADIESLEQLLLDKHMGMKRYEVA  1606
+
+Query  74    NNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVAEYS  126
+                VL Y D++ +  L  + F  L++  V       V VYDYYE    A   Y+
+Sbjct  1607  GRRVLFYFDEIPSRCLTCVRFRALRECVVGRTSALPVSVYDYYEPAFEATRFYN  1660
+
+
+>sp|P98094|CO3_EPTBU Complement C3 (Fragment) OS=Eptatretus burgeri 
+OX=7764 GN=C3 PE=1 SV=1
+Length=1620
+
+ Score = 115 bits (287),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 26/126 (21%), Positives = 52/126 (41%), Gaps = 6/126 (5%)
+
+Query  4     FALEVQTLPQTCDGPKAHTSFQISLSVSYIGSRPASNMAIVDVKMVSGFIPLKPTV---K  60
+                +V+   +    P+    ++      Y+ ++    M ++D+ + +GF   K  +   K
+Sbjct  1332  LDNQVKQRRRQSINPEF-NVYRFIGCFRYLRNQEP-GMVVMDISLPTGFEAKKKDLDDMK  1389
+
+Query  61    MLERSNVSRTEVSNNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDE  119
+              L  + + + E+    V +YLDKV  +    + F + Q      + P    V++YYE D 
+Sbjct  1390  NLVDNYIVQYEIRPGRVFLYLDKVNKDEKNCVGFRLNQVFESNLVLPVTATVFEYYEPDF  1449
+
+Query  120   FAVAEY  125
+                  Y
+Sbjct  1450  RCSKSY  1455
+
+
+>sp|P06684|CO5_MOUSE Complement C5 OS=Mus musculus OX=10090 GN=C5 
+PE=1 SV=2
+Length=1680
+
+ Score = 113 bits (283),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 25/124 (20%), Positives = 54/124 (44%), Gaps = 16/124 (13%)
+
+Query  19    KAHTSFQIS--------LSVSYIGSRPASNM----AIVDVKMVSGFIPLKPTVKMLERS-  65
+             +A + F++S           SY  S+  S      A++D+ + +G    +  ++ L    
+Sbjct  1391  EASSHFRLSDSGFKRIIACASYKPSKEESTSGSSHAVMDISLPTGIGANEEDLRALVEGV  1450
+
+Query  66    --NVSRTEVSNNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAV  122
+                ++  ++ + HV++ L+ + +     + F + +   V  L PA   VY+Y+  D+   
+Sbjct  1451  DQLLTDYQIKDGHVILQLNSIPSRDFLCVRFRIFELFQVGFLNPATFTVYEYHRPDKQCT  1510
+
+Query  123   AEYS  126
+               YS
+Sbjct  1511  MIYS  1514
+
+
+>sp|P01031|CO5_HUMAN Complement C5 OS=Homo sapiens OX=9606 GN=C5 
+PE=1 SV=4
+Length=1676
+
+ Score = 110 bits (276),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 27/135 (20%), Positives = 58/135 (43%), Gaps = 9/135 (7%)
+
+Query  2     FPFALEVQTLPQTCDGPKAHTSF-QISLSVSYIGSRPASNM----AIVDVKMVSGFIPLK  56
+             F   ++ Q +  +      ++ + +I    SY  SR  S+     A++D+ + +G    +
+Sbjct  1377  FYLKIDTQDIEASHYRGYGNSDYKRIVACASYKPSREESSSGSSHAVMDISLPTGISANE  1436
+
+Query  57    PTVKMLERS---NVSRTEVSNNHVLIYLDKVTNETL-TLTFTVLQDIPVRDLKPAIVKVY  112
+               +K L        +  ++ + HV++ L+ + +     + F + +   V  L PA   VY
+Sbjct  1437  EDLKALVEGVDQLFTDYQIKDGHVILQLNSIPSSDFLCVRFRIFELFEVGFLSPATFTVY  1496
+
+Query  113   DYYETDEFAVAEYSA  127
+             +Y+  D+     YS 
+Sbjct  1497  EYHRPDKQCTMFYST  1511
+
+
+>sp|Q6IE37|OVOS1_HUMAN Ovostatin homolog 1 OS=Homo sapiens OX=9606 
+GN=OVOS1 PE=2 SV=2
+Length=1185
+
+ Score = 100 bits (248),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 34/98 (35%), Positives = 46/98 (47%), Gaps = 15/98 (15%)
+
+Query  30    VSYIGSRPASNMAIVDVKMVSGFIPLKPTVKMLERSNVSRTEVSNNHVLIYLDKVT----  85
+               Y G R  S+M ++DVKM+SGF P            +S  E  NN  LI+  K +    
+Sbjct  1097  FRYTGIRNKSSMVVIDVKMLSGFTP-----------TMSSIEEVNNRSLIFQHKDSYIEY  1145
+
+Query  86    NETLTLTFTVLQDIPVRDLKPAIVKVYDYYETDEFAVA  123
+                 +  F+V Q   V +++PA   VYDYYE    A A
+Sbjct  1146  KRADSFPFSVEQSNLVFNIQPAPAMVYDYYEKGRQATA  1183
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0427    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

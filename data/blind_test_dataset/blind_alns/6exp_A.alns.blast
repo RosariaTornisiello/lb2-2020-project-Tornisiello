@@ -1,0 +1,229 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6exp_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus is...  45.8    1e-06
+
+
+>sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=90b PE=4 SV=1
+Length=90
+
+ Score = 45.8 bits (107),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 24/93 (26%), Positives = 55/93 (59%), Gaps = 4/93 (4%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           M ++EL+ +++  F++  I  ++L  + E+ +S  +FE+++K+ D   +    N    T 
+Sbjct  1   MEFEELKSIVEKFFQDQTIVRMNLMLNKEIIVSYNQFEEIIKDGDLTYRYAEKN---RTV  57
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRK  93
+           +++E+ N  +   ++Y+ KD K+ ++E+ FWR 
+Sbjct  58  DFYEYRNN-IHSIINYFWKDNKVCIIEIDFWRS  89
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.140    0.419    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+Results from round 2
+
+
+Query= 6exp_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus is...  100     3e-28
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8QL18|Y95_SIRV1 Uncharacterized protein 95 OS=Sulfolobus isla...  44.2    5e-06
+
+
+>sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=90b PE=4 SV=1
+Length=90
+
+ Score = 100 bits (250),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 55/93 (59%), Gaps = 4/93 (4%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           M ++EL+ +++  F++  I  ++L  + E+ +S  +FE+++K+ D   +    N    T 
+Sbjct  1   MEFEELKSIVEKFFQDQTIVRMNLMLNKEIIVSYNQFEEIIKDGDLTYRYAEKN---RTV  57
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRK  93
+           +++E+ N  +   ++Y+ KD K+ ++E+ FWR 
+Sbjct  58  DFYEYRNN-IHSIINYFWKDNKVCIIEIDFWRS  89
+
+
+>sp|Q8QL18|Y95_SIRV1 Uncharacterized protein 95 OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=95 PE=4 SV=1
+Length=95
+
+ Score = 44.2 bits (103),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 51/95 (54%), Gaps = 0/95 (0%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           MN K++++++D+ F+   + E+ L F   + +S+ E+ +LV   +          +++ F
+Sbjct  1   MNLKKVKRIIDMFFKEKNLNELTLAFKRPLIVSENEYNELVGRPNLSFVDKDPWVLSDEF  60
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRKIR  95
+            ++E  N  ++  + Y+ +   I +LE+  +R+ R
+Sbjct  61  VYYELSNTLVKLIIYYFKEKGFIHILEIDLFREKR  95
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.143    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0437    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+Results from round 3
+
+
+Query= 6exp_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8QL18|Y95_SIRV1 Uncharacterized protein 95 OS=Sulfolobus isla...  103     3e-29
+sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus is...  89.3    1e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8QL51|Y102_SIRV1 Uncharacterized protein 102 OS=Sulfolobus is...  43.1    2e-05
+sp|Q914L6|Y014_SIFVH Uncharacterized protein 14 OS=Sulfolobus isl...  38.0    0.002
+
+
+>sp|Q8QL18|Y95_SIRV1 Uncharacterized protein 95 OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=95 PE=4 SV=1
+Length=95
+
+ Score = 103 bits (257),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 51/95 (54%), Gaps = 0/95 (0%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           MN K++++++D+ F+   + E+ L F   + +S+ E+ +LV   +          +++ F
+Sbjct  1   MNLKKVKRIIDMFFKEKNLNELTLAFKRPLIVSENEYNELVGRPNLSFVDKDPWVLSDEF  60
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRKIR  95
+            ++E  N  ++  + Y+ +   I +LE+  +R+ R
+Sbjct  61  VYYELSNTLVKLIIYYFKEKGFIHILEIDLFREKR  95
+
+
+>sp|Q8QL19|Y90B_SIRV1 Uncharacterized protein 90B OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=90b PE=4 SV=1
+Length=90
+
+ Score = 89.3 bits (220),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 55/94 (59%), Gaps = 4/94 (4%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           M ++EL+ +++  F++  I  ++L  + E+ +S  +FE+++K+ D   +    N    T 
+Sbjct  1   MEFEELKSIVEKFFQDQTIVRMNLMLNKEIIVSYNQFEEIIKDGDLTYRYAEKN---RTV  57
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRKI  94
+           +++E+ N  +   ++Y+ KD K+ ++E+ FWR  
+Sbjct  58  DFYEYRNN-IHSIINYFWKDNKVCIIEIDFWRSR  90
+
+
+>sp|Q8QL51|Y102_SIRV1 Uncharacterized protein 102 OS=Sulfolobus 
+islandicus rod-shaped virus 1 OX=157898 GN=102 PE=4 SV=1
+Length=102
+
+ Score = 43.1 bits (100),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 48/95 (51%), Gaps = 0/95 (0%)
+
+Query  1   MNYKELEKMLDVIFENSEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETF  60
+           M +++L+ +L V FEN E+K  +  F    E ++     L+   D   K+  +N I E F
+Sbjct  1   MEFEDLDVVLYVFFENPEMKSFEFEFKQLFETTESGLRYLIGVPDSRNKIKNNNEIIEEF  60
+
+Query  61  EWWEFENQYLEFELDYYVKDEKIFVLEMHFWRKIR  95
+            +++ ++   +    Y     +I++ +++ W++ R
+Sbjct  61  IYYQNDDIVTKLIFYYTKGTNRIYIRKIYGWKEKR  95
+
+
+>sp|Q914L6|Y014_SIFVH Uncharacterized protein 14 OS=Sulfolobus 
+islandicus filamentous virus (isolate Iceland/Hveragerdi) OX=654908 
+GN=SIFV0014 PE=1 SV=1
+Length=112
+
+ Score = 38.0 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/80 (21%), Positives = 42/80 (53%), Gaps = 0/80 (0%)
+
+Query  17   SEIKEIDLFFDPEVEISKQEFEDLVKNADPLQKVVGDNYITETFEWWEFENQYLEFELDY  76
+             ++ E  + F   ++++++E+ +L+ N D    V  +    + + + E ++   + E  Y
+Sbjct  33   EKVSEFKIKFKDPLKVTEEEYRELLGNYDSSNSVSSNGITIDQYTYDEDDDIMYKLEFTY  92
+
+Query  77   YVKDEKIFVLEMHFWRKIRK  96
+              +D KI++ E+  WR+ +K
+Sbjct  93   RKEDNKIYIYEVQGWREKKK  112
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.141    0.345    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0431    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

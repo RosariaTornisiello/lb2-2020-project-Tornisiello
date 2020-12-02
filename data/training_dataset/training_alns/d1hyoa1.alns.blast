@@ -1,0 +1,377 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1hyoa1
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P35505|FAAA_MOUSE Fumarylacetoacetase OS=Mus musculus OX=10090...  243     8e-80
+sp|P25093|FAAA_RAT Fumarylacetoacetase OS=Rattus norvegicus OX=10...  238     1e-77
+sp|A5PKH3|FAAA_BOVIN Fumarylacetoacetase OS=Bos taurus OX=9913 GN...  214     2e-68
+sp|P16930|FAAA_HUMAN Fumarylacetoacetase OS=Homo sapiens OX=9606 ...  207     5e-66
+sp|Q1ZXQ1|FAAA_DICDI Fumarylacetoacetase OS=Dictyostelium discoid...  120     2e-32
+sp|Q8RW90|FAH_ARATH Fumarylacetoacetase OS=Arabidopsis thaliana O...  110     8e-29
+sp|Q6H7M1|FAH_ORYSJ Fumarylacetoacetase OS=Oryza sativa subsp. ja...  106     3e-27
+sp|Q00770|FAAA_EMENI Fumarylacetoacetase OS=Emericella nidulans (...  62.0    3e-11
+
+
+>sp|P35505|FAAA_MOUSE Fumarylacetoacetase OS=Mus musculus OX=10090 
+GN=Fah PE=1 SV=2
+Length=419
+
+ Score = 243 bits (620),  Expect = 8e-80, Method: Compositional matrix adjust.
+ Identities = 118/118 (100%), Positives = 118/118 (100%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH
+Sbjct  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP
+Sbjct  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+
+
+>sp|P25093|FAAA_RAT Fumarylacetoacetase OS=Rattus norvegicus OX=10116 
+GN=Fah PE=1 SV=1
+Length=419
+
+ Score = 238 bits (606),  Expect = 1e-77, Method: Compositional matrix adjust.
+ Identities = 115/118 (97%), Positives = 117/118 (99%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGP LSKHQH
+Sbjct  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPVLSKHQH  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VFDETTLN+FMGLGQAAWKEARASLQNLLSASQA+LRDDKELRQRAFTSQASATMHLP
+Sbjct  61   VFDETTLNSFMGLGQAAWKEARASLQNLLSASQAQLRDDKELRQRAFTSQASATMHLP  118
+
+
+>sp|A5PKH3|FAAA_BOVIN Fumarylacetoacetase OS=Bos taurus OX=9913 
+GN=FAH PE=2 SV=1
+Length=419
+
+ Score = 214 bits (544),  Expect = 2e-68, Method: Compositional matrix adjust.
+ Identities = 103/118 (87%), Positives = 110/118 (93%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSF+PVAEDSDFPI NLPYGVFST+ NP+PRIGVAIGDQILDLSVIKHLFTGP LS HQ 
+Sbjct  1    MSFVPVAEDSDFPIHNLPYGVFSTRGNPRPRIGVAIGDQILDLSVIKHLFTGPILSGHQD  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VF++ TLN+FMGLGQAAWKEARA LQNLLSASQARLRDD ELRQRAFTSQASATM+LP
+Sbjct  61   VFNKPTLNSFMGLGQAAWKEARAFLQNLLSASQARLRDDVELRQRAFTSQASATMYLP  118
+
+
+>sp|P16930|FAAA_HUMAN Fumarylacetoacetase OS=Homo sapiens OX=9606 
+GN=FAH PE=1 SV=2
+Length=419
+
+ Score = 207 bits (528),  Expect = 5e-66, Method: Compositional matrix adjust.
+ Identities = 99/118 (84%), Positives = 107/118 (91%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPI NLPYGVFST+ +P+PRIGVAIGDQILDLS+IKHLFTGP LSKHQ 
+Sbjct  1    MSFIPVAEDSDFPIHNLPYGVFSTRGDPRPRIGVAIGDQILDLSIIKHLFTGPVLSKHQD  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VF++ TLN+FMGLGQAAWKEAR  LQNLLS SQARLRDD ELR+ AF SQASATMHLP
+Sbjct  61   VFNQPTLNSFMGLGQAAWKEARVFLQNLLSVSQARLRDDTELRKCAFISQASATMHLP  118
+
+
+>sp|Q1ZXQ1|FAAA_DICDI Fumarylacetoacetase OS=Dictyostelium discoideum 
+OX=44689 GN=fah PE=3 SV=1
+Length=427
+
+ Score = 120 bits (302),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 62/117 (53%), Positives = 78/117 (67%), Gaps = 0/117 (0%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQHV  61
+            SFI V+EDS FPIQNLPYGVF    N + RIGVAIGD + DLSV+  L       K   V
+Sbjct  6    SFIEVSEDSHFPIQNLPYGVFKPTLNDQARIGVAIGDFVCDLSVLADLKLFDGKLKDTKV  65
+
+Query  62   FDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            F +  LN+FM LG+  W EAR ++QNLLS+  + +RD+KE R++ F S +S TM LP
+Sbjct  66   FHQENLNSFMSLGKELWSEARKTIQNLLSSETSTIRDNKEYREKIFHSISSVTMLLP  122
+
+
+>sp|Q8RW90|FAH_ARATH Fumarylacetoacetase OS=Arabidopsis thaliana 
+OX=3702 GN=FAH PE=1 SV=1
+Length=421
+
+ Score = 110 bits (276),  Expect = 8e-29, Method: Compositional matrix adjust.
+ Identities = 59/119 (50%), Positives = 77/119 (65%), Gaps = 3/119 (3%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKH--LFTGPALSKHQ  59
+            SFI V  DS FPIQNLPYGVF  +SN  PR  VAIGD +LDLS I    LF G  L K  
+Sbjct  6    SFIDVGSDSHFPIQNLPYGVFKPESNSTPRPAVAIGDLVLDLSAISEAGLFDGLIL-KDA  64
+
+Query  60   HVFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+              F +  LN F+ +G+ AWKEAR++LQ +LS+++  LRD+  LR+++F   +   M +P
+Sbjct  65   DCFLQPNLNKFLAMGRPAWKEARSTLQRILSSNEPILRDNDVLRRKSFHQMSKVEMIVP  123
+
+
+>sp|Q6H7M1|FAH_ORYSJ Fumarylacetoacetase OS=Oryza sativa subsp. 
+japonica OX=39947 GN=FAH PE=2 SV=1
+Length=429
+
+ Score = 106 bits (265),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 58/122 (48%), Positives = 78/122 (64%), Gaps = 6/122 (5%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKP---RIGVAIGDQILDLSVIKH--LFTGPALS  56
+            SF+ VA  S FPIQNLP+GVF  + +P+P   R  VAIGD  LDL+ +    LF GP LS
+Sbjct  11   SFVEVAPGSHFPIQNLPFGVFRRRGSPEPEPPRPAVAIGDFALDLAAVSDAGLFHGPLLS  70
+
+Query  57   KHQHVFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMH  116
+                 F + TLN F+G+G+ AWKEARA+LQ +LSA +  LRD++ L+++     +   M 
+Sbjct  71   ASP-CFRQETLNMFLGMGRPAWKEARATLQKILSADEPVLRDNEALKKKCLVPMSDTEML  129
+
+Query  117  LP  118
+            LP
+Sbjct  130  LP  131
+
+
+>sp|Q00770|FAAA_EMENI Fumarylacetoacetase OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) 
+OX=227321 GN=fahA PE=1 SV=3
+Length=431
+
+ Score = 62.0 bits (149),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 39/125 (31%), Positives = 65/125 (52%), Gaps = 10/125 (8%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTG-----PALS  56
+            S++ + ++S F + N+P+G+ S+         +AIGD  LDLS  K   +G     P + 
+Sbjct  3    SWLQIPKNSPFSLANIPFGIISSSKLSSRVPAIAIGDYALDLS--KFASSGGFSQLPVIQ  60
+
+Query  57   KHQHVFDETTLNNFMGLGQAAWKEARASLQNLLSASQA---RLRDDKELRQRAFTSQASA  113
+             H +VF+++TLN F  LG+   ++ R  +Q + S        LRD+  L++ A    +  
+Sbjct  61   PHLNVFNQSTLNAFAALGRPVHRQVREYIQKVFSTETPFPQILRDNAALQKEALLPLSEV  120
+
+Query  114  TMHLP  118
+            T HLP
+Sbjct  121  TNHLP  125
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.132    0.379    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+Results from round 2
+
+
+Query= d1hyoa1
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A5PKH3|FAAA_BOVIN Fumarylacetoacetase OS=Bos taurus OX=9913 GN...  202     9e-64
+sp|P16930|FAAA_HUMAN Fumarylacetoacetase OS=Homo sapiens OX=9606 ...  202     1e-63
+sp|P25093|FAAA_RAT Fumarylacetoacetase OS=Rattus norvegicus OX=10...  200     4e-63
+sp|P35505|FAAA_MOUSE Fumarylacetoacetase OS=Mus musculus OX=10090...  200     6e-63
+sp|Q1ZXQ1|FAAA_DICDI Fumarylacetoacetase OS=Dictyostelium discoid...  177     4e-54
+sp|Q8RW90|FAH_ARATH Fumarylacetoacetase OS=Arabidopsis thaliana O...  174     6e-53
+sp|Q6H7M1|FAH_ORYSJ Fumarylacetoacetase OS=Oryza sativa subsp. ja...  171     6e-52
+sp|Q00770|FAAA_EMENI Fumarylacetoacetase OS=Emericella nidulans (...  147     9e-43
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|A5PKH3|FAAA_BOVIN Fumarylacetoacetase OS=Bos taurus OX=9913 
+GN=FAH PE=2 SV=1
+Length=419
+
+ Score = 202 bits (513),  Expect = 9e-64, Method: Composition-based stats.
+ Identities = 103/118 (87%), Positives = 110/118 (93%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSF+PVAEDSDFPI NLPYGVFST+ NP+PRIGVAIGDQILDLSVIKHLFTGP LS HQ 
+Sbjct  1    MSFVPVAEDSDFPIHNLPYGVFSTRGNPRPRIGVAIGDQILDLSVIKHLFTGPILSGHQD  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VF++ TLN+FMGLGQAAWKEARA LQNLLSASQARLRDD ELRQRAFTSQASATM+LP
+Sbjct  61   VFNKPTLNSFMGLGQAAWKEARAFLQNLLSASQARLRDDVELRQRAFTSQASATMYLP  118
+
+
+>sp|P16930|FAAA_HUMAN Fumarylacetoacetase OS=Homo sapiens OX=9606 
+GN=FAH PE=1 SV=2
+Length=419
+
+ Score = 202 bits (513),  Expect = 1e-63, Method: Composition-based stats.
+ Identities = 99/118 (84%), Positives = 107/118 (91%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPI NLPYGVFST+ +P+PRIGVAIGDQILDLS+IKHLFTGP LSKHQ 
+Sbjct  1    MSFIPVAEDSDFPIHNLPYGVFSTRGDPRPRIGVAIGDQILDLSIIKHLFTGPVLSKHQD  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VF++ TLN+FMGLGQAAWKEAR  LQNLLS SQARLRDD ELR+ AF SQASATMHLP
+Sbjct  61   VFNQPTLNSFMGLGQAAWKEARVFLQNLLSVSQARLRDDTELRKCAFISQASATMHLP  118
+
+
+>sp|P25093|FAAA_RAT Fumarylacetoacetase OS=Rattus norvegicus OX=10116 
+GN=Fah PE=1 SV=1
+Length=419
+
+ Score = 200 bits (508),  Expect = 4e-63, Method: Composition-based stats.
+ Identities = 115/118 (97%), Positives = 117/118 (99%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGP LSKHQH
+Sbjct  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPVLSKHQH  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VFDETTLN+FMGLGQAAWKEARASLQNLLSASQA+LRDDKELRQRAFTSQASATMHLP
+Sbjct  61   VFDETTLNSFMGLGQAAWKEARASLQNLLSASQAQLRDDKELRQRAFTSQASATMHLP  118
+
+
+>sp|P35505|FAAA_MOUSE Fumarylacetoacetase OS=Mus musculus OX=10090 
+GN=Fah PE=1 SV=2
+Length=419
+
+ Score = 200 bits (508),  Expect = 6e-63, Method: Composition-based stats.
+ Identities = 118/118 (100%), Positives = 118/118 (100%), Gaps = 0/118 (0%)
+
+Query  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+            MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH
+Sbjct  1    MSFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQH  60
+
+Query  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP
+Sbjct  61   VFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+
+
+>sp|Q1ZXQ1|FAAA_DICDI Fumarylacetoacetase OS=Dictyostelium discoideum 
+OX=44689 GN=fah PE=3 SV=1
+Length=427
+
+ Score = 177 bits (449),  Expect = 4e-54, Method: Composition-based stats.
+ Identities = 62/117 (53%), Positives = 78/117 (67%), Gaps = 0/117 (0%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTGPALSKHQHV  61
+            SFI V+EDS FPIQNLPYGVF    N + RIGVAIGD + DLSV+  L       K   V
+Sbjct  6    SFIEVSEDSHFPIQNLPYGVFKPTLNDQARIGVAIGDFVCDLSVLADLKLFDGKLKDTKV  65
+
+Query  62   FDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+            F +  LN+FM LG+  W EAR ++QNLLS+  + +RD+KE R++ F S +S TM LP
+Sbjct  66   FHQENLNSFMSLGKELWSEARKTIQNLLSSETSTIRDNKEYREKIFHSISSVTMLLP  122
+
+
+>sp|Q8RW90|FAH_ARATH Fumarylacetoacetase OS=Arabidopsis thaliana 
+OX=3702 GN=FAH PE=1 SV=1
+Length=421
+
+ Score = 174 bits (440),  Expect = 6e-53, Method: Composition-based stats.
+ Identities = 59/119 (50%), Positives = 77/119 (65%), Gaps = 3/119 (3%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKH--LFTGPALSKHQ  59
+            SFI V  DS FPIQNLPYGVF  +SN  PR  VAIGD +LDLS I    LF G  L K  
+Sbjct  6    SFIDVGSDSHFPIQNLPYGVFKPESNSTPRPAVAIGDLVLDLSAISEAGLFDGLIL-KDA  64
+
+Query  60   HVFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMHLP  118
+              F +  LN F+ +G+ AWKEAR++LQ +LS+++  LRD+  LR+++F   +   M +P
+Sbjct  65   DCFLQPNLNKFLAMGRPAWKEARSTLQRILSSNEPILRDNDVLRRKSFHQMSKVEMIVP  123
+
+
+>sp|Q6H7M1|FAH_ORYSJ Fumarylacetoacetase OS=Oryza sativa subsp. 
+japonica OX=39947 GN=FAH PE=2 SV=1
+Length=429
+
+ Score = 171 bits (434),  Expect = 6e-52, Method: Composition-based stats.
+ Identities = 58/122 (48%), Positives = 78/122 (64%), Gaps = 6/122 (5%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKP---RIGVAIGDQILDLSVIKH--LFTGPALS  56
+            SF+ VA  S FPIQNLP+GVF  + +P+P   R  VAIGD  LDL+ +    LF GP LS
+Sbjct  11   SFVEVAPGSHFPIQNLPFGVFRRRGSPEPEPPRPAVAIGDFALDLAAVSDAGLFHGPLLS  70
+
+Query  57   KHQHVFDETTLNNFMGLGQAAWKEARASLQNLLSASQARLRDDKELRQRAFTSQASATMH  116
+                 F + TLN F+G+G+ AWKEARA+LQ +LSA +  LRD++ L+++     +   M 
+Sbjct  71   ASP-CFRQETLNMFLGMGRPAWKEARATLQKILSADEPVLRDNEALKKKCLVPMSDTEML  129
+
+Query  117  LP  118
+            LP
+Sbjct  130  LP  131
+
+
+>sp|Q00770|FAAA_EMENI Fumarylacetoacetase OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) 
+OX=227321 GN=fahA PE=1 SV=3
+Length=431
+
+ Score = 147 bits (372),  Expect = 9e-43, Method: Composition-based stats.
+ Identities = 39/125 (31%), Positives = 65/125 (52%), Gaps = 10/125 (8%)
+
+Query  2    SFIPVAEDSDFPIQNLPYGVFSTQSNPKPRIGVAIGDQILDLSVIKHLFTG-----PALS  56
+            S++ + ++S F + N+P+G+ S+         +AIGD  LDLS  K   +G     P + 
+Sbjct  3    SWLQIPKNSPFSLANIPFGIISSSKLSSRVPAIAIGDYALDLS--KFASSGGFSQLPVIQ  60
+
+Query  57   KHQHVFDETTLNNFMGLGQAAWKEARASLQNLLSASQA---RLRDDKELRQRAFTSQASA  113
+             H +VF+++TLN F  LG+   ++ R  +Q + S        LRD+  L++ A    +  
+Sbjct  61   PHLNVFNQSTLNAFAALGRPVHRQVREYIQKVFSTETPFPQILRDNAALQKEALLPLSEV  120
+
+Query  114  TMHLP  118
+            T HLP
+Sbjct  121  TNHLP  125
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0412    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

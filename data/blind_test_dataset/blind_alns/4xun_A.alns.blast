@@ -1,0 +1,1097 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4xun_A
+
+Length=161
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus ba...  332     5e-107
+sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapo...  70.9    1e-13 
+sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga marit...  70.1    2e-13 
+sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobact...  68.9    5e-13 
+sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium the...  43.1    4e-04 
+sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus s...  40.0    0.004 
+sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus flav...  39.3    0.008 
+
+
+>sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus 
+barcinonensis OX=198119 GN=xynC PE=1 SV=1
+Length=1086
+
+ Score = 332 bits (850),  Expect = 5e-107, Method: Compositional matrix adjust.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+            ALFKA FEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG
+Sbjct  199  ALFKAYFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  258
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+            STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP
+Sbjct  259  STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  318
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT
+Sbjct  319  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  359
+
+
+ Score = 45.4 bits (106),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 27/92 (29%), Positives = 47/92 (51%), Gaps = 1/92 (1%)
+
+Query  2    LFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGS  61
+            L    FE+G    W ARG  K++V +   +   +SL+T+ R+E ++GP + +   + K  
+Sbjct  38   LLSHSFEEGTTQGWTARGGVKVDVTAEQAYQGKQSLQTTGRTEAWNGPSLSLTDVVHKNE  97
+
+Query  62   TVHISFWAMYDEGPATQVINGSLE-KEFNRDT  92
+             V IS +     G A   +  ++E ++ N DT
+Sbjct  98   VVEISGYVKLVAGSAPPDLKFTVERRDRNGDT  129
+
+
+>sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapolitana 
+OX=2337 GN=xynA PE=1 SV=1
+Length=1055
+
+ Score = 70.9 bits (172),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 44/162 (27%), Positives = 85/162 (52%), Gaps = 14/162 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTE-KLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQK  59
+             +++  FE G IG+W+ RG++ K+ +   + H+  +SL  S+R + +HG  + +   L+ 
+Sbjct  200  VVYETSFEKG-IGDWQPRGSDVKISISPKVAHSGKKSLFVSNRQKGWHGAQISLKGILKT  258
+
+Query  60   GSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIV  119
+            G T     W +Y E    Q I  +++++++ D++  +Y    + T+  GQW ++     +
+Sbjct  259  GKTYAFEAW-VYQESGQDQTIIMTMQRKYSSDSST-KYEWIKAATVPSGQWVQLSGTYTI  316
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            PA  T +  L +Y E         ++  T+ FYVDDV++  T
+Sbjct  317  PAGVT-VEDLTLYFE---------SQNPTLEFYVDDVKVVDT  348
+
+
+>sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga maritima 
+(strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) OX=243274 
+GN=xynA PE=1 SV=1
+Length=1059
+
+ Score = 70.1 bits (170),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 45/161 (28%), Positives = 81/161 (50%), Gaps = 13/161 (8%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +++  FE+G +G+W+ RG   +E  S + H+   SL  S+R + + G  + +   L+ G
+Sbjct  205  VIYETSFENG-VGDWQPRGDVNIEASSEVAHSGKSSLFISNRQKGWQGAQINLKGILKTG  263
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+             T     W   + G   Q I  +++++++ D A+ +Y    S T+  GQW ++     +P
+Sbjct  264  KTYAFEAWVYQNSG-QDQTIIMTMQRKYSSD-ASTQYEWIKSATVPSGQWVQLSGTYTIP  321
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            A  T +  L +Y E         ++  T+ FYVDDV+I  T
+Sbjct  322  AGVT-VEDLTLYFE---------SQNPTLEFYVDDVKIVDT  352
+
+
+>sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobacterium 
+saccharolyticum OX=28896 GN=xynA PE=1 SV=1
+Length=1157
+
+ Score = 68.9 bits (167),  Expect = 5e-13, Method: Compositional matrix adjust.
+ Identities = 39/152 (26%), Positives = 77/152 (51%), Gaps = 14/152 (9%)
+
+Query  7    FEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVHIS  66
+            FE+GN   W   G+  ++ V G+ H+ + SL T+ R+  ++GP  ++   +  G   ++ 
+Sbjct  203  FENGNTSGWIGTGSSVVKAVYGVAHSGDYSLLTTGRTANWNGPSYDLTGKIVPGQQYNVD  262
+
+Query  67   FWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVPAESTGI  126
+            FW  +  G  T+ I  +++   ++D   ++   FA+  +NKG+W +I+    +P      
+Sbjct  263  FWVKFVNGNDTEQIKATVKATSDKDNY-IQVNDFAN--VNKGEWTEIKGSFTLPVAD--Y  317
+
+Query  127  SGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+            SG+ +Y E         ++  T+ FY+DD  +
+Sbjct  318  SGISIYVE---------SQNPTLEFYIDDFSV  340
+
+
+ Score = 43.5 bits (101),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 40/159 (25%), Positives = 66/159 (42%), Gaps = 19/159 (12%)
+
+Query  5    ADFEDGNIGNWRARGTEKLEVVS--GIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGST  62
+             DFE G I  W  +G   L V +   IG     S+K + R++TY GP    L  +QKG +
+Sbjct  44   GDFESGTIDGWIKQGNPTLAVTTEQAIGQ---YSMKVTGRTQTYEGPAYSFLGKMQKGES  100
+
+Query  63   VHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+              +S       G   +  +I  ++ +E   D       +     +++  W  +     + 
+Sbjct  101  YSVSLKVRLVSGQNSSNPLITVTMFRE--DDNGKHYDTIVWQKQVSEDSWTTVSGTYTLD  158
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+               T +  L MY E+P           T+ +Y+DDV +T
+Sbjct  159  YIGT-LKTLYMYVESP---------DPTLEYYIDDVVVT  187
+
+
+>sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium 
+thermocellum OX=1515 GN=xynX PE=3 SV=1
+Length=1087
+
+ Score = 43.1 bits (100),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 40/160 (25%), Positives = 65/160 (41%), Gaps = 21/160 (13%)
+
+Query  5    ADFEDGNIGNWRARGTEKLEVVS--GIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGST  62
+             DFE G I  W  +G   L   +   IG     S+K + R++TY GP    L  +QKG +
+Sbjct  43   GDFESGTIDGWIKQGNPTLAATTEEAIGQ---YSMKVAGRTQTYEGPAYSFLGKMQKGQS  99
+
+Query  63   VHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFA-STTLNKGQWKKIEADIIV  119
+             ++S       G   +  +I  ++   F  D     Y        +++  W  +     +
+Sbjct  100  YNVSLKVRLVSGQNSSNPLITVTM---FREDDNGKHYDTIVWQKQVSEDSWTTVNGTYTL  156
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+                T +  L MY E+P           T+ +Y+DDV +T
+Sbjct  157  DYTGT-LKTLYMYVESP---------DPTLEYYIDDVVVT  186
+
+
+>sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus 
+sp. (strain JDR-2) OX=324057 GN=xynA1 PE=1 SV=1
+Length=1462
+
+ Score = 40.0 bits (92),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 43/160 (27%), Positives = 71/160 (44%), Gaps = 20/160 (13%)
+
+Query  7    FEDGNIGNWRAR-GTEKLEVVSGIGHNSN--RSLKTSSRSETYHGPLVEVLPYLQKGSTV  63
+            FED   G +  R GTE L V +   H ++   SLK   R+ ++HGP + V  Y+ KG   
+Sbjct  362  FEDQTAGGFTGRAGTETLTVTNESNHTADGSYSLKVEGRTTSWHGPSLRVEKYVDKGYEY  421
+
+Query  64   HISFWA-MYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQ-WKKIEADIIVPA  121
+             ++ W  +     +T++    L  +   D  +  Y   AS T+     W +++ +     
+Sbjct  422  KVTAWVKLLSPETSTKL---ELASQVG-DGGSANYPSLASKTITAADGWVQLQGNYRY--  475
+
+Query  122  ESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+             S G   L +Y      QSS  T +    +Y+DD+   +T
+Sbjct  476  NSVGGEYLTIYV-----QSSNATAS----YYIDDISFEST  506
+
+
+>sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus 
+flavefaciens OX=1265 GN=xynD PE=3 SV=2
+Length=802
+
+ Score = 39.3 bits (90),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 34/136 (25%), Positives = 60/136 (44%), Gaps = 11/136 (8%)
+
+Query  3    FKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPY-LQKGS  61
+             K +FE G  GNW  RG+ K++  S  G++  + +  S R +T++G  + +     + G 
+Sbjct  262  LKENFESGE-GNWSGRGSAKVKSSS--GYDGTKGIFVSGREDTWNGASINLDELTFKAGE  318
+
+Query  62   TVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKI-EADIIVP  120
+            T  +    M D       ++  L  ++        Y    + T  KGQW  +  +   +P
+Sbjct  319  TYSLGTAVMQD---FESSVDFKLTLQYTDADGKENYDEVKTVTAAKGQWVDLSNSSYTIP  375
+
+Query  121  AESTGISGLRMYAETP  136
+            +   G +GL +Y E P
+Sbjct  376  S---GATGLVLYVEVP  388
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.129    0.377    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7525269130
+Results from round 2
+
+
+Query= 4xun_A
+
+Length=161
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus ba...  247     7e-76
+sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga marit...  200     4e-59
+sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapo...  195     3e-57
+sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobact...  174     1e-49
+sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium the...  159     2e-44
+
+Sequences not found previously or not previously below threshold:
+
+sp|P51584|XYNY_HUNTH Endo-1,4-beta-xylanase Y OS=Hungateiclostrid...  83.8    3e-18
+sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus s...  81.5    2e-17
+sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus flav...  75.3    3e-15
+sp|A0A1P8AWH8|XYN1_ARATH Endo-1,4-beta-xylanase 1 OS=Arabidopsis ...  59.5    1e-09
+sp|O80596|XYN2_ARATH Endo-1,4-beta-xylanase 2 OS=Arabidopsis thal...  56.4    1e-08
+
+
+>sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus 
+barcinonensis OX=198119 GN=xynC PE=1 SV=1
+Length=1086
+
+ Score = 247 bits (631),  Expect = 7e-76, Method: Composition-based stats.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+            ALFKA FEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG
+Sbjct  199  ALFKAYFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  258
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+            STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP
+Sbjct  259  STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  318
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT
+Sbjct  319  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  359
+
+
+ Score = 91.1 bits (224),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 35/159 (22%), Positives = 69/159 (43%), Gaps = 16/159 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             L    FE+G    W ARG  K++V +   +   +SL+T+ R+E ++GP + +   + K 
+Sbjct  37   ILLSHSFEEGTTQGWTARGGVKVDVTAEQAYQGKQSLQTTGRTEAWNGPSLSLTDVVHKN  96
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMF-ASTTLNKGQWKKIEADIIV  119
+              V IS +     G A   +  ++E+       + +Y    A+  +   +W K++     
+Sbjct  97   EVVEISGYVKLVAGSAPPDLKFTVERRDR--NGDTQYDQVNAAEQVTDQKWVKLQGQYSY  154
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+                   S L +Y E+   +++         + +D+ QI
+Sbjct  155  EQG----SSLLLYLESTDAKAA---------YLLDEFQI  180
+
+
+>sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga maritima 
+(strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) OX=243274 
+GN=xynA PE=1 SV=1
+Length=1059
+
+ Score = 200 bits (509),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 45/161 (28%), Positives = 81/161 (50%), Gaps = 13/161 (8%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +++  FE+G +G+W+ RG   +E  S + H+   SL  S+R + + G  + +   L+ G
+Sbjct  205  VIYETSFENG-VGDWQPRGDVNIEASSEVAHSGKSSLFISNRQKGWQGAQINLKGILKTG  263
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+             T     W   + G   Q I  +++++++ D A+ +Y    S T+  GQW ++     +P
+Sbjct  264  KTYAFEAWVYQNSG-QDQTIIMTMQRKYSSD-ASTQYEWIKSATVPSGQWVQLSGTYTIP  321
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            A  T +  L +Y E         ++  T+ FYVDDV+I  T
+Sbjct  322  AGVT-VEDLTLYFE---------SQNPTLEFYVDDVKIVDT  352
+
+
+ Score = 73.0 bits (177),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 30/156 (19%), Positives = 51/156 (33%), Gaps = 15/156 (10%)
+
+Query  6    DFEDGNIGNWRARG-TEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVH  64
+             FE G        G    L     +  +   SLK  +R+  + G  +++   ++ G+   
+Sbjct  56   SFE-GTTEGVVPFGKDVVLTASQDVAADGEYSLKVENRTSPWDGVEIDLTGKVKSGADYL  114
+
+Query  65   ISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVPAEST  124
+            +SF   Y    A Q+ N         D     Y +     +    WK+I        E T
+Sbjct  115  LSFQV-YQSSDAPQLFNVVAR---TEDEKGERYDVILDKVVVSDHWKEILVPFSPTFEGT  170
+
+Query  125  GISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITA  160
+                        +      ++     FY+D VQ+ A
+Sbjct  171  PAK---------YSLIIVASKNTNFNFYLDKVQVLA  197
+
+
+>sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapolitana 
+OX=2337 GN=xynA PE=1 SV=1
+Length=1055
+
+ Score = 195 bits (496),  Expect = 3e-57, Method: Composition-based stats.
+ Identities = 44/162 (27%), Positives = 84/162 (52%), Gaps = 14/162 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTE-KLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQK  59
+             +++  FE G IG+W+ RG++ K+ +   + H+  +SL  S+R + +HG  + +   L+ 
+Sbjct  200  VVYETSFEKG-IGDWQPRGSDVKISISPKVAHSGKKSLFVSNRQKGWHGAQISLKGILKT  258
+
+Query  60   GSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIV  119
+            G T     W  Y E    Q I  +++++++ D++  +Y    + T+  GQW ++     +
+Sbjct  259  GKTYAFEAWV-YQESGQDQTIIMTMQRKYSSDSST-KYEWIKAATVPSGQWVQLSGTYTI  316
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            PA  T +  L +Y E         ++  T+ FYVDDV++  T
+Sbjct  317  PAGVT-VEDLTLYFE---------SQNPTLEFYVDDVKVVDT  348
+
+
+ Score = 69.9 bits (169),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 30/154 (19%), Positives = 52/154 (34%), Gaps = 15/154 (10%)
+
+Query  6    DFEDGNIGNWRARG-TEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVH  64
+             FE GN       G    +     +  +   SLK  +R+  + G  +++   +  G+   
+Sbjct  51   SFE-GNTDGASPFGKDVVVTASQDVAADGEYSLKVENRTSVWDGVEIDLTGKVNTGTDYL  109
+
+Query  65   ISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVPAEST  124
+            +SF         +  +   L +    D     Y + A   +    WK+I        E T
+Sbjct  110  LSFHVYQTS--DSPQLFSVLART--EDEKGERYKILADKVVVPNYWKEILVPFSPTFEGT  165
+
+Query  125  GISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+                  +   +P K            FYVD+VQ+
+Sbjct  166  PAK-FSLIITSPKKTDFV--------FYVDNVQV  190
+
+
+>sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobacterium 
+saccharolyticum OX=28896 GN=xynA PE=1 SV=1
+Length=1157
+
+ Score = 174 bits (440),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 39/159 (25%), Positives = 78/159 (49%), Gaps = 14/159 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +    FE+GN   W   G+  ++ V G+ H+ + SL T+ R+  ++GP  ++   +  G
+Sbjct  197  VIANETFENGNTSGWIGTGSSVVKAVYGVAHSGDYSLLTTGRTANWNGPSYDLTGKIVPG  256
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+               ++ FW  +  G  T+ I  +++   ++D   ++   FA+  +NKG+W +I+    +P
+Sbjct  257  QQYNVDFWVKFVNGNDTEQIKATVKATSDKDNY-IQVNDFAN--VNKGEWTEIKGSFTLP  313
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+                  SG+ +Y E         ++  T+ FY+DD  + 
+Sbjct  314  VAD--YSGISIYVE---------SQNPTLEFYIDDFSVI  341
+
+
+ Score = 153 bits (385),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 39/161 (24%), Positives = 64/161 (40%), Gaps = 17/161 (11%)
+
+Query  2    LFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGS  61
+            +   DFE G I  W  +G   L V +        S+K + R++TY GP    L  +QKG 
+Sbjct  41   VSNGDFESGTIDGWIKQGNPTLAVTTEQA-IGQYSMKVTGRTQTYEGPAYSFLGKMQKGE  99
+
+Query  62   TVHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFA-STTLNKGQWKKIEADII  118
+            +  +S       G   +  +I  ++   F  D     Y        +++  W  +     
+Sbjct  100  SYSVSLKVRLVSGQNSSNPLITVTM---FREDDNGKHYDTIVWQKQVSEDSWTTVSGTYT  156
+
+Query  119  VPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+            +    T +  L MY E+P           T+ +Y+DDV +T
+Sbjct  157  LDYIGT-LKTLYMYVESP---------DPTLEYYIDDVVVT  187
+
+
+>sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium 
+thermocellum OX=1515 GN=xynX PE=3 SV=1
+Length=1087
+
+ Score = 159 bits (401),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 38/161 (24%), Positives = 64/161 (40%), Gaps = 17/161 (11%)
+
+Query  2    LFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGS  61
+            +   DFE G I  W  +G   L   +        S+K + R++TY GP    L  +QKG 
+Sbjct  40   VSNGDFESGTIDGWIKQGNPTLAATTEEA-IGQYSMKVAGRTQTYEGPAYSFLGKMQKGQ  98
+
+Query  62   TVHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFA-STTLNKGQWKKIEADII  118
+            + ++S       G   +  +I  ++   F  D     Y        +++  W  +     
+Sbjct  99   SYNVSLKVRLVSGQNSSNPLITVTM---FREDDNGKHYDTIVWQKQVSEDSWTTVNGTYT  155
+
+Query  119  VPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+            +    T +  L MY E+P           T+ +Y+DDV +T
+Sbjct  156  LDYTGT-LKTLYMYVESP---------DPTLEYYIDDVVVT  186
+
+
+>sp|P51584|XYNY_HUNTH Endo-1,4-beta-xylanase Y OS=Hungateiclostridium 
+thermocellum OX=1515 GN=xynY PE=1 SV=1
+Length=1077
+
+ Score = 83.8 bits (205),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 35/155 (23%), Positives = 65/155 (42%), Gaps = 17/155 (11%)
+
+Query  3    FKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPY-LQKGS  61
+            +   FE G++G W ARG  ++ +     +  + SL   +R+  ++G    + P     G+
+Sbjct  569  YHDTFE-GSVGQWTARGPAEVLLSGRTAYKGSESLLVRNRTAAWNGAQRALNPRTFVPGN  627
+
+Query  62   TVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKI-EADIIVP  120
+            T   S  A + EG ++      L+  +   +    Y      T+   QW  +      +P
+Sbjct  628  TYCFSVVASFIEGASSTTFCMKLQ--YVDGSGTQRYDTIDMKTVGPNQWVHLYNPQYRIP  685
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDD  155
+            +++T    + +Y ET           DTI FY+D+
+Sbjct  686  SDAT---DMYVYVETA---------DDTINFYIDE  708
+
+
+>sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus 
+sp. (strain JDR-2) OX=324057 GN=xynA1 PE=1 SV=1
+Length=1462
+
+ Score = 81.5 bits (199),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 38/159 (24%), Positives = 65/159 (41%), Gaps = 18/159 (11%)
+
+Query  7    FEDGNIGNWRAR-GTEKLEVVSGIGHN--SNRSLKTSSRSETYHGPLVEVLPYLQKGSTV  63
+            FED   G +  R GTE L V +   H    + SLK   R+ ++HGP + V  Y+ KG   
+Sbjct  362  FEDQTAGGFTGRAGTETLTVTNESNHTADGSYSLKVEGRTTSWHGPSLRVEKYVDKGYEY  421
+
+Query  64   HISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLN-KGQWKKIEADIIVPAE  122
+             ++ W        +  +  + +     D  +  Y   AS T+     W +++ +      
+Sbjct  422  KVTAWVKLLSPETSTKLELASQVG---DGGSANYPSLASKTITAADGWVQLQGNYR--YN  476
+
+Query  123  STGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            S G   L +Y +         +   T  +Y+DD+   +T
+Sbjct  477  SVGGEYLTIYVQ---------SSNATASYYIDDISFEST  506
+
+
+ Score = 43.0 bits (99),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 26/161 (16%), Positives = 52/161 (32%), Gaps = 18/161 (11%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI--GHNSNRSLKTSSRSETYHGPLVEVLPY-L  57
+             ++  DF        ++ G    +V   +  G+N   +L  S+R+ T+     +     L
+Sbjct  36   IVYHEDFAIDKGKAIQSGGASLTQVTGKVFDGNNDGSALYVSNRANTWDAADFKFADIGL  95
+
+Query  58   QKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADI  117
+            Q G T  ++     D+         +  +  + +     Y   AS     G    +  + 
+Sbjct  96   QNGKTYTVTVKGYVDQDATVPSGAQAFLQAVDSNN----YGFLASANFAAGTAFTLTKEF  151
+
+Query  118  IVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+             V               +   +     E   +PFY+ D+ I
+Sbjct  152  TVDTSV-----------STQLRVQSSEEGKAVPFYIGDILI  181
+
+
+>sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus 
+flavefaciens OX=1265 GN=xynD PE=3 SV=2
+Length=802
+
+ Score = 75.3 bits (183),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 37/153 (24%), Positives = 67/153 (44%), Gaps = 20/153 (13%)
+
+Query  4    KADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPY-LQKGST  62
+            K +FE G  GNW  RG+ K++  S  G++  + +  S R +T++G  + +     + G T
+Sbjct  263  KENFESGE-GNWSGRGSAKVKSSS--GYDGTKGIFVSGREDTWNGASINLDELTFKAGET  319
+
+Query  63   VHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKI-EADIIVPA  121
+              +    M D   +   ++  L  ++        Y    + T  KGQW  +  +   +P+
+Sbjct  320  YSLGTAVMQDFESS---VDFKLTLQYTDADGKENYDEVKTVTAAKGQWVDLSNSSYTIPS  376
+
+Query  122  ESTGISGLRMYAETPWKQSSEVTETDTIPFYVD  154
+             +T   GL +Y E P  ++          FY+D
+Sbjct  377  GAT---GLVLYVEVPESKT---------DFYMD  397
+
+
+>sp|A0A1P8AWH8|XYN1_ARATH Endo-1,4-beta-xylanase 1 OS=Arabidopsis 
+thaliana OX=3702 GN=XYN1 PE=1 SV=1
+Length=945
+
+ Score = 59.5 bits (142),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 27/158 (17%), Positives = 55/158 (35%), Gaps = 15/158 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTE--KLEVVSGIGHN-------SNRSLKTSSRSETYHGPLV  51
+             +   DF  G + +W     E   +   S + H         +  +   +R ET+ G   
+Sbjct  58   VIVNHDFSSG-MHSWHPNCCEAFVVTAESNVSHGVLDPSKCGSY-VVVKNRKETWQGLEQ  115
+
+Query  52   EVLPYLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWK  111
+            ++   ++  S   +S       GP   ++      +     +   Y   A T + K +W 
+Sbjct  116  DITNRVKPCSLYKVSATVA-VSGPVHGLVEVMATLKLESQQSQTNYQFIAKTCVFKEKWV  174
+
+Query  112  KIEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTI  149
+            ++E    +P   +    +  Y E P      + ++ TI
+Sbjct  175  RLEGMFSLP---SLPEKVVFYLEGPSPGIDLLIQSVTI  209
+
+
+ Score = 54.5 bits (129),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 22/158 (14%), Positives = 57/158 (36%), Gaps = 16/158 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARG-----TEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLP  55
+             +   +FEDG + NW  R       + +     +  +       + R++ ++G   E+  
+Sbjct  227  IVVNPNFEDG-LNNWSGRSCKIVLHDSMADGKIVPESGKVFASATERTQNWNGIQQEITG  285
+
+Query  56   YLQKGSTVHISFWAM-YDEGPATQVINGSL--EKEFNRDTANLEYAMFASTTLNKGQWKK  112
+             +Q+      +     Y     T  +  +L  +    RD    +Y   ++      +W  
+Sbjct  286  KVQRKRVYEATAVVRIYGNNVTTATVQATLWVQNPNQRD----QYIGISTVQATDKEWIH  341
+
+Query  113  IEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTIP  150
+            ++   ++   ++ +    +Y E P   +  +  + T+ 
+Sbjct  342  LKGKFLLNGSASRV---VIYIEGPPPGTDILLNSLTVK  376
+
+
+ Score = 54.1 bits (128),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 45/137 (33%), Gaps = 27/137 (20%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI-------------GHN--SNRSLKTSSRSET  45
+             L  +   D     W + G   L V  G               H   S R +  ++R++T
+Sbjct  398  ILTNSHLSDDTTNGWFSLGNCTLSVAEGSPRILPPMARDSLGAHERLSGRYILVTNRTQT  457
+
+Query  46   YHGPLVEVLPYLQKGSTVHISFWAMYDEG-PATQVINGSLEKEFNRDTANLEYAMF--AS  102
+            + GP   +   L+   T  IS W     G  + Q +N +L          ++        
+Sbjct  458  WMGPAQMITDKLKLFLTYQISVWVKVGSGINSPQNVNVAL---------GIDSQWVNGGQ  508
+
+Query  103  TTLNKGQWKKIEADIIV  119
+              +N  +W +I     +
+Sbjct  509  VEINDDRWHEIGGSFRI  525
+
+
+>sp|O80596|XYN2_ARATH Endo-1,4-beta-xylanase 2 OS=Arabidopsis 
+thaliana OX=3702 GN=XYN2 PE=3 SV=1
+Length=1063
+
+ Score = 56.4 bits (134),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 27/145 (19%), Positives = 48/145 (33%), Gaps = 15/145 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKL---------EVVSGIGHNSNRSLKTSSRSETYHGPLV  51
+             +   DF  G I  W   G E           EV+S    +    +  ++R ET+ G   
+Sbjct  6    IVMNGDFFAG-IEPWYPNGCEAFVVSSDPFSSEVMSADSSSGGY-VVVTNRKETWQGLEQ  63
+
+Query  52   EVLPYLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWK  111
+            ++   +  G    +S       GP  +            + +  EY     T  ++ +W 
+Sbjct  64   DITTRVASGMNYTVSTCVG-VSGPFNESAEVLSTVRLEHEDSPTEYLCIGKTYASRDKWV  122
+
+Query  112  KIEADIIVPAESTGISGLRMYAETP  136
+             +E    +   S     + +Y E P
+Sbjct  123  DLEGTFSI---SNMPDRVVLYLEGP  144
+
+
+ Score = 54.9 bits (130),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 29/154 (19%), Positives = 54/154 (35%), Gaps = 28/154 (18%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI----------------GHNSNRSLKTSSRSE  44
+             +  +   DG I  W   G   L+V  G                 G+ S R +  ++RS 
+Sbjct  518  IVSNSHLSDGTIEGWFPLGDCHLKVGDGSPRILPPLARDSLRKTQGYLSGRYVLATNRSG  577
+
+Query  45   TYHGPLVEVLPYLQKGSTVHISFWAMYDEGPAT--QVINGSLEKEFNRDTANLEYAMFAS  102
+            T+ GP   +   ++   T  +S W     G  T  Q +N +L  + N             
+Sbjct  578  TWMGPAQTITDKVKLFVTYQVSAWVKIGSGGRTSPQDVNIALSVDGNWVNGGK-------  630
+
+Query  103  TTLNKGQWKKIEADIIVPAESTGISGLRMYAETP  136
+              ++ G W ++     +  E+     + ++ + P
+Sbjct  631  VEVDDGDWHEVVGSFRIEKEA---KEVMLHVQGP  661
+
+
+ Score = 51.8 bits (122),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 27/116 (23%), Positives = 46/116 (40%), Gaps = 7/116 (6%)
+
+Query  6    DFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVHI  65
+            DF DG    W   G +   V S    N   +   ++RSET+ G   ++   +  G +  +
+Sbjct  189  DFSDGLYS-WNTNGCDSFVVSSNDC-NLESNAVVNNRSETWQGLEQDITDNVSPGFSYKV  246
+
+Query  66   SFWAMYDEGP--ATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIV  119
+            S       GP   +  +  +L+ E     +  E+ +   T  +K  WK +E    V
+Sbjct  247  SASVS-VSGPVLGSAQVLATLKLEHKS--SATEFQLIGKTYASKDIWKTLEGTFEV  299
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.115    0.283    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0352    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7525269130
+Results from round 3
+
+
+Query= 4xun_A
+
+Length=161
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus ba...  205     1e-60
+sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga marit...  176     1e-50
+sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapo...  171     1e-48
+sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobact...  154     9e-43
+sp|A0A1P8AWH8|XYN1_ARATH Endo-1,4-beta-xylanase 1 OS=Arabidopsis ...  146     6e-40
+sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium the...  142     1e-38
+sp|P51584|XYNY_HUNTH Endo-1,4-beta-xylanase Y OS=Hungateiclostrid...  140     4e-38
+sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus s...  136     1e-36
+sp|O80596|XYN2_ARATH Endo-1,4-beta-xylanase 2 OS=Arabidopsis thal...  136     1e-36
+sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus flav...  116     1e-29
+
+Sequences not found previously or not previously below threshold:
+
+sp|F4JG10|XYN3_ARATH Endo-1,4-beta-xylanase 3 OS=Arabidopsis thal...  82.6    9e-18
+sp|P40944|XYNA_CALSR Endo-1,4-beta-xylanase A OS=Caldicellulosiru...  63.7    3e-11
+
+
+>sp|O69230|XYNC_PAEBA Endo-1,4-beta-xylanase C OS=Paenibacillus 
+barcinonensis OX=198119 GN=xynC PE=1 SV=1
+Length=1086
+
+ Score = 205 bits (520),  Expect = 1e-60, Method: Composition-based stats.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+            ALFKA FEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG
+Sbjct  199  ALFKAYFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  258
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+            STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP
+Sbjct  259  STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  318
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT
+Sbjct  319  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  359
+
+
+ Score = 101 bits (252),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 35/159 (22%), Positives = 67/159 (42%), Gaps = 16/159 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             L    FE+G    W ARG  K++V +   +   +SL+T+ R+E ++GP + +   + K 
+Sbjct  37   ILLSHSFEEGTTQGWTARGGVKVDVTAEQAYQGKQSLQTTGRTEAWNGPSLSLTDVVHKN  96
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMF-ASTTLNKGQWKKIEADIIV  119
+              V IS +     G A   +  ++E+       + +Y    A+  +   +W K++     
+Sbjct  97   EVVEISGYVKLVAGSAPPDLKFTVERR--DRNGDTQYDQVNAAEQVTDQKWVKLQGQYSY  154
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+               S+    L +Y E         +      + +D+ QI
+Sbjct  155  EQGSS----LLLYLE---------STDAKAAYLLDEFQI  180
+
+
+>sp|Q60037|XYNA_THEMA Endo-1,4-beta-xylanase A OS=Thermotoga maritima 
+(strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) OX=243274 
+GN=xynA PE=1 SV=1
+Length=1059
+
+ Score = 176 bits (447),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 45/161 (28%), Positives = 81/161 (50%), Gaps = 13/161 (8%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +++  FE+G +G+W+ RG   +E  S + H+   SL  S+R + + G  + +   L+ G
+Sbjct  205  VIYETSFENG-VGDWQPRGDVNIEASSEVAHSGKSSLFISNRQKGWQGAQINLKGILKTG  263
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+             T     W   + G   Q I  +++++++ D A+ +Y    S T+  GQW ++     +P
+Sbjct  264  KTYAFEAWVYQNSG-QDQTIIMTMQRKYSSD-ASTQYEWIKSATVPSGQWVQLSGTYTIP  321
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            A  T +  L +Y E         ++  T+ FYVDDV+I  T
+Sbjct  322  AGVT-VEDLTLYFE---------SQNPTLEFYVDDVKIVDT  352
+
+
+ Score = 76.4 bits (186),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/156 (19%), Positives = 52/156 (33%), Gaps = 15/156 (10%)
+
+Query  6    DFEDGNIGNWRARGTEKL-EVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVH  64
+             FE G        G + +      +  +   SLK  +R+  + G  +++   ++ G+   
+Sbjct  56   SFE-GTTEGVVPFGKDVVLTASQDVAADGEYSLKVENRTSPWDGVEIDLTGKVKSGADYL  114
+
+Query  65   ISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVPAEST  124
+            +SF   Y    A Q+ N         D     Y +     +    WK+I        E T
+Sbjct  115  LSFQV-YQSSDAPQLFNVVAR---TEDEKGERYDVILDKVVVSDHWKEILVPFSPTFEGT  170
+
+Query  125  GISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITA  160
+                  +            ++     FY+D VQ+ A
+Sbjct  171  PAKYSLIIV---------ASKNTNFNFYLDKVQVLA  197
+
+
+>sp|Q60042|XYNA_THENE Endo-1,4-beta-xylanase A OS=Thermotoga neapolitana 
+OX=2337 GN=xynA PE=1 SV=1
+Length=1055
+
+ Score = 171 bits (432),  Expect = 1e-48, Method: Composition-based stats.
+ Identities = 43/162 (27%), Positives = 84/162 (52%), Gaps = 14/162 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTE-KLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQK  59
+             +++  FE G IG+W+ RG++ K+ +   + H+  +SL  S+R + +HG  + +   L+ 
+Sbjct  200  VVYETSFEKG-IGDWQPRGSDVKISISPKVAHSGKKSLFVSNRQKGWHGAQISLKGILKT  258
+
+Query  60   GSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIV  119
+            G T     W   + G   Q I  +++++++ D ++ +Y    + T+  GQW ++     +
+Sbjct  259  GKTYAFEAWVYQESG-QDQTIIMTMQRKYSSD-SSTKYEWIKAATVPSGQWVQLSGTYTI  316
+
+Query  120  PAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            PA  T +  L +Y E         ++  T+ FYVDDV++  T
+Sbjct  317  PAGVT-VEDLTLYFE---------SQNPTLEFYVDDVKVVDT  348
+
+
+ Score = 70.7 bits (171),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 30/154 (19%), Positives = 54/154 (35%), Gaps = 15/154 (10%)
+
+Query  6    DFEDGNIGNWRARGTEKL-EVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKGSTVH  64
+             FE GN       G + +      +  +   SLK  +R+  + G  +++   +  G+   
+Sbjct  51   SFE-GNTDGASPFGKDVVVTASQDVAADGEYSLKVENRTSVWDGVEIDLTGKVNTGTDYL  109
+
+Query  65   ISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVPAEST  124
+            +SF        + Q+ +         D     Y + A   +    WK+I        E T
+Sbjct  110  LSFHVYQTS-DSPQLFSVLAR---TEDEKGERYKILADKVVVPNYWKEILVPFSPTFEGT  165
+
+Query  125  GISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+              +   +   +P K            FYVD+VQ+
+Sbjct  166  -PAKFSLIITSPKKTDFV--------FYVDNVQV  190
+
+
+>sp|P36917|XYNA_THESA Endo-1,4-beta-xylanase A OS=Thermoanaerobacterium 
+saccharolyticum OX=28896 GN=xynA PE=1 SV=1
+Length=1157
+
+ Score = 154 bits (388),  Expect = 9e-43, Method: Composition-based stats.
+ Identities = 39/159 (25%), Positives = 78/159 (49%), Gaps = 14/159 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +    FE+GN   W   G+  ++ V G+ H+ + SL T+ R+  ++GP  ++   +  G
+Sbjct  197  VIANETFENGNTSGWIGTGSSVVKAVYGVAHSGDYSLLTTGRTANWNGPSYDLTGKIVPG  256
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+               ++ FW  +  G  T+ I  +++   ++D   ++   FA+  +NKG+W +I+    +P
+Sbjct  257  QQYNVDFWVKFVNGNDTEQIKATVKATSDKDNY-IQVNDFAN--VNKGEWTEIKGSFTLP  313
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+                  SG+ +Y E         ++  T+ FY+DD  + 
+Sbjct  314  VAD--YSGISIYVE---------SQNPTLEFYIDDFSVI  341
+
+
+ Score = 137 bits (345),  Expect = 6e-37, Method: Composition-based stats.
+ Identities = 39/163 (24%), Positives = 64/163 (39%), Gaps = 17/163 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +   DFE G I  W  +G   L V +        S+K + R++TY GP    L  +QKG
+Sbjct  40   LVSNGDFESGTIDGWIKQGNPTLAVTTEQA-IGQYSMKVTGRTQTYEGPAYSFLGKMQKG  98
+
+Query  61   STVHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFA-STTLNKGQWKKIEADI  117
+             +  +S       G   +  +I  ++   F  D     Y        +++  W  +    
+Sbjct  99   ESYSVSLKVRLVSGQNSSNPLITVTM---FREDDNGKHYDTIVWQKQVSEDSWTTVSGTY  155
+
+Query  118  IVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITA  160
+             +    T +  L MY E+P           T+ +Y+DDV +T 
+Sbjct  156  TLDYIGT-LKTLYMYVESP---------DPTLEYYIDDVVVTT  188
+
+
+>sp|A0A1P8AWH8|XYN1_ARATH Endo-1,4-beta-xylanase 1 OS=Arabidopsis 
+thaliana OX=3702 GN=XYN1 PE=1 SV=1
+Length=945
+
+ Score = 146 bits (367),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 27/158 (17%), Positives = 55/158 (35%), Gaps = 15/158 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGTE--KLEVVSGIGHN-------SNRSLKTSSRSETYHGPLV  51
+             +   DF  G + +W     E   +   S + H         +  +   +R ET+ G   
+Sbjct  58   VIVNHDFSSG-MHSWHPNCCEAFVVTAESNVSHGVLDPSKCGSY-VVVKNRKETWQGLEQ  115
+
+Query  52   EVLPYLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWK  111
+            ++   ++  S   +S       GP   ++      +     +   Y   A T + K +W 
+Sbjct  116  DITNRVKPCSLYKVSATVA-VSGPVHGLVEVMATLKLESQQSQTNYQFIAKTCVFKEKWV  174
+
+Query  112  KIEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTI  149
+            ++E    +P+       +  Y E P      + ++ TI
+Sbjct  175  RLEGMFSLPS---LPEKVVFYLEGPSPGIDLLIQSVTI  209
+
+
+ Score = 80.7 bits (197),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 20/155 (13%), Positives = 51/155 (33%), Gaps = 10/155 (6%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSG-----IGHNSNRSLKTSSRSETYHGPLVEVLP  55
+             +   +FEDG + NW  R  + +   S      +  +       + R++ ++G   E+  
+Sbjct  227  IVVNPNFEDG-LNNWSGRSCKIVLHDSMADGKIVPESGKVFASATERTQNWNGIQQEITG  285
+
+Query  56   YLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEA  115
+             +Q+      +       G                     +Y   ++      +W  ++ 
+Sbjct  286  KVQRKRVYEATAVVR-IYGNNVTTATVQATLWVQNPNQRDQYIGISTVQATDKEWIHLKG  344
+
+Query  116  DIIVPAESTGISGLRMYAETPWKQSSEVTETDTIP  150
+              ++   +   S + +Y E P   +  +  + T+ 
+Sbjct  345  KFLLNGSA---SRVVIYIEGPPPGTDILLNSLTVK  376
+
+
+ Score = 67.6 bits (163),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 33/170 (19%), Positives = 54/170 (32%), Gaps = 27/170 (16%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI-------------GHN--SNRSLKTSSRSET  45
+             L  +   D     W + G   L V  G               H   S R +  ++R++T
+Sbjct  398  ILTNSHLSDDTTNGWFSLGNCTLSVAEGSPRILPPMARDSLGAHERLSGRYILVTNRTQT  457
+
+Query  46   YHGPLVEVLPYLQKGSTVHISFWAMYDEG-PATQVINGSLEKEFNRDTANLEYAMFASTT  104
+            + GP   +   L+   T  IS W     G  + Q +N +L  +                 
+Sbjct  458  WMGPAQMITDKLKLFLTYQISVWVKVGSGINSPQNVNVALGIDSQWVNG-------GQVE  510
+
+Query  105  LNKGQWKKIEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVD  154
+            +N  +W +I     +       S   +Y + P      +     I F VD
+Sbjct  511  INDDRWHEIGGSFRIEKN---PSKALVYVQGPSSGIDLMVAGLQI-FPVD  556
+
+
+>sp|P38535|XYNX_HUNTH Exoglucanase XynX OS=Hungateiclostridium 
+thermocellum OX=1515 GN=xynX PE=3 SV=1
+Length=1087
+
+ Score = 142 bits (358),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 38/162 (23%), Positives = 64/162 (40%), Gaps = 17/162 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +   DFE G I  W  +G   L   +        S+K + R++TY GP    L  +QKG
+Sbjct  39   LVSNGDFESGTIDGWIKQGNPTLAATTEEA-IGQYSMKVAGRTQTYEGPAYSFLGKMQKG  97
+
+Query  61   STVHISFWAMYDEG--PATQVINGSLEKEFNRDTANLEYAMFA-STTLNKGQWKKIEADI  117
+             + ++S       G   +  +I  ++   F  D     Y        +++  W  +    
+Sbjct  98   QSYNVSLKVRLVSGQNSSNPLITVTM---FREDDNGKHYDTIVWQKQVSEDSWTTVNGTY  154
+
+Query  118  IVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+             +    T +  L MY E+P           T+ +Y+DDV +T
+Sbjct  155  TLDYTGT-LKTLYMYVESP---------DPTLEYYIDDVVVT  186
+
+
+>sp|P51584|XYNY_HUNTH Endo-1,4-beta-xylanase Y OS=Hungateiclostridium 
+thermocellum OX=1515 GN=xynY PE=1 SV=1
+Length=1077
+
+ Score = 140 bits (353),  Expect = 4e-38, Method: Composition-based stats.
+ Identities = 35/155 (23%), Positives = 65/155 (42%), Gaps = 17/155 (11%)
+
+Query  3    FKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPY-LQKGS  61
+            +   FE G++G W ARG  ++ +     +  + SL   +R+  ++G    + P     G+
+Sbjct  569  YHDTFE-GSVGQWTARGPAEVLLSGRTAYKGSESLLVRNRTAAWNGAQRALNPRTFVPGN  627
+
+Query  62   TVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKI-EADIIVP  120
+            T   S  A + EG ++      L+  +   +    Y      T+   QW  +      +P
+Sbjct  628  TYCFSVVASFIEGASSTTFCMKLQ--YVDGSGTQRYDTIDMKTVGPNQWVHLYNPQYRIP  685
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDD  155
+            +++T    + +Y ET           DTI FY+D+
+Sbjct  686  SDAT---DMYVYVETA---------DDTINFYIDE  708
+
+
+ Score = 65.7 bits (158),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 37/159 (23%), Positives = 57/159 (36%), Gaps = 17/159 (11%)
+
+Query  2    LFKADFEDGNIGNWRARGTEK-LEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+            +    FE  N   W   G +  L  V   G+N  R +   +RS    G   E   YL  G
+Sbjct  36   VVHDTFEV-NFDGWCNLGVDTYLTAVENEGNNGTRGMMVINRSSASDGAYSEKGFYLDGG  94
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+                 S +  +  G  T+    S+    + +T      + A+  +  G+W +I A    P
+Sbjct  95   VEYKYSVFVKH-NGTGTETFKLSVSY-LDSETEEENKEVIATKDVVAGEWTEISAKYKAP  152
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQIT  159
+              +  I             +  +T   T+ F  DDV IT
+Sbjct  153  KTAVNI-------------TLSITTDSTVDFIFDDVTIT  178
+
+
+>sp|C6CRV0|XYNA1_PAESJ Endo-1,4-beta-xylanase A OS=Paenibacillus 
+sp. (strain JDR-2) OX=324057 GN=xynA1 PE=1 SV=1
+Length=1462
+
+ Score = 136 bits (343),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 65/160 (41%), Gaps = 18/160 (11%)
+
+Query  6    DFEDGNIGNWRAR-GTEKLEVVSGIGHN--SNRSLKTSSRSETYHGPLVEVLPYLQKGST  62
+             FED   G +  R GTE L V +   H    + SLK   R+ ++HGP + V  Y+ KG  
+Sbjct  361  TFEDQTAGGFTGRAGTETLTVTNESNHTADGSYSLKVEGRTTSWHGPSLRVEKYVDKGYE  420
+
+Query  63   VHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLN-KGQWKKIEADIIVPA  121
+              ++ W        +  +  + +     D  +  Y   AS T+     W +++ +     
+Sbjct  421  YKVTAWVKLLSPETSTKLELASQVG---DGGSANYPSLASKTITAADGWVQLQGNYR--Y  475
+
+Query  122  ESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+             S G   L +Y +         +   T  +Y+DD+   +T
+Sbjct  476  NSVGGEYLTIYVQ---------SSNATASYYIDDISFEST  506
+
+
+ Score = 43.3 bits (100),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 27/161 (17%), Positives = 51/161 (32%), Gaps = 18/161 (11%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI--GHNSNRSLKTSSRSETYHGPLVEVLPY-L  57
+             ++  DF        ++ G    +V   +  G+N   +L  S+R+ T+     +     L
+Sbjct  36   IVYHEDFAIDKGKAIQSGGASLTQVTGKVFDGNNDGSALYVSNRANTWDAADFKFADIGL  95
+
+Query  58   QKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADI  117
+            Q G T  ++     D       +    +       +N  Y   AS     G    +  + 
+Sbjct  96   QNGKTYTVTVKGYVD---QDATVPSGAQAFLQAVDSN-NYGFLASANFAAGTAFTLTKEF  151
+
+Query  118  IVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQI  158
+             V    +              +     E   +PFY+ D+ I
+Sbjct  152  TVDTSVST-----------QLRVQSSEEGKAVPFYIGDILI  181
+
+
+ Score = 42.9 bits (99),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 27/163 (17%), Positives = 53/163 (33%), Gaps = 18/163 (11%)
+
+Query  2    LFKADFEDGNIGNWRARGTEKLEVVSGI--GHNSNRSLKTSSRSETYHGPLVEVLPY-LQ  58
+            ++  DF        ++ G    +V   +  G++  ++L  S+R+ T+     +     LQ
+Sbjct  192  VYHEDFATDKGKAVQSGGANLAQVADKVFDGNDDGKALYVSNRANTWDAADFKFADIGLQ  251
+
+Query  59   KGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADII  118
+             G T  ++     D       +    +       +N  Y   AS          +  +  
+Sbjct  252  NGKTYTVTVKGYVD---QDATVPSGAQAFLQAVDSN-NYGFLASANFAARSAFTLTKEFT  307
+
+Query  119  VPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITAT  161
+            V    +              +     E   +PFY+ D+ IT T
+Sbjct  308  VDTSVST-----------QLRVQSSEEGKAVPFYIGDILITET  339
+
+
+>sp|O80596|XYN2_ARATH Endo-1,4-beta-xylanase 2 OS=Arabidopsis 
+thaliana OX=3702 GN=XYN2 PE=3 SV=1
+Length=1063
+
+ Score = 136 bits (342),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 27/153 (18%), Positives = 49/153 (32%), Gaps = 15/153 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKL---------EVVSGIGHNSNRSLKTSSRSETYHGPLV  51
+             +   DF  G I  W   G E           EV+S    +    +  ++R ET+ G   
+Sbjct  6    IVMNGDFFAG-IEPWYPNGCEAFVVSSDPFSSEVMSADSSSGGY-VVVTNRKETWQGLEQ  63
+
+Query  52   EVLPYLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWK  111
+            ++   +  G    +S       GP  +            + +  EY     T  ++ +W 
+Sbjct  64   DITTRVASGMNYTVSTCVG-VSGPFNESAEVLSTVRLEHEDSPTEYLCIGKTYASRDKWV  122
+
+Query  112  KIEADIIVPAESTGISGLRMYAETPWKQSSEVT  144
+             +E    +   S     + +Y E P      + 
+Sbjct  123  DLEGTFSI---SNMPDRVVLYLEGPAPGKDLLI  152
+
+
+ Score = 105 bits (261),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 29/149 (19%), Positives = 57/149 (38%), Gaps = 6/149 (4%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPYLQKG  60
+             +   DF DG + +W   G +   V S   +  + ++  ++RSET+ G   ++   +  G
+Sbjct  184  IIKNHDFSDG-LYSWNTNGCDSFVVSSNDCNLESNAV-VNNRSETWQGLEQDITDNVSPG  241
+
+Query  61   STVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADIIVP  120
+             +  +S       GP           +    ++  E+ +   T  +K  WK +E    V 
+Sbjct  242  FSYKVSASVS-VSGPVLGSAQVLATLKLEHKSSATEFQLIGKTYASKDIWKTLEGTFEV-  299
+
+Query  121  AESTGISGLRMYAETPWKQSSEVTETDTI  149
+              S     +  + E P      + ++ TI
+Sbjct  300  --SGRPDRVVFFLEGPPPGIDLLVKSVTI  326
+
+
+ Score = 68.4 bits (165),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 29/170 (17%), Positives = 57/170 (34%), Gaps = 25/170 (15%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGI----------------GHNSNRSLKTSSRSE  44
+             +  +   DG I  W   G   L+V  G                 G+ S R +  ++RS 
+Sbjct  518  IVSNSHLSDGTIEGWFPLGDCHLKVGDGSPRILPPLARDSLRKTQGYLSGRYVLATNRSG  577
+
+Query  45   TYHGPLVEVLPYLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTT  104
+            T+ GP   +   ++   T  +S W     G  T   + ++    +       +       
+Sbjct  578  TWMGPAQTITDKVKLFVTYQVSAWVKIGSGGRTSPQDVNIALSVDG-----NWVNGGKVE  632
+
+Query  105  LNKGQWKKIEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVD  154
+            ++ G W ++     +  E+     + ++ + P      +     I F VD
+Sbjct  633  VDDGDWHEVVGSFRIEKEA---KEVMLHVQGPSPGVDLMVAGLQI-FAVD  678
+
+
+ Score = 64.5 bits (155),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 21/146 (14%), Positives = 45/146 (31%), Gaps = 13/146 (9%)
+
+Query  1    ALFKADFEDGNIGNWRARGT-----EKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLP  55
+                + F DG + +W  RG      E L     +  +       S R+  + G   ++  
+Sbjct  350  IFLNSSFSDG-LNHWSGRGCNLMLHESLADGKILPDSGTCFASASERTHKWSGIEQDITE  408
+
+Query  56   YLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEA  115
+             +Q+      S         +   +  +L  ++       EY   +S       W +++ 
+Sbjct  409  RVQRKLIYEASSVVRL--SHSHHTVQATLYVQYLDQ--REEYIGISSVQGTHDDWVELKG  464
+
+Query  116  DIIVPAESTGISGLRMYAETPWKQSS  141
+              ++       +   +Y E P     
+Sbjct  465  KFLLNGS---PARAVVYIEGPPPGID  487
+
+
+>sp|Q53317|XYND_RUMFL Xylanase/beta-glucanase OS=Ruminococcus 
+flavefaciens OX=1265 GN=xynD PE=3 SV=2
+Length=802
+
+ Score = 116 bits (291),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 37/153 (24%), Positives = 67/153 (44%), Gaps = 20/153 (13%)
+
+Query  4    KADFEDGNIGNWRARGTEKLEVVSGIGHNSNRSLKTSSRSETYHGPLVEVLPY-LQKGST  62
+            K +FE G  GNW  RG+ K++  S  G++  + +  S R +T++G  + +     + G T
+Sbjct  263  KENFESGE-GNWSGRGSAKVKSSS--GYDGTKGIFVSGREDTWNGASINLDELTFKAGET  319
+
+Query  63   VHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKI-EADIIVPA  121
+              +    M D   +   ++  L  ++        Y    + T  KGQW  +  +   +P+
+Sbjct  320  YSLGTAVMQDFESS---VDFKLTLQYTDADGKENYDEVKTVTAAKGQWVDLSNSSYTIPS  376
+
+Query  122  ESTGISGLRMYAETPWKQSSEVTETDTIPFYVD  154
+             +T   GL +Y E P  ++          FY+D
+Sbjct  377  GAT---GLVLYVEVPESKT---------DFYMD  397
+
+
+>sp|F4JG10|XYN3_ARATH Endo-1,4-beta-xylanase 3 OS=Arabidopsis 
+thaliana OX=3702 GN=XYN3 PE=2 SV=1
+Length=752
+
+ Score = 82.6 bits (202),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 20/151 (13%), Positives = 49/151 (32%), Gaps = 10/151 (7%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGH-----NSNRSLKTSSRSETYHGPLVEVLP  55
+             +   +FEDG + NW  R  + +   S         +       + R +T++G   E+  
+Sbjct  27   IILNPNFEDG-LNNWTGRACKIVLHESMDSGKIVPLSGKVFAAATQRKDTWNGIQQEISG  85
+
+Query  56   YLQKGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEA  115
+              ++     ++       G                     +Y + A+       W +++ 
+Sbjct  86   RFRRKRVYEVTAVVR-IFGNNVTSATVQATLWVLNANKREQYIVIANVQATDKNWVELKG  144
+
+Query  116  DIIVPAESTGISGLRMYAETPWKQSSEVTET  146
+              ++       S + +Y E P  ++  +  +
+Sbjct  145  KFVIHGS---PSRVILYLEGPPPRADILLNS  172
+
+
+ Score = 61.4 bits (147),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 29/174 (17%), Positives = 53/174 (30%), Gaps = 30/174 (17%)
+
+Query  1    ALFKADFEDGNIGNWRARGTEKLEVVSGIGHN---------------SNRSLKTSSRSET  45
+             +  ++  DG    W   G  KL V  G                       +  ++R++T
+Sbjct  198  IVENSEVLDGGTKPWFTLGNCKLSVGQGAPRTLPPMARDTLGPHKPLGGNYIVVTNRTQT  257
+
+Query  46   YHGPLVEVLPYLQKGSTVHISFWAMY---DEGP--ATQVINGSLEKEFNRDTANLEYAMF  100
+            + GP   +   ++   T  IS W        G   + Q +N +L  +             
+Sbjct  258  WMGPAQMITDKIKLFLTYQISAWVKLGVGVSGSSMSPQNVNIALSVDNQWVNGGQ-----  312
+
+Query  101  ASTTLNKGQWKKIEADIIVPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVD  154
+               T+    W +I     +  +      + +Y + P      +     I F VD
+Sbjct  313  VEVTVG-DTWHEIAGSFRLEKQ---PQNVMVYVQGPGAGIDLMIAALQI-FPVD  361
+
+
+>sp|P40944|XYNA_CALSR Endo-1,4-beta-xylanase A OS=Caldicellulosiruptor 
+sp. (strain Rt8B.4) OX=28238 GN=xynA PE=3 SV=1
+Length=684
+
+ Score = 63.7 bits (153),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 31/162 (19%), Positives = 61/162 (38%), Gaps = 17/162 (10%)
+
+Query  1    ALFKADFEDGNIGNWRARG-TEKLEVVSGIGHNSNRSLKTSSRSETYHG-PLVEVLPYLQ  58
+             L + +FE+ N G +       K+ +     ++S  SLK     +T +G  L  +   LQ
+Sbjct  195  VLKQENFENKNTGGFLPEDKNCKITLAKDRAYSSAYSLKVQPSQKTKNGKILFPIKGLLQ  254
+
+Query  59   KGSTVHISFWAMYDEGPATQVINGSLEKEFNRDTANLEYAMFASTTLNKGQWKKIEADII  118
+            KG T   S     D    ++ +N S   + N   +  E  + A   +   +W ++ A + 
+Sbjct  255  KGGTYDFSLLVYQDS---SKPVNFSAGIKLNDGKSTKEI-VLAKQNVAPKKWTQLFATLD  310
+
+Query  119  VPAESTGISGLRMYAETPWKQSSEVTETDTIPFYVDDVQITA  160
+            +    +    +  + +              I +Y+D   I+ 
+Sbjct  311  LDTRFSA-KDVSFFVKPA----------AAISYYLDLYSISD  341
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.117    0.295    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0358    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7525269130
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

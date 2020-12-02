@@ -1,0 +1,594 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vlra2
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=100...  202     4e-65
+sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus OX=...  199     4e-64
+sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=960...  188     1e-59
+sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 ...  186     1e-58
+sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 GN...  182     2e-57
+sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=625...  70.9    8e-15
+sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces...  58.9    2e-10
+sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis eleg...  37.7    0.006
+
+
+>sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=10090 
+GN=Dcps PE=1 SV=1
+Length=338
+
+ Score = 202 bits (514),  Expect = 4e-65, Method: Compositional matrix adjust.
+ Identities = 101/107 (94%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ
+Sbjct  99   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  145
+
+
+>sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus 
+OX=10116 GN=Dcps PE=2 SV=1
+Length=336
+
+ Score = 199 bits (507),  Expect = 4e-64, Method: Compositional matrix adjust.
+ Identities = 99/107 (93%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            G+PELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPA+EKHLQKYMRQ
+Sbjct  99   GNPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPASEKHLQKYMRQ  145
+
+
+>sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=9606 
+GN=DCPS PE=1 SV=2
+Length=337
+
+ Score = 188 bits (477),  Expect = 1e-59, Method: Compositional matrix adjust.
+ Identities = 93/107 (87%), Positives = 99/107 (93%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFR+QKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVE VAQLLT
+Sbjct  40   VRLPFSGFRLQKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVEQVAQLLT  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR L+D+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLNDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 186 bits (471),  Expect = 1e-58, Method: Compositional matrix adjust.
+ Identities = 91/107 (85%), Positives = 98/107 (92%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVDQVAQLLK  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSND+YSTY+LFPPR LSD+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDVYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 182 bits (463),  Expect = 2e-57, Method: Compositional matrix adjust.
+ Identities = 90/107 (84%), Positives = 97/107 (91%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVNE      GEDA+VILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAIVILEKTPFQVDQVAQLLM  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR LSD+KTTVVYPATEKHLQKY+ Q
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLHQ  146
+
+
+>sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=6253 
+PE=1 SV=1
+Length=301
+
+ Score = 70.9 bits (172),  Expect = 8e-15, Method: Compositional matrix adjust.
+ Identities = 38/97 (39%), Positives = 57/97 (59%), Gaps = 3/97 (3%)
+
+Query  7    GFRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ--LLTGSPELKLQFS  64
+            GF  ++VL   +  K  F+    + GE+A+++ +K  F V+  +   +LTGS  LK    
+Sbjct  20   GFSFKEVLGSDSARKSAFILLDSSNGENAILLADKNAFPVDKTSWSAILTGST-LKPIMK  78
+
+Query  65   NDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            NDIYS+Y L  P   SD+K+T++YP  EKH+ KY  Q
+Sbjct  79   NDIYSSYTLCMPNEFSDVKSTLIYPCNEKHIAKYRDQ  115
+
+
+>sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=nhm1 PE=1 
+SV=1
+Length=304
+
+ Score = 58.9 bits (141),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 34/99 (34%), Positives = 60/99 (61%), Gaps = 6/99 (6%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVA--QLLTGSPELKLQFSN  65
+            F+ +K+L++  + KII L+GK+   E A+++LEKT F +  +   QL T   + KL  +N
+Sbjct  15   FKFEKILKDDTKSKIITLYGKI-RNEVALLLLEKTAFDLNTIKLDQLATFLQDTKLVENN  73
+
+Query  66   DIYSTY---NLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            D++  +   N      L  +K+T+++PA+E H++KY  Q
+Sbjct  74   DVFHWFLSTNFQDCSTLPSVKSTLIWPASETHVRKYSSQ  112
+
+
+>sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis 
+elegans OX=6239 GN=dcs-1 PE=1 SV=1
+Length=311
+
+ Score = 37.7 bits (86),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 22/94 (23%), Positives = 50/94 (53%), Gaps = 1/94 (1%)
+
+Query  9    RVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVA-QLLTGSPELKLQFSNDI  67
+            + Q++L   +  K +F+     +G   +++  K+PF  E    + L  + +L+    NDI
+Sbjct  27   KFQEILGADSSHKSLFVLLSHPDGSQGILLANKSPFSEEKSDIEKLLATAQLQEISRNDI  86
+
+Query  68   YSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            + +YN+     L+ +K+ ++YP  ++ + KY ++
+Sbjct  87   FGSYNIEIDPKLNLLKSQLIYPINDRLIAKYRQE  120
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.137    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 2
+
+
+Query= d1vlra2
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=100...  172     2e-53
+sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=960...  172     2e-53
+sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus OX=...  172     3e-53
+sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 ...  170     2e-52
+sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 GN...  169     3e-52
+sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=625...  134     9e-39
+sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces...  122     2e-34
+
+Sequences not found previously or not previously below threshold:
+
+sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis eleg...  63.9    3e-12
+sp|Q12123|DCS2_YEAST Inactive diphosphatase DCS2 OS=Saccharomyces...  55.5    4e-09
+sp|Q06151|DCPS_YEAST m7GpppX diphosphatase OS=Saccharomyces cerev...  54.3    9e-09
+
+
+>sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=10090 
+GN=Dcps PE=1 SV=1
+Length=338
+
+ Score = 172 bits (436),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 101/107 (94%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ
+Sbjct  99   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  145
+
+
+>sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=9606 
+GN=DCPS PE=1 SV=2
+Length=337
+
+ Score = 172 bits (435),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 93/107 (87%), Positives = 99/107 (93%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFR+QKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVE VAQLLT
+Sbjct  40   VRLPFSGFRLQKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVEQVAQLLT  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR L+D+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLNDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus 
+OX=10116 GN=Dcps PE=2 SV=1
+Length=336
+
+ Score = 172 bits (435),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 99/107 (93%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            G+PELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPA+EKHLQKYMRQ
+Sbjct  99   GNPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPASEKHLQKYMRQ  145
+
+
+>sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 170 bits (430),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 91/107 (85%), Positives = 98/107 (92%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVDQVAQLLK  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSND+YSTY+LFPPR LSD+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDVYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 169 bits (429),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 90/107 (84%), Positives = 97/107 (91%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVNE      GEDA+VILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAIVILEKTPFQVDQVAQLLM  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR LSD+KTTVVYPATEKHLQKY+ Q
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLHQ  146
+
+
+>sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=6253 
+PE=1 SV=1
+Length=301
+
+ Score = 134 bits (336),  Expect = 9e-39, Method: Composition-based stats.
+ Identities = 38/97 (39%), Positives = 57/97 (59%), Gaps = 3/97 (3%)
+
+Query  7    GFRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ--LLTGSPELKLQFS  64
+            GF  ++VL   +  K  F+    + GE+A+++ +K  F V+  +   +LTGS  LK    
+Sbjct  20   GFSFKEVLGSDSARKSAFILLDSSNGENAILLADKNAFPVDKTSWSAILTGST-LKPIMK  78
+
+Query  65   NDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            NDIYS+Y L  P   SD+K+T++YP  EKH+ KY  Q
+Sbjct  79   NDIYSSYTLCMPNEFSDVKSTLIYPCNEKHIAKYRDQ  115
+
+
+>sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=nhm1 PE=1 
+SV=1
+Length=304
+
+ Score = 122 bits (307),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 34/99 (34%), Positives = 60/99 (61%), Gaps = 6/99 (6%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVA--QLLTGSPELKLQFSN  65
+            F+ +K+L++  + KII L+GK+   E A+++LEKT F +  +   QL T   + KL  +N
+Sbjct  15   FKFEKILKDDTKSKIITLYGKI-RNEVALLLLEKTAFDLNTIKLDQLATFLQDTKLVENN  73
+
+Query  66   DIYSTY---NLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            D++  +   N      L  +K+T+++PA+E H++KY  Q
+Sbjct  74   DVFHWFLSTNFQDCSTLPSVKSTLIWPASETHVRKYSSQ  112
+
+
+>sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis 
+elegans OX=6239 GN=dcs-1 PE=1 SV=1
+Length=311
+
+ Score = 63.9 bits (154),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 50/94 (53%), Gaps = 1/94 (1%)
+
+Query  9    RVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVA-QLLTGSPELKLQFSNDI  67
+            + Q++L   +  K +F+     +G   +++  K+PF  E    + L  + +L+    NDI
+Sbjct  27   KFQEILGADSSHKSLFVLLSHPDGSQGILLANKSPFSEEKSDIEKLLATAQLQEISRNDI  86
+
+Query  68   YSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            + +YN+     L+ +K+ ++YP  ++ + KY ++
+Sbjct  87   FGSYNIEIDPKLNLLKSQLIYPINDRLIAKYRQE  120
+
+
+>sp|Q12123|DCS2_YEAST Inactive diphosphatase DCS2 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DCS2 
+PE=1 SV=3
+Length=353
+
+ Score = 55.5 bits (132),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 52/118 (44%), Gaps = 25/118 (21%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ----------------  51
+            F+  +VL  +   K+I L G + +G+DAV+  EKT F  +   +                
+Sbjct  13   FKYVRVLDSNPHTKVISLLGSI-DGKDAVLTAEKTHFIFDETVRRPSQSGRSTPIFFHRE  71
+
+Query  52   -----LLTGSPELKLQFSNDIYSTYNLFPPRHL---SDIKTTVVYPATEKHLQKYMRQ  101
+                  L G  +LK   SNDIY        +H+      K  +++PA++ H++ Y +Q
+Sbjct  72   IDEYSFLNGITDLKELTSNDIYYWGLSVLKQHILHNPTAKVNLIWPASQFHIKGYDQQ  129
+
+
+>sp|Q06151|DCPS_YEAST m7GpppX diphosphatase OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=DCS1 PE=1 
+SV=1
+Length=350
+
+ Score = 54.3 bits (129),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 29/117 (25%), Positives = 48/117 (41%), Gaps = 24/117 (21%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ----------------  51
+            F+   VL  + + K++ L G + + +DA++  EKT F  +   +                
+Sbjct  15   FQFVSVLDSNPQTKVMSLLGTI-DNKDAIITAEKTHFLFDETVRRPSQDGRSTPVLYNCE  73
+
+Query  52   ----LLTGSPELKLQFSNDIYST---YNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+                 + G  ELK   SNDIY                 K  +++PAT  H++KY +Q
+Sbjct  74   NEYSCINGIQELKEITSNDIYYWGLSVIKQDMESNPTAKLNLIWPATPIHIKKYEQQ  130
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.344    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0409    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 3
+
+
+Query= d1vlra2
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=100...  152     2e-45
+sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus OX=...  151     2e-45
+sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=960...  150     4e-45
+sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 ...  147     2e-43
+sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 GN...  145     8e-43
+sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=625...  122     4e-34
+sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis eleg...  110     1e-29
+sp|Q06151|DCPS_YEAST m7GpppX diphosphatase OS=Saccharomyces cerev...  110     2e-29
+sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces...  109     2e-29
+sp|Q12123|DCS2_YEAST Inactive diphosphatase DCS2 OS=Saccharomyces...  110     2e-29
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9DAR7|DCPS_MOUSE m7GpppX diphosphatase OS=Mus musculus OX=10090 
+GN=Dcps PE=1 SV=1
+Length=338
+
+ Score = 152 bits (383),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 101/107 (94%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ
+Sbjct  99   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  145
+
+
+>sp|Q8K4F7|DCPS_RAT m7GpppX diphosphatase OS=Rattus norvegicus 
+OX=10116 GN=Dcps PE=2 SV=1
+Length=336
+
+ Score = 151 bits (382),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 99/107 (93%), Positives = 101/107 (94%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVNE------GEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRVQKVLRESARDKIIFLHGKVNE      GEDAVVILEKTPFQVEHVAQLLT
+Sbjct  39   VRLPFSGFRVQKVLRESARDKIIFLHGKVNEDSGDTHGEDAVVILEKTPFQVEHVAQLLT  98
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            G+PELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPA+EKHLQKYMRQ
+Sbjct  99   GNPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPASEKHLQKYMRQ  145
+
+
+>sp|Q96C86|DCPS_HUMAN m7GpppX diphosphatase OS=Homo sapiens OX=9606 
+GN=DCPS PE=1 SV=2
+Length=337
+
+ Score = 150 bits (380),  Expect = 4e-45, Method: Composition-based stats.
+ Identities = 92/107 (86%), Positives = 99/107 (93%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVN------EGEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFR+QKVLRESARDKIIFLHGKVN      +GEDAVVILEKTPFQVE VAQLLT
+Sbjct  40   VRLPFSGFRLQKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVEQVAQLLT  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR L+D+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLNDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8MJJ7|DCPS_BOVIN m7GpppX diphosphatase OS=Bos taurus OX=9913 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 147 bits (370),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 90/107 (84%), Positives = 98/107 (92%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVN------EGEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVN      +GEDAVVILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAVVILEKTPFQVDQVAQLLK  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSND+YSTY+LFPPR LSD+KTTVVYPATEKHLQKY+RQ
+Sbjct  100  GSPELQLQFSNDVYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLRQ  146
+
+
+>sp|Q8MIZ3|DCPS_PIG m7GpppX diphosphatase OS=Sus scrofa OX=9823 
+GN=DCPS PE=2 SV=1
+Length=337
+
+ Score = 145 bits (365),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 89/107 (83%), Positives = 97/107 (91%), Gaps = 6/107 (6%)
+
+Query  1    VRLPFSGFRVQKVLRESARDKIIFLHGKVN------EGEDAVVILEKTPFQVEHVAQLLT  54
+            VRLPFSGFRV+KVLRESARDKIIFLHGKVN      +GEDA+VILEKTPFQV+ VAQLL 
+Sbjct  40   VRLPFSGFRVKKVLRESARDKIIFLHGKVNEASGDGDGEDAIVILEKTPFQVDQVAQLLM  99
+
+Query  55   GSPELKLQFSNDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            GSPEL+LQFSNDIYSTY+LFPPR LSD+KTTVVYPATEKHLQKY+ Q
+Sbjct  100  GSPELQLQFSNDIYSTYHLFPPRQLSDVKTTVVYPATEKHLQKYLHQ  146
+
+
+>sp|D3K0N9|DCPS_ASCSU m7GpppX diphosphatase OS=Ascaris suum OX=6253 
+PE=1 SV=1
+Length=301
+
+ Score = 122 bits (305),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 38/97 (39%), Positives = 57/97 (59%), Gaps = 3/97 (3%)
+
+Query  7    GFRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ--LLTGSPELKLQFS  64
+            GF  ++VL   +  K  F+    + GE+A+++ +K  F V+  +   +LTGS  LK    
+Sbjct  20   GFSFKEVLGSDSARKSAFILLDSSNGENAILLADKNAFPVDKTSWSAILTGST-LKPIMK  78
+
+Query  65   NDIYSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            NDIYS+Y L  P   SD+K+T++YP  EKH+ KY  Q
+Sbjct  79   NDIYSSYTLCMPNEFSDVKSTLIYPCNEKHIAKYRDQ  115
+
+
+>sp|G5EFS4|DCPS_CAEEL m7GpppX diphosphatase OS=Caenorhabditis 
+elegans OX=6239 GN=dcs-1 PE=1 SV=1
+Length=311
+
+ Score = 110 bits (275),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 50/94 (53%), Gaps = 1/94 (1%)
+
+Query  9    RVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVA-QLLTGSPELKLQFSNDI  67
+            + Q++L   +  K +F+     +G   +++  K+PF  E    + L  + +L+    NDI
+Sbjct  27   KFQEILGADSSHKSLFVLLSHPDGSQGILLANKSPFSEEKSDIEKLLATAQLQEISRNDI  86
+
+Query  68   YSTYNLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            + +YN+     L+ +K+ ++YP  ++ + KY ++
+Sbjct  87   FGSYNIEIDPKLNLLKSQLIYPINDRLIAKYRQE  120
+
+
+>sp|Q06151|DCPS_YEAST m7GpppX diphosphatase OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=DCS1 PE=1 
+SV=1
+Length=350
+
+ Score = 110 bits (275),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 29/117 (25%), Positives = 48/117 (41%), Gaps = 24/117 (21%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ----------------  51
+            F+   VL  + + K++ L G + + +DA++  EKT F  +   +                
+Sbjct  15   FQFVSVLDSNPQTKVMSLLGTI-DNKDAIITAEKTHFLFDETVRRPSQDGRSTPVLYNCE  73
+
+Query  52   ----LLTGSPELKLQFSNDIYSTY---NLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+                 + G  ELK   SNDIY                 K  +++PAT  H++KY +Q
+Sbjct  74   NEYSCINGIQELKEITSNDIYYWGLSVIKQDMESNPTAKLNLIWPATPIHIKKYEQQ  130
+
+
+>sp|Q9P7C9|DCPS_SCHPO m7GpppX diphosphatase OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=nhm1 PE=1 
+SV=1
+Length=304
+
+ Score = 109 bits (273),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 34/99 (34%), Positives = 60/99 (61%), Gaps = 6/99 (6%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHV--AQLLTGSPELKLQFSN  65
+            F+ +K+L++  + KII L+GK+   E A+++LEKT F +  +   QL T   + KL  +N
+Sbjct  15   FKFEKILKDDTKSKIITLYGKI-RNEVALLLLEKTAFDLNTIKLDQLATFLQDTKLVENN  73
+
+Query  66   DIYSTY---NLFPPRHLSDIKTTVVYPATEKHLQKYMRQ  101
+            D++  +   N      L  +K+T+++PA+E H++KY  Q
+Sbjct  74   DVFHWFLSTNFQDCSTLPSVKSTLIWPASETHVRKYSSQ  112
+
+
+>sp|Q12123|DCS2_YEAST Inactive diphosphatase DCS2 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DCS2 
+PE=1 SV=3
+Length=353
+
+ Score = 110 bits (275),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 52/118 (44%), Gaps = 25/118 (21%)
+
+Query  8    FRVQKVLRESARDKIIFLHGKVNEGEDAVVILEKTPFQVEHVAQ----------------  51
+            F+  +VL  +   K+I L G + +G+DAV+  EKT F  +   +                
+Sbjct  13   FKYVRVLDSNPHTKVISLLGSI-DGKDAVLTAEKTHFIFDETVRRPSQSGRSTPIFFHRE  71
+
+Query  52   -----LLTGSPELKLQFSNDIYSTYNLFPPRHL---SDIKTTVVYPATEKHLQKYMRQ  101
+                  L G  +LK   SNDIY        +H+      K  +++PA++ H++ Y +Q
+Sbjct  72   IDEYSFLNGITDLKELTSNDIYYWGLSVLKQHILHNPTAKVNLIWPASQFHIKGYDQQ  129
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.132    0.337    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0403    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

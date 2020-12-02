@@ -1,0 +1,266 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1cy5a_
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O14727|APAF_HUMAN Apoptotic protease-activating factor 1 OS=Ho...  191     8e-57
+sp|Q9EPV5|APAF_RAT Apoptotic protease-activating factor 1 OS=Ratt...  158     2e-45
+sp|O88879|APAF_MOUSE Apoptotic protease-activating factor 1 OS=Mu...  156     8e-45
+sp|Q9I9H8|APAF_DANRE Apoptotic protease-activating factor 1 OS=Da...  106     3e-27
+sp|Q9GL23|APAF_CANLF Apoptotic protease-activating factor 1 (Frag...  65.1    1e-14
+
+
+>sp|O14727|APAF_HUMAN Apoptotic protease-activating factor 1 OS=Homo 
+sapiens OX=9606 GN=APAF1 PE=1 SV=2
+Length=1248
+
+ Score = 191 bits (484),  Expect = 8e-57, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI
+Sbjct  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP
+Sbjct  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+
+
+>sp|Q9EPV5|APAF_RAT Apoptotic protease-activating factor 1 OS=Rattus 
+norvegicus OX=10116 GN=Apaf1 PE=1 SV=1
+Length=1249
+
+ Score = 158 bits (400),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 74/92 (80%), Positives = 83/92 (90%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQH+EALEKDIKTSYIMDHMIS+G LT+ EEEKV+++ TQ QRAA LIKMI
+Sbjct  1   MDAKARNCLLQHKEALEKDIKTSYIMDHMISNGVLTVVEEEKVKSQATQYQRAAALIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L KDN +Y+SFYNALLHEGYKDLA LLH G+P
+Sbjct  61  LNKDNYAYISFYNALLHEGYKDLAGLLHSGLP  92
+
+
+>sp|O88879|APAF_MOUSE Apoptotic protease-activating factor 1 OS=Mus 
+musculus OX=10090 GN=Apaf1 PE=1 SV=3
+Length=1249
+
+ Score = 156 bits (395),  Expect = 8e-45, Method: Composition-based stats.
+ Identities = 74/92 (80%), Positives = 83/92 (90%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQHREALEKDIKTSYIMDHMIS+G L++ EEEKV+++ TQ QRAA LIKMI
+Sbjct  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISNGVLSVIEEEKVKSQATQYQRAAALIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L KDN +Y+SFYNALLHEGYKDLAALL  G+P
+Sbjct  61  LNKDNCAYISFYNALLHEGYKDLAALLQSGLP  92
+
+
+>sp|Q9I9H8|APAF_DANRE Apoptotic protease-activating factor 1 OS=Danio 
+rerio OX=7955 GN=apaf1 PE=2 SV=1
+Length=1261
+
+ Score = 106 bits (265),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 49/92 (53%), Positives = 71/92 (77%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           M+ +AR+ LL+ +  LE+DIK SY+MDHMISDG LT  EE KV ++ T++++A  L++ +
+Sbjct  1   MEERARSRLLRSKATLEQDIKASYLMDHMISDGVLTNDEEAKVLSKATRKEQAVALLETL  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L+KDN +Y+SFYNAL+ E Y DLA+LLH  +P
+Sbjct  61  LRKDNRAYISFYNALIRESYGDLASLLHSDLP  92
+
+
+>sp|Q9GL23|APAF_CANLF Apoptotic protease-activating factor 1 (Fragment) 
+OS=Canis lupus familiaris OX=9615 GN=APAF1 PE=3 SV=2
+Length=50
+
+ Score = 65.1 bits (157),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 29/33 (88%), Positives = 31/33 (94%), Gaps = 0/33 (0%)
+
+Query  60  ILKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           ILKKDN SY+SFYNAL+HEGYKDLAALLH GIP
+Sbjct  1   ILKKDNYSYISFYNALIHEGYKDLAALLHSGIP  33
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.133    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+Results from round 2
+
+
+Query= d1cy5a_
+
+Length=92
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9EPV5|APAF_RAT Apoptotic protease-activating factor 1 OS=Ratt...  164     2e-47
+sp|O88879|APAF_MOUSE Apoptotic protease-activating factor 1 OS=Mu...  162     1e-46
+sp|O14727|APAF_HUMAN Apoptotic protease-activating factor 1 OS=Ho...  159     9e-46
+sp|Q9I9H8|APAF_DANRE Apoptotic protease-activating factor 1 OS=Da...  140     3e-39
+sp|Q9GL23|APAF_CANLF Apoptotic protease-activating factor 1 (Frag...  63.1    7e-14
+
+Sequences not found previously or not previously below threshold:
+
+sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis reman...  37.3    0.007
+
+
+>sp|Q9EPV5|APAF_RAT Apoptotic protease-activating factor 1 OS=Rattus 
+norvegicus OX=10116 GN=Apaf1 PE=1 SV=1
+Length=1249
+
+ Score = 164 bits (415),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 74/92 (80%), Positives = 83/92 (90%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQH+EALEKDIKTSYIMDHMIS+G LT+ EEEKV+++ TQ QRAA LIKMI
+Sbjct  1   MDAKARNCLLQHKEALEKDIKTSYIMDHMISNGVLTVVEEEKVKSQATQYQRAAALIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L KDN +Y+SFYNALLHEGYKDLA LLH G+P
+Sbjct  61  LNKDNYAYISFYNALLHEGYKDLAGLLHSGLP  92
+
+
+>sp|O88879|APAF_MOUSE Apoptotic protease-activating factor 1 OS=Mus 
+musculus OX=10090 GN=Apaf1 PE=1 SV=3
+Length=1249
+
+ Score = 162 bits (409),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 74/92 (80%), Positives = 83/92 (90%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQHREALEKDIKTSYIMDHMIS+G L++ EEEKV+++ TQ QRAA LIKMI
+Sbjct  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISNGVLSVIEEEKVKSQATQYQRAAALIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L KDN +Y+SFYNALLHEGYKDLAALL  G+P
+Sbjct  61  LNKDNCAYISFYNALLHEGYKDLAALLQSGLP  92
+
+
+>sp|O14727|APAF_HUMAN Apoptotic protease-activating factor 1 OS=Homo 
+sapiens OX=9606 GN=APAF1 PE=1 SV=2
+Length=1248
+
+ Score = 159 bits (402),  Expect = 9e-46, Method: Composition-based stats.
+ Identities = 92/92 (100%), Positives = 92/92 (100%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI
+Sbjct  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP
+Sbjct  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+
+
+>sp|Q9I9H8|APAF_DANRE Apoptotic protease-activating factor 1 OS=Danio 
+rerio OX=7955 GN=apaf1 PE=2 SV=1
+Length=1261
+
+ Score = 140 bits (354),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 49/92 (53%), Positives = 71/92 (77%), Gaps = 0/92 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           M+ +AR+ LL+ +  LE+DIK SY+MDHMISDG LT  EE KV ++ T++++A  L++ +
+Sbjct  1   MEERARSRLLRSKATLEQDIKASYLMDHMISDGVLTNDEEAKVLSKATRKEQAVALLETL  60
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           L+KDN +Y+SFYNAL+ E Y DLA+LLH  +P
+Sbjct  61  LRKDNRAYISFYNALIRESYGDLASLLHSDLP  92
+
+
+>sp|Q9GL23|APAF_CANLF Apoptotic protease-activating factor 1 (Fragment) 
+OS=Canis lupus familiaris OX=9615 GN=APAF1 PE=3 SV=2
+Length=50
+
+ Score = 63.1 bits (152),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 29/33 (88%), Positives = 31/33 (94%), Gaps = 0/33 (0%)
+
+Query  60  ILKKDNDSYVSFYNALLHEGYKDLAALLHDGIP  92
+           ILKKDN SY+SFYNAL+HEGYKDLAALLH GIP
+Sbjct  1   ILKKDNYSYISFYNALIHEGYKDLAALLHSGIP  33
+
+
+>sp|P45436|CED3_CAERE Cell death protein 3 OS=Caenorhabditis remanei 
+OX=31234 GN=ced-3 PE=3 SV=2
+Length=508
+
+ Score = 37.3 bits (85),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 46/88 (52%), Gaps = 0/88 (0%)
+
+Query  1   MDAKARNCLLQHREALEKDIKTSYIMDHMISDGFLTISEEEKVRNEPTQQQRAAMLIKMI  60
+           M    RN L ++       +++  I++ +I+   L     + + +  T++ +   ++K +
+Sbjct  2   MRQDRRNLLERNILVFSNKLQSEQILEVLIAKQILNADNGDVINSCRTERDKRKEIVKAV  61
+
+Query  61  LKKDNDSYVSFYNALLHEGYKDLAALLH  88
+            ++ + ++ +FY+AL   G+ +LAA+L 
+Sbjct  62  QRRGDVAFDAFYDALRDTGHHELAAVLE  89
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.141    0.374    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0432    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5036639460
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,133 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2d0oa1
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O68195|DDRFA_KLEOK Diol dehydratase-reactivating factor alpha ...  323     3e-108
+
+
+>sp|O68195|DDRFA_KLEOK Diol dehydratase-reactivating factor alpha 
+subunit OS=Klebsiella oxytoca (strain ATCC 8724 / DSM 4798 
+/ JCM 20051 / NBRC 3318 / NRRL B-199 / KCTC 1686) OX=1006551 
+GN=ddrA PE=1 SV=1
+Length=610
+
+ Score = 323 bits (829),  Expect = 3e-108, Method: Compositional matrix adjust.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL  60
+            ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL
+Sbjct  93   ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL  152
+
+Query  61   RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS  120
+            RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS
+Sbjct  153  RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS  212
+
+Query  121  NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV  162
+            NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV
+Sbjct  213  NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV  254
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.137    0.383    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+Results from round 2
+
+
+Query= d2d0oa1
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O68195|DDRFA_KLEOK Diol dehydratase-reactivating factor alpha ...  325     7e-109
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O68195|DDRFA_KLEOK Diol dehydratase-reactivating factor alpha 
+subunit OS=Klebsiella oxytoca (strain ATCC 8724 / DSM 4798 
+/ JCM 20051 / NBRC 3318 / NRRL B-199 / KCTC 1686) OX=1006551 
+GN=ddrA PE=1 SV=1
+Length=610
+
+ Score = 325 bits (833),  Expect = 7e-109, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL  60
+            ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL
+Sbjct  93   ITESTMIGHNPKTPGGAGLGTGITITPQELLTRPADAPYILVVSSAFDFADIASVINASL  152
+
+Query  61   RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS  120
+            RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS
+Sbjct  153  RAGYQITGVILQRDDGVLVSNRLEKPLPIVDEVLYIDRIPLGMLAAIEVAVPGKVIETLS  212
+
+Query  121  NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV  162
+            NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV
+Sbjct  213  NPYGIATVFNLSPEETKNIVPMARALIGNRSAVVVKTPSGDV  254
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0421    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

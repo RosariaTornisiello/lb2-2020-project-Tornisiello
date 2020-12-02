@@ -1,0 +1,129 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1szha_
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P34704|HER1_CAEEL Protein her-1 OS=Caenorhabditis elegans OX=6...  293     3e-102
+
+
+>sp|P34704|HER1_CAEEL Protein her-1 OS=Caenorhabditis elegans 
+OX=6239 GN=her-1 PE=1 SV=1
+Length=175
+
+ Score = 293 bits (749),  Expect = 3e-102, Method: Compositional matrix adjust.
+ Identities = 144/147 (98%), Positives = 145/147 (99%), Gaps = 0/147 (0%)
+
+Query  1    STLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE  60
+            +TLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE
+Sbjct  18   TTLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE  77
+
+Query  61   PKKKINLDDSVCCSVFGNDQEDSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY  120
+            PKKKINLDDSVCCSVFGNDQ DSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY
+Sbjct  78   PKKKINLDDSVCCSVFGNDQNDSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY  137
+
+Query  121  KCFEKCRSLRKDGIKIEVLQFEEYCEA  147
+            KCFEKCRSLRKDGIKIEVLQFEEYC A
+Sbjct  138  KCFEKCRSLRKDGIKIEVLQFEEYCNA  164
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.137    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+Results from round 2
+
+
+Query= d1szha_
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P34704|HER1_CAEEL Protein her-1 OS=Caenorhabditis elegans OX=6...  267     5e-92
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P34704|HER1_CAEEL Protein her-1 OS=Caenorhabditis elegans 
+OX=6239 GN=her-1 PE=1 SV=1
+Length=175
+
+ Score = 267 bits (682),  Expect = 5e-92, Method: Composition-based stats.
+ Identities = 144/147 (98%), Positives = 145/147 (99%), Gaps = 0/147 (0%)
+
+Query  1    STLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE  60
+            +TLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE
+Sbjct  18   TTLTKELIKDAAEKCCTRNRQECCIEIMKFGTPIRCGYDRDPKLPGYVYKCLQNVLFAKE  77
+
+Query  61   PKKKINLDDSVCCSVFGNDQEDSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY  120
+            PKKKINLDDSVCCSVFGNDQ DSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY
+Sbjct  78   PKKKINLDDSVCCSVFGNDQNDSGRRCENRCKNLMTSPSIDAATRLDSIKSCSLLDNVLY  137
+
+Query  121  KCFEKCRSLRKDGIKIEVLQFEEYCEA  147
+            KCFEKCRSLRKDGIKIEVLQFEEYC A
+Sbjct  138  KCFEKCRSLRKDGIKIEVLQFEEYCNA  164
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.148    0.491    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0454    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

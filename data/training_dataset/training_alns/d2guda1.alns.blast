@@ -1,0 +1,3596 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2guda1
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain Q66D...  234     2e-80
+sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) OS...  42.7    2e-04
+
+
+>sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain 
+Q66D336) OX=373036 PE=1 SV=1
+Length=121
+
+ Score = 234 bits (598),  Expect = 2e-80, Method: Compositional matrix adjust.
+ Identities = 120/121 (99%), Positives = 120/121 (99%), Gaps = 0/121 (0%)
+
+Query  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+            SLTHRKFGGSGGSPFSGLSSIAVRSGSYLD IIIDGVHHGGSGGNLSPTFTFGSGEYISN
+Sbjct  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDXIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+
+Query  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+            MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ
+Sbjct  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+
+Query  121  Y  121
+            Y
+Sbjct  121  Y  121
+
+
+>sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) 
+OS=Parkia platycephala OX=185447 PE=1 SV=1
+Length=447
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 39/145 (27%), Positives = 73/145 (50%), Gaps = 28/145 (19%)
+
+Query  1    SLTHRKFGGSGGSPFS----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGG  44
+            S++   +GGSGG P+S                 + S+A +  S LD+    GV+   +G 
+Sbjct  300  SISIGPWGGSGGDPWSYTANEGINQIIIYAGSNIKSVAFKDTSGLDSATFGGVNPKDTGE  359
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGDY--------IDNISFETNMGRRFGPYGGSGGSANTLS  96
+              + +  + S EY+++++   G Y        I ++SF TN+   +GP+G +  ++ ++ 
+Sbjct  360  KNTVSINWPS-EYLTSISGTYGQYKFKDVFTTITSLSFTTNLAT-YGPFGKASATSFSIP  417
+
+Query  97   --NVKVIQINGSAGDYLDSLDIYYE  119
+              N  V+  +G AGDYLD++ I+ +
+Sbjct  418  IHNNMVVGFHGRAGDYLDAIGIFVK  442
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.138    0.402    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+Results from round 2
+
+
+Query= d2guda1
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain Q66D...  140     5e-43
+sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) OS...  135     8e-38
+
+Sequences not found previously or not previously below threshold:
+
+sp|P82859|LECA_CASCR Agglutinin OS=Castanea crenata OX=103480 PE=...  69.3    7e-14
+sp|F4HQX1|JAL3_ARATH Jacalin-related lectin 3 OS=Arabidopsis thal...  62.7    2e-11
+sp|P0C5C6|GOS9_ORYSJ Protein GOS9 OS=Oryza sativa subsp. japonica...  55.0    2e-09
+sp|A2WMH2|GOS9_ORYSI Protein GOS9 OS=Oryza sativa subsp. indica O...  55.0    2e-09
+sp|P93114|LECC_CALSE Jacalin-related lectin Calsepa OS=Calystegia...  52.7    2e-08
+sp|Q9SSM3|JAL19_ARATH Jacalin-related lectin 19 OS=Arabidopsis th...  52.7    3e-08
+sp|P93193|IPO_IPOBA Ipomoelin OS=Ipomoea batatas OX=4120 GN=IPO P...  44.6    2e-05
+sp|Q9LIF8|JAL36_ARATH Jacalin-related lectin 36 OS=Arabidopsis th...  45.4    2e-05
+sp|Q5XF82|JAL11_ARATH Jacalin-related lectin 11 OS=Arabidopsis th...  45.4    2e-05
+sp|Q8CJD3|ZG16_RAT Zymogen granule membrane protein 16 OS=Rattus ...  43.9    5e-05
+sp|Q0JMY8|SALT_ORYSJ Salt stress-induced protein OS=Oryza sativa ...  43.1    5e-05
+sp|P18674|LECA_MACPO Agglutinin alpha chain OS=Maclura pomifera O...  42.3    9e-05
+sp|O65187|JAL7L_ARATH Myrosinase-binding protein 1 OS=Arabidopsis...  43.5    1e-04
+sp|Q8K0C5|ZG16_MOUSE Zymogen granule membrane protein 16 OS=Mus m...  42.3    1e-04
+sp|O04312|JAL32_ARATH Jacalin-related lectin 32 OS=Arabidopsis th...  42.7    2e-04
+sp|P82953|LECH_HORVV Horcolin OS=Hordeum vulgare subsp. vulgare O...  41.9    2e-04
+sp|Q5U9T2|LECH_HORVU Horcolin OS=Hordeum vulgare OX=4513 PE=3 SV=1    41.9    2e-04
+sp|O04310|JAL34_ARATH Jacalin-related lectin 34 OS=Arabidopsis th...  42.7    2e-04
+sp|O49326|JAL21_ARATH Nitrile-specifier protein 2 OS=Arabidopsis ...  42.7    2e-04
+sp|A2WPN7|SALT_ORYSI Salt stress-induced protein OS=Oryza sativa ...  41.5    2e-04
+sp|Q9SAV0|JAL7_ARATH Myrosinase-binding protein 1 OS=Arabidopsis ...  42.7    2e-04
+sp|O60844|ZG16_HUMAN Zymogen granule membrane protein 16 OS=Homo ...  41.2    5e-04
+sp|Q9M5W9|JAL6L_ARATH Myrosinase-binding protein 2 OS=Arabidopsis...  41.5    5e-04
+sp|P18670|LECA_ARTIN Agglutinin alpha chain OS=Artocarpus integer...  40.4    6e-04
+sp|Q9FGC4|JAL42_ARATH Jacalin-related lectin 42 OS=Arabidopsis th...  41.2    7e-04
+sp|F4IB94|JAL8_ARATH Jacalin-related lectin 8 OS=Arabidopsis thal...  40.8    0.001
+sp|O04316|JAL29_ARATH Nitrile-specifier protein 4 OS=Arabidopsis ...  40.8    0.001
+sp|O80950|JAL22_ARATH Jacalin-related lectin 22 OS=Arabidopsis th...  40.4    0.001
+sp|C0HK14|LEC_MORIN Galactose-specific lectin (Fragments) OS=Moru...  39.6    0.001
+sp|O04311|JAL33_ARATH Jacalin-related lectin 33 OS=Arabidopsis th...  40.0    0.002
+sp|O04318|JAL27_ARATH Nitrile-specifier protein 3 OS=Arabidopsis ...  39.6    0.002
+sp|Q9SAV1|JAL6_ARATH Myrosinase-binding protein 2 OS=Arabidopsis ...  39.6    0.002
+sp|Q9M1A7|FBK75_ARATH Jacalin-related lectin 38 OS=Arabidopsis th...  39.2    0.003
+sp|O80948|JAL23_ARATH Jacalin-related lectin 23 OS=Arabidopsis th...  39.2    0.003
+sp|Q8GWI7|JAL10_ARATH Jacalin-related lectin 10 OS=Arabidopsis th...  39.2    0.003
+sp|F4IB95|JAL9_ARATH Jacalin-related lectin 9 OS=Arabidopsis thal...  38.8    0.004
+sp|O04309|JAL35_ARATH Jacalin-related lectin 35 OS=Arabidopsis th...  38.5    0.007
+sp|O04313|JAL31_ARATH PYK10-binding protein 2 OS=Arabidopsis thal...  37.7    0.009
+
+
+>sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain 
+Q66D336) OX=373036 PE=1 SV=1
+Length=121
+
+ Score = 140 bits (352),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 120/121 (99%), Positives = 120/121 (99%), Gaps = 0/121 (0%)
+
+Query  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+            SLTHRKFGGSGGSPFSGLSSIAVRSGSYLD IIIDGVHHGGSGGNLSPTFTFGSGEYISN
+Sbjct  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDXIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+
+Query  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+            MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ
+Sbjct  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+
+Query  121  Y  121
+            Y
+Sbjct  121  Y  121
+
+
+>sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) 
+OS=Parkia platycephala OX=185447 PE=1 SV=1
+Length=447
+
+ Score = 135 bits (340),  Expect = 8e-38, Method: Composition-based stats.
+ Identities = 39/145 (27%), Positives = 73/145 (50%), Gaps = 28/145 (19%)
+
+Query  1    SLTHRKFGGSGGSPFS----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGG  44
+            S++   +GGSGG P+S                 + S+A +  S LD+    GV+   +G 
+Sbjct  300  SISIGPWGGSGGDPWSYTANEGINQIIIYAGSNIKSVAFKDTSGLDSATFGGVNPKDTGE  359
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGDY--------IDNISFETNMGRRFGPYGGSGGSANTLS  96
+              + +  + S EY+++++   G Y        I ++SF TN+   +GP+G +  ++ ++ 
+Sbjct  360  KNTVSINWPS-EYLTSISGTYGQYKFKDVFTTITSLSFTTNLAT-YGPFGKASATSFSIP  417
+
+Query  97   --NVKVIQINGSAGDYLDSLDIYYE  119
+              N  V+  +G AGDYLD++ I+ +
+Sbjct  418  IHNNMVVGFHGRAGDYLDAIGIFVK  442
+
+
+ Score = 82.0 bits (201),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 36/144 (25%), Positives = 66/144 (46%), Gaps = 28/144 (19%)
+
+Query  2    LTHRKFGGSGGSPFS----------------GLSSIAVRSGSYLDAIIIDGVHHGGS--G  43
+            ++   +GGSGG+ +S                 + SI+ +  S   +    G     +  G
+Sbjct  6    ISVGPWGGSGGNYWSFKANHAITEIVIHVKDNIKSISFKDASGDISGTFGGKDPRENEKG  65
+
+Query  44   GNLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGG-SGGSANTLS-  96
+                    + + EY+ +++   GDY     I ++SF TN+   +GP+G  SGG + ++  
+Sbjct  66   DEKKIKIHWPT-EYLKSISGSYGDYNGVLVIRSLSFITNL-TTYGPFGSTSGGESFSIPI  123
+
+Query  97   -NVKVIQINGSAGDYLDSLDIYYE  119
+             +  V+  +G AG YLD+L I+ +
+Sbjct  124  ADSVVVGFHGRAGYYLDALGIFVQ  147
+
+
+ Score = 69.7 bits (169),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 29/143 (20%), Positives = 59/143 (41%), Gaps = 26/143 (18%)
+
+Query  1    SLTHRKFGGSGGSPFSG-----------------LSSIAVRSGSYLDAIIIDGVHHGGSG  43
+            +++   +GG  G                      ++SIA +  +        G      G
+Sbjct  153  TISFGPWGGPAGDDAFNFKVGSWIKDIIIYADAAINSIAFKDANGHCYGKFGGQDPNDIG  212
+
+Query  44   GNLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGGSANTLS--  96
+                     G+ E++ +++   G+Y     + ++SF TN+  + GP+G + G++ ++   
+Sbjct  213  VEKKVEID-GNLEHLKSISGTYGNYKGFEVVTSLSFITNV-TKHGPFGIASGTSFSIPIE  270
+
+Query  97   NVKVIQINGSAGDYLDSLDIYYE  119
+               V   +G +G YLDS+ IY +
+Sbjct  271  GSLVTGFHGKSGYYLDSIGIYVK  293
+
+
+>sp|P82859|LECA_CASCR Agglutinin OS=Castanea crenata OX=103480 
+PE=1 SV=1
+Length=309
+
+ Score = 69.3 bits (168),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 62/144 (43%), Gaps = 27/144 (19%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIII------DGVHH----GGSGG-  44
+            LT   +GG GG  +S      G+  + +   + + +I          + H    GG+G  
+Sbjct  5    LTVGLWGGEGGDRWSFVVNNGGIIGMEIVHANGIASITFKCGDEYGVLQHSRKFGGTGEG  64
+
+Query  45   --NLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGGSANTLSN  97
+                  +  +   EY+++++    D      I +ISF+TN G  +GPYG   G   + S 
+Sbjct  65   WKTDKISLNWPE-EYLTSISGTVADLWQHIIIRSISFKTNKGTEYGPYGVVTGQPFSYST  123
+
+Query  98   V--KVIQINGSAGDYLDSLDIYYE  119
+                ++  +G +G  LD++  Y +
+Sbjct  124  EGGVIVGFHGRSGTLLDAIGAYVK  147
+
+
+ Score = 47.3 bits (111),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 25/94 (27%), Positives = 45/94 (48%), Gaps = 11/94 (12%)
+
+Query  38   HHGGSGGNLSPTFTFGSGEYISNMTIRSG--------DYIDNISFETNMGRRFGPYGGSG  89
+            H G  G  + P     S E++  +    G          + +I+F TN   ++GPYG   
+Sbjct  217  HGGEGGEPIDPIKLEVSKEFLIRIAGFYGPVEGSGSFKALRSITFYTNKA-KYGPYGDEI  275
+
+Query  90   GSANT--LSNVKVIQINGSAGDYLDSLDIYYEQY  121
+            G A T  ++  +V+  +G +G YLD++ ++ E +
+Sbjct  276  GQAFTSSVAPGRVVGFHGRSGAYLDAIGVHMEYF  309
+
+
+>sp|F4HQX1|JAL3_ARATH Jacalin-related lectin 3 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL3 PE=2 SV=1
+Length=601
+
+ Score = 62.7 bits (151),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 32/142 (23%), Positives = 63/142 (44%), Gaps = 27/142 (19%)
+
+Query  3    THRKFGGSGGSPF-----SGLSSIAVRSGSYLDAIIIDGVHHGGS-----------GGNL  46
+            +   +GG  G  +     + +  I +  GS +D+I I+   +G S               
+Sbjct  15   SLGPWGGQSGHAWDDGMYTTVKQIIIAHGSGIDSIQIEYDKNGSSVWSEKRGGKGGKKFD  74
+
+Query  47   SPTFTFGSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGSGGSANTLSNV-  98
+               F +   EY+ ++    G +       + +++FE+N  R++GP+G   G+   L    
+Sbjct  75   KVKFDYPH-EYLISVNGTYGSFDVWGTICVRSLTFESNR-RKYGPFGVDSGTFFALPKSG  132
+
+Query  99   -KVIQINGSAGDYLDSLDIYYE  119
+             K+I  +G AG YLD++ ++ +
+Sbjct  133  SKIIGFHGKAGWYLDAIGVHTQ  154
+
+
+ Score = 54.3 bits (129),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 37/143 (26%), Positives = 66/143 (46%), Gaps = 27/143 (19%)
+
+Query  3    THRKFGGSGGSPF-----SGLSSIAVRSGSYLDAI---------IIDGVHHGGSGG--NL  46
+            T+  +GG+GG  F     +G+  I +     + ++          + G  HGG GG  + 
+Sbjct  242  TYGPWGGTGGIMFDDGIYTGIRQINLSRNVGIVSMKVCYDFRGQAVWGSKHGGVGGFKHD  301
+
+Query  47   SPTFTFGSGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANT--LSN  97
+               F + S E ++++T   G       + I +++F TN G + GPYG   G + T  +  
+Sbjct  302  KIVFDYPS-EVLTHVTGTYGPLMYMGPNVIKSLTFRTNRG-KHGPYGEEQGPSFTHQMDE  359
+
+Query  98   VKVIQINGSAGDYLDSLDIYYEQ  120
+             KV+   G  G +LDS+ ++  +
+Sbjct  360  GKVVGFLGREGLFLDSIGVHVME  382
+
+
+>sp|P0C5C6|GOS9_ORYSJ Protein GOS9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=GOS9 PE=2 SV=1
+Length=139
+
+ Score = 55.0 bits (131),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 31/113 (27%), Positives = 52/113 (46%), Gaps = 13/113 (12%)
+
+Query  17   GLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNLSPTFTFGSGEYISNMTIRSGD  67
+             L S+ +RSG+ +DAI    +            G GG    T T GS E++  ++    +
+Sbjct  27   SLKSVTIRSGAAIDAIAFTYIGTDGKEHLAGPWGGGGGNPTTITLGSQEFVKGISGTFTN  86
+
+Query  68   YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYY  118
+             + N+   TN+      +G  GG+A +L   +  V+   G AG  +DS+ +Y 
+Sbjct  87   VVTNLKIVTNVTTY--NFGQGGGTAFSLPLQSGSVVGFFGRAGALVDSIGVYV  137
+
+
+>sp|A2WMH2|GOS9_ORYSI Protein GOS9 OS=Oryza sativa subsp. indica 
+OX=39946 GN=GOS9 PE=2 SV=1
+Length=139
+
+ Score = 55.0 bits (131),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 31/113 (27%), Positives = 52/113 (46%), Gaps = 13/113 (12%)
+
+Query  17   GLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNLSPTFTFGSGEYISNMTIRSGD  67
+             L S+ +RSG+ +DAI    +            G GG    T T GS E++  ++    +
+Sbjct  27   SLKSVTIRSGAAIDAIAFTYIGTDGKEHLAGPWGGGGGNPTTITLGSQEFVKGISGTFTN  86
+
+Query  68   YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYY  118
+             + N+   TN+      +G  GG+A +L   +  V+   G AG  +DS+ +Y 
+Sbjct  87   VVTNLKIVTNVTTY--NFGQGGGTAFSLPLQSGSVVGFFGRAGALVDSIGVYV  137
+
+
+>sp|P93114|LECC_CALSE Jacalin-related lectin Calsepa OS=Calystegia 
+sepium OX=47519 PE=1 SV=1
+Length=153
+
+ Score = 52.7 bits (125),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 33/119 (28%), Positives = 57/119 (48%), Gaps = 12/119 (10%)
+
+Query  7    FGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSG  66
+            +GG G +P +   S     GS  D I + G       G  +     G+ EY++ ++   G
+Sbjct  35   YGGGGNNPIALTFSSTKADGSK-DTITVGGGGPDSITG--TEMVNIGTDEYLTGISGTFG  91
+
+Query  67   DYIDN-----ISFETNMGRRFGPYGGSGGSANTLSN---VKVIQINGSAGDYLDSLDIY  117
+             Y+DN     I+F TN+ +  GPYG   G+  + +N    +++   G +G Y+D++  Y
+Sbjct  92   IYLDNNVLRSITFTTNL-KAHGPYGQKVGTPFSSANVVGNEIVGFLGRSGYYVDAIGTY  149
+
+
+>sp|Q9SSM3|JAL19_ARATH Jacalin-related lectin 19 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL19 PE=2 SV=1
+Length=176
+
+ Score = 52.7 bits (125),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 33/144 (23%), Positives = 65/144 (45%), Gaps = 25/144 (17%)
+
+Query  1    SLTHRKFGGSGGSPFS-----GLSSIAVRSGSYLDAIII---------DGVHHGGSGGNL  46
+            ++    +GG+GG+ +      G+  I +     +D+I +             HGG GGN 
+Sbjct  12   TVFVGPWGGNGGTTWDDGIYDGVREIRLVYDHCIDSISVIYDKNGKPAKSEKHGGVGGNK  71
+
+Query  47   SPTFTFG-SGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV  98
+            +         EY++ ++             I +++F++N  + +GPYG   G+  T S  
+Sbjct  72   TSEIKLQYPEEYLTGVSGYYCPMVNSGTPVIRSMTFKSN-KQVYGPYGVEQGTPFTFSVN  130
+
+Query  99   --KVIQINGSAGDYLDSLDIYYEQ  120
+              +++ +NG +G YLDS+  +  +
+Sbjct  131  GGRIVGMNGRSGWYLDSIGFHLSR  154
+
+
+>sp|P93193|IPO_IPOBA Ipomoelin OS=Ipomoea batatas OX=4120 GN=IPO 
+PE=1 SV=1
+Length=154
+
+ Score = 44.6 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 51/113 (45%), Gaps = 8/113 (7%)
+
+Query  12   GSPFSGLSSIAVR-SGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGDY--  68
+            GSP   L+ I++  S +  D I + GV         +        E IS M      Y  
+Sbjct  41   GSPDQTLNLISITFSSNPTDIITVGGVGPEPLTYTETVNIDGDIIE-ISGMIANYKGYNV  99
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTLS---NVKVIQINGSAGDYLDSLDIYY  118
+            I +I F TN  + +GPYG + G+   +      K++   G++G Y+D++  YY
+Sbjct  100  IRSIKFTTN-KKEYGPYGANAGTPFNIKIPDGNKIVGFFGNSGWYVDAIGAYY  151
+
+
+>sp|Q9LIF8|JAL36_ARATH Jacalin-related lectin 36 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL36 PE=2 SV=1
+Length=460
+
+ Score = 45.4 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 44/89 (49%), Gaps = 9/89 (10%)
+
+Query  38   HHGGSGGNLSPTFTFGSGEYISNMTIRSG-----DYIDNISFETNMGRRFGPYGGSGGSA  92
+            HH G+ G  S   +    EYI+++T         D I  ++F+TN    +GPYG    + 
+Sbjct  42   HHHGTPGKKSDGVSLSPDEYITDVTGYYKTTGAEDAIAALAFKTN-KTEYGPYGNKTRNQ  100
+
+Query  93   NTL---SNVKVIQINGSAGDYLDSLDIYY  118
+             ++    + ++    G + + L+S+D+++
+Sbjct  101  FSIHAPKDNQIAGFQGISSNVLNSIDVHF  129
+
+
+>sp|Q5XF82|JAL11_ARATH Jacalin-related lectin 11 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL11 PE=2 SV=1
+Length=444
+
+ Score = 45.4 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 18/86 (21%), Positives = 34/86 (40%), Gaps = 10/86 (12%)
+
+Query  42   SGGNLSPTFTFGSGEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANT  94
+            +G     T      EYI+++              + +++F+T+ GR     G   GS   
+Sbjct  204  TGTQHEFTVNHP-YEYITSVEGTYAHTQPYNCVVLTSLTFKTSKGRASPAIGKVTGSKFK  262
+
+Query  95   LS--NVKVIQINGSAGDYLDSLDIYY  118
+            L      ++  +G  G  +D + +YY
+Sbjct  263  LERQGDAIVGFHGRVGSCIDGIGVYY  288
+
+
+ Score = 40.4 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 27/87 (31%), Positives = 40/87 (46%), Gaps = 8/87 (9%)
+
+Query  39   HGGSGGNLSPTFTFGS--GEYISNMTIRSGD---YIDNISFETNMGRRFGPYGGSGGSAN  93
+            HG SG   + TF   +   EY+ ++          I  + F TN    + P G + G+  
+Sbjct  56   HGASGRGFTETFEINNLEKEYLLSIEGYYNASTGVIQCLQFITNKKT-YDPIGYNEGARF  114
+
+Query  94   TLS--NVKVIQINGSAGDYLDSLDIYY  118
+            TLS    K+I  +G A  YL+SL  Y+
+Sbjct  115  TLSASRSKIIGFHGFADKYLNSLGAYF  141
+
+
+>sp|Q8CJD3|ZG16_RAT Zymogen granule membrane protein 16 OS=Rattus 
+norvegicus OX=10116 GN=Zg16 PE=2 SV=1
+Length=167
+
+ Score = 43.9 bits (102),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 30/135 (22%), Positives = 62/135 (46%), Gaps = 20/135 (15%)
+
+Query  5    RKFGGSGGSPFSG--------LSSIAVRSGSY------LDAIIIDGVHHGGSGGNLSPTF  50
+             ++GG GG  FS         +++I +R   Y      +    +   + GG+ G+L   F
+Sbjct  28   GEYGGKGGKRFSHSGNQLDGPITAIRIRVNRYYIIGLQVRYGTVWSDYVGGNQGDLEEIF  87
+
+Query  51   TFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL----SNVKVIQINGS  106
+                GE +  ++ +   Y+  + F T+ G R+ P+G   G++        N  +  I+G 
+Sbjct  88   LHP-GESVIQVSGKYKSYVKQLIFVTDKG-RYLPFGKDSGTSFNAVPLHPNTVLRFISGR  145
+
+Query  107  AGDYLDSLDIYYEQY  121
+            +G  +D++ ++++ Y
+Sbjct  146  SGSAIDAISLHWDTY  160
+
+
+>sp|Q0JMY8|SALT_ORYSJ Salt stress-induced protein OS=Oryza sativa 
+subsp. japonica OX=39947 GN=SALT PE=1 SV=1
+Length=145
+
+ Score = 43.1 bits (100),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 27/141 (19%), Positives = 50/141 (35%), Gaps = 25/141 (18%)
+
+Query  2    LTHRKFGGSGGS------PFSGLSSIAVRSGSYLDAIIID---------GVHHGGSGGNL  46
+            +    +GG+GGS      P   L  + + S   + +I  +          +   G G   
+Sbjct  4    VKIGPWGGNGGSAQDISVPPKKLLGVTIYSSDAIRSIAFNYIGVDGQEYAIGPWGGGEGT  63
+
+Query  47   SPTFTFGSGEYISNMTIRSG------DYIDNISFETNMGRRFGPYGGSGGSANTLS---N  97
+            S     GS E I  ++   G      D +  +   T+    +   G   G   ++    +
+Sbjct  64   STEIKLGSSEQIKEISGTHGPVYDLADIVTYLKIVTSANNTYEA-GVPNGKEFSIPLQDS  122
+
+Query  98   VKVIQINGSAGDYLDSLDIYY  118
+              V+   G +G  +D++ IY 
+Sbjct  123  GHVVGFFGRSGTLIDAIGIYV  143
+
+
+>sp|P18674|LECA_MACPO Agglutinin alpha chain OS=Maclura pomifera 
+OX=3496 PE=1 SV=2
+Length=133
+
+ Score = 42.3 bits (98),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 24/77 (31%), Positives = 38/77 (49%), Gaps = 9/77 (12%)
+
+Query  48   PTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGGSANTLS--NVKV  100
+             +  F S EYI  ++   G       I +++F+TN    +GPYG + G+  +L   N  +
+Sbjct  56   ISLEFPS-EYIVEVSGYVGKVEGYTVIRSLTFKTNKQT-YGPYGVTNGTPFSLPIENGLI  113
+
+Query  101  IQINGSAGDYLDSLDIY  117
+            +   GS G +LD   IY
+Sbjct  114  VGFKGSIGYWLDYFSIY  130
+
+
+>sp|O65187|JAL7L_ARATH Myrosinase-binding protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP1 PE=2 SV=1
+Length=462
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 28/137 (20%), Positives = 54/137 (39%), Gaps = 28/137 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  317  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKKTLLGTETFEL  376
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L     KV+
+Sbjct  377  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTN-KRTSQPFGMTAGEHFELKEDGYKVV  434
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G AGD +  + ++ 
+Sbjct  435  GFHGKAGDLVHQIGVHI  451
+
+
+>sp|Q8K0C5|ZG16_MOUSE Zymogen granule membrane protein 16 OS=Mus 
+musculus OX=10090 GN=Zg16 PE=1 SV=1
+Length=167
+
+ Score = 42.3 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 22/86 (26%), Positives = 45/86 (52%), Gaps = 6/86 (7%)
+
+Query  40   GGSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL----  95
+            GG+ G+L   F    GE +  ++ +   Y+  + F T+ G R+ P+G + G++       
+Sbjct  77   GGTQGDLEEIFLHP-GESVIQVSGKYKSYVKQMIFVTDKG-RYLPFGKASGTSFNAVPLH  134
+
+Query  96   SNVKVIQINGSAGDYLDSLDIYYEQY  121
+             N  +  I+G +G  +DS+ ++++ Y
+Sbjct  135  PNTVLRFISGRSGSAIDSISLHWDTY  160
+
+
+>sp|O04312|JAL32_ARATH Jacalin-related lectin 32 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL32 PE=2 SV=1
+Length=300
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 35/136 (26%), Positives = 53/136 (39%), Gaps = 25/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIIDGVHH--------GGSGGNLSP----TFTF  52
+            GG GG  +   +   VR    G  LD +    V +        GG  G  S     TF  
+Sbjct  9    GGIGGDVWDDGAHDGVRKVHVGQGLDGVSFINVVYENGSQEVVGGEHGKKSLIGIETFEV  68
+
+Query  53   GSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV---KVIQ  102
+             + +YI  + +          D I +I+F T  G+   PYG    +   L      K++ 
+Sbjct  69   DADDYIVAVQVTYDKIFGYDSDIITSITFSTFKGKTSPPYGLDTENKFVLKEKNGGKLVG  128
+
+Query  103  INGSAGDYLDSLDIYY  118
+             +G AG+ L +L  Y+
+Sbjct  129  FHGRAGEILYALGAYF  144
+
+
+>sp|P82953|LECH_HORVV Horcolin OS=Hordeum vulgare subsp. vulgare 
+OX=112509 PE=1 SV=2
+Length=146
+
+ Score = 41.9 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 33/141 (23%), Positives = 57/141 (40%), Gaps = 25/141 (18%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIII-----------DGVHHGGSGG  44
+            +    +GG+GGS          + S+ V SG+ +DAI              G+  GG+GG
+Sbjct  5    VKIGPWGGNGGSERDVQPKPIRMVSMTVSSGAIVDAIAFTYVGTDNVQHSSGIKWGGTGG  64
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMG--RRFGPYGGSGGSANTLSN  97
+                T    +  Y++ ++   G +     + ++   T+ G  R +G   G       L  
+Sbjct  65   TED-TINLDATNYVTEISGTVGKFGTDDIVTSLKIITSKGVTRTYGSGTGIPFRVPVLDG  123
+
+Query  98   VKVIQINGSAGDYLDSLDIYY  118
+             K+    G AG +LD++  Y 
+Sbjct  124  GKIAGFFGRAGAFLDAIGFYI  144
+
+
+>sp|Q5U9T2|LECH_HORVU Horcolin OS=Hordeum vulgare OX=4513 PE=3 
+SV=1
+Length=146
+
+ Score = 41.9 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 33/141 (23%), Positives = 57/141 (40%), Gaps = 25/141 (18%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIII-----------DGVHHGGSGG  44
+            +    +GG+GGS          + S+ V SG+ +DAI              G+  GG+GG
+Sbjct  5    VKIGPWGGNGGSERDVQPKPIRMVSMTVSSGAIVDAIAFTYVGTDNVQHSSGIKWGGTGG  64
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMG--RRFGPYGGSGGSANTLSN  97
+                T    +  Y++ ++   G +     + ++   T+ G  R +G   G       L  
+Sbjct  65   TED-TINLDATNYVTEISGTVGKFGTDDIVTSLKIITSKGVTRTYGSGTGIPFRVPVLDG  123
+
+Query  98   VKVIQINGSAGDYLDSLDIYY  118
+             K+    G AG +LD++  Y 
+Sbjct  124  GKIAGFFGRAGAFLDAIGFYI  144
+
+
+>sp|O04310|JAL34_ARATH Jacalin-related lectin 34 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL34 PE=1 SV=1
+Length=705
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/76 (22%), Positives = 34/76 (45%), Gaps = 8/76 (11%)
+
+Query  50   FTFGSGEYISNMTIRSGD------YIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+            F   S EYI+++             +  + F+T+  +  GP+G   G+         K+ 
+Sbjct  470  FELESDEYITSVEGYYEKNFGVDTVVTTLIFKTSKNKTAGPFGIVSGTKFEFKKEGYKIT  529
+
+Query  102  QINGSAGDYLDSLDIY  117
+              +G AG+Y++++  Y
+Sbjct  530  GFHGRAGEYVNAIGAY  545
+
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 9/87 (10%)
+
+Query  40   GGSGGNLSPTFTFGSGEYISNMT-----IRSGDYIDNISFETNMGRRFGPYGGSGGSANT  94
+             GS G  S  FT    EYI+ ++     + + + I  ++F TN    +GPYG   G   +
+Sbjct  40   RGSVGPKSAEFTLAPDEYITALSAYGKSLSTQEVITALTFTTN-KTSYGPYGTKSGFQIS  98
+
+Query  95   LSNV---KVIQINGSAGDYLDSLDIYY  118
+                   ++    G++G+ L+++D++Y
+Sbjct  99   APEATGKQISGFLGTSGNVLNTIDVHY  125
+
+
+>sp|O49326|JAL21_ARATH Nitrile-specifier protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP2 PE=2 SV=1
+Length=471
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/56 (27%), Positives = 28/56 (50%), Gaps = 0/56 (0%)
+
+Query  63   IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYY  118
+            + + + I  ++F+T  G+   P+G   G+   L   K++  +G + D L SL  Y 
+Sbjct  87   VTTKEIISTLTFKTYKGKTSPPFGIVSGTKFVLQGGKIVGFHGRSTDVLHSLGAYI  142
+
+
+>sp|A2WPN7|SALT_ORYSI Salt stress-induced protein OS=Oryza sativa 
+subsp. indica OX=39946 GN=SALT PE=1 SV=2
+Length=145
+
+ Score = 41.5 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 27/141 (19%), Positives = 51/141 (36%), Gaps = 25/141 (18%)
+
+Query  2    LTHRKFGGSGGS------PFSGLSSIAVRSGSYLDAIIID---------GVHHGGSGGNL  46
+            +    +GG+GGS      P   L  + + S   + +I  +          +   G G   
+Sbjct  4    VKIGLWGGNGGSAQDISVPPKKLLGVTIYSSDAIRSIAFNYIGVDGQEYAIGPWGGGEGT  63
+
+Query  47   SPTFTFGSGEYISNMTIRSG------DYIDNISFETNMGRRFGPYGGSGGSANTLS---N  97
+            S     GS E+I  ++   G      D +  +   T+    +   G   G   ++    +
+Sbjct  64   STEIKLGSSEHIKEISGTHGPVYDLADIVTYLKIVTSANNTYEA-GVPNGKEFSIPLQDS  122
+
+Query  98   VKVIQINGSAGDYLDSLDIYY  118
+              V+   G +G  +D++ IY 
+Sbjct  123  GHVVGFFGRSGTLIDAIGIYV  143
+
+
+>sp|Q9SAV0|JAL7_ARATH Myrosinase-binding protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP1 PE=2 SV=1
+Length=462
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 28/137 (20%), Positives = 53/137 (39%), Gaps = 28/137 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  317  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKKTLLGTETFEL  376
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + ++ F+TN  R   P+G + G    L     KV+
+Sbjct  377  DYPS-EYITSVEGYYDKIFGVEAEVVTSLMFKTN-KRTSQPFGMTAGEHFELKEDGYKVV  434
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G AGD +  + ++ 
+Sbjct  435  GFHGKAGDLVHQIGVHI  451
+
+
+>sp|O60844|ZG16_HUMAN Zymogen granule membrane protein 16 OS=Homo 
+sapiens OX=9606 GN=ZG16 PE=1 SV=2
+Length=167
+
+ Score = 41.2 bits (95),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 42/86 (49%), Gaps = 6/86 (7%)
+
+Query  40   GGSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL----  95
+            GG  G+L   F    GE +  ++ +   Y+  + F T+ G R+  +G   G++       
+Sbjct  77   GGRNGDLEEIFLHP-GESVIQVSGKYKWYLKKLLFVTDKG-RYLSFGKDSGTSFNAVPLH  134
+
+Query  96   SNVKVIQINGSAGDYLDSLDIYYEQY  121
+             N  +  I+G +G  +D++ ++++ Y
+Sbjct  135  PNTVLRFISGRSGSLIDAIGLHWDVY  160
+
+
+>sp|Q9M5W9|JAL6L_ARATH Myrosinase-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP2 PE=2 SV=1
+Length=654
+
+ Score = 41.5 bits (96),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 54/136 (40%), Gaps = 28/136 (21%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  509  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKQTLLGTETFEL  568
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L     K++
+Sbjct  569  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTN-KRTSQPFGMTAGEHFELKEDGYKIV  626
+
+Query  102  QINGSAGDYLDSLDIY  117
+              +G AGD +  + ++
+Sbjct  627  GFHGKAGDLVHQIGVH  642
+
+
+ Score = 39.6 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 27/131 (21%), Positives = 57/131 (44%), Gaps = 18/131 (14%)
+
+Query  5    RKFGGSGGSPFS-----GLSSIAV-RSGSYLDAIIID---------GVHHGGSGGNLSPT  49
+            +  GG+GGS +      G+  + V R+G ++  I  +           H           
+Sbjct  160  KPQGGNGGSAWDDGAFDGVRKVLVGRNGKFVSYIRFEYAKGERTVPHAHGKRQEAPQEFV  219
+
+Query  50   FTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSA  107
+              + + E+I+++      Y+ ++ F+T+ GR    +G   GS      ++ K++   G +
+Sbjct  220  VDYPN-EHITSVEGTIDGYLSSLKFKTSKGRTSPVFGNVVGSKFVFEETSFKLVGFCGRS  278
+
+Query  108  GDYLDSLDIYY  118
+            GD +D+L  ++
+Sbjct  279  GDAIDALGAHF  289
+
+
+>sp|P18670|LECA_ARTIN Agglutinin alpha chain OS=Artocarpus integer 
+OX=3490 PE=1 SV=2
+Length=133
+
+ Score = 40.4 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 26/99 (26%), Positives = 46/99 (46%), Gaps = 12/99 (12%)
+
+Query  29   LDAIIIDGVHHGGSGGNLSP---TFTFGSGEYISNMTIRSGDY-----IDNISFETNMGR  80
+            L+     G +H       +P   +  F S EYI  ++  +G+      + +++F+TN   
+Sbjct  34   LNGSPYVGQNHKSFITGFTPVKISLDFPS-EYIMEVSGYTGNVSGYVVVRSLTFKTNKKT  92
+
+Query  81   RFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIY  117
+             +GPYG + G+   L   N  ++   GS G +LD   +Y
+Sbjct  93   -YGPYGVTSGTPFNLPIENGLIVGFKGSIGYWLDYFSMY  130
+
+
+>sp|Q9FGC4|JAL42_ARATH Jacalin-related lectin 42 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL42 PE=3 SV=1
+Length=444
+
+ Score = 41.2 bits (95),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 18/88 (20%), Positives = 37/88 (42%), Gaps = 11/88 (13%)
+
+Query  43   GGNLSPTFTFGSGEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTL  95
+            G     T  +   E I+++     D        + +++F+T+ GR    +G   G+   L
+Sbjct  205  GTQNQFTINYP-YECITSVGGSYADTQPYRCIVLRSLTFKTSNGRT-SVFGKETGTTFLL  262
+
+Query  96   SN--VKVIQINGSAGDYLDSLDIYYEQY  121
+             +    ++  +G  G  +DS+  YY  +
+Sbjct  263  ESQGNAIVGFHGRVGSCVDSIGEYYAPF  290
+
+
+>sp|F4IB94|JAL8_ARATH Jacalin-related lectin 8 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL8 PE=3 SV=1
+Length=313
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 19/98 (19%), Positives = 42/98 (43%), Gaps = 10/98 (10%)
+
+Query  30   DAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS-----GDYI--DNISFETNMGRRF  82
+            D  ++   H   +G        F + EY++++         G+Y+   +++F+T+ GR  
+Sbjct  211  DGQVVTRYHGMKNGETQEFAVDFPN-EYMTSVEGTYDHISEGNYLVLTSLTFKTSKGRIS  269
+
+Query  83   GPYGGSGGSANTLSN--VKVIQINGSAGDYLDSLDIYY  118
+              +G   G+   L      +   +G  G   D++ +Y+
+Sbjct  270  QTFGLVIGTKFVLETKGNVISGFHGRDGGSFDAIGVYF  307
+
+
+>sp|O04316|JAL29_ARATH Nitrile-specifier protein 4 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP4 PE=2 SV=1
+Length=619
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/62 (27%), Positives = 27/62 (44%), Gaps = 0/62 (0%)
+
+Query  57   YISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDI  116
+            Y   +   + + I  +SF+T  G+   P     G    L   K++  +G + D LDSL  
+Sbjct  229  YREKVNGMTSEMITFLSFKTYKGKTSQPIEQRPGIKFVLQGGKIVGFHGRSTDVLDSLGA  288
+
+Query  117  YY  118
+            Y 
+Sbjct  289  YI  290
+
+
+>sp|O80950|JAL22_ARATH Jacalin-related lectin 22 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL22 PE=1 SV=1
+Length=458
+
+ Score = 40.4 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 37/77 (48%), Gaps = 14/77 (18%)
+
+Query  56   EYISNMTIRSGDY-------IDNISFETNMGRR---FGP--YGGSGGSANTLSN--VKVI  101
+            E+I  +              I ++ F+T+ GR+   FGP   G + G+     +   K++
+Sbjct  75   EHIIAVEGSYHQVALIATEVITSLVFKTSKGRKSPLFGPNLLGITTGTKFVFEDEGKKIV  134
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G AGD +D+L +Y+
+Sbjct  135  GFHGRAGDAVDALGVYF  151
+
+
+ Score = 38.5 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 27/117 (23%), Positives = 44/117 (38%), Gaps = 15/117 (13%)
+
+Query  9    GSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGDY  68
+            G G     G+S +        D  ++ G  HG      +  F    GEY+ N+       
+Sbjct  339  GQGND---GVSFVKFEYSKGKD--LVPGDDHGKKTLLGAEEFVLEDGEYLMNIDGYYDKI  393
+
+Query  69   -------IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSLDI  116
+                   I  + F+TN  R   P+G   G   +L     K++  +G A D + S+ +
+Sbjct  394  FGVEEPIIVCLQFKTN-KRESMPFGMDSGKKFSLGEEGHKIVGFHGQASDVVHSIGV  449
+
+
+>sp|C0HK14|LEC_MORIN Galactose-specific lectin (Fragments) OS=Morus 
+indica OX=248361 PE=1 SV=1
+Length=157
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 38/77 (49%), Gaps = 9/77 (12%)
+
+Query  48   PTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGGSANTLS--NVKV  100
+             +  F S EYI  ++  +G       + +++F+TN    +GPYG + G+   L   +  +
+Sbjct  80   ISLDFPS-EYIVEVSGYTGKVSGYLVVRSLTFKTNKET-YGPYGVTSGTHFKLPIQDGLI  137
+
+Query  101  IQINGSAGDYLDSLDIY  117
+            +   GS G +LD +  +
+Sbjct  138  VGFKGSVGYWLDYIGFH  154
+
+
+>sp|O04311|JAL33_ARATH Jacalin-related lectin 33 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL33 PE=1 SV=1
+Length=300
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 49/120 (41%), Gaps = 15/120 (13%)
+
+Query  9    GSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS---  65
+            G G    S ++ +  +     D+  ++G  HG        TF   + +YI  + +     
+Sbjct  30   GQGQDGVSSINVVYAK-----DSQDVEGGEHGKKTLLGFETFEVDADDYIVAVQVTYDNV  84
+
+Query  66   ----GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV---KVIQINGSAGDYLDSLDIYY  118
+                 D I +I+F T  G+   PYG        L +    K++  +G AG+ L +L  Y+
+Sbjct  85   FGQDSDIITSITFNTFKGKTSPPYGLETQKKFVLKDKNGGKLVGFHGRAGEALYALGAYF  144
+
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 25/117 (21%), Positives = 44/117 (38%), Gaps = 13/117 (11%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSG-GNLSPTFTFGSGEYISNMTIRS-----  65
+            G    G+S++        + I+  G H   +  G       + S EYI+ +         
+Sbjct  182  GQGQDGISAVKFEYNKGAENIV-GGEHGKPTLLGFEEFEIDYPS-EYITAVEGTYDKIFG  239
+
+Query  66   --GDYIDNISFETNMGRRFGPYGGSGGSANTLSN--VKVIQINGSAGDYLDSLDIYY  118
+              G  I  + F+TN      P+G   G+A  L     K++  +G A + L    ++ 
+Sbjct  240  SDGLIITMLRFKTNKQTS-APFGLEAGTAFELKEEGHKIVGFHGKASELLHQFGVHV  295
+
+
+>sp|O04318|JAL27_ARATH Nitrile-specifier protein 3 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP3 PE=2 SV=1
+Length=467
+
+ Score = 39.6 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/109 (21%), Positives = 42/109 (39%), Gaps = 9/109 (8%)
+
+Query  17   GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTI-------RSGDYI  69
+            G++ +     +  + ++  G  HG         F   S +YI  +          + + I
+Sbjct  35   GIAFVKFEYANGSEVVV--GDEHGEKTELGVEEFEIDSDDYIVYVEGYREKVSDMTSEMI  92
+
+Query  70   DNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYY  118
+              +SF+T+ G+   P     G    L   K++  +G + D L SL  Y 
+Sbjct  93   TFLSFKTSKGKTSQPIVKKPGVKFVLHGGKIVGFHGRSTDVLHSLGAYV  141
+
+
+>sp|Q9SAV1|JAL6_ARATH Myrosinase-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=F-ATMBP PE=2 SV=1
+Length=642
+
+ Score = 39.6 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 26/136 (19%), Positives = 54/136 (40%), Gaps = 28/136 (21%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ D        G  +   
+Sbjct  497  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDRHGKQTLLGTETFEL  556
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L+    K++
+Sbjct  557  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTN-KRTSQPFGMTAGEHFELNEDGYKIV  614
+
+Query  102  QINGSAGDYLDSLDIY  117
+              +G AGD +  + ++
+Sbjct  615  GFHGKAGDLVHQIGVH  630
+
+
+ Score = 39.6 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 25/131 (19%), Positives = 56/131 (43%), Gaps = 18/131 (14%)
+
+Query  5    RKFGGSGGSPFS-----GLSSIAV-RSGSYLDAIIID---------GVHHGGSGGNLSPT  49
+            +  GG+GGS +      G+  + V R+G ++  +  +           H           
+Sbjct  160  KPQGGNGGSAWDDGAFDGVRKVLVGRNGKFVSYVRFEYAKGERMVPHAHGKRQEAPQEFV  219
+
+Query  50   FTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSA  107
+              + + E+I+++      Y+ ++ F T+ GR    +G   GS      ++ K++   G +
+Sbjct  220  VDYPN-EHITSVEGTIDGYLSSLKFTTSKGRTSPVFGNVVGSKFVFEETSFKLVGFCGRS  278
+
+Query  108  GDYLDSLDIYY  118
+            G+ +D+L  ++
+Sbjct  279  GEAIDALGAHF  289
+
+
+>sp|Q9M1A7|FBK75_ARATH Jacalin-related lectin 38 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL38 PE=2 SV=1
+Length=521
+
+ Score = 39.2 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 37/90 (41%), Gaps = 7/90 (8%)
+
+Query  34   IDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD-YIDNISFETNMGRRFGPYGGSGGSA  92
+            + G  HG S    +        +YI  +     + +I +++F  + G R   +G   G +
+Sbjct  430  VAGAAHGDSTE--TRGLMVPDDDYIEAVQGTYTESHITSMAFRLHKGNRSLRFGFFEGMS  487
+
+Query  93   NTLSN---VKVIQINGSAGD-YLDSLDIYY  118
+              L      K+I   G + D YL +  +++
+Sbjct  488  FVLGGARGSKIIGFYGRSSDLYLTAFGVHF  517
+
+
+>sp|O80948|JAL23_ARATH Jacalin-related lectin 23 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL23 PE=1 SV=1
+Length=459
+
+ Score = 39.2 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 35/59 (59%), Gaps = 7/59 (12%)
+
+Query  67   DYIDNISFETNMGRR---FGP--YGGSGGSANTLSN--VKVIQINGSAGDYLDSLDIYY  118
+            + I N+ F+T+ GR+   FGP   G + G+   + +   K++  +G +G+ LD+L +Y+
+Sbjct  93   EVITNLVFKTSKGRKSPLFGPNLLGITTGTKFVIEDGGKKIVGFHGRSGNALDALGVYF  151
+
+
+ Score = 39.2 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 28/137 (20%), Positives = 48/137 (35%), Gaps = 29/137 (21%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GGSGG  +                  G++ +        D  ++ G  HG      +  F
+Sbjct  319  GGSGGVAWDDGVYDGVRKILVGQGNDGVAFVKFEYNKGKD--LVSGDDHGKMTLLGTEEF  376
+
+Query  51   TFGSGEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVI  101
+                GEY++ +              I  + F+TN  R   P+G   G   +L     K++
+Sbjct  377  VLEDGEYLTAIDGYYDKIFGVETPMIICLQFKTN-KRESTPFGMDSGEKFSLGEKGHKIV  435
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G A D + S+ +  
+Sbjct  436  GFHGQASDVVHSIGVTV  452
+
+
+>sp|Q8GWI7|JAL10_ARATH Jacalin-related lectin 10 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL10 PE=2 SV=1
+Length=315
+
+ Score = 39.2 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 26/100 (26%), Positives = 42/100 (42%), Gaps = 8/100 (8%)
+
+Query  23   VRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD--YIDNISFETNMGR  80
+            V+ G  +DA I       GSG   +    + + EYI ++         +  + F+TN+  
+Sbjct  66   VKDGKTIDASIHG---VSGSGFTQTFEIDYQNSEYIVSVDGYYDKSGTMQALEFKTNLKT  122
+
+Query  81   RFGPYGGSGGSANTLSNV---KVIQINGSAGDYLDSLDIY  117
+                    G +  +L  V    VI  +GSAG  L+S+  Y
+Sbjct  123  SEVIGYPKGTTKFSLGGVNGKMVIGFHGSAGKVLNSIGAY  162
+
+
+>sp|F4IB95|JAL9_ARATH Jacalin-related lectin 9 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL9 PE=3 SV=1
+Length=314
+
+ Score = 38.8 bits (89),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 18/100 (18%), Positives = 38/100 (38%), Gaps = 12/100 (12%)
+
+Query  30   DAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD---------YIDNISFETNMGR  80
+            D  ++   H    G        + + E++ ++                I ++SF+T+ GR
+Sbjct  213  DGQVVTSSHGNKEGETEEFAIDYPN-EFLISVEGTYDSILFPDHYVLVITSLSFKTSKGR  271
+
+Query  81   RFGPYGGSGGSANTLSN--VKVIQINGSAGDYLDSLDIYY  118
+                YG   G+   L +    ++   G  G   D++ +Y+
+Sbjct  272  ISPTYGVVSGTKFVLESQGNAIVGFYGRNGGAFDAIGVYF  311
+
+
+>sp|O04309|JAL35_ARATH Jacalin-related lectin 35 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL35 PE=1 SV=1
+Length=451
+
+ Score = 38.5 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 24/90 (27%), Positives = 38/90 (42%), Gaps = 10/90 (11%)
+
+Query  36   GVHHGGSGGNLSPTFTFGSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGS  88
+            G  HG      +  F  G  EY++ ++             I ++ F+TN      PYG  
+Sbjct  356  GSDHGKKTLLGAEEFVLGPDEYVTAVSGYYDKIFSVDAPAIVSLKFKTNKRTSI-PYGLE  414
+
+Query  89   GGSANTLS--NVKVIQINGSAGDYLDSLDI  116
+            GG+   L   + K++   G AG+YL  L +
+Sbjct  415  GGTEFVLEKKDHKIVGFYGQAGEYLYKLGV  444
+
+
+>sp|O04313|JAL31_ARATH PYK10-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=PBP2 PE=1 SV=1
+Length=296
+
+ Score = 37.7 bits (86),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 30/79 (38%), Gaps = 11/79 (14%)
+
+Query  50   FTFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSN--VKV  100
+              + S EYI  +           G  I  + F+TN      P+G   G+A  L     K+
+Sbjct  216  LDYPS-EYIIAVEGTYDKIFGSDGSVITMLRFKTNKQTS-PPFGLEAGTAFELKEEGHKI  273
+
+Query  101  IQINGSAGDYLDSLDIYYE  119
+            +  +G A   L  + ++  
+Sbjct  274  VGFHGRADALLHKIGVHVR  292
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.340    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+Results from round 3
+
+
+Query= d2guda1
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9SSM3|JAL19_ARATH Jacalin-related lectin 19 OS=Arabidopsis th...  108     1e-29
+sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain Q66D...  99.0    9e-27
+sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) OS...  104     2e-26
+sp|Q8CJD3|ZG16_RAT Zymogen granule membrane protein 16 OS=Rattus ...  99.4    2e-26
+sp|P82859|LECA_CASCR Agglutinin OS=Castanea crenata OX=103480 PE=...  100     2e-25
+sp|F4HQX1|JAL3_ARATH Jacalin-related lectin 3 OS=Arabidopsis thal...  100     2e-24
+sp|Q8K0C5|ZG16_MOUSE Zymogen granule membrane protein 16 OS=Mus m...  91.3    3e-23
+sp|O49326|JAL21_ARATH Nitrile-specifier protein 2 OS=Arabidopsis ...  92.4    6e-22
+sp|Q0JMY8|SALT_ORYSJ Salt stress-induced protein OS=Oryza sativa ...  87.0    1e-21
+sp|P82953|LECH_HORVV Horcolin OS=Hordeum vulgare subsp. vulgare O...  85.9    2e-21
+sp|Q5U9T2|LECH_HORVU Horcolin OS=Hordeum vulgare OX=4513 PE=3 SV=1    85.9    2e-21
+sp|O60844|ZG16_HUMAN Zymogen granule membrane protein 16 OS=Homo ...  85.9    5e-21
+sp|A2WPN7|SALT_ORYSI Salt stress-induced protein OS=Oryza sativa ...  85.1    5e-21
+sp|O04311|JAL33_ARATH Jacalin-related lectin 33 OS=Arabidopsis th...  87.4    1e-20
+sp|O04312|JAL32_ARATH Jacalin-related lectin 32 OS=Arabidopsis th...  87.4    1e-20
+sp|P93193|IPO_IPOBA Ipomoelin OS=Ipomoea batatas OX=4120 GN=IPO P...  84.0    2e-20
+sp|O65187|JAL7L_ARATH Myrosinase-binding protein 1 OS=Arabidopsis...  86.6    7e-20
+sp|O04316|JAL29_ARATH Nitrile-specifier protein 4 OS=Arabidopsis ...  86.6    8e-20
+sp|Q9M5W9|JAL6L_ARATH Myrosinase-binding protein 2 OS=Arabidopsis...  86.6    9e-20
+sp|Q9SAV0|JAL7_ARATH Myrosinase-binding protein 1 OS=Arabidopsis ...  85.9    1e-19
+sp|O04310|JAL34_ARATH Jacalin-related lectin 34 OS=Arabidopsis th...  85.5    3e-19
+sp|P0C5C6|GOS9_ORYSJ Protein GOS9 OS=Oryza sativa subsp. japonica...  80.5    3e-19
+sp|A2WMH2|GOS9_ORYSI Protein GOS9 OS=Oryza sativa subsp. indica O...  80.5    3e-19
+sp|Q5XF82|JAL11_ARATH Jacalin-related lectin 11 OS=Arabidopsis th...  82.0    3e-18
+sp|P93114|LECC_CALSE Jacalin-related lectin Calsepa OS=Calystegia...  77.8    4e-18
+sp|F4IB94|JAL8_ARATH Jacalin-related lectin 8 OS=Arabidopsis thal...  80.1    8e-18
+sp|Q9LIF8|JAL36_ARATH Jacalin-related lectin 36 OS=Arabidopsis th...  77.0    2e-16
+sp|Q9FGC4|JAL42_ARATH Jacalin-related lectin 42 OS=Arabidopsis th...  75.5    6e-16
+sp|O80950|JAL22_ARATH Jacalin-related lectin 22 OS=Arabidopsis th...  74.7    1e-15
+sp|P18670|LECA_ARTIN Agglutinin alpha chain OS=Artocarpus integer...  70.9    1e-15
+sp|C0HK14|LEC_MORIN Galactose-specific lectin (Fragments) OS=Moru...  71.2    2e-15
+sp|P18674|LECA_MACPO Agglutinin alpha chain OS=Maclura pomifera O...  68.9    6e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9SAV1|JAL6_ARATH Myrosinase-binding protein 2 OS=Arabidopsis ...  84.7    4e-19
+sp|O04318|JAL27_ARATH Nitrile-specifier protein 3 OS=Arabidopsis ...  83.6    1e-18
+sp|Q9SDM9|JAL28_ARATH Nitrile-specifier protein 1 OS=Arabidopsis ...  81.6    4e-18
+sp|O04313|JAL31_ARATH PYK10-binding protein 2 OS=Arabidopsis thal...  78.6    2e-17
+sp|F4IB95|JAL9_ARATH Jacalin-related lectin 9 OS=Arabidopsis thal...  76.2    2e-16
+sp|O04314|JAL30_ARATH PYK10-binding protein 1 OS=Arabidopsis thal...  75.9    2e-16
+sp|Q8GWI7|JAL10_ARATH Jacalin-related lectin 10 OS=Arabidopsis th...  75.9    2e-16
+sp|O80948|JAL23_ARATH Jacalin-related lectin 23 OS=Arabidopsis th...  74.3    2e-15
+sp|O04309|JAL35_ARATH Jacalin-related lectin 35 OS=Arabidopsis th...  72.8    6e-15
+sp|Q9FGC5|JAL41_ARATH Jacalin-related lectin 41 OS=Arabidopsis th...  71.2    2e-14
+sp|O80998|JAL20_ARATH Jacalin-related lectin 20 OS=Arabidopsis th...  67.0    7e-13
+sp|Q9LKR6|JAL40_ARATH Jacalin-related lectin 40 OS=Arabidopsis th...  66.2    1e-12
+sp|Q9M1A7|FBK75_ARATH Jacalin-related lectin 38 OS=Arabidopsis th...  65.8    2e-12
+sp|O80736|JAL17_ARATH Jacalin-related lectin 17 OS=Arabidopsis th...  65.5    2e-12
+sp|Q9LQ31|JAL4_ARATH Jacalin-related lectin 4 OS=Arabidopsis thal...  65.5    2e-12
+sp|O80737|JAL18_ARATH Jacalin-related lectin 18 OS=Arabidopsis th...  65.5    2e-12
+sp|Q9ZU23|JAL5_ARATH Jacalin-related lectin 5 OS=Arabidopsis thal...  64.3    6e-12
+sp|Q9LTY2|JAL48_ARATH Jacalin-related lectin 48 OS=Arabidopsis th...  63.5    1e-11
+sp|Q9M1A9|JAL37_ARATH Jacalin-related lectin 37 OS=Arabidopsis th...  62.8    2e-11
+sp|Q9LTA8|JAL46_ARATH Jacalin-related lectin 46 OS=Arabidopsis th...  62.8    2e-11
+sp|O80735|JAL16_ARATH Jacalin-related lectin 16 OS=Arabidopsis th...  62.4    3e-11
+sp|Q0WMR0|JAL12_ARATH Jacalin-related lectin 12 OS=Arabidopsis th...  60.8    1e-10
+sp|F4I837|JAL14_ARATH Jacalin-related lectin 14 OS=Arabidopsis th...  60.5    2e-10
+sp|Q9LTA7|JAL47_ARATH Jacalin-related lectin 47 OS=Arabidopsis th...  59.3    2e-10
+sp|Q9FFW7|JAL43_ARATH Jacalin-related lectin 43 OS=Arabidopsis th...  59.3    4e-10
+sp|Q9FFW6|JAL44_ARATH Jacalin-related lectin 44 OS=Arabidopsis th...  58.9    5e-10
+sp|Q9ZU13|JAL13_ARATH Jacalin-related lectin 13 OS=Arabidopsis th...  54.7    1e-08
+sp|H3JUC3|JA15R_ARATH Jacalin-related lectin 15 OS=Arabidopsis th...  50.8    9e-08
+sp|Q9FNM2|JAL45_ARATH Jacalin-related lectin 45 OS=Arabidopsis th...  50.1    5e-07
+sp|F4I9R6|JA15S_ARATH Jacalin-related lectin 15 OS=Arabidopsis th...  48.1    6e-07
+sp|Q84X07|JAL24_ARATH Jacalin-related lectin 24 OS=Arabidopsis th...  46.2    9e-06
+sp|D9UBI3|RTM1A_ARATH Inactive protein RESTRICTED TEV MOVEMENT 1 ...  45.4    1e-05
+sp|D9UBG0|RTM1B_ARATH Inactive protein RESTRICTED TEV MOVEMENT 1 ...  45.4    1e-05
+sp|Q9SE37|JAL1_ARATH Protein RESTRICTED TEV MOVEMENT 1 OS=Arabido...  45.4    1e-05
+sp|P40483|YIK8_YEAST Putative zinc metalloproteinase YIL108W OS=S...  42.4    3e-04
+sp|Q9US12|YK66_SCHPO Putative zinc metalloproteinase C607.06c OS=...  42.0    3e-04
+sp|Q9MA49|JAL2_ARATH Jacalin-related lectin 2 OS=Arabidopsis thal...  41.2    4e-04
+sp|P08723|SPBP_RAT Prostatic spermine-binding protein OS=Rattus n...  40.0    0.001
+sp|P15501|SPBP_MOUSE Prostatic spermine-binding protein OS=Mus mu...  38.5    0.004
+
+
+>sp|Q9SSM3|JAL19_ARATH Jacalin-related lectin 19 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL19 PE=2 SV=1
+Length=176
+
+ Score = 108 bits (269),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/144 (23%), Positives = 65/144 (45%), Gaps = 25/144 (17%)
+
+Query  1    SLTHRKFGGSGGSPFS-----GLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNL  46
+            ++    +GG+GG+ +      G+  I +     +D+I +             HGG GGN 
+Sbjct  12   TVFVGPWGGNGGTTWDDGIYDGVREIRLVYDHCIDSISVIYDKNGKPAKSEKHGGVGGNK  71
+
+Query  47   SPTFTFG-SGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLS--  96
+            +         EY++ ++             I +++F++N  + +GPYG   G+  T S  
+Sbjct  72   TSEIKLQYPEEYLTGVSGYYCPMVNSGTPVIRSMTFKSNK-QVYGPYGVEQGTPFTFSVN  130
+
+Query  97   NVKVIQINGSAGDYLDSLDIYYEQ  120
+              +++ +NG +G YLDS+  +  +
+Sbjct  131  GGRIVGMNGRSGWYLDSIGFHLSR  154
+
+
+>sp|P84801|GRFIN_GRISQ Griffithsin OS=Griffithsia sp. (strain 
+Q66D336) OX=373036 PE=1 SV=1
+Length=121
+
+ Score = 99.0 bits (245),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 120/121 (99%), Positives = 120/121 (99%), Gaps = 0/121 (0%)
+
+Query  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+            SLTHRKFGGSGGSPFSGLSSIAVRSGSYLD IIIDGVHHGGSGGNLSPTFTFGSGEYISN
+Sbjct  1    SLTHRKFGGSGGSPFSGLSSIAVRSGSYLDXIIIDGVHHGGSGGNLSPTFTFGSGEYISN  60
+
+Query  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+            MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ
+Sbjct  61   MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYEQ  120
+
+Query  121  Y  121
+            Y
+Sbjct  121  Y  121
+
+
+>sp|P83304|LEC_PARPC Mannose/glucose-specific lectin (Fragment) 
+OS=Parkia platycephala OX=185447 PE=1 SV=1
+Length=447
+
+ Score = 104 bits (260),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 39/146 (27%), Positives = 73/146 (50%), Gaps = 28/146 (19%)
+
+Query  1    SLTHRKFGGSGGSPFS----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGG  44
+            S++   +GGSGG P+S                 + S+A +  S LD+    GV+   +G 
+Sbjct  300  SISIGPWGGSGGDPWSYTANEGINQIIIYAGSNIKSVAFKDTSGLDSATFGGVNPKDTGE  359
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGDY--------IDNISFETNMGRRFGPYGGSGGSANTLS  96
+              + +  + S EY+++++   G Y        I ++SF TN+   +GP+G +  ++ ++ 
+Sbjct  360  KNTVSINWPS-EYLTSISGTYGQYKFKDVFTTITSLSFTTNLA-TYGPFGKASATSFSIP  417
+
+Query  97   --NVKVIQINGSAGDYLDSLDIYYEQ  120
+              N  V+  +G AGDYLD++ I+ + 
+Sbjct  418  IHNNMVVGFHGRAGDYLDAIGIFVKP  443
+
+
+ Score = 78.6 bits (192),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 32/144 (22%), Positives = 61/144 (42%), Gaps = 26/144 (18%)
+
+Query  2    LTHRKFGGSGGSPF----------------SGLSSIAVRSGSYLDAIIIDGVHHGGSGGN  45
+            ++   +GGSGG+ +                  + SI+ +  S   +    G     +   
+Sbjct  6    ISVGPWGGSGGNYWSFKANHAITEIVIHVKDNIKSISFKDASGDISGTFGGKDPRENEKG  65
+
+Query  46   LSPTFT-FGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGG-SANTLS--  96
+                       EY+ +++   GDY     I ++SF TN+   +GP+G + G  + ++   
+Sbjct  66   DEKKIKIHWPTEYLKSISGSYGDYNGVLVIRSLSFITNL-TTYGPFGSTSGGESFSIPIA  124
+
+Query  97   NVKVIQINGSAGDYLDSLDIYYEQ  120
+            +  V+  +G AG YLD+L I+ + 
+Sbjct  125  DSVVVGFHGRAGYYLDALGIFVQP  148
+
+
+ Score = 74.7 bits (182),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/144 (20%), Positives = 60/144 (42%), Gaps = 26/144 (18%)
+
+Query  1    SLTHRKFGGSGGS-----------------PFSGLSSIAVRSGSYLDAIIIDGVHHGGSG  43
+            +++   +GG  G                    + ++SIA +  +        G      G
+Sbjct  153  TISFGPWGGPAGDDAFNFKVGSWIKDIIIYADAAINSIAFKDANGHCYGKFGGQDPNDIG  212
+
+Query  44   GNLSPTFTFGSGEYISNMTIRSGDY-----IDNISFETNMGRRFGPYGGSGGSANTLS--  96
+                     G+ E++ +++   G+Y     + ++SF TN+  + GP+G + G++ ++   
+Sbjct  213  VEKKVEID-GNLEHLKSISGTYGNYKGFEVVTSLSFITNV-TKHGPFGIASGTSFSIPIE  270
+
+Query  97   NVKVIQINGSAGDYLDSLDIYYEQ  120
+               V   +G +G YLDS+ IY + 
+Sbjct  271  GSLVTGFHGKSGYYLDSIGIYVKP  294
+
+
+>sp|Q8CJD3|ZG16_RAT Zymogen granule membrane protein 16 OS=Rattus 
+norvegicus OX=10116 GN=Zg16 PE=2 SV=1
+Length=167
+
+ Score = 99.4 bits (246),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 30/135 (22%), Positives = 62/135 (46%), Gaps = 20/135 (15%)
+
+Query  5    RKFGGSGGSPFSG--------LSSIAVRSGSY------LDAIIIDGVHHGGSGGNLSPTF  50
+             ++GG GG  FS         +++I +R   Y      +    +   + GG+ G+L   F
+Sbjct  28   GEYGGKGGKRFSHSGNQLDGPITAIRIRVNRYYIIGLQVRYGTVWSDYVGGNQGDLEEIF  87
+
+Query  51   TFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL----SNVKVIQINGS  106
+                GE +  ++ +   Y+  + F T+ GR + P+G   G++        N  +  I+G 
+Sbjct  88   LHP-GESVIQVSGKYKSYVKQLIFVTDKGR-YLPFGKDSGTSFNAVPLHPNTVLRFISGR  145
+
+Query  107  AGDYLDSLDIYYEQY  121
+            +G  +D++ ++++ Y
+Sbjct  146  SGSAIDAISLHWDTY  160
+
+
+>sp|P82859|LECA_CASCR Agglutinin OS=Castanea crenata OX=103480 
+PE=1 SV=1
+Length=309
+
+ Score = 100 bits (248),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 32/144 (22%), Positives = 59/144 (41%), Gaps = 27/144 (19%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIIID----------GVHHGGSGG-  44
+            LT   +GG GG  +S      G+  + +   + + +I                 GG+G  
+Sbjct  5    LTVGLWGGEGGDRWSFVVNNGGIIGMEIVHANGIASITFKCGDEYGVLQHSRKFGGTGEG  64
+
+Query  45   --NLSPTFTFGSGEYISNMTIRSGD-----YIDNISFETNMGRRFGPYGGSGGSANTL--  95
+                  +  +   EY+++++    D      I +ISF+TN G  +GPYG   G   +   
+Sbjct  65   WKTDKISLNWP-EEYLTSISGTVADLWQHIIIRSISFKTNKGTEYGPYGVVTGQPFSYST  123
+
+Query  96   SNVKVIQINGSAGDYLDSLDIYYE  119
+                ++  +G +G  LD++  Y +
+Sbjct  124  EGGVIVGFHGRSGTLLDAIGAYVK  147
+
+
+ Score = 67.4 bits (163),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 27/117 (23%), Positives = 49/117 (42%), Gaps = 12/117 (10%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRSGDY------  68
+              +      S    D   +    HGG GG          S E++  +    G        
+Sbjct  194  DSVIHAIRVSYQSKDGEPLLSPKHGGEGGEPIDPIKLEVSKEFLIRIAGFYGPVEGSGSF  253
+
+Query  69   --IDNISFETNMGRRFGPYGGSGGSAN--TLSNVKVIQINGSAGDYLDSLDIYYEQY  121
+              + +I+F TN  + +GPYG   G A   +++  +V+  +G +G YLD++ ++ E +
+Sbjct  254  KALRSITFYTNKAK-YGPYGDEIGQAFTSSVAPGRVVGFHGRSGAYLDAIGVHMEYF  309
+
+
+>sp|F4HQX1|JAL3_ARATH Jacalin-related lectin 3 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL3 PE=2 SV=1
+Length=601
+
+ Score = 100 bits (248),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 32/143 (22%), Positives = 62/143 (43%), Gaps = 27/143 (19%)
+
+Query  3    THRKFGGSGGSPFS-----GLSSIAVRSGSYLDAIIIDGVHHGGS-----------GGNL  46
+            +   +GG  G  +       +  I +  GS +D+I I+   +G S               
+Sbjct  15   SLGPWGGQSGHAWDDGMYTTVKQIIIAHGSGIDSIQIEYDKNGSSVWSEKRGGKGGKKFD  74
+
+Query  47   SPTFTFGSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGSGGSANTLS--N  97
+               F +   EY+ ++    G +       + +++FE+N  R++GP+G   G+   L    
+Sbjct  75   KVKFDYPH-EYLISVNGTYGSFDVWGTICVRSLTFESNR-RKYGPFGVDSGTFFALPKSG  132
+
+Query  98   VKVIQINGSAGDYLDSLDIYYEQ  120
+             K+I  +G AG YLD++ ++ + 
+Sbjct  133  SKIIGFHGKAGWYLDAIGVHTQP  155
+
+
+ Score = 81.3 bits (199),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 36/140 (26%), Positives = 59/140 (42%), Gaps = 25/140 (18%)
+
+Query  3    THRKFGGSGGSPFS-----GLSSIAVRSGSYL---------DAIIIDGVHHGGSGGNLSP  48
+            T+  +GG+GG  F      G+  I +     +             + G  HGG GG    
+Sbjct  242  TYGPWGGTGGIMFDDGIYTGIRQINLSRNVGIVSMKVCYDFRGQAVWGSKHGGVGGFKHD  301
+
+Query  49   TFTFG-SGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANT--LSNV  98
+               F    E ++++T   G       + I +++F TN G+  GPYG   G + T  +   
+Sbjct  302  KIVFDYPSEVLTHVTGTYGPLMYMGPNVIKSLTFRTNRGK-HGPYGEEQGPSFTHQMDEG  360
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+            KV+   G  G +LDS+ ++ 
+Sbjct  361  KVVGFLGREGLFLDSIGVHV  380
+
+
+ Score = 61.6 bits (148),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 25/119 (21%), Positives = 53/119 (45%), Gaps = 17/119 (14%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGG---SGGNLSPTFTFGSGEYISNMTIRSG------  66
+              ++SI +      +   +  + HGG           F +   E I+ ++   G      
+Sbjct  470  DAITSIQIEYDR--NGQSVWSIKHGGDSNGVATHRIKFEYP-DESITCISGYYGPLNNSD  526
+
+Query  67   --DYIDNISFETNMGRRFGPYGGSGGSANTLSN--VKVIQINGSAGDYLDSLDIYYEQY  121
+              + + ++SF T+ GR +GPYG   G+  T +    KV+  +G +  +LD++ ++ + +
+Sbjct  527  RYNVVKSLSFYTSRGR-YGPYGEETGTFFTSTTTQGKVLGFHGRSSFHLDAIGVHMQHW  584
+
+
+>sp|Q8K0C5|ZG16_MOUSE Zymogen granule membrane protein 16 OS=Mus 
+musculus OX=10090 GN=Zg16 PE=1 SV=1
+Length=167
+
+ Score = 91.3 bits (225),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 30/135 (22%), Positives = 62/135 (46%), Gaps = 20/135 (15%)
+
+Query  5    RKFGGSGGSPFSG--------LSSIAVRSGSY------LDAIIIDGVHHGGSGGNLSPTF  50
+             ++GG GG  FS         +++  +R   Y      +    +   + GG+ G+L   F
+Sbjct  28   GEYGGKGGKRFSHSGNQLDGPITAFRIRVNRYYIVGLQVRYGTVWSDYVGGTQGDLEEIF  87
+
+Query  51   TFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL----SNVKVIQINGS  106
+                GE +  ++ +   Y+  + F T+ GR + P+G + G++        N  +  I+G 
+Sbjct  88   LHP-GESVIQVSGKYKSYVKQMIFVTDKGR-YLPFGKASGTSFNAVPLHPNTVLRFISGR  145
+
+Query  107  AGDYLDSLDIYYEQY  121
+            +G  +DS+ ++++ Y
+Sbjct  146  SGSAIDSISLHWDTY  160
+
+
+>sp|O49326|JAL21_ARATH Nitrile-specifier protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP2 PE=2 SV=1
+Length=471
+
+ Score = 92.4 bits (228),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 28/135 (21%), Positives = 44/135 (33%), Gaps = 23/135 (17%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIID------------GVHHGGSGGNLSPTFTF  52
+            GG  G  +   +   VR    G   D I               G   G      +  F  
+Sbjct  9    GGEIGDVWDDGAYDGVRKVYVGQGEDGIAFVKFEYVNGSQEVVGDERGKKTLLGAEEFEV  68
+
+Query  53   GSGEYISNMTIRS--------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQIN  104
+               +YI  +             + I  ++F+T  G+   P+G   G+   L   K++  +
+Sbjct  69   DPDDYIVYVEGYHEKVFGVTTKEIISTLTFKTYKGKTSPPFGIVSGTKFVLQGGKIVGFH  128
+
+Query  105  GSAGDYLDSLDIYYE  119
+            G + D L SL  Y  
+Sbjct  129  GRSTDVLHSLGAYIS  143
+
+
+>sp|Q0JMY8|SALT_ORYSJ Salt stress-induced protein OS=Oryza sativa 
+subsp. japonica OX=39947 GN=SALT PE=1 SV=1
+Length=145
+
+ Score = 87.0 bits (214),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 27/143 (19%), Positives = 50/143 (35%), Gaps = 25/143 (17%)
+
+Query  2    LTHRKFGGSGGS------PFSGLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNL  46
+            +    +GG+GGS      P   L  + + S   + +I  + +            G G   
+Sbjct  4    VKIGPWGGNGGSAQDISVPPKKLLGVTIYSSDAIRSIAFNYIGVDGQEYAIGPWGGGEGT  63
+
+Query  47   SPTFTFGSGEYISNMTIRSG------DYIDNISFETNMGRRFGPYGGSGGSANTLS---N  97
+            S     GS E I  ++   G      D +  +   T+    +   G   G   ++    +
+Sbjct  64   STEIKLGSSEQIKEISGTHGPVYDLADIVTYLKIVTSANNTYEA-GVPNGKEFSIPLQDS  122
+
+Query  98   VKVIQINGSAGDYLDSLDIYYEQ  120
+              V+   G +G  +D++ IY   
+Sbjct  123  GHVVGFFGRSGTLIDAIGIYVHP  145
+
+
+>sp|P82953|LECH_HORVV Horcolin OS=Hordeum vulgare subsp. vulgare 
+OX=112509 PE=1 SV=2
+Length=146
+
+ Score = 85.9 bits (211),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 32/142 (23%), Positives = 53/142 (37%), Gaps = 23/142 (16%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIIIDGVH----------HGGSGGN  45
+            +    +GG+GGS          + S+ V SG+ +DAI    V             G  G 
+Sbjct  5    VKIGPWGGNGGSERDVQPKPIRMVSMTVSSGAIVDAIAFTYVGTDNVQHSSGIKWGGTGG  64
+
+Query  46   LSPTFTFGSGEYISNMTIRSG-----DYIDNISFETNMG--RRFGPYGGSGGSANTLSNV  98
+               T    +  Y++ ++   G     D + ++   T+ G  R +G   G       L   
+Sbjct  65   TEDTINLDATNYVTEISGTVGKFGTDDIVTSLKIITSKGVTRTYGSGTGIPFRVPVLDGG  124
+
+Query  99   KVIQINGSAGDYLDSLDIYYEQ  120
+            K+    G AG +LD++  Y   
+Sbjct  125  KIAGFFGRAGAFLDAIGFYITP  146
+
+
+>sp|Q5U9T2|LECH_HORVU Horcolin OS=Hordeum vulgare OX=4513 PE=3 
+SV=1
+Length=146
+
+ Score = 85.9 bits (211),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 32/142 (23%), Positives = 53/142 (37%), Gaps = 23/142 (16%)
+
+Query  2    LTHRKFGGSGGSPFS------GLSSIAVRSGSYLDAIIIDGVH----------HGGSGGN  45
+            +    +GG+GGS          + S+ V SG+ +DAI    V             G  G 
+Sbjct  5    VKIGPWGGNGGSERDVQPKPIRMVSMTVSSGAIVDAIAFTYVGTDNVQHSSGIKWGGTGG  64
+
+Query  46   LSPTFTFGSGEYISNMTIRSG-----DYIDNISFETNMG--RRFGPYGGSGGSANTLSNV  98
+               T    +  Y++ ++   G     D + ++   T+ G  R +G   G       L   
+Sbjct  65   TEDTINLDATNYVTEISGTVGKFGTDDIVTSLKIITSKGVTRTYGSGTGIPFRVPVLDGG  124
+
+Query  99   KVIQINGSAGDYLDSLDIYYEQ  120
+            K+    G AG +LD++  Y   
+Sbjct  125  KIAGFFGRAGAFLDAIGFYITP  146
+
+
+>sp|O60844|ZG16_HUMAN Zymogen granule membrane protein 16 OS=Homo 
+sapiens OX=9606 GN=ZG16 PE=1 SV=2
+Length=167
+
+ Score = 85.9 bits (211),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 25/122 (20%), Positives = 55/122 (45%), Gaps = 12/122 (10%)
+
+Query  10   SGGSPFSGLSSIAVRSGSY------LDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTI  63
+            SG      ++++ VR  +Y      +    +   + GG  G+L   F    GE +  ++ 
+Sbjct  41   SGNQLDGPITALRVRVNTYYIVGLQVRYGKVWSDYVGGRNGDLEEIFLHP-GESVIQVSG  99
+
+Query  64   RSGDYIDNISFETNMGRRFGPYGGSGGSANTL----SNVKVIQINGSAGDYLDSLDIYYE  119
+            +   Y+  + F T+ GR +  +G   G++        N  +  I+G +G  +D++ ++++
+Sbjct  100  KYKWYLKKLLFVTDKGR-YLSFGKDSGTSFNAVPLHPNTVLRFISGRSGSLIDAIGLHWD  158
+
+Query  120  QY  121
+             Y
+Sbjct  159  VY  160
+
+
+>sp|A2WPN7|SALT_ORYSI Salt stress-induced protein OS=Oryza sativa 
+subsp. indica OX=39946 GN=SALT PE=1 SV=2
+Length=145
+
+ Score = 85.1 bits (209),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 27/143 (19%), Positives = 51/143 (36%), Gaps = 25/143 (17%)
+
+Query  2    LTHRKFGGSGGS------PFSGLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNL  46
+            +    +GG+GGS      P   L  + + S   + +I  + +            G G   
+Sbjct  4    VKIGLWGGNGGSAQDISVPPKKLLGVTIYSSDAIRSIAFNYIGVDGQEYAIGPWGGGEGT  63
+
+Query  47   SPTFTFGSGEYISNMTIRSG------DYIDNISFETNMGRRFGPYGGSGGSANTLS---N  97
+            S     GS E+I  ++   G      D +  +   T+    +   G   G   ++    +
+Sbjct  64   STEIKLGSSEHIKEISGTHGPVYDLADIVTYLKIVTSANNTYEA-GVPNGKEFSIPLQDS  122
+
+Query  98   VKVIQINGSAGDYLDSLDIYYEQ  120
+              V+   G +G  +D++ IY   
+Sbjct  123  GHVVGFFGRSGTLIDAIGIYVHP  145
+
+
+>sp|O04311|JAL33_ARATH Jacalin-related lectin 33 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL33 PE=1 SV=1
+Length=300
+
+ Score = 87.4 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 49/120 (41%), Gaps = 15/120 (13%)
+
+Query  9    GSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS---  65
+            G G    S ++ +  +     D+  ++G  HG        TF   + +YI  + +     
+Sbjct  30   GQGQDGVSSINVVYAK-----DSQDVEGGEHGKKTLLGFETFEVDADDYIVAVQVTYDNV  84
+
+Query  66   ----GDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQINGSAGDYLDSLDIYY  118
+                 D I +I+F T  G+   PYG        L +    K++  +G AG+ L +L  Y+
+Sbjct  85   FGQDSDIITSITFNTFKGKTSPPYGLETQKKFVLKDKNGGKLVGFHGRAGEALYALGAYF  144
+
+
+ Score = 74.7 bits (182),  Expect = 8e-16, Method: Composition-based stats.
+ Identities = 23/118 (19%), Positives = 42/118 (36%), Gaps = 11/118 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS------  65
+            G    G+S++        + I+          G       + S EYI+ +          
+Sbjct  182  GQGQDGISAVKFEYNKGAENIVGGEHGKPTLLGFEEFEIDYPS-EYITAVEGTYDKIFGS  240
+
+Query  66   -GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+             G  I  + F+TN  +   P+G   G+A  L     K++  +G A + L    ++   
+Sbjct  241  DGLIITMLRFKTNK-QTSAPFGLEAGTAFELKEEGHKIVGFHGKASELLHQFGVHVMP  297
+
+
+>sp|O04312|JAL32_ARATH Jacalin-related lectin 32 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL32 PE=2 SV=1
+Length=300
+
+ Score = 87.4 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 35/136 (26%), Positives = 53/136 (39%), Gaps = 25/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIIDGVHH--------GGSGGNLS----PTFTF  52
+            GG GG  +   +   VR    G  LD +    V +        GG  G  S     TF  
+Sbjct  9    GGIGGDVWDDGAHDGVRKVHVGQGLDGVSFINVVYENGSQEVVGGEHGKKSLIGIETFEV  68
+
+Query  53   GSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLS---NVKVIQ  102
+             + +YI  + +          D I +I+F T  G+   PYG    +   L      K++ 
+Sbjct  69   DADDYIVAVQVTYDKIFGYDSDIITSITFSTFKGKTSPPYGLDTENKFVLKEKNGGKLVG  128
+
+Query  103  INGSAGDYLDSLDIYY  118
+             +G AG+ L +L  Y+
+Sbjct  129  FHGRAGEILYALGAYF  144
+
+
+ Score = 72.8 bits (177),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 22/116 (19%), Positives = 43/116 (37%), Gaps = 11/116 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS------  65
+            G    G+S++        + I+ D   +    G       + S EYI+ +          
+Sbjct  182  GQAQDGISAVKFVYDKGAEDIVGDEHGNDTLLGFEEFQLDYPS-EYITAVEGTYDKIFGF  240
+
+Query  66   -GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLDIYY  118
+              + I+ + F+TN  +   P+G   G+A  L     K++  +G     L    ++ 
+Sbjct  241  ETEVINMLRFKTNK-KTSPPFGIEAGTAFELKEEGCKIVGFHGKVSAVLHQFGVHI  295
+
+
+>sp|P93193|IPO_IPOBA Ipomoelin OS=Ipomoea batatas OX=4120 GN=IPO 
+PE=1 SV=1
+Length=154
+
+ Score = 84.0 bits (206),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 31/114 (27%), Positives = 51/114 (45%), Gaps = 8/114 (7%)
+
+Query  11   GGSPFSGLSSIAVR-SGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSG--D  67
+             GSP   L+ I++  S +  D I + GV         +        E IS M       +
+Sbjct  40   SGSPDQTLNLISITFSSNPTDIITVGGVGPEPLTYTETVNIDGDIIE-ISGMIANYKGYN  98
+
+Query  68   YIDNISFETNMGRRFGPYGGSGGSANTLS---NVKVIQINGSAGDYLDSLDIYY  118
+             I +I F TN  + +GPYG + G+   +      K++   G++G Y+D++  YY
+Sbjct  99   VIRSIKFTTNK-KEYGPYGANAGTPFNIKIPDGNKIVGFFGNSGWYVDAIGAYY  151
+
+
+>sp|O65187|JAL7L_ARATH Myrosinase-binding protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP1 PE=2 SV=1
+Length=462
+
+ Score = 86.6 bits (213),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 28/139 (20%), Positives = 54/139 (39%), Gaps = 28/139 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  317  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKKTLLGTETFEL  376
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L     KV+
+Sbjct  377  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTNK-RTSQPFGMTAGEHFELKEDGYKVV  434
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G AGD +  + ++   
+Sbjct  435  GFHGKAGDLVHQIGVHIVP  453
+
+
+ Score = 73.9 bits (180),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 48/136 (35%), Gaps = 24/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG+GG  F       VR        S +  +  +           HG      +  F   
+Sbjct  164  GGNGGETFDDGVFDHVRKVYVGQGESGVAYVKFEYEKDGKRETRDHGKMTLLGTEEFEVD  223
+
+Query  54   SGEYISNMT-------IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQI  103
+            S +YI+++          + + +  + F+T+ G    P+G        L +    K+   
+Sbjct  224  SDDYITSIEVSVDKVFGYNSEIVTALVFKTSKGTTSPPFGMVTEKKFELKDGNGGKLAGF  283
+
+Query  104  NGSAGDYLDSLDIYYE  119
+            +G A D L +L  Y+ 
+Sbjct  284  HGKASDVLYALGAYFA  299
+
+
+ Score = 49.3 bits (116),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 27/137 (20%), Positives = 54/137 (39%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG  G  +       G++ I V +G   ++ I  D V +G           G     +  
+Sbjct  13   GGKEGKEWDDGAEHDGVTKIYVAAGGLGIEQIRFDYVKNGQPKEGSFHGVKGRSTISTIE  72
+
+Query  50   FTFGSGEYISNMTIRS--GDYIDNISFETNMGRR----FGPYGGSGGSANTLSNVKVIQI  103
+             +  + EY+ +M       + I  I F++N        +  +G     +  +++ K+I  
+Sbjct  73   ISHPA-EYLISMEGWYDSTNIIQGIQFKSNKHTSQYFGYEFFGDGTQFSLQVNDNKIIGF  131
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A  +L+S+  Y+  
+Sbjct  132  HGFADSHLNSVGAYFAP  148
+
+
+>sp|O04316|JAL29_ARATH Nitrile-specifier protein 4 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP4 PE=2 SV=1
+Length=619
+
+ Score = 86.6 bits (213),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 24/115 (21%), Positives = 43/115 (37%), Gaps = 9/115 (8%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIR-------  64
+            G    G++ +     +   + ++ G  HG         F   + +YI  +          
+Sbjct  179  GQAQYGIAFVKFEYVNG--SQVVVGDEHGKKTELGVEEFEIDADDYIVYVEGYREKVNGM  236
+
+Query  65   SGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQINGSAGDYLDSLDIYYE  119
+            + + I  +SF+T  G+   P     G    L   K++  +G + D LDSL  Y  
+Sbjct  237  TSEMITFLSFKTYKGKTSQPIEQRPGIKFVLQGGKIVGFHGRSTDVLDSLGAYIS  291
+
+
+ Score = 61.6 bits (148),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 25/136 (18%), Positives = 50/136 (37%), Gaps = 25/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS-------GSYLDAIIIDGVHHGGSGGN------------LSP  48
+            GG+GG+ +   S     +       G+ ++ +    V +G +                  
+Sbjct  9    GGNGGNQWDDGSEYDAVTKIQVAAGGNGIEYVKFTYVKNGQTEEAPLRGVKGRSFEADPF  68
+
+Query  49   TFTFGSGEYISNMTIRSGD--YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQIN  104
+                   E++ ++  R      I  ++F++N  +     G   G+  TL   + K++   
+Sbjct  69   VINHP-EEHLVSVEGRYNPEGLILGLTFKSNK-KTSDLIGYEDGTPFTLQVQDKKIVGFY  126
+
+Query  105  GSAGDYLDSLDIYYEQ  120
+            G AG+ L SL  Y+  
+Sbjct  127  GFAGNNLHSLGAYFAP  142
+
+
+>sp|Q9M5W9|JAL6L_ARATH Myrosinase-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP2 PE=2 SV=1
+Length=654
+
+ Score = 86.6 bits (213),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 54/136 (40%), Gaps = 28/136 (21%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  509  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKQTLLGTETFEL  568
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L     K++
+Sbjct  569  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTNK-RTSQPFGMTAGEHFELKEDGYKIV  626
+
+Query  102  QINGSAGDYLDSLDIY  117
+              +G AGD +  + ++
+Sbjct  627  GFHGKAGDLVHQIGVH  642
+
+
+ Score = 78.6 bits (192),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 27/129 (21%), Positives = 50/129 (39%), Gaps = 16/129 (12%)
+
+Query  6    KFGGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFT  51
+              GG+GGS +   +   VR       G ++  I  +           HG           
+Sbjct  161  PQGGNGGSAWDDGAFDGVRKVLVGRNGKFVSYIRFEYAKGERTVPHAHGKRQEAPQEFVV  220
+
+Query  52   FGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGD  109
+                E+I+++      Y+ ++ F+T+ GR    +G   GS         K++   G +GD
+Sbjct  221  DYPNEHITSVEGTIDGYLSSLKFKTSKGRTSPVFGNVVGSKFVFEETSFKLVGFCGRSGD  280
+
+Query  110  YLDSLDIYY  118
+             +D+L  ++
+Sbjct  281  AIDALGAHF  289
+
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 27/137 (20%), Positives = 50/137 (36%), Gaps = 24/137 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG+GG+ F   +   VR        S +  +  +           HG      +  F   
+Sbjct  353  GGNGGTIFDDGAFDHVRKVYIGQGDSGVAYVKFEYEKDGKRETGEHGKMTVLGTEEFEVE  412
+
+Query  54   SGEYISN-------MTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQI  103
+            S +YI++       +     + + ++ F+T  G    P+G        L +    K++  
+Sbjct  413  SDDYITSAEVSVDNVFGFKSEIVTSLVFKTFKGITSQPFGMESEKKLELKDGKGGKLVGF  472
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A D L +L  Y+  
+Sbjct  473  HGKASDVLYALGAYFAP  489
+
+
+ Score = 58.5 bits (140),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 25/149 (17%), Positives = 50/149 (34%), Gaps = 32/149 (21%)
+
+Query  1    SLTHRKFGGSGGSPFSGLSSIAVR------SGSYLDAIIIDGVHHGGS---------GGN  45
+            S      GG+ G  F       V+        + +  I ++    G           G  
+Sbjct  2    SEKVGAMGGNKGGAFDDGVFDGVKKVIVGKDFNNVTYIKVEYEKDGKFEIREHGTNRGQL  61
+
+Query  46   LSPTFTFGSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGSG------GSA  92
+               +  + + EYI+ +              I ++ F+T+ GR     G +       G  
+Sbjct  62   KEFSVDYPN-EYITAVGGSYDTVFGYGSALIKSLLFKTSYGRTSPILGHTTLLGNPAGKE  120
+
+Query  93   NTLS---NVKVIQINGSAGDYLDSLDIYY  118
+              L      K++  +G +G+ LD++  ++
+Sbjct  121  FMLESKYGGKLLGFHGRSGEALDAIGPHF  149
+
+
+>sp|Q9SAV0|JAL7_ARATH Myrosinase-binding protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=MBP1 PE=2 SV=1
+Length=462
+
+ Score = 85.9 bits (211),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 28/139 (20%), Positives = 53/139 (38%), Gaps = 28/139 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ DG       G  +   
+Sbjct  317  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDGHGKKTLLGTETFEL  376
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + ++ F+TN  R   P+G + G    L     KV+
+Sbjct  377  DYPS-EYITSVEGYYDKIFGVEAEVVTSLMFKTNK-RTSQPFGMTAGEHFELKEDGYKVV  434
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G AGD +  + ++   
+Sbjct  435  GFHGKAGDLVHQIGVHIVP  453
+
+
+ Score = 74.7 bits (182),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 48/136 (35%), Gaps = 24/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG+GG  F       VR        S +  +  +           HG      +  F   
+Sbjct  164  GGNGGETFDDGVFDHVRKVYVGQGESGVAYVKFEYEKDGKRETRDHGKMTLLGTEEFEVD  223
+
+Query  54   SGEYISNMT-------IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQI  103
+            S +YI+++          + + +  + F+T+ G    P+G        L +    K+   
+Sbjct  224  SDDYITSIEVSVDKVFGYNSEIVTALVFKTSKGTTSPPFGMVTEKKFELKDGNGGKLAGF  283
+
+Query  104  NGSAGDYLDSLDIYYE  119
+            +G A D L +L  Y+ 
+Sbjct  284  HGKASDVLYALGAYFA  299
+
+
+ Score = 47.7 bits (112),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 29/138 (21%), Positives = 54/138 (39%), Gaps = 27/138 (20%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG  G  +       G++ I V +G   ++ I  D V +G           G     +  
+Sbjct  13   GGKEGKEWDDGAEHDGVTKIYVAAGGLGIEQIRFDYVKNGQPKEGSFHGVKGRSTISTIE  72
+
+Query  50   FTFGSGEYISNMTIRS--GDYIDNISFETNMGRRFGPYG---GSGGSANTLS--NVKVIQ  102
+             +  + EY+ +M       + I  I F++N       +G      G+  +L   + K+I 
+Sbjct  73   ISHPA-EYLISMEGWYDSTNIIQGIQFKSNK-HTSQYFGYEFLGDGTQFSLQVNDNKIIS  130
+
+Query  103  INGSAGDYLDSLDIYYEQ  120
+             +G A  +L+S+  Y+  
+Sbjct  131  FHGFADSHLNSVGAYFAP  148
+
+
+>sp|O04310|JAL34_ARATH Jacalin-related lectin 34 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL34 PE=1 SV=1
+Length=705
+
+ Score = 85.5 bits (210),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 21/117 (18%), Positives = 46/117 (39%), Gaps = 10/117 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD----  67
+            G    G++++     +   + ++ G   G         F   S EYI+++          
+Sbjct  434  GQGQDGVAAVKFEYKNG--SQVVFGDERGTRTLLGFEEFELESDEYITSVEGYYEKNFGV  491
+
+Query  68   --YIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLDIYYEQ  120
+               +  + F+T+  +  GP+G   G+         K+   +G AG+Y++++  Y   
+Sbjct  492  DTVVTTLIFKTSKNKTAGPFGIVSGTKFEFKKEGYKITGFHGRAGEYVNAIGAYLAP  548
+
+
+ Score = 67.8 bits (164),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 21/117 (18%), Positives = 39/117 (33%), Gaps = 10/117 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS------  65
+            G    G+ +++         +           G       + S EYI+ +          
+Sbjct  588  GQAQDGIGAVSFVYDKAGQVVEGKEHGKPTLLGFEEFELDYPS-EYITAVDGTYDAIFGN  646
+
+Query  66   GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+               ++ + F TN  R   P+G   G+A        K++  +G AGD L    ++   
+Sbjct  647  EPIVNMLRFTTNK-RVSIPFGIGAGTAFEFKKDGQKIVGFHGRAGDLLHKFGVHVAP  702
+
+
+ Score = 60.5 bits (145),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 24/120 (20%), Positives = 50/120 (42%), Gaps = 16/120 (13%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHH-------GGSGGNLSPTFTFGSGEYISNMTIR----  64
+            + +  + +     + +I +             GS G  S  FT    EYI+ ++      
+Sbjct  9    AKVKKVQLTFDEIIYSIQVTYDGATALQSQLRGSVGPKSAEFTLAPDEYITALSAYGKSL  68
+
+Query  65   -SGDYIDNISFETNMGRRFGPYGGSGGSANTLS---NVKVIQINGSAGDYLDSLDIYYEQ  120
+             + + I  ++F TN    +GPYG   G   +       ++    G++G+ L+++D++Y  
+Sbjct  69   STQEVITALTFTTNK-TSYGPYGTKSGFQISAPEATGKQISGFLGTSGNVLNTIDVHYSP  127
+
+
+ Score = 57.4 bits (137),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 25/127 (20%), Positives = 47/127 (37%), Gaps = 19/127 (15%)
+
+Query  12   GSPFSGLSSIAVRSG-SYLDAIIIDGVHHG------------GSGGNLSPTFTFGSGEYI  58
+            GS + G++ I    G   +  +  D V  G                           EY+
+Sbjct  270  GSDYDGVTKIYASYGGEGIQYVKFDYVKGGVTKQGVLHGKQQSRQNPREFVINHP-DEYL  328
+
+Query  59   SNMTIRSGDYIDNISFETNMGRRFG---PYGGSGGSANTLS--NVKVIQINGSAGDYLDS  113
+             ++       +  I F+TN+        P+  S  +  TL   + K+I  +G AG++++S
+Sbjct  329  VSVEGWYETVMLGIQFKTNLNTYEVSIYPFEPSTDTKFTLQVQDKKIIGFHGFAGNHVNS  388
+
+Query  114  LDIYYEQ  120
+            +  Y+  
+Sbjct  389  IGAYFVP  395
+
+
+>sp|P0C5C6|GOS9_ORYSJ Protein GOS9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=GOS9 PE=2 SV=1
+Length=139
+
+ Score = 80.5 bits (197),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 31/115 (27%), Positives = 52/115 (45%), Gaps = 13/115 (11%)
+
+Query  15   FSGLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNLSPTFTFGSGEYISNMTIRS  65
+               L S+ +RSG+ +DAI    +            G GG    T T GS E++  ++   
+Sbjct  25   PRSLKSVTIRSGAAIDAIAFTYIGTDGKEHLAGPWGGGGGNPTTITLGSQEFVKGISGTF  84
+
+Query  66   GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYY  118
+             + + N+   TN+      +G  GG+A +L   +  V+   G AG  +DS+ +Y 
+Sbjct  85   TNVVTNLKIVTNVTTY--NFGQGGGTAFSLPLQSGSVVGFFGRAGALVDSIGVYV  137
+
+
+>sp|A2WMH2|GOS9_ORYSI Protein GOS9 OS=Oryza sativa subsp. indica 
+OX=39946 GN=GOS9 PE=2 SV=1
+Length=139
+
+ Score = 80.5 bits (197),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 31/115 (27%), Positives = 52/115 (45%), Gaps = 13/115 (11%)
+
+Query  15   FSGLSSIAVRSGSYLDAIIIDGVH---------HGGSGGNLSPTFTFGSGEYISNMTIRS  65
+               L S+ +RSG+ +DAI    +            G GG    T T GS E++  ++   
+Sbjct  25   PRSLKSVTIRSGAAIDAIAFTYIGTDGKEHLAGPWGGGGGNPTTITLGSQEFVKGISGTF  84
+
+Query  66   GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYY  118
+             + + N+   TN+      +G  GG+A +L   +  V+   G AG  +DS+ +Y 
+Sbjct  85   TNVVTNLKIVTNVTTY--NFGQGGGTAFSLPLQSGSVVGFFGRAGALVDSIGVYV  137
+
+
+>sp|Q9SAV1|JAL6_ARATH Myrosinase-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=F-ATMBP PE=2 SV=1
+Length=642
+
+ Score = 84.7 bits (208),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 26/136 (19%), Positives = 54/136 (40%), Gaps = 28/136 (21%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+GG+ +                  G++ +         AI+ D        G  +   
+Sbjct  497  GGNGGASWDDGVFDGVRKILVGQGNDGVAFVTFEYNKGSQAILGDRHGKQTLLGTETFEL  556
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+++            + + +++F+TN  R   P+G + G    L+    K++
+Sbjct  557  DYPS-EYITSVEGYYDKIFGVEAEVVTSLTFKTNK-RTSQPFGMTAGEHFELNEDGYKIV  614
+
+Query  102  QINGSAGDYLDSLDIY  117
+              +G AGD +  + ++
+Sbjct  615  GFHGKAGDLVHQIGVH  630
+
+
+ Score = 76.6 bits (187),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 25/129 (19%), Positives = 49/129 (38%), Gaps = 16/129 (12%)
+
+Query  6    KFGGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFT  51
+              GG+GGS +   +   VR       G ++  +  +           HG           
+Sbjct  161  PQGGNGGSAWDDGAFDGVRKVLVGRNGKFVSYVRFEYAKGERMVPHAHGKRQEAPQEFVV  220
+
+Query  52   FGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGD  109
+                E+I+++      Y+ ++ F T+ GR    +G   GS         K++   G +G+
+Sbjct  221  DYPNEHITSVEGTIDGYLSSLKFTTSKGRTSPVFGNVVGSKFVFEETSFKLVGFCGRSGE  280
+
+Query  110  YLDSLDIYY  118
+             +D+L  ++
+Sbjct  281  AIDALGAHF  289
+
+
+ Score = 69.3 bits (168),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 50/136 (37%), Gaps = 24/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG+GG+ F   +   VR        S +  +  +           HG      +  F   
+Sbjct  341  GGNGGTIFDDGAFDHVRKVYIGQGDSGVAYVKFEYRKDGKRETREHGKMTVLGTEEFEVE  400
+
+Query  54   SGEYISNMT-------IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQI  103
+            S +YI+++            + + ++ F+T  G    P+G        L +    K++  
+Sbjct  401  SDDYITSIEVSVDNVFGFKSEIVTSLVFKTFKGITSQPFGMETEKKLELKDGKGGKLVGF  460
+
+Query  104  NGSAGDYLDSLDIYYE  119
+            +G A D L +L  Y+ 
+Sbjct  461  HGKASDVLYALGAYFA  476
+
+
+ Score = 58.9 bits (141),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 25/149 (17%), Positives = 50/149 (34%), Gaps = 32/149 (21%)
+
+Query  1    SLTHRKFGGSGGSPFSGLSSIAVR------SGSYLDAIIIDGVHHGGS---------GGN  45
+            S      GG+ G  F       V+        + +  I ++    G           G  
+Sbjct  2    SEKVGAMGGNKGGAFDDGVFDGVKKVIVGKDFNNVTYIKVEYEKDGKFEIREHGTNRGQL  61
+
+Query  46   LSPTFTFGSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGSG------GSA  92
+               +  + + EYI+ +              I ++ F+T+ GR     G +       G  
+Sbjct  62   KEFSVDYPN-EYITAVGGSYDTVFGYGSALIKSLLFKTSYGRTSPILGHTTLLGNPAGKE  120
+
+Query  93   NTLS---NVKVIQINGSAGDYLDSLDIYY  118
+              L      K++  +G +G+ LD++  ++
+Sbjct  121  FMLESKYGGKLLGFHGRSGEALDAIGPHF  149
+
+
+>sp|O04318|JAL27_ARATH Nitrile-specifier protein 3 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP3 PE=2 SV=1
+Length=467
+
+ Score = 83.6 bits (205),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 26/136 (19%), Positives = 46/136 (34%), Gaps = 26/136 (19%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG  G  +                  G++ +     +   + ++ G  HG         F
+Sbjct  9    GGETGDVWDDGVYDNVTKVYVGQGQYGIAFVKFEYANG--SEVVVGDEHGEKTELGVEEF  66
+
+Query  51   TFGSGEYISNMTIR-------SGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQI  103
+               S +YI  +          + + I  +SF+T+ G+   P     G    L   K++  
+Sbjct  67   EIDSDDYIVYVEGYREKVSDMTSEMITFLSFKTSKGKTSQPIVKKPGVKFVLHGGKIVGF  126
+
+Query  104  NGSAGDYLDSLDIYYE  119
+            +G + D L SL  Y  
+Sbjct  127  HGRSTDVLHSLGAYVS  142
+
+
+>sp|Q5XF82|JAL11_ARATH Jacalin-related lectin 11 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL11 PE=2 SV=1
+Length=444
+
+ Score = 82.0 bits (201),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 22/114 (19%), Positives = 40/114 (35%), Gaps = 19/114 (17%)
+
+Query  24   RSGSYLDAIIIDGVHHG---------GSGGNLSPTFTFGSGEYISNMTIRSGD-------  67
+              GS +  +  D    G          +G     T      EYI+++             
+Sbjct  177  TDGSAIRHVRFDYDKAGQVETRERGAKTGTQHEFTVNHP-YEYITSVEGTYAHTQPYNCV  235
+
+Query  68   YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYE  119
+             + +++F+T+ GR     G   GS   L      ++  +G  G  +D + +YY 
+Sbjct  236  VLTSLTFKTSKGRASPAIGKVTGSKFKLERQGDAIVGFHGRVGSCIDGIGVYYA  289
+
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 21/117 (18%), Positives = 42/117 (36%), Gaps = 12/117 (10%)
+
+Query  12   GSPFSGLSSIAVRSGSYL-DAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS-----  65
+            G    G++++     +Y  + I+ +        G       + S EYI+ +         
+Sbjct  326  GQGDVGIAAVKFEYETYTSEVILAERHGKETLLGYEEFELDYPS-EYITAVEGCHDKVIG  384
+
+Query  66   --GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLDIYY  118
+                 I  + F+TN  R   P+G     +  L     K++  +G A   L  + ++ 
+Sbjct  385  SETGVITMLRFKTNK-RNSPPFGLESAFSFILEKDGHKIVGFHGKASTLLHQIGVHV  440
+
+
+ Score = 59.7 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 34/141 (24%), Positives = 53/141 (38%), Gaps = 24/141 (17%)
+
+Query  1    SLTHRKFGGSGGSPFSG------LSSIAVRSG-SYLDAIIIDGVHHG-----------GS  42
+            +L     GG  G  +        ++ I VR G   +  I  + V  G           G 
+Sbjct  2    ALKVEAKGGKVGIQWDDGSDYHDVTKIYVRGGLEGIQFIKFEYVKAGKKVIGPIHGASGR  61
+
+Query  43   GGNLSPTFTFGSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV-  98
+            G   +        EY+ ++          I  + F TN  + + P G + G+  TLS   
+Sbjct  62   GFTETFEINNLEKEYLLSIEGYYNASTGVIQCLQFITNK-KTYDPIGYNEGARFTLSASR  120
+
+Query  99   -KVIQINGSAGDYLDSLDIYY  118
+             K+I  +G A  YL+SL  Y+
+Sbjct  121  SKIIGFHGFADKYLNSLGAYF  141
+
+
+>sp|P93114|LECC_CALSE Jacalin-related lectin Calsepa OS=Calystegia 
+sepium OX=47519 PE=1 SV=1
+Length=153
+
+ Score = 77.8 bits (190),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 30/119 (25%), Positives = 56/119 (47%), Gaps = 12/119 (10%)
+
+Query  7    FGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSG  66
+            +GG G +P +   S     GS  D I + G       G  +     G+ EY++ ++   G
+Sbjct  35   YGGGGNNPIALTFSSTKADGSK-DTITVGGGGPDSITG--TEMVNIGTDEYLTGISGTFG  91
+
+Query  67   -----DYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQINGSAGDYLDSLDIY  117
+                 + + +I+F TN+ +  GPYG   G+  + +N    +++   G +G Y+D++  Y
+Sbjct  92   IYLDNNVLRSITFTTNL-KAHGPYGQKVGTPFSSANVVGNEIVGFLGRSGYYVDAIGTY  149
+
+
+>sp|Q9SDM9|JAL28_ARATH Nitrile-specifier protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=NSP1 PE=1 SV=2
+Length=470
+
+ Score = 81.6 bits (200),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 24/136 (18%), Positives = 44/136 (32%), Gaps = 26/136 (19%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG  G  +                  G++ +     +   + ++ G  HG         F
+Sbjct  9    GGEMGDVWDDGVYENVRKVYVGQAQYGIAFVKFEYVNG--SQVVVGDEHGKKTELGVEEF  66
+
+Query  51   TFGSGEYISNMTIR-------SGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQI  103
+               + +YI  +          + + I  +S +T  G+   P     G    L   K++  
+Sbjct  67   EIDADDYIVYVEGYREKVNDMTSEMITFLSIKTFKGKTSHPIEKRPGVKFVLHGGKIVGF  126
+
+Query  104  NGSAGDYLDSLDIYYE  119
+            +G + D L SL  Y  
+Sbjct  127  HGRSTDVLHSLGAYVS  142
+
+
+>sp|F4IB94|JAL8_ARATH Jacalin-related lectin 8 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL8 PE=3 SV=1
+Length=313
+
+ Score = 80.1 bits (196),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 18/114 (16%), Positives = 44/114 (39%), Gaps = 12/114 (11%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD-------Y  68
+            + + S+ +      D  ++   H   +G        F + EY++++              
+Sbjct  199  THIRSMNIDYDQ--DGQVVTRYHGMKNGETQEFAVDFPN-EYMTSVEGTYDHISEGNYLV  255
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSLDIYYEQ  120
+            + +++F+T+ GR    +G   G+   L      +   +G  G   D++ +Y+  
+Sbjct  256  LTSLTFKTSKGRISQTFGLVIGTKFVLETKGNVISGFHGRDGGSFDAIGVYFSP  309
+
+
+ Score = 58.1 bits (139),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 24/135 (18%), Positives = 44/135 (33%), Gaps = 23/135 (17%)
+
+Query  8    GGSGGSPFSGLSSI---------------AVRSGSYLDAIIIDGVHHG--GSGGNLSPTF  50
+            GG GG  +   ++                 ++     D    +G  HG    G   +   
+Sbjct  30   GGKGGKRWDDGANDNVAKVYIRGDHEGIQYIKFDYVKDGQSFNGSVHGVSADGFTQTFEI  89
+
+Query  51   TFGSGEYISNMTIRSGD---YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQING  105
+                 E I ++          +  + F+TN+ +     G   G+  +L      ++  +G
+Sbjct  90   DHLQYEQIVSVEGYYDWKTGVMQALQFKTNL-KTSEFIGYQKGTKFSLGVDGKVIVGFHG  148
+
+Query  106  SAGDYLDSLDIYYEQ  120
+            SA   L SL  Y + 
+Sbjct  149  SAWRSLRSLGAYVKT  163
+
+
+>sp|O04313|JAL31_ARATH PYK10-binding protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=PBP2 PE=1 SV=1
+Length=296
+
+ Score = 78.6 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/118 (19%), Positives = 41/118 (35%), Gaps = 11/118 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS------  65
+            G    G+S++        + +  +        G       + S EYI  +          
+Sbjct  178  GQAQDGISAVKFVYDKSPEEVTGEEHGKSTLLGFEEFVLDYPS-EYIIAVEGTYDKIFGS  236
+
+Query  66   -GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+             G  I  + F+TN  +   P+G   G+A  L     K++  +G A   L  + ++   
+Sbjct  237  DGSVITMLRFKTNK-QTSPPFGLEAGTAFELKEEGHKIVGFHGRADALLHKIGVHVRP  293
+
+
+ Score = 57.8 bits (138),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 31/135 (23%), Positives = 50/135 (37%), Gaps = 23/135 (17%)
+
+Query  8    GGSGGSPFSG------LSSIAVRSGS-YLDAIIIDGVHHG------------GSGGNLSP  48
+            GG GG+ +        ++ I V  G   +  I  D V +G             +      
+Sbjct  9    GGKGGNQWDDGSDHDAVTKIQVAVGGMGIQYIQFDYVKNGQTEQTPLRGIKGSTIPTDPF  68
+
+Query  49   TFTFGSGEYISNMTIRSGD--YIDNISFETNMGR-RFGPYGGSGGSANTLSNVKVIQING  105
+                   E++ ++ I       I  + F +N    RF  Y     S   + + K+I  +G
+Sbjct  69   VINHP-EEHLVSIEIWYKPDGLIQGLRFISNKKTSRFIGYDRGTRSFLQVQDKKIIGFHG  127
+
+Query  106  SAGDYLDSLDIYYEQ  120
+            SAGD L+SL  Y+  
+Sbjct  128  SAGDNLNSLGAYFAP  142
+
+
+>sp|Q9LIF8|JAL36_ARATH Jacalin-related lectin 36 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL36 PE=2 SV=1
+Length=460
+
+ Score = 77.0 bits (188),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 23/117 (20%), Positives = 52/117 (44%), Gaps = 15/117 (13%)
+
+Query  17   GLSSIAVRSGSYLDAIIIDGV------HHGGSGGNLSPTFTFGSGEYISNMTIRSG----  66
+             +  + +     +++I  +        HH G+ G  S   +    EYI+++T        
+Sbjct  15   KVKRVQITYEDVINSIEAEYDGDTHNPHHHGTPGKKSDGVSLSPDEYITDVTGYYKTTGA  74
+
+Query  67   -DYIDNISFETNMGRRFGPYGGSGGSANTL---SNVKVIQINGSAGDYLDSLDIYYE  119
+             D I  ++F+TN    +GPYG    +  ++    + ++    G + + L+S+D+++ 
+Sbjct  75   EDAIAALAFKTNK-TEYGPYGNKTRNQFSIHAPKDNQIAGFQGISSNVLNSIDVHFA  130
+
+
+ Score = 75.9 bits (185),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 26/138 (19%), Positives = 53/138 (38%), Gaps = 25/138 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG GG+ +   +   VR        S +  +  +           HG      +  F   
+Sbjct  152  GGKGGTSWDDGAHDHVRRVYIGQGDSGVTYVKFEYEKDDKKESREHGKKTLLGAEVFEVD  211
+
+Query  54   SGEYISNMT-------IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQI  103
+              +YI+++         +  + I ++ F+T+ G+   P+G  G     L +    K++  
+Sbjct  212  PDDYITSVEVQSDRIFGQDTEVITSLIFKTSKGKFSPPFGLEGSQKYELKDKNGGKLVGF  271
+
+Query  104  NGSA-GDYLDSLDIYYEQ  120
+            +G   G+ L++L  Y+  
+Sbjct  272  HGRVGGELLNALGAYFAP  289
+
+
+ Score = 61.6 bits (148),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 28/139 (20%), Positives = 48/139 (35%), Gaps = 27/139 (19%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVH---------HGGSGGNLSPTFTF  52
+            GG+ G+P+       VR        S +  +               HG         F  
+Sbjct  320  GGNVGNPWDDGPHEGVRKVYIGQGDSGVSYVKFVYDKDSKEVPGNDHGKRTLLAPEEFLL  379
+
+Query  53   G-SGEYISNMT-------IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQ  102
+                EYI+++           G+ I  + F TN  R   P+G  G  +  L     K++ 
+Sbjct  380  EYPNEYITSVELNYDKIFGTEGEIITMLRFTTNK-RTSPPFGLEGAKSVLLKEDGHKIVG  438
+
+Query  103  INGSAG-DYLDSLDIYYEQ  120
+             +G AG D +  + ++ + 
+Sbjct  439  FHGKAGADIIHQVGVHVKP  457
+
+
+>sp|F4IB95|JAL9_ARATH Jacalin-related lectin 9 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL9 PE=3 SV=1
+Length=314
+
+ Score = 76.2 bits (186),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 23/141 (16%), Positives = 47/141 (33%), Gaps = 25/141 (18%)
+
+Query  4    HRKFGGS---GGSPFSGLSSIAVRSGSYL----------DAIIIDGVHHGGSGGNLSPTF  50
+               +GG     G  + G+  + V   +            D  ++   H    G       
+Sbjct  174  VGGWGGDYWDDGPNYDGVRKVYVTYMNTCIRSINIDYEKDGQVVTSSHGNKEGETEEFAI  233
+
+Query  51   TFGSGEYISNMTIRSGD---------YIDNISFETNMGRRFGPYGGSGGSANTLS--NVK  99
+             + + E++ ++                I ++SF+T+ GR    YG   G+   L      
+Sbjct  234  DYPN-EFLISVEGTYDSILFPDHYVLVITSLSFKTSKGRISPTYGVVSGTKFVLESQGNA  292
+
+Query  100  VIQINGSAGDYLDSLDIYYEQ  120
+            ++   G  G   D++ +Y+  
+Sbjct  293  IVGFYGRNGGAFDAIGVYFSP  313
+
+
+ Score = 56.2 bits (134),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 48/134 (36%), Gaps = 23/134 (17%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG GG  +        ++ + +R G   +  I  D V  G           GSG      
+Sbjct  30   GGKGGKEWDDGAGHDNVAKVYIRGGLEGIQYIKFDYVKDGQSVEGSIHGVSGSGFTQMFE  89
+
+Query  50   FTFGSGEYISNMTIRS--GDYIDNISFETNMGRRFGPYGGSGGSANTL---SNVKVIQIN  104
+              + +GE+I ++         +  + F+TN             +  +L   +   +   +
+Sbjct  90   IDYQNGEHIVSVDGYFDKSGVMQALEFKTNRKTSEVIGYPKSNTKFSLGGVNGKMINGFH  149
+
+Query  105  GSAGDYLDSLDIYY  118
+            GSAG  L+S+  Y 
+Sbjct  150  GSAGKALNSIGAYL  163
+
+
+>sp|O04314|JAL30_ARATH PYK10-binding protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=PBP1 PE=1 SV=1
+Length=298
+
+ Score = 75.9 bits (185),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 21/118 (18%), Positives = 41/118 (35%), Gaps = 11/118 (9%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS------  65
+            G    G+S++        + +  +        G       + S EYI+ +          
+Sbjct  180  GQAQDGISAVKFVYDKSPEEVTGEEHGKSTLLGFEEFVLDYPS-EYITAVDGTYDKIFGS  238
+
+Query  66   -GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+             G  I  + F+TN  +   P+G   G+   L     K++  +G A   L  + ++   
+Sbjct  239  DGSVITMLRFKTNK-QTSPPFGLEAGTVFELKEEGHKIVGFHGRADVLLHKIGVHVRP  295
+
+
+ Score = 58.9 bits (141),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 29/135 (21%), Positives = 51/135 (38%), Gaps = 25/135 (19%)
+
+Query  8    GGSGGSPFSG------LSSIAVRSG-SYLDAIIIDGVHHG--------GSGGN----LSP  48
+            GG G + +        ++ I + +G   +  +  D V +G        G+ G        
+Sbjct  9    GGKGANLWDDGSTHDAVTKIQLAAGIDGIQYVQFDYVKNGQPEQAPLRGTKGRVLPADPF  68
+
+Query  49   TFTFGSGEYISNMTIRSGD--YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQIN  104
+                   E++ ++         I  I F +N  +     G   G+  TL   + K+I  +
+Sbjct  69   VINHP-DEHLVSVEGWYSPEGIIQGIKFISNK-KTSDVIGSDEGTHFTLQVKDKKIIGFH  126
+
+Query  105  GSAGDYLDSLDIYYE  119
+            GSAG  L+SL  Y+ 
+Sbjct  127  GSAGGNLNSLGAYFA  141
+
+
+>sp|Q8GWI7|JAL10_ARATH Jacalin-related lectin 10 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL10 PE=2 SV=1
+Length=315
+
+ Score = 75.9 bits (185),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 25/128 (20%), Positives = 47/128 (37%), Gaps = 20/128 (16%)
+
+Query  12   GSPFSGLSSIAVRSGSYL----------DAIIIDGVHHGGSGGNLSPTFTFGSGEYISNM  61
+            GS + G+  I+V   S L          D  ++   H   +G        + + EY+ ++
+Sbjct  186  GSNYDGVKKISVTYISTLIRSINVDYEKDGQVVTRYHGMKNGDTEEFVIDYPN-EYLISV  244
+
+Query  62   TIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLD  112
+                          I ++ F+T+ GR    YG   G+   L      ++   G  G   D
+Sbjct  245  EGTYNILPDDNVLVIRSLIFKTSKGRISPTYGFVSGTKFVLESQGNAIVGFYGRDGGAFD  304
+
+Query  113  SLDIYYEQ  120
+            ++ +Y+  
+Sbjct  305  AIGVYFSP  312
+
+
+ Score = 58.5 bits (140),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 30/136 (22%), Positives = 51/136 (38%), Gaps = 23/136 (17%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG GG  +        ++ + +R G   +  I  D V  G           GSG   +  
+Sbjct  30   GGKGGKQWDDGADHDNVAKVYIRGGLEGIQYIKFDYVKDGKTIDASIHGVSGSGFTQTFE  89
+
+Query  50   FTFGSGEYISNMTIRS--GDYIDNISFETNMGRRFGPYGGSGGSANTL---SNVKVIQIN  104
+              + + EYI ++         +  + F+TN+          G +  +L   +   VI  +
+Sbjct  90   IDYQNSEYIVSVDGYYDKSGTMQALEFKTNLKTSEVIGYPKGTTKFSLGGVNGKMVIGFH  149
+
+Query  105  GSAGDYLDSLDIYYEQ  120
+            GSAG  L+S+  Y   
+Sbjct  150  GSAGKVLNSIGAYLTT  165
+
+
+>sp|Q9FGC4|JAL42_ARATH Jacalin-related lectin 42 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL42 PE=3 SV=1
+Length=444
+
+ Score = 75.5 bits (184),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 24/129 (19%), Positives = 49/129 (38%), Gaps = 21/129 (16%)
+
+Query  12   GSPFSGLSSIAVR-SGSYLDAIIIDGVHHG---------GSGGNLSPTFTFGSGEYISNM  61
+            G  + G+  + V   G+ +  + +D    G           G     T  +   E I+++
+Sbjct  164  GGDYDGVRKVYVTFDGTSIRNMRVDYDKVGQVECYEYGVKIGTQNQFTINYP-YECITSV  222
+
+Query  62   TIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLD  112
+                 D        + +++F+T+ GR    +G   G+   L      ++  +G  G  +D
+Sbjct  223  GGSYADTQPYRCIVLRSLTFKTSNGRTS-VFGKETGTTFLLESQGNAIVGFHGRVGSCVD  281
+
+Query  113  SLDIYYEQY  121
+            S+  YY  +
+Sbjct  282  SIGEYYAPF  290
+
+
+ Score = 60.8 bits (146),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 33/134 (25%), Positives = 52/134 (39%), Gaps = 24/134 (18%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG+GG  +       G++ I VR G   +  I  D V  G           G G   +  
+Sbjct  9    GGNGGKRWDDGFDYEGVTKIYVRGGLEGIQFIKFDYVKDGKTITGPIHGVSGRGLTQTFE  68
+
+Query  50   FTFGSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTLSN--VKVIQIN  104
+                  EY+ ++          I +I F+TN  +     G + G+  +L +   ++I  +
+Sbjct  69   INHLQKEYLLSIEGYYDISTGVIQSIQFKTNQ-QTSDMMGFNEGTKFSLRSMRGRIIGFH  127
+
+Query  105  GSAGDYLDSLDIYY  118
+            G A   L SL  YY
+Sbjct  128  GFADKNLYSLRAYY  141
+
+
+ Score = 54.3 bits (129),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 19/112 (17%), Positives = 40/112 (36%), Gaps = 12/112 (11%)
+
+Query  17   GLSSIAVRSGSYLDAIIIDGVHHGGSG-GNLSPTFTFGSGEYISNMT-------IRSGDY  68
+            G+ S+     +    +++   H   +  G       + S EYI+++              
+Sbjct  330  GIVSVKFEYENDASEVVVGDEHGKATLLGYEEFELDYPS-EYITSVEACQDKVMGAETGV  388
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYY  118
+            +  + F+TN+ R    +G   G    L     K+   +G +   L  + I+ 
+Sbjct  389  LTMLRFKTNI-RISPSFGLKAGFNFVLEKEGHKINGFHGKSSSMLHQIGIHV  439
+
+
+>sp|O80950|JAL22_ARATH Jacalin-related lectin 22 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL22 PE=1 SV=1
+Length=458
+
+ Score = 74.7 bits (182),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 26/141 (18%), Positives = 51/141 (36%), Gaps = 31/141 (22%)
+
+Query  8    GGSGGSPFSGLSSIAVR------SGSYLDAIIIDGVHHGG----------SGGNLSPTFT  51
+            GG GG  +       VR        + +  I  + V   G          +         
+Sbjct  12   GGEGGQEWDDDVYEGVRKVYVGQDLNRITYIKFEYVQEDGEVVTTEYGTTNQHPKEFVIQ  71
+
+Query  52   FGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYG-----GSGGSANTLSN--  97
+            +   E+I  +            + I ++ F+T+ GR+   +G      + G+     +  
+Sbjct  72   YP-DEHIIAVEGSYHQVALIATEVITSLVFKTSKGRKSPLFGPNLLGITTGTKFVFEDEG  130
+
+Query  98   VKVIQINGSAGDYLDSLDIYY  118
+             K++  +G AGD +D+L +Y+
+Sbjct  131  KKIVGFHGRAGDAVDALGVYF  151
+
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 29/133 (22%), Positives = 45/133 (34%), Gaps = 25/133 (19%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIID------------GVHHGGSGGNLSPTFTF  52
+            GG+ G  +       VR    G   D +               G  HG      +  F  
+Sbjct  318  GGNEGVTWDDGVYDGVRKILVGQGNDGVSFVKFEYSKGKDLVPGDDHGKKTLLGAEEFVL  377
+
+Query  53   GSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQI  103
+              GEY+ N+              I  + F+TN  R   P+G   G   +L     K++  
+Sbjct  378  EDGEYLMNIDGYYDKIFGVEEPIIVCLQFKTNK-RESMPFGMDSGKKFSLGEEGHKIVGF  436
+
+Query  104  NGSAGDYLDSLDI  116
+            +G A D + S+ +
+Sbjct  437  HGQASDVVHSIGV  449
+
+
+ Score = 64.3 bits (155),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 25/136 (18%), Positives = 47/136 (35%), Gaps = 24/136 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVR------SGSYLDAIIIDGVH--------HGGSGGNLSPTFTFG  53
+            GG+ G  +   S   ++        S +  + ++           HGG G   S      
+Sbjct  167  GGTDGRVWDDGSYDGIKTLRIDQDNSRITYLEVEYEKDGEAKTCNHGGKGDTPSEFVLGY  226
+
+Query  54   SGEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQIN  104
+              EYI ++              I ++ F T+ GR    +G + G    L     +++  +
+Sbjct  227  PDEYIKSVEATYQKPNIFSNTAITSLKFLTSKGRTSF-FGYNVGKKFVLEQKGHRLVGFH  285
+
+Query  105  GSAGDYLDSLDIYYEQ  120
+            G     +D+L  Y+  
+Sbjct  286  GKEDAAIDALGAYFGP  301
+
+
+>sp|P18670|LECA_ARTIN Agglutinin alpha chain OS=Artocarpus integer 
+OX=3490 PE=1 SV=2
+Length=133
+
+ Score = 70.9 bits (172),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 26/101 (26%), Positives = 47/101 (47%), Gaps = 12/101 (12%)
+
+Query  29   LDAIIIDGVHHGGSGGNLSP---TFTFGSGEYISNMTIRSGDY-----IDNISFETNMGR  80
+            L+     G +H       +P   +  F S EYI  ++  +G+      + +++F+TN  +
+Sbjct  34   LNGSPYVGQNHKSFITGFTPVKISLDFPS-EYIMEVSGYTGNVSGYVVVRSLTFKTNK-K  91
+
+Query  81   RFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYE  119
+             +GPYG + G+   L   N  ++   GS G +LD   +Y  
+Sbjct  92   TYGPYGVTSGTPFNLPIENGLIVGFKGSIGYWLDYFSMYLS  132
+
+
+>sp|O80948|JAL23_ARATH Jacalin-related lectin 23 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL23 PE=1 SV=1
+Length=459
+
+ Score = 74.3 bits (181),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 24/142 (17%), Positives = 53/142 (37%), Gaps = 31/142 (22%)
+
+Query  7    FGGSGGSPFSG--------------LSSIAVRSGSYL--DAIIIDGVHHGGSGGNLSPTF  50
+            +GG GG  +                ++ I      Y+  D  ++   +            
+Sbjct  11   YGGEGGREWDDDVYEGVRKVYVGQDINRITYVKFEYVKEDGQVVTTEYGKIIQQPKEFVL  70
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYG-----GSGGSANTLSNV  98
+             +   E+I  +            + I N+ F+T+ GR+   +G      + G+   + + 
+Sbjct  71   QYP-DEHIIAVEGNYRGVALCATEVITNLVFKTSKGRKSPLFGPNLLGITTGTKFVIEDG  129
+
+Query  99   --KVIQINGSAGDYLDSLDIYY  118
+              K++  +G +G+ LD+L +Y+
+Sbjct  130  GKKIVGFHGRSGNALDALGVYF  151
+
+
+ Score = 70.9 bits (172),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 30/133 (23%), Positives = 46/133 (35%), Gaps = 25/133 (19%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIII------------DGVHHGGSGGNLSPTFTF  52
+            GGSGG  +       VR    G   D +               G  HG      +  F  
+Sbjct  319  GGSGGVAWDDGVYDGVRKILVGQGNDGVAFVKFEYNKGKDLVSGDDHGKMTLLGTEEFVL  378
+
+Query  53   GSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQI  103
+              GEY++ +              I  + F+TN  R   P+G   G   +L     K++  
+Sbjct  379  EDGEYLTAIDGYYDKIFGVETPMIICLQFKTNK-RESTPFGMDSGEKFSLGEKGHKIVGF  437
+
+Query  104  NGSAGDYLDSLDI  116
+            +G A D + S+ +
+Sbjct  438  HGQASDVVHSIGV  450
+
+
+ Score = 66.6 bits (161),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 29/134 (22%), Positives = 48/134 (36%), Gaps = 23/134 (17%)
+
+Query  8    GGSGGSPFSGLSSIAVRS------GSYLDAIIIDGVHHG-------GSGGNLSPTFTFGS  54
+            GG+ G  +   S   V+S       S +  +  +    G       G     S  F    
+Sbjct  169  GGTDGRVWDDGSYDGVKSLRIGQDNSRITYLEFEYEKGGKLETCRHGVKQERSLKFELNP  228
+
+Query  55   GEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQING  105
+             EYI ++              I +++FET+ GR     G  GG    L     +++  +G
+Sbjct  229  DEYIKSVEATYDKPDIFRNVVITSLTFETSKGRTSFS-GYKGGKKFKLEQKGRRLVGFHG  287
+
+Query  106  SAGDYLDSLDIYYE  119
+              G  +D+L  Y+ 
+Sbjct  288  KEGSAIDALGAYFA  301
+
+
+>sp|C0HK14|LEC_MORIN Galactose-specific lectin (Fragments) OS=Morus 
+indica OX=248361 PE=1 SV=1
+Length=157
+
+ Score = 71.2 bits (173),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 47/108 (44%), Gaps = 12/108 (11%)
+
+Query  22   AVRSGSYLDAIIIDGVHHGGSGGNLSP---TFTFGSGEYISNMTIRSGDY-----IDNIS  73
+            +++    +D    +   H       +P   +  F S EYI  ++  +G       + +++
+Sbjct  51   SIQVTYDVDGTPFEAKKHASFITGFTPVKISLDFPS-EYIVEVSGYTGKVSGYLVVRSLT  109
+
+Query  74   FETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYE  119
+            F+TN    +GPYG + G+   L   +  ++   GS G +LD +  +  
+Sbjct  110  FKTNK-ETYGPYGVTSGTHFKLPIQDGLIVGFKGSVGYWLDYIGFHLA  156
+
+
+>sp|P18674|LECA_MACPO Agglutinin alpha chain OS=Maclura pomifera 
+OX=3496 PE=1 SV=2
+Length=133
+
+ Score = 68.9 bits (167),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 28/108 (26%), Positives = 46/108 (43%), Gaps = 12/108 (11%)
+
+Query  22   AVRSGSYLDAIIIDGVHHGGSGGNLSP---TFTFGSGEYISNMTIRSGDY-----IDNIS  73
+             +R    L+ +      H        P   +  F S EYI  ++   G       I +++
+Sbjct  27   GLRVTYDLNGMPFVAEDHKSFITGFKPVKISLEFPS-EYIVEVSGYVGKVEGYTVIRSLT  85
+
+Query  74   FETNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYE  119
+            F+TN  + +GPYG + G+  +L   N  ++   GS G +LD   IY  
+Sbjct  86   FKTNK-QTYGPYGVTNGTPFSLPIENGLIVGFKGSIGYWLDYFSIYLS  132
+
+
+>sp|O04309|JAL35_ARATH Jacalin-related lectin 35 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL35 PE=1 SV=1
+Length=451
+
+ Score = 72.8 bits (177),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 26/133 (20%), Positives = 47/133 (35%), Gaps = 22/133 (17%)
+
+Query  8    GGSGGSPFSGL---------------SSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTF  52
+            GG GG  +                  S +      Y     I    HG      +  F  
+Sbjct  9    GGRGGEEWDDGGAYENVKKVYVGQGDSGVVYVKFDYEKDGKIVSHEHGKQTLLGTEEFVV  68
+
+Query  53   GSGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQING  105
+               +YI+++ I          + +  + F+T  G+   P+G + G    L   K++  +G
+Sbjct  69   DPEDYITSVKIYYEKLFGSPIEIVTALIFKTFKGKTSQPFGLTSGEEAELGGGKIVGFHG  128
+
+Query  106  SAGDYLDSLDIYY  118
+            S+ D + S+ +Y 
+Sbjct  129  SSSDLIHSVGVYI  141
+
+
+ Score = 72.4 bits (176),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 26/133 (20%), Positives = 49/133 (37%), Gaps = 22/133 (17%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGVH--------HGGSGGNLSPTFTF  52
+            GG GG  +        +  + V  G S +  +  D           HG      +  F  
+Sbjct  163  GGRGGDVWDDGGAYDNVKKVYVGQGDSGVVYVKFDYEKDGKIVSLEHGKQTLLGTEEFEI  222
+
+Query  53   GSGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANTLSNVKVIQING  105
+               +YI+ + +          + +  + F+T  G+   P+G + G    L   K++  +G
+Sbjct  223  DPEDYITYVKVYYEKLFGSPIEIVTALIFKTFKGKTSQPFGLTSGEEAELGGGKIVGFHG  282
+
+Query  106  SAGDYLDSLDIYY  118
+            ++ D + SL  Y 
+Sbjct  283  TSSDLIHSLGAYI  295
+
+
+ Score = 67.8 bits (164),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 30/137 (22%), Positives = 49/137 (36%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---------------GSYLDAIIIDGVHHGGSGGNLSPTFTF  52
+            GG GG  +      +V+                     +  + G  HG      +  F  
+Sbjct  313  GGDGGVAWDDGVHDSVKKIYVGQGDSCVTYFKADYEKASKPVLGSDHGKKTLLGAEEFVL  372
+
+Query  53   GSGEYISNMTIRSGDY-------IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQI  103
+            G  EY++ ++             I ++ F+TN  R   PYG  GG+   L   + K++  
+Sbjct  373  GPDEYVTAVSGYYDKIFSVDAPAIVSLKFKTNK-RTSIPYGLEGGTEFVLEKKDHKIVGF  431
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+             G AG+YL  L +    
+Sbjct  432  YGQAGEYLYKLGVNVAP  448
+
+
+>sp|Q9FGC5|JAL41_ARATH Jacalin-related lectin 41 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL41 PE=1 SV=1
+Length=444
+
+ Score = 71.2 bits (173),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 18/115 (16%), Positives = 42/115 (37%), Gaps = 13/115 (11%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD-------Y  68
+            + +  + V         +    +   +G     T  +   E I+++     +        
+Sbjct  180  TSIRHMRVDYDKA--GQVECYEYGDKTGTQYKITVNYP-YECITSVEGSYANTQPYGCIV  236
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSLDIYYEQY  121
+            + +++F+T+ GR     G   G+   L      ++  +G  G  +DS+  YY  +
+Sbjct  237  LRSLTFKTSNGRT-LVIGTVTGTKFLLESKGNAIVGFHGRVGSCVDSIGAYYAPF  290
+
+
+ Score = 62.4 bits (150),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 32/134 (24%), Positives = 54/134 (40%), Gaps = 24/134 (18%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG+GG  +       G++ I VR+GS  +  I  D V  G           G G   +  
+Sbjct  9    GGNGGKEWDDGFDYEGVTKIHVRAGSEGIQFIKFDYVKVGKTIDGPIHGVSGLGMTQTFE  68
+
+Query  50   FTFGSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQIN  104
+                  EY+ ++          I +I F+TN+ +     G + G+  +L     K+I  +
+Sbjct  69   INHLQKEYLVSIEGYYDKSTGVIQSIQFKTNV-KTSDMMGFNKGTKFSLGIIRNKIIGFH  127
+
+Query  105  GSAGDYLDSLDIYY  118
+            G +   + SL  Y+
+Sbjct  128  GFSDKNVYSLGAYF  141
+
+
+ Score = 59.7 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 21/119 (18%), Positives = 42/119 (35%), Gaps = 12/119 (10%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRS-----  65
+            G   +G+ ++     +   + ++ G  HG +       F      EYI+++         
+Sbjct  325  GQGSNGIVAVKFEYENDA-SEVVVGDEHGKTTLLGYEVFELDYPNEYITSLEGCHDKVMG  383
+
+Query  66   --GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLDIYYEQ  120
+                 I  + F+TN  R   P+G   G    L     K+   +G +   L  + ++   
+Sbjct  384  AETGVITMLRFKTNK-RTSPPFGLEAGVNFVLQKESHKITGFHGKSSTMLHQIGVHVVP  441
+
+
+>sp|O80998|JAL20_ARATH Jacalin-related lectin 20 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL20 PE=2 SV=1
+Length=449
+
+ Score = 67.0 bits (162),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 26/139 (19%), Positives = 43/139 (31%), Gaps = 28/139 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG GG  +                  G++S+          ++ +        G      
+Sbjct  310  GGDGGESWDDGAFDGVRKIYVGQGENGIASVKFVYDKNNQLVLGEEHGKHTLLGYEEFEL  369
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVI  101
+             + S EYI+ +              I  + F+TN  R   PYG   G +  L     KV+
+Sbjct  370  DYPS-EYITAVEGYYDKVFGSESSVIVMLKFKTNK-RTSPPYGMDAGVSFILGKEGHKVV  427
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G A   L  + +    
+Sbjct  428  GFHGKASPELYQIGVTVAP  446
+
+
+ Score = 63.5 bits (153),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 24/140 (17%), Positives = 48/140 (34%), Gaps = 30/140 (21%)
+
+Query  8    GGSGGSPFSGLSSIAVR------SGSYLDAIIIDGVHHGGS---------------GGNL  46
+            GG+GGSP+       +R      S   +  I +D    G                 G   
+Sbjct  154  GGTGGSPWDHGIYTGIRKVYVTFSPVSISHIKVDYDKDGKVETRQDGDMLGENRVQGQPN  213
+
+Query  47   SPTFTFGSGEYISNMTIRSGDY------IDNISFETNMGRRFGPYGGSGGSANTLSNV--  98
+                 +   EYI+++ +           + ++SF+T+  R    YG          +   
+Sbjct  214  EFVVDYP-YEYITSIEVTCDKVSGNTNRVRSLSFKTSKDRTSPTYGRKSERTFVFESKGR  272
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+             ++ ++G     +D+L  ++
+Sbjct  273  ALVGLHGRCCWAIDALGAHF  292
+
+
+ Score = 57.8 bits (138),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 31/136 (23%), Positives = 49/136 (36%), Gaps = 23/136 (17%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG GG+ +        ++ I VR G   +  I  + V  G           G G   +  
+Sbjct  9    GGKGGNQWDDGADHENVTKIHVRGGLEGIQFIKFEYVKAGQTVVGPIHGVSGKGFTQTFE  68
+
+Query  50   FTFGSGEYISNMTIRSGD---YIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQIN  104
+                +GE++ ++     +    I  + FETN            G+  TL     K+   +
+Sbjct  69   INHLNGEHVVSVKGCYDNISGVIQALQFETNQRSSEVMGYDDTGTKFTLEISGNKITGFH  128
+
+Query  105  GSAGDYLDSLDIYYEQ  120
+            GSA   L SL  Y+  
+Sbjct  129  GSADANLKSLGAYFTP  144
+
+
+>sp|Q9LKR6|JAL40_ARATH Jacalin-related lectin 40 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL40 PE=2 SV=1
+Length=453
+
+ Score = 66.2 bits (160),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 27/139 (19%), Positives = 43/139 (31%), Gaps = 23/139 (17%)
+
+Query  2    LTHRKFGGSGGSPFSGL-------SSIAVRSGSYLDAIIIDGVHHG------GSGGNLSP  48
+            +     GG GG P+              +   + +    +D    G         G    
+Sbjct  155  IKLAYQGGGGGIPWDHGPNHNGVKRVSFIFDENEIRQWRVDYDDGGVIRQYEPINGYDMF  214
+
+Query  49   TFTFGSGEYISNMTIRSGDYI--------DNISFETNMGRRFGPYGGSGGSANTLSNV--  98
+                   EYI ++     D I         +I F+T+ GR    +G        L N   
+Sbjct  215  EVKEYPTEYIISVECTYDDVIPRSGRRMIRSIMFKTSKGRVSPIFGYPAARKFVLENNGG  274
+
+Query  99   KVIQINGSAGDYLDSLDIY  117
+             +I  +G  G  +D+L  Y
+Sbjct  275  ALIGFHGRVGAGIDALGAY  293
+
+
+ Score = 54.3 bits (129),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 30/144 (21%), Positives = 50/144 (35%), Gaps = 28/144 (19%)
+
+Query  3    THRKFGGSG-GSPFS-----GLSSIAVRSGSYL--------DAIIIDGVHHG--GSGGNL  46
+              +  GG   G P+      G+  I +  G  +        D  + +   HG     G  
+Sbjct  308  KLQPEGGEAVGDPWDDGIFNGVREIHLEDGEGIALKFVYDKDVQVTELKVHGEPSGIGFN  367
+
+Query  47   SPTFTFGSGEYISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSGGSANTL--SN  97
+                 + S EYI+ +              I  + F TN  + F P G    ++ +L    
+Sbjct  368  EFKLDYPS-EYITTVEGFWDKTSGNERGVITRLRFTTNK-QTFRPVGLESTTSFSLGKEG  425
+
+Query  98   VKVIQING-SAGDYLDSLDIYYEQ  120
+             K++  +G S+ D L  L +Y   
+Sbjct  426  YKIVGFHGNSSTDKLHQLGVYVVP  449
+
+
+ Score = 53.5 bits (127),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 22/116 (19%), Positives = 36/116 (31%), Gaps = 8/116 (7%)
+
+Query  10   SGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS---G  66
+             G      +    V+SG     +I      GG              E++ ++        
+Sbjct  30   GGREGIQYVKFDYVKSGQPQTGLIHGLSGRGGFTQTFEID---QKDEHLVSVEGYYDVTK  86
+
+Query  67   DYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSLDIYYEQ  120
+              I  + F+TN            G   +L     K+I  +G A   L+SL  Y+  
+Sbjct  87   GVIQALKFKTNKKTSEMIGYDDTGIKLSLEVKGKKIIGFHGYAETNLNSLGAYFTT  142
+
+
+>sp|Q9M1A7|FBK75_ARATH Jacalin-related lectin 38 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL38 PE=2 SV=1
+Length=521
+
+ Score = 65.8 bits (159),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 22/130 (17%), Positives = 45/130 (35%), Gaps = 18/130 (14%)
+
+Query  9    GSGGSPFSGLSSIAVR----SGSYLDAIIIDGVHHGGSG---------GNLSPTFTFGSG  55
+            G GG  +       V+      + L  I +   +  G+             +        
+Sbjct  390  GVGGDEWDDGFFDNVKEIIIHTNSLGIIFVKFYYRNGNVRVAGAAHGDSTETRGLMVPDD  449
+
+Query  56   EYISNMTIRSGD-YIDNISFETNMGRRFGPYGGSGGSANTL---SNVKVIQINGSAGD-Y  110
+            +YI  +     + +I +++F  + G R   +G   G +  L      K+I   G + D Y
+Sbjct  450  DYIEAVQGTYTESHITSMAFRLHKGNRSLRFGFFEGMSFVLGGARGSKIIGFYGRSSDLY  509
+
+Query  111  LDSLDIYYEQ  120
+            L +  +++  
+Sbjct  510  LTAFGVHFSP  519
+
+
+>sp|O80736|JAL17_ARATH Jacalin-related lectin 17 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL17 PE=3 SV=1
+Length=598
+
+ Score = 65.5 bits (158),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 27/137 (20%), Positives = 44/137 (32%), Gaps = 28/137 (20%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIID------------GVHHGGSG--GNLSPTF  50
+            GG GG+ +       +R    G     I               G  HG     G      
+Sbjct  459  GGDGGASWDDGRFDCIRKIYIGHSEMGIAFVKFLYDKDNKVVVGDDHGSKTLLGVDEFEL  518
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+                 EY+ ++            + I  + F+TNM R    +G    S  TL     K++
+Sbjct  519  EHP-DEYLISVEGSYDVVDGSESEVIRMLRFKTNM-RTSQLFGHETTSNFTLQKECHKIV  576
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G  G+ L  + ++ 
+Sbjct  577  GFHGKIGEMLHQIGVHV  593
+
+
+ Score = 56.2 bits (134),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 27/107 (25%), Positives = 40/107 (37%), Gaps = 9/107 (8%)
+
+Query  22   AVRSGSYLDAIIIDGVHHG--GSGGNLSPTFTFGSGEYISNMTIRS----GDYIDNISFE  75
+             V+     D   I G  HG  G G            EY+ ++           I  I F+
+Sbjct  188  YVKFDYIKDGQQIYGSPHGVRGRGFTELFEINHLDKEYLISVEGYYDEGESGVIQGIQFK  247
+
+Query  76   TNMGRRFGPYGGSGGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+            TN+ R     G + G   +L+    K+I  +G A   L+SL  Y+  
+Sbjct  248  TNI-RTSELMGDNRGRKFSLAANGKKIIGFHGYAEKNLNSLGAYFTT  293
+
+
+ Score = 56.2 bits (134),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 28/125 (22%), Positives = 46/125 (37%), Gaps = 18/125 (14%)
+
+Query  12   GSPFSGLSSIAVR-SGSYLDAIIIDGVHHG-----------GSGGNLSPTFTFGSGEYIS  59
+            GS    +  I+VR     +  I  D +  G           G G   +      + E++ 
+Sbjct  22   GSDKDDIGKISVRCEDGGITYIRFDYIKSGQPQYNTFPGNPGRGILQTFDINHKNDEHLE  81
+
+Query  60   NMTIRS---GDYIDNISFETNMG-RRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDS  113
+            ++        D I  + F+TNM       Y   G +  +L     K+I  +G+   YL+S
+Sbjct  82   SVEGYYDPKSDAIKGLQFKTNMRISELIGYANDGATKFSLAVEGKKIIGFHGAYNTYLNS  141
+
+Query  114  LDIYY  118
+            L  Y 
+Sbjct  142  LGAYV  146
+
+
+ Score = 55.1 bits (131),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 17/134 (13%), Positives = 47/134 (35%), Gaps = 28/134 (21%)
+
+Query  14   PFSGLSSIAV-RSGSYLDAIIIDGVHHG------------GSGGNLSPTFTFGSGEYISN  60
+             F G+ ++ +   G  +  + +D  + G                       + + E+I++
+Sbjct  313  TFDGIRNVYIHYDGDAVCCVEVDYDNKGKVEKREHGIMIAPFIERGEFVVDYPN-EFITS  371
+
+Query  61   MTIR------------SGDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGS  106
+            + +             + + + +++F+T+ GR    +G        L +    V+   G 
+Sbjct  372  VEVTISKQNDSPVPSLTSETVASLTFKTSKGRTSSTFGSPATKKFVLQSKGCGVVGFLGR  431
+
+Query  107  AGDYLDSLDIYYEQ  120
+            +  Y  +L  ++  
+Sbjct  432  SSYYTYALGAHFCP  445
+
+
+>sp|Q9LQ31|JAL4_ARATH Jacalin-related lectin 4 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL4 PE=2 SV=1
+Length=745
+
+ Score = 65.5 bits (158),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 28/139 (20%), Positives = 45/139 (32%), Gaps = 28/139 (20%)
+
+Query  8    GGSGGSPFS-----------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG GG P+S                 G+S++             +        G      
+Sbjct  608  GGEGGDPWSDGVFNGVRNIYVGQGENGVSAVKFVYDKDSQVAEGNDHGKPTLLGYEEFKL  667
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVI  101
+             + S EYI+ +           G  I  + F+TN  R   P+G    S   L     K++
+Sbjct  668  EYPS-EYITTVEGCFDKIFGSGGGVITMLKFKTNK-RTSPPFGLETTSNFVLGKEGYKIV  725
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G++   L  L +Y   
+Sbjct  726  GFHGTSSHELHQLGVYVMP  744
+
+
+ Score = 63.5 bits (153),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 50/134 (37%), Gaps = 24/134 (18%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG+GG+ +        ++ I V+ G   +  +  D V +G           G G   +  
+Sbjct  314  GGNGGNQWDDLADHDHVTKIYVQGGQEGIQYVKFDYVKNGQPQSGSVHGLLGRGFTQTFE  373
+
+Query  50   FTFGSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQIN  104
+                + E++ ++          +  + F+TN            G   +L     K+I  +
+Sbjct  374  ID-PTNEHLVSVEGYYDESKGLVQGLKFKTNKKTSDMIGYDENGLKFSLEVNGKKIIGFH  432
+
+Query  105  GSAGDYLDSLDIYY  118
+            G A  YL+SL  Y+
+Sbjct  433  GYAQTYLNSLGAYF  446
+
+
+ Score = 59.7 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 30/140 (21%), Positives = 48/140 (34%), Gaps = 27/140 (19%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVH--------------HGGSGGNL  46
+            GG GG+ +        ++ I V+ G   +  +  D V               HG S    
+Sbjct  9    GGKGGNQWDDLLDHDNIAKIHVQGGHEGIQYVKFDYVKFDNLKIGQPKLGSIHGLSRKGF  68
+
+Query  47   SPTFTF-GSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKV  100
+            + TF    + EYI ++          I  + F+TN            G   +L      +
+Sbjct  69   TQTFEIDPTSEYIVSVEGYYDESKGIIQALKFKTNKKTSDMIGYDENGLKFSLEVKGKAI  128
+
+Query  101  IQINGSAGDYLDSLDIYYEQ  120
+            I  +G A   L+SL  Y+  
+Sbjct  129  IGFHGFADTNLNSLGAYFAP  148
+
+
+ Score = 55.4 bits (132),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 27/139 (19%), Positives = 49/139 (35%), Gaps = 26/139 (19%)
+
+Query  8    GGSGGSPFS------GLSSIAVR-SGSYLDAIIIDGVHHG---------GSGGNLSPTFT  51
+            GGSG   +       G+  I+     + +  I ID    G           G        
+Sbjct  458  GGSGAQLWDDGTNYNGVRKISFALDANEIRQIRIDYDKGGLIERREYGGNVGRQEEFVVD  517
+
+Query  52   FGSGEYISNMTIR-------SGDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQ  102
+            + S EYI  M          S + + ++ F+T+ GR    +G          +    +I 
+Sbjct  518  YPS-EYIIYMEGTCDIVSDASKNRVRSLMFKTSKGRTSPIFGKVAARKFVFESNGSALIG  576
+
+Query  103  INGSAGDYLDSLDIYYEQY  121
+             +G A   +D++  Y+ ++
+Sbjct  577  FHGRAAAAVDAIGAYFSRF  595
+
+
+ Score = 53.1 bits (126),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 18/114 (16%), Positives = 41/114 (36%), Gaps = 12/114 (11%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIR-------SGDY  68
+            + +  I +       + +++   +G + G           EYI  M          S + 
+Sbjct  184  TEIRQIRIEYDK---SGLVEKREYGSNVGRQEEFVLDYPTEYIIYMEGTCDIVSDTSKNR  240
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLDIYYEQ  120
+            + ++ F+T+ GR    +G          +    +I  +G A   +D++  Y+  
+Sbjct  241  VRSLMFKTSKGRTSPIFGKVAARKFVFESNGSALIGFHGRAAAAVDAIGAYFSP  294
+
+
+>sp|O80737|JAL18_ARATH Jacalin-related lectin 18 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL18 PE=3 SV=1
+Length=600
+
+ Score = 65.5 bits (158),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 43/137 (31%), Gaps = 28/137 (20%)
+
+Query  8    GGSGGSPFSGLSSIAVRS---GSYLDAIIID------------GVHHGGSG--GNLSPTF  50
+            GG GG+ +       +R    G     I               G  HG     G      
+Sbjct  461  GGDGGASWDDGGFDCIRKIYIGHGEMGIAFVKFLYDKDNKFVVGDDHGSKTLLGVDEFEL  520
+
+Query  51   TFGSGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+                 EY+ ++            + I  + F+TNM R    +G    S+  L     K++
+Sbjct  521  EHP-DEYLISVEGSYDVVDGSESEVILMLRFKTNM-RTSQVFGLDTTSSFILEKECHKIV  578
+
+Query  102  QINGSAGDYLDSLDIYY  118
+              +G  G  L  + ++ 
+Sbjct  579  GFHGKIGKMLHQIGVHV  595
+
+
+ Score = 60.1 bits (144),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 32/137 (23%), Positives = 49/137 (36%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPF------SGLSSIAVRSGS-YLDAIIIDGV-----------HHGGSGGNLSPT  49
+            G  GG+ +       G++ I VR G   +  I  D V              G G   S  
+Sbjct  168  GAKGGTDWNDGADHEGVAKIYVRGGRDCIQYIKFDYVKDRKYIYGPAHGVRGRGFTESFE  227
+
+Query  50   FTFGSGEYISNMTIRS----GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQI  103
+                  EY+ ++           I  I F TN+ +     G + G   +L+    K+I  
+Sbjct  228  INHLDNEYMVSVEGYYDEGDSGIIQGIQFRTNI-KTSELIGYNNGKKFSLAANGKKIIGF  286
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A   L+SL  Y+  
+Sbjct  287  HGYADQNLNSLGAYFTT  303
+
+
+ Score = 55.4 bits (132),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 15/83 (18%), Positives = 34/83 (41%), Gaps = 8/83 (10%)
+
+Query  44   GNLSPTFTFGSGEYISNMTIRSGD----YIDNISFETNMGRRFGPYGGSGGSANTLSNV-  98
+                    +   E+I ++     +    ++ +++F+T+ GR    +G  G     L +  
+Sbjct  365  EEGEFVVNYP-YEFIISVEGTFTNEKDPHVASLTFKTSKGRTSSTFGTPGTKKFVLQSKG  423
+
+Query  99   -KVIQINGS-AGDYLDSLDIYYE  119
+              V+  +G  + DY+  L  Y+ 
+Sbjct  424  CGVVGFHGVLSNDYISGLGAYFR  446
+
+
+ Score = 55.1 bits (131),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 25/125 (20%), Positives = 45/125 (36%), Gaps = 18/125 (14%)
+
+Query  12   GSPFSGLSSIAVR-SGSYLDAIIIDGVHHGGS-----------GGNLSPTFTFGSGEYIS  59
+            GS    ++ I VR     ++ I  D +  G             G   +        E + 
+Sbjct  32   GSDHDDVTKIHVRGDSRGINCIRFDYIKSGQRKYKSFYGPSWAGFTQTFKINHKEDEQLE  91
+
+Query  60   NMTIRSGD---YIDNISFETNMG-RRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDS  113
+            ++          I  + F+TN+       +G    +  +L     K+I  +G +G YL+S
+Sbjct  92   SVEGFYKPDSRTIVGLQFKTNLRISELIGHGKKDDTKFSLAVDGKKIIGFHGCSGSYLES  151
+
+Query  114  LDIYY  118
+            L  Y+
+Sbjct  152  LGAYF  156
+
+
+>sp|Q9ZU23|JAL5_ARATH Jacalin-related lectin 5 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL5 PE=2 SV=1
+Length=730
+
+ Score = 64.3 bits (155),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 24/119 (20%), Positives = 52/119 (44%), Gaps = 15/119 (13%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVH------HGGSGGNLSPTFTFGSGEYISNMTIRS----  65
+            + +  + +     + +I ++           G+ G     FT  S EYI+ +        
+Sbjct  9    TKVKRVQLTFDDVIRSIEVEYDGTSLKSQPRGTAGTKIDGFTLSSDEYITEVNGYYKTTF  68
+
+Query  66   -GDYIDNISFETNMGRRFGPYGGSGGSANTL---SNVKVIQINGSAGDYLDSLDIYYEQ  120
+             G+ I +++F+TN  R +G YG    S  ++    + +++   GS+   L+S+D ++  
+Sbjct  69   SGEVITSLTFKTNK-RTYGTYGNKTSSYFSVAAPKDNQIVGFLGSSSHALNSIDAHFAP  126
+
+
+ Score = 56.6 bits (135),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 21/122 (17%), Positives = 45/122 (37%), Gaps = 16/122 (13%)
+
+Query  7    FGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMT----  62
+            + G G S  + +     + G        +   HG    + +  F   S +YI++M     
+Sbjct  610  YVGQGDSGVAYVKFDYEKDGKK------ETQEHGKMTLSGTEEFEVDSDDYITSMEVYVD  663
+
+Query  63   ---IRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQINGSAGDYLDSLDI  116
+                   + +  ++F+T  G     +G    +   + +    K+   +G A D L ++  
+Sbjct  664  KVYGYKSEIVIALTFKTFKGETSPRFGIETENKYEVKDGKGGKLAGFHGKASDVLYAIGA  723
+
+Query  117  YY  118
+            Y+
+Sbjct  724  YF  725
+
+
+ Score = 46.6 bits (109),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 28/137 (20%), Positives = 52/137 (38%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPFSG-------LSSIAVRSGSYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG+GG+ +         +       G  ++ I  D V +G           G GG  +  
+Sbjct  437  GGNGGNQWDDGTDHDGVMKIHVAVGGLGIEQIRFDYVKNGQLKEGPFHGVKGRGGTSTIE  496
+
+Query  50   FTFGSGEYISNMTIRS--GDYIDNISFETNMGRR----FGPYGGSGGSANTLSNVKVIQI  103
+             +    EY+ ++       + I  I F++N        +  YG     +  ++  K+I  
+Sbjct  497  ISHP-DEYLVSVEGLYDSSNIIQGIQFQSNKHTSQYFGYEYYGDGTQFSLQVNEKKIIGF  555
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A  +L+SL  Y+  
+Sbjct  556  HGFADSHLNSLGAYFVP  572
+
+
+>sp|Q9LTY2|JAL48_ARATH Jacalin-related lectin 48 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL48 PE=2 SV=1
+Length=601
+
+ Score = 63.5 bits (153),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 29/140 (21%), Positives = 49/140 (35%), Gaps = 31/140 (22%)
+
+Query  8    GGSGGSPFS------------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPT  49
+            GG+GG+P+                   G+ SI     + +  I++ G HHG         
+Sbjct  458  GGAGGAPWDDGSNFQGVRKIYIGTGEVGIVSIKFLYENDVHEIVV-GDHHGNKNLLRHEE  516
+
+Query  50   FTFG-SGEYISNMTIRSG--------DYIDNISFETNMGRRFGPYGGSGGSANTL--SNV  98
+            F      EY++++             + I  + F TN  R    YG        L     
+Sbjct  517  FDLDYPSEYLTSVEGSYDVVPGSEEYEVIIMLKFTTNK-RTSPCYGLDDDPIFVLHKEGH  575
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+            K++  +G + + L  L I+ 
+Sbjct  576  KIVGFHGKSSNMLHKLGIHV  595
+
+
+ Score = 50.8 bits (120),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 31/140 (22%), Positives = 50/140 (36%), Gaps = 29/140 (21%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHGGS-------------GGNLS  47
+            GG  G+ +       G + I VRSG   +  I ++ V   G+             G    
+Sbjct  157  GGKVGTKWDDGVNQAGFTKIHVRSGQKGIQFIKLEYVDKDGNLTDGPIHGSIYRRGSPHV  216
+
+Query  48   PTFTFGSGEYISNMTIRSG-----DYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKV  100
+              F     EY+ ++          + I  + F TN+ +     G + G    L  S +K+
+Sbjct  217  FEFKHD-EEYLVSVEGYYEGDEECEVIQGLQFRTNI-KTSELMGSNTGKKFKLTASGMKI  274
+
+Query  101  IQINGSAGDYLDSLDIYYEQ  120
+            +  +G A   L SL  Y   
+Sbjct  275  VGFHGYAEKNLSSLGAYLTP  294
+
+
+ Score = 49.7 bits (117),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 23/113 (20%), Positives = 43/113 (38%), Gaps = 11/113 (10%)
+
+Query  13   SPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD--YID  70
+            S    +    V+SG   D     G  +  +    +        E++ ++     +   I+
+Sbjct  37   SGIESIRFDYVKSGKPKDG-PFRGQSY--NTYTHTFEINHLKYEHLESVEGYYTEDTGIE  93
+
+Query  71   NISFETNMGRRFGPYG--GSGGSANTL--SNVKVIQINGSAGDY-LDSLDIYY  118
+             + F+TN+ R   P G    G +   L     K+I  +GS+    + SL  Y+
+Sbjct  94   ALQFKTNL-RISEPIGYHHDGCTKFILAVEGKKIIGFHGSSFALRVGSLGAYF  145
+
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 40/106 (38%), Gaps = 13/106 (12%)
+
+Query  27   SYLDAIIIDGVHHGGSGGNLSPT---FTFGSGEYISNMTIR-SGDYIDNISFETNMGRRF  82
+            +Y DA  +    HG +  +         + + E+I+++    S   +  + F+T+ GR  
+Sbjct  340  NYEDAGKVVKRSHGLNNNDHQEEKFVVDYPN-EFITSVVGTMSSSSVMPLIFKTSKGRTS  398
+
+Query  83   GPYGGSGG---SANTLSNV--KVIQING---SAGDYLDSLDIYYEQ  120
+              +G           L +    ++  +G       Y+ +L  YY  
+Sbjct  399  KQFGDYSFDDSVEFVLESKGCAIVGFHGWHNPVSGYMTALGAYYYP  444
+
+
+>sp|Q9M1A9|JAL37_ARATH Jacalin-related lectin 37 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL37 PE=3 SV=1
+Length=454
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 24/131 (18%), Positives = 43/131 (33%), Gaps = 21/131 (16%)
+
+Query  11   GGSPFSGLSSIAVR----------------SGSYLDAIIIDGVHHGGSGGNLSPTFTFGS  54
+            GG+ +       V+                  S  + I     H   +  N         
+Sbjct  308  GGNEWDDGIFHNVKKINVGVNDFDTVFVKFHYSKYNRIEAGAGHGNATTHNPDDEIMIAG  367
+
+Query  55   GEYISNMTIRSGD-YIDNISFETNMGRRFGPYGGSGGSANTLSNV---KVIQINGS-AGD  109
+            G+YI  +     + +I +I+F    G     YG   G+  +L      K I   G  +G 
+Sbjct  368  GDYIEAVEGTYTESHITSITFRMRKGDMMPQYGRLNGTPFSLRGERGSKAIGFYGRSSGV  427
+
+Query  110  YLDSLDIYYEQ  120
+            +L +L +++  
+Sbjct  428  HLTALGVHFSP  438
+
+
+>sp|Q9LTA8|JAL46_ARATH Jacalin-related lectin 46 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL46 PE=2 SV=1
+Length=596
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 28/140 (20%), Positives = 51/140 (36%), Gaps = 31/140 (22%)
+
+Query  8    GGSGGSPFS------------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPT  49
+            GG+GG P+                   G+ S+     + ++ I++ G HHG         
+Sbjct  453  GGAGGVPWDDGSNFERVRKIYIGTCEVGIVSVRFLYENDIEEIVV-GDHHGNKNLLRHEE  511
+
+Query  50   FTFGSG-EYISNMTIRSG--------DYIDNISFETNMGRRFGPYGGSGGSANTL--SNV  98
+            F   +  EY++++             + I  + F TN  R    YG        L  +  
+Sbjct  512  FDLDNACEYLTSVEGSYDVIPGSEDVEVILMLKFTTNK-RTSPCYGLDDDPTFVLHKAGH  570
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+            ++I  +G + + L  L I+ 
+Sbjct  571  RIIGFHGKSSNMLHKLGIHV  590
+
+
+ Score = 53.9 bits (128),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 27/136 (20%), Positives = 46/136 (34%), Gaps = 24/136 (18%)
+
+Query  8    GGSGGSPFSG------LSSIAVRSG-SYLDAIIIDGVHHGG-----------SGGNLSPT  49
+            G  G   +        ++ I V      +++I  D V  G            +    +  
+Sbjct  9    GKDGNRRWDDKSDHDDVTKIYVNYSLMGIESIRFDYVKSGKPIEGPFRGETYNTYTHTFE  68
+
+Query  50   FTFGSGEYISNMTIRSGDY-IDNISFETNMGRRFGPYG--GSGGSANTL--SNVKVIQIN  104
+                  E++ ++        I  + F+TN+ R   P G  G  G    L     K+I  +
+Sbjct  69   INHLKNEHLESVEGSYTQRGIQTLQFKTNL-RISEPIGYPGKDGIKFILAVEGKKIIGFH  127
+
+Query  105  GSAGDYLDSLDIYYEQ  120
+            GS    L SL  Y+ +
+Sbjct  128  GSTYFRLYSLGAYFTR  143
+
+
+ Score = 52.4 bits (124),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 30/140 (21%), Positives = 46/140 (33%), Gaps = 28/140 (20%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHGGS-------------GGNLS  47
+            GG  G+ +       G + I VRSG   +  I  + V   G              G    
+Sbjct  153  GGKVGTKWDDGVDQAGFTKIHVRSGQEGIQFIKFEYVDKNGRLRDGSIHGSIYRRGSPHV  212
+
+Query  48   PTFTFGSGEYISNMTIRSGD-----YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKV  100
+                    EY+ ++            I  + F TN+ +     G   G    L  S +K+
+Sbjct  213  FEIRHVDKEYLVSVEGYYDGDGDCAVIQALRFRTNV-KTSQLMGPKTGKKFRLAASGMKI  271
+
+Query  101  IQINGSAGDYLDSLDIYYEQ  120
+            +  +G A   L SL  Y+  
+Sbjct  272  VGFHGYAEKNLTSLGGYFTP  291
+
+
+ Score = 46.2 bits (108),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 13/85 (15%), Positives = 31/85 (36%), Gaps = 10/85 (12%)
+
+Query  45   NLSPTFTFGSGEYISNMTIRSGD-YIDNISFETNMGRRFGPYGGSGGSA--NTLSNV--K  99
+                   +   E I+++     D Y+ +  F+T+ GR    +G     +    + +    
+Sbjct  356  TDEFVVDYP-YEVITSIVGTMNDSYVTSFVFKTSKGRTSRTFGERTSDSVEFVIESKGCA  414
+
+Query  100  VIQING----SAGDYLDSLDIYYEQ  120
+            V+  +G        Y+ +L  ++  
+Sbjct  415  VVGFHGWYAPLGAGYITALGAHFYP  439
+
+
+>sp|O80735|JAL16_ARATH Jacalin-related lectin 16 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL16 PE=3 SV=1
+Length=531
+
+ Score = 62.4 bits (150),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 26/134 (19%), Positives = 48/134 (36%), Gaps = 26/134 (19%)
+
+Query  8    GGSGGSPFS-----GLSSIAVRSGSY----------LDAIIIDGVHHGGSGGNLSPTFTF  52
+            GG GG+ +      G+ +I +                D+ I+ G  HG +       F  
+Sbjct  392  GGDGGASWDDGGFDGIRNIYIGHNKMGIAFVKFLYDKDSQIVVGDDHGSNTLLRVDEFEL  451
+
+Query  53   G-SGEYISNMTIRS-------GDYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQ  102
+               GEY+ ++            + I  + F+TN+ R    +G     +  L     K++ 
+Sbjct  452  EHPGEYLISVEGSYDVVDGSESEVIRMLRFKTNL-RTSQLFGHETTPSFILEKECHKIVG  510
+
+Query  103  INGSAGDYLDSLDI  116
+             +G  G  L  + +
+Sbjct  511  FHGKIGKMLHQIGV  524
+
+
+ Score = 60.1 bits (144),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 32/137 (23%), Positives = 49/137 (36%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPF------SGLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPT  49
+            GG GG+ +       G + I V+ G   +  I  D V  G           GS       
+Sbjct  97   GGKGGTEWNDGAEHEGFTKIYVQGGCDGIQYIKFDYVKDGQHKYGSPHGVKGSESTEPFE  156
+
+Query  50   FTFGSGEYISNMTIRS----GDYIDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQI  103
+                  EY+ ++           I  I F+TN+ +     G   G   +L+    K+I  
+Sbjct  157  INHLDKEYLISVEGYYDEGDSGVIQGIQFKTNI-KTSELIGDKKGRKFSLAANGKKIIGF  215
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A   L+SL  Y+  
+Sbjct  216  HGYADKNLNSLGAYFTT  232
+
+
+ Score = 51.2 bits (121),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/125 (16%), Positives = 42/125 (34%), Gaps = 19/125 (15%)
+
+Query  14   PFSGLSSIAVRSGS-YLDAIIIDGVHHGGSGGNL-----------SPTFTFGSGEYISNM  61
+             F G+  + VR  S  +  +  D  + G                      + + E+I+++
+Sbjct  255  SFEGVRKVYVRYDSLEICYVEFDYDNKGKVEKREHGMFYSWVQQGEFVVDYPN-EFITSV  313
+
+Query  62   TIRSGD----YIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVIQINGSAGDYLDSLD  115
+                       + +++F+T+ GR    +G    S   L +    V+   G     +  L 
+Sbjct  314  EGTMRTESFMQVASLTFKTSKGRTSSTFGSPSDSKFLLESKGCGVVGFYGRCFSSIFDLG  373
+
+Query  116  IYYEQ  120
+             Y+  
+Sbjct  374  AYFRP  378
+
+
+ Score = 41.2 bits (95),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 15/80 (19%), Positives = 28/80 (35%), Gaps = 9/80 (11%)
+
+Query  48   PTFTFGSGEYISNMTIRSG---DYIDNISFETNM------GRRFGPYGGSGGSANTLSNV  98
+                    E + ++        D I  + F+TN+      G     +G     +      
+Sbjct  6    FEIDHKKDEQLVSVEGYCKPGSDLIQGVQFKTNLRISEIIGFEKAIFGNPTTFSLAEDGK  65
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+            K+I  +G +   L+SL  Y+
+Sbjct  66   KIIGFHGYSMANLNSLGAYF  85
+
+
+>sp|Q0WMR0|JAL12_ARATH Jacalin-related lectin 12 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL12 PE=2 SV=1
+Length=459
+
+ Score = 60.8 bits (146),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 26/143 (18%), Positives = 54/143 (38%), Gaps = 26/143 (18%)
+
+Query  1    SLTHRKFGGSGGSPFS-----GLSSIAVRSGSYL-DAIIIDGVHHG-----------GSG  43
+            +LT  ++ G G   +      G+  ++      +   I  D V  G           G+G
+Sbjct  298  TLTKLEYIGEGSDIWDDGTFEGVKKVSFYHNDGIVRCIEFDYVKDGKIETRVQGGKRGTG  357
+
+Query  44   GNLSPTFTFG-SGEYISNMTIRSGD-----YIDNISFETNMGRRFGPYGGSGGSANTLSN  97
+                  FT     E+++++     D      I +++F+T+  R     G +      L +
+Sbjct  358  DFTKEEFTVDYPNEFLTSVEGTYRDNPGGTLITSLTFKTSNNRTSPILGKASNKTFLLES  417
+
+Query  98   V--KVIQINGSAGD-YLDSLDIY  117
+                ++  +G++ D +L +L  Y
+Sbjct  418  KGCALVGFHGASSDFFLYALGAY  440
+
+
+ Score = 55.4 bits (132),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 26/139 (19%), Positives = 47/139 (34%), Gaps = 26/139 (19%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS-YLDAIIIDGVHHGGSGGNLS-------------  47
+            GG+GG+ +        ++ I VR     +  I  + V   G                   
+Sbjct  158  GGNGGTKWDDGGDHDSVTKIQVRINKEGIQYIKFNYVDKDGDPEKEQLHGSETGRGYTLE  217
+
+Query  48   -PTFTFGSGEYISNMTIRS---GDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVI  101
+                     EY+ ++          I ++  +TN+           G+  TL  +  ++I
+Sbjct  218  PFEINHSDKEYLLSIDGCYDEDSGVIQSLQLKTNIKTSEVMGDDEKGTKFTLGCNGHEII  277
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +GSA D L++L  Y   
+Sbjct  278  GFHGSAQDNLNALGAYITT  296
+
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 28/119 (24%), Positives = 43/119 (36%), Gaps = 12/119 (10%)
+
+Query  10   SGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS----  65
+             G +    +    V+SG   +        + G G            EY+ ++        
+Sbjct  34   GGKTGIDFIKIDYVKSGKPKNG---PFHGYSGGGFLQMFEIDNLKNEYLESVEGYYTNRS  90
+
+Query  66   GDYIDNISFETNMGRRFGPYGGS--GGSANTLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+            G++I  I F+TN+ R     G S  G     L+    K+I   GSA   L  LD Y+  
+Sbjct  91   GEFIGAIQFKTNL-RVSEIIGYSYWGLKKFKLAKHGNKIIGFQGSAEYRLKDLDAYFTP  148
+
+
+>sp|F4I837|JAL14_ARATH Jacalin-related lectin 14 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL14 PE=2 SV=1
+Length=614
+
+ Score = 60.5 bits (145),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 20/118 (17%), Positives = 43/118 (36%), Gaps = 14/118 (12%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSG----GNLSPTFTFGSGEYISNMTIRSGDY---  68
+            S + ++      Y +  ++   H   S     G       + + E I+++      +   
+Sbjct  346  SNVMNVRYIKFHYYNRAVVVRQHGWNSIVEEDGEKEFELDYPN-ELITSVEGTMKSFSRS  404
+
+Query  69   ---IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDY-LDSLDIYYEQ  120
+               I +++F+T+ GR     G + G+   L      V+   G   D  L ++  Y+  
+Sbjct  405  EIRISSLTFKTSKGRTSPTIGIASGTKFLLASKGCAVVGFYGRHDDRDLVAIGAYFSP  462
+
+
+ Score = 59.7 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 30/137 (22%), Positives = 50/137 (36%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSG-SYLDAIIIDGV------------HHGGSGGNLSP  48
+            G  GG+ +       G++ I VR G   +  I  D V               GSG   + 
+Sbjct  179  GSKGGNQWDDGTNNDGVTKIHVRGGVEGIQYIKFDYVRKSGQHINGSIHGLSGSGFTQTF  238
+
+Query  49   TFTFGSGEYISNMTIRSGD---YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQI  103
+                 + E++  +     D    I  + F+TN+ +     G   G   +L     K++  
+Sbjct  239  EIDHLNNEHLVCVEGYYDDESGVIQALQFKTNI-KTSELLGYKKGKKFSLVDKRKKIVGF  297
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A   L+SL  Y+  
+Sbjct  298  HGYADKNLNSLGAYFTT  314
+
+
+ Score = 59.3 bits (142),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 22/139 (16%), Positives = 45/139 (32%), Gaps = 28/139 (20%)
+
+Query  8    GGSGGSPFSG-----------------LSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTF  50
+            GG+ G  +                   ++ + V   S    +I +   +           
+Sbjct  475  GGNQGDSWDDGVFEGVRKLYVGQGKNCVAFLKVVYDSNTQVVIGEDHGNKTLFEVKEYEL  534
+
+Query  51   TFGSGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANTLSNV--KVI  101
+             + S EYI+ +            + I  +  +TN  R   P G    S+  L     K++
+Sbjct  535  EYPS-EYITAVDGCYNKVNGTEVEVITMLRIQTNK-RTSIPVGCESNSSFVLKKEGYKIV  592
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G A + ++ L ++   
+Sbjct  593  GFHGKASNMINQLGVHVVP  611
+
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 16/99 (16%), Positives = 31/99 (31%), Gaps = 6/99 (6%)
+
+Query  12   GSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS---GDY  68
+            G    G+  I               +     G   +      + E++ ++         Y
+Sbjct  56   GGGRQGIHYIEFEYVKNGQLESGVHLGVRYRGFTETFEINHLNNEHLESVEGYYDYGSGY  115
+
+Query  69   IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQING  105
+            I  + F+TN  R     G   G+  +L     ++I  +G
+Sbjct  116  IQGLQFKTNF-RVSELIGYDEGTKFSLSVKGKRIIGFHG  153
+
+
+>sp|Q9LTA7|JAL47_ARATH Jacalin-related lectin 47 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL47 PE=3 SV=1
+Length=221
+
+ Score = 59.3 bits (142),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 30/140 (21%), Positives = 50/140 (36%), Gaps = 31/140 (22%)
+
+Query  8    GGSGGSPFS------------------GLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPT  49
+            GG+GG+P+                   G+ SI     + +  II+ G HHG         
+Sbjct  78   GGAGGAPWDDGSNFEGVRKIYIGTGEIGIVSIKFLYENDIHEIIV-GDHHGNKNLLRHEE  136
+
+Query  50   FTFG-SGEYISNMTIRSG--------DYIDNISFETNMGRRFGPYGGSGGSANTL--SNV  98
+            F      EY++++             + +  + F TNM R    YG     +  L     
+Sbjct  137  FDLDYPSEYLTSVEGSYDVVPGSEEDEVMIMLKFTTNM-RTSPCYGLDDDPSFVLHKEGH  195
+
+Query  99   KVIQINGSAGDYLDSLDIYY  118
+            K++  +G +   L  L I+ 
+Sbjct  196  KIVGFHGKSSTMLHKLGIHV  215
+
+
+ Score = 38.9 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 12/62 (19%), Positives = 25/62 (40%), Gaps = 7/62 (11%)
+
+Query  66   GDYIDNISFETNMGRRFGPYGGSGGSA--NTLSNV--KVIQING---SAGDYLDSLDIYY  118
+             + I +++F+T+ GR    +G     +    L +    ++   G   +   Y  +L  YY
+Sbjct  3    SNVITSLTFKTSKGRTSPKFGYGTSDSVEFVLESKGCAIVGFYGWYKTGSGYTTALGAYY  62
+
+Query  119  EQ  120
+              
+Sbjct  63   YP  64
+
+
+>sp|Q9FFW7|JAL43_ARATH Jacalin-related lectin 43 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL43 PE=3 SV=1
+Length=495
+
+ Score = 59.3 bits (142),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 16/86 (19%), Positives = 35/86 (41%), Gaps = 12/86 (14%)
+
+Query  46   LSPTFTFGSGEYISNMTIRSG-------DYIDNISFETNMGRRFGPYGGSGGSANTLSNV  98
+                  + + E+I+++             +I +++F+T+  R    +G +      L   
+Sbjct  305  KEFVLDYPN-EFITSVEGTLAAPKSVNITWITSLTFKTSKKRSSPTFGSASSRKFVLEKN  363
+
+Query  99   --KVIQING--SAGDYLDSLDIYYEQ  120
+               ++  +G  S G+ L+SL  YY  
+Sbjct  364  GSPLVGFHGYNSVGNTLNSLGAYYRP  389
+
+
+ Score = 53.5 bits (127),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 14/74 (19%), Positives = 30/74 (41%), Gaps = 6/74 (8%)
+
+Query  50   FTFGSGEYISNMTIRSGDYI---DNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQIN  104
+            F     E I+++     D I     + F+TN  +    +G     +  L   N +++  +
+Sbjct  414  FELDPLERITSVEGTYDDKIGGITMLRFKTNK-KDSPYFGFGTLPSFVLHKDNHQIVGFH  472
+
+Query  105  GSAGDYLDSLDIYY  118
+            G + + L  L ++ 
+Sbjct  473  GKSSNMLHQLGVHV  486
+
+
+ Score = 52.8 bits (125),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 33/137 (24%), Positives = 50/137 (36%), Gaps = 25/137 (18%)
+
+Query  8    GGSGGSPF------SGLSSIAVRSG-SYLDAIIIDGVH---------HGGSGGN---LSP  48
+            GG GG  +        +S I V  G   +  I +D +          HG SGG+      
+Sbjct  106  GGMGGKKWEDGFDHDNVSKIQVLGGFEGILYIKVDYIKNGKLETGLIHGDSGGDGFLQKM  165
+
+Query  49   TFTFGSGEYISNMTIRSGDY---IDNISFETNMGRRFGPYGGSGGSANTLS--NVKVIQI  103
+                   EY+  +     D    I  + F+TN+       G   G    L+    K+I  
+Sbjct  166  EINQSKNEYLVYVEGYYDDASETIQGLHFQTNLNNPVM-MGYKKGRKFLLASNGNKIIGF  224
+
+Query  104  NGSAGDYLDSLDIYYEQ  120
+            +G A   L+SL  Y+ +
+Sbjct  225  HGYADKSLNSLGAYFSR  241
+
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/78 (19%), Positives = 27/78 (35%), Gaps = 5/78 (6%)
+
+Query  46   LSPTFTFGSGEYISNMTIRSGDY---IDNISFETNMGRRFGPYGGSGGSANTL--SNVKV  100
+            L         E++ ++          +  I F+TN             +  TL     K+
+Sbjct  17   LQFEINHLQDEHLESVDAYYNKKSYGLQAIQFKTNFRTSELMGYSYECTMFTLAVKGKKI  76
+
+Query  101  IQINGSAGDYLDSLDIYY  118
+            I  +GS   ++ SL  Y+
+Sbjct  77   IGFHGSDNVHIYSLGAYF  94
+
+
+>sp|Q9FFW6|JAL44_ARATH Jacalin-related lectin 44 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL44 PE=2 SV=1
+Length=594
+
+ Score = 58.9 bits (141),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 23/136 (17%), Positives = 50/136 (37%), Gaps = 24/136 (18%)
+
+Query  6    KFGGSGGSPFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGN---------LSPTFTFGSGE  56
+             +    G  + G+  + V S S +D++  +  + G                    + + E
+Sbjct  309  PW--DDGCNYDGVKKVYVDSISDIDSVRFEYDNGGKVEKTPYRRDVTNEKEFVLDYPN-E  365
+
+Query  57   YISNMTIRSGD-------YIDNISFETNMGRRFGPYGGSG-GSANTLSNV--KVIQINGS  106
+            +I+++             +I +++F+T+ GR    +G S  G    L      ++  +G 
+Sbjct  366  FITSVEGTLATPTNFDITWILSLTFKTSKGRTSPTFGSSSPGRKFVLEKNGSALVGFHGY  425
+
+Query  107  A--GDYLDSLDIYYEQ  120
+               G  + +L  YY  
+Sbjct  426  IGPGYNIKALGAYYRP  441
+
+
+ Score = 54.7 bits (130),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 27/133 (20%), Positives = 51/133 (38%), Gaps = 23/133 (17%)
+
+Query  8    GGSGGSPFS------GLSSIAVRSGS----------YLDAIIIDGVHHG-GSGGNLSPTF  50
+            GG GG+ +        +  I +  G           Y +A ++ G  HG  +  +    F
+Sbjct  455  GGDGGASWDDGGTFNSVRKIYIGLGKNVVGFVKFLYYKNARVVIGDDHGNKTLSSDLLEF  514
+
+Query  51   TFGSGEYISNMTIRSGDY---IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQING  105
+                 E+I ++     D    I  + FETN+ +    +G    S   L   N +++  +G
+Sbjct  515  LLDPFEHIISVEGTYDDTSGGITMLRFETNLQK-SPYFGFGTTSNFLLHKDNHQIVGFHG  573
+
+Query  106  SAGDYLDSLDIYY  118
+             + + L  L ++ 
+Sbjct  574  KSSNMLHQLGVHV  586
+
+
+ Score = 48.1 bits (113),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 32/89 (36%), Gaps = 6/89 (7%)
+
+Query  37   VHHGGSGGNLSPTFTFGSGEYISNMTIRSGDY---IDNISFETNMGRRFGPYGGSGGSAN  93
+             H GG G            EY+  +     D    I  + F+TN+       G   G   
+Sbjct  206  GHSGGDGFLQKMEINQSKNEYLVYVEGYYDDASETIQGLHFQTNLNNPVM-MGYKKGRKF  264
+
+Query  94   TLS--NVKVIQINGSAGDYLDSLDIYYEQ  120
+             L+    K+I  +G A   L+SL  Y+  
+Sbjct  265  LLASNGNKIIGFHGYADKSLNSLGAYFST  293
+
+
+ Score = 44.7 bits (104),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 27/124 (22%), Positives = 45/124 (36%), Gaps = 17/124 (14%)
+
+Query  12   GSPFSGLSSIAVRSGS-YLDAIIIDGVHHGG-----------SGGNLSPTFTFGSGEYIS  59
+            GS    ++ I VR G   + +I  + V +G            SG   +       GEY+ 
+Sbjct  23   GSEHDDVTKIYVRGGREGIRSIYFNYVKNGKPKDGSIHGYFDSGFTQTFEINHLRGEYLE  82
+
+Query  60   NMTIRSGDY---IDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSL  114
+            ++          +  I F+TN             +  TL     K+I  +GS   ++ SL
+Sbjct  83   SVDAYYDKKSYGMQAIQFKTNFRTSELMGYSYECTMFTLAVQGKKIIGFHGSNYVHILSL  142
+
+Query  115  DIYY  118
+              Y+
+Sbjct  143  GAYF  146
+
+
+>sp|Q9ZU13|JAL13_ARATH Jacalin-related lectin 13 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL13 PE=3 SV=1
+Length=483
+
+ Score = 54.7 bits (130),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 31/139 (22%), Positives = 47/139 (34%), Gaps = 26/139 (19%)
+
+Query  8    GGSGGSPFSGL---SSIAVRSGS----YLDAIIIDGVH---------HGGSGGN----LS  47
+            GG GG+ +       ++    G      +  II D V          HG + G       
+Sbjct  157  GGKGGNEWDDGGDYEAVTKIHGRSDHKGIKDIIFDYVDKDGHPKSETHGPTSGQGYVLEP  216
+
+Query  48   PTFTFGSGEYISNMTIRSGD---YIDNISFETNMGRRFG-PYGGSGGSANTL--SNVKVI  101
+                    EY+ ++     D    I  + F+TNM       Y        T+  +  K+I
+Sbjct  217  FEINHLDKEYLMSIDGYYDDASGVIQALQFKTNMKTSELMGYYDDDAVKFTIGCTVNKII  276
+
+Query  102  QINGSAGDYLDSLDIYYEQ  120
+              +G AG  L SL  Y+  
+Sbjct  277  GFHGHAGKNLYSLGAYFTT  295
+
+
+ Score = 47.0 bits (110),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 26/124 (21%), Positives = 41/124 (33%), Gaps = 17/124 (14%)
+
+Query  12   GSPFSGLSSIAVRSG-SYLDAIIIDGVHHG-----------GSGGNLSPTFTFGSGEYIS  59
+            GS    ++ I VR G   ++ I    V  G            +G            E++ 
+Sbjct  22   GSEHDDVTKIYVRGGTKGIEFIKFGYVKAGELLDGSFHGYSDTGFTQMFEIDHRKNEHLL  81
+
+Query  60   NMTIR---SGDYIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSL  114
+            ++        D +  I F+TN+           G   TL     K+I  +G A   L +L
+Sbjct  82   SVEGYFDYYNDIMYAIQFKTNLKISEIMGYEYSGHKFTLAMEGKKIIGFHGFADVNLRAL  141
+
+Query  115  DIYY  118
+              Y 
+Sbjct  142  GAYV  145
+
+
+ Score = 46.2 bits (108),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 12/67 (18%), Positives = 31/67 (46%), Gaps = 7/67 (10%)
+
+Query  59   SNMTIRSGDY-IDNISFETNMGRRFGPYGGSGGS---ANTLSNV--KVIQINGSAGD-YL  111
+            + ++  +G+  I +++F+T+ GR    +G   G+      L +    ++  +G +    +
+Sbjct  393  TGLSFSTGNVMIKSLTFKTSKGRTSPTFGNVFGNYLSEFKLESQGCAIVGFHGRSSYNSI  452
+
+Query  112  DSLDIYY  118
+              L  Y+
+Sbjct  453  HGLGAYF  459
+
+
+>sp|H3JUC3|JA15R_ARATH Jacalin-related lectin 15 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL15 PE=2 SV=1
+Length=157
+
+ Score = 50.8 bits (120),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 30/134 (22%), Positives = 52/134 (39%), Gaps = 22/134 (16%)
+
+Query  8    GGSGGSPFS-----GLSSIAVRSGS--YLDAIIIDGVHHGGSGGNLS-----------PT  49
+            GG+GG  +      G+S I ++ GS   + +I  D V +G      +             
+Sbjct  20   GGNGGKIWDDGVHEGVSQIYIQEGSTGGIASIKFDYVKNGQPKAGSTHGNSYQNFTEWFD  79
+
+Query  50   FTFGSGEYISNMTIRSGD-YIDNISFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGS  106
+                  E+I ++     +  I  +  +TN+ R     G + G+  TL     K++  +GS
+Sbjct  80   LNHTCDEHILSVKCYYDEGEIQGLVIKTNI-RTSAYMGYNIGTTFTLEVKGKKIVGFHGS  138
+
+Query  107  AGDYLDSLDIYYEQ  120
+                L SL  Y+  
+Sbjct  139  FDKNLTSLGAYFAP  152
+
+
+>sp|Q9FNM2|JAL45_ARATH Jacalin-related lectin 45 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL45 PE=3 SV=1
+Length=396
+
+ Score = 50.1 bits (118),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 22/117 (19%), Positives = 43/117 (37%), Gaps = 9/117 (8%)
+
+Query  8    GGSGGSPFSGLSSIAVRS-GSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSG  66
+            GGS G  +   +   +       DA  +  V      GN   T   G      +      
+Sbjct  151  GGSNGVSWDDGAYDRLSKLCVGEDAHCVSSVEFHYVKGNDRITHCHGKDSKEHDKDG---  207
+
+Query  67   DYIDNISFETNMGRRFGPYGGSGGSANTLSN---VKVIQINGSAG-DYLDSLDIYYE  119
+             +I +++F+T+M R    +G   G+   L      K++   G +  + +++L   + 
+Sbjct  208  -FISSLTFKTSMNRSSEKFGKPVGTKFQLEAKGFDKIVGFRGRSSVNRINALGANFA  263
+
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 15/89 (17%), Positives = 29/89 (33%), Gaps = 24/89 (27%)
+
+Query  56   EYISNMTIRSGD------------------YIDNISFETNMGRR----FGPYGGSGGSAN  93
+            EYI+++    G                   Y+  + F TN          P     G++ 
+Sbjct  304  EYITSVEGHYGKRLAAPNASASAMSSFFTGYMTMLKFNTNRTTYQVLSHSPEYTYEGTSF  363
+
+Query  94   TL--SNVKVIQINGSAGDYLDSLDIYYEQ  120
+             L   + K++   G     L+ + +Y + 
+Sbjct  364  KLEEKDHKIVGFYGKTEVSLNQIGVYVKP  392
+
+
+>sp|F4I9R6|JA15S_ARATH Jacalin-related lectin 15 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL15 PE=2 SV=2
+Length=131
+
+ Score = 48.1 bits (113),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 21/110 (19%), Positives = 38/110 (35%), Gaps = 7/110 (6%)
+
+Query  14   PFSGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRSGD-YIDNI  72
+              + +    V++G           +H                E+I ++     D  I  +
+Sbjct  21   RIASIKFDYVKNGQPKAGSTHGVSYH---NFTEWFDLNHTCDEHILSVKCYYDDGEIQGL  77
+
+Query  73   SFETNMGRRFGPYGGSGGSANTL--SNVKVIQINGSAGDYLDSLDIYYEQ  120
+              +TN+ R     G + G+  TL     K++  +GS    L SL  Y+  
+Sbjct  78   VIKTNI-RTSAYMGYNIGTTFTLEVKGKKIVGFHGSFDKNLTSLGAYFAP  126
+
+
+>sp|Q84X07|JAL24_ARATH Jacalin-related lectin 24 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL24 PE=2 SV=2
+Length=224
+
+ Score = 46.2 bits (108),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 23/122 (19%), Positives = 43/122 (35%), Gaps = 20/122 (16%)
+
+Query  16   SGLSSIAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFGSGEYISNMTIRS-GDYIDNISF  74
+              +  I        + + +    HG S G           EY++ ++       + +++F
+Sbjct  42   DSIKCIQFSYFH--NGVHVVSEKHGSSKGQSYEIVRLNDDEYVTGLSGIFWERKVTSLTF  99
+
+Query  75   ETNMGRRFGPYGGSGGSANTLS-------NVKVI------QINGSAGDYLD---SLDIYY  118
+             TN G+  GP+    G +++         +VK+          GS  D  D   S+ IY 
+Sbjct  100  HTNQGK-HGPFCNGTGYSSSYMADYKKEIDVKIRDRREFGGFFGSFDDEFDGLTSIGIYV  158
+
+Query  119  EQ  120
+              
+Sbjct  159  YP  160
+
+
+>sp|D9UBI3|RTM1A_ARATH Inactive protein RESTRICTED TEV MOVEMENT 
+1 OS=Arabidopsis thaliana OX=3702 GN=RTM1 PE=3 SV=1
+Length=168
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 24/113 (21%), Positives = 42/113 (37%), Gaps = 14/113 (12%)
+
+Query  21   IAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRSGDY------IDNIS  73
+            ++++    +D  ++    HG   GN+          EYI+ ++     Y      + ++ 
+Sbjct  41   MSIQFQFVMDGKLVLSDRHGPFSGNMFDVIELNYPHEYITGISGEYYKYEANNPHMRSLK  100
+
+Query  74   FETNMGRRFGPYG--GSGGSANTLSNVKVIQINGSAGDY----LDSLDIYYEQ  120
+            F TN    +GP+G  GS          K  Q  G  G Y    L  + +Y   
+Sbjct  101  FNTN-TSEYGPFGTSGSSNDKFAFKLGKSPQFGGFHGTYDASGLQYIGVYLRP  152
+
+
+>sp|D9UBG0|RTM1B_ARATH Inactive protein RESTRICTED TEV MOVEMENT 
+1 OS=Arabidopsis thaliana OX=3702 GN=RTM1 PE=3 SV=1
+Length=174
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 23/113 (20%), Positives = 42/113 (37%), Gaps = 14/113 (12%)
+
+Query  21   IAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRSGDY------IDNIS  73
+            ++++    +D  ++    HG   G++          EYI+ ++     Y      + ++ 
+Sbjct  41   MSIQFQFVMDGKLVLSDRHGPCSGDMFDVIELNYPHEYITGISGEYYKYEANIPHMRSLK  100
+
+Query  74   FETNMGRRFGPYG--GSGGSANTLSNVKVIQINGSAGDY----LDSLDIYYEQ  120
+            F TN    +GP+G  GS          K  Q  G  G Y    L  + +Y   
+Sbjct  101  FNTN-TSEYGPFGTSGSSNDKFAFKLGKSPQFGGFHGTYDASGLQYIGVYLRP  152
+
+
+>sp|Q9SE37|JAL1_ARATH Protein RESTRICTED TEV MOVEMENT 1 OS=Arabidopsis 
+thaliana OX=3702 GN=RTM1 PE=1 SV=1
+Length=174
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 24/113 (21%), Positives = 42/113 (37%), Gaps = 14/113 (12%)
+
+Query  21   IAVRSGSYLDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRSGDY------IDNIS  73
+            ++++    +D  ++    HG   GN+          EYI+ ++     Y      + ++ 
+Sbjct  41   MSIQFQFVMDGKLVLSDRHGPFSGNMFDVIELNYPHEYITGISGEYYKYEANNPHMRSLK  100
+
+Query  74   FETNMGRRFGPYG--GSGGSANTLSNVKVIQINGSAGDY----LDSLDIYYEQ  120
+            F TN    +GP+G  GS          K  Q  G  G Y    L  + +Y   
+Sbjct  101  FNTN-TSEYGPFGTSGSSNDKFAFKLGKSPQFGGFHGTYDASGLQYIGVYLRP  152
+
+
+>sp|P40483|YIK8_YEAST Putative zinc metalloproteinase YIL108W 
+OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YIL108W PE=1 SV=1
+Length=696
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 20/82 (24%), Positives = 32/82 (39%), Gaps = 4/82 (5%)
+
+Query  41   GSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTL---SN  97
+            G         T   GE I    +R G ++D I   T+ GR    +G   G         N
+Sbjct  612  GHETQNFTDATLEPGEIIIGFNLRCGAWVDAIQIITSHGRMTDMFGNKDGGGFAELQPPN  671
+
+Query  98   VK-VIQINGSAGDYLDSLDIYY  118
+             + ++ + G  G ++D+  I Y
+Sbjct  672  GQYILGVTGRVGQWVDAFGIIY  693
+
+
+>sp|Q9US12|YK66_SCHPO Putative zinc metalloproteinase C607.06c 
+OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC607.06c PE=2 SV=1
+Length=612
+
+ Score = 42.0 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 42/106 (40%), Gaps = 8/106 (8%)
+
+Query  21   IAVRSGSYLDAIIIDGVHHG---GSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETN  77
+            I V  G  LD I +         G+ G     F    G  I    IR G ++D IS    
+Sbjct  508  IRVHCGLALDGIEVFFGDESVLLGNRGGSPHDFEIQ-GSQIVGFQIRCGAWVDGISIVLE  566
+
+Query  78   MGRRFGPYGGSGG---SANTLSNV-KVIQINGSAGDYLDSLDIYYE  119
+             G+    YG + G    +  +    +++   G+ G ++DS+  + +
+Sbjct  567  NGKTSPFYGNANGGGLKSYLVPKGFQLVGFYGTLGPFMDSIGFFIK  612
+
+
+>sp|Q9MA49|JAL2_ARATH Jacalin-related lectin 2 OS=Arabidopsis 
+thaliana OX=3702 GN=JAL2 PE=3 SV=1
+Length=184
+
+ Score = 41.2 bits (95),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 25/112 (22%), Positives = 44/112 (39%), Gaps = 21/112 (19%)
+
+Query  29   LDAIIIDGVHHGGSGGNLSPTFTFG-SGEYISNMTIRS-------GDYIDNISFETNMGR  80
+            LD        HG + G++          EYI+ ++          G  I +++F TN+ +
+Sbjct  53   LDDTFFLSSCHGQNTGSMFDVILLNCPHEYITGISGEYLKSDGASGPQIRSLAFATNLNQ  112
+
+Query  81   RFGPYGGSGGSA--------NTLSNVKVIQINGSAGDY----LDSLDIYYEQ  120
+             +GP+GGS   +              K  Q +G  G Y    L ++ +Y + 
+Sbjct  113  -YGPFGGSSSQSSIWNHEQQFRFKLGKFRQFSGFYGTYNASGLQNIGVYLQP  163
+
+
+>sp|P08723|SPBP_RAT Prostatic spermine-binding protein OS=Rattus 
+norvegicus OX=10116 GN=Sbp PE=1 SV=1
+Length=279
+
+ Score = 40.0 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 18/84 (21%), Positives = 36/84 (43%), Gaps = 6/84 (7%)
+
+Query  41   GSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVK-  99
+            GS       F    GE+++ ++      + ++SF TN GR    +G   G +   S    
+Sbjct  68   GSRSLKYKEFLLEDGEHVTQVSGTRKLCLTSLSFTTNKGRVV-TFGVRRGLSFNESGGSD  126
+
+Query  100  --VIQING--SAGDYLDSLDIYYE  119
+              ++ +NG  + G  L+ +   ++
+Sbjct  127  KYLVTVNGLYAPGLCLNGMGFKWK  150
+
+
+>sp|P15501|SPBP_MOUSE Prostatic spermine-binding protein OS=Mus 
+musculus OX=10090 GN=Sbp PE=2 SV=1
+Length=199
+
+ Score = 38.5 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 13/84 (15%), Positives = 31/84 (37%), Gaps = 8/84 (10%)
+
+Query  41   GSGGNLSPTFTFGSGEYISNMTIRSGDYIDNISFETNMGRRFGPYGGSGGSANTLSNVK-  99
+            G+  +    F    GE++  +   +   + +++F TN GR    +G   G   + +    
+Sbjct  68   GTRSDNFIDFLLEDGEHVIKVEGSAVICLTSLTFTTNKGRVA-TFGVRRGRYFSDTGGSD  126
+
+Query  100  -----VIQINGSAGDYLDSLDIYY  118
+                 V  ++   G  +  +   +
+Sbjct  127  KHLVTVNGMHA-PGLCVRGIGFKW  149
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.136    0.362    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0416    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

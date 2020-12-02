@@ -1,0 +1,171 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3ju4a2
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q04830|FIBER_BPK1F Tail spike protein OS=Enterobacteria phage ...  309     7e-99
+sp|P49714|FIBER_BPK1E Tail spike protein OS=Escherichia phage K1E...  185     4e-54
+
+
+>sp|Q04830|FIBER_BPK1F Tail spike protein OS=Enterobacteria phage 
+K1F OX=344021 PE=1 SV=4
+Length=1064
+
+ Score = 309 bits (791),  Expect = 7e-99, Method: Compositional matrix adjust.
+ Identities = 150/150 (100%), Positives = 150/150 (100%), Gaps = 0/150 (0%)
+
+Query  1    SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE  60
+            SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE
+Sbjct  761  SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE  820
+
+Query  61   YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD  120
+            YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD
+Sbjct  821  YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD  880
+
+Query  121  VKPYNDNVTALGGPSNRFTTAYLGSNPIVT  150
+            VKPYNDNVTALGGPSNRFTTAYLGSNPIVT
+Sbjct  881  VKPYNDNVTALGGPSNRFTTAYLGSNPIVT  910
+
+
+>sp|P49714|FIBER_BPK1E Tail spike protein OS=Escherichia phage 
+K1E OX=344022 GN=GP90 PE=1 SV=1
+Length=811
+
+ Score = 185 bits (469),  Expect = 4e-54, Method: Compositional matrix adjust.
+ Identities = 95/155 (61%), Positives = 122/155 (79%), Gaps = 5/155 (3%)
+
+Query  1    SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEF-----TGDLGLGHVTIRASTSSNIRSEV  55
+            SR F YGA P +A+P F  T+G+R +PAP+ F     T D  +GH+T++ASTS+NIRSE+
+Sbjct  551  SRKFTYGATPGQAIPTFMGTDGIRNIPAPLYFSDNIVTEDTKVGHLTLKASTSANIRSEM  610
+
+Query  56   LMEGEYGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHL  115
+             MEGEYGFIGKS+P D P GQR+I CGGEGTSS++GAQITL+G+N+++++RI YNG+EHL
+Sbjct  611  QMEGEYGFIGKSVPKDKPTGQRLIICGGEGTSSSSGAQITLHGSNSSNAKRITYNGNEHL  670
+
+Query  116  FQSADVKPYNDNVTALGGPSNRFTTAYLGSNPIVT  150
+            FQ A + P  DN  A GGPSNRFTT YLGS+P+ T
+Sbjct  671  FQGAPIMPAVDNQFAAGGPSNRFTTIYLGSDPVTT  705
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6129619556
+Results from round 2
+
+
+Query= d3ju4a2
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q04830|FIBER_BPK1F Tail spike protein OS=Enterobacteria phage ...  293     8e-93
+sp|P49714|FIBER_BPK1E Tail spike protein OS=Escherichia phage K1E...  266     2e-84
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q04830|FIBER_BPK1F Tail spike protein OS=Enterobacteria phage 
+K1F OX=344021 PE=1 SV=4
+Length=1064
+
+ Score = 293 bits (749),  Expect = 8e-93, Method: Composition-based stats.
+ Identities = 150/150 (100%), Positives = 150/150 (100%), Gaps = 0/150 (0%)
+
+Query  1    SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE  60
+            SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE
+Sbjct  761  SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEFTGDLGLGHVTIRASTSSNIRSEVLMEGE  820
+
+Query  61   YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD  120
+            YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD
+Sbjct  821  YGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHLFQSAD  880
+
+Query  121  VKPYNDNVTALGGPSNRFTTAYLGSNPIVT  150
+            VKPYNDNVTALGGPSNRFTTAYLGSNPIVT
+Sbjct  881  VKPYNDNVTALGGPSNRFTTAYLGSNPIVT  910
+
+
+>sp|P49714|FIBER_BPK1E Tail spike protein OS=Escherichia phage 
+K1E OX=344022 GN=GP90 PE=1 SV=1
+Length=811
+
+ Score = 266 bits (679),  Expect = 2e-84, Method: Composition-based stats.
+ Identities = 95/155 (61%), Positives = 122/155 (79%), Gaps = 5/155 (3%)
+
+Query  1    SRDFRYGAVPNRAVPVFFDTNGVRTVPAPMEF-----TGDLGLGHVTIRASTSSNIRSEV  55
+            SR F YGA P +A+P F  T+G+R +PAP+ F     T D  +GH+T++ASTS+NIRSE+
+Sbjct  551  SRKFTYGATPGQAIPTFMGTDGIRNIPAPLYFSDNIVTEDTKVGHLTLKASTSANIRSEM  610
+
+Query  56   LMEGEYGFIGKSIPTDNPAGQRIIFCGGEGTSSTTGAQITLYGANNTDSRRIVYNGDEHL  115
+             MEGEYGFIGKS+P D P GQR+I CGGEGTSS++GAQITL+G+N+++++RI YNG+EHL
+Sbjct  611  QMEGEYGFIGKSVPKDKPTGQRLIICGGEGTSSSSGAQITLHGSNSSNAKRITYNGNEHL  670
+
+Query  116  FQSADVKPYNDNVTALGGPSNRFTTAYLGSNPIVT  150
+            FQ A + P  DN  A GGPSNRFTT YLGS+P+ T
+Sbjct  671  FQGAPIMPAVDNQFAAGGPSNRFTTIYLGSDPVTT  705
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.128    0.374    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6129619556
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

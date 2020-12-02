@@ -1,0 +1,883 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1zsoa1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein O...  75.1    2e-16
+sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein OS=...  74.7    2e-16
+sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein O...  74.3    3e-16
+sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein O...  73.6    7e-16
+sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein O...  69.7    2e-14
+sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis e...  64.3    2e-12
+sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharom...  63.5    3e-12
+sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella ve...  61.2    3e-11
+sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanog...  50.4    3e-07
+sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudo...  49.7    6e-07
+sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum ...  43.1    1e-04
+sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces cer...  39.3    0.005
+
+
+>sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein 
+OS=Bos taurus OX=9913 GN=CZIB PE=2 SV=1
+Length=160
+
+ Score = 75.1 bits (183),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 43/157 (27%), Positives = 83/157 (53%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLF-CDDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIELQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCSRENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGIY + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIYEVTHQ  156
+
+
+>sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein 
+OS=Rattus norvegicus OX=10116 GN=Czib PE=2 SV=1
+Length=160
+
+ Score = 74.7 bits (182),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 42/157 (27%), Positives = 83/157 (53%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLF-CDDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKTQESVGIFEVTHQ  156
+
+
+>sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein 
+OS=Homo sapiens OX=9606 GN=CZIB PE=1 SV=1
+Length=160
+
+ Score = 74.3 bits (181),  Expect = 3e-16, Method: Compositional matrix adjust.
+ Identities = 42/157 (27%), Positives = 80/157 (51%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLF-CDDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LEN+  L    +++ W   ++        D  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENITNLRPVGEDFRWYLKMKCGNCGEISDKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++     Y   +N  ++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-PYNAEDNENFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G  + D+NL +++W DY+E+ +  VGIY + ++
+Sbjct  120  GVESGTAFSDINLQEKDWTDYDEKAQESVGIYEVTHQ  156
+
+
+>sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein 
+OS=Mus musculus OX=10090 GN=Czib PE=1 SV=1
+Length=160
+
+ Score = 73.6 bits (179),  Expect = 7e-16, Method: Compositional matrix adjust.
+ Identities = 40/157 (25%), Positives = 84/157 (54%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLF-CDDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I+ +++    +Y   +N +++    FECRG+E +DF P   F  +
+Sbjct  61   ASMVQKCKLCARENSIDILSSTIK-AYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAD  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIFEVTHQ  156
+
+
+>sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein 
+OS=Xenopus laevis OX=8355 GN=czib PE=2 SV=1
+Length=160
+
+ Score = 69.7 bits (169),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 41/156 (26%), Positives = 78/156 (50%), Gaps = 4/156 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    ++ KA LEN+ +L    E + W   ++        D  Q+    D + +   RG+
+Sbjct  1    MVKFALQFKASLENLTQLRPHGEDFRWFLKLKCGNCGEVSDKWQYITLMDSVPLKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + +     + ++I+ +       Y   ++  ++    FECRG+E IDF P   F  E
+Sbjct  61   ASMVQRCKLCSRENSIDILAASLH-PYNAEDSETFKTIVEFECRGLEPIDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEY  153
+              + G  ++++NL +++W DY+E+ +  VGIY +E+
+Sbjct  120  GAETGTPFHEINLQEKDWTDYDEKAKESVGIYEVEH  155
+
+
+>sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis 
+elegans OX=6239 GN=F46B6.12 PE=3 SV=2
+Length=167
+
+ Score = 64.3 bits (155),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 40/155 (26%), Positives = 79/155 (51%), Gaps = 5/155 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDD--EYLWIFNIRDSTSSLTRDNIQFRKT-DILEIPNSRG  57
+            M    + +K +L+ +  L  DD   + W   ++ +      D+ Q+    ++L++P SRG
+Sbjct  1    MPFLALELKCQLKGITDLRPDDTDSFHWHMKLKCTNCGEAPDHWQYVVLNEMLDVPGSRG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN + K     + +T+  V      SY    N +W+  A F+CRG+E  DF P + +I 
+Sbjct  61   EANLVEKCKLCGRVNTLTIVEDMFK-SYNIEQNEKWQQIAVFDCRGLEPFDFDPRDEWIA  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNL  151
+            +  + G  +++++LS++ W D++++    V I  +
+Sbjct  120  KSVETGNAFHEIDLSEKEWVDFDDKAMEAVEISEM  154
+
+
+>sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=Ess1 PE=3 
+SV=1
+Length=157
+
+ Score = 63.5 bits (153),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 46/159 (29%), Positives = 74/159 (47%), Gaps = 7/159 (4%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE--YLWIFNIRDSTSSLTRDN-IQFRKTDILEIPNSRG  57
+            M    + + AEL  VK L   DE  + + F ++ S      DN I+  +++   IP S+G
+Sbjct  1    MGKFALNLNAELTGVKNLAPKDEESFYYAFKVQCSGCREIHDNAIEISRSETHSIPGSKG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN +  WT      T +FV       Y   ++ E +     ECRG EL++F P   +I 
+Sbjct  61   EANLI--WTCKNCRKTCSFVIEGPFSPYN--DSQETKKVLVLECRGCELVEFIPQGEWIA  116
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+               +    +D  + + +W DY+E     V I NLE+ ++
+Sbjct  117  NGAESNTLFDEIVLEDDWYDYDENASSEVSITNLEWSIS  155
+
+
+>sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella 
+vectensis OX=45351 GN=v1g245604 PE=3 SV=1
+Length=159
+
+ Score = 61.2 bits (147),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 39/154 (25%), Positives = 79/154 (51%), Gaps = 5/154 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIR-DSTSSLTRDNIQFRKTDILEIPNSRGT  58
+            M    +++KA LENV  L  + E + W   ++  +   +T+  +     +   +   RG 
+Sbjct  1    MVRIGLQLKANLENVTNLKAEGEDFRWYLMLKCMNCGEVTKQWVYMCLMESQPVKGGRGY  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSC-SYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+            A+F+ K     + ++++ +  K+S   Y   +N ++    SF+CRG+E  DF P   +  
+Sbjct  61   AHFVSKCKLCHRENSVDIM--KDSIHPYLASHNGKFHTIVSFDCRGVEPTDFSPRTGWTA  118
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNL  151
+            E       ++V+L++++W DY+E+ +  VG+Y +
+Sbjct  119  EGENTSTPFEVDLTEKDWSDYDEKAQNAVGVYGV  152
+
+
+>sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanogaster 
+OX=7227 GN=CG4646 PE=2 SV=1
+Length=163
+
+ Score = 50.4 bits (119),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 43/157 (27%), Positives = 77/157 (49%), Gaps = 13/157 (8%)
+
+Query  1    MKNTVVRIKAELENVKRL-FCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEI----PNS  55
+            M    ++I A LENV +L     +Y +   ++ S      D       DI E      +S
+Sbjct  1    MVRVGLQISATLENVDKLETSHPDYSFFLKLKCSNCGEQSDKWH----DITESERVQQDS  56
+
+Query  56   RGTA--NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSN  113
+            R  A  NF +K     + ++I+ V+  N+  Y   ++  ++    FECRG E ++F P  
+Sbjct  57   RNAAGFNFFMKCKMCSRENSIDIVDKSNA-PYTADDSGAFKTIVVFECRGAEPVEFSPRV  115
+
+Query  114  NFIVEDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIY  149
+             + V   + G+ + +V+LS+ +W +Y++++   VGIY
+Sbjct  116  GWRVSSAENGQQFEEVDLSEDDWVEYDQKNNNSVGIY  152
+
+
+>sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=GA18326 PE=3 SV=1
+Length=163
+
+ Score = 49.7 bits (117),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 29/99 (29%), Positives = 60/99 (61%), Gaps = 4/99 (4%)
+
+Query  54   NSRGTA--NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFP  111
+            ++R TA  NF +K     + ++I+ V  K++  Y   ++ + +    F+CRG+E +DF P
+Sbjct  55   DTRNTAGFNFFMKCKMCSRENSIDIVE-KSNVPYTADDSGKLKTIVIFDCRGLEPVDFSP  113
+
+Query  112  SNNFIVEDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIY  149
+             + + V  ++ G+ + DV+LS+ +W +Y++++   VG+Y
+Sbjct  114  RSGWKVFSSENGQSFEDVDLSEDDWVEYDQKNNNSVGVY  152
+
+
+>sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum 
+OX=44689 GN=DDB_G0270194 PE=3 SV=1
+Length=156
+
+ Score = 43.1 bits (100),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 39/133 (29%), Positives = 62/133 (47%), Gaps = 9/133 (7%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDEYLWIFNIRDSTSSLTRDN-IQFRKTDILEIPNSRGTA  59
+            M    + +KAELE ++ +F     ++   I+ S      D  I   K++I  I  S    
+Sbjct  1    MVRQSISLKAELEEIQNIFPATYKIFFLKIKCSNCGEIPDKWIGLDKSNIEVIGKS--NV  58
+
+Query  60   NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDF--ASFECRGIELIDFFPSNNFIV  117
+            N   K     + ++I   +T     Y        +DF  A F+CRG+E+ +F P +N+IV
+Sbjct  59   NLATKCKGCNRENSIVIEDT----DYSSRTIESEKDFEIARFDCRGVEIEEFDPRDNWIV  114
+
+Query  118  EDTKGKLYYDVNL  130
+              + GK Y DV+L
+Sbjct  115  VSSSGKEYKDVDL  127
+
+
+>sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YCR090C 
+PE=1 SV=1
+Length=182
+
+ Score = 39.3 bits (90),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 30/114 (26%), Positives = 50/114 (44%), Gaps = 32/114 (28%)
+
+Query  52   IPNSRGTANFMIKWTEYPKYSTINFVNTKNSCSYEE-----VNNNEWRDFA---------  97
+            +P S+GTA+F++K     K  ++N       C++E+      ++++W             
+Sbjct  57   MPASKGTASFLMKCKFCSKELSVNL------CAFEDEYLTDQSDDKWAKIKDVRKKHGLS  110
+
+Query  98   ----------SFECRGIELIDFFPSN-NFIVEDTKGKLYYDVNLSDQNWCDYNE  140
+                      S +CRG ELI F+P    F V  + GK+     L D  W DY++
+Sbjct  111  KVKEDSFIPLSLDCRGCELIKFYPDTITFEVSLSSGKV-MSCQLEDNEWYDYDD  163
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.422    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6815338080
+Results from round 2
+
+
+Query= d1zsoa1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein O...  217     3e-72
+sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein O...  211     5e-70
+sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella ve...  208     6e-69
+sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein O...  207     1e-68
+sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein O...  206     3e-68
+sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein OS=...  205     1e-67
+sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis e...  192     3e-62
+sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharom...  178     4e-57
+sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanog...  178     6e-57
+sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudo...  174     2e-55
+sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum ...  139     9e-42
+
+Sequences not found previously or not previously below threshold:
+
+sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces cer...  75.1    2e-16
+
+
+>sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein 
+OS=Xenopus laevis OX=8355 GN=czib PE=2 SV=1
+Length=160
+
+ Score = 217 bits (552),  Expect = 3e-72, Method: Composition-based stats.
+ Identities = 41/159 (26%), Positives = 78/159 (49%), Gaps = 4/159 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    ++ KA LEN+ +L    E + W   ++        D  Q+    D + +   RG+
+Sbjct  1    MVKFALQFKASLENLTQLRPHGEDFRWFLKLKCGNCGEVSDKWQYITLMDSVPLKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + +     + ++I+ +       Y   ++  ++    FECRG+E IDF P   F  E
+Sbjct  61   ASMVQRCKLCSRENSIDILAASLH-PYNAEDSETFKTIVEFECRGLEPIDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+              + G  ++++NL +++W DY+E+ +  VGIY +E+   
+Sbjct  120  GAETGTPFHEINLQEKDWTDYDEKAKESVGIYEVEHRFT  158
+
+
+>sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein 
+OS=Homo sapiens OX=9606 GN=CZIB PE=1 SV=1
+Length=160
+
+ Score = 211 bits (537),  Expect = 5e-70, Method: Composition-based stats.
+ Identities = 42/157 (27%), Positives = 80/157 (51%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LEN+  L    +++ W   ++        D  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENITNLRPVGEDFRWYLKMKCGNCGEISDKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++     Y   +N  ++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-PYNAEDNENFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G  + D+NL +++W DY+E+ +  VGIY + ++
+Sbjct  120  GVESGTAFSDINLQEKDWTDYDEKAQESVGIYEVTHQ  156
+
+
+>sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella 
+vectensis OX=45351 GN=v1g245604 PE=3 SV=1
+Length=159
+
+ Score = 208 bits (530),  Expect = 6e-69, Method: Composition-based stats.
+ Identities = 37/156 (24%), Positives = 75/156 (48%), Gaps = 3/156 (2%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIRDSTSSL-TRDNIQFRKTDILEIPNSRGT  58
+            M    +++KA LENV  L  + E + W   ++       T+  +     +   +   RG 
+Sbjct  1    MVRIGLQLKANLENVTNLKAEGEDFRWYLMLKCMNCGEVTKQWVYMCLMESQPVKGGRGY  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+F+ K     + ++++ +       Y   +N ++    SF+CRG+E  DF P   +  E
+Sbjct  61   AHFVSKCKLCHRENSVDIMKDSIH-PYLASHNGKFHTIVSFDCRGVEPTDFSPRTGWTAE  119
+
+Query  119  DTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+                   ++V+L++++W DY+E+ +  VG+Y +  +
+Sbjct  120  GENTSTPFEVDLTEKDWSDYDEKAQNAVGVYGVTSQ  155
+
+
+>sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein 
+OS=Mus musculus OX=10090 GN=Czib PE=1 SV=1
+Length=160
+
+ Score = 207 bits (527),  Expect = 1e-68, Method: Composition-based stats.
+ Identities = 40/157 (25%), Positives = 83/157 (53%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I+ +++     Y   +N +++    FECRG+E +DF P   F  +
+Sbjct  61   ASMVQKCKLCARENSIDILSSTIKA-YNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAD  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIFEVTHQ  156
+
+
+>sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein 
+OS=Bos taurus OX=9913 GN=CZIB PE=2 SV=1
+Length=160
+
+ Score = 206 bits (525),  Expect = 3e-68, Method: Composition-based stats.
+ Identities = 43/157 (27%), Positives = 83/157 (53%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIELQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCSRENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGIY + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIYEVTHQ  156
+
+
+>sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein 
+OS=Rattus norvegicus OX=10116 GN=Czib PE=2 SV=1
+Length=160
+
+ Score = 205 bits (521),  Expect = 1e-67, Method: Composition-based stats.
+ Identities = 42/157 (27%), Positives = 83/157 (53%), Gaps = 4/157 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYE  154
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKTQESVGIFEVTHQ  156
+
+
+>sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis 
+elegans OX=6239 GN=F46B6.12 PE=3 SV=2
+Length=167
+
+ Score = 192 bits (487),  Expect = 3e-62, Method: Composition-based stats.
+ Identities = 40/160 (25%), Positives = 80/160 (50%), Gaps = 5/160 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDD--EYLWIFNIRDSTSSLTRDNIQFRKT-DILEIPNSRG  57
+            M    + +K +L+ +  L  DD   + W   ++ +      D+ Q+    ++L++P SRG
+Sbjct  1    MPFLALELKCQLKGITDLRPDDTDSFHWHMKLKCTNCGEAPDHWQYVVLNEMLDVPGSRG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN + K     + +T+  V      SY    N +W+  A F+CRG+E  DF P + +I 
+Sbjct  61   EANLVEKCKLCGRVNTLTIVEDMFK-SYNIEQNEKWQQIAVFDCRGLEPFDFDPRDEWIA  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+            +  + G  +++++LS++ W D++++    V I  +  +  
+Sbjct  120  KSVETGNAFHEIDLSEKEWVDFDDKAMEAVEISEMSSQFT  159
+
+
+>sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=Ess1 PE=3 
+SV=1
+Length=157
+
+ Score = 178 bits (452),  Expect = 4e-57, Method: Composition-based stats.
+ Identities = 46/159 (29%), Positives = 74/159 (47%), Gaps = 7/159 (4%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE--YLWIFNIRDSTSSLTRDN-IQFRKTDILEIPNSRG  57
+            M    + + AEL  VK L   DE  + + F ++ S      DN I+  +++   IP S+G
+Sbjct  1    MGKFALNLNAELTGVKNLAPKDEESFYYAFKVQCSGCREIHDNAIEISRSETHSIPGSKG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN +  WT      T +FV       Y   ++ E +     ECRG EL++F P   +I 
+Sbjct  61   EANLI--WTCKNCRKTCSFVIEGPFSPYN--DSQETKKVLVLECRGCELVEFIPQGEWIA  116
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+               +    +D  + + +W DY+E     V I NLE+ ++
+Sbjct  117  NGAESNTLFDEIVLEDDWYDYDENASSEVSITNLEWSIS  155
+
+
+>sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanogaster 
+OX=7227 GN=CG4646 PE=2 SV=1
+Length=163
+
+ Score = 178 bits (451),  Expect = 6e-57, Method: Composition-based stats.
+ Identities = 40/154 (26%), Positives = 74/154 (48%), Gaps = 5/154 (3%)
+
+Query  1    MKNTVVRIKAELENVKRL-FCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEIPNSRGTA  59
+            M    ++I A LENV +L     +Y +   ++ S      D             +SR  A
+Sbjct  1    MVRVGLQISATLENVDKLETSHPDYSFFLKLKCSNCGEQSDKWHDITESERVQQDSRNAA  60
+
+Query  60   --NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+              NF +K     + ++I+ V+  N+  Y   ++  ++    FECRG E ++F P   + V
+Sbjct  61   GFNFFMKCKMCSRENSIDIVDKSNA-PYTADDSGAFKTIVVFECRGAEPVEFSPRVGWRV  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYN  150
+               + G+ + +V+LS+ +W +Y++++   VGIY 
+Sbjct  120  SSAENGQQFEEVDLSEDDWVEYDQKNNNSVGIYE  153
+
+
+>sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=GA18326 PE=3 SV=1
+Length=163
+
+ Score = 174 bits (441),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 39/154 (25%), Positives = 75/154 (49%), Gaps = 5/154 (3%)
+
+Query  1    MKNTVVRIKAELENVKRL-FCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEIPNSRGTA  59
+            M    ++I A LEN+ +L     +Y +   +  S      D             ++R TA
+Sbjct  1    MVRVGLQISATLENIDKLETSHPDYPFFVKLTCSNCGEQSDKWHDITESERVQQDTRNTA  60
+
+Query  60   --NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+              NF +K     + ++I+ V   N   Y   ++ + +    F+CRG+E +DF P + + V
+Sbjct  61   GFNFFMKCKMCSRENSIDIVEKSN-VPYTADDSGKLKTIVIFDCRGLEPVDFSPRSGWKV  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYN  150
+              ++ G+ + DV+LS+ +W +Y++++   VG+Y 
+Sbjct  120  FSSENGQSFEDVDLSEDDWVEYDQKNNNSVGVYE  153
+
+
+>sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum 
+OX=44689 GN=DDB_G0270194 PE=3 SV=1
+Length=156
+
+ Score = 139 bits (351),  Expect = 9e-42, Method: Composition-based stats.
+ Identities = 41/158 (26%), Positives = 71/158 (45%), Gaps = 9/158 (6%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDEYLWIFNIRDSTSSLTRDNI-QFRKTDILEIPNSRGTA  59
+            M    + +KAELE ++ +F     ++   I+ S      D      K++I  I  S    
+Sbjct  1    MVRQSISLKAELEEIQNIFPATYKIFFLKIKCSNCGEIPDKWIGLDKSNIEVIGKS--NV  58
+
+Query  60   NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRD--FASFECRGIELIDFFPSNNFIV  117
+            N   K     + ++I   +T     Y        +D   A F+CRG+E+ +F P +N+IV
+Sbjct  59   NLATKCKGCNRENSIVIEDT----DYSSRTIESEKDFEIARFDCRGVEIEEFDPRDNWIV  114
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + GK Y DV+L +  W ++ E     + I ++E  +
+Sbjct  115  VSSSGKEYKDVDLEEGEWSEFEERTSTSLTILSIESSI  152
+
+
+>sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YCR090C 
+PE=1 SV=1
+Length=182
+
+ Score = 75.1 bits (183),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 34/176 (19%), Positives = 64/176 (36%), Gaps = 28/176 (16%)
+
+Query  6    VRIKAEL-ENVKRL----FCDDEYLWIFNIRDSTSSLTRD-NIQFRKTDILEIPNSRGTA  59
+            + +KA L ENV ++      +    + F+++ ++     D  +     +   +P S+GTA
+Sbjct  5    LVLKATLSENVTKVSIENTNESRAEFAFDLQCTSCRELHDSKVIINTFEEYAMPASKGTA  64
+
+Query  60   NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNN-EWRDF-------------------ASF  99
+            +F++K     K  ++N         Y    ++ +W                       S 
+Sbjct  65   SFLMKCKFCSKELSVNLCA--FEDEYLTDQSDDKWAKIKDVRKKHGLSKVKEDSFIPLSL  122
+
+Query  100  ECRGIELIDFFPSNNFIVEDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+            +CRG ELI F+P                  L D  W DY++     V + +    +
+Sbjct  123  DCRGCELIKFYPDTITFEVSLSSGKVMSCQLEDNEWYDYDDNLGEEVTMTDFSSSI  178
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6815338080
+Results from round 3
+
+
+Query= d1zsoa1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein O...  210     1e-69
+sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella ve...  205     1e-67
+sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein O...  204     2e-67
+sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein O...  199     3e-65
+sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein OS=...  197     2e-64
+sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein O...  197     2e-64
+sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis e...  191     3e-62
+sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanog...  188     7e-61
+sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudo...  186     3e-60
+sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharom...  168     4e-53
+sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum ...  140     3e-42
+sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces cer...  136     4e-40
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8SWQ4|Y125_ENCCU Uncharacterized protein ECU01_0250 OS=Enceph...  39.7    0.003
+
+
+>sp|Q3B8G0|CZIB_XENLA CXXC motif containing zinc binding protein 
+OS=Xenopus laevis OX=8355 GN=czib PE=2 SV=1
+Length=160
+
+ Score = 210 bits (535),  Expect = 1e-69, Method: Composition-based stats.
+ Identities = 41/159 (26%), Positives = 78/159 (49%), Gaps = 4/159 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIRDSTSSLTRDNIQFRK-TDILEIPNSRGT  58
+            M    ++ KA LEN+ +L    E + W   ++        D  Q+    D + +   RG+
+Sbjct  1    MVKFALQFKASLENLTQLRPHGEDFRWFLKLKCGNCGEVSDKWQYITLMDSVPLKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + +     + ++I+ +       Y   ++  ++    FECRG+E IDF P   F  E
+Sbjct  61   ASMVQRCKLCSRENSIDILAASLH-PYNAEDSETFKTIVEFECRGLEPIDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+              + G  ++++NL +++W DY+E+ +  VGIY +E+   
+Sbjct  120  GAETGTPFHEINLQEKDWTDYDEKAKESVGIYEVEHRFT  158
+
+
+>sp|A7SJ66|U587_NEMVE UPF0587 protein v1g245604 OS=Nematostella 
+vectensis OX=45351 GN=v1g245604 PE=3 SV=1
+Length=159
+
+ Score = 205 bits (522),  Expect = 1e-67, Method: Composition-based stats.
+ Identities = 37/157 (24%), Positives = 75/157 (48%), Gaps = 3/157 (2%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE-YLWIFNIRDSTSSL-TRDNIQFRKTDILEIPNSRGT  58
+            M    +++KA LENV  L  + E + W   ++       T+  +     +   +   RG 
+Sbjct  1    MVRIGLQLKANLENVTNLKAEGEDFRWYLMLKCMNCGEVTKQWVYMCLMESQPVKGGRGY  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+F+ K     + ++++ +       Y   +N ++    SF+CRG+E  DF P   +  E
+Sbjct  61   AHFVSKCKLCHRENSVDIMKDSIH-PYLASHNGKFHTIVSFDCRGVEPTDFSPRTGWTAE  119
+
+Query  119  DTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+                   ++V+L++++W DY+E+ +  VG+Y +  + 
+Sbjct  120  GENTSTPFEVDLTEKDWSDYDEKAQNAVGVYGVTSQF  156
+
+
+>sp|Q9NWV4|CZIB_HUMAN CXXC motif containing zinc binding protein 
+OS=Homo sapiens OX=9606 GN=CZIB PE=1 SV=1
+Length=160
+
+ Score = 204 bits (520),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 42/158 (27%), Positives = 80/158 (51%), Gaps = 4/158 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LEN+  L    +++ W   ++        D  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENITNLRPVGEDFRWYLKMKCGNCGEISDKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++     Y   +N  ++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-PYNAEDNENFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + G  + D+NL +++W DY+E+ +  VGIY + ++ 
+Sbjct  120  GVESGTAFSDINLQEKDWTDYDEKAQESVGIYEVTHQF  157
+
+
+>sp|Q8BHG2|CZIB_MOUSE CXXC motif containing zinc binding protein 
+OS=Mus musculus OX=10090 GN=Czib PE=1 SV=1
+Length=160
+
+ Score = 199 bits (505),  Expect = 3e-65, Method: Composition-based stats.
+ Identities = 40/158 (25%), Positives = 83/158 (53%), Gaps = 4/158 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I+ +++     Y   +N +++    FECRG+E +DF P   F  +
+Sbjct  61   ASMVQKCKLCARENSIDILSSTIKA-YNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAD  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++ 
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIFEVTHQF  157
+
+
+>sp|Q498R7|CZIB_RAT CXXC motif containing zinc binding protein 
+OS=Rattus norvegicus OX=10116 GN=Czib PE=2 SV=1
+Length=160
+
+ Score = 197 bits (500),  Expect = 2e-64, Method: Composition-based stats.
+ Identities = 42/158 (27%), Positives = 83/158 (53%), Gaps = 4/158 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIALQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCARENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + G ++ D+NL +++W DY+E+ +  VGI+ + ++ 
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKTQESVGIFEVTHQF  157
+
+
+>sp|Q32P66|CZIB_BOVIN CXXC motif containing zinc binding protein 
+OS=Bos taurus OX=9913 GN=CZIB PE=2 SV=1
+Length=160
+
+ Score = 197 bits (500),  Expect = 2e-64, Method: Composition-based stats.
+ Identities = 43/158 (27%), Positives = 83/158 (53%), Gaps = 4/158 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFC-DDEYLWIFNIRDSTSSLTRDNIQF-RKTDILEIPNSRGT  58
+            M    +++KA LENV  L    +++ W   ++        +  Q+ R  D + +   RG+
+Sbjct  1    MGKIELQLKATLENVTNLRPVGEDFRWYLKMKCGNCGEISEKWQYIRLMDSVALKGGRGS  60
+
+Query  59   ANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIVE  118
+            A+ + K     + ++I  +++    SY   +N +++    FECRG+E +DF P   F  E
+Sbjct  61   ASMVQKCKLCSRENSIEILSSTIK-SYNAEDNEKFKTIVEFECRGLEPVDFQPQAGFAAE  119
+
+Query  119  DTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + G ++ D+NL +++W DY+E+ +  VGIY + ++ 
+Sbjct  120  GVESGTVFSDINLQEKDWTDYDEKAQESVGIYEVTHQF  157
+
+
+>sp|Q9BI88|U587_CAEEL UPF0587 protein F46B6.12 OS=Caenorhabditis 
+elegans OX=6239 GN=F46B6.12 PE=3 SV=2
+Length=167
+
+ Score = 191 bits (486),  Expect = 3e-62, Method: Composition-based stats.
+ Identities = 40/160 (25%), Positives = 80/160 (50%), Gaps = 5/160 (3%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDD--EYLWIFNIRDSTSSLTRDNIQFRKT-DILEIPNSRG  57
+            M    + +K +L+ +  L  DD   + W   ++ +      D+ Q+    ++L++P SRG
+Sbjct  1    MPFLALELKCQLKGITDLRPDDTDSFHWHMKLKCTNCGEAPDHWQYVVLNEMLDVPGSRG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN + K     + +T+  V      SY    N +W+  A F+CRG+E  DF P + +I 
+Sbjct  61   EANLVEKCKLCGRVNTLTIVEDMFK-SYNIEQNEKWQQIAVFDCRGLEPFDFDPRDEWIA  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+            +  + G  +++++LS++ W D++++    V I  +  +  
+Sbjct  120  KSVETGNAFHEIDLSEKEWVDFDDKAMEAVEISEMSSQFT  159
+
+
+>sp|A1Z9A2|U587_DROME UPF0587 protein CG4646 OS=Drosophila melanogaster 
+OX=7227 GN=CG4646 PE=2 SV=1
+Length=163
+
+ Score = 188 bits (477),  Expect = 7e-61, Method: Composition-based stats.
+ Identities = 40/159 (25%), Positives = 75/159 (47%), Gaps = 5/159 (3%)
+
+Query  1    MKNTVVRIKAELENVKRL-FCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEIPNSRGTA  59
+            M    ++I A LENV +L     +Y +   ++ S      D             +SR  A
+Sbjct  1    MVRVGLQISATLENVDKLETSHPDYSFFLKLKCSNCGEQSDKWHDITESERVQQDSRNAA  60
+
+Query  60   --NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+              NF +K     + ++I+ V+  N+  Y   ++  ++    FECRG E ++F P   + V
+Sbjct  61   GFNFFMKCKMCSRENSIDIVDKSNA-PYTADDSGAFKTIVVFECRGAEPVEFSPRVGWRV  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+               + G+ + +V+LS+ +W +Y++++   VGIY    + 
+Sbjct  120  SSAENGQQFEEVDLSEDDWVEYDQKNNNSVGIYEFASKF  158
+
+
+>sp|Q290L7|U587_DROPS UPF0587 protein GA18326 OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=GA18326 PE=3 SV=1
+Length=163
+
+ Score = 186 bits (473),  Expect = 3e-60, Method: Composition-based stats.
+ Identities = 39/159 (25%), Positives = 76/159 (48%), Gaps = 5/159 (3%)
+
+Query  1    MKNTVVRIKAELENVKRL-FCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEIPNSRGTA  59
+            M    ++I A LEN+ +L     +Y +   +  S      D             ++R TA
+Sbjct  1    MVRVGLQISATLENIDKLETSHPDYPFFVKLTCSNCGEQSDKWHDITESERVQQDTRNTA  60
+
+Query  60   --NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+              NF +K     + ++I+ V   N   Y   ++ + +    F+CRG+E +DF P + + V
+Sbjct  61   GFNFFMKCKMCSRENSIDIVEKSN-VPYTADDSGKLKTIVIFDCRGLEPVDFSPRSGWKV  119
+
+Query  118  EDTK-GKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              ++ G+ + DV+LS+ +W +Y++++   VG+Y    + 
+Sbjct  120  FSSENGQSFEDVDLSEDDWVEYDQKNNNSVGVYEFVSKF  158
+
+
+>sp|O74797|YGN3_SCHPO UPF0587 protein C2D10.03c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=Ess1 PE=3 
+SV=1
+Length=157
+
+ Score = 168 bits (426),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 46/159 (29%), Positives = 74/159 (47%), Gaps = 7/159 (4%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDE--YLWIFNIRDSTSSLTRDN-IQFRKTDILEIPNSRG  57
+            M    + + AEL  VK L   DE  + + F ++ S      DN I+  +++   IP S+G
+Sbjct  1    MGKFALNLNAELTGVKNLAPKDEESFYYAFKVQCSGCREIHDNAIEISRSETHSIPGSKG  60
+
+Query  58   TANFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRDFASFECRGIELIDFFPSNNFIV  117
+             AN +  WT      T +FV       Y   ++ E +     ECRG EL++F P   +I 
+Sbjct  61   EANLI--WTCKNCRKTCSFVIEGPFSPYN--DSQETKKVLVLECRGCELVEFIPQGEWIA  116
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEVN  156
+               +    +D  + + +W DY+E     V I NLE+ ++
+Sbjct  117  NGAESNTLFDEIVLEDDWYDYDENASSEVSITNLEWSIS  155
+
+
+>sp|Q55C72|U587_DICDI UPF0587 protein OS=Dictyostelium discoideum 
+OX=44689 GN=DDB_G0270194 PE=3 SV=1
+Length=156
+
+ Score = 140 bits (354),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 41/158 (26%), Positives = 71/158 (45%), Gaps = 9/158 (6%)
+
+Query  1    MKNTVVRIKAELENVKRLFCDDEYLWIFNIRDSTSSLTRDNI-QFRKTDILEIPNSRGTA  59
+            M    + +KAELE ++ +F     ++   I+ S      D      K++I  I  S    
+Sbjct  1    MVRQSISLKAELEEIQNIFPATYKIFFLKIKCSNCGEIPDKWIGLDKSNIEVIGKS--NV  58
+
+Query  60   NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNNEWRD--FASFECRGIELIDFFPSNNFIV  117
+            N   K     + ++I   +T     Y        +D   A F+CRG+E+ +F P +N+IV
+Sbjct  59   NLATKCKGCNRENSIVIEDT----DYSSRTIESEKDFEIARFDCRGVEIEEFDPRDNWIV  114
+
+Query  118  EDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+              + GK Y DV+L +  W ++ E     + I ++E  +
+Sbjct  115  VSSSGKEYKDVDLEEGEWSEFEERTSTSLTILSIESSI  152
+
+
+>sp|P25654|YCY0_YEAST UPF0587 protein YCR090C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YCR090C 
+PE=1 SV=1
+Length=182
+
+ Score = 136 bits (342),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 34/176 (19%), Positives = 64/176 (36%), Gaps = 28/176 (16%)
+
+Query  6    VRIKAEL-ENVKRL----FCDDEYLWIFNIRDSTSSLTRD-NIQFRKTDILEIPNSRGTA  59
+            + +KA L ENV ++      +    + F+++ ++     D  +     +   +P S+GTA
+Sbjct  5    LVLKATLSENVTKVSIENTNESRAEFAFDLQCTSCRELHDSKVIINTFEEYAMPASKGTA  64
+
+Query  60   NFMIKWTEYPKYSTINFVNTKNSCSYEEVNNN-EWRDF-------------------ASF  99
+            +F++K     K  ++N         Y    ++ +W                       S 
+Sbjct  65   SFLMKCKFCSKELSVNLCA--FEDEYLTDQSDDKWAKIKDVRKKHGLSKVKEDSFIPLSL  122
+
+Query  100  ECRGIELIDFFPSNNFIVEDTKGKLYYDVNLSDQNWCDYNEEHEMCVGIYNLEYEV  155
+            +CRG ELI F+P                  L D  W DY++     V + +    +
+Sbjct  123  DCRGCELIKFYPDTITFEVSLSSGKVMSCQLEDNEWYDYDDNLGEEVTMTDFSSSI  178
+
+
+>sp|Q8SWQ4|Y125_ENCCU Uncharacterized protein ECU01_0250 OS=Encephalitozoon 
+cuniculi (strain GB-M1) OX=284813 GN=ECU01_0250 
+PE=1 SV=1
+Length=171
+
+ Score = 39.7 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 12/75 (16%), Positives = 24/75 (32%), Gaps = 2/75 (3%)
+
+Query  4   TVVRIKAELENVKRLFCDDEYLWIFNIRDSTSSLTRDNIQFRKTDILEIPNSRGTANFMI  63
+             + ++ E  NVK +F D  Y     I+ +      +       D +   +     N  I
+Sbjct  3   FNIFVEGEFNNVKGVFIDQSYP--LRIQCTNCGSPHEKSVVLSEDSVGEGDFGEKVNLSI  60
+
+Query  64  KWTEYPKYSTINFVN  78
+                 +  T+  + 
+Sbjct  61  TCRCCRRIMTLKILK  75
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0403    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6815338080
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

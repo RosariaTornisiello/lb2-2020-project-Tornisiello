@@ -1,0 +1,171 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1z0jb1
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9H1K0|RBNS5_HUMAN Rabenosyn-5 OS=Homo sapiens OX=9606 GN=RBSN...  98.2    4e-25
+sp|Q80Y56|RBNS5_MOUSE Rabenosyn-5 OS=Mus musculus OX=10090 GN=Rbs...  77.8    6e-18
+
+
+>sp|Q9H1K0|RBNS5_HUMAN Rabenosyn-5 OS=Homo sapiens OX=9606 GN=RBSN 
+PE=1 SV=2
+Length=784
+
+ Score = 98.2 bits (243),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1    IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  51
+            IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD
+Sbjct  734  IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  784
+
+
+ Score = 44.7 bits (104),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 31/46 (67%), Gaps = 0/46 (0%)
+
+Query  2    EEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQK  47
+            + + LLQQI NI ++I  AK  GR+DEV  L ENLR+L+    +Q+
+Sbjct  455  DSDPLLQQIHNITSFIRQAKAAGRMDEVRTLQENLRQLQDEYDQQQ  500
+
+
+>sp|Q80Y56|RBNS5_MOUSE Rabenosyn-5 OS=Mus musculus OX=10090 GN=Rbsn 
+PE=1 SV=1
+Length=783
+
+ Score = 77.8 bits (190),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 39/44 (89%), Positives = 41/44 (93%), Gaps = 0/44 (0%)
+
+Query  8    QQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  51
+            QQIDNIKAYIFDAKQCGR+DEVEVLTENLRELK TLAKQKG  +
+Sbjct  740  QQIDNIKAYIFDAKQCGRMDEVEVLTENLRELKCTLAKQKGAPN  783
+
+
+ Score = 42.4 bits (98),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (67%), Gaps = 0/42 (0%)
+
+Query  6    LLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQK  47
+            LLQQI NI ++I  AK  GR DEV  L ENLR+L+    +Q+
+Sbjct  458  LLQQIYNITSFIRQAKAAGRTDEVRTLQENLRQLQDEYDQQQ  499
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.136    0.366    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+Results from round 2
+
+
+Query= d1z0jb1
+
+Length=51
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9H1K0|RBNS5_HUMAN Rabenosyn-5 OS=Homo sapiens OX=9606 GN=RBSN...  97.3    1e-24
+sp|Q80Y56|RBNS5_MOUSE Rabenosyn-5 OS=Mus musculus OX=10090 GN=Rbs...  88.1    2e-21
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9H1K0|RBNS5_HUMAN Rabenosyn-5 OS=Homo sapiens OX=9606 GN=RBSN 
+PE=1 SV=2
+Length=784
+
+ Score = 97.3 bits (241),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 51/51 (100%), Positives = 51/51 (100%), Gaps = 0/51 (0%)
+
+Query  1    IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  51
+            IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD
+Sbjct  734  IEEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  784
+
+
+ Score = 45.7 bits (107),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 31/46 (67%), Gaps = 0/46 (0%)
+
+Query  2    EEELLLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQK  47
+            + + LLQQI NI ++I  AK  GR+DEV  L ENLR+L+    +Q+
+Sbjct  455  DSDPLLQQIHNITSFIRQAKAAGRMDEVRTLQENLRQLQDEYDQQQ  500
+
+
+>sp|Q80Y56|RBNS5_MOUSE Rabenosyn-5 OS=Mus musculus OX=10090 GN=Rbsn 
+PE=1 SV=1
+Length=783
+
+ Score = 88.1 bits (217),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 39/44 (89%), Positives = 41/44 (93%), Gaps = 0/44 (0%)
+
+Query  8    QQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQKGGTD  51
+            QQIDNIKAYIFDAKQCGR+DEVEVLTENLRELK TLAKQKG  +
+Sbjct  740  QQIDNIKAYIFDAKQCGRMDEVEVLTENLRELKCTLAKQKGAPN  783
+
+
+ Score = 42.3 bits (98),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/42 (52%), Positives = 28/42 (67%), Gaps = 0/42 (0%)
+
+Query  6    LLQQIDNIKAYIFDAKQCGRLDEVEVLTENLRELKHTLAKQK  47
+            LLQQI NI ++I  AK  GR DEV  L ENLR+L+    +Q+
+Sbjct  458  LLQQIYNITSFIRQAKAAGRTDEVRTLQENLRQLQDEYDQQQ  499
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.144    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0440    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110697646
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

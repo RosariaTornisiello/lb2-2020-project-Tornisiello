@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ezga_
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O16119|ANPY1_TENMO Thermal hysteresis protein YL-1 OS=Tenebrio...  152     2e-48
+
+
+>sp|O16119|ANPY1_TENMO Thermal hysteresis protein YL-1 OS=Tenebrio 
+molitor OX=7067 PE=1 SV=1
+Length=112
+
+ Score = 152 bits (383),  Expect = 2e-48, Method: Compositional matrix adjust.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1    QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA  60
+            QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA
+Sbjct  29   QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA  88
+
+Query  61   NTCTDSTNCYKATACTNSSGCP  82
+            NTCTDSTNCYKATACTNSSGCP
+Sbjct  89   NTCTDSTNCYKATACTNSSGCP  110
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.123    0.440    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+Results from round 2
+
+
+Query= d1ezga_
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O16119|ANPY1_TENMO Thermal hysteresis protein YL-1 OS=Tenebrio...  102     6e-29
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O16119|ANPY1_TENMO Thermal hysteresis protein YL-1 OS=Tenebrio 
+molitor OX=7067 PE=1 SV=1
+Length=112
+
+ Score = 102 bits (254),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1    QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA  60
+            QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA
+Sbjct  29   QCTGGADCTSCTGACTGCGNCPNAVTCTNSQHCVKANTCTGSTDCNTAQTCTNSKDCFEA  88
+
+Query  61   NTCTDSTNCYKATACTNSSGCP  82
+            NTCTDSTNCYKATACTNSSGCP
+Sbjct  89   NTCTDSTNCYKATACTNSSGCP  110
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.122    0.436    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0374    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

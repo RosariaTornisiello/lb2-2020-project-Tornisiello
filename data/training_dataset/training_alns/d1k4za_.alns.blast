@@ -1,0 +1,763 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1k4za_
+
+Length=157
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P17555|CAP_YEAST Adenylyl cyclase-associated protein OS=Saccha...  323     4e-109
+sp|P36621|CAP_SCHPO Adenylyl cyclase-associated protein OS=Schizo...  127     8e-34 
+sp|P54654|CAP_DICDI Adenylyl cyclase-associated protein OS=Dictyo...  117     2e-30 
+sp|O65902|ACAP1_ARATH Cyclase-associated protein 1 OS=Arabidopsis...  107     9e-27 
+sp|Q3SYV4|CAP1_BOVIN Adenylyl cyclase-associated protein 1 OS=Bos...  105     3e-26 
+sp|Q08163|CAP1_RAT Adenylyl cyclase-associated protein 1 OS=Rattu...  104     8e-26 
+sp|P40124|CAP1_MOUSE Adenylyl cyclase-associated protein 1 OS=Mus...  104     8e-26 
+sp|P52481|CAP2_RAT Adenylyl cyclase-associated protein 2 OS=Rattu...  104     1e-25 
+sp|Q4R4I6|CAP1_MACFA Adenylyl cyclase-associated protein 1 OS=Mac...  104     1e-25 
+sp|Q5R8B4|CAP1_PONAB Adenylyl cyclase-associated protein 1 OS=Pon...  104     1e-25 
+sp|Q01518|CAP1_HUMAN Adenylyl cyclase-associated protein 1 OS=Hom...  104     1e-25 
+sp|Q9CYT6|CAP2_MOUSE Adenylyl cyclase-associated protein 2 OS=Mus...  104     1e-25 
+sp|P40123|CAP2_HUMAN Adenylyl cyclase-associated protein 2 OS=Hom...  103     2e-25 
+sp|Q5R5X8|CAP2_PONAB Adenylyl cyclase-associated protein 2 OS=Pon...  102     4e-25 
+sp|P40122|CAP_HYDVD Adenylyl cyclase-associated protein OS=Hydra ...  84.7    1e-18 
+sp|P40125|CAP1_PIG Adenylyl cyclase-associated protein 1 (Fragmen...  65.5    3e-12 
+
+
+>sp|P17555|CAP_YEAST Adenylyl cyclase-associated protein OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=SRV2 PE=1 SV=1
+Length=526
+
+ Score = 323 bits (828),  Expect = 4e-109, Method: Compositional matrix adjust.
+ Identities = 156/156 (100%), Positives = 156/156 (100%), Gaps = 0/156 (0%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC
+Sbjct  369  PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  428
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+            SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN
+Sbjct  429  SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  488
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+            VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH
+Sbjct  489  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  524
+
+
+>sp|P36621|CAP_SCHPO Adenylyl cyclase-associated protein OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=cap1 PE=1 SV=1
+Length=551
+
+ Score = 127 bits (319),  Expect = 8e-34, Method: Compositional matrix adjust.
+ Identities = 68/158 (43%), Positives = 105/158 (66%), Gaps = 4/158 (3%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANK-DESIFIGKCSQVLVQIKGKVNAISLSETES  60
+            PPR EL   KWF+EN + +  S+V+D+ + + S+ I  CS   + IKGK+N +S+S  + 
+Sbjct  395  PPRIELENTKWFVEN-QVDNHSIVLDSVELNHSVQIFGCSNCTIIIKGKLNTVSMSNCKR  453
+
+Query  61   CSVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAI  120
+             SVV+D+ ++  D+ K + FG QV + +P I ID+ DGG+IYLSK SL++E+ TS ST++
+Sbjct  454  TSVVVDTLVAAFDIAKCSNFGCQVMNHVPMIVIDQCDGGSIYLSKSSLSSEVVTSKSTSL  513
+
+Query  121  NVNLPIGEDDDYVEFPIPEQMKHSFAD-GKFKSAVFEH  157
+            N+N+P  E+ DY E  +PEQ+KH   + G+  S +  H
+Sbjct  514  NINVP-NEEGDYAERAVPEQIKHKVNEKGELVSEIVRH  550
+
+
+>sp|P54654|CAP_DICDI Adenylyl cyclase-associated protein OS=Dictyostelium 
+discoideum OX=44689 GN=cap PE=1 SV=1
+Length=464
+
+ Score = 117 bits (293),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 66/152 (43%), Positives = 93/152 (61%), Gaps = 1/152 (1%)
+
+Query  7    LVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCSVVLD  66
+            L GNKW IE   N  E ++ + +  ++++I +C   LVQIKGKVNAI+L   +  S+V +
+Sbjct  312  LQGNKWSIEYQVNNKEIVIAEPDSRQTVYIFQCVNSLVQIKGKVNAITLDGCKKTSIVFE  371
+
+Query  67   SSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINVNLP-  125
+            ++IS  +V+  N   IQV   +P I+IDK+ G  IYLSK+SL TEI +S S+ +NV +P 
+Sbjct  372  NAISSCEVVNCNGVEIQVTGRVPSIAIDKTSGCQIYLSKDSLETEIVSSKSSEMNVLIPG  431
+
+Query  126  IGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+              E+DD VE  IPEQ K S    K  +    H
+Sbjct  432  ATENDDLVELAIPEQYKTSVKGNKLHTESTSH  463
+
+
+>sp|O65902|ACAP1_ARATH Cyclase-associated protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=CAP1 PE=2 SV=1
+Length=476
+
+ Score = 107 bits (267),  Expect = 9e-27, Method: Compositional matrix adjust.
+ Identities = 53/158 (34%), Positives = 92/158 (58%), Gaps = 2/158 (1%)
+
+Query  2    PPRKEL-VGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETES  60
+            PP+ EL +G KW +EN   + + ++ + +  +S++I  C   ++QI+GKVN I++ +   
+Sbjct  316  PPKMELQMGRKWAVENQIGKKDLVISECDSKQSVYIYGCKDSVLQIQGKVNNITIDKCTK  375
+
+Query  61   CSVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAI  120
+              VV    ++  +++  N   +Q   S P +S+D + G  +YL+K+SL T I T+ S+ I
+Sbjct  376  VGVVFTDVVAAFEIVNCNNVEVQCQGSAPTVSVDNTTGCQLYLNKDSLETAITTAKSSEI  435
+
+Query  121  NVNLP-IGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+            NV +P    D D+VE  +P+Q  H F +GKF++    H
+Sbjct  436  NVMVPGATPDGDWVEHALPQQYNHVFTEGKFETTPVSH  473
+
+
+>sp|Q3SYV4|CAP1_BOVIN Adenylyl cyclase-associated protein 1 OS=Bos 
+taurus OX=9913 GN=CAP1 PE=2 SV=3
+Length=472
+
+ Score = 105 bits (263),  Expect = 3e-26, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 91/155 (59%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  316  PALLELEGKKWRVENQENVSNLMIEDTELKQVAYIFKCVNSTLQIKGKINSITVDNCKKL  375
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG ++YLSK SL+ EI ++ S+ +N
+Sbjct  376  GLVFDDVVGIVEIINSKDVKVQVMGKVPTISINKTDGCHVYLSKNSLDCEIVSAKSSEMN  435
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  436  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  469
+
+
+>sp|Q08163|CAP1_RAT Adenylyl cyclase-associated protein 1 OS=Rattus 
+norvegicus OX=10116 GN=Cap1 PE=1 SV=3
+Length=474
+
+ Score = 104 bits (260),  Expect = 8e-26, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  318  PALLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  377
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  378  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  437
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  438  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  471
+
+
+>sp|P40124|CAP1_MOUSE Adenylyl cyclase-associated protein 1 OS=Mus 
+musculus OX=10090 GN=Cap1 PE=1 SV=4
+Length=474
+
+ Score = 104 bits (260),  Expect = 8e-26, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  318  PALLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  377
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  378  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  437
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  438  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  471
+
+
+>sp|P52481|CAP2_RAT Adenylyl cyclase-associated protein 2 OS=Rattus 
+norvegicus OX=10116 GN=Cap2 PE=1 SV=1
+Length=477
+
+ Score = 104 bits (260),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 56/140 (40%), Positives = 88/140 (63%), Gaps = 2/140 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I++   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCDKSTLQIKGKVNSITVDNCKKFG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D  +  ++VI S    IQV   +P ISI+K++G ++YLSK++L+ EI ++ S+ +NV
+Sbjct  383  LVFDHVVGIVEVINSKDIQIQVMGRVPTISINKTEGCHLYLSKDALDCEIVSAKSSEMNV  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMK  142
+             +P G  DDY EFPIPEQ K
+Sbjct  443  LVPQG--DDYREFPIPEQFK  460
+
+
+>sp|Q4R4I6|CAP1_MACFA Adenylyl cyclase-associated protein 1 OS=Macaca 
+fascicularis OX=9541 GN=CAP1 PE=2 SV=3
+Length=475
+
+ Score = 104 bits (259),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|Q5R8B4|CAP1_PONAB Adenylyl cyclase-associated protein 1 OS=Pongo 
+abelii OX=9601 GN=CAP1 PE=2 SV=3
+Length=475
+
+ Score = 104 bits (259),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIEDTELKQVAYIYKCVSTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSGDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|Q01518|CAP1_HUMAN Adenylyl cyclase-associated protein 1 OS=Homo 
+sapiens OX=9606 GN=CAP1 PE=1 SV=5
+Length=475
+
+ Score = 104 bits (259),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIEDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSKDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|Q9CYT6|CAP2_MOUSE Adenylyl cyclase-associated protein 2 OS=Mus 
+musculus OX=10090 GN=Cap2 PE=1 SV=1
+Length=476
+
+ Score = 104 bits (259),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 57/146 (39%), Positives = 92/146 (63%), Gaps = 3/146 (2%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I++   +   
+Sbjct  322  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCDKSTLQIKGKVNSITVDNCKKFG  381
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D  +  ++VI S    IQV   +P ISI+K++G ++YLS+++L+ EI ++ S+ +NV
+Sbjct  382  LVFDHVVGIVEVINSKDIQIQVMGRVPTISINKTEGCHLYLSEDALDCEIVSAKSSEMNV  441
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADG  148
+             +P  +DDDY EFPIPEQ K +  DG
+Sbjct  442  LVP--QDDDYREFPIPEQFK-TIWDG  464
+
+
+>sp|P40123|CAP2_HUMAN Adenylyl cyclase-associated protein 2 OS=Homo 
+sapiens OX=9606 GN=CAP2 PE=1 SV=1
+Length=477
+
+ Score = 103 bits (257),  Expect = 2e-25, Method: Compositional matrix adjust.
+ Identities = 55/148 (37%), Positives = 91/148 (61%), Gaps = 2/148 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I +   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCEKSTIQIKGKVNSIIIDNCKKLG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D+ +  ++VI S    IQV   +P ISI+K++G +IYLS+++L+ EI ++ S+ +N+
+Sbjct  383  LVFDNVVGIVEVINSQDIQIQVMGRVPTISINKTEGCHIYLSEDALDCEIVSAKSSEMNI  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKF  150
+             +P  +D DY EFPIPEQ K ++   K 
+Sbjct  443  LIP--QDGDYREFPIPEQFKTAWDGSKL  468
+
+
+>sp|Q5R5X8|CAP2_PONAB Adenylyl cyclase-associated protein 2 OS=Pongo 
+abelii OX=9601 GN=CAP2 PE=2 SV=1
+Length=477
+
+ Score = 102 bits (255),  Expect = 4e-25, Method: Compositional matrix adjust.
+ Identities = 55/148 (37%), Positives = 91/148 (61%), Gaps = 2/148 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I +   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCEKSTLQIKGKVNSIIIDNCKKLG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D+ +  ++VI S    IQV   +P ISI+K++G +IYLS+++L+ EI ++ S+ +N+
+Sbjct  383  LVFDNVVGIVEVINSQDIQIQVMGRVPTISINKTEGCHIYLSEDALDCEIVSAKSSEMNI  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKF  150
+             +P  +D DY EFPIPEQ K ++   K 
+Sbjct  443  LIP--QDGDYREFPIPEQFKTAWDGSKL  468
+
+
+>sp|P40122|CAP_HYDVD Adenylyl cyclase-associated protein OS=Hydra 
+viridissima OX=6082 GN=CAP PE=2 SV=1
+Length=481
+
+ Score = 84.7 bits (208),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 44/141 (31%), Positives = 76/141 (54%), Gaps = 1/141 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   +L   KW IEN +  T   + + N  +++++ KC    V I GKVN+I L   E C
+Sbjct  323  PALFQLQNKKWVIENQDGNTNLEISECNDKQTVYMYKCHASKVHINGKVNSIILDSCEKC  382
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +     IS  +        +Q++   P ISI+K+DG  ++++ + L ++I T+ S+ +N
+Sbjct  383  VIEFTDVISTFEFTNCKACKVQIDGFAPTISIEKTDGAQVFINPKCLESQIVTAKSSEMN  442
+
+Query  122  VNLPIGEDDDYVEFPIPEQMK  142
+            + + +  D D  E+P+PEQ K
+Sbjct  443  ICV-MKPDGDLTEYPLPEQFK  462
+
+
+>sp|P40125|CAP1_PIG Adenylyl cyclase-associated protein 1 (Fragments) 
+OS=Sus scrofa OX=9823 GN=CAP1 PE=1 SV=1
+Length=233
+
+ Score = 65.5 bits (158),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 49/140 (35%), Positives = 70/140 (50%), Gaps = 36/140 (26%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  + V  KW  EN EN   +LVID  + +S+         +QIK  +N+IS+       
+Sbjct  123  PSPKPVTKKWRXENXEN-VSNLVIDDTELKSV------NSTLQIKXXINSISVD------  169
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+                                  N+ +P ISI+K DG +IYLSK SL+ EI ++ S+ +NV
+Sbjct  170  ----------------------NYKVPXISINKXDGRHIYLSKNSLDCEIVSAKSSEMNV  207
+
+Query  123  NLPIGEDDDYVEFPIPEQMK  142
+             +P  E  D+ EFP+PEQ K
+Sbjct  208  LIPT-EGGDFNEFPVPEQXK  226
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.131    0.369    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6957324290
+Results from round 2
+
+
+Query= d1k4za_
+
+Length=157
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q3SYV4|CAP1_BOVIN Adenylyl cyclase-associated protein 1 OS=Bos...  240     3e-77
+sp|P52481|CAP2_RAT Adenylyl cyclase-associated protein 2 OS=Rattu...  238     1e-76
+sp|Q9CYT6|CAP2_MOUSE Adenylyl cyclase-associated protein 2 OS=Mus...  236     5e-76
+sp|P40124|CAP1_MOUSE Adenylyl cyclase-associated protein 1 OS=Mus...  236     9e-76
+sp|Q08163|CAP1_RAT Adenylyl cyclase-associated protein 1 OS=Rattu...  236     1e-75
+sp|Q01518|CAP1_HUMAN Adenylyl cyclase-associated protein 1 OS=Hom...  235     2e-75
+sp|Q4R4I6|CAP1_MACFA Adenylyl cyclase-associated protein 1 OS=Mac...  234     4e-75
+sp|Q5R5X8|CAP2_PONAB Adenylyl cyclase-associated protein 2 OS=Pon...  234     6e-75
+sp|P40123|CAP2_HUMAN Adenylyl cyclase-associated protein 2 OS=Hom...  233     9e-75
+sp|Q5R8B4|CAP1_PONAB Adenylyl cyclase-associated protein 1 OS=Pon...  233     1e-74
+sp|O65902|ACAP1_ARATH Cyclase-associated protein 1 OS=Arabidopsis...  226     6e-72
+sp|P17555|CAP_YEAST Adenylyl cyclase-associated protein OS=Saccha...  211     9e-66
+sp|P54654|CAP_DICDI Adenylyl cyclase-associated protein OS=Dictyo...  209     1e-65
+sp|P40122|CAP_HYDVD Adenylyl cyclase-associated protein OS=Hydra ...  204     2e-63
+sp|P36621|CAP_SCHPO Adenylyl cyclase-associated protein OS=Schizo...  196     1e-59
+sp|P40125|CAP1_PIG Adenylyl cyclase-associated protein 1 (Fragmen...  130     3e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q3SYV4|CAP1_BOVIN Adenylyl cyclase-associated protein 1 OS=Bos 
+taurus OX=9913 GN=CAP1 PE=2 SV=3
+Length=472
+
+ Score = 240 bits (611),  Expect = 3e-77, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 91/155 (59%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  316  PALLELEGKKWRVENQENVSNLMIEDTELKQVAYIFKCVNSTLQIKGKINSITVDNCKKL  375
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG ++YLSK SL+ EI ++ S+ +N
+Sbjct  376  GLVFDDVVGIVEIINSKDVKVQVMGKVPTISINKTDGCHVYLSKNSLDCEIVSAKSSEMN  435
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  436  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  469
+
+
+>sp|P52481|CAP2_RAT Adenylyl cyclase-associated protein 2 OS=Rattus 
+norvegicus OX=10116 GN=Cap2 PE=1 SV=1
+Length=477
+
+ Score = 238 bits (607),  Expect = 1e-76, Method: Composition-based stats.
+ Identities = 57/154 (37%), Positives = 92/154 (60%), Gaps = 2/154 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I++   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCDKSTLQIKGKVNSITVDNCKKFG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D  +  ++VI S    IQV   +P ISI+K++G ++YLSK++L+ EI ++ S+ +NV
+Sbjct  383  LVFDHVVGIVEVINSKDIQIQVMGRVPTISINKTEGCHLYLSKDALDCEIVSAKSSEMNV  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+             +P  + DDY EFPIPEQ K  +   K  +   E
+Sbjct  443  LVP--QGDDYREFPIPEQFKTIWDGSKLITEPAE  474
+
+
+>sp|Q9CYT6|CAP2_MOUSE Adenylyl cyclase-associated protein 2 OS=Mus 
+musculus OX=10090 GN=Cap2 PE=1 SV=1
+Length=476
+
+ Score = 236 bits (603),  Expect = 5e-76, Method: Composition-based stats.
+ Identities = 57/154 (37%), Positives = 93/154 (60%), Gaps = 2/154 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I++   +   
+Sbjct  322  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCDKSTLQIKGKVNSITVDNCKKFG  381
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D  +  ++VI S    IQV   +P ISI+K++G ++YLS+++L+ EI ++ S+ +NV
+Sbjct  382  LVFDHVVGIVEVINSKDIQIQVMGRVPTISINKTEGCHLYLSEDALDCEIVSAKSSEMNV  441
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+             +P  +DDDY EFPIPEQ K  +   K  +   E
+Sbjct  442  LVP--QDDDYREFPIPEQFKTIWDGSKLVTEPAE  473
+
+
+>sp|P40124|CAP1_MOUSE Adenylyl cyclase-associated protein 1 OS=Mus 
+musculus OX=10090 GN=Cap1 PE=1 SV=4
+Length=474
+
+ Score = 236 bits (602),  Expect = 9e-76, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  318  PALLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  377
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  378  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  437
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  438  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  471
+
+
+>sp|Q08163|CAP1_RAT Adenylyl cyclase-associated protein 1 OS=Rattus 
+norvegicus OX=10116 GN=Cap1 PE=1 SV=3
+Length=474
+
+ Score = 236 bits (601),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  318  PALLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  377
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  378  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  437
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  438  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  471
+
+
+>sp|Q01518|CAP1_HUMAN Adenylyl cyclase-associated protein 1 OS=Homo 
+sapiens OX=9606 GN=CAP1 PE=1 SV=5
+Length=475
+
+ Score = 235 bits (599),  Expect = 2e-75, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIEDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSKDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|Q4R4I6|CAP1_MACFA Adenylyl cyclase-associated protein 1 OS=Macaca 
+fascicularis OX=9541 GN=CAP1 PE=2 SV=3
+Length=475
+
+ Score = 234 bits (597),  Expect = 4e-75, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIDDTELKQVAYIYKCVNTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSRDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|Q5R5X8|CAP2_PONAB Adenylyl cyclase-associated protein 2 OS=Pongo 
+abelii OX=9601 GN=CAP2 PE=2 SV=1
+Length=477
+
+ Score = 234 bits (596),  Expect = 6e-75, Method: Composition-based stats.
+ Identities = 56/154 (36%), Positives = 93/154 (60%), Gaps = 2/154 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I +   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCEKSTLQIKGKVNSIIIDNCKKLG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D+ +  ++VI S    IQV   +P ISI+K++G +IYLS+++L+ EI ++ S+ +N+
+Sbjct  383  LVFDNVVGIVEVINSQDIQIQVMGRVPTISINKTEGCHIYLSEDALDCEIVSAKSSEMNI  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+             +P  +D DY EFPIPEQ K ++   K  +   E
+Sbjct  443  LIP--QDGDYREFPIPEQFKTAWDGSKLITEPAE  474
+
+
+>sp|P40123|CAP2_HUMAN Adenylyl cyclase-associated protein 2 OS=Homo 
+sapiens OX=9606 GN=CAP2 PE=1 SV=1
+Length=477
+
+ Score = 233 bits (595),  Expect = 9e-75, Method: Composition-based stats.
+ Identities = 56/154 (36%), Positives = 93/154 (60%), Gaps = 2/154 (1%)
+
+Query  3    PRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESCS  62
+            P  EL G KW +E  E+  + ++ +    +  +I KC +  +QIKGKVN+I +   +   
+Sbjct  323  PVLELEGKKWRVEYQEDRNDLVISETELKQVAYIFKCEKSTIQIKGKVNSIIIDNCKKLG  382
+
+Query  63   VVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAINV  122
+            +V D+ +  ++VI S    IQV   +P ISI+K++G +IYLS+++L+ EI ++ S+ +N+
+Sbjct  383  LVFDNVVGIVEVINSQDIQIQVMGRVPTISINKTEGCHIYLSEDALDCEIVSAKSSEMNI  442
+
+Query  123  NLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+             +P  +D DY EFPIPEQ K ++   K  +   E
+Sbjct  443  LIP--QDGDYREFPIPEQFKTAWDGSKLITEPAE  474
+
+
+>sp|Q5R8B4|CAP1_PONAB Adenylyl cyclase-associated protein 1 OS=Pongo 
+abelii OX=9601 GN=CAP1 PE=2 SV=3
+Length=475
+
+ Score = 233 bits (594),  Expect = 1e-74, Method: Composition-based stats.
+ Identities = 58/155 (37%), Positives = 90/155 (58%), Gaps = 1/155 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   EL G KW +EN EN +  ++ D    +  +I KC    +QIKGK+N+I++   +  
+Sbjct  319  PAVLELEGKKWRVENQENVSNLVIEDTELKQVAYIYKCVSTTLQIKGKINSITVDNCKKL  378
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +V D  +  +++I S    +QV   +P ISI+K+DG + YLSK SL+ EI ++ S+ +N
+Sbjct  379  GLVFDDVVGIVEIINSGDVKVQVMGKVPTISINKTDGCHAYLSKNSLDCEIVSAKSSEMN  438
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFE  156
+            V +P  E  D+ EFP+PEQ K  +   K  + V E
+Sbjct  439  VLIPT-EGGDFNEFPVPEQFKTLWNGQKLVTTVTE  472
+
+
+>sp|O65902|ACAP1_ARATH Cyclase-associated protein 1 OS=Arabidopsis 
+thaliana OX=3702 GN=CAP1 PE=2 SV=1
+Length=476
+
+ Score = 226 bits (576),  Expect = 6e-72, Method: Composition-based stats.
+ Identities = 53/158 (34%), Positives = 91/158 (58%), Gaps = 2/158 (1%)
+
+Query  2    PPRKELV-GNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETES  60
+            PP+ EL  G KW +EN   + + ++ + +  +S++I  C   ++QI+GKVN I++ +   
+Sbjct  316  PPKMELQMGRKWAVENQIGKKDLVISECDSKQSVYIYGCKDSVLQIQGKVNNITIDKCTK  375
+
+Query  61   CSVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAI  120
+              VV    ++  +++  N   +Q   S P +S+D + G  +YL+K+SL T I T+ S+ I
+Sbjct  376  VGVVFTDVVAAFEIVNCNNVEVQCQGSAPTVSVDNTTGCQLYLNKDSLETAITTAKSSEI  435
+
+Query  121  NVNLP-IGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+            NV +P    D D+VE  +P+Q  H F +GKF++    H
+Sbjct  436  NVMVPGATPDGDWVEHALPQQYNHVFTEGKFETTPVSH  473
+
+
+>sp|P17555|CAP_YEAST Adenylyl cyclase-associated protein OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=SRV2 PE=1 SV=1
+Length=526
+
+ Score = 211 bits (538),  Expect = 9e-66, Method: Composition-based stats.
+ Identities = 156/156 (100%), Positives = 156/156 (100%), Gaps = 0/156 (0%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC
+Sbjct  369  PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  428
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+            SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN
+Sbjct  429  SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  488
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+            VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH
+Sbjct  489  VNLPIGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  524
+
+
+>sp|P54654|CAP_DICDI Adenylyl cyclase-associated protein OS=Dictyostelium 
+discoideum OX=44689 GN=cap PE=1 SV=1
+Length=464
+
+ Score = 209 bits (533),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 67/157 (43%), Positives = 94/157 (60%), Gaps = 1/157 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P    L GNKW IE   N  E ++ + +  ++++I +C   LVQIKGKVNAI+L   +  
+Sbjct  307  PAVFALQGNKWSIEYQVNNKEIVIAEPDSRQTVYIFQCVNSLVQIKGKVNAITLDGCKKT  366
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+            S+V +++IS  +V+  N   IQV   +P I+IDK+ G  IYLSK+SL TEI +S S+ +N
+Sbjct  367  SIVFENAISSCEVVNCNGVEIQVTGRVPSIAIDKTSGCQIYLSKDSLETEIVSSKSSEMN  426
+
+Query  122  VNLP-IGEDDDYVEFPIPEQMKHSFADGKFKSAVFEH  157
+            V +P   E+DD VE  IPEQ K S    K  +    H
+Sbjct  427  VLIPGATENDDLVELAIPEQYKTSVKGNKLHTESTSH  463
+
+
+>sp|P40122|CAP_HYDVD Adenylyl cyclase-associated protein OS=Hydra 
+viridissima OX=6082 GN=CAP PE=2 SV=1
+Length=481
+
+ Score = 204 bits (520),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 46/157 (29%), Positives = 81/157 (52%), Gaps = 3/157 (2%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            P   +L   KW IEN +  T   + + N  +++++ KC    V I GKVN+I L   E C
+Sbjct  323  PALFQLQNKKWVIENQDGNTNLEISECNDKQTVYMYKCHASKVHINGKVNSIILDSCEKC  382
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+             +     IS  +        +Q++   P ISI+K+DG  ++++ + L ++I T+ S+ +N
+Sbjct  383  VIEFTDVISTFEFTNCKACKVQIDGFAPTISIEKTDGAQVFINPKCLESQIVTAKSSEMN  442
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFA--DGKFKSAVFE  156
+            + + +  D D  E+P+PEQ K  +     KF +   +
+Sbjct  443  ICV-MKPDGDLTEYPLPEQFKTVWNPATSKFITTTMD  478
+
+
+>sp|P36621|CAP_SCHPO Adenylyl cyclase-associated protein OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=cap1 PE=1 SV=1
+Length=551
+
+ Score = 196 bits (498),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 65/157 (41%), Positives = 99/157 (63%), Gaps = 2/157 (1%)
+
+Query  2    PPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETESC  61
+            PPR EL   KWF+EN  +    ++     + S+ I  CS   + IKGK+N +S+S  +  
+Sbjct  395  PPRIELENTKWFVENQVDNHSIVLDSVELNHSVQIFGCSNCTIIIKGKLNTVSMSNCKRT  454
+
+Query  62   SVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAIN  121
+            SVV+D+ ++  D+ K + FG QV + +P I ID+ DGG+IYLSK SL++E+ TS ST++N
+Sbjct  455  SVVVDTLVAAFDIAKCSNFGCQVMNHVPMIVIDQCDGGSIYLSKSSLSSEVVTSKSTSLN  514
+
+Query  122  VNLPIGEDDDYVEFPIPEQMKHSFAD-GKFKSAVFEH  157
+            +N+P  E+ DY E  +PEQ+KH   + G+  S +  H
+Sbjct  515  INVP-NEEGDYAERAVPEQIKHKVNEKGELVSEIVRH  550
+
+
+>sp|P40125|CAP1_PIG Adenylyl cyclase-associated protein 1 (Fragments) 
+OS=Sus scrofa OX=9823 GN=CAP1 PE=1 SV=1
+Length=233
+
+ Score = 130 bits (327),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 45/149 (30%), Positives = 67/149 (45%), Gaps = 36/149 (24%)
+
+Query  1    MPPRKELVGNKWFIENYENETESLVIDANKDESIFIGKCSQVLVQIKGKVNAISLSETES  60
+            + P  + V  KW  EN EN +  ++ D                +QIK  +N+IS+     
+Sbjct  121  ISPSPKPVTKKWRXENXENVSNLVIDDTELKSV-------NSTLQIKXXINSISVDN---  170
+
+Query  61   CSVVLDSSISGMDVIKSNKFGIQVNHSLPQISIDKSDGGNIYLSKESLNTEIYTSCSTAI  120
+                                     + +P ISI+K DG +IYLSK SL+ EI ++ S+ +
+Sbjct  171  -------------------------YKVPXISINKXDGRHIYLSKNSLDCEIVSAKSSEM  205
+
+Query  121  NVNLPIGEDDDYVEFPIPEQMKHSFADGK  149
+            NV +P  E  D+ EFP+PEQ K  +   K
+Sbjct  206  NVLIPT-EGGDFNEFPVPEQXKXIWNGQK  233
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.333    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6957324290
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

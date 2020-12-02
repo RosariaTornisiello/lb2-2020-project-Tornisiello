@@ -1,0 +1,4881 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1y0na_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aerug...  130     2e-40
+sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas a...  130     2e-40
+sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas a...  130     2e-40
+sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas a...  130     2e-40
+sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas stu...  91.7    3e-25
+sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas flu...  90.9    5e-25
+sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas s...  89.0    3e-24
+sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas s...  89.0    3e-24
+sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter v...  87.0    2e-23
+sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas f...  85.9    5e-23
+sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas en...  85.1    1e-22
+sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas fl...  85.1    1e-22
+sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas...  83.6    4e-22
+sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas pu...  81.6    2e-21
+sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas puti...  81.6    2e-21
+sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmo...  42.0    1e-05
+sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihien...  41.6    2e-05
+sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella...  41.6    2e-05
+sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia prote...  41.2    2e-05
+sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enteroco...  39.3    1e-04
+sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiell...  38.9    2e-04
+sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneum...  38.9    2e-04
+sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrop...  38.9    2e-04
+sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campb...  38.1    4e-04
+sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus laum...  37.7    5e-04
+sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium ...  37.7    5e-04
+sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae ...  37.7    5e-04
+sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimuri...  37.7    6e-04
+sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi OX=...  37.7    6e-04
+sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzen...  37.7    6e-04
+sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi...  37.7    6e-04
+sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi...  37.7    6e-04
+sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi...  37.7    6e-04
+sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi...  37.7    6e-04
+sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport (...  37.7    6e-04
+sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelber...  37.7    6e-04
+sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraes...  37.7    6e-04
+sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium a...  37.4    7e-04
+sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia ferguson...  37.4    8e-04
+sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli (st...  37.0    9e-04
+sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli O45...  37.0    9e-04
+sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemol...  36.6    0.001
+sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinaru...  36.6    0.001
+sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritid...  36.6    0.001
+sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin (s...  36.6    0.001
+sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei (str...  36.6    0.001
+sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri OX...  36.6    0.001
+sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii sero...  36.6    0.001
+sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii sero...  36.6    0.001
+sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli O17...  36.6    0.001
+sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli O6:...  36.6    0.001
+sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli O6:...  36.6    0.001
+sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli O9:...  36.6    0.001
+sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli O8 ...  36.6    0.001
+sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli O81...  36.6    0.001
+sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli O7:...  36.6    0.001
+sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli O15...  36.6    0.001
+sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli O15...  36.6    0.001
+sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli (st...  36.6    0.001
+sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli O12...  36.6    0.001
+sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli O13...  36.6    0.001
+sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae ...  36.6    0.002
+sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio choler...  36.6    0.002
+sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona (st...  36.6    0.002
+sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter ko...  36.2    0.002
+sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia...  36.6    0.002
+sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseud...  36.6    0.002
+sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudo...  36.6    0.002
+sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudot...  36.6    0.002
+sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis...  36.2    0.002
+sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia ...  36.2    0.002
+sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis...  36.2    0.002
+sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yer...  36.2    0.002
+sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pesti...  36.2    0.002
+sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter sa...  36.2    0.002
+sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabili...  35.8    0.003
+sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmanien...  34.7    0.006
+
+
+>sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=PA3463 
+PE=1 SV=1
+Length=76
+
+ Score = 130 bits (326),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 69/76 (91%), Positives = 69/76 (91%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE       TPLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas 
+aeruginosa (strain UCBPP-PA14) OX=208963 GN=PA14_19330 PE=3 
+SV=1
+Length=76
+
+ Score = 130 bits (326),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 69/76 (91%), Positives = 69/76 (91%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE       TPLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas 
+aeruginosa (strain PA7) OX=381754 GN=PSPA7_1664 PE=3 SV=1
+Length=76
+
+ Score = 130 bits (326),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 69/76 (91%), Positives = 69/76 (91%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE       TPLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas 
+aeruginosa (strain LESB58) OX=557722 GN=PLES_15971 PE=3 SV=1
+Length=76
+
+ Score = 130 bits (326),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 69/76 (91%), Positives = 69/76 (91%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE       TPLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas 
+stutzeri (strain A1501) OX=379731 GN=PST_1436 PE=3 SV=1
+Length=75
+
+ Score = 91.7 bits (226),  Expect = 3e-25, Method: Compositional matrix adjust.
+ Identities = 48/74 (65%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR-------ETPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE+DTL  L+EDFVTR       ETPLD RV R R AL RGEAVI+FD +SQQ
+Sbjct  1   MLIPHDQLESDTLTRLIEDFVTRDGTDNGDETPLDTRVARVRRALDRGEAVIVFDADSQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL L+ +VP E L
+Sbjct  61  CQLALKRDVPREWL  74
+
+
+>sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas 
+fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5) OX=220664 
+GN=PFL_4336 PE=3 SV=1
+Length=75
+
+ Score = 90.9 bits (224),  Expect = 5e-25, Method: Compositional matrix adjust.
+ Identities = 46/74 (62%), Positives = 55/74 (74%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE DTL  L+EDFVTRE       TPL+ RV R R AL +G+AVI+FDP+S+Q
+Sbjct  1   MLIPHDQLEVDTLTRLIEDFVTREGTDNGDETPLETRVLRVRQALTKGQAVIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP EL 
+Sbjct  61  CQLMLKHDVPKELF  74
+
+
+>sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas 
+savastanoi pv. phaseolicola (strain 1448A / Race 6) OX=264730 
+GN=PSPPH_1506 PE=3 SV=1
+Length=75
+
+ Score = 89.0 bits (219),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 46/74 (62%), Positives = 52/74 (70%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE       TPL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP E  
+Sbjct  61  CQLMLKHDVPKEFF  74
+
+
+>sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas 
+syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 
+GN=PSPTO_1630 PE=3 SV=1
+Length=75
+
+ Score = 89.0 bits (219),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 46/74 (62%), Positives = 52/74 (70%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE       TPL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP E  
+Sbjct  61  CQLMLKHDVPKEFF  74
+
+
+>sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter 
+vinelandii (strain DJ / ATCC BAA-1303) OX=322710 GN=Avin_35000 
+PE=3 SV=1
+Length=75
+
+ Score = 87.0 bits (214),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 46/74 (62%), Positives = 55/74 (74%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPH LLEA+TL  L+EDFVTRE       TPL+ RV R R AL RGEA+ILF+P+SQQ
+Sbjct  1   MLIPHHLLEAETLTRLIEDFVTREGTDNGEETPLESRVLRVRQALERGEALILFEPDSQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP E L
+Sbjct  61  CQLVAKRDVPKEWL  74
+
+
+>sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas 
+fluorescens (strain Pf0-1) OX=205922 GN=Pfl01_4103 PE=3 SV=1
+Length=75
+
+ Score = 85.9 bits (211),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 43/74 (58%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+       TPL+ RV R R AL +G+A+I+FDPES+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPESEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP  L 
+Sbjct  61  CQLMLKHDVPKHLF  74
+
+
+>sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas 
+entomophila (strain L48) OX=384676 GN=PSEEN1465 PE=3 SV=1
+Length=75
+
+ Score = 85.1 bits (209),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 46/74 (62%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LEA+TL  L+EDFVTR+       TPL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLEAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDMESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ R EVP ELL
+Sbjct  61  CQLLARHEVPRELL  74
+
+
+>sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas 
+fluorescens (strain SBW25) OX=216595 GN=PFLU_4323 PE=3 SV=1
+Length=75
+
+ Score = 85.1 bits (209),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 42/74 (57%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+       TPL+ RV R R AL +G+A+I+FDP+S+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP  L 
+Sbjct  61  CQLMLKHDVPKHLF  74
+
+
+>sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas 
+putida (strain GB-1) OX=76869 GN=PputGB1_1339 PE=3 SV=1
+Length=75
+
+ Score = 83.6 bits (205),  Expect = 4e-22, Method: Compositional matrix adjust.
+ Identities = 43/74 (58%), Positives = 55/74 (74%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP++ L+A+TL  L+EDFVTR+       TPL+ RV R R AL +G+A ILFDPESQQ
+Sbjct  1   MLIPYEQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas 
+putida (strain ATCC 700007 / DSM 6899 / BCRC 17059 / F1) OX=351746 
+GN=Pput_3967 PE=3 SV=1
+Length=75
+
+ Score = 81.6 bits (200),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 43/74 (58%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+       TPL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas 
+putida (strain ATCC 47054 / DSM 6125 / NCIMB 11950 / KT2440) 
+OX=160488 GN=PP_1747 PE=3 SV=1
+Length=75
+
+ Score = 81.6 bits (200),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 43/74 (58%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE-------TPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+       TPL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmonicida 
+(strain A449) OX=382245 GN=ASA_3305 PE=3 SV=1
+Length=80
+
+ Score = 42.0 bits (97),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 24/55 (44%), Positives = 33/55 (60%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE--------TPLDVRVERARHALRRGEAVILF  49
+           M+IP   L++DTLNNLLE FV RE          L  +V+  R  L++G AVI++
+Sbjct  1   MIIPWQDLDSDTLNNLLEHFVLREGTEYGEHDVSLADKVDEVRQQLKQGLAVIVY  55
+
+
+>sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihiensis 
+(strain ATCC BAA-735 / DSM 15497 / L2-TR) OX=283942 
+GN=IL0325 PE=3 SV=1
+Length=78
+
+ Score = 41.6 bits (96),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 19/55 (35%), Positives = 34/55 (62%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLE--------DFVTRETPLDVRVERARHALRRGEAVILF  49
+           M+IP   ++ +TLNNL+E        D+ ++E   + +VE+ +  L+ GEAVI++
+Sbjct  1   MIIPWQEIDQETLNNLMESIVLREGTDYGSQELSFETKVEQLKQRLKSGEAVIVY  55
+
+
+>sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella 
+ictaluri (strain 93-146) OX=634503 GN=NT01EI_3666 PE=3 
+SV=1
+Length=74
+
+ Score = 41.6 bits (96),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 38/69 (55%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL++L+E FV RE          L  +VE  RH L+ GEAV+++    +
+Sbjct  1   MIIPWQQIAPETLDSLIEAFVLREGTDYGEQERSLTQKVEDVRHQLKCGEAVVVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  SVNIMPRSQ  69
+
+
+>sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia proteamaculans 
+(strain 568) OX=399741 GN=Spro_4577 PE=3 SV=1
+Length=77
+
+ Score = 41.2 bits (95),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 38/72 (53%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TLN+L+E FV RE          L+ +VE  R  L+ GE ++++    +
+Sbjct  1   MIIPWKELETETLNSLIESFVLREGTDYGEHERSLEQKVEDVRRQLKNGEVLLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R +  A
+Sbjct  61  TINIMPRGQFRA  72
+
+
+>sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enterocolitica 
+serotype O:8 / biotype 1B (strain NCTC 13174 / 8081) 
+OX=393305 GN=YE3952 PE=3 SV=1
+Length=78
+
+ Score = 39.3 bits (90),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 24/68 (35%), Positives = 37/68 (54%), Gaps = 8/68 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L+ +VE  R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLEQKVEDVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRS  62
+              +M R 
+Sbjct  61  TINIMPRG  68
+
+
+>sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiella 
+pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 
+78578) OX=272620 GN=KPN78578_37030 PE=3 SV=1
+Length=72
+
+ Score = 38.9 bits (89),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 23/68 (34%), Positives = 37/68 (54%), Gaps = 8/68 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEYERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRS  62
+              +M R+
+Sbjct  61  TVNIMPRA  68
+
+
+>sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneumoniae 
+(strain 342) OX=507522 GN=KPK_0377 PE=3 SV=1
+Length=72
+
+ Score = 38.9 bits (89),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 23/68 (34%), Positives = 37/68 (54%), Gaps = 8/68 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEHERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRS  62
+              +M R+
+Sbjct  61  TVNIMPRA  68
+
+
+>sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrophila 
+subsp. hydrophila (strain ATCC 7966 / DSM 30187 / JCM 
+1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=AHA_0994 PE=3 
+SV=1
+Length=80
+
+ Score = 38.9 bits (89),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 24/55 (44%), Positives = 32/55 (58%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE--------TPLDVRVERARHALRRGEAVILF  49
+           M+IP   L+ADTLNNLLE FV +E          L  +V   R  L++G AVI++
+Sbjct  1   MIIPWQELDADTLNNLLEHFVLQEGTEYGEHDVSLADKVADVRTQLQQGLAVIVY  55
+
+
+>sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=VIBHAR_00073 
+PE=3 SV=1
+Length=70
+
+ Score = 38.1 bits (87),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 20/69 (29%), Positives = 37/69 (54%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRE--------TPLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV RE          L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGSVEVSLQSKIDQVKSQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSE  63
+              + L+++
+Sbjct  61  TVDIQLKAK  69
+
+
+>sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus 
+laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / 
+TT01) OX=243265 GN=plu0398 PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 21/56 (38%), Positives = 31/56 (55%), Gaps = 8/56 (14%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILFD  50
+           M+IP   LE +TL NL+E FV R        E  L+ +V   RH L RG+ ++++ 
+Sbjct  1   MIIPWQQLEPETLLNLIESFVLREGTDYGEDEKSLEQKVANIRHQLERGDVMLVWS  56
+
+
+>sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 GN=PC1_3850 
+PE=3 SV=1
+Length=78
+
+ Score = 37.7 bits (86),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 23/72 (32%), Positives = 37/72 (51%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+N++E FV R        E  L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDNIIESFVLREGTDYGEQEWSLAQKVEDIRRQLKSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R +  A
+Sbjct  61  TLNIMPRDQFNA  72
+
+
+>sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae 
+(strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 24/77 (31%), Positives = 38/77 (49%), Gaps = 13/77 (17%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIVPWQGLSPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +M     P +  RD
+Sbjct  61  TVNIM-----PKKQFRD  72
+
+
+>sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi 
+OX=90370 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzengrund 
+(strain CVM19633) OX=439843 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain AKU_12601) OX=554290 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi 
+C (strain RKS4594) OX=476213 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi 
+B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain ATCC 9150 / SARB42) OX=295319 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport 
+(strain SL254) OX=423368 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelberg 
+(strain SL476) OX=454169 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraesuis 
+(strain SC-B67) OX=321314 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 
+GN=ECA4061 PE=3 SV=1
+Length=78
+
+ Score = 37.4 bits (85),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 23/72 (32%), Positives = 39/72 (54%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL++++E FV RE          L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDSIIESFVLREGTDYGEQERSLAQKVEDIRSQLQSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M RS++ A
+Sbjct  61  TLNIMPRSQLNA  72
+
+
+>sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia fergusonii 
+(strain ATCC 35469 / DSM 13698 / CDC 0568-73) OX=585054 
+GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.4 bits (85),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQELSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli 
+(strain UTI89 / UPEC) OX=364106 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.0 bits (84),  Expect = 9e-04, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli 
+O45:K1 (strain S88 / ExPEC) OX=585035 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 37.0 bits (84),  Expect = 9e-04, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=VP2791 
+PE=3 SV=1
+Length=70
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 20/69 (29%), Positives = 37/69 (54%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV R        E  L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGAIEISLQNKIDQVKTQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSE  63
+              + L+++
+Sbjct  61  TVDIQLKAK  69
+
+
+>sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinarum 
+(strain 287/91 / NCTC 13346) OX=550538 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritidis 
+PT4 (strain P125109) OX=550537 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin 
+(strain CT_02021853) OX=439851 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei 
+(strain Ss046) OX=300269 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri 
+OX=623 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii 
+serotype 4 (strain Sb227) OX=300268 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii 
+serotype 18 (strain CDC 3083-94 / BS512) OX=344609 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli 
+(strain SMS-3-5 / SECEC) OX=439855 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli 
+(strain SE11) OX=409438 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli 
+O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli 
+(strain K12) OX=83333 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli 
+(strain ATCC 8739 / DSM 1576 / Crooks) OX=481805 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli 
+O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli 
+O9:H4 (strain HS) OX=331112 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / DH10B) OX=316385 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / MC4100 / BW2952) OX=595496 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli 
+O8 (strain IAI1) OX=585034 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli 
+O81 (strain ED1a) OX=585397 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli 
+O7:K1 (strain IAI39 / ExPEC) OX=585057 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 (strain EC4115 / EHEC) OX=444450 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 OX=83334 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli 
+(strain 55989 / EAEC) OX=585055 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli 
+O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli 
+O139:H28 (strain E24377A / ETEC) OX=331111 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 36/69 (52%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 
+GN=VC_2612 PE=3 SV=1
+Length=69
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/55 (35%), Positives = 32/55 (58%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILF  49
+           M+IP   +  +TL+NL+ +FV R        E  LD ++ + R  L+ G+AVI++
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVY  55
+
+
+>sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=VCM66_2532 PE=3 
+SV=1
+Length=69
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/55 (35%), Positives = 32/55 (58%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILF  49
+           M+IP   +  +TL+NL+ +FV R        E  LD ++ + R  L+ G+AVI++
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVY  55
+
+
+>sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona 
+(strain SL483) OX=454166 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/69 (30%), Positives = 35/69 (51%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE           + +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSFEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M + +
+Sbjct  61  TVNIMPKKQ  69
+
+
+>sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) OX=290338 
+GN=CKO_04772 PE=3 SV=1
+Length=72
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 37/69 (54%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L ++TL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MMIPWQELSSETLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M R +
+Sbjct  61  TVNIMPREQ  69
+
+
+>sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia 
+pseudotuberculosis serotype O:1b (strain IP 31758) OX=349747 
+GN=YpsIP31758_3941 PE=3 SV=1
+Length=78
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseudotuberculosis 
+serotype IB (strain PB1/+) OX=502801 GN=YPTS_3917 
+PE=3 SV=1
+Length=78
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudotuberculosis 
+serotype I (strain IP32953) OX=273123 GN=YPTB3725 
+PE=3 SV=1
+Length=78
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudotuberculosis 
+serotype O:3 (strain YPIII) OX=502800 GN=YPK_0255 
+PE=3 SV=1
+Length=78
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis 
+bv. Antiqua (strain Nepal516) OX=377628 GN=YPN_3888 PE=3 
+SV=1
+Length=78
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia 
+pestis bv. Antiqua (strain Angola) OX=349746 GN=YpAngola_A3698 
+PE=3 SV=1
+Length=78
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis 
+bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_3293 PE=3 
+SV=1
+Length=78
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yersinia 
+pestis OX=632 GN=YPO0179 PE=3 SV=1
+Length=78
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pestis 
+(strain Pestoides F) OX=386656 GN=YPDSF_0104 PE=3 SV=1
+Length=78
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter 
+sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_04379 PE=3 
+SV=1
+Length=72
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/69 (33%), Positives = 35/69 (51%), Gaps = 8/69 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL  L+E FV RE          L+ +V   R  L+ GEAV+++    +
+Sbjct  1   MIIPWQEIAPDTLERLIEAFVLREGTDYGEHERSLEQKVADVRRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSE  63
+              +M RS+
+Sbjct  61  TVNIMPRSQ  69
+
+
+>sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabilis 
+(strain HI4320) OX=529507 GN=PMI2817 PE=3 SV=1
+Length=73
+
+ Score = 35.8 bits (81),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 21/65 (32%), Positives = 33/65 (51%), Gaps = 8/65 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  +TL+NL+E FV R        E  L+ +V   +  L  GEAV+++    +
+Sbjct  1   MIIPWQELSTETLDNLIESFVLREGTDYGMQEKTLEQKVADVKKQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLM  59
+              +M
+Sbjct  61  SVNIM  65
+
+
+>sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmaniensis 
+(strain LGP32) OX=575788 GN=VS_2853 PE=3 SV=1
+Length=70
+
+ Score = 34.7 bits (78),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 18/55 (33%), Positives = 30/55 (55%), Gaps = 8/55 (15%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR--------ETPLDVRVERARHALRRGEAVILF  49
+           M+IP   +  +TL NL+++FV R        E  L  ++++ +H L  GE  I+F
+Sbjct  1   MIIPWQDIAPETLENLIKEFVLREGTDYGDVEVSLQNKIDQVKHQLASGEVSIVF  55
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.139    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+Results from round 2
+
+
+Query= d1y0na_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiell...  93.5    5e-26
+sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium ...  93.5    5e-26
+sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneum...  92.3    1e-25
+sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella...  90.8    5e-25
+sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona (st...  90.4    7e-25
+sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimuri...  90.4    8e-25
+sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi OX=...  90.4    8e-25
+sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzen...  90.4    8e-25
+sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi...  90.4    8e-25
+sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi...  90.4    8e-25
+sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi...  90.4    8e-25
+sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi...  90.4    8e-25
+sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport (...  90.4    8e-25
+sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelber...  90.4    8e-25
+sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraes...  90.4    8e-25
+sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae ...  90.0    1e-24
+sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium a...  89.6    2e-24
+sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas fl...  88.9    3e-24
+sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas s...  88.9    4e-24
+sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinaru...  88.5    5e-24
+sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritid...  88.5    5e-24
+sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin (s...  88.5    5e-24
+sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enteroco...  88.5    5e-24
+sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas flu...  88.5    6e-24
+sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas f...  88.5    6e-24
+sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia...  88.1    7e-24
+sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseud...  88.1    7e-24
+sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudo...  88.1    7e-24
+sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudot...  88.1    7e-24
+sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas s...  88.1    8e-24
+sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei (str...  87.3    1e-23
+sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri OX...  87.3    1e-23
+sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii sero...  87.3    1e-23
+sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii sero...  87.3    1e-23
+sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli O17...  87.3    1e-23
+sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli O6:...  87.3    1e-23
+sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli O6:...  87.3    1e-23
+sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli O9:...  87.3    1e-23
+sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli O8 ...  87.3    1e-23
+sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli O81...  87.3    1e-23
+sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli O7:...  87.3    1e-23
+sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli O15...  87.3    1e-23
+sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli O15...  87.3    1e-23
+sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli (st...  87.3    1e-23
+sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli O12...  87.3    1e-23
+sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli O13...  87.3    1e-23
+sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis...  87.3    2e-23
+sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia ...  87.3    2e-23
+sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis...  87.3    2e-23
+sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yer...  87.3    2e-23
+sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pesti...  87.3    2e-23
+sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia ferguson...  86.9    2e-23
+sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aerug...  86.5    3e-23
+sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas a...  86.5    3e-23
+sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas a...  86.5    3e-23
+sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas a...  86.5    3e-23
+sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli (st...  86.5    3e-23
+sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli O45...  86.5    3e-23
+sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter ko...  86.2    3e-23
+sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas stu...  85.8    5e-23
+sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia prote...  84.6    2e-22
+sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas...  83.5    5e-22
+sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas en...  81.9    2e-21
+sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrop...  81.9    2e-21
+sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas pu...  81.2    3e-21
+sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas puti...  81.2    3e-21
+sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus laum...  81.2    4e-21
+sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmo...  80.8    5e-21
+sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter v...  79.2    2e-20
+sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae ...  78.5    3e-20
+sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio choler...  78.5    3e-20
+sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemol...  78.5    4e-20
+sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campb...  78.5    4e-20
+sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihien...  75.0    1e-18
+
+Sequences not found previously or not previously below threshold:
+
+sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter sa...  88.5    5e-24
+sp|B2VK22|Y3187_ERWT9 UPF0270 protein ETA_31870 OS=Erwinia tasman...  87.7    1e-23
+sp|Q2NQK2|Y2298_SODGM UPF0270 protein SG2298 OS=Sodalis glossinid...  85.4    9e-23
+sp|A4WFF7|Y3781_ENT38 UPF0270 protein Ent638_3781 OS=Enterobacter...  85.4    9e-23
+sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabili...  84.6    1e-22
+sp|Q32B11|YHEU_SHIDS UPF0270 protein YheU OS=Shigella dysenteriae...  84.2    2e-22
+sp|Q0SZW2|YHEU_SHIF8 UPF0270 protein YheU OS=Shigella flexneri se...  81.5    2e-21
+sp|Q7MH24|Y3048_VIBVY UPF0270 protein VV3048 OS=Vibrio vulnificus...  74.2    2e-18
+sp|Q8DCS6|Y1320_VIBVU UPF0270 protein VV1_1320 OS=Vibrio vulnific...  74.2    2e-18
+sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmanien...  72.7    7e-18
+sp|B5FFY9|Y205_ALIFM UPF0270 protein VFMJ11_0205 OS=Aliivibrio fi...  73.1    7e-18
+sp|B6EPM6|Y295_ALISL UPF0270 protein VSAL_I0295 OS=Aliivibrio sal...  71.5    3e-17
+sp|Q9CLQ8|Y1156_PASMU UPF0270 protein PM1156 OS=Pasteurella multo...  62.7    7e-14
+sp|P44954|Y956_HAEIN UPF0270 protein HI_0956 OS=Haemophilus influ...  60.4    7e-13
+sp|A5UDB2|Y7180_HAEIE UPF0270 protein CGSHiEE_07180 OS=Haemophilu...  60.4    7e-13
+sp|Q4QLV1|Y1129_HAEI8 UPF0270 protein NTHI1129 OS=Haemophilus inf...  60.4    7e-13
+
+
+>sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiella 
+pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 
+78578) OX=272620 GN=KPN78578_37030 PE=3 SV=1
+Length=72
+
+ Score = 93.5 bits (231),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEYERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R+   
+Sbjct  61  TVNIMPRALFN  71
+
+
+>sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 GN=PC1_3850 
+PE=3 SV=1
+Length=78
+
+ Score = 93.5 bits (231),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 23/72 (32%), Positives = 37/72 (51%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+N++E FV RE          L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDNIIESFVLREGTDYGEQEWSLAQKVEDIRRQLKSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R +  A
+Sbjct  61  TLNIMPRDQFNA  72
+
+
+>sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneumoniae 
+(strain 342) OX=507522 GN=KPK_0377 PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEHERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R+   
+Sbjct  61  TVNIMPRALFN  71
+
+
+>sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella 
+ictaluri (strain 93-146) OX=634503 GN=NT01EI_3666 PE=3 
+SV=1
+Length=74
+
+ Score = 90.8 bits (224),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 38/71 (54%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL++L+E FV RE          L  +VE  RH L+ GEAV+++    +
+Sbjct  1   MIIPWQQIAPETLDSLIEAFVLREGTDYGEQERSLTQKVEDVRHQLKCGEAVVVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  SVNIMPRSQFN  71
+
+
+>sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona 
+(strain SL483) OX=454166 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE           + +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSFEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi 
+OX=90370 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzengrund 
+(strain CVM19633) OX=439843 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain AKU_12601) OX=554290 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi 
+C (strain RKS4594) OX=476213 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi 
+B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain ATCC 9150 / SARB42) OX=295319 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport 
+(strain SL254) OX=423368 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelberg 
+(strain SL476) OX=454169 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraesuis 
+(strain SC-B67) OX=321314 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.4 bits (223),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae 
+(strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 90.0 bits (222),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIVPWQGLSPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 
+GN=ECA4061 PE=3 SV=1
+Length=78
+
+ Score = 89.6 bits (221),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 23/72 (32%), Positives = 39/72 (54%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL++++E FV RE          L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDSIIESFVLREGTDYGEQERSLAQKVEDIRSQLQSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M RS++ A
+Sbjct  61  TLNIMPRSQLNA  72
+
+
+>sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas 
+fluorescens (strain SBW25) OX=216595 GN=PFLU_4323 PE=3 SV=1
+Length=75
+
+ Score = 88.9 bits (219),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 41/74 (55%), Positives = 53/74 (72%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+        PL+ RV R R AL +G+A+I+FDP+S+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP  L 
+Sbjct  61  CQLMLKHDVPKHLF  74
+
+
+>sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas 
+syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 
+GN=PSPTO_1630 PE=3 SV=1
+Length=75
+
+ Score = 88.9 bits (219),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 45/74 (61%), Positives = 51/74 (69%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE        PL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP E  
+Sbjct  61  CQLMLKHDVPKEFF  74
+
+
+>sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter 
+sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_04379 PE=3 
+SV=1
+Length=72
+
+ Score = 88.5 bits (218),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL  L+E FV RE          L+ +V   R  L+ GEAV+++    +
+Sbjct  1   MIIPWQEIAPDTLERLIEAFVLREGTDYGEHERSLEQKVADVRRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinarum 
+(strain 287/91 / NCTC 13346) OX=550538 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 88.5 bits (218),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritidis 
+PT4 (strain P125109) OX=550537 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 88.5 bits (218),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin 
+(strain CT_02021853) OX=439851 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 88.5 bits (218),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enterocolitica 
+serotype O:8 / biotype 1B (strain NCTC 13174 / 8081) 
+OX=393305 GN=YE3952 PE=3 SV=1
+Length=78
+
+ Score = 88.5 bits (218),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 38/72 (53%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L+ +VE  R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLEQKVEDVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGAFRA  72
+
+
+>sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas 
+fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5) OX=220664 
+GN=PFL_4336 PE=3 SV=1
+Length=75
+
+ Score = 88.5 bits (218),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 45/74 (61%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE DTL  L+EDFVTRE        PL+ RV R R AL +G+AVI+FDP+S+Q
+Sbjct  1   MLIPHDQLEVDTLTRLIEDFVTREGTDNGDETPLETRVLRVRQALTKGQAVIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP EL 
+Sbjct  61  CQLMLKHDVPKELF  74
+
+
+>sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas 
+fluorescens (strain Pf0-1) OX=205922 GN=Pfl01_4103 PE=3 SV=1
+Length=75
+
+ Score = 88.5 bits (218),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 42/74 (57%), Positives = 53/74 (72%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+        PL+ RV R R AL +G+A+I+FDPES+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPESEQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP  L 
+Sbjct  61  CQLMLKHDVPKHLF  74
+
+
+>sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia 
+pseudotuberculosis serotype O:1b (strain IP 31758) OX=349747 
+GN=YpsIP31758_3941 PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseudotuberculosis 
+serotype IB (strain PB1/+) OX=502801 GN=YPTS_3917 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudotuberculosis 
+serotype I (strain IP32953) OX=273123 GN=YPTB3725 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudotuberculosis 
+serotype O:3 (strain YPIII) OX=502800 GN=YPK_0255 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFHA  72
+
+
+>sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas 
+savastanoi pv. phaseolicola (strain 1448A / Race 6) OX=264730 
+GN=PSPPH_1506 PE=3 SV=1
+Length=75
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 45/74 (61%), Positives = 51/74 (69%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE        PL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQLML+ +VP E  
+Sbjct  61  CQLMLKHDVPKEFF  74
+
+
+>sp|B2VK22|Y3187_ERWT9 UPF0270 protein ETA_31870 OS=Erwinia tasmaniensis 
+(strain DSM 17950 / CIP 109463 / Et1/99) OX=465817 
+GN=ETA_31870 PE=3 SV=1
+Length=72
+
+ Score = 87.7 bits (216),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 34/71 (48%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+  TL++L+E FV RE          L+ +V   R  L  GE V+++    +
+Sbjct  1   MIIPWKELDPATLDSLIESFVLREGTDYGEHERSLEQKVADVRRQLSSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R +  
+Sbjct  61  SVNIMPRGQFH  71
+
+
+>sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei 
+(strain Ss046) OX=300269 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri 
+OX=623 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii 
+serotype 4 (strain Sb227) OX=300268 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii 
+serotype 18 (strain CDC 3083-94 / BS512) OX=344609 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli 
+(strain SMS-3-5 / SECEC) OX=439855 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli 
+(strain SE11) OX=409438 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli 
+O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli 
+(strain K12) OX=83333 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli 
+(strain ATCC 8739 / DSM 1576 / Crooks) OX=481805 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli 
+O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli 
+O9:H4 (strain HS) OX=331112 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / DH10B) OX=316385 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / MC4100 / BW2952) OX=595496 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli 
+O8 (strain IAI1) OX=585034 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli 
+O81 (strain ED1a) OX=585397 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli 
+O7:K1 (strain IAI39 / ExPEC) OX=585057 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 (strain EC4115 / EHEC) OX=444450 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 OX=83334 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli 
+(strain 55989 / EAEC) OX=585055 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli 
+O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli 
+O139:H28 (strain E24377A / ETEC) OX=331111 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 87.3 bits (215),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis 
+bv. Antiqua (strain Nepal516) OX=377628 GN=YPN_3888 PE=3 
+SV=1
+Length=78
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia 
+pestis bv. Antiqua (strain Angola) OX=349746 GN=YpAngola_A3698 
+PE=3 SV=1
+Length=78
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis 
+bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_3293 PE=3 
+SV=1
+Length=78
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yersinia 
+pestis OX=632 GN=YPO0179 PE=3 SV=1
+Length=78
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pestis 
+(strain Pestoides F) OX=386656 GN=YPDSF_0104 PE=3 SV=1
+Length=78
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R    A
+Sbjct  61  TINIMPRGSFRA  72
+
+
+>sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia fergusonii 
+(strain ATCC 35469 / DSM 13698 / CDC 0568-73) OX=585054 
+GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 86.9 bits (214),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQELSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=PA3463 
+PE=1 SV=1
+Length=76
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas 
+aeruginosa (strain UCBPP-PA14) OX=208963 GN=PA14_19330 PE=3 
+SV=1
+Length=76
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas 
+aeruginosa (strain PA7) OX=381754 GN=PSPA7_1664 PE=3 SV=1
+Length=76
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas 
+aeruginosa (strain LESB58) OX=557722 GN=PLES_15971 PE=3 SV=1
+Length=76
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli 
+(strain UTI89 / UPEC) OX=364106 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli 
+O45:K1 (strain S88 / ExPEC) OX=585035 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) OX=290338 
+GN=CKO_04772 PE=3 SV=1
+Length=72
+
+ Score = 86.2 bits (212),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L ++TL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MMIPWQELSSETLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R +  
+Sbjct  61  TVNIMPREQFR  71
+
+
+>sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas 
+stutzeri (strain A1501) OX=379731 GN=PST_1436 PE=3 SV=1
+Length=75
+
+ Score = 85.8 bits (211),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 48/74 (65%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTR-------ETPLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE+DTL  L+EDFVTR       ETPLD RV R R AL RGEAVI+FD +SQQ
+Sbjct  1   MLIPHDQLESDTLTRLIEDFVTRDGTDNGDETPLDTRVARVRRALDRGEAVIVFDADSQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL L+ +VP E L
+Sbjct  61  CQLALKRDVPREWL  74
+
+
+>sp|Q2NQK2|Y2298_SODGM UPF0270 protein SG2298 OS=Sodalis glossinidius 
+(strain morsitans) OX=343509 GN=SG2298 PE=3 SV=1
+Length=73
+
+ Score = 85.4 bits (210),  Expect = 9e-23, Method: Composition-based stats.
+ Identities = 20/71 (28%), Positives = 33/71 (46%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++  TL NL+E FV RE          L  +V      ++ GEAV+++    +
+Sbjct  1   MIIPWQQIDPTTLYNLIESFVLREGTDYGLQEKSLQQKVADVLRQVQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R +  
+Sbjct  61  SINIMPRGQYR  71
+
+
+>sp|A4WFF7|Y3781_ENT38 UPF0270 protein Ent638_3781 OS=Enterobacter 
+sp. (strain 638) OX=399742 GN=Ent638_3781 PE=3 SV=1
+Length=72
+
+ Score = 85.4 bits (210),  Expect = 9e-23, Method: Composition-based stats.
+ Identities = 19/71 (27%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  +TL++L+E FV RE          L+ +V   +  L+ GE ++++    +
+Sbjct  1   MMIPWQDLAPETLDSLIESFVLREGTDYGEHERSLEQKVADVKRQLQNGEILLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R++  
+Sbjct  61  TVNIMPRNQFR  71
+
+
+>sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabilis 
+(strain HI4320) OX=529507 GN=PMI2817 PE=3 SV=1
+Length=73
+
+ Score = 84.6 bits (208),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  +TL+NL+E FV RE          L+ +V   +  L  GEAV+++    +
+Sbjct  1   MIIPWQELSTETLDNLIESFVLREGTDYGMQEKTLEQKVADVKKQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M  ++  
+Sbjct  61  SVNIMPAAQFR  71
+
+
+>sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia proteamaculans 
+(strain 568) OX=399741 GN=Spro_4577 PE=3 SV=1
+Length=77
+
+ Score = 84.6 bits (208),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 38/74 (51%), Gaps = 8/74 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TLN+L+E FV RE          L+ +VE  R  L+ GE ++++    +
+Sbjct  1   MIIPWKELETETLNSLIESFVLREGTDYGEHERSLEQKVEDVRRQLKNGEVLLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAEL  68
+              +M R +  A  
+Sbjct  61  TINIMPRGQFRAGQ  74
+
+
+>sp|Q32B11|YHEU_SHIDS UPF0270 protein YheU OS=Shigella dysenteriae 
+serotype 1 (strain Sd197) OX=300267 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 84.2 bits (207),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLI    L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLITWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas 
+putida (strain GB-1) OX=76869 GN=PputGB1_1339 PE=3 SV=1
+Length=75
+
+ Score = 83.5 bits (205),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 42/74 (57%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP++ L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFDPESQQ
+Sbjct  1   MLIPYEQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas 
+entomophila (strain L48) OX=384676 GN=PSEEN1465 PE=3 SV=1
+Length=75
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 45/74 (61%), Positives = 53/74 (72%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LEA+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLEAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDMESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ R EVP ELL
+Sbjct  61  CQLLARHEVPRELL  74
+
+
+>sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrophila 
+subsp. hydrophila (strain ATCC 7966 / DSM 30187 / JCM 
+1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=AHA_0994 PE=3 
+SV=1
+Length=80
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 40/77 (52%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ADTLNNLLE FV +E          L  +V   R  L++G AVI++    +
+Sbjct  1   MIIPWQELDADTLNNLLEHFVLQEGTEYGEHDVSLADKVADVRTQLQQGLAVIVYSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              ++ ++ +    + D
+Sbjct  61  SVNIVPKATLDRAQVDD  77
+
+
+>sp|Q0SZW2|YHEU_SHIF8 UPF0270 protein YheU OS=Shigella flexneri 
+serotype 5b (strain 8401) OX=373384 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 81.5 bits (200),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 33/71 (46%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           M IP   L   TL NL+E FV RE          L+ +V   +  L+ GEAV++     +
+Sbjct  1   MWIPWQDLSPVTLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVCSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas 
+putida (strain ATCC 700007 / DSM 6899 / BCRC 17059 / F1) OX=351746 
+GN=Pput_3967 PE=3 SV=1
+Length=75
+
+ Score = 81.2 bits (199),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 42/74 (57%), Positives = 53/74 (72%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas 
+putida (strain ATCC 47054 / DSM 6125 / NCIMB 11950 / KT2440) 
+OX=160488 GN=PP_1747 PE=3 SV=1
+Length=75
+
+ Score = 81.2 bits (199),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 42/74 (57%), Positives = 53/74 (72%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP ELL
+Sbjct  61  CQLLAKHDVPRELL  74
+
+
+>sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus 
+laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / 
+TT01) OX=243265 GN=plu0398 PE=3 SV=1
+Length=72
+
+ Score = 81.2 bits (199),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 21/72 (29%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TL NL+E FV RE          L+ +V   RH L RG+ ++++    +
+Sbjct  1   MIIPWQQLEPETLLNLIESFVLREGTDYGEDEKSLEQKVANIRHQLERGDVMLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              ++ +    +
+Sbjct  61  SVNIVPKEMFHS  72
+
+
+>sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmonicida 
+(strain A449) OX=382245 GN=ASA_3305 PE=3 SV=1
+Length=80
+
+ Score = 80.8 bits (198),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 41/77 (53%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L++DTLNNLLE FV RE          L  +V+  R  L++G AVI++    +
+Sbjct  1   MIIPWQDLDSDTLNNLLEHFVLREGTEYGEHDVSLADKVDEVRQQLKQGLAVIVYSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              ++ ++   +  + D
+Sbjct  61  SINIVSKATFSSAPVDD  77
+
+
+>sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter 
+vinelandii (strain DJ / ATCC BAA-1303) OX=322710 GN=Avin_35000 
+PE=3 SV=1
+Length=75
+
+ Score = 79.2 bits (194),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 45/74 (61%), Positives = 54/74 (73%), Gaps = 7/74 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPH LLEA+TL  L+EDFVTRE        PL+ RV R R AL RGEA+ILF+P+SQQ
+Sbjct  1   MLIPHHLLEAETLTRLIEDFVTREGTDNGEETPLESRVLRVRQALERGEALILFEPDSQQ  60
+
+Query  56  CQLMLRSEVPAELL  69
+           CQL+ + +VP E L
+Sbjct  61  CQLVAKRDVPKEWL  74
+
+
+>sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 
+GN=VC_2612 PE=3 SV=1
+Length=69
+
+ Score = 78.5 bits (192),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 19/64 (30%), Positives = 34/64 (53%), Gaps = 8/64 (13%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL+NL+ +FV RE          LD ++ + R  L+ G+AVI++    +
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVYSELHE  60
+
+Query  55  QCQL  58
+              +
+Sbjct  61  TVDI  64
+
+
+>sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=VCM66_2532 PE=3 
+SV=1
+Length=69
+
+ Score = 78.5 bits (192),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 19/64 (30%), Positives = 34/64 (53%), Gaps = 8/64 (13%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL+NL+ +FV RE          LD ++ + R  L+ G+AVI++    +
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVYSELHE  60
+
+Query  55  QCQL  58
+              +
+Sbjct  61  TVDI  64
+
+
+>sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=VP2791 
+PE=3 SV=1
+Length=70
+
+ Score = 78.5 bits (192),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 37/70 (53%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV RE          L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGAIEISLQNKIDQVKTQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+++ 
+Sbjct  61  TVDIQLKAKF  70
+
+
+>sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=VIBHAR_00073 
+PE=3 SV=1
+Length=70
+
+ Score = 78.5 bits (192),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 37/70 (53%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV RE          L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGSVEVSLQSKIDQVKSQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+++ 
+Sbjct  61  TVDIQLKAKF  70
+
+
+>sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihiensis 
+(strain ATCC BAA-735 / DSM 15497 / L2-TR) OX=283942 
+GN=IL0325 PE=3 SV=1
+Length=78
+
+ Score = 75.0 bits (183),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 21/70 (30%), Positives = 37/70 (53%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++ +TLNNL+E  V RE           + +VE+ +  L+ GEAVI++    +
+Sbjct  1   MIIPWQEIDQETLNNLMESIVLREGTDYGSQELSFETKVEQLKQRLKSGEAVIVYSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              ++ +  V
+Sbjct  61  SVDVVNKDSV  70
+
+
+>sp|Q7MH24|Y3048_VIBVY UPF0270 protein VV3048 OS=Vibrio vulnificus 
+(strain YJ016) OX=196600 GN=VV3048 PE=3 SV=1
+Length=70
+
+ Score = 74.2 bits (181),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 35/70 (50%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   +  + L+NL+ +FV RE          L+ ++ + +  L  GEAV++F    +
+Sbjct  1   MIVPWQQISPEALSNLIREFVLREGTDYGESEYSLEEKIAQVQQQLECGEAVVVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+ + 
+Sbjct  61  TVDIQLKQKF  70
+
+
+>sp|Q8DCS6|Y1320_VIBVU UPF0270 protein VV1_1320 OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=VV1_1320 PE=3 SV=1
+Length=70
+
+ Score = 74.2 bits (181),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 35/70 (50%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   +  + L+NL+ +FV RE          L+ ++ + +  L  GEAV++F    +
+Sbjct  1   MIVPWQQISPEALSNLIREFVLREGTDYGESEYSLEEKIAQVQQQLECGEAVVVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+ + 
+Sbjct  61  TVDIQLKQKF  70
+
+
+>sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmaniensis 
+(strain LGP32) OX=575788 GN=VS_2853 PE=3 SV=1
+Length=70
+
+ Score = 72.7 bits (177),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 33/70 (47%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+++FV RE          L  ++++ +H L  GE  I+F    +
+Sbjct  1   MIIPWQDIAPETLENLIKEFVLREGTDYGDVEVSLQNKIDQVKHQLASGEVSIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + +    
+Sbjct  61  TVDIQVTKRF  70
+
+
+>sp|B5FFY9|Y205_ALIFM UPF0270 protein VFMJ11_0205 OS=Aliivibrio 
+fischeri (strain MJ11) OX=388396 GN=VFMJ11_0205 PE=3 SV=1
+Length=80
+
+ Score = 73.1 bits (178),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 19/74 (26%), Positives = 35/74 (47%), Gaps = 8/74 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL NL+ +FV RE             +V++ +  L+ GEA+++F    +
+Sbjct  1   MIIPWQDIAPDTLENLISEFVLREGTDYGEVEISHQEKVDQIKVLLKNGEAMVVFSELHE  60
+
+Query  55  QCQLMLRSEVPAEL  68
+              +  ++     L
+Sbjct  61  TVDIQTKARFNPNL  74
+
+
+>sp|B6EPM6|Y295_ALISL UPF0270 protein VSAL_I0295 OS=Aliivibrio 
+salmonicida (strain LFI1238) OX=316275 GN=VSAL_I0295 PE=3 SV=1
+Length=80
+
+ Score = 71.5 bits (174),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 17/71 (24%), Positives = 34/71 (48%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL NL+ +FV RE             ++E+ +  L+ G+A+++F    +
+Sbjct  1   MIIPWQDIAPDTLENLISEFVLREGTDYGEMECSHQDKIEQVKLLLKNGDAMVVFSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +  ++   
+Sbjct  61  TVDIQTKARFN  71
+
+
+>sp|Q9CLQ8|Y1156_PASMU UPF0270 protein PM1156 OS=Pasteurella multocida 
+(strain Pm70) OX=272843 GN=PM1156 PE=3 SV=1
+Length=72
+
+ Score = 62.7 bits (151),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 35/70 (50%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TLNN++E F+ RE          L+ + +     +++G  VI++    +
+Sbjct  1   MIIPWQELEEETLNNIVESFILREGTDYGQCELSLEQKKQALLSQIQQGTVVIVWSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              +  + ++
+Sbjct  61  SIDIKDKMDL  70
+
+
+>sp|P44954|Y956_HAEIN UPF0270 protein HI_0956 OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=HI_0956 PE=3 SV=2
+Length=83
+
+ Score = 60.4 bits (145),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+>sp|A5UDB2|Y7180_HAEIE UPF0270 protein CGSHiEE_07180 OS=Haemophilus 
+influenzae (strain PittEE) OX=374930 GN=CGSHiEE_07180 
+PE=3 SV=1
+Length=83
+
+ Score = 60.4 bits (145),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+>sp|Q4QLV1|Y1129_HAEI8 UPF0270 protein NTHI1129 OS=Haemophilus 
+influenzae (strain 86-028NP) OX=281310 GN=NTHI1129 PE=3 SV=1
+Length=83
+
+ Score = 60.4 bits (145),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.145    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0443    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+Results from round 3
+
+
+Query= d1y0na_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiell...  94.6    1e-26
+sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium ...  94.2    3e-26
+sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneum...  93.4    5e-26
+sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona (st...  92.3    1e-25
+sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimuri...  92.3    1e-25
+sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi OX=...  92.3    1e-25
+sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzen...  92.3    1e-25
+sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi...  92.3    1e-25
+sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi...  92.3    1e-25
+sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi...  92.3    1e-25
+sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi...  92.3    1e-25
+sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport (...  92.3    1e-25
+sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelber...  92.3    1e-25
+sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraes...  92.3    1e-25
+sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella...  92.3    2e-25
+sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae ...  91.9    2e-25
+sp|Q2NQK2|Y2298_SODGM UPF0270 protein SG2298 OS=Sodalis glossinid...  91.1    4e-25
+sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter sa...  90.8    6e-25
+sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinaru...  90.8    6e-25
+sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritid...  90.8    6e-25
+sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin (s...  90.8    6e-25
+sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei (str...  89.6    1e-24
+sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri OX...  89.6    1e-24
+sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii sero...  89.6    1e-24
+sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii sero...  89.6    1e-24
+sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli O17...  89.6    1e-24
+sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli O6:...  89.6    1e-24
+sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli O6:...  89.6    1e-24
+sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli O9:...  89.6    1e-24
+sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli O8 ...  89.6    1e-24
+sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli O81...  89.6    1e-24
+sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli O7:...  89.6    1e-24
+sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli O15...  89.6    1e-24
+sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli O15...  89.6    1e-24
+sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli (st...  89.6    1e-24
+sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli O12...  89.6    1e-24
+sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli O13...  89.6    1e-24
+sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enteroco...  89.2    2e-24
+sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia ferguson...  89.2    3e-24
+sp|B2VK22|Y3187_ERWT9 UPF0270 protein ETA_31870 OS=Erwinia tasman...  88.8    3e-24
+sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli (st...  88.8    3e-24
+sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli O45...  88.8    3e-24
+sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium a...  88.8    3e-24
+sp|A4WFF7|Y3781_ENT38 UPF0270 protein Ent638_3781 OS=Enterobacter...  88.4    4e-24
+sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabili...  88.1    6e-24
+sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter ko...  88.1    7e-24
+sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia...  88.1    8e-24
+sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseud...  88.1    8e-24
+sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudo...  88.1    8e-24
+sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudot...  88.1    8e-24
+sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis...  88.1    8e-24
+sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia ...  88.1    8e-24
+sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis...  88.1    8e-24
+sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yer...  88.1    8e-24
+sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pesti...  88.1    8e-24
+sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmo...  87.3    2e-23
+sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia prote...  86.9    2e-23
+sp|Q32B11|YHEU_SHIDS UPF0270 protein YheU OS=Shigella dysenteriae...  86.5    3e-23
+sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrop...  85.4    1e-22
+sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas fl...  85.0    1e-22
+sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas s...  85.0    1e-22
+sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas flu...  84.6    2e-22
+sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas f...  84.2    2e-22
+sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus laum...  84.2    2e-22
+sp|Q0SZW2|YHEU_SHIF8 UPF0270 protein YheU OS=Shigella flexneri se...  84.2    3e-22
+sp|B5FFY9|Y205_ALIFM UPF0270 protein VFMJ11_0205 OS=Aliivibrio fi...  84.2    3e-22
+sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemol...  83.0    5e-22
+sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas s...  83.0    6e-22
+sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campb...  82.3    1e-21
+sp|B6EPM6|Y295_ALISL UPF0270 protein VSAL_I0295 OS=Aliivibrio sal...  82.7    1e-21
+sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas stu...  82.7    1e-21
+sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aerug...  81.9    2e-21
+sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas a...  81.9    2e-21
+sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas a...  81.9    2e-21
+sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas a...  81.9    2e-21
+sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae ...  81.1    4e-21
+sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio choler...  81.1    4e-21
+sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas...  80.3    9e-21
+sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas en...  78.8    3e-20
+sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmanien...  78.8    3e-20
+sp|Q7MH24|Y3048_VIBVY UPF0270 protein VV3048 OS=Vibrio vulnificus...  78.4    4e-20
+sp|Q8DCS6|Y1320_VIBVU UPF0270 protein VV1_1320 OS=Vibrio vulnific...  78.4    4e-20
+sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas pu...  77.3    1e-19
+sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas puti...  77.3    1e-19
+sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter v...  77.3    2e-19
+sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihien...  76.9    2e-19
+sp|P44954|Y956_HAEIN UPF0270 protein HI_0956 OS=Haemophilus influ...  75.3    8e-19
+sp|A5UDB2|Y7180_HAEIE UPF0270 protein CGSHiEE_07180 OS=Haemophilu...  75.3    8e-19
+sp|Q4QLV1|Y1129_HAEI8 UPF0270 protein NTHI1129 OS=Haemophilus inf...  75.3    8e-19
+sp|Q9CLQ8|Y1156_PASMU UPF0270 protein PM1156 OS=Pasteurella multo...  71.1    3e-17
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|A6TEZ3|Y3703_KLEP7 UPF0270 protein KPN78578_37030 OS=Klebsiella 
+pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 
+78578) OX=272620 GN=KPN78578_37030 PE=3 SV=1
+Length=72
+
+ Score = 94.6 bits (234),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEYERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R+   
+Sbjct  61  TVNIMPRALFN  71
+
+
+>sp|C6DGA2|Y3850_PECCP UPF0270 protein PC1_3850 OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 GN=PC1_3850 
+PE=3 SV=1
+Length=78
+
+ Score = 94.2 bits (233),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 23/73 (32%), Positives = 37/73 (51%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+N++E FV RE          L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDNIIESFVLREGTDYGEQEWSLAQKVEDIRRQLKSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R +  A 
+Sbjct  61  TLNIMPRDQFNAG  73
+
+
+>sp|B5XN72|Y377_KLEP3 UPF0270 protein KPK_0377 OS=Klebsiella pneumoniae 
+(strain 342) OX=507522 GN=KPK_0377 PE=3 SV=1
+Length=72
+
+ Score = 93.4 bits (231),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL+NL+E FV RE          L  +V   +  L+RGEAV+++    +
+Sbjct  1   MIIPWQDLDPETLDNLIESFVLREGTDYGEHERSLADKVADVKQQLKRGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R+   
+Sbjct  61  TVNIMPRALFN  71
+
+
+>sp|B5F8H5|YHEU_SALA4 UPF0270 protein YheU OS=Salmonella agona 
+(strain SL483) OX=454166 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE           + +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSFEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|P0A2P4|YHEU_SALTY UPF0270 protein YheU OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|P0A2P5|YHEU_SALTI UPF0270 protein YheU OS=Salmonella typhi 
+OX=90370 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4TXG5|YHEU_SALSV UPF0270 protein YheU OS=Salmonella schwarzengrund 
+(strain CVM19633) OX=439843 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5BH08|YHEU_SALPK UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain AKU_12601) OX=554290 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|C0Q0D9|YHEU_SALPC UPF0270 protein YheU OS=Salmonella paratyphi 
+C (strain RKS4594) OX=476213 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|A9MT26|YHEU_SALPB UPF0270 protein YheU OS=Salmonella paratyphi 
+B (strain ATCC BAA-1250 / SPB7) OX=1016998 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q5PLV3|YHEU_SALPA UPF0270 protein YheU OS=Salmonella paratyphi 
+A (strain ATCC 9150 / SARB42) OX=295319 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4SUW4|YHEU_SALNS UPF0270 protein YheU OS=Salmonella newport 
+(strain SL254) OX=423368 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B4TKN8|YHEU_SALHS UPF0270 protein YheU OS=Salmonella heidelberg 
+(strain SL476) OX=454169 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q57J09|YHEU_SALCH UPF0270 protein YheU OS=Salmonella choleraesuis 
+(strain SC-B67) OX=321314 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 92.3 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|C5B954|Y3666_EDWI9 UPF0270 protein NT01EI_3666 OS=Edwardsiella 
+ictaluri (strain 93-146) OX=634503 GN=NT01EI_3666 PE=3 
+SV=1
+Length=74
+
+ Score = 92.3 bits (228),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 38/71 (54%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL++L+E FV RE          L  +VE  RH L+ GEAV+++    +
+Sbjct  1   MIIPWQQIAPETLDSLIEAFVLREGTDYGEQERSLTQKVEDVRHQLKCGEAVVVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  SVNIMPRSQFN  71
+
+
+>sp|A9MN11|YHEU_SALAR UPF0270 protein YheU OS=Salmonella arizonae 
+(strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 91.9 bits (227),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIVPWQGLSPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q2NQK2|Y2298_SODGM UPF0270 protein SG2298 OS=Sodalis glossinidius 
+(strain morsitans) OX=343509 GN=SG2298 PE=3 SV=1
+Length=73
+
+ Score = 91.1 bits (225),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 20/72 (28%), Positives = 33/72 (46%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++  TL NL+E FV RE          L  +V      ++ GEAV+++    +
+Sbjct  1   MIIPWQQIDPTTLYNLIESFVLREGTDYGLQEKSLQQKVADVLRQVQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +M R +   
+Sbjct  61  SINIMPRGQYRP  72
+
+
+>sp|A7MKK2|Y4379_CROS8 UPF0270 protein ESA_04379 OS=Cronobacter 
+sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_04379 PE=3 
+SV=1
+Length=72
+
+ Score = 90.8 bits (224),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL  L+E FV RE          L+ +V   R  L+ GEAV+++    +
+Sbjct  1   MIIPWQEIAPDTLERLIEAFVLREGTDYGEHERSLEQKVADVRRQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B5RGZ3|YHEU_SALG2 UPF0270 protein YheU OS=Salmonella gallinarum 
+(strain 287/91 / NCTC 13346) OX=550538 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.8 bits (224),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5R2B3|YHEU_SALEP UPF0270 protein YheU OS=Salmonella enteritidis 
+PT4 (strain P125109) OX=550537 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.8 bits (224),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|B5FJN6|YHEU_SALDC UPF0270 protein YheU OS=Salmonella dublin 
+(strain CT_02021853) OX=439851 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 90.8 bits (224),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  DTL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MIIPWQGLAPDTLDNLIESFVLREGTDYGEHERSLEQKVADVKLQLQSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M + +  
+Sbjct  61  TVNIMPKKQFR  71
+
+
+>sp|Q3YWR7|YHEU_SHISS UPF0270 protein YheU OS=Shigella sonnei 
+(strain Ss046) OX=300269 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67627|YHEU_SHIFL UPF0270 protein YheU OS=Shigella flexneri 
+OX=623 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q31VT6|YHEU_SHIBS UPF0270 protein YheU OS=Shigella boydii 
+serotype 4 (strain Sb227) OX=300268 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B2U3F9|YHEU_SHIB3 UPF0270 protein YheU OS=Shigella boydii 
+serotype 18 (strain CDC 3083-94 / BS512) OX=344609 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1LHF5|YHEU_ECOSM UPF0270 protein YheU OS=Escherichia coli 
+(strain SMS-3-5 / SECEC) OX=439855 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B6I2R3|YHEU_ECOSE UPF0270 protein YheU OS=Escherichia coli 
+(strain SE11) OX=409438 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7NDW3|YHEU_ECOLU UPF0270 protein YheU OS=Escherichia coli 
+O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67624|YHEU_ECOLI UPF0270 protein YheU OS=Escherichia coli 
+(strain K12) OX=83333 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1IPB0|YHEU_ECOLC UPF0270 protein YheU OS=Escherichia coli 
+(strain ATCC 8739 / DSM 1576 / Crooks) OX=481805 GN=yheU PE=3 
+SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67625|YHEU_ECOL6 UPF0270 protein YheU OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=yheU 
+PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q0TCA6|YHEU_ECOL5 UPF0270 protein YheU OS=Escherichia coli 
+O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A8A5G2|YHEU_ECOHS UPF0270 protein YheU OS=Escherichia coli 
+O9:H4 (strain HS) OX=331112 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B1X6K4|YHEU_ECODH UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / DH10B) OX=316385 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|C4ZUL0|YHEU_ECOBW UPF0270 protein YheU OS=Escherichia coli 
+(strain K12 / MC4100 / BW2952) OX=595496 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7M1Q6|YHEU_ECO8A UPF0270 protein YheU OS=Escherichia coli 
+O8 (strain IAI1) OX=585034 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7N0Z1|YHEU_ECO81 UPF0270 protein YheU OS=Escherichia coli 
+O81 (strain ED1a) OX=585397 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7NMC2|YHEU_ECO7I UPF0270 protein YheU OS=Escherichia coli 
+O7:K1 (strain IAI39 / ExPEC) OX=585057 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B5YTR1|YHEU_ECO5E UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 (strain EC4115 / EHEC) OX=444450 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|P67626|YHEU_ECO57 UPF0270 protein YheU OS=Escherichia coli 
+O157:H7 OX=83334 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7L4N1|YHEU_ECO55 UPF0270 protein YheU OS=Escherichia coli 
+(strain 55989 / EAEC) OX=585055 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7UK65|YHEU_ECO27 UPF0270 protein YheU OS=Escherichia coli 
+O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A7ZSN0|YHEU_ECO24 UPF0270 protein YheU OS=Escherichia coli 
+O139:H28 (strain E24377A / ETEC) OX=331111 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.6 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A1JS94|Y3952_YERE8 UPF0270 protein YE3952 OS=Yersinia enterocolitica 
+serotype O:8 / biotype 1B (strain NCTC 13174 / 8081) 
+OX=393305 GN=YE3952 PE=3 SV=1
+Length=78
+
+ Score = 89.2 bits (220),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 25/73 (34%), Positives = 38/73 (52%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L+ +VE  R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLEQKVEDVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGAFRAG  73
+
+
+>sp|B7LS61|YHEU_ESCF3 UPF0270 protein YheU OS=Escherichia fergusonii 
+(strain ATCC 35469 / DSM 13698 / CDC 0568-73) OX=585054 
+GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 89.2 bits (220),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQELSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B2VK22|Y3187_ERWT9 UPF0270 protein ETA_31870 OS=Erwinia tasmaniensis 
+(strain DSM 17950 / CIP 109463 / Et1/99) OX=465817 
+GN=ETA_31870 PE=3 SV=1
+Length=72
+
+ Score = 88.8 bits (219),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 21/71 (30%), Positives = 34/71 (48%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+  TL++L+E FV RE          L+ +V   R  L  GE V+++    +
+Sbjct  1   MIIPWKELDPATLDSLIESFVLREGTDYGEHERSLEQKVADVRRQLSSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R +  
+Sbjct  61  SVNIMPRGQFH  71
+
+
+>sp|Q1R5S8|YHEU_ECOUT UPF0270 protein YheU OS=Escherichia coli 
+(strain UTI89 / UPEC) OX=364106 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 88.8 bits (219),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B7MCX0|YHEU_ECO45 UPF0270 protein YheU OS=Escherichia coli 
+O45:K1 (strain S88 / ExPEC) OX=585035 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 88.8 bits (219),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 24/71 (34%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLIP   L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLIPWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVSDVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|Q6CZU0|Y4061_PECAS UPF0270 protein ECA4061 OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 
+GN=ECA4061 PE=3 SV=1
+Length=78
+
+ Score = 88.8 bits (219),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 23/73 (32%), Positives = 39/73 (53%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ +TL++++E FV RE          L  +VE  R  L+ GE V+++    +
+Sbjct  1   MIIPWQQLDPETLDSIIESFVLREGTDYGEQERSLAQKVEDIRSQLQSGEVVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M RS++ A 
+Sbjct  61  TLNIMPRSQLNAG  73
+
+
+>sp|A4WFF7|Y3781_ENT38 UPF0270 protein Ent638_3781 OS=Enterobacter 
+sp. (strain 638) OX=399742 GN=Ent638_3781 PE=3 SV=1
+Length=72
+
+ Score = 88.4 bits (218),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 19/71 (27%), Positives = 36/71 (51%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  +TL++L+E FV RE          L+ +V   +  L+ GE ++++    +
+Sbjct  1   MMIPWQDLAPETLDSLIESFVLREGTDYGEHERSLEQKVADVKRQLQNGEILLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R++  
+Sbjct  61  TVNIMPRNQFR  71
+
+
+>sp|B4EZ57|Y2817_PROMH UPF0270 protein PMI2817 OS=Proteus mirabilis 
+(strain HI4320) OX=529507 GN=PMI2817 PE=3 SV=1
+Length=73
+
+ Score = 88.1 bits (217),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L  +TL+NL+E FV RE          L+ +V   +  L  GEAV+++    +
+Sbjct  1   MIIPWQELSTETLDNLIESFVLREGTDYGMQEKTLEQKVADVKKQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M  ++   +
+Sbjct  61  SVNIMPAAQFRPD  73
+
+
+>sp|A8AQQ4|Y4772_CITK8 UPF0270 protein CKO_04772 OS=Citrobacter 
+koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) OX=290338 
+GN=CKO_04772 PE=3 SV=1
+Length=72
+
+ Score = 88.1 bits (217),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 37/71 (52%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L ++TL+NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MMIPWQELSSETLDNLIESFVLREGTDYGEHERSLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M R +  
+Sbjct  61  TVNIMPREQFR  71
+
+
+>sp|A7FNR1|Y3941_YERP3 UPF0270 protein YpsIP31758_3941 OS=Yersinia 
+pseudotuberculosis serotype O:1b (strain IP 31758) OX=349747 
+GN=YpsIP31758_3941 PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFHAG  73
+
+
+>sp|B2K5Q7|Y3917_YERPB UPF0270 protein YPTS_3917 OS=Yersinia pseudotuberculosis 
+serotype IB (strain PB1/+) OX=502801 GN=YPTS_3917 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFHAG  73
+
+
+>sp|Q664P4|Y3725_YERPS UPF0270 protein YPTB3725 OS=Yersinia pseudotuberculosis 
+serotype I (strain IP32953) OX=273123 GN=YPTB3725 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFHAG  73
+
+
+>sp|B1JIT3|Y255_YERPY UPF0270 protein YPK_0255 OS=Yersinia pseudotuberculosis 
+serotype O:3 (strain YPIII) OX=502800 GN=YPK_0255 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFHAG  73
+
+
+>sp|Q1CCR5|Y3888_YERPN UPF0270 protein YPN_3888 OS=Yersinia pestis 
+bv. Antiqua (strain Nepal516) OX=377628 GN=YPN_3888 PE=3 
+SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFRAG  73
+
+
+>sp|A9R484|Y3698_YERPG UPF0270 protein YpAngola_A3698 OS=Yersinia 
+pestis bv. Antiqua (strain Angola) OX=349746 GN=YpAngola_A3698 
+PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFRAG  73
+
+
+>sp|Q1C2R7|Y3293_YERPA UPF0270 protein YPA_3293 OS=Yersinia pestis 
+bv. Antiqua (strain Antiqua) OX=360102 GN=YPA_3293 PE=3 
+SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFRAG  73
+
+
+>sp|Q8ZJD4|Y179_YERPE UPF0270 protein YPO0179/y3960/YP_0178 OS=Yersinia 
+pestis OX=632 GN=YPO0179 PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFRAG  73
+
+
+>sp|A4TGW5|Y104_YERPP UPF0270 protein YPDSF_0104 OS=Yersinia pestis 
+(strain Pestoides F) OX=386656 GN=YPDSF_0104 PE=3 SV=1
+Length=78
+
+ Score = 88.1 bits (217),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 36/73 (49%), Gaps = 8/73 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++++TL+NLLE FV RE          L  +V   R  L  GEAV+++    +
+Sbjct  1   MIIPWQQVDSETLDNLLEAFVLREGTDYGEHERSLTEKVADVRRQLVSGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAE  67
+              +M R    A 
+Sbjct  61  TINIMPRGSFRAG  73
+
+
+>sp|A4SQW5|Y3305_AERS4 UPF0270 protein ASA_3305 OS=Aeromonas salmonicida 
+(strain A449) OX=382245 GN=ASA_3305 PE=3 SV=1
+Length=80
+
+ Score = 87.3 bits (215),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 41/77 (53%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L++DTLNNLLE FV RE          L  +V+  R  L++G AVI++    +
+Sbjct  1   MIIPWQDLDSDTLNNLLEHFVLREGTEYGEHDVSLADKVDEVRQQLKQGLAVIVYSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              ++ ++   +  + D
+Sbjct  61  SINIVSKATFSSAPVDD  77
+
+
+>sp|A8GKN0|Y4577_SERP5 UPF0270 protein Spro_4577 OS=Serratia proteamaculans 
+(strain 568) OX=399741 GN=Spro_4577 PE=3 SV=1
+Length=77
+
+ Score = 86.9 bits (214),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 38/74 (51%), Gaps = 8/74 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TLN+L+E FV RE          L+ +VE  R  L+ GE ++++    +
+Sbjct  1   MIIPWKELETETLNSLIESFVLREGTDYGEHERSLEQKVEDVRRQLKNGEVLLVWSELHE  60
+
+Query  55  QCQLMLRSEVPAEL  68
+              +M R +  A  
+Sbjct  61  TINIMPRGQFRAGQ  74
+
+
+>sp|Q32B11|YHEU_SHIDS UPF0270 protein YheU OS=Shigella dysenteriae 
+serotype 1 (strain Sd197) OX=300267 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 86.5 bits (213),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 35/71 (49%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           MLI    L  +TL NL+E FV RE          L+ +V   +  L+ GEAV+++    +
+Sbjct  1   MLITWQDLSPETLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVWSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|A0KGZ0|Y994_AERHH UPF0270 protein AHA_0994 OS=Aeromonas hydrophila 
+subsp. hydrophila (strain ATCC 7966 / DSM 30187 / JCM 
+1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=AHA_0994 PE=3 
+SV=1
+Length=80
+
+ Score = 85.4 bits (210),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 40/77 (52%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   L+ADTLNNLLE FV +E          L  +V   R  L++G AVI++    +
+Sbjct  1   MIIPWQELDADTLNNLLEHFVLQEGTEYGEHDVSLADKVADVRTQLQQGLAVIVYSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              ++ ++ +    + D
+Sbjct  61  SVNIVPKATLDRAQVDD  77
+
+
+>sp|C3K071|Y4323_PSEFS UPF0270 protein PFLU_4323 OS=Pseudomonas 
+fluorescens (strain SBW25) OX=216595 GN=PFLU_4323 PE=3 SV=1
+Length=75
+
+ Score = 85.0 bits (209),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 41/75 (55%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+        PL+ RV R R AL +G+A+I+FDP+S+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQLML+ +VP  L  
+Sbjct  61  CQLMLKHDVPKHLFD  75
+
+
+>sp|Q886E9|Y1630_PSESM UPF0270 protein PSPTO_1630 OS=Pseudomonas 
+syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 
+GN=PSPTO_1630 PE=3 SV=1
+Length=75
+
+ Score = 85.0 bits (209),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 45/75 (60%), Positives = 51/75 (68%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE        PL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQLML+ +VP E   
+Sbjct  61  CQLMLKHDVPKEFFD  75
+
+
+>sp|Q4K8K5|Y4336_PSEF5 UPF0270 protein PFL_4336 OS=Pseudomonas 
+fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5) OX=220664 
+GN=PFL_4336 PE=3 SV=1
+Length=75
+
+ Score = 84.6 bits (208),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 45/75 (60%), Positives = 54/75 (72%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE DTL  L+EDFVTRE        PL+ RV R R AL +G+AVI+FDP+S+Q
+Sbjct  1   MLIPHDQLEVDTLTRLIEDFVTREGTDNGDETPLETRVLRVRQALTKGQAVIVFDPDSEQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQLML+ +VP EL  
+Sbjct  61  CQLMLKHDVPKELFD  75
+
+
+>sp|Q3K8R4|Y4103_PSEPF UPF0270 protein Pfl01_4103 OS=Pseudomonas 
+fluorescens (strain Pf0-1) OX=205922 GN=Pfl01_4103 PE=3 SV=1
+Length=75
+
+ Score = 84.2 bits (207),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 42/75 (56%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTR+        PL+ RV R R AL +G+A+I+FDPES+Q
+Sbjct  1   MLIPYDALEVDTLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALTKGQALIVFDPESEQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQLML+ +VP  L  
+Sbjct  61  CQLMLKHDVPKHLFD  75
+
+
+>sp|Q7N9E2|Y398_PHOLL UPF0270 protein plu0398 OS=Photorhabdus 
+laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / 
+TT01) OX=243265 GN=plu0398 PE=3 SV=1
+Length=72
+
+ Score = 84.2 bits (207),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 21/72 (29%), Positives = 36/72 (50%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TL NL+E FV RE          L+ +V   RH L RG+ ++++    +
+Sbjct  1   MIIPWQQLEPETLLNLIESFVLREGTDYGEDEKSLEQKVANIRHQLERGDVMLVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              ++ +    +
+Sbjct  61  SVNIVPKEMFHS  72
+
+
+>sp|Q0SZW2|YHEU_SHIF8 UPF0270 protein YheU OS=Shigella flexneri 
+serotype 5b (strain 8401) OX=373384 GN=yheU PE=3 SV=1
+Length=72
+
+ Score = 84.2 bits (207),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 23/71 (32%), Positives = 33/71 (46%), Gaps = 8/71 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRETP--------LDVRVERARHALRRGEAVILFDPESQ  54
+           M IP   L   TL NL+E FV RE          L+ +V   +  L+ GEAV++     +
+Sbjct  1   MWIPWQDLSPVTLENLIESFVLREGTDYGEHERTLEQKVADVKRQLQCGEAVLVCSELHE  60
+
+Query  55  QCQLMLRSEVP  65
+              +M RS+  
+Sbjct  61  TVNIMPRSQFR  71
+
+
+>sp|B5FFY9|Y205_ALIFM UPF0270 protein VFMJ11_0205 OS=Aliivibrio 
+fischeri (strain MJ11) OX=388396 GN=VFMJ11_0205 PE=3 SV=1
+Length=80
+
+ Score = 84.2 bits (207),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 19/74 (26%), Positives = 35/74 (47%), Gaps = 8/74 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL NL+ +FV RE             +V++ +  L+ GEA+++F    +
+Sbjct  1   MIIPWQDIAPDTLENLISEFVLREGTDYGEVEISHQEKVDQIKVLLKNGEAMVVFSELHE  60
+
+Query  55  QCQLMLRSEVPAEL  68
+              +  ++     L
+Sbjct  61  TVDIQTKARFNPNL  74
+
+
+>sp|Q87L25|Y2791_VIBPA UPF0270 protein VP2791 OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=VP2791 
+PE=3 SV=1
+Length=70
+
+ Score = 83.0 bits (204),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 37/70 (53%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV RE          L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGAIEISLQNKIDQVKTQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+++ 
+Sbjct  61  TVDIQLKAKF  70
+
+
+>sp|Q48LG4|Y1506_PSE14 UPF0270 protein PSPPH_1506 OS=Pseudomonas 
+savastanoi pv. phaseolicola (strain 1448A / Race 6) OX=264730 
+GN=PSPPH_1506 PE=3 SV=1
+Length=75
+
+ Score = 83.0 bits (204),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 45/75 (60%), Positives = 51/75 (68%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LE DTL  L+EDFVTRE        PL  RV R RHAL +G+AVI FD ESQQ
+Sbjct  1   MLIPYDQLEPDTLTRLIEDFVTREGTDNGDETPLQTRVLRVRHALTKGQAVIFFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQLML+ +VP E   
+Sbjct  61  CQLMLKHDVPKEFFE  75
+
+
+>sp|A7MX95|Y073_VIBCB UPF0270 protein VIBHAR_00073 OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=VIBHAR_00073 
+PE=3 SV=1
+Length=70
+
+ Score = 82.3 bits (202),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 37/70 (53%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+ +FV RE          L  ++++ +  L +GEAVI+F    +
+Sbjct  1   MIIPWQDIAPETLENLIREFVLREGTDYGSVEVSLQSKIDQVKSQLEKGEAVIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+++ 
+Sbjct  61  TVDIQLKAKF  70
+
+
+>sp|B6EPM6|Y295_ALISL UPF0270 protein VSAL_I0295 OS=Aliivibrio 
+salmonicida (strain LFI1238) OX=316275 GN=VSAL_I0295 PE=3 SV=1
+Length=80
+
+ Score = 82.7 bits (203),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 17/74 (23%), Positives = 35/74 (47%), Gaps = 8/74 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  DTL NL+ +FV RE             ++E+ +  L+ G+A+++F    +
+Sbjct  1   MIIPWQDIAPDTLENLISEFVLREGTDYGEMECSHQDKIEQVKLLLKNGDAMVVFSELHE  60
+
+Query  55  QCQLMLRSEVPAEL  68
+              +  ++     +
+Sbjct  61  TVDIQTKARFNPNM  74
+
+
+>sp|A4VJH6|Y1436_PSEU5 UPF0270 protein PST_1436 OS=Pseudomonas 
+stutzeri (strain A1501) OX=379731 GN=PST_1436 PE=3 SV=1
+Length=75
+
+ Score = 82.7 bits (203),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 46/75 (61%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHD LE+DTL  L+EDFVTR+        PLD RV R R AL RGEAVI+FD +SQQ
+Sbjct  1   MLIPHDQLESDTLTRLIEDFVTRDGTDNGDETPLDTRVARVRRALDRGEAVIVFDADSQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL L+ +VP E L 
+Sbjct  61  CQLALKRDVPREWLD  75
+
+
+>sp|Q9HYE3|Y3463_PSEAE UPF0270 protein PA3463 OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=PA3463 
+PE=1 SV=1
+Length=76
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|Q02QV2|Y1933_PSEAB UPF0270 protein PA14_19330 OS=Pseudomonas 
+aeruginosa (strain UCBPP-PA14) OX=208963 GN=PA14_19330 PE=3 
+SV=1
+Length=76
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|A6V1W3|Y1664_PSEA7 UPF0270 protein PSPA7_1664 OS=Pseudomonas 
+aeruginosa (strain PA7) OX=381754 GN=PSPA7_1664 PE=3 SV=1
+Length=76
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|B7UYN4|Y1597_PSEA8 UPF0270 protein PLES_15971 OS=Pseudomonas 
+aeruginosa (strain LESB58) OX=557722 GN=PLES_15971 PE=3 SV=1
+Length=76
+
+ Score = 81.9 bits (201),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 68/76 (89%), Positives = 68/76 (89%), Gaps = 7/76 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPHDLLEADTLNNLLEDFVTRE        PLDVRVERARHALRRGEAVILFDPESQQ
+Sbjct  1   MLIPHDLLEADTLNNLLEDFVTREGTDNGDETPLDVRVERARHALRRGEAVILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLRD  71
+           CQLMLRSEVPAELLRD
+Sbjct  61  CQLMLRSEVPAELLRD  76
+
+
+>sp|Q9KNW8|Y2612_VIBCH UPF0270 protein VC_2612 OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 
+GN=VC_2612 PE=3 SV=1
+Length=69
+
+ Score = 81.1 bits (199),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 19/65 (29%), Positives = 34/65 (52%), Gaps = 8/65 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL+NL+ +FV RE          LD ++ + R  L+ G+AVI++    +
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVYSELHE  60
+
+Query  55  QCQLM  59
+              + 
+Sbjct  61  TVDIK  65
+
+
+>sp|C3LRS3|Y2532_VIBCM UPF0270 protein VCM66_2532 OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=VCM66_2532 PE=3 
+SV=1
+Length=69
+
+ Score = 81.1 bits (199),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 19/65 (29%), Positives = 34/65 (52%), Gaps = 8/65 (12%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL+NL+ +FV RE          LD ++ + R  L+ G+AVI++    +
+Sbjct  1   MIIPWQEIAPETLDNLIREFVLREGTDYGDIEVSLDEKIAQVRTQLQSGQAVIVYSELHE  60
+
+Query  55  QCQLM  59
+              + 
+Sbjct  61  TVDIK  65
+
+
+>sp|B0KTV7|Y1339_PSEPG UPF0270 protein PputGB1_1339 OS=Pseudomonas 
+putida (strain GB-1) OX=76869 GN=PputGB1_1339 PE=3 SV=1
+Length=75
+
+ Score = 80.3 bits (197),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 42/75 (56%), Positives = 54/75 (72%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP++ L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFDPESQQ
+Sbjct  1   MLIPYEQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDPESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL+ + +VP ELL 
+Sbjct  61  CQLLAKHDVPRELLD  75
+
+
+>sp|Q1IDC3|Y1465_PSEE4 UPF0270 protein PSEEN1465 OS=Pseudomonas 
+entomophila (strain L48) OX=384676 GN=PSEEN1465 PE=3 SV=1
+Length=75
+
+ Score = 78.8 bits (193),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 45/75 (60%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D LEA+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLEAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDMESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL+ R EVP ELL 
+Sbjct  61  CQLLARHEVPRELLD  75
+
+
+>sp|B7VLH8|Y2853_VIBTL UPF0270 protein VS_2853 OS=Vibrio tasmaniensis 
+(strain LGP32) OX=575788 GN=VS_2853 PE=3 SV=1
+Length=70
+
+ Score = 78.8 bits (193),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 33/70 (47%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   +  +TL NL+++FV RE          L  ++++ +H L  GE  I+F    +
+Sbjct  1   MIIPWQDIAPETLENLIKEFVLREGTDYGDVEVSLQNKIDQVKHQLASGEVSIVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + +    
+Sbjct  61  TVDIQVTKRF  70
+
+
+>sp|Q7MH24|Y3048_VIBVY UPF0270 protein VV3048 OS=Vibrio vulnificus 
+(strain YJ016) OX=196600 GN=VV3048 PE=3 SV=1
+Length=70
+
+ Score = 78.4 bits (192),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 35/70 (50%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   +  + L+NL+ +FV RE          L+ ++ + +  L  GEAV++F    +
+Sbjct  1   MIVPWQQISPEALSNLIREFVLREGTDYGESEYSLEEKIAQVQQQLECGEAVVVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+ + 
+Sbjct  61  TVDIQLKQKF  70
+
+
+>sp|Q8DCS6|Y1320_VIBVU UPF0270 protein VV1_1320 OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=VV1_1320 PE=3 SV=1
+Length=70
+
+ Score = 78.4 bits (192),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 35/70 (50%), Gaps = 8/70 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M++P   +  + L+NL+ +FV RE          L+ ++ + +  L  GEAV++F    +
+Sbjct  1   MIVPWQQISPEALSNLIREFVLREGTDYGESEYSLEEKIAQVQQQLECGEAVVVFSELHE  60
+
+Query  55  QCQLMLRSEV  64
+              + L+ + 
+Sbjct  61  TVDIQLKQKF  70
+
+
+>sp|A5W7I1|Y3967_PSEP1 UPF0270 protein Pput_3967 OS=Pseudomonas 
+putida (strain ATCC 700007 / DSM 6899 / BCRC 17059 / F1) OX=351746 
+GN=Pput_3967 PE=3 SV=1
+Length=75
+
+ Score = 77.3 bits (189),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 42/75 (56%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL+ + +VP ELL 
+Sbjct  61  CQLLAKHDVPRELLE  75
+
+
+>sp|Q88M28|Y1747_PSEPK UPF0270 protein PP_1747 OS=Pseudomonas 
+putida (strain ATCC 47054 / DSM 6125 / NCIMB 11950 / KT2440) 
+OX=160488 GN=PP_1747 PE=3 SV=1
+Length=75
+
+ Score = 77.3 bits (189),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 42/75 (56%), Positives = 53/75 (71%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIP+D L+A+TL  L+EDFVTR+        PL+ RV R R AL +G+A ILFD ESQQ
+Sbjct  1   MLIPYDQLQAETLTRLIEDFVTRDGTDNGDDTPLETRVLRVRQALAKGQAFILFDLESQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL+ + +VP ELL 
+Sbjct  61  CQLLAKHDVPRELLE  75
+
+
+>sp|C1DQL3|Y3500_AZOVD UPF0270 protein Avin_35000 OS=Azotobacter 
+vinelandii (strain DJ / ATCC BAA-1303) OX=322710 GN=Avin_35000 
+PE=3 SV=1
+Length=75
+
+ Score = 77.3 bits (189),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 45/75 (60%), Positives = 54/75 (72%), Gaps = 7/75 (9%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET-------PLDVRVERARHALRRGEAVILFDPESQQ  55
+           MLIPH LLEA+TL  L+EDFVTRE        PL+ RV R R AL RGEA+ILF+P+SQQ
+Sbjct  1   MLIPHHLLEAETLTRLIEDFVTREGTDNGEETPLESRVLRVRQALERGEALILFEPDSQQ  60
+
+Query  56  CQLMLRSEVPAELLR  70
+           CQL+ + +VP E L 
+Sbjct  61  CQLVAKRDVPKEWLD  75
+
+
+>sp|Q5QW88|Y325_IDILO UPF0270 protein IL0325 OS=Idiomarina loihiensis 
+(strain ATCC BAA-735 / DSM 15497 / L2-TR) OX=283942 
+GN=IL0325 PE=3 SV=1
+Length=78
+
+ Score = 76.9 bits (188),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 21/76 (28%), Positives = 37/76 (49%), Gaps = 8/76 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   ++ +TLNNL+E  V RE           + +VE+ +  L+ GEAVI++    +
+Sbjct  1   MIIPWQEIDQETLNNLMESIVLREGTDYGSQELSFETKVEQLKQRLKSGEAVIVYSELHE  60
+
+Query  55  QCQLMLRSEVPAELLR  70
+              ++ +  V      
+Sbjct  61  SVDVVNKDSVTGNEPD  76
+
+
+>sp|P44954|Y956_HAEIN UPF0270 protein HI_0956 OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=HI_0956 PE=3 SV=2
+Length=83
+
+ Score = 75.3 bits (184),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+>sp|A5UDB2|Y7180_HAEIE UPF0270 protein CGSHiEE_07180 OS=Haemophilus 
+influenzae (strain PittEE) OX=374930 GN=CGSHiEE_07180 
+PE=3 SV=1
+Length=83
+
+ Score = 75.3 bits (184),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+>sp|Q4QLV1|Y1129_HAEI8 UPF0270 protein NTHI1129 OS=Haemophilus 
+influenzae (strain 86-028NP) OX=281310 GN=NTHI1129 PE=3 SV=1
+Length=83
+
+ Score = 75.3 bits (184),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 38/77 (49%), Gaps = 8/77 (10%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LEA+TL+N++E  + RE          L+ + +     +R G A+I++    +
+Sbjct  1   MIIPWQELEAETLDNIVESVILREGTDYGIEELSLNQKKQLLLTQIRNGIALIVWSELHE  60
+
+Query  55  QCQLMLRSEVPAELLRD  71
+              +  ++E   +  ++
+Sbjct  61  SIDIKNKTEFLKQECKE  77
+
+
+>sp|Q9CLQ8|Y1156_PASMU UPF0270 protein PM1156 OS=Pasteurella multocida 
+(strain Pm70) OX=272843 GN=PM1156 PE=3 SV=1
+Length=72
+
+ Score = 71.1 bits (173),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 17/72 (24%), Positives = 35/72 (49%), Gaps = 8/72 (11%)
+
+Query  3   MLIPHDLLEADTLNNLLEDFVTRET--------PLDVRVERARHALRRGEAVILFDPESQ  54
+           M+IP   LE +TLNN++E F+ RE          L+ + +     +++G  VI++    +
+Sbjct  1   MIIPWQELEEETLNNIVESFILREGTDYGQCELSLEQKKQALLSQIQQGTVVIVWSELHE  60
+
+Query  55  QCQLMLRSEVPA  66
+              +  + ++  
+Sbjct  61  SIDIKDKMDLLK  72
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.147    0.403    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0450    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,495 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2p6va1
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O00268|TAF4_HUMAN Transcription initiation factor TFIID subuni...  203     3e-61
+sp|Q92750|TAF4B_HUMAN Transcription initiation factor TFIID subun...  130     2e-35
+sp|G5E8Z2|TAF4B_MOUSE Transcription initiation factor TFIID subun...  124     2e-33
+sp|P47825|TAF4_DROME Transcription initiation factor TFIID subuni...  72.4    3e-15
+sp|O75081|MTG16_HUMAN Protein CBFA2T3 OS=Homo sapiens OX=9606 GN=...  43.1    7e-05
+sp|O54972|MTG16_MOUSE Protein CBFA2T3 OS=Mus musculus OX=10090 GN...  42.4    2e-04
+sp|Q61909|MTG8_MOUSE Protein CBFA2T1 OS=Mus musculus OX=10090 GN=...  42.0    2e-04
+sp|Q9IAB2|MTG8R_XENLA Protein CBFA2T2 OS=Xenopus laevis OX=8355 G...  42.0    2e-04
+sp|Q06455|MTG8_HUMAN Protein CBFA2T1 OS=Homo sapiens OX=9606 GN=R...  42.0    2e-04
+sp|O70374|MTG8R_MOUSE Protein CBFA2T2 OS=Mus musculus OX=10090 GN...  41.2    3e-04
+sp|O43439|MTG8R_HUMAN Protein CBFA2T2 OS=Homo sapiens OX=9606 GN=...  41.2    3e-04
+sp|Q5F3B1|MTG16_CHICK Protein CBFA2T3 OS=Gallus gallus OX=9031 GN...  40.8    5e-04
+
+
+>sp|O00268|TAF4_HUMAN Transcription initiation factor TFIID subunit 
+4 OS=Homo sapiens OX=9606 GN=TAF4 PE=1 SV=2
+Length=1085
+
+ Score = 203 bits (517),  Expect = 3e-61, Method: Compositional matrix adjust.
+ Identities = 97/97 (100%), Positives = 97/97 (100%), Gaps = 0/97 (0%)
+
+Query  1    SSAATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLY  60
+            SSAATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLY
+Sbjct  583  SSAATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLY  642
+
+Query  61   RELNSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQSQ  97
+            RELNSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQSQ
+Sbjct  643  RELNSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQSQ  679
+
+
+>sp|Q92750|TAF4B_HUMAN Transcription initiation factor TFIID subunit 
+4B OS=Homo sapiens OX=9606 GN=TAF4B PE=1 SV=2
+Length=862
+
+ Score = 130 bits (326),  Expect = 2e-35, Method: Compositional matrix adjust.
+ Identities = 62/88 (70%), Positives = 73/88 (83%), Gaps = 0/88 (0%)
+
+Query  8    MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  67
+            +ENVKKCKNFL+ LIKLA SG QS E   NVK+LV+ LLD KIEAE+FT +LY EL SSP
+Sbjct  256  LENVKKCKNFLAMLIKLACSGSQSPEMGQNVKKLVEQLLDAKIEAEEFTRKLYVELKSSP  315
+
+Query  68   QPYLVPFLKRSLPALRQLTPDSAAFIQQ  95
+            QP+LVPFLK+S+ ALRQL P+S +FIQQ
+Sbjct  316  QPHLVPFLKKSVVALRQLLPNSQSFIQQ  343
+
+
+>sp|G5E8Z2|TAF4B_MOUSE Transcription initiation factor TFIID subunit 
+4B OS=Mus musculus OX=10090 GN=Taf4b PE=2 SV=2
+Length=850
+
+ Score = 124 bits (311),  Expect = 2e-33, Method: Compositional matrix adjust.
+ Identities = 59/87 (68%), Positives = 71/87 (82%), Gaps = 0/87 (0%)
+
+Query  8    MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  67
+            +ENVKKCKNFLS LIKLA SG QS E   NVK LV+ LLD +IEAE+FT +LY EL S+P
+Sbjct  255  LENVKKCKNFLSMLIKLACSGSQSPEMGQNVKRLVEQLLDAEIEAEEFTRKLYIELKSAP  314
+
+Query  68   QPYLVPFLKRSLPALRQLTPDSAAFIQ  94
+            QP+LVPFLK+S+ ALRQL P+S +FI+
+Sbjct  315  QPHLVPFLKKSVVALRQLLPNSQSFIE  341
+
+
+>sp|P47825|TAF4_DROME Transcription initiation factor TFIID subunit 
+4 OS=Drosophila melanogaster OX=7227 GN=Taf4 PE=1 SV=1
+Length=921
+
+ Score = 72.4 bits (176),  Expect = 3e-15, Method: Compositional matrix adjust.
+ Identities = 35/73 (48%), Positives = 51/73 (70%), Gaps = 2/73 (3%)
+
+Query  12   KKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPYL  71
+            +KC+ FL+ LI+L++   +  E   NV+ L+Q L++  +E E+F  RL R LN+SPQP L
+Sbjct  295  EKCRKFLANLIELSTREPKPVE--KNVRTLIQELVNANVEPEEFCDRLERLLNASPQPCL  352
+
+Query  72   VPFLKRSLPALRQ  84
+            + FLK+SLP LRQ
+Sbjct  353  IGFLKKSLPLLRQ  365
+
+
+>sp|O75081|MTG16_HUMAN Protein CBFA2T3 OS=Homo sapiens OX=9606 
+GN=CBFA2T3 PE=1 SV=2
+Length=653
+
+ Score = 43.1 bits (100),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 26/74 (35%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  11   VKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPY  70
+            + K K FL+TL +  S    S E    V+ LV  L++  +  E+F S+L    N   +P+
+Sbjct  174  LSKLKRFLTTLQQFGSD--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNFPLRPF  231
+
+Query  71   LVPFLKRSLPALRQ  84
+            ++PFLK +LP L++
+Sbjct  232  VIPFLKANLPLLQR  245
+
+
+>sp|O54972|MTG16_MOUSE Protein CBFA2T3 OS=Mus musculus OX=10090 
+GN=Cbfa2t3 PE=1 SV=2
+Length=620
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/74 (34%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  11   VKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPY  70
+            + K K FL+TL +  S    S E    V+ LV  L++  +  E+F ++L    N   +P+
+Sbjct  149  LSKLKRFLTTLQQFGSD--ISPEIGERVRTLVLGLVNSTLTIEEFHAKLQEATNFPLRPF  206
+
+Query  71   LVPFLKRSLPALRQ  84
+            ++PFLK +LP L++
+Sbjct  207  VIPFLKANLPLLQR  220
+
+
+>sp|Q61909|MTG8_MOUSE Protein CBFA2T1 OS=Mus musculus OX=10090 
+GN=Runx1t1 PE=2 SV=1
+Length=577
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/74 (34%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  11   VKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPY  70
+            + K K FL+TL +  +    S E    V+ LV  L++  +  E+F S+L    N   +P+
+Sbjct  96   LSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNFPLRPF  153
+
+Query  71   LVPFLKRSLPALRQ  84
+            ++PFLK +LP L++
+Sbjct  154  VIPFLKANLPLLQR  167
+
+
+>sp|Q9IAB2|MTG8R_XENLA Protein CBFA2T2 OS=Xenopus laevis OX=8355 
+GN=cbfa2t2 PE=2 SV=2
+Length=586
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 26/81 (32%), Positives = 44/81 (54%), Gaps = 2/81 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT  +  + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  98   ATCGVRQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  155
+
+Query  64   NSSPQPYLVPFLKRSLPALRQ  84
+            N   +P+++PFLK +LP L++
+Sbjct  156  NFPLRPFVIPFLKANLPLLQR  176
+
+
+>sp|Q06455|MTG8_HUMAN Protein CBFA2T1 OS=Homo sapiens OX=9606 
+GN=RUNX1T1 PE=1 SV=2
+Length=604
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/74 (34%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  11   VKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPY  70
+            + K K FL+TL +  +    S E    V+ LV  L++  +  E+F S+L    N   +P+
+Sbjct  123  LSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNFPLRPF  180
+
+Query  71   LVPFLKRSLPALRQ  84
+            ++PFLK +LP L++
+Sbjct  181  VIPFLKANLPLLQR  194
+
+
+>sp|O70374|MTG8R_MOUSE Protein CBFA2T2 OS=Mus musculus OX=10090 
+GN=Cbfa2t2 PE=1 SV=3
+Length=594
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 26/81 (32%), Positives = 43/81 (53%), Gaps = 2/81 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT     + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  100  ATCGARQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  157
+
+Query  64   NSSPQPYLVPFLKRSLPALRQ  84
+            N   +P+++PFLK +LP L++
+Sbjct  158  NFPLRPFVIPFLKANLPLLQR  178
+
+
+>sp|O43439|MTG8R_HUMAN Protein CBFA2T2 OS=Homo sapiens OX=9606 
+GN=CBFA2T2 PE=1 SV=1
+Length=604
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 26/81 (32%), Positives = 43/81 (53%), Gaps = 2/81 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT     + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  109  ATCGARQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  166
+
+Query  64   NSSPQPYLVPFLKRSLPALRQ  84
+            N   +P+++PFLK +LP L++
+Sbjct  167  NFPLRPFVIPFLKANLPLLQR  187
+
+
+>sp|Q5F3B1|MTG16_CHICK Protein CBFA2T3 OS=Gallus gallus OX=9031 
+GN=CBFA2T3 PE=2 SV=1
+Length=591
+
+ Score = 40.8 bits (94),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 24/74 (32%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  11   VKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPY  70
+            + K K FL+TL +  +    S E    V+ LV  L++  +  E+F ++L    N   +P+
+Sbjct  115  LSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHAKLQEATNFPLRPF  172
+
+Query  71   LVPFLKRSLPALRQ  84
+            ++PFLK +LP L++
+Sbjct  173  VIPFLKANLPLLQR  186
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.123    0.324    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+Results from round 2
+
+
+Query= d2p6va1
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q92750|TAF4B_HUMAN Transcription initiation factor TFIID subun...  132     3e-36
+sp|G5E8Z2|TAF4B_MOUSE Transcription initiation factor TFIID subun...  130     2e-35
+sp|O00268|TAF4_HUMAN Transcription initiation factor TFIID subuni...  125     8e-34
+sp|Q9IAB2|MTG8R_XENLA Protein CBFA2T2 OS=Xenopus laevis OX=8355 G...  117     4e-31
+sp|O43439|MTG8R_HUMAN Protein CBFA2T2 OS=Homo sapiens OX=9606 GN=...  116     2e-30
+sp|O70374|MTG8R_MOUSE Protein CBFA2T2 OS=Mus musculus OX=10090 GN...  115     2e-30
+sp|Q61909|MTG8_MOUSE Protein CBFA2T1 OS=Mus musculus OX=10090 GN=...  113     1e-29
+sp|Q06455|MTG8_HUMAN Protein CBFA2T1 OS=Homo sapiens OX=9606 GN=R...  113     1e-29
+sp|O75081|MTG16_HUMAN Protein CBFA2T3 OS=Homo sapiens OX=9606 GN=...  113     1e-29
+sp|Q5F3B1|MTG16_CHICK Protein CBFA2T3 OS=Gallus gallus OX=9031 GN...  112     2e-29
+sp|O54972|MTG16_MOUSE Protein CBFA2T3 OS=Mus musculus OX=10090 GN...  112     2e-29
+sp|P47825|TAF4_DROME Transcription initiation factor TFIID subuni...  100     3e-25
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q92750|TAF4B_HUMAN Transcription initiation factor TFIID subunit 
+4B OS=Homo sapiens OX=9606 GN=TAF4B PE=1 SV=2
+Length=862
+
+ Score = 132 bits (332),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 62/88 (70%), Positives = 73/88 (83%), Gaps = 0/88 (0%)
+
+Query  8    MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  67
+            +ENVKKCKNFL+ LIKLA SG QS E   NVK+LV+ LLD KIEAE+FT +LY EL SSP
+Sbjct  256  LENVKKCKNFLAMLIKLACSGSQSPEMGQNVKKLVEQLLDAKIEAEEFTRKLYVELKSSP  315
+
+Query  68   QPYLVPFLKRSLPALRQLTPDSAAFIQQ  95
+            QP+LVPFLK+S+ ALRQL P+S +FIQQ
+Sbjct  316  QPHLVPFLKKSVVALRQLLPNSQSFIQQ  343
+
+
+>sp|G5E8Z2|TAF4B_MOUSE Transcription initiation factor TFIID subunit 
+4B OS=Mus musculus OX=10090 GN=Taf4b PE=2 SV=2
+Length=850
+
+ Score = 130 bits (327),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 59/87 (68%), Positives = 71/87 (82%), Gaps = 0/87 (0%)
+
+Query  8    MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  67
+            +ENVKKCKNFLS LIKLA SG QS E   NVK LV+ LLD +IEAE+FT +LY EL S+P
+Sbjct  255  LENVKKCKNFLSMLIKLACSGSQSPEMGQNVKRLVEQLLDAEIEAEEFTRKLYIELKSAP  314
+
+Query  68   QPYLVPFLKRSLPALRQLTPDSAAFIQ  94
+            QP+LVPFLK+S+ ALRQL P+S +FI+
+Sbjct  315  QPHLVPFLKKSVVALRQLLPNSQSFIE  341
+
+
+>sp|O00268|TAF4_HUMAN Transcription initiation factor TFIID subunit 
+4 OS=Homo sapiens OX=9606 GN=TAF4 PE=1 SV=2
+Length=1085
+
+ Score = 125 bits (314),  Expect = 8e-34, Method: Composition-based stats.
+ Identities = 86/86 (100%), Positives = 86/86 (100%), Gaps = 0/86 (0%)
+
+Query  8    MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  67
+            MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP
+Sbjct  590  MENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSP  649
+
+Query  68   QPYLVPFLKRSLPALRQLTPDSAAFI  93
+            QPYLVPFLKRSLPALRQLTPDSAAFI
+Sbjct  650  QPYLVPFLKRSLPALRQLTPDSAAFI  675
+
+
+>sp|Q9IAB2|MTG8R_XENLA Protein CBFA2T2 OS=Xenopus laevis OX=8355 
+GN=cbfa2t2 PE=2 SV=2
+Length=586
+
+ Score = 117 bits (293),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 26/81 (32%), Positives = 44/81 (54%), Gaps = 2/81 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT  +  + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  98   ATCGVRQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  155
+
+Query  64   NSSPQPYLVPFLKRSLPALRQ  84
+            N   +P+++PFLK +LP L++
+Sbjct  156  NFPLRPFVIPFLKANLPLLQR  176
+
+
+>sp|O43439|MTG8R_HUMAN Protein CBFA2T2 OS=Homo sapiens OX=9606 
+GN=CBFA2T2 PE=1 SV=1
+Length=604
+
+ Score = 116 bits (289),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 28/93 (30%), Positives = 47/93 (51%), Gaps = 2/93 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT     + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  109  ATCGARQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  166
+
+Query  64   NSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+            N   +P+++PFLK +LP L++     A   +Q+
+Sbjct  167  NFPLRPFVIPFLKANLPLLQRELLHCARAAKQT  199
+
+
+>sp|O70374|MTG8R_MOUSE Protein CBFA2T2 OS=Mus musculus OX=10090 
+GN=Cbfa2t2 PE=1 SV=3
+Length=594
+
+ Score = 115 bits (288),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 28/93 (30%), Positives = 47/93 (51%), Gaps = 2/93 (2%)
+
+Query  4    ATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYREL  63
+            AT     + K K FL+TL +  +    S E    V+ LV  L++  +  E+F  +L    
+Sbjct  100  ATCGARQLSKLKRFLTTLQQFGND--ISPEIGEKVRTLVLALVNSTVTIEEFHCKLQEAT  157
+
+Query  64   NSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+            N   +P+++PFLK +LP L++     A   +Q+
+Sbjct  158  NFPLRPFVIPFLKANLPLLQRELLHCARAAKQT  190
+
+
+>sp|Q61909|MTG8_MOUSE Protein CBFA2T1 OS=Mus musculus OX=10090 
+GN=Runx1t1 PE=2 SV=1
+Length=577
+
+ Score = 113 bits (283),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 46/91 (51%), Gaps = 2/91 (2%)
+
+Query  6    ETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNS  65
+                 + K K FL+TL +  +    S E    V+ LV  L++  +  E+F S+L    N 
+Sbjct  91   CGARQLSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNF  148
+
+Query  66   SPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+              +P+++PFLK +LP L++     A   +Q+
+Sbjct  149  PLRPFVIPFLKANLPLLQRELLHCARLAKQN  179
+
+
+>sp|Q06455|MTG8_HUMAN Protein CBFA2T1 OS=Homo sapiens OX=9606 
+GN=RUNX1T1 PE=1 SV=2
+Length=604
+
+ Score = 113 bits (283),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 46/91 (51%), Gaps = 2/91 (2%)
+
+Query  6    ETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNS  65
+                 + K K FL+TL +  +    S E    V+ LV  L++  +  E+F S+L    N 
+Sbjct  118  CGARQLSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNF  175
+
+Query  66   SPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+              +P+++PFLK +LP L++     A   +Q+
+Sbjct  176  PLRPFVIPFLKANLPLLQRELLHCARLAKQN  206
+
+
+>sp|O75081|MTG16_HUMAN Protein CBFA2T3 OS=Homo sapiens OX=9606 
+GN=CBFA2T3 PE=1 SV=2
+Length=653
+
+ Score = 113 bits (283),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 28/91 (31%), Positives = 46/91 (51%), Gaps = 2/91 (2%)
+
+Query  6    ETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNS  65
+                 + K K FL+TL +  S    S E    V+ LV  L++  +  E+F S+L    N 
+Sbjct  169  CGARQLSKLKRFLTTLQQFGSD--ISPEIGERVRTLVLGLVNSTLTIEEFHSKLQEATNF  226
+
+Query  66   SPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+              +P+++PFLK +LP L++     A   +Q+
+Sbjct  227  PLRPFVIPFLKANLPLLQRELLHCARLAKQT  257
+
+
+>sp|Q5F3B1|MTG16_CHICK Protein CBFA2T3 OS=Gallus gallus OX=9031 
+GN=CBFA2T3 PE=2 SV=1
+Length=591
+
+ Score = 112 bits (281),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 46/91 (51%), Gaps = 2/91 (2%)
+
+Query  6    ETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNS  65
+                 + K K FL+TL +  +    S E    V+ LV  L++  +  E+F ++L    N 
+Sbjct  110  CGARQLSKLKRFLTTLQQFGND--ISPEIGERVRTLVLGLVNSTLTIEEFHAKLQEATNF  167
+
+Query  66   SPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+              +P+++PFLK +LP L++     A   +QS
+Sbjct  168  PLRPFVIPFLKANLPLLQRELLHCARMAKQS  198
+
+
+>sp|O54972|MTG16_MOUSE Protein CBFA2T3 OS=Mus musculus OX=10090 
+GN=Cbfa2t3 PE=1 SV=2
+Length=620
+
+ Score = 112 bits (281),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 46/91 (51%), Gaps = 2/91 (2%)
+
+Query  6    ETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNS  65
+                 + K K FL+TL +  S    S E    V+ LV  L++  +  E+F ++L    N 
+Sbjct  144  CGARQLSKLKRFLTTLQQFGSD--ISPEIGERVRTLVLGLVNSTLTIEEFHAKLQEATNF  201
+
+Query  66   SPQPYLVPFLKRSLPALRQLTPDSAAFIQQS  96
+              +P+++PFLK +LP L++     A   +Q+
+Sbjct  202  PLRPFVIPFLKANLPLLQRELLHCARLAKQT  232
+
+
+>sp|P47825|TAF4_DROME Transcription initiation factor TFIID subunit 
+4 OS=Drosophila melanogaster OX=7227 GN=Taf4 PE=1 SV=1
+Length=921
+
+ Score = 100 bits (250),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 36/83 (43%), Positives = 53/83 (64%), Gaps = 2/83 (2%)
+
+Query  12   KKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPYL  71
+            +KC+ FL+ LI+L++   +  E   NV+ L+Q L++  +E E+F  RL R LN+SPQP L
+Sbjct  295  EKCRKFLANLIELSTREPKPVE--KNVRTLIQELVNANVEPEEFCDRLERLLNASPQPCL  352
+
+Query  72   VPFLKRSLPALRQLTPDSAAFIQ  94
+            + FLK+SLP LRQ        I+
+Sbjct  353  IGFLKKSLPLLRQALYTKELVIE  375
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.126    0.311    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

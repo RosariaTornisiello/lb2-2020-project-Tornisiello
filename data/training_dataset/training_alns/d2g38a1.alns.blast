@@ -1,0 +1,1550 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2g38a1
+
+Length=77
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium...  149     7e-48
+sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobact...  38.9    0.001
+
+
+>sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE25 
+PE=1 SV=1
+Length=99
+
+ Score = 149 bits (377),  Expect = 7e-48, Method: Compositional matrix adjust.
+ Identities = 77/77 (100%), Positives = 77/77 (100%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA
+Sbjct  8   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+           AAAVVLEEFAHALTTGA
+Sbjct  68  AAAVVLEEFAHALTTGA  84
+
+
+>sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS16 PE=1 SV=1
+Length=923
+
+ Score = 38.9 bits (89),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 34/77 (44%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P  L  AA+++  I     +++A  A  TTA+ P AAD VS   A     YAR Y+    
+Sbjct  8   PPVLASAASDLGGIASMISEANAMAAVRTTALAPAAADEVSAAIAALFSSYARDYQTLSV  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+                  +FA  LT   
+Sbjct  68  QVTAFHVQFAQTLTNAG  84
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.125    0.328    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5097362770
+Results from round 2
+
+
+Query= d2g38a1
+
+Length=77
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobact...  106     2e-27
+sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium...  70.3    2e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|I6Y2J4|LIPY_MYCTU Triacylglycerol lipase OS=Mycobacterium tube...  61.0    2e-11
+sp|B2HE92|PECA_MYCMM PE cleavage protein A OS=Mycobacterium marin...  57.6    3e-10
+sp|Q79FP3|PG26_MYCTU PE-PGRS family protein PE_PGRS26 OS=Mycobact...  54.9    2e-09
+sp|Q79G04|PE03_MYCTU PE family protein PE3 OS=Mycobacterium tuber...  53.3    8e-09
+sp|P9WIF1|PECA_MYCTU PE cleavage protein A OS=Mycobacterium tuber...  51.4    4e-08
+sp|P9WIF0|PECA_MYCTO PE cleavage protein A OS=Mycobacterium tuber...  51.4    4e-08
+sp|P9WIF8|PG20_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  51.4    4e-08
+sp|P9WIF9|PG20_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  51.4    5e-08
+sp|P9WIF6|PG24_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  50.2    1e-07
+sp|P9WIE9|PG44_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  49.9    1e-07
+sp|P9WIE8|PG44_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  49.9    1e-07
+sp|P9WIE6|PG46_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  49.1    3e-07
+sp|P9WIF7|PG24_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  49.1    3e-07
+sp|P9WIF4|PG33_MYCTO PE-PGRS family protein PE_PGRS33 OS=Mycobact...  48.7    4e-07
+sp|P9WIF5|PG33_MYCTU PE-PGRS family protein PE_PGRS33 OS=Mycobact...  48.7    4e-07
+sp|P0A688|PG36_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|P0A689|PG36_MYCBO Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|P9WIF3|PG34_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|P9WIF2|PG34_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|P9WIE7|PG46_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|P0A691|PG46_MYCBO Uncharacterized PE-PGRS family protein PE_PG...  48.7    4e-07
+sp|Q79FB3|PG47_MYCTU PE-PGRS family protein PE_PGRS47 OS=Mycobact...  46.8    2e-06
+sp|O53553|PG54_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  46.8    2e-06
+sp|P9WIG3|PG03_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  44.5    1e-05
+sp|Q79FS8|PE09_MYCTU PE family protein PE9 OS=Mycobacterium tuber...  42.1    4e-05
+sp|P9WIG9|PE23_MYCTU Uncharacterized PE family protein PE23 OS=My...  42.9    4e-05
+sp|P9WIG8|PE23_MYCTO Uncharacterized PE family protein PE23 OS=My...  42.9    4e-05
+sp|P0A685|PE23_MYCBO Uncharacterized PE family protein PE23 OS=My...  42.9    4e-05
+sp|P9WIG2|PG03_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  42.5    6e-05
+sp|Q79FL8|PG30_MYCTU PE-PGRS family protein PE_PGRS30 OS=Mycobact...  39.4    8e-04
+sp|P9WIG5|WA22_MYCTU WAG22 antigen OS=Mycobacterium tuberculosis ...  38.3    0.002
+sp|P9WIG4|WA22_MYCTO WAG22 antigen OS=Mycobacterium tuberculosis ...  38.3    0.002
+sp|P0A687|WA22_MYCBO WAG22 antigen OS=Mycobacterium bovis (strain...  38.3    0.002
+
+
+>sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS16 PE=1 SV=1
+Length=923
+
+ Score = 106 bits (264),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 34/77 (44%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P  L  AA+++  I     +++A  A  TTA+ P AAD VS   A     YAR Y+    
+Sbjct  8   PPVLASAASDLGGIASMISEANAMAAVRTTALAPAAADEVSAAIAALFSSYARDYQTLSV  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+                  +FA  LT   
+Sbjct  68  QVTAFHVQFAQTLTNAG  84
+
+
+>sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE25 
+PE=1 SV=1
+Length=99
+
+ Score = 70.3 bits (170),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 77/77 (100%), Positives = 77/77 (100%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA
+Sbjct  8   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+           AAAVVLEEFAHALTTGA
+Sbjct  68  AAAVVLEEFAHALTTGA  84
+
+
+>sp|I6Y2J4|LIPY_MYCTU Triacylglycerol lipase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=lipY PE=1 
+SV=1
+Length=437
+
+ Score = 61.0 bits (146),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 27/77 (35%), Positives = 34/77 (44%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE ++ AAT+V  I      +   VA  TT V   A D VS   A     + + Y+   A
+Sbjct  9   PEVMSAAATDVASIGSVVATASQGVAGATTTVLAAAEDEVSAAIAALFSGHGQDYQALSA  68
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             AV  E F  ALT  A
+Sbjct  69  QLAVFHERFVQALTGAA  85
+
+
+>sp|B2HE92|PECA_MYCMM PE cleavage protein A OS=Mycobacterium marinum 
+(strain ATCC BAA-535 / M) OX=216594 GN=pecA PE=1 SV=1
+Length=553
+
+ Score = 57.6 bits (137),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 24/77 (31%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA E++ I      ++A  A  TT +   AAD VS   AT    + ++Y+    
+Sbjct  8   PEWLTSAAAELQSIESALSAANAAAAVPTTGLAAAAADEVSTAVATLFAGFGQEYQAIST  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +   ++FA  L + A
+Sbjct  68  QLSAFQQQFALTLNSSA  84
+
+
+>sp|Q79FP3|PG26_MYCTU PE-PGRS family protein PE_PGRS26 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS26 PE=2 SV=1
+Length=491
+
+ Score = 54.9 bits (130),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 25/74 (34%), Positives = 33/74 (45%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P  L+ AA +V  I      ++   AP T  V    AD VS   A+    YAR Y+   A
+Sbjct  8   PGMLSAAAADVASIGAALSAANGAAAPTTAGVLAAGADEVSAAIASLFSGYARDYQALSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+             A   ++F  ALT
+Sbjct  68  QMARFHQQFVQALT  81
+
+
+>sp|Q79G04|PE03_MYCTU PE family protein PE3 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=PE3 PE=1 
+SV=1
+Length=468
+
+ Score = 53.3 bits (126),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 32/71 (45%), Gaps = 0/71 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L   A +V  I      + A  A  TT +   AAD VS  AA    EYAR+ ++ + 
+Sbjct  8   PEMLATTAADVDGIGSAIRAASASAAGPTTGLLAAAADEVSSAAAALFSEYARECQEVLK  67
+
+Query  61  AAAVVLEEFAH  71
+            AA    EF  
+Sbjct  68  QAAAFHGEFTR  78
+
+
+>sp|P9WIF1|PECA_MYCTU PE cleavage protein A OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=pecA PE=1 
+SV=1
+Length=558
+
+ Score = 51.4 bits (121),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 36/77 (47%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA +V  I      ++A  A  TTA+    AD VS   A     + ++Y+   A
+Sbjct  8   PEFLTSAAADVENIGSTLRAANAAAAASTTALAAAGADEVSAAVAALFARFGQEYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   ++F   L + +
+Sbjct  68  QASAFHQQFVQTLNSAS  84
+
+
+>sp|P9WIF0|PECA_MYCTO PE cleavage protein A OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=pecA PE=3 
+SV=1
+Length=558
+
+ Score = 51.4 bits (121),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 36/77 (47%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA +V  I      ++A  A  TTA+    AD VS   A     + ++Y+   A
+Sbjct  8   PEFLTSAAADVENIGSTLRAANAAAAASTTALAAAGADEVSAAVAALFARFGQEYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   ++F   L + +
+Sbjct  68  QASAFHQQFVQTLNSAS  84
+
+
+>sp|P9WIF8|PG20_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS20 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS20 PE=3 SV=1
+Length=527
+
+ Score = 51.4 bits (121),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 33/77 (43%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ L+ AA ++  I      S    A  TT + P AAD VS   A     +   Y+    
+Sbjct  8   PDMLSSAAGDLASIGSSINASTRAAAAATTRLLPAAADEVSAHIAALFSGHGEGYQAIAR  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   ++F  ALT+ A
+Sbjct  68  QMAAFHDQFTLALTSSA  84
+
+
+>sp|P9WIF9|PG20_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS20 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS20 PE=3 SV=1
+Length=463
+
+ Score = 51.4 bits (121),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 33/77 (43%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ L+ AA ++  I      S    A  TT + P AAD VS   A     +   Y+    
+Sbjct  8   PDMLSSAAGDLASIGSSINASTRAAAAATTRLLPAAADEVSAHIAALFSGHGEGYQAIAR  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   ++F  ALT+ A
+Sbjct  68  QMAAFHDQFTLALTSSA  84
+
+
+>sp|P9WIF6|PG24_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS24 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS24 PE=3 SV=1
+Length=603
+
+ Score = 50.2 bits (118),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/74 (24%), Positives = 30/74 (41%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA+++  I      ++A     TT +    AD VS   A+    + + Y+   A
+Sbjct  8   PETLVRAASDLANIGSTLGAANAAALGPTTELLAAGADEVSAAIASLFAAHGQAYQAVSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+             +    +F    T
+Sbjct  68  QMSAFHAQFVQTFT  81
+
+
+>sp|P9WIE9|PG44_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS44 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS44 PE=3 SV=1
+Length=543
+
+ Score = 49.9 bits (117),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 31/77 (40%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA  V  I      ++A  A  TT+V    AD VS+  A    +YA  Y+   A
+Sbjct  8   PEMLATAAQNVANIGTSLSAANATAAASTTSVLAAGADEVSQAIARLFSDYATHYQSLNA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA     F   L    
+Sbjct  68  QAAAFHHSFVQTLNAAG  84
+
+
+>sp|P9WIE8|PG44_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS44 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS44 PE=3 SV=1
+Length=543
+
+ Score = 49.9 bits (117),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 31/77 (40%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA  V  I      ++A  A  TT+V    AD VS+  A    +YA  Y+   A
+Sbjct  8   PEMLATAAQNVANIGTSLSAANATAAASTTSVLAAGADEVSQAIARLFSDYATHYQSLNA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA     F   L    
+Sbjct  68  QAAAFHHSFVQTLNAAG  84
+
+
+>sp|P9WIE6|PG46_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 49.1 bits (115),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 38/77 (49%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y    A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAALAALFGSYAQSYHAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|P9WIF7|PG24_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS24 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS24 PE=1 SV=1
+Length=603
+
+ Score = 49.1 bits (115),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 18/74 (24%), Positives = 30/74 (41%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA+++  I      ++A     TT +    AD VS   A+    + + Y+   A
+Sbjct  8   PETLVRAASDLANIGSTLGAANAAALGPTTELLAAGADEVSAAIASLFAAHGQAYQAVSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+             +    +F    T
+Sbjct  68  QMSAFHAQFVQTFT  81
+
+
+>sp|P9WIF4|PG33_MYCTO PE-PGRS family protein PE_PGRS33 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=PE_PGRS33 PE=3 SV=1
+Length=471
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 37/74 (50%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL   AT++  I      ++A  A  TT V   AAD VS   A     +A+ Y+   A
+Sbjct  8   PEALAAVATDLAGIGSTIGTANAAAAVPTTTVLAAAADEVSAAMAALFSGHAQAYQALSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA+  E+F  ALT
+Sbjct  68  QAALFHEQFVRALT  81
+
+
+>sp|P9WIF5|PG33_MYCTU PE-PGRS family protein PE_PGRS33 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS33 PE=1 SV=1
+Length=498
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 37/74 (50%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL   AT++  I      ++A  A  TT V   AAD VS   A     +A+ Y+   A
+Sbjct  8   PEALAAVATDLAGIGSTIGTANAAAAVPTTTVLAAAADEVSAAMAALFSGHAQAYQALSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA+  E+F  ALT
+Sbjct  68  QAALFHEQFVRALT  81
+
+
+>sp|P0A688|PG36_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS36 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS36 PE=3 SV=1
+Length=491
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 35/77 (45%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL  AAT++  IR     ++A  A  TT    PAAD VS   A      A+ Y+   A
+Sbjct  8   PEALLAAATDLAAIRSTIRAANAAAAVPTTGALAPAADEVSAGIAALFGAQAQSYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA   + F   L  G 
+Sbjct  68  QAAAFHDRFVQLLNAGG  84
+
+
+>sp|P0A689|PG36_MYCBO Uncharacterized PE-PGRS family protein PE_PGRS36 
+OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=PE_PGRS36 PE=3 SV=1
+Length=491
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 35/77 (45%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL  AAT++  IR     ++A  A  TT    PAAD VS   A      A+ Y+   A
+Sbjct  8   PEALLAAATDLAAIRSTIRAANAAAAVPTTGALAPAADEVSAGIAALFGAQAQSYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA   + F   L  G 
+Sbjct  68  QAAAFHDRFVQLLNAGG  84
+
+
+>sp|P9WIF3|PG34_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS34 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS34 PE=3 SV=1
+Length=515
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 28/63 (44%), Gaps = 0/63 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           +++  I      ++A  A  T  V    AD VS   A     +A+ Y+   A AA+  E+
+Sbjct  16  SDLAGIGSAIGAANAAAAVPTMGVLAAGADEVSAAVADLFGAHAQAYQALSAQAALFHEQ  75
+
+Query  69  FAH  71
+           F H
+Sbjct  76  FVH  78
+
+
+>sp|P9WIF2|PG34_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS34 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS34 PE=3 SV=1
+Length=515
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 28/63 (44%), Gaps = 0/63 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           +++  I      ++A  A  T  V    AD VS   A     +A+ Y+   A AA+  E+
+Sbjct  16  SDLAGIGSAIGAANAAAAVPTMGVLAAGADEVSAAVADLFGAHAQAYQALSAQAALFHEQ  75
+
+Query  69  FAH  71
+           F H
+Sbjct  76  FVH  78
+
+
+>sp|P9WIE7|PG46_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 39/77 (51%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y+   A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAAVAALFGSYAQSYQAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|P0A691|PG46_MYCBO Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 48.7 bits (114),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 39/77 (51%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y+   A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAAVAALFGSYAQSYQAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|Q79FB3|PG47_MYCTU PE-PGRS family protein PE_PGRS47 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS47 PE=3 SV=1
+Length=525
+
+ Score = 46.8 bits (109),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 22/76 (29%), Positives = 33/76 (43%), Gaps = 0/76 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA ++  I      + A  +  T A+    AD VS   A     + + Y+    
+Sbjct  8   PEFLTAAAMDLASIGSTVSAASAAASAPTVAILAAGADEVSIAVAALFGMHGQAYQALSV  67
+
+Query  61  AAAVVLEEFAHALTTG  76
+            A+   ++F  ALT G
+Sbjct  68  QASAFHQQFVQALTAG  83
+
+
+>sp|O53553|PG54_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS54 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS54 PE=1 SV=1
+Length=1901
+
+ Score = 46.8 bits (109),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +T AA ++  +      ++A  A  TT V    AD VS + A     +  +Y+   A
+Sbjct  8   PEFVTAAAGDLTNLGSSISAANASAASATTQVLAAGADEVSARIAALFGGFGLEYQAISA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+             A   + F  AL+T
+Sbjct  68  QVAAYHQRFVQALST  82
+
+
+>sp|P9WIG3|PG03_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS3 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) 
+OX=83332 GN=PE_PGRS3 PE=3 SV=1
+Length=957
+
+ Score = 44.5 bits (103),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 18/67 (27%), Positives = 29/67 (43%), Gaps = 0/67 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           T++  +      ++A  A  TTA+    AD VS   A     + + Y+   A A     +
+Sbjct  16  TDLASLGSSISAANAAAAANTTALMAAGADEVSTAIAALFGAHGQAYQALSAQAQAFHAQ  75
+
+Query  69  FAHALTT  75
+           F  ALT+
+Sbjct  76  FVQALTS  82
+
+
+>sp|Q79FS8|PE09_MYCTU PE family protein PE9 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=PE9 PE=1 
+SV=1
+Length=144
+
+ Score = 42.1 bits (97),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 19/70 (27%), Positives = 24/70 (34%), Gaps = 0/70 (0%)
+
+Query  7   AATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVL  66
+           AAT++  I      ++A     TT V     D V    A      A +Y    A  A   
+Sbjct  14  AATDIDGIGSAVSVANAAAVAATTGVLAAGGDEVLAAIARLFNANAEEYHALSAQVAAFQ  73
+
+Query  67  EEFAHALTTG  76
+             F   LT G
+Sbjct  74  TLFVRTLTGG  83
+
+
+>sp|P9WIG9|PE23_MYCTU Uncharacterized PE family protein PE23 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE23 PE=1 SV=1
+Length=382
+
+ Score = 42.9 bits (99),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|P9WIG8|PE23_MYCTO Uncharacterized PE family protein PE23 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=PE23 PE=3 SV=1
+Length=382
+
+ Score = 42.9 bits (99),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|P0A685|PE23_MYCBO Uncharacterized PE family protein PE23 OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=PE23 PE=3 SV=1
+Length=382
+
+ Score = 42.9 bits (99),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|P9WIG2|PG03_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS3 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS3 PE=3 SV=1
+Length=951
+
+ Score = 42.5 bits (98),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 18/67 (27%), Positives = 29/67 (43%), Gaps = 0/67 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           T++  +      ++A  A  TTA+    AD VS   A     + + Y+   A A     +
+Sbjct  16  TDLASLGSSISAANAAAAANTTALIAAGADEVSTAIAALFGAHGQAYQALSAQAQAFHAQ  75
+
+Query  69  FAHALTT  75
+           F  ALT+
+Sbjct  76  FVQALTS  82
+
+
+>sp|Q79FL8|PG30_MYCTU PE-PGRS family protein PE_PGRS30 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS30 PE=1 SV=1
+Length=1011
+
+ Score = 39.4 bits (90),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 33/73 (45%), Gaps = 0/73 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ +T AA  +  IR    ++ A  +  TTA+    AD VS   +     Y ++++   A
+Sbjct  8   PDLVTAAAANLAGIRSALSEAAAAASTPTTALASAGADEVSAAVSRLFGAYGQQFQALNA  67
+
+Query  61  AAAVVLEEFAHAL  73
+            AA    EF   L
+Sbjct  68  RAATFHAEFVSLL  80
+
+
+>sp|P9WIG5|WA22_MYCTU WAG22 antigen OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 38.3 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+>sp|P9WIG4|WA22_MYCTO WAG22 antigen OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 38.3 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+>sp|P0A687|WA22_MYCBO WAG22 antigen OS=Mycobacterium bovis (strain 
+ATCC BAA-935 / AF2122/97) OX=233413 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 38.3 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.112    0.268    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0344    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5097362770
+Results from round 3
+
+
+Query= d2g38a1
+
+Length=77
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobact...  96.3    7e-24
+sp|I6Y2J4|LIPY_MYCTU Triacylglycerol lipase OS=Mycobacterium tube...  91.3    3e-22
+sp|B2HE92|PECA_MYCMM PE cleavage protein A OS=Mycobacterium marin...  85.5    4e-20
+sp|P9WIF6|PG24_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  84.8    8e-20
+sp|P9WIF7|PG24_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  84.4    1e-19
+sp|P9WIF1|PECA_MYCTU PE cleavage protein A OS=Mycobacterium tuber...  82.1    7e-19
+sp|P9WIF0|PECA_MYCTO PE cleavage protein A OS=Mycobacterium tuber...  82.1    7e-19
+sp|Q79G04|PE03_MYCTU PE family protein PE3 OS=Mycobacterium tuber...  79.0    7e-18
+sp|Q79FS8|PE09_MYCTU PE family protein PE9 OS=Mycobacterium tuber...  73.2    3e-17
+sp|P9WIF8|PG20_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  75.5    1e-16
+sp|P9WIF9|PG20_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  74.8    2e-16
+sp|O53553|PG54_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  74.4    4e-16
+sp|Q79FP3|PG26_MYCTU PE-PGRS family protein PE_PGRS26 OS=Mycobact...  73.6    6e-16
+sp|Q79FB3|PG47_MYCTU PE-PGRS family protein PE_PGRS47 OS=Mycobact...  73.2    8e-16
+sp|P9WIG3|PG03_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  73.2    9e-16
+sp|P9WIF3|PG34_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  72.1    2e-15
+sp|P9WIF2|PG34_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  72.1    2e-15
+sp|P0A688|PG36_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  72.1    2e-15
+sp|P0A689|PG36_MYCBO Uncharacterized PE-PGRS family protein PE_PG...  72.1    2e-15
+sp|P9WIE9|PG44_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  71.7    3e-15
+sp|P9WIE8|PG44_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  71.7    3e-15
+sp|P9WIF4|PG33_MYCTO PE-PGRS family protein PE_PGRS33 OS=Mycobact...  69.8    1e-14
+sp|P9WIF5|PG33_MYCTU PE-PGRS family protein PE_PGRS33 OS=Mycobact...  69.8    1e-14
+sp|P9WIG2|PG03_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  69.0    2e-14
+sp|P9WIE6|PG46_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  67.4    9e-14
+sp|P9WIE7|PG46_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  66.7    2e-13
+sp|P0A691|PG46_MYCBO Uncharacterized PE-PGRS family protein PE_PG...  66.7    2e-13
+sp|Q79FL8|PG30_MYCTU PE-PGRS family protein PE_PGRS30 OS=Mycobact...  61.7    9e-12
+sp|P9WIG5|WA22_MYCTU WAG22 antigen OS=Mycobacterium tuberculosis ...  60.5    3e-11
+sp|P9WIG4|WA22_MYCTO WAG22 antigen OS=Mycobacterium tuberculosis ...  60.5    3e-11
+sp|P0A687|WA22_MYCBO WAG22 antigen OS=Mycobacterium bovis (strain...  60.5    3e-11
+sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium...  57.0    3e-11
+sp|P9WIG9|PE23_MYCTU Uncharacterized PE family protein PE23 OS=My...  55.5    1e-09
+sp|P9WIG8|PE23_MYCTO Uncharacterized PE family protein PE23 OS=My...  55.5    1e-09
+sp|P0A685|PE23_MYCBO Uncharacterized PE family protein PE23 OS=My...  55.5    1e-09
+
+Sequences not found previously or not previously below threshold:
+
+sp|L7N697|PE16_MYCTU Esterase PE16 OS=Mycobacterium tuberculosis ...  63.2    3e-12
+sp|Q79FU0|PG18_MYCTU PE-PGRS family protein PE_PGRS18 OS=Mycobact...  59.7    5e-11
+sp|Q79FU2|PG17_MYCTU PE-PGRS family protein PE_PGRS17 OS=Mycobact...  55.5    1e-09
+sp|I6Y8K5|PG08_MYCTU PE-PGRS family protein PE_PGRS8 OS=Mycobacte...  49.7    7e-08
+sp|Q6MX50|PG05_MYCTU PE-PGRS family protein PE_PGRS5 OS=Mycobacte...  42.0    1e-04
+sp|P9WIG0|PG10_MYCTO Uncharacterized PE-PGRS family protein PE_PG...  40.5    3e-04
+sp|P9WIG1|PG10_MYCTU Uncharacterized PE-PGRS family protein PE_PG...  40.5    3e-04
+sp|Q79FW5|PG11_MYCTU PE-PGRS family protein PE_PGRS11 OS=Mycobact...  40.1    5e-04
+sp|Q79FR3|PE13_MYCTU PE family protein PE13 OS=Mycobacterium tube...  36.2    0.004
+
+
+>sp|Q79FU3|PG16_MYCTU PE-PGRS family protein PE_PGRS16 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS16 PE=1 SV=1
+Length=923
+
+ Score = 96.3 bits (238),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 34/77 (44%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P  L  AA+++  I     +++A  A  TTA+ P AAD VS   A     YAR Y+    
+Sbjct  8   PPVLASAASDLGGIASMISEANAMAAVRTTALAPAAADEVSAAIAALFSSYARDYQTLSV  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+                  +FA  LT   
+Sbjct  68  QVTAFHVQFAQTLTNAG  84
+
+
+>sp|I6Y2J4|LIPY_MYCTU Triacylglycerol lipase OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=lipY PE=1 
+SV=1
+Length=437
+
+ Score = 91.3 bits (225),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 27/77 (35%), Positives = 34/77 (44%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE ++ AAT+V  I      +   VA  TT V   A D VS   A     + + Y+   A
+Sbjct  9   PEVMSAAATDVASIGSVVATASQGVAGATTTVLAAAEDEVSAAIAALFSGHGQDYQALSA  68
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             AV  E F  ALT  A
+Sbjct  69  QLAVFHERFVQALTGAA  85
+
+
+>sp|B2HE92|PECA_MYCMM PE cleavage protein A OS=Mycobacterium marinum 
+(strain ATCC BAA-535 / M) OX=216594 GN=pecA PE=1 SV=1
+Length=553
+
+ Score = 85.5 bits (210),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 24/77 (31%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA E++ I      ++A  A  TT +   AAD VS   AT    + ++Y+    
+Sbjct  8   PEWLTSAAAELQSIESALSAANAAAAVPTTGLAAAAADEVSTAVATLFAGFGQEYQAIST  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +   ++FA  L + A
+Sbjct  68  QLSAFQQQFALTLNSSA  84
+
+
+>sp|P9WIF6|PG24_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS24 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS24 PE=3 SV=1
+Length=603
+
+ Score = 84.8 bits (208),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 18/74 (24%), Positives = 30/74 (41%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA+++  I      ++A     TT +    AD VS   A+    + + Y+   A
+Sbjct  8   PETLVRAASDLANIGSTLGAANAAALGPTTELLAAGADEVSAAIASLFAAHGQAYQAVSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+             +    +F    T
+Sbjct  68  QMSAFHAQFVQTFT  81
+
+
+>sp|P9WIF7|PG24_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS24 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS24 PE=1 SV=1
+Length=603
+
+ Score = 84.4 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 18/74 (24%), Positives = 30/74 (41%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA+++  I      ++A     TT +    AD VS   A+    + + Y+   A
+Sbjct  8   PETLVRAASDLANIGSTLGAANAAALGPTTELLAAGADEVSAAIASLFAAHGQAYQAVSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+             +    +F    T
+Sbjct  68  QMSAFHAQFVQTFT  81
+
+
+>sp|P9WIF1|PECA_MYCTU PE cleavage protein A OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=pecA PE=1 
+SV=1
+Length=558
+
+ Score = 82.1 bits (201),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 36/77 (47%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA +V  I      ++A  A  TTA+    AD VS   A     + ++Y+   A
+Sbjct  8   PEFLTSAAADVENIGSTLRAANAAAAASTTALAAAGADEVSAAVAALFARFGQEYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   ++F   L + +
+Sbjct  68  QASAFHQQFVQTLNSAS  84
+
+
+>sp|P9WIF0|PECA_MYCTO PE cleavage protein A OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=pecA PE=3 
+SV=1
+Length=558
+
+ Score = 82.1 bits (201),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 36/77 (47%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA +V  I      ++A  A  TTA+    AD VS   A     + ++Y+   A
+Sbjct  8   PEFLTSAAADVENIGSTLRAANAAAAASTTALAAAGADEVSAAVAALFARFGQEYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   ++F   L + +
+Sbjct  68  QASAFHQQFVQTLNSAS  84
+
+
+>sp|Q79G04|PE03_MYCTU PE family protein PE3 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=PE3 PE=1 
+SV=1
+Length=468
+
+ Score = 79.0 bits (193),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 32/71 (45%), Gaps = 0/71 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L   A +V  I      + A  A  TT +   AAD VS  AA    EYAR+ ++ + 
+Sbjct  8   PEMLATTAADVDGIGSAIRAASASAAGPTTGLLAAAADEVSSAAAALFSEYARECQEVLK  67
+
+Query  61  AAAVVLEEFAH  71
+            AA    EF  
+Sbjct  68  QAAAFHGEFTR  78
+
+
+>sp|Q79FS8|PE09_MYCTU PE family protein PE9 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=PE9 PE=1 
+SV=1
+Length=144
+
+ Score = 73.2 bits (178),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 21/67 (31%), Gaps = 0/67 (0%)
+
+Query  10  EVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEEF  69
+           ++  I      ++A     TT V     D V    A      A +Y    A  A     F
+Sbjct  17  DIDGIGSAVSVANAAAVAATTGVLAAGGDEVLAAIARLFNANAEEYHALSAQVAAFQTLF  76
+
+Query  70  AHALTTG  76
+              LT G
+Sbjct  77  VRTLTGG  83
+
+
+>sp|P9WIF8|PG20_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS20 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS20 PE=3 SV=1
+Length=527
+
+ Score = 75.5 bits (184),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 33/77 (43%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ L+ AA ++  I      S    A  TT + P AAD VS   A     +   Y+    
+Sbjct  8   PDMLSSAAGDLASIGSSINASTRAAAAATTRLLPAAADEVSAHIAALFSGHGEGYQAIAR  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   ++F  ALT+ A
+Sbjct  68  QMAAFHDQFTLALTSSA  84
+
+
+>sp|P9WIF9|PG20_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS20 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS20 PE=3 SV=1
+Length=463
+
+ Score = 74.8 bits (182),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 33/77 (43%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ L+ AA ++  I      S    A  TT + P AAD VS   A     +   Y+    
+Sbjct  8   PDMLSSAAGDLASIGSSINASTRAAAAATTRLLPAAADEVSAHIAALFSGHGEGYQAIAR  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   ++F  ALT+ A
+Sbjct  68  QMAAFHDQFTLALTSSA  84
+
+
+>sp|O53553|PG54_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS54 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS54 PE=1 SV=1
+Length=1901
+
+ Score = 74.4 bits (181),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +T AA ++  +      ++A  A  TT V    AD VS + A     +  +Y+   A
+Sbjct  8   PEFVTAAAGDLTNLGSSISAANASAASATTQVLAAGADEVSARIAALFGGFGLEYQAISA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+             A   + F  AL+T
+Sbjct  68  QVAAYHQRFVQALST  82
+
+
+>sp|Q79FP3|PG26_MYCTU PE-PGRS family protein PE_PGRS26 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS26 PE=2 SV=1
+Length=491
+
+ Score = 73.6 bits (179),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 25/76 (33%), Positives = 33/76 (43%), Gaps = 0/76 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P  L+ AA +V  I      ++   AP T  V    AD VS   A+    YAR Y+   A
+Sbjct  8   PGMLSAAAADVASIGAALSAANGAAAPTTAGVLAAGADEVSAAIASLFSGYARDYQALSA  67
+
+Query  61  AAAVVLEEFAHALTTG  76
+             A   ++F  ALT  
+Sbjct  68  QMARFHQQFVQALTAS  83
+
+
+>sp|Q79FB3|PG47_MYCTU PE-PGRS family protein PE_PGRS47 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS47 PE=3 SV=1
+Length=525
+
+ Score = 73.2 bits (178),  Expect = 8e-16, Method: Composition-based stats.
+ Identities = 22/76 (29%), Positives = 33/76 (43%), Gaps = 0/76 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE LT AA ++  I      + A  +  T A+    AD VS   A     + + Y+    
+Sbjct  8   PEFLTAAAMDLASIGSTVSAASAAASAPTVAILAAGADEVSIAVAALFGMHGQAYQALSV  67
+
+Query  61  AAAVVLEEFAHALTTG  76
+            A+   ++F  ALT G
+Sbjct  68  QASAFHQQFVQALTAG  83
+
+
+>sp|P9WIG3|PG03_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS3 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) 
+OX=83332 GN=PE_PGRS3 PE=3 SV=1
+Length=957
+
+ Score = 73.2 bits (178),  Expect = 9e-16, Method: Composition-based stats.
+ Identities = 18/67 (27%), Positives = 29/67 (43%), Gaps = 0/67 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           T++  +      ++A  A  TTA+    AD VS   A     + + Y+   A A     +
+Sbjct  16  TDLASLGSSISAANAAAAANTTALMAAGADEVSTAIAALFGAHGQAYQALSAQAQAFHAQ  75
+
+Query  69  FAHALTT  75
+           F  ALT+
+Sbjct  76  FVQALTS  82
+
+
+>sp|P9WIF3|PG34_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS34 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS34 PE=3 SV=1
+Length=515
+
+ Score = 72.1 bits (175),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 28/63 (44%), Gaps = 0/63 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           +++  I      ++A  A  T  V    AD VS   A     +A+ Y+   A AA+  E+
+Sbjct  16  SDLAGIGSAIGAANAAAAVPTMGVLAAGADEVSAAVADLFGAHAQAYQALSAQAALFHEQ  75
+
+Query  69  FAH  71
+           F H
+Sbjct  76  FVH  78
+
+
+>sp|P9WIF2|PG34_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS34 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS34 PE=3 SV=1
+Length=515
+
+ Score = 72.1 bits (175),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 28/63 (44%), Gaps = 0/63 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           +++  I      ++A  A  T  V    AD VS   A     +A+ Y+   A AA+  E+
+Sbjct  16  SDLAGIGSAIGAANAAAAVPTMGVLAAGADEVSAAVADLFGAHAQAYQALSAQAALFHEQ  75
+
+Query  69  FAH  71
+           F H
+Sbjct  76  FVH  78
+
+
+>sp|P0A688|PG36_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS36 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS36 PE=3 SV=1
+Length=491
+
+ Score = 72.1 bits (175),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 35/77 (45%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL  AAT++  IR     ++A  A  TT    PAAD VS   A      A+ Y+   A
+Sbjct  8   PEALLAAATDLAAIRSTIRAANAAAAVPTTGALAPAADEVSAGIAALFGAQAQSYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA   + F   L  G 
+Sbjct  68  QAAAFHDRFVQLLNAGG  84
+
+
+>sp|P0A689|PG36_MYCBO Uncharacterized PE-PGRS family protein PE_PGRS36 
+OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=PE_PGRS36 PE=3 SV=1
+Length=491
+
+ Score = 72.1 bits (175),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 35/77 (45%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL  AAT++  IR     ++A  A  TT    PAAD VS   A      A+ Y+   A
+Sbjct  8   PEALLAAATDLAAIRSTIRAANAAAAVPTTGALAPAADEVSAGIAALFGAQAQSYQAVSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA   + F   L  G 
+Sbjct  68  QAAAFHDRFVQLLNAGG  84
+
+
+>sp|P9WIE9|PG44_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS44 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS44 PE=3 SV=1
+Length=543
+
+ Score = 71.7 bits (174),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 31/77 (40%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA  V  I      ++A  A  TT+V    AD VS+  A    +YA  Y+   A
+Sbjct  8   PEMLATAAQNVANIGTSLSAANATAAASTTSVLAAGADEVSQAIARLFSDYATHYQSLNA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA     F   L    
+Sbjct  68  QAAAFHHSFVQTLNAAG  84
+
+
+>sp|P9WIE8|PG44_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS44 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS44 PE=3 SV=1
+Length=543
+
+ Score = 71.7 bits (174),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 31/77 (40%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA  V  I      ++A  A  TT+V    AD VS+  A    +YA  Y+   A
+Sbjct  8   PEMLATAAQNVANIGTSLSAANATAAASTTSVLAAGADEVSQAIARLFSDYATHYQSLNA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            AA     F   L    
+Sbjct  68  QAAAFHHSFVQTLNAAG  84
+
+
+>sp|P9WIF4|PG33_MYCTO PE-PGRS family protein PE_PGRS33 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=PE_PGRS33 PE=3 SV=1
+Length=471
+
+ Score = 69.8 bits (169),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 37/74 (50%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL   AT++  I      ++A  A  TT V   AAD VS   A     +A+ Y+   A
+Sbjct  8   PEALAAVATDLAGIGSTIGTANAAAAVPTTTVLAAAADEVSAAMAALFSGHAQAYQALSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA+  E+F  ALT
+Sbjct  68  QAALFHEQFVRALT  81
+
+
+>sp|P9WIF5|PG33_MYCTU PE-PGRS family protein PE_PGRS33 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS33 PE=1 SV=1
+Length=498
+
+ Score = 69.8 bits (169),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 37/74 (50%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEAL   AT++  I      ++A  A  TT V   AAD VS   A     +A+ Y+   A
+Sbjct  8   PEALAAVATDLAGIGSTIGTANAAAAVPTTTVLAAAADEVSAAMAALFSGHAQAYQALSA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA+  E+F  ALT
+Sbjct  68  QAALFHEQFVRALT  81
+
+
+>sp|P9WIG2|PG03_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS3 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS3 PE=3 SV=1
+Length=951
+
+ Score = 69.0 bits (167),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 18/67 (27%), Positives = 29/67 (43%), Gaps = 0/67 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           T++  +      ++A  A  TTA+    AD VS   A     + + Y+   A A     +
+Sbjct  16  TDLASLGSSISAANAAAAANTTALIAAGADEVSTAIAALFGAHGQAYQALSAQAQAFHAQ  75
+
+Query  69  FAHALTT  75
+           F  ALT+
+Sbjct  76  FVQALTS  82
+
+
+>sp|P9WIE6|PG46_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 67.4 bits (163),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 38/77 (49%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y    A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAALAALFGSYAQSYHAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|P9WIE7|PG46_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 66.7 bits (161),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 39/77 (51%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y+   A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAAVAALFGSYAQSYQAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|P0A691|PG46_MYCBO Uncharacterized PE-PGRS family protein PE_PGRS46 
+OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) 
+OX=233413 GN=PE_PGRS46 PE=3 SV=1
+Length=778
+
+ Score = 66.7 bits (161),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 39/77 (51%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALT+AA+++  I      ++A  A  TT V   AAD VS   A     YA+ Y+   A
+Sbjct  8   PEALTMAASDLANIGSTINAANAAAALPTTGVVAAAADEVSAAVAALFGSYAQSYQAFGA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             +    +F  +LT GA
+Sbjct  68  QLSAFHAQFVQSLTNGA  84
+
+
+>sp|L7N697|PE16_MYCTU Esterase PE16 OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=PE16 PE=1 SV=1
+Length=528
+
+ Score = 63.2 bits (152),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 35/77 (45%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +   A+++  +     ++ A  A  TT V   AAD VS   A     + ++++   A
+Sbjct  8   PEMVAATASDLASLGAALSEATAAAAIPTTQVLAAAADEVSAAIAELFGAHGQEFQALSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   + F  AL+  A
+Sbjct  68  QASAFHDRFVRALSAAA  84
+
+
+>sp|Q79FL8|PG30_MYCTU PE-PGRS family protein PE_PGRS30 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS30 PE=1 SV=1
+Length=1011
+
+ Score = 61.7 bits (148),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 21/74 (28%), Positives = 33/74 (45%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ +T AA  +  IR    ++ A  +  TTA+    AD VS   +     Y ++++   A
+Sbjct  8   PDLVTAAAANLAGIRSALSEAAAAASTPTTALASAGADEVSAAVSRLFGAYGQQFQALNA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA    EF   L 
+Sbjct  68  RAATFHAEFVSLLN  81
+
+
+>sp|P9WIG5|WA22_MYCTU WAG22 antigen OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 60.5 bits (145),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+>sp|P9WIG4|WA22_MYCTO WAG22 antigen OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 60.5 bits (145),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+>sp|P0A687|WA22_MYCBO WAG22 antigen OS=Mycobacterium bovis (strain 
+ATCC BAA-935 / AF2122/97) OX=233413 GN=wag22 PE=3 SV=1
+Length=914
+
+ Score = 60.5 bits (145),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 23/75 (31%), Positives = 34/75 (45%), Gaps = 0/75 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AAT++  +      ++A  A  TT++    AD +S   A     + R Y+   A
+Sbjct  8   PETIAAAATDLADLGSTIAGANAAAAANTTSLLAAGADEISAAIAALFGAHGRAYQAASA  67
+
+Query  61  AAAVVLEEFAHALTT  75
+            AA     F  ALTT
+Sbjct  68  EAAAFHGRFVQALTT  82
+
+
+>sp|I6X486|PE25_MYCTU PE-PGRS family protein PE25 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE25 
+PE=1 SV=1
+Length=99
+
+ Score = 57.0 bits (136),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 77/77 (100%), Positives = 77/77 (100%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA
+Sbjct  8   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+           AAAVVLEEFAHALTTGA
+Sbjct  68  AAAVVLEEFAHALTTGA  84
+
+
+>sp|Q79FU0|PG18_MYCTU PE-PGRS family protein PE_PGRS18 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS18 PE=2 SV=1
+Length=457
+
+ Score = 59.7 bits (143),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 19/77 (25%), Positives = 30/77 (39%), Gaps = 1/77 (1%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ ++ AA +  RI      ++   A  T      A D VS   A     + + Y+   A
+Sbjct  8   PQLVSTAAADAARIGSAINTANTAAAATTQV-LAAAHDEVSTAIAALFGSHGQHYQAISA  66
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   E F  AL+  +
+Sbjct  67  QVAAYQERFVLALSQAS  83
+
+
+>sp|P9WIG9|PE23_MYCTU Uncharacterized PE family protein PE23 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE23 PE=1 SV=1
+Length=382
+
+ Score = 55.5 bits (132),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|P9WIG8|PE23_MYCTO Uncharacterized PE family protein PE23 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=PE23 PE=3 SV=1
+Length=382
+
+ Score = 55.5 bits (132),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|P0A685|PE23_MYCBO Uncharacterized PE family protein PE23 OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=PE23 PE=3 SV=1
+Length=382
+
+ Score = 55.5 bits (132),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 28/77 (36%), Positives = 37/77 (48%), Gaps = 0/77 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA ++  IR     S A  A  TTAV   A D VS   A+    Y R+ +   A
+Sbjct  8   PEQVESAAQDLAGIRSALSASYAAAAGPTTAVVSAAEDEVSTAIASIFGAYGRQCQVLSA  67
+
+Query  61  AAAVVLEEFAHALTTGA  77
+            A+   +EF + L TGA
+Sbjct  68  QASAFHDEFVNLLKTGA  84
+
+
+>sp|Q79FU2|PG17_MYCTU PE-PGRS family protein PE_PGRS17 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS17 PE=1 SV=1
+Length=331
+
+ Score = 55.5 bits (132),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 29/77 (38%), Gaps = 1/77 (1%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           P+ ++ AA +  RI      ++   A  T      A D VS   A     + + Y+   A
+Sbjct  8   PQLVSTAAADAARIGSAINTANTAAAATTQV-LAAAQDEVSTAIAALFGSHGQHYQAISA  66
+
+Query  61  AAAVVLEEFAHALTTGA  77
+             A   + F  AL+   
+Sbjct  67  QVAAYQQRFVLALSQAG  83
+
+
+>sp|I6Y8K5|PG08_MYCTU PE-PGRS family protein PE_PGRS8 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE_PGRS8 
+PE=3 SV=2
+Length=175
+
+ Score = 49.7 bits (117),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 29/66 (44%), Gaps = 0/66 (0%)
+
+Query  9   TEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEE  68
+           T++  I      ++A  A  TTAV    AD VS   A     + + Y+   A AA    +
+Sbjct  16  TDLASIGSTIGAANAAAAANTTAVLAAGADQVSVAIAAAFGAHGQAYQALSAQAATFHIQ  75
+
+Query  69  FAHALT  74
+           F  ALT
+Sbjct  76  FVQALT  81
+
+
+>sp|Q6MX50|PG05_MYCTU PE-PGRS family protein PE_PGRS5 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE_PGRS5 
+PE=1 SV=1
+Length=591
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/74 (34%), Positives = 33/74 (45%), Gaps = 0/74 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE +  AA E+  IR     ++A  A  TT V   AAD VS   A     +A+ Y+   A
+Sbjct  8   PEMIAAAAGELASIRSAINAANAAAAAQTTGVMSAAADEVSTAVAALFSSHAQAYQAASA  67
+
+Query  61  AAAVVLEEFAHALT  74
+            AA    +    LT
+Sbjct  68  QAAAFHAQVVRTLT  81
+
+
+>sp|P9WIG0|PG10_MYCTO Uncharacterized PE-PGRS family protein PE_PGRS10 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) 
+OX=83331 GN=PE_PGRS10 PE=3 SV=1
+Length=785
+
+ Score = 40.5 bits (93),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 14/48 (29%), Positives = 20/48 (42%), Gaps = 0/48 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFL  48
+           PE +  AA ++  I      ++A  A  TT +    AD VS   A   
+Sbjct  8   PELVVAAAADLAGIGSAISSANAAAAVNTTGLLTAGADEVSTAIAALF  55
+
+
+>sp|P9WIG1|PG10_MYCTU Uncharacterized PE-PGRS family protein PE_PGRS10 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / 
+H37Rv) OX=83332 GN=PE_PGRS10 PE=3 SV=1
+Length=801
+
+ Score = 40.5 bits (93),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 14/48 (29%), Positives = 20/48 (42%), Gaps = 0/48 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFL  48
+           PE +  AA ++  I      ++A  A  TT +    AD VS   A   
+Sbjct  8   PELVVAAAADLAGIGSAISSANAAAAVNTTGLLTAGADEVSTAIAALF  55
+
+
+>sp|Q79FW5|PG11_MYCTU PE-PGRS family protein PE_PGRS11 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=PE_PGRS11 PE=1 SV=1
+Length=584
+
+ Score = 40.1 bits (92),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 23/64 (36%), Positives = 29/64 (45%), Gaps = 0/64 (0%)
+
+Query  14  IRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIAAAAVVLEEFAHAL  73
+           I       +   A  TTAV   AAD VS   A     +AR+Y+   A AA   E+F H L
+Sbjct  21  IGSAVNAGNLAAANPTTAVAAAAADEVSAALAALFGAHAREYQAAAAQAAAYHEQFVHRL  80
+
+Query  74  TTGA  77
+           +  A
+Sbjct  81  SAAA  84
+
+
+>sp|Q79FR3|PE13_MYCTU PE family protein PE13 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=PE13 PE=1 
+SV=1
+Length=99
+
+ Score = 36.2 bits (82),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 27/73 (37%), Positives = 36/73 (49%), Gaps = 0/73 (0%)
+
+Query  1   PEALTVAATEVRRIRDRAIQSDAQVAPMTTAVRPPAADLVSEKAATFLVEYARKYRQTIA  60
+           PE L  AA  ++ I    + S+A  A  TT V PPAAD VS   A     +A  Y+   A
+Sbjct  8   PEMLAAAADTLQSIGATTVASNAAAAAPTTGVVPPAADEVSALTAAHFAAHAAMYQSVSA  67
+
+Query  61  AAAVVLEEFAHAL  73
+            AA + ++F   L
+Sbjct  68  RAAAIHDQFVATL  80
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.132    0.335    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5097362770
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

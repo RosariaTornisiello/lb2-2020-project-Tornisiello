@@ -1,0 +1,2867 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5e2c_A
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus s...  55.8    6e-09
+sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditi...  45.1    4e-05
+sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823...  44.3    8e-05
+sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana O...  42.7    2e-04
+sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Collet...  40.8    0.001
+sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens OX=...  40.4    0.002
+sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana O...  38.5    0.009
+
+
+>sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqhT PE=3 SV=1
+Length=353
+
+ Score = 55.8 bits (133),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 41/129 (32%), Positives = 66/129 (51%), Gaps = 7/129 (5%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            + +KL+      G+D  LI+   NVRY++GF+GS G  ++  D+  A   TD RY  QA 
+Sbjct  2    KLEKLRNLFGQLGIDGMLITSNTNVRYMTGFTGSAGLAVISGDK--AAFITDFRYTEQAK  59
+
+Query  63   SQAPDLEVAIER--AVGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVR  120
+             Q    E+ IE   ++ +  A      G+ +LGFE + +T     + +  +   + ELV 
+Sbjct  60   VQVKGFEI-IEHGGSLIQTTADTVESFGIKRLGFEQNSMTYGTYASYSAVI--SDAELVP  116
+
+Query  121  ASGTVESLR  129
+             + +VE LR
+Sbjct  117  VAESVEKLR  125
+
+
+>sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditis 
+elegans OX=6239 GN=app-1 PE=1 SV=1
+Length=616
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 22/38 (58%), Positives = 30/38 (79%), Gaps = 2/38 (5%)
+
+Query  27  VRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQ  64
+           V++LSGFSGSN  ++V   +R+A+L TDGRY TQA +Q
+Sbjct  51  VKFLSGFSGSNAYVVV--TDREALLWTDGRYFTQAGNQ  86
+
+
+>sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823 
+GN=XPNPEP2 PE=1 SV=1
+Length=673
+
+ Score = 44.3 bits (103),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 32/93 (34%), Positives = 50/93 (54%), Gaps = 4/93 (4%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAP-DLEVAIERAVGRYLAGRAGEA  87
+            +++GF GS G  +V   ER A L TD RY TQA  Q   + E+  E + G  +     E 
+Sbjct  90   WITGFIGSAGIAVV--TERKAALWTDSRYWTQAERQMDCNWELHKEVSTGHIVTWLLTEI  147
+
+Query  88   GV-GKLGFESHVVTVDGLDALAGALEGKNTELV  119
+             V G++GF+  + ++D  ++   AL+  + ELV
+Sbjct  148  PVGGRVGFDPFLFSIDSWESYDVALQDADRELV  180
+
+
+>sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana 
+OX=3702 GN=APP2 PE=2 SV=1
+Length=710
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 33/105 (31%), Positives = 46/105 (44%), Gaps = 26/105 (25%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAVGRYLAGRAGEAG  88
+            Y+SGF+GS G  +V  D+  A L TDGRY  QA  Q              ++  RAG  G
+Sbjct  122  YISGFTGSAGTAVVTKDK--AALWTDGRYFLQAEKQ----------LNSSWILMRAGNPG  169
+
+Query  89   V--------------GKLGFESHVVTVDGLDALAGALEGKNTELV  119
+            V              G++G +  + + D  + L   +  KN ELV
+Sbjct  170  VPTASEWIADVLAPGGRVGIDPFLFSADAAEELKEVIAKKNHELV  214
+
+
+>sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Colletotrichum 
+graminicola (strain M1.001 / M2 / FGSC 10212) OX=645133 
+GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 35/98 (36%), Positives = 52/98 (53%), Gaps = 12/98 (12%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAG  85
+            ++SGFSGS G  +V  D+  A LATDGRY  QA+ Q     + +++    V  +    A 
+Sbjct  47   FISGFSGSAGCAVVTLDK--AALATDGRYFNQASKQLDQNWLLLKQGLQDVPTWQEWSAE  104
+
+Query  86   EAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRASG  123
+            ++  GK      VV VD  + + G++  K TE V+ SG
+Sbjct  105  QSAGGK------VVGVDP-ELITGSIAKKLTEKVKRSG  135
+
+
+>sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens 
+OX=9606 GN=XPNPEP2 PE=1 SV=3
+Length=674
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 31/96 (32%), Positives = 52/96 (54%), Gaps = 10/96 (10%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAVGR-----YLAGR  83
+            +++GF+GS G  +V    + A + TD RY TQA  Q  D    + + VG      +L   
+Sbjct  91   WITGFTGSAGTAVVTM--KKAAVWTDSRYWTQAERQM-DCNWELHKEVGTTPIVTWLLTE  147
+
+Query  84   AGEAGVGKLGFESHVVTVDGLDALAGALEGKNTELV  119
+               AG G++GF+  ++++D  ++   AL+G N +LV
+Sbjct  148  I-PAG-GRVGFDPFLLSIDTWESYDLALQGSNRQLV  181
+
+
+>sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana 
+OX=3702 GN=APP1 PE=1 SV=1
+Length=645
+
+ Score = 38.5 bits (88),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 29/98 (30%), Positives = 49/98 (50%), Gaps = 8/98 (8%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPD----LEVAIERAVGRYLAGRA  84
+            ++SGFSGS G  L+   +++A L TDGRY  QA  Q  D    + +  +  V  +++   
+Sbjct  44   FVSGFSGSAGLALI--TKKEARLWTDGRYFLQALQQLSDEWTLMRMGEDPLVEVWMSDNL  101
+
+Query  85   GEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRAS  122
+             E     +G +S  V+VD  +    +   KN +L+  +
+Sbjct  102  PEE--ANIGVDSWCVSVDTANRWGKSFAKKNQKLITTT  137
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.133    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 2
+
+
+Query= 5e2c_A
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus s...  149     7e-44
+sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823...  126     1e-33
+sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens OX=...  122     4e-32
+sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana O...  106     1e-26
+sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Collet...  102     3e-25
+sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditi...  75.6    9e-16
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q99MA2|XPP2_RAT Xaa-Pro aminopeptidase 2 OS=Rattus norvegicus ...  112     9e-29
+sp|B1AVD1|XPP2_MOUSE Xaa-Pro aminopeptidase 2 OS=Mus musculus OX=...  107     8e-27
+sp|C0SCV1|AMPP1_PARBP Probable Xaa-Pro aminopeptidase P OS=Paraco...  92.6    1e-21
+sp|C5P7J2|AMPP1_COCP7 Probable Xaa-Pro aminopeptidase P OS=Coccid...  91.8    2e-21
+sp|C1GEY4|AMPP1_PARBD Probable Xaa-Pro aminopeptidase P OS=Paraco...  91.4    2e-21
+sp|E9CTR7|AMPP1_COCPS Probable Xaa-Pro aminopeptidase P OS=Coccid...  91.4    2e-21
+sp|A1CAQ1|AMPP1_ASPCL Probable Xaa-Pro aminopeptidase P OS=Asperg...  91.4    3e-21
+sp|C6HSY3|AMPP1_AJECH Probable Xaa-Pro aminopeptidase P OS=Ajello...  90.3    6e-21
+sp|Q4WUD3|AMPP1_ASPFU Probable Xaa-Pro aminopeptidase P OS=Neosar...  90.3    6e-21
+sp|B0Y3V7|AMPP1_ASPFC Probable Xaa-Pro aminopeptidase P OS=Neosar...  90.3    6e-21
+sp|C1H978|AMPP1_PARBA Probable Xaa-Pro aminopeptidase P OS=Paraco...  90.3    7e-21
+sp|A1DF27|AMPP1_NEOFI Probable Xaa-Pro aminopeptidase P OS=Neosar...  90.3    7e-21
+sp|C5K105|AMPP1_BLAGS Probable Xaa-Pro aminopeptidase P OS=Blasto...  90.3    8e-21
+sp|C5GXZ9|AMPP1_AJEDR Probable Xaa-Pro aminopeptidase P OS=Ajello...  90.3    8e-21
+sp|B6HQC9|AMPP1_PENRW Probable Xaa-Pro aminopeptidase P OS=Penici...  89.9    9e-21
+sp|C0NDZ7|AMPP1_AJECG Probable Xaa-Pro aminopeptidase P OS=Ajello...  89.9    1e-20
+sp|Q2U7S5|AMPP1_ASPOR Probable Xaa-Pro aminopeptidase P OS=Asperg...  89.9    1e-20
+sp|B8NEI6|AMPP1_ASPFN Probable Xaa-Pro aminopeptidase P OS=Asperg...  89.9    1e-20
+sp|B8M9W2|AMPP1_TALSN Probable Xaa-Pro aminopeptidase P OS=Talaro...  88.7    2e-20
+sp|C7Z9Z7|AMPP1_NECH7 Probable Xaa-Pro aminopeptidase P OS=Nectri...  88.7    2e-20
+sp|Q2H8T2|AMPP1_CHAGB Probable Xaa-Pro aminopeptidase P OS=Chaeto...  88.7    2e-20
+sp|Q7RYL6|AMPP1_NEUCR Probable Xaa-Pro aminopeptidase P OS=Neuros...  88.3    3e-20
+sp|Q0CDB3|AMPP1_ASPTN Probable Xaa-Pro aminopeptidase P OS=Asperg...  88.3    3e-20
+sp|B6QG01|AMPP1_TALMQ Probable Xaa-Pro aminopeptidase P OS=Talaro...  88.0    4e-20
+sp|A6R035|AMPP1_AJECN Probable Xaa-Pro aminopeptidase P OS=Ajello...  87.6    5e-20
+sp|A2QGR5|AMPP1_ASPNC Probable Xaa-Pro aminopeptidase P OS=Asperg...  87.6    5e-20
+sp|E3S7K9|AMPP1_PYRTT Probable Xaa-Pro aminopeptidase P OS=Pyreno...  87.2    8e-20
+sp|D1ZKF3|AMPP1_SORMK Probable Xaa-Pro aminopeptidase P OS=Sordar...  87.2    9e-20
+sp|B2VUU7|AMPP1_PYRTR Probable Xaa-Pro aminopeptidase P OS=Pyreno...  86.8    1e-19
+sp|A4RF35|AMPP1_MAGO7 Probable Xaa-Pro aminopeptidase P OS=Magnap...  86.4    2e-19
+sp|Q5AVF0|AMPP1_EMENI Probable Xaa-Pro aminopeptidase P OS=Emeric...  85.6    3e-19
+sp|C5FHR9|AMPP1_ARTOC Probable Xaa-Pro aminopeptidase P OS=Arthro...  85.3    4e-19
+sp|E4USI8|AMPP1_ARTGP Probable Xaa-Pro aminopeptidase P OS=Arthro...  85.3    4e-19
+sp|C9SR45|AMPP1_VERA1 Probable Xaa-Pro aminopeptidase P OS=Vertic...  85.3    4e-19
+sp|Q0UFY4|AMPP1_PHANO Probable Xaa-Pro aminopeptidase P OS=Phaeos...  84.9    5e-19
+sp|E9E9B2|AMPP1_METAQ Probable Xaa-Pro aminopeptidase P OS=Metarh...  84.5    8e-19
+sp|E9EUE6|AMPP1_METRA Probable Xaa-Pro aminopeptidase P OS=Metarh...  83.3    2e-18
+sp|O54975|XPP1_RAT Xaa-Pro aminopeptidase 1 OS=Rattus norvegicus ...  83.3    2e-18
+sp|Q6P1B1|XPP1_MOUSE Xaa-Pro aminopeptidase 1 OS=Mus musculus OX=...  83.3    2e-18
+sp|D5GAC6|AMPP1_TUBMM Probable Xaa-Pro aminopeptidase P OS=Tuber ...  82.9    3e-18
+sp|B2AWV6|AMPP1_PODAN Probable Xaa-Pro aminopeptidase P OS=Podosp...  82.6    3e-18
+sp|Q9NQW7|XPP1_HUMAN Xaa-Pro aminopeptidase 1 OS=Homo sapiens OX=...  81.4    8e-18
+sp|Q1JPJ2|XPP1_BOVIN Xaa-Pro aminopeptidase 1 OS=Bos taurus OX=99...  80.6    1e-17
+sp|Q9VJG0|XPP_DROME Xaa-Pro aminopeptidase ApepP OS=Drosophila me...  80.6    2e-17
+sp|D4D891|AMPP1_TRIVH Probable Xaa-Pro aminopeptidase P OS=Tricho...  79.5    5e-17
+sp|D4ARJ9|AMPP1_ARTBC Probable Xaa-Pro aminopeptidase P OS=Arthro...  79.1    5e-17
+sp|A8P5H7|AMPP1_COPC7 Probable Xaa-Pro aminopeptidase P OS=Coprin...  75.6    1e-15
+sp|B0DZL3|AMPP1_LACBS Probable Xaa-Pro aminopeptidase P OS=Laccar...  75.2    1e-15
+sp|Q54G06|XPP1_DICDI Xaa-Pro aminopeptidase 1 OS=Dictyostelium di...  74.5    2e-15
+sp|E5ABQ8|AMPP1_LEPMJ Probable Xaa-Pro aminopeptidase P OS=Leptos...  71.8    2e-14
+sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana O...  70.6    5e-14
+sp|Q09795|YAA1_SCHPO Uncharacterized peptidase C22G7.01c OS=Schiz...  66.8    1e-12
+sp|Q07825|FRA1_YEAST Putative Xaa-Pro aminopeptidase FRA1 OS=Sacc...  65.2    4e-12
+sp|A6RK67|AMPP1_BOTFB Probable Xaa-Pro aminopeptidase P OS=Botryo...  59.5    4e-10
+sp|A7E4T8|AMPP1_SCLS1 Probable Xaa-Pro aminopeptidase P OS=Sclero...  58.7    7e-10
+sp|P75313|AMPP_MYCPN Putative Xaa-Pro aminopeptidase OS=Mycoplasm...  45.6    3e-05
+sp|P47566|AMPP_MYCGE Putative Xaa-Pro aminopeptidase OS=Mycoplasm...  42.9    2e-04
+sp|P76524|YPDF_ECOLI Aminopeptidase YpdF OS=Escherichia coli (str...  41.0    9e-04
+
+
+>sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqhT PE=3 SV=1
+Length=353
+
+ Score = 149 bits (377),  Expect = 7e-44, Method: Composition-based stats.
+ Identities = 39/128 (30%), Positives = 64/128 (50%), Gaps = 5/128 (4%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            + +KL+      G+D  LI+   NVRY++GF+GS G  ++  D+  A   TD RY  QA 
+Sbjct  2    KLEKLRNLFGQLGIDGMLITSNTNVRYMTGFTGSAGLAVISGDK--AAFITDFRYTEQAK  59
+
+Query  63   SQAPDLEVAIE-RAVGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRA  121
+             Q    E+     ++ +  A      G+ +LGFE + +T     + +  +   + ELV  
+Sbjct  60   VQVKGFEIIEHGGSLIQTTADTVESFGIKRLGFEQNSMTYGTYASYSAVI--SDAELVPV  117
+
+Query  122  SGTVESLR  129
+            + +VE LR
+Sbjct  118  AESVEKLR  125
+
+
+>sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823 
+GN=XPNPEP2 PE=1 SV=1
+Length=673
+
+ Score = 126 bits (317),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 32/96 (33%), Positives = 51/96 (53%), Gaps = 4/96 (4%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAP-DLEVAIERAVGRYLAGRAGEA  87
+            +++GF GS G  +V   ER A L TD RY TQA  Q   + E+  E + G  +     E 
+Sbjct  90   WITGFIGSAGIAVVT--ERKAALWTDSRYWTQAERQMDCNWELHKEVSTGHIVTWLLTEI  147
+
+Query  88   GVG-KLGFESHVVTVDGLDALAGALEGKNTELVRAS  122
+             VG ++GF+  + ++D  ++   AL+  + ELV  +
+Sbjct  148  PVGGRVGFDPFLFSIDSWESYDVALQDADRELVSIT  183
+
+
+>sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens 
+OX=9606 GN=XPNPEP2 PE=1 SV=3
+Length=674
+
+ Score = 122 bits (305),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 29/102 (28%), Positives = 52/102 (51%), Gaps = 4/102 (4%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAP-DLEVAIERAVGRYLAGRAGE-  86
+            +++GF+GS G  +V    + A + TD RY TQA  Q   + E+  E      +     E 
+Sbjct  91   WITGFTGSAGTAVVTM--KKAAVWTDSRYWTQAERQMDCNWELHKEVGTTPIVTWLLTEI  148
+
+Query  87   AGVGKLGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+               G++GF+  ++++D  ++   AL+G N +LV  +  +  L
+Sbjct  149  PAGGRVGFDPFLLSIDTWESYDLALQGSNRQLVSITTNLVDL  190
+
+
+>sp|Q99MA2|XPP2_RAT Xaa-Pro aminopeptidase 2 OS=Rattus norvegicus 
+OX=10116 GN=Xpnpep2 PE=1 SV=1
+Length=674
+
+ Score = 112 bits (280),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 35/134 (26%), Positives = 59/134 (44%), Gaps = 16/134 (12%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R   L+ Q+  S L A +I D                 ++SGF+GS G  +V   ++ A 
+Sbjct  53   RLAALRQQMEKSNLSAYIIPDTDAHMSEYIGKHDERRAWISGFTGSAGTAVVT--KKKAA  110
+
+Query  51   LATDGRYRTQAASQAP-DLEVAIERAVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALA  108
+            + TD RY TQA  Q   + E+  E ++   +A    E   G+ +GF+  + +V   +   
+Sbjct  111  VWTDSRYWTQAERQMDCNWELHKEVSISSIVAWILAEVPDGENVGFDPFLFSVGSWENYD  170
+
+Query  109  GALEGKNTELVRAS  122
+              L+  N  L+  +
+Sbjct  171  QELQDSNRHLLSIT  184
+
+
+>sp|B1AVD1|XPP2_MOUSE Xaa-Pro aminopeptidase 2 OS=Mus musculus 
+OX=10090 GN=Xpnpep2 PE=1 SV=1
+Length=674
+
+ Score = 107 bits (266),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 46/97 (47%), Gaps = 4/97 (4%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAP-DLEVAIERAVGRYLAGRAGE  86
+             ++SGF+GS G  +V   +  A + TD RY TQA  Q   + E+  E ++   +A    E
+Sbjct  90   EWISGFTGSAGTAVVTMGK--AAVWTDSRYWTQAERQMDCNWELHKEVSISSIVAWILAE  147
+
+Query  87   AGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRAS  122
+               G+ +GF+  + +VD         +  +  L+  +
+Sbjct  148  VPDGQNVGFDPFLFSVDSWKNYDQGFQDSSRHLLSVT  184
+
+
+>sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana 
+OX=3702 GN=APP2 PE=2 SV=1
+Length=710
+
+ Score = 106 bits (264),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 34/139 (24%), Positives = 56/139 (40%), Gaps = 24/139 (17%)
+
+Query  1    NARRDKLKAQIAA--SGLDAXLISDL------------INVRYLSGFSGSNGALLVFADE  46
+            + +   ++   +    G+DA +I                   Y+SGF+GS G  +V  D+
+Sbjct  80   DEKLSSIRRLFSEPGVGIDAYIIPSQDAHQSEFIAECYARRAYISGFTGSAGTAVVTKDK  139
+
+Query  47   RDAVLATDGRYRTQAASQAPDLEVAIERAVG------RYLAGRAGEAGVGKLGFESHVVT  100
+              A L TDGRY  QA  Q     + +            ++A     A  G++G +  + +
+Sbjct  140  --AALWTDGRYFLQAEKQLNSSWILMRAGNPGVPTASEWIADVL--APGGRVGIDPFLFS  195
+
+Query  101  VDGLDALAGALEGKNTELV  119
+             D  + L   +  KN ELV
+Sbjct  196  ADAAEELKEVIAKKNHELV  214
+
+
+>sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Colletotrichum 
+graminicola (strain M1.001 / M2 / FGSC 10212) OX=645133 
+GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 102 bits (254),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 38/137 (28%), Positives = 61/137 (45%), Gaps = 24/137 (18%)
+
+Query  2    ARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDA  49
+             R  +L+  +    +D  +I                   ++SGFSGS G  +V  D+  A
+Sbjct  8    GRLSRLRELMKERNVDVYVIPSEDSHASEYIAGCDARREFISGFSGSAGCAVVTLDK--A  65
+
+Query  50   VLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGKLGFESHVVTVDGLDA  106
+             LATDGRY  QA+ Q     + +++    V  +    A ++  GK+      V VD  + 
+Sbjct  66   ALATDGRYFNQASKQLDQNWLLLKQGLQDVPTWQEWSAEQSAGGKV------VGVDP-EL  118
+
+Query  107  LAGALEGKNTELVRASG  123
+            + G++  K TE V+ SG
+Sbjct  119  ITGSIAKKLTEKVKRSG  135
+
+
+>sp|C0SCV1|AMPP1_PARBP Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+brasiliensis (strain Pb03) OX=482561 GN=AMPP 
+PE=3 SV=2
+Length=616
+
+ Score = 92.6 bits (228),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 31/142 (22%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  L+    + +            ++SGFSGS G  +V   +  A 
+Sbjct  9    RLARLRELMKERNVDVYLVPSEDSHQSEYIAPCDGRREFISGFSGSAGCAIVSMTK--AA  66
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q  +  + ++R +     +    A +   GK +G +  ++T     +
+Sbjct  67   LSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTAEQLEGGKVVGVDPSLITASDARS  126
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  ++     L+     +  L
+Sbjct  127  LSETIKKSGGSLLGVQENLVDL  148
+
+
+>sp|C5P7J2|AMPP1_COCP7 Probable Xaa-Pro aminopeptidase P OS=Coccidioides 
+posadasii (strain C735) OX=222929 GN=AMPP PE=3 SV=1
+Length=651
+
+ Score = 91.8 bits (226),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 36/142 (25%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  KL+  +    +D  LI    + +            ++SGF+GS G  +V   +  A 
+Sbjct  48   RLAKLRELMKERHVDVYLIPSEDSHQSEYIAPCDARRAFISGFTGSAGCAIVSMSK--AA  105
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q  +  + ++R    V  +    A +A  GK +G +  ++T      
+Sbjct  106  LSTDGRYFNQAAKQLDENWLLLKRGMENVPTWQEWTAEQAEGGKVVGVDPSLITAAEARK  165
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  ++     LV     +  L
+Sbjct  166  LSDTIKNTGGSLVGVPDNLVDL  187
+
+
+>sp|C1GEY4|AMPP1_PARBD Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+brasiliensis (strain Pb18) OX=502780 GN=AMPP 
+PE=3 SV=2
+Length=616
+
+ Score = 91.4 bits (225),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 31/142 (22%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  L+    + +            ++SGFSGS G  +V   +  A 
+Sbjct  9    RLARLRELMKERNVDVYLVPSEDSHQSEYIAPCDGRREFISGFSGSAGCAIVSMTK--AA  66
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q  +  + ++R +     +    A +   GK +G +  ++T     +
+Sbjct  67   LSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTAEQLEGGKVVGVDPSLITASDARS  126
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  ++     L+     +  L
+Sbjct  127  LSETIKRSGGSLLGVQENLVDL  148
+
+
+>sp|E9CTR7|AMPP1_COCPS Probable Xaa-Pro aminopeptidase P OS=Coccidioides 
+posadasii (strain RMSCC 757 / Silveira) OX=443226 
+GN=AMPP PE=3 SV=1
+Length=611
+
+ Score = 91.4 bits (225),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 36/142 (25%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  KL+  +    +D  LI    + +            ++SGF+GS G  +V   +  A 
+Sbjct  8    RLAKLRELMKERHVDVYLIPSEDSHQSEYIAPCDARRAFISGFTGSAGCAIVSMSK--AA  65
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q  +  + ++R    V  +    A +A  GK +G +  ++T      
+Sbjct  66   LSTDGRYFNQAAKQLDENWLLLKRGMENVPTWQEWTAEQAEGGKVVGVDPSLITAAEARK  125
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  ++     LV     +  L
+Sbjct  126  LSDTIKDTGGSLVGVPDNLVDL  147
+
+
+>sp|A1CAQ1|AMPP1_ASPCL Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 
+/ NCTC 3887 / NRRL 1) OX=344612 GN=ampp PE=3 SV=1
+Length=658
+
+ Score = 91.4 bits (225),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 32/105 (30%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGFSGS G  +V   +  A L+TDGRY  QA+ Q     + ++R    V  +     
+Sbjct  86   EFISGFSGSAGTAIVSMTK--AALSTDGRYFNQASKQLDSNWLLLKRGVENVPTWQEWTT  143
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T  G  +LA  L    + LV     +  L
+Sbjct  144  EQAEGGKVVGVDPSLITAPGARSLAETLRKNGSSLVGVQQNLVDL  188
+
+
+>sp|C6HSY3|AMPP1_AJECH Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain H143) OX=544712 GN=AMPP PE=3 SV=1
+Length=636
+
+ Score = 90.3 bits (222),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 28/105 (27%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V   +  A L+TDGRY  QAA Q  +  + ++R    +  +    A
+Sbjct  46   EFISGFTGSAGCAIVSMTK--AALSTDGRYFNQAAKQLDNNWILLKRGFENMPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T      L+  ++     L+     +  L
+Sbjct  104  EQAEGGKVVGVDPSLITASDARNLSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|Q4WUD3|AMPP1_ASPFU Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 
+/ FGSC A1100) OX=330879 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 90.3 bits (222),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGFSGS G  +V   +  A 
+Sbjct  49   RLARLRQLMQEHKIDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q       ++R    V  +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTTEQAQGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L   L+   + LV  S  +  L
+Sbjct  167  LEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|B0Y3V7|AMPP1_ASPFC Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) 
+OX=451804 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 90.3 bits (222),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGFSGS G  +V   +  A 
+Sbjct  49   RLARLRQLMQEHKIDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q       ++R    V  +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTTEQAQGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L   L+   + LV  S  +  L
+Sbjct  167  LEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|C1H978|AMPP1_PARBA Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+lutzii (strain ATCC MYA-826 / Pb01) OX=502779 
+GN=AMPP PE=3 SV=2
+Length=616
+
+ Score = 90.3 bits (222),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 27/105 (26%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRA  84
+             ++SGFSGS G  +V   +  A L+TDGRY  QA+ Q  +  + ++R +     +    A
+Sbjct  46   EFISGFSGSAGCAIVSMTK--AALSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +   GK +G +  ++T     +L+  ++     L+     +  L
+Sbjct  104  EQLEGGKVVGVDPSLITASDARSLSETIKKSGGSLLGLQENLVDL  148
+
+
+>sp|A1DF27|AMPP1_NEOFI Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 
+/ FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=ampp 
+PE=3 SV=1
+Length=654
+
+ Score = 90.3 bits (222),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 32/105 (30%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGFSGS G  +V   +  A L+TDGRY  QA+ Q       ++R    V  +     
+Sbjct  86   EFISGFSGSAGTAIVSMTK--AALSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTT  143
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T  G  +L   L+   + LV  S  +  L
+Sbjct  144  EQAEGGKVVGVDPSLITASGARSLEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|C5K105|AMPP1_BLAGS Probable Xaa-Pro aminopeptidase P OS=Blastomyces 
+gilchristii (strain SLH14081) OX=559298 GN=AMPP PE=3 
+SV=1
+Length=617
+
+ Score = 90.3 bits (222),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 29/105 (28%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V   +  A L+TDGRY  QAA Q  +  + ++R    +  +    A
+Sbjct  46   EFISGFTGSAGCAIVSMSK--AALSTDGRYFNQAAKQLDNNWMLLKRGFENMPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T     +L+  +E     L      +  L
+Sbjct  104  EQAEGGKVVGVDPSLITASEARSLSETIEKSGGSLQGVQENLIDL  148
+
+
+>sp|C5GXZ9|AMPP1_AJEDR Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+dermatitidis (strain ER-3 / ATCC MYA-2586) OX=559297 
+GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 90.3 bits (222),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 29/105 (28%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V   +  A L+TDGRY  QAA Q  +  + ++R    +  +    A
+Sbjct  46   EFISGFTGSAGCAIVSMSK--AALSTDGRYFNQAAKQLDNNWMLLKRGFENMPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T     +L+  +E     L      +  L
+Sbjct  104  EQAEGGKVVGVDPSLITASEARSLSETIEKSGGSLQGVQENLIDL  148
+
+
+>sp|B6HQC9|AMPP1_PENRW Probable Xaa-Pro aminopeptidase P OS=Penicillium 
+rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / 
+Wisconsin 54-1255) OX=500485 GN=ampp PE=3 SV=1
+Length=613
+
+ Score = 89.9 bits (221),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 36/142 (25%), Positives = 58/142 (41%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R  KL+  +    +D  ++                   ++SGFSGS G  ++   +  A 
+Sbjct  9    RLSKLRQLMQQHKVDVYIVPSEDSHQSEYIAPCDARREFISGFSGSAGTAIISLSK--AA  66
+
+Query  51   LATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q  +    ++     V  +      EA  GK +G +  ++T  G   
+Sbjct  67   LSTDGRYFNQAAKQLDNNWQLLKGGVEGVPTWQEWTTEEAQGGKAVGVDPSLITASGARK  126
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            LA  L+   + LV     +  L
+Sbjct  127  LAETLKKNGSSLVGVRENLVDL  148
+
+
+>sp|C0NDZ7|AMPP1_AJECG Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain G186AR / H82 / ATCC MYA-2454 / 
+RMSCC 2432) OX=447093 GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 89.9 bits (221),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 28/105 (27%), Positives = 50/105 (48%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V   +  A L+TDGRY  QAA Q  +  + ++R    +  +    A
+Sbjct  46   EFISGFTGSAGCAIVSMTK--AALSTDGRYFNQAAKQLDNNWILLKRGFENMPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T      L+  ++     L+     +  L
+Sbjct  104  EQAEGGKVVGVDPSLITASDARNLSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|Q2U7S5|AMPP1_ASPOR Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=ampp 
+PE=2 SV=2
+Length=654
+
+ Score = 89.9 bits (221),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 34/142 (24%), Positives = 62/142 (44%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGFSGS G  +V   +  A 
+Sbjct  49   RLSRLRELMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSLSK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q  +    ++R V     +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDNNWQLLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  L+   + LV     +  L
+Sbjct  167  LSETLKKNGSTLVGVQQNLVDL  188
+
+
+>sp|B8NEI6|AMPP1_ASPFN Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 
+/ JCM 12722 / SRRC 167) OX=332952 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 89.9 bits (221),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 34/142 (24%), Positives = 62/142 (44%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGFSGS G  +V   +  A 
+Sbjct  49   RLSRLRELMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSLSK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q  +    ++R V     +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDNNWQLLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  L+   + LV     +  L
+Sbjct  167  LSETLKKNGSTLVGVQQNLVDL  188
+
+
+>sp|B8M9W2|AMPP1_TALSN Probable Xaa-Pro aminopeptidase P OS=Talaromyces 
+stipitatus (strain ATCC 10500 / CBS 375.48 / QM 6759 
+/ NRRL 1006) OX=441959 GN=ampp PE=3 SV=1
+Length=657
+
+ Score = 88.7 bits (218),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 35/133 (26%), Positives = 57/133 (43%), Gaps = 18/133 (14%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +  + LD  ++                   ++SGF+GS G  ++      A 
+Sbjct  53   RLAQLRELMKQNNLDVYIVPSEDSHQSEYIAHCDARREFISGFTGSAGTAVISTT--AAA  110
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q       ++R    V  +    A +A  GK +G +  V+T      
+Sbjct  111  LSTDGRYFNQAAKQLDSNWKLLKRGLEGVLTWQEWTAEQAEGGKIVGVDPSVITAASARK  170
+
+Query  107  LAGALEGKNTELV  119
+            L+  LE   ++LV
+Sbjct  171  LSETLEKGGSKLV  183
+
+
+>sp|C7Z9Z7|AMPP1_NECH7 Probable Xaa-Pro aminopeptidase P OS=Nectria 
+haematococca (strain 77-13-4 / ATCC MYA-4622 / FGSC 9596 
+/ MPVI) OX=660122 GN=AMPP PE=3 SV=1
+Length=619
+
+ Score = 88.7 bits (218),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 31/106 (29%), Positives = 50/106 (47%), Gaps = 7/106 (7%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V  +   A LATDGRY  QAA+Q       +++    V  +    A
+Sbjct  46   EHISGFTGSAGCAVVTLE--TAALATDGRYFNQAAAQLDSNWTLLKQGLQDVPTWQEWSA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGK-NTELVRASGTVESL  128
+             ++  GK +G +  +++      LA  +      ELV   G +  L
+Sbjct  104  EQSSGGKNVGVDPSLISGATAKNLAEKIRKSGGAELVPIEGNLVDL  149
+
+
+>sp|Q2H8T2|AMPP1_CHAGB Probable Xaa-Pro aminopeptidase P OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 
+/ NBRC 6347 / NRRL 1970) OX=306901 GN=AMPP PE=3 SV=1
+Length=624
+
+ Score = 88.7 bits (218),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 30/131 (23%), Positives = 57/131 (44%), Gaps = 20/131 (15%)
+
+Query  2    ARRDKLKAQIAASGLD--AXLISDLIN------------VRYLSGFSGSNGALLVFADER  47
+            AR   L++ +  +G+D    ++    +              ++SGF+GS G  +V  D+ 
+Sbjct  8    ARLTTLRSLMKENGVDIYGIIVPSEDSHASEYIAPCDGRRAFISGFTGSAGTAVVTQDK-  66
+
+Query  48   DAVLATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAGEAGVGK-LGFESHVVTVDG  103
+             A LATDGRY  QA  Q       ++   + V  +    A  +  GK +G +  +++   
+Sbjct  67   -AALATDGRYFNQAGKQLDGNWHLLKTGLQDVPTWQDWTAEASAGGKTVGVDPSLISSPI  125
+
+Query  104  LDALAGALEGK  114
+             + L  +++  
+Sbjct  126  AEKLDESIKKS  136
+
+
+>sp|Q7RYL6|AMPP1_NEUCR Probable Xaa-Pro aminopeptidase P OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=ampp PE=3 SV=2
+Length=684
+
+ Score = 88.3 bits (217),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 28/89 (31%), Positives = 47/89 (53%), Gaps = 6/89 (7%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAG  85
+            ++SGF+GS G  +V  D+  A LATDGRY  QA+ Q  +    ++   + V  +    A 
+Sbjct  116  FISGFTGSAGTAVVTLDK--AALATDGRYFNQASKQLDENWHLLKTGLQDVPTWQEWTAD  173
+
+Query  86   EAGVGK-LGFESHVVTVDGLDALAGALEG  113
+            E+  GK +G +  +++    D L G ++ 
+Sbjct  174  ESAGGKSVGIDPTLISPAVADKLDGDIKK  202
+
+
+>sp|Q0CDB3|AMPP1_ASPTN Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=ampp 
+PE=3 SV=1
+Length=654
+
+ Score = 88.3 bits (217),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 30/95 (32%), Positives = 48/95 (51%), Gaps = 6/95 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRA  84
+             ++SGFSGS G  +V   +  A L+TDGRY  QA+ Q     V ++R    V  +     
+Sbjct  86   EFISGFSGSAGTAIVSLTK--AALSTDGRYFNQASKQLDSNWVLLKRGVEGVQTWQEWTT  143
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTEL  118
+             +A  GK +G +  ++T  G  +L+  L+   + L
+Sbjct  144  EQAEGGKVVGVDPALITASGARSLSETLQKNGSSL  178
+
+
+>sp|B6QG01|AMPP1_TALMQ Probable Xaa-Pro aminopeptidase P OS=Talaromyces 
+marneffei (strain ATCC 18224 / CBS 334.59 / QM 7333) 
+OX=441960 GN=ampp PE=3 SV=1
+Length=657
+
+ Score = 88.0 bits (216),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 33/133 (25%), Positives = 57/133 (43%), Gaps = 18/133 (14%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +  + LD  ++                   ++SGF+GS G  ++ +    A 
+Sbjct  53   RLVQLRELMKRNNLDVYIVPSEDSHQSEYIAHCDARREFISGFTGSAGTAVISST--AAA  110
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q       ++R    V  +      +A  GK +G +  V+T      
+Sbjct  111  LSTDGRYFNQAAKQLDSNWTLLKRGLEGVPTWQEWTTEQAEGGKTVGVDPSVITAASARK  170
+
+Query  107  LAGALEGKNTELV  119
+            L+  LE   ++L+
+Sbjct  171  LSETLEKSGSKLI  183
+
+
+>sp|A6R035|AMPP1_AJECN Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain NAm1 / WU24) OX=339724 GN=AMPP 
+PE=3 SV=1
+Length=617
+
+ Score = 87.6 bits (215),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 31/142 (22%), Positives = 60/142 (42%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGF+GS G  +V   +  A 
+Sbjct  9    RLARLRELMQERKVDVYIVPSEDSHQSEYIAHCDGRREFISGFTGSAGCAIVSMTK--AA  66
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q     + ++R    +  +    A +A  GK +G +  ++T      
+Sbjct  67   LSTDGRYFNQAAKQLDSNWILLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITAFDARN  126
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  ++     L+     +  L
+Sbjct  127  LSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|A2QGR5|AMPP1_ASPNC Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=ampp 
+PE=3 SV=1
+Length=614
+
+ Score = 87.6 bits (215),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 34/142 (24%), Positives = 61/142 (43%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++    + +            ++SGFSGS G  ++   +  A 
+Sbjct  9    RLTRLRQLMQERKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIISMTK--AA  66
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q       ++R V     +      +A  GK +G +  +VT  G  +
+Sbjct  67   LSTDGRYFNQASKQLDSNWALLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALVTPAGARS  126
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+  L+   + LV     +  L
+Sbjct  127  LSETLKKNGSSLVGVEQNLVDL  148
+
+
+>sp|E3S7K9|AMPP1_PYRTT Probable Xaa-Pro aminopeptidase P OS=Pyrenophora 
+teres f. teres (strain 0-1) OX=861557 GN=ampp PE=3 
+SV=1
+Length=656
+
+ Score = 87.2 bits (214),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 31/93 (33%), Positives = 46/93 (49%), Gaps = 6/93 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAG  85
+            Y+SGF+GS G  ++  ++  A L+TDGRY  QA  Q       +++    V       A 
+Sbjct  89   YISGFTGSAGYAVITHEK--AALSTDGRYFNQAEKQLDSNWELLKQGIQDVPTIQQWTAD  146
+
+Query  86   EAGVGK-LGFESHVVTVDGLDALAGALEGKNTE  117
+            +AG GK +G +  VVT      LA  ++ K  E
+Sbjct  147  QAGGGKVVGVDPSVVTAGDARKLAEKIKKKGGE  179
+
+
+>sp|D1ZKF3|AMPP1_SORMK Probable Xaa-Pro aminopeptidase P OS=Sordaria 
+macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) 
+/ K-hell) OX=771870 GN=AMPP PE=3 SV=1
+Length=614
+
+ Score = 87.2 bits (214),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 28/89 (31%), Positives = 47/89 (53%), Gaps = 6/89 (7%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAG  85
+            ++SGFSGS G  +V  D+  A LATDGRY  QA+ Q  +    ++   + V  +    A 
+Sbjct  46   FISGFSGSAGTAVVTLDK--AALATDGRYFNQASKQLDENWHLLKTGLQDVPTWQEWTAD  103
+
+Query  86   EAGVGK-LGFESHVVTVDGLDALAGALEG  113
+            E+  GK +G +  +++    + L G ++ 
+Sbjct  104  ESAGGKTVGIDPTLISPAVAEKLNGDIKK  132
+
+
+>sp|B2VUU7|AMPP1_PYRTR Probable Xaa-Pro aminopeptidase P OS=Pyrenophora 
+tritici-repentis (strain Pt-1C-BFP) OX=426418 GN=ampp 
+PE=3 SV=1
+Length=594
+
+ Score = 86.8 bits (213),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 34/119 (29%), Positives = 52/119 (44%), Gaps = 14/119 (12%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            R  +L+  +    +D           Y+SGF+GS G  ++  D+  A L+TDGRY  QA 
+Sbjct  9    RLAELRKLMKERNVDIY--------TYISGFTGSAGYAVITHDK--AALSTDGRYFNQAE  58
+
+Query  63   SQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNTE  117
+             Q       +++    V       A +A  GK +G +  VVT      LA  ++ K  E
+Sbjct  59   KQLDSNWELLKQGIQDVPTIQEWTADQAEGGKVVGVDPSVVTAGDARKLAEKIKKKGGE  117
+
+
+>sp|A4RF35|AMPP1_MAGO7 Probable Xaa-Pro aminopeptidase P OS=Magnaporthe 
+oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) 
+OX=242507 GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 86.4 bits (212),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 33/106 (31%), Positives = 54/106 (51%), Gaps = 7/106 (7%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGFSGS G  +V  D+  A LATDGRY  QAA++  +    +++    V  +    A
+Sbjct  46   EFISGFSGSAGTAVVTNDK--AALATDGRYFNQAATELDNNWELLKQGQPDVPTWQEWTA  103
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGK-NTELVRASGTVESL  128
+             +A  GK +G +  +++     AL   ++ K   +LV  S  +  L
+Sbjct  104  DQAAGGKTVGVDPTLLSSSEAKALQEKIKSKGGNDLVAISDNLVDL  149
+
+
+>sp|Q5AVF0|AMPP1_EMENI Probable Xaa-Pro aminopeptidase P OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 
+/ NRRL 194 / M139) OX=227321 GN=ampp PE=3 SV=2
+Length=654
+
+ Score = 85.6 bits (210),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 32/105 (30%), Positives = 51/105 (49%), Gaps = 6/105 (6%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRA  84
+             ++SGFSGS G  ++  +E  A L+TDGRY  QAA Q  +    ++R    V        
+Sbjct  86   EFISGFSGSAGTAIISLNE--AALSTDGRYFNQAAKQLDNNWTLLKRGVEGVPTSQEWIT  143
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTVESL  128
+             +A  GK +G +  ++T     +L+ AL+     L+  S  +  L
+Sbjct  144  QQAEGGKVVGVDPALITGAAARSLSDALQKSGASLIGVSQNLVDL  188
+
+
+>sp|C5FHR9|AMPP1_ARTOC Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+otae (strain ATCC MYA-4605 / CBS 113480) OX=554155 
+GN=AMPP PE=3 SV=1
+Length=624
+
+ Score = 85.3 bits (209),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 34/133 (26%), Positives = 59/133 (44%), Gaps = 18/133 (14%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERDAV  50
+            R  KL+  +  + +D  ++    + +            ++SGF+GS G  +V   +  A 
+Sbjct  52   RLAKLRELMKQNKVDVYIVPSEDSHQSEYIAPCDGRRAFISGFTGSAGCAIVSMSK--AA  109
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY +QAA Q       ++R    V  +    A +A  GK +G +  ++T      
+Sbjct  110  LSTDGRYFSQAAKQLDANWKLLKRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAADARK  169
+
+Query  107  LAGALEGKNTELV  119
+            L+  L+     LV
+Sbjct  170  LSQTLKATGGSLV  182
+
+
+>sp|E4USI8|AMPP1_ARTGP Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+gypseum (strain ATCC MYA-4604 / CBS 118893) OX=535722 
+GN=AMPP PE=3 SV=1
+Length=635
+
+ Score = 85.3 bits (209),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 33/121 (27%), Positives = 55/121 (45%), Gaps = 14/121 (12%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            R  KL+  +A + +D           ++S F+GS G  +V   +  A L+TDGRY +QAA
+Sbjct  52   RLAKLRELMAQNKVDVY--------TFISSFTGSAGCAIVSMSK--AALSTDGRYFSQAA  101
+
+Query  63   SQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNTEL  118
+             Q       ++R    V  +    A +A  GK +G +  ++T      L+  L+     L
+Sbjct  102  KQLDSNWTLLKRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAADARKLSQTLKTTGGSL  161
+
+Query  119  V  119
+            +
+Sbjct  162  I  162
+
+
+>sp|C9SR45|AMPP1_VERA1 Probable Xaa-Pro aminopeptidase P OS=Verticillium 
+alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 
+10136) OX=526221 GN=AMPP PE=3 SV=1
+Length=612
+
+ Score = 85.3 bits (209),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 28/107 (26%), Positives = 48/107 (45%), Gaps = 17/107 (16%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  KL+  + A  +D  ++                   ++SGFSGS G  ++  D+  
+Sbjct  7    SGRLSKLRELMRAHSIDVYVVPSEDSHSSEYIAACDARREFISGFSGSAGCAVITLDK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGKL  92
+            A LATDGRY  QA+ Q     + +++    V  +    A ++  GK+
+Sbjct  65   AALATDGRYFNQASKQLDHNWLLLKQGLQDVPTWQDWSAEQSAGGKI  111
+
+
+>sp|Q0UFY4|AMPP1_PHANO Probable Xaa-Pro aminopeptidase P OS=Phaeosphaeria 
+nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) 
+OX=321614 GN=AMPP PE=3 SV=1
+Length=650
+
+ Score = 84.9 bits (208),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 35/119 (29%), Positives = 51/119 (43%), Gaps = 14/119 (12%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            R  +L+  +    +D           Y+SGF+GS G  +V  D+  A LATDGRY  QA 
+Sbjct  66   RLAELRKLMKERKVDVY--------TYISGFTGSAGYAVVTHDK--AALATDGRYFNQAE  115
+
+Query  63   SQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNTE  117
+             Q       +++    V       A +   GK +G +  VVT      LA  ++ K  E
+Sbjct  116  KQLDSNWELLKQGIQDVPTIQEWTADQVEGGKVVGVDPSVVTGADARKLAEKIKKKGGE  174
+
+
+>sp|E9E9B2|AMPP1_METAQ Probable Xaa-Pro aminopeptidase P OS=Metarhizium 
+acridum (strain CQMa 102) OX=655827 GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 84.5 bits (207),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 32/102 (31%), Positives = 48/102 (47%), Gaps = 12/102 (12%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V  +   A LATDGRY  QAA Q       +++    V  +    A
+Sbjct  44   EFISGFTGSAGCAIVTLE--AAALATDGRYFNQAAKQLDGNWTLLKQGLQDVPTWQEWAA  101
+
+Query  85   GEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRASGTVE  126
+             ++  GK+      V VD    L G+   K  + VR +G  +
+Sbjct  102  SQSAGGKI------VAVDP-SLLPGSAAKKLNDQVRKAGGAD  136
+
+
+>sp|E9EUE6|AMPP1_METRA Probable Xaa-Pro aminopeptidase P OS=Metarhizium 
+robertsii (strain ARSEF 23 / ATCC MYA-3075) OX=655844 
+GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 83.3 bits (204),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 32/102 (31%), Positives = 47/102 (46%), Gaps = 12/102 (12%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGF+GS G  +V  +   A LATDGRY  QAA Q       +++    V  +    A
+Sbjct  44   EFMSGFTGSAGCAIVTLE--AAALATDGRYFNQAAKQLDGNWTLLKQGLQDVPTWQEWAA  101
+
+Query  85   GEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRASGTVE  126
+             ++  GK       V VD    L G+   K  + VR +G  +
+Sbjct  102  SQSAGGK------TVAVDP-SLLPGSAAKKLNDQVRKAGGAD  136
+
+
+>sp|O54975|XPP1_RAT Xaa-Pro aminopeptidase 1 OS=Rattus norvegicus 
+OX=10116 GN=Xpnpep1 PE=1 SV=1
+Length=623
+
+ Score = 83.3 bits (204),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 40/101 (40%), Gaps = 6/101 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAG  85
+            ++SGF GS G  ++   E  A + TDGRY  QAA Q  +    ++  +            
+Sbjct  52   FVSGFDGSAGTAIIT--EEHAAMWTDGRYFLQAAKQMDNNWTLMKMGLKDTPTQEDWLVS  109
+
+Query  86   EAGVG-KLGFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+                G ++G +  ++  D    +A  L      LV     +
+Sbjct  110  VLPEGSRVGVDPLIIPTDYWKKMAKVLRSAGHHLVPVKENL  150
+
+
+>sp|Q6P1B1|XPP1_MOUSE Xaa-Pro aminopeptidase 1 OS=Mus musculus 
+OX=10090 GN=Xpnpep1 PE=1 SV=1
+Length=623
+
+ Score = 83.3 bits (204),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 40/101 (40%), Gaps = 6/101 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAG  85
+            ++SGF GS G  ++   E  A + TDGRY  QAA Q  +    ++  +            
+Sbjct  52   FVSGFDGSAGTAIIT--EEHAAMWTDGRYFLQAAKQMDNNWTLMKMGLKDTPTQEDWLVS  109
+
+Query  86   EAGVG-KLGFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+                G ++G +  ++  D    +A  L      LV     +
+Sbjct  110  VLPEGSRVGVDPLIIPTDYWKKMAKVLRSAGHHLVPVKENL  150
+
+
+>sp|D5GAC6|AMPP1_TUBMM Probable Xaa-Pro aminopeptidase P OS=Tuber 
+melanosporum (strain Mel28) OX=656061 GN=AMPP PE=3 SV=1
+Length=619
+
+ Score = 82.9 bits (203),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 32/129 (25%), Positives = 57/129 (44%), Gaps = 18/129 (14%)
+
+Query  2    ARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDA  49
+            +R  KL+  +    +D  ++                   ++SGF+GS G  +V   +  A
+Sbjct  8    SRLAKLRELMKRERVDVYVVPSEDAHSSEYICAADARRAFISGFTGSAGCAIVT--QEKA  65
+
+Query  50   VLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLD  105
+             L+TDGRY  QAA Q  +    +++    V  +    A +A  GK +G ++ V+T     
+Sbjct  66   ALSTDGRYFNQAARQLDENWELLKQGLPDVPTWQEWVAQQAEGGKNVGVDATVITAQQAK  125
+
+Query  106  ALAGALEGK  114
+            +L   ++ K
+Sbjct  126  SLETRIKKK  134
+
+
+>sp|B2AWV6|AMPP1_PODAN Probable Xaa-Pro aminopeptidase P OS=Podospora 
+anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 
+10383) OX=515849 GN=AMPP PE=3 SV=1
+Length=680
+
+ Score = 82.6 bits (202),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 28/90 (31%), Positives = 44/90 (49%), Gaps = 6/90 (7%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAG  85
+            ++SGFSGS G  +V  D+  A LATDGRY  QA+ Q       ++   + V  +      
+Sbjct  112  FISGFSGSAGTAIVTLDK--AALATDGRYFNQASKQLDSNWYLLKTGMQDVPTWQEWATQ  169
+
+Query  86   EAGVGKL-GFESHVVTVDGLDALAGALEGK  114
+            EA  GKL G +  +++    + L   ++  
+Sbjct  170  EAEGGKLIGVDPQLISSAIAEKLDEDIKNA  199
+
+
+>sp|Q9NQW7|XPP1_HUMAN Xaa-Pro aminopeptidase 1 OS=Homo sapiens 
+OX=9606 GN=XPNPEP1 PE=1 SV=3
+Length=623
+
+ Score = 81.4 bits (199),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 23/101 (23%), Positives = 39/101 (39%), Gaps = 6/101 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAG  85
+            ++SGF GS G  ++   E  A + TDGRY  QAA Q       ++  +            
+Sbjct  52   FVSGFDGSAGTAIIT--EEHAAMWTDGRYFLQAAKQMDSNWTLMKMGLKDTPTQEDWLVS  109
+
+Query  86   EAGVG-KLGFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+                G ++G +  ++  D    +A  L      L+     +
+Sbjct  110  VLPEGSRVGVDPLIIPTDYWKKMAKVLRSAGHHLIPVKENL  150
+
+
+>sp|Q1JPJ2|XPP1_BOVIN Xaa-Pro aminopeptidase 1 OS=Bos taurus OX=9913 
+GN=XPNPEP1 PE=2 SV=1
+Length=623
+
+ Score = 80.6 bits (197),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 24/101 (24%), Positives = 39/101 (39%), Gaps = 6/101 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAG  85
+            ++SGF GS G  +V   E  A + TDGRY  QAA Q       ++  +            
+Sbjct  52   FVSGFDGSAGTAIVT--EEHAAMWTDGRYFLQAAKQMDSNWTLMKMGLKDTPTQEDWLVS  109
+
+Query  86   EAGVG-KLGFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+                G ++G +  ++  D    +A  L      L+     +
+Sbjct  110  VLPEGSRVGVDPLIIPTDYWKKMAKVLRSAGHHLIPVKDNL  150
+
+
+>sp|Q9VJG0|XPP_DROME Xaa-Pro aminopeptidase ApepP OS=Drosophila 
+melanogaster OX=7227 GN=ApepP PE=1 SV=1
+Length=613
+
+ Score = 80.6 bits (197),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 41/101 (41%), Gaps = 6/101 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAG  85
+            ++SGF GS G  ++  +   A+L TDGRY  QA  Q     V +   +       A  A 
+Sbjct  52   FVSGFDGSAGTAVITTE--TALLWTDGRYYQQAEKQLDSNWVLMRDGLSATPSIGAWLAK  109
+
+Query  86   EAGVGK-LGFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+                G  +G +  +++      +   L     +LV   G +
+Sbjct  110  NLPKGSFVGVDPRLLSFRVWKPIETELSSAECQLVPIEGNL  150
+
+
+>sp|D4D891|AMPP1_TRIVH Probable Xaa-Pro aminopeptidase P OS=Trichophyton 
+verrucosum (strain HKI 0517) OX=663202 GN=AMPP PE=3 
+SV=2
+Length=698
+
+ Score = 79.5 bits (194),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 26/82 (32%), Positives = 41/82 (50%), Gaps = 6/82 (7%)
+
+Query  25   INVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIER---AVGRYLA  81
+            I   ++S F+GS G  +V   +  A L+TDGRY +QAA Q       ++R    V  +  
+Sbjct  122  ITAAFISSFTGSAGCAIVSMSK--AALSTDGRYFSQAAKQLDSNWTLLKRGVEGVPTWEE  179
+
+Query  82   GRAGEAGVGK-LGFESHVVTVD  102
+              A +A  GK +G +  ++T  
+Sbjct  180  WTAEQAENGKVVGVDPSLITAG  201
+
+
+>sp|D4ARJ9|AMPP1_ARTBC Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+benhamiae (strain ATCC MYA-4681 / CBS 112371) OX=663331 
+GN=AMPP PE=3 SV=1
+Length=698
+
+ Score = 79.1 bits (193),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 26/88 (30%), Positives = 42/88 (48%), Gaps = 6/88 (7%)
+
+Query  25   INVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIER---AVGRYLA  81
+            I   ++S F+GS G  +V   +  A L+TDGRY +QAA Q       ++R    V  +  
+Sbjct  122  ITAAFISSFTGSAGCAIVSMSK--AALSTDGRYFSQAAKQLDANWTLLKRGVEGVPTWEE  179
+
+Query  82   GRAGEAGVGK-LGFESHVVTVDGLDALA  108
+              A +A  GK +G +  ++T       +
+Sbjct  180  WTAEQAENGKVVGVDPSLITAGENLQYS  207
+
+
+>sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditis 
+elegans OX=6239 GN=app-1 PE=1 SV=1
+Length=616
+
+ Score = 75.6 bits (184),  Expect = 9e-16, Method: Composition-based stats.
+ Identities = 31/104 (30%), Positives = 48/104 (46%), Gaps = 7/104 (7%)
+
+Query  27   VRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA----VGRYLAG  82
+            V++LSGFSGSN  ++V   +R+A+L TDGRY TQA +Q       + +         +  
+Sbjct  51   VKFLSGFSGSNAYVVVT--DREALLWTDGRYFTQAGNQLDSNSWKLMKQGQPDSITVVDW  108
+
+Query  83   RAGEAGVGKL-GFESHVVTVDGLDALAGALEGKNTELVRASGTV  125
+               E   G + GF+  + T D        L+    + V   G +
+Sbjct  109  LVRELERGSVIGFDPTLSTFDAGSKTFKRLKAAGLQPVSIPGNL  152
+
+
+>sp|A8P5H7|AMPP1_COPC7 Probable Xaa-Pro aminopeptidase P OS=Coprinopsis 
+cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / 
+FGSC 9003) OX=240176 GN=AMPP PE=3 SV=1
+Length=622
+
+ Score = 75.6 bits (184),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 27/96 (28%), Positives = 45/96 (47%), Gaps = 6/96 (6%)
+
+Query  29   YLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERAVGRYLAGR----A  84
+            ++SGF+GS G  ++  D+  A L TDGRY  QA  Q       +++ +      +     
+Sbjct  52   FISGFNGSAGCAVITLDK--AYLFTDGRYFLQAEKQLDSNWTLMKQGLPDVPTWQDFLHK  109
+
+Query  85   GEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVR  120
+               G  K+G ++ ++T +    L   L  K +ELV 
+Sbjct  110  TLDGSLKIGIDATIITEEDAAGLRKNLAPKKSELVP  145
+
+
+>sp|B0DZL3|AMPP1_LACBS Probable Xaa-Pro aminopeptidase P OS=Laccaria 
+bicolor (strain S238N-H82 / ATCC MYA-4686) OX=486041 
+GN=AMPP PE=3 SV=1
+Length=642
+
+ Score = 75.2 bits (183),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 30/139 (22%), Positives = 56/139 (40%), Gaps = 18/139 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD----------LINVR--YLSGFSGSNGALLVFADERDAV  50
+            R  KL+  +    + A ++              + R  ++SGF GS G  ++  D+  A 
+Sbjct  45   RLAKLRELMKQHSVQAFVVPSEDQHSSEYLANCDKRRAFISGFDGSAGCAIITTDK--AY  102
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGV-GKLGFESHVVTVDGLDA  106
+            L TDGRY  QA  Q       +++    V  +        G   ++G ++ ++     ++
+Sbjct  103  LFTDGRYFLQAEKQLDKNWKLMKQGLPDVPTWQDFLYKNLGPHTQIGIDATLLAASDAES  162
+
+Query  107  LAGALEGKNTELVRASGTV  125
+            L   L  K ++LV     +
+Sbjct  163  LTKQLTPKYSKLVSLKENL  181
+
+
+>sp|Q54G06|XPP1_DICDI Xaa-Pro aminopeptidase 1 OS=Dictyostelium 
+discoideum OX=44689 GN=xpnpep1 PE=3 SV=1
+Length=627
+
+ Score = 74.5 bits (181),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 56/128 (44%), Gaps = 18/128 (14%)
+
+Query  3    RRDKLKAQIAASGLDAXLI-------SDLINVR-----YLSGFSGSNGALLVFADERDAV  50
+            + +KL+  +    L A ++       S+ I V+     Y+SGFSGS G +++  D +  +
+Sbjct  25   KVEKLRTFMKDQSLSAYIVPSEDAHQSEYICVKDKRREYISGFSGSAGCVVITLDNQ--L  82
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGV-GKLGFESHVVTVDGLDA  106
+            L TDGRY  QA  +       ++  V                  K+G +S +++    D+
+Sbjct  83   LWTDGRYWLQAEKELESNWKIMKDRVVGEPTIQDWLLSNLNKENKVGIDSRLISKGYYDS  142
+
+Query  107  LAGALEGK  114
+            +   L+ K
+Sbjct  143  MKLVLKEK  150
+
+
+>sp|E5ABQ8|AMPP1_LEPMJ Probable Xaa-Pro aminopeptidase P OS=Leptosphaeria 
+maculans (strain JN3 / isolate v23.1.3 / race Av1-4-5-6-7-8) 
+OX=985895 GN=AMPP PE=3 SV=1
+Length=605
+
+ Score = 71.8 bits (174),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 31/124 (25%), Positives = 50/124 (40%), Gaps = 11/124 (9%)
+
+Query  3    RRDKLKAQIAASGLDAXLI--SDLINVRYLS---GFSGSNGALLVFADERDAVLATDGRY  57
+            R  +L+  +    +D  ++   D     Y++      GS G  ++  D+  A LATDGRY
+Sbjct  9    RLAELRKLMKERNVDIYMVPSEDSHQSEYIAPCDARRGSAGYAVITHDK--AALATDGRY  66
+
+Query  58   RTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEG  113
+              QA  Q       +++    V       A +   GK +  +  VVT      LA  ++ 
+Sbjct  67   FNQAEKQLDGNWELLKQGIQDVPTIQDWTADQVEGGKVVAVDPSVVTAADARKLADKIKK  126
+
+Query  114  KNTE  117
+            K  E
+Sbjct  127  KGGE  130
+
+
+>sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana 
+OX=3702 GN=APP1 PE=1 SV=1
+Length=645
+
+ Score = 70.6 bits (171),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 29/96 (30%), Positives = 46/96 (48%), Gaps = 8/96 (8%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA----VGRYLAGR  83
+             ++SGFSGS G  L+   +++A L TDGRY  QA  Q  D    +       V  +++  
+Sbjct  43   EFVSGFSGSAGLALIT--KKEARLWTDGRYFLQALQQLSDEWTLMRMGEDPLVEVWMSDN  100
+
+Query  84   AGEAGVGKLGFESHVVTVDGLDALAGALEGKNTELV  119
+              E     +G +S  V+VD  +    +   KN +L+
+Sbjct  101  LPEEA--NIGVDSWCVSVDTANRWGKSFAKKNQKLI  134
+
+
+>sp|Q09795|YAA1_SCHPO Uncharacterized peptidase C22G7.01c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC22G7.01c PE=3 SV=4
+Length=598
+
+ Score = 66.8 bits (161),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 30/125 (24%), Positives = 51/125 (41%), Gaps = 18/125 (14%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD----------LINVR--YLSGFSGSNGALLVFADERDAV  50
+            R +KL+  +   G    ++              + R  ++SGF GS G  ++   E  A 
+Sbjct  8    RLNKLRELMKERGYTLYVVPSEDAHSSEYTCDADARRAFISGFDGSAGCAVIG--ETSAA  65
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVG-KLGFESHVVTVDGLDA  106
+            L TDGRY  QA+ Q  +    +++    V  +            K+G +S ++T     A
+Sbjct  66   LFTDGRYFNQASQQLDENWTLMKQGFTGVPTWEEYCTQMTKCNEKVGIDSSLITFPAAKA  125
+
+Query  107  LAGAL  111
+            L  +L
+Sbjct  126  LRESL  130
+
+
+>sp|Q07825|FRA1_YEAST Putative Xaa-Pro aminopeptidase FRA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=FRA1 PE=1 SV=1
+Length=749
+
+ Score = 65.2 bits (157),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 26/125 (21%), Positives = 46/125 (37%), Gaps = 28/125 (22%)
+
+Query  29   YLSGFSGSNGALLVFAD---------ERDAVLATDGRYRTQAASQAPDLEVAIERAV--G  77
+            ++SGFSGS G   +  D         +  ++L+TDGRY  QA  +       + +     
+Sbjct  146  FISGFSGSAGVACITRDLLNFNDDHPDGKSILSTDGRYFNQARQELDYNWTLLRQNEDPI  205
+
+Query  78   RYLAGRAGEA-----GVG-------KLGFESHVVTVDGLDALAGAL-----EGKNTELVR  120
+             +      EA     G+G       K+G +  ++T +   +    +          ELV 
+Sbjct  206  TWQEWCVREALEMAKGLGNKEGMVLKIGIDPKLITFNDYVSFRKMIDTKYDAKGKVELVP  265
+
+Query  121  ASGTV  125
+                +
+Sbjct  266  VEENL  270
+
+
+>sp|A6RK67|AMPP1_BOTFB Probable Xaa-Pro aminopeptidase P OS=Botryotinia 
+fuckeliana (strain B05.10) OX=332648 GN=ampp PE=3 
+SV=1
+Length=601
+
+ Score = 59.5 bits (142),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 23/106 (22%), Positives = 45/106 (42%), Gaps = 19/106 (18%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGFSGS G  +V  ++  A LATD            D  + +++    V  +    A
+Sbjct  46   EFISGFSGSAGCAVVTLEK--AALATD------------DNWLLLKQGLQDVPTWQEWAA  91
+
+Query  85   GEAGVGK-LGFESHVVTVDGLDALAGALEGK-NTELVRASGTVESL  128
+             ++  GK +G +  +++      L   ++ +   +LV     +  L
+Sbjct  92   EQSENGKVVGVDPTIMSASDARKLTEKIKKRGGNDLVAVEENLVDL  137
+
+
+>sp|A7E4T8|AMPP1_SCLS1 Probable Xaa-Pro aminopeptidase P OS=Sclerotinia 
+sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) OX=665079 
+GN=ampp PE=3 SV=1
+Length=601
+
+ Score = 58.7 bits (140),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 26/106 (25%), Positives = 46/106 (43%), Gaps = 19/106 (18%)
+
+Query  28   RYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRA  84
+             ++SGFSGS G  +V  D+  A LATD            D  + +++    V  +    A
+Sbjct  46   EFISGFSGSAGCAVVTLDK--AALATD------------DNWLLLKQGLQDVPTWQEWAA  91
+
+Query  85   GEAGVGK-LGFESHVVTV-DGLDALAGALEGKNTELVRASGTVESL  128
+             ++  GK +G +S +++  D    L    +   ++LV     +  L
+Sbjct  92   EQSESGKVVGVDSTIISAPDARKLLEKVKKRGGSDLVAVEENLVDL  137
+
+
+>sp|P75313|AMPP_MYCPN Putative Xaa-Pro aminopeptidase OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 GN=pepP 
+PE=3 SV=1
+Length=354
+
+ Score = 45.6 bits (106),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 25/100 (25%), Positives = 39/100 (39%), Gaps = 2/100 (2%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            +   L   +  +  DA LI    N  +L+GF  S G L+V   ++   L  DGRY   A 
+Sbjct  8    KLAVLHKLLQDNKADAILIGSDQNRFWLTGFPSSAGWLVVH--KQRVNLFIDGRYFEAAK  65
+
+Query  63   SQAPDLEVAIERAVGRYLAGRAGEAGVGKLGFESHVVTVD  102
+            +    L         + +     + GV  L  E   +T +
+Sbjct  66   TAIDPLVKVELFTTYKQVKALCEQVGVKHLLIEGDYLTFN  105
+
+
+>sp|P47566|AMPP_MYCGE Putative Xaa-Pro aminopeptidase OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=pepP PE=3 SV=1
+Length=354
+
+ Score = 42.9 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/61 (31%), Positives = 30/61 (49%), Gaps = 2/61 (3%)
+
+Query  3   RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+           +   LK  +  +  DA LI    N  +L+ F  S G L++ +++  A L  DGRY   A 
+Sbjct  8   KITVLKDLLKTNKADAILIGSDQNRFWLTNFPSSAGWLIITSNK--AKLFIDGRYYEAAR  65
+
+Query  63  S  63
+           +
+Sbjct  66  N  66
+
+
+>sp|P76524|YPDF_ECOLI Aminopeptidase YpdF OS=Escherichia coli 
+(strain K12) OX=83333 GN=ypdF PE=1 SV=1
+Length=361
+
+ Score = 41.0 bits (94),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 26/136 (19%), Positives = 50/136 (37%), Gaps = 12/136 (9%)
+
+Query  4    RDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAAS  63
+               L+  + A  LDA L+S   N +   G S  +G +++      A +  D RY  +  +
+Sbjct  4    LASLRDWLKAQQLDAVLLSSRQNKQPHLGISTGSGYVVIS--RESAHILVDSRYYVEVEA  61
+
+Query  64   QAPDLEVAI---ERAVGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAGALEGKNT----  116
+            +A   ++ +      +   +     +  +  LGFE   V+ +        L  K      
+Sbjct  62   RAQGYQLHLLDATNTLTTIVNQIIADEQLQTLGFEGQQVSWETAHRWQSELNAKLVSATP  121
+
+Query  117  ---ELVRASGTVESLR  129
+                 ++    VE +R
+Sbjct  122  DVLRQIKTPEEVEKIR  137
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.122    0.291    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0373    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 3
+
+
+Query= 5e2c_A
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|C6HSY3|AMPP1_AJECH Probable Xaa-Pro aminopeptidase P OS=Ajello...  176     5e-52
+sp|C0SCV1|AMPP1_PARBP Probable Xaa-Pro aminopeptidase P OS=Paraco...  176     7e-52
+sp|C1GEY4|AMPP1_PARBD Probable Xaa-Pro aminopeptidase P OS=Paraco...  174     2e-51
+sp|C0NDZ7|AMPP1_AJECG Probable Xaa-Pro aminopeptidase P OS=Ajello...  174     2e-51
+sp|C5P7J2|AMPP1_COCP7 Probable Xaa-Pro aminopeptidase P OS=Coccid...  174     2e-51
+sp|E9CTR7|AMPP1_COCPS Probable Xaa-Pro aminopeptidase P OS=Coccid...  174     3e-51
+sp|A1CAQ1|AMPP1_ASPCL Probable Xaa-Pro aminopeptidase P OS=Asperg...  174     4e-51
+sp|A6R035|AMPP1_AJECN Probable Xaa-Pro aminopeptidase P OS=Ajello...  173     5e-51
+sp|C1H978|AMPP1_PARBA Probable Xaa-Pro aminopeptidase P OS=Paraco...  173     6e-51
+sp|A1DF27|AMPP1_NEOFI Probable Xaa-Pro aminopeptidase P OS=Neosar...  173     1e-50
+sp|Q2U7S5|AMPP1_ASPOR Probable Xaa-Pro aminopeptidase P OS=Asperg...  171     4e-50
+sp|B8NEI6|AMPP1_ASPFN Probable Xaa-Pro aminopeptidase P OS=Asperg...  171     4e-50
+sp|B6HQC9|AMPP1_PENRW Probable Xaa-Pro aminopeptidase P OS=Penici...  171     4e-50
+sp|C5K105|AMPP1_BLAGS Probable Xaa-Pro aminopeptidase P OS=Blasto...  171     5e-50
+sp|C5GXZ9|AMPP1_AJEDR Probable Xaa-Pro aminopeptidase P OS=Ajello...  171     5e-50
+sp|Q4WUD3|AMPP1_ASPFU Probable Xaa-Pro aminopeptidase P OS=Neosar...  171     7e-50
+sp|B0Y3V7|AMPP1_ASPFC Probable Xaa-Pro aminopeptidase P OS=Neosar...  171     7e-50
+sp|A2QGR5|AMPP1_ASPNC Probable Xaa-Pro aminopeptidase P OS=Asperg...  169     2e-49
+sp|B6QG01|AMPP1_TALMQ Probable Xaa-Pro aminopeptidase P OS=Talaro...  168     5e-49
+sp|C5FHR9|AMPP1_ARTOC Probable Xaa-Pro aminopeptidase P OS=Arthro...  168     6e-49
+sp|B8M9W2|AMPP1_TALSN Probable Xaa-Pro aminopeptidase P OS=Talaro...  168     8e-49
+sp|E3S7K9|AMPP1_PYRTT Probable Xaa-Pro aminopeptidase P OS=Pyreno...  166     3e-48
+sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Collet...  166     4e-48
+sp|Q0CDB3|AMPP1_ASPTN Probable Xaa-Pro aminopeptidase P OS=Asperg...  163     6e-47
+sp|Q5AVF0|AMPP1_EMENI Probable Xaa-Pro aminopeptidase P OS=Emeric...  162     6e-47
+sp|B2VUU7|AMPP1_PYRTR Probable Xaa-Pro aminopeptidase P OS=Pyreno...  159     1e-45
+sp|C7Z9Z7|AMPP1_NECH7 Probable Xaa-Pro aminopeptidase P OS=Nectri...  159     1e-45
+sp|D5GAC6|AMPP1_TUBMM Probable Xaa-Pro aminopeptidase P OS=Tuber ...  157     6e-45
+sp|Q0UFY4|AMPP1_PHANO Probable Xaa-Pro aminopeptidase P OS=Phaeos...  157     7e-45
+sp|A4RF35|AMPP1_MAGO7 Probable Xaa-Pro aminopeptidase P OS=Magnap...  157     8e-45
+sp|E4USI8|AMPP1_ARTGP Probable Xaa-Pro aminopeptidase P OS=Arthro...  154     5e-44
+sp|E9E9B2|AMPP1_METAQ Probable Xaa-Pro aminopeptidase P OS=Metarh...  152     2e-43
+sp|E9EUE6|AMPP1_METRA Probable Xaa-Pro aminopeptidase P OS=Metarh...  152     5e-43
+sp|D1ZKF3|AMPP1_SORMK Probable Xaa-Pro aminopeptidase P OS=Sordar...  151     6e-43
+sp|B2AWV6|AMPP1_PODAN Probable Xaa-Pro aminopeptidase P OS=Podosp...  152     7e-43
+sp|Q7RYL6|AMPP1_NEUCR Probable Xaa-Pro aminopeptidase P OS=Neuros...  152     8e-43
+sp|E5ABQ8|AMPP1_LEPMJ Probable Xaa-Pro aminopeptidase P OS=Leptos...  150     2e-42
+sp|B0DZL3|AMPP1_LACBS Probable Xaa-Pro aminopeptidase P OS=Laccar...  147     3e-41
+sp|Q2H8T2|AMPP1_CHAGB Probable Xaa-Pro aminopeptidase P OS=Chaeto...  146     7e-41
+sp|A8P5H7|AMPP1_COPC7 Probable Xaa-Pro aminopeptidase P OS=Coprin...  145     8e-41
+sp|C9SR45|AMPP1_VERA1 Probable Xaa-Pro aminopeptidase P OS=Vertic...  142     1e-39
+sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens OX=...  140     2e-38
+sp|Q99MA2|XPP2_RAT Xaa-Pro aminopeptidase 2 OS=Rattus norvegicus ...  140     2e-38
+sp|Q09795|YAA1_SCHPO Uncharacterized peptidase C22G7.01c OS=Schiz...  138     4e-38
+sp|A6RK67|AMPP1_BOTFB Probable Xaa-Pro aminopeptidase P OS=Botryo...  135     3e-37
+sp|B1AVD1|XPP2_MOUSE Xaa-Pro aminopeptidase 2 OS=Mus musculus OX=...  136     4e-37
+sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823...  135     6e-37
+sp|O54975|XPP1_RAT Xaa-Pro aminopeptidase 1 OS=Rattus norvegicus ...  134     2e-36
+sp|Q6P1B1|XPP1_MOUSE Xaa-Pro aminopeptidase 1 OS=Mus musculus OX=...  134     2e-36
+sp|Q9NQW7|XPP1_HUMAN Xaa-Pro aminopeptidase 1 OS=Homo sapiens OX=...  133     3e-36
+sp|A7E4T8|AMPP1_SCLS1 Probable Xaa-Pro aminopeptidase P OS=Sclero...  133     4e-36
+sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana O...  132     7e-36
+sp|Q1JPJ2|XPP1_BOVIN Xaa-Pro aminopeptidase 1 OS=Bos taurus OX=99...  131     2e-35
+sp|D4D891|AMPP1_TRIVH Probable Xaa-Pro aminopeptidase P OS=Tricho...  129     2e-34
+sp|Q9VJG0|XPP_DROME Xaa-Pro aminopeptidase ApepP OS=Drosophila me...  126     9e-34
+sp|D4ARJ9|AMPP1_ARTBC Probable Xaa-Pro aminopeptidase P OS=Arthro...  126     9e-34
+sp|Q07825|FRA1_YEAST Putative Xaa-Pro aminopeptidase FRA1 OS=Sacc...  126     2e-33
+sp|Q54G06|XPP1_DICDI Xaa-Pro aminopeptidase 1 OS=Dictyostelium di...  123     2e-32
+sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus s...  119     3e-32
+sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditi...  121     6e-32
+sp|P76524|YPDF_ECOLI Aminopeptidase YpdF OS=Escherichia coli (str...  116     4e-31
+sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana O...  118     1e-30
+sp|P75313|AMPP_MYCPN Putative Xaa-Pro aminopeptidase OS=Mycoplasm...  103     4e-26
+sp|P47566|AMPP_MYCGE Putative Xaa-Pro aminopeptidase OS=Mycoplasm...  88.6    1e-20
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|C6HSY3|AMPP1_AJECH Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain H143) OX=544712 GN=AMPP PE=3 SV=1
+Length=636
+
+ Score = 176 bits (446),  Expect = 5e-52, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGF+GS G  +V   +  
+Sbjct  7    SQRLARLRELMQERKVDVYVVPSEDSHQSEYIAHCDGRREFISGFTGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    +  +    A +A  GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQAAKQLDNNWILLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITASDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  ++     L+     +  L
+Sbjct  125  RNLSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|C0SCV1|AMPP1_PARBP Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+brasiliensis (strain Pb03) OX=482561 GN=AMPP 
+PE=3 SV=2
+Length=616
+
+ Score = 176 bits (445),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  L+                   ++SGFSGS G  +V   +  
+Sbjct  7    SQRLARLRELMKERNVDVYLVPSEDSHQSEYIAPCDGRREFISGFSGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q  +  + ++R +     +    A +   GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTAEQLEGGKVVGVDPSLITASDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  ++     L+     +  L
+Sbjct  125  RSLSETIKKSGGSLLGVQENLVDL  148
+
+
+>sp|C1GEY4|AMPP1_PARBD Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+brasiliensis (strain Pb18) OX=502780 GN=AMPP 
+PE=3 SV=2
+Length=616
+
+ Score = 174 bits (442),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  L+                   ++SGFSGS G  +V   +  
+Sbjct  7    SQRLARLRELMKERNVDVYLVPSEDSHQSEYIAPCDGRREFISGFSGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q  +  + ++R +     +    A +   GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTAEQLEGGKVVGVDPSLITASDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  ++     L+     +  L
+Sbjct  125  RSLSETIKRSGGSLLGVQENLVDL  148
+
+
+>sp|C0NDZ7|AMPP1_AJECG Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain G186AR / H82 / ATCC MYA-2454 / 
+RMSCC 2432) OX=447093 GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 174 bits (442),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGF+GS G  +V   +  
+Sbjct  7    SQRLARLRELMQERKVDVYIVPSEDSHQSEYIAHCDGRREFISGFTGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    +  +    A +A  GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQAAKQLDNNWILLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITASDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  ++     L+     +  L
+Sbjct  125  RNLSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|C5P7J2|AMPP1_COCP7 Probable Xaa-Pro aminopeptidase P OS=Coccidioides 
+posadasii (strain C735) OX=222929 GN=AMPP PE=3 SV=1
+Length=651
+
+ Score = 174 bits (442),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 36/144 (25%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  KL+  +    +D  LI                   ++SGF+GS G  +V   +  
+Sbjct  46   SQRLAKLRELMKERHVDVYLIPSEDSHQSEYIAPCDARRAFISGFTGSAGCAIVSMSK--  103
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    V  +    A +A  GK +G +  ++T    
+Sbjct  104  AALSTDGRYFNQAAKQLDENWLLLKRGMENVPTWQEWTAEQAEGGKVVGVDPSLITAAEA  163
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  ++     LV     +  L
+Sbjct  164  RKLSDTIKNTGGSLVGVPDNLVDL  187
+
+
+>sp|E9CTR7|AMPP1_COCPS Probable Xaa-Pro aminopeptidase P OS=Coccidioides 
+posadasii (strain RMSCC 757 / Silveira) OX=443226 
+GN=AMPP PE=3 SV=1
+Length=611
+
+ Score = 174 bits (440),  Expect = 3e-51, Method: Composition-based stats.
+ Identities = 36/144 (25%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  KL+  +    +D  LI                   ++SGF+GS G  +V   +  
+Sbjct  6    SQRLAKLRELMKERHVDVYLIPSEDSHQSEYIAPCDARRAFISGFTGSAGCAIVSMSK--  63
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    V  +    A +A  GK +G +  ++T    
+Sbjct  64   AALSTDGRYFNQAAKQLDENWLLLKRGMENVPTWQEWTAEQAEGGKVVGVDPSLITAAEA  123
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  ++     LV     +  L
+Sbjct  124  RKLSDTIKDTGGSLVGVPDNLVDL  147
+
+
+>sp|A1CAQ1|AMPP1_ASPCL Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 
+/ NCTC 3887 / NRRL 1) OX=344612 GN=ampp PE=3 SV=1
+Length=658
+
+ Score = 174 bits (441),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 35/144 (24%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  
+Sbjct  47   SERLARLRQLMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--  104
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q     + ++R    V  +      +A  GK +G +  ++T  G 
+Sbjct  105  AALSTDGRYFNQASKQLDSNWLLLKRGVENVPTWQEWTTEQAEGGKVVGVDPSLITAPGA  164
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +LA  L    + LV     +  L
+Sbjct  165  RSLAETLRKNGSSLVGVQQNLVDL  188
+
+
+>sp|A6R035|AMPP1_AJECN Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+capsulatus (strain NAm1 / WU24) OX=339724 GN=AMPP 
+PE=3 SV=1
+Length=617
+
+ Score = 173 bits (439),  Expect = 5e-51, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 59/144 (41%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGF+GS G  +V   +  
+Sbjct  7    SQRLARLRELMQERKVDVYIVPSEDSHQSEYIAHCDGRREFISGFTGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q     + ++R    +  +    A +A  GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQAAKQLDSNWILLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITAFDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  ++     L+     +  L
+Sbjct  125  RNLSETIKKCGGSLLGVQENLVDL  148
+
+
+>sp|C1H978|AMPP1_PARBA Probable Xaa-Pro aminopeptidase P OS=Paracoccidioides 
+lutzii (strain ATCC MYA-826 / Pb01) OX=502779 
+GN=AMPP PE=3 SV=2
+Length=616
+
+ Score = 173 bits (438),  Expect = 6e-51, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 59/144 (41%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R   L+  +    +D  L+                   ++SGFSGS G  +V   +  
+Sbjct  7    SQRLACLRELMKERKVDVYLVPSEDSHQSEYIAPCDGRREFISGFSGSAGCAIVSMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q  +  + ++R +     +    A +   GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQASKQLDNNWLLLKRGIESMPTWQEWTAEQLEGGKVVGVDPSLITASDA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  ++     L+     +  L
+Sbjct  125  RSLSETIKKSGGSLLGLQENLVDL  148
+
+
+>sp|A1DF27|AMPP1_NEOFI Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 
+/ FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=ampp 
+PE=3 SV=1
+Length=654
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 35/144 (24%), Positives = 59/144 (41%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+              R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  
+Sbjct  47   TERLARLRQLMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--  104
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q       ++R    V  +      +A  GK +G +  ++T  G 
+Sbjct  105  AALSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTTEQAEGGKVVGVDPSLITASGA  164
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L   L+   + LV  S  +  L
+Sbjct  165  RSLEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|Q2U7S5|AMPP1_ASPOR Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=ampp 
+PE=2 SV=2
+Length=654
+
+ Score = 171 bits (434),  Expect = 4e-50, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 61/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  
+Sbjct  47   SERLSRLRELMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSLSK--  104
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q  +    ++R V     +      +A  GK +G +  ++T  G 
+Sbjct  105  AALSTDGRYFNQASKQLDNNWQLLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALITASGA  164
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  L+   + LV     +  L
+Sbjct  165  RSLSETLKKNGSTLVGVQQNLVDL  188
+
+
+>sp|B8NEI6|AMPP1_ASPFN Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 
+/ JCM 12722 / SRRC 167) OX=332952 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 171 bits (434),  Expect = 4e-50, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 61/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  
+Sbjct  47   SERLSRLRELMQEHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSLSK--  104
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q  +    ++R V     +      +A  GK +G +  ++T  G 
+Sbjct  105  AALSTDGRYFNQASKQLDNNWQLLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALITASGA  164
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  L+   + LV     +  L
+Sbjct  165  RSLSETLKKNGSTLVGVQQNLVDL  188
+
+
+>sp|B6HQC9|AMPP1_PENRW Probable Xaa-Pro aminopeptidase P OS=Penicillium 
+rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / 
+Wisconsin 54-1255) OX=500485 GN=ampp PE=3 SV=1
+Length=613
+
+ Score = 171 bits (433),  Expect = 4e-50, Method: Composition-based stats.
+ Identities = 36/144 (25%), Positives = 59/144 (41%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  KL+  +    +D  ++                   ++SGFSGS G  ++   +  
+Sbjct  7    SERLSKLRQLMQQHKVDVYIVPSEDSHQSEYIAPCDARREFISGFSGSAGTAIISLSK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIE---RAVGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +    ++     V  +      EA  GK +G +  ++T  G 
+Sbjct  65   AALSTDGRYFNQAAKQLDNNWQLLKGGVEGVPTWQEWTTEEAQGGKAVGVDPSLITASGA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              LA  L+   + LV     +  L
+Sbjct  125  RKLAETLKKNGSSLVGVRENLVDL  148
+
+
+>sp|C5K105|AMPP1_BLAGS Probable Xaa-Pro aminopeptidase P OS=Blastomyces 
+gilchristii (strain SLH14081) OX=559298 GN=AMPP PE=3 
+SV=1
+Length=617
+
+ Score = 171 bits (432),  Expect = 5e-50, Method: Composition-based stats.
+ Identities = 32/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGF+GS G  +V   +  
+Sbjct  7    SQRLARLRELMQERKVDVYIVPSEDSHQSEYIAPCDGRREFISGFTGSAGCAIVSMSK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    +  +    A +A  GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQAAKQLDNNWMLLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITASEA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  +E     L      +  L
+Sbjct  125  RSLSETIEKSGGSLQGVQENLIDL  148
+
+
+>sp|C5GXZ9|AMPP1_AJEDR Probable Xaa-Pro aminopeptidase P OS=Ajellomyces 
+dermatitidis (strain ER-3 / ATCC MYA-2586) OX=559297 
+GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 171 bits (432),  Expect = 5e-50, Method: Composition-based stats.
+ Identities = 32/144 (22%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGF+GS G  +V   +  
+Sbjct  7    SQRLARLRELMQERKVDVYIVPSEDSHQSEYIAPCDGRREFISGFTGSAGCAIVSMSK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +  + ++R    +  +    A +A  GK +G +  ++T    
+Sbjct  65   AALSTDGRYFNQAAKQLDNNWMLLKRGFENMPTWQEWTAEQAEGGKVVGVDPSLITASEA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  +E     L      +  L
+Sbjct  125  RSLSETIEKSGGSLQGVQENLIDL  148
+
+
+>sp|Q4WUD3|AMPP1_ASPFU Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 
+/ FGSC A1100) OX=330879 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 171 bits (432),  Expect = 7e-50, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 59/142 (42%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  A 
+Sbjct  49   RLARLRQLMQEHKIDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q       ++R    V  +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTTEQAQGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L   L+   + LV  S  +  L
+Sbjct  167  LEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|B0Y3V7|AMPP1_ASPFC Probable Xaa-Pro aminopeptidase P OS=Neosartorya 
+fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) 
+OX=451804 GN=ampp PE=3 SV=1
+Length=654
+
+ Score = 171 bits (432),  Expect = 7e-50, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 59/142 (42%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  A 
+Sbjct  49   RLARLRQLMQEHKIDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSMTK--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA+ Q       ++R    V  +      +A  GK +G +  ++T  G  +
+Sbjct  107  LSTDGRYFNQASKQLDSNWELLKRGVENVPTWQEWTTEQAQGGKVVGVDPALITASGARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L   L+   + LV  S  +  L
+Sbjct  167  LEETLKRNGSSLVGISQNLVDL  188
+
+
+>sp|A2QGR5|AMPP1_ASPNC Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=ampp 
+PE=3 SV=1
+Length=614
+
+ Score = 169 bits (428),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 60/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +    +D  ++                   ++SGFSGS G  ++   +  
+Sbjct  7    SERLTRLRQLMQERKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIISMTK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q       ++R V     +      +A  GK +G +  +VT  G 
+Sbjct  65   AALSTDGRYFNQASKQLDSNWALLKRGVEGFPTWQEWTTEQAEGGKVVGVDPALVTPAGA  124
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  L+   + LV     +  L
+Sbjct  125  RSLSETLKKNGSSLVGVEQNLVDL  148
+
+
+>sp|B6QG01|AMPP1_TALMQ Probable Xaa-Pro aminopeptidase P OS=Talaromyces 
+marneffei (strain ATCC 18224 / CBS 334.59 / QM 7333) 
+OX=441960 GN=ampp PE=3 SV=1
+Length=657
+
+ Score = 168 bits (426),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 33/143 (23%), Positives = 59/143 (41%), Gaps = 18/143 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +  + LD  ++                   ++SGF+GS G  ++ +    
+Sbjct  51   SERLVQLRELMKRNNLDVYIVPSEDSHQSEYIAHCDARREFISGFTGSAGTAVISST--A  108
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q       ++R    V  +      +A  GK +G +  V+T    
+Sbjct  109  AALSTDGRYFNQAAKQLDSNWTLLKRGLEGVPTWQEWTTEQAEGGKTVGVDPSVITAASA  168
+
+Query  105  DALAGALEGKNTELVRASGTVES  127
+              L+  LE   ++L+     +  
+Sbjct  169  RKLSETLEKSGSKLIGIEQNLVD  191
+
+
+>sp|C5FHR9|AMPP1_ARTOC Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+otae (strain ATCC MYA-4605 / CBS 113480) OX=554155 
+GN=AMPP PE=3 SV=1
+Length=624
+
+ Score = 168 bits (425),  Expect = 6e-49, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 61/144 (42%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLINVR------------YLSGFSGSNGALLVFADERD  48
+              R  KL+  +  + +D  ++    + +            ++SGF+GS G  +V   +  
+Sbjct  50   TQRLAKLRELMKQNKVDVYIVPSEDSHQSEYIAPCDGRRAFISGFTGSAGCAIVSMSK--  107
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY +QAA Q       ++R    V  +    A +A  GK +G +  ++T    
+Sbjct  108  AALSTDGRYFSQAAKQLDANWKLLKRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAADA  167
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L+  L+     LV     +  +
+Sbjct  168  RKLSQTLKATGGSLVGIDQNLIDI  191
+
+
+>sp|B8M9W2|AMPP1_TALSN Probable Xaa-Pro aminopeptidase P OS=Talaromyces 
+stipitatus (strain ATCC 10500 / CBS 375.48 / QM 6759 
+/ NRRL 1006) OX=441959 GN=ampp PE=3 SV=1
+Length=657
+
+ Score = 168 bits (425),  Expect = 8e-49, Method: Composition-based stats.
+ Identities = 35/143 (24%), Positives = 59/143 (41%), Gaps = 18/143 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  +  + LD  ++                   ++SGF+GS G  ++      
+Sbjct  51   SERLAQLRELMKQNNLDVYIVPSEDSHQSEYIAHCDARREFISGFTGSAGTAVISTT--A  108
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q       ++R    V  +    A +A  GK +G +  V+T    
+Sbjct  109  AALSTDGRYFNQAAKQLDSNWKLLKRGLEGVLTWQEWTAEQAEGGKIVGVDPSVITAASA  168
+
+Query  105  DALAGALEGKNTELVRASGTVES  127
+              L+  LE   ++LV     +  
+Sbjct  169  RKLSETLEKGGSKLVGIEQNLVD  191
+
+
+>sp|E3S7K9|AMPP1_PYRTT Probable Xaa-Pro aminopeptidase P OS=Pyrenophora 
+teres f. teres (strain 0-1) OX=861557 GN=ampp PE=3 
+SV=1
+Length=656
+
+ Score = 166 bits (421),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 57/142 (40%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R  +L+  +    +D  ++                   Y+SGF+GS G  ++  ++  A 
+Sbjct  51   RLAELRKLMKERNVDIYMVPSEDSHQSEYIAPCDARRAYISGFTGSAGYAVITHEK--AA  108
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QA  Q       +++    V       A +AG GK +G +  VVT      
+Sbjct  109  LSTDGRYFNQAEKQLDSNWELLKQGIQDVPTIQQWTADQAGGGKVVGVDPSVVTAGDARK  168
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            LA  ++ K  E       +  L
+Sbjct  169  LAEKIKKKGGEYKAIDENLVDL  190
+
+
+>sp|E3QCU0|AMPP1_COLGM Probable Xaa-Pro aminopeptidase P OS=Colletotrichum 
+graminicola (strain M1.001 / M2 / FGSC 10212) OX=645133 
+GN=AMPP PE=3 SV=1
+Length=617
+
+ Score = 166 bits (419),  Expect = 4e-48, Method: Composition-based stats.
+ Identities = 34/145 (23%), Positives = 60/145 (41%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+              R  +L+  +    +D  +I                   ++SGFSGS G  +V  D+  
+Sbjct  7    TGRLSRLRELMKERNVDVYVIPSEDSHASEYIAGCDARREFISGFSGSAGCAVVTLDK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QA+ Q     + +++    V  +    A ++  GK +G +  ++T    
+Sbjct  65   AALATDGRYFNQASKQLDQNWLLLKQGLQDVPTWQEWSAEQSAGGKVVGVDPELITGSIA  124
+
+Query  105  DALAGALEGK-NTELVRASGTVESL  128
+              L   ++    ++LV     +  L
+Sbjct  125  KKLTEKVKRSGGSDLVPLDENLVDL  149
+
+
+>sp|Q0CDB3|AMPP1_ASPTN Probable Xaa-Pro aminopeptidase P OS=Aspergillus 
+terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=ampp 
+PE=3 SV=1
+Length=654
+
+ Score = 163 bits (412),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 34/144 (24%), Positives = 59/144 (41%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+              R  +L+  +    +D  ++                   ++SGFSGS G  +V   +  
+Sbjct  47   TERLSRLRQLMKDHQVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIVSLTK--  104
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERAVG---RYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QA+ Q     V ++R V     +      +A  GK +G +  ++T  G 
+Sbjct  105  AALSTDGRYFNQASKQLDSNWVLLKRGVEGVQTWQEWTTEQAEGGKVVGVDPALITASGA  164
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+             +L+  L+   + L      +  L
+Sbjct  165  RSLSETLQKNGSSLKGIRPNLVDL  188
+
+
+>sp|Q5AVF0|AMPP1_EMENI Probable Xaa-Pro aminopeptidase P OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 
+/ NRRL 194 / M139) OX=227321 GN=ampp PE=3 SV=2
+Length=654
+
+ Score = 162 bits (411),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 35/142 (25%), Positives = 59/142 (42%), Gaps = 18/142 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERDAV  50
+            R   L+  +    +D  ++                   ++SGFSGS G  ++  +E  A 
+Sbjct  49   RLSSLRQLMREHKVDVYIVPSEDSHQSEYIAPCDGRREFISGFSGSAGTAIISLNE--AA  106
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            L+TDGRY  QAA Q  +    ++R    V         +A  GK +G +  ++T     +
+Sbjct  107  LSTDGRYFNQAAKQLDNNWTLLKRGVEGVPTSQEWITQQAEGGKVVGVDPALITGAAARS  166
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+            L+ AL+     L+  S  +  L
+Sbjct  167  LSDALQKSGASLIGVSQNLVDL  188
+
+
+>sp|B2VUU7|AMPP1_PYRTR Probable Xaa-Pro aminopeptidase P OS=Pyrenophora 
+tritici-repentis (strain Pt-1C-BFP) OX=426418 GN=ampp 
+PE=3 SV=1
+Length=594
+
+ Score = 159 bits (401),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 35/132 (27%), Positives = 55/132 (42%), Gaps = 14/132 (11%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQ  60
+            + R  +L+  +    +D           Y+SGF+GS G  ++  D+  A L+TDGRY  Q
+Sbjct  7    SHRLAELRKLMKERNVDIY--------TYISGFTGSAGYAVITHDK--AALSTDGRYFNQ  56
+
+Query  61   AASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNT  116
+            A  Q       +++    V       A +A  GK +G +  VVT      LA  ++ K  
+Sbjct  57   AEKQLDSNWELLKQGIQDVPTIQEWTADQAEGGKVVGVDPSVVTAGDARKLAEKIKKKGG  116
+
+Query  117  ELVRASGTVESL  128
+            E       +  L
+Sbjct  117  EYKAIDENLVDL  128
+
+
+>sp|C7Z9Z7|AMPP1_NECH7 Probable Xaa-Pro aminopeptidase P OS=Nectria 
+haematococca (strain 77-13-4 / ATCC MYA-4622 / FGSC 9596 
+/ MPVI) OX=660122 GN=AMPP PE=3 SV=1
+Length=619
+
+ Score = 159 bits (401),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 34/145 (23%), Positives = 57/145 (39%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+             +R   L+  +    +   +I                   ++SGF+GS G  +V      
+Sbjct  7    TSRLTSLRGFMKERNVQVYIIPSEDSHSSEYIADCDARREHISGFTGSAGCAVVTL--ET  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QAA+Q       +++    V  +    A ++  GK +G +  +++    
+Sbjct  65   AALATDGRYFNQAAAQLDSNWTLLKQGLQDVPTWQEWSAEQSSGGKNVGVDPSLISGATA  124
+
+Query  105  DALAGALEGKNT-ELVRASGTVESL  128
+              LA  +      ELV   G +  L
+Sbjct  125  KNLAEKIRKSGGAELVPIEGNLVDL  149
+
+
+>sp|D5GAC6|AMPP1_TUBMM Probable Xaa-Pro aminopeptidase P OS=Tuber 
+melanosporum (strain Mel28) OX=656061 GN=AMPP PE=3 SV=1
+Length=619
+
+ Score = 157 bits (396),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 33/144 (23%), Positives = 61/144 (42%), Gaps = 19/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+             +R  KL+  +    +D  ++                   ++SGF+GS G  +V  ++  
+Sbjct  7    TSRLAKLRELMKRERVDVYVVPSEDAHSSEYICAADARRAFISGFTGSAGCAIVTQEK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A L+TDGRY  QAA Q  +    +++    V  +    A +A  GK +G ++ V+T    
+Sbjct  65   AALSTDGRYFNQAARQLDENWELLKQGLPDVPTWQEWVAQQAEGGKNVGVDATVITAQQA  124
+
+Query  105  DALAGALEGKNT-ELVRASGTVES  127
+             +L   ++ K    L+     +  
+Sbjct  125  KSLETRIKKKGGTSLLGIPNNLID  148
+
+
+>sp|Q0UFY4|AMPP1_PHANO Probable Xaa-Pro aminopeptidase P OS=Phaeosphaeria 
+nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) 
+OX=321614 GN=AMPP PE=3 SV=1
+Length=650
+
+ Score = 157 bits (397),  Expect = 7e-45, Method: Composition-based stats.
+ Identities = 36/132 (27%), Positives = 53/132 (40%), Gaps = 14/132 (11%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQ  60
+              R  +L+  +    +D           Y+SGF+GS G  +V  D+  A LATDGRY  Q
+Sbjct  64   TERLAELRKLMKERKVDVY--------TYISGFTGSAGYAVVTHDK--AALATDGRYFNQ  113
+
+Query  61   AASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNT  116
+            A  Q       +++    V       A +   GK +G +  VVT      LA  ++ K  
+Sbjct  114  AEKQLDSNWELLKQGIQDVPTIQEWTADQVEGGKVVGVDPSVVTGADARKLAEKIKKKGG  173
+
+Query  117  ELVRASGTVESL  128
+            E       +  L
+Sbjct  174  EYKAVDDNLVDL  185
+
+
+>sp|A4RF35|AMPP1_MAGO7 Probable Xaa-Pro aminopeptidase P OS=Magnaporthe 
+oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) 
+OX=242507 GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 157 bits (396),  Expect = 8e-45, Method: Composition-based stats.
+ Identities = 37/145 (26%), Positives = 65/145 (45%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + R  +L+  + A  +D  ++                   ++SGFSGS G  +V  D+  
+Sbjct  7    SDRLAELRGLMRARSIDVYIVPTEDAHSSEYIAPCDGRREFISGFSGSAGTAVVTNDK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QAA++  +    +++    V  +    A +A  GK +G +  +++    
+Sbjct  65   AALATDGRYFNQAATELDNNWELLKQGQPDVPTWQEWTADQAAGGKTVGVDPTLLSSSEA  124
+
+Query  105  DALAGALEGKNT-ELVRASGTVESL  128
+             AL   ++ K   +LV  S  +  L
+Sbjct  125  KALQEKIKSKGGNDLVAISDNLVDL  149
+
+
+>sp|E4USI8|AMPP1_ARTGP Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+gypseum (strain ATCC MYA-4604 / CBS 118893) OX=535722 
+GN=AMPP PE=3 SV=1
+Length=635
+
+ Score = 154 bits (390),  Expect = 5e-44, Method: Composition-based stats.
+ Identities = 33/131 (25%), Positives = 56/131 (43%), Gaps = 14/131 (11%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQ  60
+              R  KL+  +A + +D           ++S F+GS G  +V   +  A L+TDGRY +Q
+Sbjct  50   TQRLAKLRELMAQNKVDVY--------TFISSFTGSAGCAIVSMSK--AALSTDGRYFSQ  99
+
+Query  61   AASQAPDLEVAIER---AVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGALEGKNT  116
+            AA Q       ++R    V  +    A +A  GK +G +  ++T      L+  L+    
+Sbjct  100  AAKQLDSNWTLLKRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAADARKLSQTLKTTGG  159
+
+Query  117  ELVRASGTVES  127
+             L+     +  
+Sbjct  160  SLIGIDQNLID  170
+
+
+>sp|E9E9B2|AMPP1_METAQ Probable Xaa-Pro aminopeptidase P OS=Metarhizium 
+acridum (strain CQMa 102) OX=655827 GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 152 bits (385),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 29/145 (20%), Positives = 54/145 (37%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + +  KL++ +    +   +I                   ++SGF+GS G  +V      
+Sbjct  5    SPQLAKLRSLMKERKVHVYVIPSEDSHSSEYIAACDARREFISGFTGSAGCAIVTL--EA  62
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QAA Q       +++    V  +    A ++  GK +  +  ++     
+Sbjct  63   AALATDGRYFNQAAKQLDGNWTLLKQGLQDVPTWQEWAASQSAGGKIVAVDPSLLPGSAA  122
+
+Query  105  DALAGALEGKNT-ELVRASGTVESL  128
+              L   +      +LV     +  +
+Sbjct  123  KKLNDQVRKAGGADLVPLDENIVDI  147
+
+
+>sp|E9EUE6|AMPP1_METRA Probable Xaa-Pro aminopeptidase P OS=Metarhizium 
+robertsii (strain ARSEF 23 / ATCC MYA-3075) OX=655844 
+GN=AMPP PE=3 SV=1
+Length=618
+
+ Score = 152 bits (383),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 29/145 (20%), Positives = 54/145 (37%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + +  KL++ +    +   +I                   ++SGF+GS G  +V      
+Sbjct  5    SPQLAKLRSLMKERKVHVYVIPSEDSHSSEYIAACDARREFMSGFTGSAGCAIVTL--EA  62
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QAA Q       +++    V  +    A ++  GK +  +  ++     
+Sbjct  63   AALATDGRYFNQAAKQLDGNWTLLKQGLQDVPTWQEWAASQSAGGKTVAVDPSLLPGSAA  122
+
+Query  105  DALAGALEGKNT-ELVRASGTVESL  128
+              L   +      +LV     +  +
+Sbjct  123  KKLNDQVRKAGGADLVPLDENIVDI  147
+
+
+>sp|D1ZKF3|AMPP1_SORMK Probable Xaa-Pro aminopeptidase P OS=Sordaria 
+macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) 
+/ K-hell) OX=771870 GN=AMPP PE=3 SV=1
+Length=614
+
+ Score = 151 bits (382),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 33/143 (23%), Positives = 59/143 (41%), Gaps = 19/143 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R   L++ +    +D  ++                   ++SGFSGS G  +V  D+  A 
+Sbjct  8    RLAALRSLMKERSVDIYVVPSEDSHASEYITDCDARRTFISGFSGSAGTAVVTLDK--AA  65
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            LATDGRY  QA+ Q  +    ++     V  +    A E+  GK +G +  +++    + 
+Sbjct  66   LATDGRYFNQASKQLDENWHLLKTGLQDVPTWQEWTADESAGGKTVGIDPTLISPAVAEK  125
+
+Query  107  LAGALEGKNTE-LVRASGTVESL  128
+            L G ++      L   +  +  L
+Sbjct  126  LNGDIKKHGGSGLKAVTENLVDL  148
+
+
+>sp|B2AWV6|AMPP1_PODAN Probable Xaa-Pro aminopeptidase P OS=Podospora 
+anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 
+10383) OX=515849 GN=AMPP PE=3 SV=1
+Length=680
+
+ Score = 152 bits (383),  Expect = 7e-43, Method: Composition-based stats.
+ Identities = 33/145 (23%), Positives = 56/145 (39%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+             +R   L++ +    L   ++                   ++SGFSGS G  +V  D+  
+Sbjct  72   TSRLAALRSLMKERNLHVYVVPSEDSHASEYIADCDARRTFISGFSGSAGTAIVTLDK--  129
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QA+ Q       ++     V  +      EA  GK +G +  +++    
+Sbjct  130  AALATDGRYFNQASKQLDSNWYLLKTGMQDVPTWQEWATQEAEGGKLIGVDPQLISSAIA  189
+
+Query  105  DALAGALE-GKNTELVRASGTVESL  128
+            + L   ++      LV     +  L
+Sbjct  190  EKLDEDIKNAGGGGLVGIKENLVDL  214
+
+
+>sp|Q7RYL6|AMPP1_NEUCR Probable Xaa-Pro aminopeptidase P OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 
+/ DSM 1257 / FGSC 987) OX=367110 GN=ampp PE=3 SV=2
+Length=684
+
+ Score = 152 bits (383),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 33/143 (23%), Positives = 59/143 (41%), Gaps = 19/143 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R   L++ +    +D  ++                   ++SGF+GS G  +V  D+  A 
+Sbjct  78   RLAALRSLMKERNVDIYVVPSEDSHASEYIAECDARRAFISGFTGSAGTAVVTLDK--AA  135
+
+Query  51   LATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDA  106
+            LATDGRY  QA+ Q  +    ++     V  +    A E+  GK +G +  +++    D 
+Sbjct  136  LATDGRYFNQASKQLDENWHLLKTGLQDVPTWQEWTADESAGGKSVGIDPTLISPAVADK  195
+
+Query  107  LAGALEG-KNTELVRASGTVESL  128
+            L G ++      L   +  +  L
+Sbjct  196  LDGDIKKHGGAGLKAINENLVDL  218
+
+
+>sp|E5ABQ8|AMPP1_LEPMJ Probable Xaa-Pro aminopeptidase P OS=Leptosphaeria 
+maculans (strain JN3 / isolate v23.1.3 / race Av1-4-5-6-7-8) 
+OX=985895 GN=AMPP PE=3 SV=1
+Length=605
+
+ Score = 150 bits (379),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 30/136 (22%), Positives = 51/136 (38%), Gaps = 11/136 (8%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLINV--RYLS---GFSGSNGALLVFADERDAVLATDG  55
+              R  +L+  +    +D  ++    +    Y++      GS G  ++  D+  A LATDG
+Sbjct  7    TERLAELRKLMKERNVDIYMVPSEDSHQSEYIAPCDARRGSAGYAVITHDK--AALATDG  64
+
+Query  56   RYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALAGAL  111
+            RY  QA  Q       +++    V       A +   GK +  +  VVT      LA  +
+Sbjct  65   RYFNQAEKQLDGNWELLKQGIQDVPTIQDWTADQVEGGKVVAVDPSVVTAADARKLADKI  124
+
+Query  112  EGKNTELVRASGTVES  127
+            + K  E       +  
+Sbjct  125  KKKGGEYKAVDDNLVD  140
+
+
+>sp|B0DZL3|AMPP1_LACBS Probable Xaa-Pro aminopeptidase P OS=Laccaria 
+bicolor (strain S238N-H82 / ATCC MYA-4686) OX=486041 
+GN=AMPP PE=3 SV=1
+Length=642
+
+ Score = 147 bits (371),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 29/144 (20%), Positives = 55/144 (38%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+              R  KL+  +    + A ++                   ++SGF GS G  ++  D+  
+Sbjct  43   TERLAKLRELMKQHSVQAFVVPSEDQHSSEYLANCDKRRAFISGFDGSAGCAIITTDK--  100
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGV-GKLGFESHVVTVDGL  104
+            A L TDGRY  QA  Q       +++    V  +        G   ++G ++ ++     
+Sbjct  101  AYLFTDGRYFLQAEKQLDKNWKLMKQGLPDVPTWQDFLYKNLGPHTQIGIDATLLAASDA  160
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+            ++L   L  K ++LV     +  +
+Sbjct  161  ESLTKQLTPKYSKLVSLKENLVDV  184
+
+
+>sp|Q2H8T2|AMPP1_CHAGB Probable Xaa-Pro aminopeptidase P OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 
+/ NBRC 6347 / NRRL 1970) OX=306901 GN=AMPP PE=3 SV=1
+Length=624
+
+ Score = 146 bits (368),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 32/146 (22%), Positives = 58/146 (40%), Gaps = 21/146 (14%)
+
+Query  1    NARRDKLKAQIAASGLDAX--LISDLI------------NVRYLSGFSGSNGALLVFADE  46
+             AR   L++ +  +G+D    ++                   ++SGF+GS G  +V  D+
+Sbjct  7    TARLTTLRSLMKENGVDIYGIIVPSEDSHASEYIAPCDGRRAFISGFTGSAGTAVVTQDK  66
+
+Query  47   RDAVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVD  102
+              A LATDGRY  QA  Q       ++     V  +    A  +  GK +G +  +++  
+Sbjct  67   --AALATDGRYFNQAGKQLDGNWHLLKTGLQDVPTWQDWTAEASAGGKTVGVDPSLISSP  124
+
+Query  103  GLDALAGALEGKNTE-LVRASGTVES  127
+              + L  +++      L   S  +  
+Sbjct  125  IAEKLDESIKKSGGAGLKAVSENLVD  150
+
+
+>sp|A8P5H7|AMPP1_COPC7 Probable Xaa-Pro aminopeptidase P OS=Coprinopsis 
+cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / 
+FGSC 9003) OX=240176 GN=AMPP PE=3 SV=1
+Length=622
+
+ Score = 145 bits (367),  Expect = 8e-41, Method: Composition-based stats.
+ Identities = 29/144 (20%), Positives = 56/144 (39%), Gaps = 18/144 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + +   L+  +    +D  ++                   ++SGF+GS G  ++  D+  
+Sbjct  12   SKQLAALRELMKKENVDVWVVPSEDQHYSEYLAHCDERRAFISGFNGSAGCAVITLDK--  69
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVG-KLGFESHVVTVDGL  104
+            A L TDGRY  QA  Q       +++    V  +            K+G ++ ++T +  
+Sbjct  70   AYLFTDGRYFLQAEKQLDSNWTLMKQGLPDVPTWQDFLHKTLDGSLKIGIDATIITEEDA  129
+
+Query  105  DALAGALEGKNTELVRASGTVESL  128
+              L   L  K +ELV +   +  +
+Sbjct  130  AGLRKNLAPKKSELVPSKKNLVDI  153
+
+
+>sp|C9SR45|AMPP1_VERA1 Probable Xaa-Pro aminopeptidase P OS=Verticillium 
+alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 
+10136) OX=526221 GN=AMPP PE=3 SV=1
+Length=612
+
+ Score = 142 bits (359),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 33/145 (23%), Positives = 60/145 (41%), Gaps = 19/145 (13%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+            + R  KL+  + A  +D  ++                   ++SGFSGS G  ++  D+  
+Sbjct  7    SGRLSKLRELMRAHSIDVYVVPSEDSHSSEYIAACDARREFISGFSGSAGCAVITLDK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATDGRY  QA+ Q     + +++    V  +    A ++  GK +  +  ++     
+Sbjct  65   AALATDGRYFNQASKQLDHNWLLLKQGLQDVPTWQDWSAEQSAGGKIVAVDPELIAAAAA  124
+
+Query  105  DALAGALEG-KNTELVRASGTVESL  128
+              LA  +     +ELV     +  +
+Sbjct  125  KKLAAKIHKFGGSELVALERNLVDV  149
+
+
+>sp|O43895|XPP2_HUMAN Xaa-Pro aminopeptidase 2 OS=Homo sapiens 
+OX=9606 GN=XPNPEP2 PE=1 SV=3
+Length=674
+
+ Score = 140 bits (352),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 33/139 (24%), Positives = 58/139 (42%), Gaps = 16/139 (12%)
+
+Query  4    RDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAVL  51
+               L+ Q+    L A +I                   +++GF+GS G  +V   +  A +
+Sbjct  54   LTALRQQMQTQNLSAYIIPGTDAHMNEYIGQHDERRAWITGFTGSAGTAVVTMKK--AAV  111
+
+Query  52   ATDGRYRTQAASQAPDLE-VAIERAVGRYLAGRAGEAG-VGKLGFESHVVTVDGLDALAG  109
+             TD RY TQA  Q      +  E      +     E    G++GF+  ++++D  ++   
+Sbjct  112  WTDSRYWTQAERQMDCNWELHKEVGTTPIVTWLLTEIPAGGRVGFDPFLLSIDTWESYDL  171
+
+Query  110  ALEGKNTELVRASGTVESL  128
+            AL+G N +LV  +  +  L
+Sbjct  172  ALQGSNRQLVSITTNLVDL  190
+
+
+>sp|Q99MA2|XPP2_RAT Xaa-Pro aminopeptidase 2 OS=Rattus norvegicus 
+OX=10116 GN=Xpnpep2 PE=1 SV=1
+Length=674
+
+ Score = 140 bits (352),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 34/140 (24%), Positives = 58/140 (41%), Gaps = 16/140 (11%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R   L+ Q+  S L A +I D                 ++SGF+GS G  +V   ++ A 
+Sbjct  53   RLAALRQQMEKSNLSAYIIPDTDAHMSEYIGKHDERRAWISGFTGSAGTAVVT--KKKAA  110
+
+Query  51   LATDGRYRTQAASQAPDLE-VAIERAVGRYLAGRAGEAGVG-KLGFESHVVTVDGLDALA  108
+            + TD RY TQA  Q      +  E ++   +A    E   G  +GF+  + +V   +   
+Sbjct  111  VWTDSRYWTQAERQMDCNWELHKEVSISSIVAWILAEVPDGENVGFDPFLFSVGSWENYD  170
+
+Query  109  GALEGKNTELVRASGTVESL  128
+              L+  N  L+  +  +  +
+Sbjct  171  QELQDSNRHLLSITTNLVDV  190
+
+
+>sp|Q09795|YAA1_SCHPO Uncharacterized peptidase C22G7.01c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC22G7.01c PE=3 SV=4
+Length=598
+
+ Score = 138 bits (348),  Expect = 4e-38, Method: Composition-based stats.
+ Identities = 31/143 (22%), Positives = 53/143 (37%), Gaps = 19/143 (13%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R +KL+  +   G    ++                   ++SGF GS G  ++   E  A 
+Sbjct  8    RLNKLRELMKERGYTLYVVPSEDAHSSEYTCDADARRAFISGFDGSAGCAVI--GETSAA  65
+
+Query  51   LATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGVG-KLGFESHVVTVDGLDA  106
+            L TDGRY  QA+ Q  +    +++    V  +            K+G +S ++T     A
+Sbjct  66   LFTDGRYFNQASQQLDENWTLMKQGFTGVPTWEEYCTQMTKCNEKVGIDSSLITFPAAKA  125
+
+Query  107  LAGAL-EGKNTELVRASGTVESL  128
+            L  +L       LV     +  +
+Sbjct  126  LRESLFLKSGAVLVGDHDNLVDI  148
+
+
+>sp|A6RK67|AMPP1_BOTFB Probable Xaa-Pro aminopeptidase P OS=Botryotinia 
+fuckeliana (strain B05.10) OX=332648 GN=ampp PE=3 
+SV=1
+Length=601
+
+ Score = 135 bits (341),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 26/145 (18%), Positives = 54/145 (37%), Gaps = 31/145 (21%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+              R   L+  +  + +D  ++                   ++SGFSGS G  +V  ++  
+Sbjct  7    TERLAGLRELMKKNKVDIYIVPSEDSHSSEYIAACDARREFISGFSGSAGCAVVTLEK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATD            D  + +++    V  +    A ++  GK +G +  +++    
+Sbjct  65   AALATD------------DNWLLLKQGLQDVPTWQEWAAEQSENGKVVGVDPTIMSASDA  112
+
+Query  105  DALAGALEGKNT-ELVRASGTVESL  128
+              L   ++ +   +LV     +  L
+Sbjct  113  RKLTEKIKKRGGNDLVAVEENLVDL  137
+
+
+>sp|B1AVD1|XPP2_MOUSE Xaa-Pro aminopeptidase 2 OS=Mus musculus 
+OX=10090 GN=Xpnpep2 PE=1 SV=1
+Length=674
+
+ Score = 136 bits (342),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 32/140 (23%), Positives = 56/140 (40%), Gaps = 16/140 (11%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERDAV  50
+            R   L+ Q+    L A +I D                 ++SGF+GS G  +V   +  A 
+Sbjct  53   RLAALRQQMETWNLSAYIIPDTDAHMSEYIGKPDKRREWISGFTGSAGTAVVTMGK--AA  110
+
+Query  51   LATDGRYRTQAASQAPDLE-VAIERAVGRYLAGRAGEAGVGK-LGFESHVVTVDGLDALA  108
+            + TD RY TQA  Q      +  E ++   +A    E   G+ +GF+  + +VD      
+Sbjct  111  VWTDSRYWTQAERQMDCNWELHKEVSISSIVAWILAEVPDGQNVGFDPFLFSVDSWKNYD  170
+
+Query  109  GALEGKNTELVRASGTVESL  128
+               +  +  L+  +  +  +
+Sbjct  171  QGFQDSSRHLLSVTTNLVDV  190
+
+
+>sp|Q95333|XPP2_PIG Xaa-Pro aminopeptidase 2 OS=Sus scrofa OX=9823 
+GN=XPNPEP2 PE=1 SV=1
+Length=673
+
+ Score = 135 bits (341),  Expect = 6e-37, Method: Composition-based stats.
+ Identities = 38/142 (27%), Positives = 61/142 (43%), Gaps = 16/142 (11%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+             A+   L+ Q+    L A +I D                 +++GF GS G  +V   ER 
+Sbjct  50   TAQLTALREQMLTQNLSAYIIPDTDAHMSEYIGECDQRRAWITGFIGSAGIAVVT--ERK  107
+
+Query  49   AVLATDGRYRTQAASQAPDLE-VAIERAVGRYLAGRAGEAG-VGKLGFESHVVTVDGLDA  106
+            A L TD RY TQA  Q      +  E + G  +     E    G++GF+  + ++D  ++
+Sbjct  108  AALWTDSRYWTQAERQMDCNWELHKEVSTGHIVTWLLTEIPVGGRVGFDPFLFSIDSWES  167
+
+Query  107  LAGALEGKNTELVRASGTVESL  128
+               AL+  + ELV  +  +  L
+Sbjct  168  YDVALQDADRELVSITVNLVDL  189
+
+
+>sp|O54975|XPP1_RAT Xaa-Pro aminopeptidase 1 OS=Rattus norvegicus 
+OX=10116 GN=Xpnpep1 PE=1 SV=1
+Length=623
+
+ Score = 134 bits (337),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 28/148 (19%), Positives = 50/148 (34%), Gaps = 23/148 (16%)
+
+Query  1    NARRDKLKAQIAASG-----LDAXLISD------------LINVRYLSGFSGSNGALLVF  43
+            +    +L+  +  S      + A +I                   ++SGF GS G  ++ 
+Sbjct  7    SELLRQLRQAMRNSECVAEPIQAYIIPSGDAHQSEYIAPCDCRRAFVSGFDGSAGTAIIT  66
+
+Query  44   ADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVG-KLGFESHVV  99
+              E  A + TDGRY  QAA Q  +    ++  +                G ++G +  ++
+Sbjct  67   --EEHAAMWTDGRYFLQAAKQMDNNWTLMKMGLKDTPTQEDWLVSVLPEGSRVGVDPLII  124
+
+Query  100  TVDGLDALAGALEGKNTELVRASGTVES  127
+              D    +A  L      LV     +  
+Sbjct  125  PTDYWKKMAKVLRSAGHHLVPVKENLVD  152
+
+
+>sp|Q6P1B1|XPP1_MOUSE Xaa-Pro aminopeptidase 1 OS=Mus musculus 
+OX=10090 GN=Xpnpep1 PE=1 SV=1
+Length=623
+
+ Score = 134 bits (337),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 28/148 (19%), Positives = 50/148 (34%), Gaps = 23/148 (16%)
+
+Query  1    NARRDKLKAQIAASG-----LDAXLISD------------LINVRYLSGFSGSNGALLVF  43
+            +    +L+  +  S      + A +I                   ++SGF GS G  ++ 
+Sbjct  7    SELLRQLRQAMRNSEYVAEPIQAYIIPSGDAHQSEYIAPCDCRRAFVSGFDGSAGTAIIT  66
+
+Query  44   ADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVG-KLGFESHVV  99
+              E  A + TDGRY  QAA Q  +    ++  +                G ++G +  ++
+Sbjct  67   --EEHAAMWTDGRYFLQAAKQMDNNWTLMKMGLKDTPTQEDWLVSVLPEGSRVGVDPLII  124
+
+Query  100  TVDGLDALAGALEGKNTELVRASGTVES  127
+              D    +A  L      LV     +  
+Sbjct  125  PTDYWKKMAKVLRSAGHHLVPVKENLVD  152
+
+
+>sp|Q9NQW7|XPP1_HUMAN Xaa-Pro aminopeptidase 1 OS=Homo sapiens 
+OX=9606 GN=XPNPEP1 PE=1 SV=3
+Length=623
+
+ Score = 133 bits (335),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 27/148 (18%), Positives = 49/148 (33%), Gaps = 23/148 (16%)
+
+Query  1    NARRDKLKAQIAASG-----LDAXLISD------------LINVRYLSGFSGSNGALLVF  43
+            +    +L+  +  S      + A +I                   ++SGF GS G  ++ 
+Sbjct  7    SELLRQLRQAMRNSEYVTEPIQAYIIPSGDAHQSEYIAPCDCRRAFVSGFDGSAGTAIIT  66
+
+Query  44   ADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVG-KLGFESHVV  99
+              E  A + TDGRY  QAA Q       ++  +                G ++G +  ++
+Sbjct  67   --EEHAAMWTDGRYFLQAAKQMDSNWTLMKMGLKDTPTQEDWLVSVLPEGSRVGVDPLII  124
+
+Query  100  TVDGLDALAGALEGKNTELVRASGTVES  127
+              D    +A  L      L+     +  
+Sbjct  125  PTDYWKKMAKVLRSAGHHLIPVKENLVD  152
+
+
+>sp|A7E4T8|AMPP1_SCLS1 Probable Xaa-Pro aminopeptidase P OS=Sclerotinia 
+sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) OX=665079 
+GN=ampp PE=3 SV=1
+Length=601
+
+ Score = 133 bits (334),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 28/145 (19%), Positives = 56/145 (39%), Gaps = 31/145 (21%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFADERD  48
+              R   L+  +  + +D  ++                   ++SGFSGS G  +V  D+  
+Sbjct  7    TERLAALRDLMKKNKVDIYIVPSEDSHSSEYIAACDARREFISGFSGSAGCAVVTLDK--  64
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIERA---VGRYLAGRAGEAGVGK-LGFESHVVTVDGL  104
+            A LATD            D  + +++    V  +    A ++  GK +G +S +++    
+Sbjct  65   AALATD------------DNWLLLKQGLQDVPTWQEWAAEQSESGKVVGVDSTIISAPDA  112
+
+Query  105  DALAGALEGK-NTELVRASGTVESL  128
+              L   ++ +  ++LV     +  L
+Sbjct  113  RKLLEKVKKRGGSDLVAVEENLVDL  137
+
+
+>sp|Q8RY11|AMPP2_ARATH Aminopeptidase P2 OS=Arabidopsis thaliana 
+OX=3702 GN=APP2 PE=2 SV=1
+Length=710
+
+ Score = 132 bits (333),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 35/146 (24%), Positives = 56/146 (38%), Gaps = 21/146 (14%)
+
+Query  1    NARRDKLKAQIAA--SGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADE  46
+            + +   ++   +    G+DA +I                   Y+SGF+GS G  +V  D+
+Sbjct  80   DEKLSSIRRLFSEPGVGIDAYIIPSQDAHQSEFIAECYARRAYISGFTGSAGTAVVTKDK  139
+
+Query  47   RDAVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGE-AGVGKLGFESHVVTVD  102
+              A L TDGRY  QA  Q     + +      V       A   A  G++G +  + + D
+Sbjct  140  --AALWTDGRYFLQAEKQLNSSWILMRAGNPGVPTASEWIADVLAPGGRVGIDPFLFSAD  197
+
+Query  103  GLDALAGALEGKNTELVRASG-TVES  127
+              + L   +  KN ELV      +  
+Sbjct  198  AAEELKEVIAKKNHELVYLYNVNLVD  223
+
+
+>sp|Q1JPJ2|XPP1_BOVIN Xaa-Pro aminopeptidase 1 OS=Bos taurus OX=9913 
+GN=XPNPEP1 PE=2 SV=1
+Length=623
+
+ Score = 131 bits (329),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 27/148 (18%), Positives = 48/148 (32%), Gaps = 23/148 (16%)
+
+Query  1    NARRDKLKAQIA-----ASGLDAXLISD------------LINVRYLSGFSGSNGALLVF  43
+            +    +L+  +         + A +I                   ++SGF GS G  +V 
+Sbjct  7    SELLRQLRQAMRNLEYVTEPIQAYIIPSGDAHQSEYIAPCDCRRAFVSGFDGSAGTAIVT  66
+
+Query  44   ADERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVG-KLGFESHVV  99
+              E  A + TDGRY  QAA Q       ++  +                G ++G +  ++
+Sbjct  67   --EEHAAMWTDGRYFLQAAKQMDSNWTLMKMGLKDTPTQEDWLVSVLPEGSRVGVDPLII  124
+
+Query  100  TVDGLDALAGALEGKNTELVRASGTVES  127
+              D    +A  L      L+     +  
+Sbjct  125  PTDYWKKMAKVLRSAGHHLIPVKDNLVD  152
+
+
+>sp|D4D891|AMPP1_TRIVH Probable Xaa-Pro aminopeptidase P OS=Trichophyton 
+verrucosum (strain HKI 0517) OX=663202 GN=AMPP PE=3 
+SV=2
+Length=698
+
+ Score = 129 bits (323),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 35/200 (18%), Positives = 59/200 (30%), Gaps = 75/200 (38%)
+
+Query  1    NARRDKLKAQIAASGLDAX---------------LISD----------------------  23
+              R  KL+  +A + +D                 ++                        
+Sbjct  50   TQRLAKLRELMAQNKVDVYSMQFRYTIKAPLIITVVYSFFFFLLLALKLCLRKTAISQST  109
+
+Query  24   -----------LINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAI  72
+                        I   ++S F+GS G  +V   +  A L+TDGRY +QAA Q       +
+Sbjct  110  LLHVMGVETLIRITAAFISSFTGSAGCAIVSMSK--AALSTDGRYFSQAAKQLDSNWTLL  167
+
+Query  73   ER---AVGRYLAGRAGEAGVGK-LGFESHVVTVD---------------------GLDAL  107
+            +R    V  +    A +A  GK +G +  ++T                           L
+Sbjct  168  KRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAGENLHYTPLTSVVVTNCSYVIADARKL  227
+
+Query  108  AGALEGKNTELVRASGTVES  127
+            +  L+     LV     +  
+Sbjct  228  SQTLKTTGGSLVGIDQNLID  247
+
+
+>sp|Q9VJG0|XPP_DROME Xaa-Pro aminopeptidase ApepP OS=Drosophila 
+melanogaster OX=7227 GN=ApepP PE=1 SV=1
+Length=613
+
+ Score = 126 bits (317),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 28/146 (19%), Positives = 50/146 (34%), Gaps = 24/146 (16%)
+
+Query  4    RDKLKAQIAAS------GLDAXLISDLI------------NVRYLSGFSGSNGALLVFAD  45
+              +L+  +  +      G+ A ++                   ++SGF GS G  ++   
+Sbjct  9    LTRLRELMLRAQVGDSCGISAYIVPSDDAHQSEYQCQHDERRSFVSGFDGSAGTAVITT-  67
+
+Query  46   ERDAVLATDGRYRTQAASQAPDLEVAIERAV---GRYLAGRAGEAGVGK-LGFESHVVTV  101
+               A+L TDGRY  QA  Q     V +   +       A  A     G  +G +  +++ 
+Sbjct  68   -ETALLWTDGRYYQQAEKQLDSNWVLMRDGLSATPSIGAWLAKNLPKGSFVGVDPRLLSF  126
+
+Query  102  DGLDALAGALEGKNTELVRASGTVES  127
+                 +   L     +LV   G +  
+Sbjct  127  RVWKPIETELSSAECQLVPIEGNLID  152
+
+
+>sp|D4ARJ9|AMPP1_ARTBC Probable Xaa-Pro aminopeptidase P OS=Arthroderma 
+benhamiae (strain ATCC MYA-4681 / CBS 112371) OX=663331 
+GN=AMPP PE=3 SV=1
+Length=698
+
+ Score = 126 bits (317),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 34/200 (17%), Positives = 59/200 (30%), Gaps = 75/200 (38%)
+
+Query  1    NARRDKLKAQIAASGLDAX---------------LISD----------------------  23
+              R  KL+  +A + +D                 ++                        
+Sbjct  50   TQRLAKLRELMAQNKVDVYSMQFRYTIKAPLIITVVYSFFFFLLLALKLCLRKTAISQST  109
+
+Query  24   -----------LINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAASQAPDLEVAI  72
+                        I   ++S F+GS G  +V   +  A L+TDGRY +QAA Q       +
+Sbjct  110  LLHVTGVETLIRITAAFISSFTGSAGCAIVSMSK--AALSTDGRYFSQAAKQLDANWTLL  167
+
+Query  73   ER---AVGRYLAGRAGEAGVGK-LGFESHVVTVD---------------------GLDAL  107
+            +R    V  +    A +A  GK +G +  ++T                           L
+Sbjct  168  KRGVEGVPTWEEWTAEQAENGKVVGVDPSLITAGENLQYSPLTSVIVVNCSYVIADARKL  227
+
+Query  108  AGALEGKNTELVRASGTVES  127
+            +  L+     L+     +  
+Sbjct  228  SQTLKTTGGSLIGIDQNLID  247
+
+
+>sp|Q07825|FRA1_YEAST Putative Xaa-Pro aminopeptidase FRA1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=FRA1 PE=1 SV=1
+Length=749
+
+ Score = 126 bits (316),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 30/165 (18%), Positives = 55/165 (33%), Gaps = 40/165 (24%)
+
+Query  3    RRDKLKAQIAASGLDAXLISD------------LINVRYLSGFSGSNGALLVFAD-----  45
+            R  KL+ ++    L   ++                   ++SGFSGS G   +  D     
+Sbjct  108  RLLKLRQEMKKHDLCCYIVPSCDEHQSEYVSLRDQRRAFISGFSGSAGVACITRDLLNFN  167
+
+Query  46   ----ERDAVLATDGRYRTQAASQAPDLEVAIERAV--GRYLAGRAGEA-----GVG----  90
+                +  ++L+TDGRY  QA  +       + +      +      EA     G+G    
+Sbjct  168  DDHPDGKSILSTDGRYFNQARQELDYNWTLLRQNEDPITWQEWCVREALEMAKGLGNKEG  227
+
+Query  91   ---KLGFESHVVTVDGLDALAGAL-----EGKNTELVRASGTVES  127
+               K+G +  ++T +   +    +          ELV     +  
+Sbjct  228  MVLKIGIDPKLITFNDYVSFRKMIDTKYDAKGKVELVPVEENLVD  272
+
+
+>sp|Q54G06|XPP1_DICDI Xaa-Pro aminopeptidase 1 OS=Dictyostelium 
+discoideum OX=44689 GN=xpnpep1 PE=3 SV=1
+Length=627
+
+ Score = 123 bits (308),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 29/149 (19%), Positives = 58/149 (39%), Gaps = 21/149 (14%)
+
+Query  1    NARRDKLKAQIAASGLDAXLISDLI------------NVRYLSGFSGSNGALLVFADERD  48
+            + + +KL+  +    L A ++                   Y+SGFSGS G +++  D + 
+Sbjct  23   SKKVEKLRTFMKDQSLSAYIVPSEDAHQSEYICVKDKRREYISGFSGSAGCVVITLDNQ-  81
+
+Query  49   AVLATDGRYRTQAASQAPDLEVAIER---AVGRYLAGRAGEAGV-GKLGFESHVVTVDGL  104
+             +L TDGRY  QA  +       ++                     K+G +S +++    
+Sbjct  82   -LLWTDGRYWLQAEKELESNWKIMKDRVVGEPTIQDWLLSNLNKENKVGIDSRLISKGYY  140
+
+Query  105  DALAGALEGKNTELVRAS--GTVES-LRE  130
+            D++   L+ K+ ++        +   +RE
+Sbjct  141  DSMKLVLKEKSIDIKFDEDGENLIDKVRE  169
+
+
+>sp|P54518|YQHT_BACSU Uncharacterized peptidase YqhT OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqhT PE=3 SV=1
+Length=353
+
+ Score = 119 bits (298),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 39/128 (30%), Positives = 63/128 (49%), Gaps = 5/128 (4%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            + +KL+      G+D  LI+   NVRY++GF+GS G  ++  D+  A   TD RY  QA 
+Sbjct  2    KLEKLRNLFGQLGIDGMLITSNTNVRYMTGFTGSAGLAVISGDK--AAFITDFRYTEQAK  59
+
+Query  63   SQAPDLEVAIERA-VGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAGALEGKNTELVRA  121
+             Q    E+      + +  A      G+ +LGFE + +T     + +  +   + ELV  
+Sbjct  60   VQVKGFEIIEHGGSLIQTTADTVESFGIKRLGFEQNSMTYGTYASYSAVI--SDAELVPV  117
+
+Query  122  SGTVESLR  129
+            + +VE LR
+Sbjct  118  AESVEKLR  125
+
+
+>sp|O44750|XPP_CAEEL Xaa-Pro aminopeptidase app-1 OS=Caenorhabditis 
+elegans OX=6239 GN=app-1 PE=1 SV=1
+Length=616
+
+ Score = 121 bits (304),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 35/152 (23%), Positives = 59/152 (39%), Gaps = 28/152 (18%)
+
+Query  2    ARRDKLKAQIAASGL---------DAXLISD------------LINVRYLSGFSGSNGAL  40
+             +  KL++   +  +          A L+                 V++LSGFSGSN  +
+Sbjct  5    EKLAKLRSLFHSERVLALTSSKPMVAYLLPSTDAHHSEYLADYDFRVKFLSGFSGSNAYV  64
+
+Query  41   LVFADERDAVLATDGRYRTQAASQAPDL-EVAIERAVG---RYLAGRAGEAGVGKL-GFE  95
+            +V   +R+A+L TDGRY TQA +Q        +++        +     E   G + GF+
+Sbjct  65   VVT--DREALLWTDGRYFTQAGNQLDSNSWKLMKQGQPDSITVVDWLVRELERGSVIGFD  122
+
+Query  96   SHVVTVDGLDALAGALEGKNTELVRASGTVES  127
+              + T D        L+    + V   G +  
+Sbjct  123  PTLSTFDAGSKTFKRLKAAGLQPVSIPGNLVD  154
+
+
+>sp|P76524|YPDF_ECOLI Aminopeptidase YpdF OS=Escherichia coli 
+(strain K12) OX=83333 GN=ypdF PE=1 SV=1
+Length=361
+
+ Score = 116 bits (291),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 26/136 (19%), Positives = 50/136 (37%), Gaps = 12/136 (9%)
+
+Query  4    RDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAAS  63
+               L+  + A  LDA L+S   N +   G S  +G +++      A +  D RY  +  +
+Sbjct  4    LASLRDWLKAQQLDAVLLSSRQNKQPHLGISTGSGYVVIS--RESAHILVDSRYYVEVEA  61
+
+Query  64   QAPDLEVAI---ERAVGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAGALEGKNT----  116
+            +A   ++ +      +   +     +  +  LGFE   V+ +        L  K      
+Sbjct  62   RAQGYQLHLLDATNTLTTIVNQIIADEQLQTLGFEGQQVSWETAHRWQSELNAKLVSATP  121
+
+Query  117  ---ELVRASGTVESLR  129
+                 ++    VE +R
+Sbjct  122  DVLRQIKTPEEVEKIR  137
+
+
+>sp|F4JQH3|AMPP1_ARATH Aminopeptidase P1 OS=Arabidopsis thaliana 
+OX=3702 GN=APP1 PE=1 SV=1
+Length=645
+
+ Score = 118 bits (295),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 34/142 (24%), Positives = 59/142 (42%), Gaps = 22/142 (15%)
+
+Query  4    RDKLKAQIAASG--LDAXLISDLI------------NVRYLSGFSGSNGALLVFADERDA  49
+               L++ +A+    LDA ++                   ++SGFSGS G  L+   +++A
+Sbjct  5    LSSLRSLMASHSPPLDALVVPSEDYHQSEYVSARDKRREFVSGFSGSAGLALIT--KKEA  62
+
+Query  50   VLATDGRYRTQAASQAPDLEVAIERA----VGRYLAGRAGEAGVGKLGFESHVVTVDGLD  105
+             L TDGRY  QA  Q  D    +       V  +++    E     +G +S  V+VD  +
+Sbjct  63   RLWTDGRYFLQALQQLSDEWTLMRMGEDPLVEVWMSDNLPEEA--NIGVDSWCVSVDTAN  120
+
+Query  106  ALAGALEGKNTELVRASGTVES  127
+                +   KN +L+  +  +  
+Sbjct  121  RWGKSFAKKNQKLITTTTDLVD  142
+
+
+>sp|P75313|AMPP_MYCPN Putative Xaa-Pro aminopeptidase OS=Mycoplasma 
+pneumoniae (strain ATCC 29342 / M129) OX=272634 GN=pepP 
+PE=3 SV=1
+Length=354
+
+ Score = 103 bits (256),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 39/101 (39%), Gaps = 2/101 (2%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            +   L   +  +  DA LI    N  +L+GF  S G L+V   ++   L  DGRY   A 
+Sbjct  8    KLAVLHKLLQDNKADAILIGSDQNRFWLTGFPSSAGWLVVH--KQRVNLFIDGRYFEAAK  65
+
+Query  63   SQAPDLEVAIERAVGRYLAGRAGEAGVGKLGFESHVVTVDG  103
+            +    L         + +     + GV  L  E   +T + 
+Sbjct  66   TAIDPLVKVELFTTYKQVKALCEQVGVKHLLIEGDYLTFNY  106
+
+
+>sp|P47566|AMPP_MYCGE Putative Xaa-Pro aminopeptidase OS=Mycoplasma 
+genitalium (strain ATCC 33530 / G-37 / NCTC 10195) OX=243273 
+GN=pepP PE=3 SV=1
+Length=354
+
+ Score = 88.6 bits (218),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 25/134 (19%), Positives = 51/134 (38%), Gaps = 8/134 (6%)
+
+Query  3    RRDKLKAQIAASGLDAXLISDLINVRYLSGFSGSNGALLVFADERDAVLATDGRYRTQAA  62
+            +   LK  +  +  DA LI    N  +L+ F  S G L++ +++  A L  DGRY   A 
+Sbjct  8    KITVLKDLLKTNKADAILIGSDQNRFWLTNFPSSAGWLIITSNK--AKLFIDGRYYEAAR  65
+
+Query  63   SQAPDLEVAIERAVGRYLAGRAGEAGVGKLGFESHVVTVDGLDALAG------ALEGKNT  116
+            +    +         + +       G+  L  E   +T +  D +         +  +  
+Sbjct  66   NFINPIVEVELFVSFKQVKAFCESNGINHLLIEGDYLTFNYQDWIQAICKQYTVINAQEI  125
+
+Query  117  ELVRASGTVESLRE  130
+              V+    ++++ +
+Sbjct  126  RRVKLPSEIQAIEK  139
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.329    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,517 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1wcwa_
+
+Length=254
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus sub...  129     4e-35
+
+
+>sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yjjA PE=4 SV=1
+Length=270
+
+ Score = 129 bits (324),  Expect = 4e-35, Method: Compositional matrix adjust.
+ Identities = 93/254 (37%), Positives = 137/254 (54%), Gaps = 17/254 (7%)
+
+Query  3    RVAYAGLRRKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQ-GVDLFLATTG  61
+            RVA  G R+ E    + EK G  P++ P+Q T  +   +    +R  A+   D  + TTG
+Sbjct  9    RVAIGGSRKTEEISTIIEKQGGIPVIRPLQGTVYLAEKQVEPDLRTFAEEKADWVIFTTG  68
+
+Query  62   VGVRDLLEAGKALGLDLEGPLAKAFRLA----RGAKAARALKEAGLPPHAVG-DGTSKSL  116
+            +G+  L++  + +GL  E    +A R A    RG K   ALK+ G+ P A   DGT++ L
+Sbjct  69   IGLETLVDMAEKIGLKDE--FLQAIRQAKAACRGYKTLSALKKLGITPEASDEDGTTRGL  126
+
+Query  117  LPLLP----QGRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHL-PDPEGILRLEEA  171
+            +  L      G+ V  +QL+G+  P L   L E+G  VLP++PY+H+ P+ E + RL   
+Sbjct  127  IRSLEPHDFSGKTVM-VQLHGEKAPALMAFLEEKGASVLPILPYQHIPPEEETVERLCRE  185
+
+Query  172  LLRGEVDALAFVAAIQVEFLFEGAKDPKALRE---ALNTRVKALAVGRVTADALREWGVK  228
+            L+  EVDA+ F  AIQV  LF+ AK    + E       R  A AVG+VTA+ALRE G+ 
+Sbjct  186  LMNDEVDAVCFTTAIQVRSLFDFAKGRGYINEVKKVFEERAIAAAVGKVTAEALREEGIT  245
+
+Query  229  PFYVDETERLGSLL  242
+                 E ER+G+++
+Sbjct  246  RLLAPEIERMGAMI  259
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.139    0.396    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19188204404
+Results from round 2
+
+
+Query= d1wcwa_
+
+Length=254
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus sub...  318     4e-109
+
+Sequences not found previously or not previously below threshold:
+
+sp|O26268|HEM4_METTH Putative uroporphyrinogen-III synthase OS=Me...  60.0    2e-09
+sp|Q58401|HEM4_METJA Putative uroporphyrinogen-III synthase OS=Me...  42.3    0.002
+sp|P21248|HEM4_BACSU Uroporphyrinogen-III synthase OS=Bacillus su...  41.9    0.003
+
+
+>sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yjjA PE=4 SV=1
+Length=270
+
+ Score = 318 bits (815),  Expect = 4e-109, Method: Composition-based stats.
+ Identities = 93/254 (37%), Positives = 137/254 (54%), Gaps = 17/254 (7%)
+
+Query  3    RVAYAGLRRKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALA-QGVDLFLATTG  61
+            RVA  G R+ E    + EK G  P++ P+Q T  +   +    +R  A +  D  + TTG
+Sbjct  9    RVAIGGSRKTEEISTIIEKQGGIPVIRPLQGTVYLAEKQVEPDLRTFAEEKADWVIFTTG  68
+
+Query  62   VGVRDLLEAGKALGLDLEGPLAKAFRLA----RGAKAARALKEAGLPPHAVG-DGTSKSL  116
+            +G+  L++  + +GL  E    +A R A    RG K   ALK+ G+ P A   DGT++ L
+Sbjct  69   IGLETLVDMAEKIGLKDE--FLQAIRQAKAACRGYKTLSALKKLGITPEASDEDGTTRGL  126
+
+Query  117  LPLLP----QGRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHL-PDPEGILRLEEA  171
+            +  L      G+ V  +QL+G+  P L   L E+G  VLP++PY+H+ P+ E + RL   
+Sbjct  127  IRSLEPHDFSGKTVM-VQLHGEKAPALMAFLEEKGASVLPILPYQHIPPEEETVERLCRE  185
+
+Query  172  LLRGEVDALAFVAAIQVEFLFEGAKDPKALRE---ALNTRVKALAVGRVTADALREWGVK  228
+            L+  EVDA+ F  AIQV  LF+ AK    + E       R  A AVG+VTA+ALRE G+ 
+Sbjct  186  LMNDEVDAVCFTTAIQVRSLFDFAKGRGYINEVKKVFEERAIAAAVGKVTAEALREEGIT  245
+
+Query  229  PFYVDETERLGSLL  242
+                 E ER+G+++
+Sbjct  246  RLLAPEIERMGAMI  259
+
+
+>sp|O26268|HEM4_METTH Putative uroporphyrinogen-III synthase OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 
+/ DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=hemD 
+PE=3 SV=1
+Length=253
+
+ Score = 60.0 bits (144),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 66/252 (26%), Positives = 99/252 (39%), Gaps = 17/252 (7%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEA  70
+            R      L E  G   L+ P    ++      R+  R  A   DL + T+   V  L + 
+Sbjct  9    RSAEAVELIEGAGGRALVAPTLELKEAHTESLREVCRR-ADEWDLVIFTSQAAVESLFQL  67
+
+Query  71   GKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAV-GDGTSKSLLPLL-----PQGR  124
+             +     +      A     G + AR   E GL    V  D T++ LL  L        +
+Sbjct  68   CREFAGKIRKDCLVAVI---GPRTARVAGEHGLRVDIVPEDYTAEGLLDALTGLNIEGWK  124
+
+Query  125  GVAALQLYGKPLPLLENALAERGYRVLPLMPYRH-LPDPEG-ILRLEEALLRGEVDALAF  182
+                  L  + +  L   L   G  VL    YR  LP+  G    L + LL G+VDA+ F
+Sbjct  125  VALPRTLSARKV--LPRGLEMMGAEVLVAEAYRSGLPEDTGPAEELIDGLLDGKVDAVTF  182
+
+Query  183  VAAIQVEFLFEGAKD-PKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSL  241
+             + + VE LF+ A +  K L E L  RVK  A+G +T   L E G+      E   +  +
+Sbjct  183  TSPLTVENLFKIAGNRRKELIEVLK-RVKVAAIGPITLRKLEEHGITAV-TPERYTVKDM  240
+
+Query  242  LQGFKRALQKEV  253
+            +     ++ ++V
+Sbjct  241  IAALAVSMGEDV  252
+
+
+>sp|Q58401|HEM4_METJA Putative uroporphyrinogen-III synthase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=hemD PE=3 
+SV=1
+Length=240
+
+ Score = 42.3 bits (98),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 50/251 (20%), Positives = 91/251 (36%), Gaps = 47/251 (19%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTG---VGVRDL  67
+            R + F +L +K GF P++FP           Y   +       D    T+    +G+ ++
+Sbjct  11   RADVFASLLKKEGFEPIIFPTLEIV------YNKDLDVNLDSYDWIAFTSPSGVIGLYNI  64
+
+Query  68   LEAGKALGLDLEG------PLAKAFRLARG---------AKAARALKEAGLPPHAVGDGT  112
+            L   +   +  +         AK F+   G           A   L+E       V    
+Sbjct  65   LTENERENVKNKKIAVIGEKTAKTFKKYFGRDPDIMPNEYTAESLLREI----KKVSKEE  120
+
+Query  113  SKSLLPLLPQGRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEAL  172
+             K L+P  P  R V    L    L + ++A  E                 E I +L+E +
+Sbjct  121  EKFLIPTTPSTRDVLKNNLNADLLFVYKSAEPEN--------------LKEDIKKLKELI  166
+
+Query  173  LRGEVDALAFVAAIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYV  232
+             + +   L F + +  +  F+   D  A  E +      +A+G +TA  + ++G KP  +
+Sbjct  167  AKDKF-ILTFTSGLTAKNFFKYVDDEFA--EIIKDNYI-VAIGPITAKVIEKFGFKPL-I  221
+
+Query  233  DETERLGSLLQ  243
+             +   +  +L+
+Sbjct  222  PKVYTIEGMLE  232
+
+
+>sp|P21248|HEM4_BACSU Uroporphyrinogen-III synthase OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=hemD PE=3 SV=2
+Length=262
+
+ Score = 41.9 bits (97),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 45/237 (19%), Positives = 90/237 (38%), Gaps = 16/237 (7%)
+
+Query  14   AFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEAGKA  73
+            +F+   E LG   +L  +    +    +  +QVR         + T+  G          
+Sbjct  23   SFQQKVEALGGKAVLTSLITFRRALPNDVAEQVREDLAAPGWLVFTSVNGADFFFSY---  79
+
+Query  74   LGLDLEGPLAKAFRL--ARGAKAARALKEAGL-----PPHAVGDGTSKSLLPLLPQGRGV  126
+              L     +  A +   A G K AR LK   +     P   + +  + +L      G  +
+Sbjct  80   --LKENQLILPAHKKIAAVGEKTARRLKMHNVSVDVMPQEYIAEQLADALKQHAEPGETI  137
+
+Query  127  AALQLYGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEALLRGEVDALAFVAAI  186
+              ++       +++  L   G+ V   + Y  +PD EGI  L++A  +   D + F ++ 
+Sbjct  138  TVMKGNLSR-DVIKQELVPLGFEVKEWVLYETIPDEEGIEALKDAAGQYSFDYVTFTSSS  196
+
+Query  187  QVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSLLQ  243
+             V        +   L++        +++G +T DAL  +G+   +  +T  +  +L+
+Sbjct  197  TVHTFMHVLGEE--LKKWKANGTACISIGPLTNDALLTYGITS-HTPDTFTIDGMLE  250
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.341    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19188204404
+Results from round 3
+
+
+Query= d1wcwa_
+
+Length=254
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus sub...  258     2e-85
+sp|O26268|HEM4_METTH Putative uroporphyrinogen-III synthase OS=Me...  231     5e-75
+sp|Q58401|HEM4_METJA Putative uroporphyrinogen-III synthase OS=Me...  204     2e-64
+
+Sequences not found previously or not previously below threshold:
+
+sp|P21248|HEM4_BACSU Uroporphyrinogen-III synthase OS=Bacillus su...  83.3    1e-17
+sp|Q59335|HEM4_CHLP8 Uroporphyrinogen-III synthase OS=Chlorobacul...  81.4    4e-17
+sp|Q8KCJ3|HEM4_CHLTE Uroporphyrinogen-III synthase OS=Chlorobacul...  74.9    1e-14
+sp|Q59294|HEM4_RUMJO Porphyrin biosynthesis protein HemD OS=Rumin...  64.8    8e-11
+sp|P10746|HEM4_HUMAN Uroporphyrinogen-III synthase OS=Homo sapien...  52.1    1e-06
+sp|O30120|HEM4_ARCFU Putative uroporphyrinogen-III synthase OS=Ar...  47.1    4e-05
+
+
+>sp|O34394|YJJA_BACSU Uncharacterized protein YjjA OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yjjA PE=4 SV=1
+Length=270
+
+ Score = 258 bits (658),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 93/264 (35%), Positives = 141/264 (53%), Gaps = 17/264 (6%)
+
+Query  3    RVAYAGLRRKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQG-VDLFLATTG  61
+            RVA  G R+ E    + EK G  P++ P+Q T  +   +    +R  A+   D  + TTG
+Sbjct  9    RVAIGGSRKTEEISTIIEKQGGIPVIRPLQGTVYLAEKQVEPDLRTFAEEKADWVIFTTG  68
+
+Query  62   VGVRDLLEAGKALGLDLEGPLAKAFRLA----RGAKAARALKEAGLPPHAVG-DGTSKSL  116
+            +G+  L++  + +GL  E    +A R A    RG K   ALK+ G+ P A   DGT++ L
+Sbjct  69   IGLETLVDMAEKIGLKDE--FLQAIRQAKAACRGYKTLSALKKLGITPEASDEDGTTRGL  126
+
+Query  117  LPLLP----QGRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHL-PDPEGILRLEEA  171
+            +  L      G+ V  +QL+G+  P L   L E+G  VLP++PY+H+ P+ E + RL   
+Sbjct  127  IRSLEPHDFSGKTVM-VQLHGEKAPALMAFLEEKGASVLPILPYQHIPPEEETVERLCRE  185
+
+Query  172  LLRGEVDALAFVAAIQVEFLFEGAKDPKALRE---ALNTRVKALAVGRVTADALREWGVK  228
+            L+  EVDA+ F  AIQV  LF+ AK    + E       R  A AVG+VTA+ALRE G+ 
+Sbjct  186  LMNDEVDAVCFTTAIQVRSLFDFAKGRGYINEVKKVFEERAIAAAVGKVTAEALREEGIT  245
+
+Query  229  PFYVDETERLGSLLQGFKRALQKE  252
+                 E ER+G+++    +  +++
+Sbjct  246  RLLAPEIERMGAMIVELAKYYEEK  269
+
+
+>sp|O26268|HEM4_METTH Putative uroporphyrinogen-III synthase OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 
+/ DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=hemD 
+PE=3 SV=1
+Length=253
+
+ Score = 231 bits (589),  Expect = 5e-75, Method: Composition-based stats.
+ Identities = 66/252 (26%), Positives = 99/252 (39%), Gaps = 17/252 (7%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEA  70
+            R      L E  G   L+ P    ++      R+  R  A   DL + T+   V  L + 
+Sbjct  9    RSAEAVELIEGAGGRALVAPTLELKEAHTESLREVCRR-ADEWDLVIFTSQAAVESLFQL  67
+
+Query  71   GKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAV-GDGTSKSLLPLL-----PQGR  124
+             +     +      A     G + AR   E GL    V  D T++ LL  L        +
+Sbjct  68   CREFAGKIRKDCLVAVI---GPRTARVAGEHGLRVDIVPEDYTAEGLLDALTGLNIEGWK  124
+
+Query  125  GVAALQLYGKPLPLLENALAERGYRVLPLMPYRH-LPDPEG-ILRLEEALLRGEVDALAF  182
+                  L  + +  L   L   G  VL    YR  LP+  G    L + LL G+VDA+ F
+Sbjct  125  VALPRTLSARKV--LPRGLEMMGAEVLVAEAYRSGLPEDTGPAEELIDGLLDGKVDAVTF  182
+
+Query  183  VAAIQVEFLFEGAKD-PKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSL  241
+             + + VE LF+ A +  K L E L  RVK  A+G +T   L E G+      E   +  +
+Sbjct  183  TSPLTVENLFKIAGNRRKELIEVLK-RVKVAAIGPITLRKLEEHGITAV-TPERYTVKDM  240
+
+Query  242  LQGFKRALQKEV  253
+            +     ++ ++V
+Sbjct  241  IAALAVSMGEDV  252
+
+
+>sp|Q58401|HEM4_METJA Putative uroporphyrinogen-III synthase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=hemD PE=3 
+SV=1
+Length=240
+
+ Score = 204 bits (518),  Expect = 2e-64, Method: Composition-based stats.
+ Identities = 50/254 (20%), Positives = 92/254 (36%), Gaps = 47/254 (19%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTG---VGVRDL  67
+            R + F +L +K GF P++FP           Y   +       D    T+    +G+ ++
+Sbjct  11   RADVFASLLKKEGFEPIIFPTLEIV------YNKDLDVNLDSYDWIAFTSPSGVIGLYNI  64
+
+Query  68   LEAGKALGLDLEG------PLAKAFRLARG---------AKAARALKEAGLPPHAVGDGT  112
+            L   +   +  +         AK F+   G           A   L+E       V    
+Sbjct  65   LTENERENVKNKKIAVIGEKTAKTFKKYFGRDPDIMPNEYTAESLLREI----KKVSKEE  120
+
+Query  113  SKSLLPLLPQGRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEAL  172
+             K L+P  P  R V    L    L + ++A  E                 E I +L+E +
+Sbjct  121  EKFLIPTTPSTRDVLKNNLNADLLFVYKSAEPEN--------------LKEDIKKLKELI  166
+
+Query  173  LRGEVDALAFVAAIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYV  232
+             + +   L F + +  +  F+   D  A  E +      +A+G +TA  + ++G KP  +
+Sbjct  167  AKDKF-ILTFTSGLTAKNFFKYVDDEFA--EIIKDNYI-VAIGPITAKVIEKFGFKPL-I  221
+
+Query  233  DETERLGSLLQGFK  246
+             +   +  +L+  +
+Sbjct  222  PKVYTIEGMLEVIR  235
+
+
+>sp|P21248|HEM4_BACSU Uroporphyrinogen-III synthase OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=hemD PE=3 SV=2
+Length=262
+
+ Score = 83.3 bits (204),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 48/251 (19%), Positives = 94/251 (37%), Gaps = 21/251 (8%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEA  70
+            +  +F+   E LG   +L  +    +    +  +QVR         + T+  G       
+Sbjct  20   QAASFQQKVEALGGKAVLTSLITFRRALPNDVAEQVREDLAAPGWLVFTSVNGADFFFSY  79
+
+Query  71   GKALGLDLEGPLAKAFRL--ARGAKAARALKEAGLPPHAV-GDGTSKSLLPLLPQ-----  122
+                 L     +  A +   A G K AR LK   +    +  +  ++ L   L Q     
+Sbjct  80   -----LKENQLILPAHKKIAAVGEKTARRLKMHNVSVDVMPQEYIAEQLADALKQHAEPG  134
+
+Query  123  -GRGVAALQLYGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEALLRGEVDALA  181
+                V    L      +++  L   G+ V   + Y  +PD EGI  L++A  +   D + 
+Sbjct  135  ETITVMKGNLSRD---VIKQELVPLGFEVKEWVLYETIPDEEGIEALKDAAGQYSFDYVT  191
+
+Query  182  FVAAIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSL  241
+            F ++  V        +   L++        +++G +T DAL  +G+   +  +T  +  +
+Sbjct  192  FTSSSTVHTFMHVLGEE--LKKWKANGTACISIGPLTNDALLTYGITS-HTPDTFTIDGM  248
+
+Query  242  LQGFKRALQKE  252
+            L+    ++ +E
+Sbjct  249  LE-LMCSMSRE  258
+
+
+>sp|Q59335|HEM4_CHLP8 Uroporphyrinogen-III synthase OS=Chlorobaculum 
+parvum (strain NCIB 8327) OX=517417 GN=hemD PE=3 SV=1
+Length=246
+
+ Score = 81.4 bits (199),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 47/250 (19%), Positives = 90/250 (36%), Gaps = 25/250 (10%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEA  70
+            +   F    E+ G + ++FP      V        +   A        T+   V+  L+ 
+Sbjct  12   QAAPFVRELEQYGLSTVVFPTIEIRPVAGWNV-PDLTKFAG----IFFTSPNSVQFFLKH  66
+
+Query  71   GKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAVGDGTSKSLLPLLPQGRGVAALQ  130
+                  D    L +    A G    + L++ G+    +       +   +     +   +
+Sbjct  67   LLQTAPDELKNLQQTRVWAVGKTTGQDLEKHGVSIEPLPK-----IADAVNLMADIDPAE  121
+
+Query  131  LYGK---------PLPLLENALAERGYRVLPLMPYRHLPDP-EGILRLEEALLRGEVDAL  180
+            + G+          L  +   +AE G   + L  Y +LP   E   R+++ L  G++D L
+Sbjct  122  IKGQTFLFVRGSLSLGTIPELIAEFGGTCVELTVYENLPPSLEDTQRVKDMLAEGKLDCL  181
+
+Query  181  AFVAAIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGS  240
+            +F +    +  FE     +     L+  V+  A+G  T+ AL + G+K   + E     S
+Sbjct  182  SFTSPSTAKNFFEAIGSKE-----LSDSVQIAAIGTTTSGALEKMGIKVDIIPEYFDGPS  236
+
+Query  241  LLQGFKRALQ  250
+              +    AL+
+Sbjct  237  FAKAIAEALK  246
+
+
+>sp|Q8KCJ3|HEM4_CHLTE Uroporphyrinogen-III synthase OS=Chlorobaculum 
+tepidum (strain ATCC 49652 / DSM 12025 / NBRC 103806 
+/ TLS) OX=194439 GN=hemD PE=3 SV=1
+Length=246
+
+ Score = 74.9 bits (182),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 48/244 (20%), Positives = 86/244 (35%), Gaps = 15/244 (6%)
+
+Query  11   RKEAFKALAEKLGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEA  70
+            + E F     + G   ++FP      V        +   A        T+   V+  LE 
+Sbjct  12   QAEPFVRELAQYGLDSVVFPTIEIRPVTGWSV-PDLTRFAG----IFFTSPNSVQFFLER  66
+
+Query  71   GKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAVGD-GTSKSLLPLLPQGRGVAAL  129
+                  D    L +A   A G      L++ G+    +     + SL+  +         
+Sbjct  67   LLEESPDELPNLQQARVWAVGKTTGGDLEKHGVSIEPLPKSADAVSLMSGIDASEIEGKT  126
+
+Query  130  QLYGK---PLPLLENALAERGYRVLPLMPYRHL-PDPEGILRLEEALLRGEVDALAFVAA  185
+             L+ +    L  +   +A+RG   + L  Y ++ P  E   +++  L  G++D L+F + 
+Sbjct  127  FLFVRGSLSLGTIPEVIAKRGGICVELTVYDNIQPSLEETQKIKSLLTEGKIDCLSFTSP  186
+
+Query  186  IQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSLLQGF  245
+                  FE     +   + L       A+G  T+ AL + GVK   + E     +  +  
+Sbjct  187  STAINFFEAIDSKEVPSDVL-----IAAIGTTTSSALEKLGVKVDIIPEYFDGPNFAKAI  241
+
+Query  246  KRAL  249
+              AL
+Sbjct  242  AAAL  245
+
+
+>sp|Q59294|HEM4_RUMJO Porphyrin biosynthesis protein HemD OS=Ruminiclostridium 
+josui OX=1499 GN=hemD PE=3 SV=1
+Length=504
+
+ Score = 64.8 bits (156),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 52/249 (21%), Positives = 97/249 (39%), Gaps = 25/249 (10%)
+
+Query  9    LRRKEAFKALAEKL---GFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVR  65
+             R KE+   L EKL   G  P+ +P      +P  E         +     L T+  G++
+Sbjct  259  TRPKESSGTLVEKLRQLGAEPVEYPCIEVVPIPQNEKLYHACENIREYGWILLTSKNGIQ  318
+
+Query  66   DLLEAGKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAVGDGTSKSLLPLLPQGRG  125
+               +   + GLD    LA       G++ A+ALKE GL    + D T + +        G
+Sbjct  319  IFFDYLNSKGLDARV-LANTKIGTVGSQTAKALKEVGL----ISDFTPE-IFDGRHLALG  372
+
+Query  126  VAALQLYGKPLPLLENA---------LAERGYRVLPLMPYRHLPDPEGILRLEEALLRGE  176
+            +A      + + + + A         L     +   +  Y      E   +++++++ GE
+Sbjct  373  IAERVGENEKVLICDAAIASDDIVNILRSNNIKFDRVPLYNTNYINENSNKVKKSIVHGE  432
+
+Query  177  VDALAFVAAIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETE  236
+            +  + F +A  VE      KD           + A+ +G  TA+A +++ +  + V E  
+Sbjct  433  LKYITFTSASTVEGFIASMKD------IPLESLTAVCIGNKTAEAAKKYNL-RYVVAEKS  485
+
+Query  237  RLGSLLQGF  245
+             + S++   
+Sbjct  486  TIDSMIDKL  494
+
+
+>sp|P10746|HEM4_HUMAN Uroporphyrinogen-III synthase OS=Homo sapiens 
+OX=9606 GN=UROS PE=1 SV=1
+Length=265
+
+ Score = 52.1 bits (123),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 42/240 (18%), Positives = 82/240 (34%), Gaps = 18/240 (8%)
+
+Query  23   GFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVRDLLEAGKALGLDLE---  79
+            G    L PV + E + +P + +++ +  +     + T+   V    E         E   
+Sbjct  27   GLEATLIPVLSFEFLSLPSFSEKL-SHPEDYGGLIFTSPRAVEA-AELCLEQNNKTEVWE  84
+
+Query  80   -----GPLAKAFRLARGAKAARALKEAGLPPHAVGDGTSKSL---LPLLPQGRGVAALQL  131
+                    AK+     G   A  + + GL       G ++ L   +              
+Sbjct  85   RSLKEKWNAKSV-YVVGNATASLVSKIGLDTEGETCGNAEKLAEYICSRESSALPLLFPC  143
+
+Query  132  YGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEALLRGEVDA-LAFVAAIQVEF  190
+                  +L  AL ++G  +  +  Y+ +  P     L     +  V A + F +   + +
+Sbjct  144  GNLKREILPKALKDKGIAMESITVYQTVAHPGIQGNLNSYYSQQGVPASITFFSPSGLTY  203
+
+Query  191  LFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSLLQGFKRALQ  250
+              +  ++          ++K  A+G  TA AL   G+      E+    +L  G ++ALQ
+Sbjct  204  SLKHIQELSGDN---IDQIKFAAIGPTTARALAAQGLPVSCTAESPTPQALATGIRKALQ  260
+
+
+>sp|O30120|HEM4_ARCFU Putative uroporphyrinogen-III synthase OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 
+/ JCM 9628 / NBRC 100126) OX=224325 GN=AF_0116 PE=3 SV=1
+Length=226
+
+ Score = 47.1 bits (110),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 43/242 (18%), Positives = 77/242 (32%), Gaps = 29/242 (12%)
+
+Query  9    LRRKEAFKALAEK---LGFTPLLFPVQATEKVPVPEYRDQVRALAQGVDLFLATTGVGVR  65
+            LR  E       +    GF     P                       D  + T+    R
+Sbjct  6    LRPAELLSETIRRFREEGFDAYGCPFIKLIYT---------DFDVPEHDFAIVTSQNAAR  56
+
+Query  66   DLLEAGKALGLDLEGPLAKAFRLARGAKAARALKEAGLPPHAVGDGTSKSLLPLLPQGRG  125
+             L    +  G+ L+  +A   + A   +A   L    LP     +   +    +L   R 
+Sbjct  57   VL----RERGVRLKRVIAIGKKTAELIEAEEVL----LPSKFDSETLYEEFAEMLRGKRV  108
+
+Query  126  VAAL-QLYGKPLPLLENALAERGYRVLPLMPYRHLPDPEGILRLEEALLRGEVDALAFVA  184
+            VA       + +  L      R  +V  +   +       + ++ E       DA+ F +
+Sbjct  109  VAFRSNAGSEAVKRLSEVADFREIQVYRIEKLQGEEQRREVEKVREGF----YDAIVFSS  164
+
+Query  185  AIQVEFLFEGAKDPKALREALNTRVKALAVGRVTADALREWGVKPFYVDETERLGSLLQG  244
+            ++    L E   +     EAL   +  +A+G  TA  L E G++   + E      +++ 
+Sbjct  165  SMIARSLLELCDEK--CLEALK-NIFVVAIGPPTAKVLAEKGIRA-EIPEEYTFDGVIEL  220
+
+Query  245  FK  246
+             K
+Sbjct  221  LK  222
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.120    0.269    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0368    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19188204404
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

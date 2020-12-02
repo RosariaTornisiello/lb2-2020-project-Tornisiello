@@ -1,0 +1,393 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1rgxa_
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q99P87|RETN_MOUSE Resistin OS=Mus musculus OX=10090 GN=Retn PE...  182     1e-60
+sp|Q762I5|RETN_BOVIN Resistin OS=Bos taurus OX=9913 GN=RETN PE=3 ...  119     1e-35
+sp|Q9HD89|RETN_HUMAN Resistin OS=Homo sapiens OX=9606 GN=RETN PE=...  112     7e-33
+sp|Q9BQ08|RETNB_HUMAN Resistin-like beta OS=Homo sapiens OX=9606 ...  91.7    2e-24
+sp|Q99P86|RETNB_MOUSE Resistin-like beta OS=Mus musculus OX=10090...  85.5    3e-22
+sp|G3V686|RETNG_RAT Resistin-like gamma OS=Rattus norvegicus OX=1...  83.6    2e-21
+sp|Q8K426|RETNG_MOUSE Resistin-like gamma OS=Mus musculus OX=1009...  80.1    6e-20
+sp|Q99P85|RETNA_RAT Resistin-like alpha OS=Rattus norvegicus OX=1...  72.0    8e-17
+sp|Q9EP95|RETNA_MOUSE Resistin-like alpha OS=Mus musculus OX=1009...  67.8    4e-15
+
+
+>sp|Q99P87|RETN_MOUSE Resistin OS=Mus musculus OX=10090 GN=Retn 
+PE=1 SV=1
+Length=114
+
+ Score = 182 bits (463),  Expect = 1e-60, Method: Compositional matrix adjust.
+ Identities = 89/89 (100%), Positives = 89/89 (100%), Gaps = 0/89 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW
+Sbjct  26   CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  85
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQVAS  89
+            DIREEKVCHCQCARIDWTAARCCKLQVAS
+Sbjct  86   DIREEKVCHCQCARIDWTAARCCKLQVAS  114
+
+
+>sp|Q762I5|RETN_BOVIN Resistin OS=Bos taurus OX=9913 GN=RETN PE=3 
+SV=1
+Length=109
+
+ Score = 119 bits (299),  Expect = 1e-35, Method: Compositional matrix adjust.
+ Identities = 52/87 (60%), Positives = 67/87 (77%), Gaps = 0/87 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            CPID+AI +KI++   SL P A++ IGL+C +V+SRG L +CP G AV  C+CGSACGSW
+Sbjct  22   CPIDKAISEKIQEVTTSLVPGAVRIIGLDCRSVTSRGSLVTCPSGFAVTGCTCGSACGSW  81
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQV  87
+            D+R E  CHCQCA +DWT ARCC+L +
+Sbjct  82   DVRAETTCHCQCAGMDWTGARCCRLHI  108
+
+
+>sp|Q9HD89|RETN_HUMAN Resistin OS=Homo sapiens OX=9606 GN=RETN 
+PE=1 SV=1
+Length=108
+
+ Score = 112 bits (281),  Expect = 7e-33, Method: Compositional matrix adjust.
+ Identities = 50/86 (58%), Positives = 66/86 (77%), Gaps = 0/86 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            C ++EAI+++I++   SL   AI +IGL C +V+SRG LA+CP G AV  C+CGSACGSW
+Sbjct  22   CSMEEAINERIQEVAGSLIFRAISSIGLECQSVTSRGDLATCPRGFAVTGCTCGSACGSW  81
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQ  86
+            D+R E  CHCQCA +DWT ARCC++Q
+Sbjct  82   DVRAETTCHCQCAGMDWTGARCCRVQ  107
+
+
+>sp|Q9BQ08|RETNB_HUMAN Resistin-like beta OS=Homo sapiens OX=9606 
+GN=RETNLB PE=2 SV=1
+Length=111
+
+ Score = 91.7 bits (226),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 45/87 (52%), Positives = 58/87 (67%), Gaps = 3/87 (3%)
+
+Query  1    CPIDEAIDKKIKQDFNSL--FPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACG  58
+            C +D  +DKKIK   NSL   P+ I    L+C +V S+G+ +SCP G AV  C+CG  CG
+Sbjct  25   CSLDSVMDKKIKDVLNSLEYSPSPISK-KLSCASVKSQGRPSSCPAGMAVTGCACGYGCG  83
+
+Query  59   SWDIREEKVCHCQCARIDWTAARCCKL  85
+            SWD++ E  CHCQC+ +DWT ARCC L
+Sbjct  84   SWDVQLETTCHCQCSVVDWTTARCCHL  110
+
+
+>sp|Q99P86|RETNB_MOUSE Resistin-like beta OS=Mus musculus OX=10090 
+GN=Retnlb PE=1 SV=1
+Length=105
+
+ Score = 85.5 bits (210),  Expect = 3e-22, Method: Compositional matrix adjust.
+ Identities = 38/85 (45%), Positives = 54/85 (64%), Gaps = 5/85 (6%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            C  +  +D++IK+  +   P  I     +C +V+S G+LASCP G  V  C+CG  CGSW
+Sbjct  25   CSFESLVDQRIKEALSRQEPKTI-----SCTSVTSSGRLASCPAGMVVTGCACGYGCGSW  79
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKL  85
+            DIR    CHCQC+ +DW +ARCC++
+Sbjct  80   DIRNGNTCHCQCSVMDWASARCCRM  104
+
+
+>sp|G3V686|RETNG_RAT Resistin-like gamma OS=Rattus norvegicus 
+OX=10116 GN=Retnlg PE=2 SV=1
+Length=111
+
+ Score = 83.6 bits (205),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 40/88 (45%), Positives = 54/88 (61%), Gaps = 7/88 (8%)
+
+Query  4    DEAIDKKIKQDFNSLF------PNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSAC  57
+            D  ++  ++Q    L       P+ +    L+C +V + G+LASCP G AV  C+CG AC
+Sbjct  24   DGTLESIVEQKVKELLAHRDNCPSTVTKT-LSCTSVKATGRLASCPPGMAVTGCACGYAC  82
+
+Query  58   GSWDIREEKVCHCQCARIDWTAARCCKL  85
+            GSWDIR+   CHCQCA +DW  ARCC+L
+Sbjct  83   GSWDIRDGTTCHCQCAVMDWATARCCQL  110
+
+
+>sp|Q8K426|RETNG_MOUSE Resistin-like gamma OS=Mus musculus OX=10090 
+GN=Retnlg PE=1 SV=1
+Length=117
+
+ Score = 80.1 bits (196),  Expect = 6e-20, Method: Compositional matrix adjust.
+ Identities = 35/85 (41%), Positives = 55/85 (65%), Gaps = 3/85 (4%)
+
+Query  3    IDEAIDKKIKQDFNSLF--PNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            ++  ++KK+K+   +    P+ +     +C ++++ G+LASCP G  V  C+CG  CGSW
+Sbjct  33   LESIVEKKVKELLANRDDCPSTVTKT-FSCTSITASGRLASCPSGMTVTGCACGYGCGSW  91
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKL  85
+            DIR+   CHCQC+ +DW  ARCC+L
+Sbjct  92   DIRDGNTCHCQCSTMDWATARCCQL  116
+
+
+>sp|Q99P85|RETNA_RAT Resistin-like alpha OS=Rattus norvegicus 
+OX=10116 GN=Retnla PE=2 SV=1
+Length=111
+
+ Score = 72.0 bits (175),  Expect = 8e-17, Method: Compositional matrix adjust.
+ Identities = 37/85 (44%), Positives = 51/85 (60%), Gaps = 3/85 (4%)
+
+Query  3    IDEAIDKKIKQDF--NSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            +D    KK+K+       +P+A++   L+C  V S  K ASCP G     CSCG ACGSW
+Sbjct  27   LDIIGKKKVKELLAHQDNYPSAVRKT-LSCTNVKSMSKWASCPAGMTATGCSCGFACGSW  85
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKL  85
+            +I+ E +C+C C  +DW  ARCC+L
+Sbjct  86   EIQNENICNCLCLIVDWAYARCCQL  110
+
+
+>sp|Q9EP95|RETNA_MOUSE Resistin-like alpha OS=Mus musculus OX=10090 
+GN=Retnla PE=1 SV=1
+Length=111
+
+ Score = 67.8 bits (164),  Expect = 4e-15, Method: Compositional matrix adjust.
+ Identities = 33/88 (38%), Positives = 49/88 (56%), Gaps = 7/88 (8%)
+
+Query  4    DEAIDKKIKQDFNSL------FPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSAC  57
+            DE I+  ++     L      +P+ +    L+C +V +  + ASCP G     C+CG AC
+Sbjct  24   DETIEIIVENKVKELLANPANYPSTVTKT-LSCTSVKTMNRWASCPAGMTATGCACGFAC  82
+
+Query  58   GSWDIREEKVCHCQCARIDWTAARCCKL  85
+            GSW+I+    C+C C  +DWT ARCC+L
+Sbjct  83   GSWEIQSGDTCNCLCLLVDWTTARCCQL  110
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.133    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5087316840
+Results from round 2
+
+
+Query= d1rgxa_
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q99P87|RETN_MOUSE Resistin OS=Mus musculus OX=10090 GN=Retn PE...  114     1e-33
+sp|Q762I5|RETN_BOVIN Resistin OS=Bos taurus OX=9913 GN=RETN PE=3 ...  113     4e-33
+sp|Q9HD89|RETN_HUMAN Resistin OS=Homo sapiens OX=9606 GN=RETN PE=...  104     2e-29
+sp|Q99P86|RETNB_MOUSE Resistin-like beta OS=Mus musculus OX=10090...  104     2e-29
+sp|G3V686|RETNG_RAT Resistin-like gamma OS=Rattus norvegicus OX=1...  98.6    2e-27
+sp|Q8K426|RETNG_MOUSE Resistin-like gamma OS=Mus musculus OX=1009...  97.9    7e-27
+sp|Q99P85|RETNA_RAT Resistin-like alpha OS=Rattus norvegicus OX=1...  97.5    8e-27
+sp|Q9BQ08|RETNB_HUMAN Resistin-like beta OS=Homo sapiens OX=9606 ...  96.7    2e-26
+sp|Q9EP95|RETNA_MOUSE Resistin-like alpha OS=Mus musculus OX=1009...  93.2    4e-25
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q99P87|RETN_MOUSE Resistin OS=Mus musculus OX=10090 GN=Retn 
+PE=1 SV=1
+Length=114
+
+ Score = 114 bits (286),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 89/89 (100%), Positives = 89/89 (100%), Gaps = 0/89 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW
+Sbjct  26   CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  85
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQVAS  89
+            DIREEKVCHCQCARIDWTAARCCKLQVAS
+Sbjct  86   DIREEKVCHCQCARIDWTAARCCKLQVAS  114
+
+
+>sp|Q762I5|RETN_BOVIN Resistin OS=Bos taurus OX=9913 GN=RETN PE=3 
+SV=1
+Length=109
+
+ Score = 113 bits (283),  Expect = 4e-33, Method: Composition-based stats.
+ Identities = 52/87 (60%), Positives = 67/87 (77%), Gaps = 0/87 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            CPID+AI +KI++   SL P A++ IGL+C +V+SRG L +CP G AV  C+CGSACGSW
+Sbjct  22   CPIDKAISEKIQEVTTSLVPGAVRIIGLDCRSVTSRGSLVTCPSGFAVTGCTCGSACGSW  81
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQV  87
+            D+R E  CHCQCA +DWT ARCC+L +
+Sbjct  82   DVRAETTCHCQCAGMDWTGARCCRLHI  108
+
+
+>sp|Q9HD89|RETN_HUMAN Resistin OS=Homo sapiens OX=9606 GN=RETN 
+PE=1 SV=1
+Length=108
+
+ Score = 104 bits (259),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 50/86 (58%), Positives = 66/86 (77%), Gaps = 0/86 (0%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            C ++EAI+++I++   SL   AI +IGL C +V+SRG LA+CP G AV  C+CGSACGSW
+Sbjct  22   CSMEEAINERIQEVAGSLIFRAISSIGLECQSVTSRGDLATCPRGFAVTGCTCGSACGSW  81
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKLQ  86
+            D+R E  CHCQCA +DWT ARCC++Q
+Sbjct  82   DVRAETTCHCQCAGMDWTGARCCRVQ  107
+
+
+>sp|Q99P86|RETNB_MOUSE Resistin-like beta OS=Mus musculus OX=10090 
+GN=Retnlb PE=1 SV=1
+Length=105
+
+ Score = 104 bits (258),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 38/85 (45%), Positives = 54/85 (64%), Gaps = 5/85 (6%)
+
+Query  1    CPIDEAIDKKIKQDFNSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGSW  60
+            C  +  +D++IK+  +   P  I     +C +V+S G+LASCP G  V  C+CG  CGSW
+Sbjct  25   CSFESLVDQRIKEALSRQEPKTI-----SCTSVTSSGRLASCPAGMVVTGCACGYGCGSW  79
+
+Query  61   DIREEKVCHCQCARIDWTAARCCKL  85
+            DIR    CHCQC+ +DW +ARCC++
+Sbjct  80   DIRNGNTCHCQCSVMDWASARCCRM  104
+
+
+>sp|G3V686|RETNG_RAT Resistin-like gamma OS=Rattus norvegicus 
+OX=10116 GN=Retnlg PE=2 SV=1
+Length=111
+
+ Score = 98.6 bits (244),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 39/86 (45%), Positives = 56/86 (65%), Gaps = 3/86 (3%)
+
+Query  2    PIDEAIDKKIKQDFNSLF--PNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGS  59
+             ++  +++K+K+        P+ +    L+C +V + G+LASCP G AV  C+CG ACGS
+Sbjct  26   TLESIVEQKVKELLAHRDNCPSTVTKT-LSCTSVKATGRLASCPPGMAVTGCACGYACGS  84
+
+Query  60   WDIREEKVCHCQCARIDWTAARCCKL  85
+            WDIR+   CHCQCA +DW  ARCC+L
+Sbjct  85   WDIRDGTTCHCQCAVMDWATARCCQL  110
+
+
+>sp|Q8K426|RETNG_MOUSE Resistin-like gamma OS=Mus musculus OX=10090 
+GN=Retnlg PE=1 SV=1
+Length=117
+
+ Score = 97.9 bits (242),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 35/86 (41%), Positives = 55/86 (64%), Gaps = 3/86 (3%)
+
+Query  2    PIDEAIDKKIKQDFNSLF--PNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGS  59
+             ++  ++KK+K+   +    P+ +     +C ++++ G+LASCP G  V  C+CG  CGS
+Sbjct  32   TLESIVEKKVKELLANRDDCPSTVTKT-FSCTSITASGRLASCPSGMTVTGCACGYGCGS  90
+
+Query  60   WDIREEKVCHCQCARIDWTAARCCKL  85
+            WDIR+   CHCQC+ +DW  ARCC+L
+Sbjct  91   WDIRDGNTCHCQCSTMDWATARCCQL  116
+
+
+>sp|Q99P85|RETNA_RAT Resistin-like alpha OS=Rattus norvegicus 
+OX=10116 GN=Retnla PE=2 SV=1
+Length=111
+
+ Score = 97.5 bits (241),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 37/86 (43%), Positives = 51/86 (59%), Gaps = 3/86 (3%)
+
+Query  2    PIDEAIDKKIKQDF--NSLFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGS  59
+             +D    KK+K+       +P+A++   L+C  V S  K ASCP G     CSCG ACGS
+Sbjct  26   TLDIIGKKKVKELLAHQDNYPSAVRKT-LSCTNVKSMSKWASCPAGMTATGCSCGFACGS  84
+
+Query  60   WDIREEKVCHCQCARIDWTAARCCKL  85
+            W+I+ E +C+C C  +DW  ARCC+L
+Sbjct  85   WEIQNENICNCLCLIVDWAYARCCQL  110
+
+
+>sp|Q9BQ08|RETNB_HUMAN Resistin-like beta OS=Homo sapiens OX=9606 
+GN=RETNLB PE=2 SV=1
+Length=111
+
+ Score = 96.7 bits (239),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 45/87 (52%), Positives = 58/87 (67%), Gaps = 3/87 (3%)
+
+Query  1    CPIDEAIDKKIKQDFNSLF--PNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACG  58
+            C +D  +DKKIK   NSL   P+ I    L+C +V S+G+ +SCP G AV  C+CG  CG
+Sbjct  25   CSLDSVMDKKIKDVLNSLEYSPSPISK-KLSCASVKSQGRPSSCPAGMAVTGCACGYGCG  83
+
+Query  59   SWDIREEKVCHCQCARIDWTAARCCKL  85
+            SWD++ E  CHCQC+ +DWT ARCC L
+Sbjct  84   SWDVQLETTCHCQCSVVDWTTARCCHL  110
+
+
+>sp|Q9EP95|RETNA_MOUSE Resistin-like alpha OS=Mus musculus OX=10090 
+GN=Retnla PE=1 SV=1
+Length=111
+
+ Score = 93.2 bits (230),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 32/86 (37%), Positives = 51/86 (59%), Gaps = 3/86 (3%)
+
+Query  2    PIDEAIDKKIKQDFNS--LFPNAIKNIGLNCWTVSSRGKLASCPEGTAVLSCSCGSACGS  59
+             I+  ++ K+K+   +   +P+ +    L+C +V +  + ASCP G     C+CG ACGS
+Sbjct  26   TIEIIVENKVKELLANPANYPSTVTKT-LSCTSVKTMNRWASCPAGMTATGCACGFACGS  84
+
+Query  60   WDIREEKVCHCQCARIDWTAARCCKL  85
+            W+I+    C+C C  +DWT ARCC+L
+Sbjct  85   WEIQSGDTCNCLCLLVDWTTARCCQL  110
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.128    0.461    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0391    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5087316840
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

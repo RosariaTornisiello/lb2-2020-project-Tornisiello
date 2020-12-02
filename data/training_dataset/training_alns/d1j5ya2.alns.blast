@@ -1,0 +1,229 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1j5ya2
+
+Length=107
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9X1T8|NIAR_THEMA Probable transcription repressor NiaR OS=The...  211     8e-71
+sp|P39667|NADR_BACSU Transcription repressor NadR OS=Bacillus sub...  80.5    4e-19
+sp|P56509|Y534_METFV Uncharacterized protein Mfer_0534 OS=Methano...  47.8    2e-06
+
+
+>sp|Q9X1T8|NIAR_THEMA Probable transcription repressor NiaR OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / 
+JCM 10099) OX=243274 GN=niaR PE=1 SV=1
+Length=175
+
+ Score = 211 bits (538),  Expect = 8e-71, Method: Compositional matrix adjust.
+ Identities = 107/107 (100%), Positives = 107/107 (100%), Gaps = 0/107 (0%)
+
+Query  1    KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV  60
+            KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV
+Sbjct  68   KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV  127
+
+Query  61   NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  107
+            NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE
+Sbjct  128  NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  174
+
+
+>sp|P39667|NADR_BACSU Transcription repressor NadR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=nadR PE=1 SV=2
+Length=180
+
+ Score = 80.5 bits (197),  Expect = 4e-19, Method: Compositional matrix adjust.
+ Identities = 39/102 (38%), Positives = 61/102 (60%), Gaps = 0/102 (0%)
+
+Query  6    RLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFVNLMEM  65
+            R++A  H PE  +EEL  +V  G  + DV +EHPVYG++   I V + +EV  F+  +  
+Sbjct  79   RIIACLHGPERTEEELQLIVDEGVTVKDVKIEHPVYGDLTAAIQVGTRKEVSHFIKKINS  138
+
+Query  66   AKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  107
+                 L  L+ GVHLHT+ APDE  +++  + L++ G LI++
+Sbjct  139  TNAAYLSQLTDGVHLHTLTAPDEHRIDQACQALEEAGILIKD  180
+
+
+>sp|P56509|Y534_METFV Uncharacterized protein Mfer_0534 OS=Methanothermus 
+fervidus (strain ATCC 43054 / DSM 2088 / JCM 10308 
+/ V24 S) OX=523846 GN=Mfer_0534 PE=4 SV=2
+Length=636
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 34/105 (32%), Positives = 59/105 (56%), Gaps = 7/105 (7%)
+
+Query  8    VAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGE-IRGIIDVSSEEEVLKFVNLME--  64
+            V  KH  +EI++E   ++++G  I D+    P + E ++  +   S E++ KF+N ++  
+Sbjct  385  VVNKHGIDEIRDEAEIILKHGCTIEDIEYYIPGFREPLKRHVGADSIEDIDKFLNTLKKD  444
+
+Query  65   ---MAKTEPLLTLSGG-VHLHTIEAPDEETMERIMRELKKKGFLI  105
+                   + L  LSGG +H H I A   E++ ++ +ELK+KGFLI
+Sbjct  445  PKKYDAIDRLYMLSGGGIHSHVISARSLESLNKVEKELKEKGFLI  489
+
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 29/106 (27%), Positives = 55/106 (52%), Gaps = 10/106 (9%)
+
+Query  8    VAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGE-IRGIIDVSSEEEVLKFVNLMEMA  66
+            + VKH  E IK E   + ++   + +++   P + E ++  I+VS  + + KF  L ++ 
+Sbjct  252  ITVKHGMESIKREAEIIFKHNCTLENIMYHLPEFREPLKRKIEVSDLDHIEKF--LFQVK  309
+
+Query  67   KT-------EPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLI  105
+            K          +   + GVH H I  P +E +E+++ +LKK+G L+
+Sbjct  310  KNPRLRESLNKMYESTSGVHSHWISGPSKENLEKVVEDLKKEGILL  355
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.137    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4960149854
+Results from round 2
+
+
+Query= d1j5ya2
+
+Length=107
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9X1T8|NIAR_THEMA Probable transcription repressor NiaR OS=The...  143     7e-44
+sp|P39667|NADR_BACSU Transcription repressor NadR OS=Bacillus sub...  141     4e-43
+sp|P56509|Y534_METFV Uncharacterized protein Mfer_0534 OS=Methano...  122     1e-32
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9X1T8|NIAR_THEMA Probable transcription repressor NiaR OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / 
+JCM 10099) OX=243274 GN=niaR PE=1 SV=1
+Length=175
+
+ Score = 143 bits (361),  Expect = 7e-44, Method: Composition-based stats.
+ Identities = 107/107 (100%), Positives = 107/107 (100%), Gaps = 0/107 (0%)
+
+Query  1    KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV  60
+            KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV
+Sbjct  68   KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFV  127
+
+Query  61   NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  107
+            NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE
+Sbjct  128  NLMEMAKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  174
+
+
+>sp|P39667|NADR_BACSU Transcription repressor NadR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=nadR PE=1 SV=2
+Length=180
+
+ Score = 141 bits (356),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 39/102 (38%), Positives = 61/102 (60%), Gaps = 0/102 (0%)
+
+Query  6    RLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGEIRGIIDVSSEEEVLKFVNLMEM  65
+            R++A  H PE  +EEL  +V  G  + DV +EHPVYG++   I V + +EV  F+  +  
+Sbjct  79   RIIACLHGPERTEEELQLIVDEGVTVKDVKIEHPVYGDLTAAIQVGTRKEVSHFIKKINS  138
+
+Query  66   AKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLIEE  107
+                 L  L+ GVHLHT+ APDE  +++  + L++ G LI++
+Sbjct  139  TNAAYLSQLTDGVHLHTLTAPDEHRIDQACQALEEAGILIKD  180
+
+
+>sp|P56509|Y534_METFV Uncharacterized protein Mfer_0534 OS=Methanothermus 
+fervidus (strain ATCC 43054 / DSM 2088 / JCM 10308 
+/ V24 S) OX=523846 GN=Mfer_0534 PE=4 SV=2
+Length=636
+
+ Score = 122 bits (307),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 34/105 (32%), Positives = 59/105 (56%), Gaps = 7/105 (7%)
+
+Query  8    VAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGE-IRGIIDVSSEEEVLKFVNLM---  63
+            V  KH  +EI++E   ++++G  I D+    P + E ++  +   S E++ KF+N +   
+Sbjct  385  VVNKHGIDEIRDEAEIILKHGCTIEDIEYYIPGFREPLKRHVGADSIEDIDKFLNTLKKD  444
+
+Query  64   --EMAKTEPLLTLS-GGVHLHTIEAPDEETMERIMRELKKKGFLI  105
+              +    + L  LS GG+H H I A   E++ ++ +ELK+KGFLI
+Sbjct  445  PKKYDAIDRLYMLSGGGIHSHVISARSLESLNKVEKELKEKGFLI  489
+
+
+ Score = 72.4 bits (176),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 27/104 (26%), Positives = 54/104 (52%), Gaps = 6/104 (6%)
+
+Query  8    VAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGE-IRGIIDVSSEEEVLKFVNLMEM-  65
+            + VKH  E IK E   + ++   + +++   P + E ++  I+VS  + + KF+  ++  
+Sbjct  252  ITVKHGMESIKREAEIIFKHNCTLENIMYHLPEFREPLKRKIEVSDLDHIEKFLFQVKKN  311
+
+Query  66   ----AKTEPLLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLI  105
+                     +   + GVH H I  P +E +E+++ +LKK+G L+
+Sbjct  312  PRLRESLNKMYESTSGVHSHWISGPSKENLEKVVEDLKKEGILL  355
+
+
+ Score = 44.3 bits (103),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 32/110 (29%), Positives = 54/110 (49%), Gaps = 6/110 (5%)
+
+Query  1    KSGVSRLVAVKHAPEEIKEELLCVVRNGGRIVDVIVEHPVYGE-IRGIIDVSSEEEVLKF  59
+            KSG    + V+H  + ++++   VV+ GGRI+      P     +   +++ + E+V K 
+Sbjct  504  KSGTVVDILVQHDVKNLEDK-KTVVKYGGRILTSKHYLPGIRYVLTRKLNLKTMEDVKKC  562
+
+Query  60   VNLMEMAKTEP----LLTLSGGVHLHTIEAPDEETMERIMRELKKKGFLI  105
+               +E  +       L  LS  +H HTI  P  E  ++I  ELK+KG L+
+Sbjct  563  EKELEKPRARRTLTALYELSANIHSHTIVTPSAEITKKIEEELKEKGILL  612
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.136    0.338    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0417    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4960149854
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,157 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1t6ua_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P80735|SODN_STRCO Superoxide dismutase [Ni] OS=Streptomyces co...  244     2e-84
+sp|P80734|SODN_STRSO Superoxide dismutase [Ni] OS=Streptomyces se...  221     7e-75
+
+
+>sp|P80735|SODN_STRCO Superoxide dismutase [Ni] OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 
+GN=sodN PE=1 SV=2
+Length=131
+
+ Score = 244 bits (624),  Expect = 2e-84, Method: Compositional matrix adjust.
+ Identities = 116/117 (99%), Positives = 117/117 (100%), Gaps = 0/117 (0%)
+
+Query  1    HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  60
+            HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS
+Sbjct  15   HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  74
+
+Query  61   DYFKPPHFEKYPELHQLVNDTLKAMSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  117
+            DYFKPPHFEKYPELHQLVNDTLKA+SAAKGSKDPATGQKALDYIAQIDKIFWETKKA
+Sbjct  75   DYFKPPHFEKYPELHQLVNDTLKALSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  131
+
+
+>sp|P80734|SODN_STRSO Superoxide dismutase [Ni] OS=Streptomyces 
+seoulensis OX=73044 GN=sodN PE=1 SV=2
+Length=131
+
+ Score = 221 bits (562),  Expect = 7e-75, Method: Compositional matrix adjust.
+ Identities = 103/117 (88%), Positives = 108/117 (92%), Gaps = 0/117 (0%)
+
+Query  1    HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  60
+            HCDLPCGVYDPAQARIEAESVKA+QEKMA NDD HFQ RATVIKEQRAELAKHH+ VLWS
+Sbjct  15   HCDLPCGVYDPAQARIEAESVKAIQEKMAANDDLHFQIRATVIKEQRAELAKHHLDVLWS  74
+
+Query  61   DYFKPPHFEKYPELHQLVNDTLKAMSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  117
+            DYFKPPHFE YPELH LVN+ +KA+SAAK S DPATGQKALDYIAQIDKIFWETKKA
+Sbjct  75   DYFKPPHFESYPELHTLVNEAVKALSAAKASTDPATGQKALDYIAQIDKIFWETKKA  131
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.130    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+Results from round 2
+
+
+Query= d1t6ua_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P80735|SODN_STRCO Superoxide dismutase [Ni] OS=Streptomyces co...  224     3e-76
+sp|P80734|SODN_STRSO Superoxide dismutase [Ni] OS=Streptomyces se...  215     1e-72
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P80735|SODN_STRCO Superoxide dismutase [Ni] OS=Streptomyces 
+coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 
+GN=sodN PE=1 SV=2
+Length=131
+
+ Score = 224 bits (571),  Expect = 3e-76, Method: Composition-based stats.
+ Identities = 116/117 (99%), Positives = 117/117 (100%), Gaps = 0/117 (0%)
+
+Query  1    HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  60
+            HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS
+Sbjct  15   HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  74
+
+Query  61   DYFKPPHFEKYPELHQLVNDTLKAMSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  117
+            DYFKPPHFEKYPELHQLVNDTLKA+SAAKGSKDPATGQKALDYIAQIDKIFWETKKA
+Sbjct  75   DYFKPPHFEKYPELHQLVNDTLKALSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  131
+
+
+>sp|P80734|SODN_STRSO Superoxide dismutase [Ni] OS=Streptomyces 
+seoulensis OX=73044 GN=sodN PE=1 SV=2
+Length=131
+
+ Score = 215 bits (547),  Expect = 1e-72, Method: Composition-based stats.
+ Identities = 103/117 (88%), Positives = 108/117 (92%), Gaps = 0/117 (0%)
+
+Query  1    HCDLPCGVYDPAQARIEAESVKAVQEKMAGNDDPHFQTRATVIKEQRAELAKHHVSVLWS  60
+            HCDLPCGVYDPAQARIEAESVKA+QEKMA NDD HFQ RATVIKEQRAELAKHH+ VLWS
+Sbjct  15   HCDLPCGVYDPAQARIEAESVKAIQEKMAANDDLHFQIRATVIKEQRAELAKHHLDVLWS  74
+
+Query  61   DYFKPPHFEKYPELHQLVNDTLKAMSAAKGSKDPATGQKALDYIAQIDKIFWETKKA  117
+            DYFKPPHFE YPELH LVN+ +KA+SAAK S DPATGQKALDYIAQIDKIFWETKKA
+Sbjct  75   DYFKPPHFESYPELHTLVNEAVKALSAAKASTDPATGQKALDYIAQIDKIFWETKKA  131
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.130    0.390    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0397    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

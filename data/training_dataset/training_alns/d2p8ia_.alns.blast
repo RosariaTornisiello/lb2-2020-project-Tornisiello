@@ -1,0 +1,163 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2p8ia_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P87064|DODA_AMAMU DOPA 4,5-dioxygenase OS=Amanita muscaria OX=...  74.7    3e-16
+sp|P56739|Y212_BOTFU Uncharacterized 21.2 kDa protein OS=Botryoti...  68.2    4e-14
+
+
+>sp|P87064|DODA_AMAMU DOPA 4,5-dioxygenase OS=Amanita muscaria 
+OX=41956 GN=DODA PE=1 SV=1
+Length=228
+
+ Score = 74.7 bits (182),  Expect = 3e-16, Method: Compositional matrix adjust.
+ Identities = 44/116 (38%), Positives = 61/116 (53%), Gaps = 7/116 (6%)
+
+Query  8    SAIASWHAHVYF---DASSRDAAWTLREQI-EAHWSGK---LQLGRFHERPVGPHPMWSY  60
+            S I  WH H+YF   +A+   AA  LR+ +      G    + L R +  P+GPHP+ SY
+Sbjct  58   SEIKEWHFHIYFHQNNAAEHQAALELRDAVLRLRQDGAFVAVPLFRVNMDPMGPHPVGSY  117
+
+Query  61   QLAFTQEQFADLVGWLTLNHGALDIFLHPNTGDALRDHRDAAVWIGHSHELVLSAL  116
+            ++    E FA +  +L +N G L I +HP T + LRDH     WIG S  L L+ L
+Sbjct  118  EIWVPSETFASVFSYLCMNRGRLSILVHPLTREELRDHEIRNAWIGPSFPLNLANL  173
+
+
+>sp|P56739|Y212_BOTFU Uncharacterized 21.2 kDa protein OS=Botryotinia 
+fuckeliana OX=40559 PE=2 SV=1
+Length=183
+
+ Score = 68.2 bits (165),  Expect = 4e-14, Method: Compositional matrix adjust.
+ Identities = 40/123 (33%), Positives = 63/123 (51%), Gaps = 12/123 (10%)
+
+Query  6    DTSAIASWHAHVYFDASSRDAAWTLRE---QIEAHWSGKLQLGRFHERPVGPHPMWSYQL  62
+            D+    ++  H+Y    +++ A   RE   +I   +  +L++ RF E P+GPHP+  +++
+Sbjct  53   DSGIRGAFDVHIYHFQKNKEQAKFARELWERIRREFP-ELRIYRFWEEPIGPHPVAMFEV  111
+
+Query  63   A-FTQEQFADLVGWLTLNHGALDIFLHPNTGDAL-------RDHRDAAVWIGHSHELVLS  114
+              FT EQF   + WL +N G L   +HPNT D         RDH   A+W+G    L LS
+Sbjct  112  NLFTPEQFGAFIPWLVINRGPLSALVHPNTVDEKGELLDEERDHTQRAIWMGEQLPLDLS  171
+
+Query  115  ALN  117
+             + 
+Sbjct  172  LVK  174
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.134    0.454    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+Results from round 2
+
+
+Query= d2p8ia_
+
+Length=117
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P87064|DODA_AMAMU DOPA 4,5-dioxygenase OS=Amanita muscaria OX=...  159     2e-49
+sp|P56739|Y212_BOTFU Uncharacterized 21.2 kDa protein OS=Botryoti...  157     4e-49
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P87064|DODA_AMAMU DOPA 4,5-dioxygenase OS=Amanita muscaria 
+OX=41956 GN=DODA PE=1 SV=1
+Length=228
+
+ Score = 159 bits (403),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 44/116 (38%), Positives = 61/116 (53%), Gaps = 7/116 (6%)
+
+Query  8    SAIASWHAHVYF---DASSRDAAWTLREQI-EAHWSGK---LQLGRFHERPVGPHPMWSY  60
+            S I  WH H+YF   +A+   AA  LR+ +      G    + L R +  P+GPHP+ SY
+Sbjct  58   SEIKEWHFHIYFHQNNAAEHQAALELRDAVLRLRQDGAFVAVPLFRVNMDPMGPHPVGSY  117
+
+Query  61   QLAFTQEQFADLVGWLTLNHGALDIFLHPNTGDALRDHRDAAVWIGHSHELVLSAL  116
+            ++    E FA +  +L +N G L I +HP T + LRDH     WIG S  L L+ L
+Sbjct  118  EIWVPSETFASVFSYLCMNRGRLSILVHPLTREELRDHEIRNAWIGPSFPLNLANL  173
+
+
+>sp|P56739|Y212_BOTFU Uncharacterized 21.2 kDa protein OS=Botryotinia 
+fuckeliana OX=40559 PE=2 SV=1
+Length=183
+
+ Score = 157 bits (397),  Expect = 4e-49, Method: Composition-based stats.
+ Identities = 40/123 (33%), Positives = 63/123 (51%), Gaps = 12/123 (10%)
+
+Query  6    DTSAIASWHAHVYFDASSRDAAWTLRE---QIEAHWSGKLQLGRFHERPVGPHPMWSYQL  62
+            D+    ++  H+Y    +++ A   RE   +I   +  +L++ RF E P+GPHP+  +++
+Sbjct  53   DSGIRGAFDVHIYHFQKNKEQAKFARELWERIRREFP-ELRIYRFWEEPIGPHPVAMFEV  111
+
+Query  63   A-FTQEQFADLVGWLTLNHGALDIFLHPNTGDAL-------RDHRDAAVWIGHSHELVLS  114
+              FT EQF   + WL +N G L   +HPNT D         RDH   A+W+G    L LS
+Sbjct  112  NLFTPEQFGAFIPWLVINRGPLSALVHPNTVDEKGELLDEERDHTQRAIWMGEQLPLDLS  171
+
+Query  115  ALN  117
+             + 
+Sbjct  172  LVK  174
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.134    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4957987072
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

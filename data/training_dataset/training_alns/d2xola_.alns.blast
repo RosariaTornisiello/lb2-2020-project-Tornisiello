@@ -1,0 +1,596 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2xola_
+
+Length=168
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeogl...  338     8e-120
+sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmoni...  41.6    0.001 
+
+
+>sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=ttrD PE=1 SV=1
+Length=174
+
+ Score = 338 bits (867),  Expect = 8e-120, Method: Compositional matrix adjust.
+ Identities = 166/166 (100%), Positives = 166/166 (100%), Gaps = 0/166 (0%)
+
+Query  3    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  62
+            MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM
+Sbjct  1    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  60
+
+Query  63   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  122
+            PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI
+Sbjct  61   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  120
+
+Query  123  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  168
+            RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE
+Sbjct  121  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  166
+
+
+>sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmonicida 
+(strain LFI1238) OX=316275 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 41.6 bits (96),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 34/102 (33%), Positives = 49/102 (48%), Gaps = 17/102 (17%)
+
+Query  74   MKDFYERYGF-QASELH--ADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFI  130
+            M+D  E+Y   Q +E +  ADHIA+EL F+  L+   +   QQ  E E  +  AAQ +FI
+Sbjct  114  MRDLLEKYNITQKAEFNEPADHIAIELDFLGNLI---VMTNQQTTEPEFEQFMAAQLQFI  170
+
+Query  131  KAHL---QPLVKNLPS--------APLLNFVRDFVREDAKYL  161
+               L    P    L S        A + +F+  F+  D K+L
+Sbjct  171  NEQLLSWAPRFNQLCSERDTFGFYAAVTHFLVTFLELDVKFL  212
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.138    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8343964552
+Results from round 2
+
+
+Query= d2xola_
+
+Length=168
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeogl...  288     3e-100
+sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmoni...  112     2e-30 
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5E4I0|TORD_ALIF1 Chaperone protein TorD OS=Aliivibrio fischer...  90.1    1e-21
+sp|B5FEZ9|TORD_ALIFM Chaperone protein TorD OS=Aliivibrio fischer...  88.5    4e-21
+sp|Q6LS21|TORD_PHOPR Chaperone protein TorD OS=Photobacterium pro...  63.5    2e-11
+sp|B7VMG5|TORD_VIBTL Chaperone protein TorD OS=Vibrio tasmaniensi...  48.1    5e-06
+sp|A7N1J4|TORD_VIBCB Chaperone protein TorD OS=Vibrio campbellii ...  45.4    5e-05
+sp|Q87QW8|TORD_VIBPA Chaperone protein TorD OS=Vibrio parahaemoly...  43.9    2e-04
+
+
+>sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=ttrD PE=1 SV=1
+Length=174
+
+ Score = 288 bits (738),  Expect = 3e-100, Method: Composition-based stats.
+ Identities = 166/166 (100%), Positives = 166/166 (100%), Gaps = 0/166 (0%)
+
+Query  3    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  62
+            MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM
+Sbjct  1    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  60
+
+Query  63   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  122
+            PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI
+Sbjct  61   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  120
+
+Query  123  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  168
+            RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE
+Sbjct  121  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  166
+
+
+>sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmonicida 
+(strain LFI1238) OX=316275 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 112 bits (281),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 34/102 (33%), Positives = 49/102 (48%), Gaps = 17/102 (17%)
+
+Query  74   MKDFYERYGF-QASELH--ADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFI  130
+            M+D  E+Y   Q +E +  ADHIA+EL F+  L+   +   QQ  E E  +  AAQ +FI
+Sbjct  114  MRDLLEKYNITQKAEFNEPADHIAIELDFLGNLI---VMTNQQTTEPEFEQFMAAQLQFI  170
+
+Query  131  KAHL---QPLVKNLPS--------APLLNFVRDFVREDAKYL  161
+               L    P    L S        A + +F+  F+  D K+L
+Sbjct  171  NEQLLSWAPRFNQLCSERDTFGFYAAVTHFLVTFLELDVKFL  212
+
+
+>sp|Q5E4I0|TORD_ALIF1 Chaperone protein TorD OS=Aliivibrio fischeri 
+(strain ATCC 700601 / ES114) OX=312309 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 90.1 bits (222),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 28/102 (27%), Positives = 47/102 (46%), Gaps = 17/102 (17%)
+
+Query  74   MKDFYERYGF-QASELH--ADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFI  130
+            M+++  +Y   Q +E +  ADHIA+EL F+  L+   +   QQ+ E+E     +AQ  FI
+Sbjct  114  MREWLTKYNIAQKAEFNEPADHIAIELDFLGNLI---VMTNQQVSEDEFEAYMSAQLTFI  170
+
+Query  131  KAHL---QPLVKNLP--------SAPLLNFVRDFVREDAKYL  161
+               L    P    +          A +   +  F++ D K+L
+Sbjct  171  NEQLLSWTPRFNEICIERDKFGFYAAVTGLLVTFLKLDVKFL  212
+
+
+>sp|B5FEZ9|TORD_ALIFM Chaperone protein TorD OS=Aliivibrio fischeri 
+(strain MJ11) OX=388396 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 88.5 bits (218),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 28/102 (27%), Positives = 45/102 (44%), Gaps = 17/102 (17%)
+
+Query  74   MKDFYERYGF-QASELH--ADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFI  130
+            M+++  +Y   Q +E +  ADHIA+EL F+  L+   +   QQ  E+E      AQ  FI
+Sbjct  114  MREWLTKYNIAQKAEFNEPADHIAIELDFLGNLI---VMTNQQASEDEFEAYMNAQLTFI  170
+
+Query  131  KAHL---QPLVKNLP--------SAPLLNFVRDFVREDAKYL  161
+               L    P    +          A +   +  F++ D K+L
+Sbjct  171  NEQLLSWTPRFNEICIERDKFGFYAAVTGLLVTFLKLDVKFL  212
+
+
+>sp|Q6LS21|TORD_PHOPR Chaperone protein TorD OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=torD PE=3 SV=1
+Length=216
+
+ Score = 63.5 bits (153),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 32/102 (31%), Positives = 43/102 (42%), Gaps = 17/102 (17%)
+
+Query  74   MKDFYERYGF-QASELH--ADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFI  130
+            M    E YG  Q  E +  ADHIAVEL FM  L+   I   Q++ EE+   +  AQ  F+
+Sbjct  114  MNVLMEEYGIAQRKEFNEPADHIAVELDFMGNLI---IQANQELDEEKREALMQAQLAFV  170
+
+Query  131  KAHLQ---PLVKNLPSA--------PLLNFVRDFVREDAKYL  161
+               L    P       A          +N +  F + DA +L
+Sbjct  171  NDMLLNWIPAFAQSCKARDDFGFYTASVNLLVAFCQLDAAFL  212
+
+
+>sp|B7VMG5|TORD_VIBTL Chaperone protein TorD OS=Vibrio tasmaniensis 
+(strain LGP32) OX=575788 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 48/113 (42%), Gaps = 23/113 (20%)
+
+Query  60   KDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEEL  119
+            KDM + +A+    V +D  E          ADHIA+EL F+  L+ R     +   EEEL
+Sbjct  112  KDMEEIMAKHNLVVNQDLKEP---------ADHIAIELDFLGNLIIR---SNETELEEEL  159
+
+Query  120  YKIRAAQHRFIKAHL---QPLVKNLPS--------APLLNFVRDFVREDAKYL  161
+             K  A Q +FI+  L    P               A + + +  F + D +YL
+Sbjct  160  EKSFAVQQQFIEQQLLTWVPKFNVKCHDIDTFGFYASVSSLLLAFCKLDTQYL  212
+
+
+>sp|A7N1J4|TORD_VIBCB Chaperone protein TorD OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 45.4 bits (106),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 33/117 (28%), Positives = 49/117 (42%), Gaps = 18/117 (15%)
+
+Query  56   SVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMK  115
+            S L+ D P   AE  E +M DF  +      E  ADH+AVEL F+  ++ R   L Q   
+Sbjct  103  SGLLNDKP---AEEMEKLMADFGMQVDENLKE-PADHLAVELDFLGNMIIRSNELEQ---  155
+
+Query  116  EEELYKIRAAQHRFIKAHLQ---PLVKNLPS--------APLLNFVRDFVREDAKYL  161
+            E+ + +    Q+ FI+ HL    P                 +   +  F + D+ YL
+Sbjct  156  EKHMEEALEKQNEFIQQHLMTWLPQFAAKCKQFDEFGFYVSVAQLLIAFCKLDSTYL  212
+
+
+>sp|Q87QW8|TORD_VIBPA Chaperone protein TorD OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=torD 
+PE=3 SV=1
+Length=215
+
+ Score = 43.9 bits (102),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 32/117 (27%), Positives = 48/117 (41%), Gaps = 18/117 (15%)
+
+Query  56   SVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMK  115
+            S L+ D P   AE  E +M DF  +      E  ADH+AVEL F+  ++ R   L Q   
+Sbjct  103  SGLLNDKP---AEEMEKLMADFGVQVDENLKE-PADHLAVELDFLGNMIIRSNELEQ---  155
+
+Query  116  EEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------PLLNFVRDFVREDAKYL  161
+            E+ + +    Q+ FI+  L    P                 +   +  F + D+ YL
+Sbjct  156  EKHMEEAFVKQNDFIQNQLMSWLPKFAEKCKQFDEFGFYLSVAQLLIAFCKLDSAYL  212
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8343964552
+Results from round 3
+
+
+Query= d2xola_
+
+Length=168
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeogl...  253     5e-86
+sp|Q87QW8|TORD_VIBPA Chaperone protein TorD OS=Vibrio parahaemoly...  113     2e-30
+sp|A7N1J4|TORD_VIBCB Chaperone protein TorD OS=Vibrio campbellii ...  112     3e-30
+sp|Q5E4I0|TORD_ALIF1 Chaperone protein TorD OS=Aliivibrio fischer...  100     2e-25
+sp|B5FEZ9|TORD_ALIFM Chaperone protein TorD OS=Aliivibrio fischer...  98.6    7e-25
+sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmoni...  98.6    8e-25
+sp|Q6LS21|TORD_PHOPR Chaperone protein TorD OS=Photobacterium pro...  98.2    1e-24
+sp|B7VMG5|TORD_VIBTL Chaperone protein TorD OS=Vibrio tasmaniensi...  94.0    4e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q7MJ58|TORD_VIBVY Chaperone protein TorD OS=Vibrio vulnificus ...  75.5    4e-16
+sp|Q8DAQ4|TORD_VIBVU Chaperone protein TorD OS=Vibrio vulnificus ...  74.4    1e-15
+sp|Q9KRC2|TORD_VIBCH Chaperone protein TorD OS=Vibrio cholerae se...  55.5    1e-08
+sp|A5F7G9|TORD_VIBC3 Chaperone protein TorD OS=Vibrio cholerae se...  54.7    3e-08
+sp|C3LN43|TORD_VIBCM Chaperone protein TorD OS=Vibrio cholerae se...  54.3    3e-08
+sp|A4SJN2|TORD_AERS4 Chaperone protein TorD OS=Aeromonas salmonic...  50.5    7e-07
+sp|A0KNH6|TORD_AERHH Chaperone protein TorD OS=Aeromonas hydrophi...  49.3    2e-06
+sp|F8VF07|TORD_SALBC Chaperone protein TorD OS=Salmonella bongori...  40.1    0.003
+
+
+>sp|O30077|TTRD_ARCFU Tat proofreading chaperone TtrD OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=ttrD PE=1 SV=1
+Length=174
+
+ Score = 253 bits (645),  Expect = 5e-86, Method: Composition-based stats.
+ Identities = 166/166 (100%), Positives = 166/166 (100%), Gaps = 0/166 (0%)
+
+Query  3    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  62
+            MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM
+Sbjct  1    MTIGRAKVYATLSKIFYHLFYDEAIPKDCREIIEKFGEIDFNLRSVLVRELRGSVLIKDM  60
+
+Query  63   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  122
+            PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI
+Sbjct  61   PQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKI  120
+
+Query  123  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  168
+            RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE
+Sbjct  121  RAAQHRFIKAHLQPLVKNLPSAPLLNFVRDFVREDAKYLYSSLVGE  166
+
+
+>sp|Q87QW8|TORD_VIBPA Chaperone protein TorD OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=torD 
+PE=3 SV=1
+Length=215
+
+ Score = 113 bits (282),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 32/117 (27%), Positives = 48/117 (41%), Gaps = 18/117 (15%)
+
+Query  56   SVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMK  115
+            S L+ D P   AE  E +M DF  +      E  ADH+AVEL F+  ++ R   L Q   
+Sbjct  103  SGLLNDKP---AEEMEKLMADFGVQVDENLKE-PADHLAVELDFLGNMIIRSNELEQ---  155
+
+Query  116  EEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------PLLNFVRDFVREDAKYL  161
+            E+ + +    Q+ FI+  L    P                 +   +  F + D+ YL
+Sbjct  156  EKHMEEAFVKQNDFIQNQLMSWLPKFAEKCKQFDEFGFYLSVAQLLIAFCKLDSAYL  212
+
+
+>sp|A7N1J4|TORD_VIBCB Chaperone protein TorD OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 112 bits (280),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 33/117 (28%), Positives = 49/117 (42%), Gaps = 18/117 (15%)
+
+Query  56   SVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMK  115
+            S L+ D P   AE  E +M DF  +      E  ADH+AVEL F+  ++ R   L Q   
+Sbjct  103  SGLLNDKP---AEEMEKLMADFGMQVDENLKE-PADHLAVELDFLGNMIIRSNELEQ---  155
+
+Query  116  EEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------PLLNFVRDFVREDAKYL  161
+            E+ + +    Q+ FI+ HL    P                 +   +  F + D+ YL
+Sbjct  156  EKHMEEALEKQNEFIQQHLMTWLPQFAAKCKQFDEFGFYVSVAQLLIAFCKLDSTYL  212
+
+
+>sp|Q5E4I0|TORD_ALIF1 Chaperone protein TorD OS=Aliivibrio fischeri 
+(strain ATCC 700601 / ES114) OX=312309 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 100 bits (248),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 32/123 (26%), Positives = 51/123 (41%), Gaps = 24/123 (20%)
+
+Query  53   LRGSVLIKDMPQSLAEVYESVMKDFYERYGF-QASEL--HADHIAVELAFMSKLVEREIS  109
+            L  S L+   P          M+++  +Y   Q +E    ADHIA+EL F+  L+   + 
+Sbjct  100  LDKSGLLNAKPAQD-------MREWLTKYNIAQKAEFNEPADHIAIELDFLGNLI---VM  149
+
+Query  110  LAQQMKEEELYKIRAAQHRFIKAHLQ---PLVKNLP--------SAPLLNFVRDFVREDA  158
+              QQ+ E+E     +AQ  FI   L    P    +          A +   +  F++ D 
+Sbjct  150  TNQQVSEDEFEAYMSAQLTFINEQLLSWTPRFNEICIERDKFGFYAAVTGLLVTFLKLDV  209
+
+Query  159  KYL  161
+            K+L
+Sbjct  210  KFL  212
+
+
+>sp|B5FEZ9|TORD_ALIFM Chaperone protein TorD OS=Aliivibrio fischeri 
+(strain MJ11) OX=388396 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 98.6 bits (244),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 32/123 (26%), Positives = 49/123 (40%), Gaps = 24/123 (20%)
+
+Query  53   LRGSVLIKDMPQSLAEVYESVMKDFYERYGF-QASEL--HADHIAVELAFMSKLVEREIS  109
+            L  S L+   P          M+++  +Y   Q +E    ADHIA+EL F+  L+   + 
+Sbjct  100  LDKSGLLNAKPAQD-------MREWLTKYNIAQKAEFNEPADHIAIELDFLGNLI---VM  149
+
+Query  110  LAQQMKEEELYKIRAAQHRFIKAHLQ---PLVKNLP--------SAPLLNFVRDFVREDA  158
+              QQ  E+E      AQ  FI   L    P    +          A +   +  F++ D 
+Sbjct  150  TNQQASEDEFEAYMNAQLTFINEQLLSWTPRFNEICIERDKFGFYAAVTGLLVTFLKLDV  209
+
+Query  159  KYL  161
+            K+L
+Sbjct  210  KFL  212
+
+
+>sp|B6EH87|TORD_ALISL Chaperone protein TorD OS=Aliivibrio salmonicida 
+(strain LFI1238) OX=316275 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 98.6 bits (244),  Expect = 8e-25, Method: Composition-based stats.
+ Identities = 35/115 (30%), Positives = 50/115 (43%), Gaps = 17/115 (15%)
+
+Query  61   DMPQSLAEVYESVMKDFYERYGF-QASEL--HADHIAVELAFMSKLVEREISLAQQMKEE  117
+            D  + L       M+D  E+Y   Q +E    ADHIA+EL F+  L+   +   QQ  E 
+Sbjct  101  DKSRLLNAKPAQDMRDLLEKYNITQKAEFNEPADHIAIELDFLGNLI---VMTNQQTTEP  157
+
+Query  118  ELYKIRAAQHRFIKAHLQ---PLVKNLP--------SAPLLNFVRDFVREDAKYL  161
+            E  +  AAQ +FI   L    P    L          A + +F+  F+  D K+L
+Sbjct  158  EFEQFMAAQLQFINEQLLSWAPRFNQLCSERDTFGFYAAVTHFLVTFLELDVKFL  212
+
+
+>sp|Q6LS21|TORD_PHOPR Chaperone protein TorD OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=torD PE=3 SV=1
+Length=216
+
+ Score = 98.2 bits (243),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 36/120 (30%), Positives = 47/120 (39%), Gaps = 24/120 (20%)
+
+Query  56   SVLIKDMPQSLAEVYESVMKDFYERYGF-QASEL--HADHIAVELAFMSKLVEREISLAQ  112
+            S L+ D P          M    E YG  Q  E    ADHIAVEL FM  L+   I   Q
+Sbjct  103  SGLLNDKPAQD-------MNVLMEEYGIAQRKEFNEPADHIAVELDFMGNLI---IQANQ  152
+
+Query  113  QMKEEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------PLLNFVRDFVREDAKYL  161
+            ++ EE+   +  AQ  F+   L    P       A          +N +  F + DA +L
+Sbjct  153  ELDEEKREALMQAQLAFVNDMLLNWIPAFAQSCKARDDFGFYTASVNLLVAFCQLDAAFL  212
+
+
+>sp|B7VMG5|TORD_VIBTL Chaperone protein TorD OS=Vibrio tasmaniensis 
+(strain LGP32) OX=575788 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 94.0 bits (232),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 48/113 (42%), Gaps = 23/113 (20%)
+
+Query  60   KDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEEL  119
+            KDM + +A+    V +D  E          ADHIA+EL F+  L+ R     +   EEEL
+Sbjct  112  KDMEEIMAKHNLVVNQDLKE---------PADHIAIELDFLGNLIIRS---NETELEEEL  159
+
+Query  120  YKIRAAQHRFIKAHLQ---PLVKNLPS--------APLLNFVRDFVREDAKYL  161
+             K  A Q +FI+  L    P               A + + +  F + D +YL
+Sbjct  160  EKSFAVQQQFIEQQLLTWVPKFNVKCHDIDTFGFYASVSSLLLAFCKLDTQYL  212
+
+
+>sp|Q7MJ58|TORD_VIBVY Chaperone protein TorD OS=Vibrio vulnificus 
+(strain YJ016) OX=196600 GN=torD PE=3 SV=1
+Length=215
+
+ Score = 75.5 bits (184),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 26/120 (22%), Positives = 45/120 (38%), Gaps = 18/120 (15%)
+
+Query  53   LRGSVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQ  112
+            L    L+   P   A+  ++ +K    +   Q +E  ADH+A+ L F+  L+ R   L Q
+Sbjct  101  LTKDGLLNGEP---AQKMDAWLKKHGVQVNQQLNE-PADHLAIMLDFLGNLIIRSNELEQ  156
+
+Query  113  QMKEEELYKIRAAQHRFIKAHL---QPLVKNLP--------SAPLLNFVRDFVREDAKYL  161
+               +  + +    Q+ FI+  L    P                  +  +  F   D+ YL
+Sbjct  157  ---DRHMEEAFIEQNAFIQEMLLSWLPSFSQRAAEYDEFGFYNSAIKLLVAFCMLDSDYL  213
+
+
+>sp|Q8DAQ4|TORD_VIBVU Chaperone protein TorD OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=torD PE=3 SV=3
+Length=215
+
+ Score = 74.4 bits (181),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 25/120 (21%), Positives = 44/120 (37%), Gaps = 18/120 (15%)
+
+Query  53   LRGSVLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQ  112
+            L    L+   P   A+  ++ +K    +   Q +E  ADH+A+ L F+  L+ R     Q
+Sbjct  101  LTKDGLLNGEP---AQKMDAWLKKHGVQVNQQLNE-PADHLAIMLDFLGNLIIRSNEFEQ  156
+
+Query  113  QMKEEELYKIRAAQHRFIKAHL---QPLVKNLP--------SAPLLNFVRDFVREDAKYL  161
+               +  + +    Q+ FI+  L    P                  +  +  F   D+ YL
+Sbjct  157  ---DRHMEEAFIEQNAFIQEMLLSWLPSFSQRAAEYDEFGFYNSAIKLLVAFCMLDSDYL  213
+
+
+>sp|Q9KRC2|TORD_VIBCH Chaperone protein TorD OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 
+GN=torD PE=3 SV=1
+Length=220
+
+ Score = 55.5 bits (132),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 23/112 (21%), Positives = 39/112 (35%), Gaps = 18/112 (16%)
+
+Query  57   VLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKE  116
+             L+   P   A+    ++     +     +E   DH+A++L F++ L    IS  Q    
+Sbjct  104  GLLNGKP---AQQMRELLGAHGVKVEQNLNE-PEDHLAIQLDFLAHL---AISANQIEHS  156
+
+Query  117  EELYKIRAAQHRFIKAHL---QPLVKNLP--------SAPLLNFVRDFVRED  157
+             +L     AQ  FI  HL    P               +        F+++D
+Sbjct  157  AQLSSALQAQSDFISQHLLTWLPAFAERCTQFDAFGLYSAAARLALAFIQQD  208
+
+
+>sp|A5F7G9|TORD_VIBC3 Chaperone protein TorD OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39541 / Classical Ogawa 395 / O395) 
+OX=345073 GN=torD PE=3 SV=1
+Length=220
+
+ Score = 54.7 bits (130),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 23/112 (21%), Positives = 39/112 (35%), Gaps = 18/112 (16%)
+
+Query  57   VLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKE  116
+             L+   P   A+    ++     +     +E   DH+A++L F++ L    IS  Q    
+Sbjct  104  GLLNGKP---AQQMRELLSAHGVKVEQNLNE-PEDHLAIQLDFLAHL---AISANQIEHS  156
+
+Query  117  EELYKIRAAQHRFIKAHL---QPLVKNLP--------SAPLLNFVRDFVRED  157
+             +L     AQ  FI  HL    P               +        F+++D
+Sbjct  157  AQLSLALQAQSDFISQHLLTWLPAFAERCTQFDAFGLYSAAARLALAFIQQD  208
+
+
+>sp|C3LN43|TORD_VIBCM Chaperone protein TorD OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=torD PE=3 SV=1
+Length=220
+
+ Score = 54.3 bits (129),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 23/112 (21%), Positives = 39/112 (35%), Gaps = 18/112 (16%)
+
+Query  57   VLIKDMPQSLAEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKE  116
+             L+   P   A+    ++     +     +E   DH+A++L F++ L    IS  Q    
+Sbjct  104  GLLNGKP---AQQMRELLSAHGVKVEQNLNE-PEDHLAIQLDFLAHL---AISANQIEHS  156
+
+Query  117  EELYKIRAAQHRFIKAHL---QPLVKNLP--------SAPLLNFVRDFVRED  157
+             +L     AQ  FI  HL    P               +        F+++D
+Sbjct  157  AQLSLALQAQSDFISQHLLTWLPAFAERCTQFDAFGLYSAAARLALAFIQQD  208
+
+
+>sp|A4SJN2|TORD_AERS4 Chaperone protein TorD OS=Aeromonas salmonicida 
+(strain A449) OX=382245 GN=torD PE=3 SV=1
+Length=214
+
+ Score = 50.5 bits (119),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 40/197 (20%), Positives = 68/197 (35%), Gaps = 45/197 (23%)
+
+Query  7    RAKVYATLSKIFYHLFYDEAIPK----DCREIIEKFG----------EIDFNLRSVLVRE  52
+            RA++Y   + +F     D+ I +    D R  ++             E++  +  +LVR+
+Sbjct  11   RAELYWWFATLFSAELSDKQIAEYDSYDVRSFLKSLSTLDPMRPAVTELNEAIARLLVRD  70
+
+Query  53   LRGSVLIKD-----MPQSLAEVYESV---------MKDFYERYGFQASE---LHADHIAV  95
+             R + L  D     +  +  + YES          M+    R     S       DH+ V
+Sbjct  71   ERATALAADFKGLFLADTAVQPYESAHLDASSLGRMQQRLVRLAIDVSAKYPQPVDHLGV  130
+
+Query  96   ELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------  144
+            EL  M  L+ R    A+    ++  +    Q   +  HL    P  +    A        
+Sbjct  131  ELDLMGNLIIR---AAEAPSADQREQWLGEQEAVLHGHLLAWFPHFEVACRAADPFGFYG  187
+
+Query  145  PLLNFVRDFVREDAKYL  161
+                 +  F+  DA YL
+Sbjct  188  ASARLLGVFLTMDANYL  204
+
+
+>sp|A0KNH6|TORD_AERHH Chaperone protein TorD OS=Aeromonas hydrophila 
+subsp. hydrophila (strain ATCC 7966 / DSM 30187 / JCM 
+1027 / KCTC 2358 / NCIMB 9240) OX=380703 GN=torD PE=3 SV=1
+Length=214
+
+ Score = 49.3 bits (116),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 41/197 (21%), Positives = 63/197 (32%), Gaps = 45/197 (23%)
+
+Query  7    RAKVYATLSKIFYHLFYDEAIPK----DCREIIEKF----------GEIDFNLRSVLVRE  52
+            RA++Y   + +F     DE I +    D R  ++             E++  +  +LVR 
+Sbjct  11   RAELYWWFATLFTAQLSDEQIAEYDSYDVRSFLKSLSTLDPMRPAVAELNDAIARLLVRP  70
+
+Query  53   LRGSVLIKDM-----------PQSLAEVYESV---MKDFYERYGFQAS---ELHADHIAV  95
+             R + L  D            P   A    +    MK    R     S   +   DH+ V
+Sbjct  71   ERANALAGDFHELFLANDAVSPHESAHQDAAALERMKARLSRLNIDVSAKYQQPVDHLGV  130
+
+Query  96   ELAFMSKLVEREISLAQQMKEEELYKIRAAQHRFIKAHLQ---PLVKNLPSA--------  144
+            EL  M  L+ R    A     +   +    Q   +  HL    P  +    A        
+Sbjct  131  ELDLMGNLIIRAAEAA---SADLRERWLGEQEALLHGHLLAWFPHFERACRAADPFGFYG  187
+
+Query  145  PLLNFVRDFVREDAKYL  161
+                 +  F+  DA YL
+Sbjct  188  ASARLLGVFLTMDANYL  204
+
+
+>sp|F8VF07|TORD_SALBC Chaperone protein TorD OS=Salmonella bongori 
+(strain ATCC 43975 / DSM 13772 / NCTC 12419) OX=218493 
+GN=torD PE=3 SV=1
+Length=209
+
+ Score = 40.1 bits (92),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/111 (22%), Positives = 42/111 (38%), Gaps = 24/111 (22%)
+
+Query  67   AEVYESVMKDFYERYGFQASELHADHIAVELAFMSKLVEREISLAQQMKEEELYKIRAAQ  126
+            A+    +     E+         +DHIA++LA M++ + R                 A Q
+Sbjct  104  AQERRQMNALLVEQALAPRENEASDHIAIQLALMAEQISR-------------EASVATQ  150
+
+Query  127  HRFIKAHLQ---PLVKNLP--------SAPLLNFVRDFVREDAKYLYSSLV  166
+            + F++ H+    PL                 +  +  F+ EDA+YL S L+
+Sbjct  151  YYFLQHHILCWAPLFMASCQQREAEGFYVLAVAMIVHFMHEDAQYLESLLM  201
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.357    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8343964552
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

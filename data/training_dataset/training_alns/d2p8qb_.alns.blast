@@ -1,0 +1,204 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2p8qb_
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O95149|SPN1_HUMAN Snurportin-1 OS=Homo sapiens OX=9606 GN=SNUP...  77.4    4e-18
+sp|Q68FP5|SPN1_RAT Snurportin-1 OS=Rattus norvegicus OX=10116 GN=...  75.9    2e-17
+sp|Q80W37|SPN1_MOUSE Snurportin-1 OS=Mus musculus OX=10090 GN=Snu...  74.3    5e-17
+sp|Q2TBK8|SPN1_BOVIN Snurportin-1 OS=Bos taurus OX=9913 GN=SNUPN ...  73.2    1e-16
+
+
+>sp|O95149|SPN1_HUMAN Snurportin-1 OS=Homo sapiens OX=9606 GN=SNUPN 
+PE=1 SV=1
+Length=360
+
+ Score = 77.4 bits (189),  Expect = 4e-18, Method: Compositional matrix adjust.
+ Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q68FP5|SPN1_RAT Snurportin-1 OS=Rattus norvegicus OX=10116 
+GN=Snupn PE=2 SV=1
+Length=358
+
+ Score = 75.9 bits (185),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 38/39 (97%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRR+LLELQKSKRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRQLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q80W37|SPN1_MOUSE Snurportin-1 OS=Mus musculus OX=10090 GN=Snupn 
+PE=2 SV=1
+Length=358
+
+ Score = 74.3 bits (181),  Expect = 5e-17, Method: Compositional matrix adjust.
+ Identities = 37/39 (95%), Positives = 38/39 (97%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRL QYKSKYSSLEQSERRR+LLELQKSKRLDYVNHARR
+Sbjct  26  PRLCQYKSKYSSLEQSERRRQLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q2TBK8|SPN1_BOVIN Snurportin-1 OS=Bos taurus OX=9913 GN=SNUPN 
+PE=2 SV=1
+Length=362
+
+ Score = 73.2 bits (178),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 37/39 (95%), Positives = 38/39 (97%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRR+LLELQK KRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRQLLELQKLKRLDYVNHARR  64
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.127    0.335    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5082454000
+Results from round 2
+
+
+Query= d2p8qb_
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O95149|SPN1_HUMAN Snurportin-1 OS=Homo sapiens OX=9606 GN=SNUP...  79.3    1e-18
+sp|Q2TBK8|SPN1_BOVIN Snurportin-1 OS=Bos taurus OX=9913 GN=SNUPN ...  77.4    4e-18
+sp|Q80W37|SPN1_MOUSE Snurportin-1 OS=Mus musculus OX=10090 GN=Snu...  76.6    7e-18
+sp|Q68FP5|SPN1_RAT Snurportin-1 OS=Rattus norvegicus OX=10116 GN=...  76.3    9e-18
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5ZI43|SPN1_CHICK Snurportin-1 OS=Gallus gallus OX=9031 GN=SNU...  35.0    0.005
+
+
+>sp|O95149|SPN1_HUMAN Snurportin-1 OS=Homo sapiens OX=9606 GN=SNUPN 
+PE=1 SV=1
+Length=360
+
+ Score = 79.3 bits (194),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q2TBK8|SPN1_BOVIN Snurportin-1 OS=Bos taurus OX=9913 GN=SNUPN 
+PE=2 SV=1
+Length=362
+
+ Score = 77.4 bits (189),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 37/39 (95%), Positives = 38/39 (97%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRR+LLELQK KRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRQLLELQKLKRLDYVNHARR  64
+
+
+>sp|Q80W37|SPN1_MOUSE Snurportin-1 OS=Mus musculus OX=10090 GN=Snupn 
+PE=2 SV=1
+Length=358
+
+ Score = 76.6 bits (187),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 37/39 (95%), Positives = 38/39 (97%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRL QYKSKYSSLEQSERRR+LLELQKSKRLDYVNHARR
+Sbjct  26  PRLCQYKSKYSSLEQSERRRQLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q68FP5|SPN1_RAT Snurportin-1 OS=Rattus norvegicus OX=10116 
+GN=Snupn PE=2 SV=1
+Length=358
+
+ Score = 76.3 bits (186),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 38/39 (97%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLSQYKSKYSSLEQSERRR+LLELQKSKRLDYVNHARR
+Sbjct  26  PRLSQYKSKYSSLEQSERRRQLLELQKSKRLDYVNHARR  64
+
+
+>sp|Q5ZI43|SPN1_CHICK Snurportin-1 OS=Gallus gallus OX=9031 GN=SNUPN 
+PE=2 SV=1
+Length=365
+
+ Score = 35.0 bits (79),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 27/39 (69%), Positives = 31/39 (79%), Gaps = 0/39 (0%)
+
+Query  1   PRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARR  39
+           PRLS YK +   L Q+ERRRRLL LQ+ +RLDYVNHARR
+Sbjct  25  PRLSAYKGRGDRLGQAERRRRLLCLQRERRLDYVNHARR  63
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.127    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0389    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5082454000
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

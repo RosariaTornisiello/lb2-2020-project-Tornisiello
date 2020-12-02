@@ -1,0 +1,3328 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2giba1
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus OX=6...  210     3e-67
+sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 OX...  206     7e-66
+sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442...  206     8e-66
+sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 OX...  203     1e-64
+sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory sy...  199     3e-63
+sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694...  97.1    4e-24
+sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 OX...  97.1    5e-24
+sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory syn...  92.4    2e-22
+sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694...  88.6    6e-21
+sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694...  79.7    1e-17
+sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 1...  63.9    4e-12
+sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate...  62.0    1e-11
+sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain S...  62.0    2e-11
+sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain ...  61.2    3e-11
+sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain NJ)...  60.5    5e-11
+sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain ...  60.5    6e-11
+sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 3...  60.5    6e-11
+sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain ...  60.5    6e-11
+sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 2...  59.7    1e-10
+sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 681...  59.7    1e-10
+sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 (iso...  59.3    1e-10
+sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 (iso...  59.3    1e-10
+sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76...  58.9    2e-10
+sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 (iso...  58.2    4e-10
+sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain ...  58.2    4e-10
+sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain Q...  57.8    4e-10
+sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain M...  57.8    4e-10
+sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain ...  57.8    4e-10
+sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain ...  57.8    5e-10
+sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain ...  57.8    5e-10
+sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain F...  57.8    5e-10
+sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain ...  57.8    5e-10
+sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 OX=3...  57.4    6e-10
+sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating en...  57.4    6e-10
+sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating en...  57.4    7e-10
+sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea v...  47.0    3e-06
+sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 OX=2...  45.8    7e-06
+sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis ...  43.5    4e-05
+sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis...  43.5    5e-05
+sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain ...  43.5    6e-05
+sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain ...  43.1    7e-05
+sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastr...  43.1    7e-05
+sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronav...  43.1    7e-05
+sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronav...  43.1    7e-05
+sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis ...  43.1    8e-05
+sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis...  43.1    8e-05
+sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis...  42.7    9e-05
+sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis ...  42.7    1e-04
+sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain ...  42.7    1e-04
+sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis...  42.7    1e-04
+sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis...  42.7    1e-04
+sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastr...  42.4    1e-04
+sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis...  42.4    1e-04
+sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain ...  42.0    2e-04
+sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain ...  42.0    2e-04
+sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain ...  41.6    2e-04
+sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis...  41.6    2e-04
+sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain F...  39.3    0.002
+sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E OX=1...  38.5    0.003
+sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis...  38.5    0.003
+sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis...  38.5    0.003
+sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis ...  38.5    0.003
+
+
+>sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus 
+OX=694009 GN=N PE=1 SV=1
+Length=422
+
+ Score = 210 bits (534),  Expect = 3e-67, Method: Compositional matrix adjust.
+ Identities = 97/97 (100%), Positives = 97/97 (100%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  270  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  329
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP
+Sbjct  330  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  366
+
+
+>sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 
+OX=349344 GN=N PE=3 SV=1
+Length=421
+
+ Score = 206 bits (525),  Expect = 7e-66, Method: Compositional matrix adjust.
+ Identities = 95/97 (98%), Positives = 96/97 (99%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FPP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKIFPP  365
+
+
+>sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442736 
+GN=N PE=3 SV=1
+Length=421
+
+ Score = 206 bits (524),  Expect = 8e-66, Method: Compositional matrix adjust.
+ Identities = 95/97 (98%), Positives = 96/97 (99%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQG DYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGIDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  365
+
+
+>sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 
+OX=389167 GN=N PE=3 SV=1
+Length=420
+
+ Score = 203 bits (516),  Expect = 1e-64, Method: Compositional matrix adjust.
+ Identities = 94/97 (97%), Positives = 95/97 (98%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYK+WPQIAQFAPSASAFFGMSRIGMEVTP G
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKYWPQIAQFAPSASAFFGMSRIGMEVTPLG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FPP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKAFPP  365
+
+
+>sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory 
+syndrome coronavirus 2 OX=2697049 GN=N PE=1 SV=1
+Length=419
+
+ Score = 199 bits (507),  Expect = 3e-63, Method: Compositional matrix adjust.
+ Identities = 93/97 (96%), Positives = 94/97 (97%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTY GAIKLDDKDP FKD VILLNKHIDAYKTFPP
+Sbjct  329  TWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPP  365
+
+
+>sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694007 
+GN=N PE=3 SV=1
+Length=423
+
+ Score = 97.1 bits (240),  Expect = 4e-24, Method: Compositional matrix adjust.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   T------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLESNIDAYKTFP  363
+
+
+>sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 
+OX=389230 GN=N PE=3 SV=1
+Length=424
+
+ Score = 97.1 bits (240),  Expect = 5e-24, Method: Compositional matrix adjust.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   T------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLEANIDAYKTFP  363
+
+
+>sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=N PE=3 SV=1
+Length=411
+
+ Score = 92.4 bits (228),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 50/101 (50%), Positives = 64/101 (63%), Gaps = 6/101 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            N+ QAFG RGP   QGNFGD  L + GT+   WPQIA+ AP+ASAF GMS+  +    + 
+Sbjct  261  NMVQAFGLRGPGDLQGNFGDLQLNKLGTEDPRWPQIAELAPTASAFMGMSQFKLTHQNND  320
+
+Query  61   T------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+                   +L Y GAIKLD K+P +   + LL ++IDAYKTF
+Sbjct  321  DHGNPVYFLRYSGAIKLDPKNPNYNKWLELLEQNIDAYKTF  361
+
+
+>sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694008 
+GN=N PE=3 SV=1
+Length=427
+
+ Score = 88.6 bits (218),  Expect = 6e-21, Method: Compositional matrix adjust.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV QAFG RGP   Q NFGD    + GT+   WPQIA+ APSASAF   S+  +      
+Sbjct  260  NVVQAFGMRGPGPLQSNFGDMQYNKLGTEDPRWPQIAELAPSASAFMSTSQFKVTHQSND  319
+
+Query  55   EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            E      +L+Y GAIKLD K+P +   + +L+ +IDAYK+FP
+Sbjct  320  ENGEPVYFLSYSGAIKLDPKNPNYNKWMEILDANIDAYKSFP  361
+
+
+>sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694006 
+GN=N PE=3 SV=1
+Length=468
+
+ Score = 79.7 bits (195),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 39/94 (41%), Positives = 56/94 (60%), Gaps = 0/94 (0%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            VT  +GRRGP   +GNFGD+++I+ GTD   +   AQ AP+ S+F  MS +         
+Sbjct  282  VTVNYGRRGPGDLEGNFGDREMIKLGTDDPRFAAAAQMAPNVSSFLFMSHLSTRDEDDAL  341
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+            WL Y GAIKL   DP ++    +L ++++AYK F
+Sbjct  342  WLHYKGAIKLPKDDPNYEQWTKILAENLNAYKDF  375
+
+
+>sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 
+1) OX=11139 GN=N PE=3 SV=1
+Length=455
+
+ Score = 63.9 bits (154),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 37/101 (37%), Positives = 57/101 (56%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GAI+ D   P F+  + +LN+++DAY+
+Sbjct  340  ADDPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLDAYQ  380
+
+
+>sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate 
+NC99) OX=202496 GN=N PE=3 SV=1
+Length=446
+
+ Score = 62.0 bits (149),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 37/103 (36%), Positives = 59/103 (57%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  281  VQQCFGKRGPNQ---NFGGAEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  337
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G +         L Y+GAI+ D   P F+  + +LN++++AY+
+Sbjct  338  GNFDEPQKDVYELRYNGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain 
+S) OX=11145 GN=N PE=3 SV=1
+Length=454
+
+ Score = 62.0 bits (149),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 57/101 (56%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain 
+JHM) OX=11144 GN=N PE=1 SV=1
+Length=455
+
+ Score = 61.2 bits (147),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 57/101 (56%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADGPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain 
+NJ) OX=231433 GN=N PE=3 SV=1
+Length=454
+
+ Score = 60.5 bits (145),  Expect = 5e-11, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GAI+ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain 
+A59) OX=11142 GN=N PE=1 SV=2
+Length=454
+
+ Score = 60.5 bits (145),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 
+3) OX=11140 GN=N PE=1 SV=1
+Length=454
+
+ Score = 60.5 bits (145),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain 
+DVIM) OX=231423 GN=N PE=3 SV=1
+Length=455
+
+ Score = 60.5 bits (145),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  62   ---------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GAI+ D   P F+  + +LN++++AY+
+Sbjct  340  VDEPTKDVYELLYSGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 
+2) OX=76344 GN=N PE=2 SV=1
+Length=451
+
+ Score = 59.7 bits (143),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 35/101 (35%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +    SG 
+Sbjct  279  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  335
+
+Query  62   W---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GAI+ D   P F+  + +L ++++AY+
+Sbjct  336  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLTENLNAYQ  376
+
+
+>sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 
+681) OX=33740 GN=N PE=3 SV=1
+Length=454
+
+ Score = 59.7 bits (143),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  62   ---------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                      L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N5) OX=443241 GN=N PE=3 SV=1
+Length=441
+
+ Score = 59.3 bits (142),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 35/100 (35%), Positives = 58/100 (58%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   EVTPSGTW--LTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +PS     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N2) OX=443240 GN=N PE=3 SV=1
+Length=441
+
+ Score = 59.3 bits (142),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 35/100 (35%), Positives = 58/100 (58%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   EVTPSGTW--LTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +PS     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76583 
+GN=N PE=2 SV=1
+Length=457
+
+ Score = 58.9 bits (141),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 34/102 (33%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSVG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GA++ D   P F+  + +L ++++AY+ 
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLRENLNAYQN  381
+
+
+>sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N1) OX=443239 GN=N PE=3 SV=1
+Length=441
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 33/100 (33%), Positives = 56/100 (56%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +    S 
+Sbjct  279  NVQQCFGKRGPSQ---NFGNAEMLKLGTNDPQFPILAELAPTPGAFFFGSKLDLVKRDSE  335
+
+Query  61   T--------WLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                      L Y G+I+ D   P F+  + +L ++++AY
+Sbjct  336  ADSPVKDVFELHYSGSIRFDSTLPGFETIMKVLEENLNAY  375
+
+
+>sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain 
+LSU-94LSS-051) OX=233261 GN=N PE=3 SV=1
+Length=448
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain 
+Quebec) OX=11133 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain 
+Mebus) OX=11132 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-LUN) OX=233264 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain 
+OK-0514) OX=231432 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-ENT) OX=233262 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain 
+F15) OX=11129 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain 
+LY-138) OX=11131 GN=N PE=3 SV=1
+Length=448
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--S  59
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +      S
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  60   GTW---------LTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+            G           L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 
+OX=31631 GN=N PE=1 SV=1
+Length=448
+
+ Score = 57.4 bits (137),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain IAF-404) OX=230236 GN=N PE=3 
+SV=1
+Length=449
+
+ Score = 57.4 bits (137),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain 67N) OX=230237 GN=N PE=3 SV=1
+Length=449
+
+ Score = 57.4 bits (137),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea 
+virus (strain CV777) OX=229032 GN=N PE=3 SV=1
+Length=441
+
+ Score = 47.0 bits (110),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 29/93 (31%), Positives = 44/93 (47%), Gaps = 7/93 (8%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V   FG RG  +   NFGD + + +G D   + QIA  AP+ +A      + +       
+Sbjct  291  VAACFGPRGGFK---NFGDAEFVEKGVDASGYAQIASLAPNVAALLFGGNVAVRELADSY  347
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+             +TY+  + +   DP    NV LL   +DA+KT
+Sbjct  348  EITYNYKMTVPKSDP----NVELLVSQVDAFKT  376
+
+
+>sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 
+OX=277944 GN=N PE=1 SV=1
+Length=377
+
+ Score = 45.8 bits (107),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 23/65 (35%), Positives = 33/65 (51%), Gaps = 3/65 (5%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV Q FG   P     N GD DL++ G D K +PQ+A+  P+ +A F  S +  +     
+Sbjct  245  NVIQCFG---PRDFNHNMGDSDLVQNGVDAKGFPQLAELIPNQAALFFDSEVSTDEVGDN  301
+
+Query  61   TWLTY  65
+              +TY
+Sbjct  302  VQITY  306
+
+
+>sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain KB8523) OX=11126 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.5 bits (101),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVSRNDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain D1466) OX=231472 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.5 bits (101),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KCKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain 
+NC95) OX=231431 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.5 bits (101),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPRDDPQFDNYVTICDQCVDGIGTRP  331
+
+
+>sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain 
+Minnesota) OX=231430 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.1 bits (100),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 28/95 (29%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGITDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ ID   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCIDGVGTRP  331
+
+
+>sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain FS772/70) OX=11150 GN=N PE=3 
+SV=1
+Length=382
+
+ Score = 43.1 bits (100),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 29/47 (62%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+  
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSIL  288
+
+
+>sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain 86/137004 / isolate British) OX=33736 GN=N 
+PE=3 SV=1
+Length=382
+
+ Score = 43.1 bits (100),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 29/47 (62%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+  
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSIL  288
+
+
+>sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain RM4) OX=11148 GN=N PE=3 SV=1
+Length=382
+
+ Score = 43.1 bits (100),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 29/47 (62%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+  
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSIL  288
+
+
+>sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain M41) OX=11127 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.1 bits (100),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Arkansas 99) OX=231471 GN=N PE=3 SV=1
+Length=409
+
+ Score = 43.1 bits (100),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H120) OX=231424 GN=N PE=3 SV=1
+Length=409
+
+ Score = 42.7 bits (99),  Expect = 9e-05, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVIAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Gray) OX=31624 GN=N PE=1 SV=2
+Length=409
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain 
+BGF10) OX=441619 GN=N PE=3 SV=1
+Length=382
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 28/47 (60%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+  
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNSAKHYPQLAECVPSVSSIL  288
+
+
+>sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain SAIB20) OX=231426 GN=N PE=2 SV=1
+Length=409
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H52) OX=231425 GN=N PE=2 SV=1
+Length=409
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+   + P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPRLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain Purdue) OX=11151 GN=N PE=1 
+SV=2
+Length=382
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 29/47 (62%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+  
+Sbjct  245  DVTRFYGARS---SSANFGDTDLVANGSSAKHYPQLAECVPSVSSIL  288
+
+
+>sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain DE072) OX=233265 GN=N PE=3 SV=1
+Length=409
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L       +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKIEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain 
+Insavc-1) OX=36391 GN=N PE=3 SV=1
+Length=381
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 28/47 (60%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+  
+Sbjct  244  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSIL  287
+
+
+>sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain 
+Indiana) OX=231429 GN=N PE=3 SV=1
+Length=409
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 26/95 (27%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    S++  ++ P G 
+Sbjct  238  VEQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFASKLTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVSICDQCVDGVGTRP  331
+
+
+>sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain 
+K378) OX=33732 GN=N PE=3 SV=1
+Length=382
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 19/47 (40%), Positives = 28/47 (60%), Gaps = 3/47 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFF  47
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+  
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSIL  288
+
+
+>sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Vic S) OX=231428 GN=N PE=2 SV=1
+Length=409
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G             PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTATLNLIPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain 
+FIPV WSU-79/1146) OX=33734 GN=N PE=3 SV=1
+Length=377
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 29/87 (33%), Positives = 37/87 (43%), Gaps = 10/87 (11%)
+
+Query  10   GPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGTWLTYHGAI  69
+            G   +  NFGD DL+  G   K +PQIA+  PS S+    S+   E       +T     
+Sbjct  247  GARSSSANFGDSDLVANGNAAKCYPQIAECVPSVSSIIFGSQWSAEEAGDQVKVTLTHTY  306
+
+Query  70   KL---DDKDPQFKDNVILLNKHIDAYK  93
+             L   D K  QF +        IDAYK
+Sbjct  307  YLPKDDAKTSQFLE-------QIDAYK  326
+
+
+>sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E 
+OX=11137 GN=N PE=1 SV=2
+Length=389
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 23/78 (29%), Positives = 34/78 (44%), Gaps = 3/78 (4%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQ FG   P     NFG   ++  G   K +PQ A+  PS +A    S I  + + + 
+Sbjct  260  NVTQCFG---PRDLDHNFGSAGVVANGVKAKGYPQFAELVPSTAAMLFDSHIVSKESGNT  316
+
+Query  61   TWLTYHGAIKLDDKDPQF  78
+              LT+   + +    P  
+Sbjct  317  VVLTFTTRVTVPKDHPHL  334
+
+
+>sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette US) OX=160750 GN=N PE=1 SV=1
+Length=409
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette CK) OX=160235 GN=N PE=1 SV=1
+Length=409
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette) OX=11122 GN=N PE=1 SV=1
+Length=409
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRT-KGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.434    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+Results from round 2
+
+
+Query= d2giba1
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory sy...  140     3e-40
+sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442...  139     6e-40
+sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus OX=6...  139     7e-40
+sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 OX...  138     1e-39
+sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 OX...  134     5e-38
+sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694...  132     3e-37
+sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 OX...  132     4e-37
+sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory syn...  128     6e-36
+sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694...  129     1e-35
+sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694...  127     3e-35
+sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis...  119     2e-32
+sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis...  118     4e-32
+sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis ...  118     4e-32
+sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis ...  118     4e-32
+sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis...  118     5e-32
+sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 1...  118     7e-32
+sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 2...  118     8e-32
+sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain ...  117     9e-32
+sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain NJ)...  117     1e-31
+sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis ...  116     2e-31
+sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain ...  116     2e-31
+sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain S...  117     2e-31
+sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain ...  116     2e-31
+sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain ...  117     2e-31
+sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate...  117     3e-31
+sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis...  116     3e-31
+sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis...  116     3e-31
+sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis...  116     3e-31
+sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain ...  116     4e-31
+sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 3...  116     4e-31
+sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis...  115     4e-31
+sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 681...  115     7e-31
+sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76...  115     7e-31
+sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating en...  115     1e-30
+sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 (iso...  114     1e-30
+sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain ...  115     1e-30
+sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain ...  115     1e-30
+sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating en...  114     1e-30
+sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 (iso...  114     1e-30
+sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 (iso...  114     1e-30
+sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain F...  114     2e-30
+sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain Q...  114     2e-30
+sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain M...  114     2e-30
+sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain ...  114     2e-30
+sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain ...  114     2e-30
+sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain ...  114     2e-30
+sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 OX=3...  114     2e-30
+sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain ...  114     2e-30
+sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea v...  97.1    5e-24
+sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain ...  92.5    1e-22
+sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastr...  92.5    2e-22
+sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain F...  92.1    2e-22
+sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain ...  91.3    4e-22
+sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronav...  90.5    8e-22
+sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronav...  90.5    9e-22
+sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastr...  89.4    2e-21
+sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain ...  89.0    3e-21
+sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 OX=2...  89.0    3e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis...  113     3e-30
+sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis...  113     3e-30
+sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis ...  113     3e-30
+sp|Q96605|NCAP_IBVV1 Nucleoprotein OS=Avian infectious bronchitis...  98.2    2e-24
+sp|Q0Q462|NCAP_BC512 Nucleoprotein OS=Bat coronavirus 512/2005 OX...  83.2    5e-19
+sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E OX=1...  77.8    4e-17
+
+
+>sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory 
+syndrome coronavirus 2 OX=2697049 GN=N PE=1 SV=1
+Length=419
+
+ Score = 140 bits (352),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 93/97 (96%), Positives = 94/97 (97%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTY GAIKLDDKDP FKD VILLNKHIDAYKTFPP
+Sbjct  329  TWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPP  365
+
+
+>sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442736 
+GN=N PE=3 SV=1
+Length=421
+
+ Score = 139 bits (350),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 94/96 (98%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQG DYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGIDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  364
+
+
+>sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus 
+OX=694009 GN=N PE=1 SV=1
+Length=422
+
+ Score = 139 bits (350),  Expect = 7e-40, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  270  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  329
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP
+Sbjct  330  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  365
+
+
+>sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 
+OX=349344 GN=N PE=3 SV=1
+Length=421
+
+ Score = 138 bits (348),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 94/96 (98%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKIFP  364
+
+
+>sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 
+OX=389167 GN=N PE=3 SV=1
+Length=420
+
+ Score = 134 bits (337),  Expect = 5e-38, Method: Composition-based stats.
+ Identities = 93/96 (97%), Positives = 94/96 (98%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYK+WPQIAQFAPSASAFFGMSRIGMEVTP G
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKYWPQIAQFAPSASAFFGMSRIGMEVTPLG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKAFP  364
+
+
+>sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694007 
+GN=N PE=3 SV=1
+Length=423
+
+ Score = 132 bits (332),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLESNIDAYKTFP  363
+
+
+>sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 
+OX=389230 GN=N PE=3 SV=1
+Length=424
+
+ Score = 132 bits (331),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLEANIDAYKTFP  363
+
+
+>sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=N PE=3 SV=1
+Length=411
+
+ Score = 128 bits (322),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 50/101 (50%), Positives = 64/101 (63%), Gaps = 6/101 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            N+ QAFG RGP   QGNFGD  L + GT+   WPQIA+ AP+ASAF GMS+  +    + 
+Sbjct  261  NMVQAFGLRGPGDLQGNFGDLQLNKLGTEDPRWPQIAELAPTASAFMGMSQFKLTHQNND  320
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+                   +L Y GAIKLD K+P +   + LL ++IDAYKTF
+Sbjct  321  DHGNPVYFLRYSGAIKLDPKNPNYNKWLELLEQNIDAYKTF  361
+
+
+>sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694006 
+GN=N PE=3 SV=1
+Length=468
+
+ Score = 129 bits (323),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 39/94 (41%), Positives = 56/94 (60%), Gaps = 0/94 (0%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            VT  +GRRGP   +GNFGD+++I+ GTD   +   AQ AP+ S+F  MS +         
+Sbjct  282  VTVNYGRRGPGDLEGNFGDREMIKLGTDDPRFAAAAQMAPNVSSFLFMSHLSTRDEDDAL  341
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+            WL Y GAIKL   DP ++    +L ++++AYK F
+Sbjct  342  WLHYKGAIKLPKDDPNYEQWTKILAENLNAYKDF  375
+
+
+>sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694008 
+GN=N PE=3 SV=1
+Length=427
+
+ Score = 127 bits (319),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 47/102 (46%), Positives = 62/102 (61%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV QAFG RGP   Q NFGD    + GT+   WPQIA+ APSASAF   S+  +    + 
+Sbjct  260  NVVQAFGMRGPGPLQSNFGDMQYNKLGTEDPRWPQIAELAPSASAFMSTSQFKVTHQSND  319
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +   + +L+ +IDAYK+FP
+Sbjct  320  ENGEPVYFLSYSGAIKLDPKNPNYNKWMEILDANIDAYKSFP  361
+
+
+>sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Arkansas 99) OX=231471 GN=N PE=3 SV=1
+Length=409
+
+ Score = 119 bits (298),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain SAIB20) OX=231426 GN=N PE=2 SV=1
+Length=409
+
+ Score = 118 bits (296),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain M41) OX=11127 GN=N PE=3 SV=1
+Length=409
+
+ Score = 118 bits (296),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Gray) OX=31624 GN=N PE=1 SV=2
+Length=409
+
+ Score = 118 bits (296),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H52) OX=231425 GN=N PE=2 SV=1
+Length=409
+
+ Score = 118 bits (295),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+   + P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPRLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 
+1) OX=11139 GN=N PE=3 SV=1
+Length=455
+
+ Score = 118 bits (296),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 36/102 (35%), Positives = 57/102 (56%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              + T     L Y GAI+ D   P F+  + +LN+++DAY+ 
+Sbjct  340  ADDPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLDAYQD  381
+
+
+>sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 
+2) OX=76344 GN=N PE=2 SV=1
+Length=451
+
+ Score = 118 bits (295),  Expect = 8e-32, Method: Composition-based stats.
+ Identities = 35/102 (34%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +       
+Sbjct  279  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GAI+ D   P F+  + +L ++++AY+ 
+Sbjct  336  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLTENLNAYQD  377
+
+
+>sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain 
+Minnesota) OX=231430 GN=N PE=3 SV=1
+Length=409
+
+ Score = 117 bits (294),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 28/95 (29%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGITDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ ID   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCIDGVGTRP  331
+
+
+>sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain 
+NJ) OX=231433 GN=N PE=3 SV=1
+Length=454
+
+ Score = 117 bits (294),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GAI+ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain KB8523) OX=11126 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVSRNDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain 
+Indiana) OX=231429 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    S++  ++ P G 
+Sbjct  238  VEQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFASKLTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVSICDQCVDGVGTRP  331
+
+
+>sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain 
+S) OX=11145 GN=N PE=3 SV=1
+Length=454
+
+ Score = 117 bits (293),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 57/101 (56%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain 
+NC95) OX=231431 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPRDDPQFDNYVTICDQCVDGIGTRP  331
+
+
+>sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain 
+DVIM) OX=231423 GN=N PE=3 SV=1
+Length=455
+
+ Score = 117 bits (292),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 35/102 (34%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GAI+ D   P F+  + +LN++++AY+ 
+Sbjct  340  VDEPTKDVYELLYSGAIRFDSTLPGFETIMKVLNENLNAYQN  381
+
+
+>sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate 
+NC99) OX=202496 GN=N PE=3 SV=1
+Length=446
+
+ Score = 117 bits (292),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 36/103 (35%), Positives = 57/103 (55%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  281  VQQCFGKRGPNQ---NFGGAEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  337
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D   P F+  + +LN++++AY+
+Sbjct  338  GNFDEPQKDVYELRYNGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Vic S) OX=231428 GN=N PE=2 SV=1
+Length=409
+
+ Score = 116 bits (290),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G             PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTATLNLIPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain D1466) OX=231472 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (290),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKCKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain DE072) OX=233265 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (290),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L       +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKIEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain 
+A59) OX=11142 GN=N PE=1 SV=2
+Length=454
+
+ Score = 116 bits (291),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 
+3) OX=11140 GN=N PE=1 SV=1
+Length=454
+
+ Score = 116 bits (290),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H120) OX=231424 GN=N PE=3 SV=1
+Length=409
+
+ Score = 115 bits (289),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVIAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 
+681) OX=33740 GN=N PE=3 SV=1
+Length=454
+
+ Score = 115 bits (289),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 34/102 (33%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GA++ D   P F+  + +LN++++AY+ 
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQN  381
+
+
+>sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76583 
+GN=N PE=2 SV=1
+Length=457
+
+ Score = 115 bits (289),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 34/102 (33%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSVG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GA++ D   P F+  + +L ++++AY+ 
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLRENLNAYQN  381
+
+
+>sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain IAF-404) OX=230236 GN=N PE=3 
+SV=1
+Length=449
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N1) OX=443239 GN=N PE=3 SV=1
+Length=441
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 55/100 (55%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTP--  58
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPSQ---NFGNAEMLKLGTNDPQFPILAELAPTPGAFFFGSKLDLVKRDSE  335
+
+Query  59   ------SGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                      L Y G+I+ D   P F+  + +L ++++AY
+Sbjct  336  ADSPVKDVFELHYSGSIRFDSTLPGFETIMKVLEENLNAY  375
+
+
+>sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-LUN) OX=233264 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain 
+JHM) OX=11144 GN=N PE=1 SV=1
+Length=455
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/102 (34%), Positives = 57/102 (56%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG-  60
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +    SG 
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  61   --------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+                      L Y GA++ D   P F+  + +LN++++AY+ 
+Sbjct  340  ADGPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQN  381
+
+
+>sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain 67N) OX=230237 GN=N PE=3 SV=1
+Length=449
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N5) OX=443241 GN=N PE=3 SV=1
+Length=441
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 56/100 (56%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                +     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N2) OX=443240 GN=N PE=3 SV=1
+Length=441
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 56/100 (56%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                +     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain 
+F15) OX=11129 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain 
+Quebec) OX=11133 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain 
+Mebus) OX=11132 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-ENT) OX=233262 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain 
+OK-0514) OX=231432 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain 
+LY-138) OX=11131 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 
+OX=31631 GN=N PE=1 SV=1
+Length=448
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain 
+LSU-94LSS-051) OX=233261 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQ  381
+
+
+>sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette US) OX=160750 GN=N PE=1 SV=1
+Length=409
+
+ Score = 113 bits (283),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette CK) OX=160235 GN=N PE=1 SV=1
+Length=409
+
+ Score = 113 bits (283),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette) OX=11122 GN=N PE=1 SV=1
+Length=409
+
+ Score = 113 bits (283),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R  +  +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPR-TKGKEGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q96605|NCAP_IBVV1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain V18/91) OX=231427 GN=N PE=2 SV=1
+Length=409
+
+ Score = 98.2 bits (243),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 41/95 (43%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            + + FG+R   Q   NFGD  +I +G        +    P+  A    S +  ++ P G 
+Sbjct  240  IDEVFGQRRKGQAP-NFGDDKMIEEGVKDGRLTAMLNLVPTPHACLLGSMVTAKLQPDGL  298
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             + +     +  +DPQF +   + ++ +D   T P
+Sbjct  299  HVRFSFETVVKREDPQFANYSKICDECVDGVGTRP  333
+
+
+>sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea 
+virus (strain CV777) OX=229032 GN=N PE=3 SV=1
+Length=441
+
+ Score = 97.1 bits (240),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 28/94 (30%), Positives = 44/94 (47%), Gaps = 7/94 (7%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +V   FG RG  +   NFGD + + +G D   + QIA  AP+ +A      + +      
+Sbjct  290  SVAACFGPRGGFK---NFGDAEFVEKGVDASGYAQIASLAPNVAALLFGGNVAVRELADS  346
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              +TY+  + +   DP     V LL   +DA+KT
+Sbjct  347  YEITYNYKMTVPKSDPN----VELLVSQVDAFKT  376
+
+
+>sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain 
+BGF10) OX=441619 GN=N PE=3 SV=1
+Length=382
+
+ Score = 92.5 bits (228),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNSAKHYPQLAECVPSVSSILFGSHWTAKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain FS772/70) OX=11150 GN=N PE=3 
+SV=1
+Length=382
+
+ Score = 92.5 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 45/92 (49%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+ +  +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTEQFL----QQINAY  329
+
+
+>sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain 
+FIPV WSU-79/1146) OX=33734 GN=N PE=3 SV=1
+Length=377
+
+ Score = 92.1 bits (227),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 29/93 (31%), Positives = 41/93 (44%), Gaps = 7/93 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT  +G R    +  NFGD DL+  G   K +PQIA+  PS S+    S+   E     
+Sbjct  241  DVTTFYGARS---SSANFGDSDLVANGNAAKCYPQIAECVPSVSSIIFGSQWSAEEAGDQ  297
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              +T      L   D +    +    + IDAYK
+Sbjct  298  VKVTLTHTYYLPKDDAKTSQFL----EQIDAYK  326
+
+
+>sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain 
+Insavc-1) OX=36391 GN=N PE=3 SV=1
+Length=381
+
+ Score = 91.3 bits (225),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  244  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSILFGSHWTAKEDGDQ  300
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  301  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  328
+
+
+>sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain 86/137004 / isolate British) OX=33736 GN=N 
+PE=3 SV=1
+Length=382
+
+ Score = 90.5 bits (223),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L    P+ +  +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDHPKTEQFL----QQINAY  329
+
+
+>sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain RM4) OX=11148 GN=N PE=3 SV=1
+Length=382
+
+ Score = 90.5 bits (223),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 45/94 (48%), Gaps = 7/94 (7%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              +T+     L    P+ +  +    + I+AY +
+Sbjct  302  IEVTFTHKYHLPKDHPKTEQFL----QQINAYAS  331
+
+
+>sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain Purdue) OX=11151 GN=N PE=1 
+SV=2
+Length=382
+
+ Score = 89.4 bits (220),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDTDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain 
+K378) OX=33732 GN=N PE=3 SV=1
+Length=382
+
+ Score = 89.0 bits (219),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSILFGSYWTAKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 
+OX=277944 GN=N PE=1 SV=1
+Length=377
+
+ Score = 89.0 bits (219),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 37/83 (45%), Gaps = 3/83 (4%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV Q FG R       N GD DL++ G D K +PQ+A+  P+ +A F  S +  +     
+Sbjct  245  NVIQCFGPR---DFNHNMGDSDLVQNGVDAKGFPQLAELIPNQAALFFDSEVSTDEVGDN  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVI  83
+              +TY   + +   +      + 
+Sbjct  302  VQITYTYKMLVAKDNKNLPKFIE  324
+
+
+>sp|Q0Q462|NCAP_BC512 Nucleoprotein OS=Bat coronavirus 512/2005 
+OX=693999 GN=N PE=3 SV=1
+Length=394
+
+ Score = 83.2 bits (204),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 24/97 (25%), Positives = 40/97 (41%), Gaps = 7/97 (7%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +V   FG RG  +   NFG  + + +G +   + Q A   P A+A      +  +    G
+Sbjct  250  SVEVCFGPRGGTR---NFGSSEFVAKGVNAPGYAQAASLVPGAAALLFGGNVATKEMADG  306
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+              +TY   + +   D     N+ +    +DAYK   P
+Sbjct  307  VEITYTYKMLVPKDD----KNLEIFLAQVDAYKLGDP  339
+
+
+>sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E 
+OX=11137 GN=N PE=1 SV=2
+Length=389
+
+ Score = 77.8 bits (190),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 26/96 (27%), Positives = 39/96 (41%), Gaps = 3/96 (3%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQ FG R       NFG   ++  G   K +PQ A+  PS +A    S I  + + + 
+Sbjct  260  NVTQCFGPR---DLDHNFGSAGVVANGVKAKGYPQFAELVPSTAAMLFDSHIVSKESGNT  316
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+              LT+   + +    P     +  LN      +  P
+Sbjct  317  VVLTFTTRVTVPKDHPHLGKFLEELNAFTREMQQHP  352
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+Results from round 3
+
+
+Query= d2giba1
+
+Length=97
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory sy...  139     4e-40
+sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus OX=6...  135     2e-38
+sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442...  135     2e-38
+sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 OX...  134     4e-38
+sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 OX...  134     8e-38
+sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694...  133     9e-38
+sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694...  133     2e-37
+sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 OX...  130     1e-36
+sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory syn...  130     2e-36
+sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694...  128     8e-36
+sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 1...  120     1e-32
+sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis...  119     1e-32
+sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis...  118     2e-32
+sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 2...  119     2e-32
+sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis ...  118     3e-32
+sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis ...  118     3e-32
+sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain NJ)...  119     4e-32
+sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis...  118     4e-32
+sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain ...  118     6e-32
+sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate...  118     6e-32
+sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain ...  118     7e-32
+sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain S...  118     7e-32
+sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain ...  117     9e-32
+sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain ...  118     1e-31
+sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain ...  117     1e-31
+sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 3...  117     1e-31
+sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 (iso...  117     2e-31
+sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 (iso...  117     2e-31
+sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis...  116     2e-31
+sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 681...  117     2e-31
+sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastr...  115     3e-31
+sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain ...  115     3e-31
+sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis...  116     3e-31
+sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain ...  116     4e-31
+sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronav...  115     4e-31
+sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76...  116     4e-31
+sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis...  115     5e-31
+sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronav...  115     5e-31
+sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 (iso...  115     5e-31
+sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis...  115     6e-31
+sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain ...  115     8e-31
+sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis ...  114     1e-30
+sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain ...  115     1e-30
+sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E OX=1...  114     1e-30
+sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain F...  115     1e-30
+sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain ...  115     1e-30
+sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain Q...  115     1e-30
+sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain M...  115     1e-30
+sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis...  114     1e-30
+sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis...  114     1e-30
+sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis ...  114     1e-30
+sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain ...  115     1e-30
+sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain ...  114     1e-30
+sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain ...  113     1e-30
+sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain ...  114     2e-30
+sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 OX=3...  114     2e-30
+sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating en...  114     2e-30
+sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastr...  113     2e-30
+sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating en...  114     2e-30
+sp|Q96605|NCAP_IBVV1 Nucleoprotein OS=Avian infectious bronchitis...  113     4e-30
+sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain F...  108     2e-28
+sp|Q0Q462|NCAP_BC512 Nucleoprotein OS=Bat coronavirus 512/2005 OX...  108     2e-28
+sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea v...  108     4e-28
+sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 OX=2...  105     2e-27
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P0DTC9|NCAP_SARS2 Nucleoprotein OS=Severe acute respiratory 
+syndrome coronavirus 2 OX=2697049 GN=N PE=1 SV=1
+Length=419
+
+ Score = 139 bits (351),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 93/97 (96%), Positives = 94/97 (97%), Gaps = 0/97 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+            TWLTY GAIKLDDKDP FKD VILLNKHIDAYKTFPP
+Sbjct  329  TWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPP  365
+
+
+>sp|P59595|NCAP_CVHSA Nucleoprotein OS=Human SARS coronavirus 
+OX=694009 GN=N PE=1 SV=1
+Length=422
+
+ Score = 135 bits (340),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  270  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  329
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP
+Sbjct  330  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  365
+
+
+>sp|Q3LZX4|NCAP_BCHK3 Nucleoprotein OS=Bat coronavirus HKU3 OX=442736 
+GN=N PE=3 SV=1
+Length=421
+
+ Score = 135 bits (339),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 94/96 (98%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQG DYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGIDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  364
+
+
+>sp|Q3I5I7|NCAP_BCRP3 Nucleoprotein OS=Bat coronavirus Rp3/2004 
+OX=349344 GN=N PE=3 SV=1
+Length=421
+
+ Score = 134 bits (338),  Expect = 4e-38, Method: Composition-based stats.
+ Identities = 94/96 (98%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQ+LIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKIFP  364
+
+
+>sp|Q0Q4E6|NCAP_BC133 Nucleoprotein OS=Bat coronavirus 133/2005 
+OX=389230 GN=N PE=3 SV=1
+Length=424
+
+ Score = 134 bits (336),  Expect = 8e-38, Method: Composition-based stats.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLEANIDAYKTFP  363
+
+
+>sp|A3EXA1|NCAP_BCHK4 Nucleoprotein OS=Bat coronavirus HKU4 OX=694007 
+GN=N PE=3 SV=1
+Length=423
+
+ Score = 133 bits (335),  Expect = 9e-38, Method: Composition-based stats.
+ Identities = 52/102 (51%), Positives = 66/102 (65%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFG RGP   QGNFGD +  + GT+   WPQ+A+ APSASAF  MS+  +    + 
+Sbjct  262  NVTQAFGLRGPGPLQGNFGDMNYNKFGTEDPRWPQMAELAPSASAFMSMSQFKLTHQSND  321
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +K  + LL  +IDAYKTFP
+Sbjct  322  DKGDPIYFLSYSGAIKLDPKNPNYKKWLELLESNIDAYKTFP  363
+
+
+>sp|A3EXH0|NCAP_BCHK9 Nucleoprotein OS=Bat coronavirus HKU9 OX=694006 
+GN=N PE=3 SV=1
+Length=468
+
+ Score = 133 bits (334),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 39/94 (41%), Positives = 56/94 (60%), Gaps = 0/94 (0%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            VT  +GRRGP   +GNFGD+++I+ GTD   +   AQ AP+ S+F  MS +         
+Sbjct  282  VTVNYGRRGPGDLEGNFGDREMIKLGTDDPRFAAAAQMAPNVSSFLFMSHLSTRDEDDAL  341
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+            WL Y GAIKL   DP ++    +L ++++AYK F
+Sbjct  342  WLHYKGAIKLPKDDPNYEQWTKILAENLNAYKDF  375
+
+
+>sp|Q0Q468|NCAP_BC279 Nucleoprotein OS=Bat coronavirus 279/2005 
+OX=389167 GN=N PE=3 SV=1
+Length=420
+
+ Score = 130 bits (327),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 93/96 (97%), Positives = 94/96 (98%), Gaps = 0/96 (0%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYK+WPQIAQFAPSASAFFGMSRIGMEVTP G
+Sbjct  269  NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKYWPQIAQFAPSASAFFGMSRIGMEVTPLG  328
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+            TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK FP
+Sbjct  329  TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKAFP  364
+
+
+>sp|K9N4V7|NCAP_MERS1 Nucleoprotein OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=N PE=3 SV=1
+Length=411
+
+ Score = 130 bits (326),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 50/101 (50%), Positives = 64/101 (63%), Gaps = 6/101 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            N+ QAFG RGP   QGNFGD  L + GT+   WPQIA+ AP+ASAF GMS+  +    + 
+Sbjct  261  NMVQAFGLRGPGDLQGNFGDLQLNKLGTEDPRWPQIAELAPTASAFMGMSQFKLTHQNND  320
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+                   +L Y GAIKLD K+P +   + LL ++IDAYKTF
+Sbjct  321  DHGNPVYFLRYSGAIKLDPKNPNYNKWLELLEQNIDAYKTF  361
+
+
+>sp|A3EXD7|NCAP_BCHK5 Nucleoprotein OS=Bat coronavirus HKU5 OX=694008 
+GN=N PE=3 SV=1
+Length=427
+
+ Score = 128 bits (322),  Expect = 8e-36, Method: Composition-based stats.
+ Identities = 47/102 (46%), Positives = 62/102 (61%), Gaps = 6/102 (6%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV QAFG RGP   Q NFGD    + GT+   WPQIA+ APSASAF   S+  +    + 
+Sbjct  260  NVVQAFGMRGPGPLQSNFGDMQYNKLGTEDPRWPQIAELAPSASAFMSTSQFKVTHQSND  319
+
+Query  61   ------TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                   +L+Y GAIKLD K+P +   + +L+ +IDAYK+FP
+Sbjct  320  ENGEPVYFLSYSGAIKLDPKNPNYNKWMEILDANIDAYKSFP  361
+
+
+>sp|P18446|NCAP_CVM1 Nucleoprotein OS=Murine coronavirus (strain 
+1) OX=11139 GN=N PE=3 SV=1
+Length=455
+
+ Score = 120 bits (301),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 36/102 (35%), Positives = 57/102 (56%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              + T     L Y GAI+ D   P F+  + +LN+++DAY+ 
+Sbjct  340  ADDPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLDAYQD  381
+
+
+>sp|Q64960|NCAP_IBVAR Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Arkansas 99) OX=231471 GN=N PE=3 SV=1
+Length=409
+
+ Score = 119 bits (299),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q8JMI6|NCAP_IBVSA Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain SAIB20) OX=231426 GN=N PE=2 SV=1
+Length=409
+
+ Score = 118 bits (297),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9PY96|NCAP_CVM2 Nucleoprotein OS=Murine coronavirus (strain 
+2) OX=76344 GN=N PE=2 SV=1
+Length=451
+
+ Score = 119 bits (299),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 35/102 (34%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+ SAFF  S++ +       
+Sbjct  279  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPSAFFFGSKLELVKKNSGG  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GAI+ D   P F+  + +L ++++AY+ 
+Sbjct  336  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLTENLNAYQD  377
+
+
+>sp|Q82616|NCAP_IBVM Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain M41) OX=11127 GN=N PE=3 SV=1
+Length=409
+
+ Score = 118 bits (297),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P32923|NCAP_IBVG Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Gray) OX=31624 GN=N PE=1 SV=2
+Length=409
+
+ Score = 118 bits (297),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9WCD0|NCAP_CVRNJ Nucleoprotein OS=Rat coronavirus (strain 
+NJ) OX=231433 GN=N PE=3 SV=1
+Length=454
+
+ Score = 119 bits (298),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GAI+ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAIRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q98Y32|NCAP_IBVH5 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H52) OX=231425 GN=N PE=2 SV=1
+Length=409
+
+ Score = 118 bits (296),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+   + P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPRLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9PZ50|NCAP_CVTMI Nucleoprotein OS=Turkey coronavirus (strain 
+Minnesota) OX=231430 GN=N PE=3 SV=1
+Length=409
+
+ Score = 118 bits (295),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 28/95 (29%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGITDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ ID   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCIDGVGTRP  331
+
+
+>sp|Q9DQX6|NCAP_CVEN9 Nucleoprotein OS=Equine coronavirus (isolate 
+NC99) OX=202496 GN=N PE=3 SV=1
+Length=446
+
+ Score = 118 bits (296),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 36/106 (34%), Positives = 57/106 (54%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  281  VQQCFGKRGPNQ---NFGGAEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  337
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D   P F+  + +LN++++AY+   
+Sbjct  338  GNFDEPQKDVYELRYNGAIRFDSTLPGFETIMKVLNENLNAYQQQD  383
+
+
+>sp|Q83360|NCAP_CVMDV Nucleoprotein OS=Murine coronavirus (strain 
+DVIM) OX=231423 GN=N PE=3 SV=1
+Length=455
+
+ Score = 118 bits (296),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 35/102 (34%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GAI+ D   P F+  + +LN++++AY+ 
+Sbjct  340  VDEPTKDVYELLYSGAIRFDSTLPGFETIMKVLNENLNAYQN  381
+
+
+>sp|P18448|NCAP_CVMS Nucleoprotein OS=Murine coronavirus (strain 
+S) OX=11145 GN=N PE=3 SV=1
+Length=454
+
+ Score = 118 bits (296),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 57/101 (56%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q7T6S8|NCAP_CVCBG Nucleoprotein OS=Canine coronavirus (strain 
+BGF10) OX=441619 GN=N PE=3 SV=1
+Length=382
+
+ Score = 117 bits (292),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNSAKHYPQLAECVPSVSSILFGSHWTAKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|P03416|NCAP_CVMA5 Nucleoprotein OS=Murine coronavirus (strain 
+A59) OX=11142 GN=N PE=1 SV=2
+Length=454
+
+ Score = 118 bits (295),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q9PZ49|NCAP_CVTNC Nucleoprotein OS=Turkey coronavirus (strain 
+NC95) OX=231431 GN=N PE=3 SV=1
+Length=409
+
+ Score = 117 bits (293),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPRDDPQFDNYVTICDQCVDGIGTRP  331
+
+
+>sp|P18447|NCAP_CVM3 Nucleoprotein OS=Murine coronavirus (strain 
+3) OX=11140 GN=N PE=1 SV=1
+Length=454
+
+ Score = 117 bits (294),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 34/101 (34%), Positives = 56/101 (55%), Gaps = 12/101 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGSEMLKLGTSDPQFPILAELAPTVGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              E T     L Y GA++ D   P F+  + +LN++++AY+
+Sbjct  340  ADEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQ  380
+
+
+>sp|Q0ZME3|NCAP_CVHN5 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N5) OX=443241 GN=N PE=3 SV=1
+Length=441
+
+ Score = 117 bits (293),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 56/100 (56%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                +     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|Q14EA6|NCAP_CVHN2 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N2) OX=443240 GN=N PE=3 SV=1
+Length=441
+
+ Score = 117 bits (293),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 56/100 (56%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPLQ---NFGNSEMLKLGTNDPQFPILAELAPTPGAFFFGSKLELFKRDSD  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                +     L Y G+I+ D   P F+  + +L +++DAY
+Sbjct  336  ADSPSKDTFELRYSGSIRFDSTLPGFETIMKVLKENLDAY  375
+
+
+>sp|Q96598|NCAP_IBVVI Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Vic S) OX=231428 GN=N PE=2 SV=1
+Length=409
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G             PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTATLNLIPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q02915|NCAP_CVRSD Nucleoprotein OS=Rat coronavirus (strain 
+681) OX=33740 GN=N PE=3 SV=1
+Length=454
+
+ Score = 117 bits (293),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 34/102 (33%), Positives = 56/102 (55%), Gaps = 12/102 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+  AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTPGAFFFGSKLELVKKNSGG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKT  94
+              E T     L Y GA++ D   P F+  + +LN++++AY+ 
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQN  381
+
+
+>sp|P05991|NCAP_CVPFS Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain FS772/70) OX=11150 GN=N PE=3 
+SV=1
+Length=382
+
+ Score = 115 bits (289),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 45/92 (49%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+ +  +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTEQFL----QQINAY  329
+
+
+>sp|P36298|NCAP_CVCAI Nucleoprotein OS=Canine coronavirus (strain 
+Insavc-1) OX=36391 GN=N PE=3 SV=1
+Length=381
+
+ Score = 115 bits (289),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  244  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSILFGSHWTAKEDGDQ  300
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  301  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  328
+
+
+>sp|Q9J4A3|NCAP_IBVD1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain D1466) OX=231472 GN=N PE=3 SV=1
+Length=409
+
+ Score = 116 bits (290),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKCK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P03417|NCAP_CVMJH Nucleoprotein OS=Murine coronavirus (strain 
+JHM) OX=11144 GN=N PE=1 SV=1
+Length=455
+
+ Score = 116 bits (291),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 34/104 (33%), Positives = 56/104 (54%), Gaps = 12/104 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGME------  55
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSGG  339
+
+Query  56   ---VTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                T     L Y GA++ D   P F+  + +LN++++AY+   
+Sbjct  340  ADGPTKDVYELQYSGAVRFDSTLPGFETIMKVLNENLNAYQNQD  383
+
+
+>sp|P33463|NCAP_CVPR8 Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain 86/137004 / isolate British) OX=33736 GN=N 
+PE=3 SV=1
+Length=382
+
+ Score = 115 bits (288),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L    P+ +  +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDHPKTEQFL----QQINAY  329
+
+
+>sp|P59713|NCAP_CVPV Nucleoprotein OS=Puffinosis coronavirus OX=76583 
+GN=N PE=2 SV=1
+Length=457
+
+ Score = 116 bits (291),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 34/104 (33%), Positives = 56/104 (54%), Gaps = 12/104 (12%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  S++ +       
+Sbjct  283  VQQCFGKRGPNQ---NFGGPEMLKLGTSDPQFPILAELAPTAGAFFFGSKLELVKKNSVG  339
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+              E T     L Y GA++ D   P F+  + +L ++++AY+   
+Sbjct  340  VDEPTKDVYELQYSGAVRFDSTLPGFETIMKVLRENLNAYQNQD  383
+
+
+>sp|Q98WJ7|NCAP_IBVH1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain H120) OX=231424 GN=N PE=3 SV=1
+Length=409
+
+ Score = 115 bits (288),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVIAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P24411|NCAP_CVPRM Nucleoprotein OS=Porcine respiratory coronavirus 
+(strain RM4) OX=11148 GN=N PE=3 SV=1
+Length=382
+
+ Score = 115 bits (287),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDSDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L    P+ +  +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDHPKTEQFL----QQINAY  329
+
+
+>sp|Q5MQC6|NCAP_CVHN1 Nucleoprotein OS=Human coronavirus HKU1 
+(isolate N1) OX=443239 GN=N PE=3 SV=1
+Length=441
+
+ Score = 115 bits (289),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 55/100 (55%), Gaps = 11/100 (11%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM------  54
+            NV Q FG+RGP Q   NFG+ ++++ GT+   +P +A+ AP+  AFF  S++ +      
+Sbjct  279  NVQQCFGKRGPSQ---NFGNAEMLKLGTNDPQFPILAELAPTPGAFFFGSKLDLVKRDSE  335
+
+Query  55   --EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+                      L Y G+I+ D   P F+  + +L ++++AY
+Sbjct  336  ADSPVKDVFELHYSGSIRFDSTLPGFETIMKVLEENLNAY  375
+
+
+>sp|Q9J4B0|NCAP_IBVDE Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain DE072) OX=233265 GN=N PE=3 SV=1
+Length=409
+
+ Score = 115 bits (288),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L       +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKIEFTTVVSRDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q9PZ51|NCAP_CVTIN Nucleoprotein OS=Turkey coronavirus (strain 
+Indiana) OX=231429 GN=N PE=3 SV=1
+Length=409
+
+ Score = 115 bits (287),  Expect = 8e-31, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    S++  ++ P G 
+Sbjct  238  VEQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFASKLTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVPRDDPQFDNYVSICDQCVDGVGTRP  331
+
+
+>sp|P12648|NCAP_IBVK Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain KB8523) OX=11126 GN=N PE=3 SV=1
+Length=409
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++ P G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQPDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLKFEFTTVVSRNDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|Q8V432|NCAP_CVBLU Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-LUN) OX=233264 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|P15130|NCAP_CVH22 Nucleoprotein OS=Human coronavirus 229E 
+OX=11137 GN=N PE=1 SV=2
+Length=389
+
+ Score = 114 bits (285),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 26/96 (27%), Positives = 39/96 (41%), Gaps = 3/96 (3%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NVTQ FG R       NFG   ++  G   K +PQ A+  PS +A    S I  + + + 
+Sbjct  260  NVTQCFGPR---DLDHNFGSAGVVANGVKAKGYPQFAELVPSTAAMLFDSHIVSKESGNT  316
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+              LT+   + +    P     +  LN      +  P
+Sbjct  317  VVLTFTTRVTVPKDHPHLGKFLEELNAFTREMQQHP  352
+
+
+>sp|P19902|NCAP_CVBF Nucleoprotein OS=Bovine coronavirus (strain 
+F15) OX=11129 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|Q91A22|NCAP_CVBEN Nucleoprotein OS=Bovine coronavirus (strain 
+98TXSF-110-ENT) OX=233262 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|P59712|NCAP_CVBQ Nucleoprotein OS=Bovine coronavirus (strain 
+Quebec) OX=11133 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|P10527|NCAP_CVBM Nucleoprotein OS=Bovine coronavirus (strain 
+Mebus) OX=11132 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|P69598|NCAP_IBVBU Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette US) OX=160750 GN=N PE=1 SV=1
+Length=409
+
+ Score = 114 bits (285),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69597|NCAP_IBVBC Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette CK) OX=160235 GN=N PE=1 SV=1
+Length=409
+
+ Score = 114 bits (285),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P69596|NCAP_IBVB Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain Beaudette) OX=11122 GN=N PE=1 SV=1
+Length=409
+
+ Score = 114 bits (285),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 42/95 (44%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            V Q FG R   + +GNFGD  +  +G        +    PS+ A    SR+  ++   G 
+Sbjct  238  VDQVFGPRTKGK-EGNFGDDKMNEEGIKDGRVTAMLNLVPSSHACLFGSRVTPKLQLDGL  296
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             L +     +   DPQF + V + ++ +D   T P
+Sbjct  297  HLRFEFTTVVPCDDPQFDNYVKICDQCVDGVGTRP  331
+
+
+>sp|P26020|NCAP_CVBOK Nucleoprotein OS=Bovine coronavirus (strain 
+OK-0514) OX=231432 GN=N PE=3 SV=1
+Length=448
+
+ Score = 115 bits (287),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|Q9QAR8|NCAP_CVBLY Nucleoprotein OS=Bovine coronavirus (strain 
+LY-138) OX=11131 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|Q04700|NCAP_CVCAK Nucleoprotein OS=Canine coronavirus (strain 
+K378) OX=33732 GN=N PE=3 SV=1
+Length=382
+
+ Score = 113 bits (284),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 43/92 (47%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G   KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTKFYGARS---SSANFGDSDLVANGNGAKHYPQLAECVPSVSSILFGSYWTAKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|Q9QAR1|NCAP_CVBLS Nucleoprotein OS=Bovine coronavirus (strain 
+LSU-94LSS-051) OX=233261 GN=N PE=3 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNLDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|P33469|NCAP_CVHOC Nucleoprotein OS=Human coronavirus OC43 
+OX=31631 GN=N PE=1 SV=1
+Length=448
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/106 (33%), Positives = 56/106 (53%), Gaps = 14/106 (13%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+                E       L Y+GAI+ D     F+  + +LN++++AY+   
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNENLNAYQQQD  384
+
+
+>sp|Q8JSP4|NCAP_CVPIA Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain IAF-404) OX=230236 GN=N PE=3 
+SV=1
+Length=449
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|P04134|NCAP_CVPPU Nucleoprotein OS=Porcine transmissible gastroenteritis 
+coronavirus (strain Purdue) OX=11151 GN=N PE=1 
+SV=2
+Length=382
+
+ Score = 113 bits (283),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 44/92 (48%), Gaps = 7/92 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT+ +G R    +  NFGD DL+  G+  KH+PQ+A+  PS S+    S    +     
+Sbjct  245  DVTRFYGARS---SSANFGDTDLVANGSSAKHYPQLAECVPSVSSILFGSYWTSKEDGDQ  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAY  92
+              +T+     L   DP+    +    + I+AY
+Sbjct  302  IEVTFTHKYHLPKDDPKTGQFL----QQINAY  329
+
+
+>sp|Q8BB23|NCAP_CVP67 Nucleoprotein OS=Porcine hemagglutinating 
+encephalomyelitis virus (strain 67N) OX=230237 GN=N PE=3 SV=1
+Length=449
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 56/103 (54%), Gaps = 14/103 (14%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGM-------  54
+            V Q FG+RGP Q   NFG  ++++ GT    +P +A+ AP+A AFF  SR+ +       
+Sbjct  282  VQQCFGKRGPNQ---NFGGGEMLKLGTSDPQFPILAELAPTAGAFFFGSRLELAKVQNLS  338
+
+Query  55   ----EVTPSGTWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+                E       L Y+GAI+ D     F+  + +LN++++AY+
+Sbjct  339  GNPDEPQKDVYELRYNGAIRFDSTLSGFETIMKVLNQNLNAYQ  381
+
+
+>sp|Q96605|NCAP_IBVV1 Nucleoprotein OS=Avian infectious bronchitis 
+virus (strain V18/91) OX=231427 GN=N PE=2 SV=1
+Length=409
+
+ Score = 113 bits (282),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 41/95 (43%), Gaps = 1/95 (1%)
+
+Query  2    VTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGT  61
+            + + FG+R   Q   NFGD  +I +G        +    P+  A    S +  ++ P G 
+Sbjct  240  IDEVFGQRRKGQAP-NFGDDKMIEEGVKDGRLTAMLNLVPTPHACLLGSMVTAKLQPDGL  298
+
+Query  62   WLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFP  96
+             + +     +  +DPQF +   + ++ +D   T P
+Sbjct  299  HVRFSFETVVKREDPQFANYSKICDECVDGVGTRP  333
+
+
+>sp|P25909|NCAP_FIPV Nucleoprotein OS=Feline coronavirus (strain 
+FIPV WSU-79/1146) OX=33734 GN=N PE=3 SV=1
+Length=377
+
+ Score = 108 bits (269),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 29/93 (31%), Positives = 41/93 (44%), Gaps = 7/93 (8%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +VT  +G R    +  NFGD DL+  G   K +PQIA+  PS S+    S+   E     
+Sbjct  241  DVTTFYGARS---SSANFGDSDLVANGNAAKCYPQIAECVPSVSSIIFGSQWSAEEAGDQ  297
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYK  93
+              +T      L   D +    +    + IDAYK
+Sbjct  298  VKVTLTHTYYLPKDDAKTSQFL----EQIDAYK  326
+
+
+>sp|Q0Q462|NCAP_BC512 Nucleoprotein OS=Bat coronavirus 512/2005 
+OX=693999 GN=N PE=3 SV=1
+Length=394
+
+ Score = 108 bits (270),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 23/97 (24%), Positives = 39/97 (40%), Gaps = 7/97 (7%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +V   FG RG  +   NFG  + + +G +   + Q A   P A+A      +  +    G
+Sbjct  250  SVEVCFGPRGGTR---NFGSSEFVAKGVNAPGYAQAASLVPGAAALLFGGNVATKEMADG  306
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTFPP  97
+              +TY   + +   D      + +    +DAYK   P
+Sbjct  307  VEITYTYKMLVPKDDKN----LEIFLAQVDAYKLGDP  339
+
+
+>sp|Q07499|NCAP_PEDV7 Nucleoprotein OS=Porcine epidemic diarrhea 
+virus (strain CV777) OX=229032 GN=N PE=3 SV=1
+Length=441
+
+ Score = 108 bits (270),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 28/95 (29%), Positives = 44/95 (46%), Gaps = 7/95 (7%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            +V   FG RG  +   NFGD + + +G D   + QIA  AP+ +A      + +      
+Sbjct  290  SVAACFGPRGGFK---NFGDAEFVEKGVDASGYAQIASLAPNVAALLFGGNVAVRELADS  346
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHIDAYKTF  95
+              +TY+  + +   DP     V LL   +DA+KT 
+Sbjct  347  YEITYNYKMTVPKSDPN----VELLVSQVDAFKTG  377
+
+
+>sp|Q6Q1R8|NCAP_CVHNL Nucleoprotein OS=Human coronavirus NL63 
+OX=277944 GN=N PE=1 SV=1
+Length=377
+
+ Score = 105 bits (263),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 23/89 (26%), Positives = 39/89 (44%), Gaps = 3/89 (3%)
+
+Query  1    NVTQAFGRRGPEQTQGNFGDQDLIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG  60
+            NV Q FG R       N GD DL++ G D K +PQ+A+  P+ +A F  S +  +     
+Sbjct  245  NVIQCFGPR---DFNHNMGDSDLVQNGVDAKGFPQLAELIPNQAALFFDSEVSTDEVGDN  301
+
+Query  61   TWLTYHGAIKLDDKDPQFKDNVILLNKHI  89
+              +TY   + +   +      +  ++   
+Sbjct  302  VQITYTYKMLVAKDNKNLPKFIEQISAFT  330
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4952177160
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

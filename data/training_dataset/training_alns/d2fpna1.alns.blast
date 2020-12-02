@@ -1,0 +1,137 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2fpna1
+
+Length=205
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32277|YWMB_BACSU Uncharacterized protein YwmB OS=Bacillus sub...  418     1e-149
+
+
+>sp|O32277|YWMB_BACSU Uncharacterized protein YwmB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ywmB PE=1 SV=1
+Length=246
+
+ Score = 418 bits (1074),  Expect = 1e-149, Method: Compositional matrix adjust.
+ Identities = 205/214 (96%), Positives = 205/214 (96%), Gaps = 9/214 (4%)
+
+Query  1    LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM  60
+            LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM
+Sbjct  31   LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM  90
+
+Query  61   IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI  120
+            IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI
+Sbjct  91   IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI  150
+
+Query  121  FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQ---VEHVVEPNFVSISAFTDEWEEY  177
+            FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQ   VEHVVEPNFVSISAFTDEWEEY
+Sbjct  151  FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQARSVEHVVEPNFVSISAFTDEWEEY  210
+
+Query  178  IMTSKHKMNLQIALRS------HTVTVGTPIVTT  205
+            IMTSKHKMNLQIALRS      HTVTVGTPIVTT
+Sbjct  211  IMTSKHKMNLQIALRSAGMGGKHTVTVGTPIVTT  244
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12995251026
+Results from round 2
+
+
+Query= d2fpna1
+
+Length=205
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32277|YWMB_BACSU Uncharacterized protein YwmB OS=Bacillus sub...  411     9e-147
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O32277|YWMB_BACSU Uncharacterized protein YwmB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ywmB PE=1 SV=1
+Length=246
+
+ Score = 411 bits (1055),  Expect = 9e-147, Method: Composition-based stats.
+ Identities = 205/214 (96%), Positives = 205/214 (96%), Gaps = 9/214 (4%)
+
+Query  1    LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM  60
+            LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM
+Sbjct  31   LTPLAQMAEGMERQDVSIDKWTLHAKQNLSLTEKEFYQKVQRLKQEYRQYDWVIAREDKM  90
+
+Query  61   IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI  120
+            IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI
+Sbjct  91   IKAIGTYTDKKNRTSFRLQLVTTLKKHNPTSYLLYEQMSLETPDSWNDTYEQFERETLGI  150
+
+Query  121  FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQ---VEHVVEPNFVSISAFTDEWEEY  177
+            FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQ   VEHVVEPNFVSISAFTDEWEEY
+Sbjct  151  FQEKVVIFTCLNGHLDDNMNIVLQKKANQLLNEFQARSVEHVVEPNFVSISAFTDEWEEY  210
+
+Query  178  IMTSKHKMNLQIALRS------HTVTVGTPIVTT  205
+            IMTSKHKMNLQIALRS      HTVTVGTPIVTT
+Sbjct  211  IMTSKHKMNLQIALRSAGMGGKHTVTVGTPIVTT  244
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.375    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0398    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12995251026
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,608 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1l3pa_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q40963|MPA5B_PHLPR Pollen allergen Phl p 5b (Fragment) OS=Phle...  196     2e-63
+sp|P56167|MPA54_PHAAQ Major pollen allergen Pha a 5.4 (Fragment) ...  136     3e-41
+sp|P56164|MPA51_PHAAQ Major pollen allergen Pha a 5.1 OS=Phalaris...  140     5e-41
+sp|Q40960|MPAP5_PHLPR Pollen allergen Phl p 5.0101 OS=Phleum prat...  130     2e-37
+sp|Q40962|MPA5A_PHLPR Pollen allergen Phl p 5a (Fragment) OS=Phle...  129     5e-37
+sp|P56166|MPA53_PHAAQ Major pollen allergen Pha a 5.3 OS=Phalaris...  126     5e-36
+sp|Q40240|MPA5A_LOLPR Major pollen allergen Lol p 5a OS=Lolium pe...  123     2e-34
+sp|P56165|MPA52_PHAAQ Major pollen allergen Pha a 5.2 OS=Phalaris...  122     2e-34
+sp|P22285|MPA92_POAPR Pollen allergen KBG 41 OS=Poa pratensis OX=...  113     1e-30
+sp|P22286|MPA93_POAPR Pollen allergen KBG 60 OS=Poa pratensis OX=...  111     4e-30
+sp|P22284|MPA91_POAPR Pollen allergen KBG 31 OS=Poa pratensis OX=...  108     1e-28
+sp|Q40237|MPA5B_LOLPR Major pollen allergen Lol p 5b OS=Lolium pe...  108     2e-28
+sp|P43215|MPAP6_PHLPR Pollen allergen Phl p 6 OS=Phleum pratense ...  38.1    0.003
+
+
+>sp|Q40963|MPA5B_PHLPR Pollen allergen Phl p 5b (Fragment) OS=Phleum 
+pratense OX=15957 PE=1 SV=2
+Length=284
+
+ Score = 196 bits (499),  Expect = 2e-63, Method: Compositional matrix adjust.
+ Identities = 101/102 (99%), Positives = 102/102 (100%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKE+TGGAYDTYKCIPSL
+Sbjct  150  IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKESTGGAYDTYKCIPSL  209
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ
+Sbjct  210  EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  251
+
+
+ Score = 37.4 bits (85),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 37/91 (41%), Positives = 52/91 (57%), Gaps = 3/91 (3%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAV  64
+            E ++I+ I+  FK A  AAA+ PA DKF  FEAAF  + K     A      +P L+AA 
+Sbjct  43   EQKLIEDINVGFKAAVAAAASVPAADKFKTFEAAFTSSSKAAAAKAPG---LVPKLDAAY  99
+
+Query  65   KQAYAATVAAAPQVKYAVFEAALTKAITAMS  95
+              AY A V A P+ K+  F A+LT+A+  ++
+Sbjct  100  SVAYKAAVGATPEAKFDSFVASLTEALRVIA  130
+
+
+>sp|P56167|MPA54_PHAAQ Major pollen allergen Pha a 5.4 (Fragment) 
+OS=Phalaris aquatica OX=28479 PE=1 SV=1
+Length=175
+
+ Score = 136 bits (343),  Expect = 3e-41, Method: Compositional matrix adjust.
+ Identities = 83/103 (81%), Positives = 92/103 (89%), Gaps = 1/103 (1%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQI+DKIDAAFK+AATAA +APA+DKFTVFE AFNKAIKE  GGAY+TYK IPSL
+Sbjct  38   IPAGELQIVDKIDAAFKIAATAANSAPANDKFTVFEGAFNKAIKERHGGAYETYKFIPSL  97
+
+Query  61   EAA-VKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EA+  KQAY ATVA AP+VKYAVFEA LTKAITAMSE QKV++
+Sbjct  98   EASRSKQAYGATVARAPEVKYAVFEAGLTKAITAMSEAQKVAK  140
+
+
+>sp|P56164|MPA51_PHAAQ Major pollen allergen Pha a 5.1 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=320
+
+ Score = 140 bits (352),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 83/101 (82%), Positives = 92/101 (91%), Gaps = 0/101 (0%)
+
+Query  2    PAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLE  61
+            P GELQI+DKIDAAFK+AATAA +APA+DKFTVFE AFNKAIKE+T GAY+TYK IPSLE
+Sbjct  154  PVGELQIVDKIDAAFKIAATAANSAPANDKFTVFEGAFNKAIKESTAGAYETYKFIPSLE  213
+
+Query  62   AAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            AAVKQAY ATVA AP+VKYAVFEA LTKAITAMSE QKV++
+Sbjct  214  AAVKQAYGATVARAPEVKYAVFEAGLTKAITAMSEAQKVAK  254
+
+
+>sp|Q40960|MPAP5_PHLPR Pollen allergen Phl p 5.0101 OS=Phleum 
+pratense OX=15957 PE=1 SV=1
+Length=312
+
+ Score = 130 bits (328),  Expect = 2e-37, Method: Compositional matrix adjust.
+ Identities = 80/99 (81%), Positives = 89/99 (90%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+I+K+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY++YK IP+L
+Sbjct  182  IPAGELQVIEKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYESYKFIPAL  241
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAATVA AP+VKY VFE AL KAITAMSE QK
+Sbjct  242  EAAVKQAYAATVATAPEVKYTVFETALKKAITAMSEAQK  280
+
+
+>sp|Q40962|MPA5A_PHLPR Pollen allergen Phl p 5a (Fragment) OS=Phleum 
+pratense OX=15957 PE=1 SV=2
+Length=286
+
+ Score = 129 bits (323),  Expect = 5e-37, Method: Compositional matrix adjust.
+ Identities = 79/99 (80%), Positives = 88/99 (89%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+I+K+DAAFKVAATAA  APA+DKFTVFEAAFN  IK +TGGAY++YK IP+L
+Sbjct  156  IPAGELQVIEKVDAAFKVAATAANAAPANDKFTVFEAAFNDEIKASTGGAYESYKFIPAL  215
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAATVA AP+VKY VFE AL KAITAMSE QK
+Sbjct  216  EAAVKQAYAATVATAPEVKYTVFETALKKAITAMSEAQK  254
+
+
+ Score = 41.6 bits (96),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 36/98 (37%), Positives = 48/98 (49%), Gaps = 12/98 (12%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAF----NKAI-----KETTGGAYDTYK  55
+            E ++I+KI+A FK A   A   PAD K+  F A F    NKA       E  G A  + K
+Sbjct  38   EQKLIEKINAGFKAALAGAGVQPAD-KYRTFVATFGPASNKAFAEGLSGEPKGAAESSSK  96
+
+Query  56   --CIPSLEAAVKQAYAATVAAAPQVKYAVFEAALTKAI  91
+                  L+AA K AY     A P+ KY  + A L++A+
+Sbjct  97   AALTSKLDAAYKLAYKTAEGATPEAKYDAYVATLSEAL  134
+
+
+>sp|P56166|MPA53_PHAAQ Major pollen allergen Pha a 5.3 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=294
+
+ Score = 126 bits (317),  Expect = 5e-36, Method: Compositional matrix adjust.
+ Identities = 65/83 (78%), Positives = 72/83 (87%), Gaps = 0/83 (0%)
+
+Query  20   ATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAVKQAYAATVAAAPQVK  79
+            +TAA +APA+DKFTVFE AFNKAIKE  GG  +TYK IPSLEAAVKQAY ATVA AP+VK
+Sbjct  178  STAANSAPANDKFTVFEGAFNKAIKERHGGPTETYKFIPSLEAAVKQAYGATVARAPEVK  237
+
+Query  80   YAVFEAALTKAITAMSEVQKVSQ  102
+            YAVFEA LTKAITAMSE QKV++
+Sbjct  238  YAVFEAGLTKAITAMSEAQKVAK  260
+
+
+ Score = 43.5 bits (101),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 35/96 (36%), Positives = 48/96 (50%), Gaps = 11/96 (11%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAV  64
+            E ++I+ I+AAFK      A+AP  DK+  FE AF+KA      GA         L+AA 
+Sbjct  51   EQKLIEDINAAFKWWP---ASAPPADKYKTFETAFSKA---NIAGA-----STKGLDAAY  99
+
+Query  65   KQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKV  100
+               Y     A P+ KY  F  ALT+A+  M+   +V
+Sbjct  100  SVVYNTAAGATPEAKYDSFVTALTEALRIMAGTLEV  135
+
+
+>sp|Q40240|MPA5A_LOLPR Major pollen allergen Lol p 5a OS=Lolium 
+perenne OX=4522 GN=LOLPIB PE=1 SV=2
+Length=307
+
+ Score = 123 bits (308),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 82/102 (80%), Positives = 92/102 (90%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IP GELQI+DKIDAAFK+AATAA  AP +DKFTVFE+AFNKA+ E TGGAY+TYK IPSL
+Sbjct  166  IPTGELQIVDKIDAAFKIAATAANAAPTNDKFTVFESAFNKALNECTGGAYETYKFIPSL  225
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQAYAATVAAAP+VKYAVFEAALTKAITAM++ QK  +
+Sbjct  226  EAAVKQAYAATVAAAPEVKYAVFEAALTKAITAMTQAQKAGK  267
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 36/92 (39%), Positives = 52/92 (57%), Gaps = 2/92 (2%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTG-GAYDTYKCIPSLEAA  63
+            E ++++ ++A FK A  AAA AP  DKF +FEAAF+++ K      A      IP L+ A
+Sbjct  56   EQKLLEDVNAGFKAAVAAAANAPPADKFKIFEAAFSESSKGLLATSAAKAPGLIPKLDTA  115
+
+Query  64   VKQAYAATVAAAPQVKYAVFEAALTKAITAMS  95
+               AY A   A P+ KY  F  ALT+A+  ++
+Sbjct  116  YDVAYKAA-EATPEAKYDAFVTALTEALRVIA  146
+
+
+>sp|P56165|MPA52_PHAAQ Major pollen allergen Pha a 5.2 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=305
+
+ Score = 122 bits (306),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 73/99 (74%), Positives = 85/99 (86%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGE+++I+K+ AAF  AATAA  APA+DKFTVF ++FNKAIKETTGGAY  YK IP+L
+Sbjct  163  IPAGEVEVINKVKAAFSTAATAADEAPANDKFTVFVSSFNKAIKETTGGAYAGYKFIPTL  222
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAA+ A AP+VKYAVFE AL KAI+AMSE QK
+Sbjct  223  EAAVKQAYAASSATAPEVKYAVFETALKKAISAMSEAQK  261
+
+
+>sp|P22285|MPA92_POAPR Pollen allergen KBG 41 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=333
+
+ Score = 113 bits (283),  Expect = 1e-30, Method: Compositional matrix adjust.
+ Identities = 79/102 (77%), Positives = 89/102 (87%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+L
+Sbjct  184  IPAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPAL  243
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQ+YAATVA AP VKY VFE AL KAITAMS+ QK ++
+Sbjct  244  EAAVKQSYAATVATAPAVKYTVFETALKKAITAMSQAQKAAK  285
+
+
+>sp|P22286|MPA93_POAPR Pollen allergen KBG 60 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=307
+
+ Score = 111 bits (278),  Expect = 4e-30, Method: Compositional matrix adjust.
+ Identities = 78/98 (80%), Positives = 86/98 (88%), Gaps = 0/98 (0%)
+
+Query  2    PAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLE  61
+            PAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+LE
+Sbjct  178  PAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPALE  237
+
+Query  62   AAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            AAVKQ+YAATVA AP VKY VFE AL KAITAMS+ QK
+Sbjct  238  AAVKQSYAATVATAPAVKYTVFETALKKAITAMSQAQK  275
+
+
+>sp|P22284|MPA91_POAPR Pollen allergen KBG 31 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=373
+
+ Score = 108 bits (271),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 77/95 (81%), Positives = 84/95 (88%), Gaps = 0/95 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+L
+Sbjct  243  IPAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPAL  302
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMS  95
+            EAAVKQ+YAATVA AP VKY VFE AL KAITAMS
+Sbjct  303  EAAVKQSYAATVATAPAVKYTVFETALKKAITAMS  337
+
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 34/87 (39%), Positives = 52/87 (60%), Gaps = 3/87 (3%)
+
+Query  9   IDKIDAAFKVAATAA-ATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAVKQA  67
+           +DK + A+K A  AA A APA+ KF VF+A F+K +KE   G  D       L+A ++ +
+Sbjct  1   MDKANGAYKTALKAASAVAPAE-KFPVFQATFDKNLKEGLSGP-DAVGFAKKLDAFIQTS  58
+
+Query  68  YAATVAAAPQVKYAVFEAALTKAITAM  94
+           Y +T AA P+ K+ +F  +LT+ +  M
+Sbjct  59  YLSTKAAEPKEKFDLFVLSLTEVLRFM  85
+
+
+>sp|Q40237|MPA5B_LOLPR Major pollen allergen Lol p 5b OS=Lolium 
+perenne OX=4522 PE=1 SV=1
+Length=339
+
+ Score = 108 bits (269),  Expect = 2e-28, Method: Compositional matrix adjust.
+ Identities = 67/99 (68%), Positives = 79/99 (80%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPA E+Q+IDK+DAA++ AATAA  APA+DKFTVFE  FN AIK + G AYD+YK IP+L
+Sbjct  185  IPAAEVQLIDKVDAAYRTAATAANAAPANDKFTVFENTFNNAIKVSLGAAYDSYKFIPTL  244
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+             AAVKQAYAA  A AP+VKY V E AL KA+TAMSE +K
+Sbjct  245  VAAVKQAYAAKQATAPEVKYTVSETALKKAVTAMSEAEK  283
+
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 39/113 (35%), Positives = 56/113 (50%), Gaps = 12/113 (11%)
+
+Query  1    IPAG-----ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAF----NKAIKETTGGAY  51
+            +P+G     E ++I+KI+A FK A  AAA  P  DK+  F   F    NKA  E     Y
+Sbjct  59   VPSGKATTEEQKLIEKINAGFKAAVAAAAVVPPADKYKTFVETFGTATNKAFVEGLASGY  118
+
+Query  52   ---DTYKCIPSLEAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVS  101
+                  +    L+AA+K AY A   A P+ KY  + A LT+A+  ++   +V 
+Sbjct  119  ADQSKNQLTSKLDAALKLAYEAAQGATPEAKYDAYVATLTEALRVIAGTLEVH  171
+
+
+>sp|P43215|MPAP6_PHLPR Pollen allergen Phl p 6 OS=Phleum pratense 
+OX=15957 GN=PHLPVI PE=1 SV=1
+Length=132
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 28/88 (32%), Positives = 44/88 (50%), Gaps = 1/88 (1%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDT-YKCIPSLEAA  63
+            E ++I+ ++A+F+ A    A  P  DK+  FEAAF  + K     A     + +P L+  
+Sbjct  29   EQKLIEDVNASFRAAMATTANVPPADKYKTFEAAFTVSSKRNLADAVSKAPQLVPKLDEV  88
+
+Query  64   VKQAYAATVAAAPQVKYAVFEAALTKAI  91
+               AY A   AAP+ KY  F    ++A+
+Sbjct  89   YNAAYNAADHAAPEDKYEAFVLHFSEAL  116
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.123    0.328    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 2
+
+
+Query= d1l3pa_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P56164|MPA51_PHAAQ Major pollen allergen Pha a 5.1 OS=Phalaris...  126     7e-36
+sp|P56167|MPA54_PHAAQ Major pollen allergen Pha a 5.4 (Fragment) ...  110     6e-31
+sp|P56165|MPA52_PHAAQ Major pollen allergen Pha a 5.2 OS=Phalaris...  113     1e-30
+sp|Q40963|MPA5B_PHLPR Pollen allergen Phl p 5b (Fragment) OS=Phle...  105     4e-28
+sp|P56166|MPA53_PHAAQ Major pollen allergen Pha a 5.3 OS=Phalaris...  105     4e-28
+sp|Q40962|MPA5A_PHLPR Pollen allergen Phl p 5a (Fragment) OS=Phle...  101     2e-26
+sp|Q40240|MPA5A_LOLPR Major pollen allergen Lol p 5a OS=Lolium pe...  101     2e-26
+sp|Q40960|MPAP5_PHLPR Pollen allergen Phl p 5.0101 OS=Phleum prat...  101     3e-26
+sp|Q40237|MPA5B_LOLPR Major pollen allergen Lol p 5b OS=Lolium pe...  94.0    4e-23
+sp|P22286|MPA93_POAPR Pollen allergen KBG 60 OS=Poa pratensis OX=...  91.7    2e-22
+sp|P22285|MPA92_POAPR Pollen allergen KBG 41 OS=Poa pratensis OX=...  91.3    3e-22
+sp|P22284|MPA91_POAPR Pollen allergen KBG 31 OS=Poa pratensis OX=...  87.5    1e-20
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P56164|MPA51_PHAAQ Major pollen allergen Pha a 5.1 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=320
+
+ Score = 126 bits (317),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 83/101 (82%), Positives = 92/101 (91%), Gaps = 0/101 (0%)
+
+Query  2    PAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLE  61
+            P GELQI+DKIDAAFK+AATAA +APA+DKFTVFE AFNKAIKE+T GAY+TYK IPSLE
+Sbjct  154  PVGELQIVDKIDAAFKIAATAANSAPANDKFTVFEGAFNKAIKESTAGAYETYKFIPSLE  213
+
+Query  62   AAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            AAVKQAY ATVA AP+VKYAVFEA LTKAITAMSE QKV++
+Sbjct  214  AAVKQAYGATVARAPEVKYAVFEAGLTKAITAMSEAQKVAK  254
+
+
+>sp|P56167|MPA54_PHAAQ Major pollen allergen Pha a 5.4 (Fragment) 
+OS=Phalaris aquatica OX=28479 PE=1 SV=1
+Length=175
+
+ Score = 110 bits (275),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 83/103 (81%), Positives = 92/103 (89%), Gaps = 1/103 (1%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQI+DKIDAAFK+AATAA +APA+DKFTVFE AFNKAIKE  GGAY+TYK IPSL
+Sbjct  38   IPAGELQIVDKIDAAFKIAATAANSAPANDKFTVFEGAFNKAIKERHGGAYETYKFIPSL  97
+
+Query  61   EAA-VKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EA+  KQAY ATVA AP+VKYAVFEA LTKAITAMSE QKV++
+Sbjct  98   EASRSKQAYGATVARAPEVKYAVFEAGLTKAITAMSEAQKVAK  140
+
+
+>sp|P56165|MPA52_PHAAQ Major pollen allergen Pha a 5.2 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=305
+
+ Score = 113 bits (282),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 73/99 (74%), Positives = 85/99 (86%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGE+++I+K+ AAF  AATAA  APA+DKFTVF ++FNKAIKETTGGAY  YK IP+L
+Sbjct  163  IPAGEVEVINKVKAAFSTAATAADEAPANDKFTVFVSSFNKAIKETTGGAYAGYKFIPTL  222
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAA+ A AP+VKYAVFE AL KAI+AMSE QK
+Sbjct  223  EAAVKQAYAASSATAPEVKYAVFETALKKAISAMSEAQK  261
+
+
+>sp|Q40963|MPA5B_PHLPR Pollen allergen Phl p 5b (Fragment) OS=Phleum 
+pratense OX=15957 PE=1 SV=2
+Length=284
+
+ Score = 105 bits (263),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 101/102 (99%), Positives = 102/102 (100%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKE+TGGAYDTYKCIPSL
+Sbjct  150  IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKESTGGAYDTYKCIPSL  209
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ
+Sbjct  210  EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  251
+
+
+>sp|P56166|MPA53_PHAAQ Major pollen allergen Pha a 5.3 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=294
+
+ Score = 105 bits (263),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 65/83 (78%), Positives = 72/83 (87%), Gaps = 0/83 (0%)
+
+Query  20   ATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAVKQAYAATVAAAPQVK  79
+            +TAA +APA+DKFTVFE AFNKAIKE  GG  +TYK IPSLEAAVKQAY ATVA AP+VK
+Sbjct  178  STAANSAPANDKFTVFEGAFNKAIKERHGGPTETYKFIPSLEAAVKQAYGATVARAPEVK  237
+
+Query  80   YAVFEAALTKAITAMSEVQKVSQ  102
+            YAVFEA LTKAITAMSE QKV++
+Sbjct  238  YAVFEAGLTKAITAMSEAQKVAK  260
+
+
+>sp|Q40962|MPA5A_PHLPR Pollen allergen Phl p 5a (Fragment) OS=Phleum 
+pratense OX=15957 PE=1 SV=2
+Length=286
+
+ Score = 101 bits (251),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 79/99 (80%), Positives = 88/99 (89%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+I+K+DAAFKVAATAA  APA+DKFTVFEAAFN  IK +TGGAY++YK IP+L
+Sbjct  156  IPAGELQVIEKVDAAFKVAATAANAAPANDKFTVFEAAFNDEIKASTGGAYESYKFIPAL  215
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAATVA AP+VKY VFE AL KAITAMSE QK
+Sbjct  216  EAAVKQAYAATVATAPEVKYTVFETALKKAITAMSEAQK  254
+
+
+>sp|Q40240|MPA5A_LOLPR Major pollen allergen Lol p 5a OS=Lolium 
+perenne OX=4522 GN=LOLPIB PE=1 SV=2
+Length=307
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 82/102 (80%), Positives = 92/102 (90%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IP GELQI+DKIDAAFK+AATAA  AP +DKFTVFE+AFNKA+ E TGGAY+TYK IPSL
+Sbjct  166  IPTGELQIVDKIDAAFKIAATAANAAPTNDKFTVFESAFNKALNECTGGAYETYKFIPSL  225
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQAYAATVAAAP+VKYAVFEAALTKAITAM++ QK  +
+Sbjct  226  EAAVKQAYAATVAAAPEVKYAVFEAALTKAITAMTQAQKAGK  267
+
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 37/98 (38%), Positives = 54/98 (55%), Gaps = 2/98 (2%)
+
+Query  5    ELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTG-GAYDTYKCIPSLEAA  63
+            E ++++ ++A FK A  AAA AP  DKF +FEAAF+++ K      A      IP L+ A
+Sbjct  56   EQKLLEDVNAGFKAAVAAAANAPPADKFKIFEAAFSESSKGLLATSAAKAPGLIPKLDTA  115
+
+Query  64   VKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVS  101
+               AY A  A  P+ KY  F  ALT+A+  ++   +V 
+Sbjct  116  YDVAYKAAEAT-PEAKYDAFVTALTEALRVIAGALEVH  152
+
+
+>sp|Q40960|MPAP5_PHLPR Pollen allergen Phl p 5.0101 OS=Phleum 
+pratense OX=15957 PE=1 SV=1
+Length=312
+
+ Score = 101 bits (251),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 80/99 (81%), Positives = 89/99 (90%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+I+K+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY++YK IP+L
+Sbjct  182  IPAGELQVIEKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYESYKFIPAL  241
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            EAAVKQAYAATVA AP+VKY VFE AL KAITAMSE QK
+Sbjct  242  EAAVKQAYAATVATAPEVKYTVFETALKKAITAMSEAQK  280
+
+
+>sp|Q40237|MPA5B_LOLPR Major pollen allergen Lol p 5b OS=Lolium 
+perenne OX=4522 PE=1 SV=1
+Length=339
+
+ Score = 94.0 bits (232),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 67/99 (68%), Positives = 79/99 (80%), Gaps = 0/99 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPA E+Q+IDK+DAA++ AATAA  APA+DKFTVFE  FN AIK + G AYD+YK IP+L
+Sbjct  185  IPAAEVQLIDKVDAAYRTAATAANAAPANDKFTVFENTFNNAIKVSLGAAYDSYKFIPTL  244
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+             AAVKQAYAA  A AP+VKY V E AL KA+TAMSE +K
+Sbjct  245  VAAVKQAYAAKQATAPEVKYTVSETALKKAVTAMSEAEK  283
+
+
+>sp|P22286|MPA93_POAPR Pollen allergen KBG 60 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=307
+
+ Score = 91.7 bits (226),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 78/98 (80%), Positives = 86/98 (88%), Gaps = 0/98 (0%)
+
+Query  2    PAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLE  61
+            PAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+LE
+Sbjct  178  PAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPALE  237
+
+Query  62   AAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQK  99
+            AAVKQ+YAATVA AP VKY VFE AL KAITAMS+ QK
+Sbjct  238  AAVKQSYAATVATAPAVKYTVFETALKKAITAMSQAQK  275
+
+
+>sp|P22285|MPA92_POAPR Pollen allergen KBG 41 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=333
+
+ Score = 91.3 bits (225),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 79/102 (77%), Positives = 89/102 (87%), Gaps = 0/102 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+L
+Sbjct  184  IPAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPAL  243
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMSEVQKVSQ  102
+            EAAVKQ+YAATVA AP VKY VFE AL KAITAMS+ QK ++
+Sbjct  244  EAAVKQSYAATVATAPAVKYTVFETALKKAITAMSQAQKAAK  285
+
+
+>sp|P22284|MPA91_POAPR Pollen allergen KBG 31 OS=Poa pratensis 
+OX=4545 PE=1 SV=1
+Length=373
+
+ Score = 87.5 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 77/95 (81%), Positives = 84/95 (88%), Gaps = 0/95 (0%)
+
+Query  1    IPAGELQIIDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSL  60
+            IPAGELQ+IDK+DAAFKVAATAA  APA+DKFTVFEAAFN AIK +TGGAY +YK IP+L
+Sbjct  243  IPAGELQVIDKVDAAFKVAATAANAAPANDKFTVFEAAFNDAIKASTGGAYQSYKFIPAL  302
+
+Query  61   EAAVKQAYAATVAAAPQVKYAVFEAALTKAITAMS  95
+            EAAVKQ+YAATVA AP VKY VFE AL KAITAMS
+Sbjct  303  EAAVKQSYAATVATAPAVKYTVFETALKKAITAMS  337
+
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 31/92 (34%), Positives = 51/92 (55%), Gaps = 1/92 (1%)
+
+Query  9   IDKIDAAFKVAATAAATAPADDKFTVFEAAFNKAIKETTGGAYDTYKCIPSLEAAVKQAY  68
+           +DK + A+K A  AA+     +KF VF+A F+K +KE   G  D       L+A ++ +Y
+Sbjct  1   MDKANGAYKTALKAASAVAPAEKFPVFQATFDKNLKEGLSGP-DAVGFAKKLDAFIQTSY  59
+
+Query  69  AATVAAAPQVKYAVFEAALTKAITAMSEVQKV  100
+            +T AA P+ K+ +F  +LT+ +  M+   K 
+Sbjct  60  LSTKAAEPKEKFDLFVLSLTEVLRFMAGAVKA  91
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.124    0.324    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0379    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

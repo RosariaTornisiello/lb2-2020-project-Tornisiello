@@ -1,0 +1,568 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vjla_
+
+Length=143
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacte...  87.0    3e-21
+sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacte...  87.0    3e-21
+sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thali...  41.6    7e-04
+sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa subs...  40.0    0.002
+sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=6362...  40.0    0.002
+sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa subs...  40.0    0.002
+sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thali...  38.5    0.010
+
+
+>sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1829 
+PE=1 SV=1
+Length=164
+
+ Score = 87.0 bits (214),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 46/132 (35%), Positives = 80/132 (61%), Gaps = 6/132 (5%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVI-RDLTAALIDIDSRPSDAIILAVKTGAPI  120
+            +  ++ +L   + +V I  L++ TFYA L+  R+     I + +RPSD++ +A++ G PI
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDRN-----IKVSARPSDSVAIALRVGVPI  115
+
+Query  121  FVSDNLVEKHSI  132
+            +V + ++ +  +
+Sbjct  116  YVEEAVLAQAGL  127
+
+
+>sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1877 
+PE=4 SV=1
+Length=164
+
+ Score = 87.0 bits (214),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 46/132 (35%), Positives = 80/132 (61%), Gaps = 6/132 (5%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVI-RDLTAALIDIDSRPSDAIILAVKTGAPI  120
+            +  ++ +L   + +V I  L++ TFYA L+  R+     I + +RPSD++ +A++ G PI
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDRN-----IKVSARPSDSVAIALRVGVPI  115
+
+Query  121  FVSDNLVEKHSI  132
+            +V + ++ +  +
+Sbjct  116  YVEEAVLAQAGL  127
+
+
+>sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD1 PE=2 SV=1
+Length=325
+
+ Score = 41.6 bits (96),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 31/111 (28%), Positives = 54/111 (49%), Gaps = 3/111 (3%)
+
+Query  19   PVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVI  77
+            P ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ +   V  V 
+Sbjct  134  PAIVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKEMVDKMGYEVRLVR  193
+
+Query  78   IHSLKDNTFYATLVIRDLTAA--LIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +       ++A L +  +  A   +  D RPSDAI +AV+   PI V+  L
+Sbjct  194  VTKRVHEAYFAQLFLSKVGNASECVSFDLRPSDAINIAVRCKIPIQVNKYL  244
+
+
+>sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. indica OX=39946 GN=BBD1 PE=3 SV=1
+Length=331
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 28/117 (24%), Positives = 59/117 (50%), Gaps = 3/117 (3%)
+
+Query  21   VILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVIIH  79
+            ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E +   V  V I 
+Sbjct  145  IVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTERMGYAVRLVRIT  204
+
+Query  80   SLKDNTFYATLVIRDL--TAALIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSIEL  134
+             +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +   + +++
+Sbjct  205  EMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRIAYNNGLKV  261
+
+
+>sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=63629 
+GN=BBD PE=2 SV=1
+Length=331
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 28/117 (24%), Positives = 59/117 (50%), Gaps = 3/117 (3%)
+
+Query  21   VILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVIIH  79
+            ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E +   V  V I 
+Sbjct  145  IVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTERMGYAVRLVRIT  204
+
+Query  80   SLKDNTFYATLVIRDL--TAALIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSIEL  134
+             +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +   + +++
+Sbjct  205  EMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRIAYNNGLKV  261
+
+
+>sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=BBD1 PE=2 SV=1
+Length=331
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 28/117 (24%), Positives = 59/117 (50%), Gaps = 3/117 (3%)
+
+Query  21   VILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVIIH  79
+            ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E +   V  V I 
+Sbjct  145  IVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTERMGYAVRLVRIT  204
+
+Query  80   SLKDNTFYATLVIRDL--TAALIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSIEL  134
+             +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +   + +++
+Sbjct  205  EMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRIAYNNGLKV  261
+
+
+>sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD2 PE=2 SV=1
+Length=329
+
+ Score = 38.5 bits (88),  Expect = 0.010, Method: Compositional matrix adjust.
+ Identities = 29/109 (27%), Positives = 54/109 (50%), Gaps = 3/109 (3%)
+
+Query  21   VILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVIIH  79
+            ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ +   V  V + 
+Sbjct  140  IVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKDMVDKMGYEVRLVRVT  199
+
+Query  80   SLKDNTFYATLVIRDL--TAALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +     ++A L +  +   +  +  D RPSDAI +AV+   PI V+  L
+Sbjct  200  TRVHEAYFAELYLSKVGDKSDCVSFDLRPSDAINIAVRCKVPIQVNKYL  248
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.137    0.393    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5295157838
+Results from round 2
+
+
+Query= d1vjla_
+
+Length=143
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacte...  165     3e-52
+sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacte...  165     3e-52
+sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thali...  149     5e-44
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thali...  140     1e-40
+sp|Q6YZM6|BBD2_ORYSJ Bifunctional nuclease 2 OS=Oryza sativa subs...  121     5e-33
+sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa subs...  114     3e-30
+sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa subs...  114     3e-30
+sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=6362...  113     4e-30
+
+
+>sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1829 
+PE=1 SV=1
+Length=164
+
+ Score = 165 bits (419),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 45/131 (34%), Positives = 78/131 (60%), Gaps = 4/131 (3%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVIRDLTAALIDIDSRPSDAIILAVKTGAPIF  121
+            +  ++ +L   + +V I  L++ TFYA L+        I + +RPSD++ +A++ G PI+
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDR----NIKVSARPSDSVAIALRVGVPIY  116
+
+Query  122  VSDNLVEKHSI  132
+            V + ++ +  +
+Sbjct  117  VEEAVLAQAGL  127
+
+
+>sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1877 
+PE=4 SV=1
+Length=164
+
+ Score = 165 bits (419),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 45/131 (34%), Positives = 78/131 (60%), Gaps = 4/131 (3%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVIRDLTAALIDIDSRPSDAIILAVKTGAPIF  121
+            +  ++ +L   + +V I  L++ TFYA L+        I + +RPSD++ +A++ G PI+
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDR----NIKVSARPSDSVAIALRVGVPIY  116
+
+Query  122  VSDNLVEKHSI  132
+            V + ++ +  +
+Sbjct  117  VEEAVLAQAGL  127
+
+
+>sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD1 PE=2 SV=1
+Length=325
+
+ Score = 149 bits (377),  Expect = 5e-44, Method: Composition-based stats.
+ Identities = 31/119 (26%), Positives = 56/119 (47%), Gaps = 3/119 (3%)
+
+Query  19   PVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVI  77
+            P ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ +   V  V 
+Sbjct  134  PAIVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKEMVDKMGYEVRLVR  193
+
+Query  78   IHSLKDNTFYATLVIRDLTAA--LIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSIEL  134
+            +       ++A L +  +  A   +  D RPSDAI +AV+   PI V+  L     + +
+Sbjct  194  VTKRVHEAYFAQLFLSKVGNASECVSFDLRPSDAINIAVRCKIPIQVNKYLAYSDGMRV  252
+
+
+>sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD2 PE=2 SV=1
+Length=329
+
+ Score = 140 bits (354),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 29/118 (25%), Positives = 55/118 (47%), Gaps = 3/118 (3%)
+
+Query  20   VVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKVII  78
+             ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ +   V  V +
+Sbjct  139  AIVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKDMVDKMGYEVRLVRV  198
+
+Query  79   HSLKDNTFYATLVIRDLTAA--LIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSIEL  134
+             +     ++A L +  +      +  D RPSDAI +AV+   PI V+  L     + +
+Sbjct  199  TTRVHEAYFAELYLSKVGDKSDCVSFDLRPSDAINIAVRCKVPIQVNKYLAYSDGMRV  256
+
+
+>sp|Q6YZM6|BBD2_ORYSJ Bifunctional nuclease 2 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=BBD2 PE=2 SV=1
+Length=325
+
+ Score = 121 bits (303),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 32/118 (27%), Positives = 53/118 (45%), Gaps = 3/118 (3%)
+
+Query  18   TPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLEARVDKV  76
+             P ++L IE G+  +LPI +       L  A+  +   RP  + ++  +++ +   V  V
+Sbjct  135  QPAIVLRIEDGSETLLPIIVLEMPSVLLMAAIRNVHIARPTIYQVVKEMIDKMGYEVKLV  194
+
+Query  77   IIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNLVEKHSI  132
+             I+      + A L +  +      I  D RPSDAI +AV+   PI V  +L     I
+Sbjct  195  RINKRIQEAYCAELFLTKVGDHTESITFDLRPSDAINIAVRCKVPIQVHRSLAYSDGI  252
+
+
+>sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. indica OX=39946 GN=BBD1 PE=3 SV=1
+Length=331
+
+ Score = 114 bits (285),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+>sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=BBD1 PE=2 SV=1
+Length=331
+
+ Score = 114 bits (285),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+>sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=63629 
+GN=BBD PE=2 SV=1
+Length=331
+
+ Score = 113 bits (284),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0414    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5295157838
+Results from round 3
+
+
+Query= d1vjla_
+
+Length=143
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thali...  179     2e-55
+sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thali...  174     2e-53
+sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa subs...  170     8e-52
+sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa subs...  169     1e-51
+sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=6362...  169     1e-51
+sp|Q6YZM6|BBD2_ORYSJ Bifunctional nuclease 2 OS=Oryza sativa subs...  167     1e-50
+sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacte...  160     3e-50
+sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacte...  160     3e-50
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9FWS6|BBD1_ARATH Bifunctional nuclease 1 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD1 PE=2 SV=1
+Length=325
+
+ Score = 179 bits (453),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 31/126 (25%), Positives = 57/126 (45%), Gaps = 3/126 (2%)
+
+Query  12   LDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLE  70
+            L   +  P ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ + 
+Sbjct  127  LPDYAPHPAIVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKEMVDKMG  186
+
+Query  71   ARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNLVE  128
+              V  V +       ++A L +  +      +  D RPSDAI +AV+   PI V+  L  
+Sbjct  187  YEVRLVRVTKRVHEAYFAQLFLSKVGNASECVSFDLRPSDAINIAVRCKIPIQVNKYLAY  246
+
+Query  129  KHSIEL  134
+               + +
+Sbjct  247  SDGMRV  252
+
+
+>sp|Q93VH2|BBD2_ARATH Bifunctional nuclease 2 OS=Arabidopsis thaliana 
+OX=3702 GN=BBD2 PE=2 SV=1
+Length=329
+
+ Score = 174 bits (440),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 30/126 (24%), Positives = 57/126 (45%), Gaps = 3/126 (2%)
+
+Query  12   LDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLESLE  70
+            L   +    ++L +E GT  +LPI +       L  AM  ++  RP  + ++  +++ + 
+Sbjct  131  LPNYAPHSAIVLKMEDGTGLLLPIIVLEMPSVLLMAAMTNVQIARPTMYQVVKDMVDKMG  190
+
+Query  71   ARVDKVIIHSLKDNTFYATLVIRDLTAA--LIDIDSRPSDAIILAVKTGAPIFVSDNLVE  128
+              V  V + +     ++A L +  +      +  D RPSDAI +AV+   PI V+  L  
+Sbjct  191  YEVRLVRVTTRVHEAYFAELYLSKVGDKSDCVSFDLRPSDAINIAVRCKVPIQVNKYLAY  250
+
+Query  129  KHSIEL  134
+               + +
+Sbjct  251  SDGMRV  256
+
+
+>sp|B8A8D2|BBD1_ORYSI Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. indica OX=39946 GN=BBD1 PE=3 SV=1
+Length=331
+
+ Score = 170 bits (430),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+>sp|Q5N8J3|BBD1_ORYSJ Bifunctional nuclease 1 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=BBD1 PE=2 SV=1
+Length=331
+
+ Score = 169 bits (429),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+>sp|Q09LL3|BBD_ORYMI Bifunctional nuclease OS=Oryza minuta OX=63629 
+GN=BBD PE=2 SV=1
+Length=331
+
+ Score = 169 bits (429),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 3/128 (2%)
+
+Query  10   LALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVLES  68
+            L L   +    ++L +E G++ +LPI +       L  A+  +  PRP  ++++  + E 
+Sbjct  134  LRLRDSAPHHAIVLKMEDGSDLLLPIIVMETPSIMLLAALRNIRIPRPTIYNVVKEMTER  193
+
+Query  69   LEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSDNL  126
+            +   V  V I  +  + +Y+ L +  +      I +D +PSDAI +A +   PI V+  +
+Sbjct  194  MGYAVRLVRITEMVHDAYYSRLYLAKIGNEEETISLDLKPSDAINIAFRCKVPIQVNRRI  253
+
+Query  127  VEKHSIEL  134
+               + +++
+Sbjct  254  AYNNGLKV  261
+
+
+>sp|Q6YZM6|BBD2_ORYSJ Bifunctional nuclease 2 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=BBD2 PE=2 SV=1
+Length=325
+
+ Score = 167 bits (422),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 32/129 (25%), Positives = 56/129 (43%), Gaps = 3/129 (2%)
+
+Query  8    KTLALDRVSNTPVVILGIE-GTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDLLLSVL  66
+            +   +   +  P ++L IE G+  +LPI +       L  A+  +   RP  + ++  ++
+Sbjct  125  QGRNIPESAPQPAIVLRIEDGSETLLPIIVLEMPSVLLMAAIRNVHIARPTIYQVVKEMI  184
+
+Query  67   ESLEARVDKVIIHSLKDNTFYATLVIRDLTA--ALIDIDSRPSDAIILAVKTGAPIFVSD  124
+            + +   V  V I+      + A L +  +      I  D RPSDAI +AV+   PI V  
+Sbjct  185  DKMGYEVKLVRINKRIQEAYCAELFLTKVGDHTESITFDLRPSDAINIAVRCKVPIQVHR  244
+
+Query  125  NLVEKHSIE  133
+            +L     I 
+Sbjct  245  SLAYSDGIR  253
+
+
+>sp|P9WLR5|Y1829_MYCTU Uncharacterized protein Rv1829 OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv1829 
+PE=1 SV=1
+Length=164
+
+ Score = 160 bits (405),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 45/131 (34%), Positives = 78/131 (60%), Gaps = 4/131 (3%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVIRDLTAALIDIDSRPSDAIILAVKTGAPIF  121
+            +  ++ +L   + +V I  L++ TFYA L+        I + +RPSD++ +A++ G PI+
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDR----NIKVSARPSDSVAIALRVGVPIY  116
+
+Query  122  VSDNLVEKHSI  132
+            V + ++ +  +
+Sbjct  117  VEEAVLAQAGL  127
+
+
+>sp|P9WLR4|Y1829_MYCTO Uncharacterized protein MT1877 OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT1877 
+PE=4 SV=1
+Length=164
+
+ Score = 160 bits (405),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 45/131 (34%), Positives = 78/131 (60%), Gaps = 4/131 (3%)
+
+Query  2    MRKAWVKTLALDRVSNTPVVILGIEGTNRVLPIWIGACEGHALALAMEKMEFPRPLTHDL  61
+            M +  V  + +++  N PV++L     +R LPIWIG  E  A+AL  + +E PRPLTHDL
+Sbjct  1    MGEVRVVGIRVEQPQNQPVLLLREANGDRYLPIWIGQSEAAAIALEQQGVEPPRPLTHDL  60
+
+Query  62   LLSVLESLEARVDKVIIHSLKDNTFYATLVIRDLTAALIDIDSRPSDAIILAVKTGAPIF  121
+            +  ++ +L   + +V I  L++ TFYA L+        I + +RPSD++ +A++ G PI+
+Sbjct  61   IRDLIAALGHSLKEVRIVDLQEGTFYADLIFDR----NIKVSARPSDSVAIALRVGVPIY  116
+
+Query  122  VSDNLVEKHSI  132
+            V + ++ +  +
+Sbjct  117  VEEAVLAQAGL  127
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.137    0.344    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0421    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5295157838
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

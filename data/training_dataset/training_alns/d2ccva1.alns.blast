@@ -1,0 +1,349 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ccva1
+
+Length=99
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodob...  49.7    6e-08
+sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium disc...  38.1    0.004
+sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium disc...  38.1    0.004
+sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium di...  37.4    0.006
+
+
+>sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodobacter 
+blasticus OX=1075 PE=4 SV=1
+Length=115
+
+ Score = 49.7 bits (117),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 19/70 (27%), Positives = 38/70 (54%), Gaps = 0/70 (0%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQNLRVIARLYSVSPSGFKASCYTWHNTKV  88
+            RE   ++TF  P+ R P V + ++  D++   N R+     +++P GF+    TW +T++
+Sbjct  34   REYRLDVTFPEPFTRTPAVTVGLSMWDMDHKTNSRMDIGAENITPQGFQIVFKTWGDTRI  93
+
+Query  89   YSMSISWISI  98
+              +   W++I
+Sbjct  94   ARVRADWLAI  103
+
+
+>sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium 
+discoideum OX=44689 GN=dscA-1 PE=1 SV=3
+Length=253
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNENK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+>sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium 
+discoideum OX=44689 GN=dscD-1 PE=1 SV=2
+Length=253
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNENK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+>sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium 
+discoideum OX=44689 GN=dscC-1 PE=1 SV=1
+Length=253
+
+ Score = 37.4 bits (85),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNANK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.132    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5099794190
+Results from round 2
+
+
+Query= d2ccva1
+
+Length=99
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodob...  127     2e-38
+
+Sequences not found previously or not previously below threshold:
+
+sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium disc...  54.7    5e-09
+sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium disc...  54.7    5e-09
+sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium di...  53.6    1e-08
+sp|P42530|DIS2_DICDI Discoidin-2 OS=Dictyostelium discoideum OX=4...  53.6    1e-08
+
+
+>sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodobacter 
+blasticus OX=1075 PE=4 SV=1
+Length=115
+
+ Score = 127 bits (319),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 19/70 (27%), Positives = 38/70 (54%), Gaps = 0/70 (0%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQNLRVIARLYSVSPSGFKASCYTWHNTKV  88
+            RE   ++TF  P+ R P V + ++  D++   N R+     +++P GF+    TW +T++
+Sbjct  34   REYRLDVTFPEPFTRTPAVTVGLSMWDMDHKTNSRMDIGAENITPQGFQIVFKTWGDTRI  93
+
+Query  89   YSMSISWISI  98
+              +   W++I
+Sbjct  94   ARVRADWLAI  103
+
+
+>sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium 
+discoideum OX=44689 GN=dscD-1 PE=1 SV=2
+Length=253
+
+ Score = 54.7 bits (130),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNENK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+>sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium 
+discoideum OX=44689 GN=dscA-1 PE=1 SV=3
+Length=253
+
+ Score = 54.7 bits (130),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNENK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+>sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium 
+discoideum OX=44689 GN=dscC-1 PE=1 SV=1
+Length=253
+
+ Score = 53.6 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 20/70 (29%), Positives = 35/70 (50%), Gaps = 1/70 (1%)
+
+Query  29   RELAKNITFASPYCRPPVVLLSITQLDVEQSQN-LRVIARLYSVSPSGFKASCYTWHNTK  87
+            RE+   + F   +   P V L+  Q+D   + N  R+  +  +++  GF    YTW+  K
+Sbjct  180  REVVVPVKFQFEFATLPKVALNFDQIDCTDATNQTRIGVQPRNITTKGFDCVFYTWNANK  239
+
+Query  88   VYSMSISWIS  97
+            VYS+   +I+
+Sbjct  240  VYSLRADYIA  249
+
+
+>sp|P42530|DIS2_DICDI Discoidin-2 OS=Dictyostelium discoideum 
+OX=44689 GN=dscE PE=1 SV=1
+Length=257
+
+ Score = 53.6 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 22/100 (22%), Positives = 48/100 (48%), Gaps = 11/100 (11%)
+
+Query  2    VQSGKIDCGDDAGWAKVPSDDPGRDNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQN  61
+            VQ G++  GD        S + G   +R + +++ F   +   P+V +   ++D   + N
+Sbjct  164  VQVGEVSIGDR-------SLNSG-TGSRTIVRHVKFPVEFLSVPIVSIGCKKVDA-HTDN  214
+
+Query  62   --LRVIARLYSVSPSGFKASCYTWHNTKVYSMSISWISIE  99
+              +R   +  +++  GF  +  TW N  VY ++  ++++E
+Sbjct  215  GQMRWEGKSENITTKGFDLTFITWGNNAVYDLTFDYVAVE  254
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.132    0.397    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5099794190
+Results from round 3
+
+
+Query= d2ccva1
+
+Length=99
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P42530|DIS2_DICDI Discoidin-2 OS=Dictyostelium discoideum OX=4...  116     2e-32
+sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodob...  109     3e-31
+sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium disc...  110     4e-30
+sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium disc...  110     4e-30
+sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium di...  108     3e-29
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P42530|DIS2_DICDI Discoidin-2 OS=Dictyostelium discoideum 
+OX=44689 GN=dscE PE=1 SV=1
+Length=257
+
+ Score = 116 bits (290),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 22/100 (22%), Positives = 48/100 (48%), Gaps = 11/100 (11%)
+
+Query  2    VQSGKIDCGDDAGWAKVPSDDPGRDNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQN  61
+            VQ G++  GD        S + G   +R + +++ F   +   P+V +   ++D   + N
+Sbjct  164  VQVGEVSIGDR-------SLNSG-TGSRTIVRHVKFPVEFLSVPIVSIGCKKVDA-HTDN  214
+
+Query  62   --LRVIARLYSVSPSGFKASCYTWHNTKVYSMSISWISIE  99
+              +R   +  +++  GF  +  TW N  VY ++  ++++E
+Sbjct  215  GQMRWEGKSENITTKGFDLTFITWGNNAVYDLTFDYVAVE  254
+
+
+>sp|P05450|YAT7_RHOBL ATP synthase subunits region ORF 7 OS=Rhodobacter 
+blasticus OX=1075 PE=4 SV=1
+Length=115
+
+ Score = 109 bits (271),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 19/73 (26%), Positives = 39/73 (53%), Gaps = 0/73 (0%)
+
+Query  26   DNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQNLRVIARLYSVSPSGFKASCYTWHN  85
+            +  RE   ++TF  P+ R P V + ++  D++   N R+     +++P GF+    TW +
+Sbjct  31   NGPREYRLDVTFPEPFTRTPAVTVGLSMWDMDHKTNSRMDIGAENITPQGFQIVFKTWGD  90
+
+Query  86   TKVYSMSISWISI  98
+            T++  +   W++I
+Sbjct  91   TRIARVRADWLAI  103
+
+
+>sp|P02886|DIS1A_DICDI Discoidin-1 subunit A OS=Dictyostelium 
+discoideum OX=44689 GN=dscA-1 PE=1 SV=3
+Length=253
+
+ Score = 110 bits (274),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 43/97 (44%), Gaps = 2/97 (2%)
+
+Query  2    VQSGKIDCGDDAGWAKVPSDDPGRDNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQN  61
+            VQS     G D       + + G    RE+   + F   +   P V L+  Q+D   + N
+Sbjct  154  VQSSVTQVGADIYTGDNCALNTG-SGKREVVVPVKFQFEFATLPKVALNFDQIDCTDATN  212
+
+Query  62   -LRVIARLYSVSPSGFKASCYTWHNTKVYSMSISWIS  97
+              R+  +  +++  GF    YTW+  KVYS+   +I+
+Sbjct  213  QTRIGVQPRNITTKGFDCVFYTWNENKVYSLRADYIA  249
+
+
+>sp|P02888|DIS1D_DICDI Discoidin-1 subunit D OS=Dictyostelium 
+discoideum OX=44689 GN=dscD-1 PE=1 SV=2
+Length=253
+
+ Score = 110 bits (274),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 43/97 (44%), Gaps = 2/97 (2%)
+
+Query  2    VQSGKIDCGDDAGWAKVPSDDPGRDNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQN  61
+            VQS     G D       + + G    RE+   + F   +   P V L+  Q+D   + N
+Sbjct  154  VQSSVTQVGADIYTGDNCALNTG-SGKREVVVPVKFQFEFATLPKVALNFDQIDCTDATN  212
+
+Query  62   -LRVIARLYSVSPSGFKASCYTWHNTKVYSMSISWIS  97
+              R+  +  +++  GF    YTW+  KVYS+   +I+
+Sbjct  213  QTRIGVQPRNITTKGFDCVFYTWNENKVYSLRADYIA  249
+
+
+>sp|P02887|DIS1B_DICDI Discoidin-1 subunit B/C OS=Dictyostelium 
+discoideum OX=44689 GN=dscC-1 PE=1 SV=1
+Length=253
+
+ Score = 108 bits (269),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 43/97 (44%), Gaps = 2/97 (2%)
+
+Query  2    VQSGKIDCGDDAGWAKVPSDDPGRDNTRELAKNITFASPYCRPPVVLLSITQLDVEQSQN  61
+            VQS     G D       + + G    RE+   + F   +   P V L+  Q+D   + N
+Sbjct  154  VQSSVTQVGADIYTGDNCALNTG-SGKREVVVPVKFQFEFATLPKVALNFDQIDCTDATN  212
+
+Query  62   -LRVIARLYSVSPSGFKASCYTWHNTKVYSMSISWIS  97
+              R+  +  +++  GF    YTW+  KVYS+   +I+
+Sbjct  213  QTRIGVQPRNITTKGFDCVFYTWNANKVYSLRADYIA  249
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.127    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5099794190
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

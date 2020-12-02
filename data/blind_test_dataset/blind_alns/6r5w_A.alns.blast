@@ -1,0 +1,281 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6r5w_A
+
+Length=171
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus sub...  64.7    1e-11
+sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Baci...  55.1    4e-08
+
+
+>sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqcC PE=4 SV=2
+Length=366
+
+ Score = 64.7 bits (156),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 30/62 (48%), Positives = 41/62 (66%), Gaps = 0/62 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSV  61
+            Q A K   +EH ND   H+T  ++ NWNAKET+ GAQ KADKAL+DAK + + +    ++
+Sbjct  61   QQASKKEFEEHRNDLQRHITPVERENWNAKETIVGAQEKADKALSDAKYYVDTNYKNNNL  120
+
+Query  62   TL  63
+            TL
+Sbjct  121  TL  122
+
+
+>sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=xkdV PE=4 SV=1
+Length=687
+
+ Score = 55.1 bits (131),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 26/50 (52%), Positives = 36/50 (72%), Gaps = 0/50 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAF  51
+            Q A KT  +EH +D+  H+T+ ++  WNAKET  GAQ KAD+A A+AKA+
+Sbjct  61   QQASKTEFNEHNHDSTRHITSVERDEWNAKETPAGAQYKADQAEANAKAY  110
+
+
+ Score = 43.9 bits (102),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 25/70 (36%), Positives = 37/70 (53%), Gaps = 0/70 (0%)
+
+Query  20   VTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSVTLTPKNGFVASQPLIARY  79
+            V  TD + W   E  EG+Q KADKALADAK + E + + Q +T+   +  +    +    
+Sbjct  400  VNGTDYSGWYILENSEGSQNKADKALADAKNYVETNYTNQKLTVLTGSNAIQDARISGND  459
+
+Query  80   IKFGNRFLVI  89
+             K+G  F+ I
+Sbjct  460  YKYGITFMDI  469
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.128    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8592462806
+Results from round 2
+
+
+Query= 6r5w_A
+
+Length=171
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus sub...  139     5e-39
+sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Baci...  92.5    5e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|O31966|YOMR_BACSU SPbeta prophage-derived uncharacterized prot...  47.1    2e-05
+
+
+>sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqcC PE=4 SV=2
+Length=366
+
+ Score = 139 bits (349),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 36/102 (35%), Positives = 51/102 (50%), Gaps = 7/102 (7%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSV  61
+            Q A K   +EH ND   H+T  ++ NWNAKET+ GAQ KADKAL+DAK + + +    ++
+Sbjct  61   QQASKKEFEEHRNDLQRHITPVERENWNAKETIVGAQEKADKALSDAKYYVDTNYKNNNL  120
+
+Query  62   TLTPKNGFVASQPLIARYIKFGNRFLVIVSGIVGKGTGSGTG  103
+            TL   +  +            G   + I       G G+ TG
+Sbjct  121  TLITGDNAIQDARTGGEEYPLGLTLMDI-------GQGNTTG  155
+
+
+>sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=xkdV PE=4 SV=1
+Length=687
+
+ Score = 92.5 bits (228),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFE  53
+            Q A KT  +EH +D+  H+T+ ++  WNAKET  GAQ KAD+A A+AKA+ +
+Sbjct  61   QQASKTEFNEHNHDSTRHITSVERDEWNAKETPAGAQYKADQAEANAKAYTD  112
+
+
+ Score = 91.4 bits (225),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 25/70 (36%), Positives = 37/70 (53%), Gaps = 0/70 (0%)
+
+Query  20   VTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSVTLTPKNGFVASQPLIARY  79
+            V  TD + W   E  EG+Q KADKALADAK + E + + Q +T+   +  +    +    
+Sbjct  400  VNGTDYSGWYILENSEGSQNKADKALADAKNYVETNYTNQKLTVLTGSNAIQDARISGND  459
+
+Query  80   IKFGNRFLVI  89
+             K+G  F+ I
+Sbjct  460  YKYGITFMDI  469
+
+
+>sp|O31966|YOMR_BACSU SPbeta prophage-derived uncharacterized 
+protein YomR OS=Bacillus subtilis (strain 168) OX=224308 GN=yomR 
+PE=4 SV=1
+Length=405
+
+ Score = 47.1 bits (110),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 17/59 (29%), Positives = 29/59 (49%), Gaps = 13/59 (22%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQS  60
+            + A KT  D+H  D  IH+TA+++T WNA             A +++K + +  S   +
+Sbjct  114  KQATKTEFDQHAQDTIIHITASERTTWNA-------------AESNSKKYTDAHSQNTN  159
+
+
+ Score = 41.3 bits (95),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 10/31 (32%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKE  32
+            + A K   D H+ D + H+T+T+++ WN+ +
+Sbjct  178  KQATKLEFDAHIKDNERHITSTERSKWNSAQ  208
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.128    0.344    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8592462806
+Results from round 3
+
+
+Query= 6r5w_A
+
+Length=171
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus sub...  151     1e-43
+sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Baci...  88.8    1e-19
+sp|O31966|YOMR_BACSU SPbeta prophage-derived uncharacterized prot...  67.6    2e-12
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P45938|YQCC_BACSU Uncharacterized protein YqcC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yqcC PE=4 SV=2
+Length=366
+
+ Score = 151 bits (380),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 36/102 (35%), Positives = 51/102 (50%), Gaps = 7/102 (7%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSV  61
+            Q A K   +EH ND   H+T  ++ NWNAKET+ GAQ KADKAL+DAK + + +    ++
+Sbjct  61   QQASKKEFEEHRNDLQRHITPVERENWNAKETIVGAQEKADKALSDAKYYVDTNYKNNNL  120
+
+Query  62   TLTPKNGFVASQPLIARYIKFGNRFLVIVSGIVGKGTGSGTG  103
+            TL   +  +            G   + I       G G+ TG
+Sbjct  121  TLITGDNAIQDARTGGEEYPLGLTLMDI-------GQGNTTG  155
+
+
+>sp|P54341|XKDV_BACSU Phage-like element PBSX protein XkdV OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=xkdV PE=4 SV=1
+Length=687
+
+ Score = 88.8 bits (218),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFE  53
+            Q A KT  +EH +D+  H+T+ ++  WNAKET  GAQ KAD+A A+AKA+ +
+Sbjct  61   QQASKTEFNEHNHDSTRHITSVERDEWNAKETPAGAQYKADQAEANAKAYTD  112
+
+
+ Score = 87.6 bits (215),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 28/88 (32%), Positives = 42/88 (48%), Gaps = 7/88 (8%)
+
+Query  16   ADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQSVTLTPKNGFVASQPL  75
+              + V  TD + W   E  EG+Q KADKALADAK + E + + Q +T+   +  +    +
+Sbjct  396  TRVAVNGTDYSGWYILENSEGSQNKADKALADAKNYVETNYTNQKLTVLTGSNAIQDARI  455
+
+Query  76   IARYIKFGNRFLVIVSGIVGKGTGSGTG  103
+                 K+G  F+ I       G  + TG
+Sbjct  456  SGNDYKYGITFMDI-------GANNTTG  476
+
+
+>sp|O31966|YOMR_BACSU SPbeta prophage-derived uncharacterized 
+protein YomR OS=Bacillus subtilis (strain 168) OX=224308 GN=yomR 
+PE=4 SV=1
+Length=405
+
+ Score = 67.6 bits (163),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 17/59 (29%), Positives = 29/59 (49%), Gaps = 13/59 (22%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKETVEGAQAKADKALADAKAFFELSSSVQS  60
+            + A KT  D+H  D  IH+TA+++T WNA             A +++K + +  S   +
+Sbjct  114  KQATKTEFDQHAQDTIIHITASERTTWNA-------------AESNSKKYTDAHSQNTN  159
+
+
+ Score = 42.9 bits (99),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 10/31 (32%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  2    QFAQKTVLDEHVNDADIHVTATDKTNWNAKE  32
+            + A K   D H+ D + H+T+T+++ WN+ +
+Sbjct  178  KQATKLEFDAHIKDNERHITSTERSKWNSAQ  208
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.120    0.311    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0368    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8592462806
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

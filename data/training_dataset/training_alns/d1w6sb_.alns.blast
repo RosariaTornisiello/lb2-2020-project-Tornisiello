@@ -1,0 +1,296 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1w6sb_
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subuni...  151     8e-49
+sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subuni...  108     9e-32
+sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subuni...  104     3e-30
+
+
+>sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylorubrum extorquens (strain ATCC 14718 / DSM 
+1338 / JCM 2805 / NCIMB 9133 / AM1) OX=272630 GN=moxI PE=1 
+SV=1
+Length=96
+
+ Score = 151 bits (382),  Expect = 8e-49, Method: Compositional matrix adjust.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK
+Sbjct  23  YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  82
+
+Query  61  TGKFEYDVAKIS  72
+           TGKFEYDVAKIS
+Sbjct  83  TGKFEYDVAKIS  94
+
+
+>sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Paracoccus denitrificans OX=266 GN=moxI PE=1 SV=1
+Length=103
+
+ Score = 108 bits (271),  Expect = 9e-32, Method: Compositional matrix adjust.
+ Identities = 49/71 (69%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGT CKA GNCWEPKP +P K+ GSKYDP+HDP EL+KQ +S+  M+ RN+ RV N KK
+Sbjct  21  YDGTNCKAPGNCWEPKPDYPAKVEGSKYDPQHDPAELSKQGESLAVMDARNEWRVWNMKK  80
+
+Query  61  TGKFEYDVAKI  71
+           TGKFEYDV KI
+Sbjct  81  TGKFEYDVKKI  91
+
+
+>sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylophilus methylotrophus OX=17 GN=moxI PE=1 SV=2
+Length=91
+
+ Score = 104 bits (260),  Expect = 3e-30, Method: Compositional matrix adjust.
+ Identities = 47/68 (69%), Positives = 53/68 (78%), Gaps = 0/68 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDG  CK  GNCWE KPG+PEKIAGSKYDPKHDP ELNKQ +SIK M+ RN KR+ N K 
+Sbjct  23  YDGQNCKEPGNCWENKPGYPEKIAGSKYDPKHDPVELNKQEESIKAMDARNAKRIANAKS  82
+
+Query  61  TGKFEYDV  68
+           +G F +DV
+Sbjct  83  SGNFVFDV  90
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.131    0.395    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+Results from round 2
+
+
+Query= d1w6sb_
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subuni...  131     1e-40
+sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subuni...  126     8e-39
+sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subuni...  125     2e-38
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q09053|DHM2_METSP Methanol dehydrogenase [cytochrome c] subuni...  35.5    0.002
+
+
+>sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Paracoccus denitrificans OX=266 GN=moxI PE=1 SV=1
+Length=103
+
+ Score = 131 bits (329),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 49/71 (69%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGT CKA GNCWEPKP +P K+ GSKYDP+HDP EL+KQ +S+  M+ RN+ RV N KK
+Sbjct  21  YDGTNCKAPGNCWEPKPDYPAKVEGSKYDPQHDPAELSKQGESLAVMDARNEWRVWNMKK  80
+
+Query  61  TGKFEYDVAKI  71
+           TGKFEYDV KI
+Sbjct  81  TGKFEYDVKKI  91
+
+
+>sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylophilus methylotrophus OX=17 GN=moxI PE=1 SV=2
+Length=91
+
+ Score = 126 bits (316),  Expect = 8e-39, Method: Composition-based stats.
+ Identities = 47/69 (68%), Positives = 53/69 (77%), Gaps = 0/69 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDG  CK  GNCWE KPG+PEKIAGSKYDPKHDP ELNKQ +SIK M+ RN KR+ N K 
+Sbjct  23  YDGQNCKEPGNCWENKPGYPEKIAGSKYDPKHDPVELNKQEESIKAMDARNAKRIANAKS  82
+
+Query  61  TGKFEYDVA  69
+           +G F +DV 
+Sbjct  83  SGNFVFDVK  91
+
+
+>sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylorubrum extorquens (strain ATCC 14718 / DSM 
+1338 / JCM 2805 / NCIMB 9133 / AM1) OX=272630 GN=moxI PE=1 
+SV=1
+Length=96
+
+ Score = 125 bits (314),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK
+Sbjct  23  YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  82
+
+Query  61  TGKFEYDVAKIS  72
+           TGKFEYDVAKIS
+Sbjct  83  TGKFEYDVAKIS  94
+
+
+>sp|Q09053|DHM2_METSP Methanol dehydrogenase [cytochrome c] subunit 
+2 (Fragment) OS=Methylomonas sp. OX=418 GN=moxI PE=1 SV=1
+Length=18
+
+ Score = 35.5 bits (80),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/19 (74%), Positives = 15/19 (79%), Gaps = 1/19 (5%)
+
+Query  1   YDGTKCKAAGNCWEPKPGF  19
+           YDGT CK  G CWEPKPG+
+Sbjct  1   YDGTNCK-PGVCWEPKPGY  18
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+Results from round 3
+
+
+Query= d1w6sb_
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subuni...  129     1e-39
+sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subuni...  124     5e-38
+sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subuni...  122     2e-37
+sp|Q09053|DHM2_METSP Methanol dehydrogenase [cytochrome c] subuni...  36.2    8e-04
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P29898|DHM2_PARDE Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Paracoccus denitrificans OX=266 GN=moxI PE=1 SV=1
+Length=103
+
+ Score = 129 bits (323),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 49/71 (69%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGT CKA GNCWEPKP +P K+ GSKYDP+HDP EL+KQ +S+  M+ RN+ RV N KK
+Sbjct  21  YDGTNCKAPGNCWEPKPDYPAKVEGSKYDPQHDPAELSKQGESLAVMDARNEWRVWNMKK  80
+
+Query  61  TGKFEYDVAKI  71
+           TGKFEYDV KI
+Sbjct  81  TGKFEYDVKKI  91
+
+
+>sp|P38540|DHM2_METME Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylophilus methylotrophus OX=17 GN=moxI PE=1 SV=2
+Length=91
+
+ Score = 124 bits (311),  Expect = 5e-38, Method: Composition-based stats.
+ Identities = 47/69 (68%), Positives = 53/69 (77%), Gaps = 0/69 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDG  CK  GNCWE KPG+PEKIAGSKYDPKHDP ELNKQ +SIK M+ RN KR+ N K 
+Sbjct  23  YDGQNCKEPGNCWENKPGYPEKIAGSKYDPKHDPVELNKQEESIKAMDARNAKRIANAKS  82
+
+Query  61  TGKFEYDVA  69
+           +G F +DV 
+Sbjct  83  SGNFVFDVK  91
+
+
+>sp|P14775|DHM2_METEA Methanol dehydrogenase [cytochrome c] subunit 
+2 OS=Methylorubrum extorquens (strain ATCC 14718 / DSM 
+1338 / JCM 2805 / NCIMB 9133 / AM1) OX=272630 GN=moxI PE=1 
+SV=1
+Length=96
+
+ Score = 122 bits (307),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 72/72 (100%), Positives = 72/72 (100%), Gaps = 0/72 (0%)
+
+Query  1   YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  60
+           YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK
+Sbjct  23  YDGTKCKAAGNCWEPKPGFPEKIAGSKYDPKHDPKELNKQADSIKQMEERNKKRVENFKK  82
+
+Query  61  TGKFEYDVAKIS  72
+           TGKFEYDVAKIS
+Sbjct  83  TGKFEYDVAKIS  94
+
+
+>sp|Q09053|DHM2_METSP Methanol dehydrogenase [cytochrome c] subunit 
+2 (Fragment) OS=Methylomonas sp. OX=418 GN=moxI PE=1 SV=1
+Length=18
+
+ Score = 36.2 bits (82),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 14/19 (74%), Positives = 15/19 (79%), Gaps = 1/19 (5%)
+
+Query  1   YDGTKCKAAGNCWEPKPGF  19
+           YDGT CK  G CWEPKPG+
+Sbjct  1   YDGTNCK-PGVCWEPKPGY  18
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

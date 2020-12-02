@@ -1,0 +1,1760 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1vzma_
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269...  92.8    5e-26
+sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106...  72.0    3e-18
+sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=2882...  70.5    4e-17
+sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 G...  66.2    4e-16
+sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 GN=b...  66.2    5e-16
+sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bgl...  66.2    1e-15
+sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=2882...  65.1    2e-15
+sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 GN=b...  64.3    3e-15
+sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 G...  68.2    6e-15
+sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=80...  62.0    3e-13
+sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss O...  62.0    4e-13
+sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=79...  56.2    5e-12
+sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=998...  46.2    4e-08
+sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=96...  45.8    7e-08
+sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 G...  46.6    1e-07
+sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BG...  44.7    2e-07
+sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bg...  45.8    2e-07
+sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 ...  44.3    3e-07
+sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 GN=B...  44.3    3e-07
+sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae OX=...  43.9    4e-07
+sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP ...  44.7    6e-07
+sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLA...  44.3    7e-07
+sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla OX=9...  44.3    7e-07
+sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 GN=B...  44.3    8e-07
+sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 GN...  44.3    9e-07
+sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BG...  44.3    9e-07
+sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 GN=...  44.3    9e-07
+sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BG...  44.3    9e-07
+sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGL...  42.4    4e-06
+sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGL...  40.8    6e-06
+sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 ...  40.8    6e-06
+sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 G...  40.8    6e-06
+sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 GN=...  40.8    7e-06
+sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP PE...  40.4    9e-06
+sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLA...  40.4    1e-05
+sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP...  40.0    2e-05
+sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bgl...  39.3    7e-05
+sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 GN=B...  39.3    7e-05
+sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 GN=...  38.1    2e-04
+sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus ...  37.0    6e-04
+
+
+>sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269 
+GN=bglap PE=1 SV=1
+Length=97
+
+ Score = 92.8 bits (229),  Expect = 5e-26, Method: Compositional matrix adjust.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF
+Sbjct  55  KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  97
+
+
+>sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 72.0 bits (175),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 31/42 (74%), Positives = 37/42 (88%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           ELTL Q ESLREVCE N+AC++M DAQGI+AAY A+YGPIP+
+Sbjct  4   ELTLTQLESLREVCEANLACEDMMDAQGIIAAYTAYYGPIPY  45
+
+
+>sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=28829 
+GN=bglapBGP PE=1 SV=2
+Length=95
+
+ Score = 70.5 bits (171),  Expect = 4e-17, Method: Compositional matrix adjust.
+ Identities = 29/43 (67%), Positives = 36/43 (84%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KEL+L+Q ESLREVCE N+AC++M D  GI+AAY  +YGPIPF
+Sbjct  53  KELSLSQLESLREVCELNLACEDMMDTSGIIAAYTTYYGPIPF  95
+
+
+>sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 66.2 bits (160),  Expect = 4e-16, Method: Compositional matrix adjust.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  4   QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  45
+
+
+>sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 
+GN=bglap PE=1 SV=1
+Length=48
+
+ Score = 66.2 bits (160),  Expect = 5e-16, Method: Compositional matrix adjust.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT+AQ ESL+EVCE N+AC+ M D  GI+AAY A+YGPIP+
+Sbjct  7   DLTVAQLESLKEVCEANLACEHMMDVSGIIAAYTAYYGPIPY  48
+
+
+>sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bglap 
+PE=1 SV=2
+Length=97
+
+ Score = 66.2 bits (160),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  56  QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  97
+
+
+>sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=28829 
+GN=bglap2 PE=1 SV=1
+Length=46
+
+ Score = 65.1 bits (157),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 29/40 (73%), Positives = 32/40 (80%), Gaps = 0/40 (0%)
+
+Query  3   LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIP  42
+           L+  Q ESLREVCE N+ACDEMAD  GIVAAY  FYGP+P
+Sbjct  7   LSPLQMESLREVCEVNVACDEMADTAGIVAAYTXFYGPVP  46
+
+
+>sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 
+GN=bglap PE=1 SV=1
+Length=47
+
+ Score = 64.3 bits (155),  Expect = 3e-15, Method: Compositional matrix adjust.
+ Identities = 30/42 (71%), Positives = 34/42 (81%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT  Q ESLREVCE N++CDEMAD  GIVAAY A+YGPI F
+Sbjct  6   DLTPLQLESLREVCELNVSCDEMADTAGIVAAYIAYYGPIQF  47
+
+
+>sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 
+GN=bglap2 PE=1 SV=1
+Length=256
+
+ Score = 68.2 bits (165),  Expect = 6e-15, Method: Compositional matrix adjust.
+ Identities = 30/42 (71%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2    ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+            +LT  Q ESLREVCE N+ACDEMA+  GIVAAY A+YGP+PF
+Sbjct  215  DLTPLQLESLREVCELNIACDEMAETAGIVAAYVAYYGPVPF  256
+
+
+>sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=8022 
+GN=GSONMT00015798001 PE=1 SV=1
+Length=164
+
+ Score = 62.0 bits (149),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 27/40 (68%), Positives = 31/40 (78%), Gaps = 0/40 (0%)
+
+Query  4    TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+            TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  125  TLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  164
+
+
+>sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss 
+OX=8022 GN=GSONMT00044887001 PE=1 SV=1
+Length=167
+
+ Score = 62.0 bits (149),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 27/40 (68%), Positives = 31/40 (78%), Gaps = 0/40 (0%)
+
+Query  4    TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+            TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  128  TLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  167
+
+
+>sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=7955 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 56.2 bits (134),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 26/38 (68%), Positives = 30/38 (79%), Gaps = 0/38 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +LT  Q ESLREVCE N+AC+ MAD  GIVAAY A+YG
+Sbjct  7   DLTPFQLESLREVCEVNLACEHMADTXGIVAAYTAYYG  44
+
+
+>sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=9986 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 46.2 bits (108),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 20/33 (61%), Positives = 23/33 (70%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G+  AYQ FYGP+
+Sbjct  17  EPKREVCELNPDCDELADQVGLQDAYQRFYGPV  49
+
+
+>sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=9615 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 45.8 bits (107),  Expect = 7e-08, Method: Compositional matrix adjust.
+ Identities = 20/33 (61%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AYQ FYGP+
+Sbjct  17  EPKREVCELNPNCDELADHIGFQEAYQRFYGPV  49
+
+
+>sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 
+GN=bglap PE=3 SV=1
+Length=101
+
+ Score = 46.6 bits (109),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 20/33 (61%), Positives = 23/33 (70%), Gaps = 0/33 (0%)
+
+Query  9    ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+            ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  69   ESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 44.7 bits (104),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  17  EPRREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bglap 
+PE=1 SV=2
+Length=101
+
+ Score = 45.8 bits (107),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 20/33 (61%), Positives = 23/33 (70%), Gaps = 0/33 (0%)
+
+Query  9    ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+            ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  69   ESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 44.3 bits (103),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  17  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 44.3 bits (103),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  17  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae 
+OX=8790 GN=BGLAP PE=1 SV=1
+Length=48
+
+ Score = 43.9 bits (102),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 23/33 (70%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E+ REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  16  EAQREVCELNPDCDELADHIGFQEAYRRFYGPV  48
+
+
+>sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 44.7 bits (104),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 7e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla 
+OX=9595 GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 7e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 
+GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 8e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BGLAP 
+PE=3 SV=1
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 44.3 bits (103),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 19/33 (58%), Positives = 22/33 (67%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68  EPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGLAP 
+PE=1 SV=2
+Length=97
+
+ Score = 42.4 bits (98),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 18/33 (55%), Positives = 23/33 (70%), Gaps = 0/33 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+           E+ REVCE +  CDE+AD  G   AY+ FYGP+
+Sbjct  65  EAQREVCELSPDCDELADQIGFQEAYRRFYGPV  97
+
+
+>sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 40.8 bits (94),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 21/31 (68%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E+ REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  ENKREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP 
+PE=1 SV=2
+Length=49
+
+ Score = 40.4 bits (93),  Expect = 9e-06, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPRREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 40.4 bits (93),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 18/31 (58%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPKREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 40.0 bits (92),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 17/31 (55%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  RE+CE N  CDE+AD  G   AY+ FYG
+Sbjct  17  EPKREICELNPDCDELADHIGFQDAYRRFYG  47
+
+
+>sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bglap 
+PE=2 SV=1
+Length=95
+
+ Score = 39.3 bits (90),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 16/31 (52%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  62  EPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 
+GN=Bglap2 PE=2 SV=1
+Length=95
+
+ Score = 39.3 bits (90),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 16/31 (52%), Positives = 20/31 (65%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  62  EPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 
+GN=Bglap PE=1 SV=1
+Length=99
+
+ Score = 38.1 bits (87),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 17/31 (55%), Positives = 19/31 (61%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  REVCE N  CDE+AD  G   AY+  YG
+Sbjct  66  EPHREVCELNPNCDELADHIGFQDAYKRIYG  96
+
+
+>sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus 
+OX=10090 GN=Bglap3 PE=2 SV=1
+Length=95
+
+ Score = 37.0 bits (84),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 14/31 (45%), Positives = 21/31 (68%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  RE+CE + ACDE+++  G+  AY+  YG
+Sbjct  62  EPTRELCELDPACDELSNQYGLKTAYRRIYG  92
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.131    0.382    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5023893472
+Results from round 2
+
+
+Query= d1vzma_
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269...  77.3    7e-20
+sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 G...  80.0    2e-19
+sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bgl...  75.4    4e-19
+sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=2882...  75.4    4e-19
+sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 GN=b...  73.5    6e-19
+sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bg...  73.5    3e-18
+sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 G...  71.6    4e-18
+sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 G...  71.6    1e-17
+sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=2882...  70.0    2e-17
+sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 GN=b...  69.6    3e-17
+sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106...  69.3    3e-17
+sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP ...  69.3    1e-16
+sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 GN=B...  69.3    1e-16
+sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BG...  68.9    1e-16
+sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=80...  70.4    2e-16
+sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 GN...  68.5    2e-16
+sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BG...  68.5    2e-16
+sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 GN=...  68.5    2e-16
+sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=79...  66.9    2e-16
+sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLA...  68.5    3e-16
+sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla OX=9...  68.5    3e-16
+sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae OX=...  65.4    1e-15
+sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BG...  64.6    2e-15
+sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss O...  67.7    3e-15
+sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 GN=B...  64.2    3e-15
+sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGL...  65.4    3e-15
+sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 ...  63.9    5e-15
+sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=96...  63.1    9e-15
+sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 GN=...  63.1    3e-14
+sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=998...  61.2    5e-14
+sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP PE...  60.8    7e-14
+sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP...  60.8    9e-14
+sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLA...  60.0    1e-13
+sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGL...  59.6    3e-13
+sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 ...  59.6    3e-13
+sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 G...  59.6    3e-13
+sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bgl...  59.6    7e-13
+sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 GN=B...  58.9    1e-12
+sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 GN=...  56.9    3e-12
+sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus ...  56.9    6e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|P84351|OSTCN_HOMNE Osteocalcin (Fragment) OS=Homo sapiens nean...  46.5    2e-08
+sp|P86312|OSTCN_CAMHE Osteocalcin (Fragments) OS=Camelops hestern...  38.4    5e-05
+sp|P56620|MGP_GALGA Matrix Gla protein OS=Galeorhinus galeus OX=8...  33.8    0.008
+
+
+>sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269 
+GN=bglap PE=1 SV=1
+Length=97
+
+ Score = 77.3 bits (189),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF
+Sbjct  55  KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  97
+
+
+>sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 
+GN=bglap2 PE=1 SV=1
+Length=256
+
+ Score = 80.0 bits (196),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2    ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+            +LT  Q ESLREVCE N+ACDEMA+  GIVAAY A+YGP+PF
+Sbjct  215  DLTPLQLESLREVCELNIACDEMAETAGIVAAYVAYYGPVPF  256
+
+
+>sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bglap 
+PE=1 SV=2
+Length=97
+
+ Score = 75.4 bits (184),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  56  QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  97
+
+
+>sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=28829 
+GN=bglapBGP PE=1 SV=2
+Length=95
+
+ Score = 75.4 bits (184),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 29/43 (67%), Positives = 36/43 (84%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KEL+L+Q ESLREVCE N+AC++M D  GI+AAY  +YGPIPF
+Sbjct  53  KELSLSQLESLREVCELNLACEDMMDTSGIIAAYTTYYGPIPF  95
+
+
+>sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 
+GN=bglap PE=1 SV=1
+Length=47
+
+ Score = 73.5 bits (179),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 34/42 (81%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT  Q ESLREVCE N++CDEMAD  GIVAAY A+YGPI F
+Sbjct  6   DLTPLQLESLREVCELNVSCDEMADTAGIVAAYIAYYGPIQF  47
+
+
+>sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bglap 
+PE=1 SV=2
+Length=101
+
+ Score = 73.5 bits (179),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 20/34 (59%), Positives = 23/34 (68%), Gaps = 0/34 (0%)
+
+Query  8    TESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+             ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68   LESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 71.6 bits (174),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  4   QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  45
+
+
+>sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 
+GN=bglap PE=3 SV=1
+Length=101
+
+ Score = 71.6 bits (174),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 20/34 (59%), Positives = 23/34 (68%), Gaps = 0/34 (0%)
+
+Query  8    TESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+             ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  68   LESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=28829 
+GN=bglap2 PE=1 SV=1
+Length=46
+
+ Score = 70.0 bits (170),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 29/40 (73%), Positives = 32/40 (80%), Gaps = 0/40 (0%)
+
+Query  3   LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIP  42
+           L+  Q ESLREVCE N+ACDEMAD  GIVAAY  FYGP+P
+Sbjct  7   LSPLQMESLREVCEVNVACDEMADTAGIVAAYTXFYGPVP  46
+
+
+>sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 
+GN=bglap PE=1 SV=1
+Length=48
+
+ Score = 69.6 bits (169),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT+AQ ESL+EVCE N+AC+ M D  GI+AAY A+YGPIP+
+Sbjct  7   DLTVAQLESLKEVCEANLACEHMMDVSGIIAAYTAYYGPIPY  48
+
+
+>sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 69.3 bits (168),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 31/42 (74%), Positives = 37/42 (88%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           ELTL Q ESLREVCE N+AC++M DAQGI+AAY A+YGPIP+
+Sbjct  4   ELTLTQLESLREVCEANLACEDMMDAQGIIAAYTAYYGPIPY  45
+
+
+>sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 69.3 bits (168),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 
+GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 69.3 bits (168),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDTLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 68.9 bits (167),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=8022 
+GN=GSONMT00015798001 PE=1 SV=1
+Length=164
+
+ Score = 70.4 bits (171),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  3    LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+             TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  124  FTLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  164
+
+
+>sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 68.5 bits (166),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BGLAP 
+PE=3 SV=1
+Length=100
+
+ Score = 68.5 bits (166),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 68.5 bits (166),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=7955 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 66.9 bits (162),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 26/38 (68%), Positives = 30/38 (79%), Gaps = 0/38 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +LT  Q ESLREVCE N+AC+ MAD  GIVAAY A+YG
+Sbjct  7   DLTPFQLESLREVCEVNLACEHMADTXGIVAAYTAYYG  44
+
+
+>sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 68.5 bits (166),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla 
+OX=9595 GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 68.5 bits (166),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae 
+OX=8790 GN=BGLAP PE=1 SV=1
+Length=48
+
+ Score = 65.4 bits (158),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 23/38 (61%), Gaps = 0/38 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+                E+ REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  11  APDPLEAQREVCELNPDCDELADHIGFQEAYRRFYGPV  48
+
+
+>sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 64.6 bits (156),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss 
+OX=8022 GN=GSONMT00044887001 PE=1 SV=1
+Length=167
+
+ Score = 67.7 bits (164),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  3    LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+             TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  127  FTLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  167
+
+
+>sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 64.2 bits (155),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGLAP 
+PE=1 SV=2
+Length=97
+
+ Score = 65.4 bits (158),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 18/37 (49%), Positives = 23/37 (62%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E+ REVCE +  CDE+AD  G   AY+ FYGP+
+Sbjct  61  PNPLEAQREVCELSPDCDELADQIGFQEAYRRFYGPV  97
+
+
+>sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 63.9 bits (154),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=9615 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 63.1 bits (152),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AYQ FYGP+
+Sbjct  13  PDPLEPKREVCELNPNCDELADHIGFQEAYQRFYGPV  49
+
+
+>sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 
+GN=Bglap PE=1 SV=1
+Length=99
+
+ Score = 63.1 bits (152),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 17/35 (49%), Positives = 19/35 (54%), Gaps = 0/35 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+               E  REVCE N  CDE+AD  G   AY+  YG
+Sbjct  62  PDPLEPHREVCELNPNCDELADHIGFQDAYKRIYG  96
+
+
+>sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=9986 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 61.2 bits (147),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 23/37 (62%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G+  AYQ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADQVGLQDAYQRFYGPV  49
+
+
+>sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP 
+PE=1 SV=2
+Length=49
+
+ Score = 60.8 bits (146),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+               E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  13  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 60.8 bits (146),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 17/37 (46%), Positives = 21/37 (57%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  RE+CE N  CDE+AD  G   AY+ FYG +
+Sbjct  13  PDPLEPKREICELNPDCDELADHIGFQDAYRRFYGTV  49
+
+
+>sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 60.0 bits (144),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+               E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 59.6 bits (143),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 18/32 (56%), Positives = 20/32 (63%), Gaps = 0/32 (0%)
+
+Query  8   TESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+            E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  16  LEPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 59.6 bits (143),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 18/32 (56%), Positives = 20/32 (63%), Gaps = 0/32 (0%)
+
+Query  8   TESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+            E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  16  LEPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 59.6 bits (143),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 18/32 (56%), Positives = 20/32 (63%), Gaps = 0/32 (0%)
+
+Query  8   TESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+            E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  16  LEPKREVCELNPDCDELADQMGFQEAYRRFYG  47
+
+
+>sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bglap 
+PE=2 SV=1
+Length=95
+
+ Score = 59.6 bits (143),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  57  SPDPLEPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 
+GN=Bglap2 PE=2 SV=1
+Length=95
+
+ Score = 58.9 bits (141),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  57  SPDPLEPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 56.9 bits (136),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 18/31 (58%), Positives = 21/31 (68%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E+ REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  17  ENKREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus 
+OX=10090 GN=Bglap3 PE=2 SV=1
+Length=95
+
+ Score = 56.9 bits (136),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 14/36 (39%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE+CE + ACDE+++  G+  AY+  YG
+Sbjct  57  SPDPLEPTRELCELDPACDELSNQYGLKTAYRRIYG  92
+
+
+>sp|P84351|OSTCN_HOMNE Osteocalcin (Fragment) OS=Homo sapiens 
+neanderthalensis OX=63221 GN=BGLAP PE=1 SV=1
+Length=24
+
+ Score = 46.5 bits (109),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 14/24 (58%), Positives = 16/24 (67%), Gaps = 0/24 (0%)
+
+Query  12  REVCETNMACDEMADAQGIVAAYQ  35
+           REVCE N  CDE+AD  G   AY+
+Sbjct  1   REVCELNPDCDELADHIGFQEAYR  24
+
+
+>sp|P86312|OSTCN_CAMHE Osteocalcin (Fragments) OS=Camelops hesternus 
+OX=647691 GN=BGLAP PE=1 SV=1
+Length=42
+
+ Score = 38.4 bits (88),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 14/32 (44%), Positives = 16/32 (50%), Gaps = 7/32 (22%)
+
+Query  8   TESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+            E  REV       DE+AD  G   AY+ FYG
+Sbjct  16  LEPKREV-------DELADQMGFQEAYRRFYG  40
+
+
+>sp|P56620|MGP_GALGA Matrix Gla protein OS=Galeorhinus galeus 
+OX=86063 GN=mgp PE=1 SV=2
+Length=102
+
+ Score = 33.8 bits (76),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 11/31 (35%), Positives = 16/31 (52%), Gaps = 0/31 (0%)
+
+Query  9   ESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           E  RE CE    C+ +A   G+  AY  ++G
+Sbjct  43  ERTREKCEEYRPCERLARQVGLKRAYGKYFG  73
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.137    0.436    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0419    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5023893472
+Results from round 3
+
+
+Query= d1vzma_
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bg...  77.0    1e-19
+sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269...  76.2    2e-19
+sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 G...  79.7    3e-19
+sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=2882...  74.7    7e-19
+sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bgl...  74.7    7e-19
+sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 GN=b...  73.1    9e-19
+sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 G...  74.7    1e-18
+sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BG...  73.9    2e-18
+sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP ...  73.5    2e-18
+sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 GN...  73.1    3e-18
+sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BG...  73.1    3e-18
+sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 GN=...  73.1    3e-18
+sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 G...  71.2    5e-18
+sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLA...  72.7    5e-18
+sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla OX=9...  72.7    5e-18
+sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae OX=...  70.4    1e-17
+sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 GN=B...  71.2    2e-17
+sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=2882...  68.9    5e-17
+sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGL...  70.0    6e-17
+sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106...  68.1    8e-17
+sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 GN=b...  68.1    9e-17
+sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BG...  67.7    1e-16
+sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 GN=B...  67.7    2e-16
+sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 ...  67.4    2e-16
+sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=79...  67.4    2e-16
+sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 GN=...  67.7    4e-16
+sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=96...  66.2    5e-16
+sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=80...  69.3    5e-16
+sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP...  64.7    2e-15
+sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP PE...  64.7    3e-15
+sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=998...  64.7    3e-15
+sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bgl...  64.7    7e-15
+sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLA...  63.5    7e-15
+sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGL...  63.1    9e-15
+sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 ...  63.1    9e-15
+sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 G...  63.1    9e-15
+sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 GN=B...  63.9    2e-14
+sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss O...  65.4    2e-14
+sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus ...  62.3    5e-14
+sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 GN=...  60.8    7e-14
+sp|P84351|OSTCN_HOMNE Osteocalcin (Fragment) OS=Homo sapiens nean...  46.6    2e-08
+sp|P86312|OSTCN_CAMHE Osteocalcin (Fragments) OS=Camelops hestern...  43.1    7e-07
+
+Sequences not found previously or not previously below threshold:
+
+sp|P56620|MGP_GALGA Matrix Gla protein OS=Galeorhinus galeus OX=8...  35.8    0.002
+sp|O42413|MGP_CHICK Matrix Gla protein OS=Gallus gallus OX=9031 G...  34.6    0.005
+
+
+>sp|P40147|OSTCN_XENLA Osteocalcin OS=Xenopus laevis OX=8355 GN=bglap 
+PE=1 SV=2
+Length=101
+
+ Score = 77.0 bits (188),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  6    AQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+            +  ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  66   SPLESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|Q800Y1|OSTCN_ARGRE Osteocalcin OS=Argyrosomus regius OX=172269 
+GN=bglap PE=1 SV=1
+Length=97
+
+ Score = 76.2 bits (186),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF
+Sbjct  55  KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  97
+
+
+>sp|K7NTD0|OSTC2_DIPSG Osteocalcin 2 OS=Diplodus sargus OX=38941 
+GN=bglap2 PE=1 SV=1
+Length=256
+
+ Score = 79.7 bits (195),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2    ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+            +LT  Q ESLREVCE N+ACDEMA+  GIVAAY A+YGP+PF
+Sbjct  215  DLTPLQLESLREVCELNIACDEMAETAGIVAAYVAYYGPVPF  256
+
+
+>sp|Q1EG28|OSTC1_SOLSE Osteocalcin 1 OS=Solea senegalensis OX=28829 
+GN=bglapBGP PE=1 SV=2
+Length=95
+
+ Score = 74.7 bits (182),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 29/43 (67%), Positives = 36/43 (84%), Gaps = 0/43 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           KEL+L+Q ESLREVCE N+AC++M D  GI+AAY  +YGPIPF
+Sbjct  53  KELSLSQLESLREVCELNLACEDMMDTSGIIAAYTTYYGPIPF  95
+
+
+>sp|P40148|OSTCN_SPAAU Osteocalcin OS=Sparus aurata OX=8175 GN=bglap 
+PE=1 SV=2
+Length=97
+
+ Score = 74.7 bits (182),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  56  QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  97
+
+
+>sp|P02823|OSTCN_XIPGL Osteocalcin OS=Xiphias gladius OX=8245 
+GN=bglap PE=1 SV=1
+Length=47
+
+ Score = 73.1 bits (178),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 34/42 (81%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT  Q ESLREVCE N++CDEMAD  GIVAAY A+YGPI F
+Sbjct  6   DLTPLQLESLREVCELNVSCDEMADTAGIVAAYIAYYGPIQF  47
+
+
+>sp|Q6DJ00|OSTCN_XENTR Osteocalcin OS=Xenopus tropicalis OX=8364 
+GN=bglap PE=3 SV=1
+Length=101
+
+ Score = 74.7 bits (182),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  6    AQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+            +  ES REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  66   SPLESQREVCELNPDCDELADHIGFQEAYRRFYGPV  101
+
+
+>sp|P84350|OSTCN_PONPY Osteocalcin OS=Pongo pygmaeus OX=9600 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 73.9 bits (180),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P02820|OSTCN_BOVIN Osteocalcin OS=Bos taurus OX=9913 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 73.5 bits (179),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2T6K4|OSTCN_MACNE Osteocalcin OS=Macaca nemestrina OX=9545 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 73.1 bits (178),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D670|OSTCN_MACMU Osteocalcin OS=Macaca mulatta OX=9544 GN=BGLAP 
+PE=3 SV=1
+Length=100
+
+ Score = 73.1 bits (178),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|A2D4U1|OSTCN_ATEGE Osteocalcin OS=Ateles geoffroyi OX=9509 
+GN=BGLAP PE=3 SV=1
+Length=100
+
+ Score = 73.1 bits (178),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P86867|OSTC1_DIPSG Osteocalcin 1 OS=Diplodus sargus OX=38941 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 71.2 bits (173),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +L+L Q ESLREVCE N+AC+ M D +GI+AAY A+YGPIP+
+Sbjct  4   QLSLTQLESLREVCELNLACEHMMDTEGIIAAYTAYYGPIPY  45
+
+
+>sp|P02818|OSTCN_HUMAN Osteocalcin OS=Homo sapiens OX=9606 GN=BGLAP 
+PE=1 SV=2
+Length=100
+
+ Score = 72.7 bits (177),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P84349|OSTCN_GORGO Osteocalcin OS=Gorilla gorilla gorilla 
+OX=9595 GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 72.7 bits (177),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P15504|OSTCN_DRONO Osteocalcin OS=Dromaius novaehollandiae 
+OX=8790 GN=BGLAP PE=1 SV=1
+Length=48
+
+ Score = 70.4 bits (171),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 23/38 (61%), Gaps = 0/38 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+                E+ REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  11  APDPLEAQREVCELNPDCDELADHIGFQEAYRRFYGPV  48
+
+
+>sp|P84348|OSTCN_PANTR Osteocalcin OS=Pan troglodytes OX=9598 
+GN=BGLAP PE=1 SV=2
+Length=100
+
+ Score = 71.2 bits (173),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  64  PDTLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  100
+
+
+>sp|P86863|OSTC2_SOLSE Osteocalcin 2 OS=Solea senegalensis OX=28829 
+GN=bglap2 PE=1 SV=1
+Length=46
+
+ Score = 68.9 bits (167),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 29/40 (73%), Positives = 32/40 (80%), Gaps = 0/40 (0%)
+
+Query  3   LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIP  42
+           L+  Q ESLREVCE N+ACDEMAD  GIVAAY  FYGP+P
+Sbjct  7   LSPLQMESLREVCEVNVACDEMADTAGIVAAYTXFYGPVP  46
+
+
+>sp|P02822|OSTCN_CHICK Osteocalcin OS=Gallus gallus OX=9031 GN=BGLAP 
+PE=1 SV=2
+Length=97
+
+ Score = 70.0 bits (170),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 18/37 (49%), Positives = 23/37 (62%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E+ REVCE +  CDE+AD  G   AY+ FYGP+
+Sbjct  61  PNPLEAQREVCELSPDCDELADQIGFQEAYRRFYGPV  97
+
+
+>sp|P28317|OSTCN_LEPMA Osteocalcin OS=Lepomis macrochirus OX=13106 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 68.1 bits (165),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 31/42 (74%), Positives = 37/42 (88%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           ELTL Q ESLREVCE N+AC++M DAQGI+AAY A+YGPIP+
+Sbjct  4   ELTLTQLESLREVCEANLACEDMMDAQGIIAAYTAYYGPIPY  45
+
+
+>sp|Q7LZI4|OSTCN_CYPCA Osteocalcin OS=Cyprinus carpio OX=7962 
+GN=bglap PE=1 SV=1
+Length=48
+
+ Score = 68.1 bits (165),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 27/42 (64%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+           +LT+AQ ESL+EVCE N+AC+ M D  GI+AAY A+YGPIP+
+Sbjct  7   DLTVAQLESLKEVCEANLACEHMMDVSGIIAAYTAYYGPIPY  48
+
+
+>sp|P83005|OSTCN_HORSE Osteocalcin OS=Equus caballus OX=9796 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 67.7 bits (164),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P83489|OSTCN_BISPR Osteocalcin OS=Bison priscus OX=268291 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 67.7 bits (164),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P02819|OSTCN_MACFA Osteocalcin OS=Macaca fascicularis OX=9541 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 67.4 bits (163),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AY+ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYGPV  49
+
+
+>sp|P83238|OSTCN_DANRE Osteocalcin (Fragment) OS=Danio rerio OX=7955 
+GN=bglap PE=1 SV=1
+Length=45
+
+ Score = 67.4 bits (163),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 26/38 (68%), Positives = 30/38 (79%), Gaps = 0/38 (0%)
+
+Query  2   ELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +LT  Q ESLREVCE N+AC+ MAD  GIVAAY A+YG
+Sbjct  7   DLTPFQLESLREVCEVNLACEHMADTXGIVAAYTAYYG  44
+
+
+>sp|P04640|OSTCN_RAT Osteocalcin OS=Rattus norvegicus OX=10116 
+GN=Bglap PE=1 SV=1
+Length=99
+
+ Score = 67.7 bits (164),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 17/36 (47%), Positives = 19/36 (53%), Gaps = 0/36 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+               E  REVCE N  CDE+AD  G   AY+  YG 
+Sbjct  62  PDPLEPHREVCELNPNCDELADHIGFQDAYKRIYGT  97
+
+
+>sp|P81455|OSTCN_CANLF Osteocalcin OS=Canis lupus familiaris OX=9615 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 66.2 bits (160),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 22/37 (59%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G   AYQ FYGP+
+Sbjct  13  PDPLEPKREVCELNPNCDELADHIGFQEAYQRFYGPV  49
+
+
+>sp|K9J977|OST2B_ONCMY Osteocalcin 2b OS=Oncorhynchus mykiss OX=8022 
+GN=GSONMT00015798001 PE=1 SV=1
+Length=164
+
+ Score = 69.3 bits (168),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  3    LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+             TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  124  FTLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  164
+
+
+>sp|P02821|OSTCN_FELCA Osteocalcin OS=Felis catus OX=9685 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 64.7 bits (156),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 17/37 (46%), Positives = 21/37 (57%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  RE+CE N  CDE+AD  G   AY+ FYG +
+Sbjct  13  PDPLEPKREICELNPDCDELADHIGFQDAYRRFYGTV  49
+
+
+>sp|Q8HYY9|OSTCN_PIG Osteocalcin OS=Sus scrofa OX=9823 GN=BGLAP 
+PE=1 SV=2
+Length=49
+
+ Score = 64.7 bits (156),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+               E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  13  PDPLEPRREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P39056|OSTCN_RABIT Osteocalcin OS=Oryctolagus cuniculus OX=9986 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 64.7 bits (156),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 23/37 (62%), Gaps = 0/37 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPI  41
+               E  REVCE N  CDE+AD  G+  AYQ FYGP+
+Sbjct  13  PDPLEPKREVCELNPDCDELADQVGLQDAYQRFYGPV  49
+
+
+>sp|P86546|OSTCN_MOUSE Osteocalcin OS=Mus musculus OX=10090 GN=Bglap 
+PE=2 SV=1
+Length=95
+
+ Score = 64.7 bits (156),  Expect = 7e-15, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  57  SPDPLEPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|P0C225|OSTCN_CAPHI Osteocalcin OS=Capra hircus OX=9925 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 63.5 bits (153),  Expect = 7e-15, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+               E  REVCE N  CDE+AD  G   AY+ FYG
+Sbjct  13  PDPLEPKREVCELNPDCDELADHIGFQEAYRRFYG  47
+
+
+>sp|P86315|OSTCN_LAMGU Osteocalcin OS=Lama guanicoe OX=9840 GN=BGLAP 
+PE=1 SV=1
+Length=49
+
+ Score = 63.1 bits (152),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  6   AQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+              E  REVCE N  CDE+AD  G   AY+ FYG 
+Sbjct  14  DPLEPKREVCELNPDCDELADQMGFQEAYRRFYGT  48
+
+
+>sp|P86313|OSTCN_CAMDR Osteocalcin OS=Camelus dromedarius OX=9838 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 63.1 bits (152),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  6   AQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+              E  REVCE N  CDE+AD  G   AY+ FYG 
+Sbjct  14  DPLEPKREVCELNPDCDELADQMGFQEAYRRFYGT  48
+
+
+>sp|P86314|OSTCN_CAMBA Osteocalcin OS=Camelus bactrianus OX=9837 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 63.1 bits (152),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 18/35 (51%), Positives = 20/35 (57%), Gaps = 0/35 (0%)
+
+Query  6   AQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+              E  REVCE N  CDE+AD  G   AY+ FYG 
+Sbjct  14  DPLEPKREVCELNPDCDELADQMGFQEAYRRFYGT  48
+
+
+>sp|P86547|OSTC2_MOUSE Osteocalcin-2 OS=Mus musculus OX=10090 
+GN=Bglap2 PE=2 SV=1
+Length=95
+
+ Score = 63.9 bits (154),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE CE N ACDE++D  G+  AY+  YG
+Sbjct  57  SPDPLEPTREQCELNPACDELSDQYGLKTAYKRIYG  92
+
+
+>sp|A0A024QYT3|OST2A_ONCMY Osteocalcin 2a OS=Oncorhynchus mykiss 
+OX=8022 GN=GSONMT00044887001 PE=1 SV=1
+Length=167
+
+ Score = 65.4 bits (158),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  3    LTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYGPIPF  43
+             TL Q ESL EVCE N+AC+ MA+  GIVAAY A+YGP PF
+Sbjct  127  FTLTQVESLSEVCELNLACEHMAETAGIVAAYTAYYGPPPF  167
+
+
+>sp|P54615|OSTR_MOUSE Osteocalcin-related protein OS=Mus musculus 
+OX=10090 GN=Bglap3 PE=2 SV=1
+Length=95
+
+ Score = 62.3 bits (150),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 14/36 (39%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  4   TLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +    E  RE+CE + ACDE+++  G+  AY+  YG
+Sbjct  57  SPDPLEPTRELCELDPACDELSNQYGLKTAYRRIYG  92
+
+
+>sp|P0C226|OSTCN_MACEU Osteocalcin OS=Macropus eugenii OX=9315 
+GN=BGLAP PE=1 SV=1
+Length=49
+
+ Score = 60.8 bits (146),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 18/36 (50%), Positives = 21/36 (58%), Gaps = 0/36 (0%)
+
+Query  5   LAQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+               E+ REVCE N  CDE+AD  G   AY+ FYG 
+Sbjct  13  PDPQENKREVCELNPDCDELADHIGFQEAYRRFYGT  48
+
+
+>sp|P84351|OSTCN_HOMNE Osteocalcin (Fragment) OS=Homo sapiens 
+neanderthalensis OX=63221 GN=BGLAP PE=1 SV=1
+Length=24
+
+ Score = 46.6 bits (109),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 14/24 (58%), Positives = 16/24 (67%), Gaps = 0/24 (0%)
+
+Query  12  REVCETNMACDEMADAQGIVAAYQ  35
+           REVCE N  CDE+AD  G   AY+
+Sbjct  1   REVCELNPDCDELADHIGFQEAYR  24
+
+
+>sp|P86312|OSTCN_CAMHE Osteocalcin (Fragments) OS=Camelops hesternus 
+OX=647691 GN=BGLAP PE=1 SV=1
+Length=42
+
+ Score = 43.1 bits (100),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 14/35 (40%), Positives = 16/35 (46%), Gaps = 7/35 (20%)
+
+Query  6   AQTESLREVCETNMACDEMADAQGIVAAYQAFYGP  40
+              E  REV       DE+AD  G   AY+ FYG 
+Sbjct  14  DPLEPKREV-------DELADQMGFQEAYRRFYGT  41
+
+
+>sp|P56620|MGP_GALGA Matrix Gla protein OS=Galeorhinus galeus 
+OX=86063 GN=mgp PE=1 SV=2
+Length=102
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 11/39 (28%), Positives = 19/39 (49%), Gaps = 0/39 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           ++   +  E  RE CE    C+ +A   G+  AY  ++G
+Sbjct  35  RDRFKSPRERTREKCEEYRPCERLARQVGLKRAYGKYFG  73
+
+
+>sp|O42413|MGP_CHICK Matrix Gla protein OS=Gallus gallus OX=9031 
+GN=MGP PE=2 SV=1
+Length=103
+
+ Score = 34.6 bits (78),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 14/39 (36%), Positives = 21/39 (54%), Gaps = 0/39 (0%)
+
+Query  1   KELTLAQTESLREVCETNMACDEMADAQGIVAAYQAFYG  39
+           +E   A  E  RE+CE    C++ A   G  AAY+ ++G
+Sbjct  60  RERNKAPQERQREICEDFHLCEQYALNHGYPAAYRHYFG  98
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.135    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0414    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5023893472
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,213 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4xc5_A
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P04506|SIGM1_REOVL Outer capsid protein sigma-1 OS=Reovirus ty...  350     3e-120
+sp|P04507|SIGM1_REOVJ Outer capsid protein sigma-1 OS=Reovirus ty...  230     2e-73 
+sp|P03528|SIGM1_REOVD Outer capsid protein sigma-1 OS=Reovirus ty...  66.6    3e-12 
+
+
+>sp|P04506|SIGM1_REOVL Outer capsid protein sigma-1 OS=Reovirus 
+type 1 (strain Lang) OX=10884 GN=S1 PE=1 SV=2
+Length=470
+
+ Score = 350 bits (897),  Expect = 3e-120, Method: Compositional matrix adjust.
+ Identities = 161/162 (99%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    SLPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV  60
+            +LPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV
+Sbjct  307  TLPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV  366
+
+Query  61   LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID  120
+            LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID
+Sbjct  367  LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID  426
+
+Query  121  AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN  162
+            AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN
+Sbjct  427  AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN  468
+
+
+>sp|P04507|SIGM1_REOVJ Outer capsid protein sigma-1 OS=Reovirus 
+type 2 (strain D5/Jones) OX=10885 GN=S1 PE=3 SV=3
+Length=462
+
+ Score = 230 bits (586),  Expect = 2e-73, Method: Compositional matrix adjust.
+ Identities = 99/159 (62%), Positives = 128/159 (81%), Gaps = 0/159 (0%)
+
+Query  3    PTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLVLS  62
+            PT+++PLEL++A+N V +   + +R G W+GQL+Y  P L W A VT+NLM+VDDWL+LS
+Sbjct  302  PTFKFPLELNSADNSVSIHRNYRIRLGQWSGQLEYHTPSLRWNAPVTVNLMRVDDWLILS  361
+
+Query  63   FSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRIDAF  122
+            F++ +T+ I+A GKFV+NFV+GLS GW TG TEPS+T +PLSTTFAA+QF+N   R+DAF
+Sbjct  362  FTRFSTSGILASGKFVLNFVTGLSPGWATGSTEPSTTTNPLSTTFAAIQFINGSSRVDAF  421
+
+Query  123  RIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPC  161
+            RI+GV+EW  GELEI N+GGTYT HT V WAP TIMYPC
+Sbjct  422  RILGVAEWNAGELEITNHGGTYTAHTNVDWAPMTIMYPC  460
+
+
+>sp|P03528|SIGM1_REOVD Outer capsid protein sigma-1 OS=Reovirus 
+type 3 (strain Dearing) OX=10886 GN=S1 PE=1 SV=3
+Length=455
+
+ Score = 66.6 bits (161),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 44/160 (28%), Positives = 71/160 (44%), Gaps = 4/160 (3%)
+
+Query  3    PTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLVLS  62
+            P  RYP+     +  + ++  +  R   W G + Y    L+WR  V  ++  VDD++ + 
+Sbjct  294  PNLRYPIA--DVSGGIGMSPNYRFRQSMWIGIVSYSGSGLNWRVQVNSDIFIVDDYIHIC  351
+
+Query  63   FSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLS--TTFAAVQFLNNGQRID  120
+                   SI   G   +NFV+GL     TGDTEP+   D ++      A+   + G    
+Sbjct  352  LPAFDGFSIADGGDLSLNFVTGLLPPLLTGDTEPAFHNDVVTYGAQTVAIGLSSGGAPQY  411
+
+Query  121  AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYP  160
+              + + V +W DG L ++  GG    H+   W   T+ YP
+Sbjct  412  MSKNLWVEQWQDGVLRLRVEGGGSITHSNSKWPAMTVSYP  451
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.133    0.426    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+Results from round 2
+
+
+Query= 4xc5_A
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P04506|SIGM1_REOVL Outer capsid protein sigma-1 OS=Reovirus ty...  285     1e-94
+sp|P04507|SIGM1_REOVJ Outer capsid protein sigma-1 OS=Reovirus ty...  267     4e-88
+sp|P03528|SIGM1_REOVD Outer capsid protein sigma-1 OS=Reovirus ty...  240     2e-77
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P04506|SIGM1_REOVL Outer capsid protein sigma-1 OS=Reovirus 
+type 1 (strain Lang) OX=10884 GN=S1 PE=1 SV=2
+Length=470
+
+ Score = 285 bits (728),  Expect = 1e-94, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    SLPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV  60
+            +LPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV
+Sbjct  307  TLPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV  366
+
+Query  61   LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID  120
+            LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID
+Sbjct  367  LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRID  426
+
+Query  121  AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN  162
+            AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN
+Sbjct  427  AFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPCN  468
+
+
+>sp|P04507|SIGM1_REOVJ Outer capsid protein sigma-1 OS=Reovirus 
+type 2 (strain D5/Jones) OX=10885 GN=S1 PE=3 SV=3
+Length=462
+
+ Score = 267 bits (683),  Expect = 4e-88, Method: Composition-based stats.
+ Identities = 99/159 (62%), Positives = 128/159 (81%), Gaps = 0/159 (0%)
+
+Query  3    PTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLVLS  62
+            PT+++PLEL++A+N V +   + +R G W+GQL+Y  P L W A VT+NLM+VDDWL+LS
+Sbjct  302  PTFKFPLELNSADNSVSIHRNYRIRLGQWSGQLEYHTPSLRWNAPVTVNLMRVDDWLILS  361
+
+Query  63   FSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLSTTFAAVQFLNNGQRIDAF  122
+            F++ +T+ I+A GKFV+NFV+GLS GW TG TEPS+T +PLSTTFAA+QF+N   R+DAF
+Sbjct  362  FTRFSTSGILASGKFVLNFVTGLSPGWATGSTEPSTTTNPLSTTFAAIQFINGSSRVDAF  421
+
+Query  123  RIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYPC  161
+            RI+GV+EW  GELEI N+GGTYT HT V WAP TIMYPC
+Sbjct  422  RILGVAEWNAGELEITNHGGTYTAHTNVDWAPMTIMYPC  460
+
+
+>sp|P03528|SIGM1_REOVD Outer capsid protein sigma-1 OS=Reovirus 
+type 3 (strain Dearing) OX=10886 GN=S1 PE=1 SV=3
+Length=455
+
+ Score = 240 bits (611),  Expect = 2e-77, Method: Composition-based stats.
+ Identities = 44/162 (27%), Positives = 72/162 (44%), Gaps = 4/162 (2%)
+
+Query  1    SLPTYRYPLELDTANNRVQVADRFGMRTGTWTGQLQYQHPQLSWRANVTLNLMKVDDWLV  60
+            + P  RYP+     +  + ++  +  R   W G + Y    L+WR  V  ++  VDD++ 
+Sbjct  292  TSPNLRYPIA--DVSGGIGMSPNYRFRQSMWIGIVSYSGSGLNWRVQVNSDIFIVDDYIH  349
+
+Query  61   LSFSQMTTNSIMADGKFVINFVSGLSSGWQTGDTEPSSTIDPLS--TTFAAVQFLNNGQR  118
+            +        SI   G   +NFV+GL     TGDTEP+   D ++      A+   + G  
+Sbjct  350  ICLPAFDGFSIADGGDLSLNFVTGLLPPLLTGDTEPAFHNDVVTYGAQTVAIGLSSGGAP  409
+
+Query  119  IDAFRIMGVSEWTDGELEIKNYGGTYTGHTQVYWAPWTIMYP  160
+                + + V +W DG L ++  GG    H+   W   T+ YP
+Sbjct  410  QYMSKNLWVEQWQDGVLRLRVEGGGSITHSNSKWPAMTVSYP  451
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.374    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7495425784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

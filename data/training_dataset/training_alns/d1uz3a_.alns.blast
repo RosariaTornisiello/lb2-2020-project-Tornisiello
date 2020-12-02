@@ -1,0 +1,451 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1uz3a_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor ...  204     2e-61
+sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor ...  195     3e-58
+sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor ...  183     5e-54
+sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana ...  47.8    2e-06
+sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana ...  42.0    2e-04
+sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana ...  41.2    4e-04
+
+
+>sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor 
+EMSY OS=Danio rerio OX=7955 GN=emsy PE=2 SV=1
+Length=1173
+
+ Score = 204 bits (519),  Expect = 2e-61, Method: Compositional matrix adjust.
+ Identities = 95/100 (95%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTK+KK+LLGEL++VLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKDKKELLGELTRVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH+MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHHMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor 
+EMSY OS=Homo sapiens OX=9606 GN=EMSY PE=1 SV=2
+Length=1322
+
+ Score = 195 bits (496),  Expect = 3e-58, Method: Composition-based stats.
+ Identities = 100/100 (100%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor 
+EMSY OS=Mus musculus OX=10090 GN=Emsy PE=1 SV=2
+Length=1264
+
+ Score = 183 bits (465),  Expect = 5e-54, Method: Composition-based stats.
+ Identities = 99/114 (87%), Positives = 100/114 (88%), Gaps = 14/114 (12%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAH--------------NMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH              +MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHKMNLSLYLGERPSYSMSGPNSSSEWSIEGRRLV  114
+
+
+>sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana 
+OX=3702 GN=EML4 PE=2 SV=1
+Length=429
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 27/81 (33%), Positives = 48/81 (59%), Gaps = 1/81 (1%)
+
+Query  2    SMPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSI  60
+            ++P  +P + D    + +  + ++E EAY  V+ A +AQGD ++ EK+ ++ EL K LS+
+Sbjct  41   NLPPSYPKMYDDLAADMEAQIHQIEKEAYISVLRAFKAQGDAISWEKESVITELRKELSL  100
+
+Query  61   STERHRAEVRRAVNDERLTTI  81
+            S E HR  + R  +D+ +  I
+Sbjct  101  SNEEHRELLGRVNSDDTIRRI  121
+
+
+>sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana 
+OX=3702 GN=EML3 PE=1 SV=1
+Length=397
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 30/80 (38%), Positives = 47/80 (59%), Gaps = 6/80 (8%)
+
+Query  8    PTLLD---LSR--DECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSIS  61
+            P++L+   LSR  +E +  +  +E EAY+ ++ A +AQ D +T EK+ L+ EL K L +S
+Sbjct  35   PSVLNSAPLSRVHNEMETQIHLIEQEAYSSILRAFKAQSDAITWEKESLITELRKELRVS  94
+
+Query  62   TERHRAEVRRAVNDERLTTI  81
+             E HR  + R   DE +  I
+Sbjct  95   DEEHRELLSRVNADEMIRRI  114
+
+
+>sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana 
+OX=3702 GN=EML1 PE=1 SV=1
+Length=327
+
+ Score = 41.2 bits (95),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 23/61 (38%), Positives = 36/61 (59%), Gaps = 1/61 (2%)
+
+Query  22  LRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSISTERHRAEVRRAVNDERLTT  80
+           + +LE EAY  V+ A +AQ D ++ EK+ L+ EL K L +S + HR  + R   D+ +  
+Sbjct  5   IHQLEQEAYTAVLRAFKAQSDAISWEKESLITELRKELRVSDDEHRELLSRVNKDDTIQR  64
+
+Query  81  I  81
+           I
+Sbjct  65  I  65
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.130    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 2
+
+
+Query= d1uz3a_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor ...  170     2e-49
+sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor ...  170     2e-49
+sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor ...  159     1e-45
+sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana ...  122     3e-33
+sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana ...  99.4    5e-25
+sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana ...  97.9    1e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9FG29|EML2_ARATH Protein EMSY-LIKE 2 OS=Arabidopsis thaliana ...  76.7    7e-17
+
+
+>sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor 
+EMSY OS=Homo sapiens OX=9606 GN=EMSY PE=1 SV=2
+Length=1322
+
+ Score = 170 bits (431),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 100/100 (100%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor 
+EMSY OS=Danio rerio OX=7955 GN=emsy PE=2 SV=1
+Length=1173
+
+ Score = 170 bits (431),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 95/100 (95%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTK+KK+LLGEL++VLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKDKKELLGELTRVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH+MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHHMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor 
+EMSY OS=Mus musculus OX=10090 GN=Emsy PE=1 SV=2
+Length=1264
+
+ Score = 159 bits (402),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 99/114 (87%), Positives = 100/114 (88%), Gaps = 14/114 (12%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAH--------------NMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH              +MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHKMNLSLYLGERPSYSMSGPNSSSEWSIEGRRLV  114
+
+
+>sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana 
+OX=3702 GN=EML4 PE=2 SV=1
+Length=429
+
+ Score = 122 bits (305),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 27/81 (33%), Positives = 48/81 (59%), Gaps = 1/81 (1%)
+
+Query  2    SMPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSI  60
+            ++P  +P + D    + +  + ++E EAY  V+ A +AQGD ++ EK+ ++ EL K LS+
+Sbjct  41   NLPPSYPKMYDDLAADMEAQIHQIEKEAYISVLRAFKAQGDAISWEKESVITELRKELSL  100
+
+Query  61   STERHRAEVRRAVNDERLTTI  81
+            S E HR  + R  +D+ +  I
+Sbjct  101  SNEEHRELLGRVNSDDTIRRI  121
+
+
+>sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana 
+OX=3702 GN=EML3 PE=1 SV=1
+Length=397
+
+ Score = 99.4 bits (246),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 30/80 (38%), Positives = 47/80 (59%), Gaps = 6/80 (8%)
+
+Query  8    PTLLD---LSR--DECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSIS  61
+            P++L+   LSR  +E +  +  +E EAY+ ++ A +AQ D +T EK+ L+ EL K L +S
+Sbjct  35   PSVLNSAPLSRVHNEMETQIHLIEQEAYSSILRAFKAQSDAITWEKESLITELRKELRVS  94
+
+Query  62   TERHRAEVRRAVNDERLTTI  81
+             E HR  + R   DE +  I
+Sbjct  95   DEEHRELLSRVNADEMIRRI  114
+
+
+>sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana 
+OX=3702 GN=EML1 PE=1 SV=1
+Length=327
+
+ Score = 97.9 bits (242),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 37/65 (57%), Gaps = 1/65 (2%)
+
+Query  18  CKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSISTERHRAEVRRAVNDE  76
+            +  + +LE EAY  V+ A +AQ D ++ EK+ L+ EL K L +S + HR  + R   D+
+Sbjct  1   METQIHQLEQEAYTAVLRAFKAQSDAISWEKESLITELRKELRVSDDEHRELLSRVNKDD  60
+
+Query  77  RLTTI  81
+            +  I
+Sbjct  61  TIQRI  65
+
+
+>sp|Q9FG29|EML2_ARATH Protein EMSY-LIKE 2 OS=Arabidopsis thaliana 
+OX=3702 GN=EML2 PE=1 SV=2
+Length=313
+
+ Score = 76.7 bits (187),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 20/65 (31%), Positives = 34/65 (52%), Gaps = 1/65 (2%)
+
+Query  18  CKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSISTERHRAEVRRAVNDE  76
+            +  +  LE EAY+ V+ A +AQ D  + +K  ++  L K L IS + +R  +    ND+
+Sbjct  1   MEAQIHILEQEAYSAVLRAFQAQADEFSWDKATVMTNLRKELRISDDENRQLLNNVHNDD  60
+
+Query  77  RLTTI  81
+            +  I
+Sbjct  61  LIKRI  65
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.126    0.334    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 3
+
+
+Query= d1uz3a_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor ...  169     7e-49
+sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor ...  168     8e-49
+sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor ...  157     7e-45
+sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana ...  123     1e-33
+sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana ...  101     1e-25
+sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana ...  99.8    2e-25
+sp|Q9FG29|EML2_ARATH Protein EMSY-LIKE 2 OS=Arabidopsis thaliana ...  94.4    2e-23
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q7ZUV7|EMSY_DANRE BRCA2-interacting transcriptional repressor 
+EMSY OS=Danio rerio OX=7955 GN=emsy PE=2 SV=1
+Length=1173
+
+ Score = 169 bits (427),  Expect = 7e-49, Method: Composition-based stats.
+ Identities = 95/100 (95%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTK+KK+LLGEL++VLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKDKKELLGELTRVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH+MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHHMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q7Z589|EMSY_HUMAN BRCA2-interacting transcriptional repressor 
+EMSY OS=Homo sapiens OX=9606 GN=EMSY PE=1 SV=2
+Length=1322
+
+ Score = 168 bits (426),  Expect = 8e-49, Method: Composition-based stats.
+ Identities = 100/100 (100%), Positives = 100/100 (100%), Gaps = 0/100 (0%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHNMSGPNSSSEWSIEGRRLV  100
+
+
+>sp|Q8BMB0|EMSY_MOUSE BRCA2-interacting transcriptional repressor 
+EMSY OS=Mus musculus OX=10090 GN=Emsy PE=1 SV=2
+Length=1264
+
+ Score = 157 bits (397),  Expect = 7e-45, Method: Composition-based stats.
+ Identities = 99/114 (87%), Positives = 100/114 (88%), Gaps = 14/114 (12%)
+
+Query  3    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  62
+            MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST
+Sbjct  1    MPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGDLTKEKKDLLGELSKVLSIST  60
+
+Query  63   ERHRAEVRRAVNDERLTTIAH--------------NMSGPNSSSEWSIEGRRLV  102
+            ERHRAEVRRAVNDERLTTIAH              +MSGPNSSSEWSIEGRRLV
+Sbjct  61   ERHRAEVRRAVNDERLTTIAHKMNLSLYLGERPSYSMSGPNSSSEWSIEGRRLV  114
+
+
+>sp|Q08A72|EML4_ARATH Protein EMSY-LIKE 4 OS=Arabidopsis thaliana 
+OX=3702 GN=EML4 PE=2 SV=1
+Length=429
+
+ Score = 123 bits (308),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 27/81 (33%), Positives = 48/81 (59%), Gaps = 1/81 (1%)
+
+Query  2    SMPVVWPTLLDLSRDECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSI  60
+            ++P  +P + D    + +  + ++E EAY  V+ A +AQGD ++ EK+ ++ EL K LS+
+Sbjct  41   NLPPSYPKMYDDLAADMEAQIHQIEKEAYISVLRAFKAQGDAISWEKESVITELRKELSL  100
+
+Query  61   STERHRAEVRRAVNDERLTTI  81
+            S E HR  + R  +D+ +  I
+Sbjct  101  SNEEHRELLGRVNSDDTIRRI  121
+
+
+>sp|F4K2F0|EML3_ARATH Protein EMSY-LIKE 3 OS=Arabidopsis thaliana 
+OX=3702 GN=EML3 PE=1 SV=1
+Length=397
+
+ Score = 101 bits (251),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 30/80 (38%), Positives = 47/80 (59%), Gaps = 6/80 (8%)
+
+Query  8    PTLLD---LSR--DECKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSIS  61
+            P++L+   LSR  +E +  +  +E EAY+ ++ A +AQ D +T EK+ L+ EL K L +S
+Sbjct  35   PSVLNSAPLSRVHNEMETQIHLIEQEAYSSILRAFKAQSDAITWEKESLITELRKELRVS  94
+
+Query  62   TERHRAEVRRAVNDERLTTI  81
+             E HR  + R   DE +  I
+Sbjct  95   DEEHRELLSRVNADEMIRRI  114
+
+
+>sp|Q9C7C4|EML1_ARATH Protein EMSY-LIKE 1 OS=Arabidopsis thaliana 
+OX=3702 GN=EML1 PE=1 SV=1
+Length=327
+
+ Score = 99.8 bits (247),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 37/65 (57%), Gaps = 1/65 (2%)
+
+Query  18  CKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSISTERHRAEVRRAVNDE  76
+            +  + +LE EAY  V+ A +AQ D ++ EK+ L+ EL K L +S + HR  + R   D+
+Sbjct  1   METQIHQLEQEAYTAVLRAFKAQSDAISWEKESLITELRKELRVSDDEHRELLSRVNKDD  60
+
+Query  77  RLTTI  81
+            +  I
+Sbjct  61  TIQRI  65
+
+
+>sp|Q9FG29|EML2_ARATH Protein EMSY-LIKE 2 OS=Arabidopsis thaliana 
+OX=3702 GN=EML2 PE=1 SV=2
+Length=313
+
+ Score = 94.4 bits (233),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 20/65 (31%), Positives = 34/65 (52%), Gaps = 1/65 (2%)
+
+Query  18  CKRILRKLELEAYAGVISALRAQGD-LTKEKKDLLGELSKVLSISTERHRAEVRRAVNDE  76
+            +  +  LE EAY+ V+ A +AQ D  + +K  ++  L K L IS + +R  +    ND+
+Sbjct  1   MEAQIHILEQEAYSAVLRAFQAQADEFSWDKATVMTNLRKELRISDDENRQLLNNVHNDD  60
+
+Query  77  RLTTI  81
+            +  I
+Sbjct  61  LIKRI  65
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.346    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0393    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

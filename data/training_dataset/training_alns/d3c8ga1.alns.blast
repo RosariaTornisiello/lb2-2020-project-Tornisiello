@@ -1,0 +1,257 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3c8ga1
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q83Q96|FUME_SHIFL Fumarase E OS=Shigella flexneri OX=623 GN=fu...  332     2e-117
+sp|P11663|FUME_ECOLI Fumarase E OS=Escherichia coli (strain K12) ...  325     5e-115
+sp|P0AF10|MTLR_ECOLI Mannitol operon repressor OS=Escherichia col...  62.8    2e-11 
+sp|P0AF11|MTLR_ECOL6 Mannitol operon repressor OS=Escherichia col...  62.8    2e-11 
+
+
+>sp|Q83Q96|FUME_SHIFL Fumarase E OS=Shigella flexneri OX=623 GN=fumE 
+PE=1 SV=1
+Length=169
+
+ Score = 332 bits (850),  Expect = 2e-117, Method: Compositional matrix adjust.
+ Identities = 165/168 (98%), Positives = 165/168 (98%), Gaps = 3/168 (2%)
+
+Query  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+            MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ
+Sbjct  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+
+Query  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+            SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN
+Sbjct  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+
+Query  121  SITRNATLYDALKAMK---FAVWSEARFSGMVKTALTLAVTTTLKELT  165
+            SITRNATLYDALKAMK   FAVWSEARFSGMVKTALTLAVTTTLKELT
+Sbjct  121  SITRNATLYDALKAMKFADFAVWSEARFSGMVKTALTLAVTTTLKELT  168
+
+
+>sp|P11663|FUME_ECOLI Fumarase E OS=Escherichia coli (strain K12) 
+OX=83333 GN=fumE PE=1 SV=3
+Length=169
+
+ Score = 325 bits (834),  Expect = 5e-115, Method: Compositional matrix adjust.
+ Identities = 161/168 (96%), Positives = 164/168 (98%), Gaps = 3/168 (2%)
+
+Query  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+            MATLTEDDVLEQLDAQDNLFSFMKTAH+ILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ
+Sbjct  1    MATLTEDDVLEQLDAQDNLFSFMKTAHTILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+
+Query  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+            SGPLDDIDVALRLIYALGKMDKWLYADITHFSQ+WHYLNEQDETPGFADD+TWDFISNVN
+Sbjct  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQFWHYLNEQDETPGFADDMTWDFISNVN  120
+
+Query  121  SITRNATLYDALKAMKFA---VWSEARFSGMVKTALTLAVTTTLKELT  165
+            SITRNA LYDALKAMKFA   VWSEARFSGMVKTALTLAVTTTLKELT
+Sbjct  121  SITRNAMLYDALKAMKFADFSVWSEARFSGMVKTALTLAVTTTLKELT  168
+
+
+>sp|P0AF10|MTLR_ECOLI Mannitol operon repressor OS=Escherichia 
+coli (strain K12) OX=83333 GN=mtlR PE=1 SV=1
+Length=195
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 49/168 (29%), Positives = 79/168 (47%), Gaps = 15/168 (9%)
+
+Query  6    EDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQSGPLD  65
+            E+ VLE+L+A   + SF+ TA  +L + +   +  +F   D+  V+YAV+PLL   GPL 
+Sbjct  29   ENRVLERLNAGKTVRSFLITAVELLTEAVNLLVLQVF-RKDDYAVKYAVEPLLDGDGPLG  87
+
+Query  66   DIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVNSIT--  123
+            D+ V L+LIY LG +++  Y D          LN       F DD        ++ +   
+Sbjct  88   DLSVRLKLIYGLGVINRQEYEDAELLMALREELNHDGNEYAFTDDEILGPFGELHCVAAL  147
+
+Query  124  --------RNATLYDALKAMKFAVWSEARFSGMVKTALTLAVTTTLKE  163
+                     +++LY    AM+   + +A  S MV +   L    +LK+
+Sbjct  148  PPPPQFEPADSSLY----AMQIQRYQQAVRSTMVLSLTELISKISLKK  191
+
+
+>sp|P0AF11|MTLR_ECOL6 Mannitol operon repressor OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=mtlR 
+PE=3 SV=1
+Length=195
+
+ Score = 62.8 bits (151),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 49/168 (29%), Positives = 79/168 (47%), Gaps = 15/168 (9%)
+
+Query  6    EDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQSGPLD  65
+            E+ VLE+L+A   + SF+ TA  +L + +   +  +F   D+  V+YAV+PLL   GPL 
+Sbjct  29   ENRVLERLNAGKTVRSFLITAVELLTEAVNLLVLQVF-RKDDYAVKYAVEPLLDGDGPLG  87
+
+Query  66   DIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVNSIT--  123
+            D+ V L+LIY LG +++  Y D          LN       F DD        ++ +   
+Sbjct  88   DLSVRLKLIYGLGVINRQEYEDAELLMALREELNHDGNEYAFTDDEILGPFGELHCVAAL  147
+
+Query  124  --------RNATLYDALKAMKFAVWSEARFSGMVKTALTLAVTTTLKE  163
+                     +++LY    AM+   + +A  S MV +   L    +LK+
+Sbjct  148  PPPPQFEPADSSLY----AMQIQRYQQAVRSTMVLSLTELISKISLKK  191
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.134    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+Results from round 2
+
+
+Query= d3c8ga1
+
+Length=165
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q83Q96|FUME_SHIFL Fumarase E OS=Shigella flexneri OX=623 GN=fu...  242     4e-82
+sp|P11663|FUME_ECOLI Fumarase E OS=Escherichia coli (strain K12) ...  242     4e-82
+sp|P0AF10|MTLR_ECOLI Mannitol operon repressor OS=Escherichia col...  204     1e-66
+sp|P0AF11|MTLR_ECOL6 Mannitol operon repressor OS=Escherichia col...  204     1e-66
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q83Q96|FUME_SHIFL Fumarase E OS=Shigella flexneri OX=623 GN=fumE 
+PE=1 SV=1
+Length=169
+
+ Score = 242 bits (618),  Expect = 4e-82, Method: Composition-based stats.
+ Identities = 165/168 (98%), Positives = 165/168 (98%), Gaps = 3/168 (2%)
+
+Query  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+            MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ
+Sbjct  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+
+Query  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+            SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN
+Sbjct  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+
+Query  121  SITRNATLYDALKAMK---FAVWSEARFSGMVKTALTLAVTTTLKELT  165
+            SITRNATLYDALKAMK   FAVWSEARFSGMVKTALTLAVTTTLKELT
+Sbjct  121  SITRNATLYDALKAMKFADFAVWSEARFSGMVKTALTLAVTTTLKELT  168
+
+
+>sp|P11663|FUME_ECOLI Fumarase E OS=Escherichia coli (strain K12) 
+OX=83333 GN=fumE PE=1 SV=3
+Length=169
+
+ Score = 242 bits (618),  Expect = 4e-82, Method: Composition-based stats.
+ Identities = 161/168 (96%), Positives = 164/168 (98%), Gaps = 3/168 (2%)
+
+Query  1    MATLTEDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+            MATLTEDDVLEQLDAQDNLFSFMKTAH+ILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ
+Sbjct  1    MATLTEDDVLEQLDAQDNLFSFMKTAHTILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQ  60
+
+Query  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVN  120
+            SGPLDDIDVALRLIYALGKMDKWLYADITHFSQ+WHYLNEQDETPGFADD+TWDFISNVN
+Sbjct  61   SGPLDDIDVALRLIYALGKMDKWLYADITHFSQFWHYLNEQDETPGFADDMTWDFISNVN  120
+
+Query  121  SITRNATLYDALKAMKFA---VWSEARFSGMVKTALTLAVTTTLKELT  165
+            SITRNA LYDALKAMKFA   VWSEARFSGMVKTALTLAVTTTLKELT
+Sbjct  121  SITRNAMLYDALKAMKFADFSVWSEARFSGMVKTALTLAVTTTLKELT  168
+
+
+>sp|P0AF10|MTLR_ECOLI Mannitol operon repressor OS=Escherichia 
+coli (strain K12) OX=83333 GN=mtlR PE=1 SV=1
+Length=195
+
+ Score = 204 bits (519),  Expect = 1e-66, Method: Composition-based stats.
+ Identities = 49/168 (29%), Positives = 79/168 (47%), Gaps = 15/168 (9%)
+
+Query  6    EDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQSGPLD  65
+            E+ VLE+L+A   + SF+ TA  +L + +   +  +F   D+  V+YAV+PLL   GPL 
+Sbjct  29   ENRVLERLNAGKTVRSFLITAVELLTEAVNLLVLQVF-RKDDYAVKYAVEPLLDGDGPLG  87
+
+Query  66   DIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVNSIT--  123
+            D+ V L+LIY LG +++  Y D          LN       F DD        ++ +   
+Sbjct  88   DLSVRLKLIYGLGVINRQEYEDAELLMALREELNHDGNEYAFTDDEILGPFGELHCVAAL  147
+
+Query  124  --------RNATLYDALKAMKFAVWSEARFSGMVKTALTLAVTTTLKE  163
+                     +++LY    AM+   + +A  S MV +   L    +LK+
+Sbjct  148  PPPPQFEPADSSLY----AMQIQRYQQAVRSTMVLSLTELISKISLKK  191
+
+
+>sp|P0AF11|MTLR_ECOL6 Mannitol operon repressor OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=mtlR 
+PE=3 SV=1
+Length=195
+
+ Score = 204 bits (519),  Expect = 1e-66, Method: Composition-based stats.
+ Identities = 49/168 (29%), Positives = 79/168 (47%), Gaps = 15/168 (9%)
+
+Query  6    EDDVLEQLDAQDNLFSFMKTAHSILLQGIRQFLPSLFVDNDEEIVEYAVKPLLAQSGPLD  65
+            E+ VLE+L+A   + SF+ TA  +L + +   +  +F   D+  V+YAV+PLL   GPL 
+Sbjct  29   ENRVLERLNAGKTVRSFLITAVELLTEAVNLLVLQVF-RKDDYAVKYAVEPLLDGDGPLG  87
+
+Query  66   DIDVALRLIYALGKMDKWLYADITHFSQYWHYLNEQDETPGFADDITWDFISNVNSIT--  123
+            D+ V L+LIY LG +++  Y D          LN       F DD        ++ +   
+Sbjct  88   DLSVRLKLIYGLGVINRQEYEDAELLMALREELNHDGNEYAFTDDEILGPFGELHCVAAL  147
+
+Query  124  --------RNATLYDALKAMKFAVWSEARFSGMVKTALTLAVTTTLKE  163
+                     +++LY    AM+   + +A  S MV +   L    +LK+
+Sbjct  148  PPPPQFEPADSSLY----AMQIQRYQQAVRSTMVLSLTELISKISLKK  191
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7919695168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

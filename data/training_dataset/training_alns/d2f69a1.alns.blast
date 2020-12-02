@@ -1,0 +1,257 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2f69a1
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8WTS6|SETD7_HUMAN Histone-lysine N-methyltransferase SETD7 OS...  165     1e-50
+sp|Q8VHL1|SETD7_MOUSE Histone-lysine N-methyltransferase SETD7 OS...  152     1e-45
+sp|Q4QQN5|SETD7_XENTR Histone-lysine N-methyltransferase SETD7 OS...  135     5e-39
+sp|Q6DHG0|SETD7_DANRE Histone-lysine N-methyltransferase SETD7 OS...  115     1e-31
+sp|Q7Z0G7|SETD7_HALRO Histone-lysine N-methyltransferase SETD7 OS...  70.9    6e-15
+
+
+>sp|Q8WTS6|SETD7_HUMAN Histone-lysine N-methyltransferase SETD7 
+OS=Homo sapiens OX=9606 GN=SETD7 PE=1 SV=1
+Length=366
+
+ Score = 165 bits (417),  Expect = 1e-50, Method: Compositional matrix adjust.
+ Identities = 78/78 (100%), Positives = 78/78 (100%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST
+Sbjct  116  HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            EEGRPHFELMPGNSVYHF
+Sbjct  176  EEGRPHFELMPGNSVYHF  193
+
+
+>sp|Q8VHL1|SETD7_MOUSE Histone-lysine N-methyltransferase SETD7 
+OS=Mus musculus OX=10090 GN=Setd7 PE=1 SV=2
+Length=366
+
+ Score = 152 bits (383),  Expect = 1e-45, Method: Compositional matrix adjust.
+ Identities = 70/78 (90%), Positives = 76/78 (97%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWI+YPDGGSLVGEVNEDGEMTGEKIAYVYPD+RTALYGKFIDGEM+EGKLATLM+T
+Sbjct  116  HGVCWIHYPDGGSLVGEVNEDGEMTGEKIAYVYPDQRTALYGKFIDGEMLEGKLATLMAT  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            EEGRPHFE+  G+SVYHF
+Sbjct  176  EEGRPHFEVTSGSSVYHF  193
+
+
+>sp|Q4QQN5|SETD7_XENTR Histone-lysine N-methyltransferase SETD7 
+OS=Xenopus tropicalis OX=8364 GN=setd7 PE=2 SV=1
+Length=366
+
+ Score = 135 bits (339),  Expect = 5e-39, Method: Compositional matrix adjust.
+ Identities = 61/78 (78%), Positives = 69/78 (88%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWIYYPDGGSLVGEVNEDG+MTG+K+AYVYPD R ALYGKFID EM+EGKLA L S 
+Sbjct  116  HGVCWIYYPDGGSLVGEVNEDGDMTGDKVAYVYPDGRMALYGKFIDAEMLEGKLAILTSV  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            +EG+PHFEL+P   VY+F
+Sbjct  176  DEGKPHFELVPNGPVYNF  193
+
+
+>sp|Q6DHG0|SETD7_DANRE Histone-lysine N-methyltransferase SETD7 
+OS=Danio rerio OX=7955 GN=setd7 PE=2 SV=1
+Length=373
+
+ Score = 115 bits (288),  Expect = 1e-31, Method: Compositional matrix adjust.
+ Identities = 49/78 (63%), Positives = 64/78 (82%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            +G+CW+YYPDG  +VGEVNE+GEMTG+ +AYVYPD RTALYG F+DGE+IE +LATL + 
+Sbjct  116  YGMCWVYYPDGACVVGEVNEEGEMTGKAVAYVYPDGRTALYGSFVDGELIEARLATLTTQ  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            E GRPHF + P + +Y +
+Sbjct  176  ENGRPHFTVDPDSPIYCY  193
+
+
+>sp|Q7Z0G7|SETD7_HALRO Histone-lysine N-methyltransferase SETD7 
+OS=Halocynthia roretzi OX=7729 GN=setd7 PE=2 SV=1
+Length=386
+
+ Score = 70.9 bits (172),  Expect = 6e-15, Method: Compositional matrix adjust.
+ Identities = 33/74 (45%), Positives = 46/74 (62%), Gaps = 0/74 (0%)
+
+Query  2    GVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMSTE  61
+            G+C+ Y+PDGGSL+G VN  G+++ + IAY+YPD  TAL G F +G+MI  K A +  T 
+Sbjct  120  GLCFYYFPDGGSLIGNVNASGDLSADNIAYIYPDRTTALIGSFEEGDMITAKEANVTITG  179
+
+Query  62   EGRPHFELMPGNSV  75
+            E          NS+
+Sbjct  180  EKGEEISFPTVNSI  193
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.141    0.441    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+Results from round 2
+
+
+Query= d2f69a1
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8WTS6|SETD7_HUMAN Histone-lysine N-methyltransferase SETD7 OS...  142     4e-42
+sp|Q8VHL1|SETD7_MOUSE Histone-lysine N-methyltransferase SETD7 OS...  139     1e-40
+sp|Q4QQN5|SETD7_XENTR Histone-lysine N-methyltransferase SETD7 OS...  137     6e-40
+sp|Q6DHG0|SETD7_DANRE Histone-lysine N-methyltransferase SETD7 OS...  134     1e-38
+sp|Q7Z0G7|SETD7_HALRO Histone-lysine N-methyltransferase SETD7 OS...  111     4e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q8WTS6|SETD7_HUMAN Histone-lysine N-methyltransferase SETD7 
+OS=Homo sapiens OX=9606 GN=SETD7 PE=1 SV=1
+Length=366
+
+ Score = 142 bits (359),  Expect = 4e-42, Method: Composition-based stats.
+ Identities = 78/78 (100%), Positives = 78/78 (100%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST
+Sbjct  116  HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            EEGRPHFELMPGNSVYHF
+Sbjct  176  EEGRPHFELMPGNSVYHF  193
+
+
+>sp|Q8VHL1|SETD7_MOUSE Histone-lysine N-methyltransferase SETD7 
+OS=Mus musculus OX=10090 GN=Setd7 PE=1 SV=2
+Length=366
+
+ Score = 139 bits (350),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 70/78 (90%), Positives = 76/78 (97%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWI+YPDGGSLVGEVNEDGEMTGEKIAYVYPD+RTALYGKFIDGEM+EGKLATLM+T
+Sbjct  116  HGVCWIHYPDGGSLVGEVNEDGEMTGEKIAYVYPDQRTALYGKFIDGEMLEGKLATLMAT  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            EEGRPHFE+  G+SVYHF
+Sbjct  176  EEGRPHFEVTSGSSVYHF  193
+
+
+>sp|Q4QQN5|SETD7_XENTR Histone-lysine N-methyltransferase SETD7 
+OS=Xenopus tropicalis OX=8364 GN=setd7 PE=2 SV=1
+Length=366
+
+ Score = 137 bits (345),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 61/78 (78%), Positives = 69/78 (88%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            HGVCWIYYPDGGSLVGEVNEDG+MTG+K+AYVYPD R ALYGKFID EM+EGKLA L S 
+Sbjct  116  HGVCWIYYPDGGSLVGEVNEDGDMTGDKVAYVYPDGRMALYGKFIDAEMLEGKLAILTSV  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            +EG+PHFEL+P   VY+F
+Sbjct  176  DEGKPHFELVPNGPVYNF  193
+
+
+>sp|Q6DHG0|SETD7_DANRE Histone-lysine N-methyltransferase SETD7 
+OS=Danio rerio OX=7955 GN=setd7 PE=2 SV=1
+Length=373
+
+ Score = 134 bits (337),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 49/78 (63%), Positives = 64/78 (82%), Gaps = 0/78 (0%)
+
+Query  1    HGVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMST  60
+            +G+CW+YYPDG  +VGEVNE+GEMTG+ +AYVYPD RTALYG F+DGE+IE +LATL + 
+Sbjct  116  YGMCWVYYPDGACVVGEVNEEGEMTGKAVAYVYPDGRTALYGSFVDGELIEARLATLTTQ  175
+
+Query  61   EEGRPHFELMPGNSVYHF  78
+            E GRPHF + P + +Y +
+Sbjct  176  ENGRPHFTVDPDSPIYCY  193
+
+
+>sp|Q7Z0G7|SETD7_HALRO Histone-lysine N-methyltransferase SETD7 
+OS=Halocynthia roretzi OX=7729 GN=setd7 PE=2 SV=1
+Length=386
+
+ Score = 111 bits (279),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 33/74 (45%), Positives = 46/74 (62%), Gaps = 0/74 (0%)
+
+Query  2    GVCWIYYPDGGSLVGEVNEDGEMTGEKIAYVYPDERTALYGKFIDGEMIEGKLATLMSTE  61
+            G+C+ Y+PDGGSL+G VN  G+++ + IAY+YPD  TAL G F +G+MI  K A +  T 
+Sbjct  120  GLCFYYFPDGGSLIGNVNASGDLSADNIAYIYPDRTTALIGSFEEGDMITAKEANVTITG  179
+
+Query  62   EGRPHFELMPGNSV  75
+            E          NS+
+Sbjct  180  EKGEEISFPTVNSI  193
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.143    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0437    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

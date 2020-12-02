@@ -1,0 +1,123 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2rdea1
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9KNC3|YCGRL_VIBCH Cyclic di-GMP binding protein VCA0042 OS=Vi...  230     6e-77
+
+
+>sp|Q9KNC3|YCGRL_VIBCH Cyclic di-GMP binding protein VCA0042 OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=VC_A0042 PE=1 SV=1
+Length=252
+
+ Score = 230 bits (586),  Expect = 6e-77, Method: Compositional matrix adjust.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK  60
+            EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK
+Sbjct  138  EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK  197
+
+Query  61   TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN  110
+            TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN
+Sbjct  198  TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN  247
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.141    0.424    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 2
+
+
+Query= d2rdea1
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9KNC3|YCGRL_VIBCH Cyclic di-GMP binding protein VCA0042 OS=Vi...  239     1e-80
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9KNC3|YCGRL_VIBCH Cyclic di-GMP binding protein VCA0042 OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=VC_A0042 PE=1 SV=1
+Length=252
+
+ Score = 239 bits (611),  Expect = 1e-80, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK  60
+            EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK
+Sbjct  138  EPRFELNLAGKVLFDEHRGDCELRDLSRSGCRFITPPLGKTYQVGDLVALEIFSDLRGTK  197
+
+Query  61   TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN  110
+            TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN
+Sbjct  198  TFPPLTGKICNLQRSLHHARYGLEFNEEGRNNAKNLLAQLKFNGTKLTLN  247
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.142    0.427    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0433    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

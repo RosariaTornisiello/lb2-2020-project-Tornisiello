@@ -1,0 +1,131 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1nrja_
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P32916|SRPR_YEAST Signal recognition particle receptor subunit...  296     1e-97
+
+
+>sp|P32916|SRPR_YEAST Signal recognition particle receptor subunit 
+alpha homolog OS=Saccharomyces cerevisiae (strain ATCC 
+204508 / S288c) OX=559292 GN=SRP101 PE=1 SV=2
+Length=621
+
+ Score = 296 bits (757),  Expect = 1e-97, Method: Compositional matrix adjust.
+ Identities = 147/155 (95%), Positives = 147/155 (95%), Gaps = 8/155 (5%)
+
+Query  1    MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL  60
+            MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL
+Sbjct  1    MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL  60
+
+Query  61   LTIN--------FNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE  112
+            LTIN        FNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE
+Sbjct  61   LTINSEHKNSPSFNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE  120
+
+Query  113  SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF  147
+            SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF
+Sbjct  121  SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF  155
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+Results from round 2
+
+
+Query= d1nrja_
+
+Length=147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P32916|SRPR_YEAST Signal recognition particle receptor subunit...  301     8e-100
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P32916|SRPR_YEAST Signal recognition particle receptor subunit 
+alpha homolog OS=Saccharomyces cerevisiae (strain ATCC 
+204508 / S288c) OX=559292 GN=SRP101 PE=1 SV=2
+Length=621
+
+ Score = 301 bits (772),  Expect = 8e-100, Method: Composition-based stats.
+ Identities = 147/155 (95%), Positives = 147/155 (95%), Gaps = 8/155 (5%)
+
+Query  1    MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL  60
+            MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL
+Sbjct  1    MFDQLAVFTPQGQVLYQYNCLGKKFSEIQINSFISQLITSPVTRKESVANANTDGFDFNL  60
+
+Query  61   LTIN--------FNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE  112
+            LTIN        FNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE
+Sbjct  61   LTINSEHKNSPSFNALFYLNKQPELYFVVTFAEQTLELNQETQQTLALVLKLWNSLHLSE  120
+
+Query  113  SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF  147
+            SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF
+Sbjct  121  SILKNRQGQNEKNKHNYVDILQGIEDDLKKFEQYF  155
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.141    0.422    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0431    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5701971680
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

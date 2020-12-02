@@ -1,0 +1,2410 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1jnra1
+
+Length=141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha OS=D...  149     1e-41
+sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase...  51.6    3e-07
+sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit...  39.7    0.004
+
+
+>sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha 
+OS=Desulfovibrio gigas (strain ATCC 19364 / DSM 1382 / NCIMB 
+9332 / VKM B-1759) OX=1121448 GN=aprA PE=1 SV=1
+Length=666
+
+ Score = 149 bits (376),  Expect = 1e-41, Method: Compositional matrix adjust.
+ Identities = 70/137 (51%), Positives = 91/137 (66%), Gaps = 0/137 (0%)
+
+Query  1    TADDVNPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAA  60
+            T   VNPEYI P   ++RL K  DEY  G+ T Y T++ +L     L+  L+ED  KLAA
+Sbjct  526  TCPVVNPEYISPKNFMMRLIKCTDEYGGGVGTYYNTSKALLDTGFWLMEMLEEDSLKLAA  585
+
+Query  61   RDLHELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYD  120
+            RDLHEL+R WE  HR+WT   H++H+ FR+E+R+PG+YYR D+  L+D +WKCFV SKYD
+Sbjct  586  RDLHELLRCWENYHRLWTVRLHMQHIAFREESRYPGFYYRADFLGLDDSKWKCFVNSKYD  645
+
+Query  121  AEKDEWTFEKVPYVQVI  137
+              K E    K PY Q+I
+Sbjct  646  PAKKETKIFKKPYYQII  662
+
+
+>sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase 
+MJ0033 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0033 PE=3 SV=1
+Length=539
+
+ Score = 51.6 bits (122),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 37/115 (32%), Positives = 63/115 (55%), Gaps = 12/115 (10%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+K+M +Y + I      NE  L++ALE +  ++ +++ +    + +L   +EL + V  
+Sbjct  429  LRKVMWDYVSII-----RNEDGLKKALEKIDEIERNIDNVKVNGIIDLQNYFELKNMVVV  483
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKVPY  133
+            A+   +  L+RKE+R  G +YR D+PE   EEW+  +  K    K  W FEK+ Y
+Sbjct  484  AKLVTKSALYRKESR--GAHYREDFPE-TKEEWRGNIIIK---GKKMW-FEKLDY  531
+
+
+>sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=sdhA 
+PE=3 SV=1
+Length=596
+
+ Score = 39.7 bits (91),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 29/109 (27%), Positives = 54/109 (50%), Gaps = 12/109 (11%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWE  71
+            +++Q+ M  +A    ++++T E +L    E+++ ++   + +   D       +L+ A E
+Sbjct  464  LKMQRTMQSHA----SVFRTQE-VLDEGAEMISEIRSGYKDIKVNDKSLIWNSDLVEALE  518
+
+Query  72   LVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYD  120
+            L + +  A   V     RKE+R  G + R DYP+ ND+EW     S  D
+Sbjct  519  LDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDKEWMQHTLSGVD  565
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.136    0.444    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008933090
+Results from round 2
+
+
+Query= d1jnra1
+
+Length=141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha OS=D...  225     5e-70
+sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase...  133     2e-36
+
+Sequences not found previously or not previously below threshold:
+
+sp|D9PU00|TFRA_METTM Fumarate reductase (CoM/CoB) subunit A OS=Me...  57.8    2e-09
+sp|Q6Z836|NADB_ORYSJ L-aspartate oxidase, chloroplastic OS=Oryza ...  55.1    2e-08
+sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit...  53.6    6e-08
+sp|Q8XA23|NADB_ECO57 L-aspartate oxidase OS=Escherichia coli O157...  52.4    2e-07
+sp|P10902|NADB_ECOLI L-aspartate oxidase OS=Escherichia coli (str...  52.0    2e-07
+sp|Q8ZMX9|NADB_SALTY L-aspartate oxidase OS=Salmonella typhimuriu...  51.6    3e-07
+sp|Q8Z4K0|NADB_SALTI L-aspartate oxidase OS=Salmonella typhi OX=9...  51.6    3e-07
+sp|Q92J97|SDHA_RICCN Succinate dehydrogenase flavoprotein subunit...  51.2    4e-07
+sp|Q8ZD80|NADB_YERPE L-aspartate oxidase OS=Yersinia pestis OX=63...  50.9    5e-07
+sp|P31038|SDHA_RICPR Succinate dehydrogenase flavoprotein subunit...  49.3    2e-06
+sp|Q51363|NADB_PSEAE L-aspartate oxidase OS=Pseudomonas aeruginos...  48.9    2e-06
+sp|Q4UJM1|SDHA_RICFE Succinate dehydrogenase flavoprotein subunit...  48.9    3e-06
+sp|Q9ZMP0|FRDA_HELPJ Fumarate reductase flavoprotein subunit OS=H...  48.2    5e-06
+sp|O06913|FRDA_HELPY Fumarate reductase flavoprotein subunit OS=H...  48.2    5e-06
+sp|P0AC41|SDHA_ECOLI Succinate dehydrogenase flavoprotein subunit...  47.8    7e-06
+sp|P0AC42|SDHA_ECOL6 Succinate dehydrogenase flavoprotein subunit...  47.8    7e-06
+sp|P0AC43|SDHA_ECO57 Succinate dehydrogenase flavoprotein subunit...  47.8    7e-06
+sp|Q8ZQU3|SDHA_SALTY Succinate dehydrogenase flavoprotein subunit...  47.4    1e-05
+sp|Q68XN9|SDHA_RICTY Succinate dehydrogenase flavoprotein subunit...  47.0    1e-05
+sp|G4V4G6|SDHA_SERS3 Succinate dehydrogenase flavoprotein subunit...  47.0    1e-05
+sp|Q8XWM7|NADB1_RALSO L-aspartate oxidase 1 OS=Ralstonia solanace...  46.6    2e-05
+sp|P08065|SDHA_BACSU Succinate dehydrogenase flavoprotein subunit...  46.2    2e-05
+sp|Q00711|SDHA_YEAST Succinate dehydrogenase [ubiquinone] flavopr...  45.5    4e-05
+sp|Q9U3X4|SDHA_DICDI Succinate dehydrogenase [ubiquinone] flavopr...  45.5    4e-05
+sp|Q94AY1|NADB_ARATH L-aspartate oxidase, chloroplastic OS=Arabid...  45.1    5e-05
+sp|P17412|FRDA_WOLSU Fumarate reductase flavoprotein subunit OS=W...  44.3    1e-04
+sp|Q9UTJ7|SDHA_SCHPO Probable succinate dehydrogenase [ubiquinone...  44.3    1e-04
+sp|P74562|NADB_SYNY3 L-aspartate oxidase OS=Synechocystis sp. (st...  43.9    1e-04
+sp|O82663|SDHA1_ARATH Succinate dehydrogenase [ubiquinone] flavop...  43.5    2e-04
+sp|Q59661|SDHA_PARDE Succinate dehydrogenase flavoprotein subunit...  42.0    6e-04
+sp|Q6ZDY8|SDHA_ORYSJ Succinate dehydrogenase [ubiquinone] flavopr...  41.6    7e-04
+sp|Q9ZPX5|SDHA2_ARATH Succinate dehydrogenase [ubiquinone] flavop...  41.2    0.001
+sp|P47052|SDHX_YEAST Succinate dehydrogenase [ubiquinone] flavopr...  41.2    0.001
+sp|P38032|NADB_BACSU L-aspartate oxidase OS=Bacillus subtilis (st...  40.5    0.002
+sp|O57765|NADB_PYRHO L-aspartate oxidase OS=Pyrococcus horikoshii...  40.1    0.003
+sp|Q8TZL4|NADB_PYRFU L-aspartate oxidase OS=Pyrococcus furiosus (...  39.3    0.005
+
+
+>sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha 
+OS=Desulfovibrio gigas (strain ATCC 19364 / DSM 1382 / NCIMB 
+9332 / VKM B-1759) OX=1121448 GN=aprA PE=1 SV=1
+Length=666
+
+ Score = 225 bits (573),  Expect = 5e-70, Method: Composition-based stats.
+ Identities = 70/137 (51%), Positives = 91/137 (66%), Gaps = 0/137 (0%)
+
+Query  1    TADDVNPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAA  60
+            T   VNPEYI P   ++RL K  DEY  G+ T Y T++ +L     L+  L+ED  KLAA
+Sbjct  526  TCPVVNPEYISPKNFMMRLIKCTDEYGGGVGTYYNTSKALLDTGFWLMEMLEEDSLKLAA  585
+
+Query  61   RDLHELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYD  120
+            RDLHEL+R WE  HR+WT   H++H+ FR+E+R+PG+YYR D+  L+D +WKCFV SKYD
+Sbjct  586  RDLHELLRCWENYHRLWTVRLHMQHIAFREESRYPGFYYRADFLGLDDSKWKCFVNSKYD  645
+
+Query  121  AEKDEWTFEKVPYVQVI  137
+              K E    K PY Q+I
+Sbjct  646  PAKKETKIFKKPYYQII  662
+
+
+>sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase 
+MJ0033 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0033 PE=3 SV=1
+Length=539
+
+ Score = 133 bits (335),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 37/121 (31%), Positives = 65/121 (54%), Gaps = 12/121 (10%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWEL  72
+            +  +  L+K+M +Y + I      NE  L++ALE +  ++ +++ +    + +L   +EL
+Sbjct  423  YNLIEDLRKVMWDYVSII-----RNEDGLKKALEKIDEIERNIDNVKVNGIIDLQNYFEL  477
+
+Query  73   VHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKVP  132
+             + V  A+   +  L+RKE+R  G +YR D+PE   EEW+  +  K    K  W FEK+ 
+Sbjct  478  KNMVVVAKLVTKSALYRKESR--GAHYREDFPE-TKEEWRGNIIIK---GKKMW-FEKLD  530
+
+Query  133  Y  133
+            Y
+Sbjct  531  Y  531
+
+
+>sp|D9PU00|TFRA_METTM Fumarate reductase (CoM/CoB) subunit A OS=Methanothermobacter 
+marburgensis (strain ATCC BAA-927 / DSM 
+2133 / JCM 14651 / NBRC 100331 / OCM 82 / Marburg) OX=79929 
+GN=tfrA PE=1 SV=1
+Length=547
+
+ Score = 57.8 bits (138),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 32/114 (28%), Positives = 50/114 (44%), Gaps = 12/114 (11%)
+
+Query  3    DDVNPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARD  62
+            D V    I P +    L + M    A +      + + L+ A+  ++ L + L  L   +
+Sbjct  426  DMVRDGSIRPAEIRDELHEAMWSDVAIV-----RSRRSLESAMSRISTLMDKLGDLDVPE  480
+
+Query  63   L----HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWK  112
+                   L+ A EL + + TA    R  L R+E+R  G +YR D+PE    EWK
+Sbjct  481  TGGFNSNLLEALELENMLITASLVTRSALIREESR--GSHYREDFPE-TRPEWK  531
+
+
+>sp|Q6Z836|NADB_ORYSJ L-aspartate oxidase, chloroplastic OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os02g0134400 PE=3 SV=1
+Length=645
+
+ Score = 55.1 bits (131),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 26/120 (22%), Positives = 50/120 (42%), Gaps = 13/120 (11%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAAR-----DLHELM  67
+             Q  + LQ IM EY   +      +   L+ A   ++ L+ + E+   R      +  + 
+Sbjct  523  KQARMELQSIMWEYVGIV-----RSTNRLKHAEWKISDLESEWEEFLFRRGWKPTMVGVE  577
+
+Query  68   RAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWT  127
+               E+ +    A+  V+  L R E+R  G ++  D+P L + + K  V      ++  W+
+Sbjct  578  TC-EMRNLFCCAKLVVKSALARHESR--GLHFTEDFPYLEESKRKPTVIFPTHIQELTWS  634
+
+
+>sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=sdhA 
+PE=3 SV=1
+Length=596
+
+ Score = 53.6 bits (127),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 52/120 (43%), Gaps = 12/120 (10%)
+
+Query  10   ILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----  64
+            I      +++Q+ M  +A+         +++L    E+++ ++   + +   D       
+Sbjct  457  ISVADLRLKMQRTMQSHASVF-----RTQEVLDEGAEMISEIRSGYKDIKVNDKSLIWNS  511
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+            +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND+EW     S  D    
+Sbjct  512  DLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDKEWMQHTLSGVDEAGK  569
+
+
+>sp|Q8XA23|NADB_ECO57 L-aspartate oxidase OS=Escherichia coli 
+O157:H7 OX=83334 GN=nadB PE=3 SV=1
+Length=540
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 30/102 (29%), Positives = 48/102 (47%), Gaps = 9/102 (9%)
+
+Query  6    NP-EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH  64
+            NP E ++       L+  M +Y   +        K L+RAL  +  L++++++  A    
+Sbjct  429  NPDERVIIQHNWHELRLFMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYAHFRV  483
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPEL  106
+                  EL + V  AE  VR  + RKE+R  G ++  DYPEL
+Sbjct  484  S-NNLLELRNLVQVAELIVRCAMMRKESR--GLHFTLDYPEL  522
+
+
+>sp|P10902|NADB_ECOLI L-aspartate oxidase OS=Escherichia coli 
+(strain K12) OX=83333 GN=nadB PE=1 SV=4
+Length=540
+
+ Score = 52.0 bits (123),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 27/88 (31%), Positives = 43/88 (49%), Gaps = 8/88 (9%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+  M +Y   +        K L+RAL  +  L++++++  A          EL + V  
+Sbjct  443  LRLFMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYAHFRVS-NNLLELRNLVQV  496
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPEL  106
+            AE  VR  + RKE+R  G ++  DYPEL
+Sbjct  497  AELIVRCAMMRKESR--GLHFTLDYPEL  522
+
+
+>sp|Q8ZMX9|NADB_SALTY L-aspartate oxidase OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=nadB 
+PE=1 SV=1
+Length=540
+
+ Score = 51.6 bits (122),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 43/87 (49%), Gaps = 8/87 (9%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+ +M +Y   +        K L+RAL  +  L++++++  A          EL + V  
+Sbjct  443  LRLLMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYANFRVS-NNLLELRNLVQV  496
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPE  105
+            AE  VR  + RKE+R  G ++  DYP+
+Sbjct  497  AELIVRCAMMRKESR--GLHFTLDYPQ  521
+
+
+>sp|Q8Z4K0|NADB_SALTI L-aspartate oxidase OS=Salmonella typhi 
+OX=90370 GN=nadB PE=3 SV=1
+Length=540
+
+ Score = 51.6 bits (122),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/87 (29%), Positives = 43/87 (49%), Gaps = 8/87 (9%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+ +M +Y   +        K L+RAL  +  L++++++  A          EL + V  
+Sbjct  443  LRLLMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYANFRVS-NNLLELRNLVQV  496
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPE  105
+            AE  VR  + RKE+R  G ++  DYP+
+Sbjct  497  AELIVRCAMMRKESR--GLHFTLDYPQ  521
+
+
+>sp|Q92J97|SDHA_RICCN Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) OX=272944 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 51.2 bits (121),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 53/120 (44%), Gaps = 12/120 (10%)
+
+Query  10   ILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----  64
+            IL  +  +++Q+ M  +A+         +++L     +++ ++   + +   D       
+Sbjct  457  ILVAELRLKMQRTMQSHASVF-----RTQEVLDEGAGMISEIRSGYKDIKINDKSLIWNS  511
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+            +L+ A EL + +  A   V     RKE+R  G + R DYP+ NDE+W     S  D    
+Sbjct  512  DLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDEDWMKHTLSSIDEAGK  569
+
+
+>sp|Q8ZD80|NADB_YERPE L-aspartate oxidase OS=Yersinia pestis OX=632 
+GN=nadB PE=3 SV=2
+Length=533
+
+ Score = 50.9 bits (120),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 26/87 (30%), Positives = 42/87 (48%), Gaps = 8/87 (9%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+  M +Y   +        K L+RAL  +  L++++++  A          EL + V  
+Sbjct  443  LRLFMWDYVGIV-----RTTKRLERALRRINTLQQEIDEYYANFRIS-NNLLELRNLVQV  496
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPE  105
+            AE  VR  + RKE+R  G +Y  DYP+
+Sbjct  497  AELIVRCAMERKESR--GLHYTLDYPD  521
+
+
+>sp|P31038|SDHA_RICPR Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia prowazekii (strain Madrid E) OX=272947 GN=sdhA 
+PE=3 SV=1
+Length=596
+
+ Score = 49.3 bits (116),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 27/120 (23%), Positives = 51/120 (43%), Gaps = 12/120 (10%)
+
+Query  10   ILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----  64
+            IL     +++Q+ M  + +         +K+L   + +++ ++   + +   D       
+Sbjct  457  ILVADLRLKMQRTMQSHVSVF-----RTQKLLDEGVGMISEIRNRYKDIKINDKSLIWNS  511
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+            +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND +W     S  D    
+Sbjct  512  DLVEALELDNLLDQALVTVCSAAARKESR--GAHAREDYPDRNDRDWIKHTLSSIDDSGK  569
+
+
+>sp|Q51363|NADB_PSEAE L-aspartate oxidase OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 
+/ LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=nadB PE=3 
+SV=1
+Length=538
+
+ Score = 48.9 bits (115),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 42/92 (46%), Gaps = 10/92 (11%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAA-RDLHELMRAWELVHRVW  77
+            L++ M +Y   + T  K  ++   R   LL+ + E        RDL EL       +   
+Sbjct  443  LRRFMWDYVGIVRT-NKRLQRAQHRVRLLLSEIDEFYSNYKVSRDLIEL------RNLAL  495
+
+Query  78   TAEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+             AE  +R  + R+E+R  G +Y  DYP+L  E
+Sbjct  496  VAELIIRSAMQRRESR--GLHYTLDYPDLLPE  525
+
+
+>sp|Q4UJM1|SDHA_RICFE Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 48.9 bits (115),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 27/120 (23%), Positives = 51/120 (43%), Gaps = 12/120 (10%)
+
+Query  10   ILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----  64
+            IL     +++Q+ M  +A+         +++L     +++ ++   + +   D       
+Sbjct  457  ILVADLRLKMQRTMQSHASVF-----RTQEVLDEGAGMISEIRNGYKDIKINDKSLIWNS  511
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+            +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND +W     S  D    
+Sbjct  512  DLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDGDWMKHTLSSIDEAGK  569
+
+
+>sp|Q9ZMP0|FRDA_HELPJ Fumarate reductase flavoprotein subunit 
+OS=Helicobacter pylori (strain J99 / ATCC 700824) OX=85963 GN=frdA 
+PE=3 SV=1
+Length=714
+
+ Score = 48.2 bits (113),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 33/118 (28%), Positives = 54/118 (46%), Gaps = 13/118 (11%)
+
+Query  18   RLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARD--LH---ELMRAWEL  72
+            R++++MDE             K L+ AL+ L  L    + +  ++  LH   EL  A+  
+Sbjct  496  RMKEVMDEKVGVF-----REGKKLEEALKELQELYARSKNICVKNKVLHNNPELEDAYRT  550
+
+Query  73   VHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKY-DAEKDEWTFE  129
+               +  A    +  L R E+R  G + R DYP+ +DE+W     + +  AE+D  T E
+Sbjct  551  KKMLKLALCITQGALLRTESR--GAHTRIDYPKRDDEKWLNRTLASWPSAEQDMPTIE  606
+
+
+>sp|O06913|FRDA_HELPY Fumarate reductase flavoprotein subunit 
+OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 
+GN=frdA PE=3 SV=2
+Length=714
+
+ Score = 48.2 bits (113),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 33/118 (28%), Positives = 54/118 (46%), Gaps = 13/118 (11%)
+
+Query  18   RLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARD--LH---ELMRAWEL  72
+            R++++MDE             K L+ AL+ L  L    + +  ++  LH   EL  A+  
+Sbjct  496  RMKEVMDEKVGVF-----REGKRLEEALKELQELYARSKNICVKNKVLHNNPELEDAYRT  550
+
+Query  73   VHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKY-DAEKDEWTFE  129
+               +  A    +  L R E+R  G + R DYP+ +DE+W     + +  AE+D  T E
+Sbjct  551  KKMLKLALCITQGALLRTESR--GAHTRIDYPKRDDEKWLNRTLASWPSAEQDMPTIE  606
+
+
+>sp|P0AC41|SDHA_ECOLI Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli (strain K12) OX=83333 GN=sdhA PE=1 
+SV=1
+Length=588
+
+ Score = 47.8 bits (112),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 35/83 (42%), Gaps = 7/83 (8%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELVHRVWTAEAHVRHMLFRK  90
+                 + + LE L  ++E L+     D             EL + + TA A      FR 
+Sbjct  475  REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQRVECLELDNLMETAYATAVSANFRT  534
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKC  113
+            E+R  G + R D+P+ +DE W C
+Sbjct  535  ESR--GAHSRFDFPDRDDENWLC  555
+
+
+>sp|P0AC42|SDHA_ECOL6 Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 47.8 bits (112),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 35/83 (42%), Gaps = 7/83 (8%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELVHRVWTAEAHVRHMLFRK  90
+                 + + LE L  ++E L+     D             EL + + TA A      FR 
+Sbjct  475  REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQRVECLELDNLMETAYATAVSANFRT  534
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKC  113
+            E+R  G + R D+P+ +DE W C
+Sbjct  535  ESR--GAHSRFDFPDRDDENWLC  555
+
+
+>sp|P0AC43|SDHA_ECO57 Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli O157:H7 OX=83334 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 47.8 bits (112),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 35/83 (42%), Gaps = 7/83 (8%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELVHRVWTAEAHVRHMLFRK  90
+                 + + LE L  ++E L+     D             EL + + TA A      FR 
+Sbjct  475  REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQRVECLELDNLMETAYATAVSANFRT  534
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKC  113
+            E+R  G + R D+P+ +DE W C
+Sbjct  535  ESR--GAHSRFDFPDRDDENWLC  555
+
+
+>sp|Q8ZQU3|SDHA_SALTY Succinate dehydrogenase flavoprotein subunit 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 47.4 bits (111),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 34/83 (41%), Gaps = 7/83 (8%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELVHRVWTAEAHVRHMLFRK  90
+                 + + LE L  ++E L+     D             EL + + TA A      FR 
+Sbjct  475  REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQRVECLELDNLMETAYATAVSANFRT  534
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKC  113
+            E+R  G + R D+PE +D  W C
+Sbjct  535  ESR--GAHSRFDFPERDDANWLC  555
+
+
+>sp|Q68XN9|SDHA_RICTY Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) OX=257363 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 47.0 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 24/109 (22%), Positives = 48/109 (44%), Gaps = 12/109 (11%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWE  71
+            +++Q+ M  + +         +++L     +++ ++   + +   D       +L+ A E
+Sbjct  464  LQMQRTMQSHVSVF-----RTQELLDEGARMISEIRNRYKDIKINDKSLIWNSDLVEALE  518
+
+Query  72   LVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYD  120
+            L + +  A   V     RKE+R  G + R DYP+ ND +W     S  D
+Sbjct  519  LDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDIDWIKHTLSSID  565
+
+
+>sp|G4V4G6|SDHA_SERS3 Succinate dehydrogenase flavoprotein subunit 
+OS=Serratia sp. (strain ATCC 39006) OX=104623 GN=sdhA PE=1 
+SV=1
+Length=588
+
+ Score = 47.0 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 27/101 (27%), Positives = 42/101 (42%), Gaps = 9/101 (9%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELVHRVWTAEAHVRHMLFRK  90
+                 + + LE L  ++E L+     D             EL + + TA A      FR 
+Sbjct  475  REGDAMAKGLEELKVIRERLKNARLDDTSNDFNTQRIECLELDNLMETAYATAVSANFRT  534
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKV  131
+            E+R  G + R DYP+ +D++W C     Y  + +  T  KV
+Sbjct  535  ESR--GAHSRFDYPDRDDDKWLCHTL--YQPQTESMTRRKV  571
+
+
+>sp|Q8XWM7|NADB1_RALSO L-aspartate oxidase 1 OS=Ralstonia solanacearum 
+(strain GMI1000) OX=267608 GN=nadB1 PE=3 SV=1
+Length=533
+
+ Score = 46.6 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 27/89 (30%), Positives = 44/89 (49%), Gaps = 12/89 (13%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAA--RDLHELMRAWELVHRV  76
+            L+++M  Y   +        K L+RA   +A L+E++ +  A  R  H+L+   EL + V
+Sbjct  434  LRRMMWNYVGIV-----RTNKRLERAQHRIALLREEIAEYYANFRVSHDLL---ELRNLV  485
+
+Query  77   WTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+              A   V   L R E+R  G ++  DYP+
+Sbjct  486  EAASLIVDSALSRHESR--GLHFSRDYPQ  512
+
+
+>sp|P08065|SDHA_BACSU Succinate dehydrogenase flavoprotein subunit 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=sdhA PE=3 
+SV=4
+Length=586
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 28/119 (24%), Positives = 51/119 (43%), Gaps = 8/119 (7%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELV  73
+            L K + E+     T+ + N+K+L+   + +  L E  +K+   D  +          +  
+Sbjct  451  LHKELGEWMTANVTVVRHNDKLLKTD-DKIQELMERFKKININDTTKWSNQGAMFTRQFS  509
+
+Query  74   HRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKVP  132
+            + +  A         R E+R  G +Y+ DYPE ND+EW     +K+ +  +   FE   
+Sbjct  510  NMLQLARVITLGAYNRNESR--GAHYKPDYPERNDDEWLKTTMAKHVSPYEAPEFEYQD  566
+
+
+>sp|Q00711|SDHA_YEAST Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=SDH1 PE=1 SV=1
+Length=640
+
+ Score = 45.5 bits (106),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 18/81 (22%), Positives = 33/81 (41%), Gaps = 7/81 (9%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWELVHRVWTAEAHVRHMLFRK  90
+              +  L   +  +  +++  + +   D       +L+   EL + +  A         RK
+Sbjct  520  RTQSSLDEGVRNITAVEKTFDDVKTTDRSMIWNSDLVETLELQNLLTCASQTAVSAANRK  579
+
+Query  91   ETRWPGYYYRTDYPELNDEEW  111
+            E+R  G + R DYP  +DE W
+Sbjct  580  ESR--GAHAREDYPNRDDEHW  598
+
+
+>sp|Q9U3X4|SDHA_DICDI Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Dictyostelium discoideum 
+OX=44689 GN=sdhA PE=3 SV=1
+Length=626
+
+ Score = 45.5 bits (106),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 32/124 (26%), Positives = 50/124 (40%), Gaps = 13/124 (10%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEK-LAARDLH-----ELMRAW  70
+            + +QKIM   AA        + ++L+  +EL+      L   L   D       +L+ + 
+Sbjct  491  LEMQKIMQRNAAVF-----RDGQVLKEGVELIDKCARSLINDLKTTDRTMIWNTDLIESL  545
+
+Query  71   ELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEK  130
+            EL + +  A   +     RKE+R  G + R DY E +D  W     S  D    + T   
+Sbjct  546  ELQNLMTQAVLTMHSAEARKESR--GAHAREDYKERDDANWMKHTLSYLDVNTGKVTLNY  603
+
+Query  131  VPYV  134
+             P V
+Sbjct  604  RPVV  607
+
+
+>sp|Q94AY1|NADB_ARATH L-aspartate oxidase, chloroplastic OS=Arabidopsis 
+thaliana OX=3702 GN=AO PE=1 SV=1
+Length=651
+
+ Score = 45.1 bits (105),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 23/118 (19%), Positives = 45/118 (38%), Gaps = 13/118 (11%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLA-----ARDLHELMRAWELV  73
+            LQ++M +Y   +      +   L  A   +A L+   E         + +  L    E+ 
+Sbjct  531  LQEVMWKYVGIV-----RSTIRLTTAERKIAELEAKWETFLFEHGWEQTVVALEAC-EMR  584
+
+Query  74   HRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKV  131
+            +    A+  V   L R E+R  G +Y TD+P + + +    +          W+  ++
+Sbjct  585  NLFCCAKLVVSSALARHESR--GLHYMTDFPFVEESKRIPTIILPSSPTTASWSSRRL  640
+
+
+>sp|P17412|FRDA_WOLSU Fumarate reductase flavoprotein subunit 
+OS=Wolinella succinogenes (strain ATCC 29543 / DSM 1740 / LMG 
+7466 / NCTC 11488 / FDC 602W) OX=273121 GN=frdA PE=1 SV=3
+Length=656
+
+ Score = 44.3 bits (103),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/99 (24%), Positives = 46/99 (46%), Gaps = 12/99 (12%)
+
+Query  18   RLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARD--LH---ELMRAWEL  72
+            R++ +MD+           +   L++A++ L  L +  + +  ++  LH   EL  A+ +
+Sbjct  469  RMKDVMDDNVGIF-----RDGPHLEKAVKELEELYKKSKNVGIKNKRLHANPELEEAYRV  523
+
+Query  73   VHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEW  111
+               +  A    +  L R E+R  G + R DYP+ +D  W
+Sbjct  524  PMMLKVALCVAKGALDRTESR--GAHNREDYPKRDDINW  560
+
+
+>sp|Q9UTJ7|SDHA_SCHPO Probable succinate dehydrogenase [ubiquinone] 
+flavoprotein subunit, mitochondrial OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=sdh1 PE=2 
+SV=1
+Length=641
+
+ Score = 44.3 bits (103),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/81 (30%), Positives = 39/81 (48%), Gaps = 7/81 (9%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDL-----HELMRAWELVHRVWTAEAHVRHMLFRK  90
+              E+ LQ  ++ +A +    + +  RD       +L+ A EL + +  A       L RK
+Sbjct  521  RMEETLQEGVKNIARVDGTYKDIGIRDRGLIWNTDLVEALELRNLLTCAVQTANAALNRK  580
+
+Query  91   ETRWPGYYYRTDYPELNDEEW  111
+            E+R  G + R DYPE +D+ W
+Sbjct  581  ESR--GAHAREDYPERDDKNW  599
+
+
+>sp|P74562|NADB_SYNY3 L-aspartate oxidase OS=Synechocystis sp. 
+(strain PCC 6803 / Kazusa) OX=1111708 GN=nadB PE=3 SV=1
+Length=553
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/74 (34%), Positives = 39/74 (53%), Gaps = 5/74 (7%)
+
+Query  47   LLAFLKEDLE-KLAARDLHELMRAW-ELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYP  104
+            LLA L ED +  L+   L+E M+ W E  + +  A+  +   LFR+E+R  G +YR D P
+Sbjct  470  LLAHLPEDQKISLSGPGLNEFMQLWAETHNLLDIAQLILTSALFREESR--GGHYRLDCP  527
+
+Query  105  ELNDEEWKCFVCSK  118
+            +    EW+     +
+Sbjct  528  D-TKREWQSHTVIE  540
+
+
+>sp|O82663|SDHA1_ARATH Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 1, mitochondrial OS=Arabidopsis thaliana 
+OX=3702 GN=SDH1-1 PE=1 SV=1
+Length=634
+
+ Score = 43.5 bits (101),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 25/112 (22%), Positives = 46/112 (41%), Gaps = 12/112 (11%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWE  71
+            + +Q+IM   AA         ++ L+   +L+    E    +  +D       +L+   E
+Sbjct  503  LNMQRIMQNNAAVF-----RTQETLEEGCQLIDKAWESFGDVQVKDRSMIWNSDLIETLE  557
+
+Query  72   LVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEK  123
+            L + +  A   +     RKE+R  G + R D+ +  D EW       ++ EK
+Sbjct  558  LENLLINASITMHSAEARKESR--GAHAREDFTKREDGEWMKHTLGYWEDEK  607
+
+
+>sp|Q59661|SDHA_PARDE Succinate dehydrogenase flavoprotein subunit 
+OS=Paracoccus denitrificans OX=266 GN=sdhA PE=3 SV=1
+Length=600
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 22/82 (27%), Positives = 35/82 (43%), Gaps = 7/82 (9%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWELVHRVWTAEAHVRHMLFRK  90
+              +K L   ++ +  +   L  L   D       +LM   EL + +  A A +     RK
+Sbjct  477  RTDKTLAEGVDKMRVIAGKLSDLKVTDRSLIWNSDLMETLELTNLMPNALATIVAAEARK  536
+
+Query  91   ETRWPGYYYRTDYPELNDEEWK  112
+            E+R  G +   DYPE +D  W+
+Sbjct  537  ESR--GAHAHEDYPERDDANWR  556
+
+
+>sp|Q6ZDY8|SDHA_ORYSJ Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Oryza sativa subsp. japonica 
+OX=39947 GN=SDH1 PE=1 SV=1
+Length=630
+
+ Score = 41.6 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 22/100 (22%), Positives = 43/100 (43%), Gaps = 12/100 (12%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWE  71
+            + +Q++M   AA         ++ L+   +L+    E    +   D       +L+   E
+Sbjct  499  LNMQRVMQNNAAVF-----RTQETLEEGCKLITKAWESYHDVKISDRSLIWNSDLIETIE  553
+
+Query  72   LVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEW  111
+            L + +  A   +     RKE+R  G + R D+ + +DE+W
+Sbjct  554  LENLLINACITMHSAEARKESR--GAHAREDFTKRDDEQW  591
+
+
+>sp|Q9ZPX5|SDHA2_ARATH Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 2, mitochondrial OS=Arabidopsis thaliana 
+OX=3702 GN=SDH1-2 PE=1 SV=1
+Length=632
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/100 (20%), Positives = 41/100 (41%), Gaps = 12/100 (12%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWE  71
+            + +Q++M   AA         ++ L+   +L+    +    +   D       +L+   E
+Sbjct  501  LNMQRVMQNNAAVF-----RTQETLEEGCDLIDKTWDSFGDVKVTDRSMIWNSDLIETME  555
+
+Query  72   LVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEW  111
+            L + +  A   +     RKE+R  G + R D+ + +D  W
+Sbjct  556  LENLLVNACITMHSAEARKESR--GAHAREDFTKRDDANW  593
+
+
+>sp|P47052|SDHX_YEAST Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 2, mitochondrial OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=YJL045W PE=3 SV=1
+Length=634
+
+ Score = 41.2 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/107 (22%), Positives = 41/107 (38%), Gaps = 10/107 (9%)
+
+Query  36   TNEKMLQRALELLAFLKEDLEKLAARDLH-----ELMRAWELVHRVWTAEAHVRHMLFRK  90
+              +  L   +  +  + +  E +   D       +L+   EL + +  A         RK
+Sbjct  514  RTQDTLDEGVRNITEVDKTFEDVHVSDKSMIWNSDLVETLELQNLLTCATQTAVSASKRK  573
+
+Query  91   ETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKVPYVQVI  137
+            E+R  G + R DY + +D  W+    S    +K   T  K+ Y  VI
+Sbjct  574  ESR--GAHAREDYAKRDDVNWRKHTLS---WQKGTSTPVKIKYRNVI  615
+
+
+>sp|P38032|NADB_BACSU L-aspartate oxidase OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=nadB PE=3 SV=1
+Length=531
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 21/100 (21%), Positives = 41/100 (41%), Gaps = 12/100 (12%)
+
+Query  32   TIYKTNEKMLQRALEL--LAFLKEDLEKLAARDLHELMRAWELVHRVWTAEAHVRHMLFR  89
+            +I +    +++ ++ L  L F + +++ +  R +       EL H   TA+      L R
+Sbjct  423  SILREQSSLIELSIWLHTLPFQEVNVKDITIRQM-------ELSHLWQTAKLMTFSALLR  475
+
+Query  90   KETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFE  129
+            +E+R  G ++RTD+P      W+                E
+Sbjct  476  EESR--GAHFRTDFPHAEVS-WQGRQIVHTKKGTKIRKNE  512
+
+
+>sp|O57765|NADB_PYRHO L-aspartate oxidase OS=Pyrococcus horikoshii 
+(strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 
+/ OT-3) OX=70601 GN=nadB PE=3 SV=1
+Length=464
+
+ Score = 40.1 bits (92),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 21/91 (23%), Positives = 39/91 (43%), Gaps = 25/91 (27%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            +++++  +A  +      +E  L+  L  L  ++ D E+L                    
+Sbjct  388  IREVLWNHAGIV-----RDEWSLREGLRKLKEIEVD-ERLKL-----------------V  424
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+            A+A +   L R+E+R  G +YR DYP +  E
+Sbjct  425  AKAVIISALKREESR--GAHYRKDYPFMRKE  453
+
+
+>sp|Q8TZL4|NADB_PYRFU L-aspartate oxidase OS=Pyrococcus furiosus 
+(strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=nadB PE=3 SV=1
+Length=464
+
+ Score = 39.3 bits (90),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 42/94 (45%), Gaps = 26/94 (28%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            ++ IM  +A  I       E+ L+  L+ L  ++ D  ++                    
+Sbjct  385  VRDIMWNHAGII-----RREESLRLGLKKLEKVEAD-PRVKI-----------------L  421
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWK  112
+            AEA ++  L R+E+R  G +YR DYP  + EE++
+Sbjct  422  AEAVLKCALAREESR--GAHYREDYP-YSREEFR  452
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008933090
+Results from round 3
+
+
+Query= d1jnra1
+
+Length=141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha OS=D...  179     1e-52
+sp|P31038|SDHA_RICPR Succinate dehydrogenase flavoprotein subunit...  138     7e-38
+sp|Q92J97|SDHA_RICCN Succinate dehydrogenase flavoprotein subunit...  137     2e-37
+sp|Q68XN9|SDHA_RICTY Succinate dehydrogenase flavoprotein subunit...  136     3e-37
+sp|Q4UJM1|SDHA_RICFE Succinate dehydrogenase flavoprotein subunit...  135     5e-37
+sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit...  135     6e-37
+sp|P47052|SDHX_YEAST Succinate dehydrogenase [ubiquinone] flavopr...  132     1e-35
+sp|Q9ZPX5|SDHA2_ARATH Succinate dehydrogenase [ubiquinone] flavop...  130     6e-35
+sp|O82663|SDHA1_ARATH Succinate dehydrogenase [ubiquinone] flavop...  129     2e-34
+sp|Q00711|SDHA_YEAST Succinate dehydrogenase [ubiquinone] flavopr...  128     3e-34
+sp|Q6ZDY8|SDHA_ORYSJ Succinate dehydrogenase [ubiquinone] flavopr...  127     9e-34
+sp|Q9U3X4|SDHA_DICDI Succinate dehydrogenase [ubiquinone] flavopr...  127     1e-33
+sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase...  125     2e-33
+sp|Q9UTJ7|SDHA_SCHPO Probable succinate dehydrogenase [ubiquinone...  124     1e-32
+sp|Q59661|SDHA_PARDE Succinate dehydrogenase flavoprotein subunit...  118     1e-30
+sp|G4V4G6|SDHA_SERS3 Succinate dehydrogenase flavoprotein subunit...  117     2e-30
+sp|O06913|FRDA_HELPY Fumarate reductase flavoprotein subunit OS=H...  115     1e-29
+sp|Q6Z836|NADB_ORYSJ L-aspartate oxidase, chloroplastic OS=Oryza ...  115     2e-29
+sp|Q9ZMP0|FRDA_HELPJ Fumarate reductase flavoprotein subunit OS=H...  114     3e-29
+sp|Q8ZQU3|SDHA_SALTY Succinate dehydrogenase flavoprotein subunit...  114     4e-29
+sp|P08065|SDHA_BACSU Succinate dehydrogenase flavoprotein subunit...  112     1e-28
+sp|Q8XA23|NADB_ECO57 L-aspartate oxidase OS=Escherichia coli O157...  111     3e-28
+sp|D9PU00|TFRA_METTM Fumarate reductase (CoM/CoB) subunit A OS=Me...  110     4e-28
+sp|P10902|NADB_ECOLI L-aspartate oxidase OS=Escherichia coli (str...  110     5e-28
+sp|Q94AY1|NADB_ARATH L-aspartate oxidase, chloroplastic OS=Arabid...  110     5e-28
+sp|P0AC41|SDHA_ECOLI Succinate dehydrogenase flavoprotein subunit...  110     7e-28
+sp|P0AC42|SDHA_ECOL6 Succinate dehydrogenase flavoprotein subunit...  110     7e-28
+sp|P0AC43|SDHA_ECO57 Succinate dehydrogenase flavoprotein subunit...  110     7e-28
+sp|Q8ZD80|NADB_YERPE L-aspartate oxidase OS=Yersinia pestis OX=63...  109     1e-27
+sp|Q8ZMX9|NADB_SALTY L-aspartate oxidase OS=Salmonella typhimuriu...  108     3e-27
+sp|Q8Z4K0|NADB_SALTI L-aspartate oxidase OS=Salmonella typhi OX=9...  108     3e-27
+sp|P17412|FRDA_WOLSU Fumarate reductase flavoprotein subunit OS=W...  108     5e-27
+sp|Q8XWM7|NADB1_RALSO L-aspartate oxidase 1 OS=Ralstonia solanace...  100     2e-24
+sp|Q51363|NADB_PSEAE L-aspartate oxidase OS=Pseudomonas aeruginos...  96.7    6e-23
+sp|P38032|NADB_BACSU L-aspartate oxidase OS=Bacillus subtilis (st...  82.1    7e-18
+sp|P74562|NADB_SYNY3 L-aspartate oxidase OS=Synechocystis sp. (st...  79.8    4e-17
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8K2B3|SDHA_MOUSE Succinate dehydrogenase [ubiquinone] flavopr...  115     2e-29
+sp|Q7ZVF3|SDHA_DANRE Succinate dehydrogenase [ubiquinone] flavopr...  114     2e-29
+sp|Q8HXW3|SDHA_MACFA Succinate dehydrogenase [ubiquinone] flavopr...  113     5e-29
+sp|P31040|SDHA_HUMAN Succinate dehydrogenase [ubiquinone] flavopr...  113     6e-29
+sp|Q5R616|SDHA_PONAB Succinate dehydrogenase [ubiquinone] flavopr...  113     9e-29
+sp|Q9YHT1|SDHA_CHICK Succinate dehydrogenase [ubiquinone] flavopr...  110     9e-28
+sp|Q0QF01|SDHA_PIG Succinate dehydrogenase [ubiquinone] flavoprot...  109     1e-27
+sp|Q920L2|SDHA_RAT Succinate dehydrogenase [ubiquinone] flavoprot...  108     5e-27
+sp|Q94523|SDHA_DROME Succinate dehydrogenase [ubiquinone] flavopr...  107     7e-27
+sp|Q28ED0|SDHA_XENTR Succinate dehydrogenase [ubiquinone] flavopr...  107     9e-27
+sp|Q09508|SDHA_CAEEL Succinate dehydrogenase [ubiquinone] flavopr...  107     1e-26
+sp|Q6PA58|SDHAA_XENLA Succinate dehydrogenase [ubiquinone] flavop...  106     2e-26
+sp|Q801S2|SDHAB_XENLA Succinate dehydrogenase [ubiquinone] flavop...  105     3e-26
+sp|P31039|SDHA_BOVIN Succinate dehydrogenase [ubiquinone] flavopr...  104     8e-26
+sp|Q9KPA4|NADB_VIBCH L-aspartate oxidase OS=Vibrio cholerae serot...  102     5e-25
+sp|Q0QF17|SDHA_MESAU Succinate dehydrogenase [ubiquinone] flavopr...  97.9    2e-23
+sp|P51054|SDHA_COXBU Succinate dehydrogenase flavoprotein subunit...  94.4    4e-22
+sp|P44894|FRDA_HAEIN Fumarate reductase flavoprotein subunit OS=H...  90.5    8e-21
+sp|V3TQ67|FRDA_SERS3 Fumarate reductase flavoprotein subunit OS=S...  87.1    1e-19
+sp|P9WN91|FRDA_MYCTU Fumarate reductase flavoprotein subunit OS=M...  85.5    4e-19
+sp|P9WN90|FRDA_MYCTO Fumarate reductase flavoprotein subunit OS=M...  85.5    4e-19
+sp|P64175|FRDA_MYCBO Fumarate reductase flavoprotein subunit OS=M...  85.5    4e-19
+sp|P00363|FRDA_ECOLI Fumarate reductase flavoprotein subunit OS=E...  84.4    1e-18
+sp|P20922|FRDA_PROVU Fumarate reductase flavoprotein subunit OS=P...  83.2    2e-18
+sp|Q7M827|MFRA_WOLSU 8-methylmenaquinol:fumarate reductase flavop...  75.5    1e-15
+sp|Q92R32|NADB_RHIME L-aspartate oxidase OS=Rhizobium meliloti (s...  64.0    1e-11
+sp|Q9X8N8|NADB_STRCO L-aspartate oxidase OS=Streptomyces coelicol...  62.0    6e-11
+sp|O66973|NADB_AQUAE L-aspartate oxidase OS=Aquifex aeolicus (str...  61.7    1e-10
+sp|Q8YXJ6|NADB_NOSS1 L-aspartate oxidase OS=Nostoc sp. (strain PC...  61.3    1e-10
+sp|Q8TZL4|NADB_PYRFU L-aspartate oxidase OS=Pyrococcus furiosus (...  60.5    2e-10
+sp|Q8XQG4|NADB2_RALSO L-aspartate oxidase 2 OS=Ralstonia solanace...  59.0    8e-10
+sp|O57765|NADB_PYRHO L-aspartate oxidase OS=Pyrococcus horikoshii...  57.4    3e-09
+sp|Q59767|NADB_RHORU L-aspartate oxidase (Fragment) OS=Rhodospiri...  54.3    3e-08
+sp|Q9KDJ5|NADB_BACHD L-aspartate oxidase OS=Bacillus halodurans (...  53.6    6e-08
+sp|Q9V2R0|NADB_PYRAB L-aspartate oxidase OS=Pyrococcus abyssi (st...  52.8    9e-08
+sp|Q97ZC5|NADB_SACS2 L-aspartate oxidase OS=Saccharolobus solfata...  52.0    2e-07
+sp|Q972D2|NADB_SULTO L-aspartate oxidase OS=Sulfurisphaera tokoda...  50.9    5e-07
+sp|Q9HNZ0|NADB_HALSA L-aspartate oxidase OS=Halobacterium salinar...  47.4    1e-05
+sp|Q9A4C3|NADB_CAUVC L-aspartate oxidase OS=Caulobacter vibrioide...  46.2    2e-05
+sp|Q98AV8|NADB_RHILO L-aspartate oxidase OS=Mesorhizobium japonic...  42.4    5e-04
+sp|Q9PC57|NADB_XYLFA L-aspartate oxidase OS=Xylella fastidiosa (s...  40.9    0.002
+
+
+>sp|T2G6Z9|APRA_DESGG Adenylylsulfate reductase subunit alpha 
+OS=Desulfovibrio gigas (strain ATCC 19364 / DSM 1382 / NCIMB 
+9332 / VKM B-1759) OX=1121448 GN=aprA PE=1 SV=1
+Length=666
+
+ Score = 179 bits (454),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 70/137 (51%), Positives = 91/137 (66%), Gaps = 0/137 (0%)
+
+Query  1    TADDVNPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAA  60
+            T   VNPEYI P   ++RL K  DEY  G+ T Y T++ +L     L+  L+ED  KLAA
+Sbjct  526  TCPVVNPEYISPKNFMMRLIKCTDEYGGGVGTYYNTSKALLDTGFWLMEMLEEDSLKLAA  585
+
+Query  61   RDLHELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYD  120
+            RDLHEL+R WE  HR+WT   H++H+ FR+E+R+PG+YYR D+  L+D +WKCFV SKYD
+Sbjct  586  RDLHELLRCWENYHRLWTVRLHMQHIAFREESRYPGFYYRADFLGLDDSKWKCFVNSKYD  645
+
+Query  121  AEKDEWTFEKVPYVQVI  137
+              K E    K PY Q+I
+Sbjct  646  PAKKETKIFKKPYYQII  662
+
+
+>sp|P31038|SDHA_RICPR Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia prowazekii (strain Madrid E) OX=272947 GN=sdhA 
+PE=3 SV=1
+Length=596
+
+ Score = 138 bits (347),  Expect = 7e-38, Method: Composition-based stats.
+ Identities = 28/131 (21%), Positives = 53/131 (40%), Gaps = 13/131 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              IL     +++Q+ M  + +         +K+L   + +++ ++   + +   D     
+Sbjct  455  GNILVADLRLKMQRTMQSHVSVF-----RTQKLLDEGVGMISEIRNRYKDIKINDKSLIW  509
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND +W     S  D  
+Sbjct  510  NSDLVEALELDNLLDQALVTVCSAAARKESR--GAHAREDYPDRNDRDWIKHTLSSIDDS  567
+
+Query  123  KDEWTFEKVPY  133
+                  +  P 
+Sbjct  568  GKVV-LDYKPV  577
+
+
+>sp|Q92J97|SDHA_RICCN Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) OX=272944 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 137 bits (344),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 29/131 (22%), Positives = 55/131 (42%), Gaps = 13/131 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              IL  +  +++Q+ M  +A+         +++L     +++ ++   + +   D     
+Sbjct  455  GNILVAELRLKMQRTMQSHASVF-----RTQEVLDEGAGMISEIRSGYKDIKINDKSLIW  509
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+ A EL + +  A   V     RKE+R  G + R DYP+ NDE+W     S  D  
+Sbjct  510  NSDLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDEDWMKHTLSSIDEA  567
+
+Query  123  KDEWTFEKVPY  133
+                  +  P 
+Sbjct  568  GKVV-LDYKPV  577
+
+
+>sp|Q68XN9|SDHA_RICTY Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) OX=257363 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 136 bits (343),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 50/123 (41%), Gaps = 12/123 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              +L     +++Q+ M  + +         +++L     +++ ++   + +   D     
+Sbjct  455  GNVLVADLRLQMQRTMQSHVSVF-----RTQELLDEGARMISEIRNRYKDIKINDKSLIW  509
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND +W     S  D  
+Sbjct  510  NSDLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDIDWIKHTLSSIDDS  567
+
+Query  123  KDE  125
+               
+Sbjct  568  GQI  570
+
+
+>sp|Q4UJM1|SDHA_RICFE Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 
+GN=sdhA PE=3 SV=1
+Length=596
+
+ Score = 135 bits (341),  Expect = 5e-37, Method: Composition-based stats.
+ Identities = 28/131 (21%), Positives = 53/131 (40%), Gaps = 13/131 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              IL     +++Q+ M  +A+         +++L     +++ ++   + +   D     
+Sbjct  455  GNILVADLRLKMQRTMQSHASVF-----RTQEVLDEGAGMISEIRNGYKDIKINDKSLIW  509
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND +W     S  D  
+Sbjct  510  NSDLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDGDWMKHTLSSIDEA  567
+
+Query  123  KDEWTFEKVPY  133
+                  +  P 
+Sbjct  568  GKIV-IDYKPV  577
+
+
+>sp|Q1RHB9|SDHA_RICBR Succinate dehydrogenase flavoprotein subunit 
+OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=sdhA 
+PE=3 SV=1
+Length=596
+
+ Score = 135 bits (340),  Expect = 6e-37, Method: Composition-based stats.
+ Identities = 29/131 (22%), Positives = 54/131 (41%), Gaps = 13/131 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              I      +++Q+ M  +A+         +++L    E+++ ++   + +   D     
+Sbjct  455  GNISVADLRLKMQRTMQSHASVF-----RTQEVLDEGAEMISEIRSGYKDIKVNDKSLIW  509
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+ A EL + +  A   V     RKE+R  G + R DYP+ ND+EW     S  D  
+Sbjct  510  NSDLVEALELDNLLDQALVTVYSAAARKESR--GAHAREDYPDRNDKEWMQHTLSGVDEA  567
+
+Query  123  KDEWTFEKVPY  133
+                  +  P 
+Sbjct  568  GKVV-LDYKPV  577
+
+
+>sp|P47052|SDHX_YEAST Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 2, mitochondrial OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=YJL045W PE=3 SV=1
+Length=634
+
+ Score = 132 bits (332),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 27/135 (20%), Positives = 50/135 (37%), Gaps = 15/135 (11%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              +   Q  + +Q+ M +  +         +  L   +  +  + +  E +   D     
+Sbjct  491  GSLKTSQIRLNMQRTMQKDVSVF-----RTQDTLDEGVRNITEVDKTFEDVHVSDKSMIW  545
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+   EL + +  A         RKE+R  G + R DY + +D  W+    S    +
+Sbjct  546  NSDLVETLELQNLLTCATQTAVSASKRKESR--GAHAREDYAKRDDVNWRKHTLS---WQ  600
+
+Query  123  KDEWTFEKVPYVQVI  137
+            K   T  K+ Y  VI
+Sbjct  601  KGTSTPVKIKYRNVI  615
+
+
+>sp|Q9ZPX5|SDHA2_ARATH Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 2, mitochondrial OS=Arabidopsis thaliana 
+OX=3702 GN=SDH1-2 PE=1 SV=1
+Length=632
+
+ Score = 130 bits (327),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 23/131 (18%), Positives = 48/131 (37%), Gaps = 14/131 (11%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              +   +  + +Q++M   AA         ++ L+   +L+    +    +   D     
+Sbjct  492  GSLPTSKIRLNMQRVMQNNAAVF-----RTQETLEEGCDLIDKTWDSFGDVKVTDRSMIW  546
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+   EL + +  A   +     RKE+R  G + R D+ + +D  W       +  E
+Sbjct  547  NSDLIETMELENLLVNACITMHSAEARKESR--GAHAREDFTKRDDANWMKHTLGYW--E  602
+
+Query  123  KDEWTFEKVPY  133
+            +     E  P 
+Sbjct  603  EGNVKLEYRPV  613
+
+
+>sp|O82663|SDHA1_ARATH Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit 1, mitochondrial OS=Arabidopsis thaliana 
+OX=3702 GN=SDH1-1 PE=1 SV=1
+Length=634
+
+ Score = 129 bits (323),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 27/134 (20%), Positives = 51/134 (38%), Gaps = 17/134 (13%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              +      + +Q+IM   AA         ++ L+   +L+    E    +  +D     
+Sbjct  494  GSLPTSTIRLNMQRIMQNNAAVF-----RTQETLEEGCQLIDKAWESFGDVQVKDRSMIW  548
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+   EL + +  A   +     RKE+R  G + R D+ +  D EW       ++ E
+Sbjct  549  NSDLIETLELENLLINASITMHSAEARKESR--GAHAREDFTKREDGEWMKHTLGYWEDE  606
+
+Query  123  KDEWTFEKVPYVQV  136
+            K      ++ Y  V
+Sbjct  607  K-----VRLDYRPV  615
+
+
+>sp|Q00711|SDHA_YEAST Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=SDH1 PE=1 SV=1
+Length=640
+
+ Score = 128 bits (322),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 25/136 (18%), Positives = 51/136 (38%), Gaps = 15/136 (11%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+                  +  + +++ M +  +         +  L   +  +  +++  + +   D     
+Sbjct  497  GSRSTAEIRMNMKQTMQKDVSVF-----RTQSSLDEGVRNITAVEKTFDDVKTTDRSMIW  551
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+   EL + +  A         RKE+R  G + R DYP  +DE W     S    +
+Sbjct  552  NSDLVETLELQNLLTCASQTAVSAANRKESR--GAHAREDYPNRDDEHWMKHTLS---WQ  606
+
+Query  123  KDEWTFEKVPYVQVIE  138
+            KD      + Y +VI+
+Sbjct  607  KDVAAPVTLKYRRVID  622
+
+
+>sp|Q6ZDY8|SDHA_ORYSJ Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Oryza sativa subsp. japonica 
+OX=39947 GN=SDH1 PE=1 SV=1
+Length=630
+
+ Score = 127 bits (318),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 24/121 (20%), Positives = 49/121 (40%), Gaps = 12/121 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              +   +  + +Q++M   AA         ++ L+   +L+    E    +   D     
+Sbjct  490  GSLPTSKIRLNMQRVMQNNAAVF-----RTQETLEEGCKLITKAWESYHDVKISDRSLIW  544
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAE  122
+              +L+   EL + +  A   +     RKE+R  G + R D+ + +DE+W       ++ E
+Sbjct  545  NSDLIETIELENLLINACITMHSAEARKESR--GAHAREDFTKRDDEQWMKHSLGYWENE  602
+
+Query  123  K  123
+            K
+Sbjct  603  K  603
+
+
+>sp|Q9U3X4|SDHA_DICDI Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Dictyostelium discoideum 
+OX=44689 GN=sdhA PE=3 SV=1
+Length=626
+
+ Score = 127 bits (318),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 32/131 (24%), Positives = 51/131 (39%), Gaps = 13/131 (10%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDL-EKLAARDLH-----  64
+               +  + +QKIM   AA        + ++L+  +EL+      L   L   D       
+Sbjct  485  STAEIRLEMQKIMQRNAAVF-----RDGQVLKEGVELIDKCARSLINDLKTTDRTMIWNT  539
+
+Query  65   ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+            +L+ + EL + +  A   +     RKE+R  G + R DY E +D  W     S  D    
+Sbjct  540  DLIESLELQNLMTQAVLTMHSAEARKESR--GAHAREDYKERDDANWMKHTLSYLDVNTG  597
+
+Query  125  EWTFEKVPYVQ  135
+            + T    P V 
+Sbjct  598  KVTLNYRPVVS  608
+
+
+>sp|Q60356|Y033_METJA Uncharacterized FAD-dependent oxidoreductase 
+MJ0033 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0033 PE=3 SV=1
+Length=539
+
+ Score = 125 bits (314),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 37/126 (29%), Positives = 66/126 (52%), Gaps = 12/126 (10%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELM  67
+              +  +  +  L+K+M +Y + I      NE  L++ALE +  ++ +++ +    + +L 
+Sbjct  418  GDLNVYNLIEDLRKVMWDYVSII-----RNEDGLKKALEKIDEIERNIDNVKVNGIIDLQ  472
+
+Query  68   RAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWT  127
+              +EL + V  A+   +  L+RKE+R  G +YR D+PE   EEW+  +  K    K  W 
+Sbjct  473  NYFELKNMVVVAKLVTKSALYRKESR--GAHYREDFPE-TKEEWRGNIIIK---GKKMW-  525
+
+Query  128  FEKVPY  133
+            FEK+ Y
+Sbjct  526  FEKLDY  531
+
+
+>sp|Q9UTJ7|SDHA_SCHPO Probable succinate dehydrogenase [ubiquinone] 
+flavoprotein subunit, mitochondrial OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=sdh1 PE=2 
+SV=1
+Length=641
+
+ Score = 124 bits (310),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 29/123 (24%), Positives = 50/123 (41%), Gaps = 12/123 (10%)
+
+Query  14   QGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL-----HELMR  68
+            +  + +QK M    +         E+ LQ  ++ +A +    + +  RD       +L+ 
+Sbjct  504  EIRLDMQKTMQRDVSVF-----RMEETLQEGVKNIARVDGTYKDIGIRDRGLIWNTDLVE  558
+
+Query  69   AWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTF  128
+            A EL + +  A       L RKE+R  G + R DYPE +D+ W     +      D  T 
+Sbjct  559  ALELRNLLTCAVQTANAALNRKESR--GAHAREDYPERDDKNWIKHTLTWQHKTGDPVTL  616
+
+Query  129  EKV  131
+            +  
+Sbjct  617  KYR  619
+
+
+>sp|Q59661|SDHA_PARDE Succinate dehydrogenase flavoprotein subunit 
+OS=Paracoccus denitrificans OX=266 GN=sdhA PE=3 SV=1
+Length=600
+
+ Score = 118 bits (295),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 28/132 (21%), Positives = 48/132 (36%), Gaps = 14/132 (11%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH--  64
+               +      + +Q+ M   AA         +K L   ++ +  +   L  L   D    
+Sbjct  453  DGSVSTADLRLEMQRTMQADAAVF-----RTDKTLAEGVDKMRVIAGKLSDLKVTDRSLI  507
+
+Query  65   ---ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDA  121
+               +LM   EL + +  A A +     RKE+R  G +   DYPE +D  W+    +    
+Sbjct  508  WNSDLMETLELTNLMPNALATIVAAEARKESR--GAHAHEDYPERDDANWRKHSLAWI--  563
+
+Query  122  EKDEWTFEKVPY  133
+            E ++      P 
+Sbjct  564  EGNDVKLAYRPV  575
+
+
+>sp|G4V4G6|SDHA_SERS3 Succinate dehydrogenase flavoprotein subunit 
+OS=Serratia sp. (strain ATCC 39006) OX=104623 GN=sdhA PE=1 
+SV=1
+Length=588
+
+ Score = 117 bits (293),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 49/125 (39%), Gaps = 14/125 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL-----  66
+            P +    LQ  M    +            + + LE L  ++E L+     D         
+Sbjct  456  PVEIRKALQACMQHNFSVF-----REGDAMAKGLEELKVIRERLKNARLDDTSNDFNTQR  510
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEW  126
+            +   EL + + TA A      FR E+R  G + R DYP+ +D++W C     Y  + +  
+Sbjct  511  IECLELDNLMETAYATAVSANFRTESR--GAHSRFDYPDRDDDKWLCHTL--YQPQTESM  566
+
+Query  127  TFEKV  131
+            T  KV
+Sbjct  567  TRRKV  571
+
+
+>sp|O06913|FRDA_HELPY Fumarate reductase flavoprotein subunit 
+OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 
+GN=frdA PE=3 SV=2
+Length=714
+
+ Score = 115 bits (288),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 32/131 (24%), Positives = 55/131 (42%), Gaps = 13/131 (10%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-  64
+            N      ++   R++++MDE             K L+ AL+ L  L    + +  ++   
+Sbjct  484  NEGKEDVYEIRERMKEVMDEKVGVF-----REGKRLEEALKELQELYARSKNICVKNKVL  538
+
+Query  65   ----ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKY-  119
+                EL  A+     +  A    +  L R E+R  G + R DYP+ +DE+W     + + 
+Sbjct  539  HNNPELEDAYRTKKMLKLALCITQGALLRTESR--GAHTRIDYPKRDDEKWLNRTLASWP  596
+
+Query  120  DAEKDEWTFEK  130
+             AE+D  T E 
+Sbjct  597  SAEQDMPTIEY  607
+
+
+>sp|Q6Z836|NADB_ORYSJ L-aspartate oxidase, chloroplastic OS=Oryza 
+sativa subsp. japonica OX=39947 GN=Os02g0134400 PE=3 SV=1
+Length=645
+
+ Score = 115 bits (287),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 26/122 (21%), Positives = 51/122 (42%), Gaps = 13/122 (11%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAAR-----DLHELM  67
+             Q  + LQ IM EY   +      +   L+ A   ++ L+ + E+   R      +  + 
+Sbjct  523  KQARMELQSIMWEYVGIV-----RSTNRLKHAEWKISDLESEWEEFLFRRGWKPTMVGVE  577
+
+Query  68   RAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWT  127
+               E+ +    A+  V+  L R E+R  G ++  D+P L + + K  V      ++  W+
+Sbjct  578  TC-EMRNLFCCAKLVVKSALARHESR--GLHFTEDFPYLEESKRKPTVIFPTHIQELTWS  634
+
+Query  128  FE  129
+             +
+Sbjct  635  SK  636
+
+
+>sp|Q8K2B3|SDHA_MOUSE Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Mus musculus OX=10090 GN=Sdha 
+PE=1 SV=1
+Length=664
+
+ Score = 115 bits (287),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 34/151 (23%), Positives = 53/151 (35%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ   E ++ L  DL+ L   D    
+Sbjct  503  DGSIRTSELRLNMQKSMQNHAAVF-----RVGSVLQEGCEKISQLYGDLKHLKTFDRGMV  557
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  558  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRVDEYDYSKPIQGQQK  615
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D +  + T E  P + 
+Sbjct  616  KPFGEHWRKHTLSYVDIKTGKVTLEYRPVID  646
+
+
+>sp|Q7ZVF3|SDHA_DANRE Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Danio rerio OX=7955 GN=sdha 
+PE=2 SV=2
+Length=661
+
+ Score = 114 bits (286),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 27/150 (18%), Positives = 51/150 (34%), Gaps = 29/150 (19%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+                  +  + +QK M  +AA           +L+     +  + + ++ +   D     
+Sbjct  501  GSTRTSEIRLNMQKTMQSHAAVF-----RTGDVLKEGCVKMESVYKSMDDIKTFDRGIVW  555
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE-------------  109
+              +L+   EL + +  A   +     RKE+R  G + R D+ +  DE             
+Sbjct  556  NTDLVETLELQNLMLNAVQTIVSAEARKESR--GAHAREDFKDRVDEYDYSKPLQGQVKK  613
+
+Query  110  ----EWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                 W+    S  D E  + T E  P + 
+Sbjct  614  PFEQHWRKHTLSYVDPETGKVTLEYRPVID  643
+
+
+>sp|Q9ZMP0|FRDA_HELPJ Fumarate reductase flavoprotein subunit 
+OS=Helicobacter pylori (strain J99 / ATCC 700824) OX=85963 GN=frdA 
+PE=3 SV=1
+Length=714
+
+ Score = 114 bits (286),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 32/131 (24%), Positives = 55/131 (42%), Gaps = 13/131 (10%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-  64
+            N      ++   R++++MDE             K L+ AL+ L  L    + +  ++   
+Sbjct  484  NEGKEDVYEIRERMKEVMDEKVGVF-----REGKKLEEALKELQELYARSKNICVKNKVL  538
+
+Query  65   ----ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKY-  119
+                EL  A+     +  A    +  L R E+R  G + R DYP+ +DE+W     + + 
+Sbjct  539  HNNPELEDAYRTKKMLKLALCITQGALLRTESR--GAHTRIDYPKRDDEKWLNRTLASWP  596
+
+Query  120  DAEKDEWTFEK  130
+             AE+D  T E 
+Sbjct  597  SAEQDMPTIEY  607
+
+
+>sp|Q8ZQU3|SDHA_SALTY Succinate dehydrogenase flavoprotein subunit 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 114 bits (284),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 30/125 (24%), Positives = 46/125 (37%), Gaps = 14/125 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL-----  66
+            P      LQ+ M    +            + + LE L  ++E L+     D         
+Sbjct  456  PVAIRKALQECMQHNFSVF-----REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQR  510
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEW  126
+            +   EL + + TA A      FR E+R  G + R D+PE +D  W C     Y  + +  
+Sbjct  511  VECLELDNLMETAYATAVSANFRTESR--GAHSRFDFPERDDANWLCHTL--YQPQTESM  566
+
+Query  127  TFEKV  131
+            T   V
+Sbjct  567  TRRSV  571
+
+
+>sp|Q8HXW3|SDHA_MACFA Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Macaca fascicularis OX=9541 
+GN=SDHA PE=2 SV=1
+Length=664
+
+ Score = 113 bits (283),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 33/151 (22%), Positives = 51/151 (34%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ     ++ L  DL+ L   D    
+Sbjct  503  DGSIRTSELRLSMQKSMQNHAAVF-----RVGSVLQEGCGKISKLYGDLKHLKTFDRGMV  557
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  558  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKARIDEYDYSKPIQGQQK  615
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D    + T E  P + 
+Sbjct  616  KPFEEHWRKHTLSYVDVSTGKVTLEYRPVID  646
+
+
+>sp|P31040|SDHA_HUMAN Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Homo sapiens OX=9606 GN=SDHA 
+PE=1 SV=2
+Length=664
+
+ Score = 113 bits (283),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 33/151 (22%), Positives = 51/151 (34%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ     ++ L  DL+ L   D    
+Sbjct  503  DGSIRTSELRLSMQKSMQNHAAVF-----RVGSVLQEGCGKISKLYGDLKHLKTFDRGMV  557
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  558  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRIDEYDYSKPIQGQQK  615
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D    + T E  P + 
+Sbjct  616  KPFEEHWRKHTLSYVDVGTGKVTLEYRPVID  646
+
+
+>sp|Q5R616|SDHA_PONAB Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Pongo abelii OX=9601 GN=SDHA 
+PE=2 SV=1
+Length=664
+
+ Score = 113 bits (282),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 33/151 (22%), Positives = 51/151 (34%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ     ++ L  DL+ L   D    
+Sbjct  503  DGSIRTSELRLSMQKSMQNHAAVF-----RVGSVLQEGCGKISKLYGDLKHLKTFDRGMV  557
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  558  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRIDEYDYSKPIQGQQK  615
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D    + T E  P + 
+Sbjct  616  KPFEEHWRKHTLSYVDVSTGKVTLEYRPVID  646
+
+
+>sp|P08065|SDHA_BACSU Succinate dehydrogenase flavoprotein subunit 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=sdhA PE=3 
+SV=4
+Length=586
+
+ Score = 112 bits (281),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 51/120 (43%), Gaps = 8/120 (7%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMR-----AWELV  73
+            L K + E+     T+ + N+K+L+   + +  L E  +K+   D  +          +  
+Sbjct  451  LHKELGEWMTANVTVVRHNDKLLKTD-DKIQELMERFKKININDTTKWSNQGAMFTRQFS  509
+
+Query  74   HRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFEKVPY  133
+            + +  A         R E+R  G +Y+ DYPE ND+EW     +K+ +  +   FE    
+Sbjct  510  NMLQLARVITLGAYNRNESR--GAHYKPDYPERNDDEWLKTTMAKHVSPYEAPEFEYQDV  567
+
+
+>sp|Q8XA23|NADB_ECO57 L-aspartate oxidase OS=Escherichia coli 
+O157:H7 OX=83334 GN=nadB PE=3 SV=1
+Length=540
+
+ Score = 111 bits (277),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 28/100 (28%), Positives = 46/100 (46%), Gaps = 8/100 (8%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL  66
+             E ++       L+  M +Y   +        K L+RAL  +  L++++++  A      
+Sbjct  431  DERVIIQHNWHELRLFMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYAHFRVS-  484
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPEL  106
+                EL + V  AE  VR  + RKE+R  G ++  DYPEL
+Sbjct  485  NNLLELRNLVQVAELIVRCAMMRKESR--GLHFTLDYPEL  522
+
+
+>sp|D9PU00|TFRA_METTM Fumarate reductase (CoM/CoB) subunit A OS=Methanothermobacter 
+marburgensis (strain ATCC BAA-927 / DSM 
+2133 / JCM 14651 / NBRC 100331 / OCM 82 / Marburg) OX=79929 
+GN=tfrA PE=1 SV=1
+Length=547
+
+ Score = 110 bits (276),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 32/118 (27%), Positives = 51/118 (43%), Gaps = 12/118 (10%)
+
+Query  3    DDVNPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARD  62
+            D V    I P +    L + M    A +      + + L+ A+  ++ L + L  L   +
+Sbjct  426  DMVRDGSIRPAEIRDELHEAMWSDVAIV-----RSRRSLESAMSRISTLMDKLGDLDVPE  480
+
+Query  63   L----HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVC  116
+                   L+ A EL + + TA    R  L R+E+R  G +YR D+PE    EWK  + 
+Sbjct  481  TGGFNSNLLEALELENMLITASLVTRSALIREESR--GSHYREDFPE-TRPEWKRSIL  535
+
+
+>sp|P10902|NADB_ECOLI L-aspartate oxidase OS=Escherichia coli 
+(strain K12) OX=83333 GN=nadB PE=1 SV=4
+Length=540
+
+ Score = 110 bits (275),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 28/100 (28%), Positives = 46/100 (46%), Gaps = 8/100 (8%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL  66
+             E ++       L+  M +Y   +        K L+RAL  +  L++++++  A      
+Sbjct  431  DERVVIQHNWHELRLFMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYAHFRVS-  484
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPEL  106
+                EL + V  AE  VR  + RKE+R  G ++  DYPEL
+Sbjct  485  NNLLELRNLVQVAELIVRCAMMRKESR--GLHFTLDYPEL  522
+
+
+>sp|Q94AY1|NADB_ARATH L-aspartate oxidase, chloroplastic OS=Arabidopsis 
+thaliana OX=3702 GN=AO PE=1 SV=1
+Length=651
+
+ Score = 110 bits (276),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 28/140 (20%), Positives = 51/140 (36%), Gaps = 16/140 (11%)
+
+Query  1    TADDVNPEYI-----LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDL  55
+            TA  +  E I     L  +    LQ++M +Y   +      +   L  A   +A L+   
+Sbjct  508  TARLLGDEVIAKIIALTKEVRRELQEVMWKYVGIV-----RSTIRLTTAERKIAELEAKW  562
+
+Query  56   EKLAAR----DLHELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEW  111
+            E              + A E+ +    A+  V   L R E+R  G +Y TD+P + + + 
+Sbjct  563  ETFLFEHGWEQTVVALEACEMRNLFCCAKLVVSSALARHESR--GLHYMTDFPFVEESKR  620
+
+Query  112  KCFVCSKYDAEKDEWTFEKV  131
+               +          W+  ++
+Sbjct  621  IPTIILPSSPTTASWSSRRL  640
+
+
+>sp|P0AC41|SDHA_ECOLI Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli (strain K12) OX=83333 GN=sdhA PE=1 
+SV=1
+Length=588
+
+ Score = 110 bits (275),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 47/125 (38%), Gaps = 14/125 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL-----  66
+            P      LQ+ M    +            + + LE L  ++E L+     D         
+Sbjct  456  PVAIRKALQECMQHNFSVF-----REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQR  510
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEW  126
+            +   EL + + TA A      FR E+R  G + R D+P+ +DE W C     Y  E +  
+Sbjct  511  VECLELDNLMETAYATAVSANFRTESR--GAHSRFDFPDRDDENWLCHSL--YLPESESM  566
+
+Query  127  TFEKV  131
+            T   V
+Sbjct  567  TRRSV  571
+
+
+>sp|P0AC42|SDHA_ECOL6 Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 110 bits (275),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 47/125 (38%), Gaps = 14/125 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL-----  66
+            P      LQ+ M    +            + + LE L  ++E L+     D         
+Sbjct  456  PVAIRKALQECMQHNFSVF-----REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQR  510
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEW  126
+            +   EL + + TA A      FR E+R  G + R D+P+ +DE W C     Y  E +  
+Sbjct  511  VECLELDNLMETAYATAVSANFRTESR--GAHSRFDFPDRDDENWLCHSL--YLPESESM  566
+
+Query  127  TFEKV  131
+            T   V
+Sbjct  567  TRRSV  571
+
+
+>sp|P0AC43|SDHA_ECO57 Succinate dehydrogenase flavoprotein subunit 
+OS=Escherichia coli O157:H7 OX=83334 GN=sdhA PE=3 SV=1
+Length=588
+
+ Score = 110 bits (275),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 47/125 (38%), Gaps = 14/125 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL-----  66
+            P      LQ+ M    +            + + LE L  ++E L+     D         
+Sbjct  456  PVAIRKALQECMQHNFSVF-----REGDAMAKGLEQLKVIRERLKNARLDDTSSEFNTQR  510
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEW  126
+            +   EL + + TA A      FR E+R  G + R D+P+ +DE W C     Y  E +  
+Sbjct  511  VECLELDNLMETAYATAVSANFRTESR--GAHSRFDFPDRDDENWLCHSL--YLPESESM  566
+
+Query  127  TFEKV  131
+            T   V
+Sbjct  567  TRRSV  571
+
+
+>sp|Q9YHT1|SDHA_CHICK Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Gallus gallus OX=9031 GN=SDHA 
+PE=1 SV=2
+Length=665
+
+ Score = 110 bits (275),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 33/151 (22%), Positives = 52/151 (34%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ   E L+ +  DL  L   D    
+Sbjct  504  DGTIRTSEARLNMQKTMQSHAAVF-----RTGSILQEGCEKLSQIYCDLAHLKTFDRGIV  558
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  559  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKFRIDDFDYSKPLQGQQK  616
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D +  + T +  P + 
+Sbjct  617  RPFEEHWRKHTLSYVDVKSGKVTLKYRPVID  647
+
+
+>sp|Q8ZD80|NADB_YERPE L-aspartate oxidase OS=Yersinia pestis OX=632 
+GN=nadB PE=3 SV=2
+Length=533
+
+ Score = 109 bits (273),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 27/100 (27%), Positives = 46/100 (46%), Gaps = 8/100 (8%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHE  65
+            + E ++       L+  M +Y   +        K L+RAL  +  L++++++  A     
+Sbjct  430  SDERVVIQHNWHELRLFMWDYVGIV-----RTTKRLERALRRINTLQQEIDEYYANFRIS  484
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+                 EL + V  AE  VR  + RKE+R  G +Y  DYP+
+Sbjct  485  -NNLLELRNLVQVAELIVRCAMERKESR--GLHYTLDYPD  521
+
+
+>sp|Q0QF01|SDHA_PIG Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Sus scrofa OX=9823 GN=SDHA 
+PE=1 SV=2
+Length=664
+
+ Score = 109 bits (273),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 33/150 (22%), Positives = 53/150 (35%), Gaps = 29/150 (19%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+              I   +  + +QK M  +AA           +LQ   E +  L  DL+ L   D     
+Sbjct  504  GTIRTSELRLSMQKSMQSHAAVF-----RVGSVLQEGCEKILRLYGDLQHLKTFDRGMVW  558
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND--------------  108
+              +L+   EL + +  A   +     RKE+R  G + R D+ E  D              
+Sbjct  559  NTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDFKERVDEYDYSKPIQGQQKK  616
+
+Query  109  ---EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+               E W+    S  D +  + + E  P + 
+Sbjct  617  PFQEHWRKHTLSYVDVKTGKVSLEYRPVID  646
+
+
+>sp|Q8ZMX9|NADB_SALTY L-aspartate oxidase OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=nadB 
+PE=1 SV=1
+Length=540
+
+ Score = 108 bits (270),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 26/99 (26%), Positives = 46/99 (46%), Gaps = 8/99 (8%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL  66
+             E ++       L+ +M +Y   +        K L+RAL  +  L++++++  A      
+Sbjct  431  DERVVIQHNWHELRLLMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYANFRVS-  484
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+                EL + V  AE  VR  + RKE+R  G ++  DYP+
+Sbjct  485  NNLLELRNLVQVAELIVRCAMMRKESR--GLHFTLDYPQ  521
+
+
+>sp|Q8Z4K0|NADB_SALTI L-aspartate oxidase OS=Salmonella typhi 
+OX=90370 GN=nadB PE=3 SV=1
+Length=540
+
+ Score = 108 bits (270),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 26/99 (26%), Positives = 46/99 (46%), Gaps = 8/99 (8%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL  66
+             E ++       L+ +M +Y   +        K L+RAL  +  L++++++  A      
+Sbjct  431  DERVVIQHNWHELRLLMWDYVGIV-----RTTKRLERALRRITMLQQEIDEYYANFRVS-  484
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+                EL + V  AE  VR  + RKE+R  G ++  DYP+
+Sbjct  485  NNLLELRNLVQVAELIVRCAMMRKESR--GLHFTLDYPQ  521
+
+
+>sp|Q920L2|SDHA_RAT Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Rattus norvegicus OX=10116 
+GN=Sdha PE=1 SV=1
+Length=656
+
+ Score = 108 bits (269),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 32/151 (21%), Positives = 53/151 (35%), Gaps = 29/151 (19%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               +   +  + +QK M  +AA           +LQ   E ++ L  DL+ L   D    
+Sbjct  495  DGSVRTSELRLSMQKSMQSHAAVF-----RVGSVLQEGCEKVSQLYGDLQHLKTFDRGMV  549
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND-------------  108
+               +L+   EL + +  A   +     RKE+R  G + R DY    D             
+Sbjct  550  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRIDEYDYSKPIEGQQK  607
+
+Query  109  ----EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                E W+    S  D +  + T +  P + 
+Sbjct  608  KPFAEHWRKHTLSYVDTKTGKVTLDYRPVID  638
+
+
+>sp|P17412|FRDA_WOLSU Fumarate reductase flavoprotein subunit 
+OS=Wolinella succinogenes (strain ATCC 29543 / DSM 1740 / LMG 
+7466 / NCTC 11488 / FDC 602W) OX=273121 GN=frdA PE=1 SV=3
+Length=656
+
+ Score = 108 bits (269),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 25/125 (20%), Positives = 53/125 (42%), Gaps = 13/125 (10%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----EL  66
+             ++   R++ +MD+           +   L++A++ L  L +  + +  ++       EL
+Sbjct  463  VFKIKNRMKDVMDDNVGIF-----RDGPHLEKAVKELEELYKKSKNVGIKNKRLHANPEL  517
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKY-DAEKDE  125
+              A+ +   +  A    +  L R E+R  G + R DYP+ +D  W     + + + E+  
+Sbjct  518  EEAYRVPMMLKVALCVAKGALDRTESR--GAHNREDYPKRDDINWLNRTLASWPNPEQTL  575
+
+Query  126  WTFEK  130
+             T E 
+Sbjct  576  PTLEY  580
+
+
+>sp|Q94523|SDHA_DROME Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Drosophila melanogaster 
+OX=7227 GN=SdhA PE=2 SV=3
+Length=661
+
+ Score = 107 bits (268),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 28/153 (18%), Positives = 54/153 (35%), Gaps = 32/153 (21%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH---  64
+              I      +++QK M  +AA        +  +LQ  +  +  + +  + +   D     
+Sbjct  502  GQITTADLRLKMQKTMQHHAAVF-----RDGPILQDGVNKMKEIYKQFKDIKVVDRSLIW  556
+
+Query  65   --ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE-------------  109
+              +L+   EL + +  A+  +     RKE+R  G + R D+    DE             
+Sbjct  557  NSDLVETLELQNLLANAQMTIVSAEARKESR--GAHAREDFKVREDEYDFSKPLDGQQKK  614
+
+Query  110  ----EWKCFVCSKYDAEKDEWTFEKVPYVQVIE  138
+                 W+    S    +  + T   + Y  VI+
+Sbjct  615  PMDQHWRKHTLSWVCNDNGDIT---LDYRNVID  644
+
+
+>sp|Q28ED0|SDHA_XENTR Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Xenopus tropicalis OX=8364 
+GN=sdha PE=2 SV=1
+Length=665
+
+ Score = 107 bits (267),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 29/150 (19%), Positives = 51/150 (34%), Gaps = 30/150 (20%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+                  +  + +QK M  +AA           +L+   E L+ +   ++ +   D     
+Sbjct  507  GSTRTSELRINMQKTMQNHAAVF-----RTGSVLKEGCEKLSAINSTMDDIKTFDRGIVW  561
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND--------------  108
+              +L+   EL + +  A   +     RKE+R  G + R DY    D              
+Sbjct  562  NTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRIDEYDYSKPIQGQQKK  619
+
+Query  109  ---EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+               E W+    S  D  K + + E  P + 
+Sbjct  620  SFSEHWRKHTLSYVD-GKGKVSLEYRPVID  648
+
+
+>sp|Q09508|SDHA_CAEEL Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Caenorhabditis elegans OX=6239 
+GN=sdha-1 PE=2 SV=3
+Length=646
+
+ Score = 107 bits (266),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 30/152 (20%), Positives = 57/152 (38%), Gaps = 29/152 (19%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL--  63
+            N   I   +  + +QK M  +AA           +L+  +++L+ L +D   L   D   
+Sbjct  484  NKGDISTAELRLTMQKSMQNHAAVF-----RRGDILKEGVKVLSKLYKDQAHLNVADKGL  538
+
+Query  64   ---HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE-----------  109
+                +L+   EL + +  A   +     R+E+R  G + R D+P+  DE           
+Sbjct  539  VWNSDLIETLELQNLLINATQTIVAAENREESR--GAHARDDFPDRLDELDYSKPLEGQT  596
+
+Query  110  ------EWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                   W+     + + E  E + +  P + 
+Sbjct  597  KKELKDHWRKHSIIRSNIETGEVSLDYRPVID  628
+
+
+>sp|Q6PA58|SDHAA_XENLA Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit A, mitochondrial OS=Xenopus laevis OX=8355 
+GN=sdha-a PE=2 SV=1
+Length=665
+
+ Score = 106 bits (265),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 29/150 (19%), Positives = 51/150 (34%), Gaps = 30/150 (20%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+                  +  + +QK M  +AA           +L+   E L+ +   ++ +   D     
+Sbjct  507  GSTRTSEIRINMQKTMQNHAAVF-----RTGSVLKEGCEKLSVINSSMDDIKTFDRGIVW  561
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND--------------  108
+              +L+   EL + +  A   +     RKE+R  G + R DY    D              
+Sbjct  562  NTDLVETLELQNLMLCALQTINGAEARKESR--GAHAREDYKVRIDEYDFSKPLQGQQKK  619
+
+Query  109  ---EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+               E W+    S  D  K + + E  P + 
+Sbjct  620  SFNEHWRKHTLSYVDK-KGKVSLEYRPVID  648
+
+
+>sp|Q801S2|SDHAB_XENLA Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit B, mitochondrial OS=Xenopus laevis OX=8355 
+GN=sdha-b PE=2 SV=1
+Length=665
+
+ Score = 105 bits (263),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 29/150 (19%), Positives = 51/150 (34%), Gaps = 30/150 (20%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+                  +  + +QK M  +AA           +L+   E L+ +   ++ L   D     
+Sbjct  507  GSTRTSELRLNMQKTMQTHAAVF-----RTGSVLKEGCEKLSVINSAMDDLKTFDRGIVW  561
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND--------------  108
+              +++   EL + +  A   +     RKE+R  G + R DY    D              
+Sbjct  562  NTDVVETLELQNLMLCALQTINSAEARKESR--GAHAREDYKTRIDEYDYSKPIQGQQKK  619
+
+Query  109  ---EEWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+               E W+    S  D  K + + E  P + 
+Sbjct  620  SFSEHWRKHTLSYVD-SKGKVSLEYRPVID  648
+
+
+>sp|P31039|SDHA_BOVIN Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial OS=Bos taurus OX=9913 GN=SDHA 
+PE=1 SV=3
+Length=665
+
+ Score = 104 bits (260),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 34/150 (23%), Positives = 52/150 (35%), Gaps = 29/150 (19%)
+
+Query  8    EYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL----  63
+              I   +  + +QK M  +AA           +LQ   E ++ L  DL  L   D     
+Sbjct  505  GSIRTSELRLNMQKSMQSHAAVF-----RVGSVLQEGCEKISSLYGDLRHLKTFDRGMVW  559
+
+Query  64   -HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE-------------  109
+              +L+   EL + +  A   +     RKE+R  G   R D+ E  DE             
+Sbjct  560  NTDLVETLELQNLMLCALQTIYGAEARKESR--GGPRREDFKERVDEYDYSKPIQGQQKK  617
+
+Query  110  ----EWKCFVCSKYDAEKDEWTFEKVPYVQ  135
+                 W+    S  D +  + T E  P + 
+Sbjct  618  PFEQHWRKHTLSYVDIKTGKVTLEYRPVID  647
+
+
+>sp|Q9KPA4|NADB_VIBCH L-aspartate oxidase OS=Vibrio cholerae serotype 
+O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 
+GN=nadB PE=3 SV=2
+Length=535
+
+ Score = 102 bits (254),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 23/100 (23%), Positives = 44/100 (44%), Gaps = 8/100 (8%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHE  65
+            + E ++       L+  M +Y   +        K L+RA+  +  L+++  +  +     
+Sbjct  430  SDEEVVLQHNWHELRLFMWDYMGIV-----RTNKRLERAMRRIQLLQQETHEYYSNFRVS  484
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+                 E+ + +  AE  VR  + RKE+R  G +Y  DYP+
+Sbjct  485  -NNLLEMRNLLQVAELMVRCAMQRKESR--GLHYTLDYPD  521
+
+
+>sp|Q8XWM7|NADB1_RALSO L-aspartate oxidase 1 OS=Ralstonia solanacearum 
+(strain GMI1000) OX=267608 GN=nadB1 PE=3 SV=1
+Length=533
+
+ Score = 100 bits (250),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 42/99 (42%), Gaps = 8/99 (8%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHEL  66
+             E ++       L+++M  Y   +        K L+RA   +A L+E++ +  A      
+Sbjct  422  DEEVVVSHNWDELRRMMWNYVGIV-----RTNKRLERAQHRIALLREEIAEYYANFRVS-  475
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPE  105
+                EL + V  A   V   L R E+R  G ++  DYP+
+Sbjct  476  HDLLELRNLVEAASLIVDSALSRHESR--GLHFSRDYPQ  512
+
+
+>sp|Q0QF17|SDHA_MESAU Succinate dehydrogenase [ubiquinone] flavoprotein 
+subunit, mitochondrial (Fragment) OS=Mesocricetus 
+auratus OX=10036 GN=SDHA PE=1 SV=1
+Length=551
+
+ Score = 97.9 bits (242),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 27/108 (25%), Positives = 43/108 (40%), Gaps = 12/108 (11%)
+
+Query  7    PEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL---  63
+               I   +  + +QK M  +AA           +LQ   E ++ L  +L+ L   D    
+Sbjct  445  DGSIRTSELRLSMQKSMQSHAAVF-----RVGSVLQEGCEKISQLYGELKHLKTFDRGMV  499
+
+Query  64   --HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+               +L+   EL + +  A   +     RKE+R  G + R DY    DE
+Sbjct  500  WNTDLVETLELQNLMLCALQTIYGAEARKESR--GAHAREDYKVRVDE  545
+
+
+>sp|Q51363|NADB_PSEAE L-aspartate oxidase OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 
+/ LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=nadB PE=3 
+SV=1
+Length=538
+
+ Score = 96.7 bits (239),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 25/104 (24%), Positives = 43/104 (41%), Gaps = 8/104 (8%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHE  65
+            + E ++       L++ M +Y   + T  K  ++   R   LL+ + E            
+Sbjct  430  SDEDVIIAHNWDELRRFMWDYVGIVRT-NKRLQRAQHRVRLLLSEIDEFYSNYKVS----  484
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+                 EL +    AE  +R  + R+E+R  G +Y  DYP+L  E
+Sbjct  485  -RDLIELRNLALVAELIIRSAMQRRESR--GLHYTLDYPDLLPE  525
+
+
+>sp|P51054|SDHA_COXBU Succinate dehydrogenase flavoprotein subunit 
+OS=Coxiella burnetii (strain RSA 493 / Nine Mile phase 
+I) OX=227377 GN=sdhA PE=3 SV=1
+Length=587
+
+ Score = 94.4 bits (233),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 41/110 (37%), Gaps = 12/110 (11%)
+
+Query  12   PWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----EL  66
+            P      ++K M E            E+ +++ LE L  L E L++    D         
+Sbjct  457  PALLRQEMRKAMSEDFGVF-----REEQKMKQGLERLQKLNERLQRAKLTDTSRTFNNAR  511
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVC  116
+            + A EL + +  + A       R E+R  G + R DY E +D  W     
+Sbjct  512  IEALELDNLMEVSYATAVSAQQRTESR--GAHSRYDYKERDDANWLKHTV  559
+
+
+>sp|P44894|FRDA_HAEIN Fumarate reductase flavoprotein subunit 
+OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 
+/ Rd) OX=71421 GN=frdA PE=3 SV=1
+Length=599
+
+ Score = 90.5 bits (223),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 26/125 (21%), Positives = 52/125 (42%), Gaps = 13/125 (10%)
+
+Query  14   QGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRA----  69
+            +    +  +M+E           ++  +Q+A++ +A LKE  +++   D   +       
+Sbjct  452  EIRDEMGTVMEEGCGIY-----RDQASMQKAVDKIAELKERYKRIRVSDNSSVFNTDVLY  506
+
+Query  70   -WELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTF  128
+              EL + +  A++     + RKE+R  G + R DY E +D  +     + Y+ E      
+Sbjct  507  TVELGYILDVAQSIANSAIERKESR--GAHQRLDYTERDDVNYLKHTLAFYN-ENGAPRI  563
+
+Query  129  EKVPY  133
+            E  P 
+Sbjct  564  EYSPV  568
+
+
+>sp|V3TQ67|FRDA_SERS3 Fumarate reductase flavoprotein subunit 
+OS=Serratia sp. (strain ATCC 39006) OX=104623 GN=frdA PE=1 SV=1
+Length=598
+
+ Score = 87.1 bits (214),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 27/128 (21%), Positives = 49/128 (38%), Gaps = 15/128 (12%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELM  67
+             +    +   M+E             +++Q+ L+ LA LKE  +++   D       +L+
+Sbjct  450  AKIRDEMGISMEEGCGIY-----RTTELMQKTLDKLAELKERFKRVKITDHSSVFNTDLL  504
+
+Query  68   RAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTD--YPELNDEEWKCFVCSKYDAEKDE  125
+               EL H +  A+      + RKE+R  G + R D    E +D  +     + Y+ E   
+Sbjct  505  YTIELGHSLDVAQCMAHSAINRKESR--GAHQRLDEGCTERDDVNFLKHTLAFYNPE-GA  561
+
+Query  126  WTFEKVPY  133
+               E    
+Sbjct  562  PRLEYSDV  569
+
+
+>sp|P9WN91|FRDA_MYCTU Fumarate reductase flavoprotein subunit 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=frdA PE=1 SV=1
+Length=583
+
+ Score = 85.5 bits (210),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 29/134 (22%), Positives = 49/134 (37%), Gaps = 14/134 (10%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----E  65
+                    +Q  ++  A         +   L +A+E +  L+E        D       E
+Sbjct  450  RIADIRADMQATLESAAGIY-----RDGPTLTKAVEEIRVLQERFATAGIDDHSRTFNTE  504
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDE  125
+            L    EL   +  A A V   L R+E+R  G + RTD+P  +DE +        +++   
+Sbjct  505  LTALLELSGMLDVALAIVESGLRREESR--GAHQRTDFPNRDDEHFLAHTLVHRESD-GT  561
+
+Query  126  WTFEKVPYVQVIEW  139
+                 +P V +  W
+Sbjct  562  LRVGYLP-VTITRW  574
+
+
+>sp|P9WN90|FRDA_MYCTO Fumarate reductase flavoprotein subunit 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=frdA PE=3 SV=1
+Length=583
+
+ Score = 85.5 bits (210),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 29/134 (22%), Positives = 49/134 (37%), Gaps = 14/134 (10%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----E  65
+                    +Q  ++  A         +   L +A+E +  L+E        D       E
+Sbjct  450  RIADIRADMQATLESAAGIY-----RDGPTLTKAVEEIRVLQERFATAGIDDHSRTFNTE  504
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDE  125
+            L    EL   +  A A V   L R+E+R  G + RTD+P  +DE +        +++   
+Sbjct  505  LTALLELSGMLDVALAIVESGLRREESR--GAHQRTDFPNRDDEHFLAHTLVHRESD-GT  561
+
+Query  126  WTFEKVPYVQVIEW  139
+                 +P V +  W
+Sbjct  562  LRVGYLP-VTITRW  574
+
+
+>sp|P64175|FRDA_MYCBO Fumarate reductase flavoprotein subunit 
+OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=frdA PE=3 SV=1
+Length=583
+
+ Score = 85.5 bits (210),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 29/134 (22%), Positives = 49/134 (37%), Gaps = 14/134 (10%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----E  65
+                    +Q  ++  A         +   L +A+E +  L+E        D       E
+Sbjct  450  RIADIRADMQATLESAAGIY-----RDGPTLTKAVEEIRVLQERFATAGIDDHSRTFNTE  504
+
+Query  66   LMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDE  125
+            L    EL   +  A A V   L R+E+R  G + RTD+P  +DE +        +++   
+Sbjct  505  LTALLELSGMLDVALAIVESGLRREESR--GAHQRTDFPNRDDEHFLAHTLVHRESD-GT  561
+
+Query  126  WTFEKVPYVQVIEW  139
+                 +P V +  W
+Sbjct  562  LRVGYLP-VTITRW  574
+
+
+>sp|P00363|FRDA_ECOLI Fumarate reductase flavoprotein subunit 
+OS=Escherichia coli (strain K12) OX=83333 GN=frdA PE=1 SV=3
+Length=602
+
+ Score = 84.4 bits (207),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 26/128 (20%), Positives = 49/128 (38%), Gaps = 15/128 (12%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-----ELM  67
+             +    +   M+E             +++Q+ ++ LA L+E  +++   D       +L+
+Sbjct  450  AKIRDEMGLAMEEGCGIY-----RTPELMQKTIDKLAELQERFKRVRITDTSSVFNTDLL  504
+
+Query  68   RAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTD--YPELNDEEWKCFVCSKYDAEKDE  125
+               EL H +  AE      + RKE+R  G + R D    E +D  +     +  DA+   
+Sbjct  505  YTIELGHGLNVAECMAHSAMARKESR--GAHQRLDEGCTERDDVNFLKHTLAFRDAD-GT  561
+
+Query  126  WTFEKVPY  133
+               E    
+Sbjct  562  TRLEYSDV  569
+
+
+>sp|P20922|FRDA_PROVU Fumarate reductase flavoprotein subunit 
+OS=Proteus vulgaris OX=585 GN=frdA PE=3 SV=1
+Length=598
+
+ Score = 83.2 bits (204),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 25/128 (20%), Positives = 45/128 (35%), Gaps = 15/128 (12%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRA---  69
+             Q    + + M+E             +++Q+ ++ L  LKE  + +  +D   +      
+Sbjct  450  AQIRDEMGEAMEEGCGIY-----RTPELMQKTIDKLTELKERFKHVEIKDTSSVFNTDLL  504
+
+Query  70   --WELVHRVWTAEAHVRHMLFRKETRWPGYYYRTD--YPELNDEEWKCFVCSKYDAEKDE  125
+               EL   +  AE        RKE+R  G + R D    E +D  +     + Y+ E   
+Sbjct  505  YKIELGFGLDVAECMAHSAFNRKESR--GAHQRLDEGCTERDDVNFLKHTLAFYNPE-GA  561
+
+Query  126  WTFEKVPY  133
+               E    
+Sbjct  562  PRLEYSDV  569
+
+
+>sp|P38032|NADB_BACSU L-aspartate oxidase OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=nadB PE=3 SV=1
+Length=531
+
+ Score = 82.1 bits (201),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 23/115 (20%), Positives = 44/115 (38%), Gaps = 16/115 (14%)
+
+Query  17   VRLQKIMDEYAAGIATIYKTNEKMLQRALEL--LAFLKEDLEKLAARDLHELMRAWELVH  74
+              LQ  M  + +      +    +++ ++ L  L F + +++ +  R +       EL H
+Sbjct  412  HELQSKMTSHMSI----LREQSSLIELSIWLHTLPFQEVNVKDITIRQM-------ELSH  460
+
+Query  75   RVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKDEWTFE  129
+               TA+      L R+E+R  G ++RTD+P      W+                E
+Sbjct  461  LWQTAKLMTFSALLREESR--GAHFRTDFPHAEVS-WQGRQIVHTKKGTKIRKNE  512
+
+
+>sp|P74562|NADB_SYNY3 L-aspartate oxidase OS=Synechocystis sp. 
+(strain PCC 6803 / Kazusa) OX=1111708 GN=nadB PE=3 SV=1
+Length=553
+
+ Score = 79.8 bits (195),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 32/126 (25%), Positives = 52/126 (41%), Gaps = 26/126 (21%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRAL----------------ELLAFLKED  54
+            L       L ++M + A           + LQ A+                +LLA L ED
+Sbjct  423  LLNHWRSELPRLMWQTAGI-----CRQAETLQMAIAKLEQWQEQWQQLSSSKLLAHLPED  477
+
+Query  55   LE-KLAARDLHELMRAW-ELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWK  112
+             +  L+   L+E M+ W E  + +  A+  +   LFR+E+R  G +YR D P+    EW+
+Sbjct  478  QKISLSGPGLNEFMQLWAETHNLLDIAQLILTSALFREESR--GGHYRLDCPD-TKREWQ  534
+
+Query  113  CFVCSK  118
+                 +
+Sbjct  535  SHTVIE  540
+
+
+>sp|Q7M827|MFRA_WOLSU 8-methylmenaquinol:fumarate reductase flavoprotein 
+subunit OS=Wolinella succinogenes (strain ATCC 29543 
+/ DSM 1740 / LMG 7466 / NCTC 11488 / FDC 602W) OX=273121 
+GN=sdhA PE=1 SV=1
+Length=613
+
+ Score = 75.5 bits (184),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 19/117 (16%), Positives = 37/117 (32%), Gaps = 12/117 (10%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRA---  69
+            +     L  +  +            E  L    +    L+   + L   + + +      
+Sbjct  484  YAIREELGAVNWDNMGVF-----RTESRLVALEDKHNELQARYDALRIPNTNPVFNTAFT  538
+
+Query  70   --WELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDAEKD  124
+               EL + +  + A       RKE+R  G +YR DY + +D  +        D+   
+Sbjct  539  EYVELGNILLASRAARMGAEARKESR--GSHYREDYIKRDDANFLKHSMVTMDSNGK  593
+
+
+>sp|Q92R32|NADB_RHIME L-aspartate oxidase OS=Rhizobium meliloti 
+(strain 1021) OX=266834 GN=nadB PE=3 SV=1
+Length=532
+
+ Score = 64.0 bits (154),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 19/97 (20%), Positives = 37/97 (38%), Gaps = 20/97 (21%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            L+++M +    +        + L RA+  +A L+   ++                +   T
+Sbjct  436  LRQLMSDCVGVV-----RTRESLTRAIRGIAELERTNKR------------LRFANIATT  478
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFV  115
+            A+      L R E+R  G ++R D P+    EW+   
+Sbjct  479  AKLIAIAALQRTESR--GGHFRADCPD-ERPEWRRRT  512
+
+
+>sp|Q9X8N8|NADB_STRCO L-aspartate oxidase OS=Streptomyces coelicolor 
+(strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=nadB 
+PE=3 SV=1
+Length=580
+
+ Score = 62.0 bits (149),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 27/115 (23%), Positives = 49/115 (43%), Gaps = 10/115 (9%)
+
+Query  10   ILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEK-LAARDLHEL--  66
+            +LP +  + +Q+IM E A  +      +   L RA + L  L  +  + L          
+Sbjct  443  LLPPEARLTIQRIMTEGAGVL-----RSADSLARAADRLHGLHAEAREALHEHGKTSEPG  497
+
+Query  67   MRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSKYDA  121
+            +  WE  + +  A   V     R+ETR  G ++R D+ + +D  W+  V  + + 
+Sbjct  498  VDTWEATNLLCVARVLVAAAARREETR--GCHWREDHADRDDTTWRRHVVVRLNP  550
+
+
+>sp|O66973|NADB_AQUAE L-aspartate oxidase OS=Aquifex aeolicus 
+(strain VF5) OX=224324 GN=nadB PE=3 SV=1
+Length=510
+
+ Score = 61.7 bits (148),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 26/115 (23%), Positives = 47/115 (41%), Gaps = 16/115 (14%)
+
+Query  6    NPEYILPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLH-  64
+                  P  G+  L+K+M  Y              L+R  E L ++K+ +  + ++  H 
+Sbjct  405  RAGSDKPNLGIEELKKLMWNYVG------------LERDEEGLTYVKKRILSVLSQAKHW  452
+
+Query  65   -ELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSK  118
+                +  +L   +  A   V   L RKE+R  G +YR DYP   +   +  + ++
+Sbjct  453  EPTPQNRQLYDILLVALCTVEGALMRKESR--GVHYRKDYPTEREVYRRDTIITR  505
+
+
+>sp|Q8YXJ6|NADB_NOSS1 L-aspartate oxidase OS=Nostoc sp. (strain 
+PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=nadB PE=3 SV=1
+Length=578
+
+ Score = 61.3 bits (147),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 22/124 (18%), Positives = 44/124 (35%), Gaps = 26/124 (21%)
+
+Query  15   GLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKL----------------  58
+               +L +++ + A          +  L  A+  +   ++D   L                
+Sbjct  453  LREKLPRLVWQSAGI-----CREQSTLSVAIATVKSWQQDFAALPLSQFLLSLQPNEPVS  507
+
+Query  59   -AARDLHELMRAW-ELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVC  116
+                D  + +R W E  + +  A   ++   FR E+R  G ++R DYP  N  +W+    
+Sbjct  508  CNFSDTDQQLRLWAETGNLLDVAYLILKSAAFRIESR--GGHFRLDYPHSNP-DWQVHSL  564
+
+Query  117  SKYD  120
+             +  
+Sbjct  565  VQKH  568
+
+
+>sp|Q8TZL4|NADB_PYRFU L-aspartate oxidase OS=Pyrococcus furiosus 
+(strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=nadB PE=3 SV=1
+Length=464
+
+ Score = 60.5 bits (145),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 23/101 (23%), Positives = 40/101 (40%), Gaps = 25/101 (25%)
+
+Query  15   GLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVH  74
+             +  ++ IM  +A  I       E+ L+  L+ L  ++ D                    
+Sbjct  381  NVDEVRDIMWNHAGII-----RREESLRLGLKKLEKVEAD------------------PR  417
+
+Query  75   RVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFV  115
+                AEA ++  L R+E+R  G +YR DYP   +E  +  +
+Sbjct  418  VKILAEAVLKCALAREESR--GAHYREDYPYSREEFRRPSI  456
+
+
+>sp|Q8XQG4|NADB2_RALSO L-aspartate oxidase 2 OS=Ralstonia solanacearum 
+(strain GMI1000) OX=267608 GN=nadB2 PE=3 SV=1
+Length=536
+
+ Score = 59.0 bits (141),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 20/107 (19%), Positives = 40/107 (37%), Gaps = 15/107 (14%)
+
+Query  7    PEYILPW---QGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDL  63
+            PE I        L  L+ I+  +A  +      +   L+  L+ +A L+E    +     
+Sbjct  415  PERIETPFHPNLLADLRAILWNHAGIV-----RSNTGLEIGLQNMAQLQERHASVLPYG-  468
+
+Query  64   HELMRAWELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEE  110
+                +A    +    A   +     RKE+R  G ++  D+ +  + +
+Sbjct  469  ----QALRAQNIFDAAHLVLLSAAARKESR--GGHFNKDHADKAEAQ  509
+
+
+>sp|O57765|NADB_PYRHO L-aspartate oxidase OS=Pyrococcus horikoshii 
+(strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 
+/ OT-3) OX=70601 GN=nadB PE=3 SV=1
+Length=464
+
+ Score = 57.4 bits (137),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 19/91 (21%), Positives = 36/91 (40%), Gaps = 25/91 (27%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            +++++  +A  +      +E  L+  L  L  ++ D                        
+Sbjct  388  IREVLWNHAGIV-----RDEWSLREGLRKLKEIEVD------------------ERLKLV  424
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+            A+A +   L R+E+R  G +YR DYP +  E
+Sbjct  425  AKAVIISALKREESR--GAHYRKDYPFMRKE  453
+
+
+>sp|Q59767|NADB_RHORU L-aspartate oxidase (Fragment) OS=Rhodospirillum 
+rubrum OX=1085 GN=nadB PE=3 SV=1
+Length=277
+
+ Score = 54.3 bits (129),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 19/98 (19%), Positives = 33/98 (34%), Gaps = 19/98 (19%)
+
+Query  13   WQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWEL  72
+               + RL+  M      I      + + L+ AL  +  +                R+  L
+Sbjct  164  AAAITRLRATMSARVGVI-----RDGQGLESALATIETIAAG------------ARSPRL  206
+
+Query  73   VHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDEE  110
+                  A       L R+E+R  G ++R DYP  +  +
+Sbjct  207  RAMTTAARLITAAALARRESR--GAHFRADYPATDPAQ  242
+
+
+>sp|Q9KDJ5|NADB_BACHD L-aspartate oxidase OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / 
+C-125) OX=272558 GN=nadB PE=3 SV=1
+Length=509
+
+ Score = 53.6 bits (127),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 21/105 (20%), Positives = 32/105 (30%), Gaps = 18/105 (17%)
+
+Query  16   LVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEK-LAARDLHELMRAWELVH  74
+               LQK M  Y            +   R+L  +    +                 +E  +
+Sbjct  400  REDLQKKMMRYVGI---------ERHARSLWYMNNWFQPFLDTAHYNGPWPERDMFEQAN  450
+
+Query  75   RVWTAEAHVRHMLFRKETRWPGYYYRTDYPELNDE------EWKC  113
+                A    R    R E+R  G ++R DYP   D+      EW+ 
+Sbjct  451  MTLLASLITRSAAIRTESR--GGHFRADYPNGLDKFQQLIIEWQN  493
+
+
+>sp|Q9V2R0|NADB_PYRAB L-aspartate oxidase OS=Pyrococcus abyssi 
+(strain GE5 / Orsay) OX=272844 GN=nadB PE=3 SV=1
+Length=464
+
+ Score = 52.8 bits (125),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 19/91 (21%), Positives = 36/91 (40%), Gaps = 25/91 (27%)
+
+Query  19   LQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVWT  78
+            +++IM  +A  +      ++  L   L+ L  ++ D                        
+Sbjct  388  IREIMWNHAGIV-----RDKSSLLEGLKKLEGVEAD------------------QRLKVV  424
+
+Query  79   AEAHVRHMLFRKETRWPGYYYRTDYPELNDE  109
+            A+A +   L R+E+R  G +YR D+P +  E
+Sbjct  425  AKAVLTLALEREESR--GSHYRRDFPFMRKE  453
+
+
+>sp|Q97ZC5|NADB_SACS2 L-aspartate oxidase OS=Saccharolobus solfataricus 
+(strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) OX=273057 
+GN=nadB PE=3 SV=2
+Length=472
+
+ Score = 52.0 bits (123),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 19/105 (18%), Positives = 34/105 (32%), Gaps = 26/105 (25%)
+
+Query  16   LVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHR  75
+            L  +++    Y   +      N       L+ L  + E  +                 + 
+Sbjct  391  LEEIREYNWNYLGIV-----RNG----EGLDKLVKIYESNDTFN-------------DNA  428
+
+Query  76   VWTAEAHVRHMLFRKETRWPGYYYRTDYPEL--NDEEWKCFVCSK  118
+               +    +  L R E+R  G +YR DYP     D +   F+ S+
+Sbjct  429  SLVSLLSAKGALLRTESR--GAHYREDYPNKSWEDGKRIYFMVSR  471
+
+
+>sp|Q972D2|NADB_SULTO L-aspartate oxidase OS=Sulfurisphaera tokodaii 
+(strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) OX=273063 
+GN=nadB PE=1 SV=1
+Length=472
+
+ Score = 50.9 bits (120),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 33/101 (33%), Gaps = 28/101 (28%)
+
+Query  18   RLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVW  77
+             +++I  E    I      NE+ L +A+   +                        +   
+Sbjct  397  EIRRINWENVGII-----RNEEKLVKAINTYSS--------------------STQNEAI  431
+
+Query  78   TAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCFVCSK  118
+             +         RKE+R  G ++R DYP   D  W+  +  K
+Sbjct  432  ISYLTALAAEIRKESR--GNHFREDYPYK-DPNWEKRIYFK  469
+
+
+>sp|Q9HNZ0|NADB_HALSA L-aspartate oxidase OS=Halobacterium salinarum 
+(strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 GN=nadB 
+PE=3 SV=1
+Length=509
+
+ Score = 47.4 bits (111),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 19/85 (22%), Positives = 35/85 (41%), Gaps = 9/85 (11%)
+
+Query  18   RLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAWELVHRVW  77
+            RL+++MDE+        +     LQRA  +L  LK +++  A          ++L +   
+Sbjct  422  RLRRVMDEHVG-----LRRTGADLQRAQGVLRRLKGEVDSYARTRTSR--DLYQLRNAAV  474
+
+Query  78   TAEAHVRHMLFRKETRWPGYYYRTD  102
+                  R      E+   G ++R+D
+Sbjct  475  VGLLIARAAGENPES--AGCHHRSD  497
+
+
+>sp|Q9A4C3|NADB_CAUVC L-aspartate oxidase OS=Caulobacter vibrioides 
+(strain ATCC 19089 / CB15) OX=190650 GN=nadB PE=3 SV=1
+Length=511
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/98 (22%), Positives = 33/98 (34%), Gaps = 22/98 (22%)
+
+Query  11   LPWQGLVRLQKIMDEYAAGIATIYKTNEKMLQRALELLAFLKEDLEKLAARDLHELMRAW  70
+            LP   L  L+K M   A  I      +   L R L  +  L+    +             
+Sbjct  415  LPDAALQGLRKAMSRDAGVI-----RDADGLTRLLGEIETLEAGHGQGPI----------  459
+
+Query  71   ELVHRVWTAEAHVRHMLFRKETRWPGYYYRTDYPELND  108
+                 +  A   V   L R+E+R  G + R D+P  + 
+Sbjct  460  -----LVAARLIVTAALAREESR--GGHCRIDFPATDP  490
+
+
+>sp|Q98AV8|NADB_RHILO L-aspartate oxidase OS=Mesorhizobium japonicum 
+(strain LMG 29417 / CECT 9101 / MAFF 303099) OX=266835 
+GN=nadB PE=3 SV=1
+Length=513
+
+ Score = 42.4 bits (98),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 9/30 (30%), Positives = 16/30 (53%), Gaps = 2/30 (7%)
+
+Query  78   TAEAHVRHMLFRKETRWPGYYYRTDYPELN  107
+             A       L R+E+R  G ++R+D+P  +
+Sbjct  457  VALLMAIAALRREESR--GSHFRSDFPGRD  484
+
+
+>sp|Q9PC57|NADB_XYLFA L-aspartate oxidase OS=Xylella fastidiosa 
+(strain 9a5c) OX=160492 GN=nadB PE=3 SV=1
+Length=512
+
+ Score = 40.9 bits (94),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 10/37 (27%), Positives = 15/37 (41%), Gaps = 2/37 (5%)
+
+Query  78   TAEAHVRHMLFRKETRWPGYYYRTDYPELNDEEWKCF  114
+             A         R E+R  G + RTD+P  +D   +  
+Sbjct  456  VALLIAIFAYLRTESR--GAHARTDFPLKHDTTQRRH  490
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0399    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008933090
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

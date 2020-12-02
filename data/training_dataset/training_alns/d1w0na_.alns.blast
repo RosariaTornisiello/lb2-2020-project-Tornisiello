@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1w0na_
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P45796|XYND_PAEPO Arabinoxylan arabinofuranohydrolase OS=Paeni...  241     1e-76
+sp|P83513|XY11A_PSEXY Bifunctional xylanase/deacetylase OS=Pseudo...  127     3e-34
+
+
+>sp|P45796|XYND_PAEPO Arabinoxylan arabinofuranohydrolase OS=Paenibacillus 
+polymyxa OX=1406 GN=xynD PE=1 SV=1
+Length=635
+
+ Score = 241 bits (614),  Expect = 1e-76, Method: Compositional matrix adjust.
+ Identities = 120/120 (100%), Positives = 120/120 (100%), Gaps = 0/120 (0%)
+
+Query  1    ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA  60
+            ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA
+Sbjct  516  ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA  575
+
+Query  61   KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  120
+            KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL
+Sbjct  576  KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  635
+
+
+>sp|P83513|XY11A_PSEXY Bifunctional xylanase/deacetylase OS=Pseudobutyrivibrio 
+xylanivorans OX=185007 GN=xyn11A PE=1 SV=2
+Length=602
+
+ Score = 127 bits (319),  Expect = 3e-34, Method: Compositional matrix adjust.
+ Identities = 58/118 (49%), Positives = 81/118 (69%), Gaps = 0/118 (0%)
+
+Query  3    KVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTAKV  62
+            K++ E M   G Y G IS+PF+GVALYAN D V Y+QYFA+ TH+ ++RG S+N   A+V
+Sbjct  250  KIQCETMTKSGQYTGNISSPFNGVALYANNDAVKYTQYFASGTHDFTLRGCSNNNKMARV  309
+
+Query  63   DLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  120
+            DL IGG   G+F +    P   T+ N++H TG+Q I+L +T+DDG WDAY+D+   S+
+Sbjct  310  DLKIGGQNKGTFYYGDSYPAEYTIKNVSHGTGNQTIELVVTADDGQWDAYLDYFNNSV  367
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.130    0.367    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5075760756
+Results from round 2
+
+
+Query= d1w0na_
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P83513|XY11A_PSEXY Bifunctional xylanase/deacetylase OS=Pseudo...  199     6e-61
+sp|P45796|XYND_PAEPO Arabinoxylan arabinofuranohydrolase OS=Paeni...  193     1e-58
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P83513|XY11A_PSEXY Bifunctional xylanase/deacetylase OS=Pseudobutyrivibrio 
+xylanivorans OX=185007 GN=xyn11A PE=1 SV=2
+Length=602
+
+ Score = 199 bits (505),  Expect = 6e-61, Method: Composition-based stats.
+ Identities = 58/118 (49%), Positives = 81/118 (69%), Gaps = 0/118 (0%)
+
+Query  3    KVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTAKV  62
+            K++ E M   G Y G IS+PF+GVALYAN D V Y+QYFA+ TH+ ++RG S+N   A+V
+Sbjct  250  KIQCETMTKSGQYTGNISSPFNGVALYANNDAVKYTQYFASGTHDFTLRGCSNNNKMARV  309
+
+Query  63   DLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  120
+            DL IGG   G+F +    P   T+ N++H TG+Q I+L +T+DDG WDAY+D+   S+
+Sbjct  310  DLKIGGQNKGTFYYGDSYPAEYTIKNVSHGTGNQTIELVVTADDGQWDAYLDYFNNSV  367
+
+
+>sp|P45796|XYND_PAEPO Arabinoxylan arabinofuranohydrolase OS=Paenibacillus 
+polymyxa OX=1406 GN=xynD PE=1 SV=1
+Length=635
+
+ Score = 193 bits (491),  Expect = 1e-58, Method: Composition-based stats.
+ Identities = 120/120 (100%), Positives = 120/120 (100%), Gaps = 0/120 (0%)
+
+Query  1    ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA  60
+            ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA
+Sbjct  516  ITKVEAENMKIGGTYAGKISAPFDGVALYANADYVSYSQYFANSTHNISVRGASSNAGTA  575
+
+Query  61   KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  120
+            KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL
+Sbjct  576  KVDLVIGGVTVGSFNFTGKTPTVQTLSNITHATGDQEIKLALTSDDGTWDAYVDFIEFSL  635
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.371    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5075760756
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

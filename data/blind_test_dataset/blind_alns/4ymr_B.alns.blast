@@ -1,0 +1,339 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4ymr_B
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q3UR97|SNX21_MOUSE Sorting nexin-21 OS=Mus musculus OX=10090 G...  252     7e-84
+sp|Q969T3|SNX21_HUMAN Sorting nexin-21 OS=Homo sapiens OX=9606 GN...  233     2e-76
+sp|Q2T9W1|SNX20_BOVIN Sorting nexin-20 OS=Bos taurus OX=9913 GN=S...  64.7    4e-12
+sp|Q5BK61|SNX20_RAT Sorting nexin-20 OS=Rattus norvegicus OX=1011...  63.9    8e-12
+sp|Q9D2Y5|SNX20_MOUSE Sorting nexin-20 OS=Mus musculus OX=10090 G...  58.5    7e-10
+sp|Q7Z614|SNX20_HUMAN Sorting nexin-20 OS=Homo sapiens OX=9606 GN...  57.8    1e-09
+
+
+>sp|Q3UR97|SNX21_MOUSE Sorting nexin-21 OS=Mus musculus OX=10090 
+GN=Snx21 PE=1 SV=1
+Length=363
+
+ Score = 252 bits (644),  Expect = 7e-84, Method: Compositional matrix adjust.
+ Identities = 129/134 (96%), Positives = 129/134 (96%), Gaps = 4/134 (3%)
+
+Query  1    VLPELRRAQSLTCTGLYREALALWANAWQLQTQ----XGPDRPLLTLAGLAVCHQELEDP  56
+            VLPELRRAQSLTCTGLYREALALWANAWQLQTQ     GPDRPLLTLAGLAVCHQELEDP
+Sbjct  230  VLPELRRAQSLTCTGLYREALALWANAWQLQTQLGTPSGPDRPLLTLAGLAVCHQELEDP  289
+
+Query  57   GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  116
+            GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP
+Sbjct  290  GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  349
+
+Query  117  PPSLKELLIKEVLD  130
+            PPSLKELLIKEVLD
+Sbjct  350  PPSLKELLIKEVLD  363
+
+
+>sp|Q969T3|SNX21_HUMAN Sorting nexin-21 OS=Homo sapiens OX=9606 
+GN=SNX21 PE=1 SV=1
+Length=373
+
+ Score = 233 bits (595),  Expect = 2e-76, Method: Compositional matrix adjust.
+ Identities = 122/134 (91%), Positives = 123/134 (92%), Gaps = 4/134 (3%)
+
+Query  1    VLPELRRAQSLTCTGLYREALALWANAWQLQTQ----XGPDRPLLTLAGLAVCHQELEDP  56
+            VLPELRRAQSLTCTGLYREALALWANAWQLQ Q     GPDRPLLTLAGLAVCHQELEDP
+Sbjct  240  VLPELRRAQSLTCTGLYREALALWANAWQLQAQLGTPSGPDRPLLTLAGLAVCHQELEDP  299
+
+Query  57   GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  116
+            GEARAC EKALQLLGDK  HP LAPFLEAHVRLSWRLGLDKRQSEA+LQALQEAGLT TP
+Sbjct  300  GEARACCEKALQLLGDKSLHPLLAPFLEAHVRLSWRLGLDKRQSEARLQALQEAGLTPTP  359
+
+Query  117  PPSLKELLIKEVLD  130
+            PPSLKELLIKEVLD
+Sbjct  360  PPSLKELLIKEVLD  373
+
+
+>sp|Q2T9W1|SNX20_BOVIN Sorting nexin-20 OS=Bos taurus OX=9913 
+GN=SNX20 PE=2 SV=1
+Length=316
+
+ Score = 64.7 bits (156),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 49/136 (36%), Positives = 68/136 (50%), Gaps = 14/136 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQTQXGPDRPLL---TLAGLAVCHQELEDPGEA  59
+            PEL+ A      G Y +AL +      LQ +     P+L    L  + VCH++L+ P EA
+Sbjct  187  PELKEAFGCLRAGQYTKALDILMRVVPLQEKLTAHCPVLLVPALCAMLVCHRDLDRPAEA  246
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+ALQ L  +  H + AP L+A  RL++ LG D     KR  E+QL+     G T 
+Sbjct  247  FAVGERALQCLQAREGHRYYAPLLDAMARLAYLLGKDFVSLQKRLEESQLRKPALRGFT-  305
+
+Query  115  TPPPSLKELLIKEVLD  130
+                 LKEL ++E L 
+Sbjct  306  -----LKELTVQEYLS  316
+
+
+>sp|Q5BK61|SNX20_RAT Sorting nexin-20 OS=Rattus norvegicus OX=10116 
+GN=Snx20 PE=1 SV=1
+Length=313
+
+ Score = 63.9 bits (154),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 51/136 (38%), Positives = 66/136 (49%), Gaps = 14/136 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PEL  A      G Y  AL L      LQ   T   P  P+  L  + VC ++LE P EA
+Sbjct  184  PELCEAFGCLRAGQYARALDLLGRVVPLQEKLTAHCPSAPVPALCAMLVCLRDLERPAEA  243
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+AL+ LG +  H + AP L+A VRL++ LG D      R  E+QL+     G T 
+Sbjct  244  FAVGERALRRLGARESHRYYAPLLDAMVRLAYALGKDLASLQGRLDESQLRRPTHRGAT-  302
+
+Query  115  TPPPSLKELLIKEVLD  130
+                 LKEL ++E L 
+Sbjct  303  -----LKELTVREYLS  313
+
+
+>sp|Q9D2Y5|SNX20_MOUSE Sorting nexin-20 OS=Mus musculus OX=10090 
+GN=Snx20 PE=1 SV=2
+Length=313
+
+ Score = 58.5 bits (140),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 50/135 (37%), Positives = 63/135 (47%), Gaps = 14/135 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PELR A      G Y  AL L   A  LQ   T   P   +  L    VC ++LE P EA
+Sbjct  184  PELREAFGCLRAGQYARALELLGRALPLQEKLTAHCPSAAVPALCAALVCLRDLERPAEA  243
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+AL+ L  +  H + AP L+A VRL++ LG D      R  E QL+       T 
+Sbjct  244  FAVGERALRCLRTRENHRYYAPLLDAMVRLAYALGKDFAALQSRLDENQLRRPTHRDAT-  302
+
+Query  115  TPPPSLKELLIKEVL  129
+                 LKEL ++E L
+Sbjct  303  -----LKELTVREYL  312
+
+
+>sp|Q7Z614|SNX20_HUMAN Sorting nexin-20 OS=Homo sapiens OX=9606 
+GN=SNX20 PE=1 SV=1
+Length=316
+
+ Score = 57.8 bits (138),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 50/135 (37%), Positives = 68/135 (50%), Gaps = 14/135 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PELR A      G Y  AL L      LQ   T   P   +  L  + +CH++L+ P EA
+Sbjct  187  PELREAFGCLRAGQYPRALELLLRVLPLQEKLTAHCPAAAVPALCAVLLCHRDLDRPAEA  246
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+ALQ L  +  H + AP L+A VRL++ LG D     +R  E+QL+     G+T 
+Sbjct  247  FAAGERALQRLQAREGHRYYAPLLDAMVRLAYALGKDFVTLQERLEESQLRRPTPRGIT-  305
+
+Query  115  TPPPSLKELLIKEVL  129
+                 LKEL ++E L
+Sbjct  306  -----LKELTVREYL  315
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 2
+
+
+Query= 4ymr_B
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q3UR97|SNX21_MOUSE Sorting nexin-21 OS=Mus musculus OX=10090 G...  183     5e-57
+sp|Q969T3|SNX21_HUMAN Sorting nexin-21 OS=Homo sapiens OX=9606 GN...  181     4e-56
+sp|Q2T9W1|SNX20_BOVIN Sorting nexin-20 OS=Bos taurus OX=9913 GN=S...  176     1e-54
+sp|Q5BK61|SNX20_RAT Sorting nexin-20 OS=Rattus norvegicus OX=1011...  174     9e-54
+sp|Q9D2Y5|SNX20_MOUSE Sorting nexin-20 OS=Mus musculus OX=10090 G...  167     2e-51
+sp|Q7Z614|SNX20_HUMAN Sorting nexin-20 OS=Homo sapiens OX=9606 GN...  159     8e-48
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q3UR97|SNX21_MOUSE Sorting nexin-21 OS=Mus musculus OX=10090 
+GN=Snx21 PE=1 SV=1
+Length=363
+
+ Score = 183 bits (465),  Expect = 5e-57, Method: Composition-based stats.
+ Identities = 129/134 (96%), Positives = 129/134 (96%), Gaps = 4/134 (3%)
+
+Query  1    VLPELRRAQSLTCTGLYREALALWANAWQLQTQXG----PDRPLLTLAGLAVCHQELEDP  56
+            VLPELRRAQSLTCTGLYREALALWANAWQLQTQ G    PDRPLLTLAGLAVCHQELEDP
+Sbjct  230  VLPELRRAQSLTCTGLYREALALWANAWQLQTQLGTPSGPDRPLLTLAGLAVCHQELEDP  289
+
+Query  57   GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  116
+            GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP
+Sbjct  290  GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  349
+
+Query  117  PPSLKELLIKEVLD  130
+            PPSLKELLIKEVLD
+Sbjct  350  PPSLKELLIKEVLD  363
+
+
+>sp|Q969T3|SNX21_HUMAN Sorting nexin-21 OS=Homo sapiens OX=9606 
+GN=SNX21 PE=1 SV=1
+Length=373
+
+ Score = 181 bits (460),  Expect = 4e-56, Method: Composition-based stats.
+ Identities = 122/134 (91%), Positives = 123/134 (92%), Gaps = 4/134 (3%)
+
+Query  1    VLPELRRAQSLTCTGLYREALALWANAWQLQTQXG----PDRPLLTLAGLAVCHQELEDP  56
+            VLPELRRAQSLTCTGLYREALALWANAWQLQ Q G    PDRPLLTLAGLAVCHQELEDP
+Sbjct  240  VLPELRRAQSLTCTGLYREALALWANAWQLQAQLGTPSGPDRPLLTLAGLAVCHQELEDP  299
+
+Query  57   GEARACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLDKRQSEAQLQALQEAGLTSTP  116
+            GEARAC EKALQLLGDK  HP LAPFLEAHVRLSWRLGLDKRQSEA+LQALQEAGLT TP
+Sbjct  300  GEARACCEKALQLLGDKSLHPLLAPFLEAHVRLSWRLGLDKRQSEARLQALQEAGLTPTP  359
+
+Query  117  PPSLKELLIKEVLD  130
+            PPSLKELLIKEVLD
+Sbjct  360  PPSLKELLIKEVLD  373
+
+
+>sp|Q2T9W1|SNX20_BOVIN Sorting nexin-20 OS=Bos taurus OX=9913 
+GN=SNX20 PE=2 SV=1
+Length=316
+
+ Score = 176 bits (445),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 48/136 (35%), Positives = 67/136 (49%), Gaps = 14/136 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQTQXGPDRPL---LTLAGLAVCHQELEDPGEA  59
+            PEL+ A      G Y +AL +      LQ +     P+     L  + VCH++L+ P EA
+Sbjct  187  PELKEAFGCLRAGQYTKALDILMRVVPLQEKLTAHCPVLLVPALCAMLVCHRDLDRPAEA  246
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+ALQ L  +  H + AP L+A  RL++ LG D     KR  E+QL+     G T 
+Sbjct  247  FAVGERALQCLQAREGHRYYAPLLDAMARLAYLLGKDFVSLQKRLEESQLRKPALRGFT-  305
+
+Query  115  TPPPSLKELLIKEVLD  130
+                 LKEL ++E L 
+Sbjct  306  -----LKELTVQEYLS  316
+
+
+>sp|Q5BK61|SNX20_RAT Sorting nexin-20 OS=Rattus norvegicus OX=10116 
+GN=Snx20 PE=1 SV=1
+Length=313
+
+ Score = 174 bits (440),  Expect = 9e-54, Method: Composition-based stats.
+ Identities = 51/136 (38%), Positives = 66/136 (49%), Gaps = 14/136 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PEL  A      G Y  AL L      LQ   T   P  P+  L  + VC ++LE P EA
+Sbjct  184  PELCEAFGCLRAGQYARALDLLGRVVPLQEKLTAHCPSAPVPALCAMLVCLRDLERPAEA  243
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+AL+ LG +  H + AP L+A VRL++ LG D      R  E+QL+     G T 
+Sbjct  244  FAVGERALRRLGARESHRYYAPLLDAMVRLAYALGKDLASLQGRLDESQLRRPTHRGAT-  302
+
+Query  115  TPPPSLKELLIKEVLD  130
+                 LKEL ++E L 
+Sbjct  303  -----LKELTVREYLS  313
+
+
+>sp|Q9D2Y5|SNX20_MOUSE Sorting nexin-20 OS=Mus musculus OX=10090 
+GN=Snx20 PE=1 SV=2
+Length=313
+
+ Score = 167 bits (424),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 50/136 (37%), Positives = 63/136 (46%), Gaps = 14/136 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PELR A      G Y  AL L   A  LQ   T   P   +  L    VC ++LE P EA
+Sbjct  184  PELREAFGCLRAGQYARALELLGRALPLQEKLTAHCPSAAVPALCAALVCLRDLERPAEA  243
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+AL+ L  +  H + AP L+A VRL++ LG D      R  E QL+       T 
+Sbjct  244  FAVGERALRCLRTRENHRYYAPLLDAMVRLAYALGKDFAALQSRLDENQLRRPTHRDAT-  302
+
+Query  115  TPPPSLKELLIKEVLD  130
+                 LKEL ++E L 
+Sbjct  303  -----LKELTVREYLS  313
+
+
+>sp|Q7Z614|SNX20_HUMAN Sorting nexin-20 OS=Homo sapiens OX=9606 
+GN=SNX20 PE=1 SV=1
+Length=316
+
+ Score = 159 bits (401),  Expect = 8e-48, Method: Composition-based stats.
+ Identities = 50/135 (37%), Positives = 68/135 (50%), Gaps = 14/135 (10%)
+
+Query  3    PELRRAQSLTCTGLYREALALWANAWQLQ---TQXGPDRPLLTLAGLAVCHQELEDPGEA  59
+            PELR A      G Y  AL L      LQ   T   P   +  L  + +CH++L+ P EA
+Sbjct  187  PELREAFGCLRAGQYPRALELLLRVLPLQEKLTAHCPAAAVPALCAVLLCHRDLDRPAEA  246
+
+Query  60   RACSEKALQLLGDKRPHPFLAPFLEAHVRLSWRLGLD-----KRQSEAQLQALQEAGLTS  114
+             A  E+ALQ L  +  H + AP L+A VRL++ LG D     +R  E+QL+     G+T 
+Sbjct  247  FAAGERALQRLQAREGHRYYAPLLDAMVRLAYALGKDFVTLQERLEESQLRRPTPRGIT-  305
+
+Query  115  TPPPSLKELLIKEVL  129
+                 LKEL ++E L
+Sbjct  306  -----LKELTVREYL  315
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

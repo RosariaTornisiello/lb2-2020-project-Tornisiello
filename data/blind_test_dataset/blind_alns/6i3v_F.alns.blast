@@ -1,0 +1,2293 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6i3v_F
+
+Length=182
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochon...  363     9e-129
+sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochon...  362     2e-128
+sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochon...  358     7e-127
+sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochon...  311     1e-108
+sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaste...  150     8e-45 
+sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces ...  114     2e-31 
+sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces...  100     5e-26 
+sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium disc...  97.8    3e-24 
+sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macac...  80.1    8e-18 
+sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo ...  79.7    1e-17 
+sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces...  80.1    1e-17 
+sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Crice...  78.6    3e-17 
+sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus m...  78.2    4e-17 
+sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus ...  77.8    5e-17 
+sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos t...  76.6    2e-16 
+sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus scr...  74.7    1e-15 
+sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster OX...  72.0    1e-14 
+sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus m...  69.7    4e-14 
+sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenop...  69.7    5e-14 
+sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo ...  67.8    3e-13 
+sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyc...  66.2    1e-12 
+sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopu...  64.7    4e-12 
+sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces...  64.3    6e-12 
+sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopu...  62.4    3e-11 
+sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=960...  49.3    4e-06 
+sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=960...  48.9    7e-06 
+sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=100...  48.5    8e-06 
+sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster...  47.8    2e-05 
+sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis ...  45.4    1e-04 
+sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus mu...  43.9    1e-04 
+sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscur...  45.1    2e-04 
+sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo s...  43.1    3e-04 
+sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 ...  40.8    0.004 
+
+
+>sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochondrial 
+OS=Homo sapiens OX=9606 GN=PRELID1 PE=1 SV=1
+Length=219
+
+ Score = 363 bits (931),  Expect = 9e-129, Method: Compositional matrix adjust.
+ Identities = 171/173 (99%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochondrial 
+OS=Mus musculus OX=10090 GN=Prelid1 PE=1 SV=1
+Length=217
+
+ Score = 362 bits (929),  Expect = 2e-128, Method: Compositional matrix adjust.
+ Identities = 170/173 (98%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochondrial 
+OS=Bos taurus OX=9913 GN=PRELID1 PE=2 SV=1
+Length=219
+
+ Score = 358 bits (919),  Expect = 7e-127, Method: Compositional matrix adjust.
+ Identities = 169/173 (98%), Positives = 170/173 (98%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVT DQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTSDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYRVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochondrial 
+OS=Gallus gallus OX=9031 GN=PRELID1 PE=2 SV=1
+Length=215
+
+ Score = 311 bits (798),  Expect = 1e-108, Method: Compositional matrix adjust.
+ Identities = 143/173 (83%), Positives = 156/173 (90%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M KY     VL+  WDQVFAAFWQRYPNPYSKHVLTEDIVHREVT D KLLSRRLLTKTN
+Sbjct  1    MGKYCASLGVLKGPWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTADHKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAER FPANVAH+VY++EDSIVDP+N+TMTTFTWNINHARLM VEER VY VN +N
+Sbjct  61   RMPRWAERFFPANVAHNVYIVEDSIVDPKNRTMTTFTWNINHARLMAVEERCVYRVNPEN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            S WTE++REAWVSSSLFGVSRAVQEFGLARFKSNVTK+ KGFEY+LA++QGEA
+Sbjct  121  SSWTEVKREAWVSSSLFGVSRAVQEFGLARFKSNVTKSTKGFEYVLARMQGEA  173
+
+
+>sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaster 
+OX=7227 GN=prel PE=2 SV=3
+Length=236
+
+ Score = 150 bits (380),  Expect = 8e-45, Method: Compositional matrix adjust.
+ Identities = 78/162 (48%), Positives = 105/162 (65%), Gaps = 6/162 (4%)
+
+Query  17   QSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAE  76
+            ++V   SW  V  A+W RYPNP S HVLTED + REV  D KL SRRLL+KTN +P+W  
+Sbjct  11   ETVFDYSWMNVVVAYWNRYPNPSSTHVLTEDTIQREVR-DGKLFSRRLLSKTNPVPKWGA  69
+
+Query  77   RLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIR  136
+            R +  NV   V ++EDS++DP  +T TTFT N+   ++M V+E  VYS   D  G T   
+Sbjct  70   RFY-NNVP--VKIVEDSVLDPVKKTFTTFTRNLGMTKIMKVDEIVVYSEQKD--GSTLAV  124
+
+Query  137  REAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+            R A++SS +FG SRA++ FG+ RFK+N  K   GF Y+L ++
+Sbjct  125  RRAYISSQVFGFSRAIRAFGIERFKANGNKASNGFNYVLRRM  166
+
+
+>sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPAP8A3.10 
+PE=3 SV=1
+Length=171
+
+ Score = 114 bits (285),  Expect = 2e-31, Method: Compositional matrix adjust.
+ Identities = 59/167 (35%), Positives = 100/167 (60%), Gaps = 4/167 (2%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M      ++ L +SW+ V +A+  RYPNPYS HV++ D++ R V  + +L + RLL K  
+Sbjct  1    MTAICTDKTELNASWNTVSSAWLTRYPNPYSLHVVSADVLERYVDDEGRLYTERLLVKQG  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            R+PRWA  L   N +   Y+LE S++DP  Q + + T+N++H +++ V E S +  +S+N
+Sbjct  61   RLPRWASDLLNVNKS---YILERSVIDPSKQELKSETFNLDHVKILRVIEYSRFIQSSEN  117
+
+Query  130  SGWTEIRREA-WVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+               T +   A +VS   FG+ R VQ++ L RF+  ++ + +G  Y++
+Sbjct  118  CSKTIVDTIAKFVSPLRFGLGRRVQKYSLKRFQEQLSSSRRGLLYVI  164
+
+
+>sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS1 
+PE=1 SV=1
+Length=175
+
+ Score = 100 bits (250),  Expect = 5e-26, Method: Compositional matrix adjust.
+ Identities = 52/161 (32%), Positives = 86/161 (53%), Gaps = 2/161 (1%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAERL  78
+            +  + +  V  AF+ RYPNPYS HVL+ D + R V  +  L + RLL K+ ++P W +  
+Sbjct  10   IFPTDFASVSRAFFNRYPNPYSPHVLSIDTISRNVDQEGNLRTTRLLKKSGKLPTWVKPF  69
+
+Query  79   FPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRRE  138
+                     +++E S+V+P N TM T+T N++H  +M VEE + Y  +S  S      R 
+Sbjct  70   LRG--ITETWIIEVSVVNPANSTMKTYTRNLDHTGIMKVEEYTTYQFDSATSSTIADSRV  127
+
+Query  139  AWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQ  179
+             + S    G+   V+++   +F  NV K+  G  +++ KL+
+Sbjct  128  KFSSGFNMGIKSKVEDWSRTKFDENVKKSRMGMAFVIQKLE  168
+
+
+>sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium 
+discoideum OX=44689 GN=slmo PE=3 SV=1
+Length=228
+
+ Score = 97.8 bits (242),  Expect = 3e-24, Method: Compositional matrix adjust.
+ Identities = 52/160 (33%), Positives = 85/160 (53%), Gaps = 4/160 (3%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLL-SRRLLTKTNRMPRWAERLFPAN  82
+            W     A +++YP+P    +L+ DI+ +E+ P   +L   +L+      P W + +  + 
+Sbjct  15   WSDASTASFRKYPSPERPDILSIDILSKEIDPTTGVLKCTKLIICKGNTPSWLKSILGSG  74
+
+Query  83   VAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRREAWVS  142
+                    E++ VDP+N+ MT  T N+N   ++ V+E   Y  + DN  WT   +EA V+
+Sbjct  75   ---ECLFYEETTVDPKNKIMTLKTKNLNFTNILGVDEVCTYEQHPDNEEWTLFTQEATVT  131
+
+Query  143  SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SS+FGV+R ++ F L RF +N  K  K  E  + K+Q EA
+Sbjct  132  SSIFGVARKMEAFCLDRFVANAGKGRKIMEDTIIKVQKEA  171
+
+
+>sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macaca 
+fascicularis OX=9541 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 80.1 bits (196),  Expect = 8e-18, Method: Compositional matrix adjust.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  DKTILTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo 
+sapiens OX=9606 GN=PRELID3B PE=1 SV=2
+Length=194
+
+ Score = 79.7 bits (195),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS2 
+PE=1 SV=1
+Length=230
+
+ Score = 80.1 bits (196),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 50/157 (32%), Positives = 87/157 (55%), Gaps = 8/157 (5%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQK-LLSRRLLTKTNRMPRWAERLFPA-  81
+            WDQV AA W++YPN  S HV+  D++ RE+    K L++ RL+T    +P+W   +    
+Sbjct  14   WDQVTAANWKKYPNEISTHVIAVDVLRRELKDQGKVLVTERLITVKQGVPKWIMMMLGGT  73
+
+Query  82   NVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSG-WTEIRREAW  140
+            N++H   V E S+VD   +++T  + N+    L+ V E   YS + D+S   T  ++EA 
+Sbjct  74   NMSH---VREVSVVDLNKKSLTMRSCNLTMCNLLKVYETVTYSPHPDDSANKTLFQQEAQ  130
+
+Query  141  VSS--SLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+            +++  S+  +   ++++ + RF  N  K   GF+ +L
+Sbjct  131  ITAYGSIRKLCNKMEDWSVQRFCENAKKGKMGFDAVL  167
+
+
+>sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Cricetulus 
+griseus OX=10029 GN=PRELID3B PE=2 SV=1
+Length=195
+
+ Score = 78.6 bits (192),  Expect = 3e-17, Method: Compositional matrix adjust.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWEMVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVKKTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus 
+musculus OX=10090 GN=Prelid3b PE=1 SV=2
+Length=195
+
+ Score = 78.2 bits (191),  Expect = 4e-17, Method: Compositional matrix adjust.
+ Identities = 50/171 (29%), Positives = 85/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVTRTMELKSTNISFTNMVSVDERLTYKPHLQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus 
+norvegicus OX=10116 GN=Prelid3b PE=1 SV=1
+Length=195
+
+ Score = 77.8 bits (190),  Expect = 5e-17, Method: Compositional matrix adjust.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPIRRTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos 
+taurus OX=9913 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 76.6 bits (187),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTILTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus 
+scrofa OX=9823 GN=PRELID3B PE=3 SV=1
+Length=194
+
+ Score = 74.7 bits (182),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R +    KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDASGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  +S
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVAKTMELKSTNISFTNMVSVDERLIYKPHPQDS  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster 
+OX=7227 GN=slmo PE=2 SV=1
+Length=215
+
+ Score = 72.0 bits (175),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 46/173 (27%), Positives = 85/173 (49%), Gaps = 7/173 (4%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + +    W+ V  A W++YPNP +  ++  D+V R V  D  L + RL+     
+Sbjct  1    MKIWTSEHIFNHPWETVTQAAWRKYPNPMTPSIIGTDVVERRVV-DGVLHTHRLVQSKWY  59
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+             P+W   L     A + +  E S VDP+ + M   T N+   R + V+E   Y  +  ++
+Sbjct  60   FPKWTHALI--GTAKTCFASERSTVDPERKQMVLKTNNLTFCRNISVDEVLYYEPHPSDA  117
+
+Query  131  GWTEIRREAWVSSSLFGV--SRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T +++EA V  ++FGV  S  +++   +   +N  K  +G E+++  +  E
+Sbjct  118  SKTLLKQEATV--TVFGVPLSHYMEDLLTSTISTNAGKGRQGLEWVIGLINTE  168
+
+
+>sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus 
+musculus OX=10090 GN=Prelid3a PE=1 SV=1
+Length=172
+
+ Score = 69.7 bits (169),  Expect = 4e-14, Method: Compositional matrix adjust.
+ Identities = 46/165 (28%), Positives = 77/165 (47%), Gaps = 1/165 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  V+  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIKAAMRKYPNPMNPCVVGVDVLERSVDGCGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +  AN   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPGLVRAILGANRTLT-YIKERSVVDPAARKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+              T + +EA ++     +   ++        SN  K     E+I+
+Sbjct  120  EKTVLTQEAIITVKGISLGSYLESLMATTISSNAKKGWAAIEWII  164
+
+
+>sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenopus 
+laevis OX=8355 GN=prelid3a PE=2 SV=1
+Length=172
+
+ Score = 69.7 bits (169),  Expect = 5e-14, Method: Compositional matrix adjust.
+ Identities = 43/152 (28%), Positives = 75/152 (49%), Gaps = 1/152 (1%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAERLFPANV  83
+            WD V  A  ++YPNP +  V+  D+V R +    +L S+RLL     +P     +   + 
+Sbjct  14   WDTVIKAAMRKYPNPMNPCVVGVDVVDRNLDSQGRLHSQRLLCTEWGLPSLVRAILGTSR  73
+
+Query  84   AHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRREAWVSS  143
+              + Y+ E S+VDP  + M   + NI+   L+ V+ER VY+ + +N   T + +EA ++ 
+Sbjct  74   TLT-YIKEHSVVDPVEKKMVLCSTNISLTNLVSVDERLVYTPHPENPEQTVLTQEAIITV  132
+
+Query  144  SLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+                +S  ++    +   SN  K     E+I+
+Sbjct  133  KGVSLSSYLEGLMASTISSNARKGWDAIEWII  164
+
+
+>sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo 
+sapiens OX=9606 GN=PRELID3A PE=1 SV=1
+Length=172
+
+ Score = 67.8 bits (164),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 45/165 (27%), Positives = 76/165 (46%), Gaps = 1/165 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  VL  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIQAAMRKYPNPMNPSVLGVDVLQRRVDGRGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +   +   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPSLVRAILGTSRTLT-YIREHSVVDPVEKKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+              T + +EA ++     +   ++        SN  K     E+I+
+Sbjct  120  EMTVLTQEAIITVKGISLGSYLESLMANTISSNAKKGWAAIEWII  164
+
+
+>sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC36.10 
+PE=3 SV=1
+Length=184
+
+ Score = 66.2 bits (160),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 48/170 (28%), Positives = 90/170 (53%), Gaps = 5/170 (3%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K F    + +  ++QV AA WQ+YPN ++ HV+  D + R+V  +  L + RL+T    
+Sbjct  1    MKIFESCHLFQYPFEQVSAAHWQKYPNEHATHVIAVDTLDRKVLDNGVLYTERLITCHQA  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +PRW  +L     A   Y+ E S VD + +T+T  T N+  +  + V+E   YS + +  
+Sbjct  61   LPRWILKLIDG--AQDCYIRETSYVDLKARTLTLLTSNLTFSDRLRVDETVTYSPHPELE  118
+
+Query  131  GWTEIRREAWVS--SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+              T  ++EA +   + +  +S  ++++ +  F    ++  +GFE +L K+
+Sbjct  119  A-TVFQQEARIEALACMKRLSNLIEQWSVDGFGKKASRGKEGFESVLEKI  167
+
+
+>sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopus 
+tropicalis OX=8364 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 64.7 bits (156),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 44/159 (28%), Positives = 80/159 (50%), Gaps = 3/159 (2%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAERLFPAN  82
+            +  V  ++  +YP P  KHVL+   V  +  P   ++ R R+ T  N +P +  R     
+Sbjct  15   FQHVVTSYLNKYPTPLEKHVLSVKTVEEKTDPATGVVYRKRIATCNNVIPSFLRRCSILK  74
+
+Query  83   VAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRREAWVS  142
+            V++ VY+ E+S +D + + MT  T  +  A+   ++E SVY   ++NS WTE  ++  ++
+Sbjct  75   VSN-VYLEEESWLDMKTRVMTLETHCLTWAQYATMKEESVYKECTENSNWTEFTQKGTIT  133
+
+Query  143  SSLFG-VSRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+             +  G ++R ++ F        V K++   E IL +  G
+Sbjct  134  ITGAGFLNRVLETFAQTFLSHGVKKSISIMETILRERCG  172
+
+
+>sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS3 
+PE=1 SV=1
+Length=179
+
+ Score = 64.3 bits (155),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 52/161 (32%), Positives = 79/161 (49%), Gaps = 14/161 (9%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTP-DQKLLSRRLLTKTNRMPRWAERLFP-A  81
+            W++V  A W +YPN  S HV+  D++ RE+      LL+ RL+T     P W   L    
+Sbjct  14   WEKVTTANWMKYPNKISTHVIAVDVLRRELKEHGDVLLTERLITIRQNTPHWMSILVGNT  73
+
+Query  82   NVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN-SGWTEIRREAW  140
+            N+A   YV E S VD +++++T  + N+    ++   E   Y  +  N S  T  +++A 
+Sbjct  74   NLA---YVREVSTVDRRDRSLTMRSCNMTFPHILKCYETVRYVPHPKNPSNVTLFKQDA-  129
+
+Query  141  VSSSLFGV-----SRAVQEFGLARFKSNVTKTMKGFEYILA  176
+                L GV     S  V+ +G+ RF  N  K   GF+ ILA
+Sbjct  130  --KFLSGVPTKTFSEKVENWGVKRFSDNAVKGKVGFDSILA  168
+
+
+>sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopus 
+laevis OX=8355 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 62.4 bits (150),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 44/159 (28%), Positives = 79/159 (50%), Gaps = 3/159 (2%)
+
+Query  24   WDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAERLFPAN  82
+            +  V  ++  +YP P  KHVL    V  +  P   ++ R R+ T  N +P + +R     
+Sbjct  15   FQHVVNSYLNKYPTPLEKHVLAIKTVEEKTDPASGVVYRKRIATCNNVIPSFLQRFSILK  74
+
+Query  83   VAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRREAWVS  142
+            V++ VY+ E+S +D + + MT  +  +  A+   ++E SVY  + +NS WTE  +   V+
+Sbjct  75   VSN-VYLEEESWLDMKTKVMTLKSRCLTWAQYATMKEESVYKESIENSNWTEFTQRGTVT  133
+
+Query  143  SSLFG-VSRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+             +  G ++R ++ F        V K++   E IL +  G
+Sbjct  134  ITGAGFLNRVLETFAQTFLNQGVKKSISIMETILRERCG  172
+
+
+>sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=9606 
+GN=SEC14L5 PE=1 SV=3
+Length=696
+
+ Score = 49.3 bits (116),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 41/164 (25%), Positives = 82/164 (50%), Gaps = 8/164 (5%)
+
+Query  19   VLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAER  77
+            V +  ++ V AA+ +R+P  P     L  +++    +PD  +    ++ ++ R+   A R
+Sbjct  11   VYKYPFELVMAAYEKRFPTCPQIPVFLGSEVLRESRSPDGAV---HVVERSCRLRVDAPR  67
+
+Query  78   LFP--ANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEI  135
+            L    A V H V+V + +I++ + +T+     N   A  +VV E   Y+V+ +N  WT  
+Sbjct  68   LLRKIAGVEHVVFV-QTNILNWKERTLLIEAHNETFANRVVVNEHCSYTVHPENEDWTCF  126
+
+Query  136  RREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+             + A +   S FG   A+++  + ++ +NV +  +  E+ L +L
+Sbjct  127  EQSASLDIRSFFGFENALEKIAMKQYTANVKRGKEVIEHYLNEL  170
+
+
+>sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=9606 
+GN=SEC14L1 PE=1 SV=2
+Length=715
+
+ Score = 48.9 bits (115),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 40/175 (23%), Positives = 84/175 (48%), Gaps = 8/175 (5%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKL--LSRRLLTKT  68
+            KY     V +  ++ + AA+ +R+P  P     +  D V+   + D  +  + RR     
+Sbjct  4    KYQSPVRVYKYPFELIMAAYERRFPTCPLIPMFVGSDTVNEFKSEDGAIHVIERRCKLDV  63
+
+Query  69   NRMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSD  128
+            +  PR  +++  A V + VY ++ + ++ + +T+    +N   +  +++ E   Y+V+ +
+Sbjct  64   D-APRLLKKI--AGVDY-VYFVQKNSLNSRERTLHIEAYNETFSNRVIINEHCCYTVHPE  119
+
+Query  129  NSGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            N  WT   + A +   S FG    V++  + ++ SN+ K  +  EY L +L+ E 
+Sbjct  120  NEDWTCFEQSASLDIKSFFGFESTVEKIAMKQYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=10090 
+GN=Sec14l1 PE=1 SV=1
+Length=715
+
+ Score = 48.5 bits (114),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 39/168 (23%), Positives = 80/168 (48%), Gaps = 8/168 (5%)
+
+Query  19   VLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKL--LSRRLLTKTNRMPRWA  75
+            V +  ++ + AA+ +R+P  P     +  D V    + D  L  + RR     +  PR  
+Sbjct  11   VYKHPFELIMAAYERRFPTCPLIPMFVDSDTVSEFKSEDGALHVIERRCKLDID-APRLL  69
+
+Query  76   ERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEI  135
+            +++  A V + VY ++ + ++ +++T+     N   +  +++ E   Y+V+ +N  WT  
+Sbjct  70   KKI--AGVDY-VYFVQKNSLNSRDRTLHIEAHNETFSNRVIIHEHCCYTVHPENEDWTCF  126
+
+Query  136  RREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+             + A +   S FG    V++  +  + SN+ K  +  EY L +L+ E 
+Sbjct  127  EQSASLDIKSFFGFESTVEKIAMKHYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster 
+OX=7227 GN=retm PE=1 SV=2
+Length=659
+
+ Score = 47.8 bits (112),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 36/167 (22%), Positives = 79/167 (47%), Gaps = 6/167 (4%)
+
+Query  19   VLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAER  77
+            V +  ++ V  A+ +R+P  P    VL  +++  E   D    ++R  ++  ++   A  
+Sbjct  11   VYKYPFELVMKAYERRFPTCPQMPIVLDCEVIKDESLEDG---AKRNTSRRCKLAVDAPY  67
+
+Query  78   LFPANVA-HSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIR  136
+            +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DNS WT   
+Sbjct  68   IFKKLIGVDHVYFLQHNFLDLANRTLSIEAVNESFSSRIEIFERCRYYAHPDNSEWTCFD  127
+
+Query  137  REAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            + A +   + FG   ++++ G+ ++     K  +  E+ + +L+ E 
+Sbjct  128  QSATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEFFIGQLREEG  174
+
+
+>sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis 
+OX=8364 GN=sec14l1 PE=2 SV=1
+Length=707
+
+ Score = 45.4 bits (106),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 40/163 (25%), Positives = 77/163 (47%), Gaps = 6/163 (4%)
+
+Query  19   VLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN-RMPRWAE  76
+            V +  ++ V AA+ +R+P  P     L  DI+    + D  L       K N   PR  +
+Sbjct  11   VYKYPFELVMAAYEKRFPTCPQIPVFLGSDILQEHKSEDGALHVVERSCKLNVDAPRLLK  70
+
+Query  77   RLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIR  136
+            ++  A V   VY ++ + V+ +++T+     N   +  ++V E   YSV+ +N  WT   
+Sbjct  71   KI--AGVEF-VYFIQKNTVNWKDRTLLIEAHNETFSSRVLVNETCSYSVHPENEEWTCFE  127
+
+Query  137  REAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+            + A +   S FG    V++  + ++ +N+ +  +  E+ L +L
+Sbjct  128  QTASLDIKSFFGFESTVEKIAMKQYTANIKRGKEVIEFYLNEL  170
+
+
+>sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus 
+musculus OX=10090 GN=Prelid2 PE=2 SV=1
+Length=177
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 37/164 (23%), Positives = 72/164 (44%), Gaps = 3/164 (2%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V +  ++QV A F ++YPNP  K+V++   V  +      L+ R R+    N +P    +
+Sbjct  10   VFQYPFEQVVACFLRKYPNPMDKNVISVKTVEEKKDESTGLIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRR  137
+            +    V   + + E+S +  Q + M   +  +   +   + E SV+  + +N  WTE  +
+Sbjct  70   VSILKVP-DIQLEEESWLSLQKRNMAIRSHCLTWTQYASMREESVFRESVENPNWTEFIQ  128
+
+Query  138  EAWVSSSLFGVSRAVQE-FGLARFKSNVTKTMKGFEYILAKLQG  180
+               +S +  G    + E F     +    K ++  E +L +  G
+Sbjct  129  TGRISITGAGFLNCILETFASTFLRQGAQKGIRIMEMLLKEQCG  172
+
+
+>sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=retm PE=3 SV=1
+Length=669
+
+ Score = 45.1 bits (105),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 36/167 (22%), Positives = 78/167 (47%), Gaps = 6/167 (4%)
+
+Query  19   VLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPRWAER  77
+            V +  ++ V  A+ +R+P  P    VL  D++  E   +    ++   T+  ++   A  
+Sbjct  11   VYKYPFELVMKAYERRFPKCPQMPIVLDCDVIKIESLENG---AKTNTTRRCKLAVDAPY  67
+
+Query  78   LFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIR  136
+            +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DN+ WT   
+Sbjct  68   IFKKLIGVDFVYFLQHNYLDMSNRTLSIEAVNESFSSRIEIFERCRYYAHPDNAEWTCFD  127
+
+Query  137  REAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            + A +   + FG   ++++ G+ ++     K  +  EY + +L+ E 
+Sbjct  128  QTATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEYFINQLEQEG  174
+
+
+>sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo 
+sapiens OX=9606 GN=PRELID2 PE=2 SV=1
+Length=189
+
+ Score = 43.1 bits (100),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 37/175 (21%), Positives = 77/175 (44%), Gaps = 13/175 (7%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V +  ++QV A+F ++YPNP  K+V++  I+  +      ++ R R+    N +P    +
+Sbjct  10   VYKYPFEQVVASFLRKYPNPMDKNVISVKIMEEKRDESTGVIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANV-----------AHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVN  126
+                 V             ++ + E+S ++P+ + M   +  +   +   ++E SV+  +
+Sbjct  70   SLSTLVILCWKKVSILKVPNIQLEEESWLNPRERNMAIRSHCLTWTQYASMKEESVFRES  129
+
+Query  127  SDNSGWTEIRREAWVSSSLFGVSRAVQE-FGLARFKSNVTKTMKGFEYILAKLQG  180
+             +N  WTE  +   +S +  G    V E F     +    K ++  E +L +  G
+Sbjct  130  MENPNWTEFIQRGRISITGVGFLNCVLETFASTFLRQGAQKGIRIMEMLLKEQCG  184
+
+
+>sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 
+OS=Caenorhabditis elegans OX=6239 GN=T23G5.2 PE=4 SV=3
+Length=719
+
+ Score = 40.8 bits (94),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 22/93 (24%), Positives = 50/93 (54%), Gaps = 1/93 (1%)
+
+Query  87   VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRREAWVS-SSL  145
+            VY  + + +D + +T+     NI+ +  + V+E   Y V+++N  WT   + A +   + 
+Sbjct  78   VYFSQKNSLDRRKRTLDIEATNISFSSRINVKENCTYYVHAENENWTCFEQSASLDVKNF  137
+
+Query  146  FGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+            FG+  AV++  + ++ +N+ K  +  E+ + +L
+Sbjct  138  FGLESAVEKLAVRQYGANLAKGKEILEFFIEEL  170
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.130    0.403    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9961084444
+Results from round 2
+
+
+Query= 6i3v_F
+
+Length=182
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochon...  239     1e-79
+sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochon...  237     5e-79
+sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochon...  236     9e-79
+sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochon...  235     4e-78
+sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Crice...  223     9e-74
+sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus ...  222     1e-73
+sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macac...  222     2e-73
+sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos t...  221     3e-73
+sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo ...  221     4e-73
+sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus m...  220     5e-73
+sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus m...  219     2e-72
+sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus scr...  219     4e-72
+sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo ...  214     8e-71
+sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenop...  213     3e-70
+sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster OX...  199     5e-64
+sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium disc...  194     8e-62
+sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=960...  203     8e-61
+sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=100...  202     1e-60
+sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus mu...  184     6e-59
+sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis ...  198     7e-59
+sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster...  196     1e-58
+sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopu...  183     2e-58
+sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces...  184     5e-58
+sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyc...  182     6e-58
+sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo s...  182     6e-58
+sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscur...  194     2e-57
+sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopu...  181     3e-57
+sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=960...  192     9e-57
+sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaste...  178     1e-55
+sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces...  176     1e-55
+sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces ...  175     3e-55
+sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces...  165     4e-51
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q16KN5|RETM_AEDAE Protein real-time OS=Aedes aegypti OX=7159 G...  187     6e-55
+sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 ...  159     2e-44
+sp|Q7PWB1|RETM_ANOGA Protein real-time OS=Anopheles gambiae OX=71...  111     2e-27
+
+
+>sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochondrial 
+OS=Gallus gallus OX=9031 GN=PRELID1 PE=2 SV=1
+Length=215
+
+ Score = 239 bits (609),  Expect = 1e-79, Method: Composition-based stats.
+ Identities = 143/173 (83%), Positives = 156/173 (90%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M KY     VL+  WDQVFAAFWQRYPNPYSKHVLTEDIVHREVT D KLLSRRLLTKTN
+Sbjct  1    MGKYCASLGVLKGPWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTADHKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAER FPANVAH+VY++EDSIVDP+N+TMTTFTWNINHARLM VEER VY VN +N
+Sbjct  61   RMPRWAERFFPANVAHNVYIVEDSIVDPKNRTMTTFTWNINHARLMAVEERCVYRVNPEN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            S WTE++REAWVSSSLFGVSRAVQEFGLARFKSNVTK+ KGFEY+LA++QGEA
+Sbjct  121  SSWTEVKREAWVSSSLFGVSRAVQEFGLARFKSNVTKSTKGFEYVLARMQGEA  173
+
+
+>sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochondrial 
+OS=Mus musculus OX=10090 GN=Prelid1 PE=1 SV=1
+Length=217
+
+ Score = 237 bits (604),  Expect = 5e-79, Method: Composition-based stats.
+ Identities = 170/173 (98%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochondrial 
+OS=Homo sapiens OX=9606 GN=PRELID1 PE=1 SV=1
+Length=219
+
+ Score = 236 bits (603),  Expect = 9e-79, Method: Composition-based stats.
+ Identities = 171/173 (99%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochondrial 
+OS=Bos taurus OX=9913 GN=PRELID1 PE=2 SV=1
+Length=219
+
+ Score = 235 bits (599),  Expect = 4e-78, Method: Composition-based stats.
+ Identities = 169/173 (98%), Positives = 170/173 (98%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVT DQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTSDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYRVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Cricetulus 
+griseus OX=10029 GN=PRELID3B PE=2 SV=1
+Length=195
+
+ Score = 223 bits (568),  Expect = 9e-74, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWEMVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVKKTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus 
+norvegicus OX=10116 GN=Prelid3b PE=1 SV=1
+Length=195
+
+ Score = 222 bits (567),  Expect = 1e-73, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPIRRTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macaca 
+fascicularis OX=9541 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 222 bits (566),  Expect = 2e-73, Method: Composition-based stats.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  DKTILTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos 
+taurus OX=9913 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 221 bits (564),  Expect = 3e-73, Method: Composition-based stats.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTILTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo 
+sapiens OX=9606 GN=PRELID3B PE=1 SV=2
+Length=194
+
+ Score = 221 bits (564),  Expect = 4e-73, Method: Composition-based stats.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus 
+musculus OX=10090 GN=Prelid3a PE=1 SV=1
+Length=172
+
+ Score = 220 bits (561),  Expect = 5e-73, Method: Composition-based stats.
+ Identities = 46/166 (28%), Positives = 77/166 (46%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  V+  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIKAAMRKYPNPMNPCVVGVDVLERSVDGCGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +  AN   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPGLVRAILGANRTLT-YIKERSVVDPAARKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +   ++        SN  K     E+I+ 
+Sbjct  120  EKTVLTQEAIITVKGISLGSYLESLMATTISSNAKKGWAAIEWIIE  165
+
+
+>sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus 
+musculus OX=10090 GN=Prelid3b PE=1 SV=2
+Length=195
+
+ Score = 219 bits (559),  Expect = 2e-72, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 85/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVTRTMELKSTNISFTNMVSVDERLTYKPHLQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus 
+scrofa OX=9823 GN=PRELID3B PE=3 SV=1
+Length=194
+
+ Score = 219 bits (557),  Expect = 4e-72, Method: Composition-based stats.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R +    KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDASGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  +S
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVAKTMELKSTNISFTNMVSVDERLIYKPHPQDS  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo 
+sapiens OX=9606 GN=PRELID3A PE=1 SV=1
+Length=172
+
+ Score = 214 bits (546),  Expect = 8e-71, Method: Composition-based stats.
+ Identities = 45/166 (27%), Positives = 76/166 (46%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  VL  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIQAAMRKYPNPMNPSVLGVDVLQRRVDGRGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +   +   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPSLVRAILGTSRTLT-YIREHSVVDPVEKKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +   ++        SN  K     E+I+ 
+Sbjct  120  EMTVLTQEAIITVKGISLGSYLESLMANTISSNAKKGWAAIEWIIE  165
+
+
+>sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenopus 
+laevis OX=8355 GN=prelid3a PE=2 SV=1
+Length=172
+
+ Score = 213 bits (542),  Expect = 3e-70, Method: Composition-based stats.
+ Identities = 44/166 (27%), Positives = 80/166 (48%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            ++ +  + V    WD V  A  ++YPNP +  V+  D+V R +    +L S+RLL     
+Sbjct  1    MRIWSSEHVFSHPWDTVIKAAMRKYPNPMNPCVVGVDVVDRNLDSQGRLHSQRLLCTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +   +   + Y+ E S+VDP  + M   + NI+   L+ V+ER VY+ + +N 
+Sbjct  61   LPSLVRAILGTSRTLT-YIKEHSVVDPVEKKMVLCSTNISLTNLVSVDERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +S  ++    +   SN  K     E+I+ 
+Sbjct  120  EQTVLTQEAIITVKGVSLSSYLEGLMASTISSNARKGWDAIEWIIQ  165
+
+
+>sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster 
+OX=7227 GN=slmo PE=2 SV=1
+Length=215
+
+ Score = 199 bits (505),  Expect = 5e-64, Method: Composition-based stats.
+ Identities = 43/171 (25%), Positives = 82/171 (48%), Gaps = 3/171 (2%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + +    W+ V  A W++YPNP +  ++  D+V R V  D  L + RL+     
+Sbjct  1    MKIWTSEHIFNHPWETVTQAAWRKYPNPMTPSIIGTDVVERRVV-DGVLHTHRLVQSKWY  59
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+             P+W   L     A + +  E S VDP+ + M   T N+   R + V+E   Y  +  ++
+Sbjct  60   FPKWTHALIGT--AKTCFASERSTVDPERKQMVLKTNNLTFCRNISVDEVLYYEPHPSDA  117
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T +++EA V+     +S  +++   +   +N  K  +G E+++  +  E
+Sbjct  118  SKTLLKQEATVTVFGVPLSHYMEDLLTSTISTNAGKGRQGLEWVIGLINTE  168
+
+
+>sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium 
+discoideum OX=44689 GN=slmo PE=3 SV=1
+Length=228
+
+ Score = 194 bits (492),  Expect = 8e-62, Method: Composition-based stats.
+ Identities = 52/167 (31%), Positives = 86/167 (51%), Gaps = 4/167 (2%)
+
+Query  17   QSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPD-QKLLSRRLLTKTNRMPRWA  75
+            +   +  W     A +++YP+P    +L+ DI+ +E+ P    L   +L+      P W 
+Sbjct  8    KHTYKHLWSDASTASFRKYPSPERPDILSIDILSKEIDPTTGVLKCTKLIICKGNTPSWL  67
+
+Query  76   ERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEI  135
+            + +  +         E++ VDP+N+ MT  T N+N   ++ V+E   Y  + DN  WT  
+Sbjct  68   KSILGSG---ECLFYEETTVDPKNKIMTLKTKNLNFTNILGVDEVCTYEQHPDNEEWTLF  124
+
+Query  136  RREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+             +EA V+SS+FGV+R ++ F L RF +N  K  K  E  + K+Q EA
+Sbjct  125  TQEATVTSSIFGVARKMEAFCLDRFVANAGKGRKIMEDTIIKVQKEA  171
+
+
+>sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=9606 
+GN=SEC14L1 PE=1 SV=2
+Length=715
+
+ Score = 203 bits (517),  Expect = 8e-61, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 80/174 (46%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ + AA+ +R+P  P     +  D V+   + D  +    ++ +  +
+Sbjct  4    KYQSPVRVYKYPFELIMAAYERRFPTCPLIPMFVGSDTVNEFKSEDGAIH---VIERRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         VY ++ + ++ + +T+    +N   +  +++ E   Y+V+ +N
+Sbjct  61   LDVDAPRLLKKIAGVDYVYFVQKNSLNSRERTLHIEAYNETFSNRVIINEHCCYTVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  + ++ SN+ K  +  EY L +L+ E 
+Sbjct  121  EDWTCFEQSASLDIKSFFGFESTVEKIAMKQYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=10090 
+GN=Sec14l1 PE=1 SV=1
+Length=715
+
+ Score = 202 bits (515),  Expect = 1e-60, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 78/174 (45%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ + AA+ +R+P  P     +  D V    + D  L    ++ +  +
+Sbjct  4    KYQSPVRVYKHPFELIMAAYERRFPTCPLIPMFVDSDTVSEFKSEDGALH---VIERRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         VY ++ + ++ +++T+     N   +  +++ E   Y+V+ +N
+Sbjct  61   LDIDAPRLLKKIAGVDYVYFVQKNSLNSRDRTLHIEAHNETFSNRVIIHEHCCYTVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  +  + SN+ K  +  EY L +L+ E 
+Sbjct  121  EDWTCFEQSASLDIKSFFGFESTVEKIAMKHYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus 
+musculus OX=10090 GN=Prelid2 PE=2 SV=1
+Length=177
+
+ Score = 184 bits (468),  Expect = 6e-59, Method: Composition-based stats.
+ Identities = 36/164 (22%), Positives = 72/164 (44%), Gaps = 3/164 (2%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V +  ++QV A F ++YPNP  K+V++   V  +      L+ R R+    N +P    +
+Sbjct  10   VFQYPFEQVVACFLRKYPNPMDKNVISVKTVEEKKDESTGLIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRR  137
+            +    V   + + E+S +  Q + M   +  +   +   + E SV+  + +N  WTE  +
+Sbjct  70   VSILKVP-DIQLEEESWLSLQKRNMAIRSHCLTWTQYASMREESVFRESVENPNWTEFIQ  128
+
+Query  138  EAWVSSSLFGVSRAV-QEFGLARFKSNVTKTMKGFEYILAKLQG  180
+               +S +  G    + + F     +    K ++  E +L +  G
+Sbjct  129  TGRISITGAGFLNCILETFASTFLRQGAQKGIRIMEMLLKEQCG  172
+
+
+>sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis 
+OX=8364 GN=sec14l1 PE=2 SV=1
+Length=707
+
+ Score = 198 bits (503),  Expect = 7e-59, Method: Composition-based stats.
+ Identities = 40/174 (23%), Positives = 78/174 (45%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ V AA+ +R+P  P     L  DI+    + D  L       K N 
+Sbjct  4    KYQSPVRVYKYPFELVMAAYEKRFPTCPQIPVFLGSDILQEHKSEDGALHVVERSCKLNV  63
+
+Query  71   -MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+              PR  +++        VY ++ + V+ +++T+     N   +  ++V E   YSV+ +N
+Sbjct  64   DAPRLLKKIAGV---EFVYFIQKNTVNWKDRTLLIEAHNETFSSRVLVNETCSYSVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  + ++ +N+ +  +  E+ L +L  + 
+Sbjct  121  EEWTCFEQTASLDIKSFFGFESTVEKIAMKQYTANIKRGKEVIEFYLNELISQG  174
+
+
+>sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster 
+OX=7227 GN=retm PE=1 SV=2
+Length=659
+
+ Score = 196 bits (499),  Expect = 1e-58, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 80/174 (46%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            K+     V +  ++ V  A+ +R+P  P    VL  +++  E   D     +R  ++  +
+Sbjct  4    KFQSPVRVYKYPFELVMKAYERRFPTCPQMPIVLDCEVIKDESLEDGA---KRNTSRRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DN
+Sbjct  61   LAVDAPYIFKKLIGVDHVYFLQHNFLDLANRTLSIEAVNESFSSRIEIFERCRYYAHPDN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            S WT   + A +   + FG   ++++ G+ ++     K  +  E+ + +L+ E 
+Sbjct  121  SEWTCFDQSATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEFFIGQLREEG  174
+
+
+>sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopus 
+tropicalis OX=8364 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 183 bits (465),  Expect = 2e-58, Method: Composition-based stats.
+ Identities = 45/168 (27%), Positives = 81/168 (48%), Gaps = 3/168 (2%)
+
+Query  15   LGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPR  73
+              + V    +  V  ++  +YP P  KHVL+   V  +  P   ++ R R+ T  N +P 
+Sbjct  6    EARKVYPYPFQHVVTSYLNKYPTPLEKHVLSVKTVEEKTDPATGVVYRKRIATCNNVIPS  65
+
+Query  74   WAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWT  133
+            +  R     V+ +VY+ E+S +D + + MT  T  +  A+   ++E SVY   ++NS WT
+Sbjct  66   FLRRCSILKVS-NVYLEEESWLDMKTRVMTLETHCLTWAQYATMKEESVYKECTENSNWT  124
+
+Query  134  EIRREAWVSSSLFGV-SRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+            E  ++  ++ +  G  +R ++ F        V K++   E IL +  G
+Sbjct  125  EFTQKGTITITGAGFLNRVLETFAQTFLSHGVKKSISIMETILRERCG  172
+
+
+>sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS2 
+PE=1 SV=1
+Length=230
+
+ Score = 184 bits (467),  Expect = 5e-58, Method: Composition-based stats.
+ Identities = 50/170 (29%), Positives = 88/170 (52%), Gaps = 6/170 (4%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQK-LLSRRLLTKTN  69
+            +K F         WDQV AA W++YPN  S HV+  D++ RE+    K L++ RL+T   
+Sbjct  1    MKLFQNSYDFNYPWDQVTAANWKKYPNEISTHVIAVDVLRRELKDQGKVLVTERLITVKQ  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+             +P+W   +      +  +V E S+VD   +++T  + N+    L+ V E   YS + D+
+Sbjct  61   GVPKWIMMMLGG--TNMSHVREVSVVDLNKKSLTMRSCNLTMCNLLKVYETVTYSPHPDD  118
+
+Query  130  S-GWTEIRREAWVSS--SLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+            S   T  ++EA +++  S+  +   ++++ + RF  N  K   GF+ +L 
+Sbjct  119  SANKTLFQQEAQITAYGSIRKLCNKMEDWSVQRFCENAKKGKMGFDAVLQ  168
+
+
+>sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC36.10 
+PE=3 SV=1
+Length=184
+
+ Score = 182 bits (463),  Expect = 6e-58, Method: Composition-based stats.
+ Identities = 48/171 (28%), Positives = 90/171 (53%), Gaps = 5/171 (3%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K F    + +  ++QV AA WQ+YPN ++ HV+  D + R+V  +  L + RL+T    
+Sbjct  1    MKIFESCHLFQYPFEQVSAAHWQKYPNEHATHVIAVDTLDRKVLDNGVLYTERLITCHQA  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +PRW  +L     A   Y+ E S VD + +T+T  T N+  +  + V+E   YS + +  
+Sbjct  61   LPRWILKLIDG--AQDCYIRETSYVDLKARTLTLLTSNLTFSDRLRVDETVTYSPHPELE  118
+
+Query  131  GWTEIRREAWVS--SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQ  179
+              T  ++EA +   + +  +S  ++++ +  F    ++  +GFE +L K+ 
+Sbjct  119  A-TVFQQEARIEALACMKRLSNLIEQWSVDGFGKKASRGKEGFESVLEKIN  168
+
+
+>sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo 
+sapiens OX=9606 GN=PRELID2 PE=2 SV=1
+Length=189
+
+ Score = 182 bits (463),  Expect = 6e-58, Method: Composition-based stats.
+ Identities = 36/175 (21%), Positives = 77/175 (44%), Gaps = 13/175 (7%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V +  ++QV A+F ++YPNP  K+V++  I+  +      ++ R R+    N +P    +
+Sbjct  10   VYKYPFEQVVASFLRKYPNPMDKNVISVKIMEEKRDESTGVIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANV-----------AHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVN  126
+                 V             ++ + E+S ++P+ + M   +  +   +   ++E SV+  +
+Sbjct  70   SLSTLVILCWKKVSILKVPNIQLEEESWLNPRERNMAIRSHCLTWTQYASMKEESVFRES  129
+
+Query  127  SDNSGWTEIRREAWVSSSLFGVSRAV-QEFGLARFKSNVTKTMKGFEYILAKLQG  180
+             +N  WTE  +   +S +  G    V + F     +    K ++  E +L +  G
+Sbjct  130  MENPNWTEFIQRGRISITGVGFLNCVLETFASTFLRQGAQKGIRIMEMLLKEQCG  184
+
+
+>sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=retm PE=3 SV=1
+Length=669
+
+ Score = 194 bits (492),  Expect = 2e-57, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 79/174 (45%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            K+     V +  ++ V  A+ +R+P  P    VL  D++  E   +     +   T+  +
+Sbjct  4    KFQSPVRVYKYPFELVMKAYERRFPKCPQMPIVLDCDVIKIESLENGA---KTNTTRRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DN
+Sbjct  61   LAVDAPYIFKKLIGVDFVYFLQHNYLDMSNRTLSIEAVNESFSSRIEIFERCRYYAHPDN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            + WT   + A +   + FG   ++++ G+ ++     K  +  EY + +L+ E 
+Sbjct  121  AEWTCFDQTATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEYFINQLEQEG  174
+
+
+>sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopus 
+laevis OX=8355 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 181 bits (458),  Expect = 3e-57, Method: Composition-based stats.
+ Identities = 45/164 (27%), Positives = 79/164 (48%), Gaps = 3/164 (2%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V    +  V  ++  +YP P  KHVL    V  +  P   ++ R R+ T  N +P + +R
+Sbjct  10   VYPYPFQHVVNSYLNKYPTPLEKHVLAIKTVEEKTDPASGVVYRKRIATCNNVIPSFLQR  69
+
+Query  78   LFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRR  137
+                 V+ +VY+ E+S +D + + MT  +  +  A+   ++E SVY  + +NS WTE  +
+Sbjct  70   FSILKVS-NVYLEEESWLDMKTKVMTLKSRCLTWAQYATMKEESVYKESIENSNWTEFTQ  128
+
+Query  138  EAWVSSSLFGV-SRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+               V+ +  G  +R ++ F        V K++   E IL +  G
+Sbjct  129  RGTVTITGAGFLNRVLETFAQTFLNQGVKKSISIMETILRERCG  172
+
+
+>sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=9606 
+GN=SEC14L5 PE=1 SV=3
+Length=696
+
+ Score = 192 bits (488),  Expect = 9e-57, Method: Composition-based stats.
+ Identities = 42/175 (24%), Positives = 85/175 (49%), Gaps = 8/175 (5%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +Y     V +  ++ V AA+ +R+P  P     L  +++    +PD  +    ++ ++ R
+Sbjct  4    RYQSPVRVYKYPFELVMAAYEKRFPTCPQIPVFLGSEVLRESRSPDGAVH---VVERSCR  60
+
+Query  71   MPRWAERLFP--ANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSD  128
+            +   A RL    A V H V+V + +I++ + +T+     N   A  +VV E   Y+V+ +
+Sbjct  61   LRVDAPRLLRKIAGVEHVVFV-QTNILNWKERTLLIEAHNETFANRVVVNEHCSYTVHPE  119
+
+Query  129  NSGWTEIRREAWVSS-SLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            N  WT   + A +   S FG   A+++  + ++ +NV +  +  E+ L +L  + 
+Sbjct  120  NEDWTCFEQSASLDIRSFFGFENALEKIAMKQYTANVKRGKEVIEHYLNELISQG  174
+
+
+>sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaster 
+OX=7227 GN=prel PE=2 SV=3
+Length=236
+
+ Score = 178 bits (452),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 76/165 (46%), Positives = 103/165 (62%), Gaps = 6/165 (4%)
+
+Query  14   FLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPR  73
+               ++V   SW  V  A+W RYPNP S HVLTED + REV  D KL SRRLL+KTN +P+
+Sbjct  8    CRTETVFDYSWMNVVVAYWNRYPNPSSTHVLTEDTIQREVR-DGKLFSRRLLSKTNPVPK  66
+
+Query  74   WAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWT  133
+            W  R +       V ++EDS++DP  +T TTFT N+   ++M V+E  VYS   D S  T
+Sbjct  67   WGARFYNN---VPVKIVEDSVLDPVKKTFTTFTRNLGMTKIMKVDEIVVYSEQKDGS--T  121
+
+Query  134  EIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+               R A++SS +FG SRA++ FG+ RFK+N  K   GF Y+L ++
+Sbjct  122  LAVRRAYISSQVFGFSRAIRAFGIERFKANGNKASNGFNYVLRRM  166
+
+
+>sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS1 
+PE=1 SV=1
+Length=175
+
+ Score = 176 bits (446),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 54/171 (32%), Positives = 88/171 (51%), Gaps = 2/171 (1%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MV       +  + +  V  AF+ RYPNPYS HVL+ D + R V  +  L + RLL K+ 
+Sbjct  1    MVLLHKSTHIFPTDFASVSRAFFNRYPNPYSPHVLSIDTISRNVDQEGNLRTTRLLKKSG  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            ++P W +           +++E S+V+P N TM T+T N++H  +M VEE + Y  +S  
+Sbjct  61   KLPTWVKPFLRG--ITETWIIEVSVVNPANSTMKTYTRNLDHTGIMKVEEYTTYQFDSAT  118
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+            S      R  + S    G+   V+++   +F  NV K+  G  +++ KL+ 
+Sbjct  119  SSTIADSRVKFSSGFNMGIKSKVEDWSRTKFDENVKKSRMGMAFVIQKLEE  169
+
+
+>sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPAP8A3.10 
+PE=3 SV=1
+Length=171
+
+ Score = 175 bits (444),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 59/169 (35%), Positives = 101/169 (60%), Gaps = 4/169 (2%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M      ++ L +SW+ V +A+  RYPNPYS HV++ D++ R V  + +L + RLL K  
+Sbjct  1    MTAICTDKTELNASWNTVSSAWLTRYPNPYSLHVVSADVLERYVDDEGRLYTERLLVKQG  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            R+PRWA  L   N +   Y+LE S++DP  Q + + T+N++H +++ V E S +  +S+N
+Sbjct  61   RLPRWASDLLNVNKS---YILERSVIDPSKQELKSETFNLDHVKILRVIEYSRFIQSSEN  117
+
+Query  130  SGWTEIRREA-WVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAK  177
+               T +   A +VS   FG+ R VQ++ L RF+  ++ + +G  Y++ +
+Sbjct  118  CSKTIVDTIAKFVSPLRFGLGRRVQKYSLKRFQEQLSSSRRGLLYVIQQ  166
+
+
+>sp|Q16KN5|RETM_AEDAE Protein real-time OS=Aedes aegypti OX=7159 
+GN=retm PE=3 SV=1
+Length=646
+
+ Score = 187 bits (474),  Expect = 6e-55, Method: Composition-based stats.
+ Identities = 35/174 (20%), Positives = 77/174 (44%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     + +  ++ V AA+ +R+P  P    VL  +I+    T +     +R   +  +
+Sbjct  4    KYESPVRIYKYPFELVMAAYERRFPTCPQMPIVLDCEIIDDAETDNGA---KRETKRRCK  60
+
+Query  71   MPRWAERLFPANVAHSV-YVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  LF   +   V Y ++ + +D + +T+     N   +  + + E+  Y  + +N
+Sbjct  61   LAVDAPYLFKKIIGIDVAYFIQTNFLDLKTRTLNIEAINETFSSRIEIFEKCRYYAHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   + FG   ++++ G+ ++     K  +  EY + +L+ E 
+Sbjct  121  PDWTCFDQVATLDIKNFFGFEHSMEKMGMKQYSQTTQKGKEIIEYFINELKKEG  174
+
+
+>sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS3 
+PE=1 SV=1
+Length=179
+
+ Score = 165 bits (417),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 49/173 (28%), Positives = 78/173 (45%), Gaps = 6/173 (3%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQ-KLLSRRLLTKTN  69
+            +K F         W++V  A W +YPN  S HV+  D++ RE+      LL+ RL+T   
+Sbjct  1    MKSFQKSYEFDYPWEKVTTANWMKYPNKISTHVIAVDVLRRELKEHGDVLLTERLITIRQ  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+              P W   L      +  YV E S VD +++++T  + N+    ++   E   Y  +  N
+Sbjct  61   NTPHWMSILVGN--TNLAYVREVSTVDRRDRSLTMRSCNMTFPHILKCYETVRYVPHPKN  118
+
+Query  130  S-GWTEIRREAWVSSSL--FGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQ  179
+                T  +++A   S +     S  V+ +G+ RF  N  K   GF+ ILA   
+Sbjct  119  PSNVTLFKQDAKFLSGVPTKTFSEKVENWGVKRFSDNAVKGKVGFDSILAMFN  171
+
+
+>sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 
+OS=Caenorhabditis elegans OX=6239 GN=T23G5.2 PE=4 SV=3
+Length=719
+
+ Score = 159 bits (401),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 32/169 (19%), Positives = 76/169 (45%), Gaps = 6/169 (4%)
+
+Query  13   YFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRM  71
+            Y     + +  ++ V AA+  R+P  P     +  ++ +   + D       ++ +  ++
+Sbjct  5    YRSPVRIYKHPFEIVMAAYEMRFPTCPQIPIFVGSEVTYEYKSVDGA---EWVIDRKCQL  61
+
+Query  72   PRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+               A  L         VY  + + +D + +T+     NI+ +  + V+E   Y V+++N 
+Sbjct  62   NVEAPYLVKKIAGVDYVYFSQKNSLDRRKRTLDIEATNISFSSRINVKENCTYYVHAENE  121
+
+Query  131  GWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+             WT   + A +   + FG+  AV++  + ++ +N+ K  +  E+ + +L
+Sbjct  122  NWTCFEQSASLDVKNFFGLESAVEKLAVRQYGANLAKGKEILEFFIEEL  170
+
+
+>sp|Q7PWB1|RETM_ANOGA Protein real-time OS=Anopheles gambiae OX=7165 
+GN=retm PE=3 SV=4
+Length=684
+
+ Score = 111 bits (277),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 28/187 (15%), Positives = 71/187 (38%), Gaps = 29/187 (16%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHR-EVTPDQKLLSR-RLLTKTN  69
+            KY     + +  ++ V A F + +    S       ++ R +V     +    +  T T 
+Sbjct  4    KYESPVRIYKYPFELVVAGF-RNFCRQKS-------VLRRGKVCEMGSIFGEAKTTTNTW  55
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNI-------------NHARLMV  116
+             + RW+  +    +     ++E+ +       +  +  N              + A  + 
+Sbjct  56   CIRRWSFAVVCKKI-----IIEEFLFLFVKHQLYQYLCNHIVNIEYAYHKPYNSFATRVE  110
+
+Query  117  VEERSVYSVNSDNSGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+            + E+  Y  + +N  WT   + A +   + FG+  ++++ G+ ++     K  +  E+ +
+Sbjct  111  IFEKCRYYAHPENPDWTCFDQTATLDIKNFFGIEHSMEKMGMKQYTQTTLKGKEIIEFFV  170
+
+Query  176  AKLQGEA  182
+             +L+ E 
+Sbjct  171  NELKQEG  177
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.138    0.370    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9961084444
+Results from round 3
+
+
+Query= 6i3v_F
+
+Length=182
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochon...  230     2e-76
+sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochon...  227     4e-75
+sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochon...  226     9e-75
+sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochon...  225     3e-74
+sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Crice...  221     7e-73
+sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus ...  219     2e-72
+sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macac...  217     1e-71
+sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo ...  217     2e-71
+sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus m...  216     2e-71
+sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos t...  216     3e-71
+sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus m...  216     3e-71
+sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus scr...  214     3e-70
+sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo ...  212     1e-69
+sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenop...  211     2e-69
+sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster...  213     8e-65
+sp|Q16KN5|RETM_AEDAE Protein real-time OS=Aedes aegypti OX=7159 G...  212     1e-64
+sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=960...  211     1e-63
+sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis ...  210     2e-63
+sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscur...  209     2e-63
+sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster OX...  196     5e-63
+sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=100...  207     2e-62
+sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=960...  204     4e-61
+sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium disc...  192     4e-61
+sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces...  187     3e-59
+sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyc...  179     1e-56
+sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopu...  177     4e-56
+sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus mu...  177     9e-56
+sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces...  175     3e-55
+sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopu...  175     3e-55
+sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 ...  188     3e-55
+sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo s...  175     3e-55
+sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces...  174     6e-55
+sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaste...  176     1e-54
+sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces ...  171     1e-53
+sp|Q7PWB1|RETM_ANOGA Protein real-time OS=Anopheles gambiae OX=71...  167     2e-47
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q90673|PRLD1_CHICK PRELI domain-containing protein 1, mitochondrial 
+OS=Gallus gallus OX=9031 GN=PRELID1 PE=2 SV=1
+Length=215
+
+ Score = 230 bits (587),  Expect = 2e-76, Method: Composition-based stats.
+ Identities = 143/173 (83%), Positives = 156/173 (90%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M KY     VL+  WDQVFAAFWQRYPNPYSKHVLTEDIVHREVT D KLLSRRLLTKTN
+Sbjct  1    MGKYCASLGVLKGPWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTADHKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAER FPANVAH+VY++EDSIVDP+N+TMTTFTWNINHARLM VEER VY VN +N
+Sbjct  61   RMPRWAERFFPANVAHNVYIVEDSIVDPKNRTMTTFTWNINHARLMAVEERCVYRVNPEN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            S WTE++REAWVSSSLFGVSRAVQEFGLARFKSNVTK+ KGFEY+LA++QGEA
+Sbjct  121  SSWTEVKREAWVSSSLFGVSRAVQEFGLARFKSNVTKSTKGFEYVLARMQGEA  173
+
+
+>sp|Q8R107|PRLD1_MOUSE PRELI domain-containing protein 1, mitochondrial 
+OS=Mus musculus OX=10090 GN=Prelid1 PE=1 SV=1
+Length=217
+
+ Score = 227 bits (579),  Expect = 4e-75, Method: Composition-based stats.
+ Identities = 170/173 (98%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochondrial 
+OS=Homo sapiens OX=9606 GN=PRELID1 PE=1 SV=1
+Length=219
+
+ Score = 226 bits (577),  Expect = 9e-75, Method: Composition-based stats.
+ Identities = 171/173 (99%), Positives = 171/173 (99%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYCVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q32KN9|PRLD1_BOVIN PRELI domain-containing protein 1, mitochondrial 
+OS=Bos taurus OX=9913 GN=PRELID1 PE=2 SV=1
+Length=219
+
+ Score = 225 bits (573),  Expect = 3e-74, Method: Composition-based stats.
+ Identities = 169/173 (98%), Positives = 170/173 (98%), Gaps = 0/173 (0%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVT DQKLLSRRLLTKTN
+Sbjct  1    MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTSDQKLLSRRLLTKTN  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            RMPRWAERLFPANVAHSVY+LEDSIVDPQNQTMTTFTWNINHARLMVVEER VY VNSDN
+Sbjct  61   RMPRWAERLFPANVAHSVYILEDSIVDPQNQTMTTFTWNINHARLMVVEERCVYRVNSDN  120
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA
+Sbjct  121  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  173
+
+
+>sp|Q6TMK8|PLD3B_CRIGR PRELI domain containing protein 3B OS=Cricetulus 
+griseus OX=10029 GN=PRELID3B PE=2 SV=1
+Length=195
+
+ Score = 221 bits (562),  Expect = 7e-73, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWEMVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVKKTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q6P9U4|PLD3B_RAT PRELI domain containing protein 3B OS=Rattus 
+norvegicus OX=10116 GN=Prelid3b PE=1 SV=1
+Length=195
+
+ Score = 219 bits (559),  Expect = 2e-72, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPIRRTMELKSTNISFTNMVSVDERLTYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q4R5S9|PLD3B_MACFA PRELI domain containing protein 3B OS=Macaca 
+fascicularis OX=9541 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 217 bits (554),  Expect = 1e-71, Method: Composition-based stats.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  DKTILTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo 
+sapiens OX=9606 GN=PRELID3B PE=1 SV=2
+Length=194
+
+ Score = 217 bits (552),  Expect = 2e-71, Method: Composition-based stats.
+ Identities = 49/171 (29%), Positives = 86/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|Q8VE85|PLD3A_MOUSE PRELI domain containing protein 3A OS=Mus 
+musculus OX=10090 GN=Prelid3a PE=1 SV=1
+Length=172
+
+ Score = 216 bits (550),  Expect = 2e-71, Method: Composition-based stats.
+ Identities = 46/166 (28%), Positives = 77/166 (46%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  V+  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIKAAMRKYPNPMNPCVVGVDVLERSVDGCGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +  AN   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPGLVRAILGANRTLT-YIKERSVVDPAARKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +   ++        SN  K     E+I+ 
+Sbjct  120  EKTVLTQEAIITVKGISLGSYLESLMATTISSNAKKGWAAIEWIIE  165
+
+
+>sp|Q58DB0|PLD3B_BOVIN PRELI domain containing protein 3B OS=Bos 
+taurus OX=9913 GN=PRELID3B PE=2 SV=1
+Length=194
+
+ Score = 216 bits (551),  Expect = 3e-71, Method: Composition-based stats.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R + P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  + 
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVEKTMELKSTNISFTNMVSVDERLIYKPHPQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTILTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q9CYY7|PLD3B_MOUSE PRELI domain containing protein 3B OS=Mus 
+musculus OX=10090 GN=Prelid3b PE=1 SV=2
+Length=195
+
+ Score = 216 bits (551),  Expect = 3e-71, Method: Composition-based stats.
+ Identities = 50/171 (29%), Positives = 85/171 (50%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R V P  KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHVDPSGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + L  A    + YV E S+VDP  +TM   + NI+   ++ V+ER  Y  +  + 
+Sbjct  61   LPSIVKSLIGAARTKT-YVQEHSVVDPVTRTMELKSTNISFTNMVSVDERLTYKPHLQDP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +S  ++    +   SN +K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEALITVKGVSLSSYLEGLMASTISSNASKGREAMEWVIHKLNAE  170
+
+
+>sp|A5GFX0|PLD3B_PIG PRELI domain containing protein 3B OS=Sus 
+scrofa OX=9823 GN=PRELID3B PE=3 SV=1
+Length=194
+
+ Score = 214 bits (544),  Expect = 3e-70, Method: Composition-based stats.
+ Identities = 47/171 (27%), Positives = 84/171 (49%), Gaps = 1/171 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    W+ V  A  Q+YPNP +  V+  D++ R +    KL S RLL+    
+Sbjct  1    MKIWTSEHVFDHPWETVTTAAMQKYPNPMNPSVVGVDVLDRHIDASGKLHSHRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P   + +  A    + YV E S+VDP  +TM   + NI+   ++ V+ER +Y  +  +S
+Sbjct  61   LPSIVKSIIGAARTKT-YVQEHSVVDPVAKTMELKSTNISFTNMVSVDERLIYKPHPQDS  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T + +EA ++     +   ++    +   SN  K  +  E+++ KL  E
+Sbjct  120  EKTVLTQEAIITVKGVSLGSYLEGLMASTISSNANKGREAMEWVIHKLNAE  170
+
+
+>sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo 
+sapiens OX=9606 GN=PRELID3A PE=1 SV=1
+Length=172
+
+ Score = 212 bits (539),  Expect = 1e-69, Method: Composition-based stats.
+ Identities = 45/166 (27%), Positives = 76/166 (46%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + V    WD V  A  ++YPNP +  VL  D++ R V    +L S RLL+    
+Sbjct  1    MKIWSSEHVFGHPWDTVIQAAMRKYPNPMNPSVLGVDVLQRRVDGRGRLHSLRLLSTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +   +   + Y+ E S+VDP  + M   + NI    L+ V ER VY+ + +N 
+Sbjct  61   LPSLVRAILGTSRTLT-YIREHSVVDPVEKKMELCSTNITLTNLVSVNERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +   ++        SN  K     E+I+ 
+Sbjct  120  EMTVLTQEAIITVKGISLGSYLESLMANTISSNAKKGWAAIEWIIE  165
+
+
+>sp|Q6GM21|PLD3A_XENLA PRELI domain containing protein 3A OS=Xenopus 
+laevis OX=8355 GN=prelid3a PE=2 SV=1
+Length=172
+
+ Score = 211 bits (537),  Expect = 2e-69, Method: Composition-based stats.
+ Identities = 44/166 (27%), Positives = 80/166 (48%), Gaps = 1/166 (1%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            ++ +  + V    WD V  A  ++YPNP +  V+  D+V R +    +L S+RLL     
+Sbjct  1    MRIWSSEHVFSHPWDTVIKAAMRKYPNPMNPCVVGVDVVDRNLDSQGRLHSQRLLCTEWG  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +P     +   +   + Y+ E S+VDP  + M   + NI+   L+ V+ER VY+ + +N 
+Sbjct  61   LPSLVRAILGTSRTLT-YIKEHSVVDPVEKKMVLCSTNISLTNLVSVDERLVYTPHPENP  119
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+              T + +EA ++     +S  ++    +   SN  K     E+I+ 
+Sbjct  120  EQTVLTQEAIITVKGVSLSSYLEGLMASTISSNARKGWDAIEWIIQ  165
+
+
+>sp|Q9VMD6|RETM_DROME Protein real-time OS=Drosophila melanogaster 
+OX=7227 GN=retm PE=1 SV=2
+Length=659
+
+ Score = 213 bits (542),  Expect = 8e-65, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 80/174 (46%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            K+     V +  ++ V  A+ +R+P  P    VL  +++  E   D     +R  ++  +
+Sbjct  4    KFQSPVRVYKYPFELVMKAYERRFPTCPQMPIVLDCEVIKDESLEDGA---KRNTSRRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DN
+Sbjct  61   LAVDAPYIFKKLIGVDHVYFLQHNFLDLANRTLSIEAVNESFSSRIEIFERCRYYAHPDN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            S WT   + A +   + FG   ++++ G+ ++     K  +  E+ + +L+ E 
+Sbjct  121  SEWTCFDQSATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEFFIGQLREEG  174
+
+
+>sp|Q16KN5|RETM_AEDAE Protein real-time OS=Aedes aegypti OX=7159 
+GN=retm PE=3 SV=1
+Length=646
+
+ Score = 212 bits (540),  Expect = 1e-64, Method: Composition-based stats.
+ Identities = 35/174 (20%), Positives = 77/174 (44%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     + +  ++ V AA+ +R+P  P    VL  +I+    T +     +R   +  +
+Sbjct  4    KYESPVRIYKYPFELVMAAYERRFPTCPQMPIVLDCEIIDDAETDNGA---KRETKRRCK  60
+
+Query  71   MPRWAERLFPANVAHSV-YVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  LF   +   V Y ++ + +D + +T+     N   +  + + E+  Y  + +N
+Sbjct  61   LAVDAPYLFKKIIGIDVAYFIQTNFLDLKTRTLNIEAINETFSSRIEIFEKCRYYAHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   + FG   ++++ G+ ++     K  +  EY + +L+ E 
+Sbjct  121  PDWTCFDQVATLDIKNFFGFEHSMEKMGMKQYSQTTQKGKEIIEYFINELKKEG  174
+
+
+>sp|Q92503|S14L1_HUMAN SEC14-like protein 1 OS=Homo sapiens OX=9606 
+GN=SEC14L1 PE=1 SV=2
+Length=715
+
+ Score = 211 bits (536),  Expect = 1e-63, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 80/174 (46%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ + AA+ +R+P  P     +  D V+   + D  +    ++ +  +
+Sbjct  4    KYQSPVRVYKYPFELIMAAYERRFPTCPLIPMFVGSDTVNEFKSEDGAIH---VIERRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         VY ++ + ++ + +T+    +N   +  +++ E   Y+V+ +N
+Sbjct  61   LDVDAPRLLKKIAGVDYVYFVQKNSLNSRERTLHIEAYNETFSNRVIINEHCCYTVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  + ++ SN+ K  +  EY L +L+ E 
+Sbjct  121  EDWTCFEQSASLDIKSFFGFESTVEKIAMKQYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|Q0V9N0|S14L5_XENTR SEC14-like protein 5 OS=Xenopus tropicalis 
+OX=8364 GN=sec14l1 PE=2 SV=1
+Length=707
+
+ Score = 210 bits (535),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 39/174 (22%), Positives = 80/174 (46%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ V AA+ +R+P  P     L  DI+    + D  L    ++ ++ +
+Sbjct  4    KYQSPVRVYKYPFELVMAAYEKRFPTCPQIPVFLGSDILQEHKSEDGALH---VVERSCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         VY ++ + V+ +++T+     N   +  ++V E   YSV+ +N
+Sbjct  61   LNVDAPRLLKKIAGVEFVYFIQKNTVNWKDRTLLIEAHNETFSSRVLVNETCSYSVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  + ++ +N+ +  +  E+ L +L  + 
+Sbjct  121  EEWTCFEQTASLDIKSFFGFESTVEKIAMKQYTANIKRGKEVIEFYLNELISQG  174
+
+
+>sp|Q29JQ0|RETM_DROPS Protein real-time OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=retm PE=3 SV=1
+Length=669
+
+ Score = 209 bits (533),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 37/174 (21%), Positives = 79/174 (45%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            K+     V +  ++ V  A+ +R+P  P    VL  D++  E   +     +   T+  +
+Sbjct  4    KFQSPVRVYKYPFELVMKAYERRFPKCPQMPIVLDCDVIKIESLENGA---KTNTTRRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A  +F   +    VY L+ + +D  N+T++    N + +  + + ER  Y  + DN
+Sbjct  61   LAVDAPYIFKKLIGVDFVYFLQHNYLDMSNRTLSIEAVNESFSSRIEIFERCRYYAHPDN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            + WT   + A +   + FG   ++++ G+ ++     K  +  EY + +L+ E 
+Sbjct  121  AEWTCFDQTATLDIKNFFGFEHSMEKMGMKQYTQTTLKGKEIIEYFINQLEQEG  174
+
+
+>sp|Q9V3U9|SLMO_DROME Protein slowmo OS=Drosophila melanogaster 
+OX=7227 GN=slmo PE=2 SV=1
+Length=215
+
+ Score = 196 bits (499),  Expect = 5e-63, Method: Composition-based stats.
+ Identities = 43/171 (25%), Positives = 82/171 (48%), Gaps = 3/171 (2%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K +  + +    W+ V  A W++YPNP +  ++  D+V R V  D  L + RL+     
+Sbjct  1    MKIWTSEHIFNHPWETVTQAAWRKYPNPMTPSIIGTDVVERRVV-DGVLHTHRLVQSKWY  59
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+             P+W   L     A + +  E S VDP+ + M   T N+   R + V+E   Y  +  ++
+Sbjct  60   FPKWTHALIGT--AKTCFASERSTVDPERKQMVLKTNNLTFCRNISVDEVLYYEPHPSDA  117
+
+Query  131  GWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGE  181
+              T +++EA V+     +S  +++   +   +N  K  +G E+++  +  E
+Sbjct  118  SKTLLKQEATVTVFGVPLSHYMEDLLTSTISTNAGKGRQGLEWVIGLINTE  168
+
+
+>sp|A8Y5H7|S14L1_MOUSE SEC14-like protein 1 OS=Mus musculus OX=10090 
+GN=Sec14l1 PE=1 SV=1
+Length=715
+
+ Score = 207 bits (527),  Expect = 2e-62, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 78/174 (45%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            KY     V +  ++ + AA+ +R+P  P     +  D V    + D  L    ++ +  +
+Sbjct  4    KYQSPVRVYKHPFELIMAAYERRFPTCPLIPMFVDSDTVSEFKSEDGALH---VIERRCK  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         VY ++ + ++ +++T+     N   +  +++ E   Y+V+ +N
+Sbjct  61   LDIDAPRLLKKIAGVDYVYFVQKNSLNSRDRTLHIEAHNETFSNRVIIHEHCCYTVHPEN  120
+
+Query  130  SGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG    V++  +  + SN+ K  +  EY L +L+ E 
+Sbjct  121  EDWTCFEQSASLDIKSFFGFESTVEKIAMKHYTSNIKKGKEIIEYYLRQLEEEG  174
+
+
+>sp|O43304|S14L5_HUMAN SEC14-like protein 5 OS=Homo sapiens OX=9606 
+GN=SEC14L5 PE=1 SV=3
+Length=696
+
+ Score = 204 bits (519),  Expect = 4e-61, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 81/174 (47%), Gaps = 6/174 (3%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +Y     V +  ++ V AA+ +R+P  P     L  +++    +PD  +    ++ ++ R
+Sbjct  4    RYQSPVRVYKYPFELVMAAYEKRFPTCPQIPVFLGSEVLRESRSPDGAVH---VVERSCR  60
+
+Query  71   MPRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            +   A RL         V  ++ +I++ + +T+     N   A  +VV E   Y+V+ +N
+Sbjct  61   LRVDAPRLLRKIAGVEHVVFVQTNILNWKERTLLIEAHNETFANRVVVNEHCSYTVHPEN  120
+
+Query  130  SGWTEIRREAWVSS-SLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+              WT   + A +   S FG   A+++  + ++ +NV +  +  E+ L +L  + 
+Sbjct  121  EDWTCFEQSASLDIRSFFGFENALEKIAMKQYTANVKRGKEVIEHYLNELISQG  174
+
+
+>sp|Q54G07|SLMO_DICDI Protein slowmo homolog OS=Dictyostelium 
+discoideum OX=44689 GN=slmo PE=3 SV=1
+Length=228
+
+ Score = 192 bits (487),  Expect = 4e-61, Method: Composition-based stats.
+ Identities = 53/174 (30%), Positives = 88/174 (51%), Gaps = 4/174 (2%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPD-QKLLSRRLLTKT  68
+            M  +   +   +  W     A +++YP+P    +L+ DI+ +E+ P    L   +L+   
+Sbjct  1    MPLFETIKHTYKHLWSDASTASFRKYPSPERPDILSIDILSKEIDPTTGVLKCTKLIICK  60
+
+Query  69   NRMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSD  128
+               P W + +  +         E++ VDP+N+ MT  T N+N   ++ V+E   Y  + D
+Sbjct  61   GNTPSWLKSILGSG---ECLFYEETTVDPKNKIMTLKTKNLNFTNILGVDEVCTYEQHPD  117
+
+Query  129  NSGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQGEA  182
+            N  WT   +EA V+SS+FGV+R ++ F L RF +N  K  K  E  + K+Q EA
+Sbjct  118  NEEWTLFTQEATVTSSIFGVARKMEAFCLDRFVANAGKGRKIMEDTIIKVQKEA  171
+
+
+>sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS2 
+PE=1 SV=1
+Length=230
+
+ Score = 187 bits (475),  Expect = 3e-59, Method: Composition-based stats.
+ Identities = 50/170 (29%), Positives = 88/170 (52%), Gaps = 6/170 (4%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQK-LLSRRLLTKTN  69
+            +K F         WDQV AA W++YPN  S HV+  D++ RE+    K L++ RL+T   
+Sbjct  1    MKLFQNSYDFNYPWDQVTAANWKKYPNEISTHVIAVDVLRRELKDQGKVLVTERLITVKQ  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+             +P+W   +      +  +V E S+VD   +++T  + N+    L+ V E   YS + D+
+Sbjct  61   GVPKWIMMMLGG--TNMSHVREVSVVDLNKKSLTMRSCNLTMCNLLKVYETVTYSPHPDD  118
+
+Query  130  S-GWTEIRREAWVSS--SLFGVSRAVQEFGLARFKSNVTKTMKGFEYILA  176
+            S   T  ++EA +++  S+  +   ++++ + RF  N  K   GF+ +L 
+Sbjct  119  SANKTLFQQEAQITAYGSIRKLCNKMEDWSVQRFCENAKKGKMGFDAVLQ  168
+
+
+>sp|O59707|UPS2_SCHPO UPS-like protein C36.10 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC36.10 
+PE=3 SV=1
+Length=184
+
+ Score = 179 bits (455),  Expect = 1e-56, Method: Composition-based stats.
+ Identities = 48/171 (28%), Positives = 90/171 (53%), Gaps = 5/171 (3%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNR  70
+            +K F    + +  ++QV AA WQ+YPN ++ HV+  D + R+V  +  L + RL+T    
+Sbjct  1    MKIFESCHLFQYPFEQVSAAHWQKYPNEHATHVIAVDTLDRKVLDNGVLYTERLITCHQA  60
+
+Query  71   MPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+            +PRW  +L     A   Y+ E S VD + +T+T  T N+  +  + V+E   YS + +  
+Sbjct  61   LPRWILKLIDG--AQDCYIRETSYVDLKARTLTLLTSNLTFSDRLRVDETVTYSPHPELE  118
+
+Query  131  GWTEIRREAWVS--SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQ  179
+              T  ++EA +   + +  +S  ++++ +  F    ++  +GFE +L K+ 
+Sbjct  119  A-TVFQQEARIEALACMKRLSNLIEQWSVDGFGKKASRGKEGFESVLEKIN  168
+
+
+>sp|Q5BKH5|PRLD2_XENTR PRELI domain-containing protein 2 OS=Xenopus 
+tropicalis OX=8364 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 177 bits (450),  Expect = 4e-56, Method: Composition-based stats.
+ Identities = 44/168 (26%), Positives = 80/168 (48%), Gaps = 3/168 (2%)
+
+Query  15   LGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTP-DQKLLSRRLLTKTNRMPR  73
+              + V    +  V  ++  +YP P  KHVL+   V  +  P    +  +R+ T  N +P 
+Sbjct  6    EARKVYPYPFQHVVTSYLNKYPTPLEKHVLSVKTVEEKTDPATGVVYRKRIATCNNVIPS  65
+
+Query  74   WAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWT  133
+            +  R     V+ +VY+ E+S +D + + MT  T  +  A+   ++E SVY   ++NS WT
+Sbjct  66   FLRRCSILKVS-NVYLEEESWLDMKTRVMTLETHCLTWAQYATMKEESVYKECTENSNWT  124
+
+Query  134  EIRREAWVSSSLFGV-SRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+            E  ++  ++ +  G  +R ++ F        V K++   E IL +  G
+Sbjct  125  EFTQKGTITITGAGFLNRVLETFAQTFLSHGVKKSISIMETILRERCG  172
+
+
+>sp|Q0VBB0|PRLD2_MOUSE PRELI domain-containing protein 2 OS=Mus 
+musculus OX=10090 GN=Prelid2 PE=2 SV=1
+Length=177
+
+ Score = 177 bits (448),  Expect = 9e-56, Method: Composition-based stats.
+ Identities = 36/164 (22%), Positives = 72/164 (44%), Gaps = 3/164 (2%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSR-RLLTKTNRMPRWAER  77
+            V +  ++QV A F ++YPNP  K+V++   V  +      L+ R R+    N +P    +
+Sbjct  10   VFQYPFEQVVACFLRKYPNPMDKNVISVKTVEEKKDESTGLIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEIRR  137
+            +    V   + + E+S +  Q + M   +  +   +   + E SV+  + +N  WTE  +
+Sbjct  70   VSILKVP-DIQLEEESWLSLQKRNMAIRSHCLTWTQYASMREESVFRESVENPNWTEFIQ  128
+
+Query  138  EAWVSSSLFGVSRAV-QEFGLARFKSNVTKTMKGFEYILAKLQG  180
+               +S +  G    + + F     +    K ++  E +L +  G
+Sbjct  129  TGRISITGAGFLNCILETFASTFLRQGAQKGIRIMEMLLKEQCG  172
+
+
+>sp|Q05776|UPS1_YEAST Protein UPS1, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS1 
+PE=1 SV=1
+Length=175
+
+ Score = 175 bits (444),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 54/171 (32%), Positives = 88/171 (51%), Gaps = 2/171 (1%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            MV       +  + +  V  AF+ RYPNPYS HVL+ D + R V  +  L + RLL K+ 
+Sbjct  1    MVLLHKSTHIFPTDFASVSRAFFNRYPNPYSPHVLSIDTISRNVDQEGNLRTTRLLKKSG  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            ++P W +           +++E S+V+P N TM T+T N++H  +M VEE + Y  +S  
+Sbjct  61   KLPTWVKPFLRGI--TETWIIEVSVVNPANSTMKTYTRNLDHTGIMKVEEYTTYQFDSAT  118
+
+Query  130  SGWTEIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+            S      R  + S    G+   V+++   +F  NV K+  G  +++ KL+ 
+Sbjct  119  SSTIADSRVKFSSGFNMGIKSKVEDWSRTKFDENVKKSRMGMAFVIQKLEE  169
+
+
+>sp|Q6NTS7|PRLD2_XENLA PRELI domain-containing protein 2 OS=Xenopus 
+laevis OX=8355 GN=prelid2 PE=2 SV=1
+Length=176
+
+ Score = 175 bits (444),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 44/166 (27%), Positives = 79/166 (48%), Gaps = 3/166 (2%)
+
+Query  17   QSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTP-DQKLLSRRLLTKTNRMPRWA  75
+            + V    +  V  ++  +YP P  KHVL    V  +  P    +  +R+ T  N +P + 
+Sbjct  8    RKVYPYPFQHVVNSYLNKYPTPLEKHVLAIKTVEEKTDPASGVVYRKRIATCNNVIPSFL  67
+
+Query  76   ERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWTEI  135
+            +R     V+ +VY+ E+S +D + + MT  +  +  A+   ++E SVY  + +NS WTE 
+Sbjct  68   QRFSILKVS-NVYLEEESWLDMKTKVMTLKSRCLTWAQYATMKEESVYKESIENSNWTEF  126
+
+Query  136  RREAWVSSSLFGV-SRAVQEFGLARFKSNVTKTMKGFEYILAKLQG  180
+             +   V+ +  G  +R ++ F        V K++   E IL +  G
+Sbjct  127  TQRGTVTITGAGFLNRVLETFAQTFLNQGVKKSISIMETILRERCG  172
+
+
+>sp|Q03606|YN02_CAEEL CRAL-TRIO domain-containing protein T23G5.2 
+OS=Caenorhabditis elegans OX=6239 GN=T23G5.2 PE=4 SV=3
+Length=719
+
+ Score = 188 bits (478),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 32/169 (19%), Positives = 76/169 (45%), Gaps = 6/169 (4%)
+
+Query  13   YFLGQSVLRSSWDQVFAAFWQRYPN-PYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRM  71
+            Y     + +  ++ V AA+  R+P  P     +  ++ +   + D       ++ +  ++
+Sbjct  5    YRSPVRIYKHPFEIVMAAYEMRFPTCPQIPIFVGSEVTYEYKSVDGA---EWVIDRKCQL  61
+
+Query  72   PRWAERLFPANVAHS-VYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNS  130
+               A  L         VY  + + +D + +T+     NI+ +  + V+E   Y V+++N 
+Sbjct  62   NVEAPYLVKKIAGVDYVYFSQKNSLDRRKRTLDIEATNISFSSRINVKENCTYYVHAENE  121
+
+Query  131  GWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+             WT   + A +   + FG+  AV++  + ++ +N+ K  +  E+ + +L
+Sbjct  122  NWTCFEQSASLDVKNFFGLESAVEKLAVRQYGANLAKGKEILEFFIEEL  170
+
+
+>sp|Q8N945|PRLD2_HUMAN PRELI domain-containing protein 2 OS=Homo 
+sapiens OX=9606 GN=PRELID2 PE=2 SV=1
+Length=189
+
+ Score = 175 bits (445),  Expect = 3e-55, Method: Composition-based stats.
+ Identities = 35/175 (20%), Positives = 76/175 (43%), Gaps = 13/175 (7%)
+
+Query  19   VLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPD-QKLLSRRLLTKTNRMPRWAER  77
+            V +  ++QV A+F ++YPNP  K+V++  I+  +       +  +R+    N +P    +
+Sbjct  10   VYKYPFEQVVASFLRKYPNPMDKNVISVKIMEEKRDESTGVIYRKRIAICQNVVPEILRK  69
+
+Query  78   LFPANV-----------AHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVN  126
+                 V             ++ + E+S ++P+ + M   +  +   +   ++E SV+  +
+Sbjct  70   SLSTLVILCWKKVSILKVPNIQLEEESWLNPRERNMAIRSHCLTWTQYASMKEESVFRES  129
+
+Query  127  SDNSGWTEIRREAWVSSSLFGVSRAV-QEFGLARFKSNVTKTMKGFEYILAKLQG  180
+             +N  WTE  +   +S +  G    V + F     +    K ++  E +L +  G
+Sbjct  130  MENPNWTEFIQRGRISITGVGFLNCVLETFASTFLRQGAQKGIRIMEMLLKEQCG  184
+
+
+>sp|Q04006|UPS3_YEAST Protein UPS3, mitochondrial OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS3 
+PE=1 SV=1
+Length=179
+
+ Score = 174 bits (442),  Expect = 6e-55, Method: Composition-based stats.
+ Identities = 49/173 (28%), Positives = 78/173 (45%), Gaps = 6/173 (3%)
+
+Query  11   VKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQ-KLLSRRLLTKTN  69
+            +K F         W++V  A W +YPN  S HV+  D++ RE+      LL+ RL+T   
+Sbjct  1    MKSFQKSYEFDYPWEKVTTANWMKYPNKISTHVIAVDVLRRELKEHGDVLLTERLITIRQ  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+              P W   L      +  YV E S VD +++++T  + N+    ++   E   Y  +  N
+Sbjct  61   NTPHWMSILVGN--TNLAYVREVSTVDRRDRSLTMRSCNMTFPHILKCYETVRYVPHPKN  118
+
+Query  130  S-GWTEIRREAWVSSSL--FGVSRAVQEFGLARFKSNVTKTMKGFEYILAKLQ  179
+                T  +++A   S +     S  V+ +G+ RF  N  K   GF+ ILA   
+Sbjct  119  PSNVTLFKQDAKFLSGVPTKTFSEKVENWGVKRFSDNAVKGKVGFDSILAMFN  171
+
+
+>sp|Q9V579|PREL_DROME Protein preli-like OS=Drosophila melanogaster 
+OX=7227 GN=prel PE=2 SV=3
+Length=236
+
+ Score = 176 bits (446),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 76/165 (46%), Positives = 103/165 (62%), Gaps = 6/165 (4%)
+
+Query  14   FLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTNRMPR  73
+               ++V   SW  V  A+W RYPNP S HVLTED + REV  D KL SRRLL+KTN +P+
+Sbjct  8    CRTETVFDYSWMNVVVAYWNRYPNPSSTHVLTEDTIQREVR-DGKLFSRRLLSKTNPVPK  66
+
+Query  74   WAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDNSGWT  133
+            W  R +       V ++EDS++DP  +T TTFT N+   ++M V+E  VYS   D S  T
+Sbjct  67   WGARFYNN---VPVKIVEDSVLDPVKKTFTTFTRNLGMTKIMKVDEIVVYSEQKDGS--T  121
+
+Query  134  EIRREAWVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAKL  178
+               R A++SS +FG SRA++ FG+ RFK+N  K   GF Y+L ++
+Sbjct  122  LAVRRAYISSQVFGFSRAIRAFGIERFKANGNKASNGFNYVLRRM  166
+
+
+>sp|Q9UT07|UPS1_SCHPO Protein ups1 homolog OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPAP8A3.10 
+PE=3 SV=1
+Length=171
+
+ Score = 171 bits (433),  Expect = 1e-53, Method: Composition-based stats.
+ Identities = 59/169 (35%), Positives = 101/169 (60%), Gaps = 4/169 (2%)
+
+Query  10   MVKYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHREVTPDQKLLSRRLLTKTN  69
+            M      ++ L +SW+ V +A+  RYPNPYS HV++ D++ R V  + +L + RLL K  
+Sbjct  1    MTAICTDKTELNASWNTVSSAWLTRYPNPYSLHVVSADVLERYVDDEGRLYTERLLVKQG  60
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNINHARLMVVEERSVYSVNSDN  129
+            R+PRWA  L   N +   Y+LE S++DP  Q + + T+N++H +++ V E S +  +S+N
+Sbjct  61   RLPRWASDLLNVNKS---YILERSVIDPSKQELKSETFNLDHVKILRVIEYSRFIQSSEN  117
+
+Query  130  SGWTEIRREA-WVSSSLFGVSRAVQEFGLARFKSNVTKTMKGFEYILAK  177
+               T +   A +VS   FG+ R VQ++ L RF+  ++ + +G  Y++ +
+Sbjct  118  CSKTIVDTIAKFVSPLRFGLGRRVQKYSLKRFQEQLSSSRRGLLYVIQQ  166
+
+
+>sp|Q7PWB1|RETM_ANOGA Protein real-time OS=Anopheles gambiae OX=7165 
+GN=retm PE=3 SV=4
+Length=684
+
+ Score = 167 bits (422),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 28/187 (15%), Positives = 71/187 (38%), Gaps = 29/187 (16%)
+
+Query  12   KYFLGQSVLRSSWDQVFAAFWQRYPNPYSKHVLTEDIVHR-EVTPDQKLLSR-RLLTKTN  69
+            KY     + +  ++ V A F + +    S       ++ R +V     +    +  T T 
+Sbjct  4    KYESPVRIYKYPFELVVAGF-RNFCRQKS-------VLRRGKVCEMGSIFGEAKTTTNTW  55
+
+Query  70   RMPRWAERLFPANVAHSVYVLEDSIVDPQNQTMTTFTWNI-------------NHARLMV  116
+             + RW+  +    +     ++E+ +       +  +  N              + A  + 
+Sbjct  56   CIRRWSFAVVCKKI-----IIEEFLFLFVKHQLYQYLCNHIVNIEYAYHKPYNSFATRVE  110
+
+Query  117  VEERSVYSVNSDNSGWTEIRREAWVS-SSLFGVSRAVQEFGLARFKSNVTKTMKGFEYIL  175
+            + E+  Y  + +N  WT   + A +   + FG+  ++++ G+ ++     K  +  E+ +
+Sbjct  111  IFEKCRYYAHPENPDWTCFDQTATLDIKNFFGIEHSMEKMGMKQYTQTTLKGKEIIEFFV  170
+
+Query  176  AKLQGEA  182
+             +L+ E 
+Sbjct  171  NELKQEG  177
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.138    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9961084444
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

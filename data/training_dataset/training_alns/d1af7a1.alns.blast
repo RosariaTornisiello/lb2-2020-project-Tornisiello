@@ -1,0 +1,657 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1af7a1
+
+Length=81
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salm...  167     2e-52
+sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Esch...  146     3e-44
+sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Kleb...  117     8e-33
+sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 OS=V...  52.0    2e-08
+sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferas...  41.6    1e-04
+
+
+>sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=cheR PE=1 SV=1
+Length=288
+
+ Score = 167 bits (424),  Expect = 2e-52, Method: Compositional matrix adjust.
+ Identities = 81/81 (100%), Positives = 81/81 (100%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL
+Sbjct  11  SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           SMLEANQNSAEWQAFINALTT
+Sbjct  71  SMLEANQNSAEWQAFINALTT  91
+
+
+>sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Escherichia 
+coli (strain K12) OX=83333 GN=cheR PE=4 SV=2
+Length=286
+
+ Score = 146 bits (369),  Expect = 3e-44, Method: Compositional matrix adjust.
+ Identities = 69/81 (85%), Positives = 77/81 (95%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S+LLQMT+RLALSDAHFRRI QLIYQRAGIVLADHKRDMVYNRLVRRLR+LGL DFG YL
+Sbjct  11  SLLLQMTERLALSDAHFRRISQLIYQRAGIVLADHKRDMVYNRLVRRLRSLGLTDFGHYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE+NQ+S EWQAFIN+LTT
+Sbjct  71  NLLESNQHSGEWQAFINSLTT  91
+
+
+>sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Klebsiella 
+aerogenes (strain ATCC 13048 / DSM 30053 / JCM 1235 
+/ KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) OX=1028307 
+GN=cheR PE=4 SV=2
+Length=290
+
+ Score = 117 bits (293),  Expect = 8e-33, Method: Compositional matrix adjust.
+ Identities = 64/81 (79%), Positives = 71/81 (88%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S L QM QRL LSDAHFRRI QLIYQRAGIVLA HKR+MVYNRLVRRLR LG+ DFG YL
+Sbjct  14  SALAQMAQRLPLSDAHFRRISQLIYQRAGIVLAAHKREMVYNRLVRRLRLLGIHDFGDYL  73
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE++ +SAEWQAFINALTT
+Sbjct  74  ALLESDPHSAEWQAFINALTT  94
+
+
+>sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR3 PE=3 SV=1
+Length=276
+
+ Score = 52.0 bits (123),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 29/74 (39%), Positives = 43/74 (58%), Gaps = 2/74 (3%)
+
+Query  8   QRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQ  67
+           Q   L+D  F+ I   +++  GI L D KR MVY RL R++R  GL  F ++  ++E+++
+Sbjct  7   QEFELTDKDFKFIQWFMHKTVGIYLPDSKRTMVYGRLSRQMRRKGLRRFTQFRELIESDE  66
+
+Query  68  NSAEWQAFINALTT  81
+              E   FIN LTT
+Sbjct  67  Q--ERIHFINTLTT  78
+
+
+>sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferase 
+OS=Rhizobium etli (strain CFN 42 / ATCC 51251) OX=347834 
+GN=cheRch1 PE=4 SV=1
+Length=268
+
+ Score = 41.6 bits (96),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  23  LIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEWQAFINALTT  81
+           +IY  AGI L + K  +VY+RL + +R LGL  F  Y  ++ +   +A  +  ++ LTT
+Sbjct  1   MIYSDAGIFLNETKASLVYSRLSKHIRNLGLSGFREYCELVASPAGAAARREMLSHLTT  59
+
+
+
+Lambda      K        H        a         alpha
+   0.330    0.138    0.401    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5032045258
+Results from round 2
+
+
+Query= d1af7a1
+
+Length=81
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salm...  127     1e-36
+sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Esch...  126     2e-36
+sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Kleb...  113     3e-31
+sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 OS=V...  104     6e-28
+sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferas...  85.1    1e-20
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9KS61|CHER2_VIBCH Chemotaxis protein methyltransferase 2 OS=V...  45.0    9e-06
+sp|O51069|CHER_BORBU Chemotaxis protein methyltransferase OS=Borr...  44.6    1e-05
+sp|Q9I6V7|CHER2_PSEAE Chemotaxis protein methyltransferase 2 OS=P...  41.9    1e-04
+sp|Q88ER1|CHER2_PSEPK Chemotaxis protein methyltransferase Cher2 ...  40.8    3e-04
+sp|Q9KQ06|CHER1_VIBCH Chemotaxis protein methyltransferase 1 OS=V...  40.0    4e-04
+sp|Q57508|CHER_VIBAN Chemotaxis protein methyltransferase OS=Vibr...  39.2    0.001
+sp|Q9X9K2|CHER_VIBPA Chemotaxis protein methyltransferase OS=Vibr...  39.2    0.001
+sp|O87131|CHER1_PSEAE Chemotaxis protein methyltransferase 1 OS=P...  37.3    0.004
+
+
+>sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=cheR PE=1 SV=1
+Length=288
+
+ Score = 127 bits (319),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 81/81 (100%), Positives = 81/81 (100%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL
+Sbjct  11  SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           SMLEANQNSAEWQAFINALTT
+Sbjct  71  SMLEANQNSAEWQAFINALTT  91
+
+
+>sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Escherichia 
+coli (strain K12) OX=83333 GN=cheR PE=4 SV=2
+Length=286
+
+ Score = 126 bits (317),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 69/81 (85%), Positives = 77/81 (95%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S+LLQMT+RLALSDAHFRRI QLIYQRAGIVLADHKRDMVYNRLVRRLR+LGL DFG YL
+Sbjct  11  SLLLQMTERLALSDAHFRRISQLIYQRAGIVLADHKRDMVYNRLVRRLRSLGLTDFGHYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE+NQ+S EWQAFIN+LTT
+Sbjct  71  NLLESNQHSGEWQAFINSLTT  91
+
+
+>sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Klebsiella 
+aerogenes (strain ATCC 13048 / DSM 30053 / JCM 1235 
+/ KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) OX=1028307 
+GN=cheR PE=4 SV=2
+Length=290
+
+ Score = 113 bits (282),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 64/81 (79%), Positives = 71/81 (88%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S L QM QRL LSDAHFRRI QLIYQRAGIVLA HKR+MVYNRLVRRLR LG+ DFG YL
+Sbjct  14  SALAQMAQRLPLSDAHFRRISQLIYQRAGIVLAAHKREMVYNRLVRRLRLLGIHDFGDYL  73
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE++ +SAEWQAFINALTT
+Sbjct  74  ALLESDPHSAEWQAFINALTT  94
+
+
+>sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR3 PE=3 SV=1
+Length=276
+
+ Score = 104 bits (259),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 30/80 (38%), Positives = 45/80 (56%), Gaps = 2/80 (3%)
+
+Query  2   VLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLS  61
+           +L    Q   L+D  F+ I   +++  GI L D KR MVY RL R++R  GL  F ++  
+Sbjct  1   MLAVNEQEFELTDKDFKFIQWFMHKTVGIYLPDSKRTMVYGRLSRQMRRKGLRRFTQFRE  60
+
+Query  62  MLEANQNSAEWQAFINALTT  81
+           ++E+++   E   FIN LTT
+Sbjct  61  LIESDEQ--ERIHFINTLTT  78
+
+
+>sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferase 
+OS=Rhizobium etli (strain CFN 42 / ATCC 51251) OX=347834 
+GN=cheRch1 PE=4 SV=1
+Length=268
+
+ Score = 85.1 bits (209),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  23  LIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEWQAFINALTT  81
+           +IY  AGI L + K  +VY+RL + +R LGL  F  Y  ++ +   +A  +  ++ LTT
+Sbjct  1   MIYSDAGIFLNETKASLVYSRLSKHIRNLGLSGFREYCELVASPAGAAARREMLSHLTT  59
+
+
+>sp|Q9KS61|CHER2_VIBCH Chemotaxis protein methyltransferase 2 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR2 PE=3 SV=1
+Length=288
+
+ Score = 45.0 bits (105),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 34/72 (47%), Gaps = 0/72 (0%)
+
+Query  9   RLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQN  68
+            + ++D  F R     YQ+ GI   + KR  V  RL++R+       F  Y + L    +
+Sbjct  3   EIVITDTDFCRFRDYFYQKTGIFFENSKRYFVDKRLLQRIELTEHQSFRGYFTYLRFQAS  62
+
+Query  69  SAEWQAFINALT  80
+             E QA INALT
+Sbjct  63  GEELQAVINALT  74
+
+
+>sp|O51069|CHER_BORBU Chemotaxis protein methyltransferase OS=Borrelia 
+burgdorferi (strain ATCC 35210 / B31 / CIP 102532 / 
+DSM 4680) OX=224326 GN=cheR PE=3 SV=1
+Length=283
+
+ Score = 44.6 bits (104),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 16/70 (23%), Positives = 38/70 (54%), Gaps = 0/70 (0%)
+
+Query  12  LSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAE  71
+           ++     R+ +++Y   GI L++ K+ ++ +RL   L+  G  +F  Y++ LE +  + +
+Sbjct  14  ITKDELSRLIKIVYNNFGINLSEKKKLLIESRLSSLLKVKGFKNFTEYINFLEKSTGNIQ  73
+
+Query  72  WQAFINALTT  81
+               I+ ++T
+Sbjct  74  LIELIDKIST  83
+
+
+>sp|Q9I6V7|CHER2_PSEAE Chemotaxis protein methyltransferase 2 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=cheR2 PE=3 SV=1
+Length=280
+
+ Score = 41.9 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 29/74 (39%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  8   QRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQ  67
+           Q    +   F+++ + +Y+  GI LA+ K  +VY+RL RRLR L L  F  Y + L+   
+Sbjct  13  QEFHYTREDFQQVRERLYRLTGISLAESKAQLVYSRLSRRLRLLRLGSFAEYFTHLDREP  72
+
+Query  68  NSAEWQAFINALTT  81
+              E Q F+NALTT
+Sbjct  73  G--EQQLFVNALTT  84
+
+
+>sp|Q88ER1|CHER2_PSEPK Chemotaxis protein methyltransferase Cher2 
+OS=Pseudomonas putida (strain ATCC 47054 / DSM 6125 / NCIMB 
+11950 / KT2440) OX=160488 GN=cheR2 PE=1 SV=1
+Length=275
+
+ Score = 40.8 bits (94),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 14/66 (21%), Positives = 33/66 (50%), Gaps = 0/66 (0%)
+
+Query  16  HFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEWQAF  75
+            F +    + +  GI+L ++K+ +V +RL + +   G+   G  +  ++A       +  
+Sbjct  7   DFEQFRVFLEKACGILLGENKQYLVSSRLNKLMEQQGIKSLGELVQRIQAQPRGGLREQV  66
+
+Query  76  INALTT  81
+           ++A+TT
+Sbjct  67  VDAMTT  72
+
+
+>sp|Q9KQ06|CHER1_VIBCH Chemotaxis protein methyltransferase 1 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR1 PE=3 SV=1
+Length=275
+
+ Score = 40.0 bits (92),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 20/72 (28%), Positives = 35/72 (49%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R  C+ +  + GIVL D K+ +V +RL   +    L      L  +   +N 
+Sbjct  4   ITISDQEYRDFCRFLESQCGIVLGDSKQYLVRSRLSPLVTKFKLSSLSDLLRDVVTGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  DLRVAAVDAMTT  75
+
+
+>sp|Q57508|CHER_VIBAN Chemotaxis protein methyltransferase OS=Vibrio 
+anguillarum OX=55601 GN=cheR PE=3 SV=1
+Length=275
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 19/72 (26%), Positives = 34/72 (47%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R   + +  + GIVL D K+ +V +RL   +    L      L  +   +N 
+Sbjct  4   ITISDQEYRDFSRFLESQCGIVLGDSKQYLVRSRLSPLVAKFKLTSLSDLLRDVVTGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  ELRVAAVDAMTT  75
+
+
+>sp|Q9X9K2|CHER_VIBPA Chemotaxis protein methyltransferase OS=Vibrio 
+parahaemolyticus serotype O3:K6 (strain RIMD 2210633) 
+OX=223926 GN=cheR PE=3 SV=1
+Length=275
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/72 (28%), Positives = 35/72 (49%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R   + +  + GIVL D K+ +V +RL   +    L      L  + A +N 
+Sbjct  4   ITISDQEYRDFSRFLESQCGIVLGDSKQYLVRSRLSPLVTKFKLASLSDLLRDVVAGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  ELRIAAVDAMTT  75
+
+
+>sp|O87131|CHER1_PSEAE Chemotaxis protein methyltransferase 1 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=cheR1 PE=1 SV=1
+Length=274
+
+ Score = 37.3 bits (85),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 36/72 (50%), Gaps = 1/72 (1%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           ++ ++A F      + +  GIVL  +K+ +V +RL + +   G+   G  +  ++  Q  
+Sbjct  1   MSAANADFELFRVFLEKTCGIVLGSNKQYLVSSRLNKLMEQQGIKSLGELVQRIQT-QRG  59
+
+Query  70  AEWQAFINALTT  81
+              +  ++A+TT
+Sbjct  60  GLREMVVDAMTT  71
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.137    0.341    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0420    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5032045258
+Results from round 3
+
+
+Query= d1af7a1
+
+Length=81
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salm...  105     3e-28
+sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Esch...  104     9e-28
+sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Kleb...  95.1    3e-24
+sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 OS=V...  91.2    7e-23
+sp|Q9KQ06|CHER1_VIBCH Chemotaxis protein methyltransferase 1 OS=V...  85.8    8e-21
+sp|Q9X9K2|CHER_VIBPA Chemotaxis protein methyltransferase OS=Vibr...  85.1    2e-20
+sp|Q57508|CHER_VIBAN Chemotaxis protein methyltransferase OS=Vibr...  83.5    5e-20
+sp|Q9KS61|CHER2_VIBCH Chemotaxis protein methyltransferase 2 OS=V...  82.7    1e-19
+sp|Q88ER1|CHER2_PSEPK Chemotaxis protein methyltransferase Cher2 ...  78.1    6e-18
+sp|O51069|CHER_BORBU Chemotaxis protein methyltransferase OS=Borr...  74.3    2e-16
+sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferas...  71.6    1e-15
+sp|Q9I6V7|CHER2_PSEAE Chemotaxis protein methyltransferase 2 OS=P...  65.0    5e-13
+
+Sequences not found previously or not previously below threshold:
+
+sp|O87131|CHER1_PSEAE Chemotaxis protein methyltransferase 1 OS=P...  69.6    9e-15
+
+
+>sp|P07801|CHER_SALTY Chemotaxis protein methyltransferase OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=cheR PE=1 SV=1
+Length=288
+
+ Score = 105 bits (262),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 81/81 (100%), Positives = 81/81 (100%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL
+Sbjct  11  SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           SMLEANQNSAEWQAFINALTT
+Sbjct  71  SMLEANQNSAEWQAFINALTT  91
+
+
+>sp|P07364|CHER_ECOLI Chemotaxis protein methyltransferase OS=Escherichia 
+coli (strain K12) OX=83333 GN=cheR PE=4 SV=2
+Length=286
+
+ Score = 104 bits (259),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 69/81 (85%), Positives = 77/81 (95%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S+LLQMT+RLALSDAHFRRI QLIYQRAGIVLADHKRDMVYNRLVRRLR+LGL DFG YL
+Sbjct  11  SLLLQMTERLALSDAHFRRISQLIYQRAGIVLADHKRDMVYNRLVRRLRSLGLTDFGHYL  70
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE+NQ+S EWQAFIN+LTT
+Sbjct  71  NLLESNQHSGEWQAFINSLTT  91
+
+
+>sp|P21824|CHER_KLEAK Chemotaxis protein methyltransferase OS=Klebsiella 
+aerogenes (strain ATCC 13048 / DSM 30053 / JCM 1235 
+/ KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) OX=1028307 
+GN=cheR PE=4 SV=2
+Length=290
+
+ Score = 95.1 bits (235),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 64/81 (79%), Positives = 71/81 (88%), Gaps = 0/81 (0%)
+
+Query  1   SVLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYL  60
+           S L QM QRL LSDAHFRRI QLIYQRAGIVLA HKR+MVYNRLVRRLR LG+ DFG YL
+Sbjct  14  SALAQMAQRLPLSDAHFRRISQLIYQRAGIVLAAHKREMVYNRLVRRLRLLGIHDFGDYL  73
+
+Query  61  SMLEANQNSAEWQAFINALTT  81
+           ++LE++ +SAEWQAFINALTT
+Sbjct  74  ALLESDPHSAEWQAFINALTT  94
+
+
+>sp|Q9KKL3|CHER3_VIBCH Chemotaxis protein methyltransferase 3 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR3 PE=3 SV=1
+Length=276
+
+ Score = 91.2 bits (225),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 30/80 (38%), Positives = 45/80 (56%), Gaps = 2/80 (3%)
+
+Query  2   VLLQMTQRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLS  61
+           +L    Q   L+D  F+ I   +++  GI L D KR MVY RL R++R  GL  F ++  
+Sbjct  1   MLAVNEQEFELTDKDFKFIQWFMHKTVGIYLPDSKRTMVYGRLSRQMRRKGLRRFTQFRE  60
+
+Query  62  MLEANQNSAEWQAFINALTT  81
+           ++E+++   E   FIN LTT
+Sbjct  61  LIESDEQ--ERIHFINTLTT  78
+
+
+>sp|Q9KQ06|CHER1_VIBCH Chemotaxis protein methyltransferase 1 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR1 PE=3 SV=1
+Length=275
+
+ Score = 85.8 bits (211),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 20/72 (28%), Positives = 35/72 (49%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R  C+ +  + GIVL D K+ +V +RL   +    L      L  +   +N 
+Sbjct  4   ITISDQEYRDFCRFLESQCGIVLGDSKQYLVRSRLSPLVTKFKLSSLSDLLRDVVTGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  DLRVAAVDAMTT  75
+
+
+>sp|Q9X9K2|CHER_VIBPA Chemotaxis protein methyltransferase OS=Vibrio 
+parahaemolyticus serotype O3:K6 (strain RIMD 2210633) 
+OX=223926 GN=cheR PE=3 SV=1
+Length=275
+
+ Score = 85.1 bits (209),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 20/72 (28%), Positives = 35/72 (49%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R   + +  + GIVL D K+ +V +RL   +    L      L  + A +N 
+Sbjct  4   ITISDQEYRDFSRFLESQCGIVLGDSKQYLVRSRLSPLVTKFKLASLSDLLRDVVAGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  ELRIAAVDAMTT  75
+
+
+>sp|Q57508|CHER_VIBAN Chemotaxis protein methyltransferase OS=Vibrio 
+anguillarum OX=55601 GN=cheR PE=3 SV=1
+Length=275
+
+ Score = 83.5 bits (205),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 19/72 (26%), Positives = 34/72 (47%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + +SD  +R   + +  + GIVL D K+ +V +RL   +    L      L  +   +N 
+Sbjct  4   ITISDQEYRDFSRFLESQCGIVLGDSKQYLVRSRLSPLVAKFKLTSLSDLLRDVVTGRNR  63
+
+Query  70  AEWQAFINALTT  81
+               A ++A+TT
+Sbjct  64  ELRVAAVDAMTT  75
+
+
+>sp|Q9KS61|CHER2_VIBCH Chemotaxis protein methyltransferase 2 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=cheR2 PE=3 SV=1
+Length=288
+
+ Score = 82.7 bits (203),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 34/72 (47%), Gaps = 0/72 (0%)
+
+Query  9   RLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQN  68
+            + ++D  F R     YQ+ GI   + KR  V  RL++R+       F  Y + L    +
+Sbjct  3   EIVITDTDFCRFRDYFYQKTGIFFENSKRYFVDKRLLQRIELTEHQSFRGYFTYLRFQAS  62
+
+Query  69  SAEWQAFINALT  80
+             E QA INALT
+Sbjct  63  GEELQAVINALT  74
+
+
+>sp|Q88ER1|CHER2_PSEPK Chemotaxis protein methyltransferase Cher2 
+OS=Pseudomonas putida (strain ATCC 47054 / DSM 6125 / NCIMB 
+11950 / KT2440) OX=160488 GN=cheR2 PE=1 SV=1
+Length=275
+
+ Score = 78.1 bits (191),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 14/66 (21%), Positives = 33/66 (50%), Gaps = 0/66 (0%)
+
+Query  16  HFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEWQAF  75
+            F +    + +  GI+L ++K+ +V +RL + +   G+   G  +  ++A       +  
+Sbjct  7   DFEQFRVFLEKACGILLGENKQYLVSSRLNKLMEQQGIKSLGELVQRIQAQPRGGLREQV  66
+
+Query  76  INALTT  81
+           ++A+TT
+Sbjct  67  VDAMTT  72
+
+
+>sp|O51069|CHER_BORBU Chemotaxis protein methyltransferase OS=Borrelia 
+burgdorferi (strain ATCC 35210 / B31 / CIP 102532 / 
+DSM 4680) OX=224326 GN=cheR PE=3 SV=1
+Length=283
+
+ Score = 74.3 bits (181),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 39/72 (54%), Gaps = 0/72 (0%)
+
+Query  10  LALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNS  69
+           + ++     R+ +++Y   GI L++ K+ ++ +RL   L+  G  +F  Y++ LE +  +
+Sbjct  12  INITKDELSRLIKIVYNNFGINLSEKKKLLIESRLSSLLKVKGFKNFTEYINFLEKSTGN  71
+
+Query  70  AEWQAFINALTT  81
+            +    I+ ++T
+Sbjct  72  IQLIELIDKIST  83
+
+
+>sp|Q2KCH9|CHER_RHIEC Probable chemotaxis protein methyltransferase 
+OS=Rhizobium etli (strain CFN 42 / ATCC 51251) OX=347834 
+GN=cheRch1 PE=4 SV=1
+Length=268
+
+ Score = 71.6 bits (174),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  23  LIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEWQAFINALTT  81
+           +IY  AGI L + K  +VY+RL + +R LGL  F  Y  ++ +   +A  +  ++ LTT
+Sbjct  1   MIYSDAGIFLNETKASLVYSRLSKHIRNLGLSGFREYCELVASPAGAAARREMLSHLTT  59
+
+
+>sp|O87131|CHER1_PSEAE Chemotaxis protein methyltransferase 1 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=cheR1 PE=1 SV=1
+Length=274
+
+ Score = 69.6 bits (169),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 15/69 (22%), Positives = 34/69 (49%), Gaps = 1/69 (1%)
+
+Query  13  SDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQNSAEW  72
+           ++A F      + +  GIVL  +K+ +V +RL + +   G+   G  +  ++  +     
+Sbjct  4   ANADFELFRVFLEKTCGIVLGSNKQYLVSSRLNKLMEQQGIKSLGELVQRIQTQRGG-LR  62
+
+Query  73  QAFINALTT  81
+           +  ++A+TT
+Sbjct  63  EMVVDAMTT  71
+
+
+>sp|Q9I6V7|CHER2_PSEAE Chemotaxis protein methyltransferase 2 
+OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 
+104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=cheR2 PE=3 SV=1
+Length=280
+
+ Score = 65.0 bits (157),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 29/74 (39%), Positives = 42/74 (57%), Gaps = 2/74 (3%)
+
+Query  8   QRLALSDAHFRRICQLIYQRAGIVLADHKRDMVYNRLVRRLRALGLDDFGRYLSMLEANQ  67
+           Q    +   F+++ + +Y+  GI LA+ K  +VY+RL RRLR L L  F  Y + L+   
+Sbjct  13  QEFHYTREDFQQVRERLYRLTGISLAESKAQLVYSRLSRRLRLLRLGSFAEYFTHLDREP  72
+
+Query  68  NSAEWQAFINALTT  81
+              E Q F+NALTT
+Sbjct  73  G--EQQLFVNALTT  84
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.140    0.330    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0428    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5032045258
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

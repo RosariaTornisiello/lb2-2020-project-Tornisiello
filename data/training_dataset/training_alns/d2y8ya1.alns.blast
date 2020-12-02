@@ -1,0 +1,189 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2y8ya1
+
+Length=201
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q53WG9|CAS6_THET8 CRISPR-associated endoribonuclease Cse3 OS=T...  369     7e-131
+sp|Q46897|CAS6_ECOLI CRISPR system Cascade subunit CasE OS=Escher...  67.0    1e-12 
+
+
+>sp|Q53WG9|CAS6_THET8 CRISPR-associated endoribonuclease Cse3 
+OS=Thermus thermophilus (strain HB8 / ATCC 27634 / DSM 579) 
+OX=300852 GN=cse3 PE=1 SV=1
+Length=211
+
+ Score = 369 bits (947),  Expect = 7e-131, Method: Compositional matrix adjust.
+ Identities = 197/211 (93%), Positives = 197/211 (93%), Gaps = 14/211 (7%)
+
+Query  5    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEP-----PPVVL  59
+            MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEP     PPVVL
+Sbjct  1    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEPARGLEPPVVL  60
+
+Query  60   VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA  119
+            VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA
+Sbjct  61   VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA  120
+
+Query  120  EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRR---------LLQVQAVLFEGRL  170
+            EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRR         LLQVQAVLFEGRL
+Sbjct  121  EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRRKKDGEEAGKLLQVQAVLFEGRL  180
+
+Query  171  EVVDPERALATLRRGVGPGKALGLGLLSVAP  201
+            EVVDPERALATLRRGVGPGKALGLGLLSVAP
+Sbjct  181  EVVDPERALATLRRGVGPGKALGLGLLSVAP  211
+
+
+>sp|Q46897|CAS6_ECOLI CRISPR system Cascade subunit CasE OS=Escherichia 
+coli (strain K12) OX=83333 GN=casE PE=1 SV=1
+Length=199
+
+ Score = 67.0 bits (162),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 68/216 (31%), Positives = 103/216 (48%), Gaps = 37/216 (17%)
+
+Query  5    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLW---RLEPPPV-VLV  60
+            M+L+K+++   +RA  RDL   Y++H+ L        +  R+ L     R  P    VL+
+Sbjct  1    MYLSKVII---ARAWSRDL---YQLHQGLWHLFPNRPDAARDFLFHVEKRNTPEGCHVLL  54
+
+Query  61   QTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAK-------RLAATGK--  111
+            Q+   P    +    A V   K     L+ G  L FRLRANP K       RL + G   
+Sbjct  55   QSAQMP----VSTAVATVIKTKQVEFQLQVGVPLYFRLRANPIKTILDNQKRLDSKGNIK  110
+
+Query  112  --RVALKTPAEKVAWLERRLEEGGFRLLE----GERGPWVQILQDTFLEVRRLLQVQAVL  165
+              RV L   AE++AWL+R+L     R+ +     ER  +       F    +  ++Q V 
+Sbjct  111  RCRVPLIKEAEQIAWLQRKLGNAA-RVEDVHPISERPQY-------FSGDGKSGKIQTVC  162
+
+Query  166  FEGRLEVVDPERALATLRRGVGPGKALGLGLLSVAP  201
+            FEG L + D    +  +++G+GP K++G GLLS+AP
+Sbjct  163  FEGVLTINDAPALIDLVQQGIGPAKSMGCGLLSLAP  198
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.138    0.419    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12436315498
+Results from round 2
+
+
+Query= d2y8ya1
+
+Length=201
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q53WG9|CAS6_THET8 CRISPR-associated endoribonuclease Cse3 OS=T...  283     6e-97
+sp|Q46897|CAS6_ECOLI CRISPR system Cascade subunit CasE OS=Escher...  255     4e-86
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q53WG9|CAS6_THET8 CRISPR-associated endoribonuclease Cse3 
+OS=Thermus thermophilus (strain HB8 / ATCC 27634 / DSM 579) 
+OX=300852 GN=cse3 PE=1 SV=1
+Length=211
+
+ Score = 283 bits (724),  Expect = 6e-97, Method: Composition-based stats.
+ Identities = 197/211 (93%), Positives = 197/211 (93%), Gaps = 14/211 (7%)
+
+Query  5    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEP-----PPVVL  59
+            MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEP     PPVVL
+Sbjct  1    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLWRLEPARGLEPPVVL  60
+
+Query  60   VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA  119
+            VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA
+Sbjct  61   VQTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAKRLAATGKRVALKTPA  120
+
+Query  120  EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRR---------LLQVQAVLFEGRL  170
+            EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRR         LLQVQAVLFEGRL
+Sbjct  121  EKVAWLERRLEEGGFRLLEGERGPWVQILQDTFLEVRRKKDGEEAGKLLQVQAVLFEGRL  180
+
+Query  171  EVVDPERALATLRRGVGPGKALGLGLLSVAP  201
+            EVVDPERALATLRRGVGPGKALGLGLLSVAP
+Sbjct  181  EVVDPERALATLRRGVGPGKALGLGLLSVAP  211
+
+
+>sp|Q46897|CAS6_ECOLI CRISPR system Cascade subunit CasE OS=Escherichia 
+coli (strain K12) OX=83333 GN=casE PE=1 SV=1
+Length=199
+
+ Score = 255 bits (651),  Expect = 4e-86, Method: Composition-based stats.
+ Identities = 68/216 (31%), Positives = 103/216 (48%), Gaps = 37/216 (17%)
+
+Query  5    MWLTKLVLNPASRAARRDLANPYEMHRTLSKAVSRALEEGRERLLW---RLEPPPV-VLV  60
+            M+L+K+++   +RA  RDL   Y++H+ L        +  R+ L     R  P    VL+
+Sbjct  1    MYLSKVII---ARAWSRDL---YQLHQGLWHLFPNRPDAARDFLFHVEKRNTPEGCHVLL  54
+
+Query  61   QTLTEPDWSVLDEGYAQVFPPKPFHPALKPGQRLRFRLRANPAK-------RLAATGK--  111
+            Q+   P    +    A V   K     L+ G  L FRLRANP K       RL + G   
+Sbjct  55   QSAQMP----VSTAVATVIKTKQVEFQLQVGVPLYFRLRANPIKTILDNQKRLDSKGNIK  110
+
+Query  112  --RVALKTPAEKVAWLERRLEEGGFRLLE----GERGPWVQILQDTFLEVRRLLQVQAVL  165
+              RV L   AE++AWL+R+L     R+ +     ER  +       F    +  ++Q V 
+Sbjct  111  RCRVPLIKEAEQIAWLQRKLGNAA-RVEDVHPISERPQY-------FSGDGKSGKIQTVC  162
+
+Query  166  FEGRLEVVDPERALATLRRGVGPGKALGLGLLSVAP  201
+            FEG L + D    +  +++G+GP K++G GLLS+AP
+Sbjct  163  FEGVLTINDAPALIDLVQQGIGPAKSMGCGLLSLAP  198
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.124    0.339    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0380    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12436315498
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

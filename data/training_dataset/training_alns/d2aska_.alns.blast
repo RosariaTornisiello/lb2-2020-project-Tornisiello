@@ -1,0 +1,4411 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2aska_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN PE=1...  201     4e-66
+sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn ...  189     1e-61
+sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn PE=...  188     4e-61
+sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn P...  84.7    4e-21
+sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Psp...  84.0    8e-21
+sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN PE...  83.6    1e-20
+sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn P...  72.0    8e-16
+sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN PE...  69.7    7e-15
+sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor ...  63.2    4e-12
+sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor ...  60.5    3e-11
+sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor ...  53.5    9e-09
+sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor ...  51.6    5e-08
+sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor OS...  51.2    7e-08
+
+
+>sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN 
+PE=1 SV=1
+Length=220
+
+ Score = 201 bits (510),  Expect = 4e-66, Method: Compositional matrix adjust.
+ Identities = 101/101 (100%), Positives = 101/101 (100%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG
+Sbjct  120  ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  179
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG
+Sbjct  180  SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  220
+
+
+>sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn 
+PE=2 SV=1
+Length=224
+
+ Score = 189 bits (481),  Expect = 1e-61, Method: Compositional matrix adjust.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARSPHDLSLASLL AGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSPHDLSLASLLDAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn 
+PE=1 SV=1
+Length=224
+
+ Score = 188 bits (478),  Expect = 4e-61, Method: Compositional matrix adjust.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARS HDLSLASLLGAGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSQHDLSLASLLGAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 84.7 bits (208),  Expect = 4e-21, Method: Compositional matrix adjust.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 9/102 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPP  59
+            A  CRL S  +PV  LGLG+ S+E V FR+C+GSC + AR+ H L LA L G G      
+Sbjct  63   AGSCRLWSLTLPVAELGLGYASEEKVIFRYCAGSCPQEARTQHSLVLARLRGRG------  116
+
+Query  60   GSRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+              R   +PCC+PT Y  V+F+D    W+ + +LSA ACGC G
+Sbjct  117  --RAHGRPCCQPTSYADVTFLDDQHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 84.0 bits (206),  Expect = 8e-21, Method: Compositional matrix adjust.
+ Identities = 45/99 (45%), Positives = 61/99 (62%), Gaps = 9/99 (9%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPPGSR  62
+            CRL S  +PV  LGLG+ S+E + FR+C+GSC +  R+ H L LA L G G        R
+Sbjct  66   CRLWSLTLPVAELGLGYASEEKIIFRYCAGSCPQEVRTQHSLVLARLRGQG--------R  117
+
+Query  63   PVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+               +PCC+PT Y  V+F+D +  W+ + +LSA ACGC G
+Sbjct  118  AHGRPCCQPTSYADVTFLDDHHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN 
+PE=2 SV=1
+Length=156
+
+ Score = 83.6 bits (205),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 48/99 (48%), Positives = 61/99 (62%), Gaps = 9/99 (9%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPPGSR  62
+            C+L S  + V  LGLG+ S+E V FR+C+GSC R AR+ H L+LA L G G        R
+Sbjct  66   CQLWSLTLSVAELGLGYASEEKVIFRYCAGSCPRGARTQHGLALARLQGQG--------R  117
+
+Query  63   PVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+                PCCRPTRY  V+F+D    W+ + +LSA ACGC G
+Sbjct  118  AHGGPCCRPTRYTDVAFLDDRHRWQRLPQLSAAACGCGG  156
+
+
+>sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn 
+PE=1 SV=1
+Length=195
+
+ Score = 72.0 bits (175),  Expect = 8e-16, Method: Compositional matrix adjust.
+ Identities = 44/98 (45%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL L         R     R 
+Sbjct  101  CGLRELEVRVSELGLGYTSDETVLFRYCAGACEAAIRIYDLGLRR---LRQRRRVRRERA  157
+
+Query  64   VSQPCCRPTRYE-AVSFMDVNSTWRTVDRLSATACGCL  100
+             + PCCRPT YE  VSF+DV+S + T+  LSA  C C+
+Sbjct  158  RAHPCCRPTAYEDEVSFLDVHSRYHTLQELSARECACV  195
+
+
+>sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN 
+PE=1 SV=1
+Length=197
+
+ Score = 69.7 bits (169),  Expect = 7e-15, Method: Compositional matrix adjust.
+ Identities = 45/98 (46%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL L         R     R 
+Sbjct  103  CGLRELEVRVSELGLGYASDETVLFRYCAGACEAAARVYDLGLRR---LRQRRRLRRERV  159
+
+Query  64   VSQPCCRPTRYE-AVSFMDVNSTWRTVDRLSATACGCL  100
+             +QPCCRPT YE  VSF+D +S + TV  LSA  C C+
+Sbjct  160  RAQPCCRPTAYEDEVSFLDAHSRYHTVHELSARECACV  197
+
+
+>sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor 
+OS=Danio rerio OX=7955 GN=gdnf PE=2 SV=1
+Length=235
+
+ Score = 63.2 bits (152),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 35/100 (35%), Positives = 53/100 (53%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L+   + V  L LG+R+ E + FR+CSG C  A + +D  L +L     L     S
+Sbjct  140  RGCLLKEIHLNVTDLDLGYRTKEELIFRYCSGPCHDAETNYDKILNNLTHNKKLDKDTPS  199
+
+Query  62   RPVSQPCCRPTRY-EAVSFMDVNSTWRTVDRLSATACGCL  100
+            R     CCRP  + + +SF+D +  + T+ + SA  C C+
+Sbjct  200  R----TCCRPIAFDDDISFLDDSLEYHTLKKHSAKKCACV  235
+
+
+>sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor 
+OS=Xenopus laevis OX=8355 GN=gdnf PE=2 SV=1
+Length=227
+
+ Score = 60.5 bits (145),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 37/100 (37%), Positives = 56/100 (56%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            +GC LR   + V  LGLG+ + E ++FR+CSGSC    + +D  L +L     +R    +
+Sbjct  132  KGCVLREIHLNVTDLGLGYETKEELKFRYCSGSCNNPETTYDQILKNL----TIRKKLVN  187
+
+Query  62   RPVSQPCCRPT-RYEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  + T+ + SA  CGC+
+Sbjct  188  DKVKQACCRPIAFDDDLSFLDDNLVYHTLKQHSAKKCGCI  227
+
+
+>sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor 
+OS=Mus musculus OX=10090 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 53.5 bits (127),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 38/100 (38%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCESAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPT-RYEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor 
+OS=Homo sapiens OX=9606 GN=GDNF PE=1 SV=1
+Length=211
+
+ Score = 51.6 bits (122),  Expect = 5e-08, Method: Compositional matrix adjust.
+ Identities = 38/100 (38%), Positives = 54/100 (54%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L     L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCDAAETTYDKILKNLSRNRRL----VS  171
+
+Query  62   RPVSQPCCRPT-RYEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPIAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor 
+OS=Rattus norvegicus OX=10116 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 51.2 bits (121),  Expect = 7e-08, Method: Compositional matrix adjust.
+ Identities = 37/100 (37%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCEAAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPT-RYEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D +  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDSLVYHILRKHSAKRCGCI  211
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.138    0.452    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 2
+
+
+Query= d2aska_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn ...  142     6e-43
+sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN PE=1...  141     1e-42
+sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn PE=...  141     1e-42
+sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor ...  137     7e-41
+sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn P...  133     3e-40
+sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Psp...  132     7e-40
+sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN PE...  125     3e-37
+sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor ...  123     2e-35
+sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor ...  119     4e-34
+sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor ...  118     1e-33
+sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor OS...  115     1e-32
+sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn P...  109     3e-30
+sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN PE...  105     8e-29
+
+Sequences not found previously or not previously below threshold:
+
+sp|P27091|60A_DROME Protein 60A OS=Drosophila melanogaster OX=722...  43.9    4e-05
+sp|Q24735|60A_DROVI Protein 60A OS=Drosophila virilis OX=7244 GN=...  43.2    8e-05
+sp|P22004|BMP6_HUMAN Bone morphogenetic protein 6 OS=Homo sapiens...  40.1    8e-04
+sp|P23359|BMP7_MOUSE Bone morphogenetic protein 7 OS=Mus musculus...  39.7    0.001
+sp|Q04906|BMP6_RAT Bone morphogenetic protein 6 OS=Rattus norvegi...  39.7    0.001
+sp|P20722|BMP6_MOUSE Bone morphogenetic protein 6 OS=Mus musculus...  39.7    0.001
+sp|O61643|INHB_DROME Inhibin beta chain OS=Drosophila melanogaste...  39.7    0.001
+sp|P48969|DVR1_STRPU Protein DVR-1 homolog OS=Strongylocentrotus ...  39.3    0.002
+sp|P18075|BMP7_HUMAN Bone morphogenetic protein 7 OS=Homo sapiens...  38.6    0.003
+sp|P49000|MIS_RAT Muellerian-inhibiting factor OS=Rattus norvegic...  38.6    0.003
+sp|P49003|BMP5_MOUSE Bone morphogenetic protein 5 OS=Mus musculus...  38.6    0.003
+sp|P22003|BMP5_HUMAN Bone morphogenetic protein 5 OS=Homo sapiens...  38.2    0.004
+sp|Q7T2X7|BMP3_XENLA Bone morphogenetic protein 3 OS=Xenopus laev...  37.8    0.006
+sp|P03972|MIS_BOVIN Muellerian-inhibiting factor OS=Bos taurus OX...  37.4    0.009
+sp|Q7T2X6|GDF10_XENLA Growth/differentiation factor 10 OS=Xenopus...  37.4    0.009
+sp|P79295|MIS_PIG Muellerian-inhibiting factor OS=Sus scrofa OX=9...  37.4    0.010
+
+
+>sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn 
+PE=2 SV=1
+Length=224
+
+ Score = 142 bits (358),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARSPHDLSLASLL AGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSPHDLSLASLLDAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN 
+PE=1 SV=1
+Length=220
+
+ Score = 141 bits (356),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 101/101 (100%), Positives = 101/101 (100%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG
+Sbjct  120  ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  179
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG
+Sbjct  180  SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  220
+
+
+>sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn 
+PE=1 SV=1
+Length=224
+
+ Score = 141 bits (356),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARS HDLSLASLLGAGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSQHDLSLASLLGAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor 
+OS=Danio rerio OX=7955 GN=gdnf PE=2 SV=1
+Length=235
+
+ Score = 137 bits (345),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 52/101 (51%), Gaps = 5/101 (5%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+             RGC L+   + V  L LG+R+ E + FR+CSG C  A + +D  L +L     L     
+Sbjct  139  GRGCLLKEIHLNVTDLDLGYRTKEELIFRYCSGPCHDAETNYDKILNNLTHNKKLDKDTP  198
+
+Query  61   SRPVSQPCCRPT-RYEAVSFMDVNSTWRTVDRLSATACGCL  100
+            SR     CCRP    + +SF+D +  + T+ + SA  C C+
+Sbjct  199  SR----TCCRPIAFDDDISFLDDSLEYHTLKKHSAKKCACV  235
+
+
+>sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 133 bits (334),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 9/102 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPP  59
+            A  CRL S  +PV  LGLG+ S+E V FR+C+GSC + AR+ H L LA L G G      
+Sbjct  63   AGSCRLWSLTLPVAELGLGYASEEKVIFRYCAGSCPQEARTQHSLVLARLRGRG------  116
+
+Query  60   GSRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+              R   +PCC+PT Y  V+F+D    W+ + +LSA ACGC G
+Sbjct  117  --RAHGRPCCQPTSYADVTFLDDQHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 132 bits (332),  Expect = 7e-40, Method: Composition-based stats.
+ Identities = 45/99 (45%), Positives = 61/99 (62%), Gaps = 9/99 (9%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPPGSR  62
+            CRL S  +PV  LGLG+ S+E + FR+C+GSC +  R+ H L LA L G G        R
+Sbjct  66   CRLWSLTLPVAELGLGYASEEKIIFRYCAGSCPQEVRTQHSLVLARLRGQG--------R  117
+
+Query  63   PVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+               +PCC+PT Y  V+F+D +  W+ + +LSA ACGC G
+Sbjct  118  AHGRPCCQPTSYADVTFLDDHHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN 
+PE=2 SV=1
+Length=156
+
+ Score = 125 bits (315),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 9/102 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPP  59
+            +  C+L S  + V  LGLG+ S+E V FR+C+GSC R AR+ H L+LA L G G      
+Sbjct  63   SGPCQLWSLTLSVAELGLGYASEEKVIFRYCAGSCPRGARTQHGLALARLQGQG------  116
+
+Query  60   GSRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+              R    PCCRPTRY  V+F+D    W+ + +LSA ACGC G
+Sbjct  117  --RAHGGPCCRPTRYTDVAFLDDRHRWQRLPQLSAAACGCGG  156
+
+
+>sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor 
+OS=Xenopus laevis OX=8355 GN=gdnf PE=2 SV=1
+Length=227
+
+ Score = 123 bits (309),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 37/100 (37%), Positives = 56/100 (56%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            +GC LR   + V  LGLG+ + E ++FR+CSGSC    + +D  L +L     +R    +
+Sbjct  132  KGCVLREIHLNVTDLGLGYETKEELKFRYCSGSCNNPETTYDQILKNLT----IRKKLVN  187
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  + T+ + SA  CGC+
+Sbjct  188  DKVKQACCRPIAFDDDLSFLDDNLVYHTLKQHSAKKCGCI  227
+
+
+>sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor 
+OS=Homo sapiens OX=9606 GN=GDNF PE=1 SV=1
+Length=211
+
+ Score = 119 bits (298),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 38/100 (38%), Positives = 54/100 (54%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L     L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCDAAETTYDKILKNLSRNRRL----VS  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPIAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor 
+OS=Mus musculus OX=10090 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 118 bits (295),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 38/100 (38%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCESAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor 
+OS=Rattus norvegicus OX=10116 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 115 bits (288),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 37/100 (37%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCEAAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D +  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDSLVYHILRKHSAKRCGCI  211
+
+
+>sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn 
+PE=1 SV=1
+Length=195
+
+ Score = 109 bits (272),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 44/98 (45%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL L         R     R 
+Sbjct  101  CGLRELEVRVSELGLGYTSDETVLFRYCAGACEAAIRIYDLGL---RRLRQRRRVRRERA  157
+
+Query  64   VSQPCCRPTRYEA-VSFMDVNSTWRTVDRLSATACGCL  100
+             + PCCRPT YE  VSF+DV+S + T+  LSA  C C+
+Sbjct  158  RAHPCCRPTAYEDEVSFLDVHSRYHTLQELSARECACV  195
+
+
+>sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN 
+PE=1 SV=1
+Length=197
+
+ Score = 105 bits (262),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 45/98 (46%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL    L      R     R 
+Sbjct  103  CGLRELEVRVSELGLGYASDETVLFRYCAGACEAAARVYDLG---LRRLRQRRRLRRERV  159
+
+Query  64   VSQPCCRPTRYEA-VSFMDVNSTWRTVDRLSATACGCL  100
+             +QPCCRPT YE  VSF+D +S + TV  LSA  C C+
+Sbjct  160  RAQPCCRPTAYEDEVSFLDAHSRYHTVHELSARECACV  197
+
+
+>sp|P27091|60A_DROME Protein 60A OS=Drosophila melanogaster OX=7227 
+GN=gbb PE=1 SV=1
+Length=455
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 44/110 (40%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            R C++++  +  + LG         G+ +       +CSG C    + H ++  +     
+Sbjct  352  RSCQMQTLYIDFKDLGWHDWIIAPEGYGA------FYCSGECNFPLNAH-MNATNHAIVQ  404
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             L      + V +PCC PTR  A+  +    D N   +    +   +CGC
+Sbjct  405  TLVHLLEPKKVPKPCCAPTRLGALPVLYHLNDENVNLKKYRNMIVKSCGC  454
+
+
+>sp|Q24735|60A_DROVI Protein 60A OS=Drosophila virilis OX=7244 
+GN=gbb PE=3 SV=1
+Length=436
+
+ Score = 43.2 bits (100),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 44/110 (40%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            R C++++  +  + LG         G+ +       +CSG C    + H ++  +     
+Sbjct  333  RSCQMQTLYIDFKDLGWHDWIIAPEGYGA------FYCSGECNFPLNAH-MNATNHAIVQ  385
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             L      + V +PCC PTR  A+  +    D N   +    +   +CGC
+Sbjct  386  TLVHLLEPKRVPKPCCAPTRLGALPVLYHLNDENVNLKKYRNMIVKSCGC  435
+
+
+>sp|P22004|BMP6_HUMAN Bone morphogenetic protein 6 OS=Homo sapiens 
+OX=9606 GN=BMP6 PE=1 SV=1
+Length=513
+
+ Score = 40.1 bits (92),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             CR     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  411  ACRKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  463
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  464  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  512
+
+
+>sp|P23359|BMP7_MOUSE Bone morphogenetic protein 7 OS=Mus musculus 
+OX=10090 GN=Bmp7 PE=1 SV=2
+Length=430
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + + ++  +     
+Sbjct  327  QACKKHELYVSFRDLGWQDWIIAPEGYAA------YYCEGECAFPLNSY-MNATNHAIVQ  379
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   ACGC
+Sbjct  380  TLVHFINPDTVPKPCCAPTQLNAISVLYFDDSSNVILKKYRNMVVRACGC  429
+
+
+>sp|Q04906|BMP6_RAT Bone morphogenetic protein 6 OS=Rattus norvegicus 
+OX=10116 GN=Bmp6 PE=2 SV=2
+Length=506
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  404  ACKKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  456
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  457  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  505
+
+
+>sp|P20722|BMP6_MOUSE Bone morphogenetic protein 6 OS=Mus musculus 
+OX=10090 GN=Bmp6 PE=1 SV=2
+Length=510
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  408  ACKKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  460
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  461  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  509
+
+
+>sp|O61643|INHB_DROME Inhibin beta chain OS=Drosophila melanogaster 
+OX=7227 GN=Actbeta PE=2 SV=2
+Length=946
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/73 (21%), Positives = 26/73 (36%), Gaps = 3/73 (4%)
+
+Query  30   FCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPVSQPCCRPTRYEAVSFM---DVNSTW  86
+            +C G C  +    D                G     +PCC P ++ ++S +   D     
+Sbjct  873  YCRGDCTGSFRTPDTFQTFHAHFIEEYRKMGLMNGMRPCCAPIKFSSMSLIYYGDDGIIK  932
+
+Query  87   RTVDRLSATACGC  99
+            R + ++    CGC
+Sbjct  933  RDLPKMVVDECGC  945
+
+
+>sp|P48969|DVR1_STRPU Protein DVR-1 homolog OS=Strongylocentrotus 
+purpuratus OX=7668 GN=DVR1 PE=2 SV=1
+Length=461
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  4    CRLRSQLVPVRALG--------LGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ ++  V    L         LG+     V F +C G C    + H  +    +    +
+Sbjct  360  CKRKNLFVNFEDLDWQEWIIAPLGY-----VAF-YCQGECAFPLNGHANATNHAIVQTLV  413
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGCL  100
+                 S  V QPCC PT+   ++ +  D   N   +    +   ACGCL
+Sbjct  414  HHMSPSH-VPQPCCAPTKLSPITVLYYDDSRNVVLKKYKNMVVRACGCL  461
+
+
+>sp|P18075|BMP7_HUMAN Bone morphogenetic protein 7 OS=Homo sapiens 
+OX=9606 GN=BMP7 PE=1 SV=1
+Length=431
+
+ Score = 38.6 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + + ++  +     
+Sbjct  328  QACKKHELYVSFRDLGWQDWIIAPEGYAA------YYCEGECAFPLNSY-MNATNHAIVQ  380
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   ACGC
+Sbjct  381  TLVHFINPETVPKPCCAPTQLNAISVLYFDDSSNVILKKYRNMVVRACGC  430
+
+
+>sp|P49000|MIS_RAT Muellerian-inhibiting factor OS=Rattus norvegicus 
+OX=10116 GN=Amh PE=3 SV=1
+Length=553
+
+ Score = 38.6 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 38/99 (38%), Gaps = 4/99 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V +RA        E  +   C G+C   +S  +    + +         G+  
+Sbjct  455  CALRELSVDLRA-ERSVLIPETYQANNCQGACAWPQSDRNPRYGNHVVLLLKMQARGAAL  513
+
+Query  64   VSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+               PCC PT Y     +S  + + +   V  + AT CGC
+Sbjct  514  GRLPCCVPTAYTGKLLISLSEEHISAHHVPNMVATECGC  552
+
+
+>sp|P49003|BMP5_MOUSE Bone morphogenetic protein 5 OS=Mus musculus 
+OX=10090 GN=Bmp5 PE=2 SV=1
+Length=452
+
+ Score = 38.6 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + H ++  +     
+Sbjct  349  QACKKHELYVSFRDLGWQDWIIAPEGYAA------FYCDGECSFPLNAH-MNATNHAIVQ  401
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   +CGC
+Sbjct  402  TLVHLMFPDHVPKPCCAPTKLNAISVLYFDDSSNVILKKYRNMVVRSCGC  451
+
+
+>sp|P22003|BMP5_HUMAN Bone morphogenetic protein 5 OS=Homo sapiens 
+OX=9606 GN=BMP5 PE=1 SV=1
+Length=454
+
+ Score = 38.2 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + H ++  +     
+Sbjct  351  QACKKHELYVSFRDLGWQDWIIAPEGYAA------FYCDGECSFPLNAH-MNATNHAIVQ  403
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   +CGC
+Sbjct  404  TLVHLMFPDHVPKPCCAPTKLNAISVLYFDDSSNVILKKYRNMVVRSCGC  453
+
+
+>sp|Q7T2X7|BMP3_XENLA Bone morphogenetic protein 3 OS=Xenopus 
+laevis OX=8355 GN=bmp3 PE=1 SV=1
+Length=458
+
+ Score = 37.8 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 37/104 (36%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+                  +R   
+Sbjct  354  RNCARRYLKVDFADIGWSEWIISPKSFDAYYCSGACQFPMPKSLKPSNHATIQSIVRAVG  413
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++S  F+D   N   +    ++  +C C
+Sbjct  414  VVPGIPEPCCVPEKMSSLSILFLDENKNVVLKVYPNMTVESCAC  457
+
+
+>sp|P03972|MIS_BOVIN Muellerian-inhibiting factor OS=Bos taurus 
+OX=9913 GN=AMH PE=1 SV=1
+Length=575
+
+ Score = 37.4 bits (85),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 37/99 (37%), Gaps = 4/99 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V +RA        E  +   C G+C   +S  +    + +         G+  
+Sbjct  477  CALRELSVDLRA-ERSVLIPETYQANNCQGACGWPQSDRNPRYGNHVVLLLKMQARGATL  535
+
+Query  64   VSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+               PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  536  ARPPCCVPTAYTGKLLISLSEERISAHHVPNMVATECGC  574
+
+
+>sp|Q7T2X6|GDF10_XENLA Growth/differentiation factor 10 OS=Xenopus 
+laevis OX=8355 GN=gdf10 PE=1 SV=1
+Length=443
+
+ Score = 37.4 bits (85),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 22/104 (21%), Positives = 36/104 (35%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C    +              ++   
+Sbjct  339  RVCSRRYLKVDFADIGWSEWIISPKSFDAYYCSGACEFPMAKVVRPSNHATIQSIVKAVG  398
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                V +PCC P    ++S  F+D   N   +    +S  +C C
+Sbjct  399  IIPGVPEPCCTPDMMNSLSVLFLDEGRNMVLKVYPNMSVESCSC  442
+
+
+>sp|P79295|MIS_PIG Muellerian-inhibiting factor OS=Sus scrofa 
+OX=9823 GN=AMH PE=2 SV=2
+Length=575
+
+ Score = 37.4 bits (85),  Expect = 0.010, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 37/99 (37%), Gaps = 4/99 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V +RA        E  +   C G+C   +S  +    + +         G+  
+Sbjct  477  CALRELSVDLRA-ERSVLIPETYQANNCQGTCGWPQSDRNPRYGNHVVLLLKMQARGAAL  535
+
+Query  64   VSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+               PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  536  ARPPCCVPTAYAGKLLISLSEERISAHHVPNMVATECGC  574
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.128    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0393    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+Results from round 3
+
+
+Query= d2aska_
+
+Length=101
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN PE=1...  132     7e-39
+sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn ...  131     1e-38
+sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn PE=...  131     1e-38
+sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor ...  127     4e-37
+sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn P...  122     5e-36
+sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Psp...  121     2e-35
+sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN PE...  119     1e-34
+sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor ...  114     4e-32
+sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor ...  110     2e-30
+sp|P23359|BMP7_MOUSE Bone morphogenetic protein 7 OS=Mus musculus...  113     5e-30
+sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor ...  108     1e-29
+sp|P27091|60A_DROME Protein 60A OS=Drosophila melanogaster OX=722...  112     2e-29
+sp|Q24735|60A_DROVI Protein 60A OS=Drosophila virilis OX=7244 GN=...  111     3e-29
+sp|Q04906|BMP6_RAT Bone morphogenetic protein 6 OS=Rattus norvegi...  111     6e-29
+sp|P20722|BMP6_MOUSE Bone morphogenetic protein 6 OS=Mus musculus...  110     1e-28
+sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor OS...  105     1e-28
+sp|P22004|BMP6_HUMAN Bone morphogenetic protein 6 OS=Homo sapiens...  110     2e-28
+sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn P...  103     5e-28
+sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN PE...  100     1e-26
+sp|P48969|DVR1_STRPU Protein DVR-1 homolog OS=Strongylocentrotus ...  104     2e-26
+sp|O61643|INHB_DROME Inhibin beta chain OS=Drosophila melanogaste...  96.7    1e-23
+
+Sequences not found previously or not previously below threshold:
+
+sp|P18075|BMP7_HUMAN Bone morphogenetic protein 7 OS=Homo sapiens...  112     9e-30
+sp|P49003|BMP5_MOUSE Bone morphogenetic protein 5 OS=Mus musculus...  111     2e-29
+sp|P22003|BMP5_HUMAN Bone morphogenetic protein 5 OS=Homo sapiens...  111     3e-29
+sp|P30886|BMP7_XENLA Bone morphogenetic protein 7 OS=Xenopus laev...  106     1e-27
+sp|P34820|BMP8B_HUMAN Bone morphogenetic protein 8B OS=Homo sapie...  92.9    1e-22
+sp|P34821|BMP8A_MOUSE Bone morphogenetic protein 8A OS=Mus muscul...  92.5    2e-22
+sp|Q7Z5Y6|BMP8A_HUMAN Bone morphogenetic protein 8A OS=Homo sapie...  92.1    3e-22
+sp|P55105|BMP8B_MOUSE Bone morphogenetic protein 8B OS=Mus muscul...  86.0    5e-20
+sp|P35621|DVR1_DANRE Protein DVR-1 OS=Danio rerio OX=7955 GN=dvr1...  82.9    5e-19
+sp|Q9YGV1|GDF3_XENLA Growth/differentiation factor 3 OS=Xenopus l...  82.9    5e-19
+sp|Q26974|DECA_TRICA Protein decapentaplegic OS=Tribolium castane...  82.5    8e-19
+sp|P09534|DVR1_XENLA Protein DVR-1 OS=Xenopus laevis OX=8355 GN=d...  82.1    9e-19
+sp|P30885|BMP4_XENLA Bone morphogenetic protein 4 OS=Xenopus laev...  82.1    1e-18
+sp|P48970|UNIV_STRPU Univin OS=Strongylocentrotus purpuratus OX=7...  81.7    2e-18
+sp|Q66KL4|DERR_XENTR Derriere protein OS=Xenopus tropicalis OX=83...  81.3    2e-18
+sp|P07713|DECA_DROME Protein decapentaplegic OS=Drosophila melano...  81.3    3e-18
+sp|P91706|DECA_DROSI Protein decapentaplegic OS=Drosophila simula...  81.3    3e-18
+sp|P91699|DECA_DROPS Protein decapentaplegic OS=Drosophila pseudo...  80.6    6e-18
+sp|Q06826|BMP4_RAT Bone morphogenetic protein 4 OS=Rattus norvegi...  79.4    1e-17
+sp|P12644|BMP4_HUMAN Bone morphogenetic protein 4 OS=Homo sapiens...  79.4    1e-17
+sp|Q8MJV5|BMP4_SUNMU Bone morphogenetic protein 4 OS=Suncus murin...  79.4    1e-17
+sp|P21275|BMP4_MOUSE Bone morphogenetic protein 4 OS=Mus musculus...  79.0    2e-17
+sp|Q2KJH1|BMP4_BOVIN Bone morphogenetic protein 4 OS=Bos taurus O...  79.0    2e-17
+sp|Q90752|BMP4_CHICK Bone morphogenetic protein 4 OS=Gallus gallu...  78.6    2e-17
+sp|Q29607|BMP4_DAMDA Bone morphogenetic protein 4 OS=Dama dama OX...  78.6    2e-17
+sp|P25703|BMP2A_XENLA Bone morphogenetic protein 2-A OS=Xenopus l...  78.6    2e-17
+sp|P49001|BMP2_RAT Bone morphogenetic protein 2 OS=Rattus norvegi...  78.6    3e-17
+sp|P30884|BMP2B_XENLA Bone morphogenetic protein 2-B OS=Xenopus l...  78.6    3e-17
+sp|P21274|BMP2_MOUSE Bone morphogenetic protein 2 OS=Mus musculus...  78.3    3e-17
+sp|O19006|BMP2_DAMDA Bone morphogenetic protein 2 OS=Dama dama OX...  78.3    3e-17
+sp|P43026|GDF5_HUMAN Growth/differentiation factor 5 OS=Homo sapi...  78.3    3e-17
+sp|P43027|GDF5_MOUSE Growth/differentiation factor 5 OS=Mus muscu...  78.3    4e-17
+sp|P12643|BMP2_HUMAN Bone morphogenetic protein 2 OS=Homo sapiens...  77.9    5e-17
+sp|Q804S2|BMP2_TETNG Bone morphogenetic protein 2 OS=Tetraodon ni...  77.5    6e-17
+sp|O46564|BMP2_RABIT Bone morphogenetic protein 2 OS=Oryctolagus ...  77.5    6e-17
+sp|Q90751|BMP2_CHICK Bone morphogenetic protein 2 (Fragment) OS=G...  76.7    9e-17
+sp|O46576|BMP4_RABIT Bone morphogenetic protein 4 OS=Oryctolagus ...  76.7    1e-16
+sp|P55106|GDF6_BOVIN Growth/differentiation factor 6 OS=Bos tauru...  75.6    3e-16
+sp|P43028|GDF6_MOUSE Growth/differentiation factor 6 OS=Mus muscu...  75.2    5e-16
+sp|Q6HA10|GDF6_RAT Growth/differentiation factor 6 OS=Rattus norv...  74.8    5e-16
+sp|Q6KF10|GDF6_HUMAN Growth/differentiation factor 6 OS=Homo sapi...  74.4    7e-16
+sp|Q4AEG6|BMP10_RAT Bone morphogenetic protein 10 OS=Rattus norve...  73.6    2e-15
+sp|Q9R229|BMP10_MOUSE Bone morphogenetic protein 10 OS=Mus muscul...  73.6    2e-15
+sp|O95393|BMP10_HUMAN Bone morphogenetic protein 10 OS=Homo sapie...  73.2    2e-15
+sp|Q07104|GDF3_MOUSE Growth/differentiation factor 3 OS=Mus muscu...  72.9    2e-15
+sp|Q9NR23|GDF3_HUMAN Growth/differentiation factor 3 OS=Homo sapi...  71.3    9e-15
+sp|A8E7N9|GDF6B_DANRE Growth/differentiation factor 6-B OS=Danio ...  71.3    9e-15
+sp|P85857|GDF6A_DANRE Growth/differentiation factor 6-A OS=Danio ...  70.9    1e-14
+sp|Q8BHE5|BMP3_MOUSE Bone morphogenetic protein 3 OS=Mus musculus...  70.9    1e-14
+sp|P34822|DSL1_CHICK Dorsalin-1 OS=Gallus gallus OX=9031 GN=DSL1 ...  70.6    2e-14
+sp|Q9WV56|GDF2_MOUSE Growth/differentiation factor 2 OS=Mus muscu...  70.6    2e-14
+sp|P22444|BMP3_BOVIN Bone morphogenetic protein 3 OS=Bos taurus O...  70.6    2e-14
+sp|Q9UK05|GDF2_HUMAN Growth/differentiation factor 2 OS=Homo sapi...  70.2    2e-14
+sp|P12645|BMP3_HUMAN Bone morphogenetic protein 3 OS=Homo sapiens...  70.2    3e-14
+sp|P49002|BMP3_RAT Bone morphogenetic protein 3 OS=Rattus norvegi...  69.8    3e-14
+sp|P43029|GDF7_MOUSE Growth/differentiation factor 7 OS=Mus muscu...  69.4    5e-14
+sp|Q7T2X7|BMP3_XENLA Bone morphogenetic protein 3 OS=Xenopus laev...  69.0    7e-14
+sp|P54631|SCW_DROME Protein screw OS=Drosophila melanogaster OX=7...  68.6    7e-14
+sp|Q9BDW8|GDF7_CHLAE Growth/differentiation factor 7 OS=Chloroceb...  68.6    9e-14
+sp|Q7Z4P5|GDF7_HUMAN Growth/differentiation factor 7 OS=Homo sapi...  68.2    1e-13
+sp|Q7T2X6|GDF10_XENLA Growth/differentiation factor 10 OS=Xenopus...  67.9    2e-13
+sp|Q08DX6|GDF10_BOVIN Growth/differentiation factor 10 OS=Bos tau...  67.1    4e-13
+sp|P55107|GDF10_HUMAN Growth/differentiation factor 10 OS=Homo sa...  67.1    4e-13
+sp|F1QWZ4|GDF2_DANRE Growth/differentiation factor 2 OS=Danio rer...  66.7    4e-13
+sp|P27539|GDF1_HUMAN Embryonic growth/differentiation factor 1 OS...  66.3    6e-13
+sp|P55108|GDF10_RAT Growth/differentiation factor 10 OS=Rattus no...  66.3    6e-13
+sp|P97737|GDF10_MOUSE Growth/differentiation factor 10 OS=Mus mus...  65.5    1e-12
+sp|Q6J1J2|GDF8_VULLA Growth/differentiation factor 8 OS=Vulpes la...  64.0    4e-12
+sp|Q6DTL9|GDF8_VULVU Growth/differentiation factor 8 OS=Vulpes vu...  64.0    4e-12
+sp|O18828|GDF8_PAPHA Growth/differentiation factor 8 OS=Papio ham...  63.2    6e-12
+sp|Q9MZE2|BMP15_SHEEP Bone morphogenetic protein 15 OS=Ovis aries...  63.2    6e-12
+sp|P20863|GDF1_MOUSE Embryonic growth/differentiation factor 1 OS...  62.8    1e-11
+sp|Q6PX77|BMP15_BOVIN Bone morphogenetic protein 15 OS=Bos taurus...  62.5    1e-11
+sp|Q8AVB2|GDF8_COTCO Growth/differentiation factor 8 OS=Coturnix ...  62.1    2e-11
+sp|O18831|GDF8_PIG Growth/differentiation factor 8 OS=Sus scrofa ...  62.1    2e-11
+sp|Q5USV7|GDF8_AEPME Growth/differentiation factor 8 OS=Aepyceros...  62.1    2e-11
+sp|Q8UWD7|GDF8_SYNCH Growth/differentiation factor 8 OS=Synoicus ...  61.7    2e-11
+sp|Q9GM97|GDF8_HORSE Growth/differentiation factor 8 OS=Equus cab...  61.7    2e-11
+sp|O42220|GDF8_CHICK Growth/differentiation factor 8 OS=Gallus ga...  61.7    2e-11
+sp|O42221|GDF8_MELGA Growth/differentiation factor 8 OS=Meleagris...  61.7    2e-11
+sp|Q5USV5|GDF8_ANTAM Growth/differentiation factor 8 OS=Antilocap...  61.7    2e-11
+sp|Q5USW0|GDF8_TAUDE Growth/differentiation factor 8 OS=Taurotrag...  61.3    3e-11
+sp|Q8HY52|GDF8_LEPCA Growth/differentiation factor 8 OS=Lepus cap...  61.3    3e-11
+sp|O18836|GDF8_BOVIN Growth/differentiation factor 8 OS=Bos tauru...  61.3    3e-11
+sp|Q5RZV4|GDF8_BOSIN Growth/differentiation factor 8 OS=Bos indic...  61.3    3e-11
+sp|Q5USW1|GDF8_BOSGA Growth/differentiation factor 8 OS=Bos gauru...  61.3    3e-11
+sp|O14793|GDF8_HUMAN Growth/differentiation factor 8 OS=Homo sapi...  61.3    3e-11
+sp|O08689|GDF8_MOUSE Growth/differentiation factor 8 OS=Mus muscu...  61.3    3e-11
+sp|A1C2U3|GDF8_PONPY Growth/differentiation factor 8 OS=Pongo pyg...  61.3    3e-11
+sp|A1C2V0|GDF8_PANTR Growth/differentiation factor 8 OS=Pan trogl...  61.3    3e-11
+sp|A1C2U7|GDF8_PANPA Growth/differentiation factor 8 OS=Pan panis...  61.3    3e-11
+sp|A1C2U6|GDF8_MACMU Growth/differentiation factor 8 OS=Macaca mu...  61.3    3e-11
+sp|Q95J86|GDF8_MACFA Growth/differentiation factor 8 OS=Macaca fa...  61.3    3e-11
+sp|A1C2V5|GDF8_GORGO Growth/differentiation factor 8 OS=Gorilla g...  61.3    3e-11
+sp|O35312|GDF8_RAT Growth/differentiation factor 8 OS=Rattus norv...  61.3    3e-11
+sp|Q6X5V1|GDF8_BUBBU Growth/differentiation factor 8 OS=Bubalus b...  61.3    3e-11
+sp|G7PWZ3|GDF15_MACFA Growth/differentiation factor 15 OS=Macaca ...  60.9    3e-11
+sp|Q8UWD8|GDF8_COLLI Growth/differentiation factor 8 OS=Columba l...  61.3    4e-11
+sp|Q5USV6|GDF8_SYLGR Growth/differentiation factor 8 OS=Sylvicapr...  60.9    4e-11
+sp|O18830|GDF8_SHEEP Growth/differentiation factor 8 OS=Ovis arie...  60.9    4e-11
+sp|Q5USV8|GDF8_HEMJE Growth/differentiation factor 8 OS=Hemitragu...  60.9    4e-11
+sp|Q6T5B8|GDF8_CAPHI Growth/differentiation factor 8 OS=Capra hir...  60.9    4e-11
+sp|Q6UKZ8|GDF8_CANLF Growth/differentiation factor 8 OS=Canis lup...  60.9    4e-11
+sp|Q5USV9|GDF8_CAPIB Growth/differentiation factor 8 OS=Capra ibe...  60.9    4e-11
+sp|Q99988|GDF15_HUMAN Growth/differentiation factor 15 OS=Homo sa...  60.5    4e-11
+sp|Q5I3Q2|GDF8_EPICO Growth/differentiation factor 8 OS=Epinephel...  60.5    5e-11
+sp|Q98TB4|GDF8_OREMO Growth/differentiation factor 8 OS=Oreochrom...  60.5    6e-11
+sp|Q66NC0|GDF9_CAPHI Growth/differentiation factor 9 OS=Capra hir...  60.2    1e-10
+sp|O77681|GDF9_SHEEP Growth/differentiation factor 9 OS=Ovis arie...  59.8    1e-10
+sp|Q28GB8|NODAL_XENTR Nodal homolog OS=Xenopus tropicalis OX=8364...  59.8    1e-10
+sp|Q9Z0L4|BMP15_MOUSE Bone morphogenetic protein 15 OS=Mus muscul...  59.8    1e-10
+sp|O95972|BMP15_HUMAN Bone morphogenetic protein 15 OS=Homo sapie...  59.4    1e-10
+sp|Q8UWD9|GDF8_ANSAN Growth/differentiation factor 8 OS=Anser ans...  59.4    2e-10
+sp|P55102|INHBA_HORSE Inhibin beta A chain OS=Equus caballus OX=9...  59.0    2e-10
+sp|O42222|GDF8_DANRE Growth/differentiation factor 8 OS=Danio rer...  58.6    3e-10
+sp|Q6X2S4|INHBA_FELCA Inhibin beta A chain OS=Felis catus OX=9685...  58.6    3e-10
+sp|A9CB18|GDF9_PAPAN Growth/differentiation factor 9 OS=Papio anu...  58.6    3e-10
+sp|Q9GK68|GDF9_BOVIN Growth/differentiation factor 9 OS=Bos tauru...  58.2    3e-10
+sp|P03970|INHBA_PIG Inhibin beta A chain OS=Sus scrofa OX=9823 GN...  58.2    4e-10
+sp|P18331|INHBA_RAT Inhibin beta A chain OS=Rattus norvegicus OX=...  58.2    4e-10
+sp|Q04998|INHBA_MOUSE Inhibin beta A chain OS=Mus musculus OX=100...  58.2    4e-10
+sp|P43032|INHBA_SHEEP Inhibin beta A chain OS=Ovis aries OX=9940 ...  58.2    4e-10
+sp|Q8UWE0|GDF8_ANAPL Growth/differentiation factor 8 OS=Anas plat...  58.2    4e-10
+sp|P08476|INHBA_HUMAN Inhibin beta A chain OS=Homo sapiens OX=960...  57.8    5e-10
+sp|O60383|GDF9_HUMAN Growth/differentiation factor 9 OS=Homo sapi...  57.5    6e-10
+sp|P07995|INHBA_BOVIN Inhibin beta A chain OS=Bos taurus OX=9913 ...  57.5    7e-10
+sp|Q07105|GDF9_MOUSE Growth/differentiation factor 9 OS=Mus muscu...  57.1    9e-10
+sp|Q9Z0J7|GDF15_MOUSE Growth/differentiation factor 15 OS=Mus mus...  57.1    9e-10
+sp|Q04999|INHBB_MOUSE Inhibin beta B chain OS=Mus musculus OX=100...  56.7    1e-09
+sp|P17491|INHBB_RAT Inhibin beta B chain OS=Rattus norvegicus OX=...  56.7    1e-09
+sp|O08717|INHBE_MOUSE Inhibin beta E chain OS=Mus musculus OX=100...  55.9    2e-09
+sp|O88959|INHBE_RAT Inhibin beta E chain OS=Rattus norvegicus OX=...  55.5    3e-09
+sp|Q91619|NODAL_XENLA Nodal homolog OS=Xenopus laevis OX=8355 GN=...  55.5    3e-09
+sp|P43021|NODAL_MOUSE Nodal OS=Mus musculus OX=10090 GN=Nodal PE=...  55.5    4e-09
+sp|Q96S42|NODAL_HUMAN Nodal homolog OS=Homo sapiens OX=9606 GN=NO...  55.1    5e-09
+sp|P27093|INHBB_CHICK Inhibin beta B chain OS=Gallus gallus OX=90...  55.1    5e-09
+sp|P27092|INHBA_CHICK Inhibin beta A chain OS=Gallus gallus OX=90...  55.1    5e-09
+sp|Q9Z0J6|GDF15_RAT Growth/differentiation factor 15 OS=Rattus no...  54.4    8e-09
+sp|P92172|DAF7_CAEEL Dauer larva development regulatory growth fa...  54.4    8e-09
+sp|O93449|TGFB1_ONCMY Transforming growth factor beta-1 proprotei...  54.0    1e-08
+sp|P09529|INHBB_HUMAN Inhibin beta B chain OS=Homo sapiens OX=960...  54.0    1e-08
+sp|O95390|GDF11_HUMAN Growth/differentiation factor 11 OS=Homo sa...  54.0    1e-08
+sp|P04088|INHBB_PIG Inhibin beta B chain OS=Sus scrofa OX=9823 GN...  54.0    1e-08
+sp|Q9Z217|GDF11_RAT Growth/differentiation factor 11 OS=Rattus no...  54.0    1e-08
+sp|Q9Z1W4|GDF11_MOUSE Growth/differentiation factor 11 OS=Mus mus...  54.0    1e-08
+sp|P58166|INHBE_HUMAN Inhibin beta E chain OS=Homo sapiens OX=960...  53.6    2e-08
+sp|P42917|INHBB_BOVIN Inhibin beta B chain OS=Bos taurus OX=9913 ...  53.6    2e-08
+sp|P49000|MIS_RAT Muellerian-inhibiting factor OS=Rattus norvegic...  53.6    2e-08
+sp|Q91620|NOD2A_XENLA Nodal homolog 2-A OS=Xenopus laevis OX=8355...  53.2    2e-08
+sp|O13048|NOD4A_XENLA Nodal homolog 4-A OS=Xenopus laevis OX=8355...  52.1    6e-08
+sp|Q9PTQ2|TGFB1_CYPCA Transforming growth factor beta-1 proprotei...  51.7    7e-08
+sp|P79295|MIS_PIG Muellerian-inhibiting factor OS=Sus scrofa OX=9...  51.7    8e-08
+sp|P27106|MIS_MOUSE Muellerian-inhibiting factor OS=Mus musculus ...  51.7    8e-08
+sp|P03972|MIS_BOVIN Muellerian-inhibiting factor OS=Bos taurus OX...  51.7    8e-08
+sp|P55104|INHBC_MOUSE Inhibin beta C chain OS=Mus musculus OX=100...  50.9    1e-07
+sp|Q9WUK5|INHBC_RAT Inhibin beta C chain OS=Rattus norvegicus OX=...  50.9    2e-07
+sp|P15203|TGFB3_PIG Transforming growth factor beta-3 proprotein ...  50.9    2e-07
+sp|P55103|INHBC_HUMAN Inhibin beta C chain OS=Homo sapiens OX=960...  50.1    3e-07
+sp|P03971|MIS_HUMAN Muellerian-inhibiting factor OS=Homo sapiens ...  50.1    3e-07
+sp|P10600|TGFB3_HUMAN Transforming growth factor beta-3 proprotei...  50.1    3e-07
+sp|P17125|TGFB3_MOUSE Transforming growth factor beta-3 proprotei...  49.8    4e-07
+sp|Q07258|TGFB3_RAT Transforming growth factor beta-3 proprotein ...  49.4    5e-07
+sp|P16047|TGFB3_CHICK Transforming growth factor beta-3 proprotei...  49.4    6e-07
+sp|Q800B8|NOD3C_XENTR Nodal homolog 3-C OS=Xenopus tropicalis OX=...  47.8    2e-06
+sp|Q800C0|NOD3A_XENTR Nodal homolog 3-A OS=Xenopus tropicalis OX=...  47.4    2e-06
+sp|Q800B9|NOD3B_XENTR Nodal homolog 3-B OS=Xenopus tropicalis OX=...  47.1    3e-06
+sp|Q91621|NOD3B_XENLA Nodal homolog 3-B OS=Xenopus laevis OX=8355...  46.3    5e-06
+sp|P09531|TGFB1_CHICK Transforming growth factor beta-1 proprotei...  46.3    7e-06
+sp|Q91609|NOD3A_XENLA Nodal homolog 3-A OS=Xenopus laevis OX=8355...  44.7    2e-05
+sp|P16176|TGFB1_XENLA Transforming growth factor beta-1 proprotei...  44.7    2e-05
+sp|Q9Z1Y6|TGFB1_CAVPO Transforming growth factor beta-1 proprotei...  43.2    6e-05
+sp|P17246|TGFB1_RAT Transforming growth factor beta-1 proprotein ...  43.2    8e-05
+sp|P04202|TGFB1_MOUSE Transforming growth factor beta-1 proprotei...  42.8    9e-05
+sp|P55101|INHA_HORSE Inhibin alpha chain OS=Equus caballus OX=979...  42.8    1e-04
+sp|P50414|TGFB1_SHEEP Transforming growth factor beta-1 proprotei...  42.8    1e-04
+sp|P09533|TGFB1_CHLAE Transforming growth factor beta-1 proprotei...  42.8    1e-04
+sp|P18341|TGFB1_BOVIN Transforming growth factor beta-1 proprotei...  42.8    1e-04
+sp|P54831|TGFB1_CANLF Transforming growth factor beta-1 proprotei...  42.8    1e-04
+sp|P01137|TGFB1_HUMAN Transforming growth factor beta-1 proprotei...  42.4    1e-04
+sp|Q04997|INHA_MOUSE Inhibin alpha chain OS=Mus musculus OX=10090...  42.4    1e-04
+sp|P04087|INHA_PIG Inhibin alpha chain OS=Sus scrofa OX=9823 GN=I...  42.4    2e-04
+sp|P07200|TGFB1_PIG Transforming growth factor beta-1 proprotein ...  42.0    2e-04
+sp|Q38HS2|TGFB1_MUSPF Transforming growth factor beta-1 proprotei...  42.0    2e-04
+sp|P38440|INHA_SHEEP Inhibin alpha chain (Fragment) OS=Ovis aries...  41.7    3e-04
+sp|O19011|TGFB1_HORSE Transforming growth factor beta-1 proprotei...  41.7    3e-04
+sp|P17490|INHA_RAT Inhibin alpha chain OS=Rattus norvegicus OX=10...  40.9    4e-04
+sp|P07994|INHA_BOVIN Inhibin alpha chain OS=Bos taurus OX=9913 GN...  40.5    6e-04
+sp|O77755|INHA_TRIVU Inhibin alpha chain OS=Trichosurus vulpecula...  39.3    0.001
+sp|Q90XB7|NOD2B_XENLA Nodal homolog 2-B (Fragment) OS=Xenopus lae...  39.0    0.002
+sp|P05111|INHA_HUMAN Inhibin alpha chain OS=Homo sapiens OX=9606 ...  38.6    0.003
+
+
+>sp|Q5T4W7|ARTN_HUMAN Artemin OS=Homo sapiens OX=9606 GN=ARTN 
+PE=1 SV=1
+Length=220
+
+ Score = 132 bits (331),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 101/101 (100%), Positives = 101/101 (100%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG
+Sbjct  120  ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  179
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG
+Sbjct  180  SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  220
+
+
+>sp|Q6AYE8|ARTN_RAT Artemin OS=Rattus norvegicus OX=10116 GN=Artn 
+PE=2 SV=1
+Length=224
+
+ Score = 131 bits (330),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARSPHDLSLASLL AGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSPHDLSLASLLDAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|Q9Z0L2|ARTN_MOUSE Artemin OS=Mus musculus OX=10090 GN=Artn 
+PE=1 SV=1
+Length=224
+
+ Score = 131 bits (329),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 94/101 (93%), Positives = 96/101 (95%), Gaps = 0/101 (0%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+            ARGCRLRSQLVPV ALGLGH SDEL+RFRFCSGSCRRARS HDLSLASLLGAGALR PPG
+Sbjct  124  ARGCRLRSQLVPVSALGLGHSSDELIRFRFCSGSCRRARSQHDLSLASLLGAGALRSPPG  183
+
+Query  61   SRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+            SRP+SQPCCRPTRYEAVSFMDVNSTWRTVD LSATACGCLG
+Sbjct  184  SRPISQPCCRPTRYEAVSFMDVNSTWRTVDHLSATACGCLG  224
+
+
+>sp|Q98TU0|GDNF_DANRE Glial cell line-derived neurotrophic factor 
+OS=Danio rerio OX=7955 GN=gdnf PE=2 SV=1
+Length=235
+
+ Score = 127 bits (320),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 35/101 (35%), Positives = 53/101 (52%), Gaps = 5/101 (5%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPG  60
+             RGC L+   + V  L LG+R+ E + FR+CSG C  A + +D  L +L     L     
+Sbjct  139  GRGCLLKEIHLNVTDLDLGYRTKEELIFRYCSGPCHDAETNYDKILNNLTHNKKLDKDTP  198
+
+Query  61   SRPVSQPCCRPTRY-EAVSFMDVNSTWRTVDRLSATACGCL  100
+            SR     CCRP  + + +SF+D +  + T+ + SA  C C+
+Sbjct  199  SRT----CCRPIAFDDDISFLDDSLEYHTLKKHSAKKCACV  235
+
+
+>sp|O70300|PSPN_MOUSE Persephin OS=Mus musculus OX=10090 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 122 bits (306),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 9/102 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPP  59
+            A  CRL S  +PV  LGLG+ S+E V FR+C+GSC + AR+ H L LA L G G      
+Sbjct  63   AGSCRLWSLTLPVAELGLGYASEEKVIFRYCAGSCPQEARTQHSLVLARLRGRG------  116
+
+Query  60   GSRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+              R   +PCC+PT Y  V+F+D    W+ + +LSA ACGC G
+Sbjct  117  --RAHGRPCCQPTSYADVTFLDDQHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O70301|PSPN_RAT Persephin OS=Rattus norvegicus OX=10116 GN=Pspn 
+PE=2 SV=1
+Length=156
+
+ Score = 121 bits (303),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 45/99 (45%), Positives = 61/99 (62%), Gaps = 9/99 (9%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPPGSR  62
+            CRL S  +PV  LGLG+ S+E + FR+C+GSC +  R+ H L LA L G G        R
+Sbjct  66   CRLWSLTLPVAELGLGYASEEKIIFRYCAGSCPQEVRTQHSLVLARLRGQG--------R  117
+
+Query  63   PVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+               +PCC+PT Y  V+F+D +  W+ + +LSA ACGC G
+Sbjct  118  AHGRPCCQPTSYADVTFLDDHHHWQQLPQLSAAACGCGG  156
+
+
+>sp|O60542|PSPN_HUMAN Persephin OS=Homo sapiens OX=9606 GN=PSPN 
+PE=2 SV=1
+Length=156
+
+ Score = 119 bits (298),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 48/102 (47%), Positives = 62/102 (61%), Gaps = 9/102 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSC-RRARSPHDLSLASLLGAGALRPPP  59
+            +  C+L S  + V  LGLG+ S+E V FR+C+GSC R AR+ H L+LA L G G      
+Sbjct  63   SGPCQLWSLTLSVAELGLGYASEEKVIFRYCAGSCPRGARTQHGLALARLQGQG------  116
+
+Query  60   GSRPVSQPCCRPTRYEAVSFMDVNSTWRTVDRLSATACGCLG  101
+              R    PCCRPTRY  V+F+D    W+ + +LSA ACGC G
+Sbjct  117  --RAHGGPCCRPTRYTDVAFLDDRHRWQRLPQLSAAACGCGG  156
+
+
+>sp|Q06PM8|GDNF_XENLA Glial cell line-derived neurotrophic factor 
+OS=Xenopus laevis OX=8355 GN=gdnf PE=2 SV=1
+Length=227
+
+ Score = 114 bits (286),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 37/100 (37%), Positives = 56/100 (56%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            +GC LR   + V  LGLG+ + E ++FR+CSGSC    + +D  L +L     +R    +
+Sbjct  132  KGCVLREIHLNVTDLGLGYETKEELKFRYCSGSCNNPETTYDQILKNL----TIRKKLVN  187
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  + T+ + SA  CGC+
+Sbjct  188  DKVKQACCRPIAFDDDLSFLDDNLVYHTLKQHSAKKCGCI  227
+
+
+>sp|P39905|GDNF_HUMAN Glial cell line-derived neurotrophic factor 
+OS=Homo sapiens OX=9606 GN=GDNF PE=1 SV=1
+Length=211
+
+ Score = 110 bits (274),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 38/100 (38%), Positives = 54/100 (54%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L     L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCDAAETTYDKILKNLSRNRRLV----S  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPIAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|P23359|BMP7_MOUSE Bone morphogenetic protein 7 OS=Mus musculus 
+OX=10090 GN=Bmp7 PE=1 SV=2
+Length=430
+
+ Score = 113 bits (283),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + + ++  +     
+Sbjct  327  QACKKHELYVSFRDLGWQDWIIAPEGYAA------YYCEGECAFPLNSY-MNATNHAIVQ  379
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   ACGC
+Sbjct  380  TLVHFINPDTVPKPCCAPTQLNAISVLYFDDSSNVILKKYRNMVVRACGC  429
+
+
+>sp|P18075|BMP7_HUMAN Bone morphogenetic protein 7 OS=Homo sapiens 
+OX=9606 GN=BMP7 PE=1 SV=1
+Length=431
+
+ Score = 112 bits (281),  Expect = 9e-30, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + + ++  +     
+Sbjct  328  QACKKHELYVSFRDLGWQDWIIAPEGYAA------YYCEGECAFPLNSY-MNATNHAIVQ  380
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   ACGC
+Sbjct  381  TLVHFINPETVPKPCCAPTQLNAISVLYFDDSSNVILKKYRNMVVRACGC  430
+
+
+>sp|P48540|GDNF_MOUSE Glial cell line-derived neurotrophic factor 
+OS=Mus musculus OX=10090 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 108 bits (269),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 38/100 (38%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCESAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D N  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDNLVYHILRKHSAKRCGCI  211
+
+
+>sp|P27091|60A_DROME Protein 60A OS=Drosophila melanogaster OX=7227 
+GN=gbb PE=1 SV=1
+Length=455
+
+ Score = 112 bits (280),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 44/110 (40%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            R C++++  +  + LG         G+ +       +CSG C    + H ++  +     
+Sbjct  352  RSCQMQTLYIDFKDLGWHDWIIAPEGYGA------FYCSGECNFPLNAH-MNATNHAIVQ  404
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             L      + V +PCC PTR  A+  +    D N   +    +   +CGC
+Sbjct  405  TLVHLLEPKKVPKPCCAPTRLGALPVLYHLNDENVNLKKYRNMIVKSCGC  454
+
+
+>sp|P49003|BMP5_MOUSE Bone morphogenetic protein 5 OS=Mus musculus 
+OX=10090 GN=Bmp5 PE=2 SV=1
+Length=452
+
+ Score = 111 bits (278),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + H ++  +     
+Sbjct  349  QACKKHELYVSFRDLGWQDWIIAPEGYAA------FYCDGECSFPLNAH-MNATNHAIVQ  401
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   +CGC
+Sbjct  402  TLVHLMFPDHVPKPCCAPTKLNAISVLYFDDSSNVILKKYRNMVVRSCGC  451
+
+
+>sp|Q24735|60A_DROVI Protein 60A OS=Drosophila virilis OX=7244 
+GN=gbb PE=3 SV=1
+Length=436
+
+ Score = 111 bits (278),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 44/110 (40%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            R C++++  +  + LG         G+ +       +CSG C    + H ++  +     
+Sbjct  333  RSCQMQTLYIDFKDLGWHDWIIAPEGYGA------FYCSGECNFPLNAH-MNATNHAIVQ  385
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             L      + V +PCC PTR  A+  +    D N   +    +   +CGC
+Sbjct  386  TLVHLLEPKRVPKPCCAPTRLGALPVLYHLNDENVNLKKYRNMIVKSCGC  435
+
+
+>sp|P22003|BMP5_HUMAN Bone morphogenetic protein 5 OS=Homo sapiens 
+OX=9606 GN=BMP5 PE=1 SV=1
+Length=454
+
+ Score = 111 bits (278),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 24/110 (22%), Positives = 40/110 (36%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    + H ++  +     
+Sbjct  351  QACKKHELYVSFRDLGWQDWIIAPEGYAA------FYCDGECSFPLNAH-MNATNHAIVQ  403
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+  A+S  + D   N   +    +   +CGC
+Sbjct  404  TLVHLMFPDHVPKPCCAPTKLNAISVLYFDDSSNVILKKYRNMVVRSCGC  453
+
+
+>sp|Q04906|BMP6_RAT Bone morphogenetic protein 6 OS=Rattus norvegicus 
+OX=10116 GN=Bmp6 PE=2 SV=2
+Length=506
+
+ Score = 111 bits (277),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  404  ACKKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  456
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  457  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  505
+
+
+>sp|P20722|BMP6_MOUSE Bone morphogenetic protein 6 OS=Mus musculus 
+OX=10090 GN=Bmp6 PE=1 SV=2
+Length=510
+
+ Score = 110 bits (275),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  408  ACKKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  460
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  461  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  509
+
+
+>sp|Q07731|GDNF_RAT Glial cell line-derived neurotrophic factor 
+OS=Rattus norvegicus OX=10116 GN=Gdnf PE=1 SV=1
+Length=211
+
+ Score = 105 bits (261),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 37/100 (37%), Positives = 55/100 (55%), Gaps = 5/100 (5%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            RGC L +  + V  LGLG+ + E + FR+CSGSC  A + +D  L +L  +  L     S
+Sbjct  116  RGCVLTAIHLNVTDLGLGYETKEELIFRYCSGSCEAAETMYDKILKNLSRSRRL----TS  171
+
+Query  62   RPVSQPCCRPTR-YEAVSFMDVNSTWRTVDRLSATACGCL  100
+              V Q CCRP    + +SF+D +  +  + + SA  CGC+
+Sbjct  172  DKVGQACCRPVAFDDDLSFLDDSLVYHILRKHSAKRCGCI  211
+
+
+>sp|P22004|BMP6_HUMAN Bone morphogenetic protein 6 OS=Homo sapiens 
+OX=9606 GN=BMP6 PE=1 SV=1
+Length=513
+
+ Score = 110 bits (274),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 41/109 (38%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             CR     V  + LG         G+ ++      +C G C    + H ++  +      
+Sbjct  411  ACRKHELYVSFQDLGWQDWIIAPKGYAAN------YCDGECSFPLNAH-MNATNHAIVQT  463
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+            L        V +PCC PT+  A+S  + D NS    +    +   ACGC
+Sbjct  464  LVHLMNPEYVPKPCCAPTKLNAISVLYFDDNSNVILKKYRNMVVRACGC  512
+
+
+>sp|P97463|NRTN_MOUSE Neurturin OS=Mus musculus OX=10090 GN=Nrtn 
+PE=1 SV=1
+Length=195
+
+ Score = 103 bits (257),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 44/98 (45%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL    L      R     R 
+Sbjct  101  CGLRELEVRVSELGLGYTSDETVLFRYCAGACEAAIRIYDLG---LRRLRQRRRVRRERA  157
+
+Query  64   VSQPCCRPTRYEA-VSFMDVNSTWRTVDRLSATACGCL  100
+             + PCCRPT YE  VSF+DV+S + T+  LSA  C C+
+Sbjct  158  RAHPCCRPTAYEDEVSFLDVHSRYHTLQELSARECACV  195
+
+
+>sp|P30886|BMP7_XENLA Bone morphogenetic protein 7 OS=Xenopus 
+laevis OX=8355 GN=bmp7 PE=1 SV=1
+Length=426
+
+ Score = 106 bits (265),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 38/110 (35%), Gaps = 19/110 (17%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + C+     V  R LG         G+ +       +C G C    +   ++  +     
+Sbjct  323  QACKKHELFVSFRDLGWQDWIIAPEGYAA------YYCDGECAFPLNSF-MNATNHAIVQ  375
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+             L        V +PCC PT+   +S  + D   N   +    +   ACGC
+Sbjct  376  TLVHFINPETVPKPCCAPTQLNGISVLYFDDSANVILKKYKNMVVQACGC  425
+
+
+>sp|Q99748|NRTN_HUMAN Neurturin OS=Homo sapiens OX=9606 GN=NRTN 
+PE=1 SV=1
+Length=197
+
+ Score = 100 bits (248),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 45/98 (46%), Positives = 55/98 (56%), Gaps = 4/98 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V V  LGLG+ SDE V FR+C+G+C  A   +DL L         R     R 
+Sbjct  103  CGLRELEVRVSELGLGYASDETVLFRYCAGACEAAARVYDLGL---RRLRQRRRLRRERV  159
+
+Query  64   VSQPCCRPTRYEA-VSFMDVNSTWRTVDRLSATACGCL  100
+             +QPCCRPT YE  VSF+D +S + TV  LSA  C C+
+Sbjct  160  RAQPCCRPTAYEDEVSFLDAHSRYHTVHELSARECACV  197
+
+
+>sp|P48969|DVR1_STRPU Protein DVR-1 homolog OS=Strongylocentrotus 
+purpuratus OX=7668 GN=DVR1 PE=2 SV=1
+Length=461
+
+ Score = 104 bits (258),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 23/109 (21%), Positives = 38/109 (35%), Gaps = 19/109 (17%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ ++  V    L          G+ +       +C G C    + H  +  +      L
+Sbjct  360  CKRKNLFVNFEDLDWQEWIIAPLGYVA------FYCQGECAFPLNGHA-NATNHAIVQTL  412
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGCL  100
+                    V QPCC PT+   ++ +  D   N   +    +   ACGCL
+Sbjct  413  VHHMSPSHVPQPCCAPTKLSPITVLYYDDSRNVVLKKYKNMVVRACGCL  461
+
+
+>sp|O61643|INHB_DROME Inhibin beta chain OS=Drosophila melanogaster 
+OX=7227 GN=Actbeta PE=2 SV=2
+Length=946
+
+ Score = 96.7 bits (239),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 17/109 (16%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+              C   S  V  +ALG         G+ ++      +C G C  +    D          
+Sbjct  843  GQCCKESFYVSFKALGWDDWIIAPRGYFAN------YCRGDCTGSFRTPDTFQTFHAHFI  896
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+                  G     +PCC P ++ ++S +   D     R + ++    CGC
+Sbjct  897  EEYRKMGLMNGMRPCCAPIKFSSMSLIYYGDDGIIKRDLPKMVVDECGC  945
+
+
+>sp|P34820|BMP8B_HUMAN Bone morphogenetic protein 8B OS=Homo sapiens 
+OX=9606 GN=BMP8B PE=2 SV=2
+Length=402
+
+ Score = 92.9 bits (229),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 35/108 (32%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR     V  + LG         G+ +       +C G C        ++  +     +L
+Sbjct  301  CRRHELYVSFQDLGWLDWVIAPQGYSA------YYCEGECSFPLDS-CMNATNHAILQSL  353
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                    V + CC PT+  A S +      N   R    +   ACGC
+Sbjct  354  VHLMMPDAVPKACCAPTKLSATSVLYYDSSNNVILRKHRNMVVKACGC  401
+
+
+>sp|P34821|BMP8A_MOUSE Bone morphogenetic protein 8A OS=Mus musculus 
+OX=10090 GN=Bmp8a PE=2 SV=1
+Length=399
+
+ Score = 92.5 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 35/108 (32%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR     V  R LG         G+ +       +C G C        ++  +     +L
+Sbjct  298  CRRHELYVSFRDLGWLDWVIAPQGYSA------YYCEGECAFPLDS-CMNATNHAILQSL  350
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                    V + CC PT+  A S +      N   R    +   ACGC
+Sbjct  351  VHLMKPDVVPKACCAPTKLSATSVLYYDSSNNVILRKHRNMVVKACGC  398
+
+
+>sp|Q7Z5Y6|BMP8A_HUMAN Bone morphogenetic protein 8A OS=Homo sapiens 
+OX=9606 GN=BMP8A PE=2 SV=2
+Length=402
+
+ Score = 92.1 bits (227),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 35/108 (32%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR     V  + LG         G+ +       +C G C        ++  +     +L
+Sbjct  301  CRRHELYVSFQDLGWLDWVIAPQGYSA------YYCEGECSFPLDS-CMNATNHAILQSL  353
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                    V + CC PT+  A S +      N   R    +   ACGC
+Sbjct  354  VHLMKPNAVPKACCAPTKLSATSVLYYDSSNNVILRKHRNMVVKACGC  401
+
+
+>sp|P55105|BMP8B_MOUSE Bone morphogenetic protein 8B OS=Mus musculus 
+OX=10090 GN=Bmp8b PE=1 SV=2
+Length=399
+
+ Score = 86.0 bits (211),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 38/108 (35%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR     V  R LG         G+ +       +C+G C    +   ++  +     AL
+Sbjct  298  CRRHELYVSFRDLGWLDSVIAPQGYSA------YYCAGECIYPLNS-CMNSTNHATMQAL  350
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                    + + CC PT   A+S +    + N   R    +   ACGC
+Sbjct  351  VHLMKPDIIPKVCCVPTELSAISLLYYDRNNNVILRRERNMVVQACGC  398
+
+
+>sp|P35621|DVR1_DANRE Protein DVR-1 OS=Danio rerio OX=7955 GN=dvr1 
+PE=2 SV=1
+Length=355
+
+ Score = 82.9 bits (203),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 21/108 (19%), Positives = 38/108 (35%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ R   +  + +G         G+ ++      +C G C    S   L+  +      L
+Sbjct  254  CKPRRLYIDFKDVGWQDWIIAPQGYLAN------YCHGECPFPLSE-SLNGTNHAILQTL  306
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  +   QPCC P +   +S +    + N   R  + +    CGC
+Sbjct  307  VHSFDPKGTPQPCCVPIKLSPISMLYYDNNDNVVLRHYEDMVVDECGC  354
+
+
+>sp|Q9YGV1|GDF3_XENLA Growth/differentiation factor 3 OS=Xenopus 
+laevis OX=8355 GN=gdf3 PE=1 SV=1
+Length=354
+
+ Score = 82.9 bits (203),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 20/108 (19%), Positives = 36/108 (33%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ R   +  + +G         G+ ++      +C G C    +   L   +      L
+Sbjct  253  CKKRRLYIDFKDVGWQNWVIAPRGYMAN------YCHGECPYPLTEM-LRGTNHAVLQTL  305
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                       PCC PT+   +S +    + N   R  + +    CGC
+Sbjct  306  VHSVEPENTPLPCCAPTKLSPISMLYYDNNDNVVLRHYEDMVVDECGC  353
+
+
+>sp|Q26974|DECA_TRICA Protein decapentaplegic OS=Tribolium castaneum 
+OX=7070 GN=dpp PE=3 SV=1
+Length=372
+
+ Score = 82.5 bits (202),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 38/109 (35%), Gaps = 19/109 (17%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             CR R   V   ++G         G+ +       +C G C      H ++  +     +
+Sbjct  270  PCRRRQMYVDFGSVGWNDWIVAPLGYDA------YYCGGECEYPIPDH-MNTTNHAIVQS  322
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+            L      + V  PCC PT+   +S +    D +   +    +    CGC
+Sbjct  323  LVNSMKPKEVPGPCCVPTQLGQMSMLYLGSDGSVILKNYKEMVVVGCGC  371
+
+
+>sp|P09534|DVR1_XENLA Protein DVR-1 OS=Xenopus laevis OX=8355 
+GN=dvr1 PE=1 SV=1
+Length=360
+
+ Score = 82.1 bits (201),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 21/108 (19%), Positives = 40/108 (37%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ R   V  + +G         G+ ++      +C G C    +   L+ ++      L
+Sbjct  259  CKKRHLYVEFKDVGWQNWVIAPQGYMAN------YCYGECPYPLTE-ILNGSNHAILQTL  311
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                    +  PCC PT+   +S +    + N   R  + ++   CGC
+Sbjct  312  VHSIEPEDIPLPCCVPTKMSPISMLFYDNNDNVVLRHYENMAVDECGC  359
+
+
+>sp|P30885|BMP4_XENLA Bone morphogenetic protein 4 OS=Xenopus 
+laevis OX=8355 GN=bmp4 PE=1 SV=1
+Length=401
+
+ Score = 82.1 bits (201),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  299  KHCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  351
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  352  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  400
+
+
+>sp|P48970|UNIV_STRPU Univin OS=Strongylocentrotus purpuratus 
+OX=7668 PE=2 SV=2
+Length=395
+
+ Score = 81.7 bits (200),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 39/108 (36%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+     V  R +G         G+++       +C G C        L+  +      L
+Sbjct  294  CQRHRLFVSFRDVGWENWIIAPMGYQA------YYCDGECPFPL-GERLNGTNHAIIQTL  346
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                 +R V + CC PT+   +S +    + N   R  + +   ACGC
+Sbjct  347  VNSIDNRAVPKVCCAPTKLSGISMLYFDNNENVVLRQYEDMVVEACGC  394
+
+
+>sp|Q66KL4|DERR_XENTR Derriere protein OS=Xenopus tropicalis OX=8364 
+GN=derriere PE=2 SV=1
+Length=350
+
+ Score = 81.3 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 20/108 (19%), Positives = 36/108 (33%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+ R   +  + +G         G+ ++      +C G C    +   L   +      L
+Sbjct  249  CKKRRLYIDFKDVGWQNWVIAPRGYMAN------YCYGECPYPLTEM-LRGTNHAVLQTL  301
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                       PCC PT+   +S +    + N   R  + +    CGC
+Sbjct  302  VHSVEPESTPLPCCAPTKLSPISMLYYDNNDNVVLRHYEDMVVDECGC  349
+
+
+>sp|P07713|DECA_DROME Protein decapentaplegic OS=Drosophila melanogaster 
+OX=7227 GN=dpp PE=1 SV=2
+Length=588
+
+ Score = 81.3 bits (199),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 21/108 (19%), Positives = 39/108 (36%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR  S  V    +G         G+ +       +C G C    + H  +  +      L
+Sbjct  487  CRRHSLYVDFSDVGWDDWIVAPLGYDA------YYCHGKCPFPLADH-FNSTNHAVVQTL  539
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+                    V + CC PT+ ++V+  +++  S    +    ++   CGC
+Sbjct  540  VNNMNPGKVPKACCVPTQLDSVAMLYLNDQSTVVLKNYQEMTVVGCGC  587
+
+
+>sp|P91706|DECA_DROSI Protein decapentaplegic OS=Drosophila simulans 
+OX=7240 GN=dpp PE=2 SV=1
+Length=593
+
+ Score = 81.3 bits (199),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 21/108 (19%), Positives = 39/108 (36%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR  S  V    +G         G+ +       +C G C    + H  +  +      L
+Sbjct  492  CRRHSLYVDFSDVGWDDWIVAPLGYDA------YYCHGKCPFPLADH-FNSTNHAVVQTL  544
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+                    V + CC PT+ ++V+  +++  S    +    ++   CGC
+Sbjct  545  VNNMNPGKVPKACCVPTQLDSVAMLYLNDQSTVVLKNYQEMTVVGCGC  592
+
+
+>sp|P91699|DECA_DROPS Protein decapentaplegic OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=dpp PE=2 SV=3
+Length=616
+
+ Score = 80.6 bits (197),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 21/108 (19%), Positives = 39/108 (36%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            CR  S  V    +G         G+ +       +C G C    + H  +  +      L
+Sbjct  515  CRRHSLYVDFADVGWDDWIVAPPGYDA------YYCHGKCPFPLADH-FNSTNHAVVQTL  567
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNS--TWRTVDRLSATACGC  99
+                    V + CC PT+ ++V+  +++  S    +    ++   CGC
+Sbjct  568  VNNLNPGKVPKACCVPTQLDSVAMLYLNDQSTVVLKNYQEMTVVGCGC  615
+
+
+>sp|Q06826|BMP4_RAT Bone morphogenetic protein 4 OS=Rattus norvegicus 
+OX=10116 GN=Bmp4 PE=2 SV=1
+Length=408
+
+ Score = 79.4 bits (194),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  306  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  358
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  359  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  407
+
+
+>sp|P12644|BMP4_HUMAN Bone morphogenetic protein 4 OS=Homo sapiens 
+OX=9606 GN=BMP4 PE=1 SV=1
+Length=408
+
+ Score = 79.4 bits (194),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  306  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  358
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  359  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  407
+
+
+>sp|Q8MJV5|BMP4_SUNMU Bone morphogenetic protein 4 OS=Suncus murinus 
+OX=9378 GN=BMP4 PE=2 SV=1
+Length=409
+
+ Score = 79.4 bits (194),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  307  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  359
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  360  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  408
+
+
+>sp|P21275|BMP4_MOUSE Bone morphogenetic protein 4 OS=Mus musculus 
+OX=10090 GN=Bmp4 PE=1 SV=2
+Length=408
+
+ Score = 79.0 bits (193),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  306  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  358
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  359  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  407
+
+
+>sp|Q2KJH1|BMP4_BOVIN Bone morphogenetic protein 4 OS=Bos taurus 
+OX=9913 GN=BMP4 PE=2 SV=1
+Length=409
+
+ Score = 79.0 bits (193),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  307  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  359
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  360  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  408
+
+
+>sp|Q90752|BMP4_CHICK Bone morphogenetic protein 4 OS=Gallus gallus 
+OX=9031 GN=BMP4 PE=1 SV=1
+Length=405
+
+ Score = 78.6 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  +  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  303  KNCRRHALYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  355
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  356  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  404
+
+
+>sp|Q29607|BMP4_DAMDA Bone morphogenetic protein 4 OS=Dama dama 
+OX=30532 GN=BMP4 PE=2 SV=1
+Length=408
+
+ Score = 78.6 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 23/110 (21%), Positives = 39/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  S  V    +G         G+++       +C G C    + H L+  +     
+Sbjct  306  KNCRRHSLYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-LNSTNHAIVQ  358
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  359  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  407
+
+
+>sp|P25703|BMP2A_XENLA Bone morphogenetic protein 2-A OS=Xenopus 
+laevis OX=8355 GN=bmp2-a PE=2 SV=1
+Length=398
+
+ Score = 78.6 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             CR     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  297  SCRRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  349
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     +  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  350  LVNSVNT-NIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  397
+
+
+>sp|P49001|BMP2_RAT Bone morphogenetic protein 2 OS=Rattus norvegicus 
+OX=10116 GN=Bmp2 PE=2 SV=1
+Length=393
+
+ Score = 78.6 bits (192),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  292  SCKRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  344
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  345  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  392
+
+
+>sp|P30884|BMP2B_XENLA Bone morphogenetic protein 2-B OS=Xenopus 
+laevis OX=8355 GN=bmp2-b PE=2 SV=1
+Length=398
+
+ Score = 78.6 bits (192),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             CR     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  297  SCRRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  349
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     +  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  350  LVNSVNT-NIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  397
+
+
+>sp|P21274|BMP2_MOUSE Bone morphogenetic protein 2 OS=Mus musculus 
+OX=10090 GN=Bmp2 PE=1 SV=3
+Length=394
+
+ Score = 78.3 bits (191),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  293  SCKRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  345
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  346  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  393
+
+
+>sp|O19006|BMP2_DAMDA Bone morphogenetic protein 2 OS=Dama dama 
+OX=30532 GN=BMP2 PE=2 SV=1
+Length=396
+
+ Score = 78.3 bits (191),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  295  SCKRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  347
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  348  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  395
+
+
+>sp|P43026|GDF5_HUMAN Growth/differentiation factor 5 OS=Homo 
+sapiens OX=9606 GN=GDF5 PE=1 SV=3
+Length=501
+
+ Score = 78.3 bits (191),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  ++  V  + +G      +        C G C      H L   +      L      
+Sbjct  400  CSRKALHVNFKDMGWDDWIIAPLEYEAFHCEGLCEFPLRSH-LEPTNHAVIQTLMNSMDP  458
+
+Query  62   RPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+                  CC PTR   +S  F+D   N  ++  + +   +CGC
+Sbjct  459  ESTPPTCCVPTRLSPISILFIDSANNVVYKQYEDMVVESCGC  500
+
+
+>sp|P43027|GDF5_MOUSE Growth/differentiation factor 5 OS=Mus musculus 
+OX=10090 GN=Gdf5 PE=1 SV=2
+Length=495
+
+ Score = 78.3 bits (191),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  ++  V  + +G      +        C G C      H L   +      L      
+Sbjct  394  CSRKALHVNFKDMGWDDWIIAPLEYEAFHCEGLCEFPLRSH-LEPTNHAVIQTLMNSMDP  452
+
+Query  62   RPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+                  CC PTR   +S  F+D   N  ++  + +   +CGC
+Sbjct  453  ESTPPTCCVPTRLSPISILFIDSANNVVYKQYEDMVVESCGC  494
+
+
+>sp|P12643|BMP2_HUMAN Bone morphogenetic protein 2 OS=Homo sapiens 
+OX=9606 GN=BMP2 PE=1 SV=1
+Length=396
+
+ Score = 77.9 bits (190),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  295  SCKRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  347
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  348  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  395
+
+
+>sp|Q804S2|BMP2_TETNG Bone morphogenetic protein 2 OS=Tetraodon 
+nigroviridis OX=99883 GN=bmp2 PE=3 SV=2
+Length=420
+
+ Score = 77.5 bits (189),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 20/109 (18%), Positives = 36/109 (33%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+  +  V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  319  SCKRHALYVDFSDVGWNEWIVAPPGYHA------FYCQGECPFPLADH-LNSTNHAIVQT  371
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+            L     S  + + CC PT    +S  ++D       +    +    CGC
+Sbjct  372  LVNSVNS-NIPRACCVPTDLSPISLLYLDEYEKVILKNYQDMVVEGCGC  419
+
+
+>sp|O46564|BMP2_RABIT Bone morphogenetic protein 2 OS=Oryctolagus 
+cuniculus OX=9986 GN=BMP2 PE=2 SV=1
+Length=395
+
+ Score = 77.5 bits (189),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  294  SCKRHPLYVDFSDVGWNDWIVAPPGYHA------FYCHGECPFPLADH-LNSTNHAIVQT  346
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  347  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  394
+
+
+>sp|Q90751|BMP2_CHICK Bone morphogenetic protein 2 (Fragment) 
+OS=Gallus gallus OX=9031 GN=BMP2 PE=2 SV=1
+Length=353
+
+ Score = 76.7 bits (187),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 22/109 (20%), Positives = 37/109 (34%), Gaps = 20/109 (18%)
+
+Query  3    GCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGA  54
+             C+     V    +G         G+ +       +C G C    + H L+  +      
+Sbjct  252  SCKRHPLYVDFNDVGWNDWIVAPPGYSA------FYCHGECPFPLADH-LNSTNHAIVQT  304
+
+Query  55   LRPPPGSRPVSQPCCRPTRYEAVS--FMDVN--STWRTVDRLSATACGC  99
+            L     S  + + CC PT   A+S  ++D N     +    +    CGC
+Sbjct  305  LVNSVNS-KIPKACCVPTELSAISMLYLDENEKVVLKNYQDMVVEGCGC  352
+
+
+>sp|O46576|BMP4_RABIT Bone morphogenetic protein 4 OS=Oryctolagus 
+cuniculus OX=9986 GN=BMP4 PE=2 SV=1
+Length=409
+
+ Score = 76.7 bits (187),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 21/110 (19%), Positives = 38/110 (35%), Gaps = 20/110 (18%)
+
+Query  2    RGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAG  53
+            + CR  +  V    +G         G+++       +C G C    + H  +  +     
+Sbjct  307  KNCRRHALYVDFSDVGWNDWIVAPPGYQA------FYCHGDCPFPLADH-FNSTNHAIVQ  359
+
+Query  54   ALRPPPGSRPVSQPCCRPTRYEAVS--FMD--VNSTWRTVDRLSATACGC  99
+             L     S  + + CC PT   A+S  ++D       +    +    CGC
+Sbjct  360  TLVNSVNS-SIPKACCVPTELSAISMLYLDEYDKVVLKNYQEMVVEGCGC  408
+
+
+>sp|P55106|GDF6_BOVIN Growth/differentiation factor 6 OS=Bos taurus 
+OX=9913 GN=GDF6 PE=2 SV=2
+Length=470
+
+ Score = 75.6 bits (184),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 31/102 (30%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  +   V  + LG      +        C G C      H L   +      L      
+Sbjct  369  CSKKPLHVNFKELGWDDWIIAPLEYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLMNSMDP  427
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  CC PT+   +S +      N  ++  + +   +CGC
+Sbjct  428  GSTPPSCCVPTKLTPISILYIDAGNNVVYKQYEEMVVESCGC  469
+
+
+>sp|P43028|GDF6_MOUSE Growth/differentiation factor 6 OS=Mus musculus 
+OX=10090 GN=Gdf6 PE=2 SV=2
+Length=454
+
+ Score = 75.2 bits (183),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 31/102 (30%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  +   V  + LG      +        C G C      H L   +      L      
+Sbjct  353  CSRKPLHVNFKELGWDDWIIAPLEYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLMNSMDP  411
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  CC PT+   +S +      N  ++  + +   +CGC
+Sbjct  412  GSTPPSCCVPTKLTPISILYIDAGNNVVYKQYEDMVVESCGC  453
+
+
+>sp|Q6HA10|GDF6_RAT Growth/differentiation factor 6 OS=Rattus 
+norvegicus OX=10116 GN=Gdf6 PE=2 SV=1
+Length=452
+
+ Score = 74.8 bits (182),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 31/102 (30%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  +   V  + LG      +        C G C      H L   +      L      
+Sbjct  351  CSRKPLHVNFKELGWDDWIIAPLEYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLMNSMDP  409
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  CC PT+   +S +      N  ++  + +   +CGC
+Sbjct  410  GSTPPSCCVPTKLTPISILYIDAGNNVVYKQYEDMVVESCGC  451
+
+
+>sp|Q6KF10|GDF6_HUMAN Growth/differentiation factor 6 OS=Homo 
+sapiens OX=9606 GN=GDF6 PE=1 SV=1
+Length=455
+
+ Score = 74.4 bits (181),  Expect = 7e-16, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 31/102 (30%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C  +   V  + LG      +        C G C      H L   +      L      
+Sbjct  354  CSKKPLHVNFKELGWDDWIIAPLEYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLMNSMDP  412
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  CC PT+   +S +      N  ++  + +   +CGC
+Sbjct  413  GSTPPSCCVPTKLTPISILYIDAGNNVVYKQYEDMVVESCGC  454
+
+
+>sp|Q4AEG6|BMP10_RAT Bone morphogenetic protein 10 OS=Rattus norvegicus 
+OX=10116 GN=Bmp10 PE=2 SV=1
+Length=421
+
+ Score = 73.6 bits (179),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 43/108 (40%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+     +  + +G         G+ + E      C G C    + H L+        AL
+Sbjct  320  CKKTPLYIDFKEIGWDSWIIAPPGYEAYE------CRGVCNYPLAEH-LTPTKHAIIQAL  372
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNST-WR-TVDRLSATACGC  99
+                 S+  S+ CC PT+ + +S  ++D     ++   + ++ + CGC
+Sbjct  373  VHLKNSQKASKACCVPTKLDPISILYLDKGVVTYKFKYEGMAVSECGC  420
+
+
+>sp|Q9R229|BMP10_MOUSE Bone morphogenetic protein 10 OS=Mus musculus 
+OX=10090 GN=Bmp10 PE=1 SV=2
+Length=421
+
+ Score = 73.6 bits (179),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 43/108 (40%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+     +  + +G         G+ + E      C G C    + H L+        AL
+Sbjct  320  CKKTPLYIDFKEIGWDSWIIAPPGYEAYE------CRGVCNYPLAEH-LTPTKHAIIQAL  372
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNST-WR-TVDRLSATACGC  99
+                 S+  S+ CC PT+ + +S  ++D     ++   + ++ + CGC
+Sbjct  373  VHLKNSQKASKACCVPTKLDPISILYLDKGVVTYKFKYEGMAVSECGC  420
+
+
+>sp|O95393|BMP10_HUMAN Bone morphogenetic protein 10 OS=Homo sapiens 
+OX=9606 GN=BMP10 PE=1 SV=1
+Length=424
+
+ Score = 73.2 bits (178),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 43/108 (40%), Gaps = 19/108 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGAL  55
+            C+     +  + +G         G+ + E      C G C    + H L+        AL
+Sbjct  323  CKRTPLYIDFKEIGWDSWIIAPPGYEAYE------CRGVCNYPLAEH-LTPTKHAIIQAL  375
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVS--FMDVNST-WR-TVDRLSATACGC  99
+                 S+  S+ CC PT+ E +S  ++D     ++   + ++ + CGC
+Sbjct  376  VHLKNSQKASKACCVPTKLEPISILYLDKGVVTYKFKYEGMAVSECGC  423
+
+
+>sp|Q07104|GDF3_MOUSE Growth/differentiation factor 3 OS=Mus musculus 
+OX=10090 GN=Gdf3 PE=1 SV=2
+Length=366
+
+ Score = 72.9 bits (177),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 20/103 (19%), Positives = 37/103 (36%), Gaps = 8/103 (8%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C      +  + LG      + +     +C G C  + + + L+ ++     AL      
+Sbjct  266  CHRHQLFINFQDLGWHKWVIAPKGFMANYCHGECPFSMTTY-LNSSNYAFMQALMHMADP  324
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGCL  100
+              V +  C PT+   +S +    D N   R  + +    CGC 
+Sbjct  325  -KVPKAVCVPTKLSPISMLYQDSDKNVILRHYEDMVVDECGCG  366
+
+
+>sp|Q9NR23|GDF3_HUMAN Growth/differentiation factor 3 OS=Homo 
+sapiens OX=9606 GN=GDF3 PE=1 SV=3
+Length=364
+
+ Score = 71.3 bits (173),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 20/103 (19%), Positives = 36/103 (35%), Gaps = 8/103 (8%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C      +  R LG      + +     +C G C  + +   L+ ++     AL      
+Sbjct  264  CHRHQLFINFRDLGWHKWIIAPKGFMANYCHGECPFSLTI-SLNSSNYAFMQALMHAVDP  322
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGCL  100
+              + Q  C PT+   +S +    + N   R  + +    CGC 
+Sbjct  323  E-IPQAVCIPTKLSPISMLYQDNNDNVILRHYEDMVVDECGCG  364
+
+
+>sp|A8E7N9|GDF6B_DANRE Growth/differentiation factor 6-B OS=Danio 
+rerio OX=7955 GN=gdf6b PE=2 SV=1
+Length=412
+
+ Score = 71.3 bits (173),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 18/97 (19%), Positives = 31/97 (32%), Gaps = 7/97 (7%)
+
+Query  9    QLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPVSQ  66
+              V  R LG        + +    C G C      H L   +      L        +  
+Sbjct  316  LHVNFRELGWDDWVIAPLDYEAYHCEGMCDFPLRSH-LEPTNHAIIQTLMNSMNPSNMPP  374
+
+Query  67   PCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             CC P++   +S +      N  ++  + +   +CGC
+Sbjct  375  SCCVPSKLSPISILYIDAGNNVVYKQYEDMVVESCGC  411
+
+
+>sp|P85857|GDF6A_DANRE Growth/differentiation factor 6-A OS=Danio 
+rerio OX=7955 GN=gdf6a PE=1 SV=1
+Length=404
+
+ Score = 70.9 bits (172),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 18/98 (18%), Positives = 30/98 (31%), Gaps = 7/98 (7%)
+
+Query  8    SQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPVS  65
+            +  V  + LG        + +    C G C      H L   +      L          
+Sbjct  307  ALHVNFKELGWDDWIIAPLDYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLMNSMDPNSTP  365
+
+Query  66   QPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              CC PT+   +S +      N  ++  + +    CGC
+Sbjct  366  PSCCVPTKLSPISILYIDSGNNVVYKQYEDMVVEQCGC  403
+
+
+>sp|Q8BHE5|BMP3_MOUSE Bone morphogenetic protein 3 OS=Mus musculus 
+OX=10090 GN=Bmp3 PE=1 SV=1
+Length=468
+
+ Score = 70.9 bits (172),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+                  +R   
+Sbjct  364  RNCARRYLKVDFADIGWSEWIISPKSFDAFYCSGACQFPMPKSLKPSNHATIQSIVRAVG  423
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++S  F D   N   +    ++  +C C
+Sbjct  424  VVSGIPEPCCVPEKMSSLSILFFDENKNVVLKVYPNMTVDSCAC  467
+
+
+>sp|P34822|DSL1_CHICK Dorsalin-1 OS=Gallus gallus OX=9031 GN=DSL1 
+PE=1 SV=1
+Length=427
+
+ Score = 70.6 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 22/107 (21%), Positives = 37/107 (35%), Gaps = 10/107 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG---HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRP  57
+            A  CR  S  V  + +G         +   F  C G C    +  +++         L  
+Sbjct  322  ANHCRRTSLHVNFKEIGWDSWIIAPKDYEAFE-CKGGCFFPLTD-NVTPTKHAIVQTLVH  379
+
+Query  58   PPGSRPVSQPCCRPTRYEAVSFM--DVNST---WRTVDRLSATACGC  99
+                +  S+ CC PT+ +A+S +  D           + +    CGC
+Sbjct  380  LQNPKKASKACCVPTKLDAISILYKDDAGVPTLIYNYEGMKVAECGC  426
+
+
+>sp|Q9WV56|GDF2_MOUSE Growth/differentiation factor 2 OS=Mus musculus 
+OX=10090 GN=Gdf2 PE=1 SV=2
+Length=428
+
+ Score = 70.6 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 33/104 (32%), Gaps = 10/104 (10%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C+  S  V    +G      + +      C G C       D++         L      
+Sbjct  326  CQKTSLRVNFEDIGWDSWIIAPKEYDAYECKGGCFFPL-ADDVTPTKHAIVQTLVHLKFP  384
+
+Query  62   RPVSQPCCRPTRYEAVSFM--DV----NSTWRTVDRLSATACGC  99
+              V + CC PT+   +S +  D        +   + +S   CGC
+Sbjct  385  TKVGKACCVPTKLSPISILYKDDMGVPTLKYH-YEGMSVAECGC  427
+
+
+>sp|P22444|BMP3_BOVIN Bone morphogenetic protein 3 OS=Bos taurus 
+OX=9913 GN=BMP3 PE=1 SV=2
+Length=475
+
+ Score = 70.6 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 24/105 (23%), Positives = 42/105 (40%), Gaps = 8/105 (8%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+    P  L  ++     ++    
+Sbjct  371  RNCARRYLKVDFADIGWSEWIISPKSFDAYYCSGACQFPM-PKSLKPSNHATIQSIVRAV  429
+
+Query  60   GSRP-VSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+            G  P + +PCC P +  ++S  F D   N   +    ++  +C C
+Sbjct  430  GVVPGIPEPCCVPEKMSSLSILFFDENKNVVLKVYPNMTVESCAC  474
+
+
+>sp|Q9UK05|GDF2_HUMAN Growth/differentiation factor 2 OS=Homo 
+sapiens OX=9606 GN=GDF2 PE=1 SV=1
+Length=429
+
+ Score = 70.2 bits (170),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 20/107 (19%), Positives = 33/107 (31%), Gaps = 10/107 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+               C+  S  V    +G      + +      C G C       D++         L   
+Sbjct  324  GSHCQKTSLRVNFEDIGWDSWIIAPKEYEAYECKGGCFFPL-ADDVTPTKHAIVQTLVHL  382
+
+Query  59   PGSRPVSQPCCRPTRYEAVSFM--DV----NSTWRTVDRLSATACGC  99
+                 V + CC PT+   +S +  D        +   + +S   CGC
+Sbjct  383  KFPTKVGKACCVPTKLSPISVLYKDDMGVPTLKYH-YEGMSVAECGC  428
+
+
+>sp|P12645|BMP3_HUMAN Bone morphogenetic protein 3 OS=Homo sapiens 
+OX=9606 GN=BMP3 PE=1 SV=2
+Length=472
+
+ Score = 70.2 bits (170),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 24/105 (23%), Positives = 42/105 (40%), Gaps = 8/105 (8%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+    P  L  ++     ++    
+Sbjct  368  RNCARRYLKVDFADIGWSEWIISPKSFDAYYCSGACQFPM-PKSLKPSNHATIQSIVRAV  426
+
+Query  60   GSRP-VSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+            G  P + +PCC P +  ++S  F D   N   +    ++  +C C
+Sbjct  427  GVVPGIPEPCCVPEKMSSLSILFFDENKNVVLKVYPNMTVESCAC  471
+
+
+>sp|P49002|BMP3_RAT Bone morphogenetic protein 3 OS=Rattus norvegicus 
+OX=10116 GN=Bmp3 PE=2 SV=1
+Length=468
+
+ Score = 69.8 bits (169),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+                  +R   
+Sbjct  364  RNCARRYLKVDFADIGWSEWIISPKSFDAYYCSGACQFPMPKSLKPSNHATIQSIVRAVG  423
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++S  F D   N   +    ++  +C C
+Sbjct  424  VVSGIPEPCCVPEKMSSLSILFFDENKNVVLKVYPNMTVDSCAC  467
+
+
+>sp|P43029|GDF7_MOUSE Growth/differentiation factor 7 OS=Mus musculus 
+OX=10090 GN=Gdf7 PE=2 SV=2
+Length=461
+
+ Score = 69.4 bits (168),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 20/99 (20%), Positives = 31/99 (31%), Gaps = 7/99 (7%)
+
+Query  7    RSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPV  64
+            +S  V  + LG        + +    C G C      H L   +      L         
+Sbjct  363  KSLHVDFKELGWDDWIIAPLDYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLLNSMAPDAA  421
+
+Query  65   SQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               CC P R   +S +      N  ++  + +   ACGC
+Sbjct  422  PASCCVPARLSPISILYIDAANNVVYKQYEDMVVEACGC  460
+
+
+>sp|Q7T2X7|BMP3_XENLA Bone morphogenetic protein 3 OS=Xenopus 
+laevis OX=8355 GN=bmp3 PE=1 SV=1
+Length=458
+
+ Score = 69.0 bits (167),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 37/104 (36%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C+                  +R   
+Sbjct  354  RNCARRYLKVDFADIGWSEWIISPKSFDAYYCSGACQFPMPKSLKPSNHATIQSIVRAVG  413
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++S  F+D   N   +    ++  +C C
+Sbjct  414  VVPGIPEPCCVPEKMSSLSILFLDENKNVVLKVYPNMTVESCAC  457
+
+
+>sp|P54631|SCW_DROME Protein screw OS=Drosophila melanogaster 
+OX=7227 GN=scw PE=2 SV=2
+Length=400
+
+ Score = 68.6 bits (166),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 18/104 (17%), Positives = 34/104 (33%), Gaps = 8/104 (8%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            + C   +  V  + L +     + +     FC G C        ++  +      L    
+Sbjct  298  QSCERLNFTVDFKELHMHNWVIAPKKFEAYFCGGGCNFPLGT-KMNATNHAIVQTLMHLK  356
+
+Query  60   GSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                + +PCC PT   A++ +    +         +  A  CGC
+Sbjct  357  QPH-LPKPCCVPTVLGAITILRYLNEDIIDLTKYQKAVAKECGC  399
+
+
+>sp|Q9BDW8|GDF7_CHLAE Growth/differentiation factor 7 OS=Chlorocebus 
+aethiops OX=9534 GN=GDF7 PE=2 SV=1
+Length=447
+
+ Score = 68.6 bits (166),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 19/99 (19%), Positives = 30/99 (30%), Gaps = 7/99 (7%)
+
+Query  7    RSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPV  64
+            +   V  + LG        + +    C G C      H L   +      L         
+Sbjct  349  KPLHVDFKELGWDDWIIAPLDYEAYHCEGVCDFPLRSH-LEPTNHAIIQTLLNSMAPDAA  407
+
+Query  65   SQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               CC P R   +S +      N  ++  + +   ACGC
+Sbjct  408  PASCCVPARLSPISILYIDAANNVVYKQYEDMVVEACGC  446
+
+
+>sp|Q7Z4P5|GDF7_HUMAN Growth/differentiation factor 7 OS=Homo 
+sapiens OX=9606 GN=GDF7 PE=2 SV=2
+Length=450
+
+ Score = 68.2 bits (165),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 19/99 (19%), Positives = 30/99 (30%), Gaps = 7/99 (7%)
+
+Query  7    RSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRPV  64
+            +   V  + LG        + +    C G C      H L   +      L         
+Sbjct  352  KPLHVDFKELGWDDWIIAPLDYEAYHCEGLCDFPLRSH-LEPTNHAIIQTLLNSMAPDAA  410
+
+Query  65   SQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               CC P R   +S +      N  ++  + +   ACGC
+Sbjct  411  PASCCVPARLSPISILYIDAANNVVYKQYEDMVVEACGC  449
+
+
+>sp|Q7T2X6|GDF10_XENLA Growth/differentiation factor 10 OS=Xenopus 
+laevis OX=8355 GN=gdf10 PE=1 SV=1
+Length=443
+
+ Score = 67.9 bits (164),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 22/104 (21%), Positives = 36/104 (35%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C    +              ++   
+Sbjct  339  RVCSRRYLKVDFADIGWSEWIISPKSFDAYYCSGACEFPMAKVVRPSNHATIQSIVKAVG  398
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                V +PCC P    ++S  F+D   N   +    +S  +C C
+Sbjct  399  IIPGVPEPCCTPDMMNSLSVLFLDEGRNMVLKVYPNMSVESCSC  442
+
+
+>sp|Q08DX6|GDF10_BOVIN Growth/differentiation factor 10 OS=Bos 
+taurus OX=9913 GN=GDF10 PE=2 SV=1
+Length=478
+
+ Score = 67.1 bits (162),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 34/104 (33%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +CSG+C                   +R   
+Sbjct  374  RVCSRRYLKVDFADIGWNEWIISPKSFDAYYCSGACEFPMPKMVRPSNHATIQSIVRAVG  433
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++   F+D   N   +    +S   C C
+Sbjct  434  IVPGIPEPCCVPDKMSSLGVLFLDENRNVVLKVYPNMSVETCAC  477
+
+
+>sp|P55107|GDF10_HUMAN Growth/differentiation factor 10 OS=Homo 
+sapiens OX=9606 GN=GDF10 PE=2 SV=1
+Length=478
+
+ Score = 67.1 bits (162),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 34/104 (33%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +C+G+C                   +R   
+Sbjct  374  RVCSRRYLKVDFADIGWNEWIISPKSFDAYYCAGACEFPMPKIVRPSNHATIQSIVRAVG  433
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++   F+D   N   +    +S   C C
+Sbjct  434  IIPGIPEPCCVPDKMNSLGVLFLDENRNVVLKVYPNMSVDTCAC  477
+
+
+>sp|F1QWZ4|GDF2_DANRE Growth/differentiation factor 2 OS=Danio 
+rerio OX=7955 GN=gdf2 PE=2 SV=1
+Length=389
+
+ Score = 66.7 bits (161),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 20/102 (20%), Positives = 35/102 (34%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR  S  V  + +G      +        C G C    +  D+S +       L      
+Sbjct  288  CRRTSLKVNFKDIGWDKWIVAPPEYDAYECKGVCYFPLTD-DVSPSRHAVIQTLVNLSNP  346
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+            +  +  CC PT+ + ++ M     V +     + +    CGC
+Sbjct  347  KKANMACCVPTKLDPIAVMYQEKGVITVRHLYEEMKVAKCGC  388
+
+
+>sp|P27539|GDF1_HUMAN Embryonic growth/differentiation factor 
+1 OS=Homo sapiens OX=9606 GN=GDF1 PE=1 SV=2
+Length=372
+
+ Score = 66.3 bits (160),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 31/108 (29%), Gaps = 9/108 (8%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLS---LASLLGAGAL  55
+               CR R   V  R +G      +       +C G C    +          +     AL
+Sbjct  264  GGACRARRLYVSFREVGWHRWVIAPRGFLANYCQGQCALPVALSGSGGPPALNHAVLRAL  323
+
+Query  56   RPPPGSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                       PCC P R   +S +      N   R  + +    CGC
+Sbjct  324  MHAAAPGAADLPCCVPARLSPISVLFFDNSDNVVLRQYEDMVVDECGC  371
+
+
+>sp|P55108|GDF10_RAT Growth/differentiation factor 10 OS=Rattus 
+norvegicus OX=10116 GN=Gdf10 PE=2 SV=1
+Length=476
+
+ Score = 66.3 bits (160),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 34/104 (33%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +C+G+C                   +R   
+Sbjct  372  RVCSRRYLKVDFADIGWNEWIISPKSFDAYYCAGACEFPMPKIVRPSNHATIQSIVRAVG  431
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++   F+D   N   +    +S   C C
+Sbjct  432  IVPGIPEPCCVPDKMNSLGVLFLDENRNVVLKVYPNMSVETCAC  475
+
+
+>sp|P97737|GDF10_MOUSE Growth/differentiation factor 10 OS=Mus 
+musculus OX=10090 GN=Gdf10 PE=1 SV=2
+Length=476
+
+ Score = 65.5 bits (158),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 35/104 (34%), Gaps = 6/104 (6%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            R C  R   V    +G      S +     +C+G+C                   +R   
+Sbjct  372  RVCSRRYLKVDFADIGWNEWIISPKSFDAYYCAGACEFPMPKIVRPSNHATIQSIVRAVG  431
+
+Query  60   GSRPVSQPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                + +PCC P +  ++   F+D   N+  +    +S   C C
+Sbjct  432  IVPGIPEPCCVPDKMNSLGVLFLDENRNAVLKVYPNMSVETCAC  475
+
+
+>sp|Q6J1J2|GDF8_VULLA Growth/differentiation factor 8 OS=Vulpes 
+lagopus OX=494514 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 64.0 bits (154),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 20/101 (20%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            CR     V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CRRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q6DTL9|GDF8_VULVU Growth/differentiation factor 8 OS=Vulpes 
+vulpes OX=9627 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 64.0 bits (154),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 20/101 (20%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            CR     V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CRRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O18828|GDF8_PAPHA Growth/differentiation factor 8 OS=Papio 
+hamadryas OX=9557 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 63.2 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 20/101 (20%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   ALG     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEALGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q9MZE2|BMP15_SHEEP Bone morphogenetic protein 15 OS=Ovis aries 
+OX=9940 GN=BMP15 PE=3 SV=1
+Length=393
+
+ Score = 63.2 bits (152),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 23/102 (23%), Positives = 40/102 (39%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    V  + LG  H   +  L    +C G C R    + L+  +      L      
+Sbjct  292  CSLHPFQVSFQQLGWDHWIIAPHLYTPNYCKGVCPRVLH-YGLNSPNHAIIQNLVSELVD  350
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+            + V QP C P +Y  +S +    + +  ++  + + A +C C
+Sbjct  351  QNVPQPSCVPYKYVPISILLIEANGSILYKEYEGMIAQSCTC  392
+
+
+>sp|P20863|GDF1_MOUSE Embryonic growth/differentiation factor 
+1 OS=Mus musculus OX=10090 GN=Gdf1 PE=2 SV=2
+Length=357
+
+ Score = 62.8 bits (151),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 33/108 (31%), Gaps = 10/108 (9%)
+
+Query  2    RGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLS---LASLLGAGALR  56
+              CR R   V  R +G      +       FC G+C    +          +     AL 
+Sbjct  249  GTCRTRRLHVSFREVGWHRWVIAPRGFLANFCQGTCALPETLRGPGGPPALNHAVLRALM  308
+
+Query  57   PPPGSRPV-SQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+                  P    PCC P R   +S +      N   R  + +    CGC
+Sbjct  309  HAAAPTPGAGSPCCVPERLSPISVLFFDNSDNVVLRHYEDMVVDECGC  356
+
+
+>sp|Q6PX77|BMP15_BOVIN Bone morphogenetic protein 15 OS=Bos taurus 
+OX=9913 GN=BMP15 PE=2 SV=1
+Length=394
+
+ Score = 62.5 bits (150),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 23/102 (23%), Positives = 40/102 (39%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    V  + LG  H   +  L    +C G C R    + L+  +      L      
+Sbjct  293  CSLHPFQVSFQQLGWDHWIIAPHLYTPNYCKGVCPRVLH-YGLNSPNHAIIQNLVNELVD  351
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+            + V QP C P +Y  +S +    + +  ++  + + A +C C
+Sbjct  352  QSVPQPSCVPYKYVPISILLIEANGSILYKEYEGMIAQSCTC  393
+
+
+>sp|Q8AVB2|GDF8_COTCO Growth/differentiation factor 8 OS=Coturnix 
+coturnix OX=9091 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 62.1 bits (149),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O18831|GDF8_PIG Growth/differentiation factor 8 OS=Sus scrofa 
+OX=9823 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 62.1 bits (149),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USV7|GDF8_AEPME Growth/differentiation factor 8 OS=Aepyceros 
+melampus OX=9897 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 62.1 bits (149),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|Q8UWD7|GDF8_SYNCH Growth/differentiation factor 8 OS=Synoicus 
+chinensis OX=46218 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.7 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q9GM97|GDF8_HORSE Growth/differentiation factor 8 OS=Equus 
+caballus OX=9796 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.7 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O42220|GDF8_CHICK Growth/differentiation factor 8 OS=Gallus 
+gallus OX=9031 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.7 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O42221|GDF8_MELGA Growth/differentiation factor 8 OS=Meleagris 
+gallopavo OX=9103 GN=MSTN PE=2 SV=2
+Length=375
+
+ Score = 61.7 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USV5|GDF8_ANTAM Growth/differentiation factor 8 OS=Antilocapra 
+americana OX=9891 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.7 bits (148),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USW0|GDF8_TAUDE Growth/differentiation factor 8 OS=Taurotragus 
+derbianus OX=303930 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q8HY52|GDF8_LEPCA Growth/differentiation factor 8 OS=Lepus 
+capensis OX=9981 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O18836|GDF8_BOVIN Growth/differentiation factor 8 OS=Bos taurus 
+OX=9913 GN=MSTN PE=1 SV=2
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5RZV4|GDF8_BOSIN Growth/differentiation factor 8 OS=Bos indicus 
+OX=9915 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USW1|GDF8_BOSGA Growth/differentiation factor 8 OS=Bos gaurus 
+OX=9904 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O14793|GDF8_HUMAN Growth/differentiation factor 8 OS=Homo 
+sapiens OX=9606 GN=MSTN PE=1 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O08689|GDF8_MOUSE Growth/differentiation factor 8 OS=Mus musculus 
+OX=10090 GN=Mstn PE=1 SV=1
+Length=376
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  282  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  334
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  335  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  375
+
+
+>sp|A1C2U3|GDF8_PONPY Growth/differentiation factor 8 OS=Pongo 
+pygmaeus OX=9600 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|A1C2V0|GDF8_PANTR Growth/differentiation factor 8 OS=Pan troglodytes 
+OX=9598 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|A1C2U7|GDF8_PANPA Growth/differentiation factor 8 OS=Pan paniscus 
+OX=9597 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|A1C2U6|GDF8_MACMU Growth/differentiation factor 8 OS=Macaca 
+mulatta OX=9544 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q95J86|GDF8_MACFA Growth/differentiation factor 8 OS=Macaca 
+fascicularis OX=9541 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|A1C2V5|GDF8_GORGO Growth/differentiation factor 8 OS=Gorilla 
+gorilla gorilla OX=9595 GN=MSTN PE=3 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|O35312|GDF8_RAT Growth/differentiation factor 8 OS=Rattus 
+norvegicus OX=10116 GN=Mstn PE=2 SV=1
+Length=376
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  282  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  334
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  335  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  375
+
+
+>sp|Q6X5V1|GDF8_BUBBU Growth/differentiation factor 8 OS=Bubalus 
+bubalis OX=89462 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +    +    +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGEGQIIYGKIPAMVVDRCGC  374
+
+
+>sp|G7PWZ3|GDF15_MACFA Growth/differentiation factor 15 OS=Macaca 
+fascicularis OX=9541 GN=GDF15 PE=1 SV=1
+Length=308
+
+ Score = 60.9 bits (146),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 24/105 (23%), Positives = 33/105 (31%), Gaps = 9/105 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+             R CRL +    +  LG      S   V+   C G+C                       
+Sbjct  208  GRCCRLHTVHASLEDLGWADWVLSPREVQVTMCIGACPSQFRE----ANMHAQIKMNLHR  263
+
+Query  59   PGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGCL  100
+                 V  PCC P  Y  +  +   D   + +T D L A  C C+
+Sbjct  264  LKPDTVPAPCCVPASYNPMVLIQKTDTGVSLQTYDDLLAKDCHCV  308
+
+
+>sp|Q8UWD8|GDF8_COLLI Growth/differentiation factor 8 OS=Columba 
+livia OX=8932 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 61.3 bits (147),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USV6|GDF8_SYLGR Growth/differentiation factor 8 OS=Sylvicapra 
+grimmia OX=119562 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L L        L      +
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEF------LFLQKYPH-THLVHQANPK  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|O18830|GDF8_SHEEP Growth/differentiation factor 8 OS=Ovis 
+aries OX=9940 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L L        L      +
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEF------LFLQKYPH-THLVHQANPK  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|Q5USV8|GDF8_HEMJE Growth/differentiation factor 8 OS=Hemitragus 
+jemlahicus OX=37179 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L L        L      +
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEF------LFLQKYPH-THLVHQANPK  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|Q6T5B8|GDF8_CAPHI Growth/differentiation factor 8 OS=Capra 
+hircus OX=9925 GN=MSTN PE=2 SV=2
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L L        L      +
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEF------LFLQKYPH-THLVHQANPK  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|Q6UKZ8|GDF8_CANLF Growth/differentiation factor 8 OS=Canis 
+lupus familiaris OX=9615 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|Q5USV9|GDF8_CAPIB Growth/differentiation factor 8 OS=Capra 
+ibex OX=72542 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 60.9 bits (146),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 32/101 (32%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        L L        L      +
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGECEF------LFLQKYPH-THLVHQANPK  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPGMVVDRCGC  374
+
+
+>sp|Q99988|GDF15_HUMAN Growth/differentiation factor 15 OS=Homo 
+sapiens OX=9606 GN=GDF15 PE=1 SV=3
+Length=308
+
+ Score = 60.5 bits (145),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 24/105 (23%), Positives = 33/105 (31%), Gaps = 9/105 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+             R CRL +    +  LG      S   V+   C G+C                       
+Sbjct  208  GRCCRLHTVRASLEDLGWADWVLSPREVQVTMCIGACPSQFRA----ANMHAQIKTSLHR  263
+
+Query  59   PGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGCL  100
+                 V  PCC P  Y  +  +   D   + +T D L A  C C+
+Sbjct  264  LKPDTVPAPCCVPASYNPMVLIQKTDTGVSLQTYDDLLAKDCHCI  308
+
+
+>sp|Q5I3Q2|GDF8_EPICO Growth/differentiation factor 8 OS=Epinephelus 
+coioides OX=94232 GN=gdf-8 PE=1 SV=1
+Length=376
+
+ Score = 60.5 bits (145),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V     G     + +  +  +CSG C        + L        L      R
+Sbjct  282  CCRYPLTVDFEDFGWDWIIAPKRYKANYCSGECEY------MHLQKYPH-THLVNKANPR  334
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  335  GTAGPCCTPTKMSPINMLYFNRKEQIIYGKIPSMVVDRCGC  375
+
+
+>sp|Q98TB4|GDF8_OREMO Growth/differentiation factor 8 OS=Oreochromis 
+mossambicus OX=8127 GN=gdf-8 PE=2 SV=1
+Length=376
+
+ Score = 60.5 bits (145),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V     G     + +  +  +CSG C        + L        L      R
+Sbjct  282  CCRYPLTVDFEDFGWDWIIAPKRYKANYCSGECEY------MHLQKYPH-THLVNKANPR  334
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  335  GTAGPCCTPTKMSPINMLYFNRKEQIIYGKIPSMVVDRCGC  375
+
+
+>sp|Q66NC0|GDF9_CAPHI Growth/differentiation factor 9 OS=Capra 
+hircus OX=9925 GN=GDF9 PE=3 SV=1
+Length=453
+
+ Score = 60.2 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  352  CELHDFRLSFSQLKWDNWIVAPHKYNPRYCKGDCPRAV-GHRYGSPVHTMVQNIIHEKLD  410
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  411  SSVPRPSCVPAKYSPLSVLAIEPDGSIAYKEYEDMIATKCTC  452
+
+
+>sp|O77681|GDF9_SHEEP Growth/differentiation factor 9 OS=Ovis 
+aries OX=9940 GN=GDF9 PE=3 SV=2
+Length=453
+
+ Score = 59.8 bits (143),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  352  CELHDFRLSFSQLKWDNWIVAPHKYNPRYCKGDCPRAV-GHRYGSPVHTMVQNIIHEKLD  410
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  411  SSVPRPSCVPAKYSPLSVLAIEPDGSIAYKEYEDMIATKCTC  452
+
+
+>sp|Q28GB8|NODAL_XENTR Nodal homolog OS=Xenopus tropicalis OX=8364 
+GN=nodal PE=2 SV=1
+Length=403
+
+ Score = 59.8 bits (143),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 17/101 (17%), Positives = 29/101 (29%), Gaps = 6/101 (6%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR    +V    +G G      +      C G+C    +       +     ++      
+Sbjct  303  CRRVDMIVNFEDIGWGNWIVYPKKYNAYRCEGACPIPLNE-TFKPTNHAYMKSVVKLYQP  361
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+              V  P C P +   +S +         R    +    CGC
+Sbjct  362  EKVECPLCVPIKMSPLSMLYYEGDEVVLRHHQEMIVEECGC  402
+
+
+>sp|Q9Z0L4|BMP15_MOUSE Bone morphogenetic protein 15 OS=Mus musculus 
+OX=10090 GN=Bmp15 PE=2 SV=1
+Length=392
+
+ Score = 59.8 bits (143),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 23/102 (23%), Positives = 40/102 (39%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    V    LG  H   +  L    +C G C R   P+ L+  +     +L     +
+Sbjct  291  CSLHPYKVSFHQLGWDHWIIAPRLYTPNYCKGICTRVL-PYGLNSPNHAIIQSLVNELVN  349
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V QP C P  +  +S +    + +  ++  + + A +C C
+Sbjct  350  HSVPQPSCVPYNFLPMSILLIETNGSILYKEYEGMIAQSCTC  391
+
+
+>sp|O95972|BMP15_HUMAN Bone morphogenetic protein 15 OS=Homo sapiens 
+OX=9606 GN=BMP15 PE=1 SV=2
+Length=392
+
+ Score = 59.4 bits (142),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 39/102 (38%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +  R LG  H   +       +C G+C R      L+  +      L      
+Sbjct  291  CSLHPFQISFRQLGWDHWIIAPPFYTPNYCKGTCLRVLRD-GLNSPNHAIIQNLINQLVD  349
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+            + V +P C P +Y  +S +    + +  ++  + + A +C C
+Sbjct  350  QSVPRPSCVPYKYVPISVLMIEANGSILYKEYEGMIAESCTC  391
+
+
+>sp|Q8UWD9|GDF8_ANSAN Growth/differentiation factor 8 OS=Anser 
+anser anser OX=8844 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 59.4 bits (142),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 30/101 (30%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +C G C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCFGECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|P55102|INHBA_HORSE Inhibin beta A chain OS=Equus caballus 
+OX=9796 GN=INHBA PE=2 SV=1
+Length=426
+
+ Score = 59.0 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  321  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  374
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  375  QYRLRGHNPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  425
+
+
+>sp|O42222|GDF8_DANRE Growth/differentiation factor 8 OS=Danio 
+rerio OX=7955 GN=mstnb PE=2 SV=2
+Length=374
+
+ Score = 58.6 bits (140),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V     G     + +  +  +CSG C        + L        L      R
+Sbjct  280  CCRYPLTVDFEDFGWDWIIAPKRYKANYCSGECDY------MYLQKYPH-THLVNKASPR  332
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  333  GTAGPCCTPTKMSPINMLYFNGKEQIIYGKIPSMVVDRCGC  373
+
+
+>sp|Q6X2S4|INHBA_FELCA Inhibin beta A chain OS=Felis catus OX=9685 
+GN=INHBA PE=2 SV=1
+Length=424
+
+ Score = 58.6 bits (140),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  319  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  372
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  373  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  423
+
+
+>sp|A9CB18|GDF9_PAPAN Growth/differentiation factor 9 OS=Papio 
+anubis OX=9555 GN=GDF9 PE=3 SV=1
+Length=455
+
+ Score = 58.6 bits (140),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  354  CELHDFRLSFSQLKWDNWIVAPHRYNPRYCKGDCPRAV-GHRYGSPVHTMVQNIIYEKLD  412
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  413  SSVPRPSCVPAKYSPLSVLTIEPDGSIAYKEYEDMIATKCTC  454
+
+
+>sp|Q9GK68|GDF9_BOVIN Growth/differentiation factor 9 OS=Bos taurus 
+OX=9913 GN=GDF9 PE=2 SV=1
+Length=453
+
+ Score = 58.2 bits (139),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  352  CELHDFRLSFSQLKWDNWIVAPHKYNPRYCKGDCPRAV-GHRYGSPVHTMVMNIIHEKLD  410
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  411  SSVPRPSCVPAKYSPLSVLAIEPDGSIAYKEYEDMIATKCTC  452
+
+
+>sp|P03970|INHBA_PIG Inhibin beta A chain OS=Sus scrofa OX=9823 
+GN=INHBA PE=1 SV=1
+Length=424
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  319  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  372
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  373  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  423
+
+
+>sp|P18331|INHBA_RAT Inhibin beta A chain OS=Rattus norvegicus 
+OX=10116 GN=Inhba PE=2 SV=1
+Length=424
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  319  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  372
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  373  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  423
+
+
+>sp|Q04998|INHBA_MOUSE Inhibin beta A chain OS=Mus musculus OX=10090 
+GN=Inhba PE=1 SV=1
+Length=424
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  319  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  372
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  373  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  423
+
+
+>sp|P43032|INHBA_SHEEP Inhibin beta A chain OS=Ovis aries OX=9940 
+GN=INHBA PE=1 SV=1
+Length=425
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  320  CCKKQFYVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  373
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  374  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  424
+
+
+>sp|Q8UWE0|GDF8_ANAPL Growth/differentiation factor 8 OS=Anas 
+platyrhynchos OX=8839 GN=MSTN PE=2 SV=1
+Length=375
+
+ Score = 58.2 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 30/101 (30%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CS  C        L          L      R
+Sbjct  281  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSEECEFVF----LQKYPHTH---LVHQANPR  333
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  334  GSAGPCCTPTKMSPINMLYFNGKEQIIYGKIPAMVVDRCGC  374
+
+
+>sp|P08476|INHBA_HUMAN Inhibin beta A chain OS=Homo sapiens OX=9606 
+GN=INHBA PE=1 SV=2
+Length=426
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  321  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  374
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  375  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  425
+
+
+>sp|O60383|GDF9_HUMAN Growth/differentiation factor 9 OS=Homo 
+sapiens OX=9606 GN=GDF9 PE=1 SV=1
+Length=454
+
+ Score = 57.5 bits (137),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  353  CELHDFRLSFSQLKWDNWIVAPHRYNPRYCKGDCPRAV-GHRYGSPVHTMVQNIIYEKLD  411
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  412  SSVPRPSCVPAKYSPLSVLTIEPDGSIAYKEYEDMIATKCTC  453
+
+
+>sp|P07995|INHBA_BOVIN Inhibin beta A chain OS=Bos taurus OX=9913 
+GN=INHBA PE=1 SV=2
+Length=425
+
+ Score = 57.5 bits (137),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 21/111 (19%), Positives = 38/111 (34%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C G C    +     SL+       
+Sbjct  320  CCKKQFFVSFKDIGWNDWIIAPSGYHAN------YCEGECPSHIAGTSGSSLSFHSTVIN  373
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  374  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  424
+
+
+>sp|Q07105|GDF9_MOUSE Growth/differentiation factor 9 OS=Mus musculus 
+OX=10090 GN=Gdf9 PE=2 SV=2
+Length=441
+
+ Score = 57.1 bits (136),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 21/102 (21%), Positives = 34/102 (33%), Gaps = 7/102 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C L    +    L       +      R+C G C RA   H            +      
+Sbjct  340  CELHDFRLSFSQLKWDNWIVAPHRYNPRYCKGDCPRAVR-HRYGSPVHTMVQNIIYEKLD  398
+
+Query  62   RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              V +P C P +Y  +S +    D +  ++  + + AT C C
+Sbjct  399  PSVPRPSCVPGKYSPLSVLTIEPDGSIAYKEYEDMIATRCTC  440
+
+
+>sp|Q9Z0J7|GDF15_MOUSE Growth/differentiation factor 15 OS=Mus 
+musculus OX=10090 GN=Gdf15 PE=1 SV=2
+Length=303
+
+ Score = 57.1 bits (136),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 25/104 (24%), Positives = 33/104 (32%), Gaps = 9/104 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+             R C L +    +  LG      S   ++   C G C            +     A    
+Sbjct  203  GRCCHLETVQATLEDLGWSDWVLSPRQLQLSMCVGECPHLYRS----ANTHAQIKARLHG  258
+
+Query  59   PGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+                 V  PCC P+ Y  V  M   D   + +T D L A  C C
+Sbjct  259  LQPDKVPAPCCVPSSYTPVVLMHRTDSGVSLQTYDDLVARGCHC  302
+
+
+>sp|Q04999|INHBB_MOUSE Inhibin beta B chain OS=Mus musculus OX=10090 
+GN=Inhbb PE=2 SV=4
+Length=411
+
+ Score = 56.7 bits (135),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  307  CCRQQFFIDFRLIGWNDWIIAPTGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  360
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P     CC PT+  ++S  + D   N   R V  +    CGC
+Sbjct  361  QYRMRGLNPGPVNSCCIPTKLSSMSMLYFDDEYNIVKRDVPNMIVEECGC  410
+
+
+>sp|P17491|INHBB_RAT Inhibin beta B chain OS=Rattus norvegicus 
+OX=10116 GN=Inhbb PE=2 SV=2
+Length=411
+
+ Score = 56.7 bits (135),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  307  CCRQQFFIDFRLIGWNDWIIAPTGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  360
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P     CC PT+  ++S  + D   N   R V  +    CGC
+Sbjct  361  QYRMRGLNPGPVNSCCIPTKLSSMSMLYFDDEYNIVKRDVPNMIVEECGC  410
+
+
+>sp|O08717|INHBE_MOUSE Inhibin beta E chain OS=Mus musculus OX=10090 
+GN=Inhbe PE=2 SV=2
+Length=350
+
+ Score = 55.9 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 23/103 (22%), Positives = 35/103 (34%), Gaps = 7/103 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGALRPPPG  60
+            C  R   V  + LG        E  +  +CSG C    +    ++ +      +L     
+Sbjct  247  CCRRDHYVDFQELGWRDWILQPEGYQLNYCSGQCPPHLAGSPGIAASFHSAVFSLLKANN  306
+
+Query  61   SRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              P    CC PT    +S +    + N     V  +   ACGC
+Sbjct  307  PWPAGSSCCVPTARRPLSLLYLDHNGNVVKTDVPDMVVEACGC  349
+
+
+>sp|O88959|INHBE_RAT Inhibin beta E chain OS=Rattus norvegicus 
+OX=10116 GN=Inhbe PE=2 SV=1
+Length=350
+
+ Score = 55.5 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 23/103 (22%), Positives = 35/103 (34%), Gaps = 7/103 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGALRPPPG  60
+            C  R   V  + LG        E  +  +CSG C    +    ++ +      +L     
+Sbjct  247  CCRRDHYVDFQELGWRDWILQPEGYQLNYCSGQCPPHLAGSPGIAASFHSAVFSLLKANN  306
+
+Query  61   SRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              P    CC PT    +S +    + N     V  +   ACGC
+Sbjct  307  PWPAGSSCCVPTARRPLSLLYLDHNGNVVKTDVPDMVVEACGC  349
+
+
+>sp|Q91619|NODAL_XENLA Nodal homolog OS=Xenopus laevis OX=8355 
+GN=nodal PE=1 SV=1
+Length=406
+
+ Score = 55.5 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 16/101 (16%), Positives = 28/101 (28%), Gaps = 6/101 (6%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR    +V    +G        +      C G+C    +       +     ++      
+Sbjct  306  CRRVDMIVDFEDIGWSSWIVYPKKYNAYRCEGACPIPLNE-TFKPTNHAYMKSVVKLYQP  364
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+              V  P C P +   +S +         R    +    CGC
+Sbjct  365  ERVECPLCVPVKMSPLSMLYYEGDEVVLRHHQEMIVEECGC  405
+
+
+>sp|P43021|NODAL_MOUSE Nodal OS=Mus musculus OX=10090 GN=Nodal 
+PE=2 SV=2
+Length=354
+
+ Score = 55.5 bits (132),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 33/106 (31%), Gaps = 8/106 (8%)
+
+Query  1    ARGCRLRSQLVPVRALGLG---HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRP  57
+            ++ CR     V    +G G       +   +R C G C       +    +     +L  
+Sbjct  251  SQLCRRVKFQVDFNLIGWGSWIIYPKQYNAYR-CEGECPNPV-GEEFHPTNHAYIQSLLK  308
+
+Query  58   PPGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGCL  100
+                  V   CC P + + +S +   +          +    CGCL
+Sbjct  309  RYQPHRVPSTCCAPVKTKPLSMLYVDNGRVLLEHHKDMIVEECGCL  354
+
+
+>sp|Q96S42|NODAL_HUMAN Nodal homolog OS=Homo sapiens OX=9606 GN=NODAL 
+PE=1 SV=2
+Length=347
+
+ Score = 55.1 bits (131),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 20/106 (19%), Positives = 35/106 (33%), Gaps = 8/106 (8%)
+
+Query  1    ARGCRLRSQLVPVRALGLG---HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRP  57
+            ++ CR     V    +G G       +   +R C G C       +    +     +L  
+Sbjct  244  SQLCRKVKFQVDFNLIGWGSWIIYPKQYNAYR-CEGECPNPV-GEEFHPTNHAYIQSLLK  301
+
+Query  58   PPGSRPVSQPCCRPTRYEAVS--FMDVNSTWRTVDR-LSATACGCL  100
+                  V   CC P + + +S  ++D         + +    CGCL
+Sbjct  302  RYQPHRVPSTCCAPVKTKPLSMLYVDNGRVLLDHHKDMIVEECGCL  347
+
+
+>sp|P27093|INHBB_CHICK Inhibin beta B chain OS=Gallus gallus OX=9031 
+GN=INHBB PE=2 SV=2
+Length=391
+
+ Score = 55.1 bits (131),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  287  CCRQQFYIDFRLIGWNDWIIAPSGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  340
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P +   CC PT+   +S  + D   N   R V  +    CGC
+Sbjct  341  QYRMRGLNPGTVNSCCIPTKLSTMSMLYFDDEYNIVKRDVPNMIVEECGC  390
+
+
+>sp|P27092|INHBA_CHICK Inhibin beta A chain OS=Gallus gallus OX=9031 
+GN=INHBA PE=1 SV=2
+Length=424
+
+ Score = 55.1 bits (131),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 20/111 (18%), Positives = 37/111 (33%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGA  54
+            C  +   V  + +G         G+ ++      +C   C    +     SL+       
+Sbjct  319  CCKKQFFVSFKDIGWSDWIIAPTGYHAN------YCEEECPSHIAGTSGSSLSFHSTVIN  372
+
+Query  55   LRPPPGSRPVS--QPCCRPTRYEAVSFM--DV--NSTWRTVDRLSATACGC  99
+                 G  P +  + CC PT+   +S +  D   N   + +  +    CGC
+Sbjct  373  HYRMRGHSPFANLKSCCVPTKLRPMSMLYYDDGQNIIKKDIQNMIVEECGC  423
+
+
+>sp|Q9Z0J6|GDF15_RAT Growth/differentiation factor 15 OS=Rattus 
+norvegicus OX=10116 GN=Gdf15 PE=1 SV=1
+Length=303
+
+ Score = 54.4 bits (129),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 25/104 (24%), Positives = 33/104 (32%), Gaps = 9/104 (9%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+             R C L +    +  LG      S   ++   C G C            +     A    
+Sbjct  203  GRCCHLETVQATLEDLGWSDWVLSPRQLQLSMCVGECPHLYRS----ANTHALIKARLHG  258
+
+Query  59   PGSRPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+                 V  PCC P+ Y  V  M   D   + +T D L A  C C
+Sbjct  259  LQPDRVPAPCCVPSSYTPVVLMHRTDSGVSLQTYDDLVAQGCHC  302
+
+
+>sp|P92172|DAF7_CAEEL Dauer larva development regulatory growth 
+factor daf-7 OS=Caenorhabditis elegans OX=6239 GN=daf-7 PE=1 
+SV=1
+Length=350
+
+ Score = 54.4 bits (129),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 19/104 (18%), Positives = 34/104 (33%), Gaps = 6/104 (6%)
+
+Query  1    ARGCRLRSQLVPVRALGLGHRSDELVRFRF-CSGSCRRARSPHDLSLASLLGAGALRPPP  59
+            ++GC L    +    +G            + C G C       +L+              
+Sbjct  247  SKGCCLYDLEIEFEKIGWDWIVAPPRYNAYMCRGDCHYNAHHFNLAETGHSKIMRAAHKV  306
+
+Query  60   GSRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+             +  +   CC PT Y+ +  +    D   +   V+ + A  CGC
+Sbjct  307  SNPEIGY-CCHPTEYDYIKLIYVNRDGRVSIANVNGMIAKKCGC  349
+
+
+>sp|O93449|TGFB1_ONCMY Transforming growth factor beta-1 proprotein 
+OS=Oncorhynchus mykiss OX=8022 GN=tgfb1 PE=2 SV=1
+Length=382
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 19/104 (18%), Positives = 33/104 (32%), Gaps = 9/104 (9%)
+
+Query  1    ARGCRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+            +  C +R   +  R  LG     +    F  +C G C    +  +     L     L   
+Sbjct  282  SESCCVRKLYIDFRKDLGWKWIHEPTGYFANYCIGPCTYIWNTENKYSQVLA----LYKH  337
+
+Query  59   PGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                  +QPCC P   E +    ++        +  +   +C C
+Sbjct  338  HNPGASAQPCCVPQVLEPLPIIYYVGRQHKVEQLSNMIVKSCRC  381
+
+
+>sp|P09529|INHBB_HUMAN Inhibin beta B chain OS=Homo sapiens OX=9606 
+GN=INHBB PE=1 SV=2
+Length=407
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  303  CCRQQFFIDFRLIGWNDWIIAPTGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  356
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P +   CC PT+   +S  + D   N   R V  +    CGC
+Sbjct  357  QYRMRGLNPGTVNSCCIPTKLSTMSMLYFDDEYNIVKRDVPNMIVEECGC  406
+
+
+>sp|O95390|GDF11_HUMAN Growth/differentiation factor 11 OS=Homo 
+sapiens OX=9606 GN=GDF11 PE=1 SV=1
+Length=407
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        +          L      R
+Sbjct  313  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGQCEYMF----MQKYPHTH---LVQQANPR  365
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  366  GSAGPCCTPTKMSPINMLYFNDKQQIIYGKIPGMVVDRCGC  406
+
+
+>sp|P04088|INHBB_PIG Inhibin beta B chain OS=Sus scrofa OX=9823 
+GN=INHBB PE=1 SV=2
+Length=407
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  303  CCRQQFFIDFRLIGWSDWIIAPTGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  356
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P +   CC PT+   +S  + D   N   R V  +    CGC
+Sbjct  357  QYRMRGLNPGTVNSCCIPTKLSTMSMLYFDDEYNIVKRDVPNMIVEECGC  406
+
+
+>sp|Q9Z217|GDF11_RAT Growth/differentiation factor 11 OS=Rattus 
+norvegicus OX=10116 GN=Gdf11 PE=2 SV=2
+Length=405
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        +          L      R
+Sbjct  311  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGQCEYMF----MQKYPHTH---LVQQANPR  363
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  364  GSAGPCCTPTKMSPINMLYFNDKQQIIYGKIPGMVVDRCGC  404
+
+
+>sp|Q9Z1W4|GDF11_MOUSE Growth/differentiation factor 11 OS=Mus 
+musculus OX=10090 GN=Gdf11 PE=1 SV=1
+Length=405
+
+ Score = 54.0 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 31/101 (31%), Gaps = 12/101 (12%)
+
+Query  4    CRLRSQLVPVRALGLGHR-SDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSR  62
+            C      V   A G     + +  +  +CSG C        +          L      R
+Sbjct  311  CCRYPLTVDFEAFGWDWIIAPKRYKANYCSGQCEYMF----MQKYPHTH---LVQQANPR  363
+
+Query  63   PVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              + PCC PT+   ++ +         +  +  +    CGC
+Sbjct  364  GSAGPCCTPTKMSPINMLYFNDKQQIIYGKIPGMVVDRCGC  404
+
+
+>sp|P58166|INHBE_HUMAN Inhibin beta E chain OS=Homo sapiens OX=9606 
+GN=INHBE PE=1 SV=1
+Length=350
+
+ Score = 53.6 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 24/103 (23%), Positives = 36/103 (35%), Gaps = 7/103 (7%)
+
+Query  4    CRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARS-PHDLSLASLLGAGALRPPPG  60
+            C  R   V  + LG        E  +  +CSG C    +    ++ +      +L     
+Sbjct  247  CCRRDHYVDFQELGWRDWILQPEGYQLNYCSGQCPPHLAGSPGIAASFHSAVFSLLKANN  306
+
+Query  61   SRPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+              P S  CC PT    +S +    + N     V  +   ACGC
+Sbjct  307  PWPASTSCCVPTARRPLSLLYLDHNGNVVKTDVPDMVVEACGC  349
+
+
+>sp|P42917|INHBB_BOVIN Inhibin beta B chain OS=Bos taurus OX=9913 
+GN=INHBB PE=3 SV=1
+Length=408
+
+ Score = 53.6 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 20/110 (18%)
+
+Query  4    CRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGA  54
+            C  +   +  R +G         G+  +      +C GSC    +     + +       
+Sbjct  304  CCRQQFFIDFRLIGWNDWIIAPTGYYGN------YCEGSCPAYLAGVPGSASSFHTAVVN  357
+
+Query  55   LRPPPGSRPVS-QPCCRPTRYEAVS--FMDV--NSTWRTVDRLSATACGC  99
+                 G  P +   CC PT+   +S  + D   N   R V  +    CGC
+Sbjct  358  QYRMRGLNPGTVNSCCIPTKLSTMSMLYFDDEYNIVKRDVPNMIVEECGC  407
+
+
+>sp|P49000|MIS_RAT Muellerian-inhibiting factor OS=Rattus norvegicus 
+OX=10116 GN=Amh PE=3 SV=1
+Length=553
+
+ Score = 53.6 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 38/99 (38%), Gaps = 4/99 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGSRP  63
+            C LR   V +RA        E  +   C G+C   +S  +    + +         G+  
+Sbjct  455  CALRELSVDLRA-ERSVLIPETYQANNCQGACAWPQSDRNPRYGNHVVLLLKMQARGAAL  513
+
+Query  64   VSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+               PCC PT Y     +S  + + +   V  + AT CGC
+Sbjct  514  GRLPCCVPTAYTGKLLISLSEEHISAHHVPNMVATECGC  552
+
+
+>sp|Q91620|NOD2A_XENLA Nodal homolog 2-A OS=Xenopus laevis OX=8355 
+GN=nodal2-a PE=1 SV=1
+Length=405
+
+ Score = 53.2 bits (126),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 31/101 (31%), Gaps = 6/101 (6%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR    +V    +  G R     RF    C G+C    +       +     +L      
+Sbjct  305  CRRVDMIVDFEKIEWGDRIVYPKRFNAYRCEGACPIPLNE-TFKPTNHAYIKSLVKLYDQ  363
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACGC  99
+              V    C P +   +S +   D     +  + +    CGC
+Sbjct  364  EKVECSSCVPVKMSPLSMLLYEDGEVVLKHHEDMIVDECGC  404
+
+
+>sp|O13048|NOD4A_XENLA Nodal homolog 4-A OS=Xenopus laevis OX=8355 
+GN=nodal4-a PE=2 SV=1
+Length=402
+
+ Score = 52.1 bits (123),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 17/101 (17%), Positives = 35/101 (35%), Gaps = 6/101 (6%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR     V  + +G        +++    C G C    +   +   +     +L      
+Sbjct  302  CRRVDFFVDFKQIGWDSWIIHPMKYNAYRCEGECPSPVNE-SVKPNNHAYMQSLLNYYVK  360
+
+Query  62   RPVSQPCCRPTRYEAVS--FMD-VNSTWRTVDRLSATACGC  99
+                + CC P R  ++S  + D  +  ++  + +    CGC
+Sbjct  361  GKAPEVCCVPIRMSSLSMVYYDHDDIAFQNHEGMIVEECGC  401
+
+
+>sp|Q9PTQ2|TGFB1_CYPCA Transforming growth factor beta-1 proprotein 
+OS=Cyprinus carpio OX=7962 GN=tgfb1 PE=2 SV=1
+Length=376
+
+ Score = 51.7 bits (122),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 19/104 (18%), Positives = 34/104 (33%), Gaps = 9/104 (9%)
+
+Query  1    ARGCRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSCRRARSPHDLSLASLLGAGALRPP  58
+            + GC +RS  +  R  LG     +    +  +C+GSC    +  +     L     L   
+Sbjct  276  SDGCCVRSLYIDFRKDLGWKWIHEPSGYYANYCTGSCSFVWTSENKYSQVLA----LYKH  331
+
+Query  59   PGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                  +QPC  P     +    ++        +  +    C C
+Sbjct  332  HNPGASAQPCRVPQVLNPLPIFYYVGRQHKVEQLSNMIVKTCKC  375
+
+
+>sp|P79295|MIS_PIG Muellerian-inhibiting factor OS=Sus scrofa 
+OX=9823 GN=AMH PE=2 SV=2
+Length=575
+
+ Score = 51.7 bits (122),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 37/101 (37%), Gaps = 4/101 (4%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+              C LR   V +RA        E  +   C G+C   +S  +    + +         G+
+Sbjct  475  GPCALRELSVDLRA-ERSVLIPETYQANNCQGTCGWPQSDRNPRYGNHVVLLLKMQARGA  533
+
+Query  62   RPVSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+                 PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  534  ALARPPCCVPTAYAGKLLISLSEERISAHHVPNMVATECGC  574
+
+
+>sp|P27106|MIS_MOUSE Muellerian-inhibiting factor OS=Mus musculus 
+OX=10090 GN=Amh PE=2 SV=1
+Length=555
+
+ Score = 51.7 bits (122),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 26/101 (26%), Positives = 38/101 (38%), Gaps = 4/101 (4%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+              C LR   V +RA        E  +   C G+CR  +S  +    + +         G+
+Sbjct  455  GPCALRELSVDLRA-ERSVLIPETYQANNCQGACRWPQSDRNPRYGNHVVLLLKMQARGA  513
+
+Query  62   RPVSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+                 PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  514  ALGRLPCCVPTAYAGKLLISLSEERISADHVPNMVATECGC  554
+
+
+>sp|P03972|MIS_BOVIN Muellerian-inhibiting factor OS=Bos taurus 
+OX=9913 GN=AMH PE=1 SV=1
+Length=575
+
+ Score = 51.7 bits (122),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 37/101 (37%), Gaps = 4/101 (4%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+              C LR   V +RA        E  +   C G+C   +S  +    + +         G+
+Sbjct  475  GPCALRELSVDLRA-ERSVLIPETYQANNCQGACGWPQSDRNPRYGNHVVLLLKMQARGA  533
+
+Query  62   RPVSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+                 PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  534  TLARPPCCVPTAYTGKLLISLSEERISAHHVPNMVATECGC  574
+
+
+>sp|P55104|INHBC_MOUSE Inhibin beta C chain OS=Mus musculus OX=10090 
+GN=Inhbc PE=2 SV=2
+Length=352
+
+ Score = 50.9 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 34/108 (31%), Gaps = 9/108 (8%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCR-RARSPHDLSLASLLGAGALRP  57
+            +R C  +   V  R +G        E     FC+G C         +S +       L  
+Sbjct  244  SRMCCRQEFFVDFREIGWNDWIIQPEGYAMNFCTGQCPLHVAGMPGISASFHTAVLNLLK  303
+
+Query  58   PPGS--RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               +        CC PT    +S +    D N     +  +   ACGC
+Sbjct  304  ANAAAGTTGRGSCCVPTSRRPLSLLYYDRDSNIVKTDIPDMVVEACGC  351
+
+
+>sp|Q9WUK5|INHBC_RAT Inhibin beta C chain OS=Rattus norvegicus 
+OX=10116 GN=Inhbc PE=2 SV=1
+Length=351
+
+ Score = 50.9 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 23/114 (20%), Positives = 37/114 (32%), Gaps = 21/114 (18%)
+
+Query  1    ARGCRLRSQLVPVRALGL--------GHRSDELVRFRFCSGSCR-RARSPHDLSLASLLG  51
+            +R C  +   V  R +G         G+  +      FC+G C         +S +    
+Sbjct  243  SRMCCRQEFFVDFREIGWHDWIIQPEGYAMN------FCTGQCPLHVAGMPGISASFHTA  296
+
+Query  52   AGALRPPPGSRPVSQ--PCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               L         ++   CC PT    +S +    D N     +  +   ACGC
+Sbjct  297  VLNLLKANTDAGTARRGSCCVPTSRRPLSLLYYDRDSNIVKTDIPDMVVEACGC  350
+
+
+>sp|P15203|TGFB3_PIG Transforming growth factor beta-3 proprotein 
+OS=Sus scrofa OX=9823 GN=TGFB3 PE=2 SV=1
+Length=409
+
+ Score = 50.9 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/101 (20%), Positives = 34/101 (34%), Gaps = 9/101 (9%)
+
+Query  4    CRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C +R   +  R  LG     +    +  FCSG C   RS       +      L      
+Sbjct  312  CCVRPLYIDFRQDLGWKWVHEPKGYYANFCSGPCPYLRSA----DTTHSSVLGLYNTLNP  367
+
+Query  62   RPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+               + PCC P   E ++   ++   +    +  +   +C C
+Sbjct  368  EASASPCCVPQDLEPLTILYYVGRTAKVEQLSNMVVKSCKC  408
+
+
+>sp|P55103|INHBC_HUMAN Inhibin beta C chain OS=Homo sapiens OX=9606 
+GN=INHBC PE=2 SV=1
+Length=352
+
+ Score = 50.1 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 34/108 (31%), Gaps = 9/108 (8%)
+
+Query  1    ARGCRLRSQLVPVRALGLG--HRSDELVRFRFCSGSCRRARSP-HDLSLASLLGAGALRP  57
+            +R C  +   V  R +G        E     FC G C    +    ++ +       L  
+Sbjct  244  SRMCCRQEFFVDFREIGWHDWIIQPEGYAMNFCIGQCPLHIAGMPGIAASFHTAVLNLLK  303
+
+Query  58   PPGS--RPVSQPCCRPTRYEAVSFM----DVNSTWRTVDRLSATACGC  99
+               +        CC PT    +S +    D N     +  +   ACGC
+Sbjct  304  ANTAAGTTGGGSCCVPTARRPLSLLYYDRDSNIVKTDIPDMVVEACGC  351
+
+
+>sp|P03971|MIS_HUMAN Muellerian-inhibiting factor OS=Homo sapiens 
+OX=9606 GN=AMH PE=1 SV=3
+Length=560
+
+ Score = 50.1 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 36/101 (36%), Gaps = 4/101 (4%)
+
+Query  2    RGCRLRSQLVPVRALGLGHRSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+              C LR   V +RA        E  +   C G C   +S  +    + +         G+
+Sbjct  460  GPCALRELSVDLRA-ERSVLIPETYQANNCQGVCGWPQSDRNPRYGNHVVLLLKMQVRGA  518
+
+Query  62   RPVSQPCCRPTRYEA---VSFMDVNSTWRTVDRLSATACGC  99
+                 PCC PT Y     +S  +   +   V  + AT CGC
+Sbjct  519  ALARPPCCVPTAYAGKLLISLSEERISAHHVPNMVATECGC  559
+
+
+>sp|P10600|TGFB3_HUMAN Transforming growth factor beta-3 proprotein 
+OS=Homo sapiens OX=9606 GN=TGFB3 PE=1 SV=1
+Length=412
+
+ Score = 50.1 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 22/104 (21%), Positives = 35/104 (34%), Gaps = 15/104 (14%)
+
+Query  4    CRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSC---RRARSPHDLSLASLLGAGALRPP  58
+            C +R   +  R  LG     +    +  FCSG C   R A + H   L        L   
+Sbjct  315  CCVRPLYIDFRQDLGWKWVHEPKGYYANFCSGPCPYLRSADTTHSTVLG-------LYNT  367
+
+Query  59   PGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                  + PCC P   E ++   ++        +  +   +C C
+Sbjct  368  LNPEASASPCCVPQDLEPLTILYYVGRTPKVEQLSNMVVKSCKC  411
+
+
+>sp|P17125|TGFB3_MOUSE Transforming growth factor beta-3 proprotein 
+OS=Mus musculus OX=10090 GN=Tgfb3 PE=1 SV=1
+Length=410
+
+ Score = 49.8 bits (117),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 22/104 (21%), Positives = 35/104 (34%), Gaps = 15/104 (14%)
+
+Query  4    CRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSC---RRARSPHDLSLASLLGAGALRPP  58
+            C +R   +  R  LG     +    +  FCSG C   R A + H   L        L   
+Sbjct  313  CCVRPLYIDFRQDLGWKWVHEPKGYYANFCSGPCPYLRSADTTHSTVLG-------LYNT  365
+
+Query  59   PGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                  + PCC P   E ++   ++        +  +   +C C
+Sbjct  366  LNPEASASPCCVPQDLEPLTILYYVGRTPKVEQLSNMVVKSCKC  409
+
+
+>sp|Q07258|TGFB3_RAT Transforming growth factor beta-3 proprotein 
+OS=Rattus norvegicus OX=10116 GN=Tgfb3 PE=2 SV=2
+Length=412
+
+ Score = 49.4 bits (116),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 20/101 (20%), Positives = 33/101 (33%), Gaps = 9/101 (9%)
+
+Query  4    CRLRSQLVPVR-ALGLGHRSDELVRF-RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C +R   +  R  LG     +    +  FCSG C   RS       +      L      
+Sbjct  315  CCVRPLYIDFRQDLGWKWVHEPKGYYANFCSGPCPYLRSS----DTTHSTVLGLYNTLNP  370
+
+Query  62   RPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+               + PCC P   E ++   ++        +  +   +C C
+Sbjct  371  EASASPCCVPQDLEPLTILYYVGRTPKVEQLSNMVVKSCKC  411
+
+
+>sp|P16047|TGFB3_CHICK Transforming growth factor beta-3 proprotein 
+OS=Gallus gallus OX=9031 GN=TGFB3 PE=2 SV=2
+Length=412
+
+ Score = 49.4 bits (116),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 22/104 (21%), Positives = 35/104 (34%), Gaps = 15/104 (14%)
+
+Query  4    CRLRSQLVPV-RALGLGHRSDELVRF-RFCSGSC---RRARSPHDLSLASLLGAGALRPP  58
+            C +R   + +   LG     +    F  FCSG C   R A + H   L        L   
+Sbjct  315  CCVRPLYIELPTDLGWKWVHEPKGYFANFCSGPCPYLRSADTTHSTVLG-------LYNT  367
+
+Query  59   PGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                  + PCC P   E ++   ++        +  +   +C C
+Sbjct  368  LNPEASASPCCVPQDLEPLTILYYVGRTPKVEQLSNMVVKSCKC  411
+
+
+>sp|Q800B8|NOD3C_XENTR Nodal homolog 3-C OS=Xenopus tropicalis 
+OX=8364 GN=nodal3-C PE=1 SV=1
+Length=401
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 17/100 (17%), Positives = 33/100 (33%), Gaps = 6/100 (6%)
+
+Query  4    CRLRSQLVPVRALGLG-HRSDELVRFRF-CSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR     V  + +G G           + C  +C    +  D    +     +L P   +
+Sbjct  299  CRKVDMFVDFQKIGWGSWIVYPKAYNAYRCESACAVPLNETD-DATNYSYIKSLLPLSDT  357
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACG  98
+                 P C P +  ++S +   + +   R  + +    CG
+Sbjct  358  DRRECPSCVPVKMRSMSMLYYENEDFVLRHHEEMIVEECG  397
+
+
+>sp|Q800C0|NOD3A_XENTR Nodal homolog 3-A OS=Xenopus tropicalis 
+OX=8364 GN=nodal3-A PE=1 SV=1
+Length=401
+
+ Score = 47.4 bits (111),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 17/100 (17%), Positives = 33/100 (33%), Gaps = 6/100 (6%)
+
+Query  4    CRLRSQLVPVRALGLG-HRSDELVRFRF-CSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR     V  + +G G           + C  +C    +  D    +     +L P   +
+Sbjct  299  CRKVDMFVDFQKIGWGSWIVYPKAYNAYRCESACAVPLNETD-DATNYSYIKSLLPLSDT  357
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACG  98
+                 P C P +  ++S +   + +   R  + +    CG
+Sbjct  358  ERRECPSCVPVKMRSMSMLYYENEDFVLRHHEEMIVEECG  397
+
+
+>sp|Q800B9|NOD3B_XENTR Nodal homolog 3-B OS=Xenopus tropicalis 
+OX=8364 GN=nodal3-B PE=1 SV=1
+Length=401
+
+ Score = 47.1 bits (110),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 17/100 (17%), Positives = 32/100 (32%), Gaps = 6/100 (6%)
+
+Query  4    CRLRSQLVPVRALGLG-HRSDELVRFRF-CSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR     V  + +G G           + C  +C    +  D    +     +L P   +
+Sbjct  299  CRKVDMFVDFQKIGWGSWIVYPKAYNAYRCESACAVPLNETD-DATNYSYIKSLLPLSDT  357
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACG  98
+                 P C P +  ++S +   +     R  + +    CG
+Sbjct  358  ERRECPSCVPVKMRSMSMLYYENEEFILRHHEEMIVEECG  397
+
+
+>sp|Q91621|NOD3B_XENLA Nodal homolog 3-B OS=Xenopus laevis OX=8355 
+GN=nodal3-b PE=2 SV=2
+Length=401
+
+ Score = 46.3 bits (108),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 15/100 (15%), Positives = 33/100 (33%), Gaps = 6/100 (6%)
+
+Query  4    CRLRSQLVPVRALGLG-HRSDELVRFRF-CSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C+     V  + +G G           + C  +C    +  + +  +     +L P    
+Sbjct  299  CKKVDMFVDFQKIGWGSWIVYPKAYNAYRCESTCAVPLNETE-NATNHSYIKSLLPLSDM  357
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACG  98
+                 P C P +  ++S +   + +   R  + +    CG
+Sbjct  358  ERKECPSCVPVKMMSMSMLYYENEDFILRHHEEMIVEECG  397
+
+
+>sp|P09531|TGFB1_CHICK Transforming growth factor beta-1 proprotein 
+OS=Gallus gallus OX=9031 GN=TGFB1 PE=2 SV=3
+Length=391
+
+ Score = 46.3 bits (108),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 20/106 (19%), Positives = 33/106 (31%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCR---RARSPHDLSLASLLGAGALR  56
+            + C +R   +  R  L      +       FC G C     A + +   LA       L 
+Sbjct  292  KNCCVRPLYIDFRKDLQWKWIHEPKGYMANFCMGPCPYIWSADTQYTKVLA-------LY  344
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   + +    ++  N     +  +   AC C
+Sbjct  345  NQHNPGASAAPCCVPQTLDPLPIIYYVGRNVRVEQLSNMVVRACKC  390
+
+
+>sp|Q91609|NOD3A_XENLA Nodal homolog 3-A OS=Xenopus laevis OX=8355 
+GN=nodal3-a PE=1 SV=1
+Length=401
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 15/100 (15%), Positives = 34/100 (34%), Gaps = 6/100 (6%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C+     V  + +G G        +    C  +C   ++  + +  +     +L P    
+Sbjct  299  CKKVDMFVDFQKIGWGSWIIYPKAYNAYRCESTCAVPQNETE-NATNHSYIKSLLPLSDM  357
+
+Query  62   RPVSQPCCRPTRYEAVSFM---DVNSTWRTVDRLSATACG  98
+                 P C P +  ++S +   + +   R  + +    CG
+Sbjct  358  ERKECPSCVPMKMMSMSMLYYENEDFILRHHEEMIVEECG  397
+
+
+>sp|P16176|TGFB1_XENLA Transforming growth factor beta-1 proprotein 
+OS=Xenopus laevis OX=8355 GN=tgfb1 PE=2 SV=1
+Length=382
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 17/113 (15%), Positives = 35/113 (31%), Gaps = 27/113 (24%)
+
+Query  1    ARGCRLRSQLVPVR-ALGL-------GHRSDELVRFRFCSGSCRR---ARSPHDLSLASL  49
+               C ++   +  R  LG        G+ ++      +C G+C       + +   L+  
+Sbjct  282  GPNCCVKPLYINFRKDLGWKWIHEPKGYEAN------YCLGNCPYIWSMDTQYSKVLS--  333
+
+Query  50   LGAGALRPPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                 L           PCC P   E +    ++   +    +  +   +C C
+Sbjct  334  -----LYNQNNPGASISPCCVPDVLEPLPIIYYVGRTAKVEQLSNMVVRSCNC  381
+
+
+>sp|Q9Z1Y6|TGFB1_CAVPO Transforming growth factor beta-1 proprotein 
+OS=Cavia porcellus OX=10141 GN=TGFB1 PE=2 SV=2
+Length=390
+
+ Score = 43.2 bits (100),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 33/106 (31%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++   +    +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKAKVEQLSNMIVRSCKC  389
+
+
+>sp|P17246|TGFB1_RAT Transforming growth factor beta-1 proprotein 
+OS=Rattus norvegicus OX=10116 GN=Tgfb1 PE=1 SV=1
+Length=390
+
+ Score = 43.2 bits (100),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASASPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P04202|TGFB1_MOUSE Transforming growth factor beta-1 proprotein 
+OS=Mus musculus OX=10090 GN=Tgfb1 PE=1 SV=1
+Length=390
+
+ Score = 42.8 bits (99),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASASPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P55101|INHA_HORSE Inhibin alpha chain OS=Equus caballus OX=9796 
+GN=INHA PE=2 SV=1
+Length=367
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 34/106 (32%), Gaps = 10/106 (9%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C G C  +  P DL L           P   
+Sbjct  263  CHRAALNISFQELGWDRWIVHPRSFIFHYCHGGCGLSA-PPDLPLPVPEVPPTPIQPLSL  321
+
+Query  62   RPVSQPCC-------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P +QPCC       RP R    S    +  +  V  L    C C+
+Sbjct  322  VPGAQPCCAALPGTMRPLRVRTTSDGGYSFKYEIVPNLLTQHCACI  367
+
+
+>sp|P50414|TGFB1_SHEEP Transforming growth factor beta-1 proprotein 
+OS=Ovis aries OX=9940 GN=TGFB1 PE=2 SV=1
+Length=390
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P09533|TGFB1_CHLAE Transforming growth factor beta-1 proprotein 
+OS=Chlorocebus aethiops OX=9534 GN=TGFB1 PE=1 SV=1
+Length=390
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P18341|TGFB1_BOVIN Transforming growth factor beta-1 proprotein 
+OS=Bos taurus OX=9913 GN=TGFB1 PE=1 SV=2
+Length=390
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P54831|TGFB1_CANLF Transforming growth factor beta-1 proprotein 
+OS=Canis lupus familiaris OX=9615 GN=TGFB1 PE=2 SV=1
+Length=390
+
+ Score = 42.8 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P01137|TGFB1_HUMAN Transforming growth factor beta-1 proprotein 
+OS=Homo sapiens OX=9606 GN=TGFB1 PE=1 SV=2
+Length=390
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|Q04997|INHA_MOUSE Inhibin alpha chain OS=Mus musculus OX=10090 
+GN=Inha PE=1 SV=2
+Length=366
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/111 (22%), Positives = 32/111 (29%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C GSC       DL L           P   
+Sbjct  263  CHRAALNISFQELGWDRWIVHPPSFIFHYCHGSCGMP--TSDLPLPVPGVPPTPVQPLFL  320
+
+Query  62   RPVSQPCC------------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P ++PCC            R T     SF      +  V  L    C C+
+Sbjct  321  VPGAKPCCAALPGSMRSLRVRTTSDGGYSF-----KYEMVPNLITQHCACI  366
+
+
+>sp|P04087|INHA_PIG Inhibin alpha chain OS=Sus scrofa OX=9823 
+GN=INHA PE=1 SV=2
+Length=364
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 25/111 (23%), Positives = 34/111 (31%), Gaps = 20/111 (18%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   S  +  + LG            F +C G C    +  +L L+          P   
+Sbjct  260  CHRASLNISFQELGWDRWIVHPPSFIFHYCHGGCGLP-TLPNLPLSVPGAPPTPVQPLLL  318
+
+Query  62   RPVSQPCC------------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P +QPCC            R T     SF      + TV  L    C C+
+Sbjct  319  VPGAQPCCAALPGTMRSLRVRTTSDGGYSF-----KYETVPNLLTQHCACI  364
+
+
+>sp|P07200|TGFB1_PIG Transforming growth factor beta-1 proprotein 
+OS=Sus scrofa OX=9823 GN=TGFB1 PE=1 SV=2
+Length=390
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|Q38HS2|TGFB1_MUSPF Transforming growth factor beta-1 proprotein 
+OS=Mustela putorius furo OX=9669 GN=TGFB1 PE=2 SV=1
+Length=390
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQALEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P38440|INHA_SHEEP Inhibin alpha chain (Fragment) OS=Ovis aries 
+OX=9940 GN=INHA PE=2 SV=1
+Length=265
+
+ Score = 41.7 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/106 (22%), Positives = 32/106 (30%), Gaps = 10/106 (9%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C G C    +  DL L           P   
+Sbjct  161  CHRAALNISFQELGWDRWIVHPPSFIFYYCHGGCGLP-TLQDLPLPVPGVPPTPFQPLSL  219
+
+Query  62   RPVSQPCC-------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P +Q CC       RP R    S    +  +  V  L    C C+
+Sbjct  220  VPGAQACCAALPGTMRPLRVRTTSDGGYSFKYEMVPNLLTQHCACI  265
+
+
+>sp|O19011|TGFB1_HORSE Transforming growth factor beta-1 proprotein 
+OS=Equus caballus OX=9796 GN=TGFB1 PE=2 SV=1
+Length=390
+
+ Score = 41.7 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 32/106 (30%), Gaps = 15/106 (14%)
+
+Query  2    RGCRLRSQLVPVR-ALGLGHRSDEL-VRFRFCSGSCRRA---RSPHDLSLASLLGAGALR  56
+            + C +R   +  R  LG     +       FC G C       + +   LA       L 
+Sbjct  291  KNCCVRQLYIDFRKDLGWKWIHEPKGYHANFCLGPCPYIWSLDTQYSKVLA-------LY  343
+
+Query  57   PPPGSRPVSQPCCRPTRYEAVS---FMDVNSTWRTVDRLSATACGC  99
+                    + PCC P   E +    ++        +  +   +C C
+Sbjct  344  NQHNPGASAAPCCVPQVLEPLPIVYYVGRKPKVEQLSNMIVRSCKC  389
+
+
+>sp|P17490|INHA_RAT Inhibin alpha chain OS=Rattus norvegicus OX=10116 
+GN=Inha PE=2 SV=1
+Length=366
+
+ Score = 40.9 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 24/111 (22%), Positives = 32/111 (29%), Gaps = 21/111 (19%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C GSC       DL L           P   
+Sbjct  263  CHRAALNISFQELGWDRWIVHPPSFIFHYCHGSCGMP--TSDLPLPVPGAPPTPAQPLFL  320
+
+Query  62   RPVSQPCC------------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P ++PCC            R T     SF      +  V  L    C C+
+Sbjct  321  VPGAKPCCAALPGSMRSLRVRTTSDGGYSF-----KYEMVPNLITQHCACI  366
+
+
+>sp|P07994|INHA_BOVIN Inhibin alpha chain OS=Bos taurus OX=9913 
+GN=INHA PE=1 SV=1
+Length=360
+
+ Score = 40.5 bits (93),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 24/106 (23%), Positives = 32/106 (30%), Gaps = 10/106 (9%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C G C     P DL L           P   
+Sbjct  256  CHRAALNISFQELGWDRWIVHPPSFIFYYCHGGC-GLSPPQDLPLPVPGVPPTPVQPLSL  314
+
+Query  62   RPVSQPCC-------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P +QPCC       RP      S    +  +  V  L    C C+
+Sbjct  315  VPGAQPCCAALPGTMRPLHVRTTSDGGYSFKYEMVPNLLTQHCACI  360
+
+
+>sp|O77755|INHA_TRIVU Inhibin alpha chain OS=Trichosurus vulpecula 
+OX=9337 GN=INHA PE=2 SV=1
+Length=361
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 35/106 (33%), Gaps = 13/106 (12%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C G C    SP     A+L  +     P   
+Sbjct  260  CHRAALNISFQELGWDQWIVHPPSFIFHYCHGGCGLVPSPVLSPGAALTPSQ----PLPL  315
+
+Query  62   RPVSQPCC-------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P S+PCC       RP R    S    +  +  V  L    C C+
+Sbjct  316  GPGSRPCCAAMPSTMRPLRVRTTSDGGYSFKYEIVPNLLTQHCACI  361
+
+
+>sp|Q90XB7|NOD2B_XENLA Nodal homolog 2-B (Fragment) OS=Xenopus 
+laevis OX=8355 GN=nodal2-b PE=2 SV=1
+Length=384
+
+ Score = 39.0 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/79 (19%), Positives = 24/79 (30%), Gaps = 3/79 (4%)
+
+Query  4    CRLRSQLVPVRALGLGHRSDELVRF--RFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            CR    +V    +  G R     RF    C G+C    +       +     +L      
+Sbjct  306  CRRVDMIVDFEKIKWGDRIVYPKRFNAYRCEGACPIPLNE-TFKPTNHAYIKSLVKLYDQ  364
+
+Query  62   RPVSQPCCRPTRYEAVSFM  80
+              V    C P +   +S +
+Sbjct  365  EKVECSSCVPVKMSPLSML  383
+
+
+>sp|P05111|INHA_HUMAN Inhibin alpha chain OS=Homo sapiens OX=9606 
+GN=INHA PE=1 SV=1
+Length=366
+
+ Score = 38.6 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 34/106 (32%), Gaps = 10/106 (9%)
+
+Query  4    CRLRSQLVPVRALGLGH--RSDELVRFRFCSGSCRRARSPHDLSLASLLGAGALRPPPGS  61
+            C   +  +  + LG            F +C G C     P +LSL           P   
+Sbjct  262  CHRVALNISFQELGWERWIVYPPSFIFHYCHGGC-GLHIPPNLSLPVPGAPPTPAQPYSL  320
+
+Query  62   RPVSQPCC-------RPTRYEAVSFMDVNSTWRTVDRLSATACGCL  100
+             P +QPCC       RP      S    +  + TV  L    C C+
+Sbjct  321  LPGAQPCCAALPGTMRPLHVRTTSDGGYSFKYETVPNLLTQHCACI  366
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.127    0.416    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064883106
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

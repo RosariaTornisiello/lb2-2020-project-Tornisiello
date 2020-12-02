@@ -1,0 +1,516 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1hfes_
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit O...  187     2e-62
+sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit O...  135     9e-42
+sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=De...  53.9    8e-09
+
+
+>sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio vulgaris (strain Hildenborough / ATCC 29579 
+/ DSM 644 / NCIMB 8303) OX=882 GN=hydB PE=1 SV=1
+Length=123
+
+ Score = 187 bits (476),  Expect = 2e-62, Method: Compositional matrix adjust.
+ Identities = 88/88 (100%), Positives = 88/88 (100%), Gaps = 0/88 (0%)
+
+Query  1    VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  60
+            VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK
+Sbjct  36   VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  95
+
+Query  61   SKGVKELTTAGKLPNPRASEFEGPYPYE  88
+            SKGVKELTTAGKLPNPRASEFEGPYPYE
+Sbjct  96   SKGVKELTTAGKLPNPRASEFEGPYPYE  123
+
+
+>sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio oxamicus (strain Monticello) OX=884 GN=hydB 
+PE=3 SV=1
+Length=124
+
+ Score = 135 bits (340),  Expect = 9e-42, Method: Compositional matrix adjust.
+ Identities = 60/88 (68%), Positives = 70/88 (80%), Gaps = 1/88 (1%)
+
+Query  2    KQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKS  61
+            KQ+KDYM+DRINGVYGADAKFPVRASQDN QV+ LY  +LEKP+ HK+  LLHTHW D+S
+Sbjct  37   KQLKDYMMDRINGVYGADAKFPVRASQDNVQVQKLYADFLEKPMSHKAEQLLHTHWVDRS  96
+
+Query  62   KGVKELTTAGKLPNPRASEFEG-PYPYE  88
+            K ++ +   G  PNPRA EFEG  YPYE
+Sbjct  97   KAIERMKAQGAYPNPRAKEFEGNTYPYE  124
+
+
+>sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=Desulfovibrio 
+fructosivorans OX=878 GN=hndD PE=1 SV=1
+Length=585
+
+ Score = 53.9 bits (128),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  11   RINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSK  62
+            R   +Y  DA  P+R S +N  +  LY+ +L KPL  +SH LLHTH+F + +
+Sbjct  533  RTQVLYAEDAGKPLRKSHENPYIIELYEKFLGKPLSERSHQLLHTHYFKRQR  584
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.134    0.403    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+Results from round 2
+
+
+Query= d1hfes_
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit O...  169     4e-55
+sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit O...  161     8e-52
+sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=De...  98.6    1e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|P29166|PHF1_CLOPA Iron hydrogenase 1 OS=Clostridium pasteurian...  48.5    7e-07
+sp|Q9UHQ1|NARF_HUMAN Nuclear prelamin A recognition factor OS=Hom...  42.0    1e-04
+sp|Q9CYQ7|NARF_MOUSE Nuclear prelamin A recognition factor OS=Mus...  40.1    6e-04
+
+
+>sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio vulgaris (strain Hildenborough / ATCC 29579 
+/ DSM 644 / NCIMB 8303) OX=882 GN=hydB PE=1 SV=1
+Length=123
+
+ Score = 169 bits (428),  Expect = 4e-55, Method: Composition-based stats.
+ Identities = 88/88 (100%), Positives = 88/88 (100%), Gaps = 0/88 (0%)
+
+Query  1    VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  60
+            VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK
+Sbjct  36   VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  95
+
+Query  61   SKGVKELTTAGKLPNPRASEFEGPYPYE  88
+            SKGVKELTTAGKLPNPRASEFEGPYPYE
+Sbjct  96   SKGVKELTTAGKLPNPRASEFEGPYPYE  123
+
+
+>sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio oxamicus (strain Monticello) OX=884 GN=hydB 
+PE=3 SV=1
+Length=124
+
+ Score = 161 bits (406),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 60/88 (68%), Positives = 70/88 (80%), Gaps = 1/88 (1%)
+
+Query  2    KQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKS  61
+            KQ+KDYM+DRINGVYGADAKFPVRASQDN QV+ LY  +LEKP+ HK+  LLHTHW D+S
+Sbjct  37   KQLKDYMMDRINGVYGADAKFPVRASQDNVQVQKLYADFLEKPMSHKAEQLLHTHWVDRS  96
+
+Query  62   KGVKELTTAGKLPNPRASEFEG-PYPYE  88
+            K ++ +   G  PNPRA EFEG  YPYE
+Sbjct  97   KAIERMKAQGAYPNPRAKEFEGNTYPYE  124
+
+
+>sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=Desulfovibrio 
+fructosivorans OX=878 GN=hndD PE=1 SV=1
+Length=585
+
+ Score = 98.6 bits (244),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  11   RINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSK  62
+            R   +Y  DA  P+R S +N  +  LY+ +L KPL  +SH LLHTH+F + +
+Sbjct  533  RTQVLYAEDAGKPLRKSHENPYIIELYEKFLGKPLSERSHQLLHTHYFKRQR  584
+
+
+>sp|P29166|PHF1_CLOPA Iron hydrogenase 1 OS=Clostridium pasteurianum 
+OX=1501 PE=1 SV=1
+Length=574
+
+ Score = 48.5 bits (114),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 26/47 (55%), Gaps = 0/47 (0%)
+
+Query  11   RINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHW  57
+            R + +Y  D     R S +NT +  +Y++Y  KP   ++H++LH  +
+Sbjct  526  RASVLYNQDEHLSKRKSHENTALVKMYQNYFGKPGEGRAHEILHFKY  572
+
+
+>sp|Q9UHQ1|NARF_HUMAN Nuclear prelamin A recognition factor OS=Homo 
+sapiens OX=9606 GN=NARF PE=1 SV=1
+Length=456
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 33/60 (55%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++ G+Y   A  PVR  + +  V+ LY+ +LE     K+ ++LHT +  + +G   L
+Sbjct  396  LLRQMEGIY---ADIPVRRPESSAHVQELYQEWLEGINSPKAREVLHTTYQSQERGTHSL  452
+
+
+>sp|Q9CYQ7|NARF_MOUSE Nuclear prelamin A recognition factor OS=Mus 
+musculus OX=10090 GN=Narf PE=2 SV=1
+Length=462
+
+ Score = 40.1 bits (92),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 29/50 (58%), Gaps = 3/50 (6%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHW  57
+            +L ++ G+Y   +  PVR  + +T V+ LY+ +LE     K  ++LHT +
+Sbjct  402  LLQQMEGIY---SGIPVRPPESSTHVQELYQEWLEGTESPKVQEVLHTSY  448
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.130    0.364    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0399    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+Results from round 3
+
+
+Query= d1hfes_
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit O...  158     6e-51
+sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit O...  149     3e-47
+sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=De...  89.8    2e-21
+sp|Q9UHQ1|NARF_HUMAN Nuclear prelamin A recognition factor OS=Hom...  89.4    2e-21
+sp|Q9CYQ7|NARF_MOUSE Nuclear prelamin A recognition factor OS=Mus...  77.5    4e-17
+sp|P29166|PHF1_CLOPA Iron hydrogenase 1 OS=Clostridium pasteurian...  77.1    5e-17
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q2YDU6|NARF_RAT Nuclear prelamin A recognition factor OS=Rattu...  75.2    2e-16
+sp|Q6DHP6|NARF_DANRE Nuclear prelamin A recognition factor OS=Dan...  54.8    4e-09
+sp|Q6GP25|NARF_XENLA Nuclear prelamin A recognition factor OS=Xen...  53.6    1e-08
+sp|A4FV58|CIAO3_BOVIN Cytosolic iron-sulfur assembly component 3 ...  49.7    2e-07
+sp|A2RRV9|NARFL_DANRE Cytosolic Fe-S cluster assembly factor narf...  49.7    3e-07
+sp|Q5BK18|CIAO3_RAT Cytosolic iron-sulfur assembly component 3 OS...  47.8    1e-06
+sp|Q7TMW6|CIAO3_MOUSE Cytosolic iron-sulfur assembly component 3 ...  47.8    1e-06
+sp|B4MUM8|NARF_DROWI Probable cytosolic Fe-S cluster assembly fac...  44.4    2e-05
+sp|Q5RF36|CIAO3_PONAB Cytosolic iron-sulfur assembly component 3 ...  44.4    2e-05
+sp|Q9H6Q4|CIAO3_HUMAN Cytosolic iron-sulfur assembly component 3 ...  44.0    2e-05
+sp|B4JBE6|NARF_DROGR Probable cytosolic Fe-S cluster assembly fac...  43.6    3e-05
+sp|A8WH18|NARFL_XENTR Cytosolic Fe-S cluster assembly factor narf...  37.8    0.004
+
+
+>sp|P07603|PHFS_DESVH Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio vulgaris (strain Hildenborough / ATCC 29579 
+/ DSM 644 / NCIMB 8303) OX=882 GN=hydB PE=1 SV=1
+Length=123
+
+ Score = 158 bits (400),  Expect = 6e-51, Method: Composition-based stats.
+ Identities = 88/88 (100%), Positives = 88/88 (100%), Gaps = 0/88 (0%)
+
+Query  1    VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  60
+            VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK
+Sbjct  36   VKQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDK  95
+
+Query  61   SKGVKELTTAGKLPNPRASEFEGPYPYE  88
+            SKGVKELTTAGKLPNPRASEFEGPYPYE
+Sbjct  96   SKGVKELTTAGKLPNPRASEFEGPYPYE  123
+
+
+>sp|P13628|PHFS_DESOM Periplasmic [Fe] hydrogenase small subunit 
+OS=Desulfovibrio oxamicus (strain Monticello) OX=884 GN=hydB 
+PE=3 SV=1
+Length=124
+
+ Score = 149 bits (376),  Expect = 3e-47, Method: Composition-based stats.
+ Identities = 60/88 (68%), Positives = 70/88 (80%), Gaps = 1/88 (1%)
+
+Query  2    KQIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKS  61
+            KQ+KDYM+DRINGVYGADAKFPVRASQDN QV+ LY  +LEKP+ HK+  LLHTHW D+S
+Sbjct  37   KQLKDYMMDRINGVYGADAKFPVRASQDNVQVQKLYADFLEKPMSHKAEQLLHTHWVDRS  96
+
+Query  62   KGVKELTTAGKLPNPRASEFEG-PYPYE  88
+            K ++ +   G  PNPRA EFEG  YPYE
+Sbjct  97   KAIERMKAQGAYPNPRAKEFEGNTYPYE  124
+
+
+>sp|Q46508|HNDD_DESFR NADP-reducing hydrogenase subunit HndD OS=Desulfovibrio 
+fructosivorans OX=878 GN=hndD PE=1 SV=1
+Length=585
+
+ Score = 89.8 bits (221),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 22/57 (39%), Positives = 34/57 (60%), Gaps = 0/57 (0%)
+
+Query  6    DYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSK  62
+            + +  R   +Y  DA  P+R S +N  +  LY+ +L KPL  +SH LLHTH+F + +
+Sbjct  528  ELLKKRTQVLYAEDAGKPLRKSHENPYIIELYEKFLGKPLSERSHQLLHTHYFKRQR  584
+
+
+>sp|Q9UHQ1|NARF_HUMAN Nuclear prelamin A recognition factor OS=Homo 
+sapiens OX=9606 GN=NARF PE=1 SV=1
+Length=456
+
+ Score = 89.4 bits (220),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 33/60 (55%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++ G+Y   A  PVR  + +  V+ LY+ +LE     K+ ++LHT +  + +G   L
+Sbjct  396  LLRQMEGIY---ADIPVRRPESSAHVQELYQEWLEGINSPKAREVLHTTYQSQERGTHSL  452
+
+
+>sp|Q9CYQ7|NARF_MOUSE Nuclear prelamin A recognition factor OS=Mus 
+musculus OX=10090 GN=Narf PE=2 SV=1
+Length=462
+
+ Score = 77.5 bits (189),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 30/60 (50%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++ G+Y   +  PVR  + +T V+ LY+ +LE     K  ++LHT +         L
+Sbjct  402  LLQQMEGIY---SGIPVRPPESSTHVQELYQEWLEGTESPKVQEVLHTSYQSLEPCTDGL  458
+
+
+>sp|P29166|PHF1_CLOPA Iron hydrogenase 1 OS=Clostridium pasteurianum 
+OX=1501 PE=1 SV=1
+Length=574
+
+ Score = 77.1 bits (188),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 26/49 (53%), Gaps = 0/49 (0%)
+
+Query  11   RINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFD  59
+            R + +Y  D     R S +NT +  +Y++Y  KP   ++H++LH  +  
+Sbjct  526  RASVLYNQDEHLSKRKSHENTALVKMYQNYFGKPGEGRAHEILHFKYKK  574
+
+
+>sp|Q2YDU6|NARF_RAT Nuclear prelamin A recognition factor OS=Rattus 
+norvegicus OX=10116 GN=Narf PE=2 SV=1
+Length=456
+
+ Score = 75.2 bits (183),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 16/60 (27%), Positives = 29/60 (48%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++ G+Y   +  PV   + +T V+ LY+ +LE     K  ++LHT +         L
+Sbjct  396  LLQQMEGIY---SGIPVWPPESSTHVQELYQEWLEGTESPKVQEVLHTSYQSLEPCTDSL  452
+
+
+>sp|Q6DHP6|NARF_DANRE Nuclear prelamin A recognition factor OS=Danio 
+rerio OX=7955 GN=narf PE=2 SV=1
+Length=465
+
+ Score = 54.8 bits (130),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 13/54 (24%), Positives = 27/54 (50%), Gaps = 3/54 (6%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKS  61
+            ++ ++   Y   +  PVR  + N +V+ LY+ +L+      +   LHT + D +
+Sbjct  402  LVQQMEEHY---SSLPVRLPETNPEVQRLYQDWLDGHDSPHAQQSLHTQYKDHT  452
+
+
+>sp|Q6GP25|NARF_XENLA Nuclear prelamin A recognition factor OS=Xenopus 
+laevis OX=8355 GN=narf PE=2 SV=1
+Length=456
+
+ Score = 53.6 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 14/65 (22%), Positives = 31/65 (48%), Gaps = 3/65 (5%)
+
+Query  3    QIKDYMLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSK  62
+            +++  +L  +  VY    + P++  + N  ++ALY+ +L+     K+   LHT     ++
+Sbjct  391  KVERALLHEMEEVY---TRVPIQNPESNPHIQALYEDWLQGAESQKTKQTLHTKIVASAQ  447
+
+Query  63   GVKEL  67
+                L
+Sbjct  448  SAARL  452
+
+
+>sp|A4FV58|CIAO3_BOVIN Cytosolic iron-sulfur assembly component 
+3 OS=Bos taurus OX=9913 GN=CIAO3 PE=2 SV=2
+Length=476
+
+ Score = 49.7 bits (117),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 13/56 (23%), Positives = 26/56 (46%), Gaps = 3/56 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKG  63
+            +L ++  +YG        A +D   ++ LY+ +L+     ++  LLHT +    K 
+Sbjct  416  LLQQVERLYGL---VRTEAPEDAPGIQELYERWLQGAGSERAGRLLHTSYHAVEKA  468
+
+
+>sp|A2RRV9|NARFL_DANRE Cytosolic Fe-S cluster assembly factor 
+narfl OS=Danio rerio OX=7955 GN=narfl PE=2 SV=1
+Length=411
+
+ Score = 49.7 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 19/61 (31%), Positives = 30/61 (49%), Gaps = 3/61 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++  VY       V   +D++QV  LY+S+LE     K+  LLHT +    K    L
+Sbjct  351  LLQQVEEVY-RSEHPSV--PEDDSQVAELYQSWLESVGEEKARQLLHTQYHAVEKTANGL  407
+
+Query  68   T  68
+            +
+Sbjct  408  S  408
+
+
+>sp|Q5BK18|CIAO3_RAT Cytosolic iron-sulfur assembly component 
+3 OS=Rattus norvegicus OX=10116 GN=Ciao3 PE=2 SV=1
+Length=476
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 13/55 (24%), Positives = 25/55 (45%), Gaps = 3/55 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSK  62
+            +L ++  +Y         A +D   V+ LY+ +L+     ++  LLHT +    K
+Sbjct  416  LLQQVERLYSM---VRTEAPEDAPGVQELYQHWLQGEDSERASHLLHTQYHAVEK  467
+
+
+>sp|Q7TMW6|CIAO3_MOUSE Cytosolic iron-sulfur assembly component 
+3 OS=Mus musculus OX=10090 GN=Ciao3 PE=1 SV=2
+Length=476
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 27/61 (44%), Gaps = 3/61 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L ++  +Y         A +D   V+ LY+ +L+     ++  LLHT +    K    L
+Sbjct  416  LLQQLERLYSM---VRTEAPEDAPGVQELYQHWLQGEDSERASRLLHTQYHAVEKPSSGL  472
+
+Query  68   T  68
+            +
+Sbjct  473  S  473
+
+
+>sp|B4MUM8|NARF_DROWI Probable cytosolic Fe-S cluster assembly 
+factor GK14772 OS=Drosophila willistoni OX=7260 GN=GK14772 
+PE=3 SV=1
+Length=477
+
+ Score = 44.4 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/63 (33%), Positives = 33/63 (52%), Gaps = 8/63 (13%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +  ++  +Y    K P+    DN+  KA+Y  +L+     KSHDLLHT +      V++L
+Sbjct  418  LTQQLEELY---KKLPISQP-DNSHTKAIYGDFLDGAHTDKSHDLLHTSY----HAVEKL  469
+
+Query  68   TTA  70
+             TA
+Sbjct  470  NTA  472
+
+
+>sp|Q5RF36|CIAO3_PONAB Cytosolic iron-sulfur assembly component 
+3 OS=Pongo abelii OX=9601 GN=CIAO3 PE=2 SV=1
+Length=476
+
+ Score = 44.4 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 24/60 (40%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L  +  +YG        A +D   V+ LY  +L+      +  LLHT +    K    L
+Sbjct  416  LLQHVERLYGM---VRAEAPEDAPGVQELYTHWLQGTDSECAGRLLHTQYHAVEKASTGL  472
+
+
+>sp|Q9H6Q4|CIAO3_HUMAN Cytosolic iron-sulfur assembly component 
+3 OS=Homo sapiens OX=9606 GN=CIAO3 PE=1 SV=1
+Length=476
+
+ Score = 44.0 bits (102),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 24/60 (40%), Gaps = 3/60 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L  +  +YG        A +D   V+ LY  +L+      +  LLHT +    K    L
+Sbjct  416  LLQHVERLYGM---VRAEAPEDAPGVQELYTHWLQGTDSECAGRLLHTQYHAVEKASTGL  472
+
+
+>sp|B4JBE6|NARF_DROGR Probable cytosolic Fe-S cluster assembly 
+factor GH10760 OS=Drosophila grimshawi OX=7222 GN=GH10760 PE=3 
+SV=1
+Length=476
+
+ Score = 43.6 bits (101),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 30/63 (48%), Gaps = 8/63 (13%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +  ++  +Y      P R++ DNT  K +Y  + +     KS  LLHT +      V++L
+Sbjct  417  LTQQLEELYKQ---LP-RSNPDNTHTKQIYADFFDGTHTDKSAQLLHTSY----HAVEKL  468
+
+Query  68   TTA  70
+             TA
+Sbjct  469  NTA  471
+
+
+>sp|A8WH18|NARFL_XENTR Cytosolic Fe-S cluster assembly factor 
+narfl OS=Xenopus tropicalis OX=8364 GN=narfl PE=2 SV=1
+Length=476
+
+ Score = 37.8 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 15/61 (25%), Positives = 24/61 (39%), Gaps = 3/61 (5%)
+
+Query  8    MLDRINGVYGADAKFPVRASQDNTQVKALYKSYLEKPLGHKSHDLLHTHWFDKSKGVKEL  67
+            +L R+  +Y           ++  +V  LY  +LE     K+   LHT +    K    L
+Sbjct  416  LLQRVEDLYNT---VRTERPEEREEVAQLYGDWLEDKDSAKARQALHTQYHAVEKINSGL  472
+
+Query  68   T  68
+            T
+Sbjct  473  T  473
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.126    0.334    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

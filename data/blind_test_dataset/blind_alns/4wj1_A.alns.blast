@@ -1,0 +1,327 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4wj1_A
+
+Length=286
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|L8FKX3|ESPB_MYCSE ESX-1 secretion-associated protein EspB OS=M...  508     2e-179
+sp|B2HNQ9|ESPB_MYCMM ESX-1 secretion-associated protein EspB OS=M...  82.0    2e-16 
+sp|P9WJD9|ESPB_MYCTU ESX-1 secretion-associated protein EspB OS=M...  71.6    7e-13 
+sp|P9WJD8|ESPB_MYCTO ESX-1 secretion-associated protein EspB OS=M...  71.6    7e-13 
+
+
+>sp|L8FKX3|ESPB_MYCSE ESX-1 secretion-associated protein EspB 
+OS=Mycolicibacterium smegmatis (strain MKD8) OX=1214915 GN=espB 
+PE=3 SV=1
+Length=526
+
+ Score = 508 bits (1307),  Expect = 2e-179, Method: Compositional matrix adjust.
+ Identities = 261/285 (92%), Positives = 270/285 (95%), Gaps = 0/285 (0%)
+
+Query  1    EELQYELPGLERKAHECESTRPEGPGDATKPDELATTASVYSKLXASAAKLKATFAAGDR  60
+            EEL+YELPGLERKAHECESTRPEGPGDATKPDELATTASVY KL ASAAKLKATFAAGDR
+Sbjct  3    EELKYELPGLERKAHECESTRPEGPGDATKPDELATTASVYGKLMASAAKLKATFAAGDR  62
+
+Query  61   EGERIAAAIRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSX  120
+            EG+RIAAAIRAAAGAYQKIEEQKAAEL+RQ NGSDAPPPAAEAVVPD SGIPGPL IPS 
+Sbjct  63   EGKRIAAAIRAAAGAYQKIEEQKAAELNRQMNGSDAPPPAAEAVVPDMSGIPGPLTIPSM  122
+
+Query  121  EYPSAAAAADEXDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWA  180
+            EYPSAAAAADE DWEAAARIIHSGDTQALS KYFRDQWRDYQSTLEGHGRHFANPAEGW+
+Sbjct  123  EYPSAAAAADEMDWEAAARIIHSGDTQALSMKYFRDQWRDYQSTLEGHGRHFANPAEGWS  182
+
+Query  181  GAAAETCAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEW  240
+            GAAAETCAEAQRRLSTWWAD GAECGRLAQEATTFVDAHDKLVANHPT+++V+ FEE EW
+Sbjct  183  GAAAETCAEAQRRLSTWWADMGAECGRLAQEATTFVDAHDKLVANHPTMDDVKAFEEAEW  242
+
+Query  241  ASEWDRQNAWAXLQEQSEDALEAYANGSQIQEIRPGKPPSIGGLP  285
+             SEWDRQ AWA  QE+SEDALEAYANGSQIQEIRPGKPPSIGGLP
+Sbjct  243  ESEWDRQYAWAIKQEKSEDALEAYANGSQIQEIRPGKPPSIGGLP  287
+
+
+>sp|B2HNQ9|ESPB_MYCMM ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium marinum (strain ATCC BAA-535 / M) OX=216594 
+GN=espB PE=1 SV=1
+Length=454
+
+ Score = 82.0 bits (201),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 75/274 (27%), Positives = 114/274 (42%), Gaps = 15/274 (5%)
+
+Query  12   RKAHECESTRPEGPGDATK-PDELATTASVYSKLXASAAKLKATFAAGDREGERIAAAIR  70
+             +A E E+     P D  + P  L    +   +L  SA  ++    AG+RE +R+A ++R
+Sbjct  16   NRADEVEAPMATPPTDVPQAPSGLTAANNAAEQLAVSADNVRLYLQAGERERQRLATSLR  75
+
+Query  71   AAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSXEYPSAAAA--  128
+             AA AY ++E++ A  L    NG      A  A       +         E P  AAA  
+Sbjct  76   NAAAAYGEVEDESATALDNDGNGEVDAQSAGGAGAGQTESL--------EETPKVAAAGE  127
+
+Query  129  ADEXDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAETCA  188
+            +D  D + AA  + SGD Q  S   F D W ++  +L+   + F    E W G AA  C 
+Sbjct  128  SDFTDLKTAATKLESGD-QGTSMVNFADGWNNFNLSLQRDIKRF-RIFENWEGDAATACE  185
+
+Query  189  EAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWDRQ-  247
+             +  +   W          LA++A             HPTL ++ E E      ++  Q 
+Sbjct  186  ASMDQQKEWILHMAKLSASLAKQANFMAQLQLWARRGHPTLADIVELERLAKDPDYQEQA  245
+
+Query  248  -NAWAXLQEQSEDALEAYANGSQIQEIRPGKPPS  280
+               +A  QE SE  L  Y   + ++ + P KPP+
+Sbjct  246  IKLYAEYQETSEKVLSEYNTKADLEPVNPPKPPA  279
+
+
+>sp|P9WJD9|ESPB_MYCTU ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=espB PE=1 SV=1
+Length=460
+
+ Score = 71.6 bits (174),  Expect = 7e-13, Method: Compositional matrix adjust.
+ Identities = 75/293 (26%), Positives = 123/293 (42%), Gaps = 29/293 (10%)
+
+Query  10   LERKAHECESTRPEGPGDA-TKPDELATTASVYSKLXASAAKLKATFAAGDREGERIAAA  68
+            +  +A+E E+   + P D    P EL    +   +L  SA  ++   AAG +E +R+A +
+Sbjct  14   ILNRANEVEAPMADPPTDVPITPCELTAAKNAAQQLVLSADNMREYLAAGAKERQRLATS  73
+
+Query  69   IRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSG-IPGPLAIPSXEYPSAAA  127
+            +R AA AY +++E+ A  L     G+         V  + +G + G  +    + P  A 
+Sbjct  74   LRNAAKAYGEVDEEAATALDNDGEGT---------VQAESAGAVGGDSSAELTDTPRVAT  124
+
+Query  128  AADE--XDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAE  185
+            A +    D + AAR + +GD Q  S  +F D W  +  TL+G  + F    + W G AA 
+Sbjct  125  AGEPNFMDLKEAARKLETGD-QGASLAHFADGWNTFNLTLQGDVKRFRG-FDNWEGDAAT  182
+
+Query  186  TCAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWD  245
+             C  +  +   W          +A++A      H      HPT E++   E     +   
+Sbjct  183  ACEASLDQQRQWILHMAKLSAAMAKQAQYVAQLHVWARREHPTYEDIVGLERLYAENPSA  242
+
+Query  246  RQN---AWAXLQEQSEDALEAYANGSQIQ-----------EIRPGKPPSIGGL  284
+            R      +A  Q++SE  L  Y N + ++           +I P  PP   GL
+Sbjct  243  RDQILPVYAEYQQRSEKVLTEYNNKAALEPVNPPKPPPAIKIDPPPPPQEQGL  295
+
+
+>sp|P9WJD8|ESPB_MYCTO ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=espB PE=3 SV=1
+Length=460
+
+ Score = 71.6 bits (174),  Expect = 7e-13, Method: Compositional matrix adjust.
+ Identities = 75/293 (26%), Positives = 123/293 (42%), Gaps = 29/293 (10%)
+
+Query  10   LERKAHECESTRPEGPGDA-TKPDELATTASVYSKLXASAAKLKATFAAGDREGERIAAA  68
+            +  +A+E E+   + P D    P EL    +   +L  SA  ++   AAG +E +R+A +
+Sbjct  14   ILNRANEVEAPMADPPTDVPITPCELTAAKNAAQQLVLSADNMREYLAAGAKERQRLATS  73
+
+Query  69   IRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSG-IPGPLAIPSXEYPSAAA  127
+            +R AA AY +++E+ A  L     G+         V  + +G + G  +    + P  A 
+Sbjct  74   LRNAAKAYGEVDEEAATALDNDGEGT---------VQAESAGAVGGDSSAELTDTPRVAT  124
+
+Query  128  AADE--XDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAE  185
+            A +    D + AAR + +GD Q  S  +F D W  +  TL+G  + F    + W G AA 
+Sbjct  125  AGEPNFMDLKEAARKLETGD-QGASLAHFADGWNTFNLTLQGDVKRFRG-FDNWEGDAAT  182
+
+Query  186  TCAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWD  245
+             C  +  +   W          +A++A      H      HPT E++   E     +   
+Sbjct  183  ACEASLDQQRQWILHMAKLSAAMAKQAQYVAQLHVWARREHPTYEDIVGLERLYAENPSA  242
+
+Query  246  RQN---AWAXLQEQSEDALEAYANGSQIQ-----------EIRPGKPPSIGGL  284
+            R      +A  Q++SE  L  Y N + ++           +I P  PP   GL
+Sbjct  243  RDQILPVYAEYQQRSEKVLTEYNNKAALEPVNPPKPPPAIKIDPPPPPQEQGL  295
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.126    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23139221768
+Results from round 2
+
+
+Query= 4wj1_A
+
+Length=286
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|L8FKX3|ESPB_MYCSE ESX-1 secretion-associated protein EspB OS=M...  384     1e-130
+sp|P9WJD9|ESPB_MYCTU ESX-1 secretion-associated protein EspB OS=M...  322     2e-107
+sp|P9WJD8|ESPB_MYCTO ESX-1 secretion-associated protein EspB OS=M...  322     2e-107
+sp|B2HNQ9|ESPB_MYCMM ESX-1 secretion-associated protein EspB OS=M...  316     5e-105
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|L8FKX3|ESPB_MYCSE ESX-1 secretion-associated protein EspB 
+OS=Mycolicibacterium smegmatis (strain MKD8) OX=1214915 GN=espB 
+PE=3 SV=1
+Length=526
+
+ Score = 384 bits (985),  Expect = 1e-130, Method: Composition-based stats.
+ Identities = 261/285 (92%), Positives = 270/285 (95%), Gaps = 0/285 (0%)
+
+Query  1    EELQYELPGLERKAHECESTRPEGPGDATKPDELATTASVYSKLXASAAKLKATFAAGDR  60
+            EEL+YELPGLERKAHECESTRPEGPGDATKPDELATTASVY KL ASAAKLKATFAAGDR
+Sbjct  3    EELKYELPGLERKAHECESTRPEGPGDATKPDELATTASVYGKLMASAAKLKATFAAGDR  62
+
+Query  61   EGERIAAAIRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSX  120
+            EG+RIAAAIRAAAGAYQKIEEQKAAEL+RQ NGSDAPPPAAEAVVPD SGIPGPL IPS 
+Sbjct  63   EGKRIAAAIRAAAGAYQKIEEQKAAELNRQMNGSDAPPPAAEAVVPDMSGIPGPLTIPSM  122
+
+Query  121  EYPSAAAAADEXDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWA  180
+            EYPSAAAAADE DWEAAARIIHSGDTQALS KYFRDQWRDYQSTLEGHGRHFANPAEGW+
+Sbjct  123  EYPSAAAAADEMDWEAAARIIHSGDTQALSMKYFRDQWRDYQSTLEGHGRHFANPAEGWS  182
+
+Query  181  GAAAETCAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEW  240
+            GAAAETCAEAQRRLSTWWAD GAECGRLAQEATTFVDAHDKLVANHPT+++V+ FEE EW
+Sbjct  183  GAAAETCAEAQRRLSTWWADMGAECGRLAQEATTFVDAHDKLVANHPTMDDVKAFEEAEW  242
+
+Query  241  ASEWDRQNAWAXLQEQSEDALEAYANGSQIQEIRPGKPPSIGGLP  285
+             SEWDRQ AWA  QE+SEDALEAYANGSQIQEIRPGKPPSIGGLP
+Sbjct  243  ESEWDRQYAWAIKQEKSEDALEAYANGSQIQEIRPGKPPSIGGLP  287
+
+
+>sp|P9WJD9|ESPB_MYCTU ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 
+GN=espB PE=1 SV=1
+Length=460
+
+ Score = 322 bits (824),  Expect = 2e-107, Method: Composition-based stats.
+ Identities = 74/292 (25%), Positives = 120/292 (41%), Gaps = 27/292 (9%)
+
+Query  10   LERKAHECESTRPEGPGDAT-KPDELATTASVYSKLXASAAKLKATFAAGDREGERIAAA  68
+            +  +A+E E+   + P D    P EL    +   +L  SA  ++   AAG +E +R+A +
+Sbjct  14   ILNRANEVEAPMADPPTDVPITPCELTAAKNAAQQLVLSADNMREYLAAGAKERQRLATS  73
+
+Query  69   IRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSXEYPSAAAA  128
+            +R AA AY +++E+ A  L     G+     A          + G  +    + P  A A
+Sbjct  74   LRNAAKAYGEVDEEAATALDNDGEGTVQAESAG--------AVGGDSSAELTDTPRVATA  125
+
+Query  129  ADEX--DWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAET  186
+             +    D + AAR + +GD Q  S  +F D W  +  TL+G  + F    + W G AA  
+Sbjct  126  GEPNFMDLKEAARKLETGD-QGASLAHFADGWNTFNLTLQGDVKRFRG-FDNWEGDAATA  183
+
+Query  187  CAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWDR  246
+            C  +  +   W          +A++A      H      HPT E++   E     +   R
+Sbjct  184  CEASLDQQRQWILHMAKLSAAMAKQAQYVAQLHVWARREHPTYEDIVGLERLYAENPSAR  243
+
+Query  247  QN---AWAXLQEQSEDALEAYANGSQIQ-----------EIRPGKPPSIGGL  284
+                  +A  Q++SE  L  Y N + ++           +I P  PP   GL
+Sbjct  244  DQILPVYAEYQQRSEKVLTEYNNKAALEPVNPPKPPPAIKIDPPPPPQEQGL  295
+
+
+>sp|P9WJD8|ESPB_MYCTO ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 
+GN=espB PE=3 SV=1
+Length=460
+
+ Score = 322 bits (824),  Expect = 2e-107, Method: Composition-based stats.
+ Identities = 74/292 (25%), Positives = 120/292 (41%), Gaps = 27/292 (9%)
+
+Query  10   LERKAHECESTRPEGPGDAT-KPDELATTASVYSKLXASAAKLKATFAAGDREGERIAAA  68
+            +  +A+E E+   + P D    P EL    +   +L  SA  ++   AAG +E +R+A +
+Sbjct  14   ILNRANEVEAPMADPPTDVPITPCELTAAKNAAQQLVLSADNMREYLAAGAKERQRLATS  73
+
+Query  69   IRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSXEYPSAAAA  128
+            +R AA AY +++E+ A  L     G+     A          + G  +    + P  A A
+Sbjct  74   LRNAAKAYGEVDEEAATALDNDGEGTVQAESAG--------AVGGDSSAELTDTPRVATA  125
+
+Query  129  ADEX--DWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAET  186
+             +    D + AAR + +GD Q  S  +F D W  +  TL+G  + F    + W G AA  
+Sbjct  126  GEPNFMDLKEAARKLETGD-QGASLAHFADGWNTFNLTLQGDVKRFRG-FDNWEGDAATA  183
+
+Query  187  CAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWDR  246
+            C  +  +   W          +A++A      H      HPT E++   E     +   R
+Sbjct  184  CEASLDQQRQWILHMAKLSAAMAKQAQYVAQLHVWARREHPTYEDIVGLERLYAENPSAR  243
+
+Query  247  QN---AWAXLQEQSEDALEAYANGSQIQ-----------EIRPGKPPSIGGL  284
+                  +A  Q++SE  L  Y N + ++           +I P  PP   GL
+Sbjct  244  DQILPVYAEYQQRSEKVLTEYNNKAALEPVNPPKPPPAIKIDPPPPPQEQGL  295
+
+
+>sp|B2HNQ9|ESPB_MYCMM ESX-1 secretion-associated protein EspB 
+OS=Mycobacterium marinum (strain ATCC BAA-535 / M) OX=216594 
+GN=espB PE=1 SV=1
+Length=454
+
+ Score = 316 bits (809),  Expect = 5e-105, Method: Composition-based stats.
+ Identities = 75/276 (27%), Positives = 114/276 (41%), Gaps = 15/276 (5%)
+
+Query  10   LERKAHECESTRPEGPGDATK-PDELATTASVYSKLXASAAKLKATFAAGDREGERIAAA  68
+            +  +A E E+     P D  + P  L    +   +L  SA  ++    AG+RE +R+A +
+Sbjct  14   ILNRADEVEAPMATPPTDVPQAPSGLTAANNAAEQLAVSADNVRLYLQAGERERQRLATS  73
+
+Query  69   IRAAAGAYQKIEEQKAAELSRQXNGSDAPPPAAEAVVPDXSGIPGPLAIPSXEYPSAAAA  128
+            +R AA AY ++E++ A  L    NG      A  A       +         E P  AAA
+Sbjct  74   LRNAAAAYGEVEDESATALDNDGNGEVDAQSAGGAGAGQTESL--------EETPKVAAA  125
+
+Query  129  A--DEXDWEAAARIIHSGDTQALSXKYFRDQWRDYQSTLEGHGRHFANPAEGWAGAAAET  186
+               D  D + AA  + SGD Q  S   F D W ++  +L+   + F    E W G AA  
+Sbjct  126  GESDFTDLKTAATKLESGD-QGTSMVNFADGWNNFNLSLQRDIKRFR-IFENWEGDAATA  183
+
+Query  187  CAEAQRRLSTWWADXGAECGRLAQEATTFVDAHDKLVANHPTLENVREFEETEWASEWDR  246
+            C  +  +   W          LA++A             HPTL ++ E E      ++  
+Sbjct  184  CEASMDQQKEWILHMAKLSASLAKQANFMAQLQLWARRGHPTLADIVELERLAKDPDYQE  243
+
+Query  247  Q--NAWAXLQEQSEDALEAYANGSQIQEIRPGKPPS  280
+            Q    +A  QE SE  L  Y   + ++ + P KPP+
+Sbjct  244  QAIKLYAEYQETSEKVLSEYNTKADLEPVNPPKPPA  279
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.119    0.301    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0363    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23139221768
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

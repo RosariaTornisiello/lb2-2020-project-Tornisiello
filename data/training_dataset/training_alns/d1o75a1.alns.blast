@@ -1,0 +1,131 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1o75a1
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Trep...  267     5e-89
+
+
+>sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Treponema 
+pallidum (strain Nichols) OX=243276 GN=TP_0574 PE=1 
+SV=2
+Length=434
+
+ Score = 267 bits (683),  Expect = 5e-89, Method: Compositional matrix adjust.
+ Identities = 126/126 (100%), Positives = 126/126 (100%), Gaps = 0/126 (0%)
+
+Query  1    ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD  60
+            ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD
+Sbjct  226  ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD  285
+
+Query  61   ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV  120
+            ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV
+Sbjct  286  ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV  345
+
+Query  121  ADVRFL  126
+            ADVRFL
+Sbjct  346  ADVRFL  351
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 2
+
+
+Query= d1o75a1
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Trep...  278     3e-93
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Treponema 
+pallidum (strain Nichols) OX=243276 GN=TP_0574 PE=1 
+SV=2
+Length=434
+
+ Score = 278 bits (711),  Expect = 3e-93, Method: Composition-based stats.
+ Identities = 126/126 (100%), Positives = 126/126 (100%), Gaps = 0/126 (0%)
+
+Query  1    ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD  60
+            ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD
+Sbjct  226  ESPHDLVVDTVGTGYHSRFGSDAEASVMLKRADGSELSHREFIDYVMNFNTVRYDYYGDD  285
+
+Query  61   ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV  120
+            ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV
+Sbjct  286  ASYTNLMASYGTKHSADSWWKTGRVPRISCGINYGFDRFKGSGPGYYRLTLIANGYRDVV  345
+
+Query  121  ADVRFL  126
+            ADVRFL
+Sbjct  346  ADVRFL  351
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.145    0.469    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0444    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

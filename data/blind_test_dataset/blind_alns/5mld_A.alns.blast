@@ -1,0 +1,264 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 5mld_A
+
+Length=252
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|K4REZ6|ROSB_STRDJ 8-demethyl-8-aminoriboflavin-5'-phosphate sy...  525     0.0  
+sp|O69443|MNTH_MYCBO Divalent metal cation transporter MntH OS=My...  145     9e-39
+
+
+>sp|K4REZ6|ROSB_STRDJ 8-demethyl-8-aminoriboflavin-5'-phosphate 
+synthase OS=Streptomyces davaonensis (strain DSM 101723 / 
+JCM 4913 / KCC S-0913 / 768) OX=1214101 GN=rosB PE=1 SV=1
+Length=257
+
+ Score = 525 bits (1353),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 252/252 (100%), Positives = 252/252 (100%), Gaps = 0/252 (0%)
+
+Query  1    ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN  60
+            ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN
+Sbjct  2    ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN  61
+
+Query  61   AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP  120
+            AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP
+Sbjct  62   AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP  121
+
+Query  121  LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR  180
+            LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR
+Sbjct  122  LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR  181
+
+Query  181  HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK  240
+            HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK
+Sbjct  182  HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK  241
+
+Query  241  RFQKLGEVKVEE  252
+            RFQKLGEVKVEE
+Sbjct  242  RFQKLGEVKVEE  253
+
+
+>sp|O69443|MNTH_MYCBO Divalent metal cation transporter MntH OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=mntH PE=3 SV=2
+Length=684
+
+ Score = 145 bits (367),  Expect = 9e-39, Method: Compositional matrix adjust.
+ Identities = 77/204 (38%), Positives = 113/204 (55%), Gaps = 7/204 (3%)
+
+Query  2    LKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWNA  61
+            L+AL +N TL+RSP  S T GLI+++  +  + G++ + +R +DHDI    W D      
+Sbjct  18   LRALFINATLKRSPELSHTDGLIERSSGIMREHGVQVDTLRAVDHDIATGVWPDMT----  73
+
+Query  62   GEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFPL  121
+             E     DEWP L  ++ +A ILV+  PI L   +S    ++E+L     L  +  Q+  
+Sbjct  74   -EHGWATDEWPALYRRVLDAHILVLCGPIWLGDNSSVMKRVIERLYACSSLLNEDGQYAY  132
+
+Query  122  YNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIE--GKGD  179
+            Y +  G L+ GNEDG  H A  VL +L  LGY++PP A A W+G AG GP Y++    G 
+Sbjct  133  YGRAGGCLITGNEDGVKHCAMNVLYSLQHLGYTIPPQADAGWIGEAGPGPSYLDPGSGGP  192
+
+Query  180  RHFHTNKLIRFMVANTSHLARMLQ  203
+             +  TN+   FM  N  H+A+ML+
+Sbjct  193  ENDFTNRNTTFMTFNLMHIAQMLR  216
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.135    0.405    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18912115132
+Results from round 2
+
+
+Query= 5mld_A
+
+Length=252
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|K4REZ6|ROSB_STRDJ 8-demethyl-8-aminoriboflavin-5'-phosphate sy...  463     2e-166
+sp|O69443|MNTH_MYCBO Divalent metal cation transporter MntH OS=My...  357     7e-119
+
+Sequences not found previously or not previously below threshold:
+
+sp|O28383|ISF3_ARCFU Iron-sulfur flavoprotein AF_1896 OS=Archaeog...  41.2    0.003
+sp|Q50562|ISF_METTE Iron-sulfur flavoprotein OS=Methanosarcina th...  40.4    0.006
+sp|O28753|ISF2_ARCFU Iron-sulfur flavoprotein AF_1519 OS=Archaeog...  40.0    0.008
+
+
+>sp|K4REZ6|ROSB_STRDJ 8-demethyl-8-aminoriboflavin-5'-phosphate 
+synthase OS=Streptomyces davaonensis (strain DSM 101723 / 
+JCM 4913 / KCC S-0913 / 768) OX=1214101 GN=rosB PE=1 SV=1
+Length=257
+
+ Score = 463 bits (1191),  Expect = 2e-166, Method: Composition-based stats.
+ Identities = 252/252 (100%), Positives = 252/252 (100%), Gaps = 0/252 (0%)
+
+Query  1    ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN  60
+            ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN
+Sbjct  2    ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN  61
+
+Query  61   AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP  120
+            AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP
+Sbjct  62   AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP  121
+
+Query  121  LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR  180
+            LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR
+Sbjct  122  LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIEGKGDR  181
+
+Query  181  HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK  240
+            HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK
+Sbjct  182  HFHTNKLIRFMVANTSHLARMLQETPYTTDLEACAQAAREESDDVFAIRVNVNTPAIRYK  241
+
+Query  241  RFQKLGEVKVEE  252
+            RFQKLGEVKVEE
+Sbjct  242  RFQKLGEVKVEE  253
+
+
+>sp|O69443|MNTH_MYCBO Divalent metal cation transporter MntH OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 
+GN=mntH PE=3 SV=2
+Length=684
+
+ Score = 357 bits (916),  Expect = 7e-119, Method: Composition-based stats.
+ Identities = 77/205 (38%), Positives = 113/205 (55%), Gaps = 7/205 (3%)
+
+Query  1    ALKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWN  60
+             L+AL +N TL+RSP  S T GLI+++  +  + G++ + +R +DHDI    W D     
+Sbjct  17   GLRALFINATLKRSPELSHTDGLIERSSGIMREHGVQVDTLRAVDHDIATGVWPDMT---  73
+
+Query  61   AGEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFP  120
+              E     DEWP L  ++ +A ILV+  PI L   +S    ++E+L     L  +  Q+ 
+Sbjct  74   --EHGWATDEWPALYRRVLDAHILVLCGPIWLGDNSSVMKRVIERLYACSSLLNEDGQYA  131
+
+Query  121  LYNKVAGLLMCGNEDGAHHVAGTVLNNLGRLGYSVPPNAAAYWLGPAGTGPGYIE--GKG  178
+             Y +  G L+ GNEDG  H A  VL +L  LGY++PP A A W+G AG GP Y++    G
+Sbjct  132  YYGRAGGCLITGNEDGVKHCAMNVLYSLQHLGYTIPPQADAGWIGEAGPGPSYLDPGSGG  191
+
+Query  179  DRHFHTNKLIRFMVANTSHLARMLQ  203
+              +  TN+   FM  N  H+A+ML+
+Sbjct  192  PENDFTNRNTTFMTFNLMHIAQMLR  216
+
+
+>sp|O28383|ISF3_ARCFU Iron-sulfur flavoprotein AF_1896 OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=AF_1896 PE=1 SV=1
+Length=201
+
+ Score = 41.2 bits (95),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 35/152 (23%), Positives = 72/152 (47%), Gaps = 15/152 (10%)
+
+Query  2    LKALILNTTLRRSPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWNA  61
+            +K L +N     SP++  T  L++      +K G E E++ + D++I++      D    
+Sbjct  1    MKLLAING----SPNKRNTLFLLEVIAEEVKKLGHEAEIIHLKDYEIKE--CKGCDACLK  54
+
+Query  62   GEKARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFPL  121
+            G+ ++++D +  +LEK++EAD +VI TP      T     ++++             + L
+Sbjct  55   GDCSQKDDIYK-VLEKMQEADAIVIGTPTYFGNVTGIVKNLIDR-----SRMARMGNYRL  108
+
+Query  122  YNKVAGLLMCG--NEDGAHHVAGT-VLNNLGR  150
+             N+V   ++       GA + A + ++  LG+
+Sbjct  109  RNRVFAPVVTSGLRNGGAEYAAMSLIVYALGQ  140
+
+
+>sp|Q50562|ISF_METTE Iron-sulfur flavoprotein OS=Methanosarcina 
+thermophila OX=2210 GN=isf PE=1 SV=2
+Length=191
+
+ Score = 40.4 bits (93),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 29/149 (19%), Positives = 63/149 (42%), Gaps = 17/149 (11%)
+
+Query  9    TTLRRSPSRSQT-QGLIDKAVPLYEKEGIETEVVRVIDHDIEQ----EYWDDYDDWNAGE  63
+            T +  SP + Q  + +I  A+ + ++ G ET+ V + + ++          D D      
+Sbjct  4    TGISGSPRKGQNCEKIIGAALEVAKERGFETDTVFISNEEVAPCKACGACRDQDFCVI--  61
+
+Query  64   KARREDEWPWLLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFPLYN  123
+                +D+   + EK+R AD +++A P+ +    +    + ++      +    K F L N
+Sbjct  62   ----DDDMDEIYEKMRAADGIIVAAPVYMGNYPAQLKALFDR-----SVLLRRKNFALKN  112
+
+Query  124  KVAGLL-MCGNEDGAHHVAGTVLNNLGRL  151
+            KV   L + G+ +G        +++   +
+Sbjct  113  KVGAALSVGGSRNGGQEKTIQSIHDWMHI  141
+
+
+>sp|O28753|ISF2_ARCFU Iron-sulfur flavoprotein AF_1519 OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 
+9628 / NBRC 100126) OX=224325 GN=AF_1519 PE=3 SV=1
+Length=195
+
+ Score = 40.0 bits (92),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 31/144 (22%), Positives = 61/144 (42%), Gaps = 7/144 (5%)
+
+Query  14   SPSRSQTQGLIDKAVPLYEKEGIETEVVRVIDHDIEQEYWDDYDDWNAGEKARREDEWPW  73
+            SP R  T+ ++ +A+ + E+ G ET+   V    I      DY      ++ R +D+   
+Sbjct  8    SPRRKATEFVLGEALKMLEERGFETKFFTVRGKKISPCQHCDY--CLKHKECRIKDDMFE  65
+
+Query  74   LLEKIREADILVIATPITLNMCTSAAHVILEKLNLMDELNGDTKQFPLYNKVA-GLLMCG  132
+            L E +++A  +V+ATP+     ++    ++++      L      F    KV   + + G
+Sbjct  66   LYEMLKDAKGIVMATPVYNGGVSAQIKAVMDR---CRALVAADYDF-FRGKVGMAIAVGG  121
+
+Query  133  NEDGAHHVAGTVLNNLGRLGYSVP  156
+            +  G   +A   +     L   +P
+Sbjct  122  DRIGGQELAIQQILTFYILNGVIP  145
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.136    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0418    0.140     1.90     42.6     43.6 
+
+Effective search space used: 18912115132
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

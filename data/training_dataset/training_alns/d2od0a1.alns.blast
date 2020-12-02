@@ -1,0 +1,229 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2od0a1
+
+Length=103
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q5E4H8|TFOY_ALIF1 DNA transformation protein TfoX2 OS=Aliivibr...  134     6e-40
+sp|P75869|SXY_ECOLI Protein Sxy OS=Escherichia coli (strain K12) ...  65.1    4e-13
+sp|Q5E6F5|TFOX_ALIF1 DNA transformation protein TfoX1 OS=Aliivibr...  59.3    6e-11
+sp|P43779|TFOX_HAEIN DNA transformation protein TfoX OS=Haemophil...  43.9    4e-05
+
+
+>sp|Q5E4H8|TFOY_ALIF1 DNA transformation protein TfoX2 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=tfoX2 
+PE=3 SV=1
+Length=195
+
+ Score = 134 bits (336),  Expect = 6e-40, Method: Compositional matrix adjust.
+ Identities = 61/102 (60%), Positives = 80/102 (78%), Gaps = 0/102 (0%)
+
+Query  1    KPILKDSMKLFEALGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGL  60
+            KP+LKDS++L  +LG I SRSMFGGFG+F D+TMFALVV ++LH+RA  +T + F+ QG 
+Sbjct  3    KPVLKDSLRLLSSLGKITSRSMFGGFGIFIDDTMFALVVQDKLHLRASDETINLFKEQGF  62
+
+Query  61   KPYVYKKRGFPVVTKYYAISSELWESSDRLIEVAKKSLENAK  102
+            +PYVYKKRGFPVVTKY+AIS E W+  D ++  A  +L+ AK
+Sbjct  63   EPYVYKKRGFPVVTKYFAISPECWDEPDSILIQAVVALDVAK  104
+
+
+>sp|P75869|SXY_ECOLI Protein Sxy OS=Escherichia coli (strain K12) 
+OX=83333 GN=sxy PE=1 SV=1
+Length=209
+
+ Score = 65.1 bits (157),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 33/95 (35%), Positives = 54/95 (57%), Gaps = 0/95 (0%)
+
+Query  7    SMKLFEALGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYK  66
+            S +    LGTI+ RS+FG + L  D+T+FA+V + +L++RA +Q++            YK
+Sbjct  12   SQEYLATLGTIEYRSLFGSYSLTVDDTVFAMVSDGELYLRACEQSAQYCVKHPPVWLTYK  71
+
+Query  67   KRGFPVVTKYYAISSELWESSDRLIEVAKKSLENA  101
+            K G  V   YY +   LW +  +L+ ++K SL+ A
+Sbjct  72   KCGRSVTLNYYRVDESLWRNQLKLVRLSKYSLDAA  106
+
+
+>sp|Q5E6F5|TFOX_ALIF1 DNA transformation protein TfoX1 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=tfoX1 
+PE=2 SV=1
+Length=209
+
+ Score = 59.3 bits (142),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 26/90 (29%), Positives = 51/90 (57%), Gaps = 0/90 (0%)
+
+Query  14   LGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYKKRGFPVV  73
+            LG    RSMFGG GLF ++ MF+LV + +L++R   +  + FE  G + + + K+     
+Sbjct  30   LGRFNKRSMFGGVGLFNEDAMFSLVTDGRLYVRGGGEVDARFEELGCERFKHVKKTTIAT  89
+
+Query  74   TKYYAISSELWESSDRLIEVAKKSLENAKL  103
+              Y+ ++    +    L+ + ++++EN++L
+Sbjct  90   VNYFDVTELFEKKPASLLSIVQEAMENSRL  119
+
+
+>sp|P43779|TFOX_HAEIN DNA transformation protein TfoX OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=tfoX PE=2 SV=1
+Length=217
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 23/80 (29%), Positives = 47/80 (59%), Gaps = 2/80 (3%)
+
+Query  10  LFEALGTIKSRSMFGGFGLF-ADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYKKR  68
+           L + +G +  +++F G+GLF  +ETMFA+  N +L++R +   +      G +P+   + 
+Sbjct  15  LDQLVGNVSFKNLFTGYGLFHKEETMFAIWQNKKLYLRGEGVLAIQLTKLGCEPFTTNEL  74
+
+Query  69  GFP-VVTKYYAISSELWESS  87
+               V+++YYA+S ++  S+
+Sbjct  75  NKRFVLSQYYALSDQILRSN  94
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5029972022
+Results from round 2
+
+
+Query= d2od0a1
+
+Length=103
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5E4H8|TFOY_ALIF1 DNA transformation protein TfoX2 OS=Aliivibr...  149     4e-46
+sp|P75869|SXY_ECOLI Protein Sxy OS=Escherichia coli (strain K12) ...  132     3e-39
+sp|Q5E6F5|TFOX_ALIF1 DNA transformation protein TfoX1 OS=Aliivibr...  123     2e-35
+sp|P43779|TFOX_HAEIN DNA transformation protein TfoX OS=Haemophil...  99.0    5e-26
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q5E4H8|TFOY_ALIF1 DNA transformation protein TfoX2 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=tfoX2 
+PE=3 SV=1
+Length=195
+
+ Score = 149 bits (377),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 61/102 (60%), Positives = 80/102 (78%), Gaps = 0/102 (0%)
+
+Query  1    KPILKDSMKLFEALGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGL  60
+            KP+LKDS++L  +LG I SRSMFGGFG+F D+TMFALVV ++LH+RA  +T + F+ QG 
+Sbjct  3    KPVLKDSLRLLSSLGKITSRSMFGGFGIFIDDTMFALVVQDKLHLRASDETINLFKEQGF  62
+
+Query  61   KPYVYKKRGFPVVTKYYAISSELWESSDRLIEVAKKSLENAK  102
+            +PYVYKKRGFPVVTKY+AIS E W+  D ++  A  +L+ AK
+Sbjct  63   EPYVYKKRGFPVVTKYFAISPECWDEPDSILIQAVVALDVAK  104
+
+
+>sp|P75869|SXY_ECOLI Protein Sxy OS=Escherichia coli (strain K12) 
+OX=83333 GN=sxy PE=1 SV=1
+Length=209
+
+ Score = 132 bits (333),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 33/95 (35%), Positives = 54/95 (57%), Gaps = 0/95 (0%)
+
+Query  7    SMKLFEALGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYK  66
+            S +    LGTI+ RS+FG + L  D+T+FA+V + +L++RA +Q++            YK
+Sbjct  12   SQEYLATLGTIEYRSLFGSYSLTVDDTVFAMVSDGELYLRACEQSAQYCVKHPPVWLTYK  71
+
+Query  67   KRGFPVVTKYYAISSELWESSDRLIEVAKKSLENA  101
+            K G  V   YY +   LW +  +L+ ++K SL+ A
+Sbjct  72   KCGRSVTLNYYRVDESLWRNQLKLVRLSKYSLDAA  106
+
+
+>sp|Q5E6F5|TFOX_ALIF1 DNA transformation protein TfoX1 OS=Aliivibrio 
+fischeri (strain ATCC 700601 / ES114) OX=312309 GN=tfoX1 
+PE=2 SV=1
+Length=209
+
+ Score = 123 bits (308),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 52/94 (55%), Gaps = 0/94 (0%)
+
+Query  10   LFEALGTIKSRSMFGGFGLFADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYKKRG  69
+              + LG    RSMFGG GLF ++ MF+LV + +L++R   +  + FE  G + + + K+ 
+Sbjct  26   FVKKLGRFNKRSMFGGVGLFNEDAMFSLVTDGRLYVRGGGEVDARFEELGCERFKHVKKT  85
+
+Query  70   FPVVTKYYAISSELWESSDRLIEVAKKSLENAKL  103
+                  Y+ ++    +    L+ + ++++EN++L
+Sbjct  86   TIATVNYFDVTELFEKKPASLLSIVQEAMENSRL  119
+
+
+>sp|P43779|TFOX_HAEIN DNA transformation protein TfoX OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=tfoX PE=2 SV=1
+Length=217
+
+ Score = 99.0 bits (245),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 28/99 (28%), Positives = 56/99 (57%), Gaps = 5/99 (5%)
+
+Query  10   LFEALGTIKSRSMFGGFGLF-ADETMFALVVNNQLHIRADQQTSSDFETQGLKPYVYKKR  68
+            L + +G +  +++F G+GLF  +ETMFA+  N +L++R +   +      G +P+   + 
+Sbjct  15   LDQLVGNVSFKNLFTGYGLFHKEETMFAIWQNKKLYLRGEGVLAIQLTKLGCEPFTTNEL  74
+
+Query  69   GFP-VVTKYYAISSELWESS---DRLIEVAKKSLENAKL  103
+                V+++YYA+S ++  S+    +LI ++ K +   KL
+Sbjct  75   NKRFVLSQYYALSDQILRSNRLCRKLIILSIKQILEQKL  113
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.135    0.333    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0413    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5029972022
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

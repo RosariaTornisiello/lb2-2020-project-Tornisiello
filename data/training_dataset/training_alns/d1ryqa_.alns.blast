@@ -1,0 +1,156 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ryqa_
+
+Length=62
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8U440|SPT4_PYRFU Transcription elongation factor Spt4 OS=Pyro...  122     7e-38
+sp|Q57839|SPT4_METJA Transcription elongation factor Spt4 OS=Meth...  59.7    7e-13
+
+
+>sp|Q8U440|SPT4_PYRFU Transcription elongation factor Spt4 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 
+/ Vc1) OX=186497 GN=spt4 PE=1 SV=1
+Length=61
+
+ Score = 122 bits (306),  Expect = 7e-38, Method: Compositional matrix adjust.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  4   EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  62
+           EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR
+Sbjct  3   EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  61
+
+
+>sp|Q57839|SPT4_METJA Transcription elongation factor Spt4 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=spt4 PE=1 SV=1
+Length=59
+
+ Score = 59.7 bits (143),  Expect = 7e-13, Method: Compositional matrix adjust.
+ Identities = 27/58 (47%), Positives = 40/58 (69%), Gaps = 1/58 (2%)
+
+Query  5   KACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  62
+           +AC  C Y+T+++ CP+C S   SE W  L+I+++ E SEIAKK G  + GKYA+ V+
+Sbjct  2   RACLKCKYLTNDEICPICHSPT-SENWIGLLIVINPEKSEIAKKAGIDIKGKYALSVK  58
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.138    0.452    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5142319784
+Results from round 2
+
+
+Query= d1ryqa_
+
+Length=62
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8U440|SPT4_PYRFU Transcription elongation factor Spt4 OS=Pyro...  97.7    5e-28
+sp|Q57839|SPT4_METJA Transcription elongation factor Spt4 OS=Meth...  89.3    1e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|A5WG77|RECR_PSYWF Recombination protein RecR OS=Psychrobacter ...  35.7    0.006
+
+
+>sp|Q8U440|SPT4_PYRFU Transcription elongation factor Spt4 OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 
+/ Vc1) OX=186497 GN=spt4 PE=1 SV=1
+Length=61
+
+ Score = 97.7 bits (242),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  4   EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  62
+           EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR
+Sbjct  3   EKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  61
+
+
+>sp|Q57839|SPT4_METJA Transcription elongation factor Spt4 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 
+/ JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=spt4 PE=1 SV=1
+Length=59
+
+ Score = 89.3 bits (220),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 40/58 (69%), Gaps = 1/58 (2%)
+
+Query  5   KACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKYAIRVR  62
+           +AC  C Y+T+++ CP+C S   SE W  L+I+++ E SEIAKK G  + GKYA+ V+
+Sbjct  2   RACLKCKYLTNDEICPICHSPT-SENWIGLLIVINPEKSEIAKKAGIDIKGKYALSVK  58
+
+
+>sp|A5WG77|RECR_PSYWF Recombination protein RecR OS=Psychrobacter 
+sp. (strain PRwf-1) OX=349106 GN=recR PE=3 SV=1
+Length=195
+
+ Score = 35.7 bits (81),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 14/56 (25%), Positives = 25/56 (45%), Gaps = 3/56 (5%)
+
+Query  2    HHEKACRHCHYITSEDRCPVCGSRDLSEEWFDLVIIVDVENSEIAKKIGAKVPGKY  57
+            H    CR CH  + +D CP+C      +    ++ +V+     +A +  A   G+Y
+Sbjct  51   HEIIECRQCHSFSDDDICPICVDPRRDDS---VLCVVETAADVMAIEQAAGYRGRY  103
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.138    0.453    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5142319784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

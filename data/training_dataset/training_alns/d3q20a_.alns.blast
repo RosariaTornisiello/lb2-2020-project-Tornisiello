@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3q20a_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8L9X2|RBCX2_ARATH Chaperonin-like RbcX protein 2, chloroplast...  60.1    6e-11
+sp|Q94AU9|RBCX1_ARATH Chaperonin-like RBCX protein 1, chloroplast...  44.3    3e-05
+
+
+>sp|Q8L9X2|RBCX2_ARATH Chaperonin-like RbcX protein 2, chloroplastic 
+OS=Arabidopsis thaliana OX=3702 GN=RBCX2 PE=1 SV=1
+Length=203
+
+ Score = 60.1 bits (144),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 27/67 (40%), Positives = 41/67 (61%), Gaps = 0/67 (0%)
+
+Query  12   KTLISYLTYQAVRTVIGQLAETDPPRSLWLHQFTSQESIQDGERYLEALFREQPDLGFRI  71
+            K +++Y TY+AVRTV+ QL E +PP+  W +         DG+R+L AL +E  +L  R+
+Sbjct  94   KQIVNYFTYKAVRTVLHQLYEMNPPQYTWFYNHIITNRPTDGKRFLRALGKESQELAERV  153
+
+Query  72   LTVREHL  78
+            +  R HL
+Sbjct  154  MITRLHL  160
+
+
+>sp|Q94AU9|RBCX1_ARATH Chaperonin-like RBCX protein 1, chloroplastic 
+OS=Arabidopsis thaliana OX=3702 GN=RBCX1 PE=1 SV=1
+Length=174
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 24/70 (34%), Positives = 34/70 (49%), Gaps = 3/70 (4%)
+
+Query  9    QTTKTLISYLTYQAVRTVIGQLAETDPPRSLWLHQFTSQESIQDGERYLEALFREQP---  65
+            +  K L  + TY AVR V  QL   +P   + L +F    S+ DG+++   L R      
+Sbjct  60   KAAKHLHDFFTYVAVRIVSAQLESYNPEAYMELREFLDTNSVSDGDKFCATLMRRSSRHM  119
+
+Query  66   DLGFRILTVR  75
+            +L  RIL VR
+Sbjct  120  NLALRILEVR  129
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.131    0.364    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+Results from round 2
+
+
+Query= d3q20a_
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q8L9X2|RBCX2_ARATH Chaperonin-like RbcX protein 2, chloroplast...  112     2e-31
+sp|Q94AU9|RBCX1_ARATH Chaperonin-like RBCX protein 1, chloroplast...  95.5    6e-25
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q8L9X2|RBCX2_ARATH Chaperonin-like RbcX protein 2, chloroplastic 
+OS=Arabidopsis thaliana OX=3702 GN=RBCX2 PE=1 SV=1
+Length=203
+
+ Score = 112 bits (281),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 27/67 (40%), Positives = 41/67 (61%), Gaps = 0/67 (0%)
+
+Query  12   KTLISYLTYQAVRTVIGQLAETDPPRSLWLHQFTSQESIQDGERYLEALFREQPDLGFRI  71
+            K +++Y TY+AVRTV+ QL E +PP+  W +         DG+R+L AL +E  +L  R+
+Sbjct  94   KQIVNYFTYKAVRTVLHQLYEMNPPQYTWFYNHIITNRPTDGKRFLRALGKESQELAERV  153
+
+Query  72   LTVREHL  78
+            +  R HL
+Sbjct  154  MITRLHL  160
+
+
+>sp|Q94AU9|RBCX1_ARATH Chaperonin-like RBCX protein 1, chloroplastic 
+OS=Arabidopsis thaliana OX=3702 GN=RBCX1 PE=1 SV=1
+Length=174
+
+ Score = 95.5 bits (236),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 24/70 (34%), Positives = 34/70 (49%), Gaps = 3/70 (4%)
+
+Query  9    QTTKTLISYLTYQAVRTVIGQLAETDPPRSLWLHQFTSQESIQDGERYLEALFREQP---  65
+            +  K L  + TY AVR V  QL   +P   + L +F    S+ DG+++   L R      
+Sbjct  60   KAAKHLHDFFTYVAVRIVSAQLESYNPEAYMELREFLDTNSVSDGDKFCATLMRRSSRHM  119
+
+Query  66   DLGFRILTVR  75
+            +L  RIL VR
+Sbjct  120  NLALRILEVR  129
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5012042944
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

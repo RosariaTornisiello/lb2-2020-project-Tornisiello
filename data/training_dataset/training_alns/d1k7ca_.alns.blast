@@ -1,0 +1,479 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1k7ca_
+
+Length=233
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergi...  473     1e-170
+sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emerice...  321     5e-111
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  91.7    2e-21 
+sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT OS=B...  62.8    1e-10 
+
+
+>sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergillus 
+aculeatus OX=5053 GN=rha1 PE=1 SV=1
+Length=250
+
+ Score = 473 bits (1216),  Expect = 1e-170, Method: Compositional matrix adjust.
+ Identities = 233/233 (100%), Positives = 233/233 (100%), Gaps = 0/233 (0%)
+
+Query  1    TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  60
+            TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV
+Sbjct  18   TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  77
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL
+Sbjct  78   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  137
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  180
+            FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL
+Sbjct  138  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  197
+
+Query  181  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+            GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL
+Sbjct  198  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  250
+
+
+>sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / 
+NRRL 194 / M139) OX=227321 GN=AN2528 PE=1 SV=1
+Length=245
+
+ Score = 321 bits (823),  Expect = 5e-111, Method: Compositional matrix adjust.
+ Identities = 154/232 (66%), Positives = 184/232 (79%), Gaps = 5/232 (2%)
+
+Query  2    TVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADVV  61
+            T+YLAGDSTMA     S T GWG+Y+A  +S  + N A+ GRSARSYTREGRF+ IADV+
+Sbjct  19   TIYLAGDSTMA-----SSTPGWGDYIADSVSVEISNQAIGGRSARSYTREGRFQAIADVL  73
+
+Query  62   TAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKLF  121
+             AGDYV++EFGHNDGGSLS DNGRTDC G G E C +VY+GV ET+LTFPAY+ENAA LF
+Sbjct  74   QAGDYVVIEFGHNDGGSLSNDNGRTDCPGDGDETCETVYNGVAETVLTFPAYIENAALLF  133
+
+Query  122  TAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETLG  181
+              KGA V++SSQTPNNPWE+GTF  +P RFV YAELAA+ AGV+YVDH +Y  SI+E LG
+Sbjct  134  LEKGANVLISSQTPNNPWESGTFSYTPNRFVGYAELAAQRAGVDYVDHGAYTASIFEALG  193
+
+Query  182  NATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+              TVNS++P DHTHT+  G+ VVA+AFLKAVVC+G +L  VLT T F+G CL
+Sbjct  194  ADTVNSFYPNDHTHTNAEGSSVVADAFLKAVVCSGVALNDVLTRTDFDGECL  245
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 91.7 bits (226),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 64/225 (28%), Positives = 100/225 (44%), Gaps = 28/225 (12%)
+
+Query  3    VYLAGDSTMAKNGGGSGTNGWGEYLASYLSA--TVVNDAVAGRSARSYTREGRFENIADV  60
+            +YLAGDST+   G  +   GWG++L S+L     V+N A+ GRS++++  EGR + I DV
+Sbjct  5    IYLAGDSTVQTYGDSTNQGGWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAILDV  64
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            +   D++ V+ GHND      +                      E   T+  YL+     
+Sbjct  65   IEPDDWLFVQMGHNDASKNKPER-------------------YTEPYTTYKQYLKQYIAG  105
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNS-PTRFVEYAELAAEVAGVEYVDHWSYVDSIYET  179
+               KGA  +L +      +E G F+N  P   +   + AAE   V+ +D      + +  
+Sbjct  106  AREKGAHPLLITPVARFHYENGVFLNDFPDYCIAMKQTAAE-ENVQLIDLMEKSLAFFTE  164
+
+Query  180  LGNATVNSYFPI-----DHTHTSPAGAEVVAEAFLKAVVCTGTSL  219
+             G   V +YF I     D+TH +  GA  +A+   K +   G  L
+Sbjct  165  KGEEKVYTYFMISEGINDYTHFTKKGANEMAKLVAKGIKELGLPL  209
+
+
+>sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=rhgT PE=1 SV=1
+Length=232
+
+ Score = 62.8 bits (151),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 63/242 (26%), Positives = 95/242 (39%), Gaps = 41/242 (17%)
+
+Query  2    TVYLAGDSTMAK-NGGGSGTNGWGEYLASYLSATVV--NDAVAGRSARSYTREGRFENIA  58
+             V+LAGDST++      +   GWG+      S  V+  N A  G S  S+  EGR + IA
+Sbjct  7    QVFLAGDSTVSDCPPHEAPMAGWGQVFGQLFSEGVLVRNHAKGGASTNSFVEEGRLQAIA  66
+
+Query  59   DVVTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAA  118
+            + +T GDY++++FGHND     T               YS          TF  +L   A
+Sbjct  67   EHITQGDYLLIQFGHNDQKPRGTK-------------PYS----------TFQQFLTLFA  103
+
+Query  119  KLFTAKGAKVILSSQTPNNPW-ETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIY  177
+                 KGA  +  +      + E G   ++   + +  +  A+   V  +D  +    +Y
+Sbjct  104  DTAREKGAHPVFVTSVQRRRFDENGRIEHTLGEYPDAMKALAKELDVPVIDLLAKTKVLY  163
+
+Query  178  ETLGNATVNSYF----PIDH----------THTSPAGAEVVAEAFLKAVVCTGTSLKSVL  223
+            E  G       F    P +H          TH S  GA  VA+   + +   G  LK  L
+Sbjct  164  EAYGPEESKRLFVWFQPNEHPNYPDGIEDNTHFSEKGAMEVAKLVAEGIEELGLPLKDHL  223
+
+Query  224  TT  225
+             +
+Sbjct  224  VS  225
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16494318442
+Results from round 2
+
+
+Query= d1k7ca_
+
+Length=233
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emerice...  342     4e-119
+sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergi...  329     7e-114
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  277     5e-94 
+sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT OS=B...  268     4e-90 
+
+Sequences not found previously or not previously below threshold:
+
+sp|P42304|YXIM_BACSU Uncharacterized esterase YxiM OS=Bacillus su...  101     8e-24
+
+
+>sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / 
+NRRL 194 / M139) OX=227321 GN=AN2528 PE=1 SV=1
+Length=245
+
+ Score = 342 bits (876),  Expect = 4e-119, Method: Composition-based stats.
+ Identities = 154/232 (66%), Positives = 184/232 (79%), Gaps = 5/232 (2%)
+
+Query  2    TVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADVV  61
+            T+YLAGDSTMA     S T GWG+Y+A  +S  + N A+ GRSARSYTREGRF+ IADV+
+Sbjct  19   TIYLAGDSTMA-----SSTPGWGDYIADSVSVEISNQAIGGRSARSYTREGRFQAIADVL  73
+
+Query  62   TAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKLF  121
+             AGDYV++EFGHNDGGSLS DNGRTDC G G E C +VY+GV ET+LTFPAY+ENAA LF
+Sbjct  74   QAGDYVVIEFGHNDGGSLSNDNGRTDCPGDGDETCETVYNGVAETVLTFPAYIENAALLF  133
+
+Query  122  TAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETLG  181
+              KGA V++SSQTPNNPWE+GTF  +P RFV YAELAA+ AGV+YVDH +Y  SI+E LG
+Sbjct  134  LEKGANVLISSQTPNNPWESGTFSYTPNRFVGYAELAAQRAGVDYVDHGAYTASIFEALG  193
+
+Query  182  NATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+              TVNS++P DHTHT+  G+ VVA+AFLKAVVC+G +L  VLT T F+G CL
+Sbjct  194  ADTVNSFYPNDHTHTNAEGSSVVADAFLKAVVCSGVALNDVLTRTDFDGECL  245
+
+
+>sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergillus 
+aculeatus OX=5053 GN=rha1 PE=1 SV=1
+Length=250
+
+ Score = 329 bits (842),  Expect = 7e-114, Method: Composition-based stats.
+ Identities = 233/233 (100%), Positives = 233/233 (100%), Gaps = 0/233 (0%)
+
+Query  1    TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  60
+            TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV
+Sbjct  18   TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  77
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL
+Sbjct  78   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  137
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  180
+            FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL
+Sbjct  138  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  197
+
+Query  181  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+            GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL
+Sbjct  198  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  250
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 277 bits (709),  Expect = 5e-94, Method: Composition-based stats.
+ Identities = 63/231 (27%), Positives = 100/231 (43%), Gaps = 28/231 (12%)
+
+Query  3    VYLAGDSTMAKNGGGSGTNGWGEYLASYLSA--TVVNDAVAGRSARSYTREGRFENIADV  60
+            +YLAGDST+   G  +   GWG++L S+L     V+N A+ GRS++++  EGR + I DV
+Sbjct  5    IYLAGDSTVQTYGDSTNQGGWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAILDV  64
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            +   D++ V+ GHND      +                      E   T+  YL+     
+Sbjct  65   IEPDDWLFVQMGHNDASKNKPER-------------------YTEPYTTYKQYLKQYIAG  105
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNS-PTRFVEYAELAAEVAGVEYVDHWSYVDSIYET  179
+               KGA  +L +      +E G F+N  P   +   + AAE   V+ +D      + +  
+Sbjct  106  AREKGAHPLLITPVARFHYENGVFLNDFPDYCIAMKQTAAEE-NVQLIDLMEKSLAFFTE  164
+
+Query  180  LGNATVNSYFP-----IDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTT  225
+             G   V +YF       D+TH +  GA  +A+   K +   G  L   +  
+Sbjct  165  KGEEKVYTYFMISEGINDYTHFTKKGANEMAKLVAKGIKELGLPLTESIIK  215
+
+
+>sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=rhgT PE=1 SV=1
+Length=232
+
+ Score = 268 bits (684),  Expect = 4e-90, Method: Composition-based stats.
+ Identities = 61/242 (25%), Positives = 93/242 (38%), Gaps = 41/242 (17%)
+
+Query  2    TVYLAGDSTMAK-NGGGSGTNGWGEYLASYLSATVV--NDAVAGRSARSYTREGRFENIA  58
+             V+LAGDST++      +   GWG+      S  V+  N A  G S  S+  EGR + IA
+Sbjct  7    QVFLAGDSTVSDCPPHEAPMAGWGQVFGQLFSEGVLVRNHAKGGASTNSFVEEGRLQAIA  66
+
+Query  59   DVVTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAA  118
+            + +T GDY++++FGHND     T                           TF  +L   A
+Sbjct  67   EHITQGDYLLIQFGHNDQKPRGTK-----------------------PYSTFQQFLTLFA  103
+
+Query  119  KLFTAKGAKVILSSQTPNNPW-ETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIY  177
+                 KGA  +  +      + E G   ++   + +  +  A+   V  +D  +    +Y
+Sbjct  104  DTAREKGAHPVFVTSVQRRRFDENGRIEHTLGEYPDAMKALAKELDVPVIDLLAKTKVLY  163
+
+Query  178  ETLGNATVNSYF----PIDH----------THTSPAGAEVVAEAFLKAVVCTGTSLKSVL  223
+            E  G       F    P +H          TH S  GA  VA+   + +   G  LK  L
+Sbjct  164  EAYGPEESKRLFVWFQPNEHPNYPDGIEDNTHFSEKGAMEVAKLVAEGIEELGLPLKDHL  223
+
+Query  224  TT  225
+             +
+Sbjct  224  VS  225
+
+
+>sp|P42304|YXIM_BACSU Uncharacterized esterase YxiM OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yxiM PE=1 SV=2
+Length=382
+
+ Score = 101 bits (250),  Expect = 8e-24, Method: Composition-based stats.
+ Identities = 52/225 (23%), Positives = 88/225 (39%), Gaps = 31/225 (14%)
+
+Query  2    TVYLAGDSTMAK--NGGGSGTNGWGEYLASYLSA---TVVNDAVAGRSARSYTREGRFEN  56
+            T+Y+ GDST+        S   GWG+ L  Y+      V N A  G+ AR +  +G+ E 
+Sbjct  179  TIYVGGDSTVCNYYPLNSSKQAGWGQMLPHYIDKHTFQVRNMASGGQIARGFRNDGQLEA  238
+
+Query  57   IADVVTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLEN  116
+            I   +  GDY +++ G ND                             E+   F   + +
+Sbjct  239  ILKYIKPGDYFMLQLGINDTNPK-----------------------HKESEAEFKEVMRD  275
+
+Query  117  AAKLFTAKGAKVILSSQTPN-NPWETGTFVNSPTRFVEYAELA-AEVAGVEYVDHWSYVD  174
+              +   AKGA VILS+       + +    +S  R+   + LA AE      +D      
+Sbjct  276  MIRQVKAKGADVILSTPQGRATDFTSEGIHSSVNRWYRASILALAEEEKTYLIDLNVLSS  335
+
+Query  175  SIYETLGNATVNSYFPI-DHTHTSPAGAEVVAEAFLKAVVCTGTS  218
+            + + ++G       +   D  H + AGA+ +A   ++ +   G +
+Sbjct  336  AYFTSIGPERTLGLYMDGDTLHPNRAGADALARLAVQELKRQGIA  380
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.123    0.306    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0375    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16494318442
+Results from round 3
+
+
+Query= d1k7ca_
+
+Length=233
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emerice...  324     6e-112
+sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergi...  310     1e-106
+sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase ...  265     2e-89 
+sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT OS=B...  250     6e-83 
+sp|P42304|YXIM_BACSU Uncharacterized esterase YxiM OS=Bacillus su...  232     5e-74 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q5BAA2|RHA1_EMENI Rhamnogalacturonan acetylesterase OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / 
+NRRL 194 / M139) OX=227321 GN=AN2528 PE=1 SV=1
+Length=245
+
+ Score = 324 bits (829),  Expect = 6e-112, Method: Composition-based stats.
+ Identities = 154/232 (66%), Positives = 184/232 (79%), Gaps = 5/232 (2%)
+
+Query  2    TVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADVV  61
+            T+YLAGDSTMA     S T GWG+Y+A  +S  + N A+ GRSARSYTREGRF+ IADV+
+Sbjct  19   TIYLAGDSTMA-----SSTPGWGDYIADSVSVEISNQAIGGRSARSYTREGRFQAIADVL  73
+
+Query  62   TAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKLF  121
+             AGDYV++EFGHNDGGSLS DNGRTDC G G E C +VY+GV ET+LTFPAY+ENAA LF
+Sbjct  74   QAGDYVVIEFGHNDGGSLSNDNGRTDCPGDGDETCETVYNGVAETVLTFPAYIENAALLF  133
+
+Query  122  TAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETLG  181
+              KGA V++SSQTPNNPWE+GTF  +P RFV YAELAA+ AGV+YVDH +Y  SI+E LG
+Sbjct  134  LEKGANVLISSQTPNNPWESGTFSYTPNRFVGYAELAAQRAGVDYVDHGAYTASIFEALG  193
+
+Query  182  NATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+              TVNS++P DHTHT+  G+ VVA+AFLKAVVC+G +L  VLT T F+G CL
+Sbjct  194  ADTVNSFYPNDHTHTNAEGSSVVADAFLKAVVCSGVALNDVLTRTDFDGECL  245
+
+
+>sp|Q00017|RHA1_ASPAC Rhamnogalacturonan acetylesterase OS=Aspergillus 
+aculeatus OX=5053 GN=rha1 PE=1 SV=1
+Length=250
+
+ Score = 310 bits (794),  Expect = 1e-106, Method: Composition-based stats.
+ Identities = 233/233 (100%), Positives = 233/233 (100%), Gaps = 0/233 (0%)
+
+Query  1    TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  60
+            TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV
+Sbjct  18   TTVYLAGDSTMAKNGGGSGTNGWGEYLASYLSATVVNDAVAGRSARSYTREGRFENIADV  77
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL
+Sbjct  78   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  137
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  180
+            FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL
+Sbjct  138  FTAKGAKVILSSQTPNNPWETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIYETL  197
+
+Query  181  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  233
+            GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL
+Sbjct  198  GNATVNSYFPIDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTTTSFEGTCL  250
+
+
+>sp|O31528|RHGT2_BACSU Probable rhamnogalacturonan acetylesterase 
+YesY OS=Bacillus subtilis (strain 168) OX=224308 GN=yesY 
+PE=1 SV=1
+Length=217
+
+ Score = 265 bits (678),  Expect = 2e-89, Method: Composition-based stats.
+ Identities = 63/231 (27%), Positives = 100/231 (43%), Gaps = 28/231 (12%)
+
+Query  3    VYLAGDSTMAKNGGGSGTNGWGEYLASYLSA--TVVNDAVAGRSARSYTREGRFENIADV  60
+            +YLAGDST+   G  +   GWG++L S+L     V+N A+ GRS++++  EGR + I DV
+Sbjct  5    IYLAGDSTVQTYGDSTNQGGWGQFLGSHLPEHIQVINRAIGGRSSKTFVEEGRLQAILDV  64
+
+Query  61   VTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAAKL  120
+            +   D++ V+ GHND      +                      E   T+  YL+     
+Sbjct  65   IEPDDWLFVQMGHNDASKNKPER-------------------YTEPYTTYKQYLKQYIAG  105
+
+Query  121  FTAKGAKVILSSQTPNNPWETGTFVNS-PTRFVEYAELAAEVAGVEYVDHWSYVDSIYET  179
+               KGA  +L +      +E G F+N  P   +   + AAE   V+ +D      + +  
+Sbjct  106  AREKGAHPLLITPVARFHYENGVFLNDFPDYCIAMKQTAAEE-NVQLIDLMEKSLAFFTE  164
+
+Query  180  LGNATVNSYFP-----IDHTHTSPAGAEVVAEAFLKAVVCTGTSLKSVLTT  225
+             G   V +YF       D+TH +  GA  +A+   K +   G  L   +  
+Sbjct  165  KGEEKVYTYFMISEGINDYTHFTKKGANEMAKLVAKGIKELGLPLTESIIK  215
+
+
+>sp|O31523|RHGT1_BACSU Rhamnogalacturonan acetylesterase RhgT 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=rhgT PE=1 SV=1
+Length=232
+
+ Score = 250 bits (637),  Expect = 6e-83, Method: Composition-based stats.
+ Identities = 61/242 (25%), Positives = 92/242 (38%), Gaps = 41/242 (17%)
+
+Query  2    TVYLAGDSTMAK-NGGGSGTNGWGEYLASYLSATV--VNDAVAGRSARSYTREGRFENIA  58
+             V+LAGDST++      +   GWG+      S  V   N A  G S  S+  EGR + IA
+Sbjct  7    QVFLAGDSTVSDCPPHEAPMAGWGQVFGQLFSEGVLVRNHAKGGASTNSFVEEGRLQAIA  66
+
+Query  59   DVVTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLENAA  118
+            + +T GDY++++FGHND     T                           TF  +L   A
+Sbjct  67   EHITQGDYLLIQFGHNDQKPRGTK-----------------------PYSTFQQFLTLFA  103
+
+Query  119  KLFTAKGAKVILSSQTPNNPW-ETGTFVNSPTRFVEYAELAAEVAGVEYVDHWSYVDSIY  177
+                 KGA  +  +      + E G   ++   + +  +  A+   V  +D  +    +Y
+Sbjct  104  DTAREKGAHPVFVTSVQRRRFDENGRIEHTLGEYPDAMKALAKELDVPVIDLLAKTKVLY  163
+
+Query  178  ETLGNATVNSYF----PIDH----------THTSPAGAEVVAEAFLKAVVCTGTSLKSVL  223
+            E  G       F    P +H          TH S  GA  VA+   + +   G  LK  L
+Sbjct  164  EAYGPEESKRLFVWFQPNEHPNYPDGIEDNTHFSEKGAMEVAKLVAEGIEELGLPLKDHL  223
+
+Query  224  TT  225
+             +
+Sbjct  224  VS  225
+
+
+>sp|P42304|YXIM_BACSU Uncharacterized esterase YxiM OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yxiM PE=1 SV=2
+Length=382
+
+ Score = 232 bits (591),  Expect = 5e-74, Method: Composition-based stats.
+ Identities = 52/225 (23%), Positives = 88/225 (39%), Gaps = 31/225 (14%)
+
+Query  2    TVYLAGDSTMAK--NGGGSGTNGWGEYLASYLSA---TVVNDAVAGRSARSYTREGRFEN  56
+            T+Y+ GDST+        S   GWG+ L  Y+      V N A  G+ AR +  +G+ E 
+Sbjct  179  TIYVGGDSTVCNYYPLNSSKQAGWGQMLPHYIDKHTFQVRNMASGGQIARGFRNDGQLEA  238
+
+Query  57   IADVVTAGDYVIVEFGHNDGGSLSTDNGRTDCSGTGAEVCYSVYDGVNETILTFPAYLEN  116
+            I   +  GDY +++ G ND                             E+   F   + +
+Sbjct  239  ILKYIKPGDYFMLQLGINDTNPK-----------------------HKESEAEFKEVMRD  275
+
+Query  117  AAKLFTAKGAKVILSSQTPN-NPWETGTFVNSPTRFVEYAELA-AEVAGVEYVDHWSYVD  174
+              +   AKGA VILS+       + +    +S  R+   + LA AE      +D      
+Sbjct  276  MIRQVKAKGADVILSTPQGRATDFTSEGIHSSVNRWYRASILALAEEEKTYLIDLNVLSS  335
+
+Query  175  SIYETLGNATVNSYFPI-DHTHTSPAGAEVVAEAFLKAVVCTGTS  218
+            + + ++G       +   D  H + AGA+ +A   ++ +   G +
+Sbjct  336  AYFTSIGPERTLGLYMDGDTLHPNRAGADALARLAVQELKRQGIA  380
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.120    0.293    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0368    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16494318442
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

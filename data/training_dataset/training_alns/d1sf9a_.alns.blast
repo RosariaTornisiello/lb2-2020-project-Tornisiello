@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1sf9a_
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O31576|YFHH_BACSU Uncharacterized protein YfhH OS=Bacillus sub...  214     8e-73
+
+
+>sp|O31576|YFHH_BACSU Uncharacterized protein YfhH OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfhH PE=1 SV=1
+Length=104
+
+ Score = 214 bits (546),  Expect = 8e-73, Method: Compositional matrix adjust.
+ Identities = 104/104 (100%), Positives = 104/104 (100%), Gaps = 0/104 (0%)
+
+Query  15   MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE  74
+            MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE
+Sbjct  1    MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE  60
+
+Query  75   TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE  118
+            TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE
+Sbjct  61   TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE  104
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.128    0.351    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+Results from round 2
+
+
+Query= d1sf9a_
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O31576|YFHH_BACSU Uncharacterized protein YfhH OS=Bacillus sub...  207     5e-70
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O31576|YFHH_BACSU Uncharacterized protein YfhH OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfhH PE=1 SV=1
+Length=104
+
+ Score = 207 bits (527),  Expect = 5e-70, Method: Composition-based stats.
+ Identities = 104/104 (100%), Positives = 104/104 (100%), Gaps = 0/104 (0%)
+
+Query  15   MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE  74
+            MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE
+Sbjct  1    MEKRYSQMTPHELNTEIALLSEKARKAEQHGIINELAVLERKITMAKAYLLNPEDYSPGE  60
+
+Query  75   TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE  118
+            TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE
+Sbjct  61   TYRVENTEDEFTISYLNGVFAWGYRTSSPQQEEALPISVLQEKE  104
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.129    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,1199 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1pz4a_
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 2 OS...  47.8    3e-06
+sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus ...  47.0    5e-06
+sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 OS=R...  45.4    2e-05
+sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 2 OS...  43.1    1e-04
+sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 1 ...  38.5    0.002
+
+
+>sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 
+2 OS=Homo sapiens OX=9606 GN=HSD17B4 PE=1 SV=3
+Length=736
+
+ Score = 47.8 bits (112),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 29/101 (29%), Positives = 54/101 (53%), Gaps = 5/101 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESD  60
+            L+S  VF +I +RL+ I P   ++V  V+++ IT+GG +   W +DLK+    V    + 
+Sbjct  622  LQSTFVFEEIGRRLKDIGPEVVKKVNAVFEWHITKGGNIGAKWTIDLKSGSGKVYQGPAK  681
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVEL  101
+             AA+ T+ + D+    +  G L  ++A    +++  G + L
+Sbjct  682  GAADTTIILSDEDFMEVVLGKLDPQKAFFSGRLKARGNIML  722
+
+
+>sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus 
+norvegicus OX=10116 GN=Scp2 PE=1 SV=3
+Length=547
+
+ Score = 47.0 bits (110),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 26/84 (31%), Positives = 47/84 (56%), Gaps = 4/84 (5%)
+
+Query  27   RQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESDDAAEATLTMEDDIMFAIGTGAL  82
+            +++  ++ F++  G G     WV+D+KN K   L +SD  A+ T+TM D  + A+ TG +
+Sbjct  453  KKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPDSDKKADCTITMADSDLLALMTGKM  512
+
+Query  83   PAKEAMAQDKMEVDGQVELIFLLE  106
+              + A  Q K+++ G + L   L+
+Sbjct  513  NPQSAFFQGKLKIAGNMGLAMKLQ  536
+
+
+>sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 
+OS=Rattus norvegicus OX=10116 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 45.4 bits (106),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 28/102 (27%), Positives = 53/102 (52%), Gaps = 5/102 (5%)
+
+Query  5    SLKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVES  59
+            +L+S  VF +I +RL+ +     ++V  V+++ IT+ G V   W +DLKN    V    +
+Sbjct  620  ALQSALVFGEIGRRLKDVGREVVKKVNAVFEWHITKNGNVAAKWTIDLKNGSGEVYQGPA  679
+
+Query  60   DDAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVEL  101
+              +A+ T+T+ D+    +  G L  + A    +++  G + L
+Sbjct  680  KGSADTTITISDEDFMEVVLGKLNPQNAFFSGRLKARGNIML  721
+
+
+>sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 
+2 OS=Mus musculus OX=10090 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 43.1 bits (100),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 27/101 (27%), Positives = 53/101 (52%), Gaps = 5/101 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESD  60
+            L+S  VF +I +RL+S+     ++   V+++ IT+GG V   W +DLK+    V    + 
+Sbjct  621  LQSALVFGEIGRRLKSVGREVVKKANAVFEWHITKGGTVAAKWTIDLKSGSGEVYQGPAK  680
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVEL  101
+             +A+ T+ + D+    +  G L  ++A    +++  G + L
+Sbjct  681  GSADVTIIISDEDFMEVVFGKLDPQKAFFSGRLKARGNIML  721
+
+
+>sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 
+1 OS=Caenorhabditis elegans OX=6239 GN=nlt-1 PE=4 SV=1
+Length=118
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 28/111 (25%), Positives = 53/111 (48%), Gaps = 7/111 (6%)
+
+Query  4    MSLKSDEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDDAA  63
+            M+ KSD +F +I +R+ +     ++V   ++  I       K W +D K+      DD++
+Sbjct  1    MAFKSDVIFEEIKERIATDKEMVKKVGTSFRMTIAGADGKTKVWTIDAKSDTPYVGDDSS  60
+
+Query  64   ---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQV----ELIFLLEP  107
+               E  + ++D    AI  G +   +A  Q KM++ G +    +L  +L+P
+Sbjct  61   RPVEIEINIKDSDFIAIAAGKMKPDQAFMQGKMKLKGNIAKAMKLRTILDP  111
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.364    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+Results from round 2
+
+
+Query= d1pz4a_
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 OS=R...  153     2e-43
+sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 2 OS...  149     3e-42
+sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 2 OS...  149     5e-42
+sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 1 ...  117     3e-34
+sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus ...  114     6e-30
+
+Sequences not found previously or not previously below threshold:
+
+sp|P07857|NLTP_BOVIN Non-specific lipid-transfer protein OS=Bos t...  127     1e-34
+sp|Q07598|NLTP_CHICK Non-specific lipid-transfer protein (Fragmen...  123     5e-33
+sp|P22307|NLTP_HUMAN Non-specific lipid-transfer protein OS=Homo ...  114     8e-30
+sp|P32020|NLTP_MOUSE Non-specific lipid-transfer protein OS=Mus m...  114     1e-29
+sp|O62742|NLTP_RABIT Non-specific lipid-transfer protein OS=Oryct...  112     4e-29
+sp|Q9UJQ7|SCP2D_HUMAN SCP2 sterol-binding domain-containing prote...  92.9    4e-24
+sp|Q2TBS3|SCP2D_BOVIN SCP2 sterol-binding domain-containing prote...  90.5    3e-23
+sp|Q9DAH1|SCP2D_MOUSE SCP2 sterol-binding domain-containing prote...  87.8    3e-22
+sp|Q9NKW1|MFEA_DICDI Peroxisomal multifunctional enzyme A OS=Dict...  79.4    2e-17
+sp|Q4V8F9|HSDL2_RAT Hydroxysteroid dehydrogenase-like protein 2 O...  72.4    6e-15
+sp|Q2TPA8|HSDL2_MOUSE Hydroxysteroid dehydrogenase-like protein 2...  72.4    6e-15
+sp|Q6PAY8|HSDL2_XENLA Hydroxysteroid dehydrogenase-like protein 2...  71.7    9e-15
+sp|Q66KC4|HSDL2_XENTR Hydroxysteroid dehydrogenase-like protein 2...  70.9    2e-14
+sp|A4FUZ6|HSDL2_BOVIN Hydroxysteroid dehydrogenase-like protein 2...  70.1    3e-14
+sp|Q5RA68|HSDL2_PONAB Hydroxysteroid dehydrogenase-like protein 2...  69.4    6e-14
+sp|Q6YN16|HSDL2_HUMAN Hydroxysteroid dehydrogenase-like protein 2...  69.0    9e-14
+sp|Q6P5L8|HSDL2_DANRE Hydroxysteroid dehydrogenase-like protein 2...  69.0    1e-13
+sp|Q9FMN0|SCP2_ARATH Sterol carrier protein 2 OS=Arabidopsis thal...  63.6    5e-13
+sp|P80547|SCP2_YARLI Fatty acid-binding protein OS=Yarrowia lipol...  61.7    3e-12
+sp|Q00680|POX18_CANMA Oleate-induced peroxisomal protein POX18 OS...  60.1    1e-11
+sp|P22009|POX18_CANTR Oleate-induced peroxisomal protein POX18 OS...  58.2    6e-11
+sp|Q8CI66|STML1_MOUSE Stomatin-like protein 1 OS=Mus musculus OX=...  56.3    3e-09
+sp|Q9UBI4|STML1_HUMAN Stomatin-like protein 1 OS=Homo sapiens OX=...  55.5    6e-09
+
+
+>sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 
+OS=Rattus norvegicus OX=10116 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 153 bits (386),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 55/107 (51%), Gaps = 5/107 (5%)
+
+Query  5    SLKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVES  59
+            +L+S  VF +I +RL+ +     ++V  V+++ IT+ G V   W +DLKN    V    +
+Sbjct  620  ALQSALVFGEIGRRLKDVGREVVKKVNAVFEWHITKNGNVAAKWTIDLKNGSGEVYQGPA  679
+
+Query  60   DDAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              +A+ T+T+ D+    +  G L  + A    +++  G + L   L+
+Sbjct  680  KGSADTTITISDEDFMEVVLGKLNPQNAFFSGRLKARGNIMLSQKLQ  726
+
+
+>sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 
+2 OS=Homo sapiens OX=9606 GN=HSD17B4 PE=1 SV=3
+Length=736
+
+ Score = 149 bits (377),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 30/106 (28%), Positives = 56/106 (53%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESD  60
+            L+S  VF +I +RL+ I P   ++V  V+++ IT+GG +   W +DLK+    V    + 
+Sbjct  622  LQSTFVFEEIGRRLKDIGPEVVKKVNAVFEWHITKGGNIGAKWTIDLKSGSGKVYQGPAK  681
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+             AA+ T+ + D+    +  G L  ++A    +++  G + L   L+
+Sbjct  682  GAADTTIILSDEDFMEVVLGKLDPQKAFFSGRLKARGNIMLSQKLQ  727
+
+
+>sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 
+2 OS=Mus musculus OX=10090 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 149 bits (376),  Expect = 5e-42, Method: Composition-based stats.
+ Identities = 28/106 (26%), Positives = 55/106 (52%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESD  60
+            L+S  VF +I +RL+S+     ++   V+++ IT+GG V   W +DLK+    V    + 
+Sbjct  621  LQSALVFGEIGRRLKSVGREVVKKANAVFEWHITKGGTVAAKWTIDLKSGSGEVYQGPAK  680
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+             +A+ T+ + D+    +  G L  ++A    +++  G + L   L+
+Sbjct  681  GSADVTIIISDEDFMEVVFGKLDPQKAFFSGRLKARGNIMLSQKLQ  726
+
+
+>sp|P07857|NLTP_BOVIN Non-specific lipid-transfer protein OS=Bos 
+taurus OX=9913 GN=SCP2 PE=1 SV=2
+Length=543
+
+ Score = 127 bits (319),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 33/106 (31%), Positives = 58/106 (55%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  427  FKANLVFKEIEKKLEDEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  486
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+ T+TM D  + A+ TG +  + A  Q K++++G + L   L+
+Sbjct  487  KKADCTITMADSDLLALMTGKMNPQTAFFQGKLKINGNMGLAMKLQ  532
+
+
+>sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 
+1 OS=Caenorhabditis elegans OX=6239 GN=nlt-1 PE=4 SV=1
+Length=118
+
+ Score = 117 bits (293),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 28/111 (25%), Positives = 53/111 (48%), Gaps = 7/111 (6%)
+
+Query  4    MSLKSDEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDDAA  63
+            M+ KSD +F +I +R+ +     ++V   ++  I       K W +D K+      DD++
+Sbjct  1    MAFKSDVIFEEIKERIATDKEMVKKVGTSFRMTIAGADGKTKVWTIDAKSDTPYVGDDSS  60
+
+Query  64   ---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQV----ELIFLLEP  107
+               E  + ++D    AI  G +   +A  Q KM++ G +    +L  +L+P
+Sbjct  61   RPVEIEINIKDSDFIAIAAGKMKPDQAFMQGKMKLKGNIAKAMKLRTILDP  111
+
+
+>sp|Q07598|NLTP_CHICK Non-specific lipid-transfer protein (Fragment) 
+OS=Gallus gallus OX=9031 GN=SCP2 PE=2 SV=1
+Length=547
+
+ Score = 123 bits (308),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 34/106 (32%), Positives = 56/106 (53%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             KS  VF +I K+L+       +++  V+ F+I  G G     WV+D+KN K    V SD
+Sbjct  431  FKSHLVFKEIEKKLQEEGEQFVKKIGGVFAFKIKDGPGGKEATWVVDVKNGKGSVAVNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+ T+TM D  + A+ TG +  + A  Q K+++ G + +   L+
+Sbjct  491  KKADCTITMADTDLLALMTGKMNPQTAFFQGKLKISGNMGMAMKLQ  536
+
+
+>sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus 
+norvegicus OX=10116 GN=Scp2 PE=1 SV=3
+Length=547
+
+ Score = 114 bits (286),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 26/85 (31%), Positives = 47/85 (55%), Gaps = 4/85 (5%)
+
+Query  26   NRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESDDAAEATLTMEDDIMFAIGTGA  81
+             +++  ++ F++  G G     WV+D+KN K   L +SD  A+ T+TM D  + A+ TG 
+Sbjct  452  VKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPDSDKKADCTITMADSDLLALMTGK  511
+
+Query  82   LPAKEAMAQDKMEVDGQVELIFLLE  106
+            +  + A  Q K+++ G + L   L+
+Sbjct  512  MNPQSAFFQGKLKIAGNMGLAMKLQ  536
+
+
+>sp|P22307|NLTP_HUMAN Non-specific lipid-transfer protein OS=Homo 
+sapiens OX=9606 GN=SCP2 PE=1 SV=2
+Length=547
+
+ Score = 114 bits (285),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 33/106 (31%), Positives = 56/106 (53%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+ T+TM D    A+ TG +  + A  Q K+++ G + L   L+
+Sbjct  491  KKADCTITMADSDFLALMTGKMNPQSAFFQGKLKITGNMGLAMKLQ  536
+
+
+>sp|P32020|NLTP_MOUSE Non-specific lipid-transfer protein OS=Mus 
+musculus OX=10090 GN=Scp2 PE=1 SV=3
+Length=547
+
+ Score = 114 bits (284),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/106 (31%), Positives = 57/106 (54%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+ T+TM D  + A+ TG +  + A  Q K+++ G + L   L+
+Sbjct  491  KKADCTITMADSDLLALMTGKMNPQSAFFQGKLKIAGNMGLAMKLQ  536
+
+
+>sp|O62742|NLTP_RABIT Non-specific lipid-transfer protein OS=Oryctolagus 
+cuniculus OX=9986 GN=SCP2 PE=1 SV=1
+Length=547
+
+ Score = 112 bits (280),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 32/106 (30%), Positives = 57/106 (54%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+ T+T+ D  + A+ TG +  + A  Q K+++ G + L   L+
+Sbjct  491  KKADCTITIADSDLLALMTGKMNPQSAFFQGKLKITGNMGLAMKLQ  536
+
+
+>sp|Q9UJQ7|SCP2D_HUMAN SCP2 sterol-binding domain-containing protein 
+1 OS=Homo sapiens OX=9606 GN=SCP2D1 PE=2 SV=1
+Length=156
+
+ Score = 92.9 bits (229),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 26/106 (25%), Positives = 48/106 (45%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             +S  VF  I   +  +     ++V  V++  IT+ GK +  W +DLKN         + 
+Sbjct  42   FESFPVFQDIRLHIREVGAQLVKKVNAVFQLDITKNGKTILRWTIDLKNGSGDMYPGPAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+   T+ + +   +  G +  ++A    K +V G+V L + LE
+Sbjct  102  LPADTVFTIPESVFMELVLGKMNPQKAFLAGKFKVSGKVLLSWKLE  147
+
+
+>sp|Q2TBS3|SCP2D_BOVIN SCP2 sterol-binding domain-containing protein 
+1 OS=Bos taurus OX=9913 GN=SCP2D1 PE=2 SV=1
+Length=156
+
+ Score = 90.5 bits (223),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 50/106 (47%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             ++  VF  I++ ++ +     ++V  +++  IT+ GK V  W +DLKN         + 
+Sbjct  42   FQTVPVFEDISQHVKEVGSQLVKKVNAIFQLDITKDGKTVHQWTIDLKNGSGDTYRGPAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+   T+ + +   +  G +  ++A    K +V G+V L   LE
+Sbjct  102  LPADTVFTIPEPVFMELILGKMNPQKAFLAGKFKVSGKVLLGQKLE  147
+
+
+>sp|Q9DAH1|SCP2D_MOUSE SCP2 sterol-binding domain-containing protein 
+1 OS=Mus musculus OX=10090 GN=Scp2d1 PE=2 SV=2
+Length=156
+
+ Score = 87.8 bits (216),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 50/106 (47%), Gaps = 5/106 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             ++  VF  I++ ++ +     ++V  +++  IT+ GK +  W +DLKN      L  + 
+Sbjct  42   FQNFSVFEDISQHIKEVGAQLVKKVNAIFQLDITKDGKTILQWTIDLKNGAGDMYLGSAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+              A+    + D +   +  G +  ++A    K +V G+V L   LE
+Sbjct  102  LPADTVFIIPDSVFTELVVGKINPQKAFLAGKFKVRGKVLLSQKLE  147
+
+
+>sp|Q9NKW1|MFEA_DICDI Peroxisomal multifunctional enzyme A OS=Dictyostelium 
+discoideum OX=44689 GN=mfeA PE=2 SV=1
+Length=441
+
+ Score = 79.4 bits (194),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 23/105 (22%), Positives = 44/105 (42%), Gaps = 6/105 (6%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNVK----LVESD  60
+              + ++F  I   + +      +++  +Y   I +G      W +DLKN      +    
+Sbjct  329  YNASKIFTTIQGNIGAKGAELVKKINGIYLINIKKGTNTQA-WALDLKNGSGSIVVGAGS  387
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLL  105
+                 T+T+ D+    I TG L A+ A  + K+++ G + L   L
+Sbjct  388  TKPNVTITVSDEDFVDIMTGKLNAQSAFTKGKLKISGNMGLATKL  432
+
+
+>sp|Q4V8F9|HSDL2_RAT Hydroxysteroid dehydrogenase-like protein 
+2 OS=Rattus norvegicus OX=10116 GN=Hsdl2 PE=2 SV=1
+Length=524
+
+ Score = 72.4 bits (176),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 40/94 (43%), Gaps = 6/94 (6%)
+
+Query  23   DPANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESDDAAEATLTMEDDIMFAIG  78
+            D   R  + VY+F ++        W +DLK+    V   E  D A+  ++M  +    + 
+Sbjct  429  DEVVRATQAVYQFELSGEDG--GTWFLDLKSKGGKVGHGEPSDRADVVMSMATEDFVKMF  486
+
+Query  79   TGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            +G L    A    K+++ G + L   LE  +  +
+Sbjct  487  SGKLKPTMAFMSGKLKIKGNIALAIKLEKLMTHM  520
+
+
+>sp|Q2TPA8|HSDL2_MOUSE Hydroxysteroid dehydrogenase-like protein 
+2 OS=Mus musculus OX=10090 GN=Hsdl2 PE=1 SV=1
+Length=490
+
+ Score = 72.4 bits (176),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 40/94 (43%), Gaps = 6/94 (6%)
+
+Query  23   DPANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESDDAAEATLTMEDDIMFAIG  78
+            D   R  + VY+F ++        W +DLK+    V   E  D A+  ++M  D    + 
+Sbjct  395  DEVVRATQAVYQFELSGEDG--GTWFLDLKSKGGKVGHGEPSDRADVVMSMATDDFVKMF  452
+
+Query  79   TGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            +G L    A    K+++ G + L   LE  +  +
+Sbjct  453  SGKLKPTMAFMSGKLKIKGNIALAIKLEKLMTQM  486
+
+
+>sp|Q6PAY8|HSDL2_XENLA Hydroxysteroid dehydrogenase-like protein 
+2 OS=Xenopus laevis OX=8355 GN=hsdl2 PE=2 SV=1
+Length=417
+
+ Score = 71.7 bits (174),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 23/107 (21%), Positives = 45/107 (42%), Gaps = 8/107 (7%)
+
+Query  10   EVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAEA  65
+            E F  I + +     A +  + +Y+F ++  G+   NW +DLKN K           A+ 
+Sbjct  311  ETFKAIERSVNE--EAVKSTQGIYQFVLS--GEESGNWFLDLKNDKGGVGKGEPSTKADV  366
+
+Query  66   TLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+             ++M+      +  G +    A    K+++ G + L   LE  +  +
+Sbjct  367  VMSMDSGDFIKMFAGKMKPTMAFMSGKLKIKGDMGLALKLEKILGQM  413
+
+
+>sp|Q66KC4|HSDL2_XENTR Hydroxysteroid dehydrogenase-like protein 
+2 OS=Xenopus tropicalis OX=8364 GN=hsdl2 PE=2 SV=1
+Length=417
+
+ Score = 70.9 bits (172),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 21/94 (22%), Positives = 42/94 (45%), Gaps = 6/94 (6%)
+
+Query  23   DPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAEATLTMEDDIMFAIG  78
+            + A +  + +Y+F ++  G+   NW +DLKN K           A+  ++M+      + 
+Sbjct  322  EEAVKTTQGIYQFVLS--GEESGNWFLDLKNGKGGVGSGEPSTKADVVMSMDSGDFIKMF  379
+
+Query  79   TGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            TG +    A    K+++ G + L   LE  +  +
+Sbjct  380  TGKMKPTMAFMSGKLKIKGDMGLALKLEKILGQM  413
+
+
+>sp|A4FUZ6|HSDL2_BOVIN Hydroxysteroid dehydrogenase-like protein 
+2 OS=Bos taurus OX=9913 GN=HSDL2 PE=2 SV=1
+Length=418
+
+ Score = 70.1 bits (170),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 44/108 (41%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + VY+F ++        W +DLK    N+   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--IVKATQAVYQFELSGEDG--GTWFLDLKSKGGNIGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMSTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|Q5RA68|HSDL2_PONAB Hydroxysteroid dehydrogenase-like protein 
+2 OS=Pongo abelii OX=9601 GN=HSDL2 PE=2 SV=1
+Length=418
+
+ Score = 69.4 bits (168),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 25/108 (23%), Positives = 43/108 (40%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + VY F ++        W +DLK    NV   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--VVKATQAVYLFELSGEDG--GTWFLDLKSKGGNVGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMTTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|Q6YN16|HSDL2_HUMAN Hydroxysteroid dehydrogenase-like protein 
+2 OS=Homo sapiens OX=9606 GN=HSDL2 PE=1 SV=1
+Length=418
+
+ Score = 69.0 bits (167),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 43/108 (40%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + +Y F ++        W +DLK    NV   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--VVKATQAIYLFELSGEDG--GTWFLDLKSKGGNVGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMTTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|Q6P5L8|HSDL2_DANRE Hydroxysteroid dehydrogenase-like protein 
+2 OS=Danio rerio OX=7955 GN=hsdl2 PE=2 SV=1
+Length=415
+
+ Score = 69.0 bits (167),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 39/94 (41%), Gaps = 6/94 (6%)
+
+Query  24   PANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAEATLTMEDDIMFAIGT  79
+               +  + VYKF +   G+    W +DLKN      +      A+  ++M+ +    +  
+Sbjct  321  EMVKTTQGVYKFNL--AGEHAGVWYLDLKNDAGSAGNGEPPVKADVVMSMDSEDFVKMFG  378
+
+Query  80   GALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+            G L    A    K+ + G + L   LE  +A +K
+Sbjct  379  GKLKPTMAFMSGKLTIKGDMGLAIKLEKMMAMMK  412
+
+
+>sp|Q9FMN0|SCP2_ARATH Sterol carrier protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=SCP2 PE=2 SV=1
+Length=123
+
+ Score = 63.6 bits (153),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 23/111 (21%), Positives = 47/111 (42%), Gaps = 7/111 (6%)
+
+Query  6    LKSDEVFAKIAKRLESI--DPANRQVEHVYKFRI--TQGGKVVKNWVMDLKNVKLVESD-  60
+            LKSD +   + + L +        ++  VY+  I   + G     +++DLK  ++ +   
+Sbjct  6    LKSDAIMDMMKEHLSTDAGKEVTEKIGLVYQINIAPKKLGFEEVTYIVDLKKGEVTKGKY  65
+
+Query  61   --DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFI  109
+                 +AT + +DD    + TG +  + A  +  M++ G +       P I
+Sbjct  66   EGGKVDATFSFKDDDFVKVATGKMNPQMAFIRGAMKIKGSLSAAQKFTPDI  116
+
+
+>sp|P80547|SCP2_YARLI Fatty acid-binding protein OS=Yarrowia lipolytica 
+(strain CLIB 122 / E 150) OX=284591 GN=SCP2 PE=1 SV=4
+Length=129
+
+ Score = 61.7 bits (148),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 23/112 (21%), Positives = 40/112 (36%), Gaps = 11/112 (10%)
+
+Query  6    LKSDEVFAKIAKRL------ESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLV--  57
+              S  +F  I   L      +    + ++   +  F +       ++W +DLKN   V  
+Sbjct  8    FTSSIIFDVIRDGLNDPSQAKQKAESIKKANAIIVFNLKNKAGKTESWYLDLKNDGDVGK  67
+
+Query  58   ---ESDDAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLE  106
+                    A+  LT+ DD    +  G   A+      K++V G V     +E
+Sbjct  68   GNKSPKGDADIQLTLSDDHFQQLVEGKANAQRLFMTGKLKVKGNVMKAAAIE  119
+
+
+>sp|Q00680|POX18_CANMA Oleate-induced peroxisomal protein POX18 
+OS=Candida maltosa OX=5479 GN=POX18 PE=2 SV=2
+Length=127
+
+ Score = 60.1 bits (144),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 21/114 (18%), Positives = 44/114 (39%), Gaps = 7/114 (6%)
+
+Query  6    LKSDEVFAKIAKRLES---IDPANRQVEHVYKFRITQGGKVVKNWVMDLK-NVKLVESDD  61
+              +  +F ++ + L      + A + V  V    +       ++WV+DLK    L + D 
+Sbjct  8    FNASPLFKELHEGLADKSKAEEAVKAVNAVIVITLKNKEGKEQSWVLDLKKAGTLAKVDG  67
+
+Query  62   AA---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            AA   +  L ++D     +    +  ++     K++V G +     +E     L
+Sbjct  68   AAPKGDVQLILKDVDFVKLANNKVNGQKLFMNGKLKVKGNMMKATAIESVFKKL  121
+
+
+>sp|P22009|POX18_CANTR Oleate-induced peroxisomal protein POX18 
+OS=Candida tropicalis OX=5482 GN=POX18 PE=1 SV=3
+Length=127
+
+ Score = 58.2 bits (139),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 20/114 (18%), Positives = 43/114 (38%), Gaps = 7/114 (6%)
+
+Query  6    LKSDEVFAKIAKRLES---IDPANRQVEHVYKFRITQGGKVVKNWVMDLK-NVKLVESDD  61
+              +  +F ++   L        A + V  +    +       ++WV+DLK +  L + D 
+Sbjct  8    FNASPLFKELNDGLADKAKAQEAVKAVNAIIVITLKNKEGKEQSWVLDLKKDGTLAKVDG  67
+
+Query  62   AA---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            AA   +  L ++D     +    +  ++     K++V G +     +E     L
+Sbjct  68   AAPKGDVQLILKDVDFVKLANNKVNGQKLFMNGKLKVKGNMMKATAIEAVFKKL  121
+
+
+>sp|Q8CI66|STML1_MOUSE Stomatin-like protein 1 OS=Mus musculus 
+OX=10090 GN=Stoml1 PE=2 SV=1
+Length=399
+
+ Score = 56.3 bits (134),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 18/93 (19%), Positives = 37/93 (40%), Gaps = 4/93 (4%)
+
+Query  25   ANRQVEHVYKFRITQGGKVVKNWVMDLKNVK----LVESDDAAEATLTMEDDIMFAIGTG  80
+               QV   Y+F +         + +DL   +      E D   +  + M +  + A+ + 
+Sbjct  307  LVSQVGACYQFNVILPSGTQSIYFLDLTTGQGRVGHGEPDGIPDVVVEMAEADLQALLSK  366
+
+Query  81   ALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+             L    A    +++V G + ++  LE  + +LK
+Sbjct  367  ELRPLGAYMSGRLKVKGDLAVVMKLEAVLKALK  399
+
+
+>sp|Q9UBI4|STML1_HUMAN Stomatin-like protein 1 OS=Homo sapiens 
+OX=9606 GN=STOML1 PE=1 SV=1
+Length=398
+
+ Score = 55.5 bits (132),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 17/93 (18%), Positives = 34/93 (37%), Gaps = 4/93 (4%)
+
+Query  25   ANRQVEHVYKFRITQGGKVVKNWVMDLKNVK----LVESDDAAEATLTMEDDIMFAIGTG  80
+               QV   Y+F +         + +DL   +        D   +  + M +  + A+   
+Sbjct  306  LVSQVGACYQFNVVLPSGTQSAYFLDLTTGRGRVGHGVPDGIPDVVVEMAEADLRALLCR  365
+
+Query  81   ALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+             L    A    +++V G + +   LE  + +LK
+Sbjct  366  ELRPLGAYMSGRLKVKGDLAMAMKLEAVLRALK  398
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.132    0.324    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+Results from round 3
+
+
+Query= d1pz4a_
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 OS=R...  136     2e-37
+sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 2 OS...  130     2e-35
+sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 2 OS...  130     2e-35
+sp|Q9UJQ7|SCP2D_HUMAN SCP2 sterol-binding domain-containing prote...  120     4e-35
+sp|Q07598|NLTP_CHICK Non-specific lipid-transfer protein (Fragmen...  127     1e-34
+sp|P07857|NLTP_BOVIN Non-specific lipid-transfer protein OS=Bos t...  127     2e-34
+sp|Q2TBS3|SCP2D_BOVIN SCP2 sterol-binding domain-containing prote...  118     3e-34
+sp|Q9DAH1|SCP2D_MOUSE SCP2 sterol-binding domain-containing prote...  114     1e-32
+sp|Q4V8F9|HSDL2_RAT Hydroxysteroid dehydrogenase-like protein 2 O...  115     4e-30
+sp|Q2TPA8|HSDL2_MOUSE Hydroxysteroid dehydrogenase-like protein 2...  114     5e-30
+sp|A4FUZ6|HSDL2_BOVIN Hydroxysteroid dehydrogenase-like protein 2...  113     7e-30
+sp|Q66KC4|HSDL2_XENTR Hydroxysteroid dehydrogenase-like protein 2...  112     1e-29
+sp|P22307|NLTP_HUMAN Non-specific lipid-transfer protein OS=Homo ...  113     1e-29
+sp|Q6PAY8|HSDL2_XENLA Hydroxysteroid dehydrogenase-like protein 2...  112     1e-29
+sp|Q5RA68|HSDL2_PONAB Hydroxysteroid dehydrogenase-like protein 2...  112     1e-29
+sp|Q6YN16|HSDL2_HUMAN Hydroxysteroid dehydrogenase-like protein 2...  112     2e-29
+sp|P32020|NLTP_MOUSE Non-specific lipid-transfer protein OS=Mus m...  113     3e-29
+sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus ...  112     4e-29
+sp|O62742|NLTP_RABIT Non-specific lipid-transfer protein OS=Oryct...  110     2e-28
+sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 1 ...  102     2e-28
+sp|Q9UBI4|STML1_HUMAN Stomatin-like protein 1 OS=Homo sapiens OX=...  108     3e-28
+sp|Q8CI66|STML1_MOUSE Stomatin-like protein 1 OS=Mus musculus OX=...  107     8e-28
+sp|Q6P5L8|HSDL2_DANRE Hydroxysteroid dehydrogenase-like protein 2...  106     2e-27
+sp|Q9NKW1|MFEA_DICDI Peroxisomal multifunctional enzyme A OS=Dict...  106     4e-27
+sp|P80547|SCP2_YARLI Fatty acid-binding protein OS=Yarrowia lipol...  95.1    3e-25
+sp|Q9FMN0|SCP2_ARATH Sterol carrier protein 2 OS=Arabidopsis thal...  90.1    2e-23
+sp|Q00680|POX18_CANMA Oleate-induced peroxisomal protein POX18 OS...  89.7    3e-23
+sp|P22009|POX18_CANTR Oleate-induced peroxisomal protein POX18 OS...  87.4    3e-22
+
+Sequences not found previously or not previously below threshold:
+
+sp|P64599|UBIT_ECOLI Ubiquinone biosynthesis accessory factor Ubi...  41.2    3e-04
+sp|P64600|UBIT_ECOL6 Ubiquinone biosynthesis accessory factor Ubi...  41.2    3e-04
+sp|P64601|UBIT_ECO57 Ubiquinone biosynthesis accessory factor Ubi...  41.2    3e-04
+
+
+>sp|P97852|DHB4_RAT Peroxisomal multifunctional enzyme type 2 
+OS=Rattus norvegicus OX=10116 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 136 bits (343),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 28/111 (25%), Positives = 55/111 (50%), Gaps = 5/111 (5%)
+
+Query  5    SLKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVES  59
+            +L+S  VF +I +RL+ +     ++V  V+++ IT+ G V   W +DLKN         +
+Sbjct  620  ALQSALVFGEIGRRLKDVGREVVKKVNAVFEWHITKNGNVAAKWTIDLKNGSGEVYQGPA  679
+
+Query  60   DDAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+              +A+ T+T+ D+    +  G L  + A    +++  G + L   L+  + 
+Sbjct  680  KGSADTTITISDEDFMEVVLGKLNPQNAFFSGRLKARGNIMLSQKLQMILK  730
+
+
+>sp|P51660|DHB4_MOUSE Peroxisomal multifunctional enzyme type 
+2 OS=Mus musculus OX=10090 GN=Hsd17b4 PE=1 SV=3
+Length=735
+
+ Score = 130 bits (328),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 27/110 (25%), Positives = 55/110 (50%), Gaps = 5/110 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+            L+S  VF +I +RL+S+     ++   V+++ IT+GG V   W +DLK+         + 
+Sbjct  621  LQSALVFGEIGRRLKSVGREVVKKANAVFEWHITKGGTVAAKWTIDLKSGSGEVYQGPAK  680
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+             +A+ T+ + D+    +  G L  ++A    +++  G + L   L+  + 
+Sbjct  681  GSADVTIIISDEDFMEVVFGKLDPQKAFFSGRLKARGNIMLSQKLQMILK  730
+
+
+>sp|P51659|DHB4_HUMAN Peroxisomal multifunctional enzyme type 
+2 OS=Homo sapiens OX=9606 GN=HSD17B4 PE=1 SV=3
+Length=736
+
+ Score = 130 bits (327),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 28/110 (25%), Positives = 55/110 (50%), Gaps = 5/110 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+            L+S  VF +I +RL+ I     ++V  V+++ IT+GG +   W +DLK+         + 
+Sbjct  622  LQSTFVFEEIGRRLKDIGPEVVKKVNAVFEWHITKGGNIGAKWTIDLKSGSGKVYQGPAK  681
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+             AA+ T+ + D+    +  G L  ++A    +++  G + L   L+  + 
+Sbjct  682  GAADTTIILSDEDFMEVVLGKLDPQKAFFSGRLKARGNIMLSQKLQMILK  731
+
+
+>sp|Q9UJQ7|SCP2D_HUMAN SCP2 sterol-binding domain-containing protein 
+1 OS=Homo sapiens OX=9606 GN=SCP2D1 PE=2 SV=1
+Length=156
+
+ Score = 120 bits (302),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 26/110 (24%), Positives = 48/110 (44%), Gaps = 5/110 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             +S  VF  I   +  +     ++V  V++  IT+ GK +  W +DLKN         + 
+Sbjct  42   FESFPVFQDIRLHIREVGAQLVKKVNAVFQLDITKNGKTILRWTIDLKNGSGDMYPGPAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+              A+   T+ + +   +  G +  ++A    K +V G+V L + LE    
+Sbjct  102  LPADTVFTIPESVFMELVLGKMNPQKAFLAGKFKVSGKVLLSWKLERVFK  151
+
+
+>sp|Q07598|NLTP_CHICK Non-specific lipid-transfer protein (Fragment) 
+OS=Gallus gallus OX=9031 GN=SCP2 PE=2 SV=1
+Length=547
+
+ Score = 127 bits (320),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 34/108 (31%), Positives = 56/108 (52%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQG-GKVVKNWVMDLKNVKL---VESD  60
+             KS  VF +I K+L+       +++  V+ F+I  G G     WV+D+KN K    V SD
+Sbjct  431  FKSHLVFKEIEKKLQEEGEQFVKKIGGVFAFKIKDGPGGKEATWVVDVKNGKGSVAVNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+TM D  + A+ TG +  + A  Q K+++ G + +   L+  
+Sbjct  491  KKADCTITMADTDLLALMTGKMNPQTAFFQGKLKISGNMGMAMKLQNL  538
+
+
+>sp|P07857|NLTP_BOVIN Non-specific lipid-transfer protein OS=Bos 
+taurus OX=9913 GN=SCP2 PE=1 SV=2
+Length=543
+
+ Score = 127 bits (318),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 58/108 (54%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  427  FKANLVFKEIEKKLEDEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  486
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+TM D  + A+ TG +  + A  Q K++++G + L   L+  
+Sbjct  487  KKADCTITMADSDLLALMTGKMNPQTAFFQGKLKINGNMGLAMKLQNL  534
+
+
+>sp|Q2TBS3|SCP2D_BOVIN SCP2 sterol-binding domain-containing protein 
+1 OS=Bos taurus OX=9913 GN=SCP2D1 PE=2 SV=1
+Length=156
+
+ Score = 118 bits (297),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 25/110 (23%), Positives = 50/110 (45%), Gaps = 5/110 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             ++  VF  I++ ++ +     ++V  +++  IT+ GK V  W +DLKN         + 
+Sbjct  42   FQTVPVFEDISQHVKEVGSQLVKKVNAIFQLDITKDGKTVHQWTIDLKNGSGDTYRGPAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+              A+   T+ + +   +  G +  ++A    K +V G+V L   LE    
+Sbjct  102  LPADTVFTIPEPVFMELILGKMNPQKAFLAGKFKVSGKVLLGQKLERVFK  151
+
+
+>sp|Q9DAH1|SCP2D_MOUSE SCP2 sterol-binding domain-containing protein 
+1 OS=Mus musculus OX=10090 GN=Scp2d1 PE=2 SV=2
+Length=156
+
+ Score = 114 bits (286),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 25/111 (23%), Positives = 50/111 (45%), Gaps = 5/111 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESD  60
+             ++  VF  I++ ++ +     ++V  +++  IT+ GK +  W +DLKN      L  + 
+Sbjct  42   FQNFSVFEDISQHIKEVGAQLVKKVNAIFQLDITKDGKTILQWTIDLKNGAGDMYLGSAR  101
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIAS  111
+              A+    + D +   +  G +  ++A    K +V G+V L   LE     
+Sbjct  102  LPADTVFIIPDSVFTELVVGKINPQKAFLAGKFKVRGKVLLSQKLERIFRE  152
+
+
+>sp|Q4V8F9|HSDL2_RAT Hydroxysteroid dehydrogenase-like protein 
+2 OS=Rattus norvegicus OX=10116 GN=Hsdl2 PE=2 SV=1
+Length=524
+
+ Score = 115 bits (287),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 44/108 (41%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESDDAAE  64
+            +E F  +   L       R  + VY+F ++        W +DLK+    V   E  D A+
+Sbjct  417  EETFRIVKDSLSD--EVVRATQAVYQFELSGEDG--GTWFLDLKSKGGKVGHGEPSDRAD  472
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  +    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  473  VVMSMATEDFVKMFSGKLKPTMAFMSGKLKIKGNIALAIKLEKLMTHM  520
+
+
+>sp|Q2TPA8|HSDL2_MOUSE Hydroxysteroid dehydrogenase-like protein 
+2 OS=Mus musculus OX=10090 GN=Hsdl2 PE=1 SV=1
+Length=490
+
+ Score = 114 bits (285),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 25/108 (23%), Positives = 44/108 (41%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKN----VKLVESDDAAE  64
+            +E F  +   L       R  + VY+F ++        W +DLK+    V   E  D A+
+Sbjct  383  EETFRIVKDSLSD--EVVRATQAVYQFELSGEDG--GTWFLDLKSKGGKVGHGEPSDRAD  438
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  439  VVMSMATDDFVKMFSGKLKPTMAFMSGKLKIKGNIALAIKLEKLMTQM  486
+
+
+>sp|A4FUZ6|HSDL2_BOVIN Hydroxysteroid dehydrogenase-like protein 
+2 OS=Bos taurus OX=9913 GN=HSDL2 PE=2 SV=1
+Length=418
+
+ Score = 113 bits (283),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 44/108 (41%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + VY+F ++        W +DLK    N+   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--IVKATQAVYQFELSGEDG--GTWFLDLKSKGGNIGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMSTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|Q66KC4|HSDL2_XENTR Hydroxysteroid dehydrogenase-like protein 
+2 OS=Xenopus tropicalis OX=8364 GN=hsdl2 PE=2 SV=1
+Length=417
+
+ Score = 112 bits (281),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 24/107 (22%), Positives = 45/107 (42%), Gaps = 8/107 (7%)
+
+Query  10   EVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAEA  65
+            E F  I   +     A +  + +Y+F ++  G+   NW +DLKN K           A+ 
+Sbjct  311  ETFKAIESLVNE--EAVKTTQGIYQFVLS--GEESGNWFLDLKNGKGGVGSGEPSTKADV  366
+
+Query  66   TLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+             ++M+      + TG +    A    K+++ G + L   LE  +  +
+Sbjct  367  VMSMDSGDFIKMFTGKMKPTMAFMSGKLKIKGDMGLALKLEKILGQM  413
+
+
+>sp|P22307|NLTP_HUMAN Non-specific lipid-transfer protein OS=Homo 
+sapiens OX=9606 GN=SCP2 PE=1 SV=2
+Length=547
+
+ Score = 113 bits (284),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 56/108 (52%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+TM D    A+ TG +  + A  Q K+++ G + L   L+  
+Sbjct  491  KKADCTITMADSDFLALMTGKMNPQSAFFQGKLKITGNMGLAMKLQNL  538
+
+
+>sp|Q6PAY8|HSDL2_XENLA Hydroxysteroid dehydrogenase-like protein 
+2 OS=Xenopus laevis OX=8355 GN=hsdl2 PE=2 SV=1
+Length=417
+
+ Score = 112 bits (281),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 23/107 (21%), Positives = 45/107 (42%), Gaps = 8/107 (7%)
+
+Query  10   EVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAEA  65
+            E F  I + +     A +  + +Y+F ++  G+   NW +DLKN K           A+ 
+Sbjct  311  ETFKAIERSVNE--EAVKSTQGIYQFVLS--GEESGNWFLDLKNDKGGVGKGEPSTKADV  366
+
+Query  66   TLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+             ++M+      +  G +    A    K+++ G + L   LE  +  +
+Sbjct  367  VMSMDSGDFIKMFAGKMKPTMAFMSGKLKIKGDMGLALKLEKILGQM  413
+
+
+>sp|Q5RA68|HSDL2_PONAB Hydroxysteroid dehydrogenase-like protein 
+2 OS=Pongo abelii OX=9601 GN=HSDL2 PE=2 SV=1
+Length=418
+
+ Score = 112 bits (281),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 25/108 (23%), Positives = 43/108 (40%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + VY F ++        W +DLK    NV   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--VVKATQAVYLFELSGEDG--GTWFLDLKSKGGNVGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMTTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|Q6YN16|HSDL2_HUMAN Hydroxysteroid dehydrogenase-like protein 
+2 OS=Homo sapiens OX=9606 GN=HSDL2 PE=1 SV=1
+Length=418
+
+ Score = 112 bits (279),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 24/108 (22%), Positives = 43/108 (40%), Gaps = 8/108 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLK----NVKLVESDDAAE  64
+            +E F  +   L       +  + +Y F ++        W +DLK    NV   E  D A+
+Sbjct  311  EETFRIVKDSLSDD--VVKATQAIYLFELSGEDG--GTWFLDLKSKGGNVGYGEPSDQAD  366
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+              ++M  D    + +G L    A    K+++ G + L   LE  +  +
+Sbjct  367  VVMSMTTDDFVKMFSGKLKPTMAFMSGKLKIKGNMALAIKLEKLMNQM  414
+
+
+>sp|P32020|NLTP_MOUSE Non-specific lipid-transfer protein OS=Mus 
+musculus OX=10090 GN=Scp2 PE=1 SV=3
+Length=547
+
+ Score = 113 bits (282),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 33/108 (31%), Positives = 57/108 (53%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+TM D  + A+ TG +  + A  Q K+++ G + L   L+  
+Sbjct  491  KKADCTITMADSDLLALMTGKMNPQSAFFQGKLKIAGNMGLAMKLQNL  538
+
+
+>sp|P11915|NLTP_RAT Non-specific lipid-transfer protein OS=Rattus 
+norvegicus OX=10116 GN=Scp2 PE=1 SV=3
+Length=547
+
+ Score = 112 bits (281),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 32/108 (30%), Positives = 58/108 (54%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESIDP-ANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ +F +I K+LE       +++  ++ F++  G G     WV+D+KN K   L +SD
+Sbjct  431  FKANLIFKEIEKKLEEEGEEFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPDSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+TM D  + A+ TG +  + A  Q K+++ G + L   L+  
+Sbjct  491  KKADCTITMADSDLLALMTGKMNPQSAFFQGKLKIAGNMGLAMKLQSL  538
+
+
+>sp|O62742|NLTP_RABIT Non-specific lipid-transfer protein OS=Oryctolagus 
+cuniculus OX=9986 GN=SCP2 PE=1 SV=1
+Length=547
+
+ Score = 110 bits (276),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 32/108 (30%), Positives = 57/108 (53%), Gaps = 5/108 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQG-GKVVKNWVMDLKNVK---LVESD  60
+             K++ VF +I K+LE       +++  ++ F++  G G     WV+D+KN K   L  SD
+Sbjct  431  FKANLVFKEIEKKLEEEGEQFVKKIGGIFAFKVKDGPGGKEATWVVDVKNGKGSVLPNSD  490
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPF  108
+              A+ T+T+ D  + A+ TG +  + A  Q K+++ G + L   L+  
+Sbjct  491  KKADCTITIADSDLLALMTGKMNPQSAFFQGKLKITGNMGLAMKLQNL  538
+
+
+>sp|Q23655|NLTP1_CAEEL Non-specific lipid-transfer protein-like 
+1 OS=Caenorhabditis elegans OX=6239 GN=nlt-1 PE=4 SV=1
+Length=118
+
+ Score = 102 bits (255),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 47/109 (43%), Gaps = 3/109 (3%)
+
+Query  4    MSLKSDEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD--  61
+            M+ KSD +F +I +R+ +     ++V   ++  I       K W +D K+      DD  
+Sbjct  1    MAFKSDVIFEEIKERIATDKEMVKKVGTSFRMTIAGADGKTKVWTIDAKSDTPYVGDDSS  60
+
+Query  62   -AAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFI  109
+               E  + ++D    AI  G +   +A  Q KM++ G +     L   +
+Sbjct  61   RPVEIEINIKDSDFIAIAAGKMKPDQAFMQGKMKLKGNIAKAMKLRTIL  109
+
+
+>sp|Q9UBI4|STML1_HUMAN Stomatin-like protein 1 OS=Homo sapiens 
+OX=9606 GN=STOML1 PE=1 SV=1
+Length=398
+
+ Score = 108 bits (271),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 17/93 (18%), Positives = 33/93 (35%), Gaps = 4/93 (4%)
+
+Query  25   ANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESDDAAEATLTMEDDIMFAIGTG  80
+               QV   Y+F +         + +DL            D   +  + M +  + A+   
+Sbjct  306  LVSQVGACYQFNVVLPSGTQSAYFLDLTTGRGRVGHGVPDGIPDVVVEMAEADLRALLCR  365
+
+Query  81   ALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+             L    A    +++V G + +   LE  + +LK
+Sbjct  366  ELRPLGAYMSGRLKVKGDLAMAMKLEAVLRALK  398
+
+
+>sp|Q8CI66|STML1_MOUSE Stomatin-like protein 1 OS=Mus musculus 
+OX=10090 GN=Stoml1 PE=2 SV=1
+Length=399
+
+ Score = 107 bits (268),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 18/93 (19%), Positives = 36/93 (39%), Gaps = 4/93 (4%)
+
+Query  25   ANRQVEHVYKFRITQGGKVVKNWVMDLKNV----KLVESDDAAEATLTMEDDIMFAIGTG  80
+               QV   Y+F +         + +DL          E D   +  + M +  + A+ + 
+Sbjct  307  LVSQVGACYQFNVILPSGTQSIYFLDLTTGQGRVGHGEPDGIPDVVVEMAEADLQALLSK  366
+
+Query  81   ALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+             L    A    +++V G + ++  LE  + +LK
+Sbjct  367  ELRPLGAYMSGRLKVKGDLAVVMKLEAVLKALK  399
+
+
+>sp|Q6P5L8|HSDL2_DANRE Hydroxysteroid dehydrogenase-like protein 
+2 OS=Danio rerio OX=7955 GN=hsdl2 PE=2 SV=1
+Length=415
+
+ Score = 106 bits (265),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 44/109 (40%), Gaps = 8/109 (7%)
+
+Query  9    DEVFAKIAKRLESIDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLVESDD----AAE  64
+             E+F  I   +       +  + VYKF +   G+    W +DLKN      +      A+
+Sbjct  308  SEMFNTIRGIISP--EMVKTTQGVYKFNL--AGEHAGVWYLDLKNDAGSAGNGEPPVKAD  363
+
+Query  65   ATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+              ++M+ +    +  G L    A    K+ + G + L   LE  +A +K
+Sbjct  364  VVMSMDSEDFVKMFGGKLKPTMAFMSGKLTIKGDMGLAIKLEKMMAMMK  412
+
+
+>sp|Q9NKW1|MFEA_DICDI Peroxisomal multifunctional enzyme A OS=Dictyostelium 
+discoideum OX=44689 GN=mfeA PE=2 SV=1
+Length=441
+
+ Score = 106 bits (264),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 24/113 (21%), Positives = 45/113 (40%), Gaps = 6/113 (5%)
+
+Query  6    LKSDEVFAKIAKRLESID-PANRQVEHVYKFRITQGGKVVKNWVMDLKNVKL----VESD  60
+              + ++F  I   + +      +++  +Y   I +G      W +DLKN           
+Sbjct  329  YNASKIFTTIQGNIGAKGAELVKKINGIYLINIKKGTNTQA-WALDLKNGSGSIVVGAGS  387
+
+Query  61   DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASLK  113
+                 T+T+ D+    I TG L A+ A  + K+++ G + L   L   +   K
+Sbjct  388  TKPNVTITVSDEDFVDIMTGKLNAQSAFTKGKLKISGNMGLATKLGALMQGSK  440
+
+
+>sp|P80547|SCP2_YARLI Fatty acid-binding protein OS=Yarrowia lipolytica 
+(strain CLIB 122 / E 150) OX=284591 GN=SCP2 PE=1 SV=4
+Length=129
+
+ Score = 95.1 bits (235),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 23/116 (20%), Positives = 40/116 (34%), Gaps = 11/116 (9%)
+
+Query  6    LKSDEVFAKIAKRLES------IDPANRQVEHVYKFRITQGGKVVKNWVMDLKNVKLV--  57
+              S  +F  I   L           + ++   +  F +       ++W +DLKN   V  
+Sbjct  8    FTSSIIFDVIRDGLNDPSQAKQKAESIKKANAIIVFNLKNKAGKTESWYLDLKNDGDVGK  67
+
+Query  58   ---ESDDAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIA  110
+                    A+  LT+ DD    +  G   A+      K++V G V     +E  + 
+Sbjct  68   GNKSPKGDADIQLTLSDDHFQQLVEGKANAQRLFMTGKLKVKGNVMKAAAIEGILK  123
+
+
+>sp|Q9FMN0|SCP2_ARATH Sterol carrier protein 2 OS=Arabidopsis 
+thaliana OX=3702 GN=SCP2 PE=2 SV=1
+Length=123
+
+ Score = 90.1 bits (222),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 23/111 (21%), Positives = 47/111 (42%), Gaps = 7/111 (6%)
+
+Query  6    LKSDEVFAKIAKRLESI--DPANRQVEHVYKFRI--TQGGKVVKNWVMDLKNVKLVESD-  60
+            LKSD +   + + L +        ++  VY+  I   + G     +++DLK  ++ +   
+Sbjct  6    LKSDAIMDMMKEHLSTDAGKEVTEKIGLVYQINIAPKKLGFEEVTYIVDLKKGEVTKGKY  65
+
+Query  61   --DAAEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFI  109
+                 +AT + +DD    + TG +  + A  +  M++ G +       P I
+Sbjct  66   EGGKVDATFSFKDDDFVKVATGKMNPQMAFIRGAMKIKGSLSAAQKFTPDI  116
+
+
+>sp|Q00680|POX18_CANMA Oleate-induced peroxisomal protein POX18 
+OS=Candida maltosa OX=5479 GN=POX18 PE=2 SV=2
+Length=127
+
+ Score = 89.7 bits (221),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 21/114 (18%), Positives = 44/114 (39%), Gaps = 7/114 (6%)
+
+Query  6    LKSDEVFAKIAKRLESI---DPANRQVEHVYKFRITQGGKVVKNWVMDLKN-VKLVESDD  61
+              +  +F ++ + L      + A + V  V    +       ++WV+DLK    L + D 
+Sbjct  8    FNASPLFKELHEGLADKSKAEEAVKAVNAVIVITLKNKEGKEQSWVLDLKKAGTLAKVDG  67
+
+Query  62   AA---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            AA   +  L ++D     +    +  ++     K++V G +     +E     L
+Sbjct  68   AAPKGDVQLILKDVDFVKLANNKVNGQKLFMNGKLKVKGNMMKATAIESVFKKL  121
+
+
+>sp|P22009|POX18_CANTR Oleate-induced peroxisomal protein POX18 
+OS=Candida tropicalis OX=5482 GN=POX18 PE=1 SV=3
+Length=127
+
+ Score = 87.4 bits (215),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 20/114 (18%), Positives = 42/114 (37%), Gaps = 7/114 (6%)
+
+Query  6    LKSDEVFAKIAKRLESID---PANRQVEHVYKFRITQGGKVVKNWVMDLKN-VKLVESDD  61
+              +  +F ++   L        A + V  +    +       ++WV+DLK    L + D 
+Sbjct  8    FNASPLFKELNDGLADKAKAQEAVKAVNAIIVITLKNKEGKEQSWVLDLKKDGTLAKVDG  67
+
+Query  62   AA---EATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFLLEPFIASL  112
+            AA   +  L ++D     +    +  ++     K++V G +     +E     L
+Sbjct  68   AAPKGDVQLILKDVDFVKLANNKVNGQKLFMNGKLKVKGNMMKATAIEAVFKKL  121
+
+
+>sp|P64599|UBIT_ECOLI Ubiquinone biosynthesis accessory factor 
+UbiT OS=Escherichia coli (strain K12) OX=83333 GN=ubiT PE=3 
+SV=1
+Length=174
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/69 (19%), Positives = 30/69 (43%), Gaps = 1/69 (1%)
+
+Query  46   NWVMDLKNVKLVESDDA-AEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFL  104
+             W   + N KLV S +A A+ + + +   +  I            Q ++ ++G  EL   
+Sbjct  68   QWFTSVVNGKLVVSQNAQADVSFSADASDLLMIAARKQDPDTLFFQRRLVIEGDTELGLY  127
+
+Query  105  LEPFIASLK  113
+            ++  + +++
+Sbjct  128  VKNLMDAIE  136
+
+
+>sp|P64600|UBIT_ECOL6 Ubiquinone biosynthesis accessory factor 
+UbiT OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=ubiT PE=3 SV=1
+Length=174
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/69 (19%), Positives = 30/69 (43%), Gaps = 1/69 (1%)
+
+Query  46   NWVMDLKNVKLVESDDA-AEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFL  104
+             W   + N KLV S +A A+ + + +   +  I            Q ++ ++G  EL   
+Sbjct  68   QWFTSVVNGKLVVSQNAQADVSFSADASDLLMIAARKQDPDTLFFQRRLVIEGDTELGLY  127
+
+Query  105  LEPFIASLK  113
+            ++  + +++
+Sbjct  128  VKNLMDAIE  136
+
+
+>sp|P64601|UBIT_ECO57 Ubiquinone biosynthesis accessory factor 
+UbiT OS=Escherichia coli O157:H7 OX=83334 GN=ubiT PE=3 SV=1
+Length=174
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/69 (19%), Positives = 30/69 (43%), Gaps = 1/69 (1%)
+
+Query  46   NWVMDLKNVKLVESDDA-AEATLTMEDDIMFAIGTGALPAKEAMAQDKMEVDGQVELIFL  104
+             W   + N KLV S +A A+ + + +   +  I            Q ++ ++G  EL   
+Sbjct  68   QWFTSVVNGKLVVSQNAQADVSFSADASDLLMIAARKQDPDTLFFQRRLVIEGDTELGLY  127
+
+Query  105  LEPFIASLK  113
+            ++  + +++
+Sbjct  128  VKNLMDAIE  136
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

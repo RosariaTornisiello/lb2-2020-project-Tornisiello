@@ -1,0 +1,349 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4zy8_A
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q6CXP4|LST4_KLULA Protein LST4 OS=Kluyveromyces lactis (strain...  283     2e-91
+sp|Q757Y7|LST4_ASHGO Protein LST4 OS=Ashbya gossypii (strain ATCC...  95.1    3e-22
+sp|P34239|LST4_YEAST Protein LST4 OS=Saccharomyces cerevisiae (st...  87.4    2e-19
+sp|A6ZZE9|LST4_YEAS7 Protein LST4 OS=Saccharomyces cerevisiae (st...  87.4    2e-19
+sp|A7TFI4|LST4_VANPO Protein LST4 OS=Vanderwaltozyma polyspora (s...  76.3    1e-15
+sp|Q6FJ91|LST4_CANGA Protein LST4 OS=Candida glabrata (strain ATC...  47.0    2e-05
+
+
+>sp|Q6CXP4|LST4_KLULA Protein LST4 OS=Kluyveromyces lactis (strain 
+ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 
+/ WM37) OX=284590 GN=LST4 PE=1 SV=1
+Length=714
+
+ Score = 283 bits (723),  Expect = 2e-91, Method: Compositional matrix adjust.
+ Identities = 145/162 (90%), Positives = 145/162 (90%), Gaps = 13/162 (8%)
+
+Query  1    GFRLIISQELX------NYQVVLDHSSVNF--XAHIPLNELKDYIFGXSIRTIDYSASSD  52
+            GFRLIISQEL       NYQVVLDHSSVNF   AHIPLNELKDYIFG SIRTIDYSASSD
+Sbjct  65   GFRLIISQELGHVTSRNNYQVVLDHSSVNFHTGAHIPLNELKDYIFGSSIRTIDYSASSD  124
+
+Query  53   KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  112
+            KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL
+Sbjct  125  KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  184
+
+Query  113  KYLAKNDTQFLPH-----XCIEVAAVLQTFQRKIIPLLSGYS  149
+            KYLAKNDTQFLPH      CIEVAAVLQTFQRKIIPLLSGYS
+Sbjct  185  KYLAKNDTQFLPHDWKARNCIEVAAVLQTFQRKIIPLLSGYS  226
+
+
+>sp|Q757Y7|LST4_ASHGO Protein LST4 OS=Ashbya gossypii (strain 
+ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) OX=284811 
+GN=LST4 PE=3 SV=2
+Length=691
+
+ Score = 95.1 bits (235),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 58/163 (36%), Positives = 87/163 (53%), Gaps = 20/163 (12%)
+
+Query  2    FRLIISQEL------XNYQVVLDHSSVNFX-----AHIPLNELKDYIFGXSIRTIDYSAS  50
+            FRL+++QEL       NYQVVLD            A +PL+ELK+YIFG  +R  D    
+Sbjct  72   FRLVVAQELGQMMSRDNYQVVLDCGGTRAAVGSGGAEMPLSELKEYIFGSPVRLSD-RCR  130
+
+Query  51   SDKIKVVKSANIVLFTRIFYLN-EKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCEN  109
+            SDK+K+ + A +++ TRIFY     +  R+A+ CC+ +  L V+TECW  +S++ D+ ++
+Sbjct  131  SDKLKLSRGARVIVVTRIFYTGYAGNARRLAVCCCIPEQFLTVVTECWSQVSAWFDEVQD  190
+
+Query  110  TLLKYLAKNDTQFLPHXC-----IEVAAVLQTFQRKIIPLLSG  147
+             L+  L       LP         +V  +L  F R +I  L G
+Sbjct  191  VLMPLLEAE--PLLPKDLRVSAPAQVDVLLHKFYRHLILPLHG  231
+
+
+>sp|P34239|LST4_YEAST Protein LST4 OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=LST4 PE=1 SV=1
+Length=828
+
+ Score = 87.4 bits (215),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 57/177 (32%), Positives = 91/177 (51%), Gaps = 30/177 (17%)
+
+Query  1    GFRLIISQELX------NYQVVLDHSSV---NFXAHIPLNELKDYIFGXSIRTIDYSASS  51
+             FR++I +E        NY+ + D+++    N    I  +ELK+YIFG  +R+ D +   
+Sbjct  118  AFRILIIEEAGQMACRNNYRDIFDYTTSKISNSMEQIRPSELKEYIFGSPVRSSDLTQC-  176
+
+Query  52   DKIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTL  111
+            DKI+ + ++++VL TRIFY   +   RIAIS C+   +LPV+ E W  ISS+L Q +  L
+Sbjct  177  DKIRTIPNSDLVLITRIFYYTHQYN-RIAISLCIPRILLPVVAESWSSISSWLTQTQKML  235
+
+Query  112  LKYLAKN-------------------DTQFLPHXCIEVAAVLQTFQRKIIPLLSGYS  149
+            + +L KN                   +     H   E+  ++QT Q+++IP L   S
+Sbjct  236  IGFLTKNRIMQENTGNYSNNSVIKLSNIDIRTHYPKEIEIMVQTLQKRVIPGLRSMS  292
+
+
+>sp|A6ZZE9|LST4_YEAS7 Protein LST4 OS=Saccharomyces cerevisiae 
+(strain YJM789) OX=307796 GN=LST4 PE=3 SV=1
+Length=828
+
+ Score = 87.4 bits (215),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 57/177 (32%), Positives = 91/177 (51%), Gaps = 30/177 (17%)
+
+Query  1    GFRLIISQELX------NYQVVLDHSSV---NFXAHIPLNELKDYIFGXSIRTIDYSASS  51
+             FR++I +E        NY+ + D+++    N    I  +ELK+YIFG  +R+ D +   
+Sbjct  118  AFRILIIEEAGQMACRNNYRDIFDYTTSKISNSMEQIRPSELKEYIFGSPVRSSDLTQC-  176
+
+Query  52   DKIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTL  111
+            DKI+ + ++++VL TRIFY   +   RIAIS C+   +LPV+ E W  ISS+L Q +  L
+Sbjct  177  DKIRTIPNSDLVLITRIFYYTHQYN-RIAISLCIPRILLPVVAESWSSISSWLTQTQKML  235
+
+Query  112  LKYLAKN-------------------DTQFLPHXCIEVAAVLQTFQRKIIPLLSGYS  149
+            + +L KN                   +     H   E+  ++QT Q+++IP L   S
+Sbjct  236  IGFLTKNRIMQENTGNYSNNSVIKLSNIDIRTHYPKEIEIMVQTLQKRVIPGLRSMS  292
+
+
+>sp|A7TFI4|LST4_VANPO Protein LST4 OS=Vanderwaltozyma polyspora 
+(strain ATCC 22028 / DSM 70294) OX=436907 GN=LST4 PE=3 SV=1
+Length=797
+
+ Score = 76.3 bits (186),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 52/178 (29%), Positives = 92/178 (52%), Gaps = 33/178 (19%)
+
+Query  1    GFRLIISQEL------XNYQVVLDH--SSVNFXAHIPLNELKDYIFGXSIRTIDYSASSD  52
+             FRL++++E        NY+VVLD+     ++   I  +ELK+YIFG  +R+ D S   D
+Sbjct  102  SFRLLLTEETGQMVCRNNYRVVLDYVTPKGSYIEQIRPSELKEYIFGSPVRSSD-SLEVD  160
+
+Query  53   KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  112
+            KI+V+ ++NI++ +R F+++ K   R+AI  C+    LPV+ E W  +S++LD  + +++
+Sbjct  161  KIRVIPNSNILIISRTFHVSSKIN-RLAICLCLPSYYLPVVMEAWRQVSTWLDNTQASII  219
+
+Query  113  KYLAK---------------------NDTQFLPHXCIEVAAVLQTFQRKIIPLLSGYS  149
+              +++                      D +F      E  +++   QRKI+P L   S
+Sbjct  220  SIISRLKKPPSTLHLQCDKELSCLLPADARF--QFVSEFESIILALQRKIVPCLRSIS  275
+
+
+>sp|Q6FJ91|LST4_CANGA Protein LST4 OS=Candida glabrata (strain 
+ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL Y-65) OX=284593 
+GN=LST4 PE=3 SV=1
+Length=840
+
+ Score = 47.0 bits (110),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 37/147 (25%), Positives = 67/147 (46%), Gaps = 37/147 (25%)
+
+Query  2    FRLIISQE------LXNYQVVLDHSS-------------VNFXAHIPL---NELKDYIFG  39
+            +RL+I +E         Y+ +LD+SS              N     P    +EL+ YI+G
+Sbjct  39   YRLLILEENAEMVCRQRYRTILDYSSRGHGSMGLKHDEMTNGNVSAPFITASELRQYIYG  98
+
+Query  40   XSIRTIDYSASSDKIKVVKSANIVLFTRIFY-----LN---------EKSTLRIAISCCV  85
+              IR+     + DK +++ ++  +L TR+FY     +N         + S  R++I+ C+
+Sbjct  99   SPIRS-KTRVTEDKFRIIPNSRQLLITRVFYPRRTSMNLHGTFPKNYQSSDRRVSITMCL  157
+
+Query  86   TDDVLPVLTECWPHISSFLDQCENTLL  112
+               +L  +++ W  I  +L Q E  L+
+Sbjct  158  PSYLLADISDSWADIDGWLTQTERHLM  184
+
+
+
+Lambda      K        H        a         alpha
+   0.325    0.139    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6129619556
+Results from round 2
+
+
+Query= 4zy8_A
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q6CXP4|LST4_KLULA Protein LST4 OS=Kluyveromyces lactis (strain...  197     5e-59
+sp|P34239|LST4_YEAST Protein LST4 OS=Saccharomyces cerevisiae (st...  180     2e-52
+sp|A6ZZE9|LST4_YEAS7 Protein LST4 OS=Saccharomyces cerevisiae (st...  180     2e-52
+sp|Q757Y7|LST4_ASHGO Protein LST4 OS=Ashbya gossypii (strain ATCC...  177     8e-52
+sp|A7TFI4|LST4_VANPO Protein LST4 OS=Vanderwaltozyma polyspora (s...  166     2e-47
+sp|Q6FJ91|LST4_CANGA Protein LST4 OS=Candida glabrata (strain ATC...  127     1e-33
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q6CXP4|LST4_KLULA Protein LST4 OS=Kluyveromyces lactis (strain 
+ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 
+/ WM37) OX=284590 GN=LST4 PE=1 SV=1
+Length=714
+
+ Score = 197 bits (501),  Expect = 5e-59, Method: Composition-based stats.
+ Identities = 145/162 (90%), Positives = 145/162 (90%), Gaps = 13/162 (8%)
+
+Query  1    GFRLIISQELX------NYQVVLDHSSVNFX--AHIPLNELKDYIFGXSIRTIDYSASSD  52
+            GFRLIISQEL       NYQVVLDHSSVNF   AHIPLNELKDYIFG SIRTIDYSASSD
+Sbjct  65   GFRLIISQELGHVTSRNNYQVVLDHSSVNFHTGAHIPLNELKDYIFGSSIRTIDYSASSD  124
+
+Query  53   KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  112
+            KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL
+Sbjct  125  KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  184
+
+Query  113  KYLAKNDTQFLPH-----XCIEVAAVLQTFQRKIIPLLSGYS  149
+            KYLAKNDTQFLPH      CIEVAAVLQTFQRKIIPLLSGYS
+Sbjct  185  KYLAKNDTQFLPHDWKARNCIEVAAVLQTFQRKIIPLLSGYS  226
+
+
+>sp|P34239|LST4_YEAST Protein LST4 OS=Saccharomyces cerevisiae 
+(strain ATCC 204508 / S288c) OX=559292 GN=LST4 PE=1 SV=1
+Length=828
+
+ Score = 180 bits (456),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 57/177 (32%), Positives = 91/177 (51%), Gaps = 30/177 (17%)
+
+Query  1    GFRLIISQE------LXNYQVVLDHSSV---NFXAHIPLNELKDYIFGXSIRTIDYSASS  51
+             FR++I +E        NY+ + D+++    N    I  +ELK+YIFG  +R+ D +   
+Sbjct  118  AFRILIIEEAGQMACRNNYRDIFDYTTSKISNSMEQIRPSELKEYIFGSPVRSSDLTQC-  176
+
+Query  52   DKIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTL  111
+            DKI+ + ++++VL TRIFY   +   RIAIS C+   +LPV+ E W  ISS+L Q +  L
+Sbjct  177  DKIRTIPNSDLVLITRIFYYTHQYN-RIAISLCIPRILLPVVAESWSSISSWLTQTQKML  235
+
+Query  112  LKYLAKN-------------------DTQFLPHXCIEVAAVLQTFQRKIIPLLSGYS  149
+            + +L KN                   +     H   E+  ++QT Q+++IP L   S
+Sbjct  236  IGFLTKNRIMQENTGNYSNNSVIKLSNIDIRTHYPKEIEIMVQTLQKRVIPGLRSMS  292
+
+
+>sp|A6ZZE9|LST4_YEAS7 Protein LST4 OS=Saccharomyces cerevisiae 
+(strain YJM789) OX=307796 GN=LST4 PE=3 SV=1
+Length=828
+
+ Score = 180 bits (456),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 57/177 (32%), Positives = 91/177 (51%), Gaps = 30/177 (17%)
+
+Query  1    GFRLIISQE------LXNYQVVLDHSSV---NFXAHIPLNELKDYIFGXSIRTIDYSASS  51
+             FR++I +E        NY+ + D+++    N    I  +ELK+YIFG  +R+ D +   
+Sbjct  118  AFRILIIEEAGQMACRNNYRDIFDYTTSKISNSMEQIRPSELKEYIFGSPVRSSDLTQC-  176
+
+Query  52   DKIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTL  111
+            DKI+ + ++++VL TRIFY   +   RIAIS C+   +LPV+ E W  ISS+L Q +  L
+Sbjct  177  DKIRTIPNSDLVLITRIFYYTHQYN-RIAISLCIPRILLPVVAESWSSISSWLTQTQKML  235
+
+Query  112  LKYLAKN-------------------DTQFLPHXCIEVAAVLQTFQRKIIPLLSGYS  149
+            + +L KN                   +     H   E+  ++QT Q+++IP L   S
+Sbjct  236  IGFLTKNRIMQENTGNYSNNSVIKLSNIDIRTHYPKEIEIMVQTLQKRVIPGLRSMS  292
+
+
+>sp|Q757Y7|LST4_ASHGO Protein LST4 OS=Ashbya gossypii (strain 
+ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) OX=284811 
+GN=LST4 PE=3 SV=2
+Length=691
+
+ Score = 177 bits (450),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 56/163 (34%), Positives = 85/163 (52%), Gaps = 16/163 (10%)
+
+Query  1    GFRLIISQELX------NYQVVLDHSSVN-----FXAHIPLNELKDYIFGXSIRTIDYSA  49
+             FRL+++QEL       NYQVVLD            A +PL+ELK+YIFG  +R  D   
+Sbjct  71   TFRLVVAQELGQMMSRDNYQVVLDCGGTRAAVGSGGAEMPLSELKEYIFGSPVRLSD-RC  129
+
+Query  50   SSDKIKVVKSANIVLFTRIFYLN-EKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCE  108
+             SDK+K+ + A +++ TRIFY     +  R+A+ CC+ +  L V+TECW  +S++ D+ +
+Sbjct  130  RSDKLKLSRGARVIVVTRIFYTGYAGNARRLAVCCCIPEQFLTVVTECWSQVSAWFDEVQ  189
+
+Query  109  NTLLKYLAKNDT---QFLPHXCIEVAAVLQTFQRKIIPLLSGY  148
+            + L+  L                +V  +L  F R +I  L G 
+Sbjct  190  DVLMPLLEAEPLLPKDLRVSAPAQVDVLLHKFYRHLILPLHGL  232
+
+
+>sp|A7TFI4|LST4_VANPO Protein LST4 OS=Vanderwaltozyma polyspora 
+(strain ATCC 22028 / DSM 70294) OX=436907 GN=LST4 PE=3 SV=1
+Length=797
+
+ Score = 166 bits (420),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 52/176 (30%), Positives = 91/176 (52%), Gaps = 29/176 (16%)
+
+Query  1    GFRLIISQE------LXNYQVVLDH--SSVNFXAHIPLNELKDYIFGXSIRTIDYSASSD  52
+             FRL++++E        NY+VVLD+     ++   I  +ELK+YIFG  +R+ D S   D
+Sbjct  102  SFRLLLTEETGQMVCRNNYRVVLDYVTPKGSYIEQIRPSELKEYIFGSPVRSSD-SLEVD  160
+
+Query  53   KIKVVKSANIVLFTRIFYLNEKSTLRIAISCCVTDDVLPVLTECWPHISSFLDQCENTLL  112
+            KI+V+ ++NI++ +R F+++ K   R+AI  C+    LPV+ E W  +S++LD  + +++
+Sbjct  161  KIRVIPNSNILIISRTFHVSSKIN-RLAICLCLPSYYLPVVMEAWRQVSTWLDNTQASII  219
+
+Query  113  KYLAKNDTQ--------------FLP-----HXCIEVAAVLQTFQRKIIPLLSGYS  149
+              +++                   LP         E  +++   QRKI+P L   S
+Sbjct  220  SIISRLKKPPSTLHLQCDKELSCLLPADARFQFVSEFESIILALQRKIVPCLRSIS  275
+
+
+>sp|Q6FJ91|LST4_CANGA Protein LST4 OS=Candida glabrata (strain 
+ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL Y-65) OX=284593 
+GN=LST4 PE=3 SV=1
+Length=840
+
+ Score = 127 bits (319),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 42/182 (23%), Positives = 74/182 (41%), Gaps = 45/182 (25%)
+
+Query  2    FRLIISQE------LXNYQVVLDHSS-------------VNFXAHIPL---NELKDYIFG  39
+            +RL+I +E         Y+ +LD+SS              N     P    +EL+ YI+G
+Sbjct  39   YRLLILEENAEMVCRQRYRTILDYSSRGHGSMGLKHDEMTNGNVSAPFITASELRQYIYG  98
+
+Query  40   XSIRTIDYSASSDKIKVVKSANIVLFTRIFYLN--------------EKSTLRIAISCCV  85
+              IR+     + DK +++ ++  +L TR+FY                + S  R++I+ C+
+Sbjct  99   SPIRS-KTRVTEDKFRIIPNSRQLLITRVFYPRRTSMNLHGTFPKNYQSSDRRVSITMCL  157
+
+Query  86   TDDVLPVLTECWPHISSFLDQCENTLLKYLAKNDTQFLPHXCIEVAAVLQTFQRKIIPLL  145
+               +L  +++ W  I  +L Q E  L+       T F  H        +    + +IP L
+Sbjct  158  PSYLLADISDSWADIDGWLTQTERHLMA------TSF--HVVETQDNFVTLVNKLLIPAL  209
+
+Query  146  SG  147
+              
+Sbjct  210  RS  211
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.138    0.371    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6129619556
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,169 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6kmh_C
+
+Length=49
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q02410|APBA1_HUMAN Amyloid-beta A4 precursor protein-binding f...  100     7e-26
+sp|B2RUJ5|APBA1_MOUSE Amyloid-beta A4 precursor protein-binding f...  99.8    1e-25
+sp|O35430|APBA1_RAT Amyloid-beta A4 precursor protein-binding fam...  99.8    1e-25
+
+
+>sp|Q02410|APBA1_HUMAN Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Homo sapiens OX=9606 GN=APBA1 PE=1 SV=3
+Length=837
+
+ Score = 100 bits (249),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  336  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  383
+
+
+>sp|B2RUJ5|APBA1_MOUSE Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Mus musculus OX=10090 GN=Apba1 PE=1 
+SV=2
+Length=842
+
+ Score = 99.8 bits (247),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  341  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  388
+
+
+>sp|O35430|APBA1_RAT Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Rattus norvegicus OX=10116 GN=Apba1 PE=1 
+SV=1
+Length=839
+
+ Score = 99.8 bits (247),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  338  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  385
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.131    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5141104074
+Results from round 2
+
+
+Query= 6kmh_C
+
+Length=49
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q02410|APBA1_HUMAN Amyloid-beta A4 precursor protein-binding f...  102     2e-26
+sp|B2RUJ5|APBA1_MOUSE Amyloid-beta A4 precursor protein-binding f...  101     4e-26
+sp|O35430|APBA1_RAT Amyloid-beta A4 precursor protein-binding fam...  100     6e-26
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q02410|APBA1_HUMAN Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Homo sapiens OX=9606 GN=APBA1 PE=1 SV=3
+Length=837
+
+ Score = 102 bits (254),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  336  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  383
+
+
+>sp|B2RUJ5|APBA1_MOUSE Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Mus musculus OX=10090 GN=Apba1 PE=1 
+SV=2
+Length=842
+
+ Score = 101 bits (251),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  341  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  388
+
+
+>sp|O35430|APBA1_RAT Amyloid-beta A4 precursor protein-binding 
+family A member 1 OS=Rattus norvegicus OX=10116 GN=Apba1 PE=1 
+SV=1
+Length=839
+
+ Score = 100 bits (250),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 48/48 (100%), Positives = 48/48 (100%), Gaps = 0/48 (0%)
+
+Query  2    QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  49
+            QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ
+Sbjct  338  QRYSKEKRDAISLAIKDIKEAIEEVKTRTIRSPYTPDEPKEPIWVMRQ  385
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.135    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0414    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5141104074
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

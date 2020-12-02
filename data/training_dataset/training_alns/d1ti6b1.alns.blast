@@ -1,0 +1,281 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ti6b1
+
+Length=79
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P80564|PGTS_PELAC Pyrogallol hydroxytransferase small subunit ...  160     5e-50
+
+
+>sp|P80564|PGTS_PELAC Pyrogallol hydroxytransferase small subunit 
+OS=Pelobacter acidigallici OX=35816 GN=bthL PE=1 SV=2
+Length=274
+
+ Score = 160 bits (406),  Expect = 5e-50, Method: Composition-based stats.
+ Identities = 79/79 (100%), Positives = 79/79 (100%), Gaps = 0/79 (0%)
+
+Query  1    KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS  60
+            KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS
+Sbjct  196  KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS  255
+
+Query  61   YSDTVVIDDKSVDLGFIKL  79
+            YSDTVVIDDKSVDLGFIKL
+Sbjct  256  YSDTVVIDDKSVDLGFIKL  274
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.137    0.384    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064704014
+Results from round 2
+
+
+Query= d1ti6b1
+
+Length=79
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P80564|PGTS_PELAC Pyrogallol hydroxytransferase small subunit ...  167     1e-52
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q932F7|SDRE_STAAM Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|O86489|SDRE_STAAE Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q5HIB2|SDRE_STAAC Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q99W46|SDRE_STAAN Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q2FJ77|SDRE_STAA3 Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q8NXX5|SDRE_STAAW Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q6GBS4|SDRE_STAAS Serine-aspartate repeat-containing protein E...  38.1    0.002
+sp|Q6GJA6|BBP_STAAR Bone sialoprotein-binding protein OS=Staphylo...  38.1    0.003
+sp|Q14U76|BBP_STAAU Bone sialoprotein-binding protein OS=Staphylo...  38.1    0.003
+
+
+>sp|P80564|PGTS_PELAC Pyrogallol hydroxytransferase small subunit 
+OS=Pelobacter acidigallici OX=35816 GN=bthL PE=1 SV=2
+Length=274
+
+ Score = 167 bits (424),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 79/79 (100%), Positives = 79/79 (100%), Gaps = 0/79 (0%)
+
+Query  1    KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS  60
+            KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS
+Sbjct  196  KNYVTAGILVQGDCFEGAKVVLKSGGKEVASAETNFFGEFKFDALDNGEYTVEIDADGKS  255
+
+Query  61   YSDTVVIDDKSVDLGFIKL  79
+            YSDTVVIDDKSVDLGFIKL
+Sbjct  256  YSDTVVIDDKSVDLGFIKL  274
+
+
+>sp|Q932F7|SDRE_STAAM Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 
+GN=sdrE PE=1 SV=1
+Length=1141
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  803  TTTGVIKDADNMTLDSGFYK  822
+
+
+>sp|O86489|SDRE_STAAE Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain Newman) OX=426430 GN=sdrE 
+PE=1 SV=1
+Length=1166
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  748  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTADDKDSNGL  807
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  808  TTTGVIKDADNMTLDRGFYK  827
+
+
+>sp|Q5HIB2|SDRE_STAAC Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain COL) OX=93062 GN=sdrE 
+PE=3 SV=1
+Length=1166
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  748  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTADDKDSNGL  807
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  808  TTTGVIKDADNMTLDRGFYK  827
+
+
+>sp|Q99W46|SDRE_STAAN Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain N315) OX=158879 GN=sdrE 
+PE=1 SV=1
+Length=1141
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  803  TTTGVIKDADNMTLDSGFYK  822
+
+
+>sp|Q2FJ77|SDRE_STAA3 Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain USA300) OX=367830 GN=sdrE 
+PE=3 SV=1
+Length=1154
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  748  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTADDKDSNGL  807
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  808  TTTGVIKDADNMTLDSGFYK  827
+
+
+>sp|Q8NXX5|SDRE_STAAW Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain MW2) OX=196620 GN=sdrE 
+PE=3 SV=1
+Length=1141
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  803  TTTGVIKDADNMTLDSGFYK  822
+
+
+>sp|Q6GBS4|SDRE_STAAS Serine-aspartate repeat-containing protein 
+E OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=sdrE 
+PE=1 SV=1
+Length=1141
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 38/80 (48%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVI---DDKSVDLGFIK  78
+            + T VI   D+ ++D GF K
+Sbjct  803  TTTGVIKDADNMTLDSGFYK  822
+
+
+>sp|Q6GJA6|BBP_STAAR Bone sialoprotein-binding protein OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=bbp PE=3 SV=1
+Length=1137
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 37/80 (46%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVIDDK---SVDLGFIK  78
+            + T VI D    ++D GF K
+Sbjct  803  TTTGVIKDADNWTLDSGFYK  822
+
+
+>sp|Q14U76|BBP_STAAU Bone sialoprotein-binding protein OS=Staphylococcus 
+aureus OX=1280 GN=bbp PE=1 SV=1
+Length=1149
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 37/80 (46%), Gaps = 20/80 (25%)
+
+Query  19   KVVLK-SGGKEVASAETNFFGEFKFDALDNGEYTVEI----------------DADGKSY  61
+            KV LK S GK + +  T+  G++KF  LDNG YTVE                 D D    
+Sbjct  743  KVTLKDSTGKVIGTTTTDASGKYKFTDLDNGNYTVEFETPAGYTPTVKNTTAEDKDSNGL  802
+
+Query  62   SDTVVIDDK---SVDLGFIK  78
+            + T VI D    ++D GF K
+Sbjct  803  TTTGVIKDADNWTLDSGFYK  822
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.139    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5064704014
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

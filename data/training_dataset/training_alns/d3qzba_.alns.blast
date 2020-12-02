@@ -1,0 +1,1095 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3qzba_
+
+Length=131
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga m...  268     2e-93
+sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 GN...  161     5e-51
+sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus (...  148     5e-46
+sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobu...  142     2e-43
+sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii...  109     7e-31
+sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakare...  106     1e-29
+sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi (st...  102     6e-28
+sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldo...  59.3    4e-11
+sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus fu...  49.7    2e-07
+sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobac...  43.1    6e-05
+sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii (s...  42.0    2e-04
+sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis...  42.0    2e-04
+sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris (...  40.8    5e-04
+sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus ...  40.4    6e-04
+
+
+>sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) 
+OX=243274 GN=TM_0658 PE=1 SV=1
+Length=131
+
+ Score = 268 bits (685),  Expect = 2e-93, Method: Compositional matrix adjust.
+ Identities = 131/131 (100%), Positives = 131/131 (100%), Gaps = 0/131 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF
+Sbjct  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL
+Sbjct  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+
+Query  121  WESSQKITVEE  131
+            WESSQKITVEE
+Sbjct  121  WESSQKITVEE  131
+
+
+>sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 
+GN=nlr PE=1 SV=1
+Length=130
+
+ Score = 161 bits (407),  Expect = 5e-51, Method: Compositional matrix adjust.
+ Identities = 70/130 (54%), Positives = 93/130 (72%), Gaps = 0/130 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MK+ D  +T D+K EKHVP IE  + V  D    + V++GKEI HPNTTEHHIRWI+ +F
+Sbjct  1    MKMCDMFQTADWKTEKHVPAIECDDAVAADAFFPVTVSLGKEIAHPNTTEHHIRWIRCYF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            +P+GD + YEVG +EF AHGE  +GPN G VYT  TVT  +K+   G ++A S+CNIHGL
+Sbjct  61   KPEGDKFSYEVGSFEFTAHGECAKGPNEGPVYTNHTVTFQLKIKTPGVLVASSFCNIHGL  120
+
+Query  121  WESSQKITVE  130
+            WESS+ + ++
+Sbjct  121  WESSKAVALK  130
+
+
+>sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus 
+(strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=sorA PE=1 SV=1
+Length=124
+
+ Score = 148 bits (373),  Expect = 5e-46, Method: Compositional matrix adjust.
+ Identities = 71/121 (59%), Positives = 92/121 (76%), Gaps = 3/121 (2%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            +S+ I++ D+K EKHVPVIE     ++ E V++ V VGKEIPHPNTTEHHIR+I+++F P
+Sbjct  2    ISETIRSGDWKGEKHVPVIEYE---REGELVKVKVQVGKEIPHPNTTEHHIRYIELYFLP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G+ +VY+VGR EF AHGESV GPN   VYTEP    V+K  + G + ALSYCNIHGLWE
+Sbjct  59   EGENFVYQVGRVEFTAHGESVNGPNTSDVYTEPIAYFVLKTKKKGKLYALSYCNIHGLWE  118
+
+Query  123  S  123
+            +
+Sbjct  119  N  119
+
+
+>sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0344 PE=1 SV=1
+Length=125
+
+ Score = 142 bits (357),  Expect = 2e-43, Method: Compositional matrix adjust.
+ Identities = 67/126 (53%), Positives = 84/126 (67%), Gaps = 2/126 (2%)
+
+Query  5    DFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDG  64
+            +  +T D+KKEKHVPVIE      +   V++ V+VGKEIPHPNTTEHHI WI++ FQP+G
+Sbjct  2    ELFQTADWKKEKHVPVIEVLRA--EGGVVEVKVSVGKEIPHPNTTEHHIAWIELVFQPEG  59
+
+Query  65   DPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+              + Y VGR EF AHG SV GPN   VYT+P      K  +SG + A SYCNIHGLW   
+Sbjct  60   SKFPYVVGRAEFAAHGASVDGPNTSGVYTDPVAVFAFKAEKSGKLTAFSYCNIHGLWMGE  119
+
+Query  125  QKITVE  130
+              +++E
+Sbjct  120  ATLSLE  125
+
+
+>sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii 
+(strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 
+/ OT-3) OX=70601 GN=sorA PE=1 SV=2
+Length=115
+
+ Score = 109 bits (273),  Expect = 7e-31, Method: Compositional matrix adjust.
+ Identities = 56/125 (45%), Positives = 79/125 (63%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L + I++ D+K EKHVPVIE     ++ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKETIRSGDWKGEKHVPVIEYE---REGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G  +   VGR EF  H + +         TEP      K ++ G + ALSYCNIHGLWE
+Sbjct  59   EGGQFPILVGRVEFTNHSDPL---------TEPRAVFFFKTSKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakarensis 
+(strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 GN=sorA 
+PE=3 SV=1
+Length=115
+
+ Score = 106 bits (265),  Expect = 1e-29, Method: Compositional matrix adjust.
+ Identities = 58/128 (45%), Positives = 81/128 (63%), Gaps = 14/128 (11%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            LS  IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LSQTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIQLWFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VG+ EF+ H + +         TEP      +  + G + ALSYCNIHGLWE
+Sbjct  59   EDGAFPILVGKVEFSNHTDPL---------TEPRAVFFFRTQKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKITVE  130
+            +  ++T+E
+Sbjct  110  N--EVTLE  115
+
+
+>sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi 
+(strain GE5 / Orsay) OX=272844 GN=sorA PE=3 SV=2
+Length=115
+
+ Score = 102 bits (253),  Expect = 6e-28, Method: Compositional matrix adjust.
+ Identities = 57/125 (46%), Positives = 77/125 (62%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L D IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKDTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VGR  F +H + +         TEP      K  + G + ALSYCNIHGLWE
+Sbjct  59   EDGQFPILVGRVAFTSHDDPL---------TEPRAVFFFKTKKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0741 PE=3 SV=1
+Length=116
+
+ Score = 59.3 bits (142),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 37/120 (31%), Positives = 61/120 (51%), Gaps = 18/120 (15%)
+
+Query  11   DFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYVYE  70
+            DF+K KH P IE  ++VK ++  ++ ++ G  IPHP    H I WI+++    GD Y+  
+Sbjct  15   DFEK-KHTPFIECKDRVKANDYFEVKISTG--IPHPMEDNHFIHWIELYM---GDLYLAR  68
+
+Query  71   VGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESSQKITVE  130
+            V   +F         P +  +   P+     K +    + AL  CN+HG+WE  ++I +E
+Sbjct  69   VDFTQF-------MKPEVKLMVKAPS-----KEHEKFILRALMRCNLHGVWEYEKEILLE  116
+
+
+>sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0833 PE=3 SV=1
+Length=125
+
+ Score = 49.7 bits (117),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 43/124 (35%), Positives = 59/124 (48%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL + +KT D  KEKHVPVIE        E  ++ V VG  + HP   +H+I WI+V  
+Sbjct  34   MKLME-VKTTDEGKEKHVPVIER-------EGNKVYVKVGS-VAHPMEEQHYIEWIEVI-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG              H + ++  +      EP     V  +R   + A +YCNIHGL
+Sbjct  84   -DDG------------CVHRKQLKPGD------EPKAEFTVMSDR---VSARAYCNIHGL  121
+
+Query  121  WESS  124
+            W+S 
+Sbjct  122  WQSG  125
+
+
+>sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 
+10044 / NBRC 100330 / Delta H) OX=187420 GN=MTH_757 PE=3 
+SV=1
+Length=124
+
+ Score = 43.1 bits (100),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 39/114 (34%), Positives = 50/114 (44%), Gaps = 30/114 (26%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+            +  D   EKHVPV+E       +    I V VG E+PHP    HHI+WI+V     GD  
+Sbjct  40   RRTDVGPEKHVPVVE-------ETGTGIRVKVG-EVPHPMEENHHIQWIEVI---AGD-M  87
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLW  121
+            VY   R + N       G N  A +          +  +   +   YCNIHGLW
+Sbjct  88   VY---RKDLNP------GDNPEAEF---------PVEMASDFMVRIYCNIHGLW  123
+
+
+>sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii 
+(strain ATCC 33931 / DSM 2075 / VKM B-1802 / 2st14) OX=644282 
+GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 34/115 (30%), Positives = 52/115 (45%), Gaps = 31/115 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE   K+    KV++       + HP   +H+I+WI++      D   
+Sbjct  41   TVDAAKEKHVPVIE---KIDGGYKVKV-----GAVAHPMEEKHYIQWIELL----ADDKC  88
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+            Y     +F   G++ +                V L  +  ++A  YCNIHG W++
+Sbjct  89   YT----QFLKPGQAPEA---------------VFLIEAAKVVAREYCNIHGHWKA  124
+
+
+>sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis 
+(strain G20) OX=207559 GN=dfx PE=3 SV=1
+Length=126
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 36/115 (31%), Positives = 51/115 (44%), Gaps = 31/115 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE             +V VG  + HP T +H I+WI++    DG  Y 
+Sbjct  41   TVDAAKEKHVPVIEKTAN-------GFLVKVGA-VEHPMTDKHWIQWIELI--ADGRSYT  90
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+                  +F   GE+            P     +K ++   + A  YCN+HG W++
+Sbjct  91   ------KFLNPGET------------PEAEFCIKADK---VTAREYCNLHGHWKT  124
+
+
+>sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 40.8 bits (94),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 36/115 (31%), Positives = 51/115 (44%), Gaps = 31/115 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE      K       VTVG  + HP   +H I WI++    DG  Y 
+Sbjct  41   TSDGAKEKHVPVIEKTANGYK-------VTVGS-VAHPMEEKHWIEWIELV--ADGVSY-  89
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+                  +F   G++            P     +K ++   ++A  YCN+HG W++
+Sbjct  90   -----KKFLKPGDA------------PEAEFCIKADK---VVAREYCNLHGHWKA  124
+
+
+>sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus 
+(strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 GN=dfx 
+PE=3 SV=1
+Length=126
+
+ Score = 40.4 bits (93),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 35/115 (30%), Positives = 47/115 (41%), Gaps = 31/115 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE            I+V VG  + HP   +H I+WI++    +G  Y 
+Sbjct  41   TVDAAKEKHVPVIEKTND-------GIIVKVGS-VAHPMEEKHFIQWIELI--ANGKAYR  90
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+              +              P        P +T  +K+          YCN+HGLW S
+Sbjct  91   QHL-------------SPGDKPEACFPLITGPLKVRE--------YCNLHGLWSS  124
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.134    0.401    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5038123808
+Results from round 2
+
+
+Query= d3qzba_
+
+Length=131
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 GN...  173     5e-56
+sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga m...  169     3e-54
+sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobu...  161     4e-51
+sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus (...  159     2e-50
+sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii...  147     9e-46
+sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakare...  141     2e-43
+sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi (st...  131     1e-39
+sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldo...  103     2e-28
+sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis...  89.2    1e-22
+sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus ...  88.5    2e-22
+sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus fu...  88.5    2e-22
+sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii (s...  86.9    1e-21
+sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris (...  86.2    1e-21
+sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobac...  84.2    9e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|P48345|DFX_DESVM Desulfoferrodoxin OS=Desulfovibrio vulgaris (...  81.9    6e-20
+sp|P22076|DFX_DESDA Desulfoferrodoxin OS=Desulfovibrio desulfuric...  78.5    2e-18
+sp|Q97GB9|DFX_CLOAB Desulfoferrodoxin OS=Clostridium acetobutylic...  62.3    3e-12
+
+
+>sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 
+GN=nlr PE=1 SV=1
+Length=130
+
+ Score = 173 bits (439),  Expect = 5e-56, Method: Composition-based stats.
+ Identities = 70/130 (54%), Positives = 93/130 (72%), Gaps = 0/130 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MK+ D  +T D+K EKHVP IE  + V  D    + V++GKEI HPNTTEHHIRWI+ +F
+Sbjct  1    MKMCDMFQTADWKTEKHVPAIECDDAVAADAFFPVTVSLGKEIAHPNTTEHHIRWIRCYF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            +P+GD + YEVG +EF AHGE  +GPN G VYT  TVT  +K+   G ++A S+CNIHGL
+Sbjct  61   KPEGDKFSYEVGSFEFTAHGECAKGPNEGPVYTNHTVTFQLKIKTPGVLVASSFCNIHGL  120
+
+Query  121  WESSQKITVE  130
+            WESS+ + ++
+Sbjct  121  WESSKAVALK  130
+
+
+>sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) 
+OX=243274 GN=TM_0658 PE=1 SV=1
+Length=131
+
+ Score = 169 bits (428),  Expect = 3e-54, Method: Composition-based stats.
+ Identities = 131/131 (100%), Positives = 131/131 (100%), Gaps = 0/131 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF
+Sbjct  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL
+Sbjct  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+
+Query  121  WESSQKITVEE  131
+            WESSQKITVEE
+Sbjct  121  WESSQKITVEE  131
+
+
+>sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0344 PE=1 SV=1
+Length=125
+
+ Score = 161 bits (406),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 67/127 (53%), Positives = 84/127 (66%), Gaps = 2/127 (2%)
+
+Query  4    SDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPD  63
+             +  +T D+KKEKHVPVIE      +   V++ V+VGKEIPHPNTTEHHI WI++ FQP+
+Sbjct  1    MELFQTADWKKEKHVPVIEVLRA--EGGVVEVKVSVGKEIPHPNTTEHHIAWIELVFQPE  58
+
+Query  64   GDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+            G  + Y VGR EF AHG SV GPN   VYT+P      K  +SG + A SYCNIHGLW  
+Sbjct  59   GSKFPYVVGRAEFAAHGASVDGPNTSGVYTDPVAVFAFKAEKSGKLTAFSYCNIHGLWMG  118
+
+Query  124  SQKITVE  130
+               +++E
+Sbjct  119  EATLSLE  125
+
+
+>sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus 
+(strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=sorA PE=1 SV=1
+Length=124
+
+ Score = 159 bits (401),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 71/125 (57%), Positives = 93/125 (74%), Gaps = 3/125 (2%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            +S+ I++ D+K EKHVPVIE     ++ E V++ V VGKEIPHPNTTEHHIR+I+++F P
+Sbjct  2    ISETIRSGDWKGEKHVPVIEYE---REGELVKVKVQVGKEIPHPNTTEHHIRYIELYFLP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G+ +VY+VGR EF AHGESV GPN   VYTEP    V+K  + G + ALSYCNIHGLWE
+Sbjct  59   EGENFVYQVGRVEFTAHGESVNGPNTSDVYTEPIAYFVLKTKKKGKLYALSYCNIHGLWE  118
+
+Query  123  SSQKI  127
+            +   +
+Sbjct  119  NEVTL  123
+
+
+>sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii 
+(strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 
+/ OT-3) OX=70601 GN=sorA PE=1 SV=2
+Length=115
+
+ Score = 147 bits (370),  Expect = 9e-46, Method: Composition-based stats.
+ Identities = 56/125 (45%), Positives = 79/125 (63%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L + I++ D+K EKHVPVIE     ++ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKETIRSGDWKGEKHVPVIEYE---REGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G  +   VGR EF  H + +         TEP      K ++ G + ALSYCNIHGLWE
+Sbjct  59   EGGQFPILVGRVEFTNHSDPL---------TEPRAVFFFKTSKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakarensis 
+(strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 GN=sorA 
+PE=3 SV=1
+Length=115
+
+ Score = 141 bits (355),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 56/125 (45%), Positives = 77/125 (62%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            LS  IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LSQTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIQLWFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VG+ EF+ H + +         TEP      +  + G + ALSYCNIHGLWE
+Sbjct  59   EDGAFPILVGKVEFSNHTDPL---------TEPRAVFFFRTQKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +   +
+Sbjct  110  NEVTL  114
+
+
+>sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi 
+(strain GE5 / Orsay) OX=272844 GN=sorA PE=3 SV=2
+Length=115
+
+ Score = 131 bits (330),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 57/125 (46%), Positives = 77/125 (62%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L D IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKDTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VGR  F +H + +         TEP      K  + G + ALSYCNIHGLWE
+Sbjct  59   EDGQFPILVGRVAFTSHDDPL---------TEPRAVFFFKTKKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0741 PE=3 SV=1
+Length=116
+
+ Score = 103 bits (255),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 37/121 (31%), Positives = 61/121 (50%), Gaps = 18/121 (15%)
+
+Query  10   EDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYVY  69
+             DF+K KH P IE  ++VK ++  ++ ++ G  IPHP    H I WI+++    GD Y+ 
+Sbjct  14   TDFEK-KHTPFIECKDRVKANDYFEVKISTG--IPHPMEDNHFIHWIELYM---GDLYLA  67
+
+Query  70   EVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESSQKITV  129
+             V   +F         P +  +   P+     K +    + AL  CN+HG+WE  ++I +
+Sbjct  68   RVDFTQF-------MKPEVKLMVKAPS-----KEHEKFILRALMRCNLHGVWEYEKEILL  115
+
+Query  130  E  130
+            E
+Sbjct  116  E  116
+
+
+>sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis 
+(strain G20) OX=207559 GN=dfx PE=3 SV=1
+Length=126
+
+ Score = 89.2 bits (219),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 36/116 (31%), Positives = 51/116 (44%), Gaps = 31/116 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE             +V VG  + HP T +H I+WI++    DG  Y 
+Sbjct  41   TVDAAKEKHVPVIEKTAN-------GFLVKVGA-VEHPMTDKHWIQWIELI--ADGRSY-  89
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+                  +F   GE+            P     +K ++   + A  YCN+HG W++ 
+Sbjct  90   -----TKFLNPGET------------PEAEFCIKADK---VTAREYCNLHGHWKTE  125
+
+
+>sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus 
+(strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 GN=dfx 
+PE=3 SV=1
+Length=126
+
+ Score = 88.5 bits (217),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 35/116 (30%), Positives = 47/116 (41%), Gaps = 31/116 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE            I+V VG  + HP   +H I+WI++    +G  Y 
+Sbjct  41   TVDAAKEKHVPVIEKTND-------GIIVKVGS-VAHPMEEKHFIQWIELI--ANGKAYR  90
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+              +              P        P +T  +K+          YCN+HGLW S 
+Sbjct  91   QHL-------------SPGDKPEACFPLITGPLKV--------REYCNLHGLWSSE  125
+
+
+>sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0833 PE=3 SV=1
+Length=125
+
+ Score = 88.5 bits (217),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 43/124 (35%), Positives = 59/124 (48%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL + +KT D  KEKHVPVIE        E  ++ V VG  + HP   +H+I WI+V  
+Sbjct  34   MKLME-VKTTDEGKEKHVPVIER-------EGNKVYVKVGS-VAHPMEEQHYIEWIEVI-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG              H + ++  +      EP     V  +R   + A +YCNIHGL
+Sbjct  84   -DDG------------CVHRKQLKPGD------EPKAEFTVMSDR---VSARAYCNIHGL  121
+
+Query  121  WESS  124
+            W+S 
+Sbjct  122  WQSG  125
+
+
+>sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii 
+(strain ATCC 33931 / DSM 2075 / VKM B-1802 / 2st14) OX=644282 
+GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 86.9 bits (213),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 36/124 (29%), Positives = 53/124 (43%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL     T D  KEKHVPVIE  +           V VG  + HP   +H+I+WI++  
+Sbjct  34   MKLMSE-NTVDAAKEKHVPVIEKIDG-------GYKVKVGA-VAHPMEEKHYIQWIELL-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+                D   Y     +F   G++            P    ++    +  ++A  YCNIHG 
+Sbjct  84   ---ADDKCY----TQFLKPGQA------------PEAVFLI---EAAKVVAREYCNIHGH  121
+
+Query  121  WESS  124
+            W++ 
+Sbjct  122  WKAE  125
+
+
+>sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 86.2 bits (211),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 38/125 (30%), Positives = 53/125 (42%), Gaps = 32/125 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL     T D  KEKHVPVIE              VTVG  + HP   +H I WI++  
+Sbjct  34   MKLMKE-GTSDGAKEKHVPVIEKTAN-------GYKVTVGS-VAHPMEEKHWIEWIELV-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG  Y       +F   G++            P     +K ++   ++A  YCN+HG 
+Sbjct  84   -ADGVSY------KKFLKPGDA------------PEAEFCIKADK---VVAREYCNLHGH  121
+
+Query  121  WESSQ  125
+            W++  
+Sbjct  122  WKAEA  126
+
+
+>sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 
+10044 / NBRC 100330 / Delta H) OX=187420 GN=MTH_757 PE=3 
+SV=1
+Length=124
+
+ Score = 84.2 bits (206),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 35/114 (31%), Positives = 44/114 (39%), Gaps = 30/114 (26%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+            +  D   EKHVPV+E       +    I V VG E+PHP    HHI+WI+V         
+Sbjct  40   RRTDVGPEKHVPVVE-------ETGTGIRVKVG-EVPHPMEENHHIQWIEVI----AGDM  87
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLW  121
+            VY          G+             P     V    +   +   YCNIHGLW
+Sbjct  88   VYRKD----LNPGD------------NPEAEFPV--EMASDFMVRIYCNIHGLW  123
+
+
+>sp|P48345|DFX_DESVM Desulfoferrodoxin OS=Desulfovibrio vulgaris 
+(strain Miyazaki F / DSM 19637) OX=883 GN=dfx PE=3 SV=2
+Length=124
+
+ Score = 81.9 bits (200),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 33/115 (29%), Positives = 44/115 (38%), Gaps = 31/115 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  KEKHVPVIE              V VG  + HP    H I WI++    DG  Y 
+Sbjct  41   TSDGAKEKHVPVIEKTA-------TGYKVKVGS-VAHPMEETHWIEWIELI--ADGRSY-  89
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+                   F   G++            P     ++      + A  YCN+HG W++
+Sbjct  90   -----TRFLKPGDA------------PEAEFCIQATE---VSAREYCNLHGHWKA  124
+
+
+>sp|P22076|DFX_DESDA Desulfoferrodoxin OS=Desulfovibrio desulfuricans 
+(strain ATCC 27774 / DSM 6949 / MB) OX=525146 GN=dfx 
+PE=1 SV=3
+Length=126
+
+ Score = 78.5 bits (191),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 30/116 (26%), Positives = 47/116 (41%), Gaps = 31/116 (27%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            + D   EKHVPVIE  +          ++ VG  +PHP   +H I WI++    DG  Y 
+Sbjct  41   STDGAMEKHVPVIEKVDG-------GYLIKVGS-VPHPMEEKHWIEWIELL--ADGRSY-  89
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+                  +F   G++ +                     +  + A  YCN+HG W++ 
+Sbjct  90   -----TKFLKPGDAPEA---------------FFAIDASKVTAREYCNLHGHWKAE  125
+
+
+>sp|Q97GB9|DFX_CLOAB Desulfoferrodoxin OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=dfx PE=1 SV=1
+Length=125
+
+ Score = 62.3 bits (149),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 35/116 (30%), Positives = 45/116 (39%), Gaps = 32/116 (28%)
+
+Query  9    TEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYV  68
+            T D  +EKHVP I             I V+VG  + HP T EH I WI +          
+Sbjct  41   TTDAAQEKHVPHITK-------NGNNIDVSVGS-VEHPMTPEHFIEWIILVSG-------  85
+
+Query  69   YEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+                R E          P++        VT       SGT+ A  YCN+H LW++ 
+Sbjct  86   ---DRLEMAK-----LTPDMKPRAQFHNVT-------SGTVYA--YCNLHSLWKAD  124
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.108    0.308    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0329    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5038123808
+Results from round 3
+
+
+Query= d3qzba_
+
+Length=131
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 GN...  171     4e-55
+sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga m...  166     6e-53
+sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobu...  162     2e-51
+sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus (...  158     6e-50
+sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii...  147     6e-46
+sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakare...  142     8e-44
+sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi (st...  132     9e-40
+sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldo...  103     1e-28
+sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris (...  98.9    2e-26
+sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii (s...  97.7    4e-26
+sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis...  96.2    2e-25
+sp|P48345|DFX_DESVM Desulfoferrodoxin OS=Desulfovibrio vulgaris (...  96.2    2e-25
+sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus ...  92.3    7e-24
+sp|P22076|DFX_DESDA Desulfoferrodoxin OS=Desulfovibrio desulfuric...  91.2    2e-23
+sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus fu...  90.0    6e-23
+sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobac...  88.1    3e-22
+sp|Q97GB9|DFX_CLOAB Desulfoferrodoxin OS=Clostridium acetobutylic...  85.8    2e-21
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O50258|NLR_DESGI Neelaredoxin OS=Desulfovibrio gigas OX=879 
+GN=nlr PE=1 SV=1
+Length=130
+
+ Score = 171 bits (433),  Expect = 4e-55, Method: Composition-based stats.
+ Identities = 70/130 (54%), Positives = 93/130 (72%), Gaps = 0/130 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MK+ D  +T D+K EKHVP IE  + V  D    + V++GKEI HPNTTEHHIRWI+ +F
+Sbjct  1    MKMCDMFQTADWKTEKHVPAIECDDAVAADAFFPVTVSLGKEIAHPNTTEHHIRWIRCYF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            +P+GD + YEVG +EF AHGE  +GPN G VYT  TVT  +K+   G ++A S+CNIHGL
+Sbjct  61   KPEGDKFSYEVGSFEFTAHGECAKGPNEGPVYTNHTVTFQLKIKTPGVLVASSFCNIHGL  120
+
+Query  121  WESSQKITVE  130
+            WESS+ + ++
+Sbjct  121  WESSKAVALK  130
+
+
+>sp|Q9WZC6|SOR_THEMA Putative superoxide reductase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) 
+OX=243274 GN=TM_0658 PE=1 SV=1
+Length=131
+
+ Score = 166 bits (419),  Expect = 6e-53, Method: Composition-based stats.
+ Identities = 131/131 (100%), Positives = 131/131 (100%), Gaps = 0/131 (0%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF
+Sbjct  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+            QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL
+Sbjct  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+
+Query  121  WESSQKITVEE  131
+            WESSQKITVEE
+Sbjct  121  WESSQKITVEE  131
+
+
+>sp|O29903|SOR_ARCFU Putative superoxide reductase OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0344 PE=1 SV=1
+Length=125
+
+ Score = 162 bits (408),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 67/127 (53%), Positives = 84/127 (66%), Gaps = 2/127 (2%)
+
+Query  4    SDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPD  63
+             +  +T D+KKEKHVPVIE      +   V++ V+VGKEIPHPNTTEHHI WI++ FQP+
+Sbjct  1    MELFQTADWKKEKHVPVIEVLRA--EGGVVEVKVSVGKEIPHPNTTEHHIAWIELVFQPE  58
+
+Query  64   GDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWES  123
+            G  + Y VGR EF AHG SV GPN   VYT+P      K  +SG + A SYCNIHGLW  
+Sbjct  59   GSKFPYVVGRAEFAAHGASVDGPNTSGVYTDPVAVFAFKAEKSGKLTAFSYCNIHGLWMG  118
+
+Query  124  SQKITVE  130
+               +++E
+Sbjct  119  EATLSLE  125
+
+
+>sp|P82385|SOR_PYRFU Superoxide reductase OS=Pyrococcus furiosus 
+(strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=sorA PE=1 SV=1
+Length=124
+
+ Score = 158 bits (399),  Expect = 6e-50, Method: Composition-based stats.
+ Identities = 71/125 (57%), Positives = 93/125 (74%), Gaps = 3/125 (2%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            +S+ I++ D+K EKHVPVIE     ++ E V++ V VGKEIPHPNTTEHHIR+I+++F P
+Sbjct  2    ISETIRSGDWKGEKHVPVIEYE---REGELVKVKVQVGKEIPHPNTTEHHIRYIELYFLP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G+ +VY+VGR EF AHGESV GPN   VYTEP    V+K  + G + ALSYCNIHGLWE
+Sbjct  59   EGENFVYQVGRVEFTAHGESVNGPNTSDVYTEPIAYFVLKTKKKGKLYALSYCNIHGLWE  118
+
+Query  123  SSQKI  127
+            +   +
+Sbjct  119  NEVTL  123
+
+
+>sp|O58810|SOR_PYRHO Superoxide reductase OS=Pyrococcus horikoshii 
+(strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 
+/ OT-3) OX=70601 GN=sorA PE=1 SV=2
+Length=115
+
+ Score = 147 bits (371),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 56/125 (45%), Positives = 79/125 (63%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L + I++ D+K EKHVPVIE     ++ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKETIRSGDWKGEKHVPVIEYE---REGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +G  +   VGR EF  H + +         TEP      K ++ G + ALSYCNIHGLWE
+Sbjct  59   EGGQFPILVGRVEFTNHSDPL---------TEPRAVFFFKTSKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q5JF09|SOR_THEKO Superoxide reductase OS=Thermococcus kodakarensis 
+(strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 GN=sorA 
+PE=3 SV=1
+Length=115
+
+ Score = 142 bits (357),  Expect = 8e-44, Method: Composition-based stats.
+ Identities = 56/125 (45%), Positives = 77/125 (62%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            LS  IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LSQTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIQLWFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VG+ EF+ H + +         TEP      +  + G + ALSYCNIHGLWE
+Sbjct  59   EDGAFPILVGKVEFSNHTDPL---------TEPRAVFFFRTQKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +   +
+Sbjct  110  NEVTL  114
+
+
+>sp|Q9V098|SOR_PYRAB Superoxide reductase OS=Pyrococcus abyssi 
+(strain GE5 / Orsay) OX=272844 GN=sorA PE=3 SV=2
+Length=115
+
+ Score = 132 bits (331),  Expect = 9e-40, Method: Composition-based stats.
+ Identities = 57/125 (46%), Positives = 77/125 (62%), Gaps = 12/125 (10%)
+
+Query  3    LSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQP  62
+            L D IK+ D+K EKHVPVIE     K+ + V++ V+VGKEIPHPNT EHHI WI+++F P
+Sbjct  2    LKDTIKSGDWKGEKHVPVIEYE---KEGDLVKVEVSVGKEIPHPNTPEHHIAWIELYFHP  58
+
+Query  63   DGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWE  122
+            +   +   VGR  F +H + +         TEP      K  + G + ALSYCNIHGLWE
+Sbjct  59   EDGQFPILVGRVAFTSHDDPL---------TEPRAVFFFKTKKKGKLYALSYCNIHGLWE  109
+
+Query  123  SSQKI  127
+            +  ++
+Sbjct  110  NEVQL  114
+
+
+>sp|Q58151|SOR_METJA Putative superoxide reductase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0741 PE=3 SV=1
+Length=116
+
+ Score = 103 bits (257),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 37/121 (31%), Positives = 61/121 (50%), Gaps = 18/121 (15%)
+
+Query  10   EDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPYVY  69
+             DF+K KH P IE  ++VK ++  ++ ++ G  IPHP    H I WI+++    GD Y+ 
+Sbjct  14   TDFEK-KHTPFIECKDRVKANDYFEVKISTG--IPHPMEDNHFIHWIELYM---GDLYLA  67
+
+Query  70   EVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESSQKITV  129
+             V   +F         P +  +   P+     K +    + AL  CN+HG+WE  ++I +
+Sbjct  68   RVDFTQFMK-------PEVKLMVKAPS-----KEHEKFILRALMRCNLHGVWEYEKEILL  115
+
+Query  130  E  130
+            E
+Sbjct  116  E  116
+
+
+>sp|P20418|DFX_DESVH Desulfoferrodoxin OS=Desulfovibrio vulgaris 
+(strain Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) 
+OX=882 GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 98.9 bits (244),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 38/125 (30%), Positives = 53/125 (42%), Gaps = 32/125 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL     T D  KEKHVPVIE              VTVG  + HP   +H I WI++  
+Sbjct  34   MKLMKE-GTSDGAKEKHVPVIEKTA-------NGYKVTVGS-VAHPMEEKHWIEWIELV-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG  Y       +F   G++            P     +K ++   ++A  YCN+HG 
+Sbjct  84   -ADGVSY------KKFLKPGDA------------PEAEFCIKADK---VVAREYCNLHGH  121
+
+Query  121  WESSQ  125
+            W++  
+Sbjct  122  WKAEA  126
+
+
+>sp|Q46495|DFX_DESB2 Desulfoferrodoxin OS=Desulfarculus baarsii 
+(strain ATCC 33931 / DSM 2075 / VKM B-1802 / 2st14) OX=644282 
+GN=dfx PE=1 SV=3
+Length=126
+
+ Score = 97.7 bits (241),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 36/124 (29%), Positives = 53/124 (43%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL     T D  KEKHVPVIE  +           V VG  + HP   +H+I+WI++  
+Sbjct  34   MKLMSE-NTVDAAKEKHVPVIEKIDG-------GYKVKVGA-VAHPMEEKHYIQWIELL-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+                D   Y     +F   G++            P    ++    +  ++A  YCNIHG 
+Sbjct  84   ---ADDKCY----TQFLKPGQA------------PEAVFLI---EAAKVVAREYCNIHGH  121
+
+Query  121  WESS  124
+            W++ 
+Sbjct  122  WKAE  125
+
+
+>sp|Q30WF9|DFX_DESAG Desulfoferrodoxin OS=Desulfovibrio alaskensis 
+(strain G20) OX=207559 GN=dfx PE=3 SV=1
+Length=126
+
+ Score = 96.2 bits (237),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 36/117 (31%), Positives = 51/117 (44%), Gaps = 31/117 (26%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+             T D  KEKHVPVIE             +V VG  + HP T +H I+WI++    DG  Y
+Sbjct  40   GTVDAAKEKHVPVIEKTA-------NGFLVKVGA-VEHPMTDKHWIQWIELI--ADGRSY  89
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+                   +F   GE+            P     +K ++   + A  YCN+HG W++ 
+Sbjct  90   ------TKFLNPGET------------PEAEFCIKADK---VTAREYCNLHGHWKTE  125
+
+
+>sp|P48345|DFX_DESVM Desulfoferrodoxin OS=Desulfovibrio vulgaris 
+(strain Miyazaki F / DSM 19637) OX=883 GN=dfx PE=3 SV=2
+Length=124
+
+ Score = 96.2 bits (237),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 35/123 (28%), Positives = 46/123 (37%), Gaps = 32/123 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MK      T D  KEKHVPVIE              V VG  + HP    H I WI++  
+Sbjct  34   MKFMKE-GTSDGAKEKHVPVIEKTA-------TGYKVKVGS-VAHPMEETHWIEWIELI-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG  Y        F   G++            P     ++      + A  YCN+HG 
+Sbjct  84   -ADGRSY------TRFLKPGDA------------PEAEFCIQATE---VSAREYCNLHGH  121
+
+Query  121  WES  123
+            W++
+Sbjct  122  WKA  124
+
+
+>sp|Q3A221|DFX_PELCD Desulfoferrodoxin OS=Pelobacter carbinolicus 
+(strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 GN=dfx 
+PE=3 SV=1
+Length=126
+
+ Score = 92.3 bits (227),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 37/124 (30%), Positives = 50/124 (40%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            M L +   T D  KEKHVPVIE            I+V VG  + HP   +H I+WI++  
+Sbjct  34   MNLLNE-NTVDAAKEKHVPVIEKTND-------GIIVKVGS-VAHPMEEKHFIQWIELI-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              +G  Y   +              P        P +T  +K+          YCN+HGL
+Sbjct  84   -ANGKAYRQHL-------------SPGDKPEACFPLITGPLKV--------REYCNLHGL  121
+
+Query  121  WESS  124
+            W S 
+Sbjct  122  WSSE  125
+
+
+>sp|P22076|DFX_DESDA Desulfoferrodoxin OS=Desulfovibrio desulfuricans 
+(strain ATCC 27774 / DSM 6949 / MB) OX=525146 GN=dfx 
+PE=1 SV=3
+Length=126
+
+ Score = 91.2 bits (224),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 31/117 (26%), Positives = 48/117 (41%), Gaps = 31/117 (26%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+             + D   EKHVPVIE  +          ++ VG  +PHP   +H I WI++    DG  Y
+Sbjct  40   GSTDGAMEKHVPVIEKVDG-------GYLIKVGS-VPHPMEEKHWIEWIELL--ADGRSY  89
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESS  124
+                   +F   G++            P     +    +  + A  YCN+HG W++ 
+Sbjct  90   ------TKFLKPGDA------------PEAFFAI---DASKVTAREYCNLHGHWKAE  125
+
+
+>sp|O29425|DFX_ARCFU Desulfoferrodoxin homolog OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=AF_0833 PE=3 SV=1
+Length=125
+
+ Score = 90.0 bits (221),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 43/124 (35%), Positives = 59/124 (48%), Gaps = 32/124 (26%)
+
+Query  1    MKLSDFIKTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFF  60
+            MKL + +KT D  KEKHVPVIE        E  ++ V VG  + HP   +H+I WI+V  
+Sbjct  34   MKLME-VKTTDEGKEKHVPVIER-------EGNKVYVKVGS-VAHPMEEQHYIEWIEVI-  83
+
+Query  61   QPDGDPYVYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGL  120
+              DG              H + ++  +      EP     V  +R   + A +YCNIHGL
+Sbjct  84   -DDG------------CVHRKQLKPGD------EPKAEFTVMSDR---VSARAYCNIHGL  121
+
+Query  121  WESS  124
+            W+S 
+Sbjct  122  WQSG  125
+
+
+>sp|O26851|DFX_METTH Desulfoferrodoxin homolog OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 
+10044 / NBRC 100330 / Delta H) OX=187420 GN=MTH_757 PE=3 
+SV=1
+Length=124
+
+ Score = 88.1 bits (216),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 35/114 (31%), Positives = 44/114 (39%), Gaps = 30/114 (26%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+            +  D   EKHVPV+E       +    I V VG E+PHP    HHI+WI+V         
+Sbjct  40   RRTDVGPEKHVPVVE-------ETGTGIRVKVG-EVPHPMEENHHIQWIEVI----AGDM  87
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLW  121
+            VY          G+             P     V    +   +   YCNIHGLW
+Sbjct  88   VYRKD----LNPGD------------NPEAEFPV--EMASDFMVRIYCNIHGLW  123
+
+
+>sp|Q97GB9|DFX_CLOAB Desulfoferrodoxin OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=dfx PE=1 SV=1
+Length=125
+
+ Score = 85.8 bits (210),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 35/118 (30%), Positives = 45/118 (38%), Gaps = 32/118 (27%)
+
+Query  8    KTEDFKKEKHVPVIEAPEKVKKDEKVQIVVTVGKEIPHPNTTEHHIRWIKVFFQPDGDPY  67
+             T D  +EKHVP I             I V+VG  + HP T EH I WI +         
+Sbjct  40   NTTDAAQEKHVPHITK-------NGNNIDVSVGS-VEHPMTPEHFIEWIILVSG------  85
+
+Query  68   VYEVGRYEFNAHGESVQGPNIGAVYTEPTVTTVVKLNRSGTIIALSYCNIHGLWESSQ  125
+                 R E          P++        VT       SGT+ A  YCN+H LW++  
+Sbjct  86   ----DRLEMAK-----LTPDMKPRAQFHNVT-------SGTVYA--YCNLHSLWKADI  125
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.109    0.315    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0333    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5038123808
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

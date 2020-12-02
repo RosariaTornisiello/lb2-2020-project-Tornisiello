@@ -1,0 +1,147 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1uz5a1
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q58296|Y886_METJA Putative molybdopterin biosynthesis protein ...  47.8    6e-07
+sp|Q58080|Y666_METJA Putative molybdopterin biosynthesis protein ...  43.1    3e-05
+
+
+>sp|Q58296|Y886_METJA Putative molybdopterin biosynthesis protein 
+MJ0886 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0886 
+PE=3 SV=1
+Length=620
+
+ Score = 47.8 bits (112),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 30/58 (52%), Positives = 37/58 (64%), Gaps = 5/58 (9%)
+
+Query  16   RRQFLPVKL----EGDLAVPILKGSGAVTSFIDADGFVEIPETVESLDEGEEVEVTLF  69
+            R ++LPV L     G  A PI KGSGA+TS  +ADG++ I E  E L E E+VEV LF
+Sbjct  339  RVEYLPVILVKHKNGFSAYPITKGSGAITSLSEADGYIIIDENKEIL-ENEDVEVHLF  395
+
+
+>sp|Q58080|Y666_METJA Putative molybdopterin biosynthesis protein 
+MJ0666 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0666 
+PE=3 SV=1
+Length=398
+
+ Score = 43.1 bits (100),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 22/55 (40%), Positives = 36/55 (65%), Gaps = 0/55 (0%)
+
+Query  16   RRQFLPVKLEGDLAVPILKGSGAVTSFIDADGFVEIPETVESLDEGEEVEVTLFK  70
+            R  F+ VK++ ++    + GSG ++S I +DG++ IPE VE  ++GE V+V L K
+Sbjct  344  RVDFVRVKVDIEVEPIRITGSGVISSLIKSDGYILIPENVEGYEKGELVDVYLLK  398
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.140    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+Results from round 2
+
+
+Query= d1uz5a1
+
+Length=72
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q58080|Y666_METJA Putative molybdopterin biosynthesis protein ...  77.3    2e-17
+sp|Q58296|Y886_METJA Putative molybdopterin biosynthesis protein ...  68.5    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q58080|Y666_METJA Putative molybdopterin biosynthesis protein 
+MJ0666 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0666 
+PE=3 SV=1
+Length=398
+
+ Score = 77.3 bits (189),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/55 (40%), Positives = 36/55 (65%), Gaps = 0/55 (0%)
+
+Query  16   RRQFLPVKLEGDLAVPILKGSGAVTSFIDADGFVEIPETVESLDEGEEVEVTLFK  70
+            R  F+ VK++ ++    + GSG ++S I +DG++ IPE VE  ++GE V+V L K
+Sbjct  344  RVDFVRVKVDIEVEPIRITGSGVISSLIKSDGYILIPENVEGYEKGELVDVYLLK  398
+
+
+>sp|Q58296|Y886_METJA Putative molybdopterin biosynthesis protein 
+MJ0886 OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0886 
+PE=3 SV=1
+Length=620
+
+ Score = 68.5 bits (166),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 30/58 (52%), Positives = 37/58 (64%), Gaps = 5/58 (9%)
+
+Query  16   RRQFLPVKL----EGDLAVPILKGSGAVTSFIDADGFVEIPETVESLDEGEEVEVTLF  69
+            R ++LPV L     G  A PI KGSGA+TS  +ADG++ I E  E L E E+VEV LF
+Sbjct  339  RVEYLPVILVKHKNGFSAYPITKGSGAITSLSEADGYIIIDENKEIL-ENEDVEVHLF  395
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.142    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0434    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4984656824
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,301 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3mmha_
+
+Length=168
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8MTJ7|GAFA_DICDI GAF domain-containing protein A OS=Dictyoste...  188     1e-60
+sp|O34553|YTSP_BACSU Protein YtsP OS=Bacillus subtilis (strain 16...  149     4e-45
+sp|P76270|MSRC_ECOLI Free methionine-R-sulfoxide reductase OS=Esc...  118     3e-33
+sp|P36088|FRMSR_YEAST Free methionine-R-sulfoxide reductase OS=Sa...  118     5e-33
+sp|O66116|Y507_ZYMMO Protein ZMO0507 OS=Zymomonas mobilis subsp. ...  108     2e-29
+
+
+>sp|Q8MTJ7|GAFA_DICDI GAF domain-containing protein A OS=Dictyostelium 
+discoideum OX=44689 GN=gafA PE=3 SV=1
+Length=158
+
+ Score = 188 bits (477),  Expect = 1e-60, Method: Compositional matrix adjust.
+ Identities = 89/155 (57%), Positives = 109/155 (70%), Gaps = 1/155 (1%)
+
+Query  4    LHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWFWVGFYLVDTRSDE  63
+            L  S   K   Y  +LPQIE ++  E + +ANLAN  A LKE F +FWVGFYLVDT  +E
+Sbjct  5    LEISKGSKEEQYENLLPQIEGLLTGENNQIANLANVTAALKEQFNFFWVGFYLVDTE-NE  63
+
+Query  64   LVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVVPLFS  123
+            LVLAPFQGP+ACTRI  GRGVCG AW +  T++V DV+  P HIACSSLS+SEIV+PL+ 
+Sbjct  64   LVLAPFQGPIACTRIRKGRGVCGTAWQQEKTLIVPDVEKFPGHIACSSLSKSEIVLPLYK  123
+
+Query  124  DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+             G  IGVLD DS+ L  FDE D  YL ++ K+L+ 
+Sbjct  124  QGNIIGVLDVDSDKLNSFDEIDEKYLTQILKLLDN  158
+
+
+>sp|O34553|YTSP_BACSU Protein YtsP OS=Bacillus subtilis (strain 
+168) OX=224308 GN=ytsP PE=3 SV=2
+Length=163
+
+ Score = 149 bits (375),  Expect = 4e-45, Method: Compositional matrix adjust.
+ Identities = 75/159 (47%), Positives = 99/159 (62%), Gaps = 1/159 (1%)
+
+Query  1    MHALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWF-WVGFYLVDT  59
+            M  +   + DK   Y+ +L Q+E++  DETD +AN AN +A+L  +     W GFY    
+Sbjct  1    MFHVEKQSGDKEKDYQLLLKQLEAMTEDETDQIANYANASALLYHSLPEVNWAGFYFAKE  60
+
+Query  60   RSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVV  119
+               +LVL PFQG  AC RIPFGRGVCG A+A G    + DV+A P HIAC + S+SEIV+
+Sbjct  61   EDGQLVLGPFQGLPACVRIPFGRGVCGTAYANGKVERIEDVNAFPGHIACDAASQSEIVL  120
+
+Query  120  PLFSDGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            P+  DG+ +GVLD DS    +FDE D  YL + A+ LEK
+Sbjct  121  PIRVDGKIVGVLDIDSPVKNRFDEIDEKYLTQFAETLEK  159
+
+
+>sp|P76270|MSRC_ECOLI Free methionine-R-sulfoxide reductase OS=Escherichia 
+coli (strain K12) OX=83333 GN=msrC PE=1 SV=2
+Length=165
+
+ Score = 118 bits (296),  Expect = 3e-33, Method: Compositional matrix adjust.
+ Identities = 66/150 (44%), Positives = 87/150 (58%), Gaps = 3/150 (2%)
+
+Query  10   DKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWF-WVGFYLVDTRSDELVLAP  68
+            +K   Y ++     +++A ET ++A LANT+A+L E      W GFYL++   D LVL P
+Sbjct  2    NKTEFYADLNRDFNALMAGETSFLATLANTSALLYERLTDINWAGFYLLE--DDTLVLGP  59
+
+Query  69   FQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVVPLFSDGRCI  128
+            FQG +AC RIP GRGVCG A A+     + DV     HIAC + S SEIV+PL    + I
+Sbjct  60   FQGKIACVRIPVGRGVCGTAVARNQVQRIEDVHVFDGHIACDAASNSEIVLPLVVKNQII  119
+
+Query  129  GVLDADSEHLAQFDETDALYLGELAKILEK  158
+            GVLD DS    +F + D   L +L   LEK
+Sbjct  120  GVLDIDSTVFGRFTDEDEQGLRQLVAQLEK  149
+
+
+>sp|P36088|FRMSR_YEAST Free methionine-R-sulfoxide reductase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YKL069W PE=1 SV=1
+Length=180
+
+ Score = 118 bits (296),  Expect = 5e-33, Method: Compositional matrix adjust.
+ Identities = 61/164 (37%), Positives = 95/164 (58%), Gaps = 7/164 (4%)
+
+Query  2    HALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWF-----WVGFYL  56
+            H  + S  +K  +  ++L   E +   + +WV NL+N ++++  A+        W GFY+
+Sbjct  12   HVNYSSNLNKEEILEQLLLSYEGLSDGQVNWVCNLSNASSLIWHAYKSLAVDINWAGFYV  71
+
+Query  57   VD-TRSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRS  115
+               +  + L+L PFQG +AC  I FG+GVCG A +   T +V DV+ +P HIAC   ++S
+Sbjct  72   TQASEENTLILGPFQGKVACQMIQFGKGVCGTAASTKETQIVPDVNKYPGHIACDGETKS  131
+
+Query  116  EIVVPLFS-DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            EIVVP+ S DG+ +GV+D D      FD  D  +L +LAK++ K
+Sbjct  132  EIVVPIISNDGKTLGVIDIDCLDYEGFDHVDKEFLEKLAKLINK  175
+
+
+>sp|O66116|Y507_ZYMMO Protein ZMO0507 OS=Zymomonas mobilis subsp. 
+mobilis (strain ATCC 31821 / ZM4 / CP4) OX=264203 GN=ZMO0507 
+PE=3 SV=1
+Length=161
+
+ Score = 108 bits (271),  Expect = 2e-29, Method: Compositional matrix adjust.
+ Identities = 59/160 (37%), Positives = 93/160 (58%), Gaps = 4/160 (3%)
+
+Query  1    MHALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAF-GWFWVGFYLVDT  59
+            M +   +   K  LY ++L  ++ ++++E D +AN+ANTAA++        WVGFY    
+Sbjct  1    MFSFSINTGSKKTLYSDLLTTLKELLSEEGDPIANMANTAALIWTYMPDLNWVGFYRA-I  59
+
+Query  60   RSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVV  119
+            RS  L+L PFQG +AC +IP+GRGVCG A A G    V DV  +P+HI+C   + SE+V+
+Sbjct  60   RS-YLILGPFQGKVACVKIPYGRGVCGTAAATGRIQCVRDVHTYPNHISCDPSAASELVI  118
+
+Query  120  PLFS-DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            P+     + + V+D +S  + +FD  D      L ++L +
+Sbjct  119  PIRGRQNQILAVIDLESPTMGRFDAEDVEGCSRLMEVLGR  158
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.136    0.421    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8343964552
+Results from round 2
+
+
+Query= d3mmha_
+
+Length=168
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34553|YTSP_BACSU Protein YtsP OS=Bacillus subtilis (strain 16...  252     5e-86
+sp|Q8MTJ7|GAFA_DICDI GAF domain-containing protein A OS=Dictyoste...  243     2e-82
+sp|P36088|FRMSR_YEAST Free methionine-R-sulfoxide reductase OS=Sa...  231     1e-77
+sp|O66116|Y507_ZYMMO Protein ZMO0507 OS=Zymomonas mobilis subsp. ...  229     7e-77
+sp|P76270|MSRC_ECOLI Free methionine-R-sulfoxide reductase OS=Esc...  224     6e-75
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O34553|YTSP_BACSU Protein YtsP OS=Bacillus subtilis (strain 
+168) OX=224308 GN=ytsP PE=3 SV=2
+Length=163
+
+ Score = 252 bits (644),  Expect = 5e-86, Method: Composition-based stats.
+ Identities = 75/159 (47%), Positives = 99/159 (62%), Gaps = 1/159 (1%)
+
+Query  1    MHALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGW-FWVGFYLVDT  59
+            M  +   + DK   Y+ +L Q+E++  DETD +AN AN +A+L  +     W GFY    
+Sbjct  1    MFHVEKQSGDKEKDYQLLLKQLEAMTEDETDQIANYANASALLYHSLPEVNWAGFYFAKE  60
+
+Query  60   RSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVV  119
+               +LVL PFQG  AC RIPFGRGVCG A+A G    + DV+A P HIAC + S+SEIV+
+Sbjct  61   EDGQLVLGPFQGLPACVRIPFGRGVCGTAYANGKVERIEDVNAFPGHIACDAASQSEIVL  120
+
+Query  120  PLFSDGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            P+  DG+ +GVLD DS    +FDE D  YL + A+ LEK
+Sbjct  121  PIRVDGKIVGVLDIDSPVKNRFDEIDEKYLTQFAETLEK  159
+
+
+>sp|Q8MTJ7|GAFA_DICDI GAF domain-containing protein A OS=Dictyostelium 
+discoideum OX=44689 GN=gafA PE=3 SV=1
+Length=158
+
+ Score = 243 bits (619),  Expect = 2e-82, Method: Composition-based stats.
+ Identities = 89/155 (57%), Positives = 109/155 (70%), Gaps = 1/155 (1%)
+
+Query  4    LHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWFWVGFYLVDTRSDE  63
+            L  S   K   Y  +LPQIE ++  E + +ANLAN  A LKE F +FWVGFYLVDT  +E
+Sbjct  5    LEISKGSKEEQYENLLPQIEGLLTGENNQIANLANVTAALKEQFNFFWVGFYLVDTE-NE  63
+
+Query  64   LVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVVPLFS  123
+            LVLAPFQGP+ACTRI  GRGVCG AW +  T++V DV+  P HIACSSLS+SEIV+PL+ 
+Sbjct  64   LVLAPFQGPIACTRIRKGRGVCGTAWQQEKTLIVPDVEKFPGHIACSSLSKSEIVLPLYK  123
+
+Query  124  DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+             G  IGVLD DS+ L  FDE D  YL ++ K+L+ 
+Sbjct  124  QGNIIGVLDVDSDKLNSFDEIDEKYLTQILKLLDN  158
+
+
+>sp|P36088|FRMSR_YEAST Free methionine-R-sulfoxide reductase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YKL069W PE=1 SV=1
+Length=180
+
+ Score = 231 bits (590),  Expect = 1e-77, Method: Composition-based stats.
+ Identities = 61/164 (37%), Positives = 95/164 (58%), Gaps = 7/164 (4%)
+
+Query  2    HALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGW-----FWVGFYL  56
+            H  + S  +K  +  ++L   E +   + +WV NL+N ++++  A+        W GFY+
+Sbjct  12   HVNYSSNLNKEEILEQLLLSYEGLSDGQVNWVCNLSNASSLIWHAYKSLAVDINWAGFYV  71
+
+Query  57   VD-TRSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRS  115
+               +  + L+L PFQG +AC  I FG+GVCG A +   T +V DV+ +P HIAC   ++S
+Sbjct  72   TQASEENTLILGPFQGKVACQMIQFGKGVCGTAASTKETQIVPDVNKYPGHIACDGETKS  131
+
+Query  116  EIVVPLFS-DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            EIVVP+ S DG+ +GV+D D      FD  D  +L +LAK++ K
+Sbjct  132  EIVVPIISNDGKTLGVIDIDCLDYEGFDHVDKEFLEKLAKLINK  175
+
+
+>sp|O66116|Y507_ZYMMO Protein ZMO0507 OS=Zymomonas mobilis subsp. 
+mobilis (strain ATCC 31821 / ZM4 / CP4) OX=264203 GN=ZMO0507 
+PE=3 SV=1
+Length=161
+
+ Score = 229 bits (583),  Expect = 7e-77, Method: Composition-based stats.
+ Identities = 57/160 (36%), Positives = 91/160 (57%), Gaps = 4/160 (3%)
+
+Query  1    MHALHFSASDKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGW-FWVGFYLVDT  59
+            M +   +   K  LY ++L  ++ ++++E D +AN+ANTAA++        WVGFY    
+Sbjct  1    MFSFSINTGSKKTLYSDLLTTLKELLSEEGDPIANMANTAALIWTYMPDLNWVGFYRAI-  59
+
+Query  60   RSDELVLAPFQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVV  119
+                L+L PFQG +AC +IP+GRGVCG A A G    V DV  +P+HI+C   + SE+V+
+Sbjct  60   -RSYLILGPFQGKVACVKIPYGRGVCGTAAATGRIQCVRDVHTYPNHISCDPSAASELVI  118
+
+Query  120  PLFS-DGRCIGVLDADSEHLAQFDETDALYLGELAKILEK  158
+            P+     + + V+D +S  + +FD  D      L ++L +
+Sbjct  119  PIRGRQNQILAVIDLESPTMGRFDAEDVEGCSRLMEVLGR  158
+
+
+>sp|P76270|MSRC_ECOLI Free methionine-R-sulfoxide reductase OS=Escherichia 
+coli (strain K12) OX=83333 GN=msrC PE=1 SV=2
+Length=165
+
+ Score = 224 bits (571),  Expect = 6e-75, Method: Composition-based stats.
+ Identities = 66/150 (44%), Positives = 86/150 (57%), Gaps = 3/150 (2%)
+
+Query  10   DKAALYREVLPQIESVVADETDWVANLANTAAVLKEAFGWF-WVGFYLVDTRSDELVLAP  68
+            +K   Y ++     +++A ET ++A LANT+A+L E      W GFYL+    D LVL P
+Sbjct  2    NKTEFYADLNRDFNALMAGETSFLATLANTSALLYERLTDINWAGFYLL--EDDTLVLGP  59
+
+Query  69   FQGPLACTRIPFGRGVCGQAWAKGGTVVVGDVDAHPDHIACSSLSRSEIVVPLFSDGRCI  128
+            FQG +AC RIP GRGVCG A A+     + DV     HIAC + S SEIV+PL    + I
+Sbjct  60   FQGKIACVRIPVGRGVCGTAVARNQVQRIEDVHVFDGHIACDAASNSEIVLPLVVKNQII  119
+
+Query  129  GVLDADSEHLAQFDETDALYLGELAKILEK  158
+            GVLD DS    +F + D   L +L   LEK
+Sbjct  120  GVLDIDSTVFGRFTDEDEQGLRQLVAQLEK  149
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8343964552
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

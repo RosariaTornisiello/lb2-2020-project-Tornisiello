@@ -1,0 +1,300 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2cyja1
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio r...  38.9    0.002
+
+
+>sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio 
+rerio OX=7955 GN=aamdc PE=2 SV=1
+Length=122
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 30/122 (25%), Positives = 57/122 (47%), Gaps = 11/122 (9%)
+
+Query  3    IEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVEDF  61
+            I  + +G +K+ G    + D  ++P G      +E     H     + P +LE+ L +  
+Sbjct  6    IASLSWGHMKVKGCSTSYKDCKVWPGGSRAWDWRETGTNHH---PGVQPSDLEEILRKGV  62
+
+Query  62   DVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGK-KRILAIIHV  116
+              L++G G+   L + P +    KK   D +V +  T++A++    L GK +++  + H 
+Sbjct  63   QTLVIGRGMSEALQVPPSTLDYVKKQGVDVQVFQ--TEQAVREYNALAGKGEKVGGVFHS  120
+
+Query  117  TC  118
+            TC
+Sbjct  121  TC  122
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.140    0.395    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+Results from round 2
+
+
+Query= d2cyja1
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio r...  166     3e-53
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8R0P4|AAMDC_MOUSE Mth938 domain-containing protein OS=Mus mus...  131     1e-39
+sp|Q32PA8|AAMDC_BOVIN Mth938 domain-containing protein OS=Bos tau...  127     3e-38
+sp|Q9H7C9|AAMDC_HUMAN Mth938 domain-containing protein OS=Homo sa...  127     6e-38
+
+
+>sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio 
+rerio OX=7955 GN=aamdc PE=2 SV=1
+Length=122
+
+ Score = 166 bits (419),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 30/123 (24%), Positives = 58/123 (47%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G      +E     H     + P +LE+ L + 
+Sbjct  5    EIASLSWGHMKVKGCSTSYKDCKVWPGGSRAWDWRETGTNHH---PGVQPSDLEEILRKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGK-KRILAIIH  115
+               L++G G+   L + P +    KK   D +V +  T++A++    L GK +++  + H
+Sbjct  62   VQTLVIGRGMSEALQVPPSTLDYVKKQGVDVQVFQ--TEQAVREYNALAGKGEKVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q8R0P4|AAMDC_MOUSE Mth938 domain-containing protein OS=Mus 
+musculus OX=10090 GN=Aamdc PE=1 SV=1
+Length=122
+
+ Score = 131 bits (329),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 56/123 (46%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            KI  + +G +K+ G    + D  ++P G      +E   +    S  + P ++++   + 
+Sbjct  5    KIASLSWGQMKVQGSTLTYKDCKVWPGGSRAWDWRETGTEH---SPGVQPADVKEVAEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+               L++G G+   L + P +    +K   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQTLVIGRGMSEALKVPPSTVEYLEKQGIDVRVLQ--TEQAVKEYNALVAQGVRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q32PA8|AAMDC_BOVIN Mth938 domain-containing protein OS=Bos 
+taurus OX=9913 GN=AAMDC PE=2 SV=1
+Length=122
+
+ Score = 127 bits (320),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 28/123 (23%), Positives = 59/123 (48%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G  +   +E   +    S  + P ++E+ + + 
+Sbjct  5    EIASLSWGQMKVQGSTKIYKDCKVWPGGSRDWDWRETGTEH---SPGVQPADVEEVVEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+              +L++G G+   L + P +    KK   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQILVIGRGMSEALKVPPSTVEYLKKKGIDVRVLQ--TEQAVKEYNALATQGIRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q9H7C9|AAMDC_HUMAN Mth938 domain-containing protein OS=Homo 
+sapiens OX=9606 GN=AAMDC PE=1 SV=1
+Length=122
+
+ Score = 127 bits (319),  Expect = 6e-38, Method: Composition-based stats.
+ Identities = 26/123 (21%), Positives = 56/123 (46%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G      +E   +    S  + P ++++ + + 
+Sbjct  5    EIASLSWGQMKVKGSNTTYKDCKVWPGGSRTWDWRETGTEH---SPGVQPADVKEVVEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+               L++G G+   L +   +    KK   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQTLVIGRGMSEALKVPSSTVEYLKKHGIDVRVLQ--TEQAVKEYNALVAQGVRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.341    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+Results from round 3
+
+
+Query= d2cyja1
+
+Length=118
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio r...  173     6e-56
+sp|Q8R0P4|AAMDC_MOUSE Mth938 domain-containing protein OS=Mus mus...  168     5e-54
+sp|Q32PA8|AAMDC_BOVIN Mth938 domain-containing protein OS=Bos tau...  166     2e-53
+sp|Q9H7C9|AAMDC_HUMAN Mth938 domain-containing protein OS=Homo sa...  166     3e-53
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q502H1|AAMDC_DANRE Mth938 domain-containing protein OS=Danio 
+rerio OX=7955 GN=aamdc PE=2 SV=1
+Length=122
+
+ Score = 173 bits (437),  Expect = 6e-56, Method: Composition-based stats.
+ Identities = 30/123 (24%), Positives = 57/123 (46%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G      +E     H     + P +LE+ L + 
+Sbjct  5    EIASLSWGHMKVKGCSTSYKDCKVWPGGSRAWDWRETGTNHH---PGVQPSDLEEILRKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+               L++G G+   L + P +    KK   D +V +  T++A++    L GK  ++  + H
+Sbjct  62   VQTLVIGRGMSEALQVPPSTLDYVKKQGVDVQVFQ--TEQAVREYNALAGKGEKVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q8R0P4|AAMDC_MOUSE Mth938 domain-containing protein OS=Mus 
+musculus OX=10090 GN=Aamdc PE=1 SV=1
+Length=122
+
+ Score = 168 bits (424),  Expect = 5e-54, Method: Composition-based stats.
+ Identities = 27/123 (22%), Positives = 56/123 (46%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            KI  + +G +K+ G    + D  ++P G      +E   +    S  + P ++++   + 
+Sbjct  5    KIASLSWGQMKVQGSTLTYKDCKVWPGGSRAWDWRETGTEH---SPGVQPADVKEVAEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+               L++G G+   L + P +    +K   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQTLVIGRGMSEALKVPPSTVEYLEKQGIDVRVLQ--TEQAVKEYNALVAQGVRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q32PA8|AAMDC_BOVIN Mth938 domain-containing protein OS=Bos 
+taurus OX=9913 GN=AAMDC PE=2 SV=1
+Length=122
+
+ Score = 166 bits (420),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 28/123 (23%), Positives = 59/123 (48%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G  +   +E   +    S  + P ++E+ + + 
+Sbjct  5    EIASLSWGQMKVQGSTKIYKDCKVWPGGSRDWDWRETGTEH---SPGVQPADVEEVVEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+              +L++G G+   L + P +    KK   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQILVIGRGMSEALKVPPSTVEYLKKKGIDVRVLQ--TEQAVKEYNALATQGIRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+>sp|Q9H7C9|AAMDC_HUMAN Mth938 domain-containing protein OS=Homo 
+sapiens OX=9606 GN=AAMDC PE=1 SV=1
+Length=122
+
+ Score = 166 bits (419),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 26/123 (21%), Positives = 56/123 (46%), Gaps = 11/123 (9%)
+
+Query  2    KIEEVRFGLVKIDGKEFDH-DIVIYPSGRIERRMKEISKKKHGTSHKLDPEELEKYLVED  60
+            +I  + +G +K+ G    + D  ++P G      +E   +    S  + P ++++ + + 
+Sbjct  5    EIASLSWGQMKVKGSNTTYKDCKVWPGGSRTWDWRETGTEH---SPGVQPADVKEVVEKG  61
+
+Query  61   FDVLLVGTGIYGMLSLLPES----KKLVEDKEVIEKPTKEALKLLEELWGKK-RILAIIH  115
+               L++G G+   L +   +    KK   D  V++  T++A+K    L  +  R+  + H
+Sbjct  62   VQTLVIGRGMSEALKVPSSTVEYLKKHGIDVRVLQ--TEQAVKEYNALVAQGVRVGGVFH  119
+
+Query  116  VTC  118
+             TC
+Sbjct  120  STC  122
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.125    0.336    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5112924168
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

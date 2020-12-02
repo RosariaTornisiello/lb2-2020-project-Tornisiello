@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2cvea2
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P32438|YPOL_THETH IMPACT family member in pol 5'region (Fragme...  66.6    2e-14
+
+
+>sp|P32438|YPOL_THETH IMPACT family member in pol 5'region (Fragment) 
+OS=Thermus thermophilus OX=274 PE=3 SV=1
+Length=179
+
+ Score = 66.6 bits (161),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 41/69 (59%), Positives = 50/69 (72%), Gaps = 3/69 (4%)
+
+Query  1    VERVGLAFLVPFAEVGRVYALLEARALKAEETYTPEGVRFALLLPKPEREG--FLRALLD  58
+            ++ V +AF VPF EVGRV+ LL AR L+AEE Y PEGVRFAL LP P  EG   L+AL D
+Sbjct  111  LDWVEVAFRVPFPEVGRVHGLLRARHLEAEEAYLPEGVRFALRLP-PGGEGGPCLKALSD  169
+
+Query  59   ATRGQVALE  67
+             TRG++ +E
+Sbjct  170  LTRGRLWVE  178
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.141    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+Results from round 2
+
+
+Query= d2cvea2
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P32438|YPOL_THETH IMPACT family member in pol 5'region (Fragme...  100     2e-27
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P32438|YPOL_THETH IMPACT family member in pol 5'region (Fragment) 
+OS=Thermus thermophilus OX=274 PE=3 SV=1
+Length=179
+
+ Score = 100 bits (248),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 41/69 (59%), Positives = 50/69 (72%), Gaps = 3/69 (4%)
+
+Query  1    VERVGLAFLVPFAEVGRVYALLEARALKAEETYTPEGVRFALLLPKPEREG--FLRALLD  58
+            ++ V +AF VPF EVGRV+ LL AR L+AEE Y PEGVRFAL LP P  EG   L+AL D
+Sbjct  111  LDWVEVAFRVPFPEVGRVHGLLRARHLEAEEAYLPEGVRFALRLP-PGGEGGPCLKALSD  169
+
+Query  59   ATRGQVALE  67
+             TRG++ +E
+Sbjct  170  LTRGRLWVE  178
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.132    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

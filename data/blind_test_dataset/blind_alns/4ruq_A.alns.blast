@@ -1,0 +1,2128 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 4ruq_A
+
+Length=236
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 PE...  475     5e-172
+sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 ...  81.3    2e-17 
+sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 ...  69.7    3e-13 
+sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 ...  60.5    2e-09 
+sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing p...  49.7    9e-06 
+sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing p...  49.3    1e-05 
+sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing p...  47.0    7e-05 
+sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing p...  44.7    4e-04 
+sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing pro...  43.9    7e-04 
+sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing p...  43.5    0.001 
+sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing p...  43.1    0.001 
+
+
+>sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 
+PE=1 SV=1
+Length=238
+
+ Score = 475 bits (1223),  Expect = 5e-172, Method: Compositional matrix adjust.
+ Identities = 235/236 (99%), Positives = 236/236 (100%), Gaps = 0/236 (0%)
+
+Query  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+            LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA
+Sbjct  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+
+Query  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLN  120
+            NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQ+N
+Sbjct  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQIN  120
+
+Query  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+            GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV
+Sbjct  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL
+Sbjct  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+
+
+>sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 
+PE=1 SV=1
+Length=221
+
+ Score = 81.3 bits (199),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 69/193 (36%), Positives = 102/193 (53%), Gaps = 23/193 (12%)
+
+Query  4    TVIDGNLKQIDAGSGSVVGVNNLNETF---VLIDNVFTKISGSLKHFSVGPAGQL-GVNT  59
+            T I G+LKQ+DA    V GVN  ++ +   V     + ++SG LKH S    G + GVN+
+Sbjct  42   TQISGSLKQVDADDHEVWGVNRNDDIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNS  101
+
+Query  60   ANNIFKYQS---GGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPW  116
+             + I+K      G + Q+ G LKQ+D GG  ++ GVN  + IY   +D +  W       
+Sbjct  102  NDQIYKCPKPCNGAWTQVNGRLKQID-GGQSMVYGVNSANAIYRRPVDGSGSWQ------  154
+
+Query  117  VQLNGKLKYYS-CGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDG  175
+             Q++G LK+ +  G    +GVNSNDQI+      +  CSG  S I+  G L   + AT  
+Sbjct  155  -QISGSLKHITGSGLSEVFGVNSNDQIY----RCTKPCSGQWSLID--GRLKQCD-ATGN  206
+
+Query  176  SVFGVNSQGNLYQ  188
+            ++ GVNS  N+Y+
+Sbjct  207  TIVGVNSVDNIYR  219
+
+
+ Score = 77.8 bits (190),  Expect = 4e-16, Method: Compositional matrix adjust.
+ Identities = 68/193 (35%), Positives = 91/193 (47%), Gaps = 22/193 (11%)
+
+Query  6    IDGNLKQIDAGSGSVVGVNNLNETFVL----IDNVFTKISGSLKHFSVGPAGQLGVNTAN  61
+            I G L  I A    + GVN+  + ++      D  +T+ISGSLK          GVN  +
+Sbjct  6    IPGKLMHITATPHFLWGVNSNQQIYLCRQPCYDGQWTQISGSLKQVDADDHEVWGVNRND  65
+
+Query  62   NIFKYQ---SGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSS-NTPWV  117
+            +I+K     SG +V+++G LK V A G   I GVN  D IY        K P   N  W 
+Sbjct  66   DIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNSNDQIY--------KCPKPCNGAWT  117
+
+Query  118  QLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSV  177
+            Q+NG+LK    G    +GVNS + I+           GSGS+  I G L  I  +    V
+Sbjct  118  QVNGRLKQIDGGQSMVYGVNSANAIY------RRPVDGSGSWQQISGSLKHITGSGLSEV  171
+
+Query  178  FGVNSQGNLYQRT  190
+            FGVNS   +Y+ T
+Sbjct  172  FGVNSNDQIYRCT  184
+
+
+ Score = 51.6 bits (122),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 40/120 (33%), Positives = 58/120 (48%), Gaps = 15/120 (13%)
+
+Query  116  WVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDG  175
+            W Q+ GKL + +  P+  WGVNSN QI++ +    +     G +  I G L  ++ A D 
+Sbjct  3    WHQIPGKLMHITATPHFLWGVNSNQQIYLCRQPCYD-----GQWTQISGSLKQVD-ADDH  56
+
+Query  176  SVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFD-LGVLWLVCVDGSIRKC  234
+             V+GVN   ++Y+R        DG+   S V      KHVS    G +W V  +  I KC
+Sbjct  57   EVWGVNRNDDIYKRP------VDGSG--SWVRVSGKLKHVSASGYGYIWGVNSNDQIYKC  108
+
+
+>sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 
+GN=TECA PE=1 SV=3
+Length=217
+
+ Score = 69.7 bits (169),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 59/200 (30%), Positives = 93/200 (47%), Gaps = 25/200 (13%)
+
+Query  13   IDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQL-GVNTANNIFKYQSGG-  70
+            + AGS  + GVN+L   +    + + K+ G L + SVG  G++ GVN  +NI++      
+Sbjct  16   VGAGSNDIWGVNHLGHIYHWDGHKWHKVDGELTNISVGHDGEVWGVNKNHNIYRLDRSNN  75
+
+Query  71   -FVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCG  129
+             + Q+ G L QV  G    + GVN  D IY        KW   +  W +++G L   S G
+Sbjct  76   KWTQIPGELVQVSVGSHHHVWGVNHLDHIY--------KWDHHHNKWDKIDGALTNVSVG  127
+
+Query  130  PY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFIN-IPGLLSMIEVATDGSVFGVNSQGNLY  187
+               + +GVN   QI+             GS ++ + G L  I V+    + GVN   ++Y
+Sbjct  128  KDGTVYGVNRGHQIY----------RWDGSKVDLVLGELVQIHVSDAEKIVGVNHLDHIY  177
+
+Query  188  Q-RTGVTRSKPDGT-DWISM  205
+            + + G    K DG   W+S+
+Sbjct  178  RLKHGKDWEKLDGELTWVSV  197
+
+
+>sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 
+GN=TECB PE=1 SV=1
+Length=353
+
+ Score = 60.5 bits (145),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 68/233 (29%), Positives = 103/233 (44%), Gaps = 32/233 (14%)
+
+Query  9    NLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLG-VNTANNIFKYQ  67
+            N+  + AG+  V GVN+L   +    + + +I G+  + SVG  G +  VN A+ I++  
+Sbjct  148  NVVAVGAGNHDVWGVNHLEHIYHWDGSKWHQIEGAATNISVGLDGTVWCVNKAHEIYRLD  207
+
+Query  68   SG--GFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKY  125
+             G   +  + G L QV  G    I GVN  D IY  N D+N+        W  ++G+L  
+Sbjct  208  RGTNKWSIVPGELVQVSVGNSHNIWGVNHLDAIYKWNADSNS--------WTFVDGQLTN  259
+
+Query  126  YSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQG  184
+             S G   + +GVN    I+     S +  SG          L  I VA    + GVN  G
+Sbjct  260  VSVGHDGTVYGVNRAGNIYHYNGNSWDAVSGE---------LVQIHVANKDLIVGVNKAG  310
+
+Query  185  NLYQ-RTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            ++Y+ + G    K +G   +S VA  +G        G LW      +I K +L
+Sbjct  311  HVYRLKHGKDWEKLEGE--LSWVAVGHG--------GELWGANSAHNIYKALL  353
+
+
+ Score = 57.8 bits (138),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 46/159 (29%), Positives = 71/159 (45%), Gaps = 18/159 (11%)
+
+Query  36   VFTKISGSLKHFSVGPAGQ--LGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVN  93
+             + +  G L   +VG       GVN   +I+ +    + Q+ G    +  G D  +  VN
+Sbjct  139  AWERHEGELNVVAVGAGNHDVWGVNHLEHIYHWDGSKWHQIEGAATNISVGLDGTVWCVN  198
+
+Query  94   MYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCG-PYSCWGVNSNDQIFIMKDVSSNV  152
+               +IY L+   N         W  + G+L   S G  ++ WGVN  D I+       N 
+Sbjct  199  KAHEIYRLDRGTN--------KWSIVPGELVQVSVGNSHNIWGVNHLDAIY-----KWNA  245
+
+Query  153  CSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTG  191
+             S S +F++  G L+ + V  DG+V+GVN  GN+Y   G
+Sbjct  246  DSNSWTFVD--GQLTNVSVGHDGTVYGVNRAGNIYHYNG  282
+
+
+ Score = 55.1 bits (131),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 43/145 (30%), Positives = 69/145 (48%), Gaps = 14/145 (10%)
+
+Query  4    TVIDGNLKQIDAG-SGSVVGVNNLNETFVL--IDNVFTKISGSLKHFSVGPAGQL-GVNT  59
+            +++ G L Q+  G S ++ GVN+L+  +      N +T + G L + SVG  G + GVN 
+Sbjct  214  SIVPGELVQVSVGNSHNIWGVNHLDAIYKWNADSNSWTFVDGQLTNVSVGHDGTVYGVNR  273
+
+Query  60   ANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQL  119
+            A NI+ Y    +  ++G L Q+      +I GVN    +Y L    +         W +L
+Sbjct  274  AGNIYHYNGNSWDAVSGELVQIHVANKDLIVGVNKAGHVYRLKHGKD---------WEKL  324
+
+Query  120  NGKLKYYSCGP-YSCWGVNSNDQIF  143
+             G+L + + G     WG NS   I+
+Sbjct  325  EGELSWVAVGHGGELWGANSAHNIY  349
+
+
+>sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing 
+protein 1 OS=Pongo abelii OX=9601 GN=TECPR1 PE=2 SV=1
+Length=1165
+
+ Score = 49.7 bits (117),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 34/104 (33%), Positives = 50/104 (48%), Gaps = 5/104 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVS-SNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W V+   +++  +DVS SN    S S ++ PG +  I       ++    +G   
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVD  228
+             R G+ RS P G+ W S+V  P   NG  HVS  + V+W V  D
+Sbjct  267  VREGINRSNPKGSSW-SIVEPPGSDNGIMHVSVGVSVVWAVTKD  309
+
+
+>sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing 
+protein 1 OS=Homo sapiens OX=9606 GN=TECPR1 PE=1 SV=1
+Length=1165
+
+ Score = 49.3 bits (116),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 33/104 (32%), Positives = 50/104 (48%), Gaps = 5/104 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVS-SNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W V+   +++  +DVS SN    S S ++ PG +  I       ++    +G   
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVD  228
+             R G+ RS P G+ W S+V  P   NG  H+S  + V+W V  D
+Sbjct  267  VREGINRSNPKGSSW-SIVEPPGSENGVMHISVGVSVVWAVTKD  309
+
+
+>sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing 
+protein 1 OS=Mus musculus OX=10090 GN=Tecpr1 PE=1 SV=1
+Length=1166
+
+ Score = 47.0 bits (110),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 33/107 (31%), Positives = 49/107 (46%), Gaps = 5/107 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVSSNVCSGSG-SFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W V+   +++  +DVS     GS  S +  PG +  I       ++    +G   
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHPNPEGSSWSLVETPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSI  231
+             R GV R+ P G+ W SMV  P   NG  HVS  + V+W +  D  +
+Sbjct  267  VREGVCRNNPKGSYW-SMVEPPGSENGIMHVSAGVSVVWAITKDRKV  312
+
+
+>sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing 
+protein OS=Drosophila melanogaster OX=7227 GN=Pex23 PE=2 
+SV=2
+Length=1350
+
+ Score = 44.7 bits (104),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 31/124 (25%), Positives = 56/124 (45%), Gaps = 10/124 (8%)
+
+Query  107  NKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDV-------SSNVCSGSGSF  159
+            + W    TP    + ++ + S G  + W V ++   +  + V       S +   G G +
+Sbjct  280  DSWLDVKTPVAASSLRIVHVSVGTDAVWCVTNDHHAWFRRGVKGEAAGISEDSAIGKG-W  338
+
+Query  160  INIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVACPNGHKHVSFD  218
+            + + G +SM+ VA +  VF + +    LY R+GVT + P G  W  ++ CP      S  
+Sbjct  339  VEMVGNISMVSVAANDQVFAIGAADRCLYHRSGVTSADPTGKKW-RLIQCPMQISRTSSS  397
+
+Query  219  LGVL  222
+            L ++
+Sbjct  398  LSIV  401
+
+
+>sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing 
+protein 1 OS=Rattus norvegicus OX=10116 GN=Tecpr1 PE=2 SV=1
+Length=1166
+
+ Score = 43.9 bits (102),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 30/107 (28%), Positives = 49/107 (46%), Gaps = 5/107 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVSSNVCSGSG-SFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W V+   +++  ++VS     GS  S ++ PG +  I       ++    +G   
+Sbjct  207  GRLSVWAVSLQGKVWYRENVSHPNPEGSSWSLVDTPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSI  231
+             R G+ R+ P G  W S+V  P   NG  HVS  + V+W +  D  +
+Sbjct  267  VREGICRNNPKGNSW-SIVEPPGSENGIMHVSAGVSVVWAITKDRKV  312
+
+
+>sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing 
+protein 1 OS=Gallus gallus OX=9031 GN=TECPR1 PE=3 SV=1
+Length=1173
+
+ Score = 43.5 bits (101),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 30/107 (28%), Positives = 50/107 (47%), Gaps = 5/107 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVSSNVCSGSG-SFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W V+   +++  ++V  +   GS  S I+ PG ++ I   +   ++    +G   
+Sbjct  207  GRLSVWAVSLQGRVWYRENVCHHNPEGSTWSLISTPGEVAQISCGSYDLLWATLWEGQAI  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSI  231
+             R G+ R+ P G  W S V  P   NG  HVS  + V+W +  D  +
+Sbjct  267  VREGIDRNNPQGISW-STVESPSSDNGIMHVSVGVDVVWCITKDRKV  312
+
+
+>sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing 
+protein 1 OS=Xenopus tropicalis OX=8364 GN=tecpr1 PE=2 SV=2
+Length=1173
+
+ Score = 43.1 bits (100),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 28/92 (30%), Positives = 51/92 (55%), Gaps = 3/92 (3%)
+
+Query  123  LKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNS  182
+            + + S G    W V  + +++  + V+S+   G+G +I + G ++M++V  +  VFGV  
+Sbjct  293  IMHVSVGVNVVWAVTKDRKVWFRRGVNSHNPCGTG-WIEMVGEMAMVDVGLNDQVFGVGY  351
+
+Query  183  QGN-LYQRTGVTRSKPDGTDWISMVACPNGHK  213
+            +   +Y R GVT S+  G  W S+V  P G++
+Sbjct  352  EDRAVYFRQGVTPSELSGKAWKSIVV-PRGNE  382
+
+
+ Score = 43.1 bits (100),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 28/107 (26%), Positives = 49/107 (46%), Gaps = 5/107 (5%)
+
+Query  129  GPYSCWGVNSNDQIFIMKDVSSNVCSGSG-SFINIPGLLSMIEVATDGSVFGVNSQGNLY  187
+            G  S W  +   +++  +DV  N+  GS  + +  P  +  I    +  ++    +G   
+Sbjct  207  GRLSVWAASLQGKVWYREDVCQNIPEGSSWTELETPSEVIQISCGPNDLLWASLWEGQAM  266
+
+Query  188  QRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSI  231
+             R G+ R+ P G+ W ++V  P   NG  HVS  + V+W V  D  +
+Sbjct  267  VREGINRNNPKGSSW-TIVEAPTPENGIMHVSVGVNVVWAVTKDRKV  312
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16910141596
+Results from round 2
+
+
+Query= 4ruq_A
+
+Length=236
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 PE...  308     5e-106
+sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 ...  206     3e-64 
+sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 ...  178     5e-55 
+sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 ...  158     3e-47 
+sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing p...  124     3e-31 
+sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing pro...  122     1e-30 
+sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing p...  119     1e-29 
+sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing p...  118     3e-29 
+sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing p...  117     6e-29 
+sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing p...  116     2e-28 
+sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing p...  110     1e-26 
+
+Sequences not found previously or not previously below threshold:
+
+sp|O15040|TCPR2_HUMAN Tectonin beta-propeller repeat-containing p...  49.0    2e-05
+sp|P0C8G7|PV22_POMCA Perivitellin-2 31 kDa subunit OS=Pomacea can...  43.9    4e-04
+
+
+>sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 
+PE=1 SV=1
+Length=238
+
+ Score = 308 bits (790),  Expect = 5e-106, Method: Composition-based stats.
+ Identities = 235/236 (99%), Positives = 236/236 (100%), Gaps = 0/236 (0%)
+
+Query  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+            LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA
+Sbjct  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+
+Query  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLN  120
+            NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQ+N
+Sbjct  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQIN  120
+
+Query  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+            GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV
+Sbjct  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL
+Sbjct  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+
+
+>sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 
+GN=TECB PE=1 SV=1
+Length=353
+
+ Score = 206 bits (525),  Expect = 3e-64, Method: Composition-based stats.
+ Identities = 68/233 (29%), Positives = 103/233 (44%), Gaps = 32/233 (14%)
+
+Query  9    NLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLG-VNTANNIFKYQ  67
+            N+  + AG+  V GVN+L   +    + + +I G+  + SVG  G +  VN A+ I++  
+Sbjct  148  NVVAVGAGNHDVWGVNHLEHIYHWDGSKWHQIEGAATNISVGLDGTVWCVNKAHEIYRLD  207
+
+Query  68   SG--GFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKY  125
+             G   +  + G L QV  G    I GVN  D IY  N D+N+        W  ++G+L  
+Sbjct  208  RGTNKWSIVPGELVQVSVGNSHNIWGVNHLDAIYKWNADSNS--------WTFVDGQLTN  259
+
+Query  126  YSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQG  184
+             S G   + +GVN    I+     S +  S         G L  I VA    + GVN  G
+Sbjct  260  VSVGHDGTVYGVNRAGNIYHYNGNSWDAVS---------GELVQIHVANKDLIVGVNKAG  310
+
+Query  185  NLYQ-RTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            ++Y+ + G    K +G   +S VA  +G        G LW      +I K +L
+Sbjct  311  HVYRLKHGKDWEKLEGE--LSWVAVGHG--------GELWGANSAHNIYKALL  353
+
+
+>sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 
+GN=TECA PE=1 SV=3
+Length=217
+
+ Score = 178 bits (451),  Expect = 5e-55, Method: Composition-based stats.
+ Identities = 63/234 (27%), Positives = 102/234 (44%), Gaps = 34/234 (15%)
+
+Query  9    NLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLG-VNTANNIFKYQ  67
+            ++  + AGS  + GVN+L   +    + + K+ G L + SVG  G++  VN  +NI++  
+Sbjct  12   SVVGVGAGSNDIWGVNHLGHIYHWDGHKWHKVDGELTNISVGHDGEVWGVNKNHNIYRLD  71
+
+Query  68   SGG--FVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKY  125
+                 + Q+ G L QV  G    + GVN  D IY        KW   +  W +++G L  
+Sbjct  72   RSNNKWTQIPGELVQVSVGSHHHVWGVNHLDHIY--------KWDHHHNKWDKIDGALTN  123
+
+Query  126  YSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFINIP-GLLSMIEVATDGSVFGVNSQ  183
+             S G   + +GVN   QI+             GS +++  G L  I V+    + GVN  
+Sbjct  124  VSVGKDGTVYGVNRGHQIY----------RWDGSKVDLVLGELVQIHVSDAEKIVGVNHL  173
+
+Query  184  GNLYQ-RTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+             ++Y+ + G    K DG   ++ V+  +         G +W V     I K  L
+Sbjct  174  DHIYRLKHGKDWEKLDGE--LTWVSVGH--------HGEVWGVNKLHHIYKATL  217
+
+
+ Score = 95.6 bits (236),  Expect = 6e-23, Method: Composition-based stats.
+ Identities = 46/145 (32%), Positives = 68/145 (47%), Gaps = 14/145 (10%)
+
+Query  4    TVIDGNLKQIDAGS-GSVVGVNNLNETFVLIDN--VFTKISGSLKHFSVGPAGQL-GVNT  59
+            T I G L Q+  GS   V GVN+L+  +    +   + KI G+L + SVG  G + GVN 
+Sbjct  78   TQIPGELVQVSVGSHHHVWGVNHLDHIYKWDHHHNKWDKIDGALTNVSVGKDGTVYGVNR  137
+
+Query  60   ANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQL  119
+             + I+++       + G L Q+     + I GVN  D IY L              W +L
+Sbjct  138  GHQIYRWDGSKVDLVLGELVQIHVSDAEKIVGVNHLDHIYRL---------KHGKDWEKL  188
+
+Query  120  NGKLKYYSCGPY-SCWGVNSNDQIF  143
+            +G+L + S G +   WGVN    I+
+Sbjct  189  DGELTWVSVGHHGEVWGVNKLHHIY  213
+
+
+>sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 
+PE=1 SV=1
+Length=221
+
+ Score = 158 bits (400),  Expect = 3e-47, Method: Composition-based stats.
+ Identities = 68/193 (35%), Positives = 101/193 (52%), Gaps = 23/193 (12%)
+
+Query  4    TVIDGNLKQIDAGSGSVVGVNNLNETF---VLIDNVFTKISGSLKHFSVGPAGQLG-VNT  59
+            T I G+LKQ+DA    V GVN  ++ +   V     + ++SG LKH S    G +  VN+
+Sbjct  42   TQISGSLKQVDADDHEVWGVNRNDDIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNS  101
+
+Query  60   ANNIFKYQS---GGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPW  116
+             + I+K      G + Q+ G LKQ+D GG  ++ GVN  + IY   +D +  W       
+Sbjct  102  NDQIYKCPKPCNGAWTQVNGRLKQID-GGQSMVYGVNSANAIYRRPVDGSGSWQ------  154
+
+Query  117  VQLNGKLKYYS-CGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDG  175
+             Q++G LK+ +  G    +GVNSNDQI+      +  CSG  S I+  G L   + AT  
+Sbjct  155  -QISGSLKHITGSGLSEVFGVNSNDQIY----RCTKPCSGQWSLID--GRLKQCD-ATGN  206
+
+Query  176  SVFGVNSQGNLYQ  188
+            ++ GVNS  N+Y+
+Sbjct  207  TIVGVNSVDNIYR  219
+
+
+ Score = 112 bits (279),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 66/205 (32%), Positives = 98/205 (48%), Gaps = 29/205 (14%)
+
+Query  36   VFTKISGSLKHFSVGPAGQLGVNTANNIFKYQS----GGFVQLAGLLKQVDAGGDQIIAG  91
+             + +I G L H +  P    GVN+   I+  +     G + Q++G LKQVDA  D  + G
+Sbjct  2    QWHQIPGKLMHITATPHFLWGVNSNQQIYLCRQPCYDGQWTQISGSLKQVDA-DDHEVWG  60
+
+Query  92   VNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYS-CGPYSCWGVNSNDQIFIMKDVSS  150
+            VN  DDIY   +D +  W       V+++GKLK+ S  G    WGVNSNDQI+       
+Sbjct  61   VNRNDDIYKRPVDGSGSW-------VRVSGKLKHVSASGYGYIWGVNSNDQIY----KCP  109
+
+Query  151  NVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+              C+G+ + +N  G L  I+      V+GVNS   +Y+R        DG+   S      
+Sbjct  110  KPCNGAWTQVN--GRLKQID-GGQSMVYGVNSANAIYRR------PVDGSG--SWQQISG  158
+
+Query  211  GHKHVS-FDLGVLWLVCVDGSIRKC  234
+              KH++   L  ++ V  +  I +C
+Sbjct  159  SLKHITGSGLSEVFGVNSNDQIYRC  183
+
+
+ Score = 110 bits (276),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 69/236 (29%), Positives = 96/236 (41%), Gaps = 28/236 (12%)
+
+Query  5    VIDGNLKQIDAGSGSVVGVNNLNETFVLI----DNVFTKISGSLKHFSVGPAGQLGVNTA  60
+             I G L  I A    + GVN+  + ++      D  +T+ISGSLK          GVN  
+Sbjct  5    QIPGKLMHITATPHFLWGVNSNQQIYLCRQPCYDGQWTQISGSLKQVDADDHEVWGVNRN  64
+
+Query  61   NNIFKYQ---SGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWV  117
+            ++I+K     SG +V+++G LK V A G   I GVN  D IY      N  W        
+Sbjct  65   DDIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNSNDQIYKCPKPCNGAW-------T  117
+
+Query  118  QLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSV  177
+            Q+NG+LK    G    +GVNS + I+           GSGS+  I G L  I  +    V
+Sbjct  118  QVNGRLKQIDGGQSMVYGVNSANAIYRR------PVDGSGSWQQISGSLKHITGSGLSEV  171
+
+Query  178  FGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRK  233
+            FGVNS   +Y+ T     +                K        +  V    +I +
+Sbjct  172  FGVNSNDQIYRCTKPCSGQ--------WSLIDGRLKQCDATGNTIVGVNSVDNIYR  219
+
+
+>sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing 
+protein 1 OS=Mus musculus OX=10090 GN=Tecpr1 PE=1 SV=1
+Length=1166
+
+ Score = 124 bits (311),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 33/115 (29%), Positives = 51/115 (44%), Gaps = 5/115 (4%)
+
+Query  122  KLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGV  180
+            ++     G  S W V+   +++  +DVS     GS  S +  PG +  I       ++  
+Sbjct  200  EITEEPVGRLSVWAVSLQGKVWYREDVSHPNPEGSSWSLVETPGEVVQISCGPHDLIWAT  259
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSIR  232
+              +G    R GV R+ P G+ W SMV  P   NG  HVS  + V+W +  D  + 
+Sbjct  260  LWEGQALVREGVCRNNPKGSYW-SMVEPPGSENGIMHVSAGVSVVWAITKDRKVW  313
+
+
+ Score = 103 bits (257),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 35/174 (20%), Positives = 74/174 (43%), Gaps = 11/174 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  +   G + Q+  G   +I      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHPNPEGSSWSLVETPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +  C N    + W     P       + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGVCRNNPKGSYWSMVEPP--GSENGIMHVSAGVSVVWAITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVA  207
+            G+ S+I + G ++M+ V  +  V+G++ +   +Y R GVT S+  G  W ++V 
+Sbjct  325  GT-SWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQGVTPSELSGKTWKAIVV  377
+
+
+ Score = 57.0 bits (136),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 56/151 (37%), Gaps = 20/151 (13%)
+
+Query  81    VDAGGDQIIAGV-NMYDDIYCLNMD----ANNKWPSSNTPWVQLNGKLKYYSCGPYSCWG  135
+             V  G    +  V       Y  ++     A + W    +P  Q   KL   S G  S + 
+Sbjct  997   VSIGACYQVWAVARDGSAFYRGSVSPSQPAGDCWYHIPSPPKQ---KLTQVSVGQTSVYA  1053
+
+Query  136   VNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQGNL  186
+             ++ N  ++    ++ +   GS S+ ++   +  + V     V+ +          S+G +
+Sbjct  1054  LDENGNLWYRAGITPSYPQGS-SWEHVSNNVRKVSVGPLDQVWVIANKVQGSHGLSRGTV  1112
+
+Query  187   YQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+              +R GV   +P G  W   +    G  H+S 
+Sbjct  1113  CRRMGVQPREPKGQGWDYGI--GGGWDHISV  1141
+
+
+ Score = 47.4 bits (111),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/103 (18%), Positives = 40/103 (39%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W V+    +     VS    +GS    +      + + +     V+ V   G+ + R 
+Sbjct  959   ALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRG  1018
+
+Query  191   GVTRSKPDGTDWISMVACPNG-HKHVSFDLGVLWLVCVDGSIR  232
+              V+ S+P G  W  + + P      VS     ++ +  +G++ 
+Sbjct  1019  SVSPSQPAGDCWYHIPSPPKQKLTQVSVGQTSVYALDENGNLW  1061
+
+
+>sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing 
+protein 1 OS=Rattus norvegicus OX=10116 GN=Tecpr1 PE=2 SV=1
+Length=1166
+
+ Score = 122 bits (306),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 30/115 (26%), Positives = 51/115 (44%), Gaps = 5/115 (4%)
+
+Query  122  KLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGV  180
+            ++     G  S W V+   +++  ++VS     GS  S ++ PG +  I       ++  
+Sbjct  200  EITEEPVGRLSVWAVSLQGKVWYRENVSHPNPEGSSWSLVDTPGEVVQISCGPHDLIWAT  259
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSIR  232
+              +G    R G+ R+ P G  W S+V  P   NG  HVS  + V+W +  D  + 
+Sbjct  260  LWEGQALVREGICRNNPKGNSW-SIVEPPGSENGIMHVSAGVSVVWAITKDRKVW  313
+
+
+ Score = 106 bits (265),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 36/174 (21%), Positives = 74/174 (43%), Gaps = 11/174 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  +   G + Q+  G   +I      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYRENVSHPNPEGSSWSLVDTPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +  C N    N W     P       + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGICRNNPKGNSWSIVEPP--GSENGIMHVSAGVSVVWAITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVA  207
+            G+ S+I + G ++M+ V  +  V+G++ +   +Y R GVT S+  G  W ++V 
+Sbjct  325  GT-SWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQGVTPSELSGKTWKAIVV  377
+
+
+ Score = 57.0 bits (136),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 56/151 (37%), Gaps = 20/151 (13%)
+
+Query  81    VDAGGDQIIAGV-NMYDDIYCLNMD----ANNKWPSSNTPWVQLNGKLKYYSCGPYSCWG  135
+             V  G    +  V       Y  ++     A + W    +P  Q   KL   S G  S + 
+Sbjct  997   VSIGACYQVWAVARDGSAFYRGSVSPSQPAGDCWYHIPSPPKQ---KLTQVSVGQTSVYA  1053
+
+Query  136   VNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQGNL  186
+             ++ N  ++    ++ +   GS S+ ++   +  + V     V+ +          S+G +
+Sbjct  1054  LDENGNLWYRAGITPSYPQGS-SWEHVSNNVRKVSVGPLDQVWVIANKVQGSHGLSRGTV  1112
+
+Query  187   YQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+              +R GV   +P G  W   +    G  H+S 
+Sbjct  1113  CRRMGVQPREPKGQGWDYGI--GGGWDHISV  1141
+
+
+ Score = 47.4 bits (111),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/103 (18%), Positives = 40/103 (39%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W V+    +     VS    +GS    +      + + +     V+ V   G+ + R 
+Sbjct  959   ALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRG  1018
+
+Query  191   GVTRSKPDGTDWISMVACPNG-HKHVSFDLGVLWLVCVDGSIR  232
+              V+ S+P G  W  + + P      VS     ++ +  +G++ 
+Sbjct  1019  SVSPSQPAGDCWYHIPSPPKQKLTQVSVGQTSVYALDENGNLW  1061
+
+
+>sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing 
+protein 1 OS=Pongo abelii OX=9601 GN=TECPR1 PE=2 SV=1
+Length=1165
+
+ Score = 119 bits (299),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/109 (30%), Positives = 51/109 (47%), Gaps = 5/109 (5%)
+
+Query  128  CGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNL  186
+             G  S W V+   +++  +DVS +   GS  S ++ PG +  I       ++    +G  
+Sbjct  206  VGRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQA  265
+
+Query  187  YQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSIR  232
+              R G+ RS P G+ W S+V  P   NG  HVS  + V+W V  D  + 
+Sbjct  266  LVREGINRSNPKGSSW-SIVEPPGSDNGIMHVSVGVSVVWAVTKDWKVW  313
+
+
+ Score = 103 bits (256),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 34/174 (20%), Positives = 74/174 (43%), Gaps = 11/174 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  L   G + Q+  G   ++      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    +    + W     P    +  + + S G    W V  + +++  + ++S+   
+Sbjct  267  VREGINRSNPKGSSWSIVEPP--GSDNGIMHVSVGVSVVWAVTKDWKVWFRRGINSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVA  207
+            G+ S+I + G ++M+ V  +  V+G+  +   +Y R GVT S+  G  W ++VA
+Sbjct  325  GT-SWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQGVTPSELSGKTWKAIVA  377
+
+
+ Score = 57.8 bits (138),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 29/151 (19%), Positives = 57/151 (38%), Gaps = 20/151 (13%)
+
+Query  81    VDAGGDQIIAGVNMYDDIYCL-----NMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWG  135
+             +  G    +  V      +       +  A + W    +P  Q   +LK  S G  S + 
+Sbjct  992   ISIGACYQVWAVARDGSTFYRGSVYPSQPAGDCWYHIPSPPRQ---RLKQVSVGQTSVYA  1048
+
+Query  136   VNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQGNL  186
+             ++ N  ++  + ++ +   GS S+ ++   +  + V     V+ +          S+G +
+Sbjct  1049  LDENGNLWYRQGITPSYPQGS-SWEHVSNNVCRVSVGPLDQVWVIADKVQGSHSLSRGTV  1107
+
+Query  187   YQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+               RTGV   +P G  W   +    G  H+S 
+Sbjct  1108  CHRTGVQPHEPKGHGWDYGI--GGGWDHISV  1136
+
+
+ Score = 47.4 bits (111),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 21/103 (20%), Positives = 40/103 (39%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W V+    +     VS    +GS    +      + I +     V+ V   G+ + R 
+Sbjct  954   ALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFTSISIGACYQVWAVARDGSTFYRG  1013
+
+Query  191   GVTRSKPDGTDWISMVACPNG-HKHVSFDLGVLWLVCVDGSIR  232
+              V  S+P G  W  + + P    K VS     ++ +  +G++ 
+Sbjct  1014  SVYPSQPAGDCWYHIPSPPRQRLKQVSVGQTSVYALDENGNLW  1056
+
+
+>sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing 
+protein 1 OS=Homo sapiens OX=9606 GN=TECPR1 PE=1 SV=1
+Length=1165
+
+ Score = 118 bits (296),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 32/115 (28%), Positives = 53/115 (46%), Gaps = 5/115 (4%)
+
+Query  122  KLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGV  180
+            ++     G  S W V+   +++  +DVS +   GS  S ++ PG +  I       ++  
+Sbjct  200  EITEEPVGRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWAT  259
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDLGVLWLVCVDGSIR  232
+              +G    R G+ RS P G+ W S+V  P   NG  H+S  + V+W V  D  + 
+Sbjct  260  LWEGQALVREGINRSNPKGSSW-SIVEPPGSENGVMHISVGVSVVWAVTKDWKVW  313
+
+
+ Score = 100 bits (249),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 34/174 (20%), Positives = 73/174 (42%), Gaps = 11/174 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  L   G + Q+  G   ++      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    +    + W     P       + + S G    W V  + +++  + V+S+   
+Sbjct  267  VREGINRSNPKGSSWSIVEPP--GSENGVMHISVGVSVVWAVTKDWKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVA  207
+            G+ S+I + G ++M+ V  +  V+G+  +   +Y R GVT S+  G  W +++A
+Sbjct  325  GT-SWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQGVTPSELSGKTWKAIIA  377
+
+
+ Score = 56.3 bits (134),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 58/151 (38%), Gaps = 20/151 (13%)
+
+Query  81    VDAGGDQIIAGV-NMYDDIYCLNM----DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWG  135
+             +  G    +  V       Y  ++     A + W    +P  Q   +LK  S G  S + 
+Sbjct  992   ISIGACYQVWAVARDGSAFYRGSVYPSQPAGDCWYHIPSPPRQ---RLKQVSAGQTSVYA  1048
+
+Query  136   VNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQGNL  186
+             ++ N  ++  + ++ +   GS S+ ++   +  + V     V+ +          S+G +
+Sbjct  1049  LDENGNLWYRQGITPSYPQGS-SWEHVSNNVCRVSVGPLDQVWVIANKVQGSHSLSRGTV  1107
+
+Query  187   YQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+               RTGV   +P G  W   +    G  H+S 
+Sbjct  1108  CHRTGVQPHEPKGHGWDYGI--GGGWDHISV  1136
+
+
+ Score = 48.2 bits (113),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 21/103 (20%), Positives = 40/103 (39%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W V+    +     VS    +GS    +      + I +     V+ V   G+ + R 
+Sbjct  954   ALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASISIGACYQVWAVARDGSAFYRG  1013
+
+Query  191   GVTRSKPDGTDWISMVACPNG-HKHVSFDLGVLWLVCVDGSIR  232
+              V  S+P G  W  + + P    K VS     ++ +  +G++ 
+Sbjct  1014  SVYPSQPAGDCWYHIPSPPRQRLKQVSAGQTSVYALDENGNLW  1056
+
+
+>sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing 
+protein 1 OS=Gallus gallus OX=9031 GN=TECPR1 PE=3 SV=1
+Length=1173
+
+ Score = 117 bits (294),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 32/133 (24%), Positives = 55/133 (41%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  ++V  +   GS  S I+ 
+Sbjct  182  DDPERLPDPFNDISIGGWEITDEPLGRLSVWAVSLQGRVWYRENVCHHNPEGSTWSLIST  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            PG ++ I   +   ++    +G    R G+ R+ P G  W S V  P   NG  HVS  +
+Sbjct  242  PGEVAQISCGSYDLLWATLWEGQAIVREGIDRNNPQGISW-STVESPSSDNGIMHVSVGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W +  D  + 
+Sbjct  301  DVVWCITKDRKVW  313
+
+
+ Score = 104 bits (259),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 35/173 (20%), Positives = 73/173 (42%), Gaps = 11/173 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAG-VNMYDDI  98
+            G L  ++V   G++           +   +  +   G + Q+  G   ++   +     I
+Sbjct  207  GRLSVWAVSLQGRVWYRENVCHHNPEGSTWSLISTPGEVAQISCGSYDLLWATLWEGQAI  266
+
+Query  99   YCLNMDANN----KWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+                +D NN     W +  +P    +  + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGIDRNNPQGISWSTVESP--SSDNGIMHVSVGVDVVWCITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMV  206
+            G+ S+I + G + M+ V  +  V+G+      +Y R GVT S+  G  W ++V
+Sbjct  325  GT-SWIEMVGEMMMVNVGLNNQVWGIGCDDRTIYFRQGVTPSELSGKMWKAIV  376
+
+
+ Score = 54.7 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 30/154 (19%), Positives = 58/154 (38%), Gaps = 20/154 (13%)
+
+Query  78    LKQVDAGGDQIIAGV-NMYDDIYCLNMD----ANNKWPSSNTPWVQLNGKLKYYSCGPYS  132
+                +  G    +  V       Y  ++     A + W    +P  Q   KLK  S G  S
+Sbjct  997   FVSISVGAFFQVWAVARDGSAFYRGSVSPKKPAGDCWYHIPSPQKQ---KLKQVSVGRTS  1053
+
+Query  133   CWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQ  183
+              + ++ N  ++  + ++ +   GS ++ ++   +  + V     V+ +          S 
+Sbjct  1054  VFVLDKNGNLWYRQGITPSYPQGS-AWDHVSNNIRKMSVGPLDQVWVIADKVQGSHGLSC  1112
+
+Query  184   GNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+             G +  RTGV   +P G  W   +    G +HV+ 
+Sbjct  1113  GTVCHRTGVQPMEPKGLAWDYGI--GGGWEHVTV  1144
+
+
+ Score = 44.7 bits (104),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/103 (18%), Positives = 39/103 (38%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSG-SGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W ++    +     V+    +G S   +        I V     V+ V   G+ + R 
+Sbjct  962   ALWAISDKGDVLCRLGVTQQNPAGTSWLHVGTDQPFVSISVGAFFQVWAVARDGSAFYRG  1021
+
+Query  191   GVTRSKPDGTDWISMVACPNG-HKHVSFDLGVLWLVCVDGSIR  232
+              V+  KP G  W  + +      K VS     ++++  +G++ 
+Sbjct  1022  SVSPKKPAGDCWYHIPSPQKQKLKQVSVGRTSVFVLDKNGNLW  1064
+
+
+>sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing 
+protein OS=Drosophila melanogaster OX=7227 GN=Pex23 PE=2 
+SV=2
+Length=1350
+
+ Score = 116 bits (291),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 35/169 (21%), Positives = 66/169 (39%), Gaps = 19/169 (11%)
+
+Query  71   FVQLA----GLLKQVDAGGDQIIAGVNMYDDIYCLNMDA-----NNKWPSSNTPWVQLNG  121
+            +  +       L Q+  G   ++  V     +             + W    TP    + 
+Sbjct  235  WTAVPTPTGSELAQISVGPTGLVWAVLHNGRVIVRTGVTRDNLVGDSWLDVKTPVAASSL  294
+
+Query  122  KLKYYSCGPYSCWGVNSNDQIFIMKDV-------SSNVCSGSGSFINIPGLLSMIEVATD  174
+            ++ + S G  + W V ++   +  + V       S +   G G ++ + G +SM+ VA +
+Sbjct  295  RIVHVSVGTDAVWCVTNDHHAWFRRGVKGEAAGISEDSAIGKG-WVEMVGNISMVSVAAN  353
+
+Query  175  GSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVL  222
+              VF + +    LY R+GVT + P G  W  ++ CP      S  L ++
+Sbjct  354  DQVFAIGAADRCLYHRSGVTSADPTGKKW-RLIQCPMQISRTSSSLSIV  401
+
+
+ Score = 74.4 bits (181),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 28/112 (25%), Positives = 40/112 (36%), Gaps = 7/112 (6%)
+
+Query  125  YYSCGPYSCWGVNSNDQIFIMKDVSSNVCSG-SGSFINIP--GLLSMIEVATDGSVFGVN  181
+                G    W + ++ +      VS     G   + +  P    L+ I V   G V+ V 
+Sbjct  202  NAPAGTLCVWAITAHGRAMFRTGVSKTAPEGLRWTAVPTPTGSELAQISVGPTGLVWAVL  261
+
+Query  182  SQGNLYQRTGVTRSKPDGTDWIS----MVACPNGHKHVSFDLGVLWLVCVDG  229
+              G +  RTGVTR    G  W+     + A      HVS     +W V  D 
+Sbjct  262  HNGRVIVRTGVTRDNLVGDSWLDVKTPVAASSLRIVHVSVGTDAVWCVTNDH  313
+
+
+ Score = 55.5 bits (132),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 27/103 (26%), Positives = 39/103 (38%), Gaps = 4/103 (4%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W + SN  + I   V S    G     I     L  I V   G V+ V   G ++ R 
+Sbjct  1163  AAWAIASNGDVLIRHGVCSLNPRGDAWEHITSDQPLVGISVGPTGQVWTVARNGMVFFRY  1222
+
+Query  191   GVTRSKPDGTDWISMVACPNGH--KHVSFDLGVLWLVCVDGSI  231
+             G++R  P G  W   V  P G   K +S     +W +     +
+Sbjct  1223  GISRQNPCGDAWQQ-VEAPAGVTFKAISVGRAGIWALDNQQRL  1264
+
+
+ Score = 47.8 bits (112),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 30/129 (23%), Positives = 54/129 (42%), Gaps = 14/129 (11%)
+
+Query  119   LNGKLKYYSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLL--SMIEVATD  174
+              +  L   S GP    W V  N  +F    +S     G     +  P  +    I V   
+Sbjct  1194  SDQPLVGISVGPTGQVWTVARNGMVFFRYGISRQNPCGDAWQQVEAPAGVTFKAISVGRA  1253
+
+Query  175   GSVFGVNSQGNLYQRTGVTRSKPDGTDWI----SMVACPNGHKHV---SFDLG-VLWLVC  226
+             G ++ +++Q  L  R  ++R+ P+G+ W     +    P+  +H    S  +G  +W + 
+Sbjct  1254  G-IWALDNQQRLAVRKEISRTFPEGSHWQFLPNAANVPPHTDQHCGFRSVSVGSEVWAIS  1312
+
+Query  227   VDGSI-RKC  234
+             ++G I R+C
+Sbjct  1313  LNGIICRRC  1321
+
+
+ Score = 40.9 bits (94),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 23/139 (17%), Positives = 45/139 (32%), Gaps = 17/139 (12%)
+
+Query  78    LKQVDAGGDQIIAGVNMYDDIY-----CLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYS  132
+             L  +  G    +  V     ++            + W     P        K  S G   
+Sbjct  1198  LVGISVGPTGQVWTVARNGMVFFRYGISRQNPCGDAWQQVEAP---AGVTFKAISVGRAG  1254
+
+Query  133   CWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLL--------SMIEVATDGSVFGVNSQ  183
+              W +++  ++ + K++S     GS   F+     +            V+    V+ ++  
+Sbjct  1255  IWALDNQQRLAVRKEISRTFPEGSHWQFLPNAANVPPHTDQHCGFRSVSVGSEVWAISLN  1314
+
+Query  184   GNLYQRTGVTRSKPDGTDW  202
+             G + +R G+T   P G  W
+Sbjct  1315  GIICRRCGITEENPAGVGW  1333
+
+
+>sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing 
+protein 1 OS=Xenopus tropicalis OX=8364 GN=tecpr1 PE=2 SV=2
+Length=1173
+
+ Score = 110 bits (276),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 31/133 (23%), Positives = 55/133 (41%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            + N K P           ++     G  S W  +   +++  +DV  N+  GS  + +  
+Sbjct  182  EDNKKLPDPFNDITVGGWEITDEPVGRLSVWAASLQGKVWYREDVCQNIPEGSSWTELET  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            P  +  I    +  ++    +G    R G+ R+ P G+ W ++V  P   NG  HVS  +
+Sbjct  242  PSEVIQISCGPNDLLWASLWEGQAMVREGINRNNPKGSSW-TIVEAPTPENGIMHVSVGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W V  D  + 
+Sbjct  301  NVVWAVTKDRKVW  313
+
+
+ Score = 105 bits (263),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 39/184 (21%), Positives = 78/184 (42%), Gaps = 12/184 (7%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++    G++           +   + +L     + Q+  G + ++      G  M
+Sbjct  207  GRLSVWAASLQGKVWYREDVCQNIPEGSSWTELETPSEVIQISCGPNDLLWASLWEGQAM  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    N    + W     P  +    + + S G    W V  + +++  + V+S+   
+Sbjct  267  VREGINRNNPKGSSWTIVEAPTPE--NGIMHVSVGVNVVWAVTKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVACPNGHK  213
+            G+G +I + G ++M++V  +  VFGV  +   +Y R GVT S+  G  W S+V  P G++
+Sbjct  325  GTG-WIEMVGEMAMVDVGLNDQVFGVGYEDRAVYFRQGVTPSELSGKAWKSIV-VPRGNE  382
+
+Query  214  HVSF  217
+              + 
+Sbjct  383  RSNS  386
+
+
+ Score = 52.0 bits (123),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 26/154 (17%), Positives = 55/154 (36%), Gaps = 20/154 (13%)
+
+Query  78    LKQVDAGGDQIIAGV-NMYDDIYCLNMD----ANNKWPSSNTPWVQLNGKLKYYSCGPYS  132
+                V  GG   +  +       Y  ++     A + W    +P  Q   KL+  S G  S
+Sbjct  988   FISVSVGGCLQVWAIARDGSAFYRGSVSPAQPAGDCWYHIPSPHKQ---KLQQVSVGHTS  1044
+
+Query  133   CWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV---------NSQ  183
+              + V+ N  ++    ++     G+ ++ ++   +  + V     ++ +          S 
+Sbjct  1045  VFVVDENGNLWFRHGITPTYPQGT-TWEHMSNNIRKVSVGPLDQIWVIADKVQGSHSLSC  1103
+
+Query  184   GNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSF  217
+             G +  R GV   +  G  W   +    G +H++ 
+Sbjct  1104  GTVCHRLGVQPMQLKGHSWDYGI--GGGWEHITV  1135
+
+
+ Score = 42.0 bits (97),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 17/103 (17%), Positives = 41/103 (40%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W +++   +     V+    SGS    +        + V     V+ +   G+ + R 
+Sbjct  953   ALWAISNKGDVLCRLGVTKQSPSGSSWLHVGTDQPFISVSVGGCLQVWAIARDGSAFYRG  1012
+
+Query  191   GVTRSKPDGTDWISMVAC-PNGHKHVSFDLGVLWLVCVDGSIR  232
+              V+ ++P G  W  + +      + VS     +++V  +G++ 
+Sbjct  1013  SVSPAQPAGDCWYHIPSPHKQKLQQVSVGHTSVFVVDENGNLW  1055
+
+
+>sp|O15040|TCPR2_HUMAN Tectonin beta-propeller repeat-containing 
+protein 2 OS=Homo sapiens OX=9606 GN=TECPR2 PE=1 SV=4
+Length=1411
+
+ Score = 49.0 bits (115),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 24/160 (15%), Positives = 54/160 (34%), Gaps = 14/160 (9%)
+
+Query  86    DQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNG---KLKYYSCGPYSCWGVNSNDQI  142
+                +  ++    ++   +  +       T          KL   +CG    W  +S   +
+Sbjct  1178  QDALWALDSLGQVFIRTLSKSCPTGMHWTRLDLSQLGAVKLTSLACGNQHIWACDSRGGV  1237
+
+Query  143   FIMKDVSSNVCS---GSGSFINIPGL-----LSMIEVATDGS-VFGVNSQGNLYQRTGVT  193
+             +          S    +   I  P       L  +  + +   ++ ++S+ N++ RTG+T
+Sbjct  1238  YFRVGTQPLNPSLMLPAWIMIEPPVQPAGVSLVSVHSSPNDQMLWVLDSRWNVHVRTGIT  1297
+
+Query  194   RSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRK  233
+                P GT W  +         ++     +W  C +G + +
+Sbjct  1298  EEMPVGTAWEHV--PGLQACQLALSTRTVWARCPNGDLAR  1335
+
+
+ Score = 47.0 bits (110),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 24/124 (19%), Positives = 51/124 (41%), Gaps = 5/124 (4%)
+
+Query  113   NTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVA  172
+                W +   +  + +    + W + ++  +++   +S +        ++ P  LS I  A
+Sbjct  884   KRHWYEALPQAVFVALSDDTAWIIRTSGDLYLQTGLSVDRPCARAVKVDCPYPLSQIT-A  942
+
+Query  173   TDGSVFGVNSQGNLYQRTGVTRSKPDGTDWI-SMVACPNGHKHVSFDLG---VLWLVCVD  228
+              +  V+ +  Q  L  R GV+   P+G  W   +V+     + V   LG    LW + + 
+Sbjct  943   RNNVVWALTEQRALLYREGVSSFCPEGEQWKCDIVSERQALEPVCITLGDQQTLWALDIH  1002
+
+Query  229   GSIR  232
+             G++ 
+Sbjct  1003  GNLW  1006
+
+
+ Score = 45.9 bits (107),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 31/186 (17%), Positives = 59/186 (32%), Gaps = 16/186 (9%)
+
+Query  34    DNVFTKISGSLKHFSVGPAGQLG---VNTANNIFKYQS------GGFVQLAGLLKQVDAG  84
+                + K   +++  +V P+G L       +N  F            + +       V   
+Sbjct  841   GLRWQKFEDAVQQVAVSPSGALLWKIEQKSNRAFACGKVTIKGKRHWYEALPQAVFVAL-  899
+
+Query  85    GDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFI  144
+              D     +    D+Y     + ++ P +    V     L   +      W +     +  
+Sbjct  900   SDDTAWIIRTSGDLYLQTGLSVDR-PCARAVKVDCPYPLSQITARNNVVWALTEQRALLY  958
+
+Query  145   MKDVSSNVCSGSGSFINIPGLL-----SMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDG  199
+              + VSS    G     +I           I +    +++ ++  GNL+ RTG+   KP G
+Sbjct  959   REGVSSFCPEGEQWKCDIVSERQALEPVCITLGDQQTLWALDIHGNLWFRTGIISKKPQG  1018
+
+Query  200   TDWISM  205
+              D    
+Sbjct  1019  DDDHWW  1024
+
+
+ Score = 44.7 bits (104),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 26/130 (20%), Positives = 47/130 (36%), Gaps = 4/130 (3%)
+
+Query  82    DAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNG-KLKYYSCGPYSCWGVNSND  140
+              +  DQ++  ++   +++        +     T W  + G +    +    + W    N 
+Sbjct  1274  SSPNDQMLWVLDSRWNVHVRT--GITEEMPVGTAWEHVPGLQACQLALSTRTVWARCPNG  1331
+
+Query  141   QIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGT  200
+              +     V+    +G   +  IPG +S   V     ++ V   G L QR   T S   GT
+Sbjct  1332  DLARRYGVTDKNPAGDY-WKKIPGSVSCFTVTASDELWAVGPPGYLLQRLTKTFSHSHGT  1390
+
+Query  201   DWISMVACPN  210
+                S  A P+
+Sbjct  1391  QKSSQAAMPH  1400
+
+
+>sp|P0C8G7|PV22_POMCA Perivitellin-2 31 kDa subunit OS=Pomacea 
+canaliculata OX=400727 PE=1 SV=2
+Length=286
+
+ Score = 43.9 bits (102),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 54/241 (22%), Positives = 82/241 (34%), Gaps = 26/241 (11%)
+
+Query  13   IDAGSGSVVGVNNLNETFVLIDNVFTKIS-GSLKHFSVGPAGQLGVNTANNIF-KYQSGG  70
+            +  G   V  VN  N+ F          + GS   F     GQ+ V      +     G 
+Sbjct  47   VSIGPAGVWAVNRQNKLFYRTGTYGDNANMGSGWQFKQDGVGQVDVGKDKVGYINLSGGS  106
+
+Query  71   FVQLAGLLKQVDAGGDQIIA-------GVNMYDDI-YCLNMDANNK----------WPSS  112
+              ++ G+ +    GG            G+++ +D  +   ++  NK          W S 
+Sbjct  107  LFRIDGISQGNPVGGSPKSWEWWTKYIGMSLREDTRFSSRIENQNKVLTFTFRTCFWASR  166
+
+Query  113  NTPWVQLNGKLKY-YSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEV  171
+             T W   +       + G    W   S  Q+        N  +  G +I +         
+Sbjct  167  ITNWCFADSSYTETVTAGGSGTWITKS--QLKYKSGTFGNPDTEGGDWITVDSGSFQHVS  224
+
+Query  172  ATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSI  231
+            +  G V  V S G L +RTG+T S P G+ W SM+   NG   V     V W V   G +
+Sbjct  225  SGSGVVLAVRSNGELVKRTGITCSLPQGSGWTSML---NGMSRVDTYGTVAWAVDTYGDL  281
+
+Query  232  R  232
+             
+Sbjct  282  Y  282
+
+
+ Score = 43.9 bits (102),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 17/81 (21%), Positives = 33/81 (41%), Gaps = 0/81 (0%)
+
+Query  125  YYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQG  184
+            Y S GP   W VN  +++F       +  +    +      +  ++V  D   +   S G
+Sbjct  46   YVSIGPAGVWAVNRQNKLFYRTGTYGDNANMGSGWQFKQDGVGQVDVGKDKVGYINLSGG  105
+
+Query  185  NLYQRTGVTRSKPDGTDWISM  205
+            +L++  G+++  P G    S 
+Sbjct  106  SLFRIDGISQGNPVGGSPKSW  126
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0395    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16910141596
+Results from round 3
+
+
+Query= 4ruq_A
+
+Length=236
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 PE...  278     5e-94
+sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 ...  188     2e-57
+sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 ...  171     4e-52
+sp|P0C8G7|PV22_POMCA Perivitellin-2 31 kDa subunit OS=Pomacea can...  166     1e-49
+sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 ...  136     9e-39
+sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing p...  141     5e-37
+sp|O15040|TCPR2_HUMAN Tectonin beta-propeller repeat-containing p...  141     6e-37
+sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing p...  139     2e-36
+sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing p...  139     2e-36
+sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing pro...  138     3e-36
+sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing p...  137     1e-35
+sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing p...  135     4e-35
+sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing p...  134     6e-35
+
+Sequences not found previously or not previously below threshold:
+
+sp|F2Z461|HERC6_MOUSE E3 ISG15--protein ligase Herc6 OS=Mus muscu...  46.0    2e-04
+sp|Q2JW20|YC48L_SYNJA Ycf48-like protein OS=Synechococcus sp. (st...  42.5    0.002
+sp|Q2JJR3|YC48L_SYNJB Ycf48-like protein OS=Synechococcus sp. (st...  40.6    0.007
+
+
+>sp|P68512|FEL_CYPCA Fish-egg lectin OS=Cyprinus carpio OX=7962 
+PE=1 SV=1
+Length=238
+
+ Score = 278 bits (711),  Expect = 5e-94, Method: Composition-based stats.
+ Identities = 235/236 (99%), Positives = 236/236 (100%), Gaps = 0/236 (0%)
+
+Query  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+            LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA
+Sbjct  1    LDCTVIDGNLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTA  60
+
+Query  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLN  120
+            NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQ+N
+Sbjct  61   NNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQIN  120
+
+Query  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+            GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV
+Sbjct  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL
+Sbjct  181  NSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+
+
+>sp|O61064|TCT2_PHYPO Tectonin-2 OS=Physarum polycephalum OX=5791 
+GN=TECB PE=1 SV=1
+Length=353
+
+ Score = 188 bits (478),  Expect = 2e-57, Method: Composition-based stats.
+ Identities = 68/233 (29%), Positives = 103/233 (44%), Gaps = 32/233 (14%)
+
+Query  9    NLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLG-VNTANNIFKYQ  67
+            N+  + AG+  V GVN+L   +    + + +I G+  + SVG  G +  VN A+ I++  
+Sbjct  148  NVVAVGAGNHDVWGVNHLEHIYHWDGSKWHQIEGAATNISVGLDGTVWCVNKAHEIYRLD  207
+
+Query  68   SGG--FVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKY  125
+             G   +  + G L QV  G    I GVN  D IY  N D+N+        W  ++G+L  
+Sbjct  208  RGTNKWSIVPGELVQVSVGNSHNIWGVNHLDAIYKWNADSNS--------WTFVDGQLTN  259
+
+Query  126  YSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQG  184
+             S G   + +GVN    I+     S +  S         G L  I VA    + GVN  G
+Sbjct  260  VSVGHDGTVYGVNRAGNIYHYNGNSWDAVS---------GELVQIHVANKDLIVGVNKAG  310
+
+Query  185  NLYQ-RTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+            ++Y+ + G    K +G   +S VA  +G        G LW      +I K +L
+Sbjct  311  HVYRLKHGKDWEKLEGE--LSWVAVGHG--------GELWGANSAHNIYKALL  353
+
+
+ Score = 42.9 bits (99),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 27/166 (16%), Positives = 50/166 (30%), Gaps = 39/166 (23%)
+
+Query  96   DDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSG  155
+              +      +  K PS+     +    +     G +  WGVN  + I+       +   G
+Sbjct  123  QRVILRAPASLEKRPSAWER-HEGELNVVAVGAGNHDVWGVNHLEHIYHWDGSKWHQIEG  181
+
+Query  156  SGSFIN----------------------------IPGLLSMIEVATDGSVFGVNSQGNLY  187
+            + + I+                            +PG L  + V    +++GVN    +Y
+Sbjct  182  AATNISVGLDGTVWCVNKAHEIYRLDRGTNKWSIVPGELVQVSVGNSHNIWGVNHLDAIY  241
+
+Query  188  QRTGVTRSKPDGTDWISMVACPNGHKHVSFDL-GVLWLVCVDGSIR  232
+            +            D  S         +VS    G ++ V   G+I 
+Sbjct  242  KWN---------ADSNSWTFVDGQLTNVSVGHDGTVYGVNRAGNIY  278
+
+
+>sp|O61063|TCT1_PHYPO Tectonin-1 OS=Physarum polycephalum OX=5791 
+GN=TECA PE=1 SV=3
+Length=217
+
+ Score = 171 bits (432),  Expect = 4e-52, Method: Composition-based stats.
+ Identities = 63/234 (27%), Positives = 102/234 (44%), Gaps = 34/234 (15%)
+
+Query  9    NLKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLG-VNTANNIFKYQ  67
+            ++  + AGS  + GVN+L   +    + + K+ G L + SVG  G++  VN  +NI++  
+Sbjct  12   SVVGVGAGSNDIWGVNHLGHIYHWDGHKWHKVDGELTNISVGHDGEVWGVNKNHNIYRLD  71
+
+Query  68   SGG--FVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKY  125
+                 + Q+ G L QV  G    + GVN  D IY        KW   +  W +++G L  
+Sbjct  72   RSNNKWTQIPGELVQVSVGSHHHVWGVNHLDHIY--------KWDHHHNKWDKIDGALTN  123
+
+Query  126  YSCGPY-SCWGVNSNDQIFIMKDVSSNVCSGSGSFINIP-GLLSMIEVATDGSVFGVNSQ  183
+             S G   + +GVN   QI+             GS +++  G L  I V+    + GVN  
+Sbjct  124  VSVGKDGTVYGVNRGHQIY----------RWDGSKVDLVLGELVQIHVSDAEKIVGVNHL  173
+
+Query  184  GNLYQ-RTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRKCIL  236
+             ++Y+ + G    K DG   ++ V+  +         G +W V     I K  L
+Sbjct  174  DHIYRLKHGKDWEKLDGE--LTWVSVGH--------HGEVWGVNKLHHIYKATL  217
+
+
+ Score = 89.1 bits (219),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 46/145 (32%), Positives = 68/145 (47%), Gaps = 14/145 (10%)
+
+Query  4    TVIDGNLKQIDAGS-GSVVGVNNLNETFVLIDN--VFTKISGSLKHFSVGPAGQL-GVNT  59
+            T I G L Q+  GS   V GVN+L+  +    +   + KI G+L + SVG  G + GVN 
+Sbjct  78   TQIPGELVQVSVGSHHHVWGVNHLDHIYKWDHHHNKWDKIDGALTNVSVGKDGTVYGVNR  137
+
+Query  60   ANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQL  119
+             + I+++       + G L Q+     + I GVN  D IY L              W +L
+Sbjct  138  GHQIYRWDGSKVDLVLGELVQIHVSDAEKIVGVNHLDHIYRLK---------HGKDWEKL  188
+
+Query  120  NGKLKYYSCGPYS-CWGVNSNDQIF  143
+            +G+L + S G +   WGVN    I+
+Sbjct  189  DGELTWVSVGHHGEVWGVNKLHHIY  213
+
+
+ Score = 43.6 bits (101),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 27/116 (23%), Positives = 37/116 (32%), Gaps = 19/116 (16%)
+
+Query  119  LNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVF  178
+                +     G    WGVN    I+       +          + G L+ I V  DG V+
+Sbjct  9    GELSVVGVGAGSNDIWGVNHLGHIYHWDGHKWH---------KVDGELTNISVGHDGEVW  59
+
+Query  179  GVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFD-LGVLWLVCVDGSIRK  233
+            GVN   N+Y+   + RS             P     VS      +W V     I K
+Sbjct  60   GVNKNHNIYR---LDRSN------NKWTQIPGELVQVSVGSHHHVWGVNHLDHIYK  106
+
+
+>sp|P0C8G7|PV22_POMCA Perivitellin-2 31 kDa subunit OS=Pomacea 
+canaliculata OX=400727 PE=1 SV=2
+Length=286
+
+ Score = 166 bits (421),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 54/241 (22%), Positives = 82/241 (34%), Gaps = 26/241 (11%)
+
+Query  13   IDAGSGSVVGVNNLNETFVLIDNVFTKIS-GSLKHFSVGPAGQLGVNTANNIF-KYQSGG  70
+            +  G   V  VN  N+ F          + GS   F     GQ+ V      +     G 
+Sbjct  47   VSIGPAGVWAVNRQNKLFYRTGTYGDNANMGSGWQFKQDGVGQVDVGKDKVGYINLSGGS  106
+
+Query  71   FVQLAGLLKQVDAGGDQIIA-------GVNMYDDI-YCLNMDANNK----------WPSS  112
+              ++ G+ +    GG            G+++ +D  +   ++  NK          W S 
+Sbjct  107  LFRIDGISQGNPVGGSPKSWEWWTKYIGMSLREDTRFSSRIENQNKVLTFTFRTCFWASR  166
+
+Query  113  NTPWVQLNGKLKY-YSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEV  171
+             T W   +       + G    W   S  Q+        N  +  G +I +         
+Sbjct  167  ITNWCFADSSYTETVTAGGSGTWITKS--QLKYKSGTFGNPDTEGGDWITVDSGSFQHVS  224
+
+Query  172  ATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSI  231
+            +  G V  V S G L +RTG+T S P G+ W SM+   NG   V     V W V   G +
+Sbjct  225  SGSGVVLAVRSNGELVKRTGITCSLPQGSGWTSML---NGMSRVDTYGTVAWAVDTYGDL  281
+
+Query  232  R  232
+             
+Sbjct  282  Y  282
+
+
+ Score = 49.8 bits (117),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 17/85 (20%), Positives = 33/85 (39%), Gaps = 0/85 (0%)
+
+Query  121  GKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSVFGV  180
+                Y S GP   W VN  +++F       +  +    +      +  ++V  D   +  
+Sbjct  42   WPYNYVSIGPAGVWAVNRQNKLFYRTGTYGDNANMGSGWQFKQDGVGQVDVGKDKVGYIN  101
+
+Query  181  NSQGNLYQRTGVTRSKPDGTDWISM  205
+             S G+L++  G+++  P G    S 
+Sbjct  102  LSGGSLFRIDGISQGNPVGGSPKSW  126
+
+
+>sp|P82151|LEC6_TACTR Lectin L6 OS=Tachypleus tridentatus OX=6853 
+PE=1 SV=1
+Length=221
+
+ Score = 136 bits (343),  Expect = 9e-39, Method: Composition-based stats.
+ Identities = 68/193 (35%), Positives = 101/193 (52%), Gaps = 23/193 (12%)
+
+Query  4    TVIDGNLKQIDAGSGSVVGVNNLNETF---VLIDNVFTKISGSLKHFSVGPAGQLG-VNT  59
+            T I G+LKQ+DA    V GVN  ++ +   V     + ++SG LKH S    G +  VN+
+Sbjct  42   TQISGSLKQVDADDHEVWGVNRNDDIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNS  101
+
+Query  60   ANNIFKYQS---GGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPW  116
+             + I+K      G + Q+ G LKQ+D GG  ++ GVN  + IY   +D +  W       
+Sbjct  102  NDQIYKCPKPCNGAWTQVNGRLKQID-GGQSMVYGVNSANAIYRRPVDGSGSWQ------  154
+
+Query  117  VQLNGKLKYYS-CGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDG  175
+             Q++G LK+ +  G    +GVNSNDQI+      +  CSG  S I+  G L   + AT  
+Sbjct  155  -QISGSLKHITGSGLSEVFGVNSNDQIY----RCTKPCSGQWSLID--GRLKQCD-ATGN  206
+
+Query  176  SVFGVNSQGNLYQ  188
+            ++ GVNS  N+Y+
+Sbjct  207  TIVGVNSVDNIYR  219
+
+
+ Score = 101 bits (251),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 66/206 (32%), Positives = 98/206 (48%), Gaps = 29/206 (14%)
+
+Query  36   VFTKISGSLKHFSVGPAGQLGVNTANNIFKYQS----GGFVQLAGLLKQVDAGGDQIIAG  91
+             + +I G L H +  P    GVN+   I+  +     G + Q++G LKQVDA  D  + G
+Sbjct  2    QWHQIPGKLMHITATPHFLWGVNSNQQIYLCRQPCYDGQWTQISGSLKQVDA-DDHEVWG  60
+
+Query  92   VNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYS-CWGVNSNDQIFIMKDVSS  150
+            VN  DDIY   +D +  W       V+++GKLK+ S   Y   WGVNSNDQI+       
+Sbjct  61   VNRNDDIYKRPVDGSGSW-------VRVSGKLKHVSASGYGYIWGVNSNDQIY----KCP  109
+
+Query  151  NVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+              C+G+ + +N  G L  I+      V+GVNS   +Y+R        DG+   S      
+Sbjct  110  KPCNGAWTQVN--GRLKQID-GGQSMVYGVNSANAIYRR------PVDGSG--SWQQISG  158
+
+Query  211  GHKHVS-FDLGVLWLVCVDGSIRKCI  235
+              KH++   L  ++ V  +  I +C 
+Sbjct  159  SLKHITGSGLSEVFGVNSNDQIYRCT  184
+
+
+ Score = 100 bits (248),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 71/236 (30%), Positives = 98/236 (42%), Gaps = 28/236 (12%)
+
+Query  5    VIDGNLKQIDAGSGSVVGVNNLNETFVLI----DNVFTKISGSLKHFSVGPAGQLGVNTA  60
+             I G L  I A    + GVN+  + ++      D  +T+ISGSLK          GVN  
+Sbjct  5    QIPGKLMHITATPHFLWGVNSNQQIYLCRQPCYDGQWTQISGSLKQVDADDHEVWGVNRN  64
+
+Query  61   NNIFKYQ---SGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWV  117
+            ++I+K     SG +V+++G LK V A G   I GVN  D IY      N  W        
+Sbjct  65   DDIYKRPVDGSGSWVRVSGKLKHVSASGYGYIWGVNSNDQIYKCPKPCNGAW-------T  117
+
+Query  118  QLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMIEVATDGSV  177
+            Q+NG+LK    G    +GVNS + I+           GSGS+  I G L  I  +    V
+Sbjct  118  QVNGRLKQIDGGQSMVYGVNSANAIYRR------PVDGSGSWQQISGSLKHITGSGLSEV  171
+
+Query  178  FGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFDLGVLWLVCVDGSIRK  233
+            FGVNS   +Y+      +KP    W          K        +  V    +I +
+Sbjct  172  FGVNSNDQIYR-----CTKPCSGQWS---LIDGRLKQCDATGNTIVGVNSVDNIYR  219
+
+
+>sp|Q80VP0|TCPR1_MOUSE Tectonin beta-propeller repeat-containing 
+protein 1 OS=Mus musculus OX=10090 GN=Tecpr1 PE=1 SV=1
+Length=1166
+
+ Score = 141 bits (354),  Expect = 5e-37, Method: Composition-based stats.
+ Identities = 35/133 (26%), Positives = 54/133 (41%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  +DVS     GS  S +  
+Sbjct  182  DDPKELPDPFNDLSVGGWEITEEPVGRLSVWAVSLQGKVWYREDVSHPNPEGSSWSLVET  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            PG +  I       ++    +G    R GV R+ P G+ W SMV  P   NG  HVS  +
+Sbjct  242  PGEVVQISCGPHDLIWATLWEGQALVREGVCRNNPKGSYW-SMVEPPGSENGIMHVSAGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W +  D  + 
+Sbjct  301  SVVWAITKDRKVW  313
+
+
+ Score = 138 bits (347),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 35/173 (20%), Positives = 74/173 (43%), Gaps = 11/173 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  +   G + Q+  G   +I      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHPNPEGSSWSLVETPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +  C N    + W     P       + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGVCRNNPKGSYWSMVEPP--GSENGIMHVSAGVSVVWAITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMV  206
+            G+ S+I + G ++M+ V  +  V+G++ +   +Y R GVT S+  G  W ++V
+Sbjct  325  GT-SWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQGVTPSELSGKTWKAIV  376
+
+
+ Score = 71.4 bits (173),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 31/187 (17%), Positives = 62/187 (33%), Gaps = 22/187 (12%)
+
+Query  47    FSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAGVNMYDDIYCLNM-  103
+             ++V   G +      +        ++ +        V  G    +  V      +     
+Sbjct  961   WAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRGSV  1020
+
+Query  104   ----DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSF  159
+                  A + W    +P  Q   KL   S G  S + ++ N  ++    ++ +   GS S+
+Sbjct  1021  SPSQPAGDCWYHIPSPPKQ---KLTQVSVGQTSVYALDENGNLWYRAGITPSYPQGS-SW  1076
+
+Query  160   INIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+              ++   +  + V     V+ +          S+G + +R GV   +P G  W        
+Sbjct  1077  EHVSNNVRKVSVGPLDQVWVIANKVQGSHGLSRGTVCRRMGVQPREPKGQGWD--YGIGG  1134
+
+Query  211   GHKHVSF  217
+             G  H+S 
+Sbjct  1135  GWDHISV  1141
+
+
+ Score = 55.6 bits (132),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 22/138 (16%), Positives = 46/138 (33%), Gaps = 9/138 (7%)
+
+Query  103   MDANNKWPSSNTPWVQLNGKLKYYSCGPYS------CWGVNSNDQIFIMKDVSSNVCSGS  156
+             +  +  W     P    +  +   S            W V+    +     VS    +GS
+Sbjct  925   LVTSGPWLEV-APITLSDVSIIPESAHADGRGHNVALWAVSDKGDVLCRLGVSELNPAGS  983
+
+Query  157   -GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNG-HKH  214
+                 +      + + +     V+ V   G+ + R  V+ S+P G  W  + + P      
+Sbjct  984   SWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRGSVSPSQPAGDCWYHIPSPPKQKLTQ  1043
+
+Query  215   VSFDLGVLWLVCVDGSIR  232
+             VS     ++ +  +G++ 
+Sbjct  1044  VSVGQTSVYALDENGNLW  1061
+
+
+ Score = 46.0 bits (107),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 12/127 (9%), Positives = 37/127 (29%), Gaps = 23/127 (18%)
+
+Query  7    DGNLKQIDAGSGS-VVGVNNLNETFVLID--------NVFTKIS-------------GSL  44
+             G + QI  G    +       +  V           + ++ +              G  
+Sbjct  242  PGEVVQISCGPHDLIWATLWEGQALVREGVCRNNPKGSYWSMVEPPGSENGIMHVSAGVS  301
+
+Query  45   KHFSVGPAGQLGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVN-MYDDIYCLNM  103
+              +++    ++      N        ++++ G +  V+ G +  + G++     +Y    
+Sbjct  302  VVWAITKDRKVWFRRGVNSHNPCGTSWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQG  361
+
+Query  104  DANNKWP  110
+               ++  
+Sbjct  362  VTPSELS  368
+
+
+>sp|O15040|TCPR2_HUMAN Tectonin beta-propeller repeat-containing 
+protein 2 OS=Homo sapiens OX=9606 GN=TECPR2 PE=1 SV=4
+Length=1411
+
+ Score = 141 bits (354),  Expect = 6e-37, Method: Composition-based stats.
+ Identities = 38/257 (15%), Positives = 80/257 (31%), Gaps = 38/257 (15%)
+
+Query  13    IDAGSGSVVGVNNLNETFV----LIDNVFTKI----SGSLKHFSVGPAGQLGVNTANNIF  64
+             +   +  V   +  NE  V    LI   +  +    + S   ++   A        + ++
+Sbjct  1081  LGVNNSGVWISSGKNEFHVAKGSLIGTYWNHVVPRGTASATKWAFVLASAAPTKEGSFLW  1140
+
+Query  65    KYQSG---------------GFVQLAGLLKQVD-AGGDQIIAGVNMYDDIYCLNMDANNK  108
+               QS                  VQL    +    A     +  ++    ++   +  +  
+Sbjct  1141  LCQSSKDLCSVSAQSAQSRPSTVQLPPEAEMRAYAACQDALWALDSLGQVFIRTLSKSCP  1200
+
+Query  109   WPSSNTPWVQLNG---KLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS---GSGSFINI  162
+                  T          KL   +CG    W  +S   ++          S    +   I  
+Sbjct  1201  TGMHWTRLDLSQLGAVKLTSLACGNQHIWACDSRGGVYFRVGTQPLNPSLMLPAWIMIEP  1260
+
+Query  163   PGL-----LSMIEVATDGS-VFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVS  216
+             P       L  +  + +   ++ ++S+ N++ RTG+T   P GT W  +         ++
+Sbjct  1261  PVQPAGVSLVSVHSSPNDQMLWVLDSRWNVHVRTGITEEMPVGTAWEHV--PGLQACQLA  1318
+
+Query  217   FDLGVLWLVCVDGSIRK  233
+                  +W  C +G + +
+Sbjct  1319  LSTRTVWARCPNGDLAR  1335
+
+
+ Score = 78.7 bits (192),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 29/187 (16%), Positives = 57/187 (30%), Gaps = 16/187 (9%)
+
+Query  34    DNVFTKISGSLKHFSVGPAGQLG---VNTANNIFKYQS------GGFVQLAGLLKQVDAG  84
+                + K   +++  +V P+G L       +N  F            + +       V   
+Sbjct  841   GLRWQKFEDAVQQVAVSPSGALLWKIEQKSNRAFACGKVTIKGKRHWYEALPQAVFVAL-  899
+
+Query  85    GDQIIAGVNMYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFI  144
+              D     +    D+Y     + ++  +           L   +      W +     +  
+Sbjct  900   SDDTAWIIRTSGDLYLQTGLSVDRPCARAVKVD-CPYPLSQITARNNVVWALTEQRALLY  958
+
+Query  145   MKDVSSNVCSGSGSFINIPGLL-----SMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDG  199
+              + VSS    G     +I           I +    +++ ++  GNL+ RTG+   KP G
+Sbjct  959   REGVSSFCPEGEQWKCDIVSERQALEPVCITLGDQQTLWALDIHGNLWFRTGIISKKPQG  1018
+
+Query  200   TDWISMV  206
+              D     
+Sbjct  1019  DDDHWWQ  1025
+
+
+ Score = 50.2 bits (118),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 31/240 (13%), Positives = 68/240 (28%), Gaps = 43/240 (18%)
+
+Query  7     DGNLKQIDAGSGSVVGVNNLNETFVLI-------DNVFTKIS--------------GSLK  45
+             +  ++   A   ++  +++L + F+            +T++               G+  
+Sbjct  1168  EAEMRAYAACQDALWALDSLGQVFIRTLSKSCPTGMHWTRLDLSQLGAVKLTSLACGNQH  1227
+
+Query  46    HFSVGPAGQLGVNTANNIFKYQS--GGFVQLAGLLKQVDAG--------GDQIIAGVN--  93
+              ++    G +                 ++ +   ++              DQ++  ++  
+Sbjct  1228  IWACDSRGGVYFRVGTQPLNPSLMLPAWIMIEPPVQPAGVSLVSVHSSPNDQMLWVLDSR  1287
+
+Query  94    ---MYDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSS  150
+                         M     W            +    +    + W    N  +     V+ 
+Sbjct  1288  WNVHVRTGITEEMPVGTAWEHVP------GLQACQLALSTRTVWARCPNGDLARRYGVTD  1341
+
+Query  151   NVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+                +G   +  IPG +S   V     ++ V   G L QR   T S   GT   S  A P+
+Sbjct  1342  KNPAGDY-WKKIPGSVSCFTVTASDELWAVGPPGYLLQRLTKTFSHSHGTQKSSQAAMPH  1400
+
+
+>sp|Q7Z6L1|TCPR1_HUMAN Tectonin beta-propeller repeat-containing 
+protein 1 OS=Homo sapiens OX=9606 GN=TECPR1 PE=1 SV=1
+Length=1165
+
+ Score = 139 bits (350),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 34/133 (26%), Positives = 56/133 (42%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  +DVS +   GS  S ++ 
+Sbjct  182  DDPKELPDPFNDLSVGGWEITEEPVGRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDT  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            PG +  I       ++    +G    R G+ RS P G+ W S+V  P   NG  H+S  +
+Sbjct  242  PGEVVQISCGPHDLLWATLWEGQALVREGINRSNPKGSSW-SIVEPPGSENGVMHISVGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W V  D  + 
+Sbjct  301  SVVWAVTKDWKVW  313
+
+
+ Score = 135 bits (339),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 34/175 (19%), Positives = 73/175 (42%), Gaps = 11/175 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  L   G + Q+  G   ++      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    +    + W     P       + + S G    W V  + +++  + V+S+   
+Sbjct  267  VREGINRSNPKGSSWSIVEPP--GSENGVMHISVGVSVVWAVTKDWKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVAC  208
+            G+ S+I + G ++M+ V  +  V+G+  +   +Y R GVT S+  G  W +++A 
+Sbjct  325  GT-SWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQGVTPSELSGKTWKAIIAA  378
+
+
+ Score = 70.6 bits (171),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 32/191 (17%), Positives = 66/191 (35%), Gaps = 22/191 (12%)
+
+Query  43    SLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAGVNMYDDIYC  100
+             S+  ++V   G +      +        ++ +        +  G    +  V      + 
+Sbjct  952   SIALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASISIGACYQVWAVARDGSAFY  1011
+
+Query  101   LNM-----DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSG  155
+                      A + W    +P  Q   +LK  S G  S + ++ N  ++  + ++ +   G
+Sbjct  1012  RGSVYPSQPAGDCWYHIPSPPRQ---RLKQVSAGQTSVYALDENGNLWYRQGITPSYPQG  1068
+
+Query  156   SGSFINIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWISMV  206
+             S S+ ++   +  + V     V+ +          S+G +  RTGV   +P G  W    
+Sbjct  1069  S-SWEHVSNNVCRVSVGPLDQVWVIANKVQGSHSLSRGTVCHRTGVQPHEPKGHGWD--Y  1125
+
+Query  207   ACPNGHKHVSF  217
+                 G  H+S 
+Sbjct  1126  GIGGGWDHISV  1136
+
+
+ Score = 61.0 bits (146),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 33/152 (22%), Positives = 52/152 (34%), Gaps = 15/152 (10%)
+
+Query  84    GGDQIIAGVNMYDDIYCLN-----MDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNS  138
+             G    +  V+   D+ C         A + W    T     +  +       Y  W V  
+Sbjct  950   GHSIALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASISIGAC----YQVWAVAR  1005
+
+Query  139   NDQIFIMKDVSSNVCSGS-GSFI-NIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSK  196
+             +   F    V  +  +G     I + P        A   SV+ ++  GNL+ R G+T S 
+Sbjct  1006  DGSAFYRGSVYPSQPAGDCWYHIPSPPRQRLKQVSAGQTSVYALDENGNLWYRQGITPSY  1065
+
+Query  197   PDGTDWISMVACPNGHKHVSFD-LGVLWLVCV  227
+             P G+ W       N    VS   L  +W++  
+Sbjct  1066  PQGSSWEH---VSNNVCRVSVGPLDQVWVIAN  1094
+
+
+ Score = 55.2 bits (131),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 25/138 (18%), Positives = 47/138 (34%), Gaps = 9/138 (7%)
+
+Query  103   MDANNKWPSSNTPWVQLNGKLKYYSCGPYS------CWGVNSNDQIFIMKDVSSNVCSGS  156
+             +  +  W     P    +  +   S G          W V+    +     VS    +GS
+Sbjct  920   LVTSGPWLEV-PPIALRDVSIIPESPGAEGSGHSIALWAVSDKGDVLCRLGVSELNPAGS  978
+
+Query  157   -GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNG-HKH  214
+                 +      + I +     V+ V   G+ + R  V  S+P G  W  + + P    K 
+Sbjct  979   SWLHVGTDQPFASISIGACYQVWAVARDGSAFYRGSVYPSQPAGDCWYHIPSPPRQRLKQ  1038
+
+Query  215   VSFDLGVLWLVCVDGSIR  232
+             VS     ++ +  +G++ 
+Sbjct  1039  VSAGQTSVYALDENGNLW  1056
+
+
+ Score = 45.6 bits (106),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 14/127 (11%), Positives = 34/127 (27%), Gaps = 23/127 (18%)
+
+Query  7    DGNLKQIDAGSGS-VVGVNNLNETFVLIDNVFTKISGSLK--------------------  45
+             G + QI  G    +       +  V      +   GS                      
+Sbjct  242  PGEVVQISCGPHDLLWATLWEGQALVREGINRSNPKGSSWSIVEPPGSENGVMHISVGVS  301
+
+Query  46   -HFSVGPAGQLGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVN-MYDDIYCLNM  103
+              ++V    ++      N        ++++ G +  V+ G +  + G+      +Y    
+Sbjct  302  VVWAVTKDWKVWFRRGVNSHNPCGTSWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQG  361
+
+Query  104  DANNKWP  110
+               ++  
+Sbjct  362  VTPSELS  368
+
+
+ Score = 40.6 bits (93),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 28/207 (14%), Positives = 60/207 (29%), Gaps = 37/207 (18%)
+
+Query  2     DCTVIDGNLKQIDAG-SGSVVGVNNLNETFVLIDNVFTKISGSLK---------------  45
+             D ++I  +     +G S ++  V++  +    +       +GS                 
+Sbjct  936   DVSIIPESPGAEGSGHSIALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASISIG  995
+
+Query  46    ----HFSVGPAGQLGVNTANNIFKYQSGGFVQLAG----LLKQVDAGGDQIIAGVNMYDD  97
+                  ++V   G      +    +     +  +       LKQV AG    +  ++   +
+Sbjct  996   ACYQVWAVARDGSAFYRGSVYPSQPAGDCWYHIPSPPRQRLKQVSAG-QTSVYALDENGN  1054
+
+Query  98    IYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGP-YSCWGVN---------SNDQIFIMKD  147
+             ++       +      + W  ++  +   S GP    W +          S   +     
+Sbjct  1055  LWYRQGITPSY--PQGSSWEHVSNNVCRVSVGPLDQVWVIANKVQGSHSLSRGTVCHRTG  1112
+
+Query  148   VSSNVCSGSGSFINIPGLLSMIEVATD  174
+             V  +   G G    I G    I V  +
+Sbjct  1113  VQPHEPKGHGWDYGIGGGWDHISVRAN  1139
+
+
+>sp|Q5R5Y0|TPCR1_PONAB Tectonin beta-propeller repeat-containing 
+protein 1 OS=Pongo abelii OX=9601 GN=TECPR1 PE=2 SV=1
+Length=1165
+
+ Score = 139 bits (350),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 35/133 (26%), Positives = 56/133 (42%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  +DVS +   GS  S ++ 
+Sbjct  182  DDPKELPDPFNDLSVGGWEIAEEPVGRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDT  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            PG +  I       ++    +G    R G+ RS P G+ W S+V  P   NG  HVS  +
+Sbjct  242  PGEVVQISCGPHDLLWATLWEGQALVREGINRSNPKGSSW-SIVEPPGSDNGIMHVSVGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W V  D  + 
+Sbjct  301  SVVWAVTKDWKVW  313
+
+
+ Score = 138 bits (346),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 34/175 (19%), Positives = 74/175 (42%), Gaps = 11/175 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  L   G + Q+  G   ++      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYREDVSHSNPEGSSWSLLDTPGEVVQISCGPHDLLWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    +    + W     P    +  + + S G    W V  + +++  + ++S+   
+Sbjct  267  VREGINRSNPKGSSWSIVEPP--GSDNGIMHVSVGVSVVWAVTKDWKVWFRRGINSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVAC  208
+            G+ S+I + G ++M+ V  +  V+G+  +   +Y R GVT S+  G  W ++VA 
+Sbjct  325  GT-SWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQGVTPSELSGKTWKAIVAA  378
+
+
+ Score = 71.8 bits (174),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 32/191 (17%), Positives = 66/191 (35%), Gaps = 22/191 (12%)
+
+Query  43    SLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAGVNMYDDIYC  100
+             S+  ++V   G +      +        ++ +        +  G    +  V      + 
+Sbjct  952   SIALWAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFTSISIGACYQVWAVARDGSTFY  1011
+
+Query  101   LNM-----DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSG  155
+                      A + W    +P  Q   +LK  S G  S + ++ N  ++  + ++ +   G
+Sbjct  1012  RGSVYPSQPAGDCWYHIPSPPRQ---RLKQVSVGQTSVYALDENGNLWYRQGITPSYPQG  1068
+
+Query  156   SGSFINIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWISMV  206
+             S S+ ++   +  + V     V+ +          S+G +  RTGV   +P G  W    
+Sbjct  1069  S-SWEHVSNNVCRVSVGPLDQVWVIADKVQGSHSLSRGTVCHRTGVQPHEPKGHGWD--Y  1125
+
+Query  207   ACPNGHKHVSF  217
+                 G  H+S 
+Sbjct  1126  GIGGGWDHISV  1136
+
+
+ Score = 54.8 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 25/138 (18%), Positives = 47/138 (34%), Gaps = 9/138 (7%)
+
+Query  103   MDANNKWPSSNTPWVQLNGKLKYYSCGPYS------CWGVNSNDQIFIMKDVSSNVCSGS  156
+             +  +  W     P    +  +   S G          W V+    +     VS    +GS
+Sbjct  920   LVTSGPWLEV-PPIALRDVSIIPESPGAEGSGHSIALWAVSDKGDVLCRLGVSELNPAGS  978
+
+Query  157   -GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNG-HKH  214
+                 +      + I +     V+ V   G+ + R  V  S+P G  W  + + P    K 
+Sbjct  979   SWLHVGTDQPFTSISIGACYQVWAVARDGSTFYRGSVYPSQPAGDCWYHIPSPPRQRLKQ  1038
+
+Query  215   VSFDLGVLWLVCVDGSIR  232
+             VS     ++ +  +G++ 
+Sbjct  1039  VSVGQTSVYALDENGNLW  1056
+
+
+ Score = 45.2 bits (105),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 14/127 (11%), Positives = 34/127 (27%), Gaps = 23/127 (18%)
+
+Query  7    DGNLKQIDAGSGS-VVGVNNLNETFVLIDNVFTKISGSLK--------------------  45
+             G + QI  G    +       +  V      +   GS                      
+Sbjct  242  PGEVVQISCGPHDLLWATLWEGQALVREGINRSNPKGSSWSIVEPPGSDNGIMHVSVGVS  301
+
+Query  46   -HFSVGPAGQLGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVN-MYDDIYCLNM  103
+              ++V    ++      N        ++++ G +  V+ G +  + G+      +Y    
+Sbjct  302  VVWAVTKDWKVWFRRGINSHNPCGTSWIEMVGEMTMVNVGMNDQVWGIGCEDRAVYFRQG  361
+
+Query  104  DANNKWP  110
+               ++  
+Sbjct  362  VTPSELS  368
+
+
+>sp|Q3ZBA0|TCPR1_RAT Tectonin beta-propeller repeat-containing 
+protein 1 OS=Rattus norvegicus OX=10116 GN=Tecpr1 PE=2 SV=1
+Length=1166
+
+ Score = 138 bits (348),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 32/133 (24%), Positives = 54/133 (41%), Gaps = 5/133 (4%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  ++VS     GS  S ++ 
+Sbjct  182  DDPKELPDPFNDLSVGGWEITEEPVGRLSVWAVSLQGKVWYRENVSHPNPEGSSWSLVDT  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP---NGHKHVSFDL  219
+            PG +  I       ++    +G    R G+ R+ P G  W S+V  P   NG  HVS  +
+Sbjct  242  PGEVVQISCGPHDLIWATLWEGQALVREGICRNNPKGNSW-SIVEPPGSENGIMHVSAGV  300
+
+Query  220  GVLWLVCVDGSIR  232
+             V+W +  D  + 
+Sbjct  301  SVVWAITKDRKVW  313
+
+
+ Score = 138 bits (347),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 36/173 (21%), Positives = 74/173 (43%), Gaps = 11/173 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++      +    +   +  +   G + Q+  G   +I      G  +
+Sbjct  207  GRLSVWAVSLQGKVWYRENVSHPNPEGSSWSLVDTPGEVVQISCGPHDLIWATLWEGQAL  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +  C N    N W     P       + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGICRNNPKGNSWSIVEPP--GSENGIMHVSAGVSVVWAITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMV  206
+            G+ S+I + G ++M+ V  +  V+G++ +   +Y R GVT S+  G  W ++V
+Sbjct  325  GT-SWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQGVTPSELSGKTWKAIV  376
+
+
+ Score = 71.4 bits (173),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 31/187 (17%), Positives = 62/187 (33%), Gaps = 22/187 (12%)
+
+Query  47    FSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAGVNMYDDIYCLNM-  103
+             ++V   G +      +        ++ +        V  G    +  V      +     
+Sbjct  961   WAVSDKGDVLCRLGVSELNPAGSSWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRGSV  1020
+
+Query  104   ----DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSF  159
+                  A + W    +P  Q   KL   S G  S + ++ N  ++    ++ +   GS S+
+Sbjct  1021  SPSQPAGDCWYHIPSPPKQ---KLTQVSVGQTSVYALDENGNLWYRAGITPSYPQGS-SW  1076
+
+Query  160   INIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+              ++   +  + V     V+ +          S+G + +R GV   +P G  W        
+Sbjct  1077  EHVSNNVRKVSVGPLDQVWVIANKVQGSHGLSRGTVCRRMGVQPREPKGQGWD--YGIGG  1134
+
+Query  211   GHKHVSF  217
+             G  H+S 
+Sbjct  1135  GWDHISV  1141
+
+
+ Score = 54.8 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 22/138 (16%), Positives = 47/138 (34%), Gaps = 9/138 (7%)
+
+Query  103   MDANNKWPSSNTPWVQLNGKLKYYSCG------PYSCWGVNSNDQIFIMKDVSSNVCSGS  156
+             +  +  W     P    +  +   S          + W V+    +     VS    +GS
+Sbjct  925   LVTSGPWLEV-APIALSDVSIIPESADANGRGHNIALWAVSDKGDVLCRLGVSELNPAGS  983
+
+Query  157   -GSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNG-HKH  214
+                 +      + + +     V+ V   G+ + R  V+ S+P G  W  + + P      
+Sbjct  984   SWLHVGTDQPFASVSIGACYQVWAVARDGSAFYRGSVSPSQPAGDCWYHIPSPPKQKLTQ  1043
+
+Query  215   VSFDLGVLWLVCVDGSIR  232
+             VS     ++ +  +G++ 
+Sbjct  1044  VSVGQTSVYALDENGNLW  1061
+
+
+ Score = 45.2 bits (105),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/127 (10%), Positives = 37/127 (29%), Gaps = 23/127 (18%)
+
+Query  7    DGNLKQIDAGSGS-VVGVNNLNETFVLID--------NVFTKIS-------------GSL  44
+             G + QI  G    +       +  V           N ++ +              G  
+Sbjct  242  PGEVVQISCGPHDLIWATLWEGQALVREGICRNNPKGNSWSIVEPPGSENGIMHVSAGVS  301
+
+Query  45   KHFSVGPAGQLGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVN-MYDDIYCLNM  103
+              +++    ++      N        ++++ G +  V+ G +  + G++     +Y    
+Sbjct  302  VVWAITKDRKVWFRRGVNSHNPCGTSWIEMVGEMTMVNVGLNDQVWGISCEDRAVYFRQG  361
+
+Query  104  DANNKWP  110
+               ++  
+Sbjct  362  VTPSELS  368
+
+
+>sp|E1BZR9|TCPR1_CHICK Tectonin beta-propeller repeat-containing 
+protein 1 OS=Gallus gallus OX=9031 GN=TECPR1 PE=3 SV=1
+Length=1173
+
+ Score = 137 bits (344),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 29/132 (22%), Positives = 55/132 (42%), Gaps = 3/132 (2%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            D   + P           ++     G  S W V+   +++  ++V  +   GS  S I+ 
+Sbjct  182  DDPERLPDPFNDISIGGWEITDEPLGRLSVWAVSLQGRVWYRENVCHHNPEGSTWSLIST  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP--NGHKHVSFDLG  220
+            PG ++ I   +   ++    +G    R G+ R+ P G  W ++ +    NG  HVS  + 
+Sbjct  242  PGEVAQISCGSYDLLWATLWEGQAIVREGIDRNNPQGISWSTVESPSSDNGIMHVSVGVD  301
+
+Query  221  VLWLVCVDGSIR  232
+            V+W +  D  + 
+Sbjct  302  VVWCITKDRKVW  313
+
+
+ Score = 130 bits (327),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 33/173 (19%), Positives = 71/173 (41%), Gaps = 11/173 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++V   G++           +   +  +   G + Q+  G   ++      G  +
+Sbjct  207  GRLSVWAVSLQGRVWYRENVCHHNPEGSTWSLISTPGEVAQISCGSYDLLWATLWEGQAI  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    N      W +  +P    +  + + S G    W +  + +++  + V+S+   
+Sbjct  267  VREGIDRNNPQGISWSTVESP--SSDNGIMHVSVGVDVVWCITKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMV  206
+            G+ S+I + G + M+ V  +  V+G+      +Y R GVT S+  G  W ++V
+Sbjct  325  GT-SWIEMVGEMMMVNVGLNNQVWGIGCDDRTIYFRQGVTPSELSGKMWKAIV  376
+
+
+ Score = 67.1 bits (162),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 31/196 (16%), Positives = 65/196 (33%), Gaps = 22/196 (11%)
+
+Query  41    SGSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIAGVNMYDDI  98
+               S+  +++   G +               ++ +        +  G    +  V      
+Sbjct  958   EESVALWAISDKGDVLCRLGVTQQNPAGTSWLHVGTDQPFVSISVGAFFQVWAVARDGSA  1017
+
+Query  99    YCLNMDANNK-----WPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVC  153
+             +     +  K     W    +P  Q   KLK  S G  S + ++ N  ++  + ++ +  
+Sbjct  1018  FYRGSVSPKKPAGDCWYHIPSPQKQ---KLKQVSVGRTSVFVLDKNGNLWYRQGITPSYP  1074
+
+Query  154   SGSGSFINIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWIS  204
+              GS ++ ++   +  + V     V+ +          S G +  RTGV   +P G  W  
+Sbjct  1075  QGS-AWDHVSNNIRKMSVGPLDQVWVIADKVQGSHGLSCGTVCHRTGVQPMEPKGLAWD-  1132
+
+Query  205   MVACPNGHKHVSFDLG  220
+                   G +HV+    
+Sbjct  1133  -YGIGGGWEHVTVRGN  1147
+
+
+ Score = 52.5 bits (124),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 23/136 (17%), Positives = 46/136 (34%), Gaps = 7/136 (5%)
+
+Query  103   MDANNKWPSSNTPWVQLNGKLKYYSCGPY----SCWGVNSNDQIFIMKDVSSNVCSG-SG  157
+             +  N  W     P    +  +   S        + W ++    +     V+    +G S 
+Sbjct  930   IVTNGPWLEV-PPVTLWDISIIPSSDADDEESVALWAISDKGDVLCRLGVTQQNPAGTSW  988
+
+Query  158   SFINIPGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNG-HKHVS  216
+               +        I V     V+ V   G+ + R  V+  KP G  W  + +      K VS
+Sbjct  989   LHVGTDQPFVSISVGAFFQVWAVARDGSAFYRGSVSPKKPAGDCWYHIPSPQKQKLKQVS  1048
+
+Query  217   FDLGVLWLVCVDGSIR  232
+                  ++++  +G++ 
+Sbjct  1049  VGRTSVFVLDKNGNLW  1064
+
+
+>sp|A9JRJ2|TCPR1_XENTR Tectonin beta-propeller repeat-containing 
+protein 1 OS=Xenopus tropicalis OX=8364 GN=tecpr1 PE=2 SV=2
+Length=1173
+
+ Score = 135 bits (340),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 30/132 (23%), Positives = 53/132 (40%), Gaps = 3/132 (2%)
+
+Query  104  DANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINI  162
+            + N K P           ++     G  S W  +   +++  +DV  N+  GS  + +  
+Sbjct  182  EDNKKLPDPFNDITVGGWEITDEPVGRLSVWAASLQGKVWYREDVCQNIPEGSSWTELET  241
+
+Query  163  PGLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACP--NGHKHVSFDLG  220
+            P  +  I    +  ++    +G    R G+ R+ P G+ W  + A    NG  HVS  + 
+Sbjct  242  PSEVIQISCGPNDLLWASLWEGQAMVREGINRNNPKGSSWTIVEAPTPENGIMHVSVGVN  301
+
+Query  221  VLWLVCVDGSIR  232
+            V+W V  D  + 
+Sbjct  302  VVWAVTKDRKVW  313
+
+
+ Score = 133 bits (333),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 37/175 (21%), Positives = 72/175 (41%), Gaps = 11/175 (6%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQL--AGLLKQVDAGGDQIIA-----GVNM  94
+            G L  ++    G++           +   + +L     + Q+  G + ++      G  M
+Sbjct  207  GRLSVWAASLQGKVWYREDVCQNIPEGSSWTELETPSEVIQISCGPNDLLWASLWEGQAM  266
+
+Query  95   YDDIYCLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCS  154
+              +    N    + W     P       + + S G    W V  + +++  + V+S+   
+Sbjct  267  VREGINRNNPKGSSWTIVEAPTP--ENGIMHVSVGVNVVWAVTKDRKVWFRRGVNSHNPC  324
+
+Query  155  GSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWISMVAC  208
+            G+G +I + G ++M++V  +  VFGV  +   +Y R GVT S+  G  W S+V  
+Sbjct  325  GTG-WIEMVGEMAMVDVGLNDQVFGVGYEDRAVYFRQGVTPSELSGKAWKSIVVP  378
+
+
+ Score = 61.8 bits (148),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 35/175 (20%), Positives = 61/175 (35%), Gaps = 24/175 (14%)
+
+Query  68    SGGFVQLAGL-LKQVDAGGDQ--------IIAGVNMYDDIYCL-----NMDANNKWPSSN  113
+             SG ++++  + L  +               +  ++   D+ C         + + W    
+Sbjct  924   SGPWLEVPPICLWDISISPSSGAHNSESIALWAISNKGDVLCRLGVTKQSPSGSSWLHVG  983
+
+Query  114   TPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGS-GSFINIP-GLLSMIEV  171
+             T    ++  +     G    W +  +   F    VS    +G     I  P         
+Sbjct  984   TDQPFISVSVG----GCLQVWAIARDGSAFYRGSVSPAQPAGDCWYHIPSPHKQKLQQVS  1039
+
+Query  172   ATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVACPNGHKHVSFD-LGVLWLV  225
+                 SVF V+  GNL+ R G+T + P GT W  M    N  + VS   L  +W++
+Sbjct  1040  VGHTSVFVVDENGNLWFRHGITPTYPQGTTWEHM---SNNIRKVSVGPLDQIWVI  1091
+
+
+ Score = 47.9 bits (112),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 23/190 (12%), Positives = 55/190 (29%), Gaps = 53/190 (28%)
+
+Query  40    ISGSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQLAGLLKQVDAGGDQIIAGVNMYDDIY  99
+             + G L+ +++   G      + +  +     +  +    KQ                   
+Sbjct  993   VGGCLQVWAIARDGSAFYRGSVSPAQPAGDCWYHIPSPHKQ-------------------  1033
+
+Query  100   CLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSF  159
+                                   KL+  S G  S + V+ N  ++    ++     G+ ++
+Sbjct  1034  ----------------------KLQQVSVGHTSVFVVDENGNLWFRHGITPTYPQGT-TW  1070
+
+Query  160   INIPGLLSMIEVATDGSVFGV---------NSQGNLYQRTGVTRSKPDGTDWISMVACPN  210
+              ++   +  + V     ++ +          S G +  R GV   +  G  W        
+Sbjct  1071  EHMSNNIRKVSVGPLDQIWVIADKVQGSHSLSCGTVCHRLGVQPMQLKGHSWD--YGIGG  1128
+
+Query  211   GHKHVSFDLG  220
+             G +H++    
+Sbjct  1129  GWEHITVRGN  1138
+
+
+>sp|Q9VWB0|TECPR_DROME Tectonin beta-propeller repeat-containing 
+protein OS=Drosophila melanogaster OX=7227 GN=Pex23 PE=2 
+SV=2
+Length=1350
+
+ Score = 134 bits (338),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 39/198 (20%), Positives = 77/198 (39%), Gaps = 19/198 (10%)
+
+Query  42   GSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQLA----GLLKQVDAGGDQIIAGVNMYDD  97
+            G+L  +++   G+    T  +    +   +  +       L Q+  G   ++  V     
+Sbjct  206  GTLCVWAITAHGRAMFRTGVSKTAPEGLRWTAVPTPTGSELAQISVGPTGLVWAVLHNGR  265
+
+Query  98   IYCLNMDA-----NNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDV----  148
+            +             + W    TP    + ++ + S G  + W V ++   +  + V    
+Sbjct  266  VIVRTGVTRDNLVGDSWLDVKTPVAASSLRIVHVSVGTDAVWCVTNDHHAWFRRGVKGEA  325
+
+Query  149  ---SSNVCSGSGSFINIPGLLSMIEVATDGSVFGVNSQGN-LYQRTGVTRSKPDGTDWIS  204
+               S +   G G ++ + G +SM+ VA +  VF + +    LY R+GVT + P G  W  
+Sbjct  326  AGISEDSAIGKG-WVEMVGNISMVSVAANDQVFAIGAADRCLYHRSGVTSADPTGKKW-R  383
+
+Query  205  MVACPNGHKHVSFDLGVL  222
+            ++ CP      S  L ++
+Sbjct  384  LIQCPMQISRTSSSLSIV  401
+
+
+ Score = 89.1 bits (219),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 27/133 (20%), Positives = 41/133 (31%), Gaps = 7/133 (5%)
+
+Query  107  NKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSG-SGSFINIP--  163
+            +               +     G    W + ++ +      VS     G   + +  P  
+Sbjct  184  DPTQEPFIDVAIGGTCVPNAPAGTLCVWAITAHGRAMFRTGVSKTAPEGLRWTAVPTPTG  243
+
+Query  164  GLLSMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWISMVAC----PNGHKHVSFDL  219
+              L+ I V   G V+ V   G +  RTGVTR    G  W+ +            HVS   
+Sbjct  244  SELAQISVGPTGLVWAVLHNGRVIVRTGVTRDNLVGDSWLDVKTPVAASSLRIVHVSVGT  303
+
+Query  220  GVLWLVCVDGSIR  232
+              +W V  D    
+Sbjct  304  DAVWCVTNDHHAW  316
+
+
+ Score = 74.1 bits (180),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 26/178 (15%), Positives = 59/178 (33%), Gaps = 19/178 (11%)
+
+Query  41    SGSLKHFSVGPAGQLGVNTANNIFKYQSGGFVQLAGL--LKQVDAGGDQIIAGVNMYDDI  98
+             + ++  +++   G + +         +   +  +     L  +  G    +  V     +
+Sbjct  1159  NTAVAAWAIASNGDVLIRHGVCSLNPRGDAWEHITSDQPLVGISVGPTGQVWTVARNGMV  1218
+
+Query  99    Y-----CLNMDANNKWPSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVC  153
+             +            + W     P        K  S G    W +++  ++ + K++S    
+Sbjct  1219  FFRYGISRQNPCGDAWQQVEAP---AGVTFKAISVGRAGIWALDNQQRLAVRKEISRTFP  1275
+
+Query  154   SGS-GSFI----NIPGLLSMI----EVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDW  202
+              GS   F+    N+P           V+    V+ ++  G + +R G+T   P G  W
+Sbjct  1276  EGSHWQFLPNAANVPPHTDQHCGFRSVSVGSEVWAISLNGIICRRCGITEENPAGVGW  1333
+
+
+ Score = 61.8 bits (148),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 25/103 (24%), Positives = 39/103 (38%), Gaps = 2/103 (2%)
+
+Query  132   SCWGVNSNDQIFIMKDVSSNVCSG-SGSFINIPGLLSMIEVATDGSVFGVNSQGNLYQRT  190
+             + W + SN  + I   V S    G +   I     L  I V   G V+ V   G ++ R 
+Sbjct  1163  AAWAIASNGDVLIRHGVCSLNPRGDAWEHITSDQPLVGISVGPTGQVWTVARNGMVFFRY  1222
+
+Query  191   GVTRSKPDGTDWISMVAC-PNGHKHVSFDLGVLWLVCVDGSIR  232
+             G++R  P G  W  + A      K +S     +W +     + 
+Sbjct  1223  GISRQNPCGDAWQQVEAPAGVTFKAISVGRAGIWALDNQQRLA  1265
+
+
+ Score = 59.8 bits (143),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 31/159 (19%), Positives = 58/159 (36%), Gaps = 16/159 (10%)
+
+Query  90    AGVNMYDDIYCLNMDAN-NKWPSSNTPWVQLNGKLKYYSCGPYS-CWGVNSNDQIFIMKD  147
+               +    D+   +   + N    +       +  L   S GP    W V  N  +F    
+Sbjct  1165  WAIASNGDVLIRHGVCSLNPRGDAWEHIT-SDQPLVGISVGPTGQVWTVARNGMVFFRYG  1223
+
+Query  148   VS-SNVCSGSGSFINIPGLL--SMIEVATDGSVFGVNSQGNLYQRTGVTRSKPDGTDWIS  204
+             +S  N C  +   +  P  +    I V   G ++ +++Q  L  R  ++R+ P+G+ W  
+Sbjct  1224  ISRQNPCGDAWQQVEAPAGVTFKAISVGRAG-IWALDNQQRLAVRKEISRTFPEGSHWQF  1282
+
+Query  205   MVACPNGHKHVS--------FDLGVLWLVCVDGSI-RKC  234
+             +    N   H               +W + ++G I R+C
+Sbjct  1283  LPNAANVPPHTDQHCGFRSVSVGSEVWAISLNGIICRRC  1321
+
+
+>sp|F2Z461|HERC6_MOUSE E3 ISG15--protein ligase Herc6 OS=Mus musculus 
+OX=10090 GN=Herc6 PE=2 SV=1
+Length=1003
+
+ Score = 46.0 bits (107),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 35/196 (18%), Positives = 56/196 (29%), Gaps = 33/196 (17%)
+
+Query  10   LKQIDAGSGSVVGVNNLNETFVLIDNVFTKISGSLKHFSVGPAGQLGVNTANNIFKYQSG  69
+            + Q+  G    + ++     F    N                 GQLG+   +        
+Sbjct  129  IIQVSCGHYHSLALSEDGHVFSWGRNS---------------EGQLGLGKNSRSQAIPQK  173
+
+Query  70   GFVQLAGLLKQVDAGGDQII----------AGVNMYDDIYCLNMDANNKWPSSNTPWVQL  119
+                    L QV AGG               G N    +         +    ++     
+Sbjct  174  VKSLEGIPLAQVAAGGTHSFALSLTGTSFGWGSNRSGQLALSGNKVKEQIYKPHSIGALK  233
+
+Query  120  NGKLKYYSCGPYSCWGVNSNDQIFIMKDVS-----SNVCSGSG--SFIN-IPGLLSMIEV  171
+            N  + Y SCG      +    Q+F     S      +  SG      I  I G +S IE 
+Sbjct  234  NLSVIYISCGYEHTAVLTEEGQVFTFGGNSSGQLQPSPRSGQRGPQLIEGIGGRVSQIEC  293
+
+Query  172  ATDGSVFGVNSQGNLY  187
+            A+  ++  V + G + 
+Sbjct  294  ASYHTIAYVYTTGQVV  309
+
+
+>sp|Q2JW20|YC48L_SYNJA Ycf48-like protein OS=Synechococcus sp. 
+(strain JA-3-3Ab) OX=321327 GN=CYA_0848 PE=3 SV=2
+Length=334
+
+ Score = 42.5 bits (98),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 32/208 (15%), Positives = 67/208 (32%), Gaps = 17/208 (8%)
+
+Query  5    VIDGNLKQIDA-GSGSVVGVNNLNETFV--LIDNVFT-KIS---GSLKHFSVGPAGQLGV  57
+             + G    I A G G+   V N+   +        +  ++    G++K+ + GP G+   
+Sbjct  127  QLPGEPILIQALGPGAAEMVTNVGAIYRTEDGGQTWHAQVEEPIGAIKNIARGPGGEYLA  186
+
+Query  58   NTANN----IFKYQSGGFVQLAGL----LKQVDAGGDQIIAGVNMYDDIYCLNMDANNKW  109
+             ++      ++  +S  +          ++ +  G +     +N   +I   +   + +W
+Sbjct  187  VSSRGSFYFLYTPESRSWKPYPRESSRRIQNMGFGPNGSAWKLNQGAEIAFTSDFTSGEW  246
+
+Query  110  PSSNTPWVQLNGKLKYYSCGPYS-CWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSM  168
+                 P   L+      +       W V     +    D        +    NIP     
+Sbjct  247  SKPLRPGRALSFGYLNAAYQNDHDLWVVGGGGTLIHSPD-GGKTWEEAKKLSNIPANFYS  305
+
+Query  169  IEVATDGSVFGVNSQGNLYQRTGVTRSK  196
+            IE       F +  +G L +  G + S 
+Sbjct  306  IEFFGPDRGFILGQRGTLLRYVGYSNSP  333
+
+
+>sp|Q2JJR3|YC48L_SYNJB Ycf48-like protein OS=Synechococcus sp. 
+(strain JA-2-3B'a(2-13)) OX=321332 GN=CYB_2153 PE=3 SV=1
+Length=333
+
+ Score = 40.6 bits (93),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 30/199 (15%), Positives = 62/199 (31%), Gaps = 15/199 (8%)
+
+Query  5    VIDGNLKQIDA-GSGSVVGVNNLNETF--VLIDNVFT-KIS---GSLKHFSVGPAGQLGV  57
+             + G    I A G G+   V N+   +        +  ++    G++K+ + GP G+   
+Sbjct  128  QLPGEPLLIQALGPGAAEMVTNVGAIYRTEDGGQTWHAQVDEPIGAIKNIARGPEGEYLA  187
+
+Query  58   NTANN----IFKYQSGGFVQLAGL----LKQVDAGGDQIIAGVNMYDDIYCLNMDANNKW  109
+             ++      ++  +S  +          ++ +  G       +N   +I   +   + +W
+Sbjct  188  VSSRGSFYFLYTPESRTWKPYPRESSRRIQNMGFGPHGSAWKLNQGAEIAFTDDFTSGQW  247
+
+Query  110  PSSNTPWVQLNGKLKYYSCGPYSCWGVNSNDQIFIMKDVSSNVCSGSGSFINIPGLLSMI  169
+             S   P   L+      +        V       I           +    NIP     I
+Sbjct  248  SSPLRPGRALSFGYLNAAYQNDHDLWVVGGGATLIHSPDGGKTWEQAKKLSNIPANFYSI  307
+
+Query  170  EVATDGSVFGVNSQGNLYQ  188
+            E       F +  +G L +
+Sbjct  308  EFFGPEQGFILGQRGTLLR  326
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.122    0.321    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0374    0.140     1.90     42.6     43.6 
+
+Effective search space used: 16910141596
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

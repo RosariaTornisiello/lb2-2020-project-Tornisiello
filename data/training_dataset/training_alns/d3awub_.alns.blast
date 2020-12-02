@@ -1,0 +1,259 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3awub_
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P17687|TYRT_STRAT Tyrosinase cofactor OS=Streptomyces antibiot...  112     1e-32
+sp|P55046|TYRT_STRGB Tyrosinase cofactor OS=Streptomyces galbus O...  108     3e-31
+sp|P55047|TYRT_STRGA Tyrosinase cofactor OS=Streptomyces glaucesc...  108     3e-31
+sp|P55048|TYRT_STRLN Tyrosinase cofactor OS=Streptomyces lincolne...  89.7    1e-23
+sp|B1VTI4|GRIE_STRGG Copper chaperone GriE OS=Streptomyces griseu...  59.3    8e-12
+
+
+>sp|P17687|TYRT_STRAT Tyrosinase cofactor OS=Streptomyces antibioticus 
+OX=1890 GN=melC1 PE=3 SV=1
+Length=146
+
+ Score = 112 bits (280),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 65/95 (68%), Positives = 69/95 (73%), Gaps = 18/95 (19%)
+
+Query  2    APESFDEVYKGRRIQGRPA------------------HEHGGGYEVFVDGVQLHVMRNAD  43
+            AP +FDE+YKGRRIQGR                      HGGGY VFVDGV+LHVMRNAD
+Sbjct  49   APAAFDEIYKGRRIQGRTVTDGGGHHGGGHGGDGHGGGHHGGGYAVFVDGVELHVMRNAD  108
+
+Query  44   GSWISVVSHYDPVPTPRAAARAAVDELQGAPLLPF  78
+            GSWISVVSHY+PV TPRAAARAAVDELQGA LLPF
+Sbjct  109  GSWISVVSHYEPVDTPRAAARAAVDELQGARLLPF  143
+
+
+>sp|P55046|TYRT_STRGB Tyrosinase cofactor OS=Streptomyces galbus 
+OX=33898 GN=melC1 PE=3 SV=1
+Length=126
+
+ Score = 108 bits (270),  Expect = 3e-31, Method: Compositional matrix adjust.
+ Identities = 65/84 (77%), Positives = 68/84 (81%), Gaps = 6/84 (7%)
+
+Query  1    AAPESFDEVYKGRRIQGRPAHEHGGG------YEVFVDGVQLHVMRNADGSWISVVSHYD  54
+             AP+SFDEVYKGRRIQG PA   G        Y VFVDGVQLHVM+NADG+WISVVSHY 
+Sbjct  40   TAPDSFDEVYKGRRIQGGPASGGGHHHEHGGGYAVFVDGVQLHVMQNADGTWISVVSHYA  99
+
+Query  55   PVPTPRAAARAAVDELQGAPLLPF  78
+            PV TPRAAARAAVDELQGAPLLPF
+Sbjct  100  PVATPRAAARAAVDELQGAPLLPF  123
+
+
+>sp|P55047|TYRT_STRGA Tyrosinase cofactor OS=Streptomyces glaucescens 
+OX=1907 GN=melC1 PE=3 SV=1
+Length=134
+
+ Score = 108 bits (270),  Expect = 3e-31, Method: Compositional matrix adjust.
+ Identities = 67/82 (82%), Positives = 70/82 (85%), Gaps = 5/82 (6%)
+
+Query  2    APESFDEVYKGRRIQGRPA-----HEHGGGYEVFVDGVQLHVMRNADGSWISVVSHYDPV  56
+             P SFDEVYKGRRIQGRPA       HGGGY V +DGV+LHVM+NADGSWISVVSHYDPV
+Sbjct  50   TPASFDEVYKGRRIQGRPAAGGHHQHHGGGYAVLIDGVELHVMQNADGSWISVVSHYDPV  109
+
+Query  57   PTPRAAARAAVDELQGAPLLPF  78
+            PTPRAAARAAVDELQGA LLPF
+Sbjct  110  PTPRAAARAAVDELQGARLLPF  131
+
+
+>sp|P55048|TYRT_STRLN Tyrosinase cofactor OS=Streptomyces lincolnensis 
+OX=1915 GN=melC1 PE=3 SV=1
+Length=140
+
+ Score = 89.7 bits (221),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 58/76 (76%), Positives = 61/76 (80%), Gaps = 4/76 (5%)
+
+Query  7    DEVYKGRRIQGRPAHEHGGG----YEVFVDGVQLHVMRNADGSWISVVSHYDPVPTPRAA  62
+            DEV KGR IQG P    G      Y VF+DGV+LHVMRNADGSWISVVSHYDPVPTPRAA
+Sbjct  62   DEVIKGRGIQGGPHRGGGHHHGTGYAVFLDGVELHVMRNADGSWISVVSHYDPVPTPRAA  121
+
+Query  63   ARAAVDELQGAPLLPF  78
+            ARAAVDELQGA L+PF
+Sbjct  122  ARAAVDELQGAKLVPF  137
+
+
+>sp|B1VTI4|GRIE_STRGG Copper chaperone GriE OS=Streptomyces griseus 
+subsp. griseus (strain JCM 4626 / NBRC 13350) OX=455632 
+GN=griE PE=3 SV=1
+Length=129
+
+ Score = 59.3 bits (142),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 36/71 (51%), Positives = 47/71 (66%), Gaps = 5/71 (7%)
+
+Query  8    EVYKGRRIQ-GRPAHEHGGGYEVFVDGVQLHVMRNADGSWISVVSHYDPVPTPRAAARAA  66
+            E Y GR I+   PA   GGG  VF+DG  LH+M+ AD +++S + HY+  PTP  AAR A
+Sbjct  53   ERYLGRSIRVAAPAD--GGG--VFIDGRPLHIMKFADDAYLSSMCHYEMAPTPLHAARRA  108
+
+Query  67   VDELQGAPLLP  77
+            V+EL+GA L P
+Sbjct  109  VEELRGAALQP  119
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.427    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+Results from round 2
+
+
+Query= d3awub_
+
+Length=78
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P55046|TYRT_STRGB Tyrosinase cofactor OS=Streptomyces galbus O...  106     3e-30
+sp|P17687|TYRT_STRAT Tyrosinase cofactor OS=Streptomyces antibiot...  105     1e-29
+sp|P55047|TYRT_STRGA Tyrosinase cofactor OS=Streptomyces glaucesc...  102     2e-28
+sp|B1VTI4|GRIE_STRGG Copper chaperone GriE OS=Streptomyces griseu...  92.1    1e-24
+sp|P55048|TYRT_STRLN Tyrosinase cofactor OS=Streptomyces lincolne...  90.5    6e-24
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P55046|TYRT_STRGB Tyrosinase cofactor OS=Streptomyces galbus 
+OX=33898 GN=melC1 PE=3 SV=1
+Length=126
+
+ Score = 106 bits (264),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 65/84 (77%), Positives = 68/84 (81%), Gaps = 6/84 (7%)
+
+Query  1    AAPESFDEVYKGRRIQGRPAHEHGGG------YEVFVDGVQLHVMRNADGSWISVVSHYD  54
+             AP+SFDEVYKGRRIQG PA   G        Y VFVDGVQLHVM+NADG+WISVVSHY 
+Sbjct  40   TAPDSFDEVYKGRRIQGGPASGGGHHHEHGGGYAVFVDGVQLHVMQNADGTWISVVSHYA  99
+
+Query  55   PVPTPRAAARAAVDELQGAPLLPF  78
+            PV TPRAAARAAVDELQGAPLLPF
+Sbjct  100  PVATPRAAARAAVDELQGAPLLPF  123
+
+
+>sp|P17687|TYRT_STRAT Tyrosinase cofactor OS=Streptomyces antibioticus 
+OX=1890 GN=melC1 PE=3 SV=1
+Length=146
+
+ Score = 105 bits (261),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 65/95 (68%), Positives = 69/95 (73%), Gaps = 18/95 (19%)
+
+Query  2    APESFDEVYKGRRIQGRPA------------------HEHGGGYEVFVDGVQLHVMRNAD  43
+            AP +FDE+YKGRRIQGR                      HGGGY VFVDGV+LHVMRNAD
+Sbjct  49   APAAFDEIYKGRRIQGRTVTDGGGHHGGGHGGDGHGGGHHGGGYAVFVDGVELHVMRNAD  108
+
+Query  44   GSWISVVSHYDPVPTPRAAARAAVDELQGAPLLPF  78
+            GSWISVVSHY+PV TPRAAARAAVDELQGA LLPF
+Sbjct  109  GSWISVVSHYEPVDTPRAAARAAVDELQGARLLPF  143
+
+
+>sp|P55047|TYRT_STRGA Tyrosinase cofactor OS=Streptomyces glaucescens 
+OX=1907 GN=melC1 PE=3 SV=1
+Length=134
+
+ Score = 102 bits (253),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 67/82 (82%), Positives = 70/82 (85%), Gaps = 5/82 (6%)
+
+Query  2    APESFDEVYKGRRIQGRPA-----HEHGGGYEVFVDGVQLHVMRNADGSWISVVSHYDPV  56
+             P SFDEVYKGRRIQGRPA       HGGGY V +DGV+LHVM+NADGSWISVVSHYDPV
+Sbjct  50   TPASFDEVYKGRRIQGRPAAGGHHQHHGGGYAVLIDGVELHVMQNADGSWISVVSHYDPV  109
+
+Query  57   PTPRAAARAAVDELQGAPLLPF  78
+            PTPRAAARAAVDELQGA LLPF
+Sbjct  110  PTPRAAARAAVDELQGARLLPF  131
+
+
+>sp|B1VTI4|GRIE_STRGG Copper chaperone GriE OS=Streptomyces griseus 
+subsp. griseus (strain JCM 4626 / NBRC 13350) OX=455632 
+GN=griE PE=3 SV=1
+Length=129
+
+ Score = 92.1 bits (227),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 34/71 (48%), Positives = 45/71 (63%), Gaps = 5/71 (7%)
+
+Query  8    EVYKGRRIQ-GRPAHEHGGGYEVFVDGVQLHVMRNADGSWISVVSHYDPVPTPRAAARAA  66
+            E Y GR I+   PA   G    VF+DG  LH+M+ AD +++S + HY+  PTP  AAR A
+Sbjct  53   ERYLGRSIRVAAPADGGG----VFIDGRPLHIMKFADDAYLSSMCHYEMAPTPLHAARRA  108
+
+Query  67   VDELQGAPLLP  77
+            V+EL+GA L P
+Sbjct  109  VEELRGAALQP  119
+
+
+>sp|P55048|TYRT_STRLN Tyrosinase cofactor OS=Streptomyces lincolnensis 
+OX=1915 GN=melC1 PE=3 SV=1
+Length=140
+
+ Score = 90.5 bits (223),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 58/76 (76%), Positives = 61/76 (80%), Gaps = 4/76 (5%)
+
+Query  7    DEVYKGRRIQGRPAHEHGGG----YEVFVDGVQLHVMRNADGSWISVVSHYDPVPTPRAA  62
+            DEV KGR IQG P    G      Y VF+DGV+LHVMRNADGSWISVVSHYDPVPTPRAA
+Sbjct  62   DEVIKGRGIQGGPHRGGGHHHGTGYAVFLDGVELHVMRNADGSWISVVSHYDPVPTPRAA  121
+
+Query  63   ARAAVDELQGAPLLPF  78
+            ARAAVDELQGA L+PF
+Sbjct  122  ARAAVDELQGAKLVPF  137
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.386    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5081033392
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

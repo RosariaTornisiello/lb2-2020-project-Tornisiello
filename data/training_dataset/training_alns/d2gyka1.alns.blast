@@ -1,0 +1,329 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2gyka1
+
+Length=83
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia c...  172     9e-57
+sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia c...  122     6e-37
+sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia c...  102     4e-29
+sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia c...  92.4    3e-25
+sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Esch...  90.9    1e-24
+sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas ae...  87.0    4e-23
+sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas ae...  87.0    5e-23
+
+
+>sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=86
+
+ Score = 172 bits (435),  Expect = 9e-57, Method: Compositional matrix adjust.
+ Identities = 82/83 (99%), Positives = 82/83 (99%), Gaps = 0/83 (0%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGS LIYYPKEGDDD
+Sbjct  3   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSDLIYYPKEGDDD  62
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SPSGIVNTVKQWRAANGKSGFKQ
+Sbjct  63  SPSGIVNTVKQWRAANGKSGFKQ  85
+
+
+>sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=86
+
+ Score = 122 bits (305),  Expect = 6e-37, Method: Compositional matrix adjust.
+ Identities = 55/83 (66%), Positives = 66/83 (80%), Gaps = 0/83 (0%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LKHSISDYTEAEFL+ V  IC A+ ++EE+  KLV  FE +TEHP GS LIYYP++  +D
+Sbjct  3   LKHSISDYTEAEFLEFVKKICRAEGATEEDDNKLVREFERLTEHPDGSDLIYYPRDDRED  62
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP GIV  +K+WRAANGKSGFKQ
+Sbjct  63  SPEGIVKEIKEWRAANGKSGFKQ  85
+
+
+>sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=87
+
+ Score = 102 bits (254),  Expect = 4e-29, Method: Compositional matrix adjust.
+ Identities = 47/84 (56%), Positives = 64/84 (76%), Gaps = 1/84 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSALIYYPKEGDD  59
+           LK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+ LIYYP +  D
+Sbjct  3   LKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDNRD  62
+
+Query  60  DSPSGIVNTVKQWRAANGKSGFKQ  83
+           DSP GIV  +K+WRAANGK GFKQ
+Sbjct  63  DSPEGIVKEIKEWRAANGKPGFKQ  86
+
+
+>sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=85
+
+ Score = 92.4 bits (228),  Expect = 3e-25, Method: Compositional matrix adjust.
+ Identities = 44/83 (53%), Positives = 59/83 (71%), Gaps = 1/83 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LK+SISDYTE EF +++  I N +   +++   L  HF  +TEHPSGS LIYYP+  +D 
+Sbjct  3   LKNSISDYTETEFKKIIEDIINCEGDEKKQDDNL-EHFISVTEHPSGSDLIYYPEGNNDG  61
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP  ++  +K+WRAANGKSGFKQ
+Sbjct  62  SPEAVIKEIKEWRAANGKSGFKQ  84
+
+
+>sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Escherichia 
+coli OX=562 GN=imm PE=3 SV=1
+Length=85
+
+ Score = 90.9 bits (224),  Expect = 1e-24, Method: Compositional matrix adjust.
+ Identities = 43/83 (52%), Positives = 57/83 (69%), Gaps = 1/83 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LK SI DYTE EF +++  I N +   +++   L  HF  +TEHPSGS LIYYP+  +D 
+Sbjct  3   LKKSIGDYTETEFKKIIENIINCEGDEKKQDDNL-EHFISVTEHPSGSDLIYYPEGNNDG  61
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP  ++  +K+WRAANGKSGFKQ
+Sbjct  62  SPEAVIKEIKEWRAANGKSGFKQ  84
+
+
+>sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=imm2 
+PE=1 SV=1
+Length=87
+
+ Score = 87.0 bits (214),  Expect = 4e-23, Method: Compositional matrix adjust.
+ Identities = 41/85 (48%), Positives = 57/85 (67%), Gaps = 3/85 (4%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTS---SEEELVKLVTHFEEMTEHPSGSALIYYPKEG  57
+           +K  IS+YTE EFL+ V  I   +     +EE  ++ V  F+++TEHPSGS L+YYP E 
+Sbjct  1   MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLEFKKLTEHPSGSDLLYYPNEN  60
+
+Query  58  DDDSPSGIVNTVKQWRAANGKSGFK  82
+            +DSP+G+V  VK+WRA+ G  GFK
+Sbjct  61  REDSPAGVVKEVKEWRASKGLPGFK  85
+
+
+>sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas 
+aeruginosa OX=287 GN=imm1 PE=1 SV=1
+Length=87
+
+ Score = 87.0 bits (214),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 41/85 (48%), Positives = 57/85 (67%), Gaps = 3/85 (4%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTS---SEEELVKLVTHFEEMTEHPSGSALIYYPKEG  57
+           +K  IS+YTE EFL+ V  I   +     +EE  ++ V  F+++TEHPSGS L+YYP E 
+Sbjct  1   MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLEFKKLTEHPSGSDLLYYPNEN  60
+
+Query  58  DDDSPSGIVNTVKQWRAANGKSGFK  82
+            +DSP+G+V  VK+WRA+ G  GFK
+Sbjct  61  REDSPAGVVKEVKEWRASKGLPGFK  85
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.127    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999386502
+Results from round 2
+
+
+Query= d2gyka1
+
+Length=83
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia c...  145     4e-46
+sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia c...  137     4e-43
+sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia c...  131     1e-40
+sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia c...  122     4e-37
+sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas ae...  119     4e-36
+sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Esch...  119     7e-36
+sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas ae...  118     1e-35
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=86
+
+ Score = 145 bits (365),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 82/83 (99%), Positives = 82/83 (99%), Gaps = 0/83 (0%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGS LIYYPKEGDDD
+Sbjct  3   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSDLIYYPKEGDDD  62
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SPSGIVNTVKQWRAANGKSGFKQ
+Sbjct  63  SPSGIVNTVKQWRAANGKSGFKQ  85
+
+
+>sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=86
+
+ Score = 137 bits (346),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 55/83 (66%), Positives = 66/83 (80%), Gaps = 0/83 (0%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LKHSISDYTEAEFL+ V  IC A+ ++EE+  KLV  FE +TEHP GS LIYYP++  +D
+Sbjct  3   LKHSISDYTEAEFLEFVKKICRAEGATEEDDNKLVREFERLTEHPDGSDLIYYPRDDRED  62
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP GIV  +K+WRAANGKSGFKQ
+Sbjct  63  SPEGIVKEIKEWRAANGKSGFKQ  85
+
+
+>sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=87
+
+ Score = 131 bits (329),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 47/84 (56%), Positives = 64/84 (76%), Gaps = 1/84 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSALIYYPKEGDD  59
+           LK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+ LIYYP +  D
+Sbjct  3   LKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDNRD  62
+
+Query  60  DSPSGIVNTVKQWRAANGKSGFKQ  83
+           DSP GIV  +K+WRAANGK GFKQ
+Sbjct  63  DSPEGIVKEIKEWRAANGKPGFKQ  86
+
+
+>sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=85
+
+ Score = 122 bits (306),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 44/83 (53%), Positives = 59/83 (71%), Gaps = 1/83 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LK+SISDYTE EF +++  I N +   +++   L  HF  +TEHPSGS LIYYP+  +D 
+Sbjct  3   LKNSISDYTETEFKKIIEDIINCEGDEKKQDDNL-EHFISVTEHPSGSDLIYYPEGNNDG  61
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP  ++  +K+WRAANGKSGFKQ
+Sbjct  62  SPEAVIKEIKEWRAANGKSGFKQ  84
+
+
+>sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=imm2 
+PE=1 SV=1
+Length=87
+
+ Score = 119 bits (299),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 41/85 (48%), Positives = 57/85 (67%), Gaps = 3/85 (4%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTS---SEEELVKLVTHFEEMTEHPSGSALIYYPKEG  57
+           +K  IS+YTE EFL+ V  I   +     +EE  ++ V  F+++TEHPSGS L+YYP E 
+Sbjct  1   MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLEFKKLTEHPSGSDLLYYPNEN  60
+
+Query  58  DDDSPSGIVNTVKQWRAANGKSGFK  82
+            +DSP+G+V  VK+WRA+ G  GFK
+Sbjct  61  REDSPAGVVKEVKEWRASKGLPGFK  85
+
+
+>sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Escherichia 
+coli OX=562 GN=imm PE=3 SV=1
+Length=85
+
+ Score = 119 bits (298),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 43/83 (52%), Positives = 57/83 (69%), Gaps = 1/83 (1%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSALIYYPKEGDDD  60
+           LK SI DYTE EF +++  I N +   +++   L  HF  +TEHPSGS LIYYP+  +D 
+Sbjct  3   LKKSIGDYTETEFKKIIENIINCEGDEKKQDDNL-EHFISVTEHPSGSDLIYYPEGNNDG  61
+
+Query  61  SPSGIVNTVKQWRAANGKSGFKQ  83
+           SP  ++  +K+WRAANGKSGFKQ
+Sbjct  62  SPEAVIKEIKEWRAANGKSGFKQ  84
+
+
+>sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas 
+aeruginosa OX=287 GN=imm1 PE=1 SV=1
+Length=87
+
+ Score = 118 bits (296),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 41/85 (48%), Positives = 57/85 (67%), Gaps = 3/85 (4%)
+
+Query  1   LKHSISDYTEAEFLQLVTTICNADTS---SEEELVKLVTHFEEMTEHPSGSALIYYPKEG  57
+           +K  IS+YTE EFL+ V  I   +     +EE  ++ V  F+++TEHPSGS L+YYP E 
+Sbjct  1   MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLEFKKLTEHPSGSDLLYYPNEN  60
+
+Query  58  DDDSPSGIVNTVKQWRAANGKSGFK  82
+            +DSP+G+V  VK+WRA+ G  GFK
+Sbjct  61  REDSPAGVVKEVKEWRASKGLPGFK  85
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.129    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999386502
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

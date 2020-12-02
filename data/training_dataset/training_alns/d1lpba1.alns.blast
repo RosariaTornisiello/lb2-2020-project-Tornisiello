@@ -1,0 +1,451 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1lpba1
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P02703|COL_PIG Colipase OS=Sus scrofa OX=9823 GN=CLPS PE=1 SV=3    80.5    6e-21
+sp|P42889|COL_MYOCO Colipase OS=Myocastor coypus OX=10157 GN=CLPS...  65.9    2e-15
+sp|P42890|COL_RABIT Colipase OS=Oryctolagus cuniculus OX=9986 GN=...  63.5    2e-14
+sp|Q9CQC2|COL_MOUSE Colipase OS=Mus musculus OX=10090 GN=Clps PE=...  61.6    2e-13
+sp|P17084|COL_RAT Colipase OS=Rattus norvegicus OX=10116 GN=Clps ...  59.3    1e-12
+sp|P04118|COL_HUMAN Colipase OS=Homo sapiens OX=9606 GN=CLPS PE=1...  58.9    1e-12
+sp|A0JNQ7|COL_BOVIN Colipase OS=Bos taurus OX=9913 GN=CLPS PE=3 SV=1  58.5    2e-12
+sp|P02704|COLA_HORSE Colipase A (Fragment) OS=Equus caballus OX=9...  57.4    5e-12
+sp|P02705|COLB_HORSE Colipase B (Fragment) OS=Equus caballus OX=9...  56.6    1e-11
+sp|Q91XL7|COL_ICTTR Colipase OS=Ictidomys tridecemlineatus OX=431...  56.6    1e-11
+sp|P19090|COL_CANLF Colipase OS=Canis lupus familiaris OX=9615 GN...  55.5    4e-11
+sp|A9JSD6|COL_XENTR Colipase OS=Xenopus tropicalis OX=8364 GN=clp...  53.1    3e-10
+sp|P11148|COL_CHICK Colipase (Fragment) OS=Gallus gallus OX=9031 ...  50.8    5e-10
+sp|P11149|COL_SQUAC Colipase (Fragment) OS=Squalus acanthias OX=7...  49.7    1e-09
+
+
+>sp|P02703|COL_PIG Colipase OS=Sus scrofa OX=9823 GN=CLPS PE=1 
+SV=3
+Length=112
+
+ Score = 80.5 bits (197),  Expect = 6e-21, Method: Compositional matrix adjust.
+ Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  39
+           GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR
+Sbjct  23  GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  61
+
+
+>sp|P42889|COL_MYOCO Colipase OS=Myocastor coypus OX=10157 GN=CLPS 
+PE=1 SV=1
+Length=111
+
+ Score = 65.9 bits (159),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 31/39 (79%), Positives = 34/39 (87%), Gaps = 0/39 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  39
+           G+IINLD GELCLNSAQCKS CCQHD+ L L+RCA KAR
+Sbjct  23  GLIINLDNGELCLNSAQCKSQCCQHDSPLGLARCADKAR  61
+
+
+>sp|P42890|COL_RABIT Colipase OS=Oryctolagus cuniculus OX=9986 
+GN=CLPS PE=2 SV=1
+Length=107
+
+ Score = 63.5 bits (153),  Expect = 2e-14, Method: Compositional matrix adjust.
+ Identities = 29/38 (76%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GI+INL+EGELCLNSAQCKS CC H + LSL+RCA KA
+Sbjct  23  GIVINLEEGELCLNSAQCKSGCCHHSSALSLARCAPKA  60
+
+
+>sp|Q9CQC2|COL_MOUSE Colipase OS=Mus musculus OX=10090 GN=Clps 
+PE=1 SV=1
+Length=113
+
+ Score = 61.6 bits (148),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 27/38 (71%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL++GE+CLNS QCKS CCQHDTIL ++RC  KA
+Sbjct  24  GLIINLEDGEICLNSMQCKSRCCQHDTILGIARCTHKA  61
+
+
+>sp|P17084|COL_RAT Colipase OS=Rattus norvegicus OX=10116 GN=Clps 
+PE=2 SV=2
+Length=112
+
+ Score = 59.3 bits (142),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 25/38 (66%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+ INL++GE+C+NS QCKS CCQHDTIL ++RC  KA
+Sbjct  23  GLFINLEDGEICVNSMQCKSRCCQHDTILGIARCTHKA  60
+
+
+>sp|P04118|COL_HUMAN Colipase OS=Homo sapiens OX=9606 GN=CLPS 
+PE=1 SV=2
+Length=112
+
+ Score = 58.9 bits (141),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 27/38 (71%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIIINL+ GELC+NSAQCKSNCCQH + L L+RC   A
+Sbjct  23  GIIINLENGELCMNSAQCKSNCCQHSSALGLARCTSMA  60
+
+
+>sp|A0JNQ7|COL_BOVIN Colipase OS=Bos taurus OX=9913 GN=CLPS PE=3 
+SV=1
+Length=112
+
+ Score = 58.5 bits (140),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 29/38 (76%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIIINLDEGELCLNSAQC S CC  +  LSL+RCA KA
+Sbjct  23  GIIINLDEGELCLNSAQCTSKCCHREDGLSLARCAPKA  60
+
+
+>sp|P02704|COLA_HORSE Colipase A (Fragment) OS=Equus caballus 
+OX=9796 GN=CLPS1 PE=1 SV=2
+Length=106
+
+ Score = 57.4 bits (137),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 26/38 (68%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL+ GE+CLNSAQCKS CC  ++ LSL+RCA KA
+Sbjct  17  GVIINLEAGEICLNSAQCKSECCHQESSLSLARCAAKA  54
+
+
+>sp|P02705|COLB_HORSE Colipase B (Fragment) OS=Equus caballus 
+OX=9796 GN=CLPS2 PE=1 SV=2
+Length=108
+
+ Score = 56.6 bits (135),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 25/38 (66%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL+ GE+C+NSAQCKS CC  ++ LSL+RCA KA
+Sbjct  19  GVIINLEAGEICMNSAQCKSECCHRESSLSLARCAAKA  56
+
+
+>sp|Q91XL7|COL_ICTTR Colipase OS=Ictidomys tridecemlineatus OX=43179 
+GN=CLPS PE=2 SV=1
+Length=111
+
+ Score = 56.6 bits (135),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 24/38 (63%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GI+INL++GE+C+NSAQCKS+CCQH + L ++RC  KA
+Sbjct  22  GILINLEDGEICMNSAQCKSSCCQHFSPLGVARCTRKA  59
+
+
+>sp|P19090|COL_CANLF Colipase OS=Canis lupus familiaris OX=9615 
+GN=CLPS PE=2 SV=1
+Length=112
+
+ Score = 55.5 bits (132),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 27/38 (71%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIII+L++GELCLNS QCKS CC   T LSL+RCA KA
+Sbjct  23  GIIIHLEDGELCLNSVQCKSKCCHRATGLSLARCAPKA  60
+
+
+>sp|A9JSD6|COL_XENTR Colipase OS=Xenopus tropicalis OX=8364 GN=clps 
+PE=3 SV=1
+Length=117
+
+ Score = 53.1 bits (126),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 24/38 (63%), Positives = 30/38 (79%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+I NLD GELCL +AQCKS CC  ++ +SL+RCA KA
+Sbjct  28  GLIFNLDNGELCLQTAQCKSGCCHRNSGVSLARCAPKA  65
+
+
+>sp|P11148|COL_CHICK Colipase (Fragment) OS=Gallus gallus OX=9031 
+GN=CLPS PE=1 SV=2
+Length=34
+
+ Score = 50.8 bits (120),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 24/34 (71%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRC  34
+           G+I NLD GELCL SAQCKS CCQ D+ LSL+ C
+Sbjct  1   GLIFNLDTGELCLQSAQCKSECCQEDSGLSLAXC  34
+
+
+>sp|P11149|COL_SQUAC Colipase (Fragment) OS=Squalus acanthias 
+OX=7797 PE=1 SV=1
+Length=39
+
+ Score = 49.7 bits (117),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 22/35 (63%), Positives = 28/35 (80%), Gaps = 0/35 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCA  35
+           G+ +NL  GELC+ S QCKS+CCQ +T LSL+RCA
+Sbjct  5   GLFLNLSAGELCVGSFQCKSSCCQRETGLSLARCA  39
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.135    0.428    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5082454000
+Results from round 2
+
+
+Query= d1lpba1
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P42889|COL_MYOCO Colipase OS=Myocastor coypus OX=10157 GN=CLPS...  59.6    8e-13
+sp|P02703|COL_PIG Colipase OS=Sus scrofa OX=9823 GN=CLPS PE=1 SV=3    59.2    1e-12
+sp|A9JSD6|COL_XENTR Colipase OS=Xenopus tropicalis OX=8364 GN=clp...  58.4    3e-12
+sp|A0JNQ7|COL_BOVIN Colipase OS=Bos taurus OX=9913 GN=CLPS PE=3 SV=1  56.9    8e-12
+sp|P42890|COL_RABIT Colipase OS=Oryctolagus cuniculus OX=9986 GN=...  56.9    1e-11
+sp|P19090|COL_CANLF Colipase OS=Canis lupus familiaris OX=9615 GN...  55.7    2e-11
+sp|Q9CQC2|COL_MOUSE Colipase OS=Mus musculus OX=10090 GN=Clps PE=...  55.7    3e-11
+sp|P02704|COLA_HORSE Colipase A (Fragment) OS=Equus caballus OX=9...  55.0    5e-11
+sp|P04118|COL_HUMAN Colipase OS=Homo sapiens OX=9606 GN=CLPS PE=1...  55.0    5e-11
+sp|Q91XL7|COL_ICTTR Colipase OS=Ictidomys tridecemlineatus OX=431...  54.6    6e-11
+sp|P17084|COL_RAT Colipase OS=Rattus norvegicus OX=10116 GN=Clps ...  54.6    7e-11
+sp|P02705|COLB_HORSE Colipase B (Fragment) OS=Equus caballus OX=9...  53.8    2e-10
+sp|P11149|COL_SQUAC Colipase (Fragment) OS=Squalus acanthias OX=7...  42.6    8e-07
+sp|P11148|COL_CHICK Colipase (Fragment) OS=Gallus gallus OX=9031 ...  40.7    4e-06
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P42889|COL_MYOCO Colipase OS=Myocastor coypus OX=10157 GN=CLPS 
+PE=1 SV=1
+Length=111
+
+ Score = 59.6 bits (143),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 31/39 (79%), Positives = 34/39 (87%), Gaps = 0/39 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  39
+           G+IINLD GELCLNSAQCKS CCQHD+ L L+RCA KAR
+Sbjct  23  GLIINLDNGELCLNSAQCKSQCCQHDSPLGLARCADKAR  61
+
+
+>sp|P02703|COL_PIG Colipase OS=Sus scrofa OX=9823 GN=CLPS PE=1 
+SV=3
+Length=112
+
+ Score = 59.2 bits (142),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  39
+           GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR
+Sbjct  23  GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKAR  61
+
+
+>sp|A9JSD6|COL_XENTR Colipase OS=Xenopus tropicalis OX=8364 GN=clps 
+PE=3 SV=1
+Length=117
+
+ Score = 58.4 bits (140),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 24/38 (63%), Positives = 30/38 (79%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+I NLD GELCL +AQCKS CC  ++ +SL+RCA KA
+Sbjct  28  GLIFNLDNGELCLQTAQCKSGCCHRNSGVSLARCAPKA  65
+
+
+>sp|A0JNQ7|COL_BOVIN Colipase OS=Bos taurus OX=9913 GN=CLPS PE=3 
+SV=1
+Length=112
+
+ Score = 56.9 bits (136),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 29/38 (76%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIIINLDEGELCLNSAQC S CC  +  LSL+RCA KA
+Sbjct  23  GIIINLDEGELCLNSAQCTSKCCHREDGLSLARCAPKA  60
+
+
+>sp|P42890|COL_RABIT Colipase OS=Oryctolagus cuniculus OX=9986 
+GN=CLPS PE=2 SV=1
+Length=107
+
+ Score = 56.9 bits (136),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 29/38 (76%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GI+INL+EGELCLNSAQCKS CC H + LSL+RCA KA
+Sbjct  23  GIVINLEEGELCLNSAQCKSGCCHHSSALSLARCAPKA  60
+
+
+>sp|P19090|COL_CANLF Colipase OS=Canis lupus familiaris OX=9615 
+GN=CLPS PE=2 SV=1
+Length=112
+
+ Score = 55.7 bits (133),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 27/38 (71%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIII+L++GELCLNS QCKS CC   T LSL+RCA KA
+Sbjct  23  GIIIHLEDGELCLNSVQCKSKCCHRATGLSLARCAPKA  60
+
+
+>sp|Q9CQC2|COL_MOUSE Colipase OS=Mus musculus OX=10090 GN=Clps 
+PE=1 SV=1
+Length=113
+
+ Score = 55.7 bits (133),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 27/38 (71%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL++GE+CLNS QCKS CCQHDTIL ++RC  KA
+Sbjct  24  GLIINLEDGEICLNSMQCKSRCCQHDTILGIARCTHKA  61
+
+
+>sp|P02704|COLA_HORSE Colipase A (Fragment) OS=Equus caballus 
+OX=9796 GN=CLPS1 PE=1 SV=2
+Length=106
+
+ Score = 55.0 bits (131),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 26/38 (68%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL+ GE+CLNSAQCKS CC  ++ LSL+RCA KA
+Sbjct  17  GVIINLEAGEICLNSAQCKSECCHQESSLSLARCAAKA  54
+
+
+>sp|P04118|COL_HUMAN Colipase OS=Homo sapiens OX=9606 GN=CLPS 
+PE=1 SV=2
+Length=112
+
+ Score = 55.0 bits (131),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 27/38 (71%), Positives = 31/38 (82%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GIIINL+ GELC+NSAQCKSNCCQH + L L+RC   A
+Sbjct  23  GIIINLENGELCMNSAQCKSNCCQHSSALGLARCTSMA  60
+
+
+>sp|Q91XL7|COL_ICTTR Colipase OS=Ictidomys tridecemlineatus OX=43179 
+GN=CLPS PE=2 SV=1
+Length=111
+
+ Score = 54.6 bits (130),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 24/38 (63%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           GI+INL++GE+C+NSAQCKS+CCQH + L ++RC  KA
+Sbjct  22  GILINLEDGEICMNSAQCKSSCCQHFSPLGVARCTRKA  59
+
+
+>sp|P17084|COL_RAT Colipase OS=Rattus norvegicus OX=10116 GN=Clps 
+PE=2 SV=2
+Length=112
+
+ Score = 54.6 bits (130),  Expect = 7e-11, Method: Composition-based stats.
+ Identities = 25/38 (66%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+ INL++GE+C+NS QCKS CCQHDTIL ++RC  KA
+Sbjct  23  GLFINLEDGEICVNSMQCKSRCCQHDTILGIARCTHKA  60
+
+
+>sp|P02705|COLB_HORSE Colipase B (Fragment) OS=Equus caballus 
+OX=9796 GN=CLPS2 PE=1 SV=2
+Length=108
+
+ Score = 53.8 bits (128),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 25/38 (66%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCALKA  38
+           G+IINL+ GE+C+NSAQCKS CC  ++ LSL+RCA KA
+Sbjct  19  GVIINLEAGEICMNSAQCKSECCHRESSLSLARCAAKA  56
+
+
+>sp|P11149|COL_SQUAC Colipase (Fragment) OS=Squalus acanthias 
+OX=7797 PE=1 SV=1
+Length=39
+
+ Score = 42.6 bits (99),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 22/35 (63%), Positives = 28/35 (80%), Gaps = 0/35 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRCA  35
+           G+ +NL  GELC+ S QCKS+CCQ +T LSL+RCA
+Sbjct  5   GLFLNLSAGELCVGSFQCKSSCCQRETGLSLARCA  39
+
+
+>sp|P11148|COL_CHICK Colipase (Fragment) OS=Gallus gallus OX=9031 
+GN=CLPS PE=1 SV=2
+Length=34
+
+ Score = 40.7 bits (94),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 24/34 (71%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  1   GIIINLDEGELCLNSAQCKSNCCQHDTILSLSRC  34
+           G+I NLD GELCL SAQCKS CCQ D+ LSL+ C
+Sbjct  1   GLIFNLDTGELCLQSAQCKSECCQEDSGLSLAXC  34
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.143    0.483    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0439    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5082454000
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

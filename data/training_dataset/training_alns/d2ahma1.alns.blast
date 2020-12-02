@@ -1,0 +1,2093 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ahma1
+
+Length=73
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P0C6X7|R1AB_CVHSA Replicase polyprotein 1ab OS=Human SARS coro...  147     8e-42
+sp|P0C6U8|R1A_CVHSA Replicase polyprotein 1a OS=Human SARS corona...  146     1e-41
+sp|P0DTD1|R1AB_SARS2 Replicase polyprotein 1ab OS=Severe acute re...  146     2e-41
+sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus...  145     2e-41
+sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus...  145     2e-41
+sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus...  145     2e-41
+sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus R...  145     5e-41
+sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus H...  145     5e-41
+sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 2...  144     5e-41
+sp|P0DTC1|R1A_SARS2 Replicase polyprotein 1a OS=Severe acute resp...  144     8e-41
+sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East res...  93.2    7e-23
+sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respi...  92.4    2e-22
+sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus...  91.7    2e-22
+sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus H...  91.7    2e-22
+sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus...  91.3    4e-22
+sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus...  90.9    4e-22
+sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus H...  90.9    5e-22
+sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus...  90.9    5e-22
+sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus H...  90.1    1e-21
+sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 1...  89.7    1e-21
+sp|P0C6X6|R1AB_CVHOC Replicase polyprotein 1ab OS=Human coronavir...  74.3    3e-16
+sp|P0C6X4|R1AB_CVHN5 Replicase polyprotein 1ab OS=Human coronavir...  73.9    4e-16
+sp|P0C6U7|R1A_CVHOC Replicase polyprotein 1a OS=Human coronavirus...  73.6    5e-16
+sp|P0C6W9|R1AB_CVBM Replicase polyprotein 1ab OS=Bovine coronavir...  73.6    6e-16
+sp|P0C6W8|R1AB_CVBLU Replicase polyprotein 1ab OS=Bovine coronavi...  73.6    6e-16
+sp|P0C6W7|R1AB_CVBEN Replicase polyprotein 1ab OS=Bovine coronavi...  73.6    6e-16
+sp|P0C6X8|R1AB_CVM2 Replicase polyprotein 1ab OS=Murine coronavir...  73.6    6e-16
+sp|P0C6U5|R1A_CVHN5 Replicase polyprotein 1a OS=Human coronavirus...  73.6    7e-16
+sp|P0C6U0|R1A_CVBM Replicase polyprotein 1a OS=Bovine coronavirus...  72.8    9e-16
+sp|P0C6T8|R1A_CVBEN Replicase polyprotein 1a OS=Bovine coronaviru...  72.8    1e-15
+sp|P0C6T9|R1A_CVBLU Replicase polyprotein 1a OS=Bovine coronaviru...  72.8    1e-15
+sp|P0C6X2|R1AB_CVHN1 Replicase polyprotein 1ab OS=Human coronavir...  72.8    1e-15
+sp|P0C6X9|R1AB_CVMA5 Replicase polyprotein 1ab OS=Murine coronavi...  72.4    2e-15
+sp|P0C6U3|R1A_CVHN1 Replicase polyprotein 1a OS=Human coronavirus...  72.4    2e-15
+sp|P0C6Y0|R1AB_CVMJH Replicase polyprotein 1ab OS=Murine coronavi...  72.0    2e-15
+sp|P0C6U9|R1A_CVM2 Replicase polyprotein 1a OS=Murine coronavirus...  72.0    2e-15
+sp|P0C6X3|R1AB_CVHN2 Replicase polyprotein 1ab OS=Human coronavir...  71.6    3e-15
+sp|P0C6V0|R1A_CVMA5 Replicase polyprotein 1a OS=Murine coronaviru...  71.2    4e-15
+sp|P0C6U4|R1A_CVHN2 Replicase polyprotein 1a OS=Human coronavirus...  71.2    4e-15
+sp|P0C6V1|R1A_CVMJH Replicase polyprotein 1a OS=Murine coronaviru...  70.9    4e-15
+sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmi...  69.3    2e-14
+sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavir...  69.3    2e-14
+sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmiss...  68.9    2e-14
+sp|P0C6U1|R1A_CVBQ Replicase polyprotein 1a OS=Bovine coronavirus...  68.2    5e-14
+sp|P0C6X0|R1AB_CVBQ Replicase polyprotein 1ab OS=Bovine coronavir...  67.8    6e-14
+sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious...  67.4    7e-14
+sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious b...  67.0    1e-13
+sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectiou...  65.1    5e-13
+sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious...  65.1    5e-13
+sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious ...  64.7    8e-13
+sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious b...  64.7    8e-13
+sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavir...  55.8    1e-09
+sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus...  55.5    2e-09
+sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic ...  54.7    2e-09
+sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus...  54.7    3e-09
+sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemi...  54.7    3e-09
+sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 5...  54.3    3e-09
+sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavir...  52.0    3e-08
+sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus...  51.6    3e-08
+
+
+>sp|P0C6X7|R1AB_CVHSA Replicase polyprotein 1ab OS=Human SARS 
+coronavirus OX=694009 GN=rep PE=1 SV=1
+Length=7073
+
+ Score = 147 bits (370),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 73/73 (100%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3837  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3896
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDINRLCE
+Sbjct  3897  SMQGAVDINRLCE  3909
+
+
+>sp|P0C6U8|R1A_CVHSA Replicase polyprotein 1a OS=Human SARS coronavirus 
+OX=694009 GN=1a PE=1 SV=1
+Length=4382
+
+ Score = 146 bits (369),  Expect = 1e-41, Method: Compositional matrix adjust.
+ Identities = 73/73 (100%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3837  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3896
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDINRLCE
+Sbjct  3897  SMQGAVDINRLCE  3909
+
+
+>sp|P0DTD1|R1AB_SARS2 Replicase polyprotein 1ab OS=Severe acute 
+respiratory syndrome coronavirus 2 OX=2697049 GN=rep PE=1 
+SV=1
+Length=7096
+
+ Score = 146 bits (368),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3860  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3919
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3920  SMQGAVDINKLCE  3932
+
+
+>sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=rep PE=3 SV=1
+Length=7071
+
+ Score = 145 bits (367),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3835  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3894
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3895  SMQGAVDINKLCE  3907
+
+
+>sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU3 OX=442736 GN=rep PE=3 SV=1
+Length=7067
+
+ Score = 145 bits (367),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3831  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3890
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3891  SMQGAVDINKLCE  3903
+
+
+>sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus 
+279/2005 OX=389167 GN=rep PE=3 SV=1
+Length=7079
+
+ Score = 145 bits (367),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3843  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3902
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3903  SMQGAVDINKLCE  3915
+
+
+>sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=1a PE=3 SV=1
+Length=4380
+
+ Score = 145 bits (365),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3835  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3894
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3895  SMQGAVDINKLCE  3907
+
+
+>sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU3 OX=442736 GN=1a PE=3 SV=1
+Length=4376
+
+ Score = 145 bits (365),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3831  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3890
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3891  SMQGAVDINKLCE  3903
+
+
+>sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 
+279/2005 OX=389167 GN=1a PE=3 SV=1
+Length=4388
+
+ Score = 144 bits (364),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3843  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3902
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3903  SMQGAVDINKLCE  3915
+
+
+>sp|P0DTC1|R1A_SARS2 Replicase polyprotein 1a OS=Severe acute 
+respiratory syndrome coronavirus 2 OX=2697049 PE=1 SV=1
+Length=4405
+
+ Score = 144 bits (363),  Expect = 8e-41, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3860  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3919
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3920  SMQGAVDINKLCE  3932
+
+
+>sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East 
+respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=rep PE=1 SV=1
+Length=7078
+
+ Score = 93.2 bits (230),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++S+ WA CV+ HNDIL A D +EAFEK VSL + L+
+Sbjct  3846  SKLTDLKCTSVVLLSVLQQLHLEANSRAWAFCVKCHNDILAATDPSEAFEKFVSLFATLM  3905
+
+Query  61    SMQGAVDINRL  71
+             +  G VD++ L
+Sbjct  3906  TFSGNVDLDAL  3916
+
+
+>sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=1a PE=1 SV=1
+Length=4391
+
+ Score = 92.4 bits (228),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++S+ WA CV+ HNDIL A D +EAFEK VSL + L+
+Sbjct  3846  SKLTDLKCTSVVLLSVLQQLHLEANSRAWAFCVKCHNDILAATDPSEAFEKFVSLFATLM  3905
+
+Query  61    SMQGAVDINRL  71
+             +  G VD++ L
+Sbjct  3906  TFSGNVDLDAL  3916
+
+
+>sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU5 OX=694008 GN=rep PE=3 SV=1
+Length=7182
+
+ Score = 91.7 bits (226),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 54/71 (76%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++SK WA CV+LHNDIL A D TEAF+  V L + L+
+Sbjct  3937  SKLTDLKCTSVVLLSVLQQLHLEANSKAWAHCVKLHNDILAATDPTEAFDNFVCLFATLM  3996
+
+Query  61    SMQGAVDINRL  71
+             S    VD+  L
+Sbjct  3997  SFSANVDLEAL  4007
+
+
+>sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU5 OX=694008 GN=1a PE=3 SV=1
+Length=4481
+
+ Score = 91.7 bits (226),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 43/71 (61%), Positives = 54/71 (76%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++SK WA CV+LHNDIL A D TEAF+  V L + L+
+Sbjct  3937  SKLTDLKCTSVVLLSVLQQLHLEANSKAWAHCVKLHNDILAATDPTEAFDNFVCLFATLM  3996
+
+Query  61    SMQGAVDINRL  71
+             S    VD+  L
+Sbjct  3997  SFSANVDLEAL  4007
+
+
+>sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU9 OX=694006 GN=rep PE=1 SV=1
+Length=6930
+
+ Score = 91.3 bits (225),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 52/72 (72%), Positives = 62/72 (86%), Gaps = 0/72 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S M+D+KCTSVVLLSVLQQLRVESSSKLWA CV+LHN+IL +   TEAFE  VSLLSVLL
+Sbjct  3700  SNMTDLKCTSVVLLSVLQQLRVESSSKLWALCVKLHNEILASNSPTEAFEAFVSLLSVLL  3759
+
+Query  61    SMQGAVDINRLC  72
+             S+ GA++++ LC
+Sbjct  3760  SLPGAINLDELC  3771
+
+
+>sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU4 OX=694007 GN=rep PE=1 SV=1
+Length=7119
+
+ Score = 90.9 bits (224),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3890  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3949
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3950  SFSANVDLDAL  3960
+
+
+>sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU9 OX=694006 GN=1a PE=3 SV=1
+Length=4248
+
+ Score = 90.9 bits (224),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 52/72 (72%), Positives = 62/72 (86%), Gaps = 0/72 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S M+D+KCTSVVLLSVLQQLRVESSSKLWA CV+LHN+IL +   TEAFE  VSLLSVLL
+Sbjct  3700  SNMTDLKCTSVVLLSVLQQLRVESSSKLWALCVKLHNEILASNSPTEAFEAFVSLLSVLL  3759
+
+Query  61    SMQGAVDINRLC  72
+             S+ GA++++ LC
+Sbjct  3760  SLPGAINLDELC  3771
+
+
+>sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus 
+133/2005 OX=389230 GN=rep PE=3 SV=1
+Length=7126
+
+ Score = 90.9 bits (224),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3897  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3956
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3957  SFSANVDLDAL  3967
+
+
+>sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU4 OX=694007 GN=1a PE=1 SV=1
+Length=4434
+
+ Score = 90.1 bits (222),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3890  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3949
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3950  SFSANVDLDAL  3960
+
+
+>sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 
+133/2005 OX=389230 GN=1a PE=3 SV=1
+Length=4441
+
+ Score = 89.7 bits (221),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3897  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3956
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3957  SFSANVDLDAL  3967
+
+
+>sp|P0C6X6|R1AB_CVHOC Replicase polyprotein 1ab OS=Human coronavirus 
+OC43 OX=31631 GN=rep PE=3 SV=1
+Length=7095
+
+ Score = 74.3 bits (181),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWHYCSTLHNEILATSDLSVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6X4|R1AB_CVHN5 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N5) OX=443241 GN=rep PE=3 SV=1
+Length=7132
+
+ Score = 73.9 bits (180),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3875  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3934
+
+Query  61    SMQGAVD  67
+             S   AVD
+Sbjct  3935  SNPAAVD  3941
+
+
+>sp|P0C6U7|R1A_CVHOC Replicase polyprotein 1a OS=Human coronavirus 
+OC43 OX=31631 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 73.6 bits (179),  Expect = 5e-16, Method: Compositional matrix adjust.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWHYCSTLHNEILATSDLSVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6W9|R1AB_CVBM Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain Mebus) OX=11132 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 73.6 bits (179),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6W8|R1AB_CVBLU Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain 98TXSF-110-LUN) OX=233264 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 73.6 bits (179),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6W7|R1AB_CVBEN Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain 98TXSF-110-ENT) OX=233262 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 73.6 bits (179),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6X8|R1AB_CVM2 Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain 2) OX=76344 GN=rep PE=3 SV=1
+Length=7124
+
+ Score = 73.6 bits (179),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + SSSKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3870  SRLTDVKCVNVVLLNCLQHLHIASSSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3929
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3930  ANPAAVD  3936
+
+
+>sp|P0C6U5|R1A_CVHN5 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N5) OX=443241 GN=1a PE=3 SV=1
+Length=4421
+
+ Score = 73.6 bits (179),  Expect = 7e-16, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3875  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3934
+
+Query  61    SMQGAVD  67
+             S   AVD
+Sbjct  3935  SNPAAVD  3941
+
+
+>sp|P0C6U0|R1A_CVBM Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain Mebus) OX=11132 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 72.8 bits (177),  Expect = 9e-16, Method: Compositional matrix adjust.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6T8|R1A_CVBEN Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain 98TXSF-110-ENT) OX=233262 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 72.8 bits (177),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6T9|R1A_CVBLU Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain 98TXSF-110-LUN) OX=233264 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 72.8 bits (177),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 37/67 (55%), Positives = 45/67 (67%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6X2|R1AB_CVHN1 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N1) OX=443239 GN=rep PE=3 SV=1
+Length=7182
+
+ Score = 72.8 bits (177),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3925  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3984
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3985  ANPAAVD  3991
+
+
+>sp|P0C6X9|R1AB_CVMA5 Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain A59) OX=11142 GN=rep PE=1 SV=1
+Length=7176
+
+ Score = 72.4 bits (176),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3922  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSMAFDKLAQLLVVLF  3981
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3982  ANPAAVD  3988
+
+
+>sp|P0C6U3|R1A_CVHN1 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N1) OX=443239 GN=1a PE=1 SV=1
+Length=4471
+
+ Score = 72.4 bits (176),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3925  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3984
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3985  ANPAAVD  3991
+
+
+>sp|P0C6Y0|R1AB_CVMJH Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain JHM) OX=11144 GN=rep PE=1 SV=1
+Length=7180
+
+ Score = 72.0 bits (175),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3928  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3987
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3988  ANPAAVD  3994
+
+
+>sp|P0C6U9|R1A_CVM2 Replicase polyprotein 1a OS=Murine coronavirus 
+(strain 2) OX=76344 GN=1a PE=3 SV=1
+Length=4416
+
+ Score = 72.0 bits (175),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + SSSKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3870  SRLTDVKCVNVVLLNCLQHLHIASSSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3929
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3930  ANPAAVD  3936
+
+
+>sp|P0C6X3|R1AB_CVHN2 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N2) OX=443240 GN=rep PE=3 SV=1
+Length=7152
+
+ Score = 71.6 bits (174),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+S+LW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3895  SKLTDVKCANVVLLNCLQHLHVASNSRLWQYCSILHNEILSTSDLSVAFDKLAQLLIVLF  3954
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3955  ANPAAVD  3961
+
+
+>sp|P0C6V0|R1A_CVMA5 Replicase polyprotein 1a OS=Murine coronavirus 
+(strain A59) OX=11142 GN=1a PE=1 SV=1
+Length=4468
+
+ Score = 71.2 bits (173),  Expect = 4e-15, Method: Compositional matrix adjust.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3922  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSMAFDKLAQLLVVLF  3981
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3982  ANPAAVD  3988
+
+
+>sp|P0C6U4|R1A_CVHN2 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N2) OX=443240 GN=1a PE=3 SV=1
+Length=4441
+
+ Score = 71.2 bits (173),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+S+LW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3895  SKLTDVKCANVVLLNCLQHLHVASNSRLWQYCSILHNEILSTSDLSVAFDKLAQLLIVLF  3954
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3955  ANPAAVD  3961
+
+
+>sp|P0C6V1|R1A_CVMJH Replicase polyprotein 1a OS=Murine coronavirus 
+(strain JHM) OX=11144 GN=1a PE=1 SV=1
+Length=4474
+
+ Score = 70.9 bits (172),  Expect = 4e-15, Method: Compositional matrix adjust.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3928  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3987
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3988  ANPAAVD  3994
+
+
+>sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=rep PE=1 SV=1
+Length=6684
+
+ Score = 69.3 bits (168),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3475  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPEIVLEKLLALIAFFL  3534
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3535  SKHNTCDLSELIE  3547
+
+
+>sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavirus 
+(strain FIPV WSU-79/1146) OX=33734 GN=rep PE=1 SV=2
+Length=6709
+
+ Score = 69.3 bits (168),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3500  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPDAVLEKLLALIAFFL  3559
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3560  SKHNTCDLSDLIE  3572
+
+
+>sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=1a PE=1 SV=1
+Length=4017
+
+ Score = 68.9 bits (167),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3475  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPEIVLEKLLALIAFFL  3534
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3535  SKHNTCDLSELIE  3547
+
+
+>sp|P0C6U1|R1A_CVBQ Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain Quebec) OX=11133 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 68.2 bits (165),  Expect = 5e-14, Method: Compositional matrix adjust.
+ Identities = 35/67 (52%), Positives = 43/67 (64%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +  LL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANGGLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6X0|R1AB_CVBQ Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain Quebec) OX=11133 GN=rep PE=3 SV=1
+Length=7059
+
+ Score = 67.8 bits (164),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 43/67 (64%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +  LL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANGGLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3897  ANPAAVD  3903
+
+
+>sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=rep PE=1 SV=1
+Length=6631
+
+ Score = 67.4 bits (163),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK+SDVKCT+VVL+ +L +L VE++SK+ A  V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3382  SKLSDVKCTTVVLMQLLTKLNVEANSKMHAYLVELHNKILASDDVGECMDNLLGMLITLF  3441
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D+   C+
+Sbjct  3442  CIDSTIDLGEYCD  3454
+
+
+>sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=1a PE=1 SV=1
+Length=3953
+
+ Score = 67.0 bits (162),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK+SDVKCT+VVL+ +L +L VE++SK+ A  V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3382  SKLSDVKCTTVVLMQLLTKLNVEANSKMHAYLVELHNKILASDDVGECMDNLLGMLITLF  3441
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D+   C+
+Sbjct  3442  CIDSTIDLGEYCD  3454
+
+
+>sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=rep 
+PE=3 SV=1
+Length=6629
+
+ Score = 65.1 bits (157),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=rep PE=1 
+SV=1
+Length=6629
+
+ Score = 65.1 bits (157),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=1a PE=3 
+SV=1
+Length=3951
+
+ Score = 64.7 bits (156),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=1a PE=1 SV=1
+Length=3951
+
+ Score = 64.7 bits (156),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavirus 
+229E OX=11137 GN=rep PE=1 SV=1
+Length=6758
+
+ Score = 55.8 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 24/50 (48%), Positives = 35/50 (70%), Gaps = 0/50 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFE  50
+             SK++D+KCT+VVL+ +L  + + S+SK WA CV++HN I L  D   A E
+Sbjct  3547  SKLTDLKCTNVVLMGILSNMNIASNSKEWAYCVEMHNKINLCDDPETAQE  3596
+
+
+>sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus 
+229E OX=11137 GN=1a PE=1 SV=1
+Length=4085
+
+ Score = 55.5 bits (132),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 24/50 (48%), Positives = 35/50 (70%), Gaps = 0/50 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFE  50
+             SK++D+KCT+VVL+ +L  + + S+SK WA CV++HN I L  D   A E
+Sbjct  3547  SKLTDLKCTNVVLMGILSNMNIASNSKEWAYCVEMHNKINLCDDPETAQE  3596
+
+
+>sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=1a PE=1 SV=1
+Length=4117
+
+ Score = 54.7 bits (130),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 31/73 (42%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KC++VVLL  L  + V ++S  WA CV LHN I L  D  +A E +++LL+  L
+Sbjct  3580  SKLTDIKCSNVVLLGCLSSMNVSANSTEWAYCVDLHNKINLCNDPEKAQEMLLALLAFFL  3639
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L E
+Sbjct  3640  SKNSAFGLDDLLE  3652
+
+
+>sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus 
+512/2005 OX=693999 GN=rep PE=3 SV=1
+Length=6793
+
+ Score = 54.7 bits (130),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S+ WA CV LHN I L  D   A E +++LL+  L
+Sbjct  3591  SKLTDLKCTNVVLLGCLSNMNIAANSREWAYCVDLHNKINLCNDAEAAQEMLLALLAFFL  3650
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L +
+Sbjct  3651  SKNSAFGVDELLD  3663
+
+
+>sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=rep PE=1 SV=1
+Length=6781
+
+ Score = 54.7 bits (130),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 31/73 (42%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KC++VVLL  L  + V ++S  WA CV LHN I L  D  +A E +++LL+  L
+Sbjct  3580  SKLTDIKCSNVVLLGCLSSMNVSANSTEWAYCVDLHNKINLCNDPEKAQEMLLALLAFFL  3639
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L E
+Sbjct  3640  SKNSAFGLDDLLE  3652
+
+
+>sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 
+512/2005 OX=693999 GN=1a PE=3 SV=1
+Length=4128
+
+ Score = 54.3 bits (129),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S+ WA CV LHN I L  D   A E +++LL+  L
+Sbjct  3591  SKLTDLKCTNVVLLGCLSNMNIAANSREWAYCVDLHNKINLCNDAEAAQEMLLALLAFFL  3650
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L +
+Sbjct  3651  SKNSAFGVDELLD  3663
+
+
+>sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavirus 
+NL63 OX=277944 GN=rep PE=1 SV=1
+Length=6729
+
+ Score = 52.0 bits (123),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 32/48 (67%), Gaps = 0/48 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEA  48
+             SK++D+KCT+VVLL  L  + + ++S  WA CV LHN I L  D  +A
+Sbjct  3522  SKLTDLKCTNVVLLGCLSSMNIAANSSEWAYCVDLHNKINLCDDPEKA  3569
+
+
+>sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus 
+NL63 OX=277944 GN=1a PE=1 SV=1
+Length=4060
+
+ Score = 51.6 bits (122),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 32/48 (67%), Gaps = 0/48 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEA  48
+             SK++D+KCT+VVLL  L  + + ++S  WA CV LHN I L  D  +A
+Sbjct  3522  SKLTDLKCTNVVLLGCLSSMNIAANSSEWAYCVDLHNKINLCDDPEKA  3569
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.128    0.349    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4968890528
+Results from round 2
+
+
+Query= d2ahma1
+
+Length=73
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmi...  112     2e-29
+sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus...  111     2e-29
+sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmiss...  111     3e-29
+sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus...  111     3e-29
+sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus H...  111     4e-29
+sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus...  110     4e-29
+sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 1...  110     4e-29
+sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East res...  110     7e-29
+sp|P0DTD1|R1AB_SARS2 Replicase polyprotein 1ab OS=Severe acute re...  110     7e-29
+sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus H...  110     7e-29
+sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus...  110     7e-29
+sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus...  110     8e-29
+sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus...  110     8e-29
+sp|P0C6X7|R1AB_CVHSA Replicase polyprotein 1ab OS=Human SARS coro...  110     9e-29
+sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respi...  109     1e-28
+sp|P0DTC1|R1A_SARS2 Replicase polyprotein 1a OS=Severe acute resp...  109     1e-28
+sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus R...  109     1e-28
+sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 2...  109     1e-28
+sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus H...  109     2e-28
+sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavir...  109     2e-28
+sp|P0C6U8|R1A_CVHSA Replicase polyprotein 1a OS=Human SARS corona...  109     2e-28
+sp|P0C6X6|R1AB_CVHOC Replicase polyprotein 1ab OS=Human coronavir...  105     5e-27
+sp|P0C6W9|R1AB_CVBM Replicase polyprotein 1ab OS=Bovine coronavir...  104     6e-27
+sp|P0C6W8|R1AB_CVBLU Replicase polyprotein 1ab OS=Bovine coronavi...  104     7e-27
+sp|P0C6W7|R1AB_CVBEN Replicase polyprotein 1ab OS=Bovine coronavi...  104     7e-27
+sp|P0C6U7|R1A_CVHOC Replicase polyprotein 1a OS=Human coronavirus...  104     8e-27
+sp|P0C6U0|R1A_CVBM Replicase polyprotein 1a OS=Bovine coronavirus...  103     1e-26
+sp|P0C6T9|R1A_CVBLU Replicase polyprotein 1a OS=Bovine coronaviru...  103     1e-26
+sp|P0C6T8|R1A_CVBEN Replicase polyprotein 1a OS=Bovine coronaviru...  103     1e-26
+sp|P0C6Y0|R1AB_CVMJH Replicase polyprotein 1ab OS=Murine coronavi...  103     3e-26
+sp|P0C6X4|R1AB_CVHN5 Replicase polyprotein 1ab OS=Human coronavir...  102     4e-26
+sp|P0C6V1|R1A_CVMJH Replicase polyprotein 1a OS=Murine coronaviru...  102     4e-26
+sp|P0C6U5|R1A_CVHN5 Replicase polyprotein 1a OS=Human coronavirus...  102     5e-26
+sp|P0C6X9|R1AB_CVMA5 Replicase polyprotein 1ab OS=Murine coronavi...  101     5e-26
+sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious...  101     6e-26
+sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious b...  101     7e-26
+sp|P0C6X2|R1AB_CVHN1 Replicase polyprotein 1ab OS=Human coronavir...  101     7e-26
+sp|P0C6V0|R1A_CVMA5 Replicase polyprotein 1a OS=Murine coronaviru...  101     9e-26
+sp|P0C6U3|R1A_CVHN1 Replicase polyprotein 1a OS=Human coronavirus...  101     9e-26
+sp|P0C6X8|R1AB_CVM2 Replicase polyprotein 1ab OS=Murine coronavir...  101     1e-25
+sp|P0C6X3|R1AB_CVHN2 Replicase polyprotein 1ab OS=Human coronavir...  100     1e-25
+sp|P0C6U9|R1A_CVM2 Replicase polyprotein 1a OS=Murine coronavirus...  100     2e-25
+sp|P0C6U4|R1A_CVHN2 Replicase polyprotein 1a OS=Human coronavirus...  100     2e-25
+sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic ...  100     3e-25
+sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemi...  99.3    5e-25
+sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 5...  98.9    7e-25
+sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus...  98.9    7e-25
+sp|P0C6X0|R1AB_CVBQ Replicase polyprotein 1ab OS=Bovine coronavir...  98.5    9e-25
+sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectiou...  98.5    9e-25
+sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious...  98.5    9e-25
+sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious ...  98.5    1e-24
+sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious b...  98.5    1e-24
+sp|P0C6U1|R1A_CVBQ Replicase polyprotein 1a OS=Bovine coronavirus...  98.1    1e-24
+sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus H...  96.6    4e-24
+sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus...  96.2    5e-24
+sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavir...  96.2    7e-24
+sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus...  95.8    9e-24
+sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavir...  95.8    9e-24
+sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus...  95.4    1e-23
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P0C6Y5|R1AB_CVPPU Replicase polyprotein 1ab OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=rep PE=1 SV=1
+Length=6684
+
+ Score = 112 bits (279),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3475  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPEIVLEKLLALIAFFL  3534
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3535  SKHNTCDLSELIE  3547
+
+
+>sp|P0C6W3|R1AB_BCHK4 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU4 OX=694007 GN=rep PE=1 SV=1
+Length=7119
+
+ Score = 111 bits (278),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3890  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3949
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3950  SFSANVDLDAL  3960
+
+
+>sp|P0C6V2|R1A_CVPPU Replicase polyprotein 1a OS=Porcine transmissible 
+gastroenteritis coronavirus (strain Purdue) OX=11151 
+GN=1a PE=1 SV=1
+Length=4017
+
+ Score = 111 bits (278),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3475  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPEIVLEKLLALIAFFL  3534
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3535  SKHNTCDLSELIE  3547
+
+
+>sp|P0C6W1|R1AB_BC133 Replicase polyprotein 1ab OS=Bat coronavirus 
+133/2005 OX=389230 GN=rep PE=3 SV=1
+Length=7126
+
+ Score = 111 bits (278),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3897  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3956
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3957  SFSANVDLDAL  3967
+
+
+>sp|P0C6T4|R1A_BCHK4 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU4 OX=694007 GN=1a PE=1 SV=1
+Length=4434
+
+ Score = 111 bits (277),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3890  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3949
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3950  SFSANVDLDAL  3960
+
+
+>sp|P0C6W4|R1AB_BCHK5 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU5 OX=694008 GN=rep PE=3 SV=1
+Length=7182
+
+ Score = 110 bits (276),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 54/71 (76%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++SK WA CV+LHNDIL A D TEAF+  V L + L+
+Sbjct  3937  SKLTDLKCTSVVLLSVLQQLHLEANSKAWAHCVKLHNDILAATDPTEAFDNFVCLFATLM  3996
+
+Query  61    SMQGAVDINRL  71
+             S    VD+  L
+Sbjct  3997  SFSANVDLEAL  4007
+
+
+>sp|P0C6F7|R1A_BC133 Replicase polyprotein 1a OS=Bat coronavirus 
+133/2005 OX=389230 GN=1a PE=3 SV=1
+Length=4441
+
+ Score = 110 bits (276),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 42/71 (59%), Positives = 56/71 (79%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLL+VLQQL +ES+SK W+ CV+LHN+IL A D TEAFE+ V L + L+
+Sbjct  3897  SKLTDLKCTSVVLLTVLQQLHLESNSKAWSYCVKLHNEILAAVDPTEAFERFVCLFATLM  3956
+
+Query  61    SMQGAVDINRL  71
+             S    VD++ L
+Sbjct  3957  SFSANVDLDAL  3967
+
+
+>sp|K9N7C7|R1AB_MERS1 Replicase polyprotein 1ab OS=Middle East 
+respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=rep PE=1 SV=1
+Length=7078
+
+ Score = 110 bits (275),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++S+ WA CV+ HNDIL A D +EAFEK VSL + L+
+Sbjct  3846  SKLTDLKCTSVVLLSVLQQLHLEANSRAWAFCVKCHNDILAATDPSEAFEKFVSLFATLM  3905
+
+Query  61    SMQGAVDINRL  71
+             +  G VD++ L
+Sbjct  3906  TFSGNVDLDAL  3916
+
+
+>sp|P0DTD1|R1AB_SARS2 Replicase polyprotein 1ab OS=Severe acute 
+respiratory syndrome coronavirus 2 OX=2697049 GN=rep PE=1 
+SV=1
+Length=7096
+
+ Score = 110 bits (275),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3860  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3919
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3920  SMQGAVDINKLCE  3932
+
+
+>sp|P0C6T5|R1A_BCHK5 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU5 OX=694008 GN=1a PE=3 SV=1
+Length=4481
+
+ Score = 110 bits (274),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 54/71 (76%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++SK WA CV+LHNDIL A D TEAF+  V L + L+
+Sbjct  3937  SKLTDLKCTSVVLLSVLQQLHLEANSKAWAHCVKLHNDILAATDPTEAFDNFVCLFATLM  3996
+
+Query  61    SMQGAVDINRL  71
+             S    VD+  L
+Sbjct  3997  SFSANVDLEAL  4007
+
+
+>sp|P0C6W6|R1AB_BCRP3 Replicase polyprotein 1ab OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=rep PE=3 SV=1
+Length=7071
+
+ Score = 110 bits (274),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3835  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3894
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3895  SMQGAVDINKLCE  3907
+
+
+>sp|P0C6V9|R1AB_BC279 Replicase polyprotein 1ab OS=Bat coronavirus 
+279/2005 OX=389167 GN=rep PE=3 SV=1
+Length=7079
+
+ Score = 110 bits (274),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3843  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3902
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3903  SMQGAVDINKLCE  3915
+
+
+>sp|P0C6W2|R1AB_BCHK3 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU3 OX=442736 GN=rep PE=3 SV=1
+Length=7067
+
+ Score = 110 bits (274),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3831  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3890
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3891  SMQGAVDINKLCE  3903
+
+
+>sp|P0C6X7|R1AB_CVHSA Replicase polyprotein 1ab OS=Human SARS 
+coronavirus OX=694009 GN=rep PE=1 SV=1
+Length=7073
+
+ Score = 110 bits (274),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 73/73 (100%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3837  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3896
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDINRLCE
+Sbjct  3897  SMQGAVDINRLCE  3909
+
+
+>sp|K9N638|R1A_MERS1 Replicase polyprotein 1a OS=Middle East respiratory 
+syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) 
+OX=1263720 GN=1a PE=1 SV=1
+Length=4391
+
+ Score = 109 bits (273),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 43/71 (61%), Positives = 57/71 (80%), Gaps = 0/71 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCTSVVLLSVLQQL +E++S+ WA CV+ HNDIL A D +EAFEK VSL + L+
+Sbjct  3846  SKLTDLKCTSVVLLSVLQQLHLEANSRAWAFCVKCHNDILAATDPSEAFEKFVSLFATLM  3905
+
+Query  61    SMQGAVDINRL  71
+             +  G VD++ L
+Sbjct  3906  TFSGNVDLDAL  3916
+
+
+>sp|P0DTC1|R1A_SARS2 Replicase polyprotein 1a OS=Severe acute 
+respiratory syndrome coronavirus 2 OX=2697049 PE=1 SV=1
+Length=4405
+
+ Score = 109 bits (273),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3860  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3919
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3920  SMQGAVDINKLCE  3932
+
+
+>sp|P0C6T7|R1A_BCRP3 Replicase polyprotein 1a OS=Bat coronavirus 
+Rp3/2004 OX=349344 GN=1a PE=3 SV=1
+Length=4380
+
+ Score = 109 bits (273),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3835  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3894
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3895  SMQGAVDINKLCE  3907
+
+
+>sp|P0C6F5|R1A_BC279 Replicase polyprotein 1a OS=Bat coronavirus 
+279/2005 OX=389167 GN=1a PE=3 SV=1
+Length=4388
+
+ Score = 109 bits (272),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3843  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3902
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3903  SMQGAVDINKLCE  3915
+
+
+>sp|P0C6F8|R1A_BCHK3 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU3 OX=442736 GN=1a PE=3 SV=1
+Length=4376
+
+ Score = 109 bits (272),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 72/73 (99%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3831  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3890
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDIN+LCE
+Sbjct  3891  SMQGAVDINKLCE  3903
+
+
+>sp|Q98VG9|R1AB_FIPV Replicase polyprotein 1ab OS=Feline coronavirus 
+(strain FIPV WSU-79/1146) OX=33734 GN=rep PE=1 SV=2
+Length=6709
+
+ Score = 109 bits (272),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 32/73 (44%), Positives = 49/73 (67%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++++KCT+VVLL +L ++ VES+SK W  CV LHN+I L  D     EK+++L++  L
+Sbjct  3500  SKLTEMKCTNVVLLGLLSKMHVESNSKEWNYCVGLHNEINLCDDPDAVLEKLLALIAFFL  3559
+
+Query  61    SMQGAVDINRLCE  73
+             S     D++ L E
+Sbjct  3560  SKHNTCDLSDLIE  3572
+
+
+>sp|P0C6U8|R1A_CVHSA Replicase polyprotein 1a OS=Human SARS coronavirus 
+OX=694009 GN=1a PE=1 SV=1
+Length=4382
+
+ Score = 109 bits (272),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 73/73 (100%), Positives = 73/73 (100%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL
+Sbjct  3837  SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  3896
+
+Query  61    SMQGAVDINRLCE  73
+             SMQGAVDINRLCE
+Sbjct  3897  SMQGAVDINRLCE  3909
+
+
+>sp|P0C6X6|R1AB_CVHOC Replicase polyprotein 1ab OS=Human coronavirus 
+OC43 OX=31631 GN=rep PE=3 SV=1
+Length=7095
+
+ Score = 105 bits (261),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 50/79 (63%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWHYCSTLHNEILATSDLSVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6W9|R1AB_CVBM Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain Mebus) OX=11132 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 104 bits (260),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6W8|R1AB_CVBLU Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain 98TXSF-110-LUN) OX=233264 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 104 bits (260),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6W7|R1AB_CVBEN Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain 98TXSF-110-ENT) OX=233262 GN=rep PE=3 SV=1
+Length=7094
+
+ Score = 104 bits (260),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6U7|R1A_CVHOC Replicase polyprotein 1a OS=Human coronavirus 
+OC43 OX=31631 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 104 bits (259),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 50/79 (63%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWHYCSTLHNEILATSDLSVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6U0|R1A_CVBM Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain Mebus) OX=11132 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 103 bits (258),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6T9|R1A_CVBLU Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain 98TXSF-110-LUN) OX=233264 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 103 bits (258),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6T8|R1A_CVBEN Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain 98TXSF-110-ENT) OX=233262 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 103 bits (258),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 39/79 (49%), Positives = 49/79 (62%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6Y0|R1AB_CVMJH Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain JHM) OX=11144 GN=rep PE=1 SV=1
+Length=7180
+
+ Score = 103 bits (256),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3928  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3987
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3988  ANPAAVD  3994
+
+
+>sp|P0C6X4|R1AB_CVHN5 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N5) OX=443241 GN=rep PE=3 SV=1
+Length=7132
+
+ Score = 102 bits (255),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3875  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3934
+
+Query  61    SMQGAVD  67
+             S   AVD
+Sbjct  3935  SNPAAVD  3941
+
+
+>sp|P0C6V1|R1A_CVMJH Replicase polyprotein 1a OS=Murine coronavirus 
+(strain JHM) OX=11144 GN=1a PE=1 SV=1
+Length=4474
+
+ Score = 102 bits (254),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3928  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3987
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3988  ANPAAVD  3994
+
+
+>sp|P0C6U5|R1A_CVHN5 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N5) OX=443241 GN=1a PE=3 SV=1
+Length=4421
+
+ Score = 102 bits (254),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 37/67 (55%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3875  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3934
+
+Query  61    SMQGAVD  67
+             S   AVD
+Sbjct  3935  SNPAAVD  3941
+
+
+>sp|P0C6X9|R1AB_CVMA5 Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain A59) OX=11142 GN=rep PE=1 SV=1
+Length=7176
+
+ Score = 101 bits (253),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3922  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSMAFDKLAQLLVVLF  3981
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3982  ANPAAVD  3988
+
+
+>sp|P0C6Y3|R1AB_IBVM Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=rep PE=1 SV=1
+Length=6631
+
+ Score = 101 bits (253),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK+SDVKCT+VVL+ +L +L VE++SK+ A  V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3382  SKLSDVKCTTVVLMQLLTKLNVEANSKMHAYLVELHNKILASDDVGECMDNLLGMLITLF  3441
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D+   C+
+Sbjct  3442  CIDSTIDLGEYCD  3454
+
+
+>sp|P0C6V5|R1A_IBVM Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain M41) OX=11127 GN=1a PE=1 SV=1
+Length=3953
+
+ Score = 101 bits (253),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK+SDVKCT+VVL+ +L +L VE++SK+ A  V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3382  SKLSDVKCTTVVLMQLLTKLNVEANSKMHAYLVELHNKILASDDVGECMDNLLGMLITLF  3441
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D+   C+
+Sbjct  3442  CIDSTIDLGEYCD  3454
+
+
+>sp|P0C6X2|R1AB_CVHN1 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N1) OX=443239 GN=rep PE=3 SV=1
+Length=7182
+
+ Score = 101 bits (253),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3925  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3984
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3985  ANPAAVD  3991
+
+
+>sp|P0C6V0|R1A_CVMA5 Replicase polyprotein 1a OS=Murine coronavirus 
+(strain A59) OX=11142 GN=1a PE=1 SV=1
+Length=4468
+
+ Score = 101 bits (252),  Expect = 9e-26, Method: Composition-based stats.
+ Identities = 34/67 (51%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3922  SRLTDVKCANVVLLNCLQHLHIASNSKLWQYCSTLHNEILATSDLSMAFDKLAQLLVVLF  3981
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3982  ANPAAVD  3988
+
+
+>sp|P0C6U3|R1A_CVHN1 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N1) OX=443239 GN=1a PE=1 SV=1
+Length=4471
+
+ Score = 101 bits (252),  Expect = 9e-26, Method: Composition-based stats.
+ Identities = 36/67 (54%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+SKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3925  SKLTDVKCANVVLLNCLQHLHVASNSKLWQYCSVLHNEILSTSDLSVAFDKLAQLLIVLF  3984
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3985  ANPAAVD  3991
+
+
+>sp|P0C6X8|R1AB_CVM2 Replicase polyprotein 1ab OS=Murine coronavirus 
+(strain 2) OX=76344 GN=rep PE=3 SV=1
+Length=7124
+
+ Score = 101 bits (251),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + SSSKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3870  SRLTDVKCVNVVLLNCLQHLHIASSSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3929
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3930  ANPAAVD  3936
+
+
+>sp|P0C6X3|R1AB_CVHN2 Replicase polyprotein 1ab OS=Human coronavirus 
+HKU1 (isolate N2) OX=443240 GN=rep PE=3 SV=1
+Length=7152
+
+ Score = 100 bits (250),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+S+LW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3895  SKLTDVKCANVVLLNCLQHLHVASNSRLWQYCSILHNEILSTSDLSVAFDKLAQLLIVLF  3954
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3955  ANPAAVD  3961
+
+
+>sp|P0C6U9|R1A_CVM2 Replicase polyprotein 1a OS=Murine coronavirus 
+(strain 2) OX=76344 GN=1a PE=3 SV=1
+Length=4416
+
+ Score = 100 bits (249),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S+++DVKC +VVLL+ LQ L + SSSKLW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3870  SRLTDVKCVNVVLLNCLQHLHIASSSKLWQYCSTLHNEILATSDLSVAFDKLAQLLVVLF  3929
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3930  ANPAAVD  3936
+
+
+>sp|P0C6U4|R1A_CVHN2 Replicase polyprotein 1a OS=Human coronavirus 
+HKU1 (isolate N2) OX=443240 GN=1a PE=3 SV=1
+Length=4441
+
+ Score = 100 bits (249),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 35/67 (52%), Positives = 46/67 (69%), Gaps = 0/67 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +VVLL+ LQ L V S+S+LW  C  LHN+IL   D + AF+K+  LL VL 
+Sbjct  3895  SKLTDVKCANVVLLNCLQHLHVASNSRLWQYCSILHNEILSTSDLSVAFDKLAQLLIVLF  3954
+
+Query  61    SMQGAVD  67
+             +   AVD
+Sbjct  3955  ANPAAVD  3961
+
+
+>sp|P0C6V6|R1A_PEDV7 Replicase polyprotein 1a OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=1a PE=1 SV=1
+Length=4117
+
+ Score = 100 bits (248),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 31/73 (42%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KC++VVLL  L  + V ++S  WA CV LHN I L  D  +A E +++LL+  L
+Sbjct  3580  SKLTDIKCSNVVLLGCLSSMNVSANSTEWAYCVDLHNKINLCNDPEKAQEMLLALLAFFL  3639
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L E
+Sbjct  3640  SKNSAFGLDDLLE  3652
+
+
+>sp|P0C6Y4|R1AB_PEDV7 Replicase polyprotein 1ab OS=Porcine epidemic 
+diarrhea virus (strain CV777) OX=229032 GN=rep PE=1 SV=1
+Length=6781
+
+ Score = 99.3 bits (246),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 31/73 (42%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KC++VVLL  L  + V ++S  WA CV LHN I L  D  +A E +++LL+  L
+Sbjct  3580  SKLTDIKCSNVVLLGCLSSMNVSANSTEWAYCVDLHNKINLCNDPEKAQEMLLALLAFFL  3639
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L E
+Sbjct  3640  SKNSAFGLDDLLE  3652
+
+
+>sp|P0C6F6|R1A_BC512 Replicase polyprotein 1a OS=Bat coronavirus 
+512/2005 OX=693999 GN=1a PE=3 SV=1
+Length=4128
+
+ Score = 98.9 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S+ WA CV LHN I L  D   A E +++LL+  L
+Sbjct  3591  SKLTDLKCTNVVLLGCLSNMNIAANSREWAYCVDLHNKINLCNDAEAAQEMLLALLAFFL  3650
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L +
+Sbjct  3651  SKNSAFGVDELLD  3663
+
+
+>sp|P0C6W0|R1AB_BC512 Replicase polyprotein 1ab OS=Bat coronavirus 
+512/2005 OX=693999 GN=rep PE=3 SV=1
+Length=6793
+
+ Score = 98.9 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 30/73 (41%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S+ WA CV LHN I L  D   A E +++LL+  L
+Sbjct  3591  SKLTDLKCTNVVLLGCLSNMNIAANSREWAYCVDLHNKINLCNDAEAAQEMLLALLAFFL  3650
+
+Query  61    SMQGAVDINRLCE  73
+             S   A  ++ L +
+Sbjct  3651  SKNSAFGVDELLD  3663
+
+
+>sp|P0C6X0|R1AB_CVBQ Replicase polyprotein 1ab OS=Bovine coronavirus 
+(strain Quebec) OX=11133 GN=rep PE=3 SV=1
+Length=7059
+
+ Score = 98.5 bits (244),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 37/79 (47%), Positives = 47/79 (59%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +  LL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANGGLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6Y2|R1AB_IBVBC Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=rep 
+PE=3 SV=1
+Length=6629
+
+ Score = 98.5 bits (244),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6Y1|R1AB_IBVB Replicase polyprotein 1ab OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=rep PE=1 
+SV=1
+Length=6629
+
+ Score = 98.5 bits (244),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6V4|R1A_IBVBC Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette CK) OX=160235 GN=1a PE=3 
+SV=1
+Length=3951
+
+ Score = 98.5 bits (244),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6V3|R1A_IBVB Replicase polyprotein 1a OS=Avian infectious 
+bronchitis virus (strain Beaudette) OX=11122 GN=1a PE=1 SV=1
+Length=3951
+
+ Score = 98.5 bits (244),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             +K+SDVKCT+VVL+ +L +L VE++SK+    V+LHN IL + D  E  + ++ +L  L 
+Sbjct  3380  AKLSDVKCTTVVLMQLLTKLNVEANSKMHVYLVELHNKILASDDVGECMDNLLGMLITLF  3439
+
+Query  61    SMQGAVDINRLCE  73
+              +   +D++  C+
+Sbjct  3440  CIDSTIDLSEYCD  3452
+
+
+>sp|P0C6U1|R1A_CVBQ Replicase polyprotein 1a OS=Bovine coronavirus 
+(strain Quebec) OX=11133 GN=1a PE=3 SV=1
+Length=4383
+
+ Score = 98.1 bits (243),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 37/79 (47%), Positives = 47/79 (59%), Gaps = 6/79 (8%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++DVKC +  LL+ LQ L V S+SKLW  C  LHN+IL   D   AFEK+  LL VL 
+Sbjct  3837  SKLTDVKCANGGLLNCLQHLHVASNSKLWQYCSTLHNEILATSDLGVAFEKLAQLLIVLF  3896
+
+Query  61    SMQGAVD------INRLCE  73
+             +   AVD      I  +C+
+Sbjct  3897  ANPAAVDSKCLTSIEEVCD  3915
+
+
+>sp|P0C6T6|R1A_BCHK9 Replicase polyprotein 1a OS=Bat coronavirus 
+HKU9 OX=694006 GN=1a PE=3 SV=1
+Length=4248
+
+ Score = 96.6 bits (239),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 52/72 (72%), Positives = 62/72 (86%), Gaps = 0/72 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S M+D+KCTSVVLLSVLQQLRVESSSKLWA CV+LHN+IL +   TEAFE  VSLLSVLL
+Sbjct  3700  SNMTDLKCTSVVLLSVLQQLRVESSSKLWALCVKLHNEILASNSPTEAFEAFVSLLSVLL  3759
+
+Query  61    SMQGAVDINRLC  72
+             S+ GA++++ LC
+Sbjct  3760  SLPGAINLDELC  3771
+
+
+>sp|P0C6W5|R1AB_BCHK9 Replicase polyprotein 1ab OS=Bat coronavirus 
+HKU9 OX=694006 GN=rep PE=1 SV=1
+Length=6930
+
+ Score = 96.2 bits (238),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 52/72 (72%), Positives = 62/72 (86%), Gaps = 0/72 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             S M+D+KCTSVVLLSVLQQLRVESSSKLWA CV+LHN+IL +   TEAFE  VSLLSVLL
+Sbjct  3700  SNMTDLKCTSVVLLSVLQQLRVESSSKLWALCVKLHNEILASNSPTEAFEAFVSLLSVLL  3759
+
+Query  61    SMQGAVDINRLC  72
+             S+ GA++++ LC
+Sbjct  3760  SLPGAINLDELC  3771
+
+
+>sp|P0C6X1|R1AB_CVH22 Replicase polyprotein 1ab OS=Human coronavirus 
+229E OX=11137 GN=rep PE=1 SV=1
+Length=6758
+
+ Score = 96.2 bits (238),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 29/73 (40%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVL+ +L  + + S+SK WA CV++HN I L  D   A E +++LL+  L
+Sbjct  3547  SKLTDLKCTNVVLMGILSNMNIASNSKEWAYCVEMHNKINLCDDPETAQELLLALLAFFL  3606
+
+Query  61    SMQGAVDINRLCE  73
+             S      +  L +
+Sbjct  3607  SKHSDFGLGDLVD  3619
+
+
+>sp|P0C6U2|R1A_CVH22 Replicase polyprotein 1a OS=Human coronavirus 
+229E OX=11137 GN=1a PE=1 SV=1
+Length=4085
+
+ Score = 95.8 bits (237),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 29/73 (40%), Positives = 46/73 (63%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVL+ +L  + + S+SK WA CV++HN I L  D   A E +++LL+  L
+Sbjct  3547  SKLTDLKCTNVVLMGILSNMNIASNSKEWAYCVEMHNKINLCDDPETAQELLLALLAFFL  3606
+
+Query  61    SMQGAVDINRLCE  73
+             S      +  L +
+Sbjct  3607  SKHSDFGLGDLVD  3619
+
+
+>sp|P0C6X5|R1AB_CVHNL Replicase polyprotein 1ab OS=Human coronavirus 
+NL63 OX=277944 GN=rep PE=1 SV=1
+Length=6729
+
+ Score = 95.8 bits (237),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 44/73 (60%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S  WA CV LHN I L  D  +A   +++LL+  L
+Sbjct  3522  SKLTDLKCTNVVLLGCLSSMNIAANSSEWAYCVDLHNKINLCDDPEKAQSMLLALLAFFL  3581
+
+Query  61    SMQGAVDINRLCE  73
+             S      ++ L +
+Sbjct  3582  SKHSDFGLDGLID  3594
+
+
+>sp|P0C6U6|R1A_CVHNL Replicase polyprotein 1a OS=Human coronavirus 
+NL63 OX=277944 GN=1a PE=1 SV=1
+Length=4060
+
+ Score = 95.4 bits (236),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 28/73 (38%), Positives = 44/73 (60%), Gaps = 0/73 (0%)
+
+Query  1     SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLL  60
+             SK++D+KCT+VVLL  L  + + ++S  WA CV LHN I L  D  +A   +++LL+  L
+Sbjct  3522  SKLTDLKCTNVVLLGCLSSMNIAANSSEWAYCVDLHNKINLCDDPEKAQSMLLALLAFFL  3581
+
+Query  61    SMQGAVDINRLCE  73
+             S      ++ L +
+Sbjct  3582  SKHSDFGLDGLID  3594
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.384    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0427    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4968890528
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

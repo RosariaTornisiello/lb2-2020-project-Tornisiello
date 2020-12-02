@@ -1,0 +1,827 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2cu2a1
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase OS=S...  43.1    2e-05
+sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransfe...  40.8    1e-04
+sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase OS=...  39.7    4e-04
+sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase OS=E...  38.1    0.002
+sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 1 O...  38.1    0.002
+sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase ManC...  37.4    0.002
+
+
+>sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase 
+OS=Salmonella muenchen OX=596 GN=rfbM PE=3 SV=1
+Length=473
+
+ Score = 43.1 bits (100),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 42/67 (63%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            DP  NV+ G+    A ++    +Y+++  ++T+GV+ LV+ +  D +LV  KD  ++V++
+Sbjct  287  DPQRNVLHGD--IFAYNSKDNYIYSEKSFISTIGVNNLVIVQTADALLVSDKDSVQDVKK  344
+
+Query  61   VVKRLEA  67
+            VV  L+A
+Sbjct  345  VVDYLKA  351
+
+
+>sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransferase 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / 
+El Tor Inaba N16961) OX=243277 GN=rfbA PE=3 SV=2
+Length=465
+
+ Score = 40.8 bits (94),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 20/58 (34%), Positives = 35/58 (60%), Gaps = 0/58 (0%)
+
+Query  10   EGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVKRLEA  67
+            +G  +   T  C +YA   +VA +G+  +VV +  D VLV  K+  +EV+++V+ L+A
+Sbjct  291  QGDAILSGTSNCYIYAPNKLVAAVGLKDIVVVETKDAVLVADKNQVQEVKKIVEHLKA  348
+
+
+>sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli OX=562 GN=manC PE=3 SV=1
+Length=464
+
+ Score = 39.7 bits (91),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+   V  +T    +Y + G+VAT+G+  LV+    D +LV  +D  + V+ 
+Sbjct  292  DSSGNVITGD--IVCHETENSYIYTESGLVATIGIQDLVIIHTKDSLLVSRRDSVQNVKN  349
+
+Query  61   VVKRLE  66
+            +V+ L+
+Sbjct  350  IVQHLD  355
+
+
+>sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli (strain K12) OX=83333 GN=manC PE=3 SV=3
+Length=478
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 34/50 (68%), Gaps = 0/50 (0%)
+
+Query  18   TFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVKRLEA  67
+            T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++VV++++A
+Sbjct  308  TENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKVVEQIKA  357
+
+
+>sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 
+1 OS=Escherichia coli O157:H7 OX=83334 GN=manC1 PE=1 SV=1
+Length=478
+
+ Score = 38.1 bits (87),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 34/50 (68%), Gaps = 0/50 (0%)
+
+Query  18   TFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVKRLEA  67
+            T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++VV++++A
+Sbjct  308  TENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKVVEQIKA  357
+
+
+>sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase 
+ManC OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=manC PE=3 SV=1
+Length=480
+
+ Score = 37.4 bits (85),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/54 (35%), Positives = 35/54 (65%), Gaps = 0/54 (0%)
+
+Query  14   VALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVKRLEA  67
+            ++  T    VYA+ G+V T+GV  LVV +  D VL+  +   ++V++VV++++A
+Sbjct  306  ISHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRHAVQDVKKVVEKIKA  359
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.140    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+Results from round 2
+
+
+Query= d2cu2a1
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase OS=S...  95.8    5e-24
+sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase OS=...  93.1    5e-23
+sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransfe...  88.1    3e-21
+sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase OS=E...  85.8    2e-20
+sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 1 O...  85.4    3e-20
+
+Sequences not found previously or not previously below threshold:
+
+sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase ManC...  87.4    5e-21
+sp|P26404|RFBM_SALTY Mannose-1-phosphate guanylyltransferase RfbM...  78.1    1e-17
+sp|Q01410|MANC_SALMO Mannose-1-phosphate guanylyltransferase OS=S...  75.4    1e-16
+sp|O85342|MANC2_ECO57 Mannose-1-phosphate guanylyltransferase 2 O...  73.5    4e-16
+sp|Q48462|MANC_KLEPN Mannose-1-phosphate guanylyltransferase OS=K...  72.7    9e-16
+sp|P37753|MANC9_ECOLX Mannose-1-phosphate guanylyltransferase OS=...  72.3    1e-15
+sp|P07874|ALGA_PSEAE Alginate biosynthesis protein AlgA OS=Pseudo...  65.8    2e-13
+sp|Q887Q9|ALGA_PSESM Alginate biosynthesis protein AlgA OS=Pseudo...  60.4    2e-11
+sp|Q88ND5|ALGA_PSEPK Alginate biosynthesis protein AlgA OS=Pseudo...  60.0    2e-11
+sp|B0RVK6|XANB_XANCB Xanthan biosynthesis protein XanB OS=Xanthom...  59.6    4e-11
+sp|P0C7J3|XANB_XANCP Xanthan biosynthesis protein XanB OS=Xanthom...  59.6    4e-11
+sp|P59785|ALGA_PSEFL Alginate biosynthesis protein AlgA OS=Pseudo...  58.9    6e-11
+sp|P55357|NOEJ_SINFN Mannose-1-phosphate guanylyltransferase OS=S...  39.2    5e-04
+
+
+>sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase 
+OS=Salmonella muenchen OX=596 GN=rfbM PE=3 SV=1
+Length=473
+
+ Score = 95.8 bits (237),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 42/67 (63%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            DP  NV+ G+    A ++    +Y+++  ++T+GV+ LV+ +  D +LV  KD  ++V++
+Sbjct  287  DPQRNVLHGD--IFAYNSKDNYIYSEKSFISTIGVNNLVIVQTADALLVSDKDSVQDVKK  344
+
+Query  61   VVKRLEA  67
+            VV  L+A
+Sbjct  345  VVDYLKA  351
+
+
+>sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli OX=562 GN=manC PE=3 SV=1
+Length=464
+
+ Score = 93.1 bits (230),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+   V  +T    +Y + G+VAT+G+  LV+    D +LV  +D  + V+ 
+Sbjct  292  DSSGNVITGD--IVCHETENSYIYTESGLVATIGIQDLVIIHTKDSLLVSRRDSVQNVKN  349
+
+Query  61   VVKRLE  66
+            +V+ L+
+Sbjct  350  IVQHLD  355
+
+
+>sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransferase 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / 
+El Tor Inaba N16961) OX=243277 GN=rfbA PE=3 SV=2
+Length=465
+
+ Score = 88.1 bits (217),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 23/67 (34%), Positives = 38/67 (57%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV   +G  +   T  C +YA   +VA +G+  +VV +  D VLV  K+  +EV++
+Sbjct  284  DADGNVC--QGDAILSGTSNCYIYAPNKLVAAVGLKDIVVVETKDAVLVADKNQVQEVKK  341
+
+Query  61   VVKRLEA  67
+            +V+ L+A
+Sbjct  342  IVEHLKA  348
+
+
+>sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase 
+ManC OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=manC PE=3 SV=1
+Length=480
+
+ Score = 87.4 bits (215),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 23/66 (35%), Positives = 40/66 (61%), Gaps = 2/66 (3%)
+
+Query  2    PHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREV  61
+            P  NV  G+   ++  T    VYA+ G+V T+GV  LVV +  D VL+  +   ++V++V
+Sbjct  296  PEGNVHHGD--VISHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRHAVQDVKKV  353
+
+Query  62   VKRLEA  67
+            V++++A
+Sbjct  354  VEKIKA  359
+
+
+>sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli (strain K12) OX=83333 GN=manC PE=3 SV=3
+Length=478
+
+ Score = 85.8 bits (211),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 39/65 (60%), Gaps = 2/65 (3%)
+
+Query  3    HENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVV  62
+              NV  G+   +   T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++VV
+Sbjct  295  EGNVCHGD--VINHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKVV  352
+
+Query  63   KRLEA  67
+            ++++A
+Sbjct  353  EQIKA  357
+
+
+>sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 
+1 OS=Escherichia coli O157:H7 OX=83334 GN=manC1 PE=1 SV=1
+Length=478
+
+ Score = 85.4 bits (210),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 39/65 (60%), Gaps = 2/65 (3%)
+
+Query  3    HENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVV  62
+              NV  G+   +   T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++VV
+Sbjct  295  EGNVCHGD--VINHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKVV  352
+
+Query  63   KRLEA  67
+            ++++A
+Sbjct  353  EQIKA  357
+
+
+>sp|P26404|RFBM_SALTY Mannose-1-phosphate guanylyltransferase 
+RfbM OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=rfbM PE=1 SV=1
+Length=479
+
+ Score = 78.1 bits (191),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 36/66 (55%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+    A       +Y++   ++ +GVS LV+ +  D +LV  KD  ++V++
+Sbjct  286  DHQRNVLKGD--IFAHACNDNYIYSEDMFISAIGVSNLVIVQTTDALLVANKDTVQDVKK  343
+
+Query  61   VVKRLE  66
+            +V  L+
+Sbjct  344  IVDYLK  349
+
+
+>sp|Q01410|MANC_SALMO Mannose-1-phosphate guanylyltransferase 
+OS=Salmonella montevideo OX=115981 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 75.4 bits (184),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 40/66 (61%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   ++ +   C ++A+ G+V  +GV  L+V +  D VLV   +  ++V++
+Sbjct  286  DSNGNVTKGD--VLSHNADNCYLHAETGLVTAVGVKDLIVVQTKDAVLVANTNCVQDVKK  343
+
+Query  61   VVKRLE  66
+            +V++++
+Sbjct  344  IVEKIK  349
+
+
+>sp|O85342|MANC2_ECO57 Mannose-1-phosphate guanylyltransferase 
+2 OS=Escherichia coli O157:H7 OX=83334 GN=manC2 PE=3 SV=1
+Length=482
+
+ Score = 73.5 bits (179),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 16/57 (28%), Positives = 33/57 (58%), Gaps = 0/57 (0%)
+
+Query  10   EGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVKRLE  66
+            +G  +  DT    +Y++  +VA +G+  +V+ +  D VLV  K   + V+++V+ L+
+Sbjct  303  KGDILTYDTKNNYIYSESALVAAIGIEDMVIVQTKDAVLVSKKSDVQHVKKIVEMLK  359
+
+
+>sp|Q48462|MANC_KLEPN Mannose-1-phosphate guanylyltransferase 
+OS=Klebsiella pneumoniae OX=573 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 72.7 bits (177),  Expect = 9e-16, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 38/66 (58%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+      ++  C + +D  +VA +GV  LV+    D VLV+ ++ +++V++
+Sbjct  286  DEQGNVLSGDAWV--HNSENCYINSDEKLVAAIGVENLVIVSTKDAVLVMNRERSQDVKK  343
+
+Query  61   VVKRLE  66
+             V+ L+
+Sbjct  344  AVEFLK  349
+
+
+>sp|P37753|MANC9_ECOLX Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli OX=562 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 72.3 bits (176),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 38/66 (58%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+      ++  C + +D  +VA +GV  LV+    D VLV+ ++ +++V++
+Sbjct  286  DGQGNVLSGDAWV--HNSENCYINSDEKLVAAIGVENLVIVSTKDAVLVMNRERSQDVKK  343
+
+Query  61   VVKRLE  66
+             V+ L+
+Sbjct  344  AVEFLK  349
+
+
+>sp|P07874|ALGA_PSEAE Alginate biosynthesis protein AlgA OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=algA PE=1 SV=3
+Length=481
+
+ Score = 65.8 bits (159),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 40/67 (60%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   +  D+  C+V+ +  +V+ +G+  +VV +  D +++  KD  ++V+ 
+Sbjct  284  DANGNVTKGD--VLVHDSHNCLVHGNGKLVSVIGLEDIVVVETKDAMMIAHKDRVQDVKH  341
+
+Query  61   VVKRLEA  67
+            VVK L+A
+Sbjct  342  VVKDLDA  348
+
+
+>sp|Q887Q9|ALGA_PSESM Alginate biosynthesis protein AlgA OS=Pseudomonas 
+syringae pv. tomato (strain ATCC BAA-871 / DC3000) 
+OX=223283 GN=algA PE=3 SV=1
+Length=483
+
+ Score = 60.4 bits (145),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D H NV  G+   V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  284  DAHGNVTKGD--VVIQDSRNCMIHGNGKLVSVIGLDNIVVVETKDAMMIAHKDKVQGVKQ  341
+
+Query  61   VVKRLE  66
+            +V  L 
+Sbjct  342  MVATLN  347
+
+
+>sp|Q88ND5|ALGA_PSEPK Alginate biosynthesis protein AlgA OS=Pseudomonas 
+putida (strain ATCC 47054 / DSM 6125 / NCIMB 11950 
+/ KT2440) OX=160488 GN=algA PE=3 SV=1
+Length=485
+
+ Score = 60.0 bits (144),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 39/66 (59%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  285  DDNGNVTKGD--VVVQDSRNCMIHGNGKLVSVIGLENIVVVETKDAMMIAHKDKVQGVKQ  342
+
+Query  61   VVKRLE  66
+            +VK L+
+Sbjct  343  MVKTLD  348
+
+
+>sp|B0RVK6|XANB_XANCB Xanthan biosynthesis protein XanB OS=Xanthomonas 
+campestris pv. campestris (strain B100) OX=509169 GN=xanB 
+PE=3 SV=1
+Length=467
+
+ Score = 59.6 bits (143),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 36/67 (54%), Gaps = 3/67 (4%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   N   G+   + LD      Y  R ++A +G+  +VV +  D VLV  +D  +EV+E
+Sbjct  283  DGQGNAHHGD--VIQLDCKNTYAYGSR-LIAMVGLENVVVVETDDAVLVGHRDRIQEVKE  339
+
+Query  61   VVKRLEA  67
+            VV ++++
+Sbjct  340  VVSQIKS  346
+
+
+>sp|P0C7J3|XANB_XANCP Xanthan biosynthesis protein XanB OS=Xanthomonas 
+campestris pv. campestris (strain ATCC 33913 / DSM 
+3586 / NCPPB 528 / LMG 568 / P 25) OX=190485 GN=xanB PE=3 SV=1
+Length=467
+
+ Score = 59.6 bits (143),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 36/67 (54%), Gaps = 3/67 (4%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   N   G+   + LD      Y  R ++A +G+  +VV +  D VLV  +D  +EV+E
+Sbjct  283  DGQGNAHHGD--VIQLDCKNTYAYGSR-LIAMVGLENVVVVETDDAVLVGHRDRIQEVKE  339
+
+Query  61   VVKRLEA  67
+            VV ++++
+Sbjct  340  VVSQIKS  346
+
+
+>sp|P59785|ALGA_PSEFL Alginate biosynthesis protein AlgA OS=Pseudomonas 
+fluorescens OX=294 GN=algA PE=3 SV=1
+Length=483
+
+ Score = 58.9 bits (141),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D H NV   +G  V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  284  DIHGNV--SKGDVVIQDSRNCMIHGNGKLVSVIGLDNIVVVETKDAMMIAHKDKVQGVKQ  341
+
+Query  61   VVKRLE  66
+            +V  L 
+Sbjct  342  MVSTLN  347
+
+
+>sp|P55357|NOEJ_SINFN Mannose-1-phosphate guanylyltransferase 
+OS=Sinorhizobium fredii (strain NBRC 101917 / NGR234) OX=394 
+GN=noeJ PE=3 SV=1
+Length=512
+
+ Score = 39.2 bits (90),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 31/67 (46%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            +   NV+ G     A +T   +V +    +A  G+ G+ V    D V V   + A E+  
+Sbjct  316  NADGNVLKGN--VTACNTKNSLVLSHTAHLAVQGMDGVAVIASEDAVFVGRLEEAHEIGN  373
+
+Query  61   VVKRLEA  67
+            +VKRL A
+Sbjct  374  LVKRLAA  380
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.140    0.341    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0430    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+Results from round 3
+
+
+Query= d2cu2a1
+
+Length=67
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P07874|ALGA_PSEAE Alginate biosynthesis protein AlgA OS=Pseudo...  91.9    1e-22
+sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase ManC...  90.4    5e-22
+sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransfe...  90.0    7e-22
+sp|Q48462|MANC_KLEPN Mannose-1-phosphate guanylyltransferase OS=K...  89.6    8e-22
+sp|P37753|MANC9_ECOLX Mannose-1-phosphate guanylyltransferase OS=...  89.6    8e-22
+sp|Q887Q9|ALGA_PSESM Alginate biosynthesis protein AlgA OS=Pseudo...  89.6    1e-21
+sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase OS=E...  88.8    2e-21
+sp|Q88ND5|ALGA_PSEPK Alginate biosynthesis protein AlgA OS=Pseudo...  88.5    2e-21
+sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase OS=S...  88.5    2e-21
+sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 1 O...  88.5    3e-21
+sp|Q01410|MANC_SALMO Mannose-1-phosphate guanylyltransferase OS=S...  88.1    3e-21
+sp|P59785|ALGA_PSEFL Alginate biosynthesis protein AlgA OS=Pseudo...  87.3    6e-21
+sp|P26404|RFBM_SALTY Mannose-1-phosphate guanylyltransferase RfbM...  85.4    3e-20
+sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase OS=...  85.0    4e-20
+sp|O85342|MANC2_ECO57 Mannose-1-phosphate guanylyltransferase 2 O...  83.5    1e-19
+sp|B0RVK6|XANB_XANCB Xanthan biosynthesis protein XanB OS=Xanthom...  81.5    6e-19
+sp|P0C7J3|XANB_XANCP Xanthan biosynthesis protein XanB OS=Xanthom...  81.5    6e-19
+sp|P55357|NOEJ_SINFN Mannose-1-phosphate guanylyltransferase OS=S...  74.2    2e-16
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P07874|ALGA_PSEAE Alginate biosynthesis protein AlgA OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=algA PE=1 SV=3
+Length=481
+
+ Score = 91.9 bits (227),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 40/67 (60%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   +  D+  C+V+ +  +V+ +G+  +VV +  D +++  KD  ++V+ 
+Sbjct  284  DANGNVTKGD--VLVHDSHNCLVHGNGKLVSVIGLEDIVVVETKDAMMIAHKDRVQDVKH  341
+
+Query  61   VVKRLEA  67
+            VVK L+A
+Sbjct  342  VVKDLDA  348
+
+
+>sp|P26340|MANC_SALTY Mannose-1-phosphate guanylyltransferase 
+ManC OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=manC PE=3 SV=1
+Length=480
+
+ Score = 90.4 bits (223),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 23/66 (35%), Positives = 40/66 (61%), Gaps = 2/66 (3%)
+
+Query  2    PHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREV  61
+            P  NV  G+   ++  T    VYA+ G+V T+GV  LVV +  D VL+  +   ++V++V
+Sbjct  296  PEGNVHHGD--VISHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRHAVQDVKKV  353
+
+Query  62   VKRLEA  67
+            V++++A
+Sbjct  354  VEKIKA  359
+
+
+>sp|Q07024|RFBA_VIBCH Putative mannose-1-phosphate guanylyltransferase 
+OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / 
+El Tor Inaba N16961) OX=243277 GN=rfbA PE=3 SV=2
+Length=465
+
+ Score = 90.0 bits (222),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 23/67 (34%), Positives = 38/67 (57%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV  G+   +   T  C +YA   +VA +G+  +VV +  D VLV  K+  +EV++
+Sbjct  284  DADGNVCQGDA--ILSGTSNCYIYAPNKLVAAVGLKDIVVVETKDAVLVADKNQVQEVKK  341
+
+Query  61   VVKRLEA  67
+            +V+ L+A
+Sbjct  342  IVEHLKA  348
+
+
+>sp|Q48462|MANC_KLEPN Mannose-1-phosphate guanylyltransferase 
+OS=Klebsiella pneumoniae OX=573 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 89.6 bits (221),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 38/66 (58%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+      ++  C + +D  +VA +GV  LV+    D VLV+ ++ +++V++
+Sbjct  286  DEQGNVLSGDAWV--HNSENCYINSDEKLVAAIGVENLVIVSTKDAVLVMNRERSQDVKK  343
+
+Query  61   VVKRLE  66
+             V+ L+
+Sbjct  344  AVEFLK  349
+
+
+>sp|P37753|MANC9_ECOLX Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli OX=562 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 89.6 bits (221),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 38/66 (58%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+      ++  C + +D  +VA +GV  LV+    D VLV+ ++ +++V++
+Sbjct  286  DGQGNVLSGDAWV--HNSENCYINSDEKLVAAIGVENLVIVSTKDAVLVMNRERSQDVKK  343
+
+Query  61   VVKRLE  66
+             V+ L+
+Sbjct  344  AVEFLK  349
+
+
+>sp|Q887Q9|ALGA_PSESM Alginate biosynthesis protein AlgA OS=Pseudomonas 
+syringae pv. tomato (strain ATCC BAA-871 / DC3000) 
+OX=223283 GN=algA PE=3 SV=1
+Length=483
+
+ Score = 89.6 bits (221),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D H NV  G+   V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  284  DAHGNVTKGD--VVIQDSRNCMIHGNGKLVSVIGLDNIVVVETKDAMMIAHKDKVQGVKQ  341
+
+Query  61   VVKRLE  66
+            +V  L 
+Sbjct  342  MVATLN  347
+
+
+>sp|P24174|MANC_ECOLI Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli (strain K12) OX=83333 GN=manC PE=3 SV=3
+Length=478
+
+ Score = 88.8 bits (219),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 22/66 (33%), Positives = 39/66 (59%), Gaps = 2/66 (3%)
+
+Query  2    PHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREV  61
+               NV  G+   +   T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++V
+Sbjct  294  AEGNVCHGD--VINHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKV  351
+
+Query  62   VKRLEA  67
+            V++++A
+Sbjct  352  VEQIKA  357
+
+
+>sp|Q88ND5|ALGA_PSEPK Alginate biosynthesis protein AlgA OS=Pseudomonas 
+putida (strain ATCC 47054 / DSM 6125 / NCIMB 11950 
+/ KT2440) OX=160488 GN=algA PE=3 SV=1
+Length=485
+
+ Score = 88.5 bits (218),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 39/66 (59%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  285  DDNGNVTKGD--VVVQDSRNCMIHGNGKLVSVIGLENIVVVETKDAMMIAHKDKVQGVKQ  342
+
+Query  61   VVKRLE  66
+            +VK L+
+Sbjct  343  MVKTLD  348
+
+
+>sp|Q00473|RFBM_SALMU Mannose-1-phosphate guanylyltransferase 
+OS=Salmonella muenchen OX=596 GN=rfbM PE=3 SV=1
+Length=473
+
+ Score = 88.5 bits (218),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 42/67 (63%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            DP  NV+ G+    A ++    +Y+++  ++T+GV+ LV+ +  D +LV  KD  ++V++
+Sbjct  287  DPQRNVLHGD--IFAYNSKDNYIYSEKSFISTIGVNNLVIVQTADALLVSDKDSVQDVKK  344
+
+Query  61   VVKRLEA  67
+            VV  L+A
+Sbjct  345  VVDYLKA  351
+
+
+>sp|Q8X7P1|MANC1_ECO57 Mannose-1-phosphate guanylyltransferase 
+1 OS=Escherichia coli O157:H7 OX=83334 GN=manC1 PE=1 SV=1
+Length=478
+
+ Score = 88.5 bits (218),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 22/66 (33%), Positives = 39/66 (59%), Gaps = 2/66 (3%)
+
+Query  2    PHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREV  61
+               NV  G+   +   T    VYA+ G+V T+GV  LVV +  D VL+  ++  ++V++V
+Sbjct  294  AEGNVCHGD--VINHKTENSYVYAESGLVTTVGVKDLVVVQTKDAVLIADRNAVQDVKKV  351
+
+Query  62   VKRLEA  67
+            V++++A
+Sbjct  352  VEQIKA  357
+
+
+>sp|Q01410|MANC_SALMO Mannose-1-phosphate guanylyltransferase 
+OS=Salmonella montevideo OX=115981 GN=manC PE=3 SV=1
+Length=471
+
+ Score = 88.1 bits (217),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 40/66 (61%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D + NV  G+   ++ +   C ++A+ G+V  +GV  L+V +  D VLV   +  ++V++
+Sbjct  286  DSNGNVTKGD--VLSHNADNCYLHAETGLVTAVGVKDLIVVQTKDAVLVANTNCVQDVKK  343
+
+Query  61   VVKRLE  66
+            +V++++
+Sbjct  344  IVEKIK  349
+
+
+>sp|P59785|ALGA_PSEFL Alginate biosynthesis protein AlgA OS=Pseudomonas 
+fluorescens OX=294 GN=algA PE=3 SV=1
+Length=483
+
+ Score = 87.3 bits (215),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D H NV  G+   V  D+  C+++ +  +V+ +G+  +VV +  D +++  KD  + V++
+Sbjct  284  DIHGNVSKGD--VVIQDSRNCMIHGNGKLVSVIGLDNIVVVETKDAMMIAHKDKVQGVKQ  341
+
+Query  61   VVKRLE  66
+            +V  L 
+Sbjct  342  MVSTLN  347
+
+
+>sp|P26404|RFBM_SALTY Mannose-1-phosphate guanylyltransferase 
+RfbM OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 
+700720) OX=99287 GN=rfbM PE=1 SV=1
+Length=479
+
+ Score = 85.4 bits (210),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 36/66 (55%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+    A       +Y++   ++ +GVS LV+ +  D +LV  KD  ++V++
+Sbjct  286  DHQRNVLKGD--IFAHACNDNYIYSEDMFISAIGVSNLVIVQTTDALLVANKDTVQDVKK  343
+
+Query  61   VVKRLE  66
+            +V  L+
+Sbjct  344  IVDYLK  349
+
+
+>sp|P37741|MANC7_ECOLX Mannose-1-phosphate guanylyltransferase 
+OS=Escherichia coli OX=562 GN=manC PE=3 SV=1
+Length=464
+
+ Score = 85.0 bits (209),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 37/66 (56%), Gaps = 2/66 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   NV+ G+   V  +T    +Y + G+VAT+G+  LV+    D +LV  +D  + V+ 
+Sbjct  292  DSSGNVITGD--IVCHETENSYIYTESGLVATIGIQDLVIIHTKDSLLVSRRDSVQNVKN  349
+
+Query  61   VVKRLE  66
+            +V+ L+
+Sbjct  350  IVQHLD  355
+
+
+>sp|O85342|MANC2_ECO57 Mannose-1-phosphate guanylyltransferase 
+2 OS=Escherichia coli O157:H7 OX=83334 GN=manC2 PE=3 SV=1
+Length=482
+
+ Score = 83.5 bits (205),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 17/63 (27%), Positives = 35/63 (56%), Gaps = 2/63 (3%)
+
+Query  4    ENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVREVVK  63
+             +V  G+   +  DT    +Y++  +VA +G+  +V+ +  D VLV  K   + V+++V+
+Sbjct  299  GDVCKGD--ILTYDTKNNYIYSESALVAAIGIEDMVIVQTKDAVLVSKKSDVQHVKKIVE  356
+
+Query  64   RLE  66
+             L+
+Sbjct  357  MLK  359
+
+
+>sp|B0RVK6|XANB_XANCB Xanthan biosynthesis protein XanB OS=Xanthomonas 
+campestris pv. campestris (strain B100) OX=509169 GN=xanB 
+PE=3 SV=1
+Length=467
+
+ Score = 81.5 bits (200),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 36/67 (54%), Gaps = 3/67 (4%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   N   G+   + LD      Y  R ++A +G+  +VV +  D VLV  +D  +EV+E
+Sbjct  283  DGQGNAHHGD--VIQLDCKNTYAYGSR-LIAMVGLENVVVVETDDAVLVGHRDRIQEVKE  339
+
+Query  61   VVKRLEA  67
+            VV ++++
+Sbjct  340  VVSQIKS  346
+
+
+>sp|P0C7J3|XANB_XANCP Xanthan biosynthesis protein XanB OS=Xanthomonas 
+campestris pv. campestris (strain ATCC 33913 / DSM 
+3586 / NCPPB 528 / LMG 568 / P 25) OX=190485 GN=xanB PE=3 SV=1
+Length=467
+
+ Score = 81.5 bits (200),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 36/67 (54%), Gaps = 3/67 (4%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            D   N   G+   + LD      Y  R ++A +G+  +VV +  D VLV  +D  +EV+E
+Sbjct  283  DGQGNAHHGD--VIQLDCKNTYAYGSR-LIAMVGLENVVVVETDDAVLVGHRDRIQEVKE  339
+
+Query  61   VVKRLEA  67
+            VV ++++
+Sbjct  340  VVSQIKS  346
+
+
+>sp|P55357|NOEJ_SINFN Mannose-1-phosphate guanylyltransferase 
+OS=Sinorhizobium fredii (strain NBRC 101917 / NGR234) OX=394 
+GN=noeJ PE=3 SV=1
+Length=512
+
+ Score = 74.2 bits (181),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 20/67 (30%), Positives = 31/67 (46%), Gaps = 2/67 (3%)
+
+Query  1    DPHENVVLGEGRHVALDTFGCVVYADRGVVATLGVSGLVVAKVGDEVLVVPKDWAREVRE  60
+            +   NV+ G     A +T   +V +    +A  G+ G+ V    D V V   + A E+  
+Sbjct  316  NADGNVLKGN--VTACNTKNSLVLSHTAHLAVQGMDGVAVIASEDAVFVGRLEEAHEIGN  373
+
+Query  61   VVKRLEA  67
+            +VKRL A
+Sbjct  374  LVKRLAA  380
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.147    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0449    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5063488304
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

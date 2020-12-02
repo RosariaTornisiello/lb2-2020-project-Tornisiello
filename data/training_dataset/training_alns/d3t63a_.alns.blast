@@ -1,0 +1,1464 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3t63a_
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain ...  416     1e-149
+sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain ...  206     1e-66 
+sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain ...  140     4e-41 
+sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain O...  77.4    3e-16 
+sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain O...  75.9    1e-15 
+sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain O...  57.0    8e-09 
+sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter...  39.7    0.008 
+sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia co...  39.3    0.008 
+
+
+>sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Pseudomonas putida OX=303 GN=pcaG PE=1 SV=3
+Length=201
+
+ Score = 416 bits (1069),  Expect = 1e-149, Method: Compositional matrix adjust.
+ Identities = 200/200 (100%), Positives = 200/200 (100%), Gaps = 0/200 (0%)
+
+Query  1    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  60
+            PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG
+Sbjct  2    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  61
+
+Query  61   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  120
+            HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV
+Sbjct  62   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  121
+
+Query  121  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  180
+            PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK
+Sbjct  122  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  181
+
+Query  181  TAYRFDIRIQGEGETVFFDF  200
+            TAYRFDIRIQGEGETVFFDF
+Sbjct  182  TAYRFDIRIQGEGETVFFDF  201
+
+
+>sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaG PE=1 SV=3
+Length=209
+
+ Score = 206 bits (524),  Expect = 1e-66, Method: Compositional matrix adjust.
+ Identities = 107/201 (53%), Positives = 131/201 (65%), Gaps = 5/201 (2%)
+
+Query  5    LPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVR  64
+            L ETPSQT GPYVHIGL  + A     +  + N L + +  G+ I L GQV+DG G  +R
+Sbjct  9    LKETPSQTGGPYVHIGLLPKQANIEVFEHNLDNNLVQDNTQGQRIRLEGQVFDGLGLPLR  68
+
+Query  65   DSFLEVWQADANGEYQDAYNLENA-----FNSFGRTATTFDAGEWTLHTVKPGVVNNAAG  119
+            D  +E+WQAD NG Y    + +       F  +GRT   F  G W+ +T+KPG V    G
+Sbjct  69   DVLIEIWQADTNGVYPSQADTQGKQVDPNFLGWGRTGADFGTGFWSFNTIKPGAVPGRKG  128
+
+Query  120  VPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDG  179
+               APHI++ +FARGINI LHTR+YFDDEA+ANAK PVLN IE   RR+TL+AKR E DG
+Sbjct  129  STQAPHISLIIFARGINIGLHTRVYFDDEAEANAKDPVLNSIEWATRRQTLVAKREERDG  188
+
+Query  180  KTAYRFDIRIQGEGETVFFDF  200
+            +  YRFDIRIQGE ETVFFD 
+Sbjct  189  EVVYRFDIRIQGENETVFFDI  209
+
+
+>sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Burkholderia cepacia OX=292 GN=pcaG PE=3 SV=1
+Length=197
+
+ Score = 140 bits (354),  Expect = 4e-41, Method: Compositional matrix adjust.
+ Identities = 90/202 (45%), Positives = 120/202 (59%), Gaps = 10/202 (5%)
+
+Query  2    IELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGH  61
+            +  L +TPSQT GPY   GL  +  G   +       +A P A GEH+LL+GQV+DG+G+
+Sbjct  1    MTTLKQTPSQTVGPYFAYGLCPQQYGYDLKSL-FTPTIAAPHADGEHVLLVGQVFDGDGN  59
+
+Query  62   LVRDSFLEVWQADANGEYQDAYN--LENAFNSFGRTATTFDAG-EWTLHTVKPGVVNNAA  118
+            +V D+ LE  Q D  G +  + +   ++ F  F R  T  DA   + + TVKPG +    
+Sbjct  60   VVSDAMLEFTQVDGAGRFPASRDDVAKSGFTGFARVGTGTDAQHRFVVETVKPGRI----  115
+
+Query  119  GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVD  178
+                APHIN+++  RGI  H  TR+YFDDEA ANA  PVLNL+   +RR TL+AKR    
+Sbjct  116  AADEAPHINVTVMMRGILTHAFTRVYFDDEAAANAADPVLNLVPA-ERRATLVAKRDAQP  174
+
+Query  179  GK-TAYRFDIRIQGEGETVFFD  199
+            G+   YRFD+R+QG  ETVFFD
+Sbjct  175  GRPVVYRFDVRMQGPDETVFFD  196
+
+
+>sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaH PE=1 SV=2
+Length=241
+
+ Score = 77.4 bits (189),  Expect = 3e-16, Method: Compositional matrix adjust.
+ Identities = 60/180 (33%), Positives = 89/180 (49%), Gaps = 16/180 (9%)
+
+Query  31   RDQEIWNRLAKPDAP-GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQ---DAY--N  84
+            +D ++    AK   P GE +++ G V D  G  V+++ +EVWQA+A+G Y+   D Y   
+Sbjct  60   KDNDLILNYAKDGLPIGERVIVHGYVRDQFGRPVKNALVEVWQANASGRYRHPNDQYIGA  119
+
+Query  85   LENAFNSFGRTATTFDAGEWTLHTVKPGVV--NNAAGVPMAPHINISLFARGINIHLHTR  142
+            ++  F   GR  T  D G +   T+KPG     N        HI+ SL A G    L ++
+Sbjct  120  MDPNFGGCGRMLTD-DNGYYVFRTIKPGPYPWRNRINEWRPAHIHFSLIADGWAQRLISQ  178
+
+Query  143  LYFDDEAQANAKCPVLNLIEQPQRRETLIAKR-----CEVDGKTAYRFDIRIQGEGETVF  197
+             YF+ +   ++ CP+L  I   Q+R  LIA        E D +  YRFDI ++G   T F
+Sbjct  179  FYFEGDTLIDS-CPILKTIPSEQQRRALIALEDKSNFIEADSR-CYRFDITLRGRRATYF  236
+
+
+>sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain 
+OS=Pseudomonas putida OX=303 GN=pcaH PE=1 SV=3
+Length=239
+
+ Score = 75.9 bits (185),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 63/206 (31%), Positives = 98/206 (48%), Gaps = 22/206 (11%)
+
+Query  5    LPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDGNGHL  62
+            +P++ S+T GP + H+G           D ++         P GE I++ G+V D  G  
+Sbjct  40   IPQSISETTGPNFSHLGFG-------AHDHDLLLNFNNGGLPIGERIIVAGRVVDQYGKP  92
+
+Query  63   VRDSFLEVWQADANGEYQ---DAY--NLENAFNSFGRTATTFDAGEWTLHTVKPGVV--N  115
+            V ++ +E+WQA+A G Y+   D Y   L+  F   GR  T  D G ++  T+KPG     
+Sbjct  93   VPNTLVEMWQANAGGRYRHKNDRYLAPLDPNFGGVGRCLTDSD-GYYSFRTIKPGPYPWR  151
+
+Query  116  NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRC  175
+            N        HI+  +    I   L T+LYF+ +      CP++  I  P+  + LIAK  
+Sbjct  152  NGPNDWRPAHIHFGISGPSIATKLITQLYFEGDPLI-PMCPIVKSIANPEAVQQLIAKLD  210
+
+Query  176  EVDGKT----AYRFDIRIQGEGETVF  197
+              +       AYRFDI ++G+ +T F
+Sbjct  211  MNNANPMDCLAYRFDIVLRGQRKTHF  236
+
+
+>sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain 
+OS=Burkholderia cepacia OX=292 GN=pcaH PE=3 SV=1
+Length=235
+
+ Score = 57.0 bits (136),  Expect = 8e-09, Method: Compositional matrix adjust.
+ Identities = 50/161 (31%), Positives = 72/161 (45%), Gaps = 14/161 (9%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEY-----QDAYNLENAFNSFGRTATTFD  100
+            GE I++ G+V D  G  VR++ +EVWQA+A G Y     Q    L+  F   GR  T  +
+Sbjct  74   GERIVVTGRVLDEGGKPVRNTLVEVWQANAAGRYVHKVDQHDAPLDPNFLGAGRCMTDAE  133
+
+Query  101  AGEWTLHTVKPGVV--NNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVL  158
+             G +   T+KPG     N        HI+ SLF       L T++YF  +    A  P+ 
+Sbjct  134  -GRYRFLTIKPGAYPWGNHPNAWRPNHIHFSLFGDYFGSRLVTQMYFPGDPLL-AYDPIF  191
+
+Query  159  NLIEQPQRRETLIAK----RCEVDGKTAYRFDIRIQGEGET  195
+                +   R+ LI++      E      Y FDI ++G   T
+Sbjct  192  QGTPE-AARDRLISRFSLDTTEEGHALGYEFDIVLRGRDAT  231
+
+
+>sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter 
+lwoffii OX=28090 GN=catA2 PE=1 SV=1
+Length=275
+
+ Score = 39.7 bits (91),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 35/133 (26%), Positives = 55/133 (41%), Gaps = 16/133 (12%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP       L  AG P  D     RL     PG+ +++ G+V+  +G  + ++ 
+Sbjct  96   TPRTIEGP-------LYVAGAPVSDGHA--RLDDGTDPGQTLVMRGRVFGEDGKPLANAL  146
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVPMAPHIN  127
+            +EVW A+  G Y      + AFN   R+  T   G+++  +V P       G  + P   
+Sbjct  147  VEVWHANHLGNYSYFDKSQPAFN-LRRSIRTDAEGKYSFRSVVP------VGYSVPPQGQ  199
+
+Query  128  ISLFARGINIHLH  140
+              L    +  H H
+Sbjct  200  TQLLLDQLGRHGH  212
+
+
+>sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia 
+conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=RC0543 
+PE=3 SV=1
+Length=208
+
+ Score = 39.3 bits (90),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 42/167 (25%), Positives = 70/167 (42%), Gaps = 48/167 (29%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEY------------QDAYNLENAFNSFG  93
+            GE IL+ G+V D N   V D+ + +WQA + G+Y            +     +++F   G
+Sbjct  63   GERILIKGKVLDQNCVPVADAKVYLWQAGSGGKYPYEPLKTRVDKRRFTSKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKPGVVNNAAGVPMAPHINISLFARGINIH--------LHTRLYF  145
+              ATT + GE+               + M P+ + S + R  NI         L TRL  
+Sbjct  123  -IATTNNKGEYYF-------------ISMLPYTS-SRYLRSANIRIEHPSLTTLETRLDL  167
+
+Query  146  DDEAQANAKCPVLN-LIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+             D+   + +C  +N ++ +PQ            +   +Y FD+ +QG
+Sbjct  168  SDQNMCDNECGEVNPILIEPQ------------ENMPSYCFDLVLQG  202
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.423    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12296581616
+Results from round 2
+
+
+Query= d3t63a_
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain ...  308     4e-107
+sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain ...  289     2e-99 
+sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain O...  240     1e-79 
+sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain ...  227     4e-75 
+sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain O...  224     3e-73 
+sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain O...  197     1e-62 
+
+Sequences not found previously or not previously below threshold:
+
+sp|P07773|CATA_ACIAD Catechol 1,2-dioxygenase OS=Acinetobacter ba...  74.3    1e-14
+sp|O67987|CLCA_RHOOP Chlorocatechol 1,2-dioxygenase OS=Rhodococcu...  72.8    2e-14
+sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter...  72.4    3e-14
+sp|P31019|PHEB_PSEUE Catechol 1,2-dioxygenase OS=Pseudomonas sp. ...  70.5    2e-13
+sp|P86029|HQD2_CANAL Catechol 1,2-dioxygenase OS=Candida albicans...  69.7    4e-13
+sp|O33948|CATA1_ACILW Catechol 1,2-dioxygenase 1 OS=Acinetobacter...  64.3    3e-11
+sp|Q6F4M7|NPCC_RHOOP Hydroxyquinol 1,2-dioxygenase OS=Rhodococcus...  63.9    4e-11
+sp|Q5PXQ6|CHQB_NOCSI Hydroxyquinol 1,2-dioxygenase OS=Nocardioide...  63.9    5e-11
+sp|P95607|CATA_RHOOP Catechol 1,2-dioxygenase (Fragment) OS=Rhodo...  62.4    1e-10
+sp|P27098|TCBC_PSESQ Chlorocatechol 1,2-dioxygenase OS=Pseudomona...  62.0    2e-10
+sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia co...  58.9    1e-09
+sp|Q4ULV5|Y617_RICFE Putative dioxygenase RF_0617 OS=Rickettsia f...  56.6    7e-09
+sp|P0A396|TFDC_CUPPJ Chlorocatechol 1,2-dioxygenase OS=Cupriavidu...  56.6    1e-08
+sp|P0A397|TFDC_BURCE Chlorocatechol 1,2-dioxygenase OS=Burkholder...  56.6    1e-08
+sp|Q43984|CATA_ACIGI Catechol 1,2-dioxygenase OS=Acinetobacter gu...  55.8    3e-08
+sp|P11451|CLCA_PSEPU Chlorocatechol 1,2-dioxygenase OS=Pseudomona...  55.8    3e-08
+sp|Q68WY1|Y384_RICTY Putative dioxygenase RT0384 OS=Rickettsia ty...  52.4    3e-07
+sp|Q9ZDD5|Y396_RICPR Putative dioxygenase RP396 OS=Rickettsia pro...  51.6    5e-07
+sp|Q1RJQ4|Y329_RICBR Putative dioxygenase RBE_0329 OS=Rickettsia ...  50.4    1e-06
+
+
+>sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Pseudomonas putida OX=303 GN=pcaG PE=1 SV=3
+Length=201
+
+ Score = 308 bits (789),  Expect = 4e-107, Method: Composition-based stats.
+ Identities = 200/200 (100%), Positives = 200/200 (100%), Gaps = 0/200 (0%)
+
+Query  1    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  60
+            PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG
+Sbjct  2    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  61
+
+Query  61   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  120
+            HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV
+Sbjct  62   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  121
+
+Query  121  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  180
+            PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK
+Sbjct  122  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  181
+
+Query  181  TAYRFDIRIQGEGETVFFDF  200
+            TAYRFDIRIQGEGETVFFDF
+Sbjct  182  TAYRFDIRIQGEGETVFFDF  201
+
+
+>sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaG PE=1 SV=3
+Length=209
+
+ Score = 289 bits (740),  Expect = 2e-99, Method: Composition-based stats.
+ Identities = 107/201 (53%), Positives = 131/201 (65%), Gaps = 5/201 (2%)
+
+Query  5    LPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVR  64
+            L ETPSQT GPYVHIGL  + A     +  + N L + +  G+ I L GQV+DG G  +R
+Sbjct  9    LKETPSQTGGPYVHIGLLPKQANIEVFEHNLDNNLVQDNTQGQRIRLEGQVFDGLGLPLR  68
+
+Query  65   DSFLEVWQADANGEYQDAYNL-----ENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAG  119
+            D  +E+WQAD NG Y    +      +  F  +GRT   F  G W+ +T+KPG V    G
+Sbjct  69   DVLIEIWQADTNGVYPSQADTQGKQVDPNFLGWGRTGADFGTGFWSFNTIKPGAVPGRKG  128
+
+Query  120  VPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDG  179
+               APHI++ +FARGINI LHTR+YFDDEA+ANAK PVLN IE   RR+TL+AKR E DG
+Sbjct  129  STQAPHISLIIFARGINIGLHTRVYFDDEAEANAKDPVLNSIEWATRRQTLVAKREERDG  188
+
+Query  180  KTAYRFDIRIQGEGETVFFDF  200
+            +  YRFDIRIQGE ETVFFD 
+Sbjct  189  EVVYRFDIRIQGENETVFFDI  209
+
+
+>sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain 
+OS=Pseudomonas putida OX=303 GN=pcaH PE=1 SV=3
+Length=239
+
+ Score = 240 bits (612),  Expect = 1e-79, Method: Composition-based stats.
+ Identities = 61/209 (29%), Positives = 97/209 (46%), Gaps = 22/209 (11%)
+
+Query  2    IELLPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDGN  59
+            +  +P++ S+T GP + H+G           D ++         P GE I++ G+V D  
+Sbjct  37   LVSIPQSISETTGPNFSHLGFG-------AHDHDLLLNFNNGGLPIGERIIVAGRVVDQY  89
+
+Query  60   GHLVRDSFLEVWQADANGEYQDA-----YNLENAFNSFGRTATTFDAGEWTLHTVKPGVV  114
+            G  V ++ +E+WQA+A G Y+         L+  F   GR  T  D G ++  T+KPG  
+Sbjct  90   GKPVPNTLVEMWQANAGGRYRHKNDRYLAPLDPNFGGVGRCLTDSD-GYYSFRTIKPGPY  148
+
+Query  115  --NNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+               N        HI+  +    I   L T+LYF+ +      CP++  I  P+  + LIA
+Sbjct  149  PWRNGPNDWRPAHIHFGISGPSIATKLITQLYFEGDPLI-PMCPIVKSIANPEAVQQLIA  207
+
+Query  173  KRCEVDGKT----AYRFDIRIQGEGETVF  197
+            K    +       AYRFDI ++G+ +T F
+Sbjct  208  KLDMNNANPMDCLAYRFDIVLRGQRKTHF  236
+
+
+>sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Burkholderia cepacia OX=292 GN=pcaG PE=3 SV=1
+Length=197
+
+ Score = 227 bits (579),  Expect = 4e-75, Method: Composition-based stats.
+ Identities = 90/203 (44%), Positives = 120/203 (59%), Gaps = 10/203 (5%)
+
+Query  2    IELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGH  61
+            +  L +TPSQT GPY   GL  +  G   +       +A P A GEH+LL+GQV+DG+G+
+Sbjct  1    MTTLKQTPSQTVGPYFAYGLCPQQYGYDLKSL-FTPTIAAPHADGEHVLLVGQVFDGDGN  59
+
+Query  62   LVRDSFLEVWQADANGEYQDAYN--LENAFNSFGRTATTFDAG-EWTLHTVKPGVVNNAA  118
+            +V D+ LE  Q D  G +  + +   ++ F  F R  T  DA   + + TVKPG +    
+Sbjct  60   VVSDAMLEFTQVDGAGRFPASRDDVAKSGFTGFARVGTGTDAQHRFVVETVKPGRI----  115
+
+Query  119  GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVD  178
+                APHIN+++  RGI  H  TR+YFDDEA ANA  PVLNL+   +RR TL+AKR    
+Sbjct  116  AADEAPHINVTVMMRGILTHAFTRVYFDDEAAANAADPVLNLVPA-ERRATLVAKRDAQP  174
+
+Query  179  GKTA-YRFDIRIQGEGETVFFDF  200
+            G+   YRFD+R+QG  ETVFFD 
+Sbjct  175  GRPVVYRFDVRMQGPDETVFFDV  197
+
+
+>sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaH PE=1 SV=2
+Length=241
+
+ Score = 224 bits (570),  Expect = 3e-73, Method: Composition-based stats.
+ Identities = 62/210 (30%), Positives = 96/210 (46%), Gaps = 24/210 (11%)
+
+Query  2    IELLPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDGN  59
+            +  + ET S+   P +              +D ++    AK   P GE +++ G V D  
+Sbjct  37   LISIAETLSEVTAPHFSADKFGP-------KDNDLILNYAKDGLPIGERVIVHGYVRDQF  89
+
+Query  60   GHLVRDSFLEVWQADANGEYQDAYN-----LENAFNSFGRTATTFDAGEWTLHTVKPGVV  114
+            G  V+++ +EVWQA+A+G Y+   +     ++  F   GR  T  D G +   T+KPG  
+Sbjct  90   GRPVKNALVEVWQANASGRYRHPNDQYIGAMDPNFGGCGRMLTD-DNGYYVFRTIKPGPY  148
+
+Query  115  --NNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+               N        HI+ SL A G    L ++ YF+ +   ++ CP+L  I   Q+R  LIA
+Sbjct  149  PWRNRINEWRPAHIHFSLIADGWAQRLISQFYFEGDTLIDS-CPILKTIPSEQQRRALIA  207
+
+Query  173  KRC-----EVDGKTAYRFDIRIQGEGETVF  197
+                    E D +  YRFDI ++G   T F
+Sbjct  208  LEDKSNFIEADSR-CYRFDITLRGRRATYF  236
+
+
+>sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain 
+OS=Burkholderia cepacia OX=292 GN=pcaH PE=3 SV=1
+Length=235
+
+ Score = 197 bits (500),  Expect = 1e-62, Method: Composition-based stats.
+ Identities = 59/208 (28%), Positives = 84/208 (40%), Gaps = 23/208 (11%)
+
+Query  1    PIELLPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDG  58
+            P+  L E       P Y    L          D ++     K   P GE I++ G+V D 
+Sbjct  34   PMIPLKERLRDQYAPVYGAEDLGPL-------DHDLTKNAVKNGEPLGERIVVTGRVLDE  86
+
+Query  59   NGHLVRDSFLEVWQADANGEY-----QDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGV  113
+             G  VR++ +EVWQA+A G Y     Q    L+  F   GR  T  + G +   T+KPG 
+Sbjct  87   GGKPVRNTLVEVWQANAAGRYVHKVDQHDAPLDPNFLGAGRCMTDAE-GRYRFLTIKPGA  145
+
+Query  114  VN--NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLI  171
+                N        HI+ SLF       L T++YF  +    A  P+     +   R+ LI
+Sbjct  146  YPWGNHPNAWRPNHIHFSLFGDYFGSRLVTQMYFPGDPLL-AYDPIFQGTPEA-ARDRLI  203
+
+Query  172  AK----RCEVDGKTAYRFDIRIQGEGET  195
+            ++      E      Y FDI ++G   T
+Sbjct  204  SRFSLDTTEEGHALGYEFDIVLRGRDAT  231
+
+
+>sp|P07773|CATA_ACIAD Catechol 1,2-dioxygenase OS=Acinetobacter 
+baylyi (strain ATCC 33305 / BD413 / ADP1) OX=62977 GN=catA 
+PE=1 SV=1
+Length=311
+
+ Score = 74.3 bits (181),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 34/157 (22%), Positives = 59/157 (38%), Gaps = 25/157 (16%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A E+ G    D             G  ++L G ++D +G  + ++ 
+Sbjct  101  TPRTIEGPLYVAG-APESVGYARMDDGSDPN-------GHTLILHGTIFDADGKPLPNAK  152
+
+Query  68   LEVWQADANGEYQDAYNL--ENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP----  121
+            +E+W A+  G Y        + AFN   R+  T + G++ + T+ P         P    
+Sbjct  153  VEIWHANTKGFYSHFDPTGEQQAFN-MRRSIITDENGQYRVRTILPAGYGCPPEGPTQQL  211
+
+Query  122  ---------MAPHINISLFARGINIHLHTRLYFDDEA  149
+                        HI+  + A G +  L T++    + 
+Sbjct  212  LNQLGRHGNRPAHIHYFVSADG-HRKLTTQINVAGDP  247
+
+
+>sp|O67987|CLCA_RHOOP Chlorocatechol 1,2-dioxygenase OS=Rhodococcus 
+opacus OX=37919 GN=clcA PE=1 SV=1
+Length=257
+
+ Score = 72.8 bits (177),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 33/161 (20%), Positives = 57/161 (35%), Gaps = 24/161 (15%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            T S   GP+   G A    G P         +   + PG+ +   G V D +G  +  + 
+Sbjct  70   TSSAIQGPFFKEG-APLLTGKPA-----TLPMRADE-PGDRMRFTGSVRDTSGTPITGAV  122
+
+Query  68   LEVWQADANGEYQDAYNLENA-FNSFGRTATTFDAGEWTLHTVKPGVVNNAAG-------  119
+            ++VW +  +G Y          +   GR     + G    H+++P               
+Sbjct  123  IDVWHSTNDGNYSFFSPALPDQYLLRGRVVP-AEDGSIEFHSIRPVPYEIPKAGPTGQLM  181
+
+Query  120  -------VPMAPHINISLFARGINIHLHTRLYFDDEAQANA  153
+                        HI+I + A G    L T+LYF+ +   ++
+Sbjct  182  NSYLGRHSWRPAHIHIRITADGYRP-LITQLYFEGDPYLDS  221
+
+
+>sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter 
+lwoffii OX=28090 GN=catA2 PE=1 SV=1
+Length=275
+
+ Score = 72.4 bits (176),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/125 (22%), Positives = 51/125 (41%), Gaps = 15/125 (12%)
+
+Query  38   RLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTAT  97
+            RL     PG+ +++ G+V+  +G  + ++ +EVW A+  G Y      + AFN      T
+Sbjct  117  RLDDGTDPGQTLVMRGRVFGEDGKPLANALVEVWHANHLGNYSYFDKSQPAFNLRRSIRT  176
+
+Query  98   TFDAGEWTLHTVKPGVVNNAAGVP-------------MAPHINISLFARGINIHLHTRLY  144
+              + G+++  +V P   +                      HI+  + A G    L T++ 
+Sbjct  177  DAE-GKYSFRSVVPVGYSVPPQGQTQLLLDQLGRHGHRPAHIHFFVSAPGF-RKLTTQIN  234
+
+Query  145  FDDEA  149
+             D + 
+Sbjct  235  IDGDP  239
+
+
+>sp|P31019|PHEB_PSEUE Catechol 1,2-dioxygenase OS=Pseudomonas 
+sp. (strain EST1001) OX=69012 GN=pheB PE=3 SV=1
+Length=302
+
+ Score = 70.5 bits (171),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 39/155 (25%), Positives = 58/155 (37%), Gaps = 23/155 (15%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A EA G    D +       PD  GE + L GQV D  G  +  + 
+Sbjct  101  TPRTIEGPLYVAG-APEAEGFARMDDD-------PDTDGETMWLHGQVRDTAGKPIPGAK  152
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP------  121
+            +E+W  ++ G Y      +  +N   RT    + G +   +V P       G P      
+Sbjct  153  VEIWHCNSKGGYSFFDKSQTPYN-LRRTIIADNEGYYRARSVIPSGYGVPEGAPTDQVLK  211
+
+Query  122  -------MAPHINISLFARGINIHLHTRLYFDDEA  149
+                      HI+  + A G + HL T++    + 
+Sbjct  212  LLGRHGERPAHIHYFISAPG-HQHLTTQINLAGDP  245
+
+
+>sp|P86029|HQD2_CANAL Catechol 1,2-dioxygenase OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=HQD2 PE=1 
+SV=1
+Length=303
+
+ Score = 69.7 bits (169),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 35/157 (22%), Positives = 60/157 (38%), Gaps = 30/157 (19%)
+
+Query  51   LLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNLE-NAFNSFGRTATTFDAGEWTLHTV  109
+            + G+V D  G  +  + LEVWQ ++ G Y    + +   FN  G   T  D G ++   +
+Sbjct  128  VRGKVTDTEGKPLGGAQLEVWQCNSAGFYSQQADHDGPEFNLRGTFITD-DEGNYSFECL  186
+
+Query  110  KPGVVN---NAAGVP----------MAPHINISLFARGINIHLHTRLYFDDEAQANAKCP  156
+            +P       +                  HI+  +   G +  L T++Y       +A+CP
+Sbjct  187  RPTSYPIPYDGPAGDLLKIMDRHPNRPSHIHWRVSHPGYHT-LITQIY-------DAECP  238
+
+Query  157  VLNLIEQPQRRETLIAKRCEVD-------GKTAYRFD  186
+              N       ++ +I    +VD       GK  Y+ D
+Sbjct  239  YTNNDSVYAVKDDIIVHFEKVDNKDKDLVGKVEYKLD  275
+
+
+>sp|O33948|CATA1_ACILW Catechol 1,2-dioxygenase 1 OS=Acinetobacter 
+lwoffii OX=28090 GN=catA1 PE=1 SV=3
+Length=311
+
+ Score = 64.3 bits (155),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 28/167 (17%), Positives = 54/167 (32%), Gaps = 20/167 (12%)
+
+Query  41   KPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNL--ENAFNSFGRTATT  98
+             PD     +++ G V   +G  V  + +E W A++ G Y        ++ FN  G   T 
+Sbjct  126  NPDEDAGPLVIHGTVTGPDGKPVAGAVVECWHANSKGFYSHFDPTGAQSDFNLRGAVKTG  185
+
+Query  99   FDAGEWTLHTVKPGVVNNAA-------------GVPMAPHINISLFARGINIHLHTRLYF  145
+             D G++   T+ P                          H++  + +      L T+   
+Sbjct  186  AD-GKYEFRTLMPVGYGCPPQGATQQLLNVLGRHGNRPAHVHFFVSSDS-ARKLTTQFNI  243
+
+Query  146  DDEAQA---NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRI  189
+            + +       A      LI     ++   A   + D      F++ +
+Sbjct  244  EGDPLIWDDFAYATREELIPPVTEKKGGTALGLKADTYKDIEFNLTL  290
+
+
+>sp|Q6F4M7|NPCC_RHOOP Hydroxyquinol 1,2-dioxygenase OS=Rhodococcus 
+opacus OX=37919 GN=npcC PE=2 SV=1
+Length=300
+
+ Score = 63.9 bits (154),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 25/131 (19%), Positives = 46/131 (35%), Gaps = 16/131 (12%)
+
+Query  41   KPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFD  100
+               A G+   + G V D  G+ V ++ +EVWQ D +G Y   Y+ +   +      +   
+Sbjct  129  AGGATGQPCWIEGTVTDTAGNPVPEARIEVWQNDEDGFYDVQYS-DGRVSGRAHLFSDA-  186
+
+Query  101  AGEWTLHTVKPGVVNNAAGVP-------------MAPHINISLFARGINIHLHTRLYFDD  147
+             G +    + P      +  P                H++  + A G+   L T ++   
+Sbjct  187  HGRYRFWGMTPVPYPIPSDGPVGKMLAATNRSPMRVAHLHFMVTADGLRT-LVTHIFVAG  245
+
+Query  148  EAQANAKCPVL  158
+            + Q      V 
+Sbjct  246  DPQLERGDSVF  256
+
+
+>sp|Q5PXQ6|CHQB_NOCSI Hydroxyquinol 1,2-dioxygenase OS=Nocardioides 
+simplex OX=2045 GN=chqB PE=1 SV=1
+Length=293
+
+ Score = 63.9 bits (154),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 30/158 (19%), Positives = 57/158 (36%), Gaps = 22/158 (14%)
+
+Query  51   LLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVK  110
+            + G V D +G+ V D+ +EVW+AD +G Y   Y+ ++   +     +  D G +    + 
+Sbjct  136  VEGTVTDTDGNPVPDARIEVWEADDDGFYDVQYD-DDRTAARAHLLSGPDGG-YAFWAIT  193
+
+Query  111  PGVVN-------------NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQAN-----  152
+            P                        A H++  + A G    L T ++ + +   +     
+Sbjct  194  PTPYPIPHDGPVGRMLAATGRSPMRASHLHFMVTAPGRRT-LVTHIFVEGDELLDRDSVF  252
+
+Query  153  -AKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRI  189
+              K  ++   E+          R      +  RFDI +
+Sbjct  253  GVKDSLVKSFERQPAGAPTPGGREIDGPWSRVRFDIVL  290
+
+
+>sp|P95607|CATA_RHOOP Catechol 1,2-dioxygenase (Fragment) OS=Rhodococcus 
+opacus OX=37919 GN=catA PE=1 SV=1
+Length=270
+
+ Score = 62.4 bits (150),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 30/154 (19%), Positives = 58/154 (38%), Gaps = 27/154 (18%)
+
+Query  49   ILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHT  108
+            ++  GQV D +G+ +  + +E+W AD +G Y         +N  G      + G + + T
+Sbjct  122  LVFSGQVTDLDGNGLAGAKVELWHADNDGYYSQFAPHLPEWNLRGTIIAD-EEGRYEITT  180
+
+Query  109  VKPGVV---------------NNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANA  153
+            ++P                  N         H+++ + A G    + T+LYF      ++
+Sbjct  181  IQPAPYQIPTDGPTGQFIEAQNGHP--WRPAHLHLIVSAPG-KESVTTQLYFKGGEWIDS  237
+
+Query  154  KCPVLNLIEQPQRRETLIAKRCEVDGK--TAYRF  185
+                   +    + E ++  +   DGK    Y F
+Sbjct  238  D------VASATKPELILDPKTGDDGKNYVTYNF  265
+
+
+>sp|P27098|TCBC_PSESQ Chlorocatechol 1,2-dioxygenase OS=Pseudomonas 
+sp. (strain P51) OX=65067 GN=tcbC PE=1 SV=1
+Length=251
+
+ Score = 62.0 bits (149),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 31/196 (16%), Positives = 61/196 (31%), Gaps = 32/196 (16%)
+
+Query  14   GPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQA  73
+            GPY   G  + A    T + +          P   +++ G V   +G     + ++VW +
+Sbjct  75   GPYFLEGAPVVAGALKTYEDD-------SHHP---LVIRGAVRTDDGAPAAGAVIDVWHS  124
+
+Query  74   DANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVN-------------NAAGV  120
+              +G+Y   ++        G+       G++ + T  P                   +  
+Sbjct  125  TPDGKYSGIHDQIPTDMYRGKVVADAQ-GKYAVRTTMPAPYQIPNKGPTGVLLEMMGSHT  183
+
+Query  121  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  180
+                H++  +   G    L T+ YF+     ++ C     +        L+       G 
+Sbjct  184  WRPAHVHFKVRKDGFAP-LTTQYYFEGGDWVDSDC--CKGVAPD-----LVMPTKTEGGA  235
+
+Query  181  TAYRFDIRIQGEGETV  196
+                 D  I+   E V
+Sbjct  236  QVMDIDFVIERAREHV  251
+
+
+>sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia 
+conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=RC0543 
+PE=3 SV=1
+Length=208
+
+ Score = 58.9 bits (141),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 38/161 (24%), Positives = 64/161 (40%), Gaps = 36/161 (22%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G+V D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GERILIKGKVLDQNCVPVADAKVYLWQAGSGGKYPYEPLKTRVDKRRFTSKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP---GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQ  150
+              ATT + GE+   ++ P        +A +    H ++          L TRL   D+  
+Sbjct  123  -IATTNNKGEYYFISMLPYTSSRYLRSANI-RIEHPSL--------TTLETRLDLSDQNM  172
+
+Query  151  ANAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+             + +C  +N I                +   +Y FD+ +QG
+Sbjct  173  CDNECGEVNPI-----------LIEPQENMPSYCFDLVLQG  202
+
+
+>sp|Q4ULV5|Y617_RICFE Putative dioxygenase RF_0617 OS=Rickettsia 
+felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 GN=RF_0617 
+PE=3 SV=1
+Length=208
+
+ Score = 56.6 bits (135),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 36/161 (22%), Positives = 63/161 (39%), Gaps = 36/161 (22%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQ  + G+Y                  +++F   G
+Sbjct  63   GERILIKGKILDQNCVPVADAKVYLWQVGSGGKYPYEPLKTRVDKRRFTSKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP---GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQ  150
+              ATT + GE+   ++ P        +A +    H ++          L TRL   D+  
+Sbjct  123  -IATTNNKGEYYFISMLPYKSSRYLRSANI-RIEHPSL--------TTLETRLDLSDKNM  172
+
+Query  151  ANAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+             + +C  +N I                +   +Y FD+ +QG
+Sbjct  173  CDNECGEVNPI-----------LIEPQENMPSYCFDLVLQG  202
+
+
+>sp|P0A396|TFDC_CUPPJ Chlorocatechol 1,2-dioxygenase OS=Cupriavidus 
+pinatubonensis (strain JMP 134 / LMG 1197) OX=264198 GN=tfdC 
+PE=3 SV=1
+Length=255
+
+ Score = 56.6 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 29/157 (18%), Positives = 49/157 (31%), Gaps = 29/157 (18%)
+
+Query  14   GPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQA  73
+            GPY            P  D  +         P   +L+ G V   +G +V D  ++VW +
+Sbjct  75   GPYY-------RDDAPLVDDRLKTYDTDDHKP---LLIQGTVKAVDGSVVEDVTIDVWHS  124
+
+Query  74   DANGEYQDAYNLENA--FNSFGRTATTFDAGEWTLHTVKPGVVN-------------NAA  118
+              +G+Y   ++      +    R  T    G + + T  P                    
+Sbjct  125  TPDGKYSGFHDDIPTDFYRGKLRVGTD---GSFRVRTTMPVPYQIPDQGPTGALLETMGG  181
+
+Query  119  GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKC  155
+                  H++  + A G    L T+ YF+        C
+Sbjct  182  HSWRPAHVHFKVKAPGYET-LTTQYYFEGGDWITDDC  217
+
+
+>sp|P0A397|TFDC_BURCE Chlorocatechol 1,2-dioxygenase OS=Burkholderia 
+cepacia OX=292 GN=tfdC PE=3 SV=1
+Length=255
+
+ Score = 56.6 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 29/157 (18%), Positives = 49/157 (31%), Gaps = 29/157 (18%)
+
+Query  14   GPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQA  73
+            GPY            P  D  +         P   +L+ G V   +G +V D  ++VW +
+Sbjct  75   GPYY-------RDDAPLVDDRLKTYDTDDHKP---LLIQGTVKAVDGSVVEDVTIDVWHS  124
+
+Query  74   DANGEYQDAYNLENA--FNSFGRTATTFDAGEWTLHTVKPGVVN-------------NAA  118
+              +G+Y   ++      +    R  T    G + + T  P                    
+Sbjct  125  TPDGKYSGFHDDIPTDFYRGKLRVGTD---GSFRVRTTMPVPYQIPDQGPTGALLETMGG  181
+
+Query  119  GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKC  155
+                  H++  + A G    L T+ YF+        C
+Sbjct  182  HSWRPAHVHFKVKAPGYET-LTTQYYFEGGDWITDDC  217
+
+
+>sp|Q43984|CATA_ACIGI Catechol 1,2-dioxygenase OS=Acinetobacter 
+guillouiae OX=106649 GN=catA PE=2 SV=1
+Length=305
+
+ Score = 55.8 bits (133),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 31/157 (20%), Positives = 54/157 (34%), Gaps = 28/157 (18%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHI---LLLGQVYDGNGHLVR  64
+            TP    GP    G A E+ G    D           +   H+   ++ G V D  G ++ 
+Sbjct  99   TPRTIEGPLYVAG-APESVGFARMD---------DGSESAHVDALIIEGNVTDTAGQIIP  148
+
+Query  65   DSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP---  121
+            ++ +E+W A++ G Y      ++AFN      T    G++   T  P             
+Sbjct  149  NAKVEIWHANSLGNYSFFDKSQSAFNLRRSIFTDTQ-GQYIAQTTMPVGYGCPPEGTTQA  207
+
+Query  122  ----------MAPHINISLFARGINIHLHTRLYFDDE  148
+                         H++  + A G    L T+   + +
+Sbjct  208  LLNLLGRHGNRPSHVHYFVSAPGY-RKLTTQFNIEGD  243
+
+
+>sp|P11451|CLCA_PSEPU Chlorocatechol 1,2-dioxygenase OS=Pseudomonas 
+putida OX=303 GN=clcA PE=1 SV=1
+Length=260
+
+ Score = 55.8 bits (133),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 35/194 (18%), Positives = 59/194 (30%), Gaps = 32/194 (16%)
+
+Query  14   GPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEVWQA  73
+            GPY   G  +      T D +          P   +++ G V    G L+  + ++VW +
+Sbjct  75   GPYFLEGAPVVEGVLKTYDTD-------DHKP---LIIRGTVRSDTGELLAGAVIDVWHS  124
+
+Query  74   DANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVN-----------NAAGV--  120
+              +G Y   ++        G+  T    G + + T  P                  G   
+Sbjct  125  TPDGLYSGIHDNIPVDYYRGKLVTDSQ-GNYRVRTTMPVPYQIPYEGPTGRLLGHLGSHT  183
+
+Query  121  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  180
+                H++  +   G    L T+ YF+     +  C    +         LI      DG 
+Sbjct  184  WRPAHVHFKVRKDGF-EPLTTQYYFEGGKWVDDDC-CHGVTPD------LITPETIEDGV  235
+
+Query  181  TAYRFDIRIQGEGE  194
+                 D  I+ E  
+Sbjct  236  RVMTLDFVIEREQA  249
+
+
+>sp|Q68WY1|Y384_RICTY Putative dioxygenase RT0384 OS=Rickettsia 
+typhi (strain ATCC VR-144 / Wilmington) OX=257363 GN=RT0384 
+PE=3 SV=1
+Length=208
+
+ Score = 52.4 bits (124),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 35/160 (22%), Positives = 60/160 (38%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GEMILIRGKILDQNCVPVTDAKVYLWQAGSGGKYPYEPLKTRVDKRRFTNKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+               TT + GE+   ++ P               H N+          L TRL   D+   
+Sbjct  123  -IVTTNNKGEYYFISMLPYKSSHYLRTANIRIEHPNL--------TTLETRLELSDQNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            +  C  ++ I    ++              +Y FD+ +QG
+Sbjct  174  DNDCGEISPILTETKKNI-----------QSYCFDLVLQG  202
+
+
+>sp|Q9ZDD5|Y396_RICPR Putative dioxygenase RP396 OS=Rickettsia 
+prowazekii (strain Madrid E) OX=272947 GN=RP396 PE=3 SV=1
+Length=208
+
+ Score = 51.6 bits (122),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 36/160 (23%), Positives = 61/160 (38%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQA   G+Y                  +++F   G
+Sbjct  63   GEMILIRGKILDQNCVPVTDAKVYLWQAGNGGKYPYEPLKTRVDKSRFTNKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+              ATT + GE+   ++ P               H N+          L TRL   D+   
+Sbjct  123  -IATTNNKGEYYFISMLPYKSPRYLRNANIRIEHPNL--------TTLETRLDLFDKNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            + +C  ++ I    ++              +Y FD+ +QG
+Sbjct  174  DNECGEISPILIETKKNI-----------PSYCFDLVLQG  202
+
+
+>sp|Q1RJQ4|Y329_RICBR Putative dioxygenase RBE_0329 OS=Rickettsia 
+bellii (strain RML369-C) OX=336407 GN=RBE_0329 PE=3 SV=1
+Length=208
+
+ Score = 50.4 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 38/160 (24%), Positives = 63/160 (39%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE +++ G V D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GEKVIIKGIVLDQNCVPVADAKVYLWQAGSGGKYPYEPLKTRVDKRRFTGKKDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP-GVVNNAAGVP-MAPHINISLFARGINIHLHTRLYFDDEAQA  151
+             TATT + GE+   ++ P   V N   V     H ++          L TRL   ++   
+Sbjct  123  -TATTNNKGEYYFVSMLPYKSVGNLKSVNIRVEHADLKT--------LETRLDLSNKNIC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            + +C  +N            A         +Y FD+ +QG
+Sbjct  174  SNECGEINP-----------ALIEPQQHLRSYCFDLVLQG  202
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.133    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12296581616
+Results from round 3
+
+
+Query= d3t63a_
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain ...  259     9e-88
+sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain ...  245     5e-82
+sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain O...  210     8e-68
+sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain O...  210     9e-68
+sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain ...  189     2e-60
+sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain O...  184     2e-57
+sp|P27098|TCBC_PSESQ Chlorocatechol 1,2-dioxygenase OS=Pseudomona...  169     2e-51
+sp|O33948|CATA1_ACILW Catechol 1,2-dioxygenase 1 OS=Acinetobacter...  168     1e-50
+sp|P11451|CLCA_PSEPU Chlorocatechol 1,2-dioxygenase OS=Pseudomona...  163     4e-49
+sp|P07773|CATA_ACIAD Catechol 1,2-dioxygenase OS=Acinetobacter ba...  161     1e-47
+sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter...  158     7e-47
+sp|P31019|PHEB_PSEUE Catechol 1,2-dioxygenase OS=Pseudomonas sp. ...  158     1e-46
+sp|Q43984|CATA_ACIGI Catechol 1,2-dioxygenase OS=Acinetobacter gu...  156     6e-46
+sp|P95607|CATA_RHOOP Catechol 1,2-dioxygenase (Fragment) OS=Rhodo...  150     7e-44
+sp|O67987|CLCA_RHOOP Chlorocatechol 1,2-dioxygenase OS=Rhodococcu...  149     8e-44
+sp|P0A396|TFDC_CUPPJ Chlorocatechol 1,2-dioxygenase OS=Cupriavidu...  146     1e-42
+sp|P0A397|TFDC_BURCE Chlorocatechol 1,2-dioxygenase OS=Burkholder...  146     1e-42
+sp|Q5PXQ6|CHQB_NOCSI Hydroxyquinol 1,2-dioxygenase OS=Nocardioide...  146     4e-42
+sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia co...  142     8e-42
+sp|Q9ZDD5|Y396_RICPR Putative dioxygenase RP396 OS=Rickettsia pro...  141     3e-41
+sp|Q68WY1|Y384_RICTY Putative dioxygenase RT0384 OS=Rickettsia ty...  141     4e-41
+sp|P86029|HQD2_CANAL Catechol 1,2-dioxygenase OS=Candida albicans...  144     4e-41
+sp|Q4ULV5|Y617_RICFE Putative dioxygenase RF_0617 OS=Rickettsia f...  139     1e-40
+sp|Q6F4M7|NPCC_RHOOP Hydroxyquinol 1,2-dioxygenase OS=Rhodococcus...  142     2e-40
+sp|Q1RJQ4|Y329_RICBR Putative dioxygenase RBE_0329 OS=Rickettsia ...  127     7e-36
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P00436|PCXA_PSEPU Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Pseudomonas putida OX=303 GN=pcaG PE=1 SV=3
+Length=201
+
+ Score = 259 bits (662),  Expect = 9e-88, Method: Composition-based stats.
+ Identities = 200/200 (100%), Positives = 200/200 (100%), Gaps = 0/200 (0%)
+
+Query  1    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  60
+            PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG
+Sbjct  2    PIELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNG  61
+
+Query  61   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  120
+            HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV
+Sbjct  62   HLVRDSFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGV  121
+
+Query  121  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  180
+            PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK
+Sbjct  122  PMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDGK  181
+
+Query  181  TAYRFDIRIQGEGETVFFDF  200
+            TAYRFDIRIQGEGETVFFDF
+Sbjct  182  TAYRFDIRIQGEGETVFFDF  201
+
+
+>sp|P20371|PCXA_ACIAD Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaG PE=1 SV=3
+Length=209
+
+ Score = 245 bits (625),  Expect = 5e-82, Method: Composition-based stats.
+ Identities = 107/201 (53%), Positives = 131/201 (65%), Gaps = 5/201 (2%)
+
+Query  5    LPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVR  64
+            L ETPSQT GPYVHIGL  + A     +  + N L + +  G+ I L GQV+DG G  +R
+Sbjct  9    LKETPSQTGGPYVHIGLLPKQANIEVFEHNLDNNLVQDNTQGQRIRLEGQVFDGLGLPLR  68
+
+Query  65   DSFLEVWQADANGEYQDAYNL-----ENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAG  119
+            D  +E+WQAD NG Y    +      +  F  +GRT   F  G W+ +T+KPG V    G
+Sbjct  69   DVLIEIWQADTNGVYPSQADTQGKQVDPNFLGWGRTGADFGTGFWSFNTIKPGAVPGRKG  128
+
+Query  120  VPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVDG  179
+               APHI++ +FARGINI LHTR+YFDDEA+ANAK PVLN IE   RR+TL+AKR E DG
+Sbjct  129  STQAPHISLIIFARGINIGLHTRVYFDDEAEANAKDPVLNSIEWATRRQTLVAKREERDG  188
+
+Query  180  KTAYRFDIRIQGEGETVFFDF  200
+            +  YRFDIRIQGE ETVFFD 
+Sbjct  189  EVVYRFDIRIQGENETVFFDI  209
+
+
+>sp|P00437|PCXB_PSEPU Protocatechuate 3,4-dioxygenase beta chain 
+OS=Pseudomonas putida OX=303 GN=pcaH PE=1 SV=3
+Length=239
+
+ Score = 210 bits (534),  Expect = 8e-68, Method: Composition-based stats.
+ Identities = 61/209 (29%), Positives = 98/209 (47%), Gaps = 22/209 (11%)
+
+Query  2    IELLPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDGN  59
+            +  +P++ S+T GP + H+G           D ++         P GE I++ G+V D  
+Sbjct  37   LVSIPQSISETTGPNFSHLGFG-------AHDHDLLLNFNNGGLPIGERIIVAGRVVDQY  89
+
+Query  60   GHLVRDSFLEVWQADANGEYQDAYN-----LENAFNSFGRTATTFDAGEWTLHTVKPGVV  114
+            G  V ++ +E+WQA+A G Y+   +     L+  F   GR  T  D G ++  T+KPG  
+Sbjct  90   GKPVPNTLVEMWQANAGGRYRHKNDRYLAPLDPNFGGVGRCLTDSD-GYYSFRTIKPGPY  148
+
+Query  115  N--NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+               N        HI+  +    I   L T+LYF+ +      CP++  I  P+  + LIA
+Sbjct  149  PWRNGPNDWRPAHIHFGISGPSIATKLITQLYFEGDPLI-PMCPIVKSIANPEAVQQLIA  207
+
+Query  173  KRCEVDGKT----AYRFDIRIQGEGETVF  197
+            K    +       AYRFDI ++G+ +T F
+Sbjct  208  KLDMNNANPMDCLAYRFDIVLRGQRKTHF  236
+
+
+>sp|P20372|PCXB_ACIAD Protocatechuate 3,4-dioxygenase beta chain 
+OS=Acinetobacter baylyi (strain ATCC 33305 / BD413 / ADP1) 
+OX=62977 GN=pcaH PE=1 SV=2
+Length=241
+
+ Score = 210 bits (534),  Expect = 9e-68, Method: Composition-based stats.
+ Identities = 60/209 (29%), Positives = 94/209 (45%), Gaps = 22/209 (11%)
+
+Query  2    IELLPETPSQTAGPYV-HIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDGN  59
+            +  + ET S+   P+               +D ++    AK   P GE +++ G V D  
+Sbjct  37   LISIAETLSEVTAPHFSADKFGP-------KDNDLILNYAKDGLPIGERVIVHGYVRDQF  89
+
+Query  60   GHLVRDSFLEVWQADANGEYQDAYN-----LENAFNSFGRTATTFDAGEWTLHTVKPGVV  114
+            G  V+++ +EVWQA+A+G Y+   +     ++  F   GR  T  D G +   T+KPG  
+Sbjct  90   GRPVKNALVEVWQANASGRYRHPNDQYIGAMDPNFGGCGRMLTD-DNGYYVFRTIKPGPY  148
+
+Query  115  N--NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+               N        HI+ SL A G    L ++ YF+ +   ++ CP+L  I   Q+R  LIA
+Sbjct  149  PWRNRINEWRPAHIHFSLIADGWAQRLISQFYFEGDTLIDS-CPILKTIPSEQQRRALIA  207
+
+Query  173  KRCE----VDGKTAYRFDIRIQGEGETVF  197
+               +          YRFDI ++G   T F
+Sbjct  208  LEDKSNFIEADSRCYRFDITLRGRRATYF  236
+
+
+>sp|P15109|PCXA_BURCE Protocatechuate 3,4-dioxygenase alpha chain 
+OS=Burkholderia cepacia OX=292 GN=pcaG PE=3 SV=1
+Length=197
+
+ Score = 189 bits (481),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 90/203 (44%), Positives = 120/203 (59%), Gaps = 10/203 (5%)
+
+Query  2    IELLPETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGH  61
+            +  L +TPSQT GPY   GL  +  G   +       +A P A GEH+LL+GQV+DG+G+
+Sbjct  1    MTTLKQTPSQTVGPYFAYGLCPQQYGYDLKSL-FTPTIAAPHADGEHVLLVGQVFDGDGN  59
+
+Query  62   LVRDSFLEVWQADANGEYQDAYN--LENAFNSFGRTATTFDAG-EWTLHTVKPGVVNNAA  118
+            +V D+ LE  Q D  G +  + +   ++ F  F R  T  DA   + + TVKPG +    
+Sbjct  60   VVSDAMLEFTQVDGAGRFPASRDDVAKSGFTGFARVGTGTDAQHRFVVETVKPGRI----  115
+
+Query  119  GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEVD  178
+                APHIN+++  RGI  H  TR+YFDDEA ANA  PVLNL+   +RR TL+AKR    
+Sbjct  116  AADEAPHINVTVMMRGILTHAFTRVYFDDEAAANAADPVLNLVP-AERRATLVAKRDAQP  174
+
+Query  179  GKTA-YRFDIRIQGEGETVFFDF  200
+            G+   YRFD+R+QG  ETVFFD 
+Sbjct  175  GRPVVYRFDVRMQGPDETVFFDV  197
+
+
+>sp|P15110|PCXB_BURCE Protocatechuate 3,4-dioxygenase beta chain 
+OS=Burkholderia cepacia OX=292 GN=pcaH PE=3 SV=1
+Length=235
+
+ Score = 184 bits (466),  Expect = 2e-57, Method: Composition-based stats.
+ Identities = 59/208 (28%), Positives = 83/208 (40%), Gaps = 23/208 (11%)
+
+Query  1    PIELLPETPSQTAGP-YVHIGLALEAAGNPTRDQEIWNRLAKPDAP-GEHILLLGQVYDG  58
+            P+  L E       P Y    L          D ++     K   P GE I++ G+V D 
+Sbjct  34   PMIPLKERLRDQYAPVYGAEDLGPL-------DHDLTKNAVKNGEPLGERIVVTGRVLDE  86
+
+Query  59   NGHLVRDSFLEVWQADANGEY-----QDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGV  113
+             G  VR++ +EVWQA+A G Y     Q    L+  F   GR  T  + G +   T+KPG 
+Sbjct  87   GGKPVRNTLVEVWQANAAGRYVHKVDQHDAPLDPNFLGAGRCMTDAE-GRYRFLTIKPGA  145
+
+Query  114  VN--NAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLI  171
+                N        HI+ SLF       L T++YF  +    A  P+         R+ LI
+Sbjct  146  YPWGNHPNAWRPNHIHFSLFGDYFGSRLVTQMYFPGDPLL-AYDPIFQGTP-EAARDRLI  203
+
+Query  172  AK----RCEVDGKTAYRFDIRIQGEGET  195
+            ++      E      Y FDI ++G   T
+Sbjct  204  SRFSLDTTEEGHALGYEFDIVLRGRDAT  231
+
+
+>sp|P27098|TCBC_PSESQ Chlorocatechol 1,2-dioxygenase OS=Pseudomonas 
+sp. (strain P51) OX=65067 GN=tcbC PE=1 SV=1
+Length=251
+
+ Score = 169 bits (427),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 30/199 (15%), Positives = 60/199 (30%), Gaps = 32/199 (16%)
+
+Query  11   QTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEV  70
+               GPY   G  + A    T + +              +++ G V   +G     + ++V
+Sbjct  72   AMQGPYFLEGAPVVAGALKTYEDDSH----------HPLVIRGAVRTDDGAPAAGAVIDV  121
+
+Query  71   WQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNA-------------  117
+            W +  +G+Y   ++        G+       G++ + T  P                   
+Sbjct  122  WHSTPDGKYSGIHDQIPTDMYRGKVVADAQ-GKYAVRTTMPAPYQIPNKGPTGVLLEMMG  180
+
+Query  118  AGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEV  177
+            +      H++  +   G    L T+ YF+     ++ C     +        L+      
+Sbjct  181  SHTWRPAHVHFKVRKDGFAP-LTTQYYFEGGDWVDSDC--CKGVAPD-----LVMPTKTE  232
+
+Query  178  DGKTAYRFDIRIQGEGETV  196
+             G      D  I+   E V
+Sbjct  233  GGAQVMDIDFVIERAREHV  251
+
+
+>sp|O33948|CATA1_ACILW Catechol 1,2-dioxygenase 1 OS=Acinetobacter 
+lwoffii OX=28090 GN=catA1 PE=1 SV=3
+Length=311
+
+ Score = 168 bits (426),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 34/200 (17%), Positives = 61/200 (31%), Gaps = 28/200 (14%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G         T    +      PD     +++ G V   +G  V  + 
+Sbjct  101  TPRTIEGPLYVAG--------ATVHDGVSKIDINPDEDAGPLVIHGTVTGPDGKPVAGAV  152
+
+Query  68   LEVWQADANGEYQDAYNL--ENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAA-------  118
+            +E W A++ G Y        ++ FN  G   T  D G++   T+ P              
+Sbjct  153  VECWHANSKGFYSHFDPTGAQSDFNLRGAVKTGAD-GKYEFRTLMPVGYGCPPQGATQQL  211
+
+Query  119  ------GVPMAPHINISLFARGINIHLHTRLYFDDEAQA---NAKCPVLNLIEQPQRRET  169
+                        H++  + +      L T+   + +       A      LI     ++ 
+Sbjct  212  LNVLGRHGNRPAHVHFFVSSDS-ARKLTTQFNIEGDPLIWDDFAYATREELIPPVTEKKG  270
+
+Query  170  LIAKRCEVDGKTAYRFDIRI  189
+              A   + D      F++ +
+Sbjct  271  GTALGLKADTYKDIEFNLTL  290
+
+
+>sp|P11451|CLCA_PSEPU Chlorocatechol 1,2-dioxygenase OS=Pseudomonas 
+putida OX=303 GN=clcA PE=1 SV=1
+Length=260
+
+ Score = 163 bits (412),  Expect = 4e-49, Method: Composition-based stats.
+ Identities = 34/197 (17%), Positives = 59/197 (30%), Gaps = 32/197 (16%)
+
+Query  11   QTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEV  70
+               GPY   G  +      T D +          P   +++ G V    G L+  + ++V
+Sbjct  72   AIQGPYFLEGAPVVEGVLKTYDTD-------DHKP---LIIRGTVRSDTGELLAGAVIDV  121
+
+Query  71   WQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNA-------------  117
+            W +  +G Y   ++        G+  T    G + + T  P                   
+Sbjct  122  WHSTPDGLYSGIHDNIPVDYYRGKLVTDSQ-GNYRVRTTMPVPYQIPYEGPTGRLLGHLG  180
+
+Query  118  AGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEV  177
+            +      H++  +   G    L T+ YF+     +  C    +         LI      
+Sbjct  181  SHTWRPAHVHFKVRKDGFEP-LTTQYYFEGGKWVDDDC-CHGVTP------DLITPETIE  232
+
+Query  178  DGKTAYRFDIRIQGEGE  194
+            DG      D  I+ E  
+Sbjct  233  DGVRVMTLDFVIEREQA  249
+
+
+>sp|P07773|CATA_ACIAD Catechol 1,2-dioxygenase OS=Acinetobacter 
+baylyi (strain ATCC 33305 / BD413 / ADP1) OX=62977 GN=catA 
+PE=1 SV=1
+Length=311
+
+ Score = 161 bits (407),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 38/208 (18%), Positives = 68/208 (33%), Gaps = 33/208 (16%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A E+ G    D             G  ++L G ++D +G  + ++ 
+Sbjct  101  TPRTIEGPLYVAG-APESVGYARMDDGSDPN-------GHTLILHGTIFDADGKPLPNAK  152
+
+Query  68   LEVWQADANGEYQDAYNL--ENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAA-------  118
+            +E+W A+  G Y        + AFN      T  + G++ + T+ P              
+Sbjct  153  VEIWHANTKGFYSHFDPTGEQQAFNMRRSIITD-ENGQYRVRTILPAGYGCPPEGPTQQL  211
+
+Query  119  ------GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+                        HI+  + A G +  L T++    +                 R   ++ 
+Sbjct  212  LNQLGRHGNRPAHIHYFVSADG-HRKLTTQINVAGDPYTYDD------FAYATREGLVVD  264
+
+Query  173  KRCEVDGKTAYRFDIRIQGEGETVFFDF  200
+                 D +     D+  +G    + FD 
+Sbjct  265  AVEHTDPEAIKANDV--EGPFAEMVFDL  290
+
+
+>sp|O33950|CATA2_ACILW Catechol 1,2-dioxygenase 2 OS=Acinetobacter 
+lwoffii OX=28090 GN=catA2 PE=1 SV=1
+Length=275
+
+ Score = 158 bits (399),  Expect = 7e-47, Method: Composition-based stats.
+ Identities = 33/160 (21%), Positives = 59/160 (37%), Gaps = 24/160 (15%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A  + G+   D            PG+ +++ G+V+  +G  + ++ 
+Sbjct  96   TPRTIEGPLYVAG-APVSDGHARLDD--------GTDPGQTLVMRGRVFGEDGKPLANAL  146
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAA---------  118
+            +EVW A+  G Y      + AFN      T  + G+++  +V P   +            
+Sbjct  147  VEVWHANHLGNYSYFDKSQPAFNLRRSIRTDAE-GKYSFRSVVPVGYSVPPQGQTQLLLD  205
+
+Query  119  ----GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAK  154
+                      HI+  + A G    L T++  D +      
+Sbjct  206  QLGRHGHRPAHIHFFVSAPGFR-KLTTQINIDGDPYLWDD  244
+
+
+>sp|P31019|PHEB_PSEUE Catechol 1,2-dioxygenase OS=Pseudomonas 
+sp. (strain EST1001) OX=69012 GN=pheB PE=3 SV=1
+Length=302
+
+ Score = 158 bits (399),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 37/160 (23%), Positives = 56/160 (35%), Gaps = 23/160 (14%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A EA G    D +       PD  GE + L GQV D  G  +  + 
+Sbjct  101  TPRTIEGPLYVAG-APEAEGFARMDDD-------PDTDGETMWLHGQVRDTAGKPIPGAK  152
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP------  121
+            +E+W  ++ G Y      +  +N         + G +   +V P       G P      
+Sbjct  153  VEIWHCNSKGGYSFFDKSQTPYNLRRTIIADNE-GYYRARSVIPSGYGVPEGAPTDQVLK  211
+
+Query  122  -------MAPHINISLFARGINIHLHTRLYFDDEAQANAK  154
+                      HI+  + A G + HL T++    +      
+Sbjct  212  LLGRHGERPAHIHYFISAPG-HQHLTTQINLAGDPYTYDD  250
+
+
+>sp|Q43984|CATA_ACIGI Catechol 1,2-dioxygenase OS=Acinetobacter 
+guillouiae OX=106649 GN=catA PE=2 SV=1
+Length=305
+
+ Score = 156 bits (394),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 30/160 (19%), Positives = 53/160 (33%), Gaps = 22/160 (14%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            TP    GP    G A E+ G    D    +           +++ G V D  G ++ ++ 
+Sbjct  99   TPRTIEGPLYVAG-APESVGFARMDDGSESAHVDA------LIIEGNVTDTAGQIIPNAK  151
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAA---------  118
+            +E+W A++ G Y      ++AFN      T    G++   T  P                
+Sbjct  152  VEIWHANSLGNYSFFDKSQSAFNLRRSIFTDTQ-GQYIAQTTMPVGYGCPPEGTTQALLN  210
+
+Query  119  ----GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAK  154
+                      H++  + A G    L T+   + +      
+Sbjct  211  LLGRHGNRPSHVHYFVSAPGYR-KLTTQFNIEGDKYLWDD  249
+
+
+>sp|P95607|CATA_RHOOP Catechol 1,2-dioxygenase (Fragment) OS=Rhodococcus 
+opacus OX=37919 GN=catA PE=1 SV=1
+Length=270
+
+ Score = 150 bits (378),  Expect = 7e-44, Method: Composition-based stats.
+ Identities = 33/197 (17%), Positives = 68/197 (35%), Gaps = 28/197 (14%)
+
+Query  6    PETPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRD  65
+              T     GPY           +P    +    + + D     ++  GQV D +G+ +  
+Sbjct  86   KGTMGSIEGPYYIE-------NSPELPSKCTLPMREEDEKITPLVFSGQVTDLDGNGLAG  138
+
+Query  66   SFLEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAA-------  118
+            + +E+W AD +G Y         +N  G      + G + + T++P              
+Sbjct  139  AKVELWHADNDGYYSQFAPHLPEWNLRGTIIAD-EEGRYEITTIQPAPYQIPTDGPTGQF  197
+
+Query  119  ------GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIA  172
+                        H+++ + A G    + T+LYF      ++       +    + E ++ 
+Sbjct  198  IEAQNGHPWRPAHLHLIVSAPG-KESVTTQLYFKGGEWIDSD------VASATKPELILD  250
+
+Query  173  KRCEVDGKTAYRFDIRI  189
+             +   DGK    ++  +
+Sbjct  251  PKTGDDGKNYVTYNFVL  267
+
+
+>sp|O67987|CLCA_RHOOP Chlorocatechol 1,2-dioxygenase OS=Rhodococcus 
+opacus OX=37919 GN=clcA PE=1 SV=1
+Length=257
+
+ Score = 149 bits (377),  Expect = 8e-44, Method: Composition-based stats.
+ Identities = 37/199 (19%), Positives = 64/199 (32%), Gaps = 29/199 (15%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            T S   GP+   G A    G P         +     PG+ +   G V D +G  +  + 
+Sbjct  70   TSSAIQGPFFKEG-APLLTGKPA-----TLPMRAD-EPGDRMRFTGSVRDTSGTPITGAV  122
+
+Query  68   LEVWQADANGEYQDAYNLENA-FNSFGRTATTFDAGEWTLHTVKPGVVNNAA--------  118
+            ++VW +  +G Y          +   GR     + G    H+++P               
+Sbjct  123  IDVWHSTNDGNYSFFSPALPDQYLLRGRVVP-AEDGSIEFHSIRPVPYEIPKAGPTGQLM  181
+
+Query  119  ------GVPMAPHINISLFARGINIHLHTRLYFDDEAQANAK-CPVLNLIEQPQRRETLI  171
+                        HI+I + A G    L T+LYF+ +   ++  C  +         +  I
+Sbjct  182  NSYLGRHSWRPAHIHIRITADGYRP-LITQLYFEGDPYLDSDSCSAVKSELVLPVNKIDI  240
+
+Query  172  AKRCEVDGKTAYRFDIRIQ  190
+                         F+  +Q
+Sbjct  241  DGET----WQLVDFNFILQ  255
+
+
+>sp|P0A396|TFDC_CUPPJ Chlorocatechol 1,2-dioxygenase OS=Cupriavidus 
+pinatubonensis (strain JMP 134 / LMG 1197) OX=264198 GN=tfdC 
+PE=3 SV=1
+Length=255
+
+ Score = 146 bits (369),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 34/197 (17%), Positives = 60/197 (30%), Gaps = 32/197 (16%)
+
+Query  11   QTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEV  70
+               GPY            P  D  +         P   +L+ G V   +G +V D  ++V
+Sbjct  72   AIEGPYY-------RDDAPLVDDRLKTYDTDDHKP---LLIQGTVKAVDGSVVEDVTIDV  121
+
+Query  71   WQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNA-------------  117
+            W +  +G+Y   ++        G+     D G + + T  P                   
+Sbjct  122  WHSTPDGKYSGFHDDIPTDFYRGKLRVGTD-GSFRVRTTMPVPYQIPDQGPTGALLETMG  180
+
+Query  118  AGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEV  177
+                   H++  + A G    L T+ YF+        C   N ++      +LI      
+Sbjct  181  GHSWRPAHVHFKVKAPGYET-LTTQYYFEGGDWITDDC--CNGVQS-----SLITPDIVE  232
+
+Query  178  DGKTAYRFDIRIQGEGE  194
+            +G      +  I+    
+Sbjct  233  EGVRLMNINFVIEPARA  249
+
+
+>sp|P0A397|TFDC_BURCE Chlorocatechol 1,2-dioxygenase OS=Burkholderia 
+cepacia OX=292 GN=tfdC PE=3 SV=1
+Length=255
+
+ Score = 146 bits (369),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 34/197 (17%), Positives = 60/197 (30%), Gaps = 32/197 (16%)
+
+Query  11   QTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSFLEV  70
+               GPY            P  D  +         P   +L+ G V   +G +V D  ++V
+Sbjct  72   AIEGPYY-------RDDAPLVDDRLKTYDTDDHKP---LLIQGTVKAVDGSVVEDVTIDV  121
+
+Query  71   WQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNA-------------  117
+            W +  +G+Y   ++        G+     D G + + T  P                   
+Sbjct  122  WHSTPDGKYSGFHDDIPTDFYRGKLRVGTD-GSFRVRTTMPVPYQIPDQGPTGALLETMG  180
+
+Query  118  AGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAKRCEV  177
+                   H++  + A G    L T+ YF+        C   N ++      +LI      
+Sbjct  181  GHSWRPAHVHFKVKAPGYET-LTTQYYFEGGDWITDDC--CNGVQS-----SLITPDIVE  232
+
+Query  178  DGKTAYRFDIRIQGEGE  194
+            +G      +  I+    
+Sbjct  233  EGVRLMNINFVIEPARA  249
+
+
+>sp|Q5PXQ6|CHQB_NOCSI Hydroxyquinol 1,2-dioxygenase OS=Nocardioides 
+simplex OX=2045 GN=chqB PE=1 SV=1
+Length=293
+
+ Score = 146 bits (368),  Expect = 4e-42, Method: Composition-based stats.
+ Identities = 36/201 (18%), Positives = 66/201 (33%), Gaps = 32/201 (16%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            T +   GP+   G     +G                   E   + G V D +G+ V D+ 
+Sbjct  103  TEATVFGPFFVEGSPRIESGGDIAGGAAG----------EPCWVEGTVTDTDGNPVPDAR  152
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP------  121
+            +EVW+AD +G Y   Y+ ++   +     +  D G +    + P         P      
+Sbjct  153  IEVWEADDDGFYDVQYD-DDRTAARAHLLSGPDGG-YAFWAITPTPYPIPHDGPVGRMLA  210
+
+Query  122  -------MAPHINISLFARGINIHLHTRLYFDDEAQANAK------CPVLNLIEQPQRRE  168
+                    A H++  + A G    L T ++ + +   +          ++   E+     
+Sbjct  211  ATGRSPMRASHLHFMVTAPGRRT-LVTHIFVEGDELLDRDSVFGVKDSLVKSFERQPAGA  269
+
+Query  169  TLIAKRCEVDGKTAYRFDIRI  189
+                 R      +  RFDI +
+Sbjct  270  PTPGGREIDGPWSRVRFDIVL  290
+
+
+>sp|Q92I77|Y543_RICCN Putative dioxygenase RC0543 OS=Rickettsia 
+conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=RC0543 
+PE=3 SV=1
+Length=208
+
+ Score = 142 bits (359),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 37/160 (23%), Positives = 62/160 (39%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G+V D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GERILIKGKVLDQNCVPVADAKVYLWQAGSGGKYPYEPLKTRVDKRRFTSKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+              ATT + GE+   ++ P        +      H ++          L TRL   D+   
+Sbjct  123  -IATTNNKGEYYFISMLPYTSSRYLRSANIRIEHPSL--------TTLETRLDLSDQNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            + +C  +N I                +   +Y FD+ +QG
+Sbjct  174  DNECGEVNPI-----------LIEPQENMPSYCFDLVLQG  202
+
+
+>sp|Q9ZDD5|Y396_RICPR Putative dioxygenase RP396 OS=Rickettsia 
+prowazekii (strain Madrid E) OX=272947 GN=RP396 PE=3 SV=1
+Length=208
+
+ Score = 141 bits (356),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 36/160 (23%), Positives = 61/160 (38%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQA   G+Y                  +++F   G
+Sbjct  63   GEMILIRGKILDQNCVPVTDAKVYLWQAGNGGKYPYEPLKTRVDKSRFTNKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+              ATT + GE+   ++ P               H N+          L TRL   D+   
+Sbjct  123  -IATTNNKGEYYFISMLPYKSPRYLRNANIRIEHPNL--------TTLETRLDLFDKNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            + +C  ++ I    ++              +Y FD+ +QG
+Sbjct  174  DNECGEISPILIETKKNI-----------PSYCFDLVLQG  202
+
+
+>sp|Q68WY1|Y384_RICTY Putative dioxygenase RT0384 OS=Rickettsia 
+typhi (strain ATCC VR-144 / Wilmington) OX=257363 GN=RT0384 
+PE=3 SV=1
+Length=208
+
+ Score = 141 bits (355),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 35/160 (22%), Positives = 60/160 (38%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GEMILIRGKILDQNCVPVTDAKVYLWQAGSGGKYPYEPLKTRVDKRRFTNKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+               TT + GE+   ++ P               H N+          L TRL   D+   
+Sbjct  123  -IVTTNNKGEYYFISMLPYKSSHYLRTANIRIEHPNL--------TTLETRLELSDQNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            +  C  ++ I    ++              +Y FD+ +QG
+Sbjct  174  DNDCGEISPILTETKKNI-----------QSYCFDLVLQG  202
+
+
+>sp|P86029|HQD2_CANAL Catechol 1,2-dioxygenase OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=HQD2 PE=1 
+SV=1
+Length=303
+
+ Score = 144 bits (362),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 41/200 (21%), Positives = 69/200 (35%), Gaps = 38/200 (19%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            T S   GP+      +   G     + I   +           + G+V D  G  +  + 
+Sbjct  93   TSSAILGPFYLPDSPVYPNGGSIVQKAIPTDV--------KCFVRGKVTDTEGKPLGGAQ  144
+
+Query  68   LEVWQADANGEYQDAYNLE-NAFNSFGRTATTFDAGEWTLHTVKPGVVNNA---------  117
+            LEVWQ ++ G Y    + +   FN  G   T  D G ++   ++P               
+Sbjct  145  LEVWQCNSAGFYSQQADHDGPEFNLRGTFITD-DEGNYSFECLRPTSYPIPYDGPAGDLL  203
+
+Query  118  ----AGVPMAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNLIEQPQRRETLIAK  173
+                       HI+  +   G +  L T++Y       +A+CP  N       ++ +I  
+Sbjct  204  KIMDRHPNRPSHIHWRVSHPGYHT-LITQIY-------DAECPYTNNDSVYAVKDDIIVH  255
+
+Query  174  RCEVD-------GKTAYRFD  186
+              +VD       GK  Y+ D
+Sbjct  256  FEKVDNKDKDLVGKVEYKLD  275
+
+
+>sp|Q4ULV5|Y617_RICFE Putative dioxygenase RF_0617 OS=Rickettsia 
+felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 GN=RF_0617 
+PE=3 SV=1
+Length=208
+
+ Score = 139 bits (351),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 35/160 (22%), Positives = 61/160 (38%), Gaps = 34/160 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE IL+ G++ D N   V D+ + +WQ  + G+Y                  +++F   G
+Sbjct  63   GERILIKGKILDQNCVPVADAKVYLWQVGSGGKYPYEPLKTRVDKRRFTSKSDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP--GVVNNAAGVPMAPHINISLFARGINIHLHTRLYFDDEAQA  151
+              ATT + GE+   ++ P        +      H ++          L TRL   D+   
+Sbjct  123  -IATTNNKGEYYFISMLPYKSSRYLRSANIRIEHPSL--------TTLETRLDLSDKNMC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQG  191
+            + +C  +N I                +   +Y FD+ +QG
+Sbjct  174  DNECGEVNPI-----------LIEPQENMPSYCFDLVLQG  202
+
+
+>sp|Q6F4M7|NPCC_RHOOP Hydroxyquinol 1,2-dioxygenase OS=Rhodococcus 
+opacus OX=37919 GN=npcC PE=2 SV=1
+Length=300
+
+ Score = 142 bits (358),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 38/207 (18%), Positives = 63/207 (30%), Gaps = 34/207 (16%)
+
+Query  8    TPSQTAGPYVHIGLALEAAGNPTRDQEIWNRLAKPDAPGEHILLLGQVYDGNGHLVRDSF  67
+            T S   GP+          G                A G+   + G V D  G+ V ++ 
+Sbjct  106  TESTVFGPFFVEDAPEVTLGGDI----------AGGATGQPCWIEGTVTDTAGNPVPEAR  155
+
+Query  68   LEVWQADANGEYQDAYNLENAFNSFGRTATTFDAGEWTLHTVKPGVVNNAAGVP------  121
+            +EVWQ D +G Y   Y  +   +      +    G +    + P      +  P      
+Sbjct  156  IEVWQNDEDGFYDVQY-SDGRVSGRAHLFSDA-HGRYRFWGMTPVPYPIPSDGPVGKMLA  213
+
+Query  122  -------MAPHINISLFARGINIHLHTRLYFDDEAQANAKCPVLNL--------IEQPQR  166
+                      H++  + A G+   L T ++   + Q      V  +        +EQP  
+Sbjct  214  ATNRSPMRVAHLHFMVTADGLRT-LVTHIFVAGDPQLERGDSVFGVKDSLIKDFVEQPPG  272
+
+Query  167  RETLIAKRCEVDGKTAYRFDIRIQGEG  193
+              T   +           FDI +  E 
+Sbjct  273  TPTPDGRHIGDRNWARCEFDIVLAPEQ  299
+
+
+>sp|Q1RJQ4|Y329_RICBR Putative dioxygenase RBE_0329 OS=Rickettsia 
+bellii (strain RML369-C) OX=336407 GN=RBE_0329 PE=3 SV=1
+Length=208
+
+ Score = 127 bits (320),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 38/161 (24%), Positives = 63/161 (39%), Gaps = 34/161 (21%)
+
+Query  46   GEHILLLGQVYDGNGHLVRDSFLEVWQADANGEYQDA------------YNLENAFNSFG  93
+            GE +++ G V D N   V D+ + +WQA + G+Y                  +++F   G
+Sbjct  63   GEKVIIKGIVLDQNCVPVADAKVYLWQAGSGGKYPYEPLKTRVDKRRFTGKKDSSFTGSG  122
+
+Query  94   RTATTFDAGEWTLHTVKP-GVVNNAAGVP-MAPHINISLFARGINIHLHTRLYFDDEAQA  151
+             TATT + GE+   ++ P   V N   V     H ++          L TRL   ++   
+Sbjct  123  -TATTNNKGEYYFVSMLPYKSVGNLKSVNIRVEHADLK--------TLETRLDLSNKNIC  173
+
+Query  152  NAKCPVLNLIEQPQRRETLIAKRCEVDGKTAYRFDIRIQGE  192
+            + +C  +N            A         +Y FD+ +QG 
+Sbjct  174  SNECGEINP-----------ALIEPQQHLRSYCFDLVLQGA  203
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.124    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0380    0.140     1.90     42.6     43.6 
+
+Effective search space used: 12296581616
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

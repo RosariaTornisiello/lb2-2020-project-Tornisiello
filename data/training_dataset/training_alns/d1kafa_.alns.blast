@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1kafa_
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P22915|MOTA_BPT4 Middle transcription regulatory protein motA ...  219     2e-73
+
+
+>sp|P22915|MOTA_BPT4 Middle transcription regulatory protein motA 
+OS=Enterobacteria phage T4 OX=10665 GN=motA PE=1 SV=1
+Length=211
+
+ Score = 219 bits (558),  Expect = 2e-73, Method: Compositional matrix adjust.
+ Identities = 107/107 (100%), Positives = 107/107 (100%), Gaps = 0/107 (0%)
+
+Query  2    EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG  61
+            EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG
+Sbjct  105  EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG  164
+
+Query  62   YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL  108
+            YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL
+Sbjct  165  YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL  211
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.371    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+Results from round 2
+
+
+Query= d1kafa_
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P22915|MOTA_BPT4 Middle transcription regulatory protein motA ...  209     2e-69
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P22915|MOTA_BPT4 Middle transcription regulatory protein motA 
+OS=Enterobacteria phage T4 OX=10665 GN=motA PE=1 SV=1
+Length=211
+
+ Score = 209 bits (532),  Expect = 2e-69, Method: Composition-based stats.
+ Identities = 107/107 (100%), Positives = 107/107 (100%), Gaps = 0/107 (0%)
+
+Query  2    EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG  61
+            EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG
+Sbjct  105  EITSDMEEDKDLMLKLLDKNGFVLKKVEIYRSNYLAILEKRTNGIRNFEINNNGNMRIFG  164
+
+Query  62   YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL  108
+            YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL
+Sbjct  165  YKMMEHHIQKFTDIGMSCKIAKNGNVYLDIKRSAENIEAVITVASEL  211
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.149    0.437    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0455    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

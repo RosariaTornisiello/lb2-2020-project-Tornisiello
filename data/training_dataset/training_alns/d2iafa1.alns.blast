@@ -1,0 +1,881 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2iafa1
+
+Length=140
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelico...  119     2e-31
+sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia col...  115     3e-30
+sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberc...  109     8e-28
+sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberc...  109     8e-28
+sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis ...  109     8e-28
+sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori ...  108     2e-27
+sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori ...  107     7e-27
+sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli (...  104     4e-26
+sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenz...  104     6e-26
+sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli (...  101     6e-25
+sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain O...  48.1    3e-06
+sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptonip...  40.0    0.002
+
+
+>sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelicolor 
+(strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=sdaA 
+PE=3 SV=1
+Length=455
+
+ Score = 119 bits (298),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 62/141 (44%), Positives = 82/141 (58%), Gaps = 5/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AA  F + L  + L D    V+VELYGSL  TG GHGT KA+L GLE  +P
+Sbjct  17   SSHTVGPMRAARMFARRLRNEELLDSVASVRVELYGSLGATGHGHGTPKAVLLGLEGDSP  76
+
+Query  61   -----ESMIPRMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+                 ES   R+  I  S  ++L G  EI F    D +  +++ LP H+NGM   A+D  
+Sbjct  77   RTVDVESADDRVETIKSSGRISLLGDHEIAFAYDDDMVLHRRKALPYHANGMTLWAYDAE  136
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+               ++ + YYS+GGGF+  E+
+Sbjct  137  GAEVLTKTYYSVGGGFVVDED  157
+
+
+>sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia 
+coli (strain K12) OX=83333 GN=tdcG PE=1 SV=4
+Length=454
+
+ Score = 115 bits (289),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 64/144 (44%), Positives = 85/144 (59%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A  +F+  LE   L   T  + V+LYGSL+LTGKGH TD AI+ GL   +P
+Sbjct  16   SSHTVGPMNAGKSFIDRLESSGLLTATSHIVVDLYGSLSLTGKGHATDVAIIMGLAGNSP  75
+
+Query  61   ESM----IPRMHEIL--DSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+            + +    IP   E++     L   +G   + F  A + +F   E+LP+H NGMR +A+ G
+Sbjct  76   QDVVIDEIPAFIELVTRSGRLPVASGAHIVDFPVAKNIIF-HPEMLPRHENGMRITAWKG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDF  138
+               LL  + YYS+GGGFI  EE F
+Sbjct  135  QEELL-SKTYYSVGGGFIVEEEHF  157
+
+
+>sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=sdaA PE=1 
+SV=1
+Length=461
+
+ Score = 109 bits (272),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 109 bits (272),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis 
+(strain ATCC BAA-935 / AF2122/97) OX=233413 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 109 bits (272),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori 
+(strain J99 / ATCC 700824) OX=85963 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 108 bits (269),  Expect = 2e-27, Method: Compositional matrix adjust.
+ Identities = 62/144 (43%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F  LL  K + ++ +RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCGLL--KGILEQVERVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  I      +HE  ++ +L LA +  IPF  A D +F  K  L +H N +   AF+  
+Sbjct  76   NELDITTKKALLHEAFENKVLKLANQHHIPFDYAKDLIFDNKP-LARHQNALILKAFNAK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori 
+(strain ATCC 700392 / 26695) OX=85962 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 107 bits (266),  Expect = 7e-27, Method: Compositional matrix adjust.
+ Identities = 61/144 (42%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F + L  K + ++  RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCESL--KGILEQVVRVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  +      +HE L++ +L LA +  IPF  A D +F  K L  +H N +   AF+  
+Sbjct  76   NELEVTTKKALLHEALENKVLKLANQHHIPFDYAKDLIFDNKPL-TRHQNALILKAFNSK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaA PE=1 SV=3
+Length=454
+
+ Score = 104 bits (260),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 63/144 (44%), Positives = 84/144 (58%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L +K L D   RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFVDDLVEKGLLDSVTRVAVDVYGSLSLTGKGHHTDIAIIMGLAGNEP  75
+
+Query  61   ESM----IPR-MHEILDSNLLNLA-GKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++    IP  + ++ +   L LA G+ E+ F       F     LP H NGM+  A++G
+Sbjct  76   ATVDIDSIPGFIRDVEERERLLLAQGRHEVDFPRDNGMRFHNGN-LPLHENGMQIHAYNG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDF  138
+            +  ++  + YYSIGGGFI  EE F
+Sbjct  135  D-EVVYSKTYYSIGGGFIVDEEHF  157
+
+
+>sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 104 bits (259),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 59/146 (40%), Positives = 83/146 (57%), Gaps = 7/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L ++N F++T  + V++YGSL++TG+GH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFIDDLIKRNQFEQTTEIHVDVYGSLSMTGRGHSTDIAIIMGLAGYLP  75
+
+Query  61   ESMIPRM-----HEILDSNLLNL-AGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++   M      ++  + LL +  G+K + F    + +F  +  L  H NGM  +A D 
+Sbjct  76   HNVDIDMISGFIEKVKQTALLPINVGQKIVKFDFENNLIF-HRTFLKLHENGMTITALDE  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            N   L  Q YYSIGGGFI  E  F K
+Sbjct  135  NRTELYRQTYYSIGGGFIVDEAHFGK  160
+
+
+>sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaB PE=2 SV=2
+Length=455
+
+ Score = 101 bits (252),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 61/146 (42%), Positives = 82/146 (56%), Gaps = 12/146 (8%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F   L  +NL     RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFTDDLIARNLLKDVTRVVVDVYGSLSLTGKGHHTDIAIIMGLAGNLP  75
+
+Query  61   ESM----IPRMHEILDSN----LLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAF  112
+            +++    IP   + ++++    L N   + E P  +  +F     + L  H NGMR +A 
+Sbjct  76   DTVDIDSIPSFIQDVNTHGRLMLANGQHEVEFPVDQCMNF---HADNLSLHENGMRITAL  132
+
+Query  113  DGNANLLIEQVYYSIGGGFITTEEDF  138
+             G+  ++  Q YYSIGGGFI  EE F
+Sbjct  133  AGD-KVVYSQTYYSIGGGFIVDEEHF  157
+
+
+>sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=sdaAB PE=3 
+SV=1
+Length=220
+
+ Score = 48.1 bits (113),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 45/139 (32%), Positives = 58/139 (42%), Gaps = 26/139 (19%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDK-TQRVKVELYGSLALTGKGHGTDKAILNGLENKA  59
+            SSHT G              ++LF +  +R+ V  YGS A T KGHGTD AI+ GL    
+Sbjct  19   SSHTAGAARIGRV------ARSLFGREPERIIVSFYGSFAETYKGHGTDVAIIGGL----  68
+
+Query  60   PESMIPRMHEILDSNLLNLAGKKEIPFHEA--TDFLFLQKELLPKHSNGMRFSAFDGNAN  117
+                       LD +  +   K  I   EA   D  F  ++ +P H N  + +  D    
+Sbjct  69   -----------LDFDTFDERIKTAIQIAEAKGIDIEFRVEDAVPVHPNTAKITISDEKGE  117
+
+Query  118  LLIEQVYYSIGGGFITTEE  136
+            L  E    SIGGG I   E
+Sbjct  118  L--ELTGISIGGGKIEITE  134
+
+
+>sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptoniphilus 
+asaccharolyticus OX=1258 GN=sdhB PE=1 SV=2
+Length=222
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 22/61 (36%), Positives = 34/61 (56%), Gaps = 5/61 (8%)
+
+Query  1   SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+           SSHT G    AN    ++      +   +V+ +L+GS A T KGHGTD+A++ G+    P
+Sbjct  19  SSHTAGACKIANVATSIVS-----NNYNQVEFQLHGSFAHTFKGHGTDRALVGGILGFEP  73
+
+Query  61  E  61
+           +
+Sbjct  74  D  74
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.136    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5028640960
+Results from round 2
+
+
+Query= d2iafa1
+
+Length=140
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli (...  181     5e-55
+sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenz...  180     1e-54
+sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli (...  175     9e-53
+sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia col...  174     2e-52
+sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelico...  173     6e-52
+sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori ...  169     2e-50
+sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori ...  169     2e-50
+sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberc...  166     5e-49
+sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberc...  166     5e-49
+sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis ...  166     5e-49
+sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain O...  107     2e-28
+
+Sequences not found previously or not previously below threshold:
+
+sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptonip...  53.5    3e-08
+
+
+>sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaA PE=1 SV=3
+Length=454
+
+ Score = 181 bits (459),  Expect = 5e-55, Method: Composition-based stats.
+ Identities = 61/146 (42%), Positives = 83/146 (57%), Gaps = 8/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L +K L D   RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFVDDLVEKGLLDSVTRVAVDVYGSLSLTGKGHHTDIAIIMGLAGNEP  75
+
+Query  61   ESMIPR-----MHEILDSNLLNLA-GKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++        + ++ +   L LA G+ E+ F       F     LP H NGM+  A++G
+Sbjct  76   ATVDIDSIPGFIRDVEERERLLLAQGRHEVDFPRDNGMRFHNGN-LPLHENGMQIHAYNG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            +  ++  + YYSIGGGFI  EE F +
+Sbjct  135  D-EVVYSKTYYSIGGGFIVDEEHFGQ  159
+
+
+>sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 180 bits (457),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 59/146 (40%), Positives = 83/146 (57%), Gaps = 7/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L ++N F++T  + V++YGSL++TG+GH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFIDDLIKRNQFEQTTEIHVDVYGSLSMTGRGHSTDIAIIMGLAGYLP  75
+
+Query  61   ESMIPRM-----HEILDSNLLNL-AGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++   M      ++  + LL +  G+K + F    + +F  +  L  H NGM  +A D 
+Sbjct  76   HNVDIDMISGFIEKVKQTALLPINVGQKIVKFDFENNLIFH-RTFLKLHENGMTITALDE  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            N   L  Q YYSIGGGFI  E  F K
+Sbjct  135  NRTELYRQTYYSIGGGFIVDEAHFGK  160
+
+
+>sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaB PE=2 SV=2
+Length=455
+
+ Score = 175 bits (444),  Expect = 9e-53, Method: Composition-based stats.
+ Identities = 61/146 (42%), Positives = 83/146 (57%), Gaps = 8/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F   L  +NL     RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFTDDLIARNLLKDVTRVVVDVYGSLSLTGKGHHTDIAIIMGLAGNLP  75
+
+Query  61   ESM----IPRMHEILDSN--LLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+            +++    IP   + ++++  L+   G+ E+ F       F   + L  H NGMR +A  G
+Sbjct  76   DTVDIDSIPSFIQDVNTHGRLMLANGQHEVEFPVDQCMNFH-ADNLSLHENGMRITALAG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            +  ++  Q YYSIGGGFI  EE F +
+Sbjct  135  D-KVVYSQTYYSIGGGFIVDEEHFGQ  159
+
+
+>sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia 
+coli (strain K12) OX=83333 GN=tdcG PE=1 SV=4
+Length=454
+
+ Score = 174 bits (441),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 64/145 (44%), Positives = 85/145 (59%), Gaps = 8/145 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A  +F+  LE   L   T  + V+LYGSL+LTGKGH TD AI+ GL   +P
+Sbjct  16   SSHTVGPMNAGKSFIDRLESSGLLTATSHIVVDLYGSLSLTGKGHATDVAIIMGLAGNSP  75
+
+Query  61   ESM----IPRMHEIL--DSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+            + +    IP   E++     L   +G   + F  A + +F   E+LP+H NGMR +A+ G
+Sbjct  76   QDVVIDEIPAFIELVTRSGRLPVASGAHIVDFPVAKNIIFHP-EMLPRHENGMRITAWKG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFD  139
+               LL  + YYS+GGGFI  EE F 
+Sbjct  135  QEELL-SKTYYSVGGGFIVEEEHFG  158
+
+
+>sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelicolor 
+(strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=sdaA 
+PE=3 SV=1
+Length=455
+
+ Score = 173 bits (438),  Expect = 6e-52, Method: Composition-based stats.
+ Identities = 62/144 (43%), Positives = 82/144 (57%), Gaps = 5/144 (3%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AA  F + L  + L D    V+VELYGSL  TG GHGT KA+L GLE  +P
+Sbjct  17   SSHTVGPMRAARMFARRLRNEELLDSVASVRVELYGSLGATGHGHGTPKAVLLGLEGDSP  76
+
+Query  61   -----ESMIPRMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+                 ES   R+  I  S  ++L G  EI F    D +  +++ LP H+NGM   A+D  
+Sbjct  77   RTVDVESADDRVETIKSSGRISLLGDHEIAFAYDDDMVLHRRKALPYHANGMTLWAYDAE  136
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+               ++ + YYS+GGGF+  E+   
+Sbjct  137  GAEVLTKTYYSVGGGFVVDEDAVG  160
+
+
+>sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori 
+(strain J99 / ATCC 700824) OX=85963 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 169 bits (429),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 62/144 (43%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F  LL  K + ++ +RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCGLL--KGILEQVERVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  I      +HE  ++ +L LA +  IPF  A D +F  K  L +H N +   AF+  
+Sbjct  76   NELDITTKKALLHEAFENKVLKLANQHHIPFDYAKDLIFDNKP-LARHQNALILKAFNAK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori 
+(strain ATCC 700392 / 26695) OX=85962 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 169 bits (428),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 61/144 (42%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F + L  K + ++  RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCESL--KGILEQVVRVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  +      +HE L++ +L LA +  IPF  A D +F  K  L +H N +   AF+  
+Sbjct  76   NELEVTTKKALLHEALENKVLKLANQHHIPFDYAKDLIFDNKP-LTRHQNALILKAFNSK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=sdaA PE=1 
+SV=1
+Length=461
+
+ Score = 166 bits (419),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 166 bits (419),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis 
+(strain ATCC BAA-935 / AF2122/97) OX=233413 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 166 bits (419),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 60/141 (43%), Positives = 82/141 (58%), Gaps = 6/141 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEE  136
+              +L  + Y+S+GGGFI TE+
+Sbjct  136  GRVLATETYFSVGGGFIVTEQ  156
+
+
+>sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=sdaAB PE=3 
+SV=1
+Length=220
+
+ Score = 107 bits (266),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 45/139 (32%), Positives = 58/139 (42%), Gaps = 26/139 (19%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDK-TQRVKVELYGSLALTGKGHGTDKAILNGLENKA  59
+            SSHT G              ++LF +  +R+ V  YGS A T KGHGTD AI+ GL    
+Sbjct  19   SSHTAGAARIGRV------ARSLFGREPERIIVSFYGSFAETYKGHGTDVAIIGGL----  68
+
+Query  60   PESMIPRMHEILDSNLLNLAGKKEIPFHEAT--DFLFLQKELLPKHSNGMRFSAFDGNAN  117
+                       LD +  +   K  I   EA   D  F  ++ +P H N  + +  D    
+Sbjct  69   -----------LDFDTFDERIKTAIQIAEAKGIDIEFRVEDAVPVHPNTAKITISDEKGE  117
+
+Query  118  LLIEQVYYSIGGGFITTEE  136
+            L  E    SIGGG I   E
+Sbjct  118  L--ELTGISIGGGKIEITE  134
+
+
+>sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptoniphilus 
+asaccharolyticus OX=1258 GN=sdhB PE=1 SV=2
+Length=222
+
+ Score = 53.5 bits (127),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 35/131 (27%), Positives = 53/131 (40%), Gaps = 20/131 (15%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHT G    AN    ++          +V+ +L+GS A T KGHGTD+A++ G+    P
+Sbjct  19   SSHTAGACKIANVATSIVSN-----NYNQVEFQLHGSFAHTFKGHGTDRALVGGILGFEP  73
+
+Query  61   ESMIPRMHEILDSNLLNLAGKKEIPFHEATDFLFLQKEL-LPKHSNGMRFSAFDGNANLL  119
+            +    +        L   AG          +++F    L    H N ++      N    
+Sbjct  74   DDDRIK----TSFELAKQAG---------LNYIFTTTNLGDNYHPNSVKIVFSYPNGEEE  120
+
+Query  120  IEQVYYSIGGG  130
+               +  SIGGG
+Sbjct  121  Y-VIGSSIGGG  130
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0412    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5028640960
+Results from round 3
+
+
+Query= d2iafa1
+
+Length=140
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli (...  190     2e-58
+sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli (...  188     1e-57
+sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenz...  187     3e-57
+sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelico...  182     2e-55
+sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia col...  181     7e-55
+sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberc...  171     4e-51
+sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberc...  171     4e-51
+sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis ...  171     4e-51
+sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori ...  161     2e-47
+sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori ...  156     2e-45
+sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptonip...  112     1e-30
+sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain O...  110     8e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P16095|SDHL_ECOLI L-serine dehydratase 1 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaA PE=1 SV=3
+Length=454
+
+ Score = 190 bits (483),  Expect = 2e-58, Method: Composition-based stats.
+ Identities = 61/146 (42%), Positives = 83/146 (57%), Gaps = 8/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L +K L D   RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFVDDLVEKGLLDSVTRVAVDVYGSLSLTGKGHHTDIAIIMGLAGNEP  75
+
+Query  61   ESMIPR-----MHEILDSNLLNLA-GKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++        + ++ +   L LA G+ E+ F       F     LP H NGM+  A++G
+Sbjct  76   ATVDIDSIPGFIRDVEERERLLLAQGRHEVDFPRDNGMRFHNGN-LPLHENGMQIHAYNG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            +  ++  + YYSIGGGFI  EE F +
+Sbjct  135  D-EVVYSKTYYSIGGGFIVDEEHFGQ  159
+
+
+>sp|P30744|SDHM_ECOLI L-serine dehydratase 2 OS=Escherichia coli 
+(strain K12) OX=83333 GN=sdaB PE=2 SV=2
+Length=455
+
+ Score = 188 bits (477),  Expect = 1e-57, Method: Composition-based stats.
+ Identities = 60/146 (41%), Positives = 81/146 (55%), Gaps = 8/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F   L  +NL     RV V++YGSL+LTGKGH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFTDDLIARNLLKDVTRVVVDVYGSLSLTGKGHHTDIAIIMGLAGNLP  75
+
+Query  61   ESMI----PRMHEILDSN--LLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+            +++     P   + ++++  L+   G+ E+ F       F     L  H NGMR +A  G
+Sbjct  76   DTVDIDSIPSFIQDVNTHGRLMLANGQHEVEFPVDQCMNFHADN-LSLHENGMRITALAG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            +  ++  Q YYSIGGGFI  EE F +
+Sbjct  135  D-KVVYSQTYYSIGGGFIVDEEHFGQ  159
+
+
+>sp|P71349|SDHL_HAEIN L-serine dehydratase OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 187 bits (474),  Expect = 3e-57, Method: Composition-based stats.
+ Identities = 59/146 (40%), Positives = 83/146 (57%), Gaps = 7/146 (5%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A   F+  L ++N F++T  + V++YGSL++TG+GH TD AI+ GL    P
+Sbjct  16   SSHTVGPMKAGKQFIDDLIKRNQFEQTTEIHVDVYGSLSMTGRGHSTDIAIIMGLAGYLP  75
+
+Query  61   ESMIPRM-----HEILDSNLLNLA-GKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+             ++   M      ++  + LL +  G+K + F    + +F  +  L  H NGM  +A D 
+Sbjct  76   HNVDIDMISGFIEKVKQTALLPINVGQKIVKFDFENNLIFH-RTFLKLHENGMTITALDE  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFDK  140
+            N   L  Q YYSIGGGFI  E  F K
+Sbjct  135  NRTELYRQTYYSIGGGFIVDEAHFGK  160
+
+
+>sp|O86564|SDHL_STRCO L-serine dehydratase OS=Streptomyces coelicolor 
+(strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=sdaA 
+PE=3 SV=1
+Length=455
+
+ Score = 182 bits (461),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 62/144 (43%), Positives = 82/144 (57%), Gaps = 5/144 (3%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AA  F + L  + L D    V+VELYGSL  TG GHGT KA+L GLE  +P
+Sbjct  17   SSHTVGPMRAARMFARRLRNEELLDSVASVRVELYGSLGATGHGHGTPKAVLLGLEGDSP  76
+
+Query  61   -----ESMIPRMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+                 ES   R+  I  S  ++L G  EI F    D +  +++ LP H+NGM   A+D  
+Sbjct  77   RTVDVESADDRVETIKSSGRISLLGDHEIAFAYDDDMVLHRRKALPYHANGMTLWAYDAE  136
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+               ++ + YYS+GGGF+  E+   
+Sbjct  137  GAEVLTKTYYSVGGGFVVDEDAVG  160
+
+
+>sp|P42630|TDCG_ECOLI L-serine dehydratase TdcG OS=Escherichia 
+coli (strain K12) OX=83333 GN=tdcG PE=1 SV=4
+Length=454
+
+ Score = 181 bits (458),  Expect = 7e-55, Method: Composition-based stats.
+ Identities = 60/145 (41%), Positives = 81/145 (56%), Gaps = 8/145 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM A  +F+  LE   L   T  + V+LYGSL+LTGKGH TD AI+ GL   +P
+Sbjct  16   SSHTVGPMNAGKSFIDRLESSGLLTATSHIVVDLYGSLSLTGKGHATDVAIIMGLAGNSP  75
+
+Query  61   ESMIPRMHEIL------DSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDG  114
+            + ++                L   +G   + F  A + +F   E+LP+H NGMR +A+ G
+Sbjct  76   QDVVIDEIPAFIELVTRSGRLPVASGAHIVDFPVAKNIIFHP-EMLPRHENGMRITAWKG  134
+
+Query  115  NANLLIEQVYYSIGGGFITTEEDFD  139
+                L+ + YYS+GGGFI  EE F 
+Sbjct  135  Q-EELLSKTYYSVGGGFIVEEEHFG  158
+
+
+>sp|P9WGT5|SDHL_MYCTU L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=sdaA PE=1 
+SV=1
+Length=461
+
+ Score = 171 bits (433),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 60/144 (42%), Positives = 82/144 (57%), Gaps = 6/144 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L  + Y+S+GGGFI TE+   
+Sbjct  136  GRVLATETYFSVGGGFIVTEQTSG  159
+
+
+>sp|P9WGT4|SDHL_MYCTO L-serine dehydratase OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 171 bits (433),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 60/144 (42%), Positives = 82/144 (57%), Gaps = 6/144 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L  + Y+S+GGGFI TE+   
+Sbjct  136  GRVLATETYFSVGGGFIVTEQTSG  159
+
+
+>sp|P66774|SDHL_MYCBO L-serine dehydratase OS=Mycobacterium bovis 
+(strain ATCC BAA-935 / AF2122/97) OX=233413 GN=sdaA PE=3 
+SV=1
+Length=461
+
+ Score = 171 bits (433),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 60/144 (42%), Positives = 82/144 (57%), Gaps = 6/144 (4%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHTVGPM AAN F+  L ++   D  + ++V+L+GSLA TG GHGT  AIL GLE   P
+Sbjct  17   SSHTVGPMRAANQFVVALRRRGHLDDLEAMRVDLFGSLAATGAGHGTMSAILLGLEGCQP  76
+
+Query  61   ESMIP-----RMHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+            E++       R+ EI  S +  + G   +P  E  D       +LP H NGM F+A   +
+Sbjct  77   ETITTEHKERRLAEIAASGVTRIGGVIPVPLTE-RDIDLHPDIVLPTHPNGMTFTAAGPH  135
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L  + Y+S+GGGFI TE+   
+Sbjct  136  GRVLATETYFSVGGGFIVTEQTSG  159
+
+
+>sp|Q9ZMU7|SDHL_HELPJ L-serine dehydratase OS=Helicobacter pylori 
+(strain J99 / ATCC 700824) OX=85963 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 161 bits (407),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 62/144 (43%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F  LL  K + ++ +RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCGLL--KGILEQVERVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  I      +HE  ++ +L LA +  IPF  A D +F  K  L +H N +   AF+  
+Sbjct  76   NELDITTKKALLHEAFENKVLKLANQHHIPFDYAKDLIFDNKP-LARHQNALILKAFNAK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P56072|SDHL_HELPY L-serine dehydratase OS=Helicobacter pylori 
+(strain ATCC 700392 / 26695) OX=85962 GN=sdaA PE=3 SV=1
+Length=455
+
+ Score = 156 bits (394),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 61/144 (42%), Positives = 88/144 (61%), Gaps = 8/144 (6%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLEN-KA  59
+            SSHT+GPM A   F + L  K + ++  RV++ L+GSLALTGKGH +D+A+L GL    A
+Sbjct  18   SSHTIGPMEAGARFCESL--KGILEQVVRVQITLHGSLALTGKGHLSDEAVLIGLHGIYA  75
+
+Query  60   PESMIPR----MHEILDSNLLNLAGKKEIPFHEATDFLFLQKELLPKHSNGMRFSAFDGN  115
+             E  +      +HE L++ +L LA +  IPF  A D +F  K  L +H N +   AF+  
+Sbjct  76   NELEVTTKKALLHEALENKVLKLANQHHIPFDYAKDLIFDNKP-LTRHQNALILKAFNSK  134
+
+Query  116  ANLLIEQVYYSIGGGFITTEEDFD  139
+              +L E+ YYS+GGGF+ TE++ D
+Sbjct  135  NEVLKEETYYSVGGGFVYTEKELD  158
+
+
+>sp|P33074|SDHB_PEPAS L-serine dehydratase, beta chain OS=Peptoniphilus 
+asaccharolyticus OX=1258 GN=sdhB PE=1 SV=2
+Length=222
+
+ Score = 112 bits (280),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 35/131 (27%), Positives = 53/131 (40%), Gaps = 20/131 (15%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDKTQRVKVELYGSLALTGKGHGTDKAILNGLENKAP  60
+            SSHT G    AN    ++          +V+ +L+GS A T KGHGTD+A++ G+    P
+Sbjct  19   SSHTAGACKIANVATSIVSN-----NYNQVEFQLHGSFAHTFKGHGTDRALVGGILGFEP  73
+
+Query  61   ESMIPRMHEILDSNLLNLAGKKEIPFHEATDFLFLQKEL-LPKHSNGMRFSAFDGNANLL  119
+            +    +        L   AG          +++F    L    H N ++      N    
+Sbjct  74   DDDRIK----TSFELAKQAG---------LNYIFTTTNLGDNYHPNSVKIVFSYPNGEEE  120
+
+Query  120  IEQVYYSIGGG  130
+               +  SIGGG
+Sbjct  121  Y-VIGSSIGGG  130
+
+
+>sp|O34635|SDHAB_BACSU Probable L-serine dehydratase, beta chain 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=sdaAB PE=3 
+SV=1
+Length=220
+
+ Score = 110 bits (274),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 45/139 (32%), Positives = 58/139 (42%), Gaps = 26/139 (19%)
+
+Query  1    SSHTVGPMLAANAFLQLLEQKNLFDK-TQRVKVELYGSLALTGKGHGTDKAILNGLENKA  59
+            SSHT G              ++LF +  +R+ V  YGS A T KGHGTD AI+ GL    
+Sbjct  19   SSHTAGAARIGRV------ARSLFGREPERIIVSFYGSFAETYKGHGTDVAIIGGL----  68
+
+Query  60   PESMIPRMHEILDSNLLNLAGKKEIPFHEAT--DFLFLQKELLPKHSNGMRFSAFDGNAN  117
+                       LD +  +   K  I   EA   D  F  ++ +P H N  + +  D    
+Sbjct  69   -----------LDFDTFDERIKTAIQIAEAKGIDIEFRVEDAVPVHPNTAKITISDEKGE  117
+
+Query  118  LLIEQVYYSIGGGFITTEE  136
+            L  E    SIGGG I   E
+Sbjct  118  L--ELTGISIGGGKIEITE  134
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.133    0.350    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5028640960
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

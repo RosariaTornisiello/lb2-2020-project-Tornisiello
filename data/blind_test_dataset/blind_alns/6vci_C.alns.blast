@@ -1,0 +1,403 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6vci_C
+
+Length=215
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P76272|YEBT_ECOLI Intermembrane transport protein YebT OS=Esch...  423     6e-143
+sp|P44288|Y1672_HAEIN Uncharacterized protein HI_1672 OS=Haemophi...  172     2e-48 
+sp|P43671|PQIB_ECOLI Intermembrane transport protein PqiB OS=Esch...  46.2    9e-05 
+
+
+>sp|P76272|YEBT_ECOLI Intermembrane transport protein YebT OS=Escherichia 
+coli (strain K12) OX=83333 GN=yebT PE=1 SV=2
+Length=877
+
+ Score = 423 bits (1087),  Expect = 6e-143, Method: Compositional matrix adjust.
+ Identities = 214/225 (95%), Positives = 214/225 (95%), Gaps = 10/225 (4%)
+
+Query  1    GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  60
+            GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG
+Sbjct  159  GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  218
+
+Query  61   SRFWNVSGVDAX----------ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  110
+            SRFWNVSGVDA           ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ
+Sbjct  219  SRFWNVSGVDANVSISGAKVKLESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  278
+
+Query  111  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN  170
+            RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN
+Sbjct  279  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN  338
+
+Query  171  TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE  215
+            TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE
+Sbjct  339  TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE  383
+
+
+ Score = 66.2 bits (160),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 58/218 (27%), Positives = 100/218 (46%), Gaps = 15/218 (7%)
+
+Query  5    IHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSRFW  64
+            + L A  L  + +GS+V +RK  VG+V    + P      ID+ I+  + +L+   S FW
+Sbjct  517  VSLSAETLPDVQAGSVVLYRKFEVGEVI--TVRPRANAFDIDLHIKPEYRNLLTSNSVFW  574
+
+Query  65   ---------NVSGVDAXES-LAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQRGVI  114
+                     N SG+    S L+  + GAI+FD+   +  ++ +    +      + R V 
+Sbjct  575  AEGGAKVQLNGSGLTVQASPLSRALKGAISFDNLSGASASQRKGDKRILYASETAARAVG  634
+
+Query  115  IKLELPS-GAGLTADSTPLMYQGLEVGQLTKLDL-NPGGKVTGEMTVDPSVV-TLLRENT  171
+             ++ L +  AG  A   P+ Y G+++GQ+  LDL     +V  +  + P  V T  R  T
+Sbjct  635  GQITLHAFDAGKLAVGMPIRYLGIDIGQIQTLDLITARNEVQAKAVLYPEYVQTFARGGT  694
+
+Query  172  RIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEF  209
+            R  +  P++S +       +      + PG G PR++F
+Sbjct  695  RFSVVTPQISAAGVEHLDTILQPYINVEPGRGNPRRDF  732
+
+
+ Score = 52.4 bits (124),  Expect = 8e-07, Method: Compositional matrix adjust.
+ Identities = 32/108 (30%), Positives = 58/108 (54%), Gaps = 2/108 (2%)
+
+Query  107  AHSQRGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPG-GKVTGEMTVDPSVVT  165
+            ++  RG  + ++  S  G+    TP+ YQG+EVG +  + L+    K+  ++++   +  
+Sbjct  41   SYQDRGNTVTIDFMSADGIVPGRTPVRYQGVEVGTVQDISLSDDLRKIEVKVSIKSDMKD  100
+
+Query  166  LLRENTRIELRNPKLSLSD-ANLSALLTGKTFELVPGDGEPRKEFVVV  212
+             LRE T+  L  PK SL+  + L AL+ G    ++PG G+ +  FV +
+Sbjct  101  ALREETQFWLVTPKASLAGVSGLDALVGGNYIGMMPGKGKEQDHFVAL  148
+
+
+ Score = 48.1 bits (113),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 31/96 (32%), Positives = 45/96 (47%), Gaps = 10/96 (10%)
+
+Query  3    LMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSR  62
+            L I ++AP+ GSL  G+ V FR + VG V    +      V+I + I +R+  LV+  S 
+Sbjct  748  LSIIVEAPEAGSLGIGTPVLFRGLEVGTVTGMTLGTLSDRVMIAMRISKRYQHLVRNNSV  807
+
+Query  63   FWNVS----------GVDAXESLAALVNGAIAFDSP  88
+            FW  S          GV    +    + G IAF +P
+Sbjct  808  FWLASGYSLDFGLTGGVVKTGTFNQFIRGGIAFATP  843
+
+
+>sp|P44288|Y1672_HAEIN Uncharacterized protein HI_1672 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1672 PE=1 SV=1
+Length=881
+
+ Score = 172 bits (437),  Expect = 2e-48, Method: Compositional matrix adjust.
+ Identities = 92/225 (41%), Positives = 140/225 (62%), Gaps = 14/225 (6%)
+
+Query  1    GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  60
+            GDL+IHL + DLGS++ G+ VYF+K+PVGK+YDY IN N + V IDV+I++ +   VKK 
+Sbjct  166  GDLLIHLISDDLGSISIGASVYFKKLPVGKIYDYRINKNNK-VEIDVVIDKAYAKFVKKD  224
+
+Query  61   SRFWNVSGVDAX----------ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  110
+            SRFWN+SG++A           ESL A+V GA++FDSP +S  A+    F LY +L  ++
+Sbjct  225  SRFWNISGINANISPSGLNLNVESLNAVVQGAVSFDSPADSPKADENSHFTLYTNLKAAK  284
+
+Query  111  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDL--NPGGKVTGEMTVDPSVVTLLR  168
+            RG+ IK+ +P+ + L A  T +  Q   +G L KL    N    + G + +DP+  +L +
+Sbjct  285  RGIEIKVTIPASSALIAGQTEVYSQDNAIGILAKLSAVENNDEILEGSLLIDPNQASLFK  344
+
+Query  169  ENTRIELRNPKLSLSD-ANLSALLTGKTFELVPGDGEPRKEFVVV  212
+             N++I LRN K+ L + A       G+ F+++ GDGE + +F V+
+Sbjct  345  ANSKIVLRNKKIDLGNLAEPKKFFRGEYFDVIAGDGETKHQFNVI  389
+
+
+ Score = 66.2 bits (160),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 59/103 (57%), Gaps = 2/103 (2%)
+
+Query  110  QRGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPG-GKVTGEMTVDPSVVTLLR  168
+            +RG  I +   +G+G+ AD T + YQGL++G + ++       KV     ++P   ++LR
+Sbjct  51   ERGTSITITFTNGSGIVADKTQIRYQGLQIGIVKEVHFTDNLQKVEVVANINPEASSILR  110
+
+Query  169  ENTRIELRNPKLSLSD-ANLSALLTGKTFELVPGDGEPRKEFV  210
+            ENT+  L  P +SL+  + L +L++G    L PGDG+   EF+
+Sbjct  111  ENTKFWLVQPNVSLAGISGLDSLVSGNYITLQPGDGDREDEFI  153
+
+
+ Score = 58.9 bits (141),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 57/219 (26%), Positives = 102/219 (47%), Gaps = 24/219 (11%)
+
+Query  5    IHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSRFW  64
+            I L    L S++ GSLV +R+  VGK+   +I P      +D+ I   +  L+   SRFW
+Sbjct  527  ITLHTQTLPSIDKGSLVLYRQFEVGKI--LSIKPKTNNFDVDIYIYPAYQHLLTDKSRFW  584
+
+Query  65   NVSGVDAXES----------LAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQR-GV  113
+              S      S          LA  + GAI+FD+        + +   LY + ++++  G 
+Sbjct  585  VESAAKIDVSPKGISIQATPLARSLKGAISFDN------GGSGNNRTLYANESYAKSIGF  638
+
+Query  114  IIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGK-VTGEMTVDPSVVTLL-RENT  171
+            +I L       L+     L Y GL+VGQ+  + L+   K +T +  ++P+ + ++ +E  
+Sbjct  639  VITLITDDATNLS-KGMNLRYLGLDVGQIDSIQLDAKAKRITAKALINPNYMNIIAKEGA  697
+
+Query  172  RIELRNPKLSLSDA-NLSALLTGKTFELVPGDGEPRKEF  209
+               + +P++S     NL +LL     ++  G+G  + +F
+Sbjct  698  NFTIISPQISAGGIDNLDSLLQ-PYIDIEIGNGNTKTQF  735
+
+
+ Score = 45.1 bits (105),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 26/96 (27%), Positives = 48/96 (50%), Gaps = 10/96 (10%)
+
+Query  7    LQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSRFWNV  66
+            L+  D  +L+ GS + +R + VG V  + +N     V++ + I  +++ LV++ + FW  
+Sbjct  755  LETRDAMNLSEGSPILYRGVEVGTVKKFELNSLGDRVLVHIAIMPKYSHLVRQNTEFWIA  814
+
+Query  67   SGVD----------AXESLAALVNGAIAFDSPEESK  92
+            SG D             S+  L+ G I+F +P E +
+Sbjct  815  SGYDFSLGWKGAVFNTGSVQQLLKGGISFSTPAEKE  850
+
+
+>sp|P43671|PQIB_ECOLI Intermembrane transport protein PqiB OS=Escherichia 
+coli (strain K12) OX=83333 GN=pqiB PE=1 SV=2
+Length=546
+
+ Score = 46.2 bits (108),  Expect = 9e-05, Method: Compositional matrix adjust.
+ Identities = 32/116 (28%), Positives = 49/116 (42%), Gaps = 13/116 (11%)
+
+Query  3    LMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSR  62
+            + + L +   G L+ G  V FR   VG V     +  K+ +   + I   +  LV    R
+Sbjct  158  IRVILDSKKAGQLSPGDPVLFRGYRVGSVETSTFDTQKRNISYQLFINAPYDRLVTNNVR  217
+
+Query  63   FWNVSGVDA----------XESLAALVNGAIAFDSPEE---SKPAEAEDTFGLYED  105
+            FW  SG+              SL  L++G ++FD PE     +P   +  F LY+D
+Sbjct  218  FWKDSGIAVDLTSAGMRVEMGSLTTLLSGGVSFDVPEGLDLGQPVAPKTAFVLYDD  273
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.136    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 14195421600
+Results from round 2
+
+
+Query= 6vci_C
+
+Length=215
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P76272|YEBT_ECOLI Intermembrane transport protein YebT OS=Esch...  343     2e-112
+sp|P44288|Y1672_HAEIN Uncharacterized protein HI_1672 OS=Haemophi...  315     3e-101
+sp|P43671|PQIB_ECOLI Intermembrane transport protein PqiB OS=Esch...  147     2e-40 
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P76272|YEBT_ECOLI Intermembrane transport protein YebT OS=Escherichia 
+coli (strain K12) OX=83333 GN=yebT PE=1 SV=2
+Length=877
+
+ Score = 343 bits (881),  Expect = 2e-112, Method: Composition-based stats.
+ Identities = 214/225 (95%), Positives = 214/225 (95%), Gaps = 10/225 (4%)
+
+Query  1    GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  60
+            GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG
+Sbjct  159  GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  218
+
+Query  61   SRFWNVSGVDAX----------ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  110
+            SRFWNVSGVDA           ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ
+Sbjct  219  SRFWNVSGVDANVSISGAKVKLESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  278
+
+Query  111  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN  170
+            RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN
+Sbjct  279  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVVTLLREN  338
+
+Query  171  TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE  215
+            TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE
+Sbjct  339  TRIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVVVPGE  383
+
+
+ Score = 71.6 bits (174),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 35/115 (30%), Positives = 51/115 (44%), Gaps = 13/115 (11%)
+
+Query  3    LMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSR  62
+            L I ++AP+ GSL  G+ V FR + VG V    +      V+I + I +R+  LV+  S 
+Sbjct  748  LSIIVEAPEAGSLGIGTPVLFRGLEVGTVTGMTLGTLSDRVMIAMRISKRYQHLVRNNSV  807
+
+Query  63   FWNVS----------GVDAXESLAALVNGAIAFDSPEE---SKPAEAEDTFGLYE  104
+            FW  S          GV    +    + G IAF +P     +  A+    F L E
+Sbjct  808  FWLASGYSLDFGLTGGVVKTGTFNQFIRGGIAFATPPGTPLAPKAQEGKHFLLQE  862
+
+
+ Score = 54.7 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 32/104 (31%), Positives = 55/104 (53%), Gaps = 2/104 (2%)
+
+Query  111  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPG-GKVTGEMTVDPSVVTLLRE  169
+            RG  + ++  S  G+    TP+ YQG+EVG +  + L+    K+  ++++   +   LRE
+Sbjct  45   RGNTVTIDFMSADGIVPGRTPVRYQGVEVGTVQDISLSDDLRKIEVKVSIKSDMKDALRE  104
+
+Query  170  NTRIELRNPKLSL-SDANLSALLTGKTFELVPGDGEPRKEFVVV  212
+             T+  L  PK SL   + L AL+ G    ++PG G+ +  FV +
+Sbjct  105  ETQFWLVTPKASLAGVSGLDALVGGNYIGMMPGKGKEQDHFVAL  148
+
+
+ Score = 45.4 bits (106),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 52/233 (22%), Positives = 100/233 (43%), Gaps = 35/233 (15%)
+
+Query  3    LMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSR  62
+            L + L AP+   +++G  +    + VG+V D  +    +GV   V IE +  +LVK  S+
+Sbjct  393  LTLTLTAPESYGIDAGQPLILHGVQVGQVIDRKLTS--KGVTFTVAIEPQHRELVKGDSK  450
+
+Query  63   FWNVSGVDAXESLAAL----------VNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQRG  112
+            F   S VD    L  +          +NG I    P      E + ++ LY +L  +   
+Sbjct  451  FVVNSRVDVKVGLDGVEFLGASASEWINGGIRI-LP--GDKGEMKASYPLYANLEKALEN  507
+
+Query  113  VIIKLELPSGA-GLTADSTP-------LMYQGLEVGQLTKLDLNPGGKVTGEMTVDPSVV  164
+             +   +LP+    L+A++ P       ++Y+  EVG++  +          ++ + P   
+Sbjct  508  SL--SDLPTTTVSLSAETLPDVQAGSVVLYRKFEVGEVITVRPRANA-FDIDLHIKPEYR  564
+
+Query  165  TLLRENT--------RIELRNPKLSLSDANLSALLTGK-TFELVPGDGEPRKE  208
+             LL  N+        +++L    L++  + LS  L G  +F+ + G    +++
+Sbjct  565  NLLTSNSVFWAEGGAKVQLNGSGLTVQASPLSRALKGAISFDNLSGASASQRK  617
+
+
+>sp|P44288|Y1672_HAEIN Uncharacterized protein HI_1672 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1672 PE=1 SV=1
+Length=881
+
+ Score = 315 bits (807),  Expect = 3e-101, Method: Composition-based stats.
+ Identities = 92/225 (41%), Positives = 140/225 (62%), Gaps = 14/225 (6%)
+
+Query  1    GDLMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKG  60
+            GDL+IHL + DLGS++ G+ VYF+K+PVGK+YDY IN N + V IDV+I++ +   VKK 
+Sbjct  166  GDLLIHLISDDLGSISIGASVYFKKLPVGKIYDYRINKNNK-VEIDVVIDKAYAKFVKKD  224
+
+Query  61   SRFWNVSGVDAX----------ESLAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQ  110
+            SRFWN+SG++A           ESL A+V GA++FDSP +S  A+    F LY +L  ++
+Sbjct  225  SRFWNISGINANISPSGLNLNVESLNAVVQGAVSFDSPADSPKADENSHFTLYTNLKAAK  284
+
+Query  111  RGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDL--NPGGKVTGEMTVDPSVVTLLR  168
+            RG+ IK+ +P+ + L A  T +  Q   +G L KL    N    + G + +DP+  +L +
+Sbjct  285  RGIEIKVTIPASSALIAGQTEVYSQDNAIGILAKLSAVENNDEILEGSLLIDPNQASLFK  344
+
+Query  169  ENTRIELRNPKLSLSD-ANLSALLTGKTFELVPGDGEPRKEFVVV  212
+             N++I LRN K+ L + A       G+ F+++ GDGE + +F V+
+Sbjct  345  ANSKIVLRNKKIDLGNLAEPKKFFRGEYFDVIAGDGETKHQFNVI  389
+
+
+ Score = 77.8 bits (190),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 54/220 (25%), Positives = 101/220 (46%), Gaps = 22/220 (10%)
+
+Query  5    IHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSRFW  64
+            I L    L S++ GSLV +R+  VGK+   +I P      +D+ I   +  L+   SRFW
+Sbjct  527  ITLHTQTLPSIDKGSLVLYRQFEVGKI--LSIKPKTNNFDVDIYIYPAYQHLLTDKSRFW  584
+
+Query  65   NVS---------GVDAXES-LAALVNGAIAFDSPEESKPAEAEDTFGLYEDLAHSQR-GV  113
+              S         G+    + LA  + GAI+FD+          +   LY + ++++  G 
+Sbjct  585  VESAAKIDVSPKGISIQATPLARSLKGAISFDNGGSG------NNRTLYANESYAKSIGF  638
+
+Query  114  IIKLELPSGAGLTADSTPLMYQGLEVGQLTKLDLNPGGK-VTGEMTVDPSVVTLL-RENT  171
+            +I L       L+     L Y GL+VGQ+  + L+   K +T +  ++P+ + ++ +E  
+Sbjct  639  VITLITDDATNLSKGMN-LRYLGLDVGQIDSIQLDAKAKRITAKALINPNYMNIIAKEGA  697
+
+Query  172  RIELRNPKLSLSDANLSALLTGKTFELVPGDGEPRKEFVV  211
+               + +P++S    +    L     ++  G+G  + +F +
+Sbjct  698  NFTIISPQISAGGIDNLDSLLQPYIDIEIGNGNTKTQFNL  737
+
+
+ Score = 68.5 bits (166),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 59/103 (57%), Gaps = 2/103 (2%)
+
+Query  110  QRGVIIKLELPSGAGLTADSTPLMYQGLEVGQLTKLD-LNPGGKVTGEMTVDPSVVTLLR  168
+            +RG  I +   +G+G+ AD T + YQGL++G + ++   +   KV     ++P   ++LR
+Sbjct  51   ERGTSITITFTNGSGIVADKTQIRYQGLQIGIVKEVHFTDNLQKVEVVANINPEASSILR  110
+
+Query  169  ENTRIELRNPKLSL-SDANLSALLTGKTFELVPGDGEPRKEFV  210
+            ENT+  L  P +SL   + L +L++G    L PGDG+   EF+
+Sbjct  111  ENTKFWLVQPNVSLAGISGLDSLVSGNYITLQPGDGDREDEFI  153
+
+
+ Score = 63.5 bits (153),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 29/110 (26%), Positives = 51/110 (46%), Gaps = 13/110 (12%)
+
+Query  6    HLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSRFWN  65
+             L+  D  +L+ GS + +R + VG V  + +N     V++ + I  +++ LV++ + FW 
+Sbjct  754  ILETRDAMNLSEGSPILYRGVEVGTVKKFELNSLGDRVLVHIAIMPKYSHLVRQNTEFWI  813
+
+Query  66   VSGVDA----------XESLAALVNGAIAFDSPEE---SKPAEAEDTFGL  102
+             SG D             S+  L+ G I+F +P E      A+    F L
+Sbjct  814  ASGYDFSLGWKGAVFNTGSVQQLLKGGISFSTPAEKEIQPQAQPNKRFLL  863
+
+
+>sp|P43671|PQIB_ECOLI Intermembrane transport protein PqiB OS=Escherichia 
+coli (strain K12) OX=83333 GN=pqiB PE=1 SV=2
+Length=546
+
+ Score = 147 bits (372),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 33/121 (27%), Positives = 50/121 (41%), Gaps = 13/121 (11%)
+
+Query  3    LMIHLQAPDLGSLNSGSLVYFRKIPVGKVYDYAINPNKQGVVIDVLIERRFTDLVKKGSR  62
+            + + L +   G L+ G  V FR   VG V     +  K+ +   + I   +  LV    R
+Sbjct  158  IRVILDSKKAGQLSPGDPVLFRGYRVGSVETSTFDTQKRNISYQLFINAPYDRLVTNNVR  217
+
+Query  63   FWNVSGVDA----------XESLAALVNGAIAFDSPEE---SKPAEAEDTFGLYEDLAHS  109
+            FW  SG+              SL  L++G ++FD PE     +P   +  F LY+D    
+Sbjct  218  FWKDSGIAVDLTSAGMRVEMGSLTTLLSGGVSFDVPEGLDLGQPVAPKTAFVLYDDQKSI  277
+
+Query  110  Q  110
+            Q
+Sbjct  278  Q  278
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.342    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 14195421600
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

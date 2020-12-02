@@ -1,0 +1,255 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d4i6ya2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  222     1e-71
+sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  126     1e-34
+
+
+>sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Pseudomonas mevalonii OX=32044 GN=mvaA PE=1 SV=1
+Length=428
+
+ Score = 222 bits (566),  Expect = 1e-71, Method: Compositional matrix adjust.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG
+Sbjct  111  LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  170
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  110
+            PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL
+Sbjct  171  PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  220
+
+
+>sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Archaeoglobus fulgidus (strain ATCC 49558 / VC-16 
+/ DSM 4304 / JCM 9628 / NBRC 100126) OX=224325 GN=hmgA PE=3 
+SV=1
+Length=436
+
+ Score = 126 bits (316),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 64/108 (59%), Positives = 79/108 (73%), Gaps = 1/108 (1%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LM  Q+Q+  + +P  A+  +LR+KDEIIE AN  D +L +LGGGC+DIE     DT  G
+Sbjct  127  LMIGQIQVTKLLNPNAAKFEVLRQKDEIIERANECDPMLVNLGGGCKDIEARVI-DTIMG  185
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLA  108
+             ML+ HLIVDV+DAMGAN VNTM E VAP +E ITGG+V LRI+SNLA
+Sbjct  186  KMLIVHLIVDVKDAMGANAVNTMCEKVAPFIERITGGKVYLRIISNLA  233
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.138    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 2
+
+
+Query= d4i6ya2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  183     1e-56
+sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  174     4e-53
+
+Sequences not found previously or not previously below threshold:
+
+sp|O51628|HMDH_BORBU Probable 3-hydroxy-3-methylglutaryl-coenzyme...  43.0    1e-04
+
+
+>sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Pseudomonas mevalonii OX=32044 GN=mvaA PE=1 SV=1
+Length=428
+
+ Score = 183 bits (465),  Expect = 1e-56, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG
+Sbjct  111  LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  170
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  110
+            PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL
+Sbjct  171  PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  220
+
+
+>sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Archaeoglobus fulgidus (strain ATCC 49558 / VC-16 
+/ DSM 4304 / JCM 9628 / NBRC 100126) OX=224325 GN=hmgA PE=3 
+SV=1
+Length=436
+
+ Score = 174 bits (442),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 64/108 (59%), Positives = 79/108 (73%), Gaps = 1/108 (1%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LM  Q+Q+  + +P  A+  +LR+KDEIIE AN  D +L +LGGGC+DIE     DT  G
+Sbjct  127  LMIGQIQVTKLLNPNAAKFEVLRQKDEIIERANECDPMLVNLGGGCKDIEARVI-DTIMG  185
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLA  108
+             ML+ HLIVDV+DAMGAN VNTM E VAP +E ITGG+V LRI+SNLA
+Sbjct  186  KMLIVHLIVDVKDAMGANAVNTMCEKVAPFIERITGGKVYLRIISNLA  233
+
+
+>sp|O51628|HMDH_BORBU Probable 3-hydroxy-3-methylglutaryl-coenzyme 
+A reductase OS=Borrelia burgdorferi (strain ATCC 35210 
+/ B31 / CIP 102532 / DSM 4680) OX=224326 GN=BB_0685 PE=3 SV=1
+Length=431
+
+ Score = 43.0 bits (100),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 39/74 (53%), Gaps = 6/74 (8%)
+
+Query  36   DQLLNSL---GGGCRDIEVHTFADTPRGPMLVAHLIVDVRDAMGANTVNTMAEAVAPLME  92
+            + LL ++   GGG R +      +     +   ++ VD  DAMGAN +N++AE VA  + 
+Sbjct  141  EPLLTNMNQRGGGFRRLSTRHIKELGIQKL---NIYVDTCDAMGANLLNSIAERVAEFIF  197
+
+Query  93   AITGGQVRLRILSN  106
+               G +  L++LSN
+Sbjct  198  LEFGYECVLKVLSN  211
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.145    0.403    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0443    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+Results from round 3
+
+
+Query= d4i6ya2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  172     2e-52
+sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reduct...  164     2e-49
+sp|O51628|HMDH_BORBU Probable 3-hydroxy-3-methylglutaryl-coenzyme...  98.5    2e-24
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P13702|MVAA_PSEMV 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Pseudomonas mevalonii OX=32044 GN=mvaA PE=1 SV=1
+Length=428
+
+ Score = 172 bits (436),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG
+Sbjct  111  LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  170
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  110
+            PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL
+Sbjct  171  PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLADL  220
+
+
+>sp|O28538|HMDH_ARCFU 3-hydroxy-3-methylglutaryl-coenzyme A reductase 
+OS=Archaeoglobus fulgidus (strain ATCC 49558 / VC-16 
+/ DSM 4304 / JCM 9628 / NBRC 100126) OX=224325 GN=hmgA PE=3 
+SV=1
+Length=436
+
+ Score = 164 bits (416),  Expect = 2e-49, Method: Composition-based stats.
+ Identities = 64/108 (59%), Positives = 79/108 (73%), Gaps = 1/108 (1%)
+
+Query  1    LMHAQVQIVGIQDPLNARLSLLRRKDEIIELANRKDQLLNSLGGGCRDIEVHTFADTPRG  60
+            LM  Q+Q+  + +P  A+  +LR+KDEIIE AN  D +L +LGGGC+DIE     DT  G
+Sbjct  127  LMIGQIQVTKLLNPNAAKFEVLRQKDEIIERANECDPMLVNLGGGCKDIEARVI-DTIMG  185
+
+Query  61   PMLVAHLIVDVRDAMGANTVNTMAEAVAPLMEAITGGQVRLRILSNLA  108
+             ML+ HLIVDV+DAMGAN VNTM E VAP +E ITGG+V LRI+SNLA
+Sbjct  186  KMLIVHLIVDVKDAMGANAVNTMCEKVAPFIERITGGKVYLRIISNLA  233
+
+
+>sp|O51628|HMDH_BORBU Probable 3-hydroxy-3-methylglutaryl-coenzyme 
+A reductase OS=Borrelia burgdorferi (strain ATCC 35210 
+/ B31 / CIP 102532 / DSM 4680) OX=224326 GN=BB_0685 PE=3 SV=1
+Length=431
+
+ Score = 98.5 bits (244),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 39/74 (53%), Gaps = 6/74 (8%)
+
+Query  36   DQLLNSL---GGGCRDIEVHTFADTPRGPMLVAHLIVDVRDAMGANTVNTMAEAVAPLME  92
+            + LL ++   GGG R +      +     +   ++ VD  DAMGAN +N++AE VA  + 
+Sbjct  141  EPLLTNMNQRGGGFRRLSTRHIKELGIQKL---NIYVDTCDAMGANLLNSIAERVAEFIF  197
+
+Query  93   AITGGQVRLRILSN  106
+               G +  L++LSN
+Sbjct  198  LEFGYECVLKVLSN  211
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.142    0.374    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0435    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5084117440
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

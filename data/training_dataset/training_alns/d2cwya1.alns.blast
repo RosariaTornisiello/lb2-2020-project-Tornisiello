@@ -1,0 +1,192 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2cwya1
+
+Length=94
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex ae...  38.1    0.004
+
+
+>sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex 
+aeolicus (strain VF5) OX=224324 GN=aq_591 PE=4 SV=1
+Length=333
+
+ Score = 38.1 bits (87),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 32/65 (49%), Gaps = 1/65 (2%)
+
+Query  12   WRAGRYYEVHEVLEPYWLKATGEE-RRLLQGVILLAAALHQRRLGRPGLRNLRKAEARLE  70
+            W  G +Y  HE+LE  W     EE ++  +G+I  A ALH+ + G P        +A L+
+Sbjct  231  WNTGDFYRAHEILEEVWGLFKNEEIKKCYRGLIRAAIALHRFKEGNPQSGANVVKQALLD  290
+
+Query  71   GLPCP  75
+               CP
+Sbjct  291  MANCP  295
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.142    0.457    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5002854540
+Results from round 2
+
+
+Query= d2cwya1
+
+Length=94
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex ae...  38.8    0.002
+sp|P17617|YPUF_BACSU Uncharacterized protein YpuF OS=Bacillus sub...  37.3    0.006
+
+
+>sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex 
+aeolicus (strain VF5) OX=224324 GN=aq_591 PE=4 SV=1
+Length=333
+
+ Score = 38.8 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 32/65 (49%), Gaps = 1/65 (2%)
+
+Query  12   WRAGRYYEVHEVLEPYWLKATGEE-RRLLQGVILLAAALHQRRLGRPGLRNLRKAEARLE  70
+            W  G +Y  HE+LE  W     EE ++  +G+I  A ALH+ + G P        +A L+
+Sbjct  231  WNTGDFYRAHEILEEVWGLFKNEEIKKCYRGLIRAAIALHRFKEGNPQSGANVVKQALLD  290
+
+Query  71   GLPCP  75
+               CP
+Sbjct  291  MANCP  295
+
+
+>sp|P17617|YPUF_BACSU Uncharacterized protein YpuF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypuF PE=4 SV=1
+Length=174
+
+ Score = 37.3 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 28/75 (37%), Positives = 37/75 (49%), Gaps = 5/75 (7%)
+
+Query  17  YYEVHEVLEPYWLKATGEER-RLLQGVILLAAAL-HQRRLGRPGLRNLRKAEARL---EG  71
+           Y+E HE+LE YW +   ++R R   G I LA AL H RR    G + L     R+   E 
+Sbjct  19  YFECHEILEEYWKEDPPKKRKRYWVGFIQLAVALYHHRRQNTAGAKRLMANSIRILQAEH  78
+
+Query  72  LPCPLMGLDWRSLLQ  86
+                +GLD   LL+
+Sbjct  79  RAVEDLGLDHGRLLE  93
+
+
+
+Lambda      K        H        a         alpha
+   0.325    0.143    0.460    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0436    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5002854540
+Results from round 3
+
+
+Query= d2cwya1
+
+Length=94
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex ae...  110     1e-29
+
+Sequences not found previously or not previously below threshold:
+
+sp|P17617|YPUF_BACSU Uncharacterized protein YpuF OS=Bacillus sub...  37.7    0.003
+
+
+>sp|O66853|Y591_AQUAE Uncharacterized protein aq_591 OS=Aquifex 
+aeolicus (strain VF5) OX=224324 GN=aq_591 PE=4 SV=1
+Length=333
+
+ Score = 110 bits (275),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 22/65 (34%), Positives = 32/65 (49%), Gaps = 1/65 (2%)
+
+Query  12   WRAGRYYEVHEVLEPYWLKATGEE-RRLLQGVILLAAALHQRRLGRPGLRNLRKAEARLE  70
+            W  G +Y  HE+LE  W     EE ++  +G+I  A ALH+ + G P        +A L+
+Sbjct  231  WNTGDFYRAHEILEEVWGLFKNEEIKKCYRGLIRAAIALHRFKEGNPQSGANVVKQALLD  290
+
+Query  71   GLPCP  75
+               CP
+Sbjct  291  MANCP  295
+
+
+>sp|P17617|YPUF_BACSU Uncharacterized protein YpuF OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypuF PE=4 SV=1
+Length=174
+
+ Score = 37.7 bits (86),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 27/78 (35%), Positives = 37/78 (47%), Gaps = 5/78 (6%)
+
+Query  14  AGRYYEVHEVLEPYWLKATGEERRLLQ-GVILLAAAL-HQRRLGRPGLRNLRKAEARL--  69
+              Y+E HE+LE YW +   ++R+    G I LA AL H RR    G + L     R+  
+Sbjct  16  TRDYFECHEILEEYWKEDPPKKRKRYWVGFIQLAVALYHHRRQNTAGAKRLMANSIRILQ  75
+
+Query  70  -EGLPCPLMGLDWRSLLQ  86
+            E      +GLD   LL+
+Sbjct  76  AEHRAVEDLGLDHGRLLE  93
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.431    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0417    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5002854540
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

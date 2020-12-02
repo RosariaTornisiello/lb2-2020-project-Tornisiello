@@ -1,0 +1,141 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1zbpa1
+
+Length=264
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9I746|TAGJ_PSEAE Type VI secretion system accessory component...  80.9    1e-16
+
+
+>sp|Q9I746|TAGJ_PSEAE Type VI secretion system accessory component 
+TagJ OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 
+22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / 
+PAO1) OX=208964 GN=tagJ PE=1 SV=1
+Length=281
+
+ Score = 80.9 bits (198),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 66/230 (29%), Positives = 108/230 (47%), Gaps = 20/230 (9%)
+
+Query  7    LSEGQLQQALELLIEAIKASPKDASLRSSFIELLCIDGDFERADEQLMQSIKLFPEYLPG  66
+            L  G+L  AL+ L E +++ P +A+LR    +LL + G + RA  QL    +L    LP 
+Sbjct  27   LRAGRLDDALKALQEQVRSQPSNATLRIFLFQLLAVMGQWARAQNQLKVVGELDASALPM  86
+
+Query  67   ASQLRHLVKAAQARKDFAQGAATAKVLGENEELTKSLVSFNLSMVSQDYEQVSELALQIE  126
+                   +     R++   G  T  +LG+  E    L    L  +S D E   E A   +
+Sbjct  87   VQTYSTAIDCEALRREVFAGRLTPVILGQPAEWIAPL----LQALSLDAEGHGEAA---Q  139
+
+Query  127  ELRQEKGFLA--------NDTSFSDVRDIDDRLGGYIELFSTAGNYFLVPIASINTLEIK  178
+             LR E+ F A         +  F+ + D D RLG  +E+    G Y  +P++++ +L+++
+Sbjct  140  ALR-EQAFDAAPAVPGRIGEAPFAWLADADTRLGPVLEVIVN-GRYAWLPMSNLRSLKVE  197
+
+Query  179  SATSLLESVWRPVEFDIDGLGEGEGHMPMTY---VDSESDAQKLGRETDW  225
+            + + L + VW P E  +   G     +P  Y   V+   DA +LGR+T+W
+Sbjct  198  APSDLRDLVWLPAELTLANGGATVALLPARYAETVEHGDDAARLGRKTEW  247
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.371    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20347269992
+Results from round 2
+
+
+Query= d1zbpa1
+
+Length=264
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9I746|TAGJ_PSEAE Type VI secretion system accessory component...  298     7e-101
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9I746|TAGJ_PSEAE Type VI secretion system accessory component 
+TagJ OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 
+22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / 
+PAO1) OX=208964 GN=tagJ PE=1 SV=1
+Length=281
+
+ Score = 298 bits (763),  Expect = 7e-101, Method: Composition-based stats.
+ Identities = 66/230 (29%), Positives = 108/230 (47%), Gaps = 20/230 (9%)
+
+Query  7    LSEGQLQQALELLIEAIKASPKDASLRSSFIELLCIDGDFERADEQLMQSIKLFPEYLPG  66
+            L  G+L  AL+ L E +++ P +A+LR    +LL + G + RA  QL    +L    LP 
+Sbjct  27   LRAGRLDDALKALQEQVRSQPSNATLRIFLFQLLAVMGQWARAQNQLKVVGELDASALPM  86
+
+Query  67   ASQLRHLVKAAQARKDFAQGAATAKVLGENEELTKSLVSFNLSMVSQDYEQVSELALQIE  126
+                   +     R++   G  T  +LG+  E    L    L  +S D E   E A   +
+Sbjct  87   VQTYSTAIDCEALRREVFAGRLTPVILGQPAEWIAPL----LQALSLDAEGHGEAA---Q  139
+
+Query  127  ELRQEKGFLA--------NDTSFSDVRDIDDRLGGYIELFSTAGNYFLVPIASINTLEIK  178
+             LR E+ F A         +  F+ + D D RLG  +E+    G Y  +P++++ +L+++
+Sbjct  140  ALR-EQAFDAAPAVPGRIGEAPFAWLADADTRLGPVLEVIVN-GRYAWLPMSNLRSLKVE  197
+
+Query  179  SATSLLESVWRPVEFDIDGLGEGEGHMPMTY---VDSESDAQKLGRETDW  225
+            + + L + VW P E  +   G     +P  Y   V+   DA +LGR+T+W
+Sbjct  198  APSDLRDLVWLPAELTLANGGATVALLPARYAETVEHGDDAARLGRKTEW  247
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.349    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0401    0.140     1.90     42.6     43.6 
+
+Effective search space used: 20347269992
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

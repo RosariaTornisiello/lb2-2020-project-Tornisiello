@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2euca1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O34626|YFMB_BACSU Uncharacterized protein YfmB OS=Bacillus sub...  218     3e-74
+
+
+>sp|O34626|YFMB_BACSU Uncharacterized protein YfmB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfmB PE=1 SV=1
+Length=122
+
+ Score = 218 bits (555),  Expect = 3e-74, Method: Compositional matrix adjust.
+ Identities = 108/113 (96%), Positives = 108/113 (96%), Gaps = 5/113 (4%)
+
+Query  1    MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD  60
+            MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD
+Sbjct  1    MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD  60
+
+Query  61   IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLS-----AAYHLFV  108
+            IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLS     AAYHLFV
+Sbjct  61   IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLSRRHGNAAYHLFV  113
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.138    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+Results from round 2
+
+
+Query= d2euca1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O34626|YFMB_BACSU Uncharacterized protein YfmB OS=Bacillus sub...  210     7e-71
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O34626|YFMB_BACSU Uncharacterized protein YfmB OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfmB PE=1 SV=1
+Length=122
+
+ Score = 210 bits (534),  Expect = 7e-71, Method: Composition-based stats.
+ Identities = 108/113 (96%), Positives = 108/113 (96%), Gaps = 5/113 (4%)
+
+Query  1    MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD  60
+            MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD
+Sbjct  1    MQYFSPEQQYNAWIVSDLVKQIFHKRAGCSPGIHELAVFAEEHFHIDIDFVFSIIMNIGD  60
+
+Query  61   IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLS-----AAYHLFV  108
+            IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLS     AAYHLFV
+Sbjct  61   IEFALTDEIEKKLSGYLSTLLPYVTADMFETSKANAHAFLSRRHGNAAYHLFV  113
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.146    0.473    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0448    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5120154688
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

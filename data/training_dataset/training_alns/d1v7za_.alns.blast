@@ -1,0 +1,1271 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1v7za_
+
+Length=257
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas put...  530     0.0  
+sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermo...  62.8    3e-10
+sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine amid...  56.6    3e-08
+sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine amid...  56.6    3e-08
+
+
+>sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas 
+putida OX=303 GN=crnA PE=1 SV=1
+Length=260
+
+ Score = 530 bits (1365),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 257/257 (100%), Positives = 257/257 (100%), Gaps = 0/257 (0%)
+
+Query  1    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  60
+            KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA
+Sbjct  3    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  62
+
+Query  61   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+            LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE
+Sbjct  63   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  122
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF
+Sbjct  123  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  182
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  240
+            ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL
+Sbjct  183  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  242
+
+Query  241  EVCVQGIADAIREEFPP  257
+            EVCVQGIADAIREEFPP
+Sbjct  243  EVCVQGIADAIREEFPP  259
+
+
+>sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=iolN PE=1 SV=1
+Length=311
+
+ Score = 62.8 bits (151),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 53/211 (25%), Positives = 93/211 (44%), Gaps = 22/211 (10%)
+
+Query  3    VFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGALV  62
+            V+   +T K+   R+   D ++ +PVG+ E HG +     D  L T + ++VA + G  V
+Sbjct  7    VYFQTMTMKQIRERLKQCDLII-IPVGSTENHGPNAPTGEDTFLVTRMAEQVALKTGCTV  65
+
+Query  63   MPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENS  122
+               + YGY      G     PGT  +        +  +I      G R+ +L+NGH +  
+Sbjct  66   AEPIWYGYHPYHHIG----MPGTVPVKDEAFIDYLVSVIAGFWNTGFRKQILLNGHGQEF  121
+
+Query  123  MFIVEGIDLALRELRYAGIQDFKVVV--LSYWDFVKDPAVIQQL---YPEGFLGWDIEHG  177
+            +     I +A+   ++A I     ++  L+++  ++D    ++    Y   F+     H 
+Sbjct  122  V-----IPIAIH--KFAKIFQVPAIIINLNWYHAIQDKFKTKEEGGPYETPFI-----HA  169
+
+Query  178  GVFETSLMLALYPDLVDLDRVVDHPPATFPP  208
+               ETS  LAL+P+ +  +  VD  P  F P
+Sbjct  170  DEVETSWSLALFPEFMHQEWAVDTEPKGFLP  200
+
+
+>sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=mftE PE=1 SV=1
+Length=251
+
+ Score = 56.6 bits (135),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 56/184 (30%), Positives = 78/184 (42%), Gaps = 40/184 (22%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYG----  85
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  86   -ASGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P            G D  H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCP------------GGD-PHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDR  197
+              +R
+Sbjct  180  RTER  183
+
+
+>sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=mftE PE=3 SV=1
+Length=251
+
+ Score = 56.6 bits (135),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 56/184 (30%), Positives = 78/184 (42%), Gaps = 40/184 (22%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYG----  85
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  86   -ASGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P            G D  H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCP------------GGD-PHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDR  197
+              +R
+Sbjct  180  RTER  183
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.140    0.430    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19602338312
+Results from round 2
+
+
+Query= d1v7za_
+
+Length=257
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas put...  426     1e-151
+sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermo...  261     5e-86 
+sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine amid...  177     7e-54 
+sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine amid...  177     7e-54 
+
+Sequences not found previously or not previously below threshold:
+
+sp|D9PWM7|ARFB_METTM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  54.4    2e-07
+sp|Q2NF45|ARFB_METST 2-amino-5-formylamino-6-ribosylaminopyrimidi...  51.7    1e-06
+sp|D3E3M2|ARFB_METRM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  50.5    3e-06
+sp|E3GWT5|ARFB_METFV 2-amino-5-formylamino-6-ribosylaminopyrimidi...  50.2    5e-06
+sp|O26747|ARFB_METTH 2-amino-5-formylamino-6-ribosylaminopyrimidi...  48.2    2e-05
+sp|A4G0L4|ARFB_METM5 2-amino-5-formylamino-6-ribosylaminopyrimidi...  47.1    4e-05
+sp|D5VQW1|ARFB_METIM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  46.3    8e-05
+sp|Q6LWK4|ARFB_METMP 2-amino-5-formylamino-6-ribosylaminopyrimidi...  45.5    1e-04
+sp|A9A8V8|ARFB_METM6 2-amino-5-formylamino-6-ribosylaminopyrimidi...  45.5    1e-04
+sp|A6UUS5|ARFB_META3 2-amino-5-formylamino-6-ribosylaminopyrimidi...  45.1    2e-04
+sp|A6VHX1|ARFB_METM7 2-amino-5-formylamino-6-ribosylaminopyrimidi...  44.0    5e-04
+sp|C7P7V6|ARFB_METFA 2-amino-5-formylamino-6-ribosylaminopyrimidi...  42.5    0.001
+
+
+>sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas 
+putida OX=303 GN=crnA PE=1 SV=1
+Length=260
+
+ Score = 426 bits (1094),  Expect = 1e-151, Method: Composition-based stats.
+ Identities = 257/257 (100%), Positives = 257/257 (100%), Gaps = 0/257 (0%)
+
+Query  1    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  60
+            KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA
+Sbjct  3    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  62
+
+Query  61   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+            LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE
+Sbjct  63   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  122
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF
+Sbjct  123  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  182
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  240
+            ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL
+Sbjct  183  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  242
+
+Query  241  EVCVQGIADAIREEFPP  257
+            EVCVQGIADAIREEFPP
+Sbjct  243  EVCVQGIADAIREEFPP  259
+
+
+>sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=iolN PE=1 SV=1
+Length=311
+
+ Score = 261 bits (667),  Expect = 5e-86, Method: Composition-based stats.
+ Identities = 53/211 (25%), Positives = 93/211 (44%), Gaps = 22/211 (10%)
+
+Query  3    VFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGALV  62
+            V+   +T K+   R+   D ++ +PVG+ E HG +     D  L T + ++VA + G  V
+Sbjct  7    VYFQTMTMKQIRERLKQCDLII-IPVGSTENHGPNAPTGEDTFLVTRMAEQVALKTGCTV  65
+
+Query  63   MPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENS  122
+               + YGY      G     PGT  +        +  +I      G R+ +L+NGH +  
+Sbjct  66   AEPIWYGYHPYHHIG----MPGTVPVKDEAFIDYLVSVIAGFWNTGFRKQILLNGHGQEF  121
+
+Query  123  MFIVEGIDLALRELRYAGIQDFKVVV--LSYWDFVKDPAVIQQL---YPEGFLGWDIEHG  177
+            +     I +A+   ++A I     ++  L+++  ++D    ++    Y   F+     H 
+Sbjct  122  V-----IPIAIH--KFAKIFQVPAIIINLNWYHAIQDKFKTKEEGGPYETPFI-----HA  169
+
+Query  178  GVFETSLMLALYPDLVDLDRVVDHPPATFPP  208
+               ETS  LAL+P+ +  +  VD  P  F P
+Sbjct  170  DEVETSWSLALFPEFMHQEWAVDTEPKGFLP  200
+
+
+>sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=mftE PE=1 SV=1
+Length=251
+
+ Score = 177 bits (449),  Expect = 7e-54, Method: Composition-based stats.
+ Identities = 56/184 (30%), Positives = 78/184 (42%), Gaps = 40/184 (22%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYG----  85
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  86   -ASGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P            G D  H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCP------------GGD-PHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDR  197
+              +R
+Sbjct  180  RTER  183
+
+
+>sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=mftE PE=3 SV=1
+Length=251
+
+ Score = 177 bits (449),  Expect = 7e-54, Method: Composition-based stats.
+ Identities = 56/184 (30%), Positives = 78/184 (42%), Gaps = 40/184 (22%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYG----  85
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  86   -ASGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P            G D  H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCP------------GGD-PHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDR  197
+              +R
+Sbjct  180  RTER  183
+
+
+>sp|D9PWM7|ARFB_METTM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermobacter 
+marburgensis (strain ATCC BAA-927 / DSM 2133 / JCM 14651 
+/ NBRC 100331 / OCM 82 / Marburg) OX=79929 GN=arfB PE=3 
+SV=1
+Length=231
+
+ Score = 54.4 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 49/238 (21%), Positives = 93/238 (39%), Gaps = 42/238 (18%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMPGLQYGYKSQQKSGGGNHFP  83
+            +L +G+ LE HG  + ++ D  + + V    + R GA  + G+ YG         G H  
+Sbjct  21   ILALGSHLENHGPALPIDTDAKIASYVALEASLRTGAKFL-GVIYGATEFPYVKHGIHIE  79
+
+Query  84   GTTSLDGATLTGTVQDIIREL-ARHGARRLVLMNGHYENSMFIVEGIDLALRELRYAGIQ  142
+                     L G ++ ++R+   R      V++NGH  N   + + ++  + EL    I 
+Sbjct  80   -----RDELLEGDLKPVLRKARKRLNIDAAVIVNGHGGN--QLEDCVEDLMDELDMEIIW  132
+
+Query  143  DFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDRVVDHP  202
+            + ++V +                       +  H G  E S  + L   + DL R+ +  
+Sbjct  133  NNRIVEI-----------------------EGPHAGSGEVSAGIIL--GIADLTRLGECR  167
+
+Query  203  PATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADAIRE  253
+            P  +P   +  +  AR    G   +A+   +E        G+ IL+  ++ +   +RE
+Sbjct  168  PELYPEIGMIGLREAREANKGIDRAARICEKEGINPDPVLGQRILDDAIESVISDVRE  225
+
+
+>sp|Q2NF45|ARFB_METST 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanosphaera 
+stadtmanae (strain ATCC 43021 / DSM 3091 / JCM 11832 / MCB-3) 
+OX=339860 GN=arfB PE=3 SV=1
+Length=233
+
+ Score = 51.7 bits (122),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 27/133 (20%), Positives = 57/133 (43%), Gaps = 7/133 (5%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMPGLQYGYKSQQKSGGGNHFP  83
+            ++ +G+  E HG  + ++ D  +   V   VA + GA  + G+ YG         G+H  
+Sbjct  25   IIALGSHRENHGAALPIDTDSKIAANVALNVATKTGATFL-GIFYGATEYDYIKHGHHLK  83
+
+Query  84   GTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLALRELRYAGIQD  143
+                L    +   + +I ++L     + ++++NGH  N++ I+E ID   ++     I +
+Sbjct  84   KD-DLVNKQIIPQLINIKKQL---NIKSVIIVNGHGGNNL-IIEDIDKISKKTELKIIFN  138
+
+Query  144  FKVVVLSYWDFVK  156
+              ++         
+Sbjct  139  NSIIESEGPHACT  151
+
+
+>sp|D3E3M2|ARFB_METRM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanobrevibacter 
+ruminantium (strain ATCC 35063 / DSM 1093 / JCM 13430 
+/ OCM 146 / M1) OX=634498 GN=arfB PE=3 SV=1
+Length=234
+
+ Score = 50.5 bits (119),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 25/133 (19%), Positives = 55/133 (41%), Gaps = 16/133 (12%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMP  64
+             E RV AG+        + ++ +G+ LE HG  + ++ D  + + +  + +   GA  + 
+Sbjct  2    VELRVNAGNVKNPNVHKIGIIALGSHLENHGPALPIDTDAKIASHIAFQASLESGAKFL-  60
+
+Query  65   GLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELAR-HGARRLVLMNGHYENSM  123
+            G+ Y     ++   G H      +    LT  +  +++   +      ++++NGH  N  
+Sbjct  61   GVIYPAHELKEINHGIH------VSLEDLTDEIVKVLKSAKKFLRISSVIIVNGHGGNLP  114
+
+Query  124  FIVEGIDLALREL  136
+             +    D+  R  
+Sbjct  115  IVTTLYDIEERTG  127
+
+
+>sp|E3GWT5|ARFB_METFV 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermus 
+fervidus (strain ATCC 43054 / DSM 2088 / JCM 10308 / V24 
+S) OX=523846 GN=arfB PE=3 SV=1
+Length=247
+
+ Score = 50.2 bits (118),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 45/241 (19%), Positives = 90/241 (37%), Gaps = 50/241 (21%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            +L +G+ LE HG  + ++ D+ + + +    + + GA     V P  +Y      K G  
+Sbjct  33   VLALGSYLENHGPVLPIDTDIKIASYLALNASIKTGAKFIGTVYPATEY---PYVKHGIH  89
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARH-GARRLVLMNGHYENSMFIVEGIDLALRELRY  138
+                   S+    L   +  I++   ++ G  + V++N H  N + + + I++  RE   
+Sbjct  90   ------VSVKD--LIENIVSIMKLANKYIGIDKSVIVNAHGGN-LPLKKHINVIERETGM  140
+
+Query  139  AGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDRV  198
+              + + K+V +                       +  H G  ETSL   +    V  +R+
+Sbjct  141  KIVMNNKIVEI-----------------------EGPHAGSGETSLGYVIGIADV--ERM  175
+
+Query  199  VDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADAI  251
+             +     +P   +  +  AR         AK   +E        G  +L + +  I + I
+Sbjct  176  NEIDFKKYPEIGMVGLKSARKLNKKIDEGAKIVEKEGVKINPKLGRKLLNIALNDIINDI  235
+
+Query  252  R  252
+            +
+Sbjct  236  K  236
+
+
+>sp|O26747|ARFB_METTH 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 
+10044 / NBRC 100330 / Delta H) OX=187420 GN=arfB PE=3 SV=1
+Length=234
+
+ Score = 48.2 bits (113),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 46/243 (19%), Positives = 87/243 (36%), Gaps = 52/243 (21%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMPGLQYGYKSQQKSGGGNHFP  83
+            +L VG+ LE HG  + ++ D  + + V    A R GA  + G+ Y          G H  
+Sbjct  22   ILAVGSHLENHGPALPIDTDAKIASYVALEAALRTGARFL-GVLYAASEFPYVKHGIHMD  80
+
+Query  84   GTTSLDGATLTGTVQDIIRELARHGARRL------VLMNGHYENSMFIVEGIDLALRELR  137
+                     +   ++ ++R+     ARRL      V++NGH  N                
+Sbjct  81   -----RDELVERELKPVLRK-----ARRLLNLEAAVIVNGHGGN----------------  114
+
+Query  138  YAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDR  197
+                      +    D +++   ++  +    +  +  H G  E S  L L    +   R
+Sbjct  115  ---------KLEDCMDDLEEELGLEIAWNNRIVEIEGPHAGSGELSAGLILGIADLR--R  163
+
+Query  198  VVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADA  250
+            + +  P  +P   +  +  AR        +A+   R+        G+ IL+  V+ +   
+Sbjct  164  LDECIPELYPEIGMIGLKEAREANREIDKAARICERDGVNPDPVLGQRILDDAVESVISD  223
+
+Query  251  IRE  253
+            ++E
+Sbjct  224  VKE  226
+
+
+>sp|A4G0L4|ARFB_METM5 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C5 / ATCC BAA-1333) OX=402880 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 47.1 bits (110),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 48/108 (44%), Gaps = 16/108 (15%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D  + + +   V+   GA    +V+P  +Y   S  K G  
+Sbjct  21   IIALGSFLENHGSALPIDTDAKIASYIALNVSISTGAKFLGVVIPSTEY---SYVKHGIH  77
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVE  127
+            +           T    + +  R++   G  + +++N H  N++ + E
+Sbjct  78   DSIEDVI-----TYIKYLVENGRKI---GINKFLIINCHGGNTIILDE  117
+
+
+>sp|D5VQW1|ARFB_METIM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 
+GN=arfB PE=3 SV=1
+Length=222
+
+ Score = 46.3 bits (108),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 47/108 (44%), Gaps = 16/108 (15%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D+ + + V      + GA     V+P  +Y   S  K G  
+Sbjct  21   VIAMGSYLENHGSALPIDTDIKIASYVSLMACIKTGAKFLGTVIPSTEY---SYVKHGIH  77
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVE  127
+            N          + +   +  ++    R G ++++++N H  N +   E
+Sbjct  78   N--------KVSDIVEYLTFLLTWAKRIGIKKVIIVNCHGGNILAEKE  117
+
+
+>sp|Q6LWK4|ARFB_METMP 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=arfB PE=3 SV=1
+Length=221
+
+ Score = 45.5 bits (106),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 22/112 (20%), Positives = 50/112 (45%), Gaps = 16/112 (14%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D  + + +   V+   GA    +V+P  +Y   S  K G  
+Sbjct  21   IIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLGIVLPSTEY---SYVKHGIH  77
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDL  131
+            +      +         + +  R++   G ++ +++N H  N++   E + L
+Sbjct  78   DSIEDVIN-----YIKYLVENGRKI---GIKKFLIINCHGGNTIIEDELLKL  121
+
+
+>sp|A9A8V8|ARFB_METM6 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C6 / ATCC BAA-1332) OX=444158 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 45.5 bits (106),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 22/108 (20%), Positives = 48/108 (44%), Gaps = 16/108 (15%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D  + + +   V+   GA    +V+P  +Y   S  K G  
+Sbjct  21   IIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLGVVIPSTEY---SYVKHGIH  77
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVE  127
+            +           T    + +  R++   G  + +++N H  N++ + E
+Sbjct  78   DSIEDVI-----TYIKYLIENGRKI---GINKFLIVNCHGGNTIILDE  117
+
+
+>sp|A6UUS5|ARFB_META3 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+aeolicus (strain ATCC BAA-1280 / DSM 17508 / OCM 812 / Nankai-3) 
+OX=419665 GN=arfB PE=3 SV=1
+Length=242
+
+ Score = 45.1 bits (105),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 26/138 (19%), Positives = 58/138 (42%), Gaps = 21/138 (15%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D+ + + +   VA + GA     V+P  +Y      K G  
+Sbjct  38   IIALGSYLENHGTVLPIDTDIKIASYIALNVAIQTGAKFLGCVLPSTEY---EYVKHGIH  94
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLALRELRYA  139
+            N     T  +       + +  +++   G  + +++N H  N++     I+  + EL Y 
+Sbjct  95   N-----TPNEVVEYIDFLVEQGKKI---GINKFLIINCHGGNTL-----INELIEELPYK  141
+
+Query  140  GIQDFKVVVLSYWDFVKD  157
+                 K+  ++      +
+Sbjct  142  SDIKLKIKNITSTHASTE  159
+
+
+>sp|A6VHX1|ARFB_METM7 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C7 / ATCC BAA-1331) OX=426368 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 44.0 bits (102),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 23/125 (18%), Positives = 54/125 (43%), Gaps = 17/125 (14%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D  + + +   V+   GA    +V+P  +Y   S  K G  
+Sbjct  21   IIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLGVVLPSTEY---SYVKHGIH  77
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLALRELRYA  139
+            +      +         + +  R++   G  + +++N H  N++ I + I     E  + 
+Sbjct  78   DSIKDVIN-----YIKYLVENGRKI---GINKFLIINCHGGNTL-IKDEISKLNHENCFI  128
+
+Query  140  GIQDF  144
+             +++ 
+Sbjct  129  RMENV  133
+
+
+>sp|C7P7V6|ARFB_METFA 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 
+GN=arfB PE=3 SV=1
+Length=225
+
+ Score = 42.5 bits (98),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 46/104 (44%), Gaps = 16/104 (15%)
+
+Query  25   MLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSGGG  79
+            ++ +G+ LE HG  + ++ D+ + + +  + A   GA    +V+P  +Y      K G  
+Sbjct  20   IIALGSFLENHGAVLPIDTDIKIASYIALKAAILTGAKFLGVVIPSTEY---EYVKHGIH  76
+
+Query  80   NHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSM  123
+            N            +   ++ +I E  + G  + +++N H  N +
+Sbjct  77   N--------KPEDIYYYLRFLINEGKKIGVEKFLIVNCHGGNIL  112
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.125    0.337    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0383    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19602338312
+Results from round 3
+
+
+Query= d1v7za_
+
+Length=257
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas put...  336     2e-116
+sp|D9PWM7|ARFB_METTM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  211     2e-67 
+sp|O26747|ARFB_METTH 2-amino-5-formylamino-6-ribosylaminopyrimidi...  207     1e-65 
+sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermo...  209     1e-65 
+sp|E3GWT5|ARFB_METFV 2-amino-5-formylamino-6-ribosylaminopyrimidi...  196     2e-61 
+sp|C7P7V6|ARFB_METFA 2-amino-5-formylamino-6-ribosylaminopyrimidi...  160     2e-47 
+sp|Q2NF45|ARFB_METST 2-amino-5-formylamino-6-ribosylaminopyrimidi...  157     3e-46 
+sp|A6VHX1|ARFB_METM7 2-amino-5-formylamino-6-ribosylaminopyrimidi...  155     1e-45 
+sp|A6UUS5|ARFB_META3 2-amino-5-formylamino-6-ribosylaminopyrimidi...  155     2e-45 
+sp|D5VQW1|ARFB_METIM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  154     2e-45 
+sp|A4G0L4|ARFB_METM5 2-amino-5-formylamino-6-ribosylaminopyrimidi...  149     3e-43 
+sp|Q6LWK4|ARFB_METMP 2-amino-5-formylamino-6-ribosylaminopyrimidi...  148     6e-43 
+sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine amid...  149     8e-43 
+sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine amid...  149     8e-43 
+sp|A9A8V8|ARFB_METM6 2-amino-5-formylamino-6-ribosylaminopyrimidi...  147     2e-42 
+sp|D3E3M2|ARFB_METRM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  143     7e-41 
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q57580|ARFB_METJA 2-amino-5-formylamino-6-ribosylaminopyrimidi...  158     1e-46
+sp|D3S4A5|ARFB_METSF 2-amino-5-formylamino-6-ribosylaminopyrimidi...  156     4e-46
+sp|C9RGE3|ARFB_METVM 2-amino-5-formylamino-6-ribosylaminopyrimidi...  138     7e-39
+sp|A6UQY8|ARFB_METVS 2-amino-5-formylamino-6-ribosylaminopyrimidi...  135     1e-37
+sp|A5UJL1|ARFB_METS3 2-amino-5-formylamino-6-ribosylaminopyrimidi...  131     3e-36
+sp|D7DV18|ARFB_METV3 2-amino-5-formylamino-6-ribosylaminopyrimidi...  131     4e-36
+
+
+>sp|P83772|CRNA_PSEPU Creatinine amidohydrolase OS=Pseudomonas 
+putida OX=303 GN=crnA PE=1 SV=1
+Length=260
+
+ Score = 336 bits (862),  Expect = 2e-116, Method: Composition-based stats.
+ Identities = 257/257 (100%), Positives = 257/257 (100%), Gaps = 0/257 (0%)
+
+Query  1    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  60
+            KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA
+Sbjct  3    KSVFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA  62
+
+Query  61   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+            LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE
+Sbjct  63   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  122
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF
+Sbjct  123  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  182
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  240
+            ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL
+Sbjct  183  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELIL  242
+
+Query  241  EVCVQGIADAIREEFPP  257
+            EVCVQGIADAIREEFPP
+Sbjct  243  EVCVQGIADAIREEFPP  259
+
+
+>sp|D9PWM7|ARFB_METTM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermobacter 
+marburgensis (strain ATCC BAA-927 / DSM 2133 / JCM 14651 
+/ NBRC 100331 / OCM 82 / Marburg) OX=79929 GN=arfB PE=3 
+SV=1
+Length=231
+
+ Score = 211 bits (537),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 51/257 (20%), Positives = 97/257 (38%), Gaps = 49/257 (19%)
+
+Query  13   YEARVAAGDCV-------LMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMP  64
+             E  + AG+ +        +L +G+ LE HG  + ++ D  + + V    + R GA  + 
+Sbjct  2    VELNLDAGNVISGDVHRVGILALGSHLENHGPALPIDTDAKIASYVALEASLRTGAKFL-  60
+
+Query  65   GLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIREL-ARHGARRLVLMNGHYENSM  123
+            G+ YG         G H           L G ++ ++R+   R      V++NGH  N  
+Sbjct  61   GVIYGATEFPYVKHGIHIE-----RDELLEGDLKPVLRKARKRLNIDAAVIVNGHGGN--  113
+
+Query  124  FIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETS  183
+             + + ++  + EL    I + ++V +                       +  H G  E S
+Sbjct  114  QLEDCVEDLMDELDMEIIWNNRIVEI-----------------------EGPHAGSGEVS  150
+
+Query  184  LMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------G  236
+              + L      L R+ +  P  +P   +  +  AR    G   +A+   +E        G
+Sbjct  151  AGIILGIAD--LTRLGECRPELYPEIGMIGLREAREANKGIDRAARICEKEGINPDPVLG  208
+
+Query  237  ELILEVCVQGIADAIRE  253
+            + IL+  ++ +   +RE
+Sbjct  209  QRILDDAIESVISDVRE  225
+
+
+>sp|O26747|ARFB_METTH 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 
+10044 / NBRC 100330 / Delta H) OX=187420 GN=arfB PE=3 SV=1
+Length=234
+
+ Score = 207 bits (526),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 46/257 (18%), Positives = 90/257 (35%), Gaps = 49/257 (19%)
+
+Query  13   YEARVAAGDCV-------LMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMP  64
+             E  + AG+ +        +L VG+ LE HG  + ++ D  + + V    A R GA  + 
+Sbjct  3    VELNLDAGNIISEDVHRIGILAVGSHLENHGPALPIDTDAKIASYVALEAALRTGARFL-  61
+
+Query  65   GLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARH-GARRLVLMNGHYENSM  123
+            G+ Y          G H           +   ++ ++R+  R       V++NGH  N  
+Sbjct  62   GVLYAASEFPYVKHGIHMD-----RDELVERELKPVLRKARRLLNLEAAVIVNGHGGN--  114
+
+Query  124  FIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETS  183
+                                    +    D +++   ++  +    +  +  H G  E S
+Sbjct  115  -----------------------KLEDCMDDLEEELGLEIAWNNRIVEIEGPHAGSGELS  151
+
+Query  184  LMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------G  236
+              L L    +   R+ +  P  +P   +  +  AR        +A+   R+        G
+Sbjct  152  AGLILGIADLR--RLDECIPELYPEIGMIGLKEAREANREIDKAARICERDGVNPDPVLG  209
+
+Query  237  ELILEVCVQGIADAIRE  253
+            + IL+  V+ +   ++E
+Sbjct  210  QRILDDAVESVISDVKE  226
+
+
+>sp|Q9WYP4|IOLN_THEMA 3-dehydro-scyllo-inosose hydrolase OS=Thermotoga 
+maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 
+10099) OX=243274 GN=iolN PE=1 SV=1
+Length=311
+
+ Score = 209 bits (531),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 68/281 (24%), Positives = 112/281 (40%), Gaps = 44/281 (16%)
+
+Query  3    VFVGELTWKEYEARVAAGDCVLMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGALV  62
+            V+   +T K+   R+   D + ++PVG+ E HG +     D  L T + ++VA + G  V
+Sbjct  7    VYFQTMTMKQIRERLKQCDLI-IIPVGSTENHGPNAPTGEDTFLVTRMAEQVALKTGCTV  65
+
+Query  63   MPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENS  122
+               + YGY      G     PGT  +        +  +I      G R+ +L+NGH +  
+Sbjct  66   AEPIWYGYHPYHHIG----MPGTVPVKDEAFIDYLVSVIAGFWNTGFRKQILLNGHGQEF  121
+
+Query  123  MFIVEGIDLALRELRYAGIQDFK--VVVLSYWDFVKDPAVIQQL---YPEGFLGWDIEHG  177
+            +     I +A+   ++A I      ++ L+++  ++D    ++    Y   F+     H 
+Sbjct  122  V-----IPIAIH--KFAKIFQVPAIIINLNWYHAIQDKFKTKEEGGPYETPFI-----HA  169
+
+Query  178  GVFETSLMLALYPDLVDLDRVVDHPPATFPP-----------------YDVFPVDPARTP  220
+               ETS  LAL+P+ +  +  VD  P  F P                 Y      P    
+Sbjct  170  DEVETSWSLALFPEFMHQEWAVDTEPKGFLPEGHIDKAGNLLHRPIAWYGHVGGGPIEVV  229
+
+Query  221  A--PGTLSSAKTASREK---GELILEVCVQGIADAIREEFP  256
+            A   G +  A  AS EK   G   L   ++ +   I E FP
+Sbjct  230  AYPEGVVGKATLASAEKAKEGVEALLDYLEKLVRDIMERFP  270
+
+
+>sp|E3GWT5|ARFB_METFV 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanothermus 
+fervidus (strain ATCC 43054 / DSM 2088 / JCM 10308 / V24 
+S) OX=523846 GN=arfB PE=3 SV=1
+Length=247
+
+ Score = 196 bits (498),  Expect = 2e-61, Method: Composition-based stats.
+ Identities = 44/239 (18%), Positives = 89/239 (37%), Gaps = 42/239 (18%)
+
+Query  23   VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMPGLQYGYKSQQKSGGGNH  81
+            V +L +G+ LE HG  + ++ D+ + + +    + + GA  + G  Y          G H
+Sbjct  31   VGVLALGSYLENHGPVLPIDTDIKIASYLALNASIKTGAKFI-GTVYPATEYPYVKHGIH  89
+
+Query  82   FPGTTSLDGATLTGTVQDIIRELARH-GARRLVLMNGHYENSMFIVEGIDLALRELRYAG  140
+                  +    L   +  I++   ++ G  + V++N H  N + + + I++  RE     
+Sbjct  90   ------VSVKDLIENIVSIMKLANKYIGIDKSVIVNAHGGN-LPLKKHINVIERETGMKI  142
+
+Query  141  IQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDRVVD  200
+            + + K+V +                       +  H G  ETSL   +    V  +R+ +
+Sbjct  143  VMNNKIVEI-----------------------EGPHAGSGETSLGYVIGIADV--ERMNE  177
+
+Query  201  HPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADAIR  252
+                 +P   +  +  AR         AK   +E        G  +L + +  I + I+
+Sbjct  178  IDFKKYPEIGMVGLKSARKLNKKIDEGAKIVEKEGVKINPKLGRKLLNIALNDIINDIK  236
+
+
+>sp|C7P7V6|ARFB_METFA 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 
+GN=arfB PE=3 SV=1
+Length=225
+
+ Score = 160 bits (404),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 43/261 (16%), Positives = 94/261 (36%), Gaps = 59/261 (23%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             E R+++G+        V ++ +G+ LE HG  + ++ D+ + + +  + A   GA  + 
+Sbjct  1    MELRLSSGNILDEKVHKVGIIALGSFLENHGAVLPIDTDIKIASYIALKAAILTGAKFLG  60
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y      K G  N            +   ++ +I E  + G  + +++N H  
+Sbjct  61   VVIPSTEY---EYVKHGIHN--------KPEDIYYYLRFLINEGKKIGVEKFLIVNCHGG  109
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N +     I+  L++L Y      +++ +++     +                       
+Sbjct  110  NIL-----IEKFLKDLEYEFGVKVEMINIAFTHAATE-----------------------  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDH-PPATFPPYDVFPVDPARTPAPGTLSSAKTASREK----  235
+            E S+   +     D   + +H     +P   +  +  AR         AK   +      
+Sbjct  142  EVSVGYVIGIAKADEKSLKEHNNFEKYPEVGMVGLKEARENNKAIDEEAKAVEKFGVRLD  201
+
+Query  236  ---GELILEVCVQGIADAIRE  253
+               GE IL   ++ + D ++E
+Sbjct  202  KNLGEKILNDAIEKVVDKVKE  222
+
+
+>sp|Q57580|ARFB_METJA 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 
+10045 / NBRC 100440) OX=243232 GN=arfB PE=1 SV=1
+Length=225
+
+ Score = 158 bits (398),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 41/261 (16%), Positives = 95/261 (36%), Gaps = 59/261 (23%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             + R+++G+        V ++ +G+ LE HG  + ++ D+ + + +  + +   GA  + 
+Sbjct  1    MQLRLSSGNVLNEKVHKVGIIALGSFLENHGAVLPIDTDIKIASYIALKASILTGAKFLG  60
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y      K G  N            +   ++ +I E  + G  + +++N H  
+Sbjct  61   VVIPSTEY---EYVKHGIHN--------KPEEVYSYMRFLINEGKKIGVEKFLIVNCHGG  109
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N +     ++  L++L Y      +++ +++     +                       
+Sbjct  110  NIL-----VESFLKDLEYEFDIKVEMINITFTHASTE-----------------------  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDH-PPATFPPYDVFPVDPARTPAPGTLSSAKTASREK----  235
+            E S+   +     D + + +H     +P   +  +  AR         AK   R      
+Sbjct  142  EVSVGYIIGIAKADEETLKEHNNFEKYPEVGMVGLKEARENNKAIDKEAKVVKRFGVKLD  201
+
+Query  236  ---GELILEVCVQGIADAIRE  253
+               GE IL   ++ + + I+E
+Sbjct  202  KKLGEKILNNAIEKVVEKIKE  222
+
+
+>sp|Q2NF45|ARFB_METST 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanosphaera 
+stadtmanae (strain ATCC 43021 / DSM 3091 / JCM 11832 / MCB-3) 
+OX=339860 GN=arfB PE=3 SV=1
+Length=233
+
+ Score = 157 bits (396),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 44/262 (17%), Positives = 95/262 (36%), Gaps = 47/262 (18%)
+
+Query  8    LTWKEYEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIG  59
+            ++    + +  +G+        + ++ +G+  E HG  + ++ D  +   V   VA + G
+Sbjct  1    MSSNNIKLKYDSGNILSKDVHSIGIIALGSHRENHGAALPIDTDSKIAANVALNVATKTG  60
+
+Query  60   ALVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHY  119
+            A  + G+ YG         G+H      L    +   + +I ++L     + ++++NGH 
+Sbjct  61   ATFL-GIFYGATEYDYIKHGHHLKKD-DLVNKQIIPQLINIKKQL---NIKSVIIVNGHG  115
+
+Query  120  ENSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGV  179
+             N++ I E ID   ++     I +  ++                         +  H   
+Sbjct  116  GNNLII-EDIDKISKKTELKIIFNNSIIES-----------------------EGPHACT  151
+
+Query  180  FETSLMLALYPDLVDLDRVVDHP-PATFPPYDVFPVDPARTPAPGTLSSAKTASREK---  235
+             E S+   L    +    + +H      P   +  +  AR   P     A T  +E    
+Sbjct  152  GELSMGAVLGITDM--TSLKEHENFIKHPEVGMVGLKEARDNEPIINKEALTIEKEGFEV  209
+
+Query  236  ----GELILEVCVQGIADAIRE  253
+                G+ +LE   + I + +++
+Sbjct  210  NMILGQDMLENAQKEIINEVKK  231
+
+
+>sp|D3S4A5|ARFB_METSF 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+sp. (strain FS406-22) OX=644281 GN=arfB PE=3 SV=2
+Length=225
+
+ Score = 156 bits (395),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 40/261 (15%), Positives = 96/261 (37%), Gaps = 59/261 (23%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             + R+++G+        + ++ +G+ LE HG  + ++ D+ + + +  + +   GA  + 
+Sbjct  1    MQLRLSSGNILNEKVHKIGIIALGSFLENHGAVLPIDTDIKIASYIALKASILTGAKFLG  60
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y      K G  N            +   ++ +I E  + G  + +++N H  
+Sbjct  61   VVIPSTEY---EYVKHGIHN--------KPEDVYSYLRFLINEGKKIGIEKFLIVNCHGG  109
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N +     ++  L++L Y      +++ +++     +                       
+Sbjct  110  NVL-----VESFLKDLEYEFDVKVEMINITFTHASTE-----------------------  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDH-PPATFPPYDVFPVDPARTPAPGTLSSAKTAS-------  232
+            E S+   +     D + + +H     +P   +  +  AR         AK          
+Sbjct  142  EVSVGYVMGIAKADKETLKEHNNFNKYPEVGMVGLKEARENNKAIDEEAKVVEKFGVKLD  201
+
+Query  233  REKGELILEVCVQGIADAIRE  253
+            +E GE IL+  +  + + I+E
+Sbjct  202  KELGEKILKESIDKVIEKIKE  222
+
+
+>sp|A6VHX1|ARFB_METM7 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C7 / ATCC BAA-1331) OX=426368 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 155 bits (391),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 39/259 (15%), Positives = 88/259 (34%), Gaps = 61/259 (24%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----  60
+             + R  +G+        + ++ +G+ LE HG  + ++ D  + + +   V+   GA    
+Sbjct  2    VDLRYGSGNIFNEKVHGIGIIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLG  61
+
+Query  61   LVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+            +V+P  +Y   S  K G  +      +         + +  R++   G  + +++N H  
+Sbjct  62   VVLPSTEY---SYVKHGIHDSIKDVIN-----YIKYLVENGRKI---GINKFLIINCHGG  110
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N++ I + I     E  +  +++  +                             H    
+Sbjct  111  NTL-IKDEISKLNHENCFIRMENVCLT----------------------------HAATD  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-----  235
+            E SL  A+    +  D++  H P  +    +  +  AR         A++          
+Sbjct  142  EVSLGYAVGI--LSEDKMKTHDPEIYEEIGMVGLKEAREKNEAIDLEARSVEENGVFLDR  199
+
+Query  236  --GELILEVCVQGIADAIR  252
+              G  +L   +    + +R
+Sbjct  200  THGRFLLNELINNYVEIVR  218
+
+
+>sp|A6UUS5|ARFB_META3 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+aeolicus (strain ATCC BAA-1280 / DSM 17508 / OCM 812 / Nankai-3) 
+OX=419665 GN=arfB PE=3 SV=1
+Length=242
+
+ Score = 155 bits (392),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 39/242 (16%), Positives = 86/242 (36%), Gaps = 53/242 (22%)
+
+Query  23   VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSG  77
+            + ++ +G+ LE HG  + ++ D+ + + +   VA + GA     V+P  +Y      K G
+Sbjct  36   IGIIALGSYLENHGTVLPIDTDIKIASYIALNVAIQTGAKFLGCVLPSTEY---EYVKHG  92
+
+Query  78   GGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLALRELR  137
+              N     T  +       + +  +++   G  + +++N H  N++     I+  + EL 
+Sbjct  93   IHN-----TPNEVVEYIDFLVEQGKKI---GINKFLIINCHGGNTL-----INELIEELP  139
+
+Query  138  YAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDR  197
+            Y      K+  ++      +                       E S+   +        +
+Sbjct  140  YKSDIKLKIKNITSTHASTE-----------------------ELSVGYVIGIAD--KSK  174
+
+Query  198  VVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADA  250
+            + +H P  +P   +  +  AR       + AK A ++        G  IL+  +      
+Sbjct  175  LKEHNPKDYPEIAMIGLTEARKNNKYIDNEAKIAEKKGITINEDLGNKILKNAINECILE  234
+
+Query  251  IR  252
+            + 
+Sbjct  235  VE  236
+
+
+>sp|D5VQW1|ARFB_METIM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 
+GN=arfB PE=3 SV=1
+Length=222
+
+ Score = 154 bits (390),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 39/241 (16%), Positives = 88/241 (37%), Gaps = 53/241 (22%)
+
+Query  23   VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGA----LVMPGLQYGYKSQQKSG  77
+            + ++ +G+ LE HG  + ++ D+ + + V      + GA     V+P  +Y   S  K G
+Sbjct  19   IGVIAMGSYLENHGSALPIDTDIKIASYVSLMACIKTGAKFLGTVIPSTEY---SYVKHG  75
+
+Query  78   GGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLALRELR  137
+              N          + +   +  ++    R G ++++++N H  N +   E  +L      
+Sbjct  76   IHN--------KVSDIVEYLTFLLTWAKRIGIKKVIIVNCHGGNILAEKEIKELEN----  123
+
+Query  138  YAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLVDLDR  197
+               + + K+  LS+                      + H    E S+   +     + ++
+Sbjct  124  ---LINIKIKFLSFP---------------------LTHAATEELSIGYVIGIA--NKEK  157
+
+Query  198  VVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GELILEVCVQGIADA  250
+            + +H P  +    +  +  AR         AK   +E        G+ +L+  +  + + 
+Sbjct  158  MKEHKPENYAEIGMVGLREAREKNKEIDEEAKRVEKEGVKIDEELGKKLLDEFINKVVNE  217
+
+Query  251  I  251
+            I
+Sbjct  218  I  218
+
+
+>sp|A4G0L4|ARFB_METM5 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C5 / ATCC BAA-1333) OX=402880 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 149 bits (376),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 39/259 (15%), Positives = 87/259 (34%), Gaps = 61/259 (24%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             + R A+G+        + ++ +G+ LE HG  + ++ D  + + +   V+   GA  + 
+Sbjct  2    VDLRYASGNIFDEKVHEMGIIALGSFLENHGSALPIDTDAKIASYIALNVSISTGAKFLG  61
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y   S  K G  +           T    + +  R++   G  + +++N H  
+Sbjct  62   VVIPSTEY---SYVKHGIHDSIEDVI-----TYIKYLVENGRKI---GINKFLIINCHGG  110
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N++ + E +     +  +  ++   +                             H    
+Sbjct  111  NTIILDE-LSKLNSKDCFIKMESVCLT----------------------------HASTE  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-----  235
+            E SL  A+    +  D +  H P  +    +  +  AR         AK+  +       
+Sbjct  142  EVSLGYAVGI--LSEDNMKTHDPKIYEEIGMVGLKEAREKNEAIDLEAKSVEKNGVFLDK  199
+
+Query  236  --GELILEVCVQGIADAIR  252
+              G+ +L   +    + +R
+Sbjct  200  THGKSLLNDLITNYVEIVR  218
+
+
+>sp|Q6LWK4|ARFB_METMP 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=arfB PE=3 SV=1
+Length=221
+
+ Score = 148 bits (373),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 38/259 (15%), Positives = 88/259 (34%), Gaps = 61/259 (24%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGAL---  61
+             + R ++G+        + ++ +G+ LE HG  + ++ D  + + +   V+   GA    
+Sbjct  2    IDLRYSSGNIFSESVHEIGIIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLG  61
+
+Query  62   -VMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+             V+P  +Y   S  K G  +      +         + +  R++   G ++ +++N H  
+Sbjct  62   IVLPSTEY---SYVKHGIHDSIEDVIN-----YIKYLVENGRKI---GIKKFLIINCHGG  110
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N++   E +     +  +  +    +                             H    
+Sbjct  111  NTIIEDELL-KLNSKDCFITMNSVCLT----------------------------HASTE  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-----  235
+            E SL  A+    +  D++ DH P  +    +  +  AR         AK+          
+Sbjct  142  EVSLGYAVGI--LSEDKMKDHDPKVYGEIGMVGLTEAREKNEAIDLEAKSVEENGVFLDK  199
+
+Query  236  --GELILEVCVQGIADAIR  252
+              G+ +L   +    + ++
+Sbjct  200  VNGKSLLNDLINNYVEIVK  218
+
+
+>sp|P9WP59|MFTE_MYCTU Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain ATCC 25618 / H37Rv) OX=83332 GN=mftE PE=1 SV=1
+Length=251
+
+ Score = 149 bits (375),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 65/247 (26%), Positives = 90/247 (36%), Gaps = 46/247 (19%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYGA---  86
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  87   --SGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P                 H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCPGG-------------DPHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDRVVDHP----PATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELILEVCVQGIAD  249
+              +R         P   P      V        G L    TA+  +G  I    V     
+Sbjct  180  RTERWRAGNRAPLPVLLPSMRRGGVAAVSET--GVLGDPTTATAAEGRRIFAAMVDDCVR  237
+
+Query  250  AIREEFP  256
+             +    P
+Sbjct  238  RVARWMP  244
+
+
+>sp|P9WP58|MFTE_MYCTO Putative mycofactocin system creatinine 
+amidohydrolase family protein MftE OS=Mycobacterium tuberculosis 
+(strain CDC 1551 / Oshkosh) OX=83331 GN=mftE PE=3 SV=1
+Length=251
+
+ Score = 149 bits (375),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 65/247 (26%), Positives = 90/247 (36%), Gaps = 46/247 (19%)
+
+Query  24   LMLPVGALEQHGHHMCMNVDVLLPTAVCKRVAERIGA----------LVMPGLQYGYKSQ  73
+            +++P+G+ EQHG H+ ++ D  + TAV + V  R+ A          L+ P + YG    
+Sbjct  30   IVIPLGSTEQHGPHLPLDTDTRIATAVARTVTARLHAEDLPIAQEEWLMAPAIAYGA---  86
+
+Query  74   QKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYENSMFIVEGIDLAL  133
+              SG    F GT S+    LT  + +  R  A   ARRLV +NGH  N   +   + L  
+Sbjct  87   --SGEHQRFAGTISIGTEALTMLLVEYGRSAA-CWARRLVFVNGHGGNVGALTRAVGLLR  143
+
+Query  134  RELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSLMLALYPDLV  193
+             E R AG           W     P                 H G  ETS++L L P  V
+Sbjct  144  AEGRDAG-----------WCPCTCPGG-------------DPHAGHTETSVLLHLSPADV  179
+
+Query  194  DLDRVVDHP----PATFPPYDVFPVDPARTPAPGTLSSAKTASREKGELILEVCVQGIAD  249
+              +R         P   P      V        G L    TA+  +G  I    V     
+Sbjct  180  RTERWRAGNRAPLPVLLPSMRRGGVAAVSET--GVLGDPTTATAAEGRRIFAAMVDDCVR  237
+
+Query  250  AIREEFP  256
+             +    P
+Sbjct  238  RVARWMP  244
+
+
+>sp|A9A8V8|ARFB_METM6 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+maripaludis (strain C6 / ATCC BAA-1332) OX=444158 GN=arfB 
+PE=3 SV=1
+Length=221
+
+ Score = 147 bits (370),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 38/259 (15%), Positives = 87/259 (34%), Gaps = 61/259 (24%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             + R  +G+        + ++ +G+ LE HG  + ++ D  + + +   V+   GA  + 
+Sbjct  2    VDLRYGSGNIFDEKVHEIGIIALGSFLENHGSALPIDTDAKIASYIALNVSIITGAKFLG  61
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y   S  K G  +           T    + +  R++   G  + +++N H  
+Sbjct  62   VVIPSTEY---SYVKHGIHDSIEDVI-----TYIKYLIENGRKI---GINKFLIVNCHGG  110
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N++ + E +     +  +  ++   +                             H    
+Sbjct  111  NTIILDE-LSKLNFDDCFIQMESVCLT----------------------------HAATE  141
+
+Query  181  ETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-----  235
+            E SL  A+    +  D++  H P  +    +  +  AR         AK+  +       
+Sbjct  142  EVSLGYAVGI--LSEDKMKTHNPKIYEEIGMVGLKEAREKNEAIDLEAKSVEKNGVFLDK  199
+
+Query  236  --GELILEVCVQGIADAIR  252
+              G+ +L   +    + +R
+Sbjct  200  THGKSLLNDLITNYVEIVR  218
+
+
+>sp|D3E3M2|ARFB_METRM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanobrevibacter 
+ruminantium (strain ATCC 35063 / DSM 1093 / JCM 13430 
+/ OCM 146 / M1) OX=634498 GN=arfB PE=3 SV=1
+Length=234
+
+ Score = 143 bits (361),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 38/259 (15%), Positives = 84/259 (32%), Gaps = 48/259 (19%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMP  64
+             E RV AG+        + ++ +G+ LE HG  + ++ D  + + +  + +   GA  + 
+Sbjct  2    VELRVNAGNVKNPNVHKIGIIALGSHLENHGPALPIDTDAKIASHIAFQASLESGAKFL-  60
+
+Query  65   GLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELAR-HGARRLVLMNGHYENSM  123
+            G+ Y     ++   G H      +    LT  +  +++   +      ++++NGH  N  
+Sbjct  61   GVIYPAHELKEINHGIH------VSLEDLTDEIVKVLKSAKKFLRISSVIIVNGHGGNLP  114
+
+Query  124  FIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETS  183
+             +    D+  R                          +        +  +  HGG  E S
+Sbjct  115  IVTTLYDIEERTG------------------------LLITLNSKIIESEGPHGGSGELS  150
+
+Query  184  LMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------G  236
+            +  AL                 +    ++    AR   P     A              G
+Sbjct  151  MAKALGIIDESQVE-NQTNLEEYGEVGLYMFGEARRNDPNIEEGALDVEENGVYVDDVYG  209
+
+Query  237  ELILEVCVQGIADAIREEF  255
+            + +L++ +  +   + ++ 
+Sbjct  210  QELLKLAINSVLLDVEKQL  228
+
+
+>sp|C9RGE3|ARFB_METVM 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanocaldococcus 
+vulcanius (strain ATCC 700851 / DSM 12094 / M7) OX=579137 
+GN=arfB PE=3 SV=1
+Length=226
+
+ Score = 138 bits (347),  Expect = 7e-39, Method: Composition-based stats.
+ Identities = 41/256 (16%), Positives = 90/256 (35%), Gaps = 61/256 (24%)
+
+Query  13   YEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVM-  63
+             E R+++G         + ++ +G+ LE HG  + ++ D+ + + +    +   GA  + 
+Sbjct  2    VEIRLSSGKILNKKVHKIGVIALGSFLENHGAVLPIDTDIKIASYIALNASILTGAKFLG  61
+
+Query  64   ---PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHYE  120
+               P  +Y      K G  N            +   ++ +I    + G   ++++N H  
+Sbjct  62   VVIPSTEY---EYVKHGIHN--------KVDEILDYLRFMINWGKKIGVEEIIIVNCHGG  110
+
+Query  121  NSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVF  180
+            N + I E +    +EL  +     +++ +++     +                       
+Sbjct  111  NVL-IEEHLKNLEKELDVSI----EMINITFTHASTE-----------------------  142
+
+Query  181  ETSLMLALYPDLVDLDRVVDH-PPATFPPYDVFPVDPARTPAPGTLSSAKTAS-------  232
+            E S+   +    V   R+ +H     +P   +  +  AR   P     AK          
+Sbjct  143  EVSVGEVIGISDVK--RLEEHTNFEKYPEVGMVGLKEARRNNPIIDQEAKEVETSGVKVD  200
+
+Query  233  REKGELILEVCVQGIA  248
+            RE G  IL+  ++ + 
+Sbjct  201  RELGRSILKNAIEKVV  216
+
+
+>sp|A6UQY8|ARFB_METVS 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 
+148 / SB) OX=406327 GN=arfB PE=3 SV=1
+Length=238
+
+ Score = 135 bits (339),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 38/264 (14%), Positives = 90/264 (34%), Gaps = 62/264 (23%)
+
+Query  10   WKEYEARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGAL  61
+              + E R  +G+        + ++ +G+ LE HG  + ++ D  + + +   V+   GA 
+Sbjct  1    MDKMELRYNSGNILNEEVHKIGIIALGSFLENHGSALPIDTDAKIASYIGLNVSILTGAK  60
+
+Query  62   VM----PGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNG  117
+             +    P  +Y   S  K G  N            +   ++ +I    + G  + +++N 
+Sbjct  61   FLGVVIPSTEY---SYVKHGIHNS--------PNEVVEYIKIMIEHSKKIGINKFLIINC  109
+
+Query  118  HYENSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHG  177
+            H  N++ I + I     +     +++                                H 
+Sbjct  110  HGGNTL-IKDLISELNDKKTSVILENVCFT----------------------------HA  140
+
+Query  178  GVFETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK--  235
+               E ++  A+    +  D++  H   T+P   +  +  AR       + AK    +   
+Sbjct  141  AFEEIAIGYAVGI--LSEDKMKTHSFKTYPEIGMIGLTEARLKNTDIDNEAKILEEKGAI  198
+
+Query  236  ------GELILEVCVQGIADAIRE  253
+                  G+ +L+  +    + +++
+Sbjct  199  FLDKNYGKTLLKNLINNHVEIVKK  222
+
+
+>sp|A5UJL1|ARFB_METS3 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanobrevibacter 
+smithii (strain ATCC 35061 / DSM 861 / OCM 144 / PS) 
+OX=420247 GN=arfB PE=3 SV=1
+Length=230
+
+ Score = 131 bits (329),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 37/256 (14%), Positives = 84/256 (33%), Gaps = 48/256 (19%)
+
+Query  14   EARVAAGDC-------VLMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIGALVMPG  65
+            E R  AG         + ++ +G+ LE HG  + ++ D  +   +  + +   GA  + G
+Sbjct  3    ELRYRAGKIKNPRVHKIGVIALGSHLENHGPALPIDTDAKIGAHIAFQASLESGAKFL-G  61
+
+Query  66   LQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARH-GARRLVLMNGHYENSMF  124
+            + +      +   G H      +    L   V   +    ++    ++V++N H  N   
+Sbjct  62   IVFPAYELDEIDHGVH------VSLDELKANVISTLNSAKKYLDIEKVVIVNSHGGNIPL  115
+
+Query  125  IVEGIDLALRELRYAGIQDFKVVVLSYWDFVKDPAVIQQLYPEGFLGWDIEHGGVFETSL  184
+            + E  D+   +     I + K++                         +  HGG  E S+
+Sbjct  116  MTELYDI-EDKTDLTIIFNNKII-----------------------STEGPHGGSGELSM  151
+
+Query  185  MLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTASREK-------GE  237
+               L   + + +       + +    ++    AR   P     A+             G+
+Sbjct  152  AKVLGI-INEAEIENQTDLSKYEEVGLYGFKQARENDPNIEEGARDVEENGVYVDEVYGK  210
+
+Query  238  LILEVCVQGIADAIRE  253
+             + ++ +  +   I +
+Sbjct  211  QLFDLAINSVVFDIEK  226
+
+
+>sp|D7DV18|ARFB_METV3 2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 
+5'-monophosphate deformylase OS=Methanococcus 
+voltae (strain ATCC BAA-1334 / A3) OX=456320 GN=arfB PE=3 
+SV=1
+Length=260
+
+ Score = 131 bits (330),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 43/264 (16%), Positives = 82/264 (31%), Gaps = 29/264 (11%)
+
+Query  10   WKEYEARVAAGDCV---------LMLPVGA-LEQHGHHMCMNVDVLLPTAVCKRVAERIG  59
+               +E R+ +G  +          ++ +G+ LE HG  + ++ D+ + + V   VA   G
+Sbjct  1    MDNFELRLNSGKLIDNDSKVHEIGVIAMGSYLENHGSALPIDTDIKIASYVALNVALTTG  60
+
+Query  60   ALVMPGLQYGYKSQQKSGGGNHFPGTTSLDGATLTGTVQDIIRELARHGARRLVLMNGHY  119
+            A  + G             G H      L+             + ++ G  + +++N H 
+Sbjct  61   AKFL-GTVCTATEYDYIKHGIHNSLEDILEELEEIII------KYSKIGVNKFLIINCHG  113
+
+Query  120  ENSMFIVEGIDLALRELRYAGIQDFKVVVLSYWDFVK---DPAVIQQLYPEGFLGWDIEH  176
+             NS    +   L  +              L Y   +K         +        +   H
+Sbjct  114  GNSDVSKKIEQLQEKIRNNFKEYGTTEKELEYIKKIKYNFKEYGNTEKINIKIKSFGYIH  173
+
+Query  177  GGVFETSLMLALYPDLVDLDRVVDHPPATFPPYDVFPVDPARTPAPGTLSSAKTAS----  232
+                E S+   +     D  +   H P  +    +  +  AR         AK       
+Sbjct  174  AYSEELSIGKCIGI--YDETKFNKHTPENYGEIGMVGLPEARLNNKYIDKEAKMVESIPA  231
+
+Query  233  ---REKGELILEVCVQGIADAIRE  253
+                + GE +++  V    + IRE
+Sbjct  232  VVNEQYGEELIKKMVNESIEYIRE  255
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.118    0.290    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0363    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19602338312
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

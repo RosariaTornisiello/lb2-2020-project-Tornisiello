@@ -1,0 +1,1215 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1n62c1
+
+Length=109
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain O...  214     4e-70
+sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain O...  82.8    4e-19
+sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase com...  49.3    6e-07
+sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain OS...  48.1    1e-06
+sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseud...  46.6    6e-06
+
+
+>sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain 
+OS=Oligotropha carboxidovorans (strain ATCC 49405 / DSM 1227 
+/ KCTC 32145 / OM5) OX=504832 GN=coxM PE=1 SV=2
+Length=288
+
+ Score = 214 bits (544),  Expect = 4e-70, Method: Compositional matrix adjust.
+ Identities = 109/109 (100%), Positives = 109/109 (100%), Gaps = 0/109 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA
+Sbjct  178  GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA
+Sbjct  238  LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  286
+
+
+>sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain 
+OS=Hydrogenophaga pseudoflava OX=47421 GN=cutM PE=1 SV=2
+Length=287
+
+ Score = 82.8 bits (203),  Expect = 4e-19, Method: Compositional matrix adjust.
+ Identities = 55/108 (51%), Positives = 65/108 (60%), Gaps = 0/108 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G G+AYEKLKRK GD+ATA  AVV+  SG       I LTNVA T L  E     L+G A
+Sbjct  178  GTGWAYEKLKRKTGDWATAGCAVVMRKSGNTVSHIRIALTNVAPTALRREGGRSRLLGKA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+              K A+  A   A AI  PA D RG A+Y+T MAG M++RA+  A AR
+Sbjct  238  FTKEAVQAAADAAIAICEPAEDLRGDADYKTAMAGQMVKRALNAAWAR  285
+
+
+>sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase 
+complex subunit alpha OS=Paenarthrobacter nicotinovorans OX=29320 
+GN=kdhA PE=1 SV=2
+Length=296
+
+ Score = 49.3 bits (116),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 33/110 (30%), Positives = 54/110 (49%), Gaps = 1/110 (1%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMS-GGKCVTASIGLTNVANTPLWAEEAGKVLVGT  59
+            G G A+++  R+ GDYA   AA ++T+   GKC  A I +    +T +  +EA  +L+ +
+Sbjct  178  GSGAAFDEFSRRHGDYAIGGAASIVTLDEQGKCSRARITVLGGGSTAIRCQEAENILIDS  237
+
+Query  60   ALDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+             L    +  A   A     P     G A+YR ++   M+ R + +A  RA
+Sbjct  238  TLSSHDIAAAAHAAVQGLDPVPTVHGSAQYRAQVIRTMVERTLAKALHRA  287
+
+
+>sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain 
+OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 
+/ JCM 8929 / NBRC 15157 / NCIMB 11770) OX=330779 GN=cutB PE=1 
+SV=1
+Length=281
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 27/103 (26%), Positives = 50/103 (49%), Gaps = 0/103 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G+   Y+K+ R+ GDYA A+ A+ + + G +     +    V + P  A E  K ++G  
+Sbjct  176  GYKTVYKKVVRRAGDYALASVALAIKLKGNEIEDIKLAYGGVHDKPFRAMEVEKNVIGKK  235
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVE  103
+            L+   +    +   +   P SD RG + YR ++  V+  +A +
+Sbjct  236  LNDDLVKDIASKVSSQINPPSDHRGSSWYRREVVKVLTMKAFK  278
+
+
+>sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseudomonas 
+sp. (strain CBB1) OX=765715 GN=cdhB PE=1 SV=1
+Length=295
+
+ Score = 46.6 bits (109),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 35/108 (32%), Positives = 54/108 (50%), Gaps = 4/108 (4%)
+
+Query  3    GYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTAL-  61
+            G+A+E++ R+ GD+A   AAV++     K   A I L ++  TP+      + L+G  + 
+Sbjct  181  GWAFEEVARRHGDFAQCGAAVLIGAEDRKIDYARIALCSIGETPIRFHALEQWLIGRPVG  240
+
+Query  62   -DKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+             D PA D  +   E +   A D    AE R K+A  +  RA+ RA  R
+Sbjct  241  NDLPA-DVKLHCREILDV-AEDSTMTAENRAKLASAVTSRAIARAADR  286
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.128    0.360    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5102136064
+Results from round 2
+
+
+Query= d1n62c1
+
+Length=109
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain OS...  132     3e-38
+sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain O...  124     3e-35
+sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain O...  124     4e-35
+sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseud...  121     5e-34
+sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase com...  121     1e-33
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q8X6C5|XDHB_ECO57 Xanthine dehydrogenase FAD-binding subunit O...  60.2    8e-11
+sp|Q46800|XDHB_ECOLI Putative xanthine dehydrogenase FAD-binding ...  60.2    9e-11
+sp|R4ZGN4|XDH_BLAAD Xanthine dehydrogenase OS=Blastobotrys adenin...  41.7    3e-04
+sp|Q3TYQ9|AOXD_MOUSE Aldehyde oxidase 4 OS=Mus musculus OX=10090 ...  40.9    7e-04
+sp|P22811|XDH_DROPS Xanthine dehydrogenase OS=Drosophila pseudoob...  40.5    9e-04
+sp|A0A1U8QNG8|HXNS_EMENI Nicotinate hydroxylase hnxS OS=Emericell...  40.5    0.001
+sp|P64557|YGFM_ECOLI Uncharacterized protein YgfM OS=Escherichia ...  39.0    0.002
+sp|P64558|YGFM_ECO57 Uncharacterized protein YgfM OS=Escherichia ...  39.0    0.002
+sp|Q12553|XDH_EMENI Xanthine dehydrogenase OS=Emericella nidulans...  38.6    0.005
+
+
+>sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain 
+OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 
+/ JCM 8929 / NBRC 15157 / NCIMB 11770) OX=330779 GN=cutB PE=1 
+SV=1
+Length=281
+
+ Score = 132 bits (331),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 27/106 (25%), Positives = 50/106 (47%), Gaps = 0/106 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G+   Y+K+ R+ GDYA A+ A+ + + G +     +    V + P  A E  K ++G  
+Sbjct  176  GYKTVYKKVVRRAGDYALASVALAIKLKGNEIEDIKLAYGGVHDKPFRAMEVEKNVIGKK  235
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+            L+   +    +   +   P SD RG + YR ++  V+  +A +   
+Sbjct  236  LNDDLVKDIASKVSSQINPPSDHRGSSWYRREVVKVLTMKAFKEVA  281
+
+
+>sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain 
+OS=Oligotropha carboxidovorans (strain ATCC 49405 / DSM 1227 
+/ KCTC 32145 / OM5) OX=504832 GN=coxM PE=1 SV=2
+Length=288
+
+ Score = 124 bits (312),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 109/109 (100%), Positives = 109/109 (100%), Gaps = 0/109 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA
+Sbjct  178  GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA
+Sbjct  238  LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  286
+
+
+>sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain 
+OS=Hydrogenophaga pseudoflava OX=47421 GN=cutM PE=1 SV=2
+Length=287
+
+ Score = 124 bits (311),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 55/108 (51%), Positives = 65/108 (60%), Gaps = 0/108 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G G+AYEKLKRK GD+ATA  AVV+  SG       I LTNVA T L  E     L+G A
+Sbjct  178  GTGWAYEKLKRKTGDWATAGCAVVMRKSGNTVSHIRIALTNVAPTALRREGGRSRLLGKA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+              K A+  A   A AI  PA D RG A+Y+T MAG M++RA+  A AR
+Sbjct  238  FTKEAVQAAADAAIAICEPAEDLRGDADYKTAMAGQMVKRALNAAWAR  285
+
+
+>sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseudomonas 
+sp. (strain CBB1) OX=765715 GN=cdhB PE=1 SV=1
+Length=295
+
+ Score = 121 bits (304),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 32/107 (30%), Positives = 51/107 (48%), Gaps = 2/107 (2%)
+
+Query  3    GYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            G+A+E++ R+ GD+A   AAV++     K   A I L ++  TP+      + L+G  + 
+Sbjct  181  GWAFEEVARRHGDFAQCGAAVLIGAEDRKIDYARIALCSIGETPIRFHALEQWLIGRPVG  240
+
+Query  63   KPA-LDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+                 D  +   E +   A D    AE R K+A  +  RA+ RA  R
+Sbjct  241  NDLPADVKLHCREILDV-AEDSTMTAENRAKLASAVTSRAIARAADR  286
+
+
+>sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase 
+complex subunit alpha OS=Paenarthrobacter nicotinovorans OX=29320 
+GN=kdhA PE=1 SV=2
+Length=296
+
+ Score = 121 bits (302),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 33/110 (30%), Positives = 54/110 (49%), Gaps = 1/110 (1%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMS-GGKCVTASIGLTNVANTPLWAEEAGKVLVGT  59
+            G G A+++  R+ GDYA   AA ++T+   GKC  A I +    +T +  +EA  +L+ +
+Sbjct  178  GSGAAFDEFSRRHGDYAIGGAASIVTLDEQGKCSRARITVLGGGSTAIRCQEAENILIDS  237
+
+Query  60   ALDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+             L    +  A   A     P     G A+YR ++   M+ R + +A  RA
+Sbjct  238  TLSSHDIAAAAHAAVQGLDPVPTVHGSAQYRAQVIRTMVERTLAKALHRA  287
+
+
+>sp|Q8X6C5|XDHB_ECO57 Xanthine dehydrogenase FAD-binding subunit 
+OS=Escherichia coli O157:H7 OX=83334 GN=xdhB PE=3 SV=1
+Length=292
+
+ Score = 60.2 bits (144),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 0/104 (0%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKPA  65
+            ++   R   D +T   A    +  G      +     A TP+  + A +      L+   
+Sbjct  184  FKYAMRDAMDISTIGCAAHCRLDNGNFSELRLAFGVAAPTPIRCQHAEQTAQNAPLNLQT  243
+
+Query  66   LDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            L+          AP S  R   E+R  +   M ++ +  A A A
+Sbjct  244  LEAISESVLQDVAPRSSWRASKEFRLHLIQTMTKKVISEAVAAA  287
+
+
+>sp|Q46800|XDHB_ECOLI Putative xanthine dehydrogenase FAD-binding 
+subunit XdhB OS=Escherichia coli (strain K12) OX=83333 GN=xdhB 
+PE=4 SV=1
+Length=292
+
+ Score = 60.2 bits (144),  Expect = 9e-11, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 0/104 (0%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKPA  65
+            ++   R   D +T   A    +  G      +     A TP+  + A +      L+   
+Sbjct  184  FKYAMRDAMDISTIGCAAHCRLDNGNFSELRLAFGVAAPTPIRCQHAEQTAQNAPLNLQT  243
+
+Query  66   LDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            L+          AP S  R   E+R  +   M ++ +  A A A
+Sbjct  244  LEAISESVLQDVAPRSSWRASKEFRLHLIQTMTKKVISEAVAAA  287
+
+
+>sp|R4ZGN4|XDH_BLAAD Xanthine dehydrogenase OS=Blastobotrys adeninivorans 
+OX=409370 GN=AXOR PE=1 SV=1
+Length=1405
+
+ Score = 41.7 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 22/96 (23%), Positives = 34/96 (35%), Gaps = 6/96 (6%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG-KCVTASIGLTNVANTPLWAEEAGKVLVGTALDK  63
+            AY++ KRK  D A   A + L +    +   A +    V      A+   + L G  L +
+Sbjct  481  AYKQAKRKDDDIAIVTACLRLALDDDFRISKARLAYGGVGPFTTAAKGTAEFLTGKLLRR  540
+
+Query  64   PALDKAVALAE-----AITAPASDGRGPAEYRTKMA  94
+                + +  A          P S   G A YR  + 
+Sbjct  541  ETAKEVLEGAIDCLIKEFDLPYSVPGGMAAYRRTLI  576
+
+
+>sp|Q3TYQ9|AOXD_MOUSE Aldehyde oxidase 4 OS=Mus musculus OX=10090 
+GN=Aox4 PE=1 SV=1
+Length=1336
+
+ Score = 40.9 bits (94),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/93 (22%), Positives = 32/93 (34%), Gaps = 3/93 (3%)
+
+Query  11   RKIGDYATAAAAVVLTMSG--GKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKPALDK  68
+            R+   +A   A + +             +   +VA T + A +  K L+G   D   L  
+Sbjct  435  RQENAFAIVNAGMSVEFEEGTNTIKDLKMFFGSVAPTVVSASQTCKQLIGRQWDDQMLSD  494
+
+Query  69   AVALAEAITAPASDGRGP-AEYRTKMAGVMLRR  100
+            A  L         D  G   EYR  +   +L +
+Sbjct  495  ACQLVLQEIRIPPDAEGGMVEYRRTLIISLLFK  527
+
+
+>sp|P22811|XDH_DROPS Xanthine dehydrogenase OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=ry PE=3 SV=2
+Length=1343
+
+ Score = 40.5 bits (93),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 21/101 (21%), Positives = 42/101 (42%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++ +R+  D A   AAV +            S+    +A T + A    +++V   LD
+Sbjct  430  AFKQARRRDDDIAIVNAAVNVRFEPRTNVVAGISMAFGGMAPTTVLAPRTSQLMVKQPLD  489
+
+Query  63   KPALDKAV-ALAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+               +++   +L   +   AS   G   YR  +   ++ +A 
+Sbjct  490  HHLVERVAESLCGELPLAASAPGGMIAYRRALVVSLIFKAY  530
+
+
+>sp|A0A1U8QNG8|HXNS_EMENI Nicotinate hydroxylase hnxS OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 
+194 / M139) OX=227321 GN=hxnS PE=1 SV=1
+Length=1350
+
+ Score = 40.5 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 28/101 (28%), Positives = 41/101 (41%), Gaps = 5/101 (5%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG---KCVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            AY++ KRK  D A   AA  + ++ G       AS+    +A T + A +    L G   
+Sbjct  453  AYKQAKRKDDDIAIVTAAFRVRIAPGPDYTVQEASLAFGGMAPTTVLAHKTASALEGKRW  512
+
+Query  62   DKPALDKAV--ALAEAITAPASDGRGPAEYRTKMAGVMLRR  100
+               A+   V  +L E    P S   G A YR  +   +  R
+Sbjct  513  GDEAVLDIVLTSLGEEFNLPYSVPGGMATYRRTLTLSLFVR  553
+
+
+>sp|P64557|YGFM_ECOLI Uncharacterized protein YgfM OS=Escherichia 
+coli (strain K12) OX=83333 GN=ygfM PE=4 SV=1
+Length=259
+
+ Score = 39.0 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 28/94 (30%), Positives = 39/94 (41%), Gaps = 11/94 (12%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKP  64
+            A  K+ R         AAV +T   G      I L  VA+  L   +  K      L+  
+Sbjct  162  ATRKISRSQAGLTVVTAAVAMTDHDG----MRIALDGVASKALRLHDVEK----QNLEGN  213
+
+Query  65   ALDKAVALAEAITAPASDGRGPAEYRTKMAGVML  98
+            AL++AVA A     P  D RG   Y+  + GV++
+Sbjct  214  ALEQAVANAIF---PQEDLRGSVAYKRYITGVLV  244
+
+
+>sp|P64558|YGFM_ECO57 Uncharacterized protein YgfM OS=Escherichia 
+coli O157:H7 OX=83334 GN=ygfM PE=4 SV=1
+Length=259
+
+ Score = 39.0 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 28/94 (30%), Positives = 39/94 (41%), Gaps = 11/94 (12%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKP  64
+            A  K+ R         AAV +T   G      I L  VA+  L   +  K      L+  
+Sbjct  162  ATRKISRSQAGLTVVTAAVAMTDHDG----MRIALDGVASKALRLHDVEK----QNLEGN  213
+
+Query  65   ALDKAVALAEAITAPASDGRGPAEYRTKMAGVML  98
+            AL++AVA A     P  D RG   Y+  + GV++
+Sbjct  214  ALEQAVANAIF---PQEDLRGSVAYKRYITGVLV  244
+
+
+>sp|Q12553|XDH_EMENI Xanthine dehydrogenase OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / 
+M139) OX=227321 GN=hxA PE=2 SV=2
+Length=1363
+
+ Score = 38.6 bits (88),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 18/62 (29%), Positives = 28/62 (45%), Gaps = 1/62 (2%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTM-SGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDK  63
+            AY++ KRK  D A   AA+ +++ S     + S+    +A   + A  A   L G     
+Sbjct  457  AYKQSKRKDDDIAIVNAALRVSLSSSNDVTSVSLVFGGMAPLTVSARNAEAFLTGKKFTD  516
+
+Query  64   PA  65
+            PA
+Sbjct  517  PA  518
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.124    0.290    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0380    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5102136064
+Results from round 3
+
+
+Query= d1n62c1
+
+Length=109
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain OS...  128     7e-37
+sp|Q8X6C5|XDHB_ECO57 Xanthine dehydrogenase FAD-binding subunit O...  119     5e-33
+sp|Q46800|XDHB_ECOLI Putative xanthine dehydrogenase FAD-binding ...  118     7e-33
+sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain O...  115     1e-31
+sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseud...  114     6e-31
+sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain O...  111     3e-30
+sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase com...  110     1e-29
+sp|P22811|XDH_DROPS Xanthine dehydrogenase OS=Drosophila pseudoob...  111     9e-29
+sp|A0A1U8QNG8|HXNS_EMENI Nicotinate hydroxylase hnxS OS=Emericell...  108     1e-27
+sp|R4ZGN4|XDH_BLAAD Xanthine dehydrogenase OS=Blastobotrys adenin...  106     1e-26
+sp|Q3TYQ9|AOXD_MOUSE Aldehyde oxidase 4 OS=Mus musculus OX=10090 ...  103     1e-25
+
+Sequences not found previously or not previously below threshold:
+
+sp|P91711|XDH_DROSU Xanthine dehydrogenase OS=Drosophila subobscu...  109     4e-28
+sp|P10351|XDH_DROME Xanthine dehydrogenase OS=Drosophila melanoga...  109     6e-28
+sp|Q5QE79|AOXD_RAT Aldehyde oxidase 4 OS=Rattus norvegicus OX=101...  100     9e-25
+sp|P08793|XDH_CALVI Xanthine dehydrogenase OS=Calliphora vicina O...  99.9    1e-24
+sp|P47990|XDH_CHICK Xanthine dehydrogenase/oxidase OS=Gallus gall...  93.3    3e-22
+sp|P48034|AOXA_BOVIN Aldehyde oxidase 1 OS=Bos taurus OX=9913 GN=...  89.1    1e-20
+sp|Q9Z0U5|AOXA_RAT Aldehyde oxidase 1 OS=Rattus norvegicus OX=101...  85.6    2e-19
+sp|Q8GUQ8|XDH1_ARATH Xanthine dehydrogenase 1 OS=Arabidopsis thal...  85.2    2e-19
+sp|H9TB18|AOXD_CAVPO Aldehyde oxidase 4 OS=Cavia porcellus OX=101...  83.7    7e-19
+sp|P80456|AOXA_RABIT Aldehyde oxidase 1 OS=Oryctolagus cuniculus ...  81.7    4e-18
+sp|Q00519|XDH_MOUSE Xanthine dehydrogenase/oxidase OS=Mus musculu...  81.0    6e-18
+sp|O54754|AOXA_MOUSE Aldehyde oxidase 1 OS=Mus musculus OX=10090 ...  81.0    6e-18
+sp|P22985|XDH_RAT Xanthine dehydrogenase/oxidase OS=Rattus norveg...  80.6    9e-18
+sp|Q5SGK3|AOXB_MOUSE Aldehyde oxidase 2 OS=Mus musculus OX=10090 ...  80.2    1e-17
+sp|F4JLI5|XDH2_ARATH Xanthine dehydrogenase 2 OS=Arabidopsis thal...  80.2    1e-17
+sp|P80457|XDH_BOVIN Xanthine dehydrogenase/oxidase OS=Bos taurus ...  80.2    1e-17
+sp|P47989|XDH_HUMAN Xanthine dehydrogenase/oxidase OS=Homo sapien...  79.8    1e-17
+sp|Q5QE78|AOXB_RAT Aldehyde oxidase 2 OS=Rattus norvegicus OX=101...  79.8    1e-17
+sp|Q5FB27|AOXA_MACFA Aldehyde oxidase 1 OS=Macaca fascicularis OX...  79.8    2e-17
+sp|Q54FB7|XDH_DICDI Xanthine dehydrogenase OS=Dictyostelium disco...  79.0    3e-17
+sp|Q5QE80|AOXC_RAT Aldehyde oxidase 3 OS=Rattus norvegicus OX=101...  78.7    3e-17
+sp|Q9MYW6|XDH_FELCA Xanthine dehydrogenase/oxidase OS=Felis catus...  77.1    1e-16
+sp|Q12553|XDH_EMENI Xanthine dehydrogenase OS=Emericella nidulans...  76.7    2e-16
+sp|G3X982|AOXC_MOUSE Aldehyde oxidase 3 OS=Mus musculus OX=10090 ...  76.4    3e-16
+sp|C4NYZ3|AOXB_MACFA Aldehyde oxidase 2 OS=Macaca fascicularis OX...  76.0    3e-16
+sp|Q06278|AOXA_HUMAN Aldehyde oxidase OS=Homo sapiens OX=9606 GN=...  75.2    6e-16
+sp|H9TB19|AOXB_CAVPO Aldehyde oxidase 2 OS=Cavia porcellus OX=101...  74.8    8e-16
+sp|H9TB17|AOXA_CAVPO Aldehyde oxidase 1 OS=Cavia porcellus OX=101...  71.7    9e-15
+sp|Q6AUV1|XDH_ORYSJ Xanthine dehydrogenase OS=Oryza sativa subsp....  71.3    2e-14
+sp|Q7G192|ALDO2_ARATH Indole-3-acetaldehyde oxidase OS=Arabidopsi...  49.0    1e-06
+sp|O33820|HCRB_THAAR 4-hydroxybenzoyl-CoA reductase subunit beta ...  44.0    5e-05
+sp|P64557|YGFM_ECOLI Uncharacterized protein YgfM OS=Escherichia ...  40.9    6e-04
+sp|P64558|YGFM_ECO57 Uncharacterized protein YgfM OS=Escherichia ...  40.9    6e-04
+sp|Q7XH05|ALDO1_ORYSJ Probable aldehyde oxidase 1 OS=Oryza sativa...  39.0    0.004
+
+
+>sp|Q4J6M6|CUTB_SULAC Glyceraldehyde dehydrogenase medium chain 
+OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 
+/ JCM 8929 / NBRC 15157 / NCIMB 11770) OX=330779 GN=cutB PE=1 
+SV=1
+Length=281
+
+ Score = 128 bits (322),  Expect = 7e-37, Method: Composition-based stats.
+ Identities = 27/106 (25%), Positives = 50/106 (47%), Gaps = 0/106 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G+   Y+K+ R+ GDYA A+ A+ + + G +     +    V + P  A E  K ++G  
+Sbjct  176  GYKTVYKKVVRRAGDYALASVALAIKLKGNEIEDIKLAYGGVHDKPFRAMEVEKNVIGKK  235
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+            L+   +    +   +   P SD RG + YR ++  V+  +A +   
+Sbjct  236  LNDDLVKDIASKVSSQINPPSDHRGSSWYRREVVKVLTMKAFKEVA  281
+
+
+>sp|Q8X6C5|XDHB_ECO57 Xanthine dehydrogenase FAD-binding subunit 
+OS=Escherichia coli O157:H7 OX=83334 GN=xdhB PE=3 SV=1
+Length=292
+
+ Score = 119 bits (297),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 0/104 (0%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKPA  65
+            ++   R   D +T   A    +  G      +     A TP+  + A +      L+   
+Sbjct  184  FKYAMRDAMDISTIGCAAHCRLDNGNFSELRLAFGVAAPTPIRCQHAEQTAQNAPLNLQT  243
+
+Query  66   LDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            L+          AP S  R   E+R  +   M ++ +  A A A
+Sbjct  244  LEAISESVLQDVAPRSSWRASKEFRLHLIQTMTKKVISEAVAAA  287
+
+
+>sp|Q46800|XDHB_ECOLI Putative xanthine dehydrogenase FAD-binding 
+subunit XdhB OS=Escherichia coli (strain K12) OX=83333 GN=xdhB 
+PE=4 SV=1
+Length=292
+
+ Score = 118 bits (296),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 36/104 (35%), Gaps = 0/104 (0%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDKPA  65
+            ++   R   D +T   A    +  G      +     A TP+  + A +      L+   
+Sbjct  184  FKYAMRDAMDISTIGCAAHCRLDNGNFSELRLAFGVAAPTPIRCQHAEQTAQNAPLNLQT  243
+
+Query  66   LDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            L+          AP S  R   E+R  +   M ++ +  A A A
+Sbjct  244  LEAISESVLQDVAPRSSWRASKEFRLHLIQTMTKKVISEAVAAA  287
+
+
+>sp|P19914|DCMM_HYDPS Carbon monoxide dehydrogenase medium chain 
+OS=Hydrogenophaga pseudoflava OX=47421 GN=cutM PE=1 SV=2
+Length=287
+
+ Score = 115 bits (288),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 55/108 (51%), Positives = 65/108 (60%), Gaps = 0/108 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            G G+AYEKLKRK GD+ATA  AVV+  SG       I LTNVA T L  E     L+G A
+Sbjct  178  GTGWAYEKLKRKTGDWATAGCAVVMRKSGNTVSHIRIALTNVAPTALRREGGRSRLLGKA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+              K A+  A   A AI  PA D RG A+Y+T MAG M++RA+  A AR
+Sbjct  238  FTKEAVQAAADAAIAICEPAEDLRGDADYKTAMAGQMVKRALNAAWAR  285
+
+
+>sp|D7REY4|CDHB_PSEU3 Caffeine dehydrogenase subunit beta OS=Pseudomonas 
+sp. (strain CBB1) OX=765715 GN=cdhB PE=1 SV=1
+Length=295
+
+ Score = 114 bits (284),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 31/106 (29%), Positives = 48/106 (45%), Gaps = 0/106 (0%)
+
+Query  3    GYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            G+A+E++ R+ GD+A   AAV++     K   A I L ++  TP+      + L+G  + 
+Sbjct  181  GWAFEEVARRHGDFAQCGAAVLIGAEDRKIDYARIALCSIGETPIRFHALEQWLIGRPVG  240
+
+Query  63   KPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+                         I   A D    AE R K+A  +  RA+ RA  R
+Sbjct  241  NDLPADVKLHCREILDVAEDSTMTAENRAKLASAVTSRAIARAADR  286
+
+
+>sp|P19920|DCMM_OLICO Carbon monoxide dehydrogenase medium chain 
+OS=Oligotropha carboxidovorans (strain ATCC 49405 / DSM 1227 
+/ KCTC 32145 / OM5) OX=504832 GN=coxM PE=1 SV=2
+Length=288
+
+ Score = 111 bits (278),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 109/109 (100%), Positives = 109/109 (100%), Gaps = 0/109 (0%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  60
+            GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA
+Sbjct  178  GHGYAYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTA  237
+
+Query  61   LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+            LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA
+Sbjct  238  LDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  286
+
+
+>sp|O87681|KDHA_PAENI 6-hydroxypseudooxynicotine dehydrogenase 
+complex subunit alpha OS=Paenarthrobacter nicotinovorans OX=29320 
+GN=kdhA PE=1 SV=2
+Length=296
+
+ Score = 110 bits (274),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/110 (30%), Positives = 54/110 (49%), Gaps = 1/110 (1%)
+
+Query  1    GHGYAYEKLKRKIGDYATAAAAVVLTMSG-GKCVTASIGLTNVANTPLWAEEAGKVLVGT  59
+            G G A+++  R+ GDYA   AA ++T+   GKC  A I +    +T +  +EA  +L+ +
+Sbjct  178  GSGAAFDEFSRRHGDYAIGGAASIVTLDEQGKCSRARITVLGGGSTAIRCQEAENILIDS  237
+
+Query  60   ALDKPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKARA  109
+             L    +  A   A     P     G A+YR ++   M+ R + +A  RA
+Sbjct  238  TLSSHDIAAAAHAAVQGLDPVPTVHGSAQYRAQVIRTMVERTLAKALHRA  287
+
+
+>sp|P22811|XDH_DROPS Xanthine dehydrogenase OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=ry PE=3 SV=2
+Length=1343
+
+ Score = 111 bits (278),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 21/101 (21%), Positives = 41/101 (41%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++ +R+  D A   AAV +            S+    +A T + A    +++V   LD
+Sbjct  430  AFKQARRRDDDIAIVNAAVNVRFEPRTNVVAGISMAFGGMAPTTVLAPRTSQLMVKQPLD  489
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+               +++    L   +   AS   G   YR  +   ++ +A 
+Sbjct  490  HHLVERVAESLCGELPLAASAPGGMIAYRRALVVSLIFKAY  530
+
+
+>sp|P91711|XDH_DROSU Xanthine dehydrogenase OS=Drosophila subobscura 
+OX=7241 GN=Xdh PE=3 SV=1
+Length=1344
+
+ Score = 109 bits (273),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 22/101 (22%), Positives = 41/101 (41%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSG--GKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++ +R+  D A   AAV +            S+    +A T + A    +++V   LD
+Sbjct  431  AFKQARRRDDDIAIVNAAVNVRFEPKSNVVAEISMAFGGMAPTTVLAPRTSQLMVKQPLD  490
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+               L++    L   +   AS   G   YR  +   ++ +A 
+Sbjct  491  HQLLERVAESLCGELPLAASAPGGMIAYRRALVVSLIFKAY  531
+
+
+>sp|P10351|XDH_DROME Xanthine dehydrogenase OS=Drosophila melanogaster 
+OX=7227 GN=ry PE=2 SV=2
+Length=1335
+
+ Score = 109 bits (272),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 39/101 (39%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSG--GKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++ +R+  D A   AA+ +            S+    +A T + A    +++VG    
+Sbjct  422  AFKQARRRDDDIAIVNAAINVRFEEKSNIVAEISMAFGGMAPTTVLAPRTSQLMVGQEWS  481
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+               +++    L   +   AS   G   YR  +   +  +A 
+Sbjct  482  HQLVERVAESLCTELPLAASAPGGMIAYRRALVVSLFFKAY  522
+
+
+>sp|A0A1U8QNG8|HXNS_EMENI Nicotinate hydroxylase hnxS OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 
+194 / M139) OX=227321 GN=hxnS PE=1 SV=1
+Length=1350
+
+ Score = 108 bits (270),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 28/101 (28%), Positives = 41/101 (41%), Gaps = 5/101 (5%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG---KCVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            AY++ KRK  D A   AA  + ++ G       AS+    +A T + A +    L G   
+Sbjct  453  AYKQAKRKDDDIAIVTAAFRVRIAPGPDYTVQEASLAFGGMAPTTVLAHKTASALEGKRW  512
+
+Query  62   DKPALDKAV--ALAEAITAPASDGRGPAEYRTKMAGVMLRR  100
+               A+   V  +L E    P S   G A YR  +   +  R
+Sbjct  513  GDEAVLDIVLTSLGEEFNLPYSVPGGMATYRRTLTLSLFVR  553
+
+
+>sp|R4ZGN4|XDH_BLAAD Xanthine dehydrogenase OS=Blastobotrys adeninivorans 
+OX=409370 GN=AXOR PE=1 SV=1
+Length=1405
+
+ Score = 106 bits (263),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 22/110 (20%), Positives = 36/110 (33%), Gaps = 6/110 (5%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG-KCVTASIGLTNVANTPLWAEEAGKVLVGTALDK  63
+            AY++ KRK  D A   A + L +    +   A +    V      A+   + L G  L +
+Sbjct  481  AYKQAKRKDDDIAIVTACLRLALDDDFRISKARLAYGGVGPFTTAAKGTAEFLTGKLLRR  540
+
+Query  64   PALDKAVALAE-----AITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+                + +  A          P S   G A YR  +      +       +
+Sbjct  541  ETAKEVLEGAIDCLIKEFDLPYSVPGGMAAYRRTLIMSFFYKFYSTVLEK  590
+
+
+>sp|Q3TYQ9|AOXD_MOUSE Aldehyde oxidase 4 OS=Mus musculus OX=10090 
+GN=Aox4 PE=1 SV=1
+Length=1336
+
+ Score = 103 bits (256),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 21/100 (21%), Positives = 35/100 (35%), Gaps = 3/100 (3%)
+
+Query  9    LKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALDKPAL  66
+             +R+   +A   A + +    G        +   +VA T + A +  K L+G   D   L
+Sbjct  433  AQRQENAFAIVNAGMSVEFEEGTNTIKDLKMFFGSVAPTVVSASQTCKQLIGRQWDDQML  492
+
+Query  67   DKAVALAEAITAPASDG-RGPAEYRTKMAGVMLRRAVERA  105
+              A  L         D   G  EYR  +   +L +   + 
+Sbjct  493  SDACQLVLQEIRIPPDAEGGMVEYRRTLIISLLFKFYLKV  532
+
+
+>sp|Q5QE79|AOXD_RAT Aldehyde oxidase 4 OS=Rattus norvegicus OX=10116 
+GN=Aox4 PE=2 SV=1
+Length=1334
+
+ Score = 100 bits (249),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 21/100 (21%), Positives = 35/100 (35%), Gaps = 3/100 (3%)
+
+Query  9    LKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALDKPAL  66
+             +R+   +A   A + +    G        +   +VA T + A +  K L+G   D   L
+Sbjct  431  AQRQENAFAIVNAGMSVEFEEGTNTIKDLQMLFGSVAPTVVSASQTCKQLIGRQWDDQML  490
+
+Query  67   DKAVALAEAITAPASDG-RGPAEYRTKMAGVMLRRAVERA  105
+              A  L         D   G  EYR  +   +L +   + 
+Sbjct  491  SDACQLVLEEIRIPPDAEGGMVEYRRTLIISLLFKFYLKV  530
+
+
+>sp|P08793|XDH_CALVI Xanthine dehydrogenase OS=Calliphora vicina 
+OX=7373 GN=XDH PE=2 SV=1
+Length=1353
+
+ Score = 99.9 bits (247),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 39/101 (39%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG--KCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++ KR+  D A   AA+ + +           +    +A T + A     ++V    +
+Sbjct  440  AFKQAKRRDDDIAIVNAAINVFIDPRSITVDKVYMAFGGMAPTTVLATRTADIMVKQQWN  499
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            K  +++ V  L   +    S   G   YR  +   +  +A 
+Sbjct  500  KVLMERVVENLCAELPLAPSAPGGMIAYRRSLVVSLFFKAY  540
+
+
+>sp|P47990|XDH_CHICK Xanthine dehydrogenase/oxidase OS=Gallus 
+gallus OX=9031 GN=XDH PE=1 SV=1
+Length=1358
+
+ Score = 93.3 bits (230),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 18/101 (18%), Positives = 35/101 (35%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A     + +    G        +    +A T + A +  + L G   +
+Sbjct  446  AFKQAYRREDDIAIVTCGMRVLFQHGTSRVQEVKLSYGGMAPTTILALKTCRELAGRDWN  505
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L  A   LA  +    S   G  E+R  +      +  
+Sbjct  506  EKLLQDACRLLAGEMDLSPSAPGGMVEFRRTLTLSFFFKFY  546
+
+
+>sp|P48034|AOXA_BOVIN Aldehyde oxidase 1 OS=Bos taurus OX=9913 
+GN=AOX1 PE=1 SV=2
+Length=1339
+
+ Score = 89.1 bits (219),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 39/104 (38%), Gaps = 3/104 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVL--TMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +R+    A   + + +      G     SI    V  T + A  + + L+G   +
+Sbjct  427  AFRQAQRQQNALAIVNSGMRVCFGKGDGIIRELSIAYGGVGPTTILANNSCQKLIGRPWN  486
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERA  105
+            +  LD A  L    ++ P S   G  E++  +    L +     
+Sbjct  487  EEMLDAACRLILDEVSLPGSAPGGRVEFKRTLIVSFLFKFYLEV  530
+
+
+>sp|Q9Z0U5|AOXA_RAT Aldehyde oxidase 1 OS=Rattus norvegicus OX=10116 
+GN=Aox1 PE=1 SV=1
+Length=1333
+
+ Score = 85.6 bits (210),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 21/105 (20%), Positives = 40/105 (38%), Gaps = 3/105 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVL--TMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +R+    A   + + +     GG     SI    V  T + A+ + + L+G   +
+Sbjct  426  AFRQAQRQQNALAIVNSGMRVLFREGGGVIKELSILYGGVGPTTIGAKNSCQKLIGRPWN  485
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+            +  LD A  L    +T   S   G  E++  +    L +      
+Sbjct  486  EEMLDTACRLVLDEVTLAGSAPGGKVEFKRTLIISFLFKFYLEVL  530
+
+
+>sp|Q8GUQ8|XDH1_ARATH Xanthine dehydrogenase 1 OS=Arabidopsis 
+thaliana OX=3702 GN=XDH1 PE=1 SV=1
+Length=1361
+
+ Score = 85.2 bits (209),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 37/102 (36%), Gaps = 5/102 (5%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGK----CVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            +++  R+  D A     + + +           ASI    VA   L A +  + L+G   
+Sbjct  449  FKQAHRRDDDIAIVNGGMRVFLEDKGQQLFVSDASIAYGGVAPLSLCARKTEEFLIGKNW  508
+
+Query  62   DKPALDKAVALAEAITAPASD-GRGPAEYRTKMAGVMLRRAV  102
+            +K  L  A+ + ++      D   G  E+R  +      +  
+Sbjct  509  NKDLLQDALKVIQSDVVIKEDAPGGMVEFRKSLTLSFFFKFF  550
+
+
+>sp|H9TB18|AOXD_CAVPO Aldehyde oxidase 4 OS=Cavia porcellus OX=10141 
+GN=AOX4 PE=2 SV=2
+Length=1341
+
+ Score = 83.7 bits (205),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 19/102 (19%), Positives = 33/102 (32%), Gaps = 3/102 (3%)
+
+Query  7    EKLKRKIGDYATAAAAVVLTMSGG--KCVTASIGLTNVANTPLWAEEAGKVLVGTALDKP  64
+             + +R+    A   A + + +  G        +    +  T L A      LVG   D  
+Sbjct  432  RQAQRQENAMAIVNAGMSVRLEDGSSTIRDLQVFYGGIGPTVLSASRTCGQLVGRQWDDQ  491
+
+Query  65   ALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERA  105
+             L +A       +  P     G  E+R  +   +L +   R 
+Sbjct  492  MLGEACRGILDELRLPPGAKGGQVEFRHTLMLSLLFKFYLRV  533
+
+
+>sp|P80456|AOXA_RABIT Aldehyde oxidase 1 OS=Oryctolagus cuniculus 
+OX=9986 GN=AOX1 PE=1 SV=2
+Length=1334
+
+ Score = 81.7 bits (200),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 20/104 (19%), Positives = 41/104 (39%), Gaps = 3/104 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +RK    A   + + +    G       +I    V  T + A+ + + L+G + +
+Sbjct  427  AFRQAQRKQNALAIVNSGMRVFFGEGDGIIRELAISYGGVGPTIICAKNSCQKLIGRSWN  486
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERA  105
+            +  LD A  L    ++ P S   G  E++  +    L +     
+Sbjct  487  EEMLDTACRLILDEVSLPGSAPGGKVEFKRTLIISFLFKFYLEV  530
+
+
+>sp|Q00519|XDH_MOUSE Xanthine dehydrogenase/oxidase OS=Mus musculus 
+OX=10090 GN=Xdh PE=1 SV=5
+Length=1335
+
+ Score = 81.0 bits (198),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 16/101 (16%), Positives = 36/101 (36%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A   + + +    G       S+    +A+  + A +     +  + +
+Sbjct  422  AFKQASRREDDIAKVTSGMRVLFKPGTTEVQELSLCFGGMADRTVSALKTTPKQLSKSWN  481
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L    A LAE +        G  E+R  +      +  
+Sbjct  482  EELLQDVCAGLAEELHLAPDAPGGMVEFRRTLTLSFFFKFY  522
+
+
+>sp|O54754|AOXA_MOUSE Aldehyde oxidase 1 OS=Mus musculus OX=10090 
+GN=Aox1 PE=1 SV=2
+Length=1333
+
+ Score = 81.0 bits (198),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 21/104 (20%), Positives = 41/104 (39%), Gaps = 3/104 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVL--TMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +R+    A   + + +     GG     SI    V +T + A+ + + L+G   +
+Sbjct  426  AFRQAQRQQNALAIVNSGMRVLFREGGGVIEELSILYGGVGSTIISAKNSCQRLIGRPWN  485
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERA  105
+            +  LD    L    +T  AS   G  E++  +    L +     
+Sbjct  486  EGMLDTRCRLVLDEVTLAASAPGGKVEFKRTLIISFLFKFYLEV  529
+
+
+>sp|P22985|XDH_RAT Xanthine dehydrogenase/oxidase OS=Rattus norvegicus 
+OX=10116 GN=Xdh PE=1 SV=3
+Length=1331
+
+ Score = 80.6 bits (197),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 16/101 (16%), Positives = 36/101 (36%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGKCV--TASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A   + + +    G       S+    +A+  + A +     +  + +
+Sbjct  419  AFKQASRREDDIAKVTSGMRVLFKPGTIEVQELSLCFGGMADRTISALKTTPKQLSKSWN  478
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L    A LAE +        G  E+R  +      +  
+Sbjct  479  EELLQSVCAGLAEELQLAPDAPGGMVEFRRTLTLSFFFKFY  519
+
+
+>sp|Q5SGK3|AOXB_MOUSE Aldehyde oxidase 2 OS=Mus musculus OX=10090 
+GN=Aox2 PE=1 SV=2
+Length=1345
+
+ Score = 80.2 bits (196),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/105 (18%), Positives = 37/105 (35%), Gaps = 3/105 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +          A + +    G       SI    V  T + A+ + + L+G   +
+Sbjct  429  AFRQAQCHQNALPDVNAGMRVLFREGTDVIEELSIAYGGVGPTTVSAQRSCQQLLGRRWN  488
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+               LD+A  L    ++ P S   G  E+R  +   +  +      
+Sbjct  489  ALMLDEACRLLLDEVSLPGSALGGKVEFRRTLIVSLFFKFYLEVL  533
+
+
+>sp|F4JLI5|XDH2_ARATH Xanthine dehydrogenase 2 OS=Arabidopsis 
+thaliana OX=3702 GN=XDH2 PE=2 SV=1
+Length=1353
+
+ Score = 80.2 bits (196),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 18/102 (18%), Positives = 36/102 (35%), Gaps = 5/102 (5%)
+
+Query  6    YEKLKRKIGDYATAAAAVVLTMSGGK----CVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            +++  R+  D A     + + +           ASI    VA   L A    ++L+G   
+Sbjct  441  FKQAHRRDDDIAIVNGGMRVFLEEKGQQLFVSDASIVYGGVAPLSLRARNTEELLIGKNW  500
+
+Query  62   DKPALDKAVALAEAITAPAS-DGRGPAEYRTKMAGVMLRRAV  102
+            +K  L  A+ + ++          G  E+R  +      +  
+Sbjct  501  NKCLLQDALKVIQSDVLIKEGAPGGMVEFRKSLTLSFFFKFF  542
+
+
+>sp|P80457|XDH_BOVIN Xanthine dehydrogenase/oxidase OS=Bos taurus 
+OX=9913 GN=XDH PE=1 SV=4
+Length=1332
+
+ Score = 80.2 bits (196),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 15/101 (15%), Positives = 37/101 (37%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGG--KCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A     + +    G  +    ++    +A+  + A +  +  +    +
+Sbjct  420  AFKQASRREDDIAKVTCGMRVLFQPGSMQVKELALCYGGMADRTISALKTTQKQLSKFWN  479
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L    A LAE ++       G  E+R  +      +  
+Sbjct  480  EKLLQDVCAGLAEELSLSPDAPGGMIEFRRTLTLSFFFKFY  520
+
+
+>sp|P47989|XDH_HUMAN Xanthine dehydrogenase/oxidase OS=Homo sapiens 
+OX=9606 GN=XDH PE=1 SV=4
+Length=1333
+
+ Score = 79.8 bits (195),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 16/101 (16%), Positives = 36/101 (36%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A   + + +    G       ++    +AN  + A +  +  +     
+Sbjct  420  AFKQASRREDDIAKVTSGMRVLFKPGTTEVQELALCYGGMANRTISALKTTQRQLSKLWK  479
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L    A LAE +  P     G  ++R  +      +  
+Sbjct  480  EELLQDVCAGLAEELHLPPDAPGGMVDFRCTLTLSFFFKFY  520
+
+
+>sp|Q5QE78|AOXB_RAT Aldehyde oxidase 2 OS=Rattus norvegicus OX=10116 
+GN=Aox2 PE=2 SV=1
+Length=1345
+
+ Score = 79.8 bits (195),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/105 (18%), Positives = 35/105 (33%), Gaps = 3/105 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +          A + +    G       SI    V  T + A  + + L+G   +
+Sbjct  429  AFRQAQCHQNALPDVNAGMRVLFKEGTDIIEELSIAYGGVGPTTVSAHRSCQQLLGRRWN  488
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+               LD+A  L    ++ P S   G  E+R  +      +      
+Sbjct  489  ALLLDEACRLLLDEVSLPGSAVGGKVEFRRTLIVSFFFKFYLEVL  533
+
+
+>sp|Q5FB27|AOXA_MACFA Aldehyde oxidase 1 OS=Macaca fascicularis 
+OX=9541 GN=AOX1 PE=2 SV=2
+Length=1338
+
+ Score = 79.8 bits (195),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 18/104 (17%), Positives = 36/104 (35%), Gaps = 3/104 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +R+    A   + + +    G       SI    V    + A+ + + L+G   +
+Sbjct  427  AFRQAQRQENALAIVNSGMRVFFGEGHGIIRELSISYGGVGPATICAKNSCQKLIGRHWN  486
+
+Query  63   KPALDKAVALAEAIT-APASDGRGPAEYRTKMAGVMLRRAVERA  105
+            +  LD A  L         S   G  E++  +    L +     
+Sbjct  487  EEMLDTACRLVLEEVSLSGSAPGGRVEFKRTLIISFLFKFYLEV  530
+
+
+>sp|Q54FB7|XDH_DICDI Xanthine dehydrogenase OS=Dictyostelium discoideum 
+OX=44689 GN=xdh PE=3 SV=1
+Length=1358
+
+ Score = 79.0 bits (193),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 18/111 (16%), Positives = 36/111 (32%), Gaps = 13/111 (12%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSG------------GKCVTASIGLTNVANTPLWAEEA  52
+            AY++ +R+  D A  +    + +               K     +    +    +  E+ 
+Sbjct  453  AYKQSRRREDDIAIVSCCFRVLLEPIAESASNTVDSNFKIKDCVLAYGGMNVKAVTCEKT  512
+
+Query  53   GKVLVGTALDKPALDKAV-ALAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+             K L+G+   +  L+ A   L   +   A    G  EYR  +      +  
+Sbjct  513  EKQLIGSVWSRELLNDACLNLESDLPLAAGAPGGMIEYRRSLTTGFFFKYF  563
+
+
+>sp|Q5QE80|AOXC_RAT Aldehyde oxidase 3 OS=Rattus norvegicus OX=10116 
+GN=Aox3 PE=1 SV=1
+Length=1334
+
+ Score = 78.7 bits (192),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 21/101 (21%), Positives = 40/101 (40%), Gaps = 4/101 (4%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTM--SGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ +  R+   +A   A + +            SI    +  T + A+ + + L+G   D
+Sbjct  427  AFRQAPRQQNAFAIVNAGMRVAFKEDTNTITDLSILYGGIGATVVSAK-SCQQLIGRCWD  485
+
+Query  63   KPALDKAVAL-AEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  LD A  +  E ++   +   G  EYR  +A   L +  
+Sbjct  486  EEMLDDAGRMIREEVSLLTAAPGGMVEYRKTLAISFLFKFY  526
+
+
+>sp|Q9MYW6|XDH_FELCA Xanthine dehydrogenase/oxidase OS=Felis catus 
+OX=9685 GN=XDH PE=2 SV=3
+Length=1331
+
+ Score = 77.1 bits (188),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 14/101 (14%), Positives = 37/101 (37%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+++  R+  D A   + + +  + G       ++    + +  + A +  +  +    +
+Sbjct  418  AFKQASRREDDIAKVTSGMRVLFNPGTAQVKELALCYGGMHDRTVSALQTTRKQISNFWN  477
+
+Query  63   KPALDKAVA-LAEAITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  L    A LAE ++       G  E+R  +      +  
+Sbjct  478  EELLQNVCAGLAEELSLAPDAPGGMVEFRRTLTLSFFFKFY  518
+
+
+>sp|Q12553|XDH_EMENI Xanthine dehydrogenase OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / 
+M139) OX=227321 GN=hxA PE=2 SV=2
+Length=1363
+
+ Score = 76.7 bits (187),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 25/107 (23%), Positives = 39/107 (36%), Gaps = 3/107 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTM-SGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALDK  63
+            AY++ KRK  D A   AA+ +++ S     + S+    +A   + A  A   L G     
+Sbjct  457  AYKQSKRKDDDIAIVNAALRVSLSSSNDVTSVSLVFGGMAPLTVSARNAEAFLTGKKFTD  516
+
+Query  64   PALDKAVALAEAIT--APASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+            PA  +    A             G A YR  +A     R      ++
+Sbjct  517  PATLEGTMGALEQDFNLKFGVPGGMATYRKSLALGFFYRFYHDVLSQ  563
+
+
+>sp|G3X982|AOXC_MOUSE Aldehyde oxidase 3 OS=Mus musculus OX=10090 
+GN=Aox3 PE=1 SV=1
+Length=1335
+
+ Score = 76.4 bits (186),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 21/98 (21%), Positives = 40/98 (41%), Gaps = 3/98 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSG--GKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ +  R+   +AT  A + +             I    +  T + A+++ + L+G   D
+Sbjct  427  AFRQAPRQQNAFATVNAGMKVVFKEDTNTITDLGILYGGIGATVISADKSCRQLIGRCWD  486
+
+Query  63   KPALDKAVAL-AEAITAPASDGRGPAEYRTKMAGVMLR  99
+            +  LD A  +  E ++   +   G  EYR  +A   L 
+Sbjct  487  EEMLDDAGKMICEEVSLLMAAPGGMEEYRKTLAISFLF  524
+
+
+>sp|C4NYZ3|AOXB_MACFA Aldehyde oxidase 2 OS=Macaca fascicularis 
+OX=9541 GN=AOX2 PE=2 SV=2
+Length=1349
+
+ Score = 76.0 bits (185),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 18/105 (17%), Positives = 38/105 (36%), Gaps = 3/105 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + + +        A + + +  G       SI    V    + A  + + L+G   +
+Sbjct  431  AFRQAQCQQNALPHVNAGMRVLLKEGTDSIEDLSIAYGGVGAATISAHRSCQQLLGRRWN  490
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+            +  LD+A  L    ++ P S   G  E++  +    L +      
+Sbjct  491  ELMLDEACRLLLDEVSLPGSAPGGRVEFKRTLVVSFLFKFYLEVL  535
+
+
+>sp|Q06278|AOXA_HUMAN Aldehyde oxidase OS=Homo sapiens OX=9606 
+GN=AOX1 PE=1 SV=2
+Length=1338
+
+ Score = 75.2 bits (183),  Expect = 6e-16, Method: Composition-based stats.
+ Identities = 17/104 (16%), Positives = 37/104 (36%), Gaps = 3/104 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +R+    A   + + +    G        I    V    + A+ + + L+G   +
+Sbjct  427  AFRQAQRQENALAIVNSGMRVFFGEGDGIIRELCISYGGVGPATICAKNSCQKLIGRHWN  486
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERA  105
+            +  LD A  L    ++   S   G  E++  +    L +     
+Sbjct  487  EQMLDIACRLILNEVSLLGSAPGGKVEFKRTLIISFLFKFYLEV  530
+
+
+>sp|H9TB19|AOXB_CAVPO Aldehyde oxidase 2 OS=Cavia porcellus OX=10141 
+GN=AOX2 PE=2 SV=2
+Length=1335
+
+ Score = 74.8 bits (182),  Expect = 8e-16, Method: Composition-based stats.
+ Identities = 21/106 (20%), Positives = 41/106 (39%), Gaps = 3/106 (3%)
+
+Query  4    YAYEKLKRKIGDYATAAAAVVLTMSGGK--CVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            +++ + +         +A + +  + G       SI    V  T + A +A + L+G   
+Sbjct  432  FSFRQAQAPQNASPHVSAGMRVRFTEGTDTIEDLSIAYGGVGTTTVMAPQACQRLLGRHW  491
+
+Query  62   DKPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAVERAK  106
+             +  LD+A  L    +T P +   G  E+R  +    L R   +  
+Sbjct  492  TEETLDEACRLVLGEVTIPGAAPGGRVEFRRTLLVSFLFRFYLQVL  537
+
+
+>sp|H9TB17|AOXA_CAVPO Aldehyde oxidase 1 OS=Cavia porcellus OX=10141 
+GN=AOX1 PE=1 SV=2
+Length=1332
+
+ Score = 71.7 bits (174),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 22/101 (22%), Positives = 36/101 (36%), Gaps = 3/101 (3%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVL--TMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+            A+ + +RK    A     + +      G      I    V    + A +A + LVG    
+Sbjct  425  AFRQAQRKRSARAIVNVGMRVFFGAGDGVISELCILYGGVGPAIVCATDACRKLVGRHWT  484
+
+Query  63   KPALDKAVALAE-AITAPASDGRGPAEYRTKMAGVMLRRAV  102
+            +  LD+A  L    +  P +   G  E+R  +    L R  
+Sbjct  485  EEMLDEACRLVLGEVAIPGAAPGGRVEFRRTLLVSFLFRFY  525
+
+
+>sp|Q6AUV1|XDH_ORYSJ Xanthine dehydrogenase OS=Oryza sativa subsp. 
+japonica OX=39947 GN=XDH PE=2 SV=1
+Length=1369
+
+ Score = 71.3 bits (173),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 21/107 (20%), Positives = 34/107 (32%), Gaps = 5/107 (5%)
+
+Query  6    YEKLKRKIGDYATAAAAVVL---TMSGG-KCVTASIGLTNVANTPLWAEEAGKVLVGTAL  61
+            +++  R+  D A   A + +    + G       SI    VA     A +    L G   
+Sbjct  457  FKQAHRREDDIALVNAGMRVYIRKVEGDWIISDVSIIYGGVAAVSHRASKTETFLTGKKW  516
+
+Query  62   DKPALDKAVALAEAITAPAS-DGRGPAEYRTKMAGVMLRRAVERAKA  107
+            D   LDK   L +     A     G  E+R+ +      +       
+Sbjct  517  DYGLLDKTFDLLKEDVVLAENAPGGMVEFRSSLTLSFFFKFFLHVTH  563
+
+
+>sp|Q7G192|ALDO2_ARATH Indole-3-acetaldehyde oxidase OS=Arabidopsis 
+thaliana OX=3702 GN=AAO2 PE=1 SV=2
+Length=1321
+
+ Score = 49.0 bits (115),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 20/97 (21%), Positives = 33/97 (34%), Gaps = 3/97 (3%)
+
+Query  6    YEKLKRKIG-DYATAAAAVVLTMSGGKCVTASIGLTNVANT-PLWAEEAGKVLVGTALDK  63
+            Y    R  G   A   AA +  +     V   +          +  +E  + L G  +  
+Sbjct  415  YRAAPRPHGSALAYLNAAFLAEVKDTMVVNCRLAFGAYGTKHAIRCKEIEEFLSGKVITD  474
+
+Query  64   PALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRR  100
+              L +A+ L   +  P  DG     YR+ +A   L +
+Sbjct  475  KVLYEAITLLGNVVVP-EDGTSNPAYRSSLAPGFLFK  510
+
+
+>sp|O33820|HCRB_THAAR 4-hydroxybenzoyl-CoA reductase subunit beta 
+OS=Thauera aromatica OX=59405 GN=hcrB PE=1 SV=1
+Length=324
+
+ Score = 44.0 bits (102),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 21/106 (20%), Positives = 38/106 (36%), Gaps = 3/106 (3%)
+
+Query  4    YAYEKLK-RKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAGKVLVGTALD  62
+             AY K++ R   D+  A  A  L   G +     + +T   + PL        L+G   D
+Sbjct  220  AAYSKVRIRDAVDFPLAGVAAALQRDGDRIAGLRVAITGSNSAPLMVP--VDALLGGNWD  277
+
+Query  63   KPALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVERAKAR  108
+              A +    L    +          +YR ++   + R+ V++    
+Sbjct  278  DAAAETLAQLVRKTSNVLRTTITGVKYRRRVLLAISRKVVDQLWEA  323
+
+
+>sp|P64557|YGFM_ECOLI Uncharacterized protein YgfM OS=Escherichia 
+coli (strain K12) OX=83333 GN=ygfM PE=4 SV=1
+Length=259
+
+ Score = 40.9 bits (94),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 24/100 (24%), Positives = 34/100 (34%), Gaps = 13/100 (13%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAG-KVLVGTALDK  63
+            A  K+ R         AAV +T   G      I L  VA+  L   +   + L G AL+ 
+Sbjct  162  ATRKISRSQAGLTVVTAAVAMTDHDG----MRIALDGVASKALRLHDVEKQNLEGNALE-  216
+
+Query  64   PALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVE  103
+                           P  D RG   Y+  + GV++     
+Sbjct  217  -------QAVANAIFPQEDLRGSVAYKRYITGVLVADLYA  249
+
+
+>sp|P64558|YGFM_ECO57 Uncharacterized protein YgfM OS=Escherichia 
+coli O157:H7 OX=83334 GN=ygfM PE=4 SV=1
+Length=259
+
+ Score = 40.9 bits (94),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 24/100 (24%), Positives = 34/100 (34%), Gaps = 13/100 (13%)
+
+Query  5    AYEKLKRKIGDYATAAAAVVLTMSGGKCVTASIGLTNVANTPLWAEEAG-KVLVGTALDK  63
+            A  K+ R         AAV +T   G      I L  VA+  L   +   + L G AL+ 
+Sbjct  162  ATRKISRSQAGLTVVTAAVAMTDHDG----MRIALDGVASKALRLHDVEKQNLEGNALE-  216
+
+Query  64   PALDKAVALAEAITAPASDGRGPAEYRTKMAGVMLRRAVE  103
+                           P  D RG   Y+  + GV++     
+Sbjct  217  -------QAVANAIFPQEDLRGSVAYKRYITGVLVADLYA  249
+
+
+>sp|Q7XH05|ALDO1_ORYSJ Probable aldehyde oxidase 1 OS=Oryza sativa 
+subsp. japonica OX=39947 GN=Os10g0138100 PE=2 SV=1
+Length=1358
+
+ Score = 39.0 bits (89),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 15/76 (20%), Positives = 28/76 (37%), Gaps = 2/76 (3%)
+
+Query  32   CVTASIGLTNVANT-PLWAEEAGKVLVGTALDKPALDKAVALAEAITAPASDGRGPAEYR  90
+                 +      +   + A +  + L G  +    + +AV L + + +PA     P EYR
+Sbjct  460  IEDVRLAFGAFGSEHAIRASKVEEFLKGKLVSASVILEAVRLLKGVVSPAEGTTHP-EYR  518
+
+Query  91   TKMAGVMLRRAVERAK  106
+              +A   L R +    
+Sbjct  519  VSLAVSYLFRFLSSLA  534
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.126    0.285    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0386    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5102136064
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,266 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3faua_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens OX=...  140     2e-39
+sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c OS=...  37.7    0.002
+sp|O64843|CID7_ARATH Polyadenylate-binding protein-interacting pr...  37.7    0.003
+
+
+>sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens 
+OX=9606 GN=N4BP2 PE=1 SV=2
+Length=1770
+
+ Score = 140 bits (353),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 70/79 (89%), Positives = 70/79 (89%), Gaps = 9/79 (11%)
+
+Query  2     LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+             LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR         RIKPAVIKYL
+Sbjct  1691  LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGRGNHSQGGVARIKPAVIKYL  1750
+
+Query  53    ISHSFRFSEIKPGCLKVML  71
+             ISHSFRFSEIKPGCLKVML
+Sbjct  1751  ISHSFRFSEIKPGCLKVML  1769
+
+
+>sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c 
+OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC11H11.03c PE=4 SV=1
+Length=206
+
+ Score = 37.7 bits (86),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/80 (29%), Positives = 43/80 (54%), Gaps = 15/80 (19%)
+
+Query  2    LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+            +DLHGL++DEA++ + + +E          G  +L +I GR         +++PA+++ L
+Sbjct  75   IDLHGLYIDEAVQAVQQRIENCIRR-----GDNHLHIIVGRGNHSANHVEKLRPAIVRML  129
+
+Query  53   ISHSFRF-SEIKPGCLKVML  71
+               S ++ SE+  G + V L
+Sbjct  130  EQQSIKYNSEVNEGRIYVYL  149
+
+
+>sp|O64843|CID7_ARATH Polyadenylate-binding protein-interacting 
+protein 7 OS=Arabidopsis thaliana OX=3702 GN=CID7 PE=1 SV=1
+Length=567
+
+ Score = 37.7 bits (86),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 29/83 (35%), Positives = 43/83 (52%), Gaps = 14/83 (17%)
+
+Query  2    LDLHGLHVDEALE---HLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVI  49
+            +DLHGLHV EAL+   H + VL + T    Q   + Y+ V TG          R+  AV 
+Sbjct  485  IDLHGLHVSEALQVLKHELSVL-RSTARATQERLQIYICVGTGHHTRGSRTPARLPVAVQ  543
+
+Query  50   KYLISHS-FRFSEIKPGCLKVML  71
+            +YL+      +SE + G L+V++
+Sbjct  544  RYLLEEEGLDYSEPQAGLLRVII  566
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.141    0.407    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+Results from round 2
+
+
+Query= d3faua_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens OX=...  141     6e-40
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c OS=...  38.1    0.001
+
+
+>sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens 
+OX=9606 GN=N4BP2 PE=1 SV=2
+Length=1770
+
+ Score = 141 bits (356),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 70/79 (89%), Positives = 70/79 (89%), Gaps = 9/79 (11%)
+
+Query  2     LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+             LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR         RIKPAVIKYL
+Sbjct  1691  LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGRGNHSQGGVARIKPAVIKYL  1750
+
+Query  53    ISHSFRFSEIKPGCLKVML  71
+             ISHSFRFSEIKPGCLKVML
+Sbjct  1751  ISHSFRFSEIKPGCLKVML  1769
+
+
+>sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c 
+OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC11H11.03c PE=4 SV=1
+Length=206
+
+ Score = 38.1 bits (87),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 23/80 (29%), Positives = 43/80 (54%), Gaps = 15/80 (19%)
+
+Query  2    LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+            +DLHGL++DEA++ + + +E          G  +L +I GR         +++PA+++ L
+Sbjct  75   IDLHGLYIDEAVQAVQQRIENCIRR-----GDNHLHIIVGRGNHSANHVEKLRPAIVRML  129
+
+Query  53   ISHSFRF-SEIKPGCLKVML  71
+               S ++ SE+  G + V L
+Sbjct  130  EQQSIKYNSEVNEGRIYVYL  149
+
+
+
+Lambda      K        H        a         alpha
+   0.322    0.152    0.477    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0465    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+Results from round 3
+
+
+Query= d3faua_
+
+Length=71
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens OX=...  111     2e-29
+sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c OS=...  86.5    8e-22
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q08954|YP199_YEAST Smr domain-containing protein YPL199C OS=Sa...  38.0    0.002
+sp|O64843|CID7_ARATH Polyadenylate-binding protein-interacting pr...  36.9    0.005
+
+
+>sp|Q86UW6|N4BP2_HUMAN NEDD4-binding protein 2 OS=Homo sapiens 
+OX=9606 GN=N4BP2 PE=1 SV=2
+Length=1770
+
+ Score = 111 bits (278),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 70/79 (89%), Positives = 70/79 (89%), Gaps = 9/79 (11%)
+
+Query  2     LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+             LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR         RIKPAVIKYL
+Sbjct  1691  LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGRGNHSQGGVARIKPAVIKYL  1750
+
+Query  53    ISHSFRFSEIKPGCLKVML  71
+             ISHSFRFSEIKPGCLKVML
+Sbjct  1751  ISHSFRFSEIKPGCLKVML  1769
+
+
+>sp|Q9UTP4|YLL3_SCHPO Smr domain-containing protein C11H11.03c 
+OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC11H11.03c PE=4 SV=1
+Length=206
+
+ Score = 86.5 bits (213),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 23/80 (29%), Positives = 43/80 (54%), Gaps = 15/80 (19%)
+
+Query  2    LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+            +DLHGL++DEA++ + + +E          G  +L +I GR         +++PA+++ L
+Sbjct  75   IDLHGLYIDEAVQAVQQRIENCIRR-----GDNHLHIIVGRGNHSANHVEKLRPAIVRML  129
+
+Query  53   ISHSFRF-SEIKPGCLKVML  71
+               S ++ SE+  G + V L
+Sbjct  130  EQQSIKYNSEVNEGRIYVYL  149
+
+
+>sp|Q08954|YP199_YEAST Smr domain-containing protein YPL199C OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=YPL199C PE=1 SV=1
+Length=240
+
+ Score = 38.0 bits (87),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/66 (30%), Positives = 35/66 (53%), Gaps = 14/66 (21%)
+
+Query  2    LDLHGLHVDEALEHLMRVLEKKTEEFKQNGGKPYLSVITGR---------RIKPAVIKYL  52
+            +DLHGL+V EAL  L + +     +F  +  +P L+VI G+         ++KP++ ++ 
+Sbjct  97   IDLHGLYVKEALFILQKRI-----KFAIDHNEPQLNVIVGKGLHSQNGIAKLKPSIEEFC  151
+
+Query  53   ISHSFR  58
+              H  R
+Sbjct  152  AKHGIR  157
+
+
+>sp|O64843|CID7_ARATH Polyadenylate-binding protein-interacting 
+protein 7 OS=Arabidopsis thaliana OX=3702 GN=CID7 PE=1 SV=1
+Length=567
+
+ Score = 36.9 bits (84),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 28/82 (34%), Positives = 40/82 (49%), Gaps = 12/82 (15%)
+
+Query  2    LDLHGLHVDEALEHLMRVLE--KKTEEFKQNGGKPYLSVITGR---------RIKPAVIK  50
+            +DLHGLHV EAL+ L   L   + T    Q   + Y+ V TG          R+  AV +
+Sbjct  485  IDLHGLHVSEALQVLKHELSVLRSTARATQERLQIYICVGTGHHTRGSRTPARLPVAVQR  544
+
+Query  51   Y-LISHSFRFSEIKPGCLKVML  71
+            Y L      +SE + G L+V++
+Sbjct  545  YLLEEEGLDYSEPQAGLLRVII  566
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.144    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0441    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5000423120
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

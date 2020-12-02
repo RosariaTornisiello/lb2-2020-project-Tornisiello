@@ -1,0 +1,216 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3proc1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogen...  167     4e-51
+sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus ...  37.4    0.004
+
+
+>sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogenes 
+OX=69 GN=alpha-LP PE=1 SV=3
+Length=397
+
+ Score = 167 bits (422),  Expect = 4e-51, Method: Compositional matrix adjust.
+ Identities = 80/80 (100%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  60
+            PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA
+Sbjct  39   PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  98
+
+Query  61   ATSGARKSSTLGGVEVRNVR  80
+            ATSGARKSSTLGGVEVRNVR
+Sbjct  99   ATSGARKSSTLGGVEVRNVR  118
+
+
+>sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus 
+OX=13243 PE=1 SV=1
+Length=525
+
+ Score = 37.4 bits (85),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/46 (37%), Positives = 28/46 (61%), Gaps = 0/46 (0%)
+
+Query  6    AMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERN  51
+            A+ RDL I  TQ  + ++ E+ AR     ++++ G +FAG WI +N
+Sbjct  66   AIVRDLKITKTQAKKRIKLEEKARQLEPRLQKKLGKKFAGLWISKN  111
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+Results from round 2
+
+
+Query= d3proc1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogen...  166     6e-51
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus ...  38.5    0.002
+
+
+>sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogenes 
+OX=69 GN=alpha-LP PE=1 SV=3
+Length=397
+
+ Score = 166 bits (421),  Expect = 6e-51, Method: Composition-based stats.
+ Identities = 80/80 (100%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  60
+            PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA
+Sbjct  39   PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  98
+
+Query  61   ATSGARKSSTLGGVEVRNVR  80
+            ATSGARKSSTLGGVEVRNVR
+Sbjct  99   ATSGARKSSTLGGVEVRNVR  118
+
+
+>sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus 
+OX=13243 PE=1 SV=1
+Length=525
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/46 (37%), Positives = 28/46 (61%), Gaps = 0/46 (0%)
+
+Query  6    AMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERN  51
+            A+ RDL I  TQ  + ++ E+ AR     ++++ G +FAG WI +N
+Sbjct  66   AIVRDLKITKTQAKKRIKLEEKARQLEPRLQKKLGKKFAGLWISKN  111
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+Results from round 3
+
+
+Query= d3proc1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogen...  152     3e-45
+sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus ...  82.1    7e-19
+
+Sequences not found previously or not previously below threshold:
+
+sp|P52320|PRTC_STRGR Streptogrisin-C OS=Streptomyces griseus OX=1...  39.3    0.001
+
+
+>sp|P00778|PRLA_LYSEN Alpha-lytic protease OS=Lysobacter enzymogenes 
+OX=69 GN=alpha-LP PE=1 SV=3
+Length=397
+
+ Score = 152 bits (383),  Expect = 3e-45, Method: Composition-based stats.
+ Identities = 80/80 (100%), Positives = 80/80 (100%), Gaps = 0/80 (0%)
+
+Query  1    PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  60
+            PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA
+Sbjct  39   PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  98
+
+Query  61   ATSGARKSSTLGGVEVRNVR  80
+            ATSGARKSSTLGGVEVRNVR
+Sbjct  99   ATSGARKSSTLGGVEVRNVR  118
+
+
+>sp|Q05308|SP1_RARFA Serine protease 1 OS=Rarobacter faecitabidus 
+OX=13243 PE=1 SV=1
+Length=525
+
+ Score = 82.1 bits (201),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 17/46 (37%), Positives = 28/46 (61%), Gaps = 0/46 (0%)
+
+Query  6    AMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERN  51
+            A+ RDL I  TQ  + ++ E+ AR     ++++ G +FAG WI +N
+Sbjct  66   AIVRDLKITKTQAKKRIKLEEKARQLEPRLQKKLGKKFAGLWISKN  111
+
+
+>sp|P52320|PRTC_STRGR Streptogrisin-C OS=Streptomyces griseus 
+OX=1911 GN=sprC PE=3 SV=1
+Length=457
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 19/71 (27%), Positives = 35/71 (49%), Gaps = 3/71 (4%)
+
+Query  1    PQLKFAMQRDLGIFPTQLPQYLQTEKLARTQAAAIEREFGAQFAGSWIERNEDGSFKLVA  60
+            P +  A++RDLG+        +  E  A   AA +E+  GA++AG+ +         L  
+Sbjct  51   PGMLAALERDLGLDEDAARSRIANEYRAAAVAAGLEKSLGARYAGARVS---GAKATLTV  107
+
+Query  61   ATSGARKSSTL  71
+            AT+ A +++ +
+Sbjct  108  ATTDASEAARI  118
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.130    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0397    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

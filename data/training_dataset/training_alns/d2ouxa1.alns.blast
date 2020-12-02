@@ -1,0 +1,231 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2ouxa1
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus f...  265     1e-87
+
+
+>sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus 
+faecalis (strain ATCC 700802 / V583) OX=226185 GN=mgtE PE=1 
+SV=1
+Length=453
+
+ Score = 265 bits (676),  Expect = 1e-87, Method: Compositional matrix adjust.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  60
+            EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM
+Sbjct  6    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  65
+
+Query  61   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  120
+            FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG
+Sbjct  66   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  125
+
+Query  121  EIKELLHYED  130
+            EIKELLHYED
+Sbjct  126  EIKELLHYED  135
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.131    0.352    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 2
+
+
+Query= d2ouxa1
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus f...  270     1e-89
+
+Sequences not found previously or not previously below threshold:
+
+sp|O34442|MGTE_BACSU Magnesium transporter MgtE OS=Bacillus subti...  43.5    1e-04
+
+
+>sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus 
+faecalis (strain ATCC 700802 / V583) OX=226185 GN=mgtE PE=1 
+SV=1
+Length=453
+
+ Score = 270 bits (689),  Expect = 1e-89, Method: Composition-based stats.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  60
+            EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM
+Sbjct  6    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  65
+
+Query  61   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  120
+            FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG
+Sbjct  66   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  125
+
+Query  121  EIKELLHYED  130
+            EIKELLHYED
+Sbjct  126  EIKELLHYED  135
+
+
+>sp|O34442|MGTE_BACSU Magnesium transporter MgtE OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=mgtE PE=3 SV=1
+Length=451
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/112 (22%), Positives = 57/112 (51%), Gaps = 2/112 (2%)
+
+Query  17   QMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADMFDVIEEDNENMKDYLA  76
+            ++ +FR +   L  Y+    ++ + EK R    +YL+  ++ DM   +E + + +   L 
+Sbjct  22   KIRDFRSVIDELQPYDMAFIFKEMPEKHRARYLSYLTVDDITDMIGELEREFQLV--VLN  79
+
+Query  77   EMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAGEIKELLHY  128
+            ++  + A   + +M  D+   LL  +D+  K + LS + + E+  ++ L++Y
+Sbjct  80   KVGKTKATLAMNKMDNDDLAQLLEEMDEELKEQLLSSMEASESKAVQLLMNY  131
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.133    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+Results from round 3
+
+
+Query= d2ouxa1
+
+Length=130
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus f...  198     8e-62
+sp|O34442|MGTE_BACSU Magnesium transporter MgtE OS=Bacillus subti...  159     6e-47
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q5SMG8|MGTE_THET8 Magnesium transporter MgtE OS=Thermus thermo...  49.7    9e-07
+
+
+>sp|Q830V1|MGTE_ENTFA Magnesium transporter MgtE OS=Enterococcus 
+faecalis (strain ATCC 700802 / V583) OX=226185 GN=mgtE PE=1 
+SV=1
+Length=453
+
+ Score = 198 bits (504),  Expect = 8e-62, Method: Composition-based stats.
+ Identities = 130/130 (100%), Positives = 130/130 (100%), Gaps = 0/130 (0%)
+
+Query  1    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  60
+            EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM
+Sbjct  6    EMEEQFALLLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  65
+
+Query  61   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  120
+            FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG
+Sbjct  66   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAG  125
+
+Query  121  EIKELLHYED  130
+            EIKELLHYED
+Sbjct  126  EIKELLHYED  135
+
+
+>sp|O34442|MGTE_BACSU Magnesium transporter MgtE OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=mgtE PE=3 SV=1
+Length=451
+
+ Score = 159 bits (403),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 25/112 (22%), Positives = 57/112 (51%), Gaps = 2/112 (2%)
+
+Query  17   QMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADMFDVIEEDNENMKDYLA  76
+            ++ +FR +   L  Y+    ++ + EK R    +YL+  ++ DM   +E + + +   L 
+Sbjct  22   KIRDFRSVIDELQPYDMAFIFKEMPEKHRARYLSYLTVDDITDMIGELEREFQLV--VLN  79
+
+Query  77   EMRPSYAADMLAEMYTDNAVDLLNMLDKSQKAKYLSLLSSEEAGEIKELLHY  128
+            ++  + A   + +M  D+   LL  +D+  K + LS + + E+  ++ L++Y
+Sbjct  80   KVGKTKATLAMNKMDNDDLAQLLEEMDEELKEQLLSSMEASESKAVQLLMNY  131
+
+
+>sp|Q5SMG8|MGTE_THET8 Magnesium transporter MgtE OS=Thermus thermophilus 
+(strain HB8 / ATCC 27634 / DSM 579) OX=300852 GN=TTHA1060 
+PE=1 SV=1
+Length=450
+
+ Score = 49.7 bits (117),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 30/133 (23%), Positives = 56/133 (42%), Gaps = 6/133 (5%)
+
+Query  2    MEEQFAL-LLETLKNQQMNEFRELFLALHIYEQGQFYQSLDEKDRQHLYNYLSPKELADM  60
+            MEE+ A+ L E L+       RE+   +H  +    +  L  + R  +   L   + A++
+Sbjct  1    MEEKLAVSLQEALQEGDTRALREVLEEIHPQDLLALWDELKGEHRYVVLTLLPKAKAAEV  60
+
+Query  61   FDVIEEDNENMKDYLAEMRPSYAADMLAEMYTDNAVDLLNMLDKSQKA---KYLSLLSSE  117
+               +  + +   +YL  + P    ++L E+  D+  D L  + K   A   +   LL   
+Sbjct  61   LSHLSPEEQ--AEYLKTLPPWRLREILEELSLDDLADALQAVRKEDPAYFQRLKDLLDPR  118
+
+Query  118  EAGEIKELLHYED  130
+               E++ L  YE+
+Sbjct  119  TRAEVEALARYEE  131
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.310    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0402    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057268596
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

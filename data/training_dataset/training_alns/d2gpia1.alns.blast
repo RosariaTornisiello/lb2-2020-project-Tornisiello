@@ -1,0 +1,155 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2gpia1
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P45795|YRDB_ECOLI Uncharacterized protein YrdB OS=Escherichia ...  53.1    1e-09
+sp|Q83JD2|YRDB_SHIFL Uncharacterized protein YrdB OS=Shigella fle...  52.4    3e-09
+
+
+>sp|P45795|YRDB_ECOLI Uncharacterized protein YrdB OS=Escherichia 
+coli (strain K12) OX=83333 GN=yrdB PE=4 SV=1
+Length=85
+
+ Score = 53.1 bits (126),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 30/86 (35%), Positives = 48/86 (56%), Gaps = 2/86 (2%)
+
+Query  1   MNQSIIFTEQLTWDVQLSAIHFTAQQQGMVIDCYIGQKVLEHLAAEKINNSEQALSLFEQ  60
+           MNQ+I F ++  WD     + F A   GM + C I  + L +      +  EQ L+ F Q
+Sbjct  1   MNQAIQFPDREEWDENKKCVCFPALVNGMQLTCAISGESLAYRFTG--DTPEQWLASFRQ  58
+
+Query  61  FRFDIEEQAEKLIEQEAFDVQGHIQV  86
+            R+D+EE+AE LI++++ D QG + +
+Sbjct  59  HRWDLEEEAENLIQEQSEDDQGWVWL  84
+
+
+>sp|Q83JD2|YRDB_SHIFL Uncharacterized protein YrdB OS=Shigella 
+flexneri OX=623 GN=yrdB PE=4 SV=1
+Length=85
+
+ Score = 52.4 bits (124),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 29/86 (34%), Positives = 48/86 (56%), Gaps = 2/86 (2%)
+
+Query  1   MNQSIIFTEQLTWDVQLSAIHFTAQQQGMVIDCYIGQKVLEHLAAEKINNSEQALSLFEQ  60
+           MNQ+I F ++  WD     + F A   GM + C I  + L +      +  EQ L+ F Q
+Sbjct  1   MNQAIQFPDREEWDENKKCVCFPALVNGMQLTCAISGESLAYRFTG--DTPEQWLASFRQ  58
+
+Query  61  FRFDIEEQAEKLIEQEAFDVQGHIQV  86
+            R+D+EE+A+ LI++++ D QG + +
+Sbjct  59  HRWDLEEEADNLIQEQSEDDQGWVWL  84
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.133    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 2
+
+
+Query= d2gpia1
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q83JD2|YRDB_SHIFL Uncharacterized protein YrdB OS=Shigella fle...  125     3e-38
+sp|P45795|YRDB_ECOLI Uncharacterized protein YrdB OS=Escherichia ...  125     3e-38
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q83JD2|YRDB_SHIFL Uncharacterized protein YrdB OS=Shigella 
+flexneri OX=623 GN=yrdB PE=4 SV=1
+Length=85
+
+ Score = 125 bits (314),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 48/86 (56%), Gaps = 2/86 (2%)
+
+Query  1   MNQSIIFTEQLTWDVQLSAIHFTAQQQGMVIDCYIGQKVLEHLAAEKINNSEQALSLFEQ  60
+           MNQ+I F ++  WD     + F A   GM + C I  + L +      +  EQ L+ F Q
+Sbjct  1   MNQAIQFPDREEWDENKKCVCFPALVNGMQLTCAISGESLAYRFTG--DTPEQWLASFRQ  58
+
+Query  61  FRFDIEEQAEKLIEQEAFDVQGHIQV  86
+            R+D+EE+A+ LI++++ D QG + +
+Sbjct  59  HRWDLEEEADNLIQEQSEDDQGWVWL  84
+
+
+>sp|P45795|YRDB_ECOLI Uncharacterized protein YrdB OS=Escherichia 
+coli (strain K12) OX=83333 GN=yrdB PE=4 SV=1
+Length=85
+
+ Score = 125 bits (314),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 30/86 (35%), Positives = 48/86 (56%), Gaps = 2/86 (2%)
+
+Query  1   MNQSIIFTEQLTWDVQLSAIHFTAQQQGMVIDCYIGQKVLEHLAAEKINNSEQALSLFEQ  60
+           MNQ+I F ++  WD     + F A   GM + C I  + L +      +  EQ L+ F Q
+Sbjct  1   MNQAIQFPDREEWDENKKCVCFPALVNGMQLTCAISGESLAYRFTG--DTPEQWLASFRQ  58
+
+Query  61  FRFDIEEQAEKLIEQEAFDVQGHIQV  86
+            R+D+EE+AE LI++++ D QG + +
+Sbjct  59  HRWDLEEEAENLIQEQSEDDQGWVWL  84
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.351    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

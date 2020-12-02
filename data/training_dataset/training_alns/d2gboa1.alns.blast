@@ -1,0 +1,2057 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2gboa1
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q831P3|Y2458_ENTFA UPF0358 protein EF_2458 OS=Enterococcus fae...  169     2e-55
+sp|Q92CW3|Y1058_LISIN UPF0358 protein lin1058 OS=Listeria innocua...  88.6    1e-23
+sp|B8DCE2|Y1561_LISMH UPF0358 protein LMHCC_1561 OS=Listeria mono...  88.2    2e-23
+sp|Q721A0|Y1087_LISMF UPF0358 protein LMOf2365_1087 OS=Listeria m...  88.2    2e-23
+sp|C1L1Y7|Y1086_LISMC UPF0358 protein Lm4b_01086 OS=Listeria mono...  88.2    2e-23
+sp|Q8Y848|Y1070_LISMO UPF0358 protein lmo1070 OS=Listeria monocyt...  88.2    2e-23
+sp|A0AHI4|Y1048_LISW6 UPF0358 protein lwe1048 OS=Listeria welshim...  86.3    1e-22
+sp|Q732B8|Y3996_BACC1 UPF0358 protein BCE_3996 OS=Bacillus cereus...  79.0    9e-20
+sp|B7H6T6|Y4052_BACC4 UPF0358 protein BCB4264_A4052 OS=Bacillus c...  78.6    1e-19
+sp|Q819M7|Y3949_BACCR UPF0358 protein BC_3949 OS=Bacillus cereus ...  78.6    1e-19
+sp|B7IVI6|Y1188_BACC2 UPF0358 protein BCG9842_B1188 OS=Bacillus c...  78.6    1e-19
+sp|B7HMD4|Y4068_BACC7 UPF0358 protein BCAH187_A4068 OS=Bacillus c...  78.6    1e-19
+sp|C1EPW3|Y4054_BACC3 UPF0358 protein BCA_4054 OS=Bacillus cereus...  78.6    1e-19
+sp|B7JK37|Y3964_BACC0 UPF0358 protein BCAH820_3964 OS=Bacillus ce...  78.6    1e-19
+sp|B9IW28|Y3737_BACCQ UPF0358 protein BCQ_3737 OS=Bacillus cereus...  78.6    1e-19
+sp|Q635X7|Y3709_BACCZ UPF0358 protein BCE33L3709 OS=Bacillus cere...  78.6    1e-19
+sp|Q6HEL5|Y3692_BACHK UPF0358 protein BT9727_3692 OS=Bacillus thu...  78.6    1e-19
+sp|A0RHW7|Y3577_BACAH UPF0358 protein BALH_3577 OS=Bacillus thuri...  78.6    1e-19
+sp|A9VUB0|Y3775_BACMK UPF0358 protein BcerKBAB4_3775 OS=Bacillus ...  78.2    2e-19
+sp|C3LI15|Y4202_BACAC UPF0358 protein BAMEG_4202 OS=Bacillus anth...  77.8    2e-19
+sp|C3P6V6|Y4184_BACAA UPF0358 protein BAA_4184 OS=Bacillus anthra...  77.8    2e-19
+sp|Q81MT5|Y4159_BACAN UPF0358 protein BA_4159/GBAA_4159/BAS3861 O...  77.8    2e-19
+sp|A4ILW6|Y942_GEOTN UPF0358 protein GTNG_0942 OS=Geobacillus the...  77.8    2e-19
+sp|Q5L118|Y1077_GEOKA UPF0358 protein GK1077 OS=Geobacillus kaust...  77.0    5e-19
+sp|A7Z4A7|Y1470_BACVZ UPF0358 protein RBAM_014700 OS=Bacillus vel...  76.6    6e-19
+sp|A8FCU1|Y1375_BACP2 UPF0358 protein BPUM_1375 OS=Bacillus pumil...  75.9    1e-18
+sp|O07638|YLAN_BACSU UPF0358 protein YlaN OS=Bacillus subtilis (s...  75.9    1e-18
+sp|A7GRX7|Y2651_BACCN UPF0358 protein Bcer98_2651 OS=Bacillus cyt...  75.9    1e-18
+sp|Q65K17|Y1701_BACLD UPF0358 protein BLi01701/BL02974 OS=Bacillu...  75.1    3e-18
+sp|C0ZBS0|Y2252_BREBN UPF0358 protein BBR47_22520 OS=Brevibacillu...  74.3    4e-18
+sp|Q9K9L9|Y2626_BACHD UPF0358 protein BH2626 OS=Bacillus halodura...  73.2    1e-17
+sp|B1HPU6|Y1390_LYSSC UPF0358 protein Bsph_1390 OS=Lysinibacillus...  73.2    2e-17
+sp|B7GGM5|Y1873_ANOFW UPF0358 protein Aflv_1873 OS=Anoxybacillus ...  72.4    3e-17
+sp|B1YJ65|Y1994_EXIS2 UPF0358 protein Exig_1994 OS=Exiguobacteriu...  71.6    5e-17
+sp|Q38WQ2|Y1078_LACSS UPF0358 protein LCA_1078 OS=Lactobacillus s...  70.9    1e-16
+sp|Q8ER84|Y1428_OCEIH UPF0358 protein OB1428 OS=Oceanobacillus ih...  68.9    6e-16
+sp|Q5WFC9|Y2396_BACSK UPF0358 protein ABC2396 OS=Bacillus clausii...  68.9    7e-16
+sp|Q4L5C6|Y1840_STAHJ UPF0358 protein SH1840 OS=Staphylococcus ha...  64.7    3e-14
+sp|Q8CT04|Y811_STAES UPF0358 protein SE_0811 OS=Staphylococcus ep...  63.5    7e-14
+sp|Q5HQ56|Y701_STAEQ UPF0358 protein SERP0701 OS=Staphylococcus e...  63.5    7e-14
+sp|Q49WN7|Y1677_STAS1 UPF0358 protein SSP1677 OS=Staphylococcus s...  63.2    1e-13
+sp|Q7A161|Y995_STAAW UPF0358 protein MW0995 OS=Staphylococcus aur...  62.8    2e-13
+sp|A6QFW7|Y977_STAAE UPF0358 protein NWMN_0977 OS=Staphylococcus ...  62.8    2e-13
+sp|Q7A668|Y961_STAAN UPF0358 protein SA0961 OS=Staphylococcus aur...  62.8    2e-13
+sp|A6U0T0|Y1194_STAA2 UPF0358 protein SaurJH1_1194 OS=Staphylococ...  62.8    2e-13
+sp|A5IRZ9|Y1172_STAA9 UPF0358 protein SaurJH9_1172 OS=Staphylococ...  62.8    2e-13
+sp|Q5HGX2|Y1121_STAAC UPF0358 protein SACOL1121 OS=Staphylococcus...  62.8    2e-13
+sp|Q99UZ0|Y1112_STAAM UPF0358 protein SAV1112 OS=Staphylococcus a...  62.8    2e-13
+sp|A7X122|Y1104_STAA1 UPF0358 protein SAHV_1104 OS=Staphylococcus...  62.8    2e-13
+sp|Q2G2C3|Y1062_STAA8 UPF0358 protein SAOUHSC_01062 OS=Staphyloco...  62.8    2e-13
+sp|A8Z1P7|Y1050_STAAT UPF0358 protein USA300HOU_1050 OS=Staphyloc...  62.8    2e-13
+sp|Q6GAA2|Y1047_STAAS UPF0358 protein SAS1047 OS=Staphylococcus a...  62.8    2e-13
+sp|Q2FHW8|Y1012_STAA3 UPF0358 protein SAUSA300_1012 OS=Staphyloco...  62.8    2e-13
+sp|Q2YX63|Y977_STAAB UPF0358 protein SAB0977 OS=Staphylococcus au...  62.8    2e-13
+sp|Q6GHX3|Y1086_STAAR UPF0358 protein SAR1086 OS=Staphylococcus a...  62.8    2e-13
+sp|B9DPV5|Y738_STACT UPF0358 protein Sca_0738 OS=Staphylococcus c...  62.0    4e-13
+
+
+>sp|Q831P3|Y2458_ENTFA UPF0358 protein EF_2458 OS=Enterococcus 
+faecalis (strain ATCC 700802 / V583) OX=226185 GN=EF_2458 PE=1 
+SV=1
+Length=101
+
+ Score = 169 bits (428),  Expect = 2e-55, Method: Compositional matrix adjust.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1   MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR
+Sbjct  1   MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+
+Query  61  LGILTNDEGHRLLSDLERELNQ  82
+           LGILTNDEGHRLLSDLERELNQ
+Sbjct  61  LGILTNDEGHRLLSDLERELNQ  82
+
+
+>sp|Q92CW3|Y1058_LISIN UPF0358 protein lin1058 OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=lin1058 PE=3 SV=1
+Length=93
+
+ Score = 88.6 bits (218),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 39/72 (54%), Positives = 58/72 (81%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           AI+LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AIELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+            +L+S LE+EL+
+Sbjct  72  KKLISTLEKELS  83
+
+
+>sp|B8DCE2|Y1561_LISMH UPF0358 protein LMHCC_1561 OS=Listeria 
+monocytogenes serotype 4a (strain HCC23) OX=552536 GN=LMHCC_1561 
+PE=3 SV=1
+Length=93
+
+ Score = 88.2 bits (217),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 38/72 (53%), Positives = 58/72 (81%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+            +L+S LE+EL+
+Sbjct  72  KKLMSTLEKELS  83
+
+
+>sp|Q721A0|Y1087_LISMF UPF0358 protein LMOf2365_1087 OS=Listeria 
+monocytogenes serotype 4b (strain F2365) OX=265669 GN=LMOf2365_1087 
+PE=3 SV=1
+Length=93
+
+ Score = 88.2 bits (217),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 38/72 (53%), Positives = 58/72 (81%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+            +L+S LE+EL+
+Sbjct  72  KKLMSTLEKELS  83
+
+
+>sp|C1L1Y7|Y1086_LISMC UPF0358 protein Lm4b_01086 OS=Listeria 
+monocytogenes serotype 4b (strain CLIP80459) OX=568819 GN=Lm4b_01086 
+PE=3 SV=1
+Length=93
+
+ Score = 88.2 bits (217),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 38/72 (53%), Positives = 58/72 (81%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+            +L+S LE+EL+
+Sbjct  72  KKLMSTLEKELS  83
+
+
+>sp|Q8Y848|Y1070_LISMO UPF0358 protein lmo1070 OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=lmo1070 PE=3 SV=1
+Length=93
+
+ Score = 88.2 bits (217),  Expect = 2e-23, Method: Compositional matrix adjust.
+ Identities = 38/72 (53%), Positives = 58/72 (81%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+            +L+S LE+EL+
+Sbjct  72  KKLMSTLEKELS  83
+
+
+>sp|A0AHI4|Y1048_LISW6 UPF0358 protein lwe1048 OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=lwe1048 PE=3 SV=1
+Length=93
+
+ Score = 86.3 bits (212),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 38/72 (53%), Positives = 57/72 (79%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++  +EG
+Sbjct  12  AVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIEPEEG  71
+
+Query  70  HRLLSDLERELN  81
+             L+S LE+EL+
+Sbjct  72  KNLISALEKELS  83
+
+
+>sp|Q732B8|Y3996_BACC1 UPF0358 protein BCE_3996 OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=BCE_3996 PE=3 
+SV=1
+Length=95
+
+ Score = 79.0 bits (193),  Expect = 9e-20, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 54/72 (75%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+++ ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLISEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|B7H6T6|Y4052_BACC4 UPF0358 protein BCB4264_A4052 OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=BCB4264_A4052 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|Q819M7|Y3949_BACCR UPF0358 protein BC_3949 OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=BC_3949 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|B7IVI6|Y1188_BACC2 UPF0358 protein BCG9842_B1188 OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=BCG9842_B1188 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|B7HMD4|Y4068_BACC7 UPF0358 protein BCAH187_A4068 OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=BCAH187_A4068 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|C1EPW3|Y4054_BACC3 UPF0358 protein BCA_4054 OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=BCA_4054 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|B7JK37|Y3964_BACC0 UPF0358 protein BCAH820_3964 OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=BCAH820_3964 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|B9IW28|Y3737_BACCQ UPF0358 protein BCQ_3737 OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=BCQ_3737 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|Q635X7|Y3709_BACCZ UPF0358 protein BCE33L3709 OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=BCE33L3709 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|Q6HEL5|Y3692_BACHK UPF0358 protein BT9727_3692 OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=BT9727_3692 
+PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|A0RHW7|Y3577_BACAH UPF0358 protein BALH_3577 OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=BALH_3577 PE=3 SV=1
+Length=95
+
+ Score = 78.6 bits (192),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|A9VUB0|Y3775_BACMK UPF0358 protein BcerKBAB4_3775 OS=Bacillus 
+mycoides (strain KBAB4) OX=315730 GN=BcerKBAB4_3775 PE=3 
+SV=1
+Length=95
+
+ Score = 78.2 bits (191),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 54/72 (75%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q ++L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDNLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIGEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KAMLGELERELS  84
+
+
+>sp|C3LI15|Y4202_BACAC UPF0358 protein BAMEG_4202 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=BAMEG_4202 
+PE=3 SV=1
+Length=95
+
+ Score = 77.8 bits (190),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KVMLGELERELS  84
+
+
+>sp|C3P6V6|Y4184_BACAA UPF0358 protein BAA_4184 OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=BAA_4184 PE=3 SV=1
+Length=95
+
+ Score = 77.8 bits (190),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KVMLGELERELS  84
+
+
+>sp|Q81MT5|Y4159_BACAN UPF0358 protein BA_4159/GBAA_4159/BAS3861 
+OS=Bacillus anthracis OX=1392 GN=BA_4159 PE=3 SV=1
+Length=95
+
+ Score = 77.8 bits (190),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG++  ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGLIAEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KVMLGELERELS  84
+
+
+>sp|A4ILW6|Y942_GEOTN UPF0358 protein GTNG_0942 OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=GTNG_0942 
+PE=3 SV=1
+Length=95
+
+ Score = 77.8 bits (190),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 40/81 (49%), Positives = 56/81 (69%), Gaps = 1/81 (1%)
+
+Query  2   DEGIS-KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           DE +S ++ A  LL+ DAE+I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A R
+Sbjct  3   DESMSYQEKAYALLQADAEKIIQLIRVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVR  62
+
+Query  61  LGILTNDEGHRLLSDLERELN  81
+           LG++   EG  LL  LEREL+
+Sbjct  63  LGLIEAKEGKALLDRLERELS  83
+
+
+>sp|Q5L118|Y1077_GEOKA UPF0358 protein GK1077 OS=Geobacillus kaustophilus 
+(strain HTA426) OX=235909 GN=GK1077 PE=3 SV=1
+Length=95
+
+ Score = 77.0 bits (188),  Expect = 5e-19, Method: Compositional matrix adjust.
+ Identities = 39/81 (48%), Positives = 56/81 (69%), Gaps = 1/81 (1%)
+
+Query  2   DEGIS-KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           DE +S ++ A  LL+ DAE+I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A R
+Sbjct  3   DESMSYREKAYALLQADAEKIIQLIRVQMDHLTMPQCPVYEEVLDTQMFGLSREIDFAVR  62
+
+Query  61  LGILTNDEGHRLLSDLERELN  81
+           LG++   +G  LL  LEREL+
+Sbjct  63  LGLVEAKDGKALLDRLERELS  83
+
+
+>sp|A7Z4A7|Y1470_BACVZ UPF0358 protein RBAM_014700 OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=RBAM_014700 PE=3 SV=1
+Length=93
+
+ Score = 76.6 bits (187),  Expect = 6e-19, Method: Compositional matrix adjust.
+ Identities = 36/72 (50%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A +LL+ DAE+I  LIR Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++  ++G
+Sbjct  13  AFELLKLDAEKILKLIRVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDENDG  72
+
+Query  70  HRLLSDLERELN  81
+             LL  LEREL+
+Sbjct  73  KELLDRLERELS  84
+
+
+>sp|A8FCU1|Y1375_BACP2 UPF0358 protein BPUM_1375 OS=Bacillus pumilus 
+(strain SAFR-032) OX=315750 GN=BPUM_1375 PE=3 SV=1
+Length=93
+
+ Score = 75.9 bits (185),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DA++I  LI+ Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++   EG
+Sbjct  13  ALALLKLDADKILKLIQVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDQHEG  72
+
+Query  70  HRLLSDLERELN  81
+            +LL  LEREL+
+Sbjct  73  KKLLDKLERELS  84
+
+
+>sp|O07638|YLAN_BACSU UPF0358 protein YlaN OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=ylaN PE=1 SV=1
+Length=93
+
+ Score = 75.9 bits (185),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 36/72 (50%), Positives = 52/72 (72%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A +LL+ DAE+I  LIR Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++   +G
+Sbjct  13  AFELLKVDAEKILKLIRVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDEKDG  72
+
+Query  70  HRLLSDLERELN  81
+             LL  LEREL+
+Sbjct  73  KDLLYTLERELS  84
+
+
+>sp|A7GRX7|Y2651_BACCN UPF0358 protein Bcer98_2651 OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=Bcer98_2651 PE=3 SV=1
+Length=94
+
+ Score = 75.9 bits (185),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 34/72 (47%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RL +++ ++G
+Sbjct  13  ALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLDLISEEQG  72
+
+Query  70  HRLLSDLERELN  81
+             +L +LEREL+
+Sbjct  73  KEMLGELERELS  84
+
+
+>sp|Q65K17|Y1701_BACLD UPF0358 protein BLi01701/BL02974 OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / 
+NBRC 12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=BLi01701 PE=3 SV=1
+Length=93
+
+ Score = 75.1 bits (183),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DA++I  LI+ Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++  +EG
+Sbjct  13  ALALLKRDADKILKLIQVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDEEEG  72
+
+Query  70  HRLLSDLERELN  81
+             LL  LEREL+
+Sbjct  73  KELLYRLERELS  84
+
+
+>sp|C0ZBS0|Y2252_BREBN UPF0358 protein BBR47_22520 OS=Brevibacillus 
+brevis (strain 47 / JCM 6285 / NBRC 100599) OX=358681 
+GN=BBR47_22520 PE=3 SV=1
+Length=93
+
+ Score = 74.3 bits (181),  Expect = 4e-18, Method: Compositional matrix adjust.
+ Identities = 34/71 (48%), Positives = 51/71 (72%), Gaps = 0/71 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A+ LL+ DA++I  LI  Q  +L + QC  +EEV+DTQM+G SR+V YA RLG++++D G
+Sbjct  13  ALALLQADADKIYKLIDVQMENLTMPQCPLYEEVLDTQMFGLSREVEYAVRLGLISDDIG  72
+
+Query  70  HRLLSDLEREL  80
+             ++  LER+L
+Sbjct  73  REIMGSLERKL  83
+
+
+>sp|Q9K9L9|Y2626_BACHD UPF0358 protein BH2626 OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 
+/ C-125) OX=272558 GN=BH2626 PE=3 SV=1
+Length=93
+
+ Score = 73.2 bits (178),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 34/71 (48%), Positives = 52/71 (73%), Gaps = 0/71 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A  LL+ DAE+I+ LI  Q  +L + QC  +EEV+DTQM+G SR++ +A RL ++  ++G
+Sbjct  13  AYALLKSDAEKIRKLIEVQLENLTMPQCPLYEEVLDTQMFGLSREIDFAIRLELIDEEQG  72
+
+Query  70  HRLLSDLEREL  80
+            +LLS+LER+L
+Sbjct  73  KQLLSELERKL  83
+
+
+>sp|B1HPU6|Y1390_LYSSC UPF0358 protein Bsph_1390 OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=Bsph_1390 PE=3 SV=1
+Length=93
+
+ Score = 73.2 bits (178),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 32/72 (44%), Positives = 52/72 (72%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A++LL  DA++I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A +LG++  ++G
+Sbjct  13  ALELLIADADKIARLIRVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVKLGLIEREKG  72
+
+Query  70  HRLLSDLERELN  81
+             +L  LE+EL+
+Sbjct  73  KEILDSLEKELS  84
+
+
+>sp|B7GGM5|Y1873_ANOFW UPF0358 protein Aflv_1873 OS=Anoxybacillus 
+flavithermus (strain DSM 21510 / WK1) OX=491915 GN=Aflv_1873 
+PE=3 SV=1
+Length=96
+
+ Score = 72.4 bits (176),  Expect = 3e-17, Method: Compositional matrix adjust.
+ Identities = 34/72 (47%), Positives = 50/72 (69%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A  LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR++ +A RLG++   +G
+Sbjct  13  AYSLLQADAEKIVKLIQVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDEKDG  72
+
+Query  70  HRLLSDLERELN  81
+             +L  LEREL+
+Sbjct  73  KAILDRLERELS  84
+
+
+>sp|B1YJ65|Y1994_EXIS2 UPF0358 protein Exig_1994 OS=Exiguobacterium 
+sibiricum (strain DSM 17290 / CIP 109462 / JCM 13490 / 
+255-15) OX=262543 GN=Exig_1994 PE=3 SV=1
+Length=92
+
+ Score = 71.6 bits (174),  Expect = 5e-17, Method: Compositional matrix adjust.
+ Identities = 33/77 (43%), Positives = 54/77 (70%), Gaps = 0/77 (0%)
+
+Query  5   ISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGIL  64
+           + ++ A++LLE D+ +I+ LI  Q  +L + QC  +EEV+DTQM+G SRQ+ +A RL ++
+Sbjct  8   VHRQRALELLEADSHKIRRLIEVQLANLTMPQCPLYEEVLDTQMFGLSRQIDFAVRLELI  67
+
+Query  65  TNDEGHRLLSDLERELN  81
+              EG +LL  LE++L+
+Sbjct  68  DASEGKQLLDSLEQQLS  84
+
+
+>sp|Q38WQ2|Y1078_LACSS UPF0358 protein LCA_1078 OS=Lactobacillus 
+sakei subsp. sakei (strain 23K) OX=314315 GN=LCA_1078 PE=3 
+SV=1
+Length=98
+
+ Score = 70.9 bits (172),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 28/69 (41%), Positives = 53/69 (77%), Gaps = 0/69 (0%)
+
+Query  14  LEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGHRLL  73
+           L+ DA +I+ L+  Q ++LC+SQC   EE++DTQ++GF+++V +A R+ ++++ EG +L+
+Sbjct  13  LKSDAAKIEALLTKQFDALCLSQCPIIEEIIDTQLFGFTKEVDFAKRVRLISDQEGSQLV  72
+
+Query  74  SDLERELNQ  82
+           ++LE  +NQ
+Sbjct  73  NELETRINQ  81
+
+
+>sp|Q8ER84|Y1428_OCEIH UPF0358 protein OB1428 OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=OB1428 PE=3 SV=1
+Length=93
+
+ Score = 68.9 bits (167),  Expect = 6e-16, Method: Compositional matrix adjust.
+ Identities = 33/72 (46%), Positives = 50/72 (69%), Gaps = 0/72 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A  LL+ DA++I  LI  Q  +L + QC  +E+V+DTQMYG SR++ +A RL +++  EG
+Sbjct  12  AHALLKADADKILRLIEVQIENLTMPQCPVYEDVLDTQMYGLSREIDFAVRLELISEIEG  71
+
+Query  70  HRLLSDLERELN  81
+             LL +LE++LN
+Sbjct  72  KALLENLEKKLN  83
+
+
+>sp|Q5WFC9|Y2396_BACSK UPF0358 protein ABC2396 OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=ABC2396 PE=3 SV=1
+Length=93
+
+ Score = 68.9 bits (167),  Expect = 7e-16, Method: Compositional matrix adjust.
+ Identities = 32/71 (45%), Positives = 51/71 (72%), Gaps = 0/71 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A  LL+ DAE+I+ LI  Q  +L + QC  +EEV+DT+M+G SR++ +A RL ++  ++G
+Sbjct  13  AYALLQADAEKIQKLIEVQLENLTMPQCPLYEEVLDTRMFGLSREIDFAIRLELVEEEKG  72
+
+Query  70  HRLLSDLEREL  80
+             +LS+LER+L
+Sbjct  73  KMILSELERKL  83
+
+
+>sp|Q4L5C6|Y1840_STAHJ UPF0358 protein SH1840 OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=SH1840 PE=3 SV=1
+Length=92
+
+ Score = 64.7 bits (156),  Expect = 3e-14, Method: Compositional matrix adjust.
+ Identities = 29/73 (40%), Positives = 50/73 (68%), Gaps = 0/73 (0%)
+
+Query  10  AIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEG  69
+           A + L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG++  ++G
+Sbjct  11  AYEQLNQDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLGLVDKEDG  70
+
+Query  70  HRLLSDLERELNQ  82
+             L+  LE+EL++
+Sbjct  71  KNLMLRLEKELSK  83
+
+
+>sp|Q8CT04|Y811_STAES UPF0358 protein SE_0811 OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 GN=SE_0811 
+PE=3 SV=1
+Length=91
+
+ Score = 63.5 bits (153),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 28/69 (41%), Positives = 49/69 (71%), Gaps = 0/69 (0%)
+
+Query  14  LEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGHRLL  73
+           L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG++  ++G +L+
+Sbjct  15  LNKDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVQLGLVDKEDGKQLM  74
+
+Query  74  SDLERELNQ  82
+             LE+EL++
+Sbjct  75  LRLEKELSK  83
+
+
+>sp|Q5HQ56|Y701_STAEQ UPF0358 protein SERP0701 OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=SERP0701 
+PE=3 SV=1
+Length=91
+
+ Score = 63.5 bits (153),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 28/69 (41%), Positives = 49/69 (71%), Gaps = 0/69 (0%)
+
+Query  14  LEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGHRLL  73
+           L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG++  ++G +L+
+Sbjct  15  LNKDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVQLGLVDKEDGKQLM  74
+
+Query  74  SDLERELNQ  82
+             LE+EL++
+Sbjct  75  LRLEKELSK  83
+
+
+>sp|Q49WN7|Y1677_STAS1 UPF0358 protein SSP1677 OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 / DSM 
+20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=SSP1677 
+PE=3 SV=1
+Length=91
+
+ Score = 63.2 bits (152),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 29/69 (42%), Positives = 48/69 (70%), Gaps = 0/69 (0%)
+
+Query  14  LEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGHRLL  73
+           L  DA+RI  LI+ Q ++L + QC  +EEV+DTQM+G  ++V +A +LG++  + G  L+
+Sbjct  15  LNKDADRILQLIKVQMDNLTLPQCPLYEEVLDTQMFGLQKEVDFAVQLGLVDREVGKDLM  74
+
+Query  74  SDLERELNQ  82
+             LE+EL++
+Sbjct  75  LRLEKELSK  83
+
+
+>sp|Q7A161|Y995_STAAW UPF0358 protein MW0995 OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=MW0995 PE=1 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A6QFW7|Y977_STAAE UPF0358 protein NWMN_0977 OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=NWMN_0977 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q7A668|Y961_STAAN UPF0358 protein SA0961 OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=SA0961 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A6U0T0|Y1194_STAA2 UPF0358 protein SaurJH1_1194 OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=SaurJH1_1194 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A5IRZ9|Y1172_STAA9 UPF0358 protein SaurJH9_1172 OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=SaurJH9_1172 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q5HGX2|Y1121_STAAC UPF0358 protein SACOL1121 OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=SACOL1121 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q99UZ0|Y1112_STAAM UPF0358 protein SAV1112 OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=SAV1112 PE=3 
+SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A7X122|Y1104_STAA1 UPF0358 protein SAHV_1104 OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=SAHV_1104 
+PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q2G2C3|Y1062_STAA8 UPF0358 protein SAOUHSC_01062 OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=SAOUHSC_01062 
+PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A8Z1P7|Y1050_STAAT UPF0358 protein USA300HOU_1050 OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=USA300HOU_1050 
+PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q6GAA2|Y1047_STAAS UPF0358 protein SAS1047 OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=SAS1047 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q2FHW8|Y1012_STAA3 UPF0358 protein SAUSA300_1012 OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=SAUSA300_1012 PE=3 
+SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q2YX63|Y977_STAAB UPF0358 protein SAB0977 OS=Staphylococcus 
+aureus (strain bovine RF122 / ET3-1) OX=273036 GN=SAB0977 
+PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/76 (37%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  7   KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTN  66
+           K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG++  
+Sbjct  8   KNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLGLVDR  67
+
+Query  67  DEGHRLLSDLERELNQ  82
+           ++G +++  LE+EL++
+Sbjct  68  EDGKQIMLRLEKELSK  83
+
+
+>sp|Q6GHX3|Y1086_STAAR UPF0358 protein SAR1086 OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=SAR1086 PE=3 SV=1
+Length=91
+
+ Score = 62.8 bits (151),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 28/76 (37%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  7   KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTN  66
+           K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG++  
+Sbjct  8   KNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLGLVDR  67
+
+Query  67  DEGHRLLSDLERELNQ  82
+           ++G +++  LE+EL++
+Sbjct  68  EDGKQIMLRLEKELSK  83
+
+
+>sp|B9DPV5|Y738_STACT UPF0358 protein Sca_0738 OS=Staphylococcus 
+carnosus (strain TM300) OX=396513 GN=Sca_0738 PE=3 SV=1
+Length=91
+
+ Score = 62.0 bits (149),  Expect = 4e-13, Method: Compositional matrix adjust.
+ Identities = 28/69 (41%), Positives = 47/69 (68%), Gaps = 0/69 (0%)
+
+Query  14  LEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGHRLL  73
+           L  DA+RI  LI+ Q ++L + QC  +EEV+DTQM+G  ++V +A  LG++  + G  ++
+Sbjct  15  LNKDADRILQLIKVQMDNLTLPQCPLYEEVLDTQMFGLQKEVDFAANLGLIDIEMGKEIM  74
+
+Query  74  SDLERELNQ  82
+             LE+EL++
+Sbjct  75  LRLEKELSK  83
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+Results from round 2
+
+
+Query= d2gboa1
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|B7GGM5|Y1873_ANOFW UPF0358 protein Aflv_1873 OS=Anoxybacillus ...  116     7e-35
+sp|O07638|YLAN_BACSU UPF0358 protein YlaN OS=Bacillus subtilis (s...  116     1e-34
+sp|A7Z4A7|Y1470_BACVZ UPF0358 protein RBAM_014700 OS=Bacillus vel...  116     1e-34
+sp|Q65K17|Y1701_BACLD UPF0358 protein BLi01701/BL02974 OS=Bacillu...  116     2e-34
+sp|Q5L118|Y1077_GEOKA UPF0358 protein GK1077 OS=Geobacillus kaust...  115     3e-34
+sp|A4ILW6|Y942_GEOTN UPF0358 protein GTNG_0942 OS=Geobacillus the...  113     1e-33
+sp|Q732B8|Y3996_BACC1 UPF0358 protein BCE_3996 OS=Bacillus cereus...  113     1e-33
+sp|A9VUB0|Y3775_BACMK UPF0358 protein BcerKBAB4_3775 OS=Bacillus ...  113     1e-33
+sp|A8FCU1|Y1375_BACP2 UPF0358 protein BPUM_1375 OS=Bacillus pumil...  113     1e-33
+sp|B7H6T6|Y4052_BACC4 UPF0358 protein BCB4264_A4052 OS=Bacillus c...  113     3e-33
+sp|Q819M7|Y3949_BACCR UPF0358 protein BC_3949 OS=Bacillus cereus ...  113     3e-33
+sp|B7IVI6|Y1188_BACC2 UPF0358 protein BCG9842_B1188 OS=Bacillus c...  113     3e-33
+sp|B7HMD4|Y4068_BACC7 UPF0358 protein BCAH187_A4068 OS=Bacillus c...  113     3e-33
+sp|C1EPW3|Y4054_BACC3 UPF0358 protein BCA_4054 OS=Bacillus cereus...  113     3e-33
+sp|B7JK37|Y3964_BACC0 UPF0358 protein BCAH820_3964 OS=Bacillus ce...  113     3e-33
+sp|B9IW28|Y3737_BACCQ UPF0358 protein BCQ_3737 OS=Bacillus cereus...  113     3e-33
+sp|Q635X7|Y3709_BACCZ UPF0358 protein BCE33L3709 OS=Bacillus cere...  113     3e-33
+sp|Q6HEL5|Y3692_BACHK UPF0358 protein BT9727_3692 OS=Bacillus thu...  113     3e-33
+sp|A0RHW7|Y3577_BACAH UPF0358 protein BALH_3577 OS=Bacillus thuri...  113     3e-33
+sp|Q4L5C6|Y1840_STAHJ UPF0358 protein SH1840 OS=Staphylococcus ha...  112     5e-33
+sp|C3LI15|Y4202_BACAC UPF0358 protein BAMEG_4202 OS=Bacillus anth...  111     6e-33
+sp|C3P6V6|Y4184_BACAA UPF0358 protein BAA_4184 OS=Bacillus anthra...  111     6e-33
+sp|Q81MT5|Y4159_BACAN UPF0358 protein BA_4159/GBAA_4159/BAS3861 O...  111     6e-33
+sp|A7GRX7|Y2651_BACCN UPF0358 protein Bcer98_2651 OS=Bacillus cyt...  110     2e-32
+sp|Q8CT04|Y811_STAES UPF0358 protein SE_0811 OS=Staphylococcus ep...  110     2e-32
+sp|Q5HQ56|Y701_STAEQ UPF0358 protein SERP0701 OS=Staphylococcus e...  110     2e-32
+sp|B1HPU6|Y1390_LYSSC UPF0358 protein Bsph_1390 OS=Lysinibacillus...  109     5e-32
+sp|Q7A161|Y995_STAAW UPF0358 protein MW0995 OS=Staphylococcus aur...  109     7e-32
+sp|A6QFW7|Y977_STAAE UPF0358 protein NWMN_0977 OS=Staphylococcus ...  109     7e-32
+sp|Q7A668|Y961_STAAN UPF0358 protein SA0961 OS=Staphylococcus aur...  109     7e-32
+sp|A6U0T0|Y1194_STAA2 UPF0358 protein SaurJH1_1194 OS=Staphylococ...  109     7e-32
+sp|A5IRZ9|Y1172_STAA9 UPF0358 protein SaurJH9_1172 OS=Staphylococ...  109     7e-32
+sp|Q5HGX2|Y1121_STAAC UPF0358 protein SACOL1121 OS=Staphylococcus...  109     7e-32
+sp|Q99UZ0|Y1112_STAAM UPF0358 protein SAV1112 OS=Staphylococcus a...  109     7e-32
+sp|A7X122|Y1104_STAA1 UPF0358 protein SAHV_1104 OS=Staphylococcus...  109     7e-32
+sp|Q2G2C3|Y1062_STAA8 UPF0358 protein SAOUHSC_01062 OS=Staphyloco...  109     7e-32
+sp|A8Z1P7|Y1050_STAAT UPF0358 protein USA300HOU_1050 OS=Staphyloc...  109     7e-32
+sp|Q6GAA2|Y1047_STAAS UPF0358 protein SAS1047 OS=Staphylococcus a...  109     7e-32
+sp|Q2FHW8|Y1012_STAA3 UPF0358 protein SAUSA300_1012 OS=Staphyloco...  109     7e-32
+sp|B9DPV5|Y738_STACT UPF0358 protein Sca_0738 OS=Staphylococcus c...  108     1e-31
+sp|Q2YX63|Y977_STAAB UPF0358 protein SAB0977 OS=Staphylococcus au...  108     1e-31
+sp|Q6GHX3|Y1086_STAAR UPF0358 protein SAR1086 OS=Staphylococcus a...  108     1e-31
+sp|Q9K9L9|Y2626_BACHD UPF0358 protein BH2626 OS=Bacillus halodura...  108     2e-31
+sp|Q49WN7|Y1677_STAS1 UPF0358 protein SSP1677 OS=Staphylococcus s...  107     3e-31
+sp|B1YJ65|Y1994_EXIS2 UPF0358 protein Exig_1994 OS=Exiguobacteriu...  107     3e-31
+sp|Q831P3|Y2458_ENTFA UPF0358 protein EF_2458 OS=Enterococcus fae...  108     3e-31
+sp|Q8ER84|Y1428_OCEIH UPF0358 protein OB1428 OS=Oceanobacillus ih...  107     4e-31
+sp|C0ZBS0|Y2252_BREBN UPF0358 protein BBR47_22520 OS=Brevibacillu...  106     8e-31
+sp|Q92CW3|Y1058_LISIN UPF0358 protein lin1058 OS=Listeria innocua...  106     9e-31
+sp|Q721A0|Y1087_LISMF UPF0358 protein LMOf2365_1087 OS=Listeria m...  106     1e-30
+sp|C1L1Y7|Y1086_LISMC UPF0358 protein Lm4b_01086 OS=Listeria mono...  106     1e-30
+sp|Q8Y848|Y1070_LISMO UPF0358 protein lmo1070 OS=Listeria monocyt...  106     1e-30
+sp|B8DCE2|Y1561_LISMH UPF0358 protein LMHCC_1561 OS=Listeria mono...  106     1e-30
+sp|A0AHI4|Y1048_LISW6 UPF0358 protein lwe1048 OS=Listeria welshim...  106     2e-30
+sp|Q5WFC9|Y2396_BACSK UPF0358 protein ABC2396 OS=Bacillus clausii...  100     2e-28
+sp|Q38WQ2|Y1078_LACSS UPF0358 protein LCA_1078 OS=Lactobacillus s...  90.0    3e-24
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|B7GGM5|Y1873_ANOFW UPF0358 protein Aflv_1873 OS=Anoxybacillus 
+flavithermus (strain DSM 21510 / WK1) OX=491915 GN=Aflv_1873 
+PE=3 SV=1
+Length=96
+
+ Score = 116 bits (292),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 34/75 (45%), Positives = 52/75 (69%), Gaps = 0/75 (0%)
+
+Query  7   KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTN  66
+           ++ A  LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR++ +A RLG++  
+Sbjct  10  RERAYSLLQADAEKIVKLIQVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVDE  69
+
+Query  67  DEGHRLLSDLERELN  81
+            +G  +L  LEREL+
+Sbjct  70  KDGKAILDRLERELS  84
+
+
+>sp|O07638|YLAN_BACSU UPF0358 protein YlaN OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=ylaN PE=1 SV=1
+Length=93
+
+ Score = 116 bits (291),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 36/76 (47%), Positives = 54/76 (71%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A +LL+ DAE+I  LIR Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++ 
+Sbjct  9   HRQKAFELLKVDAEKILKLIRVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVD  68
+
+Query  66  NDEGHRLLSDLERELN  81
+             +G  LL  LEREL+
+Sbjct  69  EKDGKDLLYTLERELS  84
+
+
+>sp|A7Z4A7|Y1470_BACVZ UPF0358 protein RBAM_014700 OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=RBAM_014700 PE=3 SV=1
+Length=93
+
+ Score = 116 bits (290),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 36/76 (47%), Positives = 55/76 (72%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A +LL+ DAE+I  LIR Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++ 
+Sbjct  9   HQQKAFELLKLDAEKILKLIRVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVD  68
+
+Query  66  NDEGHRLLSDLERELN  81
+            ++G  LL  LEREL+
+Sbjct  69  ENDGKELLDRLERELS  84
+
+
+>sp|Q65K17|Y1701_BACLD UPF0358 protein BLi01701/BL02974 OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / 
+NBRC 12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=BLi01701 PE=3 SV=1
+Length=93
+
+ Score = 116 bits (290),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 35/76 (46%), Positives = 55/76 (72%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A+ LL+ DA++I  LI+ Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++ 
+Sbjct  9   HREKALALLKRDADKILKLIQVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVD  68
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG  LL  LEREL+
+Sbjct  69  EEEGKELLYRLERELS  84
+
+
+>sp|Q5L118|Y1077_GEOKA UPF0358 protein GK1077 OS=Geobacillus kaustophilus 
+(strain HTA426) OX=235909 GN=GK1077 PE=3 SV=1
+Length=95
+
+ Score = 115 bits (288),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 39/81 (48%), Positives = 56/81 (69%), Gaps = 1/81 (1%)
+
+Query  2   DEGIS-KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           DE +S ++ A  LL+ DAE+I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A R
+Sbjct  3   DESMSYREKAYALLQADAEKIIQLIRVQMDHLTMPQCPVYEEVLDTQMFGLSREIDFAVR  62
+
+Query  61  LGILTNDEGHRLLSDLERELN  81
+           LG++   +G  LL  LEREL+
+Sbjct  63  LGLVEAKDGKALLDRLERELS  83
+
+
+>sp|A4ILW6|Y942_GEOTN UPF0358 protein GTNG_0942 OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=GTNG_0942 
+PE=3 SV=1
+Length=95
+
+ Score = 113 bits (284),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 40/81 (49%), Positives = 56/81 (69%), Gaps = 1/81 (1%)
+
+Query  2   DEGIS-KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           DE +S ++ A  LL+ DAE+I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A R
+Sbjct  3   DESMSYQEKAYALLQADAEKIIQLIRVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVR  62
+
+Query  61  LGILTNDEGHRLLSDLERELN  81
+           LG++   EG  LL  LEREL+
+Sbjct  63  LGLIEAKEGKALLDRLERELS  83
+
+
+>sp|Q732B8|Y3996_BACC1 UPF0358 protein BCE_3996 OS=Bacillus cereus 
+(strain ATCC 10987 / NRS 248) OX=222523 GN=BCE_3996 PE=3 
+SV=1
+Length=95
+
+ Score = 113 bits (284),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 56/78 (72%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           ++ ++G  +L +LEREL+
+Sbjct  67  ISEEQGKAMLGELERELS  84
+
+
+>sp|A9VUB0|Y3775_BACMK UPF0358 protein BcerKBAB4_3775 OS=Bacillus 
+mycoides (strain KBAB4) OX=315730 GN=BcerKBAB4_3775 PE=3 
+SV=1
+Length=95
+
+ Score = 113 bits (284),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 56/78 (72%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q ++L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDNLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IGEEQGKAMLGELERELS  84
+
+
+>sp|A8FCU1|Y1375_BACP2 UPF0358 protein BPUM_1375 OS=Bacillus pumilus 
+(strain SAFR-032) OX=315750 GN=BPUM_1375 PE=3 SV=1
+Length=93
+
+ Score = 113 bits (283),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 35/76 (46%), Positives = 55/76 (72%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A+ LL+ DA++I  LI+ Q ++L + QC  +EEV+DTQM+G SR++ +A RLG++ 
+Sbjct  9   HRQKALALLKLDADKILKLIQVQMDNLTMPQCPLYEEVLDTQMFGLSREIDFAVRLGLVD  68
+
+Query  66  NDEGHRLLSDLERELN  81
+             EG +LL  LEREL+
+Sbjct  69  QHEGKKLLDKLERELS  84
+
+
+>sp|B7H6T6|Y4052_BACC4 UPF0358 protein BCB4264_A4052 OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=BCB4264_A4052 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   ANHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|Q819M7|Y3949_BACCR UPF0358 protein BC_3949 OS=Bacillus cereus 
+(strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 / NCIMB 
+9373 / NRRL B-3711) OX=226900 GN=BC_3949 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   ANHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|B7IVI6|Y1188_BACC2 UPF0358 protein BCG9842_B1188 OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=BCG9842_B1188 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   ANHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|B7HMD4|Y4068_BACC7 UPF0358 protein BCAH187_A4068 OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=BCAH187_A4068 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|C1EPW3|Y4054_BACC3 UPF0358 protein BCA_4054 OS=Bacillus cereus 
+(strain 03BB102) OX=572264 GN=BCA_4054 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|B7JK37|Y3964_BACC0 UPF0358 protein BCAH820_3964 OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=BCAH820_3964 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|B9IW28|Y3737_BACCQ UPF0358 protein BCQ_3737 OS=Bacillus cereus 
+(strain Q1) OX=361100 GN=BCQ_3737 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|Q635X7|Y3709_BACCZ UPF0358 protein BCE33L3709 OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=BCE33L3709 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|Q6HEL5|Y3692_BACHK UPF0358 protein BT9727_3692 OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=BT9727_3692 
+PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|A0RHW7|Y3577_BACAH UPF0358 protein BALH_3577 OS=Bacillus thuringiensis 
+(strain Al Hakam) OX=412694 GN=BALH_3577 PE=3 SV=1
+Length=95
+
+ Score = 113 bits (282),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKAMLGELERELS  84
+
+
+>sp|Q4L5C6|Y1840_STAHJ UPF0358 protein SH1840 OS=Staphylococcus 
+haemolyticus (strain JCSC1435) OX=279808 GN=SH1840 PE=3 SV=1
+Length=92
+
+ Score = 112 bits (280),  Expect = 5e-33, Method: Composition-based stats.
+ Identities = 29/80 (36%), Positives = 51/80 (64%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +      A + L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QSKMSNVAYEQLNQDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G  L+  LE+EL++
+Sbjct  64  LVDKEDGKNLMLRLEKELSK  83
+
+
+>sp|C3LI15|Y4202_BACAC UPF0358 protein BAMEG_4202 OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=BAMEG_4202 
+PE=3 SV=1
+Length=95
+
+ Score = 111 bits (279),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKVMLGELERELS  84
+
+
+>sp|C3P6V6|Y4184_BACAA UPF0358 protein BAA_4184 OS=Bacillus anthracis 
+(strain A0248) OX=592021 GN=BAA_4184 PE=3 SV=1
+Length=95
+
+ Score = 111 bits (279),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKVMLGELERELS  84
+
+
+>sp|Q81MT5|Y4159_BACAN UPF0358 protein BA_4159/GBAA_4159/BAS3861 
+OS=Bacillus anthracis OX=1392 GN=BA_4159 PE=3 SV=1
+Length=95
+
+ Score = 111 bits (279),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 35/78 (45%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+              ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RLG+
+Sbjct  7   SNHQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLGL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +  ++G  +L +LEREL+
+Sbjct  67  IAEEQGKVMLGELERELS  84
+
+
+>sp|A7GRX7|Y2651_BACCN UPF0358 protein Bcer98_2651 OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 391-98) 
+OX=315749 GN=Bcer98_2651 PE=3 SV=1
+Length=94
+
+ Score = 110 bits (276),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 34/76 (45%), Positives = 55/76 (72%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A+ LL+ DAE+I  LI+ Q + L + QC  +EEV+DTQM+G SR+V +A RL +++
+Sbjct  9   HQEKALALLQADAEKILRLIKVQMDHLTMPQCPLYEEVLDTQMFGLSREVDFAVRLDLIS  68
+
+Query  66  NDEGHRLLSDLERELN  81
+            ++G  +L +LEREL+
+Sbjct  69  EEQGKEMLGELERELS  84
+
+
+>sp|Q8CT04|Y811_STAES UPF0358 protein SE_0811 OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 GN=SE_0811 
+PE=3 SV=1
+Length=91
+
+ Score = 110 bits (276),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 29/81 (36%), Positives = 52/81 (64%), Gaps = 0/81 (0%)
+
+Query  2   DEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRL  61
+           ++      A   L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +L
+Sbjct  3   NQSKLNSAAYDQLNKDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVQL  62
+
+Query  62  GILTNDEGHRLLSDLERELNQ  82
+           G++  ++G +L+  LE+EL++
+Sbjct  63  GLVDKEDGKQLMLRLEKELSK  83
+
+
+>sp|Q5HQ56|Y701_STAEQ UPF0358 protein SERP0701 OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=SERP0701 
+PE=3 SV=1
+Length=91
+
+ Score = 110 bits (276),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 29/81 (36%), Positives = 52/81 (64%), Gaps = 0/81 (0%)
+
+Query  2   DEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRL  61
+           ++      A   L  DA+RI  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +L
+Sbjct  3   NQSKLNSAAYDQLNKDADRILHLIKVQMDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVQL  62
+
+Query  62  GILTNDEGHRLLSDLERELNQ  82
+           G++  ++G +L+  LE+EL++
+Sbjct  63  GLVDKEDGKQLMLRLEKELSK  83
+
+
+>sp|B1HPU6|Y1390_LYSSC UPF0358 protein Bsph_1390 OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=Bsph_1390 PE=3 SV=1
+Length=93
+
+ Score = 109 bits (273),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 32/79 (41%), Positives = 55/79 (70%), Gaps = 0/79 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   ++ A++LL  DA++I  LIR Q + L + QC  +EEV+DTQM+G SR++ +A +LG
+Sbjct  6   QTSFQEKALELLIADADKIARLIRVQMDHLTMPQCPLYEEVLDTQMFGLSREIDFAVKLG  65
+
+Query  63  ILTNDEGHRLLSDLERELN  81
+           ++  ++G  +L  LE+EL+
+Sbjct  66  LIEREKGKEILDSLEKELS  84
+
+
+>sp|Q7A161|Y995_STAAW UPF0358 protein MW0995 OS=Staphylococcus 
+aureus (strain MW2) OX=196620 GN=MW0995 PE=1 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A6QFW7|Y977_STAAE UPF0358 protein NWMN_0977 OS=Staphylococcus 
+aureus (strain Newman) OX=426430 GN=NWMN_0977 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q7A668|Y961_STAAN UPF0358 protein SA0961 OS=Staphylococcus 
+aureus (strain N315) OX=158879 GN=SA0961 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A6U0T0|Y1194_STAA2 UPF0358 protein SaurJH1_1194 OS=Staphylococcus 
+aureus (strain JH1) OX=359787 GN=SaurJH1_1194 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A5IRZ9|Y1172_STAA9 UPF0358 protein SaurJH9_1172 OS=Staphylococcus 
+aureus (strain JH9) OX=359786 GN=SaurJH9_1172 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q5HGX2|Y1121_STAAC UPF0358 protein SACOL1121 OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=SACOL1121 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q99UZ0|Y1112_STAAM UPF0358 protein SAV1112 OS=Staphylococcus 
+aureus (strain Mu50 / ATCC 700699) OX=158878 GN=SAV1112 PE=3 
+SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A7X122|Y1104_STAA1 UPF0358 protein SAHV_1104 OS=Staphylococcus 
+aureus (strain Mu3 / ATCC 700698) OX=418127 GN=SAHV_1104 
+PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q2G2C3|Y1062_STAA8 UPF0358 protein SAOUHSC_01062 OS=Staphylococcus 
+aureus (strain NCTC 8325 / PS 47) OX=93061 GN=SAOUHSC_01062 
+PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|A8Z1P7|Y1050_STAAT UPF0358 protein USA300HOU_1050 OS=Staphylococcus 
+aureus (strain USA300 / TCH1516) OX=451516 GN=USA300HOU_1050 
+PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q6GAA2|Y1047_STAAS UPF0358 protein SAS1047 OS=Staphylococcus 
+aureus (strain MSSA476) OX=282459 GN=SAS1047 PE=3 SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q2FHW8|Y1012_STAA3 UPF0358 protein SAUSA300_1012 OS=Staphylococcus 
+aureus (strain USA300) OX=367830 GN=SAUSA300_1012 PE=3 
+SV=1
+Length=91
+
+ Score = 109 bits (272),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QATMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|B9DPV5|Y738_STACT UPF0358 protein Sca_0738 OS=Staphylococcus 
+carnosus (strain TM300) OX=396513 GN=Sca_0738 PE=3 SV=1
+Length=91
+
+ Score = 108 bits (271),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 29/75 (39%), Positives = 48/75 (64%), Gaps = 0/75 (0%)
+
+Query  8   KFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTND  67
+             A   L  DA+RI  LI+ Q ++L + QC  +EEV+DTQM+G  ++V +A  LG++  +
+Sbjct  9   NAAYDQLNKDADRILQLIKVQMDNLTLPQCPLYEEVLDTQMFGLQKEVDFAANLGLIDIE  68
+
+Query  68  EGHRLLSDLERELNQ  82
+            G  ++  LE+EL++
+Sbjct  69  MGKEIMLRLEKELSK  83
+
+
+>sp|Q2YX63|Y977_STAAB UPF0358 protein SAB0977 OS=Staphylococcus 
+aureus (strain bovine RF122 / ET3-1) OX=273036 GN=SAB0977 
+PE=3 SV=1
+Length=91
+
+ Score = 108 bits (270),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QTTMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q6GHX3|Y1086_STAAR UPF0358 protein SAR1086 OS=Staphylococcus 
+aureus (strain MRSA252) OX=282458 GN=SAR1086 PE=3 SV=1
+Length=91
+
+ Score = 108 bits (270),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 28/80 (35%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  3   EGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLG  62
+           +   K  A++ L  DA+ I  LI+ Q ++L +  C  +EEV+DTQM+G  ++V +A +LG
+Sbjct  4   QTTMKNAALKQLTKDADEILHLIKVQLDNLTLPSCPLYEEVLDTQMFGLQKEVDFAVKLG  63
+
+Query  63  ILTNDEGHRLLSDLERELNQ  82
+           ++  ++G +++  LE+EL++
+Sbjct  64  LVDREDGKQIMLRLEKELSK  83
+
+
+>sp|Q9K9L9|Y2626_BACHD UPF0358 protein BH2626 OS=Bacillus halodurans 
+(strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 
+/ C-125) OX=272558 GN=BH2626 PE=3 SV=1
+Length=93
+
+ Score = 108 bits (269),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 34/76 (45%), Positives = 53/76 (70%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+             + A  LL+ DAE+I+ LI  Q  +L + QC  +EEV+DTQM+G SR++ +A RL ++ 
+Sbjct  9   HNEKAYALLKSDAEKIRKLIEVQLENLTMPQCPLYEEVLDTQMFGLSREIDFAIRLELID  68
+
+Query  66  NDEGHRLLSDLERELN  81
+            ++G +LLS+LER+L 
+Sbjct  69  EEQGKQLLSELERKLA  84
+
+
+>sp|Q49WN7|Y1677_STAS1 UPF0358 protein SSP1677 OS=Staphylococcus 
+saprophyticus subsp. saprophyticus (strain ATCC 15305 / DSM 
+20229 / NCIMB 8711 / NCTC 7292 / S-41) OX=342451 GN=SSP1677 
+PE=3 SV=1
+Length=91
+
+ Score = 107 bits (268),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 30/75 (40%), Positives = 49/75 (65%), Gaps = 0/75 (0%)
+
+Query  8   KFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTND  67
+             A   L  DA+RI  LI+ Q ++L + QC  +EEV+DTQM+G  ++V +A +LG++  +
+Sbjct  9   NAAYDQLNKDADRILQLIKVQMDNLTLPQCPLYEEVLDTQMFGLQKEVDFAVQLGLVDRE  68
+
+Query  68  EGHRLLSDLERELNQ  82
+            G  L+  LE+EL++
+Sbjct  69  VGKDLMLRLEKELSK  83
+
+
+>sp|B1YJ65|Y1994_EXIS2 UPF0358 protein Exig_1994 OS=Exiguobacterium 
+sibiricum (strain DSM 17290 / CIP 109462 / JCM 13490 / 
+255-15) OX=262543 GN=Exig_1994 PE=3 SV=1
+Length=92
+
+ Score = 107 bits (268),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 33/78 (42%), Positives = 54/78 (69%), Gaps = 0/78 (0%)
+
+Query  4   GISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGI  63
+            + ++ A++LLE D+ +I+ LI  Q  +L + QC  +EEV+DTQM+G SRQ+ +A RL +
+Sbjct  7   TVHRQRALELLEADSHKIRRLIEVQLANLTMPQCPLYEEVLDTQMFGLSRQIDFAVRLEL  66
+
+Query  64  LTNDEGHRLLSDLERELN  81
+           +   EG +LL  LE++L+
+Sbjct  67  IDASEGKQLLDSLEQQLS  84
+
+
+>sp|Q831P3|Y2458_ENTFA UPF0358 protein EF_2458 OS=Enterococcus 
+faecalis (strain ATCC 700802 / V583) OX=226185 GN=EF_2458 PE=1 
+SV=1
+Length=101
+
+ Score = 108 bits (269),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1   MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+           MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR
+Sbjct  1   MDEGISKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATR  60
+
+Query  61  LGILTNDEGHRLLSDLERELNQ  82
+           LGILTNDEGHRLLSDLERELNQ
+Sbjct  61  LGILTNDEGHRLLSDLERELNQ  82
+
+
+>sp|Q8ER84|Y1428_OCEIH UPF0358 protein OB1428 OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 
+3954 / HTE831) OX=221109 GN=OB1428 PE=3 SV=1
+Length=93
+
+ Score = 107 bits (267),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 33/76 (43%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A  LL+ DA++I  LI  Q  +L + QC  +E+V+DTQMYG SR++ +A RL +++
+Sbjct  8   HREKAHALLKADADKILRLIEVQIENLTMPQCPVYEDVLDTQMYGLSREIDFAVRLELIS  67
+
+Query  66  NDEGHRLLSDLERELN  81
+             EG  LL +LE++LN
+Sbjct  68  EIEGKALLENLEKKLN  83
+
+
+>sp|C0ZBS0|Y2252_BREBN UPF0358 protein BBR47_22520 OS=Brevibacillus 
+brevis (strain 47 / JCM 6285 / NBRC 100599) OX=358681 
+GN=BBR47_22520 PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 8e-31, Method: Composition-based stats.
+ Identities = 34/75 (45%), Positives = 53/75 (71%), Gaps = 0/75 (0%)
+
+Query  7   KKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTN  66
+           ++ A+ LL+ DA++I  LI  Q  +L + QC  +EEV+DTQM+G SR+V YA RLG++++
+Sbjct  10  EQKALALLQADADKIYKLIDVQMENLTMPQCPLYEEVLDTQMFGLSREVEYAVRLGLISD  69
+
+Query  67  DEGHRLLSDLERELN  81
+           D G  ++  LER+L 
+Sbjct  70  DIGREIMGSLERKLA  84
+
+
+>sp|Q92CW3|Y1058_LISIN UPF0358 protein lin1058 OS=Listeria innocua 
+serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=lin1058 PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 9e-31, Method: Composition-based stats.
+ Identities = 39/76 (51%), Positives = 60/76 (79%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ AI+LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAIELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG +L+S LE+EL+
+Sbjct  68  PEEGKKLISTLEKELS  83
+
+
+>sp|Q721A0|Y1087_LISMF UPF0358 protein LMOf2365_1087 OS=Listeria 
+monocytogenes serotype 4b (strain F2365) OX=265669 GN=LMOf2365_1087 
+PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 38/76 (50%), Positives = 60/76 (79%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG +L+S LE+EL+
+Sbjct  68  PEEGKKLMSTLEKELS  83
+
+
+>sp|C1L1Y7|Y1086_LISMC UPF0358 protein Lm4b_01086 OS=Listeria 
+monocytogenes serotype 4b (strain CLIP80459) OX=568819 GN=Lm4b_01086 
+PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 38/76 (50%), Positives = 60/76 (79%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG +L+S LE+EL+
+Sbjct  68  PEEGKKLMSTLEKELS  83
+
+
+>sp|Q8Y848|Y1070_LISMO UPF0358 protein lmo1070 OS=Listeria monocytogenes 
+serovar 1/2a (strain ATCC BAA-679 / EGD-e) OX=169963 
+GN=lmo1070 PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 38/76 (50%), Positives = 60/76 (79%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG +L+S LE+EL+
+Sbjct  68  PEEGKKLMSTLEKELS  83
+
+
+>sp|B8DCE2|Y1561_LISMH UPF0358 protein LMHCC_1561 OS=Listeria 
+monocytogenes serotype 4a (strain HCC23) OX=552536 GN=LMHCC_1561 
+PE=3 SV=1
+Length=93
+
+ Score = 106 bits (265),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 38/76 (50%), Positives = 60/76 (79%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG +L+S LE+EL+
+Sbjct  68  PEEGKKLMSTLEKELS  83
+
+
+>sp|A0AHI4|Y1048_LISW6 UPF0358 protein lwe1048 OS=Listeria welshimeri 
+serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=lwe1048 PE=3 SV=1
+Length=93
+
+ Score = 106 bits (264),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 38/76 (50%), Positives = 59/76 (78%), Gaps = 0/76 (0%)
+
+Query  6   SKKFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILT  65
+            ++ A++LL+ DA+RI  LI+ Q ++L + QC A+EEV+DTQMYG SR++ +ATRLG++ 
+Sbjct  8   HREEAVELLKQDAKRILQLIKVQMDNLTLPQCPAYEEVLDTQMYGLSREINFATRLGLIE  67
+
+Query  66  NDEGHRLLSDLERELN  81
+            +EG  L+S LE+EL+
+Sbjct  68  PEEGKNLISALEKELS  83
+
+
+>sp|Q5WFC9|Y2396_BACSK UPF0358 protein ABC2396 OS=Bacillus clausii 
+(strain KSM-K16) OX=66692 GN=ABC2396 PE=3 SV=1
+Length=93
+
+ Score = 100 bits (250),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 32/74 (43%), Positives = 52/74 (70%), Gaps = 0/74 (0%)
+
+Query  8   KFAIQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTND  67
+           + A  LL+ DAE+I+ LI  Q  +L + QC  +EEV+DT+M+G SR++ +A RL ++  +
+Sbjct  11  EKAYALLQADAEKIQKLIEVQLENLTMPQCPLYEEVLDTRMFGLSREIDFAIRLELVEEE  70
+
+Query  68  EGHRLLSDLERELN  81
+           +G  +LS+LER+L 
+Sbjct  71  KGKMILSELERKLA  84
+
+
+>sp|Q38WQ2|Y1078_LACSS UPF0358 protein LCA_1078 OS=Lactobacillus 
+sakei subsp. sakei (strain 23K) OX=314315 GN=LCA_1078 PE=3 
+SV=1
+Length=98
+
+ Score = 90.0 bits (222),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 28/72 (39%), Positives = 53/72 (74%), Gaps = 0/72 (0%)
+
+Query  11  IQLLEDDAERIKMLIRNQKNSLCISQCKAFEEVVDTQMYGFSRQVTYATRLGILTNDEGH  70
+              L+ DA +I+ L+  Q ++LC+SQC   EE++DTQ++GF+++V +A R+ ++++ EG 
+Sbjct  10  YMTLKSDAAKIEALLTKQFDALCLSQCPIIEEIIDTQLFGFTKEVDFAKRVRLISDQEGS  69
+
+Query  71  RLLSDLERELNQ  82
+           +L+++LE  +NQ
+Sbjct  70  QLVNELETRINQ  81
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.148    0.411    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0453    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

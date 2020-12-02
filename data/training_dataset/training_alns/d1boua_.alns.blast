@@ -1,0 +1,167 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1boua_
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P22635|PCYA_SPHSK Protocatechuate 4,5-dioxygenase alpha chain ...  274     1e-95
+sp|Q88JX5|GALA_PSEPK Gallate dioxygenase OS=Pseudomonas putida (s...  48.1    3e-06
+
+
+>sp|P22635|PCYA_SPHSK Protocatechuate 4,5-dioxygenase alpha chain 
+OS=Sphingobium sp. (strain NBRC 103272 / SYK-6) OX=627192 
+GN=ligA PE=1 SV=1
+Length=139
+
+ Score = 274 bits (700),  Expect = 1e-95, Method: Compositional matrix adjust.
+ Identities = 132/132 (100%), Positives = 132/132 (100%), Gaps = 0/132 (0%)
+
+Query  1    IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT  60
+            IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT
+Sbjct  8    IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT  67
+
+Query  61   PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR  120
+            PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR
+Sbjct  68   PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR  127
+
+Query  121  SPAGVRSIKGGY  132
+            SPAGVRSIKGGY
+Sbjct  128  SPAGVRSIKGGY  139
+
+
+>sp|Q88JX5|GALA_PSEPK Gallate dioxygenase OS=Pseudomonas putida 
+(strain ATCC 47054 / DSM 6125 / NCIMB 11950 / KT2440) OX=160488 
+GN=galA PE=1 SV=1
+Length=340
+
+ Score = 48.1 bits (113),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 30/105 (29%), Positives = 53/105 (50%), Gaps = 0/105 (0%)
+
+Query  7    LAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLTPAAKAA  66
+            LA  + + GT  +T +R+ KGY LN+F   +++ + R+RF ++  A   E  L+      
+Sbjct  218  LAGAEQLEGTYPYTLERSAKGYRLNKFLHRMIEPQWRQRFLSEPEALYREAGLSEEESDL  277
+
+Query  67   VLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEY  111
+            +  RD+  +I  G   + L KL +  G S      +M G + E++
+Sbjct  278  LRRRDWRGLIHYGVIFFVLEKLGAVLGVSNLDIYAAMRGQSIEDF  322
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+Results from round 2
+
+
+Query= d1boua_
+
+Length=132
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P22635|PCYA_SPHSK Protocatechuate 4,5-dioxygenase alpha chain ...  214     6e-72
+sp|Q88JX5|GALA_PSEPK Gallate dioxygenase OS=Pseudomonas putida (s...  176     2e-54
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P22635|PCYA_SPHSK Protocatechuate 4,5-dioxygenase alpha chain 
+OS=Sphingobium sp. (strain NBRC 103272 / SYK-6) OX=627192 
+GN=ligA PE=1 SV=1
+Length=139
+
+ Score = 214 bits (545),  Expect = 6e-72, Method: Composition-based stats.
+ Identities = 132/132 (100%), Positives = 132/132 (100%), Gaps = 0/132 (0%)
+
+Query  1    IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT  60
+            IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT
+Sbjct  8    IDVHAYLAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLT  67
+
+Query  61   PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR  120
+            PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR
+Sbjct  68   PAAKAAVLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQMMIDGGR  127
+
+Query  121  SPAGVRSIKGGY  132
+            SPAGVRSIKGGY
+Sbjct  128  SPAGVRSIKGGY  139
+
+
+>sp|Q88JX5|GALA_PSEPK Gallate dioxygenase OS=Pseudomonas putida 
+(strain ATCC 47054 / DSM 6125 / NCIMB 11950 / KT2440) OX=160488 
+GN=galA PE=1 SV=1
+Length=340
+
+ Score = 176 bits (446),  Expect = 2e-54, Method: Composition-based stats.
+ Identities = 30/107 (28%), Positives = 54/107 (50%), Gaps = 0/107 (0%)
+
+Query  7    LAEFDDIPGTRVFTAQRARKGYNLNQFAMSLMKAENRERFKADESAYLDEWNLTPAAKAA  66
+            LA  + + GT  +T +R+ KGY LN+F   +++ + R+RF ++  A   E  L+      
+Sbjct  218  LAGAEQLEGTYPYTLERSAKGYRLNKFLHRMIEPQWRQRFLSEPEALYREAGLSEEESDL  277
+
+Query  67   VLARDYNAMIDEGGNVYFLSKLFSTDGKSFQFAAGSMTGMTQEEYAQ  113
+            +  RD+  +I  G   + L KL +  G S      +M G + E++ +
+Sbjct  278  LRRRDWRGLIHYGVIFFVLEKLGAVLGVSNLDIYAAMRGQSIEDFMK  324
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.354    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0412    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5018979020
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

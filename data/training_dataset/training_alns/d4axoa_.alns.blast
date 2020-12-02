@@ -1,0 +1,170 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d4axoa_
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9ZFV5|EUTQ_SALTY Ethanolamine utilization protein EutQ OS=Sal...  91.7    1e-22
+sp|P76555|EUTQ_ECOLI Ethanolamine utilization protein EutQ OS=Esc...  88.6    2e-21
+sp|Q1D375|YBEY_MYXXD Endoribonuclease YbeY OS=Myxococcus xanthus ...  38.1    0.009
+
+
+>sp|Q9ZFV5|EUTQ_SALTY Ethanolamine utilization protein EutQ OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=eutQ PE=1 SV=1
+Length=229
+
+ Score = 91.7 bits (226),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 42/98 (43%), Positives = 59/98 (60%), Gaps = 1/98 (1%)
+
+Query  29   RLDTGNPSDVVYTKDLFTLEESPRLGCGMMEMKETTFDWTLNYDEIDYVIDGTLDIIIDG  88
+            R D   P  V  T DL T ++   +  G M+     F WTLNYDEID V++G L +  +G
+Sbjct  130  RFDGAEPHCVGLT-DLVTEQDGSSMAAGFMQWDNAFFPWTLNYDEIDMVLEGELHVRHEG  188
+
+Query  89   RKVSASSGELIFIPKGSKIQFSVPDYARFIYVTYPADW  126
+              + A +G+++FIPKGS I+F  P   RF+YV +PA+W
+Sbjct  189  ETMIAKAGDVMFIPKGSSIEFGTPTSVRFLYVAWPANW  226
+
+
+>sp|P76555|EUTQ_ECOLI Ethanolamine utilization protein EutQ OS=Escherichia 
+coli (strain K12) OX=83333 GN=eutQ PE=1 SV=1
+Length=233
+
+ Score = 88.6 bits (218),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 44/118 (37%), Positives = 68/118 (58%), Gaps = 1/118 (1%)
+
+Query  9    KDISGITSIKLPTVKVSESDRLDTGNPSDVVYTKDLFTLEESPRLGCGMMEMKETTFDWT  68
+            K ++G   IK+      +  R D   P  V  T DL T ++   +  G M+ +   F WT
+Sbjct  114  KSVTGKGGIKVIDGSSVKFGRFDGAEPHCVGLT-DLVTGDDGSSMAAGFMQWENAFFPWT  172
+
+Query  69   LNYDEIDYVIDGTLDIIIDGRKVSASSGELIFIPKGSKIQFSVPDYARFIYVTYPADW  126
+            LNYDEID V++G L +  +G+ + A +G+++FIPKGS I+F      +F+YV +PA+W
+Sbjct  173  LNYDEIDMVLEGELHVRHEGQTMIAKAGDVMFIPKGSSIEFGTTSSVKFLYVAWPANW  230
+
+
+>sp|Q1D375|YBEY_MYXXD Endoribonuclease YbeY OS=Myxococcus xanthus 
+(strain DK 1622) OX=246197 GN=ybeY PE=3 SV=1
+Length=294
+
+ Score = 38.1 bits (87),  Expect = 0.009, Method: Compositional matrix adjust.
+ Identities = 13/40 (33%), Positives = 27/40 (68%), Gaps = 0/40 (0%)
+
+Query  70   NYDEIDYVIDGTLDIIIDGRKVSASSGELIFIPKGSKIQF  109
+             +DE+  V+ G L I+++GR+   S+GE+  +P+G ++ +
+Sbjct  59   EFDEVVIVLTGELTIVVEGRRERISAGEVGLVPRGKRVVY  98
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.138    0.409    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 2
+
+
+Query= d4axoa_
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9ZFV5|EUTQ_SALTY Ethanolamine utilization protein EutQ OS=Sal...  217     9e-72
+sp|P76555|EUTQ_ECOLI Ethanolamine utilization protein EutQ OS=Esc...  214     9e-71
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q9ZFV5|EUTQ_SALTY Ethanolamine utilization protein EutQ OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=eutQ PE=1 SV=1
+Length=229
+
+ Score = 217 bits (552),  Expect = 9e-72, Method: Composition-based stats.
+ Identities = 44/117 (38%), Positives = 66/117 (56%), Gaps = 1/117 (1%)
+
+Query  10   DISGITSIKLPTVKVSESDRLDTGNPSDVVYTKDLFTLEESPRLGCGMMEMKETTFDWTL  69
+             ++G   +K+      +  R D   P  V  T DL T ++   +  G M+     F WTL
+Sbjct  111  SVTGKGGVKVIDGSSVKFGRFDGAEPHCVGLT-DLVTEQDGSSMAAGFMQWDNAFFPWTL  169
+
+Query  70   NYDEIDYVIDGTLDIIIDGRKVSASSGELIFIPKGSKIQFSVPDYARFIYVTYPADW  126
+            NYDEID V++G L +  +G  + A +G+++FIPKGS I+F  P   RF+YV +PA+W
+Sbjct  170  NYDEIDMVLEGELHVRHEGETMIAKAGDVMFIPKGSSIEFGTPTSVRFLYVAWPANW  226
+
+
+>sp|P76555|EUTQ_ECOLI Ethanolamine utilization protein EutQ OS=Escherichia 
+coli (strain K12) OX=83333 GN=eutQ PE=1 SV=1
+Length=233
+
+ Score = 214 bits (545),  Expect = 9e-71, Method: Composition-based stats.
+ Identities = 44/118 (37%), Positives = 68/118 (58%), Gaps = 1/118 (1%)
+
+Query  9    KDISGITSIKLPTVKVSESDRLDTGNPSDVVYTKDLFTLEESPRLGCGMMEMKETTFDWT  68
+            K ++G   IK+      +  R D   P  V  T DL T ++   +  G M+ +   F WT
+Sbjct  114  KSVTGKGGIKVIDGSSVKFGRFDGAEPHCVGLT-DLVTGDDGSSMAAGFMQWENAFFPWT  172
+
+Query  69   LNYDEIDYVIDGTLDIIIDGRKVSASSGELIFIPKGSKIQFSVPDYARFIYVTYPADW  126
+            LNYDEID V++G L +  +G+ + A +G+++FIPKGS I+F      +F+YV +PA+W
+Sbjct  173  LNYDEIDMVLEGELHVRHEGQTMIAKAGDVMFIPKGSSIEFGTTSSVKFLYVAWPANW  230
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.136    0.391    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0415    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

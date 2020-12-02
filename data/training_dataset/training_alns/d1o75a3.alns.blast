@@ -1,0 +1,139 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1o75a3
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Trep...  381     2e-132
+
+
+>sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Treponema 
+pallidum (strain Nichols) OX=243276 GN=TP_0574 PE=1 
+SV=2
+Length=434
+
+ Score = 381 bits (978),  Expect = 2e-132, Method: Compositional matrix adjust.
+ Identities = 190/200 (95%), Positives = 190/200 (95%), Gaps = 9/200 (5%)
+
+Query  1    ETSYGYATLSYADYWAGELGQSRDVLLA---------DLDAGMFDAVSRATHGHGAFRQQ  51
+            ET YGYATLSYADYWAGELGQSRDVLLA         DLDAGMFDAVSRATHGHGAFRQQ
+Sbjct  26   ETHYGYATLSYADYWAGELGQSRDVLLAGNAEADRAGDLDAGMFDAVSRATHGHGAFRQQ  85
+
+Query  52   FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE  111
+            FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE
+Sbjct  86   FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE  145
+
+Query  112  GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT  171
+            GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT
+Sbjct  146  GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT  205
+
+Query  172  NGLKTMLTEDSFSARKVSSM  191
+            NGLKTMLTEDSFSARKVSSM
+Sbjct  206  NGLKTMLTEDSFSARKVSSM  225
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.128    0.358    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11223757120
+Results from round 2
+
+
+Query= d1o75a3
+
+Length=191
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Trep...  369     7e-128
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P29723|TA47_TREPA Putative DD-carboxypeptidase TP_0574 OS=Treponema 
+pallidum (strain Nichols) OX=243276 GN=TP_0574 PE=1 
+SV=2
+Length=434
+
+ Score = 369 bits (948),  Expect = 7e-128, Method: Composition-based stats.
+ Identities = 190/200 (95%), Positives = 190/200 (95%), Gaps = 9/200 (5%)
+
+Query  1    ETSYGYATLSYADYWAGELGQSRDVLLA---------DLDAGMFDAVSRATHGHGAFRQQ  51
+            ET YGYATLSYADYWAGELGQSRDVLLA         DLDAGMFDAVSRATHGHGAFRQQ
+Sbjct  26   ETHYGYATLSYADYWAGELGQSRDVLLAGNAEADRAGDLDAGMFDAVSRATHGHGAFRQQ  85
+
+Query  52   FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE  111
+            FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE
+Sbjct  86   FQYAVEVLGEKVLSKQETEDSRGRKKWEYETDPSVTKMVRASASFQDLGEDGEIKFEAVE  145
+
+Query  112  GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT  171
+            GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT
+Sbjct  146  GAVALADRASSFMVDSEEYKITNVKVHGMKFVPVAVPHELKGIAKEKFHFVEDSRVTENT  205
+
+Query  172  NGLKTMLTEDSFSARKVSSM  191
+            NGLKTMLTEDSFSARKVSSM
+Sbjct  206  NGLKTMLTEDSFSARKVSSM  225
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.130    0.362    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0398    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11223757120
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

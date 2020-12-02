@@ -1,0 +1,376 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3ci0k1
+
+Length=64
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio...  56.2    5e-10
+sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickey...  39.7    3e-04
+sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsi...  38.5    8e-04
+sp|P45762|GSPK_ECOLI Putative type II secretion system protein K ...  35.8    0.008
+
+
+>sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=epsK PE=3 SV=2
+Length=336
+
+ Score = 56.2 bits (134),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 29/70 (41%), Positives = 40/70 (57%), Gaps = 7/70 (10%)
+
+Query  2    QININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTK  54
+            ++N+NTL   Q+ +L A+F        A+ LL+ RP  GW  VD FLAQ  L  VD   +
+Sbjct  216  RLNVNTLPAEQAALLAAMFSPTLSPESAKTLLEGRPFDGWASVDDFLAQSALTGVDNAVR  275
+
+Query  55   KQLKTVLSVD  64
+            ++ K  LSVD
+Sbjct  276  EEAKKYLSVD  285
+
+
+>sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickeya 
+chrysanthemi OX=556 GN=outK PE=3 SV=2
+Length=354
+
+ Score = 39.7 bits (91),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 21/67 (31%), Positives = 35/67 (52%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            IN+NTL    + +L ALF        A  +LQQRP +GW +++ F+    L +  +   +
+Sbjct  245  INVNTLMPGSAPLLSALFMGDISLDMAERILQQRPPQGWRNLNDFMGMSALPESGKNGAR  304
+
+Query  56   QLKTVLS  62
+            Q+  + S
+Sbjct  305  QVLVIKS  311
+
+
+>sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsiella 
+pneumoniae OX=573 GN=pulK PE=3 SV=1
+Length=326
+
+ Score = 38.5 bits (88),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 25/56 (45%), Positives = 32/56 (57%), Gaps = 7/56 (13%)
+
+Query  2    QININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVD  50
+            Q+N+NTL   ++ +L ALF       +AR LLQ R A GW  V  FL+QP L   D
+Sbjct  215  QVNVNTLQPDRAALLAALFPAELTLVEARQLLQARAATGWSSVAAFLSQPALQKTD  270
+
+
+>sp|P45762|GSPK_ECOLI Putative type II secretion system protein 
+K OS=Escherichia coli (strain K12) OX=83333 GN=gspK PE=2 SV=1
+Length=327
+
+ Score = 35.8 bits (81),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 24/63 (38%), Positives = 30/63 (48%), Gaps = 16/63 (25%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFL---------AQPLL  46
+            IN+N L      +  ALF       DAR LLQ+RP +GW   D FL          +PL+
+Sbjct  216  INLNMLTENDIPLFRALFLNNITDADARVLLQKRPREGWLTTDAFLYWAQQDFSGVKPLV  275
+
+Query  47   ADV  49
+            A V
+Sbjct  276  AQV  278
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110787192
+Results from round 2
+
+
+Query= d3ci0k1
+
+Length=64
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio...  88.7    8e-22
+sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickey...  84.8    3e-20
+sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsi...  57.9    1e-10
+
+Sequences not found previously or not previously below threshold:
+
+sp|P31706|GSPK_PECCC Type II secretion system protein K OS=Pectob...  49.0    2e-07
+sp|P31760|GSPK_AERHY Type II secretion system protein K OS=Aeromo...  41.3    9e-05
+sp|P45762|GSPK_ECOLI Putative type II secretion system protein K ...  37.4    0.002
+
+
+>sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=epsK PE=3 SV=2
+Length=336
+
+ Score = 88.7 bits (218),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 29/70 (41%), Positives = 40/70 (57%), Gaps = 7/70 (10%)
+
+Query  2    QININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTK  54
+            ++N+NTL   Q+ +L A+F        A+ LL+ RP  GW  VD FLAQ  L  VD   +
+Sbjct  216  RLNVNTLPAEQAALLAAMFSPTLSPESAKTLLEGRPFDGWASVDDFLAQSALTGVDNAVR  275
+
+Query  55   KQLKTVLSVD  64
+            ++ K  LSVD
+Sbjct  276  EEAKKYLSVD  285
+
+
+>sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickeya 
+chrysanthemi OX=556 GN=outK PE=3 SV=2
+Length=354
+
+ Score = 84.8 bits (208),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 35/67 (52%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            IN+NTL    + +L ALF        A  +LQQRP +GW +++ F+    L +  +   +
+Sbjct  245  INVNTLMPGSAPLLSALFMGDISLDMAERILQQRPPQGWRNLNDFMGMSALPESGKNGAR  304
+
+Query  56   QLKTVLS  62
+            Q+  + S
+Sbjct  305  QVLVIKS  311
+
+
+>sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsiella 
+pneumoniae OX=573 GN=pulK PE=3 SV=1
+Length=326
+
+ Score = 57.9 bits (138),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 27/68 (40%), Positives = 35/68 (51%), Gaps = 7/68 (10%)
+
+Query  2    QININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTK  54
+            Q+N+NTL   ++ +L ALF       +AR LLQ R A GW  V  FL+QP L   D    
+Sbjct  215  QVNVNTLQPDRAALLAALFPAELTLVEARQLLQARAATGWSSVAAFLSQPALQKTDTAAA  274
+
+Query  55   KQLKTVLS  62
+            +    V S
+Sbjct  275  RPWLAVHS  282
+
+
+>sp|P31706|GSPK_PECCC Type II secretion system protein K OS=Pectobacterium 
+carotovorum subsp. carotovorum OX=555 GN=outK PE=3 
+SV=1
+Length=328
+
+ Score = 49.0 bits (115),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 23/67 (34%), Positives = 34/67 (51%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            ININTL    + +L A+F        A+AL+QQRP  GW  ++      LL    + T +
+Sbjct  218  ININTLTEFDAPLLSAVFLNEMTMSQAKALVQQRPRMGWASLEVLQQTGLLPPNSKNTAQ  277
+
+Query  56   QLKTVLS  62
+            ++  V S
+Sbjct  278  RVLAVKS  284
+
+
+>sp|P31760|GSPK_AERHY Type II secretion system protein K OS=Aeromonas 
+hydrophila OX=644 GN=exeK PE=3 SV=1
+Length=331
+
+ Score = 41.3 bits (95),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 19/67 (28%), Positives = 29/67 (43%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            +NINT+   Q+ +L AL+       DA+ +L  RP KGW++      Q            
+Sbjct  224  VNINTIKPEQAALLVALYLDKVGLDDAKRVLTSRPQKGWKEKKAMTDQMPAPLSTIPGLD  283
+
+Query  56   QLKTVLS  62
+             +  V S
+Sbjct  284  AVLDVKS  290
+
+
+>sp|P45762|GSPK_ECOLI Putative type II secretion system protein 
+K OS=Escherichia coli (strain K12) OX=83333 GN=gspK PE=2 SV=1
+Length=327
+
+ Score = 37.4 bits (85),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 24/46 (52%), Gaps = 7/46 (15%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFL  41
+            IN+N L      +  ALF       DAR LLQ+RP +GW   D FL
+Sbjct  216  INLNMLTENDIPLFRALFLNNITDADARVLLQKRPREGWLTTDAFL  261
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.126    0.312    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110787192
+Results from round 3
+
+
+Query= d3ci0k1
+
+Length=64
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickey...  79.8    1e-18
+sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio...  79.1    3e-18
+sp|P31706|GSPK_PECCC Type II secretion system protein K OS=Pectob...  76.4    2e-17
+sp|P31760|GSPK_AERHY Type II secretion system protein K OS=Aeromo...  72.9    4e-16
+sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsi...  62.5    3e-12
+sp|P45762|GSPK_ECOLI Putative type II secretion system protein K ...  54.8    2e-09
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P24690|GSPK_DICCH Type II secretion system protein K OS=Dickeya 
+chrysanthemi OX=556 GN=outK PE=3 SV=2
+Length=354
+
+ Score = 79.8 bits (195),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 21/67 (31%), Positives = 35/67 (52%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            IN+NTL    + +L ALF        A  +LQQRP +GW +++ F+    L +  +   +
+Sbjct  245  INVNTLMPGSAPLLSALFMGDISLDMAERILQQRPPQGWRNLNDFMGMSALPESGKNGAR  304
+
+Query  56   QLKTVLS  62
+            Q+  + S
+Sbjct  305  QVLVIKS  311
+
+
+>sp|P45781|EPSK_VIBCH Type II secretion system protein K OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba 
+N16961) OX=243277 GN=epsK PE=3 SV=2
+Length=336
+
+ Score = 79.1 bits (193),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 29/70 (41%), Positives = 40/70 (57%), Gaps = 7/70 (10%)
+
+Query  2    QININTLDVTQSVILEALFD-------ARALLQQRPAKGWEDVDQFLAQPLLADVDERTK  54
+            ++N+NTL   Q+ +L A+F        A+ LL+ RP  GW  VD FLAQ  L  VD   +
+Sbjct  216  RLNVNTLPAEQAALLAAMFSPTLSPESAKTLLEGRPFDGWASVDDFLAQSALTGVDNAVR  275
+
+Query  55   KQLKTVLSVD  64
+            ++ K  LSVD
+Sbjct  276  EEAKKYLSVD  285
+
+
+>sp|P31706|GSPK_PECCC Type II secretion system protein K OS=Pectobacterium 
+carotovorum subsp. carotovorum OX=555 GN=outK PE=3 
+SV=1
+Length=328
+
+ Score = 76.4 bits (186),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 23/67 (34%), Positives = 34/67 (51%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            ININTL    + +L A+F        A+AL+QQRP  GW  ++      LL    + T +
+Sbjct  218  ININTLTEFDAPLLSAVFLNEMTMSQAKALVQQRPRMGWASLEVLQQTGLLPPNSKNTAQ  277
+
+Query  56   QLKTVLS  62
+            ++  V S
+Sbjct  278  RVLAVKS  284
+
+
+>sp|P31760|GSPK_AERHY Type II secretion system protein K OS=Aeromonas 
+hydrophila OX=644 GN=exeK PE=3 SV=1
+Length=331
+
+ Score = 72.9 bits (177),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 19/67 (28%), Positives = 29/67 (43%), Gaps = 7/67 (10%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTKK  55
+            +NINT+   Q+ +L AL+       DA+ +L  RP KGW++      Q            
+Sbjct  224  VNINTIKPEQAALLVALYLDKVGLDDAKRVLTSRPQKGWKEKKAMTDQMPAPLSTIPGLD  283
+
+Query  56   QLKTVLS  62
+             +  V S
+Sbjct  284  AVLDVKS  290
+
+
+>sp|P15750|GSPK_KLEPN Type II secretion system protein K OS=Klebsiella 
+pneumoniae OX=573 GN=pulK PE=3 SV=1
+Length=326
+
+ Score = 62.5 bits (150),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 27/68 (40%), Positives = 35/68 (51%), Gaps = 7/68 (10%)
+
+Query  2    QININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFLAQPLLADVDERTK  54
+            Q+N+NTL   ++ +L ALF       +AR LLQ R A GW  V  FL+QP L   D    
+Sbjct  215  QVNVNTLQPDRAALLAALFPAELTLVEARQLLQARAATGWSSVAAFLSQPALQKTDTAAA  274
+
+Query  55   KQLKTVLS  62
+            +    V S
+Sbjct  275  RPWLAVHS  282
+
+
+>sp|P45762|GSPK_ECOLI Putative type II secretion system protein 
+K OS=Escherichia coli (strain K12) OX=83333 GN=gspK PE=2 SV=1
+Length=327
+
+ Score = 54.8 bits (130),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 20/46 (43%), Positives = 24/46 (52%), Gaps = 7/46 (15%)
+
+Query  3    ININTLDVTQSVILEALF-------DARALLQQRPAKGWEDVDQFL  41
+            IN+N L      +  ALF       DAR LLQ+RP +GW   D FL
+Sbjct  216  INLNMLTENDIPLFRALFLNNITDADARVLLQKRPREGWLTTDAFL  261
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.126    0.306    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5110787192
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

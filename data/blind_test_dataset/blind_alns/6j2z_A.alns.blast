@@ -1,0 +1,1110 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6j2z_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 ...  208     5e-66
+sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 ...  100     2e-25
+sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar...  56.6    1e-09
+sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium di...  42.4    1e-04
+sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spo...  39.7    0.001
+sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosacch...  37.0    0.010
+
+
+>sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP53 PE=1 SV=1
+Length=477
+
+ Score = 208 bits (529),  Expect = 5e-66, Method: Compositional matrix adjust.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN
+Sbjct  2   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  96
+           KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY
+Sbjct  62  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  97
+
+
+>sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP43 PE=2 SV=1
+Length=499
+
+ Score = 100 bits (250),  Expect = 2e-25, Method: Compositional matrix adjust.
+ Identities = 45/98 (46%), Positives = 71/98 (72%), Gaps = 7/98 (7%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQG----KIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCS  56
+            FWG+EVKPGK   +  KN +     ++H++QATLG G +  +S++QC++G+K+P+ LC 
+Sbjct  2   AFWGVEVKPGK--TFTLKNNEATGIRRLHLSQATLGHGTATNRSILQCNVGNKSPLLLCV  59
+
+Query  57  LLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           L P+K++ C LNLEF++ DE + F+V G RS+HL+G+ 
+Sbjct  60  LTPDKVDSCQLNLEFEETDEVI-FSVIGPRSVHLTGYF  96
+
+
+>sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar 
+(strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) 
+OX=246409 GN=FKBP4 PE=3 SV=1
+Length=382
+
+ Score = 56.6 bits (135),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 32/92 (35%), Positives = 49/92 (53%), Gaps = 4/92 (4%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGL++ PGK  +   +       +T A+L       K      + D+    LC+L+PN
+Sbjct  5   GFWGLQLVPGKTYS---QVVSAPFRITMASLAADAEAGKRTSVSVLVDEKEFVLCTLVPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+           KIE  PL++ F + +E V F+  G  +IHL+G
+Sbjct  62  KIEQQPLDITFVEGEE-VTFSAKGQNNIHLTG  92
+
+
+>sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium 
+discoideum OX=44689 GN=fkbp4 PE=1 SV=1
+Length=364
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 31/95 (33%), Positives = 54/95 (57%), Gaps = 9/95 (9%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKE--KSVIQCSIGDKAPIALCSLLP  59
+           FWG+E+    P  + P  +   +H+T A L + ++K+  ++V+Q     K   +LCSL  
+Sbjct  2   FWGIEIS-KVPVKFTPAFD---LHITTACL-SAVAKDTGRNVLQVKYDGKT-YSLCSLKL  55
+
+Query  60  NKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           N  E   L+  F++  E VEF+V+G+ +I L+G+ 
+Sbjct  56  NATEHSVLDTNFEEGKE-VEFSVSGNNTICLTGYF  89
+
+
+>sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spodoptera 
+frugiperda OX=7108 GN=FKBP46 PE=2 SV=1
+Length=412
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 28/94 (30%), Positives = 43/94 (46%), Gaps = 4/94 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGL ++P K   Y    E+   H++QA +              + D     +C+L   K
+Sbjct  2   FWGLIMEPNK--RYTQVVEK-PFHISQAAMDISTGDNDPCQVMVVVDGKNFLVCTLQKGK  58
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLE  95
+           I   PL+L F   D  V F   G  ++HL+G+L+
+Sbjct  59  IIQVPLDLYFKSGDS-VSFLTNGKCNVHLTGYLD  91
+
+
+>sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=fkbp39 
+PE=1 SV=1
+Length=361
+
+ Score = 37.0 bits (84),  Expect = 0.010, Method: Compositional matrix adjust.
+ Identities = 19/39 (49%), Positives = 24/39 (62%), Gaps = 1/39 (3%)
+
+Query  54   LCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+            LC+L P  +   PLNL     DE V F+ +GD +IHLSG
+Sbjct  82   LCTLKPGSLYQQPLNLTITPGDE-VFFSASGDATIHLSG  119
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.138    0.427    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+Results from round 2
+
+
+Query= 6j2z_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 ...  149     3e-43
+sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 ...  123     1e-33
+sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spo...  116     2e-31
+sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar...  115     4e-31
+sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium di...  96.0    6e-24
+
+Sequences not found previously or not previously below threshold:
+
+sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosacch...  55.9    2e-09
+sp|Q56WH4|HDT2_ARATH Histone deacetylase HDT2 OS=Arabidopsis thal...  54.0    9e-09
+sp|P54397|FKB39_DROME 39 kDa FK506-binding nuclear protein OS=Dro...  49.4    4e-07
+sp|O24591|HDT1_MAIZE Histone deacetylase HDT1 OS=Zea mays OX=4577...  49.4    4e-07
+sp|Q9M4U4|HDT3_MAIZE Histone deacetylase HDT3 OS=Zea mays OX=4577...  49.0    5e-07
+sp|Q9M4U5|HDT2_MAIZE Histone deacetylase HDT2 OS=Zea mays OX=4577...  48.2    9e-07
+sp|Q9FVE6|HDT1_ARATH Histone deacetylase HDT1 OS=Arabidopsis thal...  45.1    1e-05
+sp|P0CP98|FKBP4_CRYNJ FK506-binding protein 4 OS=Cryptococcus neo...  44.7    2e-05
+sp|P0CP99|FKBP4_CRYNB FK506-binding protein 4 OS=Cryptococcus neo...  44.7    2e-05
+sp|Q8LJS2|HDT1_SOYBN Histone deacetylase HDT1 OS=Glycine max OX=3...  43.6    4e-05
+sp|P0C1B0|FKBP4_EMENI FK506-binding protein 4 OS=Emericella nidul...  40.9    4e-04
+sp|Q10175|FKBPH_SCHPO Probable peptidyl-prolyl cis-trans isomeras...  39.7    0.001
+sp|Q4WMV5|FKBP4_ASPFU FK506-binding protein 4 OS=Neosartorya fumi...  39.3    0.002
+sp|Q9M4T3|HDT4_ARATH Histone deacetylase HDT4 OS=Arabidopsis thal...  38.6    0.002
+sp|Q4INZ9|FKBP4_GIBZE FK506-binding protein 4 OS=Gibberella zeae ...  38.2    0.003
+sp|Q2UN37|FKBP4_ASPOR FK506-binding protein 4 OS=Aspergillus oryz...  37.8    0.005
+sp|G0SC91|FKBP4_CHATD FK506-binding protein 4 OS=Chaetomium therm...  37.8    0.005
+sp|Q59VR3|FKBP3_CANAL FK506-binding protein 3 OS=Candida albicans...  37.8    0.006
+
+
+>sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP53 PE=1 SV=1
+Length=477
+
+ Score = 149 bits (376),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN
+Sbjct  2   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  96
+           KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY
+Sbjct  62  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  97
+
+
+>sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP43 PE=2 SV=1
+Length=499
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 45/98 (46%), Positives = 71/98 (72%), Gaps = 7/98 (7%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQG----KIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCS  56
+            FWG+EVKPGK   +  KN +     ++H++QATLG G +  +S++QC++G+K+P+ LC 
+Sbjct  2   AFWGVEVKPGK--TFTLKNNEATGIRRLHLSQATLGHGTATNRSILQCNVGNKSPLLLCV  59
+
+Query  57  LLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           L P+K++ C LNLEF++ DE + F+V G RS+HL+G+ 
+Sbjct  60  LTPDKVDSCQLNLEFEETDEVI-FSVIGPRSVHLTGYF  96
+
+
+>sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spodoptera 
+frugiperda OX=7108 GN=FKBP46 PE=2 SV=1
+Length=412
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 28/94 (30%), Positives = 43/94 (46%), Gaps = 4/94 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGL ++P K   Y    E+   H++QA +              + D     +C+L   K
+Sbjct  2   FWGLIMEPNK--RYTQVVEK-PFHISQAAMDISTGDNDPCQVMVVVDGKNFLVCTLQKGK  58
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLE  95
+           I   PL+L F   D  V F   G  ++HL+G+L+
+Sbjct  59  IIQVPLDLYFKSGDS-VSFLTNGKCNVHLTGYLD  91
+
+
+>sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar 
+(strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) 
+OX=246409 GN=FKBP4 PE=3 SV=1
+Length=382
+
+ Score = 115 bits (287),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 32/92 (35%), Positives = 49/92 (53%), Gaps = 4/92 (4%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGL++ PGK  +   +       +T A+L       K      + D+    LC+L+PN
+Sbjct  5   GFWGLQLVPGKTYS---QVVSAPFRITMASLAADAEAGKRTSVSVLVDEKEFVLCTLVPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+           KIE  PL++ F + +E V F+  G  +IHL+G
+Sbjct  62  KIEQQPLDITFVEGEE-VTFSAKGQNNIHLTG  92
+
+
+>sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium 
+discoideum OX=44689 GN=fkbp4 PE=1 SV=1
+Length=364
+
+ Score = 96.0 bits (237),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 30/94 (32%), Positives = 49/94 (52%), Gaps = 7/94 (7%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGT-GLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           FWG+E+    P  + P  +   +H+T A L        ++V+Q     K   +LCSL  N
+Sbjct  2   FWGIEIS-KVPVKFTPAFD---LHITTACLSAVAKDTGRNVLQVKYDGKT-YSLCSLKLN  56
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             E   L+  F++  E VEF+V+G+ +I L+G+ 
+Sbjct  57  ATEHSVLDTNFEEGKE-VEFSVSGNNTICLTGYF  89
+
+
+>sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=fkbp39 
+PE=1 SV=1
+Length=361
+
+ Score = 55.9 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 27/109 (25%), Positives = 38/109 (35%), Gaps = 25/109 (23%)
+
+Query  10   GKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIG----------------------  47
+            GK      ++    IH+T A++  G    K                              
+Sbjct  14   GKDVPAVEESTDASIHLTMASIDAGEKSNKPTTLLVKVRPRIPVEDEDDEELDEQMQELL  73
+
+Query  48   --DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+               +    LC+L P  +   PLNL     DE V F+ +GD +IHLSG  
+Sbjct  74   EESQREFVLCTLKPGSLYQQPLNLTITPGDE-VFFSASGDATIHLSGNF  121
+
+
+>sp|Q56WH4|HDT2_ARATH Histone deacetylase HDT2 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT2 PE=1 SV=2
+Length=306
+
+ Score = 54.0 bits (128),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 23/93 (25%), Positives = 43/93 (46%), Gaps = 5/93 (5%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWG+ V P       P+ E   +H++QA+L   +   +SV+       A + + +L  +K
+Sbjct  3   FWGVAVTPKNATKVTPE-EDSLVHISQASLDCTVKSGESVVLSVTVGGAKLVIGTLSQDK  61
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTG-DRSIHLSGF  93
+                 +L F   D+  E + +G   ++H  G+
+Sbjct  62  FPQISFDLVF---DKEFELSHSGTKANVHFIGY  91
+
+
+>sp|P54397|FKB39_DROME 39 kDa FK506-binding nuclear protein OS=Drosophila 
+melanogaster OX=7227 GN=FK506-bp1 PE=1 SV=2
+Length=357
+
+ Score = 49.4 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 23/93 (25%), Positives = 37/93 (40%), Gaps = 9/93 (10%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGL +KP +  +          H++    G  L K +        +K    + ++    
+Sbjct  4   FWGLNMKPERKYSQTII---KSFHIS----GVALDKGQEAKLYLAAEKQEYIVATVTK-A  55
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           I    L+L F   D  + F   GD S+ L G+L
+Sbjct  56  IPQVALDLNFSKGDR-IMFYTAGDASVSLLGYL  87
+
+
+>sp|O24591|HDT1_MAIZE Histone deacetylase HDT1 OS=Zea mays OX=4577 
+GN=HDT1 PE=1 SV=1
+Length=307
+
+ Score = 49.4 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 44/92 (48%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +H++QA LG     + +++   I D+  +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPGY-GFVLHLSQAALGESKKSDNALMYVKIDDQK-LAIGTLSVDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L FD + E      +   S+  +G+
+Sbjct  61  NPHIQFDLIFDKEFELSH--TSKTTSVFFTGY  90
+
+
+>sp|Q9M4U4|HDT3_MAIZE Histone deacetylase HDT3 OS=Zea mays OX=4577 
+GN=HDT3 PE=2 SV=1
+Length=300
+
+ Score = 49.0 bits (115),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 44/92 (48%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +H++QA LG     + +++   I D+  +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPGY-GFVLHLSQAALGESKKSDNALMYVKIDDQK-LAIGTLSVDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L FD + E      +   S+  +G+
+Sbjct  61  NPHIQFDLIFDKEFELSH--TSKTTSVFFTGY  90
+
+
+>sp|Q9M4U5|HDT2_MAIZE Histone deacetylase HDT2 OS=Zea mays OX=4577 
+GN=HDT2 PE=1 SV=1
+Length=303
+
+ Score = 48.2 bits (113),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 44/92 (48%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +HV+QA LG     + +++   + DK  +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPG-HGFILHVSQAALGESKKSDSALMYVKVDDKK-LAIGTLSIDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L F+ + E      +   S+  SG+
+Sbjct  61  YPQIQFDLVFNKEFELSH--TSKTTSVFFSGY  90
+
+
+>sp|Q9FVE6|HDT1_ARATH Histone deacetylase HDT1 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT1 PE=1 SV=1
+Length=245
+
+ Score = 45.1 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 30/93 (32%), Positives = 42/93 (45%), Gaps = 4/93 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGT-GLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           FWG+EVK GKP    P+ E   IHV+QA+LG     K + V          + L +L   
+Sbjct  3   FWGIEVKSGKPVTVTPE-EGILIHVSQASLGECKNKKGEFVPLHVKVGNQNLVLGTLSTE  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+            I     +L FD + E       G  S++  G+
+Sbjct  62  NIPQLFCDLVFDKEFELSH--TWGKGSVYFVGY  92
+
+
+>sp|P0CP98|FKBP4_CRYNJ FK506-binding protein 4 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain JEC21 / ATCC 
+MYA-565) OX=214684 GN=FPR4 PE=3 SV=1
+Length=405
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 1/40 (3%)
+
+Query  53   ALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+             LCSL   K E   LNL F    E V F VTGD  +HL G
+Sbjct  122  VLCSLTAGKTEQASLNLTFVRG-EVVVFEVTGDNVVHLMG  160
+
+
+>sp|P0CP99|FKBP4_CRYNB FK506-binding protein 4 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain B-3501A) OX=283643 
+GN=FPR4 PE=3 SV=1
+Length=405
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 1/40 (3%)
+
+Query  53   ALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+             LCSL   K E   LNL F    E V F VTGD  +HL G
+Sbjct  122  VLCSLTAGKTEQASLNLTFVRG-EVVVFEVTGDNVVHLMG  160
+
+
+>sp|Q8LJS2|HDT1_SOYBN Histone deacetylase HDT1 OS=Glycine max 
+OX=3847 GN=HDT1 PE=2 SV=1
+Length=295
+
+ Score = 43.6 bits (101),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 25/95 (26%), Positives = 41/95 (43%), Gaps = 5/95 (5%)
+
+Query  2   FWGLEVKPGKPQAYNPKN-EQGKIHVTQATLGTGLSK--EKSVIQCSIGDKAPIALCSLL  58
+           FWG+EVK G+    +P +     IH++Q  LG        + V+      +  I L +L 
+Sbjct  3   FWGVEVKVGQTVTVDPMDPVDSYIHISQVALGEAKKDKPNEPVVLYLKVGEQKIVLGTLS  62
+
+Query  59  PNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+            + I    L+L  D D E    + +   S+   G+
+Sbjct  63  RDGIPHLSLDLVLDSDSELSHTSKSA--SVFFCGY  95
+
+
+>sp|P0C1B0|FKBP4_EMENI FK506-binding protein 4 OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 
+/ M139) OX=227321 GN=fpr4 PE=3 SV=2
+Length=479
+
+ Score = 40.9 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 15/45 (33%), Positives = 25/45 (56%), Gaps = 1/45 (2%)
+
+Query  48   DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+            D   + +C+L P +    PL++   +  E V F VTG  +I+L+G
+Sbjct  162  DLDEMVVCTLDPERNYQQPLDITVAEG-ERVFFKVTGTHTIYLTG  205
+
+
+>sp|Q10175|FKBPH_SCHPO Probable peptidyl-prolyl cis-trans isomerase 
+C27F1.06c OS=Schizosaccharomyces pombe (strain 972 / ATCC 
+24843) OX=284812 GN=SPAC27F1.06c PE=1 SV=1
+Length=362
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/89 (19%), Positives = 29/89 (33%), Gaps = 17/89 (19%)
+
+Query  21   QGKIHVTQATLGTGLSKEKSVIQCSIG-----------------DKAPIALCSLLPNKIE  63
+            +  +  T A L        +V    I                   +    LC+L    + 
+Sbjct  31   ELSVRFTMAALDPRAKSNDAVTVNVITRLEHPEEDGEESDEELFQEEKFTLCTLKKGSVY  90
+
+Query  64   CCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+              P+++ F   +E     V GD  ++LSG
+Sbjct  91   QQPIDIIFSPGEEVFFERVGGDIPVYLSG  119
+
+
+>sp|Q4WMV5|FKBP4_ASPFU FK506-binding protein 4 OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) 
+OX=330879 GN=fpr4 PE=3 SV=2
+Length=489
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/42 (31%), Positives = 24/42 (57%), Gaps = 1/42 (2%)
+
+Query  51   PIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+             + +C+L P +    PL++   +  E V F VTG  +++L+G
+Sbjct  159  EMVVCTLDPERHCQQPLDITVAEG-ERVFFKVTGTHTVYLTG  199
+
+
+>sp|Q9M4T3|HDT4_ARATH Histone deacetylase HDT4 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT4 PE=1 SV=1
+Length=203
+
+ Score = 38.6 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 43/95 (45%), Gaps = 7/95 (7%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLG--TGLSKEKSVIQ-CSIGDKAPIALCSLL  58
+           FWG+E+KPGKP     K +   +H +Q TLG    + K+++      IGD     +   L
+Sbjct  3   FWGIEIKPGKPFKVIQK-DGFMVHASQVTLGDVEKVKKDETFAVYVKIGDDENGFMIGNL  61
+
+Query  59  PNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+             K     ++L      E  E +     S++L G+
+Sbjct  62  SQKFPQFSIDLYL--GHEF-EISHNSTSSVYLIGY  93
+
+
+>sp|Q4INZ9|FKBP4_GIBZE FK506-binding protein 4 OS=Gibberella zeae 
+(strain PH-1 / ATCC MYA-4620 / FGSC 9075 / NRRL 31084) OX=229533 
+GN=FPR4 PE=3 SV=1
+Length=495
+
+ Score = 38.2 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/45 (31%), Positives = 23/45 (51%), Gaps = 1/45 (2%)
+
+Query  48   DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+            D     +C+L   +    PL++  +   E V F VTG  +I+L+G
+Sbjct  196  DLENFVICTLDTERNYQQPLDITVNHG-EKVFFVVTGSHTIYLTG  239
+
+
+>sp|Q2UN37|FKBP4_ASPOR FK506-binding protein 4 OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=fpr4 PE=3 SV=1
+Length=470
+
+ Score = 37.8 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 24/41 (59%), Gaps = 1/41 (2%)
+
+Query  52   IALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+            + +C+L   K    PL++   + DE V F VTG  +++L+G
+Sbjct  166  MVVCTLDTEKNLQQPLDITVSE-DERVFFKVTGTHTVYLTG  205
+
+
+>sp|G0SC91|FKBP4_CHATD FK506-binding protein 4 OS=Chaetomium thermophilum 
+(strain DSM 1495 / CBS 144.50 / IMI 039719) OX=759272 
+GN=FPR4 PE=3 SV=2
+Length=483
+
+ Score = 37.8 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 10/42 (24%), Positives = 20/42 (48%), Gaps = 1/42 (2%)
+
+Query  51   PIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+               +C+L   +    P+++   +  E V F V G   ++L+G
+Sbjct  169  EFVVCTLDTERTYQQPIDITITEG-EKVFFVVKGTHKVYLTG  209
+
+
+>sp|Q59VR3|FKBP3_CANAL FK506-binding protein 3 OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=FPR3 PE=3 
+SV=1
+Length=426
+
+ Score = 37.8 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 26/48 (54%), Gaps = 2/48 (4%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSG-FLEY  96
+            +   +C+L P       L+L    D+E V F VTG   IHL+G ++E+
+Sbjct  131  SEYIVCTLSPKHQYQQTLDLTITPDEE-VYFVVTGSYPIHLTGNYIEH  177
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.127    0.339    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0387    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+Results from round 3
+
+
+Query= 6j2z_A
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 ...  132     8e-37
+sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spo...  108     2e-28
+sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 ...  109     2e-28
+sp|Q9FVE6|HDT1_ARATH Histone deacetylase HDT1 OS=Arabidopsis thal...  104     6e-28
+sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar...  106     8e-28
+sp|Q9M4U5|HDT2_MAIZE Histone deacetylase HDT2 OS=Zea mays OX=4577...  102     1e-26
+sp|O24591|HDT1_MAIZE Histone deacetylase HDT1 OS=Zea mays OX=4577...  102     2e-26
+sp|Q9M4U4|HDT3_MAIZE Histone deacetylase HDT3 OS=Zea mays OX=4577...  101     2e-26
+sp|Q56WH4|HDT2_ARATH Histone deacetylase HDT2 OS=Arabidopsis thal...  101     2e-26
+sp|Q8LJS2|HDT1_SOYBN Histone deacetylase HDT1 OS=Glycine max OX=3...  99.4    1e-25
+sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium di...  85.9    3e-20
+sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosacch...  84.8    1e-19
+sp|P54397|FKB39_DROME 39 kDa FK506-binding nuclear protein OS=Dro...  84.4    1e-19
+sp|Q10175|FKBPH_SCHPO Probable peptidyl-prolyl cis-trans isomeras...  72.5    3e-15
+sp|P0C1B0|FKBP4_EMENI FK506-binding protein 4 OS=Emericella nidul...  59.4    1e-10
+sp|Q4WMV5|FKBP4_ASPFU FK506-binding protein 4 OS=Neosartorya fumi...  57.8    4e-10
+sp|P0CP98|FKBP4_CRYNJ FK506-binding protein 4 OS=Cryptococcus neo...  50.5    2e-07
+sp|P0CP99|FKBP4_CRYNB FK506-binding protein 4 OS=Cryptococcus neo...  50.5    2e-07
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q6V9I6|HDT1_SOLCH Histone deacetylase HDT1 OS=Solanum chacoens...  89.4    6e-22
+sp|Q9LZR5|HDT3_ARATH Histone deacetylase HDT3 OS=Arabidopsis thal...  78.2    1e-17
+sp|Q9M4T3|HDT4_ARATH Histone deacetylase HDT4 OS=Arabidopsis thal...  69.8    6e-15
+sp|Q2UN37|FKBP4_ASPOR FK506-binding protein 4 OS=Aspergillus oryz...  54.4    7e-09
+sp|Q4INZ9|FKBP4_GIBZE FK506-binding protein 4 OS=Gibberella zeae ...  54.0    9e-09
+sp|Q7SCN0|FKBP4_NEUCR FK506-binding protein 4 OS=Neurospora crass...  52.1    5e-08
+sp|G0SC91|FKBP4_CHATD FK506-binding protein 4 OS=Chaetomium therm...  51.7    7e-08
+sp|Q59VR3|FKBP3_CANAL FK506-binding protein 3 OS=Candida albicans...  47.4    2e-06
+sp|Q6C4C9|FKBP3_YARLI FK506-binding protein 3 OS=Yarrowia lipolyt...  45.5    9e-06
+sp|Q756V1|FKBP3_ASHGO FK506-binding protein 3 OS=Ashbya gossypii ...  44.0    3e-05
+sp|Q6BSE7|FKBP3_DEBHA FK506-binding protein 3 OS=Debaryomyces han...  43.6    4e-05
+sp|Q6CWE8|FKBP3_KLULA FK506-binding protein 3 OS=Kluyveromyces la...  43.6    5e-05
+sp|P38911|FKBP3_YEAST FK506-binding nuclear protein OS=Saccharomy...  41.6    3e-04
+sp|Q06205|FKBP4_YEAST FK506-binding protein 4 OS=Saccharomyces ce...  39.3    0.001
+sp|Q6FKH7|FKBP3_CANGA FK506-binding protein 3 OS=Candida glabrata...  39.3    0.002
+sp|Q6FK71|FKBP4_CANGA FK506-binding protein 4 OS=Candida glabrata...  37.0    0.008
+
+
+>sp|Q93ZG9|FKB53_ARATH Peptidyl-prolyl cis-trans isomerase FKBP53 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP53 PE=1 SV=1
+Length=477
+
+ Score = 132 bits (331),  Expect = 8e-37, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN
+Sbjct  2   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  96
+           KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY
+Sbjct  62  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  97
+
+
+>sp|Q26486|FKBP4_SPOFR 46 kDa FK506-binding nuclear protein OS=Spodoptera 
+frugiperda OX=7108 GN=FKBP46 PE=2 SV=1
+Length=412
+
+ Score = 108 bits (270),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 42/94 (45%), Gaps = 4/94 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGL ++P K      +  +   H++QA +              + D     +C+L   K
+Sbjct  2   FWGLIMEPNKRYT---QVVEKPFHISQAAMDISTGDNDPCQVMVVVDGKNFLVCTLQKGK  58
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLE  95
+           I   PL+L F   D  V F   G  ++HL+G+L+
+Sbjct  59  IIQVPLDLYFKSGDS-VSFLTNGKCNVHLTGYLD  91
+
+
+>sp|F4J9Q6|FKB43_ARATH Peptidyl-prolyl cis-trans isomerase FKBP43 
+OS=Arabidopsis thaliana OX=3702 GN=FKBP43 PE=2 SV=1
+Length=499
+
+ Score = 109 bits (273),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 45/98 (46%), Positives = 71/98 (72%), Gaps = 7/98 (7%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQG----KIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCS  56
+            FWG+EVKPGK   +  KN +     ++H++QATLG G +  +S++QC++G+K+P+ LC 
+Sbjct  2   AFWGVEVKPGKT--FTLKNNEATGIRRLHLSQATLGHGTATNRSILQCNVGNKSPLLLCV  59
+
+Query  57  LLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           L P+K++ C LNLEF++ DE + F+V G RS+HL+G+ 
+Sbjct  60  LTPDKVDSCQLNLEFEETDEVI-FSVIGPRSVHLTGYF  96
+
+
+>sp|Q9FVE6|HDT1_ARATH Histone deacetylase HDT1 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT1 PE=1 SV=1
+Length=245
+
+ Score = 104 bits (259),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 30/93 (32%), Positives = 42/93 (45%), Gaps = 4/93 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLG-TGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           FWG+EVK GKP    P+ E   IHV+QA+LG     K + V          + L +L   
+Sbjct  3   FWGIEVKSGKPVTVTPE-EGILIHVSQASLGECKNKKGEFVPLHVKVGNQNLVLGTLSTE  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+            I     +L FD + E       G  S++  G+
+Sbjct  62  NIPQLFCDLVFDKEFELSH--TWGKGSVYFVGY  92
+
+
+>sp|P0C1J6|FKBP4_RHIO9 FK506-binding protein 4 OS=Rhizopus delemar 
+(strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) 
+OX=246409 GN=FKBP4 PE=3 SV=1
+Length=382
+
+ Score = 106 bits (265),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 32/96 (33%), Positives = 50/96 (52%), Gaps = 4/96 (4%)
+
+Query  1   GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           GFWGL++ PGK  +   +       +T A+L       K      + D+    LC+L+PN
+Sbjct  5   GFWGLQLVPGKTYS---QVVSAPFRITMASLAADAEAGKRTSVSVLVDEKEFVLCTLVPN  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFLEY  96
+           KIE  PL++ F + +E V F+  G  +IHL+G   +
+Sbjct  62  KIEQQPLDITFVEGEE-VTFSAKGQNNIHLTGNYVF  96
+
+
+>sp|Q9M4U5|HDT2_MAIZE Histone deacetylase HDT2 OS=Zea mays OX=4577 
+GN=HDT2 PE=1 SV=1
+Length=303
+
+ Score = 102 bits (253),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 44/92 (48%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +HV+QA LG     + +++   + DK  +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPG-HGFILHVSQAALGESKKSDSALMYVKVDDKK-LAIGTLSIDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L F+ + E      +   S+  SG+
+Sbjct  61  YPQIQFDLVFNKEFELSH--TSKTTSVFFSGY  90
+
+
+>sp|O24591|HDT1_MAIZE Histone deacetylase HDT1 OS=Zea mays OX=4577 
+GN=HDT1 PE=1 SV=1
+Length=307
+
+ Score = 102 bits (253),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 43/92 (47%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +H++QA LG     + +++   I D   +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPGY-GFVLHLSQAALGESKKSDNALMYVKIDD-QKLAIGTLSVDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L FD + E      +   S+  +G+
+Sbjct  61  NPHIQFDLIFDKEFELSH--TSKTTSVFFTGY  90
+
+
+>sp|Q9M4U4|HDT3_MAIZE Histone deacetylase HDT3 OS=Zea mays OX=4577 
+GN=HDT3 PE=2 SV=1
+Length=300
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 43/92 (47%), Gaps = 4/92 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGLEVKPG      P      +H++QA LG     + +++   I D   +A+ +L  +K
+Sbjct  3   FWGLEVKPGSTVKCEPGY-GFVLHLSQAALGESKKSDNALMYVKIDD-QKLAIGTLSVDK  60
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L FD + E      +   S+  +G+
+Sbjct  61  NPHIQFDLIFDKEFELSH--TSKTTSVFFTGY  90
+
+
+>sp|Q56WH4|HDT2_ARATH Histone deacetylase HDT2 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT2 PE=1 SV=2
+Length=306
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 22/92 (24%), Positives = 40/92 (43%), Gaps = 3/92 (3%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWG+ V P       P+ E   +H++QA+L   +   +SV+       A + + +L  +K
+Sbjct  3   FWGVAVTPKNATKVTPE-EDSLVHISQASLDCTVKSGESVVLSVTVGGAKLVIGTLSQDK  61
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+                 +L FD + E          ++H  G+
+Sbjct  62  FPQISFDLVFDKEFELSHSGT--KANVHFIGY  91
+
+
+>sp|Q8LJS2|HDT1_SOYBN Histone deacetylase HDT1 OS=Glycine max 
+OX=3847 GN=HDT1 PE=2 SV=1
+Length=295
+
+ Score = 99.4 bits (246),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 25/95 (26%), Positives = 40/95 (42%), Gaps = 5/95 (5%)
+
+Query  2   FWGLEVKPGKPQAYNPKN-EQGKIHVTQATLGTGLSK--EKSVIQCSIGDKAPIALCSLL  58
+           FWG+EVK G+    +P +     IH++Q  LG        + V+      +  I L +L 
+Sbjct  3   FWGVEVKVGQTVTVDPMDPVDSYIHISQVALGEAKKDKPNEPVVLYLKVGEQKIVLGTLS  62
+
+Query  59  PNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+            + I    L+L  D D E      +   S+   G+
+Sbjct  63  RDGIPHLSLDLVLDSDSELSH--TSKSASVFFCGY  95
+
+
+>sp|Q6V9I6|HDT1_SOLCH Histone deacetylase HDT1 OS=Solanum chacoense 
+OX=4108 GN=HDT1 PE=2 SV=1
+Length=269
+
+ Score = 89.4 bits (220),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 29/93 (31%), Positives = 44/93 (47%), Gaps = 4/93 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGT-GLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           FWG EVK G+P    P  +   +H++QA+LG     K +SV      D   + L +L   
+Sbjct  3   FWGAEVKSGEPLTVQPG-DGMVLHLSQASLGELKKDKSESVCLSVNIDGKKLVLGTLNSE  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+           K+     +L FD D E      +G  S++  G+
+Sbjct  62  KVPQQQFDLVFDRDFELSHNLKSG--SVYFFGY  92
+
+
+>sp|Q54NB6|FKBP4_DICDI FK506-binding protein 4 OS=Dictyostelium 
+discoideum OX=44689 GN=fkbp4 PE=1 SV=1
+Length=364
+
+ Score = 85.9 bits (211),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 30/94 (32%), Positives = 49/94 (52%), Gaps = 7/94 (7%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGT-GLSKEKSVIQCSIGDKAPIALCSLLPN  60
+           FWG+E+    P  + P  +   +H+T A L        ++V+Q     K   +LCSL  N
+Sbjct  2   FWGIEIS-KVPVKFTPAFD---LHITTACLSAVAKDTGRNVLQVKYDGKT-YSLCSLKLN  56
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             E   L+  F++  E VEF+V+G+ +I L+G+ 
+Sbjct  57  ATEHSVLDTNFEEGKE-VEFSVSGNNTICLTGYF  89
+
+
+>sp|O74191|FKBP4_SCHPO FK506-binding protein 39 kDa OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=fkbp39 
+PE=1 SV=1
+Length=361
+
+ Score = 84.8 bits (208),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 30/118 (25%), Positives = 42/118 (36%), Gaps = 26/118 (22%)
+
+Query  1    GFWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIG-------------  47
+              + L VK GK      ++    IH+T A++  G    K                     
+Sbjct  6    AVYSLSVK-GKDVPAVEESTDASIHLTMASIDAGEKSNKPTTLLVKVRPRIPVEDEDDEE  64
+
+Query  48   -----------DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+                        +    LC+L P  +   PLNL     DE V F+ +GD +IHLSG  
+Sbjct  65   LDEQMQELLEESQREFVLCTLKPGSLYQQPLNLTITPGDE-VFFSASGDATIHLSGNF  121
+
+
+>sp|P54397|FKB39_DROME 39 kDa FK506-binding nuclear protein OS=Drosophila 
+melanogaster OX=7227 GN=FK506-bp1 PE=1 SV=2
+Length=357
+
+ Score = 84.4 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 23/93 (25%), Positives = 37/93 (40%), Gaps = 9/93 (10%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSKEKSVIQCSIGDKAPIALCSLLPNK  61
+           FWGL +KP +  +          H++    G  L K +        +K    + ++    
+Sbjct  4   FWGLNMKPERKYSQTII---KSFHIS----GVALDKGQEAKLYLAAEKQEYIVATVTK-A  55
+
+Query  62  IECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+           I    L+L F   D  + F   GD S+ L G+L
+Sbjct  56  IPQVALDLNFSKGDR-IMFYTAGDASVSLLGYL  87
+
+
+>sp|Q9LZR5|HDT3_ARATH Histone deacetylase HDT3 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT3 PE=1 SV=2
+Length=294
+
+ Score = 78.2 bits (191),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 19/93 (20%), Positives = 36/93 (39%), Gaps = 4/93 (4%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLGTGLSK-EKSVIQCSIGDKAPIALCSLLPN  60
+           FWG+EVK GKP   +P      +H++Q  LG   +   + +          + + +L   
+Sbjct  3   FWGVEVKNGKPLHLDPGL-DRLVHISQVALGESKNNVTEPIQLYVTVGSDKLLIGTLSHE  61
+
+Query  61  KIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+           K       +  + +          + S+  SG+
+Sbjct  62  KFPQLSTEIVLERNFALSH--TWKNGSVFFSGY  92
+
+
+>sp|Q10175|FKBPH_SCHPO Probable peptidyl-prolyl cis-trans isomerase 
+C27F1.06c OS=Schizosaccharomyces pombe (strain 972 / ATCC 
+24843) OX=284812 GN=SPAC27F1.06c PE=1 SV=1
+Length=362
+
+ Score = 72.5 bits (176),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 17/89 (19%), Positives = 29/89 (33%), Gaps = 17/89 (19%)
+
+Query  21   QGKIHVTQATLGTGLSKEKSVIQCSIG-----------------DKAPIALCSLLPNKIE  63
+            +  +  T A L        +V    I                   +    LC+L    + 
+Sbjct  31   ELSVRFTMAALDPRAKSNDAVTVNVITRLEHPEEDGEESDEELFQEEKFTLCTLKKGSVY  90
+
+Query  64   CCPLNLEFDDDDEPVEFTVTGDRSIHLSG  92
+              P+++ F   +E     V GD  ++LSG
+Sbjct  91   QQPIDIIFSPGEEVFFERVGGDIPVYLSG  119
+
+
+>sp|Q9M4T3|HDT4_ARATH Histone deacetylase HDT4 OS=Arabidopsis 
+thaliana OX=3702 GN=HDT4 PE=1 SV=1
+Length=203
+
+ Score = 69.8 bits (169),  Expect = 6e-15, Method: Composition-based stats.
+ Identities = 23/96 (24%), Positives = 42/96 (44%), Gaps = 9/96 (9%)
+
+Query  2   FWGLEVKPGKPQAYNPKNEQGKIHVTQATLG--TGLSKEKSVIQCSIGDKAP--IALCSL  57
+           FWG+E+KPGKP     K +   +H +Q TLG    + K+++               + +L
+Sbjct  3   FWGIEIKPGKPFKVIQK-DGFMVHASQVTLGDVEKVKKDETFAVYVKIGDDENGFMIGNL  61
+
+Query  58  LPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGF  93
+              K     ++L    + E    + +   S++L G+
+Sbjct  62  SQ-KFPQFSIDLYLGHEFEISHNSTS---SVYLIGY  93
+
+
+>sp|P0C1B0|FKBP4_EMENI FK506-binding protein 4 OS=Emericella nidulans 
+(strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 
+/ M139) OX=227321 GN=fpr4 PE=3 SV=2
+Length=479
+
+ Score = 59.4 bits (142),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 25/47 (53%), Gaps = 1/47 (2%)
+
+Query  48   DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+            D   + +C+L P +    PL++   +  E V F VTG  +I+L+G  
+Sbjct  162  DLDEMVVCTLDPERNYQQPLDITVAEG-ERVFFKVTGTHTIYLTGNY  207
+
+
+>sp|Q4WMV5|FKBP4_ASPFU FK506-binding protein 4 OS=Neosartorya 
+fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) 
+OX=330879 GN=fpr4 PE=3 SV=2
+Length=489
+
+ Score = 57.8 bits (138),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 13/47 (28%), Positives = 25/47 (53%), Gaps = 1/47 (2%)
+
+Query  48   DKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+            +   + +C+L P +    PL++   +  E V F VTG  +++L+G  
+Sbjct  156  ELDEMVVCTLDPERHCQQPLDITVAEG-ERVFFKVTGTHTVYLTGNY  201
+
+
+>sp|Q2UN37|FKBP4_ASPOR FK506-binding protein 4 OS=Aspergillus 
+oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=fpr4 PE=3 SV=1
+Length=470
+
+ Score = 54.4 bits (129),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 15/63 (24%), Positives = 29/63 (46%), Gaps = 1/63 (2%)
+
+Query  32   GTGLSKEKSVIQCSIGDKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLS  91
+            G     ++   +    +   + +C+L   K    PL++   + DE V F VTG  +++L+
+Sbjct  146  GPATDSDEDDEEDEGLELDEMVVCTLDTEKNLQQPLDITVSE-DERVFFKVTGTHTVYLT  204
+
+Query  92   GFL  94
+            G  
+Sbjct  205  GNY  207
+
+
+>sp|Q4INZ9|FKBP4_GIBZE FK506-binding protein 4 OS=Gibberella zeae 
+(strain PH-1 / ATCC MYA-4620 / FGSC 9075 / NRRL 31084) OX=229533 
+GN=FPR4 PE=3 SV=1
+Length=495
+
+ Score = 54.0 bits (128),  Expect = 9e-09, Method: Composition-based stats.
+ Identities = 14/48 (29%), Positives = 23/48 (48%), Gaps = 1/48 (2%)
+
+Query  47   GDKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             D     +C+L   +    PL++  +   E V F VTG  +I+L+G  
+Sbjct  195  ADLENFVICTLDTERNYQQPLDITVNHG-EKVFFVVTGSHTIYLTGNY  241
+
+
+>sp|Q7SCN0|FKBP4_NEUCR FK506-binding protein 4 OS=Neurospora crassa 
+(strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 
+/ FGSC 987) OX=367110 GN=fkr-4 PE=3 SV=1
+Length=467
+
+ Score = 52.1 bits (123),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 12/45 (27%), Positives = 21/45 (47%), Gaps = 1/45 (2%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+                +C+L   +    P+N+   +  E V F V G  S++L+G  
+Sbjct  167  EDYVVCTLDTERNYQQPINITIGEG-EKVFFCVQGTHSVYLTGNF  210
+
+
+>sp|G0SC91|FKBP4_CHATD FK506-binding protein 4 OS=Chaetomium thermophilum 
+(strain DSM 1495 / CBS 144.50 / IMI 039719) OX=759272 
+GN=FPR4 PE=3 SV=2
+Length=483
+
+ Score = 51.7 bits (122),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 10/45 (22%), Positives = 20/45 (44%), Gaps = 1/45 (2%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+                +C+L   +    P+++   +  E V F V G   ++L+G  
+Sbjct  168  EEFVVCTLDTERTYQQPIDITITEG-EKVFFVVKGTHKVYLTGNY  211
+
+
+>sp|P0CP98|FKBP4_CRYNJ FK506-binding protein 4 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain JEC21 / ATCC 
+MYA-565) OX=214684 GN=FPR4 PE=3 SV=1
+Length=405
+
+ Score = 50.5 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/42 (48%), Positives = 21/42 (50%), Gaps = 1/42 (2%)
+
+Query  53   ALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             LCSL   K E   LNL F    E V F VTGD  +HL G  
+Sbjct  122  VLCSLTAGKTEQASLNLTFVRG-EVVVFEVTGDNVVHLMGNY  162
+
+
+>sp|P0CP99|FKBP4_CRYNB FK506-binding protein 4 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain B-3501A) OX=283643 
+GN=FPR4 PE=3 SV=1
+Length=405
+
+ Score = 50.5 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/42 (48%), Positives = 21/42 (50%), Gaps = 1/42 (2%)
+
+Query  53   ALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             LCSL   K E   LNL F    E V F VTGD  +HL G  
+Sbjct  122  VLCSLTAGKTEQASLNLTFVRG-EVVVFEVTGDNVVHLMGNY  162
+
+
+>sp|Q59VR3|FKBP3_CANAL FK506-binding protein 3 OS=Candida albicans 
+(strain SC5314 / ATCC MYA-2876) OX=237561 GN=FPR3 PE=3 
+SV=1
+Length=426
+
+ Score = 47.4 bits (111),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 16/45 (36%), Positives = 21/45 (47%), Gaps = 1/45 (2%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+            +   +C+L P       L+L     DE V F VTG   IHL+G  
+Sbjct  131  SEYIVCTLSPKHQYQQTLDLTITP-DEEVYFVVTGSYPIHLTGNY  174
+
+
+>sp|Q6C4C9|FKBP3_YARLI FK506-binding protein 3 OS=Yarrowia lipolytica 
+(strain CLIB 122 / E 150) OX=284591 GN=FPR3 PE=3 SV=1
+Length=407
+
+ Score = 45.5 bits (106),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 15/43 (35%), Positives = 20/43 (47%), Gaps = 1/43 (2%)
+
+Query  52   IALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+              +C+L P       L+L      E + F VTG  +IHLSG  
+Sbjct  141  FVVCTLSPKFGYQQTLDLVITPG-EQIMFEVTGSYAIHLSGNY  182
+
+
+>sp|Q756V1|FKBP3_ASHGO FK506-binding protein 3 OS=Ashbya gossypii 
+(strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) 
+OX=284811 GN=FPR3 PE=3 SV=2
+Length=417
+
+ Score = 44.0 bits (102),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 14/45 (31%), Positives = 20/45 (44%), Gaps = 1/45 (2%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+                L +L P       L+L    ++E V+F VTG   + LSG  
+Sbjct  119  EEFVLATLSPESQYQQTLDLVISPEEE-VQFVVTGSYRVSLSGNY  162
+
+
+>sp|Q6BSE7|FKBP3_DEBHA FK506-binding protein 3 OS=Debaryomyces 
+hansenii (strain ATCC 36239 / CBS 767 / JCM 1990 / NBRC 0083 
+/ IGC 2968) OX=284592 GN=FPR3 PE=3 SV=1
+Length=437
+
+ Score = 43.6 bits (101),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 14/43 (33%), Positives = 20/43 (47%), Gaps = 1/43 (2%)
+
+Query  52   IALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+              +C+L P       ++L     DE V F VTG   +HL+G  
+Sbjct  133  FVVCTLSPKVQFQQTIDLTITP-DEEVYFVVTGSYPVHLTGNY  174
+
+
+>sp|Q6CWE8|FKBP3_KLULA FK506-binding protein 3 OS=Kluyveromyces 
+lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 
+/ NRRL Y-1140 / WM37) OX=284590 GN=FPR3 PE=3 SV=1
+Length=418
+
+ Score = 43.6 bits (101),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 12/48 (25%), Positives = 21/48 (44%), Gaps = 1/48 (2%)
+
+Query  47   GDKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             +     L +L P       L++    ++E V+F VTG   + L+G  
+Sbjct  131  DEFQEFVLATLSPKTQYQQSLDIVIAPEEE-VQFIVTGSYRVSLTGNY  177
+
+
+>sp|P38911|FKBP3_YEAST FK506-binding nuclear protein OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FPR3 
+PE=1 SV=2
+Length=411
+
+ Score = 41.6 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 15/45 (33%), Positives = 21/45 (47%), Gaps = 1/45 (2%)
+
+Query  50   APIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+                L +L P       L+L    ++E V+F VTG  +I LSG  
+Sbjct  118  QESVLLTLSPEAQYQQSLDLTITPEEE-VQFIVTGSYAISLSGNY  161
+
+
+>sp|Q06205|FKBP4_YEAST FK506-binding protein 4 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FPR4 
+PE=1 SV=1
+Length=392
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/48 (27%), Positives = 21/48 (44%), Gaps = 1/48 (2%)
+
+Query  47   GDKAPIALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             +     L +L P       L++     +E V+F VTG  +I L+G  
+Sbjct  117  DEFEECVLLTLSPKGQYQQALDITIAP-EEDVQFVVTGSYTISLTGNY  163
+
+
+>sp|Q6FKH7|FKBP3_CANGA FK506-binding protein 3 OS=Candida glabrata 
+(strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL 
+Y-65) OX=284593 GN=FPR3 PE=3 SV=1
+Length=437
+
+ Score = 39.3 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/43 (30%), Positives = 20/43 (47%), Gaps = 1/43 (2%)
+
+Query  52   IALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+              L +L P       L+L    ++E ++F VTG  +I L G  
+Sbjct  136  YVLATLSPKTQYQQTLDLTIAPEEE-IQFIVTGSYAISLVGNY  177
+
+
+>sp|Q6FK71|FKBP4_CANGA FK506-binding protein 4 OS=Candida glabrata 
+(strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL 
+Y-65) OX=284593 GN=FPR4 PE=3 SV=1
+Length=398
+
+ Score = 37.0 bits (84),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 11/42 (26%), Positives = 20/42 (48%), Gaps = 1/42 (2%)
+
+Query  53   ALCSLLPNKIECCPLNLEFDDDDEPVEFTVTGDRSIHLSGFL  94
+             + +L P       +++     +E V+F VTG  +I L+G  
+Sbjct  123  VVVTLSPETRCQQAIDITIAP-EEDVQFLVTGSYTISLTGNY  163
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.129    0.334    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0395    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969069620
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

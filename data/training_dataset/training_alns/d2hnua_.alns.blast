@@ -1,0 +1,2338 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2hnua_
+
+Length=83
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913...  160     9e-52
+sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940...  157     3e-50
+sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus OX...  149     3e-47
+sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10...  149     3e-47
+sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 G...  149     5e-47
+sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus c...  146     2e-46
+sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=96...  143     5e-45
+sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus n...  139     8e-43
+sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus mu...  139     8e-43
+sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus scro...  139     1e-42
+sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos ta...  138     2e-42
+sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus O...  135     3e-42
+sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 ...  134     1e-41
+sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Bala...  134     1e-41
+sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment...  134     5e-41
+sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo s...  131     1e-39
+sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio h...  128     1e-39
+sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia ...  129     5e-39
+sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 PE...  117     1e-34
+sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus O...  115     1e-33
+sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 PE...  113     1e-33
+sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax escul...  113     6e-33
+sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus OX...  114     9e-33
+sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 P...  111     9e-33
+sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo ...  113     1e-32
+sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 P...  111     4e-32
+sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus comm...  102     2e-28
+sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus k...  99.8    3e-27
+sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus comm...  97.4    2e-26
+sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus com...  97.4    2e-26
+sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus ke...  96.3    6e-26
+sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus k...  95.9    7e-26
+sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus com...  95.9    8e-26
+sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus ke...  95.9    8e-26
+sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus ma...  95.5    1e-25
+sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubrip...  94.4    4e-25
+sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubri...  92.4    2e-24
+sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus m...  84.3    3e-21
+sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis...  79.3    2e-19
+sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata O...  72.4    8e-17
+sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra ani...  71.2    2e-16
+sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 PE=1...  49.7    2e-08
+sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus O...  50.1    3e-08
+
+
+>sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 160 bits (405),  Expect = 9e-52, Method: Compositional matrix adjust.
+ Identities = 81/81 (100%), Positives = 81/81 (100%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICCSPDGCHEDPACDP
+Sbjct  98   CAAAGICCSPDGCHEDPACDP  118
+
+
+>sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940 
+GN=OXT PE=1 SV=2
+Length=125
+
+ Score = 157 bits (396),  Expect = 3e-50, Method: Compositional matrix adjust.
+ Identities = 79/81 (98%), Positives = 80/81 (99%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRC+EENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCREENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICCSPDGCH DPACDP
+Sbjct  98   CAAAGICCSPDGCHADPACDP  118
+
+
+>sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus 
+OX=10116 GN=Oxt PE=1 SV=2
+Length=125
+
+ Score = 149 bits (376),  Expect = 3e-47, Method: Compositional matrix adjust.
+ Identities = 75/81 (93%), Positives = 76/81 (94%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CA AGICCSPDGC  DPACDP
+Sbjct  98   CATAGICCSPDGCRTDPACDP  118
+
+
+>sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10090 
+GN=Oxt PE=2 SV=1
+Length=125
+
+ Score = 149 bits (375),  Expect = 3e-47, Method: Compositional matrix adjust.
+ Identities = 75/81 (93%), Positives = 76/81 (94%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAA GICCSPDGC  DPACDP
+Sbjct  98   CAATGICCSPDGCRTDPACDP  118
+
+
+>sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 
+GN=OXT PE=1 SV=3
+Length=125
+
+ Score = 149 bits (375),  Expect = 5e-47, Method: Compositional matrix adjust.
+ Identities = 76/81 (94%), Positives = 77/81 (95%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS GR
+Sbjct  38   VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSEGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICC+PDGC  DPACDP
+Sbjct  98   CAAAGICCNPDGCRFDPACDP  118
+
+
+>sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus 
+caballus OX=9796 GN=OXT PE=1 SV=2
+Length=105
+
+ Score = 146 bits (368),  Expect = 2e-46, Method: Compositional matrix adjust.
+ Identities = 75/79 (95%), Positives = 76/79 (96%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAAAGICCSPDGC  DP+C
+Sbjct  79  CAAAGICCSPDGCLADPSC  97
+
+
+>sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=9606 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 143 bits (361),  Expect = 5e-45, Method: Compositional matrix adjust.
+ Identities = 71/80 (89%), Positives = 74/80 (93%), Gaps = 0/80 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CA  G+CCSPDGCH DPACD
+Sbjct  98   CAVLGLCCSPDGCHADPACD  117
+
+
+>sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus 
+norvegicus OX=10116 GN=Avp PE=1 SV=1
+Length=168
+
+ Score = 139 bits (350),  Expect = 8e-43, Method: Compositional matrix adjust.
+ Identities = 68/79 (86%), Positives = 72/79 (91%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFLGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAAAGICCS + C  +P C
+Sbjct  102  CAAAGICCSDESCVAEPEC  120
+
+
+>sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus 
+musculus OX=10090 GN=Avp PE=2 SV=1
+Length=168
+
+ Score = 139 bits (350),  Expect = 8e-43, Method: Compositional matrix adjust.
+ Identities = 70/84 (83%), Positives = 74/84 (88%), Gaps = 1/84 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPAC-DPFY  83
+            CAA GICCS + C  +P C D F+
+Sbjct  102  CAAVGICCSDESCVAEPECHDGFF  125
+
+
+>sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus 
+scrofa OX=9823 GN=AVP PE=1 SV=2
+Length=166
+
+ Score = 139 bits (349),  Expect = 1e-42, Method: Compositional matrix adjust.
+ Identities = 69/79 (87%), Positives = 73/79 (92%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAAAGICC+ + C  +P C
+Sbjct  98   CAAAGICCNDESCVTEPEC  116
+
+
+>sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos 
+taurus OX=9913 GN=AVP PE=1 SV=1
+Length=166
+
+ Score = 138 bits (347),  Expect = 2e-42, Method: Compositional matrix adjust.
+ Identities = 69/79 (87%), Positives = 73/79 (92%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAAAGICC+ + C  +P C
+Sbjct  98   CAAAGICCNDESCVTEPEC  116
+
+
+>sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus 
+OX=9796 GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 135 bits (340),  Expect = 3e-42, Method: Compositional matrix adjust.
+ Identities = 69/79 (87%), Positives = 73/79 (92%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  4   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  63
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAAAGICC+ + C  +P C
+Sbjct  64  CAAAGICCNDESCVTEPEC  82
+
+
+>sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 
+GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 134 bits (337),  Expect = 1e-41, Method: Compositional matrix adjust.
+ Identities = 68/79 (86%), Positives = 72/79 (91%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCG+ELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  7   LRQCLPCGPGGKGRCFGPSICCGEELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAAAGICC  + C  +P C
+Sbjct  67  CAAAGICCYEESCVTEPEC  85
+
+
+>sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Balaenoptera 
+physalus OX=9770 GN=AVP PE=1 SV=1
+Length=107
+
+ Score = 134 bits (338),  Expect = 1e-41, Method: Compositional matrix adjust.
+ Identities = 68/79 (86%), Positives = 73/79 (92%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFMGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAAAGICC+ + C  +P C
+Sbjct  79  CAAAGICCNDESCVTEPEC  97
+
+
+>sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment) 
+OS=Ovis aries OX=9940 GN=AVP PE=1 SV=1
+Length=147
+
+ Score = 134 bits (337),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 68/79 (86%), Positives = 72/79 (91%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEE YLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEEIYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAAAGICC+ + C  +P C
+Sbjct  79  CAAAGICCNDESCVTEPEC  97
+
+
+>sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo 
+sapiens OX=9606 GN=AVP PE=1 SV=2
+Length=164
+
+ Score = 131 bits (330),  Expect = 1e-39, Method: Compositional matrix adjust.
+ Identities = 65/79 (82%), Positives = 70/79 (89%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CC+ + C  +P C
+Sbjct  98   CAAFGVCCNDESCVTEPEC  116
+
+
+>sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio 
+hamadryas OX=9557 GN=OXT PE=2 SV=1
+Length=85
+
+ Score = 128 bits (322),  Expect = 1e-39, Method: Compositional matrix adjust.
+ Identities = 65/73 (89%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  13  VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  72
+
+Query  61  CAAAGICCSPDGC  73
+           CA  G+CCSPDGC
+Sbjct  73  CAVFGLCCSPDGC  85
+
+
+>sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia 
+porcellus OX=10141 GN=AVP PE=1 SV=2
+Length=144
+
+ Score = 129 bits (324),  Expect = 5e-39, Method: Compositional matrix adjust.
+ Identities = 64/79 (81%), Positives = 70/79 (89%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGG+GRCFGPSICC D LGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGQGRCFGPSICCADALGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAA G+CC+ + C  +P C
+Sbjct  79  CAANGVCCNDESCVIEPEC  97
+
+
+>sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=132
+
+ Score = 117 bits (293),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 57/79 (72%), Positives = 67/79 (85%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R C+PCGPG +G CFGPSICCG ELGC+VGTAE LRC EENYLPSPC++G +PCG+GGR
+Sbjct  7   LRQCMPCGPGDRGNCFGPSICCGAELGCYVGTAETLRCAEENYLPSPCRAGGQPCGAGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAA GICCS + C  +PAC
+Sbjct  67  CAAPGICCSDETCSLEPAC  85
+
+
+>sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus 
+OX=8387 PE=2 SV=1
+Length=125
+
+ Score = 115 bits (287),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 55/81 (68%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG-SGG  59
+            VR C+PCGP  KG CFGP+ICCG+ELGC+ GT E LRCQEEN+LPSPC+SG+KPCG +GG
+Sbjct  39   VRKCIPCGPRNKGHCFGPNICCGEELGCYFGTTETLRCQEENFLPSPCESGRKPCGNNGG  98
+
+Query  60   RCAAAGICCSPDGCHEDPACD  80
+             CA +GICC+ + C  DPAC+
+Sbjct  99   NCARSGICCNHESCTMDPACE  119
+
+
+>sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=93
+
+ Score = 113 bits (283),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 54/81 (67%), Positives = 68/81 (84%), Gaps = 1/81 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG-G  59
+           +R C+PCGP  KG CFGP+ICCG+ELGC+ GT+E LRCQEEN+LP+PC+SG+KPCG+  G
+Sbjct  7   IRKCMPCGPRNKGHCFGPNICCGEELGCYFGTSETLRCQEENFLPTPCESGRKPCGNNEG  66
+
+Query  60  RCAAAGICCSPDGCHEDPACD  80
+            CAA+GICCS +GC  D +CD
+Sbjct  67  SCAASGICCSNEGCMVDSSCD  87
+
+
+>sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax esculentus 
+OX=8401 PE=1 SV=1
+Length=141
+
+ Score = 113 bits (283),  Expect = 6e-33, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 65/79 (82%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR C+PCGPG +G CFGP+ICCG++LGC++GT E LRC EENYLPSPC++G KPCG+GGR
+Sbjct  19  VRQCIPCGPGNRGNCFGPNICCGEDLGCYIGTPETLRCVEENYLPSPCEAGGKPCGAGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAA G+CC+   C  D +C
+Sbjct  79  CAAPGVCCNDQSCTMDSSC  97
+
+
+>sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus 
+OX=9031 PE=2 SV=1
+Length=161
+
+ Score = 114 bits (284),  Expect = 9e-33, Method: Compositional matrix adjust.
+ Identities = 54/79 (68%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPG +GRCFGP ICCG ELGC++GTAE  RC EE+Y+PSPCQ+G +PCGS GR
+Sbjct  38   LRQCLPCGPGNRGRCFGPGICCGAELGCYLGTAETRRCAEEDYMPSPCQAGGQPCGSDGR  97
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CCS D C  D  C
+Sbjct  98   CAANGVCCSADTCAMDAVC  116
+
+
+>sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=93
+
+ Score = 111 bits (278),  Expect = 9e-33, Method: Compositional matrix adjust.
+ Identities = 56/81 (69%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPC-GSGG  59
+           VR CLPCGP  +GRCFGP ICCG+ELGC++GT E LRCQEE++LP+PC+SG+KPC G G 
+Sbjct  7   VRKCLPCGPRNRGRCFGPRICCGEELGCYLGTPETLRCQEESFLPTPCESGRKPCGGDGA  66
+
+Query  60  RCAAAGICCSPDGCHEDPACD  80
+            CAA GICCS +GC  DPAC+
+Sbjct  67  SCAAPGICCSSEGCVADPACE  87
+
+
+>sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo 
+japonicus OX=8387 PE=2 SV=1
+Length=159
+
+ Score = 113 bits (283),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 54/79 (68%), Positives = 64/79 (81%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR C+PCGPG +G CFGP+ICCG++LGC+VGT E LRC EE YLPSPC++G KPC SGGR
+Sbjct  36   VRQCIPCGPGNRGNCFGPNICCGEDLGCYVGTPETLRCVEETYLPSPCEAGGKPCSSGGR  95
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CCS D C  D +C
+Sbjct  96   CAAPGVCCSDDTCVVDSSC  114
+
+
+>sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=131
+
+ Score = 111 bits (277),  Expect = 4e-32, Method: Compositional matrix adjust.
+ Identities = 57/80 (71%), Positives = 64/80 (80%), Gaps = 1/80 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELG-CFVGTAEALRCQEENYLPSPCQSGQKPCGSGG  59
+           +R CLPCGPG +GRCFGP ICCG ELG C+VGTAE  RC EE+YLPSPCQ G +PCGSGG
+Sbjct  7   LRQCLPCGPGNRGRCFGPGICCGVELGGCYVGTAETRRCAEEDYLPSPCQPGGQPCGSGG  66
+
+Query  60  RCAAAGICCSPDGCHEDPAC  79
+           RCAA G+CCS D C  D +C
+Sbjct  67  RCAADGVCCSADTCAADASC  86
+
+
+>sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=148
+
+ Score = 102 bits (254),  Expect = 2e-28, Method: Compositional matrix adjust.
+ Identities = 49/78 (63%), Positives = 61/78 (78%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E LRCQEE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETLRCQEEDFLPSPCEAGGKMCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC  +GC  D +C
+Sbjct  100  AAPGVCCDSEGCSMDQSC  117
+
+
+>sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=158
+
+ Score = 99.8 bits (247),  Expect = 3e-27, Method: Compositional matrix adjust.
+ Identities = 49/80 (61%), Positives = 61/80 (76%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GG  59
+            +R C+ CGPG +G CFGPSICCG+ LGC++G+ E  RC EENYLP+PCQ+G +PCGS  G
+Sbjct  38   IRQCMTCGPGDQGHCFGPSICCGEGLGCWMGSPETARCFEENYLPTPCQTGGRPCGSDAG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCAA G+CC  + C  DP C
+Sbjct  98   RCAAPGVCCDSESCVLDPDC  117
+
+
+>sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=154
+
+ Score = 97.4 bits (241),  Expect = 2e-26, Method: Compositional matrix adjust.
+ Identities = 47/78 (60%), Positives = 59/78 (76%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E  RC EE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETQRCLEEDFLPSPCEAGGKVCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC  +GC  D +C
+Sbjct  100  AAPGVCCDSEGCSVDQSC  117
+
+
+>sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=155
+
+ Score = 97.4 bits (241),  Expect = 2e-26, Method: Compositional matrix adjust.
+ Identities = 51/80 (64%), Positives = 57/80 (71%), Gaps = 1/80 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R CL CGPG KGRC GPSICCG+E+GC VG+    RCQEE YLPSPCQ+  K CGS  G 
+Sbjct  40   RQCLACGPGDKGRCLGPSICCGEEIGCLVGSPWMARCQEEEYLPSPCQTAGKLCGSDAGP  99
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CAA G+CC  +GC  DP C 
+Sbjct  100  CAAPGVCCGTEGCKLDPNCS  119
+
+
+>sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=2
+Length=157
+
+ Score = 96.3 bits (238),  Expect = 6e-26, Method: Compositional matrix adjust.
+ Identities = 49/79 (62%), Positives = 61/79 (77%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC++G + CGS  GR
+Sbjct  40   RKCMACGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEAGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA GICC  +GC  D +C
+Sbjct  100  CAAPGICCDVEGCSIDQSC  118
+
+
+>sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=153
+
+ Score = 95.9 bits (237),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 46/78 (59%), Positives = 60/78 (77%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGP+ICCG+ +GC++G+ EA  C EENYLPSPC++G + CGS G C
+Sbjct  39   RQCMSCGPGDRGRCFGPNICCGEGMGCYMGSPEAAGCVEENYLPSPCEAGGRVCGSEGSC  98
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA+G+CC  + C  DP C
+Sbjct  99   AASGVCCDSESCVLDPDC  116
+
+
+>sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=152
+
+ Score = 95.9 bits (237),  Expect = 8e-26, Method: Compositional matrix adjust.
+ Identities = 46/78 (59%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG  GRC+GPSICCG  LGC VG+ E + C EEN+LPSPC++G +PCG  GRC
+Sbjct  38   RECVSCGPGNAGRCYGPSICCGAALGCLVGSPETMSCMEENHLPSPCETGGRPCGDEGRC  97
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC    C  D  C
+Sbjct  98   AAPGVCCDSVSCVMDSEC  115
+
+
+>sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=156
+
+ Score = 95.9 bits (237),  Expect = 8e-26, Method: Compositional matrix adjust.
+ Identities = 46/79 (58%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGG-R  60
+            R C+ CGPG +GRCFGPSICCG ++GC++G+ E   C EENYLP+PCQ G +PCGS   R
+Sbjct  39   RKCMSCGPGEQGRCFGPSICCGKDVGCWMGSPETAHCMEENYLPTPCQVGGRPCGSDTVR  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA+ G+CC  +GC  D +C
+Sbjct  99   CASPGVCCDSEGCSADQSC  117
+
+
+>sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=2
+Length=157
+
+ Score = 95.5 bits (236),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 49/79 (62%), Positives = 60/79 (76%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC+ G + CGS  GR
+Sbjct  40   RKCMSCGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEVGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA GICC  +GC  D +C
+Sbjct  100  CAAPGICCDVEGCSIDQSC  118
+
+
+>sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=155
+
+ Score = 94.4 bits (233),  Expect = 4e-25, Method: Compositional matrix adjust.
+ Identities = 45/79 (57%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP ICCG+  GC +G+ E+ RC EENYL +PCQ+G +PCGS GG 
+Sbjct  39   RKCMSCGPGDRGRCFGPGICCGESFGCLMGSPESARCAEENYLLTPCQAGGRPCGSEGGL  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA++G+CC  + C  D +C
+Sbjct  99   CASSGLCCDAESCTMDQSC  117
+
+
+>sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=153
+
+ Score = 92.4 bits (228),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 45/80 (56%), Positives = 59/80 (74%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GG  59
+            +R C+ CGP  +GRCFGP+ICCG+ LGC +G+ E  RC  ENYL +PCQ+G +PCGS GG
+Sbjct  38   IRQCMSCGPRDRGRCFGPNICCGEALGCLMGSPETARCAGENYLLTPCQAGGRPCGSEGG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCA +G+CC+ + C  D  C
+Sbjct  98   RCAVSGLCCNSESCAVDSDC  117
+
+
+>sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=1
+Length=155
+
+ Score = 84.3 bits (207),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 44/79 (56%), Positives = 55/79 (70%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +G CFGPSICCG+ +GC++G+ EA  C EENYL SPC+ G + CGS  G 
+Sbjct  39   RPCMSCGPGNRGLCFGPSICCGEGMGCYMGSPEAASCVEENYLTSPCEVGGRVCGSEEGH  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CC  + C  D  C
+Sbjct  99   CAAPGVCCDAESCLLDSDC  117
+
+
+>sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis 
+OX=6523 PE=1 SV=1
+Length=155
+
+ Score = 79.3 bits (194),  Expect = 2e-19, Method: Compositional matrix adjust.
+ Identities = 42/83 (51%), Positives = 50/83 (60%), Gaps = 2/83 (2%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS--GG  59
+            R C+ CGPGG G+C GPSICCG + GC VGTAEA  CQ+EN   +PC    + CGS   G
+Sbjct  48   RECMKCGPGGTGQCVGPSICCGQDFGCHVGTAEAAVCQQENDSSTPCLVKGEACGSRDAG  107
+
+Query  60   RCAAAGICCSPDGCHEDPACDPF  82
+             C A GICC  + C  +  C   
+Sbjct  108  NCVADGICCDSESCAVNDRCRDL  130
+
+
+>sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata 
+OX=89435 PE=2 SV=1
+Length=134
+
+ Score = 72.4 bits (176),  Expect = 8e-17, Method: Compositional matrix adjust.
+ Identities = 39/81 (48%), Positives = 49/81 (60%), Gaps = 2/81 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT+EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTSEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPAC  79
+            G C A GICC  D C  +  C
+Sbjct  113  GNCVADGICCVEDACSFNSLC  133
+
+
+>sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra 
+anilis OX=553697 PE=2 SV=1
+Length=134
+
+ Score = 71.2 bits (173),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 39/81 (48%), Positives = 48/81 (59%), Gaps = 2/81 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTPEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPAC  79
+            G C A GICC  D C  +  C
+Sbjct  113  GNCVADGICCVEDACSFNSLC  133
+
+
+>sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 
+PE=1 SV=1
+Length=84
+
+ Score = 49.7 bits (117),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 34/74 (46%), Positives = 38/74 (51%), Gaps = 7/74 (9%)
+
+Query  6   PCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQ------SGQKPCGSGG  59
+           PC     G+C GP ICCG   GC +GTAEA  C EE+  P PCQ      +   P    G
+Sbjct  5   PCMYCSFGQCVGPHICCG-PTGCEMGTAEANMCSEEDEDPIPCQVFGSDCALNNPDNIHG  63
+
+Query  60  RCAAAGICCSPDGC  73
+            C A GICC  D C
+Sbjct  64  HCVADGICCVDDTC  77
+
+
+>sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus 
+OX=6491 PE=1 SV=2
+Length=128
+
+ Score = 50.1 bits (118),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 34/73 (47%), Positives = 38/73 (52%), Gaps = 7/73 (10%)
+
+Query  13   GRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG------GRCAAAGI  66
+            G+C GP ICCG   GC +GTAEA RC EE+  P PCQ   + C         G C A GI
+Sbjct  56   GQCVGPRICCGPR-GCEMGTAEANRCIEEDEDPIPCQVVGQHCDLNNPGNIHGNCVANGI  114
+
+Query  67   CCSPDGCHEDPAC  79
+            CC  D C     C
+Sbjct  115  CCVDDTCTIHTGC  127
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.146    0.545    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999386502
+Results from round 2
+
+
+Query= d2hnua_
+
+Length=83
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus mu...  117     5e-34
+sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus n...  116     6e-34
+sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos ta...  113     2e-32
+sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus scro...  113     2e-32
+sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax escul...  111     6e-32
+sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo s...  111     1e-31
+sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo ...  110     2e-31
+sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia ...  108     1e-30
+sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 PE...  106     2e-30
+sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus OX...  107     3e-30
+sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus k...  107     4e-30
+sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment...  106     6e-30
+sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 G...  103     7e-29
+sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913...  101     1e-28
+sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus comm...  102     2e-28
+sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940...  101     2e-28
+sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus k...  101     3e-28
+sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus O...  101     3e-28
+sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus ma...  101     4e-28
+sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus ke...  101     6e-28
+sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 P...  100     9e-28
+sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus comm...  100     1e-27
+sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus c...  98.4    2e-27
+sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10...  98.8    3e-27
+sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus ke...  99.2    5e-27
+sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus com...  98.8    6e-27
+sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Bala...  97.2    6e-27
+sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus OX...  97.6    8e-27
+sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=96...  97.6    9e-27
+sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus O...  96.1    1e-26
+sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 ...  95.3    3e-26
+sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubrip...  96.5    5e-26
+sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus m...  96.1    7e-26
+sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 PE...  92.2    4e-25
+sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus com...  94.1    5e-25
+sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubri...  93.0    1e-24
+sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis...  91.5    4e-24
+sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 P...  89.1    7e-24
+sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio h...  88.0    2e-23
+sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra ani...  77.6    6e-19
+sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata O...  76.8    2e-18
+sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus O...  66.8    9e-15
+sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 PE=1...  59.5    3e-12
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q7M428|NEU3_EPTST Vasotocin-neurophysin VT OS=Eptatretus stout...  43.3    2e-05
+
+
+>sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus 
+musculus OX=10090 GN=Avp PE=2 SV=1
+Length=168
+
+ Score = 117 bits (293),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 68/83 (82%), Positives = 72/83 (87%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA GICCS + C  +P C   +
+Sbjct  102  CAAVGICCSDESCVAEPECHDGF  124
+
+
+>sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus 
+norvegicus OX=10116 GN=Avp PE=1 SV=1
+Length=168
+
+ Score = 116 bits (292),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 68/83 (82%), Positives = 73/83 (88%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFLGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAAAGICCS + C  +P C   +
+Sbjct  102  CAAAGICCSDESCVAEPECREGF  124
+
+
+>sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos 
+taurus OX=9913 GN=AVP PE=1 SV=1
+Length=166
+
+ Score = 113 bits (282),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 69/80 (86%), Positives = 73/80 (91%), Gaps = 0/80 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CAAAGICC+ + C  +P C 
+Sbjct  98   CAAAGICCNDESCVTEPECR  117
+
+
+>sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus 
+scrofa OX=9823 GN=AVP PE=1 SV=2
+Length=166
+
+ Score = 113 bits (282),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 69/80 (86%), Positives = 73/80 (91%), Gaps = 0/80 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CAAAGICC+ + C  +P C 
+Sbjct  98   CAAAGICCNDESCVTEPECR  117
+
+
+>sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax esculentus 
+OX=8401 PE=1 SV=1
+Length=141
+
+ Score = 111 bits (277),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 52/79 (66%), Positives = 65/79 (82%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR C+PCGPG +G CFGP+ICCG++LGC++GT E LRC EENYLPSPC++G KPCG+GGR
+Sbjct  19  VRQCIPCGPGNRGNCFGPNICCGEDLGCYIGTPETLRCVEENYLPSPCEAGGKPCGAGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAA G+CC+   C  D +C
+Sbjct  79  CAAPGVCCNDQSCTMDSSC  97
+
+
+>sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo 
+sapiens OX=9606 GN=AVP PE=1 SV=2
+Length=164
+
+ Score = 111 bits (277),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 65/83 (78%), Positives = 71/83 (86%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA G+CC+ + C  +P C   +
+Sbjct  98   CAAFGVCCNDESCVTEPECREGF  120
+
+
+>sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo 
+japonicus OX=8387 PE=2 SV=1
+Length=159
+
+ Score = 110 bits (276),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 54/79 (68%), Positives = 64/79 (81%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR C+PCGPG +G CFGP+ICCG++LGC+VGT E LRC EE YLPSPC++G KPC SGGR
+Sbjct  36   VRQCIPCGPGNRGNCFGPNICCGEDLGCYVGTPETLRCVEETYLPSPCEAGGKPCSSGGR  95
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CCS D C  D +C
+Sbjct  96   CAAPGVCCSDDTCVVDSSC  114
+
+
+>sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia 
+porcellus OX=10141 GN=AVP PE=1 SV=2
+Length=144
+
+ Score = 108 bits (269),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 64/83 (77%), Positives = 71/83 (86%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGG+GRCFGPSICC D LGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19   LRQCLPCGPGGQGRCFGPSICCADALGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA G+CC+ + C  +P C   +
+Sbjct  79   CAANGVCCNDESCVIEPECREEF  101
+
+
+>sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=132
+
+ Score = 106 bits (266),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 57/79 (72%), Positives = 67/79 (85%), Gaps = 0/79 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R C+PCGPG +G CFGPSICCG ELGC+VGTAE LRC EENYLPSPC++G +PCG+GGR
+Sbjct  7   LRQCMPCGPGDRGNCFGPSICCGAELGCYVGTAETLRCAEENYLPSPCRAGGQPCGAGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPAC  79
+           CAA GICCS + C  +PAC
+Sbjct  67  CAAPGICCSDETCSLEPAC  85
+
+
+>sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus 
+OX=9031 PE=2 SV=1
+Length=161
+
+ Score = 107 bits (267),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 54/79 (68%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPG +GRCFGP ICCG ELGC++GTAE  RC EE+Y+PSPCQ+G +PCGS GR
+Sbjct  38   LRQCLPCGPGNRGRCFGPGICCGAELGCYLGTAETRRCAEEDYMPSPCQAGGQPCGSDGR  97
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CCS D C  D  C
+Sbjct  98   CAANGVCCSADTCAMDAVC  116
+
+
+>sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=158
+
+ Score = 107 bits (267),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 49/80 (61%), Positives = 61/80 (76%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG-G  59
+            +R C+ CGPG +G CFGPSICCG+ LGC++G+ E  RC EENYLP+PCQ+G +PCGS  G
+Sbjct  38   IRQCMTCGPGDQGHCFGPSICCGEGLGCWMGSPETARCFEENYLPTPCQTGGRPCGSDAG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCAA G+CC  + C  DP C
+Sbjct  98   RCAAPGVCCDSESCVLDPDC  117
+
+
+>sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment) 
+OS=Ovis aries OX=9940 GN=AVP PE=1 SV=1
+Length=147
+
+ Score = 106 bits (264),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 68/80 (85%), Positives = 72/80 (90%), Gaps = 0/80 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEE YLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEEIYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACD  80
+           CAAAGICC+ + C  +P C 
+Sbjct  79  CAAAGICCNDESCVTEPECR  98
+
+
+>sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 
+GN=OXT PE=1 SV=3
+Length=125
+
+ Score = 103 bits (256),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 76/81 (94%), Positives = 77/81 (95%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS GR
+Sbjct  38   VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSEGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICC+PDGC  DPACDP
+Sbjct  98   CAAAGICCNPDGCRFDPACDP  118
+
+
+>sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 101 bits (253),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 81/81 (100%), Positives = 81/81 (100%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICCSPDGCHEDPACDP
+Sbjct  98   CAAAGICCSPDGCHEDPACDP  118
+
+
+>sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=148
+
+ Score = 102 bits (255),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 49/78 (63%), Positives = 61/78 (78%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E LRCQEE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETLRCQEEDFLPSPCEAGGKMCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC  +GC  D +C
+Sbjct  100  AAPGVCCDSEGCSMDQSC  117
+
+
+>sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940 
+GN=OXT PE=1 SV=2
+Length=125
+
+ Score = 101 bits (253),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 79/81 (98%), Positives = 80/81 (99%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRC+EENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCREENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAAAGICCSPDGCH DPACDP
+Sbjct  98   CAAAGICCSPDGCHADPACDP  118
+
+
+>sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=153
+
+ Score = 101 bits (253),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 46/78 (59%), Positives = 60/78 (77%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGP+ICCG+ +GC++G+ EA  C EENYLPSPC++G + CGS G C
+Sbjct  39   RQCMSCGPGDRGRCFGPNICCGEGMGCYMGSPEAAGCVEENYLPSPCEAGGRVCGSEGSC  98
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA+G+CC  + C  DP C
+Sbjct  99   AASGVCCDSESCVLDPDC  116
+
+
+>sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus 
+OX=8387 PE=2 SV=1
+Length=125
+
+ Score = 101 bits (251),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 55/81 (68%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG-SGG  59
+            VR C+PCGP  KG CFGP+ICCG+ELGC+ GT E LRCQEEN+LPSPC+SG+KPCG +GG
+Sbjct  39   VRKCIPCGPRNKGHCFGPNICCGEELGCYFGTTETLRCQEENFLPSPCESGRKPCGNNGG  98
+
+Query  60   RCAAAGICCSPDGCHEDPACD  80
+             CA +GICC+ + C  DPAC+
+Sbjct  99   NCARSGICCNHESCTMDPACE  119
+
+
+>sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=2
+Length=157
+
+ Score = 101 bits (253),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 49/79 (62%), Positives = 60/79 (76%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC+ G + CGS  GR
+Sbjct  40   RKCMSCGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEVGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA GICC  +GC  D +C
+Sbjct  100  CAAPGICCDVEGCSIDQSC  118
+
+
+>sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=2
+Length=157
+
+ Score = 101 bits (252),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 49/79 (62%), Positives = 61/79 (77%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC++G + CGS  GR
+Sbjct  40   RKCMACGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEAGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA GICC  +GC  D +C
+Sbjct  100  CAAPGICCDVEGCSIDQSC  118
+
+
+>sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=131
+
+ Score = 100 bits (249),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 57/80 (71%), Positives = 64/80 (80%), Gaps = 1/80 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELG-CFVGTAEALRCQEENYLPSPCQSGQKPCGSGG  59
+           +R CLPCGPG +GRCFGP ICCG ELG C+VGTAE  RC EE+YLPSPCQ G +PCGSGG
+Sbjct  7   LRQCLPCGPGNRGRCFGPGICCGVELGGCYVGTAETRRCAEEDYLPSPCQPGGQPCGSGG  66
+
+Query  60  RCAAAGICCSPDGCHEDPAC  79
+           RCAA G+CCS D C  D +C
+Sbjct  67  RCAADGVCCSADTCAADASC  86
+
+
+>sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=154
+
+ Score = 100 bits (250),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 47/80 (59%), Positives = 59/80 (74%), Gaps = 0/80 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E  RC EE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETQRCLEEDFLPSPCEAGGKVCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPACDP  81
+            AA G+CC  +GC  D +C  
+Sbjct  100  AAPGVCCDSEGCSVDQSCVD  119
+
+
+>sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus 
+caballus OX=9796 GN=OXT PE=1 SV=2
+Length=105
+
+ Score = 98.4 bits (244),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 75/81 (93%), Positives = 76/81 (94%), Gaps = 0/81 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACDP  81
+           CAAAGICCSPDGC  DP+C  
+Sbjct  79  CAAAGICCSPDGCLADPSCHD  99
+
+
+>sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10090 
+GN=Oxt PE=2 SV=1
+Length=125
+
+ Score = 98.8 bits (245),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 75/81 (93%), Positives = 76/81 (94%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAA GICCSPDGC  DPACDP
+Sbjct  98   CAATGICCSPDGCRTDPACDP  118
+
+
+>sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=156
+
+ Score = 99.2 bits (246),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 46/79 (58%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGG-R  60
+            R C+ CGPG +GRCFGPSICCG ++GC++G+ E   C EENYLP+PCQ G +PCGS   R
+Sbjct  39   RKCMSCGPGEQGRCFGPSICCGKDVGCWMGSPETAHCMEENYLPTPCQVGGRPCGSDTVR  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA+ G+CC  +GC  D +C
+Sbjct  99   CASPGVCCDSEGCSADQSC  117
+
+
+>sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=152
+
+ Score = 98.8 bits (245),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 46/78 (59%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG  GRC+GPSICCG  LGC VG+ E + C EEN+LPSPC++G +PCG  GRC
+Sbjct  38   RECVSCGPGNAGRCYGPSICCGAALGCLVGSPETMSCMEENHLPSPCETGGRPCGDEGRC  97
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC    C  D  C
+Sbjct  98   AAPGVCCDSVSCVMDSEC  115
+
+
+>sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Balaenoptera 
+physalus OX=9770 GN=AVP PE=1 SV=1
+Length=107
+
+ Score = 97.2 bits (241),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 68/80 (85%), Positives = 73/80 (91%), Gaps = 0/80 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFMGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACD  80
+           CAAAGICC+ + C  +P C 
+Sbjct  79  CAAAGICCNDESCVTEPECR  98
+
+
+>sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus 
+OX=10116 GN=Oxt PE=1 SV=2
+Length=125
+
+ Score = 97.6 bits (242),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 75/81 (93%), Positives = 76/81 (94%), Gaps = 0/81 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CA AGICCSPDGC  DPACDP
+Sbjct  98   CATAGICCSPDGCRTDPACDP  118
+
+
+>sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=9606 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 97.6 bits (242),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 71/80 (89%), Positives = 74/80 (93%), Gaps = 0/80 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CA  G+CCSPDGCH DPACD
+Sbjct  98   CAVLGLCCSPDGCHADPACD  117
+
+
+>sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus 
+OX=9796 GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 96.1 bits (238),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 69/80 (86%), Positives = 73/80 (91%), Gaps = 0/80 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  4   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  63
+
+Query  61  CAAAGICCSPDGCHEDPACD  80
+           CAAAGICC+ + C  +P C 
+Sbjct  64  CAAAGICCNDESCVTEPECR  83
+
+
+>sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 
+GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 95.3 bits (236),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 68/80 (85%), Positives = 72/80 (90%), Gaps = 0/80 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCG+ELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  7   LRQCLPCGPGGKGRCFGPSICCGEELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPACD  80
+           CAAAGICC  + C  +P C 
+Sbjct  67  CAAAGICCYEESCVTEPECR  86
+
+
+>sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=155
+
+ Score = 96.5 bits (239),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 45/79 (57%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP ICCG+  GC +G+ E+ RC EENYL +PCQ+G +PCGS GG 
+Sbjct  39   RKCMSCGPGDRGRCFGPGICCGESFGCLMGSPESARCAEENYLLTPCQAGGRPCGSEGGL  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA++G+CC  + C  D +C
+Sbjct  99   CASSGLCCDAESCTMDQSC  117
+
+
+>sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=1
+Length=155
+
+ Score = 96.1 bits (238),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 44/79 (56%), Positives = 55/79 (70%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +G CFGPSICCG+ +GC++G+ EA  C EENYL SPC+ G + CGS  G 
+Sbjct  39   RPCMSCGPGNRGLCFGPSICCGEGMGCYMGSPEAASCVEENYLTSPCEVGGRVCGSEEGH  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CAA G+CC  + C  D  C
+Sbjct  99   CAAPGVCCDAESCLLDSDC  117
+
+
+>sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=93
+
+ Score = 92.2 bits (228),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 54/81 (67%), Positives = 68/81 (84%), Gaps = 1/81 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG-SGG  59
+           +R C+PCGP  KG CFGP+ICCG+ELGC+ GT+E LRCQEEN+LP+PC+SG+KPCG + G
+Sbjct  7   IRKCMPCGPRNKGHCFGPNICCGEELGCYFGTSETLRCQEENFLPTPCESGRKPCGNNEG  66
+
+Query  60  RCAAAGICCSPDGCHEDPACD  80
+            CAA+GICCS +GC  D +CD
+Sbjct  67  SCAASGICCSNEGCMVDSSCD  87
+
+
+>sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=155
+
+ Score = 94.1 bits (233),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 51/80 (64%), Positives = 57/80 (71%), Gaps = 1/80 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG-GR  60
+            R CL CGPG KGRC GPSICCG+E+GC VG+    RCQEE YLPSPCQ+  K CGS  G 
+Sbjct  40   RQCLACGPGDKGRCLGPSICCGEEIGCLVGSPWMARCQEEEYLPSPCQTAGKLCGSDAGP  99
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CAA G+CC  +GC  DP C 
+Sbjct  100  CAAPGVCCGTEGCKLDPNCS  119
+
+
+>sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=153
+
+ Score = 93.0 bits (230),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 45/80 (56%), Positives = 59/80 (74%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GG  59
+            +R C+ CGP  +GRCFGP+ICCG+ LGC +G+ E  RC  ENYL +PCQ+G +PCGS GG
+Sbjct  38   IRQCMSCGPRDRGRCFGPNICCGEALGCLMGSPETARCAGENYLLTPCQAGGRPCGSEGG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCA +G+CC+ + C  D  C
+Sbjct  98   RCAVSGLCCNSESCAVDSDC  117
+
+
+>sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis 
+OX=6523 PE=1 SV=1
+Length=155
+
+ Score = 91.5 bits (226),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 42/83 (51%), Positives = 50/83 (60%), Gaps = 2/83 (2%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS--GG  59
+            R C+ CGPGG G+C GPSICCG + GC VGTAEA  CQ+EN   +PC    + CGS   G
+Sbjct  48   RECMKCGPGGTGQCVGPSICCGQDFGCHVGTAEAAVCQQENDSSTPCLVKGEACGSRDAG  107
+
+Query  60   RCAAAGICCSPDGCHEDPACDPF  82
+             C A GICC  + C  +  C   
+Sbjct  108  NCVADGICCDSESCAVNDRCRDL  130
+
+
+>sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=93
+
+ Score = 89.1 bits (220),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 56/81 (69%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGG-  59
+           VR CLPCGP  +GRCFGP ICCG+ELGC++GT E LRCQEE++LP+PC+SG+KPCG  G 
+Sbjct  7   VRKCLPCGPRNRGRCFGPRICCGEELGCYLGTPETLRCQEESFLPTPCESGRKPCGGDGA  66
+
+Query  60  RCAAAGICCSPDGCHEDPACD  80
+            CAA GICCS +GC  DPAC+
+Sbjct  67  SCAAPGICCSSEGCVADPACE  87
+
+
+>sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio 
+hamadryas OX=9557 GN=OXT PE=2 SV=1
+Length=85
+
+ Score = 88.0 bits (217),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 65/73 (89%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  13  VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  72
+
+Query  61  CAAAGICCSPDGC  73
+           CA  G+CCSPDGC
+Sbjct  73  CAVFGLCCSPDGC  85
+
+
+>sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra 
+anilis OX=553697 PE=2 SV=1
+Length=134
+
+ Score = 77.6 bits (190),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 39/82 (48%), Positives = 48/82 (59%), Gaps = 2/82 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTPEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPACD  80
+            G C A GICC  D C  +  C 
+Sbjct  113  GNCVADGICCVEDACSFNSLCR  134
+
+
+>sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata 
+OX=89435 PE=2 SV=1
+Length=134
+
+ Score = 76.8 bits (188),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 39/82 (48%), Positives = 49/82 (60%), Gaps = 2/82 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT+EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTSEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPACD  80
+            G C A GICC  D C  +  C 
+Sbjct  113  GNCVADGICCVEDACSFNSLCR  134
+
+
+>sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus 
+OX=6491 PE=1 SV=2
+Length=128
+
+ Score = 66.8 bits (162),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 35/80 (44%), Positives = 39/80 (49%), Gaps = 7/80 (9%)
+
+Query  6    PCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPC------GSGG  59
+             C     G+C GP ICCG   GC +GTAEA RC EE+  P PCQ   + C         G
+Sbjct  49   ACMSCSFGQCVGPRICCGPR-GCEMGTAEANRCIEEDEDPIPCQVVGQHCDLNNPGNIHG  107
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+             C A GICC  D C     C
+Sbjct  108  NCVANGICCVDDTCTIHTGC  127
+
+
+>sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 
+PE=1 SV=1
+Length=84
+
+ Score = 59.5 bits (143),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 35/80 (44%), Positives = 38/80 (48%), Gaps = 7/80 (9%)
+
+Query  6   PCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQ------KPCGSGG  59
+           PC     G+C GP ICCG   GC +GTAEA  C EE+  P PCQ          P    G
+Sbjct  5   PCMYCSFGQCVGPHICCG-PTGCEMGTAEANMCSEEDEDPIPCQVFGSDCALNNPDNIHG  63
+
+Query  60  RCAAAGICCSPDGCHEDPAC  79
+            C A GICC  D C     C
+Sbjct  64  HCVADGICCVDDTCTTHLGC  83
+
+
+>sp|Q7M428|NEU3_EPTST Vasotocin-neurophysin VT OS=Eptatretus stoutii 
+OX=7765 PE=2 SV=1
+Length=161
+
+ Score = 43.3 bits (101),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 37/88 (42%), Positives = 44/88 (50%), Gaps = 9/88 (10%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGT------AEALRCQEENYLPSPCQSGQ-K  53
+            + +C  CG G  G+C GPSICCG  LG   G         +  C+ EN  P PC+ G   
+Sbjct  40   LHSCAACGLG--GQCVGPSICCGGLLGGGRGGGCIVGGPLSAPCKRENLHPEPCRPGGGS  97
+
+Query  54   PCGSGGRCAAAGICCSPDGCHEDPACDP  81
+             CG  G CAA GICC+   C  D  CD 
+Sbjct  98   SCGLEGICAAPGICCTDVTCSIDATCDD  125
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.154    0.609    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0473    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999386502
+Results from round 3
+
+
+Query= d2hnua_
+
+Length=83
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus mu...  118     2e-34
+sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus n...  117     3e-34
+sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos ta...  113     2e-32
+sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus scro...  112     3e-32
+sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo s...  112     4e-32
+sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax escul...  110     9e-32
+sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo ...  110     2e-31
+sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia ...  107     1e-30
+sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 PE...  105     7e-30
+sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus k...  106     9e-30
+sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment...  105     1e-29
+sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus OX...  106     1e-29
+sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus comm...  102     1e-28
+sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus comm...  102     2e-28
+sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus ma...  101     4e-28
+sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 G...  100     6e-28
+sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus ke...  101     6e-28
+sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus k...  100     9e-28
+sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913...  99.2    2e-27
+sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus O...  98.8    2e-27
+sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940...  98.8    3e-27
+sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 P...  98.4    4e-27
+sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus ke...  98.4    8e-27
+sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus c...  96.8    9e-27
+sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Bala...  96.8    1e-26
+sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus com...  98.0    1e-26
+sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10...  96.5    2e-26
+sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus O...  95.3    3e-26
+sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus m...  96.1    7e-26
+sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 ...  94.2    7e-26
+sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus OX...  94.9    8e-26
+sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=96...  94.9    1e-25
+sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubrip...  94.5    3e-25
+sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus com...  93.4    9e-25
+sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 PE...  90.3    2e-24
+sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubri...  91.1    6e-24
+sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis...  91.1    6e-24
+sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 P...  87.2    4e-23
+sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio h...  85.3    2e-22
+sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra ani...  77.2    9e-19
+sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata O...  76.0    3e-18
+sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus O...  69.1    2e-15
+sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 PE=1...  61.8    3e-13
+sp|Q7M428|NEU3_EPTST Vasotocin-neurophysin VT OS=Eptatretus stout...  55.6    5e-10
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P35455|NEU2_MOUSE Vasopressin-neurophysin 2-copeptin OS=Mus 
+musculus OX=10090 GN=Avp PE=2 SV=1
+Length=168
+
+ Score = 118 bits (295),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 68/83 (82%), Positives = 72/83 (87%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA GICCS + C  +P C   +
+Sbjct  102  CAAVGICCSDESCVAEPECHDGF  124
+
+
+>sp|P01186|NEU2_RAT Vasopressin-neurophysin 2-copeptin OS=Rattus 
+norvegicus OX=10116 GN=Avp PE=1 SV=1
+Length=168
+
+ Score = 117 bits (294),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 68/83 (82%), Positives = 73/83 (88%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  42   LRQCLPCGPGGKGRCFGPSICCADELGCFLGTAEALRCQEENYLPSPCQSGQKPCGSGGR  101
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAAAGICCS + C  +P C   +
+Sbjct  102  CAAAGICCSDESCVAEPECREGF  124
+
+
+>sp|P01180|NEU2_BOVIN Vasopressin-neurophysin 2-copeptin OS=Bos 
+taurus OX=9913 GN=AVP PE=1 SV=1
+Length=166
+
+ Score = 113 bits (282),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 69/82 (84%), Positives = 73/82 (89%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAAAGICC+ + C  +P C   
+Sbjct  98   CAAAGICCNDESCVTEPECREG  119
+
+
+>sp|P01183|NEU2_PIG Vasopressin-neurophysin 2-copeptin OS=Sus 
+scrofa OX=9823 GN=AVP PE=1 SV=2
+Length=166
+
+ Score = 112 bits (281),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 69/82 (84%), Positives = 73/82 (89%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAAAGICC+ + C  +P C   
+Sbjct  98   CAAAGICCNDESCVTEPECREG  119
+
+
+>sp|P01185|NEU2_HUMAN Vasopressin-neurophysin 2-copeptin OS=Homo 
+sapiens OX=9606 GN=AVP PE=1 SV=2
+Length=164
+
+ Score = 112 bits (280),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 65/83 (78%), Positives = 71/83 (86%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   LRQCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA G+CC+ + C  +P C   +
+Sbjct  98   CAAFGVCCNDESCVTEPECREGF  120
+
+
+>sp|P11858|NEUV_PELES Vasotocin-neurophysin VT OS=Pelophylax esculentus 
+OX=8401 PE=1 SV=1
+Length=141
+
+ Score = 110 bits (276),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 52/82 (63%), Positives = 65/82 (79%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR C+PCGPG +G CFGP+ICCG++LGC++GT E LRC EENYLPSPC++G KPCG+GGR
+Sbjct  19  VRQCIPCGPGNRGNCFGPNICCGEDLGCYIGTPETLRCVEENYLPSPCEAGGKPCGAGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAA G+CC+   C  D +C   
+Sbjct  79  CAAPGVCCNDQSCTMDSSCLDE  100
+
+
+>sp|P08163|NEUV_BUFJA Vasotocin-neurophysin VT (Fragment) OS=Bufo 
+japonicus OX=8387 PE=2 SV=1
+Length=159
+
+ Score = 110 bits (275),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 54/82 (66%), Positives = 64/82 (78%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR C+PCGPG +G CFGP+ICCG++LGC+VGT E LRC EE YLPSPC++G KPC SGGR
+Sbjct  36   VRQCIPCGPGNRGNCFGPNICCGEDLGCYVGTPETLRCVEETYLPSPCEAGGKPCSSGGR  95
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAA G+CCS D C  D +C   
+Sbjct  96   CAAPGVCCSDDTCVVDSSCLDE  117
+
+
+>sp|P10769|NEU2_CAVPO Vasopressin-neurophysin 2-copeptin OS=Cavia 
+porcellus OX=10141 GN=AVP PE=1 SV=2
+Length=144
+
+ Score = 107 bits (268),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 64/83 (77%), Positives = 71/83 (86%), Gaps = 0/83 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGG+GRCFGPSICC D LGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19   LRQCLPCGPGGQGRCFGPSICCADALGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61   CAAAGICCSPDGCHEDPACDPFY  83
+            CAA G+CC+ + C  +P C   +
+Sbjct  79   CAANGVCCNDESCVIEPECREEF  101
+
+
+>sp|P21916|NEU2_STRCA Neurophysin 2 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=132
+
+ Score = 105 bits (263),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 57/82 (70%), Positives = 67/82 (82%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R C+PCGPG +G CFGPSICCG ELGC+VGTAE LRC EENYLPSPC++G +PCG+GGR
+Sbjct  7   LRQCMPCGPGDRGNCFGPSICCGAELGCYVGTAETLRCAEENYLPSPCRAGGQPCGAGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAA GICCS + C  +PAC   
+Sbjct  67  CAAPGICCSDETCSLEPACLEE  88
+
+
+>sp|P16042|NEU4_ONCKE Vasotocin-neurophysin VT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=158
+
+ Score = 106 bits (264),  Expect = 9e-30, Method: Composition-based stats.
+ Identities = 49/80 (61%), Positives = 61/80 (76%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG-G  59
+            +R C+ CGPG +G CFGPSICCG+ LGC++G+ E  RC EENYLP+PCQ+G +PCGS  G
+Sbjct  38   IRQCMTCGPGDQGHCFGPSICCGEGLGCWMGSPETARCFEENYLPTPCQTGGRPCGSDAG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCAA G+CC  + C  DP C
+Sbjct  98   RCAAPGVCCDSESCVLDPDC  117
+
+
+>sp|P01181|NEU2_SHEEP Vasopressin-neurophysin 2-copeptin (Fragment) 
+OS=Ovis aries OX=9940 GN=AVP PE=1 SV=1
+Length=147
+
+ Score = 105 bits (263),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 68/82 (83%), Positives = 72/82 (88%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEE YLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEEIYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAAAGICC+ + C  +P C   
+Sbjct  79  CAAAGICCNDESCVTEPECREG  100
+
+
+>sp|P24787|NEUV_CHICK Vasotocin-neurophysin VT OS=Gallus gallus 
+OX=9031 PE=2 SV=1
+Length=161
+
+ Score = 106 bits (264),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 54/82 (66%), Positives = 63/82 (77%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPG +GRCFGP ICCG ELGC++GTAE  RC EE+Y+PSPCQ+G +PCGS GR
+Sbjct  38   LRQCLPCGPGNRGRCFGPGICCGAELGCYLGTAETRRCAEEDYMPSPCQAGGQPCGSDGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAA G+CCS D C  D  C   
+Sbjct  98   CAANGVCCSADTCAMDAVCLEE  119
+
+
+>sp|P15211|NEU2_CATCO Isotocin-neurophysin IT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=148
+
+ Score = 102 bits (255),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 49/81 (60%), Positives = 61/81 (75%), Gaps = 0/81 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E LRCQEE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETLRCQEEDFLPSPCEAGGKMCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPACDPF  82
+            AA G+CC  +GC  D +C   
+Sbjct  100  AAPGVCCDSEGCSMDQSCVNG  120
+
+
+>sp|P15210|NEU1_CATCO Isotocin-neurophysin IT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=154
+
+ Score = 102 bits (254),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 47/81 (58%), Positives = 59/81 (73%), Gaps = 0/81 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGPSICCG+ LGC +G+ E  RC EE++LPSPC++G K CG  GRC
+Sbjct  40   RQCMSCGPGDRGRCFGPSICCGEGLGCLLGSPETQRCLEEDFLPSPCEAGGKVCGYEGRC  99
+
+Query  62   AAAGICCSPDGCHEDPACDPF  82
+            AA G+CC  +GC  D +C   
+Sbjct  100  AAPGVCCDSEGCSVDQSCVDG  120
+
+
+>sp|Q07663|NEU1_ONCMA Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=2
+Length=157
+
+ Score = 101 bits (253),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 49/82 (60%), Positives = 60/82 (73%), Gaps = 1/82 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC+ G + CGS  GR
+Sbjct  40   RKCMSCGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEVGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAA GICC  +GC  D +C   
+Sbjct  100  CAAPGICCDVEGCSIDQSCTEE  121
+
+
+>sp|P01177|NEU1_PIG Oxytocin-neurophysin 1 OS=Sus scrofa OX=9823 
+GN=OXT PE=1 SV=3
+Length=125
+
+ Score = 100 bits (250),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 76/82 (93%), Positives = 77/82 (94%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS GR
+Sbjct  38   VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSEGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAAAGICC+PDGC  DPACDP 
+Sbjct  98   CAAAGICCNPDGCRFDPACDPE  119
+
+
+>sp|Q91166|NEU1_ONCKE Isotocin-neurophysin IT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=2
+Length=157
+
+ Score = 101 bits (252),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 49/82 (60%), Positives = 61/82 (74%), Gaps = 1/82 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP+ICCG+ +GC+VG+ EA  C EENYLPSPC++G + CGS  GR
+Sbjct  40   RKCMACGPGDRGRCFGPNICCGEGMGCYVGSPEAAGCVEENYLPSPCEAGGRVCGSEEGR  99
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAA GICC  +GC  D +C   
+Sbjct  100  CAAPGICCDVEGCSIDQSCTEE  121
+
+
+>sp|P16041|NEU3_ONCKE Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=153
+
+ Score = 100 bits (250),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 46/78 (59%), Positives = 60/78 (77%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG +GRCFGP+ICCG+ +GC++G+ EA  C EENYLPSPC++G + CGS G C
+Sbjct  39   RQCMSCGPGDRGRCFGPNICCGEGMGCYMGSPEAAGCVEENYLPSPCEAGGRVCGSEGSC  98
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA+G+CC  + C  DP C
+Sbjct  99   AASGVCCDSESCVLDPDC  116
+
+
+>sp|P01175|NEU1_BOVIN Oxytocin-neurophysin 1 OS=Bos taurus OX=9913 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 99.2 bits (246),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 81/82 (99%), Positives = 81/82 (99%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAAAGICCSPDGCHEDPACDP 
+Sbjct  98   CAAAGICCSPDGCHEDPACDPE  119
+
+
+>sp|P08162|NEUM_BUFJA Mesotocin-neurophysin MT OS=Bufo japonicus 
+OX=8387 PE=2 SV=1
+Length=125
+
+ Score = 98.8 bits (245),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 55/81 (68%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG-SGG  59
+            VR C+PCGP  KG CFGP+ICCG+ELGC+ GT E LRCQEEN+LPSPC+SG+KPCG +GG
+Sbjct  39   VRKCIPCGPRNKGHCFGPNICCGEELGCYFGTTETLRCQEENFLPSPCESGRKPCGNNGG  98
+
+Query  60   RCAAAGICCSPDGCHEDPACD  80
+             CA +GICC+ + C  DPAC+
+Sbjct  99   NCARSGICCNHESCTMDPACE  119
+
+
+>sp|P13389|NEU1_SHEEP Oxytocin-neurophysin 1 OS=Ovis aries OX=9940 
+GN=OXT PE=1 SV=2
+Length=125
+
+ Score = 98.8 bits (245),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 79/82 (96%), Positives = 80/82 (98%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRC+EENYLPSPCQSGQKPCGSGGR
+Sbjct  38   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCREENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAAAGICCSPDGCH DPACDP 
+Sbjct  98   CAAAGICCSPDGCHADPACDPE  119
+
+
+>sp|P19630|NEU2_ANSAN Neurophysin 2 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=131
+
+ Score = 98.4 bits (244),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 57/83 (69%), Positives = 64/83 (77%), Gaps = 1/83 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELG-CFVGTAEALRCQEENYLPSPCQSGQKPCGSGG  59
+           +R CLPCGPG +GRCFGP ICCG ELG C+VGTAE  RC EE+YLPSPCQ G +PCGSGG
+Sbjct  7   LRQCLPCGPGNRGRCFGPGICCGVELGGCYVGTAETRRCAEEDYLPSPCQPGGQPCGSGG  66
+
+Query  60  RCAAAGICCSPDGCHEDPACDPF  82
+           RCAA G+CCS D C  D +C   
+Sbjct  67  RCAADGVCCSADTCAADASCLEE  89
+
+
+>sp|Q91167|NEU2_ONCKE Isotocin-neurophysin IT 2 OS=Oncorhynchus 
+keta OX=8018 PE=2 SV=1
+Length=156
+
+ Score = 98.4 bits (244),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 46/79 (58%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGG-R  60
+            R C+ CGPG +GRCFGPSICCG ++GC++G+ E   C EENYLP+PCQ G +PCGS   R
+Sbjct  39   RKCMSCGPGEQGRCFGPSICCGKDVGCWMGSPETAHCMEENYLPTPCQVGGRPCGSDTVR  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA+ G+CC  +GC  D +C
+Sbjct  99   CASPGVCCDSEGCSADQSC  117
+
+
+>sp|P01176|NEU1_HORSE Oxytocin-neurophysin 1 (Fragment) OS=Equus 
+caballus OX=9796 GN=OXT PE=1 SV=2
+Length=105
+
+ Score = 96.8 bits (240),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 75/82 (91%), Positives = 76/82 (93%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  VRKCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAAAGICCSPDGC  DP+C   
+Sbjct  79  CAAAGICCSPDGCLADPSCHDE  100
+
+
+>sp|P01184|NEU2_BALPH Vasopressin-neurophysin 2 (Fragment) OS=Balaenoptera 
+physalus OX=9770 GN=AVP PE=1 SV=1
+Length=107
+
+ Score = 96.8 bits (240),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 68/82 (83%), Positives = 73/82 (89%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCF+GTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  19  LRQCLPCGPGGKGRCFGPSICCGDELGCFMGTAEALRCQEENYLPSPCQSGQKPCGSGGR  78
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAAAGICC+ + C  +P C   
+Sbjct  79  CAAAGICCNDESCVTEPECREG  100
+
+
+>sp|P17668|NEU3_CATCO Vasotocin-neurophysin VT 1 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=152
+
+ Score = 98.0 bits (243),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 46/78 (59%), Positives = 55/78 (71%), Gaps = 0/78 (0%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGRC  61
+            R C+ CGPG  GRC+GPSICCG  LGC VG+ E + C EEN+LPSPC++G +PCG  GRC
+Sbjct  38   RECVSCGPGNAGRCYGPSICCGAALGCLVGSPETMSCMEENHLPSPCETGGRPCGDEGRC  97
+
+Query  62   AAAGICCSPDGCHEDPAC  79
+            AA G+CC    C  D  C
+Sbjct  98   AAPGVCCDSVSCVMDSEC  115
+
+
+>sp|P35454|NEU1_MOUSE Oxytocin-neurophysin 1 OS=Mus musculus OX=10090 
+GN=Oxt PE=2 SV=1
+Length=125
+
+ Score = 96.5 bits (239),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 75/82 (91%), Positives = 76/82 (93%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CAA GICCSPDGC  DPACDP 
+Sbjct  98   CAATGICCSPDGCRTDPACDPE  119
+
+
+>sp|P01182|NEU2_HORSE Neurophysin 2 (Fragment) OS=Equus caballus 
+OX=9796 GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 95.3 bits (236),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 69/82 (84%), Positives = 73/82 (89%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  4   LRQCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  63
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAAAGICC+ + C  +P C   
+Sbjct  64  CAAAGICCNDESCVTEPECREG  85
+
+
+>sp|Q07662|NEU3_ONCMA Vasotocin-neurophysin VT 1 OS=Oncorhynchus 
+masou OX=8020 PE=1 SV=1
+Length=155
+
+ Score = 96.1 bits (238),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 44/81 (54%), Positives = 55/81 (68%), Gaps = 1/81 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +G CFGPSICCG+ +GC++G+ EA  C EENYL SPC+ G + CGS  G 
+Sbjct  39   RPCMSCGPGNRGLCFGPSICCGEGMGCYMGSPEAASCVEENYLTSPCEVGGRVCGSEEGH  98
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAA G+CC  + C  D  C  
+Sbjct  99   CAAPGVCCDAESCLLDSDCLD  119
+
+
+>sp|P81768|NEU2_LOXAF Neurophysin 2 OS=Loxodonta africana OX=9785 
+GN=AVP PE=1 SV=1
+Length=92
+
+ Score = 94.2 bits (233),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 68/82 (83%), Positives = 72/82 (88%), Gaps = 0/82 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           +R CLPCGPGGKGRCFGPSICCG+ELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  7   LRQCLPCGPGGKGRCFGPSICCGEELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  66
+
+Query  61  CAAAGICCSPDGCHEDPACDPF  82
+           CAAAGICC  + C  +P C   
+Sbjct  67  CAAAGICCYEESCVTEPECREG  88
+
+
+>sp|P01179|NEU1_RAT Oxytocin-neurophysin 1 OS=Rattus norvegicus 
+OX=10116 GN=Oxt PE=1 SV=2
+Length=125
+
+ Score = 94.9 bits (235),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 75/82 (91%), Positives = 76/82 (93%), Gaps = 0/82 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            +R CLPCGPGGKGRCFGPSICC DELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR
+Sbjct  38   MRKCLPCGPGGKGRCFGPSICCADELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACDPF  82
+            CA AGICCSPDGC  DPACDP 
+Sbjct  98   CATAGICCSPDGCRTDPACDPE  119
+
+
+>sp|P01178|NEU1_HUMAN Oxytocin-neurophysin 1 OS=Homo sapiens OX=9606 
+GN=OXT PE=1 SV=1
+Length=125
+
+ Score = 94.9 bits (235),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 71/80 (89%), Positives = 74/80 (93%), Gaps = 0/80 (0%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+            VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  38   VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  97
+
+Query  61   CAAAGICCSPDGCHEDPACD  80
+            CA  G+CCSPDGCH DPACD
+Sbjct  98   CAVLGLCCSPDGCHADPACD  117
+
+
+>sp|O42493|NEUI_TAKRU Isotocin-neurophysin IT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=155
+
+ Score = 94.5 bits (234),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 45/79 (57%), Positives = 59/79 (75%), Gaps = 1/79 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GGR  60
+            R C+ CGPG +GRCFGP ICCG+  GC +G+ E+ RC EENYL +PCQ+G +PCGS GG 
+Sbjct  39   RKCMSCGPGDRGRCFGPGICCGESFGCLMGSPESARCAEENYLLTPCQAGGRPCGSEGGL  98
+
+Query  61   CAAAGICCSPDGCHEDPAC  79
+            CA++G+CC  + C  D +C
+Sbjct  99   CASSGLCCDAESCTMDQSC  117
+
+
+>sp|P16229|NEU4_CATCO Vasotocin-neurophysin VT 2 OS=Catostomus 
+commersonii OX=7971 PE=2 SV=1
+Length=155
+
+ Score = 93.4 bits (231),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 51/81 (63%), Positives = 57/81 (70%), Gaps = 1/81 (1%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSG-GR  60
+            R CL CGPG KGRC GPSICCG+E+GC VG+    RCQEE YLPSPCQ+  K CGS  G 
+Sbjct  40   RQCLACGPGDKGRCLGPSICCGEEIGCLVGSPWMARCQEEEYLPSPCQTAGKLCGSDAGP  99
+
+Query  61   CAAAGICCSPDGCHEDPACDP  81
+            CAA G+CC  +GC  DP C  
+Sbjct  100  CAAPGVCCGTEGCKLDPNCSE  120
+
+
+>sp|P15444|NEU1_STRCA Neurophysin 1 OS=Struthio camelus OX=8801 
+PE=1 SV=1
+Length=93
+
+ Score = 90.3 bits (223),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 54/83 (65%), Positives = 68/83 (82%), Gaps = 1/83 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG-SGG  59
+           +R C+PCGP  KG CFGP+ICCG+ELGC+ GT+E LRCQEEN+LP+PC+SG+KPCG + G
+Sbjct  7   IRKCMPCGPRNKGHCFGPNICCGEELGCYFGTSETLRCQEENFLPTPCESGRKPCGNNEG  66
+
+Query  60  RCAAAGICCSPDGCHEDPACDPF  82
+            CAA+GICCS +GC  D +CD  
+Sbjct  67  SCAASGICCSNEGCMVDSSCDQE  89
+
+
+>sp|O42499|NEUV_TAKRU Vasotocin-neurophysin VT 1 OS=Takifugu rubripes 
+OX=31033 PE=3 SV=1
+Length=153
+
+ Score = 91.1 bits (225),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 45/80 (56%), Positives = 59/80 (74%), Gaps = 1/80 (1%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS-GG  59
+            +R C+ CGP  +GRCFGP+ICCG+ LGC +G+ E  RC  ENYL +PCQ+G +PCGS GG
+Sbjct  38   IRQCMSCGPRDRGRCFGPNICCGEALGCLMGSPETARCAGENYLLTPCQAGGRPCGSEGG  97
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+            RCA +G+CC+ + C  D  C
+Sbjct  98   RCAVSGLCCNSESCAVDSDC  117
+
+
+>sp|Q00945|CONO_LYMST Conopressin/neurophysin OS=Lymnaea stagnalis 
+OX=6523 PE=1 SV=1
+Length=155
+
+ Score = 91.1 bits (225),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 42/83 (51%), Positives = 50/83 (60%), Gaps = 2/83 (2%)
+
+Query  2    RTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGS--GG  59
+            R C+ CGPGG G+C GPSICCG + GC VGTAEA  CQ+EN   +PC    + CGS   G
+Sbjct  48   RECMKCGPGGTGQCVGPSICCGQDFGCHVGTAEAAVCQQENDSSTPCLVKGEACGSRDAG  107
+
+Query  60   RCAAAGICCSPDGCHEDPACDPF  82
+             C A GICC  + C  +  C   
+Sbjct  108  NCVADGICCDSESCAVNDRCRDL  130
+
+
+>sp|P35519|NEU1_ANSAN Neurophysin 1 OS=Anser anser anser OX=8844 
+PE=1 SV=1
+Length=93
+
+ Score = 87.2 bits (215),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 56/81 (69%), Positives = 67/81 (83%), Gaps = 1/81 (1%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGG-  59
+           VR CLPCGP  +GRCFGP ICCG+ELGC++GT E LRCQEE++LP+PC+SG+KPCG  G 
+Sbjct  7   VRKCLPCGPRNRGRCFGPRICCGEELGCYLGTPETLRCQEESFLPTPCESGRKPCGGDGA  66
+
+Query  60  RCAAAGICCSPDGCHEDPACD  80
+            CAA GICCS +GC  DPAC+
+Sbjct  67  SCAAPGICCSSEGCVADPACE  87
+
+
+>sp|P32005|NEU1_PAPHA Oxytocin-neurophysin 1 (Fragment) OS=Papio 
+hamadryas OX=9557 GN=OXT PE=2 SV=1
+Length=85
+
+ Score = 85.3 bits (210),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 65/73 (89%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  1   VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCGSGGR  60
+           VR CLPCGPGGKGRCFGP+ICC +ELGCFVGTAEALRCQEENYLPSPCQSGQK CGSGGR
+Sbjct  13  VRKCLPCGPGGKGRCFGPNICCAEELGCFVGTAEALRCQEENYLPSPCQSGQKACGSGGR  72
+
+Query  61  CAAAGICCSPDGC  73
+           CA  G+CCSPDGC
+Sbjct  73  CAVFGLCCSPDGC  85
+
+
+>sp|P0DN42|TESS_CINAN Terepressin/terephysin OS=Cinguloterebra 
+anilis OX=553697 PE=2 SV=1
+Length=134
+
+ Score = 77.2 bits (189),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 39/82 (48%), Positives = 48/82 (59%), Gaps = 2/82 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTPEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPACD  80
+            G C A GICC  D C  +  C 
+Sbjct  113  GNCVADGICCVEDACSFNSLCR  134
+
+
+>sp|P0DN43|TESS_TERSU Terepressin/terephysin OS=Terebra subulata 
+OX=89435 PE=2 SV=1
+Length=134
+
+ Score = 76.0 bits (186),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 39/82 (48%), Positives = 49/82 (60%), Gaps = 2/82 (2%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPCG--SG  58
+             R C+ CGP G G+C GPSICCG  +GC +GT+EA  CQ+EN   +PC    + CG  + 
+Sbjct  53   TRQCMSCGPEGVGQCVGPSICCGLAIGCLMGTSEAEVCQKENESSAPCAVSGRHCGMDNT  112
+
+Query  59   GRCAAAGICCSPDGCHEDPACD  80
+            G C A GICC  D C  +  C 
+Sbjct  113  GNCVADGICCVEDACSFNSLCR  134
+
+
+>sp|P05486|CESS_CONGE Conophysin-conopressin OS=Conus geographus 
+OX=6491 PE=1 SV=2
+Length=128
+
+ Score = 69.1 bits (168),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 35/80 (44%), Positives = 39/80 (49%), Gaps = 7/80 (9%)
+
+Query  6    PCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPC------GSGG  59
+             C     G+C GP ICCG   GC +GTAEA RC EE+  P PCQ   + C         G
+Sbjct  49   ACMSCSFGQCVGPRICCGPR-GCEMGTAEANRCIEEDEDPIPCQVVGQHCDLNNPGNIHG  107
+
+Query  60   RCAAAGICCSPDGCHEDPAC  79
+             C A GICC  D C     C
+Sbjct  108  NCVANGICCVDDTCTIHTGC  127
+
+
+>sp|P58990|CXPH_CONRA Conophysin-R OS=Conus radiatus OX=61198 
+PE=1 SV=1
+Length=84
+
+ Score = 61.8 bits (149),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 35/80 (44%), Positives = 38/80 (48%), Gaps = 7/80 (9%)
+
+Query  6   PCGPGGKGRCFGPSICCGDELGCFVGTAEALRCQEENYLPSPCQSGQKPC------GSGG  59
+           PC     G+C GP ICCG   GC +GTAEA  C EE+  P PCQ     C         G
+Sbjct  5   PCMYCSFGQCVGPHICCG-PTGCEMGTAEANMCSEEDEDPIPCQVFGSDCALNNPDNIHG  63
+
+Query  60  RCAAAGICCSPDGCHEDPAC  79
+            C A GICC  D C     C
+Sbjct  64  HCVADGICCVDDTCTTHLGC  83
+
+
+>sp|Q7M428|NEU3_EPTST Vasotocin-neurophysin VT OS=Eptatretus stoutii 
+OX=7765 PE=2 SV=1
+Length=161
+
+ Score = 55.6 bits (133),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 37/88 (42%), Positives = 44/88 (50%), Gaps = 9/88 (10%)
+
+Query  1    VRTCLPCGPGGKGRCFGPSICCGDELGCFVGT------AEALRCQEENYLPSPCQSGQ-K  53
+            + +C  CG G  G+C GPSICCG  LG   G         +  C+ EN  P PC+ G   
+Sbjct  40   LHSCAACGLG--GQCVGPSICCGGLLGGGRGGGCIVGGPLSAPCKRENLHPEPCRPGGGS  97
+
+Query  54   PCGSGGRCAAAGICCSPDGCHEDPACDP  81
+             CG  G CAA GICC+   C  D  CD 
+Sbjct  98   SCGLEGICAAPGICCTDVTCSIDATCDD  125
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.154    0.615    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0472    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999386502
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

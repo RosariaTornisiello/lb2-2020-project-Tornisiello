@@ -1,0 +1,247 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1rwha2
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes (st...  63.5    8e-12
+sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes OX=...  55.1    7e-09
+
+
+>sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes 
+(strain DSM 16379 / KPA171202) OX=267747 GN=PPA0380 PE=3 SV=1
+Length=813
+
+ Score = 63.5 bits (153),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 40/119 (34%), Positives = 60/119 (50%), Gaps = 8/119 (7%)
+
+Query  2    YSVIRNDATAQSVE----FKTAKTTAAT---FWKPGMAGDLGASGPACVVFSRHGNELSL  54
+            ++V+RNDAT Q+V       T   T  T   FWKP   G +  + PA V      N++ +
+Sbjct  681  FTVLRNDATVQAVRSAGALLTKDPTVVTTLAFWKPATCGGVAVNRPALVQTRESANQMEV  740
+
+Query  55   AVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+             + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  741  VIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  798
+
+
+>sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes 
+OX=1747 PE=1 SV=1
+Length=812
+
+ Score = 55.1 bits (131),  Expect = 7e-09, Method: Compositional matrix adjust.
+ Identities = 39/120 (33%), Positives = 59/120 (49%), Gaps = 10/120 (8%)
+
+Query  2    YSVIRND--------ATAQSVEFKTAKTTAATFWKPGMAGDLGASGPACVVFSRHGNELS  53
+            ++V+RND        A A   +  T  TT A FWKP   G +  + PA V      N++ 
+Sbjct  680  FTVLRNDGNRPGRASAGALLTKDPTVVTTLA-FWKPATCGGVAVNRPALVQTRESANQME  738
+
+Query  54   LAVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+            + + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  739  VVIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  797
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.126    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+Results from round 2
+
+
+Query= d1rwha2
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes (st...  173     2e-50
+sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes OX=...  171     1e-49
+
+Sequences not found previously or not previously below threshold:
+
+sp|P59807|CABC1_PROVU Chondroitin sulfate ABC endolyase OS=Proteu...  42.9    2e-04
+
+
+>sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes 
+(strain DSM 16379 / KPA171202) OX=267747 GN=PPA0380 PE=3 SV=1
+Length=813
+
+ Score = 173 bits (438),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 40/119 (34%), Positives = 60/119 (50%), Gaps = 8/119 (7%)
+
+Query  2    YSVIRNDATAQSVE----FKTAKTTAAT---FWKPGMAGDLGASGPACVVFSRHGNELSL  54
+            ++V+RNDAT Q+V       T   T  T   FWKP   G +  + PA V      N++ +
+Sbjct  681  FTVLRNDATVQAVRSAGALLTKDPTVVTTLAFWKPATCGGVAVNRPALVQTRESANQMEV  740
+
+Query  55   AVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+             + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  741  VIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  798
+
+
+>sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes 
+OX=1747 PE=1 SV=1
+Length=812
+
+ Score = 171 bits (432),  Expect = 1e-49, Method: Composition-based stats.
+ Identities = 39/120 (33%), Positives = 59/120 (49%), Gaps = 10/120 (8%)
+
+Query  2    YSVIRND--------ATAQSVEFKTAKTTAATFWKPGMAGDLGASGPACVVFSRHGNELS  53
+            ++V+RND        A A   +  T  TT A FWKP   G +  + PA V      N++ 
+Sbjct  680  FTVLRNDGNRPGRASAGALLTKDPTVVTTLA-FWKPATCGGVAVNRPALVQTRESANQME  738
+
+Query  54   LAVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+            + + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  739  VVIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  797
+
+
+>sp|P59807|CABC1_PROVU Chondroitin sulfate ABC endolyase OS=Proteus 
+vulgaris OX=585 PE=1 SV=2
+Length=1021
+
+ Score = 42.9 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 21/93 (23%), Positives = 37/93 (40%), Gaps = 10/93 (11%)
+
+Query  2    YSVIRNDATAQSVEFKTAKTTAATFWKPGMAGD---LGASGPACVVFSRHGNELSLAVSE  58
+            Y V+R D     +  K +  T   F++P    D      + PA V+  R  + L ++   
+Sbjct  900  YQVLRKDKDVHIILDKLSNVTGYAFYQPASIEDKWIKKVNKPAIVMTHRQKDTLIVSAVT  959
+
+Query  59   P----TQKAAGLTLTLP---EGTWSSVLEGAGT  84
+            P    T++ A   +T+     G W S  + +  
+Sbjct  960  PDLNMTRQKAATPVTINVTINGKWQSADKNSEV  992
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.122    0.324    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0373    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+Results from round 3
+
+
+Query= d1rwha2
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes (st...  160     1e-45
+sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes OX=...  158     5e-45
+sp|P59807|CABC1_PROVU Chondroitin sulfate ABC endolyase OS=Proteu...  111     2e-28
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P0CZ01|HYSA_CUTAK Hyaluronate lyase OS=Cutibacterium acnes 
+(strain DSM 16379 / KPA171202) OX=267747 GN=PPA0380 PE=3 SV=1
+Length=813
+
+ Score = 160 bits (403),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 40/119 (34%), Positives = 60/119 (50%), Gaps = 8/119 (7%)
+
+Query  2    YSVIRNDATAQSVE----FKTAKTTAAT---FWKPGMAGDLGASGPACVVFSRHGNELSL  54
+            ++V+RNDAT Q+V       T   T  T   FWKP   G +  + PA V      N++ +
+Sbjct  681  FTVLRNDATVQAVRSAGALLTKDPTVVTTLAFWKPATCGGVAVNRPALVQTRESANQMEV  740
+
+Query  55   AVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+             + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  741  VIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  798
+
+
+>sp|P0CZ00|HYSA_CUTAC Hyaluronate lyase OS=Cutibacterium acnes 
+OX=1747 PE=1 SV=1
+Length=812
+
+ Score = 158 bits (398),  Expect = 5e-45, Method: Composition-based stats.
+ Identities = 39/120 (33%), Positives = 59/120 (49%), Gaps = 10/120 (8%)
+
+Query  2    YSVIRND--------ATAQSVEFKTAKTTAATFWKPGMAGDLGASGPACVVFSRHGNELS  53
+            ++V+RND        A A   +  T  TT A FWKP   G +  + PA V      N++ 
+Sbjct  680  FTVLRNDGNRPGRASAGALLTKDPTVVTTLA-FWKPATCGGVAVNRPALVQTRESANQME  738
+
+Query  54   LAVSEPTQKAAGLTLTLPEGTWSSVLEGAGTLGTDADGRSTLTLDTTGLSGKTKLIKLKR  113
+            + + EPTQK   LT+T+ EG+W      +    +  +   TL +DT GL G++  + L R
+Sbjct  739  VVIVEPTQKRGSLTVTI-EGSWKVKTADSHVDVSCENAAGTLHVDTAGLGGQSVRVTLAR  797
+
+
+>sp|P59807|CABC1_PROVU Chondroitin sulfate ABC endolyase OS=Proteus 
+vulgaris OX=585 PE=1 SV=2
+Length=1021
+
+ Score = 111 bits (276),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 21/93 (23%), Positives = 37/93 (40%), Gaps = 10/93 (11%)
+
+Query  2    YSVIRNDATAQSVEFKTAKTTAATFWKPGMAGD---LGASGPACVVFSRHGNELSLAVSE  58
+            Y V+R D     +  K +  T   F++P    D      + PA V+  R  + L ++   
+Sbjct  900  YQVLRKDKDVHIILDKLSNVTGYAFYQPASIEDKWIKKVNKPAIVMTHRQKDTLIVSAVT  959
+
+Query  59   P----TQKAAGLTLTLP---EGTWSSVLEGAGT  84
+            P    T++ A   +T+     G W S  + +  
+Sbjct  960  PDLNMTRQKAATPVTINVTINGKWQSADKNSEV  992
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.119    0.303    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0365    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5030061568
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

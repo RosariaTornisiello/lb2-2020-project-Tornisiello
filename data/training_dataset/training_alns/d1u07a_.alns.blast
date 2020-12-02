@@ -1,0 +1,791 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1u07a_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain K12...  189     2e-61
+sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (stra...  160     5e-50
+sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573...  143     3e-43
+sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain...  136     1e-40
+sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 G...  114     7e-32
+sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica OX=6...  104     6e-28
+sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (stra...  78.2    2e-17
+
+
+>sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain 
+K12) OX=83333 GN=tonB PE=1 SV=2
+Length=239
+
+ Score = 189 bits (481),  Expect = 2e-61, Method: Compositional matrix adjust.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA
+Sbjct  150  ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  209
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MRRWRYEPGKPGSGIVVNILFKINGTTEIQ
+Sbjct  210  MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  239
+
+
+>sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (strain 
+LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=tonB PE=3 SV=2
+Length=242
+
+ Score = 160 bits (405),  Expect = 5e-50, Method: Compositional matrix adjust.
+ Identities = 74/89 (83%), Positives = 85/89 (96%), Gaps = 0/89 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            +GPRALSRNQPQYPARAQALRIEG+VKVKFDVT  GRV+NVQILSA+PANMFEREVKNAM
+Sbjct  154  TGPRALSRNQPQYPARAQALRIEGRVKVKFDVTSAGRVENVQILSAQPANMFEREVKNAM  213
+
+Query  62   RRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            R+WRYE GKPGSG+VVNI+F++NGT +I+
+Sbjct  214  RKWRYEAGKPGSGLVVNIIFRLNGTAQIE  242
+
+
+>sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573 
+GN=tonB PE=3 SV=1
+Length=243
+
+ Score = 143 bits (360),  Expect = 3e-43, Method: Compositional matrix adjust.
+ Identities = 63/84 (75%), Positives = 77/84 (92%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGPRA+SR QP YPARAQALRIEG V+VKFDV+PDGR+DN+QILSA+PANMFEREVK+AM
+Sbjct  156  SGPRAISRVQPSYPARAQALRIEGTVRVKFDVSPDGRIDNLQILSAQPANMFEREVKSAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            RRWRY+ G+PG+G+ + I F++NG
+Sbjct  216  RRWRYQQGRPGTGVTMTIKFRLNG  239
+
+
+>sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain 
+ATCC 13048 / DSM 30053 / JCM 1235 / KCTC 2190 / NBRC 13534 
+/ NCIMB 10102 / NCTC 10006) OX=1028307 GN=tonB PE=3 SV=2
+Length=243
+
+ Score = 136 bits (343),  Expect = 1e-40, Method: Compositional matrix adjust.
+ Identities = 61/84 (73%), Positives = 73/84 (87%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGP+AL R  P YP RAQALRIEG V+VKFDVT DGRV+N+QILSAKPANMFER+VK AM
+Sbjct  156  SGPKALKRGDPSYPQRAQALRIEGDVRVKFDVTADGRVENIQILSAKPANMFERDVKTAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            R+WRYE G+PG+G+ +NI F++NG
+Sbjct  216  RKWRYEAGRPGTGLTMNIKFRLNG  239
+
+
+>sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 
+GN=tonB PE=3 SV=1
+Length=247
+
+ Score = 114 bits (285),  Expect = 7e-32, Method: Compositional matrix adjust.
+ Identities = 56/87 (64%), Positives = 66/87 (76%), Gaps = 1/87 (1%)
+
+Query  3    GPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR  62
+            GPR +SR  P YP RAQAL+IEG V+V+FD+  DGRV NV+ILSA+P NMFEREVK AMR
+Sbjct  161  GPRPISRANPLYPPRAQALQIEGNVRVQFDIDSDGRVSNVRILSAEPRNMFEREVKQAMR  220
+
+Query  63   RWRYEPGKPGSGIVVNILFKINGTTEI  89
+            +WRYE  K      V I FK+NGTTE+
+Sbjct  221  KWRYE-AKEAKDRTVTIRFKLNGTTEL  246
+
+
+>sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica 
+OX=630 GN=tonB PE=3 SV=1
+Length=255
+
+ Score = 104 bits (259),  Expect = 6e-28, Method: Compositional matrix adjust.
+ Identities = 49/90 (54%), Positives = 65/90 (72%), Gaps = 1/90 (1%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ++GP+ALS+ +P YPARA AL +EGQVKV++D+  +GRV NV+IL A P N FEREVK  
+Sbjct  167  STGPKALSKAKPTYPARALALGVEGQVKVQYDIDENGRVTNVRILEATPRNTFEREVKQV  226
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MR+WR+E        V  ++FKI GTTE+ 
+Sbjct  227  MRKWRFE-AVAAKDYVTTVVFKIGGTTEMD  255
+
+
+>sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tonB PE=1 SV=2
+Length=342
+
+ Score = 78.2 bits (191),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 39/85 (46%), Positives = 53/85 (62%), Gaps = 5/85 (6%)
+
+Query  5    RALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRW  64
+            + L  + P YP  AQA  IEG+VKV F +T DGR+D++Q+L + P+ MF+REV+ AM +W
+Sbjct  255  KPLRMDPPVYPRMAQARGIEGRVKVLFTITSDGRIDDIQVLESVPSRMFDREVRQAMAKW  314
+
+Query  65   RYEPGKPGSGIVVN-----ILFKIN  84
+            R+EP   G  IV         FKI 
+Sbjct  315  RFEPRVSGGKIVARQATKMFFFKIE  339
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.134    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 2
+
+
+Query= d1u07a_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain K12...  156     1e-48
+sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (stra...  147     6e-45
+sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain...  141     2e-42
+sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica OX=6...  139     8e-42
+sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573...  138     3e-41
+sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 G...  135     5e-40
+sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (stra...  117     2e-32
+
+Sequences not found previously or not previously below threshold:
+
+sp|P0C7M1|TONB_XANCP Protein TonB OS=Xanthomonas campestris pv. c...  54.3    4e-09
+sp|B0RLE5|TONB_XANCB Protein TonB OS=Xanthomonas campestris pv. c...  54.3    4e-09
+sp|Q9ZJP4|TONB_HELPJ Protein TonB OS=Helicobacter pylori (strain ...  45.1    1e-05
+sp|O25899|TONB_HELPY Protein TonB OS=Helicobacter pylori (strain ...  45.1    1e-05
+sp|O52042|TONB_VIBCH Protein TonB OS=Vibrio cholerae serotype O1 ...  45.1    1e-05
+sp|Q9RMT3|TONB2_PSEAE Protein tonB2 OS=Pseudomonas aeruginosa (st...  44.7    2e-05
+
+
+>sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain 
+K12) OX=83333 GN=tonB PE=1 SV=2
+Length=239
+
+ Score = 156 bits (395),  Expect = 1e-48, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA
+Sbjct  150  ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  209
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MRRWRYEPGKPGSGIVVNILFKINGTTEIQ
+Sbjct  210  MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  239
+
+
+>sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (strain 
+LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=tonB PE=3 SV=2
+Length=242
+
+ Score = 147 bits (371),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 74/89 (83%), Positives = 85/89 (96%), Gaps = 0/89 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            +GPRALSRNQPQYPARAQALRIEG+VKVKFDVT  GRV+NVQILSA+PANMFEREVKNAM
+Sbjct  154  TGPRALSRNQPQYPARAQALRIEGRVKVKFDVTSAGRVENVQILSAQPANMFEREVKNAM  213
+
+Query  62   RRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            R+WRYE GKPGSG+VVNI+F++NGT +I+
+Sbjct  214  RKWRYEAGKPGSGLVVNIIFRLNGTAQIE  242
+
+
+>sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain 
+ATCC 13048 / DSM 30053 / JCM 1235 / KCTC 2190 / NBRC 13534 
+/ NCIMB 10102 / NCTC 10006) OX=1028307 GN=tonB PE=3 SV=2
+Length=243
+
+ Score = 141 bits (355),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 61/84 (73%), Positives = 73/84 (87%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGP+AL R  P YP RAQALRIEG V+VKFDVT DGRV+N+QILSAKPANMFER+VK AM
+Sbjct  156  SGPKALKRGDPSYPQRAQALRIEGDVRVKFDVTADGRVENIQILSAKPANMFERDVKTAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            R+WRYE G+PG+G+ +NI F++NG
+Sbjct  216  RKWRYEAGRPGTGLTMNIKFRLNG  239
+
+
+>sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica 
+OX=630 GN=tonB PE=3 SV=1
+Length=255
+
+ Score = 139 bits (351),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 49/90 (54%), Positives = 65/90 (72%), Gaps = 1/90 (1%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ++GP+ALS+ +P YPARA AL +EGQVKV++D+  +GRV NV+IL A P N FEREVK  
+Sbjct  167  STGPKALSKAKPTYPARALALGVEGQVKVQYDIDENGRVTNVRILEATPRNTFEREVKQV  226
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MR+WR+E        V  ++FKI GTTE+ 
+Sbjct  227  MRKWRFE-AVAAKDYVTTVVFKIGGTTEMD  255
+
+
+>sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573 
+GN=tonB PE=3 SV=1
+Length=243
+
+ Score = 138 bits (347),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 63/84 (75%), Positives = 77/84 (92%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGPRA+SR QP YPARAQALRIEG V+VKFDV+PDGR+DN+QILSA+PANMFEREVK+AM
+Sbjct  156  SGPRAISRVQPSYPARAQALRIEGTVRVKFDVSPDGRIDNLQILSAQPANMFEREVKSAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            RRWRY+ G+PG+G+ + I F++NG
+Sbjct  216  RRWRYQQGRPGTGVTMTIKFRLNG  239
+
+
+>sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 
+GN=tonB PE=3 SV=1
+Length=247
+
+ Score = 135 bits (339),  Expect = 5e-40, Method: Composition-based stats.
+ Identities = 56/88 (64%), Positives = 66/88 (75%), Gaps = 1/88 (1%)
+
+Query  3    GPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR  62
+            GPR +SR  P YP RAQAL+IEG V+V+FD+  DGRV NV+ILSA+P NMFEREVK AMR
+Sbjct  161  GPRPISRANPLYPPRAQALQIEGNVRVQFDIDSDGRVSNVRILSAEPRNMFEREVKQAMR  220
+
+Query  63   RWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            +WRYE  K      V I FK+NGTTE+ 
+Sbjct  221  KWRYE-AKEAKDRTVTIRFKLNGTTELN  247
+
+
+>sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tonB PE=1 SV=2
+Length=342
+
+ Score = 117 bits (294),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 39/85 (46%), Positives = 53/85 (62%), Gaps = 5/85 (6%)
+
+Query  5    RALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRW  64
+            + L  + P YP  AQA  IEG+VKV F +T DGR+D++Q+L + P+ MF+REV+ AM +W
+Sbjct  255  KPLRMDPPVYPRMAQARGIEGRVKVLFTITSDGRIDDIQVLESVPSRMFDREVRQAMAKW  314
+
+Query  65   RYEPGKPGSGIVVN-----ILFKIN  84
+            R+EP   G  IV         FKI 
+Sbjct  315  RFEPRVSGGKIVARQATKMFFFKIE  339
+
+
+>sp|P0C7M1|TONB_XANCP Protein TonB OS=Xanthomonas campestris pv. 
+campestris (strain ATCC 33913 / DSM 3586 / NCPPB 528 / LMG 
+568 / P 25) OX=190485 GN=tonB PE=3 SV=1
+Length=223
+
+ Score = 54.3 bits (129),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 38/82 (46%), Gaps = 5/82 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            + N P+YP  A    ++G+V +  DV  +G V NV +  +      +R   +A R+W++ 
+Sbjct  142  NMNPPKYPPAAFRAGVQGEVILIVDVDANGNVTNVSVEKSSRNRDLDRAAMDAARKWKFN  201
+
+Query  68   PG-----KPGSGIVVNILFKIN  84
+                   K    + V + F +N
+Sbjct  202  ASTVNGQKAAGRVRVPVNFALN  223
+
+
+>sp|B0RLE5|TONB_XANCB Protein TonB OS=Xanthomonas campestris pv. 
+campestris (strain B100) OX=509169 GN=tonB PE=3 SV=1
+Length=223
+
+ Score = 54.3 bits (129),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 38/82 (46%), Gaps = 5/82 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            + N P+YP  A    ++G+V +  DV  +G V NV +  +      +R   +A R+W++ 
+Sbjct  142  NMNPPKYPPAAFRAGVQGEVILIVDVDANGNVTNVSVEKSSRNRDLDRAAMDAARKWKFN  201
+
+Query  68   PG-----KPGSGIVVNILFKIN  84
+                   K    + V + F +N
+Sbjct  202  ASTVNGQKAAGRVRVPVNFALN  223
+
+
+>sp|Q9ZJP4|TONB_HELPJ Protein TonB OS=Helicobacter pylori (strain 
+J99 / ATCC 700824) OX=85963 GN=tonB PE=3 SV=1
+Length=280
+
+ Score = 45.1 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 26/49 (53%), Gaps = 0/49 (0%)
+
+Query  14   YPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR  62
+            YP  AQ   IEG+V V F +  DG V +++++ +   ++       A++
+Sbjct  206  YPKMAQIRGIEGEVLVSFTINADGSVTDIKVVKSNTTDILNHAALEAIK  254
+
+
+>sp|O25899|TONB_HELPY Protein TonB OS=Helicobacter pylori (strain 
+ATCC 700392 / 26695) OX=85962 GN=tonB PE=1 SV=1
+Length=285
+
+ Score = 45.1 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 26/49 (53%), Gaps = 0/49 (0%)
+
+Query  14   YPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR  62
+            YP  AQ   IEG+V V F +  DG V +++++ +   ++       A++
+Sbjct  211  YPKMAQIRGIEGEVLVSFTINADGSVTDIKVVKSNTTDILNHAALEAIK  259
+
+
+>sp|O52042|TONB_VIBCH Protein TonB OS=Vibrio cholerae serotype 
+O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 GN=tonB 
+PE=3 SV=2
+Length=244
+
+ Score = 45.1 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 40/83 (48%), Gaps = 5/83 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            ++ QP+YP  A+   IEG V  +  +   G     Q+LS+      ++    A+++W++ 
+Sbjct  162  AQVQPRYPRIARKRGIEGTVMYEIWLDAQGNQIKQQLLSSSGTEALDQSALEAIKQWKFS  221
+
+Query  68   P----GKP-GSGIVVNILFKING  85
+            P    G P    I + I FK+ G
+Sbjct  222  PHILDGVPVAHRIHIPIRFKLEG  244
+
+
+>sp|Q9RMT3|TONB2_PSEAE Protein tonB2 OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tonB2 PE=3 SV=1
+Length=270
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 35/78 (45%), Gaps = 5/78 (6%)
+
+Query  12   PQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKP  71
+            P+YPA A     EG V ++  V   G    +Q+  +      ++    A++RW + P K 
+Sbjct  193  PEYPALAMRRGWEGTVLLRVHVLASGSPSEIQVQKSSGREALDQAAVKAVKRWSFVPAKR  252
+
+Query  72   GSG-----IVVNILFKIN  84
+            G       + V I FK+N
+Sbjct  253  GDKAEDGWVSVPIDFKLN  270
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.131    0.360    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+Results from round 3
+
+
+Query= d1u07a_
+
+Length=90
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain K12...  139     1e-41
+sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (stra...  129     1e-37
+sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain...  123     1e-35
+sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica OX=6...  123     2e-35
+sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 G...  121     1e-34
+sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573...  120     2e-34
+sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (stra...  106     6e-28
+sp|P0C7M1|TONB_XANCP Protein TonB OS=Xanthomonas campestris pv. c...  99.0    4e-26
+sp|B0RLE5|TONB_XANCB Protein TonB OS=Xanthomonas campestris pv. c...  99.0    4e-26
+sp|O52042|TONB_VIBCH Protein TonB OS=Vibrio cholerae serotype O1 ...  93.6    6e-24
+sp|Q9RMT3|TONB2_PSEAE Protein tonB2 OS=Pseudomonas aeruginosa (st...  92.9    2e-23
+sp|Q9ZJP4|TONB_HELPJ Protein TonB OS=Helicobacter pylori (strain ...  71.7    2e-15
+sp|O25899|TONB_HELPY Protein TonB OS=Helicobacter pylori (strain ...  71.3    3e-15
+
+Sequences not found previously or not previously below threshold:
+
+sp|P42872|TONB_HAEIN Protein TonB OS=Haemophilus influenzae (stra...  50.1    1e-07
+sp|O06432|TONB_NEIGO Protein TonB OS=Neisseria gonorrhoeae OX=485...  50.1    2e-07
+sp|P57003|TONB_NEIMA Protein TonB OS=Neisseria meningitidis serog...  49.3    4e-07
+sp|P57004|TONB_NEIMB Protein TonB OS=Neisseria meningitidis serog...  48.9    5e-07
+sp|P95374|TONB_NEIMC Protein TonB OS=Neisseria meningitidis serog...  47.8    1e-06
+sp|O07650|TONB_CAMCO Protein TonB OS=Campylobacter coli OX=195 GN...  45.5    8e-06
+sp|Q05613|TONB_PSEPU Protein TonB OS=Pseudomonas putida OX=303 GN...  43.2    5e-05
+
+
+>sp|P02929|TONB_ECOLI Protein TonB OS=Escherichia coli (strain 
+K12) OX=83333 GN=tonB PE=1 SV=2
+Length=239
+
+ Score = 139 bits (349),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 90/90 (100%), Positives = 90/90 (100%), Gaps = 0/90 (0%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA
+Sbjct  150  ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  209
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MRRWRYEPGKPGSGIVVNILFKINGTTEIQ
+Sbjct  210  MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  239
+
+
+>sp|P25945|TONB_SALTY Protein TonB OS=Salmonella typhimurium (strain 
+LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=tonB PE=3 SV=2
+Length=242
+
+ Score = 129 bits (323),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 74/89 (83%), Positives = 85/89 (96%), Gaps = 0/89 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            +GPRALSRNQPQYPARAQALRIEG+VKVKFDVT  GRV+NVQILSA+PANMFEREVKNAM
+Sbjct  154  TGPRALSRNQPQYPARAQALRIEGRVKVKFDVTSAGRVENVQILSAQPANMFEREVKNAM  213
+
+Query  62   RRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            R+WRYE GKPGSG+VVNI+F++NGT +I+
+Sbjct  214  RKWRYEAGKPGSGLVVNIIFRLNGTAQIE  242
+
+
+>sp|P46383|TONB_KLEAK Protein TonB OS=Klebsiella aerogenes (strain 
+ATCC 13048 / DSM 30053 / JCM 1235 / KCTC 2190 / NBRC 13534 
+/ NCIMB 10102 / NCTC 10006) OX=1028307 GN=tonB PE=3 SV=2
+Length=243
+
+ Score = 123 bits (309),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 61/84 (73%), Positives = 73/84 (87%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGP+AL R  P YP RAQALRIEG V+VKFDVT DGRV+N+QILSAKPANMFER+VK AM
+Sbjct  156  SGPKALKRGDPSYPQRAQALRIEGDVRVKFDVTADGRVENIQILSAKPANMFERDVKTAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            R+WRYE G+PG+G+ +NI F++NG
+Sbjct  216  RKWRYEAGRPGTGLTMNIKFRLNG  239
+
+
+>sp|Q05740|TONB_YEREN Protein TonB OS=Yersinia enterocolitica 
+OX=630 GN=tonB PE=3 SV=1
+Length=255
+
+ Score = 123 bits (309),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 49/90 (54%), Positives = 65/90 (72%), Gaps = 1/90 (1%)
+
+Query  1    ASGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNA  60
+            ++GP+ALS+ +P YPARA AL +EGQVKV++D+  +GRV NV+IL A P N FEREVK  
+Sbjct  167  STGPKALSKAKPTYPARALALGVEGQVKVQYDIDENGRVTNVRILEATPRNTFEREVKQV  226
+
+Query  61   MRRWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            MR+WR+E        V  ++FKI GTTE+ 
+Sbjct  227  MRKWRFE-AVAAKDYVTTVVFKIGGTTEMD  255
+
+
+>sp|P26185|TONB_SERMA Protein TonB OS=Serratia marcescens OX=615 
+GN=tonB PE=3 SV=1
+Length=247
+
+ Score = 121 bits (303),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 56/88 (64%), Positives = 66/88 (75%), Gaps = 1/88 (1%)
+
+Query  3    GPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR  62
+            GPR +SR  P YP RAQAL+IEG V+V+FD+  DGRV NV+ILSA+P NMFEREVK AMR
+Sbjct  161  GPRPISRANPLYPPRAQALQIEGNVRVQFDIDSDGRVSNVRILSAEPRNMFEREVKQAMR  220
+
+Query  63   RWRYEPGKPGSGIVVNILFKINGTTEIQ  90
+            +WRYE  K      V I FK+NGTTE+ 
+Sbjct  221  KWRYE-AKEAKDRTVTIRFKLNGTTELN  247
+
+
+>sp|P45610|TONB_KLEPN Protein TonB OS=Klebsiella pneumoniae OX=573 
+GN=tonB PE=3 SV=1
+Length=243
+
+ Score = 120 bits (301),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 63/84 (75%), Positives = 77/84 (92%), Gaps = 0/84 (0%)
+
+Query  2    SGPRALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAM  61
+            SGPRA+SR QP YPARAQALRIEG V+VKFDV+PDGR+DN+QILSA+PANMFEREVK+AM
+Sbjct  156  SGPRAISRVQPSYPARAQALRIEGTVRVKFDVSPDGRIDNLQILSAQPANMFEREVKSAM  215
+
+Query  62   RRWRYEPGKPGSGIVVNILFKING  85
+            RRWRY+ G+PG+G+ + I F++NG
+Sbjct  216  RRWRYQQGRPGTGVTMTIKFRLNG  239
+
+
+>sp|Q51368|TONB_PSEAE Protein TonB OS=Pseudomonas aeruginosa (strain 
+ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tonB PE=1 SV=2
+Length=342
+
+ Score = 106 bits (264),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 39/85 (46%), Positives = 53/85 (62%), Gaps = 5/85 (6%)
+
+Query  5    RALSRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRW  64
+            + L  + P YP  AQA  IEG+VKV F +T DGR+D++Q+L + P+ MF+REV+ AM +W
+Sbjct  255  KPLRMDPPVYPRMAQARGIEGRVKVLFTITSDGRIDDIQVLESVPSRMFDREVRQAMAKW  314
+
+Query  65   RYEPGKPGSGIVVN-----ILFKIN  84
+            R+EP   G  IV         FKI 
+Sbjct  315  RFEPRVSGGKIVARQATKMFFFKIE  339
+
+
+>sp|P0C7M1|TONB_XANCP Protein TonB OS=Xanthomonas campestris pv. 
+campestris (strain ATCC 33913 / DSM 3586 / NCPPB 528 / LMG 
+568 / P 25) OX=190485 GN=tonB PE=3 SV=1
+Length=223
+
+ Score = 99.0 bits (245),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 38/82 (46%), Gaps = 5/82 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            + N P+YP  A    ++G+V +  DV  +G V NV +  +      +R   +A R+W++ 
+Sbjct  142  NMNPPKYPPAAFRAGVQGEVILIVDVDANGNVTNVSVEKSSRNRDLDRAAMDAARKWKFN  201
+
+Query  68   PG-----KPGSGIVVNILFKIN  84
+                   K    + V + F +N
+Sbjct  202  ASTVNGQKAAGRVRVPVNFALN  223
+
+
+>sp|B0RLE5|TONB_XANCB Protein TonB OS=Xanthomonas campestris pv. 
+campestris (strain B100) OX=509169 GN=tonB PE=3 SV=1
+Length=223
+
+ Score = 99.0 bits (245),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 38/82 (46%), Gaps = 5/82 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            + N P+YP  A    ++G+V +  DV  +G V NV +  +      +R   +A R+W++ 
+Sbjct  142  NMNPPKYPPAAFRAGVQGEVILIVDVDANGNVTNVSVEKSSRNRDLDRAAMDAARKWKFN  201
+
+Query  68   PG-----KPGSGIVVNILFKIN  84
+                   K    + V + F +N
+Sbjct  202  ASTVNGQKAAGRVRVPVNFALN  223
+
+
+>sp|O52042|TONB_VIBCH Protein TonB OS=Vibrio cholerae serotype 
+O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 GN=tonB 
+PE=3 SV=2
+Length=244
+
+ Score = 93.6 bits (231),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 40/83 (48%), Gaps = 5/83 (6%)
+
+Query  8    SRNQPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYE  67
+            ++ QP+YP  A+   IEG V  +  +   G     Q+LS+      ++    A+++W++ 
+Sbjct  162  AQVQPRYPRIARKRGIEGTVMYEIWLDAQGNQIKQQLLSSSGTEALDQSALEAIKQWKFS  221
+
+Query  68   P----GKP-GSGIVVNILFKING  85
+            P    G P    I + I FK+ G
+Sbjct  222  PHILDGVPVAHRIHIPIRFKLEG  244
+
+
+>sp|Q9RMT3|TONB2_PSEAE Protein tonB2 OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 
+12228 / 1C / PRS 101 / PAO1) OX=208964 GN=tonB2 PE=3 SV=1
+Length=270
+
+ Score = 92.9 bits (229),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 35/78 (45%), Gaps = 5/78 (6%)
+
+Query  12   PQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKP  71
+            P+YPA A     EG V ++  V   G    +Q+  +      ++    A++RW + P K 
+Sbjct  193  PEYPALAMRRGWEGTVLLRVHVLASGSPSEIQVQKSSGREALDQAAVKAVKRWSFVPAKR  252
+
+Query  72   GSG-----IVVNILFKIN  84
+            G       + V I FK+N
+Sbjct  253  GDKAEDGWVSVPIDFKLN  270
+
+
+>sp|Q9ZJP4|TONB_HELPJ Protein TonB OS=Helicobacter pylori (strain 
+J99 / ATCC 700824) OX=85963 GN=tonB PE=3 SV=1
+Length=280
+
+ Score = 71.7 bits (174),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 17/73 (23%), Positives = 35/73 (48%), Gaps = 2/73 (3%)
+
+Query  13   QYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKPG  72
+            +YP  AQ   IEG+V V F +  DG V +++++ +   ++       A++   +   KP 
+Sbjct  205  RYPKMAQIRGIEGEVLVSFTINADGSVTDIKVVKSNTTDILNHAALEAIKSAAHLFPKPD  264
+
+Query  73   SGIV--VNILFKI  83
+              +   + I + +
+Sbjct  265  ETVHLKIPIAYSL  277
+
+
+>sp|O25899|TONB_HELPY Protein TonB OS=Helicobacter pylori (strain 
+ATCC 700392 / 26695) OX=85962 GN=tonB PE=1 SV=1
+Length=285
+
+ Score = 71.3 bits (173),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 17/67 (25%), Positives = 33/67 (49%), Gaps = 0/67 (0%)
+
+Query  13   QYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKPG  72
+            +YP  AQ   IEG+V V F +  DG V +++++ +   ++       A++   +   KP 
+Sbjct  210  RYPKMAQIRGIEGEVLVSFTINADGSVTDIKVVKSNTTDILNHAALEAIKSAAHLFPKPE  269
+
+Query  73   SGIVVNI  79
+              + + I
+Sbjct  270  ETVHLKI  276
+
+
+>sp|P42872|TONB_HAEIN Protein TonB OS=Haemophilus influenzae (strain 
+ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 GN=tonB 
+PE=3 SV=1
+Length=270
+
+ Score = 50.1 bits (118),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/75 (24%), Positives = 35/75 (47%), Gaps = 3/75 (4%)
+
+Query  13   QYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKPG  72
+            +YP RA+ +R +G+V V F+V  DG +   ++  +      ++   +A+   R    +P 
+Sbjct  196  RYPTRAKIMRKQGKVSVSFNVGADGSLSGAKVTKSSGDESLDKAALDAINVSRSVGTRPA  255
+
+Query  73   S---GIVVNILFKIN  84
+                 + V I F + 
+Sbjct  256  GFPSSLSVQISFTLQ  270
+
+
+>sp|O06432|TONB_NEIGO Protein TonB OS=Neisseria gonorrhoeae OX=485 
+GN=tonB PE=3 SV=1
+Length=283
+
+ Score = 50.1 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 15/74 (20%), Positives = 36/74 (49%), Gaps = 1/74 (1%)
+
+Query  11   QPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGK  70
+            +P YPA +     +G V +   V+P G V++V+++ +   +  +   + A +   ++   
+Sbjct  211  RPAYPALSMENDEQGMVVLSVLVSPGGHVESVKVVKSSGFSRLDNAARKAAQNGHFQAN-  269
+
+Query  71   PGSGIVVNILFKIN  84
+              +   V + F++N
+Sbjct  270  AWTEFKVPVKFELN  283
+
+
+>sp|P57003|TONB_NEIMA Protein TonB OS=Neisseria meningitidis serogroup 
+A / serotype 4A (strain Z2491) OX=122587 GN=tonB PE=3 
+SV=1
+Length=280
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 15/74 (20%), Positives = 35/74 (47%), Gaps = 1/74 (1%)
+
+Query  11   QPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGK  70
+            +P YP  +     +G V +   V+P G V++V+I+ +   +  +   + A +   ++   
+Sbjct  208  RPAYPTLSMENDEQGTVVLSVLVSPGGHVESVKIVKSSGFSRLDNAARKAAQNGHFQAN-  266
+
+Query  71   PGSGIVVNILFKIN  84
+              +   V + F++N
+Sbjct  267  AWTEFKVPVKFELN  280
+
+
+>sp|P57004|TONB_NEIMB Protein TonB OS=Neisseria meningitidis serogroup 
+B (strain MC58) OX=122586 GN=tonB PE=3 SV=1
+Length=280
+
+ Score = 48.9 bits (115),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 15/74 (20%), Positives = 35/74 (47%), Gaps = 1/74 (1%)
+
+Query  11   QPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGK  70
+            +P YP  +     +G V +   V+P G V++V+I+ +   +  +   + A +   ++   
+Sbjct  208  RPAYPTLSMENDEQGTVVLSVLVSPGGHVESVKIVKSSGFSRLDNAARKAAQNGHFQAN-  266
+
+Query  71   PGSGIVVNILFKIN  84
+              +   V + F++N
+Sbjct  267  AWTEFKVPVKFELN  280
+
+
+>sp|P95374|TONB_NEIMC Protein TonB OS=Neisseria meningitidis serogroup 
+C OX=135720 GN=tonB PE=3 SV=1
+Length=278
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/74 (20%), Positives = 35/74 (47%), Gaps = 1/74 (1%)
+
+Query  11   QPQYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGK  70
+            +P YP  +     +G V +   V+P G V++V+I+ +   +  +   + A +   ++   
+Sbjct  206  RPAYPTLSMENDEQGTVVLSVLVSPGGHVESVKIVKSSGFSRLDNAARKAAQNGHFQAN-  264
+
+Query  71   PGSGIVVNILFKIN  84
+              +   V + F++N
+Sbjct  265  AWTEFKVPVKFELN  278
+
+
+>sp|O07650|TONB_CAMCO Protein TonB OS=Campylobacter coli OX=195 
+GN=tonB PE=3 SV=1
+Length=232
+
+ Score = 45.5 bits (106),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 15/73 (21%), Positives = 39/73 (53%), Gaps = 2/73 (3%)
+
+Query  14   YPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMR--RWRYEPGKP  71
+            YP +A+ +R+ G+V V+F  T + +++N++IL     +   +     +R    ++   + 
+Sbjct  160  YPRQARKMRMSGEVLVEFTWTKEKKLENLKILKPSKYDFLNKSALETIRIASKKFPQYEK  219
+
+Query  72   GSGIVVNILFKIN  84
+               I + +++K++
+Sbjct  220  TFHIKIPLVYKLS  232
+
+
+>sp|Q05613|TONB_PSEPU Protein TonB OS=Pseudomonas putida OX=303 
+GN=tonB PE=3 SV=1
+Length=243
+
+ Score = 43.2 bits (100),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 13/59 (22%), Positives = 27/59 (46%), Gaps = 0/59 (0%)
+
+Query  13   QYPARAQALRIEGQVKVKFDVTPDGRVDNVQILSAKPANMFEREVKNAMRRWRYEPGKP  71
+            +YP  A+   ++G  +++F V  +G+V +  +     +   +R     +RR    P  P
+Sbjct  163  RYPEDARRRGLQGINRLRFVVDAEGKVVSYAMAGGSGSAALDRATLEMIRRAGTVPKPP  221
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.128    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0391    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5070424380
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

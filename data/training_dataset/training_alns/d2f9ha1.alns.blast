@@ -1,0 +1,157 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2f9ha1
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P05706|PTHA_ECOLI PTS system glucitol/sorbitol-specific EIIA c...  51.6    3e-08
+sp|P59784|PTHA_SHIFL PTS system glucitol/sorbitol-specific EIIA c...  49.3    2e-07
+
+
+>sp|P05706|PTHA_ECOLI PTS system glucitol/sorbitol-specific EIIA 
+component OS=Escherichia coli (strain K12) OX=83333 GN=srlB 
+PE=1 SV=1
+Length=123
+
+ Score = 51.6 bits (122),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 32/84 (38%), Positives = 44/84 (52%), Gaps = 2/84 (2%)
+
+Query  4   QATVTEIGKHAIDD-SEKMIILFGETATDTLKQHAVIQSFPEKDQVTLAEGDHLKIGDTN  62
+           Q T+T IG  AID  S++M+I F E A   L+++  I    E  +  L  G    +G   
+Sbjct  6   QTTITRIGASAIDALSDQMLITFREGAPADLEEYCFIHCHGEL-KGALHPGLQFSLGQHR  64
+
+Query  63  YTITKVGSFANSNLQSIAHSTLIF  86
+           Y +T VGS A  NL+ + H TL F
+Sbjct  65  YPVTAVGSVAEDNLRELGHVTLRF  88
+
+
+>sp|P59784|PTHA_SHIFL PTS system glucitol/sorbitol-specific EIIA 
+component OS=Shigella flexneri OX=623 GN=srlB PE=3 SV=1
+Length=123
+
+ Score = 49.3 bits (116),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 31/84 (37%), Positives = 43/84 (51%), Gaps = 2/84 (2%)
+
+Query  4   QATVTEIGKHAIDD-SEKMIILFGETATDTLKQHAVIQSFPEKDQVTLAEGDHLKIGDTN  62
+           Q T+T IG  A D  S++M+I F E A   L+++  I    E  +  L  G    +G   
+Sbjct  6   QTTITRIGASATDALSDQMLITFREGAPADLEEYCFIHCHGEL-KGALHPGLQFSLGQHR  64
+
+Query  63  YTITKVGSFANSNLQSIAHSTLIF  86
+           Y +T VGS A  NL+ + H TL F
+Sbjct  65  YPVTAVGSVAEDNLRELGHVTLRF  88
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.132    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+Results from round 2
+
+
+Query= d2f9ha1
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P05706|PTHA_ECOLI PTS system glucitol/sorbitol-specific EIIA c...  137     7e-42
+sp|P59784|PTHA_SHIFL PTS system glucitol/sorbitol-specific EIIA c...  134     7e-41
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P05706|PTHA_ECOLI PTS system glucitol/sorbitol-specific EIIA 
+component OS=Escherichia coli (strain K12) OX=83333 GN=srlB 
+PE=1 SV=1
+Length=123
+
+ Score = 137 bits (345),  Expect = 7e-42, Method: Composition-based stats.
+ Identities = 32/84 (38%), Positives = 44/84 (52%), Gaps = 2/84 (2%)
+
+Query  4   QATVTEIGKHAIDD-SEKMIILFGETATDTLKQHAVIQSFPEKDQVTLAEGDHLKIGDTN  62
+           Q T+T IG  AID  S++M+I F E A   L+++  I    E  +  L  G    +G   
+Sbjct  6   QTTITRIGASAIDALSDQMLITFREGAPADLEEYCFIHCHGEL-KGALHPGLQFSLGQHR  64
+
+Query  63  YTITKVGSFANSNLQSIAHSTLIF  86
+           Y +T VGS A  NL+ + H TL F
+Sbjct  65  YPVTAVGSVAEDNLRELGHVTLRF  88
+
+
+>sp|P59784|PTHA_SHIFL PTS system glucitol/sorbitol-specific EIIA 
+component OS=Shigella flexneri OX=623 GN=srlB PE=3 SV=1
+Length=123
+
+ Score = 134 bits (338),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 31/84 (37%), Positives = 43/84 (51%), Gaps = 2/84 (2%)
+
+Query  4   QATVTEIGKHAIDD-SEKMIILFGETATDTLKQHAVIQSFPEKDQVTLAEGDHLKIGDTN  62
+           Q T+T IG  A D  S++M+I F E A   L+++  I    E  +  L  G    +G   
+Sbjct  6   QTTITRIGASATDALSDQMLITFREGAPADLEEYCFIHCHGEL-KGALHPGLQFSLGQHR  64
+
+Query  63  YTITKVGSFANSNLQSIAHSTLIF  86
+           Y +T VGS A  NL+ + H TL F
+Sbjct  65  YPVTAVGSVAEDNLRELGHVTLRF  88
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.138    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0422    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

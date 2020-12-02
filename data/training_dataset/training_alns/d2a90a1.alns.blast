@@ -1,0 +1,688 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2a90a1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster OX=...  162     3e-47
+sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus musc...  60.8    2e-11
+sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo sap...  60.8    3e-11
+sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus ...  52.8    2e-08
+sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus musc...  45.8    5e-06
+sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo sap...  45.8    5e-06
+
+
+>sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster 
+OX=7227 GN=dx PE=1 SV=2
+Length=738
+
+ Score = 162 bits (409),  Expect = 3e-47, Method: Compositional matrix adjust.
+ Identities = 79/89 (89%), Positives = 79/89 (89%), Gaps = 9/89 (10%)
+
+Query  1    AHAVSVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  60
+            AHAV VWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES
+Sbjct  43   AHAVCVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  102
+
+Query  61   ---------LTIGVRRMFYAPSSPAGKGT  80
+                     LTIGVRRMFYAPSSPAGKGT
+Sbjct  103  EAETAGSGLLTIGVRRMFYAPSSPAGKGT  131
+
+
+>sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus 
+musculus OX=10090 GN=Dtx4 PE=1 SV=2
+Length=616
+
+ Score = 60.8 bits (146),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 37/87 (43%), Positives = 47/87 (54%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWE-FESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE     G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+>sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo 
+sapiens OX=9606 GN=DTX4 PE=1 SV=2
+Length=619
+
+ Score = 60.8 bits (146),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 37/87 (43%), Positives = 47/87 (54%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWE-FESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE     G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+>sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus 
+laevis OX=8355 GN=dtx1 PE=2 SV=1
+Length=623
+
+ Score = 52.8 bits (125),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 32/82 (39%), Positives = 40/82 (49%), Gaps = 6/82 (7%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE     G+W PY+  V  H+E A       RV L   D  L  Y ++++TM Q   
+Sbjct  24   VVVWEWLNEHGRWRPYTATVCHHIENALREDGRGRVALGQVDAQLTPYVIDLQTMHQYRQ  83
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR F+ PSS  GKG
+Sbjct  84   DTGTIRPVRRNFFEPSSAPGKG  105
+
+
+>sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus 
+musculus OX=10090 GN=Dtx1 PE=1 SV=2
+Length=627
+
+ Score = 45.8 bits (107),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 31/83 (37%), Positives = 41/83 (49%), Gaps = 8/83 (10%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERAHAKKLTR--VMLSDADPSLEQYYVNVRTMTQES  60
+            V VWE      +W PY+  V  H+E    K+  R  V+L   D  L  Y +++++M Q  
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENV-LKEDARGSVVLGQVDAQLVPYIIDLQSMHQFR  83
+
+Query  61   LTIG----VRRMFYAPSSPAGKG  79
+               G    VRR FY PSS  GKG
+Sbjct  84   QDTGTMRPVRRNFYDPSSAPGKG  106
+
+
+>sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo 
+sapiens OX=9606 GN=DTX1 PE=1 SV=1
+Length=620
+
+ Score = 45.8 bits (107),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 31/83 (37%), Positives = 41/83 (49%), Gaps = 8/83 (10%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERAHAKKLTR--VMLSDADPSLEQYYVNVRTMTQES  60
+            V VWE      +W PY+  V  H+E    K+  R  V+L   D  L  Y +++++M Q  
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENV-LKEDARGSVVLGQVDAQLVPYIIDLQSMHQFR  83
+
+Query  61   LTIG----VRRMFYAPSSPAGKG  79
+               G    VRR FY PSS  GKG
+Sbjct  84   QDTGTMRPVRRNFYDPSSAPGKG  106
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.127    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+Results from round 2
+
+
+Query= d2a90a1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster OX=...  137     2e-38
+sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo sap...  132     1e-36
+sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus musc...  132     1e-36
+sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus ...  131     3e-36
+sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus musc...  127     5e-35
+sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo sap...  127     5e-35
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q86UW9|DTX2_HUMAN Probable E3 ubiquitin-protein ligase DTX2 OS...  76.3    8e-17
+sp|Q8R3P2|DTX2_MOUSE Probable E3 ubiquitin-protein ligase DTX2 OS...  75.2    2e-16
+sp|B4F6W9|TRIPC_XENTR E3 ubiquitin-protein ligase TRIP12 OS=Xenop...  39.8    7e-04
+
+
+>sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster 
+OX=7227 GN=dx PE=1 SV=2
+Length=738
+
+ Score = 137 bits (346),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 79/89 (89%), Positives = 79/89 (89%), Gaps = 9/89 (10%)
+
+Query  1    AHAVSVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  60
+            AHAV VWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES
+Sbjct  43   AHAVCVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  102
+
+Query  61   ---------LTIGVRRMFYAPSSPAGKGT  80
+                     LTIGVRRMFYAPSSPAGKGT
+Sbjct  103  EAETAGSGLLTIGVRRMFYAPSSPAGKGT  131
+
+
+>sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo 
+sapiens OX=9606 GN=DTX4 PE=1 SV=2
+Length=619
+
+ Score = 132 bits (331),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 37/87 (43%), Positives = 47/87 (54%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWE-FESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE     G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+>sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus 
+musculus OX=10090 GN=Dtx4 PE=1 SV=2
+Length=616
+
+ Score = 132 bits (331),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 37/87 (43%), Positives = 47/87 (54%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWE-FESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE     G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+>sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus 
+laevis OX=8355 GN=dtx1 PE=2 SV=1
+Length=623
+
+ Score = 131 bits (329),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 32/82 (39%), Positives = 40/82 (49%), Gaps = 6/82 (7%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE     G+W PY+  V  H+E A       RV L   D  L  Y ++++TM Q   
+Sbjct  24   VVVWEWLNEHGRWRPYTATVCHHIENALREDGRGRVALGQVDAQLTPYVIDLQTMHQYRQ  83
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR F+ PSS  GKG
+Sbjct  84   DTGTIRPVRRNFFEPSSAPGKG  105
+
+
+>sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus 
+musculus OX=10090 GN=Dtx1 PE=1 SV=2
+Length=627
+
+ Score = 127 bits (320),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 38/82 (46%), Gaps = 6/82 (7%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE      +W PY+  V  H+E          V+L   D  L  Y +++++M Q   
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENVLKEDARGSVVLGQVDAQLVPYIIDLQSMHQFRQ  84
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR FY PSS  GKG
+Sbjct  85   DTGTMRPVRRNFYDPSSAPGKG  106
+
+
+>sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo 
+sapiens OX=9606 GN=DTX1 PE=1 SV=1
+Length=620
+
+ Score = 127 bits (319),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 38/82 (46%), Gaps = 6/82 (7%)
+
+Query  4    VSVWE-FESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE      +W PY+  V  H+E          V+L   D  L  Y +++++M Q   
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENVLKEDARGSVVLGQVDAQLVPYIIDLQSMHQFRQ  84
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR FY PSS  GKG
+Sbjct  85   DTGTMRPVRRNFYDPSSAPGKG  106
+
+
+>sp|Q86UW9|DTX2_HUMAN Probable E3 ubiquitin-protein ligase DTX2 
+OS=Homo sapiens OX=9606 GN=DTX2 PE=1 SV=3
+Length=622
+
+ Score = 76.3 bits (186),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 28/92 (30%), Positives = 42/92 (46%), Gaps = 15/92 (16%)
+
+Query  3    AVSVWEFESR-GKWLPYSPAVSQHLERAHAKKLT----------RVMLSDADPSLEQYYV  51
+            AV+VWE++   G W PYS  V   +E+   ++             + L  ADPSL  Y +
+Sbjct  18   AVAVWEWQDGLGTWHPYSATVCSFIEQQFVQQKGQRFGLGSLAHSIPLGQADPSLAPYII  77
+
+Query  52   NVRTMTQESLTIG----VRRMFYAPSSPAGKG  79
+            ++ + TQ     G    VRR  +   S  G+G
+Sbjct  78   DLPSWTQFRQDTGTMRAVRRHLFPQHSAPGRG  109
+
+
+>sp|Q8R3P2|DTX2_MOUSE Probable E3 ubiquitin-protein ligase DTX2 
+OS=Mus musculus OX=10090 GN=Dtx2 PE=1 SV=2
+Length=619
+
+ Score = 75.2 bits (183),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 43/91 (47%), Gaps = 15/91 (16%)
+
+Query  4    VSVWEFESR-GKWLPYSPAVSQHLERAHAKKLT----------RVMLSDADPSLEQYYVN  52
+            V+VWE++   G W PYS  V   +E+   ++             + L  ADPSL  Y ++
+Sbjct  19   VAVWEWQDGLGIWHPYSATVCSFIEQHFVRQRGQHFGLGSLAHSIPLGQADPSLAPYIID  78
+
+Query  53   VRTMTQESLTIG----VRRMFYAPSSPAGKG  79
+            + + TQ     G    VRR  ++ +S  G+G
+Sbjct  79   LPSWTQFRQNTGTMRSVRRHLFSQNSAPGQG  109
+
+
+>sp|B4F6W9|TRIPC_XENTR E3 ubiquitin-protein ligase TRIP12 OS=Xenopus 
+tropicalis OX=8364 GN=trip12 PE=2 SV=1
+Length=2056
+
+ Score = 39.8 bits (91),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 30/64 (47%), Gaps = 4/64 (6%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+            ++W++ + RG W PYS   S+ +E AH      + LS        Y ++  +M Q +   
+Sbjct  803  AIWQWRDDRGLWHPYSRIDSRIIEAAHQVGEDEISLSTLG---RVYTIDFNSMQQINEDT  859
+
+Query  64   GVRR  67
+            G  R
+Sbjct  860  GTAR  863
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.127    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0388    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+Results from round 3
+
+
+Query= d2a90a1
+
+Length=80
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo sap...  126     1e-34
+sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster OX=...  126     2e-34
+sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus musc...  126     2e-34
+sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus ...  126     2e-34
+sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus musc...  123     1e-33
+sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo sap...  123     1e-33
+sp|Q86UW9|DTX2_HUMAN Probable E3 ubiquitin-protein ligase DTX2 OS...  116     7e-31
+sp|Q8R3P2|DTX2_MOUSE Probable E3 ubiquitin-protein ligase DTX2 OS...  114     2e-30
+sp|B4F6W9|TRIPC_XENTR E3 ubiquitin-protein ligase TRIP12 OS=Xenop...  88.3    4e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|F1LP64|TRIPC_RAT E3 ubiquitin-protein ligase TRIP12 OS=Rattus ...  86.7    2e-20
+sp|G5E870|TRIPC_MOUSE E3 ubiquitin-protein ligase TRIP12 OS=Mus m...  86.7    2e-20
+sp|Q14669|TRIPC_HUMAN E3 ubiquitin-protein ligase TRIP12 OS=Homo ...  45.9    5e-06
+sp|E1B7Q7|TRIPC_BOVIN E3 ubiquitin-protein ligase TRIP12 OS=Bos t...  45.9    5e-06
+sp|F1RCR6|TRIPC_DANRE E3 ubiquitin-protein ligase TRIP12 OS=Danio...  45.9    5e-06
+sp|Q7Z6Z7|HUWE1_HUMAN E3 ubiquitin-protein ligase HUWE1 OS=Homo s...  45.5    6e-06
+sp|Q7TMY8|HUWE1_MOUSE E3 ubiquitin-protein ligase HUWE1 OS=Mus mu...  45.5    6e-06
+
+
+>sp|Q9Y2E6|DTX4_HUMAN E3 ubiquitin-protein ligase DTX4 OS=Homo 
+sapiens OX=9606 GN=DTX4 PE=1 SV=2
+Length=619
+
+ Score = 126 bits (316),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 37/87 (43%), Positives = 48/87 (55%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWEF-ESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE+    G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+ Score = 45.5 bits (106),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 16/57 (28%), Positives = 26/57 (46%), Gaps = 4/57 (7%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  60
+             VWE+    G W PY   V   ++ A+ K+   + L+    S   Y ++  TM Q +
+Sbjct  91   VVWEWENDNGSWTPYDMEVGITIQHAYEKQHPWIDLTSIGFS---YVIDFNTMGQIN  144
+
+
+>sp|Q23985|DTX_DROME Protein deltex OS=Drosophila melanogaster 
+OX=7227 GN=dx PE=1 SV=2
+Length=738
+
+ Score = 126 bits (316),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 78/89 (88%), Positives = 78/89 (88%), Gaps = 9/89 (10%)
+
+Query  1    AHAVSVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  60
+            AHAV VWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES
+Sbjct  43   AHAVCVWEFESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  102
+
+Query  61   L---------TIGVRRMFYAPSSPAGKGT  80
+                      TIGVRRMFYAPSSPAGKGT
+Sbjct  103  EAETAGSGLLTIGVRRMFYAPSSPAGKGT  131
+
+
+ Score = 45.9 bits (107),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 18/75 (24%), Positives = 27/75 (36%), Gaps = 6/75 (8%)
+
+Query  7    WEF-----ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            WE+     +S   W PY+  V   +E A A+    + L +    L  Y +N   +TQ   
+Sbjct  133  WEWSGGSADSNNDWRPYNMHVQCIIEDAWARGEQTLDLCNTHIGL-PYTINFCNLTQLRQ  191
+
+Query  62   TIGVRRMFYAPSSPA  76
+              G  R         
+Sbjct  192  PSGPMRSIRRTQQAP  206
+
+
+>sp|Q6PDK8|DTX4_MOUSE E3 ubiquitin-protein ligase DTX4 OS=Mus 
+musculus OX=10090 GN=Dtx4 PE=1 SV=2
+Length=616
+
+ Score = 126 bits (315),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 37/87 (43%), Positives = 48/87 (55%), Gaps = 8/87 (9%)
+
+Query  1   AHAVSVWEF-ESRGKWLPYSPAVSQHLE---RAHAKKLTRVMLSDADPSLEQYYVNVRTM  56
+           A AV VWE+    G+W PYSPAVS H+E   RA  +    V+L   D  L  Y +++++M
+Sbjct  4   ASAVVVWEWLNEHGRWRPYSPAVSHHIEAVVRAGPRAGGSVVLGQVDSRLAPYIIDLQSM  63
+
+Query  57  TQESLTIG----VRRMFYAPSSPAGKG  79
+            Q     G    VRR +Y PSS  GKG
+Sbjct  64  NQFRQDTGTLRPVRRNYYDPSSAPGKG  90
+
+
+ Score = 44.0 bits (102),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 16/57 (28%), Positives = 26/57 (46%), Gaps = 4/57 (7%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQES  60
+             VWE+    G W PY   V   ++ A+ K+   + L+    S   Y ++  TM Q +
+Sbjct  91   VVWEWENDNGSWTPYDMEVGITIQYAYEKQHPWIDLTSIGFS---YIIDFSTMGQIN  144
+
+
+>sp|Q8AW93|DTX1_XENLA E3 ubiquitin-protein ligase DTX1 OS=Xenopus 
+laevis OX=8355 GN=dtx1 PE=2 SV=1
+Length=623
+
+ Score = 126 bits (315),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 32/82 (39%), Positives = 41/82 (50%), Gaps = 6/82 (7%)
+
+Query  4    VSVWEF-ESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE+    G+W PY+  V  H+E A       RV L   D  L  Y ++++TM Q   
+Sbjct  24   VVVWEWLNEHGRWRPYTATVCHHIENALREDGRGRVALGQVDAQLTPYVIDLQTMHQYRQ  83
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR F+ PSS  GKG
+Sbjct  84   DTGTIRPVRRNFFEPSSAPGKG  105
+
+
+ Score = 42.4 bits (98),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 14/60 (23%), Positives = 24/60 (40%), Gaps = 4/60 (7%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+             VWE+    G W PY   +   ++ A+ K    + L+        Y V+  +M Q +   
+Sbjct  106  IVWEWENDAGSWTPYDTEICIAIQNAYEKHHPYLDLTTLGFC---YLVHFHSMCQVNRQT  162
+
+
+>sp|Q61010|DTX1_MOUSE E3 ubiquitin-protein ligase DTX1 OS=Mus 
+musculus OX=10090 GN=Dtx1 PE=1 SV=2
+Length=627
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 39/82 (48%), Gaps = 6/82 (7%)
+
+Query  4    VSVWEF-ESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE+     +W PY+  V  H+E          V+L   D  L  Y +++++M Q   
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENVLKEDARGSVVLGQVDAQLVPYIIDLQSMHQFRQ  84
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR FY PSS  GKG
+Sbjct  85   DTGTMRPVRRNFYDPSSAPGKG  106
+
+
+ Score = 42.4 bits (98),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 13/60 (22%), Positives = 24/60 (40%), Gaps = 4/60 (7%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+             VWE+    G W  Y   +   ++ A+ K+   + LS        Y +   +M+Q +   
+Sbjct  107  IVWEWENDGGAWTAYDMDICITIQNAYEKQHPWLDLSSLGFC---YLIYFNSMSQMNRQT  163
+
+
+>sp|Q86Y01|DTX1_HUMAN E3 ubiquitin-protein ligase DTX1 OS=Homo 
+sapiens OX=9606 GN=DTX1 PE=1 SV=1
+Length=620
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 29/82 (35%), Positives = 39/82 (48%), Gaps = 6/82 (7%)
+
+Query  4    VSVWEF-ESRGKWLPYSPAVSQHLERA-HAKKLTRVMLSDADPSLEQYYVNVRTMTQESL  61
+            V VWE+     +W PY+  V  H+E          V+L   D  L  Y +++++M Q   
+Sbjct  25   VVVWEWLNEHSRWRPYTATVCHHIENVLKEDARGSVVLGQVDAQLVPYIIDLQSMHQFRQ  84
+
+Query  62   TIG----VRRMFYAPSSPAGKG  79
+              G    VRR FY PSS  GKG
+Sbjct  85   DTGTMRPVRRNFYDPSSAPGKG  106
+
+
+ Score = 42.4 bits (98),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 13/60 (22%), Positives = 24/60 (40%), Gaps = 4/60 (7%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+             VWE+    G W  Y   +   ++ A+ K+   + LS        Y +   +M+Q +   
+Sbjct  107  IVWEWENDGGAWTAYDMDICITIQNAYEKQHPWLDLSSLGFC---YLIYFNSMSQMNRQT  163
+
+
+>sp|Q86UW9|DTX2_HUMAN Probable E3 ubiquitin-protein ligase DTX2 
+OS=Homo sapiens OX=9606 GN=DTX2 PE=1 SV=3
+Length=622
+
+ Score = 116 bits (290),  Expect = 7e-31, Method: Composition-based stats.
+ Identities = 28/92 (30%), Positives = 42/92 (46%), Gaps = 15/92 (16%)
+
+Query  3    AVSVWEFESR-GKWLPYSPAVSQHLERAHAKKLT----------RVMLSDADPSLEQYYV  51
+            AV+VWE++   G W PYS  V   +E+   ++             + L  ADPSL  Y +
+Sbjct  18   AVAVWEWQDGLGTWHPYSATVCSFIEQQFVQQKGQRFGLGSLAHSIPLGQADPSLAPYII  77
+
+Query  52   NVRTMTQESLTIG----VRRMFYAPSSPAGKG  79
+            ++ + TQ     G    VRR  +   S  G+G
+Sbjct  78   DLPSWTQFRQDTGTMRAVRRHLFPQHSAPGRG  109
+
+
+ Score = 45.1 bits (105),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 30/73 (41%), Gaps = 4/73 (5%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+             VWE+    G W  Y  +V  +LE+  A+    V L+    +   Y VN  T TQ + T 
+Sbjct  110  VVWEWLSDDGSWTAYEASVCDYLEQQVARGNQLVDLAPLGYN---YTVNYTTHTQTNKTS  166
+
+Query  64   GVRRMFYAPSSPA  76
+               R     + P 
+Sbjct  167  SFCRSVRRQAGPP  179
+
+
+>sp|Q8R3P2|DTX2_MOUSE Probable E3 ubiquitin-protein ligase DTX2 
+OS=Mus musculus OX=10090 GN=Dtx2 PE=1 SV=2
+Length=619
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 27/91 (30%), Positives = 43/91 (47%), Gaps = 15/91 (16%)
+
+Query  4    VSVWEFESR-GKWLPYSPAVSQHLERAHAKKLT----------RVMLSDADPSLEQYYVN  52
+            V+VWE++   G W PYS  V   +E+   ++             + L  ADPSL  Y ++
+Sbjct  19   VAVWEWQDGLGIWHPYSATVCSFIEQHFVRQRGQHFGLGSLAHSIPLGQADPSLAPYIID  78
+
+Query  53   VRTMTQESLTIG----VRRMFYAPSSPAGKG  79
+            + + TQ     G    VRR  ++ +S  G+G
+Sbjct  79   LPSWTQFRQNTGTMRSVRRHLFSQNSAPGQG  109
+
+
+>sp|B4F6W9|TRIPC_XENTR E3 ubiquitin-protein ligase TRIP12 OS=Xenopus 
+tropicalis OX=8364 GN=trip12 PE=2 SV=1
+Length=2056
+
+ Score = 88.3 bits (217),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 30/64 (47%), Gaps = 4/64 (6%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+            ++W++ + RG W PYS   S+ +E AH      + LS        Y ++  +M Q +   
+Sbjct  803  AIWQWRDDRGLWHPYSRIDSRIIEAAHQVGEDEISLSTLG---RVYTIDFNSMQQINEDT  859
+
+Query  64   GVRR  67
+            G  R
+Sbjct  860  GTAR  863
+
+
+>sp|F1LP64|TRIPC_RAT E3 ubiquitin-protein ligase TRIP12 OS=Rattus 
+norvegicus OX=10116 GN=Trip12 PE=1 SV=1
+Length=2025
+
+ Score = 86.7 bits (213),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 30/64 (47%), Gaps = 4/64 (6%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+            ++W++ + RG W PY+   S+ +E AH      + LS        Y ++  +M Q +   
+Sbjct  767  AIWQWRDDRGLWHPYNRIDSRIIEAAHQVGEDEISLSTLG---RVYTIDFNSMQQINEDT  823
+
+Query  64   GVRR  67
+            G  R
+Sbjct  824  GTAR  827
+
+
+>sp|G5E870|TRIPC_MOUSE E3 ubiquitin-protein ligase TRIP12 OS=Mus 
+musculus OX=10090 GN=Trip12 PE=1 SV=1
+Length=2025
+
+ Score = 86.7 bits (213),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 30/64 (47%), Gaps = 4/64 (6%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTI  63
+            ++W++ + RG W PY+   S+ +E AH      + LS        Y ++  +M Q +   
+Sbjct  767  AIWQWRDDRGLWHPYNRIDSRIIEAAHQVGEDEISLSTLG---RVYTIDFNSMQQINEDT  823
+
+Query  64   GVRR  67
+            G  R
+Sbjct  824  GTAR  827
+
+
+>sp|Q14669|TRIPC_HUMAN E3 ubiquitin-protein ligase TRIP12 OS=Homo 
+sapiens OX=9606 GN=TRIP12 PE=1 SV=1
+Length=1992
+
+ Score = 45.9 bits (107),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 9/32 (28%), Positives = 19/32 (59%), Gaps = 1/32 (3%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLT  35
+            ++W++ + RG W PY+   S+ +E+ +    T
+Sbjct  761  AIWQWRDDRGLWHPYNRIDSRIIEQINEDTGT  792
+
+
+>sp|E1B7Q7|TRIPC_BOVIN E3 ubiquitin-protein ligase TRIP12 OS=Bos 
+taurus OX=9913 GN=TRIP12 PE=2 SV=2
+Length=1992
+
+ Score = 45.9 bits (107),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 9/32 (28%), Positives = 19/32 (59%), Gaps = 1/32 (3%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLT  35
+            ++W++ + RG W PY+   S+ +E+ +    T
+Sbjct  761  AIWQWRDDRGLWHPYNRIDSRIIEQINEDTGT  792
+
+
+>sp|F1RCR6|TRIPC_DANRE E3 ubiquitin-protein ligase TRIP12 OS=Danio 
+rerio OX=7955 GN=trip12 PE=3 SV=1
+Length=2026
+
+ Score = 45.9 bits (107),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 9/32 (28%), Positives = 19/32 (59%), Gaps = 1/32 (3%)
+
+Query  5    SVWEF-ESRGKWLPYSPAVSQHLERAHAKKLT  35
+            ++W++ + RG W PY+   S+ +E+ +    T
+Sbjct  801  AIWQWRDDRGLWHPYNRIDSRIIEQINEDTGT  832
+
+
+>sp|Q7Z6Z7|HUWE1_HUMAN E3 ubiquitin-protein ligase HUWE1 OS=Homo 
+sapiens OX=9606 GN=HUWE1 PE=1 SV=3
+Length=4374
+
+ Score = 45.5 bits (106),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 17/63 (27%), Positives = 27/63 (43%), Gaps = 5/63 (8%)
+
+Query  7     WEF-ESR-GKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTIG  64
+             W + + R G+W  YS + +  ++ A     T V  +       +Y V   TM Q +   G
+Sbjct  1617  WRWFDDRSGRWCSYSASNNSTIDSAWKSGETSVRFT---AGRRRYTVQFTTMVQVNEETG  1673
+
+Query  65    VRR  67
+              RR
+Sbjct  1674  NRR  1676
+
+
+>sp|Q7TMY8|HUWE1_MOUSE E3 ubiquitin-protein ligase HUWE1 OS=Mus 
+musculus OX=10090 GN=Huwe1 PE=1 SV=5
+Length=4377
+
+ Score = 45.5 bits (106),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 17/63 (27%), Positives = 27/63 (43%), Gaps = 5/63 (8%)
+
+Query  7     WEF-ESR-GKWLPYSPAVSQHLERAHAKKLTRVMLSDADPSLEQYYVNVRTMTQESLTIG  64
+             W + + R G+W  YS + +  ++ A     T V  +       +Y V   TM Q +   G
+Sbjct  1617  WRWFDDRSGRWCSYSASNNSTIDSAWKSGETSVRFT---AGRRRYTVQFTTMVQVNEETG  1673
+
+Query  65    VRR  67
+              RR
+Sbjct  1674  NRR  1676
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.125    0.352    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0384    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5048374636
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,569 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ei5a1
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9ZBA9|DAP_OCHAN D-aminopeptidase OS=Ochrobactrum anthropi OX=...  164     6e-49
+sp|A6WYS5|DAP_OCHA4 D-aminopeptidase OS=Ochrobactrum anthropi (st...  125     1e-34
+sp|A5VVL2|DAP_BRUO2 D-aminopeptidase OS=Brucella ovis (strain ATC...  114     2e-30
+sp|Q8FV99|DAP_BRUSU D-aminopeptidase OS=Brucella suis biovar 1 (s...  114     2e-30
+sp|A9WVV8|DAP_BRUSI D-aminopeptidase OS=Brucella suis (strain ATC...  114     2e-30
+sp|A9MCM7|DAP_BRUC2 D-aminopeptidase OS=Brucella canis (strain AT...  114     2e-30
+sp|Q579G4|DAP_BRUAB D-aminopeptidase OS=Brucella abortus biovar 1...  114     2e-30
+sp|Q2YLB4|DAP_BRUA2 D-aminopeptidase OS=Brucella abortus (strain ...  114     2e-30
+sp|B2SD81|DAP_BRUA1 D-aminopeptidase OS=Brucella abortus (strain ...  114     2e-30
+sp|C0RM93|DAP_BRUMB D-aminopeptidase OS=Brucella melitensis bioty...  113     5e-30
+sp|Q8YD27|DAP_BRUME D-aminopeptidase OS=Brucella melitensis bioty...  113     5e-30
+sp|A3PRU3|DAP_RHOS1 D-aminopeptidase OS=Rhodobacter sphaeroides (...  46.2    3e-06
+sp|B9KTA6|DAP_RHOSK D-aminopeptidase OS=Rhodobacter sphaeroides (...  43.9    2e-05
+sp|Q3IX78|DAP_RHOS4 D-aminopeptidase OS=Rhodobacter sphaeroides (...  41.6    1e-04
+
+
+>sp|Q9ZBA9|DAP_OCHAN D-aminopeptidase OS=Ochrobactrum anthropi 
+OX=529 GN=dap PE=1 SV=3
+Length=520
+
+ Score = 164 bits (415),  Expect = 6e-49, Method: Compositional matrix adjust.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI
+Sbjct  336  EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  395
+
+Query  61   RRDGETIELVRASENLRLSMKR  82
+            RRDGETIELVRASENLRLSMKR
+Sbjct  396  RRDGETIELVRASENLRLSMKR  417
+
+
+>sp|A6WYS5|DAP_OCHA4 D-aminopeptidase OS=Ochrobactrum anthropi 
+(strain ATCC 49188 / DSM 6882 / JCM 21032 / NBRC 15819 / NCTC 
+12168) OX=439375 GN=dap PE=3 SV=1
+Length=520
+
+ Score = 125 bits (315),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 61/82 (74%), Positives = 67/82 (82%), Gaps = 0/82 (0%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  RV AD+ WFGSWLD ETGLVLSLEDAG GRMKARFGT PEMMDVV  NEARS++T I
+Sbjct  336  EQVRVAADAVWFGSWLDHETGLVLSLEDAGRGRMKARFGTGPEMMDVVGENEARSSMTAI  395
+
+Query  61   RRDGETIELVRASENLRLSMKR  82
+            RRDG+TI L R  ENL L+M+R
+Sbjct  396  RRDGDTIHLAREDENLSLTMQR  417
+
+
+>sp|A5VVL2|DAP_BRUO2 D-aminopeptidase OS=Brucella ovis (strain 
+ATCC 25840 / 63/290 / NCTC 10512) OX=444178 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (286),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q8FV99|DAP_BRUSU D-aminopeptidase OS=Brucella suis biovar 
+1 (strain 1330) OX=204722 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|A9WVV8|DAP_BRUSI D-aminopeptidase OS=Brucella suis (strain 
+ATCC 23445 / NCTC 10510) OX=470137 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|A9MCM7|DAP_BRUC2 D-aminopeptidase OS=Brucella canis (strain 
+ATCC 23365 / NCTC 10854) OX=483179 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q579G4|DAP_BRUAB D-aminopeptidase OS=Brucella abortus biovar 
+1 (strain 9-941) OX=262698 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q2YLB4|DAP_BRUA2 D-aminopeptidase OS=Brucella abortus (strain 
+2308) OX=359391 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|B2SD81|DAP_BRUA1 D-aminopeptidase OS=Brucella abortus (strain 
+S19) OX=430066 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 114 bits (285),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 63/79 (80%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|C0RM93|DAP_BRUMB D-aminopeptidase OS=Brucella melitensis biotype 
+2 (strain ATCC 23457) OX=546272 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 113 bits (282),  Expect = 5e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 62/79 (78%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEKMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q8YD27|DAP_BRUME D-aminopeptidase OS=Brucella melitensis biotype 
+1 (strain 16M / ATCC 23456 / NCTC 10094) OX=224914 GN=dap 
+PE=3 SV=1
+Length=518
+
+ Score = 113 bits (282),  Expect = 5e-30, Method: Compositional matrix adjust.
+ Identities = 52/79 (66%), Positives = 62/79 (78%), Gaps = 0/79 (0%)
+
+Query  4    RVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRD  63
+            R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE MD+   NEA+S++TT+RRD
+Sbjct  339  RAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEKMDISGENEAQSSMTTLRRD  398
+
+Query  64   GETIELVRASENLRLSMKR  82
+            G+ I L R  ENL L+M R
+Sbjct  399  GDMIHLARKDENLHLAMHR  417
+
+
+>sp|A3PRU3|DAP_RHOS1 D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain ATCC 17029 / ATH 2.4.9) OX=349101 GN=dap PE=3 SV=1
+Length=516
+
+ Score = 46.2 bits (108),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 25/76 (33%), Positives = 39/76 (51%), Gaps = 1/76 (1%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  +      W G WLD E+GL+L + +   G +  RF T P+ + V      R A  ++
+Sbjct  333  EAPKGAGPEGWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTVGEDGVPRGAGVSL  391
+
+Query  61   RRDGETIELVRASENL  76
+             R+G T+ + R S+NL
+Sbjct  392  AREGATLVMNRTSDNL  407
+
+
+>sp|B9KTA6|DAP_RHOSK D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain KD131 / KCTC 12085) OX=557760 GN=dap PE=3 SV=1
+Length=516
+
+ Score = 43.9 bits (102),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 23/67 (34%), Positives = 36/67 (54%), Gaps = 1/67 (1%)
+
+Query  10   AWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRDGETIEL  69
+             W G WLD E+GL+L + +   G +  RF T P+ + +      R A  ++ RDG  + +
+Sbjct  342  GWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTLGEDGVPRGAGVSLARDGAMLVM  400
+
+Query  70   VRASENL  76
+             R S+NL
+Sbjct  401  NRTSDNL  407
+
+
+>sp|Q3IX78|DAP_RHOS4 D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain ATCC 17023 / 2.4.1 / NCIB 8253 / DSM 158) OX=272943 
+GN=dap PE=3 SV=1
+Length=516
+
+ Score = 41.6 bits (96),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 22/67 (33%), Positives = 35/67 (52%), Gaps = 1/67 (1%)
+
+Query  10   AWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRRDGETIEL  69
+             W G WLD E+GL+L + +   G +  RF T P+ +        R A  ++ R+G  + +
+Sbjct  342  GWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTAGEDGVPRGAGVSLAREGAMLVM  400
+
+Query  70   VRASENL  76
+             R S+NL
+Sbjct  401  NRTSDNL  407
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.127    0.356    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+Results from round 2
+
+
+Query= d1ei5a1
+
+Length=82
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|A6WYS5|DAP_OCHA4 D-aminopeptidase OS=Ochrobactrum anthropi (st...  139     2e-39
+sp|A5VVL2|DAP_BRUO2 D-aminopeptidase OS=Brucella ovis (strain ATC...  138     2e-39
+sp|Q8FV99|DAP_BRUSU D-aminopeptidase OS=Brucella suis biovar 1 (s...  138     3e-39
+sp|A9WVV8|DAP_BRUSI D-aminopeptidase OS=Brucella suis (strain ATC...  138     3e-39
+sp|A9MCM7|DAP_BRUC2 D-aminopeptidase OS=Brucella canis (strain AT...  138     3e-39
+sp|Q579G4|DAP_BRUAB D-aminopeptidase OS=Brucella abortus biovar 1...  138     3e-39
+sp|Q2YLB4|DAP_BRUA2 D-aminopeptidase OS=Brucella abortus (strain ...  138     3e-39
+sp|B2SD81|DAP_BRUA1 D-aminopeptidase OS=Brucella abortus (strain ...  138     3e-39
+sp|C0RM93|DAP_BRUMB D-aminopeptidase OS=Brucella melitensis bioty...  138     3e-39
+sp|Q8YD27|DAP_BRUME D-aminopeptidase OS=Brucella melitensis bioty...  138     4e-39
+sp|Q9ZBA9|DAP_OCHAN D-aminopeptidase OS=Ochrobactrum anthropi OX=...  132     4e-37
+sp|A3PRU3|DAP_RHOS1 D-aminopeptidase OS=Rhodobacter sphaeroides (...  117     2e-31
+sp|B9KTA6|DAP_RHOSK D-aminopeptidase OS=Rhodobacter sphaeroides (...  115     5e-31
+sp|Q3IX78|DAP_RHOS4 D-aminopeptidase OS=Rhodobacter sphaeroides (...  113     4e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|A6WYS5|DAP_OCHA4 D-aminopeptidase OS=Ochrobactrum anthropi 
+(strain ATCC 49188 / DSM 6882 / JCM 21032 / NBRC 15819 / NCTC 
+12168) OX=439375 GN=dap PE=3 SV=1
+Length=520
+
+ Score = 139 bits (349),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 61/82 (74%), Positives = 67/82 (82%), Gaps = 0/82 (0%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  RV AD+ WFGSWLD ETGLVLSLEDAG GRMKARFGT PEMMDVV  NEARS++T I
+Sbjct  336  EQVRVAADAVWFGSWLDHETGLVLSLEDAGRGRMKARFGTGPEMMDVVGENEARSSMTAI  395
+
+Query  61   RRDGETIELVRASENLRLSMKR  82
+            RRDG+TI L R  ENL L+M+R
+Sbjct  396  RRDGDTIHLAREDENLSLTMQR  417
+
+
+>sp|A5VVL2|DAP_BRUO2 D-aminopeptidase OS=Brucella ovis (strain 
+ATCC 25840 / 63/290 / NCTC 10512) OX=444178 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q8FV99|DAP_BRUSU D-aminopeptidase OS=Brucella suis biovar 
+1 (strain 1330) OX=204722 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|A9WVV8|DAP_BRUSI D-aminopeptidase OS=Brucella suis (strain 
+ATCC 23445 / NCTC 10510) OX=470137 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|A9MCM7|DAP_BRUC2 D-aminopeptidase OS=Brucella canis (strain 
+ATCC 23365 / NCTC 10854) OX=483179 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q579G4|DAP_BRUAB D-aminopeptidase OS=Brucella abortus biovar 
+1 (strain 9-941) OX=262698 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q2YLB4|DAP_BRUA2 D-aminopeptidase OS=Brucella abortus (strain 
+2308) OX=359391 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|B2SD81|DAP_BRUA1 D-aminopeptidase OS=Brucella abortus (strain 
+S19) OX=430066 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (348),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE+MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEIMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|C0RM93|DAP_BRUMB D-aminopeptidase OS=Brucella melitensis biotype 
+2 (strain ATCC 23457) OX=546272 GN=dap PE=3 SV=1
+Length=518
+
+ Score = 138 bits (347),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 62/80 (78%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEKMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q8YD27|DAP_BRUME D-aminopeptidase OS=Brucella melitensis biotype 
+1 (strain 16M / ATCC 23456 / NCTC 10094) OX=224914 GN=dap 
+PE=3 SV=1
+Length=518
+
+ Score = 138 bits (347),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 52/80 (65%), Positives = 62/80 (78%), Gaps = 0/80 (0%)
+
+Query  3    SRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTIRR  62
+             R +A+  WFGSWL+ ETGLVLSLEDAG GRMKARFGT PE MD+   NEA+S++TT+RR
+Sbjct  338  VRAQANPGWFGSWLNPETGLVLSLEDAGGGRMKARFGTGPEKMDISGENEAQSSMTTLRR  397
+
+Query  63   DGETIELVRASENLRLSMKR  82
+            DG+ I L R  ENL L+M R
+Sbjct  398  DGDMIHLARKDENLHLAMHR  417
+
+
+>sp|Q9ZBA9|DAP_OCHAN D-aminopeptidase OS=Ochrobactrum anthropi 
+OX=529 GN=dap PE=1 SV=3
+Length=520
+
+ Score = 132 bits (332),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 82/82 (100%), Positives = 82/82 (100%), Gaps = 0/82 (0%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI
+Sbjct  336  EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  395
+
+Query  61   RRDGETIELVRASENLRLSMKR  82
+            RRDGETIELVRASENLRLSMKR
+Sbjct  396  RRDGETIELVRASENLRLSMKR  417
+
+
+>sp|A3PRU3|DAP_RHOS1 D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain ATCC 17029 / ATH 2.4.9) OX=349101 GN=dap PE=3 SV=1
+Length=516
+
+ Score = 117 bits (293),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 25/78 (32%), Positives = 40/78 (51%), Gaps = 1/78 (1%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  +      W G WLD E+GL+L + +   G +  RF T P+ + V      R A  ++
+Sbjct  333  EAPKGAGPEGWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTVGEDGVPRGAGVSL  391
+
+Query  61   RRDGETIELVRASENLRL  78
+             R+G T+ + R S+NL +
+Sbjct  392  AREGATLVMNRTSDNLTV  409
+
+
+>sp|B9KTA6|DAP_RHOSK D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain KD131 / KCTC 12085) OX=557760 GN=dap PE=3 SV=1
+Length=516
+
+ Score = 115 bits (289),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 24/78 (31%), Positives = 39/78 (50%), Gaps = 1/78 (1%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  +      W G WLD E+GL+L + +   G +  RF T P+ + +      R A  ++
+Sbjct  333  EAPKGARPEGWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTLGEDGVPRGAGVSL  391
+
+Query  61   RRDGETIELVRASENLRL  78
+             RDG  + + R S+NL +
+Sbjct  392  ARDGAMLVMNRTSDNLTV  409
+
+
+>sp|Q3IX78|DAP_RHOS4 D-aminopeptidase OS=Rhodobacter sphaeroides 
+(strain ATCC 17023 / 2.4.1 / NCIB 8253 / DSM 158) OX=272943 
+GN=dap PE=3 SV=1
+Length=516
+
+ Score = 113 bits (283),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 23/78 (29%), Positives = 38/78 (49%), Gaps = 1/78 (1%)
+
+Query  1    EVSRVEADSAWFGSWLDDETGLVLSLEDAGHGRMKARFGTSPEMMDVVSANEARSAVTTI  60
+            E  +      W G WLD E+GL+L + +   G +  RF T P+ +        R A  ++
+Sbjct  333  EAPKGARPEGWAGQWLDPESGLLLRVGEDAEG-LTLRFATGPDRLTAGEDGVPRGAGVSL  391
+
+Query  61   RRDGETIELVRASENLRL  78
+             R+G  + + R S+NL +
+Sbjct  392  AREGAMLVMNRTSDNLTV  409
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.129    0.341    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0394    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5015715880
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

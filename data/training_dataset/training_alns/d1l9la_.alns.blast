@@ -1,0 +1,189 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1l9la_
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P22749|GNLY_HUMAN Granulysin OS=Homo sapiens OX=9606 GN=GNLY P...  150     1e-47
+sp|Q29075|NKL_PIG Antimicrobial peptide NK-lysin (Fragment) OS=Su...  47.8    2e-07
+sp|Q8HZQ3|NKL_HORSE Antimicrobial peptide NK-lysin OS=Equus cabal...  43.9    8e-06
+
+
+>sp|P22749|GNLY_HUMAN Granulysin OS=Homo sapiens OX=9606 GN=GNLY 
+PE=1 SV=3
+Length=145
+
+ Score = 150 bits (379),  Expect = 1e-47, Method: Compositional matrix adjust.
+ Identities = 73/74 (99%), Positives = 73/74 (99%), Gaps = 0/74 (0%)
+
+Query  1    GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGL  60
+            GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRV QGL
+Sbjct  63   GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVTQGL  122
+
+Query  61   VAGETAQQICEDLR  74
+            VAGETAQQICEDLR
+Sbjct  123  VAGETAQQICEDLR  136
+
+
+>sp|Q29075|NKL_PIG Antimicrobial peptide NK-lysin (Fragment) OS=Sus 
+scrofa OX=9823 GN=NKL PE=1 SV=1
+Length=129
+
+ Score = 47.8 bits (112),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/71 (35%), Positives = 43/71 (61%), Gaps = 2/71 (3%)
+
+Query  5    RTCLTIVQKLKKMV-DKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGLVAG  63
+             +C  I+QKL+ MV  +P + +V+ AA+RVC   +   R VC+  MR +  R+ + ++ G
+Sbjct  51   ESCRKIIQKLEDMVGPQPNEDTVTQAASRVCDKMKI-LRGVCKKIMRTFLRRISKDILTG  109
+
+Query  64   ETAQQICEDLR  74
+            +  Q IC D++
+Sbjct  110  KKPQAICVDIK  120
+
+
+>sp|Q8HZQ3|NKL_HORSE Antimicrobial peptide NK-lysin OS=Equus caballus 
+OX=9796 GN=NKL PE=2 SV=3
+Length=145
+
+ Score = 43.9 bits (102),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 22/70 (31%), Positives = 43/70 (61%), Gaps = 2/70 (3%)
+
+Query  6    TCLTIVQKLKKMV-DKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGLVAGE  64
+            +C  I+QKL+ +V ++P + +++ AA+RVCR      R  C+  MR     + + ++AG+
+Sbjct  68   SCRKILQKLEDLVGEQPNEATINEAASRVCRN-LGLLRGACKKIMRTCLRLISRDILAGK  126
+
+Query  65   TAQQICEDLR  74
+              Q++C D++
+Sbjct  127  KPQEVCVDIK  136
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.134    0.410    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4953124232
+Results from round 2
+
+
+Query= d1l9la_
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P22749|GNLY_HUMAN Granulysin OS=Homo sapiens OX=9606 GN=GNLY P...  113     7e-33
+sp|Q29075|NKL_PIG Antimicrobial peptide NK-lysin (Fragment) OS=Su...  90.9    3e-24
+sp|Q8HZQ3|NKL_HORSE Antimicrobial peptide NK-lysin OS=Equus cabal...  89.7    1e-23
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P22749|GNLY_HUMAN Granulysin OS=Homo sapiens OX=9606 GN=GNLY 
+PE=1 SV=3
+Length=145
+
+ Score = 113 bits (282),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 73/74 (99%), Positives = 73/74 (99%), Gaps = 0/74 (0%)
+
+Query  1    GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGL  60
+            GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRV QGL
+Sbjct  63   GRDYRTCLTIVQKLKKMVDKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVTQGL  122
+
+Query  61   VAGETAQQICEDLR  74
+            VAGETAQQICEDLR
+Sbjct  123  VAGETAQQICEDLR  136
+
+
+>sp|Q29075|NKL_PIG Antimicrobial peptide NK-lysin (Fragment) OS=Sus 
+scrofa OX=9823 GN=NKL PE=1 SV=1
+Length=129
+
+ Score = 90.9 bits (224),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 25/71 (35%), Positives = 43/71 (61%), Gaps = 2/71 (3%)
+
+Query  5    RTCLTIVQKLKKMV-DKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGLVAG  63
+             +C  I+QKL+ MV  +P + +V+ AA+RVC   +   R VC+  MR +  R+ + ++ G
+Sbjct  51   ESCRKIIQKLEDMVGPQPNEDTVTQAASRVCDKMKI-LRGVCKKIMRTFLRRISKDILTG  109
+
+Query  64   ETAQQICEDLR  74
+            +  Q IC D++
+Sbjct  110  KKPQAICVDIK  120
+
+
+>sp|Q8HZQ3|NKL_HORSE Antimicrobial peptide NK-lysin OS=Equus caballus 
+OX=9796 GN=NKL PE=2 SV=3
+Length=145
+
+ Score = 89.7 bits (221),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 22/70 (31%), Positives = 43/70 (61%), Gaps = 2/70 (3%)
+
+Query  6    TCLTIVQKLKKMV-DKPTQRSVSNAATRVCRTGRSRWRDVCRNFMRRYQSRVIQGLVAGE  64
+            +C  I+QKL+ +V ++P + +++ AA+RVCR      R  C+  MR     + + ++AG+
+Sbjct  68   SCRKILQKLEDLVGEQPNEATINEAASRVCRN-LGLLRGACKKIMRTCLRLISRDILAGK  126
+
+Query  65   TAQQICEDLR  74
+              Q++C D++
+Sbjct  127  KPQEVCVDIK  136
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0421    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4953124232
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

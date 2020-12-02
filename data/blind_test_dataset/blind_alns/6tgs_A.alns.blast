@@ -1,0 +1,262 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= 6tgs_A
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana...  171     2e-50
+sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 ...  80.9    3e-18
+
+
+>sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana 
+OX=3702 GN=NBR1 PE=1 SV=1
+Length=704
+
+ Score = 171 bits (433),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 85/88 (97%), Positives = 85/88 (97%), Gaps = 0/88 (0%)
+
+Query  1   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGA  60
+           ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYS  DG 
+Sbjct  5   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSDEDGD  64
+
+Query  61  VVALVDDNDLFDVTNQRLKFLKINVNAG  88
+           VVALVDDNDLFDVTNQRLKFLKINVNAG
+Sbjct  65  VVALVDDNDLFDVTNQRLKFLKINVNAG  92
+
+
+>sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 
+GN=JOKA2 PE=1 SV=1
+Length=862
+
+ Score = 80.9 bits (198),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 46/89 (52%), Positives = 60/89 (67%), Gaps = 3/89 (3%)
+
+Query  2   NALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGAV  61
+           +++V+KV Y   LRRF   V  N +LDL++ GL++KI  LFN + DAEL+LTY   DG V
+Sbjct  5   SSIVIKVKYEETLRRFNACV-INEKLDLDIGGLRDKIIQLFNFAHDAELTLTYIDEDGDV  63
+
+Query  62  VALVDDNDLFDVTNQRLKFLKIN--VNAG  88
+           V LVDD DL DV  Q L  L+I+  +NAG
+Sbjct  64  VTLVDDEDLQDVMRQDLNPLRISARLNAG  92
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.135    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+Results from round 2
+
+
+Query= 6tgs_A
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana...  157     1e-45
+sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 ...  135     2e-37
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q9U1W1|TFG_CAEEL Protein tfg-1 OS=Caenorhabditis elegans OX=62...  38.8    0.002
+
+
+>sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana 
+OX=3702 GN=NBR1 PE=1 SV=1
+Length=704
+
+ Score = 157 bits (398),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 85/88 (97%), Positives = 85/88 (97%), Gaps = 0/88 (0%)
+
+Query  1   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGA  60
+           ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYS  DG 
+Sbjct  5   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSDEDGD  64
+
+Query  61  VVALVDDNDLFDVTNQRLKFLKINVNAG  88
+           VVALVDDNDLFDVTNQRLKFLKINVNAG
+Sbjct  65  VVALVDDNDLFDVTNQRLKFLKINVNAG  92
+
+
+>sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 
+GN=JOKA2 PE=1 SV=1
+Length=862
+
+ Score = 135 bits (340),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 46/89 (52%), Positives = 60/89 (67%), Gaps = 3/89 (3%)
+
+Query  2   NALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGAV  61
+           +++V+KV Y   LRRF   V  N +LDL++ GL++KI  LFN + DAEL+LTY   DG V
+Sbjct  5   SSIVIKVKYEETLRRFNACV-INEKLDLDIGGLRDKIIQLFNFAHDAELTLTYIDEDGDV  63
+
+Query  62  VALVDDNDLFDVTNQRLKFLKIN--VNAG  88
+           V LVDD DL DV  Q L  L+I+  +NAG
+Sbjct  64  VTLVDDEDLQDVMRQDLNPLRISARLNAG  92
+
+
+>sp|Q9U1W1|TFG_CAEEL Protein tfg-1 OS=Caenorhabditis elegans OX=6239 
+GN=tfg-1 PE=1 SV=1
+Length=486
+
+ Score = 38.8 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 32/69 (46%), Gaps = 4/69 (6%)
+
+Query  2   NALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGAV  61
+            + ++K  +  V+R+       +   DL +  L   +  L  L +DA   L Y   +G +
+Sbjct  9   TSTILKARHADVVRK----TSLHHANDLTLIDLVLNVQRLLALPSDANFVLKYKDEEGDL  64
+
+Query  62  VALVDDNDL  70
+           V L +D+DL
+Sbjct  65  VTLAEDSDL  73
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.144    0.386    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0440    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+Results from round 3
+
+
+Query= 6tgs_A
+
+Length=88
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana...  138     1e-38
+sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 ...  118     3e-31
+sp|Q9U1W1|TFG_CAEEL Protein tfg-1 OS=Caenorhabditis elegans OX=62...  88.9    4e-21
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q92734|TFG_HUMAN Protein TFG OS=Homo sapiens OX=9606 GN=TFG PE...  45.7    5e-06
+
+
+>sp|Q9SB64|NBR1_ARATH Protein NBR1 homolog OS=Arabidopsis thaliana 
+OX=3702 GN=NBR1 PE=1 SV=1
+Length=704
+
+ Score = 138 bits (348),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 85/88 (97%), Positives = 85/88 (97%), Gaps = 0/88 (0%)
+
+Query  1   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGA  60
+           ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYS  DG 
+Sbjct  5   ANALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSDEDGD  64
+
+Query  61  VVALVDDNDLFDVTNQRLKFLKINVNAG  88
+           VVALVDDNDLFDVTNQRLKFLKINVNAG
+Sbjct  65  VVALVDDNDLFDVTNQRLKFLKINVNAG  92
+
+
+>sp|M1BJF6|JOKA2_SOLTU Protein JOKA2 OS=Solanum tuberosum OX=4113 
+GN=JOKA2 PE=1 SV=1
+Length=862
+
+ Score = 118 bits (295),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 46/89 (52%), Positives = 60/89 (67%), Gaps = 3/89 (3%)
+
+Query  2   NALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGAV  61
+           +++V+KV Y   LRRF   V  N +LDL++ GL++KI  LFN + DAEL+LTY   DG V
+Sbjct  5   SSIVIKVKYEETLRRFNACV-INEKLDLDIGGLRDKIIQLFNFAHDAELTLTYIDEDGDV  63
+
+Query  62  VALVDDNDLFDVTNQRLKFLKIN--VNAG  88
+           V LVDD DL DV  Q L  L+I+  +NAG
+Sbjct  64  VTLVDDEDLQDVMRQDLNPLRISARLNAG  92
+
+
+>sp|Q9U1W1|TFG_CAEEL Protein tfg-1 OS=Caenorhabditis elegans OX=6239 
+GN=tfg-1 PE=1 SV=1
+Length=486
+
+ Score = 88.9 bits (219),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 32/69 (46%), Gaps = 4/69 (6%)
+
+Query  2   NALVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALFNLSADAELSLTYSAADGAV  61
+            + ++K  +  V+R+       +   DL +  L   +  L  L +DA   L Y   +G +
+Sbjct  9   TSTILKARHADVVRK----TSLHHANDLTLIDLVLNVQRLLALPSDANFVLKYKDEEGDL  64
+
+Query  62  VALVDDNDL  70
+           V L +D+DL
+Sbjct  65  VTLAEDSDL  73
+
+
+>sp|Q92734|TFG_HUMAN Protein TFG OS=Homo sapiens OX=9606 GN=TFG 
+PE=1 SV=2
+Length=400
+
+ Score = 45.7 bits (107),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 21/87 (24%), Positives = 40/87 (46%), Gaps = 8/87 (9%)
+
+Query  4   LVVKVSYGGVLRRFRVPVKANGQLDLEMAGLKEKIAALF--NLSADAELSLTYSAADGAV  61
+           L++K   G  +RR  +        D+    L   +  +F   L ++ E+++ Y   DG +
+Sbjct  11  LIIKAQLGEDIRRIPI-----HNEDITYDELVLMMQRVFRGKLLSNDEVTIKYKDEDGDL  65
+
+Query  62  VALVDDNDL-FDVTNQRLKFLKINVNA  87
+           + + D +DL F +   R+  L + VN 
+Sbjct  66  ITIFDSSDLSFAIQCSRILKLTLFVNG  92
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.349    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0425    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5104209300
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

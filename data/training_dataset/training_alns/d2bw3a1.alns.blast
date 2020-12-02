@@ -1,0 +1,121 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2bw3a1
+
+Length=84
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P12258|HOBOT_DROME Transposable element Hobo transposase OS=Dr...  114     5e-30
+
+
+>sp|P12258|HOBOT_DROME Transposable element Hobo transposase OS=Drosophila 
+melanogaster OX=7227 GN=T PE=4 SV=1
+Length=644
+
+ Score = 114 bits (284),  Expect = 5e-30, Method: Compositional matrix adjust.
+ Identities = 52/81 (64%), Positives = 68/81 (84%), Gaps = 0/81 (0%)
+
+Query  4    ELKTVSADCKKEAIEKCAQWVVRDCRPFSAVSGSGFIDMIKFFIKVKAEYGEHVNVEELL  63
+            ELK VS + KK AIEKC QWVV+DCRPFSAV+G+GF +++KFF+++ A YGE V+V++LL
+Sbjct  130  ELKIVSENDKKVAIEKCTQWVVQDCRPFSAVTGAGFKNLVKFFLQIGAIYGEQVDVDDLL  189
+
+Query  64   PSPITLSRKVTSDAKEKKALI  84
+            P P TLSRK  SDA+EK++LI
+Sbjct  190  PDPTTLSRKAKSDAEEKRSLI  210
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4983057124
+Results from round 2
+
+
+Query= d2bw3a1
+
+Length=84
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P12258|HOBOT_DROME Transposable element Hobo transposase OS=Dr...  150     4e-43
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P12258|HOBOT_DROME Transposable element Hobo transposase OS=Drosophila 
+melanogaster OX=7227 GN=T PE=4 SV=1
+Length=644
+
+ Score = 150 bits (379),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 52/81 (64%), Positives = 68/81 (84%), Gaps = 0/81 (0%)
+
+Query  4    ELKTVSADCKKEAIEKCAQWVVRDCRPFSAVSGSGFIDMIKFFIKVKAEYGEHVNVEELL  63
+            ELK VS + KK AIEKC QWVV+DCRPFSAV+G+GF +++KFF+++ A YGE V+V++LL
+Sbjct  130  ELKIVSENDKKVAIEKCTQWVVQDCRPFSAVTGAGFKNLVKFFLQIGAIYGEQVDVDDLL  189
+
+Query  64   PSPITLSRKVTSDAKEKKALI  84
+            P P TLSRK  SDA+EK++LI
+Sbjct  190  PDPTTLSRKAKSDAEEKRSLI  210
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.135    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0414    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4983057124
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

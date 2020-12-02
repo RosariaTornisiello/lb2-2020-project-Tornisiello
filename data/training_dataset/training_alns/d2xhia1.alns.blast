@@ -1,0 +1,472 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d2xhia1
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens OX=9...  261     1e-87
+sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus OX=1...  222     2e-72
+sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus O...  221     4e-72
+sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis ...  57.0    3e-09
+sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melano...  41.6    5e-04
+sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces cer...  38.9    0.005
+
+
+>sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens 
+OX=9606 GN=OGG1 PE=1 SV=2
+Length=345
+
+ Score = 261 bits (667),  Expect = 1e-87, Method: Compositional matrix adjust.
+ Identities = 126/126 (100%), Positives = 126/126 (100%), Gaps = 0/126 (0%)
+
+Query  1    RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  60
+            RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT
+Sbjct  10   RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  69
+
+Query  61   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  120
+            EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG
+Sbjct  70   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  129
+
+Query  121  VRLLRQ  126
+            VRLLRQ
+Sbjct  130  VRLLRQ  135
+
+
+>sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus 
+OX=10090 GN=Ogg1 PE=1 SV=2
+Length=345
+
+ Score = 222 bits (565),  Expect = 2e-72, Method: Compositional matrix adjust.
+ Identities = 107/125 (86%), Positives = 115/125 (92%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL+S+PALWASIPCPRSELRLDLVL SGQSFRW+EQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLSSSPALWASIPCPRSELRLDLVLASGQSFRWKEQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGD SQ SRPT +ELE + KYFQLDV+LAQLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDDSQVSRPTLEELETLHKYFQLDVSLAQLYSHWASVDSHFQRVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus 
+OX=10116 GN=Ogg1 PE=2 SV=1
+Length=345
+
+ Score = 221 bits (563),  Expect = 4e-72, Method: Compositional matrix adjust.
+ Identities = 106/125 (85%), Positives = 112/125 (90%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL S+PALWASIPCPRSELRLDLVL SGQSFRWREQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLTSSPALWASIPCPRSELRLDLVLASGQSFRWREQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGDK Q  RPT +ELE + KYFQLDV+L QLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDKGQVGRPTLEELETLHKYFQLDVSLTQLYSHWASVDSHFQSVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis 
+thaliana OX=3702 GN=OGG1 PE=1 SV=1
+Length=365
+
+ Score = 57.0 bits (136),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 38/129 (29%), Positives = 63/129 (49%), Gaps = 19/129 (15%)
+
+Query  4    HRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQ----  59
+            HRT   TP  W  +    +EL L L  P+GQ+FRW++     +SG +   + +L Q    
+Sbjct  33   HRT--GTPK-WFPLKLTHTELTLPLTFPTGQTFRWKKTGAIQYSGTIGPHLVSLRQRPGD  89
+
+Query  60   --TEEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQK  117
+                  +HC+         + P   EL A+  +   +++LA+L+  +   D  F E+A+ 
+Sbjct  90   DAVSYCVHCS---------TSPKSAEL-ALLDFLNAEISLAELWSDFSKKDPRFGELARH  139
+
+Query  118  FQGVRLLRQ  126
+             +G R+LRQ
+Sbjct  140  LRGARVLRQ  148
+
+
+>sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melanogaster 
+OX=7227 GN=Ogg1 PE=2 SV=2
+Length=343
+
+ Score = 41.6 bits (96),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 32/107 (30%), Positives = 46/107 (43%), Gaps = 8/107 (7%)
+
+Query  23   ELRLDLVLPSGQSFRWR---EQSPAHWSGVLADQVWTLTQTEEQLHCTVYRGDKSQASRP  79
+            E  L+  L  GQSFRWR   + +   + GV+ +  W L Q E  +    Y    + +   
+Sbjct  33   ECDLERTLLGGQSFRWRSICDGNRTKYGGVVFNTYWVLQQEESFI---TYEAYGTSSPLA  89
+
+Query  80   TPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGVRLLRQ  126
+            T D    +  Y ++D  L      W S D +F +   K   VRLL Q
+Sbjct  90   TKDYSSLISDYLRVDFDLKVNQKDWLSKDDNFVKFLSK--PVRLLSQ  134
+
+
+>sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=OGG1 PE=1 
+SV=1
+Length=376
+
+ Score = 38.9 bits (89),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 39/123 (32%), Positives = 60/123 (49%), Gaps = 17/123 (14%)
+
+Query  14   WASIPCPRSELRLDLVLPSGQSFRWR-EQSPAHWSGVLAD------QVWTLTQTEE-QLH  65
+            +  +   +SEL L  VL +GQSFRW  ++    +S  +         V  L Q EE ++ 
+Sbjct  5    FGKLAINKSELCLANVLQAGQSFRWIWDEKLNQYSTTMKIGQQEKYSVVILRQDEENEIL  64
+
+Query  66   CTVYRGDKSQASRPTPDELEA-VRKYFQLDVTLAQLYHH-WGSVDSHFQEVAQKFQGVRL  123
+              V  GD         D L+  + KYF+LDV+L  L+ + W   D  F +++   QG+R+
+Sbjct  65   EFVAVGDCG-----NQDALKTHLMKYFRLDVSLKHLFDNVWIPSDKAFAKLSP--QGIRI  117
+
+Query  124  LRQ  126
+            L Q
+Sbjct  118  LAQ  120
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.423    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 2
+
+
+Query= d2xhia1
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens OX=9...  204     3e-65
+sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus OX=1...  196     4e-62
+sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus O...  193     7e-61
+sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis ...  143     1e-41
+sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melano...  136     5e-39
+
+Sequences not found previously or not previously below threshold:
+
+sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces cer...  48.7    2e-06
+
+
+>sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens 
+OX=9606 GN=OGG1 PE=1 SV=2
+Length=345
+
+ Score = 204 bits (518),  Expect = 3e-65, Method: Composition-based stats.
+ Identities = 126/126 (100%), Positives = 126/126 (100%), Gaps = 0/126 (0%)
+
+Query  1    RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  60
+            RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT
+Sbjct  10   RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  69
+
+Query  61   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  120
+            EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG
+Sbjct  70   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  129
+
+Query  121  VRLLRQ  126
+            VRLLRQ
+Sbjct  130  VRLLRQ  135
+
+
+>sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus 
+OX=10090 GN=Ogg1 PE=1 SV=2
+Length=345
+
+ Score = 196 bits (497),  Expect = 4e-62, Method: Composition-based stats.
+ Identities = 107/125 (86%), Positives = 115/125 (92%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL+S+PALWASIPCPRSELRLDLVL SGQSFRW+EQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLSSSPALWASIPCPRSELRLDLVLASGQSFRWKEQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGD SQ SRPT +ELE + KYFQLDV+LAQLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDDSQVSRPTLEELETLHKYFQLDVSLAQLYSHWASVDSHFQRVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus 
+OX=10116 GN=Ogg1 PE=2 SV=1
+Length=345
+
+ Score = 193 bits (489),  Expect = 7e-61, Method: Composition-based stats.
+ Identities = 106/125 (85%), Positives = 112/125 (90%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL S+PALWASIPCPRSELRLDLVL SGQSFRWREQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLTSSPALWASIPCPRSELRLDLVLASGQSFRWREQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGDK Q  RPT +ELE + KYFQLDV+L QLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDKGQVGRPTLEELETLHKYFQLDVSLTQLYSHWASVDSHFQSVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis 
+thaliana OX=3702 GN=OGG1 PE=1 SV=1
+Length=365
+
+ Score = 143 bits (361),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 38/129 (29%), Positives = 63/129 (49%), Gaps = 19/129 (15%)
+
+Query  4    HRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQ----  59
+            HRT   TP  W  +    +EL L L  P+GQ+FRW++     +SG +   + +L Q    
+Sbjct  33   HRT--GTPK-WFPLKLTHTELTLPLTFPTGQTFRWKKTGAIQYSGTIGPHLVSLRQRPGD  89
+
+Query  60   --TEEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQK  117
+                  +HC+         + P   EL A+  +   +++LA+L+  +   D  F E+A+ 
+Sbjct  90   DAVSYCVHCS---------TSPKSAEL-ALLDFLNAEISLAELWSDFSKKDPRFGELARH  139
+
+Query  118  FQGVRLLRQ  126
+             +G R+LRQ
+Sbjct  140  LRGARVLRQ  148
+
+
+>sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melanogaster 
+OX=7227 GN=Ogg1 PE=2 SV=2
+Length=343
+
+ Score = 136 bits (342),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 47/113 (42%), Gaps = 8/113 (7%)
+
+Query  17   IPCPRSELRLDLVLPSGQSFRWR---EQSPAHWSGVLADQVWTLTQTEEQLHCTVYRGDK  73
+            I     E  L+  L  GQSFRWR   + +   + GV+ +  W L Q E  +    Y    
+Sbjct  27   IGLSLEECDLERTLLGGQSFRWRSICDGNRTKYGGVVFNTYWVLQQEESFI---TYEAYG  83
+
+Query  74   SQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGVRLLRQ  126
+            + +   T D    +  Y ++D  L      W S D +F +   K   VRLL Q
+Sbjct  84   TSSPLATKDYSSLISDYLRVDFDLKVNQKDWLSKDDNFVKFLSK--PVRLLSQ  134
+
+
+>sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=OGG1 PE=1 
+SV=1
+Length=376
+
+ Score = 48.7 bits (114),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 39/120 (33%), Positives = 60/120 (50%), Gaps = 17/120 (14%)
+
+Query  17   IPCPRSELRLDLVLPSGQSFRW-REQSPAHWSGV--LADQ----VWTLTQ-TEEQLHCTV  68
+            +   +SEL L  VL +GQSFRW  ++    +S    +  Q    V  L Q  E ++   V
+Sbjct  8    LAINKSELCLANVLQAGQSFRWIWDEKLNQYSTTMKIGQQEKYSVVILRQDEENEILEFV  67
+
+Query  69   YRGD-KSQASRPTPDELEAVRKYFQLDVTLAQLYHH-WGSVDSHFQEVAQKFQGVRLLRQ  126
+              GD  +Q +  T      + KYF+LDV+L  L+ + W   D  F +++   QG+R+L Q
+Sbjct  68   AVGDCGNQDALKTH-----LMKYFRLDVSLKHLFDNVWIPSDKAFAKLSP--QGIRILAQ  120
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.123    0.333    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0376    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+Results from round 3
+
+
+Query= d2xhia1
+
+Length=126
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens OX=9...  199     3e-63
+sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus OX=1...  191     2e-60
+sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus O...  188     4e-59
+sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis ...  139     6e-40
+sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melano...  136     8e-39
+sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces cer...  113     6e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O15527|OGG1_HUMAN N-glycosylase/DNA lyase OS=Homo sapiens 
+OX=9606 GN=OGG1 PE=1 SV=2
+Length=345
+
+ Score = 199 bits (505),  Expect = 3e-63, Method: Composition-based stats.
+ Identities = 126/126 (100%), Positives = 126/126 (100%), Gaps = 0/126 (0%)
+
+Query  1    RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  60
+            RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT
+Sbjct  10   RMGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQT  69
+
+Query  61   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  120
+            EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG
+Sbjct  70   EEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQG  129
+
+Query  121  VRLLRQ  126
+            VRLLRQ
+Sbjct  130  VRLLRQ  135
+
+
+>sp|O08760|OGG1_MOUSE N-glycosylase/DNA lyase OS=Mus musculus 
+OX=10090 GN=Ogg1 PE=1 SV=2
+Length=345
+
+ Score = 191 bits (486),  Expect = 2e-60, Method: Composition-based stats.
+ Identities = 107/125 (86%), Positives = 115/125 (92%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL+S+PALWASIPCPRSELRLDLVL SGQSFRW+EQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLSSSPALWASIPCPRSELRLDLVLASGQSFRWKEQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGD SQ SRPT +ELE + KYFQLDV+LAQLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDDSQVSRPTLEELETLHKYFQLDVSLAQLYSHWASVDSHFQRVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|O70249|OGG1_RAT N-glycosylase/DNA lyase OS=Rattus norvegicus 
+OX=10116 GN=Ogg1 PE=2 SV=1
+Length=345
+
+ Score = 188 bits (477),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 106/125 (85%), Positives = 112/125 (90%), Gaps = 0/125 (0%)
+
+Query  2    MGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTE  61
+            M HRTL S+PALWASIPCPRSELRLDLVL SGQSFRWREQSPAHWSGVLADQVWTLTQTE
+Sbjct  11   MRHRTLTSSPALWASIPCPRSELRLDLVLASGQSFRWREQSPAHWSGVLADQVWTLTQTE  70
+
+Query  62   EQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGV  121
+            +QL+CTVYRGDK Q  RPT +ELE + KYFQLDV+L QLY HW SVDSHFQ VAQKFQGV
+Sbjct  71   DQLYCTVYRGDKGQVGRPTLEELETLHKYFQLDVSLTQLYSHWASVDSHFQSVAQKFQGV  130
+
+Query  122  RLLRQ  126
+            RLLRQ
+Sbjct  131  RLLRQ  135
+
+
+>sp|Q9FNY7|OGG1_ARATH N-glycosylase/DNA lyase OGG1 OS=Arabidopsis 
+thaliana OX=3702 GN=OGG1 PE=1 SV=1
+Length=365
+
+ Score = 139 bits (350),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 38/129 (29%), Positives = 63/129 (49%), Gaps = 19/129 (15%)
+
+Query  4    HRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQ----  59
+            HRT   TP  W  +    +EL L L  P+GQ+FRW++     +SG +   + +L Q    
+Sbjct  33   HRT--GTPK-WFPLKLTHTELTLPLTFPTGQTFRWKKTGAIQYSGTIGPHLVSLRQRPGD  89
+
+Query  60   --TEEQLHCTVYRGDKSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQK  117
+                  +HC+         + P   EL A+  +   +++LA+L+  +   D  F E+A+ 
+Sbjct  90   DAVSYCVHCS---------TSPKSAEL-ALLDFLNAEISLAELWSDFSKKDPRFGELARH  139
+
+Query  118  FQGVRLLRQ  126
+             +G R+LRQ
+Sbjct  140  LRGARVLRQ  148
+
+
+>sp|Q9V3I8|OGG1_DROME N-glycosylase/DNA lyase OS=Drosophila melanogaster 
+OX=7227 GN=Ogg1 PE=2 SV=2
+Length=343
+
+ Score = 136 bits (341),  Expect = 8e-39, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 47/113 (42%), Gaps = 8/113 (7%)
+
+Query  17   IPCPRSELRLDLVLPSGQSFRWR---EQSPAHWSGVLADQVWTLTQTEEQLHCTVYRGDK  73
+            I     E  L+  L  GQSFRWR   + +   + GV+ +  W L Q E  +    Y    
+Sbjct  27   IGLSLEECDLERTLLGGQSFRWRSICDGNRTKYGGVVFNTYWVLQQEESFI---TYEAYG  83
+
+Query  74   SQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGVRLLRQ  126
+            + +   T D    +  Y ++D  L      W S D +F +   K   VRLL Q
+Sbjct  84   TSSPLATKDYSSLISDYLRVDFDLKVNQKDWLSKDDNFVKFLSK--PVRLLSQ  134
+
+
+>sp|P53397|OGG1_YEAST N-glycosylase/DNA lyase OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=OGG1 PE=1 
+SV=1
+Length=376
+
+ Score = 113 bits (282),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 39/120 (33%), Positives = 60/120 (50%), Gaps = 17/120 (14%)
+
+Query  17   IPCPRSELRLDLVLPSGQSFRW-REQSPAHWSGV--LADQ----VWTLTQ-TEEQLHCTV  68
+            +   +SEL L  VL +GQSFRW  ++    +S    +  Q    V  L Q  E ++   V
+Sbjct  8    LAINKSELCLANVLQAGQSFRWIWDEKLNQYSTTMKIGQQEKYSVVILRQDEENEILEFV  67
+
+Query  69   YRGD-KSQASRPTPDELEAVRKYFQLDVTLAQLYHH-WGSVDSHFQEVAQKFQGVRLLRQ  126
+              GD  +Q +  T      + KYF+LDV+L  L+ + W   D  F +++   QG+R+L Q
+Sbjct  68   AVGDCGNQDALKTH-----LMKYFRLDVSLKHLFDNVWIPSDKAFAKLSP--QGIRILAQ  120
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.120    0.310    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0368    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4964270520
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

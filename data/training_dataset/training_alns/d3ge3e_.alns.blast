@@ -1,0 +1,372 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d3ge3e_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector com...  207     2e-70
+sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subun...  86.7    2e-22
+sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas...  45.8    1e-06
+sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein B O...  40.0    5e-04
+sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein B O...  38.1    0.003
+
+
+>sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector 
+component OS=Pseudomonas mendocina OX=300 GN=tmoD PE=1 SV=2
+Length=103
+
+ Score = 207 bits (528),  Expect = 2e-70, Method: Compositional matrix adjust.
+ Identities = 102/102 (100%), Positives = 102/102 (100%), Gaps = 0/102 (0%)
+
+Query  1    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  60
+            STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR
+Sbjct  2    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  61
+
+Query  61   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  102
+            KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM
+Sbjct  62   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  103
+
+
+>sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subunit 
+OS=Xanthobacter autotrophicus (strain ATCC BAA-1158 / 
+Py2) OX=78245 GN=xamoD PE=1 SV=1
+Length=101
+
+ Score = 86.7 bits (213),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 38/91 (42%), Positives = 61/91 (67%), Gaps = 0/91 (0%)
+
+Query  8   LHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQL  67
+           +  N VGP+IRAGDL + VI+    DNPGKE+ V +R  YVRI  + +  LTR ++E+ L
+Sbjct  9   MDENLVGPVIRAGDLADAVIDAVIADNPGKEVHVIERGDYVRIHTDRDCRLTRASIEQAL  68
+
+Query  68  GRPFNMQELEINLASFAGQIQADEDQIRFYF  98
+           GR F +  +E  ++SF G++ + + ++R+Y+
+Sbjct  69  GRSFVLAAIEAEMSSFKGRMSSSDSEMRWYY  99
+
+
+>sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas 
+sp. (strain CF600) OX=79676 GN=dmpM PE=1 SV=1
+Length=90
+
+ Score = 45.8 bits (107),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 27/74 (36%), Positives = 43/74 (58%), Gaps = 4/74 (5%)
+
+Query  26  VIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQLGRPFNMQELEINLASFAG  85
+           V+E    DNP     V+   A +RI AE  L + R+T+EE LGR +++QE+ +++ +  G
+Sbjct  18  VVEAIIQDNPHA--VVQHHPAMIRIEAEKRLEIRRETVEENLGRAWDVQEMLVDVITIGG  75
+
+Query  86  QIQADEDQIRFYFD  99
+            +  DED  RF  +
+Sbjct  76  NV--DEDDDRFVLE  87
+
+
+>sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein 
+B OS=Methylosinus trichosporium OX=426 GN=mmoB PE=1 SV=3
+Length=138
+
+ Score = 40.0 bits (92),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 26/88 (30%), Positives = 47/88 (53%), Gaps = 8/88 (9%)
+
+Query  5    DQALHNNN-VGPIIRAGDLVEPVIE-----TAEIDNPGKEITVEDRRAYVRIAAEGELIL  58
+            +Q +H +N V  ++   D ++ +IE       +  NP   I VED+  +  I A+G + +
+Sbjct  29   NQVVHESNAVVLVLMKSDEIDAIIEDIVLKGGKAKNP--SIVVEDKAGFWWIKADGAIEI  86
+
+Query  59   TRKTLEEQLGRPFNMQELEINLASFAGQ  86
+                  E LG+PF++ +L IN++S  G+
+Sbjct  87   DAAEAGELLGKPFSVYDLLINVSSTVGR  114
+
+
+>sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein 
+B OS=Methylococcus capsulatus (strain ATCC 33009 / NCIMB 11132 
+/ Bath) OX=243233 GN=mmoB PE=1 SV=2
+Length=141
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 45/87 (52%), Gaps = 5/87 (6%)
+
+Query  5    DQALH-NNNVGPIIRAGD----LVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILT  59
+            +Q +H ++ V  +++  D     +E ++ T    N    + VEDR  Y  I A G++ + 
+Sbjct  29   NQVVHESDTVVLVLKKSDEINTFIEEILLTDYKKNVNPTVNVEDRAGYWWIKANGKIEVD  88
+
+Query  60   RKTLEEQLGRPFNMQELEINLASFAGQ  86
+               + E LGR FN+ +  ++++S  G+
+Sbjct  89   CDEISELLGRQFNVYDFLVDVSSTIGR  115
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.135    0.369    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 2
+
+
+Query= d3ge3e_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector com...  150     2e-47
+sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subun...  126     5e-38
+sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein B O...  96.7    6e-26
+sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas...  85.9    3e-22
+
+Sequences not found previously or not previously below threshold:
+
+sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein B O...  77.5    2e-18
+
+
+>sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector 
+component OS=Pseudomonas mendocina OX=300 GN=tmoD PE=1 SV=2
+Length=103
+
+ Score = 150 bits (378),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 102/102 (100%), Positives = 102/102 (100%), Gaps = 0/102 (0%)
+
+Query  1    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  60
+            STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR
+Sbjct  2    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  61
+
+Query  61   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  102
+            KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM
+Sbjct  62   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  103
+
+
+>sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subunit 
+OS=Xanthobacter autotrophicus (strain ATCC BAA-1158 / 
+Py2) OX=78245 GN=xamoD PE=1 SV=1
+Length=101
+
+ Score = 126 bits (315),  Expect = 5e-38, Method: Composition-based stats.
+ Identities = 38/92 (41%), Positives = 61/92 (66%), Gaps = 0/92 (0%)
+
+Query  8   LHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQL  67
+           +  N VGP+IRAGDL + VI+    DNPGKE+ V +R  YVRI  + +  LTR ++E+ L
+Sbjct  9   MDENLVGPVIRAGDLADAVIDAVIADNPGKEVHVIERGDYVRIHTDRDCRLTRASIEQAL  68
+
+Query  68  GRPFNMQELEINLASFAGQIQADEDQIRFYFD  99
+           GR F +  +E  ++SF G++ + + ++R+Y+ 
+Sbjct  69  GRSFVLAAIEAEMSSFKGRMSSSDSEMRWYYK  100
+
+
+>sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein 
+B OS=Methylosinus trichosporium OX=426 GN=mmoB PE=1 SV=3
+Length=138
+
+ Score = 96.7 bits (239),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 26/88 (30%), Positives = 47/88 (53%), Gaps = 8/88 (9%)
+
+Query  5    DQALHNNN-VGPIIRAGDLVEPVIE-----TAEIDNPGKEITVEDRRAYVRIAAEGELIL  58
+            +Q +H +N V  ++   D ++ +IE       +  NP   I VED+  +  I A+G + +
+Sbjct  29   NQVVHESNAVVLVLMKSDEIDAIIEDIVLKGGKAKNP--SIVVEDKAGFWWIKADGAIEI  86
+
+Query  59   TRKTLEEQLGRPFNMQELEINLASFAGQ  86
+                  E LG+PF++ +L IN++S  G+
+Sbjct  87   DAAEAGELLGKPFSVYDLLINVSSTVGR  114
+
+
+>sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas 
+sp. (strain CF600) OX=79676 GN=dmpM PE=1 SV=1
+Length=90
+
+ Score = 85.9 bits (211),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 29/90 (32%), Positives = 48/90 (53%), Gaps = 4/90 (4%)
+
+Query  10  NNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQLGR  69
+           ++ V    +  D    V+E    DNP     V+   A +RI AE  L + R+T+EE LGR
+Sbjct  2   SSLVYIAFQDNDNARYVVEAIIQDNPHA--VVQHHPAMIRIEAEKRLEIRRETVEENLGR  59
+
+Query  70  PFNMQELEINLASFAGQIQADEDQIRFYFD  99
+            +++QE+ +++ +  G +  DED  RF  +
+Sbjct  60  AWDVQEMLVDVITIGGNV--DEDDDRFVLE  87
+
+
+>sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein 
+B OS=Methylococcus capsulatus (strain ATCC 33009 / NCIMB 11132 
+/ Bath) OX=243233 GN=mmoB PE=1 SV=2
+Length=141
+
+ Score = 77.5 bits (189),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 5/87 (6%)
+
+Query  5    DQALHNNN-VGPIIRAGDLVEPVIETAE----IDNPGKEITVEDRRAYVRIAAEGELILT  59
+            +Q +H ++ V  +++  D +   IE         N    + VEDR  Y  I A G++ + 
+Sbjct  29   NQVVHESDTVVLVLKKSDEINTFIEEILLTDYKKNVNPTVNVEDRAGYWWIKANGKIEVD  88
+
+Query  60   RKTLEEQLGRPFNMQELEINLASFAGQ  86
+               + E LGR FN+ +  ++++S  G+
+Sbjct  89   CDEISELLGRQFNVYDFLVDVSSTIGR  115
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.128    0.304    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0391    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+Results from round 3
+
+
+Query= d3ge3e_
+
+Length=102
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector com...  139     4e-43
+sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subun...  115     6e-34
+sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein B O...  101     1e-27
+sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas...  94.0    2e-25
+sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein B O...  94.8    3e-25
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q00459|TMOD_PSEME Toluene-4-monooxygenase system, effector 
+component OS=Pseudomonas mendocina OX=300 GN=tmoD PE=1 SV=2
+Length=103
+
+ Score = 139 bits (349),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 102/102 (100%), Positives = 102/102 (100%), Gaps = 0/102 (0%)
+
+Query  1    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  60
+            STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR
+Sbjct  2    STLADQALHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTR  61
+
+Query  61   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  102
+            KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM
+Sbjct  62   KTLEEQLGRPFNMQELEINLASFAGQIQADEDQIRFYFDKTM  103
+
+
+>sp|Q9ZET4|XAMOD_XANP2 Alkene monooxygenase system, effector subunit 
+OS=Xanthobacter autotrophicus (strain ATCC BAA-1158 / 
+Py2) OX=78245 GN=xamoD PE=1 SV=1
+Length=101
+
+ Score = 115 bits (289),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 38/92 (41%), Positives = 61/92 (66%), Gaps = 0/92 (0%)
+
+Query  8   LHNNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQL  67
+           +  N VGP+IRAGDL + VI+    DNPGKE+ V +R  YVRI  + +  LTR ++E+ L
+Sbjct  9   MDENLVGPVIRAGDLADAVIDAVIADNPGKEVHVIERGDYVRIHTDRDCRLTRASIEQAL  68
+
+Query  68  GRPFNMQELEINLASFAGQIQADEDQIRFYFD  99
+           GR F +  +E  ++SF G++ + + ++R+Y+ 
+Sbjct  69  GRSFVLAAIEAEMSSFKGRMSSSDSEMRWYYK  100
+
+
+>sp|P18797|MMOB_METCA Methane monooxygenase regulatory protein 
+B OS=Methylococcus capsulatus (strain ATCC 33009 / NCIMB 11132 
+/ Bath) OX=243233 GN=mmoB PE=1 SV=2
+Length=141
+
+ Score = 101 bits (251),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 5/87 (6%)
+
+Query  5    DQALHNNN-VGPIIRAGDLVEPVIETAE----IDNPGKEITVEDRRAYVRIAAEGELILT  59
+            +Q +H ++ V  +++  D +   IE         N    + VEDR  Y  I A G++ + 
+Sbjct  29   NQVVHESDTVVLVLKKSDEINTFIEEILLTDYKKNVNPTVNVEDRAGYWWIKANGKIEVD  88
+
+Query  60   RKTLEEQLGRPFNMQELEINLASFAGQ  86
+               + E LGR FN+ +  ++++S  G+
+Sbjct  89   CDEISELLGRQFNVYDFLVDVSSTIGR  115
+
+
+>sp|P19731|DMPM_PSEUF Phenol hydroxylase P2 protein OS=Pseudomonas 
+sp. (strain CF600) OX=79676 GN=dmpM PE=1 SV=1
+Length=90
+
+ Score = 94.0 bits (232),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 29/90 (32%), Positives = 48/90 (53%), Gaps = 4/90 (4%)
+
+Query  10  NNNVGPIIRAGDLVEPVIETAEIDNPGKEITVEDRRAYVRIAAEGELILTRKTLEEQLGR  69
+           ++ V    +  D    V+E    DNP     V+   A +RI AE  L + R+T+EE LGR
+Sbjct  2   SSLVYIAFQDNDNARYVVEAIIQDNPHA--VVQHHPAMIRIEAEKRLEIRRETVEENLGR  59
+
+Query  70  PFNMQELEINLASFAGQIQADEDQIRFYFD  99
+            +++QE+ +++ +  G +  DED  RF  +
+Sbjct  60  AWDVQEMLVDVITIGGNV--DEDDDRFVLE  87
+
+
+>sp|P27356|MMOB_METTR Methane monooxygenase regulatory protein 
+B OS=Methylosinus trichosporium OX=426 GN=mmoB PE=1 SV=3
+Length=138
+
+ Score = 94.8 bits (234),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 24/86 (28%), Positives = 45/86 (52%), Gaps = 4/86 (5%)
+
+Query  5    DQALHNNN-VGPIIRAGDLVEPVIETAEIDN---PGKEITVEDRRAYVRIAAEGELILTR  60
+            +Q +H +N V  ++   D ++ +IE   +         I VED+  +  I A+G + +  
+Sbjct  29   NQVVHESNAVVLVLMKSDEIDAIIEDIVLKGGKAKNPSIVVEDKAGFWWIKADGAIEIDA  88
+
+Query  61   KTLEEQLGRPFNMQELEINLASFAGQ  86
+                E LG+PF++ +L IN++S  G+
+Sbjct  89   AEAGELLGKPFSVYDLLINVSSTVGR  114
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.310    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5047427564
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

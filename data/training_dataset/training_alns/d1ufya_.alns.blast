@@ -1,0 +1,163 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1ufya_
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q84FH6|AROH_THETH Chorismate mutase AroH OS=Thermus thermophil...  242     2e-83
+sp|P19080|AROH_BACSU Chorismate mutase AroH OS=Bacillus subtilis ...  108     3e-30
+
+
+>sp|Q84FH6|AROH_THETH Chorismate mutase AroH OS=Thermus thermophilus 
+OX=274 GN=aroH PE=1 SV=1
+Length=122
+
+ Score = 242 bits (617),  Expect = 2e-83, Method: Compositional matrix adjust.
+ Identities = 121/121 (100%), Positives = 121/121 (100%), Gaps = 0/121 (0%)
+
+Query  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+            MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE
+Sbjct  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+
+Query  61   AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES  120
+            AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES
+Sbjct  61   AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES  120
+
+Query  121  A  121
+            A
+Sbjct  121  A  121
+
+
+>sp|P19080|AROH_BACSU Chorismate mutase AroH OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=aroH PE=1 SV=2
+Length=127
+
+ Score = 108 bits (269),  Expect = 3e-30, Method: Compositional matrix adjust.
+ Identities = 56/119 (47%), Positives = 79/119 (66%), Gaps = 2/119 (2%)
+
+Query  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+            M+RGIRGA TVE DT E I Q T++LL K++E N  +  E++  ++ + T DL + FPA+
+Sbjct  2    MIRGIRGATTVERDTEEEILQKTKQLLEKIIEENHTKP-EDVVQMLLSATPDLHAVFPAK  60
+
+Query  61   AARQI-GMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDL  118
+            A R++ G   VP+   +E+ V G L + IRV+    TD PQD++RHVYL + V LRPDL
+Sbjct  61   AVRELSGWQYVPVTCMQEMDVTGGLKKCIRVMMTVQTDVPQDQIRHVYLEKVVVLRPDL  119
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.134    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+Results from round 2
+
+
+Query= d1ufya_
+
+Length=121
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|Q84FH6|AROH_THETH Chorismate mutase AroH OS=Thermus thermophil...  189     3e-62
+sp|P19080|AROH_BACSU Chorismate mutase AroH OS=Bacillus subtilis ...  178     4e-58
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|Q84FH6|AROH_THETH Chorismate mutase AroH OS=Thermus thermophilus 
+OX=274 GN=aroH PE=1 SV=1
+Length=122
+
+ Score = 189 bits (479),  Expect = 3e-62, Method: Composition-based stats.
+ Identities = 121/121 (100%), Positives = 121/121 (100%), Gaps = 0/121 (0%)
+
+Query  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+            MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE
+Sbjct  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+
+Query  61   AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES  120
+            AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES
+Sbjct  61   AARQIGMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDLES  120
+
+Query  121  A  121
+            A
+Sbjct  121  A  121
+
+
+>sp|P19080|AROH_BACSU Chorismate mutase AroH OS=Bacillus subtilis 
+(strain 168) OX=224308 GN=aroH PE=1 SV=2
+Length=127
+
+ Score = 178 bits (452),  Expect = 4e-58, Method: Composition-based stats.
+ Identities = 56/119 (47%), Positives = 79/119 (66%), Gaps = 2/119 (2%)
+
+Query  1    MVRGIRGAITVEEDTPEAIHQATRELLLKMLEANGIQSYEELAAVIFTVTEDLTSAFPAE  60
+            M+RGIRGA TVE DT E I Q T++LL K++E N  +  E++  ++ + T DL + FPA+
+Sbjct  2    MIRGIRGATTVERDTEEEILQKTKQLLEKIIEENHTKP-EDVVQMLLSATPDLHAVFPAK  60
+
+Query  61   AARQI-GMHRVPLLSAREVPVPGSLPRVIRVLALWNTDTPQDRVRHVYLREAVRLRPDL  118
+            A R++ G   VP+   +E+ V G L + IRV+    TD PQD++RHVYL + V LRPDL
+Sbjct  61   AVRELSGWQYVPVTCMQEMDVTGGLKKCIRVMMTVQTDVPQDQIRHVYLEKVVVLRPDL  119
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.128    0.345    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5057179050
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

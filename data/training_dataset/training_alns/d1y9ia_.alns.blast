@@ -1,0 +1,273 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1y9ia_
+
+Length=159
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus sub...  220     2e-73
+sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus sub...  165     1e-51
+
+
+>sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yutG PE=4 SV=1
+Length=166
+
+ Score = 220 bits (560),  Expect = 2e-73, Method: Compositional matrix adjust.
+ Identities = 104/153 (68%), Positives = 125/153 (82%), Gaps = 0/153 (0%)
+
+Query  3    SALESKARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLT  62
+            S +E+KAR+ + ERGVE+ DIAELV FLQ+KYHP L +D C  NV  VL KREVQNA+LT
+Sbjct  8    SQMEAKARARMKERGVEVSDIAELVFFLQKKYHPDLTIDECTLNVNRVLAKREVQNAILT  67
+
+Query  63   GIQLDVMAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGI  122
+            GI+LDV+AE+ +L +PLQ ++  DE LYGVDE+LA SIVN+YGSIGFTNYGYIDK KPGI
+Sbjct  68   GIELDVLAEQKKLSEPLQTMLEIDESLYGVDEVLAFSIVNIYGSIGFTNYGYIDKEKPGI  127
+
+Query  123  LAKLNEHDGIAVHTFLDDIVGAIAAAAASRLAH  155
+            L +LN+      HTFLDDIVGAI+AAA+SRLAH
+Sbjct  128  LKRLNDKSTGECHTFLDDIVGAISAAASSRLAH  160
+
+
+>sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypjQ PE=1 SV=1
+Length=177
+
+ Score = 165 bits (418),  Expect = 1e-51, Method: Compositional matrix adjust.
+ Identities = 90/152 (59%), Positives = 118/152 (78%), Gaps = 3/152 (2%)
+
+Query  9    ARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLTGIQLDV  68
+             +  L +RGV I+DIA +V  LQ+KY+P L L +C +NVE VL KRE+ +AVLTG+ LD 
+Sbjct  13   TKDMLNKRGVMIEDIARIVQKLQEKYNPNLPLSVCMENVEKVLNKREIIHAVLTGLALDQ  72
+
+Query  69   MAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGILAKLNE  128
+            +AE+  L +PLQ+++  DE LYG+DEI+ LSIVNVYGSIG TN+GY+DK K GI+ +L+E
+Sbjct  73   LAEQKLLPEPLQHLVETDEPLYGIDEIIPLSIVNVYGSIGLTNFGYLDKEKIGIIKELDE  132
+
+Query  129  H-DGIAVHTFLDDIVGAIAAAAASRLAHSYHD  159
+              DGI  HTFLDDIV A+AAAAASR+AH++ D
+Sbjct  133  SPDGI--HTFLDDIVAALAAAAASRIAHTHQD  162
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7241296710
+Results from round 2
+
+
+Query= d1y9ia_
+
+Length=159
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus sub...  250     2e-85
+sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus sub...  213     1e-70
+
+Sequences not found previously or not previously below threshold:
+
+sp|Q58726|Y1330_METJA Uncharacterized protein MJ1330 OS=Methanoca...  41.5    4e-04
+
+
+>sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yutG PE=4 SV=1
+Length=166
+
+ Score = 250 bits (639),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 104/153 (68%), Positives = 125/153 (82%), Gaps = 0/153 (0%)
+
+Query  3    SALESKARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLT  62
+            S +E+KAR+ + ERGVE+ DIAELV FLQ+KYHP L +D C  NV  VL KREVQNA+LT
+Sbjct  8    SQMEAKARARMKERGVEVSDIAELVFFLQKKYHPDLTIDECTLNVNRVLAKREVQNAILT  67
+
+Query  63   GIQLDVMAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGI  122
+            GI+LDV+AE+ +L +PLQ ++  DE LYGVDE+LA SIVN+YGSIGFTNYGYIDK KPGI
+Sbjct  68   GIELDVLAEQKKLSEPLQTMLEIDESLYGVDEVLAFSIVNIYGSIGFTNYGYIDKEKPGI  127
+
+Query  123  LAKLNEHDGIAVHTFLDDIVGAIAAAAASRLAH  155
+            L +LN+      HTFLDDIVGAI+AAA+SRLAH
+Sbjct  128  LKRLNDKSTGECHTFLDDIVGAISAAASSRLAH  160
+
+
+>sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypjQ PE=1 SV=1
+Length=177
+
+ Score = 213 bits (543),  Expect = 1e-70, Method: Composition-based stats.
+ Identities = 87/151 (58%), Positives = 116/151 (77%), Gaps = 1/151 (1%)
+
+Query  9    ARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLTGIQLDV  68
+             +  L +RGV I+DIA +V  LQ+KY+P L L +C +NVE VL KRE+ +AVLTG+ LD 
+Sbjct  13   TKDMLNKRGVMIEDIARIVQKLQEKYNPNLPLSVCMENVEKVLNKREIIHAVLTGLALDQ  72
+
+Query  69   MAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGILAKLNE  128
+            +AE+  L +PLQ+++  DE LYG+DEI+ LSIVNVYGSIG TN+GY+DK K GI+ +L+E
+Sbjct  73   LAEQKLLPEPLQHLVETDEPLYGIDEIIPLSIVNVYGSIGLTNFGYLDKEKIGIIKELDE  132
+
+Query  129  HDGIAVHTFLDDIVGAIAAAAASRLAHSYHD  159
+                 +HTFLDDIV A+AAAAASR+AH++ D
+Sbjct  133  SPDG-IHTFLDDIVAALAAAAASRIAHTHQD  162
+
+
+>sp|Q58726|Y1330_METJA Uncharacterized protein MJ1330 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ1330 PE=4 SV=2
+Length=127
+
+ Score = 41.5 bits (96),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 34/63 (54%), Gaps = 5/63 (8%)
+
+Query  92   VDEILALSIVN-VYGSIGFTNYGYIDKVKPGILAKLNEHDGIAVHTFLDDIVGAIAAAAA  150
+            VDE++ L+I N + G+    N+ + D  KPGI+ +L+         FLDD +  + A   
+Sbjct  67   VDEVIGLAIANEIAGTKAIFNFRFYDAKKPGIIGELDRKG----FMFLDDAIAGLLAGCM  122
+
+Query  151  SRL  153
+            S++
+Sbjct  123  SKV  125
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.144    0.392    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0440    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7241296710
+Results from round 3
+
+
+Query= d1y9ia_
+
+Length=159
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus sub...  240     2e-81
+sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus sub...  212     4e-70
+sp|Q58726|Y1330_METJA Uncharacterized protein MJ1330 OS=Methanoca...  78.5    4e-18
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|O32124|YUTG_BACSU Uncharacterized protein YutG OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yutG PE=4 SV=1
+Length=166
+
+ Score = 240 bits (613),  Expect = 2e-81, Method: Composition-based stats.
+ Identities = 104/153 (68%), Positives = 125/153 (82%), Gaps = 0/153 (0%)
+
+Query  3    SALESKARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLT  62
+            S +E+KAR+ + ERGVE+ DIAELV FLQ+KYHP L +D C  NV  VL KREVQNA+LT
+Sbjct  8    SQMEAKARARMKERGVEVSDIAELVFFLQKKYHPDLTIDECTLNVNRVLAKREVQNAILT  67
+
+Query  63   GIQLDVMAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGI  122
+            GI+LDV+AE+ +L +PLQ ++  DE LYGVDE+LA SIVN+YGSIGFTNYGYIDK KPGI
+Sbjct  68   GIELDVLAEQKKLSEPLQTMLEIDESLYGVDEVLAFSIVNIYGSIGFTNYGYIDKEKPGI  127
+
+Query  123  LAKLNEHDGIAVHTFLDDIVGAIAAAAASRLAH  155
+            L +LN+      HTFLDDIVGAI+AAA+SRLAH
+Sbjct  128  LKRLNDKSTGECHTFLDDIVGAISAAASSRLAH  160
+
+
+>sp|P54173|YPJQ_BACSU Uncharacterized protein YpjQ OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=ypjQ PE=1 SV=1
+Length=177
+
+ Score = 212 bits (540),  Expect = 4e-70, Method: Composition-based stats.
+ Identities = 87/151 (58%), Positives = 116/151 (77%), Gaps = 1/151 (1%)
+
+Query  9    ARSWLIERGVEIDDIAELVLFLQQKYHPGLELDICRQNVEHVLRKREVQNAVLTGIQLDV  68
+             +  L +RGV I+DIA +V  LQ+KY+P L L +C +NVE VL KRE+ +AVLTG+ LD 
+Sbjct  13   TKDMLNKRGVMIEDIARIVQKLQEKYNPNLPLSVCMENVEKVLNKREIIHAVLTGLALDQ  72
+
+Query  69   MAEKGELVQPLQNIISADEGLYGVDEILALSIVNVYGSIGFTNYGYIDKVKPGILAKLNE  128
+            +AE+  L +PLQ+++  DE LYG+DEI+ LSIVNVYGSIG TN+GY+DK K GI+ +L+E
+Sbjct  73   LAEQKLLPEPLQHLVETDEPLYGIDEIIPLSIVNVYGSIGLTNFGYLDKEKIGIIKELDE  132
+
+Query  129  HDGIAVHTFLDDIVGAIAAAAASRLAHSYHD  159
+                 +HTFLDDIV A+AAAAASR+AH++ D
+Sbjct  133  SPDG-IHTFLDDIVAALAAAAASRIAHTHQD  162
+
+
+>sp|Q58726|Y1330_METJA Uncharacterized protein MJ1330 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ1330 PE=4 SV=2
+Length=127
+
+ Score = 78.5 bits (192),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 20/63 (32%), Positives = 34/63 (54%), Gaps = 5/63 (8%)
+
+Query  92   VDEILALSIVN-VYGSIGFTNYGYIDKVKPGILAKLNEHDGIAVHTFLDDIVGAIAAAAA  150
+            VDE++ L+I N + G+    N+ + D  KPGI+ +L+         FLDD +  + A   
+Sbjct  67   VDEVIGLAIANEIAGTKAIFNFRFYDAKKPGIIGELDRKG----FMFLDDAIAGLLAGCM  122
+
+Query  151  SRL  153
+            S++
+Sbjct  123  SKV  125
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.140    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0427    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7241296710
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

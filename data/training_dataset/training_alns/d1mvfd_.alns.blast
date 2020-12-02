@@ -1,0 +1,191 @@
+PSIBLAST 2.10.1+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           563,082 sequences; 202,799,066 total letters
+
+Results from round 1
+
+
+Query= d1mvfd_
+
+Length=44
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P0AE72|MAZE_ECOLI Antitoxin MazE OS=Escherichia coli (strain K...  88.2    2e-24
+sp|P0AE73|MAZE_ECO57 Antitoxin MazE OS=Escherichia coli O157:H7 O...  88.2    2e-24
+sp|P08365|CHPS_ECOLI Antitoxin ChpS OS=Escherichia coli (strain K...  37.0    4e-04
+sp|P13975|PEMI_ECOLX Antitoxin PemI OS=Escherichia coli OX=562 GN...  36.6    6e-04
+
+
+>sp|P0AE72|MAZE_ECOLI Antitoxin MazE OS=Escherichia coli (strain 
+K12) OX=83333 GN=mazE PE=1 SV=1
+Length=82
+
+ Score = 88.2 bits (217),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV
+Sbjct  4   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  47
+
+
+>sp|P0AE73|MAZE_ECO57 Antitoxin MazE OS=Escherichia coli O157:H7 
+OX=83334 GN=mazE PE=3 SV=1
+Length=82
+
+ Score = 88.2 bits (217),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV
+Sbjct  4   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  47
+
+
+>sp|P08365|CHPS_ECOLI Antitoxin ChpS OS=Escherichia coli (strain 
+K12) OX=83333 GN=chpS PE=1 SV=1
+Length=83
+
+ Score = 37.0 bits (84),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 16/43 (37%), Positives = 27/43 (63%), Gaps = 0/43 (0%)
+
+Query  2   SVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           ++KRWGNS  + IP  +M+ LNL     V+  + + +LI+ P+
+Sbjct  4   TIKRWGNSAGMVIPNIVMKELNLQPGQSVEAQVSNNQLILTPI  46
+
+
+>sp|P13975|PEMI_ECOLX Antitoxin PemI OS=Escherichia coli OX=562 
+GN=pemI PE=1 SV=1
+Length=85
+
+ Score = 36.6 bits (83),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 17/43 (40%), Positives = 29/43 (67%), Gaps = 0/43 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEP  43
+           + +KR G S  + +P  L+ AL+L  D+EV + + +G+LI+EP
+Sbjct  4   TRLKRVGGSVMLTVPPALLNALSLGTDNEVGMVIDNGRLIVEP  46
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.136    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5009253340
+Results from round 2
+
+
+Query= d1mvfd_
+
+Length=44
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P0AE72|MAZE_ECOLI Antitoxin MazE OS=Escherichia coli (strain K...  62.3    4e-14
+sp|P0AE73|MAZE_ECO57 Antitoxin MazE OS=Escherichia coli O157:H7 O...  62.3    4e-14
+sp|P08365|CHPS_ECOLI Antitoxin ChpS OS=Escherichia coli (strain K...  60.8    2e-13
+sp|P13975|PEMI_ECOLX Antitoxin PemI OS=Escherichia coli OX=562 GN...  60.8    2e-13
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>sp|P0AE72|MAZE_ECOLI Antitoxin MazE OS=Escherichia coli (strain 
+K12) OX=83333 GN=mazE PE=1 SV=1
+Length=82
+
+ Score = 62.3 bits (150),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV
+Sbjct  4   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  47
+
+
+>sp|P0AE73|MAZE_ECO57 Antitoxin MazE OS=Escherichia coli O157:H7 
+OX=83334 GN=mazE PE=3 SV=1
+Length=82
+
+ Score = 62.3 bits (150),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 44/44 (100%), Positives = 44/44 (100%), Gaps = 0/44 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV
+Sbjct  4   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  47
+
+
+>sp|P08365|CHPS_ECOLI Antitoxin ChpS OS=Escherichia coli (strain 
+K12) OX=83333 GN=chpS PE=1 SV=1
+Length=83
+
+ Score = 60.8 bits (146),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 16/43 (37%), Positives = 27/43 (63%), Gaps = 0/43 (0%)
+
+Query  2   SVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEPV  44
+           ++KRWGNS  + IP  +M+ LNL     V+  + + +LI+ P+
+Sbjct  4   TIKRWGNSAGMVIPNIVMKELNLQPGQSVEAQVSNNQLILTPI  46
+
+
+>sp|P13975|PEMI_ECOLX Antitoxin PemI OS=Escherichia coli OX=562 
+GN=pemI PE=1 SV=1
+Length=85
+
+ Score = 60.8 bits (146),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 17/43 (40%), Positives = 29/43 (67%), Gaps = 0/43 (0%)
+
+Query  1   SSVKRWGNSPAVRIPATLMQALNLNIDDEVKIDLVDGKLIIEP  43
+           + +KR G S  + +P  L+ AL+L  D+EV + + +G+LI+EP
+Sbjct  4   TRLKRVGGSVMLTVPPALLNALSLGTDNEVGMVIDNGRLIVEP  46
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.139    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0425    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5009253340
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Sep 25, 2020  3:18 PM
+  Number of letters in database: 202,799,066
+  Number of sequences in database:  563,082
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
