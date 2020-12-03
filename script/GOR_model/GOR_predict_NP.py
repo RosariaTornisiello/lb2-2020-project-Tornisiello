@@ -53,7 +53,7 @@ def predict_ss(w, profile, info_model, y_pred):
         if len(window) == w:
             prob = ss_probability(w, window, info_model)
             if all(x==0 for x in prob.values()) == True:
-                predicted_ss += '-'
+                y_pred += '-'
             else:
                 prediction = max(prob, key=prob.get)                      
                 y_pred += prediction
