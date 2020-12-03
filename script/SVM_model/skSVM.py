@@ -109,7 +109,7 @@ def myMCC(y_true, y_pred):
 
 w = 17
 set_path = '/home/rosaria/Desktop/LAB2/LAB2_project/cv/'
-training_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/training_profile_PROVA/'
+training_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/training_profile/'
 #blind_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/blind_profile/'
 
 folds = folds_dictionary(set_path)
