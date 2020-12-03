@@ -39,12 +39,11 @@ def ss_probability(w, window, info_model):
     return(prob)
 
 
-def predict_ss(w, profile, info_model):
+def predict_ss(w, profile, info_model, y_pred):
 
     """ predicts the secondary structure for each residue
     of a protein given its profile"""
     
-    predicted_ss = ''
     start = 0
     end = (0 + w)-1
     for _ in profile:
@@ -57,22 +56,23 @@ def predict_ss(w, profile, info_model):
                 predicted_ss += '-'
             else:
                 prediction = max(prob, key=prob.get)                      
-                predicted_ss += prediction
-    return(predicted_ss)
+                y_pred += prediction
+    return(y_pred)
     
 
 w = int(args.window)
 model = args.model
 model = pd.read_csv(model, sep='\t', index_col=[0, 1])
-
-# IDlist = [line.rstrip('\n') for line in open(args.input, 'r')]
-# for filename in os.listdir(args.data):
-#     ID = filename[0:-8]
-#     if ID in IDlist:
-#         pro_file = args.data + '/' + ID + '.profile'
-#         profile = pd.read_csv(pro_file, sep='\t', index_col=0)
-#         profile = padding(17, profile)
-#         profile = profile.to_numpy()
-#         output = open(args.output + '/' + ID + '.predicted', 'w')
-#         print('>' + ID + '\n' + predict_ss(w, profile, info_model), file = output)
+y_pred = ''
+IDlist = [line.rstrip('\n') for line in open(args.input, 'r')]
+for filename in os.listdir(args.data):
+    ID = filename[0:-8]
+    if ID in IDlist:
+        pro_file = args.data + '/' + ID + '.profile'
+        profile = pd.read_csv(pro_file, sep='\t', index_col=0)
+        profile = padding(17, profile)
+        profile = profile.to_numpy()
+        y_pred = predict_ss(w, profile, model, y_pred)
+output = open(args.output, 'w')
+print(y_pred, file = output)
 

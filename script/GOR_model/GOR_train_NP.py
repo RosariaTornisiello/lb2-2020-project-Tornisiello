@@ -101,11 +101,11 @@ def information_model(normalized_model, secondary):
     """ converts the normalized model into information 
     matrix """
 
-    info_model = normalized_model.copy(deep=True)
-    for index in normalized_model.index:
-        for column in normalized_model.columns:
-            PRS = normalized_model.loc[index, column]
-            PSS = secondary.loc['probability'].at[index[0]]
+    info_model = normalized_model.drop(index='R')
+    for index in info_model.index:
+        for column in info_model.columns:
+            PRS = info_model.loc[index, column]
+            PSS = secondary[index[0]]
             PR = normalized_model.loc[('R', index[1]), column]
             info_model.loc[index, column] = math.log(PRS/(PSS*PR),2)
     return(info_model)
