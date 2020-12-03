@@ -108,8 +108,8 @@ def myMCC(y_true, y_pred):
     return(statistics.mean(MCCs))
 
 w = 17
-set_path = '/home/rosaria/Desktop/LAB2/LAB2_project/cv/'
-training_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/training_profile/'
+set_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/cv/'
+training_profiles_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/training_dataset/training_profile/'
 #blind_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/blind_profile/'
 
 folds = folds_dictionary(set_path)
@@ -120,5 +120,5 @@ ps = PredefinedSplit(test_fold)
 mySVC = SVC(C=4, kernel='rbf', gamma=0.5, random_state=42)
 cv_results = cross_validate(mySVC, X_train, y_train, scoring= my_scorer, cv=ps, return_estimator=True, verbose=10, n_jobs=5)
 
-joblib.dump(cv_results, '/home/rosaria/Desktop/LAB2/LAB2_project/SVM/myCV_results')
+joblib.dump(cv_results, '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/myCV_results')
 print(cv_results)
