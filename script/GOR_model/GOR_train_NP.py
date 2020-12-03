@@ -36,6 +36,15 @@ def generate_model(w):
         model[s] = np.zeros((w, 20), dtype=int) 
     return(model)
 
+def generate_secondary():
+
+    """ creates an empty dict with secondary structures as keys"""
+    
+    sec_str = ['H', 'E', '-', 'R']
+    secondary = dict.fromkeys(sec_str, 0)
+    return(secondary)
+
+
 #train model
 def train_model(w, profile, model, secondary):
 
@@ -51,10 +60,9 @@ def train_model(w, profile, model, secondary):
         end += 1
         if len(window) == w:
             structure = ''.join(window[[w//2], [21]])
-            secondary.loc[['probability'], [str(structure)]] = secondary.loc[['probability'], [str(structure)]] + 1
+            secondary[structure] += 1
             model[structure] = np.add(model[structure], window[:, 0:20])
             model['R'] = np.add(model['R'], window[:, 0:20])
-    #secondary = secondary.div(secondary.sum())
     return(model, secondary)
 
 #normalize
@@ -105,8 +113,7 @@ def information_model(normalized_model, secondary):
 w = int(args.window)
 IDlist = [line.rstrip('\n') for line in open(args.input, 'r')]
 model = generate_model(w)
-sec_str = ['H', 'E', '-']
-secondary = pd.DataFrame(columns=sec_str, index=['probability'])
+secondary = generate_secondary()
 for filename in os.listdir(args.data):
     ID = filename[0:-8]
     if ID in IDlist:
@@ -114,10 +121,11 @@ for filename in os.listdir(args.data):
         profile = pd.read_csv(pro_file, sep='\t')
         profile = padding(w, profile).to_numpy()
         model, secondary = train_model(w, profile, model, secondary)
-print(secondary)
-# model = normalize_model(w, model)
-# model = model_todf(w, model)
-# model = information_model(model, secondary) 
-# output = open(args.output, 'w')
-# model.to_csv(output, sep='\t')
+tot = sum(secondary.values())
+secondary = {key: value /tot for key, value in secondary.items()}
+model = normalize_model(w, model)
+model = model_todf(w, model)
+model = information_model(model, secondary) 
+output = open(args.output, 'w')
+model.to_csv(output, sep='\t')
 
