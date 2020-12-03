@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import os 
 import csv
-import math
 
 def padding(w, profile):
     aa = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']

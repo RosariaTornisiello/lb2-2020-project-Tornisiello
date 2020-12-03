@@ -115,7 +115,6 @@ training_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profi
 folds = folds_dictionary(set_path)
 X_train, y_train, test_fold = split_X_y(w, training_profiles_path, folds)
 
-
 my_scorer = make_scorer(myMCC)
 ps = PredefinedSplit(test_fold)
 mySVC = SVC(C=4, kernel='rbf', gamma=0.5, random_state=42)
