@@ -114,6 +114,7 @@ training_profiles_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiell
 
 folds = folds_dictionary(set_path)
 X_train, y_train, test_fold = split_X_y(w, training_profiles_path, folds)
+X_train = X_train.astype(np.float)
 
 my_scorer = make_scorer(myMCC)
 ps = PredefinedSplit(test_fold)
