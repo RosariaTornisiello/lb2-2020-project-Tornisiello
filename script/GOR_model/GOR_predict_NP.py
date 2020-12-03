@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--input", help="file containing the list of input IDs")
 parser.add_argument("--data", help="directory containing the input test profiles")
 parser.add_argument("--model", help="information model")
-parser.add_argument("--output", help="directory for output files")
+parser.add_argument("--output", help="y_pred output file")
 parser.add_argument("--window", help="sliding window size")
 args = parser.parse_args()
 
