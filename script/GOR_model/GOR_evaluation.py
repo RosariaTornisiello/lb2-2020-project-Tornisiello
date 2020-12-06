@@ -1,0 +1,52 @@
+from sklearn.metrics import accuracy_score, precision_score, recall_score, matthews_corrcoef, classification_report
+import os
+import pandas as pd
+
+
+def my_MCC_accuracy(y_true, y_pred, ss):
+    MCC = dict.fromkeys(ss, 0)
+    accuracy = dict.fromkeys(ss, 0)
+    for structure in ss:
+        y_true_temp = list()
+        y_pred_temp = list()
+        y_true_temp = [structure if i == structure else 'X' for i in y_true]
+        y_pred_temp = [structure if i == structure else 'X' for i in y_pred]
+        MCC[structure] = matthews_corrcoef(y_true_temp, y_pred_temp)
+        accuracy[structure] = accuracy_score(y_true_temp, y_pred_temp)
+    return(MCC, accuracy)
+
+def generate_df(ss):
+    columns = ['H', '-', 'E'] 
+    iterables = [['split0', 'split1', 'split2', 'split3', 'split4', 'blind'], ['MCC', 'precision', 'recall', 'accuracy']]
+    my_index = pd.MultiIndex.from_product(iterables, names=['data', 'score'])
+    df = pd.DataFrame(index= my_index, columns=columns )
+    return(df)
+
+ss = ['H', '-', 'E']
+df = generate_df(ss)
+
+#fill df with cv values
+for i in range(5):
+    y_true0 = list(open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/GOR_results/split'+ str(i) + '/' + 'y_true_' + str(i) + '.txt').read())
+    y_pred0 = list(open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/GOR_results/split'+ str(i) + '/' + 'y_pred_' + str(i) + '.txt').read())
+    y_true0.remove('\n')
+    y_pred0.remove('\n')
+    MCC, accuracy = my_MCC_accuracy(y_true0, y_pred0, ss)
+    report = classification_report(y_true0, y_pred0, output_dict=True)
+    for s in ss:
+         df.loc['split'+str(i), 'MCC'][s] = MCC[s]
+         df.loc['split'+str(i), 'accuracy'][s] = accuracy[s]
+         df.loc['split'+str(i), 'precision'][s] = report[s]['precision']
+         df.loc['split'+str(i), 'recall'][s] = report[s]['recall']
+
+#fill df with blind valuesx
+y_true = list(open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/GOR_results/blind_test_pred/y_true_blind.txt').read())
+y_pred = list(open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/GOR_results/blind_test_pred/y_pred_blind.txt').read())
+MCC, accuracy = my_MCC_accuracy(y_true, y_pred, ss) # 2 dictionaries
+report = classification_report(y_true, y_pred, labels=ss, output_dict=True) #dictionary of dictionaries
+for s in ss:
+    df.loc['blind', 'MCC'][s] = MCC[s]
+    df.loc['blind', 'accuracy'][s] = accuracy[s]
+    df.loc['blind', 'precision'][s] = report[s]['precision']
+    df.loc['blind', 'recall'][s] = report[s]['recall']
+print(df)
