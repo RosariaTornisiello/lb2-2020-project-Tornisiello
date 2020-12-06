@@ -65,10 +65,10 @@ model = args.model
 model = pd.read_csv(model, sep='\t', index_col=[0, 1])
 y_pred = ''
 IDlist = [line.rstrip('\n') for line in open(args.input, 'r')]
-for filename in os.listdir(args.data):
-    ID = filename[0:-8]
-    if ID in IDlist:
-        pro_file = args.data + '/' + ID + '.profile'
+for ID in IDlist:
+    filename = ID+'.profile'
+    if filename in os.listdir(args.data):
+        pro_file = args.data + '/' + filename
         profile = pd.read_csv(pro_file, sep='\t', index_col=0)
         profile = padding(17, profile)
         profile = profile.to_numpy()
