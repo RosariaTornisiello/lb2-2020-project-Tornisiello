@@ -110,7 +110,7 @@ def myMCC(y_true, y_pred):
 w = 17
 set_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/cv/'
 training_profiles_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/training_dataset/training_profile/'
-#blind_profiles_path = '/home/rosaria/Desktop/LAB2/LAB2_project/sequence_profile/blind_profile/'
+
 
 folds = folds_dictionary(set_path)
 X_train, y_train, test_fold = split_X_y(w, training_profiles_path, folds)
