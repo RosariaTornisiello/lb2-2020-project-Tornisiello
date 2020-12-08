@@ -46,7 +46,7 @@ for s in ss:
     df.loc['blind', 'accuracy'][s] = accuracy[s]
     df.loc['blind', 'precision'][s] = report[s]['precision']
     df.loc['blind', 'recall'][s] = report[s]['recall']
-#print(df)
+print(df)
 
 
 def standard_error_per_score(df, ss):
