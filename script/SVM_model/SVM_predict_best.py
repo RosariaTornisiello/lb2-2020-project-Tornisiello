@@ -1,6 +1,7 @@
 #import the model trained by ste with gpu on the entire training set with C=2 and gamma=0.5
 #prepare X_test
-#predict(X_test)
+#predict(X_test) with gpu ste
+
 
 import numpy as np
 import pandas as pd
@@ -54,9 +55,9 @@ w = 17
 blind_profile_path = '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/blind_test_dataset/blind_profile/'
 X_test = compute_X_test(w, blind_profile_path)
 X_test = X_test.astype(np.float)
-
-best_model = joblib.load('/home/rosaria/Desktop/LAB2/refitted_WHOLE_C2_gamma02.joblib')
-best_model.set_params(max_mem_size=100, n_jobs=1, cache_size=100)
-y_pred = best_model.predict(X_test)
+joblib.dump(X_test, '/home/rosaria/Desktop/LAB2/X_test.txt')
+# best_model = joblib.load('/home/rosaria/Desktop/LAB2/refitted_WHOLE_C2_gamma02.joblib')
+# best_model.set_params(max_mem_size=100, n_jobs=1, cache_size=100)
+# y_pred = best_model.predict(X_test)
 # with open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/SVM_results/y_pred_blind.txt', 'w') as f:
 #     print(y_pred.shape, file=f)
