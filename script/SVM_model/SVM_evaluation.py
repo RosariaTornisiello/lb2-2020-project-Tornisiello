@@ -35,6 +35,7 @@ y_pred_blind = [int(i) for i in y_pred_blind]
 y_true_blind = list(open('/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/SVM_results/y_true_blind.txt').read())
 y_true_blind.pop()
 y_true_blind = convert_class_to_num(y_true_blind)
+joblib.dump(y_true_blind, '/home/rosaria/Desktop/LAB2/lb2-2020-project-Tornisiello/data/SVM_results/y_true_blind.joblib')
 
 
 ss = [1, 2, 3]

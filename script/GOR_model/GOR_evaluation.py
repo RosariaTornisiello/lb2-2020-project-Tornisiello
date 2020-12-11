@@ -52,7 +52,7 @@ print(df)
 print("Q3 cv:", Q3_split)
 print("Q3 blind:", Q3_blind)
 
-def standard_error_per_MCC(df):
+def standard_error_per_MCC_cv(df):
     """ computes st err for MCC for each split""" 
     splits = ['split0', 'split1', 'split2', 'split3', 'split4']
     MCCs = dict.fromkeys(splits)
@@ -66,6 +66,6 @@ def standard_error_per_MCC(df):
 
 #st_err_MCC, st_err_precision, st_err_recall = standard_error_per_score(df, 'H')
 
-print(standard_error_per_MCC(df))
+print(standard_error_per_MCC_cv(df))
 
 
