@@ -57,8 +57,9 @@ def standard_error_per_MCC(df, ss):
     MCC_list = []
     for i in range(5):
         MCC_list.append(df.loc['split'+str(i), 'MCC'][ss])
+    mean = statistics.mean(MCC_list)
     st_err_MCC = sem(MCC_list)
-    return('st err for', ss, '-->','MCC:', st_err_MCC)
+    return('for', ss, '-->','MCC:', mean, '+/-', st_err_MCC)
 
 
 #st_err_MCC, st_err_precision, st_err_recall = standard_error_per_score(df, 'H')
