@@ -56,12 +56,15 @@ def standard_error_per_MCC_cv(df):
     """ computes st err for MCC for each split""" 
     splits = ['split0', 'split1', 'split2', 'split3', 'split4']
     MCCs = dict.fromkeys(splits)
+    means_over_ss = []
     for i in range(5):
         MCC_list = df.loc['split'+str(i), 'MCC'].tolist()
         mean = statistics.mean(MCC_list)
-        st_err_MCC = sem(MCC_list)
-        MCCs['split'+str(i)] = str(mean)+'+'+str(st_err_MCC)
-    return(MCCs)
+        means_over_ss.append(mean)
+        MCCs['split'+str(i)] = mean
+    st_err_MCC = sem(means_over_ss)
+    mean_over_splits = statistics.mean(means_over_ss) 
+    return(MCCs, 'means over splits:', mean_over_splits, '+-', st_err_MCC)
 
 
 #st_err_MCC, st_err_precision, st_err_recall = standard_error_per_score(df, 'H')
